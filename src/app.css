@@ -1,0 +1,164 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* ===================================================================
+   Cold visual identity — cool SLATE neutrals + a single TEAL accent.
+   Deliberately NOT the inherited Sakhalin look (warm stone + blue).
+
+   The palette lives here as CSS custom properties so it is centralized;
+   the same tokens are exposed to Tailwind in tailwind.config.ts. Tokens
+   flip on `prefers-color-scheme: dark`, so every surface that consumes a
+   token gets a correct dark appearance automatically (first-class dark
+   mode — no surface left behind).
+   =================================================================== */
+
+@layer base {
+	:root {
+		/* Typefaces — self-hosted IBM Plex superfamily (see +layout.svelte). */
+		--font-serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+		--font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+		--font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
+
+		/* Light mode — a slightly cool near-white canvas + slate text. */
+		--color-canvas: #f8fafc; /* slate-50  */
+		--color-surface: #ffffff; /* raised chrome */
+		--color-fg: #1e293b; /* slate-800 — body text (AA 13.9:1 on canvas) */
+		--color-muted: #64748b; /* slate-500 — captions/meta (AA 4.6:1) */
+		--color-faint: #94a3b8; /* slate-400 — non-text/decorative numerals */
+		--color-border: #e2e8f0; /* slate-200 — hairline */
+		--color-border-strong: #cbd5e1; /* slate-300 — table rules */
+		--color-accent: #0f766e; /* teal-700 — links/current (AA 5.2:1 on canvas) */
+		--color-accent-contrast: #f8fafc; /* text on an accent fill */
+		--color-selection: rgba(13, 148, 136, 0.22); /* teal-600 @ 22% */
+
+		/* Derived surfaces & states. Part of the two-tier surface system: the page
+		   is `canvas`, chrome/content cards are `surface`; these add the in-between
+		   tints used for table headers, example blocks, zebra rows and hover/active. */
+		--color-surface-subtle: #f1f5f9; /* slate-100 — table headers, .ex blocks, active rows */
+		--color-surface-hover: #e9eef4; /* row/control hover */
+		--color-accent-soft: #dcefec; /* faint teal wash for current/active states */
+
+		/* Square elevation — reserved for sticky chrome (sidebar) and popovers, not
+		   for ordinary content cards. The hairline ring keeps the edges crisp. */
+		--shadow-raised: 0 1px 2px rgb(15 23 42 / 0.06), 0 0 0 1px var(--color-border);
+		--shadow-popover: 0 8px 24px -12px rgb(15 23 42 / 0.28), 0 0 0 1px var(--color-border);
+
+		/* Modular type scale — Sans headings, Serif prose, Mono examples consume these.
+		   Scale is dimensionless, so it is scheme-independent (no dark override needed). */
+		--step--1: 0.875rem;
+		--step-0: 1rem;
+		--step-1: 1.125rem;
+		--step-2: 1.35rem;
+		--step-3: 1.75rem;
+		--step-4: 2.25rem;
+
+		/* 4 / 8 px spacing scale for consistent vertical rhythm (scheme-independent). */
+		--space-1: 0.25rem;
+		--space-2: 0.5rem;
+		--space-3: 0.75rem;
+		--space-4: 1rem;
+		--space-6: 1.5rem;
+		--space-8: 2rem;
+		--space-12: 3rem;
+
+		color-scheme: light;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			/* Dark mode — a deep, cold slate near-black canvas. */
+			--color-canvas: #0b1120; /* deep cold slate */
+			--color-surface: #0f172a; /* slate-900 — raised chrome */
+			--color-fg: #e2e8f0; /* slate-200 — body text (AA 15.3:1) */
+			--color-muted: #94a3b8; /* slate-400 — captions/meta (AA 7.3:1) */
+			--color-faint: #64748b; /* slate-500 — non-text/decorative numerals */
+			--color-border: #1e293b; /* slate-800 — hairline */
+			--color-border-strong: #334155; /* slate-700 — table rules */
+			--color-accent: #5eead4; /* teal-300 — links/current (AA 12.7:1) */
+			--color-accent-contrast: #0b1120; /* text on an accent fill */
+			--color-selection: rgba(45, 212, 191, 0.26); /* teal-400 @ 26% */
+
+			/* First-class dark values for every derived surface/state and elevation. */
+			--color-surface-subtle: #131d31; /* a step above the slate-900 surface */
+			--color-surface-hover: #1c2740;
+			--color-accent-soft: #11302c; /* deep teal wash */
+			--shadow-raised: 0 1px 2px rgb(0 0 0 / 0.4), 0 0 0 1px var(--color-border);
+			--shadow-popover: 0 10px 28px -12px rgb(0 0 0 / 0.6), 0 0 0 1px var(--color-border);
+
+			color-scheme: dark;
+		}
+	}
+
+	html {
+		background-color: var(--color-canvas);
+		color: var(--color-fg);
+	}
+
+	body {
+		font-family: var(--font-serif);
+	}
+
+	/* Plex Sans for UI/headings/nav; prose body stays in Plex Serif. */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-sans);
+	}
+
+	/* Single accent for text selection, kept translucent so the selected
+	   text retains its own contrast in either scheme. */
+	::selection {
+		background-color: var(--color-selection);
+	}
+
+	/* Visible keyboard focus everywhere (the grammar strips link underlines, so
+	   without this keyboard focus is nearly invisible). Uses the cold accent. */
+	:focus-visible {
+		outline: 2px solid var(--color-accent);
+		outline-offset: 2px;
+	}
+}
+
+/* Honor the OS "reduce motion" preference: neutralize the chevron transitions, the
+   loading spinner, and any smooth scrolling. Placed after the utilities import so it
+   wins over Tailwind's transition/animate utilities. */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* ===================================================================
+   Scrollbars — thin, square, slate thumb with a teal hover. The cold
+   tokens flip with the scheme, so this is correct in light and dark.
+   =================================================================== */
+* {
+	scrollbar-width: thin; /* Firefox */
+	scrollbar-color: var(--color-border-strong) transparent;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-border-strong);
+	border: 2px solid var(--color-canvas); /* inset padding; corners stay square */
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--color-accent);
+}
+::-webkit-scrollbar-corner {
+	background: transparent;
+}

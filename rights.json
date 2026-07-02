@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "note": "Per-source rights matrix for the Hokkaido Ainu reference grammar. Governs how much of each source may be quoted, whether attested examples may be reproduced, and whom to attribute. See rights.README.md. RULE OF THUMB: cite the ORIGINAL work, never the aggregator; reproduce only short, attributed excerpts; when in doubt, fall back to `_default`. This matrix is advisory scaffolding, not legal advice; verify before any bulk reuse.",
+  "fields": [
+    "source",
+    "copyrightHolder",
+    "quotationPolicy",
+    "exampleReusePolicy",
+    "translationStatus",
+    "attributionRequired"
+  ],
+  "matrix": [
+    {
+      "source": "ainu-corpora (aligned parallel corpus aggregator)",
+      "copyrightHolder": "Original text sources, not the aggregator. Aggregation/alignment layer: the ainu-corpora maintainers.",
+      "quotationPolicy": "Short cited excerpts only (single sentences/clauses for illustration).",
+      "exampleReusePolicy": "Reuse individual attested sentences as glossed examples, attributed to the UNDERLYING source (narrator/edition via the sentence uri/author). The corpus as a whole is NOT redistributable.",
+      "translationStatus": "Translations belong to the underlying editions; do not present aggregator alignments as original translation.",
+      "attributionRequired": true
+    },
+    {
+      "source": "Glossed Audio Corpus of Ainu Folklore (glossedcorpus2016; Nakagawa, Bugaeva, Kobayashi, Yoshikawa / NINJAL)",
+      "copyrightHolder": "The narrators and the corpus editors / NINJAL.",
+      "quotationPolicy": "Short cited excerpts only; clear individual examples permitted with citation.",
+      "exampleReusePolicy": "Single glossed clauses/sentences with full citation (narrator + dialect + corpus). Do not bulk-export. Exclude from frequency counts unless the corpus-statistics protocol is followed.",
+      "translationStatus": "English/Japanese glosses are the editors'; attribute, do not silently re-translate.",
+      "attributionRequired": true
+    },
+    {
+      "source": "db.aynu.org (Ainu Textual Sources Database)",
+      "copyrightHolder": "Per-source; the database is a bibliographic index, not a rights grant.",
+      "quotationPolicy": "Bibliographic metadata may be reused freely; underlying full texts follow their own source's row.",
+      "exampleReusePolicy": "Use slugs/metadata for citation crosswalk only. Redistribution rights are per-source.",
+      "translationStatus": "Metadata only.",
+      "attributionRequired": false
+    },
+    {
+      "source": "ainu-grammar local corpus (OCR of books/ + articles/)",
+      "copyrightHolder": "Each underlying author/publisher; the OCR layer is a working copy.",
+      "quotationPolicy": "Short cited excerpts only; OCR text is for analysis, never for republication of the source.",
+      "exampleReusePolicy": "Extract individual attested examples with citation to the original work (see citation-registry.ts path).",
+      "translationStatus": "Follow the original work's status.",
+      "attributionRequired": true
+    },
+    {
+      "source": "nakagawa2024 — 中川裕『アイヌ語広文典』 (Hakusuisha, 2024)",
+      "copyrightHolder": "Nakagawa Hiroshi & Hakusuisha 白水社.",
+      "quotationPolicy": "Short cited excerpts only (fair-use length, with page citation).",
+      "exampleReusePolicy": "Reproduce individual cited examples with `<Ex cite=\"nakagawa2024:PAGE\">`; no tables/sections verbatim.",
+      "translationStatus": "Japanese original; English glosses/translations in the grammar are our own, marked as such.",
+      "attributionRequired": true
+    },
+    {
+      "source": "sato2008 — 佐藤知己『アイヌ語文法の基礎』 (Daigaku Shorin, 2008)",
+      "copyrightHolder": "Satō Tomomi & Daigaku Shorin 大学書林.",
+      "quotationPolicy": "Short cited excerpts only.",
+      "exampleReusePolicy": "Individual cited examples permitted with page citation.",
+      "translationStatus": "Japanese original; our English rendering, marked.",
+      "attributionRequired": true
+    },
+    {
+      "source": "bugaeva2022 — Handbook of the Ainu Language (De Gruyter Mouton, 2022)",
+      "copyrightHolder": "Chapter authors & De Gruyter Mouton.",
+      "quotationPolicy": "Short cited excerpts only; respect De Gruyter reuse terms.",
+      "exampleReusePolicy": "Individual cited examples with page citation; cite the specific chapter author (e.g. bugaevakobayashi2022, satoni2022).",
+      "translationStatus": "English original; quote glosses as published, attributed.",
+      "attributionRequired": true
+    },
+    {
+      "source": "tamura1996 / kayano1996 / nakagawa1995 — Saru & Chitose dictionaries",
+      "copyrightHolder": "Tamura Suzuko / Kayano Shigeru / Nakagawa Hiroshi and their publishers (Sōfūkan, Sanseidō).",
+      "quotationPolicy": "Cite individual lemmas/senses for grammatical illustration only; no wholesale entry copying.",
+      "exampleReusePolicy": "Dictionary example sentences may be cited individually with attribution; cite the underlying dictionary, never a glossary aggregator.",
+      "translationStatus": "Japanese glosses; our English equivalents are editorial.",
+      "attributionRequired": true
+    },
+    {
+      "source": "nakagawatexts2000 — 中川裕 アイヌ口承文芸テキスト集 1–24 and other oral-literature text editions",
+      "copyrightHolder": "The narrators/tradition-bearers and the editors/transcribers.",
+      "quotationPolicy": "Short cited excerpts only; the Part-XXII glossed-texts exposure is highest — keep cited passages minimal and attributed.",
+      "exampleReusePolicy": "Individual sentences/lines as glossed examples, attributed to narrator + edition + volume/page. No long continuous passages.",
+      "translationStatus": "Editions' Japanese translations attributed; English is editorial.",
+      "attributionRequired": true
+    },
+    {
+      "source": "pilsudski1912 — Materials for the Study of the Ainu Language and Folklore (1912)",
+      "copyrightHolder": "Public domain (author d. 1918; pre-1929 publication).",
+      "quotationPolicy": "Quotation permitted; cite for scholarly transparency.",
+      "exampleReusePolicy": "Examples freely reusable with citation.",
+      "translationStatus": "Original English/Latin-script; public domain.",
+      "attributionRequired": true
+    },
+    {
+      "source": "batchelor1905 / batchelor1938 — Ainu–English–Japanese Dictionary (incl. grammar)",
+      "copyrightHolder": "1905 edition public domain; later editions per publisher.",
+      "quotationPolicy": "Quotation permitted with the standard caveat about Batchelor's reliability.",
+      "exampleReusePolicy": "Reuse with citation and a reliability caveat (philological-witness, not authoritative).",
+      "translationStatus": "Public domain (1905).",
+      "attributionRequired": true
+    },
+    {
+      "source": "kindaichi1936 / chiri1942 / chiri1952 — classical works (1930s–50s)",
+      "copyrightHolder": "Authors' estates / original publishers; some still in copyright in Japan (life+70).",
+      "quotationPolicy": "Short cited excerpts only.",
+      "exampleReusePolicy": "Individual cited examples with citation; consult reprints (e.g. 著作集) for pagination.",
+      "translationStatus": "Japanese originals; English editorial.",
+      "attributionRequired": true
+    },
+    {
+      "source": "itak.aynu.org (Itak-uoeroskip modern glossary)",
+      "copyrightHolder": "The glossary maintainers; entries include modern coinages.",
+      "quotationPolicy": "Link out only (read-only); used to vet/flag modern vocabulary.",
+      "exampleReusePolicy": "Do NOT cite coinages as attested historical forms; confine to neo-Ainu contrast boxes (ijas2023b).",
+      "translationStatus": "Modern; flag as coinage.",
+      "attributionRequired": true
+    },
+    {
+      "source": "_default",
+      "copyrightHolder": "The work's author/publisher (see bibliography.ts entry).",
+      "quotationPolicy": "Short cited excerpts only.",
+      "exampleReusePolicy": "Individual attested examples permitted with full `<Ex cite>` attribution and page citation; no bulk reproduction; no tables/sections verbatim.",
+      "translationStatus": "Assume all rights reserved unless the entry says public domain; English translations in this grammar are editorial unless quoted.",
+      "attributionRequired": true
+    }
+  ]
+}
