@@ -1,0 +1,1012 @@
+[
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#015",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "175",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'coldness-kill=4.S' for <i lang=\"ain-Latn\">me-rayke=an</i> does not align with the free translation 'I did not feel cold'. The gloss suggests 'killed by coldness', while the translation implies 'feeling cold'.",
+    "quote": "g=\"coldness-exist autumn COP NMLZ coldness-kill=4.S even NEG do CONJ\"",
+    "suggestion": "Revise the gloss for <i lang=\"ain-Latn\">me-rayke=an</i> to better reflect 'feel cold' or 'be cold (felt state)', and ensure the morpheme breakdown is consistent with this meaning.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'coldness-exist' for <i lang=\"ain-Latn\">me-an</i> does not fully capture the meaning 'It was a cold autumn'. While 'coldness exist' is a literal translation, 'cold autumn' is more idiomatic.",
+    "quote": "g=\"coldness-exist autumn COP NMLZ coldness-kill=4.S even NEG do CONJ\"",
+    "suggestion": "Consider a gloss like 'coldness-exist (climate)' or 'it is cold (climate)' to better distinguish it from the felt state.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss consistently uses '4' (fourth person) for the person index, but the translation uses first person 'I'. While this is a known usage of the fourth person in Ainu narrative, the gloss and translation are not directly aligned. The notes explain the relationship, but the gloss itself does not reflect the narrative first-person reading.",
+    "quote": "In line 176: 'coldness-kill=4.S' translated as 'I did not feel cold' (first person). In line 400: 'look=4.S' translated as 'I looked'. In line 464: '4.A=enter' translated as 'I sank'.",
+    "suggestion": "Either change the gloss to '1SG' (but that would be inaccurate for the fourth person marker) or add a note in the gloss itself, e.g., '4.S (narrative 1SG)'. The existing notes already explain, so this is a minor issue.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'cuk' is not glossed in the 'g' line, but appears in the 'm' line. This is a missing gloss for a visible morpheme.",
+    "quote": "me-an cuk ne pe me-rayke=an ka somo ki no",
+    "suggestion": "Add a gloss for 'cuk', e.g., 'autumn', to align with the free translation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#029",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "401",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'track-POSS' for <i lang=\"ain-Latn\">ru-we</i> does not align with the free translation 'I saw that you were there.' The gloss suggests possession of a track, while the translation implies location or presence.",
+    "quote": "g=\"look=4.S then 2SG.S=exist track-POSS 4.A=see\"",
+    "suggestion": "Revise the gloss for <i lang=\"ain-Latn\">ru-we</i> to better reflect 'there' or 'location', and ensure it aligns with the overall meaning of the sentence.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '2SG.S=exist' for 'e=an' does not match the morpheme 'e=an' in the 'm' line. 'e=an' is a first-person singular subject form, not second-person. The free translation 'I saw' confirms this. The gloss is incorrect.",
+    "quote": "inkar=an akus e=an ru-we a=nukar",
+    "suggestion": "Correct gloss to '1SG.S=exist' or '1SG.S=be.there'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#014",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "152",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "In the table, the form <i lang=\"ain-Latn\">me-an</i> is presented as a zero-place climate predicate. However, in example 181, the same root <i lang=\"ain-Latn\">me-</i> is used in <i lang=\"ain-Latn\">me-rayke=an</i>, which is described as a one-place felt-state predicate. The table entry for 'cold' lists <i lang=\"ain-Latn\">me-an</i> as zero-place and <i lang=\"ain-Latn\">me-rayke</i> as one-place. This implies <i lang=\"ain-Latn\">me-an</i> is a single unit, but the example shows <i lang=\"ain-Latn\">me-rayke=an</i> where <i lang=\"ain-Latn\">an</i> is a suffix. This suggests <i lang=\"ain-Latn\">me-an</i> might be a compound of <i lang=\"ain-Latn\">me-</i> and <i lang=\"ain-Latn\">an</i>, which is a zero-place predicate, while <i lang=\"ain-Latn\">me-rayke</i> is a one-place predicate.",
+    "quote": "<i lang=\"ain-Latn\">me-an</i>",
+    "suggestion": "Clarify the relationship between <i lang=\"ain-Latn\">me-an</i> and <i lang=\"ain-Latn\">me-rayke</i>. If <i lang=\"ain-Latn\">me-an</i> is indeed <i lang=\"ain-Latn\">me-</i> + <i lang=\"ain-Latn\">an</i>, then the table should reflect this compound structure.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in hyphenation: 'me-an' uses a hyphen, but 'mean' is written as one word in line 112. Either 'me-an' should be 'mean' or 'me-rayke' should be 'me-rayke' consistently with hyphenation for morpheme boundaries.",
+    "quote": "<i lang=\"ain-Latn\">me-an</i></td>\n\t\t\t\t\t<td><i lang=\"ain-Latn\">me-rayke</i></td>",
+    "suggestion": "Standardize to either fully hyphenated (me-an, me-rayke) or unhyphenated (mean, merayke) based on chapter convention.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#002",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "30",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that the two accounts are presented together and distinguished where they diverge is marked as 'contested' but has no citation. This suggests the 'contested' status is based on internal discussion rather than external evidence.",
+    "quote": "The two accounts are presented together where they produce the same classification and distinguished where they diverge ‹contested›.",
+    "suggestion": "Add a citation to support the claim that the accounts are presented together and distinguished, or remove the 'contested' tag if it's an internal note.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to the claim that the two accounts diverge. But the statement is about how the chapter presents the accounts, not a factual claim about the language. The tag may be misplaced or unnecessary.",
+    "quote": "distinguished where they diverge ‹contested›.",
+    "suggestion": "Remove the tag or move it to the specific points of divergence.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#013",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "112",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <A w=\"mean\" /> is 'be cold (weather)'. The morphemic breakdown indicates it's formed from 'coldness root' (<i lang=\"ain-Latn\">me-</i>) and 'exist' (<A w=\"an\" />). The gloss should ideally reflect the 'exist' component, e.g., 'coldness exists' or 'it is cold'.",
+    "quote": "<A w=\"mean\" gl=\"be cold (weather)\" /> (&lt; <i lang=\"ain-Latn\">me-</i> 'coldness root' + <A w=\"an\" gl=\"exist\" />)",
+    "suggestion": "Adjust the gloss to 'coldness exists' or 'it is cold' to better reflect the morphemic breakdown.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <A w=\"hawas\" /> is 'it is said'. The morphemic breakdown is 'voice' (<A w=\"haw\" />) + 'stand' (<A w=\"as\" />). The gloss does not clearly reflect the combination of 'voice' and 'stand'.",
+    "quote": "<A w=\"hawas\" gl=\"it is said\" /> (&lt; <A w=\"haw\" gl=\"voice\" /> + <A w=\"as\" gl=\"stand\" />)",
+    "suggestion": "Consider a gloss that better reflects the components, such as 'voice stands' or 'it is voiced/spoken'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for 'sirpirka' is 'be fine weather', but the component glosses 'surroundings, weather' and 'be good' do not clearly combine to yield that meaning. The compound meaning is not transparent from the parts, and no literal translation or compositional note is provided to bridge the gap.",
+    "quote": "<A w=\"sirpirka\" gl=\"be fine weather\" /> (&lt; <A w=\"sir\" gl=\"surroundings, weather\" /> + <A w=\"pirka\" gl=\"be good\" />)",
+    "suggestion": "Add a literal translation or compositional note, e.g., \"lit: surroundings be good → be fine weather\".",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#043",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "207-213",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.A=COP' for 'ku=ne' assigns an A (agent) role, but in a copular construction with a subject and predicate nominal, the subject is not an agent. The gloss should reflect a subject (S) or topic role, not A.",
+    "quote": "okkayo ku=ne",
+    "suggestion": "Revise gloss to '1SG.S=COP' or '1SG.NOM=COP' to avoid implying agentivity.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#044",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "343-388",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in hyphenation: 'eikka' appears without a hyphen, but in other contexts, prefixes like 'e-' are often separated. While not necessarily incorrect, it contrasts with the treatment of other prefixed forms like 'ko-ruska' (l. 474). Check for consistency in prefix marking across the chapter.",
+    "quote": "<i lang=\"ain-Latn\">ikka</i></td>\n\t\t\t\t\t<td><i lang=\"ain-Latn\">eikka</i></td>",
+    "suggestion": "Verify whether 'eikka' should be segmented as 'e-ikka' for consistency with other prefixed forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#042",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "8",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'routed from' might be a typo for 'rooted from' or 'routed' could be intended as 'directed from'. The phrasing is slightly odd.",
+    "quote": "chapters routed from <Xr ch=\"valency-voice-overview\" />",
+    "suggestion": "If 'rooted' was intended, change to 'rooted from'. If 'routed' is intentional, it is fine.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#040",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "112, 152, 174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The same form is written as 'mean' (dictionary form) in line 112 and as 'me-an' (segmented) in the table and example. This is a formatting inconsistency that could confuse readers.",
+    "quote": "line 112: \"<A w=\"mean\" gl=\"be cold (weather)\" />\" vs line 152: \"<i lang=\"ain-Latn\">me-an</i>\" and line 174: \"m=\"me-an\"\"",
+    "suggestion": "Either consistently use the segmented form 'me-an' throughout, or add a note that 'mean' is the lexicalized form. A minimal fix would be to use 'me-an' in line 112 as well.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text uses unhyphenated forms for lexicalized compounds, while the table uses hyphens to show morphological composition. This is a systematic difference, but it could be confusing when the same form appears in both places (e.g., 'mean' vs 'me-an'). The inconsistency is not a contradiction but a formatting drift.",
+    "quote": "In text: 'sirpirka' (line 111), 'mean' (112), 'hawas' (113), 'sirkunne' (114), 'sitcuk' (114). In table: 'me-an' (152), 'sir-me-man' (157), 'sir-popke' (162), 'sir-sesek' (167).",
+    "suggestion": "Either consistently use hyphens in all morphological analyses, or use unhyphenated forms in prose and hyphens only in examples/tables. The current mix is acceptable but could be clarified.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#037",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "514",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'The example is pedagogical and is not corpus-attested.' This is meta-commentary about the nature of the example rather than information relevant to the reader of a grammar.",
+    "quote": "The example is pedagogical and is not corpus-attested.",
+    "suggestion": "Remove the note or rephrase it to explain the linguistic significance of the example being constructed, if any.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#001",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "25",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation is attached to a general statement about Nakagawa's system, but the page range provided (136-139) is likely too specific to cover this broad claim. It might be better to cite a broader range or a different source if available.",
+    "quote": "Nakagawa assigns every formative a numerical arity value so that the derived form's external argument capacity is computable from the visible morphology <Ref k=\"nakagawa2024\" p=\"136–139\" />.",
+    "suggestion": "Check if pages 136-139 indeed cover this general statement, or if a broader citation is needed.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation is attached to a statement about the copula <A w=\"ne\" /> and three-place verbs motivating a split in Satō's theory. The page range 42-61 might be too broad or not specific enough to pinpoint the exact motivation for this split.",
+    "quote": "The copula <A w=\"ne\" /> and three-place verbs motivate the split <Ref k=\"sato2023b\" p=\"42–61\" />.",
+    "suggestion": "Verify if pages 42-61 specifically address the motivation for the split by the copula and three-place verbs, or if a more targeted citation is available.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#046",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "509-515",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation 'ijas2023' is used without page numbers for a constructed example. Since the example is pedagogical and not corpus-attested, the citation should clarify the source location (e.g., lesson number) rather than just the author and year.",
+    "quote": "cite=\"ijas2023\"",
+    "suggestion": "Add lesson or section locator, e.g., 'ijas2023:L3'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#045",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "463-470",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A=enter' for 'a=oma' assigns an A (agent) role, but 'oma' is a locative-object verb with a single external argument (the entity entering), which should be S (subject), not A. The person indexing should reflect intransitive subject marking, not transitive A.",
+    "quote": "upas tum a=oma wa karkarse=an",
+    "suggestion": "Revise gloss to '4.S=enter' or '4.S=be.in' to reflect intransitive status.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#041",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "222–223",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'nispa a=ne' is a clause (noun + inflected verb), not a compound. The term 'compound' is inaccurate for a phrase with a separate noun and verb. The other example 'inne' is a genuine compound. This mislabeling could mislead readers about the morphological status.",
+    "quote": "Lexicalized denominal compounds such as nispa a=ne 'I am a master' and inne 'be numerous'",
+    "suggestion": "Rephrase to 'Lexicalized denominal constructions such as nispa a=ne 'I am a master' and the compound inne 'be numerous'' or similar.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#039",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "527",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Ijäs's presentation of object order reflects a 'teaching default', and that Nakagawa's examples show free ordering by discourse conditions. This is marked as 'consensus'. However, the citation for Nakagawa's work (p. 363-365) is provided for the claim about free ordering, but not explicitly for the claim that Ijäs's presentation is a 'teaching default' or that it differs from the 'consensus'.",
+    "quote": "Her presentation of the indirect object of a three-place verb in a fixed position between subject and direct object reflects a teaching default; Nakagawa's examples with <A w=\"epakasnu\" gl=\"teach\" /> show that the two objects and the subject are freely ordered by discourse conditions <Ref k=\"nakagawa2024\" p=\"363–365\" /> ‹consensus›.",
+    "suggestion": "Ensure the citation clearly supports both parts of the claim: that Ijäs's ordering is a teaching default and that Nakagawa's examples demonstrate free ordering.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#038",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "521",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text describes a dispute between Nakagawa and Satō regarding the theoretical status of the zero third-person marker. Nakagawa treats it as an absence of an affix, while Satō posits a zero affix to preserve a two-index cap. This is marked as 'contested' but the citations are only for the primary sources, not for the explicit statement of contestation itself.",
+    "quote": "with Nakagawa treating it as the absence of an affix and Satō positing a zero third-person affix to preserve the two-index cap <Ref k=\"nakagawa2024\" p=\"137\" />; <Ref k=\"sato2023b\" p=\"39\" />; <Ref k=\"sato2025b\" p=\"23–24\" /> ‹contested›.",
+    "suggestion": "Add a citation that specifically discusses the contestation between Nakagawa and Satō on this point, or remove the 'contested' tag if it's an internal assessment.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#036",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "502",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Ijäs presents <i lang=\"ain-Latn\">apto as</i> alongside bound-root zero-place forms, but <A w=\"apto\" /> is a free noun and its word-boundary status is unresolved according to Nakagawa. This is presented as a qualification on Ijäs's treatment. However, the claim that <A w=\"apto\" /> is a free noun is also made in section 'Denominal ambient predicates' (lines 128-130), where it's also noted that Nakagawa leaves the status unresolved. This suggests Ijäs's presentation is consistent with Nakagawa's findings regarding the ambiguity.",
+    "quote": "One qualification on her treatment: she presents <i lang=\"ain-Latn\">apto as</i> alongside the bound-root zero-place forms, but <A w=\"apto\" gl=\"rain\" /> is a free noun and Nakagawa leaves the word-boundary status of the expression unresolved <Ref k=\"nakagawa2024\" p=\"129–130\" /> ‹contested›.",
+    "suggestion": "Clarify if Ijäs's presentation is problematic because she *resolves* the ambiguity, or if she simply presents it alongside other forms without addressing the ambiguity herself. The current phrasing suggests she presents it without qualification, which might be the issue.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#035",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "494",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Ijäs's statements about bare verb forms carrying no tense and nouns being number-neutral agree with primary sources. However, the citation for <Ref k=\"shibatani1990\" p=\"33\" /> is placed after the statement about nouns being number-neutral, but not explicitly linked to the statement about verb tense. It's unclear if Shibatani's work at p. 33 supports both claims or just one.",
+    "quote": "Her statements that bare verb forms carry no tense and that nouns are number-neutral agree with all primary sources <Ref k=\"nakagawa2024\" p=\"124–125\" />; <Ref k=\"shibatani1990\" p=\"33\" />.",
+    "suggestion": "Ensure the citations clearly support each claim they are attached to. If Shibatani p. 33 only supports the noun number-neutrality, a separate citation might be needed for the verb tense claim.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#034",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "479",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text describes a derivational chain: <i lang=\"ain-Latn\">ruska</i> (base) -> <i lang=\"ain-Latn\">ko-ruska</i> (3-place) -> <i lang=\"ain-Latn\">yay-ko-ruska</i> (reflexive, reduced) -> <i lang=\"ain-Latn\">i-ruska</i> (1-place antipassive) -> <i lang=\"ain-Latn\">ko-i-ruska</i> (applicative on antipassive) -> <i lang=\"ain-Latn\">i-ruska-re</i> (causative on antipassive). The final step, <i lang=\"ain-Latn\">i-ruska-re</i>, is described as a causative. However, <i lang=\"ain-Latn\">i-ruska</i> is already a one-place intransitive. Applying a causative to an intransitive typically results in a transitive verb. The text also mentions <i lang=\"ain-Latn\">ko-i-ruska-re</i>, implying a causative applied to the applicative-antipassive form. This sequence seems complex and potentially contradictory regarding the resulting valency.",
+    "quote": "<i lang=\"ain-Latn\">i-ruska-re</i>, <i lang=\"ain-Latn\">ko-i-ruska-re</i>, and further",
+    "suggestion": "Provide a clearer breakdown of the valency changes at each step of the derivational chain, especially for the causative application to intransitive bases or derived forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#033",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "456",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that <A w=\"o\" gl=\"put X into a place\" /> is the single base-form three-place verb in Nakagawa's inventory. However, the description of locative-object verbs mentions <A w=\"oma\" gl=\"be in / enter a place\" />, <A w=\"osma\" gl=\"plunge into a place\" />, and <A w=\"kus\" gl=\"pass through a place\" /> as two-place verbs. It's unclear if <A w=\"o\" /> is considered a base form in the same sense as these others, or if it's a distinct category.",
+    "quote": "The single base-form three-place verb in his inventory is <A w=\"o\" gl=\"put X into a place\" />",
+    "suggestion": "Clarify the status of <A w=\"o\" /> as a 'base-form' three-place verb in relation to the other locative-object verbs mentioned.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#032",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "444",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">a=ureepunpa</i> is glossed as 'I kicked it up with my foot' and identified as an applicative with arity +1. However, the text states that applicatives add or promote an object, raising the arity by one. If the base verb is already transitive (taking a subject and object), adding another object would make it three-place. If the base is intransitive, it would become two-place. The gloss 'kicked it up' implies a transitive action.",
+    "quote": "<i lang=\"ain-Latn\">a=ureepunpa</i> 'I kicked it up with my foot' (applicative, arity +1)",
+    "suggestion": "Clarify the base verb and its arity for <i lang=\"ain-Latn\">a=ureepunpa</i> to explain how the applicative results in arity +1.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">a=koinawepunpa</i> is glossed as 'we offered inau' and identified as affiliative with arity 0. The text states that affiliative nominal prefixes have arity 0. However, 'offered inau' implies a transitive action (subject 'we', object 'inau'). If the base verb is transitive, and the prefix is affiliative (arity 0), the resulting verb should still be transitive. The gloss suggests a transitive meaning.",
+    "quote": "<i lang=\"ain-Latn\">a=koinawepunpa</i> 'we offered inau' (affiliative, arity 0)",
+    "suggestion": "Clarify how the affiliative prefix <i lang=\"ain-Latn\">e-</i> (implied, as it's mentioned as homophonous with applicative <i lang=\"ain-Latn\">e-</i>) results in a verb that takes a subject and object, while having an arity of 0.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#031",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "417",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions the transitivity-pair suffix system (<i lang=\"ain-Latn\">-V</i>, <i lang=\"ain-Latn\">-ke</i>, <i lang=\"ain-Latn\">-ka</i>) and states that their inventory and productivity are treated in detail in <Xr ch=\"transitivizer-ka-valency-pairs\" />. However, the table in section 'Transitivity pairs' (lines 321-420) lists several suppletive pairs and one example of antipassive derivation, but does not explicitly detail the use or productivity of these specific suffixes.",
+    "quote": "the inventory of <i lang=\"ain-Latn\">-V</i>, <i lang=\"ain-Latn\">-ke</i>, and <i lang=\"ain-Latn\">-ka</i> formations and their productivity are treated in detail.",
+    "suggestion": "Ensure that the 'Transitivity pairs' section or the referenced cross-chapter link adequately covers the inventory and productivity of the <i lang=\"ain-Latn\">-V</i>, <i lang=\"ain-Latn\">-ke</i>, and <i lang=\"ain-Latn\">-ka</i> suffixes as claimed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#030",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "411",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that <A w=\"as\" gl=\"stand\" /> can take either an agent-like or a theme-like subject without change in form. However, the subsequent sentence mentions that this distinction becomes visible under causativization, yielding different formations ('make sb stand' vs. 'stand sth up'). This implies that while the base form <A w=\"as\" /> might be ambiguous, the underlying semantic distinction is significant and can be realized morphologically in derived forms.",
+    "quote": "Certain one-place verbs may take either an agent-like or a theme-like subject without any change in form: <A w=\"as\" gl=\"stand\" /> can express both 'stand there (agent subject)' and 'stand upright (theme subject)'.",
+    "suggestion": "Clarify the extent to which the distinction between agent-like and theme-like subjects is 'uncoded' in the base form <A w=\"as\" />. If causativization reveals different formations, it suggests the distinction is not entirely lost in the base form.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#028",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "354",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "In the table, <i lang=\"ain-Latn\">inkar</i> is listed as intransitive (1-place) with the meaning 'look'. In example 400, <i lang=\"ain-Latn\">inkar=an</i> is glossed as 'look=4.S'. The note states 'The vi stem inkar carries the fourth-person S suffix =an.' This is consistent. However, the Japanese gloss for both <i lang=\"ain-Latn\">inkar</i> and <i lang=\"ain-Latn\">nukar</i> is 見る, which can mean both 'look' and 'see'. The distinction between 'look' (vi) and 'see' (vt) is crucial here.",
+    "quote": "<i lang=\"ain-Latn\">inkar</i>",
+    "suggestion": "Ensure the glosses and explanations clearly distinguish between 'look' (vi) and 'see' (vt) for <i lang=\"ain-Latn\">inkar</i> and <i lang=\"ain-Latn\">nukar</i> respectively, especially given the Japanese gloss 見る.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "In the table, <i lang=\"ain-Latn\">nukar</i> is listed as transitive (2-place) with the meaning 'see sth'. In example 400, <i lang=\"ain-Latn\">a=nukar</i> is glossed as '4.A=see'. The note states 'The vt stem nukar carries the fourth-person A prefix a=.' This is consistent. However, the Japanese gloss for both <i lang=\"ain-Latn\">inkar</i> and <i lang=\"ain-Latn\">nukar</i> is 見る, which can mean both 'look' and 'see'. The distinction between 'look' (vi) and 'see' (vt) is crucial here.",
+    "quote": "<i lang=\"ain-Latn\">nukar</i>",
+    "suggestion": "Ensure the glosses and explanations clearly distinguish between 'look' (vi) and 'see' (vt) for <i lang=\"ain-Latn\">inkar</i> and <i lang=\"ain-Latn\">nukar</i> respectively, especially given the Japanese gloss 見る.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#027",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "335",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <A w=\"nunpa\" /> is 'strain, wring' (vt), and for <A w=\"inunpa\" /> is 'strain liquor for ritual offering' (vi). The text explains <A w=\"inunpa\" /> is analyzable as the antipassive prefix <i lang=\"ain-Latn\">i-</i> attached to the transitive base <A w=\"nunpa\" />. However, the gloss for <A w=\"inunpa\" /> includes 'strain liquor for ritual offering', which is a specific semantic specialization. The gloss for <A w=\"nunpa\" /> is more general. This suggests the antipassive derivation has led to a semantic shift.",
+    "quote": "<A w=\"nunpa\" gl=\"strain, wring\" /> (vt) and <A w=\"inunpa\" gl=\"strain liquor for ritual offering\" /> (vi), where the intransitive member is analyzable as the antipassive prefix <i lang=\"ain-Latn\">i-</i> attached to the transitive base, though the pair has lexicalized to distinct meanings <Ref k=\"sato2008\" p=\"97\" />.",
+    "suggestion": "Ensure the glosses accurately reflect the semantic relationship and any specializations that have occurred through lexicalization.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#026",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "324",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <A w=\"roski\" /> is 'stand (pl) / stand sth up (pl)'. This indicates it can function as both an intransitive ('stand') and a transitive ('stand sth up'). However, the text states that Ainu has 'almost no productive lability' and <A w=\"roski\" /> is presented as an exception. This implies that the 'stand sth up' meaning is not a productive transitive use of the same stem.",
+    "quote": "Satō reports only <A w=\"roski\" gl=\"stand (pl) / stand sth up (pl)\" /> as the standard case of a form that fills both slots, and he presents it as an exception rather than a productive pattern <Ref k=\"sato2008\" p=\"97\" />.",
+    "suggestion": "Clarify the relationship between the intransitive and transitive meanings of <A w=\"roski\" />. If it's truly a single stem with both functions, it might be a counterexample to the 'almost no productive lability' claim, or the gloss needs to reflect a more nuanced analysis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#025",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "308",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses for the derived intransitives are 'stretch (intr)', 'get up, fly up', and 'run'. These are all intransitive verbs. However, the section is about deverbal derivation without valency change, and these prefixes (<i lang=\"ain-Latn\">si-</i>, <i lang=\"ain-Latn\">he-</i>, <i lang=\"ain-Latn\">ho-</i>) are described as creating 'anticausative or middle-like readings'. This suggests they might be derived from transitive bases, and the glosses should reflect this origin if possible, or at least clarify the relationship.",
+    "quote": "Nakagawa lists <i lang=\"ain-Latn\">si-turi</i> / <i lang=\"ain-Latn\">si-turpa</i> 'stretch (intr)', <i lang=\"ain-Latn\">ho-puni</i> / <i lang=\"ain-Latn\">ho-punpa</i> 'get up, fly up', and <i lang=\"ain-Latn\">ho-yupu</i> / <i lang=\"ain-Latn\">ho-yuppa</i> 'run' as derived intransitives that still undergo the Type-C alternation <Ref k=\"nakagawa2024\" p=\"150–151\" />.",
+    "suggestion": "If these prefixes are derived from transitive bases, consider adding a note or adjusting the gloss to indicate their transitive origin, or explicitly state that they are derived intransitives.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#024",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "295",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses for <A w=\"tuye\" /> and <A w=\"yasa\" /> are 'cut (sg)' and 'tear (sg)', respectively. The corresponding plural forms <A w=\"tuypa\" /> and <A w=\"yaspa\" /> are glossed as 'cut (pl)' and 'tear (pl)'. This implies that the 'sg' and 'pl' refer to the number of items being cut or torn, rather than the number of actions or repetitions. However, the section is about 'verbal-number suffix', which usually refers to aspect or iteration.",
+    "quote": "<A w=\"tuye\" gl=\"cut (sg)\" /> / <A w=\"tuypa\" gl=\"cut (pl)\" />, <A w=\"yasa\" gl=\"tear (sg)\" /> / <A w=\"yaspa\" gl=\"tear (pl)\" />.",
+    "suggestion": "Clarify whether 'sg' and 'pl' refer to singular/plural actions/aspects or singular/plural objects/patients. If it's about aspect or iteration, the glosses should reflect that.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#023",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "285",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <A w=\"turi\" /> is 'stretch (sth)', indicating a transitive verb. However, the examples of reduplication (<i lang=\"ain-Latn\">tutturi</i>, <i lang=\"ain-Latn\">turiri</i>, <i lang=\"ain-Latn\">turituri</i>) are described as marking 'repeated action', 'result-state persistence', and 'sustained repetition', which are typically associated with aspectual modifications of intransitive verbs or stative predicates. This suggests a potential mismatch between the base verb's transitivity and the aspectual meanings conveyed by reduplication.",
+    "quote": "<A w=\"turi\" gl=\"stretch (sth)\" /> yields <i lang=\"ain-Latn\">tutturi</i> (root-reduplicated, marking repeated action), <i lang=\"ain-Latn\">turiri</i> (partial, marking result-state persistence), and <i lang=\"ain-Latn\">turituri</i> (full, marking sustained repetition).",
+    "suggestion": "Clarify if <A w=\"turi\" /> can also function as an intransitive verb, or if the aspectual meanings of reduplication can apply to transitive verbs in a way that doesn't alter their argument structure.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#022",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "275",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Nakagawa assigns arity 0 to adverbial prefixes, and that they 'leave the external argument count unchanged'. This is consistent. However, the table entry (lines 74-77) for these prefixes also lists arity 0 and the role 'modify degree or completeness; argument frame unchanged'. The phrasing 'argument frame unchanged' is slightly redundant with 'leave the external argument count unchanged'.",
+    "quote": "Nakagawa assigns arity 0 to adverbial prefixes such as <i lang=\"ain-Latn\">ar-</i> 'completely' and <i lang=\"ain-Latn\">ru-</i> 'slightly': they modify the degree or thoroughness of the denoted event and leave the external argument count unchanged <Ref k=\"nakagawa2024\" p=\"137\" />.",
+    "suggestion": "Ensure consistency in phrasing between the table and the prose. Perhaps rephrase 'argument frame unchanged' to something more specific if needed, or rely on the prose explanation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#021",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "264",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that without independent tests, the default analysis of <i lang=\"ain-Latn\">N kar</i> is a two-word clause, and this is marked as 'corpus-suggested'. However, there is no citation provided for this 'corpus-suggested' claim.",
+    "quote": "Without those independent tests, the default analysis of <i lang=\"ain-Latn\">N kar</i> is a two-word clause ‹corpus-suggested›.",
+    "suggestion": "Add a citation to support the 'corpus-suggested' claim about the default analysis of <i lang=\"ain-Latn\">N kar</i>.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#020",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "250",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that <i lang=\"ain-Latn\">kar-ici</i> is a verbal-number fact about the stem itself, not evidence for a productive denominal verbalizer. However, the example is presented in the context of <A w=\"kar\" gl=\"make, do\" /> functioning as a verb. If <i lang=\"ain-Latn\">kar-ici</i> is a verbal-number fact, it implies <i lang=\"ain-Latn\">kar</i> itself is a verb stem, which is consistent, but the phrasing might imply <i lang=\"ain-Latn\">ici</i> is a verbalizer, which is then denied.",
+    "quote": "Horobetsu <i lang=\"ain-Latn\">kar-ici</i> 'make, do' — with the eastern plural suffix <i lang=\"ain-Latn\">ci</i> inside the person index — is a verbal-number fact about the stem itself, not evidence for a productive denominal verbalizer <Ref k=\"nakagawa2024\" p=\"154–155\" />.",
+    "suggestion": "Clarify the role of <i lang=\"ain-Latn\">ici</i>. If it's a verbal-number suffix, its function should be clearly stated, and the distinction from a denominal verbalizer should be explicit.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#019",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "233",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that a productive denominal suffix <i lang=\"ain-Latn\">-ne</i> has no independent support, but then mentions lexicalized forms like <i lang=\"ain-Latn\">inne</i>. This implies <i lang=\"ain-Lang\">inne</i> might be related to <i lang=\"ain-Latn\">-ne</i>, but the analysis is that it's the copula incorporated into a compound stem. This creates a slight confusion about the status of <i lang=\"ain-Latn\">-ne</i> as a potential suffix.",
+    "quote": "A productive denominal suffix <i lang=\"ain-Latn\">-ne</i> detached from the copular construction has no independent support in the available evidence; lexicalized forms such as <i lang=\"ain-Latn\">inne</i> are best analysed as the copula incorporated into a compound stem rather than as the output of an autonomous verbalizing suffix ‹corpus-suggested›.",
+    "suggestion": "Clarify the distinction between the copula <i lang=\"ain-Latn\">ne</i> and a potential suffix <i lang=\"ain-Latn\">-ne</i>, and how <i lang=\"ain-Lang\">inne</i> fits into this.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#018",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "222",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions <i lang=\"ain-Latn\">inne</i> 'be numerous' as a lexicalized denominal compound derived from <i lang=\"ain-Latn\">ir-ne</i>. However, the section is about the copula <i lang=\"ain-Latn\">ne</i>. If <i lang=\"ain-Latn\">inne</i> is derived from <i lang=\"ain-Latn\">ir-ne</i>, it's unclear how it relates to the copula <i lang=\"ain-Latn\">ne</i> and the 'transitive-prefix pattern' mentioned.",
+    "quote": "Lexicalized denominal compounds such as <i lang=\"ain-Latn\">nispa a=ne</i> 'I am a master' and <i lang=\"ain-Latn\">inne</i> 'be numerous' (&lt; <i lang=\"ain-Latn\">ir-ne</i>) follow the same transitive-prefix pattern <Ref k=\"sato2023b\" p=\"52\" /> ‹contested›.",
+    "suggestion": "Clarify the relationship between <i lang=\"ain-Latn\">inne</i>, <i lang=\"ain-Latn\">ir-ne</i>, and the copula <i lang=\"ain-Latn\">ne</i>, and explain how this example fits the 'transitive-prefix pattern'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#017",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "201",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states Nakagawa classifies <i lang=\"ain-Latn\">ne</i> as a two-place verb, but it only admits a subject person index and excludes an object-indexed form. This seems contradictory: a two-place verb should ideally have slots for two arguments, and if one is consistently blocked, it might be reclassified or the 'two-place' designation needs further explanation.",
+    "quote": "Nakagawa classifies <i lang=\"ain-Latn\">ne</i> as a two-place verb, yet it admits only the subject person index: the object-indexed form <i lang=\"ain-Latn\">*en=ne</i> is excluded in his diagnostic example, while the subject takes the transitive-subject prefix set <Ref k=\"nakagawa2024\" p=\"132\" />",
+    "suggestion": "Clarify why Nakagawa classifies <i lang=\"ain-Latn\">ne</i> as two-place if it only takes one indexed argument, or explain the nature of the 'blocked' object slot.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#016",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "180",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that <i lang=\"ain-Latn\">me-an</i> carries no person index, which aligns with it being a zero-place predicate. However, the example sentence has <i lang=\"ain-Latn\">me-an cuk ne pe me-rayke=an ka somo ki no</i>. The gloss for <i lang=\"ain-Latn\">me-an</i> is 'coldness-exist autumn', and the translation is 'It was a cold autumn'. The presence of <i lang=\"ain-Latn\">ne</i> (COP) suggests <i lang=\"ain-Latn\">me-an</i> might be functioning as a predicate nominal or part of a larger structure where person indexing is handled differently, or that the note's claim about <i lang=\"ain-Latn\">me-an</i> is not fully illustrated by this example.",
+    "quote": "The zero-place climate predicate me-an carries no person index. The one-place felt-state predicate me-rayke carries the fourth-person S suffix =an. Both contain the coldness root me-, but they belong to different argument classes.",
+    "suggestion": "Clarify how <i lang=\"ain-Latn\">me-an</i> functions in the example sentence, especially in relation to <i lang=\"ain-Latn\">ne</i> (COP), and how this aligns with the note's claim about it carrying no person index.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#012",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "99",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'arity value' for verbal-number suffixes and reduplication is listed as '0'. However, the 'verb-forming role' states they 'stem alternation for number or aspect; no effect on the argument frame'. This is consistent with an arity of 0, but the phrasing 'no effect on the argument frame' could be more precise.",
+    "quote": "0",
+    "suggestion": "Ensure the description clearly states that these processes do not alter the number of arguments.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#011",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "93",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'arity value' for non-productive transitivity-pair suffixes is listed as '0'. However, the 'verb-forming role' states they 'lexical pair formation between stative or inchoative and causative or transitive stems'. This implies a change in transitivity, which would typically affect the argument structure and thus the arity. An arity of 0 suggests no change.",
+    "quote": "0",
+    "suggestion": "Clarify how these suffixes form lexical pairs without changing the argument structure, or if the arity value of 0 is accurate in this context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#010",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "87",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'arity value' for productive causative suffixes is listed as '+1'. However, the 'verb-forming role' states they 'add a causer argument; valency-increasing'. This is consistent with an arity increase of +1, but the description could be more explicit about the resulting argument structure.",
+    "quote": "+1",
+    "suggestion": "Ensure the description clearly states that the arity increases by one, resulting in a specific number of arguments (e.g., from 1 to 2, or 2 to 3).",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#009",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "81",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'arity value' for applicative prefixes is listed as '+1'. However, the 'verb-forming role' states they 'add or promote a non-agent object; valency-increasing'. This is consistent with an arity increase of +1, but the description could be more explicit about the resulting argument structure.",
+    "quote": "+1",
+    "suggestion": "Ensure the description clearly states that the arity increases by one, resulting in a specific number of arguments (e.g., from 1 to 2, or 2 to 3).",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#008",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "75",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'arity value' for adverbial prefixes is listed as '0'. However, the 'verb-forming role' states they 'modify degree or completeness; argument frame unchanged'. This implies they do not alter the argument structure, which is consistent with arity 0, but the phrasing 'modify degree or completeness' could be interpreted as affecting the event's internal structure rather than its external arguments.",
+    "quote": "0",
+    "suggestion": "Clarify that 'modify degree or completeness' refers to semantic modification of the event, not a change in the number of arguments.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#007",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "69",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'arity value' for the light verb <i lang=\"ain-Latn\">kar</i> with a nominal complement is listed as '+2 (lexical transitive)'. However, the 'verb-forming role' states it forms 'make/do N', which typically implies a transitive action. The description 'lexical transitive' is consistent with +2, but the role description could be more explicit about the argument structure.",
+    "quote": "+2 (lexical transitive)",
+    "suggestion": "Ensure the 'verb-forming role' description clearly aligns with the '+2' arity value, perhaps by explicitly stating it takes a subject and an object.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#006",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "63",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for the copula <i lang=\"ain-Latn\">ne</i> lists Nakagawa's arity as '+2' and Satō's as 'macrorole = 1'. This is a direct contradiction in the arity value assigned by the two scholars for the same linguistic phenomenon.",
+    "quote": "+2 (Nakagawa); Satō: macrorole = 1",
+    "suggestion": "Ensure the table accurately reflects the differing analyses, perhaps by adding a note explaining the discrepancy or by using separate rows for each scholar's analysis if the format allows.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#005",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "57",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'arity value' for affiliative nominal prefixes is listed as '0'. However, the 'verb-forming role' states they 'add body-part or positional material without changing the slot count'. This implies they *do* change the argument structure by adding material, which contradicts the arity value of 0.",
+    "quote": "0",
+    "suggestion": "Clarify how 'adding material' can result in an arity of 0. If the arity remains unchanged, the description of the role should reflect that more clearly.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#004",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "52",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'verb-forming role' for concept-form nominal prefixes is described as 'slot-filling; most are voice or valency operations'. However, the 'arity value' is listed as '-1'. This is contradictory: voice and valency operations typically *change* the argument structure (arity), while 'slot-filling' and an arity of '-1' suggest they do not, or that they fill a slot without changing the overall count.",
+    "quote": "slot-filling; most are voice or valency operations",
+    "suggestion": "Reconcile the description of 'slot-filling' and 'voice or valency operations' with the '-1' arity value. Clarify if these prefixes are truly valency-neutral or if '-1' has a specific meaning in this context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "denominal-deverbal-verb-derivation~p1#003",
+  "chapter": "denominal-deverbal-verb-derivation",
+  "lines": "46",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry states that bound nominal roots 'often yields a zero-place predicate'. However, the 'arity value' for these roots is listed as '-1'. This is a contradiction: '-1' typically implies zero-place or ambient predicates, but 'often yields' suggests it's not a guaranteed outcome, and the value itself is negative.",
+    "quote": "denominal base in ambient and compound verbs; often yields a zero-place predicate",
+    "suggestion": "Clarify the meaning of '-1' in Nakagawa's system, or adjust the description to be more precise about when it yields a zero-place predicate.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

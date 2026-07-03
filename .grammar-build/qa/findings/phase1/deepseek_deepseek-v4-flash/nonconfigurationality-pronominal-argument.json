@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "461",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Chapter authors should present the classification as a live framing question rather than an established result",
+  "issue": "This sentence is meta-commentary addressed to the chapter authors, not the reader. It instructs authors on how to present the material, which is a pipeline register leak.",
+  "suggestion": "Rephrase to 'The classification is best presented as a live framing question rather than an established result.'",
+  "confidence": 1,
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "545-548",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "consistent with the community observation by nukopoli, aynu-corpora Discord, 2023-12-12, asserted; <Ref k=\"aynucorporadiscord\" />",
+  "issue": "Community observation cited without an epistemic tag (e.g., ‹corpus-suggested› or ‹speculative›), while other similar citations in the chapter carry such tags.",
+  "suggestion": "Add an appropriate epistemic tag, such as ‹corpus-suggested›, to maintain consistency.",
+  "confidence": 0.6,
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "No corpus-level count of A-before-O versus O-before-A frequencies in transitive clauses exists in the read literature",
+  "issue": "The phrase 'the read literature' is informal and may be a pipeline register leak, referring to literature read for this chapter rather than the available literature.",
+  "suggestion": "Rephrase to 'the available literature' or 'the literature surveyed'.",
+  "confidence": 0.5,
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

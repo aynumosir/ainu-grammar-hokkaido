@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "65",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "+1 (intransitive verb, subject present)",
+  "issue": "The table claims clause arity +1 for an intransitive verb with subject present, but the arity accounting in lines 39–41 says each NP present subtracts one, so a subject present would give net arity 0, not +1.",
+  "suggestion": "Change the description to 'intransitive verb, subject missing' or adjust the arity value to 0 and reassign the result accordingly.",
+  "confidence": 0.9,
+  "chapter": "prenominal-gap-relative-clauses",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "187, 296, 446",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "‹corpus-confirmed (as gap)›",
+  "issue": "The epistemic tag 'corpus-confirmed (as gap)' is applied to the ditransitive subject position, but the text explicitly states that no examples are attested for this position. The tag contradicts the claim of absence.",
+  "suggestion": "Replace with '‹speculative›' or '‹contested›' to reflect the lack of evidence.",
+  "confidence": 0.9,
+  "chapter": "prenominal-gap-relative-clauses",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "31",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "lexicalized RC-headed nominalizations such as <A w=\"aep\" gl=\"food\" /> in <Xr ch=\"lexical-head-formal-noun-nominalization\" />.",
+  "issue": "This is a sentence fragment; it lacks a main verb and is not a complete sentence.",
+  "suggestion": "Integrate with the previous sentence: '…; lexicalized RC-headed nominalizations such as aep are treated in <Xr … />.'",
+  "confidence": 0.8,
+  "chapter": "prenominal-gap-relative-clauses",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "254, 307",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "NMLZ",
+  "issue": "The formal noun p/pe is glossed as 'NMLZ' in relative clause examples, but in the arity analysis it functions as a head with arity −1, not as a nominalizer. The gloss may misrepresent its grammatical role in relative clauses.",
+  "suggestion": "Consider glossing as 'thing' or 'person' in relative clause contexts, or use a consistent gloss that reflects its head status.",
+  "confidence": 0.5,
+  "chapter": "prenominal-gap-relative-clauses",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

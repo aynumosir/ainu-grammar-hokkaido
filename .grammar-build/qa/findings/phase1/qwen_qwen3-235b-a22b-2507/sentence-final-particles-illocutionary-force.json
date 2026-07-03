@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "61",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ya</i> (imper.)",
+  "issue": "Inconsistent formatting of the label '(imper.)': it appears only on the second row for <i lang=\"ain-Latn\">ya</i> (imperative), but the first <i lang=\"ain-Latn\">ya</i> in the same table (polar question) has no such disambiguating label, despite the homophony being explicitly noted in the 'host / notes' cell. This creates an asymmetry in orthographic disambiguation within the same table.",
+  "suggestion": "Add '(Q)' or '(question)' after the first <i lang=\"ain-Latn\">ya</i> in the SFP column (row 3) to parallel the '(imper.)' label, ensuring consistent disambiguation of homophones.",
+  "confidence": 0.95,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "66",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ya</i> / <i lang=\"ain-Latn\">a</i>",
+  "issue": "The SFP column lists both <i lang=\"ain-Latn\">ya</i> and <i lang=\"ain-Latn\">a</i> as variants, but in the 'host / notes' cell, only <i lang=\"ain-Latn\">a</i> is specified as post-consonant. The orthographic alternation is clear, but the table uses two separate <i> tags for a single SFP entry, which may cause parsing or display inconsistencies in some systems.",
+  "suggestion": "Consider using a single <i lang=\"ain-Latn\">ya/a</i> to represent the allomorphy more compactly, or ensure consistent tagging across the table for disjunctive forms.",
+  "confidence": 0.85,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "73",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ro</i> / <i lang=\"ain-Latn\">rok</i> / <i lang=\"ain-Latn\">no</i>",
+  "issue": "The SFP column uses three separate <i> tags for dialectal variants, while other rows use single or double tags. This creates formatting inconsistency within the same column. Additionally, the dialect column already specifies the distribution of <i lang=\"ain-Latn\">rok</i> and <i lang=\"ain-Latn\">no</i>, making the full tripartite listing in the SFP column potentially redundant.",
+  "suggestion": "Use a single <i lang=\"ain-Latn\">ro/rok/no</i> or <i lang=\"ain-Latn\">ro</i> with dialect notes in the 'dialect' column only, to maintain formatting consistency.",
+  "confidence": 0.9,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "137",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<A w=\"yan\" gl=\"come up from water; polite imperative particle\" />",
+  "issue": "The gloss 'come up from water' is a lexical etymology, not a grammatical gloss. The particle <i lang=\"ain-Latn\">yan</i> is a grammatical morpheme (polite imperative), and including a lexical meaning in the gloss may confuse readers about its current function. The dictionary-linked gloss should reflect grammatical function, not etymology.",
+  "suggestion": "Change the gloss to 'polite imperative' only, or separate etymology into a note. The current form mixes lexical and grammatical information in a grammatical gloss field.",
+  "confidence": 0.98,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "280-288",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Members of the Discord-based aynu-corpora community have proposed that ... (antitwilight, aynu-corpora Discord 2024-11-18; <Ref k=\"aynucorporadiscord\" />) ‹speculative›.",
+  "issue": "The epistemic tag ‹speculative› is correctly applied, but the claim attributes etymological proposals to a Discord user 'antitwilight' without indicating whether this is a real name or handle. The citation format for community sources should consistently include the handle in parentheses as per the style (e.g., (username, aynu-corpora Discord ...)), but here the username appears mid-sentence without proper integration.",
+  "suggestion": "Rephrase to: '(antitwilight, aynu-corpora Discord 2024-11-18; <Ref k=\"aynucorporadiscord\" />)' to match the prescribed citation format for community sources.",
+  "confidence": 0.95,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "498-499",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord 2024-07-09, asserted; <Ref k=\"aynucorporadiscord\" />)",
+  "issue": "The term 'asserted' in the citation is not part of the standard community citation format described in the briefing. The correct format should be just (username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />). The addition of 'asserted' is a pipeline register leak, possibly indicating internal verification status.",
+  "suggestion": "Remove 'asserted' to conform to the standard citation style: (nukopoli, aynu-corpora Discord 2024-07-09; <Ref k=\"aynucorporadiscord\" />)",
+  "confidence": 0.97,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "598-599",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />, asserted, corroborated by Nakagawa 2024: 470)",
+  "issue": "Again, 'asserted' appears in the citation, which is not part of the standard format. Additionally, 'corroborated by Nakagawa 2024: 470' is a meta-commentary on source reliability, which belongs in the prose or a note, not embedded in the citation itself. This is a register leak from the editorial pipeline.",
+  "suggestion": "Move 'corroborated by Nakagawa 2024: 470' to the surrounding prose or note, and remove 'asserted' to clean the citation to: (nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />)",
+  "confidence": 0.98,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "508-509",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(aomidori_cs_ and nukopoli, aynu-corpora Discord 2023-12-12; <Ref k=\"aynucorporadiscord\" />)",
+  "issue": "The citation lists two usernames separated by 'and', but the standard format expects a single username. The use of 'and' suggests a joint contribution, but the format should either list both in a comma-separated way within the parentheses or be rephrased to reflect collaborative input without breaking citation syntax.",
+  "suggestion": "Use: (aomidori_cs_, nukopoli, aynu-corpora Discord 2023-12-12; <Ref k=\"aynucorporadiscord\" />)",
+  "confidence": 0.93,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "643-649",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "the Refsing treatment (pp.253, 265–267) was not re-read for this chapter and the Shizunai inventory has not been compiled at Fukuda's level of rigour.",
+  "issue": "The phrase 'was not re-read for this chapter' is a clear register leak, referring to the book production process rather than the linguistic content. It reveals editorial workflow decisions and should not appear in the final prose.",
+  "suggestion": "Rephrase to: 'The Refsing treatment (pp.253, 265–267) has not been fully integrated into the current inventory, and the Shizunai forms lack the systematic analysis of Fukuda (1961).'",
+  "confidence": 0.99,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

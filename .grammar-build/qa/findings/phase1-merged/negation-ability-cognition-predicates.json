@@ -1,0 +1,456 @@
+[
+ {
+  "id": "negation-ability-cognition-predicates~p1#009",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "77-79",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The order of lexical negatives listed in the sentence (eaykap, eramiskari, erampewtek, niwkes, koyaykus) does not match the order of their frequencies given (1,082; 464; 454; 177; 154), which would imply koyaykus = 154, but the actual frequency for koyaykus is stated as 154, while niwkes is 177 — the numbers are correct but the pairing via order is ambiguous and potentially misleading.",
+    "quote": "eaykap occurs 1,082 times, eramiskari 464, erampewtek 454, niwkes 177, and koyaykus 154, against affirmative easkay 1,324 and amkir 143.",
+    "suggestion": "Explicitly pair each form with its count: e.g., 'eaykap (1,082), eramiskari (464), erampewtek (454), niwkes (177), and koyaykus (154)'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#006",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "378",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This phrase is a meta-comment about the fact-checking process (the 'source check'), not part of the scholarly description for the reader.",
+    "quote": "The source check treats this as plausible but not separately verified for every pair",
+    "suggestion": "Rephrase to 'This claim is plausible but has not been verified for every pair' or simply remove the meta-reference.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#015",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "120-124",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The variant forms are given without consistent macron marking: eramuskari vs. eramuskare — if the final vowel differs in length, it should be marked; otherwise, orthographic consistency is needed.",
+    "quote": "eramiskari, with eramuskari recorded for a single Nibutani speaker and eramuskare in Ishikari; erampewtek appears as erampetek elsewhere",
+    "suggestion": "Standardize macron usage: e.g., eramuskari, eramuskare → eramuskarī / eramuskarē if vowel length is contrastive, or use consistent unmarked forms if not.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#008",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "112, 62, 93, 96",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Inconsistent use of British vs American English spellings: 'analyse' (BrE) alongside 'recognize' (AmE), and 'unskilful' (BrE) alongside 'skilled' (AmE).",
+    "quote": "analyse (line 112), recognize (line 62), unskilful (lines 93, 96), skilled (lines 93, 96)",
+    "suggestion": "Standardise to one variety throughout the chapter (e.g., 'analyze' and 'unskillful' for AmE, or 'analyse' and 'unskilful' for BrE).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#005",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "61",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'amkir' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<i lang=\"ain-Latn\">amkir</i>",
+    "suggestion": "Mark 'amkir' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'know, recognize by experience' for 'amkir' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "‘know, recognize by experience’",
+    "suggestion": "Mark 'know, recognize by experience' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'eramiskari' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<i lang=\"ain-Latn\">eramiskari</i>",
+    "suggestion": "Mark 'eramiskari' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'not know, not recognize' for 'eramiskari' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "not know, not recognize",
+    "suggestion": "Mark 'not know, not recognize' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'have never V-ed' for 'eramiskari' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "have never V-ed",
+    "suggestion": "Mark 'have never V-ed' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#004",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "56",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'niwkes' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<i lang=\"ain-Latn\">niwkes</i>",
+    "suggestion": "Mark 'niwkes' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'be unable to carry through' for 'niwkes' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "be unable to carry through",
+    "suggestion": "Mark 'be unable to carry through' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'cannot V to completion' for 'niwkes' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "cannot V to completion",
+    "suggestion": "Mark 'cannot V to completion' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#003",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "50",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'koyaykus' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<i lang=\"ain-Latn\">koyaykus</i>",
+    "suggestion": "Mark 'koyaykus' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'be unable because the situation prevents it' for 'koyaykus' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "be unable because the situation prevents it",
+    "suggestion": "Mark 'be unable because the situation prevents it' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'cannot V as things stand' for 'koyaykus' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "cannot V as things stand",
+    "suggestion": "Mark 'cannot V as things stand' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#002",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "43",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'easkay' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<i lang=\"ain-Latn\">easkay</i>",
+    "suggestion": "Mark 'easkay' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'be able; be skilled' for 'easkay' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "‘be able; be skilled’",
+    "suggestion": "Mark 'be able; be skilled' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'eaykap' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<i lang=\"ain-Latn\">eaykap</i>",
+    "suggestion": "Mark 'eaykap' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'be unable; be poor at' for 'eaykap' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "be unable; be poor at",
+    "suggestion": "Mark 'be unable; be poor at' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'cannot V (capacity or circumstance)' for 'eaykap' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "cannot V (capacity or circumstance)",
+    "suggestion": "Mark 'cannot V (capacity or circumstance)' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#001",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "20",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'eaykap' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<A w=\"eaykap\" gl=\"cannot\" />",
+    "suggestion": "Mark 'eaykap' with lang=\"ain-Latn\" and italics, like other Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'cannot' for 'eaykap' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "<A w=\"eaykap\" gl=\"cannot\" />",
+    "suggestion": "Mark 'cannot' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'koyaykus' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<A w=\"koyaykus\" gl=\"cannot (the situation prevents it)\" />",
+    "suggestion": "Mark 'koyaykus' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'cannot (the situation prevents it)' for 'koyaykus' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "<A w=\"koyaykus\" gl=\"cannot (the situation prevents it)\" />",
+    "suggestion": "Mark 'cannot (the situation prevents it)' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'niwkes' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<A w=\"niwkes\" gl=\"cannot finish\" />",
+    "suggestion": "Mark 'niwkes' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'cannot finish' for 'niwkes' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "<A w=\"niwkes\" gl=\"cannot finish\" />",
+    "suggestion": "Mark 'cannot finish' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'eramiskari' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<A w=\"eramiskari\" gl=\"not know; have never\" />",
+    "suggestion": "Mark 'eramiskari' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'not know; have never' for 'eramiskari' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "<A w=\"eramiskari\" gl=\"not know; have never\" />",
+    "suggestion": "Mark 'not know; have never' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'erampewtek' is not consistently italicized or marked with lang=\"ain-Latn\" when introduced as a lexical item.",
+    "quote": "<A w=\"erampewtek\" gl=\"not understand\" />",
+    "suggestion": "Mark 'erampewtek' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'not understand' for 'erampewtek' is not marked with lang=\"ain-Latn\" and italics.",
+    "quote": "<A w=\"erampewtek\" gl=\"not understand\" />",
+    "suggestion": "Mark 'not understand' with lang=\"ain-Latn\" and italics.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#014",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "389",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'eramuskare' is used as a post-verbal auxiliary, but the gloss '1SG.A=see never' treats it as a separate clause-final verb; it should be glossed as an auxiliary, e.g., 'see never' or 'see not.know', to reflect its syntactic role.",
+    "quote": "kuani anakne pu ari an cise ku=nukar eramuskare",
+    "suggestion": "Revise gloss to '1SG.A=see have.never' or '1SG.A=see not.know' to align with its auxiliary function.",
+    "confidence": 0.75
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'an cise' is rendered as 'house', but earlier in the note it is explained as part of 'pu ari an cise' meaning 'a building called a pu (storehouse)'; thus 'an cise' should not be glossed as 'house' independently, as it may misrepresent the compound noun.",
+    "quote": "1SG TOP storehouse QUOT exist house 1SG.A=see never",
+    "suggestion": "Revise gloss to avoid isolating 'an cise' as 'house'; instead, treat 'pu ari an cise' as a unit or gloss 'an cise' as 'called building' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#013",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "328",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation 'I had not known that he went out when night fell.' uses first person singular ('I'), but the subject of a=eramiskari is glossed as 4.A, which typically refers to a third or indefinite person, not first person.",
+    "quote": "sir-kunne kor soyne hi a=eramiskari aan ru-we somo ne",
+    "suggestion": "Either revise the translation to 'He had not known that he went out...' or 'One had not known...', or verify if a= here indexes 1SG and adjust the gloss accordingly.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#012",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "257",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'eramiskari' is glossed as 'never' in the gloss line, but 'never' is an adverbial meaning that may not fully align with the lexical negative verb meaning 'not know'; the gloss should reflect the verb's core meaning, e.g., 'not.know' or 'have.never', to match its use as a negative experiential auxiliary.",
+    "quote": "cip a=o ka eramiskari p ne korka",
+    "suggestion": "Change gloss from 'never' to 'not.know' or 'have.never' to better reflect the verb's lexical meaning and usage.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#011",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "189",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'flee=4.S even walk=4.S even cannot ADV cry only 4.A=do while' assigns 4th person to both verbs, but the free translation 'Unable to flee or to walk, doing nothing but cry,' uses first person ('I'), creating a person mismatch.",
+    "quote": "kira=an ka apkas=an ka eaykap no cis patek a=ki kor",
+    "suggestion": "Either change the translation to 'Unable to flee or to walk, doing nothing but cry,' with an impersonal subject, or revise the gloss to reflect 1SG if the speaker is the subject.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#010",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "179",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes two instances of a= (on tekehe and epuni), but the gloss '4=hand.POSS even 4.A=raise even cannot NMLZ COP because' suggests the first a= is possessive (correctly glossed as 4=) and the second as agentive (4.A=), yet the free translation 'Because I could not even raise my hand' uses first person, contradicting the 4th person gloss.",
+    "quote": "a=tekehe ka a=epuni ka eaykap pe ne kusu",
+    "suggestion": "Check whether the example should be 1st person throughout; if so, change gloss to '1SG=hand.POSS even 1SG.A=raise even cannot NMLZ COP because'. If 4th person is correct, change translation to 'Because one could not even raise one's hand'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "negation-ability-cognition-predicates~p1#007",
+  "chapter": "negation-ability-cognition-predicates",
+  "lines": "172–174",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The adverb 'pedagogically' is awkward here; it likely intends 'pedagogical' (adjective modifying 'slot') or a clearer phrasing.",
+    "quote": "the strengthening that Ijäs assigns to the slot pedagogically",
+    "suggestion": "Change to 'the strengthening that Ijäs assigns to the pedagogical slot' or 'the strengthening that Ijäs assigns to the slot in pedagogical descriptions'.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

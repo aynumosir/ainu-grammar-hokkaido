@@ -1,0 +1,645 @@
+[
+ {
+  "id": "dialect-sample-and-corpus-method~p1#003",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "57-60",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose (lines 15-19) mentions Nakagawa's 1995 dictionary and Satō's 2008 grammar as foundational Chitose sources, and the NINJAL Glossed Audio Corpus as additional material. The table includes these, but also adds Bugaeva's topical dictionary. The prose does not mention Bugaeva's dictionary as a primary source for CHI.",
+    "quote": "<td\n\t\t\t><Ref k=\"nakagawa1995\" />; <Ref k=\"sato2008\" />; <Ref k=\"glossedcorpus2016\" \n\t\t\t/>; Bugaeva topical dictionary <Ref k=\"bugaeva2015topical\" /></td\n\t\t\t>",
+    "suggestion": "Either add Bugaeva's topical dictionary to the prose description of CHI sources or remove it from the table entry if it's not considered a primary descriptive source in the same vein.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation key 'bugaeva2015topical' is used for a 'topical dictionary' but this source is not mentioned in the prose description of Chitose sources (lines 16-21). The prose only mentions Nakagawa 1995, Satō 2008, and the NINJAL Glossed Audio Corpus. The table adds Bugaeva's topical dictionary without explanation.",
+    "quote": "<Ref k=\"bugaeva2015topical\" />",
+    "suggestion": "Either add a brief mention of Bugaeva's topical dictionary in the prose for Chitose, or remove it from the table if it is not a primary source for Chitose.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 50: the citation is appended after the noun phrase, risking misinterpretation that the dictionary and the Ref are separate entities.",
+    "quote": "Bugaeva topical dictionary <Ref k=\"bugaeva2015topical\" />",
+    "suggestion": "Rephrase to '<Ref k=\"bugaeva2015topical\" /> (Bugaeva topical dictionary)' or 'the Bugaeva topical dictionary <Ref k=\"bugaeva2015topical\" />'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#002",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "48-50",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose (lines 11-14) mentions Nakagawa's 2024 grammar as a Saru reference, but the table entry for SAR lists <Ref k=\"ninjal2003\" /> as a source for the NINJAL corpus, not Nakagawa's 2024 grammar. The prose implies Nakagawa 2024 is a primary source for SAR, but it's not listed here.",
+    "quote": "<td\n\t\t\t><Ref k=\"tamura1996\" />; <Ref k=\"nakagawatexts2000\" />; <Ref k=\"nakagawa2024\"\n\t\t\t/>; NINJAL corpus <Ref k=\"ninjal2003\" /></td\n\t\t\t>",
+    "suggestion": "Ensure consistency between the prose description of sources for SAR and the table entry. Either add <Ref k=\"nakagawa2024\" /> to the table entry or adjust the prose.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The NINJAL corpus is cited as <Ref k=\"ninjal2003\" /> in the table, but in the prose at line 187 it is cited as <Ref k=\"ninjal2003\" /> as well. However, at line 198, the 'NINJAL Glossed Audio Corpus of Ainu Folklore' is cited as <Ref k=\"glossedcorpus2016\" />. The table entry for SAR includes 'NINJAL corpus <Ref k=\"ninjal2003\" />' but the prose at line 187 describes it as 'NINJAL Corpus of Ainu Oral Literature'. The relationship between these two NINJAL corpora is unclear—are they the same or different?",
+    "quote": "<Ref k=\"tamura1996\" />; <Ref k=\"nakagawatexts2000\" />; <Ref k=\"nakagawa2024\" />; NINJAL corpus <Ref k=\"ninjal2003\" />",
+    "suggestion": "Clarify whether 'ninjal2003' and 'glossedcorpus2016' are distinct corpora or the same resource with different names, and ensure consistent citation.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Ref tag is placed after the noun phrase rather than integrated into it, potentially implying that 'NINJAL corpus' is a separate source from <Ref k=\"ninjal2003\" />, but the citation key refers to the same work. This creates ambiguity about whether this is a distinct source.",
+    "quote": "NINJAL corpus <Ref k=\"ninjal2003\" />",
+    "suggestion": "Integrate the citation directly: '<Ref k=\"ninjal2003\" /> (NINJAL corpus)' or rephrase to 'the NINJAL corpus <Ref k=\"ninjal2003\" />'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#005",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "171-174",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose states that the Mukawa component has approximately 13,424 sentences. However, Mukawa is not listed as a distinct dialect area in Table 1 (lines 34-100), which lists SAR, CHI, SHI, HOR, TOK, ISH, ASA, YAK, and HK. This suggests Mukawa might be a sub-region or a source not explicitly categorized in the table.",
+    "quote": "The Saru sub-corpus is the largest (around 77,964 sentences), followed by the Shizunai/southern materials (approximately 43,295 sentences), a Mukawa component (approximately 13,424 sentences), and the Chitose sub-corpus (approximately 4,420 sentences), with smaller contributions from Tokachi, Horobetsu, and other localities",
+    "suggestion": "Either add Mukawa to Table 1 with its corresponding sources and coverage depth, or clarify its relationship to the other listed dialects and sources in the prose.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The total of the listed sub-corpora (77,964 + 43,295 + 13,424 + 4,420 = 139,103) is significantly less than the stated total corpus size of 167,890 sentences. The remaining ~28,787 sentences are unaccounted for, yet the prose says 'with smaller contributions from Tokachi, Horobetsu, and other localities' — but does not quantify them, making the numbers internally inconsistent.",
+    "quote": "Saru sub-corpus is the largest (around 77,964 sentences), followed by the Shizunai/southern materials (approximately 43,295 sentences), a Mukawa component (approximately 13,424 sentences), and the Chitose sub-corpus (approximately 4,420 sentences)",
+    "suggestion": "Revise to include an estimate for the 'smaller contributions' or adjust the total to match the sum, or clarify that the stated numbers are partial.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This total is not reconciled with the sum of the sub-corpus sizes provided in the next lines, creating a numerical contradiction.",
+    "quote": "approximately 167,890 sentences",
+    "suggestion": "Either revise the total or provide a breakdown that adds up to it.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#019",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "132",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The evidence grade '‹corpus-suggested›' is applied to a citation of a 2026 study. The grade '‹corpus-suggested›' is defined for claims supported by corpus data but with thin evidence. However, the claim here is about the existence of a study, not a corpus-based claim. The grade seems inappropriate for a bibliographic reference.",
+    "quote": "Kasuga's 2026 dialectometric analysis extends coverage to 75 localities <Ref k=\"kasuga2026\" /> ‹corpus-suggested›",
+    "suggestion": "Remove the '‹corpus-suggested›' grade from this citation, as it is not a corpus-based claim but a reference to a published study.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The evidence grade ‹corpus-suggested› follows the citation but is not attached to the claim about extending coverage to 75 localities. This creates ambiguity: does the grade apply to the existence of the study or to the claim about 75 localities?",
+    "quote": "Kasuga's 2026 dialectometric analysis extends coverage to 75 localities <Ref k=\"kasuga2026\" /> ‹corpus-suggested›",
+    "suggestion": "Attach the grade directly to the claim: 'extends coverage to 75 localities ‹corpus-suggested› <Ref k=\"kasuga2026\" />'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#013",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "322-326",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'disputed' community observations are marked as 'community-contested'. However, the evidence grading system described in Section 295-312 does not include 'community-contested' as a grade. It lists ‹consensus›, ‹contested›, ‹corpus-confirmed›, ‹corpus-suggested›, ‹speculative›, and ‹original-needs-review›. This suggests a missing grade or an inconsistency in how community observations are handled.",
+    "quote": "Each incorporated observation is cited with the member handle and date, graded according to the confidence level recorded in the archive (<em>asserted</em> items corroborated by the corpus or literature receive a standard grade; <em>proposed</em> items are marked ‹contested›; <em>speculative</em> items are marked ‹speculative›; <em>disputed</em> items are noted as community-contested).",
+    "suggestion": "Either add 'community-contested' to the list of evidence grades or clarify how 'disputed' community observations are represented within the existing grading system. If 'community-contested' is a valid grade, it should be defined alongside the others.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The grading scheme for community observations introduces categories ('asserted', 'proposed', 'speculative', 'disputed') that are not fully aligned with the evidence grades defined earlier (lines 297-311). The earlier grades are: default (consensus), ‹contested›, ‹corpus-confirmed›, ‹corpus-suggested›, ‹speculative›, ‹original-needs-review›. Here, 'proposed' maps to ‹contested›, but 'asserted' is said to receive 'a standard grade'—which standard grade? This is ambiguous and could cause confusion.",
+    "quote": "graded according to the confidence level recorded in the archive (<em>asserted</em> items corroborated by the corpus or literature receive a standard grade; <em>proposed</em> items are marked ‹contested›; <em>speculative</em> items are marked ‹speculative›; <em>disputed</em> items are noted as community-contested).",
+    "suggestion": "Clarify what 'standard grade' means for 'asserted' items, e.g., '‹corpus-confirmed› if corroborated, otherwise ‹consensus›', or align the terminology with the main grading system.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#028",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "72",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same pattern: citation separated from noun phrase, suggesting possible distinction between the materials and the cited source.",
+    "quote": "Chiba University materials <Ref k=\"chiba2015\" />",
+    "suggestion": "Rephrase to '<Ref k=\"chiba2015\" /> (Chiba University materials)'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#027",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "66",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Citation placement creates ambiguity: it appears as if 'ILCAA Saru/Shizunai materials' is a distinct source from <Ref k=\"ilcaa1976\" />, but the key likely refers to that very material.",
+    "quote": "ILCAA Saru/Shizunai materials <Ref k=\"ilcaa1976\" />",
+    "suggestion": "Rephrase to '<Ref k=\"ilcaa1976\" /> (ILCAA Saru/Shizunai materials)'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#029",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "262",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting: 'ruwe ne' is in italics, but other Ainu forms in the chapter are not consistently italicized. The grammar should standardize on either italics or roman for Ainu forms.",
+    "quote": "<em>ruwe ne</em>: 16,350 tokens in the 167,890-sentence Hokkaido corpus",
+    "suggestion": "Use consistent formatting for Ainu forms — either all in italics or none — per the style guide.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#022",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "220-221",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, Japanese names in kanji without romanization, inconsistent with the romanized names used elsewhere (e.g., 'Kanenari Matsu' at line 212).",
+    "quote": "including 神崎雅好 and 萱野志朗",
+    "suggestion": "Provide romanized versions in parentheses, e.g., 'Kanzaki Masayoshi and Kayano Shiro'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#021",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "215-216",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The word 'Hokkaidō' uses a macron (ō), while elsewhere in the chapter 'Hokkaido' is written without a macron (e.g., line 8, 113, 170). This is inconsistent orthography within the same chapter.",
+    "quote": "Hokkaidō Utari Kyōkai Akor Itak textbook",
+    "suggestion": "Use 'Hokkaido' consistently without macron, or add macrons consistently if that is the house style.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#020",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "188-189",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Japanese names are given in kanji/kana without romanization or translation, while the rest of the chapter uses romanized names (e.g., 'Kanenari Matsu' at line 212). This is inconsistent and may be confusing for readers who do not read Japanese.",
+    "quote": "including 木村きみ and 小田イト",
+    "suggestion": "Provide romanized versions in parentheses, e.g., 'Kimura Kimi and Oda Ito', or use romanization consistently.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#014",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "8-9",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'bear on' is slightly informal for a reference grammar; 'bear on' could be replaced with 'affect' or 'are reflected in' for consistency with the register of the rest of the chapter.",
+    "quote": "Hokkaido Ainu was spoken in regionally differentiated forms whose systematic divergences bear on morphology, phonology, and lexical semantics alike.",
+    "suggestion": "Replace 'bear on' with 'affect' or 'are reflected in'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#012",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "220-222",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This source is described as providing Saru and Chitose texts. However, it is not listed in the table entries for either SAR (lines 48-50) or CHI (lines 57-60).",
+    "quote": "The Ainu Times (Ainu Koraci) learner newsletter <Ref k=\"ainukoraci1991\" />, providing\n\t\t\tSaru and Chitose texts by speakers including 神崎雅好 and 萱野志朗.",
+    "suggestion": "Add <Ref k=\"ainukoraci1991\" /> to the primary sources for both SAR and CHI in Table 1.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#011",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "215-217",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "These sources are mentioned in the prose but not explicitly linked to any specific dialect tag in Table 1. Given the general nature of conversational and pedagogical registers, they might apply broadly or to the core dialects (SAR/CHI).",
+    "quote": "Kayano's conversational Ainu recordings <Ref k=\"kayano1987\" /> and the Hokkaidō Utari\n\t\t\tKyōkai Akor Itak textbook <Ref k=\"utari1994\" />, contributing conversational and\n\t\t\tpedagogical register.",
+    "suggestion": "Clarify which dialect(s) these sources are primarily associated with and update Table 1 accordingly, or note their general applicability if that is the case.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#010",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "211-212",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for HOR (lines 72) lists <Ref k=\"chiba2015\" /> as a source. The prose states it covers Horobetsu and adjacent areas. If 'adjacent areas' include any of the other listed dialects (e.g., SHI, TOK), this source might be relevant for them too, but it's only listed for HOR.",
+    "quote": "Chiba University Ainu language materials, covering Horobetsu and adjacent areas, with\n\t\t\tnarrators including Kanenari Matsu <Ref k=\"chiba2015\" />.",
+    "suggestion": "Consider if <Ref k=\"chiba2015\" /> should be listed as a supplementary source for other dialects if 'adjacent areas' overlap significantly.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#009",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "207-208",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This source is described as Saru-dialect oral literature. However, it is not listed in the table entry for SAR (lines 48-50).",
+    "quote": "The Biratori Town Ainu oral-literature archive, Saru-dialect oral literature held by the\n\t\t\tNational Ainu Museum <Ref k=\"biratori1969\" />.",
+    "suggestion": "Add <Ref k=\"biratori1969\" /> to the list of primary sources for SAR in Table 1.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#008",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "202-204",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for SHI (lines 66) lists <Ref k=\"ilcaa1976\" /> as a source. The prose here states it covers Saru/Shizunai. This implies it should also be a source for SAR, but it is not listed in the SAR table entry (lines 48-50).",
+    "quote": "The ILCAA aligned Saru/Shizunai audio-text materials from recordings of 1976–1984 <Ref\n\t\t\t\tk=\"ilcaa1976\" />.",
+    "suggestion": "If the ILCAA materials cover both Saru and Shizunai, then <Ref k=\"ilcaa1976\" /> should be added to the SAR table entry.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#007",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "192-195",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose states this collection covers Saru and Chitose narrators. The table entry for SAR (lines 48-50) lists <Ref k=\"nakagawatexts2000\" /> as a source. The table entry for CHI (lines 57-60) does not list <Ref k=\"nakagawatexts2000\" />. This suggests an inconsistency in how this source is attributed to dialects.",
+    "quote": "Nakagawa's annotated oral-literature text collection, volumes 1–24 <Ref\n\t\t\t\tk=\"nakagawatexts2000\" />,\n\t\t\tcovering uwepeker (prose tales) and kamuy yukar from Saru and Chitose narrators\n\t\t\tprincipally at Nibutani.",
+    "suggestion": "Ensure that <Ref k=\"nakagawatexts2000\" /> is listed as a source for both SAR and CHI in the table if it indeed covers both dialects as stated in the prose.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#006",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "187-189",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for SAR (lines 48-50) lists <Ref k=\"ninjal2003\" /> as a source for the NINJAL corpus. However, the prose here states the NINJAL corpus covers *both* Saru and Chitose narrators. The table entry for CHI (lines 57-60) also lists <Ref k=\"glossedcorpus2016\" /> which is described as a 'morphologically annotated corpus of Chitose and Saru folktales' (lines 198-199). This suggests <Ref k=\"ninjal2003\" /> might also cover Chitose, or there's overlap in corpus descriptions.",
+    "quote": "The NINJAL Corpus of Ainu Oral Literature <Ref k=\"ninjal2003\" />, an aligned Hokkaido narrative corpus with audio, covering Saru and Chitose narrators (including 木村きみ and 小田イト).",
+    "suggestion": "Clarify the specific coverage of <Ref k=\"ninjal2003\" />. If it covers both Saru and Chitose, this should be reflected consistently in the table entries for both SAR and CHI, or the prose should be more precise about which corpus covers which dialect.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#001",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "21-27",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Tokachi (TOK) includes <Ref k=\"takahashi2013\" /> and <Ref k=\"takahashi2011\" /> which are not explicitly listed as primary descriptive sources for the Tokachi dialect in the table. The prose mentions them as 'evidentiality and deixis studies', which might be distinct from general dialect documentation.",
+    "quote": "Six further dialect areas enter the description where sources allow: Shizunai (SHI), documented most fully by <Ref k=\"refsing1986\" />; Horobetsu (HOR), the subject of Takahashi's morphosyntactic studies <Ref k=\"takahashi2017\" /><Ref k=\"takahashi2018\" />; Tokachi (TOK), whose dialect is documented in Takahashi's Tokachi example collection <Ref k=\"takahashi2014texts\" /> and evidentiality and deixis studies <Ref k=\"takahashi2013\" /><Ref k=\"takahashi2011\" />",
+    "suggestion": "Clarify if these specific studies are considered primary descriptive sources for the TOK dialect in the context of this grammar, or adjust the prose to reflect their role more accurately.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#026",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "221-222",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Untranslated Japanese proper names appear without romanization, inconsistent with the treatment of other narrators in the corpus list.",
+    "quote": "神崎雅好 and 萱野志朗",
+    "suggestion": "Add romanized forms: '神崎雅好 (Kanzaki Masayoshi) and 萱野志朗 (Kayano Shiro)'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#025",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "187-189",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Untranslated Japanese proper names appear without accompanying romanization or gloss, while the rest of the chapter consistently uses romanized forms for narrators.",
+    "quote": "木村きみ and 小田イト",
+    "suggestion": "Add romanized forms in parentheses after each name, e.g., '木村きみ (Kimura Kimi) and 小田イト (Oda Ito)'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#024",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "275",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation 'Kayano 1996' is mentioned as a dictionary source, but it is not listed in Table 1 or in the prose description of sources (lines 186-223). The only Kayano source mentioned is 'Kayano's conversational Ainu recordings <Ref k=\"kayano1987\" />' at line 215. This introduces a new source without prior mention.",
+    "quote": "Kayano 1996",
+    "suggestion": "Either add 'Kayano 1996' to the list of sources in the 'attested text corpus' section, or remove the reference here if it is not a primary source used in the grammar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#023",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "262-263",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example count '16,350 tokens' is given for 'ruwe ne', but the total corpus size is stated as 'approximately 167,890 sentences' at line 171. The number 16,350 seems plausible, but the prose says 'for example' without citing a source for this specific count. More importantly, the count is presented as a concrete example, but the corpus methodology section (lines 236-265) does not specify that such counts are verified or sourced. This could be a hypothetical example, but it is presented as factual.",
+    "quote": "ruwe ne: 16,350 tokens in the 167,890-sentence Hokkaido corpus",
+    "suggestion": "Either add a citation for this specific count, or mark it as an illustrative example (e.g., 'for instance, ruwe ne might appear 16,350 times...').",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#018",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "106-107",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Shiranuka is not listed in Table 1 or mentioned in the dialect sample list (lines 22-29). The prose introduces it as an additional locality, but the table and earlier list only cover SAR, CHI, SHI, HOR, TOK, ISH, ASA, YAK. This inconsistency suggests Shiranuka is an unlisted dialect.",
+    "quote": "Tamura Masashi's grammatical description of the Shiranuka dialect <Ref k=\"tamuramasashi2011\" /> adds a further locality for isolated phenomena.",
+    "suggestion": "Either add Shiranuka to Table 1 as a supplementary locality, or clarify that Shiranuka is a sub-locality of one of the listed dialects (e.g., part of Tokachi or a separate area).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#017",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "78",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation key 'takahashi2015' appears in the table for Tokachi but is not mentioned in the prose description of Tokachi sources (lines 25-27). The prose lists 'takahashi2014texts', 'takahashi2013', and 'takahashi2011'. The table adds 'takahashi2015' without explanation.",
+    "quote": "<Ref k=\"takahashi2015\" />",
+    "suggestion": "Either add 'takahashi2015' to the prose description of Tokachi sources, or remove it from the table if it is not a primary source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#016",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "29-30",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag 'HK' is introduced here but is not listed in Table 1 or used elsewhere in the chapter. The table only lists SAR, CHI, SHI, HOR, TOK, ISH, ASA, YAK. The reader may wonder where 'HK' fits or if it is a typo for 'HK' as a general Hokkaido tag.",
+    "quote": "The tag <strong>HK</strong> marks data not assignable to a specific locality.",
+    "suggestion": "Either add 'HK' to Table 1 as a row for 'Unspecified Hokkaido' or clarify that 'HK' is a meta-tag not shown in the table.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#015",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "12-13",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation key 'nakagawatexts2000' is used for a multi-volume collection (volumes 1–24), but the reference list may not distinguish individual volumes. The prose says 'volumes 1–24' at line 192, but here it is cited as a single source without volume specification.",
+    "quote": "Nakagawa's annotated oral-literature text collections from Nibutani and Biratori narrators give a genre-diverse discourse corpus <Ref k=\"nakagawatexts2000\" />",
+    "suggestion": "Consider adding volume numbers or a range to the citation, e.g., <Ref k=\"nakagawatexts2000\" p=\"vols. 1–24\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "dialect-sample-and-corpus-method~p1#004",
+  "chapter": "dialect-sample-and-corpus-method",
+  "lines": "150-151",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Sakhalin Ainu has the tag 'SA', but later in the table (lines 46, 55), 'SAR' is used for the Saru valley dialect. This creates ambiguity as 'SA' could be mistaken for 'SAR'.",
+    "quote": "Sakhalin Ainu (sometimes called Enciw; tag <strong>SA</strong>) and Kuril Ainu (tag <strong>KU</strong>) are not objects of description in this grammar; they appear as systematic external contrast points.",
+    "suggestion": "Clarify the tag for Sakhalin Ainu. If it is indeed 'SA', ensure it is consistently used and distinguished from 'SAR'. If 'SAR' is intended for Sakhalin Ainu, then the prose needs correction.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

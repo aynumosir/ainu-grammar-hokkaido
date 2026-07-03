@@ -1,0 +1,1721 @@
+[
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#003",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "40",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyomante' in italics for the Ainu word, but the IPA transcription in the note uses 'iyomante' without italics. Consistency is needed.",
+    "quote": "phonemically /i=omante/",
+    "suggestion": "/i=omante/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyomante' in italics for the Ainu word, but the IPA transcription in the note uses 'iyomante' without italics. Consistency is needed.",
+    "quote": "[iyomante]",
+    "suggestion": "[iyomante]",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'uwepeker' in italics for the Ainu word, but the IPA transcription in the note uses 'uwepeker' without italics. Consistency is needed.",
+    "quote": "uwepeker",
+    "suggestion": "uwepeker",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "HTML entity '&lt;' appears literally instead of rendering as '<'. This is a markup error that should be corrected to ensure proper display.",
+    "quote": "/i=omante/ (&lt; the indefinite-object prefix",
+    "suggestion": "Replace '&lt;' with '<'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#024",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "228",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community source is cited with a username and date, but the corresponding reference in the bibliography is missing. It should likely be linked to the 'aynucorporadiscord' key.",
+    "quote": "nukopoli, 2023-12-11",
+    "suggestion": null,
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied to a Discord attribution, which may overstate evidential strength if not backed by published corpus data.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-11) ‹corpus-confirmed›",
+    "suggestion": "Downgrade to ‹corpus-suggested› unless independent corpus verification is confirmed.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#058",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "274-277",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'send' does not match the stem 'ikra', which is used earlier as 'send away' (omante). Inconsistency in translation of same root.",
+    "quote": "m=\"ku=ikra\" g=\"1SG.A=send\" tr=\"I send it/them\"",
+    "suggestion": "Ensure consistent glossing of 'ikra' as 'send' or 'send away' across chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#056",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "193-197",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation includes ceremonial nuance ('performs the bear-spirit-sending') not reflected in the gloss 'ANTIP=send.away'. This introduces meaning not accounted for morphemically.",
+    "quote": "m=\"i=omante\" ... g=\"ANTIP=send.away\" ... tr=\"sends it away; (ceremonially) performs the bear-spirit-sending\"",
+    "suggestion": "Revise translation to 'sends it away' only, or expand gloss to include cultural context if justified by analysis.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#061",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "480",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Untranslated Japanese name appears without romanization or explanation, while the rest of the text translates Japanese terms.",
+    "quote": "志賀雪湖 (Okuda 2025 <Ref k=\"okuda2025\" />)",
+    "suggestion": "Add romanization: 'Shiga Sekko (Okuda 2025)' or provide footnote.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#059",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "379",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss appears in table without proper formatting; it should be aligned with other entries and possibly italicized or separated from the translation.",
+    "quote": "APPL=speak 'talk to someone'",
+    "suggestion": "Format consistently with other rows, e.g., place gloss in italics or separate column.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#053",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "438",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The transcription uses a right-single-quote (stress mark) before the glottal symbol ʔ in each form, e.g. aˈʔep. The rest of the chapter never marks stress, and the combination of stress mark + glottal stop is inconsistent with the simpler [ʔ] used elsewhere (e.g. line 442, 454). This appears to be a formatting anomaly or a typo (perhaps the apostrophe was intended as a glottal stop marker and the ʔ is redundant, or vice versa).",
+    "quote": "aˈʔep, aˈʔoypep, eˈʔikka, teˈʔeta",
+    "suggestion": "Either remove the stress marks (write aʔep etc.) or, if stress is genuinely being marked, add a brief note explaining the notation and ensure it is used consistently across all phonetic transcriptions in the chapter.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#052",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "426",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ku=' in italics for the Ainu word, but the IPA transcription in the note uses 'ku=' without italics. Consistency is needed.",
+    "quote": "ku=",
+    "suggestion": "ku=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ci=' in italics for the Ainu word, but the IPA transcription in the note uses 'ci=' without italics. Consistency is needed.",
+    "quote": "ci=",
+    "suggestion": "ci=",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#051",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "418",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'eyunin' in italics for the Ainu word, but the IPA transcription in the note uses 'eyunin' without italics. Consistency is needed.",
+    "quote": "eyunin",
+    "suggestion": "eyunin",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "eyyunin",
+    "suggestion": "eyyunin",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "[y]",
+    "suggestion": "[j]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#050",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "414",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iunin' in italics for the Ainu word, but the IPA transcription in the note uses 'iunin' without italics. Consistency is needed.",
+    "quote": "iunin",
+    "suggestion": "iunin",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ku=' in italics for the Ainu word, but the IPA transcription in the note uses 'ku=' without italics. Consistency is needed.",
+    "quote": "ku=",
+    "suggestion": "ku=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'kuyunin' in italics for the Ainu word, but the IPA transcription in the note uses 'kuyunin' without italics. Consistency is needed.",
+    "quote": "kuyunin",
+    "suggestion": "kuyunin",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "kuyyunin",
+    "suggestion": "kuyyunin",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#049",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "404",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'koytak' in italics for the Ainu word, but the IPA transcription in the note uses 'koytak' without italics. Consistency is needed.",
+    "quote": "koytak",
+    "suggestion": "koytak",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'itak' in italics for the Ainu word, but the IPA transcription in the note uses 'itak' without italics. Consistency is needed.",
+    "quote": "itak",
+    "suggestion": "itak",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "[y]",
+    "suggestion": "[j]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'yaykowepeker' in italics for the Ainu word, but the IPA transcription in the note uses 'yaykowepeker' without italics. Consistency is needed.",
+    "quote": "yaykowepeker",
+    "suggestion": "yaykowepeker",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'uepeker' in italics for the Ainu word, but the IPA transcription in the note uses 'uepeker' without italics. Consistency is needed.",
+    "quote": "uepeker",
+    "suggestion": "uepeker",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'w' is [w].",
+    "quote": "[w]",
+    "suggestion": "[w]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#048",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "395",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'yayko=' in italics for the Ainu word, but the IPA transcription in the note uses 'yayko=' without italics. Consistency is needed.",
+    "quote": "yayko=",
+    "suggestion": "yayko=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'uepeker' in italics for the Ainu word, but the IPA transcription in the note uses 'uepeker' without italics. Consistency is needed.",
+    "quote": "uepeker",
+    "suggestion": "uepeker",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'yaykowepeker' in italics for the Ainu word, but the IPA transcription in the note uses 'yaykowepeker' without italics. Consistency is needed.",
+    "quote": "yaykowepeker",
+    "suggestion": "yaykowepeker",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#047",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "389",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ukoytak' in italics for the Ainu word, but the IPA transcription in the note uses 'ukoytak' without italics. Consistency is needed.",
+    "quote": "ukoytak",
+    "suggestion": "ukoytak",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ewkoytak' in italics for the Ainu word, but the IPA transcription in the note uses 'ewkoytak' without italics. Consistency is needed.",
+    "quote": "ewkoytak",
+    "suggestion": "ewkoytak",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#046",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "383",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'e=' in italics for the Ainu word, but the IPA transcription in the note uses 'e=' without italics. Consistency is needed.",
+    "quote": "e=",
+    "suggestion": "e=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ikoytupa' in italics for the Ainu word, but the IPA transcription in the note uses 'ikoytupa' without italics. Consistency is needed.",
+    "quote": "ikoytupa",
+    "suggestion": "ikoytupa",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'eykoytupa' in italics for the Ainu word, but the IPA transcription in the note uses 'eykoytupa' without italics. Consistency is needed.",
+    "quote": "eykoytupa",
+    "suggestion": "eykoytupa",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#045",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "377",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ko=' in italics for the Ainu word, but the IPA transcription in the note uses 'ko=' without italics. Consistency is needed.",
+    "quote": "ko=",
+    "suggestion": "ko=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'itak' in italics for the Ainu word, but the IPA transcription in the note uses 'itak' without italics. Consistency is needed.",
+    "quote": "itak",
+    "suggestion": "itak",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'koytak' in italics for the Ainu word, but the IPA transcription in the note uses 'koytak' without italics. Consistency is needed.",
+    "quote": "koytak",
+    "suggestion": "koytak",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#044",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "361",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "/i/ → [y]",
+    "suggestion": "/i/ → [j]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'w' is [w].",
+    "quote": "/u/ → [w]",
+    "suggestion": "/u/ → [w]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#043",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "352",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "high vowel /i/ or /u/ to a glide",
+    "suggestion": "high vowel /i/ or /u/ to a glide",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#042",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "342",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'eciyoka' in italics for the Ainu word, but the IPA transcription in the note uses 'eciyoka' without italics. Consistency is needed.",
+    "quote": "eciyoka",
+    "suggestion": "eciyoka",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'eci=oka' in italics for the Ainu word, but the IPA transcription in the note uses 'eci=oka' without italics. Consistency is needed.",
+    "quote": "eci=oka",
+    "suggestion": "eci=oka",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#041",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "341",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community source is cited with a username and date, but the corresponding reference in the bibliography is missing. It should likely be linked to the 'aynucorporadiscord' key.",
+    "quote": "thegodofneet (2025-04-24, <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": null,
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#040",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "320",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[ey.ta.sa]",
+    "suggestion": "[ej.ta.sa]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#039",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "316",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[ku.yu.nin]",
+    "suggestion": "[ku.ju.nin]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[eytasa]",
+    "suggestion": "[ejtasa]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#038",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "312",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[e.ík.ra]",
+    "suggestion": "[e.ík.ra]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[kuyunin]",
+    "suggestion": "[kujunin]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#037",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "305",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[ku.ik.ra]",
+    "suggestion": "[ku.ik.ra]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "*[eykra]",
+    "suggestion": "*[ejkra]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[yk]",
+    "suggestion": "[jk]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#036",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "301",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "*[kuykra]",
+    "suggestion": "*[kujkra]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[yk]",
+    "suggestion": "[jk]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#035",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "290",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'eytasa' in italics for the Ainu word, but the IPA transcription in the note uses 'eytasa' without italics. Consistency is needed.",
+    "quote": "eytasa",
+    "suggestion": "eytasa",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'eywanke' in italics for the Ainu word, but the IPA transcription in the note uses 'eywanke' without italics. Consistency is needed.",
+    "quote": "eywanke",
+    "suggestion": "eywanke",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#034",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "287",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community source is cited with a username and date, but the corresponding reference in the bibliography is missing. It should likely be linked to the 'aynucorporadiscord' key.",
+    "quote": "nukopoli, 2024-11-28",
+    "suggestion": null,
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#033",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "284",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "illicit onset",
+    "suggestion": "illicit onset",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "*[eykra]",
+    "suggestion": "*[ejkra]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "[yk]",
+    "suggestion": "[jk]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "accented",
+    "suggestion": "accented",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#032",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "277",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "illicit onset cluster [yk]",
+    "suggestion": "illicit onset cluster [jk]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "ku=ipe → ku=ype",
+    "suggestion": "ku=ipe → ku=jpe",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#031",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "270",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community source is cited with a username and date, but the corresponding reference in the bibliography is missing. It should likely be linked to the 'aynucorporadiscord' key.",
+    "quote": "nukopoli, 2024-11-28",
+    "suggestion": null,
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#030",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "265",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "before the coda /k/",
+    "suggestion": "before the coda /k/",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "producing *[yk]",
+    "suggestion": "producing *[jk]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "illicit CC onset",
+    "suggestion": "illicit CC onset",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#029",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "prohibits consonant clusters",
+    "suggestion": "prohibits consonant clusters",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#028",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "249",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community source is cited with a username and date, but the corresponding reference in the bibliography is missing. It should likely be linked to the 'aynucorporadiscord' key.",
+    "quote": "nukopoli, 2023-12-11",
+    "suggestion": null,
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#027",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "239",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'kamuy-omante' in italics for the Ainu word, but the IPA transcription in the note uses 'kamuy-omante' without italics. Consistency is needed.",
+    "quote": "kamuy-omante",
+    "suggestion": "kamuy-omante",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iomante' in italics for the Ainu word, but the IPA transcription in the note uses 'iomante' without italics. Consistency is needed.",
+    "quote": "iomante",
+    "suggestion": "iomante",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#026",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "235",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyomante' in italics for the Ainu word, but the IPA transcription in the note uses 'iyomante' without italics. Consistency is needed.",
+    "quote": "iyomante",
+    "suggestion": "iyomante",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i=' in italics for the Ainu word, but the IPA transcription in the note uses 'i=' without italics. Consistency is needed.",
+    "quote": "i=",
+    "suggestion": "i=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'omante' in italics for the Ainu word, but the IPA transcription in the note uses 'omante' without italics. Consistency is needed.",
+    "quote": "omante",
+    "suggestion": "omante",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#025",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "229",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyocispare' in italics for the Ainu word, but the IPA transcription in the note uses 'iyocispare' without italics. Consistency is needed.",
+    "quote": "iyocispare",
+    "suggestion": "iyocispare",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'niocire' in italics for the Ainu word, but the IPA transcription in the note uses 'niocire' without italics. Consistency is needed.",
+    "quote": "niocire",
+    "suggestion": "niocire",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i=' in italics for the Ainu word, but the IPA transcription in the note uses 'i=' without italics. Consistency is needed.",
+    "quote": "i=",
+    "suggestion": "i=",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#023",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "224",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i-o-ci' in italics for the Ainu word, but the IPA transcription in the note uses 'i-o-ci' without italics. Consistency is needed.",
+    "quote": "i-o-ci",
+    "suggestion": "i-o-ci",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ioci' in italics for the Ainu word, but the IPA transcription in the note uses 'ioci' without italics. Consistency is needed.",
+    "quote": "ioci",
+    "suggestion": "ioci",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyoci' in italics for the Ainu word, but the IPA transcription in the note uses 'iyoci' without italics. Consistency is needed.",
+    "quote": "iyoci",
+    "suggestion": "iyoci",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#022",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "214",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'Shiraishi 2022' is used, but the full reference is not provided in the bibliography. It is likely Shiraishi Hironori's 2022 work.",
+    "quote": "Satō (1996, 2003, cited in Shiraishi 2022 §4.3)",
+    "suggestion": null,
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'Satō 1996' and 'Satō 2003' are used, but the full references are not provided in the bibliography. It is likely Satō Kiyoji's works.",
+    "quote": "Satō (1996, 2003, cited in Shiraishi 2022 §4.3)",
+    "suggestion": null,
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#021",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "207",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'uwepeker' in italics for the Ainu word, but the IPA transcription in the note uses 'uwepeker' without italics. Consistency is needed.",
+    "quote": "uwepeker",
+    "suggestion": "uwepeker",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#020",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "197",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyomante-p' in italics for the Ainu word, but the IPA transcription in the note uses 'iyomante-p' without italics. Consistency is needed.",
+    "quote": "iyomante-p",
+    "suggestion": "iyomante-p",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyomante-pe' in italics for the Ainu word, but the IPA transcription in the note uses 'iyomante-pe' without italics. Consistency is needed.",
+    "quote": "iyomante-pe",
+    "suggestion": "iyomante-pe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#019",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "186",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "[iy.o.man.te]",
+    "suggestion": "[ij.o.man.te]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#018",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "181",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "/i=yomante/",
+    "suggestion": "/i=jomante/",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "∅ → y / i= ___ V",
+    "suggestion": "∅ → [j] / i= ___ V",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#017",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "177",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'omante' in italics for the Ainu word, but the IPA transcription in the note uses 'omante' without italics. Consistency is needed.",
+    "quote": "/i=omante/",
+    "suggestion": "/i=omante/",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#016",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "159",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not 'y'.",
+    "quote": "y-insertion",
+    "suggestion": "[j]-insertion",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'w' is [w].",
+    "quote": "w-insertion",
+    "suggestion": "[w]-insertion",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#015",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "148",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'osurpa' in italics for the Ainu word, but the IPA transcription in the note uses 'osurpa' without italics. Consistency is needed.",
+    "quote": "osurpa",
+    "suggestion": "osurpa",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'osurpa' in italics for the Ainu word, but the IPA transcription in the note uses 'osurpa' without italics. Consistency is needed.",
+    "quote": "/u=osurpa/",
+    "suggestion": "/u=osurpa/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'w' is [w].",
+    "quote": "[uw.os.sur.pa]",
+    "suggestion": "[uw.os.sur.pa]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#014",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "140",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'atte' in italics for the Ainu word, but the IPA transcription in the note uses 'atte' without italics. Consistency is needed.",
+    "quote": "atte",
+    "suggestion": "atte",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'atte' in italics for the Ainu word, but the IPA transcription in the note uses 'atte' without italics. Consistency is needed.",
+    "quote": "/u=atte/",
+    "suggestion": "/u=atte/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'w' is [w].",
+    "quote": "[uw.at.te]",
+    "suggestion": "[uw.at.te]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#013",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ekarkar' in italics for the Ainu word, but the IPA transcription in the note uses 'ekarkar' without italics. Consistency is needed.",
+    "quote": "ekarkar",
+    "suggestion": "ekarkar",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ekarkar' in italics for the Ainu word, but the IPA transcription in the note uses 'ekarkar' without italics. Consistency is needed.",
+    "quote": "/u=ekarkar/",
+    "suggestion": "/u=ekarkar/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'w' is [w].",
+    "quote": "[uw.ek.kar.kar]",
+    "suggestion": "[uw.ek.kar.kar]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#012",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "124",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'epeker' in italics for the Ainu word, but the IPA transcription in the note uses 'epeker' without italics. Consistency is needed.",
+    "quote": "epeker",
+    "suggestion": "epeker",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'epeker' in italics for the Ainu word, but the IPA transcription in the note uses 'epeker' without italics. Consistency is needed.",
+    "quote": "/u=epeker/",
+    "suggestion": "/u=epeker/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'w' is [w].",
+    "quote": "[uw.e.pe.ker]",
+    "suggestion": "[uw.e.pe.ker]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#011",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'uta' in italics for the Ainu word, but the IPA transcription in the note uses 'uta' without italics. Consistency is needed.",
+    "quote": "uta",
+    "suggestion": "uta",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'uta' in italics for the Ainu word, but the IPA transcription in the note uses 'uta' without italics. Consistency is needed.",
+    "quote": "/i=uta/",
+    "suggestion": "/i=uta/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "[iy.u.ta]",
+    "suggestion": "[ij.u.ta]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#010",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "108",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ekarkar' in italics for the Ainu word, but the IPA transcription in the note uses 'ekarkar' without italics. Consistency is needed.",
+    "quote": "ekarkar",
+    "suggestion": "ekarkar",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ekarkar' in italics for the Ainu word, but the IPA transcription in the note uses 'ekarkar' without italics. Consistency is needed.",
+    "quote": "/i=ekarkar/",
+    "suggestion": "/i=ekarkar/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "[iy.ek.kar.kar]",
+    "suggestion": "[ij.ek.kar.kar]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#009",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "100",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'oikir' in italics for the Ainu word, but the IPA transcription in the note uses 'oikir' without italics. Consistency is needed.",
+    "quote": "oikir",
+    "suggestion": "oikir",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'oikir' in italics for the Ainu word, but the IPA transcription in the note uses 'oikir' without italics. Consistency is needed.",
+    "quote": "/i=oikir/",
+    "suggestion": "/i=oikir/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "[iy.oi.kir]",
+    "suggestion": "[ij.oi.kir]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#008",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "91",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i=' in italics for the Ainu word, but the IPA transcription in the note uses 'i=' without italics. Consistency is needed.",
+    "quote": "i=",
+    "suggestion": "i=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'omante' in italics for the Ainu word, but the IPA transcription in the note uses 'omante' without italics. Consistency is needed.",
+    "quote": "omante",
+    "suggestion": "omante",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'omante' in italics for the Ainu word, but the IPA transcription in the note uses 'omante' without italics. Consistency is needed.",
+    "quote": "/i=omante/",
+    "suggestion": "/i=omante/",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "[iy.o.man.te]",
+    "suggestion": "[ij.o.man.te]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#007",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "73",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "∅ → y / i= ___ V",
+    "suggestion": "∅ → [j] / i= ___ V",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'w' is [w].",
+    "quote": "∅ → w / u= ___ V",
+    "suggestion": "∅ → [w] / u= ___ V",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#006",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "69",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'kindaichi1936' is used, but the full reference is not provided in the bibliography. It is likely Kindaichi Kyōsuke and Chiri Toshio's 1936 work.",
+    "quote": "kindaichi1936",
+    "suggestion": null,
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#005",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "51",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'okay-pe' in italics for the Ainu word, but the IPA transcription in the note uses 'okay-pe' without italics. Consistency is needed.",
+    "quote": "okay-pe",
+    "suggestion": "okay-pe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'siw-pe' in italics for the Ainu word, but the IPA transcription in the note uses 'siw-pe' without italics. Consistency is needed.",
+    "quote": "siw-pe",
+    "suggestion": "siw-pe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i-p' in italics for the Ainu word, but the IPA transcription in the note uses 'i-p' without italics. Consistency is needed.",
+    "quote": "i-p",
+    "suggestion": "i-p",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyomante-p' in italics for the Ainu word, but the IPA transcription in the note uses 'iyomante-p' without italics. Consistency is needed.",
+    "quote": "iyomante-p",
+    "suggestion": "iyomante-p",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyomante-pe' in italics for the Ainu word, but the IPA transcription in the note uses 'iyomante-pe' without italics. Consistency is needed.",
+    "quote": "iyomante-pe",
+    "suggestion": "iyomante-pe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#004",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "44",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'uwepeker' in italics for the Ainu word, but the IPA transcription in the note uses 'uwepeker' without italics. Consistency is needed.",
+    "quote": "phonemically /u=epeker/",
+    "suggestion": "/u=epeker/",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#002",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "35",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word 'wataru' (渡る) means 'to cross' or 'to pass over'. 'Watari' (渡り) is the noun form. While it can refer to a transition, it's not the standard term for a linguistic glide. The term 'gurāido' (グライド) is the direct loanword for 'glide'.",
+    "quote": "わたり 'glide, transition'",
+    "suggestion": "わたり 'glide, transition'",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'iyomante' in italics for the Ainu word, but the IPA transcription in the note uses 'iyomante' without italics. Consistency is needed.",
+    "quote": "iyomante",
+    "suggestion": "iyomante",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#001",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "11",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "transitional [y] or [w]",
+    "suggestion": "transitional [j] or [w]",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol for 'y' is [j], not [y].",
+    "quote": "high vowel /i/ or /u/ reduces to a glide",
+    "suggestion": "high vowel /i/ or /u/ reduces to a glide",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#060",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "385",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses 'talk.to.each.other' while standard format uses underscores or spaces. Inconsistent with 'RECP.speak' and 'tell.story'.",
+    "quote": "APPL=talk.to.each.other",
+    "suggestion": "Use consistent format: 'APPL=talk.to.each.other' → 'APPL=talk.to.each.other' or 'APPL=talk.to.each.other'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#057",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "203-207",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'tell.story' is a compound without space or hyphen, while other glosses use spaces. Also, 'story' is singular but translation implies plural.",
+    "quote": "m=\"u=epeker\" ... g=\"RECP=tell.story\" ... tr=\"tell each other stories; tell stories together\"",
+    "suggestion": "Standardize to 'tell stories' or 'tell.story' consistently across examples.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#055",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "44",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'tell a story' for 'epeker' does not fully match the free translation 'tell each other stories', which includes reciprocity not present in the stem alone. The stem should reflect the full meaning or the translation adjusted.",
+    "quote": "/u=epeker/ (&lt; <A w=\"u=\" gl=\"RECP\" /> + <A w=\"epeker\" gl=\"tell a story\" />)",
+    "suggestion": "Change gloss to 'tell stories' or 'narrate' to better support the reciprocal construction, or annotate the reciprocity in the prefix.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glide-epenthesis-hiatus-resolution~p1#054",
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "lines": "39",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation 'the bear-spirit-sending ceremony' does not match the glossed morphemes /i=omante/ where 'i=' is the indefinite/antipassive prefix and 'omante' means 'send away'. The translation implies a more specific cultural meaning not reflected in the morpheme-by-morpheme breakdown.",
+    "quote": "The word <i lang=\"ain-Latn\">iyomante</i> 'the bear-spirit-sending ceremony'",
+    "suggestion": "Revise translation to 'the sending-away ceremony (of a bear spirit)' to align with morphemic content, or add a note explaining the cultural specificity.",
+    "confidence": 0.85
+   }
+  ]
+ }
+]

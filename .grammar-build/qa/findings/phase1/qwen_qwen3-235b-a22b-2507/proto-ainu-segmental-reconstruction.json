@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "89",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "Vovin posited a seventeen-vowel PA system (twelve short plus five long: i ü e ö E a ï ë A O o u plus long counterparts)",
+  "issue": "The text lists thirteen vowel symbols (i, ü, e, ö, E, a, ï, ë, A, O, o, u) and implies five long counterparts, but claims twelve short vowels. The count does not match: there are 13 symbols listed, not 12 short vowels.",
+  "suggestion": "Revise the count to match the listed symbols or correct the list to include only twelve short vowels.",
+  "confidence": 0.95,
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "420",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "p pʸ t tʸ k &#123;kʸ&#125; kʷ ʔ / m n / s y w [h] [hʸ] / ɾ~l ʈ",
+  "issue": "Curly braces are escaped as HTML entities (&#123; and &#125;) instead of rendering as {kʸ}. This is a formatting error likely due to improper HTML escaping.",
+  "suggestion": "Use proper HTML or Markdown to render {kʸ} as literal curly braces around kʸ.",
+  "confidence": 0.9,
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "424",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "p pʸ t tʸ k &#123;sʸ&#125; y w [h] [hʸ] / ɾ~l ʈ",
+  "issue": "Same as line 420: &#123;sʸ&#125; should be {sʸ}, but is incorrectly escaped in HTML.",
+  "suggestion": "Correct to {sʸ} using proper formatting.",
+  "confidence": 0.9,
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "430",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "Items in &#123;curly braces&#125; are motivated by typological reasoning only; items in [square brackets] are plausibly allophonic.",
+  "issue": "The text refers to \"curly braces\" but uses HTML-escaped entities; this creates a mismatch between the descriptive term and the actual rendered characters, which may confuse readers.",
+  "suggestion": "Either unescape the entities to show { } or rephrase to refer to \"braces in HTML notation\" if escaping is necessary.",
+  "confidence": 0.85,
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "604",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Alonso de la Fuente's chapter is internally inconsistent on this point: §2.3 sides with Satō's pitch-first view (c), while §2.4 endorses Hattori's length-first view (a)",
+  "issue": "The text claims Alonso's chapter is internally inconsistent, but this inconsistency is presented as a finding about the source (Alonso 2022), not an error in the current chapter. However, the current chapter attributes conflicting views to the same source without resolving them, potentially misrepresenting it.",
+  "suggestion": "Clarify whether the inconsistency is in Alonso 2022 or in how this chapter interprets it; if the former, cite specific sections of Alonso to support the claim.",
+  "confidence": 0.8,
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "639",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "load-bearing RPA citations should be verified against the original before finalization",
+  "issue": "The phrase \"should be verified before finalization\" is a meta-commentary on the production process, not content for the reader; it leaks editorial workflow into the prose.",
+  "suggestion": "Rephrase to: \"RPA citations are second-hand and require verification against the original monograph.\"",
+  "confidence": 0.95,
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "640",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The Hattori (1967) length-pitch correspondence paper, Hattori and Chiri (1960), Asai (1974), and the Satō (2015/2016) accent papers are all cited second-hand via the Handbook chapters read.",
+  "issue": "The phrase \"Handbook chapters read\" refers to the project's reading process, not the content itself — a register leak from the research pipeline.",
+  "suggestion": "Rephrase to: \"are all cited second-hand via secondary sources (Alonso 2022, Tangiku 2022).\"",
+  "confidence": 0.9,
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

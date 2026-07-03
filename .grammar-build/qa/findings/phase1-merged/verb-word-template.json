@@ -1,0 +1,1174 @@
+[
+ {
+  "id": "verb-word-template~p1#005",
+  "chapter": "verb-word-template",
+  "lines": "228-235",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the example `inkar=an akus e=an ru-we a=nukar hi kusu` is `look=4.S then 2SG.S=exist track-POSS 4.A=see NMLZ because`. The free translation is `When I looked, since I saw that you were there, ...`. The gloss indicates `e=an` as '2SG.S=exist', implying a second-person singular subject for the verb 'exist'. However, the free translation uses 'I' for the first clause ('When I looked') and 'you' for the second clause ('since I saw that you were there'). The gloss for `a=nukar` is `4.A=see`, which aligns with the note about the side-switch for the fourth person. The gloss for `inkar=an` is `look=4.S`, also aligning with the side-switch. The discrepancy lies in the `e=an` gloss and its relation to the free translation's pronouns.",
+    "quote": "<Ex\n\t\tm=\"inkar=an akus e=an ru-we a=nukar hi kusu\"\n\t\tg=\"look=4.S then 2SG.S=exist track-POSS 4.A=see NMLZ because\"\n\t\ttr=\"When I looked, since I saw that you were there, ...\"\n\t\tcite=\"nakagawa2024:132\"\n\t\tdial=\"SAR\"\n\t\tplace=\"Nakagawa ex. 18\"\n\t\tnote=\"The intransitive inkar takes the S-suffix =an; the transitive nukar takes the A-prefix a=. The same side-switch is the template's first ordering diagnostic.\"\n\t/>",
+    "suggestion": "Clarify the gloss for `e=an` to accurately reflect the pronoun in the free translation, or adjust the free translation to match the gloss. If `e=` is indeed 2SG, then the gloss should reflect that, and the translation should be adjusted. If the translation is correct, the gloss for `e=` needs to be re-evaluated.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The free translation uses 'I' for both inkar=an and a=nukar, but the gloss shows =an as '4.S' (fourth person) and a= as '4.A' (fourth person). The fourth person is not first person singular; it is an indefinite or generic person. The translation should use 'one' or 'someone' instead of 'I' to match the gloss.",
+    "quote": "m=\"inkar=an akus e=an ru-we a=nukar hi kusu\" g=\"look=4.S then 2SG.S=exist track-POSS 4.A=see NMLZ because\" tr=\"When I looked, since I saw that you were there, ...\"",
+    "suggestion": "Change the translation to 'When one looked, since one saw that you were there, ...' or similar.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for 'e=an' is '2SG.S=exist', but 'e=' is the 2SG subject prefix and '=an' is the 4.S suffix; these cannot co-occur on the same verb. The form 'e=an' is morphologically impossible due to conflicting person/number values.",
+    "quote": "inkar=an akus e=an ru-we a=nukar hi kusu",
+    "suggestion": "Verify the example: likely should be either 'e=ru' or 'ku=an' or similar, not 'e=an'.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '2SG.S=exist' corresponds to 'e=an', but 'e=' is 2SG and '=an' is 4.S — a mismatch in person. Also, 'ru-we' is glossed as 'exist' but should be 'be located' or similar; 'ru' is the existential verb, but the gloss does not align with the morpheme segmentation.",
+    "quote": "look=4.S then 2SG.S=exist track-POSS 4.A=see NMLZ because",
+    "suggestion": "Correct gloss to match morphology: possibly '2SG.S=be.located' or '2SG.S=exist' only if 'e=ru' were the form. Also, 'track-POSS' should be 'track-POSS' or 'track-GEN' consistently.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#044",
+  "chapter": "verb-word-template",
+  "lines": "352-360",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The free translation uses 'I' for merayke=an, but the gloss shows =an as '4.S' (fourth person). The fourth person is not first person singular; it is an indefinite or generic person. The translation should use 'one' or 'someone' instead of 'I' to match the gloss.",
+    "quote": "m=\"mean cuk ne pe merayke=an ka somo ki no\" g=\"be.cold.weather autumn COP NMLZ feel.cold=4.S even NEG do ADV\" tr=\"It was a cold autumn, but I did not feel cold.\"",
+    "suggestion": "Change the translation to 'It was a cold autumn, but one did not feel cold.' or similar.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ne' is glossed as 'COP' and appears after 'cuk' (autumn), but in the free translation it is part of 'It was a cold autumn'. The glossing of 'ne' as COP is correct, but the segmentation suggests it's a separate word, while the structure 'cuk ne' should be treated as a predicate nominal construction. No error in form, but the gloss does not reflect the syntactic dependency.",
+    "quote": "mean cuk ne pe merayke=an ka somo ki no",
+    "suggestion": "Add a hyphen or clarify in note that 'cuk ne' is a copular phrase, or adjust segmentation to 'cuk-ne' if fused.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#001",
+  "chapter": "verb-word-template",
+  "lines": "110-139",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the template is partly positional and partly scope-driven, with valency prefixes and suffixes stacking in an order that tracks derivation. However, the example provided (ruska → ko-ruska → yay-ko-ruska → i-ruska) shows a sequence of prefixes (ko-, yay-, i-) being added, which contradicts the idea of suffixes stacking in order of derivation. The description of 'raising and lowering valence step by step' also seems to imply a sequential process that isn't fully captured by the prefix-based example.",
+    "quote": "The template is partly positional and partly scope-driven. Some ordering is fixed by position class, but the valency prefixes and suffixes stack in an order that tracks the order of derivation: a chain such as ruska 'be angry at' → ko-ruska → yay-ko-ruska → i-ruska raises and lowers valence step by step, each affix scoping over the stem already built",
+    "suggestion": "Clarify the relationship between positional template, scope, and derivation order, especially in relation to prefixes vs. suffixes. Re-evaluate the example to ensure it accurately reflects the described principles or provide a different example that better illustrates the concept.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'first-plural-exclusive and fourth-person subjects appear as suffixes on an intransitive stem but as prefixes on a transitive one', but the examples given for intransitive include inkar=an (fourth person) and arki=as (first plural exclusive), while for transitive they include a=nukar (fourth person) and ci=nukar (first plural exclusive). However, the table at lines 179-183 and 207-211 shows that for first plural exclusive, the intransitive suffix is =as and the transitive prefix is ci=, which matches. For fourth person, the intransitive suffix is =an and the transitive prefix is a=, which also matches. The inconsistency is in the glosses: 'I/one' for fourth person conflates first person and fourth person.",
+    "quote": "inkar=an 'I/one looked' and arki=as 'we came' beside a=nukar 'I/one saw it' and ci=nukar 'we saw it'",
+    "suggestion": "Correct the glosses as suggested above.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'first-plural-exclusive and fourth-person subjects appear as suffixes on an intransitive stem', but the example arki=as uses the verb arki 'come', which is the plural stem. The singular stem is ek. The text does not explain why the plural stem is used here, but it is consistent with the plural subject. However, the example inkar=an uses the singular stem inkar 'look'. This is fine, but the asymmetry could be confusing.",
+    "quote": "inkar=an 'I/one looked' and arki=as 'we came'",
+    "suggestion": "No change needed, but consider adding a note about stem number.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#038",
+  "chapter": "verb-word-template",
+  "lines": "471",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words and morphemes <i lang=\"ain-Latn\">ek</i>, <i lang=\"ain-Latn\">arki</i>, <i lang=\"ain-Latn\">an</i>, <i lang=\"ain-Latn\">oka</i>, <i lang=\"ain-Latn\">-n</i>, <i lang=\"ain-Latn\">-p</i>, <i lang=\"ain-Latn\">san</i>, <i lang=\"ain-Latn\">sap</i>, <i lang=\"ain-Latn\">-pa</i>, <i lang=\"ain-Latn\">tuye</i>, and <i lang=\"ain-Latn\">tuypa</i> are presented with italics and hyphens. This is consistent with the chapter's orthographic conventions.",
+    "quote": "The alternation takes three shapes: outright suppletion (<i lang=\"ain-Latn\">ek</i> / <i lang=\"ain-Latn\">arki</i> 'come', <i lang=\"ain-Latn\">an</i> / <i lang=\"ain-Latn\">oka</i> 'exist'), the <i lang=\"ain-Latn\">-n</i> / <i lang=\"ain-Latn\">-p</i> pattern of directed-motion verbs (<i lang=\"ain-Latn\">san</i> / <i lang=\"ain-Latn\">sap</i> 'go down'), and the vowel-to-<i lang=\"ain-Latn\">-pa</i> pattern of change-of-state transitives (<i lang=\"ain-Latn\">tuye</i> / <i lang=\"ain-Latn\">tuypa</i> 'cut')",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The alternation is written as '-n / -p', but in the example 'san / sap', the stems are 'san' and 'sap' — the final consonant changes, but the vowel remains. The slash notation suggests suffix alternation, but it's actually stem suppletion or consonant mutation.",
+    "quote": "<i lang=\"ain-Latn\">-n</i> / <i lang=\"ain-Latn\">-p</i>",
+    "suggestion": "Revise to 'san ~ sap' or 'n → p in final position' for accuracy.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#027",
+  "chapter": "verb-word-template",
+  "lines": "340",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrases <i lang=\"ain-Latn\">apto as</i> and <i lang=\"ain-Latn\">apto</i> are presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "Ijäs treats <i lang=\"ain-Latn\">apto as</i> 'it rains' as a single avalent unit, but Nakagawa leaves it undecided, since <i lang=\"ain-Latn\">apto</i> 'rain' is an autonomous noun and the string may be a two-word clause",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'apto as' is written with a space, suggesting two words, but is analyzed as a single avalent unit. Inconsistent with morphological segmentation norms in the chapter (e.g., hyphenated compounds).",
+    "quote": "<i lang=\"ain-Latn\">apto as</i>",
+    "suggestion": "Write as 'apto-as' if treated as compound, or clarify in note that it is a two-word clause under analysis.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#015",
+  "chapter": "verb-word-template",
+  "lines": "122",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">iki-pa=an</i> is presented with italics and attached morphemes. This is consistent with the chapter's orthographic conventions.",
+    "quote": "The relative order of these elements is the subject of <Xr ch=\"personal-affix-template-and-ordering\" /> and <Xr ch=\"suppletive-verbal-number\" />.",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">iki=an pa</i> is presented with italics and attached morphemes. This is consistent with the chapter's orthographic conventions.",
+    "quote": "The relative order of these elements is the subject of <Xr ch=\"personal-affix-template-and-ordering\" /> and <Xr ch=\"suppletive-verbal-number\" />.",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'Type-C' is introduced without prior definition or explanation in this chapter. It appears to reference a classification system (possibly from Nakagawa) but is not defined here, creating confusion.",
+    "quote": "Type-C plural suffix <i lang=\"ain-Latn\">-pa</i>",
+    "suggestion": "Define 'Type-C' briefly or replace with descriptive term like 'stem-internal plural suffix' for clarity.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Hyphenation of 'iki-pa=an' suggests 'pa' is a suffix, but in other contexts (e.g., table) it is written without hyphen as 'pa'. Inconsistent hyphenation for the same morpheme type.",
+    "quote": "<i lang=\"ain-Latn\">iki-pa=an</i>",
+    "suggestion": "Standardize hyphenation: use '-pa' for suffix, 'pa' for clitic.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Space between 'iki=an' and 'pa' indicates clitic status, but in the table (line 103) it is written as 'pa' without space. Inconsistency in formatting clitics.",
+    "quote": "<i lang=\"ain-Latn\">iki=an pa</i>",
+    "suggestion": "Ensure consistent spacing: always space clitics, e.g., 'pa', 'ci'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#013",
+  "chapter": "verb-word-template",
+  "lines": "110-139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">ruska</i> is italicized, but the subsequent derived forms <i lang=\"ain-Latn\">ko-ruska</i>, <i lang=\"ain-Latn\">yay-ko-ruska</i>, and <i lang=\"ain-Latn\">i-ruska</i> are also italicized. While consistent within this sentence, the chapter's general orthography for Ainu words should be checked. Typically, Ainu words are italicized. However, the use of hyphens within derived forms might warrant a consistent formatting rule. It's unclear if the hyphens are part of the Ainu orthography or a transcription convention for morpheme boundaries.",
+    "quote": "The template is partly positional and partly scope-driven. Some ordering is fixed by position class, but the valency prefixes and suffixes stack in an order that tracks the order of derivation: a chain such as <i lang=\"ain-Latn\">ruska</i> 'be angry at' → <i lang=\"ain-Latn\">ko-ruska</i> → <i lang=\"ain-Latn\">yay-ko-ruska</i> → <i lang=\"ain-Latn\">i-ruska</i> raises and lowers valence step by step, each affix scoping over the stem already built",
+    "suggestion": "Verify the consistent application of italics for all Ainu words and morpheme sequences. Ensure that the hyphens in derived forms are consistently handled (e.g., always present, always italicized as part of the word).",
+    "confidence": 0.3
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">inkar=an</i> is presented with italics and a hyphenated clitic. The clitic '=an' is attached to the stem 'inkar'. The text uses italics for Ainu words. This is consistent with other examples, but it's worth noting the consistent use of italics for Ainu forms including clitics.",
+    "quote": "The first-plural-exclusive and fourth-person subjects appear as <em>suffixes</em> on an intransitive stem but as <em>prefixes</em> on a transitive one: <i lang=\"ain-Latn\">inkar=an</i> 'I/one looked'",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter uses 'Hokkaido' without a macron, but the standard romanization is 'Hokkaidō'. However, this is consistent throughout the chapter, so it is not a drift.",
+    "quote": "Hokkaido Ainu",
+    "suggestion": "No change needed if consistent.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#045",
+  "chapter": "verb-word-template",
+  "lines": "502-510",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss shows 'come' for ek, which is the singular stem, but the translation uses 'came' (past tense). The note says 'A numeral-quantified plural subject takes the singular stem ek', which is consistent. However, the gloss does not indicate tense, and the translation uses past tense. This is acceptable given tenselessness, but the note could be clearer.",
+    "quote": "m=\"ine nispa ek ru-we ne\" g=\"four rich.man come track-POSS COP\" tr=\"Four rich men came.\"",
+    "suggestion": "No change needed, but consider adding a literal translation like 'Four rich men come' to show the tenselessness.",
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ru-we' is glossed as 'track-POSS', but 'ru' is the existential verb and 'we' is a possessive postposition. 'track-POSS' is semantically incorrect; it should be '3POSS' or 'its' or 'their', depending on antecedent. The gloss 'track-POSS' appears to be a carryover from a different example.",
+    "quote": "ine nispa ek ru-we ne",
+    "suggestion": "Change gloss of 'ru-we' to '3POSS' or 'its' or 'their', depending on intended meaning.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#043",
+  "chapter": "verb-word-template",
+  "lines": "269-276",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss shows 'yesterday boy fish catch' with no person or tense marking, which matches the unmarked third-person verb. However, the free translation uses past tense 'caught', which is appropriate for a default reading, but the gloss does not indicate tense. This is not a mismatch per se, but the note says 'A two-argument transitive frame with two bare noun phrases and an unmarked third-person verb.' The translation could be in present tense to match the unmarked verb, but past tense is also acceptable given the tenselessness of Ainu.",
+    "quote": "m=\"numan hekaci cep koyki\" g=\"yesterday boy fish catch\" tr=\"The boy caught fish yesterday.\"",
+    "suggestion": "Consider changing 'caught' to 'catches' to emphasize the tenselessness, or add a note about the default past reading.",
+    "confidence": 0.2
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example is glossed as 'yesterday boy fish catch' and translated as 'The boy caught fish yesterday.' However, the verb 'koyki' is transitive and unmarked for person, which is acceptable, but the note says it's a 'two-argument transitive frame with two bare noun phrases and an unmarked third-person verb' — yet 'numan' (yesterday) is not an argument. The argument count is correct, but the gloss does not reflect the valency properly.",
+    "quote": "numan hekaci cep koyki",
+    "suggestion": "Gloss should reflect transitive structure, e.g., 'yesterday boy fish catch.3SG.A.3SG.O' or similar, to show indexing pattern.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#006",
+  "chapter": "verb-word-template",
+  "lines": "249-257",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the example `topenpe hekattar ku=kore` is `sweets children 1SG.A=give`. The free translation is `I gave the children sweets.`. The gloss correctly identifies `ku=` as `1SG.A`. However, the note states, 'Both non-subject arguments are bare third-person noun phrases; only the 1SG.A subject is indexed.' This implies that 'topenpe' and 'hekattar' are both third-person arguments. The gloss does not explicitly mark them as third person, but the note confirms it. The issue is that the gloss for `hekattar` is simply 'children', and it's not explicitly marked as third person in the gloss itself, relying solely on the note for this information.",
+    "quote": "<Ex\n\t\tm=\"topenpe hekattar ku=kore\"\n\t\tg=\"sweets children 1SG.A=give\"\n\t\ttr=\"I gave the children sweets.\"\n\t\tcite=\"nakagawa2024:128\"\n\t\tdial=\"SAR\"\n\t\tplace=\"Nakagawa ex. 11a\"\n\t\tnote=\"Both non-subject arguments are bare third-person noun phrases; only the 1SG.A subject is indexed.\"\n\t/>",
+    "suggestion": "Consider adding a gloss marker for third person to 'hekattar' (e.g., 'children.3') to make it explicit within the gloss line, or ensure the note is sufficiently prominent to cover this.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss shows '1SG.A=give' for ku=kore, but the free translation uses 'I gave the children sweets.' The object 'children' is a bare noun phrase (hekattar) and is not indexed on the verb. The gloss correctly shows only the subject index, but the translation implies a direct object 'sweets' and an indirect object 'children'. The note says 'Both non-subject arguments are bare third-person noun phrases; only the 1SG.A subject is indexed.' This is consistent, but the translation could be clearer about the lack of object indexing.",
+    "quote": "m=\"topenpe hekattar ku=kore\" g=\"sweets children 1SG.A=give\" tr=\"I gave the children sweets.\"",
+    "suggestion": "No change needed if the translation is meant to be natural English; the note already clarifies. However, consider adding a literal translation like 'I gave sweets children' to show the bare noun phrase order.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#041",
+  "chapter": "verb-word-template",
+  "lines": "113-115",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for inkar=an is given as 'I/one looked', but the table at lines 207-211 shows =an as '4.S' (fourth person/indefinite), not first person singular. The translation 'I/one looked' conflates first person singular and fourth person, which are distinct categories in the table.",
+    "quote": "inkar=an 'I/one looked' and arki=as 'we came'",
+    "suggestion": "Change 'I/one looked' to 'one looked' or 'someone looked' to match the fourth person gloss.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for arki=as is given as 'we came', but the table at lines 179-183 shows =as as '1PL.EXCL.S' (first person plural exclusive subject). The translation 'we came' is ambiguous between inclusive and exclusive, while the table specifies exclusive.",
+    "quote": "arki=as 'we came'",
+    "suggestion": "Change 'we came' to 'we (excl.) came' or 'we came (excl.)' to match the exclusive gloss.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for a=nukar is given as 'I/one saw it', but the table at lines 207-211 shows a= as '4.A' (fourth person/indefinite subject), not first person singular. The translation 'I/one saw it' conflates first person singular and fourth person.",
+    "quote": "a=nukar 'I/one saw it'",
+    "suggestion": "Change 'I/one saw it' to 'one saw it' or 'someone saw it' to match the fourth person gloss.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for ci=nukar is given as 'we saw it', but the table at lines 179-183 shows ci= as '1PL.EXCL' (first person plural exclusive subject). The translation 'we saw it' is ambiguous between inclusive and exclusive.",
+    "quote": "ci=nukar 'we saw it'",
+    "suggestion": "Change 'we saw it' to 'we (excl.) saw it' or 'we saw it (excl.)' to match the exclusive gloss.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#050",
+  "chapter": "verb-word-template",
+  "lines": "113-115",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence is missing a comma before 'Satō' for clarity: 'the side-switch, Satō calls irregular and still unexplained' or 'the side-switch that Satō calls irregular and still unexplained'.",
+    "quote": "the side-switch Satō calls irregular and still unexplained",
+    "suggestion": "Add a comma or 'that' for clarity.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'still unexplained' could be rephrased as 'as yet unexplained' for a more formal tone.",
+    "quote": "the side-switch Satō calls irregular and still unexplained",
+    "suggestion": "Change 'still unexplained' to 'as yet unexplained'.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#049",
+  "chapter": "verb-word-template",
+  "lines": "113-115",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'still unexplained' is a bit informal for a reference grammar, but it is not a pipeline leak. It is acceptable.",
+    "quote": "the side-switch Satō calls irregular and still unexplained",
+    "suggestion": "No change needed.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#048",
+  "chapter": "verb-word-template",
+  "lines": "122-123",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation nakagawa2024 pages 156-159 is given for the contrast between the suffix -pa and the clitic pa, but the examples iki-pa=an and iki=an pa may not be directly from Nakagawa. The citation should be checked.",
+    "quote": "iki-pa=an with the suffix before =an contrasts with iki=an pa with the clitic after it <Ref k=\"nakagawa2024\" p=\"156–159\" />",
+    "suggestion": "Verify that Nakagawa 2024 pp. 156-159 includes these specific examples or similar ones.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#047",
+  "chapter": "verb-word-template",
+  "lines": "113-115",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation nakagawa2024 pages 166-169 is given for the examples, but the examples themselves are not directly from Nakagawa; they are constructed to illustrate the side-switch. The citation should be checked to ensure it supports the claim.",
+    "quote": "inkar=an 'I/one looked' and arki=as 'we came' beside a=nukar 'I/one saw it' and ci=nukar 'we saw it' <Ref k=\"nakagawa2024\" p=\"166–169\" />; <Ref k=\"sato2008\" p=\"96\" />",
+    "suggestion": "Verify that Nakagawa 2024 pp. 166-169 indeed discusses these specific forms or the side-switch.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#040",
+  "chapter": "verb-word-template",
+  "lines": "557",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">roski</i> is presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "with <i lang=\"ain-Latn\">roski</i> 'stand' effectively the sole instance, so valence alternation is almost always coded by the derivational positions catalogued above rather than by lability",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#039",
+  "chapter": "verb-word-template",
+  "lines": "494",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">poronno</i> is presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "and with <i lang=\"ain-Latn\">poronno</i> 'many' that vary by dialect and speaker",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#037",
+  "chapter": "verb-word-template",
+  "lines": "464",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">cep</i> is presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "The stem zone holds the lexical root together with any suppletive or suffixal singular/plural alternation. Number in Hokkaido Ainu sits on the verb, not the noun: nouns are number-neutral and read as singular or plural by context — Ijäs notes that <i lang=\"ain-Latn\">cep</i> 'fish' may be either — while a minority of verbs have distinct singular and plural stems",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#036",
+  "chapter": "verb-word-template",
+  "lines": "456",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes <i lang=\"ain-Latn\">-no</i>, <i lang=\"ain-Latn\">poro</i>, and <i lang=\"ain-Latn\">poronno</i> are presented with italics and hyphens. This is consistent with the chapter's orthographic conventions.",
+    "quote": "Derivation that builds a verb stem without changing its valence — denominal and deverbal verb formation, and the adverb-forming <i lang=\"ain-Latn\">-no</i> that turns a property verb into an adverb (<i lang=\"ain-Latn\">poro</i> → <i lang=\"ain-Latn\">poronno</i>) — is treated in <Xr ch=\"denominal-deverbal-verb-derivation\" /> and <Xr ch=\"adverbializer-no\" />.",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#035",
+  "chapter": "verb-word-template",
+  "lines": "425",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes <i lang=\"ain-Latn\">yay-</i>, <i lang=\"ain-Latn\">si-</i>, and <i lang=\"ain-Latn\">u-</i> are presented with italics and hyphens. This is consistent with the chapter's orthographic conventions.",
+    "quote": "425\t\t\t<tr>\n426\t\t\t\t<td>reflexive / reciprocal</td>\n427\t\t\t\t<td><i lang=\"ain-Latn\">yay-</i>, <i lang=\"ain-Latn\">si-</i>, <i lang=\"ain-Latn\">u-</i></td>\n428\t\t\t\t<td>prefix before the stem</td>\n429\t\t\t\t<td>fills or identifies the object slot</td>\n430\t\t\t</tr>",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#034",
+  "chapter": "verb-word-template",
+  "lines": "419",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme <i lang=\"ain-Latn\">i-</i> is presented with italics and a hyphen. This is consistent with the chapter's orthographic conventions.",
+    "quote": "419\t\t\t<tr>\n420\t\t\t\t<td>antipassive / detransitive</td>\n421\t\t\t\t<td><i lang=\"ain-Latn\">i-</i></td>\n422\t\t\t\t<td>prefix before the stem</td>\n423\t\t\t\t<td>fills the object slot, making a transitive stem intransitive</td>\n424\t\t\t</tr>",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#033",
+  "chapter": "verb-word-template",
+  "lines": "414",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme <i lang=\"ain-Latn\">-yar</i> is presented with italics and a hyphen. This is consistent with the chapter's orthographic conventions.",
+    "quote": "414\t\t\t\t<td>permissive / sociative causative</td>\n415\t\t\t\t<td><i lang=\"ain-Latn\">-yar</i></td>\n416\t\t\t\t<td>suffix after the stem</td>\n417\t\t\t\t<td>adds an indirect causer or permits an event</td>\n418\t\t\t</tr>",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#032",
+  "chapter": "verb-word-template",
+  "lines": "407",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes <i lang=\"ain-Latn\">-re</i>, <i lang=\"ain-Latn\">-e</i>, and <i lang=\"ain-Latn\">-te</i> are presented with italics and hyphens. This is consistent with the chapter's orthographic conventions.",
+    "quote": "407\t\t\t<tr>\n408\t\t\t\t<td>productive causative</td>\n409\t\t\t\t<td><i lang=\"ain-Latn\">-re</i>, <i lang=\"ain-Latn\">-e</i>, <i lang=\"ain-Latn\">-te</i></td>\n410\t\t\t\t<td>suffix after the stem</td>\n411\t\t\t\t<td>adds a causer</td>\n412\t\t\t</tr>",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#031",
+  "chapter": "verb-word-template",
+  "lines": "401",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes <i lang=\"ain-Latn\">e-</i>, <i lang=\"ain-Latn\">ko-</i>, and <i lang=\"ain-Latn\">o-</i> are presented with italics and hyphens. This is consistent with the chapter's orthographic conventions.",
+    "quote": "401\t\t\t<tr>\n402\t\t\t\t<td>applicative</td>\n403\t\t\t\t<td><i lang=\"ain-Latn\">e-</i>, <i lang=\"ain-Latn\">ko-</i>, <i lang=\"ain-Latn\">o-</i></td>\n404\t\t\t\t<td>prefix before the stem</td>\n405\t\t\t\t<td>adds or promotes a non-agent object</td>\n406\t\t\t</tr>",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#030",
+  "chapter": "verb-word-template",
+  "lines": "370",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes <i lang=\"ain-Latn\">ko-</i>, <i lang=\"ain-Latn\">-re</i>, and <i lang=\"ain-Latn\">o</i> are presented with italics and attached morphemes. This is consistent with the chapter's orthographic conventions.",
+    "quote": "Three-place verbs are mostly derived, by the applicative <i lang=\"ain-Latn\">ko-</i> or the causative <i lang=\"ain-Latn\">-re</i>, the one common base-form member being the locative <i lang=\"ain-Latn\">o</i> 'put X into a place'",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#029",
+  "chapter": "verb-word-template",
+  "lines": "364",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase <i lang=\"ain-Latn\">okkayo ku=ne</i> is presented with italics and attached morphemes. This is consistent with the chapter's orthographic conventions.",
+    "quote": "It is two-place in the relation 'X is Y' and takes transitive-type subject marking, yet it admits no object index: <i lang=\"ain-Latn\">okkayo ku=ne</i> 'I am a man' is well formed while an object-indexed alternative is not",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#028",
+  "chapter": "verb-word-template",
+  "lines": "345",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">mean</i> and <i lang=\"ain-Latn\">merayke</i> are presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "climatic <i lang=\"ain-Latn\">mean</i> 'it is cold' beside experiential <i lang=\"ain-Latn\">merayke</i> 'feel cold' — a contrast Ijäs marks and Nakagawa lays out as a paired paradigm",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#026",
+  "chapter": "verb-word-template",
+  "lines": "334",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">mean</i>, <i lang=\"ain-Latn\">me-</i>, <i lang=\"ain-Latn\">an</i>, and <i lang=\"ain-Latn\">sirpirka</i> are presented with italics and hyphens. This is consistent with the chapter's orthographic conventions.",
+    "quote": "The zero-place class is built from non-autonomous roots: weather and ambient predicates such as <i lang=\"ain-Latn\">mean</i> 'be cold' (&lt; <i lang=\"ain-Latn\">me-</i> 'cold' + <i lang=\"ain-Latn\">an</i> 'exist') and <i lang=\"ain-Latn\">sirpirka</i> 'be fine weather' take no participant index",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#025",
+  "chapter": "verb-word-template",
+  "lines": "328",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">omarere</i> is presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "328\t\t\t\t<td><i lang=\"ain-Latn\">omarere</i> 'make someone put something in'</td>",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#024",
+  "chapter": "verb-word-template",
+  "lines": "320",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">kore</i>, <i lang=\"ain-Latn\">epakasnu</i>, and <i lang=\"ain-Latn\">o</i> are presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "320\t\t\t<tr>\n321\t\t\t\t<td>3</td>\n322\t\t\t\t<td>three-place / ditransitive</td>\n323\t\t\t\t<td>three bare arguments possible; only two fit on the verb</td>\n324\t\t\t\t<td><i lang=\"ain-Latn\">kore</i> 'give', <i lang=\"ain-Latn\">epakasnu</i> 'teach', locative <i lang=\"ain-Latn\">o</i> 'put in'</td>\n325\t\t\t</tr>",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#023",
+  "chapter": "verb-word-template",
+  "lines": "265",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">epakasnu</i> is presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "the two objects and the subject of <i lang=\"ain-Latn\">epakasnu</i> 'teach' occur in several orders with one valence frame and no fixed position",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#022",
+  "chapter": "verb-word-template",
+  "lines": "261",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase <i lang=\"ain-Latn\">numan hekaci cep koyki</i> is presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "and a bare clause such as <i lang=\"ain-Latn\">numan hekaci cep koyki</i> presents both participants as bare noun phrases with an unmarked third-person verb",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#021",
+  "chapter": "verb-word-template",
+  "lines": "239",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese particles 〜を and 〜に are presented with tildes. This is a stylistic choice for representing Japanese particles in this context.",
+    "quote": "Both arguments of a transitive verb are bare, and Ainu draws no formal distinction between a direct and an indirect object: what a Japanese translation marks as 〜を or 〜に is the same bare object in Ainu",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">kore</i> is presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "A three-place verb such as <i lang=\"ain-Latn\">kore</i> 'give' takes a subject and two bare objects, all omissible, yet only two participants can be indexed on the verb",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#020",
+  "chapter": "verb-word-template",
+  "lines": "221",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes <i lang=\"ain-Latn\">=an</i> and <i lang=\"ain-Latn\">a=</i> are presented with italics and attached morphemes. This is consistent with the chapter's orthographic conventions.",
+    "quote": "A fourth-person subject therefore surfaces as the suffix <i lang=\"ain-Latn\">=an</i> after the intransitive stem and as the prefix <i lang=\"ain-Latn\">a=</i> before the transitive stem in one sentence",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#019",
+  "chapter": "verb-word-template",
+  "lines": "217",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">inkar</i> and <i lang=\"ain-Latn\">nukar</i> are presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "The minimal pair <i lang=\"ain-Latn\">inkar</i> 'look' and <i lang=\"ain-Latn\">nukar</i> 'see' shows why an English translation is an unreliable guide.",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#018",
+  "chapter": "verb-word-template",
+  "lines": "151",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes <i lang=\"ain-Latn\">=as</i>, <i lang=\"ain-Latn\">=an</i>, <i lang=\"ain-Latn\">ci=</i>, and <i lang=\"ain-Latn\">a=</i> are presented with italics and attached morphemes. This is consistent with the chapter's orthographic conventions.",
+    "quote": "An intransitive verb indexes only its subject (S), while a transitive verb indexes subject (A) and object (O) <Ref k=\"nakagawa2024\" p=\"126\" />. The surest operational test puts the verb in the first-person plural: an intransitive takes the suffix <i lang=\"ain-Latn\">=as</i> (exclusive) or <i lang=\"ain-Latn\">=an</i> (fourth person), a transitive the prefix <i lang=\"ain-Latn\">ci=</i> or <i lang=\"ain-Latn\">a=</i>",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#017",
+  "chapter": "verb-word-template",
+  "lines": "136",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">ki</i> and <i lang=\"ain-Latn\">easkay</i> are presented with italics. This is consistent with the chapter's orthographic conventions.",
+    "quote": "Auxiliaries and light verbs such as <i lang=\"ain-Latn\">ki</i> 'do' and the abilitative <i lang=\"ain-Latn\">easkay</i> 'can' stand outside this word altogether",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#016",
+  "chapter": "verb-word-template",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">ruska</i>, <i lang=\"ain-Latn\">ko-ruska</i>, <i lang=\"ain-Latn\">yay-ko-ruska</i>, and <i lang=\"ain-Latn\">i-ruska</i> are presented with italics and hyphens. This is consistent with the chapter's orthographic conventions.",
+    "quote": "a chain such as <i lang=\"ain-Latn\">ruska</i> 'be angry at' → <i lang=\"ain-Latn\">ko-ruska</i> → <i lang=\"ain-Latn\">yay-ko-ruska</i> → <i lang=\"ain-Latn\">i-ruska</i> raises and lowers valence step by step",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#014",
+  "chapter": "verb-word-template",
+  "lines": "114",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">arki=as</i> and <i lang=\"ain-Latn\">a=nukar</i> are presented with italics and attached morphemes. This is consistent with the chapter's orthographic conventions.",
+    "quote": "and <i lang=\"ain-Latn\">arki=as</i> 'we came' beside <i lang=\"ain-Latn\">a=nukar</i> 'I/one saw it'",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">a=nukar</i> and <i lang=\"ain-Latn\">ci=nukar</i> are presented with italics and attached morphemes. This is consistent with the chapter's orthographic conventions.",
+    "quote": "and <i lang=\"ain-Latn\">a=nukar</i> 'I/one saw it' and <i lang=\"ain-Latn\">ci=nukar</i> 'we saw it'",
+    "suggestion": "No change needed, just an observation of consistent orthography.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#007",
+  "chapter": "verb-word-template",
+  "lines": "300-305",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'zero-place / avalent' states 'no subject or object index'. However, the example <i lang=\"ain-Latn\">mean</i> is glossed as 'be cold (weather)', and the text in paragraph 334-336 explains it as '<i lang=\"ain-Latn\">me-</i> 'cold' + <i lang=\"ain-Latn\">an</i> 'exist''. The presence of '<i lang=\"ain-Latn\">an</i> 'exist'' suggests it might be a verb that *could* take an index, even if it doesn't in this specific construction. The description 'no subject or object index' might be too absolute if the root morpheme itself implies a potential for indexing.",
+    "quote": "300\t\t\t<tr>\n301\t\t\t\t<td>0</td>\n302\t\t\t\t<td>zero-place / avalent</td>\n303\t\t\t\t<td>no subject or object index</td>\n304\t\t\t\t<td><i lang=\"ain-Latn\">mean</i> 'be cold (weather)', <i lang=\"ain-Latn\">sirpirka</i> 'be fine weather'</td>\n305\t\t\t</tr>",
+    "suggestion": "Refine the description for 'no subject or object index' to be more precise, perhaps by stating 'typically no subject or object index' or clarifying that the root itself does not require an index.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#046",
+  "chapter": "verb-word-template",
+  "lines": "122-123",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The verb iki 'do' is typically transitive, so the subject should be a prefix (a= or ci=) for fourth person or first plural exclusive, not a suffix (=an). The example uses =an as a suffix, which would be appropriate only if iki is used intransitively. The text does not explain this, and it may contradict the transitivity diagnostics earlier in the chapter.",
+    "quote": "iki-pa=an with the suffix before =an contrasts with iki=an pa with the clitic after it",
+    "suggestion": "Either clarify that iki is used intransitively here, or provide a different example with an intransitive verb.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#042",
+  "chapter": "verb-word-template",
+  "lines": "122-123",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example iki-pa=an uses the suffix -pa before the person suffix =an, but the table at lines 96-99 shows =an as '4.S' (fourth person subject suffix). The example iki=an pa uses the clitic pa after the person suffix. However, the text does not provide glosses or translations for these forms, making it unclear whether the person suffix =an is appropriate for the verb iki 'do' (which is transitive). If iki is transitive, the subject should be a prefix (a= or ci=), not a suffix (=an). This may be an inconsistency in the example or a missing explanation.",
+    "quote": "iki-pa=an with the suffix before =an contrasts with iki=an pa with the clitic after it",
+    "suggestion": "Either provide glosses and translations to clarify, or add a note explaining that iki here is used intransitively or that the example is illustrative of position only.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#012",
+  "chapter": "verb-word-template",
+  "lines": "556-559",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Ainu has 'very few bare stems that serve as both intransitive and transitive without overt marking, with <i lang=\"ain-Latn\">roski</i> 'stand' effectively the sole instance'. This implies that <i lang=\"ain-Latn\">roski</i> is labile (can be both intransitive and transitive without overt marking). However, the definition of intransitive is 'S index only' and transitive is 'A and O positions'. If <i lang=\"ain-Latn\">roski</i> is intransitive, it would only take an S index. If it were transitive, it would take A and O. The claim that it serves as *both* without overt marking suggests it can function in both roles, which is the definition of lability. The statement that valence alternation is *almost always* coded by derivational positions rather than lability is consistent with <i lang=\"ain-Latn\">roski</i> being an exception.",
+    "quote": "Ainu has very few bare stems that serve as both intransitive and transitive without overt marking, with <i lang=\"ain-Latn\">roski</i> 'stand' effectively the sole instance, so valence alternation is almost always coded by the derivational positions catalogued above rather than by lability",
+    "suggestion": "Ensure the definition of lability is clearly understood in the context of Ainu verbs. If <i lang=\"ain-Latn\">roski</i> is indeed the sole instance of a labile verb, the statement is accurate, but it might be worth briefly defining 'lability' in this context for clarity.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#011",
+  "chapter": "verb-word-template",
+  "lines": "539-542",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Nakagawa and the Handbook treat the postposed 'pa' as a clitic distinct from the root-bound suffix. It then presents Satō's data as making the clitic analysis doubtful, citing a speaker's rejection of '*yaynu-as pa' in favour of 'yaynupa-as'. This example shows the plural marker 'pa' attached directly to the verb stem ('yaynupa-as'), suggesting it's a suffix rather than a clitic. However, the text previously (lines 102-105) describes the 'outer plural clitic' as being 'outside the person-inflected verb in the clearest cases'. The example provided by Satō seems to contradict this by showing the 'pa' as a suffix *within* the person-inflected verb structure. This creates an internal inconsistency in how the 'outer plural pa' is characterized and exemplified.",
+    "quote": "The third question is the outer plural pa. Nakagawa and the Handbook treat the postposed pa, eastern ci, and the Sakhalin cognate as a single clitic class distinct from the root-bound suffix; Satō's Chitose data make the clitic analysis doubtful, since postposed -an pa is rare and a speaker rejects *yaynu-as pa in favour of yaynupa-as",
+    "suggestion": "Clarify the distinction between the clitic and suffix forms of 'pa' and ensure the examples accurately reflect their positions. If Satō's data indeed shows 'pa' as a suffix in cases where it's described as a clitic, this needs to be explained or reconciled.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#010",
+  "chapter": "verb-word-template",
+  "lines": "528-530",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Nakagawa assigns the third person 'no overt affix and no arity value'. Later, in the transitivity table (lines 200-205), the 3rd person row for S, A, and O is marked with '—' and the note 'no overt segment; zero-affix analysis disputed'. This aligns with Nakagawa's view. However, the description of Satō's view is that he 'holds that a zero third-person affix is needed'. This implies that Satō *does* assign an affix, albeit a zero one, which would have an arity value. The contrast between 'no overt affix and no arity value' (Nakagawa) and 'a zero third-person affix' (Satō) is clear, but the table's '—' and 'no overt segment' might not fully capture the nuance of Satō's position that a *zero affix* is conceptually present.",
+    "quote": "The second question is the third-person zero. Nakagawa assigns the third person no overt affix and no arity value, so that the calculus balances; Satō holds that a zero third-person affix is needed to explain the two-index cap and the impossibility of certain three-participant combinations",
+    "suggestion": "Ensure the table's note or the prose in the table's section adequately reflects Satō's concept of a 'zero third-person affix' as distinct from Nakagawa's complete absence of an affix and arity value for the third person.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#009",
+  "chapter": "verb-word-template",
+  "lines": "363-369",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the copula <i lang=\"ain-Latn\">ne</i> is two-place and takes transitive-type subject marking, but admits no object index. This is presented as evidence that valence is not reducible to person indexes. However, the example <i lang=\"ain-Latn\">okkayo ku=ne</i> 'I am a man' shows a subject index (<i lang=\"ain-Latn\">ku=</i>) and a predicate nominal (<i lang=\"ain-Latn\">okkayo</i>). The statement 'takes transitive-type subject marking' is consistent with the example. The claim that it 'admits no object index' is also supported. The potential inconsistency is subtle: if it's 'two-place', it implies two arguments. One is the subject (indexed), and the other is the predicate nominal. The text seems to imply that the 'two-place' nature is fulfilled by the subject and the predicate nominal, and that there isn't a *third* argument that would be an object. This is fine, but the phrasing could be slightly clearer to avoid any confusion about whether 'two-place' implies a direct object slot that is then left unfilled.",
+    "quote": "The copula <i lang=\"ain-Latn\">ne</i> shows that valence is not reducible to the number of person indexes. It is two-place in the relation 'X is Y' and takes transitive-type subject marking, yet it admits no object index: <i lang=\"ain-Latn\">okkayo ku=ne</i> 'I am a man' is well formed while an object-indexed alternative is not <Ref k=\"nakagawa2024\" p=\"132\" />; <Ref k=\"shibatani1990\" p=\"50\" />. The copula and predicate nominals are developed in <Xr ch=\"copula-ne-predicate-nominals\" />.",
+    "suggestion": "Consider rephrasing 'It is two-place in the relation 'X is Y'' to something like 'It establishes a two-place relation 'X is Y', where X is the subject and Y is the predicate nominal.' This would more explicitly state what the two 'places' are.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#008",
+  "chapter": "verb-word-template",
+  "lines": "338-343",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Ijäs presents 'apto as' as a single avalent unit, but Nakagawa leaves it undecided because 'apto' is an autonomous noun and it could be a two-word clause. The evidence grade for this statement is 'contested'. However, the preceding sentence states that 'Where the contributing element is itself a free noun, the analysis is genuinely open'. This implies that Ijäs's treatment of 'apto as' as a single avalent unit is one interpretation among others, and the 'contested' status is already established by the 'genuinely open' nature of such cases. The sentence structure could be clearer in presenting Ijäs's view as one side of the contest.",
+    "quote": "Ijäs presents these as avalent verbs with the same examples, including the analysis of <i lang=\"ain-Latn\">sir-</i> 'surroundings' and a non-free <i lang=\"ain-Latn\">me-</i> 'cold' <Ref k=\"ijas2023\" />. Where the contributing element is itself a free noun, the analysis is genuinely open: Ijäs treats <i lang=\"ain-Latn\">apto as</i> 'it rains' as a single avalent unit, but Nakagawa leaves it undecided, since <i lang=\"ain-Latn\">apto</i> 'rain' is an autonomous noun and the string may be a two-word clause <Ref k=\"nakagawa2024\" p=\"128–130\" />; <Ref k=\"ijas2023\" /> ‹contested›.",
+    "suggestion": "Rephrase the sentence to more clearly present Ijäs's analysis as one interpretation within the contested area, e.g., 'Ijäs treats <i lang=\"ain-Latn\">apto as</i> 'it rains' as a single avalent unit, but Nakagawa considers it undecided, arguing that since <i lang=\"ain-Latn\">apto</i> 'rain' is an autonomous noun, the string may function as a two-word clause <Ref k=\"nakagawa2024\" p=\"128–130\" />; <Ref k=\"ijas2023\" /> ‹contested›.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#004",
+  "chapter": "verb-word-template",
+  "lines": "200-205",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for the 3rd person shows '—' for S, A, and O, with the note 'no overt segment; zero-affix analysis disputed'. This contradicts the earlier statement in section 'Debates that shape the template' (lines 528-530) which says, 'Nakagawa assigns the third person no overt affix and no arity value, so that the calculus balances; Satō holds that a zero third-person affix is needed to explain the two-index cap and the impossibility of certain three-participant combinations'. The table's '—' implies a lack of overt marking, which aligns with Nakagawa, but the note 'zero-affix analysis disputed' hints at the debate without fully representing Satō's position that a *zero affix* is needed.",
+    "quote": "200\t\t\t<tr>\n201\t\t\t\t<td>3</td>\n202\t\t\t\t<td>—</td>\n203\t\t\t\t<td>—</td>\n204\t\t\t\t<td>—</td>\n205\t\t\t\t<td>no overt segment; zero-affix analysis disputed</td>\n206\t\t\t</tr>",
+    "suggestion": "Modify the 'template consequence' for the 3rd person to better reflect the ongoing debate, perhaps by mentioning both Nakagawa's and Satō's views, or by linking more directly to the 'Debates' section for a fuller explanation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#003",
+  "chapter": "verb-word-template",
+  "lines": "172-176",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 1SG shows '<i lang=\"ain-Latn\">ku=</i>' for both S and A, and '<i lang=\"ain-Latn\">en=</i>' for O. The 'template consequence' states 'S = A, distinct O'. This implies that 'ku=' is used for both S and A, which is consistent. However, the gloss for 'en=' is not provided in the table, and its role as distinct from 'ku=' is only stated in the consequence. Without a gloss for 'en=', it's unclear what 'distinct O' refers to in terms of meaning.",
+    "quote": "172\t\t<td>1SG</td>\n173\t\t\t\t<td><i lang=\"ain-Latn\">ku=</i></td>\n174\t\t\t\t<td><i lang=\"ain-Latn\">ku=</i></td>\n175\t\t\t\t<td><i lang=\"ain-Latn\">en=</i></td>\n176\t\t\t\t<td>prefixal throughout; S = A, distinct O</td>",
+    "suggestion": "Add a gloss for '<i lang=\"ain-Latn\">en=</i>' in the table, or clarify its function in relation to 'ku=' and the 'distinct O' consequence.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "verb-word-template~p1#002",
+  "chapter": "verb-word-template",
+  "lines": "118-123",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text describes two 'pa' elements: a suffix '-pa' and a clitic 'pa'. The example `iki-pa=an` shows the suffix '-pa' appearing *before* the person suffix '=an'. However, the description states the suffix '-pa' stands *inside* the person suffix. This creates a contradiction in the described ordering.",
+    "quote": "The second is the position of the two homophonous plural pa elements. The Type-C plural suffix -pa is root-bound and stands inside the person suffix and inside the causative, whereas the outer plural clitic pa follows the whole person-inflected verb: iki-pa=an with the suffix before =an contrasts with iki=an pa with the clitic after it",
+    "suggestion": "Re-examine the example `iki-pa=an` and its gloss/translation to confirm the order of '-pa' and '=an'. Adjust the description to accurately reflect the observed order, or provide a corrected example.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

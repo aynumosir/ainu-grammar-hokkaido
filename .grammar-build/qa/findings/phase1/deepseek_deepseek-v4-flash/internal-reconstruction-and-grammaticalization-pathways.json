@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "121-122",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "attributed the distributional complexity to a 17-vowel PA system: the suffix vowel was selected through vowel harmony with the final vowel of the base. The machinery was extensive — twelve short and six long vowels",
+  "issue": "The text states a 17-vowel system but then gives a breakdown of 12 short + 6 long = 18 vowels, creating a numerical contradiction.",
+  "suggestion": "Change '17-vowel PA system' to '18-vowel PA system' or adjust the breakdown to sum to 17 (e.g., 12 short + 5 long, or 11 short + 6 long).",
+  "confidence": 1,
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "494-495",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "sir 'rock'",
+  "issue": "The word <i>sir</i> is glossed as 'rock' in the classifier section, but earlier (line 201) it is glossed as 'appearance, land, weather' when discussing evidentials. These are different senses and the discrepancy is not cross-referenced or explained.",
+  "suggestion": "Either unify the gloss to a single core meaning or add a note acknowledging polysemy (e.g., 'appearance, weather; also rock in classifier contexts').",
+  "confidence": 0.7,
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "438-439",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "no direct support in the Handbook sources read for this chapter. It is noted here as a community-generated lead that warrants investigation of the old compound-noun record before further evaluation.",
+  "issue": "Meta-commentary about the writing process ('sources read for this chapter') and a note that the claim needs further investigation, which addresses the reader as if in a draft rather than presenting established findings.",
+  "suggestion": "Rephrase to present the community proposal as untested and in need of research without referring to the Handbook sources or the author's writing process (e.g., 'The proposal has not been evaluated in published sources and awaits investigation of the old compound-noun record').",
+  "confidence": 1,
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "472",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "The free-verb-to-bound-suffix pathways (§ above) offer the purest layering",
+  "issue": "The cross-reference '§ above' is vague; it should point to a specific section anchor or be replaced with the section title.",
+  "suggestion": "Replace '§ above' with a proper cross-reference, e.g., '(<Xr ch=\"internal-reconstruction-and-grammaticalization-pathways\" s=\"free-verb-to-suffix\" /> below)' or the section title in quotation marks.",
+  "confidence": 0.8,
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "57",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "§<Xr ch=\"internal-reconstruction-and-grammaticalization-pathways\" s=\"affiliative-hV\">below</Xr>",
+  "issue": "The cross-reference uses <i>ch</i> attribute pointing to the same chapter. If the <Xr> component expects a different chapter slug for <i>ch</i>, this may not render correctly as an intra-chapter link.",
+  "suggestion": "If the component supports intra-chapter links without <i>ch</i>, omit the <i>ch</i> attribute and use only <i>s</i> (e.g., <Xr s=\"affiliative-hV\">below</Xr>). Otherwise confirm that the current markup works.",
+  "confidence": 0.5,
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

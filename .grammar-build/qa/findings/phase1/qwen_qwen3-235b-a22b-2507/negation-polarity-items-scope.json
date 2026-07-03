@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "51",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">hunak ka</i>, <i lang=\"ain-Latn\">ney ta … ka</i>",
+  "issue": "The table entry for 'where' shows two forms: 'hunak ka' and 'ney ta … ka'. The second form includes an ellipsis and the particle 'ta', which does not match the pattern of the other entries and may reflect a formatting error or incomplete rendering.",
+  "suggestion": "Clarify or correct the form: either remove the ellipsis and 'ta' if spurious, or explain the structure if intentional.",
+  "confidence": 0.9,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "149",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "though there were no dogs or anything,",
+  "issue": "The free translation uses 'though', which implies a concessive clause, but the gloss 'NMLZ COP PFV NMLZ' suggests a nominalized perfective structure. The gloss does not align with the concessive meaning expressed in the translation.",
+  "suggestion": "Revise gloss to reflect concessive meaning, e.g., add a gloss for 'though', or revise translation to match the nominalized structure.",
+  "confidence": 0.95,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "163",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "4.POSS=hand-POSS even 4.A=raise even cannot NMLZ COP because",
+  "issue": "The gloss includes 'NMLZ COP' at the end, but the translation ends with 'because', indicating a causal clause. The gloss does not reflect the causal linker that should correspond to 'because'.",
+  "suggestion": "Add a gloss for the causal linker (e.g., 'because') and ensure 'NMLZ COP' corresponds correctly to the nominalized clause structure.",
+  "confidence": 0.9,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "189",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "what do even NEG 4.A=do CONJ exist.PL=4.S",
+  "issue": "The gloss 'what do even' misrepresents the structure: 'nep kar' is not 'what do' but 'what thing' or 'work'; 'kar' is a nominalizer, not a verb. The gloss incorrectly treats 'kar' as a verb.",
+  "suggestion": "Correct gloss to 'what thing even NEG 4.A=do CONJ exist.PL=4.S' or similar, reflecting 'kar' as nominalizer.",
+  "confidence": 0.95,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "252",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "this thing TOP dog even NEG COP FIN",
+  "issue": "The gloss 'TOP' for 'anak' is inconsistent with standard Leipzig glossing for topic; the standard is 'TOP' but the particle 'anak' is better glossed as 'TOP' only if it is the topic marker. However, 'anak' is not present in the example 'tan pe anak seta ka somo ne wa'; instead, 'anak' is used in the cross-reference. The example uses 'pe' which should be glossed as 'TOP' if it is the topic marker.",
+  "suggestion": "Verify that 'pe' is the topic marker and gloss it as 'TOP'; otherwise, correct the gloss.",
+  "confidence": 0.8,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "273",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "4.O=be.equal NMLZ one even not.exist",
+  "issue": "The gloss '4.O=be.equal' does not match the morpheme structure: 'i=epetturasi' should be '1SG.O=equal' or similar; 'epetturasi' is not 'be.equal' but 'equal'. Also, 'NMLZ' appears between 'i=epetturasi' and 'p', but 'p' is not a separate word; 'p' is likely a clitic or part of the nominalizer.",
+  "suggestion": "Revise gloss to '1SG.O=equal NMLZ one even not.exist' and clarify the status of 'p'.",
+  "confidence": 0.9,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "282",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "what even completely not.exist",
+  "issue": "The gloss 'what even' repeats 'even' from 'ka', but 'oar' means 'completely', so the double 'even' is misleading. The gloss should distinguish the scalar focus of 'ka' from the intensifier 'oar'.",
+  "suggestion": "Revise to 'what even completely not.exist' → 'what even completely not.exist', but consider clarifying in note that 'ka' and 'oar' are distinct.",
+  "confidence": 0.7,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "334",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "one even 4.A=lose even NEG do track-POSS COP because",
+  "issue": "The gloss includes 'because' at the end, but the translation is 'since I did not lose even a single one,' where 'because' is not a separate clause. The gloss incorrectly treats 'kusu' as a separate word meaning 'because', but it is a causal linker and should be glossed as such.",
+  "suggestion": "Gloss 'kusu' as 'because' or 'since', but ensure it is marked as a linker, not a free-standing word.",
+  "confidence": 0.9,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "77",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "who even come",
+  "issue": "The gloss 'come' for 'ek' is insufficient; 'ek' is a verb meaning 'come', but the gloss should reflect tense or aspect if present. The example is constructed, but the gloss should still be precise.",
+  "suggestion": "Gloss as 'who even come.PRES' or similar to reflect verb form.",
+  "confidence": 0.8,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "106",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "what 4.A=see even NEG do although",
+  "issue": "The gloss 'although' at the end does not correspond to any morpheme in the example 'nep a=nukar ka somo ki korka'. The word 'korka' is not present in the morpheme line.",
+  "suggestion": "Add 'korka' to the morpheme line or remove 'although' from the gloss.",
+  "confidence": 0.95,
+  "chapter": "negation-polarity-items-scope",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

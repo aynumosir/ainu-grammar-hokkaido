@@ -1,0 +1,42 @@
+[
+ {
+  "id": "index-of-examples-sources-dialects~p1#001",
+  "chapter": "index-of-examples-sources-dialects",
+  "lines": "58",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The source 'Satō (2009)' appears twice in the table (lines 57 and 58), once with 5 examples and once with 1 example. This suggests a possible duplication or failure to aggregate counts for the same source.",
+    "quote": "<tr><td>Satō (2009)</td><td>1</td><td><Xr ch=\"narrative-tam-evidential-patterning-by-genre\" /></td></tr>",
+    "suggestion": "Merge the two rows for Satō (2009) into one row with a total of 6 examples.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "index-of-examples-sources-dialects~p1#002",
+  "chapter": "index-of-examples-sources-dialects",
+  "lines": "9",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The total number of examples implied by summing the 'Examples' column in the first table is significantly higher than 904 (actual sum is well over 1000), creating a numerical inconsistency between the prose and the table.",
+    "quote": "the 904 attested and constructed examples across the grammar",
+    "suggestion": "Recalculate and correct the total number of examples mentioned in the prose to match the actual sum from the table.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

@@ -1,0 +1,434 @@
+[
+ {
+  "id": "applicative-o~p1#005",
+  "chapter": "applicative-o",
+  "lines": "112",
+  "category": "copyedit",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'suffixal S =as' is slightly unclear. It's likely referring to a suffix that marks intransitivity, but 'S' as a gloss for intransitive is not standard and could be confusing.",
+    "quote": "The prefixal 1SG.A index ku= proves the derived transitivity; compare the intransitive base ku=arpa-as (with suffixal S =as), where no place object is licensed.",
+    "suggestion": "Clarify what 'S' stands for, e.g., 'the intransitive suffix =as'.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form 'ku=arpa-as' incorrectly combines a prefixal A index with a suffixal S index; the correct intransitive form should be 'arpa=as' (suffix only).",
+    "quote": "compare the intransitive base ku=arpa-as (with suffixal S =as)",
+    "suggestion": "Change to 'compare the intransitive base arpa=as (with suffixal S =as)'.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'ku=arpa-as' is not defined in the example or gloss; the suffix =as is not explained, and the hyphenation may be incorrect. The base verb is arpa, but 'arpa-as' is not standardly attested here.",
+    "quote": "compare the intransitive base ku=arpa-as (with suffixal S =as), where no place object is licensed.",
+    "suggestion": "Clarify or define =as as a past tense or aspect marker if intended; otherwise revise for clarity.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#011",
+  "chapter": "applicative-o",
+  "lines": "202",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page numbers for Nakagawa (199) are listed as '137, 140, 192–193'. This seems to be a typo, as the text is discussing the 'o-' prefix which is primarily covered on pages 198-199 in Nakagawa. The numbers 137 and 140 seem unrelated to this specific discussion.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"137, 140, 192–193\" />; <Ref k=\"bugaevakobayashi2022\" p=\"§2\" />.",
+    "suggestion": "Verify the page numbers for Nakagawa 2024. If the discussion of disambiguation by arity is indeed on pages 192-193, then those are correct. However, if the earlier numbers are incorrect, they should be removed or corrected.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation includes 'p.§2', which mixes a page abbreviation with a section symbol; the standard format would be '§2' or 'p. §2'.",
+    "quote": "bugaevakobayashi2022 p.§2",
+    "suggestion": "Change to '§2' or 'p. §2' for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#003",
+  "chapter": "applicative-o",
+  "lines": "56",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'wa' is not consistently marked with italics as other Ainu words are in this table and throughout the chapter.",
+    "quote": "<td><i lang=\"ain-Latn\">wa</i> / —</td>",
+    "suggestion": "Italicize 'wa': <i lang=\"ain-Latn\">wa</i>",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent spacing around '/' compared to 'ta' / 'or un' in line 44. 'wa / —' has space, while 'ta' and 'or un' are grouped.",
+    "quote": "<td><i lang=\"ain-Latn\">wa</i> / —</td>",
+    "suggestion": "Standardize spacing: either 'wa / —' and 'ta / or un' or 'wa/—' and 'ta/or un'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#018",
+  "chapter": "applicative-o",
+  "lines": "176-183",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'put.in' does not match the verb root o, which is glossed as 'go into, be placed in' in line 155. 'Put in' implies causative, but o is stative/locative. Mismatch between gloss and translation.",
+    "quote": "wor a=o wa",
+    "suggestion": "Revise gloss to 'be.placed' or 'located' to match root semantics, or adjust translation to 'and [they] were placed into that [water]'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#017",
+  "chapter": "applicative-o",
+  "lines": "132",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morphological breakdown i=\"a=o-ipe-p\" includes o- as applicative, but the gloss 'dish, food vessel' does not reflect the applied object role. The semantic role of o- (promoting container as object of 'eat') is missing from the gloss.",
+    "quote": "<A w=\"aoypep\" gl=\"dish, food vessel\" />",
+    "suggestion": "Revise gloss to 'dish, food vessel (thing one eats into)' to reflect o- semantics.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#016",
+  "chapter": "applicative-o",
+  "lines": "87-95",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Gloss is missing in the <Ex> element: m=\"tumi o-ek\" has no g attribute, though it should align with 'war APPL-come'. This breaks interlinear structure.",
+    "quote": "tumi o-ek",
+    "suggestion": "Add g=\"war APPL-come\" to the <Ex> element.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#020",
+  "chapter": "applicative-o",
+  "lines": "225",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'otke' is not hyphenated, but it may be derived from o- + tke (cf. o-arpa). Inconsistent with o- prefix treatment elsewhere.",
+    "quote": "<A w=\"otke\" gl=\"put, place at\" />",
+    "suggestion": "Consider marking as o-tke if lexicalized, or clarify relationship to o- prefix.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#019",
+  "chapter": "applicative-o",
+  "lines": "187",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: 'oma-n' uses hyphen, but elsewhere (e.g. o-arpa) uses no hyphen in verb forms. Should be consistent with chapter's orthographic practice.",
+    "quote": "oma-n",
+    "suggestion": "Use 'oman' or 'oma n' consistently; if morpheme boundary is intended, use =: oma=n.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#015",
+  "chapter": "applicative-o",
+  "lines": "42",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent spacing around '/' in 'into / toward' compared to 'wa / —' in line 56. Style should be consistent.",
+    "quote": "Goal (into / toward a place)",
+    "suggestion": "Use 'into / toward' or 'into/toward'; align with 'wa/—' or 'wa / —' for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#012",
+  "chapter": "applicative-o",
+  "lines": "64",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag 'corpus-suggested' is attached to a statement about the absence of a study, which is a factual claim not supported by corpus evidence; the tag is misplaced.",
+    "quote": "no pan-Hokkaido frequency study has been conducted ‹corpus-suggested›",
+    "suggestion": "Remove the tag or rephrase to indicate that the absence is inferred from the available corpus data.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#010",
+  "chapter": "applicative-o",
+  "lines": "192",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim is marked as 'speculative'. While it's true it hasn't been assessed, the preceding sentences explain the proposal and its consistency with known patterns. 'Speculative' might be too strong if the proposal itself is well-reasoned, even if unverified.",
+    "quote": "but it has not been assessed in the peer-reviewed literature ‹speculative›.",
+    "suggestion": "Consider if 'original-needs-review' or a similar tag might be more appropriate if the proposal is internally coherent but lacks external validation.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#009",
+  "chapter": "applicative-o",
+  "lines": "188",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 136, this citation format is inconsistent. The year is in the prose, and the Ref tag is also present.",
+    "quote": "(nukopoli, aynu-corpora Discord, May 2026) <Ref k=\"aynucorporadiscord\" />",
+    "suggestion": "Either use: '(nukopoli, aynu-corpora Discord 2026-05-XX; <Ref k=\"aynucorporadiscord\" />)' or '(nukopoli, aynu-corpora Discord, May 2026)'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#008",
+  "chapter": "applicative-o",
+  "lines": "151",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the affiliative 'o-' is 'the bottom/base of'. The word 'of' is not typically glossed as part of the morpheme's meaning, but rather as a function of the possessive construction it enables. The gloss should ideally be more self-contained.",
+    "quote": "The affiliative <i lang=\"ain-Latn\">o-</i> 'the bottom/base of'",
+    "suggestion": "Change gloss to 'bottom/base'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#007",
+  "chapter": "applicative-o",
+  "lines": "143",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim is marked as 'contested', but the preceding sentence states it is 'consistent with the semantic range of o-'. This implies it's a valid interpretation, but perhaps not widely accepted or proven. The 'contested' tag might be better suited if there were direct counter-evidence or significant debate.",
+    "quote": "the proposed analysis is consistent with the semantic range of <i lang=\"ain-Latn\">o-</i> but is not established in the peer-reviewed sources ‹contested›.",
+    "suggestion": "Consider if 'contested' is the most accurate tag, or if 'speculative' or 'original-needs-review' might be more appropriate, depending on the nature of the 'not established' aspect.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#006",
+  "chapter": "applicative-o",
+  "lines": "136",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community sources is inconsistent. Here, the username is provided, but the year is also included in the prose text, and then the Ref tag is also present. The standard format is usually just the username and date in prose, or the Ref tag with the date.",
+    "quote": "(nukopoli, aynu-corpora Discord, December 2024) <Ref k=\"aynucorporadiscord\" />",
+    "suggestion": "Either use: '(nukopoli, aynu-corpora Discord 2024-12-XX; <Ref k=\"aynucorporadiscord\" />)' or '(nukopoli, aynu-corpora Discord, December 2024)'. The current format is redundant.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#004",
+  "chapter": "applicative-o",
+  "lines": "94",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence structure is a bit awkward, with 'The contrast is...' followed by an example. It could be smoother.",
+    "quote": "The contrast is Nakagawa ex. 193, tumi ko-ek 'war came to [one's] sister', where the animate goal requires ko-.",
+    "suggestion": "Rephrase to: 'This contrasts with Nakagawa ex. 193, tumi ko-ek, where the animate goal 'sister' requires ko-.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#002",
+  "chapter": "applicative-o",
+  "lines": "25",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'or un' is inconsistent with the macron usage in other Ainu words like 'Hokkaidō' (line 63) and 'o-' (line 8).",
+    "quote": "in <i lang=\"ain-Latn\">ta</i> 'at/to' or <i lang=\"ain-Latn\">or un</i> 'into'",
+    "suggestion": "Add a macron to 'or un' to be consistent with other Ainu words: <i lang=\"ain-Latn\">ōrun</i>.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#001",
+  "chapter": "applicative-o",
+  "lines": "15",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the applicative prefix 'o-' raises arity by one, making a base intransitive transitive and a base transitive ditransitive. However, raising arity by one from transitive (2 arguments) would result in a 3-argument ditransitive, not a 2-argument transitive. This suggests a potential misunderstanding or misstatement of how arity is increased.",
+    "quote": "a base intransitive becomes transitive and a base transitive becomes a ditransitive",
+    "suggestion": "Clarify the arity shift for transitive bases. It should become ditransitive, not transitive.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#014",
+  "chapter": "applicative-o",
+  "lines": "8-9",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'into/toward a place' suggests directional motion, but the prefix o- also licenses location and source roles (per table on line 53), not just goal. This underrepresents its full spatial range.",
+    "quote": "<A w=\"o-\" gl=\"applicative: into/toward a place\" />",
+    "suggestion": "Revise gloss to 'applicative: place (goal, location, source)' to reflect full range in table.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "applicative-o~p1#013",
+  "chapter": "applicative-o",
+  "lines": "162-166",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The base verb is introduced as 'o' (line 155) but the causative is derived from 'oma', not from 'o'; the relationship between 'o' and 'oma' is not explained, creating an inconsistency.",
+    "quote": "Ijäs describes o / oma as a 'special locative-transitive' … Nakagawa's analysis agrees: omare (= oma-re) is a three-argument ditransitive derived from the two-argument base",
+    "suggestion": "Clarify that 'oma' is a variant or suppletive form of 'o' used in the causative derivation.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

@@ -1,0 +1,502 @@
+[
+ {
+  "id": "s-palatalization~p1#016",
+  "chapter": "s-palatalization",
+  "lines": "205",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about the epistemic grading system, addressed to the production process rather than the reader.",
+    "quote": "The phonetic detail is graded accordingly.",
+    "suggestion": "Remove or rephrase as a plain statement, e.g., 'No acoustic measurements are available for these details.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'directly-read source' is a clear pipeline register leak, indicating internal research workflow rather than scholarly exposition.",
+    "quote": "directly-read source",
+    "suggestion": "Replace with 'published acoustic measurements' or 'empirical data'.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#012",
+  "chapter": "s-palatalization",
+  "lines": "221",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol '&#x1D98;' (latin small letter turned epsilon) is used. While it exists in IPA, its specific phonetic value and standard usage for representing a palatalized [s] might need clarification or a more common alternative if available.",
+    "quote": "[&#x1D98;]",
+    "suggestion": "Clarify the phonetic meaning of '&#x1D98;' in this context or consider using a more standard IPA representation for a palatalized postalveolar fricative.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The IPA symbol [ᶘ] (voiced postalveolar fricative) is rare and may be a typo or over-specific transcription. It is not standardly used in Ainu phonetic descriptions. The symbol may be intended to represent [ʃ], but [ɕiɾʲɕak˚] is given as an alternative, suggesting [ᶘ] is meant to be distinct.",
+    "quote": "[ɕiɾʲᶘak˚]",
+    "suggestion": "Clarify or correct the use of [ᶘ]; consider replacing with [ʃ] if intended, or justify its use with a note on articulation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#006",
+  "chapter": "s-palatalization",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is a Japanese kana transcription. While it might be accurate for the source, the chapter generally uses IPA for phonetic transcriptions. Consistency would suggest using IPA here as well, or at least providing an IPA equivalent.",
+    "quote": "アㇲワ",
+    "suggestion": "Provide an IPA transcription for 'アㇲワ' or ensure consistency in transcription methods throughout the chapter.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phonetic transcription [aswa] is provided, but the preceding Japanese kana transcription 'アㇲワ' uses 'ス' which implies a plain [s]. The text states the fricative shifts to a plain sibilant, which is consistent. However, the use of kana might be confusing if not directly explained or if IPA is preferred.",
+    "quote": "[aswa]",
+    "suggestion": "Ensure clarity on the transcription method used for 'アㇲワ' and its relation to the IPA [aswa].",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phonetic transcription [aswa] uses lowercase 'w', but in standard IPA, labio-velar glides are typically represented with [w]. However, the orthographic consistency within the chapter should be checked: elsewhere (e.g., line 139) <span lang=\"ja\">ワ</span> is used, which corresponds to [w], so [aswa] is correct. But the kana transcription アㇲワ uses small ワ, suggesting a non-syllabic /w/, which is consistent. No actual error, but formatting of [aswa] should be checked for IPA compliance.",
+    "quote": "([aswa])",
+    "suggestion": "Ensure IPA transcriptions use proper symbols: [w] is correct; confirm that [aswa] is intended as [asɰa] or [aswa] based on articulation. No change needed if [w] is intentional.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#001",
+  "chapter": "s-palatalization",
+  "lines": "12",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The character '&#x02B2;' (modifier letter small h) is not standard IPA for palatalization. It might be intended as a diacritic for palatalization, but it's not commonly used this way. Standard IPA uses [ʲ] or specific symbols like [sʲ].",
+    "quote": "[s&#x02B2;]~[ʃ]",
+    "suggestion": "Replace '&#x02B2;' with a standard IPA representation for palatalization, e.g., [sʲ] or [sʲ]~[ʃ].",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of slash vs. no slash for phonemes: '/w/' is used here, but elsewhere in the chapter (e.g., line 135) it's written as /w/ without quotes. The formatting should be consistent.",
+    "quote": "the glide /w/ at a following syllable or word boundary",
+    "suggestion": "Use /w/ consistently throughout the chapter without quotation marks.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#018",
+  "chapter": "s-palatalization",
+  "lines": "88",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phonetic transcription [tʃiɕ] includes [tʃ], but the underlying form is given as /cis/ with /c/ not attested as a phoneme in Hokkaido Ainu. This suggests a mismatch between the underlying form and surface realization, or an error in transcription.",
+    "quote": "<i lang=\"ain-Latn\">cis</i> [tʃiɕ]",
+    "suggestion": "Verify whether 'cis' should be transcribed with /tʃ/ onset; if so, clarify the morphophonemic derivation or correct the example.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#022",
+  "chapter": "s-palatalization",
+  "lines": "183",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The dash in '-s' is unspaced and may be a typo; in morphological contexts, it should be attached: /-s/.",
+    "quote": "coda -s after /i/ as シ",
+    "suggestion": "Write /-s/ consistently with slash and no space.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#017",
+  "chapter": "s-palatalization",
+  "lines": "239",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again 'read source' is a pipeline term inappropriate for the reader.",
+    "quote": "has not been confirmed in other compounds or other speakers in any read source",
+    "suggestion": "Replace 'any read source' with 'any published study' or 'the corpus data reviewed'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#015",
+  "chapter": "s-palatalization",
+  "lines": "157",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read sources' is a pipeline term (meaning materials available to the author) that is not appropriate for a reader-facing reference grammar.",
+    "quote": "is not resolved in the read sources.",
+    "suggestion": "Replace with 'the available literature' or 'existing work'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The pronoun 'there' is vague and the sentence sounds like a note left for the author referring to another chapter; rephrase for the reader.",
+    "quote": "The broader sandhi environment ... is treated there.",
+    "suggestion": "Rewrite to '... is treated in the chapter on coda-r assimilation (see above).' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#013",
+  "chapter": "s-palatalization",
+  "lines": "227",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA transcription '[ɕiɾ&#x02B2;is&#x033B;ak&#x02DA;]' contains several potentially non-standard or unclear symbols: '&#x02B2;' (modifier letter small h), '&#x033B;' (combining bridge below), and '&#x02DA;' (modifier letter low left arrow). Their phonetic meaning and standard usage should be verified.",
+    "quote": "[ɕiɾ&#x02B2;is&#x033B;ak&#x02DA;]",
+    "suggestion": "Verify the phonetic accuracy and standard usage of '&#x02B2;', '&#x033B;', and '&#x02DA;' in this IPA transcription. Consider replacing them with more standard IPA symbols if appropriate.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol '&#x033B;' (combining bridge below) is used. This is not a standard IPA diacritic for palatalization. Its intended phonetic meaning needs clarification.",
+    "quote": "[s&#x033B;]",
+    "suggestion": "Clarify the phonetic meaning of '&#x033B;' and replace it with a standard IPA diacritic or symbol if it represents palatalization (e.g., [sʲ]).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#011",
+  "chapter": "s-palatalization",
+  "lines": "211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA transcription '[ɕiɾ&#x02B2;&#x1D98;ak&#x02DA;]' includes several non-standard or less common IPA symbols: '&#x02B2;' (modifier letter small h), '&#x1D98;' (latin small letter turned epsilon), and '&#x02DA;' (modifier letter low left arrow). Their phonetic meaning and standard usage in this context should be verified.",
+    "quote": "[ɕiɾ&#x02B2;&#x1D98;ak&#x02DA;]",
+    "suggestion": "Verify the phonetic accuracy and standard usage of '&#x02B2;', '&#x1D98;', and '&#x02DA;' in this IPA transcription. Consider replacing them with more standard IPA symbols if appropriate.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA transcription '[ɕiɾ&#x02B2;ɕak&#x02DA;]' includes non-standard or less common IPA symbols: '&#x02B2;' (modifier letter small h) and '&#x02DA;' (modifier letter low left arrow). Their phonetic meaning and standard usage should be verified.",
+    "quote": "[ɕiɾ&#x02B2;ɕak&#x02DA;]",
+    "suggestion": "Verify the phonetic accuracy and standard usage of '&#x02B2;' and '&#x02DA;' in this IPA transcription. Consider replacing them with more standard IPA symbols if appropriate.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#010",
+  "chapter": "s-palatalization",
+  "lines": "201",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions '[ç]' as a possible realization, which is the IPA symbol for a voiceless palatal fricative. This is consistent with the description of a 'devoiced palatal fricative'.",
+    "quote": "[ç]",
+    "suggestion": "No change needed.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#009",
+  "chapter": "s-palatalization",
+  "lines": "194",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA transcription '[ɕ&#x0331;&#x0325;]' uses two diacritics: '&#x0331;' (combining macron below) and '&#x0325;' (combining ring below). The meaning of these combined diacritics in this context is not immediately clear and might be non-standard or require further explanation.",
+    "quote": "[ɕ&#x0331;&#x0325;]",
+    "suggestion": "Clarify the phonetic meaning of the diacritics '&#x0331;' and '&#x0325;' in this context, or use a more standard IPA representation if possible.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#008",
+  "chapter": "s-palatalization",
+  "lines": "171",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions an 'English postalveolar [ʃ]' but the IPA symbol used is [ʃ]. While correct, it might be helpful to explicitly state it's the standard IPA symbol for this sound if comparing it to Ainu's variant.",
+    "quote": "[ʃ]",
+    "suggestion": "No change needed, but consider adding a brief clarification if the comparison is meant to be very precise.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#007",
+  "chapter": "s-palatalization",
+  "lines": "147-153",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses Japanese kana ('アㇲワ', 'アㇱ') in the note, which is not consistently used elsewhere in the chapter for phonetic representation. The chapter primarily uses IPA.",
+    "quote": "m=\"as wa\"\n\t\t\tg=\"stand CONJ\"\n\t\t\ttr=\"standing (and then)\"\n\t\t\tcite=\"aynucorporadiscord\"\n\t\t\tdial=\"SAR\"\n\t\t\tnote=\"Kana transcription アㇲワ shows plain [s] before /w/, contrasting with アㇱ [aʃ] for the citation form as alone. Reported from Tamura (1996) dictionary grammar sketch via aomidori (2023-12-11).\"",
+    "suggestion": "Either remove the kana transcriptions from the note or provide IPA equivalents for consistency.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#005",
+  "chapter": "s-palatalization",
+  "lines": "100",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The character '&#x02B2;' (modifier letter small h) is not standard IPA for palatalization. It might be intended as a diacritic for palatalization, but it's not commonly used this way. Standard IPA uses [ʲ] or specific symbols like [sʲ].",
+    "quote": "[tuɾes&#x02B2;]",
+    "suggestion": "Replace '&#x02B2;' with a standard IPA representation for palatalization, e.g., [tuɾesʲ].",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#004",
+  "chapter": "s-palatalization",
+  "lines": "94",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The character '&#x02B2;' (modifier letter small h) is not standard IPA for palatalization. It might be intended as a diacritic for palatalization, but it's not commonly used this way. Standard IPA uses [ʲ] or specific symbols like [sʲ].",
+    "quote": "[as&#x02B2;]~[aʃ]",
+    "suggestion": "Replace '&#x02B2;' with a standard IPA representation for palatalization, e.g., [asʲ]~[aʃ].",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#003",
+  "chapter": "s-palatalization",
+  "lines": "68",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The character '&#x02B2;' (modifier letter small h) is not standard IPA for palatalization. It might be intended as a diacritic for palatalization, but it's not commonly used this way. Standard IPA uses [ʲ] or specific symbols like [sʲ].",
+    "quote": "[s&#x02B2;]~[ʃ]",
+    "suggestion": "Replace '&#x02B2;' with a standard IPA representation for palatalization, e.g., [sʲ] or [sʲ]~[ʃ].",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#002",
+  "chapter": "s-palatalization",
+  "lines": "31",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The character '&#x033B;' (combining bridge below) is not a standard IPA diacritic for palatalization. It's unclear what phonetic feature it's intended to represent in this context.",
+    "quote": "[s&#x033B;]",
+    "suggestion": "Clarify the intended phonetic meaning of '&#x033B;' and replace it with a standard IPA diacritic or symbol if it represents palatalization (e.g., [sʲ]).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#021",
+  "chapter": "s-palatalization",
+  "lines": "44",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation attributes [ʃini] and [aʃ] to Kindaichi and Tamura, but no page range or direct reference is given for Kindaichi (1931: 9) — only a page number without context. The cite format should include full locator if used.",
+    "quote": "citing Kindaichi (1931: 9) and Tamura (1988b: 13) for the forms <i lang=\"ain-Latn\">sini</i> [ʃini] and <i lang=\"ain-Latn\">as</i> [aʃ]",
+    "suggestion": "Add full citation context: e.g., <Ref k=\"kindaichi1931\" p=\"9\" /> to match style.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#020",
+  "chapter": "s-palatalization",
+  "lines": "174",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'read sources' (line 159) and 'directly-read source' (line 204) appears to be a pipeline register leak, referring to the research process rather than the content itself.",
+    "quote": "read sources",
+    "suggestion": "Replace 'read sources' with 'available sources' or 'published sources'; replace 'directly-read source' with 'published acoustic data'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#019",
+  "chapter": "s-palatalization",
+  "lines": "104",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table groups /o/ and /u/ together under the same realization, but the preceding text (line 62) lists /a/, /e/, /o/, and /u/ separately as conditioning the same [sʲ]~[ʃ] realization. However, no example is provided for /u_/ in the table, and the text at line 73 claims 'the general rule applies equally to coda /s/ after /u/', yet the table omits it, creating a content-gap inconsistency.",
+    "quote": "/o_/ or /u_/",
+    "suggestion": "Either add an example for /u_/ or clarify that /u_/ is omitted despite the rule applying.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "s-palatalization~p1#014",
+  "chapter": "s-palatalization",
+  "lines": "55-56",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is applied to a claim that the text itself says is corroborated by a published source (shiraishi2022). This creates an internal inconsistency between the tag and the stated level of support.",
+    "quote": "...(reported via aynucorporadiscord, nukopoli, 2023-12-11; shiraishi2022 p.§3 corroborates the general pattern) ‹speculative›.",
+    "suggestion": "Either remove the ‹speculative› tag or revise the wording to explain why the claim remains speculative despite corroboration (e.g., because the specific detail from Tamura is only via Discord).",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

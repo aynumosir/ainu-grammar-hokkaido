@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "13",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">a&nbsp;…&nbsp;a</i>",
+  "issue": "Non-breaking spaces (`&nbsp;`) are used around the ellipsis, which may cause inconsistent spacing in rendering; a plain ellipsis with regular spaces or a proper typographic ellipsis should be used for consistency.",
+  "suggestion": "<i lang=\"ain-Latn\">a … a</i>",
+  "confidence": 0.95,
+  "chapter": "phasal-iterative-habitual-aspect",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "57",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">a … a</i>",
+  "issue": "In the table, the form is given as `<i lang=\"ain-Latn\">a … a</i>`, but in the prose (e.g., line 243) it is written as `V a V a`. The representation should be consistent: either `a … a` or `V a V a`.",
+  "suggestion": "Use `V a V a` in the table for consistency with the prose description.",
+  "confidence": 0.9,
+  "chapter": "phasal-iterative-habitual-aspect",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "249",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"onkami=an a =an a\"",
+  "issue": "The morpheme string shows `=an` on the second `a`, but the gloss line has `=4.S PFV` only once, and does not repeat the person clitic in the second auxiliary. The gloss should reflect the reduplicated person clitic.",
+  "suggestion": "g=\"worship=4.S PFV =4.S PFV\"",
+  "confidence": 1,
+  "chapter": "phasal-iterative-habitual-aspect",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "255",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "Only the person clitic reduplicate with a fourth-person subject, not the full stem.",
+  "issue": "Subject-verb agreement error: 'clitic' is singular but 'reduplicate' is plural. Should be 'reduplicates'.",
+  "suggestion": "Only the person clitic reduplicates with a fourth-person subject, not the full stem.",
+  "confidence": 1,
+  "chapter": "phasal-iterative-habitual-aspect",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "279",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"312\" />",
+  "issue": "The citation `<Ref k=\"nakagawa2024\" p=\"312\" />` is attached to the Japanese gloss `<span lang=\"ja\">何度も〜する</span>`, but the page cited (312) refers to the auxiliary `ranke`, not necessarily the Japanese gloss itself. This risks misattribution of the gloss to the source.",
+  "suggestion": "Move the citation to follow the claim about `ranke` rather than the Japanese gloss, or clarify that the gloss is Nakagawa's.",
+  "confidence": 0.85,
+  "chapter": "phasal-iterative-habitual-aspect",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "346",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"nisa\" gl=\"just completed; recent perfect\" />",
+  "issue": "Semicolon in gloss field: while not incorrect, Leipzig glossing rules typically use spaces or hyphens, not semicolons, in multi-part glosses. Consider using a hyphen or space.",
+  "suggestion": "gl=\"just completed recent perfect\"",
+  "confidence": 0.8,
+  "chapter": "phasal-iterative-habitual-aspect",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "383",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "The surface token <i lang=\"ain-Latn\">nisa</i> returns 3,355 hits in the present corpus of 196,184 sentences (rank 71 by frequency), but the token is homophone-prone — bare nouns and other elements sharing this phonological shape are not systematically distinguished at the surface-string level — so the count is indicative of high frequency rather than an accurate auxiliary tally.",
+  "issue": "The sentence is long and contains two em-dashes, which disrupt readability. Consider breaking into two sentences for clarity.",
+  "suggestion": "The surface token <i lang=\"ain-Latn\">nisa</i> returns 3,355 hits in the present corpus of 196,184 sentences (rank 71 by frequency). However, the token is homophone-prone — bare nouns and other elements sharing this phonological shape are not systematically distinguished at the surface-string level — so the count is indicative of high frequency rather than an accurate auxiliary tally.",
+  "confidence": 0.9,
+  "chapter": "phasal-iterative-habitual-aspect",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

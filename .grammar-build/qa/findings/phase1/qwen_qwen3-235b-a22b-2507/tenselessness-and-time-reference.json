@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "104",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹contested›",
+  "issue": "The epistemic tag ‹contested› appears after a sentence citing Refsing 1986, but the table above already classifies Refsing's position as ‹contested›. However, the tag is placed outside the <Ref> element and directly in the prose, making it appear as if the claim itself (rather than the source) is tagged — but it duplicates the table's assessment without adding new evaluative context.",
+  "suggestion": "Remove the standalone ‹contested› tag at the end of the sentence, as the position is already marked as ‹contested› in the table and the repetition creates redundancy and formatting inconsistency.",
+  "confidence": 0.95,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "117",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹contested›",
+  "issue": "The epistemic tag ‹contested› is appended after a citation cluster that includes Nakagawa and Yoshikawa, but the table above does not list Nakagawa or Yoshikawa as holding a contested view — instead, they are cited under the 'consensus' position. This creates a contradiction: the same scholars are used to support both a contested claim and the consensus.",
+  "suggestion": "Re-evaluate whether ‹contested› should apply here; if the *analysis of a* is contested, clarify that the *form's interpretation* is contested despite the scholars contributing to consensus on broader tenselessness. Alternatively, use a different grade like ‹corpus-suggested› or rephrase to avoid conflicting with the table.",
+  "confidence": 0.9,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "136-138",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"nisatta kunneywa tunas soyne=an nankor kusu\"\ng=\"tomorrow morning early go.out=4.S probably because\"\ntr=\"Tomorrow morning I will probably go out early —\"",
+  "issue": "The gloss 'because' for 'kusu' is incorrect: 'kusu' is a purposive particle, glossed correctly elsewhere as 'PURP', not 'because'. The free translation treats it as purpose ('I will go out early [in order] to…'), but the gloss 'because' reverses causality. Also, 'nankor' is glossed as 'probably' but should be 'probably' as an epistemic modal, not a causal conjunction.",
+  "suggestion": "Change 'because' in the gloss to 'PURP' and ensure 'nankor' is glossed as 'probably'. Suggested gloss: \"tomorrow morning early go.out=4.S probably PURP\".",
+  "confidence": 1,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "139",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cite=\"nakagawa2024:311\"",
+  "issue": "The cite attribute uses a page number (311), but the example is attributed to Nakagawa ex. 468 in the 'place' field. There is a mismatch between the page locator and the example number, which may confuse verification.",
+  "suggestion": "Ensure consistency: either use cite=\"nakagawa2024:468\" if ex. 468 is the source, or update the 'place' field to reflect the page number if 311 is correct.",
+  "confidence": 0.9,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "180",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"hearth TOP exist CONJ fire burn.vigorously while exist\"",
+  "issue": "The morpheme 'an' appears twice in the m-line and is glossed as 'exist' both times, but 'an' is the existential copula, not a verb meaning 'exist' in the free sense. The gloss 'exist' is misleading; standard glossing practice uses 'EX' or 'EXIS' for existential copulas. Additionally, 'CONJ' for 'ape' is inaccurate — 'ape' is a conjunction meaning 'and', so 'and' or 'CONJ' is acceptable, but 'CONJ' alone is underspecified.",
+  "suggestion": "Revise gloss to: \"hearth TOP EXIS and fire burn.vigorously while EXIS\" or use 'EX' consistently. Consider standardizing existential glosses to 'EX'.",
+  "confidence": 1,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "216",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"one throughout go=4.S PURP COP FIN\"",
+  "issue": "The gloss 'FIN' for 'na' is incorrect: 'na' is the sentence-final form of the copula 'ne', already glossed as 'COP'. There is no separate 'FIN' morpheme; 'na' is the inflected form of 'ne'. The gloss implies an extra grammatical element that isn't present.",
+  "suggestion": "Remove 'FIN' from the gloss. Correct gloss: \"one throughout go=4.S PURP COP\".",
+  "confidence": 1,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "233",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "kusune",
+  "issue": "The form 'kusune' is presented in italics without lang-tagging, while other Ainu forms like <i lang=\"ain-Latn\">kusu ne</i> are properly tagged. This creates inconsistency in language tagging for Ainu lexical items.",
+  "suggestion": "Tag the form: <i lang=\"ain-Latn\">kusune</i>.",
+  "confidence": 0.95,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "243",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"bybee1994\" paren />",
+  "issue": "The citation uses 'paren' instead of a page number, but this is not a standard attribute. The correct attribute is 'p=\"...\"' or possibly a note. 'paren' is not defined in the markup specification provided.",
+  "suggestion": "Replace 'paren' with 'p=\"...\"' and supply the relevant page range, or remove if no locator is intended.",
+  "confidence": 1,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "247",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"comrie1976\" paren />",
+  "issue": "Same issue as line 243: 'paren' is not a valid attribute for <Ref>. Page locator is missing or incorrectly formatted.",
+  "suggestion": "Use 'p=\"...\"' with appropriate page numbers or remove if not applicable.",
+  "confidence": 1,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "261",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"bybee1994\" paren />",
+  "issue": "Again, 'paren' is used instead of 'p' for Bybee 1994, creating inconsistency with other citations that use 'p'.",
+  "suggestion": "Standardize to 'p=\"...\"' with actual pages or remove if not needed.",
+  "confidence": 1,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

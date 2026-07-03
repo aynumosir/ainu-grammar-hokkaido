@@ -1,0 +1,571 @@
+[
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#011",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "187-188",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"nakagawa2024\" p=\"49\"` is placed after a comma and before the conjunction 'and', which is slightly awkward. It would be better placed after the statement it supports.",
+    "quote": "pitch placement is not phonemically distinctive <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />; <Ref k=\"nakagawa2024\" p=\"49\" />, and the three contrasts above are neutralized.",
+    "suggestion": "Move the citation `Ref k=\"nakagawa2024\" p=\"49\"` to follow the phrase 'pitch placement is not phonemically distinctive'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Semicolon-separated citations lack parallel structure: the first has a section marker (§3.1), the second a page number — minor inconsistency in locator format.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />; <Ref k=\"nakagawa2024\" p=\"49\" />",
+    "suggestion": "Use consistent locators or separate with 'and' instead of semicolon.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#021",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "10",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Describes heavy syllables as trochaic (H-L), but the overall system is defined as iambic (L-H); this contradicts the claimed iambic pattern and misaligns with the actual pitch behavior described later (e.g., rising nucleus).",
+    "quote": "words with a heavy (closed) first syllable are trochaic in accent, and words with a light (open) first syllable are iambic",
+    "suggestion": "Revise to: 'words with a heavy (closed) first syllable are accented on σ1 (H-initial), and words with a light (open) first syllable are accented on σ2 (L-H rise)', to avoid metrical mislabeling.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#017",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "105",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag 'corpus-confirmed' is used for a claim supported only by a Discord message. This inflates the evidence level.",
+    "quote": "the rise position, not the fall, is what matters ‹corpus-confirmed› (<Ref k=\"aynucorporadiscord\" />; nukopoli, 2024-12-09).",
+    "suggestion": "Change tag to 'speculative' or remove the tag, in line with how other Discord-sourced claims are treated in the chapter.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#024",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "110",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Colon used with spaces around it in 'nísap : nisáp' — inconsistent with typical typographic style for minimal pairs, which usually uses a single space or en-dash.",
+    "quote": "nísap : nisáp",
+    "suggestion": "Use en-dash: 'nísap–nisáp' or 'nísap : nisáp' with non-breaking spaces if colon is retained.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#019",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "220-223",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Japanese terms 原則1 and 原則2 are used without translation or explanation, while other Japanese terms in the chapter (e.g., 'rising nucleus (上り核アクセント)') are glossed in parentheses. This inconsistency may confuse readers unfamiliar with Japanese.",
+    "quote": "would receive σ1 accent by 原則1 (i lang=\"ain-Latn\">támpaku</i>); … would receive σ2 accent by 原則2",
+    "suggestion": "Add an English gloss in parentheses, e.g., 'by Principle 1 (原則1)' and 'by Principle 2 (原則2)', or rephrase the sentence using 'Rule 1' and 'Rule 2'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#016",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "247-251",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions `somósomo` is accented on σ2, matching the base `somó`. However, the base `somó` is presented with an accent on the first syllable. This creates an inconsistency in the accent placement description for the reduplicated form.",
+    "quote": "somósomo — the reduplicated form of somó 'even, also' — functions as a single prosodic word accented on σ2, matching the base, and that the two-word string ka somó ki 'even … too' assigns accent on the base word independently ‹speculative›",
+    "suggestion": "Clarify the accent placement for the base word `somó` and ensure the description of the accent on `somósomo` is consistent with it.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#015",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "234-236",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `kamúynomi` is presented with an acute accent on the first syllable of `kamúy`. The text states this follows 'first-element priority'. However, the explanation of compounds in <Xr ch=\"accent-in-compounds-and-affixation\" /> should clarify if this accent is retained or if the compound receives a new accent according to rules.",
+    "quote": "kamúy + nomí → kamúynomi by first-element priority",
+    "suggestion": "Ensure the accent marking on `kamúynomi` is consistent with the rules for compounds as described in the referenced cross-chapter link.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#014",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "220-221",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `támpaku` is presented with an acute accent on the first syllable. However, the preceding text states that the word would receive σ1 accent by 原則1 (<i lang=\"ain-Latn\">támpaku</i>). This implies the accent should be on the first syllable, which is consistent. However, the Japanese word is 'tobacco', and the Ainu form is presented as a loanword. The accent placement in the loanword needs to be consistent with the rules described.",
+    "quote": "támpaku",
+    "suggestion": "Ensure the accent mark on `támpaku` accurately reflects the rule-based accentuation for loanwords as described.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `potóloko` is presented with an acute accent on the second syllable. However, the preceding text states that the word would receive σ2 accent by 原則2 (<i lang=\"ain-Latn\">potóloko</i>). This implies the accent should be on the second syllable, which is consistent. However, the Russian-origin form is 'ceiling', and the Ainu form is presented as a loanword. The accent placement in the loanword needs to be consistent with the rules described.",
+    "quote": "potóloko",
+    "suggestion": "Ensure the accent mark on `potóloko` accurately reflects the rule-based accentuation for loanwords as described.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#013",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "204-205",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Hokkaido Ainu forms `notákam` and `sinúye` are presented with acute accents on the first syllable, implying accent. However, the Yakumo Ainu forms `notakám` and `sinuyé` are presented with acute accents on the second syllable. The text states that Yakumo applies a rightward-shifted rule where accent falls on σ3 rather than σ2 when both σ1 and σ2 are open. This implies that the accent in Yakumo should be on the third syllable in these examples, not the second.",
+    "quote": "Saru notákam corresponds to Yakumo notakám, and Saru sinúye to Yakumo sinuyé",
+    "suggestion": "Correct the accent placement in the Yakumo Ainu forms to reflect the described rule (e.g., `notakám` should be `notakám` if σ3 is accented, or `notakám` if σ2 is accented and the rule is misstated). Re-examine the source for the correct accent placement in Yakumo.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#012",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "191-192",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"nakagawa2024\" p=\"49–50\"` is placed before the phrase 'has not been settled', which it supports. The placement is slightly awkward.",
+    "quote": "as <Ref k=\"nakagawa2024\" p=\"49–50\" /> argues on the basis of variable archival transcriptions, has not been settled ‹contested›.",
+    "suggestion": "Move the citation `Ref k=\"nakagawa2024\" p=\"49–50\"` to follow the phrase 'has not been settled'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#010",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "145-148",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Hokkaido Ainu form `túki` has an acute accent on the first syllable, while the Sakhalin Ainu form `tuuki` does not have an accent mark. This might be inconsistent if accent is relevant to the comparison.",
+    "quote": "túki 'cup' tuuki",
+    "suggestion": "Consider adding an accent mark to the Sakhalin Ainu form `tuuki` if it is relevant to the comparison being made, or ensure the explanation clearly states that the Sakhalin forms are presented without accent marking for clarity.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#009",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "140-143",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Hokkaido Ainu form `sísam` has an acute accent on the first syllable, while the Sakhalin Ainu form `siisam` does not have an accent mark. This might be inconsistent if accent is relevant to the comparison.",
+    "quote": "sísam 'Japanese person' siisam",
+    "suggestion": "Consider adding an accent mark to the Sakhalin Ainu form `siisam` if it is relevant to the comparison being made, or ensure the explanation clearly states that the Sakhalin forms are presented without accent marking for clarity.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#008",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "135-138",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Hokkaido Ainu form `húre` has an acute accent on the first syllable, while the Sakhalin Ainu form `huure` does not have an accent mark. This might be inconsistent if accent is relevant to the comparison.",
+    "quote": "húre 'red' huure",
+    "suggestion": "Consider adding an accent mark to the Sakhalin Ainu form `huure` if it is relevant to the comparison being made, or ensure the explanation clearly states that the Sakhalin forms are presented without accent marking for clarity.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#007",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "125-133",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Hokkaido Ainu forms `nísap` and `nisáp` have acute accents indicating stress, but the Sakhalin Ainu forms `niisah` and `nisah` do not have accent marks. While the text explains the correspondence, the lack of accent marking on the Sakhalin forms might be inconsistent if accent is relevant to the comparison.",
+    "quote": "nísap 'suddenly' niisah\nnisáp 'shin' nisah",
+    "suggestion": "Consider adding accent marks to the Sakhalin Ainu forms if they are relevant to the comparison being made, or ensure the explanation clearly states that the Sakhalin forms are presented without accent marking for clarity.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#005",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "102-106",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions `ku↗ani` and `ku↘ani` as acceptable, but then states `ku↘ani` is perceived as deviant. This is contradictory. The IPA notation `↗` and `↘` are also not standard for indicating accent placement in Ainu examples within this chapter; typically, an acute accent mark is used.",
+    "quote": "the pronouns ku↗ani and ku↘ani are both acceptable, but ku↘ani (Japanese-style falling nucleus) is perceived as deviant",
+    "suggestion": "Clarify which form is acceptable and which is deviant. If `ku↗ani` is acceptable and `ku↘ani` is deviant, then the text should reflect that. Also, standardize the notation for accent, likely using acute accents on the relevant vowel.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#004",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "81-87",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The first example uses `útur` with an acute accent on the first syllable, while the second uses `utúr` with an acute accent on the second syllable. The IPA transcriptions correctly show the accent on the first syllable for the first example ([ú.tuɾ]) and the second syllable for the second example ([u.túɾ]). The Ainu forms in the table should reflect the accent placement indicated by the IPA.",
+    "quote": "útur [ú.tuɾ] 'west side of a house' utúr [u.túɾ] 'between'",
+    "suggestion": "Change the Ainu form for the first example to `útur` to match the IPA and the intended contrast.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#003",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "73-79",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The first example uses `nína` with an acute accent on the first syllable, while the second uses `niná` with an acute accent on the second syllable. The IPA transcriptions correctly show the accent on the first syllable for the first example ([ní.na]) and the second syllable for the second example ([ni.ná]). The Ainu forms in the table should reflect the accent placement indicated by the IPA.",
+    "quote": "nína [ní.na] 'gather firewood' niná [ni.ná] 'crush'",
+    "suggestion": "Change the Ainu form for the first example to `nína` to match the IPA and the intended contrast.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#002",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "65-71",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The first example uses `nísap` with an acute accent on the first syllable, while the second uses `nisáp` with an acute accent on the second syllable. However, the IPA transcriptions show the accent on the first syllable for the first example ([ní.sap̚]) and the second syllable for the second example ([ni.sáp̚]). The Ainu forms in the table should reflect the accent placement indicated by the IPA.",
+    "quote": "nísap [ní.sap̚] 'suddenly' nisáp [ni.sáp̚] 'shin'",
+    "suggestion": "Change the Ainu form for the second example to `nisáp` to match the IPA and the intended contrast.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#001",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "19",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states there are 'roughly twenty' items, but then lists exactly twenty items. This suggests the count might be precise or the list is incomplete, which contradicts the phrasing.",
+    "quote": "roughly twenty such items:",
+    "suggestion": "Change 'roughly twenty' to 'twenty' or 'about twenty' if the list is meant to be exhaustive of the source's examples, or add a note that the list is not exhaustive.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of words provided contains 20 items, but the preceding sentence states there are 'roughly twenty' items. This creates a slight inconsistency in the number presented.",
+    "quote": "cápe 'cat', húci 'grandmother', húra 'smell', húre 'red', káni 'I (emphatic)', kéra 'taste', míci 'father', mína 'laugh', nína 'gather firewood', nísap 'suddenly', núman 'yesterday', páse 'heavy', sápo 'elder sister', sések 'hot', síno 'really', sísam 'Japanese person', túki 'cup', túnas 'fast', úsey 'hot water', yúpo 'elder brother'",
+    "suggestion": "Adjust the preceding sentence to 'exactly twenty' or 'these twenty items' to align with the provided list.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#027",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "251",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Using ‹speculative› for a community observation is acceptable, but attaching it to a Discord source without corroboration is appropriate — however, the tag should not appear in the prose without being defined in context.",
+    "quote": "‹speculative› (<Ref k=\"aynucorporadiscord\" />; nukopoli, 2024-12-09)",
+    "suggestion": "Ensure ‹speculative› is explained in the chapter’s methodology or remove the tag and integrate the source as parenthetical.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#026",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "238",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Epistemic tag ‹proposed› is not in the defined set of evidence grades (consensus, contested, corpus-confirmed, etc.); this is a pipeline register leak.",
+    "quote": "‹proposed› (<Ref k=\"aynucorporadiscord\" />; palestine_2026, 2024-08-12)",
+    "suggestion": "Replace ‹proposed› with ‹speculative› or ‹community-observed› if not formally attested.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#025",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "220",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Japanese term '原則1' (genzoku 1, 'principle 1') appears untranslated and unexplained, while the rest of the text is in English; this breaks register and accessibility.",
+    "quote": "by 原則1",
+    "suggestion": "Replace with 'by Rule 1' or define the term upon first use.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as line 220 — untranslated Japanese term '原則2' used without explanation.",
+    "quote": "by 原則2",
+    "suggestion": "Replace with 'by Rule 2'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#023",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "49",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Two citations are given in sequence with no connecting text; the semicolon suggests joint support, but the second citation lacks a page locator after the semicolon, making it ambiguous whether §5.1 applies to both or only the second.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"51\" />; <Ref k=\"shiraishi2022\" p=\"§5.1\" />:",
+    "suggestion": "Use comma or rephrase: '<Ref k=\"nakagawa2024\" p=\"51\" /> and <Ref k=\"shiraishi2022\" p=\"§5.1\" />'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#022",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "47-48",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Implies that any exception word with a rule-following homophone creates a minimal pair, but later states (line 169–173) that only three such pairs are established and others are not systematically documented, creating a contradiction.",
+    "quote": "The exception-list words create lexical contrasts wherever a segmentally identical (or near-identical) word follows the regular rule.",
+    "suggestion": "Revise to: 'The exception-list words *can* create lexical contrasts where a segmentally identical (or near-identical) word follows the regular rule, though only a few such pairs are attested.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#020",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "7-8",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The rule description implies a strict bimoraic weight distinction, but the terms 'closed' and 'open' are used without defining syllable weight in terms of moras or coda presence, which may conflate structural and prosodic properties.",
+    "quote": "if σ1 is closed (CVC), σ1 bears high pitch; if σ1 is open (CV), σ2 bears high pitch",
+    "suggestion": "Clarify that 'closed' means 'ends in a coda consonant (CVC)' and 'open' means 'ends in a vowel (CV)', and explicitly link this to syllable weight (heavy vs light) for consistency with line 10.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#018",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "152-162",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose claims a general correspondence of short vowels in Sakhalin to rule-derived Hokkaido forms, but the table only shows a short-vowel counterpart for the nísap/nisáp pair. For húre, sísam, and túki only the long-vowel Hokkaido exception forms are shown, with no corresponding short-vowel rule-derived Hokkaido form given. This makes the generalization appear unsupported by the table.",
+    "quote": "The long Sakhalin vowel occupies the syllable that carries initial accent in the Hokkaido exception word; the short Sakhalin vowel corresponds to the Hokkaido rule-derived form.",
+    "suggestion": "Either add the missing rule-derived Hokkaido forms and their Sakhalin equivalents, or restrict the claim to the nísap pair and note that the other examples show only the long-vowel side of the correspondence.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "lexical-contrastive-accent-minimal-pairs~p1#006",
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "lines": "111-112",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Sakhalin Ainu preserves vowel-length distinctions in *exactly* the positions where Hokkaido Ainu carries an accent distinction. However, the table on lines 115-149 shows that the Sakhalin Ainu form `nisah` (line 132) corresponds to Hokkaido Ainu `nisáp` (line 130), where the accent is on the second syllable in Hokkaido Ainu, but the vowel length distinction is not present in the Sakhalin form (no long vowel in `nisah`). This contradicts the claim of an exact correspondence.",
+    "quote": "Sakhalin Ainu preserves vowel-length distinctions in exactly the positions where Hokkaido Ainu carries an accent distinction",
+    "suggestion": "Revise the statement to reflect that the correspondence is not exact for all cases, or adjust the table to show only cases with exact correspondence.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

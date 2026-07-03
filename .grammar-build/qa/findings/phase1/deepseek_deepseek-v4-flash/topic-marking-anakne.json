@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "113-121",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"clothes TOP how exist even.if good but 2SG.POSS=heart 4.A=please CONJ COP\" tr=\"The clothes, whatever they are like, are fine; your heart is what pleased me.\"",
+  "issue": "The gloss glosses a=ramosma as '4.A=please' (indefinite agent), but the translation interprets the heart as the subject that pleases 'me' (1SG object). The person/number values are inconsistent: the gloss has 4th-person agent, the translation has 1st-person object.",
+  "suggestion": "Either correct the gloss to reflect the translation (e.g., '2SG.POSS=heart 1SG.O=please') or adjust the translation to match the gloss (e.g., 'your heart is pleased (by someone)').",
+  "confidence": 0.9,
+  "chapter": "topic-marking-anakne",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "236-244",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.A=have dog TOP 4.O=go.far go even NEG do NMLZ COP because 4.O=vicinity LOC together eat=4.S\" tr=\"My dog never went far from me, so we ate together beside each other.\"",
+  "issue": "The gloss uses 4th-person object (i=) and 4th-person subject (an), but the translation uses 1st-person ('me', 'we'). The person values do not match: the gloss indicates indefinite/4th person, the translation specifies 1st person.",
+  "suggestion": "Either correct the gloss to 1st person (e.g., '1SG.O=go.far', '1PL.S=eat') or adjust the translation to use indefinite reference (e.g., 'the dog never went far from one, so one ate together').",
+  "confidence": 0.9,
+  "chapter": "topic-marking-anakne",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "194-196",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "the particle is reserved for contexts where singling-out or contrast is genuinely intended, and omitting it when topic continuity is clear from context is the natural choice (nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />) ‹corpus-suggested›.",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim supported only by a Discord message, not by corpus data. The tag inflates the evidence level.",
+  "suggestion": "Change the tag to ‹speculative› or ‹original-needs-review›, or provide actual corpus evidence.",
+  "confidence": 0.8,
+  "chapter": "topic-marking-anakne",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "249-256",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "the whole aligned Hokkaido corpus (over 1.5 million tokens) gives the reverse — approximately 9,355 tokens of anak against 4,789 of anakne.",
+  "issue": "The corpus token counts are presented without any citation. The source of these numbers is not given, making the claim unsupported.",
+  "suggestion": "Add a reference to the corpus or the specific study that produced these counts.",
+  "confidence": 0.8,
+  "chapter": "topic-marking-anakne",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "21-23, 67-71",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "One structural property shared by all delimiting particles is that they cannot host a clause-linking suffix directly when they follow a verb phrase. ... The verb phrase must first be re-verbalised by the dummy light transitive ki (ki-support).",
+  "issue": "The claim states that all delimiting particles require ki-support when following a VP, but the table for ka (lines 67-71) lists attachment as 'NP, VP' without mentioning ki-support, and the text does not discuss ki-support for ka. This creates a potential inconsistency: either ka does not attach to VP in a way that requires a connective, or the claim is too broad.",
+  "suggestion": "Either add a note that ka also requires ki-support when followed by a connective, or clarify that the claim applies only to particles that actually occur with clause-linking suffixes after VP.",
+  "confidence": 0.6,
+  "chapter": "topic-marking-anakne",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "53",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "see §",
+  "issue": "The table entry for takup/takupi contains 'see §' without a specific section reference. This appears to be a placeholder that was not filled in.",
+  "suggestion": "Replace 'see §' with a specific section number or remove it if the discussion is in the same chapter (e.g., 'see §Restrictive focus').",
+  "confidence": 0.7,
+  "chapter": "topic-marking-anakne",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

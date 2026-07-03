@@ -1,0 +1,1421 @@
+[
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#054",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "545",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community sources is inconsistent. The date is included in the prose for this instance but not for the second instance using `<Ref>` tag.",
+    "quote": "nukopoli, aynu-corpora Discord, 2023-12-12, asserted; <Ref k=\"aynucorporadiscord\" />",
+    "suggestion": "Standardize the citation format for community sources, either by including the date in prose for all or using `<Ref>` tags consistently.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Community observation cited without an epistemic tag (e.g., ‹corpus-suggested› or ‹speculative›), while other similar citations in the chapter carry such tags.",
+    "quote": "consistent with the community observation by nukopoli, aynu-corpora Discord, 2023-12-12, asserted; <Ref k=\"aynucorporadiscord\" />",
+    "suggestion": "Add an appropriate epistemic tag, such as ‹corpus-suggested›, to maintain consistency.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "A community observation from Discord is presented as confirming a scholarly claim about verbal number without peer-reviewed or corpus support. The citation does not justify 'consistent with' phrasing.",
+    "quote": "(consistent with the community observation by nukopoli, aynu-corpora Discord, 2023-12-12, asserted; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Either remove the parenthetical or rephrase to reflect the informal nature of the observation (e.g., 'parallels community observations').",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#007",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "85",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'bugaeva2012' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "bugaeva2012:486",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is tagged as ‹contested›, but the only support cited is a Discord comment (nukopoli), which is insufficient to justify either consensus or a contested status in scholarly terms. This inflates the epistemic weight of an informal source.",
+    "quote": "the bare verb form with no person affix is the third-person form and the citation form of the verb — with the zero-marking implicitly conceding a zero third-person affix — is consistent with Satō's formal argument that such a zero is required by the two-affix cap on finite verbs (nukopoli, aynu-corpora Discord, 2024-12-25, asserted; <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Reclassify the claim as ‹speculative› or add peer-reviewed sources that explicitly contest the zero affix claim.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#029",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "296",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community sources is inconsistent. The date is included in the prose for the first instance but not the second, and the second uses a `<Ref>` tag.",
+    "quote": "nukopoli, aynu-corpora Discord, 2024-12-12, proposed; <Ref k=\"aynucorporadiscord\" />",
+    "suggestion": "Standardize the citation format for community sources, either by including the date in prose for all or using `<Ref>` tags consistently.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Again, a Discord user's proposal is tagged with ‹corpus-suggested›, implying empirical corpus confirmation that is not substantiated by the citation.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024-12-12, proposed; <Ref k=\"aynucorporadiscord\" />) ‹corpus-suggested›.",
+    "suggestion": "Reclassify as ‹speculative› or remove the epistemic tag until corpus data is available.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#026",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "277",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'FOC' appears twice for the particle 'ka', but the translation 'There is not a single mat either' suggests 'FOC' might not be the best gloss for both instances, or that the second 'ka' has a different function (e.g., negation or emphasis).",
+    "quote": "g=\"mat FOC one FOC not.exist\"",
+    "suggestion": "Clarify the gloss for the second 'ka' or adjust the translation to reflect the gloss.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss repeats 'FOC' for both instances of 'ka', but the structure suggests that only the second 'ka' is focused on the numeral. The double 'FOC' gloss implies both N and numeral are focused, but the translation 'not a single mat either' focuses on the quantifier.",
+    "quote": "m=\"toma ka sinep ka isam\" g=\"mat FOC one FOC not.exist\"",
+    "suggestion": "Gloss the second 'ka' as FOC and the first as a particle with a different function (e.g., TOP or EMPH), or clarify the focus scope in the note.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#018",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "210",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'shibatani1990' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "shibatani1990:38",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "A Discord attribution is labeled with ‹corpus-suggested›, which implies corpus-based empirical support, but no actual corpus data is cited. The cf. to Shibatani 1990:38 does not provide corpus frequency evidence.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024-11-09, asserted; <Ref k=\"aynucorporadiscord\" />; cf. <Ref k=\"shibatani1990\" p=\"38\" />) ‹corpus-suggested›.",
+    "suggestion": "Change the tag to ‹speculative› or provide actual frequency data from a corpus.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#061",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "65",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'a=' is glossed as '4.A' (fourth-person agent), but the note (line 70) says 'the fourth-person agent prefix a= is the grammatical subject argument'. This implies that 'a=' is specifically agentive, yet in other contexts (e.g., ditransitives) it may mark non-agent roles. The gloss does not reflect potential ambiguity or broader usage.",
+    "quote": "m=\"cep a=koyki\" g=\"fish 4.A=catch\"",
+    "suggestion": "Clarify in the gloss or note whether '4.A' is a fixed role or context-dependent; if the latter, consider using a more neutral label like '4='.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#060",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "45",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses '1SG.S' to indicate first-singular subject, but the note (line 50) states that 'the prefix ku= covers both S and A for 1SG'. This creates a contradiction: the gloss implies exclusive S marking, while the explanation says it is syncretic for S and A.",
+    "quote": "m=\"ku=inkar\" g=\"1SG.S=look.around\"",
+    "suggestion": "Revise the gloss to use a syncretic label such as '1SG.S/A' or '1SG.NEUT' to reflect the syncretism described in the note.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#064",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "422",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent macron usage: 'corpok' should be 'koropok' (standard orthography for 'underworld person, dwarf'). 'ka' as 'above' may be a dialect variant, but without macron or clarification.",
+    "quote": "<i lang=\"ain-Latn\">or</i> 'place (of)', <i lang=\"ain-Latn\">sam</i> 'near', <i lang=\"ain-Latn\">ka</i> 'above', <i lang=\"ain-Latn\">corpok</i> 'below'",
+    "suggestion": "Verify standard forms: likely 'koropok' and possibly 'kamuy' for 'above'? Or clarify dialect and orthographic basis.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#063",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "413",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The HTML-like tag '&lt;location&gt;' appears in the prose, likely a pipeline leak from editing or markup processing.",
+    "quote": "an extra &lt;location&gt; elaboration on the noun",
+    "suggestion": "Replace with 'a locative elaboration on the noun' or proper markup if intended.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#062",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "146-182",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Ainu text in the table uses 'ne' and 'po' as possessive markers, but these are dialect variants (ne = Chitose, po = Saru). The table mixes forms from different dialects (e.g., example 700 uses 'ne', 702 uses 'po') without consistent orthographic representation or dialect tagging per row.",
+    "quote": "menoko ne hike a=macihi menoko monrayke epakasnu",
+    "suggestion": "Standardize orthography per example or add explicit dialect labels to each row in the table.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#059",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "195",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the read literature' is informal and may be a pipeline register leak, referring to literature read for this chapter rather than the available literature.",
+    "quote": "No corpus-level count of A-before-O versus O-before-A frequencies in transitive clauses exists in the read literature",
+    "suggestion": "Rephrase to 'the available literature' or 'the literature surveyed'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#057",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "556",
+  "category": "cross-reference",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-references to 'sequential-wa-and-clause-chaining' and 'hine-akusu-switch-reference' are to sections that do not exist in the provided chapter structure. This indicates broken links.",
+    "quote": "Xr ch=\"sequential-wa-and-clause-chaining\"; Xr ch=\"hine-akusu-switch-reference\"",
+    "suggestion": "Verify the existence and correct slugs for these cross-references.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#056",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "553",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "refsing1986",
+    "suggestion": "Add a page number or specific reference to refsing1986.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#055",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "547",
+  "category": "cross-reference",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-references to 'suppletive-verbal-number' and 'alignment-hierarchical-and-the-debate' are to sections that do not exist in the provided chapter structure. This indicates broken links.",
+    "quote": "Xr ch=\"suppletive-verbal-number\"; Xr ch=\"alignment-hierarchical-and-the-debate\"",
+    "suggestion": "Verify the existence and correct slugs for these cross-references.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#053",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "535",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "nakagawa2022pos",
+    "suggestion": "Add a page number or specific reference to nakagawa2022pos.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "bugaeva2022",
+    "suggestion": "Add a page number or specific reference to bugaeva2022.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#052",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "528",
+  "category": "cross-reference",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'logophoric-narration-and-reported-discourse' is to a section that does not exist in the provided chapter structure. This indicates a broken link.",
+    "quote": "Xr ch=\"logophoric-narration-and-reported-discourse\"",
+    "suggestion": "Verify the existence and correct slug for this cross-reference.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#051",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "526",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community sources is inconsistent. The date is included in the prose for the first instance but not the second, and the second uses a `<Ref>` tag. Also, the page range for bugaeva2008 uses a hyphen instead of an en-dash.",
+    "quote": "thegodofneet, aynu-corpora Discord, 2024-07-04, asserted; <Ref k=\"aynucorporadiscord\" />; consistent with <Ref k=\"bugaeva2008\" p=\"40–43\" />",
+    "suggestion": "Standardize the citation format for community sources. Change the hyphen to an en-dash in the bugaeva2008 citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#050",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "506",
+  "category": "cross-reference",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'indefinite-fourth-person-paradigm' is to a section that does not exist in the provided chapter structure. This indicates a broken link.",
+    "quote": "Xr ch=\"indefinite-fourth-person-paradigm\"",
+    "suggestion": "Verify the existence and correct slug for this cross-reference.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#049",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "496",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'shibatani1990' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "nakagawa2024:363; shibatani1990:22",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#048",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "487",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'bugaeva2012' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "bugaeva2012:498",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#047",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "478",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'bugaeva2012' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "bugaeva2012:498",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#046",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "475",
+  "category": "cross-reference",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-references to 'clause-linkage-overview' and 'hine-akusu-switch-reference' are to sections that do not exist in the provided chapter structure. This indicates a broken link.",
+    "quote": "Xr ch=\"clause-linkage-overview\"; Xr ch=\"hine-akusu-switch-reference\"",
+    "suggestion": "Verify the existence and correct slugs for these cross-references.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#045",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "451",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'koy-yanke' is not glossed or translated in the text. Its meaning is crucial for understanding the example.",
+    "quote": "koy-yanke",
+    "suggestion": "Provide a gloss and translation for 'koy-yanke'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#044",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "448",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-). The citation for sato2016 is missing a page number.",
+    "quote": "sato2025a:366–367; sato2016",
+    "suggestion": "sato2025a:366–367; sato2016: [page number]",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#043",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "438",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This Ainu phrase is mentioned as an example but is not presented as a formal example with markup, gloss, and translation. This could lead to confusion.",
+    "quote": "kamuy aynu rayke",
+    "suggestion": "Format 'kamuy aynu rayke' as an example using `<Ex>` markup or remove it from the text if it's not essential.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'nakagawa2024' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "nakagawa2024:363",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#042",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "430",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "nakagawa2022pos",
+    "suggestion": "Add a page number or specific reference to nakagawa2022pos.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "bugaeva2022",
+    "suggestion": "Add a page number or specific reference to bugaeva2022.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#041",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "426",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu example 'ci a=e-p saranip or oma-re' is not glossed or translated in the text. Its meaning is crucial for understanding the example.",
+    "quote": "ci a=e-p saranip or oma-re",
+    "suggestion": "Provide a gloss and translation for the example.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#040",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "415",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "bugaeva2022",
+    "suggestion": "Add a page number or specific reference to bugaeva2022.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#039",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "395",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for bugaeva2022 and foleyvanvalin1984 are missing page numbers. They should specify the exact pages being referenced.",
+    "quote": "bugaeva2022; foleyvanvalin1984",
+    "suggestion": "Add page numbers or specific references to bugaeva2022 and foleyvanvalin1984.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#038",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "386",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "nakagawa2022pos",
+    "suggestion": "Add a page number or specific reference to nakagawa2022pos.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#037",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "377",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'nichols1986' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "nichols1986:104",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#036",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "364",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'shibatani1990' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "nakagawa2024:363; shibatani1990:22",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#035",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "354",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'bugaeva2012' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "bugaeva2012:472; shibatani1990:22",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#034",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "348",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'nakagawa2024' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "nakagawa2024:383",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#033",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "342",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'bugaeva2012' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "bugaeva2012:476; nakagawa2024:361",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#032",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "335",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for bugaeva2022 is missing a page number. It should be a specific page or range.",
+    "quote": "nakagawa2024:363; bugaeva2022",
+    "suggestion": "Add the specific page number or range for bugaeva2022.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#031",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "328",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "sato2025a:363–365; nakagawa2024:361",
+    "suggestion": "sato2025a:363–365; nakagawa2024:361",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#030",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "321",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page number for bugaeva2012 is missing. It should be a specific page or range.",
+    "quote": "sato2025a:359–361; bugaeva2012:472",
+    "suggestion": "Add the specific page number or range for bugaeva2012.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#028",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "293",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pasuy' is not glossed or translated in the text. Its meaning is crucial for understanding the example.",
+    "quote": "pasuy sinep uk",
+    "suggestion": "Provide a gloss and translation for 'pasuy'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#027",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "284",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'nakagawa2024' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "nakagawa2024:383",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'Nakagawa ex. 750' which is not explicitly cited in the main text or reference list. This might be an internal reference or a missing citation.",
+    "quote": "Nakagawa ex. 750 (second clause). Full pair: sintoko utar ka opitta sinep ka isam. toma ka sinep ka isam. 'there is not a single box either; there is not a single mat either.' Nakagawa analyses [toma ka sinep ka] as one discontinuous NP filling the S slot of the intransitive isam; the arity of the verb (one place) rules out reading toma and sinep as separate arguments.",
+    "suggestion": "Add Nakagawa ex. 750 to the reference list or remove the mention if it's not relevant to the chapter's citations.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#025",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "265",
+  "category": "cross-reference",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'reference-tracking' is to the current section, which is redundant.",
+    "quote": "reference-tracking",
+    "suggestion": "Remove the cross-reference or link to a different section if intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#024",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "256",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "ilcaa1976",
+    "suggestion": "Add a page number or specific reference to ilcaa1976.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'ILCAA aa-irc/009#154' which is not explicitly cited in the main text or reference list. This might be an internal reference or a missing citation.",
+    "quote": "ILCAA aa-irc/009#154. Both co-subjects (a=onaha, a=unuhu) are overt; the object of kimatekka is zero, recovered from the 4.O prefix i= (narrator as object in logophoric-narrative context). All other participants in the surrounding passage are null. The fourth-person possessive a= marks the narrator's own kin in oral narrative; see the logophoric chapter.",
+    "suggestion": "Add ILCAA aa-irc/009#154 to the reference list or remove the mention if it's not relevant to the chapter's citations.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#023",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "242",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "sato2025a:368–369",
+    "suggestion": "sato2025a:368–369",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#022",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "238",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'bugaeva2012' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "bugaeva2012:476, ex. 22",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#021",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "231",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "sato2025a:359–360",
+    "suggestion": "sato2025a:359–360",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#020",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "226",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'nakagawa2024' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "nakagawa2024:361",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#019",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "219",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The pronoun 'it' at the end of the sentence lacks a clear antecedent. It likely refers to 'verb-final order', but this could be more explicit.",
+    "quote": "not a grammaticalized alternative to it.",
+    "suggestion": "Replace 'it' with 'verb-final order' for clarity.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#017",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "203",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page number for bugaeva2012 is missing. It should be a specific page or range.",
+    "quote": "nakagawa2024:364; bugaeva2012:472",
+    "suggestion": "Add the specific page number or range for bugaeva2012.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#016",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "201",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical '(ne)' suggests optionality, but the text later refers to it as a 'distinct confound'. This could be clearer.",
+    "quote": "anak(ne)",
+    "suggestion": "Clarify if 'ne' is always optional or if its presence has a specific function.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#015",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "195",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is ambiguous. It lists two sources without specifying which one supports the claim. It should be clarified.",
+    "quote": "Nakagawa, Bugaeva",
+    "suggestion": "Clarify which source supports the claim, e.g., (Nakagawa) or (Bugaeva).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#014",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "191",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is missing a page number or specific reference within the work. It's unclear what specific information is being referenced.",
+    "quote": "nakagawa2022pos",
+    "suggestion": "Add a page number or specific reference to nakagawa2022pos.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is ambiguous. It lists two sources without specifying which one supports the claim. It should be clarified.",
+    "quote": "Shibatani, Satō 2008",
+    "suggestion": "Clarify which source supports the claim, e.g., (Shibatani) or (Satō 2008).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#013",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "187",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "nakagawa2024:363–364, ex. 703",
+    "suggestion": "nakagawa2024:363–364, ex. 703",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#012",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "142",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "nakagawa2024:363, exx. 700–702",
+    "suggestion": "nakagawa2024:363, exx. 700–702",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "nakagawa2022pos:exx. 71–73",
+    "suggestion": "nakagawa2022pos:exx. 71–73",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#011",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "128",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'shibatani1990' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "shibatani1990:22",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'sato2008' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "sato2008:2",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#010",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "121",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'shibatani1990' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "shibatani1990:22",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'Shibatani ex. 23b' which is not explicitly cited in the main text or reference list. This might be an internal reference or a missing citation.",
+    "quote": "Shibatani ex. 23b. With order reversed, agent-patient assignment reverses. Shibatani (1990: 22) concludes that word order plays as important a role as in English in determining grammatical function.",
+    "suggestion": "Add Shibatani ex. 23b to the reference list or remove the mention if it's not relevant to the chapter's citations.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#009",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "111",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'shibatani1990' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "shibatani1990:22",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'Shibatani ex. 23a' which is not explicitly cited in the main text or reference list. This might be an internal reference or a missing citation.",
+    "quote": "Shibatani ex. 23a. Initial NP interpreted as agent; the only role indicator is linear position, since neither NP carries a case suffix and the verb rayke is zero-marked for third-person arguments.",
+    "suggestion": "Add Shibatani ex. 23a to the reference list or remove the mention if it's not relevant to the chapter's citations.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#008",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "89",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'sato2025a' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "sato2025a:369",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#006",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "76",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for bugaeva2012 is missing. It should be a range or a specific page.",
+    "quote": "bugaeva2012:472; sato2025a:360",
+    "suggestion": "Add the specific page number or range for bugaeva2012.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'bugaeva2012' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "bugaeva2012:472",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#005",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "68",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'sato2025a' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "sato2025a:363",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'zero-indexed object' which is not explicitly defined or glossed in the example. This might be an internal inconsistency or a missing explanation.",
+    "quote": "The fourth-person agent prefix a= is the grammatical subject argument; the NP cep 'fish' lexically specifies the zero-indexed object. The clause is complete without cep; the overt NP narrows what is caught but does not fill a structural position.",
+    "suggestion": "Clarify 'zero-indexed object' or ensure it's defined elsewhere.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#004",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "48",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'sato2025a' is used for a page number that is not explicitly listed in the reference list. It's possible this is a typo or an incomplete reference.",
+    "quote": "sato2025a:355",
+    "suggestion": "Verify the page number or the reference key.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'Tamura 1988: 72' but this is not cited in the main text or the reference list. This might be an internal reference or a missing citation.",
+    "quote": "Satō ex. 1 (after Tamura 1988: 72). A finite verb carrying only the first-singular subject prefix ku=. No overt subject NP is required; the clause is grammatically complete. The prefix ku= covers both S and A for 1SG; see the person-marking chapters.",
+    "suggestion": "Add Tamura 1988 to the reference list or remove the mention if it's not relevant to the chapter's citations.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#003",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "19",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "sato2025a:359–361",
+    "suggestion": "sato2025a:359–361",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#002",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "15",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "nakagawa2024:363–364",
+    "suggestion": "nakagawa2024:363–364",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#001",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "10",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Page range citation should use an en-dash (–) not a hyphen (-).",
+    "quote": "shibatani1990:22–24",
+    "suggestion": "shibatani1990:22–24",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonconfigurationality-pronominal-argument~p1#058",
+  "chapter": "nonconfigurationality-pronominal-argument",
+  "lines": "461",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This sentence is meta-commentary addressed to the chapter authors, not the reader. It instructs authors on how to present the material, which is a pipeline register leak.",
+    "quote": "Chapter authors should present the classification as a live framing question rather than an established result",
+    "suggestion": "Rephrase to 'The classification is best presented as a live framing question rather than an established result.'",
+    "confidence": 1
+   }
+  ]
+ }
+]

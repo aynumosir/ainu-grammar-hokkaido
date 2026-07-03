@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "152–154",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "yáykosiramsuypa, nine syllables but σ1 = yay",
+  "issue": "The word yáykosiramsuypa has six syllables by standard syllabification (yay-ko-si-ram-suy-pa), not nine as claimed. The example contradicts the count given.",
+  "suggestion": "Replace 'nine' with 'six' if the form is correct, or supply the intended longer form with correct syllable count.",
+  "confidence": 0.9,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "356–357",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "(not consulted directly)",
+  "issue": "'not consulted directly' is a production note to the authors, not intended for readers. It also undermines the citation's authority.",
+  "suggestion": "Either delete or rephrase to 'as reported by Itabashi (2001) (not verified directly)' or similar if necessary, but ideally remove.",
+  "confidence": 1,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "357–358",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "paren /›",
+  "issue": "The markup instruction 'paren' appears in the citation, likely a leftover from the source template (e.g., meaning 'parenthetical citation'). It should be resolved to proper formatting (e.g., §3.1 in parentheses).",
+  "suggestion": "Replace with appropriate formatting, e.g., '§3.1' inside parentheses, or adjust the citation macro to handle it.",
+  "confidence": 1,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195–197",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹corpus-suggested›",
+  "issue": "The claim is supported by a Discord post corroborated by a published source (Nakagawa 2024). Tagging it as 'corpus-suggested' understates the evidence; at least 'corpus-confirmed' or 'consensus' is warranted.",
+  "suggestion": "Upgrade epistemic tag to '‹corpus-confirmed›' or remove if the claim is already treated as consensus in earlier paragraphs.",
+  "confidence": 0.8,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "34",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "ku↗a–ni",
+  "issue": "The en dash in 'a–ni' is non-standard for Ainu morpheme boundaries (usually hyphen or equals sign). This may reflect a formatting error or inconsistent segmentation convention.",
+  "suggestion": "Replace en dash with hyphen or equals sign as appropriate (e.g., 'ku↗a-ni' or 'ku=a=ni').",
+  "confidence": 0.7,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

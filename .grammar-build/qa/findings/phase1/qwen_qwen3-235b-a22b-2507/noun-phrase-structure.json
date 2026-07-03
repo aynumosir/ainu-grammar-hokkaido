@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "29",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">tan</i>, <i lang=\"ain-Latn\">toan</i>, <i lang=\"ain-Latn\">ne</i>, <i lang=\"ain-Latn\">nea</i>",
+  "issue": "Inconsistent use of macrons in Ainu forms: 'nea' lacks a macron that may be expected if 'ne' is its base form, and other forms in the table (e.g. 'toan') do not consistently reflect vowel length. The dialect table later uses 'nea' and 'nerok', suggesting possible orthographic variation that should be standardized within the chapter.",
+  "suggestion": "Standardize macron usage for vowel length across all Ainu forms in the chapter, based on the preferred orthographic convention (e.g. use 'neā' or 'nea' consistently).",
+  "confidence": 0.85,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "143",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">taan</i>",
+  "issue": "The form 'taan' appears with a double 'a', while the base form 'tan' has a single 'a'. This may reflect vowel length, but the orthography is inconsistent with later forms like 'toan' (not *toaan*), suggesting a drift in representation. The extended variant 'taoka(y)' also lacks macrons.",
+  "suggestion": "Use macrons to consistently mark vowel length (e.g. 'tān', 'tāan') or use gemination uniformly (e.g. 'taan', 'toaan') throughout the chapter.",
+  "confidence": 0.8,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "150",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">tooka(y)</i>",
+  "issue": "The form 'tooka(y)' uses parentheses for optional 'y', but the base form 'toan' does not have a corresponding 'n' variant. This creates orthographic inconsistency in how variants are presented. Additionally, macrons are missing.",
+  "suggestion": "Standardize variant notation: either use macrons consistently (e.g. 'tōka(y)') or use gemination (e.g. 'tooka(y)') and clarify optional segments uniformly.",
+  "confidence": 0.75,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "162",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">nea</i> / <i lang=\"ain-Latn\">nerok</i>",
+  "issue": "The forms 'nea' and 'nerok' are presented as variants of 'ne', but 'nerok' shows a different stem ('ner-' vs 'ne-'), suggesting a morphological alternation not reflected in orthography. The lack of macrons in both forms reduces phonological clarity.",
+  "suggestion": "Consider marking vowel length (e.g. 'neā', 'nerōk') and note the stem alternation if relevant, or standardize to a single variant form for consistency.",
+  "confidence": 0.7,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195-197",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Non-Saru/Chitose dialects use <i lang=\"ain-Latn\">nean</i> where Saru has <i lang=\"ain-Latn\">ne</i>; eastern Shizunai has <i lang=\"ain-Latn\">ikia</i>/<i lang=\"ain-Latn\">ikirok</i>",
+  "issue": "The text states that non-Saru dialects use 'nean' where Saru has 'ne', but earlier in the table (line 162), 'nea' is listed as a variant of 'ne' in Saru dialect. This creates a contradiction: is 'nea' a Saru form or a non-Saru form?",
+  "suggestion": "Clarify whether 'nea' is a variant within Saru (as in the table) or a feature of non-Saru dialects (as in the prose), and reconcile the two statements.",
+  "confidence": 0.9,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "202-204",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"neap\" gl=\"that aforementioned thing\" />",
+  "issue": "The gloss 'that aforementioned thing' implies a deictic + anaphoric meaning, but the form 'neap' is derived from 'ne' (discourse-anaphoric) + 'pe' (thing). The gloss should reflect compositionality; 'aforementioned' may over-interpret the semantic contribution of 'ne'.",
+  "suggestion": "Revise gloss to 'that (anaphoric) thing' or 'the aforementioned thing' to better align with the morpheme 'ne' and its function.",
+  "confidence": 0.8,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "246",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">*rep mosir</i> is not",
+  "issue": "The asterisk and 'is not' are redundant in marking ungrammaticality. Standard practice is to use either the asterisk or the explanatory phrase, not both.",
+  "suggestion": "Use either '*rep mosir' or 'rep mosir is not', but not both constructions together.",
+  "confidence": 0.95,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "289-290",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "A property verb or adnoun at position 3 scopes over the entire nominal complex to its right, including a following formal noun such as <i lang=\"ain-Latn\">utar</i>:",
+  "issue": "The colon at the end introduces an example, but the following example (line 293) includes a relative clause modifier (hinak wa arki) that precedes the property verb, contradicting the claim that the property verb scopes over material to its right. The example shows a modifier at position 4, which should precede position 3.",
+  "suggestion": "Revise the claim or provide an example where the property verb is the leftmost modifier to avoid contradiction.",
+  "confidence": 0.85,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "321",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Relativizability is restricted by noun subclass (表47,",
+  "issue": "The text includes a Japanese character '表47' (meaning 'Table 47') but does not provide a corresponding table in this chapter. This may be a reference to an external source, but it is not accessible to the reader here.",
+  "suggestion": "Replace '表47' with 'Table 47 in Nakagawa 2024' or remove the reference if the table is not reproduced.",
+  "confidence": 0.9,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "353",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "sike-he kasi ta",
+  "issue": "The gloss is 'luggage-POSS top LOC', but 'sike-he' is the affiliative form of 'sike', not a possessive. The gloss 'POSS' incorrectly implies alienable possession rather than inalienable relational marking.",
+  "suggestion": "Revise gloss to 'luggage-AFF' or 'luggage-ATTR' to reflect affiliative form accurately.",
+  "confidence": 0.9,
+  "chapter": "noun-phrase-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

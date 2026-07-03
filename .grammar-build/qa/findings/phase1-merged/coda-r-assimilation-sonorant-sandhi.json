@@ -1,0 +1,1488 @@
+[
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#011",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "130",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form 'kukoy yupi' does not reflect the gemination described in the text and table (yy).",
+    "quote": "ku=kor yupi → kukoy yupi",
+    "suggestion": "Change 'kukoy yupi' to 'kukoyyupi'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Surface form 'kukoy yupi' shows 'y' gemination but the rule in table says /r/+/y/ produces 'yy' (line 127); the example 'kukoy yupi' has 'y' but no gemination indicated in romanization.",
+    "quote": "ku=kor yupi → kukoy yupi",
+    "suggestion": "Should the surface be 'kukoy yupi' or 'kukoy yupi'? Check if gemination is intended to be shown.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The output form <i lang=\"ain-Latn\">kukoy yupi</i> shows /y/ as the result of /r/+/y/ → [yy], but the romanization writes it as 'yupi' rather than 'yyupi' or 'yupi' with geminate indication. This is inconsistent with other geminate outputs like [tt], [ss], [nn], which are explicitly doubled in orthography.",
+    "quote": "<i lang=\"ain-Latn\">ku=kor yupi</i> → <i lang=\"ain-Latn\">kukoy yupi</i>",
+    "suggestion": "Consider writing the surface form as <i lang=\"ain-Latn\">kukoyyupi</i> or note the gemination explicitly to maintain consistency with other geminate representations.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#012",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "140",
+  "category": "orthography",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form 'kukon rusuy' does not reflect the gemination described in the text and table (nn).",
+    "quote": "ku=kor rusuy → kukon rusuy",
+    "suggestion": "Change 'kukon rusuy' to 'kukonrusuy'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The rule says /r/+/r/ → [nn] (line 137), but the surface form shows 'kukon rusuy' with 'n' not 'nn'. Should be 'kukon rusuy' or 'kukon rusuy' with gemination?",
+    "quote": "ku=kor rusuy → kukon rusuy",
+    "suggestion": "If surface is [kukonrusuy] with geminate [nn], the romanization should reflect that, e.g., 'kukon rusuy' or 'kukonrusuy'. Check against line 214 where it's written [kukonrusuy].",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#028",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "360",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'wen sisam' is given, but the text states that /n/ + /s/ results in [js] (written 'y'). The surface form should reflect this.",
+    "quote": "wen sisam",
+    "suggestion": "Change 'wen sisam' to 'wey sisam' or '[wey sisam]'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example is 'wen sisam' but the table header says 'example (underlying)' – should the underlying be 'wen sisam' or 'wen sisam'? Same for 'pon seta' etc.",
+    "quote": "wen sisam → [wey sisam]",
+    "suggestion": "Check consistency of column labeling; it's minor.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#031",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "384",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'yayan wakka' is given, but the text states that /n/ + /w/ results in deletion of /n/. The surface form should reflect this.",
+    "quote": "yayan wakka",
+    "suggestion": "Change 'yayan wakka' to 'yayaw wakka' or '[yayaw wakka]'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Surface form shows [yayaw wakka] with phonetic brackets; other rows (e.g., line 353-354) also use brackets but line 361 does not (just '[wey sisam]').",
+    "quote": "yayan wakka → [yayaw wakka]",
+    "suggestion": "Standardize phonetic bracket usage across the table.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The underlying form 'yayan wakka' has 'yayan' but the surface '[yayaw wakka]' shows 'yayaw' – the change from /n/ to [w] before /w/ is described as deletion of /n/ leaving only /w/, but the output has 'yayaw' with a final [w] which looks like the deleted /n/?",
+    "quote": "yayan wakka → [yayaw wakka]",
+    "suggestion": "Verify the transcription; the rule says /n/ → ∅ / _w, so underlying 'yayan wakka' should surface as [yaya wakka] (deletion of /n/) or [yayaw wakka] if something else occurs.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#027",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "352",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'pon seta' is given, but the text states that /n/ + /s/ results in [js] (written 'y'). The surface form should reflect this.",
+    "quote": "pon seta",
+    "suggestion": "Change 'pon seta' to 'poy seta' or '[poy seta]'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Surface form '[poy seta]' uses phonetic brackets but other rows in same table use romanization without brackets (e.g., '[yayaw wakka]' at line 385). Inconsistent formatting.",
+    "quote": "pon seta → [poy seta]",
+    "suggestion": "Either consistently use brackets or remove them from all rows.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#010",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "120",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form '[assuy]' is given in phonetic transcription, but the table entry for /r/+/s/ shows 'ss'. Consistency is needed.",
+    "quote": "ar suy → [assuy]",
+    "suggestion": "Change '[assuy]' to '[assuy]' or 'assuy' to match the table's format.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The surface form is given in phonetic brackets [assuy] while the table column header says 'surface' (line 57) which elsewhere shows romanization (e.g., 'tt', 'tc'); inconsistency with other rows where surface is romanized not phonetic.",
+    "quote": "ar suy → [assuy]",
+    "suggestion": "Either make the surface column consistently romanized (e.g., 'assuy') or indicate that this row uses phonetic transcription.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#005",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "69",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form 'kukot tar' does not reflect the gemination described in the text and table (tt).",
+    "quote": "ku=kor tar → kukot tar",
+    "suggestion": "Change 'kukot tar' to 'kukottar'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The surface form 'kukot tar' seems inconsistent with the rule /r/+/t/ → [tt] described in lines 66-67 and elsewhere. The expected surface would be 'kukot tar' (with [tt]) but the example shows 'kukot tar' which does not reflect gemination.",
+    "quote": "ku=kor tar → kukot tar",
+    "suggestion": "Check if the example should be 'kukot tar' or if the transcription is incomplete; possibly intended 'kukot tar' with gemination marker.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#068",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "463",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example shows mat-ikor → macikor, but this involves both /t/+/i/ → [c] and /k/ assimilation. However, the rule is described as applying without exception, yet earlier sections do not mention this rule, and it contradicts the absence of /t/+/i/ → [c] in the main rule inventory. This rule belongs in a different chapter (<Xr ch=\"rhotic-r\" />), but its presentation here as an exceptionless sandhi rule conflicts with the chapter’s focus on /r/ and /n/ coda processes.",
+    "quote": "mat-ikor → macikor",
+    "suggestion": "Move full discussion to the referenced chapter and only cite it briefly here without claiming it as part of the current sandhi system.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#065",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "369",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Parallel to the /n/+/s/ case, the /n/+/y/ example shows [poy yuk], but the rule states /n/ → [j] / _{s, y}, yielding [jj] → yy. The output [poy yuk] suggests only a single [j] glide, not a geminate [jj]. This contradicts the table's claim of [jj] → yy.",
+    "quote": "[poy yuk]",
+    "suggestion": "Either change the surface form to [poyyuk] or revise the rule to state that /n/ → [j] results in a single [j], not gemination.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#064",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "353",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table entry for /n/ + /s/ lists the surface as [js] → ys, but the example writes [poy seta], which suggests [j] is realized as [y] and merged with the following /s/ into a single [y] onset, not a geminate. However, the description states that [js] behaves as a geminate and is written as <em>y</em> in <i lang=\"ain-Latn\">poy seta</i>, implying a single [y]. This contradicts the claim that it surfaces as [js] → ys (implying a geminate or affricate-like sequence).",
+    "quote": "[poy seta]",
+    "suggestion": "Revise either the surface form to [pojs seta] or clarify that [js] simplifies to [j] (written as y) before /s/, not geminating.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#056",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "442",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Claim that 'attus' is attested 24 times in corpus is tagged ‹corpus-confirmed›, which is appropriate if based on corpus, but the source is a Discord message. This may be acceptable if the Discord message reports a corpus search, but it's unclear.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "Clarify that the Discord message is reporting corpus evidence, or change tag to ‹corpus-suggested›.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#055",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "414-415",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A Discord message is tagged ‹corpus-confirmed›, but corpus-confirmed should refer to actual corpus data, not community discussion.",
+    "quote": "‹corpus-confirmed› <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-11-23).",
+    "suggestion": "Change to ‹speculative› or provide corpus evidence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#054",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "397-398",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Claim that /m/ does not undergo n-sandhi is tagged ‹corpus-suggested› but supported only by a Discord message. This violates citation hygiene because the tag implies corpus attestation not present.",
+    "quote": "‹corpus-suggested› <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-03-06)",
+    "suggestion": "Change to ‹speculative› or provide corpus reference.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#053",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "296-297",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Claim that /m/ does not undergo velar assimilation is tagged ‹corpus-suggested› but is supported only by a Discord message. 'Corpus-suggested' requires corpus evidence, not just community discussion.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-11) ‹corpus-suggested›",
+    "suggestion": "Change to ‹speculative› or ‹original-needs-review›, or provide actual corpus examples.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#052",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "277",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Claim is tagged ‹corpus-confirmed› but the only source is a Discord conversation citing Tamura (1996). 'Corpus-confirmed' typically implies direct corpus attestation, not a secondary citation.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-16), citing Tamura (1996) ‹corpus-confirmed›",
+    "suggestion": "Either change tag to ‹speculative› or ‹original-needs-review›, or provide direct corpus reference.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#062",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "582",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Missing closing parenthesis after the description.",
+    "quote": "X → Y / Z (X undergoes change to Y in environment Z)",
+    "suggestion": "Add closing parenthesis: 'X undergoes change to Y in environment Z).'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#050",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "649",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses '/r/-sandhi' and '/n/-sandhi'. The summary table uses '/r/-sandhi' and '/n/-sandhi'. Consistency is needed.",
+    "quote": "/r/-sandhi is domain-free, /n/-sandhi is phrase-bounded",
+    "suggestion": "Change '/n/-sandhi' to 'n-sandhi' for consistency with the section title.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#049",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "640",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The formal statement uses `_w` which is standard, and the trigger class is listed as 'continuant: /w/'. This is consistent.",
+    "quote": "/n/ → ∅ / _w",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#048",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "631",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The formal statement uses `&#123;s, y&#125;` which is an HTML entity for curly braces. It should be a standard linguistic notation for a set.",
+    "quote": "/n/ → [j] / _&#123;s, y&#125;",
+    "suggestion": "Change `&#123;s, y&#125;` to `{s, y}` or `[s, y]`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#047",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "622",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The formal statement uses `_k` which is standard, but the trigger class is listed as 'velar onset /k/'. This is consistent.",
+    "quote": "/n/ → [ŋ] / _k",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#046",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "613",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The formal statement uses `&#123;p, m&#125;` which is an HTML entity for curly braces. It should be a standard linguistic notation for a set.",
+    "quote": "/n/ → [m] / _&#123;p, m&#125;",
+    "suggestion": "Change `&#123;p, m&#125;` to `{p, m}` or `[p, m]`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#045",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "598",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The trigger class for /r/-sandhi lists /s/ and /y/, but the formal statement in line 49 only mentions C[+coronal, ≠r]. This implies /s/ and /y/ are included, but it's not explicit.",
+    "quote": "coronal: /t/, /c/, /n/, /s/, /y/ (dialect-variable)",
+    "suggestion": "Ensure the formal statement accurately reflects the trigger class, or clarify the dialect variability.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#044",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "565",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'pek kari' is given, and the text states that /tk/ → [kk]. The surface form should reflect this gemination.",
+    "quote": "pek kari",
+    "suggestion": "Change 'pek kari' to 'pekkari'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#043",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "551",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'i(y)oyamokte → ioyamortte' is given for /kt/ → [tt]. The surface form 'ioyamotte' reflects the gemination.",
+    "quote": "i(y)oyamokte → ioyamortte",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#042",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "541",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'sirpopke → sirpokke' is given for /kp/ → [pp]. The surface form 'sirpokke' reflects the gemination.",
+    "quote": "sirpopke → sirpokke",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#041",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "531",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'upsor → ussor' is given for /ps/ → [ss]. The surface form 'ussor' reflects the gemination.",
+    "quote": "upsor → ussor",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#040",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "521",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'sirsesek → sissesek' is given for /rs/ → [ss]. The surface form 'sissesek' reflects the gemination.",
+    "quote": "sirsesek → sissesek",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#039",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "511",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'tupte → tutte' is given for /pt/ → [tt]. The surface form 'tutte' reflects the gemination.",
+    "quote": "tupte → tutte",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#038",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "501",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'hotke → hokke' is given for /tk/ → [kk]. The surface form 'hokke' reflects the gemination.",
+    "quote": "hotke → hokke",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#037",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "469",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reconstructed form '*ket~ket-se-pe' is given, but the rule /t/+/s/ → [tc] is mentioned for 'ketketcep'. The 'se' part does not seem to involve /t/+/s/ directly.",
+    "quote": "ketketcep (reconstructed from *ket~ket-se-pe)",
+    "suggestion": "Clarify the derivation of 'ketketcep' and how the /t/+/s/ → [tc] rule applies.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'nisatcawot' is presented as showing /t/+/s/ → [tc] assimilation. However, the sequence is /t/+/s/, not /t/+/s/. The 's' in 'sawot' is likely the trigger.",
+    "quote": "nisatcawot (from nisat-sawot)",
+    "suggestion": "Clarify the sequence that undergoes assimilation. If it's /t/+/s/, then the example is correct. If it's /t/+/s/, the explanation needs adjustment.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#036",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "460",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'ar suy' is given, and the text states that /r/+/s/ → [ss]. The surface form '[assuy]' is provided, which is consistent.",
+    "quote": "ar suy",
+    "suggestion": null,
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'retar cikap' is given, and the text states that /r/+/c/ → [t̚c]. The surface form '[retat̚cikap]' is provided, which is consistent.",
+    "quote": "retar cikap",
+    "suggestion": null,
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This rule is mentioned as applying without exception, but it is not listed in the summary table or detailed in the text as a sandhi rule.",
+    "quote": "t+i → ci",
+    "suggestion": "Either integrate this rule into the main discussion of sandhi or remove it from this section if it's treated elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#035",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "450",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'mosir ta' is given, and the text states that /r/+/t/ → [tt]. The surface form should reflect this gemination.",
+    "quote": "mosir ta",
+    "suggestion": "Change 'mosir ta' to 'mosirtta' or '[mosirtta]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#034",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "437",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'attus' is presented as a lexicalized form of /r/+/s/ → [ss]. The table in section §2 shows /r/+/s/ → ss, but the example 'ar suy' → [assuy] is given. The 'attus' example seems to be missing the intermediate 'r' in its current form.",
+    "quote": "attus",
+    "suggestion": "Clarify the derivation of 'attus' and ensure consistency with the /r/+/s/ rule.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states 'attus reflects the lexicalization of /r/+/s/ → [ss] sandhi'. However, the underlying form is reconstructed as 'at-rus'. This implies the 'r' is lost before the 's' assimilation, which is not explicitly stated as a rule.",
+    "quote": "attus",
+    "suggestion": "Clarify the intermediate steps or the specific rule that leads to 'attus' from 'at-rus'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#033",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "414",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese quote uses 'r-連声' and 'n-連声'. The chapter consistently uses '/r/-sandhi' and 'n-sandhi' or '/n/-sandhi'.",
+    "quote": "r-連声は文境界を跨げるが n-連声は跨げない",
+    "suggestion": "Translate the Japanese quote to use the same terminology as the chapter, or ensure the terminology is consistent.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#032",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "394",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'homsu' is given, and the text states that /m/ does not undergo n-sandhi. This is consistent.",
+    "quote": "homsu (from hom-su)",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#030",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "376",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'wen yupi' is given, but the text states that /n/ + /y/ results in [jj] (written 'y'). The surface form should reflect this.",
+    "quote": "wen yupi",
+    "suggestion": "Change 'wen yupi' to 'wey yupi' or '[wey yupi]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#029",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "368",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'pon yuk' is given, but the text states that /n/ + /y/ results in [jj] (written 'y'). The surface form should reflect this.",
+    "quote": "pon yuk",
+    "suggestion": "Change 'pon yuk' to 'poy yuk' or '[poy yuk]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#026",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "316",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'kampi' as a loanword from Japanese 'kami'. It also mentions 'etymological kanpi'. The assimilation rule /n/ -> [m] before /p/ would predict 'kampi' from 'kanpi'.",
+    "quote": "kampi",
+    "suggestion": "Clarify the relationship between 'kanpi', 'kampi', and the assimilation rule.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#025",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "312",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'matanpus ~ matampus' as examples of debate regarding /n/ vs /m/ before /p/. However, the /n/ assimilation rule states /n/ becomes [m] before labials. This suggests 'matanpus' should be 'matampus'.",
+    "quote": "matanpus ~ matampus",
+    "suggestion": "Clarify if 'matanpus' is an alternative underlying form or if the assimilation rule is not always applied in the orthography.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#024",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "292",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'okamkir' is given, and the text states that /m/ does not undergo velar assimilation before /k/. This is consistent.",
+    "quote": "okamkir",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#023",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "281",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'hanku' is given, but the text states that /n/ assimilates to [ŋ] before /k/. The surface form should reflect this.",
+    "quote": "hanku",
+    "suggestion": "Change 'hanku' to 'haŋku' or '[haŋku]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#022",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "273",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'hon=kor' is given, but the text states that /n/ assimilates to [ŋ] before /k/. The surface form should reflect this.",
+    "quote": "hon=kor",
+    "suggestion": "Change 'hon=kor' to 'hoŋ=kor' or '[hoŋkor]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#021",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "265",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'an=pe' is given, but the text states that /n/ assimilates to [m] before /p/. The surface form should reflect this.",
+    "quote": "an=pe",
+    "suggestion": "Change 'an=pe' to 'am=pe' or '[ampe]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#020",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "235",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the output is [tt], but the example shows 'kukottar' which implies 't' rather than 'tt'.",
+    "quote": "Productive /r/+/t/ → [tt]: the coda /r/ of kor assimilates to the following /t/ of tar, yielding [tt]. Standard orthography writes ku=kor tar.",
+    "suggestion": "Change 'kukottar' to 'kukottar' in the example or adjust the note to reflect the example.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#019",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "226",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the output is [nn], but the example shows 'kukonnispa' which implies 'n' rather than 'nn'.",
+    "quote": "Productive /r/+/n/ → [nn]: the coda /r/ of kor assimilates to the following /n/ of nispa, yielding a geminate [nn] at the word boundary. Standard orthography writes ku=kor nispa.",
+    "suggestion": "Change 'kukonnispa' to 'kukonnispā' in the example or adjust the note to reflect the example.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#018",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "214",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form '[kukonrusuy]' does not reflect the gemination described in the table (nn).",
+    "quote": "[kukonrusuy]",
+    "suggestion": "Change '[kukonrusuy]' to '[kukonrusuy]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#017",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "207",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form '[kukottar]' does not reflect the gemination described in the table (tt).",
+    "quote": "[kukottar]",
+    "suggestion": "Change '[kukottar]' to '[kukottar]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#016",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "200",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form '[retat̚cikap]' does not reflect the gemination described in the table (tc).",
+    "quote": "[retat̚cikap]",
+    "suggestion": "Change '[retat̚cikap]' to '[retatcikap]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#015",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "193",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form '[assuy]' is given in phonetic transcription, but the table entry for /r/+/s/ shows 'ss'. Consistency is needed.",
+    "quote": "[assuy]",
+    "suggestion": "Change '[assuy]' to '[assuy]' or 'assuy' to match the table's format.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#014",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "186",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form '[kukonnispa]' does not reflect the gemination described in the table (nn).",
+    "quote": "[kukonnispa]",
+    "suggestion": "Change '[kukonnispa]' to '[kukonnispā]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#013",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "157",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The formal statement uses 'n' for the dissimilated output, but the text and table (line 138) indicate [nn].",
+    "quote": "/r/ → n / _r",
+    "suggestion": "Change 'n' to 'nn' in the formal statement.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#009",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "110",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form 'kukon nima' does not reflect the gemination described in the text and table (nn).",
+    "quote": "ku=kor nima → kukon nima",
+    "suggestion": "Change 'kukon nima' to 'kukonnima'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#008",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "100",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form 'retat cikap' does not reflect the gemination described in the text and table (tc).",
+    "quote": "retar cikap → retat cikap",
+    "suggestion": "Change 'retat cikap' to 'retatcikap'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#007",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "90",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form 'kukot cise' does not reflect the gemination described in the text and table (tc).",
+    "quote": "ku=kor cise → kukot cise",
+    "suggestion": "Change 'kukot cise' to 'kukotcise'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#006",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "80",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The surface form 'at teyne' does not reflect the gemination described in the text and table (tt).",
+    "quote": "ar teyne → at teyne",
+    "suggestion": "Change 'at teyne' to 'att teyne'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#004",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "49",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The formal statement uses `≠r` which is not standard IPA or linguistic notation. It likely means 'not r'.",
+    "quote": "/r/ → C / _C[+coronal, ≠r]",
+    "suggestion": "Clarify or rephrase the notation, e.g., '/r/ → C / _C[+coronal] and C ≠ /r/'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#003",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "25",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are italicized but not tagged with `lang=\"ain-Latn\"`. This is inconsistent with other uses of `i lang=\"ain-Latn\"` in the document.",
+    "quote": "ran wa, not ram ma",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italicized Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#002",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "17",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term '/n/-sandhi' is used here, but the section title uses 'n-sandhi'. Consistency is needed.",
+    "quote": "/n/-sandhi",
+    "suggestion": "Change '/n/-sandhi' to 'n-sandhi' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#001",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'r-sandhi' is used in the text, but the chapter title and section headings use '/r/-sandhi'. Consistency is needed.",
+    "quote": "coda /r/-sandhi",
+    "suggestion": "Change 'r-sandhi' to '/r/-sandhi' for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term '/n/-sandhi' is used here, but the section title uses 'n-sandhi'. Consistency is needed.",
+    "quote": "/n/-sandhi",
+    "suggestion": "Change '/n/-sandhi' to 'n-sandhi' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#069",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "630",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The rule is listed as /n/ → [j] / _{s, y}, but in the table above (line 334), it is stated as /n/ → [j] / _{s, y}; [j] then combines with the following continuant to form a geminate. However, the surface forms in examples (e.g., [poy seta]) do not reflect gemination, contradicting the claim.",
+    "quote": "/n/-sandhi before /s/, /y/",
+    "suggestion": "Revise the rule statement to clarify that [j] + /s/ or /y/ results in a single palatal glide or affricate, not gemination.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#067",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "462",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The rule is written as 't+i → ci' without proper formatting or explanation. It should be formatted consistently with other rules (e.g., /t/ + /i/ → [ci]) and explained as an assimilation or affrication rule.",
+    "quote": "t+i → ci",
+    "suggestion": "Reformat as: /t/ + /i/ → [ci] (affrication at morpheme boundary).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#066",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "385",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The rule for /n/ + /w/ is /n/ → ∅ / _w, so the surface should be [yayawakka] (with no geminate). However, the example shows [yayaw wakka], which implies a geminate [w] or at least a lengthened onset. This contradicts the deletion rule.",
+    "quote": "[yayaw wakka]",
+    "suggestion": "Revise the surface form to [yayawakka] or clarify that /n/ deletion before /w/ does not trigger gemination.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#063",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "120",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example shows [assuy] as the surface form, but the gloss in the table (line 122) is 'once more', which does not align with the morpheme breakdown. The form <i lang=\"ain-Latn\">ar</i> means 'once' and <i lang=\"ain-Latn\">suy</i> means 'again', so the free translation should reflect 'again' or 'once again' rather than 'once more' if consistency with standard glossing is intended.",
+    "quote": "<i lang=\"ain-Latn\">ar suy</i> → [assuy]",
+    "suggestion": "Change 'once more' to 'again' or 'once again' for consistency with morpheme meanings.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#061",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "390",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table for n-sandhi (lines 337-390) is missing a row for /n/+/s/ with romanized surface? The rows only show phonetic transcription.",
+    "quote": "</tbody>",
+    "suggestion": "Add romanized surface forms for consistency with earlier tables.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#060",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "10-11",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Line 10 says /r/ is deleted and the following consonant geminates, but line 49-50 states: 'the coda rhotic is deleted before a following coronal onset, which then geminates.' This is consistent. However, line 150-151 for dissimilation says 'the coda /r/ surfaces as [n]' not deleted.",
+    "quote": "the coda /r/ of one morpheme is deleted and the following consonant geminates",
+    "suggestion": "The overview statement is consistent with the general rule; the dissimilation is an exception noted later.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#059",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "569-570",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Tagged ‹contested› but only source is Discord; 'contested' implies multiple scholarly views, which may be true from the cited work, but the tag is applied to a point based on a single Discord message.",
+    "quote": "‹contested› <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-11-17, citing Nakagawa & Fukazawa 2022: §3.3).",
+    "suggestion": "Consider whether this truly represents a contested view or is better tagged as ‹speculative›.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#058",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "471-472",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Tag is ‹speculative› which correctly reflects the unsupported nature, but the source is a Discord message; this is acceptable for speculative claims, but note that the tag is appropriate here.",
+    "quote": "‹speculative› <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2025-11-03).",
+    "suggestion": "No change needed, but ensure that the tag matches the evidence level.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#057",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "452-453",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A TTS observation is tagged ‹corpus-suggested›, but the tag should indicate that the claim is from a ML model output, not from a corpus. Consider using ‹speculative›.",
+    "quote": "‹corpus-suggested› <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026-05-20)",
+    "suggestion": "Change to ‹speculative› or ‹original-needs-review›.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "coda-r-assimilation-sonorant-sandhi~p1#051",
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "lines": "214",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for /ku=kor rusuy/ is 'I want it' but the underlying morphemes are '1SG.A=have want' – 'want' is not directly glossed in the m-line; free translation implies a first person subject which is present in the morphemes.",
+    "quote": "I want it'",
+    "suggestion": "No fix needed, but verify that 'rusuy' means 'want' and that 'ku=' is correctly glossed as '1SG.A'.",
+    "confidence": 0.3
+   }
+  ]
+ }
+]

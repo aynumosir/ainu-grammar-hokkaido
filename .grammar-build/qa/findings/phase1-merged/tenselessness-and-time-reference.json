@@ -1,0 +1,801 @@
+[
+ {
+  "id": "tenselessness-and-time-reference~p1#010",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "136",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'because' for 'kusu' does not align with the free translation '—' (implying continuation or a pause). The note also doesn't explain the function of 'kusu' in this context. 'kusu' is often glossed as 'because' or 'so', but here it seems to function more as a discourse particle or connector.",
+    "quote": "<Ex m=\"nisatta kunneywa tunas soyne=an nankor kusu\"\ng=\"tomorrow morning early go.out=4.S probably because\"\ntr=\"Tomorrow morning I will probably go out early —\"\ncite=\"nakagawa2024:311\"\ndial=\"SAR\"\nplace=\"Nakagawa ex. 468\"\nnote=\"The temporal adverb nisatta 'tomorrow' supplies the future anchor; the epistemic auxiliary nankor adds probability. The verb soyne=an 'go out' carries no future inflection.\"",
+    "suggestion": "Re-evaluate the gloss for 'kusu' or clarify its function in the note. If it's a discourse particle, a different gloss might be appropriate.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss includes 'because' for kusu but the free translation does not reflect a causal meaning; the example ends with a dash leaving kusu unaccounted for in the translation.",
+    "quote": "g=\"tomorrow morning early go.out=4.S probably because\" and tr=\"Tomorrow morning I will probably go out early —\"",
+    "suggestion": "Either adjust the free translation to include a clause that renders 'because' (e.g., '… because …') or explain kusu in the note; alternatively, if kusu is misglossed, correct the gloss.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'because' for 'kusu' is incorrect: 'kusu' is a purposive particle, glossed correctly elsewhere as 'PURP', not 'because'. The free translation treats it as purpose ('I will go out early [in order] to…'), but the gloss 'because' reverses causality. Also, 'nankor' is glossed as 'probably' but should be 'probably' as an epistemic modal, not a causal conjunction.",
+    "quote": "m=\"nisatta kunneywa tunas soyne=an nankor kusu\"\ng=\"tomorrow morning early go.out=4.S probably because\"\ntr=\"Tomorrow morning I will probably go out early —\"",
+    "suggestion": "Change 'because' in the gloss to 'PURP' and ensure 'nankor' is glossed as 'probably'. Suggested gloss: \"tomorrow morning early go.out=4.S probably PURP\".",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#023",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "216",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PURP' for 'kusu' and 'COP' for 'ne' are standard abbreviations, but the note on line 221 clarifies 'kusu ne' as 'intentive reading'. The gloss could be more explicit about the 'intentive' aspect.",
+    "quote": "g=\"one throughout go=4.S PURP COP FIN\"",
+    "suggestion": "Consider expanding 'PURP' to 'purpose' or 'intentive' in the gloss for 'kusu', or ensure the note adequately covers this.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'FIN' for 'na' is incorrect: 'na' is the sentence-final form of the copula 'ne', already glossed as 'COP'. There is no separate 'FIN' morpheme; 'na' is the inflected form of 'ne'. The gloss implies an extra grammatical element that isn't present.",
+    "quote": "g=\"one throughout go=4.S PURP COP FIN\"",
+    "suggestion": "Remove 'FIN' from the gloss. Correct gloss: \"one throughout go=4.S PURP COP\".",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#016",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "180",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'anak' and 'while' for 'kor' are not explicitly present in the morpheme breakdown (`m`). While 'anak' might function as a conjunction and 'kor' as a progressive marker, the glosses should ideally align directly with the morphemes shown.",
+    "quote": "g=\"hearth TOP exist CONJ fire burn.vigorously while exist\"",
+    "suggestion": "Clarify the glosses for 'anak' and 'kor' to ensure they directly correspond to the morphemes in the `m` attribute, or adjust the `m` attribute to include these morphemes if they are indeed present.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'an' appears twice in the m-line and is glossed as 'exist' both times, but 'an' is the existential copula, not a verb meaning 'exist' in the free sense. The gloss 'exist' is misleading; standard glossing practice uses 'EX' or 'EXIS' for existential copulas. Additionally, 'CONJ' for 'ape' is inaccurate — 'ape' is a conjunction meaning 'and', so 'and' or 'CONJ' is acceptable, but 'CONJ' alone is underspecified.",
+    "quote": "g=\"hearth TOP exist CONJ fire burn.vigorously while exist\"",
+    "suggestion": "Revise gloss to: \"hearth TOP EXIS and fire burn.vigorously while EXIS\" or use 'EX' consistently. Consider standardizing existential glosses to 'EX'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#025",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "230",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'kusu ne', 'kusu', and 'ne' are italicized, which is good. However, the word 'conjunction' and 'copula' are not italicized, which is fine, but the overall presentation could be slightly clearer if the Ainu terms were more distinctly set apart.",
+    "quote": "The segmentation of <i lang=\"ain-Latn\">kusu ne</i> as the conjunction <i lang=\"ain-Latn\">kusu</i> plus the copula <i lang=\"ain-Latn\">ne</i> — rather than a single morpheme — is followed here in preference to the one-word pedagogical spelling",
+    "suggestion": "No change strictly needed, but ensure the distinction between Ainu terms and their grammatical roles is clear.",
+    "confidence": 0.3
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kusune' is italicized, which is good. However, the preceding 'kusu ne' on line 230 was also italicized. The distinction between the two-part and one-part forms is clear, but the formatting is consistent.",
+    "quote": "rather than a single morpheme — is followed here in preference to the one-word pedagogical spelling <i lang=\"ain-Latn\">kusune</i> <Ref k=\"nakagawa2024\" p=\"435\" />",
+    "suggestion": "No change needed.",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'kusune' is presented in italics without lang-tagging, while other Ainu forms like <i lang=\"ain-Latn\">kusu ne</i> are properly tagged. This creates inconsistency in language tagging for Ainu lexical items.",
+    "quote": "kusune",
+    "suggestion": "Tag the form: <i lang=\"ain-Latn\">kusune</i>.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#006",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "104",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› appears after the citation, which is unusual. Typically, these tags follow the claim they grade.",
+    "quote": "Refsing's position is the sharpest departure: a language without the category of tense has no grammatical linear time ordering and so admits no preferred translation tense; calling the past \"more proper\" misapplies a European temporal grid to a system that lacks the category altogether <Ref k=\"refsing1986\" p=\"§14.9.1\" /> ‹contested›.",
+    "suggestion": "Move the ‹contested› tag before the citation.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› appears after a sentence citing Refsing 1986, but the table above already classifies Refsing's position as ‹contested›. However, the tag is placed outside the <Ref> element and directly in the prose, making it appear as if the claim itself (rather than the source) is tagged — but it duplicates the table's assessment without adding new evaluative context.",
+    "quote": "‹contested›",
+    "suggestion": "Remove the standalone ‹contested› tag at the end of the sentence, as the position is already marked as ‹contested› in the table and the repetition creates redundancy and formatting inconsistency.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#028",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "70",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The p attribute uses a section symbol with a section number, while other citations use plain numeric page references. This may cause inconsistency in the bibliography or output.",
+    "quote": "<Ref k=\"refsing1986\" p=\"§14.9.1\" />",
+    "suggestion": "Use a numeric page or section reference in a consistent format, e.g., p=\"14.9.1\" or p=\"§14.9.1\" but verify the expected format for section references.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#027",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "87",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The grade 'consensus' in the table row lacks guillemets, while the other rows use ‹contested› with guillemets, creating a formatting inconsistency.",
+    "quote": "<td>consensus</td>",
+    "suggestion": "Add guillemets: ‹consensus› or remove guillemets from the other rows for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#026",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'an' and 'a' are presented using the `<A>` component. 'an' is not italicized, while 'a' is. This is inconsistent formatting.",
+    "quote": "the existential <A w=\"an\" gl=\"exist\" /> feeding the progressive and resultative frames, the posture verb <A w=\"a\" gl=\"sit\" /> feeding the perfective auxiliary",
+    "suggestion": "Ensure consistent formatting for Ainu words within the `<A>` component, or apply italics manually if the component doesn't handle it.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a' is not italicized here, while it is italicized in the preceding line (257). This is inconsistent formatting.",
+    "quote": "the posture verb <A w=\"a\" gl=\"sit\" /> feeding the perfective auxiliary",
+    "suggestion": "Italicize 'a' on line 258.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#024",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "221",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kusu ne' is not italicized in the note, while it is italicized in the prose on line 205. Consistency is needed.",
+    "quote": "note=\"kusu ne supplies the intentive reading; the future temporal implication follows from the modal value. The verb paye=an 'go' carries no future inflection.\"",
+    "suggestion": "Italicize 'kusu ne' in the note.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#022",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "215",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kusu ne' within the `m` attribute is not italicized, while it is italicized in the prose and notes. Consistency is important for clarity.",
+    "quote": "m=\"an epitta paye=an kusu ne na\"",
+    "suggestion": "Italicize 'kusu ne' within the `m` attribute.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#021",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "208",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'etokoyki' is not italicized, while 'etokus' in the previous line is. This is inconsistent formatting.",
+    "quote": "<A w=\"etokoyki\" gl=\"be getting ready to\" /> marks incipient preparation",
+    "suggestion": "Italicize 'etokoyki' for consistency with 'etokus'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#020",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kusu ne' is presented using the `<A>` component and is not italicized. The preceding phrase 'prospective–intentive' is not italicized either, but it's English. Consistency in formatting Ainu forms is key.",
+    "quote": "<Xr ch=\"epistemic-irrealis-modality\">The prospective–intentive</Xr> <A w=\"kusu ne\" gl=\"intend to; be scheduled to\" /> marks the speaker's intention or a scheduled",
+    "suggestion": "Italicize 'kusu ne' for consistency with other Ainu forms.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kusu ne' is not italicized, while 'oasi' is. This is inconsistent formatting.",
+    "quote": "<A w=\"kusu ne\" gl=\"intend to; be scheduled to\" /> marks the speaker's intention or a scheduled event; <A w=\"oasi\" gl=\"surely will\" /> marks an event as certainly forthcoming;",
+    "suggestion": "Italicize 'kusu ne' for consistency with 'oasi'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'oasi' is not italicized, while 'etokus' is. This is inconsistent formatting.",
+    "quote": "<A w=\"oasi\" gl=\"surely will\" /> marks an event as certainly forthcoming; <A w=\"etokus\" gl=\"be about to\" /> indicates imminence; and",
+    "suggestion": "Italicize 'oasi' for consistency with 'etokus'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'etokus' is not italicized, while 'etokoyki' is. This is inconsistent formatting.",
+    "quote": "<A w=\"etokus\" gl=\"be about to\" /> indicates imminence; and <A w=\"etokoyki\" gl=\"be getting ready to\" /> marks incipient preparation",
+    "suggestion": "Italicize 'etokus' for consistency with 'etokoyki'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#019",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kor an' is italicized here, which is good. However, the bare verb is not specified, and if it were an Ainu form, it should also be italicized for consistency.",
+    "quote": "A past English gloss for a bare verb or a <i lang=\"ain-Latn\">kor an</i> clause renders the discourse context, not a grammatical tense feature.",
+    "suggestion": "Ensure any Ainu forms mentioned as 'bare verb' are also italicized.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#018",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "189",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'a' and 'rok' are italicized, which is good. However, 'nisa' is presented using the `<A>` component and is not italicized. 'wa isam' and 'wa okere' are italicized. This is inconsistent formatting.",
+    "quote": "The completion forms — <i lang=\"ain-Latn\">a</i>/<i lang=\"ain-Latn\">rok</i>, the recent perfect <A w=\"nisa\" gl=\"recent perfect\" />, and the pair verbs <i lang=\"ain-Latn\">wa isam</i> and <i lang=\"ain-Latn\">wa okere</i> — carry the strongest past-temporal implicature, because a",
+    "suggestion": "Ensure consistent formatting for all Ainu forms. Italicize 'nisa' or use the `<A>` component consistently for all listed forms.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'nisa' is presented using the `<A>` component and is not italicized, while 'wa isam' and 'wa okere' are italicized. This is inconsistent.",
+    "quote": "the recent perfect <A w=\"nisa\" gl=\"recent perfect\" />, and the pair verbs <i lang=\"ain-Latn\">wa isam</i> and <i lang=\"ain-Latn\">wa okere</i>",
+    "suggestion": "Italicize 'nisa' for consistency with 'wa isam' and 'wa okere'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'a' and 'rok' are not italicized here, while they are italicized in the preceding line (189).",
+    "quote": "because a completed event is canonically prior to the speech moment. Nakagawa notes the limit explicitly:",
+    "suggestion": "Italicize 'a' and 'rok' on line 191.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#017",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "185",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'an' and 'kor an' are italicized here, which is good. However, the first instance of 'an' in the `m` attribute on line 179 was not italicized.",
+    "quote": "Neither the bare an 'exist' nor the kor an progressive carries a tense morpheme; the past reading comes from the narrative reference frame. Both an tokens are zero-marked third person.\"",
+    "suggestion": "Italicize 'an' on line 179 for consistency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#015",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "179",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'an' and 'kor an' within the `m` attribute are not italicized, while they are italicized in the prose and notes. Consistency is important for clarity.",
+    "quote": "m=\"apeoy anak an hine ape ruyruy kor an\"",
+    "suggestion": "Italicize 'an' and 'kor an' within the `m` attribute.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#014",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'an' is not italicized here, while it is italicized in the note on line 185. Consistency is needed.",
+    "quote": "The example below illustrates both the progressive and the bare existential in a narrative setting where the past reading is entirely a function of discourse context.",
+    "suggestion": "Italicize 'an' on line 174.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#013",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrases 'kor an' and 'wa an' are presented using the `<A>` component. While 'kor an' is not italicized, 'wa an' is. This is inconsistent.",
+    "quote": "The progressive <A w=\"kor an\" gl=\"progressive\" /> and resultative <A w=\"wa an\" gl=\"resultative\" />",
+    "suggestion": "Ensure consistent formatting for Ainu phrases within the `<A>` component, or apply italics manually if the component doesn't handle it.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kor an' is italicized here, which is good. However, the phrase 'wa an' immediately following it is not italicized.",
+    "quote": "<i lang=\"ain-Latn\">kor an</i> presents an action as ongoing within the story frame and so reads as past from the perspective of the outside hearer; <i lang=\"ain-Latn\">wa an</i>",
+    "suggestion": "Italicize 'wa an' on line 172.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#012",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "161",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'siri' is italicized and has a language tag, which is good. However, the following Ainu phrase 'siri ne' on line 163 is not italicized.",
+    "quote": "The situational evidential <i lang=\"ain-Latn\">siri</i> anchors a visible, ongoing event in the present:",
+    "suggestion": "Italicize 'siri ne' on line 163 for consistency.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'siri ne' is not italicized here, while 'siri' on line 161 is italicized. Consistency is needed.",
+    "quote": "siri ne profiles an event the speaker observes unfolding at the moment of speech <Ref k=\"nakagawa2024\" p=\"435\" />",
+    "suggestion": "Italicize 'siri ne' on line 163.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#011",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "149",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'a' is not italicized here, while it is italicized in other similar contexts (e.g., line 115).",
+    "quote": "which places the preceding event in the background before the shift <Ref k=\"nakagawa2024\" p=\"306–307\" />",
+    "suggestion": "Italicize 'a' on line 149.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#009",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a' is not italicized here, while it is italicized in the preceding line (115) and in other similar contexts (e.g., line 149).",
+    "quote": "The full debate is developed in <Xr ch=\"perfective-anterior-a\" />",
+    "suggestion": "Italicize 'a' on line 116.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a' is not italicized here, while it is italicized in other similar contexts (e.g., line 149).",
+    "quote": "that even the form most likely to encode tense is not analysed as a tense marker by the modern descriptive consensus.",
+    "suggestion": "Italicize 'a' on line 119.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#008",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "112",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a' is italicized here, which is consistent with later usage. However, the earlier mention of 'a' on line 34 was not italicized.",
+    "quote": "marked <i lang=\"ain-Latn\">a</i> = past, unmarked = non-past.",
+    "suggestion": "Italicize 'a' on line 34 for consistency.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a' is not italicized here, while it is italicized in the following line (116) and in other similar contexts (e.g., line 149).",
+    "quote": "taking it to mark an event set in contrast to what follows rather than to locate that event in past time <Ref k=\"nakagawa2024\" p=\"306–307\" />",
+    "suggestion": "Italicize 'a' on line 115.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#007",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "108",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'a' and 'rok' are presented using the `<A>` component, which typically handles formatting. However, 'a' is not italicized here, while 'rok' is. This is inconsistent.",
+    "quote": "The auxiliary <A w=\"a\" gl=\"perfective auxiliary\" /> (plural <A w=\"rok\" gl=\"perfective auxiliary, plural\" />)",
+    "suggestion": "Ensure consistent formatting for Ainu words within the `<A>` component, or apply italics manually if the component doesn't handle it.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'past' is formatted with `<span class=\"sc\">`, which is unusual for English words in this context. Italicizing or leaving it as plain text would be more standard.",
+    "quote": "<span class=\"sc\">past</span>, which would produce a covert two-way opposition: marked <i lang=\"ain-Latn\">a</i> = past, unmarked = non-past.",
+    "suggestion": "Remove the `<span class=\"sc\">` tag from 'past'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#005",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "63",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese form '-te iru' is presented in a span with a language tag, which is good. However, the chapter generally uses italics for Ainu forms and does not consistently apply language tags or italics to non-Ainu forms mentioned in passing (e.g., 'Mandarin Chinese' on line 21).",
+    "quote": "stative predicates translate as Japanese <span lang=\"ja\">-te iru</span> (present progressive)",
+    "suggestion": "Consider if consistent formatting for non-Ainu terms is necessary, or if the current approach is sufficient.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#004",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "60",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the Kindaichi citation, Chiri (1942) is cited via Refsing (1986), making it an indirect citation.",
+    "quote": "Chiri (1942, via <Ref k=\"refsing1986\" />)",
+    "suggestion": "No change needed, but be aware of the indirect citation.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#003",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "51",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi (1931) is indirect, relying on Refsing (1986). While this is common, it's worth noting that the primary source is not directly consulted here.",
+    "quote": "Kindaichi (1931, via <Ref k=\"refsing1986\" />)",
+    "suggestion": "No change needed, but be aware of the indirect citation.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#002",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "34",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a' is presented in a standard Romanization, but the chapter later uses italics for Ainu words (e.g., line 111, 115, 119, 149, 161, 169, 172, 189, 195). Consistency would be preferred.",
+    "quote": "Whether Ainu is best described as radically tenseless, as implicitly past, or as encoding a covert two-way tense opposition through the auxiliary <A w=\"a\" gl=\"perfective auxiliary\" /> was",
+    "suggestion": "Italicize the Ainu word 'a' here for consistency with later usage.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#001",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "11",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2012) is given for two distinct claims, but the page range '491, 493' suggests these might be on separate pages. It's unclear if both claims are supported by both pages or if the citation should be split.",
+    "quote": "Bugaeva draws the same conclusion twice: \"there are no pure tense markers\" and the verb \"may be marked for aspect, modality, and evidentiality\" <Ref k=\"bugaeva2012\" p=\"491, 493\" />.",
+    "suggestion": "Clarify if both claims are supported by both pages, or split the citation if they are on different pages.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Takahashi (2022) is a single year, which might indicate a whole work citation. If the claim is specific, a page number would be more precise. The same applies to Yoshikawa (2022).",
+    "quote": "Takahashi adds that even aspect and evidentiality are not obligatory grammatical categories in Ainu <Ref k=\"takahashi2022\" />; Yoshikawa reports that a clear perfective–imperfective opposition is absent both lexically and grammatically <Ref k=\"yoshikawa2022\" />.",
+    "suggestion": "If possible, add page numbers to the Takahashi (2022) and Yoshikawa (2022) citations for greater precision.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#033",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "261",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Again, 'paren' is used instead of 'p' for Bybee 1994, creating inconsistency with other citations that use 'p'.",
+    "quote": "<Ref k=\"bybee1994\" paren />",
+    "suggestion": "Standardize to 'p=\"...\"' with actual pages or remove if not needed.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#032",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "247",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 243: 'paren' is not a valid attribute for <Ref>. Page locator is missing or incorrectly formatted.",
+    "quote": "<Ref k=\"comrie1976\" paren />",
+    "suggestion": "Use 'p=\"...\"' with appropriate page numbers or remove if not applicable.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#031",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "243",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation uses 'paren' instead of a page number, but this is not a standard attribute. The correct attribute is 'p=\"...\"' or possibly a note. 'paren' is not defined in the markup specification provided.",
+    "quote": "<Ref k=\"bybee1994\" paren />",
+    "suggestion": "Replace 'paren' with 'p=\"...\"' and supply the relevant page range, or remove if no locator is intended.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#030",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "139",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The cite attribute uses a page number (311), but the example is attributed to Nakagawa ex. 468 in the 'place' field. There is a mismatch between the page locator and the example number, which may confuse verification.",
+    "quote": "cite=\"nakagawa2024:311\"",
+    "suggestion": "Ensure consistency: either use cite=\"nakagawa2024:468\" if ex. 468 is the source, or update the 'place' field to reflect the page number if 311 is correct.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tenselessness-and-time-reference~p1#029",
+  "chapter": "tenselessness-and-time-reference",
+  "lines": "117",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› is appended after a citation cluster that includes Nakagawa and Yoshikawa, but the table above does not list Nakagawa or Yoshikawa as holding a contested view — instead, they are cited under the 'consensus' position. This creates a contradiction: the same scholars are used to support both a contested claim and the consensus.",
+    "quote": "‹contested›",
+    "suggestion": "Re-evaluate whether ‹contested› should apply here; if the *analysis of a* is contested, clarify that the *form's interpretation* is contested despite the scholars contributing to consensus on broader tenselessness. Alternatively, use a different grade like ‹corpus-suggested› or rephrase to avoid conflicting with the table.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

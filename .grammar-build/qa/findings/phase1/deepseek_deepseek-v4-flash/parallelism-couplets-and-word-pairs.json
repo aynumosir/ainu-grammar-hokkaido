@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "81-82, 230",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "g=\"two shining person\" tr=\"two shining ones\" (lines 81-82) vs <td>two shining ones // three shining ones</td> (line 230)",
+  "issue": "The same phrase 'tu imeru kur // re imeru kur' is glossed differently: the Ex tag gives a literal gloss with singular 'person', while the table uses the free translation 'two shining ones // three shining ones'. This inconsistency will confuse readers.",
+  "suggestion": "Harmonize the table with the literal gloss (e.g. 'two shining person (persons)' or change the Ex gloss to match the free translation, but keep consistent). The table likely intends the free translation, so changing the Ex gloss to 'two shining person' and adding a note about number may suffice, or the table can show the literal gloss. Consistency is key.",
+  "confidence": 0.95,
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "81-82",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"two shining person\" tr=\"two shining ones\"",
+  "issue": "The gloss assigns singular 'person' to 'kur', while the free translation uses plural 'ones'. In context 'kur' likely denotes person-like figures, but the number mismatch between gloss and translation is potentially misleading.",
+  "suggestion": "Either gloss 'person' (with number unmarked) and accept the translation 'ones', or adjust the gloss to 'shining person(s)' or 'person (unmarked for number)' to clarify.",
+  "confidence": 0.7,
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "175-177",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "directly attested in the primary sources read for this chapter",
+  "issue": "The phrase 'read for this chapter' is a production-oriented meta-comment rather than reader-facing language. It references the compiling process instead of the evidence itself.",
+  "suggestion": "Rephrase to 'directly attested in the sources cited for this section' or simply 'attested in the following sources'.",
+  "confidence": 0.85,
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "331-332",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "no source read for this grammar addresses the diachrony or areality of the couplet device directly",
+  "issue": "Again, the phrase 'read for this grammar' is process-oriented and reads as an internal note. It belongs to the production team's review, not to the argument.",
+  "suggestion": "Rephrase to 'The available sources on Hokkaido Ainu do not address the diachrony or areality of the couplet device directly' or simply 'No sources known to the present authors address…'.",
+  "confidence": 0.8,
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "245-246",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "(nukopoli, 2026, <em>asserted</em>; corroborates Endō 2022: §3, characteristic 4)",
+  "issue": "The word 'asserted' is an editorial tag that belongs in the production pipeline. It is unusual in a published grammar to mark a source explicitly as 'asserted'; either the claim is accepted or it is not. The phrasing suggests uncertainty about the reliability of the Discord source, but an evidence-grade tag would be more standard.",
+  "suggestion": "Either remove 'asserted' and let the citation stand (with an appropriate epistemic tag if needed) or rephrase as '(nukopoli, 2026, personal communication) which corroborates Endō 2022: §3, characteristic 4'.",
+  "confidence": 0.65,
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "246",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "<em>asserted</em>",
+  "issue": "The italicized 'asserted' within the citation appears to be an internal editorial marking; it is not typical of published reference works and may confuse readers.",
+  "suggestion": "Consider removing 'asserted' and instead use an evidence-grade tag like ‹original-needs-review› if the team has not yet verified the claim, or simply cite without such a label.",
+  "confidence": 0.6,
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "176",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "the primary sources read for this chapter",
+  "issue": "Another instance of the meta-commentary pattern 'read for this chapter'. While less obtrusive than the full phrase, it still subtly addresses the production workflow.",
+  "suggestion": "Change to 'the primary sources consulted for this section' or simply 'the following sources'.",
+  "confidence": 0.7,
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "81-82, 91-92",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "g=\"two shining person\" vs g=\"three shining person\" (with tr 'two shining ones' / 'three shining ones')",
+  "issue": "The gloss uses singular 'person' but the free translation uses plural 'ones'. In the table (line 230) the gloss is given as 'two shining ones // three shining ones', adding inconsistency. While this may be intentional (English singular for unmarked Ainu 'kur'), the mismatch in number between gloss and translation is at least confusing.",
+  "suggestion": "Either gloss 'person(s)' or add a note that 'kur' is unmarked for number and the translation reflects English count conventions.",
+  "confidence": 0.5,
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

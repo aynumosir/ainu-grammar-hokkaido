@@ -1,0 +1,26 @@
+[
+ {
+  "lines": "37",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Sakhalin ‹SA›",
+  "issue": "Dialect tag uses guillemets while all other rows in the table use parentheses (e.g. 'Shizunai (SHI)', 'Saru (SAR)'). This is a formatting inconsistency.",
+  "suggestion": "Change to 'Sakhalin (SA)' to match the other entries.",
+  "confidence": 0.95,
+  "chapter": "written-sources-grammars-dictionaries",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "112–117",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "dictionary",
+  "issue": "Tamura 1996 is listed as 'dictionary' without '(reported)' in the table, but the prose (line 221) explicitly says it is 'not held locally in the project corpus', which by the chapter's own definition (line 283) qualifies it as a reported source. Other dictionaries with similar status (Nakagawa 1995, Kayano 1996) are marked '(reported)'.",
+  "suggestion": "Add '(reported)' to the Type cell for Tamura 1996, or clarify in the prose why it is not considered a reported source despite not being held locally.",
+  "confidence": 0.85,
+  "chapter": "written-sources-grammars-dictionaries",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "30-34, 123-125",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "standard verbal negation: somo V … For an ordinary verb the bare frame somo V is grammatical but, by Satō’s report, used less often than the ka somo ki periphrasis",
+  "issue": "The table labels somo V as 'standard verbal negation' but the prose states that the periphrastic ka somo ki frame is used more often. The term 'standard' is applied to a pattern that is reported as less frequent, which contradicts the descriptive hierarchy within the chapter.",
+  "suggestion": "Either revise the table label to 'simple verbal negation' or adjust the prose to clarify the sense of 'standard' (e.g., 'default/neutral' rather than 'most frequent').",
+  "confidence": 0.8,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "166, 235, 390",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "by the read grammars … the read grammars describe lexicalized meanings … The read Hokkaido grammars state no such etymology",
+  "issue": "The phrase 'read grammars' is used repeatedly, referring to the authors’ reading process rather than to 'published grammars' or 'the consulted literature'. This is a minor pipeline-register choice that could be standardized for the reader.",
+  "suggestion": "Replace 'read grammars' with 'published grammars', 'the grammars consulted', or simply 'the literature'.",
+  "confidence": 0.9,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "347-356",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "The restriction is uncontroversial as a fact ‹consensus› … remains open in the literature ‹contested›",
+  "issue": "The claim tagged as ‹consensus› is supported only by Takahashi (2016) and Bugaeva (2022) – two sources, but not a broad survey. The ‹consensus› tag may be inflated if a more comprehensive citation base is expected for such a label. However, the chapter does not provide any source that disputes the restriction, so it may still be acceptable. Flagged for review.",
+  "suggestion": "Either add further supporting citations for the consensus claim or downgrade the tag to a less definite grade such as ‹corpus-confirmed› if data suffice.",
+  "confidence": 0.5,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

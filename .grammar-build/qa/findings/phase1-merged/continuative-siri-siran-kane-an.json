@@ -1,0 +1,473 @@
+[
+ {
+  "id": "continuative-siri-siran-kane-an~p1#013",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "249, 250, 255",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The morphemic line ends with 'ainne' but the gloss line has no corresponding gloss for 'ainne'. The translation 'while' suggests a conjunction, which is omitted from the gloss.",
+    "quote": "m=\"a=tura wa cepkoyki=an kan an pe a=ki kan oka=an ainne\"\ng=\"4.A=accompany CONJ catch.fish=4.S CONJ exist NMLZ 4.A=do CONJ exist.PL=4.S CONJ\"",
+    "suggestion": "Add a gloss for 'ainne', e.g. 'CONJ' (or 'while', following the translation), and adjust spacing so that the final gloss token is not fused with 'exist.PL=4.S'. For example: '… CONJ exist.PL=4.S CONJ' becomes '… CONJ exist.PL=4.S while'.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for 'kan an' is 'CONJ exist', but 'kan' is a conjunction and 'an' is the existential. This is consistent with other examples, but the glossing of 'kan' as 'CONJ' is underspecified — it should be 'CONJ' only if it functions as a conjunction, which it does. However, the gloss 'CONJ exist' is acceptable if 'kan' is the conjunction and 'an' the existential.",
+    "quote": "a=tura wa cepkoyki=an kan an pe a=ki kan oka=an ainne",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#007",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "275",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that Nakagawa traces a connection between 'tek an' and the Saru auxiliary 'tek' is marked as speculative. The citation is to Nakagawa, but it's unclear if Nakagawa himself labels this connection as speculative, or if this is the author's interpretation of Nakagawa's findings.",
+    "quote": "‹speculative›.",
+    "suggestion": "Clarify if the 'speculative' nature is explicitly stated by Nakagawa or is an interpretation by the author.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation 'Nakagawa 2024: 448–449' appears in prose and is not formatted with a <Ref> element, breaking citation consistency.",
+    "quote": "Nakagawa 2024: 448–449",
+    "suggestion": "Replace with <Ref k=\"nakagawa2024\" p=\"448–449\" />.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#017",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "259",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ exist' for 'kan an' treats 'kan' as a conjunction, but in the text it is described as a connector in a pair-verb construction. The gloss should reflect that 'kan' is a conjunction linking the lexical verb to 'an', which it does. No actual error, but potential inconsistency in how 'kan' is glossed across dialects.",
+    "quote": "poro cise as kan an na",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#016",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "211",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'exist' is used for both instances of 'kane an', but 'kane' is a conjunction and 'an' is the existential verb. The gloss should reflect the conjunction 'CONJ' and the existential 'exist' separately, as in other examples.",
+    "quote": "asir sapa tuye kane an hine mina kane an wa",
+    "suggestion": "Change 'CONJ exist' to 'CONJ exist' (already correct), but ensure 'kane' is glossed as the conjunction, not part of the existential. The current gloss is acceptable if 'kane' is understood as the conjunction, but consistency with other sections should be checked.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#015",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "127",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'appearance-exist' combines 'sir-an' into one gloss, but the morphological segmentation implies 'sir' (appearance) and 'an' (exist) are separate. This obscures the structure and conflicts with the analysis that 'sir-an' is a compound of noun + existential.",
+    "quote": "supuya at kor sir-an ru-we ne anan",
+    "suggestion": "Change 'appearance-exist' to 'appearance exist' in the gloss to reflect the morphological structure.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#014",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "108",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'sir-an', but the gloss 'appearance-exist' treats it as a single unit, while the analysis in the text treats 'sir' as the noun and '-an' as the existential verb. The gloss should reflect this separation to align with the morphological analysis.",
+    "quote": "nea kur arpa kor sir-an",
+    "suggestion": "Split the gloss into 'appearance exist' to match the morphological segmentation 'sir-an' as noun + existential verb.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#012",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "157, 158, 160, 161",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The slash pair 'siran / siri ne' in line 157 equates siran (sir-an, appearance-based continuative) with siri ne (direct-perception evidential), which are distinct forms. Later (lines 160–161) the chapter correctly distinguishes siri ne from siri an (indirect visual evidential). The intended reference in line 157 is almost certainly siri an, not siri ne.",
+    "quote": "The present chapter treats siran / siri ne as a form that licenses a continuative reading … The direct-perception evidential siri ne and the indirect visual siri an receive their full treatment…",
+    "suggestion": "Replace 'siri ne' with 'siri an' in line 157.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#010",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "329",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that different dialect communities have travelled different distances along a single grammaticalization trajectory is marked as 'corpus-suggested'. However, there are no specific citations attached to this claim, making it difficult to verify the corpus evidence supporting it.",
+    "quote": "‹corpus-suggested›.",
+    "suggestion": "Add specific citations to support the 'corpus-suggested' claim.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#009",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "312",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `paren` is unusual. It's unclear if this is a specific notation for Bybee's work or a placeholder that needs to be resolved.",
+    "quote": "<Ref k=\"bybee1994\" paren />.",
+    "suggestion": "Resolve the `paren` notation in the citation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#008",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "301",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The question about the restriction reflecting a residual connection between 'kor an' and the visual-evidential domain is marked as speculative. The citation is to Takahashi, but it's unclear if Takahashi raises this as a speculative question or if it's an authorial speculation based on Takahashi's work.",
+    "quote": "‹speculative›.",
+    "suggestion": "Clarify if the speculative nature is explicitly stated by Takahashi or is an interpretation by the author.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#006",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "255",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'packages the first kan an clause' is a bit informal. 'Marks' or 'nominalizes' might be more precise.",
+    "quote": "The nominalizer pe packages the first kan an clause; a=ki kan oka=an continues the chain with a plural subject marked by oka=an.",
+    "suggestion": "The nominalizer pe marks the first kan an clause; a=ki kan oka=an continues the chain with a plural subject marked by oka=an.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#005",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "201",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that 'kane an' functions as the plain imperfective in Shizunai and Samani, replacing both 'kor an' and 'wa an' without selectional constraint, is marked as 'contested'. However, the citation only points to Nakagawa and Sato, which might not fully represent the contested nature or the specific sources that contest this.",
+    "quote": "‹contested›.",
+    "suggestion": "Ensure the 'contested' status is adequately supported by the cited sources or add further citations if necessary.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#004",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "182",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation appears to be attached to the claim that 'kane an' merges progressive and resultative values into a single durative continuative, which is also supported by Nakagawa and Yoshikawa. It's unclear if Sato specifically supports this merged value or the aspect-neutral character mentioned later.",
+    "quote": "; <Ref k=\"sato2006\" p=\"84–85\" />",
+    "suggestion": "Verify if Sato specifically supports the merged value or the aspect-neutral character.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#002",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "133",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'embedded before' is used again. While grammatically correct, it could be more varied.",
+    "quote": "The visual-state predicate sir-an is embedded before the inferential ruwe ne, which repackages the proposition as a fact the speaker now recognizes with surprise. The stacking confirms that sir-an and ruwe ne are separate predicates with a fixed scope order: aspect/visual-state inside, inferential outside.",
+    "suggestion": "The visual-state predicate sir-an precedes the inferential ruwe ne, which repackages the proposition as a fact the speaker now recognizes with surprise. The stacking confirms that sir-an and ruwe ne are separate predicates with a fixed scope order: aspect/visual-state inside, inferential outside.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#001",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "116",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'embedded before' is slightly awkward. Consider 'frequently appears before' or 'is frequently found before'.",
+    "quote": "In attested usage, <i lang=\"ain-Latn\">sir-an</i> frequently appears embedded before",
+    "suggestion": "frequently appears before",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#023",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "194",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation 'Nakagawa 2024: 309–310 table 74' appears in prose but is not formatted as a <Ref> element, while other citations are. This is inconsistent citation hygiene.",
+    "quote": "Nakagawa 2024: 309–310 table 74",
+    "suggestion": "Replace with <Ref k=\"nakagawa2024\" p=\"309–310\" /> and reference the table in prose if needed.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#022",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "62",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same spacing issue — 'tek an' should be consistently spaced like other pair-verb forms.",
+    "quote": "<i lang=\"ain-Latn\">tek an</i>",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#021",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "56",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as above — spacing in 'kan an' should be consistent with 'kane an' and 'kor an'. It is, but the point is to confirm uniformity.",
+    "quote": "<i lang=\"ain-Latn\">kan an</i>",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#020",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "44",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form is written with a space in 'kane an' in the table and text, but morphologically it is a pair-verb construction where 'kane' is a conjunction and 'an' the existential. The spacing is consistent, but should be checked for uniformity with other forms like 'kor an'.",
+    "quote": "<i lang=\"ain-Latn\">kane an</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#019",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "38",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the table, 'siran' is given without hyphen, while 'sir-an' is in parentheses. This may reflect a formatting inconsistency — either both should be hyphenated or not. The text elsewhere uses 'sir-an' as the segmented form.",
+    "quote": "<i lang=\"ain-Latn\">siran</i> (<i lang=\"ain-Latn\">sir-an</i>)",
+    "suggestion": "Standardize to 'sir-an' in all technical contexts, or use 'siran' as the orthographic form consistently.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#018",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "11",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form is written with a hyphen in 'sir-an' in the text and table, but in the examples it appears as 'sir-an' (correctly). However, in the table (line 38), it is written as <i>siran</i> without hyphen, which may reflect orthographic inconsistency.",
+    "quote": "sir-an",
+    "suggestion": "Ensure consistent hyphenation: use 'sir-an' throughout or 'siran' if that is the established form. The text uses both.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#011",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "8, 15, 38, 42, 56, 62",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The introductory text lists four constructions, but the table immediately below has five rows (siran, kane an, hine an, kan an, tek an), treating kan an and tek an as separate forms. This creates a mismatch between the prose count and the table’s form count.",
+    "quote": "Four constructions complement the progressive kor an … the Tokachi–Ishikari pair kan an / tek an.",
+    "suggestion": "Either revise the prose to read 'five constructions' or consolidate the table rows for kan an and tek an into one row with a note that they are dialect variants.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "continuative-siri-siran-kane-an~p1#003",
+  "chapter": "continuative-siri-siran-kane-an",
+  "lines": "170",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The preceding text states that the chapter treats 'siran / siri ne' as primarily in the evidential paradigm (line 159), but this sentence claims 'sir-an' sits at the intersection of the two systems (aspect and evidential). This creates a slight contradiction regarding the primary classification of 'sir-an'.",
+    "quote": "and the form sits at the intersection of the two systems ‹contested›.",
+    "suggestion": "null",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

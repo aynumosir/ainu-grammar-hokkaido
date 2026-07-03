@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"340, 347\" />; <Ref k=\"ijas2023\" />",
+  "issue": "The citation for Ijäs (2023) lacks a page number or locator, while Nakagawa is given specific pages. This creates inconsistent citation support for a claim about form collision that both sources are meant to support.",
+  "suggestion": "Add a page number or locator to the Ijäs citation if available, or clarify that the reference is general.",
+  "confidence": 0.95,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "23",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Whole-corpus token counts place <i lang=\"ain-Latn\">kor</i> at approximately 29,300 occurrences",
+  "issue": "The text states there are approximately 29,300 occurrences of <i>kor</i>, but earlier in line 8 it is described as having three distinct uses (conjunctive particle, possession verb, conditional reading), and this total is later called an 'upper bound' due to conflation. However, no source is cited for the 29,300 figure itself, despite the claim being presented as corpus-based.",
+  "suggestion": "Add a citation (e.g., from Nakagawa or a corpus database) that directly supports the 29,300 count.",
+  "confidence": 0.9,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "106-114",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"silver tray place silver small.knife sheath be.with CONJ surface sparkle CONJ descend CONJ\"",
+  "issue": "The gloss contains 'CONJ' three times, but only two instances of <i>kor</i> appear in the morpheme string. The third 'CONJ' is unexplained and not aligned with any morpheme, creating a mismatch between the number of glosses and morphemes.",
+  "suggestion": "Revise the gloss to have only two 'CONJ' entries, aligned with the two instances of <i>kor</i> in the example.",
+  "confidence": 0.98,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "126-133",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"1SG.S=dance CONJ 1SG.O=look.at\"",
+  "issue": "The gloss '1SG.O=look.at' implies a transitive verb with a first-person object, but the free translation 's/he looked at me' indicates a third-person subject. The subject of the second clause is not marked in the gloss, creating a person/number inconsistency.",
+  "suggestion": "Revise the gloss to include the subject of the second clause, e.g., '3SG.S=1SG.O=look.at' or clarify the zero-marked subject.",
+  "confidence": 0.9,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "176-183",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"4.POSS=father NEG sleep CONJ pray.to.god CONJ exist\"",
+  "issue": "The morpheme string includes 'a=onaha', which is glossed as '4.POSS=father', but 'a=' is a genitive/possessive prefix, not a person prefix. The gloss should reflect possession rather than person marking.",
+  "suggestion": "Change '4.POSS=father' to 'father.4.POSS' or '4.POSS.father' to reflect standard Leipzig formatting and accurate grammatical relation.",
+  "confidence": 0.85,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "244-251",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"1SG.S=weep PFV 1SG.S=weep PFV CONJ 1SG.S=recall CONJ 1SG.S=weep only 1SG.A=do CONJ 1SG.S=exist\"",
+  "issue": "The morpheme string 'ku=cis a ku=cis a ayne' is glossed with two 'PFV' markers, but 'a' is a reduplication marker, not a perfective. The gloss incorrectly assigns 'PFV' to 'a', which contradicts standard Ainu analysis.",
+  "suggestion": "Replace 'PFV' with 'REDUP' or 'PFV.REDUP' to accurately reflect the function of 'a' in durative-reduplication.",
+  "confidence": 0.95,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "277-280",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"342, 347–348\" />; <Ref k=\"refsing1986\" p=\"248–250\" />",
+  "issue": "The citation for Refsing (1986) is attached to the entire table, but the table includes data on Horobetsu/Kushiro forms for which Refsing may not be a source, given her focus on Shizunai. This risks over-attribution.",
+  "suggestion": "Clarify which cells in the table are supported by which source, or add a note specifying the scope of each reference.",
+  "confidence": 0.8,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "348-353",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord 2024 <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+  "issue": "The epistemic tag ‹contested› is applied to a community-sourced hypothesis, but the tag appears after the citation, potentially implying that the entire claim is contested rather than just the hypothesis. This creates ambiguity in epistemic grading.",
+  "suggestion": "Move the ‹contested› tag to precede the claim it modifies, or enclose it in parentheses directly after the hypothesis.",
+  "confidence": 0.85,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "335",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"korka\" gl=\"but, although (adversative)\" />",
+  "issue": "The gloss includes parentheses, while other similar entries (e.g., <A w=\"sekor\" gl=\"(quotative complementizer) ~と\" />) place the parenthetical before the main gloss. Inconsistent formatting affects visual parsing.",
+  "suggestion": "Standardize the placement of parentheticals in glosses, e.g., '(adversative) but, although'.",
+  "confidence": 0.7,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

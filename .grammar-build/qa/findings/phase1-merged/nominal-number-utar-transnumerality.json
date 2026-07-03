@@ -1,0 +1,687 @@
+[
+ {
+  "id": "nominal-number-utar-transnumerality~p1#023",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "188-195",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The m-line contains 'hekattar' as a single fused word, but the gloss splits it into two morphemes 'child+ASS' without a corresponding morpheme boundary in m. Elsewhere, hyphens in m match hyphens in gloss.",
+    "quote": "m=\"inne hekattar arki\" g=\"many child-ASS come.PL\"",
+    "suggestion": "Either segment m as 'hekaci-utar' (with a note on contraction) or change the gloss to a single word like 'children' to reflect lexicalization.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'many' is not a morpheme in the Ainu example; it appears in the free translation but is not accounted for in the morpheme-by-morpheme gloss. The form hekattar already encodes 'children', and arki is the plural verb. 'Many' is an interpretive addition.",
+    "quote": "g=\"many child-ASS come.PL\"",
+    "suggestion": "Either remove 'many' from the gloss or indicate it as interpretive (e.g., with parentheses or a note).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#018",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "304",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community analysis is placed after the explanation of the plural stem tracking plurality of the object, but before the discussion of agreement thresholds and S/O alignment. It might be more logical to place it immediately after the explanation of the plural stem tracking object plurality.",
+    "quote": "object, following the absolutive-aligned pattern:\n        <i lang=\"ain-Latn\">rayke</i> (singular object) / <i lang=\"ain-Latn\">ronnu</i> (plural\n        object) <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023) ‹corpus-confirmed›. These",
+    "suggestion": "Consider moving the citation to immediately follow the explanation of the plural stem tracking object plurality.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about transitive verb number being corpus-confirmed relies only on a Discord attribution (nukopoli, 2023) without a published source. The epistemic tag is too strong for the citation provided.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "Either provide a published reference or downgrade the tag to ‹corpus-suggested›.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#002",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "31",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The corpus statistics are presented without a citation, but the claim is marked as 'corpus-confirmed'.",
+    "quote": "In the 209,878-sentence Hokkaido corpus <i lang=\"ain-Latn\">utar</i> records 8,050 tokens",
+    "suggestion": "Add a citation for the corpus statistics.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about corpus size (209,878 sentences) and token frequency (8,050 tokens of utar, rank 30) lacks a citation. While Nakagawa 2024 is cited nearby, it is not explicitly linked to these statistics. The evidence grade ‹corpus-confirmed› suggests corpus support, but the specific source of these numbers is not attributed.",
+    "quote": "In the 209,878-sentence Hokkaido corpus <i lang=\"ain-Latn\">utar</i> records 8,050 tokens\n\t\t(rank 30 among distinct types)",
+    "suggestion": "Attach a citation (e.g., Ref k=\"nakagawa2024\" p=\"X\" or a corpus database Ref) directly to the sentence containing the corpus statistics.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#031",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "255",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'group' for utari does not reflect its status as the affiliative form of utar. It should be glossed as 'relatives-AFF' or 'kin-AFF' to maintain consistency with the analysis in the section.",
+    "quote": "g=\"young.man group COP even.though\"",
+    "suggestion": "Revise gloss to 'young.man kin-AFF COP even.though' or similar.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#030",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "220",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'have' corresponds to kor, but the morpheme utari is glossed as 'kin', while in the text it is described as the affiliative form of utar 'relatives'. The gloss should reflect the derivational morphology, e.g., 'relatives-AFF' or 'kin-AFF', to distinguish it from the formal noun utar.",
+    "quote": "g=\"1SG.A=have kin\"",
+    "suggestion": "Revise gloss to '1SG.A=have relative-AFF' or similar to reflect the affiliative morphology.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#029",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "167",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'come.PL' implies plural subject agreement, but the free translation 'the bad little birds that had come from somewhere' uses past perfect, not present plural. The gloss should reflect the tense/aspect if marked. Also, 'ASS' is used again without clear reflection in the translation.",
+    "quote": "g=\"where from come.PL bad bird-DIM ASS\"",
+    "suggestion": "Revise gloss to reflect past tense if possible (e.g., 'come.PST.PL') and ensure tr aligns with the verbal morphology. Consider clarifying the role of utar in the associative reading.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#028",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "146",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'ASS' for utar is used again, but the free translation is '(one's) furs', which does not convey the associative meaning. If utar here is the formal noun pluralizer, the translation should reflect collective or plural semantics, not just possession. Moreover, the gloss 'ASS' may not be appropriate if utar is functioning as a plural marker on an inanimate noun.",
+    "quote": "g=\"4.A=have fur ASS\"",
+    "suggestion": "Revise tr to include plural/collective meaning, e.g., \"(one's) furs (as a collection)\" or \"their furs\", and consider whether 'PL' or 'COLL' is a better gloss than 'ASS' in this context.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#027",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "102",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'ASS' for utar is inconsistent with the free translation 'small birds'. 'ASS' (associative) implies a group centered on a referent, not a simple plural. The translation should reflect the associative meaning, e.g., 'a group of small birds' or 'the small birds (as a collective)'.",
+    "quote": "g=\"bird-DIM ASS\"",
+    "suggestion": "Revise tr to better reflect the associative semantics, e.g., \"a group of small birds\" or \"the small birds (as a collective)\".",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#025",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "8",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of macrons in Ainu orthography: 'suma' appears without a macron, but standard scholarly romanization of Ainu typically includes macrons for long vowels. If the form is /suma/ (short vowels), this is fine; if it is /sūma/, it should be marked accordingly. Other forms like 'cise' and 'kamuy' also lack macrons, suggesting a systematic choice, but this should be confirmed for consistency.",
+    "quote": "<A w=\"suma\" gl=\"stone\" />",
+    "suggestion": "Verify and standardize macron usage across all Ainu lexical items in the chapter (e.g., suma vs. sūma, cep vs. cēp, etc.) based on the project's orthographic policy.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as line 8: potential macron omission in 'cep', 'cise', 'kamuy'. If these are intended to be short vowels, no change is needed; otherwise, they should be marked (e.g., cēp, cīse, kamūy).",
+    "quote": "<A w=\"cep\" gl=\"fish\" />, <A w=\"cise\" gl=\"house\" />, and\n\t\t<A w=\"kamuy\" gl=\"spirit, deity\" />",
+    "suggestion": "Ensure consistent orthographic treatment of vowel length across all lexical entries in the chapter.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#024",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "265",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence starts with a lowercase 'utar' after a period, which is inconsistent with standard English capitalization. However, this is a minor style issue common in linguistic writing.",
+    "quote": "utar ni nare 'become utar with someone' carries the meaning 'to marry (into a family)'",
+    "suggestion": "Consider capitalizing 'Utar' or restructuring the sentence so the Ainu phrase does not begin the sentence.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#022",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "338",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community analysis is placed after the mention of a disputed etymology, but before the end of the paragraph. It might be more logical to place it immediately after the claim it supports.",
+    "quote": "grounds\n        <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024) ‹contested›.",
+    "suggestion": "Consider moving the citation to immediately follow the claim it supports.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#021",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "330",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for Sakaguchi 2024 and Baek 2021 are placed after the explanation of Sakaguchi's distinction, but before the statement that Sakhalin number remains optional. It might be more logical to place them after the explanation of the distinction.",
+    "quote": "<i lang=\"ain-Latn\">-(a)hcin</i>\n        marks a homogeneous plural (all members standing in the same possessive relation),\n        while <i lang=\"ain-Latn\">-utara</i> may mark homogeneous or approximative plurality\n        and extends to personal names <Ref k=\"sakaguchi2024\" p=\"12\" />; <Ref k=\"baek2021\"\n            p=\"73\"\n        />.",
+    "suggestion": "Consider moving the citations to immediately follow Sakaguchi's distinction.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#020",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "325",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for Murasaki 1979 and Nakagawa 2024 are placed after the mention of <i lang=\"ain-Latn\">-utara</i> as a separate suffix, but before the explanation of Sakaguchi's distinction between the suffixes. It might be more logical to place them after the explanation.",
+    "quote": "alongside\n        <i lang=\"ain-Latn\">-utara</i> as a separate suffix\n        <Ref k=\"murasaki1979\" p=\"85\" />; <Ref k=\"nakagawa2024\" p=\"259–261\" />.",
+    "suggestion": "Consider moving the citations to follow Sakaguchi's distinction.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#019",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "313",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community analysis is placed after the explanation of why <i lang=\"ain-Latn\">utar</i> adds meaning rather than enforcing agreement, but before the discussion of the Sakhalin contrast. It might be more logical to place it immediately after the claim it supports.",
+    "quote": "obligatory number agreement\n        <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024) ‹contested›.",
+    "suggestion": "Consider moving the citation to immediately follow the claim it supports.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#017",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "300",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community analysis is placed after the explanation of how uncountable referents behave with 'many', but before the discussion of transitive verbs. It might be more logical to place it immediately after the explanation of uncountable referents.",
+    "quote": "even alongside\n        'many' <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024; attributed to Satō)\n        ‹corpus-suggested›. On transitive verbs the plural stem tracks plurality of the",
+    "suggestion": "Consider moving the citation to immediately follow the explanation of uncountable referents.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#016",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "291",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi 1936 is placed at the end of the paragraph, after the explanation of how mass-like nouns govern plural verb forms. It might be more logical to place it immediately after the claim it supports.",
+    "quote": "rather than the noun <Ref k=\"kindaichi1936\" p=\"31\" />.",
+    "suggestion": "Consider moving the citation to immediately follow the claim it supports.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#015",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "271",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community analysis is placed after the explanation of kinship compounds, but before the cross-reference. It might be more logical to place it immediately after the explanation of kinship compounds.",
+    "quote": "collectively <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026)\n        ‹corpus-suggested›. For kinship-term morphology in detail see",
+    "suggestion": "Consider moving the citation to immediately follow the explanation of kinship compounds.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#014",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "267",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community analysis is placed after the explanation of the idiom <i lang=\"ain-Latn\">utar ni nare</i>, but before the discussion of kinship compounds. It might be more logical to place it immediately after the idiom.",
+    "quote": "kin group <Ref k=\"aynucorporadiscord\" /> (thegodofneet, 2025) ‹corpus-suggested›.\n        Kinship compounds on <i lang=\"ain-Latn\">-utari</i> can also name a pair rather than a",
+    "suggestion": "Consider moving the citation to immediately follow the idiom.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#013",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "247",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community analysis is placed after the claim that the affiliative form is nearly obligatory, but before the explanation of why this aligns with the general behavior of the affiliative form. It might be more logical to place it after the explanation.",
+    "quote": "almost always surfaces possessed\n        <Ref k=\"aynucorporadiscord\" /> (thegodofneet, 2025) ‹contested›. This aligns with the",
+    "suggestion": "Consider moving the citation to follow the explanation of the general behavior of the affiliative form.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 is placed at the end of the paragraph, after the explanation of the affiliative form's behavior. It might be more logical to place it after the specific claim it supports.",
+    "quote": "entity belongs\n        <Ref k=\"nakagawa2024\" p=\"251–252\" />.",
+    "suggestion": "Consider moving the citation to immediately follow the claim it supports.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#012",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "233",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 is placed after the explanation of the third-person referential scope of <i lang=\"ain-Latn\">k=utari</i>, but before the discussion of <i lang=\"ain-Latn\">anutari</i>. It might be more logical to associate it with the preceding statement.",
+    "quote": "not an inclusive 'you all' <Ref k=\"nakagawa2024\" p=\"251\" />. The\n        <i lang=\"ain-Latn\">-utari</i> that enters Tokachi <i lang=\"ain-Latn\">anutari</i> 'we\n        (inclusive)' combined with a fourth-person verb edges toward pronominal function —",
+    "suggestion": "Consider moving the citation to immediately follow the explanation of the third-person referential scope.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 is placed after the characterization of <i lang=\"ain-Latn\">anutari</i>, but before the mention of its pronominal function and the cross-reference. It might be more logical to place it after the characterization.",
+    "quote": "Nakagawa characterises the form as 'halfway between pronoun and common noun'\n        <Ref k=\"nakagawa2024\" p=\"252\" /> — but the full treatment of pronominal",
+    "suggestion": "Consider moving the citation to immediately follow 'common noun'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#011",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "217",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 is placed after the mention of the affiliative form surfacing under possession, but before the example illustrating this. It might be more logical to place it after the example.",
+    "quote": "affiliative form <A w=\"utari\" /> (long form <i lang=\"ain-Latn\">utarihi</i>), which surfaces under\n        possession <Ref k=\"nakagawa2024\" p=\"250–252\" />:",
+    "suggestion": "Consider moving the citation to follow the example.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#010",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "203",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi 1936 is placed after the statement that reduplication is not a productive synchronic plural strategy, but before the examples of lexicalized reduplication. It might be more logical to place it after the examples.",
+    "quote": "These are lexicalized; reduplication is not a\n        productive synchronic plural strategy.\n        <Ref k=\"kindaichi1936\" p=\"31\" />.",
+    "suggestion": "Consider moving the citation to follow the list of lexicalized reduplicated forms.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#009",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "194",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'Kindaichi & Chiri §37' which is a different citation format than the `<Ref>` tags used elsewhere in the chapter. It also doesn't include the specific reference key.",
+    "quote": "note=\"hekattar is the lexicalized fusion of hekaci + utar. The suppletive plural verb arki cross-indexes a plural subject. Kindaichi & Chiri §37.\"",
+    "suggestion": "Standardize the citation format within the note to match the chapter's `<Ref>` tag usage, e.g., 'Kindaichi 1936: §37'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#008",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "185",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi 1936 is placed after the explanation of 'hekattar utar' for additional collective emphasis, but it might be more logical to place it immediately after the mention of this phenomenon.",
+    "quote": "additional collective emphasis <Ref k=\"kindaichi1936\" p=\"31\" />.",
+    "suggestion": "Consider moving the citation to immediately follow 'additional collective emphasis'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#007",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "181",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi 1936 is placed after the definition of 'hekattar' as the fixed plural of 'child', but before the citation for Nakagawa 2024. It might be more logical to group the citations together.",
+    "quote": "contracts to <A w=\"hekattar\" gl=\"children\" />, which serves as the fixed plural of\n        'child' <Ref k=\"kindaichi1936\" p=\"31\" />; <Ref k=\"nakagawa2024\" p=\"259\" />.",
+    "suggestion": "Group the citations together, e.g., '...of 'child' (<Ref k=\"kindaichi1936\" p=\"31\" />; <Ref k=\"nakagawa2024\" p=\"259\" />).'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#006",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "161",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim 'neither side of this debate rests on a large attested base' is marked as 'contested' but lacks a specific citation to support this meta-commentary on the debate's evidential basis.",
+    "quote": "that neither side of this debate rests on a large attested base ‹contested›.",
+    "suggestion": "Add a citation to support the claim about the lack of a large attested base for the debate.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#005",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "152",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note uses 'Nakagawa 2024: 259 ex. 334' which is a slightly different citation format than the `<Ref>` tags used elsewhere in the chapter (e.g., `<Ref k=\"nakagawa2024\" p=\"259\" />`).",
+    "quote": "note=\"utar on the inanimate host rus 'fur/pelt' — corpus evidence against the animacy restriction. Corresponds to Nakagawa 2024: 259 ex. 334.\"",
+    "suggestion": "Standardize the citation format within the note to match the chapter's `<Ref>` tag usage, e.g., 'Nakagawa 2024: 259, ex. 334'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#004",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "141",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 is placed after the explanation of the animist conception, but before the statement about the Saru corpus attesting inanimate <i lang=\"ain-Latn\">utar</i>. It might be more logical to associate the citation with the latter statement.",
+    "quote": "every being carries a spirit <Ref k=\"nakagawa2024\" p=\"259\" />. The Saru corpus attests",
+    "suggestion": "Consider moving the citation to follow the mention of the Saru corpus attestation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#003",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "130,136",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The examples of disallowed inanimate plurals (<i lang=\"ain-Latn\">suma utar</i>, <i lang=\"ain-Latn\">ni utar</i>) are listed before the citation that supports this claim.",
+    "quote": "Kindaichi and Chiri state that <i lang=\"ain-Latn\">utar</i>\n        applies to persons and animals (<i lang=\"ain-Latn\">kamuy utar</i>,\n        <i lang=\"ain-Latn\">ainu utar</i>, <i lang=\"ain-Latn\">seta utar</i> 'dogs',\n        <i lang=\"ain-Latn\">cikap utar</i> 'birds'), and that\n        <i lang=\"ain-Latn\">suma utar</i> 'stones' and <i lang=\"ain-Latn\">ni utar</i> 'trees'\n        are disallowed unless the referent is personified\n        <Ref k=\"kindaichi1936\" p=\"30–31\" />.",
+    "suggestion": "Move the citation to immediately follow the mention of these examples.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#001",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "11,136",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi 1936 is placed after the definition of 'transnumeral' but before the explanation of the pattern. It might be more logical to place it after the explanation of the pattern.",
+    "quote": "<Ref k=\"kindaichi1936\" p=\"30\" />. In Corbett's typology this is the <em>transnumeral</em>\n        pattern: the noun is underspecified for number rather than syncretically encoding a",
+    "suggestion": "Move the citation to after the word 'pattern'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#032",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "30",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'plural; relatives, people' combines the formal noun function and the common noun meaning, but later sections distinguish these as separate uses. This risks conflating the two functions early in the chapter.",
+    "quote": "the\n\t\t<Xr ch=\"formal-defective-nouns\">formal noun</Xr>\n\t\t<A w=\"utar\" gl=\"plural; relatives, people\" />",
+    "suggestion": "Revise the gloss to reflect only the formal noun meaning here (e.g., 'PL') and defer the common noun meaning to the later section.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nominal-number-utar-transnumerality~p1#026",
+  "chapter": "nominal-number-utar-transnumerality",
+  "lines": "84",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'plural / people' in the table for utar conflates two distinct meanings: the formal noun function (plural marker) and the common noun meaning ('people'). This could mislead readers into thinking both meanings are simultaneously expressed. The formal noun use is grammatical, while 'people' is lexical. The table should distinguish these functions or clarify that this row covers both uses.",
+    "quote": "<td>plural / people</td>",
+    "suggestion": "Revise the table header or add a footnote to clarify that utar has dual functions: formal noun (pluralizer) and common noun ('people, relatives').",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

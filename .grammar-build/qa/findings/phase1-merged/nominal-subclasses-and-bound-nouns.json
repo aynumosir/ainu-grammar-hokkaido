@@ -1,0 +1,1455 @@
+[
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#020",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "424",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'between' is given as `uturu(hu) / uturke(he)`. The parenthetical inclusion of `-hu` and `-he` might be inconsistent, and the slash indicates multiple forms. This needs clearer representation.",
+    "quote": "uturu(hu) / uturke(he)",
+    "suggestion": "Clarify the representation of these long forms. If both are valid, consider listing them separately or using a more explicit notation."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Two variant long forms are given for 'utur'. This is fine, but the slash '/' is used inconsistently with other entries that use parentheses only. No orthographic error.",
+    "quote": "<i lang=\"ain-Latn\">uturu(hu)</i> / <i lang=\"ain-Latn\">uturke(he)</i>",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Mixed use of parentheses and slashes for variant forms. 'uturu(hu)' uses parentheses, while 'uturke(he)' does the same, but the slash suggests alternative full forms. Inconsistent with other rows.",
+    "quote": "<i lang=\"ain-Latn\">uturu(hu)</i> / <i lang=\"ain-Latn\">uturke(he)</i>",
+    "suggestion": "Use either 'uturu-hu / utur-ke-he' or clarify that these are competing derivational patterns.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#011",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "370",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'above (in contact)' is given as `kasi(ke)(he)`. The parenthetical inclusion of `-ke` and `-he` might be inconsistent with other entries in the table, which often show the base long form.",
+    "quote": "kasi(ke)(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-ke` and `-he` are optional or variant suffixes, consider a more consistent notation."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The long form of 'ka' is given as 'kasi(ke)(he)' with parentheses indicating optional parts. But in the example at line 508, the long form is used as 'kasi' (without the optional parts). The parentheses are fine for the table, but the example uses 'kasi' which is consistent. No issue.",
+    "quote": "<i lang=\"ain-Latn\">kasi(ke)(he)</i>",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent morpheme bracketing: uses parentheses to indicate optional suffixes, but elsewhere optional or variant forms are listed with slashes or in separate columns. This differs from the format in row 424 and 430, which use slashes.",
+    "quote": "<i lang=\"ain-Latn\">kasi(ke)(he)</i>",
+    "suggestion": "Standardize to either 'kasi-ke-he / kasi-ke / kasi' or use a note; avoid mixing parentheses and slashes.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#025",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "514",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions `ka-si-ke[-he]` as the long form of `ka`, but the table lists it as `kasi(ke)(he)`. The gloss for `as=an` is `stand=4.S`, which is consistent with the note's explanation of the fourth-person suffix.",
+    "quote": "note=\"The long form kasi (< ka-si-ke[-he]) of Type-1 locative ka heads the clause alone; the basic form *ka could not appear here without a preceding antecedent NP. The fourth-person suffix =an carries narrative-first-person reference.\"",
+    "suggestion": "Ensure consistency between the note's representation of the long form and the table's representation."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '4.S' for the suffix =an is glossed as '4.S' (fourth person subject), but the note says 'the fourth-person suffix =an carries narrative-first-person reference.' The free translation uses 'I' (first person singular), but the gloss says '4.S' (fourth person). In Ainu, the fourth person can function as a narrative first person, but the gloss should reflect the actual morpheme value. The gloss '4.S' is correct for the form, but the free translation 'I' is misleading if the fourth person is not specifically first person. This is a minor mismatch between gloss and translation.",
+    "quote": "m=\"kasi ta as=an\" g=\"above LOC stand=4.S\" tr=\"I stood on top of it.\"",
+    "suggestion": "Either change the free translation to 'One stood on top of it' or add a note explaining that the fourth person here functions as narrative first person. Alternatively, gloss as '4.S' and keep the translation, but add a note that the fourth person is used for narrative first person.",
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'as=an' is glossed as 'stand=4.S', but in the free translation it is interpreted as 'I stood'. The 4th person is not consistently glossed as 1st person narrative elsewhere without note. This creates a person/number inconsistency between gloss and translation.",
+    "quote": "g=\"above LOC stand=4.S\"",
+    "suggestion": "Revise gloss to 'stand=4.S(NARR-1)' or add a note explaining the narrative use of 4th person as 1st person.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#001",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "47",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'locative noun, basic form' indicates it cannot stand alone as an argument, but then specifies '✗ (Type 1) / ○ (Type 2)'. This implies Type 2 *can* stand alone, contradicting the general statement for locative nouns and the specific description of Type 1 in paragraph 311.",
+    "quote": "✗ (Type 1) / ○ (Type 2)",
+    "suggestion": "Clarify the behavior of Type 2 basic forms in this column, or adjust the general statement in paragraph 311 to reflect this distinction."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at line 47 says Type-1 basic forms cannot stand alone as an argument (✗) and Type-2 can (○). But the prose at lines 311-315 says 'Type-1 locative nouns require an immediately preceding antecedent NP' and 'only the long form can head a clause independently', which is consistent. However, the table at line 47 also says locative nouns 'can head a relative clause?' is ✗ for both basic and long forms, but the prose at lines 311-315 says the long form 'can head a clause independently' — this is about main clauses, not relative clauses, so it's not a direct contradiction. The inconsistency is that the table shows Type-2 basic forms as ○ for standing alone, but the prose at lines 353-355 says Type-2 nouns 'can stand in the basic form without naming a reference point', which matches. No clear internal contradiction here upon re-examination.",
+    "quote": "✗ (Type 1) / ○ (Type 2)",
+    "suggestion": null,
+    "confidence": 0.2
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at line 47 says Type-1 basic forms cannot stand alone (✗) and Type-2 can (○). The prose at lines 311-315 says Type-1 basic forms cannot stand alone, which matches. But the prose says 'only the long form can head a clause independently' — this implies the long form CAN stand alone, which matches the table at line 55 (○ for long form). No contradiction.",
+    "quote": "✗ (Type 1) / ○ (Type 2)  ...  Type-1 locative nouns require an immediately preceding antecedent NP (the spatial reference point). Without it, *ka wa ran 'came down from above' with bare ka is ungrammatical; only the long form can head a clause independently",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at line 47 says locative noun basic form has 'stands alone as argument?' as '✗ (Type 1) / ○ (Type 2)'. But the table at line 55 says locative noun long form has '○'. The prose at lines 311-315 says Type-1 basic forms cannot stand alone, and the long form can. This is consistent. However, the table at line 47 does not distinguish Type-1 vs Type-2 for the long form row (line 55), which is fine. No contradiction.",
+    "quote": "✗ (Type 1) / ○ (Type 2)  ...  ○",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#024",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "448",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'middle' is given as `noskie / noskike(he)`. The slash indicates multiple forms, and the parenthetical inclusion of `-ke` and `-he` might be inconsistent.",
+    "quote": "noskie / noskike(he)",
+    "suggestion": "Clarify the representation of these long forms. If both are valid, consider listing them separately or using a more explicit notation."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The long form 'noskie' is given without parentheses, while 'noskike(he)' has parentheses. This is inconsistent formatting. Either both should have parentheses or neither.",
+    "quote": "<i lang=\"ain-Latn\">noskie / noskike(he)</i>",
+    "suggestion": "Change to 'noskie / noskike(he)' or 'noski(e) / noskike(he)' for consistency.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#021",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "430",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'inside, at the location of' is given as `oro / orke(he)`. The slash indicates multiple forms, and the parenthetical inclusion of `-ke` and `-he` might be inconsistent.",
+    "quote": "oro / orke(he)",
+    "suggestion": "Clarify the representation of these long forms. If both are valid, consider listing them separately or using a more explicit notation."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent representation: 'oro' vs 'orke(he)' — if 'oro' is the long form, it should be clearly distinguished from the suffixed variant. Parentheses again used inconsistently.",
+    "quote": "<i lang=\"ain-Latn\">oro</i> / <i lang=\"ain-Latn\">orke(he)</i>",
+    "suggestion": "List as 'oro / or-ke-he' or explain the variation in a note.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#041",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "538-544",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'CONJ' for 'akusu' is correct (conjunctive/conditional). The gloss '4.S' for '=an' is correct. The free translation 'When I went to the mountain' matches the gloss. No mismatch.",
+    "quote": "m=\"kim ta arpa=an akusu\" g=\"mountain.ward LOC go=4.S CONJ\" tr=\"When I went to the mountain…\"",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'arpa=an' is glossed as 'go=4.S', but the free translation uses 'I went', again equating 4th person with 1st person without explanation. Also, 'akusu' is glossed as 'CONJ' but typically means 'when' or 'after', not just 'conjunction'.",
+    "quote": "g=\"mountain.ward LOC go=4.S CONJ\"",
+    "suggestion": "Revise to 'go=4.S(NARR-1)' and gloss 'akusu' as 'when' or 'after'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#039",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "518-524",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'ALLAT' for 'un', but the note says 'The allative particle un follows'. The gloss 'ALLAT' is an abbreviation for 'allative', which is fine. However, the gloss 'enter' for 'tup' and 'while' for 'kor' and 'exist' for 'oka' are not standard Leipzig glossing. 'tup' is glossed as 'enter' but the Ainu word 'tup' means 'to enter' (verb). 'kor' is glossed as 'while' but 'kor' is a converb marker meaning 'while/and'. 'oka' is glossed as 'exist' but 'oka' is a verb meaning 'to be/exist'. The free translation 'It has come to settle beside me' adds 'has come' and 'settle' which are not in the gloss. The gloss 'enter while exist' does not match 'has come to settle'. This is a significant mismatch between gloss and translation.",
+    "quote": "m=\"en=sam un tup kor oka\" g=\"1SG.O=beside ALLAT enter while exist\" tr=\"It has come to settle beside me.\"",
+    "suggestion": "Either adjust the gloss to reflect the translation (e.g., 'enter CONJ exist' or 'enter while be') or adjust the translation to match the gloss (e.g., 'It entered and is beside me').",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Ainu string is 'en=sam un tup kor oka', but the gloss 'ALLAT' corresponds to 'un' (allative), yet 'tup kor oka' is not glossed. The gloss omits 'tup' (enter), 'kor' (while), and 'oka' (exist), making it incomplete.",
+    "quote": "g=\"1SG.O=beside ALLAT enter while exist\"",
+    "suggestion": "Revise gloss to include all morphemes: e.g., '1SG.O=beside ALLAT enter while exist'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#030",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "591",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that proper nouns do not appear in affiliative forms. However, the example `i=kamuy rusihi` (line 179) uses `rusihi`, which appears to be an affiliative form of `rus` (pelt), and `kamuy` is a divine name, often treated as a proper noun. This suggests a potential contradiction or a need for clarification on what constitutes a 'proper noun' in this context.",
+    "quote": "Hokkaido personal and place names do not appear in affiliative forms under normal conditions, unlike many common nouns",
+    "suggestion": "Clarify if `kamuy` is considered a proper noun in this context, or provide an alternative example that clearly distinguishes proper and common nouns regarding affiliative forms."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says proper nouns 'do not appear in affiliative forms under normal conditions', but earlier at line 579-582 it says 'Proper nouns form no grammatically distinct class in Hokkaido Ainu: they are an open subset of common nouns, distinguished by reference type rather than by any morphological marker'. If proper nouns are a subset of common nouns, then they should be able to take affiliative forms in principle, but the prose says they don't in practice. This is not a contradiction, just a practical observation.",
+    "quote": "One property that distinguishes proper nouns from common nouns in practice: Hokkaido personal and place names do not appear in affiliative forms under normal conditions, unlike many common nouns. Sakhalin Ainu permits affiliative forms of personal names — ku=Harumihi 'my Harumi' is attested — but this pattern is absent from the Hokkaido data.",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#007",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "176",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `i=ku=sikihi` is presented in the text, but the gloss for `ku=sikihi` is not provided in the text itself, only in the note. The gloss for `ku=sikihi` is given as '1SG.POSS=eye-AFF' in the previous example (line 159, though that was for 'hand').",
+    "quote": "i=ku=sikihi",
+    "suggestion": "Provide a gloss for `ku=sikihi` directly in the text or ensure consistency with the gloss for `ku=tekehe`."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `i=kamuy rus` is presented, but the gloss for `kamuy rus` is not provided. The note describes it as 'bear-pelt in general'.",
+    "quote": "i=kamuy rus",
+    "suggestion": "Provide a gloss for `kamuy rus`."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `i=kamuy rusihi` is presented, but the gloss for `kamuy rusihi` is not provided. The note describes it as 'that specific bear's pelt'.",
+    "quote": "i=kamuy rusihi",
+    "suggestion": "Provide a gloss for `kamuy rusihi`."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example claims the concept form is <i>sik</i>, but in the earlier table and standard Ainu morphology, the concept form of 'eye' is typically <i>sik</i> or <i>sikir</i>, while the affiliative is <i>sikihi</i>. However, the gloss in the example <Ex m=\"ku=teke-he\" g=\"1SG.A=hand-POSS\" tr=\"my hand\" /> uses -he as POSS, but here -hi is used without glossing. The morpheme -hi is not glossed in any example, creating a mismatch between form and glossing practice.",
+    "quote": "<i lang=\"ain-Latn\">ku=sikihi</i> 'my eye' — concept form <i lang=\"ain-Latn\">sik</i>, affiliative <i lang=\"ain-Latn\">sikihi</i>",
+    "suggestion": "Ensure consistent glossing of -hi as POSS or specify its status; or add a note that -hi is the affiliative suffix variant after certain vowels.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#002",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "66",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table indicates that pronouns can function as ⟨place⟩ 'some (via formal noun hi)'. However, the description of formal nouns in paragraph 617 states they *nominalize* a preceding clause or element, implying they are not standalone locative expressions themselves.",
+    "quote": "some (via formal noun hi)",
+    "suggestion": "Re-evaluate the claim that pronouns function as ⟨place⟩ 'via formal noun hi', or clarify how this interaction works."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at line 66 says pronouns function as ⟨place⟩ 'some (via formal noun hi)'. But the table at line 74 says formal nouns function as ⟨place⟩ 'some (hi, uske, usi…)'. The pronoun row says pronouns can function as place via the formal noun 'hi', but 'hi' is a formal noun, not a pronoun. This is confusing: it suggests that pronouns can be used as place expressions by combining with 'hi', but 'hi' is a separate word. The table should clarify that pronouns themselves are not ⟨place⟩, but they can be used in place expressions with formal nouns.",
+    "quote": "some (via formal noun <i lang=\"ain-Latn\">hi</i>)",
+    "suggestion": "Rephrase the pronoun row's ⟨place⟩ column to 'no (but can combine with formal noun hi)' or 'indirectly via formal noun hi'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#049",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "13",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sentence claims that crossing two diagnostics with two additional properties (person affix type and ⟨place⟩ status) yields a six-row grid, but the resulting table has six rows based on noun subclasses, not derived by crossing four properties. The logic of 'crossing' does not clearly lead to six rows, and the explanation is inconsistent with the actual structure of the table.",
+    "quote": "Crossing these two properties against the type of person affix the form takes and its status as a locative expression (⟨place⟩) yields a six-row grid.",
+    "suggestion": "Revise to clarify that the six-row grid results from classifying noun types by the combination of autonomy, relativizability, person marking, and ⟨place⟩ function, rather than implying a mechanical crossing of properties.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#054",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "624",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent with earlier use of <A w=\"utar\" gl=\"plural marker / people / family\" /> in line 242, where 'family' is included in the gloss.",
+    "quote": "<A w=\"utar\" gl=\"plural marker / people\" />",
+    "suggestion": "Unify gloss to 'plural marker / people / family' in both instances.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#053",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "243",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Parentheses around (hi) suggest optional morpheme, but in other contexts, the affiliative suffix is consistently written with hyphens or explicitly. This informal notation breaks formatting consistency.",
+    "quote": "utari(hi)",
+    "suggestion": "Use <i lang=\"ain-Latn\">utari-hi</i> or note that the suffix is variably realized.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#052",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation and formatting: 'huraha' is presented without hyphen, but affiliative forms are typically analyzed as stem + -ha. Other entries use hyphens in morphemic representation (e.g., teke-he).",
+    "quote": "<A w=\"hura\" gl=\"smell\" /> (affiliative <i lang=\"ain-Latn\">huraha</i>)",
+    "suggestion": "Write as <i lang=\"ain-Latn\">hura-ha</i> for consistency with morphemic formatting elsewhere.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#051",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "74",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of ellipsis: uses '…' (horizontal ellipsis) instead of three periods '.' as per standard typographic practice in English prose. Also, missing space before the closing parenthesis.",
+    "quote": "some (<i lang=\"ain-Latn\">hi</i>, <i lang=\"ain-Latn\">uske</i>, <i lang=\"ain-Latn\">usi</i>…)",
+    "suggestion": "Change to 'some (<i lang=\"ain-Latn\">hi</i>, <i lang=\"ain-Latn\">uske</i>, <i lang=\"ain-Latn\">usi</i>...)' with proper spacing.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#050",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "47",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of 'Type 1' and 'Type 2' — elsewhere these are capitalized and spaced the same (e.g., 'Type-1', 'Type-2' with hyphens). Here it uses parentheses and inconsistent spacing.",
+    "quote": "✗ (Type 1) / ○ (Type 2)",
+    "suggestion": "Change to '✗ (Type-1) / ○ (Type-2)' for consistency with the rest of the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#048",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "560-565",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'cross-dialectal elicitation' is a bit technical. It could be simplified to 'cross-dialectal study' or 'elicitation across dialects'.",
+    "quote": "This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation.",
+    "suggestion": "Change to 'cross-dialectal study' or 'elicitation across dialects'.",
+    "confidence": 0.2
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'cross-dialectal elicitation' is a bit technical. It could be simplified to 'cross-dialectal study' or 'elicitation across dialects'.",
+    "quote": "This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation.",
+    "suggestion": "Change to 'cross-dialectal study' or 'elicitation across dialects'.",
+    "confidence": 0.2
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'cross-dialectal elicitation' is a bit technical. It could be simplified to 'cross-dialectal study' or 'elicitation across dialects'.",
+    "quote": "This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation.",
+    "suggestion": "Change to 'cross-dialectal study' or 'elicitation across dialects'.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#046",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "246-249",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'extending Nakagawa's account of the same ambiguity' is awkward. It could be rephrased as 'extending Nakagawa's (2024: 251–252) account of the same ambiguity'.",
+    "quote": "Community discussion has noted that, because it is hard to conceive of 'companions not belonging to anyone', this common noun surfaces almost exclusively in its affiliative form as 'N's family/companions' (thegodofneet, 2025-09-17) ‹contested›, extending Nakagawa's account of the same ambiguity at Nakagawa 2024: 251–252.",
+    "suggestion": "Rephrase to 'extending Nakagawa's (2024: 251–252) account of the same ambiguity'.",
+    "confidence": 0.4
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'extending Nakagawa's account of the same ambiguity' is awkward. It could be rephrased as 'extending Nakagawa's (2024: 251–252) account of the same ambiguity'.",
+    "quote": "Community discussion has noted that, because it is hard to conceive of 'companions not belonging to anyone', this common noun surfaces almost exclusively in its affiliative form as 'N's family/companions' (thegodofneet, 2025-09-17) ‹contested›, extending Nakagawa's account of the same ambiguity at Nakagawa 2024: 251–252.",
+    "suggestion": "Rephrase to 'extending Nakagawa's (2024: 251–252) account of the same ambiguity'.",
+    "confidence": 0.4
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'extending Nakagawa's account of the same ambiguity' is awkward. It could be rephrased as 'extending Nakagawa's (2024: 251–252) account of the same ambiguity'.",
+    "quote": "Community discussion has noted that, because it is hard to conceive of 'companions not belonging to anyone', this common noun surfaces almost exclusively in its affiliative form as 'N's family/companions' (thegodofneet, 2025-09-17) ‹contested›, extending Nakagawa's account of the same ambiguity at Nakagawa 2024: 251–252.",
+    "suggestion": "Rephrase to 'extending Nakagawa's (2024: 251–252) account of the same ambiguity'.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#045",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "222-235",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The parentheses around the example are not closed properly: there is an opening parenthesis before 'kamuy rusihi' but no closing parenthesis before the ‹contested› tag. The closing parenthesis should be after 'compound)'.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228) proposed a specificity condition: N₂ appears in the affiliative form only when N₁ is specific and individuated (kamuy rusihi 'that specific bear's pelt' vs kamuy rus 'bear-pelt in general', which is almost a compound) ‹contested›.",
+    "suggestion": "Move the closing parenthesis to after 'compound' and before the ‹contested› tag: '...which is almost a compound) ‹contested›.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence has an opening parenthesis but no closing parenthesis before the ‹contested› tag. The closing parenthesis should be after 'compound'.",
+    "quote": "N₂ appears in the affiliative form only when N₁ is specific and individuated (kamuy rusihi 'that specific bear's pelt' vs kamuy rus 'bear-pelt in general', which is almost a compound) ‹contested›.",
+    "suggestion": "Add closing parenthesis after 'compound': '...which is almost a compound) ‹contested›.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'kamuy rus' is given as 'bear-pelt in general', but the gloss for 'rus' is not provided. The reader might not know that 'rus' means 'pelt/fur'. This is a minor clarity issue.",
+    "quote": "N₂ appears in the affiliative form only when N₁ is specific and individuated (kamuy rusihi 'that specific bear's pelt' vs kamuy rus 'bear-pelt in general', which is almost a compound) ‹contested›.",
+    "suggestion": "Add a gloss for 'rus' in parentheses or in the text.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'aynu opitta honihi kor' is given without a gloss or morpheme breakdown. The reader might not understand the structure. This is a minor clarity issue.",
+    "quote": "Satō objects that the affiliative does appear with non-specific possessors — aynu opitta honihi kor 'all humans have a belly' — which would be excluded by a strict specificity condition ‹contested›.",
+    "suggestion": "Add a gloss for the example, e.g., 'aynu opitta honihi kor' with gloss 'human all belly have'.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence is long and could be broken into two for clarity. No grammatical error.",
+    "quote": "Nakagawa's 2024 account resolves the tension by placing the conditioning in morphosyntax rather than semantics: whenever a person prefix is present, the affiliative form is required; specificity then emerges as a tendency rather than a categorical trigger, because inalienable possession of an individuated entity is simply the most common context for person-prefix use",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The parentheses around the example are not closed properly. The opening parenthesis before 'kamuy rusihi' is not closed before the ‹contested› tag. The closing parenthesis should be after 'compound'.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228) proposed a specificity condition: N₂ appears in the affiliative form only when N₁ is specific and individuated (kamuy rusihi 'that specific bear's pelt' vs kamuy rus 'bear-pelt in general', which is almost a compound) ‹contested›.",
+    "suggestion": "Add closing parenthesis after 'compound': '...which is almost a compound) ‹contested›.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The em dashes around the example are used correctly. No issue.",
+    "quote": "Satō objects that the affiliative does appear with non-specific possessors — aynu opitta honihi kor 'all humans have a belly' — which would be excluded by a strict specificity condition ‹contested›.",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The colon after 'semantics' is followed by a clause that explains the resolution. The semicolon before 'specificity' is correct. No issue.",
+    "quote": "Nakagawa's 2024 account resolves the tension by placing the conditioning in morphosyntax rather than semantics: whenever a person prefix is present, the affiliative form is required; specificity then emerges as a tendency rather than a categorical trigger, because inalienable possession of an individuated entity is simply the most common context for person-prefix use",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'kamuy rus' is given as 'bear-pelt in general', but the word 'rus' is not glossed. The reader might not know that 'rus' means 'pelt/fur'. This is a minor clarity issue.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228) proposed a specificity condition: N₂ appears in the affiliative form only when N₁ is specific and individuated (kamuy rusihi 'that specific bear's pelt' vs kamuy rus 'bear-pelt in general', which is almost a compound) ‹contested›.",
+    "suggestion": "Add a gloss for 'rus' in parentheses or in the text.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'aynu opitta honihi kor' is given without a gloss or morpheme breakdown. The reader might not understand the structure. This is a minor clarity issue.",
+    "quote": "Satō objects that the affiliative does appear with non-specific possessors — aynu opitta honihi kor 'all humans have a belly' — which would be excluded by a strict specificity condition ‹contested›.",
+    "suggestion": "Add a gloss for the example, e.g., 'aynu opitta honihi kor' with gloss 'human all belly have'.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence is long and could be broken into two for clarity. No grammatical error.",
+    "quote": "Nakagawa's 2024 account resolves the tension by placing the conditioning in morphosyntax rather than semantics: whenever a person prefix is present, the affiliative form is required; specificity then emerges as a tendency rather than a categorical trigger, because inalienable possession of an individuated entity is simply the most common context for person-prefix use",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The parentheses around the example are not closed properly. The opening parenthesis before 'kamuy rusihi' is not closed before the ‹contested› tag. The closing parenthesis should be after 'compound'.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228) proposed a specificity condition: N₂ appears in the affiliative form only when N₁ is specific and individuated (kamuy rusihi 'that specific bear's pelt' vs kamuy rus 'bear-pelt in general', which is almost a compound) ‹contested›.",
+    "suggestion": "Add closing parenthesis after 'compound': '...which is almost a compound) ‹contested›.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The em dashes around the example are used correctly. No issue.",
+    "quote": "Satō objects that the affiliative does appear with non-specific possessors — aynu opitta honihi kor 'all humans have a belly' — which would be excluded by a strict specificity condition ‹contested›.",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The colon after 'semantics' is followed by a clause that explains the resolution. The semicolon before 'specificity' is correct. No issue.",
+    "quote": "Nakagawa's 2024 account resolves the tension by placing the conditioning in morphosyntax rather than semantics: whenever a person prefix is present, the affiliative form is required; specificity then emerges as a tendency rather than a categorical trigger, because inalienable possession of an individuated entity is simply the most common context for person-prefix use",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'kamuy rus' is given as 'bear-pelt in general', but the word 'rus' is not glossed. The reader might not know that 'rus' means 'pelt/fur'. This is a minor clarity issue.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228) proposed a specificity condition: N₂ appears in the affiliative form only when N₁ is specific and individuated (kamuy rusihi 'that specific bear's pelt' vs kamuy rus 'bear-pelt in general', which is almost a compound) ‹contested›.",
+    "suggestion": "Add a gloss for 'rus' in parentheses or in the text.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'aynu opitta honihi kor' is given without a gloss or morpheme breakdown. The reader might not understand the structure. This is a minor clarity issue.",
+    "quote": "Satō objects that the affiliative does appear with non-specific possessors — aynu opitta honihi kor 'all humans have a belly' — which would be excluded by a strict specificity condition ‹contested›.",
+    "suggestion": "Add a gloss for the example, e.g., 'aynu opitta honihi kor' with gloss 'human all belly have'.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence is long and could be broken into two for clarity. No grammatical error.",
+    "quote": "Nakagawa's 2024 account resolves the tension by placing the conditioning in morphosyntax rather than semantics: whenever a person prefix is present, the affiliative form is required; specificity then emerges as a tendency rather than a categorical trigger, because inalienable possession of an individuated entity is simply the most common context for person-prefix use",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#044",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "625-629",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says these are 'evidential nominalizers' and their 'possessed forms build the evidential paradigm'. But earlier at line 625, 'utar' is listed as a formal noun meaning 'plural marker / people'. The evidential nominalizers are a subset of formal nouns. No contradiction.",
+    "quote": "the evidential nominalizers ruwe 'trace, track (possessed form: the trace of —)', siri 'appearance (possessed form: the appearance of —)', hawe 'voice (possessed form: the voice of —)', and humi 'sound, sensation (possessed form: the sensation of —)', whose possessed forms build the evidential paradigm",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#042",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "454",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The long form for 'soy' is given as '—' (em dash), indicating no long form. But the table header says 'long form', and the em dash is used for missing data. This is fine, but the same em dash is used for 'rik', 'kim', 'pis', 'ya', 'mak'. No issue.",
+    "quote": "<td>—</td>",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#038",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "508-514",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The morpheme 'as' is glossed as 'stand', but the Ainu word 'as' means 'stand' or 'be located'. The free translation 'stood' is past tense, but the Ainu has no tense marking. This is a common translation convention, not a mismatch.",
+    "quote": "m=\"kasi ta as=an\" g=\"above LOC stand=4.S\" tr=\"I stood on top of it.\"",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#037",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "222-224",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation 'as reported by Nakagawa 2024: 228' is a secondary citation. This is acceptable in scholarly writing, but it's worth noting that the original source (Tamura 1988a) is not directly cited. This is not a pipeline leak, just a citation practice.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228)",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#032",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "625",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for `ruwe` includes '(possessed form: the trace of —)'. This indicates a possessed form, but the base form gloss is just 'trace, track'. It's unclear if the base form itself can be used independently or if it always implies possession.",
+    "quote": "A w=\"ruwe\" gl=\"trace, track (possessed form: the trace of —)\"",
+    "suggestion": "Clarify whether the base form `ruwe` can stand alone or if it inherently implies a possessive relationship."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for `siri` includes '(possessed form: the appearance of —)'. Similar to `ruwe`, it's unclear if the base form can be used independently.",
+    "quote": "A w=\"siri\" gl=\"appearance (possessed form: the appearance of —)\"",
+    "suggestion": "Clarify whether the base form `siri` can stand alone or if it inherently implies a possessive relationship."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for `hawe` includes '(possessed form: the voice of —)'. Similar to `ruwe`, it's unclear if the base form can be used independently.",
+    "quote": "A w=\"hawe\" gl=\"voice (possessed form: the voice of —)\"",
+    "suggestion": "Clarify whether the base form `hawe` can stand alone or if it inherently implies a possessive relationship."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for `humi` includes '(possessed form: the sensation of —)'. Similar to `ruwe`, it's unclear if the base form can be used independently.",
+    "quote": "A w=\"humi\" gl=\"sound, sensation (possessed form: the sensation of —)\"",
+    "suggestion": "Clarify whether the base form `humi` can stand alone or if it inherently implies a possessive relationship."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#031",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "620",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses for `p` and `pe` are given as 'thing (after vowel)' and 'thing (after consonant)', respectively. This implies a phonological conditioning for their use, but the gloss itself doesn't explicitly state this conditioning.",
+    "quote": "A w=\"p\" gl=\"thing (after vowel)\" ~ A w=\"pe\" gl=\"thing (after consonant)\"",
+    "suggestion": "Consider adding a note or adjusting the gloss to explicitly mention the phonological conditioning, e.g., `gl=\"thing (used after vowel)\"`."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for `hi` includes 'place'. This seems to contradict the description of formal nouns in paragraph 617, which states they are unable to appear as bare NP arguments and function to nominalize. It's unclear how `hi` functions as a standalone 'place' noun.",
+    "quote": "A w=\"hi\" gl=\"thing, matter, time, place\"",
+    "suggestion": "Clarify how `hi` functions as a 'place' noun given its classification as a formal noun, or remove 'place' from the gloss if it's misleading."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#028",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "544",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `kim ta arpa=an akusu` is given, but the gloss for `kim` is not provided in the text. It is listed as 'mountain-ward' in the table (line 467).",
+    "quote": "note=\"Type-2 locative kim 'mountain-ward' heads the clause in basic form with no antecedent. The common noun nupuri 'mountain' is not ⟨place⟩ and requires nupuri or ta to express the same location.\"",
+    "suggestion": "Provide a gloss for `kim`."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#027",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "534",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `pet oske oma wa ray na` is given, but the gloss for `oske` is not provided in the text. It is listed as `oskehe` in the table (line 436) with the meaning 'inside (general)'.",
+    "quote": "note=\"Type-1 locative oske 'inside (hollow space)' immediately follows its antecedent pet 'river', as required for the basic form. The basic form cannot head a clause alone.\"",
+    "suggestion": "Provide a gloss for `oske`."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#026",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "524",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `g=\"1SG.O=beside ALLAT\"` for `en=sam un` is provided, but the note refers to `en=` as '1SG.O' and `ku=` as 'nominative/possessive'. The glossing convention for person/case marking could be more explicit.",
+    "quote": "note=\"Objective prefix en= (1SG.O) attaches directly to the Type-1 locative sam 'beside'. The allative particle un follows, as sam is ⟨place⟩. Contrast the nominative/possessive prefix ku= that would appear on a common-noun affiliative.\"",
+    "suggestion": "Clarify the glossing convention for person and case markers, especially the distinction between 'A' (agentive/nominative) and 'O' (objective/accusative) and their relation to possessive marking."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#023",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "442",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'inside a homogeneous mass' is given as `tumuke(he)`. The parenthetical inclusion of `-he` might be inconsistent.",
+    "quote": "tumuke(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-he` is an optional or variant suffix, consider a more consistent notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#022",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "436",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'inside (general)' is given as `oskehe`. This is a complete form, unlike many others that show `(he)` or `(ke)(he)`. This might be correct, but warrants a check for consistency.",
+    "quote": "oskehe",
+    "suggestion": "Ensure this is the correct and final form, and if other forms have optional suffixes, consider if `oskehe` also has optional elements."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#019",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "418",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'beside' is given as `samake(he)`. The parenthetical inclusion of `-he` might be inconsistent.",
+    "quote": "samake(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-he` is an optional or variant suffix, consider a more consistent notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#018",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "412",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'back of a stationary thing' is given as `osmake(he)`. The parenthetical inclusion of `-he` might be inconsistent.",
+    "quote": "osmake(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-he` is an optional or variant suffix, consider a more consistent notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#017",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "406",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'back of a moving/linear thing; temporal 'after'' is given as `okake(he)`. The parenthetical inclusion of `-he` might be inconsistent.",
+    "quote": "okake(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-he` is an optional or variant suffix, consider a more consistent notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#016",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "400",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'front of a stationary thing' is given as `kotcake(he)`. The parenthetical inclusion of `-he` might be inconsistent.",
+    "quote": "kotcake(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-he` is an optional or variant suffix, consider a more consistent notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#015",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "394",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'front of a moving/linear thing; temporal 'before'' is given as `etokoho`. This differs from the `-ke(he)` pattern seen in many other Type-1 locatives. It's unclear if this is a genuine variation or a typo.",
+    "quote": "etokoho",
+    "suggestion": "Verify the form `etokoho` and ensure consistency with other long-form derivations, or provide a note explaining the difference."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#014",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "388",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'below (root pok)' is given as `corpok(i)ke(he)`. The parenthetical inclusion of `-i`, `-ke`, and `-he` might be inconsistent.",
+    "quote": "corpok(i)ke(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-i`, `-ke`, and `-he` are optional or variant suffixes, consider a more consistent notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#013",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "382",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'over a spread-out surface' is given as `kurkasi(ke)(he)`. Similar to `kasi(ke)(he)`, the parenthetical inclusion of `-ke` and `-he` might be inconsistent.",
+    "quote": "kurkasi(ke)(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-ke` and `-he` are optional or variant suffixes, consider a more consistent notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#012",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "376",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The long form of 'above (at a distance)' is given as `enkasi(ke)(he)`. Similar to `kasi(ke)(he)`, the parenthetical inclusion of `-ke` and `-he` might be inconsistent.",
+    "quote": "enkasi(ke)(he)",
+    "suggestion": "Standardize the representation of long forms in the table. If `-ke` and `-he` are optional or variant suffixes, consider a more consistent notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#010",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "340",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `kasi ta` is given, but the gloss for `kasi` is not provided in the text. It is listed as `kasi(ke)(he)` in the table (line 370) with the meaning 'above (in contact)'.",
+    "quote": "kasi ta",
+    "suggestion": "Provide a gloss for `kasi`."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `nupuri or ta` is given, but the gloss for `nupuri` is not provided in the text. It is glossed as 'mountain, settlement' in the table (line 283).",
+    "quote": "nupuri or ta",
+    "suggestion": "Provide a gloss for `nupuri`."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#009",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "332",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `g=\"1SG.O=beside ALLAT\"` for `en=sam un` is provided in example 518, but here it's just `en=sam un` without a gloss.",
+    "quote": "en=sam un",
+    "suggestion": "Add the gloss `g=\"1SG.O=beside ALLAT\"` to the text for consistency."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `g=\"1SG.A/possessive prefix\"` for `ku=` is provided in the note, but the example `ku=tekehe` itself does not have an explicit gloss.",
+    "quote": "ku=tekehe",
+    "suggestion": "Provide a gloss for `ku=tekehe`."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#008",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "204",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for `hura` is 'smell', but the note mentions its affiliative form `huraha`. The glossing convention for the base form should be consistent with how it's presented in the table (line 124, construction 2).",
+    "quote": "A w=\"hura\" gl=\"smell\" (affiliative i=huraha)",
+    "suggestion": "Ensure the gloss for `hura` is consistent with its usage in the table and its affiliative form."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#006",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "169",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `g=\"woman hand\"` does not reflect the possessive or attributive relationship described in the note. It simply lists the two words.",
+    "quote": "note=\"Attributive juxtaposition, construction (3): menoko 'woman' specifies the attribute of tek 'hand' but is not its possessor in the grammatical sense. No person prefix can substitute for menoko here: *ku=tek is ungrammatical as a possessive.\"",
+    "suggestion": "Consider a gloss that indicates the relationship, e.g., `g=\"woman-ATTR hand\"` or `g=\"woman hand-ATTR\"`, if appropriate for the glossing convention."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#005",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "159",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `g=\"1SG.A=hand-POSS\"` uses '1SG.A' for the possessor prefix, but the note states it's a '1SG possessive prefix'. The gloss should consistently use 'POSS' or similar for possessive marking.",
+    "quote": "g=\"1SG.A=hand-POSS\"",
+    "suggestion": "Change gloss to `g=\"1SG.POSS=hand-POSS\"` or `g=\"1SG.A=hand-AFF\"` if 'A' is intended to represent the possessive function in this context."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#004",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "153",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `g=\"4.A=have boat\"` indicates '4.A' as the possessor, but the note explains 'a=' as '4th person, here functioning as a generic 'my/his''. The gloss should ideally reflect the 'my/his' interpretation or the note should clarify the relationship between '4.A' and 'a='.",
+    "quote": "note=\"Alienable possession: the possessed noun cip 'boat' stays in the concept form; the possessor prefix a= (4th person, here functioning as a generic 'my/his') attaches to the possession verb kor.\"",
+    "suggestion": "Align the gloss with the note, e.g., `g=\"3SG.POSS.A=have boat\"` or `g=\"GENERIC.POSS.A=have boat\"`, or clarify the '4.A' notation."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#047",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "560-565",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This sentence reads like a note to the editors or a pipeline comment about what research remains to be done. In a reference grammar, such meta-commentary about what has not been studied is unusual and could be seen as a register leak.",
+    "quote": "This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation.",
+    "suggestion": "Remove the sentence or rephrase as 'This hypothesis has not been confirmed in primary-source grammars and requires further cross-dialectal investigation.'",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'One community observation proposes' is a bit informal for a reference grammar. It could be rephrased as 'A community observation suggests' or 'It has been proposed in community discussion that'.",
+    "quote": "One community observation proposes that the long forms of locative nouns carry a definiteness or high-specificity marking, which might explain why first- and second-person pronominal reference is expressed on the long form rather than the basic form (antitwilight, 2024-11-17) ‹speculative›.",
+    "suggestion": "Rephrase to 'A community observation suggests that...' or 'It has been proposed in community discussion that...'",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This sentence reads like a note to the editors or a pipeline comment about what research remains to be done. In a reference grammar, such meta-commentary about what has not been studied is unusual and could be seen as a register leak.",
+    "quote": "This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation.",
+    "suggestion": "Remove the sentence or rephrase as 'This hypothesis has not been confirmed in primary-source grammars and requires further cross-dialectal investigation.'",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'One community observation proposes' is a bit informal for a reference grammar. It could be rephrased as 'A community observation suggests' or 'It has been proposed in community discussion that'.",
+    "quote": "One community observation proposes that the long forms of locative nouns carry a definiteness or high-specificity marking, which might explain why first- and second-person pronominal reference is expressed on the long form rather than the basic form (antitwilight, 2024-11-17) ‹speculative›.",
+    "suggestion": "Rephrase to 'A community observation suggests that...' or 'It has been proposed in community discussion that...'",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This sentence reads like a note to the editors or a pipeline comment about what research remains to be done. In a reference grammar, such meta-commentary about what has not been studied is unusual and could be seen as a register leak.",
+    "quote": "This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation.",
+    "suggestion": "Remove the sentence or rephrase as 'This hypothesis has not been confirmed in primary-source grammars and requires further cross-dialectal investigation.'",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'One community observation proposes' is a bit informal for a reference grammar. It could be rephrased as 'A community observation suggests' or 'It has been proposed in community discussion that'.",
+    "quote": "One community observation proposes that the long forms of locative nouns carry a definiteness or high-specificity marking, which might explain why first- and second-person pronominal reference is expressed on the long form rather than the basic form (antitwilight, 2024-11-17) ‹speculative›.",
+    "suggestion": "Rephrase to 'A community observation suggests that...' or 'It has been proposed in community discussion that...'",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#043",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "616-618",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says formal nouns 'cannot appear as bare NP arguments', which matches the table at line 71 (✗). But the table at line 72 says formal nouns 'can head a relative clause?' is ○. The prose says they 'nominalise a preceding clause or prenominal element into an NP head', which is consistent with heading a relative clause. No contradiction.",
+    "quote": "Formal nouns — also glossed as noun particles (名助詞) — occupy the bottom of the autonomy hierarchy. Unable to appear as bare NP arguments, they nominalise a preceding clause or prenominal element into an NP head",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#040",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "528-534",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'CONJ' for 'wa' is correct (conjunctive). 'FIN' for 'na' is correct (final particle). The gloss 'enter' for 'oma' is correct. The gloss 'die' for 'ray' is correct. The free translation matches the gloss. No mismatch.",
+    "quote": "m=\"pet oske oma wa ray na\" g=\"river inside enter CONJ die FIN\" tr=\"It entered the river and died.\"",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#036",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "560-565",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged as ‹speculative›, which is appropriate for a Discord observation. However, the sentence 'This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation' is a meta-commentary that reads like a pipeline note to the editors rather than prose for the reader. It tells the reader what has not been done, which is unusual for a reference grammar.",
+    "quote": "One community observation proposes that the long forms of locative nouns carry a definiteness or high-specificity marking, which might explain why first- and second-person pronominal reference is expressed on the long form rather than the basic form (antitwilight, 2024-11-17) ‹speculative›. This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation.",
+    "suggestion": "Remove the sentence 'This hypothesis is not attested in the primary-source grammars; it awaits cross-dialectal elicitation.' or rephrase it as 'This hypothesis has not been confirmed in primary-source grammars and requires cross-dialectal elicitation.'",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged as ‹speculative›, which is appropriate for a Discord observation. However, the tag is placed after the citation, which is correct. No issue.",
+    "quote": "One community observation proposes that the long forms of locative nouns carry a definiteness or high-specificity marking, which might explain why first- and second-person pronominal reference is expressed on the long form rather than the basic form (antitwilight, 2024-11-17) ‹speculative›.",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged as ‹speculative›, which is appropriate for a Discord observation. However, the tag is placed after the citation, which is correct. No issue.",
+    "quote": "One community observation proposes that the long forms of locative nouns carry a definiteness or high-specificity marking, which might explain why first- and second-person pronominal reference is expressed on the long form rather than the basic form (antitwilight, 2024-11-17) ‹speculative›.",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged as ‹speculative›, which is appropriate for a Discord observation. However, the tag is placed after the citation, which is correct. No issue.",
+    "quote": "One community observation proposes that the long forms of locative nouns carry a definiteness or high-specificity marking, which might explain why first- and second-person pronominal reference is expressed on the long form rather than the basic form (antitwilight, 2024-11-17) ‹speculative›.",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#035",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "246-249",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is attributed to a Discord user and tagged as ‹contested›. But the claim is said to 'extend Nakagawa's account', which is a published source. The epistemic tag ‹contested› on a claim that is an extension of a published account is odd: either the extension is supported by Nakagawa (in which case it should be ‹corpus-confirmed› or unmarked) or it's a new claim from Discord (in which case it should be ‹speculative›, not ‹contested›). The tag ‹contested› implies there is a known counterargument, but none is given.",
+    "quote": "Community discussion has noted that, because it is hard to conceive of 'companions not belonging to anyone', this common noun surfaces almost exclusively in its affiliative form as 'N's family/companions' (thegodofneet, 2025-09-17) ‹contested›, extending Nakagawa's account of the same ambiguity at Nakagawa 2024: 251–252.",
+    "suggestion": "Change ‹contested› to ‹speculative›, or remove the tag entirely if the claim is directly supported by Nakagawa 2024: 251–252.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#034",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "222-235",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› appears twice: once after the Tamura proposal and once after the Satō objection. But the claim that the Tamura proposal is contested is supported by the Satō objection, and the claim that the Satō objection is contested is supported by the Nakagawa resolution. This is circular: the same evidence (Nakagawa's account) is used to tag both sides as contested. The tag should probably be on the Tamura proposal only, or the Satō objection should be tagged as ‹corpus-confirmed› if it's from a published source. The Nakagawa resolution is presented as the author's own view, so it shouldn't be tagged as contested.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228) proposed a specificity condition: N₂ appears in the affiliative form only when N₁ is specific and individuated ... ‹contested›. Satō objects that the affiliative does appear with non-specific possessors — aynu opitta honihi kor 'all humans have a belly' — which would be excluded by a strict specificity condition ‹contested›. Nakagawa's 2024 account resolves the tension ...",
+    "suggestion": "Remove the second ‹contested› after the Satō objection, or change it to ‹corpus-confirmed› if the Satō objection is from a published source. Alternatively, tag the Tamura proposal as ‹contested› and leave the Satō objection unmarked.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is applied to both the Tamura proposal and the Satō objection. But the Satō objection is presented as a counterargument to Tamura, so it should not be tagged as contested itself unless there is a counter-counterargument. The Nakagawa resolution is presented as the author's own view, which resolves the contestation. The second ‹contested› tag is redundant and confusing.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228) proposed a specificity condition: N₂ appears in the affiliative form only when N₁ is specific and individuated ... ‹contested›. Satō objects that the affiliative does appear with non-specific possessors — aynu opitta honihi kor 'all humans have a belly' — which would be excluded by a strict specificity condition ‹contested›.",
+    "suggestion": "Remove the second ‹contested› tag after the Satō objection, or change it to ‹corpus-confirmed› if the Satō objection is from a published source.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Nakagawa account is presented without an epistemic tag, which is appropriate since it is the author's own view. No issue.",
+    "quote": "Nakagawa's 2024 account resolves the tension by placing the conditioning in morphosyntax rather than semantics: whenever a person prefix is present, the affiliative form is required; specificity then emerges as a tendency rather than a categorical trigger, because inalienable possession of an individuated entity is simply the most common context for person-prefix use",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is applied to both the Tamura proposal and the Satō objection. But the Satō objection is presented as a counterargument to Tamura, so it should not be tagged as contested itself unless there is a counter-counterargument. The Nakagawa resolution is presented as the author's own view, which resolves the contestation. The second ‹contested› tag is redundant and confusing.",
+    "quote": "Tamura (1988a: 27–28, as reported by Nakagawa 2024: 228) proposed a specificity condition: N₂ appears in the affiliative form only when N₁ is specific and individuated ... ‹contested›. Satō objects that the affiliative does appear with non-specific possessors — aynu opitta honihi kor 'all humans have a belly' — which would be excluded by a strict specificity condition ‹contested›.",
+    "suggestion": "Remove the second ‹contested› tag after the Satō objection, or change it to ‹corpus-confirmed› if the Satō objection is from a published source.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Nakagawa account is presented without an epistemic tag, which is appropriate since it is the author's own view. No issue.",
+    "quote": "Nakagawa's 2024 account resolves the tension by placing the conditioning in morphosyntax rather than semantics: whenever a person prefix is present, the affiliative form is required; specificity then emerges as a tendency rather than a categorical trigger, because inalienable possession of an individuated entity is simply the most common context for person-prefix use",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#033",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "80-87",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says 'the Type-1 basic form is the least autonomous among the locative forms', but the table at line 47 shows Type-1 basic form cannot stand alone (✗) while Type-2 basic form can (○). The prose at lines 353-355 says Type-2 nouns 'can stand in the basic form without naming a reference point'. So Type-1 basic is less autonomous than Type-2 basic, which matches. But the prose says 'the least autonomous among the locative forms' — this is ambiguous: it could mean Type-1 basic is the least autonomous of all locative forms (including long forms), which is true since long forms can stand alone. No contradiction.",
+    "quote": "Common nouns in the concept form are the most independent; common nouns in the affiliative form presuppose a possessor relation but can still stand as NP arguments. Locative nouns are always ⟨place⟩ and take objective rather than nominative person affixes; the Type-1 basic form is the least autonomous among the locative forms, requiring an antecedent NP. Pronouns can stand alone but cannot be relativised. Formal nouns are the least autonomous of all: they require a preceding modifier or clause and cannot appear as bare NP arguments",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says pronouns 'cannot be relativised', which matches the table at line 64 (✗ for 'can head a relative clause?'). But the table at line 72 says formal nouns 'can head a relative clause?' is ○. The prose says formal nouns 'require a preceding modifier or clause and cannot appear as bare NP arguments', which matches the table at line 71 (✗ for 'stands alone as argument?'). No contradiction.",
+    "quote": "Pronouns can stand alone but cannot be relativised. Formal nouns are the least autonomous of all: they require a preceding modifier or clause and cannot appear as bare NP arguments",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#029",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "557",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Type-2 locative nouns have obligatory ⟨place⟩ status and require a locative noun to mediate their use with `ta`. However, example 542 (`kim ta arpa=an akusu`) shows `kim` (a Type-2 locative) directly followed by `ta` without an intervening locative noun.",
+    "quote": "their long-form morphology follows the locative-noun pattern rather than the common-noun affiliative system, and their obligatory ⟨place⟩ status distinguishes them from any common noun, which would require a locative noun to mediate its use with <i lang=\"ain-Latn\">ta</i>",
+    "suggestion": "Reconcile the statement about mediation with `ta` with the provided example, or clarify the rule."
+   }
+  ]
+ },
+ {
+  "id": "nominal-subclasses-and-bound-nouns~p1#003",
+  "chapter": "nominal-subclasses-and-bound-nouns",
+  "lines": "74",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table indicates that formal nouns can function as ⟨place⟩ 'some (hi, uske, usi…)'. However, paragraph 617 states formal nouns are unable to appear as bare NP arguments and their primary function is nominalization. It's unclear how they would function as ⟨place⟩ independently.",
+    "quote": "some (hi, uske, usi…)",
+    "suggestion": "Clarify how formal nouns function as ⟨place⟩, or remove this entry if it contradicts their described grammatical role."
+   }
+  ]
+ }
+]

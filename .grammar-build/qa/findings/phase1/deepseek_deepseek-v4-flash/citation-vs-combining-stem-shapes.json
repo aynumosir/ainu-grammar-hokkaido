@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "211-220",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "m=\"usa mat-ikor usa tamasay\" ain=\"usa macikor usa tamasay\"",
+  "issue": "The m attribute shows the underlying form (mat-ikor) rather than the surface form (macikor), while the non-standard ain attribute gives the surface form. In later examples (line 392-400), m correctly shows the surface form. This inconsistent use of m across examples violates the component's intended usage.",
+  "suggestion": "Change m to show the surface form with morpheme boundaries: m=\"usa macikor usa tamasay\" and remove the ain attribute.",
+  "confidence": 0.95,
+  "chapter": "citation-vs-combining-stem-shapes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "326-333",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "m=\"ku=iunin\" ain=\"kuyunin\"",
+  "issue": "Same inconsistency as above: m shows underlying form (ku=iunin) instead of surface form (ku=yunin). The non-standard ain attribute provides the surface form.",
+  "suggestion": "Change m to m=\"ku=yunin\" and remove the ain attribute.",
+  "confidence": 0.95,
+  "chapter": "citation-vs-combining-stem-shapes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "211, 326",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "ain=\"usa macikor usa tamasay\"",
+  "issue": "The Ex component uses a non-standard attribute 'ain' that is not part of the documented API. This appears to be a pipeline artifact.",
+  "suggestion": "Remove the ain attribute; if needed, incorporate the surface form into the m attribute or note.",
+  "confidence": 0.9,
+  "chapter": "citation-vs-combining-stem-shapes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "138",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "the morphemic sequence …V.ti… resyllabifies to give …V.C",
+  "issue": "The resyllabification result is given as '…V.C' but should be '…V.ti' or '…V.Ci' (the vowel /i/ is part of the syllable). The current phrasing is incomplete.",
+  "suggestion": "Change to '…V.ti' or '…V.Ci' to include the vowel.",
+  "confidence": 0.85,
+  "chapter": "citation-vs-combining-stem-shapes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "214-215",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"various woman-treasure various bead.necklace\" tr=\"women's treasures and bead-necklaces\"",
+  "issue": "The gloss uses singular 'woman-treasure' and 'bead.necklace', but the free translation uses plurals 'women's treasures' and 'bead-necklaces'. This is a minor mismatch in number.",
+  "suggestion": "Either change gloss to 'woman-treasures' and 'bead-necklaces' or adjust translation to singular.",
+  "confidence": 0.7,
+  "chapter": "citation-vs-combining-stem-shapes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "375",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "This Saru form is reported by the community and has not been independently verified in a read primary source ‹speculative›.",
+  "issue": "The phrase 'has not been independently verified in a read primary source' is meta-commentary about the verification process, addressing the production pipeline rather than the reader.",
+  "suggestion": "Rephrase to state the fact directly, e.g., 'This Saru form is reported by the community but is not attested in published primary sources.'",
+  "confidence": 0.6,
+  "chapter": "citation-vs-combining-stem-shapes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "414",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "/CV + CVC/ → σ2 accent",
+  "issue": "The rule notation '/CV + CVC/' does not match the structure of kor+e (CVC+V). The intended generalization is unclear.",
+  "suggestion": "Clarify the notation, e.g., '/CVC + V/ → σ2 accent' or provide a more explicit description.",
+  "confidence": 0.5,
+  "chapter": "citation-vs-combining-stem-shapes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

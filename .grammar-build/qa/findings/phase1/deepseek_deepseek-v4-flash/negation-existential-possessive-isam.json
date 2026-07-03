@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "78-85",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.O=rival NMLZ one even not.exist\" tr=\"There is not even one who can rival me.\"",
+  "issue": "The gloss labels the verbal prefix i= as 4.O (fourth person/indefinite object), but the free translation renders the object as 'me' (first person singular). These two values are inconsistent.",
+  "suggestion": "Either change the gloss to 1SG.O if the prefix actually encodes first-person object in this form, or adjust the translation to 'rival one (i.e., rival me)' or 'rival someone' to match the indefinite reading.",
+  "confidence": 0.9,
+  "chapter": "negation-existential-possessive-isam",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "134, 229",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "The read sources agree that isam is the lexical negative … The read Hokkaido reference grammars present no such etymology",
+  "issue": "The phrase 'read sources' and 'read Hokkaido reference grammars' sounds like a note about the writing process rather than standard academic prose. It references the set of sources consulted by the authors, not a general concept.",
+  "suggestion": "Replace with 'the sources consulted' or 'the reference grammars' (e.g., 'the consulted sources agree', 'the Hokkaido reference grammars consulted present no such etymology').",
+  "confidence": 0.7,
+  "chapter": "negation-existential-possessive-isam",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "132",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "as with any verbal predicate <Ref k=\"nakagawa2024\" p=\"365–366\" />; <Ref k=\"sato2008\" p=\"124\" />.",
+  "issue": "A semicolon appears between two adjacent citations where a comma, period, or no punctuation would be more standard. This may be a holdover from a list or a formatting artifact.",
+  "suggestion": "Replace the semicolon with a comma or a period, or remove it if the citations are meant to be a single parenthetical.",
+  "confidence": 0.5,
+  "chapter": "negation-existential-possessive-isam",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

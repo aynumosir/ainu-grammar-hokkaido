@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "84",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"river place LOC descend.SG=4.S CONJ again fish-catch=4.S PL.PRF then\"",
+  "issue": "The gloss has 'PL.PRF' but the free translation 'I went down' suggests 1st person singular; the morpheme string does not contain a clear plural or perfect marker on the subject, and the person index =an is 4.S, not 1SG.",
+  "suggestion": "Check if 'PL.PRF' in the gloss is accurate; it may be a misanalysis of 'wa' or another element. If the subject is 1SG, the gloss should reflect that consistently with the translation.",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "85",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "tr=\"I went down to the river and caught fish again, and at last …\"",
+  "issue": "The free translation uses 1SG 'I', but the example is marked with =an (4th person S), which contradicts the translation. The morpheme string lacks a 1SG marker.",
+  "suggestion": "Revise translation to match 4th person, e.g., 'Someone went down...' or correct the morpheme/gloss if the subject is indeed 1SG.",
+  "confidence": 0.95,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "89",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "note=\"The 4.S suffix =an on cep-koyki is the diagnostic: after O-NI the compound is intransitive. The compound cep-koyki 'fish-catch' occurs 144 times in the Hokkaido corpus (rank 848).\"",
+  "issue": "The note claims cep-koyki occurs 144 times in the Hokkaido corpus, but earlier in the same chapter (line 111), the total count of NI tokens from the Chitose narrator is only 517. This creates a potential inconsistency if cep-koyki alone accounts for a large portion without clarification.",
+  "suggestion": "Clarify whether the 144 occurrences are in the Chitose corpus or the entire Hokkaido corpus to avoid confusion.",
+  "confidence": 0.8,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "247",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "tr=\"I bought land, built a house there, and lived on.\"",
+  "issue": "The translation ends with 'and lived on', but the Ainu morphemes end with 'ne wa' (COP CONJ), suggesting a clause-final copula, not 'lived'. The verb 'ruwe' is glossed as 'exist', not 'live', and 'k=an' is 'I exist', not 'I lived'.",
+  "suggestion": "Revise translation to 'I bought land, built a house there, and existed on it' or adjust gloss if 'ruwe' is intended to mean 'live'.",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "246",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"land 1SG.A=buy CONJ place-POSS LOC 1SG.S=house-build CONJ 1SG.S=exist track-POSS COP CONJ\"",
+  "issue": "'track-POSS' in the gloss has no clear morpheme in the example 'k=an ruwe ne'; 'ruwe' is glossed as 'exist', 'ne' as 'COP', and 'k=an' as '1SG.S=exist'. 'track-POSS' appears to be a misanalysis.",
+  "suggestion": "Remove or correct 'track-POSS' in the gloss; it likely stems from a misreading of 'wa' or 'ne'.",
+  "confidence": 0.85,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "205",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">ni-tuye</i>",
+  "issue": "Hyphenation of incorporated compounds varies: 'ni-tuye' vs 'pukusa-ta' (line 206) — both are Object NI compounds, so hyphenation should be consistent. Elsewhere 'cep-koyki' uses hyphen, so 'ni-tuye' should follow.",
+  "suggestion": "Ensure consistent hyphenation for incorporated compounds; all should use hyphen if 'cep-koyki' does.",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "213",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">cise-kar</i>",
+  "issue": "Inconsistent hyphenation: 'cise-kar' vs 'wakka-ta' (line 214) — both are Object NI compounds. The chapter otherwise uses hyphens consistently, so this is a minor drift.",
+  "suggestion": "Ensure all incorporated compounds use the same hyphenation style.",
+  "confidence": 0.8,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "296",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "cep-ya-o-kuta",
+  "issue": "The morpheme breakdown in prose describes 'ya' as 'shore' and 'o-' as applicative, but no gloss is provided for this example. The absence of a full glossed example for this rare structure is a gap in exposition.",
+  "suggestion": "Add a full <Ex> with gloss and translation for cep-ya-o-kuta to maintain consistency.",
+  "confidence": 0.7,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "72",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "thegodofneet, aynu-corpora Discord, 2024 <Ref k=\"aynucorporadiscord\" />) ‹corpus-confirmed›",
+  "issue": "A Discord comment is tagged with ‹corpus-confirmed›, which overstates the epistemic status: community discussion alone does not rise to corpus confirmation unless tied to attested data.",
+  "suggestion": "Downgrade to ‹speculative› or ‹community-observed› if not directly corpus-attested.",
+  "confidence": 0.85,
+  "chapter": "noun-incorporation-object",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

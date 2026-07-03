@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "110-111, 116, 139, 294-295",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "sinot=an kor an=an … glossed play=4.S … exist=4.S; tr: 'I would always play'; line 139: 'the fourth-person suffix =an'; table: hotke=an wa an=an glossed 'I am / was lying down'",
+  "issue": "The suffix =an is consistently glossed as 4.S and called the fourth-person suffix, but in the same section it is used to express first-person singular (translation 'I', table 'I am'). This creates a fundamental inconsistency in person reference throughout the chapter.",
+  "suggestion": "Decide whether =an is 1SG or 4 (or both). If both, add an explanatory note; align glosses and labels so that the same form is not called 4.S for one example and used to translate 'I' in another.",
+  "confidence": 1,
+  "chapter": "existential-aspect-an-oka",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "300-303, 330",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Table pattern (b): 'a=ehotke wa an=an' glossed 'I am lying on it'; line 330 note: 'a= indexes the fourth-person agent'",
+  "issue": "The prefix a= is described as fourth-person agent in the note, but the table uses it as first-person agent to translate 'I am lying on it'. This contradicts the explicit statement about a= in the same section.",
+  "suggestion": "Either adjust the table’s gloss and translation to reflect fourth-person (e.g., 'one is lying on it'), or revise the note to allow a= as first-person in this construction.",
+  "confidence": 0.9,
+  "chapter": "existential-aspect-an-oka",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "415-417",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The read sources for this grammar do not address this correspondence, and its functional equivalence requires independent verification in the Sakhalin grammatical literature.",
+  "issue": "This sentence addresses the book's production process ('read sources', 'requires independent verification') rather than informing the reader about Ainu. It leaks editorial meta-commentary into the exposition.",
+  "suggestion": "Reword as a non-meta statement: 'This correspondence is not discussed in the sources used for this grammar, and its functional status in Sakhalin remains unclear.' Or simply omit the comment.",
+  "confidence": 1,
+  "chapter": "existential-aspect-an-oka",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Ijas catalogues",
+  "issue": "The author name lacks a diacritic: should be 'Ijäs' (with caron on s) if that is the standard spelling. The citation key is 'ijas2023', but in prose the name should be typeset correctly.",
+  "suggestion": "Add the caron: Ijäs (or check the preferred romanization in the bibliography).",
+  "confidence": 0.7,
+  "chapter": "existential-aspect-an-oka",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "257",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "West Japanese dialects",
+  "issue": "'West Japanese' is an unusual modifier; the more conventional term is 'Western Japanese'.",
+  "suggestion": "Change 'West Japanese' to 'Western Japanese'.",
+  "confidence": 0.6,
+  "chapter": "existential-aspect-an-oka",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

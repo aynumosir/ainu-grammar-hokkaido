@@ -1,0 +1,53 @@
+[
+ {
+  "lines": "17, 342",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": [
+   "No read source applies the term \"external possession\" to Hokkaido Ainu directly; the label \"possessor raising\" (所有者の主語への昇格) enters the literature with <Ref k=\"sato2016\" /> and is restated in <Ref k=\"kobayashi2025\" p=\"166–167, 173–175\" /> ‹contested›.",
+   "a question the read sources leave open"
+  ],
+  "issue": "Prose includes references to 'read sources' and 'read source', which are meta-commentary on the authors' own survey process rather than statements about the literature. This breaks the illusion of a finished text and should be replaced with neutral phrasing (e.g., 'published sources' / 'accessible literature').",
+  "suggestion": "Replace 'read source(s)' with 'published source(s)' or 'accessible literature' consistently.",
+  "confidence": 0.9,
+  "chapter": "external-possession-possessor-raising",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "20",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "restated in <Ref k=\"kobayashi2025\" p=\"166–167, 173–175\" /> ‹contested›.",
+  "issue": "The epistemic tag ‹contested› is attached to a statement about the historical fact that the label 'possessor raising' appears in a source (Kobayashi 2025). The tag should apply to a linguistically contested claim, not to a bibliographic statement. This misplacement may confuse readers about what is actually contested.",
+  "suggestion": "Move the tag to the specific analysis that is contested (e.g., the analysis of the raising itself), or remove it if it only reports the existence of the label.",
+  "confidence": 0.7,
+  "chapter": "external-possession-possessor-raising",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "223",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "not always surface-transparent <Ref k=\"kobayashi2025\" p=\"167\" /> ‹contested›.",
+  "issue": "The tag ‹contested› follows a specific page reference for a claim about surface-transparency. It is unclear whether the contestation concerns the claim itself or the broader analysis. This can misrepresent the support provided by the citation.",
+  "suggestion": "Clarify the scope of the contestation; for example, reformulate as '…not always surface-transparent (<Ref k=\"kobayashi2025\" p=\"167\" />), though this view is ‹contested›.'",
+  "confidence": 0.6,
+  "chapter": "external-possession-possessor-raising",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "168",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "gl=\"its tip/head of —\"",
+  "issue": "The gloss of the Ainu word e- contains an em dash ('—') which appears to be a placeholder or formatting artifact. Standard glossing should use a meaningful word or a hyphen to indicate a bound element. The em dash may be a typographical error.",
+  "suggestion": "Replace the em dash with a hyphen or a suitable word (e.g., 'its tip/head of something') depending on the intended meaning.",
+  "confidence": 0.5,
+  "chapter": "external-possession-possessor-raising",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

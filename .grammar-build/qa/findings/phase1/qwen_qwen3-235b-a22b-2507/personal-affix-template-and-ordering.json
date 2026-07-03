@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "26",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "A prefixes: <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">ci=</i>,\n\t\t\t<i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i>,\n\t\t\t<i lang=\"ain-Latn\">e=</i>, <i lang=\"ain-Latn\">eci=</i>; O prefixes:",
+  "issue": "Inconsistent use of spacing around the slash in 'a=/an=' — no space before or after in other similar constructions in the table, but here there are line breaks and inconsistent spacing.",
+  "suggestion": "Use consistent spacing: 'a=/an=' without line breaks or extra spaces, or format as 'a= / an=' with consistent spacing on both sides.",
+  "confidence": 0.95,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">=as</i> (1PL.EXCL.S); <i lang=\"ain-Latn\">=an</i> (4.S)",
+  "issue": "Inconsistent capitalization in gloss labels: '1PL.EXCL.S' vs '4.S' — the former uses uppercase 'PL', the latter does not. Should be standardized.",
+  "suggestion": "Use consistent formatting: either '1PL.EXCL.S' and '4PL.S' (if 4 is plural) or '1pl.excl.s' and '4.s' (lowercase), depending on the book's style.",
+  "confidence": 0.9,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "98",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "2SG/2PL <i lang=\"ain-Latn\">e=</i>/<i lang=\"ain-Latn\">eci=</i>",
+  "issue": "The text claims that both e= and eci= are used as object prefixes for 2SG/2PL, but in the table in section 'The right personal layer: =as and =an', e= and eci= are listed as neutral A/S/O prefixes, and in the O column only i= is listed for 4th, with no mention of e=/eci= as O forms. This creates a conflict between sections.",
+  "suggestion": "Clarify whether e= and eci= are used as O prefixes for 2SG/2PL or correct the statement to reflect that O prefixes are en= (1SG), un= (1PL.EXCL), i= (4), and e= or eci= are only A/S markers.",
+  "confidence": 0.85,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "154",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "1PL.EXCL <i lang=\"ain-Latn\">=as</i> and 4th/indefinite <i lang=\"ain-Latn\">=an</i>",
+  "issue": "The form =as is glossed as 1PL.EXCL.S in the table (line 64), but in line 154 it is referred to as marking 'S' on intransitive verbs — correct — yet in the same sentence =an is said to mark 'S' on intransitive verbs, but in example 203–210, =an is used in a hortative with 2SG addressee ('let us go'), suggesting inclusive rather than 4th person. This contradicts the claim that =an is 4th/indefinite S.",
+  "suggestion": "Revise the description of =an to acknowledge its use in inclusive/hortative contexts with 1PL.INCL reference, possibly noting dialectal or pragmatic variation, or clarify that '4th/indefinite' includes hortative uses where reference includes addressee.",
+  "confidence": 0.8,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "203",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"eani hem paye=an ro\" g=\"2SG even go.PL=4.S HORT\"",
+  "issue": "The gloss assigns =an as 4.S, but the translation is 'You too, let us go!', which is 1PL.INCL, not 4th person. The note confirms this is hortative and includes the addressee. There is a direct mismatch between the gloss (4.S) and the semantic role (1PL.INCL.S).",
+  "suggestion": "Revise the gloss to reflect the inclusive meaning, e.g., =an glossed as INCL.S or 1PL.INCL.S, or add a note that =an in hortative contexts indexes inclusive participants despite being formally 4th-person form.",
+  "confidence": 0.95,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "244",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"nenpoka iki=an pa wa siknu=an wa\" g=\"somehow do=4.S PL CONJ live=4.S CONJ\"",
+  "issue": "The free translation is 'Somehow we managed to do it, and went on living.' — first person plural inclusive — but the gloss treats =an as 4.S. This creates a person mismatch: the form =an is glossed as 4.S but translated as 1PL.INCL.",
+  "suggestion": "Either revise the gloss to reflect 1PL.INCL.S for =an in this context, or clarify in the note that =an in this dialect or context is used for inclusive first person, not 4th person.",
+  "confidence": 0.9,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "254",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"irwak sinne sorekusu iki-pa=an\" g=\"sibling one.like in.that.way do-PL=4.S\"",
+  "issue": "The translation is 'We lived like siblings.' — again 1PL.INCL — but the gloss assigns =an as 4.S. This repeats the mismatch seen in the previous example.",
+  "suggestion": "Same as above: revise gloss or clarify dialectal/inclusive use of =an.",
+  "confidence": 0.9,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "385",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"tane iperusuy ka =an sinki ka =an kor\" g=\"now hungry even 4.S tired even 4.S while\"",
+  "issue": "The gloss treats =an as 4.S, but the translation 'Now, being hungry and also tired, …' implies a first-person speaker state. The form =an is used twice, but the subject is clearly the speaker (1SG or 1PL), not a 4th person. This contradicts the gloss.",
+  "suggestion": "Revise the gloss to reflect 1SG.S or 1PL.S, or add a note that =an in separable contexts may be used for speaker reference regardless of person label, indicating that '4.S' may be a formal label not always aligned with semantic person.",
+  "confidence": 0.95,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "399",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "1PL.EXCL <i lang=\"ain-Latn\">-as</i> is treated as a root-attaching affix",
+  "issue": "This contradicts earlier statements that =as is a right-edge suffix (e.g., line 64, 154) and Bugaeva's classification of =as as 'word-like' and separable. Sakaguchi's analysis is cited as treating it as a root-attaching affix with hyphen, but the rest of the chapter uses =as with equals sign, implying clitic-like status. The inconsistency between =as and -as is not resolved.",
+  "suggestion": "Clarify that Sakaguchi's use of -as reflects his affix/clitic boundary convention, but in this grammar =as is retained for consistency, noting the theoretical disagreement.",
+  "confidence": 0.85,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "433",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"1SG.S=return\"",
+  "issue": "The form ku=hosipi is glossed as 1SG.S, but in the left personal layer, 1SG is A on transitive verbs. The verb hosipi 'return' is intransitive, so 1SG should be marked by a suffix, not a prefix. The example places a subject prefix on an intransitive verb, which contradicts the tripartite pattern described in the chapter.",
+  "suggestion": "Either use a suffixal form like hosipi=ku (if attested) or revise the example to a transitive verb. Alternatively, clarify that 1SG.S can appear as ku= on intransitive verbs in some dialects or constructions, but this would contradict the main analysis.",
+  "confidence": 0.9,
+  "chapter": "personal-affix-template-and-ordering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

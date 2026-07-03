@@ -1,0 +1,411 @@
+[
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#008",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "215-223",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss shows third-person possessive suffixes (-ihi, -ha) but the translation uses 'my', which is not reflected in the gloss. The Ainu form does not contain a first-person possessive marker.",
+    "quote": "m=\"mac-ihi sapa-ha or un inkar\", g=\"wife-POSS head-POSS place ALLAT look\", tr=\"looking toward (at) my wife's head\"",
+    "suggestion": "Change translation to 'his/her wife's head' or add a note that the possessive is contextually interpreted as first person. Alternatively, adjust the gloss to indicate first person if the Ainu allows that interpretation without an explicit marker.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes '-ihi' and '-ha' as 'POSS', but these are specifically affiliative suffixes marking inalienable possession. The translation uses 'my wife's head', which implies a possessive pronoun not present in the Ainu. The morpheme 'mac-ihi' means 'wife's' (inalienable), not 'my wife'. The free translation incorrectly introduces a first-person possessor.",
+    "quote": "m=\"mac-ihi sapa-ha or un inkar\" g=\"wife-POSS head-POSS place ALLAT look\" tr=\"looking toward (at) my wife's head\"",
+    "suggestion": "Revise translation to: \"looking toward (at) the wife's head\" or specify if context implies first person, but do not assume it.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#019",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "407-408",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Samani is listed both as part of the 'eastern' group (in the list) and as a separate 'eastern-Hidaka' zone. This creates a contradiction: either Samani is included in the eastern group or it is a distinct zone. The sentence structure implies four separate groups, but Samani is mentioned twice.",
+    "quote": "proposed a partition into northern (Sōya), eastern (Obihiro / Kushiro / Bihoro / Asahikawa / Nayoro), central-southern (Yakumo / Oshamambe / Horobetsu / Biratori / Nukibetsu / Niikappu), and eastern-Hidaka (Samani) zones",
+    "suggestion": "Revise to: \"northern (Sōya), eastern (Obihiro / Kushiro / Bihoro / Asahikawa / Nayoro / Samani), central-southern (Yakumo / Oshamambe / Horobetsu / Biratori / Nukibetsu / Niikappu), and eastern-Hidaka (Samani)\" — but this duplicates Samani. Better: clarify that 'eastern-Hidaka' is a subset or correct grouping.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#015",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "206-213",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'ALLAT' corresponds to the postposition 'en', but the free translation uses 'toward', which is temporal ('when') rather than directional. The translation should reflect motion toward a place, not time. The example is labeled as illustrating the allative 'en', so the translation should be spatial, e.g., 'they went toward that mountain'. The word 'when' in the translation is incorrect and contradicts the grammatical function.",
+    "quote": "m=\"nean nupuri or en oman kor\" g=\"that mountain place ALLAT go while\" tr=\"when (they) went toward that mountain\"",
+    "suggestion": "Change translation to: \"(they) went toward that mountain\" or \"as they went toward that mountain\" to match the allative use.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#012",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "92-93",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation 'tongue' is assigned to both forms, but the table cell only lists 'aw' and 'parunpe' as variants. However, in the text (§aba-patterns), 'aw' is glossed as 'tongue' and 'parunpe' as a compound meaning 'that which lies inside the par region'. The table oversimplifies by labeling both as 'tongue' without indicating that 'parunpe' is a compound referring to location in the mouth, not a direct synonym.",
+    "quote": "<i lang=\"ain-Latn\">aw</i> (margins) vs <i lang=\"ain-Latn\">parunpe</i> (center) 'tongue'",
+    "suggestion": "Revise the table entry to clarify that 'parunpe' is a compound term, e.g., 'aw' (margins) vs 'parunpe' (center) 'tongue (lit. that which lies in the par region)'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#007",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "11-13, 188, 192, 196",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The allative table (lines 178–203) lists localities Shizunai, Urakawa, Shiranuka, Nemuro, and Chitose that are not in the original 13 survey localities, and uses regional names like 'Tokachi' and 'eastern Hidaka' instead of specific survey points. The chapter does not explain that the allative data comes from a broader or different dataset, creating a contradiction with the earlier claim that the survey had exactly 13 Hokkaido localities.",
+    "quote": "The 13 Hokkaido localities were Yakumo, Oshamambe, Horobetsu, Biratori, Nukibetsu, Niikappu, Samani, Obihiro, Kushiro, Bihoro, Asahikawa, Nayoro, and Sōya.",
+    "suggestion": "Either add a note that the allative data includes additional localities beyond the original 13, or revise the list of survey localities to include these. Clarify the source of the allative table.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#001",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "10",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'partial' is not explained or defined in the text. It's unclear what 'partial' cognacy means in this context.",
+    "quote": "negative, or partial (<Ref k=\"nakagawafukazawa2022\" p=\"§2.1\" />). The 13 Hokkaido localities",
+    "suggestion": "Define 'partial' cognacy or remove the term if it's not crucial.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#016",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "240",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The dictionary-linked form <A w=\"car\" gl=\"mouth\" /> uses unitalicized 'car', while the following mention is italicized as <i lang=\"ain-Latn\">caro</i>. This creates inconsistency in typographic treatment of Ainu forms.",
+    "quote": "<A w=\"car\" gl=\"mouth\" /> and <i lang=\"ain-Latn\">caro</i>",
+    "suggestion": "Italicize the <A> tag content or remove italics from <i> tags consistently, depending on style. Preferably: use <A w=\"car\" gl=\"mouth\" /> rendered in italics via CSS, or remove <i> from <caro>.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#010",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "279, 325, 334",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Inconsistent hyphenation of the compound word for 'tongue': written with a hyphen in one place and without in others.",
+    "quote": "par-unpe (line 279) vs parunpe (lines 325, 334)",
+    "suggestion": "Choose one convention (e.g., 'parunpe' as a single word or 'par-unpe' with a hyphen to show morpheme boundary) and apply consistently throughout the chapter.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#009",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "142",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Double hyphen in 'ne--initial' should be a single hyphen or a space.",
+    "quote": "use ne--initial forms",
+    "suggestion": "Change to 'ne-initial' or 'ne- initial'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#006",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Hidaka' is inconsistent with the un-macroned 'Tokachi'.",
+    "quote": "Southwestern dialects use <i lang=\"ain-Latn\">un</i>; eastern Hidaka and Tokachi use",
+    "suggestion": "Remove the macron from Hidaka for consistency.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Hidaka' is inconsistent with the un-macroned 'Tokachi'.",
+    "quote": "eastern Hidaka and Tokachi use <i lang=\"ain-Latn\">un</i>; northern Hidaka and Tokachi use <i lang=\"ain-Latn\">un</i>.",
+    "suggestion": "Remove the macron from Hidaka for consistency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#005",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "155",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aynu-corpora' is inconsistent with the un-macroned 'Discord'.",
+    "quote": "Community discussion at the aynu-corpora Discord independently arrived at the same two-stem analysis — interrogative <i lang=\"ain-Latn\">hem</i> /",
+    "suggestion": "Remove the macron from 'aynu-corpora' for consistency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#004",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "141",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Sōya' is inconsistent with the un-macroned 'Asahikawa', 'Nayoro', and 'Bihoro'.",
+    "quote": "The northeastern dialects (Asahikawa, Nayoro, Sōya, Obihiro, Kushiro, and Bihoro) use",
+    "suggestion": "Remove the macron from Sōya for consistency.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Saru' is inconsistent with the un-macroned 'Chitose'.",
+    "quote": "The Saru–Chitose group adds its own specific interrogatives: <i lang=\"ain-Latn\">hemanta</i> 'what',",
+    "suggestion": "Remove the macron from Saru for consistency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#003",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "137",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Saru' is inconsistent with the un-macroned 'Chitose', 'Horobetsu', and 'Yakumo'.",
+    "quote": "The southwestern dialects (including Saru, Chitose, Horobetsu, and Yakumo) use interrogative stems beginning in",
+    "suggestion": "Remove the macron from Saru for consistency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#002",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "12",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Sōya' is inconsistent with the un-macroned 'Yakumo', 'Oshamambe', etc. The chapter uses 'Hokkaido' without a macron, but 'Sōya' has one. Consistency is needed.",
+    "quote": "Yakumo, Oshamambe, Horobetsu, Biratori, Nukibetsu, Niikappu, Samani, Obihiro, Kushiro, Bihoro, Asahikawa, Nayoro, and Sōya.",
+    "suggestion": "Either remove the macron from Sōya or add macrons to other place names if they are intended to be consistently marked.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Sōya' is inconsistent with the un-macroned 'Bihoro', 'Asahikawa', and 'Nayoro'.",
+    "quote": "Bihoro, Asahikawa, Nayoro, and Sōya.",
+    "suggestion": "Remove the macron from Sōya for consistency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#018",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "392",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'hemata' is presented without macrons or diacritics, while 'hemanta' is used in the Saru–Chitose context. The spelling difference may reflect actual variation, but without comment, it appears inconsistent. If 'hemata' is the correct Sakhalin form, it should be consistently used; otherwise, orthographic variation should be noted.",
+    "quote": "<i lang=\"ain-Latn\">hemata</i> (the Sakhalin cognate of <i lang=\"ain-Latn\">hemanta</i>) 'what'",
+    "suggestion": "Check if 'hemata' vs 'hemanta' reflects dialectal spelling or a typo; if intentional, add a note on orthographic variation.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#017",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "304",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is tagged ‹speculative›, which is appropriate, but the citation is to Nakagawa and Fukazawa (2022), who are reporting the idea, not originating it. The source of the reconstruction is not clearly attributed, and the epistemic tag may be misplaced if Nakagawa and Fukazawa are merely summarizing a speculative idea from another source.",
+    "quote": "reconstructs a Proto-Ainu palatalized initial <i lang=\"ain-Latn\">*pʸaɾ</i>, whose northeastern reflex yielded /c/ while the southwestern region generalized plain /p/ (reported via <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />) ‹speculative›",
+    "suggestion": "Clarify the origin of the reconstruction, e.g., \"reconstructs (reported via Nakagawa & Fukazawa 2022)\" or attribute to the original proponent if known.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#014",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "117",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists 'iyapo' as meaning 'father', but this form is only attested at an isolated inland point. The table implies it is a full isogloss type ('Ishikari Watershed'), but the text describes it as geographically isolated and not part of a broader pattern. This creates a mismatch between the table's implication of a coherent distribution and the actual limited attestation.",
+    "quote": "<i lang=\"ain-Latn\">iyapo</i> 'father' (near Saru river mouth)",
+    "suggestion": "Revise the table header or description to indicate that 'Ishikari Watershed' refers to a localized innovation, not a widespread isogloss.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#013",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "112",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'mici' is glossed as 'father', but in the section 'ABA distributions and retention at the periphery' (line 340), the same form is described as appearing along the Pacific Coast arc from the Kuril Islands to Horobetsu. However, in the section 'Saru–Chitose as a lexically distinct group' (line 387), 'oka' is listed as existential plural, and 'iyapo' is mentioned as a form for 'father' near the Saru river. The inconsistency arises because 'mici' and 'iyapo' are both used for 'father' in different regions, but the table presents 'mici' as the sole example without acknowledging competing forms.",
+    "quote": "<i lang=\"ain-Latn\">mici</i> 'father' (Kuriles to Horobetsu)",
+    "suggestion": "Clarify in the table or footnote that multiple terms for 'father' exist, e.g., 'mici' (Pacific Coast) and 'iyapo' (Saru river area), to avoid implying a single isogloss.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-lexical-dialectology-and-the-dialect-atlas~p1#011",
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "lines": "80-85",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of italics and spacing in the table: the entries are inconsistently formatted with regard to spacing around the slash. Some have spaces around '/' (e.g., 'par' / 'car'), while others do not (e.g., 'hempak'/'nempak' — though in markup it's actually consistent, the visual presentation may vary). However, the main issue is that the first slash has spaces, the others do not, creating visual inconsistency.",
+    "quote": "<i lang=\"ain-Latn\">par</i> / <i lang=\"ain-Latn\">car</i> 'mouth'; <i lang=\"ain-Latn\">hempak</i> / <i lang=\"ain-Latn\">nempak</i> 'how many'; <i lang=\"ain-Latn\">hempara</i> / <i lang=\"ain-Latn\">nempara</i> 'when'",
+    "suggestion": "Ensure uniform spacing around slashes: use either 'par' / 'car', 'hempak' / 'nempak', 'hempara' / 'nempara' or remove all spaces consistently.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

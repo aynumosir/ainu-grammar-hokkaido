@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "31–34",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "nineteen localities: thirteen Hokkaido sites … together with six Sakhalin sites and Torii's 1903 Kuril materials",
+  "issue": "Enumeration lists 13 + 6 = 19 Hokkaido+Sakhalin sites, plus Torii's Kuril materials, but the total is stated as 19; the phrasing implies 20 items.",
+  "suggestion": "Rephrase to clarify that the Kuril materials are supplementary, e.g. 'thirteen Hokkaido sites and six Sakhalin sites, supplemented by Torii's 1903 Kuril materials'.",
+  "confidence": 0.9,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "57–63, 103",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "adding Chitose … 110 items over 21 lects",
+  "issue": "Asai added Chitose to Hattori–Chiri’s 19 sites (→20 lects), but Ono 2020 is described as using a matrix of 21 lects. The number is inconsistent.",
+  "suggestion": "Verify the exact size of Asai’s matrix; if it is 21, correct the earlier count; if 20, correct line 103.",
+  "confidence": 0.9,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258–260, 432–441",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Obihiro … elided",
+  "issue": "Text (line 258–260) states that Obihiro elides initial h-, but the table (row 'Initial h-', column 'Tokachi / Ishikari') shows 'retained'; Obihiro is the main city in Tokachi and should be covered by that column.",
+  "suggestion": "Either change the table entry for Tokachi/Ishikari to 'elided' (or 'elided (Obihiro)'), or revise the text if Obihiro actually retains h-.",
+  "confidence": 0.95,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "266–271, 443–452",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "hotke → hokke (Obihiro, Kushiro, Bihoro)",
+  "issue": "Text includes Obihiro among dialects showing regressive consonant assimilation, but the table (row 'Consonant assimilation', column 'Tokachi / Ishikari') shows '—' (no assimilation) for that group.",
+  "suggestion": "Align table with text: if Obihiro shows assimilation, either split the column or mark Tokachi/Ishikari as 'partial' or 'limited'.",
+  "confidence": 0.95,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

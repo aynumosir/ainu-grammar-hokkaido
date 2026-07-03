@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "114",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, November 2024) ‹contested›",
+  "issue": "The citation format is inconsistent: the author and date are placed outside the <Ref> tag, but should be integrated within it for uniformity and proper rendering. Additionally, the evidence grade ‹contested› is attached to a claim based solely on a Discord comment, which may overstate its epistemic status.",
+  "suggestion": "<Ref k=\"aynucorporadiscord\" p=\"nukopoli, November 2024\" /> ‹contested›",
+  "confidence": 0.9,
+  "chapter": "property-concept-predication",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "219",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, November 2024) ‹speculative›",
+  "issue": "Same citation formatting issue as above: author and date are outside the <Ref> tag. Also, the evidence grade ‹speculative› is appropriate, but the citation structure should be standardized.",
+  "suggestion": "<Ref k=\"aynucorporadiscord\" p=\"nukopoli, November 2024\" /> ‹speculative›",
+  "confidence": 0.9,
+  "chapter": "property-concept-predication",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "323",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "the read sources do not provide a systematic degree–comparison paradigm for property verbs, and the gap is noted there.",
+  "issue": "The phrase 'the read sources' is a pipeline register leak, referring to the editorial process rather than the content itself. It should be rephrased for scholarly tone.",
+  "suggestion": "the available sources do not provide a systematic degree–comparison paradigm for property verbs, and this gap is addressed in <Xr ch=\"adverbs-degree-comparison\" />.",
+  "confidence": 0.95,
+  "chapter": "property-concept-predication",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "302",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"that.one person very be.bad thing COP\"",
+  "issue": "The gloss includes 'thing' for 'pe', but the free translation renders 'pe' as part of 'a very bad one', where 'one' refers to 'person'. The gloss 'thing' is misleading; 'pe' here functions as a nominalizer, better glossed as 'NMLZ' or 'CLF'.",
+  "suggestion": "g=\"that.one person very be.bad NMLZ COP\"",
+  "confidence": 0.85,
+  "chapter": "property-concept-predication",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "301",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "m=\"toan kur arikinne wen pe ne\"",
+  "issue": "The form 'arikinne' in the morpheme line uses 'k', but earlier in the text (line 295) it is spelled 'arikinne' with double 'n'. Orthographic inconsistency: should be 'arikinne' throughout.",
+  "suggestion": "m=\"toan kur arikinne wen pe ne\"",
+  "confidence": 0.9,
+  "chapter": "property-concept-predication",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "295",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"arikinne\" gl=\"very\" />",
+  "issue": "Spelling of 'arikinne' with double 'n' conflicts with 'arikinne' in example 301. Must standardize to one form. Given Nakagawa (2024) uses 'arikinne', that should be preferred.",
+  "suggestion": "Consistently use 'arikinne' in all instances.",
+  "confidence": 0.8,
+  "chapter": "property-concept-predication",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

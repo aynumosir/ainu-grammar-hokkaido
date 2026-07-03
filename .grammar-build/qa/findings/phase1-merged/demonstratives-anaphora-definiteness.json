@@ -1,0 +1,1772 @@
+[
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#007",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "79",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tanan'.",
+    "quote": "tanan</i> (pl. <i lang=\"ain-Latn\">tanoka(y)</i>)",
+    "suggestion": "tanan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tapan'.",
+    "quote": "tapan</i> (pl. <i lang=\"ain-Latn\">tapoka(y)</i>)",
+    "suggestion": "tapan",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The plural is given as 'tanoka(y)', with optional 'y', but in line 45, the plural of 'taan' is given as 'taoka(y)', suggesting a consistent pattern. However, in line 96, the plural is spelled 'tanokay' / 'tonokay' without parentheses. This inconsistency in marking optional 'y' should be resolved.",
+    "quote": "verse-register <i lang=\"ain-Latn\">tanan</i> (pl. <i lang=\"ain-Latn\">tanoka(y)</i>)",
+    "suggestion": "Standardize the representation of optional 'y' in plurals: either always use parentheses (tanoka(y)) or spell out both variants.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#001",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "46",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'this'.",
+    "quote": "this / that (in speaker's sphere, not at hand)",
+    "suggestion": "this",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the table, the form is spelled <i lang=\"ain-Latn\">taan</i>, but in the etymology section (line 94), it is described as the long variant of <i lang=\"ain-Latn\">tan</i>. While this is consistent, the spelling 'taan' (with double a) suggests phonemic length, but elsewhere in the chapter (e.g., line 343) 'nea' and 'nean' are contrasted with single vs. double consonants or vowels. Orthographic consistency across the chapter should be maintained, especially for minimal pairs.",
+    "quote": "<i lang=\"ain-Latn\">taan</i>",
+    "suggestion": "Ensure that vowel length is consistently marked with macrons or doubling across all examples and tables (e.g., tān vs. tan), or confirm that the current doubling convention is standard and consistently applied.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#065",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "333",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists 'toon' and 'ton' as variants for 'that', but in the earlier Saru table (line 49), 'toan' is the distal singular. Later (line 374), a dialect variation is noted between 'toan' and 'toon'. However, 'ton' is not mentioned elsewhere. This introduces a new form 'ton' without prior mention or explanation, creating confusion about its distribution and relationship to 'toan' and 'toon'.",
+    "quote": "<i lang=\"ain-Latn\">toon</i> / <i lang=\"ain-Latn\">ton</i> 'that'",
+    "suggestion": "Either introduce 'ton' earlier or clarify in a note that it is a Shizunai variant of 'toan'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#063",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "170",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text cites 'tanpe' as a form being counted, but 'tanpe' does not appear in the earlier table or discussion of deictic prenominals. The deictic singular is 'tan', and 'tanpe' is a demonstrative pronoun (formed from tan + pe). This creates confusion about whether the count refers to the prenominal or the pronoun. The table in line 213 lists 'tan-pe' as the pronoun, suggesting 'tanpe' is a variant form, but the corpus count should specify which form is actually attested.",
+    "quote": "<i lang=\"ain-Latn\">toan</i> (c. 735 tokens) and <i lang=\"ain-Latn\">tanpe</i> (c. 391 tokens)",
+    "suggestion": "Clarify whether the corpus count refers to tan, tanpe, or both; consider using the form actually searched in the corpus (e.g., 'tan' or 'tanpe').",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#062",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "229",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The cite attribute uses a colon-separated format (nakagawa2024:287), but the standard format in this document is cite=\"key\" with a separate p=\"pages\" attribute. This inconsistency breaks the expected citation structure.",
+    "quote": "cite=\"nakagawa2024:287\"",
+    "suggestion": "Change to cite=\"nakagawa2024\" p=\"287\"",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#058",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "96",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text states the plurals are tanokay/tonokay, but the table (lines 39–57) lists the plurals as taoka(y) for taan and tooka(y) for toan, and no plural for tan. The forms and the relationship between tan and taan are inconsistent.",
+    "quote": "the plurals tanokay / tonokay are formed by fusing the root with the plural existential okay",
+    "suggestion": "Either correct the text to match the table (taoka(y)/tooka(y)) or revise the table to include tanokay/tonokay and clarify the analysis (e.g., that tan and taan are variants with the same plural).",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#060",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "172–173",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is used, but the cited source is a secondary publication (Nakagawa 2024) rather than a direct corpus. The tag may be inflated.",
+    "quote": "consistent with its role as the primary anaphora-tracking device of narrative ‹corpus-confirmed› <Ref k=\"nakagawa2024\" p=\"287\" />",
+    "suggestion": "Consider using ‹corpus-suggested› or rephrase to indicate that Nakagawa reports corpus counts.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#057",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "430",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'anaphoric-recognitional'.",
+    "quote": "anaphoric-recognitional</i> — marking a referent as",
+    "suggestion": "anaphoric-recognitional",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'Shizunai'.",
+    "quote": "Refsing glosses the Shizunai cognate as",
+    "suggestion": "Shizunai",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'the'.",
+    "quote": "the said', which aligns with recognitional use rather than a grammaticalized",
+    "suggestion": "the",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#056",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "425",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea</i> should be analysed as a grammaticalized",
+    "suggestion": "nea",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea</i> is absent from many clearly definite contexts",
+    "suggestion": "nea",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#055",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "398",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nea' and 'ne'.",
+    "quote": "nea</i> / <i lang=\"ain-Latn\">ne</i> marks a referent",
+    "suggestion": "nea, ne",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'article-like'.",
+    "quote": "article-like role",
+    "suggestion": "article-like",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#054",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "388",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'anaphoric'.",
+    "quote": "anaphoric",
+    "suggestion": "anaphoric",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#053",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "374",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'toan' and 'toon'.",
+    "quote": "toan</i> vs. <i lang=\"ain-Latn\">toon</i>.",
+    "suggestion": "toan, toon",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "toan</i>; both forms occur in Chitose;",
+    "suggestion": "toan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "toan</i>; Ishikari lacks",
+    "suggestion": "toan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toon'.",
+    "quote": "toon</i>",
+    "suggestion": "toon",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#052",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "370",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea</i> but appearing to be more restricted in discourse",
+    "suggestion": "nea",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#051",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "366",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ikia' and 'ikiap'.",
+    "quote": "ikia</i> / <i lang=\"ain-Latn\">ikiap</i>.",
+    "suggestion": "ikia, ikiap",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ikia' and 'ikirok'.",
+    "quote": "ikia</i> (pl. <i lang=\"ain-Latn\">ikirok</i>; pronoun",
+    "suggestion": "ikia, ikirok",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ikiap'.",
+    "quote": "ikiap</i>),",
+    "suggestion": "ikiap",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#050",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "358",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nea' and 'nean'.",
+    "quote": "nea</i> vs. <i lang=\"ain-Latn\">nean</i>.",
+    "suggestion": "nea, nean",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea</i>; most other Hokkaido",
+    "suggestion": "nea",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nean' and 'neanpe'.",
+    "quote": "nean</i> (pronoun <i lang=\"ain-Latn\">neanpe</i>), with",
+    "suggestion": "nean, neanpe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'neanpe'.",
+    "quote": "neanpe</i>),",
+    "suggestion": "neanpe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#049",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "348",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'neta' and 'neyta'.",
+    "quote": "neta</i> or <i lang=\"ain-Latn\">neyta</i>",
+    "suggestion": "neta, neyta",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#048",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "341",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne-'.",
+    "quote": "ne-</i> is formally identical to the interrogative root of",
+    "suggestion": "ne-",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nep' and 'nen'.",
+    "quote": "nep</i> 'what', <i lang=\"ain-Latn\">nen</i> 'who', and",
+    "suggestion": "nep, nen",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne</i>. Refsing flags this convergence as possibly more than",
+    "suggestion": "ne",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#047",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "335",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from '—'.",
+    "quote": "—",
+    "suggestion": "—",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#046",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "331",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nean', 'neoka', and 'ne'.",
+    "quote": "nean</i> / <i lang=\"ain-Latn\">neoka</i> / <i lang=\"ain-Latn\">ne</i> 'the said'",
+    "suggestion": "nean, neoka, ne",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'taan', 'tan', and 'this'.",
+    "quote": "taan</i> / <i lang=\"ain-Latn\">tan</i> 'this'",
+    "suggestion": "taan, tan, this",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'toon', 'toon', 'ton', 'tooka', and 'tooka'.",
+    "quote": "toon</i> / <i lang=\"ain-Latn\">ton</i> 'that'; <i lang=\"ain-Latn\">tooka</i> 'those'",
+    "suggestion": "toon, ton, tooka",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'neun'.",
+    "quote": "neun</i> 'which'",
+    "suggestion": "neun",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#045",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "327",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'neytaka'.",
+    "quote": "neytaka</i> 'somewhere'",
+    "suggestion": "neytaka",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'Adnominal'.",
+    "quote": "Adnominal",
+    "suggestion": "Adnominal",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#044",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "323",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from '—'.",
+    "quote": "—",
+    "suggestion": "—",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'taanta'.",
+    "quote": "taanta</i> 'here'",
+    "suggestion": "taanta",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toonta'.",
+    "quote": "toonta</i> 'there'",
+    "suggestion": "toonta",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'neyta'.",
+    "quote": "neyta</i> 'where'",
+    "suggestion": "neyta",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#043",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "319",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nepka' and 'nenka'.",
+    "quote": "nepka</i> 'anything'; <i lang=\"ain-Latn\">nenka</i> 'anyone'",
+    "suggestion": "nepka, nenka",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#042",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "315",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nean' and 'nean pe'.",
+    "quote": "nean pe</i> 'the aforementioned'",
+    "suggestion": "nean, nean pe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'taan' and 'this'.",
+    "quote": "taan pe</i> 'this'",
+    "suggestion": "taan, this",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'toon', 'toon pe', 'tooka', and 'tooka pe'.",
+    "quote": "toon pe</i> 'that'; <i lang=\"ain-Latn\">tooka pe</i> 'those'",
+    "suggestion": "toon, toon pe, tooka, tooka pe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nep' and 'nen'.",
+    "quote": "nep</i> 'what'; <i lang=\"ain-Latn\">nen</i> 'who'",
+    "suggestion": "nep, nen",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#041",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "311",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nekonka'.",
+    "quote": "nekonka</i> 'somehow'",
+    "suggestion": "nekonka",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#040",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "307",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ene' and 'ne'.",
+    "quote": "ene</i> / <i lang=\"ain-Latn\">ne koraci</i> 'thus'",
+    "suggestion": "ene, ne",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'taa' and 'this'.",
+    "quote": "taa koraci</i> 'in this way'",
+    "suggestion": "taa, this",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'too' and 'that'.",
+    "quote": "too</i> 'in that way'",
+    "suggestion": "too, that",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nekon'.",
+    "quote": "nekon</i> 'how'",
+    "suggestion": "nekon",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#039",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "297",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne-'.",
+    "quote": "ne-</i>",
+    "suggestion": "ne-",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ta-'.",
+    "quote": "ta-</i>",
+    "suggestion": "ta-",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'to-'.",
+    "quote": "to-</i>",
+    "suggestion": "to-",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#038",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "274",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'taan' and 'here'.",
+    "quote": "taan ta</i> 'here' &lt;",
+    "suggestion": "taan, here",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'taan' and 'this'.",
+    "quote": "taan hi ta</i> 'the-place-of-this at';",
+    "suggestion": "taan, this",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'toan' and 'there'.",
+    "quote": "toan un</i> 'over there (toward)' &lt;",
+    "suggestion": "toan, there",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "toan hi un</i>",
+    "suggestion": "toan",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#037",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "268",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'te', 'ta', and 'this'.",
+    "quote": "Constructed. The proximal locative root te takes the case particle ta. te cannot head an NP (*te menoko 'this woman' is ungrammatical) and never yields a prenominal form.",
+    "suggestion": "te, ta, this",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#036",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "263",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'te'.",
+    "quote": "te ta k=an",
+    "suggestion": "te",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#035",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "258",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'te' and 'this'.",
+    "quote": "te ta</i> 'here', <i lang=\"ain-Latn\">te un</i> 'this way',",
+    "suggestion": "te, this",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#034",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ta-an' and 'tan'.",
+    "quote": "ta-an</i> → <i lang=\"ain-Latn\">tan</i>,",
+    "suggestion": "ta-an, tan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'to-an' and 'toan'.",
+    "quote": "to-an</i> → <i lang=\"ain-Latn\">toan</i>).",
+    "suggestion": "to-an, toan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'te'.",
+    "quote": "te</i> does not produce a prenominal",
+    "suggestion": "te",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'te' and 'menoko'.",
+    "quote": "te menoko</i> is ungrammatical;",
+    "suggestion": "te, menoko",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#033",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "249",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'te'.",
+    "quote": "te</i> 'here', <A w=\"ta\" gl=\"there\" />, and",
+    "suggestion": "te",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ta'.",
+    "quote": "ta</i> and",
+    "suggestion": "ta",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#032",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "239",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'neap' and 'nep'.",
+    "quote": "neap</i>, not <i lang=\"ain-Latn\">nep</i>",
+    "suggestion": "neap, nep",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nep'.",
+    "quote": "nep</i>'s grammaticalization",
+    "suggestion": "nep",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#031",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "235",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nep'.",
+    "quote": "nep</i> 'something / what' — formed",
+    "suggestion": "nep",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne-'.",
+    "quote": "ne-</i> plus the nominalizer — is an",
+    "suggestion": "ne-",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'newaanpe'.",
+    "quote": "newaanpe</i> or",
+    "suggestion": "newaanpe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#030",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "231",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'tanpe' and 'ne'.",
+    "quote": "The demonstrative pronoun tanpe heads the topic NP; the predicate is the quotative frame sekor a=ye p 'what (one) calls', nominalised by p, closed by the copula ne.",
+    "suggestion": "tanpe, ne",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#029",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "225",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tan-pe'.",
+    "quote": "tan-pe anak su sekor a=ye p ne",
+    "suggestion": "tan-pe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'This'.",
+    "quote": "This is what is called a pot.",
+    "suggestion": "This",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tanpe'.",
+    "quote": "tanpe anak su sekor a=ye p ne",
+    "suggestion": "tanpe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#028",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "215",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'newaan-pe' and 'nea-p'.",
+    "quote": "newaan-pe</i> / <i lang=\"ain-Latn\">nea-p</i> 'the",
+    "suggestion": "newaan-pe, nea-p",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ikia-p'.",
+    "quote": "ikia-p</i> (Shizunai-and-east)",
+    "suggestion": "ikia-p",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#027",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p</i> (nominalizer)",
+    "suggestion": "p",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'tan-pe' and 'this'.",
+    "quote": "tan-pe</i> 'this (thing)',",
+    "suggestion": "tan-pe, this",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'toan-pe' and 'that'.",
+    "quote": "toan-pe</i> 'that (thing)',",
+    "suggestion": "toan-pe, that",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#026",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "200",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea</i> but more restricted in scope; it is rare in Saru",
+    "suggestion": "nea",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#025",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "196",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nean' and 'neanpe'.",
+    "quote": "nean</i> (pronoun <i lang=\"ain-Latn\">neanpe</i>)",
+    "suggestion": "nean, neanpe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ikia' and 'ikirok'.",
+    "quote": "ikia</i> (pl. <i lang=\"ain-Latn\">ikirok</i>; pronoun",
+    "suggestion": "ikia, ikirok",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ikiap'.",
+    "quote": "ikiap</i>),",
+    "suggestion": "ikiap",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#024",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "192",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea</i> is pan-Hokkaido; most dialects outside Saru and",
+    "suggestion": "nea",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nean' and 'neanpe'.",
+    "quote": "nean</i> (pronoun <i lang=\"ain-Latn\">neanpe</i>)",
+    "suggestion": "nean, neanpe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#023",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "180",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nea' and 'that'.",
+    "quote": "nea menoko</i> 'that woman (referred to)',",
+    "suggestion": "nea, that",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'toan' and 'that'.",
+    "quote": "toan kur</i> 'that person (over there)'.",
+    "suggestion": "toan, that",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#022",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "168",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea</i> occurs approximately 1,984",
+    "suggestion": "nea",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "toan</i> (c. 735 tokens) and",
+    "suggestion": "toan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tanpe'.",
+    "quote": "tanpe</i> (c. 391 tokens) combined — consistent with its",
+    "suggestion": "tanpe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#021",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "163",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "The form nea picks up a female character introduced earlier; no scene-pointing interpretation is possible in the narrative context. This discourse-tracking use accounts for the form's high corpus frequency.",
+    "suggestion": "nea",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#020",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "157",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "arpa akusu nea menoko",
+    "suggestion": "nea",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'DEM.ANAPH'.",
+    "quote": "CONJ DEM.ANAPH woman",
+    "suggestion": "DEM.ANAPH",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'that'.",
+    "quote": "…when (he) went, that woman (the one already introduced)…",
+    "suggestion": "that",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#019",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "153",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'newaan'.",
+    "quote": "newaan</i> is more emphatic.",
+    "suggestion": "newaan",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#018",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "149",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea menoko</i> means",
+    "suggestion": "nea",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne</i> marks a referent as immediately prior",
+    "suggestion": "ne",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#017",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "145",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ne', 'nea', and 'newaan'.",
+    "quote": "ne</i>, <i lang=\"ain-Latn\">nea</i>, <i lang=\"ain-Latn\">newaan</i>",
+    "suggestion": "ne, nea, newaan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nea'.",
+    "quote": "nea</i> picks up a referent already established",
+    "suggestion": "nea",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#016",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "The toan kur frame illustrates the demonstrative as the carrier of third-person deictic reference.",
+    "suggestion": "toan",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#015",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "134",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "toan kur hunna an",
+    "suggestion": "toan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'that'.",
+    "quote": "Who is that person?",
+    "suggestion": "that",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#014",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "124",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "toan</i> is also the principal vehicle for nominal",
+    "suggestion": "toan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan' and 'that'.",
+    "quote": "toan kur</i> 'that person'",
+    "suggestion": "toan, that",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#013",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'taan', 'tan', and 'toan'.",
+    "quote": "Illustrative. taan signals the referent is within the speaker's sphere but not immediately at hand, the closest HA equivalent to Japanese sono. Compare tan cise 'this house (right here)' and toan cise 'that house over there'.",
+    "suggestion": "taan, tan, toan",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#012",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "115",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'taan'.",
+    "quote": "taan cise pirka",
+    "suggestion": "taan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'That'.",
+    "quote": "That house (in sight, nearby) is good.",
+    "suggestion": "That",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#011",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "107",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'longer'.",
+    "quote": "longer form encodes more spatial distance-information, front raised vowel signals",
+    "suggestion": "longer",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#010",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "101",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tan'.",
+    "quote": "tan</i> is used when",
+    "suggestion": "tan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'taan'.",
+    "quote": "taan</i> when it lies",
+    "suggestion": "taan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "toan</i> when it is away from both speaker and addressee",
+    "suggestion": "toan",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#009",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "96",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tanokay' and 'tonokay'.",
+    "quote": "tanokay</i> / <i lang=\"ain-Latn\">tonokay</i>",
+    "suggestion": "tanokay / tonokay",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#008",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "91",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tan'.",
+    "quote": "tan</i> from <i lang=\"ain-Latn\">ta</i> + copula",
+    "suggestion": "tan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'toan'.",
+    "quote": "toan</i> from <i lang=\"ain-Latn\">to</i> + <i lang=\"ain-Latn\">an</i>",
+    "suggestion": "toan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'taan'.",
+    "quote": "taan</i> is the long (information-richer) variant of",
+    "suggestion": "taan",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#006",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "72",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'the'.",
+    "quote": "the aforementioned (more emphatic)",
+    "suggestion": "the",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#005",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "67",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'that'.",
+    "quote": "the aforementioned / that same (established referent)",
+    "suggestion": "that",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#004",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "62",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'the'.",
+    "quote": "the (immediately just-mentioned)",
+    "suggestion": "the",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#003",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "56",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'that'.",
+    "quote": "that (farther than <i lang=\"ain-Latn\">toan</i>)",
+    "suggestion": "that",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#002",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "51",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'that'.",
+    "quote": "that (away from both speaker and addressee)",
+    "suggestion": "that",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#066",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "349",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form *neyta is already attested in the table above (line 326) as the interrogative 'where'. Using *neyta here as an unattested anaphoric place form is misleading, since neyta exists but with a different function. The claim should clarify that while neyta exists, it is not used anaphorically for 'the aforementioned place'.",
+    "quote": "no form <i lang=\"ain-Latn\">*neta</i> or <i lang=\"ain-Latn\">*neyta</i> functioning as 'the aforementioned place'",
+    "suggestion": "Revise to: 'no form *neta or *neyta functioning as \"the aforementioned place\", despite neyta existing as an interrogative'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#064",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "317",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for 'tooka pe' is given as 'those', but in the earlier table (line 50), 'tooka(y)' is the plural of 'toan'. This suggests 'tooka' is the plural deictic prenominal. However, here it is combined with 'pe' (nominalizer), forming a pronoun. The gloss 'those' is acceptable, but it should be consistent with the earlier analysis that 'tooka' is a plural prenominal, not a root. The form 'tooka pe' should be glossed as 'those (things)' or similar to distinguish it from the prenominal use.",
+    "quote": "<i lang=\"ain-Latn\">toon pe</i> 'that'; <i lang=\"ain-Latn\">tooka pe</i> 'those'",
+    "suggestion": "Gloss as 'those (things)' or 'the ones over there' to clarify it is a nominalized plural demonstrative, not a bare prenominal.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#061",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "98",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Two citations are separated by a semicolon but formatted as two separate <Ref> elements, which may cause rendering or parsing issues. The semicolon suggests a single citation list, but the markup treats them as independent elements.",
+    "quote": "<Ref k=\"kindaichi1936\" p=\"58\" />; <Ref k=\"nakagawa2024\" p=\"288\" />",
+    "suggestion": "Wrap both references in a single citation group if supported, or remove the semicolon and use punctuation appropriate for separate elements.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "demonstratives-anaphora-definiteness~p1#059",
+  "chapter": "demonstratives-anaphora-definiteness",
+  "lines": "192–196, 358–363",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This passage is duplicated verbatim in two sections (lines 192–196 and 358–363). The same duplication occurs for the ikia information (lines 197–201 and 366–371).",
+    "quote": "nea is pan-Hokkaido; most dialects outside Saru and Chitose use nean (pronoun neanpe) — attested in Horobetsu, Shizunai, and Ishikari, with both forms occurring in some Horobetsu and Ishikari speakers",
+    "suggestion": "Remove the duplication; keep the dialect variation information in one place (likely the dedicated dialect variation section) and cross-reference from the anaphoric section.",
+    "confidence": 1
+   }
+  ]
+ }
+]

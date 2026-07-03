@@ -1,0 +1,727 @@
+[
+ {
+  "id": "reciprocal-u~p1#019",
+  "chapter": "reciprocal-u",
+  "lines": "140",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'u-tumam-an' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "<i lang=\"ain-Latn\">u-tumam-an</i>",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-tumam-an'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example u-tumam-an in the table uses a hyphen between tumam and -an, but elsewhere in the chapter, the 4th person S suffix =an is written with an equals sign (e.g., line 181: =an). The hyphenation is inconsistent with the chapter's convention of using = for clitics and - for affixes.",
+    "quote": "u-tumam-an",
+    "suggestion": "Change to u-tumam=an to match the convention used elsewhere.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in hyphenation: other examples like u-koyki-re or u-w-e-pakasnu use hyphens between all morphemes, but here tumam-an is written without separating the root and suffix. Should be u-tumam-an for consistency.",
+    "quote": "<i lang=\"ain-Latn\">u-tumam-an</i>",
+    "suggestion": "Ensure consistent hyphenation: use u-tumam-an.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#031",
+  "chapter": "reciprocal-u",
+  "lines": "257",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'have together' conflicts with the example (Ex 262–268), where the verb a=u-ko-kor is used with a singular subject ('I had a daughter') and does not express 'togetherness' of possession but rather accompaniment ('together with my wife'). The gloss should reflect the comitative meaning, not collective possession.",
+    "quote": "<A w=\"u-ko-kor\" gl=\"have together\" />",
+    "suggestion": "Revise gloss to 'have (with someone)' or 'have together with' to clarify comitative role.",
+    "confidence": 0.93
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#030",
+  "chapter": "reciprocal-u",
+  "lines": "152",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists u-koyki-re as 'make them fight each other', which matches the causativized reciprocal, but the gloss in the example (Ex 198–204) is labeled 'object-oriented causativized reciprocal'. However, the table classifies this under 'object-oriented (causativized)' while the text in section 'The causativized reciprocal' treats it as a productive derivation, not a distinct semantic type. This creates internal inconsistency in categorization.",
+    "quote": "<i lang=\"ain-Latn\">u-koyki-re</i>",
+    "suggestion": "Reclassify the row in the table to 'causativized reciprocal' or adjust terminology for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#021",
+  "chapter": "reciprocal-u",
+  "lines": "116",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference points to the same chapter (reciprocal-u) and section anchor 'sociative', but the section with id='sociative' is titled 'The sociative uko- and uwe-' (§sociative), which discusses uko-/uwe- prefixes, not the u- + causative-on-intransitive path. The sociative reading of u- + causative-on-intransitive is actually discussed in §causativized (lines 207-215), not in §sociative. The cross-reference is misleading.",
+    "quote": "This u- + causative-on-intransitive path to a sociative reading is treated further in <Xr ch=\"reciprocal-u\" s=\"sociative\" /> below.",
+    "suggestion": "Change the cross-reference to point to §causativized (id='causativized') instead of §sociative.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#033",
+  "chapter": "reciprocal-u",
+  "lines": "284",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: earlier in the same paragraph, uko-yay-kopuntek is correctly segmented (e.g., in Ex 271–278), but here it is written as uko-yaykopuntek, merging the verb stem. This breaks morpheme-boundary consistency.",
+    "quote": "uko-yaykopuntek",
+    "suggestion": "Use uko-yay-kopuntek for consistency with segmentation norms in the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#028",
+  "chapter": "reciprocal-u",
+  "lines": "181",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The morpheme boundary between nu and =an uses = for the clitic, but the boundary between u- and oruspe uses a hyphen. This is consistent with the chapter's convention, but note that in the table (line 164), u-oruspe-nu is written without the =an suffix, which is fine. No actual inconsistency here, but the hyphen in u-oruspe-nu might be better as u-oruspe-nu (no change needed). Actually, this is consistent.",
+    "quote": "u-oruspe-nu=an",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#027",
+  "chapter": "reciprocal-u",
+  "lines": "116",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'below' is a pipeline register leak; in the final published book, the cross-reference should not say 'below' but should rely on the section reference. The <Xr> component should handle the navigation, so 'below' is redundant and informal.",
+    "quote": "This u- + causative-on-intransitive path to a sociative reading is treated further in <Xr ch=\"reciprocal-u\" s=\"sociative\" /> below.",
+    "suggestion": "Remove 'below' and let the cross-reference stand alone: '...is treated further in <Xr ch=\"reciprocal-u\" s=\"sociative\" />.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#026",
+  "chapter": "reciprocal-u",
+  "lines": "80",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag ‹consensus› is used but only one source (Nakagawa 2024) is cited. Consensus typically requires multiple independent sources. A single source does not constitute consensus.",
+    "quote": "both are confirmed by the primary sources ‹consensus› <Ref k=\"nakagawa2024\" p=\"187–188\" />.",
+    "suggestion": "Either add additional sources or change the tag to something like ‹corpus-confirmed› or remove it.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#025",
+  "chapter": "reciprocal-u",
+  "lines": "214",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is attached to a claim supported by a published source (Nakagawa 2024). If Nakagawa 2024 is a published grammar or paper, it is not a 'corpus-suggested' claim but rather a published analysis. The tag seems inappropriate for a cited published work.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"188\" /> ‹corpus-suggested›.",
+    "suggestion": "Remove the ‹corpus-suggested› tag or replace with ‹consensus› if the claim is widely accepted.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#018",
+  "chapter": "reciprocal-u",
+  "lines": "115",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "This <i lang=\"ain-Latn\">u-</i> + causative-on-intransitive path",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#017",
+  "chapter": "reciprocal-u",
+  "lines": "110",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'u-mina-re' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "<A w=\"u-mina-re\" gl=\"laugh together\" />",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-mina-re'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "<i lang=\"ain-Latn\">u-</i> (−1) prefixed to the already-causativized intransitive <i lang=\"ain-Latn\">mina-re</i> (arity 2) yields net arity 1 (intransitive), encoding collective action rather than imposing a new causer slot",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#016",
+  "chapter": "reciprocal-u",
+  "lines": "106",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'u-tures-kor' is not marked with italics or lang='ain-Latn' as other Ainu words are. The Ainu morpheme 'u-' is also not marked.",
+    "quote": "note=\"Nakagawa ex. 164. The singular okkaypo 'young man' is the surface subject, yet u-tures-kor carries u- because having a sibling is an inherently two-party relation. The plural existential okay reflects the broader story context.\"",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-tures-kor' and 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#015",
+  "chapter": "reciprocal-u",
+  "lines": "101",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'u-tures-kor' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "m=\"Iskar emko ta u-tures-kor okkaypo okay pe\"",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-tures-kor'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#014",
+  "chapter": "reciprocal-u",
+  "lines": "93",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'u-tures-kor' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "<A w=\"u-tures-kor\" gl=\"be siblings\" />",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-tures-kor'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "yet the verb carries <i lang=\"ain-Latn\">u-</i> because the sibling relation",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#013",
+  "chapter": "reciprocal-u",
+  "lines": "86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "Here <i lang=\"ain-Latn\">u-</i> signals joint involvement",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#012",
+  "chapter": "reciprocal-u",
+  "lines": "76",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'unukar' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "<A w=\"unukar\" gl=\"meet each other\" />",
+    "suggestion": "Add italics and lang='ain-Latn' to 'unukar'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'u-hekote' and 'u-hekotpa' are not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "<A w=\"u-hekote\" gl=\"be a married couple (singular)\" /> / <A w=\"u-hekotpa\" gl=\"be a married couple (plural suppletive)\" />",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-hekote' and 'u-hekotpa'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#011",
+  "chapter": "reciprocal-u",
+  "lines": "71",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "note=\"Indirect reciprocal: the Addressee of e-pakasnu 'teach sb sth' is reciprocalized; the Theme content remains as the surviving object. The epenthetic glide w surfaces between u- and the vowel-initial applicative e-.\"",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#010",
+  "chapter": "reciprocal-u",
+  "lines": "66",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'u-w-e-pakasnu' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "m=\"u-w-e-pakasnu\"",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-w-e-pakasnu'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'RECP' for 'u-' is not consistently rendered as 'reciprocal' in other examples.",
+    "quote": "g=\"RECP-EP-APPL-teach\"",
+    "suggestion": "Change 'RECP' to 'reciprocal' for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#009",
+  "chapter": "reciprocal-u",
+  "lines": "58",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "<i lang=\"ain-Latn\">u-</i> also operates on ditransitive",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "<i lang=\"ain-Latn\">w</i> surfaces between <i lang=\"ain-Latn\">u-</i> and a following vowel-initial prefix",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#008",
+  "chapter": "reciprocal-u",
+  "lines": "54",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'u-koyki' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "note=\"Bugaeva & Kobayashi 2022 ex. 11a. u-koyki is intransitive and takes no A-prefix; the clause sir-i a=nukar ('the appearance of which was seen') frames the event as a witnessed scene.\"",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-koyki'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#007",
+  "chapter": "reciprocal-u",
+  "lines": "48",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'u-koyki' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "m=\"nea nispa utar u-koyki kor oka sir-i a=nukar\"",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-koyki'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#006",
+  "chapter": "reciprocal-u",
+  "lines": "39",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "<i lang=\"ain-Latn\">u-</i> expresses mutual action",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'u-koyki' and 'u-siru' are not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "<A w=\"koyki\" gl=\"fight, attack sb\" /> (transitive) → <A w=\"u-koyki\" gl=\"fight each other\" /> (intransitive), and <A w=\"siru\" gl=\"rub sth\" /> → <A w=\"u-siru\" gl=\"rub each other\" />",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-koyki' and 'u-siru'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#005",
+  "chapter": "reciprocal-u",
+  "lines": "31",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "<i lang=\"ain-Latn\">u-</i> covers not only canonical bilateral reciprocal meaning",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#004",
+  "chapter": "reciprocal-u",
+  "lines": "27",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "The prefix",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#003",
+  "chapter": "reciprocal-u",
+  "lines": "22",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "The slot <i lang=\"ain-Latn\">u-</i> occupies",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#002",
+  "chapter": "reciprocal-u",
+  "lines": "15",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'u-' is not marked with italics or lang='ain-Latn' as other Ainu morphemes are.",
+    "quote": "<i lang=\"ain-Latn\">a=</i> or <i lang=\"ain-Latn\">ci=</i> shifts to the suffixal S-indexes <i lang=\"ain-Latn\">=an</i> or <i lang=\"ain-Latn\">=as</i> after <i lang=\"ain-Latn\">u-</i>",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#001",
+  "chapter": "reciprocal-u",
+  "lines": "8",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'u-' is not marked with italics or lang='ain-Latn' as other Ainu words are.",
+    "quote": "<A w=\"u-\" gl=\"reciprocal\" />",
+    "suggestion": "Add italics and lang='ain-Latn' to 'u-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#032",
+  "chapter": "reciprocal-u",
+  "lines": "272",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses 'RECP.APPL-REFL', but the morpheme breakdown in the text is uko- (= u- + ko-) + yay- + kopuntek. This implies three distinct prefixes, but the gloss merges u- and ko- into RECP.APPL. This obscures the separability of u- and ko- claimed in the analysis.",
+    "quote": "g=\"spirit-ASS all RECP.APPL-REFL-rejoice\"",
+    "suggestion": "Use RECP-APPL-REFL to reflect concatenative structure consistently.",
+    "confidence": 0.88
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#029",
+  "chapter": "reciprocal-u",
+  "lines": "78",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'be a married couple (singular)' contradicts the semantic expectation of reciprocal u-, which requires plural or collective subjects. The reciprocal prefix u- cannot yield a singular reading, making this gloss misleading.",
+    "quote": "<A w=\"u-hekote\" gl=\"be a married couple (singular)\" />",
+    "suggestion": "Revise gloss to 'become a married couple (plural)' or similar to reflect mutual participation.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'suppletive' in the gloss suggests irregularity, but no base form u-hekote is attested as regular; this may misrepresent the morphological relationship. If u-hekotpa is simply the plural counterpart, 'suppletive' should be removed unless evidence supports true suppletion.",
+    "quote": "<A w=\"u-hekotpa\" gl=\"be a married couple (plural suppletive)\" />",
+    "suggestion": "Change to 'be a married couple (plural)' unless independent evidence confirms suppletion.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#024",
+  "chapter": "reciprocal-u",
+  "lines": "242-243",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is used, but the only source cited is a Discord message. A Discord message is not a corpus; the tag ‹corpus-suggested› implies evidence from a corpus, which is not provided. The citation is insufficient to support the tag.",
+    "quote": "and its complement uwaste 'increase (of humans, plants)' is semantically differentiated <Ref k=\"aynucorporadiscord\" /> (gengojiro, aynu-corpora Discord, 2024) ‹corpus-suggested›.",
+    "suggestion": "Either provide a corpus citation or change the tag to ‹speculative› or remove it.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#023",
+  "chapter": "reciprocal-u",
+  "lines": "237-238",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is used, but the only source cited is a single Discord message from a user. A single Discord attribution does not constitute a 'contested' status in the scholarly literature; it is more appropriate to use ‹speculative› or ‹original-needs-review›. The tag ‹contested› implies multiple sources disagree, which is not supported by the citation.",
+    "quote": "but the semantic path from 'cause each other to carry' to 'observe intently' is unresolved in the sources ‹contested› <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024).",
+    "suggestion": "Change ‹contested› to ‹speculative› or remove the epistemic tag entirely, as the Discord source alone is insufficient for 'contested'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#022",
+  "chapter": "reciprocal-u",
+  "lines": "210",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for u-horip-pa-re includes 'exorcise' which is not present in the base verb horip-pa (likely 'dance' or similar); the gloss seems to add a meaning not supported by the base. Also, the gloss 'all dance/exorcise together' uses 'all' which is not reflected in the morphemic breakdown (u- + horip-pa + -re).",
+    "quote": "u-horip-pa-re 'all dance/exorcise together', u-kira-re 'all escape together'",
+    "suggestion": "Verify the correct gloss of horip-pa and adjust; if 'exorcise' is a separate meaning, it should be noted separately or the gloss should be simplified to 'all dance together'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reciprocal-u~p1#020",
+  "chapter": "reciprocal-u",
+  "lines": "78-80",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for u-hekote says '(singular)' but the prefix u- normally requires a plural/collective subject; a singular subject with a reciprocal verb is contradictory unless the verb is lexicalized. The example in §collective-readings (u-tures-kor) explicitly notes that a singular subject is possible for inherently two-party relations, but here the gloss '(singular)' is unexplained and appears to contradict the general rule stated in §overview that u- always takes a plural or collective subject.",
+    "quote": "u-hekote 'be a married couple (singular)' / u-hekotpa 'be a married couple (plural suppletive)'",
+    "suggestion": "Either add a note explaining that u-hekote is lexicalized and allows a singular subject (like u-tures-kor), or change the gloss to 'be a married couple' without '(singular)'.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

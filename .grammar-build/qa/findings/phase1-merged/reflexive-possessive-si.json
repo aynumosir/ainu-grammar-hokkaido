@@ -1,0 +1,1242 @@
+[
+ {
+  "id": "reflexive-possessive-si~p1#042",
+  "chapter": "reflexive-possessive-si",
+  "lines": "225",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Both yay- and si- are glossed identically as REFL despite the chapter's central argument that they are distinct prefixes with different semantics (direct vs indirect reflexive). The dictionary entries in the chapter give them different glosses: yay- as 'reflexive (direct)' and si- as 'reflexive; one's own'. The interlinear gloss conflates this distinction.",
+    "quote": "g=\"REFL-REFL-stretch-CAUS=4.S\"",
+    "suggestion": "Use distinct gloss abbreviations such as REFL.DIR for yay- and REFL.INDIR for si- to match the dictionary glosses and the analytical contrast.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'REFL-REFL' implies two instances of the same reflexive morpheme, but the morpheme line m=\"yay-si-turi-re=an\" contains two distinct prefixes: 'yay-' and 'si-', each with different semantic and distributional properties. The gloss should distinguish them as 'yay-' = 'REFL1' or 'REFL-direct' and 'si-' = 'REFL2' or 'REFL-indirect' to avoid conflation.",
+    "quote": "g=\"REFL-REFL-stretch-CAUS=4.S\"",
+    "suggestion": "Revise gloss to: \"REFL-direct-REFL-indirect-stretch-CAUS=4.S\" or use distinct abbreviations if established in the literature.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#028",
+  "chapter": "reflexive-possessive-si",
+  "lines": "158",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-par-oyki' is not marked with a language tag.",
+    "quote": "<A w=\"yay-par-oyki\" gl=\"feed oneself; do to one's own mouth\" />",
+    "suggestion": "<A w=\"yay-par-oyki\" lang=\"ain-Latn\" gl=\"feed oneself; do to one's own mouth\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: 'yay-' is written with a trailing hyphen when standing alone, but 'yay-par-oyki' is not segmented with spaces or consistent marking. The chapter otherwise uses spaced forms for multi-morpheme verbs. This creates orthographic drift.",
+    "quote": "<A w=\"yay-\" />-possessive <A w=\"yay-par-oyki\" gl=\"feed oneself; do to one's own mouth\" />",
+    "suggestion": "Standardize to either 'yay-par-oyki' throughout or use morpheme-segmented form 'yay par oyki' if that is the chapter's convention.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#001",
+  "chapter": "reflexive-possessive-si",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Japanese text is not marked with a language tag.",
+    "quote": "<span lang=\"ja\">自分</span>",
+    "suggestion": "<span lang=\"ja\"><ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby></span>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'self' for the Japanese word is not marked with a language tag.",
+    "quote": "self",
+    "suggestion": "<span lang=\"ja\">自分</span> 'self'",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of italics and lang-tagging for Ainu forms: some are in <i lang=\"ain-Latn\">, others are not. The chapter uses <i lang=\"ain-Latn\"> for phonemic forms, but should be consistent. Also, the equals sign may be better represented as part of the morpheme.",
+    "quote": "<i lang=\"ain-Latn\">a=</i>, <i lang=\"ain-Latn\">ci=</i>",
+    "suggestion": "Ensure all Ainu morphemes are consistently tagged with <i lang=\"ain-Latn\"> and formatted (e.g., <i lang=\"ain-Latn\">a=</i>, <i lang=\"ain-Latn\">ci=</i>, <i lang=\"ain-Latn\">=an</i>, <i lang=\"ain-Latn\">=as</i>).",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#030",
+  "chapter": "reflexive-possessive-si",
+  "lines": "175",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The section references '§3.3, §5' are not standard for citation; they should be '3.3, 5'.",
+    "quote": "<Ref k=\"satoni2022\" p=\"§3.3, §5\" />",
+    "suggestion": "<Ref k=\"satoni2022\" p=\"3.3, 5\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation key 'satoni2022' appears only once in the chapter and is unattested elsewhere. The context attributes the concept to 'Satō's markedness calculus' (singular author), suggesting the key may be a typo for 'sato2022' or a co-authored work that is not properly introduced.",
+    "quote": "<Ref k=\"satoni2022\" p=\"§3.3, §5\" />",
+    "suggestion": "Verify the correct key with the bibliography; likely should be 'sato2022' if single-authored, or ensure the co-author is indicated if 'satoni2022' is correct.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#013",
+  "chapter": "reflexive-possessive-si",
+  "lines": "85",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range '≈31–38' is not standard for citation; it should be '≈31-38'.",
+    "quote": "<Ref k=\"sato2007\" p=\"≈31–38\" />",
+    "suggestion": "<Ref k=\"sato2007\" p=\"≈31-38\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› is attached to a claim that is explicitly stated to be the adopted working account by authoritative sources (Nakagawa 2024 and the Handbook), which contradicts the usual meaning of ‹contested›. This risks epistemic inconsistency.",
+    "quote": "The direct/indirect analysis (line four) is the framework Nakagawa (2024: 189) and the Handbook adopt as the current working account ‹contested›.",
+    "suggestion": "Reconsider the epistemic tag: either remove ‹contested› or replace with a more appropriate tag like ‹consensus› or ‹corpus-confirmed› if warranted by the sources.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#046",
+  "chapter": "reflexive-possessive-si",
+  "lines": "195",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'APPL-REFL' in g=\"1SG.A=APPL-REFL-know.nothing-CAUS\" does not match the morpheme structure m=\"ku=ko-si-ranpewtek-ka\", where 'ko-' is the applicative and 'si-' is the reflexive. The gloss should reflect 'APPL' and 'REFL' as separate elements aligned with 'ko-' and 'si-', but currently merges them. Additionally, 'know.nothing' is not a standard gloss; 'not.know' or 'ignorant' would be clearer.",
+    "quote": "<Ex m=\"ku=ko-si-ranpewtek-ka wa k=an\" g=\"1SG.A=APPL-REFL-know.nothing-CAUS CONJ IPFV\" tr=\"I was pretending not to know about it.\"",
+    "suggestion": "Revise gloss to: \"1SG.A=APPL-REFL-not.know-CAUS CONJ IPFV\" to better align with morpheme boundaries and semantics.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#045",
+  "chapter": "reflexive-possessive-si",
+  "lines": "123",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'without adducing corroborating evidence' reads as meta-commentary from the pipeline rather than integrated narrative. It editorializes the source in a way that may belong in a review note, not in the main text.",
+    "quote": "A separate thread (aomidori_cs_, <Ref k=\"aynucorporadiscord\" />, 2023) proposed that one prefix may originally have encoded a voice distinct from reflexive proper, without adducing corroborating evidence ‹speculative›.",
+    "suggestion": "Rephrase to: 'A separate thread (aomidori_cs_, 2023) speculated that one prefix may originally have encoded a voice distinct from reflexive proper, though no supporting evidence was provided.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#044",
+  "chapter": "reflexive-possessive-si",
+  "lines": "117",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The reference to a Discord discussion as a source is presented without critical distance, and the format resembles pipeline commentary rather than integrated scholarly prose. While community sources are allowed, the phrasing risks normalizing informal sources without sufficient epistemic qualification.",
+    "quote": "A discussion on the aynu-corpora Discord (nukopoli, <Ref k=\"aynucorporadiscord\" />, 2024)",
+    "suggestion": "Add an epistemic tag such as ‹community-observation› or ‹speculative› to flag the informal provenance of the claim.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#043",
+  "chapter": "reflexive-possessive-si",
+  "lines": "84",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Subject-verb disagreement: 'the Handbook' is a singular entity (book title) but takes the plural verb 'adopt'. Should be 'adopts' if referring to the book as a single work, or rephrase to 'the Handbook authors adopt'.",
+    "quote": "the Handbook adopt as the current working account",
+    "suggestion": "Change to 'the Handbook adopts' or 'the Handbook authors adopt'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#041",
+  "chapter": "reflexive-possessive-si",
+  "lines": "243",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page number '73' is not standard for citation; it should be '73'.",
+    "quote": "<Ref k=\"shibatani1990\" p=\"73\" />",
+    "suggestion": "<Ref k=\"shibatani1990\" p=\"73\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The section reference '§4.1.1' is not standard for citation; it should be '4.1.1'.",
+    "quote": "<Ref k=\"bugaevakobayashi2022\" p=\"§4.1.1\" />",
+    "suggestion": "<Ref k=\"bugaevakobayashi2022\" p=\"4.1.1\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#040",
+  "chapter": "reflexive-possessive-si",
+  "lines": "239",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a=e-yay-ko-tuyma-si-ram-suy-pa' is not marked with a language tag.",
+    "quote": "a=e-yay-ko-tuyma-si-ram-suy-pa",
+    "suggestion": "<i lang=\"ain-Latn\">a=e-yay-ko-tuyma-si-ram-suy-pa</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ram' is not marked with a language tag.",
+    "quote": "<A w=\"ram\" gl=\"heart\" />",
+    "suggestion": "<A w=\"ram\" lang=\"ain-Latn\" gl=\"heart\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#039",
+  "chapter": "reflexive-possessive-si",
+  "lines": "237",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range '210–211' is not standard for citation; it should be '210-211'.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"210–211\" />",
+    "suggestion": "<Ref k=\"nakagawa2024\" p=\"210-211\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#038",
+  "chapter": "reflexive-possessive-si",
+  "lines": "233",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ko-i-ruska' is not marked with a language tag.",
+    "quote": "ko-i-ruska",
+    "suggestion": "<i lang=\"ain-Latn\">ko-i-ruska</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-ko-i-ruska' is not marked with a language tag.",
+    "quote": "si-ko-i-ruska",
+    "suggestion": "<i lang=\"ain-Latn\">si-ko-i-ruska</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#037",
+  "chapter": "reflexive-possessive-si",
+  "lines": "229",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-si-turi-re' is not marked with a language tag.",
+    "quote": "yay-si-turi-re",
+    "suggestion": "<i lang=\"ain-Latn\">yay-si-turi-re</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#036",
+  "chapter": "reflexive-possessive-si",
+  "lines": "225",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-si-turi-re=an' is not marked with a language tag.",
+    "quote": "yay-si-turi-re=an",
+    "suggestion": "<i lang=\"ain-Latn\">yay-si-turi-re=an</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'REFL-REFL-stretch-CAUS=4.S' is not standard; it should be 'REFL-REFL-STRETCH-CAUS=4.S'.",
+    "quote": "REFL-REFL-stretch-CAUS=4.S",
+    "suggestion": "REFL-REFL-STRETCH-CAUS=4.S",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The translation 'I lay down, stretching myself out.' is not standard; it should be 'I lay down, stretching myself out.'",
+    "quote": "I lay down, stretching myself out.",
+    "suggestion": "I lay down, stretching myself out.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#035",
+  "chapter": "reflexive-possessive-si",
+  "lines": "217",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-si-turi-re' is not marked with a language tag.",
+    "quote": "<A w=\"yay-si-turi-re\" gl=\"lay oneself down while stretching\" />",
+    "suggestion": "<A w=\"yay-si-turi-re\" lang=\"ain-Latn\" gl=\"lay oneself down while stretching\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#034",
+  "chapter": "reflexive-possessive-si",
+  "lines": "202",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ko-' is not marked with a language tag.",
+    "quote": "ko-",
+    "suggestion": "<i lang=\"ain-Latn\">ko-</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-' is not marked with a language tag.",
+    "quote": "si-",
+    "suggestion": "<i lang=\"ain-Latn\">si-</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-ranpewtek-ka' is not marked with a language tag.",
+    "quote": "si-ranpewtek-ka",
+    "suggestion": "<i lang=\"ain-Latn\">si-ranpewtek-ka</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'k=an' is not marked with a language tag.",
+    "quote": "k=an",
+    "suggestion": "<i lang=\"ain-Latn\">k=an</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#033",
+  "chapter": "reflexive-possessive-si",
+  "lines": "196",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ku=ko-si-ranpewtek-ka' is not marked with a language tag.",
+    "quote": "ku=ko-si-ranpewtek-ka",
+    "suggestion": "<i lang=\"ain-Latn\">ku=ko-si-ranpewtek-ka</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A=APPL-REFL-know.nothing-CAUS' is not standard; it should be '1SG.A=APPL-REFL-KNOW-NOTHING-CAUS'.",
+    "quote": "1SG.A=APPL-REFL-know.nothing-CAUS",
+    "suggestion": "1SG.A=APPL-REFL-KNOW-NOTHING-CAUS",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'IPFV' is not standard; it should be 'IPFV'.",
+    "quote": "IPFV",
+    "suggestion": "IPFV",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The translation 'I was pretending not to know about it.' is not standard; it should be 'I was pretending not to know about it.'",
+    "quote": "I was pretending not to know about it.",
+    "suggestion": "I was pretending not to know about it.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#032",
+  "chapter": "reflexive-possessive-si",
+  "lines": "188",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-ranpewtek-ka' is not marked with a language tag.",
+    "quote": "<A w=\"si-ranpewtek-ka\" gl=\"pretend not to know\" />",
+    "suggestion": "<A w=\"si-ranpewtek-ka\" lang=\"ain-Latn\" gl=\"pretend not to know\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#031",
+  "chapter": "reflexive-possessive-si",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-mokor-e' is not marked with a language tag.",
+    "quote": "<A w=\"si-mokor-e\" gl=\"feign sleep\" />",
+    "suggestion": "<A w=\"si-mokor-e\" lang=\"ain-Latn\" gl=\"feign sleep\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-kamuyne-re' is not marked with a language tag.",
+    "quote": "<A w=\"si-kamuyne-re\" gl=\"pretend to be a kamuy\" />",
+    "suggestion": "<A w=\"si-kamuyne-re\" lang=\"ain-Latn\" gl=\"pretend to be a kamuy\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-ponpene-re' is not marked with a language tag.",
+    "quote": "<A w=\"si-ponpene-re\" gl=\"act childishly\" />",
+    "suggestion": "<A w=\"si-ponpene-re\" lang=\"ain-Latn\" gl=\"act childishly\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#029",
+  "chapter": "reflexive-possessive-si",
+  "lines": "168",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range '251–253' is not standard for citation; it should be '251-253'.",
+    "quote": "<Ref k=\"sato2008\" p=\"251–253\" />",
+    "suggestion": "<Ref k=\"sato2008\" p=\"251-253\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#027",
+  "chapter": "reflexive-possessive-si",
+  "lines": "154",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-etu-uyna' is not marked with a language tag.",
+    "quote": "<A w=\"si-etu-uyna\" gl=\"hold one's own nose\" />",
+    "suggestion": "<A w=\"si-etu-uyna\" lang=\"ain-Latn\" gl=\"hold one's own nose\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'etu' is not marked with a language tag.",
+    "quote": "<A w=\"etu\" gl=\"nose\" />",
+    "suggestion": "<A w=\"etu\" lang=\"ain-Latn\" gl=\"nose\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'uyna' is not marked with a language tag.",
+    "quote": "<A w=\"uyna\" gl=\"hold something\" />",
+    "suggestion": "<A w=\"uyna\" lang=\"ain-Latn\" gl=\"hold something\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#026",
+  "chapter": "reflexive-possessive-si",
+  "lines": "145",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-etaye' is not marked with a language tag.",
+    "quote": "si-etaye",
+    "suggestion": "<i lang=\"ain-Latn\">si-etaye</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-etaye' is not marked with a language tag.",
+    "quote": "yay-etaye",
+    "suggestion": "<i lang=\"ain-Latn\">yay-etaye</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#025",
+  "chapter": "reflexive-possessive-si",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'i=nukar' is not marked with a language tag.",
+    "quote": "i=nukar",
+    "suggestion": "<i lang=\"ain-Latn\">i=nukar</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.O=see' is not standard; it should be '4.O-SEE'.",
+    "quote": "4.O=see",
+    "suggestion": "4.O-SEE",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'NMLZ' is not standard; it should be 'NMLZ'.",
+    "quote": "NMLZ",
+    "suggestion": "NMLZ",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'REFL-withdraw' is not standard; it should be 'REFL-WITHDRAW'.",
+    "quote": "REFL-withdraw",
+    "suggestion": "REFL-WITHDRAW",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'not.exist' is not standard; it should be 'NOT-EXIST'.",
+    "quote": "not.exist",
+    "suggestion": "NOT-EXIST",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The translation 'The thing that had caught sight of me withdrew and was gone.' is not standard; it should be 'The thing that had caught sight of me withdrew and was gone.'",
+    "quote": "The thing that had caught sight of me withdrew and was gone.",
+    "suggestion": "The thing that had caught sight of me withdrew and was gone.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#024",
+  "chapter": "reflexive-possessive-si",
+  "lines": "135",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-pusu' is not marked with a language tag.",
+    "quote": "si-pusu",
+    "suggestion": "<i lang=\"ain-Latn\">si-pusu</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-pusu' is not marked with a language tag.",
+    "quote": "yay-pusu",
+    "suggestion": "<i lang=\"ain-Latn\">yay-pusu</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#023",
+  "chapter": "reflexive-possessive-si",
+  "lines": "129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-pusu' is not marked with a language tag.",
+    "quote": "si-pusu",
+    "suggestion": "<i lang=\"ain-Latn\">si-pusu</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'REFL-float.up' is not standard; it should be 'REFL-float-UP'.",
+    "quote": "REFL-float.up",
+    "suggestion": "REFL-FLOAT-UP",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'Ezo' is not standard; it should be 'EZO'.",
+    "quote": "Ezo",
+    "suggestion": "EZO",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'NMLZ' is not standard; it should be 'NMLZ'.",
+    "quote": "NMLZ",
+    "suggestion": "NMLZ",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'COP' is not standard; it should be 'COP'.",
+    "quote": "COP",
+    "suggestion": "COP",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The translation 'The Ezo pine floats up to the water surface and flows along by itself.' is not standard; it should be 'The Ezo pine floats up to the water surface and flows along by itself.'",
+    "quote": "The Ezo pine floats up to the water surface and flows along by itself.",
+    "suggestion": "The EZO pine floats up to the water surface and flows along by itself.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#022",
+  "chapter": "reflexive-possessive-si",
+  "lines": "122",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Discord attribution is missing a specific date.",
+    "quote": "aomidori_cs_, <Ref k=\"aynucorporadiscord\" />, 2023",
+    "suggestion": "aomidori_cs_, <Ref k=\"aynucorporadiscord\" />, 2023-MM-DD",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#021",
+  "chapter": "reflexive-possessive-si",
+  "lines": "114",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The section reference '§4.2.2' is not standard for citation; it should be '4.2.2'.",
+    "quote": "<Ref k=\"bugaevakobayashi2022\" p=\"§4.2.2\" />",
+    "suggestion": "<Ref k=\"bugaevakobayashi2022\" p=\"4.2.2\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Discord attribution is missing a specific date.",
+    "quote": "nukopoli, <Ref k=\"aynucorporadiscord\" />, 2024",
+    "suggestion": "nukopoli, <Ref k=\"aynucorporadiscord\" />, 2024-MM-DD",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#020",
+  "chapter": "reflexive-possessive-si",
+  "lines": "113",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-etaye' is not marked with a language tag.",
+    "quote": "<A w=\"si-etaye\" gl=\"withdraw, pull back\" />",
+    "suggestion": "<A w=\"si-etaye\" lang=\"ain-Latn\" gl=\"withdraw, pull back\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#019",
+  "chapter": "reflexive-possessive-si",
+  "lines": "109",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-tuy-tuy-e' is not marked with a language tag.",
+    "quote": "<A w=\"yay-tuy-tuy-e\" gl=\"brush dust off oneself\" />",
+    "suggestion": "<A w=\"yay-tuy-tuy-e\" lang=\"ain-Latn\" gl=\"brush dust off oneself\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-tuy-tuy-e' is not marked with a language tag.",
+    "quote": "<A w=\"si-tuy-tuy-e\" gl=\"shake off (while becoming a bird)\" />",
+    "suggestion": "<A w=\"si-tuy-tuy-e\" lang=\"ain-Latn\" gl=\"shake off (while becoming a bird)\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-etaye' is not marked with a language tag.",
+    "quote": "<A w=\"yay-etaye\" gl=\"draw oneself outward\" />",
+    "suggestion": "<A w=\"yay-etaye\" lang=\"ain-Latn\" gl=\"draw oneself outward\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#018",
+  "chapter": "reflexive-possessive-si",
+  "lines": "105",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kobayashi (2010) is missing a page number.",
+    "quote": "<Ref k=\"kobayashi2010\" />",
+    "suggestion": "<Ref k=\"kobayashi2010\" p=\"?\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#017",
+  "chapter": "reflexive-possessive-si",
+  "lines": "100",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-mokor-e' is not marked with a language tag.",
+    "quote": "<A w=\"si-mokor-e\" gl=\"pretend to sleep\" />",
+    "suggestion": "<A w=\"si-mokor-e\" lang=\"ain-Latn\" gl=\"pretend to sleep\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#016",
+  "chapter": "reflexive-possessive-si",
+  "lines": "99",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kirikae is incomplete. It should include the page number.",
+    "quote": "Kirikae 1994: 316 (reported by <Ref k=\"sato2007\" />)",
+    "suggestion": "Kirikae 1994: 316 (reported by <Ref k=\"sato2007\" p=\"316\" />)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The section reference '§4.2.2' is not standard for citation; it should be '4.2.2'.",
+    "quote": "Kobayashi (2008: 140, cited in <Ref k=\"bugaevakobayashi2022\" p=\"§4.2.2\" />)",
+    "suggestion": "Kobayashi (2008: 140, cited in <Ref k=\"bugaevakobayashi2022\" p=\"4.2.2\" />)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#015",
+  "chapter": "reflexive-possessive-si",
+  "lines": "93",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Japanese text is not marked with a language tag.",
+    "quote": "<span lang=\"ja\">定説ではない</span>",
+    "suggestion": "<span lang=\"ja\"><ruby>定説ではない<rp>(</rp><rt>ていせつではない</rt><rp>)</rp></ruby></span>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#014",
+  "chapter": "reflexive-possessive-si",
+  "lines": "86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-nuye' is not marked with a language tag.",
+    "quote": "<A w=\"si-nuye\" gl=\"have oneself tattooed\" />",
+    "suggestion": "<A w=\"si-nuye\" lang=\"ain-Latn\" gl=\"have oneself tattooed\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-kasuy-re' is not marked with a language tag.",
+    "quote": "<A w=\"si-kasuy-re\" gl=\"have others help oneself\" />",
+    "suggestion": "<A w=\"si-kasuy-re\" lang=\"ain-Latn\" gl=\"have others help oneself\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'si-ranpewtek-ka' is not marked with a language tag.",
+    "quote": "<A w=\"si-ranpewtek-ka\" gl=\"pretend not to know\" />",
+    "suggestion": "<A w=\"si-ranpewtek-ka\" lang=\"ain-Latn\" gl=\"pretend not to know\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#012",
+  "chapter": "reflexive-possessive-si",
+  "lines": "77",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range '31–38' is not standard for citation; it should be '31-38'.",
+    "quote": "<Ref k=\"sato2007\" p=\"31–38\" />",
+    "suggestion": "<Ref k=\"sato2007\" p=\"31-38\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The section reference '§4.2.2' is not standard for citation; it should be '4.2.2'.",
+    "quote": "<Ref k=\"bugaevakobayashi2022\" p=\"§4.2.2\" />",
+    "suggestion": "<Ref k=\"bugaevakobayashi2022\" p=\"4.2.2\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#011",
+  "chapter": "reflexive-possessive-si",
+  "lines": "70",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The section reference '§4.2.2' is not standard for citation; it should be '4.2.2'.",
+    "quote": "Kobayashi (2008: 140, cited in <Ref k=\"bugaevakobayashi2022\" p=\"§4.2.2\" />)",
+    "suggestion": "Kobayashi (2008: 140, cited in <Ref k=\"bugaevakobayashi2022\" p=\"4.2.2\" />)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#010",
+  "chapter": "reflexive-possessive-si",
+  "lines": "64",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kirikae is incomplete. It should include the page number.",
+    "quote": "Kirikae 1994: 316 (reported by <Ref k=\"sato2007\" />)",
+    "suggestion": "Kirikae 1994: 316 (reported by <Ref k=\"sato2007\" p=\"316\" />)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#009",
+  "chapter": "reflexive-possessive-si",
+  "lines": "58",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi is incomplete. It should include the page number.",
+    "quote": "Kindaichi 1931: 149 (via <Ref k=\"sato2007\" />); <Ref k=\"tamura1996\" p=\"622\" />",
+    "suggestion": "Kindaichi 1931: 149 (via <Ref k=\"sato2007\" p=\"149\" />); <Ref k=\"tamura1996\" p=\"622\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#008",
+  "chapter": "reflexive-possessive-si",
+  "lines": "56",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Japanese text is not marked with a language tag.",
+    "quote": "<span lang=\"ja\">意志的</span>",
+    "suggestion": "<span lang=\"ja\"><ruby>意志的<rp>(</rp><rt>いしてき</rt><rp>)</rp></ruby></span>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#007",
+  "chapter": "reflexive-possessive-si",
+  "lines": "38",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'rayke' is not marked with a language tag.",
+    "quote": "<A w=\"rayke\" gl=\"kill\" />",
+    "suggestion": "<A w=\"rayke\" lang=\"ain-Latn\" gl=\"kill\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yay-rayke' is not marked with a language tag.",
+    "quote": "<A w=\"yay-rayke\" gl=\"commit suicide\" />",
+    "suggestion": "<A w=\"yay-rayke\" lang=\"ain-Latn\" gl=\"commit suicide\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#006",
+  "chapter": "reflexive-possessive-si",
+  "lines": "37",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi is incomplete. It should include the page number.",
+    "quote": "Kindaichi (1931: 149, reported by <Ref k=\"sato2007\" />)",
+    "suggestion": "Kindaichi (1931: 149, reported by <Ref k=\"sato2007\" p=\"149\" />)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page number '622' is not standard for citation; it should be '622'.",
+    "quote": "<Ref k=\"tamura1996\" p=\"622\" />",
+    "suggestion": "<Ref k=\"tamura1996\" p=\"622\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range '188–189' is not standard for citation; it should be '188-189'.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"188–189\" />",
+    "suggestion": "<Ref k=\"nakagawa2024\" p=\"188-189\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#005",
+  "chapter": "reflexive-possessive-si",
+  "lines": "25",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page number '189' is not standard for citation; it should be '189'.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"189\" />",
+    "suggestion": "<Ref k=\"nakagawa2024\" p=\"189\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#004",
+  "chapter": "reflexive-possessive-si",
+  "lines": "24",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The suffix '-re' is not marked with a language tag.",
+    "quote": "<i lang=\"ain-Latn\">-re</i>",
+    "suggestion": "<i lang=\"ain-Latn\">a-re</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The suffix '-ka' is not marked with a language tag.",
+    "quote": "<i lang=\"ain-Latn\">-ka</i>",
+    "suggestion": "<i lang=\"ain-Latn\">a-ka</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#003",
+  "chapter": "reflexive-possessive-si",
+  "lines": "21",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page number '188' is not standard for citation; it should be '188'.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"188\" />",
+    "suggestion": "<Ref k=\"nakagawa2024\" p=\"188\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-possessive-si~p1#002",
+  "chapter": "reflexive-possessive-si",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range '188–189' is not standard for citation; it should be '188-189'.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"188–189\" />",
+    "suggestion": "<Ref k=\"nakagawa2024\" p=\"188-189\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The section reference '§4.2.2' is not standard for citation; it should be '4.2.2'.",
+    "quote": "<Ref k=\"bugaevakobayashi2022\" p=\"§4.2.2\" />",
+    "suggestion": "<Ref k=\"bugaevakobayashi2022\" p=\"4.2.2\" />",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

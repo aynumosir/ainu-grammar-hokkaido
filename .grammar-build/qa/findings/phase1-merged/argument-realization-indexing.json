@@ -1,0 +1,614 @@
+[
+ {
+  "id": "argument-realization-indexing~p1#007",
+  "chapter": "argument-realization-indexing",
+  "lines": "208",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for this example states 'unindexed theme; reference guaranteed by three-place valency alone'. However, the gloss is 'water 2SG.A=dip-CAUS'. This gloss indicates a 2nd person agent ('you') and a causative suffix, but it does not explicitly show the 1st person agent ('I') mentioned in the translation. The translation 'I make you dip water' implies a 1st person agent, a 2nd person patient (who is doing the dipping), and a theme (water). The gloss seems to only account for the 2nd person agent and the theme.",
+    "quote": "wakka eci=ta-re\n'I make you dip water'",
+    "suggestion": "The gloss needs to reflect the 1st person agent. It should likely be something like 'water 1SG.A=make.you.dip-CAUS' or similar, depending on the morpheme breakdown.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'wakka eci=ta-re' has the gloss 'I make you dip water', but the morpheme 'eci=' is glossed as 2PL in the standard paradigm (not 1SG). The translation implies a 1SG agent, but the index 'eci=' is second-person plural. This is a mismatch between the form and the translation.",
+    "quote": "<td><i lang=\"ain-Latn\">wakka eci=ta-re</i></td>\n<td>'I make you dip water'</td>",
+    "suggestion": "Either correct the example to use a 1SG index (e.g., 'ku=') or adjust the translation to match the second-person index (e.g., 'you (pl.) make me dip water' or similar).",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'I make you dip water' implies a causative construction with two core arguments (subject and object), but the gloss field in the table only says 'dip water', missing both the causative morphology and the person marking. The form 'eci=ta-re' appears to encode 'you (OBJ) dip', but this is not reflected in the table's gloss.",
+    "quote": "wakka eci=ta-re",
+    "suggestion": "Revise the gloss to reflect the full meaning, e.g., 'make-you-dip water' or 'cause-you-to-dip water', and ensure alignment with the interlinear logic.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#016",
+  "chapter": "argument-realization-indexing",
+  "lines": "158-160",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'asserted' in the citation is a meta-commentary on the source's reliability, which is a pipeline register leak. It should be removed or rephrased.",
+    "quote": "A community observation corroborates the zero-3rd-person analysis: \"the bare verb form = 3SG = citation/dictionary form\" and \"using a possessive already concedes a zero 3rd person\" (nukopoli, aynu-corpora Discord, 2024-12-25, asserted) <Ref k=\"aynucorporadiscord\" /> ‹corpus-confirmed›.",
+    "suggestion": "Remove 'asserted' from the citation, or rephrase to 'as noted by nukopoli'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrasing 'citation/dictionary form' appears to be a meta-linguistic note rather than integrated prose, possibly leaking from editorial notes or community discussion. It reads like a parenthetical aside rather than a smooth part of the narrative.",
+    "quote": "the bare verb form = 3SG = citation/dictionary form",
+    "suggestion": "Rephrase as: 'the bare verb form corresponds to the third-person singular and is identical to the citation or dictionary form.'",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#004",
+  "chapter": "argument-realization-indexing",
+  "lines": "159",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹corpus-confirmed› is applied to a claim based on a single community observation from Discord. While community input is valuable, 'corpus-confirmed' typically implies a broader range of evidence, such as multiple attestations in a corpus or consensus among multiple speakers/experts. This might be an overstatement of the evidence.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024-12-25, asserted) <Ref k=\"aynucorporadiscord\" /> ‹corpus-confirmed›.",
+    "suggestion": "Consider changing the evidence grade to ‹corpus-suggested› or ‹consensus› if it reflects expert opinion, or adding more supporting evidence if available.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim whose only support is a single Discord message (attributed to a community member, not a corpus). This inflates the evidence grade beyond what the cited source warrants.",
+    "quote": "A community observation corroborates the zero-3rd-person analysis: \"the bare verb form = 3SG = citation/dictionary form\" and \"using a possessive already concedes a zero 3rd person\" (nukopoli, aynu-corpora Discord, 2024-12-25, asserted) <Ref k=\"aynucorporadiscord\" /> ‹corpus-confirmed›.",
+    "suggestion": "Change ‹corpus-confirmed› to ‹speculative› or remove the tag entirely, since the claim is attributed to a community observation, not a corpus.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#027",
+  "chapter": "argument-realization-indexing",
+  "lines": "303",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'a=e-p' (4.A=eat-NMLZ), but the free translation 'She put the cooked food into the basket' does not mention eating. The verb 'oma-re' means 'be in-CAUS', not 'eat'. There is a clear mismatch between the glossed verb stem and the free translation.",
+    "quote": "ci a=e-p saranip or oma-re",
+    "suggestion": "Correct either the morpheme string or the translation. If the intended verb is 'put into', the stem should be something like 'kup' or 'kup-re', not 'oma-re'.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#025",
+  "chapter": "argument-realization-indexing",
+  "lines": "142",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.A=give' does not account for the theme argument ('it') in the free translation 'I'll give it to the old man.' While the note explains the theme is null and contextually recoverable, the gloss should reflect the transitivity of the verb or mark the object as zero. As written, the gloss appears intransitive while the translation and analysis claim otherwise.",
+    "quote": "ekasi ku=kore na",
+    "suggestion": "Revise the gloss to include a zero object, e.g., '1SG.A=give-3SG.O' or use a notation like '1SG.A=give' with a comment that object is zero and recoverable from valency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#024",
+  "chapter": "argument-realization-indexing",
+  "lines": "63",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A=catch' suggests a fourth-person agent, but the free translation is 'We catch fish.', which implies first-person plural. This is inconsistent unless dialectal or contextual factors explain the discrepancy, but no such explanation is provided here.",
+    "quote": "cep a=koyki",
+    "suggestion": "Either change the free translation to match the gloss (e.g., 'They catch fish' or 'Someone (non-salient) catches fish') or adjust the gloss if the intended meaning is truly first-person plural.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#005",
+  "chapter": "argument-realization-indexing",
+  "lines": "193",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss indicates a 4th person agent ('4.A'), but the translation is 'we catch fish', which implies a 1st person plural agent. This is a direct contradiction between the gloss and the translation.",
+    "quote": "cep a=koyki\nfish 4.A=catch\n'we catch fish'",
+    "suggestion": "Align the gloss with the translation (e.g., '1PL.A=catch') or vice versa, and ensure the note and surrounding text are consistent.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#029",
+  "chapter": "argument-realization-indexing",
+  "lines": "232",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Malformed citation markup: 'paren' is not a valid attribute; likely a typo or pipeline artifact. Should be either 'note' or removed.",
+    "quote": "Baker's (Ref k=\"baker1988\" p=\"229–232\" paren /)",
+    "suggestion": "Correct to: <Ref k=\"baker1988\" p=\"229–232\" />",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#028",
+  "chapter": "argument-realization-indexing",
+  "lines": "340",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of clitic markers: sometimes written with spaces around '=' (e.g., 'a =', 'ku =') and sometimes not. Here, 'a=' and 'ku=' are correctly attached, but elsewhere spacing may vary.",
+    "quote": "a= and ku=",
+    "suggestion": "Ensure consistent attachment of clitics without spaces (e.g., always 'a=', 'ku=') throughout the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#023",
+  "chapter": "argument-realization-indexing",
+  "lines": "158-160",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The use of '=' in the quoted text is inconsistent with the standard notation used elsewhere in the chapter (where '=' is used for clitics, not for equivalence). This could cause confusion.",
+    "quote": "\"the bare verb form = 3SG = citation/dictionary form\"",
+    "suggestion": "Rephrase the quote to avoid using '=' for equivalence, e.g., 'the bare verb form is the 3SG and the citation/dictionary form'.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#022",
+  "chapter": "argument-realization-indexing",
+  "lines": "339-342",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The word 'asserted' in the citation is a meta-commentary on the source's reliability, which is a pipeline register leak. It should be removed or rephrased.",
+    "quote": "(thegodofneet, aynu-corpora Discord, 2024-07-04, asserted)",
+    "suggestion": "Remove 'asserted' from the citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#018",
+  "chapter": "argument-realization-indexing",
+  "lines": "207-209",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'I make you dip water' is ambiguous: it could mean 'I cause you to dip water' or 'I dip water for you'. The intended meaning is unclear from the gloss alone.",
+    "quote": "<td><i lang=\"ain-Latn\">wakka eci=ta-re</i></td>\n<td>'I make you dip water'</td>",
+    "suggestion": "Provide a more precise translation or add a note clarifying the causative structure.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#015",
+  "chapter": "argument-realization-indexing",
+  "lines": "262",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The reference '§6 below' appears to be a placeholder or editorial note that was not updated to match the actual section numbering (the location-class section is §5). This is a pipeline register leak.",
+    "quote": "see §6 below",
+    "suggestion": "Replace with 'see §5 below' or the appropriate section reference.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#013",
+  "chapter": "argument-realization-indexing",
+  "lines": "318",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'relying on indexing and the location class instead' is slightly awkward. 'Instead' implies a contrast with something previously mentioned, but the sentence structure makes it feel like it's contrasting with 'neither device' in a way that isn't perfectly clear.",
+    "quote": "Ainu uses neither device, relying on indexing and the location class instead <Ref k=\"nakagawa2022pos\" />.",
+    "suggestion": "Rephrase for clarity, e.g., 'Ainu relies on indexing and the location class instead of these devices.' or 'Ainu uses indexing and the location class, unlike Nivkh.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#012",
+  "chapter": "argument-realization-indexing",
+  "lines": "308",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'The locative relational noun or 'place of' on saranip marks the basket as the goal (Location argument); ci a=e-p 'the cooked food' is therefore unambiguously the theme.' The gloss for 'ci a=e-p' is 'cooked.food'. The translation is 'She put the cooked food into the basket.' The gloss for the verb is '4.A=eat-NMLZ'. This seems to indicate a 4th person agent eating cooked food, not a 3rd person agent putting cooked food into a basket. There appears to be a mismatch between the gloss/translation and the note's description of the roles.",
+    "quote": "The locative relational noun or 'place of' on saranip marks the basket as the goal (Location argument); ci a=e-p 'the cooked food' is therefore unambiguously the theme. Without or, the two NPs would be structurally indistinguishable from a third-person agent and patient.",
+    "suggestion": "Clarify the gloss and translation to accurately reflect the roles described in the note (agent, theme, location). The current gloss and translation seem to describe a different event.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#011",
+  "chapter": "argument-realization-indexing",
+  "lines": "282",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence is quite long and contains multiple clauses. It could be broken down for better readability.",
+    "quote": "and no Ainu specialist has published a dedicated pronominal-argument study; the framing reaches Ainu only through Bugaeva's and Satō's typological treatments, and Bugaeva's own preferred position argues against the pure appositive reading.",
+    "suggestion": "Split the sentence, e.g., 'No Ainu specialist has published a dedicated pronominal-argument study. The framing reaches Ainu only through Bugaeva's and Satō's typological treatments. Bugaeva's own preferred position argues against the pure appositive reading.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#010",
+  "chapter": "argument-realization-indexing",
+  "lines": "251",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical '(attested for floating quantifiers; <Xr ch=\"constituent-order-head-final\" />)' is a bit of a mouthful and could be integrated more smoothly into the sentence.",
+    "quote": "uncased (attested), and potentially discontinuous (attested for floating quantifiers; <Xr ch=\"constituent-order-head-final\" />).",
+    "suggestion": "Consider rephrasing, e.g., 'uncased (attested), and potentially discontinuous (as seen with floating quantifiers, see <Xr ch=\"constituent-order-head-final\" />).'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#009",
+  "chapter": "argument-realization-indexing",
+  "lines": "227",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence 'Mode 4 in particular — the theme as bare NP without an index — \"partly shows a dependent-marking characteristic\" while remaining under head-marking control.' is a bit dense. The phrase 'while remaining under head-marking control' might be slightly redundant or could be integrated more smoothly.",
+    "quote": "the result of its head-marking character. Mode 4 in particular — the theme as bare NP without an index — \"partly shows a dependent-marking characteristic\" while remaining under head-marking control.",
+    "suggestion": "Consider rephrasing for flow, e.g., 'Mode 4, in particular, where the theme is a bare NP without an index, exhibits some dependent-marking characteristics while still being governed by head-marking principles.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#008",
+  "chapter": "argument-realization-indexing",
+  "lines": "217",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the auxiliary <A w=\"rusuy\" gl=\"want\" /> takes no person marker and the lexical verb carries the index. However, the example is <i lang=\"ain-Latn\">a=e rusuy</i> ('we want to eat it'). The gloss for this example is not provided in the table. If <i lang=\"ain-Latn\">rusuy</i> is the auxiliary, and it takes no person marker, then the index <i lang=\"ain-Latn\">a=e</i> (which appears to be 1PL.A) should be on the lexical verb 'eat'. The note implies the opposite.",
+    "quote": "auxiliary <A w=\"rusuy\" gl=\"want\" /> takes no person marker; the lexical verb carries the index",
+    "suggestion": "Clarify which verb carries the index. If <i lang=\"ain-Latn\">rusuy</i> is the auxiliary and takes no index, then the index should be on the verb 'eat'. If <i lang=\"ain-Latn\">a=e</i> is the index for 'want', then the note needs to be adjusted.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#006",
+  "chapter": "argument-realization-indexing",
+  "lines": "195",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This note refers to example 2, 'person affix + optional NP'. The example given is 'cep a=koyki' ('fish 4.A=catch', translated as 'we catch fish'). As noted above, there's a discrepancy in person marking (4.A vs. 'we'). If the note is correct that the NP is redundant with the index, then the index should match the NP's role. If the translation 'we catch fish' is correct, then the gloss should reflect a 1st person plural agent, not a 4th person agent.",
+    "quote": "NP appositional, outside CORE; redundant with the index",
+    "suggestion": "Resolve the person marking discrepancy in the example, gloss, and translation. Then, ensure this note accurately reflects the corrected example.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#003",
+  "chapter": "argument-realization-indexing",
+  "lines": "147",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'The theme — a sweet, established in the preceding clause tanpe topenpe ne na 'this is a sweet' — is null.' However, the example itself (lines 142-144) translates to 'I'll give it to the old man.' The 'it' refers to the sweet, which is indeed null in the Ainu sentence. The note correctly identifies the recipient and agent, but the phrasing 'the theme ... is null' could be slightly clearer by explicitly stating that the theme is omitted from the Ainu sentence.",
+    "quote": "Satō 2025 ex. 21 (second clause). The theme — a sweet, established in the preceding clause tanpe topenpe ne na 'this is a sweet' — is null. The verb kore 'give' is three-place; valency alone guarantees the theme's interpretation. Only the human recipient ekasi 'old man' and the 1SG agent ku= are expressed.",
+    "suggestion": "Rephrase slightly for clarity, e.g., 'The theme (a sweet, established in the preceding clause...) is omitted from this clause.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#002",
+  "chapter": "argument-realization-indexing",
+  "lines": "68",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'The NP cep 'fish' is an optional appositive specifying the zero-marked third-person patient.' However, the gloss for the example (line 64) is 'fish 4.A=catch'. The translation (line 65) is 'We catch fish.' This implies a first-person plural agent ('we'), not a fourth-person agent. The note's mention of 'zero-marked third-person patient' also seems to contradict the gloss '4.A=catch' which indicates a fourth-person agent and an unspecified (likely third-person) patient.",
+    "quote": "Satō 2025: 363. The NP cep 'fish' is an optional appositive specifying the zero-marked third-person patient. The predicate a=koyki is grammatically complete without it.",
+    "suggestion": "Clarify the discrepancy between the gloss/translation and the note regarding the person marking of the agent and patient.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#001",
+  "chapter": "argument-realization-indexing",
+  "lines": "49",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format 'Tamura 1988: 72, cited in Satō 2025: 355' is slightly unusual. It might be clearer to cite Tamura directly if possible, or to rephrase to indicate that Tamura's work is the source for the example, which is then cited by Satō.",
+    "quote": "After Tamura 1988: 72, cited in Satō 2025: 355. No overt pronoun or NP appears; the prefix ku= alone encodes the first-singular agent.",
+    "suggestion": "Consider rephrasing to 'Based on Tamura 1988: 72 (cited in Satō 2025: 355)...' or similar, depending on the intended emphasis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#026",
+  "chapter": "argument-realization-indexing",
+  "lines": "194",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table entry cites 'Satō 2025' without a page number, while other examples in the same table (e.g., lines 186, 200) also lack citations despite claiming to be from Satō 2025. This creates uncertainty about whether these are actual attested examples or constructed illustrations.",
+    "quote": "cep a=koyki",
+    "suggestion": "Add page numbers or example numbers from Satō 2025 for each example in the table, or clarify if they are constructed.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#021",
+  "chapter": "argument-realization-indexing",
+  "lines": "339-342",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about the alternation of 'a=' and 'ku=' is attributed to a single Discord message (thegodofneet) with the tag 'asserted', but the epistemic tag is missing. The surrounding text treats this as a factual observation, but the source is a community member, not a published source. This is a citation hygiene issue.",
+    "quote": "An observed instance: in an uwepeker telling, the narrator alternates <i lang=\"ain-Latn\">a=</i> and <i lang=\"ain-Latn\">ku=</i> to keep the in-story protagonist's speech separate from the narrator's own voice (thegodofneet, aynu-corpora Discord, 2024-07-04, asserted) <Ref k=\"aynucorporadiscord\" />.",
+    "suggestion": "Add an appropriate epistemic tag (e.g., ‹speculative›) or clarify that this is a community observation, not a confirmed fact.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#020",
+  "chapter": "argument-realization-indexing",
+  "lines": "214-215",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example is labeled as mode 5 ('pseudo-incorporation (auxiliary)'), but the note says 'auxiliary rusuy takes no person marker; the lexical verb carries the index'. However, the example 'a=e rusuy' has the index 'a=' on the lexical verb 'e', which is consistent, but the translation 'we' for 'a=' is inconsistent with the fourth-person analysis used elsewhere in the chapter (e.g., line 59: 'a=koyki' glossed as '4.A=catch').",
+    "quote": "<td><i lang=\"ain-Latn\">a=e rusuy</i></td>\n<td>'we want to eat it'</td>",
+    "suggestion": "Either change the gloss of 'a=' to '4' (fourth person) and adjust the translation accordingly, or use a different index for first-person plural.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#019",
+  "chapter": "argument-realization-indexing",
+  "lines": "214-215",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'a=e rusuy' is glossed as 'we want to eat it', but the index 'a=' is fourth person (indefinite/obviative), not first-person plural. The translation 'we' is inconsistent with the standard gloss of 'a=' as fourth person.",
+    "quote": "<td><i lang=\"ain-Latn\">a=e rusuy</i></td>\n<td>'we want to eat it'</td>",
+    "suggestion": "Change the translation to 'one wants to eat it' or 'we (indefinite) want to eat it', or use a different index (e.g., 'ci=' for 1PL) if the intended meaning is first-person plural.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#017",
+  "chapter": "argument-realization-indexing",
+  "lines": "207-209",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example is labeled as mode 4 ('valency-guaranteed NP, no index'), but the verb 'eci=ta-re' contains the index 'eci=' (2PL), which contradicts the claim that there is 'no index'. The note says 'unindexed theme', but the verb itself has an index for the agent.",
+    "quote": "<td><i lang=\"ain-Latn\">wakka eci=ta-re</i></td>\n<td>'I make you dip water'</td>",
+    "suggestion": "Either change the example to one where the theme is truly unindexed (e.g., with a zero-marked third-person agent) or clarify that the 'no index' refers only to the theme, not the agent. The current wording is misleading.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "argument-realization-indexing~p1#014",
+  "chapter": "argument-realization-indexing",
+  "lines": "262-263",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'see §6 below' earlier (line 262), but the section heading for the location-class discussion is §5 (id=\"location-class\"), not §6. The cross-reference is incorrect.",
+    "quote": "when both A and O are third-person and therefore zero-indexed, what disambiguates the two roles is the semantic class of one of the NPs — specifically whether it is a locative-type noun.",
+    "suggestion": "Change 'see §6 below' to 'see §5 below' or update the section numbering to match.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

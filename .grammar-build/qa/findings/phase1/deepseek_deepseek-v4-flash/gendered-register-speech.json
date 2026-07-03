@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "27-29, 93-95",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Lines 27-29: '<td>none (opening <i>eyororpe</i> only)</td>' / Lines 93-95: 'The menoko yukar retains the verse architecture of the standard yukar — notably the sakehe'",
+  "issue": "The table states that yukar (heroic epic) has no refrain (sakehe), only an opening eyororpe, but the prose claims that the standard yukar has a sakehe as part of its verse architecture, contradicting the table.",
+  "suggestion": "Reconcile the table and prose: either correct the table to indicate that yukar does have a sakehe (possibly a distinct type), or adjust the prose to clarify that the sakehe is not present in standard yukar but is a feature of women's verse.",
+  "confidence": 1,
+  "chapter": "gendered-register-speech",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "99, 175, 239, 240",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Line 99: 'from the sources read for this chapter' / Line 175: 'were not read for this chapter' / Line 239: 'not held in the project repository and was not read' / Line 240: 'are held but were not read for this chapter'",
+  "issue": "Multiple instances of wording that addresses the book's production process (what was read, what was in the repository) rather than the reader, constituting pipeline register leaks.",
+  "suggestion": "Rephrase to state the limitation in terms of the evidence base available, not the chapter's reading process. E.g., 'The genre is not attested in other Hokkaido regions in the available documentation.'",
+  "confidence": 0.9,
+  "chapter": "gendered-register-speech",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145-146",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "consistent with Endō's account of gendered oral-literature performance ... ) ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim supported only by a Discord message and a general reference to Endō's work, not by corpus data. The tag overstates the evidence.",
+  "suggestion": "Either downgrade to ‹speculative›, or cite explicitly what corpus data supports the claim.",
+  "confidence": 0.9,
+  "chapter": "gendered-register-speech",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "<S t=\"Honorific and age-conditioned registers\">",
+  "issue": "The section heading promises age-conditioned registers, but the content only discusses honorific (status-conditioned) registers with no age-conditioned features. The section does not deliver on its heading.",
+  "suggestion": "Either revise the heading to 'Honorific (status-conditioned) registers' or add content about age-conditioned registers (e.g., the Hattori 1957 material).",
+  "confidence": 1,
+  "chapter": "gendered-register-speech",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "asserted; consistent with Endō's account",
+  "issue": "The word 'asserted' is editorial meta-commentary within the citation block, describing the source's strength rather than presenting factual content. This is a pipeline register leak.",
+  "suggestion": "Remove 'asserted;' or integrate as 'as asserted by nukopoli (aynucorpora Discord 2024-12-26), consistent with Endō (2022).'",
+  "confidence": 0.8,
+  "chapter": "gendered-register-speech",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

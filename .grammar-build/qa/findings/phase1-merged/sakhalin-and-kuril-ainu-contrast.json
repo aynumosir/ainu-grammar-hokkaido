@@ -1,0 +1,635 @@
+[
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#002",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "26",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states the Sakhalin branch diverged approximately 800 years ago. This implies a divergence around 1226 CE (2026 - 800). However, line 24 states that the language reached the Northern Kuriles around the fifteenth to sixteenth century CE, which is significantly later than 800 years ago. This creates a temporal inconsistency regarding the divergence of the Kuril varieties.",
+    "quote": "The Sakhalin branch diverged from Common Ainu approximately 800 years ago; the Kuril varieties diverged later and cluster more closely with northeast Hokkaido in the lexicostatistic data",
+    "suggestion": "Clarify the timeline for the Kuril varieties' divergence, or adjust the statement about Sakhalin's divergence to be consistent with the Kuril timeline.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that Sakhalin diverged from Common Ainu approximately 800 years ago, but earlier in line 25 it says the language reached southern Sakhalin around the thirteenth century. If the thirteenth century is ~700 years ago (from 2026), this creates a contradiction between the two dates.",
+    "quote": "diverged from Common Ainu approximately 800 years ago",
+    "suggestion": "Reconcile the divergence time with the migration timeline; either adjust '800 years ago' to 'approximately 700 years ago' or clarify the timeline.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#015",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "252",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'teera' is presented without a macron on the first 'e', while 'rera' and 'reera' have macrons. This inconsistency should be resolved.",
+    "quote": "Nairo teera 'wind' corresponds to HA rera and non-Nairo SA reera",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms, either 'teera' or 'teera'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'taarak' is presented without macrons, while 'raarak' has macrons on both 'a's. This inconsistency should be resolved.",
+    "quote": "Nairo taarak 'smooth' corresponds to HA raarak",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms, either 'taarak' or 'taarak'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The word 'teera' uses double 'e' to indicate vowel length, while elsewhere (e.g., 'reera') the same length is marked with macrons (rēra). This creates orthographic inconsistency within the same dialect comparison.",
+    "quote": "teera",
+    "suggestion": "Use macrons consistently: write 'tēra' and 'rēra'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#004",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "82",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'nína' uses a macron on the 'i', while the parenthetical 'niina' does not. This inconsistency in orthography should be resolved.",
+    "quote": "nína (Nairo niina)",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms, either 'níina' or 'niina'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The macron usage is inconsistent: 'nína' uses an acute accent, while 'niina' uses double 'i' for length. Elsewhere in the table, long vowels are consistently marked with macrons (e.g., huure, siisam). This suggests a formatting drift in representing vowel length.",
+    "quote": "nína (Nairo niina)",
+    "suggestion": "Standardize the representation of long vowels using macrons: use 'nīna' or 'niina' consistently across the table.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#025",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "217",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The explanation states that *sih becomes sis due to h > s / i__, but the example shows sis from sik via debuccalization to sih then to sis. This implies two steps: sik > sih > sis. However, the rule 'h > s / i__' applies to coda h, not intervocalic. The conditioning environment is misaligned with the phonological rule stated.",
+    "quote": "sis</i> 'eye' (&lt; *<i lang=\"ain-Latn\">sih</i>, with <i lang=\"ain-Latn\">h &gt; s</i> before <i lang=\"ain-Latn\">i</i>)",
+    "suggestion": "Clarify the rule: it should be 'h > s / i__#' (word-finally after i), not 'h > s / i__' generally.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#028",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "369-388",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'abbreviated in Alonso de la Fuente's discussion' reads like internal commentary rather than encyclopedic prose. It implies a perspective on the source rather than stating the abbreviations as established usage.",
+    "quote": "abbreviated in Alonso de la Fuente's discussion as KD (Dybowski), KK (Krašeninnikov), KL (Klaproth), KT (Torii), and KV (Voznesenskij)",
+    "suggestion": "Rephrase: 'commonly abbreviated as KD (Dybowski), KK (Krašeninnikov), etc.'",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#027",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "344",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sentence is grammatically correct but awkwardly phrased. 'An independent innovation parallel to' could be clearer as 'an innovation independent of but parallel to'.",
+    "quote": "an independent innovation parallel to the prothetic <i lang=\"ain-Latn\">h-</i> found in the Bihoro dialect of Hokkaido",
+    "suggestion": "Reword for clarity: 'an innovation independent of but parallel to the prothetic h- in Bihoro'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#023",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "237",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Earlier in the chapter (line 214) the affiliative suffix is described as '-ihi / -ehe', but here it is called '-hi'. The example 'san+hi = sanihi' also suggests an epenthetic vowel not accounted for, creating a contradiction in the description of the suffix.",
+    "quote": "The affiliative insert is transparently the suffix -hi 'thing, trace' attached to the base",
+    "suggestion": "Clarify whether the suffix is -hi or -ihi, and explain the epenthetic vowel in san+hi = sanihi.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#022",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "120",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text refers to 'Table 2', but the table in this chapter is not numbered. This is a reference to a non-existent label within the source.",
+    "quote": "The correspondences are set out in Table 2",
+    "suggestion": "Either label the table as 'Table 2' or remove the reference to the table number.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#020",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "308",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '(e)ne' is presented without macrons. It would be beneficial to check for consistency with other Ainu forms in the chapter.",
+    "quote": "(e)ne",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'un' is presented without a macron. It would be beneficial to check for consistency with other Ainu forms in the chapter.",
+    "quote": "un",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#019",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "296",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The suffixes '-hci' and '-hcin' are presented without macrons. It would be beneficial to check for consistency with other Ainu forms in the chapter.",
+    "quote": "-hci / -hcin",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ci' is presented without a macron. It would be beneficial to check for consistency with other Ainu forms in the chapter.",
+    "quote": "ci",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pa' is presented without a macron. It would be beneficial to check for consistency with other Ainu forms in the chapter.",
+    "quote": "pa",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#018",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "290",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'ku=' is presented without a macron. It would be beneficial to check for consistency with other Ainu forms in the chapter.",
+    "quote": "ku=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#017",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "286",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The forms 'ci=' and '=as' are presented without macrons. It would be beneficial to check for consistency with other Ainu forms in the chapter.",
+    "quote": "ci= / =as",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The forms 'an=' and '=an' are presented without macrons. It would be beneficial to check for consistency with other Ainu forms in the chapter.",
+    "quote": "an= / =an",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#016",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "270",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'kunkutu' and 'tanku' are presented without macrons. While this might be intentional for these specific words, it's worth checking for consistency with other Ainu forms in the chapter that do use macrons.",
+    "quote": "kunkutu '10' and tanku '100'",
+    "suggestion": "Verify if macrons are consistently applied to all Ainu forms or if there's a specific reason for their omission here.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#014",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "238",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The examples 'san+hi = sanihi' and 'makan+hi = makanihi' show the suffix '-hi' being added. However, the text states that the affiliative suffix is '-ihi / -ehe'. The examples seem to be missing the 'i' or 'e' from the suffix.",
+    "quote": "san+hi = sanihi, makan+hi = makanihi",
+    "suggestion": "Correct the examples to reflect the stated affiliative suffix, e.g., 'san+ihi = sanihihi' or clarify if the suffix itself undergoes changes.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#013",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "231",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the independent SA form is 'sis (debuccalised from *sik, then h becomes s before i)'. This implies a two-step process. However, the debuccalization rule (lines 109-111) states that final /p, t, k/ become /h/. The rule for /h/ becoming /s/ before /i/ (lines 114-116) is described as a secondary rule. The note's explanation is consistent with these rules, but the phrasing could be slightly clearer.",
+    "quote": "note=\"Sakhalin Raiciska affiliative (possessed) form. The independent SA form is sis (debuccalised from *sik, then h becomes s before i), but the affiliative suffix -ihi attaches to the underlying stem /sik-/, restoring the base /k/. Demonstrates that the debuccalisation is a surface phonological process leaving the lexical representation intact.\"",
+    "suggestion": "Ensure the explanation of the sound changes is as clear and concise as possible, perhaps by explicitly stating the intermediate form if necessary.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#012",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "216",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reconstruction '*sih' is presented as the source for 'sis'. However, the debuccalization rule described earlier (lines 114-116) states that 'h' becomes 's' following 'i'. This implies that the original form might have been '*sik' which debuccalized to '*sih', and then the 'h' became 's' before 'i'. The current notation is slightly ambiguous.",
+    "quote": "sis 'eye' (&lt; *sih, with h > s before i)",
+    "suggestion": "Clarify the intermediate steps or the exact reconstruction to avoid ambiguity regarding the sound changes.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the base /k/ is restored in 'sik-ihi'. However, the debuccalization rule (lines 109-111) indicates that final /k/ becomes /h/. The subsequent rule (lines 114-116) states that 'h' becomes 's' following 'i'. This implies that the underlying form should be /sik/, which debuccalizes to /sih/, and then the /h/ becomes /s/ before /i/. The restoration of /k/ in 'sik-ihi' seems to imply that the debuccalization rule is not applied in the possessed form, or that the underlying form is /sik/ and the debuccalization is a surface phenomenon.",
+    "quote": "sik-ihi — the base /k/ restored — not as the unattested *sis-ihi.",
+    "suggestion": "Clarify the interaction between debuccalization and suffixation, and how the underlying consonant is determined.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#011",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "201",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'p/t/k' as coda stops preserved in some Sakhalin subdialects. However, the debuccalization rule described earlier (lines 109-111) states that these stops become 'h'. The mention of preserving 'p/t/k' seems to contradict the general rule, or at least requires further clarification on how these stops are preserved.",
+    "quote": "preserve the coda stops p/t/k like Hokkaido; the Esutoru subdialect distinguishes -is from -ih",
+    "suggestion": "Clarify how the coda stops are preserved in these subdialects, or if they are indeed preserved, explain the exception to the general debuccalization rule.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phonetic realization '[uf]' for the velar fricative /x/ seems unusual. Typically, velar fricatives are realized with sounds like [x] or [ɣ]. The realization '[uf]' might be a typo or require further explanation.",
+    "quote": "Alonso de la Fuente treats it as a velar fricative /x/ (with realisations [ax], [iɕ], [uf]), while Tangiku and community members analyse it as a laryngeal breath h",
+    "suggestion": "Verify the phonetic realization '[uf]' and correct it if it is erroneous, or provide a more detailed explanation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#009",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "162",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'mat-ihi' connects the stem and suffix. The 'Sakhalin (Raiciska) independent' column shows 'mah', implying debuccalization. The representation of the possessed form should be consistent with the debuccalization rule.",
+    "quote": "mat-ihi",
+    "suggestion": "Clarify the representation of the debuccalized stem and its suffixation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#008",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "156",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'sik-ihi' connects the stem and suffix. The 'Sakhalin (Raiciska) independent' column shows 'sis', implying debuccalization and subsequent sound change. The representation of the possessed form should be consistent with the debuccalization rule.",
+    "quote": "sik-ihi",
+    "suggestion": "Clarify the representation of the debuccalized stem and its suffixation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#007",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "150",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 138, the hyphen in 'tek-ehe' connects the stem and suffix. The 'Sakhalin (Raiciska) independent' column shows 'teh', implying debuccalization. The representation of the possessed form should be consistent with the debuccalization rule.",
+    "quote": "tek-ehe",
+    "suggestion": "Clarify the representation of the debuccalized stem and its suffixation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#006",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "138",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'cep-ihi' is used to connect the stem and suffix. However, in the 'Sakhalin (Raiciska) independent' column, the debuccalized form 'ceh' is shown without a hyphen, and in the 'Sakhalin possessed (affiliative)' column, the form 'cep-ihi' is shown. This suggests an inconsistency in how the debuccalization and suffixation are represented.",
+    "quote": "cep-ihi",
+    "suggestion": "Clarify whether the debuccalization applies before or after suffixation, and ensure consistent representation of stems and suffixes.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#005",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The notation 'i__' for the environment of the debuccalization rule is unclear. It is likely intended to mean 'before i', but the double underscore is unconventional.",
+    "quote": "h > s / i__",
+    "suggestion": "Clarify the notation, e.g., 'h > s / _i' or 'h > s before i'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#003",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "44",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that a Sakhalin short vowel in a closed-syllable stem corresponds to Hokkaido high pitch. However, the table (lines 63-86) shows examples where Sakhalin long vowels correspond to Hokkaido high pitch (e.g., 'húre' vs 'huure', 'sísam' vs 'siisam', 'hése' vs 'heese'). The description in the prose does not fully align with the provided examples.",
+    "quote": "Hattori (1967) first established the correspondence: a Sakhalin long vowel corresponds to a Hokkaido high pitch, and a Sakhalin short vowel in a closed-syllable stem likewise corresponds to Hokkaido high pitch in the same environments",
+    "suggestion": "Review the prose description to ensure it accurately reflects the correspondence shown in the table, or provide examples that illustrate the closed-syllable case.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#001",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Ono (2020) is placed after the claim it supports, but the claim itself is a summary of the finding. It would be clearer to cite Ono (2020) directly after mentioning the spectral-clustering methods.",
+    "quote": "<Ref k=\"ono2020\" /> demonstrates with spectral-clustering methods, however, that the three-way \"Major Division\" carries no statistically robust support: the cleaner two-way structure is Hokkaido (including the Kuril varieties) versus Sakhalin.",
+    "suggestion": "Move the citation <Ref k=\"ono2020\" /> to follow 'spectral-clustering methods'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#026",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "225-232",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme boundary in 'sik-ihi' suggests that '-ihi' is the possessive suffix, but the gloss 'eye-POSS' does not reflect the internal structure of the stem 'sik' and the suffix '-ihi'. A more precise gloss would break down the components.",
+    "quote": "m=\"sik-ihi\" g=\"eye-POSS\"",
+    "suggestion": "Change gloss to 'eye-POSS' → 'eye-POSS.SG' or better: 'sik=eye, -ihi=POSS' to align with Leipzig rules.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#024",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "188",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation 'Alonso de la Fuente 2022 Table 18' in the note is not formatted as a proper <Ref> element and appears as free text, breaking citation consistency. The correct reference should be <Ref k=\"alonso2022\" p=\"Table 18\" />.",
+    "quote": "PA *ciʔep, Alonso de la Fuente 2022 Table 18",
+    "suggestion": "Replace the inline citation with a proper <Ref> element.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#021",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "82",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Hokkaido (Saru) column includes a parenthetical reference to Nairo, which is a Sakhalin subdialect, not a Hokkaido form. This misplaces the dialect information and contradicts the table's column headers.",
+    "quote": "nína (Nairo niina)",
+    "suggestion": "Remove the parenthetical or move it to the Sakhalin column; Nairo is a Sakhalin subdialect.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-and-kuril-ainu-contrast~p1#010",
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "lines": "188",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the Saru coda -p in 'cep' corresponds to Sakhalin Raiciska 'ceh'. However, the example itself (lines 182-189) is marked as 'SAR' dialect, which is Hokkaido. The note seems to be conflating the Hokkaido form with the Sakhalin correspondence, and also introduces a new dialect (Horobetsu) not previously mentioned in this context.",
+    "quote": "note=\"The Saru coda -p in cep 'fish' (PA *ciʔep, Alonso de la Fuente 2022 Table 18) corresponds to Sakhalin Raiciska ceh. The Horobetsu dialect retains the Common Ainu form ciʔep with the glottal break.\"",
+    "suggestion": "Clarify which dialect the example 'cep ku=e' belongs to and ensure the note accurately reflects the correspondences and dialectal information.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

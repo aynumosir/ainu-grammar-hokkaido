@@ -1,0 +1,406 @@
+[
+ {
+  "id": "applicative-e~p1#002",
+  "chapter": "applicative-e",
+  "lines": "174-181",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=APPL-walk' indicates a 4th person agent, but the note explains that 'a=' marks the agent of the derived transitive. The free translation 'One can walk on one's own feet' implies a 3rd person subject. The gloss and note seem to conflict regarding the person marking.",
+    "quote": "<Ex m=\"a=kemaha a=e-apkas easkay\" g=\"4.POSS=foot 4.A=APPL-walk can\" tr=\"One can walk on one's own feet.\" ... note=\"The fourth-person prefix a= marks both the possessed noun (a=kemaha 'one's foot/leg') and the agent of the derived transitive (a=e-apkas 'one walks by means of'). The foot is the instrument applied object, paraphrasable as kemaha ani apkas.\"",
+    "suggestion": "Clarify the person marking indicated by 'a=' in the gloss and its relation to the subject in the translation and note.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string shows 'a=e-apkas' but the gloss renders it as '4.A=APPL-walk', where the outer 'a=' is glossed as '4.A' (agent) while the same prefix appears on the noun as '4.POSS'. This creates a person/number inconsistency: the same prefix cannot simultaneously mark possessive and agent unless the syntax supports coreference, which is not clarified. The gloss implies two separate prefixes but the form uses the same 'a='.",
+    "quote": "a=kemaha a=e-apkas easkay",
+    "suggestion": "Revise gloss to clarify that the same prefix 'a=' serves dual functions (possessive on noun, agent on verb), e.g., '4.POSS=foot 4=APPL-walk can' or add note on clitic sharing.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#006",
+  "chapter": "applicative-e",
+  "lines": "306-308",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'from the read sources' is meta-commentary about the production process and should be removed for a reader-facing text.",
+    "quote": "The etymology is semantically motivated but cannot be verified against the diachronic record from the read sources; synchronically, <i lang=\"ain-Latn\">eykaun</i> functions as a transitive base.",
+    "suggestion": "Remove 'from the read sources'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'from the read sources' is a meta-commentary referring to the author's own reading process, not appropriate for a reference grammar aimed at the reader.",
+    "quote": "cannot be verified against the diachronic record from the read sources",
+    "suggestion": "Rephrase to 'from available sources' or 'from the historical record'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#004",
+  "chapter": "applicative-e",
+  "lines": "274-276",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'corpus-confirmed' is attached to the entire sentence, but the specific examples are attributed to a community source. It's unclear if the 'corpus-confirmed' status applies to the general statement about the periphrastic pattern or to the specific examples provided.",
+    "quote": "for example, <i lang=\"ain-Latn\">ani e=kanpinuye p</i> 'a thing with which one writes' (= pencil) or <i lang=\"ain-Latn\">ani humi a=aste p</i> 'a thing with which one produces sound' (= musical instrument; nukopoli, aynu-corpora Discord 2026) <Ref k=\"aynucorporadiscord\" /> ‹corpus-confirmed›.",
+    "suggestion": "Clarify what the 'corpus-confirmed' status refers to, or attach it more specifically to the community source attribution.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim whose only source is a Discord message (nukopoli, aynu-corpora Discord 2026). This inflates the confidence beyond what the evidence supports.",
+    "quote": "‹corpus-confirmed›. The two constructions serve different functions",
+    "suggestion": "Replace ‹corpus-confirmed› with ‹speculative› or add a stronger published source.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#013",
+  "chapter": "applicative-e",
+  "lines": "220",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string has 'e=e-hoyupu', which includes two instances of 'e-', but the gloss renders only one as '2SG.A=APPL-run'. The first 'e=' is correctly glossed as agent, but the second 'e-' (the applicative) is not separated in the gloss. This conflates the second-person clitic 'e=' with the applicative 'e-', creating ambiguity in alignment.",
+    "quote": "i=corpokke e=e-hoyupu yak pirka na",
+    "suggestion": "Revise morpheme string or gloss to distinguish the two 'e-' elements, e.g., m: 'i=corpokke e= e-hoyupu' OR g: '1SG.O=under 2SG.A=APPL-run COND good FIN' with space to show separation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#012",
+  "chapter": "applicative-e",
+  "lines": "47",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string contains 'e-tuye' but the gloss 'APPL-cut' does not reflect the hyphen; the segmentation implies a prefix + root structure not mirrored in the glossing format. The gloss should use a hyphen or mark the boundary to align with morphemic analysis.",
+    "quote": "sirkorkamuy emus e-tuye",
+    "suggestion": "Change gloss to 'APPL-cut' → 'APPL-cut' (no change needed if format is standard) OR update m to 'e-tuye' → 'e-tuye' if already correct; but consistency with other examples like 'e-apkas' suggests hyphen is expected. However, 'e-tuye' in m is correctly hyphenated; the issue may be that 'APPL-cut' should be 'APPL-cut' (same). No actual mismatch — likely false alarm. Re-evaluate: 'e-tuye' is correctly segmented and glossed as APPL-cut. No real issue.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#010",
+  "chapter": "applicative-e",
+  "lines": "195",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note claims Manner and Path are each 2%, but the table (line 147) shows Manner at 3% and Path at 2%.",
+    "quote": "Both Manner and Path roles (each 2%)",
+    "suggestion": "Change to 'Manner (3%) and Path (2%)' or 'Manner and Path roles (3% and 2% respectively)'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#019",
+  "chapter": "applicative-e",
+  "lines": "275",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'nukopoli, aynu-corpora Discord 2026' appears in parentheses mid-sentence as a source attribution, which is acceptable, but it is formatted as narrative text rather than being fully integrated or cited via Ref. This risks appearing like editorial commentary.",
+    "quote": "nukopoli, aynu-corpora Discord 2026",
+    "suggestion": "Ensure that all such attributions are enclosed in <Ref> or marked clearly as community sources; currently it is cited correctly with <Ref k=\"aynucorporadiscord\" />, so may not be an error.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#018",
+  "chapter": "applicative-e",
+  "lines": "31",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The accent is marked on 'kotán' but not on 'ekótanne' — inconsistency in macron or accent marking. If 'kotán' has acute accent, 'ekótanne' should reflect prosodic shift. Orthographic inconsistency in accent representation within a minimal pair example.",
+    "quote": "kotán",
+    "suggestion": "Mark accent on 'ekótanne' as 'ekótanne' or use macrons consistently if that is the system.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#011",
+  "chapter": "applicative-e",
+  "lines": "323",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Similar to line 306, 'the read literature' is a meta-commentary about the author's consulted sources.",
+    "quote": "the nearest theoretical alternative present in the read literature",
+    "suggestion": "Rephrase to 'the literature' or 'the main theoretical alternative'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#008",
+  "chapter": "applicative-e",
+  "lines": "318-320",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'present in the read literature' is meta-commentary about the production process and should be removed for a reader-facing text.",
+    "quote": "Baker's incorporation analysis, which treats applicative formation as P-incorporation in the syntax, is the nearest theoretical alternative present in the read literature <Ref k=\"baker1988\" paren />",
+    "suggestion": "Remove 'present in the read literature'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#007",
+  "chapter": "applicative-e",
+  "lines": "314-315",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'the principal read sources' is meta-commentary about the production process and should be removed for a reader-facing text.",
+    "quote": "Bugaeva treats all three markers as applicatives throughout and positions the older labels — 充当相 (Kindaichi and Chiri 1936) and case-prefix 格の関係を表わす接頭辞 (Chiri 1942) — as historical precursors rather than competing analyses <Ref k=\"bugaeva2006\" p=\"186\" />",
+    "suggestion": "Remove 'the principal read sources'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#005",
+  "chapter": "applicative-e",
+  "lines": "305",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'speculative' tag is applied to the entire statement, but the community attribution is for a specific decomposition. It's unclear if the speculation applies to the decomposition itself or to the broader analysis of <i lang=\"ain-Latn\">eykaun</i>.",
+    "quote": "derived from the postpositional phrase <i lang=\"ain-Latn\">ka un</i> 'be on top of' (nukopoli, aynu-corpora Discord 2024) <Ref k=\"aynucorporadiscord\" /> ‹speculative›.",
+    "suggestion": "Clarify what the 'speculative' status refers to, or attach it more specifically to the community source attribution.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#003",
+  "chapter": "applicative-e",
+  "lines": "195",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'Both Manner and Path roles (each 2%) derive exclusively from intransitive bases.' This information seems disconnected from the example provided, which illustrates the purpose sub-type. It might be better placed in a more general discussion of these roles.",
+    "quote": "note=\"Verbal phrase. The applied object turepta encodes the purpose of the motion, paraphrasable as turepta kusu arpa 'go for the purpose of digging lily-bulbs'. Both Manner and Path roles (each 2%) derive exclusively from intransitive bases.\"",
+    "suggestion": "Consider moving this sentence to a more appropriate section or rephrasing it to directly relate to the purpose example.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#001",
+  "chapter": "applicative-e",
+  "lines": "31-32",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'consensus' is attached to the example, but the example itself is attributed to a community source and a specific reference. It's unclear if the consensus applies to the example itself or the analysis of the example.",
+    "quote": "kotán → ekótanne (nukopoli, aynu-corpora Discord 2024) <Ref k=\"aynucorporadiscord\" />; <Ref k=\"nakagawa2024\" p=\"192–194\" /> ‹consensus›.",
+    "suggestion": "Clarify what the 'consensus' refers to, or move the consensus tag to a more general statement.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#017",
+  "chapter": "applicative-e",
+  "lines": "19",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation claims evidence for the valency-class diagnostic from pages 137 and 140, but the surrounding prose attributes this diagnostic to Nakagawa 2024 generally without specifying that those pages contain the diagnostic test. If those pages do not actually discuss the diagnostic, the citation is misplaced.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"137, 140\" />",
+    "suggestion": "Verify that pp. 137 and 140 discuss the prefixal agent indexes and resistance to S suffixes; otherwise, correct page numbers or remove citation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#016",
+  "chapter": "applicative-e",
+  "lines": "154",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Path is listed separately from Location in the second table (each 2%), but in the first table (Nakagawa's types), locative (type 4) combines both location and path under one category with shared paraphrase via 'ta/un/peka'. This contradicts the later disaggregation.",
+    "quote": "Path (<i lang=\"ain-Latn\">peka</i>)",
+    "suggestion": "Revise either table to align: either combine Path and Location in the second table or split the first table accordingly.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#015",
+  "chapter": "applicative-e",
+  "lines": "149",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Manner is listed as a role with 3%, but it was not included in Nakagawa’s four sub-types outlined in the earlier table (instrument, purpose, content/theme, locative). This creates a mismatch between the two classification schemes presented in the same chapter.",
+    "quote": "Manner (<i lang=\"ain-Latn\">kor</i>)",
+    "suggestion": "Either revise the first table to include Manner and other roles, or add a note explaining that the second table uses a more fine-grained, corpus-driven classification.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#014",
+  "chapter": "applicative-e",
+  "lines": "130",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists 'Cause' as a role with 8%, but this role does not appear in Nakagawa's four sub-types listed earlier (§2: instrument, purpose, content/theme, locative). This introduces a category not previously defined or discussed, creating a contradiction between classification systems.",
+    "quote": "Cause",
+    "suggestion": "Either add 'Cause' to the initial typology or clarify that this is a separate corpus-based categorization not aligned with Nakagawa's types.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "applicative-e~p1#009",
+  "chapter": "applicative-e",
+  "lines": "355-362",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'APPL-ANTIP-help' suggests that the applicative prefix 'e-' comes before the antipassive 'i-'. However, the note states that 'i-' absorbs beneficiaries and 'e-' re-applicativizes the resulting intransitive. This implies the order should be 'ANTIP-APPL-help' or that the gloss is not reflecting the actual morpheme order in the example.",
+    "quote": "<Ex m=\"tokaci wa ek pewre kur monrayke e-i-kasuy\" g=\"Tokachi from come young man work APPL-ANTIP-help\" tr=\"A young man who came from Tokachi helped with the work.\" ... note=\"The antipassive i- absorbs the unspecified beneficiaries of kasuy 'help'; e- then re-applicativizes the resulting intransitive, taking monrayke 'work' as the Content applied object. The relative clause tokaci wa ek pewre kur 'young man who came from Tokachi' modifies the subject.\"",
+    "suggestion": "Reconcile the gloss order with the explanation in the note. If 'e-i-kasuy' is the correct form, the gloss should reflect that order.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

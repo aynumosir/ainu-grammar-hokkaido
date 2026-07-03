@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "30-33",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"tap a=ye katu Piratur sekor a=ye haw-e ne\" g=\"this 4.A=say manner Piraturu QUOT 4.A=say voice-POSS COP\" tr=\"This way of saying it is called Piraturu, so they say.\"",
+  "issue": "The morphemic line has 'Piratur' but the gloss and translation have 'Piraturu'; the Ainu form and its English rendering disagree.",
+  "suggestion": "Change the morphemic line to 'Piraturu' or change the gloss and translation to 'Piratur'.",
+  "confidence": 0.9,
+  "chapter": "evidential-schema-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "517-524",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "note=\"... The indirect visual siri an is embedded under the direct ruwe ne ...\"",
+  "issue": "The note refers to the embedded form as 'siri an', but the example's morphemic line shows 'sir-an' (bare concept form), not the possessed 'siri'. This contradicts the note's description.",
+  "suggestion": "Change the note to 'sir an' (or 'sir-an') to match the example, or adjust the example to 'siri an' if the source supports the possessed form.",
+  "confidence": 0.8,
+  "chapter": "evidential-schema-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "103",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "Whether the concept form (sir, haw) and the corresponding possessed form carry a usage or nuance difference is explicitly left unresolved in Tamura's dictionary <Ref k=\"tamura1996\" p=\"s.v. sir\" /> ‹speculative›.",
+  "issue": "The epistemic tag ‹speculative› is applied to a claim about what the dictionary says (a factual statement), not to a speculation by the author. The dictionary's own lack of resolution is not speculative.",
+  "suggestion": "Remove the ‹speculative› tag (or replace it with a tag that accurately reflects the statement's status, e.g., no tag needed).",
+  "confidence": 0.7,
+  "chapter": "evidential-schema-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

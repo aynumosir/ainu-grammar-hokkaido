@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "96, 207–213",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td>VP; NP</td> ... the antecedent constraint is not uniform: hi requires a VP antecedent; p ~ pe takes a VP or a prenominal but not a bare NP; utar exceptionally accepts a bare NP as well",
+  "issue": "The table lists kur as accepting an NP antecedent (VP; NP), but the prose on distribution asymmetry only mentions utar as ‘exceptionally’ accepting a bare NP, implying that no other formal noun (including kur) does. This directly contradicts the table entry.",
+  "suggestion": "Either remove NP from kur's antecedent types in the table, or add kur to the list of exceptions in the asymmetry paragraph.",
+  "confidence": 0.95,
+  "chapter": "formal-defective-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "328",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "g=\"face shave place 1SG.S=go CONJ come.back track-POSS COP\"",
+  "issue": "The formal noun usi is glossed as 'place' (its core sense) rather than 'NMLZ' as used for other general formal nouns (p, pe, hi at lines 229, 239, 252, 289). This breaks the glossing convention established for the class in this chapter.",
+  "suggestion": "Change the gloss of usi to 'NMLZ' for consistency, or adopt a consistent policy for glossing formal nouns with their core sense throughout.",
+  "confidence": 0.8,
+  "chapter": "formal-defective-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "264–266",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "and ani humi a=aste p 'musical instrument' (nukopoli, aynu-corpora Discord, 2026-05-29) … ⟨corpus-confirmed⟩.",
+  "issue": "The claim that the instrumental pattern is corpus-confirmed is supported only by a single example from a Discord message; a Discord message is not a corpus and does not warrant the epistemic tag ⟨corpus-confirmed⟩.",
+  "suggestion": "Replace the epistemic tag with ⟨original-needs-review⟩ or cite an actual corpus source if one exists; alternatively, lower the tag to ⟨consensus⟩ if multiple reliable sources support the pattern.",
+  "confidence": 0.9,
+  "chapter": "formal-defective-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "367–368",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "(nukopoli, aynu-corpora Discord, 2024-11-09) ⟨corpus-confirmed⟩.",
+  "issue": "The claim about the contrast between kuni a=ramu and seko a=ye is attributed solely to a single Discord message but tagged as ⟨corpus-confirmed⟩. A Discord message does not constitute a corpus source.",
+  "suggestion": "Replace the epistemic tag with ⟨original-needs-review⟩ or cite a published source; if the Discord message references corpus data, clarify that dependency.",
+  "confidence": 0.9,
+  "chapter": "formal-defective-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "356–358",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "In the Hokkaido corpus kur ranks at position 98 (2,456 tokens), consistent with its dual role as agent-denoting nominalizer in narrative and as a class-term head.",
+  "issue": "A specific quantitative claim (rank, token count) is made without an accompanying citation. The reader cannot verify where these corpus statistics come from.",
+  "suggestion": "Add a citation to the corpus description or to the relevant section of the grammar where the corpus is introduced.",
+  "confidence": 0.85,
+  "chapter": "formal-defective-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "201–205",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Phonological fusion. p ~ pe and hi fuse prosodically with the preceding element...",
+  "issue": "The diagnostic is introduced as one of four properties that distinguish formal nouns as a group, yet only two members (p~pe and hi) are said to fuse. If the other formal nouns do not fuse phonologically, then the diagnostic does not apply to the whole class, contradicting the claim that it is a 'shared diagnostic'.",
+  "suggestion": "Either specify that the fusion diagnostic applies only to a subset, or provide evidence that other formal nouns also undergo fusion.",
+  "confidence": 0.7,
+  "chapter": "formal-defective-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

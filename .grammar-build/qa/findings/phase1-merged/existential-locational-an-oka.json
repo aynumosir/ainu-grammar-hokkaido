@@ -1,0 +1,919 @@
+[
+ {
+  "id": "existential-locational-an-oka~p1#005",
+  "chapter": "existential-locational-an-oka",
+  "lines": "59-60",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for the community source is inconsistent. It includes both a `<Ref>` tag and a direct mention of the source with a date and consensus grade. This is redundant and could be simplified.",
+    "quote": "The transitive locational verb <A w=\"un\" gl=\"be at (transitive)\" /> works differently — because it takes the location as its object, <i lang=\"ain-Latn\">A B un</i> is well-formed\n<Ref k=\"aynucorporadiscord\" />;\nnukopoli, aynu-corpora Discord, 2024 ‹consensus›.",
+    "suggestion": "Either use only the `<Ref>` tag with the community source details, or remove the `<Ref>` tag and keep the direct mention.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag '‹consensus›' is applied to a claim whose only cited support is a single Discord message, which does not by itself establish consensus.",
+    "quote": "and the transitive locational verb un works differently — because it takes the location as its object, A B un is well-formed (aynucorporadiscord); nukopoli, aynu-corpora Discord, 2024 ‹consensus›.",
+    "suggestion": "Either replace '‹consensus›' with a more appropriate tag such as '‹community-note›', or add additional published sources to support the claim.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation format is non-standard: the inline attribution 'nukopoli, aynu-corpora Discord, 2024' appears outside the Ref component and duplicates information. The Ref alone should carry the citation, with metadata handled in the bibliography.",
+    "quote": "<Ref k=\"aynucorporadiscord\" />; nukopoli, aynu-corpora Discord, 2024 ‹consensus›",
+    "suggestion": "Move the full attribution into the Ref component as e.g., <Ref k=\"aynucorporadiscord\" p=\"nukopoli, 2024\" /> and remove the inline text.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#018",
+  "chapter": "existential-locational-an-oka",
+  "lines": "228",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss indicates '4.A=have' and 'exist.PL=4.S', suggesting fourth-person marking. However, the translation is 'I was living all alone in my village, and —', which implies first-person. This is a direct contradiction between the gloss and the translation regarding person marking.",
+    "quote": "g=\"4.A=have village LOC truly one COP exist.PL=4.S CONJ\"",
+    "suggestion": "Align the gloss with the translation (e.g., '1.A=have', 'exist.PL=1.S') or vice versa, and ensure consistency with the note.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'have' for the prefix a=, but the morpheme a= in this context is the fourth-person agent marker, not the verb 'have' (kor). This misglossing could confuse readers about the function of a=.",
+    "quote": "g=\"4.A=have village LOC truly one COP exist.PL=4.S CONJ\"",
+    "suggestion": "Change 'have' to '4.A' or '4.SBJ' to reflect agent indexing, not the lexical verb 'have'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#034",
+  "chapter": "existential-locational-an-oka",
+  "lines": "397-399",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for the community source is inconsistent, similar to line 59-60. It includes both a `<Ref>` tag and a direct mention of the source with a date and consensus grade.",
+    "quote": "a community-proposed restriction — that inanimate possessors cannot take <i lang=\"ain-Latn\">kor</i> and are paraphrased with the existential instead — is a sharpening of the BE/HAVE split that awaits systematic corpus documentation\n<Ref k=\"aynucorporadiscord\" />;\nnukopoli, aynu-corpora Discord, 2024 ‹contested›.",
+    "suggestion": "Either use only the `<Ref>` tag with the community source details, or remove the `<Ref>` tag and keep the direct mention.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as line 59: the citation is split between Ref and inline text, violating consistent citation formatting. Additionally, a Discord source is tagged ‹contested›, which is appropriate, but the formatting remains problematic.",
+    "quote": "<Ref k=\"aynucorporadiscord\" />; nukopoli, aynu-corpora Discord, 2024 ‹contested›",
+    "suggestion": "Use <Ref k=\"aynucorporadiscord\" p=\"nukopoli, 2024\" /> and remove the inline attribution.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#032",
+  "chapter": "existential-locational-an-oka",
+  "lines": "388",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'affiliative-form' is presented with a hyphen. While understandable, it might be more consistent to use a hyphen or rephrase to avoid the hyphen if possible, depending on the established style for such terms.",
+    "quote": "<Xr ch=\"concept-form-affiliative-form\">affiliative-form</Xr>",
+    "suggestion": "Consider using 'affiliative form' or 'affiliative-form' if that is the established terminology.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The plural form is given as okay here, but earlier in the chapter (e.g., line 8) both oka and okay are presented as variants. This section selectively uses only okay for the plural, which may imply a dialectal or functional restriction not justified in this context.",
+    "quote": "<i lang=\"ain-Latn\">an</i> (sg) / <i lang=\"ain-Latn\">okay</i> (pl)",
+    "suggestion": "Use oka/okay to maintain consistency with earlier presentation of variation.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#001",
+  "chapter": "existential-locational-an-oka",
+  "lines": "8",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'okay' is presented as an alternative form of 'oka' with the same gloss. However, the gloss is not enclosed in italics, which is inconsistent with other glosses in the document.",
+    "quote": "<A w=\"oka\" gl=\"exist, be, live (pl)\" /> / <A w=\"okay\" gl=\"exist, be, live (pl)\" />",
+    "suggestion": "<A w=\"oka\" gl=\"exist, be, live (pl)\" /> / <A w=\"okay\" gl=\"exist, be, live (pl)\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent orthographic representation: the two variants of the plural existential verb are presented with different spellings (oka vs okay), but the gloss is identical. This may suggest a need for consistency in how variants are displayed, especially since the chapter later discusses the distribution of oka vs okay.",
+    "quote": "<A w=\"oka\" gl=\"exist, be, live (pl)\" /> / <A w=\"okay\" gl=\"exist, be, live (pl)\" />",
+    "suggestion": "Consider using a unified format such as <A w=\"oka/okay\" gl=\"exist, be, live (pl)\" /> to reflect dialectal variation more consistently.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#040",
+  "chapter": "existential-locational-an-oka",
+  "lines": "176",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table entry for okay claims 2,608 tokens and rank 96, but earlier prose (line 32) only mentions oka at rank 23 with 9,637 tokens and does not reference okay’s rank or frequency. This creates a discrepancy: if okay is a variant of the same verb, its rank and count should be accounted for in the overall frequency discussion.",
+    "quote": "rank 96 in the full corpus (2,608 tokens, homonym-mixed)",
+    "suggestion": "Revise the frequency paragraph to include both oka and okay counts and clarify whether ranks are for individual forms or combined.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#038",
+  "chapter": "existential-locational-an-oka",
+  "lines": "32",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that an ranks first and oka twenty-third by frequency, but in the table at lines 169–177, oka is said to rank 23 (9,637 tokens) and okay 96 (2,608 tokens). The frequency figure for oka (9,637) is attributed only to oka in the table, but the prose combines oka and okay as homonym-mixed counts under oka’s rank, creating a contradiction.",
+    "quote": "an ranks first in the approximately 1.57 million–token Hokkaido corpus (86,986 occurrences) and oka twenty-third (9,637)",
+    "suggestion": "Revise the prose to clarify that the 9,637 occurrences attributed to oka in rank 23 exclude okay, or adjust the table to reflect combined counts if that was the intent.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#019",
+  "chapter": "existential-locational-an-oka",
+  "lines": "232",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'the narrative first person triggers the fourth-person suffix =an'. This is contradictory. A first-person narrator should trigger first-person marking, not fourth-person. The explanation that the fourth-person suffix requires the plural stem is also problematic if the suffix itself is incorrectly identified.",
+    "quote": "Singular-referent/plural-verb: the narrative first person triggers the fourth-person suffix =an, which requires plural stem oka, even though oar sinen ne 'truly alone' makes the single referent explicit. Constructed after Nakagawa (2024: 178, exx. 151–152; Shizunai and Kushiro narrators).",
+    "suggestion": "Re-evaluate the person marking in the example and the explanation. If it is indeed first person, the fourth-person suffix explanation is incorrect. If it is fourth person, the translation and gloss should reflect that.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#017",
+  "chapter": "existential-locational-an-oka",
+  "lines": "216",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that <i lang=\"ain-Latn\">sinen ne oka=an</i> means 'I am living alone', and that 'a singular first-person narrator uses the plural stem because the fourth-person suffix requires it'. However, the example sentence is constructed with <i lang=\"ain-Latn\">a=kor</i> ('my') in line 227, indicating a first-person possessor, not a fourth-person subject. The gloss in line 228 also shows '4.A=have', which is confusing in the context of a first-person narrator. This creates a contradiction regarding the person marking and the use of the fourth-person suffix.",
+    "quote": "The phrase <i lang=\"ain-Latn\">sinen ne oka=an</i> 'I am living alone' (with <i lang=\"ain-Latn\">sinen ne</i> 'being only one, alone') illustrates this directly: a singular first-person narrator uses the plural stem because the fourth-person suffix requires it.",
+    "suggestion": "Clarify the person marking in the example. If the narrator is first-person, the fourth-person suffix explanation might be misapplied here. If the example is intended to illustrate the fourth-person suffix, the translation and gloss should reflect that.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#037",
+  "chapter": "existential-locational-an-oka",
+  "lines": "383",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The section heading specifies only 'an and isam', but the content also notes the plural stem 'okay' (e.g., line 385: 'an (sg) / okay (pl) and the negative isam'). The heading is therefore slightly narrower than the topic discussed.",
+    "quote": "Predicative possession: BE-type an and isam",
+    "suggestion": "Change heading to 'Predicative possession: BE-type an/oka(y) and isam' to match the coverage in the body.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#036",
+  "chapter": "existential-locational-an-oka",
+  "lines": "196",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'mippoho' treats it as 'grandchild' without indicating the possessive meaning ('my grandchild'), while elsewhere in the chapter possessive affixes are segmented and glossed explicitly (e.g., 'ku=cise' → '1SG.POSS=house'). This is a minor inconsistency in glossing practice.",
+    "quote": "g=\"grandchild this village LOC exist\"",
+    "suggestion": "Gloss 'mippoho' as '1SG.POSS-grandchild' or use '[1SG.POSS-]grandchild' to match the segmentation pattern of other possessive forms in the chapter.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#035",
+  "chapter": "existential-locational-an-oka",
+  "lines": "404",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference uses the slug 'adnominal-possession-double-marking'. However, the section title in the document is 'Predicative possession: BE-type an and isam' (line 383). The slug should ideally match the section title for clarity.",
+    "quote": "see <Xr ch=\"adnominal-possession-double-marking\" />.",
+    "suggestion": "Update the slug to match the section title, e.g., 'predicative-possession-adnominal-double-marking'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#031",
+  "chapter": "existential-locational-an-oka",
+  "lines": "375",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of '↔' (right arrow) to represent opposition between 'copula' and 'existential' is a bit unconventional in prose. While understandable, it might be clearer to use words like 'and' or 'or' in a descriptive sentence.",
+    "quote": "The copula↔existential opposition is thus grammaticalized into a mood distinction",
+    "suggestion": "Rephrase to 'The opposition between the copula and the existential...' or 'The copula and existential opposition...'.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference uses the slug 'nonverbal-predicate-tam-negation'. However, the section title in the document is 'The ne / an mood alternation in clause-final evidential frames' (line 364). The slug should ideally match the section title for clarity.",
+    "quote": "see <Xr ch=\"nonverbal-predicate-tam-negation\" />.",
+    "suggestion": "Update the slug to match the section title, e.g., 'evidential-frame-tam-negation'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#030",
+  "chapter": "existential-locational-an-oka",
+  "lines": "371",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The examples 'ruwe an?' and 'hawe an?' are presented as content questions. The gloss for 'an' is 'exist'. The gloss for 'ruwe' and 'hawe' are not provided in this sentence, but are implied to be formal nouns. The question mark indicates interrogative mood. This is clear, but providing explicit glosses for 'ruwe' and 'hawe' would enhance clarity.",
+    "quote": "<i lang=\"ain-Latn\">ruwe an?</i>, <i lang=\"ain-Latn\">hawe an?</i>, and so on",
+    "suggestion": "Provide glosses for 'ruwe' and 'hawe' in this context, e.g., 'ruwe.N' and 'hawe.N'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#029",
+  "chapter": "existential-locational-an-oka",
+  "lines": "359",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'merayke=an' is 'I feel cold'. The morpheme 'an' is glossed as 'exist'. The morpheme 'merayke' is not explicitly glossed, but it's implied to mean 'feel' or 'be cold' in relation to the speaker. The gloss should ideally break down 'merayke' or provide a more complete gloss for the combined form.",
+    "quote": "one-place <i lang=\"ain-Latn\">merayke=an</i> 'I feel cold'",
+    "suggestion": "Provide a gloss for 'merayke', e.g., 'feel.cold' or 'be.cold.1SG'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference uses the slug 'property-concept-predication'. However, the section title in the document is 'Ambient predicates: mean = me + an' (line 346) and 'The ne / an mood alternation in clause-final evidential frames' (line 364). The slug should ideally match the section title for clarity.",
+    "quote": "see <Xr ch=\"property-concept-predication\" />",
+    "suggestion": "Update the slug to match the relevant section title, e.g., 'property-concept-predication-ambient-meteorological' or 'property-concept-predication-ambient'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#028",
+  "chapter": "existential-locational-an-oka",
+  "lines": "354-355",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme 'sir' is glossed as 'scene/land'. The morpheme 'pirka' is not glossed in this sentence, although it is likely 'good' based on the overall meaning. This omission makes the breakdown incomplete.",
+    "quote": "<i lang=\"ain-Latn\">sirpirka</i> 'the weather is good', from\n<i lang=\"ain-Latn\">sir</i>- 'scene/land' + <i lang=\"ain-Latn\">pirka</i>",
+    "suggestion": "Provide a gloss for 'pirka', e.g., 'good'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#027",
+  "chapter": "existential-locational-an-oka",
+  "lines": "350",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme 'me' is glossed as 'cold'. The morpheme 'an' is glossed as 'exist'. The combination 'mean' is then explained as 'coldness exists'. This is clear, but the gloss for 'me' could be more specific, e.g., 'cold.N' or 'coldness' if it functions as a noun in this context.",
+    "quote": "<i lang=\"ain-Latn\">me</i> 'cold' + <i lang=\"ain-Latn\">an</i> 'exist'",
+    "suggestion": "Clarify the part of speech for 'me' in this context, e.g., 'cold.N' or 'coldness'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#026",
+  "chapter": "existential-locational-an-oka",
+  "lines": "342",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference uses the slug 'predicative-possession-clauses'. However, the section title in the document is 'Predicative possession: BE-type an and isam' (line 383). The slug should ideally match the section title for clarity.",
+    "quote": "see <Xr ch=\"predicative-possession-clauses\" />",
+    "suggestion": "Update the slug to match the section title, e.g., 'predicative-possession-be-type-an-isam'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#025",
+  "chapter": "existential-locational-an-oka",
+  "lines": "335",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference uses the slug 'existential-aspect-an-oka'. However, the section title in the document is 'Existential aspect auxiliaries' (line 319). The slug should ideally match the section title for clarity.",
+    "quote": "see <Xr ch=\"existential-aspect-an-oka\" />",
+    "suggestion": "Update the slug to match the section title, e.g., 'existential-aspect-auxiliaries'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'stative-possessive <i lang=\"ain-Latn\">kor wa an</i>' is presented. While the note explains it as 'have-and-be', expressing resultant or persistent possession, the gloss for 'kor' is 'have' and for 'an' is 'exist'. The combination 'kor wa an' is not explicitly glossed as a single unit, making its meaning slightly less clear without the explanation.",
+    "quote": "stative-possessive <i lang=\"ain-Latn\">kor wa an</i>",
+    "suggestion": "Provide a more direct gloss for 'kor wa an' as a unit, e.g., 'have.resultative' or 'possess.stative'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#024",
+  "chapter": "existential-locational-an-oka",
+  "lines": "331",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'wa isam' is the negative counterpart to the existential aspect periphrases and glosses it as 'completive, '〜てしまう''. However, the preceding examples of aspectual periphrases all end in 'an'. It's unclear if 'wa isam' is a direct negative counterpart in structure or meaning, or if it's a separate construction.",
+    "quote": "The negative counterpart <i lang=\"ain-Latn\">wa isam</i> (completive, '〜てしまう')",
+    "suggestion": "Clarify the relationship between 'wa isam' and the 'an'-ending aspectual periphrases. Explain how 'wa isam' functions as a negative counterpart.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'presses the negative existential <i lang=\"ain-Latn\">isam</i> into the same periphrastic slot' is somewhat informal. While understandable, a more formal grammatical description might be preferred.",
+    "quote": "presses the negative existential <i lang=\"ain-Latn\">isam</i> into the same periphrastic slot.",
+    "suggestion": "Rephrase to something like 'uses the negative existential <i lang=\"ain-Latn\">isam</i> in the same periphrastic slot' or 'functions as the negative counterpart by incorporating the negative existential <i lang=\"ain-Latn\">isam</i>'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#023",
+  "chapter": "existential-locational-an-oka",
+  "lines": "324",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'V kor an' is 'progressive'. However, the preceding example 'V wa an' is glossed as 'resultative/continuative'. It's unclear if 'V kor an' is also progressive or if it represents a different aspectual value. The note mentions 'progressive' for 'V kor an', but the structure is similar to 'V wa an'.",
+    "quote": "<i lang=\"ain-Latn\">V wa an</i> (resultative/continuative, '〜ている'),\n<i lang=\"ain-Latn\">V kor an</i> (progressive),",
+    "suggestion": "Clarify the aspectual value of 'V kor an' and ensure consistency with other aspectual constructions.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text lists 'V kane an' and 'V hine an' as aspectual periphrases. However, the glosses for these constructions are not provided, unlike 'V wa an' and 'V kor an'. This leaves the reader to infer their meaning and function.",
+    "quote": "<i lang=\"ain-Latn\">V kane an</i>, and <i lang=\"ain-Latn\">V hine an</i>.",
+    "suggestion": "Provide glosses for 'V kane an' and 'V hine an', similar to the other examples.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#022",
+  "chapter": "existential-locational-an-oka",
+  "lines": "286",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference uses the slug 'existential-aspect-an-oka'. However, the section title in the document is 'Existential aspect auxiliaries' (line 319). The slug should ideally match the section title for clarity.",
+    "quote": "see <Xr ch=\"existential-aspect-an-oka\" />",
+    "suggestion": "Update the slug to match the section title, e.g., 'existential-aspect-auxiliaries'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#021",
+  "chapter": "existential-locational-an-oka",
+  "lines": "275",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The entry for 'somo an' in the table is 'negated existential'. This is a descriptive phrase rather than a direct gloss. While understandable, it's less consistent with the other entries which provide more direct glosses or definitions.",
+    "quote": "negated existential",
+    "suggestion": "Consider a more direct gloss, e.g., 'not exist (standard negation)' or 'does not exist'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#014",
+  "chapter": "existential-locational-an-oka",
+  "lines": "176",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 169, the note 'homonym-mixed' indicates that the corpus count for 'okay' includes non-existential uses. This context is crucial for interpreting the frequency data.",
+    "quote": "rank 96 in the full corpus (2,608 tokens, homonym-mixed)",
+    "suggestion": "Consider adding a sentence in the main text explaining that the corpus frequencies for 'oka' and 'okay' include homonyms, or make this note more prominent.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#013",
+  "chapter": "existential-locational-an-oka",
+  "lines": "169",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note in the table states 'homonym-mixed'. This implies that the count includes occurrences of 'oka' that are not the existential predicate. This information is important for understanding the frequency data and should ideally be reflected in the main text or a more prominent note.",
+    "quote": "rank 23 in the full corpus (9,637 tokens, homonym-mixed)",
+    "suggestion": "Consider adding a sentence in the main text explaining that the corpus frequencies for 'oka' and 'okay' include homonyms, or make this note more prominent.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#012",
+  "chapter": "existential-locational-an-oka",
+  "lines": "129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotan' is glossed as 'village'. The example is for 'locational transitive (alt.)' with the template <i lang=\"ain-Latn\">[SUBJ-NP] [LOC-NP] un</i>. The gloss for 'un' is 'be at (transitive)'. The translation 'be in the village (transitive un)' is appropriate. The issue is that the gloss for 'kotan' is simply 'village', which is a free translation. A more precise gloss, if available, would be beneficial, or at least an indication that it's a singular noun.",
+    "quote": "<i lang=\"ain-Latn\">kotan un</i> 'be in the village (transitive <i lang=\"ain-Latn\">un</i>)'",
+    "suggestion": "Provide a more specific gloss for 'kotan', e.g., 'village.SG' or 'village'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#011",
+  "chapter": "existential-locational-an-oka",
+  "lines": "124",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'nep' is glossed as 'nothing'. The example is for 'negative existential' with the template <i lang=\"ain-Latn\">[SUBJ-NP] isam</i>. The gloss for 'isam' is 'not exist, be absent, die'. The translation 'there is nothing' is appropriate. The issue is that the gloss for 'nep' is simply 'nothing', which is a free translation. A more precise gloss, if available, would be beneficial.",
+    "quote": "<i lang=\"ain-Latn\">nep ka isam</i> 'there is nothing'",
+    "suggestion": "Provide a more specific gloss for 'nep', e.g., 'thing.NEG' or 'nothing'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#010",
+  "chapter": "existential-locational-an-oka",
+  "lines": "119",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotan' is glossed as 'village'. The example is for 'locational (pl)' with the template <i lang=\"ain-Latn\">[SUBJ-NP] [LOC or ta] oka</i>. The gloss for 'oka' is 'exist, be, live (pl)'. The translation 'they are in the village' is appropriate. The issue is that the gloss for 'kotan' is simply 'village', which is a free translation. A more precise gloss, if available, would be beneficial, or at least an indication that it's a singular noun.",
+    "quote": "<i lang=\"ain-Latn\">kotan ta oka</i> 'they are in the village'",
+    "suggestion": "Provide a more specific gloss for 'kotan', e.g., 'village.SG' or 'village'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#009",
+  "chapter": "existential-locational-an-oka",
+  "lines": "114",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'iwor' is glossed as 'mountains'. This appears to be a plural form. The example is for 'locational (sg)' with the template <i lang=\"ain-Latn\">[SUBJ-NP] [LOC or ta] an</i>. The gloss for 'an' is 'exist, be, live (sg)'. The translation 'is in the mountains' is appropriate. The issue is that the gloss for 'iwor' is simply 'mountains', which is a free translation. A more precise gloss, if available, would be beneficial, or at least an indication that it's a plural noun.",
+    "quote": "<i lang=\"ain-Latn\">iwor or ta an</i> 'is in the mountains'",
+    "suggestion": "Provide a more specific gloss for 'iwor', e.g., 'mountain.PL' or 'mountains'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#008",
+  "chapter": "existential-locational-an-oka",
+  "lines": "109",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hekattar' is glossed as 'children'. This appears to be a plural form. The example is for 'bare existential (pl)' with the template <i lang=\"ain-Latn\">[SUBJ-NP] oka / okay</i>. The gloss for 'oka' is 'exist, be, live (pl)'. The translation 'there are children' is appropriate. The issue is that the gloss for 'hekattar' is simply 'children', which is a free translation. A more precise gloss, if available, would be beneficial, or at least an indication that it's a plural noun.",
+    "quote": "<i lang=\"ain-Latn\">hekattar oka</i> 'there are children'",
+    "suggestion": "Provide a more specific gloss for 'hekattar', e.g., 'child.PL' or 'children'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#007",
+  "chapter": "existential-locational-an-oka",
+  "lines": "104",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'poro cise an' is presented as an example of 'bare existential (sg)'. However, the gloss for 'poro' is 'big' and 'cise' is 'house'. The morpheme 'an' is glossed as 'exist'. The translation 'there is a big house' correctly reflects this. The issue is that the table entry for 'bare existential (sg)' has the template <i lang=\"ain-Latn\">[SUBJ-NP] an</i>, and the example 'poro cise an' has two NPs ('poro cise' as one unit, or 'poro' modifying 'cise'). This seems to contradict the 'bare existential' description if 'poro cise' is considered a single NP subject.",
+    "quote": "<i lang=\"ain-Latn\">poro cise an</i> 'there is a big house'",
+    "suggestion": "Clarify whether 'poro cise' is treated as a single NP or if 'poro' is an adjective modifying 'cise' and thus part of the NP. If it's a single NP, the description 'bare existential' might need qualification.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#006",
+  "chapter": "existential-locational-an-oka",
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'possessed / affiliative form' is presented with a slash. While understandable, it might be more consistent to use a hyphen or rephrase to avoid the slash if possible, depending on the established style for such terms.",
+    "quote": "the <Xr ch=\"concept-form-affiliative-form\">possessed / affiliative form</Xr>",
+    "suggestion": "Consider using 'possessed-form / affiliative-form' or 'possessed-affiliative form' if that is the established terminology.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#004",
+  "chapter": "existential-locational-an-oka",
+  "lines": "47-48",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'anakne' is glossed as 'big-houses' in the translation, but the morpheme breakdown in the example is 'an-ak-ne'. The gloss should ideally reflect the morpheme breakdown more closely, or the morpheme breakdown should be adjusted if 'anakne' is a single lexical item meaning 'big-houses'. As it stands, it's unclear how 'an' and 'ne' contribute to 'big-houses'.",
+    "quote": "<i lang=\"ain-Latn\">*Tokiyo anakne poro cise poronno an</i>\n('Tokyo big-houses many exist', treating Tokyo as a bare NP co-argument),",
+    "suggestion": "Clarify the gloss for 'anakne' or adjust the morpheme breakdown if 'anakne' is a single word. If 'an' is 'big' and 'akne' is 'houses', the gloss should reflect that. If 'anakne' is a compound, it should be noted.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 47-48, the gloss for 'anakne' as 'big-houses' is problematic given the morpheme breakdown 'an-ak-ne'. The gloss should align with the morpheme breakdown.",
+    "quote": "<i lang=\"ain-Latn\">Tokiyo ot ta anakne poro cise poronno an</i>\n'in Tokyo there are many big houses' <Ref k=\"sato2008\" p=\"3–4\" />.",
+    "suggestion": "Clarify the gloss for 'anakne' or adjust the morpheme breakdown.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#041",
+  "chapter": "existential-locational-an-oka",
+  "lines": "292",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme sequence includes two instances of isam, but the gloss repeats 'not.exist not.exist' without indicating reduplication or emphasis. The note mentions rhetorical emphasis, but the gloss should reflect this morphologically or with a tag.",
+    "quote": "g=\"how COP CONJ that bowl not.exist not.exist\"",
+    "suggestion": "Use 'not.exist=REDUP' or 'not.exist²' to indicate repetition for emphasis.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#039",
+  "chapter": "existential-locational-an-oka",
+  "lines": "119",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example lacks a subject NP, yet the translation implies a plural third-person subject ('they'). The template [SUBJ-NP] [LOC or ta] oka suggests a subject should be present, but none appears in the example.",
+    "quote": "<i lang=\"ain-Latn\">kotan ta oka</i> 'they are in the village'",
+    "suggestion": "Either add a subject (e.g., iwor 'they') to match the translation or revise the translation to 'there are (people) in the village' to reflect an impersonal reading.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#033",
+  "chapter": "existential-locational-an-oka",
+  "lines": "390",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'a=yupi' is 'my-elder-brother'. The translation is 'I have an elder brother'. The gloss correctly captures the literal meaning ('my-elder-brother exists'), but the free translation 'I have an elder brother' implies possession by the speaker. The gloss should ideally reflect the possessive relationship more directly, or the note should emphasize that 'a=' marks the possessor.",
+    "quote": "<i lang=\"ain-Latn\">a=yupi an</i> 'I have an elder brother' (literally\n'my-elder-brother exists')",
+    "suggestion": "Adjust the gloss for 'a=yupi' to explicitly indicate the possessor, e.g., '1SG.POSS=elder-brother'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'a=po-ho' is not provided, but the translation is 'I even have a son'. The morpheme 'ka' is glossed as 'even'. The morpheme 'an' is glossed as 'exist'. The possessive meaning ('I have') is conveyed by the translation but not fully explicit in the gloss of 'a=po-ho'.",
+    "quote": "<i lang=\"ain-Latn\">a=po-ho ka an</i> 'I even have a son' <Ref k=\"huber2025\" p=\"251–253\" />.",
+    "suggestion": "Provide a gloss for 'a=po-ho', e.g., '1SG.POSS=son'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#020",
+  "chapter": "existential-locational-an-oka",
+  "lines": "241",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'e=isam' is 'you are not there / you are absent'. The morpheme 'e=' is glossed as 'you', but it's not explicitly stated if this is second person singular or plural. The translation 'you are not there / you are absent' is consistent with a second-person subject. However, the note in the table (lines 271) states 'full person-affix paradigm' for 'isam'. It would be helpful to clarify the person marking for 'e='.",
+    "quote": "(<i lang=\"ain-Latn\">e=isam</i> 'you are not there / you are absent')",
+    "suggestion": "Specify the person and number for 'e=', e.g., '2SG=not exist' or '2PL=not exist'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#016",
+  "chapter": "existential-locational-an-oka",
+  "lines": "205",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'mippoutari' is 'grandchildren', but the translation is 'My grandchildren'. The possessive meaning ('My') is present in the translation but not explicitly in the gloss. The note clarifies that 'mippoutari' is plural and based on Nakagawa (2024: 146), but the gloss itself should ideally reflect the possessive aspect.",
+    "quote": "g=\"grandchildren this village LOC exist.PL\"\ntr=\"My grandchildren live in this village.\"",
+    "suggestion": "Adjust the gloss for 'mippoutari' to include possessive information, e.g., 'grandchildren.1SG.POSS' or 'my grandchildren'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#015",
+  "chapter": "existential-locational-an-oka",
+  "lines": "197",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'mippoho' is 'grandchild', but the translation is 'My grandchild'. The possessive meaning ('My') is present in the translation but not explicitly in the gloss. The note clarifies that 'mippoho' is an inalienably possessed form, but the gloss itself should ideally reflect this.",
+    "quote": "g=\"grandchild this village LOC exist\"\ntr=\"My grandchild lives in this village.\"",
+    "suggestion": "Adjust the gloss for 'mippoho' to include possessive information, e.g., 'grandchild.1SG.POSS' or 'my grandchild'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#003",
+  "chapter": "existential-locational-an-oka",
+  "lines": "36",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim about the 'load-bearing' nature of the predicate type, supported by a citation that likely provides frequency data. While the frequency data itself might be corpus-confirmed, the interpretation of that data as indicating how 'load-bearing' the predicate is might be an inference by the author, not directly confirmed by the corpus.",
+    "quote": "so they are upper bounds on the existential predicate proper; even so, the rank signals how load-bearing this predicate type is <Ref k=\"nakagawa2024\" p=\"146\" /> ‹corpus-confirmed›.",
+    "suggestion": "Consider changing ‹corpus-confirmed› to ‹consensus› or removing it if the interpretation is not directly supported by the cited source.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-locational-an-oka~p1#002",
+  "chapter": "existential-locational-an-oka",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the claim that Ainu uses a single verb for both animate and inanimate subjects, unlike Japanese, is placed after the description of the Ainu usage, but before the specific examples of 'big house' and 'person'. It would be clearer if the citation followed the entire statement it supports.",
+    "quote": "a single verb covers the domain that Japanese divides between <span lang=\"ja\">いる</span> (animate) and <span lang=\"ja\">ある</span> (inanimate), so that 'there is a big house' and 'a person is there' are expressed by the same predicate <Ref k=\"yoshikawa2022\" p=\"629–630\" />; <Ref k=\"nakagawa2022pos\" p=\"474\" />; <Ref k=\"sato2008\" p=\"3–4\" />.",
+    "suggestion": "Move the citation to the end of the sentence, after 'same predicate'.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

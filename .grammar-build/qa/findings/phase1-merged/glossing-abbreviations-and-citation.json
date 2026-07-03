@@ -1,0 +1,796 @@
+[
+ {
+  "id": "glossing-abbreviations-and-citation~p1#015",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "194",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'causes a build error' and 'citation apparatus is closed under the set of registered works' refers to the internal production process rather than directly addressing the reader.",
+    "quote": "a key that does not appear in the registry causes a build error, so the citation apparatus is closed under the set of registered works.",
+    "suggestion": "Rephrase to focus on the reader's experience, e.g., 'All cited keys must be registered in the central bibliography; unregistered keys will prevent the grammar from being built.'",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Third occurrence of 'build error'. The sentence explains the self-contained nature of citations but uses pipeline language.",
+    "quote": "a key that does not appear in the registry causes a build error, so the citation apparatus is closed under the set of registered works.",
+    "suggestion": "Rephrase as 'a key must appear in the registry; any missing key is an error in the citation data.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#013",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "164",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'HK' is in all caps. This is consistent with the table format.",
+    "quote": "<tr><td>HK</td><td>Hokkaido (variety not further specified)</td></tr>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Dialect tag 'HK' is uppercase in the table, while the prose uses lowercase 'hk' (line 148), violating orthographic consistency within the chapter.",
+    "quote": "<tr><td>HK</td><td>Hokkaido (variety not further specified)</td></tr>",
+    "suggestion": "Change 'HK' to 'hk' in the table to match the lowercase convention used in the text.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#006",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "94",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses '4' and 'a' are presented in small caps, which is consistent with grammatical glosses. However, the text states that 'Each component of every portmanteau is listed independently in the abbreviation set, so that <span class=\"sc\">4.a</span>, <span class=\"sc\">1sg.a</span>, and <span class=\"sc\">2pl.o</span> are all resolvable atom by atom.' This implies that these components should also be in small caps, which they are.",
+    "quote": "glossed <span class=\"sc\">4.a</span>, where <span class=\"sc\">4</span> marks person and <span class=\"sc\">a</span> marks the <Xr ch=\"person-marking-architecture\">S/A/O role</Xr>",
+    "suggestion": "No change needed, but ensure consistency with the rule that grammatical glosses are in small caps.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses '4.a', '1sg.a', and '2pl.o' are in small caps, which is consistent with grammatical glosses. The text explains that these are resolvable atom by atom.",
+    "quote": "<span class=\"sc\">4.a</span>, <span class=\"sc\">1sg.a</span>, and <span class=\"sc\">2pl.o</span>",
+    "suggestion": "No change needed, but ensure consistency with the rule that grammatical glosses are in small caps.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose consistently uses lowercase for gloss atoms (1sg.a, 2pl.o), but the interlinear example on line 34 uses uppercase (1SG.A). The chapter should maintain a single case convention in source code.",
+    "quote": "<span class=\"sc\">4.a</span>, <span class=\"sc\">1sg.a</span>, and <span class=\"sc\">2pl.o</span>",
+    "suggestion": "Either align the example to lowercase, or update the prose to uppercase. Lowercase is more consistent with the table and the small-caps rendering.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#002",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "61",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'poss' is in small caps, but the text states that lexical glosses are in lower case and grammatical glosses are in small caps. 'poss' appears to be a grammatical gloss for possession.",
+    "quote": "track-<span class=\"sc\">poss</span>",
+    "suggestion": "Change '<span class=\"sc\">poss</span>' to 'poss' or ensure consistency with the stated rule.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table uses uppercase 'HK' in the dialect tag list (line 164) but lowercase 'hk' in the prose (line 148), creating inconsistency in tag formatting.",
+    "quote": "=</code></td>",
+    "suggestion": "Standardize the dialect tag to either all uppercase or lowercase; currently, 'HK' appears in the table but 'hk' in the text.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#036",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "257",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Evidence grade is italicized rather than enclosed in guillemets as specified.",
+    "quote": "<td><em>original-needs-review</em></td>",
+    "suggestion": "Use ‹original-needs-review›.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#035",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "253",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Evidence grade formatted in italics instead of guillemets, violating internal consistency.",
+    "quote": "<td><em>speculative</em></td>",
+    "suggestion": "Change to ‹speculative›.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#034",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "249",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting: evidence grades should be in guillemets, not italics.",
+    "quote": "<td><em>corpus-suggested</em></td>",
+    "suggestion": "Use ‹corpus-suggested›.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#033",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "245",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Evidence grade is italicized instead of being enclosed in guillemets as per the chapter's own rules.",
+    "quote": "<td><em>corpus-confirmed</em></td>",
+    "suggestion": "Replace with ‹corpus-confirmed›.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#032",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "241",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as line 237: the use of italics instead of guillemets for evidence grades in the table contradicts the stated formatting convention.",
+    "quote": "<td><em>contested</em></td>",
+    "suggestion": "Change to ‹contested› using guillemets.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#031",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "237",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table uses italics for evidence grades (e.g., <em>consensus</em>), but the surrounding text describes the labels as being in guillemets. This creates a formatting mismatch between the description and presentation.",
+    "quote": "<td><em>consensus</em></td>",
+    "suggestion": "Use guillemets in the table: <td>‹consensus›</td>.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#030",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "87",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The evidence-grade label ‹contested› is placed in the prose but is not enclosed in guillemets as required by the style defined in section 'Evidence-grade labels' (line 223).",
+    "quote": "‹contested›",
+    "suggestion": "Wrap the label in guillemets: ‹contested›.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#029",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "111-112",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same register-leak issue as line 30. The technical detail of the build system is not necessary for the reader's understanding of the glossing conventions.",
+    "quote": "an unregistered capital-letter sequence in a gloss line causes a build error.",
+    "suggestion": "Rephrase to 'is not permitted' or 'will be flagged as an error in the grammar’s formatting.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#028",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "30",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'build error' addresses the book's production pipeline rather than the reader. While explaining validation is helpful, repeated mentions (lines 30, 111–112, 194–195) may feel like meta-commentary on the authoring process.",
+    "quote": "A mismatch in token count causes a build error.",
+    "suggestion": "Replace 'causes a build error' with 'is an error in the data format' or 'is not allowed', and rephrase the other instances similarly to be reader-facing.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#027",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "84",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The page range attribute uses a comma between two page numbers, but the citation-style description (lines 212–214) says page references follow a colon-delimited syntax. If colon-delimited means e.g., '49:183', this is inconsistent. If comma is acceptable, the description should be more precise.",
+    "quote": "p=\"49, 183\"",
+    "suggestion": "Either change '49, 183' to '49, 183' (if comma is allowed) and update the description to allow comma for non-consecutive pages, or adopt '49:183' if that is the intended range.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#026",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "192-193",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The description says page references use a colon, but the illustrating Ref components use only a number (p=\"163\", p=\"471\") without a colon. The example at line 214 also uses a section marker without a colon. The colon syntax is not demonstrated.",
+    "quote": "with a colon and page number when a specific location matters: <Ref k=\"nakagawa2024\" p=\"163\" /> or <Ref k=\"bugaeva2012\" p=\"471\" paren />.",
+    "suggestion": "Either clarify that the colon is used only when including a section/example number (e.g., p=\"§13.2\") and page numbers are bare, or revise the description to avoid claiming `colon-delimited` for page references.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#024",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'original-needs-review' is in italics. This is consistent with the text's usage.",
+    "quote": "The grade <em>original-needs-review</em>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#023",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'original-needs-review' is in italics. This is consistent with the table format.",
+    "quote": "<em>original-needs-review</em>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#022",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'speculative' is in italics. This is consistent with the table format.",
+    "quote": "<em>speculative</em>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#021",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "249",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'corpus-suggested' is in italics. This is consistent with the table format.",
+    "quote": "<em>corpus-suggested</em>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#020",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'corpus-confirmed' is in italics. This is consistent with the table format.",
+    "quote": "<em>corpus-confirmed</em>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#019",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'contested' is in italics. This is consistent with the table format.",
+    "quote": "<em>contested</em>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#018",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "237",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'consensus' is in italics. The table shows other grades like 'contested', 'corpus-confirmed', etc., also in italics. This is consistent within the table.",
+    "quote": "<em>consensus</em>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#017",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "205",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example keys 'sato2023a' and 'sato2023b' use lowercase suffix letters. This is consistent with the text's explanation.",
+    "quote": "<code>sato2023a</code>, <code>sato2023b</code>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example keys 'bugaeva2021poss' and 'bugaeva2021antip' use topical suffix letters. This is consistent with the text's explanation.",
+    "quote": "<code>bugaeva2021poss</code>, <code>bugaeva2021antip</code>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#016",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "201",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that macrons are stripped from Japanese author surnames when creating keys. However, the example given, 'nakagawa2024', does not involve a macron. This statement might be more relevant for Ainu names or other romanizations.",
+    "quote": "Japanese authors are keyed by romanised surname with macrons stripped",
+    "suggestion": "Clarify if this rule applies specifically to Japanese names or if it's a general rule for romanization in keys. If it's specific to Japanese, the example might be misleading.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The romanization of Japanese names 'nakagawa' and 'sato' does not contain macrons, which is consistent with the preceding statement. However, the statement about stripping macrons might be confusing if it's not universally applicable to all romanizations used for keys.",
+    "quote": "(<span lang=\"ja\">中川裕</span> → <code>nakagawa2024</code>; <span lang=\"ja\">佐藤知己</span> → <code>sato2008</code>)",
+    "suggestion": "Ensure the rule about stripping macrons is clearly explained and exemplified.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#014",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'SA' is in all caps. This is consistent with the table format.",
+    "quote": "<tr><td>SA</td><td>Sakhalin (labelled contrast)</td></tr>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'KU' is in all caps. This is consistent with the table format.",
+    "quote": "<tr><td>KU</td><td>Kuril (labelled contrast)</td></tr>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#012",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "148",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'hk' is presented in small caps. The table of dialect tags uses all caps (e.g., HK, SAR, CHI). This is an inconsistency in the presentation of dialect tags.",
+    "quote": "tag <span class=\"sc\">hk</span>",
+    "suggestion": "Change '<span class=\"sc\">hk</span>' to 'HK' to match the table.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tags 'sa' and 'ku' are presented in small caps. The table of dialect tags uses all caps (SA, KU). This is an inconsistency in the presentation of dialect tags.",
+    "quote": "Sakhalin (<span class=\"sc\">sa</span>) and Kuril (<span class=\"sc\">ku</span>)",
+    "suggestion": "Change '<span class=\"sc\">sa</span>' to 'SA' and '<span class=\"sc\">ku</span>' to 'KU' to match the table.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#011",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "135",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ruwe', 'siri', 'hawe', and 'humi' are italicized and marked with `lang=\"ain-Latn\"`. This is consistent with the chapter's orthography for Ainu forms.",
+    "quote": "<i lang=\"ain-Latn\">ruwe</i>, <i lang=\"ain-Latn\">siri</i>, <i lang=\"ain-Latn\">hawe</i>, <i lang=\"ain-Latn\">humi</i>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'poss' and 'cop' are in small caps, which is consistent with grammatical glosses. The text explains their usage.",
+    "quote": "<span class=\"sc\">poss</span>, <span class=\"sc\">cop</span>",
+    "suggestion": "No change needed, but ensure consistency with the rule that grammatical glosses are in small caps.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#010",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "131",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'evid', 'infr', and 'rep' are in small caps, which is consistent with grammatical glosses. The text explains their usage.",
+    "quote": "<span class=\"sc\">evid</span>, <span class=\"sc\">infr</span>, and <span class=\"sc\">rep</span>",
+    "suggestion": "No change needed, but ensure consistency with the rule that grammatical glosses are in small caps.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#009",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "121",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses '1', '2', '3', and '4' are in small caps, which is consistent with grammatical glosses. The text explains their usage.",
+    "quote": "<span class=\"sc\">1</span>, <span class=\"sc\">2</span>, <span class=\"sc\">3</span>, and <span class=\"sc\">4</span>",
+    "suggestion": "No change needed, but ensure consistency with the rule that grammatical glosses are in small caps.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#008",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 's', 'a', and 'o' are in small caps, which is consistent with grammatical glosses. The text explains their usage.",
+    "quote": "<span class=\"sc\">s</span>, <span class=\"sc\">a</span>, and <span class=\"sc\">o</span>",
+    "suggestion": "No change needed, but ensure consistency with the rule that grammatical glosses are in small caps.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#007",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "105",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The lexical glosses 'hear', 'house', and 'track' are in code font. The text states that lexical glosses are in lower case. While code font is a form of lower case, it might be inconsistent with other uses of lexical glosses if they are not also in code font.",
+    "quote": "<code>hear</code>, <code>house</code>, <code>track</code>",
+    "suggestion": "Consider if code font is intended for all lexical glosses or if it's an inconsistency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#005",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "84",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions Nakagawa 2024 and Bugaeva 2012 as sources for clitic-like properties of person-marking sets, but the page numbers are missing for Nakagawa 2024.",
+    "quote": "nakagawa2024, bugaeva2012",
+    "suggestion": "Add the page number for the Nakagawa 2024 citation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#004",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "73",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.a' is in small caps, but the text states that lexical glosses are in lower case and grammatical glosses are in small caps. '4.a' appears to be a grammatical gloss for fourth person agent.",
+    "quote": "<span class=\"sc\">4.a</span>=",
+    "suggestion": "Change '<span class=\"sc\">4.a</span>' to '4.a' or ensure consistency with the stated rule.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#003",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "67",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1sg.a' is in small caps, but the text states that lexical glosses are in lower case and grammatical glosses are in small caps. '1sg.a' appears to be a grammatical gloss for first person singular agent.",
+    "quote": "<span class=\"sc\">1sg.a</span>=hear",
+    "suggestion": "Change '<span class=\"sc\">1sg.a</span>' to '1sg.a' or ensure consistency with the stated rule.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#001",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "37",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note contains a parenthetical explanation of 'ruwe' that seems to be a fragment of a sentence and could be integrated more smoothly or removed if it's not essential to the note's primary purpose.",
+    "quote": "Illustrates the format: the morphemic line segments at clitic (=) and affix (-) boundaries; the gloss line aligns one label per morpheme. The possessed evidential formal noun ruwe (ru-we, 'the trace of —') is discussed in the evidential chapters.",
+    "suggestion": "Consider rephrasing the parenthetical or removing it if it interrupts the flow unnecessarily.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glossing-abbreviations-and-citation~p1#025",
+  "chapter": "glossing-abbreviations-and-citation",
+  "lines": "34-36",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Gloss atoms in the example use uppercase letters (1SG.A, POSS, COP) but the prose style and table examples use lowercase inside <span class=\"sc\"> (e.g. 4.a, poss, cop, 1sg.a). This creates a format inconsistency within the chapter.",
+    "quote": "g=\"1SG.A=hear track-POSS COP\"",
+    "suggestion": "Change gloss atoms to lowercase (e.g., 1sg.a=hear track-poss cop) to match the style established in the prose and tables, relying on CSS for small-caps rendering.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

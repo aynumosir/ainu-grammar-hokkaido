@@ -1,0 +1,760 @@
+[
+ {
+  "id": "imperative-and-prohibitive~p1#014",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "277",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <i lang=\"ain-Latn\">ecik(k)i</i> is presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "On the Ishikari variant <i lang=\"ain-Latn\">ecik(k)i</i>, a community",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The words <i lang=\"ain-Latn\">iteki</i>, <i lang=\"ain-Latn\">etiki</i>, and <i lang=\"ain-Latn\">eciki</i> are presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "(*<i lang=\"ain-Latn\">iteki</i> &gt; <i lang=\"ain-Latn\">etiki</i>\n        &gt; <i lang=\"ain-Latn\">eciki</i>; nukopoli, aynu-corpora Discord,",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The metathesis path shows *iteki > etiki > eciki, but 'eciki' is not consistent with the table (line 237), which gives 'ecik(k)i'. The form 'eciki' omits the optional geminate or final consonant variation.",
+    "quote": "*<i lang=\"ain-Latn\">iteki</i> &gt; <i lang=\"ain-Latn\">etiki</i> &gt; <i lang=\"ain-Latn\">eciki</i>",
+    "suggestion": "Revise to '*iteki > etiki > ecik(k)i' for consistency with table",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#004",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "149",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that <i lang=\"ain-Latn\">hani</i> and <i lang=\"ain-Latn\">yan</i> fuse to <i lang=\"ain-Latn\">yanani</i>. However, the preceding sentence (line 148) uses <A w=\"hani\" /> with a macron, while this sentence uses <i lang=\"ain-Latn\">yanani</i> without a macron on the 'a'. This is a minor inconsistency in orthography.",
+    "quote": "When <A w=\"hani\" /> follows <i lang=\"ain-Latn\">yan</i>, the two regularly fuse\n        to <i lang=\"ain-Latn\">yanani</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The fused form 'yanani' is written without macron, but if 'hani' is a variant of 'hani' (line 156), and if 'yan' + 'hani' → 'yanani', the resulting form may require phonological accuracy. If the fusion results in a long vowel, it should be marked (e.g., 'yanāni' or 'yānani').",
+    "quote": "yanani",
+    "suggestion": "Check phonological accuracy of 'yanani'; consider macron if vowel length is phonemic",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#028",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "14-15, 253-254",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The first statement claims iteki converts any imperative, but the second states it also applies to indirect command forms (which are not imperative constructions). This creates a contradiction unless indirect commands are considered imperatives.",
+    "quote": "converts any imperative into a prohibitive” vs “iteki is not restricted to bare imperatives: it also precedes indirect command forms",
+    "suggestion": "Change 'any imperative' to 'any directive' or clarify that indirect commands are included under 'imperative'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Later (section 'person marking'), it is stated that both singular and plural/polite imperatives suppress the subject prefix. But here, only the singular is said to lack it, while plural is marked by 'yan'. This is not contradictory per se, but the initial sentence could imply only singular lacks the prefix, while plural might have it — which is false.",
+    "quote": "the bare verb with no second-person subject prefix — the singular imperative",
+    "suggestion": "Revise to 'the bare verb with no second-person subject prefix — used for both singular and plural/polite imperatives'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#034",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "243-250",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'PROH fire side LOC come' does not reflect the structure of the verb: 'sam ta ek' means 'come to the side of'. 'LOC' is attached to 'sam', not 'ek', but the gloss suggests 'come' is unmarked. Also, 'ek' is a motion verb that should be glossed as 'come' or 'come.SG'.",
+    "quote": "iteki ape sam ta ek",
+    "suggestion": "Revise gloss to 'PROH fire side LOC come.SG' or 'PROH fire side-to come.SG'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#032",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "127-134",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.A=have car board CONJ return.PL IMP' treats 'hosippa' as a verb stem with 'IMP' as a separate particle, but 'yan' is the imperative particle, not 'hosippa'. The gloss incorrectly assigns 'return.PL' to 'hosippa' and then adds 'IMP', suggesting 'hosippa' is not inherently imperative, but the structure implies 'hosippa' is the plural stem and 'yan' is the mood marker.",
+    "quote": "ku=kor kuruma o wa hosippa yan",
+    "suggestion": "Change gloss to '1SG.A=have car board CONJ return.PL IMP.PART' to clarify that IMP is on yan",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#031",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "87-95",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string contains two verbs (pusu, inkar) linked by wa, but the gloss 'INTERJ dig CONJ look' does not mark the second verb; 'look' should be glossed as a verb, but it appears as a bare noun. Also, 'dig' and 'look' are both verbs, yet only one is glossed as such.",
+    "quote": "hetak pusu wa inkar",
+    "suggestion": "Revise gloss to 'INTERJ dig.V CONJ look.V' or similar to reflect both verbs",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#027",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "98-105",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that adding a second-person subject prefix to an imperative verb is ungrammatical is tagged ‹corpus-confirmed›, but the only evidence cited is a Discord exchange (siljamimimii, aynu-corpora Discord 2024-11-17) and one reference (ijas2023). A single community message does not constitute corpus confirmation.",
+    "quote": "is ungrammatical as an imperative … ‹corpus-confirmed›",
+    "suggestion": "Change tag to ‹speculative› or ‹original-needs-review›, or add corpus evidence if available.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#029",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "332-333, 355",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table lists the construction as 'V nankor na', but the provided example (line 355) has 'nankor' without the final particle 'na', and the gloss does not gloss 'na'. This is inconsistent; either the table should note optionality, or the example should include 'na'.",
+    "quote": "V nankor na” (table) vs “e=nukar nankor” (example without na)",
+    "suggestion": "Add 'na' to the example if it is obligatory, or amend the table to show 'V nankor (na)' if optional.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#026",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "396",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">yak</i> and <i lang=\"ain-Latn\">nankor</i> are presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "the\n        <i lang=\"ain-Latn\">yak pirka</i>, <i lang=\"ain-Latn\">nankor na</i>, and their",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#025",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "382",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu prefix <i lang=\"ain-Latn\">e=</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "The second-person singular\n        agent and single-argument subject each take the prefix <i lang=\"ain-Latn\">e=</i>;",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#024",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "362",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">ikiya</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">ikiya e=hacir na</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#023",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "353",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">nankor</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">e=kor hapo e=nukar nankor</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#022",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "343",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">yak</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">e=ahunke yak pirka na</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#021",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "336",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">ikiya</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">ikiya V na</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#020",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "332",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">nankor</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">V nankor na</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#019",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "328",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">kusu</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">V kusu ne na</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#018",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "324",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">yakka</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">V yakka wen</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#017",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "320",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">yakka</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">V yakka pirka</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#016",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "316",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">yak</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">V yak wen</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#015",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "312",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">yak</i> is presented without a macron. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">V yak pirka</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#013",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "268",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <i lang=\"ain-Latn\">ikiya</i> is presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "(<i lang=\"ain-Latn\">ikiya e=honi arka na</i>\n        'be careful of [getting] a bellyache'), whereas <i lang=\"ain-Latn\">iteki</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <i lang=\"ain-Latn\">iteki</i> is presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "producing\n        the bare imperative shape (nukopoli, aynu-corpora Discord, 2025-12-03)\n        <Ref k=\"aynucorporadiscord\" /> ‹contested›. The proposal awaits systematic",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#012",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "258",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <A w=\"ikiya\" />, <A w=\"ika\" />, and <A w=\"inkian\" /> are presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "The alternative adverbs\n        <A w=\"ikiya\" />, <A w=\"ika\" />, and <A w=\"inkian\" /> take a person-marked,",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#011",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "236",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <i lang=\"ain-Latn\">ecik(k)i</i> is presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">ecik(k)i</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#010",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "232",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <i lang=\"ain-Latn\">etekke</i> is presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">etekke</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#009",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "228",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <i lang=\"ain-Latn\">itekke</i> is presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">itekke</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#008",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "224",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <i lang=\"ain-Latn\">iteki</i> is presented without macrons. However, in the preceding paragraph (line 211), the same form <A w=\"iteki\" /> was also presented without macrons. This is an inconsistency in orthography within the same section.",
+    "quote": "<i lang=\"ain-Latn\">iteki</i>",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#007",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <A w=\"iteki\" /> is presented without macrons. However, in the table below (lines 224, 228, 232, 236), the same forms are presented with macrons (e.g., <i lang=\"ain-Latn\">iteki</i>). This is an inconsistency in orthography within the same section.",
+    "quote": "The most widespread form in the Saru corpus is <A w=\"iteki\" />, found in Saru,\n        Chitose, Horobetsu, and Abuta; other Hokkaido dialects use parallel adverbs",
+    "suggestion": "Ensure consistent use of macrons for Ainu words, or clarify if the macron is optional in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#006",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "195",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range <Ref k=\"nakagawa2024\" p=\"423, 455\" /> is provided for the examples of <i lang=\"ain-Latn\">en=kore</i> and <i lang=\"ain-Latn\">un=kore</i>. However, page 455 of Nakagawa (2024) is not directly related to the benefactive request pattern described here; it appears to be about the verb <i lang=\"ain-Latn\">kore</i> in a different context. Page 423 discusses the benefactive request pattern.",
+    "quote": "<i lang=\"ain-Latn\">en=kore</i> 'do it for me',\n        <i lang=\"ain-Latn\">un=kore</i> 'do it for us'\n        <Ref k=\"nakagawa2024\" p=\"423, 455\" />.",
+    "suggestion": "Remove page 455 from the citation, as it does not appear to support the specific examples given.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#005",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "181",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the issue on line 139, the ‹speculative› tag for the community proposal is appropriate, but the phrasing might imply this is the sole or primary source for the idea. The text does not explicitly state that published grammars *disagree* with this proposal, only that they list the forms separately.",
+    "quote": "A community discussion proposes that <i lang=\"ain-Latn\">hani</i> is\n        etymologically related to the motion verb <A w=\"hanke\" gl=\"come near, approach\" />,\n        by a grammaticalization path parallel to the one proposed for\n        <i lang=\"ain-Latn\">yan</i> (antitwilight, aynu-corpora Discord, 2024-11-18)\n        <Ref k=\"aynucorporadiscord\" /> ‹speculative›.",
+    "suggestion": "Consider if the phrasing could be adjusted to more clearly indicate that this is a community-driven hypothesis, distinct from established grammatical descriptions.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#003",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "139",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"aynucorporadiscord\" /> is marked as ‹speculative›, which is appropriate for a community discussion proposing an etymological link. However, the text also mentions that 'The grammars list the motion verb and the final particle as separate entries without deriving one from the other <Ref k=\"nakagawa2024\" p=\"422\" />.' This latter citation seems to contradict the idea that the community proposal is the *only* source for this information, or at least that it's not a universally accepted view.",
+    "quote": "A community\n        discussion proposes that the imperative particle grammaticalized from this\n        motion verb — a path typologically paralleled by English <em>come on</em> and\n        Mandarin directional verbs in imperative idioms (antitwilight, aynu-corpora\n        Discord, 2024-11-18) <Ref k=\"aynucorporadiscord\" /> ‹speculative›.",
+    "suggestion": "Clarify the relationship between the community proposal and the published grammars. If the grammars do not derive the particle from the verb, then the ‹speculative› tag is correct for the community proposal, but the phrasing might imply it's the primary source of the idea.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#002",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "104",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"aynucorporadiscord\" /> is marked as ‹corpus-confirmed›, but the source is a community discussion on Discord. While community discussions can be valuable, they typically do not reach the level of 'corpus-confirmed' evidence on their own. This might be an overstatement of the evidence grade.",
+    "quote": "e=un=epunkine or <i lang=\"ain-Latn\">a=un=epunkine</i>\n        is ungrammatical as an imperative (siljamimimii, aynu-corpora Discord,\n        2024-11-17) <Ref k=\"aynucorporadiscord\" /> ‹corpus-confirmed›.",
+    "suggestion": "Consider changing the evidence grade from ‹corpus-confirmed› to something like ‹corpus-suggested› or ‹speculative›, or ensure that the community discussion is indeed representative of a broader corpus.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#001",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "16",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"421–426\" /> and <Ref k=\"sato2008\" p=\"72–73\" /> are attached to the sentence introducing the prohibitive, but the specific claim about `iteki` converting any imperative into a prohibitive is not directly supported by these page ranges. Page 421 of Nakagawa discusses the bare-stem imperative, and page 72 of Sato discusses softened imperatives. The prohibitive is introduced on page 424 of Nakagawa.",
+    "quote": "iteki (and its dialect equivalents) converts\n        any imperative into a prohibitive",
+    "suggestion": "Move the citation for the prohibitive to the sentence where it is first discussed in detail, or adjust the page ranges to cover the specific claim.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#036",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "362-368",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'ADM 2SG.S=fall FIN' uses 'ADM' for ikiya, but earlier in the text (section on prohibitive), ikiya is not introduced with this gloss. The term 'ADM' (admonitive) is used here but not defined or prefigured in the prose.",
+    "quote": "ikiya e=hacir na",
+    "suggestion": "Define 'ADM' when first introducing ikiya, or use a more transparent gloss like 'be.careful.not.to' in the gloss line",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#035",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "343-350",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '2SG.A=let.in COND be.good FIN' treats 'yak pirka na' as three separate elements, but in the table (lines 312–313), it is presented as a single construction 'V yak pirka'. The gloss should reflect the constructional unit, perhaps by grouping 'yak pirka na' as 'COND be.good FIN' or labeling it as a fixed frame.",
+    "quote": "e=ahunke yak pirka na",
+    "suggestion": "Revise gloss to '2SG.A=let.in COND.OBL.FIN' or add a note that yak pirka na is a fixed deontic frame",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#033",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "199-204",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'cook CONJ 1SG.O=give' does not reflect that 'suke' is a verb stem in imperative form; it should be glossed as a verb (e.g., 'cook.V'). Also, 'give' is used in the translation, but the verb is kore, which is glossed as 'give' but semantically means 'do for'.",
+    "quote": "suke wa en=kore",
+    "suggestion": "Revise gloss to 'cook.V CONJ 1SG.O=do-for' to better reflect verb status and meaning",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "imperative-and-prohibitive~p1#030",
+  "chapter": "imperative-and-prohibitive",
+  "lines": "15",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation in example 243 (iteki ape sam ta ek) is 'Do not come near the fire!' which includes a negative meaning, but the gloss 'PROH' in the example is not mentioned or explained in the preceding prose. The term 'prohibitive' is used, but the specific gloss 'PROH' introduced later is not prefigured.",
+    "quote": "<A w=\"iteki\" /> converts any imperative into a prohibitive",
+    "suggestion": "Introduce the gloss 'PROH' when first mentioning iteki, e.g., 'converts any imperative into a prohibitive (glossed as PROH)'",
+    "confidence": 0.95
+   }
+  ]
+ }
+]

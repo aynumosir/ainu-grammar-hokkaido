@@ -1,0 +1,481 @@
+[
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#002",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "136",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹corpus-suggested› is attached to the sentence discussing the distinction between `kuni` and `kunak`, but the following sentence discusses the contrast between `kuni` and `yak`. The tag might be intended for the `kuni`/`kunak` distinction.",
+    "quote": "‹corpus-suggested›. The <i lang=\"ain-Latn\">kuni</i> / <i lang=\"ain-Latn\">yak</i> contrast is cleaner",
+    "suggestion": "Consider moving the tag or clarifying which distinction it applies to.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is attributed to Nakagawa (a published source) but tagged as ‹corpus-suggested›, which typically indicates a weaker evidence grade based on corpus data rather than a published analysis. If Nakagawa explicitly states this, the tag should be ‹consensus› or ‹corpus-confirmed›; if it's only suggested by corpus data, the citation to Nakagawa may be inappropriate.",
+    "quote": "the two forms are not freely interchangeable even in purely inferred contexts <Ref k=\"nakagawa2024\" p=\"476–477\" /> ‹corpus-suggested›.",
+    "suggestion": "Either remove the ‹corpus-suggested› tag or clarify that the corpus data suggest this, while Nakagawa's analysis may differ.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› is attached to a claim about the non-interchangeability of kuni and kunak, but the only citation provided is Nakagawa 2024, which is a secondary grammatical description, not direct corpus evidence. The tag implies corpus-based support, but the source does not appear to be corpus-data itself.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Either remove the ‹corpus-suggested› tag or provide a direct corpus reference that supports the claim.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#004",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "178",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PURP NMLZ' appears for 'kuni p'. The note explains that 'kuni p' forms the deontic nominal. The gloss should ideally reflect this function, similar to the previous example, or be consistent with the note's description.",
+    "quote": "g=\"4.A=2SG.O=tie.up PURP NMLZ COP track-POSS COP FIN\"",
+    "suggestion": "Ensure the gloss for 'kuni p' is consistent with its function as a deontic nominal, possibly using 'DEON.NMLZ' or similar, and consistent with other instances.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for the morpheme sequence a=e=túskote is given as '4.A=2SG.O=tie.up', but the free translation is 'You will surely be tied up.' The agent is not expressed in the translation, and the structure appears passive, yet the gloss assigns a 4th person agent (4.A) and 2nd person object (2SG.O), which implies an active transitive clause. The translation does not reflect the agent, and the passive-like interpretation noted in the example's 'note' is not aligned with the gloss.",
+    "quote": "g=\"4.A=2SG.O=tie.up PURP NMLZ COP track-POSS COP FIN\"",
+    "suggestion": "Revise the gloss to reflect the passive or middle interpretation, e.g., 'PASS=2SG.O=tie.up' or add a note that the agent is null or generic, or revise the translation to include the agent.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#001",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "12,15",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for `yak` is p. 475-476, but the citation for `hi` and `p` ~ `pe` is p. 475-478. The current formatting suggests both are covered by the first citation.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"475–476\" />. The complementizer <i lang=\"ain-Latn\">yak</i> marks the retrospective or ongoing counterpart; <i lang=\"ain-Latn\">hi</i> and <i lang=\"ain-Latn\">p</i> ~ <i lang=\"ain-Latn\">pe</i> nominalize without a temporal restriction <Ref k=\"nakagawa2024\" p=\"475–478\" />",
+    "suggestion": "Split the citation: `<Ref k=\"nakagawa2024\" p=\"475–476\" />. The complementizer <i lang=\"ain-Latn\">yak</i> marks the retrospective or ongoing counterpart; <i lang=\"ain-Latn\">hi</i> and <i lang=\"ain-Latn\">p</i> ~ <i lang=\"ain-Latn\">pe</i> nominalize without a temporal restriction <Ref k=\"nakagawa2024\" p=\"475–478\" />.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation <Ref k=\"sato2008\" p=\"176–177\" /> is attached to the end of a sentence that lists multiple complementizers, but it's unclear whether Sato supports the entire claim about yak, hi, and p/pe, or only part of it. The citation placement is ambiguous.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"475–476\" />. The complementizer <i lang=\"ain-Latn\">yak</i> marks the retrospective or ongoing counterpart; <i lang=\"ain-Latn\">hi</i> and <i lang=\"ain-Latn\">p</i> ~ <i lang=\"ain-Latn\">pe</i> nominalize without a temporal restriction <Ref k=\"nakagawa2024\" p=\"475–478\" />; <Ref k=\"sato2008\" p=\"176–177\" />.",
+    "suggestion": "Reposition the Sato citation to clarify which claim it supports, e.g., after 'nominalize without a temporal restriction' or as a separate sentence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#019",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "269",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This statement contradicts the earlier claim in section 'kuni ne: expectative predication' that Shibatani groups kuni ne with other formal-noun-plus-copula expressions, implying kuni ne exists as a form. The section presents kuni ne as a Classical Ainu construction but then denies attestation of bare kuni ne in modern dialects, which is consistent, but the phrasing suggests no attestation at all, while Shibatani's data are presented as evidence of kuni ne. However, the issue is not contradiction per se but potential overstatement: the claim should clarify that bare kuni ne is unattested in *modern* dialects, not in *any* source.",
+    "quote": "No read source provides modern Saru or Chitose corpus examples of bare kuni ne without the intervening p",
+    "suggestion": "Revise to: 'No read source provides modern Saru or Chitose corpus examples of bare kuni ne without the intervening p; Shibatani's attestation is limited to Classical Ainu.'",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'the banked Saru corpus examples above' refers to examples in the current chapter, but none of the examples in section 'kuni p: purposive and deontic nominals' use the form kuni p ne alone — both Ex 176 and 187 include ruwe ne. The only example with kuni p ne would be in the table, but no example in the text actually illustrates kuni p ne without ruwe ne.",
+    "quote": "the banked Saru corpus examples above all show the kuni p ne form",
+    "suggestion": "Revise to refer to the table or add an example with kuni p ne without ruwe ne, or rephrase to acknowledge that even the cited examples include ruwe ne.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#022",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "320",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sentence ends with the epistemic tag ‹contested› after the period, which is incorrect formatting. The tag should precede the punctuation or be integrated properly.",
+    "quote": "No read source provides a constituency test that decides between them for the kuni construction specifically ‹contested›",
+    "suggestion": "Move the tag before the period: '...specifically ‹contested›.'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#020",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "178",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'track-POSS' for ru-we is inconsistent with standard Leipzig glossing conventions. 'track' is not a conventional gloss; ruwe is standardly glossed as 'track' in the sense of 'trace' or 'evidence', but the established gloss in the literature is 'track' as a noun. However, the hyphenated 'track-POSS' suggests a possessive construction, but 'ruwe' is a noun and '-we' is the possessive suffix, so 'track-POSS' is technically correct, but non-standard. More commonly, it would be 'trace-POSS' or simply 'evidence'.",
+    "quote": "track-POSS",
+    "suggestion": "Use a more standard gloss such as 'trace-POSS' or 'evidence-POSS' for ru-we, or confirm consistency with other chapters.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#018",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "324-331",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about the diachronic cline is attributed to Shibatani (a published source) but tagged as ‹speculative›. If Shibatani explicitly proposes this, the tag should be ‹consensus› or at least ‹corpus-suggested›; if it's the author's speculation based on Shibatani, the citation should be separate from the speculative claim.",
+    "quote": "Shibatani's Classical data add a historical dimension: his 'expectative mood' label groups <i lang=\"ain-Latn\">kuni ne</i> with the possessed sensory-noun heads, suggesting the formal-noun-like behavior Nakagawa observes reflects a partly grammaticalized noun origin — the same diachronic cline by which <i lang=\"ain-Latn\">ruwe</i>, <i lang=\"ain-Latn\">siri</i>, and <i lang=\"ain-Latn\">hawe</i> moved from sensory nouns to nominalization heads <Ref k=\"shibatani1990\" p=\"83–84\" /> ‹speculative›.",
+    "suggestion": "Rephrase to clarify that the speculation is the author's, not Shibatani's, e.g., '...suggesting, speculatively, that the formal-noun-like behavior...'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#016",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "303-309",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'obligation-related root' for <i lang=\"ain-Latn\">kun-</i> is not reflected in any example glosses in the chapter; the examples consistently gloss <i lang=\"ain-Latn\">kuni</i> as 'PURP' (purposive). This is not a direct mismatch but could be confusing if readers compare the analysis with the example glosses.",
+    "quote": "Bugaeva's morphological analysis decomposes <i lang=\"ain-Latn\">kuni-p</i> as <i lang=\"ain-Latn\">kun-i-p</i> — an obligation-related root <i lang=\"ain-Latn\">kun-</i> (semantics uncertain), a possessive suffix <i lang=\"ain-Latn\">-i</i>, and the nominalizer <i lang=\"ain-Latn\">-p</i> — yielding a deontic head meaning 'the thing that must be done'",
+    "suggestion": "Consider adding a note that the PURP gloss is a simplification, or use a different gloss in the analysis section.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#015",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "289-322",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter consistently uses <i lang=\"ain-Latn\">kuni p</i> (with a space) elsewhere, but here Bugaeva's analysis is presented as <i lang=\"ain-Latn\">kuni-p</i> (with a hyphen). This orthographic inconsistency could confuse readers about whether the space or hyphen is significant.",
+    "quote": "Bugaeva's morphological analysis decomposes <i lang=\"ain-Latn\">kuni-p</i> as <i lang=\"ain-Latn\">kun-i-p</i> — an obligation-related root <i lang=\"ain-Latn\">kun-</i> (semantics uncertain), a possessive suffix <i lang=\"ain-Latn\">-i</i>, and the nominalizer <i lang=\"ain-Latn\">-p</i>",
+    "suggestion": "Use the same orthographic convention as elsewhere, e.g., 'kuni p' or clarify that Bugaeva treats it as a single morphological unit.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#013",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "34-36",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'gives an upper bound on the construction's frequency' is slightly informal and could be read as a pipeline note about methodology rather than a reader-facing explanation.",
+    "quote": "Corpus search returns 6,113 tokens of <i lang=\"ain-Latn\">kuni</i> (rank 36), a figure that conflates the complementizer with any phonologically identical material and gives an upper bound on the construction's frequency.",
+    "suggestion": "Rephrase to: '...providing an upper bound on the frequency of the construction.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#012",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "7-8",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'nominalizes a finite VP into a nominal' is slightly redundant; 'nominalizes a finite VP' would suffice, or 'turns a finite VP into a nominal'.",
+    "quote": "nominalizes a finite VP into a nominal whose content is irrealis, prospective, or deontic",
+    "suggestion": "Consider: 'nominalizes a finite VP whose content is irrealis, prospective, or deontic'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#011",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "330",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹speculative› is attached to the sentence discussing the diachronic cline of sensory nouns to nominalization heads. The citation supports this claim. The tag seems appropriate here.",
+    "quote": "<Ref k=\"shibatani1990\" p=\"83–84\" /> ‹speculative›.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#010",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "320",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is applied to the statement about the lack of constituency tests for the `kuni` construction. The citations support this claim. The tag seems appropriate here.",
+    "quote": "construction specifically ‹contested› <Ref k=\"nakagawa2024\" p=\"476\" />; <Ref k=\"bugaeva2016\" p=\"294\" />.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#009",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "309",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is attached to the sentence describing Bugaeva's morphological analysis. The citation supports this claim. However, the following sentence discusses the lexical source of the root, which is also part of the contested analysis.",
+    "quote": "<Ref k=\"bugaeva2016\" p=\"294\" /> ‹contested›. The lexical source of the root",
+    "suggestion": "Ensure the tag accurately reflects the scope of the claim it modifies.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#008",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "263",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹speculative› is attached to the sentence discussing the relationship between `kuni ne` and `kuni p ne`. The sentence immediately following discusses the formal-noun-plus-copula paradigm, which is not necessarily speculative. The tag might be misplaced.",
+    "quote": "sources read here ‹speculative›. The formal-noun-plus-copula paradigm underlying both constructions connects",
+    "suggestion": "Ensure the epistemic tag is correctly placed to modify only the statement it refers to.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#007",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "235",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'kuni p' is italicized, but the 'p' within it is also italicized as a separate formal noun. This could be interpreted as 'kuni' followed by the formal noun 'p', which is consistent with the text, but the formatting might be slightly ambiguous.",
+    "quote": "The <i lang=\"ain-Latn\">p</i> of <i lang=\"ain-Latn\">kuni p</i> is the same formal noun",
+    "suggestion": "Ensure consistent formatting for compound forms like 'kuni p' to avoid ambiguity.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#006",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "212,217,222,227",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "In the table, the Ainu forms are consistently italicized and tagged with `lang=\"ain-Latn\"`. However, the VP placeholder is not italicized or tagged. While not strictly an error, for consistency with the surrounding text and to clearly delineate the Ainu components, the VP placeholder could also be marked.",
+    "quote": "<i lang=\"ain-Latn\">[VP] kuni [ye / ramu]</i>\n<i lang=\"ain-Latn\">[VP] kuni p</i>\n<i lang=\"ain-Latn\">[VP] kuni p ne</i>\n<i lang=\"ain-Latn\">[VP] kuni p ne ruwe ne</i>",
+    "suggestion": "Consider italicizing or otherwise marking the `[VP]` placeholder for clarity, or ensure it's consistently unformatted.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#021",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "303",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The hyphenation of 'kuni-p' in Bugaeva's analysis differs from the space-separated 'kuni p' used throughout the rest of the chapter. This creates orthographic inconsistency: elsewhere, 'kuni p' is written with a space, reflecting its analysis as two separate words. Using a hyphen here implies a closer morphological bond, which is part of the argument, but the form should be consistently presented as either 'kuni-p' or 'kuni p' throughout the discussion of Bugaeva's analysis.",
+    "quote": "kuni-p",
+    "suggestion": "Use consistent spacing: either 'kuni p' throughout, or 'kuni-p' when referring to the morphological analysis, with a note on orthographic convention.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#017",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "314-321",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that no source provides a constituency test is tagged as ‹contested›, but the citations to Nakagawa and Bugaeva suggest these sources are the ones that disagree. If they do not provide a test, the tag should be ‹consensus› (that no test exists) or the citations should be to sources that explicitly discuss the lack of a test.",
+    "quote": "No read source provides a constituency test that decides between them for the <i lang=\"ain-Latn\">kuni</i> construction specifically ‹contested› <Ref k=\"nakagawa2024\" p=\"476\" />; <Ref k=\"bugaeva2016\" p=\"294\" />.",
+    "suggestion": "Either remove the ‹contested› tag or clarify that the sources disagree on the analysis but neither provides a decisive test.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#014",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "256-263",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Earlier in the chapter (lines 27-30), it is stated that 'Classical Ainu data show an expectative predication meaning 'it must be that' or 'in order that' (<i lang=\"ain-Latn\">kuni ne</i>)', implying that kuni ne is a distinct construction. Later (lines 256-263), the relationship between kuni ne and kuni p ne is described as unsettled. This is not a direct contradiction but could confuse readers about whether kuni ne is a separate construction or a variant of kuni p ne.",
+    "quote": "Whether bare <i lang=\"ain-Latn\">kuni ne</i> and <i lang=\"ain-Latn\">kuni p ne</i> are diachronically related variants or a single construction with optionally present <i lang=\"ain-Latn\">p</i> is not settled by the sources read here ‹speculative›.",
+    "suggestion": "Consider adding a brief note reconciling the two statements, e.g., 'The Classical data show kuni ne as a distinct construction, but its relationship to the modern kuni p ne is debated.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#005",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "188",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PURP NMLZ' is used for 'kuni p'. As in previous examples, this gloss could be more descriptive of its function as a deontic nominal, and should be consistent with other glosses for 'kuni p'.",
+    "quote": "g=\"who even do CONJ make.a.living PURP NMLZ COP track-POSS COP FIN\"",
+    "suggestion": "Use a consistent and descriptive gloss for 'kuni p', such as 'DEON.NMLZ', across all examples.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kuni-complementizer-purpose-complements~p1#003",
+  "chapter": "kuni-complementizer-purpose-complements",
+  "lines": "160",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'NMLZ' appears twice, corresponding to the two instances of 'kuni p'. However, the note clarifies that 'kuni p' nominalizes the VP. The gloss should reflect this nominalization more clearly, perhaps by using a consistent gloss for 'kuni p' or by indicating its nominalizing function.",
+    "quote": "g=\"clothe PURP NMLZ feed PURP NMLZ task COP do CONJ\"",
+    "suggestion": "Consider a gloss like 'PURP.NMLZ' for 'kuni p' or a more descriptive gloss if possible, ensuring consistency.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

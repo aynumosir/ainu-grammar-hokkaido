@@ -1,0 +1,806 @@
+[
+ {
+  "id": "hine-akusu-switch-reference~p1#013",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "455",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'but it was not read directly' and the note about page numbers reaching through intermediaries are pipeline register leaks, indicating the author's process rather than information for the reader.",
+    "quote": "but it was not read directly — all attributed page numbers reach it through <Ref k=\"nakagawa2024\" /> and <Ref k=\"refsing1986\" /> ‹speculative for those page numbers›.",
+    "suggestion": "Rephrase to focus on the indirectness of the source attribution, e.g., 'Attributed page numbers for Tamura (1972b) are cited via Nakagawa (2024) and Refsing (1986), and this claim is therefore treated as speculative.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a pipeline note about source verification, not a descriptive claim about Ainu. The epistemic tag ‹speculative› is applied to page numbers, which is unusual and reads as editorial.",
+    "quote": "but it was not read directly — all attributed page numbers reach it through Nakagawa 2024 and Refsing 1986 ‹speculative for those page numbers›.",
+    "suggestion": "Remove the sentence and the tag, or move to a footnote about source limitations.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Meta-commentary about source access ('not read directly') and editorial process leaks into the prose. This is a pipeline register leak.",
+    "quote": "but it was not read directly — all attributed page numbers reach it through Nakagawa2024 and Refsing1986",
+    "suggestion": "Rephrase to: 'Tamura's 1972 study is cited indirectly through Nakagawa (2024) and Refsing (1986), so the page attributions are secondary.'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#023",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "153",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'ru-we' is 'track-POSS', but the possessive marker is not segmented in the morphemic line (it is written as 'ru-we' with a hyphen, but 'we' is glossed as 'POSS'). The morphemic segmentation should separate 'ru' and 'we' with a hyphen, which it does, but the gloss 'track-POSS' implies 'we' is a possessive suffix, which is correct. No mismatch found.",
+    "quote": "m=\"kanpi ku=sanke ru-we ne akusu itasa kanpi ek ru-we ne\" g=\"letter 1SG.A=send.out track-POSS COP CONJ in.return letter come track-POSS COP\"",
+    "suggestion": null,
+    "confidence": 0
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation 'I had sent a letter, and in return a letter came.' implies a reciprocal relationship not present in the gloss 'letter 1SG.A=send.out track-POSS COP CONJ in.return letter come track-POSS COP'. The gloss lacks any equivalent for 'in return'.",
+    "quote": "kanpi ku=sanke ru-we ne akusu itasa kanpi ek ru-we ne",
+    "suggestion": "Revise gloss to include a semantic component for reciprocity, e.g., 'in.return' or 'in.exchange'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#021",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "302",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Reference to 'factbase §6, gap 5' is an internal production note, not appropriate for the reader.",
+    "quote": "The printed location of this observation has not been confirmed against the Handbook print edition (factbase §6, gap 5), so the claim is treated as speculative.",
+    "suggestion": "Remove the parenthetical or rephrase to 'the page reference is unverified'.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Another instance of pipeline register leak: 'factbase' and 'gap 5' are not intended for final text.",
+    "quote": "factbase §6, gap 5",
+    "suggestion": "Remove the parenthetical: 'so the claim is treated as speculative.'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#020",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "240",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Reference to 'factbase §6, gap 6' is an internal production note (pipeline register) that should not appear in the published text.",
+    "quote": "the quantitative base is a single informant's Shizunai material (factbase §6, gap 6).",
+    "suggestion": "Remove the parenthetical or rephrase to describe the gap in plain terms, e.g., 'no comparable data exist for other dialects'.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'factbase' and reference to 'gap 6' are internal pipeline markers not intended for publication. This is a register leak from the production process.",
+    "quote": "factbase §6, gap 6",
+    "suggestion": "Replace with neutral phrasing: 'No comparable count exists for hine or akusu in any Hokkaido variety; the quantitative base is limited to a single informant's Shizunai material.'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#012",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "372",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note 'synthesis from the above; no single source states this directly' is meta-commentary about the production of the text rather than a description of the position itself. It indicates that this point is an original synthesis by the author of the chapter.",
+    "quote": "<td>synthesis from the above; no single source states this directly</td>",
+    "suggestion": "Rephrase to something like 'original synthesis based on cited sources' or similar, to be less of a pipeline leak.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag '‹original-needs-review›' is an editorial pipeline tag that should not appear in the published text. It indicates the claim needs review by the author, not a grade for the reader.",
+    "quote": "original-needs-review",
+    "suggestion": "Replace with an appropriate grade such as '‹speculative›' or remove the tag entirely.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#014",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "456",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag 'speculative' is applied to the claim about Tamura (1972b) being cited indirectly. While the indirectness might warrant caution, applying 'speculative' to the *citation method* rather than the *content* of the claim is unusual. The content of Tamura's work itself is not necessarily speculative.",
+    "quote": "‹speculative for those page numbers›",
+    "suggestion": "Consider removing this tag or rephrasing to indicate that the *attribution* of specific page numbers to Tamura is speculative due to the indirect citation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag is attached to a meta-comment about citation provenance, not to the claim itself. Epistemic tags should modify claims, not editorial notes.",
+    "quote": "‹speculative for those page numbers›",
+    "suggestion": "Move the ‹speculative› tag to the claim about Tamura's etymology (line 78) and remove this parenthetical.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#011",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "362",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'speculative' grade is justified by '(Handbook Part II, page unverified)'. This is a good reason for the grade, but the note about the page being unverified is a 'pipeline register leak' or an editorial note rather than a descriptive element of the claim itself.",
+    "quote": "<td>Perfective <i lang=\"ain-Latn\">a</i> + <i lang=\"ain-Latn\">korka</i> / <i lang=\"ain-Latn\">p</i> tends to fall at scene and actor transitions</td>\n\t\t\t\t\t<td><Ref k=\"bugaeva2022\" /> (Handbook Part II, page unverified)</td>\n\t\t\t\t\t<td>speculative</td>",
+    "suggestion": "Remove the parenthetical note about the page being unverified from the table cell. This information might be better placed in a footnote or a separate editorial comment.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation is to Bugaeva 2022 with the note '(Handbook Part II, page unverified)'. This is a vague citation; the page number is missing and the claim is marked speculative, but the citation format is incomplete.",
+    "quote": "Perfective a + korka / p tends to fall at scene and actor transitions",
+    "suggestion": "Either provide a page number or remove the citation and mark as 'personal observation' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#026",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "388",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same as above: editorial pipeline tag appearing in prose.",
+    "quote": "‹original-needs-review›",
+    "suggestion": "Replace with '‹speculative›' or remove.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#037",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "88",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example uses 'ek' without macron, but if 'ekine' is the phonological realization, the underlying form should consistently reflect vowel length. Earlier in the chapter, macrons are used in phonological discussion (e.g., line 89 'a=ne hine' → [aneine]).",
+    "quote": "ek hine",
+    "suggestion": "Use macron consistently: 'ek' → 'ēk' if phonemically long.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#035",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "104",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent macron usage: earlier in the chapter, 'Hokkaidō' appears with a macron (e.g., line 89 'ek hine' → [ekine]), but here 'Hokkaido' is unmarked. The chapter otherwise uses macrons in phonological discussion.",
+    "quote": "Hokkaido and Sakhalin",
+    "suggestion": "Standardize to 'Hokkaidō' with macron throughout.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#033",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "96-99",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form 'hinne' appears only here and in line 440; elsewhere the particle is 'hine'. The geminate 'nn' is a dialectal variant, but it is not explained whether this is a distinct form or a phonetic variant. Consistency is fine, but the reader may wonder.",
+    "quote": "hinne",
+    "suggestion": "Add a brief note that 'hinne' is a Tokachi variant with geminate consonant.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#032",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "415-420",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence is long and could be clearer; 'compound of that discourse anchoring' is awkward.",
+    "quote": "nukopoli (aynu-corpora Discord, 2024) observes that ruwe ne is associated with scene transition and summary framing in prose narrative, and that ruwe ne akusu functions as a compound of that discourse anchoring with the discovery connective",
+    "suggestion": "Rephrase to '... and that ruwe ne akusu combines this discourse-anchoring function with the discovery connective.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#031",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "153",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The reference to '§5' is ambiguous; it should be a cross-reference to a specific section or chapter.",
+    "quote": "The cross-linguistic asymmetry with Japanese — factual と/たら cannot follow preceding のだ, but Ainu akusu can follow ruwe ne — is discussed in §5.",
+    "suggestion": "Replace '§5' with a proper cross-reference, e.g., <Xr ch=\"evidential-connective-interface\" />.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#030",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "79-80",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Passive voice and vague; 'reached here through intermediaries' is unclear.",
+    "quote": "The source material is reached here through intermediaries; the etymology is reported, not independently verified.",
+    "suggestion": "Rephrase to 'The etymology is cited from secondary sources (Nakagawa 2024, Refsing 1986) and has not been verified against the original.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#029",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "302",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Awkward phrasing; 'printed location' is unclear. Also the parenthetical is a pipeline leak.",
+    "quote": "The printed location of this observation has not been confirmed against the Handbook print edition (factbase §6, gap 5), so the claim is treated as speculative.",
+    "suggestion": "Rephrase to 'The page reference for this observation has not been verified, so the claim is treated as speculative.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#028",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "240",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The parenthetical 'factbase §6, gap 6' is not only a register leak but also unclear to the reader; it should be rephrased.",
+    "quote": "the quantitative base is a single informant's Shizunai material (factbase §6, gap 6).",
+    "suggestion": "Rephrase to 'the quantitative base is a single informant's Shizunai material, with no comparable data from other dialects.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#027",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "96-99",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence lists Honbetsu as an example of Tokachi using hinne, then says Honbetsu lacks both forms. This is a factual contradiction (already flagged), but also a copyediting issue: the sentence structure is confusing.",
+    "quote": "Tokachi uses hinne (e.g. Honbetsu) and hine in alternation; Shiranuka and Kushiro write ine; Honbetsu lacks both forms entirely",
+    "suggestion": "Restructure to clearly separate the dialects: 'Tokachi (except Honbetsu) uses hinne and hine in alternation; Honbetsu lacks both forms; Shiranuka and Kushiro write ine.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#024",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "148-150",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The free translation uses past perfect 'had sent', but the gloss has no past tense marker; the Ainu uses present tense forms. This may be a translation convention, but it is a mismatch between gloss and translation.",
+    "quote": "m=\"kanpi ku=sanke ru-we ne akusu itasa kanpi ek ru-we ne\" g=\"letter 1SG.A=send.out track-POSS COP CONJ in.return letter come track-POSS COP\" tr=\"I had sent a letter, and in return a letter came.\"",
+    "suggestion": "Either adjust the gloss to include a past tense interpretation note, or change the translation to simple past 'I sent a letter'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#019",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "153",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter has no section numbered §5; the reference is to a section that does not exist in this chapter. Likely a cross-reference to another chapter that was not updated.",
+    "quote": "The cross-linguistic asymmetry with Japanese — factual と/たら cannot follow preceding のだ, but Ainu akusu can follow ruwe ne — is discussed in §5.",
+    "suggestion": "Replace '§5' with the appropriate section slug or chapter reference, e.g., <Xr ch=\"evidential-connective-interface\" />.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#010",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "355",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'contested' grade is explained by stating that 'primary grammars condition on polarity/aspect, not subject identity'. This explanation is good, but the citation for the 'contested' claim is only <Ref k=\"ijas2023\" />. It would be stronger if the primary grammars that contradict this were also cited here, or if the explanation explicitly stated that <Ref k=\"ijas2023\" /> is the source of the contested claim.",
+    "quote": "<td><i lang=\"ain-Latn\">no</i> / <i lang=\"ain-Latn\">wa</i> conditioned by SS vs DS</td>\n\t\t\t\t\t<td><Ref k=\"ijas2023\" /></td>\n\t\t\t\t\t<td>contested — primary grammars condition on polarity/aspect, not subject identity</td>",
+    "suggestion": "Either cite the primary grammars that contradict <Ref k=\"ijas2023\" /> here, or rephrase to make it clear that <Ref k=\"ijas2023\" /> is the source of the contested claim being discussed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#009",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "340",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade 'corpus-suggested' is applied to a claim based on Refsing's data, which is described as coming from 'one dialect, one informant'. This seems appropriate. However, the note also mentions 'no Saru count for hine', which is a separate point about data availability, not necessarily a reason for the grade itself.",
+    "quote": "<td><i lang=\"ain-Latn\">wa</i> tends same-subject (≈90% in Shizunai) but imposes no grammatical constraint</td>\n\t\t\t\t\t<td><Ref k=\"refsing1986\" p=\"240\" />; <Ref k=\"sato2008\" p=\"45–46\" /></td>\n\t\t\t\t\t<td>corpus-suggested (one dialect, one informant; no Saru count for hine)</td>",
+    "suggestion": "Ensure the grade accurately reflects the evidence cited. If the 'no Saru count' is a separate issue, it might be better placed in a different context or as a separate note.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#007",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "206",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the second morpheme of 'awa' is uncertain. Given that 'akusu' and 'awa' are stated to be semantically equivalent (line 158), this uncertainty about 'awa's' etymology might be a point of interest or a potential area for further research.",
+    "quote": "The second morpheme of <i lang=\"ain-Latn\">awa</i> has not been identified with confidence",
+    "suggestion": "No immediate fix needed, but this highlights a potential gap in the analysis of 'awa'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#006",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "201",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'akusu' is 'and then (discovery)', but the etymology here is given as 'a (perfective auxiliary) + kusu (consequential)'. While related, 'consequential' and 'discovery' are not identical. The gloss might be too specific or the etymology too general.",
+    "quote": "The etymology of <i lang=\"ain-Latn\">akusu</i> as <i lang=\"ain-Latn\">a</i> (perfective auxiliary) + <i lang=\"ain-Latn\">kusu</i> (consequential) is supported by Refsing",
+    "suggestion": "Align the gloss with the etymological breakdown, e.g., 'and then (consequential discovery)', or clarify the semantic link.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#005",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "195",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The etymology for 'awa' is given as 'a (PFV) + ?'. The text previously states 'akusu' and 'awa' are semantically equivalent (line 158). If 'akusu' has a known second morpheme ('kusu'), and they are semantically equivalent, there might be an expectation for 'awa' to have a similarly identifiable second morpheme.",
+    "quote": "<td><i lang=\"ain-Latn\">a</i> (PFV) + ?</td>",
+    "suggestion": "Investigate if the second morpheme of 'awa' is known or if there's a reason it's uncertain, and update the table accordingly.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#004",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "187",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The etymology provided for 'akusu' is 'a (PFV) + kusu (consequential)'. The gloss for 'akusu' is 'and then (discovery)'. While 'consequential' and 'discovery' are related, the gloss could be more precise to reflect the etymological breakdown.",
+    "quote": "<td><i lang=\"ain-Latn\">a</i> (PFV) + <i lang=\"ain-Latn\">kusu</i> (consequential)</td>",
+    "suggestion": "Consider adjusting the gloss to 'and then (consequential discovery)' or similar, to better align with the etymology.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#003",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "111",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'akusu' is 'and then (discovery)', but here it's categorized under 'unfolding event' connectives. While 'discovery' can be part of an unfolding event, the gloss might be too narrow.",
+    "quote": "<A w=\"akusu\" /> and <A w=\"awa\" /> belong to Nakagawa's group-② 'unfolding event' (事態の展開) connectives",
+    "suggestion": "Ensure the gloss accurately reflects the broader category it belongs to, or clarify the relationship between 'discovery' and 'unfolding event'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#002",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "33",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text refers to 'akusu' as signaling a 'discovered or witnessed consequence', which is consistent with the gloss 'and then (discovery)' provided earlier, but the gloss itself is not repeated here.",
+    "quote": "and looser than <A w=\"akusu\" />, which signals a discovered or witnessed consequence",
+    "suggestion": "Repeat the gloss for 'akusu' for clarity, or ensure consistency in how the term is presented.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#001",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "10",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'akusu' is 'and then (discovery)', but the description in the prose states it 'closes a realized first event and opens the clause'. This implies a sequence of events rather than just a discovery.",
+    "quote": "<A w=\"akusu\" gl=\"and then (discovery)\" /> closes a realized first event and opens the clause",
+    "suggestion": "Consider refining the gloss to better reflect the described function, or adjusting the prose to align with the gloss.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#036",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "214",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This count contradicts the earlier statement in line 104 that hine has 14,368 tokens — all labeled ‹corpus-suggested› — but here akusu and awa counts are presented without epistemic tagging, despite similar aggregation issues (Hokkaido and Sakhalin combined, homonym filtering not confirmed).",
+    "quote": "whole-corpus word-form counts register approximately 3,861 tokens for akusu and 2,071 for awa",
+    "suggestion": "Add ‹corpus-suggested› to the akusu and awa counts for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#034",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "78",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim attributes etymology to Tamura 1972b and Kindaichi 1960, but cites them only indirectly via Refsing 1986. The epistemic tag ‹speculative› is not applied to this claim, though the text explicitly states the source material was not independently verified.",
+    "quote": "Tamura 1972b: 158, via Refsing1986 p. 243; Kindaichi 1960: 193, via Refsing1986 p. 243",
+    "suggestion": "Add ‹speculative› after the etymology claim to reflect indirect sourcing.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#025",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "415-420",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag '‹asserted›' is non-standard; the usual tags are '‹speculative›' or '‹corpus-suggested›'. Also, the corroboration by Satō is cited but the Discord source is primary; the tag should reflect the evidence grade.",
+    "quote": "nukopoli (aynu-corpora Discord, 2024) observes that ruwe ne is associated with scene transition ... ‹asserted; corroborated by Satō 2009 p. 52›",
+    "suggestion": "Replace '‹asserted; corroborated by ...›' with '‹corpus-suggested›' or '‹speculative›' depending on the strength of the corroboration.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#022",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "79-80",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a meta-commentary about the research process, not a statement about the language. It belongs in a footnote or removed.",
+    "quote": "The source material is reached here through intermediaries; the etymology is reported, not independently verified.",
+    "suggestion": "Either delete the sentence or move it to a footnote with a note about source access.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#018",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "440-441",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This repeats the same contradiction from lines 96-99: Tokachi (including Honbetsu) uses hinne/hine, but Honbetsu Tokachi lacks both. The inconsistency is unresolved.",
+    "quote": "Tokachi uses hinne alongside hine for neutral chaining; Honbetsu Tokachi shows neither form.",
+    "suggestion": "Reconcile with the earlier statement: either specify that Honbetsu is an exception within Tokachi, or correct one of the two passages.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#017",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "96-99",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Honbetsu is listed as a Tokachi variety that uses hinne/hine in alternation, then immediately said to lack both forms entirely. This is contradictory.",
+    "quote": "Tokachi uses hinne (e.g. Honbetsu) and hine in alternation; ... Honbetsu lacks both forms entirely",
+    "suggestion": "Clarify: either Honbetsu Tokachi uses hinne/hine but another Honbetsu variety lacks them, or the first mention should be corrected to exclude Honbetsu.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#016",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "465",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'requires bespoke corpus annotation' is a comment on the research process and data needs, rather than a statement about the linguistic facts themselves. This is a pipeline register leak.",
+    "quote": "remains open and requires bespoke corpus annotation over a tagged Saru text.",
+    "suggestion": "Rephrase to focus on the empirical test, e.g., 'This question can be addressed by corpus annotation of subject continuity across <i lang=\"ain-Latn\">hine</i> and <i lang=\"ain-Latn\">akusu</i> junctions in tagged Saru text.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#015",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "460",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description of the corpus totals as 'homonym-mixed, Hokkaido-and-Sakhalin combined, and carry no subject-continuity annotation' describes limitations of the data and the tools used to analyze it, which is a form of pipeline register leak.",
+    "quote": "The whole-corpus totals — approximately 14,368 for <i lang=\"ain-Latn\">hine</i>, 3,861 for <i lang=\"ain-Latn\">akusu</i>, 2,071 for <i lang=\"ain-Latn\">awa</i> — are homonym-mixed, Hokkaido-and-Sakhalin combined, and carry no subject-continuity annotation.",
+    "suggestion": "Rephrase to focus on the implications for the reader, e.g., 'These whole-corpus totals... are limited by homonym mixing and the combination of Hokkaido and Sakhalin data, and lack subject-continuity annotation.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hine-akusu-switch-reference~p1#008",
+  "chapter": "hine-akusu-switch-reference",
+  "lines": "237",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Later, in the 'Graded positions' table, the position for 'hine'/'akusu' states that their SS/DS tendencies follow from discourse semantics, not subject continuity. This seems to contradict the statement that no comparable count exists for 'hine' or 'akusu', implying that such counts might be expected or relevant to the discussion of subject continuity.",
+    "quote": "approximately ninety per cent of the predicate pairs joined by <i lang=\"ain-Latn\">wa</i> share a subject <Ref k=\"refsing1986\" p=\"240\" />. No comparable count exists for <i lang=\"ain-Latn\">hine</i> or <i lang=\"ain-Latn\">akusu</i> in any Hokkaido variety",
+    "suggestion": "Clarify whether the lack of counts for 'hine'/'akusu' is because they are not expected to show such tendencies, or if it's simply a data gap. Reconcile this with the later claim about discourse semantics being the driver.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

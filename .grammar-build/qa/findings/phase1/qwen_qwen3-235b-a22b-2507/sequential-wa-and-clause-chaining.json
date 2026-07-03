@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "87-95",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex\n\t\tm=\"corpokke a=eapkas wa arpa=an ayne\"\n\t\tg=\"beneath.it 4.A=walk.along CONJ go=4.S CONJ\"\n\t\ttr=\"Walking beneath it, I went along, and then…\"\n\t\tcite=\"nakagawa2024:340\"\n\t\tdial=\"SAR\"\n\t\tplace=\"Nakagawa ex. 605, after Kayano 1974a: 68\"\n\t\tnote=\"wa marks the walking as manner and route of the going; ayne is the culminative particle treated in §5 below.\"",
+  "issue": "The gloss '4.A=walk.along' implies a transitive verb with agent (4.A), but the verb eapkas is intransitive ('walk along'). The free translation uses 'I', but the gloss shows 4th person (4.A/4.S), creating a person/number inconsistency. The note also refers to §5, but no such section exists in this chapter.",
+  "suggestion": "Revise gloss to '4.S=walk.along' and adjust translation to match 4th person, or correct person indexing. Change note reference from '§5' to '§4' (id='ayne-culminative').",
+  "confidence": 0.95,
+  "chapter": "sequential-wa-and-clause-chaining",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "190-198",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex\n\t\tm=\"ku=cis a ku=cis a ayne\"\n\t\tg=\"1SG.S=cry PFV 1SG.S=cry PFV CONJ\"\n\t\ttr=\"Crying and crying, and finally…\"\n\t\tcite=\"ainukoraci1991\"\n\t\tdial=\"SAR\"\n\t\tplace=\"丸野和子, '&quot;Kuma&quot; turano k=an', Ainu Times no. 15/1, text 24 (excerpt)\"\n\t\tnote=\"The V a V a ayne intensifier pattern: the perfective a marks each iteration; ayne closes the protracted stretch and points to the outcome. The full sentence continues with the result clause.\"",
+  "issue": "The gloss uses '1SG.S=cry' twice, but the morpheme string shows 'ku=cis' both times, where 'ku=' is 1SG.S. However, the free translation 'Crying and crying' lacks subject reference, and the gloss implies reduplication of full clause including subject, which may not be accurate. The note refers to 'the full sentence continues', but this is not indicated in the example markup.",
+  "suggestion": "Add 'lit' field to clarify literal structure, or mark as 'constructed' if illustrative. Confirm whether reduplication includes subject or just verb+auxiliary.",
+  "confidence": 0.85,
+  "chapter": "sequential-wa-and-clause-chaining",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "289",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"arpa wa isam\" g=\"go CONJ be.no.more\" tr=\"S/he has gone.\" constructed />",
+  "issue": "The gloss 'be.no.more' for 'isam' does not clearly convey terminative aspect; it may be underspecified. The translation 'S/he has gone' implies perfective, but the gloss does not show person indexing present on the verb in natural usage.",
+  "suggestion": "Revise gloss to 'finish' or 'terminate' and include person marker if present in actual forms, e.g., 'go CONJ finish.3SG'.",
+  "confidence": 0.8,
+  "chapter": "sequential-wa-and-clause-chaining",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "304-307",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "When <i lang=\"ain-Latn\">wa</i> immediately follows a stem ending in\n\t\t<i lang=\"ain-Latn\">-n</i> or <i lang=\"ain-Latn\">-m</i>, the initial\n\t\t<i lang=\"ain-Latn\">w-</i> assimilates to the preceding nasal and the particle surfaces as\n\t\t<i lang=\"ain-Latn\">[ma]</i>.",
+  "issue": "The particle is italicized as [ma] with brackets, while other particles are given without brackets (e.g., <i lang=\"ain-Latn\">wa</i>). Inconsistent formatting: brackets suggest phonetic transcription, but not consistently applied elsewhere.",
+  "suggestion": "Remove brackets: <i lang=\"ain-Latn\">ma</i>, or use /ma/ for phonetic clarity.",
+  "confidence": 0.9,
+  "chapter": "sequential-wa-and-clause-chaining",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "313",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "while katakana\n\t\ttranscription writes マ in the relevant environment",
+  "issue": "The katakana character マ is not accompanied by a romanized equivalent or explanation, while other Ainu forms are consistently romanized. This breaks the pattern of providing both scripts.",
+  "suggestion": "Add romanization: \"writes マ (ma)\".",
+  "confidence": 0.95,
+  "chapter": "sequential-wa-and-clause-chaining",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "206-207",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "as in the manner example above\n\t\t\t(<i lang=\"ain-Latn\">corpokke a=eapkas wa arpa=an ayne</i>).",
+  "issue": "The example referenced ('corpokke a=eapkas wa arpa=an ayne') was used earlier to illustrate the manner reading of 'wa', but here it is cited as an example of the 'wa…wa…ayne' pattern. However, this example contains only one 'wa', not a run of 'wa…wa…'. This contradicts the claim being made.",
+  "suggestion": "Either correct the reference to a true multi-wa chain or revise the claim to acknowledge that a single 'wa' can precede 'ayne'.",
+  "confidence": 0.9,
+  "chapter": "sequential-wa-and-clause-chaining",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "163-164",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">orowa(no)</i> 'and then, from there after'",
+  "issue": "The form is given as 'orowa(no)' with optional parentheses, but in the table on line 50 it appears as 'orowa(no)' without consistency in hyphenation or parentheses. Elsewhere (line 378) it is split as 'orowa' = 'or' + 'wa'. Orthographic representation drifts between hyphenated, parenthetical, and split forms.",
+  "suggestion": "Standardize to 'orowa (or wano)' or similar consistent format throughout.",
+  "confidence": 0.85,
+  "chapter": "sequential-wa-and-clause-chaining",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "332-372",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "<table>\n\t\t\t\t<tr>\n\t\t\t\t\t<td><i lang=\"ain-Latn\">wa(no)</i> ablative</td>\n\t\t\t\t\t<td>case particle / postposition</td>\n\t\t\t\t\t<td>follows a NP or locative nominal; glossed ABL; extends to\n\t\t\t\t\t\t<i lang=\"ain-Latn\">wano</i></td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<i lang=\"ain-Latn\">mosir wa</i>\n\t\t\t\t\t\t<br />'from the land'\n\t\t\t\t\t</td>\n\t\t\t\t</tr>",
+  "issue": "The example shows 'mosir wa' but the text says the form extends to 'wano'. The example should reflect the allomorphy by showing 'mosir wano' or noting the variant.",
+  "suggestion": "Change example to 'mosir wano' or add note: '(also mosir wano)'",
+  "confidence": 0.9,
+  "chapter": "sequential-wa-and-clause-chaining",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

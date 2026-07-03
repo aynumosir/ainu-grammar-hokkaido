@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "82-90",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "tr=\"I went down to the river and caught fish again, and at last …\" … g=\"… descend.SG=4.S … fish-catch=4.S …\"",
+  "issue": "The free translation uses first-person singular 'I', but the gloss shows 4th-person S suffix =an on both verbs, indicating a 4th-person subject. The translation should reflect the 4th person or a note should explain that 4th person can be used for first person in narrative.",
+  "suggestion": "Change translation to 'One went down … and caught fish again …' or add a note explaining the narrative use of 4th person.",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-object",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "169",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "numan hekaci cep koyki 'the boy caught some fish'",
+  "issue": "The Ainu example includes 'numan' (yesterday), but the English translation omits it, creating a mismatch between the Ainu text and the translation.",
+  "suggestion": "Add 'yesterday' to the translation: 'Yesterday the boy caught some fish.'",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-object",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "285",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "the read sources do not resolve",
+  "issue": "The phrase 'the read sources' is a pipeline-internal reference (sources read by the author) and is not appropriate for the reader. It should be rephrased to refer to the literature or the sources consulted.",
+  "suggestion": "Change to 'the sources consulted for this chapter do not resolve' or 'the literature does not resolve'.",
+  "confidence": 0.8,
+  "chapter": "noun-incorporation-object",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "172",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "the contrast between the phrasal and the incorporated frame is developed here ‹consensus›",
+  "issue": "The epistemic tag ‹consensus› is applied to a statement about the chapter's own content, not to a factual claim that requires evidence. This is a misuse of the tag.",
+  "suggestion": "Remove the tag or replace with a more appropriate tag if the statement is contested.",
+  "confidence": 0.6,
+  "chapter": "noun-incorporation-object",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "89",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "The compound cep-koyki 'fish-catch' occurs 144 times in the Hokkaido corpus (rank 848).",
+  "issue": "This factual claim in the example note lacks a citation. The example cites ilcaa1976 for the narrative text, but the frequency claim is not supported by that source.",
+  "suggestion": "Add a citation to the corpus study from which the frequency and rank are drawn.",
+  "confidence": 0.5,
+  "chapter": "noun-incorporation-object",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

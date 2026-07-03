@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "8-10",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Hokkaidō Utari Kyōkai",
+  "issue": "Inconsistent macron usage: 'Hokkaidō' uses a macron, but elsewhere in the chapter 'Hokkaido' appears without a macron (lines 18, 35).",
+  "suggestion": "Standardize to either 'Hokkaidō' or 'Hokkaido' throughout the chapter.",
+  "confidence": 0.9,
+  "chapter": "everyday-conversation-text",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "35-36",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "in Hokkaido Ainu, the 3rd person is zero-marked",
+  "issue": "The claim that 3rd person is zero-marked in Hokkaido Ainu is stated as a general fact, but the note on line 52 says the argument of 'an' is 'zero-marked (3rd person, the sister inside the house)'. However, the example on line 44 has no person prefix, which is consistent. The inconsistency is with the later claim on line 115-117 that 'Person marking in the Ainu verb is obligatory in careful speech; its omission in the opening formula above reflects conversational reduction'. This contradicts the earlier statement that 3rd person is zero-marked (i.e., zero is the regular 3rd person marker, not an omission).",
+  "suggestion": "Clarify whether zero is the regular 3rd person marker or a conversational reduction. If zero is the regular marker, the later statement about 'omission' is misleading.",
+  "confidence": 0.8,
+  "chapter": "everyday-conversation-text",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "115-117",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Person marking in the Ainu verb is obligatory in careful speech; its omission in the opening formula above reflects conversational reduction where the referent is fully recoverable from the situation",
+  "issue": "This claim contradicts the earlier statement (lines 35-36) that 3rd person is zero-marked. If 3rd person is zero-marked, then the lack of a prefix in 'an ruwe' is not an 'omission' but regular grammar. The passage seems to treat zero as both a regular 3rd person marker and a conversational omission.",
+  "suggestion": "Reconcile the two accounts: either state that 3rd person is zero-marked (and the later 'omission' claim is wrong), or clarify that the zero in 'an ruwe' is a genuine omission of an obligatory prefix (contradicting the earlier claim).",
+  "confidence": 0.8,
+  "chapter": "everyday-conversation-text",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "150-152",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The existential-type aspect form V=an is the same suffix in its aspectual function, discussed in <Xr ch=\"existential-locational-an-oka\" />.",
+  "issue": "The text says 'V=an' is the same suffix in its aspectual function, but the example on line 156 shows 'merayke=an' glossed as 'be.cold=4.S' (4th person subject), not an aspectual function. The note on line 164 also says 'the 4th-person intransitive suffix =an attaches to the property verb, yielding a general-experiencer reading'. This contradicts the claim that it is an 'existential-type aspect form'.",
+  "suggestion": "Either remove the reference to aspectual function here, or clarify that =an has both a 4th person and an aspectual function, and specify which is at play in this example.",
+  "confidence": 0.9,
+  "chapter": "everyday-conversation-text",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "189",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "nankor encodes inference-based assertion (INFR): the speaker has no direct evidence about tomorrow's weather and reasons from current conditions.",
+  "issue": "The gloss in the example (line 182) gives 'INFR' for 'nankor', but the free translation (line 183) says 'Tomorrow will probably be fine.' The word 'probably' suggests epistemic modality (possibility), while the note says it is 'inference-based assertion'. The mismatch is between the gloss label 'INFR' (inferential) and the translation 'probably' (epistemic possibility). These are related but not identical; the translation implies uncertainty, while inference can be certain.",
+  "suggestion": "Either change the gloss to something like 'EPIST' or 'INFER', or adjust the translation to 'Tomorrow will be fine (I infer)' to match the inferential reading.",
+  "confidence": 0.6,
+  "chapter": "everyday-conversation-text",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "248-251",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "each turn-final predicate controls the evidential or modal framing for the whole turn — ruwe in the questions, wa in the open-chain response, bare na in the assertions, and nankor na in the inference.",
+  "issue": "The text says 'wa' is a turn-final predicate controlling evidential/modal framing, but earlier (line 111) 'wa' is described as a 'clause-linking particle' (CONJ) that 'closes the turn without a following clause'. The characterization of 'wa' as an evidential/modal framer is inconsistent with its earlier description as a conjunction.",
+  "suggestion": "Clarify whether 'wa' functions as a conjunction or an evidential/modal particle in this context, or reconcile the two descriptions.",
+  "confidence": 0.7,
+  "chapter": "everyday-conversation-text",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "18",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "a northern Hokkaido variety",
+  "issue": "Inconsistent macron usage: 'Hokkaido' here without macron, but 'Hokkaidō' on line 9 with macron.",
+  "suggestion": "Standardize to one form.",
+  "confidence": 0.9,
+  "chapter": "everyday-conversation-text",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

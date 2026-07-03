@@ -1,0 +1,533 @@
+[
+ {
+  "id": "uwepeker-prose-tale~p1#005",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "133",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'hine' is 'CONJ appearance-exist thing'. 'hine' is glossed as 'CONJ' in the main gloss, but the morpheme breakdown in the 'm' field is 'hine sir-an pe'. The gloss 'appearance-exist thing' seems to be derived from 'sir-an pe' rather than 'hine' itself. The gloss for 'hine' should likely just be 'CONJ' or similar, and 'sir-an pe' should be glossed separately if it's not part of 'hine'.",
+    "quote": "g=\"Pananpe exist Penanpe exist CONJ appearance-exist thing COP track-POSS COP although\"",
+    "suggestion": "Revise the gloss for 'hine' to accurately reflect its function as a conjunction, and ensure 'sir-an pe' is appropriately glossed or integrated.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'ne' is 'COP track-POSS COP although'. This appears to be a conflation of multiple morphemes or functions. 'ne' is typically a copula, and 'ru-we ne' is glossed as 'track-POSS COP although' in the note. The gloss should be more precise about the function of 'ne' in this specific instance, especially given the note's explanation.",
+    "quote": "g=\"Pananpe exist Penanpe exist CONJ appearance-exist thing COP track-POSS COP although\"",
+    "suggestion": "Clarify the gloss for 'ne' to accurately reflect its role, potentially separating it from 'track-POSS' and 'although' if they are distinct morphemes or functions.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss of 'hike' as 'although' contrasts with the free translation which uses 'and…' as a simple conjunction. The gloss suggests a concessive meaning not reflected in the translation.",
+    "quote": "m=\"pananpe an penanpe an hine sir-an pe ne ru-we ne hike\" g=\"Pananpe exist Penanpe exist CONJ appearance-exist thing COP track-POSS COP although\" tr=\"There were Pananpe and Penanpe, and…\"",
+    "suggestion": "Either adjust the gloss to a neutral conjunction marker (e.g., 'CONJ') or adjust the free translation to reflect the concessive nuance (e.g., '…, and then…' or '…, but…' depending on context).",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'ru-we ne', but the gloss 'g' renders it as 'COP track-POSS COP', which misaligns the morphemes: 'ru' and 'we' are separated in the gloss but concatenated in the morpheme line. Additionally, 'hike' is glossed as 'track-POSS', but 'hike' means 'path' or 'track', and 'pe' is already glossed earlier as 'thing'; the possessive interpretation is not clearly supported.",
+    "quote": "m=\"pananpe an penanpe an hine sir-an pe ne ru-we ne hike\"",
+    "suggestion": "Revise gloss to align morpheme-by-morpheme: e.g., 'ru=we ne' as 'COP=INFER COP' or similar, and reconsider 'hike' glossing.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for 'sir-an' is 'appearance-exist', but 'sir' means 'to become visible, to appear', so 'appearance-exist' is redundant or misleading. Also, 'hike' is glossed as 'track-POSS', but no possessive morpheme is present on 'hike' in the 'm' line.",
+    "quote": "g=\"Pananpe exist Penanpe exist CONJ appearance-exist thing COP track-POSS COP although\"",
+    "suggestion": "Change 'appearance-exist' to 'appear' or 'become-visible'; remove 'POSS' from 'track-POSS' unless possessive is morphologically present.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation omits the meaning of 'hine sir-an pe ne ru-we ne hike', which includes inferential evidentiality ('it is said that') and a reference to a track or path. The 'and…' suggests continuation but does not reflect the semantic content of the full clause.",
+    "quote": "tr=\"There were Pananpe and Penanpe, and…\"",
+    "suggestion": "Revise translation to include inferential and path-related meaning, e.g., 'There were Pananpe and Penanpe, and it is said there was a path...' or similar.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#018",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "138",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'first-person fourth-person narration' is awkward and potentially confusing; it appears to mean 'first-person narration using fourth-person marking'.",
+    "quote": "The third-person existential frame (no fourth-person a= prefix) contrasts with the first-person fourth-person narration of human prose tales.",
+    "suggestion": "Reword to 'first-person narration marked by fourth-person morphology' or 'first-person perspective with fourth-person verb forms'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The note contains two independent clauses joined by a semicolon, but the second clause is not clearly connected to Hirosawa's citation. It reads as a general claim, but the structure implies it is part of the citation note.",
+    "quote": "Hirosawa cites the underlying Tamura audio materials; ruwe ne predicates the simultaneous existence of the two characters as established narrative fact.",
+    "suggestion": "Split into two sentences or clarify connection: e.g., 'Hirosawa cites the underlying Tamura audio materials. The inferential evidential ruwe ne predicates...'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#014",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "279",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'unu' is not italicized, while other Ainu terms are.",
+    "quote": "unu",
+    "suggestion": "Italicize 'unu'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'nukopoli' is not italicized, while other Ainu terms are.",
+    "quote": "nukopoli",
+    "suggestion": "Italicize 'nukopoli'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of italics: 'ona' and 'unu' are in <i> tags, but other Ainu words in the paragraph (e.g., yayan-itak, atomte-itak) are in <A> tags. For consistency, either all Ainu terms should be in <A> or formatted uniformly.",
+    "quote": "<i lang=\"ain-Latn\">ona</i> 'father', <i lang=\"ain-Latn\">unu</i> 'mother'",
+    "suggestion": "Use <A w=\"ona\" gl=\"father\" /> and <A w=\"unu\" gl=\"mother\" /> for consistency with other Ainu terms.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#017",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "304",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the Discord discussion is given as '<Ref k=\"aynucorporadiscord\" />', but the date '2024-11-16' is provided in the prose. This date is specific and should ideally be linked to the citation if possible, or the citation should be more specific if it refers to a particular post.",
+    "quote": "(nukopoli, 2024-11-16) confirms this datum from Tamura's account <Ref k=\"aynucorporadiscord\" />.",
+    "suggestion": "Ensure the Discord citation is specific enough to cover the date mentioned, or consider adding the date directly to the citation if the system allows.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The community attribution is not enclosed in a <Ref> tag, though it cites a specific date and user. Other similar attributions are properly tagged (e.g., line 281), so this is inconsistent.",
+    "quote": "the community discussion in the aynu-corpora Discord (nukopoli, 2024-11-16) confirms this datum",
+    "suggestion": "Enclose the attribution in a <Ref k=\"aynucorporadiscord\" /> tag, e.g., (nukopoli, <Ref k=\"aynucorporadiscord\" p=\"2024-11-16\" />).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#019",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "114",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: 'pananpe' and 'penanpe' are hyphenated as 'pana-n-pe' and 'pena-n-pe' in lines 111–112, but 'panakuru' and 'penakuru' are not segmented. For consistency, they should be segmented as 'pana-kuru' and 'pena-kuru' if following the same morphological analysis.",
+    "quote": "<i lang=\"ain-Latn\">panakuru</i> / <i lang=\"ain-Latn\">penakuru</i>",
+    "suggestion": "Segment as <i lang=\"ain-Latn\">pana-kuru</i> / <i lang=\"ain-Latn\">pena-kuru</i> to match the analysis of 'pananpe' and 'penanpe'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#016",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "294",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Sato (2008) p. 259 is attached to a claim marked as 'contested', but the page itself might not contain the specific evidence for this contested nature. It's possible the page supports the general idea but not the contested aspect.",
+    "quote": "‹contested› <Ref k=\"sato2008\" p=\"259\" />.",
+    "suggestion": "Verify that page 259 of Sato (2008) specifically discusses the contested nature of the boundary, or adjust the citation/grade.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#015",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "286",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'kamuy uwepeker' is not italicized, while other Ainu terms are.",
+    "quote": "kamuy uwepeker",
+    "suggestion": "Italicize 'kamuy uwepeker'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#013",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "275",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu prefix 'e-' is not italicized, while other Ainu forms are.",
+    "quote": "e-",
+    "suggestion": "Italicize 'e-'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu prefix 'o-' is not italicized, while other Ainu forms are.",
+    "quote": "o-",
+    "suggestion": "Italicize 'o-'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu prefix 'ko-' is not italicized, while other Ainu forms are.",
+    "quote": "ko-",
+    "suggestion": "Italicize 'ko-'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'ona' is not italicized, while other Ainu terms are.",
+    "quote": "ona",
+    "suggestion": "Italicize 'ona'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#012",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "255",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'fourth-person' is not italicized, while other Ainu grammatical terms like 'logophoric' and 'quotative' are.",
+    "quote": "fourth-person",
+    "suggestion": "Italicize 'fourth-person'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#011",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "227",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu suffix '=an' is not italicized, while other Ainu forms are.",
+    "quote": "=an",
+    "suggestion": "Italicize '=an'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ek-an' is not italicized, while other Ainu forms are.",
+    "quote": "ek-an",
+    "suggestion": "Italicize 'ek-an'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu suffix '=an' is not italicized, while other Ainu forms are.",
+    "quote": "=an",
+    "suggestion": "Italicize '=an'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'uwepeker' is not italicized, while other Ainu terms are.",
+    "quote": "uwepeker",
+    "suggestion": "Italicize 'uwepeker'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#010",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "191",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu prefix 'a=' is not italicized, while other Ainu forms are.",
+    "quote": "a=",
+    "suggestion": "Italicize 'a='.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu prefix 'a=' is not italicized, while other Ainu forms are.",
+    "quote": "a=",
+    "suggestion": "Italicize 'a='.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#009",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "182",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses '4.POSS' and '4.A' are not italicized, while other Ainu forms are.",
+    "quote": "4.POSS=child 4.A=give",
+    "suggestion": "Italicize '4.POSS' and '4.A'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#008",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "172",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu prefix 'a=' is not italicized, while other Ainu forms are.",
+    "quote": "a=",
+    "suggestion": "Italicize 'a='.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu suffix '=an' is not italicized, while other Ainu forms are.",
+    "quote": "=an",
+    "suggestion": "Italicize '=an'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu prefix 'ku=' is not italicized, while other Ainu forms are.",
+    "quote": "ku=",
+    "suggestion": "Italicize 'ku='.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#007",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "157",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'isoytak' is not italicized, while other Ainu terms like 'uwepeker', 'tuytak', 'sakehe', 'repni', 'yukar', 'kamuy yukar', 'irupaye', 'pananpe', 'penanpe', 'panakuru', 'penakuru', 'kur', 'pe', 'an', 'ruwe ne', 'hike', 'sekor', 'yayan-itak', 'atomte-itak', 'ona', 'unu', 'nukopoli' are italicized.",
+    "quote": "isoytak",
+    "suggestion": "Italicize 'isoytak'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#003",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "25",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The `paren` attribute on the citations for Sato (2008) and Endō (2022) is unnecessary as the citations are already enclosed in parentheses within the prose.",
+    "quote": "following <Ref k=\"sato2008\" p=\"259\" paren /> and <Ref k=\"endo2022\" paren />:",
+    "suggestion": "Remove the `paren` attribute from the citations.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#001",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "12",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'tuytak' is inconsistently italicized. It appears italicized on line 12 but not on line 15.",
+    "quote": "tuytak",
+    "suggestion": "Italicize 'tuytak' on line 15.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#020",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "280",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation structure is malformed: the community attribution '(nukopoli, aynu-corpora Discord 2024-06-15)' appears outside the <Ref> tag but is not properly integrated into the citation system. It should either be inside a <Ref> with appropriate attributes or formatted consistently with other community attributions.",
+    "quote": "<Ref k=\"endo2022\" /> (nukopoli, <Ref k=\"aynucorporadiscord\" /> 2024-06-15)",
+    "suggestion": "Wrap the community attribution in a <Ref> tag with proper attributes or restructure to match the pattern used in line 304–306.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#006",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "138",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'The third-person existential frame (no fourth-person a= prefix) contrasts with the first-person fourth-person narration of human prose tales.' However, the example itself uses 'a=kore' in the previous section (lines 181-188) which is glossed as '4.A=give' and explained as 'fourth-person prefix a= marks... the transitive subject ('I gave')'. This implies that the fourth-person prefix *is* used in human prose tales. The note here seems to be referring to a different aspect of the Pananpe-Penanpe example or is potentially misstating the contrast.",
+    "quote": "note=\"Standard Pananpe–Penanpe opening. The third-person existential frame (no fourth-person a= prefix) contrasts with the first-person fourth-person narration of human prose tales. Hirosawa cites the underlying Tamura audio materials; ruwe ne predicates the simultaneous existence of the two characters as established narrative fact.\"",
+    "suggestion": "Clarify the note to accurately reflect the person marking in the Pananpe-Penanpe example and its contrast with human prose tales, or remove the potentially contradictory statement.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#004",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "54",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table states that the divine epic has a 'sakehe refrain' that is 'fixed per story'. However, the preceding text (lines 19-21) states that the prose tale is distinguished by the *complete absence* of a fixed melody, a cyclically recurring refrain, and the rhythm-stick. While the divine epic is a sung genre, the phrasing 'fixed per story' might imply a different kind of refrain than the 'cyclically recurring refrain' mentioned as absent in prose tales. Clarification is needed on whether 'fixed per story' is a type of refrain that is absent in prose tales.",
+    "quote": "yes (fixed per story)",
+    "suggestion": "Clarify the nature of the 'fixed per story' refrain for divine epics to ensure it doesn't contradict the statement about the absence of refrains in prose tales.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "uwepeker-prose-tale~p1#002",
+  "chapter": "uwepeker-prose-tale",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim 'The two terms are geographically distributed, not functionally distinct' is marked as 'consensus' but is supported by only two citations, one of which is a general reference without a specific page number for this claim.",
+    "quote": "‹consensus› <Ref k=\"endo2022\" />; <Ref k=\"sato2008\" p=\"259\" />.",
+    "suggestion": "Either find more supporting evidence for 'consensus' or lower the epistemic grade.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

@@ -1,0 +1,749 @@
+[
+ {
+  "id": "glottal-stop~p1#001",
+  "chapter": "glottal-stop",
+  "lines": "10,11",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that [ʔ] is a phonetically automatic boundary cue in the majority analysis, but then immediately states it functions as a lexically contrastive phoneme in the Shizunai dialect. This implies a contradiction: if it's automatic, it shouldn't be contrastive. The table on lines 27-49 clarifies this by stating [ʔ] is an allophone/boundary marker in accent dialects and a phoneme in Shizunai, but the prose here is confusing.",
+    "quote": "[ʔ] marks the onset of vowel-initial syllables as a phonetically automatic boundary cue in the majority analysis, though it functions as a lexically contrastive phoneme in the accentless Shizunai dialect",
+    "suggestion": "Clarify the relationship between the 'automatic boundary cue' and 'lexically contrastive phoneme' status, perhaps by stating that it is *primarily* an automatic boundary cue but *also* functions as a phoneme in specific dialects.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The overview says /h/ is the only laryngeal phoneme, but later (§Shizunai) treats /ʔ/ as phonemic in Shizunai, and the table at line 38-40 says /ʔ/ is a phoneme in Shizunai. This creates a contradiction: the overview statement is too absolute.",
+    "quote": "Hokkaido Ainu has one laryngeal phoneme, /h/, and a phonetically audible glottal closure [ʔ] whose phonological status divides analysts.",
+    "suggestion": "Add a qualification: '...one laryngeal phoneme, /h/, in the majority accent-dialect analysis; the status of [ʔ] is contested (see §Shizunai).'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#025",
+  "chapter": "glottal-stop",
+  "lines": "289-301",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phonetic transcriptions in the table use square brackets but the Ainu forms in the first column are given in italics without brackets. This is inconsistent with the rest of the chapter where phonetic forms are in brackets and orthographic forms in italics.",
+    "quote": "Table rows: [wen], [weʔen], [to], [toʔo], [teta], [teʔeta]",
+    "suggestion": "Either remove brackets from the phonetic column or add brackets to the italic forms for consistency. Alternatively, use a separate column for phonetic transcription.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The orthographic representation uses 'ʔ' in the Latin transcription (weʔen), which mixes IPA symbol with roman letters. Standard Ainu orthography does not use IPA symbols; if this is meant to be a phonemic or phonetic transcription, it should be clearly distinguished from the orthographic form.",
+    "quote": "<i lang=\"ain-Latn\">weʔen</i> [weʔen]",
+    "suggestion": "Use a consistent orthographic representation, e.g., *we'en* if using an apostrophe for glottal stop, or clarify that this is a phonetic transcription by placing it in brackets consistently.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#019",
+  "chapter": "glottal-stop",
+  "lines": "356",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'approaching a glottal quality' is vague. It's unclear if this means a glottal stop [ʔ] or a glottal fricative [h] or something else. Given the context of /h/ allophones, it's likely referring to a variation of the [ɸ] sound, but clarity is needed.",
+    "quote": "with the [ɸ] before /u/ approaching a glottal quality in particular tokens.",
+    "suggestion": "Specify what 'glottal quality' refers to in this context, e.g., 'approaching a voiceless bilabial fricative with a more glottalized quality' or similar.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'approaching a glottal quality' is vague and potentially confusing: [ɸ] is a bilabial fricative, not glottal. The intended meaning may be that it approached [h] (glottal) quality, but this is unclear.",
+    "quote": "Tamura (1998: 41, cited via <Ref k=\"shiraishi2022\" p=\"§3.1\" />) reports that speakers born around 1900 showed only weak vowel-coloring of /h/, with the [ɸ] before /u/ approaching a glottal quality in particular tokens.",
+    "suggestion": "Clarify: '...with the [ɸ] before /u/ approaching a [h]-like quality in particular tokens.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#003",
+  "chapter": "glottal-stop",
+  "lines": "64",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for [teˈʔeta] is 'long ago', but the preceding example [teta] is glossed as 'a few days ago' in the table on lines 288-302. This creates an inconsistency in the meaning of 'long ago' vs 'a few days ago' when [ʔ] is involved.",
+    "quote": "[aˈʔep] 'food', [aˈʔoypep] 'tableware', [oˈʔatteke], [eˈʔunpipka], and [teˈʔeta] 'long ago'",
+    "suggestion": "Ensure consistency in glosses for similar concepts, or clarify the distinction if it's intentional.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form [oˈʔatteke] is not glossed, while the others are. This is inconsistent within the same list.",
+    "quote": "[aˈʔep] 'food', [aˈʔoypep] 'tableware', [oˈʔatteke], [eˈʔunpipka], and [teˈʔeta]",
+    "suggestion": "Add a gloss for [oˈʔatteke], e.g., 'something' or provide a note if the meaning is unknown.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#005",
+  "chapter": "glottal-stop",
+  "lines": "157",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states the non-phonemic analysis is adopted 'here for those varieties', but then immediately assigns it the evidence grade ‹contested›. This is contradictory; if it's adopted, it shouldn't be marked as contested within the context of the chapter's presentation.",
+    "quote": "The non-phonemic analysis stands for the accent-dialect majority and is adopted here for those varieties ‹contested›.",
+    "suggestion": "Remove the ‹contested› tag if the analysis is being adopted, or rephrase to indicate that the *status* of the analysis is contested, even if the chapter proceeds with one interpretation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a claim that the analysis is adopted here. The tag should modify the claim that the analysis is correct, not the adoption decision. Also, the tag seems misplaced: the adoption is a methodological choice, not a contested fact.",
+    "quote": "The non-phonemic analysis stands for the accent-dialect majority and is adopted here for those varieties ‹contested›.",
+    "suggestion": "Move the tag to the earlier claim about the analysis: 'The non-phonemic analysis stands for the accent-dialect majority ‹contested› and is adopted here for those varieties.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#034",
+  "chapter": "glottal-stop",
+  "lines": "210",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss mixes morpheme labels (4.A, have, speech) without clear segmentation alignment. The morphemic structure is a=kor itak, so the gloss should reflect that segmentation: e.g., g=\"4.A=have\" for a=kor and separate glossing for itak.",
+    "quote": "g=\"4.A=have speech\"",
+    "suggestion": "Restructure example or split into two clauses; or adjust gloss to g=\"4.A=have speech\" only if kor is analyzed as 'have' and itak as 'speech', but then segmentation should be m=\"a=kor itak\" with two words.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#033",
+  "chapter": "glottal-stop",
+  "lines": "185",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss \"4.S\" is non-standard; standard Ainu glossing uses \"4\" for fourth person and \"S\" for subject, but the convention in this book appears to be \"4.SBJ\" or similar. Inconsistency with other sections may exist.",
+    "quote": "m=\"sap=an\" g=\"depart=4.S\"",
+    "suggestion": "Check consistency across chapters; if \"4.S\" is used elsewhere, retain it, but otherwise standardize to \"4.SBJ\" or \"4.INTR\" for intransitive subject.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#035",
+  "chapter": "glottal-stop",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Use of HTML <i> tags inside phonemic slashes is inconsistent and likely a formatting error. The intent may be to italicize only the contrasting segments, but this mixes markup and phonological notation awkwardly.",
+    "quote": "/u<i>ʔ</i>a/ : /u<i>w</i>a/",
+    "suggestion": "Use consistent formatting, e.g., /u[ʔ]a/ : /u[w]a/ or /uˈʔa/ : /uˈwa/, without HTML inside the slashes.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#030",
+  "chapter": "glottal-stop",
+  "lines": "300",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same inconsistency: IPA [ʔ] appears in the Latin orthography-tagged form. This form should be represented orthographically without IPA symbols.",
+    "quote": "<i lang=\"ain-Latn\">teʔeta</i> [teʔeta]",
+    "suggestion": "Write the orthographic form as *te'eta* or similar, reserving [teʔeta] for the phonetic transcription.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#029",
+  "chapter": "glottal-stop",
+  "lines": "295",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 290: use of IPA [ʔ] inside a Latin orthography tag <i lang=\"ain-Latn\">. This mixes writing systems inconsistently.",
+    "quote": "<i lang=\"ain-Latn\">toʔo</i> [toʔo]",
+    "suggestion": "Use *to'o* in the orthography and [toʔo] in the phonetic transcription, keeping the IPA symbol only within square brackets.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#026",
+  "chapter": "glottal-stop",
+  "lines": "336-337",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example for /h/ before /e/ is missing; the table shows /h/ before /a/, /e/, /o/ but only gives examples for /a/ (hapo) and /o/ (humi). The /e/ environment has no example.",
+    "quote": "<i lang=\"ain-Latn\">humi</i> [humi] 'sound, sensation'",
+    "suggestion": "Add an example for /h/ before /e/, e.g., <i lang=\"ain-Latn\">he</i> [he] 'head' or similar.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#024",
+  "chapter": "glottal-stop",
+  "lines": "200-205",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: Discord message tagged as corpus-suggested.",
+    "quote": "‹corpus-suggested› (<Ref k=\"aynucorporadiscord\" />, nukopoli, 2024-03-18).",
+    "suggestion": "Change to ‹speculative›.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#023",
+  "chapter": "glottal-stop",
+  "lines": "180-182",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue as above: a single Discord message is tagged as corpus-suggested.",
+    "quote": "‹corpus-suggested› (<Ref k=\"aynucorporadiscord\" />, nukopoli, 2023-12-27).",
+    "suggestion": "Change to ‹speculative›.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#022",
+  "chapter": "glottal-stop",
+  "lines": "172-173",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is used for a claim supported only by a Discord message. This is a single informal source, not a corpus. The tag should be ‹speculative› or the source should be upgraded.",
+    "quote": "‹corpus-suggested› (<Ref k=\"aynucorporadiscord\" />, nukopoli, 2024-12-21).",
+    "suggestion": "Change to ‹speculative› or add a note that the claim is based on preliminary observation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#020",
+  "chapter": "glottal-stop",
+  "lines": "368",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'a voiceless breath, not [x]' is a bit informal. While it conveys the meaning, it could be more precise. Also, the parenthetical citation is quite long and interrupts the flow.",
+    "quote": "a coda breath-release /h/ (realized as a voiceless breath, not [x]; Hattori 1964: 34, cited via <Ref k=\"nakagawa2024\" p=\"27\" />) is productive and reflects historical HA coda /r/ among other sources",
+    "suggestion": "Rephrase to 'a coda voiceless breath release /h/ (distinct from [x])' and consider moving the citation or integrating it more smoothly.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#018",
+  "chapter": "glottal-stop",
+  "lines": "348",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'huci' is provided with a phonetic transcription '[ɸuci]' which includes the [ɸ] sound. This aligns with the rule that /h/ before /u/ is [ɸ]. However, the example for /h/ before /a/, /e/, /o/ uses 'hapo' and 'humi' which are given as [hapo] and [humi] respectively. The latter example [humi] seems to contradict the rule for /h/ before /i/.",
+    "quote": "huci [ɸuci] 'grandmother, elderly woman'",
+    "suggestion": "Ensure consistency in the examples provided for the allophones of /h/. If 'humi' is indeed pronounced with [h] before /u/, then the rule for /h/ before /i/ might need clarification or the example for 'humi' needs to be corrected.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#017",
+  "chapter": "glottal-stop",
+  "lines": "343",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is provided with a phonetic transcription '[çine]' which includes the [ç] sound. This aligns with the rule that /h/ before /i/ is [ç]. However, the example for /h/ before /a/, /e/, /o/ uses 'hapo' and 'humi' which are given as [hapo] and [humi] respectively. The latter example [humi] seems to contradict the rule for /h/ before /i/.",
+    "quote": "hine [çine] 'and then' (conjunctive particle)",
+    "suggestion": "Ensure consistency in the examples provided for the allophones of /h/. If 'humi' is indeed pronounced with [h] before /u/, then the rule for /h/ before /i/ might need clarification or the example for 'humi' needs to be corrected.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#016",
+  "chapter": "glottal-stop",
+  "lines": "337",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'humi' is provided with a phonetic transcription '[humi]' which includes the /h/ sound. However, the section on /h/ allophony states that /h/ before /i/ is realized as [ç]. This example seems to contradict that rule.",
+    "quote": "hapo [hapo] 'mother'; humi [humi] 'sound, sensation'",
+    "suggestion": "Verify the phonetic transcription for 'humi' and correct it to '[çumi]' if the rule holds, or explain why this example is an exception.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#013",
+  "chapter": "glottal-stop",
+  "lines": "260,261",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The quote from Okuda (2025) is slightly awkward in its phrasing: 'one cannot say, without specifying dialect, that the transitional glide y/w is non-phonemic'. The repetition of 'say' and the structure could be improved.",
+    "quote": "and adds the explicit caution that this finding does not generalize: \"one cannot say, without specifying dialect, that the transitional glide y/w is non-phonemic\"",
+    "suggestion": "Consider rephrasing the quote slightly for better flow, if permissible, or ensure it's accurately transcribed. If it's a direct quote, it should remain as is.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#012",
+  "chapter": "glottal-stop",
+  "lines": "253",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for the example `su at` states that the juncture [ʔ] is in 'contrastive distribution' with the /w/ of `suwat`. While this is likely correct, the phrasing could be slightly more direct by stating that the [ʔ] *contrasts* with the /w/ in this dialect.",
+    "quote": "In Shizunai the juncture [ʔ] at the su–at boundary is in contrastive distribution with the /w/ of suwat above.",
+    "suggestion": "Rephrase to 'In Shizunai, the juncture [ʔ] at the su–at boundary contrasts with the /w/ found in `suwat`.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#011",
+  "chapter": "glottal-stop",
+  "lines": "244",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for the example `suwat` mentions a 'compositional glide-epenthesis rule' without defining it or explaining its relevance to the example. This makes the explanation less clear.",
+    "quote": "An opaque compound; the /w/ belongs to the fossilized root and does not derive from the compositional glide-epenthesis rule.",
+    "suggestion": "Briefly explain what the 'compositional glide-epenthesis rule' is or how it applies (or doesn't apply) in this case.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#010",
+  "chapter": "glottal-stop",
+  "lines": "230",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '無アクセント' (mu akusento) is used without translation or explanation. While it's glossed as 'accentless', providing the original term might be unnecessary or confusing for readers unfamiliar with Japanese.",
+    "quote": "The accentless Shizunai dialect (静内; classified as 無アクセント by",
+    "suggestion": "Either remove the Japanese term or provide a brief explanation in parentheses, e.g., 'classified as accentless (無アクセント)'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#009",
+  "chapter": "glottal-stop",
+  "lines": "213",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for the example `<Ex m=\"a=kor itak\" ... />` mentions 'accent shift' without explaining what that entails or how it relates to the prosodic integration. This makes the explanation less accessible.",
+    "quote": "The person-prefix boundary a=–kor shows no juncture stop. The a= prefix does not trigger the accent shift that ku= and e= trigger, consistent with weaker prosodic integration.",
+    "suggestion": "Briefly explain what 'accent shift' refers to in this context, or link to the relevant section where it is discussed in more detail.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#008",
+  "chapter": "glottal-stop",
+  "lines": "201,202",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'echo vowel [ə]' is used without prior explanation or definition. While it might be a technical term, its meaning is not immediately clear to a general reader.",
+    "quote": "the echo vowel [ə] follows coda /r/ in <i lang=\"ain-Latn\">kor</i>, and [ʔ] appears at the compound boundary before <i lang=\"ain-Latn\">itak</i>",
+    "suggestion": "Define 'echo vowel' or use a more descriptive term if possible, or provide a citation for this specific phenomenon.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#007",
+  "chapter": "glottal-stop",
+  "lines": "190",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for the example `<Ex m=\"sap=an\" ... />` states that the suffix `=an` does not trigger resyllabification, and that juncture [ʔ] appears. However, the example itself is marked `constructed`, and the note implies a contrast with prefixes where resyllabification *does* apply. This could be clearer by explicitly stating the contrast in terms of the glottal stop's presence or absence.",
+    "quote": "Illustrates the C + =an juncture. The suffix =an does not trigger resyllabification of the preceding stop; juncture [ʔ] appears before the vowel, yielding [sapʔan] rather than *[sa.pan]. Compare the tighter-bound ku=, e=, ci= prefixes where resyllabification applies.",
+    "suggestion": "Rephrase the note to more directly contrast the behavior of the suffix `=an` with the prefixes, highlighting the presence/absence of [ʔ] as the key difference.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#006",
+  "chapter": "glottal-stop",
+  "lines": "171",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The notation '[−C.ʔV]' and '[+C.V]' is not clearly defined or explained in the text. It's unclear what the '+' and '−' signs signify in relation to the presence or absence of the glottal stop or coda consonant.",
+    "quote": "distinguishes the [−C.ʔV] and [+C.V] realizations",
+    "suggestion": "Define the notation used for '[−C.ʔV]' and '[+C.V]' or use a more descriptive phrasing.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#004",
+  "chapter": "glottal-stop",
+  "lines": "144,145",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '原則1' (gensoku 1) is used without explanation or translation. While the context might suggest it relates to accent placement rules, its meaning is not clear to a reader unfamiliar with the source material.",
+    "quote": "an underlying /ʔ/ filling the σ1 onset, which would make σ1 closed and predict accent there by 原則1",
+    "suggestion": "Translate or explain '原則1' in parentheses, or provide a citation for the specific rule if it's a well-known principle.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#002",
+  "chapter": "glottal-stop",
+  "lines": "39",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a forward slash '/' between 'allophone' and 'boundary marker' is unconventional and potentially confusing. It might imply these are two separate categories or that one is a subcategory of the other in a way that isn't immediately clear.",
+    "quote": "allophone / boundary marker in accent dialects (dominant analysis); phoneme /ʔ/ in Shizunai",
+    "suggestion": "Replace the slash with 'or' or 'and/or' for clarity, e.g., 'allophone or boundary marker'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#032",
+  "chapter": "glottal-stop",
+  "lines": "240",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss field contains a full translation rather than morpheme-by-morpheme glossing. Since the morphemic segmentation is given as a single word \"suwat\", the gloss should either reflect internal structure or be labeled as unanalyzable.",
+    "quote": "g=\"pothook\"",
+    "suggestion": "Use gl=\"pothook\" or add note=\"opaque compound, unsegmentable\" and leave g empty or mark as g=\"—\".",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#031",
+  "chapter": "glottal-stop",
+  "lines": "248",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morphemic segmentation shows two separate words \"su at\", but the gloss and translation treat it as a compound noun 'pot handle'. The segmentation should reflect compounding if it's a single lexical item, or be marked as a phrase.",
+    "quote": "m=\"su at\"",
+    "suggestion": "Use a hyphen or equals sign to indicate compounding, e.g., m=\"su-at\" or m=\"su=at\", or clarify in the note that this is a phrasal compound.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss \"pot cord\" does not align with standard Leipzig glossing conventions, which expect morpheme-by-morpheme labels. Here, it's a free translation rather than a gloss.",
+    "quote": "g=\"pot cord\"",
+    "suggestion": "Replace with aligned morpheme glosses, e.g., g=\"pot rope\", or if morphemes are su and at, use g=\"pot cord\" only if both roots are independently glossed elsewhere. Alternatively, clarify that this is a free translation and move to 'tr'.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#028",
+  "chapter": "glottal-stop",
+  "lines": "65",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example [teˈʔeta] is listed as an attested form with a clearly audible glottal stop, but in the emphatic glottal insertion section (table at lines 288–304), the same form [teʔeta] is derived morphologically from teta via emphatic insertion. This creates a conflict between treating [teˈʔeta] as a phonetically automatic form in one place and as a morphologically derived emphatic form in another.",
+    "quote": "[teˈʔeta] 'long ago'",
+    "suggestion": "Clarify whether [teˈʔeta] 'long ago' in line 65 is being cited as a phonetically automatic realization or as an instance of emphatic glottal insertion, and ensure consistency with the later table.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#027",
+  "chapter": "glottal-stop",
+  "lines": "375-381",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'epenthetic /h/' but the gloss shows 'siki-h-i' with a hyphen before /h/, suggesting it is a separate morpheme. If it is epenthetic, it should not be segmented as a separate morpheme. Also, the term 'affiliative formation' is used but the cross-reference is to 'affiliative-suffix-morphophonology', which may be inconsistent with the chapter's terminology.",
+    "quote": "the possessed form <i lang=\"ain-Latn\">siki-h-i</i> 'his/her eyes' (from <A w=\"siki\" gl=\"eye\" />) contains an epenthetic /h/ inserted before the possessive suffix. This /h/ is a morphological insertion restricted to the <Xr ch=\"affiliative-suffix-morphophonology\">affiliative formation</Xr> and does not represent an underlying coda in the root",
+    "suggestion": "Either remove the hyphen before /h/ in the example (if truly epenthetic) or clarify that it is a morphologically inserted /h/ that is not underlying. Check the cross-reference title for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#021",
+  "chapter": "glottal-stop",
+  "lines": "263-264",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is attributed to Okuda (2025) but tagged ‹contested›. If the source itself presents the data as contested, the tag is redundant; if the source asserts the contrast and the contestation is from other scholars, the tag should be on the claim, not the citation. Also, the tag appears after the citation, which is ambiguous.",
+    "quote": "Parallel contrasts are reported for /u<i>ʔ</i>a/ : /u<i>w</i>a/ and /i<i>ʔ</i>o/ : /i<i>y</i>o/ in Shizunai <Ref k=\"okuda2025\" /> ‹contested›.",
+    "suggestion": "Rephrase: 'Parallel contrasts are reported for /uʔa/ : /uwa/ and /iʔo/ : /iyo/ in Shizunai, though this analysis is ‹contested› (Okuda 2025).'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#015",
+  "chapter": "glottal-stop",
+  "lines": "301",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss shift for 'teta' to 'teʔeta' is 'a few days ago' → 'long ago'. This is inconsistent with the gloss for [aˈʔeta] in line 64, which is 'long ago'. The table on lines 288-302 seems to be the source of the inconsistency.",
+    "quote": "'a few days ago' → 'long ago'",
+    "suggestion": "Ensure the glosses for 'teta' and 'teʔeta' are consistent with other uses of 'long ago' in the chapter, or clarify the distinction if it's intentional.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glottal-stop~p1#014",
+  "chapter": "glottal-stop",
+  "lines": "264",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that these contrasts are reported for Shizunai and cites Okuda (2025), but then assigns the evidence grade ‹contested›. This implies that the report itself or its interpretation is contested, which contradicts the earlier statement that these contrasts *are* reported. If the report is contested, it should be framed as such.",
+    "quote": "Parallel contrasts are reported for /uʔa/ : /uwa/ and /iʔo/ : /iyo/ in Shizunai <Ref k=\"okuda2025\" /> ‹contested›.",
+    "suggestion": "Clarify whether the *existence* of the contrasts is contested, or if the *interpretation* of their phonemic status is contested. Adjust the phrasing and/or evidence grade accordingly.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

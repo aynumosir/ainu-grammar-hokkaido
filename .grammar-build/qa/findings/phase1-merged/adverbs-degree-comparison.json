@@ -1,0 +1,541 @@
+[
+ {
+  "id": "adverbs-degree-comparison~p1#017",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "473-474",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a meta-commentary addressed to the production process (what the author did or did not read), not a statement about Ainu. Leaks the pipeline.",
+    "quote": "from the sources read for this chapter",
+    "suggestion": "Remove 'from the sources read for this chapter' and simply state that the frequency has not been quantified.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Again, 'sources read for this chapter' is a register leak referring to the author's workflow, not the linguistic analysis.",
+    "quote": "from the sources read for this chapter",
+    "suggestion": "Rephrase to: 'from the available sources'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#016",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "462-463",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that the overlap between equative 'as ... as' and manner 'like' has 'not been distinguished as a formal ambiguity in the sources read for this chapter' is tagged ‹speculative›. This is a pipeline note about what the sources do or don't contain, not a linguistic fact.",
+    "quote": "‹speculative›",
+    "suggestion": "Remove the tag and rephrase if needed (e.g., 'The overlap between the equative and manner readings of koraci has not been formally distinguished in the literature reviewed here.')",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'sources read for this chapter' is a pipeline register leak — it refers to the author's research process rather than the linguistic content.",
+    "quote": "has not been distinguished as a formal ambiguity in the sources read for this chapter",
+    "suggestion": "Rephrase to: 'has not been distinguished as a formal ambiguity in the available sources'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#009",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "459-460",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `seta koraci poro` is presented as an equative comparison ('as big as a dog'). The gloss for `koraci` is 'like, in the manner of (equative)' (line 324). However, the sentence structure `NP + koraci + PropertyVerb` is presented as equative, while the text states that `koraci` serves as the 'standard marker'. It's unclear if `koraci` directly modifies `poro` or if it marks `seta` as the standard for comparison with `poro`.",
+    "quote": "<i lang=\"ain-Latn\">seta koraci poro</i> 'as big as a dog'\n\t\t<Ref k=\"nakagawa2024\" p=\"280\" />.",
+    "suggestion": "Clarify the syntactic role of `koraci` in this construction and how it marks the standard of comparison.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for 'neno' is given as 'like', but in the earlier table (line 323), 'neno' is listed with the gloss 'like, in the manner of (equative)', matching 'koraci'. The prose gloss is underspecified.",
+    "quote": "<A w=\"koraci\" gl=\"like, in the manner of\" /> and <A w=\"neno\" gl=\"like\" />",
+    "suggestion": "Update the gloss to 'like, in the manner of' for consistency with the table.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#005",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "214-216",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that `herepasi` appears as `erepasi` in Eastern dialects due to the dropping of the initial `h-`. However, the example `herepasi` is glossed as 'seaward', and the explanation implies `erepasi` is the form without the `h-`. The table entry for `herepasi` (lines 263-265) also lists `erepasi` in E. dialects. This seems consistent, but the phrasing 'appears as' might suggest a direct substitution rather than a dialectal variant.",
+    "quote": "In Ishikari, Tokachi, and eastern\n\t\tHokkaido dialects the initial <i lang=\"ain-Latn\">h-</i> drops, so\n\t\t<i lang=\"ain-Latn\">herepasi</i> 'seaward' appears as\n\t\t<i lang=\"ain-Latn\">erepasi</i>\n\t\t<Ref k=\"nakagawa2024\" p=\"279\" />.",
+    "suggestion": "Clarify that `erepasi` is the dialectal variant of `herepasi` in Eastern dialects.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says the h- drops, giving 'erepasi'. In the table on line 265, 'herepasi' is shown with the note '(→ erepasi in E. dialects)'. This is consistent. However, the prose says 'Ishikari, Tokachi, and eastern Hokkaido' but the table note says just 'E. dialects'. Minor inconsistency in specificity.",
+    "quote": "in Ishikari, Tokachi, and eastern Hokkaido dialects the initial h- drops, so herepasi 'seaward' appears as erepasi",
+    "suggestion": "Align the prose with the table note, or vice versa. E.g., harmonize to 'eastern dialects (including Ishikari and Tokachi)'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#025",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "442",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'more.than' does not match the established gloss for akkari as 'exceeding' or 'more than, exceeding' in the text. It also splits 'more.than' with a dot, which is inconsistent with other glosses.",
+    "quote": "g=\"this fish 1SG.O=more.than be.big\"",
+    "suggestion": "Change 'more.than' to 'exceeding' or 'more.than' (without dot) to match prior usage.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#022",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "177",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses 'ADV' for tunas-no, but the established glossing convention in this chapter uses 'adverbializer' for -no (e.g., line 32). The gloss is inconsistent with the chapter's own standards.",
+    "quote": "g=\"be.quick-ADV be.good\"",
+    "suggestion": "Change 'be.quick-ADV' to 'be.quick-adverbializer' to align with the established glossing practice.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#015",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "395-402",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that pon is used as a diminutive degree modifier is tagged ‹corpus-suggested›. This is an epistemic tag that leaks the production pipeline, telling the reader about the evidence grade rather than the linguistic fact. The tag should be removed or converted to a note about evidence status if the style guide permits such tags.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Remove '‹corpus-suggested›' or replace with a natural-language hedge like 'appears to be'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#024",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "308",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table uses '表70' and '表71' (Japanese for 'Table 70', 'Table 71') in the rowspan cells, but the rest of the chapter is in English. This creates language inconsistency.",
+    "quote": "<table>",
+    "suggestion": "Replace '表70' with 'basic (Table 70)' and '表71' with 'transitive-conversion (Table 71)' for consistency.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#020",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "188-191",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The semicolon in the glosses is used to separate the verb meaning from the adverb meaning. This is ambiguous because the same semicolon is used elsewhere to separate alternative glosses (e.g., 'be good, be well' on line 22). Consider using a different separator or explicitly labeling the two meanings.",
+    "quote": "the most frequently attested members of this bare-conversion pattern are tunas 'be quick; quickly', moyre 'be gentle; gently', hanke 'be near; nearby', and tuyma 'be far; far away'",
+    "suggestion": "Use a comma or add labels: 'be quick (verb), quickly (adverb)'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#019",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "148-154",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is based on a Discord message but tagged ‹corpus-suggested›, which implies it is based on corpus evidence. The Discord message may be a corpus analysis, but the citation is to a Discord message, not to a corpus. The tag inflates the evidence level.",
+    "quote": "Community corpus analysis records the traditional order ani patek... (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />) ‹corpus-suggested›",
+    "suggestion": "Either change the tag to something lower (e.g., '‹speculative›' if the source is informal) or provide a proper corpus citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#014",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "132-142",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'na' is not provided. The example uses a form 'na' which is not glossed in the text. The cited community source may gloss it, but in the chapter it is presented without gloss for the reader.",
+    "quote": "ikiya seta e=na",
+    "suggestion": "Add a gloss gloss for 'na' in the inline example or add an explanatory note.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#008",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "441-447",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The `note` attribute contains Ainu forms `tan cep seta akkari poro` which are not marked with `lang=\"ain-Latn\"`.",
+    "quote": "<Ex\n\t\tm=\"tan cep en=akkari poro\"\n\t\tg=\"this fish 1SG.O=more.than be.big\"\n\t\ttr=\"This fish is bigger than me.\"\n\t\tconstructed\n\t\tnote=\"Illustrates the akkari comparison construction: [subject-NP] [standard-O=akkari] [property-verb]. The standard 'me' is encoded by the 1SG.O prefix en= on akkari rather than by a postposition or case particle on a separate NP. With a noun standard: tan cep seta akkari poro 'This fish is bigger than a dog', with seta 'dog' as bare antecedent without any marking.\"\n\t/>",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the Ainu forms within the `note` attribute.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#004",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "175-183",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The `ain` attribute contains `tunasno pirka` which is not marked with `lang=\"ain-Latn\"`.",
+    "quote": "<Ex\n\t\tm=\"tunas-no pirka\"\n\t\tg=\"be.quick-ADV be.good\"\n\t\ttr=\"Get well quickly!\"\n\t\tain=\"tunasno pirka\"\n\t\tcite=\"shibatani1990:19\"\n\t\tdial=\"HK\"\n\t\tnote=\"Shibatani ex. 13 area. The -no adverbial tunas-no 'quickly' modifies the inchoative imperative pirka 'become well/healthy'. Property verbs serve directly as imperatives, exploiting the stative-to-inchoative polysemy common to Ainu intransitive verbs.\"\n\t/>",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `ain` attribute.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#001",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "123-130",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The `note` attribute contains an Ainu form `ku=pewre` which is not marked with `lang=\"ain-Latn\"`.",
+    "quote": "<Ex\n\t\tm=\"sonno ku=pewre or ta ku=nu yukar ne ru-we ne\"\n\t\tg=\"truly 1SG.S=be.young place LOC 1SG.A=hear epic COP track-POSS COP\"\n\t\ttr=\"Truly, it is the epic I heard when I was young.\"\n\t\tcite=\"nakagawa2024:118\"\n\t\tdial=\"SAR\"\n\t\tnote=\"Nakagawa ex. 1. The sentential adverb sonno scopes over the whole predication. ku=pewre or ta is a temporal locative nominalization ('at the time of my being young'); ku=nu takes the 1SG.A prefix because nu 'hear' is transitive; the evidential ru-we ne closes the clause.\"\n\t/>",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `ku=pewre` within the `note` attribute.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#023",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "218",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation uses a parenthetical format (Nakagawa 2024: 277–279) rather than the standard <Ref> component, breaking citation consistency. The table is also not explicitly labeled as from Nakagawa, though implied.",
+    "quote": "selected directional adverbs are given below (Nakagawa 2024: 277–279, 表68–69):",
+    "suggestion": "Replace the parenthetical with a proper <Ref k=\"nakagawa2024\" p=\"277–279\" /> and ensure the table is clearly attributed.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#021",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "116",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for both 'sonno' and 'sino' is given as 'truly', but in the table at lines 89–91, 'sonno' and 'sino' are listed as variants with the gloss 'truly, really'. The gloss in the prose is underspecified compared to the table.",
+    "quote": "<A w=\"sonno\" gl=\"truly\" /> and <A w=\"sino\" gl=\"truly\" />",
+    "suggestion": "Update the gloss in the prose to match the table: gl=\"truly, really\" for both.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#018",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "142",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A community Discord source is cited with the epistemic grade ‹contested›. However, ‹contested› implies there is disagreement among sources, but the only source cited is a single Discord message. Contradictory: a single source cannot be 'contested' by itself; it needs at least one other source to contest it. This inflates the epistemic grade.",
+    "quote": "(nukopoli, aynu-corpora Discord 2025; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+    "suggestion": "Either remove '‹contested›' or provide a second source that contests the claim.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#013",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "63-113 and 116-120",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "In the table, sonno/sino are classified under 'degree' only. In the prose, they are described as 'cross-class items' (adverb and prenominal). This is a mild inconsistency: the table implies they are only degree adverbs, while the prose correctly notes their dual function. The table's category label should reflect the dual nature.",
+    "quote": "Table lists 'sonno' / 'sino' as 'truly, really' in degree subclass. Prose says 'The degree adverbs sonno and sino are cross-class items: both also function as general prenominals meaning 'real, true''.",
+    "suggestion": "Add a note to the table or rename the subclass as 'degree / prenominal' to match the prose.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#012",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "30-35",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter lists five formation routes. However, the section on 'Postpositional adverbs' treats them as a separate category, yet some postpositional adverbs (e.g., akkari) are said to be derived via transitive verb conversion (route iv). This creates overlap and confusion about whether postpositional adverbs are a sixth route or a subset.",
+    "quote": "Nakagawa identifies five formation routes for adverbs proper... The five are: (i) basic/lexical adverbs (本来型); (ii) intransitive verb + the suffix -no; (iii) bare intransitive conversion; (iv) transitive verb conversion; and (v) directional formations built on locative roots with pronominal prefixes and directional suffixes.",
+    "suggestion": "Clarify that postpositional adverbs are a syntactic subclass that includes items from routes (i) and (iv), not a separate formation route.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#011",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "472-475",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the pragmatic frequency of juxtaposition for comparison relative to the `akkari` construction has not been quantified. This implies that `akkari` is the primary or more frequent method. However, the previous sentence states that juxtaposition operates 'in discourse contexts where the contrasted entities have been introduced', suggesting it might be context-dependent rather than less frequent overall.",
+    "quote": "Its pragmatic\n\t\tfrequency relative to the <A w=\"akkari\" gl=\"more than\" /> construction has not\n\t\tbeen quantified from the sources read for this chapter.",
+    "suggestion": "Clarify the relationship between the frequency of juxtaposition and the `akkari` construction, or rephrase to indicate that the *quantification* of frequency is missing, not necessarily the frequency itself.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#010",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "464-466",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'degree and extent comparison using `pak(no)`' and cross-references `manner-and-degree-adverbial-clauses`. This implies `pak(no)` is used for comparison, but its primary gloss is 'until, to the extent that'. The connection to comparison needs to be more explicit, especially how 'until' or 'to the extent that' relates to comparative meaning.",
+    "quote": "Degree and extent comparison using\n\t\t<A w=\"pak(no)\" gl=\"until, to the extent that\" /> — yielding proportional and\n\t\tscalar clauses — is treated in <Xr ch=\"manner-and-degree-adverbial-clauses\" />.",
+    "suggestion": "Explain how `pak(no)` functions in degree and extent comparison, or ensure the cross-referenced section clarifies this connection.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#007",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "371-380",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `en=sam` 'beside me' is presented as an objective prefix attaching to a postpositional adverb. However, `sam` is not listed in the table of postpositional adverbs (lines 308-368). It's possible `sam` is a different type of word or a variant not explicitly categorized in the table.",
+    "quote": "With a pronominal antecedent, the objective prefix attaches to the postpositional\n\t\tadverb: <i lang=\"ain-Latn\">en=akkari</i> 'more than me',\n\t\t<i lang=\"ain-Latn\">en=sam</i> 'beside me',\n\t\t<i lang=\"ain-Latn\">un=koraci</i> 'like us'. The same\n\t\t<i lang=\"ain-Latn\">en=</i> / <i lang=\"ain-Latn\">un=</i> series that marks\n\t\tobjects of transitive verbs appears here, confirming the objective rather than\n\t\tnominative slot <Ref k=\"nakagawa2024\" p=\"280–281\" />. With a noun antecedent the\n\t\tnoun simply precedes without marking:\n\t\t<i lang=\"ain-Latn\">seta koraci</i> 'like a dog'.",
+    "suggestion": "Either add `sam` to the table of postpositional adverbs or clarify its grammatical category and why it takes the objective prefix in this context.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#006",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "302-303",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that `pak(no)` builds degree clauses, but the table entry for `pak(no)` (lines 335-336) glosses it as 'until, to the extent that (degree marker)'. This seems consistent, but the cross-reference to `manner-and-degree-adverbial-clauses` suggests a broader scope than just 'degree clauses'.",
+    "quote": "The member\n\t\t<A w=\"pak(no)\" gl=\"until, to the extent that\" /> of the basic type builds the\n\t\tdegree clauses treated in <Xr ch=\"manner-and-degree-adverbial-clauses\" />",
+    "suggestion": "Ensure the cross-reference accurately reflects the content of `manner-and-degree-adverbial-clauses` in relation to `pak(no)`.",
+    "confidence": 0.4
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that `akkari` serves as the standard-of-comparison marker. This is consistent with the table entry (lines 352-353) and the later discussion in the 'Comparison' section. However, the phrase 'see comparison section below' is a bit redundant given that this section is about comparison.",
+    "quote": "<A w=\"akkari\" gl=\"more than, exceeding\" /> of the conversion type serves as the\n\t\tstandard-of-comparison marker (see comparison section below):",
+    "suggestion": "Remove the parenthetical phrase 'see comparison section below' as it's implied by the section title.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#003",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "148-154",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that `ani patek` is the traditional order and `patek ani` is reversed due to Japanese influence. However, the gloss for `ani` is 'with, by means of' (line 345) and for `patek` is 'only, just' (line 145). The example `ani patek` is glossed as 'with only this', which seems to imply `ani` is functioning as a postposition or similar, and `patek` modifies it. The claim that `patek ani` is a reversal of `ani patek` might be misleading if `patek` can also precede `ani` in certain constructions.",
+    "quote": "Community corpus analysis\n\t\trecords the traditional order <i lang=\"ain-Latn\">ani patek</i> 'with only this'\n\t\tin classical texts (one token against zero of the reversed\n\t\t<i lang=\"ain-Latn\">patek ani</i>), with near-equal counts of both orders in\n\t\tmodern learner material; the reversal is attributed to nominal influence from\n\t\tJapanese (nukopoli, aynu-corpora Discord 2024;\n\t\t<Ref k=\"aynucorporadiscord\" />) ‹corpus-suggested›.",
+    "suggestion": "Clarify the grammatical relationship between `ani` and `patek` in both orders, or rephrase the statement about reversal if it's not a direct inversion of constituent order.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "adverbs-degree-comparison~p1#002",
+  "chapter": "adverbs-degree-comparison",
+  "lines": "138-142",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example `ikiya seta e=na` is presented as licensing 'normal person marking', but the gloss for `e=na` is missing, and it's unclear what 'normal person marking' refers to in this context, especially when contrasted with `iteki`'s interaction with person-prefix slots.",
+    "quote": "A community-observed distinction further separates the adverb\n\t\t<A w=\"ikiya\" gl=\"be careful not to, lest\" />,\n\t\twhich licenses normal person marking\n\t\ton its complement clause (<i lang=\"ain-Latn\">ikiya seta e=na</i> 'be careful not\n\t\tto bite the dog'), from <A w=\"iteki\" gl=\"do not\" />,\n\t\twhich interacts differently\n\t\twith the following verbal complex and its person-prefix slot (nukopoli,\n\t\taynucorpora Discord 2025; <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Provide a gloss for `e=na` in the example, or clarify what 'normal person marking' means in this specific instance.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "424-427",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the 86% share of ruwe ne among evidential forms is an upper bound that folds in homophonous lexical uses of the noun ruwe.",
+  "issue": "The numbers given earlier (lines 39-41: ruwe ne 16,350, hawe ne 796, siri ne 607, humi ne 200) sum to 17,953, giving ruwe ne a share of 91.04%, not 86%. The percentage contradicts the source data.",
+  "suggestion": "Correct the percentage to 91% or adjust the token counts to match the stated 86%.",
+  "confidence": 1,
+  "chapter": "narrative-tam-evidential-patterning-by-genre",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "260-263",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "regional variants (Iburi ci=/=as, E-Hokkaido sakorpe) are noted in §4 above",
+  "issue": "Section 4 (fourth-person-narration) discusses the Iburi split but does not mention E-Hokkaido sakorpe. The note claims sakorpe is noted there, which is false; sakorpe is only discussed later in §9 (Debates).",
+  "suggestion": "Either add coverage of sakorpe to section 4, or correct the reference to point to the later section where it is discussed.",
+  "confidence": 1,
+  "chapter": "narrative-tam-evidential-patterning-by-genre",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "45, 218, 403",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corporadiscord, 2024-11-09, asserted)",
+  "issue": "The tag 'asserted' appears in code tags after Discord citations. This looks like an editorial pipeline label (e.g., indicating a speech-act type) that should not appear in the final published text.",
+  "suggestion": "Remove the tag or replace it with a conventional phrase (e.g., 'p.c.' or 'personal communication').",
+  "confidence": 0.8,
+  "chapter": "narrative-tam-evidential-patterning-by-genre",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "263",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "noted in §4 above",
+  "issue": "The reference uses '§4' (a section number), but the chapter sections are not numbered in the source; they use ID-based anchors. This is a formatting inconsistency.",
+  "suggestion": "Replace '§4 above' with the section title or ID, e.g., 'section on fourth-person narration'.",
+  "confidence": 0.7,
+  "chapter": "narrative-tam-evidential-patterning-by-genre",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

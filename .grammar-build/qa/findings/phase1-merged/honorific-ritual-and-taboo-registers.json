@@ -1,0 +1,494 @@
+[
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#015",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "297-298",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a meta-comment about the book's production process, addressing the reader about source availability in a way that sounds like an editorial note rather than a statement about the language.",
+    "quote": "which was not held or consulted in the preparation of this grammar",
+    "suggestion": "Rephrase to 'This grammar did not have access to Hattori (1957)' or 'Hattori (1957) was not available for consultation.'",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read grammars' is informal and sounds like a pipeline term ('the grammars we read'). Additionally, the epistemic tag ‹speculative› is misplaced on a factual claim about what was recoverable; the speculation should be about the existence of such lists, not about the authors' inability to find them.",
+    "quote": "No systematic hunting-substitute or in-law name-avoidance word list was recoverable from the read grammars or the aligned corpus ‹speculative›.",
+    "suggestion": "Change 'read grammars' to 'the grammars consulted' or 'available grammars'. Remove the tag or rephrase the claim as speculative about the existence of such lists (e.g., 'It is uncertain whether such lists exist in the accessible sources').",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This is another instance of pipeline register leak, exposing internal research limitations. Such statements compromise the scholarly tone and should be neutralized.",
+    "quote": "which was not held or consulted in the preparation of this grammar",
+    "suggestion": "Rephrase to: 'Hattori (1957) is not included in the consulted sources for this grammar.'",
+    "confidence": 0.98
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'read sources' is a pipeline register leak, referring to the research process rather than the available evidence. It should be replaced with a more standard scholarly expression.",
+    "quote": "What the read sources make available is the mechanism",
+    "suggestion": "Change to: 'The available sources provide the mechanism'",
+    "confidence": 0.97
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#002",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "111",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the claim about the extended meaning of 'unuutari' is a community source with an epistemic grade of ‹corpus-suggested›. This combination might be slightly redundant or could be presented more concisely.",
+    "quote": "<A w=\"unuutari\" gl=\"mothers / parents\" /> each carry the extended meaning 'parents (both)'\nalongside the primary 'fathers' and 'mothers' readings <Ref k=\"aynucorporadiscord\" />\n(nukopoli, 2026-06-15, asserted) ‹corpus-suggested›.",
+    "suggestion": "Consider if the ‹corpus-suggested› grade is necessary given the community source, or ensure the citation clearly indicates the source of the suggestion.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is attached to a claim sourced from a Discord assertion, not from a corpus. This tag implies corpus evidence, which is inappropriate for a community-source claim.",
+    "quote": "the collective compounds onautari (fathers / parents) and unuutari (mothers / parents) each carry the extended meaning 'parents (both)' alongside the primary 'fathers' and 'mothers' readings (aynucorporadiscord) (nukopoli, 2026-06-15, asserted) ‹corpus-suggested›.",
+    "suggestion": "Change ‹corpus-suggested› to ‹speculative› or remove the tag entirely.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#009",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "269",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for the example provides a community source citation and then references Endō (2022) for consistency. It might be clearer to integrate the Endō reference more directly if it supports the specific claim being made in the note, or to ensure the community source is clearly the primary source for the details in the note.",
+    "quote": "Source: nukopoli, aynu-corpora Discord, 2024-12-26 (asserted); consistent with the gendered-genre patterns documented in Endō (2022) §2.",
+    "suggestion": "Clarify the relationship between the community source and the Endō reference in the note, ensuring each supports the specific information attributed to it.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The note contains a full citation that duplicates the <Ref k=\"aynucorporadiscord\" /> already present in the prose. This creates redundancy and risks inconsistency. The full citation should be in the Ref, not in the note.",
+    "quote": "Source: nukopoli, aynu-corpora Discord, 2024-12-26 (asserted)",
+    "suggestion": "Remove the full citation from the note and rely on the inline <Ref> with parenthetical attribution.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#018",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "269",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'was not held or consulted in the preparation of this grammar' is a pipeline register leak, revealing editorial process details rather than presenting the information from the reader's perspective. It belongs to the production meta-discourse and should be reframed objectively.",
+    "quote": "was not held or consulted in the preparation of this grammar",
+    "suggestion": "Rephrase to: 'Hattori (1957) has not been consulted for this grammar due to limited availability.'",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#017",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "115",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This directly contradicts the earlier gloss in line 104, which labels 'hapo' as meaning 'mother / father (colloquial, dialect-variable)', implying bidirectional variability. However, the later statement specifies unidirectional variation: 'mother' in most varieties, 'father' only in specific ones. The earlier gloss should not present the meanings as symmetric alternatives.",
+    "quote": "The colloquial term <A w=\"hapo\" /> shows conspicuous dialect variation: it means 'mother' in most Hokkaido varieties but 'father' in Chitose and Horobetsu",
+    "suggestion": "Update the gloss in line 104 to accurately reflect the asymmetric distribution described in line 115, e.g., 'mother (most HK), father (Chitose, Horobetsu)'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#019",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "135",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The name 鍋沢モトゾウ appears without a macron in the romanized form (Motoanrek), though it is standard to mark long vowels in Ainu romanization. If 'Motoanrek' represents 'Motōanrek', the macron is missing. Inconsistency in macron usage affects orthographic register.",
+    "quote": "鍋沢モトゾウ",
+    "suggestion": "Check and correct macron usage: 'Motoanrek' → 'Motōanrek' if warranted",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#014",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "40",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Calling the hero-narrator 'first-person' is potentially misleading because the hero-narrator uses fourth-person forms (a=/=an) rather than first-person forms (ku=). Later (line 224–225) correctly states that fourth-person is used where everyday first-person would use ku=. The phrasing here could cause confusion about which morphological form is used.",
+    "quote": "The same prefix-set indexes the indefinite agent-defocusing function in everyday speech and the first-person hero-narrator in oral literature",
+    "suggestion": "Rephrase to 'the first-person hero-narrator (expressed via fourth-person forms)' or similar clarification.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#012",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "311",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kamuy ne manu p' is italicized, but it is not presented as an Ainu word using the `<A>` tag. This is inconsistent with the formatting of other Ainu terms like 'kamuy'.",
+    "quote": "elegant register by an elaborate circumlocution; everyday <A w=\"kamuy\" gl=\"god\" /> is\nreplaced by <i lang=\"ain-Latn\">kamuy ne manu p</i> 'what is said to be a god'.",
+    "suggestion": "Use the `<A>` tag for 'kamuy ne manu p' to maintain consistent formatting for Ainu terms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#011",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "296",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese title 'nenchōshasō tokushugo' is provided, but the preceding English title is not directly translated into Japanese. This inconsistency in presentation of titles could be improved.",
+    "quote": "\"Special language of the older generations among the Ainu\" (nenchōshasō tokushugo,\n年長者層特殊語), which was not held or consulted in the preparation of this grammar.",
+    "suggestion": "Either provide the Japanese translation for the English title, or remove the Japanese transliteration if it's not essential.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#010",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "288",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The quote from Tamura (2000) uses the phrase 'taboo and prayer words'. While the chapter focuses on taboo vocabulary, the quote includes 'prayer words' which might be a broader category than intended for this specific point. This could lead to slight confusion.",
+    "quote": "<Ref k=\"tamura2000\" /> catalogues \"special terminology including taboo and prayer\nwords\" as a vocabulary class of the language.",
+    "suggestion": "Ensure the quote accurately reflects the scope of the discussion, or consider if a more targeted quote or paraphrase would be more precise.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#008",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "254",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu variant 'hunna' is italicized, but it is not presented as an Ainu word using the `<A>` tag. This is inconsistent with the formatting of other Ainu terms like 'hioy'oy'.",
+    "quote": "(lower-Saru variant: <i lang=\"ain-Latn\">hunna</i>; degree form <A w=\"hioy'oy\" gl=\"light thanks / how nice\" />",
+    "suggestion": "Use the `<A>` tag for 'hunna' to maintain consistent formatting for Ainu terms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#007",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "211",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'ruwe tapan' is glossed as '(it is a recognized fact that) ...'. The ellipsis (...) suggests that the gloss is incomplete or that the phrase functions as a sentence-final marker. Clarifying the exact meaning or function would be beneficial.",
+    "quote": "<A w=\"ruwe tapan\" gl=\"(it is a recognized fact that) …\" />\nmarks utterances as ceremonial assertions in ritual speech contexts, carrying the",
+    "suggestion": "Provide a more complete gloss for 'ruwe tapan' or explain its function more explicitly.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'ruwe ne' is italicized, but it is not presented as an Ainu word using the `<A>` tag, unlike other Ainu terms in the text. This inconsistency should be addressed.",
+    "quote": "ordinary\ninferential use of <i lang=\"ain-Latn\">ruwe ne</i> <Ref k=\"tamura1996\" p=\"s.v. ruwe\" />.",
+    "suggestion": "Use the `<A>` tag for 'ruwe ne' to maintain consistent formatting for Ainu terms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#006",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "207",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'pase-' as a prefix, but it is presented with a hyphen, suggesting it might be a morpheme. The gloss 'weighty/reverent' is also provided. The formatting of 'pase-' could be more consistent with other morpheme representations (e.g., using hyphens consistently).",
+    "quote": "The full form in the prayer text also includes the pase- 'weighty/reverent' prefix; only the onkami clause is reproduced here.",
+    "suggestion": "Ensure consistent formatting for morphemes, potentially by using hyphens as separators if 'pase-' is indeed a morpheme.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#005",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "194",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'atomte-itak' is italicized here, but in line 8 it is presented as an Ainu word with a gloss and is not italicized. This inconsistency in formatting for Ainu terms should be addressed.",
+    "quote": "of\n<i lang=\"ain-Latn\">atomte-itak</i> generally, but especially concentrated in prayer",
+    "suggestion": "Apply consistent formatting to Ainu terms. Either italicize all Ainu terms or use the `<A>` tag consistently.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#004",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "135",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese text '鍋沢モトゾウ' is not translated or glossed, while other Ainu terms and Japanese terms (like 雅語, 日常語/口語) are handled. This inconsistency might be unintentional.",
+    "quote": "and the prayer text of 鍋沢モトゾウ\n(Motoanrek, Monbetsu) preserves an additional prayer-only form,",
+    "suggestion": "Translate or gloss '鍋沢モトゾウ' or remove it if it's not essential to the point being made.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'mosir kor huci' is glossed as 'grandmother who rules the land'. However, the preceding text states it's a prayer-only form for the fire deity. The gloss 'grandmother who rules the land' might be too general and not specific enough to the fire deity context.",
+    "quote": "<A w=\"mosir kor huci\" gl=\"grandmother who rules the land\" />, described in",
+    "suggestion": "Consider if the gloss could be more specific to the fire deity context, or if the surrounding text sufficiently clarifies its application.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#003",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "117",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the dialectal variation of 'hapo' in Kuril varieties mentions that it cites Chiri Mashiho's data. It would be more precise to include a direct reference to Chiri Mashiho's work if possible, rather than relying solely on the Discord attribution.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (thegodofneet, 2026-06-08, asserted,\nciting Chiri Mashiho's comparative data).",
+    "suggestion": "If possible, add a direct citation for Chiri Mashiho's data, or clarify if the Discord attribution is the sole source for this specific detail.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#001",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "106",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the claim about dialect variation and everyday speech for 'hapo' is split between a general reference and a community source. It would be clearer if the community source citation was directly associated with the specific claim it supports.",
+    "quote": "<A w=\"hapo\" gl=\"mother / father (colloquial, dialect-variable)\" /> vary more strongly by\ndialect and belong primarily to everyday speech\n<Ref k=\"endo2022\" />; <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026-06-15,\nasserted).",
+    "suggestion": "Move the community source citation to directly follow the claim it supports, or clarify the scope of the <Ref k=\"endo2022\" /> citation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#022",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "196",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation <Ref k=\"endo2022\" /> is separate from the parenthetical '(§2.3)', which breaks the standard pattern of including locators within the Ref component (e.g., p=\"§2.3\"). This risks misattribution and weakens citation integrity.",
+    "quote": "<Ref k=\"endo2022\" /> (§2.3)",
+    "suggestion": "Merge into: <Ref k=\"endo2022\" p=\"§2.3\" />",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#021",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "200-208",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example cites only 'endo2022' without a page or example number, while the note references 'Endō (2022) §2.3'. For consistency and verifiability, the cite attribute should include the locator (e.g., cite=\"endo2022:§2.3\" or cite=\"endo2022:ex.13\").",
+    "quote": "cite=\"endo2022\"",
+    "suggestion": "Update cite attribute to include section or example number: cite=\"endo2022:§2.3, ex.13\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#020",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "207",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'APPL-APPL' suggests two applicative morphemes, but the morphemic segmentation is 'k=e-ko-onkami', which contains only two prefixes: e- and ko-. While both may be applicatives, the gloss does not align clearly with the morpheme count or labeling. If both are APPL, the segmentation should reflect that; if they are distinct types, the gloss should differentiate them.",
+    "quote": "g=\"1SG.A=APPL-APPL-worship\"",
+    "suggestion": "Revise gloss to potentially distinguish the applicatives (e.g., 'APPL1-APPL2') or confirm that 'e-' and 'ko-' are both standardly classified as APPL in this context.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#016",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "104",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'mother / father' for <A w=\"hapo\" /> conflicts with the subsequent sentence (line 115–117) stating that in Chitose and Horobetsu, 'hapo' means 'father', not 'mother'. The gloss implies equal semantic range, but the text specifies asymmetric dialect distribution: 'mother' in most Hokkaido varieties, 'father' in some. This creates ambiguity about whether 'hapo' ever means both simultaneously or is strictly dialect-specific.",
+    "quote": "<A w=\"hapo\" gl=\"mother / father (colloquial, dialect-variable)\" />",
+    "suggestion": "Revise the gloss to reflect dialect specificity, e.g., 'mother (most HK) / father (Chitose, Horobetsu)' or split into separate entries with dialect tags.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "honorific-ritual-and-taboo-registers~p1#013",
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "lines": "47-48",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter's three-axis framework distinguishes the poetic/elegant axis from the honorific/deferential axis, but here honorific pronouns are called 'elegant-register', conflating the two axes. The table header also labels them 'honorific / elegant pronoun', blurring the distinction.",
+    "quote": "A dedicated honorific pronoun set co-occurs with these verbal affixes. Sato (2008:261) lists the following elegant-register second-person pronouns for the Chitose variety:",
+    "suggestion": "Change 'elegant-register' to 'honorific' or 'deferential' to align with the chapter's own framework.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

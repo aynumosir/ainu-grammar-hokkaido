@@ -1,0 +1,962 @@
+[
+ {
+  "id": "siri-ne-situational~p1#008",
+  "chapter": "siri-ne-situational",
+  "lines": "226",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for `sir-i an` is `appearance-POSS exist`, which doesn't fully capture the aspectual/resultative meaning described in the text (lines 202-209). The gloss should reflect the function described.",
+    "quote": "g=\"1SG.O=raise appearance-POSS exist QUOT 4.S=think while 4.S=exist PFV NMLZ\"",
+    "suggestion": "Consider a gloss that better reflects the aspectual/resultative meaning, e.g., 'appearance-POSS be.like' or similar, if context allows.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'an=an' is '4.S=exist', but the free translation 'I had been thinking' uses past perfect progressive. The aspectual nuance of 'an=an' (existential + progressive/resultative) is not captured in the gloss, and the PFV gloss on 'a' is not explained in the translation.",
+    "quote": "m=\"i=resu sir-i an sekor yaynu=an kor an=an a p\"\ng=\"1SG.O=raise appearance-POSS exist QUOT 4.S=think while 4.S=exist PFV NMLZ\"",
+    "suggestion": "Consider glossing 'an=an' as '4.S=be.PROG' or adding a note explaining the aspectual reading. The PFV on 'a' should be clarified in the note or gloss.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes '1SG.O=raise' but the free translation refers to 'my older sibling' as the one raising. The subject of 'raise' is not the speaker, so '1SG.O' (first person singular object) is incorrect or misleading. It should reflect that the speaker is the *object* of raising by another.",
+    "quote": "m=\"i=resu sir-i an sekor yaynu=an kor an=an a p\" g=\"1SG.O=raise appearance-POSS exist QUOT 4.S=think while 4.S=exist PFV NMLZ\" tr=\"I had been thinking that (my older sibling) was raising me, but (it turned out otherwise)…\"",
+    "suggestion": "Revise the gloss to clarify the argument structure, e.g., '1SG.O=be.raised.by' or 'raised.1SG.O', or adjust the translation to 'I had been thinking that I was being raised by (my older sibling)'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#025",
+  "chapter": "siri-ne-situational",
+  "lines": "380",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sir-pirka` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">sir-pirka</i> 'good weather',",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `sir-pirka`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sir-kunne` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">sir-kunne</i> 'be dark / nightfall',",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `sir-kunne`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sir-peker` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">sir-peker</i> 'be bright / dawn'.",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `sir-peker`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent markup: only the first Ainu form has properly closed <i> tags. The others are missing the opening <i> or have malformed tags (e.g., 'i lang=\"ain-Latn\">' without angle brackets).",
+    "quote": "<i lang=\"ain-Latn\">sir-pirka</i> 'good weather', i lang=\"ain-Latn\">sir-kunne</i> 'be dark / nightfall', i lang=\"ain-Latn\">sir-peker</i> 'be bright / dawn'",
+    "suggestion": "Correct all to <i lang=\"ain-Latn\">sir-kunne</i> and <i lang=\"ain-Latn\">sir-peker</i>.",
+    "confidence": 0.99
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#016",
+  "chapter": "siri-ne-situational",
+  "lines": "309",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sin` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">sin</i> (concept-form allomorph of i lang=\"ain-Latn\">sir</i>):",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `sin`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sin` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">sin ne nankor</i> '(she) seems to be fleeing'",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `sin`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `ru` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">ru</i> instead — the unmarked member that imposes no predication-type restriction",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `ru`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example is given in plain text with no <Ex> markup, unlike other examples in the chapter. It also lacks morpheme segmentation, gloss, and citation in standard format. This breaks formatting consistency.",
+    "quote": "kira sin ne nankor</i> '(she) seems to be fleeing' (Takahashi 2013, ex. 5)",
+    "suggestion": "Convert to a proper <Ex> component with m, g, tr, cite, and dial fields, or at minimum mark up the Ainu text with <i lang=\"ain-Latn\">.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#001",
+  "chapter": "siri-ne-situational",
+  "lines": "140",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sir-i ne` is enclosed in a `>` tag, which is not standard for Ainu orthography in this document.",
+    "quote": ">sir-i ne",
+    "suggestion": "Change `>sir-i ne` to `sir-i ne`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example uses an 'ain' attribute instead of the standard 'm' attribute used in all other examples in the chapter. This is a format drift.",
+    "quote": "ain=\"tane a=koónne siri ne wa tapne,\"",
+    "suggestion": "Change 'ain' to 'm' for consistency, or if 'ain' is a valid alternative, ensure it is used consistently throughout.",
+    "confidence": 0.95
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ainu line uses 'koónne' with an acute accent, but the morphemic line has 'ko-onne' without the accent. This is an orthographic inconsistency within the same example.",
+    "quote": "ain=\"tane a=koónne siri ne wa tapne,\"\nm=\"tane a=ko-onne sir-i ne wa tapne\"",
+    "suggestion": "Either add the acute accent to the morphemic line (ko-ónne) or remove it from the Ainu line, depending on the intended transcription system.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#035",
+  "chapter": "siri-ne-situational",
+  "lines": "295-296",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'an' is 'exist', but the free translation 'Did you go to Tokyo?' is a polar question. The gloss does not indicate the interrogative function, which is crucial for understanding the example's purpose (illustrating the interrogative frame).",
+    "quote": "m=\"Tokyo un paye=an sir-i an\"\ng=\"Tokyo LOC go=4.S appearance-POSS exist\"",
+    "suggestion": "Add a gloss for the interrogative function, e.g., 'exist.INTERR' or add a note in the gloss line like 'exist[INTERR]'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'go=4.S' implies third person singular subject, but the translation 'Did you go' is second person. The person/number marking is inconsistent between gloss and translation.",
+    "quote": "m=\"Tokyo un paye=an sir-i an\" g=\"Tokyo LOC go=4.S appearance-POSS exist\" tr=\"Did you go to Tokyo?\"",
+    "suggestion": "Change the gloss to 'go=2.S' to match the translation, or revise the translation to 'Did he/she go to Tokyo?' if the original is indeed third person.",
+    "confidence": 0.97
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#037",
+  "chapter": "siri-ne-situational",
+  "lines": "30-35",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The percentages do not add up correctly with the given token counts. 149 + 1508 + 59 + 42 = 1758 total tokens, but 149/1758 ≈ 8.48%, not 6.68%, and 1508/1758 ≈ 85.78%, not 67.56%. The percentages are inconsistent with the absolute numbers.",
+    "quote": "In Dal Corso's Hokkaido reference texts it supplies 149 tokens (6.68% of all evidential forms), against 1508 (67.56%) for i lang=\"ain-Latn\">ruwe ne</i>; its indirect counterparts i lang=\"ain-Latn\">siri an</i> (59 tokens, 2.64%) and i lang=\"ain-Latn\">siri ki</i> (42 tokens, 1.88%)",
+    "suggestion": "Recalculate the percentages based on the total number of evidential tokens in Dal Corso's corpus, or verify the numbers against the source. If 1508 is 67.56%, then the total should be ~2232, implying missing tokens from other evidentials.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#030",
+  "chapter": "siri-ne-situational",
+  "lines": "217-221",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline register leak: 'the read sources' and 'was not consulted directly' are meta-commentary addressed to the production process, not to the reader. The epistemic tag ‹speculative› is also inappropriate for a statement about source availability.",
+    "quote": "The three-way ambiguity is described functionally in the read sources but lacks a unified syntactic account; Satō 2013's analysis of siri an as a polysemous aspectual-modal-evidential in Chitose is cited by Dal Corso but was not consulted directly <Ref k=\"dalcorso2018\" p=\"316\" /> ‹speculative›.",
+    "suggestion": "Rephrase to something like 'A unified syntactic account is lacking; Satō 2013's analysis of siri an as a polysemous aspectual-modal-evidential in Chitose is cited by Dal Corso (2018: 316) but has not been examined in detail here.' Remove the ‹speculative› tag.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#036",
+  "chapter": "siri-ne-situational",
+  "lines": "80-81",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The parenthetical citation format is inconsistent with the rest of the chapter, which uses <Ref> tags. This appears to be a raw citation that should be formatted as a proper reference.",
+    "quote": "noted by community analysts as unusually broad (nukopoli, aynu-corpora Discord 2023)",
+    "suggestion": "Replace with a proper <Ref> tag, e.g., <Ref k=\"aynucorporadiscord\" />, and ensure the Discord message is properly documented in the bibliography.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#028",
+  "chapter": "siri-ne-situational",
+  "lines": "409",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri an` is missing its possessive suffix marker (`-i`) in this reference, which is present in the table and examples.",
+    "quote": "i lang=\"ain-Latn\">ru an</i> in the inferential function that i lang=\"ain-Latn\">siri an</i> fills in the southern",
+    "suggestion": "Change `siri an` to `siri-i an`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#027",
+  "chapter": "siri-ne-situational",
+  "lines": "404",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri` is missing its possessive suffix marker (`-i`) in this reference, which is present in the table and examples.",
+    "quote": "i lang=\"ain-Latn\">ci-sautar-i sinki siri suke ki wa …</i> 'my sisters, though tired, cooked…'",
+    "suggestion": "Change `siri` to `siri-i`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#026",
+  "chapter": "siri-ne-situational",
+  "lines": "396",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sin` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">sin</i> (allomorph of i lang=\"ain-Latn\">sir</i>) in clause-final position",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `sin`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri` is missing its possessive suffix marker (`-i`) in this reference, which is present in the table and examples.",
+    "quote": "i lang=\"ain-Latn\">siri</i>) in clause-final position",
+    "suggestion": "Change `siri` to `siri-i`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#024",
+  "chapter": "siri-ne-situational",
+  "lines": "374",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `ne` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">ne</i> vs i lang=\"ain-Latn\">an</i> vs i lang=\"ain-Latn\">ki</i>) continues to carry evidential",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `ne`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `an` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">an</i> vs i lang=\"ain-Latn\">ki</i>) continues to carry evidential",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `an`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `ki` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">ne</i> vs i lang=\"ain-Latn\">an</i> vs i lang=\"ain-Latn\">ki</i>) continues to carry evidential",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `ki`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#023",
+  "chapter": "siri-ne-situational",
+  "lines": "368",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri ne` is missing its possessive suffix marker (`-i`) in this reference, which is present in the table and examples.",
+    "quote": "i lang=\"ain-Latn\">sir-i</i> 'the appearance of —', which grammaticalizes as the clause-final evidential i lang=\"ain-Latn\">[clause] siri ne",
+    "suggestion": "Change `siri ne` to `siri-i ne`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#022",
+  "chapter": "siri-ne-situational",
+  "lines": "357",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri ne` is missing its possessive suffix marker (`-i`) in this reference, which is present in the table and examples.",
+    "quote": "while siri ne — as a scene-level visual evidential — cannot fill that ratifying role",
+    "suggestion": "Change `siri ne` to `siri-i ne`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#021",
+  "chapter": "siri-ne-situational",
+  "lines": "343",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sir-an` in the example is missing its possessive suffix marker (`-i`) which is present in the text and other examples.",
+    "quote": "supuya at kor sir-an ruwe ne anan",
+    "suggestion": "Correct the form to `sir-i-an`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms `siri ki` and `siri ne` are missing their possessive suffix marker (`-i`) in this reference, which is present in the table and examples.",
+    "quote": "siri ki siri ne is also attested",
+    "suggestion": "Change `siri ki` to `siri-i ki` and `siri ne` to `siri-i ne`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms `siri an` and `siri ne` are missing their possessive suffix marker (`-i`) in this reference, which is present in the table and examples.",
+    "quote": "combinations such as *siri an siri ne are not reported",
+    "suggestion": "Change `siri an` to `siri-i an` and `siri ne` to `siri-i ne`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#020",
+  "chapter": "siri-ne-situational",
+  "lines": "329",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms `ru` and `ruwe` are missing their `lang=\"ain-Latn\"` attributes.",
+    "quote": "The complementary distribution with i lang=\"ain-Latn\">ru / ruwe</i> is examined in",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `ru` and `ruwe`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#019",
+  "chapter": "siri-ne-situational",
+  "lines": "324",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri ne` is missing its possessive suffix marker (`-i`) in the text reference, which is present in the table and examples.",
+    "quote": "i lang=\"ain-Latn\">siri ne</i>'s characterization as inherently tied to observable, imperfective situations.",
+    "suggestion": "Change `siri ne` to `siri-i ne`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri` is missing its possessive suffix marker (`-i`) in the text reference, which is present in the table and examples.",
+    "quote": "i lang=\"ain-Latn\">siri</i> selects for processes ongoing before the",
+    "suggestion": "Change `siri` to `siri-i`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#018",
+  "chapter": "siri-ne-situational",
+  "lines": "321",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dash used here is an em dash, but standard practice in this document seems to favor en dashes for parenthetical phrases or to connect related ideas.",
+    "quote": "a stage-/individual-level distinction that in English appears on the complement-type of the matrix verb, but in Ainu appears on the nominalizer itself",
+    "suggestion": "Replace the em dash with an en dash.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#017",
+  "chapter": "siri-ne-situational",
+  "lines": "314",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `hum` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">sir</i> carries this restriction; i lang=\"ain-Latn\">hum</i>,",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `hum`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `haw` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">haw</i>, and i lang=\"ain-Latn\">ru</i> operate at both predication",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `haw`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `ru` is missing its `lang=\"ain-Latn\"` attribute.",
+    "quote": "i lang=\"ain-Latn\">ru</i> operate at both predication",
+    "suggestion": "Add `lang=\"ain-Latn\"` to `ru`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#015",
+  "chapter": "siri-ne-situational",
+  "lines": "295",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sir-i an` is missing its possessive suffix marker (`-i`) in the morpheme breakdown, which is present in the gloss and translation.",
+    "quote": "Tokyo un paye=an sir-i an",
+    "suggestion": "Correct the morpheme breakdown to `sir-i=an`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#014",
+  "chapter": "siri-ne-situational",
+  "lines": "285",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dash used here is an em dash, but standard practice in this document seems to favor en dashes for parenthetical phrases or to connect related ideas.",
+    "quote": "The polar-question reduction — bare siri without a following predicate — is an instance of insubordination: a nominalized clause pressed into main-clause function.",
+    "suggestion": "Replace the em dash with an en dash.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 脱従属節化 is not translated or explained in the text, which might be inconsistent if other Japanese terms are handled differently.",
+    "quote": "Takahashi analyses the Tokachi cognate pattern as 脱従属節化",
+    "suggestion": "Either translate 脱従属節化 to 'de-subordination' or ensure consistency with how other foreign terms are treated.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#013",
+  "chapter": "siri-ne-situational",
+  "lines": "273",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri` is missing its possessive suffix marker (`-i`) in the table entry, which is present in the text and examples.",
+    "quote": "siri?",
+    "suggestion": "Change `siri` to `siri-i`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#012",
+  "chapter": "siri-ne-situational",
+  "lines": "268",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `siri an` is missing its possessive suffix marker (`-i`) in the table entry, which is present in the text and examples.",
+    "quote": "siri an?",
+    "suggestion": "Change `siri an` to `siri-i an`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#011",
+  "chapter": "siri-ne-situational",
+  "lines": "240",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sirki` is not marked with `lang=\"ain-Latn\"` or `<i>` tag, unlike other Ainu forms.",
+    "quote": "A Kayano (Biratori) narrative instance has a character's skilled cooking assessed by a bystander under sirki, expressing surprised indirect-visual perception",
+    "suggestion": "Add `lang=\"ain-Latn\"` or `<i>` tag to `sirki`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#010",
+  "chapter": "siri-ne-situational",
+  "lines": "235",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sirki` is not marked with `lang=\"ain-Latn\"` or `i` tag, unlike other Ainu forms.",
+    "quote": "siri ki (also contracted sirki) is the unambiguous indirect-visual form.",
+    "suggestion": "Add `lang=\"ain-Latn\"` or `<i>` tag to `sirki`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#009",
+  "chapter": "siri-ne-situational",
+  "lines": "231",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'the nominalized tail a p carries an adversative nuance' is a fragment and could be integrated more smoothly into the preceding sentence.",
+    "quote": "The sekor yaynu=an frame embeds this under the narrator's own cognitive report; the nominalized tail a p carries an adversative nuance.",
+    "suggestion": "Consider rephrasing or integrating this into the main sentence for better flow.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#007",
+  "chapter": "siri-ne-situational",
+  "lines": "225",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form `sir-i an` is missing its possessive suffix marker (`-i`) in the morpheme breakdown, which is present in the gloss and translation.",
+    "quote": "i=resu sir-i an sekor yaynu=an kor an=an a p",
+    "suggestion": "Correct the morpheme breakdown to `sir-i=an`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#006",
+  "chapter": "siri-ne-situational",
+  "lines": "206",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Missing apostrophe in 'use'.",
+    "quote": "In this use siri an functions as a lexical predicate ('be like, appear, pass of time') and is not an evidential.",
+    "suggestion": "Change 'use' to 'use'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#005",
+  "chapter": "siri-ne-situational",
+  "lines": "194",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'visually or situationally accessible' is slightly awkward. 'Visually accessible' is clear, but 'situationally accessible' might be redundant or could be phrased more precisely.",
+    "quote": "reporting an event visually or situationally accessible but not directly witnessed by the current speaker.",
+    "suggestion": "Consider rephrasing to 'visually accessible or inferable from the situation'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#004",
+  "chapter": "siri-ne-situational",
+  "lines": "166",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dash used here is an em dash, but standard practice in this document seems to favor en dashes for parenthetical phrases or to connect related ideas.",
+    "quote": "Hirosawa's hypothesis — that siri profiles the raw visible appearance while ruwe profiles the knowledge extracted from it — is offered as a hypothesis (仮説), not a settled result",
+    "suggestion": "Replace the em dash with an en dash.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical Japanese term (仮説) is not translated or explained in the text, which might be inconsistent if other Japanese terms are handled differently.",
+    "quote": "is offered as a hypothesis (仮説), not a settled result",
+    "suggestion": "Either translate (仮説) to 'hypothesis' or ensure consistency with how other foreign terms are treated.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#003",
+  "chapter": "siri-ne-situational",
+  "lines": "151",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dash used here is an em dash, but standard practice in this document seems to favor en dashes for parenthetical phrases or to connect related ideas.",
+    "quote": "in which siri ne predicates a future event not yet observed — a punishment that will happen — showing that the form can range over a situationally entailed, not merely currently perceived, state of affairs",
+    "suggestion": "Replace the em dash with an en dash.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#002",
+  "chapter": "siri-ne-situational",
+  "lines": "147",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'the wa-clause links the observation to the following narrative beat.' is a fragment and could be integrated more smoothly into the preceding sentence.",
+    "quote": "the wa-clause links the observation to the following narrative beat.",
+    "suggestion": "Consider rephrasing or integrating this into the main sentence for better flow.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#040",
+  "chapter": "siri-ne-situational",
+  "lines": "343",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example is attributed to 'Nakagawa text, Dal Corso ex. 268' but lacks a formal <Ref> citation. The prose treats it as evidence, so it should be formally cited with <Ref k=\"dalcorso2018\" p=\"X\" />.",
+    "quote": "as in the smoke-rising example (i lang=\"ain-Latn\">supuya at kor sir-an ruwe ne anan</i>, Nakagawa text, Dal Corso ex. 268)",
+    "suggestion": "Add a proper citation, e.g., <Ref k=\"dalcorso2018\" p=\"326\" /> after the example, or integrate it into an <Ex> component.",
+    "confidence": 0.93
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#039",
+  "chapter": "siri-ne-situational",
+  "lines": "149-154",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This claim contradicts the earlier definition that siri ne is for 'directly visible situation' and 'process ongoing before the eyes'. Asserting that it can refer to a future, unobserved event undermines the core semantics unless clearly framed as an extension. The evidence grade ‹corpus-suggested› is appropriate, but the contradiction with the section title and prior claims is not acknowledged.",
+    "quote": "Hirosawa cites an example in which i lang=\"ain-Latn\">siri ne</i> predicates a future event not yet observed — a punishment that will happen — showing that the form can range over a situationally entailed, not merely currently perceived, state of affairs <Ref k=\"hirosawa2026\" p=\"70\" /> ‹corpus-suggested›.",
+    "suggestion": "Revise to clarify that this future use is a marginal or inferential extension, perhaps noting: 'This suggests a limited extension beyond strictly present observation, though the core use remains immediate visual access.'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#038",
+  "chapter": "siri-ne-situational",
+  "lines": "115-116",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation <Ref k=\"kindaichi1936\" /> has no page number, while the claim it supports (Chiri's gloss) is specific. Later citations (Nakagawa, Tamura) include page numbers for similar claims. This creates citation inconsistency for a direct quotation.",
+    "quote": "<Ref k=\"kindaichi1936\" />; <Ref k=\"hirosawa2026\" p=\"65–66\" />. The modern evidential framing preserves the core: Nakagawa defines i lang=\"ain-Latn\">siri ne</i> as marking",
+    "suggestion": "Add a page number to the Kindaichi citation if available, e.g., p=\"X\" where X is the relevant page in Kindaichi 1936 where Chiri's gloss is presented.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The second citation attributes a Tamura quote to Hirosawa 2026. The prose says 'Tamura gives it', but the citation is to Hirosawa 2026, creating a mismatch between attribution and source.",
+    "quote": "Nakagawa defines i lang=\"ain-Latn\">siri ne</i> as marking that the speaker's judgment rests on visual information <Ref k=\"nakagawa2024\" p=\"392\" />, and Tamura gives it as 'used for conditions that can be seen' <Ref k=\"hirosawa2026\" p=\"67\" />.",
+    "suggestion": "Change the citation to <Ref k=\"tamura1996\" p=\"s.v. sir\" /> or rephrase to 'Hirosawa (2026:67) reports Tamura’s definition as…' if indirect.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#034",
+  "chapter": "siri-ne-situational",
+  "lines": "139-141",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ainu line (ain) uses 'koónne' with an acute accent, but the morphemic line (m) has 'ko-onne' without the accent. This is an orthographic inconsistency within the same example.",
+    "quote": "ain=\"tane a=koónne siri ne wa tapne,\"\nm=\"tane a=ko-onne sir-i ne wa tapne\"\ng=\"now 4.A=APPL-be.old appearance-POSS COP CONJ thus\"",
+    "suggestion": "Either add the acute accent to the morphemic line (ko-ónne) or remove it from the Ainu line, depending on the intended transcription system.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#033",
+  "chapter": "siri-ne-situational",
+  "lines": "358-360",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that Dal Corso 'leaves the exact semantic driver open' is attributed to specific pages, but those pages are cited earlier in the same paragraph (lines 358-359) for a different claim. The citation may be correct but the placement is confusing; it appears to be attached to the wrong clause.",
+    "quote": "Dal Corso leaves the exact semantic driver open <Ref k=\"dalcorso2018\" p=\"311-312, 335-336\" />; the full argument is developed in <Xr ch=\"ruwe-ne-inferential\" s=\"visual-puzzle\" />.",
+    "suggestion": "Move the citation to directly after 'Dal Corso leaves the exact semantic driver open' or restructure the sentence to make the attribution clear.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#032",
+  "chapter": "siri-ne-situational",
+  "lines": "327-329",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is applied to a statement about the state of research (what is known or unknown), not to a factual claim about Ainu grammar. This is a misuse of the tag.",
+    "quote": "Whether the Tokachi restriction is a local grammaticalization feature or a pan-Hokkaido tendency described only piecemeal in the southern sources remains unresolved ‹speculative›.",
+    "suggestion": "Remove the ‹speculative› tag. The statement is already appropriately hedged ('remains unresolved').",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#031",
+  "chapter": "siri-ne-situational",
+  "lines": "284-285",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag ‹corpus-confirmed› is attached to a claim that is supported only by a single secondary source (Nakagawa 2024), not by direct corpus evidence. The phrase 'in the read sources' also constitutes a register leak.",
+    "quote": "the un-answer is restricted to ruwe in the read sources <Ref k=\"nakagawa2024\" p=\"396\" /> ‹corpus-confirmed›",
+    "suggestion": "Remove ‹corpus-confirmed› and rephrase to remove 'in the read sources', e.g., 'the un-answer is restricted to ruwe (Nakagawa 2024: 396).'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "siri-ne-situational~p1#029",
+  "chapter": "siri-ne-situational",
+  "lines": "80-82",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag ‹corpus-confirmed› is applied to a claim whose only cited support is a Discord attribution. A single community Discord post does not constitute corpus confirmation.",
+    "quote": "noted by community analysts as unusually broad (nukopoli, aynu-corpora Discord 2023) <Ref k=\"aynucorporadiscord\" /> ‹corpus-confirmed›",
+    "suggestion": "Change ‹corpus-confirmed› to ‹speculative› or remove the tag entirely, or add a proper corpus citation.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

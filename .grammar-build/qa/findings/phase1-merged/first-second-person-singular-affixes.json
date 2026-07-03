@@ -1,0 +1,917 @@
+[
+ {
+  "id": "first-second-person-singular-affixes~p1#002",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "40",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'k=' is written with a macron in the table, but without one in the prose on line 91. Consistency is needed.",
+    "quote": "k=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu vowels 'a', 'u', 'e', 'o' are written without macrons in the table, but with macrons in the prose on line 92. Consistency is needed.",
+    "quote": "vowel-initial stems (a, u, e, o)",
+    "suggestion": "Ensure consistent use of macrons for Ainu vowels.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=' is written with a macron in the table, but without one in the prose on line 73. Consistency is needed.",
+    "quote": "ku=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The vowels are listed as (a, u, e, o), omitting <i lang=\"ain-Latn\">i</i>. However, in line 139, Ijäs's note specifies that initial <i lang=\"ain-Latn\">i</i> retains the fuller form — implying that <i lang=\"ain-Latn\">ku=</i> does not reduce before <i lang=\"ain-Latn\">i</i>-initial stems. The list should include <i lang=\"ain-Latn\">i</i> for completeness and clarity.",
+    "quote": "Saru/Chitose/Mukawa <i lang=\"ain-Latn\">k=</i> before vowel-initial stems (a, u, e, o)",
+    "suggestion": "Revise to: \"(a, u, e, o, i)\" or clarify that reduction does not occur before <i lang=\"ain-Latn\">i</i>-initial stems.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#001",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the first paragraph, but without one in the table on line 44. Consistency is needed.",
+    "quote": "en=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e=' is written with a macron in the first paragraph, but without one in the table on line 50. Consistency is needed.",
+    "quote": "e=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form <i lang=\"ain-Latn\">e=</i> is presented without any dialect variation or allomorphy discussion, but later in the chapter (e.g., line 251) it is used in constructed examples with no mention of potential dialect-specific realizations. Given that <i lang=\"ain-Latn\">ku=</i> has a noted allomorph <i lang=\"ain-Latn\">k=</i>, and dialects are specified for other forms, the absence of any comment on possible variation for <i lang=\"ain-Latn\">e=</i> creates an orthographic asymmetry.",
+    "quote": "<i lang=\"ain-Latn\">e=</i>",
+    "suggestion": "Add a brief note on whether <i lang=\"ain-Latn\">e=</i> exhibits dialectal or phonologically conditioned allomorphy, or explicitly state that it does not, to parallel the treatment of <i lang=\"ain-Latn\">ku=</i>.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#039",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "273",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This contradicts the earlier statement in the table (line 53) that says '1→2 uses portmanteau <i lang=\"ain-Latn\">eci=</i> instead', which could be interpreted as only 1SG→2SG. But more critically, it conflicts with line 192–193, which says that in Saru and Chitose, bare <i lang=\"ain-Latn\">en=</i> covers 2SG→1SG and 2PL→1SG. If <i lang=\"ain-Latn\">eci=</i> is used for 1→2, then <i lang=\"ain-Latn\">en=</i> should not be used for 2→1 — but the text allows both. The directionality must be consistently defined: <i lang=\"ain-Latn\">eci=</i> for 1→2, <i lang=\"ain-Latn\">en=</i> for 3→1SG and (in some dialects) 2→1SG. The claim that <i lang=\"ain-Latn\">eci=</i> covers all 1→2 combinations is correct, but the coexistence of <i lang=\"ain-Latn\">en=</i> for 2→1SG must not imply bidirectional syncretism.",
+    "quote": "All four 1→2 combinations — 1SG→2SG, 1SG→2PL, 1PL.EXCL→2SG, 1PL.EXCL→2PL — surface as <i lang=\"ain-Latn\">eci=</i>",
+    "suggestion": "Clarify that <i lang=\"ain-Latn\">eci=</i> is strictly for 1→2 (A→O), while <i lang=\"ain-Latn\">en=</i> in 2→1SG is a separate syncretic use, not involving <i lang=\"ain-Latn\">eci=</i>.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#037",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "194",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that Chitose extends bare <i lang=\"ain-Latn\">en=</i> to 2PL→1SG, but in the table (line 53), it says that 1→2 uses portmanteau <i lang=\"ain-Latn\">eci=</i> instead — implying that <i lang=\"ain-Latn\">eci=</i> is used for 1→2, not 2→1. However, no mention is made of <i lang=\"ain-Latn\">eci=</i> being used in the 2PL→1SG direction. This creates a contradiction: if Chitose uses bare <i lang=\"ain-Latn\">en=</i> for 2PL→1SG, then <i lang=\"ain-Latn\">eci=</i> should not be involved, but the table implies <i lang=\"ain-Latn\">eci=</i> is used for 1→2 only, not 2→1. The directionality and form usage must be clarified.",
+    "quote": "bare <i lang=\"ain-Latn\">en=</i> covers the 2SG→1SG cell; Chitose extends the same bare form to 2PL→1SG",
+    "suggestion": "Revise either the table or the prose to clarify whether <i lang=\"ain-Latn\">en=</i> or <i lang=\"ain-Latn\">eci=</i> is used in 2PL→1SG in Chitose, and ensure directional consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#036",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "285",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses '1SG.A>2SG.O=help', but the morpheme string is 'eci=kasuy'. The gloss implies a portmanteau meaning 'I help you', but 'kasuy' is glossed as 'help', while in line 179, the same root 'kasuy' is used with 'en=kasuy' and glossed as '1SG.O=help'. The root appears to be transitive, but the directionality in the gloss (A>O) is not standard in Leipzig glossing, which typically uses separate glosses for subject and object. Moreover, the gloss '1SG.A>2SG.O' is non-standard and should be replaced with a conventional format like '1SG.S.2SG.O=help' or '1SG>2SG=help'.",
+    "quote": "g=\"something even 1SG.A>2SG.O=help NMLZ exist Q\"",
+    "suggestion": "Revise the gloss to use standard portmanteau notation, e.g., '1SG>2SG=help' or '1SG.S.2SG.O=help', and ensure consistency with Leipzig norms.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#032",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "168-170",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The translation ‘Please protect me’ omits the meaning of kore ‘give’, which is glossed as ‘1SG.O=give’.",
+    "quote": "en=epunkine wa en=kore yan … 1SG.O=protect CONJ 1SG.O=give IMP … “Please protect me.”",
+    "suggestion": "Revise the translation to include the ‘give’ component, e.g. ‘Please protect me and give to me’, or adjust the gloss if the form has a different meaning in context.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#031",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "291",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'eci=' is written with a macron in the note, but without one in the prose on line 272. Consistency is needed.",
+    "quote": "eci=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#030",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "285",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'eci=' is written with a macron in the example, but without one in the prose on line 272. Consistency is needed.",
+    "quote": "eci=kasuy",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#029",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "274",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'eci=' is written with a macron in the prose, but without one in the table on line 53. Consistency is needed.",
+    "quote": "eci=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'ku=' and 'e=' are written with macrons in the prose, but without them in the table on lines 39-40 and 50 respectively. Consistency is needed.",
+    "quote": "ku=e=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'ci=' and 'e=' are written with macrons in the prose, but without them in the table on lines 39-40 and 50 respectively. Consistency is needed.",
+    "quote": "ci=e=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#028",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "262",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e=' is written with a macron in the prose, but without one in the table on line 50. Consistency is needed.",
+    "quote": "e=kore",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#027",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e=' is written with a macron in the note, but without one in the prose on line 230. Consistency is needed.",
+    "quote": "e=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#026",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "251",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e=' is written with a macron in the example, but without one in the prose on line 230. Consistency is needed.",
+    "quote": "e=ku",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#025",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "247",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e=' is written with a macron in the note, but without one in the prose on line 230. Consistency is needed.",
+    "quote": "e=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#024",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e=' is written with a macron in the example, but without one in the prose on line 230. Consistency is needed.",
+    "quote": "e=oman",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e=' is written with a macron in the example, but without one in the prose on line 230. Consistency is needed.",
+    "quote": "e=ray",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#023",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "230",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e=' is written with a macron in the prose, but without one in the table on line 50. Consistency is needed.",
+    "quote": "e=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'eci=' is written with a macron in the prose, but without one in the table on line 53. Consistency is needed.",
+    "quote": "eci=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#022",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "221",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i=' is written with a macron in the prose, but without one in the example on line 285 ('eci=kasuy'). Consistency is needed.",
+    "quote": "i=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#021",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "217",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the note, but without one in the prose on line 193. Consistency is needed.",
+    "quote": "en=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#020",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the example, but without one in the prose on line 193. Consistency is needed.",
+    "quote": "en=kore",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#019",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the prose, but without one in the example on line 211. Consistency is needed.",
+    "quote": "en=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#018",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "191",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'e=' and 'en=' are written with macrons in the prose, but without them in the table on lines 50 and 44 respectively. Consistency is needed.",
+    "quote": "e=en=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'eci=' and 'en=' are written with macrons in the prose, but without them in the table on lines 53 and 44 respectively. Consistency is needed.",
+    "quote": "eci=en=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the prose, but without one in the example on line 211. Consistency is needed.",
+    "quote": "en=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#017",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the note, but without one in the prose on line 158. Consistency is needed.",
+    "quote": "en=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#016",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "178",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the example, but without one in the prose on line 158. Consistency is needed.",
+    "quote": "en=kasuy",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#015",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the note, but without one in the prose on line 158. Consistency is needed.",
+    "quote": "en=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#014",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "168",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the example, but without one in the prose on line 158. Consistency is needed.",
+    "quote": "en=epunkine",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is written with a macron in the example, but without one in the prose on line 158. Consistency is needed.",
+    "quote": "en=kore",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#013",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "152",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku-' is written with a macron in the note, but without one in the example on line 146. Consistency is needed.",
+    "quote": "ku-hosipi",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#012",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "146",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=' is written with a macron in the example, but without one in the prose on line 133. Consistency is needed.",
+    "quote": "ku=hosipi",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#011",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "133",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=' is written with a macron in the prose, but without one in the example on line 146. Consistency is needed.",
+    "quote": "ku=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#010",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "125",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is written without a macron in the prose, but with one in the example on line 146 ('ku=hosipi'). Consistency is needed.",
+    "quote": "=an",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=as' is written without a macron in the prose, but with one in the example on line 146 ('ku=hosipi'). Consistency is needed.",
+    "quote": "=as",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#009",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is written without a macron in the prose, but with one in the example on line 146 ('ku=hosipi'). Consistency is needed.",
+    "quote": "=an",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=as' is written without a macron in the prose, but with one in the example on line 146 ('ku=hosipi'). Consistency is needed.",
+    "quote": "=as",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#008",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "110",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=' is written with a macron in the note, but without one in the prose on line 73. Consistency is needed.",
+    "quote": "ku=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#007",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "104",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'k=eramuan' is written with a macron in the example, but without one in the prose on line 95. Consistency is needed.",
+    "quote": "k=eramuan",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'k=eunkeray' is written with a macron in the example, but without one in the prose on line 95. Consistency is needed.",
+    "quote": "k=eunkeray",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#006",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "95",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'eramuan' is written without a macron in the prose, but with one in the example on line 104 ('k=eramuan'). Consistency is needed.",
+    "quote": "eramuan",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'eunkeray' is written without a macron in the prose, but with one in the example on line 104 ('k=eunkeray'). Consistency is needed.",
+    "quote": "eunkeray",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#005",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "91",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=' is written with a macron in the prose, but without one in the example on line 146. Consistency is needed.",
+    "quote": "ku=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'k=' is written with a macron in the prose, but without one in the example on line 104. Consistency is needed.",
+    "quote": "k=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ek' is written without a macron in the prose, but with one in the example on line 104 ('k=eramuan'). Consistency is needed.",
+    "quote": "ek",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#004",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "81",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=' is written with a macron in the example, but without one in the prose on line 73. Consistency is needed.",
+    "quote": "ku=cise",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=' is written with a macron in the example, but without one in the prose on line 73. Consistency is needed.",
+    "quote": "ku=an",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#003",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "53",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'eci=' is written with a macron in the table, but without one in the prose on line 192. Consistency is needed.",
+    "quote": "eci=",
+    "suggestion": "Ensure consistent use of macrons for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#038",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "53",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table footnote says '1→2 uses portmanteau <i lang=\"ain-Latn\">eci=</i> instead', but it appears in the 2SG row under the O column. This implies that when 1SG acts on 2SG, <i lang=\"ain-Latn\">eci=</i> is used — which is correct — but the placement in the 2SG row might mislead readers into thinking <i lang=\"ain-Latn\">eci=</i> is a 2SG form. The note should clarify that this is a portmanteau for 1→2 combinations, not a 2SG-specific form.",
+    "quote": "1→2 uses portmanteau <i lang=\"ain-Latn\">eci=</i> instead",
+    "suggestion": "Rephrase the note to: \"The 1→2 combination uses the portmanteau <i lang=\"ain-Latn\">eci=</i>, replacing separate 1SG and 2SG indexes.\"",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#035",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "250",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '2SG.A=drink' uses 'drink' as the verb root, but the morpheme string has 'ku', which is the expected form of 'drink' only if it is a reduced form of 'ku' from a stem like 'kuk' or 'kuy'. The morpheme segmentation does not match the glossed root.",
+    "quote": "<Ex m=\"kunneywa wakka e=ku\" g=\"morning water 2SG.A=drink\" tr=\"You drink water in the morning.\"",
+    "suggestion": "Verify the correct stem and morphemic segmentation. If the stem is 'ku', gloss as '2SG.A=drink' is acceptable, but ensure consistency with other examples. If the stem is longer, correct the segmentation (e.g., 'e=kuk').",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#034",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "210",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.O=give' does not mark tense or aspect, while the translation is in the past tense. The morpheme string shows no overt tense marker, but the translation implies past. This creates a mismatch unless the tense is pragmatically inferred.",
+    "quote": "<Ex m=\"topenpe en=kore\" g=\"sweets 1SG.O=give\" tr=\"You gave me sweets.\"",
+    "suggestion": "Add a note explaining that tense is inferred from context in constructed examples, or adjust the translation to a present/future form like 'You give me sweets' to avoid implying unmarked tense.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "first-second-person-singular-affixes~p1#033",
+  "chapter": "first-second-person-singular-affixes",
+  "lines": "145",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses 'return', but the free translation uses 'go back'. While these are semantically close, 'return' implies coming back to a point of origin, whereas 'go back' may not. The gloss should align more precisely with the translation or vice versa.",
+    "quote": "<Ex m=\"ku=hosipi\" g=\"1SG.S=return\" tr=\"I go back.\"",
+    "suggestion": "Change either the gloss to 'go.back' or the translation to 'I return' for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

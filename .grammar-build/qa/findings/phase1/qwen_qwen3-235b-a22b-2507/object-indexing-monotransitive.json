@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "111",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "en=epunkine wa en=kore yan",
+  "issue": "The morpheme string contains 'en=epunkine' and 'en=kore', but the gloss '1SG.O=protect CONJ 1SG.O=give IMP' suggests two separate instances of 'en=' indexing 1SG.O. However, the free translation 'Please protect me.' only reflects the first clause; the second clause 'en=kore' (give me) is not accounted for in the translation, creating a mismatch between form and meaning.",
+  "suggestion": "Revise the free translation to include both actions: 'Please protect me and give me (something).' or confirm if the second 'en=kore' is extraneous.",
+  "confidence": 0.95,
+  "chapter": "object-indexing-monotransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "121",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "nep kameaske ene ne yakkay en=kasuy kun pe an cik pirka hike",
+  "issue": "The gloss '1SG.O=help' for 'en=kasuy' is inconsistent with the free translation 'It would be good if any monster were to help me.' — the verb 'kasuy' should be glossed as 'help' (not 'should'), and 'yakkay' (should) is missing from the gloss.",
+  "suggestion": "Revise gloss to: 'what monster thus COP even 1SG.O=help should NMLZ exist if good although' to align with translation.",
+  "confidence": 0.9,
+  "chapter": "object-indexing-monotransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "133",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "e=en= (2SG.A→1SG.O) and eci=en= (2PL.A→1SG.O)",
+  "issue": "The use of '=' after 'eci=en=' is inconsistent with standard markup where '=' marks clitic boundaries; the trailing '=' may be erroneous or require explanation.",
+  "suggestion": "Check if final '=' is part of the prefix or a markup error; consider normalizing to 'eci=en' if the '=' is not phonological.",
+  "confidence": 0.7,
+  "chapter": "object-indexing-monotransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "201",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "kanpisos e=kore",
+  "issue": "The gloss '2SG.O=give' assigns object role to 'e=', but the free translation 'She gave you the book.' identifies a third-person subject and second-person object, which is correct. However, the gloss fails to mark the transitive subject as zero-indexed third person, creating ambiguity in the alignment.",
+  "suggestion": "Revise gloss to 'book 2SG.O=give' → 'book 3.A→2SG.O=give' or add note clarifying zero subject.",
+  "confidence": 0.85,
+  "chapter": "object-indexing-monotransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "250",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=rehe Ikuresuye sekor a=i=réko",
+  "issue": "The gloss '4.A=4.O=call' for 'a=i=réko' implies both subject and object are marked on the verb, but the free translation 'I was named Ikuresuye.' is passive in meaning, suggesting only object indexing. The double prefix 'a=i=' may reflect A and O, but the translation does not reflect dual indexing clearly.",
+  "suggestion": "Revise translation to clarify both roles: 'They named me Ikuresuye' or adjust gloss to reflect passive construction.",
+  "confidence": 0.9,
+  "chapter": "object-indexing-monotransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "260",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "the detransitivising prefix i-",
+  "issue": "The prefix is written as 'i-' in prose, but in the dictionary reference it appears as 'i-ruska' (with hyphen). Elsewhere, personal indices use '='. This creates inconsistency in morpheme boundary notation.",
+  "suggestion": "Standardize to 'i=' for personal index and 'i-' for derivational prefix throughout the chapter to distinguish layers.",
+  "confidence": 0.9,
+  "chapter": "object-indexing-monotransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "302",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "*Ø=en=e=kore",
+  "issue": "The example string '*Ø=en=e=kore' includes 'en=' (1SG.O) and 'e=' (2SG), but the gloss in the surrounding text describes it as 'one makes me give you', which requires 3.A→1SG.O and 1SG.A→2SG.O. The form 'en=e=' suggests 1SG.O→2SG.O, not 1SG.A→2SG.O. This creates a contradiction between the morpheme sequence and the described meaning.",
+  "suggestion": "Revise the example to '*ku=en=e=kore' for 'I make me give you' or clarify the intended subject–object chain.",
+  "confidence": 0.95,
+  "chapter": "object-indexing-monotransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

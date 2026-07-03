@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "77",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<em>auxiliary verb</em> 助動詞",
+  "issue": "The table cell for 'auxiliary verb' in the 'Satō 2008 (6)' column contains '(under particle)', while in the 'Nakagawa 2024 (6)' column it is marked similarly. However, the header 'Handbook ch. 14 (7)' correctly lists 'Auxiliary verb ✓'. This inconsistency suggests a formatting drift: the em-tagged class name appears in the row label but is inconsistently rendered across columns.",
+  "suggestion": "Ensure consistent formatting: either use plain text for all entries in the column or apply <em> tags uniformly. For example, change '(under particle)' to plain text if not intended to be emphasized.",
+  "confidence": 0.95,
+  "chapter": "word-class-inventory-and-diagnostics",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "380",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"be.small child\"",
+  "issue": "The gloss `g` field contains two words ('be.small' and 'child') but only one morpheme is present in the `m` field: `pon`. The noun `hekaci` 'child' is not segmented or aligned in `m`, making the gloss misaligned. Either `m` should be `pon hekaci` with two separate words or the gloss should only reflect `pon`.",
+  "suggestion": "Change `m` to \"pon hekaci\" and `g` to \"be.small child\" with proper segmentation, or split into two examples if intended to show attributive use alone.",
+  "confidence": 0.98,
+  "chapter": "word-class-inventory-and-diagnostics",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "275",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"utari\" />",
+  "issue": "The form `utari` is presented without macrons, while other forms like `utar` are consistent. However, `utari` may be the correct affiliative form of `utar`, but the lack of diacritics could indicate orthographic inconsistency if macrons are otherwise used in the chapter. No other forms in this chapter use macrons, so this may be acceptable.",
+  "suggestion": "Check whether macron usage is standard in this chapter; if not, leave as-is. Otherwise, consider adding macron: `utāri` if phonologically warranted.",
+  "confidence": 0.7,
+  "chapter": "word-class-inventory-and-diagnostics",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "318",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "nukopoli, aynu-corpora Discord 2026; <Ref k=\"aynucorporadiscord\" />",
+  "issue": "The claim about productive instrument-nominalisation is supported only by a Discord attribution (nukopoli, 2026), yet it carries no epistemic tag like ‹contested› or ‹speculative›, despite being a single community source. This inflates the epistemic weight of the claim.",
+  "suggestion": "Add ‹contested› or ‹speculative› after the citation to reflect its evidential status.",
+  "confidence": 0.9,
+  "chapter": "word-class-inventory-and-diagnostics",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "484",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "onture-p",
+  "issue": "The example `onture-p` 'strawberry' is analyzed as containing a verb head, but no interlinear example is provided to show the segmentation and gloss of `onture` as a verb. The claim that it contains a '1-argument-verb head' lacks supporting morphemic analysis in an `<Ex>` block, making the assertion unverified within the chapter.",
+  "suggestion": "Provide an `<Ex>` for `onture-p` with `m`, `g`, and `tr` to substantiate the verbal head claim.",
+  "confidence": 0.95,
+  "chapter": "word-class-inventory-and-diagnostics",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "534",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"kuni\" />",
+  "issue": "The form `kuni` appears without macron, while phonemic length may be relevant. However, no other forms in the chapter use macrons, so this may reflect a consistent orthographic choice. No internal inconsistency is evident.",
+  "suggestion": "null",
+  "confidence": 0.6,
+  "chapter": "word-class-inventory-and-diagnostics",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "139",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "The same 1SG intransitive-subject prefix <i lang=\"ain-Latn\">ku=</i> that marks the action verb <i lang=\"ain-Latn\">ku=mina</i> 'I laugh' marks the property verb <i lang=\"ain-Latn\">ku=pewre</i> 'I am young'",
+  "issue": "The form `ku=mina` is given as 'I laugh', but the root should be `mina` 'laugh', and `ku=` is the 1SG.S prefix. However, the verb `mina` is not previously introduced or linked with `<A>`, unlike other verbs like `an`, `arpa`, etc.",
+  "suggestion": "Link `mina` with `<A w=\"mina\" gl=\"laugh\" />` when first mentioned.",
+  "confidence": 0.85,
+  "chapter": "word-class-inventory-and-diagnostics",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "374",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"pon hekaci\" g=\"be.small child\" tr=\"a small child\" ... />",
+  "issue": "The `m` field contains two words (`pon`, `hekaci`) but the `g` field only glosses `pon` as 'be.small'; `hekaci` is not glossed. This leaves a morpheme unglossed in the interlinear.",
+  "suggestion": "Update `g` to \"be.small child\" with two gloss words, or split the example if only `pon` is under analysis.",
+  "confidence": 0.99,
+  "chapter": "word-class-inventory-and-diagnostics",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,711 @@
+[
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#019",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "14",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'tun katkemat' is presented as illustrating the post-nominal appositional position of the numeral noun, but the order numeral noun + noun is pre-nominal, contradicting the description. The correct post-nominal order would be 'katkemat tun'.",
+    "quote": "tun katkemat",
+    "suggestion": "Change 'tun katkemat' to 'katkemat tun' or revise the description to acknowledge a pre-nominal possibility.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the table (lines 77–78), the form for '6' under person-counting is 'iwaniw', but in the text (line 204), it says '-iw' follows consonant-final stems. 'iwan' ends in 'n', a consonant, so '-iw' is correct. But in the table, 'iwanpe' and 'iwaniw' are used, while in the text (line 135), the stem is 'iwan', so the allomorphy is correctly applied. No actual inconsistency, but the table uses 'iwanpe' and 'iwaniw' without hyphens, while other entries like 'tupesanpe' are written as one word. Formatting drift.",
+    "quote": "suffixes — <i lang=\"ain-Latn\">-p/-pe</i> for non-human referents or <i lang=\"ain-Latn\">-n/-iw</i> for human referents",
+    "suggestion": "Ensure consistent orthographic rendering: either always use hyphens for morpheme boundaries or never. Currently, it's mixed.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#033",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "285",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'iwan suy' is glossed and translated as 'many times', but in the table (line 76), 'iwan' is listed as the prenominal for '6', and in the text (line 135), it is treated as a consonant-final stem. The example uses 'iwan' with a conventionalized 'many' meaning, which is explained in the text, but the gloss does not reflect the literal form, creating a mismatch between form and gloss.",
+    "quote": "iwan suy a=i=hotuyekar hine",
+    "suggestion": "Add a literal gloss or note that 'iwan' here has a conventionalized meaning of 'many', not 'six'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#032",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "286",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'many time' for 'iwan suy' does not reflect the morphemic segmentation: 'iwan' is 'six', 'suy' is 'time'. The gloss should reflect the literal form, even if the free translation uses 'many times'.",
+    "quote": "many time 4.A=4.O=call.out CONJ",
+    "suggestion": "Gloss as 'six time' and add a note or literal translation to explain the conventionalized meaning.",
+    "confidence": 0.99
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#031",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "433",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'three-HUM' for 're-n' is correct, but the morpheme 're' means 'three', and '-n' is the person-counting suffix. The gloss 'HUM' is used consistently, but again, 'CL' or 'HUM' without specification obscures the semantic contrast. The chapter's focus is on the thing/person split, so glosses should reflect that.",
+    "quote": "a=acautari re-n",
+    "suggestion": "Use 'PERS' or 'HUMAN' instead of 'HUM' if that's the convention, or keep 'HUM' but ensure all similar glosses do so. Currently it's consistent, but the label could be more transparent.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#030",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "160",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string uses 'sine-p', but the gloss is 'one-CL'. The suffix '-p' is the thing-counting classifier, not a general classifier. The gloss should reflect this semantic content, as the chapter emphasizes the thing/person distinction.",
+    "quote": "tuki sine-p",
+    "suggestion": "Change gloss from 'one-CL' to 'one-THING' or 'one-T'.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#029",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "223",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for 'asiknehotne-n' is 'five.twenty-HUM', but the morpheme string shows '-n', which is the person-counting suffix. The gloss 'HUM' is appropriate, but the free translation 'A hundred people (5×20) gathered' correctly reflects the human referent. However, the gloss does not indicate that '-n' is the person-counting suffix, which is a key point in the chapter. The gloss 'HUM' is acceptable, but could be more precise.",
+    "quote": "asiknehotne-n asir cise or ta uekarpa",
+    "suggestion": "Use 'HUM' consistently, but consider standardizing to 'PERS' or 'HUMAN' if other glosses do so; currently 'HUM' is used, so it's acceptable, but ensure consistency across examples.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#028",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "372",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'tu-p' is glossed as 'two-CL', but the classifier suffix '-p' is specifically the thing-counting classifier, not a general 'CL'. The gloss should reflect the semantic specificity (e.g., 'two-TH' or 'two-THING') to distinguish from '-n' (person-counting). Using 'CL' obscures the semantic contrast central to this chapter.",
+    "quote": "tu-p ne ukosaraye",
+    "suggestion": "Change gloss from 'two-CL' to 'two-THING' or 'two-T' to match the semantic content of -p.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#027",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "357",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string 'sine-n ne' includes a hyphenated suffix '-n', but the gloss 'one-HUM COP' does not align: 'sine' is glossed as 'one', '-n' as 'HUM', and 'ne' as 'COP'. However, in the free translation it is 'alone, by oneself', which is derived from 'being one person'. The gloss 'HUM' is correct for the person-counting suffix, but the literal structure 'one-HUM COP' suggests a copular clause, yet the free translation does not reflect the copula's role clearly. The gloss is technically correct, but the mismatch is between the literal gloss and the lexicalized meaning.",
+    "quote": "sine-n ne",
+    "suggestion": "Add a literal translation (lit) field to clarify: e.g., lit=\"being one person\", to bridge the gap between gloss and free translation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#020",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "271-272, 44",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text claims that the counting-off base uses 'ar', but the counting-off column in the table (Saru dialect) shows 'sinep' for 1, 'tup' for 2, etc., not 'ar'-based forms. This contradicts the table data.",
+    "quote": "the archaic root ar 'one' (also seen in ar-itak 'one word' and the counting-off base)",
+    "suggestion": "Either correct the text to specify that 'ar' appears only in certain dialects/compounds, or update the table to reflect 'ar'-based counting-off forms if evidence supports that.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#034",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "357",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string uses a hyphen in 'sine-n', but in the table (line 43), 'sinen' is written as one word. This reflects a difference between underlying form and surface form, but the lack of comment may confuse. The contraction to 'sinenne' is noted, but the intermediate form 'sinen' is not shown.",
+    "quote": "sine-n ne",
+    "suggestion": "Add a note that 'sine-n' contracts to 'sinen' before copula.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#024",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "504",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about the noun–numeral.noun–verb pattern is marked as 'corpus-suggested', but the only direct source cited is aynucorporadiscord (community discussion), not a systematic corpus. The epistemic tag may be inflated.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Change to '‹speculative›' or '‹community-observed›', or add a corpus citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#023",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "392, 544",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Metadata tags like 'asserted' (line 392) and 'asserted, attributed to Satō' (line 544) leak into the prose, reading as internal workflow notes rather than accessible citations.",
+    "quote": "asserted",
+    "suggestion": "Rephrase naturally, e.g., 'as reported by nukopoli (aynucorpora Discord 2024-11-09)' for line 392 and 'attributed to Satō by nukopoli (aynucorpora Discord 2024-11-17)' for line 544.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#018",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "599",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'usa' (various, several) parallels the prenominal numeral in modifier position. However, it also states that 'usa' is not a numeral in the classifier-paradigm sense. This could be confusing as 'prenominal numeral' is one of the key categories discussed. It would be clearer to specify *which* prenominal numeral it parallels, or to contrast it more directly with the prenominal numeral category.",
+    "quote": "Its syntactic distribution parallels the prenominal numeral in modifier position, but it is not a numeral in the classifier-paradigm sense treated above.",
+    "suggestion": "Clarify the comparison. For example: 'Its syntactic distribution parallels that of the bare cardinal stem when used prenominally, but it is not a numeral in the classifier-paradigm sense treated above.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#016",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "574",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'epitta' as closely related to 'opitta' and having partly overlapping distribution. However, 'epitta' is not further explained or exemplified in this section, making its relation and distribution unclear to the reader.",
+    "quote": "The closely related epitta 'throughout, across the whole' has partly overlapping distribution.",
+    "suggestion": "Provide a brief explanation or an example of 'epitta' to illustrate its function and how it overlaps with 'opitta'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#012",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "493",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for example 494 states that the noun-numeral.noun-verb sequence is described as 'at least as common in Hokkaido Ainu as in Japanese'. However, the example itself is marked as 'constructed'. This creates a slight contradiction: if it's constructed, it might not yet be established as 'at least as common'.",
+    "quote": "note=\"Community-discussed form (nukopoli, aynu-corpora Discord 2024-12-12, proposed): the noun–numeral.noun–verb sequence is described as at least as common in Hokkaido Ainu as in Japanese. Consistent with the appositional numeral syntax documented in Refsing (1986: 116) and the appositional-possession pattern in Bugaeva (2021).\"",
+    "suggestion": "Clarify the status of the example. If it's a proposed or illustrative form based on community discussion, the note could be adjusted to reflect this, e.g., 'Community-proposed form (nukopoli, aynu-corpora Discord 2024-12-12): this noun–numeral.noun–verb sequence is considered by some speakers to be as common in Hokkaido Ainu as in Japanese...'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#009",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "391",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'iyeere-p' for 'the third (thing)' and grades it as ‹speculative›, citing a community source. However, earlier in the chapter, particularly in the table (lines 55-58), 're' is presented as the base for 'three', and 'rep' and 'ren' are its derived forms for thing-counting and person-counting respectively. This new form 'iyeere-p' for 'third (thing)' seems to contradict or at least complicate the established system without clear explanation.",
+    "quote": "and the form iyeere-p has been reported for 'the third (thing)' <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-09, asserted) ‹speculative›.",
+    "suggestion": "Provide more context for 'iyeere-p'. Is it a variant of 'rep' for 'third', or a different construction entirely? If it's a speculative form, it might be better to either omit it or clearly state how it relates to the established forms for 'three'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#008",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "386",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "In section §<a href=\"#word-classifiers\">word-classifiers</a>, 'sine to' is defined as 'one day'. Here, it's stated that 'sine to' also serves as 'the first day'. This implies a dual function that wasn't explicitly mentioned earlier, potentially causing confusion about the primary meaning of 'sine to'.",
+    "quote": "the expression sine to serves both 'one day' and 'the first day'",
+    "suggestion": "Add a note in the §<a href=\"#word-classifiers\">word-classifiers</a> section explaining that 'sine to' can also function as 'the first day' when contextually appropriate, or clarify here that 'sine to' primarily means 'one day' but can be understood as 'the first day' in certain contexts.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#004",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "165",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the inverted order '*sinep tuki' is ungrammatical. However, the example itself uses 'tuki sinep' which is presented as correct. The note seems to be explaining a hypothetical ungrammatical form rather than directly commenting on the provided example, which could be confusing.",
+    "quote": "The numeral noun sinep is post-nominal. The inverted order *sinep tuki is ungrammatical: the numeral noun cannot precede its head (Nakagawa 2024: 465).",
+    "suggestion": "Rephrase the note to more clearly distinguish between the grammatical example ('tuki sinep') and the hypothetical ungrammatical form ('*sinep tuki'). For example: 'The numeral noun sinep is post-nominal, as shown. The inverted order *sinep tuki is ungrammatical: the numeral noun cannot precede its head (Nakagawa 2024: 465).'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#002",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "107",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The entry for 'wan' in the 'counting-off (Saru)' column includes a parenthetical note about a variant 'wanpe' for Chitose. However, the main entry 'wan' itself does not appear to follow the pattern of other entries in that column (e.g., 'sinep', 'tup', 'rep', 'inep', 'asik'). It's unclear if 'wan' is the correct form for the counting-off column or if the parenthetical note is meant to explain an anomaly.",
+    "quote": "wan (Chitose: wanpe)",
+    "suggestion": "Clarify the form for 'wan' in the 'counting-off (Saru)' column. If 'wanpe' is the standard form for this column, consider making it the primary entry and noting 'wan' as a variant, or vice versa, ensuring consistency with the table's established patterns.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#001",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "72",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'asik' for the value 5 in the 'counting-off (Saru)' column appears to be an outlier. Based on the pattern of other entries in this column (e.g., 'sinep', 'tup', 'rep', 'inep', 'iwan'), it might be expected to be 'asiknep' or similar, reflecting the base form 'asikne' with a suffix. This could be a typo or an irregular form.",
+    "quote": "asik",
+    "suggestion": "Verify the form 'asik' for value 5 in the 'counting-off (Saru)' column. If it's an irregular form, consider adding a note or checking if it's a known variant.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#026",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "77",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the table, the form for '6' under 'thing-counting' is given as 'iwanpe', but in the running text (line 135) it is written as 'iwan' (in a list of consonant-final stems). The suffix is correctly added, but the stem 'iwan' ends in 'n', a consonant, so the allomorphy rule is correctly applied. However, the table uses 'iwanpe' while other entries like 'tupesanpe' are fully hyphenated in morphemic structure elsewhere. No actual error, but formatting drift in morpheme boundary visibility.",
+    "quote": "<i lang=\"ain-Latn\">iwanpe</i>",
+    "suggestion": "Consider adding a hyphen in the table if morphemic transparency is intended: 'iwan-pe'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'iwaniw' is written as one word, but in the morpheme string of example 223, 'asiknehotne-n' uses a hyphen. Inconsistent representation of suffix attachment.",
+    "quote": "<i lang=\"ain-Latn\">iwaniw</i>",
+    "suggestion": "Use hyphens for suffixes in the table: 'iwan-iw'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#025",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "133",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation in the list of vowel-final stems: other similar lists in the chapter use hyphens between items (e.g., 'iwan, arwan, tupesan, sinepesan, wan' on line 135), but here commas are used without hyphens.",
+    "quote": "sine, tu, re, ine, asikne",
+    "suggestion": "Use consistent formatting: 'sine-tu-re-ine-asikne' or keep commas throughout; currently it drifts from the pattern in line 135.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation compared to line 133: this list uses commas without hyphens, while the parallel list on line 133 uses the same format, but the chapter elsewhere uses spaced items. However, the lack of consistency in punctuation style across these two lists is noticeable.",
+    "quote": "iwan, arwan, tupesan, sinepesan, wan",
+    "suggestion": "Standardize list formatting across the chapter — either use hyphens or commas with spaces consistently.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#022",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "318-319",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This comment is directed at the production pipeline (reminder to calibrate references), not the reader. It is a meta note about the state of the manuscript.",
+    "quote": "epub — chapter and page are uncalibrated in the current reading",
+    "suggestion": "Remove or rephrase for the reader, e.g., 'the exact chapter and page numbers are from the EPUB edition and may differ from print editions'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#021",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "468, 470",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Double section symbol ($$) in cross-reference at lines 468 and 470. Other cross-references (e.g., line 399, 581) are inconsistently formatted: some have § before the anchor with no § inside the link, others have § inside. This inconsistency should be normalized.",
+    "quote": "§<a href=\"#person-counting\">§person-counting</a>",
+    "suggestion": "Standardize cross-reference formatting: use either § before the anchor or inside the link text, not both, and apply uniformly.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#017",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "586",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'iwan' (6) has a secondary 'many' meaning. However, in the table (lines 76-79), 'iwan' is listed as the prenominal form for 6, and 'iwanpe' and 'iwaniw' are its thing-counting and person-counting forms. The 'counting-off (Saru)' form is also 'iwan'. This suggests 'iwan' is primarily associated with the numeral 6, and its 'many' meaning is a specialized development. The text does not explicitly link this 'many' meaning back to the numeral 6 in the table, potentially causing confusion.",
+    "quote": "The numeral 6, iwan, has developed a secondary universal-like meaning in oral-literary register.",
+    "suggestion": "Add a note to the table entry for 'iwan' (value 6) indicating its secondary meaning of 'many' in certain registers, or ensure the text clearly explains this dual meaning in relation to the numeral 6.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#015",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "552",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'tu hekattar' is '< hekaci-utar, with assimilation'. This implies that 'hekattar' is the plural form of 'hekaci'. However, the table on lines 518-541 shows 'hekaci' as singular and 'hekattar' as plural, which is consistent. The issue is that the text previously stated that small specified counts (2-3) typically co-occur with the singular form of a noun. Here, 'tu' (2) co-occurs with the plural 'hekattar'. This contradicts the rule stated earlier.",
+    "quote": "sine hekaci 'one child' but tu hekattar 'two children' (&lt; hekaci-utar, with assimilation) <Ref k=\"refsing1986\" p=\"117\" />.",
+    "suggestion": "Reconcile the contradiction regarding numeral count and noun plurality. Either the rule about small counts and singular nouns needs to be qualified, or the example 'tu hekattar' needs further explanation (e.g., if 'hekaci' has a special behavior or if 'tu' can also trigger plurality in some contexts).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#014",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "511",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that numerals from 6 upwards co-occur with the plural form. However, the table on lines 76-87 shows that for values 6, 7, 8, and 9, the prenominal forms are 'iwan', 'arwan', 'tupesan', and 'sinepesan' respectively. The text does not provide examples of these specific numerals co-occurring with plural noun forms, making the claim about '6 upwards' less substantiated within the immediate context.",
+    "quote": "while a large numeral (from 6 upwards), an indefinite quantity, or the quantifier inne 'many' co-occurs with the plural form.",
+    "suggestion": "Provide an example of a numeral from 6 upwards co-occurring with a plural noun form to support the claim, or adjust the threshold if it's not consistently applied from 6.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#013",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "500",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'a=kor mici akihi tun, ren an' is presented as a parallel to the noun-numeral.noun-verb pattern. However, 'a=kor mici akihi' is a relational noun phrase ('my father's brothers'), not a simple head noun. The numeral noun 'tun' (two) and 'ren' (three) follow this phrase. This structure is different from the 'noun + numeral.noun + verb' pattern described earlier, where the numeral noun is separated from its head by the verb. Here, the numeral noun follows a complex NP, and the verb 'an' comes after the numeral nouns.",
+    "quote": "Refsing's Shizunai data include the parallel a=kor mici akihi tun, ren an 'my father's brothers were two or three', where the numeral noun follows a relational noun phrase rather than a simple head <Ref k=\"refsing1986\" p=\"116\" />.",
+    "suggestion": "Clarify how this example is parallel. It demonstrates the appositional numeral noun following a noun phrase, but the separation by the verb is not present in the same way as in example 489. The note could explain that this shows the flexibility of the appositional numeral noun's placement, even after complex noun phrases.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#011",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "444",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text discusses whether a modifier can intervene between a head noun and an appositional numeral noun (e.g., 'noun + adjective + numeral.noun'). It states that Satō flags this as an open research question and reports no such example in his Chitose data. However, example 175 ('toonta pon kamuy re-p an ma') shows 'pon kamuy' (adjective + noun) followed by 're-p' (numeral noun), which seems to fit the pattern of an intervening modifier (the adjective 'pon') between the head noun ('kamuy') and the numeral noun ('re-p'). This contradicts Satō's reported lack of examples.",
+    "quote": "Satō reports no such example in his Chitose data and flags it explicitly <Ref k=\"sato2008\" p=\"256\" /> ‹contested›.",
+    "suggestion": "Reconcile the statement about Satō's findings with example 175. Either explain why example 175 does not count as an intervening modifier in this context, or revise the statement about Satō's data to reflect the presence of such examples.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#010",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "414",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 're ku=mataki' shows the possessive prefix 'ku=' intervening between the numeral 're' and the noun 'mataki'. However, 'ku=' is a prefix, and prefixes in Ainu typically attach directly to the word they modify. It's unusual for a prefix to be separated from its base by another word. This might be a misinterpretation of the structure or an error in the example.",
+    "quote": "Other modifiers can intervene between the numeral and the noun without ungrammaticality: re ku=mataki 'my three younger sisters' (possessive prefix between numeral and noun), tu pon cep 'two small fish' (adjective between numeral and noun) <Ref k=\"refsing1986\" p=\"115\" />.",
+    "suggestion": "Verify the structure of 're ku=mataki'. If 'ku=' is indeed a prefix, it should attach to 'mataki' or potentially 're'. If it's a separate word, its gloss and function need clarification. Alternatively, if the example is correct, the explanation of prefix behavior might need adjustment.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#007",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "264",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'rerko' is used for '3 days' and then for values 4 and 5 ('ine rerko', 'asikne rerko'). This implies 'rerko' is the base for 'days' from value 3 onwards. However, the preceding sentence mentions idiomatic forms 'tutko' (2 days) and 'rerko' (3 days). If 'rerko' is the base for 'days' from value 3, then 'ine rerko' (4 days) and 'asikne rerko' (5 days) are consistent. The potential inconsistency lies in whether 'rerko' is *only* for 3 days or if it's the general day-span word that is *used* for 3 days and then *combines* with other numerals for higher counts.",
+    "quote": "from value 4 onwards the additive pattern in rerko '4 days', asikne rerko '5 days' shows that rerko has bleached from '3 days' to the general day-span slot",
+    "suggestion": "Clarify the usage of 'rerko'. Is it a specific form for '3 days' that then becomes a general day-span word, or is it a general day-span word that is idiomatic for '3 days'? For example: 'For values 2 and 3, the idiomatic forms tutko '2 days' and rerko '3 days' are common. From value 4 onwards, the additive pattern uses rerko as the general day-span word: ine rerko '4 days', asikne rerko '5 days', showing that rerko has bleached from its specific meaning for '3 days' to a general day-span slot.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#006",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "214",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'asiknen okkayo' uses the person-counting suffix '-nen' (from '-n/-iw') for 'five men'. However, the text states that '-p/-pe' can also count human referents. This implies a potential for overlap or variation, but the example provided uses the '-n/-iw' suffix exclusively for humans, which might not fully illustrate the nuance of the distinction being weak or speakers varying.",
+    "quote": "asiknen okkayo 'five men'. Nakagawa notes that -p/-pe can also count human referents, but carries a brusquer register; in practice the distinction is weak and speakers vary <Ref k=\"nakagawa2024\" p=\"464, exx. 1070–1071\" />.",
+    "suggestion": "Consider providing an example where '-p/-pe' is used for humans, or further clarifying how the distinction is weak and speakers vary, perhaps by showing a sentence where either suffix could be used or where the choice affects the register.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#005",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "204",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '-iw' follows consonant-final stems for values 6-10. However, the table shows that for values 6-9, the person-counting suffix is '-iw' following vowel-final stems (e.g., 'iwaniw', 'arwaniw', 'tupesaniw', 'sinepesaniw'). For value 10, 'waniw' also follows a vowel-final stem. This contradicts the stated rule.",
+    "quote": "and -iw after consonant-final stems (values 6–10) <Ref k=\"nakagawa2024\" p=\"464\" />.",
+    "suggestion": "Correct the rule to state that '-iw' follows vowel-final stems for values 6-10, or adjust the examples to match the rule.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "numeral-classifiers-ordinals-and-quantifier-syntax~p1#003",
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "lines": "133",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '-p' follows vowel-final stems and lists examples 'sine, tu, re, ine, asikne' (values 1-5). However, 'tu' and 're' are consonant-final stems, not vowel-final. This contradicts the stated rule for allomorphy.",
+    "quote": "the allomorph -p follows vowel-final stems (values 1–5: i, tu, re, ine, asikne), and -pe follows consonant-final stems (values 6–10: iwan, arwan, tupesan, sinepesan, wan)",
+    "suggestion": "Correct the examples to accurately reflect the rule. For instance, 'tu' and 're' should be listed under consonant-final stems, or the rule should be adjusted to account for these exceptions.",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '-pe' follows consonant-final stems and lists examples 'iwan, arwan, tupesan, sinepesan, wan' (values 6-10). However, 'iwan', 'arwan', and 'wan' are vowel-final stems, not consonant-final. This contradicts the stated rule for allomorphy.",
+    "quote": "and -pe follows consonant-final stems (values 6–10: iwan, arwan, tupesan, sinepesan, wan)",
+    "suggestion": "Correct the examples to accurately reflect the rule. For instance, 'iwan', 'arwan', and 'wan' should be listed under vowel-final stems, or the rule should be adjusted to account for these exceptions.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

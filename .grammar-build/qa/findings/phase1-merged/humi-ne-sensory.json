@@ -1,0 +1,316 @@
+[
+ {
+  "id": "humi-ne-sensory~p1#005",
+  "chapter": "humi-ne-sensory",
+  "lines": "363-370",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'sound-POSS' is used for 'hum-i' in both instances. However, the note describes the sensation as a 'bodily transformation' and 'sensation', which aligns with the 'feeling' aspect of 'hum'. The gloss could be more comprehensive.",
+    "quote": "<Ex\n\t\t\tm=\"poro cep a=ne hum-i ne hum-i as orano a=yupi-hi os ma=an wa\"\n\t\t\tg=\"big fish 4.A=COP sound-POSS COP sound-POSS stand after.that 4=elder.brother-POSS follow swim=4.S CONJ\"\n\t\t\ttr=\"It felt as though I had become a great fish, and then I swam after my elder brother.\"\n\t\t\tcite=\"ilcaa1976\"\n\t\t\tdial=\"SAR\"\n\t\t\tplace=\"Kawakami Matsuko, uwepeker 'Folktale 11' (Saru); AA研 aa-irc/013, sent. 32\"\n\t\t\tnote=\"Dal Corso 2018: 333 (ex. 275 context). The direct humi ne presents the bodily transformation as directly felt; the immediately following humi as then hedges it as also inferential, conveying that the same sensation was simultaneously vivid and uncertain. Both evidentials draw on the non-verbal sensory channel.\n\t\t\t\" />",
+    "suggestion": "Consider using a gloss like 'sound/feeling-POSS' or 'sensory-POSS' for 'hum-i' to better represent the meaning in this context, as supported by the note."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'os ma=an wa', glossed as 'follow swim=4.S CONJ', but 'os' is not glossed as 'follow', and 'ma=an' is not 'swim'. 'ma=an' likely corresponds to 'os', not 'swim'.",
+    "quote": "g=\"big fish 4.A=COP sound-POSS COP sound-POSS stand after.that 4=elder.brother-POSS follow swim=4.S CONJ\"",
+    "suggestion": "Correct the gloss to align 'os' with 'follow' and 'ma=an' with 'swim=4.S'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#004",
+  "chapter": "humi-ne-sensory",
+  "lines": "344-351",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'sound-POSS' for 'hum-i' is used, but the note explains that 'humi as' is used for 'auditory impression'. Given that 'hum' also means 'feeling', the gloss might be too narrow.",
+    "quote": "<Ex\n\t\t\tm=\"aynu ek hum-i as\"\n\t\t\tg=\"person come sound-POSS stand\"\n\t\t\ttr=\"The sound of someone arriving was heard.\"\n\t\t\tcite=\"ilcaa1976\"\n\t\t\tdial=\"SAR\"\n\t\t\tplace=\"Kawakami Matsuko, uwepeker 'Folktale 8 (Part 2)' (Saru); AA研 aa-irc/007, sent. 200\"\n\t\t\tnote=\"The posture verb as replaces the copula ne: the narrator infers the person's arrival from an auditory impression rather than direct sight. The indirect humi as contrasts here with the direct humi ne that would encode the arrival as directly sensed.\n\t\t\t\" />",
+    "suggestion": "Consider using a gloss like 'sound/feeling-POSS' or 'sensory-POSS' for 'hum-i' to better reflect the broader semantic range of 'hum' as discussed in the chapter."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string is 'aynu ek hum-i as', where 'ek' means 'come', but the gloss does not align 'ek' with 'come' properly; 'aynu ek' should be 'person come', 'hum-i' as 'sound-POSS', 'as' as 'stand'. The alignment is correct, but the compound meaning 'the sound of someone arriving' is not reflected in the gloss.",
+    "quote": "g=\"person come sound-POSS stand\"",
+    "suggestion": "Adjust the gloss to reflect the nominalized meaning, e.g., 'person-come sound-POSS stand'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#003",
+  "chapter": "humi-ne-sensory",
+  "lines": "217-225",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'sound-POSS' for 'hum-i' is used, but the note clarifies that 'humi ne encodes the speaker's non-visual sensory access to that sound'. This implies 'feeling' or 'sensation' is also part of the meaning, not just 'sound'.",
+    "quote": "<Ex\n\t\t\tain=\"húmas humi ne kunak ku=ramu kor ku=soyne a p\"\n\t\t\tm=\"hum-as hum-i ne kunak ku=ramu kor ku=soyne a p\"\n\t\t\tg=\"sound-stand sound-POSS COP COMP 1SG.A=think while 1SG.S=go.outside PFV NMLZ\"\n\t\t\ttr=\"Thinking that it sounded like there was a noise, I went outside — but (nothing was there).\"\n\t\t\tcite=\"ilcaa1976\"\n\t\t\tdial=\"SAR\"\n\t\t\tplace=\"Kawakami Matsuko, uwepeker 'Folktale 8 (Part 1)' (Saru); AA研 aa-irc/006, sent. 358\"\n\t\t\tnote=\"The contracted form húmas (= hum-as 'a sound arises') provides the sensory stimulus; humi ne encodes the speaker's non-visual sensory access to that sound; kunak introduces the complement of the cognition verb ramu 'think/feel'. The nominalized tail p sets the clause as backgrounded against a disappointed expectation.\n\t\t\t\" />",
+    "suggestion": "Consider a more encompassing gloss for 'hum-i' such as 'sound/feeling-POSS' or 'sensory-POSS' to better reflect its function as described in the note."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'p' at the end, glossed as 'NMLZ', but in the free translation it is rendered as '— but (nothing was there)', which is not a nominalization. The gloss 'NMLZ' does not match the translation.",
+    "quote": "g=\"sound-stand sound-POSS COP COMP 1SG.A=think while 1SG.S=go.outside PFV NMLZ\"",
+    "suggestion": "Either correct the gloss of 'p' to reflect a contrastive or disappointed expectation, or adjust the translation to match a nominalization.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#001",
+  "chapter": "humi-ne-sensory",
+  "lines": "120-127",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'sound-POSS' for 'hum-i' does not fully capture the meaning of 'feeling' which is also part of the gloss for 'hum' (line 48) and is relevant to the gustatory stimulus in this example.",
+    "quote": "<Ex\n\t\tm=\"usa sisakpe a=i=y-e-re hum-i ne ya\"\n\t\tg=\"various delicious.things 4.A=4.O=EP-eat-CAUS sound-POSS COP Q\"\n\t\ttr=\"Whether I was given all sorts of delicious things to eat…\"\n\t\tcite=\"dalcorso2018:306\"\n\t\tdial=\"SAR\"\n\t\tplace=\"Wateke (Saru), Tamura audio materials; Dal Corso siglum TMA: 42\"\n\t\tnote=\"Dal Corso ex. 242 (DIR.FLT). A gustatory stimulus (being given food) appears under the sound/feeling-derived humi ne, illustrating the sensor-stimulus mismatch discussed at pp. 307, 311. The verb complex a=i=y-e-re is a causative benefactive ('caused to eat for 4O'); ya is a question/dubitative particle.\n\t\t\" />",
+    "suggestion": "Consider a gloss like 'sound/feeling-POSS' or 'sensory-POSS' for 'hum-i' in this context, or ensure the note adequately explains the extension of 'sound' to 'feeling' in this specific instance."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'EP' (epistemic particle?) which is not present in the morpheme string 'a=i=y-e-re'; the morphemes are a= (4.A), i= (4.O), y-e-re (eat-CAUS), so 'EP' is incorrect or unexplained.",
+    "quote": "g=\"various delicious.things 4.A=4.O=EP-eat-CAUS sound-POSS COP Q\"",
+    "suggestion": "Remove 'EP' from the gloss or correct it to match the morpheme breakdown.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#006",
+  "chapter": "humi-ne-sensory",
+  "lines": "437",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'hum' is presented without macrons, while other Ainu forms in the chapter consistently use macrons (e.g., 'humi', 'ruwe', 'siri', 'hawe').",
+    "quote": "<i lang=\"ain-Latn\">… ran hum ne awan</i>",
+    "suggestion": "Add a macron to 'hum' to make it 'hūm' for consistency with the chapter's orthographic conventions."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Ainu form 'ran' is not otherwise attested in the chapter; it may be a dialect variant, but it is not explained. Also, 'hum' is used instead of 'humi', which is consistent with the dialect note, but the romanization should be consistent with the chapter's standards.",
+    "quote": "… ran hum ne awan",
+    "suggestion": "Add a note explaining 'ran' or verify its form; ensure dialectal forms are consistently marked.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#014",
+  "chapter": "humi-ne-sensory",
+  "lines": "299",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string is 'usey ku=ku wa keraan hum-i', but the gloss has 'be.delicious' for 'keraan', which is not attested in the dictionary entries provided. Also, 'keraan' is not otherwise defined in the chapter.",
+    "quote": "g=\"tea 1SG.A=drink CONJ be.delicious sound-POSS\"",
+    "suggestion": "Verify and define 'keraan' or correct the gloss to match the known lexicon.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#012",
+  "chapter": "humi-ne-sensory",
+  "lines": "184",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'MIR' for 'awan', but 'awan' is not in the morpheme string 'rupus hum-i ne'. The example includes 'awan' in the free translation but not in the m/g/tr line; the m string lacks 'awan'.",
+    "quote": "g=\"freeze.solid sound-POSS COP MIR\"",
+    "suggestion": "Add 'awan' to the m and g strings to reflect its presence in the translation and note.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#011",
+  "chapter": "humi-ne-sensory",
+  "lines": "40",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The statement claims 'humi ne' is third-most frequent among direct forms, but only two other direct forms (ruwe ne, siri ne) are mentioned as higher; however, hawe ne is also a direct form, and if humi ne is third, hawe ne must be fourth. But then 'second-to-last in the full eight-form system' implies only one form is less frequent than humi ne, contradicting the earlier implication that hawe ne is less reliable and possibly less frequent. The ranking logic is inconsistent.",
+    "quote": "both counts place the sensory evidential as the third-most frequent direct form and second-to-last in the full eight-form system",
+    "suggestion": "Specify the full ranking or clarify that 'second-to-last' refers to the indirect forms as well, to resolve the contradiction.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#009",
+  "chapter": "humi-ne-sensory",
+  "lines": "198, 210-211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The same verb yaynu 'feel' is written with a hyphen (yay-nu) in the example gloss but without a hyphen (yaynu) in the prose description, resulting in inconsistent morpheme segmentation.",
+    "quote": "yay-nu=an (line 198) vs yaynu=an (line 210)",
+    "suggestion": "Standardize to yay-nu=an throughout, matching the example gloss and morpheme-boundary conventions.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#008",
+  "chapter": "humi-ne-sensory",
+  "lines": "216-217",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This example uses an 'ain' attribute (non-segmented form) that is not present in any other example in the chapter, creating formatting inconsistency.",
+    "quote": "<Ex ain=\"húmas humi ne kunak ku=ramu kor ku=soyne a p\" m=\"hum-as hum-i ne kunak ku=ramu kor ku=soyne a p\"",
+    "suggestion": "Remove the 'ain' attribute for consistency, since the segmented 'm' attribute is present and sufficient.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#013",
+  "chapter": "humi-ne-sensory",
+  "lines": "189",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The note states that 'awan' is present and carries the admirative value, but the m/g/tr lines do not include 'awan'. This contradicts the example's own structure.",
+    "quote": "note=\"Chiri 1936: 192, cited via Hirosawa 2026: 66. A bodily-tactile state (freezing solid) is encoded with humi ne; the admirative tail awan carries the surprised-retrospective value. The source noun hum 'feeling' grounds the tactile domain in the same formal noun that covers sound.\"",
+    "suggestion": "Include 'awan' in the m and g strings to match the note and translation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#010",
+  "chapter": "humi-ne-sensory",
+  "lines": "37",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The percentage (2.02%) does not match the fraction given: 45/2232 ≈ 2.016%, which rounds to 2.02%, so this is accurate. However, the following count for 'humi as' is 37, and the total of 45 + 37 = 82, but the text does not clarify whether the 2232 includes both direct and indirect forms or only direct. This creates ambiguity in interpreting the frequency claim.",
+    "quote": "45 of 2232 evidential tokens (2.02%)",
+    "suggestion": "Clarify whether the 2232 tokens include only direct evidentials or both direct and indirect, to avoid misinterpretation of the frequency ranking.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#007",
+  "chapter": "humi-ne-sensory",
+  "lines": "149-174, 192-194",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table separates 'internal emotional state' and 'internal bodily impression / intuition' as distinct domains, but the prose treats anger (an emotional state) as 'an internal bodily impression' without explicitly marking the distinction.",
+    "quote": "Internal emotional states use the same construction. In the following example, the narrator perceives anger welling up from within — an internal bodily impression",
+    "suggestion": "Either modify the prose to say 'internal emotional state' or clarify in the table that the two categories overlap.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "humi-ne-sensory~p1#002",
+  "chapter": "humi-ne-sensory",
+  "lines": "197-205",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'sound-POSS' for 'hum-i' is a simplification. The note explains this as an 'internal bodily impression with no external auditory source', which aligns with the 'feeling' aspect of 'hum'. The gloss could be more precise.",
+    "quote": "<Ex\n\t\t\tm=\"a=ruska hum-i ne pekor yay-nu=an\"\n\t\t\tg=\"4.A=be.angry sound-POSS COP like REFL-hear=4.S\"\n\t\t\ttr=\"It felt as though anger was welling up.\"\n\t\t\tcite=\"ilcaa1976\"\n\t\t\tdial=\"SAR\"\n\t\t\tplace=\"Kawakami Matsuko, uwepeker 'Folktale 13' (Saru); AA研 aa-irc/016, sent. 122\"\n\t\t\tnote=\"The fourth-person prefix a= marks the agent in the narrative frame. The periphrasis humi ne pekor yay-nu=an 'it felt as though' is a common collocation combining the sensory evidential with the simulative pekor and the reflexive-perception verb yaynu; see the section on frames for related variants.\n\t\t\t\" />",
+    "suggestion": "Consider changing the gloss for 'hum-i' to 'sound/feeling-POSS' or 'sensory-POSS' to better reflect the meaning in this context, as indicated by the note and translation."
+   }
+  ]
+ }
+]

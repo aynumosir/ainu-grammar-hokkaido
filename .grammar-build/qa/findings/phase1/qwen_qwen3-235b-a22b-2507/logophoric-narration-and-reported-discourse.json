@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "39",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">se</i> 'make a sound / say' + <i lang=\"ain-Latn\">kor</i> 'while / while holding'",
+  "issue": "The gloss 'while holding' for <i lang=\"ain-Latn\">kor</i> is inconsistent with the combined meaning 'while saying' derived in the sentence. The component 'holding' does not clearly contribute to the resulting meaning, creating a mismatch between the compositional gloss and the derived meaning.",
+  "suggestion": "Revise the gloss of <i lang=\"ain-Latn\">kor</i> to better align with the resulting meaning, e.g., 'while doing' or 'during the act of'.",
+  "confidence": 0.85,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "111",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "transitive (+2)",
+  "issue": "The notation '(+2)' is used only for <i lang=\"ain-Latn\">ye</i> and <i lang=\"ain-Latn\">ramu</i>, but not consistently applied to other transitive verbs in the same table. This creates formatting drift.",
+  "suggestion": "Apply '(+2)' consistently to all transitive verbs in the table or remove it entirely if not needed for others.",
+  "confidence": 0.7,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "164",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "intransitive or lexicalized <i lang=\"ain-Latn\">ye</i>",
+  "issue": "The table lists <i lang=\"ain-Latn\">ye</i> as transitive, but the text describes it as following <i lang=\"ain-Latn\">sekor</i> in a lexicalized frame. This contradicts the earlier claim that <i lang=\"ain-Latn\">sekor</i> co-occurs only with intransitive verbs, except for the lexicalized exception. The table should reflect this nuance.",
+  "suggestion": "Revise the table cell for <i lang=\"ain-Latn\">ye</i> to read 'transitive (lexicalized exception)' to match the prose.",
+  "confidence": 0.95,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "241",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The factbase is candid about what the available evidence does not settle.",
+  "issue": "The term 'factbase' is a pipeline register leak, referring to internal data structures rather than the reader's understanding.",
+  "suggestion": "Replace 'factbase' with 'available evidence' or 'corpus'.",
+  "confidence": 0.9,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "279",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The chapter's conclusion is that a genre-convention analysis accounts for the distribution but does not preclude a logophoric analysis of the form: the two claims are compatible if the logophoric device originated in the narrative genre and extended into everyday quotation ‹speculative›.",
+  "issue": "The phrase 'The chapter's conclusion' is meta-commentary about the chapter's structure, not content, and leaks editorial perspective.",
+  "suggestion": "Rephrase to 'A conclusion is that...' or 'One may conclude that...'.",
+  "confidence": 0.8,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "364",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the nominalizer <i lang=\"ain-Latn\">p</i> is zero-valent — it is not the object of <i lang=\"ain-Latn\">ye</i>",
+  "issue": "This contradicts the earlier description of <i lang=\"ain-Latn\">ye</i> as transitive (+2), which implies it requires an object. If <i lang=\"ain-Latn\">p</i> is not the object, then the valency of <i lang=\"ain-Latn\">ye</i> is not satisfied, creating a structural contradiction.",
+  "suggestion": "Clarify how the valency of <i lang=\"ain-Latn\">ye</i> is satisfied if <i lang=\"ain-Latn\">p</i> is not its object, possibly by specifying an implicit or null object.",
+  "confidence": 0.9,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "387",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The equivalent in Sakhalin varieties (<i lang=\"ain-Latn\">nah</i>), occupying the same functional slot, is cited for typological contrast only",
+  "issue": "The claim about Sakhalin <i lang=\"ain-Latn\">nah</i> lacks a citation, despite being a factual statement about another dialect.",
+  "suggestion": "Add a citation for the use of <i lang=\"ain-Latn\">nah</i> in Sakhalin varieties.",
+  "confidence": 0.75,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

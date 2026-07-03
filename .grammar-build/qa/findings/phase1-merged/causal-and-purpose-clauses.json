@@ -1,0 +1,620 @@
+[
+ {
+  "id": "causal-and-purpose-clauses~p1#006",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "171-178",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'COP' is given for 'haw-e ne' and 'pe ne'. The note explains 'haw-e ne' as 'voice-POSS COP: 'it is said that'' and 'pe ne' as a 'formal-noun predicate'. The gloss 'COP' might not fully capture the evidential and nominalizing functions described in the note.",
+    "quote": "m=\"e=hosipi haw-e ne kusu tane anakne a=eyayramkar pe ne na\"\ng=\"2SG.S=return voice-POSS COP CONJ now TOP 4.A=give.up NMLZ COP FIN\"\ntr=\"Because you came back (as they say), now I give up.\"\nnote=\"The reportative evidential haw-e ne (voice-POSS COP: 'it is said that') precedes kusu, marking the cause proposition as known by report before kusu signals it as the reason for giving up. The matrix clause closes on a formal-noun predicate pe ne with the final particle na.\"",
+    "suggestion": "Consider more specific glosses for 'haw-e ne' and 'pe ne' that reflect their evidential and nominalizing roles, or ensure the note adequately explains these functions.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Kusu is glossed as 'CONJ' but the note says it marks the cause proposition. The free translation starts with 'Because', so the gloss should be 'CAUS' or 'REAS'.",
+    "quote": "m=\"e=hosipi haw-e ne kusu tane anakne a=eyayramkar pe ne na\" g=\"2SG.S=return voice-POSS COP CONJ now TOP 4.A=give.up NMLZ COP FIN\"",
+    "suggestion": "Change gloss of kusu from 'CONJ' to 'CAUS' or 'REAS'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'voice-POSS COP' is used for 'haw-e ne', but 'haw-e' is segmented as 'haw-e' while the gloss implies 'haw' + '-e'. The morpheme boundary should be clarified in segmentation.",
+    "quote": "haw-e ne",
+    "suggestion": "Revise 'm' to 'e=hosipi haw=e ne kusu...' or 'haw-e' to 'haw=e' if possessive suffix is '-e'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#005",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "139-146",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'COP' is given for 'p ne', which is described in the note as a 'formal-noun predicate' that 'nominalizes the cause clause'. The translation 'Because I raised them in Japanese' implies a completed action, and 'p ne' seems to function more like a nominalizer or a copula that completes the nominalized clause, rather than just a simple 'COP'. The gloss might be too simplistic.",
+    "quote": "m=\"sisam itak ani ku=respa p ne kusu aynu itak sinep ka erampewtek pa\"\ng=\"Japanese language INS 1SG.A=raise NMLZ COP CONJ Ainu language one EMPH not.understand PL\"\ntr=\"Because I raised them in Japanese, they do not understand a single word of Ainu.\"\nnote=\"The formal-noun predicate p ne nominalizes the cause clause; kusu marks it as causal. The plural marker pa on the matrix verb reflects multiple objects. The instrumental ani marks the means of upbringing.\"",
+    "suggestion": "Consider a more specific gloss for 'p ne' that reflects its nominalizing function in this context, or elaborate on its role in the note.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Kusu is glossed as 'CONJ' but the note says it marks the clause as causal. The free translation starts with 'Because', so the gloss should reflect the causal function (e.g., 'CAUS' or 'REAS').",
+    "quote": "m=\"sisam itak ani ku=respa p ne kusu aynu itak sinep ka erampewtek pa\" g=\"Japanese language INS 1SG.A=raise NMLZ COP CONJ Ainu language one EMPH not.understand PL\"",
+    "suggestion": "Change gloss of kusu from 'CONJ' to 'CAUS' or 'REAS'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'NMLZ COP' is assigned to 'p ne', but 'p' is not a standard form; it should be 'pu' or 'pi' depending on dialect. The form 'p' may be a typo or orthographic variant not otherwise attested.",
+    "quote": "p ne",
+    "suggestion": "Verify form 'p' in source; if correct, annotate orthographic variation; if not, correct to 'pu ne' or 'pi ne'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#004",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "123-129",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' appears twice for 'wa' and 'hine', but the translation 'Wanting to pursue and go, (she) made the boat ready.' does not clearly indicate a conjunctive function for 'hine'. The note clarifies 'hine links that preparation to the next event in the narrative chain', suggesting a connective role, but the gloss 'CONJ' for 'hine' might be misleading or incomplete.",
+    "quote": "m=\"kese a=anpa wa arpa=an rusuy kusu cip etoko a=oyki hine\"\ng=\"behind 4.A=pursue CONJ go=4.S DES CONJ boat prow 4.A=prepare CONJ\"\ntr=\"Wanting to pursue and go, (she) made the boat ready.\"",
+    "suggestion": "Re-evaluate the gloss for 'hine' to better reflect its narrative connective function, or clarify its role in the note.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'CONJ' for both wa and kusu, but the note says 'Kusu marks the desiderative clause... as the reason'. The gloss does not distinguish kusu from wa (both are 'CONJ'), losing the causal meaning. The free translation 'Wanting to pursue and go' also does not explicitly show the causal link.",
+    "quote": "m=\"kese a=anpa wa arpa=an rusuy kusu cip etoko a=oyki hine\" g=\"behind 4.A=pursue CONJ go=4.S DES CONJ boat prow 4.A=prepare CONJ\"",
+    "suggestion": "Gloss kusu as 'CAUS' or 'REAS' to match its function, and adjust the free translation to make the causal relation clearer (e.g., 'Because (she) wanted to pursue and go, (she) made the boat ready.').",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'DES' is used for 'rusuy', but 'rusuy' is not morphemically segmented in 'm'. The word 'rusuy' should be segmented into 'ru=suy' or otherwise aligned with the gloss.",
+    "quote": "kese a=anpa wa arpa=an rusuy kusu cip etoko a=oyki hine",
+    "suggestion": "Revise 'm' to 'kese a=anpa wa arpa=an ru=suy kusu cip etoko a=oyki hine' to match the gloss 'DES'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#012",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "302-305",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"aynucorporadiscord\" /> is placed after the phrase 'do not fully adjudicate', and the epistemic tag ‹speculative› follows. It's slightly ambiguous whether the citation specifically supports the 'community-proposed extension' or the lack of adjudication in published sources, or both.",
+    "quote": "Nukopoli (aynu-corpora Discord, 2024) characterizes <i lang=\"ain-Latn\">kusu ne</i> as covering both intentionality and tense, analogous to English <em>will</em>; this is a community-proposed extension of the description that available published sources do not fully adjudicate (<Ref k=\"aynucorporadiscord\" />) ‹speculative›.",
+    "suggestion": "Ensure the citation clearly supports the claim it's attached to, especially the 'community-proposed extension' aspect.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is attributed to a Discord source and marked as ‹speculative›, which is appropriate. However, the reference to 'available published sources do not fully adjudicate' is vague and could be seen as a pipeline register leak (meta-commentary about source availability).",
+    "quote": "Nukopoli (aynu-corpora Discord, 2024) characterizes kusu ne as covering both intentionality and tense, analogous to English will; this is a community-proposed extension of the description that available published sources do not fully adjudicate (<Ref k=\"aynucorporadiscord\" />) ‹speculative›.",
+    "suggestion": "Rephrase to avoid meta-commentary: e.g., '...a community-proposed extension not yet confirmed in published sources.'",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹speculative› is correctly applied, but the citation is only to a Discord source. This is appropriate for speculative status, but the tag should not be removed without stronger evidence.",
+    "quote": "Nukopoli (aynu-corpora Discord, 2024) characterizes kusu ne as covering both intentionality and tense... (Ref k=\"aynucorporadiscord\" />) ‹speculative›",
+    "suggestion": "Retain ‹speculative› and Discord citation, but flag for fact-checking in later stage.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#010",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "266-267",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The statement about <i lang=\"ain-Latn\">sorekusu</i> being a revitalization-context form is followed by a citation <Ref k=\"aynucorporadiscord\" /> and an epistemic tag ‹contested›. However, the preceding sentence, which contrasts <i lang=\"ain-Latn\">sorekusu</i> with classical forms and Nakagawa/Refsing's documented forms, lacks a citation.",
+    "quote": "The classical Hokkaido equivalent is the sentence-initial free <i lang=\"ain-Latn\">kusu</i> documented by Nakagawa, or its Shizunai counterpart <i lang=\"ain-Latn\">nekusu</i>; <i lang=\"ain-Latn\">sorekusu</i> is a revitalization-context form that integrates the Japanese demonstrative as a topic antecedent.",
+    "suggestion": "Add a citation to support the claims about classical Hokkaido and Shizunai forms if they are not covered by the Nakagawa or Refsing citations already mentioned in the paragraph.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about sorekusu is attributed to a Discord source and marked as ‹contested›, but the epistemic tag is 'contested' rather than 'speculative' or 'original-needs-review'. The tag 'contested' is not in the list of allowed epistemic grades (consensus, contested, corpus-confirmed, corpus-suggested, speculative, original-needs-review). Actually 'contested' is listed. However, the claim is supported only by a Discord attribution, which typically warrants 'speculative' or 'original-needs-review' rather than 'contested' (which implies scholarly disagreement).",
+    "quote": "sorekusu — Japanese それ 'that' plus Ainu kusu — occupies the same slot as a sentence opener meaning 'that is why; therefore' (thegodofneet, aynu-corpora Discord 2025) ‹contested›.",
+    "suggestion": "Change ‹contested› to ‹speculative› or ‹original-needs-review›, or provide a published source that contests the claim.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about 'sorekusu' is tagged with ‹contested› but supported only by a Discord attribution, which is insufficient for a contested claim. Epistemic tag should reflect lower confidence.",
+    "quote": "(<Ref k=\"aynucorporadiscord\" />, thegodofneet, aynu-corpora Discord 2025)",
+    "suggestion": "Change ‹contested› to ‹speculative› or add supporting published source.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#008",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "210-215",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'wa' is 'CONJ' twice, and the note explains that 'wa closes the first clause as a completed event'. While 'CONJ' can indicate a conjunction, it doesn't fully capture the specific function of 'wa' as signaling a completed event that serves as a cause. The second 'CONJ' for 'wa' might be redundant or misleading.",
+    "quote": "m=\"e=ek wa kusu ku=hosipi\"\ng=\"2SG.S=come CONJ CONJ 1SG.S=return\"\ntr=\"Because you came, I returned.\"\nconstructed\nnote=\"Wa kusu: wa closes the first clause as a completed event; kusu marks it as the cause of the return. The same sentence with plain kusu (e=ek kusu ku=hosipi) is grammatical but leaves the purpose reading marginally open; wa kusu disambiguates in favour of cause. Constructed after Nakagawa (2024: 353) and Ijäs (2023).\"",
+    "suggestion": "Consider a more specific gloss for 'wa' that reflects its role in signaling a completed event, or clarify its function in the note.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Both wa and kusu are glossed as 'CONJ', but the note says 'wa closes the first clause as a completed event; kusu marks it as the cause'. The gloss should distinguish them: wa as 'SEQ' or 'CONJ' and kusu as 'CAUS' or 'REAS'.",
+    "quote": "m=\"e=ek wa kusu ku=hosipi\" g=\"2SG.S=come CONJ CONJ 1SG.S=return\"",
+    "suggestion": "Gloss wa as 'SEQ' (sequential) and kusu as 'CAUS' or 'REAS'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ CONJ' for 'wa kusu' does not reflect their grammatical roles: 'wa' is a sequential particle, 'kusu' is causal. Glossing both as 'CONJ' obscures functional distinction.",
+    "quote": "e=ek wa kusu ku=hosipi",
+    "suggestion": "Change gloss to 'SEQ CZ' or similar to distinguish 'wa' (sequential) from 'kusu' (causal).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#018",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "288-296",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Kusu is glossed as 'PURP' (purpose), but the construction kusu ne is described as intentive/prospective ('intends to go'). The gloss 'PURP' suggests purpose rather than intentive modality. The note says 'intends to go', so the gloss should reflect the intentive meaning.",
+    "quote": "m=\"paye=an kusu ne na\" g=\"go=4.S PURP COP FIN\"",
+    "suggestion": "Gloss kusu ne as 'INTENT' or 'PROSP' (prospective) rather than 'PURP COP'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'PURP COP FIN' assigns 'PURP' to 'kusu', but in this context 'kusu ne' is an intentive auxiliary, not a purposive marker. The gloss should reflect 'INTENT' or 'FUT'.",
+    "quote": "paye=an kusu ne na",
+    "suggestion": "Change gloss from 'PURP' to 'INTENT' or 'FUT' to distinguish intentive auxiliary from adverbial 'kusu'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#017",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "88-96",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'PURP' for kusu, but the free translation 'went out to gather firewood' implies purpose. However, the note says 'Kusu marks the preceding activity as the purpose', which is consistent. No mismatch found.",
+    "quote": "m=\"nina=an kusu soyne=an\" g=\"gather.firewood=4.S PURP go.out=4.S\" tr=\"(Someone) went out to gather firewood.\"",
+    "confidence": 0
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'PURP' is used in the example, but the translation implies a purpose reading that should be reflected in the glossing of 'kusu' as specifically purposive, yet the gloss does not distinguish this from causal use. The morpheme 'kusu' is polysemous, but the gloss should align with the purpose reading in context.",
+    "quote": "nina=an kusu soyne=an",
+    "suggestion": "Change gloss from 'PURP' to 'PURP' only if consistently used for purpose; otherwise, ensure 'kusu' is glossed uniformly as 'PURP/CNZ' or similar to reflect polysemy, per source conventions.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#007",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "184-186",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the intentive <i lang=\"ain-Latn\">kusu ne</i> requires the arrangement <i lang=\"ain-Latn\">kusu ne ruwe ne</i> and is not licensed after <i lang=\"ain-Latn\">ruwe ne</i>, making <i lang=\"ain-Latn\">*ruwe ne kusu ne</i> ungrammatical. This implies that <i lang=\"ain-Latn\">ruwe ne</i> should precede <i lang=\"ain-Latn\">kusu ne</i>. However, the preceding sentence states that <i lang=\"ain-Latn\">ruwe ne kusu</i> is well-formed and frequently attested, which seems to contradict the ordering constraint described for <i lang=\"ain-Latn\">kusu ne</i>.",
+    "quote": "however, the intentive <i lang=\"ain-Latn\">kusu ne</i> requires an opposite arrangement — <i lang=\"ain-Latn\">kusu ne ruwe ne</i> — and is not licensed after <i lang=\"ain-Latn\">ruwe ne</i>, making <i lang=\"ain-Latn\">*ruwe ne kusu ne</i> ungrammatical",
+    "suggestion": "Clarify the ordering rules for both the causal <i lang=\"ain-Latn\">kusu</i> and the intentive <i lang=\"ain-Latn\">kusu ne</i> in relation to the evidential <i lang=\"ain-Latn\">ruwe ne</i> to resolve the apparent contradiction.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#025",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "7",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Slightly awkward phrasing; 'spans two semantic relations' could be 'covers two semantic domains'.",
+    "quote": "stands out as the only member whose primary meaning spans two semantic relations",
+    "suggestion": "Rephrase to 'covers two semantic domains: reason and purpose'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#024",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'sorekusu' combines Japanese 'sore' with Ainu 'kusu', but is written as one word. Should be hyphenated or marked as compound.",
+    "quote": "sorekusu",
+    "suggestion": "Write as 'sore-kusu' or annotate as Japanese-Ainu compound.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#023",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "239",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'wakusu' is written without hyphenation, but compounds like 'wa kusu' are elsewhere written with space. Orthographic inconsistency between 'wa kusu' and 'wakusu'.",
+    "quote": "wakusu",
+    "suggestion": "Standardize to 'wa kusu' unless 'wakusu' is a lexicalized form; if lexicalized, mark as such.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'nepkus' appears without macron, but if phonemic /nepkuːs/, should be 'nepkuus' or 'nepkūs'. Inconsistent with standard Ainu romanization.",
+    "quote": "nepkus",
+    "suggestion": "Check source for vowel length; if long, add macron: 'nepkūs'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#021",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "263-270",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'partially translated form' is unclear. Does it mean a calque or a mixed-language form?",
+    "quote": "In contemporary teaching Ainu and learner speech the partially translated form sorekusu — Japanese それ 'that' plus Ainu kusu — occupies the same slot as a sentence opener meaning 'that is why; therefore'",
+    "suggestion": "Clarify: 'a mixed-language form combining Japanese sore 'that' with Ainu kusu'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#020",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "181-190",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence is convoluted. 'The characterization is corroborated by the published account' followed by a Discord reference is contradictory (Discord is not a published account). Also, the reference order is unusual (Discord ref before the author name).",
+    "quote": "Nukopoli characterized this as a scope hierarchy in which the intentive modal must scope outside the evidential, and the characterization is corroborated by the published account (<Ref k=\"aynucorporadiscord\" />, nukopoli, aynu-corpora Discord 2024).",
+    "suggestion": "Rephrase: 'Nukopoli (aynu-corpora Discord 2024) characterized this as a scope hierarchy... This characterization is consistent with the published account (Nakagawa 2024: 393).'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#019",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "160-167",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'closes on an evidential nominalizer' is slightly awkward. 'Closes with' or 'ends with' would be clearer.",
+    "quote": "A conjunctive particle attaches outside the clause-final evidential frame. When a cause clause closes on an evidential nominalizer such as ruwe ne or hawe ne, kusu follows the evidential rather than intervening between the verb and it.",
+    "suggestion": "Change 'closes on' to 'ends with' or 'closes with'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#015",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "359-361",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The statement that the Sakhalin particle is a 'false cognate' and functionally divergent is supported by <Ref k=\"nakagawa2024\" p=\"344\" />. However, the subsequent sentences that refer to cross-references (<Xr ch=\"clause-linkage-overview\" s=\"dialect-edges\" /> and <Xr ch=\"simultaneous-kor-clauses\" />) do not have explicit citations, although they are related to the preceding claim.",
+    "quote": "The Sakhalin particle is therefore a false cognate for Hokkaido purposes: segmentally identical but functionally divergent. This contrast is summarized in <Xr ch=\"clause-linkage-overview\" s=\"dialect-edges\" /> and is relevant to <Xr ch=\"simultaneous-kor-clauses\" />.",
+    "suggestion": "Ensure the cross-references are appropriately linked to the supporting evidence, or add citations if they introduce new information not covered by <Ref k=\"nakagawa2024\" p=\"344\" />.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#014",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "348",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"353\" /> is placed at the end of the sentence. While it likely supports the entire statement, it's good practice to ensure the scope is clear, especially if other sources were consulted for different parts of the sentence.",
+    "quote": "<i lang=\"ain-Latn\">Hi kusu</i> is confirmed for Saru and Chitose; Nakagawa flags it as rare and dialectally variable outside those varieties <Ref k=\"nakagawa2024\" p=\"353\" />.",
+    "suggestion": "Ensure the citation adequately covers the entire statement about the distribution of <i lang=\"ain-Latn\">hi kusu</i>.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#013",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "314-317",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"refsing1986\" p=\"252\" /> is placed after the description of <i lang=\"ain-Latn\">kusu ki</i>. The following sentence, which makes a broader claim about grammaticalization paths and is marked ‹corpus-suggested›, lacks a specific citation. It's implied to be supported by Refsing, but a direct link would be stronger.",
+    "quote": "Refsing identifies a set of lexicalized compounds built on <i lang=\"ain-Latn\">kusu</i>/<i lang=\"ain-Latn\">kus</i> in Shizunai: <i lang=\"ain-Latn\">kusu ki</i>, where the generic verb <A w=\"ki\" gl=\"do\" /> replaces the copula <Ref k=\"refsing1986\" p=\"252\" />. This is a dialect-specific instantiation of the same purposive-to-intentive grammaticalization path ‹corpus-suggested›.",
+    "suggestion": "Add a citation to support the claim about the grammaticalization path, or ensure the existing citation implicitly covers it.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#011",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "283-285",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"ijas2023\" /> is placed at the end of the sentence. While it likely supports the entire statement about Ijäs teaching the reduced form, it's good practice to ensure the scope is clear, especially if other sources were consulted for different parts of the sentence.",
+    "quote": "Ijäs teaches the phonologically reduced form <i lang=\"ain-Latn\">kusne</i> alongside the fuller <i lang=\"ain-Latn\">kusu ne</i>, reflecting reduction in everyday speech <Ref k=\"ijas2023\" />.",
+    "suggestion": "Ensure the citation adequately covers the entire statement about Ijäs's teaching.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#009",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "238-240",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"refsing1986\" p=\"252\" /> is placed at the end of the sentence, after listing three lexicalized compounds. It's unclear if this single citation supports the existence and meaning of all three compounds, or just the last one mentioned.",
+    "quote": "<i lang=\"ain-Latn\">nekusu</i> 'therefore', <i lang=\"ain-Latn\">wakusu</i> 'so that', and the interrogative <i lang=\"ain-Latn\">nepkus</i> 'why' <Ref k=\"refsing1986\" p=\"252\" />.",
+    "suggestion": "If <Ref k=\"refsing1986\" p=\"252\" /> supports all three, it's fine. If it only supports 'nepkus', then citations for 'nekusu' and 'wakusu' should be added or clarified.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#003",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "45-46",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical note 'with final-vowel devoicing' is not enclosed in italics or a language tag, unlike other explanatory notes.",
+    "quote": "variant <i lang=\"ain-Latn\">kus</i> with final-vowel devoicing",
+    "suggestion": "Wrap 'with final-vowel devoicing' in italics or a language tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#001",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "12",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese characters '原因・目的' are not enclosed in italics or a language tag, unlike other foreign language terms in the text.",
+    "quote": "group ⑥ (原因・目的, 'cause/purpose')",
+    "suggestion": "Wrap '原因・目的' in `<i lang=\"ja\">` or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#022",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "344-363",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table on lines 33-65 lists wa kusu as 'reason only' and requiring a completed event. If Sakhalin kusu covers the result-state range of wa, this is a contrast, but the text says Sakhalin kusu covers what Hokkaido splits between kor and wa. However, the table shows wa as sequential/completed, not result-state. The description of wa in the table is 'completed/actualized event required', which is consistent with result-state. No direct contradiction, but the phrasing could be clearer.",
+    "quote": "In Sakhalin Ainu, kusu does not mark cause or purpose but instead covers the action-continuation and result-state range that Hokkaido splits between kor (simultaneous action) and wa (result-state after completion)",
+    "suggestion": "No change needed, but ensure consistency with the table's description of wa.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#016",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "8-20",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table on lines 33-65 lists wa kusu and hi kusu as 'reason only', but the overview text says Nakagawa assigns them to a 'cause/purpose' group. If the group label includes 'purpose', this contradicts the claim that these compounds are reason-only.",
+    "quote": "Nakagawa assigns it, together with wa kusu and hi kusu, to group ⑥ (原因・目的, 'cause/purpose') of his seven-way semantic taxonomy of conjunctive particles",
+    "suggestion": "Either clarify that Nakagawa's group label covers both but the compounds themselves are restricted, or adjust the table to reflect the group assignment.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "causal-and-purpose-clauses~p1#002",
+  "chapter": "causal-and-purpose-clauses",
+  "lines": "27-29",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"ijas2023\" /> is attached to the end of the sentence, but it is unclear if it supports the entire statement or just the latter part. Given that <Ref k=\"nakagawa2024\" p=\"353\" /> is also present, it's possible <Ref k=\"ijas2023\" /> is meant to support a specific aspect or the entire claim.",
+    "quote": "<i lang=\"ain-Latn\">Hi kusu</i> is the formal-noun construction <i lang=\"ain-Latn\">hi</i> ('the fact/time of') + <i lang=\"ain-Latn\">kusu</i> and similarly carries reason only <Ref k=\"nakagawa2024\" p=\"353\" />; <Ref k=\"ijas2023\" />.",
+    "suggestion": "Clarify the scope of the <Ref k=\"ijas2023\" /> citation, potentially by moving it or adding another citation if it supports a different part of the sentence.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

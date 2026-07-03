@@ -1,0 +1,1310 @@
+[
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#041",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "129",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same tag inflation: a Discord message is the sole support for the claim, yet it is marked ‹corpus-confirmed›.",
+    "quote": "both show the [j] glide <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.",
+    "suggestion": "Change the tag to ‹speculative› or ‹community-report›.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue: Discord attribution labeled as ‹corpus-confirmed›. This is the third instance and suggests systemic over-tagging.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›",
+    "suggestion": "Change to ‹speculative› or a more appropriate tag reflecting non-corpus community input.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#040",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "123-124",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The same epistemic-tag inflation: the claim about ungrammatical forms is partly referenced to a Discord message and tagged ‹corpus-confirmed›. The Discord source does not constitute a corpus.",
+    "quote": "neither *ku=ykra nor *k=ikra arises <Ref k=\"nakagawa2024\" p=\"53\" />; <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.",
+    "suggestion": "Downgrade to ‹speculative› or adjust the tag to match the source type.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Again, a Discord user comment is tagged with ‹corpus-confirmed›, which overstates the evidential status. This is a repeated pattern and constitutes epistemic inflation.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›",
+    "suggestion": "Replace ‹corpus-confirmed› with ‹speculative› or introduce a new tag like ‹community-observation› for Discord sources.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#039",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "88-91",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim supported only by a Discord message. The tag overstates the evidence level (a single community observation, not a corpus study).",
+    "quote": "Learners of Saru and Chitose frequently overgeneralize the deletion … <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.",
+    "suggestion": "Replace ‹corpus-confirmed› with ‹speculative› or a more precise tag such as ‹community-report›.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim supported only by a Discord attribution, which is inherently anecdotal and not verifiable as corpus data. This inflates the evidential strength.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›",
+    "suggestion": "Change ‹corpus-confirmed› to ‹community-observation› or ‹speculative› to match the source type.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#027",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "283",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent marks in 'iˈruska-ˌan' are not explained. It would be helpful to clarify what these marks represent, especially the secondary accent.",
+    "quote": "iˈruska-ˌan",
+    "suggestion": "Explain the accent marks.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark in 'ˈcis-an' is not explained. It would be helpful to clarify what this mark represents.",
+    "quote": "ˈcis-an",
+    "suggestion": "Explain the accent mark.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of IPA-like stress markers (ˈ, ˌ) in an Ainu romanization string is inconsistent with standard orthographic practice, which does not mark secondary stress. This may mislead readers about conventional spelling.",
+    "quote": "<i lang=\"ain-Latn\">iˈruska-ˌan</i>",
+    "suggestion": "Write as <i lang=\"ain-Latn\">iruska-an</i> and describe the accent pattern in prose.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as above: leading IPA primary stress marker in a romanized Ainu form. Not standard in orthography.",
+    "quote": "<i lang=\"ain-Latn\">ˈcis-an</i>",
+    "suggestion": "Use <i lang=\"ain-Latn\">cis-an</i> and describe accent placement in text.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#015",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "137",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that '*k=ipe is ungrammatical.' However, the example itself uses 'k=ipe'. This is a contradiction.",
+    "quote": "k=ipe",
+    "suggestion": "Change the example to '*k=ipe' or clarify the note.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 95: the `ain` attribute shows the surface phonetic form `ku=ype`, but the standard orthography writes underlying forms. According to line 305–306, standard romanization writes etymological forms. Thus `ku=ype` may not be the standard written form.",
+    "quote": "ain=\"ku=ype\"",
+    "suggestion": "Set `ain=\"ku=ipe\"` to reflect standard orthography, or annotate that `ain` here shows phonetic realization.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#010",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "98",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the standard romanized orthography writes the underlying form, but the example itself uses 'k=omare'. This is a contradiction.",
+    "quote": "ku=omare",
+    "suggestion": "Change the example to 'ku=omare' or clarify the note.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The attribute `ain` is used for phonetic output, but in the example, it gives `k=omare`, which matches the surface form. However, the standard romanized orthography writes the underlying form (as stated in line 98). This creates inconsistency: the `ain` attribute should reflect what is actually written in standard orthography, which is `ku=omare`.",
+    "quote": "ain=\"k=omare\"",
+    "suggestion": "Change `ain=\"k=omare\"` to `ain=\"ku=omare\"` to reflect standard orthographic practice, or clarify that `ain` shows surface pronunciation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#051",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "309",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Another instance of ‹corpus-confirmed› applied to a Discord source with external parentheses. This is a systemic issue in citation formatting and epistemic tagging.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-07-09) ‹corpus-confirmed›",
+    "suggestion": "Fix syntax and change tag to ‹speculative› or create a proper tag for community reports.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#050",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "297",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Malformed citation syntax again: username and date outside Ref tag. Additionally, ‹corpus-suggested› is used for a Discord source, which may overstate evidential strength unless actual corpus data supports it.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (gengojiro, 2024-02-05) ‹corpus-suggested›",
+    "suggestion": "Correct syntax and consider downgrading tag to ‹speculative› or ‹community-observation› unless corpus evidence exists.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#049",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "278",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Repeated malformed citation syntax with external parentheses and untagged user/date. Also, the date (2023-12-27) is earlier than others (2024), but that’s acceptable; the formatting is the issue.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-27) ‹speculative›",
+    "suggestion": "Fix syntax: use <Ref k=\"aynucorporadiscord\" u=\"nukopoli\" date=\"2023-12-27\" /> or rephrase prose to avoid detached metadata.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#048",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "269",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same malformed citation syntax as line 264: username and date outside Ref tag, risking data loss or misattribution.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-03-18) ‹speculative›",
+    "suggestion": "Standardize to embedded attributes or consistent prose format.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#047",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "264",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation syntax is malformed: the parentheses are outside the Ref tag, but the date and username are not enclosed within the tag attributes. This may break rendering or metadata extraction.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-03-18) ‹speculative›",
+    "suggestion": "Use structured attribution: <Ref k=\"aynucorporadiscord\" u=\"nukopoli\" date=\"2024-03-18\" /> or keep prose format but remove raw parentheses from citation context.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#042",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "295-296",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The process reducing 'ciep' to 'cep' involves /i/ deletion from ci=, not /u/ deletion. The text incorrectly attributes it to /u/-deletion, contradicting the chapter's own rule that ci= deletes /i/ (lines 26-27).",
+    "quote": "by the same /u/-deletion that yields ciep → cep",
+    "suggestion": "Change 'the same /u/-deletion' to 'the same vowel-deletion process' or 'the deletion of the clitic vowel (for ci= it is /i/ deletion, for ku= it is /u/ deletion).",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#038",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "98, 155, 184",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The pitch accent of 'k=omare' is given as second-syllable stress in the example note (phonetic [koˈmaɾe]) but as first-syllable accent in the derivation (k=ómare) and Table 2 (phonetic [kómaɾe]). This contradicts the rule ordering which places accent on the first syllable after deletion.",
+    "quote": "line 98: [koˈmaɾe]; line 155: k=ómare; line 184: [kómaɾe]",
+    "suggestion": "Unify the accent notation: change line 98 to '[kómaɾe]' and write 'k=ómare' in the note, or revise the derivation and table if the note's accent is correct.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#056",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "184",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The acute accent on 'ó' in the orthographic form is unusual — standard Ainu romanization does not typically mark pitch accent in spelling. This may confuse readers about what the form represents (phonetic vs. orthographic).",
+    "quote": "<i lang=\"ain-Latn\">k=ómare</i> [kómaɾe]",
+    "suggestion": "Use plain orthography in the table (k=omare) and put accented form in the 'syllable structure and accent' column only.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#055",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "75",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phonetic transcription [kuˈype] suggests that the primary stress is on the second syllable, but the gloss in the example (line 136) is 'I eat.' — no tonal or accentual information is provided in the gloss to align with the phonetic detail.",
+    "quote": "<i lang=\"ain-Latn\">ku=ype</i> [kuˈype]",
+    "suggestion": "Add accent marking in the morpheme or gloss line if relevant, or remove phonetic stress from the note if not contrastive.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#037",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "376",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Sakaguchi (2024) is missing the page number or section locator, making it difficult to verify the claim.",
+    "quote": "sakaguchi2024",
+    "suggestion": "Add a page number or section locator.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'person-marking-architecture' is missing the '#' symbol, which is used for internal section links.",
+    "quote": "person-marking-architecture",
+    "suggestion": "#person-marking-architecture",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'personal-affix-template-and-ordering' is missing the '#' symbol, which is used for internal section links.",
+    "quote": "personal-affix-template-and-ordering",
+    "suggestion": "#personal-affix-template-and-ordering",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#036",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "367",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The date format for community sources is inconsistent. Some use YYYY-MM-DD, while others use MM-DD-YYYY. It should be standardized.",
+    "quote": "nukopoli, 2023-12-27",
+    "suggestion": "2023-12-27",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#035",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "361",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (2024) is missing the page number or section locator, making it difficult to verify the claim.",
+    "quote": "nakagawa2024",
+    "suggestion": "Add a page number or section locator.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#034",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "355",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (2024) is missing the page number or section locator, making it difficult to verify the claim.",
+    "quote": "nakagawa2024",
+    "suggestion": "Add a page number or section locator.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Shiraishi (2022) is missing the page number or section locator, making it difficult to verify the claim.",
+    "quote": "shiraishi2022",
+    "suggestion": "Add a page number or section locator.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#033",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "340",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'orthographic-standardization-and-word-division' is missing the '#' symbol, which is used for internal section links.",
+    "quote": "orthographic-standardization-and-word-division",
+    "suggestion": "#orthographic-standardization-and-word-division",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#032",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "336",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The mention of '1980s' is vague. It would be more precise to give a specific year or range if possible.",
+    "quote": "1980s",
+    "suggestion": "Specify the year or range.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'derivational-affix status' is used without a clear definition or example. It would be helpful to provide more context or an example to illustrate this concept.",
+    "quote": "derivational-affix status",
+    "suggestion": "Provide an example or definition of 'derivational-affix status'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#031",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "314",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'orthographic-standardization-and-word-division' is missing the '#' symbol, which is used for internal section links.",
+    "quote": "orthographic-standardization-and-word-division",
+    "suggestion": "#orthographic-standardization-and-word-division",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#030",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "309",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The date format for community sources is inconsistent. Some use YYYY-MM-DD, while others use MM-DD-YYYY. It should be standardized.",
+    "quote": "nukopoli, 2024-07-09",
+    "suggestion": "2024-07-09",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#029",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "305",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the romanized orthography writes underlying forms, but the example given is 'k=omare'. This is a contradiction.",
+    "quote": "ku=omare",
+    "suggestion": "Change the example to 'ku=omare' or clarify the note.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'ran wa' is given without explanation. It should be clarified what this example illustrates.",
+    "quote": "ran wa",
+    "suggestion": "Explain the example 'ran wa'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#028",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "295",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'ciep → cep' is given without explanation of the change. It should be clarified that 'ciep' is an underlying form and 'cep' is the surface form after deletion.",
+    "quote": "ciep → cep",
+    "suggestion": "Explain the change from 'ciep' to 'cep'.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The date format for community sources is inconsistent. Some use YYYY-MM-DD, while others use MM-DD-YYYY. It should be standardized.",
+    "quote": "gengojiro, 2024-02-05",
+    "suggestion": "2024-02-05",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#026",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "277",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The clitic '=an' is written with an equals sign here, but in other instances, it is written with a hyphen. Consistency is needed.",
+    "quote": "sap=an",
+    "suggestion": "=an",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The date format for community sources is inconsistent. Some use YYYY-MM-DD, while others use MM-DD-YYYY. It should be standardized.",
+    "quote": "nukopoli, 2023-12-27",
+    "suggestion": "2023-12-27",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme 'sik-o' is written with a hyphen. If it's a derivational suffix, it should be consistent with the chapter's convention of using hyphens for suffixes.",
+    "quote": "sik-o",
+    "suggestion": "sik-o",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#025",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "269",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The date format for community sources is inconsistent. Some use YYYY-MM-DD, while others use MM-DD-YYYY. It should be standardized.",
+    "quote": "nukopoli, 2024-03-18",
+    "suggestion": "2024-03-18",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#024",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "261",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phonetic transcription 'akorəʔitak' uses 'ə' which is not defined or explained in the chapter. It should be clarified or replaced with a more standard IPA symbol if appropriate.",
+    "quote": "akorəʔitak",
+    "suggestion": "Clarify the use of 'ə' or use a more standard IPA symbol.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The date format for community sources is inconsistent. Some use YYYY-MM-DD, while others use MM-DD-YYYY. It should be standardized.",
+    "quote": "nukopoli, 2024-03-18",
+    "suggestion": "2024-03-18",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#023",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "231",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The explanation for <i lang=\"ain-Latn\">e=</i> is a bit vague. It should clarify why /e/ is not subject to the deletion rule, perhaps by referencing the environments where deletion occurs.",
+    "quote": "/e/ not subject to deletion rule",
+    "suggestion": "Clarify why /e/ is not subject to the deletion rule.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#022",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "210",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table caption uses a colon after 'split'. It would be more consistent with other table captions to use a period or rephrase.",
+    "quote": "Table 3. Accent-class split among personal clitics",
+    "suggestion": "Table 3. Accent-class split among personal clitics.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#021",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "194",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (2024) is missing the page number or section locator, making it difficult to verify the claim.",
+    "quote": "nakagawa2024",
+    "suggestion": "Add a page number or section locator.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (2024) is missing the page number or section locator, making it difficult to verify the claim.",
+    "quote": "nakagawa2024",
+    "suggestion": "Add a page number or section locator.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#020",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "185",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The notation 'σ1' is used for the first syllable. While understandable in context, it's not explicitly defined. It would be clearer to define it upon first use or use a more descriptive term.",
+    "quote": "σ1",
+    "suggestion": "Define 'σ1' as the first syllable upon first use.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#019",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "179",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 原則2 is used without translation or explanation. It should be translated or explained in English for clarity.",
+    "quote": "原則2",
+    "suggestion": "Translate or explain 'Principle 2'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#018",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "173",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 原則2 is used without translation or explanation. It should be translated or explained in English for clarity.",
+    "quote": "原則2",
+    "suggestion": "Translate or explain 'Principle 2'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#017",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "159",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table caption uses a colon after 'ordering'. It would be more consistent with other table captions to use a period or rephrase.",
+    "quote": "Table 2. Rule ordering: accent shift precedes deletion",
+    "suggestion": "Table 2. Rule ordering: accent shift precedes deletion.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#016",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "146",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'pitch-accent placement rule' is missing the '#' symbol, which is used for internal section links.",
+    "quote": "pitch-accent placement rule",
+    "suggestion": "#pitch-accent-placement-rule",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Shiraishi (2022) is missing the page number or section locator, making it difficult to verify the claim.",
+    "quote": "shiraishi2022",
+    "suggestion": "Add a page number or section locator.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#014",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "124",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The date format for community sources is inconsistent. Some use YYYY-MM-DD, while others use MM-DD-YYYY. It should be standardized.",
+    "quote": "nukopoli, 2024-11-28",
+    "suggestion": "2024-11-28",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#013",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The notation (C)V(C) for syllable structure is not standard. It should be represented using more conventional notation, such as CV(C) or (C)V(C).",
+    "quote": "(C)V(C)",
+    "suggestion": "CV(C)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'syllable-template' is missing the '#' symbol, which is used for internal section links.",
+    "quote": "syllable-template",
+    "suggestion": "#syllable-template",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#012",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "110",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The clitic 'e=' is written with an equals sign here, but in other instances, it is written with a hyphen. Consistency is needed.",
+    "quote": "e=itak",
+    "suggestion": "e=itak",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'glide-epenthesis-hiatus-resolution' is missing the '#' symbol, which is used for internal section links.",
+    "quote": "glide-epenthesis-hiatus-resolution",
+    "suggestion": "#glide-epenthesis-hiatus-resolution",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#011",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "106",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 母音弱化 is used without translation or explanation. It should be translated or explained in English for clarity.",
+    "quote": "母音弱化",
+    "suggestion": "Translate or explain 'vowel weakening'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to '§3' is unclear as there is no section numbered 3 in the chapter. It likely refers to the section on vowel weakening, but it should be explicitly stated or the section numbering should be corrected.",
+    "quote": "§3",
+    "suggestion": "Refer to the correct section ID, e.g., '#i-block' or 'the section on vowel weakening'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#009",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "89",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of curly braces for sets of vowels is not standard in linguistic notation. It should be replaced with parentheses or a more conventional representation.",
+    "quote": "&#123;a, e, u, o&#125;",
+    "suggestion": "(a, e, u, o)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#008",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "82",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to '§3' is unclear as there is no section numbered 3 in the chapter. It likely refers to the section on vowel weakening, but it should be explicitly stated or the section numbering should be corrected.",
+    "quote": "no change; both processes blocked (§3)",
+    "suggestion": "Refer to the correct section ID, e.g., '#i-block' or 'the section on vowel weakening'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#007",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "76",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to '§3' is unclear as there is no section numbered 3 in the chapter. It likely refers to the section on vowel weakening, but it should be explicitly stated or the section numbering should be corrected.",
+    "quote": "stem /i/ → [j]; NO clitic deletion (§3)",
+    "suggestion": "Refer to the correct section ID, e.g., '#i-block' or 'the section on vowel weakening'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#006",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "56, 62, 68, 74, 80, 172, 178, 184, 192, 204, 222, 228, 234, 240, 246, 265, 267, 273, 319, 331, 332, 333, 334, 335, 349, 351, 353, 358, 372, 374",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Inconsistent use of equals sign vs. hyphen for clitics. The chapter states that Nakagawa's standard romanization uses an equals sign for all person markers that cliticize to the left or right edge of the verb. This should be applied consistently.",
+    "quote": "ku=a…, ku=omare, ci=etu, ku=ipe, ku=ikra, omáre, ku=ómare, k=ómare, etú, a=omáre, ku=, e=, ci=, a=, eci=, ku=, e=, ci=, =an, ku=, e=, a=, ci=, eci=, en=, un=, =an, =as, ku=, e=, ci=, a=, eci=, ku=, ci=, =an",
+    "suggestion": "Use '=' for all clitics.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#005",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "43",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table caption uses a forward slash between 'ku=' and 'ci='. It would be more consistent with the chapter's terminology to use 'or' or 'and' or to rephrase.",
+    "quote": "Table 1. Deletion and weakening at the ku= / ci= juncture, Saru/Chitose/Mukawa",
+    "suggestion": "Deletion and weakening at the ku= or ci= juncture",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#004",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "37, 38",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of curly braces for sets of vowels is not standard in linguistic notation. It should be replaced with parentheses or a more conventional representation.",
+    "quote": "&#123;a, e, u, o&#125;",
+    "suggestion": "(a, e, u, o)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#003",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "31",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to '§3' is unclear as there is no section numbered 3 in the chapter. It likely refers to the section on vowel weakening, but it should be explicitly stated or the section numbering should be corrected.",
+    "quote": "§3",
+    "suggestion": "Refer to the correct section ID, e.g., '#i-block' or 'the section on vowel weakening'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#002",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "27",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">ci=</i> is given as \"first-person plural exclusive agent/subject\". This is a bit long and could be shortened to \"1PL.EXCL.A/S\" for consistency with other glosses.",
+    "quote": "first-person plural exclusive agent/subject",
+    "suggestion": "1PL.EXCL.A/S",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term \"vowel weakening\" is used without a clear definition or reference to where it is described in more detail. While it is mentioned that it is described in §3, it would be helpful to have a brief explanation here or a more direct link.",
+    "quote": "vowel-weakening process",
+    "suggestion": "Explain what vowel weakening entails in this context, or provide a more specific reference.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#001",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms <i lang=\"ain-Latn\">ku=</i> and <i lang=\"ain-Latn\">ci=</i> are inconsistently hyphenated. In the overview, they are written with an equals sign, but in the following sentence, they are written with a hyphen. This should be consistent throughout the chapter.",
+    "quote": "ku= and ci=",
+    "suggestion": "ku= and ci=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The clitics are sometimes written with an equals sign and sometimes with a hyphen. The chapter states that Nakagawa's standard romanization uses an equals sign for all person markers that cliticize to the left or right edge of the verb. This should be applied consistently.",
+    "quote": "ku=, ci=, e=, a=, eci=, en=, un=, =an, =as",
+    "suggestion": "Use '=' for all clitics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The clitics are sometimes written with an equals sign and sometimes with a hyphen. The chapter states that Nakagawa's standard romanization uses an equals sign for all person markers that cliticize to the left or right edge of the verb. This should be applied consistently.",
+    "quote": "ku=, ci=, e=, a=, eci=, en=, un=, =an, =as",
+    "suggestion": "Use '=' for all clitics.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The chapter uses \"southern varieties\" to refer to Saru, Chitose, and Mukawa. This is a bit vague and could be more precise by directly naming the dialects.",
+    "quote": "southern varieties",
+    "suggestion": "Saru, Chitose, and Mukawa dialects",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#054",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "376",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The 'paren' attribute appears again without definition. Likely a pipeline artifact indicating intended citation style.",
+    "quote": "<Ref k=\"sakaguchi2024\" paren />",
+    "suggestion": "Remove 'paren' or replace with standard formatting.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#053",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "367",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Citation syntax broken: username and date are in plain text after the Ref tag, not enclosed. This risks misattribution and is inconsistent with other citations.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> nukopoli, 2023-12-27, ‹speculative›",
+    "suggestion": "Rewrite as <Ref k=\"aynucorporadiscord\" u=\"nukopoli\" date=\"2023-12-27\" /> or integrate into prose with proper tagging.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#052",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "355",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of 'paren' attribute is non-standard and not defined in the markup spec provided. It may be a pipeline leak indicating intended parenthetical citation style.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"52–53\" paren />; <Ref k=\"shiraishi2022\" p=\"§5.1\" paren />",
+    "suggestion": "Remove 'paren' attribute unless it's part of a defined schema. Use prose formatting for parenthetical citations if needed.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#046",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "109",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation is attached to a claim about e=itak → eytak, but the page cited (p. 40) in Nakagawa2024 was previously cited for a different phenomenon (vowel deletion). Without verification, this may be an incorrect or mismatched page locator.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"40\" />.",
+    "suggestion": "Confirm that p. 40 of Nakagawa2024 actually discusses e= + itak → eytak. If not, correct the page number or source.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#045",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "31",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Citation formatting inconsistency: the first uses a page number with 'p=', the second uses '§3' (section notation) without 'p='. While section citations are valid, the mixed style within one sentence may reflect inconsistent pipeline handling.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"52\" />; <Ref k=\"nakagawafukazawa2022\" p=\"§3\" />.",
+    "suggestion": "Standardize citation format — either use 'p=' for both or adapt to context with appropriate label. Suggestion: <Ref k=\"nakagawafukazawa2022\" s=\"§3\" /> if section tagging is supported.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#044",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "27",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Two citations are given for the same claim, but they are separated by a semicolon and lack parallel structure — the second lacks a page range indicator 'p=' which is present in the first. This may be a formatting inconsistency.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"33, 52\" />; <Ref k=\"sato2008\" p=\"xii\" />.",
+    "suggestion": "Ensure consistent citation formatting: either both with 'p=' or neither. Likely fix: <Ref k=\"nakagawa2024\" p=\"33, 52\" />; <Ref k=\"sato2008\" p=\"xii\" />.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-sandhi-connected-speech-reduction~p1#043",
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "lines": "93-94, 132-133",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ex component uses an undocumented 'ain' attribute to show a surface form. This attribute is not listed in the markup conventions provided for this chapter and appears to be a pipeline leak or a non-standard extension.",
+    "quote": "Ex m=\"ku=omare\" ain=\"k=omare\" … Ex m=\"ku=ipe\" ain=\"ku=ype\"",
+    "suggestion": "Replace 'ain' with a standard attribute such as 'surface' or 'spoken' if supported, or integrate the surface form into the note attribute.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

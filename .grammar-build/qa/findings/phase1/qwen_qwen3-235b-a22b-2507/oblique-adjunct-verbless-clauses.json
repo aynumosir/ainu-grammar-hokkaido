@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "102",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "dial=\"SAR\"",
+  "issue": "The dialect label 'SAR' is used in the first example, but the chapter elsewhere uses 'Saru' in prose (e.g., line 386). This creates inconsistency in dialect naming.",
+  "suggestion": "Standardize to either 'SAR' and 'HK' throughout or spell out 'Saru' and 'Hokkaido' in full for clarity and consistency.",
+  "confidence": 0.95,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "111",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "dial=\"HK\"",
+  "issue": "The dialect label 'HK' is used, but the chapter elsewhere refers to 'Hokkaido' or 'Hokkaidō' in prose. This creates inconsistency in dialect naming.",
+  "suggestion": "Standardize to either 'HK' and 'SAR' throughout or spell out 'Hokkaido' and 'Saru' in full.",
+  "confidence": 0.95,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "336",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"ku=nu ru-we un\"",
+  "issue": "The morpheme string includes a hyphen in 'ru-we', but the gloss 'track-POSS' suggests a possessive clitic, which should be aligned as 'ru-we' → 'track-POSS'. However, the hyphen placement implies a stem-clitic boundary, but 'ruwe' is a formal noun meaning 'hearing', not 'track'. This is a likely segmentation or gloss error.",
+  "suggestion": "Verify whether 'ruwe' should be segmented as 'ru-we' or 'ruwe' (unsegmented). If 'ruwe' is a single morpheme, correct to m=\"ku=nu ruwe un\" and g=\"1SG.A=hear NMLZ FIN\".",
+  "confidence": 0.9,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "353",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"how COP CONJ that bowl NEG.exist NEG.exist\"",
+  "issue": "The gloss has 'NEG.exist NEG.exist' for two instances of 'isam', but 'isam' is a negative existential verb and should be glossed consistently. Having two identical glosses for repeated 'isam' is acceptable, but the free translation 'gone, gone' suggests reduplication for emphasis, not two separate negations. The gloss should reflect that 'isam' is repeated for discourse emphasis, not a compound predicate.",
+  "suggestion": "Revise gloss to clarify reduplication: 'NEG.exist^REDUP' or add a note explaining the repetition as emphatic.",
+  "confidence": 0.85,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "472",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"chief COP COND\"",
+  "issue": "No actual issue; the gloss is consistent. However, the absence of a subject affix on 'ne' in third person is correctly represented, but the gloss does not indicate person. This is standard in Leipzig glossing, so no fix needed.",
+  "suggestion": null,
+  "confidence": 0.6,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "492",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, 2023-12-25, speculative; \"reason unclear\") ‹speculative›",
+  "issue": "The claim that the copula appears without a subject affix in 'ka somo ne' is tagged as ‹speculative› and supported only by a Discord comment labeled 'speculative'. This is appropriate, but the citation format is inconsistent: it includes a username and date in parentheses inline, while other such citations are formatted with the full attribution after the Ref tag.",
+  "suggestion": "Standardize the citation format: move the inline attribution to after the Ref tag, as in line 177, to maintain consistency.",
+  "confidence": 0.9,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "506",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Ref k=\"aynucorporadiscord\" (thegodofneet, aynu-corpora Discord, 2024-11-13, proposed; consistent with Refsing 1986: 145 and Nakagawa 2024: 118–119) ‹contested›",
+  "issue": "The citation includes inline attribution with a username and date, while the Ref tag alone should carry the source. This format deviates from the clean separation of citation and commentary expected in scholarly text.",
+  "suggestion": "Move the inline attribution to after the Ref tag, e.g., <Ref k=\"aynucorporadiscord\" /> (thegodofneet, aynu-corpora Discord, 2024-11-13, proposed; consistent with Refsing 1986: 145 and Nakagawa 2024: 118–119) ‹contested›.",
+  "confidence": 0.95,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "177",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, 2024-11-09, confirmed against Ref k=\"sato2008\" p=\"3–4\")",
+  "issue": "The citation includes a nested Ref tag inside parentheses, which is invalid markup. The Ref tag should not be embedded in text like this.",
+  "suggestion": "Reformat as: <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-09, confirmed against Sato 2008: 3–4).",
+  "confidence": 1,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "380",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, 2024-12-04, asserted; reported across multiple dialects; confirmed against the affirmative-frame ruwe un of Nakagawa 2024: 396)",
+  "issue": "The citation includes a nested reference to 'ruwe un of Nakagawa 2024: 396' in text, but this should be a proper Ref tag. Also, the inline description is overly detailed for a citation.",
+  "suggestion": "Simplify and reformat: <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted; reported across multiple dialects; confirmed against <Ref k=\"nakagawa2024\" p=\"396\" />) ‹corpus-confirmed›.",
+  "confidence": 0.9,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "396",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, 2024-12-04, asserted ✔; reported across eight dialect localities: Yakumo, Horobetsu, Saru, Tokachi, Bibai, Asahikawa, Nayoro, and Sōya)",
+  "issue": "The citation includes a checkmark (✔) and a list of dialects in the attribution, which is excessive for a scholarly citation. The dialect list should be in the prose, not the citation.",
+  "suggestion": "Move the dialect list to the prose and keep the citation clean: <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted) ‹corpus-confirmed›.",
+  "confidence": 0.95,
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

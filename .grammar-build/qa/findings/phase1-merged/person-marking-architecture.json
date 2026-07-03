@@ -1,0 +1,1298 @@
+[
+ {
+  "id": "person-marking-architecture~p1#021",
+  "chapter": "person-marking-architecture",
+  "lines": "375",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'come.PL=4.S' for 'arki=an' is potentially confusing. It correctly identifies the plural stem and the fourth-person singular subject, but the combination could be clearer, e.g., 'come.PL.4S'.",
+    "quote": "g=\"where from come.PL=4.S track-POSS exist\"",
+    "suggestion": "come.PL.4S",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'track-POSS' for 'ru-we' is unclear. It likely refers to a possessive construction related to 'track', but its grammatical function in the gloss is not immediately obvious.",
+    "quote": "g=\"where from come.PL=4.S track-POSS exist\"",
+    "suggestion": "POSS-track",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'come.PL=4.S' for 'arki=an' uses a period in 'come.PL' but the morphemic segmentation shows 'arki=an' with 'arki' as a single morpheme. The same issue as line 204-212. Also, 'ru-we' is glossed as 'track-POSS' with a hyphen, but the segmentation shows 'ru-we' with a hyphen, which is consistent.",
+    "quote": "m=\"hunak wa arki=an ru-we an\" g=\"where from come.PL=4.S track-POSS exist\"",
+    "suggestion": "Consider using 'come(PL)' or 'come.PL' consistently across examples.",
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'come.PL=4.S' implies the suffix '=an' is the fourth-person S marker, but the free translation is 'Where have you come from?' — addressing a second person. This contradicts the claim that fourth-person forms are used honorifically for second person. The gloss should reflect honorific 2SG/O rather than 4.S if the referent is second person.",
+    "quote": "hunak wa arki=an ru-we an",
+    "suggestion": "Revise gloss to 'come.PL=HON.2SG.S' or add a note clarifying that fourth-person morphology is used for honorific second person, or adjust the free translation to reflect first-person narrative or inclusive plural.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#003",
+  "chapter": "person-marking-architecture",
+  "lines": "128",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 120, 'asinuma / aoka' presents two forms separated by a slash. Clarification is needed on whether these are alternatives or variations.",
+    "quote": "asinuma / aoka",
+    "suggestion": "asinuma / aoka",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is presented as a suffix. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=an",
+    "suggestion": "=an",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i=' is presented as a prefix. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "i=",
+    "suggestion": "i=",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: 'asinuma' appears without hyphens, while elsewhere in the chapter (e.g., line 233) it is segmented as 'i=erampokiwen'. The free pronoun form should reflect consistent morphological segmentation or orthographic presentation.",
+    "quote": "<i lang=\"ain-Latn\">asinuma</i> / <i lang=\"ain-Latn\">aoka</i>",
+    "suggestion": "Use segmented form if intended morphemically, or keep consistently unsegmented in free pronoun list.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#015",
+  "chapter": "person-marking-architecture",
+  "lines": "322",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A=give' for 'ku=kore' is potentially misleading. While 'ku=' is glossed as '1SG.A', 'kore' is a verb meaning 'give'. The gloss might be better as '1SG.A-give'.",
+    "quote": "g=\"sweets children 1SG.A=give\"",
+    "suggestion": "1SG.A-give",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '1SG.A=give' for 'ku=kore' suggests 'kore' means 'give', which is correct. However, the free translation 'I gave the children sweets' has past tense, but the gloss has no tense marking. This is acceptable for Ainu which does not mark tense on verbs. No mismatch.",
+    "quote": "m=\"topenpe hekattar ku=kore\" g=\"sweets children 1SG.A=give\"",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#013",
+  "chapter": "person-marking-architecture",
+  "lines": "290",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'NMLZ' for 'pe' is unclear. It likely stands for 'nominalizer', but this should be explicitly stated or glossed more descriptively.",
+    "quote": "g=\"something even 1SG.A>2SG.O=help NMLZ exist Q\"",
+    "suggestion": "NOM",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '1SG.A>2SG.O=help' uses a greater-than sign to indicate the portmanteau, which is a common convention. However, the morphemic segmentation shows 'eci=kasuy' with 'eci=' as a single prefix. The gloss correctly identifies it as a portmanteau. No mismatch.",
+    "quote": "m=\"nep ka eci=kasuy pe an ya\" g=\"something even 1SG.A>2SG.O=help NMLZ exist Q\"",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#010",
+  "chapter": "person-marking-architecture",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=' is presented with an italicized equals sign. This might be a formatting error or intended to highlight the symbol itself.",
+    "quote": "i=",
+    "suggestion": "=",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '-' is presented with an italicized hyphen. This might be a formatting error or intended to highlight the symbol itself.",
+    "quote": "-",
+    "suggestion": "-",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The HTML tag is incorrectly split across lines, causing potential rendering issues. The closing tag for the first <i> is misplaced due to line break after 'writes'.",
+    "quote": "boundary symbols used throughout the grammar follow a working convention: <i\n\t\t\tlang=\"ain-Latn\">=</i\n\t\t> writes the personal-index boundary and <i lang=\"ain-Latn\">-</i> the boundary",
+    "suggestion": "Keep <i lang=\"ain-Latn\">=</i> on a single line to avoid parsing errors.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#008",
+  "chapter": "person-marking-architecture",
+  "lines": "232",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.O=pity' for 'i=erampokiwen' is potentially misleading. While 'i=' is glossed as '4.O', 'erampokiwen' is a verb meaning 'pity'. The gloss might be better as '4.O-pity' to show the prefix attaches to the verb stem.",
+    "quote": "g=\"4.O=pity 4.O=lodge CONJ 4.O=give\"",
+    "suggestion": "4.O-pity",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.O=lodge' for 'i=rewsire' is potentially misleading. While 'i=' is glossed as '4.O', 'rewsire' is a verb meaning 'lodge'. The gloss might be better as '4.O-lodge'.",
+    "quote": "g=\"4.O=pity 4.O=lodge CONJ 4.O=give\"",
+    "suggestion": "4.O-lodge",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.O=give' for 'i=kore' is potentially misleading. While 'i=' is glossed as '4.O', 'kore' is a verb meaning 'give'. The gloss might be better as '4.O-give'.",
+    "quote": "g=\"4.O=pity 4.O=lodge CONJ 4.O=give\"",
+    "suggestion": "4.O-give",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '4.O=pity' for 'i=erampokiwen' suggests 'erampokiwen' means 'pity', but the morphemic segmentation shows 'i=' as a prefix and 'erampokiwen' as the stem. The free translation 'Take pity on me' suggests the verb means 'pity (someone)', which is correct. However, the gloss '4.O=pity' could be misinterpreted as 'fourth person object = pity', which is fine. No mismatch.",
+    "quote": "m=\"i=erampokiwen i=rewsire wa i=kore\" g=\"4.O=pity 4.O=lodge CONJ 4.O=give\"",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#007",
+  "chapter": "person-marking-architecture",
+  "lines": "216",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=kill track-POSS' for 'a=rayke ru-we' is unclear. 'track-POSS' seems to be a literal translation of 'ru-we', but its function in the gloss is not immediately obvious. It might be better to gloss 'ru-we' as a possessive suffix or a related grammatical element.",
+    "quote": "g=\"bad god 4.A=defeat CONJ 4.A=kill track-POSS COP\"",
+    "suggestion": "4.A=kill POSS-track COP",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'track-POSS' for 'ru-we' suggests 'ru' means 'track' and '-we' is a possessive suffix. However, the morphemic segmentation in 'm' shows 'ru-we' with a hyphen, not 'ru=we'. The gloss should reflect the morpheme boundary consistently. Also, 'ru-we' is typically analyzed as 'ru' (track) + '-we' (possessive), but the hyphen in 'm' suggests it's a single word with derivational morphology, not a clitic boundary.",
+    "quote": "m=\"wen kamuy a=maketa wa a=rayke ru-we ne\" g=\"bad god 4.A=defeat CONJ 4.A=kill track-POSS COP\"",
+    "suggestion": "Either change the segmentation to 'ru=we' with an equals sign if it's a clitic, or adjust the gloss to match the hyphen boundary.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#006",
+  "chapter": "person-marking-architecture",
+  "lines": "206",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'arki=as' is 'come.PL=1PL.EXCL.S'. The 'PL' seems to indicate plural, but the gloss also specifies '1PL.EXCL.S'. This could be clearer, perhaps by separating the number and person/role information.",
+    "quote": "g=\"car exist CONJ 1PL.EXCL.A=board then come.PL=1PL.EXCL.S\"",
+    "suggestion": "come.PL.1PL.EXCL.S",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'come.PL' for 'arki' uses a period to separate stem from plural marking, but the morphemic segmentation in 'm' shows 'arki=as' with 'arki' as a single morpheme (suppletive plural stem). The gloss should reflect that 'arki' is a single lexical item meaning 'come (plural)', not a stem 'come' plus a plural suffix. The period notation is acceptable for suppletive forms, but consistency with other examples would be better.",
+    "quote": "m=\"kuruma an wa ci=o tek arki=as\" g=\"car exist CONJ 1PL.EXCL.A=board then come.PL=1PL.EXCL.S\"",
+    "suggestion": "Consider using 'come.PL' as is, or change to 'come(PL)' for clarity. This is a minor formatting issue.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#001",
+  "chapter": "person-marking-architecture",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'asinuma' appears to be a typo. Based on the context and the following word 'fourth-person', it is likely intended to be 'asinu' or a similar form.",
+    "quote": "asinuma",
+    "suggestion": "asinuma",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'the fourth-person self' seems redundant or awkwardly phrased. It might be intended to refer to a specific pronoun or concept related to the fourth person.",
+    "quote": "the fourth-person self",
+    "suggestion": "the fourth-person pronoun",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent capitalization in gloss: 'fourth-person self' is lowercase while other pronouns are capitalized (I, you, we). This creates a stylistic inconsistency in the presentation of formal person labels.",
+    "quote": "<i lang=\"ain-Latn\">kani</i> ‘I’, <i lang=\"ain-Latn\">eani</i> ‘you’,\n\t\t<i lang=\"ain-Latn\">coka</i> ‘we (excluding you)’, <i lang=\"ain-Latn\">asinuma</i> ‘the\n\t\tfourth-person self’",
+    "suggestion": "Capitalize consistently: 'the Fourth-Person Self' or use lowercase for all.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#050",
+  "chapter": "person-marking-architecture",
+  "lines": "243-244",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Contradicts the table on line 129–130, which lists 'a=' (not 'an=') as the A form for 4/INDEF, with a parenthetical '(dialectally an=)'. But the text says dialects other than Saru use 'an=', implying 'a=' is primary. This creates confusion about which is the default form.",
+    "quote": "The choice of <i lang=\"ain-Latn\">a=</i> over <i lang=\"ain-Latn\">an=</i> for the fourth-person A\n\t\tis itself dialectal: Saru and the western dialects use <i lang=\"ain-Latn\">a=</i>, while Tokachi,\n\t\tIshikari, Shiranuka, and Samani favour <i lang=\"ain-Latn\">an=</i>",
+    "suggestion": "Revise either the table or the paragraph to align: if 'a=' is Saru and 'an=' elsewhere, the table should list 'a=' as primary with dialectal variant 'an=' in parentheses — which it does — but the text should clarify that 'a=' is the Saru form and 'an=' is the non-Saru variant.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#049",
+  "chapter": "person-marking-architecture",
+  "lines": "130",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists '=an' as the S form for 4/INDEF, but in the example on line 231–233, 'i=erampokiwen' uses 'i=' as the object form and '=an' as the S suffix. However, the gloss '4.O=' is used consistently, suggesting that the fourth-person S form should be 'a=' or 'an=', not '=an'. The suffix '=an' is positionally correct (post-stem), but the prefix/suffix alignment across roles is inconsistent: A=a=, S=an, O=i= — yet the table implies symmetry that isn't fully supported.",
+    "quote": "<i lang=\"ain-Latn\">=an</i>",
+    "suggestion": "Verify whether the S form should be 'an=' (prefixal) or '=an' (suffixal) and ensure consistency with dialectal variation noted on line 243. If '=an' is correct, clarify that A and S are on different sides.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#029",
+  "chapter": "person-marking-architecture",
+  "lines": "96-100",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table shows 1PL.EXCL as tripartite (S≠A≠O), but the prose at lines 169-173 says 'First plural exclusive and the fourth person switch sides by transitivity' and the side-encoding table at lines 189-200 shows the same. However, the alignment column in the main table says 'tripartite' for 1PL.EXCL, but the forms show ci= for A, =as for S, and un= for O — this is indeed tripartite. No inconsistency here upon closer inspection.",
+    "quote": "1PL.EXCL ... S≠A≠O; tripartite",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#048",
+  "chapter": "person-marking-architecture",
+  "lines": "374-382",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue as above: 'arki=an' with equals sign, gloss 'come.PL' with period.",
+    "quote": "arki=an",
+    "suggestion": "Consider using 'come(PL)' or 'come.PL' consistently.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#047",
+  "chapter": "person-marking-architecture",
+  "lines": "204-212",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example uses 'arki=as' with an equals sign, which is consistent with the convention. However, the gloss 'come.PL' uses a period, which is a different convention. This is acceptable but could be made consistent.",
+    "quote": "arki=as",
+    "suggestion": "Consider using 'come(PL)' or 'come.PL' consistently across all examples.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#046",
+  "chapter": "person-marking-architecture",
+  "lines": "86-134",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table uses equals signs for all person markers, but the prose at lines 252-261 explains that the convention uses '=' for personal-index boundaries and '-' for derivational morphology. This is consistent within the chapter. No orthography drift.",
+    "quote": "ku=, ci=, =as, un=, e=, eci=, Ø, a=, =an, i=",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#044",
+  "chapter": "person-marking-architecture",
+  "lines": "128",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table shows 'asinuma / aoka' for 4/INDEF pronouns, but the prose at line 10-11 only lists 'asinuma'. This is inconsistent.",
+    "quote": "asinuma / aoka",
+    "suggestion": "Update the prose to include both forms or add a note about plural forms.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#043",
+  "chapter": "person-marking-architecture",
+  "lines": "120",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table shows 'sinuma / oka' for third person pronouns, but the prose at line 10-11 lists 'asinuma' for fourth person. The third person pronouns are not introduced in the prose. This is a minor omission.",
+    "quote": "sinuma / oka",
+    "suggestion": "Consider adding a brief mention of third person pronouns in the introductory paragraph.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#042",
+  "chapter": "person-marking-architecture",
+  "lines": "9-11",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The list of pronouns includes 'asinuma' as 'the fourth-person self', but the table at line 128 shows 'asinuma / aoka' for 4/INDEF. The prose should either include both forms or clarify that only the singular is given.",
+    "quote": "Independent pronouns — kani ‘I’, eani ‘you’, coka ‘we (excluding you)’, asinuma ‘the fourth-person self’ — are available for emphasis or contrast and are used more sparingly than their Japanese counterparts",
+    "suggestion": "Add 'aoka' or change to 'asinuma (singular) / aoka (plural)'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#041",
+  "chapter": "person-marking-architecture",
+  "lines": "421",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag appears after a citation about Dal Corso's analysis. This is appropriate, but the tag is placed after the citation rather than after the specific claim.",
+    "quote": "‹contested›",
+    "suggestion": "Consider placing the tag after the claim that is contested, e.g., 'rejects a tripartite component for Sakhalin'.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#040",
+  "chapter": "person-marking-architecture",
+  "lines": "394",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag appears after a citation about the semantic range of the fourth person. This is appropriate, but the tag is placed after the citation rather than after the specific claim.",
+    "quote": "‹contested›",
+    "suggestion": "Consider placing the tag after the claim that is contested, e.g., 'the old account of an “elevated” literary person'.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#039",
+  "chapter": "person-marking-architecture",
+  "lines": "317",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag appears after a citation about ditransitive marking. This is appropriate, but the tag is placed after the citation rather than after the specific claim.",
+    "quote": "‹contested›",
+    "suggestion": "Consider placing the tag after the claim that is contested, e.g., 'further evidence for a zero third-person affix'.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#038",
+  "chapter": "person-marking-architecture",
+  "lines": "267",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag appears after a citation about the morphological status of indexes. This is appropriate, but the tag is placed after the citation rather than after the specific claim.",
+    "quote": "‹contested›",
+    "suggestion": "Consider placing the tag after the claim that is contested, e.g., 'the most autonomous subject marker'.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#037",
+  "chapter": "person-marking-architecture",
+  "lines": "152",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag appears after a citation about the zero third-person affix debate. This is appropriate usage, but the tag is placed after the citation rather than after the claim. It should be clear what is contested.",
+    "quote": "‹contested›",
+    "suggestion": "Consider placing the tag immediately after the claim 'a zero third-person affix is required' or similar.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#036",
+  "chapter": "person-marking-architecture",
+  "lines": "42-53",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› appears at the end of a paragraph that lists different scholars' views. This is a pipeline register leak because the tag seems to apply to the entire paragraph rather than a specific claim. The tag should be attached to the specific claim that is contested, not to the reporting of different analyses.",
+    "quote": "‹contested›",
+    "suggestion": "Move the tag to the specific claim, e.g., after 'the fourth person is a single category' or similar.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#025",
+  "chapter": "person-marking-architecture",
+  "lines": "428",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=as' is presented as a suffix. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=as",
+    "suggestion": "=as",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is presented as a suffix. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=an",
+    "suggestion": "=an",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i-' is presented as a detransitivising prefix. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "i-",
+    "suggestion": "i-",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '-pa' is presented as a stem-forming plural suffix. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "-pa",
+    "suggestion": "-pa",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#024",
+  "chapter": "person-marking-architecture",
+  "lines": "407",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ci=' is presented with a trailing slash. This is likely a typo or an incomplete form.",
+    "quote": "ci=/",
+    "suggestion": "ci=",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=as' is presented as a suffix. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=as",
+    "suggestion": "=as",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'a=' is presented as a prefix. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "a=",
+    "suggestion": "a=",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is presented as a suffix. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=an",
+    "suggestion": "=an",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#023",
+  "chapter": "person-marking-architecture",
+  "lines": "395",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i-' is presented as a detransitivising prefix. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "i-",
+    "suggestion": "i-",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#020",
+  "chapter": "person-marking-architecture",
+  "lines": "356",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=hci' is presented as a verbal plural suffix. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=hci",
+    "suggestion": "=hci",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#019",
+  "chapter": "person-marking-architecture",
+  "lines": "351",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'iki=an pa' is presented with 'pa' following '=an'. It's unclear if 'pa' is a separate particle, a suffix, or part of a compound form.",
+    "quote": "iki=an pa",
+    "suggestion": "iki=an pa",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'iki-pa=an' is presented with '-pa=' between 'iki' and '=an'. It's unclear if '-pa' is a stem-forming suffix or part of a compound form.",
+    "quote": "iki-pa=an",
+    "suggestion": "iki-pa=an",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#018",
+  "chapter": "person-marking-architecture",
+  "lines": "347",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ek / arki' are presented with a slash. It's unclear if these are alternative forms, dialectal variations, or if 'ek' is a typo and 'arki' is the correct form.",
+    "quote": "ek / arki",
+    "suggestion": "ek / arki",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'arpa / paye' are presented with a slash. It's unclear if these are alternative forms, dialectal variations, or if 'arpa' is a typo and 'paye' is the correct form.",
+    "quote": "arpa / paye",
+    "suggestion": "arpa / paye",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#017",
+  "chapter": "person-marking-architecture",
+  "lines": "336",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'fourth person' is used without explicit definition or reference to the table. It would be helpful to clarify its meaning or link it to the 'INDEF' column in the table.",
+    "quote": "fourth person",
+    "suggestion": "fourth person (INDEF)",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#014",
+  "chapter": "person-marking-architecture",
+  "lines": "301",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is presented as a bare object form. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "en=",
+    "suggestion": "en=",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#011",
+  "chapter": "person-marking-architecture",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is presented as a clitic. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=an",
+    "suggestion": "=an",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=as' is presented as a clitic. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=as",
+    "suggestion": "=as",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'a=' is presented as a clitic. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "a=",
+    "suggestion": "a=",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'eci=' is presented as a clitic. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "eci=",
+    "suggestion": "eci=",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=' is presented as a prefix. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "ku=",
+    "suggestion": "ku=",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=' is presented as a prefix. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "en=",
+    "suggestion": "en=",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i=' is presented as a prefix. It might be a typo or an incomplete form, as it appears without a following stem in this context.",
+    "quote": "i=",
+    "suggestion": "i=",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is presented with an equals sign. It might be a typo or an incomplete form, as it appears without a preceding stem in this context.",
+    "quote": "=an",
+    "suggestion": "=an",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#005",
+  "chapter": "person-marking-architecture",
+  "lines": "197",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'stem=an' is presented with 'stem' as a placeholder. It would be clearer to use a specific Ainu verb stem or indicate that 'stem' is a generic representation.",
+    "quote": "stem=an",
+    "suggestion": "stem=an",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'a=stem' is presented with 'stem' as a placeholder. It would be clearer to use a specific Ainu verb stem or indicate that 'stem' is a generic representation.",
+    "quote": "a=stem",
+    "suggestion": "a=stem",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i=stem' is presented with 'stem' as a placeholder. It would be clearer to use a specific Ainu verb stem or indicate that 'stem' is a generic representation.",
+    "quote": "i=stem",
+    "suggestion": "i=stem",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#004",
+  "chapter": "person-marking-architecture",
+  "lines": "191",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'stem=as' is presented with 'stem' as a placeholder. It would be clearer to use a specific Ainu verb stem or indicate that 'stem' is a generic representation.",
+    "quote": "stem=as",
+    "suggestion": "stem=as",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ci=stem' is presented with 'stem' as a placeholder. It would be clearer to use a specific Ainu verb stem or indicate that 'stem' is a generic representation.",
+    "quote": "ci=stem",
+    "suggestion": "ci=stem",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'un=stem' is presented with 'stem' as a placeholder. It would be clearer to use a specific Ainu verb stem or indicate that 'stem' is a generic representation.",
+    "quote": "un=stem",
+    "suggestion": "un=stem",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#002",
+  "chapter": "person-marking-architecture",
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'sinuma' is presented with a slash and 'oka'. It's unclear if these are alternative forms, dialectal variations, or if 'sinuma' is a typo and 'oka' is the correct form.",
+    "quote": "sinuma / oka",
+    "suggestion": "sinuma / oka",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#051",
+  "chapter": "person-marking-architecture",
+  "lines": "395-396",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The detransitiviser is described as 'i-', but in example line 231–233, 'i=erampokiwen' uses 'i=' as a fourth-person object marker. The prefix 'i-' and clitic 'i=' are homophonous but differ in boundary symbol (= vs -), yet the text calls them 'homophonous' without clarifying the morphological distinction.",
+    "quote": "the homophonous detransitivising prefix <i lang=\"ain-Latn\">i-</i> ‘something’",
+    "suggestion": "Clarify that 'i=' (clitic) and 'i-' (prefix) are homophonous in form but differ in attachment and function, and ensure boundary symbols are consistently used to distinguish them.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#045",
+  "chapter": "person-marking-architecture",
+  "lines": "33-38",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table does not show a singular/plural distinction for person 3 or person 4. The fourth person is listed as a single row, and the third person is listed as a single row. The claim that 'each' has a singular and a plural is not supported by the table.",
+    "quote": "Nakagawa recognises four formal persons, numbered 1 to 4, each with a singular and a plural",
+    "suggestion": "Either add singular/plural rows for persons 3 and 4, or rephrase to 'most with a singular and a plural' or 'with singular and plural forms for persons 1, 2, and 4'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#035",
+  "chapter": "person-marking-architecture",
+  "lines": "196-199",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The side-encoding table shows 4/INDEF S as 'stem=an' and A as 'a=stem'. The main table at lines 127-132 shows S as '=an' and A as 'a='. Consistent. No inconsistency.",
+    "quote": "4 / INDEF ... stem=an ... a=stem ... i=stem",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#034",
+  "chapter": "person-marking-architecture",
+  "lines": "191-193",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The side-encoding table shows 1PL.EXCL S as 'stem=as' and A as 'ci=stem'. However, the main table at lines 96-100 shows S as '=as' and A as 'ci='. The side-encoding table adds 'stem' to show position, which is fine. No inconsistency.",
+    "quote": "1PL.EXCL ... stem=as ... ci=stem ... un=stem",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#033",
+  "chapter": "person-marking-architecture",
+  "lines": "166-176",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says first singular and second person are 'prefixal, or zero' in both subject roles. However, the table at lines 86-116 shows 1SG A=ku=, S=ku= (both prefixal), 2SG A=e=, S=e= (both prefixal), 2PL A=eci=, S=eci= (both prefixal). The 'or zero' seems to refer to third person, not first/second. This is slightly misleading.",
+    "quote": "First singular and second person are prefixal, or zero, in both subject roles. First plural exclusive and the fourth person switch sides by transitivity",
+    "suggestion": "Clarify that 'or zero' refers to the third person, not to first/second persons.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#032",
+  "chapter": "person-marking-architecture",
+  "lines": "144-145",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at lines 102-116 shows 2SG and 2PL as S=A=O with alignment 'neutral', which matches. However, the prose at lines 275-276 says 'Second person collapses the role distinction: e= marks 2SG as A, S, and O, and eci= does the same for 2PL.' This is consistent. No inconsistency.",
+    "quote": "The second-person cells are neutral, e= and eci= spanning A, S, and O alike.",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at lines 118-124 shows third person as Ø for A, S, and O with alignment 'zero'. The prose discusses the dispute about whether this is a zero affix or absence. This is consistent. No inconsistency.",
+    "quote": "The third person is unmarked. Whether the blank reflects a zero affix or the absence of any third-person exponent is disputed",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#031",
+  "chapter": "person-marking-architecture",
+  "lines": "138-142",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at lines 86-92 shows 1SG as S=A≠O with alignment 'nominative–accusative', which matches this prose. However, the prose at lines 403-405 says '1SG is nominative–accusative with S=A≠O', which is consistent. No inconsistency.",
+    "quote": "The first singular is the one nominative–accusative cell: ku= serves both S and A, opposed to the object en= <Ref k=\"bugaeva2012\" p=\"472\" />; <Ref k=\"bugaeva2008\" p=\"32\" />.",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#030",
+  "chapter": "person-marking-architecture",
+  "lines": "127-132",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table shows the fourth person as tripartite (S≠A≠O), but the forms show a= for A, =an for S, and i= for O — this is indeed tripartite. However, the prose at lines 169-173 says 'First plural exclusive and the fourth person switch sides by transitivity', which is consistent. No inconsistency.",
+    "quote": "4 / INDEF ... S≠A≠O; tripartite",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#028",
+  "chapter": "person-marking-architecture",
+  "lines": "42-53",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a paragraph that merely reports different scholars' positions without making a claim that is contested. The tag should apply to the claim that the fourth person is a single category, not to the reporting of different analyses.",
+    "quote": "Nakagawa calls it the fourth person; Tamura divides the same Saru forms into separate persons — the inclusive, the quotative, the second-person honorific, and the indefinite — counting eleven persons in all; Bugaeva uses “indefinite” and reanalyses the quotation use as logophoric; Satō treats the forms as polysemous; and Takahashi, working on Tokachi, adopts “inclusive person” as the label that unifies the otherwise disparate uses <Ref k=\"nakagawa2024\" p=\"174–179\" />; <Ref k=\"tamura1972\" p=\"18–20, 39\" />; <Ref k=\"bugaeva2012\" p=\"474–476\" />; <Ref k=\"bugaeva2008\" p=\"40–43\" />; <Ref k=\"sato2008\" p=\"203–208\" />; <Ref k=\"takahashi2015\" p=\"205–210\" /> ‹contested›.",
+    "suggestion": "Move the ‹contested› tag to the specific claim that is contested, or remove it if the paragraph is purely descriptive.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#027",
+  "chapter": "person-marking-architecture",
+  "lines": "33-38",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at lines 86-134 shows only 1SG, 1PL.EXCL, 2SG, 2PL, 3, and 4/INDEF — there is no 1PL.INCL row, and the fourth person is not split into singular and plural in the table. The prose claims 'each with a singular and a plural' but the table does not show a singular/plural distinction for person 3 or person 4.",
+    "quote": "Nakagawa recognises four formal persons, numbered 1 to 4, each with a singular and a plural",
+    "suggestion": "Either add the missing rows to the table or adjust the prose to reflect what the table actually shows.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#026",
+  "chapter": "person-marking-architecture",
+  "lines": "7-8",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that transitive predicates index 'the combination of its subject and its object' is contradicted later in the chapter (lines 309-310) where it states 'A verb admits at most one subject index and one object index' — the verb indexes them separately, not as a combined portmanteau (except for the eci= portmanteau).",
+    "quote": "An intransitive predicate indexes its single argument; a transitive predicate indexes the combination of its subject and its object.",
+    "suggestion": "Rephrase to 'a transitive predicate indexes both its subject and its object' or 'indexes its subject and its object separately'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The list of independent pronouns omits the third-person pronouns sinuma/oka and the fourth-person plural aoka that appear in the table at lines 120 and 128. The prose says 'Independent pronouns — ...' but only lists four forms, while the table shows more.",
+    "quote": "Independent pronouns — kani ‘I’, eani ‘you’, coka ‘we (excluding you)’, asinuma ‘the fourth-person self’",
+    "suggestion": "Either add the missing pronouns to the list or clarify that only representative forms are given.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#022",
+  "chapter": "person-marking-architecture",
+  "lines": "381",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'fourth-person S suffix =an'. While '=an' is indeed the fourth-person S suffix, the example sentence uses 'arki=an', where '=an' is attached to the plural stem 'arki'. The note could be more precise by saying 'fourth-person S suffix =an appears on the plural stem arki'.",
+    "quote": "note=\"The honorific addressee is a single person, yet the fourth-person S suffix =an appears on the plural stem arki.\"",
+    "suggestion": "The note is accurate but could be slightly rephrased for maximum clarity, e.g., '...yet the fourth-person S suffix =an appears attached to the plural stem arki.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#016",
+  "chapter": "person-marking-architecture",
+  "lines": "328",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions '1SG.A subject is indexed'. While correct, it could be more precise by stating that the '1SG.A subject is indexed by the prefix ku='.",
+    "quote": "note=\"Both non-subject participants are third person and surface as bare noun phrases; only the 1SG.A subject is indexed.\"",
+    "suggestion": "The note is accurate but could be slightly rephrased for maximum clarity, e.g., '...only the 1SG.A subject is indexed by the prefix ku='.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#012",
+  "chapter": "person-marking-architecture",
+  "lines": "277",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A>2SG.O=help' for 'eci=kasuy' is a bit dense. It correctly indicates the person and role, but could be broken down further for clarity, e.g., '1SG.A>2SG.O-help'.",
+    "quote": "g=\"something even 1SG.A>2SG.O=help NMLZ exist Q\"",
+    "suggestion": "1SG.A>2SG.O-help",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-marking-architecture~p1#009",
+  "chapter": "person-marking-architecture",
+  "lines": "238",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'with a= for A and =an for S', but the example sentence uses 'i=' for the object. This is consistent with the table, but the phrasing in the note could be more precise to avoid confusion.",
+    "quote": "note=\"The fourth-person object i= recurs three times; with a= for A and =an for S, one person distinguishes all three roles, the tripartite pattern of the table above.\"",
+    "suggestion": "The note is accurate but could be slightly rephrased for maximum clarity, e.g., 'The fourth-person object i= recurs three times; when combined with a= for A and =an for S, one person distinguishes all three roles...'",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

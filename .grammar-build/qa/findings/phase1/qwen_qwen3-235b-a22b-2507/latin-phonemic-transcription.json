@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "378",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "/s/ ([ɕ] before /i/)",
+  "issue": "The IPA transcription in the table includes a phonetic detail ([ɕ]) that is not reflected in the corresponding grapheme column, which only lists 's'. This creates a mismatch between the phonemic representation and the phonetic annotation.",
+  "suggestion": "Consider adding a note in the 'This grammar' column or adjusting formatting to clarify that [ɕ] is an allophone of /s/.",
+  "confidence": 0.9,
+  "chapter": "latin-phonemic-transcription",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "387",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "/m n r w j h/",
+  "issue": "The IPA symbol /j/ is used for the glide corresponding to grapheme <i lang=\"ain-Latn\">y</i>, but in the rest of the chapter the grapheme is consistently referred to as <i lang=\"ain-Latn\">y</i>. While correct, the sudden use of /j/ without explicit cross-reference in this row may cause confusion for readers unfamiliar with IPA conventions.",
+  "suggestion": "Add a parenthetical note such as \"(/j/ corresponds to grapheme y)\" in the same cell for clarity.",
+  "confidence": 0.7,
+  "chapter": "latin-phonemic-transcription",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "193",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"kirikae1997\" /> ‹asserted›",
+  "issue": "The epistemic tag ‹asserted› appears after the citation but is not enclosed in guillemets as per the standard format (‹...›). This breaks the established pattern for evidence grading in the chapter.",
+  "suggestion": "Wrap the tag in guillemets: ‹asserted› → ‹asserted›",
+  "confidence": 1,
+  "chapter": "latin-phonemic-transcription",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "277",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2024)",
+  "issue": "The citation format places the parenthetical attribution before the <Ref> tag, whereas elsewhere in the chapter (e.g., line 180) it follows after. This creates inconsistency in citation presentation.",
+  "suggestion": "Standardize order: move the <Ref> tag before the parenthetical, as in line 180: (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />)",
+  "confidence": 0.95,
+  "chapter": "latin-phonemic-transcription",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "200",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"sato2008\" />; <Ref k=\"nakagawa2024\" />",
+  "issue": "Two citations are separated by a semicolon and space, but no space follows the semicolon — this is a typographic inconsistency. Standard punctuation would include a space after the semicolon.",
+  "suggestion": "Add space after semicolon: \"; \" → \"; \"",
+  "confidence": 0.9,
+  "chapter": "latin-phonemic-transcription",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "401",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "apostrophe <em>ʼ</em> before vowels",
+  "issue": "The use of <em>ʼ</em> (modifier letter apostrophe) differs from the straight apostrophe used in the main text (e.g., line 212: <i lang=\"ain-Latn\">'a</i>). This creates orthographic inconsistency in representing the glottal stop onset.",
+  "suggestion": "Use consistent apostrophe form: replace <em>ʼ</em> with <code>'</code> to match <i lang=\"ain-Latn\">'a</i> elsewhere.",
+  "confidence": 0.85,
+  "chapter": "latin-phonemic-transcription",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "319",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2024) ‹contested›",
+  "issue": "The epistemic tag ‹contested› is not enclosed in guillemets, breaking the standard format used elsewhere in the chapter for evidence grading.",
+  "suggestion": "Wrap the tag: ‹contested›",
+  "confidence": 1,
+  "chapter": "latin-phonemic-transcription",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

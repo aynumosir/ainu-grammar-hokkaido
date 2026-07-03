@@ -1,0 +1,632 @@
+[
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#006",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "400",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2022) is marked as speculative and lacking specific page/chapter confirmation. This tag should ideally be removed or the information confirmed.",
+    "quote": "‹speculative; exact chapter and page not confirmed against the print edition›",
+    "suggestion": "Confirm the exact chapter and page for the Bugaeva (2022) citation or remove the speculative tag if it cannot be verified.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference slug 'narrative-tam-evidential-patterning-by-genre' does not match the pattern of other cross-references in the chapter (e.g., 'hine-akusu-switch-reference', 'sequential-wa-and-clause-chaining'). It is unusually long and may be a placeholder or draft slug.",
+    "quote": "The interaction of the evidential system with narrative genre is pursued further in <Xr ch=\"narrative-tam-evidential-patterning-by-genre\" />.",
+    "suggestion": "Verify the correct slug for the target chapter and update if necessary.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference slug 'narrative-tam-evidential-patterning-by-genre' is unusually long and does not match the pattern of other cross-references in the chapter (e.g., 'hine-akusu-switch-reference', 'sequential-wa-and-clause-chaining'). It may be a draft slug that was not finalized.",
+    "quote": "The interaction of the evidential system with narrative genre is pursued further in <Xr ch=\"narrative-tam-evidential-patterning-by-genre\" />.",
+    "suggestion": "Verify the correct slug for the target chapter and update if necessary.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference slug 'narrative-tam-evidential-patterning-by-genre' is unusually long and does not match the pattern of other cross-references in the chapter (e.g., 'hine-akusu-switch-reference', 'sequential-wa-and-clause-chaining'). It may be a draft slug that was not finalized.",
+    "quote": "The interaction of the evidential system with narrative genre is pursued further in <Xr ch=\"narrative-tam-evidential-patterning-by-genre\" />.",
+    "suggestion": "Verify the correct slug for the target chapter and update if necessary.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 306: a speculative claim is backed by an unspecific citation, creating epistemic inflation. The source must be locatable to support even a speculative tag.",
+    "quote": "<Ref k=\"bugaeva2022\" /> ‹speculative; exact chapter and page not confirmed against the print edition›",
+    "suggestion": "Add page/chapter to Ref or remove citation until verified.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#004",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "306",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2022) is marked as speculative and lacking specific page/chapter confirmation. This tag should ideally be removed or the information confirmed.",
+    "quote": "‹speculative; exact chapter and page not confirmed against the print edition›",
+    "suggestion": "Confirm the exact chapter and page for the Bugaeva (2022) citation or remove the speculative tag if it cannot be verified.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation is tagged as ‹speculative› and the note admits the exact chapter and page are not confirmed. This is a register leak: the note is addressed to the production process rather than the reader. The reader does not need to know that the page reference is unconfirmed.",
+    "quote": "The Handbook's descriptive grammar reports that the sequence perfective a plus a connective such as korka, wa, or nominal p tends to fall at points where the scene, topic, or actor of a narrative changes <Ref k=\"bugaeva2022\" /> ‹speculative; exact chapter and page not confirmed against the print edition›.",
+    "suggestion": "Either confirm the exact page reference and remove the note, or rephrase to indicate uncertainty without the production-process note, e.g., 'The Handbook's descriptive grammar reports this pattern (Bugaeva 2022, chapter not specified).'",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹speculative› is attached to a claim supported only by an uncited source (no page given in Ref). This inflates confidence: a speculative claim should not be presented as supported by a citation without specific locator.",
+    "quote": "<Ref k=\"bugaeva2022\" /> ‹speculative; exact chapter and page not confirmed against the print edition›",
+    "suggestion": "Either add page/chapter to the Ref or remove the Ref tag if not verifiable, to avoid citation inflation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#009",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "62",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Japanese place names 静内 and 十勝 are not translated or glossed, while the chapter elsewhere provides English glosses for Japanese terms.",
+    "quote": "静内, 十勝, general prose",
+    "suggestion": "Add English glosses: 'Shizunai, Tokachi, general prose'",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Dialect names in kanji (静内, 十勝) lack romanized labels (e.g., SHI, TOK), unlike other entries in the table that use roman abbreviations. This creates inconsistency in dialect notation.",
+    "quote": "静内, 十勝, general prose",
+    "suggestion": "Add roman abbreviations: e.g., 'SHI, TOK, general prose'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#008",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "56",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Japanese place names 幌別 and 石狩 are not translated or glossed, while the chapter elsewhere provides English glosses for Japanese terms (e.g., line 270 translates のだ). This is inconsistent.",
+    "quote": "Saru verse, 幌別, 石狩",
+    "suggestion": "Add English glosses: 'Saru verse, Horobetsu, Ishikari'",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Dialect names are given in kanji (幌別, 石狩) without accompanying romanized labels (e.g., HOS, ISH), unlike other rows that use roman abbreviations (SAR, TOK). This breaks orthographic consistency.",
+    "quote": "Saru verse, 幌別, 石狩",
+    "suggestion": "Add roman abbreviations: e.g., 'Saru verse, HOS, ISH'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#007",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "50",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Japanese place names 本別 and 十勝 are not translated or glossed, while the chapter otherwise translates Japanese terms (e.g., line 270 translates のだ). This is inconsistent with the chapter's practice of providing English glosses for Japanese terms.",
+    "quote": "absent in 本別; <i lang=\"ain-Latn\">hinne</i> ‹十勝›",
+    "suggestion": "Add English glosses: 'absent in Honbetsu; hinne (Tokachi)'",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The dialect tag ‹十勝› appears in kanji without a corresponding romanized label (e.g., TOK), unlike other dialect tags in the table which use roman abbreviations (SAR, CHI). This creates inconsistency in dialect notation style.",
+    "quote": "pan-Hokkaido (absent in 本別; <i lang=\"ain-Latn\">hinne</i> ‹十勝›)",
+    "suggestion": "Standardize by adding the roman abbreviation: e.g., '‹TOK›' after or instead of ‹十勝›.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#028",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "401",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Duplicate of line 307: a production note about citation verification is visible in the prose, which is a serious register leak.",
+    "quote": "‹speculative; exact chapter and page not confirmed against the print edition›",
+    "suggestion": "Remove the parenthetical explanation; handle source verification status off-stage.",
+    "confidence": 0.99
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#027",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "307",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This is a clear pipeline comment — about source verification status — exposed in the final text. It belongs in editorial notes, not in the published chapter.",
+    "quote": "‹speculative; exact chapter and page not confirmed against the print edition›",
+    "suggestion": "Remove the parenthetical and either verify the citation or mark the claim as speculative without meta-commentary.",
+    "confidence": 0.99
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#024",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "312",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme \"ru-we\" is glossed as \"track-POSS COP\", but in context it is clearly the evidential \"ruwe ne\" ('it is a fact that'). Glossing it as \"track-POSS\" misrepresents its grammatical function and contradicts the surrounding discussion.",
+    "quote": "m=\"mat-kor hine oka=an ru-we ne a p\"",
+    "suggestion": "Change gloss to \"EVID COP\" or \"FACT COP\" to reflect evidential use, not possessive.",
+    "confidence": 0.99
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#023",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "291",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme \"ru-we\" appears twice and is glossed as \"track-POSS COP\" — but \"ru-we\" is likely the evidential \"ruwe\" (it is a fact) and should not be glossed as \"track-POSS\". This is a serious mismatch: \"ruwe\" is a grammatical evidential, not a lexical possessive.",
+    "quote": "m=\"kanpi ku=sanke ru-we ne akusu itasa kanpi ek ru-we ne\"",
+    "suggestion": "Correct gloss: \"ru-we\" should be glossed as \"EVID\" or \"FACT\" not \"track-POSS\". Possibly a typo: \"ruwe\" ≠ \"ru-we\" if \"we\" is a bound noun.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#022",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "236",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string has 9 elements: rikun kanto ta a=sa-ha i=resu hine oka=an pe ne hike. The gloss has 10 words: 'be.high heaven LOC 4.POSS=elder.sister-POSS 4.O=raise CONJ exist.PL=4.S NMLZ COP CONJ'. There is a mismatch in count — likely 'be.high' should be one gloss for 'rikun'.",
+    "quote": "g=\"be.high heaven LOC 4.POSS=elder.sister-POSS 4.O=raise CONJ exist.PL=4.S NMLZ COP CONJ\"",
+    "suggestion": "Revise gloss to match: e.g., 'high heaven LOC ...' or 'be.high' as a single unit if it's a compound. Alternatively, split 'rikun' if it has internal structure.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#021",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "225",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss has three gloss words for the two morphemes \"pe ne\": \"NMLZ COP\", but \"hike\" is glossed as \"CONJ\". However, \"pe\" is a nominalizer, \"ne\" is copula, and \"hike\" is a connective — so the glossing is correct, but the alignment is off: \"pe ne\" should be glossed together as \"NMLZ COP\", and \"hike\" as \"CONJ\". The current format may misalign.",
+    "quote": "g=\"4.POSS=elder.brother-POSS exist CONJ exist.PL=4.S NMLZ COP CONJ\"",
+    "suggestion": "Ensure alignment: one gloss per morpheme. Current is acceptable if \"pe\"→\"NMLZ\", \"ne\"→\"COP\", \"hike\"→\"CONJ\" — but formatting should reflect that.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#020",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "166",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme \"hi\" at the end has no corresponding gloss in the aligned gloss string, which ends at \"NMLZ\" for \"rok\". This leaves one morpheme unglossed.",
+    "quote": "m=\"inkar=an awa somosuykusun inkar=an kuni a=ramu rok hi\"",
+    "suggestion": "Add gloss for \"hi\", e.g., \"NMLZ\" or \"NMLZR\" if it is a nominalizer, to match the morpheme count.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#019",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "130",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme \"ka\" appears twice and is glossed as \"also\" in the aligned gloss, but the free translation does not reflect additive meaning ('also'). The translation implies definiteness ('those pots and bowls') rather than inclusiveness or addition.",
+    "quote": "m=\"nea su ka itanki ka pirkano huraye hine rorunso or ta kor wa arpa hine ukao hine oka=an\"",
+    "suggestion": "Revise free translation to include additive sense: e.g., 'She washed those pots and also bowls cleanly...'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#018",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "112",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes two instances of \"an\" as separate words (after onaha and unuhu), but the gloss \"4.POSS=father exist 4.POSS=mother exist CONJ exist.PL=4.S\" treats \"an\" as a single glossed item at the end. This mismatches: the first two \"an\" tokens are not glossed individually, though they carry the same existential meaning.",
+    "quote": "m=\"a=onaha an a=unuhu an hine oka=an\"",
+    "suggestion": "Revise gloss to align: e.g., \"4.POSS=father exist 4.POSS=mother exist CONJ exist.PL=4.S\" should reflect three separate \"exist\" glosses if three \"an\" tokens are present.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#010",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "68",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "SAR is used as a dialect abbreviation without being defined in this chapter. While it may be defined elsewhere, the chapter uses other dialect abbreviations (e.g., CHI, line 295) without definition, but SAR is the only one used in the table without a gloss.",
+    "quote": "primarily SAR",
+    "suggestion": "Add a footnote or parenthetical gloss: 'primarily Saru (SAR)'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#005",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "313",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for `p` is 'NMLZ' (nominalizer), but the note states 'The p is not an argument of the following clause — it is at the connective end of the formal-noun grammaticalization cline'. This suggests `p` might function as a connective here, which is not fully captured by 'NMLZ'.",
+    "quote": "wife-have CONJ exist.PL=4.S track-POSS COP PFV NMLZ",
+    "suggestion": "Consider refining the gloss for `p` in this context to better reflect its connective function, or ensure the note adequately explains this dual role.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#003",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "291",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme `ek` in the example is not glossed or translated. Its function is unclear in context.",
+    "quote": "kanpi ku=sanke ru-we ne akusu itasa kanpi ek ru-we ne",
+    "suggestion": "null",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#001",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "166",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme `hi` at the end of the example is not glossed or translated, and its function is unclear in context. It might be a typo or an unanalyzed element.",
+    "quote": "inkar=an awa somosuykusun inkar=an kuni a=ramu rok hi",
+    "suggestion": "null",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#026",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "250",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The tag appears mid-sentence without syntactic integration, resembling an editorial flag rather than part of the prose.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Rephrase: e.g., 'This pattern is corpus-suggested.'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#025",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "272",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› appears in the prose without being part of a structured evidence grading system visible to the reader. It reads like a pipeline annotation rather than integrated scholarly qualification.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Integrate the tag into a sentence: e.g., 'This is corpus-suggested.' or use parentheses.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#017",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "32",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The placement of two Ref tags after a cross-reference suggests both support the Xr link, but the sentence states that the distribution is treated in the Xr and cites Nakagawa and Sato as separate sources. The punctuation implies the sources support the Xr, which is not accurate.",
+    "quote": "<Xr ch=\"hine-akusu-switch-reference\" /> <Ref k=\"nakagawa2024\" p=\"345\" />; <Ref k=\"sato2008\" p=\"47–48\" />.",
+    "suggestion": "Rephrase to clarify: e.g., '...treated in <Xr ch=\"hine-akusu-switch-reference\" /> (see also <Ref k=\"nakagawa2024\" p=\"345\" />; <Ref k=\"sato2008\" p=\"47–48\" />).'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#016",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "26",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The semicolon between two Ref tags suggests both sources support the preceding claim, but the claim about hine frequency in folk tales vs. everyday speech is attributed only to Refsing in the sentence. Nakagawa is not mentioned as supporting that specific claim, so the citation placement may over-attribute.",
+    "quote": "<Ref k=\"refsing1986\" p=\"242\" />; <Ref k=\"nakagawa2024\" p=\"338\" />.",
+    "suggestion": "Move the Nakagawa citation to a position where it supports a jointly attested claim, or separate the sentences so each citation clearly supports its respective claim.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#015",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "272",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹corpus-suggested›, but the only support is a single Discord message from a community member. A single informal observation does not constitute corpus evidence; the tag should be ‹speculative› or the claim should be supported by actual corpus data.",
+    "quote": "Community observation from the aynu-corpora Discord corroborates and extends this picture: nukopoli notes that ruwe ne is especially frequent in folktales and legends, that it functions for scene transitions and summaries analogously to Japanese のだ, and that the sequence ruwe ne akusu is a common narrative collocation (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />) ‹corpus-suggested›.",
+    "suggestion": "Change ‹corpus-suggested› to ‹speculative›, or provide actual corpus citations to support the claim.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#014",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "249",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹corpus-suggested›, but the only evidence provided is two examples from the same narrator (Kawakami Matsuko). This is insufficient to support a 'corpus-suggested' tag; the claim should be downgraded to ‹speculative› or supported by additional corpus references.",
+    "quote": "Corpus evidence places the frame consistently at opening boundaries; it is not a device attested with the same density mid-narrative ‹corpus-suggested›.",
+    "suggestion": "Change ‹corpus-suggested› to ‹speculative›, or add additional corpus citations to support the claim.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#013",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "183",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹corpus-suggested›, but the only support provided is the single example (Ex 631 from Nakagawa). A single example does not constitute corpus evidence; the tag should be ‹speculative› or the claim should be supported by additional corpus references.",
+    "quote": "This suspension effect — forcing the listener to hold the verb in suspension during the inter-clausal parenthetical and only then receive its complement — is a resource of oral poetics in Saru verse ‹corpus-suggested›.",
+    "suggestion": "Change ‹corpus-suggested› to ‹speculative›, or add additional corpus citations to support the claim.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#012",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "172",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note states that the morphology of somosuykusun is 'opaque in the accessible sources', but the chapter does not cite any source for this claim of opacity. This is a meta-commentary about source availability rather than a factual claim about Ainu, and it is not supported by a citation.",
+    "quote": "note=\"Four verse lines displayed as one morphemic line. ... somosuykusun 'something beyond imagining' is a lexical expression whose internal morphology is opaque in the accessible sources; the gloss follows Nakagawa's Japanese rendering まさかそのようなものを. rok is a perfect marker.\"",
+    "suggestion": "Either remove the comment about source opacity or provide a citation for the claim that the morphology is opaque.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#011",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "162",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation '金田一 (1931b)' is given in Japanese without a corresponding Ref tag or bibliographic entry. The chapter otherwise uses Ref tags for citations (e.g., Ref k='nakagawa2024'). This is inconsistent and may confuse readers who expect a full reference.",
+    "quote": "The following verse couplet, transmitted via Nakagawa from 金田一 (1931b), shows the pattern at its clearest:",
+    "suggestion": "Add a Ref tag for Kindaichi 1931b, e.g., <Ref k='kindaichi1931b' />, and ensure it appears in the bibliography.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tail-head-linkage-and-narrative-cohesion~p1#002",
+  "chapter": "tail-head-linkage-and-narrative-cohesion",
+  "lines": "172",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the example shows four verse lines, but the example itself only contains one line of Ainu morphemes (`m`). This is a contradiction.",
+    "quote": "Four verse lines displayed as one morphemic line. The tail verb inkar=an '(I) looked' at the end of line 1 is repeated as the head of line 3 (inkar=an kuni 'that (I) would look'), with the awa discovery connective bridging the juncture. somosuykusun 'something beyond imagining' is a lexical expression whose internal morphology is opaque in the accessible sources; the gloss follows Nakagawa's Japanese rendering まさかそのようなものを. rok is a perfect marker.",
+    "suggestion": "Clarify how the four verse lines are represented in the provided example, or adjust the note to accurately reflect the example.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

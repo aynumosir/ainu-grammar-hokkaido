@@ -261,3 +261,11 @@ packets. Nothing else.
   Phase-3 concordance (106 inconsistently-glossed morphemes reported, incl. i= and a=
   outlier classes). Ledger seeded (28 recon findings). Phase 1 sweeps launched ×3 models.
   Fugu review of this plan still pending (limit resets Jul 6 09:00).
+- 2026-07-04 (later): Phase 2 locator lane done — page-offset maps calibrated for 5 sources;
+  199 ex-locators checked, 128 machine-verified fixes applied (195/199 supported; 4 in ledger).
+  Phase 1 COMPLETE — 3 cross-family sweeps over all 172 content chapters (~$2.10 total;
+  qwen 176/0 fail, deepseek 176 after retry, gemini 169/172): 6,239 candidate clusters,
+  727 with ≥2-model agreement promoted to the ledger (755 total findings, 164 chapters).
+  Agreed-lane precision ≈80% on gold-chapter sample; known blind spot: table-vs-prose
+  arithmetic (stays with Phase-2 verify lane). Single-model pool (5,512) retained in
+  findings/phase1-merged/ as low-confidence input for verification.

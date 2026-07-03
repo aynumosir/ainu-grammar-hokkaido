@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "224",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The read sources do not argue for it",
+  "issue": "The phrase 'the read sources' is a pipeline register leak, addressed to the production process rather than the reader.",
+  "suggestion": "Replace with 'The sources consulted do not argue for it' or 'The available analyses do not argue for it'.",
+  "confidence": 0.9,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "264",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "the read sources",
+  "issue": "The phrase 'the read sources' is a pipeline register leak, addressed to the production process rather than the reader.",
+  "suggestion": "Replace with 'the sources consulted' or 'the available literature'.",
+  "confidence": 0.9,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "271",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "the read sources",
+  "issue": "The phrase 'the read sources' is a pipeline register leak, addressed to the production process rather than the reader.",
+  "suggestion": "Replace with 'the sources consulted' or 'the available literature'.",
+  "confidence": 0.9,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "407",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "read directly",
+  "issue": "The phrase 'read directly' is a pipeline register leak, indicating a process note rather than a statement intended for the reader.",
+  "suggestion": "Rephrase to 'that study was not consulted first-hand for this grammar' or 'was not available to the author'.",
+  "confidence": 0.8,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "53",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "‹corpus-confirmed›",
+  "issue": "The epistemic tag 'corpus-confirmed' is attached to a claim supported by a Discord message and a published source, but the claim is not based on corpus data; the tag may be inflated.",
+  "suggestion": "Consider using a more appropriate tag such as '‹consensus›' or '‹original-needs-review›' if the evidence is from community discussion, or remove the tag.",
+  "confidence": 0.5,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "229",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "‹contested›",
+  "issue": "The epistemic tag 'contested' is placed on a sentence that simply states Nakagawa's analysis; it is unclear what is contested. The tag may be misapplied.",
+  "suggestion": "Remove the tag or clarify what aspect is contested.",
+  "confidence": 0.4,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

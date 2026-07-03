@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "342–343",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "The exact author and page of that passage have not been confirmed against the print edition",
+  "issue": "This is a meta note about verification status, addressed to the production process rather than the reader.",
+  "suggestion": "Rewrite as a factual statement, e.g., ‘The print edition does not identify the author or page for this passage’ if appropriate, or move to an open-points section.",
+  "confidence": 1,
+  "chapter": "clause-linkage-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "530",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "await verification against the print edition",
+  "issue": "This is a pipeline instruction, not a statement for the reader.",
+  "suggestion": "Reword as a present-tense fact about the source, e.g., ‘the print edition has not been consulted to verify this claim’.",
+  "confidence": 1,
+  "chapter": "clause-linkage-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "495–503",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.A=have lady PL 4.A=cherish CONJ every.day exist CONJ exist.PL=4.S\" … tr=\"Cherishing our ladies, we lived on day after day.\"",
+  "issue": "Gloss consistently marks person as 4th person (a=, an=, =an), but the translation uses 1st person plural ‘our’ and ‘we’. The note does not explain this shift, so the reader sees a person‑number mismatch.",
+  "suggestion": "Either adjust the gloss to ‘1PL’ (if that is the intended reading) or revise the translation to ‘Cherishing the ladies, one lived on…’ to match the 4th‑person gloss.",
+  "confidence": 0.9,
+  "chapter": "clause-linkage-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "113–200",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "seven semantic groups — temporal succession, unfolding event, condition, adversative, concession, cause/purpose, and conjecture/manner — together with a parallel-listing use",
+  "issue": "The text claims seven groups plus a parallel-listing use, making eight categories total, but the domain table that follows contains eight rows. The header of the eighth row is ‘narrative cohesion’ (not ‘parallel‑listing’), so the match between the seven groups and the eight rows is unclear, potentially confusing the reader.",
+  "suggestion": "Either explicitly align the table rows with the seven groups plus parallel listing, or revise the prose to state that there are eight domains.",
+  "confidence": 0.8,
+  "chapter": "clause-linkage-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "87",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "examples: wa, hine, kor, no, akusu, kusu, yakun, korka, yakka, sekor",
+  "issue": "This initial list of conjunctive particles does not include awa, yak, ciki, hike, or p, all of which appear later as connectives. While the list is labeled ‘examples’, the omission may lead a reader to think the list is exhaustive and then be puzzled by later forms.",
+  "suggestion": "Add a note that this is a representative sample, or expand the list to include all particles used in the chapter.",
+  "confidence": 0.7,
+  "chapter": "clause-linkage-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "190–198",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "orowa, connective p/hike, tail-head repetition",
+  "issue": "Earlier (line 57) orowa is classed as a connective adverb, not a conjunctive particle. In this domain table orowa is listed as a ‘main Hokkaido linker’ alongside particles, blurring the earlier two-class distinction without comment.",
+  "suggestion": "Clarify that the ‘main Hokkaido linkers’ column includes both particles and adverbs, or separate them into two subcolumns.",
+  "confidence": 0.6,
+  "chapter": "clause-linkage-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "204",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Whole-corpus word-form counts confirm that these items carry the descriptive load, with the homonym caveat kept in view.",
+  "issue": "The phrase ‘these items’ is ambiguous: it could refer to the entire inventory of linkers, but the following sentences and table only list the eight ‘cleaner’ items (wa, kor, kusu are omitted). The reader may wonder which items are being confirmed.",
+  "suggestion": "Rephrase to ‘the less homonymous items’ or explicitly list the items referred to.",
+  "confidence": 0.7,
+  "chapter": "clause-linkage-overview",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

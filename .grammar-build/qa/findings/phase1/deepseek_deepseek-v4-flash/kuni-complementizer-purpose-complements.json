@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "7-8",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "nominalizes a finite VP into a nominal whose content is irrealis, prospective, or deontic",
+  "issue": "The phrase 'nominalizes a finite VP into a nominal' is slightly redundant; 'nominalizes a finite VP' would suffice, or 'turns a finite VP into a nominal'.",
+  "suggestion": "Consider: 'nominalizes a finite VP whose content is irrealis, prospective, or deontic'",
+  "confidence": 0.6,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "12-15",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"475–476\" />. The complementizer <i lang=\"ain-Latn\">yak</i> marks the retrospective or ongoing counterpart; <i lang=\"ain-Latn\">hi</i> and <i lang=\"ain-Latn\">p</i> ~ <i lang=\"ain-Latn\">pe</i> nominalize without a temporal restriction <Ref k=\"nakagawa2024\" p=\"475–478\" />; <Ref k=\"sato2008\" p=\"176–177\" />.",
+  "issue": "The citation <Ref k=\"sato2008\" p=\"176–177\" /> is attached to the end of a sentence that lists multiple complementizers, but it's unclear whether Sato supports the entire claim about yak, hi, and p/pe, or only part of it. The citation placement is ambiguous.",
+  "suggestion": "Reposition the Sato citation to clarify which claim it supports, e.g., after 'nominalize without a temporal restriction' or as a separate sentence.",
+  "confidence": 0.7,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "34-36",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "Corpus search returns 6,113 tokens of <i lang=\"ain-Latn\">kuni</i> (rank 36), a figure that conflates the complementizer with any phonologically identical material and gives an upper bound on the construction's frequency.",
+  "issue": "The phrase 'gives an upper bound on the construction's frequency' is slightly informal and could be read as a pipeline note about methodology rather than a reader-facing explanation.",
+  "suggestion": "Rephrase to: '...providing an upper bound on the frequency of the construction.'",
+  "confidence": 0.5,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "136",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "the two forms are not freely interchangeable even in purely inferred contexts <Ref k=\"nakagawa2024\" p=\"476–477\" /> ‹corpus-suggested›.",
+  "issue": "The claim is attributed to Nakagawa (a published source) but tagged as ‹corpus-suggested›, which typically indicates a weaker evidence grade based on corpus data rather than a published analysis. If Nakagawa explicitly states this, the tag should be ‹consensus› or ‹corpus-confirmed›; if it's only suggested by corpus data, the citation to Nakagawa may be inappropriate.",
+  "suggestion": "Either remove the ‹corpus-suggested› tag or clarify that the corpus data suggest this, while Nakagawa's analysis may differ.",
+  "confidence": 0.8,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "256-263",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Whether bare <i lang=\"ain-Latn\">kuni ne</i> and <i lang=\"ain-Latn\">kuni p ne</i> are diachronically related variants or a single construction with optionally present <i lang=\"ain-Latn\">p</i> is not settled by the sources read here ‹speculative›.",
+  "issue": "Earlier in the chapter (lines 27-30), it is stated that 'Classical Ainu data show an expectative predication meaning 'it must be that' or 'in order that' (<i lang=\"ain-Latn\">kuni ne</i>)', implying that kuni ne is a distinct construction. Later (lines 256-263), the relationship between kuni ne and kuni p ne is described as unsettled. This is not a direct contradiction but could confuse readers about whether kuni ne is a separate construction or a variant of kuni p ne.",
+  "suggestion": "Consider adding a brief note reconciling the two statements, e.g., 'The Classical data show kuni ne as a distinct construction, but its relationship to the modern kuni p ne is debated.'",
+  "confidence": 0.6,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "289-322",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "Bugaeva's morphological analysis decomposes <i lang=\"ain-Latn\">kuni-p</i> as <i lang=\"ain-Latn\">kun-i-p</i> — an obligation-related root <i lang=\"ain-Latn\">kun-</i> (semantics uncertain), a possessive suffix <i lang=\"ain-Latn\">-i</i>, and the nominalizer <i lang=\"ain-Latn\">-p</i>",
+  "issue": "The chapter consistently uses <i lang=\"ain-Latn\">kuni p</i> (with a space) elsewhere, but here Bugaeva's analysis is presented as <i lang=\"ain-Latn\">kuni-p</i> (with a hyphen). This orthographic inconsistency could confuse readers about whether the space or hyphen is significant.",
+  "suggestion": "Use the same orthographic convention as elsewhere, e.g., 'kuni p' or clarify that Bugaeva treats it as a single morphological unit.",
+  "confidence": 0.7,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "303-309",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "Bugaeva's morphological analysis decomposes <i lang=\"ain-Latn\">kuni-p</i> as <i lang=\"ain-Latn\">kun-i-p</i> — an obligation-related root <i lang=\"ain-Latn\">kun-</i> (semantics uncertain), a possessive suffix <i lang=\"ain-Latn\">-i</i>, and the nominalizer <i lang=\"ain-Latn\">-p</i> — yielding a deontic head meaning 'the thing that must be done'",
+  "issue": "The gloss 'obligation-related root' for <i lang=\"ain-Latn\">kun-</i> is not reflected in any example glosses in the chapter; the examples consistently gloss <i lang=\"ain-Latn\">kuni</i> as 'PURP' (purposive). This is not a direct mismatch but could be confusing if readers compare the analysis with the example glosses.",
+  "suggestion": "Consider adding a note that the PURP gloss is a simplification, or use a different gloss in the analysis section.",
+  "confidence": 0.4,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "314-321",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "No read source provides a constituency test that decides between them for the <i lang=\"ain-Latn\">kuni</i> construction specifically ‹contested› <Ref k=\"nakagawa2024\" p=\"476\" />; <Ref k=\"bugaeva2016\" p=\"294\" />.",
+  "issue": "The claim that no source provides a constituency test is tagged as ‹contested›, but the citations to Nakagawa and Bugaeva suggest these sources are the ones that disagree. If they do not provide a test, the tag should be ‹consensus› (that no test exists) or the citations should be to sources that explicitly discuss the lack of a test.",
+  "suggestion": "Either remove the ‹contested› tag or clarify that the sources disagree on the analysis but neither provides a decisive test.",
+  "confidence": 0.7,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "324-331",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "Shibatani's Classical data add a historical dimension: his 'expectative mood' label groups <i lang=\"ain-Latn\">kuni ne</i> with the possessed sensory-noun heads, suggesting the formal-noun-like behavior Nakagawa observes reflects a partly grammaticalized noun origin — the same diachronic cline by which <i lang=\"ain-Latn\">ruwe</i>, <i lang=\"ain-Latn\">siri</i>, and <i lang=\"ain-Latn\">hawe</i> moved from sensory nouns to nominalization heads <Ref k=\"shibatani1990\" p=\"83–84\" /> ‹speculative›.",
+  "issue": "The claim about the diachronic cline is attributed to Shibatani (a published source) but tagged as ‹speculative›. If Shibatani explicitly proposes this, the tag should be ‹consensus› or at least ‹corpus-suggested›; if it's the author's speculation based on Shibatani, the citation should be separate from the speculative claim.",
+  "suggestion": "Rephrase to clarify that the speculation is the author's, not Shibatani's, e.g., '...suggesting, speculatively, that the formal-noun-like behavior...'",
+  "confidence": 0.8,
+  "chapter": "kuni-complementizer-purpose-complements",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

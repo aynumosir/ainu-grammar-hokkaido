@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "101",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "nukopoli, aynu-corpora Discord 2024-11-09; asserted; consistent with <Ref k=\"shibatani1990\" p=\"38\" paren />)",
+  "issue": "The citation to Shibatani 1990 is marked with 'paren', which appears to be a pipeline artifact indicating a parenthetical citation, but it is not standard markup and may not render correctly. The use of 'paren' as an attribute is not defined in the provided schema.",
+  "suggestion": "Replace 'paren' with a standard attribute such as 'note=\"parenthetical\"' or remove it if not needed.",
+  "confidence": 0.85,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "109",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "nukopoli, aynu-corpora Discord 2023-12-08, asserted; after <Ref k=\"tamura1996\" />)",
+  "issue": "The phrase 'after <Ref k=\"tamura1996\" />' is an unusual citation format. 'After' suggests a derivative or secondary claim, but the structure implies direct reporting. This could misrepresent the evidential support.",
+  "suggestion": "Rephrase to clarify the relationship, e.g., 'reported in Tamura (1996), as cited in nukopoli, aynu-corpora Discord 2023-12-08'.",
+  "confidence": 0.75,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "137",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "dial=\"SHI\"",
+  "issue": "The dialect tag 'SHI' is used here, but elsewhere in the chapter (e.g., line 138) the full name 'Shizunai' is mentioned. Inconsistent use of abbreviations vs. full names may confuse readers if not standardized.",
+  "suggestion": "Ensure consistency in dialect tagging: either always use abbreviations (SHI) with a key, or spell out the name.",
+  "confidence": 0.7,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "180",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"body=grow-PL PFV 4.A=wife-COP-child-ASS-POSS 4.A=child-ASS-POSS do PFV NMLZ COP PURP\"",
+  "issue": "The gloss includes 'NMLZ COP PURP' at the end, but the morpheme string ends with 'kusu', which is glossed as 'PURP' in the example. The 'NMLZ COP' part does not correspond to any morpheme in the 'm' string, suggesting a mismatch.",
+  "suggestion": "Verify the segmentation and gloss alignment; possibly the 'NMLZ COP' is incorrectly included or belongs to a different form.",
+  "confidence": 0.9,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "179",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "tr=\"They all grew up — the daughters and the children — because the children did so.\"",
+  "issue": "The free translation includes 'because the children did so', but the glossed clause 'a=po-utar-i ki' is translated as 'the children did so', which is not clearly causal. The gloss lacks a causal marker, and the structure 'ki' as 'do' does not inherently express causality.",
+  "suggestion": "Revise translation to remove 'because' unless supported by context or gloss, e.g., 'They all grew up — the daughters and the children — and the children did so.'",
+  "confidence": 0.85,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "242",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹contested›",
+  "issue": "The claim about Japanese influence on the word order 'patek ani' is tagged as ‹contested›, but the only support is a Discord comment (nukopoli), which is a weak source for such a claim. Elevating a single community assertion to a contested scholarly debate may overstate its status.",
+  "suggestion": "Downgrade epistemic tag to ‹speculative› or add a stronger source.",
+  "confidence": 0.8,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "283",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"bugaeva2012\" p=\"498\" />",
+  "issue": "The table entry cites Bugaeva 2012 p. 498 for wh-in-situ, but the prose on line 145 cites the same source and page for the same claim. This is consistent, but the table uses a full tag while the prose uses a minimal one — minor formatting inconsistency.",
+  "suggestion": "Standardize citation format between prose and table, though not strictly an error.",
+  "confidence": 0.6,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "277",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "postverbal, clause-final NP + <i lang=\"ain-Latn\">ki</i>",
+  "issue": "The use of <i lang=\"ain-Latn\">ki</i> in the table is inconsistent with the surrounding text, which uses <A w=\"ki\" gl=\"do\" /> when first introducing the form. The table should maintain consistent markup for linguistic terms.",
+  "suggestion": "Use <A w=\"ki\" gl=\"do\" /> in the table for consistency.",
+  "confidence": 0.75,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

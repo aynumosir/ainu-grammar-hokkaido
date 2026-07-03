@@ -1,0 +1,550 @@
+[
+ {
+  "id": "everyday-conversation-text~p1#006",
+  "chapter": "everyday-conversation-text",
+  "lines": "156-165",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.S' for '=an' is a bit terse. While the note explains it as a '4th-person intransitive suffix' with a 'general-experiencer reading', the gloss itself could be more explicit about the '4th-person' aspect.",
+    "quote": "m=\"sonno merayke=an\"\ng=\"truly be.cold=4.S\"\ntr=\"It really is cold.\"\nnote=\"merayke=an: the 4th-person intransitive suffix =an attaches to the property verb, yielding a general-experiencer reading ('it is cold out'). Compare merayke na above, where the subject is 3rd-person zero-marked.\"",
+    "suggestion": "Consider changing the gloss to '4.S.INTR' or '4.PERS.S.INTR' to be more descriptive.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '=4.S' for '=an' conflicts with the note and surrounding text that describe it as the 4th-person intransitive suffix, not a subject marker per se. The gloss should reflect role (indefinite experiencer) rather than syntactic subject.",
+    "quote": "m=\"sonno merayke=an\" g=\"truly be.cold=4.S\"",
+    "suggestion": "Change '=4.S' to '=INDF.S' or '=4.EX' to better represent the indefinite/experiencer function.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#004",
+  "chapter": "everyday-conversation-text",
+  "lines": "103-112",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'wa' is accurate but could be more descriptive given its function of closing a turn while leaving the chain formally open, as explained in the note. The note provides more nuance than the gloss.",
+    "quote": "m=\"totekno ku=an wa\"\ng=\"in.good.health 1SG.S=exist CONJ\"\ntr=\"I am well.\"\nnote=\"ku= is the 1SG.S prefix, mirroring the 2SG.S e= of the question. The clause-linking particle wa (CONJ) closes the turn without a following clause; in conversational Ainu, a wa-final utterance signals a complete turn while leaving the chain formally open (see Nakagawa 2024: 345).\"",
+    "suggestion": "Consider a more descriptive gloss for 'wa', such as 'TURN.END.CONJ' or 'CLAUSE.LINK.TURN.END', or ensure the note is sufficient.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ' for 'wa' does not match its function as a clause-linking particle that closes a turn; 'CONJ' is too vague and does not reflect its discourse-pragmatic role in Ainu. The note describes it as signaling a complete turn, which 'CONJ' fails to capture.",
+    "quote": "m=\"totekno ku=an wa\" g=\"in.good.health 1SG.S=exist CONJ\"",
+    "suggestion": "Use a more precise gloss such as 'CL.LINK' or 'TURN.CLOSE' to better reflect its function.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#003",
+  "chapter": "everyday-conversation-text",
+  "lines": "91-100",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to example 1, the gloss 'track-POSS' for 'ru-we' does not fully convey its function in forming a polar question, which is explained in the note. The gloss could be more informative about this interrogative function.",
+    "quote": "m=\"sapo totekno e=an ru-we\"\ng=\"older.sister in.good.health 2SG.S=exist track-POSS\"\ntr=\"Sister, have you been well?\"\nnote=\"e= is the 2SG.S prefix (intransitive subject), marking the addressee as the sole argument of an. totekno (in good health, well) is an adverb modifying the predicate. The polar-question ruwe frame is the same as in §2.\"",
+    "suggestion": "Revise the gloss for 'ru-we' to better indicate its role in forming a polar question, or ensure the note adequately clarifies this without relying on the gloss.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'track-POSS' for 'ru-we' is inconsistent with the free translation 'have you been well?' and the analysis that identifies it as a polar-question frame. The gloss should reflect question evidentiality, not possession.",
+    "quote": "m=\"sapo totekno e=an ru-we\" g=\"older.sister in.good.health 2SG.S=exist track-POSS\"",
+    "suggestion": "Change 'track-POSS' to 'Q.POLAR' or 'EVID.POLAR' to maintain consistency across examples.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#001",
+  "chapter": "everyday-conversation-text",
+  "lines": "44-52",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'track-POSS' for 'ru-we' does not clearly explain its function in forming a polar question, which is described in the note. The free translation 'Older sister, are you there?' implies a question, but the gloss doesn't directly convey this interrogative function.",
+    "quote": "m=\"sapo an ru-we\"\ng=\"older.sister exist track-POSS\"\ntr=\"Older sister, are you there?\"\nnote=\"Polar question via bare ruwe (without ne). The argument of an is zero-marked (3rd person, the sister inside the house). The same formula with an explicit 2SG.S prefix appears later in the same exchange (see §3 below).\"",
+    "suggestion": "Consider revising the gloss for 'ru-we' to better reflect its role in forming a polar question, or ensure the note fully clarifies this function without relying on the gloss.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'track-POSS' for 'ru-we' does not match the free translation 'Older sister, are you there?' which expresses a polar question, not tracking or possession. The correct gloss should reflect evidential or question-tracking function.",
+    "quote": "m=\"sapo an ru-we\" g=\"older.sister exist track-POSS\"",
+    "suggestion": "Change 'track-POSS' to 'Q.POLAR' or 'EVID.POLAR' to align with the intended meaning.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#010",
+  "chapter": "everyday-conversation-text",
+  "lines": "220",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The synopsis table lists 'polar-question frame' as a primary feature for the third utterance. Similar to the first utterance, the note in the corresponding example (lines 91-100) states 'The polar-question ruwe frame is the same as in §2.' While 'ruwe' is present, the main focus of the analysis for this utterance is the 2SG.S prefix 'e='. The 'polar-question frame' might be considered a secondary feature here, or its prominence needs to be better justified.",
+    "quote": "<td>2SG.S prefix <i lang=\"ain-Latn\">e=</i>; polar-question frame</td>",
+    "suggestion": "Consider reordering the features to prioritize the 2SG.S prefix 'e=' as the primary feature, or ensure the 'polar-question frame' aspect is as central to the analysis as the prefix.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists 'polar-question frame' as a feature, but the earlier section (§2) already attributes this same function to the first utterance; the table implies novelty, creating redundancy without clarification.",
+    "quote": "<td><i lang=\"ain-Latn\">sapo totekno e=an ru-we?</i></td>",
+    "suggestion": "Clarify in the table note that this is a recurrence of the polar-question frame with person marking added.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#005",
+  "chapter": "everyday-conversation-text",
+  "lines": "134-142",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'FIN' for 'na' is very general. The note clarifies it as a 'soft assertion marker', which is more specific and informative about its function in this context.",
+    "quote": "m=\"numan poronno upas as kusu tanto sonno merayke na\"\ng=\"last.night much snow fall because today truly be.cold FIN\"\ntr=\"Because there was a lot of snow last night, today is truly cold.\"\nnote=\"The causal clause (numan … kusu) provides the reason; the main clause (tanto … na) asserts the result. as 'stand/fall' is the standard verb for snowfall (upas as = snow falls). The sentence-final particle na is a soft assertion marker.\"",
+    "suggestion": "Change the gloss for 'na' to 'ASSERT.SOFT' or similar to better reflect its function.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'as' is glossed as 'fall' in the example, but the note states 'as' means 'stand/fall' and is used specifically for snowfall. The gloss should reflect this specialized meaning.",
+    "quote": "m=\"numan poronno upas as kusu tanto sonno merayke na\"",
+    "suggestion": "Revise gloss of 'as' to 'fall(snow)' or 'lie' to better match the semantic domain.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#025",
+  "chapter": "everyday-conversation-text",
+  "lines": "36",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term '3rd person' appears without macron (3rd), while other instances in the chapter use '3rd' consistently; no inconsistency in form, but '3rd' vs 'third' should be checked for style.",
+    "quote": "3rd person is zero-marked",
+    "suggestion": "Ensure consistent use of '3rd' or 'third' throughout the chapter.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#024",
+  "chapter": "everyday-conversation-text",
+  "lines": "175-177",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'final particle' is used for 'na', but in the example it appears before 'nankor', contradicting the linear order. The description should clarify that 'na' follows 'nankor' in surface form.",
+    "quote": "The Asahikawa form undergoes sandhi: <i lang=\"ain-Latn\">nankor</i> followed by the final particle <i lang=\"ain-Latn\">na</i> surfaces as <i lang=\"ain-Latn\">nankornā</i>, rendered in the source's Katakana as ナンコンナー.",
+    "suggestion": "Rephrase to: 'nankor followed by the sentence-final particle na surfaces as nankornā'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#023",
+  "chapter": "everyday-conversation-text",
+  "lines": "180-183",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'nankor na' is described in the note as undergoing sandhi to 'nankornā', but the morpheme line does not reflect this: it should be 'nankornā' or marked for sandhi.",
+    "quote": "m=\"nisatta sirpirka nankor na\" g=\"tomorrow be.fine.weather INFR FIN\"",
+    "suggestion": "Revise m=\"nisatta sirpirka nankor na\" to m=\"nisatta sirpirka nankornā\" or use diacritics to indicate sandhi.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#021",
+  "chapter": "everyday-conversation-text",
+  "lines": "18",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Inconsistent macron usage: 'Hokkaido' here without macron, but 'Hokkaidō' on line 9 with macron.",
+    "quote": "a northern Hokkaido variety",
+    "suggestion": "Standardize to one form.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#020",
+  "chapter": "everyday-conversation-text",
+  "lines": "248-251",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'wa' is a turn-final predicate controlling evidential/modal framing, but earlier (line 111) 'wa' is described as a 'clause-linking particle' (CONJ) that 'closes the turn without a following clause'. The characterization of 'wa' as an evidential/modal framer is inconsistent with its earlier description as a conjunction.",
+    "quote": "each turn-final predicate controls the evidential or modal framing for the whole turn — ruwe in the questions, wa in the open-chain response, bare na in the assertions, and nankor na in the inference.",
+    "suggestion": "Clarify whether 'wa' functions as a conjunction or an evidential/modal particle in this context, or reconcile the two descriptions.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#015",
+  "chapter": "everyday-conversation-text",
+  "lines": "8-10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Inconsistent macron usage: 'Hokkaidō' uses a macron, but elsewhere in the chapter 'Hokkaido' appears without a macron (lines 18, 35).",
+    "quote": "Hokkaidō Utari Kyōkai",
+    "suggestion": "Standardize to either 'Hokkaidō' or 'Hokkaido' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#014",
+  "chapter": "everyday-conversation-text",
+  "lines": "240",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The synopsis table lists 'inferential auxiliary nankor' as the primary feature. The text (lines 168-178) discusses 'nankor' and its inferential nature, but also notes the sandhi with the final particle 'na' (nankornā). The gloss in the example (lines 181-190) also includes 'na' with the gloss 'FIN'. It might be more accurate to consider the combination of 'nankor na' or the inferential assertion as the primary feature, rather than just the auxiliary in isolation.",
+    "quote": "<td>inferential auxiliary <i lang=\"ain-Latn\">nankor</i></td>",
+    "suggestion": "Consider rephrasing the primary feature to 'inferential assertion with nankor na' or similar, to encompass the full construction being illustrated.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#013",
+  "chapter": "everyday-conversation-text",
+  "lines": "235",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The synopsis table lists 'existential-type aspect' as a primary feature. While '=an' has an existential-type aspectual function, the more prominent and unique feature being illustrated here is the '4th-person suffix', which shifts the perspective and is contrasted with the 3rd-person zero-marking. The text (lines 146-152) emphasizes the 4th-person aspect.",
+    "quote": "<td>4th-person suffix <i lang=\"ain-Latn\">=an</i>; existential-type aspect</td>",
+    "suggestion": "Reorder the features to list '4th-person suffix =an' as the primary feature.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#012",
+  "chapter": "everyday-conversation-text",
+  "lines": "230",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The synopsis table lists 'property verb predication' as a primary feature. While 'merayke' is a property verb, the more significant grammatical construction being illustrated in this utterance is the causal clause with 'kusu', as detailed in the text (lines 125-130) and cross-referenced in the 'treated in' column. The causal clause is the more complex and emphasized feature.",
+    "quote": "<td>causal clause with <i lang=\"ain-Latn\">kusu</i>; property verb predication</td>",
+    "suggestion": "Reorder the features to list 'causal clause with kusu' as the primary feature.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#011",
+  "chapter": "everyday-conversation-text",
+  "lines": "225",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The synopsis table lists 'clause-linking wa' as a primary feature. While 'wa' is present and discussed, the main focus of the analysis for this utterance is the 1SG.S prefix 'ku='. The text (lines 117-119) mentions 'wa' is treated in another chapter, suggesting it might not be the *primary* feature being illustrated here, which is the person marking.",
+    "quote": "<td>1SG.S prefix <i lang=\"ain-Latn\">ku=</i>; clause-linking <i lang=\"ain-Latn\">wa</i></td>",
+    "suggestion": "Consider reordering the features to prioritize the 1SG.S prefix 'ku=' as the primary feature, as it directly contrasts with the 2SG.S prefix discussed in the previous example.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#009",
+  "chapter": "everyday-conversation-text",
+  "lines": "215",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The synopsis table mentions 'suppletive singular ahun'. While the text (lines 61-64) does mention that 'ahun' is the singular form and 'ahup' is its suppletive plural, the primary feature highlighted for this utterance in the synopsis is the directive particle 'ya'. The suppletive nature of 'ahun' is a secondary detail in this context.",
+    "quote": "<td>directive with softener <i lang=\"ain-Latn\">ya</i> (ASA ≈ <i lang=\"ain-Latn\">yan</i> elsewhere); suppletive singular <i lang=\"ain-Latn\">ahun</i></td>",
+    "suggestion": "Consider reordering the features or focusing the primary feature on the directive particle 'ya' as it's the more prominent grammatical point for this utterance in the context of the conversation.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#008",
+  "chapter": "everyday-conversation-text",
+  "lines": "210",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The synopsis table lists 'polar-question evidential frame (bare ruwe)' as a primary feature for the first utterance. However, the note in the corresponding example (lines 44-52) states 'Polar question via bare ruwe (without ne)', and the section title is 'Arrival and entry', not specifically about evidentiality. While 'ruwe' might have evidential implications, calling it an 'evidential frame' here might be an overstatement or require more explicit justification within the text.",
+    "quote": "<td>polar-question evidential frame (bare <i lang=\"ain-Latn\">ruwe</i>); 3rd-person zero-marking</td>",
+    "suggestion": "Clarify if 'ruwe' is primarily an evidential marker in this context, or if 'polar-question frame' is the more accurate description. If it is evidential, ensure this is consistently explained.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#022",
+  "chapter": "everyday-conversation-text",
+  "lines": "35",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'exist, be' suggests two meanings, but the verb is used only as 'exist' in the examples; no instance of 'be' (as copula or equative) appears in this chapter.",
+    "quote": "<A w=\"an\" gl=\"exist, be\" />",
+    "suggestion": "Revise gloss to 'exist' only, or clarify context where it might mean 'be'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#019",
+  "chapter": "everyday-conversation-text",
+  "lines": "189",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss in the example (line 182) gives 'INFR' for 'nankor', but the free translation (line 183) says 'Tomorrow will probably be fine.' The word 'probably' suggests epistemic modality (possibility), while the note says it is 'inference-based assertion'. The mismatch is between the gloss label 'INFR' (inferential) and the translation 'probably' (epistemic possibility). These are related but not identical; the translation implies uncertainty, while inference can be certain.",
+    "quote": "nankor encodes inference-based assertion (INFR): the speaker has no direct evidence about tomorrow's weather and reasons from current conditions.",
+    "suggestion": "Either change the gloss to something like 'EPIST' or 'INFER', or adjust the translation to 'Tomorrow will be fine (I infer)' to match the inferential reading.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#018",
+  "chapter": "everyday-conversation-text",
+  "lines": "150-152",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'V=an' is the same suffix in its aspectual function, but the example on line 156 shows 'merayke=an' glossed as 'be.cold=4.S' (4th person subject), not an aspectual function. The note on line 164 also says 'the 4th-person intransitive suffix =an attaches to the property verb, yielding a general-experiencer reading'. This contradicts the claim that it is an 'existential-type aspect form'.",
+    "quote": "The existential-type aspect form V=an is the same suffix in its aspectual function, discussed in <Xr ch=\"existential-locational-an-oka\" />.",
+    "suggestion": "Either remove the reference to aspectual function here, or clarify that =an has both a 4th person and an aspectual function, and specify which is at play in this example.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#017",
+  "chapter": "everyday-conversation-text",
+  "lines": "115-117",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This claim contradicts the earlier statement (lines 35-36) that 3rd person is zero-marked. If 3rd person is zero-marked, then the lack of a prefix in 'an ruwe' is not an 'omission' but regular grammar. The passage seems to treat zero as both a regular 3rd person marker and a conversational omission.",
+    "quote": "Person marking in the Ainu verb is obligatory in careful speech; its omission in the opening formula above reflects conversational reduction where the referent is fully recoverable from the situation",
+    "suggestion": "Reconcile the two accounts: either state that 3rd person is zero-marked (and the later 'omission' claim is wrong), or clarify that the zero in 'an ruwe' is a genuine omission of an obligatory prefix (contradicting the earlier claim).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#016",
+  "chapter": "everyday-conversation-text",
+  "lines": "35-36",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that 3rd person is zero-marked in Hokkaido Ainu is stated as a general fact, but the note on line 52 says the argument of 'an' is 'zero-marked (3rd person, the sister inside the house)'. However, the example on line 44 has no person prefix, which is consistent. The inconsistency is with the later claim on line 115-117 that 'Person marking in the Ainu verb is obligatory in careful speech; its omission in the opening formula above reflects conversational reduction'. This contradicts the earlier statement that 3rd person is zero-marked (i.e., zero is the regular 3rd person marker, not an omission).",
+    "quote": "in Hokkaido Ainu, the 3rd person is zero-marked",
+    "suggestion": "Clarify whether zero is the regular 3rd person marker or a conversational reduction. If zero is the regular marker, the later statement about 'omission' is misleading.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#007",
+  "chapter": "everyday-conversation-text",
+  "lines": "181-190",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'FIN' for 'na' is again very general. The note explains that 'nankor na' together encodes an inference-based assertion, but the gloss for 'na' itself doesn't reflect this. It's likely 'na' here functions similarly to the 'na' in example 134-142, but in conjunction with 'nankor'.",
+    "quote": "m=\"nisatta sirpirka nankor na\"\ng=\"tomorrow be.fine.weather INFR FIN\"\ntr=\"Tomorrow will probably be fine.\"\nnote=\"nankor encodes inference-based assertion (INFR): the speaker has no direct evidence about tomorrow's weather and reasons from current conditions. The Katakana ナンコンナー represents the ASA sandhi form nankor + na → nankornā.\"",
+    "suggestion": "Consider a gloss for 'na' that reflects its role in assertion, perhaps 'ASSERT' or 'ASSERT.FIN', especially in conjunction with 'nankor'. The note already explains the inferential aspect of 'nankor'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "everyday-conversation-text~p1#002",
+  "chapter": "everyday-conversation-text",
+  "lines": "68-76",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'INTERJ' for 'o' is vague. While the note explains it's a non-lexical interjection, the gloss could be more specific or at least indicate its interjectional nature more clearly.",
+    "quote": "m=\"o ahun ya\"\ng=\"INTERJ enter SOFT\"\ntr=\"Come on in, please.\"\nnote=\"o is a non-lexical interjection (Japanese sā 'well then' equivalent). ya in ASA functions as the imperative softener yan of other dialects; the footnote in the source makes this explicit.\"",
+    "suggestion": "Change gloss for 'o' to 'INTERJ' or 'VOC' (vocative) if appropriate, or ensure the note is sufficient for clarity.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

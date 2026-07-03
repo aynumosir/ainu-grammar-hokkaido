@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "229",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "inkar=an akus e=an ru-we a=nukar hi kusu",
+  "issue": "The gloss for 'e=an' is '2SG.S=exist', but 'e=' is the 2SG subject prefix and '=an' is the 4.S suffix; these cannot co-occur on the same verb. The form 'e=an' is morphologically impossible due to conflicting person/number values.",
+  "suggestion": "Verify the example: likely should be either 'e=ru' or 'ku=an' or similar, not 'e=an'.",
+  "confidence": 0.95,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "230",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "look=4.S then 2SG.S=exist track-POSS 4.A=see NMLZ because",
+  "issue": "The gloss '2SG.S=exist' corresponds to 'e=an', but 'e=' is 2SG and '=an' is 4.S — a mismatch in person. Also, 'ru-we' is glossed as 'exist' but should be 'be located' or similar; 'ru' is the existential verb, but the gloss does not align with the morpheme segmentation.",
+  "suggestion": "Correct gloss to match morphology: possibly '2SG.S=be.located' or '2SG.S=exist' only if 'e=ru' were the form. Also, 'track-POSS' should be 'track-POSS' or 'track-GEN' consistently.",
+  "confidence": 0.9,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "353",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "mean cuk ne pe merayke=an ka somo ki no",
+  "issue": "The morpheme 'ne' is glossed as 'COP' and appears after 'cuk' (autumn), but in the free translation it is part of 'It was a cold autumn'. The glossing of 'ne' as COP is correct, but the segmentation suggests it's a separate word, while the structure 'cuk ne' should be treated as a predicate nominal construction. No error in form, but the gloss does not reflect the syntactic dependency.",
+  "suggestion": "Add a hyphen or clarify in note that 'cuk ne' is a copular phrase, or adjust segmentation to 'cuk-ne' if fused.",
+  "confidence": 0.7,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "503",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "ine nispa ek ru-we ne",
+  "issue": "The morpheme 'ru-we' is glossed as 'track-POSS', but 'ru' is the existential verb and 'we' is a possessive postposition. 'track-POSS' is semantically incorrect; it should be '3POSS' or 'its' or 'their', depending on antecedent. The gloss 'track-POSS' appears to be a carryover from a different example.",
+  "suggestion": "Change gloss of 'ru-we' to '3POSS' or 'its' or 'their', depending on intended meaning.",
+  "confidence": 0.9,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "119",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Type-C plural suffix <i lang=\"ain-Latn\">-pa</i>",
+  "issue": "The term 'Type-C' is introduced without prior definition or explanation in this chapter. It appears to reference a classification system (possibly from Nakagawa) but is not defined here, creating confusion.",
+  "suggestion": "Define 'Type-C' briefly or replace with descriptive term like 'stem-internal plural suffix' for clarity.",
+  "confidence": 0.8,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "122",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">iki-pa=an</i>",
+  "issue": "Hyphenation of 'iki-pa=an' suggests 'pa' is a suffix, but in other contexts (e.g., table) it is written without hyphen as 'pa'. Inconsistent hyphenation for the same morpheme type.",
+  "suggestion": "Standardize hyphenation: use '-pa' for suffix, 'pa' for clitic.",
+  "confidence": 0.85,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "123",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">iki=an pa</i>",
+  "issue": "Space between 'iki=an' and 'pa' indicates clitic status, but in the table (line 103) it is written as 'pa' without space. Inconsistency in formatting clitics.",
+  "suggestion": "Ensure consistent spacing: always space clitics, e.g., 'pa', 'ci'.",
+  "confidence": 0.8,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "340",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">apto as</i>",
+  "issue": "The form 'apto as' is written with a space, suggesting two words, but is analyzed as a single avalent unit. Inconsistent with morphological segmentation norms in the chapter (e.g., hyphenated compounds).",
+  "suggestion": "Write as 'apto-as' if treated as compound, or clarify in note that it is a two-word clause under analysis.",
+  "confidence": 0.75,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "472",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">-n</i> / <i lang=\"ain-Latn\">-p</i>",
+  "issue": "The alternation is written as '-n / -p', but in the example 'san / sap', the stems are 'san' and 'sap' — the final consonant changes, but the vowel remains. The slash notation suggests suffix alternation, but it's actually stem suppletion or consonant mutation.",
+  "suggestion": "Revise to 'san ~ sap' or 'n → p in final position' for accuracy.",
+  "confidence": 0.7,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "270",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "numan hekaci cep koyki",
+  "issue": "The example is glossed as 'yesterday boy fish catch' and translated as 'The boy caught fish yesterday.' However, the verb 'koyki' is transitive and unmarked for person, which is acceptable, but the note says it's a 'two-argument transitive frame with two bare noun phrases and an unmarked third-person verb' — yet 'numan' (yesterday) is not an argument. The argument count is correct, but the gloss does not reflect the valency properly.",
+  "suggestion": "Gloss should reflect transitive structure, e.g., 'yesterday boy fish catch.3SG.A.3SG.O' or similar, to show indexing pattern.",
+  "confidence": 0.85,
+  "chapter": "verb-word-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "93",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "For the special status of okkaypo — which is ambiguous across dialects between the DIM reading and a noun–noun reading",
+  "issue": "The claim that okkaypo is 'ambiguous across dialects' contradicts the later statement (lines 208-210) that the form is unambiguously DIM in Saru/Chitose.",
+  "suggestion": "Change 'across dialects' to 'in some dialects' or 'in dialects where okkay is a free noun'.",
+  "confidence": 1,
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "214-215",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The unambiguous form for the N+N reading in those dialects is okkayopo with the full base [okkayo 'male' + po 'child']",
+  "issue": "The compound base is given as okkayo, but the free noun is described as okkay (line 208 and table). No explanation is given for why the base differs, creating an apparent inconsistency.",
+  "suggestion": "Clarify that okkayo is the concept form of okkay, or align the forms if okkayo is not the expected base.",
+  "confidence": 0.7,
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "220-222",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"man-DIM\"",
+  "issue": "The gloss of okkay in the example is 'man', but earlier (table line 81) okkay is glossed as 'male youth (bound root, Saru/Chitose)', and line 208 states that okkay does not occur as a free noun in Saru. The gloss is inconsistent with the characterization of okkay as a bound root.",
+  "suggestion": "Change the gloss to something like 'male.youth-DIM' or 'bound.root-DIM' to match the preceding description.",
+  "confidence": 0.8,
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "165-166",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "The high frequency of okkaypo alone — 1,457 tokens, rank 136 in the Hokkaido sub-corpus — confirms that DIM derivatives are a live and frequent nominal class ‹corpus-confirmed›.",
+  "issue": "The specific token count and rank are given without any source citation. The claim is tagged ‹corpus-confirmed›, but no reference is attached to allow verification.",
+  "suggestion": "Add a citation to the corpus from which these figures are drawn (e.g., the ILCAA or a published word-list).",
+  "confidence": 0.9,
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "189",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "Neither analysis has been confirmed by a read primary grammatical source",
+  "issue": "The phrase 'a read primary grammatical source' is informal and suggests a pipeline comment ('the sources I read'). It may confuse readers.",
+  "suggestion": "Rephrase to 'a primary grammatical source consulted' or 'the available primary grammatical sources'.",
+  "confidence": 0.8,
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "31, 36",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "the sources read here",
+  "issue": "The phrase 'sources read here' is informal and reads like a pipeline comment rather than polished prose.",
+  "suggestion": "Rephrase to 'the sources consulted' or 'the sources examined'.",
+  "confidence": 0.6,
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

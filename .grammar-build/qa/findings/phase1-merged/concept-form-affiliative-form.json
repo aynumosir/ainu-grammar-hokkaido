@@ -1,0 +1,1157 @@
+[
+ {
+  "id": "concept-form-affiliative-form~p1#048",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "495-496",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'an=sa-ha' is '4.A=elder.sister-POSS', but the note (line 501) says 'an= is a Shizunai dialectal variant of the 4th-person A-prefix a='. The gloss uses '4.A' which is consistent. However, the gloss for 'ruwe' is 'track-POSS', but the note (line 501) says 'the trace-noun ruwe here is the same affiliative of ru'. The gloss should indicate this is the affiliative form, not just 'track-POSS'. Also, 'ruwe' is glossed as 'track-POSS' but the free translation does not include 'track'.",
+    "quote": "m=\"nekon ne wa a=yup-ihi an=sa-ha hawe-he ka isam ruwe ene an hi an\" g=\"why COP CONJ 4.A=elder.brother-POSS 4.A=elder.sister-POSS voice-POSS even be.absent track-POSS thus exist NMLZ exist\"",
+    "suggestion": "Consider glossing 'ruwe' as 'track-AFF' or adding a note in the gloss to indicate it's the affiliative form.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The free translation uses 'my' for the possessor, but the morphemic line uses 'a=' (fourth-person) and 'an=' (dialectal fourth-person). The fourth-person prefix can be used for first-person in certain contexts (as noted in line 417), but this should be explained. The translation 'my' is potentially misleading without context.",
+    "quote": "tr=\"How is it that neither my elder brother's nor elder sister's voice is to be heard?\"",
+    "suggestion": "Either change 'my' to 'one's' or add a note explaining the fourth-person usage for first-person reference.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'exist NMLZ exist' for 'ruwe ene an hi an' does not match the translation, which expresses a rhetorical question about absence. The structure 'ruwe ene an hi an' is described in the note as an indirect evidential frame, but the gloss does not reflect evidentiality or interrogativity.",
+    "quote": "g=\"4.A=elder.brother-POSS 4.A=elder.sister-POSS voice-POSS even be.absent track-POSS thus exist NMLZ exist\"",
+    "suggestion": "Revise gloss to reflect the evidential and existential construction, e.g., 'be.absent track-NMLZ thus exist.INDF.EVID' or similar, to align with the note and translation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#046",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "411-413",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss uses '4.A' for the prefix 'a=', but the table (line 224-228) labels this as '4/INDEF' and glosses as '4.A' in the table header. The note (line 417) says 'the fourth-person prefix a= identifies the narrator as the possessor'. The gloss '4.A' is consistent with the table. No mismatch.",
+    "quote": "m=\"makan uske ta a=teke-he ani makan uske ta\" g=\"somehow place LOC 4.A=hand-POSS INS somehow place LOC\"",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation implies a completed action with an agent ('took hold'), but the gloss contains no verb or action predicate. The example appears to be elliptical, but the gloss fails to indicate this. Moreover, 'INS' (instrumental) is glossed but the translation treats the hand as the object, not instrument.",
+    "quote": "g=\"somehow place LOC 4.A=hand-POSS INS somehow place LOC\"",
+    "suggestion": "Clarify in gloss or note that the verb is elided; reconsider 'INS' — if 'hand' is the object, gloss should reflect accusative or comitative, not instrumental.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#045",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "346-348",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'ku=kor' is '1SG.A=have', using 'A' to indicate transitive subject. However, in the possessive prefix table (lines 200-234), the prefixes are glossed as '1SG.POSS' etc. The use of 'A' here is inconsistent with the rest of the chapter's glossing convention for possessive prefixes.",
+    "quote": "m=\"ku=teke-he piro hi ta ku=kor totto noya ham uk wa\" g=\"1SG.POSS=hand-POSS be.wounded NMLZ LOC 1SG.A=have mother wormwood leaf take CONJ\"",
+    "suggestion": "Change '1SG.A=have' to '1SG.POSS=have' or '1SG.A=have' with a note explaining the A-set origin. Alternatively, use consistent glossing throughout.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'be.wounded' does not match the tense/aspect in the translation, which is past ('was wounded'). Additionally, 'NMLZ' (nominalizer) is attached to 'be.wounded', but no corresponding morpheme is visible in the morpheme line. The structure suggests a temporal clause, but the gloss does not reflect a nominalized verb form.",
+    "quote": "g=\"1SG.POSS=hand-POSS be.wounded NMLZ LOC 1SG.A=have mother wormwood leaf take CONJ\"",
+    "suggestion": "Revise gloss to include tense/aspect and clarify the nominalizer: e.g., 'be.wounded.PST.NMLZ' or 'get.wounded.NMLZ'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#044",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "252-260",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The morphemic line shows 'ku=kema-ha' and 'ku=teke-he', but the gloss uses '1SG.POSS' for the prefix. However, the note (line 259) says 'The intransitive predicate arka takes each body-part personal form as its subject; the verb itself carries no person-marking (third-person zero on the body-part NP).' The gloss '1SG.POSS' is appropriate for the possessive prefix. No mismatch.",
+    "quote": "m=\"ku=kema-ha ka arka ku=teke-he ka arka\" g=\"1SG.POSS=leg-POSS also hurt 1SG.POSS=hand-POSS also hurt\"",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss renders 'arka' as 'hurt', but in the note (line 259), it says 'the intransitive predicate arka takes each body-part personal form as its subject'. This implies 'arka' means 'hurts' (3SG verb), not 'hurt' (past participle or adjective). The gloss should reflect the verbal nature of 'arka' as 'hurt.3SG' or 'is.hurting'.",
+    "quote": "m=\"ku=kema-ha ka arka ku=teke-he ka arka\"",
+    "suggestion": "Change gloss of 'arka' to 'be.hurting.3SG' or 'hurts' to align with the syntactic analysis in the note.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#014",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "156-158",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'at' (cord) takes '-u(-hu)' in isolation, classifying it as Type ③-2. However, Type ③-2 is described as taking an echo vowel matching the stem's last vowel. The stem 'at' ends in 't', not a vowel. This classification seems inconsistent with the description of Type ③-2. Furthermore, the compound example 'tar-ac-i(-hi)' uses the Type ③-1 suffix '-i(-hi)', which is described as the basic suffix for consonant-final stems.",
+    "quote": "<A w=\"at\" gl=\"cord\" /> → <i lang=\"ain-Latn\">at-u(-hu)</i> (③-2) in isolation, but\n<i lang=\"ain-Latn\">tar-at → tar-ac-i(-hi)</i> 'carrying-rope cord' inside a compound",
+    "suggestion": "Re-evaluate the classification of 'at' and clarify its behavior in isolation and in compounds, ensuring consistency with the described types."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example claims 'at' (cord) is Type ③-2 with suffix -u(-hu), but the table and earlier description define Type ③-2 as taking an echo vowel matching the stem's last vowel. The stem 'at' ends in 't', not 'a', so the echo vowel should be -i (matching the vowel 'a'? Actually 'at' has vowel 'a', so echo vowel would be -a, not -u). The form 'at-u(-hu)' contradicts the Type ③-2 pattern described (echo vowel matching stem's last vowel).",
+    "quote": "<A w=\"at\" gl=\"cord\" /> → <i lang=\"ain-Latn\">at-u(-hu)</i> (③-2) in isolation, but <i lang=\"ain-Latn\">tar-at → tar-ac-i(-hi)</i> 'carrying-rope cord' inside a compound",
+    "suggestion": "Either correct the classification of 'at' (it may be Type ③-3, which takes -u for stems ending in 'a'), or correct the example form to match Type ③-2 pattern.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#013",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "144-146",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that monosyllabic open stems ending in 'i' or 'u' take '-e(-he)'. The example 'ru' → 'ru-we(-he)' is given. The stem 'ru' ends in 'u', and the suffix is '-we(-he)'. This is consistent with the general rule for Type ②. However, the text does not provide an example for a stem ending in 'i'.",
+    "quote": "Monosyllabic open stems ending in <i>i</i> or <i>u</i> behave as Type ② rather than ③,\ntaking <i lang=\"ain-Latn\">-e(-he)</i>:\n<A w=\"ru\" gl=\"track, path\" /> → <i lang=\"ain-Latn\">ru-we(-he)</i>",
+    "suggestion": "Provide an example for a monosyllabic open stem ending in 'i' that takes the '-e(-he)' suffix."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The description says monosyllabic open stems ending in 'i' or 'u' take -e(-he), but the example 'ru' (ending in 'u') becomes 'ru-we(-he)' with an inserted 'w'. The rule as stated does not account for the epenthetic 'w' between 'u' and 'e'. This is a phonological detail that should be explained or the example should be consistent with the stated rule.",
+    "quote": "Monosyllabic open stems ending in <i>i</i> or <i>u</i> behave as Type ② rather than ③, taking <i lang=\"ain-Latn\">-e(-he)</i>: <A w=\"ru\" gl=\"track, path\" /> → <i lang=\"ain-Latn\">ru-we(-he)</i>",
+    "suggestion": "Either add a note about the epenthetic 'w' insertion, or rephrase the rule to include the phonological adjustment.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#042",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "156-157",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example shows 'tar-at' becoming 'tar-ac-i(-hi)' with a consonant change from 't' to 'c'. This is a phonological alternation (palatalization before 'i') that is not explained in this chapter. While not strictly an error, it may confuse readers who are not familiar with Ainu morphophonology.",
+    "quote": "<i lang=\"ain-Latn\">tar-at → tar-ac-i(-hi)</i>",
+    "suggestion": "Add a brief note about the 't' → 'c' alternation before 'i', or cross-reference to the morphophonology chapter.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The compound form shows a consonant alternation from /t/ to /c/ before the suffix -i(-hi), but this palatalization is not mentioned in the morphophonology description. The stem <i>at</i> appears as <i>ac</i> in the compound, which contradicts the stated rule that consonant-final nouns revert to ③-1 pattern without altering the stem.",
+    "quote": "<i lang=\"ain-Latn\">tar-at → tar-ac-i(-hi)</i>",
+    "suggestion": "Either correct the example to <i>tar-at-i(-hi)</i> or explain the palatalization rule (e.g., /t/ → [c] before /i/) and reference <Xr ch=\"affiliative-suffix-morphophonology\" /> more explicitly.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#039",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "338-342",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹contested› but the only source cited is a Discord message. The tag implies scholarly contestation, but a single community member's proposal on Discord does not constitute a scholarly contestation. The tag is inflated.",
+    "quote": "Community member thegodofneet (aynu-corpora Discord, 2025-09-17) proposed that <i lang=\"ain-Latn\">utari(-hi)</i> is the affiliative of <A w=\"utar\" gl=\"family, companions, kin\" /> ... ‹contested›. The corpus count for <i lang=\"ain-Latn\">utari</i> is 1,501 tokens. The analysis extends — rather than contradicts — Nakagawa's observation ... the semantic narrowing under affiliation is the community's addition.",
+    "suggestion": "Change ‹contested› to ‹speculative› or remove the tag entirely, since the text already notes it's a community addition.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "A precise corpus count (1,501) is given without a citation to a specific corpus or source. The only citation nearby is to a Discord post and Nakagawa (2024), neither of which would typically provide such a count. This risks epistemic overprecision.",
+    "quote": "The corpus count for <i lang=\"ain-Latn\">utari</i> is 1,501 tokens.",
+    "suggestion": "Add a citation to a corpus source (e.g., <Ref k=\"aynu-corpus2025\" p=\"...\" />) or rephrase as 'over 1,500 tokens' with attribution to the Discord source.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#023",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "285-286",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'ikaray ohaw-e(-he)' uses the suffix '-e(-he)', which is Type ② (stems in -y or -w). The stem 'ohaw' ends in 'w', so this is consistent. The example 'top cise(-he)' uses '-he'. The stem 'cise' ends in 'e', which is a vowel. According to Type ①, vowel-final stems take '-hV₁'. The example 'cise(-he)' seems to follow the Type ② pattern rather than Type ①. This might be a dialectal variation or an exception.",
+    "quote": "<strong>Material-product relations.</strong> The output belongs to its source:\n<i lang=\"ain-Latn\">ikaray ohaw-e(-he)</i> 'nettle stew';\n<i lang=\"ain-Latn\">top cise(-he)</i> 'bamboo house'.",
+    "suggestion": "Clarify the classification of 'cise' and the suffix used, or provide an example that clearly follows Type ① for vowel-final stems in this category."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The first example 'ikaray ohaw-e(-he)' shows the material 'ikaray' (nettle) in concept form and the product 'ohaw' (stew) in affiliative form. The second example 'top cise(-he)' shows 'top' (bamboo) in concept form and 'cise' (house) in affiliative form. However, the description says 'The output belongs to its source', implying the product (output) takes the affiliative. But in 'top cise(-he)', 'cise' is the product (house) and takes the affiliative, consistent. However, the first example 'ohaw-e(-he)' is the stew (product) taking affiliative, but 'ikaray' (nettle, source) is in concept form. This is consistent with the pattern described. No actual inconsistency found.",
+    "quote": "<i lang=\"ain-Latn\">ikaray ohaw-e(-he)</i> 'nettle stew'; <i lang=\"ain-Latn\">top cise(-he)</i> 'bamboo house'",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#016",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "202-203",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows 'ku=sapa(ha)' and 'ku=siki(hi)'. The text (lines 43-46) states that for vowel-final stems (Type ①), the long affiliative adds '-hV₁'. For 'sapa', this would be 'sapa-ha'. The table shows '(ha)', implying it's optional or variable. For consonant-final stems (Type ③-1), the long affiliative adds '-i-hi'. For 'sik', this would be 'sik-i-hi'. The table shows '(hi)', implying it's optional or variable. The text should clarify the optionality or variability of the long suffix.",
+    "quote": "<td><i lang=\"ain-Latn\">ku=sapa(ha)</i></td>\n<td><i lang=\"ain-Latn\">ku=siki(hi)</i></td>",
+    "suggestion": "Clarify whether the long suffix is optional or variable in these examples, or remove the parentheses."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table shows 'ku=siki(hi)' for 'my eye' with 'sik' (Type ③-1) taking the short affiliative '-i' and long '-hi'. However, the earlier description (line 55) says Type ③-1 suffix is '-i(-hi)', so 'sik' → 'sik-i(-hi)'. The table shows 'siki(hi)' which is correct (sik + i = siki). No inconsistency.",
+    "quote": "<td><i lang=\"ain-Latn\">ku=siki(hi)</i></td>",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#052",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "146",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The derived form is given as <i>ru-we(-he)</i>, implying an infix or stem change (insertion of -w-), but the base form is <i>ru</i>. If this is a regular Type ② formation for monosyllabic stems in /u/, the expected form would be *ru-e(-he)*. The appearance of -we- suggests either a morphophonological rule not explained here (e.g., /u/ → [wu] before /e/) or an error in the example form.",
+    "quote": "<A w=\"ru\" gl=\"track, path\" /> → <i lang=\"ain-Latn\">ru-we(-he)</i>",
+    "suggestion": "Verify whether the form should be <i>ru-e(-he)</i> or if the -w- is a dialectal or phonetic insertion; if the latter, clarify in the text (e.g., 'with epenthetic -w-').",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#054",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Japanese terms are not romanized. While the chapter otherwise uses italics and lang-tags for Ainu, Japanese terms are left without romanization, which may hinder readability for non-Japanese readers.",
+    "quote": "<span lang=\"ja\">抽象形</span> (abstract form) and <span lang=\"ja\">具体形</span> (concrete form)",
+    "suggestion": "Add romanization: e.g., <span lang=\"ja\">抽象形</span> (chūshōkei) and <span lang=\"ja\">具体形</span> (gutaikēi).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#050",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "329",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag appears in the middle of a paragraph without clear attribution of who contests the claim. The tag itself is a pipeline artifact that may confuse readers.",
+    "quote": "‹contested›",
+    "suggestion": "Either remove the tag or add a sentence explaining the contested nature with a citation.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#049",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "144-146",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ru-we(-he)' shows an epenthetic 'w' that is not explained. The text says 'taking -e(-he)' but the actual form is 'ru-we(-he)' with an extra 'w'. This could be seen as a pipeline issue where the phonological detail is missing.",
+    "quote": "Monosyllabic open stems ending in <i>i</i> or <i>u</i> behave as Type ② rather than ③, taking <i lang=\"ain-Latn\">-e(-he)</i>: <A w=\"ru\" gl=\"track, path\" /> → <i lang=\"ain-Latn\">ru-we(-he)</i>",
+    "suggestion": "Add a brief explanation of the 'w' epenthesis between 'u' and 'e'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#041",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "8-11",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Japanese terms 概念形 and 所属形 are given without translation or explanation for readers who do not read Japanese. Earlier in the paragraph, the English terms are introduced, but the Japanese is parenthetical. This is acceptable as the English terms are primary. No issue.",
+    "quote": "Every common noun in Hokkaido Ainu potentially has two citation shapes: a <em>concept form</em> (概念形) expressing the noun as a free-standing concept, and an <em>affiliative form</em> (所属形) expressing it as belonging to something or someone <Ref k=\"nakagawa2024\" p=\"217\" />.",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#036",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "501",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'hawehe is the long affiliative of haw 'voice' (Type ②: haw-e + -he)'. This is consistent with the description of Type ②. However, the example sentence uses 'hawe-he', not 'hawehe'. This suggests that 'hawe-he' might be the correct form, or there's a typo in the note or the example. The note also mentions 'ruwe' as the affiliative of 'ru', which is consistent with lines 146-147.",
+    "quote": "hawehe is the long affiliative of haw 'voice' (Type ②: haw-e + -he); it serves here as the subject of the negative existential isam. Both kinship personal forms yupihi and saha carry affiliative suffixes stacked in the same clause. an= is a Shizunai dialectal variant of the 4th-person A-prefix a=. The clause-final ruwe ene an hi an is an indirect evidential frame; the trace-noun ruwe here is the same affiliative of ru discussed in the Formation section above.",
+    "suggestion": "Verify the form of the long affiliative for 'haw' and correct the note or the example sentence if there is a discrepancy."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#035",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "495-496",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'an= is a Shizunai dialectal variant of the 4th-person A-prefix a='. The gloss shows '4.A=elder.brother-POSS' and '4.A=elder.sister-POSS'. This is consistent with the note. However, the gloss for 'hawe-he' is 'voice-POSS'. The note clarifies that 'hawehe is the long affiliative of haw 'voice' (Type ②: haw-e + -he)'. The gloss could be more explicit about the possessor of the voice, especially since the preceding elements are marked with the 4th-person possessive prefix.",
+    "quote": "m=\"nekon ne wa a=yup-ihi an=sa-ha hawe-he ka isam ruwe ene an hi an\"\ng=\"why COP CONJ 4.A=elder.brother-POSS 4.A=elder.sister-POSS voice-POSS even be.absent track-POSS thus exist NMLZ exist\"",
+    "suggestion": "Update the gloss for 'hawe-he' to reflect the possessor, e.g., '4.A=voice-POSS', to align with the preceding elements and the note."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#034",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "485-488",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">e=hawe</i>' is the Type ② affiliative of '<i lang=\"ain-Latn\">haw</i>' ('voice'). According to lines 49-51 and the table (lines 92-95), the suffix for Type ② is '-e(-he)'. The example '<i lang=\"ain-Latn\">haw</i>' → '<i lang=\"ain-Latn\">haw-e(-he)</i>' is given. Therefore, the long affiliative form should be '<i lang=\"ain-Latn\">hawehe</i>'. The example '<i lang=\"ain-Latn\">e=hawe</i>' seems to be the short form. The text should clarify whether '<i lang=\"ain-Latn\">e=hawe</i>' refers to the short or long form.",
+    "quote": "<i lang=\"ain-Latn\">iteki e=hawe aste</i> 'don't raise your voice' as\n<i lang=\"ain-Latn\">[iteki [[e=hawe] aste]]</i>,\nwith\n<i lang=\"ain-Latn\">e=hawe</i> (2SG possessive prefix + Type ② affiliative of\n<i lang=\"ain-Latn\">haw</i> 'voice') serving as a plain possessed-noun argument of\n<i lang=\"ain-Latn\">aste</i> 'raise'",
+    "suggestion": "Clarify whether '<i lang=\"ain-Latn\">e=hawe</i>' refers to the short form '<i lang=\"ain-Latn\">hawe</i>' or the long form '<i lang=\"ain-Latn\">hawehe</i>'."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#033",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "467",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">usa</i>' induces the affiliative. The example shows '<i lang=\"ain-Latn\">kamihi</i>' and '<i lang=\"ain-Latn\">cepihi</i>'. The suffix '-hi' suggests Type ③-1 (consonant-final stems). The stems '<i lang=\"ain-Latn\">kam</i>' and '<i lang=\"ain-Latn\">cep</i>' end in consonants. This is consistent. However, the text does not explicitly state the stem types for '<i lang=\"ain-Latn\">kam</i>' and '<i lang=\"ain-Latn\">cep</i>' or how they derive the affiliative forms '<i lang=\"ain-Latn\">kamihi</i>' and '<i lang=\"ain-Latn\">cepihi</i>'.",
+    "quote": "<i lang=\"ain-Latn\">usa kamihi usa cepihi</i> 'meat and fish of various kinds'",
+    "suggestion": "Specify the stem types for '<i lang=\"ain-Latn\">kam</i>' and '<i lang=\"ain-Latn\">cep</i>' and confirm that '-ihi' is the correct long affiliative suffix for these stem types."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">aynuhu</i>' is the affiliative of '<i lang=\"ain-Latn\">aynu</i>'. The suffix '-hu' suggests Type ③-3 (a small group with final 'a' takes '-u(-hu)'). However, the stem '<i lang=\"ain-Latn\">aynu</i>' ends in 'u', not 'a'. This contradicts the description of Type ③-3. It's possible that '<i lang=\"ain-Latn\">aynu</i>' is an exception or that the description of Type ③-3 is incomplete.",
+    "quote": "<i lang=\"ain-Latn\">nep aynuhu e=ne</i> 'whatever human you are' (<i lang=\"ain-Latn\">aynuhu</i> = affiliative of <i lang=\"ain-Latn\">aynu</i>)",
+    "suggestion": "Clarify the classification of '<i lang=\"ain-Latn\">aynu</i>' and the formation of its affiliative form '<i lang=\"ain-Latn\">aynuhu</i>', or provide a correct example for Type ③-3."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#032",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "433-435",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">kamuy rusihi</i>' is presented as an affiliative form. The suffix '-ihi' suggests Type ③-1 (consonant-final stems). However, the stem '<i lang=\"ain-Latn\">rus</i>' ends in 's', which is a consonant. This is consistent. The issue is that the text does not explicitly state the stem type for '<i lang=\"ain-Latn\">rus</i>' or how it derives the affiliative form '<i lang=\"ain-Latn\">rusihi</i>'.",
+    "quote": "Tamura identified the trigger for the affiliative as the specificity of the possessor N₁:\n<i lang=\"ain-Latn\">kamuy rusihi</i> 'that specific bear's pelt' (affiliative) versus\n<i lang=\"ain-Latn\">kamuy rus</i> 'bear-pelt in general' (concept form, approaching a\ncompound)",
+    "suggestion": "Specify the stem type for '<i lang=\"ain-Latn\">rus</i>' and confirm that '-ihi' is the correct long affiliative suffix for this stem type."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">honi-hi</i>' is the affiliative form, with the possessor 'all humans' being non-specific. The suffix '-hi' suggests Type ③-1 (consonant-final stems). The stem '<i lang=\"ain-Latn\">hon</i>' ends in 'n', which is a consonant. This is consistent. However, the text does not explicitly state the stem type for '<i lang=\"ain-Latn\">hon</i>' or how it derives the affiliative form '<i lang=\"ain-Latn\">honihi</i>'.",
+    "quote": "Satō challenged this with the counter-example\n<i lang=\"ain-Latn\">aynu opitta honihi kor wa okay pe ne</i>\n(<i lang=\"ain-Latn\">honi-hi</i> affiliative; possessor 'all humans' = non-specific)",
+    "suggestion": "Specify the stem type for '<i lang=\"ain-Latn\">hon</i>' and confirm that '-ihi' is the correct long affiliative suffix for this stem type."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#031",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "421-422",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'a=yupihi' is 'my/the elder brother' (4th-person A-prefix, Type ③-1 long affiliative -ihi) and 'turesihi' is 'his younger sister' (zero 3rd-person prefix, same affiliative class). The gloss for 'a=yup-ihi' is '4.A=elder.brother-POSS'. This is consistent. However, the gloss for 'tures-ihi' is 'younger.sister-POSS'. The note clarifies that the zero prefix indicates the third person, implying 'his/her/their younger sister'. The gloss could be more explicit about the possessor.",
+    "quote": "m=\"a=yup-ihi tures-ihi\"\ng=\"4.A=elder.brother-POSS younger.sister-POSS\"",
+    "suggestion": "Update the gloss for 'tures-ihi' to '3.POSS=younger.sister-POSS' or similar to reflect the zero prefix indicating the third person possessor."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#030",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "411-412",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the second 'makan uske ta' is 'somehow place LOC'. However, the note states that 'In oral-narrative convention the fourth-person prefix a= identifies the narrator as the possessor of tekehe 'hand'.'. This implies that the narrator is the possessor of the hand, and the sentence structure might be emphasizing this. The gloss for the second 'makan uske ta' could be more informative in light of the note.",
+    "quote": "m=\"makan uske ta a=teke-he ani makan uske ta\"\ng=\"somehow place LOC 4.A=hand-POSS INS somehow place LOC\"",
+    "suggestion": "Consider refining the gloss for the second 'makan uske ta' to better reflect its role in the sentence, perhaps indicating a continuation or consequence related to the narrator's hand."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#029",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "390-391",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">siki(-hi)</i>' alone means 'his/her/their eye(s)'. The parentheses around '-hi' suggest it might be optional or that the bare form '<i lang=\"ain-Latn\">siki</i>' also conveys the meaning. However, the table (lines 195, 203, 209, 215, 221, 227, 233) consistently shows '<i lang=\"ain-Latn\">sik-i-hi</i>' as the long affiliative form for Type ③-1. The bare stem '<i lang=\"ain-Latn\">sik</i>' is the concept form. The short affiliative is '<i lang=\"ain-Latn\">sik-i</i>'. The text should clarify whether '<i lang=\"ain-Latn\">siki(-hi)</i>' refers to the short or long form, or if both can function as the third-person personal form.",
+    "quote": "The third-person form\n<i lang=\"ain-Latn\">siki(-hi)</i> alone means 'his/her/their eye(s)' without any overt\npossessor pronoun — unlike Japanese <span lang=\"ja\">目</span>, which requires\n<span lang=\"ja\">彼の</span> to express the same content",
+    "suggestion": "Clarify whether '<i lang=\"ain-Latn\">siki(-hi)</i>' refers to the short form '<i lang=\"ain-Latn\">sik-i</i>' or the long form '<i lang=\"ain-Latn\">sik-i-hi</i>', or if both can be used for the third-person personal form."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#028",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "372-373",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">i-</i>' is the NPN marker and is distinct from the antipassive '<i lang=\"ain-Latn\">i-</i>'. However, the example given is '<i lang=\"ain-Latn\">i-sapa-kar usi</i>', where '<i lang=\"ain-Latn\">sapa</i>' is a body part (inalienable) and '<i lang=\"ain-Latn\">kar</i>' is likely a verb. This construction seems to involve incorporation of a possessed noun into a verb. The description of '<i lang=\"ain-Latn\">i-</i>' as an 'unspecified-possessor prefix' (line 371) is also relevant. The distinction between the NPN marker and the antipassive prefix needs to be clearer, especially in relation to the example provided.",
+    "quote": "This is the\nnon-possessed-noun (NPN) marker, distinct from the antipassive\n<i lang=\"ain-Latn\">i-</i> that demotes the transitive object; the two homophonous\nprefixes are treated together in <Xr ch=\"antipassive-detransitive-i\" />.",
+    "suggestion": "Provide a clearer example for the NPN marker or elaborate on how '<i lang=\"ain-Latn\">i-sapa-kar usi</i>' illustrates the NPN function distinct from the antipassive."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#027",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "339-342",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions a corpus count for '<i lang=\"ain-Latn\">utari</i>' (1,501 tokens) and contrasts it with '<i lang=\"ain-Latn\">k=utari</i>' ('my family'). It also refers to '<i lang=\"ain-Latn\">utari(-hi)</i>' as the affiliative form. This creates ambiguity: is '<i lang=\"ain-Latn\">utari</i>' the concept form, or is '<i lang=\"ain-Latn\">utari-hi</i>' the affiliative form? The corpus count for '<i lang=\"ain-Latn\">utari</i>' suggests it's a common form, but its role as concept or affiliative is unclear in relation to '<i lang=\"ain-Latn\">utari-hi</i>'.",
+    "quote": "The corpus count for\n<i lang=\"ain-Latn\">utari</i> is 1,501 tokens. The analysis extends — rather than\ncontradicts — Nakagawa's observation that <i lang=\"ain-Latn\">k=utari</i> 'my family'\nis attested alongside the concept form <Ref k=\"nakagawa2024\" p=\"251–252\" />; the\nsemantic narrowing under affiliation is the community's addition.",
+    "suggestion": "Clarify whether '<i lang=\"ain-Latn\">utari</i>' is the concept form and '<i lang=\"ain-Latn\">utari-hi</i>' is the affiliative, or if '<i lang=\"ain-Latn\">utari(-hi)</i>' itself represents the affiliative form derived from a different concept form."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#026",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "334-335",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">utari(-hi)</i>' is the affiliative of '<i lang=\"ain-Latn\">utar</i>'. The suffix '-hi' suggests Type ③-1 (consonant-final stems). However, '<i lang=\"ain-Latn\">utar</i>' appears to be a vowel-final stem. If '<i lang=\"ain-Latn\">utar</i>' is the concept form, then its affiliative form should follow the rules for vowel-final stems (Type ①). The provided form '<i lang=\"ain-Latn\">utari(-hi)</i>' is confusing. It might be that '<i lang=\"ain-Latn\">utar</i>' is not the concept form, or that '<i lang=\"ain-Latn\">utari</i>' is the concept form and '<i lang=\"ain-Latn\">utari-hi</i>' is the affiliative.",
+    "quote": "<i lang=\"ain-Latn\">utari(-hi)</i> is the affiliative of\n<A w=\"utar\" gl=\"family, companions, kin\" />, with the suffixed form narrowing the sense\nto 'X's companions/kin'",
+    "suggestion": "Clarify the concept form and affiliative form for 'family, companions, kin', and explain the suffixation if '<i lang=\"ain-Latn\">utar</i>' is the concept form."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#025",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "327",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the bow ('<A w=\"ku\" gl=\"bow (trap-bow)\" />') takes the affiliative '<i lang=\"ain-Latn\">kuwehe</i>'. The stem is '<i lang=\"ain-Latn\">ku</i>', which is a monosyllabic open stem ending in 'u'. According to lines 144-146, such stems take '-e(-he)'. The example '<i lang=\"ain-Latn\">ru</i>' → '<i lang=\"ain-Latn\">ru-we(-he)</i>' is given. Therefore, '<i lang=\"ain-Latn\">ku</i>' should likely form '<i lang=\"ain-Latn\">kuwehe</i>' (long form). This is consistent with the provided example.",
+    "quote": "but when the bow belongs existentially to whoever the\nprey chooses, the same object takes the affiliative <i lang=\"ain-Latn\">kuwehe</i>",
+    "suggestion": null
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#024",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "317-318",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">mosir</i>' is restricted to the concept construction in prose, with '<i lang=\"ain-Latn\">*a=mosirihi</i>' being unattested. However, it also mentions that '<i lang=\"ain-Latn\">mosiri</i>' appears in verse. This implies that '<i lang=\"ain-Latn\">mosiri</i>' is an affiliative form. If '<i lang=\"ain-Latn\">mosir</i>' is the concept form, then '<i lang=\"ain-Latn\">mosiri</i>' would be the affiliative form. The suffix '-i' is consistent with Type ③-1. The text should clarify if '<i lang=\"ain-Latn\">mosiri</i>' is indeed the affiliative form and why it's restricted to verse.",
+    "quote": "<i lang=\"ain-Latn\">mosir</i> is restricted\nto the concept construction in prose (<i lang=\"ain-Latn\">a=kor mosir</i>; \n<i lang=\"ain-Latn\">*a=mosirihi</i> unattested in prose, though\n<i lang=\"ain-Latn\">mosiri</i> appears in verse)",
+    "suggestion": "Clarify that '<i lang=\"ain-Latn\">mosiri</i>' is the affiliative form and explain its restriction to verse."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">cisehe</i>' is not used for 'X's house' in certain dialects/prose, but is allowed in verse and other dialects. It also states that '<i lang=\"ain-Latn\">uncise</i>' is always affiliative. The stem 'cise' is vowel-final. The suffix '-he' is not directly explained for vowel-final stems in this context. It's possible that '-he' is a variant of the long affiliative suffix for vowel-final stems in some dialects or contexts, or it's related to the compound form.",
+    "quote": "<i lang=\"ain-Latn\">cisehe</i> is not\nused for 'X's house', but verse and some other dialects allow it, and the verse-compound\n<i lang=\"ain-Latn\">uncise</i> 'home' is always affiliative",
+    "suggestion": "Clarify the formation of '<i lang=\"ain-Latn\">cisehe</i>' and its relationship to the standard affiliative suffixes for vowel-final stems."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#022",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "280-281",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The examples provided for part-whole relations use the suffix '-i(-hi)', which is described as Type ③-1 (basic consonant-final suffix). However, the text does not specify the stem type for 'rur' or 'nic'. If these are consonant-final stems, then Type ③-1 is appropriate. If they are vowel-final or other types, this might be inconsistent.",
+    "quote": "<strong>Part–whole relations.</strong> The part belongs inherently to the whole:\n<i lang=\"ain-Latn\">sayo rur-i(-hi)</i> 'the broth of the gruel';\n<i lang=\"ain-Latn\">nit op nic-i(-hi)</i> 'the shaft of a spear'.",
+    "suggestion": "Specify the stem types for 'rur' and 'nic' to confirm the consistency of the suffix used."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#021",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "232-233",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the 1SG examples, the table shows '(ha)' and '(hi)' for the long affiliative, implying optionality or variability. The text should clarify this.",
+    "quote": "<td><i lang=\"ain-Latn\">sapa(ha)</i></td>\n<td><i lang=\"ain-Latn\">siki(hi)</i></td>",
+    "suggestion": "Clarify whether the long suffix is optional or variable in these examples, or remove the parentheses."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#020",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "226-227",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the 1SG examples, the table shows '(ha)' and '(hi)' for the long affiliative, implying optionality or variability. The text should clarify this.",
+    "quote": "<td><i lang=\"ain-Latn\">a=sapa(ha)</i></td>\n<td><i lang=\"ain-Latn\">a=siki(hi)</i></td>",
+    "suggestion": "Clarify whether the long suffix is optional or variable in these examples, or remove the parentheses."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#019",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "220-221",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the 1SG examples, the table shows '(ha)' and '(hi)' for the long affiliative, implying optionality or variability. The text should clarify this.",
+    "quote": "<td><i lang=\"ain-Latn\">eci=sapa(ha)</i></td>\n<td><i lang=\"ain-Latn\">eci=siki(hi)</i></td>",
+    "suggestion": "Clarify whether the long suffix is optional or variable in these examples, or remove the parentheses."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#018",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "214-215",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the 1SG examples, the table shows '(ha)' and '(hi)' for the long affiliative, implying optionality or variability. The text should clarify this.",
+    "quote": "<td><i lang=\"ain-Latn\">e=sapa(ha)</i></td>\n<td><i lang=\"ain-Latn\">e=siki(hi)</i></td>",
+    "suggestion": "Clarify whether the long suffix is optional or variable in these examples, or remove the parentheses."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#017",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "208-209",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the 1SG examples, the table shows '(ha)' and '(hi)' for the long affiliative, implying optionality or variability. The text should clarify this.",
+    "quote": "<td><i lang=\"ain-Latn\">ci=sapa(ha)</i></td>\n<td><i lang=\"ain-Latn\">ci=siki(hi)</i></td>",
+    "suggestion": "Clarify whether the long suffix is optional or variable in these examples, or remove the parentheses."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#015",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "166-168",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This statement applies to consonant-final stems. However, the examples provided for Type ① (vowel-final stems) and Type ② (stems in -y or -w) also show short and long variants. For Type ①, the short form is identical to the concept form, and the long form adds '-hV₁'. For Type ②, the short form is '-e' and the long form is '-e-he'. The text should clarify that short/long variants exist for all types, not just consonant-final stems.",
+    "quote": "For all three types, the suffix has a short and a long variant. For consonant-final stems,\nthe short form ends in the echo vowel alone (<i lang=\"ain-Latn\">teke</i>) and the long form\nadds a further syllable (<i lang=\"ain-Latn\">tekehe</i>).",
+    "suggestion": "Revise the sentence to state that short and long variants exist for all three types, and then describe the pattern for consonant-final stems."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#012",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "136-137",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows 'nan-u' as the short affiliative and 'nan-u-hu' as the long affiliative. This implies that '-u' is the short suffix and '-u-hu' is the long suffix. The text (lines 58-60) states that a small group with final 'a' takes '-u(-hu)'. The example 'nan' does not end in 'a'. This is a contradiction. Assuming the example 'nan' is correct, the description of Type ③-3 should be revised.",
+    "quote": "<td>③-3 (V₁=a → -uhu)</td>\n<td><i lang=\"ain-Latn\">nan</i></td>\n<td><i lang=\"ain-Latn\">nan-u</i></td>\n<td><i lang=\"ain-Latn\">nan-u-hu</i></td>",
+    "suggestion": "Revise the description of Type ③-3 to accurately reflect the example 'nan', or provide a correct example for stems ending in 'a'."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#011",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "129-130",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows 'kisar-a' as the short affiliative and 'kisar-a-ha' as the long affiliative. This implies that '-a' is the short suffix and '-a-ha' is the long suffix. The text (lines 56-58) states that Type ③-2 takes an echo vowel matching the stem's last vowel. For 'kisar', the last vowel is 'a', so the suffix is '-a(-ha)'. This is consistent. However, the text should be more explicit about the short/long distinction.",
+    "quote": "<td>③-2</td>\n<td><i lang=\"ain-Latn\">kisar</i></td>\n<td><i lang=\"ain-Latn\">kisar-a</i></td>\n<td><i lang=\"ain-Latn\">kisar-a-ha</i></td>",
+    "suggestion": "Clarify that '-a' is the short suffix and '-a-ha' is the long suffix for Type ③-2 when the stem ends in 'a'."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#010",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "122-123",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows 'tek-e' as the short affiliative and 'tek-e-he' as the long affiliative. This implies that '-e' is the short suffix and '-e-he' is the long suffix. The text (lines 56-58) states that Type ③-2 takes an echo vowel matching the stem's last vowel. For 'tek', the last vowel is 'e', so the suffix is '-e(-he)'. This is consistent. However, the text should be more explicit about the short/long distinction.",
+    "quote": "<td>③-2 (lexical echo)</td>\n<td><i lang=\"ain-Latn\">tek</i></td>\n<td><i lang=\"ain-Latn\">tek-e</i></td>\n<td><i lang=\"ain-Latn\">tek-e-he</i></td>",
+    "suggestion": "Clarify that '-e' is the short suffix and '-e-he' is the long suffix for Type ③-2 when the stem ends in 'e'."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#009",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "115-116",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This entry for 'otop' (hair) is also Type ③-1. It shows 'otop-i' as the short affiliative and 'otop-i-hi' as the long affiliative, consistent with the 'sik' example and the description of Type ③-1.",
+    "quote": "<td>③-1</td>\n<td><i lang=\"ain-Latn\">otop</i></td>\n<td><i lang=\"ain-Latn\">otop-i</i></td>\n<td><i lang=\"ain-Latn\">otop-i-hi</i></td>",
+    "suggestion": null
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#008",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "108-109",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows 'sik-i' as the short affiliative and 'sik-i-hi' as the long affiliative. This implies that '-i' is the short suffix and '-i-hi' is the long suffix. The text (lines 54-55) states the suffix is '-i(-hi)', which is consistent with this interpretation, but could be more explicit.",
+    "quote": "<td>③-1 (basic)</td>\n<td><i lang=\"ain-Latn\">sik</i></td>\n<td><i lang=\"ain-Latn\">sik-i</i></td>\n<td><i lang=\"ain-Latn\">sik-i-hi</i></td>",
+    "suggestion": "Explicitly state that '-i' is the short suffix and '-i-hi' is the long suffix for Type ③-1."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#007",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "101-102",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the 'haw' example, the table shows 'patoy-e' as the short affiliative and 'patoy-e-he' as the long affiliative. This implies that '-e' is the short suffix and '-e-he' is the long suffix. The text should be more explicit about this.",
+    "quote": "<td>② (-y coda)</td>\n<td><i lang=\"ain-Latn\">patoy</i></td>\n<td><i lang=\"ain-Latn\">patoy-e</i></td>\n<td><i lang=\"ain-Latn\">patoy-e-he</i></td>",
+    "suggestion": "Clarify that '-e' is the short suffix and '-e-he' is the long suffix for Type ②."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#006",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "95",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text (lines 49-51) states the suffix for stems in -y or -w is '-e(-he)'. The table shows 'haw-e' as the short affiliative and 'haw-e-he' as the long affiliative. This implies that '-e' is the short suffix and '-e-he' is the long suffix. The text should be more explicit about which part is the short and which is the long suffix.",
+    "quote": "<td>② (-w coda)</td>\n<td><i lang=\"ain-Latn\">haw</i></td>\n<td><i lang=\"ain-Latn\">haw-e</i></td>\n<td><i lang=\"ain-Latn\">haw-e-he</i></td>",
+    "suggestion": "Clarify that '-e' is the short suffix and '-e-he' is the long suffix for Type ②."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#005",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "86-88",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'etu' (nose) shows the long affiliative as 'etu-hu'. According to the text (lines 43-46), for vowel-final stems, the long affiliative adds '-hV₁' where V₁ repeats the stem's final vowel. For 'etu', the final vowel is 'u', so it should be 'etu-hu'. This is consistent. However, the text also states that Type ③-3 (which applies to stems ending in 'a' and takes '-u(-hu)') has an example 'nan' -> 'nan-u(-hu)'. The 'etu' example in the table seems to follow the Type ③-3 pattern rather than the Type ① pattern described earlier.",
+    "quote": "<td>① (vowel-final)</td>\n<td><i lang=\"ain-Latn\">etu</i></td>\n<td><i lang=\"ain-Latn\">etu</i></td>\n<td><i lang=\"ain-Latn\">etu-hu</i></td>\n<td>nose</td>",
+    "suggestion": "Clarify the classification of 'etu' or adjust the example/description to align with Type ①."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#004",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "58-60",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that a small group with final 'a' takes '-u(-hu)'. The example <i lang=\"ain-Latn\">nan</i> → <i lang=\"ain-Latn\">nan-u(-hu)</i> is provided. However, the stem 'nan' does not end in 'a'. It ends in 'n'. This contradicts the description of Type ③-3.",
+    "quote": "A small group with final\n<i>a</i> takes <i lang=\"ain-Latn\">-u(-hu)</i> (Type ③-3):\n<A w=\"nan\" gl=\"face\" /> → <i lang=\"ain-Latn\">nan-u(-hu)</i>.",
+    "suggestion": "Correct the description of Type ③-3 to accurately reflect the stem 'nan' or provide a different example that ends in 'a'."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#003",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "54-55",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states the basic suffix is '-i(-hi)'. The example <i lang=\"ain-Latn\">sik</i> → <i lang=\"ain-Latn\">sik-i(-hi)</i> shows this. However, the table entry for 'sik' (eye) shows 'sik-i' for the short affiliative and 'sik-i-hi' for the long affiliative. This implies that '-i' is the short suffix and '-i-hi' is the long suffix. The text should be more explicit about which part is the short and which is the long suffix.",
+    "quote": "The basic (Type ③-1) suffix is\n<i lang=\"ain-Latn\">-i(-hi)</i>: <A w=\"sik\" gl=\"eye\" /> → <i lang=\"ain-Latn\">sik-i(-hi)</i>.",
+    "suggestion": "Clarify that '-i' is the short suffix and '-i-hi' is the long suffix for Type ③-1."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Type ③-2 takes an echo vowel matching the stem's last vowel. For 'tek', the last vowel is 'e', and the example shows '-e(-he)', which is consistent. For 'kisar', the last vowel is 'a', and the example shows '-a(-ha)'. This is also consistent. However, the table entry for 'kisar' shows 'kisar-a' for the short affiliative and 'kisar-a-ha' for the long affiliative. This implies that '-a' is the short suffix and '-a-ha' is the long suffix. The text should be more explicit about which part is the short and which is the long suffix.",
+    "quote": "Lexically listed subsets take an echo vowel matching the stem's last vowel (Type ③-2):\n<A w=\"tek\" gl=\"hand\" /> → <i lang=\"ain-Latn\">tek-e(-he)</i>;\n<A w=\"kisar\" gl=\"ear\" /> → <i lang=\"ain-Latn\">kisar-a(-ha)</i>.",
+    "suggestion": "Clarify that '-a' is the short suffix and '-a-ha' is the long suffix for Type ③-2 when the stem ends in 'a'."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#002",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "49-51",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states the suffix is '-e(-he)' for stems ending in -y or -w. The example for 'haw' (voice) shows 'haw-e(-he)', which is consistent. However, the example for 'patoy' (lip) shows 'patoy-e(-he)'. The stem 'patoy' ends in 'y', and the suffix is '-e(-he)'. This is consistent. The issue is that the text does not explicitly show how the suffix attaches to a stem ending in -w, only -y. The example 'haw' ends in 'w', and the suffix is '-e(-he)'. This is consistent.",
+    "quote": "The suffix is <i lang=\"ain-Latn\">-e(-he)</i>:\n<A w=\"haw\" gl=\"voice\" /> → <i lang=\"ain-Latn\">haw-e(-he)</i>;\n<A w=\"patoy\" gl=\"lip\" /> → <i lang=\"ain-Latn\">patoy-e(-he)</i>.",
+    "suggestion": "Clarify that the suffix applies to both -y and -w final stems, and ensure examples cover both cases if possible."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#001",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "43-46",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">sapa</i> → <i lang=\"ain-Latn\">sapa-ha</i> shows the long affiliative adding '-ha', which implies V₁ = 'a'. However, the text states V₁ repeats the stem's final vowel, which is 'a' in this case. This is consistent. The issue is that the text does not provide an example for a vowel-final stem where V₁ is not 'a'.",
+    "quote": "The short affiliative is identical to the\nconcept form; the long affiliative adds <i lang=\"ain-Latn\">-hV₁</i> where V₁ repeats the\nstem's final vowel: <A w=\"sapa\" gl=\"head\" /> → <i lang=\"ain-Latn\">sapa</i> /\n<i lang=\"ain-Latn\">sapa-ha</i>.",
+    "suggestion": "Add an example for a vowel-final stem where V₁ is not 'a', or clarify that 'a' is the only vowel tested in this example."
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#053",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "495",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The prefix 'an=' is described in the note (line 502) as a Shizunai dialectal variant of 'a='. However, in the table (lines 225–227), the 4/INDEF prefix is given as 'a='. The form 'an=' should be consistently marked as dialectal if it's not the standard form, but the orthography in the example does not use the <A> tag or dialect annotation to flag this variant.",
+    "quote": "an=sa-ha",
+    "suggestion": "Use <A w=\"an=\" gl=\"4/INDEF.A-prefix (SHI)\" /> or add a note in the example to clarify dialectal variation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#051",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "44",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The symbol V₁ uses a subscript '1', but elsewhere in the chapter (e.g., line 56, 134) the echo vowel is referred to as V₁ with a subscript. However, in the table (e.g., line 88, 138) the long affiliative forms are spelled out without subscript notation. This creates inconsistency between symbolic representation and orthographic realization.",
+    "quote": "<i lang=\"ain-Latn\">-hV₁</i>",
+    "suggestion": "Either use consistent subscript notation in prose (V₁) and align with table labels, or spell out the pattern explicitly (e.g., '-hV' where V = stem-final vowel) for clarity and consistency.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#047",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "421-423",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'tures-ihi' is 'younger.sister-POSS' without a possessive prefix. The note (line 426) explains this is 'zero 3rd-person prefix'. The gloss should indicate the zero prefix, perhaps as '3.POSS=younger.sister-POSS' or with a note. The current gloss is misleading as it suggests no possessor is marked.",
+    "quote": "m=\"a=yup-ihi tures-ihi\" g=\"4.A=elder.brother-POSS younger.sister-POSS\"",
+    "suggestion": "Add a zero prefix notation in the gloss, e.g., 'Ø=younger.sister-POSS' or '3.POSS=younger.sister-POSS'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#043",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "239-243",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ku-sápa' shows accent on the first syllable of 'sapa', but the text says 'accent falls on the syllable following the prefix'. For 'ku-sápa', the syllable following the prefix is 'sá', which is correct. However, the example uses a hyphen between prefix and stem, while elsewhere in the chapter the prefix is attached with '=' (e.g., 'ku=sapa'). This is a formatting inconsistency.",
+    "quote": "Before vowel-initial stems, <i lang=\"ain-Latn\">ku=</i> reduces to <i lang=\"ain-Latn\">k=</i> and <i lang=\"ain-Latn\">ci=</i> to <i lang=\"ain-Latn\">c=</i>; accent falls on the syllable following the prefix for <i lang=\"ain-Latn\">ku=</i> and <i lang=\"ain-Latn\">e=</i> (e.g., <i lang=\"ain-Latn\">ku-sápa</i>) but not for <i lang=\"ain-Latn\">a=</i> or <i lang=\"ain-Latn\">eci=</i>",
+    "suggestion": "Change 'ku-sápa' to 'ku=sápa' for consistency with the rest of the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#040",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "489",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, a Discord message is tagged ‹contested›, implying scholarly debate. A single community analysis on Discord does not warrant a ‹contested› tag.",
+    "quote": "Community member nukopoli (aynu-corpora Discord, 2025-12-03) parsed <i lang=\"ain-Latn\">iteki e=hawe aste</i> ... ‹contested›.",
+    "suggestion": "Change ‹contested› to ‹speculative› or remove the tag.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#038",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "329",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹contested› but the only evidence provided in the paragraph is a single source (Nakagawa 2024) with a specific example about trap-bows. The tag suggests scholarly disagreement, but no counter-source is cited. The tag may be inflated relative to the evidence presented.",
+    "quote": "The inalienable/alienable line is therefore construal-sensitive for certain nouns, not fixed by the referent alone ‹contested›.",
+    "suggestion": "Either add a citation to a source that contests this view, or downgrade the tag to ‹corpus-suggested› or remove it.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "concept-form-affiliative-form~p1#037",
+  "chapter": "concept-form-affiliative-form",
+  "lines": "275-276",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss says 'my mountain-knife' but the prefix is a= (fourth-person/indefinite), not ku= (first-person singular). The translation should be 'one's mountain-knife' or 'my (indefinite) mountain-knife' to match the prefix.",
+    "quote": "<i lang=\"ain-Latn\">a=tasiro-ho</i> 'my mountain-knife'",
+    "suggestion": "Change 'my' to 'one's' or clarify that a= can be used for first-person in certain contexts.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "277-285",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "rusuy scopes over the resulting aspectual complex … V rusuy ruwe ne … nankor … kusu ne",
+  "issue": "Ainu words in this paragraph are not italicized, whereas elsewhere in the chapter they are consistently given with <i lang=\"ain-Latn\"> tags.",
+  "suggestion": "Add italic markup to all Ainu forms in this paragraph: <i lang=\"ain-Latn\">rusuy</i>, <i lang=\"ain-Latn\">nankor</i>, <i lang=\"ain-Latn\">kusu ne</i>, etc.",
+  "confidence": 1,
+  "chapter": "desiderative-rusuy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "298-299",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "mokor rusuy … cis rusuy",
+  "issue": "These Ainu phrases are not italicized, inconsistent with the book's treatment of Ainu forms in prose.",
+  "suggestion": "Apply <i lang=\"ain-Latn\"> tags: <i lang=\"ain-Latn\">mokor rusuy</i>, <i lang=\"ain-Latn\">cis rusuy</i>.",
+  "confidence": 0.9,
+  "chapter": "desiderative-rusuy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "156",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "the distinction rests on Nakagawa's descriptive note ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is used for a claim that explicitly cites a published descriptive grammar (Nakagawa 2024). The grade suggests tentative corpus evidence, but the source is an authoritative grammar; the tag should be ‹corpus-confirmed› or the description adjusted.",
+  "suggestion": "Either change the tag to ‹corpus-confirmed› or revise the prose to clarify why the evidence is considered merely suggestive.",
+  "confidence": 0.8,
+  "chapter": "desiderative-rusuy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "114",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "‹proposed, nukopoli, aynu-corpora Discord 2024›",
+  "issue": "This epistemic tag reads as a production metadata annotation (listing a proposer and a Discord source) rather than a standard in-text grading. It breaks the reader's flow and belongs in a footnote or endnote.",
+  "suggestion": "Move the attribution to a prose footnote or a parenthetical citation: '… a lead consistent with the typological profile of head-marking, nominalization-dependent languages (proposed by nukopoli, aynu-corpora Discord 2024-11-25).'",
+  "confidence": 1,
+  "chapter": "desiderative-rusuy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

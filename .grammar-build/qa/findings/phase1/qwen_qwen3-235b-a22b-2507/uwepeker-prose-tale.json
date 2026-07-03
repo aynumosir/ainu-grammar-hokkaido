@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "132",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"pananpe an penanpe an hine sir-an pe ne ru-we ne hike\"",
+  "issue": "The morpheme string includes 'ru-we ne', but the gloss 'g' renders it as 'COP track-POSS COP', which misaligns the morphemes: 'ru' and 'we' are separated in the gloss but concatenated in the morpheme line. Additionally, 'hike' is glossed as 'track-POSS', but 'hike' means 'path' or 'track', and 'pe' is already glossed earlier as 'thing'; the possessive interpretation is not clearly supported.",
+  "suggestion": "Revise gloss to align morpheme-by-morpheme: e.g., 'ru=we ne' as 'COP=INFER COP' or similar, and reconsider 'hike' glossing.",
+  "confidence": 0.85,
+  "chapter": "uwepeker-prose-tale",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "133",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"Pananpe exist Penanpe exist CONJ appearance-exist thing COP track-POSS COP although\"",
+  "issue": "The gloss for 'sir-an' is 'appearance-exist', but 'sir' means 'to become visible, to appear', so 'appearance-exist' is redundant or misleading. Also, 'hike' is glossed as 'track-POSS', but no possessive morpheme is present on 'hike' in the 'm' line.",
+  "suggestion": "Change 'appearance-exist' to 'appear' or 'become-visible'; remove 'POSS' from 'track-POSS' unless possessive is morphologically present.",
+  "confidence": 0.8,
+  "chapter": "uwepeker-prose-tale",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "134",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "tr=\"There were Pananpe and Penanpe, and…\"",
+  "issue": "The free translation omits the meaning of 'hine sir-an pe ne ru-we ne hike', which includes inferential evidentiality ('it is said that') and a reference to a track or path. The 'and…' suggests continuation but does not reflect the semantic content of the full clause.",
+  "suggestion": "Revise translation to include inferential and path-related meaning, e.g., 'There were Pananpe and Penanpe, and it is said there was a path...' or similar.",
+  "confidence": 0.75,
+  "chapter": "uwepeker-prose-tale",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "114",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">panakuru</i> / <i lang=\"ain-Latn\">penakuru</i>",
+  "issue": "Inconsistent hyphenation: 'pananpe' and 'penanpe' are hyphenated as 'pana-n-pe' and 'pena-n-pe' in lines 111–112, but 'panakuru' and 'penakuru' are not segmented. For consistency, they should be segmented as 'pana-kuru' and 'pena-kuru' if following the same morphological analysis.",
+  "suggestion": "Segment as <i lang=\"ain-Latn\">pana-kuru</i> / <i lang=\"ain-Latn\">pena-kuru</i> to match the analysis of 'pananpe' and 'penanpe'.",
+  "confidence": 0.9,
+  "chapter": "uwepeker-prose-tale",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "280",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"endo2022\" /> (nukopoli, <Ref k=\"aynucorporadiscord\" /> 2024-06-15)",
+  "issue": "The citation structure is malformed: the community attribution '(nukopoli, aynu-corpora Discord 2024-06-15)' appears outside the <Ref> tag but is not properly integrated into the citation system. It should either be inside a <Ref> with appropriate attributes or formatted consistently with other community attributions.",
+  "suggestion": "Wrap the community attribution in a <Ref> tag with proper attributes or restructure to match the pattern used in line 304–306.",
+  "confidence": 0.95,
+  "chapter": "uwepeker-prose-tale",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "304",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "the community discussion in the aynu-corpora Discord (nukopoli, 2024-11-16) confirms this datum",
+  "issue": "The community attribution is not enclosed in a <Ref> tag, though it cites a specific date and user. Other similar attributions are properly tagged (e.g., line 281), so this is inconsistent.",
+  "suggestion": "Enclose the attribution in a <Ref k=\"aynucorporadiscord\" /> tag, e.g., (nukopoli, <Ref k=\"aynucorporadiscord\" p=\"2024-11-16\" />).",
+  "confidence": 0.9,
+  "chapter": "uwepeker-prose-tale",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "138",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Hirosawa cites the underlying Tamura audio materials; ruwe ne predicates the simultaneous existence of the two characters as established narrative fact.",
+  "issue": "The note contains two independent clauses joined by a semicolon, but the second clause is not clearly connected to Hirosawa's citation. It reads as a general claim, but the structure implies it is part of the citation note.",
+  "suggestion": "Split into two sentences or clarify connection: e.g., 'Hirosawa cites the underlying Tamura audio materials. The inferential evidential ruwe ne predicates...'",
+  "confidence": 0.7,
+  "chapter": "uwepeker-prose-tale",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "279",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">ona</i> 'father', <i lang=\"ain-Latn\">unu</i> 'mother'",
+  "issue": "Inconsistent use of italics: 'ona' and 'unu' are in <i> tags, but other Ainu words in the paragraph (e.g., yayan-itak, atomte-itak) are in <A> tags. For consistency, either all Ainu terms should be in <A> or formatted uniformly.",
+  "suggestion": "Use <A w=\"ona\" gl=\"father\" /> and <A w=\"unu\" gl=\"mother\" /> for consistency with other Ainu terms.",
+  "confidence": 0.95,
+  "chapter": "uwepeker-prose-tale",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

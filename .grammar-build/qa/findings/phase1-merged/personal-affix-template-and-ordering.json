@@ -1,0 +1,1037 @@
+[
+ {
+  "id": "personal-affix-template-and-ordering~p1#006",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "203",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">paye=an</i> is 'go.PL=4.S'. The morpheme segmentation <i lang=\"ain-Latn\">m</i> shows <i lang=\"ain-Latn\">paye=an</i>. The gloss indicates a plural ('PL'), but there is no explicit plural morpheme visible in the segmentation of <i lang=\"ain-Latn\">paye=an</i>. The note mentions 'plural stem paye', suggesting 'paye' itself is a plural stem, but this is not evident from the segmentation alone.",
+    "quote": "m=\"eani hem paye=an ro\"\ng=\"2SG even go.PL=4.S HORT\"",
+    "suggestion": "Either adjust the gloss to 'go=4.S' if 'paye' is inherently plural, or ensure the segmentation includes an explicit plural marker if one exists.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'go.PL' for 'paye' but the free translation 'let us go' is imperative/hortative, not simply plural. The gloss indicates plural stem but the translation doesn't reflect plurality explicitly.",
+    "quote": "m=\"eani hem paye=an ro\" g=\"2SG even go.PL=4.S HORT\" tr=\"You too, let us go!\"",
+    "suggestion": "Consider glossing 'paye' as 'go.PL' and adjusting the translation to 'You too, let's go!' (which is more natural) or adding a note about the plural stem.",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss assigns =an as 4.S, but the translation is 'You too, let us go!', which is 1PL.INCL, not 4th person. The note confirms this is hortative and includes the addressee. There is a direct mismatch between the gloss (4.S) and the semantic role (1PL.INCL.S).",
+    "quote": "m=\"eani hem paye=an ro\" g=\"2SG even go.PL=4.S HORT\"",
+    "suggestion": "Revise the gloss to reflect the inclusive meaning, e.g., =an glossed as INCL.S or 1PL.INCL.S, or add a note that =an in hortative contexts indexes inclusive participants despite being formally 4th-person form.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#030",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "384-391",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'even' for 'ka' but the free translation uses 'and also' which is not a direct match for 'even'. The gloss should perhaps use 'also' or 'even' consistently.",
+    "quote": "m=\"tane iperusuy ka =an sinki ka =an kor\" g=\"now hungry even 4.S tired even 4.S while\" tr=\"Now, being hungry and also tired, …\"",
+    "suggestion": "Change gloss to 'also' or adjust translation to 'even hungry and even tired'.",
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss treats =an as 4.S, but the translation 'Now, being hungry and also tired, …' implies a first-person speaker state. The form =an is used twice, but the subject is clearly the speaker (1SG or 1PL), not a 4th person. This contradicts the gloss.",
+    "quote": "m=\"tane iperusuy ka =an sinki ka =an kor\" g=\"now hungry even 4.S tired even 4.S while\"",
+    "suggestion": "Revise the gloss to reflect 1SG.S or 1PL.S, or add a note that =an in separable contexts may be used for speaker reference regardless of person label, indicating that '4.S' may be a formal label not always aligned with semantic person.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#013",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "398-401",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Sakaguchi treats <i lang=\"ain-Latn\">=as</i> as a root-attaching affix, while Bugaeva places <i lang=\"ain-Latn\">=as</i> in the 'word-like' class with <i lang=\"ain-Latn\">=an</i>. However, the table on lines 349-354 lists <i lang=\"ain-Latn\">=an</i> and <i lang=\"ain-Latn\">=as</i> under the 'word-like' grade. This implies that Bugaeva's classification of <i lang=\"ain-Latn\">=as</i> as 'word-like' is consistent with the table's presentation of <i lang=\"ain-Latn\">=as</i>.",
+    "quote": "While 1PL.EXCL <i lang=\"ain-Latn\">-as</i> is treated as a root-attaching affix —\na verdict that parts from Bugaeva, who places <i lang=\"ain-Latn\">=as</i> in the same word-like\nclass as <i lang=\"ain-Latn\">=an</i> <Ref k=\"sakaguchi2024\" p=\"ix, 62–64, 77–85, 101, 163\" />;\n<Ref k=\"bugaeva2012\" p=\"472–473\" /> ‹contested›.",
+    "suggestion": "The phrasing 'a verdict that parts from Bugaeva' might be misleading if Bugaeva's classification aligns with the table. Clarify that Sakaguchi's classification of <i lang=\"ain-Latn\">=as</i> as a root-attaching affix is the point of divergence from Bugaeva's 'word-like' classification.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This contradicts earlier statements that =as is a right-edge suffix (e.g., line 64, 154) and Bugaeva's classification of =as as 'word-like' and separable. Sakaguchi's analysis is cited as treating it as a root-attaching affix with hyphen, but the rest of the chapter uses =as with equals sign, implying clitic-like status. The inconsistency between =as and -as is not resolved.",
+    "quote": "1PL.EXCL <i lang=\"ain-Latn\">-as</i> is treated as a root-attaching affix",
+    "suggestion": "Clarify that Sakaguchi's use of -as reflects his affix/clitic boundary convention, but in this grammar =as is retained for consistency, noting the theoretical disagreement.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#004",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "156",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence states that <i lang=\"ain-Latn\">ci=</i> and <i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i> are the transitive-subject counterparts to the right-edge suffixes <i lang=\"ain-Latn\">=as</i> and <i lang=\"ain-Latn\">=an</i>. However, the table on lines 29-33 lists <i lang=\"ain-Latn\">ci=</i> as a 1PL.EXCL A prefix and <i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i> as a 4th/indefinite A prefix. This implies they are already A prefixes in the left personal layer, which aligns with the statement, but the phrasing 'transitive-subject counterparts' might be slightly confusing given the earlier explicit listing of these as A prefixes.",
+    "quote": "Their transitive-subject counterparts, <i lang=\"ain-Latn\">ci=</i> and <i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i>, stand in\nthe left personal layer.",
+    "suggestion": "Rephrase to 'Their transitive-subject counterparts, the A prefixes <i lang=\"ain-Latn\">ci=</i> and <i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i>, stand in the left personal layer.'",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table in lines 17-77 lists the right personal layer as containing '=as (1PL.EXCL.S); =an (4.S)', but the prose here says '4th/indefinite' for =an, while earlier in the chapter (line 94-95) the 4th/indefinite A prefix is described as 'a= or an='. The gloss for =an in the table is '4.S' but the prose says '4th/indefinite' — this is a minor inconsistency in how the 4th person is labeled (4 vs. 4th/indefinite).",
+    "quote": "Two subject indexes appear at the right edge of the inflected verb: 1PL.EXCL <i lang=\"ain-Latn\">=as</i> and 4th/indefinite <i lang=\"ain-Latn\">=an</i>. Both mark S on intransitive verbs and follow any stem-internal suffix.",
+    "suggestion": "Standardize the label for the 4th person across the chapter (e.g., always '4' or always '4th/indefinite').",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#001",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "29-33",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of O prefixes includes <i lang=\"ain-Latn\">i=</i>, which is also listed as a 4th-person A prefix in the same section (lines 94-95). While the text later clarifies that the detransitivizing <i lang=\"ain-Latn\">i-</i> is distinct from the 4th-person object prefix <i lang=\"ain-Latn\">i=</i> (lines 121-123), this initial presentation could be clearer by distinguishing them or noting the potential ambiguity.",
+    "quote": "A prefixes: <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">ci=</i>,\n<i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i>,\n<i lang=\"ain-Latn\">e=</i>, <i lang=\"ain-Latn\">eci=</i>; O prefixes:\n<i lang=\"ain-Latn\">en=</i>, <i lang=\"ain-Latn\">un=</i>,\n<i lang=\"ain-Latn\">i=</i>",
+    "suggestion": "Consider adding a note or rephrasing to clarify the distinction between the detransitivizing <i lang=\"ain-Latn\">i-</i> and the 4th-person object prefix <i lang=\"ain-Latn\">i=</i> at this point, or ensure the later explanation is sufficiently prominent.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of spacing around the slash in 'a=/an=' — no space before or after in other similar constructions in the table, but here there are line breaks and inconsistent spacing.",
+    "quote": "A prefixes: <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">ci=</i>,\n\t\t\t<i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i>,\n\t\t\t<i lang=\"ain-Latn\">e=</i>, <i lang=\"ain-Latn\">eci=</i>; O prefixes:",
+    "suggestion": "Use consistent spacing: 'a=/an=' without line breaks or extra spaces, or format as 'a= / an=' with consistent spacing on both sides.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#032",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "436-443",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'morning water 2SG.A=drink' but the free translation has 'in the morning' which adds a preposition not in the gloss. The gloss should perhaps be 'morning' as a noun, but the translation treats it as an adverbial phrase.",
+    "quote": "m=\"kunneywa wakka e=ku\" g=\"morning water 2SG.A=drink\" tr=\"You drink water in the morning.\"",
+    "suggestion": "Gloss 'kunneywa' as 'morning' and note that it functions adverbially, or adjust translation to 'morning water you drink'.",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form ku=hosipi is glossed as 1SG.S, but in the left personal layer, 1SG is A on transitive verbs. The verb hosipi 'return' is intransitive, so 1SG should be marked by a suffix, not a prefix. The example places a subject prefix on an intransitive verb, which contradicts the tripartite pattern described in the chapter.",
+    "quote": "g=\"1SG.S=return\"",
+    "suggestion": "Either use a suffixal form like hosipi=ku (if attested) or revise the example to a transitive verb. Alternatively, clarify that 1SG.S can appear as ku= on intransitive verbs in some dialects or constructions, but this would contradict the main analysis.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#028",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "253-260",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'do-PL=4.S' but the free translation 'We lived' uses past tense and doesn't explicitly show the plural marker. The gloss indicates the stem-forming plural suffix -pa, but the translation doesn't reflect this.",
+    "quote": "m=\"irwak sinne sorekusu iki-pa=an\" g=\"sibling one.like in.that.way do-PL=4.S\" tr=\"We lived like siblings.\"",
+    "suggestion": "Consider adding a note or adjusting the translation to reflect the plural morphology.",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The translation is 'We lived like siblings.' — again 1PL.INCL — but the gloss assigns =an as 4.S. This repeats the mismatch seen in the previous example.",
+    "quote": "m=\"irwak sinne sorekusu iki-pa=an\" g=\"sibling one.like in.that.way do-PL=4.S\"",
+    "suggestion": "Same as above: revise gloss or clarify dialectal/inclusive use of =an.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#027",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "244-250",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'PL' for 'pa' but the free translation doesn't explicitly mark plurality ('we' is implied but not glossed). The gloss should perhaps indicate that 'pa' is an auxiliary plural marker, not a simple 'PL' gloss.",
+    "quote": "m=\"nenpoka iki=an pa wa siknu=an wa\" g=\"somehow do=4.S PL CONJ live=4.S CONJ\" tr=\"Somehow we managed to do it, and went on living.\"",
+    "suggestion": "Gloss 'pa' as 'PL.AUX' or similar to distinguish it from the stem-forming plural suffix.",
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation is 'Somehow we managed to do it, and went on living.' — first person plural inclusive — but the gloss treats =an as 4.S. This creates a person mismatch: the form =an is glossed as 4.S but translated as 1PL.INCL.",
+    "quote": "m=\"nenpoka iki=an pa wa siknu=an wa\" g=\"somehow do=4.S PL CONJ live=4.S CONJ\"",
+    "suggestion": "Either revise the gloss to reflect 1PL.INCL.S for =an in this context, or clarify in the note that =an in this dialect or context is used for inclusive first person, not 4th person.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#005",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "194",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the second part of the example is <i lang=\"ain-Latn\">arki=as</i>, glossed as 'come.PL=1PL.EXCL.S'. However, the morpheme segmentation in <i lang=\"ain-Latn\">m</i> is <i lang=\"ain-Latn\">arki=as</i>. The gloss indicates 'come.PL', but the morpheme segmentation does not explicitly show a plural marker. The 'PL' might be inferred from context or a separate analysis not visible here.",
+    "quote": "g=\"car exist CONJ 1PL.EXCL.A=board then come.PL=1PL.EXCL.S\"",
+    "suggestion": "Clarify if '-pa' or another plural marker is elided or incorporated into 'arki' in the segmentation, or adjust the gloss to reflect only what is segmented.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'come.PL' for 'arki' but the morpheme line has 'arki' (not marked as plural). The free translation says 'came' (singular in English) but the gloss indicates plural. This is a minor inconsistency between the gloss and the translation.",
+    "quote": "m=\"kuruma an wa ci=o tek arki=as\" g=\"car exist CONJ 1PL.EXCL.A=board then come.PL=1PL.EXCL.S\" tr=\"There was a car, and we boarded it and came.\"",
+    "suggestion": "Either change the gloss to 'come' (singular) or change the translation to 'came (pl.)' to match the gloss.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#003",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "133-137",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that <i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i> are used for the 4th-person A prefix. However, in the table on lines 29-33, <i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">an=</i> are listed under 'A prefixes' without specifying person, and <i lang=\"ain-Latn\">i=</i> is listed under 'O prefixes' for 4th person. The text on lines 94-95 also states that <i lang=\"ain-Latn\">a=</i> or <i lang=\"ain-Latn\">an=</i> is the 4th/indefinite A prefix. This section (133-137) focuses on the 4th-person A prefix, but the earlier table lists <i lang=\"ain-Latn\">i=</i> as the 4th-person O prefix. There's a potential for confusion if the reader expects a parallel 4th-person O prefix to be discussed here.",
+    "quote": "The 4th-person A prefix shows a dialectal split within the left personal layer. Saru and the\nwestern dialects use <i lang=\"ain-Latn\">a=</i> exclusively; Tokachi, Ishikari, Shiranuka, and\nSamani favour <i lang=\"ain-Latn\">an=</i> under locally varying conditions, and Nakagawa takes\n<i lang=\"ain-Latn\">an=</i> to be the older form <Ref k=\"nakagawa2024\" p=\"167–168\" />. Both\nshapes occupy the same left-edge position ‹consensus›.",
+    "suggestion": "Ensure consistency in how 4th-person marking is presented for both A and O roles across the chapter, or add a clarifying sentence here to explicitly state that the discussion is about the A prefix, and the O prefix is handled elsewhere.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table in lines 17-77 lists the left personal layer as including 'a=/an=' without specifying dialect distribution, but the prose here gives a specific dialect split. The table also lists 'a=/an=' as a single entry, which is consistent but the prose adds detail not reflected in the table.",
+    "quote": "Saru and the western dialects use <i lang=\"ain-Latn\">a=</i> exclusively; Tokachi, Ishikari, Shiranuka, and Samani favour <i lang=\"ain-Latn\">an=</i> under locally varying conditions, and Nakagawa takes <i lang=\"ain-Latn\">an=</i> to be the older form",
+    "suggestion": "Consider adding a note to the table or cross-referencing the dialectal variation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#047",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "154",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form =as is glossed as 1PL.EXCL.S in the table (line 64), but in line 154 it is referred to as marking 'S' on intransitive verbs — correct — yet in the same sentence =an is said to mark 'S' on intransitive verbs, but in example 203–210, =an is used in a hortative with 2SG addressee ('let us go'), suggesting inclusive rather than 4th person. This contradicts the claim that =an is 4th/indefinite S.",
+    "quote": "1PL.EXCL <i lang=\"ain-Latn\">=as</i> and 4th/indefinite <i lang=\"ain-Latn\">=an</i>",
+    "suggestion": "Revise the description of =an to acknowledge its use in inclusive/hortative contexts with 1PL.INCL reference, possibly noting dialectal or pragmatic variation, or clarify that '4th/indefinite' includes hortative uses where reference includes addressee.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#045",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent capitalization in gloss labels: '1PL.EXCL.S' vs '4.S' — the former uses uppercase 'PL', the latter does not. Should be standardized.",
+    "quote": "<i lang=\"ain-Latn\">=as</i> (1PL.EXCL.S); <i lang=\"ain-Latn\">=an</i> (4.S)",
+    "suggestion": "Use consistent formatting: either '1PL.EXCL.S' and '4PL.S' (if 4 is plural) or '1pl.excl.s' and '4.s' (lowercase), depending on the book's style.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#044",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "454-457",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, Satō 2023b has '39' here, inconsistent with earlier references.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"169\" />; <Ref k=\"sato2023b\" p=\"39\" />; <Ref k=\"sato2025a\" p=\"369\" />",
+    "suggestion": "Ensure consistent page references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#043",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "322-325",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Satō 2023b has '39' here, but earlier it was '39–40' and '40, 47'. Inconsistent.",
+    "quote": "<Ref k=\"sato2023b\" p=\"39\" />; <Ref k=\"sato2025a\" p=\"369\" />; <Ref k=\"nakagawa2024\" p=\"169\" />",
+    "suggestion": "Ensure consistent page references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#042",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "304-307",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Satō 2023b has '40, 47' here, but earlier it was '39–40' and '39, 47'. Inconsistent page references.",
+    "quote": "<Ref k=\"sato2008\" p=\"147\" />; <Ref k=\"sato2023b\" p=\"40, 47\" />; <Ref k=\"sato2025a\" p=\"368–371\" />; <Ref k=\"nakagawa2024\" p=\"363–365\" />",
+    "suggestion": "Check the source and ensure consistent page references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#041",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "283-286",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Satō has '39, 47' here, which is different from '39–40' earlier. This is inconsistent.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"363–365\" />; <Ref k=\"sato2023b\" p=\"39, 47\" />.",
+    "suggestion": "Ensure consistent page references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#040",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "232",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, Satō has single page '40' vs. '39–40' earlier.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"196–199\" />; <Ref k=\"sato2023b\" p=\"40\" />.",
+    "suggestion": "Ensure consistent page references.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#039",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "159-162",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation for Bugaeva 2012 has a single page '472' but earlier (line 86) it was '471, 481'. This is inconsistent.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"166–167\" />; <Ref k=\"bugaeva2012\" p=\"472\" />; <Ref k=\"bugaeva2008\" p=\"32\" />.",
+    "suggestion": "Check the source and ensure consistent page references.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#038",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "126-129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation for Satō has a single page '40' but earlier (line 86) it was '39–40'. This is inconsistent.",
+    "quote": "<Ref k=\"tamura1972\" p=\"35\" />; <Ref k=\"nakagawa2024\" p=\"196–199\" />; <Ref k=\"sato2023b\" p=\"40\" />.",
+    "suggestion": "Ensure consistent page references across the chapter.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#037",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "99-102",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation for Bugaeva has a single page '471' but earlier (line 86) it was '471, 481'. This is inconsistent — either both should be single or both should include the second page.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"166–170\" />; <Ref k=\"bugaeva2012\" p=\"471\" />.",
+    "suggestion": "Check the source and ensure consistent page references.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#036",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "86",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation format uses en-dashes for page ranges (151–159) which is correct, but the semicolons between citations are inconsistent with the comma usage elsewhere (e.g., line 99-102 uses semicolons as well). This is a minor formatting issue.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"151–159\" />; <Ref k=\"bugaeva2012\" p=\"471, 481\" />; <Ref k=\"sato2023b\" p=\"39–40\" />.",
+    "suggestion": "Ensure consistent use of semicolons or commas between multiple citations.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#035",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "1-3",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a SvelteKit script tag that is part of the source file but not visible to the reader. It's not a register leak per se, but it's a pipeline artifact. No action needed.",
+    "quote": "<script lang=\"ts\"> import { S, Ex, Ref, Xr } from '$lib/grammar/components'; </script>",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#034",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "413-458",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter uses '=' for personal-index boundaries throughout, but the Ijäs section notes that she uses hyphens. The examples in this section (lines 426-433, 436-443) use '=' in the m= field, which is the grammar's convention, but the note says she writes with hyphens. This is explained, so it's not an inconsistency, but the reader might wonder why the examples don't use hyphens to match Ijäs's convention.",
+    "quote": "Ijäs section: 'She writes ku-hosipi; this grammar uses = for the personal-index boundary.'",
+    "suggestion": "Consider adding a note that the examples follow the grammar's convention for consistency.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#033",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "17-77",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table uses <i lang=\"ain-Latn\"> for Ainu forms, but elsewhere in the chapter (e.g., line 29-34) the same forms are also marked with <i lang=\"ain-Latn\">. This is consistent. However, the table uses '=' for clitic boundaries (e.g., ku=) while the prose sometimes uses hyphens (e.g., in the Ijäs section). This is a notational convention difference that is explained, but it could be confusing.",
+    "quote": "Table: uses <i lang=\"ain-Latn\"> for Ainu forms",
+    "suggestion": "No change needed as the convention is explained, but ensure consistency within the table itself.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#031",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "426-433",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '1SG.S=return' but the free translation 'I return' is present tense. The gloss doesn't mark tense, which is fine, but the translation uses present tense while the Ainu form is unmarked for tense.",
+    "quote": "m=\"ku=hosipi\" g=\"1SG.S=return\" tr=\"I return.\"",
+    "suggestion": "This is acceptable as a default translation; no change needed.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#029",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "289-296",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'sweets children 1SG.A=give' but the free translation has 'the children sweets' (definite article and word order difference). The gloss doesn't mark definiteness or word order, which is fine, but the translation uses 'the' which is not in the gloss.",
+    "quote": "m=\"topenpe hekattar ku=kore\" g=\"sweets children 1SG.A=give\" tr=\"I gave the children sweets.\"",
+    "suggestion": "This is a minor issue; consider adding 'the' to the gloss or removing from translation, but it's acceptable as is.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#026",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "105-113",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'CONJ because' for 'wa kusu' but the morpheme line has 'wa kusu' as two separate words. The gloss should reflect that 'wa' is CONJ and 'kusu' is 'because' (or similar), but instead it's glossed as a single unit 'CONJ because'. This is a minor glossing inconsistency.",
+    "quote": "m=\"aynu itak k=eramuan wa kusu icen k=eunkeray wa pirka pirka\" g=\"Ainu language 1SG.A=understand CONJ because money 1SG.A=receive CONJ good good\" tr=\"Because I had learnt Ainu, I was able to receive money, which was very good.\"",
+    "suggestion": "Gloss 'wa' as 'CONJ' and 'kusu' as 'because' separately, or use a multi-word gloss like 'CONJ=because'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#025",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "64-65",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table labels =an as '4.S' but the prose (line 154) calls it '4th/indefinite'. The gloss in examples (e.g., line 204) uses '4.S'. This is a minor labeling inconsistency.",
+    "quote": "right personal layer: =as (1PL.EXCL.S); =an (4.S)",
+    "suggestion": "Standardize to either '4' or '4th/indefinite' throughout.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#015",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "442",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for example 437-444 states 'Constructed following Ijäs lesson 3. The object is third person with no overt index; e= occupies the left personal layer as 2SG.A. She writes e-ku.' The dialect is given as SAR. However, the text on lines 72 mentions that the auxiliary <i lang=\"ain-Latn\">ci</i> is used in Shizunai, and <i lang=\"ain-Latn\">pa</i> is used in Saru, Chitose, and Ishikari. If this example is from Saru, it should use <i lang=\"ain-Latn\">pa</i> as the auxiliary, not <i lang=\"ain-Latn\">ci</i>. The example itself does not contain an auxiliary, but the note's reference to Shizunai's <i lang=\"ain-Latn\">ci</i> might be a misplaced detail or indicate a dialectal variation not fully explained.",
+    "quote": "dial=\"SAR\"",
+    "suggestion": "Clarify the dialectal distribution of auxiliaries if it impacts the interpretation of examples, or remove the potentially confusing reference to Shizunai if it's not directly relevant to the example.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#014",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "433",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the form shows '1SG.S on an intransitive stem in the left personal layer'. However, the example <i lang=\"ain-Latn\">ku=hosipi</i> (lines 427-429) is glossed as '1SG.S=return'. The verb <i lang=\"ain-Latn\">hosipi</i> 'return' is typically intransitive. The 'left personal layer' is where subject prefixes are located. This statement is consistent with the example, but the phrasing could be slightly more direct.",
+    "quote": "The form shows 1SG.S on an intransitive stem in the left personal layer.",
+    "suggestion": "No change needed, but ensure consistency in terminology when describing the position of personal indexes.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#009",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "331",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the boundary symbol <i lang=\"ain-Latn\">=</i> is used throughout the grammar at personal-index junctions. However, in the table on lines 29-33, the 'left personal layer' prefixes are shown with <i lang=\"ain-Latn\">=</i> (e.g., <i lang=\"ain-Latn\">ku=</i>), while the 'valency-prefix layer' prefixes (lines 39-43) and 'stem-internal suffix' (lines 53-58) use hyphens (<i lang=\"ain-Latn\">e-</i>, <i lang=\"ain-Latn\">ko-</i>, <i lang=\"ain-Latn\">i-</i>, <i lang=\"ain-Latn\">yay-</i>, <i lang=\"ain-Latn\">si-</i>, <i lang=\"ain-Latn\">u-</i>, <i lang=\"ain-Latn\">-pa</i>, <i lang=\"ain-Latn\">-re</i>, etc.). This suggests the use of <i lang=\"ain-Latn\">=</i> is not universal for all personal-index junctions or all prefix/suffix boundaries.",
+    "quote": "The boundary symbol <i lang=\"ain-Latn\">=</i> used throughout this grammar at personal-index\njunctions is a notational convenience, not a settled morphological claim.",
+    "suggestion": "Clarify that <i lang=\"ain-Latn\">=</i> is used for personal-index junctions, but hyphens are used for other morphological boundaries (e.g., valency prefixes, stem-internal suffixes).",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Tamura and Satō write the same markers with hyphens. This refers to personal index markers. However, the table on lines 29-33 and the examples throughout the chapter use <i lang=\"ain-Latn\">=</i> for personal prefixes (e.g., <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">ci=</i>) and <i lang=\"ain-Latn\">=</i> for personal suffixes (e.g., <i lang=\"ain-Latn\">=as</i>, <i lang=\"ain-Latn\">=an</i>). If Tamura and Satō use hyphens for these personal markers, it implies a different notational convention for the same morphemes.",
+    "quote": "Tamura and Satō write the same markers with hyphens.",
+    "suggestion": "Ensure clarity on what 'same markers' refers to. If it means personal index markers, then the contrast with the grammar's own notation (<i lang=\"ain-Latn\">=</i>) should be explicit.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#008",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "268",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text refers to the Sakhalin Ainu verbal plural suffix <i lang=\"ain-Latn\">=hci</i> and the root-attaching plural suffix <i lang=\"ain-Latn\">-pa</i>. However, the Hokkaido Ainu stem-forming plural suffix is also <i lang=\"ain-Latn\">-pa</i>, as mentioned on line 228. This could lead to confusion if the reader assumes the Sakhalin <i lang=\"ain-Latn\">-pa</i> is being discussed in the context of Hokkaido Ainu.",
+    "quote": "suffix <i lang=\"ain-Latn\">-pa</i> inside it <Ref k=\"sakaguchi2024\" p=\"12, 77–85, 163\" />.",
+    "suggestion": "Clarify that the <i lang=\"ain-Latn\">-pa</i> mentioned in relation to Sakaguchi's analysis is specifically the Sakhalin Ainu form, or explicitly state that Hokkaido Ainu also has a stem-forming <i lang=\"ain-Latn\">-pa</i>.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#007",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "238-239",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions an 'outer plural auxiliary <i lang=\"ain-Latn\">pa</i>' in Saru, Chitose, and Ishikari. However, in the table on lines 71-72, this is described as an 'auxiliary <i lang=\"ain-Latn\">pa</i> (Saru, Chitose, Ishikari)' and an 'auxiliary <i lang=\"ain-Latn\">ci</i> (Shizunai)'. The term 'outer plural auxiliary' is more specific than just 'auxiliary'.",
+    "quote": "Hokkaido has a stem-forming plural suffix <i lang=\"ain-Latn\">-pa</i> that attaches to the root, and in Saru, Chitose, and Ishikari an\nouter plural auxiliary <i lang=\"ain-Latn\">pa</i> that follows the person-inflected form.",
+    "suggestion": "Ensure consistent terminology. If 'outer plural auxiliary' is the precise term, use it consistently, or clarify if 'auxiliary' is sufficient.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#002",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "121",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the detransitivizing <i lang=\"ain-Latn\">i-</i> must be kept apart from the homophonous 4th-person object prefix <i lang=\"ain-Latn\">i=</i>. However, the morpheme boundary symbol used for the detransitivizer is a hyphen (<i lang=\"ain-Latn\">i-</i>), while the object prefix uses an equals sign (<i lang=\"ain-Latn\">i=</i>). This difference in boundary symbols already distinguishes them morphologically, so they are not strictly homophonous in their written representation within the Ainu morpheme segmentation.",
+    "quote": "<i lang=\"ain-Latn\">i-</i> must be kept apart from the homophonous 4th-person object prefix <i lang=\"ain-Latn\">i=</i>",
+    "suggestion": "Rephrase to 'must be kept apart from the 4th-person object prefix <i lang=\"ain-Latn\">i=</i>, which shares the same phonological form but differs in its boundary symbol and position'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#046",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "98",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text claims that both e= and eci= are used as object prefixes for 2SG/2PL, but in the table in section 'The right personal layer: =as and =an', e= and eci= are listed as neutral A/S/O prefixes, and in the O column only i= is listed for 4th, with no mention of e=/eci= as O forms. This creates a conflict between sections.",
+    "quote": "2SG/2PL <i lang=\"ain-Latn\">e=</i>/<i lang=\"ain-Latn\">eci=</i>",
+    "suggestion": "Clarify whether e= and eci= are used as O prefixes for 2SG/2PL or correct the statement to reflect that O prefixes are en= (1SG), un= (1PL.EXCL), i= (4), and e= or eci= are only A/S markers.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#024",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "17-77",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table lists O prefixes as 'en=, un=, i=' but does not include e= or eci= as O prefixes, even though the prose (lines 96-99 and 213-220) states that e= and eci= are neutral and can serve as O prefixes. This is a clear inconsistency between the table and the prose.",
+    "quote": "Table: left personal layer includes 'A prefixes: ku=, ci=, a=/an=, e=, eci=; O prefixes: en=, un=, i='",
+    "suggestion": "Either add e= and eci= to the O prefix list in the table, or add a footnote explaining their neutral status.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#023",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "446-458",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag is applied to a sentence that describes two compatible positions (Nakagawa and Satō). The tag is inappropriate because the sentence is not making a contested claim — it's stating that the data is compatible with both analyses. The contestation is between the two analyses themselves, but the sentence is neutral about which is correct.",
+    "quote": "The zero-marking of third-person transitive arguments in her examples is factually accurate but theoretically neutral: it is compatible with Nakagawa's position that there is no third-person affix and with Satō's posit of a zero index required by the two-index ceiling ‹contested›.",
+    "suggestion": "Remove the ‹contested› tag, or rephrase to make clear what exactly is contested.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#022",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "395-408",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag appears twice in this paragraph. The first instance is appropriate as it marks the disagreement between Sakaguchi and Bugaeva. The second instance is applied to the statement that no dedicated Hokkaido study exists — this is a factual claim about the literature, not a contested analysis. The tag is inappropriate here.",
+    "quote": "Sakaguchi's 2024 thesis on Sakhalin Ainu draws a formal distinction... a verdict that parts from Bugaeva... ‹contested›. Sakaguchi's systematic diagnostics were developed for Sakhalin material... A dedicated clitic/affix study of Hokkaido person-marking at comparable rigour has not been produced... ‹contested›.",
+    "suggestion": "Remove the second ‹contested› tag (after '...‹contested›.') and rephrase if needed.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#021",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "320-325",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, the ‹contested› tag is applied to a sentence that already describes the disagreement between Satō and Nakagawa. The tag is redundant.",
+    "quote": "Satō uses this two-index restriction to argue that a zero third-person index must be posited in the paradigm... in disagreement with Nakagawa's earlier position that third person has no affix ‹contested›.",
+    "suggestion": "Remove the ‹contested› tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#020",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "299-307",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag is applied to the entire sentence, but the sentence presents two competing analyses (Satō vs. Nakagawa) with citations for both. The tag is redundant — the contestation is already described in the prose. The tag should be removed or applied only to a specific claim that is actually contested.",
+    "quote": "Satō analyses this as a secundative pattern... Nakagawa frames the same verbs as three-place predicates with two bare object phrases... ‹contested›.",
+    "suggestion": "Remove the ‹contested› tag, as the prose already presents the debate.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#019",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "264-270",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is used, but the only citation is Sakaguchi (2024) and the claim is that it's 'by extension'. There is no citation for the contestation itself — who contests this extension? The tag implies a debate but no source is provided for the opposing view.",
+    "quote": "Sakaguchi formalises the inside/outside distinction as a clitic diagnostic... His criterion bears on the Hokkaido outer <i lang=\"ain-Latn\">pa</i> by extension from a Sakhalin-focused analysis ‹contested›.",
+    "suggestion": "Either add a citation for the contesting view, or change the tag to ‹speculative› or remove it.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#018",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "213-220",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Earlier in the chapter (lines 96-99), it says 'Object indexes are prefixal across all persons: 1SG en=, 1PL.EXCL un=, 4th i=, and 2SG/2PL e=/eci= stand before the stem when overt.' This implies that e= and eci= can serve as object prefixes, which is consistent with the 'neutral' claim here. However, the table in lines 17-77 lists only A prefixes and O prefixes separately, and e=/eci= appear only in the A prefix list, not in the O prefix list. This is an inconsistency between the table and the prose.",
+    "quote": "All other persons keep their subject index on the left. First singular <i lang=\"ain-Latn\">ku=</i> marks both S and A as a prefix, opposed to the object <i lang=\"ain-Latn\">en=</i>. Second-person <i lang=\"ain-Latn\">e=</i> and <i lang=\"ain-Latn\">eci=</i> are neutral — the same form serves A, S, and O — and always prefixal.",
+    "suggestion": "Either add e=/eci= to the O prefix list in the table, or add a note explaining that they are neutral and serve both roles.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#017",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "86",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence claims that earlier descriptions treated comparable segments as person markers, but the cited pages for Bugaeva (471, 481) and Satō (39–40) are not checked for relevance; the Nakagawa page range (151–159) is plausible but the claim is about 'earlier descriptions' and the citation cluster may not support the specific contrast being drawn.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"151–159\" />; <Ref k=\"bugaeva2012\" p=\"471, 481\" />; <Ref k=\"sato2023b\" p=\"39–40\" />.",
+    "suggestion": "Verify that each cited source actually discusses the outer number layer as a person marker vs. non-person marker contrast.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#016",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "457",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Ijäs's examples show zero-marking of third-person transitive arguments. This is presented as compatible with both Nakagawa's view (no third-person affix) and Satō's view (zero index). However, the example on lines 437-444, <i lang=\"ain-Latn\">kunneywa wakka e=ku</i>, is glossed as 'morning water 2SG.A=drink'. This example shows a 2SG.A subject and a third-person object ('water'), with no overt index for the object. This aligns with the 'two-index ceiling' where only one object index is possible, and it's assigned to the recipient if present and non-third person. The statement about 'third-person transitive arguments' might be too general if the example only shows a third-person object.",
+    "quote": "The zero-marking of third-person transitive arguments in her examples is factually accurate but\ntheoretically neutral: it is compatible with Nakagawa's position that there is no third-person\naffix and with Satō's posit of a zero index required by the two-index ceiling <Ref\nk=\"nakagawa2024\"\np=\"169\" />;\n<Ref k=\"sato2023b\"\np=\"39\" />;\n<Ref k=\"sato2025a\"\np=\"369\" /> ‹contested›.",
+    "suggestion": "Clarify if the statement refers to both third-person subjects and objects, or specifically to objects in the context of the two-index ceiling. If it refers to objects, ensure the example provided is representative.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#012",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "362-369",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'full prefix' grade includes <i lang=\"ain-Latn\">i=</i>. However, the text on lines 121-123 distinguishes the detransitivizing <i lang=\"ain-Latn\">i-</i> from the 4th-person object prefix <i lang=\"ain-Latn\">i=</i>. If <i lang=\"ain-Latn\">i=</i> is a 'full prefix' that shifts the accent kernel, it implies it is distinct from the detransitivizing <i lang=\"ain-Latn\">i-</i>, which is described as a prefix attached closer to the root (lines 119-120). The table does not explicitly list the detransitivizing <i lang=\"ain-Latn\">i-</i>, only the object prefix <i lang=\"ain-Latn\">i=</i>.",
+    "quote": "grade\nfull prefix\nforms\n<i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">ci=</i>,\n<i lang=\"ain-Latn\">e=</i>, <i lang=\"ain-Latn\">en=</i>,\n<i lang=\"ain-Latn\">un=</i>, <i lang=\"ain-Latn\">i=</i>\ndiagnostic\ninseparable and shift the accent kernel",
+    "suggestion": "Ensure the distinction between the detransitivizing <i lang=\"ain-Latn\">i-</i> and the object prefix <i lang=\"ain-Latn\">i=</i> is clear in relation to this classification. If <i lang=\"ain-Latn\">i=</i> (object prefix) is a full prefix, it should be explicitly stated that the detransitivizing <i lang=\"ain-Latn\">i-</i> is a different morpheme with different properties.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#011",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "356-360",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The diagnostic for 'clitic-like' forms <i lang=\"ain-Latn\">a=</i> and <i lang=\"ain-Latn\">eci=</i> states they are 'inseparable'. However, the example on lines 141-147 uses <i lang=\"ain-Latn\">a=</i>, and the note states 'The prefix a= indexes an indefinite transitive subject'. The example on lines 106-112 uses <i lang=\"ain-Latn\">k=</i> (a reduction of <i lang=\"ain-Latn\">ku=</i>) and <i lang=\"ain-Latn\">k=eunkeray</i>, where <i lang=\"ain-Latn\">k=</i> is a prefix. The text on lines 95-96 states <i lang=\"ain-Latn\">eci=</i> is a 2PL prefix. The 'clitic-like' classification seems to contradict the 'prefix' status implied by the boundary symbol <i lang=\"ain-Latn\">=</i> and the description of these forms as prefixes.",
+    "quote": "grade\nclitic-like\nforms\n<i lang=\"ain-Latn\">a=</i>, <i lang=\"ain-Latn\">eci=</i>\ndiagnostic\ninseparable; do not shift the verb's accent kernel",
+    "suggestion": "Reconcile the classification of <i lang=\"ain-Latn\">a=</i> and <i lang=\"ain-Latn\">eci=</i> as 'clitic-like' with their description as prefixes. Perhaps the 'clitic-like' status refers to specific phonological or prosodic properties rather than their morphological attachment.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "personal-affix-template-and-ordering~p1#010",
+  "chapter": "personal-affix-template-and-ordering",
+  "lines": "349-354",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Under the 'word-like' grade, <i lang=\"ain-Latn\">=an</i> and <i lang=\"ain-Latn\">=as</i> are described as being separable from the stem by intervening particles. However, the example on lines 385-387 shows <i lang=\"ain-Latn\">=an</i> separated by the particle <i lang=\"ain-Latn\">ka</i>, but the segmentation is <i lang=\"ain-Latn\">ka =an</i>, implying <i lang=\"ain-Latn\">=an</i> is attached to the particle, not the stem. The note for this example (lines 391) states 'The particle ka intervenes between each intransitive stem and its =an, demonstrating the separability that distinguishes =an from the full prefixes'. This suggests <i lang=\"ain-Latn\">=an</i> is not directly attached to the stem in this case, which contradicts the idea of it being 'word-like' in the sense of being a full word itself, and rather points to it being a clitic attached to something else (the particle or the preceding element).",
+    "quote": "grade\nword-like\nforms\n<i lang=\"ain-Latn\">=an</i>, <i lang=\"ain-Latn\">=as</i>\ndiagnostic\nmay be separated from the stem by intervening particles; form autonomous\nprosodic units",
+    "suggestion": "Clarify the precise attachment point and relationship of <i lang=\"ain-Latn\">=an</i> and <i lang=\"ain-Latn\">=as</i> when separated by particles. The term 'word-like' might need further qualification if they are not fully independent words in such contexts.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

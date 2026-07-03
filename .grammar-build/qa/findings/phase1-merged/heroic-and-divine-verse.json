@@ -1,0 +1,1799 @@
+[
+ {
+  "id": "heroic-and-divine-verse~p1#057",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "211-218",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'ci=' is '1PL.EXCL.A' (exclusive first plural), but the translation says '[we] brewed sake' without indicating exclusivity. The note says 'The first-person ci= (1PL.EXCL) marks the deity/group of characters', but the translation does not reflect the exclusive meaning (i.e., 'we but not you').",
+    "quote": "m=\"hancikiki sake-he ci=kar\" g=\"refrain sake-POSS 1PL.EXCL.A=make\" tr=\"(hancikiki!) — [we] brewed sake.\"",
+    "suggestion": "Change the translation to '[we (exclusive)] brewed sake' or add a note about the exclusive meaning.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The morpheme 'hancikiki' is glossed as 'refrain', but in the translation it appears as '(hancikiki!)' which is the actual refrain text, not a gloss. The gloss 'refrain' is misleading because it labels the function rather than the meaning. The note explains that 'hancikiki' is the fixed refrain, but the gloss should reflect that it is the refrain itself, not the word for 'refrain'.",
+    "quote": "m=\"hancikiki sake-he ci=kar\" g=\"refrain sake-POSS 1PL.EXCL.A=make\" tr=\"(hancikiki!) — [we] brewed sake.\"",
+    "suggestion": "Change the gloss to 'HANCIKIKI' (the actual refrain) or use a gloss like 'refrain: hancikiki' to clarify.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'hancikiki' is glossed as 'refrain' in the example, but in the note (l.218) it is identified as the specific sakehe refrain of a sparrow-sake-party kamuy yukar. 'refrain' is too generic; it should reflect that this is a specific lexicalized refrain, not a translation of a grammatical term.",
+    "quote": "m=\"hancikiki sake-he ci=kar\" g=\"refrain sake-POSS 1PL.EXCL.A=make\"",
+    "suggestion": "Change gloss of 'hancikiki' to something like 'sparrow-party!' or 'onomatopoeic refrain' to distinguish it from the genre term 'sakehe'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#041",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "68-69",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table row for hero-person marking lists only Saru/Chitose, but the text later (line 403-414) describes Iburi using ci=/=as. The table does not include the Iburi variant, which is a significant omission given the chapter's detailed discussion of it.",
+    "quote": "hero-person marking (Saru/Chitose): a= / =an",
+    "suggestion": "Add a row for Iburi hero-person marking (ci= / =as) or add a note that the table covers only Saru/Chitose.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table entry for 'hero-person marking (Saru/Chitose)' lists both Saru and Chitose dialects, but the Iburi form is included in the same cell without clarifying that Chitose is not covered by the ci=/=as form. This contradicts the later table in section §iburi-person, which specifies that Chitose may use ci=/=as only initially before switching to a=/=an.",
+    "quote": "<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i> (Saru); <i lang=\"ain-Latn\">ci=</i> / <i lang=\"ain-Latn\">=as</i> (Iburi)",
+    "suggestion": "Revise the table cell to clarify dialect variation: e.g., '<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i> (Saru, Chitose baseline); <i lang=\"ain-Latn\">ci=</i> / <i lang=\"ain-Latn\">=as</i> (Iburi)'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#017",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'menoko yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">menoko yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "menoko yukar",
+    "suggestion": "<i lang=\"ain-Latn\">menoko yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'rametok' is presented without its Latin script designation (<i lang=\"ain-Latn\">rametok</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "rametok",
+    "suggestion": "<i lang=\"ain-Latn\">rametok</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'ram-etok' is presented without its Latin script designation (<i lang=\"ain-Latn\">ram-etok</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "ram-etok",
+    "suggestion": "<i lang=\"ain-Latn\">ram-etok</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: the dictionary-linked form is 'rametok' (no hyphen), but the parenthetical segmentation is 'ram-etok'. Should be consistent with morphemic analysis or lexical entry.",
+    "quote": "<A w=\"rametok\" gl=\"bravery; brave person; hero\" /> (<i lang=\"ain-Latn\">ram-etok</i>",
+    "suggestion": "Either change linked form to 'ram-etok' or adjust segmentation to 'rametok'. Given that 'ram' + 'etok' is a known compound, prefer 'ram-etok' in both places.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#042",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "76-78",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This claim is contradicted by the later section (line 403-414) which states that in Iburi divine epic, the deity-narrator uses ci= / =as, not a= / =an. The phrase 'fourth-person (indefinite) prefixes' specifically refers to a=/=an, but the Iburi convention uses exclusive first-plural markers, which are not indefinite.",
+    "quote": "Both genres are narrated in the first person using the fourth-person (indefinite) prefixes a= / =an (see the section on the fourth-person narrator, below)",
+    "suggestion": "Add a qualifier such as 'in Saru and Chitose' or note the regional variation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#068",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "583",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent spacing: 'tuk-no' uses a hyphen, but 'aynu pito' does not. If 'tuk-no' is a compound, it should be consistently marked; otherwise, use space. Also, 'si-kopa-yar' may be better as 'si-kop-a-yar' for morpheme alignment.",
+    "quote": "<i lang=\"ain-Latn\">tuk-no pinni si-kopa-yar / aynu pito</i>",
+    "suggestion": "Standardize hyphenation: either 'tuk no' or 'tuk-no'; and consider breaking 'si-kopa-yar' into 'si-kop-a-yar' if morpheme boundaries justify it.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#065",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "349",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form is written as 'ku-' with a hyphen, but in the rest of the chapter, person markers are given without hyphens when standalone (e.g., 'a=', 'ci='). This creates inconsistency in formatting.",
+    "quote": "uncontracted <i lang=\"ain-Latn\">ku-</i> person marker",
+    "suggestion": "Write as '<i lang=\"ain-Latn\">ku</i>-' or '<i lang=\"ain-Latn\">ku=</i>' for consistency with other person markers.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#063",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "168",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Similar to line 77, the cross-reference 'below' is vague.",
+    "quote": "(see the section on fourth-person narration, below)",
+    "suggestion": "Replace with a specific cross-reference.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#062",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "77",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference 'below' is vague. The section on fourth-person narration is at line 356, which is indeed below, but the reader might benefit from a more specific reference, such as the section title or anchor.",
+    "quote": "(see the section on the fourth-person narrator, below)",
+    "suggestion": "Replace with a specific cross-reference, e.g., '(see §Fourth-person narration: the hero or deity as speaker, below)'.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#061",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "299-323",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The syllabified lines use hyphens to separate syllables, but the accent marks (acute accents) are placed on some syllables (né, tá, kí, é). This is inconsistent: some syllables have accent marks, others do not. The table header says 'accent pattern' but the lines themselves show the accented syllables. The hyphens and accent marks together may be confusing.",
+    "quote": "si-né-a-mam-pus ... ci-tá-ta-ta-ta ... kí-wa-tap-ne ... c-é-a-hun-ke",
+    "suggestion": "Either remove the hyphens and use only accent marks, or add a note explaining that the acute accent marks the pitch accent.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The accent pattern column uses ○ and ● symbols, but the legend is not provided in the table. The text above (line 280) says '● = first accented syllable', but the table itself does not include this legend. The reader may not immediately understand the symbols.",
+    "quote": "○●○○○ ... ○●○○○ ... ●○○○ ... ●○○○",
+    "suggestion": "Add a legend to the table caption or a footnote explaining the symbols.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#056",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "624",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Another instance of a pipeline metadata tag leaking into the prose.",
+    "quote": "<code>proposed</code>",
+    "suggestion": "Remove the <code>proposed</code> tag or explain it.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#055",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "557",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Another instance of a pipeline metadata tag leaking into the prose.",
+    "quote": "<code>asserted</code>",
+    "suggestion": "Remove the <code>asserted</code> tag or explain it.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#054",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "342",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Another instance of a pipeline metadata tag leaking into the prose.",
+    "quote": "<code>asserted</code>",
+    "suggestion": "Remove the <code>asserted</code> tag or explain it.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#053",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "173",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Similar to line 122, the inline code tag <code>proposed</code> appears to be a pipeline metadata tag that leaked into the prose.",
+    "quote": "<code>proposed</code>",
+    "suggestion": "Remove the <code>proposed</code> tag or explain it.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#052",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "122",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The inline code tag <code>asserted</code> appears to be a pipeline metadata tag that leaked into the prose. It is not explained and looks like a production note.",
+    "quote": "<code>asserted</code>",
+    "suggestion": "Remove the <code>asserted</code> tag or explain it in a footnote.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#051",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "636-642",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag ‹contested› is appropriate here, as the text cites Okuda 2022 §5, which presumably discusses the unsettled relationship. This is a correct use of the tag.",
+    "quote": "The long-standing syllable-count description ... and Okuda's accent-orientation metre are treated as genre- and rhythm-differentiated by Okuda himself, but the relationship between them ... is not settled ‹contested› <Ref k=\"okuda2022\" p=\"§5\" />",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#050",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "630-633",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag ‹speculative› is appropriate here, as the text explicitly states it is an inference without support. This is a correct use of the tag.",
+    "quote": "Satō's reading of the opening eyororpe as a vestige of a lost yukar refrain is an inference without independent textual support <Ref k=\"sato2008\" p=\"259\" /> ‹speculative›",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#039",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'accent-orientation' is presented with its Japanese equivalent 'アクセント指向'. It would be more consistent to also provide the Ainu script designation if available.",
+    "quote": "accent-orientation (アクセント指向)",
+    "suggestion": "accent-orientation (<i lang=\"ain-Latn\">akusento-shikō</i>)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'accent-orientation' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "the first pitch accent falls within the first disyllabic foot, regardless of line length",
+    "suggestion": "the first pitch accent falls within the first disyllabic foot, regardless of line length",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'kamuy yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">kamuy yukar</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "divine epic (kamuy yukar)",
+    "suggestion": "divine epic (<i lang=\"ain-Latn\">kamuy yukar</i>)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term '4-syllable lines' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "admitted when accent falls on syllable 1 (~85–100% of 4σ lines)",
+    "suggestion": "admitted when accent falls on syllable 1 (~85–100% of 4σ lines)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#038",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "258",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'syllable-count' is presented with its Japanese equivalent '音節指向'. It would be more consistent to also provide the Ainu script designation if available.",
+    "quote": "syllable-count (音節指向)",
+    "suggestion": "syllable-count (<i lang=\"ain-Latn\">onsetsushi</i>)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'syllable-count' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "each line has a fixed syllable count; the basic count is 5",
+    "suggestion": "each line has a fixed syllable count; the basic count is 5",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'yaysama' is presented without its Latin script designation (<i lang=\"ain-Latn\">yaysama</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "lyric (yaysama)",
+    "suggestion": "lyric (<i lang=\"ain-Latn\">yaysama</i>)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term '4-syllable lines' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "disfavoured (< 3% in Hatozawa's lyric texts)",
+    "suggestion": "disfavoured (< 3% in Hatozawa's lyric texts)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#037",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "247",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'system' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "system",
+    "suggestion": "system",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'rule' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "rule",
+    "suggestion": "rule",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'typical genre' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "typical genre",
+    "suggestion": "typical genre",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term '4-syllable lines' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "4-syllable lines",
+    "suggestion": "4-syllable lines",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#036",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "236",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#035",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "231",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'menoko yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">menoko yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "menoko yukar",
+    "suggestion": "<i lang=\"ain-Latn\">menoko yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakekoye' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakekoye</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakekoye",
+    "suggestion": "<i lang=\"ain-Latn\">sakekoye</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'uwepeker' is presented without its Latin script designation (<i lang=\"ain-Latn\">uwepeker</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "uwepeker",
+    "suggestion": "<i lang=\"ain-Latn\">uwepeker</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#034",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "223",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'hum pakpak' is presented without its Latin script designation (<i lang=\"ain-Latn\">hum pakpak</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "hum pakpak",
+    "suggestion": "<i lang=\"ain-Latn\">hum pakpak</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'humihiruy' is presented without its Latin script designation (<i lang=\"ain-Latn\">humihiruy</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "humihiruy",
+    "suggestion": "<i lang=\"ain-Latn\">humihiruy</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#033",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "218",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the note.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sake-he' is presented without its Latin script designation (<i lang=\"ain-Latn\">sake-he</i>). This is inconsistent with other Ainu terms in the note.",
+    "quote": "sake-he",
+    "suggestion": "<i lang=\"ain-Latn\">sake-he</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'ci' is presented without its Latin script designation (<i lang=\"ain-Latn\">ci</i>). This is inconsistent with other Ainu terms in the note.",
+    "quote": "ci",
+    "suggestion": "<i lang=\"ain-Latn\">ci</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#032",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "212",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sake-he' is presented without its Latin script designation (<i lang=\"ain-Latn\">sake-he</i>). This is inconsistent with other Ainu terms in the example.",
+    "quote": "sake-he",
+    "suggestion": "<i lang=\"ain-Latn\">sake-he</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'ci=kar' is presented without its Latin script designation (<i lang=\"ain-Latn\">ci=kar</i>). This is inconsistent with other Ainu terms in the example.",
+    "quote": "ci=kar",
+    "suggestion": "<i lang=\"ain-Latn\">ci=kar</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#031",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "203",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'han kakkok kakkok' is presented without its Latin script designation (<i lang=\"ain-Latn\">han kakkok kakkok</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "han kakkok kakkok",
+    "suggestion": "<i lang=\"ain-Latn\">han kakkok kakkok</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#030",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "199",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#029",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#028",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "191",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sake-he' is presented without its Latin script designation (<i lang=\"ain-Latn\">sake-he</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sake-he",
+    "suggestion": "<i lang=\"ain-Latn\">sake-he</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sákehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sákehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sákehe",
+    "suggestion": "<i lang=\"ain-Latn\">sákehe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sake' is presented without its Latin script designation (<i lang=\"ain-Latn\">sake</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sake",
+    "suggestion": "<i lang=\"ain-Latn\">sake</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#027",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "179",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'saha' is presented without its Latin script designation (<i lang=\"ain-Latn\">saha</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "saha",
+    "suggestion": "<i lang=\"ain-Latn\">saha</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'kamuy yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">kamuy yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "kamuy yukar",
+    "suggestion": "<i lang=\"ain-Latn\">kamuy yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#026",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "171",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'a=e-kir-usi' is presented without its Latin script designation (<i lang=\"ain-Latn\">a=e-kir-usi</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "a=e-kir-usi",
+    "suggestion": "<i lang=\"ain-Latn\">a=e-kir-usi</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'ekiru' is presented without its Latin script designation (<i lang=\"ain-Latn\">ekiru</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "ekiru",
+    "suggestion": "<i lang=\"ain-Latn\">ekiru</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#025",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "167",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu terms 'ci=' and '=as' are presented without their Latin script designation (<i lang=\"ain-Latn\">ci=</i> / <i lang=\"ain-Latn\">=as</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "ci= / =as",
+    "suggestion": "<i lang=\"ain-Latn\">ci=</i> / <i lang=\"ain-Latn\">=as</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'AEKIRUSHI' is presented without its Latin script designation (<i lang=\"ain-Latn\">AEKIRUSHI</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "AEKIRUSHI",
+    "suggestion": "<i lang=\"ain-Latn\">AEKIRUSHI</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#024",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "162",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese title 'アイヌ神謡集' is provided with its romanization 'Ainu Shin'yōshū'. It would be more consistent to also provide the Ainu script designation if available.",
+    "quote": "Ainu Shin'yōshū",
+    "suggestion": "アイヌ神謡集 (<i lang=\"ain-Latn\">Ainu Shin'yōshū</i>)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'kamuy yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">kamuy yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "kamuy yukar",
+    "suggestion": "<i lang=\"ain-Latn\">kamuy yukar</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#023",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "154",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'kamuy yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">kamuy yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "kamuy yukar",
+    "suggestion": "<i lang=\"ain-Latn\">kamuy yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'narrators' is used in the preceding sentence, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "women",
+    "suggestion": "women",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#022",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "148",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "yukar",
+    "suggestion": "<i lang=\"ain-Latn\">yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'oyna' is presented without its Latin script designation (<i lang=\"ain-Latn\">oyna</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "oyna",
+    "suggestion": "<i lang=\"ain-Latn\">oyna</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#021",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "144",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'oyna' is presented without its Latin script designation (<i lang=\"ain-Latn\">oyna</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "oyna",
+    "suggestion": "<i lang=\"ain-Latn\">oyna</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#020",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'kamuy yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">kamuy yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "kamuy yukar",
+    "suggestion": "<i lang=\"ain-Latn\">kamuy yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'oyna' is presented without its Latin script designation (<i lang=\"ain-Latn\">oyna</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "oyna",
+    "suggestion": "<i lang=\"ain-Latn\">oyna</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'oyna' is presented without its Latin script designation (<i lang=\"ain-Latn\">oyna</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "oyna",
+    "suggestion": "<i lang=\"ain-Latn\">oyna</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#019",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "125",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'irupaye' is presented without its Latin script designation (<i lang=\"ain-Latn\">irupaye</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "irupaye",
+    "suggestion": "<i lang=\"ain-Latn\">irupaye</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "yukar",
+    "suggestion": "<i lang=\"ain-Latn\">yukar</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#018",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'cipapa' is presented without its Latin script designation (<i lang=\"ain-Latn\">cipapa</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "cipapa",
+    "suggestion": "<i lang=\"ain-Latn\">cipapa</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#016",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "111",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'Poy-ya-un-pe' is presented without its Latin script designation (<i lang=\"ain-Latn\">Poy-ya-un-pe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "Poy-ya-un-pe",
+    "suggestion": "<i lang=\"ain-Latn\">Poy-ya-un-pe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'Pon Sinutapka-un-kur' is presented without its Latin script designation (<i lang=\"ain-Latn\">Pon Sinutapka-un-kur</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "Pon Sinutapka-un-kur",
+    "suggestion": "<i lang=\"ain-Latn\">Pon Sinutapka-un-kur</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'Pon Otasam/Otasut-un-kur' is presented without its Latin script designation (<i lang=\"ain-Latn\">Pon Otasam/Otasut-un-kur</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "Pon Otasam/Otasut-un-kur",
+    "suggestion": "<i lang=\"ain-Latn\">Pon Otasam/Otasut-un-kur</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#015",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "103",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'hetce' is presented without its Latin script designation (<i lang=\"ain-Latn\">hetce</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "hetce",
+    "suggestion": "<i lang=\"ain-Latn\">hetce</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakehe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakehe",
+    "suggestion": "<i lang=\"ain-Latn\">sakehe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'eyororpe' is presented without its Latin script designation (<i lang=\"ain-Latn\">eyororpe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "eyororpe",
+    "suggestion": "<i lang=\"ain-Latn\">eyororpe</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#014",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "98",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "yukar",
+    "suggestion": "<i lang=\"ain-Latn\">yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'repni' is presented without its Latin script designation (<i lang=\"ain-Latn\">repni</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "repni",
+    "suggestion": "<i lang=\"ain-Latn\">repni</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#013",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "92",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakorpe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakorpe</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakorpe",
+    "suggestion": "<i lang=\"ain-Latn\">sakorpe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakor' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakor</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "sakor",
+    "suggestion": "<i lang=\"ain-Latn\">sakor</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'yayerap' is presented without its Latin script designation (<i lang=\"ain-Latn\">yayerap</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "yayerap",
+    "suggestion": "<i lang=\"ain-Latn\">yayerap</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'irupaye' is presented without its Latin script designation (<i lang=\"ain-Latn\">irupaye</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "irupaye",
+    "suggestion": "<i lang=\"ain-Latn\">irupaye</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#012",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "88",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "yukar",
+    "suggestion": "<i lang=\"ain-Latn\">yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">yukar</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "yukar",
+    "suggestion": "<i lang=\"ain-Latn\">yukar</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#011",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "76",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'fourth-person (indefinite) prefixes' is used here, but the Ainu terms are given as 'a= / =an' in the following sentence. It would be more consistent to use the Ainu terms or provide them in parentheses.",
+    "quote": "fourth-person (indefinite) prefixes",
+    "suggestion": "fourth-person (indefinite) prefixes (<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i>)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu terms 'a=' and '=an' are presented without their Latin script designation (<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "a= / =an",
+    "suggestion": "<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'ku=' is presented without its Latin script designation (<i lang=\"ain-Latn\">ku=</i>). This is inconsistent with other Ainu terms in the text.",
+    "quote": "ku=",
+    "suggestion": "<i lang=\"ain-Latn\">ku=</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#010",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "68",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu terms 'a=' and '=an' are presented without their Latin script designation (<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "a= / =an",
+    "suggestion": "<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu terms 'a=', '=an', 'ci=', and '=as' are presented without their Latin script designation (<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i> (Saru); <i lang=\"ain-Latn\">ci=</i> / <i lang=\"ain-Latn\">=as</i> (Iburi)). This is inconsistent with other Ainu terms in the table.",
+    "quote": "a= / =an (Saru); ci= / =as (Iburi)",
+    "suggestion": "<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i> (Saru); <i lang=\"ain-Latn\">ci=</i> / <i lang=\"ain-Latn\">=as</i> (Iburi)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#009",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "63",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'protagonist' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "superhuman human youth",
+    "suggestion": "superhuman human youth",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'protagonist' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "a deity (kamuy)",
+    "suggestion": "a deity (<i lang=\"ain-Latn\">kamuy</i>)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#008",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "58",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'narrator' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "men",
+    "suggestion": "men",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'narrator' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "women (and men)",
+    "suggestion": "women (and men)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#007",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "53",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'length' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "long (tens of minutes to several nights)",
+    "suggestion": "long (tens of minutes to several nights)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'length' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "short (minutes to roughly an hour)",
+    "suggestion": "short (minutes to roughly an hour)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#006",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "48",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'rep / repni' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "yes",
+    "suggestion": "yes",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'rep / repni' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "no",
+    "suggestion": "no",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#005",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "43",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'eyororpe' is presented without its Latin script designation (<i lang=\"ain-Latn\">eyororpe</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "no (opening eyororpe only)",
+    "suggestion": "no (opening <i lang=\"ain-Latn\">eyororpe</i> only)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakehe' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "yes; fixed per story",
+    "suggestion": "yes; fixed per story",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#004",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "38",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'melody' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "yes; no fixed melody per story",
+    "suggestion": "yes; no fixed melody per story",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'melody' is used in the table header, but the description uses English. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "yes; fixed melody per story",
+    "suggestion": "yes; fixed melody per story",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#003",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "33",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'sakorpe' is presented without its Latin script designation (<i lang=\"ain-Latn\">sakorpe</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "sakorpe",
+    "suggestion": "<i lang=\"ain-Latn\">sakorpe</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'oyna' is presented without its Latin script designation (<i lang=\"ain-Latn\">oyna</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "oyna",
+    "suggestion": "<i lang=\"ain-Latn\">oyna</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'tuytak' is presented without its Latin script designation (<i lang=\"ain-Latn\">tuytak</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "tuytak",
+    "suggestion": "<i lang=\"ain-Latn\">tuytak</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#002",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "28",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">yukar</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "yukar",
+    "suggestion": "<i lang=\"ain-Latn\">yukar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'kamuy yukar' is presented without its Latin script designation (<i lang=\"ain-Latn\">kamuy yukar</i>). This is inconsistent with other Ainu terms in the table.",
+    "quote": "kamuy yukar",
+    "suggestion": "<i lang=\"ain-Latn\">kamuy yukar</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#001",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'elevated register' is used here, but the Ainu term is given as 'atomte-itak' in line 11. It would be more consistent to use the Ainu term or provide it in parentheses.",
+    "quote": "elevated register",
+    "suggestion": "elevated register (<i lang=\"ain-Latn\">atomte-itak</i>)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'atomte-itak' is introduced here, but the English translation 'elevated register' is used in the preceding sentence. It would be more consistent to provide the Ainu term in parentheses after the English translation.",
+    "quote": "atomte-itak",
+    "suggestion": "elevated register (<i lang=\"ain-Latn\">atomte-itak</i>)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#067",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "557",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation date (2026-06-15) is in the future relative to the book's writing period (2025–2026). While future dates are allowed per briefing, the combination of a future date and lack of peer-reviewed support for the claim about elegant kin terms raises epistemic concerns, especially since it's used to support a lexical assertion.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026-06-15, <code>asserted</code>",
+    "suggestion": "Add a cautionary note or seek corroboration from published sources; alternatively, confirm that the Discord source is treated as valid per project guidelines.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#066",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "440",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Earlier in the chapter (l.90–91, l.387), Chitose is grouped with Saru as using a=/=an. The current table introduces a new claim — that Chitose uses ci=/=as initially — but this is not foreshadowed or explained in the main prose before the table, creating a disconnect.",
+    "quote": "Chitose (opening only)",
+    "suggestion": "Add a sentence in the preceding paragraph to preview that Chitose shows mixed usage, transitioning from ci=/=as to a=/=an.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#064",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "218",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The note attributes linguistic analysis (identifying 'hancikiki' as a fixed refrain) to Biratori 1969 in the cite attribute, but the note itself contains interpretive content not necessarily present in the source. The citation does not support the full claim in the note.",
+    "quote": "note=\"The sakehe hancikiki is the fixed refrain for this sparrow-sake-party kamuy yukar. ...\"",
+    "suggestion": "Clarify that the identification of 'hancikiki' as the refrain is the editor's analysis, possibly citing Endō 2022 or another secondary source for such interpretations.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#060",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "511-527",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The first example uses 'ku=' (1SG) and the second uses 'a=' (4.A). The translation for both is 'I arrived', but the person marking is different. The note explains the difference, but the translation does not reflect the fourth-person marking in the second example.",
+    "quote": "m=\"tanto Ukurmem ta ku=sirepa\" g=\"today Ukurmem LOC 1SG.A=arrive\" tr=\"Today I arrived at Ukurmem.\" ... m=\"kamuy menoko uni-hi tane anakne a=ko-sirepa na\" g=\"divine woman house-POSS today TOP 4.A=APPL-arrive FIN\" tr=\"Now I arrived at the goddess's house.\"",
+    "suggestion": "Add a note to the translation of the second example to indicate the fourth-person marking, e.g., 'Now I (hero) arrived at the goddess's house.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#059",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "467-481",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'k=' is '1SG.S' (first person singular subject), but the gloss for '=an' is '4.S' (fourth person subject). The translation for both is 'I come', but the person marking is different. The note explains that '=an' is fourth person, but the translation does not reflect this difference. The reader might expect a gloss like 'I (hero) come' or a note in the translation.",
+    "quote": "m=\"k=ek\" g=\"1SG.S=come.SG\" tr=\"I come.\" ... m=\"ek=an\" g=\"come.SG=4.S\" tr=\"I come. (verse; hero-narrator)\"",
+    "suggestion": "Add a note to the translation of the second example to indicate the fourth-person marking, e.g., 'I (hero) come.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#058",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "395-396",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'paye=an anki' is given as 'I am about to go' (prospective), but the morpheme 'anki' is not glossed. 'anki' is likely a form of 'an' (be) + 'ki' (do), but the gloss does not explain this. The translation implies a prospective aspect, but the gloss is missing.",
+    "quote": "rek kor okay 'is crying' (durative; l.46), paye=an anki 'I am about to go' (prospective; l.113)",
+    "suggestion": "Provide a full gloss for 'paye=an anki' or add a note explaining the construction.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#049",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "619-625",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹contested›, but the only source is a Discord message tagged as 'proposed'. The tag implies scholarly debate, but the evidence is a single community proposal. The following sentence cites Endō 2022 as supporting the general caveat, but not the specific claim.",
+    "quote": "The aynu-corpora community has identified 織田ステノ's kamuy yukar '怠け者の子供' as resistant to genre classification ... <Ref k=\"aynucorporadiscord\" /> (gengojiro, 2025-12-12, <code>proposed</code>) ‹contested›",
+    "suggestion": "Consider using ‹speculative› instead of ‹contested›, or provide a published source for the specific text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#048",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "380-381",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹contested›, but the only source is Sato 2008, which presents the hypothesis. The tag suggests active debate, but no counter-argument or alternative source is provided. The 'standard theory' is mentioned but not cited.",
+    "quote": "He presents this explicitly as a hypothesis of his own, dissenting from the standard 'shamaness-oracle origin theory' (巫女の託宣起源説) ‹contested›",
+    "suggestion": "Provide a citation for the standard theory or downgrade to ‹speculative›.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#047",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "370-371",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹contested›, which is appropriate for an unsettled scholarly question. However, the sources cited (Bugaeva 2008, Sato 2004) are both cited as supporting the logophoric analysis, but the text says the question is unsettled. The tag and the sources are consistent, but the reader might expect a citation for the opposing view (direct-style narration).",
+    "quote": "The typological status of this convention ... is unsettled <Ref k=\"bugaeva2008\" p=\"40-44\" />; <Ref k=\"sato2004\" /> ‹contested›",
+    "suggestion": "Add a citation for the direct-style view, or clarify that the cited sources represent one side of the debate.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#046",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "338-342",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹contested›, but the only source is a Discord message citing Tangiku 2020. The tag implies scholarly debate, but the text does not provide any counter-argument or alternative source. The contestation seems to be based on the general uncertainty expressed in the following sentence, not on a specific source.",
+    "quote": "Tangiku (2020), as reported from community discussion, argues that an 18th-century yukar text ... shows deliberate head-rhyme, end-rhyme, and imperfect rhyme <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-13, <code>asserted</code>, citing Tangiku 2020) ‹contested›",
+    "suggestion": "Either provide a source for the counter-argument or downgrade to ‹speculative›.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#045",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "205-208",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹contested›, but the only source cited is Endō 2022, which itself cites Nakagawa. The tag suggests active scholarly debate, but the text does not provide any counter-argument or alternative source. The evidence for the contestation is not clear.",
+    "quote": "Nakagawa (2001b, via <Ref k=\"endo2022\" p=\"§2.4.2\" />) holds that it originally indexed the protagonist, but many sakehe have no recoverable referential link; and the same story-type does not carry the same sakehe across localities ‹contested›.",
+    "suggestion": "Either provide a source for the counter-argument or downgrade to ‹speculative›.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#044",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "173",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about AEKIRUSHI is tagged ‹contested›, but the source is a Discord message tagged as 'proposed'. The tag ‹contested› implies scholarly debate, but the only support is a single Discord proposal. This may be an inflation of the epistemic tag.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (0penke, 2024-03-19, <code>proposed</code>) ‹contested›",
+    "suggestion": "Consider using ‹speculative› instead of ‹contested›, or add a reference to the published source (片山龍峯 2003) that is mentioned in the text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#043",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "122",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about cipapa is tagged ‹speculative›, which is appropriate for a Discord source. However, the tag ‹speculative› is used here, but the same source type (Discord) is tagged ‹contested› elsewhere (line 173, line 342, line 624). The inconsistency in epistemic tagging for similar sources is confusing.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (gengojiro, 2024-02-13, <code>asserted</code>) ‹speculative›",
+    "suggestion": "Standardize the epistemic tag for Discord-sourced claims, or add a note explaining the different confidence levels.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "heroic-and-divine-verse~p1#040",
+  "chapter": "heroic-and-divine-verse",
+  "lines": "7-14",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The overview says both genres use the elevated register, but later (line 494) the elevated register is described as a feature of both genres, which is consistent. However, the table (line 68-69) shows different hero-person marking for Saru/Chitose vs Iburi, and the text later (line 403-414) explains that Iburi uses ci=/=as as a singular deity marker, which is a different person-marking system. This is not a contradiction per se, but the overview's claim that both genres use the same 'fourth-person (indefinite) prefixes' (line 76-77) is contradicted by the later detail that Iburi divine epic uses exclusive first-plural ci=/=as, not the indefinite a=/=an. The overview says 'both narrate their story in the first person' and 'both use the fourth-person (indefinite) prefixes a=/=an', but the Iburi convention uses ci=/=as, which is not the indefinite set.",
+    "quote": "Both are performed in the elevated register (atomte-itak), both narrate their story in the first person from the protagonist's viewpoint",
+    "suggestion": "Revise the overview to note that the fourth-person set varies by region, or add a qualifier like 'in Saru/Chitose' to the claim about a=/=an.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

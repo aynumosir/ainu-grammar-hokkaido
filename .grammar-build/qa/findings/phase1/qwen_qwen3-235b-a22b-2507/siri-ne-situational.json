@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "30-35",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "In Dal Corso's Hokkaido reference texts it supplies 149 tokens (6.68% of all evidential forms), against 1508 (67.56%) for i lang=\"ain-Latn\">ruwe ne</i>; its indirect counterparts i lang=\"ain-Latn\">siri an</i> (59 tokens, 2.64%) and i lang=\"ain-Latn\">siri ki</i> (42 tokens, 1.88%)",
+  "issue": "The percentages do not add up correctly with the given token counts. 149 + 1508 + 59 + 42 = 1758 total tokens, but 149/1758 ≈ 8.48%, not 6.68%, and 1508/1758 ≈ 85.78%, not 67.56%. The percentages are inconsistent with the absolute numbers.",
+  "suggestion": "Recalculate the percentages based on the total number of evidential tokens in Dal Corso's corpus, or verify the numbers against the source. If 1508 is 67.56%, then the total should be ~2232, implying missing tokens from other evidentials.",
+  "confidence": 0.95,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "115-116",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"kindaichi1936\" />; <Ref k=\"hirosawa2026\" p=\"65–66\" />. The modern evidential framing preserves the core: Nakagawa defines i lang=\"ain-Latn\">siri ne</i> as marking",
+  "issue": "The citation <Ref k=\"kindaichi1936\" /> has no page number, while the claim it supports (Chiri's gloss) is specific. Later citations (Nakagawa, Tamura) include page numbers for similar claims. This creates citation inconsistency for a direct quotation.",
+  "suggestion": "Add a page number to the Kindaichi citation if available, e.g., p=\"X\" where X is the relevant page in Kindaichi 1936 where Chiri's gloss is presented.",
+  "confidence": 0.9,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "118-119",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa defines i lang=\"ain-Latn\">siri ne</i> as marking that the speaker's judgment rests on visual information <Ref k=\"nakagawa2024\" p=\"392\" />, and Tamura gives it as 'used for conditions that can be seen' <Ref k=\"hirosawa2026\" p=\"67\" />.",
+  "issue": "The second citation attributes a Tamura quote to Hirosawa 2026. The prose says 'Tamura gives it', but the citation is to Hirosawa 2026, creating a mismatch between attribution and source.",
+  "suggestion": "Change the citation to <Ref k=\"tamura1996\" p=\"s.v. sir\" /> or rephrase to 'Hirosawa (2026:67) reports Tamura’s definition as…' if indirect.",
+  "confidence": 0.98,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "149-154",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Hirosawa cites an example in which i lang=\"ain-Latn\">siri ne</i> predicates a future event not yet observed — a punishment that will happen — showing that the form can range over a situationally entailed, not merely currently perceived, state of affairs <Ref k=\"hirosawa2026\" p=\"70\" /> ‹corpus-suggested›.",
+  "issue": "This claim contradicts the earlier definition that siri ne is for 'directly visible situation' and 'process ongoing before the eyes'. Asserting that it can refer to a future, unobserved event undermines the core semantics unless clearly framed as an extension. The evidence grade ‹corpus-suggested› is appropriate, but the contradiction with the section title and prior claims is not acknowledged.",
+  "suggestion": "Revise to clarify that this future use is a marginal or inferential extension, perhaps noting: 'This suggests a limited extension beyond strictly present observation, though the core use remains immediate visual access.'",
+  "confidence": 0.85,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "225-227",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"i=resu sir-i an sekor yaynu=an kor an=an a p\" g=\"1SG.O=raise appearance-POSS exist QUOT 4.S=think while 4.S=exist PFV NMLZ\" tr=\"I had been thinking that (my older sibling) was raising me, but (it turned out otherwise)…\"",
+  "issue": "The gloss includes '1SG.O=raise' but the free translation refers to 'my older sibling' as the one raising. The subject of 'raise' is not the speaker, so '1SG.O' (first person singular object) is incorrect or misleading. It should reflect that the speaker is the *object* of raising by another.",
+  "suggestion": "Revise the gloss to clarify the argument structure, e.g., '1SG.O=be.raised.by' or 'raised.1SG.O', or adjust the translation to 'I had been thinking that I was being raised by (my older sibling)'.",
+  "confidence": 0.95,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "295-297",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"Tokyo un paye=an sir-i an\" g=\"Tokyo LOC go=4.S appearance-POSS exist\" tr=\"Did you go to Tokyo?\"",
+  "issue": "The gloss 'go=4.S' implies third person singular subject, but the translation 'Did you go' is second person. The person/number marking is inconsistent between gloss and translation.",
+  "suggestion": "Change the gloss to 'go=2.S' to match the translation, or revise the translation to 'Did he/she go to Tokyo?' if the original is indeed third person.",
+  "confidence": 0.97,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "309-310",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "kira sin ne nankor</i> '(she) seems to be fleeing' (Takahashi 2013, ex. 5)",
+  "issue": "The example is given in plain text with no <Ex> markup, unlike other examples in the chapter. It also lacks morpheme segmentation, gloss, and citation in standard format. This breaks formatting consistency.",
+  "suggestion": "Convert to a proper <Ex> component with m, g, tr, cite, and dial fields, or at minimum mark up the Ainu text with <i lang=\"ain-Latn\">.",
+  "confidence": 0.9,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "343",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "as in the smoke-rising example (i lang=\"ain-Latn\">supuya at kor sir-an ruwe ne anan</i>, Nakagawa text, Dal Corso ex. 268)",
+  "issue": "The example is attributed to 'Nakagawa text, Dal Corso ex. 268' but lacks a formal <Ref> citation. The prose treats it as evidence, so it should be formally cited with <Ref k=\"dalcorso2018\" p=\"X\" />.",
+  "suggestion": "Add a proper citation, e.g., <Ref k=\"dalcorso2018\" p=\"326\" /> after the example, or integrate it into an <Ex> component.",
+  "confidence": 0.93,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "380-382",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">sir-pirka</i> 'good weather', i lang=\"ain-Latn\">sir-kunne</i> 'be dark / nightfall', i lang=\"ain-Latn\">sir-peker</i> 'be bright / dawn'",
+  "issue": "Inconsistent markup: only the first Ainu form has properly closed <i> tags. The others are missing the opening <i> or have malformed tags (e.g., 'i lang=\"ain-Latn\">' without angle brackets).",
+  "suggestion": "Correct all to <i lang=\"ain-Latn\">sir-kunne</i> and <i lang=\"ain-Latn\">sir-peker</i>.",
+  "confidence": 0.99,
+  "chapter": "siri-ne-situational",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

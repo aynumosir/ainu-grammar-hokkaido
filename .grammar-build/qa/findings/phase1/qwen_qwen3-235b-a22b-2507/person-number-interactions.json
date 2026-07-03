@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "14",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">-pa</i> and an outer plural auxiliary or clitic <i lang=\"ain-Latn\">pa</i>",
+  "issue": "Inconsistent use of hyphenation for the same morpheme: '-pa' (with hyphen) vs 'pa' (without) when both refer to the outer clitic. The outer element should be consistently marked as 'pa' without a hyphen when outside the stem.",
+  "suggestion": "Change '-pa' to 'pa' in the phrase 'an outer plural auxiliary or clitic <i lang=\"ain-Latn\">pa</i>' to maintain orthographic consistency with the outer form.",
+  "confidence": 0.9,
+  "chapter": "person-number-interactions",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "65",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "outer <i lang=\"ain-Latn\">pa</i>",
+  "issue": "The table uses 'outer <i lang=\"ain-Latn\">pa</i>' but earlier in the text the outer element is referred to with a hyphen in some contexts. This creates inconsistency in how the outer clitic is represented.",
+  "suggestion": "Standardize the representation of the outer clitic as 'pa' (without hyphen) in all contexts outside the root, including the table.",
+  "confidence": 0.85,
+  "chapter": "person-number-interactions",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "71",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Shizunai <i lang=\"ain-Latn\">ci</i> / Horobetsu <i lang=\"ain-Latn\">-ci</i>",
+  "issue": "Inconsistent hyphenation: Shizunai form is given as 'ci' (unhyphenated) while Horobetsu is '-ci' (with hyphen), despite both being suffixes. This suggests a formatting inconsistency in morpheme representation.",
+  "suggestion": "Use consistent hyphenation: either both as 'ci' or both as '-ci', depending on positional analysis. Given Horobetsu's fossilized suffix status, '-ci' is justified; Shizunai's outer clitic should remain 'ci' without hyphen.",
+  "confidence": 0.8,
+  "chapter": "person-number-interactions",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "159",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "The minimal pair demonstrating the position contrast uses the fourth-person intransitive suffix",
+  "issue": "The phrase 'the minimal pair' implies a single pair, but three examples (lines 166, 176, 187) are presented, not a single minimal pair.",
+  "suggestion": "Change 'The minimal pair' to 'Minimal pairs' or 'Examples illustrating the position contrast'.",
+  "confidence": 0.95,
+  "chapter": "person-number-interactions",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "309",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">=(a)hci</i> (Aniwa Bay <i lang=\"ain-Latn\">=(a)hsi</i>)",
+  "issue": "Inconsistent representation of the same morpheme: 'hci' vs 'hsi' without explanation. While dialectal variation is expected, the lack of diacritics or note on phonetic equivalence may confuse readers.",
+  "suggestion": "Add a brief note explaining the variation, e.g., '(a)hci ~ (a)hsi (Aniwa Bay)' to indicate dialectal or transcriptional variation.",
+  "confidence": 0.8,
+  "chapter": "person-number-interactions",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "327",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"2PL-PL go.PL-PL-NMLZ COP probably\"",
+  "issue": "The gloss includes '2PL-PL' and 'go.PL-PL', which duplicates plural marking unnecessarily and inaccurately. The morpheme '-hci' is glossed as 'PL' twice, but it likely functions once per word. The double 'PL' on 'go' may reflect reduplication not present in the source.",
+  "suggestion": "Revise to '2PL=go-PL-NMLZ' or similar, avoiding redundant 'PL' glossing unless morphology explicitly supports it.",
+  "confidence": 0.9,
+  "chapter": "person-number-interactions",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "330",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cite=\"murasaki1979:52; nakagawa2024:155\"",
+  "issue": "Multiple citations in one 'cite' attribute are separated by semicolon, but the schema expects a single source per example or a combined reference. This format may break pipeline parsing.",
+  "suggestion": "Use a single primary source or combine with proper syntax, e.g., 'murasaki1979:52 [as cited in nakagawa2024:155]'.",
+  "confidence": 0.9,
+  "chapter": "person-number-interactions",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

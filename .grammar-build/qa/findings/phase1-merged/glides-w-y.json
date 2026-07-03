@@ -1,0 +1,1012 @@
+[
+ {
+  "id": "glides-w-y~p1#039",
+  "chapter": "glides-w-y",
+  "lines": "176-177; 183-184",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The σ1 type for these words is labeled 'CV — open', but the first syllable is a vowel only (/i/ and /o/), not a consonant-vowel syllable. This contradicts the description.",
+    "quote": "ináw /i.náw/ CV — open; ohaw /o.háw/ CV — open",
+    "suggestion": "Change the σ1 type to 'V — open' for these rows, or adjust the column to reflect the actual syllable structure.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The syllabification /náw/ is labeled as CV — open, but if /w/ is a coda consonant (as the chapter argues), this syllable should be CVC — closed. This contradicts the analysis applied to /áy.nu/ and /kéw.tum/, where /y/ and /w/ are treated as codas.",
+    "quote": "<td>/i.náw/</td><td>CV — open</td>",
+    "suggestion": "Change to 'CVC — closed' for consistency with the consonant analysis.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#038",
+  "chapter": "glides-w-y",
+  "lines": "122-123",
+  "category": "copyedit",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form 'ante' is used as the stem, but the decomposition shows the stem is 'okay'. This is likely a typo, as 'ante' is a different verb meaning 'put' whose plural would be 'antere'.",
+    "quote": "The plural of ante is okayte (< okay + -te)",
+    "suggestion": "Change 'ante' to 'okay' or rephrase to clarify that the plural of 'okay' is 'okayte'.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The subject–verb agreement is incorrect: 'The plural of <i>ante</i>' is not 'okayte'; 'okayte' is the plural of 'okay'. This appears to be a typo or confusion in reference.",
+    "quote": "The plural of <i lang=\"ain-Latn\">ante</i> is <i lang=\"ain-Latn\">okayte</i>",
+    "suggestion": "Correct to: 'The plural of <i lang=\"ain-Latn\">okay</i> is <i lang=\"ain-Latn\">okayte</i>'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#029",
+  "chapter": "glides-w-y",
+  "lines": "325",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'read source' is meta-commentary about the production process rather than reader-facing prose.",
+    "quote": "neither read source provides",
+    "suggestion": "Rephrase to something like 'neither source provides' or 'the available sources do not provide'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read source' is production-oriented language (author's note about sources consulted), not appropriate for a reader-facing text.",
+    "quote": "but neither read source provides acoustic data bearing on whether the i in yaírayke ever surfaces as [ji]",
+    "suggestion": "Change 'read source' to 'source' or 'source consulted'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#017",
+  "chapter": "glides-w-y",
+  "lines": "216",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese katakana 'オハウ' is not marked with `lang=\"ja\"` or otherwise indicated as Japanese text.",
+    "quote": "オハウ",
+    "suggestion": "Add `lang=\"ja\"` to the katakana text: `<i lang=\"ja\">オハウ</i>`.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese katakana 'ケウトゥム' is not marked with `lang=\"ja\"` or otherwise indicated as Japanese text.",
+    "quote": "ケウトゥム",
+    "suggestion": "Add `lang=\"ja\"` to the katakana text: `<i lang=\"ja\">ケウトゥム</i>`.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Earlier in the chapter (line 11) it is <i lang=\"ain-Latn\">kéwtum</i> with acute; here it is unmarked. Inconsistent diacritic use.",
+    "quote": "<i lang=\"ain-Latn\">kewtum</i>",
+    "suggestion": "Use <i lang=\"ain-Latn\">kéwtum</i> consistently.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#016",
+  "chapter": "glides-w-y",
+  "lines": "212",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese katakana 'カムイ' is not marked with `lang=\"ja\"` or otherwise indicated as Japanese text, unlike the Japanese name '知里幸恵' later in the paragraph.",
+    "quote": "カムイ",
+    "suggestion": "Add `lang=\"ja\"` to the katakana text: `<i lang=\"ja\">カムイ</i>`.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese katakana 'アイノ' is not marked with `lang=\"ja\"` or otherwise indicated as Japanese text.",
+    "quote": "アイノ",
+    "suggestion": "Add `lang=\"ja\"` to the katakana text: `<i lang=\"ja\">アイノ</i>`.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese katakana 'ケウトゥム' is not marked with `lang=\"ja\"` or otherwise indicated as Japanese text.",
+    "quote": "ケウトゥム",
+    "suggestion": "Add `lang=\"ja\"` to the katakana text: `<i lang=\"ja\">ケウトゥム</i>`.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of macron: earlier in the chapter (line 10) it is <i lang=\"ain-Latn\">kamúy</i> with acute, here it is <i lang=\"ain-Latn\">kamuy</i> without. This may reflect orthographic variation, but within a single chapter, forms should be standardized.",
+    "quote": "<i lang=\"ain-Latn\">kamuy</i>",
+    "suggestion": "Use consistent diacritics: either always *kamúy* or *kamuy* with explanation.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as above: earlier form is <i lang=\"ain-Latn\">áynu</i> with acute, here written without. Inconsistent representation of the same word.",
+    "quote": "<i lang=\"ain-Latn\">aynu</i>",
+    "suggestion": "Standardize to <i lang=\"ain-Latn\">áynu</i> throughout.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#013",
+  "chapter": "glides-w-y",
+  "lines": "186",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to 'Rule 2' is not defined or explained within this section. It's mentioned again in lines 172 and 179. The reader needs to know what Rule 2 is.",
+    "quote": "Rule 2: σ2 high",
+    "suggestion": "Define 'Rule 2' when it is first introduced, or ensure it is clearly defined in a referenced section.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Accent mark on /háw/ — like /náw/, this introduces a pitch marker not consistently used across the table. The accent placement may be correct, but its presence only in some entries creates inconsistency.",
+    "quote": "/o.háw/",
+    "suggestion": "Apply accent marks uniformly to all pitch-accented syllables in the table or add a note explaining selective marking.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#012",
+  "chapter": "glides-w-y",
+  "lines": "179",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to 'Rule 2' is not defined or explained within this section. It's mentioned again in lines 172 and 186. The reader needs to know what Rule 2 is.",
+    "quote": "Rule 2: σ2 high",
+    "suggestion": "Define 'Rule 2' when it is first introduced, or ensure it is clearly defined in a referenced section.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Accent mark on 'á' in /náw/ — this conflicts with the form's presentation elsewhere (e.g., line 11: <i lang=\"ain-Latn\">ináw</i>) and may misrepresent syllable weight. The accent placement here suggests σ2 is stressed, but the syllabification table lists σ1 as open (CV), which is correct, yet the accent mark on /náw/ implies stress on second syllable without clarification.",
+    "quote": "/i.náw/",
+    "suggestion": "Either remove the accent mark if not relevant to syllabification, or explain that it reflects lexical pitch placement.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#011",
+  "chapter": "glides-w-y",
+  "lines": "172",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to 'Rule 2' is not defined or explained within this section. It's mentioned again in lines 179 and 186. The reader needs to know what Rule 2 is.",
+    "quote": "Rule 2: σ2 high",
+    "suggestion": "Define 'Rule 2' when it is first introduced, or ensure it is clearly defined in a referenced section.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Accent mark inconsistency: 'ú' in /múy/ uses acute, while other accented syllables like /kéw/ and /áy/ also use acute, but the chapter does not consistently apply or explain this diacritic. If it indicates pitch accent, it should be uniformly applied and explained in context.",
+    "quote": "/ka.múy/",
+    "suggestion": "Ensure consistent use of acute accents for pitch across all examples or switch to a standardized notation (e.g., H/L tones) if appropriate.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#010",
+  "chapter": "glides-w-y",
+  "lines": "158",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to 'Rule 1' is not defined or explained within this section. It's mentioned again in lines 139 and 140, and the table refers to it here. The reader needs to know what Rule 1 is.",
+    "quote": "Rule 1: σ1 high",
+    "suggestion": "Define 'Rule 1' when it is first introduced, or ensure it is clearly defined in a referenced section.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in macron usage: the form is spelled with acute accent (´) on 'a' and 'y' in the table, but standard orthography in the chapter otherwise uses macrons (¯) for vowel length. The acute may reflect pitch accent, but in a syllabification table, it should be disambiguated whether this is phonetic transcription or orthographic representation.",
+    "quote": "<i lang=\"ain-Latn\">áynu</i>",
+    "suggestion": "Clarify or standardize diacritic use; if representing phonemic length, use macron: *āynu* or /āy.nu/. If pitch is intended, label explicitly.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#007",
+  "chapter": "glides-w-y",
+  "lines": "126",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation is to a community source (Discord) with a date in the future (2025-12-03). This is likely a typo and should be corrected to a past date.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2025-12-03) ‹corpus-confirmed›.",
+    "suggestion": "Correct the date to a past date, e.g., 2023-12-03 or 2024-12-03.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged as 'corpus-confirmed' but the only citation is a Discord post, which is not a corpus or published source. This inflates the evidence strength.",
+    "quote": "selecting the consonant allomorph on the evidence that stem-final /y/ is a consonant; vowel-final stems take -re <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2025-12-03) ‹corpus-confirmed›",
+    "suggestion": "Either remove the tag or replace the citation with a published source; if the Discord post references a corpus, note that explicitly.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#042",
+  "chapter": "glides-w-y",
+  "lines": "185",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as above: /háw/ ends in /w/, which the chapter treats as a coda consonant, so this syllable should be CVC — closed, not CV — open. This contradicts the analysis in §2 and the table's own categorization of /kéw/ as closed.",
+    "quote": "<td>/o.háw/</td><td>CV — open</td>",
+    "suggestion": "Change 'CV — open' to 'CVC — closed'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#041",
+  "chapter": "glides-w-y",
+  "lines": "169",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The syllabification /ka.múy/ is labeled as CV — open, but if /y/ is analyzed as a coda consonant (as argued throughout the chapter), the syllable /múy/ should be CVC and thus closed. This contradicts the analysis promoted in the chapter and the table's own logic (e.g., /áy.nu/ as CVC).",
+    "quote": "<i lang=\"ain-Latn\">kamúy</i></td><td>/ka.múy/</td><td>CV — open</td>",
+    "suggestion": "Reanalyze /múy/ as /muy/ with /y/ as coda, making σ1 CVC-closed, or revise the analysis to acknowledge dialectal or positional variation.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The entry for <i lang=\"ain-Latn\">kamúy</i> is labeled as open syllable, but this contradicts the chapter's central argument that /y/ is a coda consonant. If /y/ is a consonant, /múy/ must be CVC. Either the analysis is inconsistent, or this form is an exception not acknowledged.",
+    "quote": "<td>CV — open</td>",
+    "suggestion": "Either revise the syllabification to /muy/ as CVC or explain why /kamúy/ patterns differently (e.g., dialectal, morphological).",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#037",
+  "chapter": "glides-w-y",
+  "lines": "393",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA transcription /kuy/ for the first syllable of <i lang=\"ain-Latn\">ku=ype</i> is presented as a coda-consonant analysis. However, the preceding text states that vowel-weakening converts the vowel to a glide, producing a CVC-closed syllable. If /u/ becomes [y], then the syllable structure is CVC, and the transcription should reflect that, e.g., /kúy.pe/ or similar, with the accent mark.",
+    "quote": "/kuy/",
+    "suggestion": "Clarify the IPA transcription to accurately reflect the vowel-weakening and CVC-closed syllable structure, including accent placement.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#036",
+  "chapter": "glides-w-y",
+  "lines": "382",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Okuda 2025 is missing a page number or section marker, making it difficult to verify the specific claim.",
+    "quote": "<Ref k=\"okuda2025\" />",
+    "suggestion": "Add a page number or section marker to the Okuda 2025 citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#035",
+  "chapter": "glides-w-y",
+  "lines": "375",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Okuda 2025 is missing a page number or section marker, making it difficult to verify the specific claim. The evidence grade '‹contested›' is applied to the conclusion, which is appropriate.",
+    "quote": "<Ref k=\"okuda2025\" /> ‹contested›.",
+    "suggestion": "Add a page number or section marker to the Okuda 2025 citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#034",
+  "chapter": "glides-w-y",
+  "lines": "372",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Okuda 2025 is missing a page number or section marker, making it difficult to verify the specific claim.",
+    "quote": "Okuda's conclusion:",
+    "suggestion": "Add a page number or section marker to the Okuda 2025 citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#033",
+  "chapter": "glides-w-y",
+  "lines": "361",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss states 'boundary [ʔ]', implying a glottal stop at the boundary. However, the IPA for 'su'at' is given as [suʔat], which shows the glottal stop. The gloss could be more explicit about the source of the glottal stop.",
+    "quote": "transparent <i lang=\"ain-Latn\">su</i> 'pot' + <i lang=\"ain-Latn\">at</i>; boundary [ʔ]",
+    "suggestion": "Clarify the gloss to explicitly state that the glottal stop arises at the morpheme boundary, e.g., 'boundary glottal stop [ʔ]'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#032",
+  "chapter": "glides-w-y",
+  "lines": "355",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss states '/w/ phonemic, contrast with [ʔ] below'. This implies /w/ is phonemic in this context, which aligns with the consonant analysis. However, the IPA for 'suwat' is given as [suwat], which doesn't explicitly show the /w/ as a distinct phonetic segment that contrasts with a glottal stop. The contrast is described as 'glide vs. glottal-stop difference' in line 370.",
+    "quote": "fossilized compound; /w/ phonemic, contrast with [ʔ] below",
+    "suggestion": "Ensure the IPA transcription for 'suwat' clearly reflects the phonemic /w/ if it's intended to be distinct from a glottal stop, or clarify how the contrast is realized phonetically.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#031",
+  "chapter": "glides-w-y",
+  "lines": "337",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Okuda 2025 is missing a page number or section marker, making it difficult to verify the specific claim.",
+    "quote": "Okuda <Ref k=\"okuda2025\" />",
+    "suggestion": "Add a page number or section marker to the Okuda 2025 citation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The name 'Oda Steno' is not italicized or marked as a proper name, unlike other names mentioned in the text.",
+    "quote": "Oda Steno",
+    "suggestion": "Italicize the name 'Oda Steno' for consistency.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#030",
+  "chapter": "glides-w-y",
+  "lines": "325",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'read source' is slightly awkward and could be more natural.",
+    "quote": "neither read source provides",
+    "suggestion": "Rephrase to 'neither source provides' or 'the available sources do not provide'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#026",
+  "chapter": "glides-w-y",
+  "lines": "290",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Shiraishi 2022 uses '§4.2' which is a section marker, not a page number. While this might be acceptable if the source is structured that way, it's less precise than a page number.",
+    "quote": "Shiraishi <Ref k=\"shiraishi2022\" p=\"§4.2\" />",
+    "suggestion": "If possible, provide a page number instead of or in addition to the section marker.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#025",
+  "chapter": "glides-w-y",
+  "lines": "281",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 provides a page range, but the text only explicitly refers to pages 43-44. It's unclear which specific claim this citation supports.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"43–44\" />.",
+    "suggestion": "Clarify which claims are supported by which page numbers, or split the citation if it supports distinct points.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#024",
+  "chapter": "glides-w-y",
+  "lines": "274",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 provides a page range, but the text only explicitly refers to pages 43-45. It's unclear which specific claim this citation supports.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"43–45\" />;",
+    "suggestion": "Clarify which claims are supported by which page numbers, or split the citation if it supports distinct points.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Shiraishi 2022 uses '§4.2' which is a section marker, not a page number. While this might be acceptable if the source is structured that way, it's less precise than a page number. Additionally, the attribution to Kindaichi and Tamura is not directly cited with their works.",
+    "quote": "<Ref k=\"shiraishi2022\" p=\"§4.2\" />, with attribution to Kindaichi 1931:13 and Tamura 1988b:14.",
+    "suggestion": "If possible, provide page numbers for Shiraishi 2022. Also, consider adding direct citations for Kindaichi 1931 and Tamura 1988b if they are being used as primary sources for this attribution.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#023",
+  "chapter": "glides-w-y",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'Hokkaidō' is inconsistent with the spelling 'Hokkaido' used elsewhere in the chapter (e.g., line 134).",
+    "quote": "Hokkaido Ainu",
+    "suggestion": "Choose one consistent spelling: either 'Hokkaido' or 'Hokkaidō' and apply it throughout the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#021",
+  "chapter": "glides-w-y",
+  "lines": "243",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade '‹contested›' is placed at the end of the paragraph, but it seems to apply to the entire assessment of the diphthong analysis's weakness. It might be more precise to associate it with the specific claim it qualifies.",
+    "quote": "‹contested›.",
+    "suggestion": "Consider moving the evidence grade closer to the specific claim it modifies, or ensure the paragraph's scope is clear.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#020",
+  "chapter": "glides-w-y",
+  "lines": "236",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō 2008 uses '§2.2' which is a section marker, not a page number. While this might be acceptable if the source is structured that way, it's less precise than a page number.",
+    "quote": "Satō <Ref k=\"sato2008\" p=\"§2.2\" />",
+    "suggestion": "If possible, provide a page number instead of or in addition to the section marker.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#018",
+  "chapter": "glides-w-y",
+  "lines": "223",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA transcription uses a macron over the vowel to indicate non-syllabicity, but the standard IPA symbol for non-syllabicity is a breve (˘) below the vowel. The macron is typically used for vowel length.",
+    "quote": "[ai̯], [au̯], [ei̯], [eu̯], [oi̯], [ui̯]",
+    "suggestion": "Replace the macrons with breves: [a͜ɪ̯], [a͜ʊ̯], [e͜ɪ̯], [e͜ʊ̯], [o͜ɪ̯], [u͜ɪ̯] or [ai̯], [au̯], [ei̯], [eu̯], [oi̯], [ui̯] if the intent is simply to show diphthongs without explicit non-syllabicity marking.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#015",
+  "chapter": "glides-w-y",
+  "lines": "198",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 provides page numbers 29 and 50, but the text only explicitly refers to page 29 in the previous citation (line 43) and page 50 in line 137. It's unclear which specific claim this combined citation supports.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"29, 50\" />;",
+    "suggestion": "Clarify which claims are supported by which page numbers, or split the citation if it supports distinct points.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#014",
+  "chapter": "glides-w-y",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to 'Rule 1' is not defined or explained within this section. It's mentioned again in lines 139 and 140, and the table refers to it in line 158. The reader needs to know what Rule 1 is.",
+    "quote": "Rule 1",
+    "suggestion": "Define 'Rule 1' when it is first introduced, or ensure it is clearly defined in a referenced section.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#009",
+  "chapter": "glides-w-y",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to 'Rule 1' is not defined or explained within this section. It's mentioned again in line 140 and 195, and the table refers to it in line 158. The reader needs to know what Rule 1 is.",
+    "quote": "Rule 1",
+    "suggestion": "Define 'Rule 1' when it is first introduced, or ensure it is clearly defined in a referenced section.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to 'Rule 1' is not defined or explained within this section. It's mentioned again in line 139 and 195, and the table refers to it in line 158. The reader needs to know what Rule 1 is.",
+    "quote": "Rule 1",
+    "suggestion": "Define 'Rule 1' when it is first introduced, or ensure it is clearly defined in a referenced section.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#008",
+  "chapter": "glides-w-y",
+  "lines": "134",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place names 'Saru', 'Chitose', and 'Horobetsu' are not consistently italicized or marked as Ainu forms, unlike other Ainu terms in the chapter. While they are place names, consistency in marking would be beneficial.",
+    "quote": "Saru, Chitose, Horobetsu",
+    "suggestion": "Italicize these place names for consistency with other Ainu terms, or use a different consistent marking if they are not considered Ainu forms.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'Hokkaidō' is inconsistent with the spelling 'Hokkaido' used elsewhere in the chapter (e.g., line 264).",
+    "quote": "Hokkaido Ainu",
+    "suggestion": "Choose one consistent spelling: either 'Hokkaido' or 'Hokkaidō' and apply it throughout the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#006",
+  "chapter": "glides-w-y",
+  "lines": "100",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the final segment of 'siw' is given as '/w/ — glide'. Similar to the 'okay' example, if the analysis treats /w/ as a consonant, the gloss should reflect that. 'Glide' is descriptive but might not align with the phonemic status being argued.",
+    "quote": "<td>/w/ — glide</td>",
+    "suggestion": "Clarify the gloss to reflect the analysis, e.g., '/w/ — coda consonant' or similar.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#005",
+  "chapter": "glides-w-y",
+  "lines": "93",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the final segment of 'okay' is given as '/y/ — glide'. While 'glide' is descriptive, the morphemic segmentation in the example <i lang=\"ain-Latn\">okay</i> suggests the final segment is a vowel /a/ followed by a glide /y/. The gloss should reflect the phonemic analysis being discussed, which is that /y/ is a consonant.",
+    "quote": "<td>/y/ — glide</td>",
+    "suggestion": "Clarify the gloss to reflect the analysis, e.g., '/y/ — coda consonant' or similar, if that's the intended interpretation in this context.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#004",
+  "chapter": "glides-w-y",
+  "lines": "52",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 is missing the page number, only providing the year. This makes it difficult to verify the specific claim.",
+    "quote": "<Ref k=\"shiraishi2022\" p=\"§3\" />; <Ref k=\"nakagawa2024\" p=\"29\" />.",
+    "suggestion": "Add the specific page number for the Nakagawa 2024 citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#003",
+  "chapter": "glides-w-y",
+  "lines": "43",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 is missing the page number, only providing the year. This makes it difficult to verify the specific claim.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"29\" />; <Ref k=\"shiraishi2022\" p=\"§3\" />.",
+    "suggestion": "Add the specific page number for the Nakagawa 2024 citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#001",
+  "chapter": "glides-w-y",
+  "lines": "16",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA transcription uses a macron over the vowel to indicate non-syllabicity, but the standard IPA symbol for non-syllabicity is a breve (˘) below the vowel. The macron is typically used for vowel length.",
+    "quote": "[ai̯], [au̯], [ei̯], [eu̯], [oi̯], [ui̯]",
+    "suggestion": "Replace the macrons with breves: [a͜ɪ̯], [a͜ʊ̯], [e͜ɪ̯], [e͜ʊ̯], [o͜ɪ̯], [u͜ɪ̯] or [ai̯], [au̯], [ei̯], [eu̯], [oi̯], [ui̯] if the intent is simply to show diphthongs without explicit non-syllabicity marking.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#043",
+  "chapter": "glides-w-y",
+  "lines": "194",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text refers to <i lang=\"ain-Latn\">ay</i> as a syllable, but in <i lang=\"ain-Latn\">áynu</i>, the first syllable is /áy/, not /ay/. The use of unaccented 'ay' may obscure the phonetic detail being discussed.",
+    "quote": "Under the diphthong analysis, <i lang=\"ain-Latn\">ay</i> is a V+V nucleus rather than a CVC syllable",
+    "suggestion": "Use /áy/ consistently to match the example.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#040",
+  "chapter": "glides-w-y",
+  "lines": "124",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example <i lang=\"ain-Latn\">okayte</i> is presented as evidence for /y/ being a consonant, but the stem is <i lang=\"ain-Latn\">okay</i>, not <i lang=\"ain-Latn\">ante</i> as stated earlier in the sentence. This creates a factual mismatch between claim and example.",
+    "quote": "selecting the consonant allomorph on the evidence that stem-final /y/ is a consonant",
+    "suggestion": "Revise to: 'The plural of <i lang=\"ain-Latn\">okay</i> is <i lang=\"ain-Latn\">okayte</i> (&lt; <i lang=\"ain-Latn\">okay</i> + <i lang=\"ain-Latn\">-te</i>), selecting the consonant allomorph...'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#028",
+  "chapter": "glides-w-y",
+  "lines": "316",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 provides a page range, but the text only explicitly refers to pages 31-33 and 43-45. It's unclear which specific claim this citation supports. The Discord citation is also a community source and lacks an evidence grade.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28); <Ref k=\"nakagawa2024\" p=\"31–33, 43–45\" />.",
+    "suggestion": "Clarify which claims are supported by which page numbers for Nakagawa 2024. Add an appropriate evidence grade to the Discord citation or find a more robust source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#027",
+  "chapter": "glides-w-y",
+  "lines": "308",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to a claim about the disputed phonemic status of yi/wi/wu, but the citation itself is a community source (Discord) and is not specific enough to support such a strong, general claim. The evidence grade is missing.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28).",
+    "suggestion": "Add an appropriate evidence grade (e.g., ‹corpus-suggested› or ‹speculative›) or find a more robust source if this claim is meant to be considered consensus.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#022",
+  "chapter": "glides-w-y",
+  "lines": "249",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to a claim about the symmetry of analyses and phonetic representation, but the citation itself is a community source (Discord) and is not specific enough to support such a strong, general claim. The evidence grade is missing.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-11).",
+    "suggestion": "Add an appropriate evidence grade (e.g., ‹corpus-suggested› or ‹speculative›) or find a more robust source if this claim is meant to be considered consensus.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#019",
+  "chapter": "glides-w-y",
+  "lines": "224",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to a claim about phonetic accuracy and non-syllabic second elements, but the citation itself is a community source (Discord) and is not specific enough to support such a strong, general claim. The evidence grade is missing.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-11)",
+    "suggestion": "Add an appropriate evidence grade (e.g., ‹corpus-suggested› or ‹speculative›) or find a more robust source if this claim is meant to be considered consensus.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "glides-w-y~p1#002",
+  "chapter": "glides-w-y",
+  "lines": "17",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to a claim about phonetic indistinguishability and lack of production/perception differences, but the citation itself is a community source (Discord) and is not specific enough to support such a strong, general claim. The evidence grade is missing, which would normally indicate the level of certainty.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-11)",
+    "suggestion": "Add an appropriate evidence grade (e.g., ‹corpus-suggested› or ‹speculative›) or find a more robust source if this claim is meant to be considered consensus.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to a claim about phonetic indistinguishability and lack of production/perception differences, but the citation itself is a community source (Discord) and is not specific enough to support such a strong, general claim. The evidence grade is missing, which would normally indicate the level of certainty.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-11)",
+    "suggestion": "Add an appropriate evidence grade (e.g., ‹corpus-suggested› or ‹speculative›) or find a more robust source if this claim is meant to be considered consensus.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

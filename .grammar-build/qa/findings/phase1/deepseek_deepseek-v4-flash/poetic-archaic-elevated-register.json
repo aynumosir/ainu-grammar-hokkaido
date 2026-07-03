@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "7-11",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Hokkaido Ainu distinguishes two named registers: <i lang=\"ain-Latn\">atomte-itak</i> (アトゥㇺテイタㇰ, lit. 'decorated/ornamented speech'; Japanese 雅語, the elegant or poetic register) and <i lang=\"ain-Latn\">yayan-itak</i> (ヤヤニタㇰ, lit. 'ordinary speech'; 口語/日常語, the everyday register)",
+  "issue": "The Japanese glosses 雅語 and 口語/日常語 are not translated into English, unlike the Ainu glosses which are given in English. This is inconsistent with the chapter's practice of translating Japanese terms elsewhere (e.g., line 243 translates 間接性の原理).",
+  "suggestion": "Add English translations: 'elegant/poetic register' and 'colloquial/everyday register' after the Japanese terms, or remove the Japanese entirely.",
+  "confidence": 0.8,
+  "chapter": "poetic-archaic-elevated-register",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "15",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (成田英敏 / asirso, 2024).",
+  "issue": "The citation to aynucorporadiscord is attached to a claim about metalinguistic use by native speakers and modern community discussion, but the Discord attribution is a single username and date. The epistemic tag on the claim is unmarked (defaulting to ‹consensus›), but the source is a single informal communication, which should be tagged ‹corpus-suggested› or ‹speculative›.",
+  "suggestion": "Add an appropriate epistemic tag such as ‹corpus-suggested› or change the citation to reflect the limited nature of the evidence.",
+  "confidence": 0.7,
+  "chapter": "poetic-archaic-elevated-register",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "24-30",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Nakagawa argues that elegant and everyday Ainu are stages on a continuum keyed to two axes — verse vs prose, and fixed vs improvised — rather than two discrete levels ‹contested› <Ref k=\"endo2022\" p=\"§3.4\" />. He further proposes that a classification by genre (yukar-vocabulary vs prayer-vocabulary) may prove more analytically useful than the single-level <i lang=\"ain-Latn\">atomte-itak</i> label <Ref k=\"endo2022\" p=\"§3.4\" />.",
+  "issue": "The claim that Nakagawa proposes a classification by genre (yukar-vocabulary vs prayer-vocabulary) is attributed to Endō 2022 §3.4, but the same paragraph earlier attributes the continuum view to Nakagawa via Endō. The source Endō 2022 is a secondary source reporting Nakagawa's views; it is unclear whether the genre-classification proposal is Nakagawa's or Endō's. The chapter should clarify the attribution.",
+  "suggestion": "Rephrase to make clear whose proposal it is: 'Nakagawa further proposes...' or 'Endō further proposes...' as appropriate.",
+  "confidence": 0.6,
+  "chapter": "poetic-archaic-elevated-register",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "279-280",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "The distinctive verse and prayer vocabulary is documented across the read sources in scattered but consistent testimony.",
+  "issue": "The phrase 'the read sources' is a pipeline register leak — it refers to the author's process of reading sources rather than to the reader. This is addressed to the production process, not the reader.",
+  "suggestion": "Replace with 'the available sources' or 'the literature'.",
+  "confidence": 1,
+  "chapter": "poetic-archaic-elevated-register",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "377-378",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The observation aligns with Endō's characterisation of a distinct verse lexicon (§3 characteristic 4) without being independently stated there ‹corpus-suggested›.",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim that is essentially a negative statement (that something is not independently stated in Endō). This is not a claim about corpus evidence but about the absence of a statement in a source. The tag is inappropriate.",
+  "suggestion": "Remove the epistemic tag or replace with a note that this is the author's inference.",
+  "confidence": 0.9,
+  "chapter": "poetic-archaic-elevated-register",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "427",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Prayer is the domain in which the restriction of <i lang=\"ain-Latn\">kamuy</i> as 'splendid' is blocked (§ <a href=\"#register-lexicon\">register lexicon</a> above),",
+  "issue": "The HTML anchor link uses a raw href attribute instead of the Svelte component syntax used elsewhere (e.g., <Xr ch=\"...\" s=\"...\" />). This is inconsistent with the markup conventions of the chapter.",
+  "suggestion": "Replace with <Xr ch=\"poetic-archaic-elevated-register\" s=\"register-lexicon\" /> or similar.",
+  "confidence": 0.9,
+  "chapter": "poetic-archaic-elevated-register",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "448",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "the \"shamaness-oracle origin\" theory (the consensus framing)",
+  "issue": "Earlier in the chapter (line 247-250), the shamaness-oracle origin is described as something Satō dissents from and is marked ‹contested›. Here it is called 'the consensus framing', which contradicts the earlier characterization that neither account is established and both are contested.",
+  "suggestion": "Remove '(the consensus framing)' or rephrase to 'one account' to avoid implying consensus.",
+  "confidence": 0.9,
+  "chapter": "poetic-archaic-elevated-register",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

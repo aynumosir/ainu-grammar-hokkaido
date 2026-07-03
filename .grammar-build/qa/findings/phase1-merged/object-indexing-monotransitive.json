@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "object-indexing-monotransitive~p1#023",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "260",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i=' without a macron, but the table in line 67 uses 'i=' with a macron. This is an inconsistency in orthography.",
+    "quote": "The prefix <i lang=\"ain-Latn\">i=</i> is homophonous with the detransitivising prefix <i lang=\"ain-Latn\">i-</i>,",
+    "suggestion": "Ensure consistent use of 'i=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i-' without a macron, but the table in line 67 uses 'i=' with a macron. This is an inconsistency in orthography.",
+    "quote": "<A w=\"i-ruska\" gl=\"be angry at something unspecified\" /> beside transitive <A w=\"ruska\" gl=\"be angry at someone\" />.",
+    "suggestion": "Ensure consistent use of 'i-' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The object marker is written with an equals sign (i=) and the detransitiviser with a hyphen (i-), which is consistent with the convention stated on lines 89-91. No inconsistency within the chapter.",
+    "quote": "The prefix i= is homophonous with the detransitivising prefix i-",
+    "suggestion": null,
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The prefix is written as 'i-' in prose, but in the dictionary reference it appears as 'i-ruska' (with hyphen). Elsewhere, personal indices use '='. This creates inconsistency in morpheme boundary notation.",
+    "quote": "the detransitivising prefix i-",
+    "suggestion": "Standardize to 'i=' for personal index and 'i-' for derivational prefix throughout the chapter to distinguish layers.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#011",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "133",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'e=' and 'eci=' without macrons, but the table in lines 46 and 53 uses 'e=' and 'eci=' with macrons. This is an inconsistency in orthography.",
+    "quote": "<i lang=\"ain-Latn\">e=en=</i> (2SG.A→1SG.O) and <i lang=\"ain-Latn\">eci=en=</i> (2PL.A→1SG.O).",
+    "suggestion": "Ensure consistent use of 'e=' and 'eci=' without macrons throughout the chapter, or update the text to match the table if the macrons are intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'en=' without a macron, but the table in line 32 uses 'en=' with a macron. This is an inconsistency in orthography.",
+    "quote": "Saru and Chitose drop the second-person A prefix and use bare <i lang=\"ain-Latn\">en=</i> for 2SG→1SG;",
+    "suggestion": "Ensure consistent use of 'en=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of '=' after 'eci=en=' is inconsistent with standard markup where '=' marks clitic boundaries; the trailing '=' may be erroneous or require explanation.",
+    "quote": "e=en= (2SG.A→1SG.O) and eci=en= (2PL.A→1SG.O)",
+    "suggestion": "Check if final '=' is part of the prefix or a markup error; consider normalizing to 'eci=en' if the '=' is not phonological.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#046",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "302",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example string '*Ø=en=e=kore' includes 'en=' (1SG.O) and 'e=' (2SG), but the gloss in the surrounding text describes it as 'one makes me give you', which requires 3.A→1SG.O and 1SG.A→2SG.O. The form 'en=e=' suggests 1SG.O→2SG.O, not 1SG.A→2SG.O. This creates a contradiction between the morpheme sequence and the described meaning.",
+    "quote": "*Ø=en=e=kore",
+    "suggestion": "Revise the example to '*ku=en=e=kore' for 'I make me give you' or clarify the intended subject–object chain.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#045",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "250",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A=4.O=call' for 'a=i=réko' implies both subject and object are marked on the verb, but the free translation 'I was named Ikuresuye.' is passive in meaning, suggesting only object indexing. The double prefix 'a=i=' may reflect A and O, but the translation does not reflect dual indexing clearly.",
+    "quote": "a=rehe Ikuresuye sekor a=i=réko",
+    "suggestion": "Revise translation to clarify both roles: 'They named me Ikuresuye' or adjust gloss to reflect passive construction.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#044",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "201",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '2SG.O=give' assigns object role to 'e=', but the free translation 'She gave you the book.' identifies a third-person subject and second-person object, which is correct. However, the gloss fails to mark the transitive subject as zero-indexed third person, creating ambiguity in the alignment.",
+    "quote": "kanpisos e=kore",
+    "suggestion": "Revise gloss to 'book 2SG.O=give' → 'book 3.A→2SG.O=give' or add note clarifying zero subject.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#042",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "111",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string contains 'en=epunkine' and 'en=kore', but the gloss '1SG.O=protect CONJ 1SG.O=give IMP' suggests two separate instances of 'en=' indexing 1SG.O. However, the free translation 'Please protect me.' only reflects the first clause; the second clause 'en=kore' (give me) is not accounted for in the translation, creating a mismatch between form and meaning.",
+    "quote": "en=epunkine wa en=kore yan",
+    "suggestion": "Revise the free translation to include both actions: 'Please protect me and give me (something).' or confirm if the second 'en=kore' is extraneous.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#030",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "48",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table claims 2SG has a neutral role pattern (S=A=O), but the prose on lines 188-190 states second-person indexes are role-neutral, which is consistent. However, the table shows 2SG O as 'e=' and A/S as 'e=', which matches. No contradiction here, but the pattern label 'neutral' for 2SG is inconsistent with the 2PL row which also says 'neutral' but adds 'also 1A→2O portmanteau' — the portmanteau function is not a role pattern, so the label is misleading.",
+    "quote": "neutral (S=A=O)",
+    "suggestion": "Consider separating the portmanteau note from the role pattern column, or add a footnote.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#041",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "299-304",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example *Ø=en=e=kore is given to illustrate Satō's argument, but the gloss 'one makes me give you' implies a causative or ditransitive structure, which is not explained. The example seems to have three person indexes (Ø, en, e), which would violate the two-index cap. However, the example is not fully glossed or analyzed, making it unclear.",
+    "quote": "Nakagawa treats third person as lacking an affix; Satō argues that a zero third-person affix must be posited to sustain the two-index cap — the ungrammaticality of sequences such as *Ø=en=e=kore 'one makes me give you' follows if both subject and object slots are already occupied by zero, blocking a third index",
+    "suggestion": "Provide a full gloss and explanation for the example, or simplify the illustration.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#039",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "196-197",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'practically challenging' is slightly awkward; 'practical challenges' or 'challenging features' would be more natural.",
+    "quote": "Ijäs notes this as one of the practically challenging features of the O set for learners of Saru",
+    "suggestion": "Change to 'practical challenges' or 'challenging aspects'.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#038",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "86-91",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a meta-commentary about the grammar's notation conventions, which is appropriate for a reference grammar. However, it reads slightly like a pipeline note explaining a decision. It's borderline acceptable.",
+    "quote": "the convention in this grammar is that = marks the personal-index boundary and - is reserved for derivational and stem-number morphology.",
+    "suggestion": "Consider moving this to a front matter section on conventions, or keep as is.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#032",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "62",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table says 'zero; analysis contested' for the 3rd person role pattern, but the prose on lines 299-308 discusses the zero vs. absent-exponent debate. The table's label is vague and doesn't match the detailed discussion in the text.",
+    "quote": "zero; analysis contested",
+    "suggestion": "Change to 'zero (analysis contested)' or 'Ø (debated)' for clarity.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#028",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "302",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'en=' and 'e=' without macrons, but the table in lines 32 and 46 uses these forms with macrons. This is an inconsistency in orthography.",
+    "quote": "the ungrammaticality of sequences such as <i lang=\"ain-Latn\">*Ø=en=e=kore</i> 'one makes me give",
+    "suggestion": "Ensure consistent use of 'en=' and 'e=' without macrons throughout the chapter, or update the text to match the table if the macrons are intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#027",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "295",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note uses 'ku=' without a macron, but the table in line 33 uses 'ku=' with a macron. This is an inconsistency in orthography.",
+    "quote": "note=\"Constructed following Ijäs Lesson 5. The third-person object has no overt index; only the 1SG.A prefix ku= appears on the verb.\"",
+    "suggestion": "Ensure consistent use of 'ku=' without a macron throughout the chapter, or update the note to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#026",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "289",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'ku=' without a macron, but the table in line 33 uses 'ku=' with a macron. This is an inconsistency in orthography.",
+    "quote": "m=\"moyuk ku=nukar\"",
+    "suggestion": "Ensure consistent use of 'ku=' without a macron throughout the chapter, or update the example to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#025",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "280",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ku=', 'ci=', 'e=', 'eci=', and 'a=' without macrons, but the table in lines 33, 40, 47, 54, and 68 uses these forms with macrons. This is an inconsistency in orthography.",
+    "quote": "personal prefix is the A form alone — <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">ci=</i>, <i lang=\"ain-Latn\">e=</i>, <i lang=\"ain-Latn\">eci=</i>, or <i lang=\"ain-Latn\">a=</i>;",
+    "suggestion": "Ensure consistent use of these forms without macrons throughout the chapter, or update the text to match the table if the macrons are intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'a=' without a macron, but the table in line 68 uses 'a=' with a macron. This is an inconsistency in orthography.",
+    "quote": "with third-person subject and object alike, the finite verb carries no overt person prefix <Ref k=\"nakagawa2024\" p=\"169\" />;",
+    "suggestion": "Ensure consistent use of 'a=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#024",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i=' and 'i-' without macrons, but the table in line 67 uses 'i=' with a macron. This is an inconsistency in orthography.",
+    "quote": "the object marker <i lang=\"ain-Latn\">i=</i> is a personal index in the paradigm, while the detransitivising <i lang=\"ain-Latn\">i-</i> belongs to valency-changing morphology",
+    "suggestion": "Ensure consistent use of 'i=' and 'i-' without macrons throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#022",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "256",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note uses 'a=' and 'i=' without macrons, but the table in lines 67 and 68 uses 'a=' and 'i=' with macrons. This is an inconsistency in orthography.",
+    "quote": "note=\"The possessive a= on the noun rehe 'name' and the transitive-subject a= on the verb réko 'call/name' are independent instances of the fourth-person prefix; i= indexes the oral-narrative protagonist as the object of the naming action.\"",
+    "suggestion": "Ensure consistent use of 'a=' and 'i=' without macrons throughout the chapter, or update the note to match the table if the macrons are intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#021",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "250",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'a=' and 'i=' without macrons, but the table in lines 67 and 68 uses 'a=' and 'i=' with macrons. This is an inconsistency in orthography.",
+    "quote": "m=\"a=rehe Ikuresuye sekor a=i=réko\"",
+    "suggestion": "Ensure consistent use of 'a=' and 'i=' without macrons throughout the chapter, or update the example to match the table if the macrons are intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss uses '4.A=' and '4.O=' without macrons, but the table in lines 67 and 68 uses 'a=' and 'i=' with macrons. This is an inconsistency in orthography.",
+    "quote": "g=\"4.POSS=name Ikuresuye QUOT 4.A=4.O=call\"",
+    "suggestion": "Ensure consistent use of 'a=' and 'i=' without macrons throughout the chapter, or update the gloss to match the table if the macrons are intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#020",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "239",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'i=' without a macron, but the table in line 67 uses 'i=' with a macron. This is an inconsistency in orthography.",
+    "quote": "m=\"sunku tono mat i=kaopiwki wa i=kore\"",
+    "suggestion": "Ensure consistent use of 'i=' without a macron throughout the chapter, or update the example to match the table if the macron is intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss uses '4.O=' without a macron, but the table in line 67 uses 'i=' with a macron. This is an inconsistency in orthography.",
+    "quote": "g=\"Sunku lord wife 4.O=help CONJ 4.O=give\"",
+    "suggestion": "Ensure consistent use of 'i=' without a macron throughout the chapter, or update the gloss to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#019",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "225",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'i=' without a macron, but the table in line 67 uses 'i=' with a macron. This is an inconsistency in orthography.",
+    "quote": "The prefix <i lang=\"ain-Latn\">i=</i> is the O member of the fourth-person tripartite row,",
+    "suggestion": "Ensure consistent use of 'i=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'a=', 'an=', and '=an' without macrons, but the table in line 68 uses 'a=', 'an=', and '=an' with macrons. This is an inconsistency in orthography.",
+    "quote": "alongside <i lang=\"ain-Latn\">a=</i> (or dialectally <i lang=\"ain-Latn\">an=</i>) as A and <i lang=\"ain-Latn\">=an</i> as S.",
+    "suggestion": "Ensure consistent use of 'a=', 'an=', and '=an' without macrons throughout the chapter, or update the text to match the table if the macrons are intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#018",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'eci=' without a macron, but the table in line 53 uses 'eci=' with a macron. This is an inconsistency in orthography.",
+    "quote": "The form <i lang=\"ain-Latn\">eci=</i> additionally serves as the portmanteau exponent for a",
+    "suggestion": "Ensure consistent use of 'eci=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'eci=' without a macron, but the table in line 53 uses 'eci=' with a macron. This is an inconsistency in orthography.",
+    "quote": "without a separate first-person subject prefix <Ref k=\"tamura1972\" p=\"27–28\" />;",
+    "suggestion": "Ensure consistent use of 'eci=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#017",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "207",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note uses 'e=' without a macron, but the table in line 46 uses 'e=' with a macron. This is an inconsistency in orthography.",
+    "quote": "note=\"Constructed following Ijäs Lesson 5. With e= read as 2SG.O, the transitive subject is a zero-indexed third person; the same e=kore is equally grammatical with e= as 2SG.A ('you gave the book (to her)').\"",
+    "suggestion": "Ensure consistent use of 'e=' without a macron throughout the chapter, or update the note to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#016",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "201",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'e=' without a macron, but the table in line 46 uses 'e=' with a macron. This is an inconsistency in orthography.",
+    "quote": "m=\"kanpisos e=kore\"",
+    "suggestion": "Ensure consistent use of 'e=' without a macron throughout the chapter, or update the example to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#015",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "194",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'e=' without a macron, but the table in line 46 uses 'e=' with a macron. This is an inconsistency in orthography.",
+    "quote": "a form such as <i lang=\"ain-Latn\">e=kore</i> may be read as 2SG.A acting on a zero-indexed",
+    "suggestion": "Ensure consistent use of 'e=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#014",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "177",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note uses 'a=' and 'un=' without macrons, but the table in lines 39 and 68 uses 'un=' and 'a=' with macrons. This is an inconsistency in orthography.",
+    "quote": "note=\"The prefix a= marks an indefinite fourth-person transitive subject; un= indexes the exclusive first-plural group as the recipient-object of kore 'give'.\"",
+    "suggestion": "Ensure consistent use of 'a=' and 'un=' without macrons throughout the chapter, or update the note to match the table if the macrons are intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#013",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "171",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'un=' without a macron, but the table in line 39 uses 'un=' with a macron. This is an inconsistency in orthography.",
+    "quote": "m=\"sanbyakugojuen a=un=kore hike ka\"",
+    "suggestion": "Ensure consistent use of 'un=' without a macron throughout the chapter, or update the example to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#012",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "156",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ci=' without a macron, but the table in line 40 uses 'ci=' with a macron. This is an inconsistency in orthography.",
+    "quote": "alongside <i lang=\"ain-Latn\">ci=</i> (A) and <i lang=\"ain-Latn\">=as</i> (S),",
+    "suggestion": "Ensure consistent use of 'ci=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#010",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "121",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'en=' without a macron, but the table in line 32 uses 'en=' with a macron. This is an inconsistency in orthography.",
+    "quote": "m=\"nep kameaske ene ne yakkay en=kasuy kun pe an cik pirka hike\"",
+    "suggestion": "Ensure consistent use of 'en=' without a macron throughout the chapter, or update the example to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#009",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "111",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'en=' without a macron, but the table in line 32 uses 'en=' with a macron. This is an inconsistency in orthography.",
+    "quote": "m=\"en=epunkine wa en=kore yan\"",
+    "suggestion": "Ensure consistent use of 'en=' without a macron throughout the chapter, or update the example to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#008",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "98",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'ku=' without a macron, but the table in line 33 uses 'ku=' with a macron. This is an inconsistency in orthography.",
+    "quote": "Its S/A counterpart <i lang=\"ain-Latn\">ku=</i> covers both intransitive subject and transitive subject",
+    "suggestion": "Ensure consistent use of 'ku=' without a macron throughout the chapter, or update the text to match the table if the macron is intended.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#007",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "68",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the A and S forms in the table uses macrons in 'a=', 'an=', and '=an' which are not present in the text's consistent use of these forms without macrons.",
+    "quote": "A = <i lang=\"ain-Latn\">a=</i> (dialectally <i lang=\"ain-Latn\">an=</i>); S = <i lang=\"ain-Latn\">=an</i>",
+    "suggestion": "Remove the macrons from 'a=', 'an=', and '=an' in the table gloss.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#006",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "61",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the A and S forms in the table uses a macron in 'Ø' which is not present in the text's consistent use of 'Ø' without a macron.",
+    "quote": "A = S = <i lang=\"ain-Latn\">Ø</i>",
+    "suggestion": "Remove the macron from 'Ø' in the table gloss.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#005",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "54",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the A and S forms in the table uses a macron in 'eci=' which is not present in the text's consistent use of 'eci=' without a macron.",
+    "quote": "A = S = <i lang=\"ain-Latn\">eci=</i>",
+    "suggestion": "Remove the macron from 'eci=' in the table gloss.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#004",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "47",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the A and S forms in the table uses a macron in 'e=' which is not present in the text's consistent use of 'e=' without a macron.",
+    "quote": "A = S = <i lang=\"ain-Latn\">e=</i>",
+    "suggestion": "Remove the macron from 'e=' in the table gloss.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#003",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "40",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the A and S forms in the table uses a macron in 'ci=' which is not present in the text's consistent use of 'ci=' without a macron.",
+    "quote": "A = <i lang=\"ain-Latn\">ci=</i>; S = <i lang=\"ain-Latn\">=as</i>",
+    "suggestion": "Remove the macron from 'ci=' in the table gloss.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#002",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "33",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the A and S forms in the table uses a macron in 'ku=' which is not present in the text's consistent use of 'ku=' without a macron.",
+    "quote": "A = S = <i lang=\"ain-Latn\">ku=</i>",
+    "suggestion": "Remove the macron from 'ku=' in the table gloss.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#001",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "11",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva is placed after the mention of the fourth/indefinite person, but it only supports the general statement about the O column, not specifically the fourth person. The citation for Sato also supports the general statement, not specifically the fourth person.",
+    "quote": "and <i lang=\"ain-Latn\">i=</i> for the fourth/indefinite person <Ref k=\"nakagawa2024\" p=\"169\" />; <Ref k=\"bugaeva2012\" p=\"471\" />; <Ref k=\"sato2008\" p=\"31–32\" />.",
+    "suggestion": "Move the Bugaeva and Sato citations to the end of the sentence, after the mention of the fourth/indefinite person.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#043",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "121",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.O=help' for 'en=kasuy' is inconsistent with the free translation 'It would be good if any monster were to help me.' — the verb 'kasuy' should be glossed as 'help' (not 'should'), and 'yakkay' (should) is missing from the gloss.",
+    "quote": "nep kameaske ene ne yakkay en=kasuy kun pe an cik pirka hike",
+    "suggestion": "Revise gloss to: 'what monster thus COP even 1SG.O=help should NMLZ exist if good although' to align with translation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#040",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "211-214",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says 1PL.EXCL.A→2SG.O surfaces as eci=, but the table on line 55 says eci= is also the 2PL O form and the portmanteau. However, the table's role pattern for 2PL says 'neutral (S=A=O); also 1A→2O portmanteau'. The prose specifies that 1PL.EXCL.A→2SG.O uses eci=, but the table implies that eci= as portmanteau covers all 1A→2O combinations. This is consistent, but the table's note '1A→2O' is ambiguous — it could include 1SG.A→2SG.O and 1PL.EXCL.A→2PL.O, which matches the prose. No contradiction.",
+    "quote": "The form eci= additionally serves as the portmanteau exponent for a first-person A acting on a second-person O: the four combinations 1SG.A→2SG.O, 1SG.A→2PL.O, 1PL.EXCL.A→2SG.O, and 1PL.EXCL.A→2PL.O all surface as bare eci=",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#037",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "307",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The zero vs. absent-exponent analysis is tagged ‹contested›, citing Nakagawa and Sato. This is appropriate as they disagree. No issue.",
+    "quote": "‹contested›",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#036",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "272",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The historical relationship between i= and i- is tagged ‹contested›, citing Tamura, Nam, and Bugaeva. This is appropriate as multiple competing analyses exist. No issue.",
+    "quote": "‹contested›",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#035",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "234",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag ‹contested› is used for the referential uses of the fourth-person form-set, citing Nakagawa, Bugaeva, and Tamura. This is appropriate as they present different analyses. However, the tag appears after the citation list, which is correct. No issue here.",
+    "quote": "‹contested›",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#034",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "163-167",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about Tokachi confirming the exclusive–inclusive split is tagged ‹consensus›, but only Takahashi 2015 is cited. A single source does not support a 'consensus' tag.",
+    "quote": "‹consensus›",
+    "suggestion": "Change to ‹corpus-confirmed› or add additional sources.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#033",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "130-141",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about 2A→1SG.O dialect-specific shapes is tagged ‹consensus›, but the only cited sources are Nakagawa 2024 and Sato 2008, which are two authors. 'Consensus' implies broader agreement across multiple sources; two sources may not constitute a consensus, especially on a dialectal point.",
+    "quote": "‹consensus›",
+    "suggestion": "Either add more supporting citations or downgrade to ‹corpus-confirmed› or remove the tag.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#031",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "55",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The 2PL row labels the role pattern as 'neutral (S=A=O)' but then adds 'also 1A→2O portmanteau'. The portmanteau function is not a role pattern; it's a separate morphosyntactic property. This conflates two distinct features in one cell.",
+    "quote": "neutral (S=A=O); also 1A→2O portmanteau",
+    "suggestion": "Move the portmanteau note to a separate column or a footnote below the table.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "object-indexing-monotransitive~p1#029",
+  "chapter": "object-indexing-monotransitive",
+  "lines": "7-11",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference points to 'person-marking-architecture', but the table on lines 18-73 already presents the S/A/O paradigm with role patterns. The chapter slug is 'object-indexing-monotransitive', and the referenced chapter may not exist or may be misnamed.",
+    "quote": "The three-set S/A/O paradigm and its cell-by-cell alignment are set out in <Xr ch=\"person-marking-architecture\" />",
+    "suggestion": "Verify the correct slug for the chapter describing the full paradigm, or update the cross-reference to match the actual chapter slug.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose lists the O set, but the table on lines 18-73 includes an additional row for 1PL.EXCL with un=, which matches. However, the prose does not mention the 1PL.INCL (which is covered by i=), but the table does not have a separate row for 1PL.INCL — it's subsumed under fourth person. This is consistent, but the prose could be clearer that i= covers inclusive first plural.",
+    "quote": "en= for 1SG.O, un= for 1PL.EXCL.O, e= for 2SG.O, eci= for 2PL.O, a zero exponent for third person, and i= for the fourth/indefinite person",
+    "suggestion": "Add a brief note that i= also covers inclusive first plural, or adjust the table to clarify.",
+    "confidence": 0.5
+   }
+  ]
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "15-16",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "this chapter is a finding aid, not a word list",
+  "issue": "The phrase 'finding aid' is a production-internal term (referring to the pipeline's factbase lookup) that leaks into the reader-facing prose.",
+  "suggestion": "Replace with 'this chapter maps each field to its grammatical properties; for a full word list, consult the Itak dictionary.'",
+  "confidence": 0.8,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "216-219",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "Dialect variation within the kinship field is considerable. <A w=\"hapo\" /> denotes the mother in most Hokkaido dialects but the father in Chitose and Horobetsu (thegodofneet, aynu-corpora Discord 2026-06-08, asserted; <Ref k=\"aynucorporadiscord\" />; corroborated by <Ref k=\"chiri1953\" />) ‹corpus-suggested›",
+  "issue": "The claim is tagged ‹corpus-suggested› but the only cited support is a Discord assertion (which would normally warrant ‹speculative›) and a reference to Chiri (1953) that is not given a page number. The epistemic tag is inflated relative to the evidence provided.",
+  "suggestion": "Either downgrade to ‹speculative› or provide a specific page citation from Chiri (1953) to justify the ‹corpus-suggested› grade.",
+  "confidence": 0.9,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "288-289",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The core set includes <A w=\"kotan\" gl=\"village, settlement\" /> (4,210 corpus tokens, rank 56), <A w=\"pet\" gl=\"river (the area's representative river)\" /> (1,344 tokens)",
+  "issue": "The chapter states it is 'not a word list' (line 16) and does not systematically provide corpus frequencies elsewhere, yet here it gives specific token counts and a rank for kotan. This is inconsistent with the stated purpose of the chapter.",
+  "suggestion": "Either remove the token counts and rank, or add a brief justification for why these specific numbers are included (e.g., to illustrate the cultural prominence of kotan).",
+  "confidence": 0.7,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "472-473",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<td>—</td>",
+  "issue": "In the colour terms table, kunne and siwnin have '—' for corpus tokens, while retar and hure have specific numbers. This is inconsistent: either all four should have token counts (if available) or none should.",
+  "suggestion": "Either provide token counts for kunne and siwnin, or remove the token column entirely and note that corpus frequencies are not systematically available for all colour terms.",
+  "confidence": 0.9,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "483-484",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"siwnin\" gl=\"be blue-green (grue)\" /> / <i lang=\"ain-Latn\">sinnin</i>",
+  "issue": "The variant sinnin is given in italics without a dictionary link, while the main form siwnin is linked. This is inconsistent with the treatment of other variant forms in the chapter (e.g., tan/taan, toan/toon are both linked or both unlinked).",
+  "suggestion": "Either add a dictionary link for sinnin or remove the italics and treat it as a simple orthographic variant in prose.",
+  "confidence": 0.6,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "507-508",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "fitting the classic grue pattern of <Ref k=\"shibatani1990\" p=\"§1\" />",
+  "issue": "Shibatani (1990) is a general reference on Japanese linguistics, not a standard source for the grue color term typology. The citation seems inappropriate; a more relevant source would be Berlin & Kay (1969) or a typological study of color terms.",
+  "suggestion": "Replace with a more appropriate reference, e.g., Berlin & Kay (1969) or a specific study on grue languages.",
+  "confidence": 0.7,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "510-511",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "though no systematic colour-category survey of Ainu has been conducted",
+  "issue": "This statement is presented as a factual claim but has no citation. It should either be cited (e.g., to a source that states this explicitly) or tagged with an appropriate epistemic grade.",
+  "suggestion": "Add a citation or tag as ‹consensus› if it is well-known, or provide a source.",
+  "confidence": 0.8,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "611-615",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Within the proximal slot, the longer form <i lang=\"ain-Latn\">taan</i> has been proposed to carry greater information content or emphasis relative to <i lang=\"ain-Latn\">tan</i>, and a sound-symbolic account has been proposed in which narrow front vowels index proximity and broader back vowels index distance (nukopoli, aynu-corpora Discord 2025-12-27, proposed; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+  "issue": "The claim is tagged ‹contested›, but the only source cited is a single Discord message. For a claim to be genuinely contested, there should be evidence of debate in the published literature or multiple conflicting sources. A single Discord proposal does not constitute a contested status.",
+  "suggestion": "Either downgrade to ‹speculative› or provide additional sources that show the claim is actually debated in the literature.",
+  "confidence": 0.8,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "432-440",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The pair is widely noted in Ainu linguistics; the origin of the alternation — whether the <i lang=\"ain-Latn\">-p</i> descends from the pluractional suffix <i lang=\"ain-Latn\">-pa</i>, from a distinct derivational suffix, or from another source — is debated (nukopoli, aynu-corpora Discord 2026-05-18, proposed; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+  "issue": "The claim that the origin is 'debated' is supported only by a single Discord message. For a claim to be genuinely contested, there should be references to published scholarly debate. The epistemic tag ‹contested› is inflated.",
+  "suggestion": "Either provide published references that show the debate, or downgrade to ‹speculative›.",
+  "confidence": 0.8,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "277-280",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "A community-proposed internal morphological analysis of <A w=\"esikop\" gl=\"parent\" /> as <i lang=\"ain-Latn\">e-sik-o-p</i> 'thing from which eyes come' (nukopoli, aynu-corpora Discord 2023-12-11, proposed; <Ref k=\"aynucorporadiscord\" />) illustrates the general productivity of body-part roots in derivation, though the specific etymology has not been verified in the published literature ‹speculative›.",
+  "issue": "The claim that this 'illustrates the general productivity of body-part roots in derivation' is presented as a factual statement, but the only evidence is a single speculative etymology. The epistemic tag ‹speculative› applies only to the etymology, not to the claim about productivity, which is unsupported.",
+  "suggestion": "Either provide a separate citation for the productivity claim, or rephrase to make clear that the productivity claim is also speculative or based on other evidence.",
+  "confidence": 0.7,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

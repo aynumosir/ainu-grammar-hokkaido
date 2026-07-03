@@ -1,0 +1,1334 @@
+[
+ {
+  "id": "syllable-template~p1#051",
+  "chapter": "syllable-template",
+  "lines": "364",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 352: Discord user cited for a near-zero frequency claim about /-m/, tagged ‹corpus-suggested›, which overstates evidential support.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-19)",
+    "suggestion": "Revise evidence grade to ‹speculative› or note as preliminary.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#050",
+  "chapter": "syllable-template",
+  "lines": "352",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Discord citation used for a claim about near-absence of /-ow/, tagged with ‹corpus-suggested›, but a single user report cannot support a negative frequency claim without broader data.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-19)",
+    "suggestion": "Reclassify as ‹speculative› or add qualifier like 'preliminary observation'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#049",
+  "chapter": "syllable-template",
+  "lines": "282",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "A Discord attribution is tagged with ‹corpus-confirmed›, which implies broader corpus validation, but a single user report does not meet that standard.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (aomidori\\_cs\\_, 2023-12-05) ‹corpus-confirmed›",
+    "suggestion": "Change evidence grade to ‹speculative› or ‹community-observation› until corroborated.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#047",
+  "chapter": "syllable-template",
+  "lines": "179",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'woman-treasure' does not match the free translation 'women's possessions' in number (singular vs plural) and word sense (compound vs possessive).",
+    "quote": "<Ex m=\"mat-ikor\" g=\"woman-treasure\" ain=\"macikor\" tr=\"women's possessions\" note=\"The underlying boundary mat|ikor resyllabifies to ma.ci.kor [ma.ʨi.kor] (CV.CV.CVC). The coda /t/ shifts to onset position and undergoes the obligatory t+i → [ʨi] palatalization. The same surface form is attested throughout the Saru corpus, e.g. usa macikor usa tamasay 'various women's treasures and bead-necklaces'.\" cite=\"nakagawa2024:36\" dial=\"SAR\" />",
+    "suggestion": "Revise gloss to 'women-treasure' or 'woman-possession' to align with translation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#046",
+  "chapter": "syllable-template",
+  "lines": "151",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "There is a period after the citation in parentheses, creating a double punctuation mark before the next sentence.",
+    "quote": "(Nakagawa 2024: 43.) The algorithm treats /y/ and /w/ as consonants, so",
+    "suggestion": "Remove the period after the citation: '(Nakagawa 2024: 43) The algorithm...'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#045",
+  "chapter": "syllable-template",
+  "lines": "67",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The em dash creates a run-on sentence; it would be clearer as two sentences or with a semicolon.",
+    "quote": "Nakagawa (2024: 25) characterizes Hokkaido Ainu as having relatively few phonemes and a straightforward syllable structure, noting that the five-vowel inventory is constant across all Hokkaido dialects — dialect differences are comparatively small.",
+    "suggestion": "Split into two sentences: '...all Hokkaido dialects. Dialect differences are comparatively small.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#043",
+  "chapter": "syllable-template",
+  "lines": "171-175",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'underlying coda /t/ shifting to the onset of the second syllable' — but the example 'mat-ikor' has /t/ as the coda of the first morpheme and /i/ as the onset of the second. When resyllabification applies, the /t/ becomes the onset of the second syllable (the syllable 'ci'), not the onset of the second morpheme's syllable. The text says 'onset of the second syllable', which is correct. However, the phrase 'underlying coda /t/' is slightly misleading because in the surface form, /t/ is no longer a coda; it becomes an onset. This is a minor inaccuracy.",
+    "quote": "Syllabification applies across morpheme boundaries through resyllabification: a coda consonant on one morpheme is re-parsed as the onset of a following vowel-initial morpheme. The compound mat-ikor (woman + possessions) thus surfaces as macikor [ma.ʨi.kor], with the underlying coda /t/ shifting to the onset of the second syllable and palatalizing before /i/",
+    "suggestion": ""
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#040",
+  "chapter": "syllable-template",
+  "lines": "88",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is applied to the book's own adopted position. Typically, tags apply to the claim itself, not to the act of adopting a position. The tag should modify the claim that '/ʔ/ is a phonetic boundary element rather than a phoneme', not the fact that the book follows it. This is a minor misuse of the tag.",
+    "quote": "is followed here, retaining V and VC syllable shapes in the template ‹contested›.",
+    "suggestion": "Rephrase: '...the majority position — that /ʔ/ is a phonetic boundary element rather than a phoneme ‹contested› — is followed here, retaining V and VC syllable shapes.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#038",
+  "chapter": "syllable-template",
+  "lines": "67-68",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic status of this claim is unmarked, which is fine since it's attributed to Nakagawa. However, the phrase 'dialect differences are comparatively small' is a generalization that may be contested; it is attributed to Nakagawa but no other source is cited. The chapter later (lines 69-76) discusses SA differences, implying that cross-dialect differences are not small. This is a subtle inconsistency between Nakagawa's characterization and the book's own discussion of SA differences.",
+    "quote": "Nakagawa (2024: 25) characterizes Hokkaido Ainu as having relatively few phonemes and a straightforward syllable structure, noting that the five-vowel inventory is constant across all Hokkaido dialects — dialect differences are comparatively small.",
+    "suggestion": "Add a citation to Nakagawa for the specific claim about dialect differences, or qualify it: '...dialect differences are comparatively small (Nakagawa 2024: 25)'.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#037",
+  "chapter": "syllable-template",
+  "lines": "59-61",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'toop' is parsed as to.op (CV.VC). However, the table in the 'Syllabification' section (lines 108-149) does not include an example with a vowel sequence split (VV → V.V). The algorithm in line 99 says 'Split between two adjacent vowels: VV → V.V', but the only example with adjacent vowels is 'teeta' (line 119), which is parsed as 'te.e.ta' (CV.V.CV). The example 'toop' would be a case of VV, but it is not listed in the table. This is not a contradiction, but a gap in coverage: the text mentions 'toop' as an example of CVVC being parsed as CV.VC, but the table only shows 'teeta' (CV.V.CV), not 'toop'. This is a minor inconsistency in example selection.",
+    "quote": "The word <i lang=\"ain-Latn\">toop</i> 'far away', which looks like CVVC in the Latin transcription, parses as two syllables <i lang=\"ain-Latn\">to.op</i> (CV.VC), the syllable boundary falling between the two successive vowels",
+    "suggestion": "Add 'toop' as an additional row in the table, or explain why it is not included (perhaps because it's not a common word?).",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#036",
+  "chapter": "syllable-template",
+  "lines": "7-8",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The template is described as (C)V(C), but later (lines 10-11) it says 'Four syllable types result', and the table lists V, CV, VC, CVC. This is consistent, but the phrasing 'four syllable types result' implies that (C)V(C) yields exactly four shapes, which is correct. However, the word 'single vowel nucleus' could be misinterpreted as 'only one vowel', but the text later says 'every syllable contains exactly one vowel' (line 56). This is not a contradiction, but the phrasing is redundant: 'single vowel' is implied by 'vowel nucleus'. This is a minor copyediting issue.",
+    "quote": "The Hokkaido Ainu syllable has the shape (C)V(C): an optional onset consonant, a single vowel nucleus, and an optional coda consonant",
+    "suggestion": "Consider rephrasing: '...an optional onset consonant, a vowel nucleus, and an optional coda consonant' (remove 'single').",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#033",
+  "chapter": "syllable-template",
+  "lines": "67",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence appears to paraphrase Nakagawa's characterization, but uses 'characterizes...as having relatively few phonemes and a straightforward syllable structure' which is a plausible editorial characterization but not a direct quote. The phrasing 'noting that the five-vowel inventory is constant across all Hokkaido dialects — dialect differences are comparatively small' reads as the book's own summary, not Nakagawa's claim. This is a minor register issue—the sentence blends the book's voice with Nakagawa's.",
+    "quote": "Nakagawa (2024: 25) characterizes Hokkaido Ainu as having relatively few phonemes and a straightforward syllable structure, noting that the five-vowel inventory is constant across all Hokkaido dialects — dialect differences are comparatively small.",
+    "suggestion": "Reword to make it clearer: 'Nakagawa (2024: 25) observes that Hokkaido Ainu has relatively few phonemes and a straightforward syllable structure; he notes that the five-vowel inventory is constant across all Hokkaido dialects, with dialect differences being comparatively small.'",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#032",
+  "chapter": "syllable-template",
+  "lines": "471",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '/o/' is inconsistent with the rest of the chapter's usage of '/o/'.",
+    "quote": "The identity of the epenthetic vowel is not always /o/: a copy of the adjacent vowel",
+    "suggestion": "Change '/o/' to '/o/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '(C)V(C)' is inconsistent with the rest of the chapter's usage of '(C)V(C)'.",
+    "quote": "shows the (C)V(C) template operating as a consistent filter,",
+    "suggestion": "Change '(C)V(C)' to '(C)V(C)'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#031",
+  "chapter": "syllable-template",
+  "lines": "464",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'Christmas' is inconsistent with the rest of the chapter's usage of 'Christmas'.",
+    "quote": "broken up by the epenthetic /o/. A hypothetical English loanword like\n<i lang=\"ain-Latn\">Christmas</i> would enter as something like",
+    "suggestion": "Change 'Christmas' to 'Christmas'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'kurisumas' is inconsistent with the rest of the chapter's usage of 'kurisumas'.",
+    "quote": "<i lang=\"ain-Latn\">kurisumas</i>, with each cluster split by an inserted vowel",
+    "suggestion": "Change 'kurisumas' to 'kurisumas'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#030",
+  "chapter": "syllable-template",
+  "lines": "458",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'CVVC' is inconsistent with the rest of the chapter's usage of 'CVVC'.",
+    "quote": "Japanese and Russian loanwords that contain consonant clusters or CVVC structures are",
+    "suggestion": "Change 'CVVC' to 'CVVC'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'potoloko' and 'potoloko' are inconsistent with the rest of the chapter's usage of 'potoloko' and 'potoloko'.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-11) ‹corpus-suggested›. The Russian\nborrowing <i lang=\"ain-Latn\">potoloko</i> (← Rus. потолок 'ceiling') illustrates the",
+    "suggestion": "Change 'potoloko' and 'potoloko' to 'potoloko' and 'potoloko'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'potoloko' and 'potoloko' are inconsistent with the rest of the chapter's usage of 'potoloko' and 'potoloko'.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-11) ‹corpus-suggested›. The Russian\nborrowing <i lang=\"ain-Latn\">potoloko</i> (← Rus. потолок 'ceiling') illustrates the",
+    "suggestion": "Change 'potoloko' and 'potoloko' to 'potoloko' and 'potoloko'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#029",
+  "chapter": "syllable-template",
+  "lines": "451",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'ci=' is inconsistent with the rest of the chapter's usage of 'ci='.",
+    "quote": "<i lang=\"ain-Latn\">ci=</i> under vowel deletion and glide-weakening is set out in",
+    "suggestion": "Change 'ci=' to 'ci='.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#028",
+  "chapter": "syllable-template",
+  "lines": "446",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'e=', 'e=itak', and 'eytak' are inconsistent with the rest of the chapter's usage of 'e=', 'e=itak', and 'eytak'.",
+    "quote": "The same principle holds for the second-person prefix\n<i lang=\"ain-Latn\">e=</i>: <i lang=\"ain-Latn\">e=itak</i> → <i lang=\"ain-Latn\">eytak</i>",
+    "suggestion": "Change 'e=', 'e=itak', and 'eytak' to 'e=', 'e=itak', and 'eytak'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'e=', 'e=itak', and 'eytak' are inconsistent with the rest of the chapter's usage of 'e=', 'e=itak', and 'eytak'.",
+    "quote": "The same principle holds for the second-person prefix\n<i lang=\"ain-Latn\">e=</i>: <i lang=\"ain-Latn\">e=itak</i> → <i lang=\"ain-Latn\">eytak</i>",
+    "suggestion": "Change 'e=', 'e=itak', and 'eytak' to 'e=', 'e=itak', and 'eytak'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'e=', 'e=itak', and 'eytak' are inconsistent with the rest of the chapter's usage of 'e=', 'e=itak', and 'eytak'.",
+    "quote": "The same principle holds for the second-person prefix\n<i lang=\"ain-Latn\">e=</i>: <i lang=\"ain-Latn\">e=itak</i> → <i lang=\"ain-Latn\">eytak</i>",
+    "suggestion": "Change 'e=', 'e=itak', and 'eytak' to 'e=', 'e=itak', and 'eytak'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'you speak' is inconsistent with the rest of the chapter's usage of 'you speak'.",
+    "quote": "'you speak' (open stem, weakening permitted), but",
+    "suggestion": "Change 'you speak' to 'you speak'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'e=ikra' and 'e.ík.ra' are inconsistent with the rest of the chapter's usage of 'e=ikra' and 'e.ík.ra'.",
+    "quote": "<i lang=\"ain-Latn\">e=ikra</i> [e.ík.ra] 'you send' (closed stem, hiatus retained)",
+    "suggestion": "Change 'e=ikra' and 'e.ík.ra' to 'e=ikra' and 'e.ík.ra'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'e=ikra' and 'e.ík.ra' are inconsistent with the rest of the chapter's usage of 'e=ikra' and 'e.ík.ra'.",
+    "quote": "<i lang=\"ain-Latn\">e=ikra</i> [e.ík.ra] 'you send' (closed stem, hiatus retained)",
+    "suggestion": "Change 'e=ikra' and 'e.ík.ra' to 'e=ikra' and 'e.ík.ra'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ku=', 'e=', and 'ci=' are inconsistent with the rest of the chapter's usage of 'ku=', 'e=', and 'ci='.",
+    "quote": "The full allomorphy paradigm for\n<i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">e=</i>, and",
+    "suggestion": "Change 'ku=', 'e=', and 'ci=' to 'ku=', 'e=', and 'ci='.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ku=', 'e=', and 'ci=' are inconsistent with the rest of the chapter's usage of 'ku=', 'e=', and 'ci='.",
+    "quote": "The full allomorphy paradigm for\n<i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">e=</i>, and",
+    "suggestion": "Change 'ku=', 'e=', and 'ci=' to 'ku=', 'e=', and 'ci='.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ku=', 'e=', and 'ci=' are inconsistent with the rest of the chapter's usage of 'ku=', 'e=', and 'ci='.",
+    "quote": "The full allomorphy paradigm for\n<i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">e=</i>, and",
+    "suggestion": "Change 'ku=', 'e=', and 'ci=' to 'ku=', 'e=', and 'ci='.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#027",
+  "chapter": "syllable-template",
+  "lines": "437",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'ikra' is inconsistent with the rest of the chapter's usage of 'ikra'.",
+    "quote": "<td><i lang=\"ain-Latn\">ikra</i> 'send'</td>",
+    "suggestion": "Change 'ikra' to 'ikra'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#026",
+  "chapter": "syllable-template",
+  "lines": "430",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '/ik/' is inconsistent with the rest of the chapter's usage of '/ik/'.",
+    "quote": "<td>closed: /ik/ (VC)</td>",
+    "suggestion": "Change '/ik/' to '/ik/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ku=ikra' and 'ku.ík.ra' are inconsistent with the rest of the chapter's usage of 'ku=ikra' and 'ku.ík.ra'.",
+    "quote": "<td><i lang=\"ain-Latn\">ku=ikra</i> [ku.ík.ra]</td>",
+    "suggestion": "Change 'ku=ikra' and 'ku.ík.ra' to 'ku=ikra' and 'ku.ík.ra'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ku=ikra' and 'ku.ík.ra' are inconsistent with the rest of the chapter's usage of 'ku=ikra' and 'ku.ík.ra'.",
+    "quote": "<td><i lang=\"ain-Latn\">ku=ikra</i> [ku.ík.ra]</td>",
+    "suggestion": "Change 'ku=ikra' and 'ku.ík.ra' to 'ku=ikra' and 'ku.ík.ra'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#025",
+  "chapter": "syllable-template",
+  "lines": "424",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ku=ype' and 'kúy.pe' are inconsistent with the rest of the chapter's usage of 'ku=ype' and 'kúy.pe'.",
+    "quote": "<td><i lang=\"ain-Latn\">ku=ype</i> [kúy.pe]</td>",
+    "suggestion": "Change 'ku=ype' and 'kúy.pe' to 'ku=ype' and 'kúy.pe'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ku=ype' and 'kúy.pe' are inconsistent with the rest of the chapter's usage of 'ku=ype' and 'kúy.pe'.",
+    "quote": "<td><i lang=\"ain-Latn\">ku=ype</i> [kúy.pe]</td>",
+    "suggestion": "Change 'ku=ype' and 'kúy.pe' to 'ku=ype' and 'kúy.pe'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#024",
+  "chapter": "syllable-template",
+  "lines": "413",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '/i/' is inconsistent with the rest of the chapter's usage of '/i/'.",
+    "quote": "<td>open: /i/ (V)</td>",
+    "suggestion": "Change '/i/' to '/i/'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#023",
+  "chapter": "syllable-template",
+  "lines": "398",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'kuínkar' and 'kuynkar' are inconsistent with the rest of the chapter's usage of 'kuínkar' and 'kuynkar'.",
+    "quote": "    published example for this blocking is <i lang=\"ain-Latn\">kuínkar</i> (not\n    *<i lang=\"ain-Latn\">kuynkar</i>) 'I look' (2024: 53): the first syllable of",
+    "suggestion": "Change 'kuínkar' and 'kuynkar' to 'kuínkar' and 'kuynkar'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'kuínkar' and 'kuynkar' are inconsistent with the rest of the chapter's usage of 'kuínkar' and 'kuynkar'.",
+    "quote": "    published example for this blocking is <i lang=\"ain-Latn\">kuínkar</i> (not\n    *<i lang=\"ain-Latn\">kuynkar</i>) 'I look' (2024: 53): the first syllable of",
+    "suggestion": "Change 'kuínkar' and 'kuynkar' to 'kuínkar' and 'kuynkar'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/in/' are inconsistent with the rest of the chapter's usage of '/in/'.",
+    "quote": "of <i lang=\"ain-Latn\">inkar</i> is closed (/in/), so the hiatus is retained rather than",
+    "suggestion": "Change '/in/' to '/in/'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#022",
+  "chapter": "syllable-template",
+  "lines": "394",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/i/' and '/y/' are inconsistent with the rest of the chapter's usage of '/i/' and '/y/'.",
+    "quote": "*<i lang=\"ain-Latn\">ku=ykra</i>: if /i/ weakened to /y/, the resulting sequence",
+    "suggestion": "Change '/i/' and '/y/' to '/i/' and '/y/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/i/' and '/y/' are inconsistent with the rest of the chapter's usage of '/i/' and '/y/'.",
+    "quote": "*<i lang=\"ain-Latn\">ku=ykra</i>: if /i/ weakened to /y/, the resulting sequence",
+    "suggestion": "Change '/i/' and '/y/' to '/i/' and '/y/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '/ykr/' is inconsistent with the rest of the chapter's usage of '/ykr/'.",
+    "quote": "    /kuykra/ would be unsyllabifiable under (C)V(C) — the three-consonant cluster /ykr/",
+    "suggestion": "Change '/ykr/' to '/ykr/'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#021",
+  "chapter": "syllable-template",
+  "lines": "386",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'ku.ype' is inconsistent with the rest of the chapter's usage of 'ku.ype'.",
+    "quote": "open (V) and weakening to /y/ gives the licit shape CVC + CV (<i lang=\"ain-Latn\">ku.ype</i>).",
+    "suggestion": "Change 'ku.ype' to 'ku.ype'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#020",
+  "chapter": "syllable-template",
+  "lines": "382",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'Hokkaido' is inconsistent with the rest of the chapter's usage of 'Hokkaido'.",
+    "quote": "In southern\nHokkaido dialects (Saru, Chitose, Mukawa), the vowel /u/ of the first-person agent",
+    "suggestion": "Change 'Hokkaido' to 'Hokkaido'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/a/', '/e/', '/u/', and '/o/' are inconsistent with the rest of the chapter's usage of '/a/', '/e/', '/u/', and '/o/'.",
+    "quote": "prefix <i lang=\"ain-Latn\">ku=</i> deletes before a stem-initial /a e u o/, and the vowel",
+    "suggestion": "Change '/a/', '/e/', '/u/', and '/o/' to '/a/', '/e/', '/u/', and '/o/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/a/', '/e/', '/u/', and '/o/' are inconsistent with the rest of the chapter's usage of '/a/', '/e/', '/u/', and '/o/'.",
+    "quote": "prefix <i lang=\"ain-Latn\">ku=</i> deletes before a stem-initial /a e u o/, and the vowel",
+    "suggestion": "Change '/a/', '/e/', '/u/', and '/o/' to '/a/', '/e/', '/u/', and '/o/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/a/', '/e/', '/u/', and '/o/' are inconsistent with the rest of the chapter's usage of '/a/', '/e/', '/u/', and '/o/'.",
+    "quote": "prefix <i lang=\"ain-Latn\">ku=</i> deletes before a stem-initial /a e u o/, and the vowel",
+    "suggestion": "Change '/a/', '/e/', '/u/', and '/o/' to '/a/', '/e/', '/u/', and '/o/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/a/', '/e/', '/u/', and '/o/' are inconsistent with the rest of the chapter's usage of '/a/', '/e/', '/u/', and '/o/'.",
+    "quote": "prefix <i lang=\"ain-Latn\">ku=</i> deletes before a stem-initial /a e u o/, and the vowel",
+    "suggestion": "Change '/a/', '/e/', '/u/', and '/o/' to '/a/', '/e/', '/u/', and '/o/'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#019",
+  "chapter": "syllable-template",
+  "lines": "371",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/-c/' and '/-h/' are inconsistent with the rest of the chapter's usage of '/-c/' and '/-h/'.",
+    "quote": "    Among the starred onset+vowel combinations, /-c/ and /-h/ are also categorically excluded",
+    "suggestion": "Change '/-c/' and '/-h/' to '/-c/' and '/-h/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/-c/' and '/-h/' are inconsistent with the rest of the chapter's usage of '/-c/' and '/-h/'.",
+    "quote": "    Among the starred onset+vowel combinations, /-c/ and /-h/ are also categorically excluded",
+    "suggestion": "Change '/-c/' and '/-h/' to '/-c/' and '/-h/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '/c/' is inconsistent with the rest of the chapter's usage of '/c/'.",
+    "quote": "    The full discussion of the affricate /c/ and its distribution belongs to",
+    "suggestion": "Change '/c/' to '/c/'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#018",
+  "chapter": "syllable-template",
+  "lines": "358",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '-m' is inconsistent with the rest of the chapter's usage of '-m'.",
+    "quote": "<td>-<i lang=\"ain-Latn\">m</i> word-finally</td>",
+    "suggestion": "Change '-m' to '-m'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/p/', '/m/', and '/-n/' are inconsistent with the rest of the chapter's usage of '/p/', '/m/', and '/-n/'.",
+    "quote": "    Orthographic /-m/ before /p/ or /m/ is an assimilation notation for underlying\n    /-n/ (see above); a stem-final /-m/ that stays /-m/ before other segments is",
+    "suggestion": "Change '/p/', '/m/', and '/-n/' to '/p/', '/m/', and '/-n/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/p/', '/m/', and '/-n/' are inconsistent with the rest of the chapter's usage of '/p/', '/m/', and '/-n/'.",
+    "quote": "    Orthographic /-m/ before /p/ or /m/ is an assimilation notation for underlying\n    /-n/ (see above); a stem-final /-m/ that stays /-m/ before other segments is",
+    "suggestion": "Change '/p/', '/m/', and '/-n/' to '/p/', '/m/', and '/-n/'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '/p/', '/m/', and '/-n/' are inconsistent with the rest of the chapter's usage of '/p/', '/m/', and '/-n/'.",
+    "quote": "    Orthographic /-m/ before /p/ or /m/ is an assimilation notation for underlying\n    /-n/ (see above); a stem-final /-m/ that stays /-m/ before other segments is",
+    "suggestion": "Change '/p/', '/m/', and '/-n/' to '/p/', '/m/', and '/-n/'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#017",
+  "chapter": "syllable-template",
+  "lines": "353",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '*-aw(e)' and '-ew(e)' are inconsistent with the rest of the chapter's usage of '*-aw(e)' and '-ew(e)'.",
+    "quote": "    Corpus survey returns almost no /-ow/ tokens\n    <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-12-19). A diachronic account\n    proposes that earlier *-aw(e) shifted to -ew(e) in most environments\n    <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-12-19) ‹speculative›.",
+    "suggestion": "Change '*-aw(e)' and '-ew(e)' to '*-aw(e)' and '-ew(e)'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '*-aw(e)' and '-ew(e)' are inconsistent with the rest of the chapter's usage of '*-aw(e)' and '-ew(e)'.",
+    "quote": "    Corpus survey returns almost no /-ow/ tokens\n    <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-12-19). A diachronic account\n    proposes that earlier *-aw(e) shifted to -ew(e) in most environments\n    <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-12-19) ‹speculative›.",
+    "suggestion": "Change '*-aw(e)' and '-ew(e)' to '*-aw(e)' and '-ew(e)'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#016",
+  "chapter": "syllable-template",
+  "lines": "348",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '-ow' is inconsistent with the rest of the chapter's usage of '-ow'.",
+    "quote": "<td>-<i lang=\"ain-Latn\">ow</i></td>",
+    "suggestion": "Change '-ow' to '-ow'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#015",
+  "chapter": "syllable-template",
+  "lines": "341",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '/u/' is inconsistent with the rest of the chapter's usage of '/u/'.",
+    "quote": "    Nakagawa (2024: 43) notes that /c/ before /a/ or /u/ aligns more naturally",
+    "suggestion": "Change '/u/' to '/u/'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#014",
+  "chapter": "syllable-template",
+  "lines": "336",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'cuC', 'ceC', and 'coC' are inconsistent with the rest of the chapter's usage of 'cuC', 'ceC', and 'coC'.",
+    "quote": "<td><i lang=\"ain-Latn\">cuC</i>, <i lang=\"ain-Latn\">ceC</i>,\n    <i lang=\"ain-Latn\">coC</i></td>",
+    "suggestion": "Change 'cuC', 'ceC', and 'coC' to 'cuC', 'ceC', and 'coC'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'cuC', 'ceC', and 'coC' are inconsistent with the rest of the chapter's usage of 'cuC', 'ceC', and 'coC'.",
+    "quote": "<td><i lang=\"ain-Latn\">cuC</i>, <i lang=\"ain-Latn\">ceC</i>,\n    <i lang=\"ain-Latn\">coC</i></td>",
+    "suggestion": "Change 'cuC', 'ceC', and 'coC' to 'cuC', 'ceC', and 'coC'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'cuC', 'ceC', and 'coC' are inconsistent with the rest of the chapter's usage of 'cuC', 'ceC', and 'coC'.",
+    "quote": "<td><i lang=\"ain-Latn\">cuC</i>, <i lang=\"ain-Latn\">ceC</i>,\n    <i lang=\"ain-Latn\">coC</i></td>",
+    "suggestion": "Change 'cuC', 'ceC', and 'coC' to 'cuC', 'ceC', and 'coC'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#013",
+  "chapter": "syllable-template",
+  "lines": "325",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in '*yi', '*wi', and '*wu' are inconsistent with the rest of the chapter's usage of '*yi', '*wi', and '*wu'.",
+    "quote": "<td><i lang=\"ain-Latn\">*yi</i>, <i lang=\"ain-Latn\">*wi</i>, <i lang=\"ain-Latn\">*wu</i></td>",
+    "suggestion": "Change '*yi', '*wi', and '*wu' to '*yi', '*wi', and '*wu'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'glides-w-y' are inconsistent with the rest of the chapter's usage of 'glides-w-y'.",
+    "quote": "<td>    Nakagawa 2024: 43, 45: no word has these as its root; they arise only at\n    morpheme boundaries by resyllabification or glide insertion\n    <Ref k=\"nakagawa2024\" p=\"43, 45\" />; <Ref k=\"shiraishi2022\" p=\"§4.2\" />.\n    Whether they constitute independent phonemic syllables is contested between\n    Tamura and Nakagawa — see <Xr ch=\"glides-w-y\" /> ‹contested›.</td>",
+    "suggestion": "Change 'glides-w-y' to 'glides-w-y'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#012",
+  "chapter": "syllable-template",
+  "lines": "321",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'ti' is inconsistent with the rest of the chapter's usage of 'ti'.",
+    "quote": "    No HA root with stem-internal <i lang=\"ain-Latn\">ti</i> is attested.",
+    "suggestion": "Change 'ti' to 'ti'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#011",
+  "chapter": "syllable-template",
+  "lines": "315",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '*ti' is inconsistent with the rest of the chapter's usage of '*ti'.",
+    "quote": "<td><i lang=\"ain-Latn\">*ti</i></td>",
+    "suggestion": "Change '*ti' to '*ti'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ti' are inconsistent with the rest of the chapter's usage of 'ti'.",
+    "quote": "<td>    Nakagawa 2024: 43, 45 (Table 1 shows the <i lang=\"ain-Latn\">ti</i> cell\n    empty). The surface affricate [ʨi] always derives from underlying /t/ + /i/\n    across a morpheme boundary — see <Xr ch=\"coda-r-assimilation-sonorant-sandhi\" />.\n    No HA root with stem-internal <i lang=\"ain-Latn\">ti</i> is attested.</td>",
+    "suggestion": "Change 'ti' to 'ti'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ti' are inconsistent with the rest of the chapter's usage of 'ti'.",
+    "quote": "<td>    Nakagawa 2024: 43, 45 (Table 1 shows the <i lang=\"ain-Latn\">ti</i> cell\n    empty). The surface affricate [ʨi] always derives from underlying /t/ + /i/\n    across a morpheme boundary — see <Xr ch=\"coda-r-assimilation-sonorant-sandhi\" />.\n    No HA root with stem-internal <i lang=\"ain-Latn\">ti</i> is attested.</td>",
+    "suggestion": "Change 'ti' to 'ti'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#010",
+  "chapter": "syllable-template",
+  "lines": "289",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'honkor' and 'anpe' are inconsistent with the rest of the chapter's usage of 'honkor' and 'anpe'.",
+    "quote": "So <i lang=\"ain-Latn\">honkor</i> 'be\npregnant' is pronounced [hoŋkor] and <i lang=\"ain-Latn\">anpe</i> 'true thing' is",
+    "suggestion": "Change 'honkor' and 'anpe' to 'honkor' and 'anpe'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'honkor' and 'anpe' are inconsistent with the rest of the chapter's usage of 'honkor' and 'anpe'.",
+    "quote": "So <i lang=\"ain-Latn\">honkor</i> 'be\npregnant' is pronounced [hoŋkor] and <i lang=\"ain-Latn\">anpe</i> 'true thing' is",
+    "suggestion": "Change 'honkor' and 'anpe' to 'honkor' and 'anpe'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#009",
+  "chapter": "syllable-template",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'pon' and 'honkor' are inconsistent with the rest of the chapter's usage of 'pon' and 'honkor'.",
+    "quote": "/n/          [n]; [ŋ] before /k/; [m] before /p/, /m/\n<i lang=\"ain-Latn\">pon</i>, <i lang=\"ain-Latn\">honkor</i>",
+    "suggestion": "Change 'pon' and 'honkor' to 'pon' and 'honkor'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'pon' and 'honkor' are inconsistent with the rest of the chapter's usage of 'pon' and 'honkor'.",
+    "quote": "/n/          [n]; [ŋ] before /k/; [m] before /p/, /m/\n<i lang=\"ain-Latn\">pon</i>, <i lang=\"ain-Latn\">honkor</i>",
+    "suggestion": "Change 'pon' and 'honkor' to 'pon' and 'honkor'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#008",
+  "chapter": "syllable-template",
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'cis' are inconsistent with the rest of the chapter's usage of 'cis'.",
+    "quote": "/s/\n[ɕ] after /i/; [sʲ] elsewhere\n<i lang=\"ain-Latn\">as</i>, <i lang=\"ain-Latn\">cis</i>",
+    "suggestion": "Change 'cis' to 'cis'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#007",
+  "chapter": "syllable-template",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in '/h/' is inconsistent with the rest of the chapter's usage of '/h/'.",
+    "quote": "and the laryngeal /h/; the remaining",
+    "suggestion": "Change '/h/' to '/h/'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#006",
+  "chapter": "syllable-template",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons in 'ma.ci.kor', 'ma.ʨi.kor', 'macikor', and 'tamasay' are inconsistent with the rest of the chapter's usage.",
+    "quote": "note=\"The underlying boundary mat|ikor resyllabifies to ma.ci.kor [ma.ʨi.kor] (CV.CV.CVC). The coda /t/ shifts to onset position and undergoes the obligatory t+i → [ʨi] palatalization. The same surface form is attested throughout the Saru corpus, e.g. usa macikor usa tamasay 'various women's treasures and bead-necklaces'.\"",
+    "suggestion": "Remove the macrons from 'ma.ci.kor', 'ma.ʨi.kor', 'macikor', and 'tamasay'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#005",
+  "chapter": "syllable-template",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'macikor' is inconsistent with the rest of the chapter's usage of 'macikor'.",
+    "quote": "as <i lang=\"ain-Latn\">macikor</i> [ma.ʨi.kor], with the underlying coda /t/ shifting to",
+    "suggestion": "Change 'macikor' to 'macikor'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'macikor' is inconsistent with the rest of the chapter's usage of 'macikor'.",
+    "quote": "as <i lang=\"ain-Latn\">macikor</i> [ma.ʨi.kor], with the underlying coda /t/ shifting to",
+    "suggestion": "Change 'macikor' to 'macikor'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'palatalizing' is inconsistent with the rest of the chapter's usage of 'palatalizing'.",
+    "quote": "palatalizing before /i/\n<Ref k=\"kindaichi1936\" p=\"1\" />; <Ref k=\"nakagawa2024\" p=\"36\" />:",
+    "suggestion": "Change 'palatalizing' to 'palatalizing'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#004",
+  "chapter": "syllable-template",
+  "lines": "80",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in '/ʔ/-as-phoneme' is inconsistent with the rest of the chapter's usage of '-as-phoneme'.",
+    "quote": "Under\nthe /ʔ/-as-phoneme view (Hattori 1961; Tamura, earlier work) the template reduces to just",
+    "suggestion": "Remove the hyphen from '/ʔ/-as-phoneme'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#003",
+  "chapter": "syllable-template",
+  "lines": "74",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on the vowels in 'nísap' and 'nisáp' are inconsistent with the rest of the chapter's usage of 'nísap' and 'nisáp'.",
+    "quote": "contrast <i lang=\"ain-Latn\">nísap</i> : <i lang=\"ain-Latn\">nisáp</i>",
+    "suggestion": "Remove the macrons from the vowels in 'nísap' and 'nisáp'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#002",
+  "chapter": "syllable-template",
+  "lines": "67",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'Hokkaido' is inconsistent with the rest of the chapter's usage of 'Hokkaido'.",
+    "quote": "Nakagawa (2024: 25) characterizes Hokkaido Ainu as having relatively few phonemes and a",
+    "suggestion": "Change 'Hokkaido' to 'Hokkaido'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'Sakhalin' is inconsistent with the rest of the chapter's usage of 'Sakhalin'.",
+    "quote": "In contrast, Sakhalin\nAinu (SA) allows a long-vowel nucleus alongside a coda consonant, producing CVVC syllables",
+    "suggestion": "Change 'Sakhalin' to 'Sakhalin'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#001",
+  "chapter": "syllable-template",
+  "lines": "7-8",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron in 'Hokkaido' is inconsistent with the rest of the chapter's usage of 'Hokkaido'.",
+    "quote": "The Hokkaido Ainu syllable has the shape (C)V(C): an optional onset consonant, a single\nvowel nucleus, and an optional coda consonant",
+    "suggestion": "Change 'Hokkaido' to 'Hokkaido'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#053",
+  "chapter": "syllable-template",
+  "lines": "371",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text says /-c/ and /-h/ are excluded from coda position, but earlier in section 'Permitted coda consonants' it correctly states only /c/ and /h/ are excluded. However, this sentence implies both are onset exclusions, which is incorrect. The confusion arises from ambiguous phrasing: 'starred onset+vowel combinations' refers to syllable onsets, but /-c/ and /-h/ are coda exclusions.",
+    "quote": "Among the starred onset+vowel combinations, /-c/ and /-h/ are also categorically excluded from coda position (see the preceding section), and the /-c/ exclusion from coda means that *-ac, *-ec, etc., are all absent.",
+    "suggestion": "Rephrase to clarify: 'Although /c/ and /h/ are excluded from coda position, the absence of *-ac, *-ec, etc., follows from the coda restriction on /c/, not from onset constraints.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#052",
+  "chapter": "syllable-template",
+  "lines": "461",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Discord citation supports a generalization about epenthetic vowel choice; tagging as ‹corpus-suggested› implies broader data than a single user provides.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-11) ‹corpus-suggested›",
+    "suggestion": "Change to ‹speculative› or attribute more cautiously.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#048",
+  "chapter": "syllable-template",
+  "lines": "210",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the table under 'Permitted coda consonants', the phoneme /c/ is referred to in prose as /c/ [ʨ], but the table uses /c/ without consistent bracketing of the IPA equivalent. Also, the example for /s/ includes <i lang=\"ain-Latn\">cis</i>, which may be better spelled <i lang=\"ain-Latn\">cís</i> to reflect pitch accent, though not strictly required.",
+    "quote": "<table>",
+    "suggestion": "Ensure consistent notation: either always include [ʨ] after /c/ in prose, or standardize representation. Orthographic consistency for <i lang=\"ain-Latn\">cis</i> is acceptable if unaccented, but verify against source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#044",
+  "chapter": "syllable-template",
+  "lines": "8",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation for Sato 2008 uses a section number (§2.3) while others use page numbers; this may reflect inconsistent locator format for the same type of source.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"41\" />; <Ref k=\"sato2008\" p=\"§2.3\" />; <Ref k=\"shiraishi2022\" p=\"§4.1\" />.",
+    "suggestion": "Standardize locator format—either use page numbers for all or clarify if section numbers are intentional.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#042",
+  "chapter": "syllable-template",
+  "lines": "160-167",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says these are minimal pairs that turn on syllable count. However, the pair is not a true minimal pair because the morpheme boundaries are different. The text acknowledges this: 'The sequence -ay- in the first word is a single closed syllable (CVC); the -ai- in the second is two syllables separated by a morpheme boundary.' This is consistent, but the term 'minimal pair' is typically used for phonemic contrasts, not morphologically conditioned differences. Calling it a 'minimal pair' is misleading.",
+    "quote": "yayrayke 'commit suicide' = yay.ray.ke (CVC.CVC.CV, three syllables) versus yairayke 'give thanks' = ya.i.ray.ke (CV.V.CVC.CV, four syllables).",
+    "suggestion": "Rephrase: 'A contrast that turns on syllable count exists...' or 'A near-minimal pair...'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#041",
+  "chapter": "syllable-template",
+  "lines": "99-101",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The algorithm in step 3 says 'In a VCV sequence, split before the consonant: VCV → V.CV.' This implies that the consonant goes to the following syllable (onset maximization). However, later in the same section (lines 160-162), the example 'yayrayke' is syllabified as 'yay.ray.ke' (CVC.CVC.CV), which follows the same principle: the consonant /r/ goes to the onset of the next syllable. But the example 'cepkoyki' (line 138) is syllabified as 'cep.koy.ki' (CVC.CVC.CV), which is consistent. However, the algorithm does not specify what happens with VCV sequences that are part of a larger word; step 3 seems to imply that any VCV sequence in the word is split as V.CV, but the examples show that VCV can also be split as VC.V if the first vowel is part of a closed syllable. For example, 'aynu' (line 125) is syllabified as 'ay.nu' (CVC.CV), which requires applying step 2 (CC → C.C) before step 3? The algorithm as given does not account for the interaction between steps. This is a potential inconsistency in the algorithm description.",
+    "quote": "<li>Split between two adjacent <strong>vowels</strong>: VV → V.V.</li> <li>Split between two adjacent <strong>consonants</strong>: CC → C.C.</li> <li>In a VCV sequence, split <strong>before</strong> the consonant: VCV → V.CV.</li>",
+    "suggestion": "Clarify the algorithm: either specify that steps apply in order, or note that resyllabification and morpheme boundaries can affect the outcome. Add a note: 'The algorithm applies iteratively; step 3 applies only after steps 1 and 2 have been applied.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#039",
+  "chapter": "syllable-template",
+  "lines": "82-85",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation for Chiri (1942) is indirect: 'as reported by <Ref k=\"shiraishi2022\" p=\"§4.3\" />'. This is fine, but the epistemic tag for Nakagawa's rejection is unmarked (implicitly consensus), while the topic itself (the /ʔ/ debate) is tagged ‹contested› in line 88. This is inconsistent: the text presents Nakagawa's rejection as consensus (no tag), but the overall position is tagged ‹contested›. The citation for Nakagawa's rejection should perhaps be tagged as ‹contested› or the inconsistency resolved.",
+    "quote": "Nakagawa rejects this on the grounds that no minimal pair exists in monomorphemic forms and that positing /ʔ/ requires many costly deletion rules <Ref k=\"nakagawa2024\" p=\"31–33\" />, a judgement shared by Refsing <Ref k=\"refsing1986\" /> and Chiri (1942) as reported by <Ref k=\"shiraishi2022\" p=\"§4.3\" />.",
+    "suggestion": "Either add ‹contested› to the Nakagawa rejection, or rephrase to indicate that this is one side of a debate.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#035",
+  "chapter": "syllable-template",
+  "lines": "86-88",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to the claim that the majority position retains V and VC shapes. However, the preceding text (lines 80-85) says this is the position followed here, and the tag is placed after 'is followed here, retaining V and VC syllable shapes in the template'. This is inconsistent: if the position is contested, it cannot simultaneously be the 'majority position' that is 'followed here' without clarification. The tag seems misplaced—it should apply to the debate as a whole, not to the book's own adopted position.",
+    "quote": "The debate is covered in <Xr ch=\"glottal-stop\" />; the majority position — /ʔ/ as a phonetic boundary element rather than a phoneme — is followed here, retaining V and VC syllable shapes in the template ‹contested›.",
+    "suggestion": "Move ‹contested› to the beginning of the sentence or rephrase: 'The debate is covered in <Xr ch=\"glottal-stop\" />; the position adopted here — /ʔ/ as a phonetic boundary element rather than a phoneme — is a minority view ‹contested›, but it is followed here, retaining V and VC syllable shapes in the template.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "syllable-template~p1#034",
+  "chapter": "syllable-template",
+  "lines": "82-83",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'no minimal pair exists in monomorphemic forms', but the phoneme status of /ʔ/ is disputed and the absence of minimal pairs is a standard argument against phonemic status. However, the earlier claim about SA having /aa/ and /ruu/ vs HA /a/ and /ru/ (lines 70-74) involves minimal pairs across dialects, not within HA. This is not a contradiction per se, but the phrasing 'no minimal pair exists' is potentially misleading—there are no minimal pairs in monomorphemic HA forms, but the argument about SA suggests that minimal pairs exist across dialects. The inconsistency is between 'no minimal pair exists' (in HA) and the SA comparison implying that HA does have a length contrast (which is not a minimal pair in HA itself). This is a subtle internal inconsistency.",
+    "quote": "Nakagawa rejects this on the grounds that no minimal pair exists in monomorphemic forms and that positing /ʔ/ requires many costly deletion rules",
+    "suggestion": "Clarify: 'Nakagawa rejects this on the grounds that no minimal pair exists in monomorphemic Hokkaido Ainu forms and that positing /ʔ/ requires many costly deletion rules.'",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

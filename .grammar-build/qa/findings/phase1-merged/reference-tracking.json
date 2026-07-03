@@ -1,0 +1,910 @@
+[
+ {
+  "id": "reference-tracking~p1#035",
+  "chapter": "reference-tracking",
+  "lines": "148-155",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.O' for all three instances of 'i=', but the translation uses 'me' (first person singular). The fourth-person object prefix 'i=' is glossed as '4.O' but translated as 'me'. This is inconsistent: the fourth person is not the same as first person singular. The translation should reflect the fourth-person reference (e.g., 'Take pity on the protagonist and give the protagonist lodging') or a note should explain the use of fourth person.",
+    "quote": "m=\"i=erampokiwen i=rewsire wa i=kore\"\ng=\"4.O=pity 4.O=lodge CONJ 4.O=give\"\ntr=\"Take pity on me and give me lodging.\"",
+    "suggestion": "Change the translation to 'Take pity on the protagonist and give the protagonist lodging.' or add a note explaining that 'i=' here indexes the narrator-protagonist.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.O' is used for all three verbs, but the translation 'Take pity on me and give me lodging' indicates that 'me' is the recipient (object), not the agent. The fourth-person object prefix 'i=' should be glossed as '4.O', but the subject of 'pity' and 'lodge' is not the narrator. The verb 'pity' is intransitive and likely has the narrator as subject, so '4.S' would be more accurate for 'erampokiwen'.",
+    "quote": "4.O=pity 4.O=lodge CONJ 4.O=give",
+    "suggestion": "Revise gloss to '4.S=pity 4.S=lodge CONJ 4.O=give' or similar, depending on syntactic analysis.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#032",
+  "chapter": "reference-tracking",
+  "lines": "270-275",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.A' for 'a=' and '4.O' for 'i=' and '4.S' for '=an', but the translation says 'my dog' and 'me' (first person singular). The fourth-person forms are glossed as '4' but translated as first person singular ('my', 'me'). This is inconsistent: the fourth person is not the same as first person singular. The translation should reflect the fourth-person reference (e.g., 'the protagonist's dog' or 'our dog') or a note should explain the use of fourth person.",
+    "quote": "m=\"a=kor seta anakne i=sam ta arpa=an\"\ng=\"4.A=have dog TOP 4.O=near LOC go=4.S\"\ntr=\"As for my dog, it went right beside me.\"",
+    "suggestion": "Change the translation to 'As for the protagonist's dog, it went right beside the protagonist.' or add a note explaining that fourth-person forms are used for the narrative protagonist.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A' is used for 'a=kor', but the same form-set is glossed as '4.S' in other contexts (e.g., line 320). This inconsistency suggests drift in glossing practice. The fourth-person subject should be uniformly glossed as '4.S' regardless of transitivity.",
+    "quote": "4.A=have dog TOP 4.O=near LOC go=4.S",
+    "suggestion": "Change '4.A' to '4.S' for consistency across the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#007",
+  "chapter": "reference-tracking",
+  "lines": "104",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the theme 'it' has 'no person index', but the gloss `g` for the second clause (`na ekasi ku=kore na`) shows `1SG.A=give`. The `ku=` prefix indicates a first-person singular agent, which is a person index. This creates a contradiction within the example's annotation.",
+    "quote": "note=\"Satō ex. 21 (two sentences). The theme 'it' of the second clause is zero — no pronoun, no person index — yet its reference to the sweet of the first clause is unambiguous because kore's valency requires a theme argument.\"",
+    "suggestion": "Clarify whether the theme is indeed unindexed or if the note is referring to a different aspect of indexing. If `ku=` is the agent, then the theme is unindexed, and the note should reflect that the *theme* is unindexed, not the verb as a whole.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.A' indicates first person singular agent, but the free translation 'I'll give it to the old man' expresses a first person subject, which should be marked as '1SG.S' or similar. The verb 'kore' (give) is transitive, so the agent index should align with the subject, not be marked as 'A'.",
+    "quote": "1SG.A=give",
+    "suggestion": "Change '1SG.A' to '1SG.S' in the gloss to match the translation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#033",
+  "chapter": "reference-tracking",
+  "lines": "318-323",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.S' for all three instances of '=an', but the translation uses 'We' for the first clause and 'I' for the second and third clauses. The fourth-person suffix '=an' is consistently glossed as '4.S' but translated inconsistently as 'We' and 'I'. The fourth person can have inclusive or narrative first-person readings, but the inconsistency in translation is confusing without explanation.",
+    "quote": "m=\"oka=an a p tane poro=an wa inkar=an\"\ng=\"exist=4.S PFV NMLZ now grow.up=4.S CONJ look.around=4.S\"\ntr=\"[We] had been living — and now I had grown up and looked around.\"",
+    "suggestion": "Either use consistent first-person plural or singular in the translation, or add a note explaining the shift in reference (e.g., 'We' for the first clause as inclusive, 'I' for the narrative protagonist in the second).",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.S' is used for all verbs, but the translation '[We] had been living — and now I had grown up and looked around' uses first person plural and singular, suggesting a shift in person. The use of '4.S' throughout implies continuity, but the translation introduces 'I' after 'we', creating a mismatch.",
+    "quote": "exist=4.S PFV NMLZ now grow.up=4.S CONJ look.around=4.S",
+    "suggestion": "Revise translation to maintain consistency with '4.S' as a consistent fourth-person subject, e.g., '[We] had been living — and now we had grown up and looked around.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#031",
+  "chapter": "reference-tracking",
+  "lines": "229-234",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.A' for the prefix 'a=', but the free translation says 'She' (third person singular). The fourth-person prefix 'a=' is glossed as '4.A' but translated as 'She', which is a third-person singular referent. The fourth person in Ainu can refer to a third-person protagonist in narrative contexts, but the translation 'She' is ambiguous and does not reflect the fourth-person marking.",
+    "quote": "m=\"cep saranip or a=oma-re\"\ng=\"fish basket LOC 4.A=put.in-CAUS\"\ntr=\"She put the fish into the basket.\"",
+    "suggestion": "Change the translation to 'The protagonist put the fish into the basket.' or 'S/he put the fish into the basket.' to reflect the fourth-person marking, or add a note explaining that 'a=' here indexes the narrative protagonist.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.A' for the prefix 'a=', but the free translation says 'She' (third person singular). The fourth-person prefix 'a=' is glossed as '4.A' but translated as 'She'. This is inconsistent: the fourth person is not the same as third person singular. The translation should reflect the fourth-person reference (e.g., 'The protagonist put the fish into the basket.') or a note should explain the use of fourth person.",
+    "quote": "m=\"cep saranip or a=oma-re\"\ng=\"fish basket LOC 4.A=put.in-CAUS\"\ntr=\"She put the fish into the basket.\"",
+    "suggestion": "Change the translation to 'The protagonist put the fish into the basket.' or add a note explaining that 'a=' here indexes the narrative protagonist.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A' is used, but the fourth-person transitive subject is typically glossed as '4.S' or '4.AG'. The form 'a=oma-re' uses the prefix 'a=', which indexes the fourth-person transitive subject. '4.A' may be idiosyncratic; consistency with other examples (e.g., line 272) suggests '4.S' should be used for intransitive and transitive subject alike.",
+    "quote": "4.A=put.in-CAUS",
+    "suggestion": "Standardize to '4.S=put.in-CAUS' for consistency with other fourth-person subject glossing.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#020",
+  "chapter": "reference-tracking",
+  "lines": "264",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Nakagawa (2024) is 364. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to topic-fronting.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"364\" />; <Ref k=\"shibatani1990\" p=\"38–39\" />.",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation includes both a specific Discord attribution and a general `<Ref k=\"aynucorporadiscord\" />`. While not strictly incorrect, it's slightly redundant. The `‹corpus-confirmed›` grade might be considered strong for a single community source, though the text does state it's an 'asserted' observation.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024-11-09, asserted; <Ref k=\"aynucorporadiscord\" />) ‹corpus-confirmed›.",
+    "suggestion": "Consider removing the general `<Ref k=\"aynucorporadiscord\" />` if the specific Discord attribution is sufficient, or re-evaluate the evidence grade if it feels too strong for a single community observation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A single Discord attribution is tagged ‹corpus-confirmed›, which is inflated for a single community source that is itself marked 'asserted'.",
+    "quote": "nukopoli, aynu-corpora Discord, 2024-11-09, asserted; <Ref k=\"aynucorporadiscord\" />) ‹corpus-confirmed›.",
+    "suggestion": "Change ‹corpus-confirmed› to ‹corpus-suggested› or remove the epistemic tag entirely.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#011",
+  "chapter": "reference-tracking",
+  "lines": "164",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation includes both a specific Discord attribution and a general `<Ref k=\"aynucorporadiscord\" />`. While not strictly incorrect, it's slightly redundant. The `‹corpus-confirmed›` grade might be considered strong for a single community source, though the text does state it's an 'asserted' observation.",
+    "quote": "(thegodofneet, aynu-corpora Discord, 2024-07-04, asserted; <Ref k=\"aynucorporadiscord\" />) ‹corpus-confirmed›.",
+    "suggestion": "Consider removing the general `<Ref k=\"aynucorporadiscord\" />` if the specific Discord attribution is sufficient, or re-evaluate the evidence grade if it feels too strong for a single community observation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A single Discord attribution is tagged ‹corpus-confirmed›, which is inflated for a single community source that is itself marked 'asserted'.",
+    "quote": "thegodofneet, aynu-corpora Discord, 2024-07-04, asserted; <Ref k=\"aynucorporadiscord\" />) ‹corpus-confirmed›.",
+    "suggestion": "Change ‹corpus-confirmed› to ‹corpus-suggested› or remove the epistemic tag entirely, since the source is a single Discord message.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#002",
+  "chapter": "reference-tracking",
+  "lines": "31",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Sato (2025a) is 359-361, which is a subset of the range mentioned in the overview (359-371). This is not necessarily an error, but it's worth noting if the overview's range was intended to cover all points related to bound person indices.",
+    "quote": "<Ref k=\"sato2025a\" p=\"359–361\" />; <Ref k=\"bugaeva2012\" p=\"472\" />",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation 'bugaeva2012' refers to a 2012 source, but the book was written in 2025–2026. While not impossible, a 2012 source may be outdated compared to 2022–2025 sources. However, this is not a problem if the source is still authoritative. No factual error, but worth flagging for editorial consistency.",
+    "quote": "<Ref k=\"sato2025a\" p=\"359–361\" />; <Ref k=\"bugaeva2012\" p=\"472\" />",
+    "suggestion": "Verify that 'bugaeva2012' is the correct and most recent source; if not, update to a later work.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#001",
+  "chapter": "reference-tracking",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Sato (2025a) is attached to the end of the sentence, but the page range provided (359-371) covers the entire section discussed, not just the end. It might be more precise to attach it to the beginning of the sentence or the relevant claim.",
+    "quote": "; <Ref k=\"sato2025a\" p=\"359–371\" />.",
+    "suggestion": "Move the citation to the beginning of the sentence or re-evaluate if the page range is accurate for the entire claim.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation 'bugaeva2022' lacks a page locator, while 'sato2025a' includes one. This inconsistency may affect verifiability. In scholarly prose, when multiple sources are cited for a single claim, consistency in citation detail is expected.",
+    "quote": "<Ref k=\"bugaeva2022\" />; <Ref k=\"sato2025a\" p=\"359–371\" />",
+    "suggestion": "Add page numbers to 'bugaeva2022' if available, or confirm that the citation is meant to be general.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#038",
+  "chapter": "reference-tracking",
+  "lines": "267",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag '‹corpus-confirmed›' appears in the prose, which is inconsistent with scholarly presentation. These tags are meant for internal review, not final output.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "Replace with 'as confirmed in the corpus' or similar phrasing.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#037",
+  "chapter": "reference-tracking",
+  "lines": "164",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag '‹corpus-confirmed›' appears in the prose. Like '‹contested›', it should not be left as raw markup in the final text.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "Convert to prose, e.g., '(corpus-confirmed)' or 'as confirmed in the corpus'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#036",
+  "chapter": "reference-tracking",
+  "lines": "141",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag '‹contested›' appears in the running text. While these tags are used elsewhere, they should be integrated into the prose or placed in notes, not left as inline markup visible to readers.",
+    "quote": " ‹contested›",
+    "suggestion": "Integrate '‹contested›' into a parenthetical or footnote, e.g., '(this analysis is contested).'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#034",
+  "chapter": "reference-tracking",
+  "lines": "99-100",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'FIN' for both instances of 'na', but the first 'na' is a sentence-final particle ending the first sentence, and the second 'na' is a sentence-final particle ending the second sentence. The gloss does not distinguish between the two, which is acceptable but the note explicitly says 'two sentences', creating a minor inconsistency between the gloss structure and the note.",
+    "quote": "m=\"tan-pe topen-pe ne na ekasi ku=kore na\"\ng=\"DEM-NMLZ sweet-NMLZ COP FIN old.man 1SG.A=give FIN\"",
+    "suggestion": "Either separate the two sentences in the gloss (e.g., with a period or separate Ex elements) or adjust the note to say 'two clauses' instead of 'two sentences'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'FIN' for both instances of 'na', but the first 'na' is a sentence-final particle ending the first sentence, and the second 'na' is a sentence-final particle ending the second sentence. The gloss does not distinguish between the two, which is acceptable but the note explicitly says 'two sentences', creating a minor inconsistency between the gloss structure and the note.",
+    "quote": "m=\"tan-pe topen-pe ne na ekasi ku=kore na\"\ng=\"DEM-NMLZ sweet-NMLZ COP FIN old.man 1SG.A=give FIN\"",
+    "suggestion": "Either separate the two sentences in the gloss (e.g., with a period or separate Ex elements) or adjust the note to say 'two clauses' instead of 'two sentences'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'FIN' for both instances of 'na', but the first 'na' is a sentence-final particle ending the first sentence, and the second 'na' is a sentence-final particle ending the second sentence. The gloss does not distinguish between the two, which is acceptable but the note explicitly says 'two sentences', creating a minor inconsistency between the gloss structure and the note.",
+    "quote": "m=\"tan-pe topen-pe ne na ekasi ku=kore na\"\ng=\"DEM-NMLZ sweet-NMLZ COP FIN old.man 1SG.A=give FIN\"",
+    "suggestion": "Either separate the two sentences in the gloss (e.g., with a period or separate Ex elements) or adjust the note to say 'two clauses' instead of 'two sentences'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#029",
+  "chapter": "reference-tracking",
+  "lines": "355",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This cross-reference is presented as the sole support for the claim that a formal typological comparison is available. While it points to another section, it might be beneficial to have a direct citation to a source that provides this comparison, or to ensure the linked section itself contains such citations.",
+    "quote": "<Xr ch=\"hine-akusu-switch-reference\" />.",
+    "suggestion": "Ensure the linked section `<Xr ch=\"hine-akusu-switch-reference\" />` contains relevant citations for the formal typological comparison, or add a direct citation here if appropriate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#028",
+  "chapter": "reference-tracking",
+  "lines": "348",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The `‹consensus›` tag is applied to a statement about the differences mattering for comparison with adjacent languages. While this might be a consensus view among the authors, it's presented without direct citation within this sentence. The preceding sentence does cite sources for the mechanisms described.",
+    "quote": "‹consensus›.",
+    "suggestion": "Consider adding a citation to support the claim of consensus, or re-evaluate the evidence grade if it's not a widely established consensus.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#027",
+  "chapter": "reference-tracking",
+  "lines": "337",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2022) is given without a page number, and Refsing (1986) is also given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"bugaeva2022\" />; <Ref k=\"refsing1986\" />.",
+    "suggestion": "Add page numbers to the Bugaeva (2022) and Refsing (1986) citations if available and relevant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#026",
+  "chapter": "reference-tracking",
+  "lines": "329",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Sato (2025a) is 371. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to switch-reference.",
+    "quote": "<Ref k=\"bugaeva2022\" />; <Ref k=\"sato2025a\" p=\"371\" />.",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#024",
+  "chapter": "reference-tracking",
+  "lines": "313",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2022) is given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"bugaeva2022\" />.",
+    "suggestion": "Add page numbers to the Bugaeva (2022) citation if available and relevant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#023",
+  "chapter": "reference-tracking",
+  "lines": "304",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Refsing (1986) is given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"refsing1986\" />",
+    "suggestion": "Add page numbers to the Refsing (1986) citation if available and relevant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#022",
+  "chapter": "reference-tracking",
+  "lines": "284",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for ILCAA (1976) is given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"ilcaa1976\" />",
+    "suggestion": "Add page numbers to the ILCAA (1976) citation if available and relevant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#019",
+  "chapter": "reference-tracking",
+  "lines": "250",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Nakagawa (2024) is 363. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to location nouns.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"363\" />.",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#018",
+  "chapter": "reference-tracking",
+  "lines": "241",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (2022pos) is given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"nakagawa2022pos\" />.",
+    "suggestion": "Add page numbers to the Nakagawa (2022pos) citation if available and relevant.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2022) is given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"bugaeva2022\" />.",
+    "suggestion": "Add page numbers to the Bugaeva (2022) citation if available and relevant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#016",
+  "chapter": "reference-tracking",
+  "lines": "226",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (2022pos) is given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"nakagawa2022pos\" />; <Ref k=\"bugaeva2022\" />",
+    "suggestion": "Add page numbers to the Nakagawa (2022pos) citation if available and relevant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#015",
+  "chapter": "reference-tracking",
+  "lines": "210",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Bugaeva (2008) is 40-44. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to switch-reference.",
+    "quote": "<Ref k=\"bugaeva2008\" p=\"40–44\" />",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#013",
+  "chapter": "reference-tracking",
+  "lines": "189",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Nakagawa (2024) is 177-179. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to the fourth person's characterization.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"177–179\" />.",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#012",
+  "chapter": "reference-tracking",
+  "lines": "178",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Bugaeva (2008) is 40-44. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to logophoric use.",
+    "quote": "<Ref k=\"bugaeva2008\" p=\"40–44\" />",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Nakagawa (2024) is 470-471. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to logophoric use.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"470–471\" />.",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#009",
+  "chapter": "reference-tracking",
+  "lines": "138",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Nakagawa (2024) is 174-179. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to the fourth-person form-set.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"174–179\" />.",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Sato (2008) is 259-262, and for Sato (2004) is 179-184. These are not necessarily errors, but it's worth noting if the overview's range was intended to cover all points related to the fourth-person form-set.",
+    "quote": "<Ref k=\"sato2008\" p=\"259–262\" />; <Ref k=\"sato2004\" p=\"179–184\" /> ‹contested›.",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#008",
+  "chapter": "reference-tracking",
+  "lines": "127",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Bugaeva (2008) is 40-43, which is a subset of the range mentioned in the overview (40-43). This is not necessarily an error, but it's worth noting if the overview's range was intended to cover all points related to the fourth-person form-set.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"174–179\" />; <Ref k=\"bugaeva2008\" p=\"40–43\" />",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#006",
+  "chapter": "reference-tracking",
+  "lines": "61",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2022) is given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"bugaeva2022\" />",
+    "suggestion": "Add page numbers to the Bugaeva (2022) citation if available and relevant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#005",
+  "chapter": "reference-tracking",
+  "lines": "55",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Nakagawa (2024) is 364, which is a single page. This is not an error, but it's worth noting if the overview's range was intended to cover all points related to topic-fronting.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"364\" />; <Ref k=\"shibatani1990\" p=\"38–39\" />",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#004",
+  "chapter": "reference-tracking",
+  "lines": "49",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (2022pos) is given without a page number. If specific pages are available and relevant, they should be included for better precision.",
+    "quote": "<Ref k=\"nakagawa2022pos\" />; <Ref k=\"bugaeva2022\" />",
+    "suggestion": "Add page numbers to the Nakagawa (2022pos) citation if available and relevant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#003",
+  "chapter": "reference-tracking",
+  "lines": "43",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range for Bugaeva (2008) is 40-43, which is a subset of the range mentioned in the overview (40-43). This is not necessarily an error, but it's worth noting if the overview's range was intended to cover all points related to fourth-person indexing.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"174–179\" />; <Ref k=\"bugaeva2008\" p=\"40–43\" />",
+    "suggestion": "No change needed unless the overview range is found to be inaccurate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#039",
+  "chapter": "reference-tracking",
+  "lines": "285",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Untranslated Japanese text 'AA研アイヌ語資料' appears without translation or gloss. The chapter otherwise translates Japanese terms (e.g., 'uwepeker'), so this is inconsistent.",
+    "quote": "(Kawakami Matsuko, AA研アイヌ語資料, Saru [aa-irc/009#393])",
+    "suggestion": "Translate or gloss the Japanese: e.g., 'AA Research Institute Ainu Language Materials'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#030",
+  "chapter": "reference-tracking",
+  "lines": "99-100",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss line has 'FIN' for both instances of 'na', but the first 'na' is glossed as 'FIN' and the second 'na' is also glossed as 'FIN'. However, the first 'na' appears to be a sentence-final particle (FIN) and the second 'na' is also a sentence-final particle (FIN). This is consistent, but the note says 'two sentences' — the first 'na' ends the first sentence, and the second 'na' ends the second sentence. The gloss is correct, but the note's description of 'two sentences' is not reflected in the gloss line, which treats them as a single clause. This is a minor inconsistency between the note and the gloss structure.",
+    "quote": "m=\"tan-pe topen-pe ne na ekasi ku=kore na\"\ng=\"DEM-NMLZ sweet-NMLZ COP FIN old.man 1SG.A=give FIN\"",
+    "suggestion": "Either separate the two sentences in the gloss (e.g., with a period or separate Ex elements) or adjust the note to say 'two clauses' instead of 'two sentences'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'FIN' for both instances of 'na', but the first 'na' is a sentence-final particle ending the first sentence, and the second 'na' ends the second sentence. The gloss does not distinguish between the two, which is acceptable but the note explicitly says 'two sentences', creating a minor inconsistency between the gloss structure and the note.",
+    "quote": "m=\"tan-pe topen-pe ne na ekasi ku=kore na\"\ng=\"DEM-NMLZ sweet-NMLZ COP FIN old.man 1SG.A=give FIN\"",
+    "suggestion": "Either separate the two sentences in the gloss (e.g., with a period or separate Ex elements) or adjust the note to say 'two clauses' instead of 'two sentences'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#025",
+  "chapter": "reference-tracking",
+  "lines": "323",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the fourth-person suffix `=an` indexes the protagonist-narrator throughout both episodes. However, the gloss `g` for the example `oka=an a p tane poro=an wa inkar=an` shows `exist=4.S PFV NMLZ now grow.up=4.S CONJ look.around=4.S`. The `=an` suffix is consistently glossed as `4.S` (fourth-person subject). If the protagonist-narrator is consistently indexed by the fourth person, this is consistent. However, the previous section on 'Narrative first person' (lines 132-146) and 'Logophoric use in quotations' (lines 169-181) discusses the fourth person being used for the *story-internal protagonist* and the *reported speaker*, distinct from the *narrating voice*. The note's phrasing 'protagonist-narrator' could be interpreted as the same person acting as both protagonist and narrator, which might be confusing if the distinction between the fourth person and the first person (`ku=`) is crucial for tracking different discourse roles.",
+    "quote": "note=\"Constructed to illustrate the a p scene-boundary construction. The fourth-person suffix =an indexes the protagonist-narrator throughout both episodes; a p closes the preceding episode; tane 'now' opens the following one. Based on the pattern described by Bugaeva (2022).\"",
+    "suggestion": "Clarify the role of the protagonist-narrator in relation to the fourth-person indexing. Ensure it aligns with the distinction between the story-internal perspective (fourth person) and the framing narrator's voice (potentially first person) as discussed elsewhere in the chapter.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#021",
+  "chapter": "reference-tracking",
+  "lines": "275",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the narrator is tracked by `4.O`. However, the gloss `g` for the example `a=kor seta anakne i=sam ta arpa=an` shows `4.A=have dog TOP 4.O=near LOC go=4.S`. The `i=` prefix is glossed as `4.O` (fourth-person object), and the `=an` suffix is glossed as `4.S` (fourth-person subject). If the dog is the subject of `arpa=an` (it went), then `4.S` is correct for the dog. If the narrator is tracked by `4.O`, it implies the narrator is an object in a clause not shown or implied. The note's claim about the narrator being tracked by `4.O` seems inconsistent with the provided gloss and the structure of the example sentence, which focuses on the dog's action.",
+    "quote": "note=\"Constructed to illustrate anakne topic-fronting. The possessed NP a=kor seta 'my dog' is marked as topic; subsequent clauses maintain reference by zero anaphora, with the dog as subject (=4.S on intransitives) and the narrator tracked by 4.O.\"",
+    "suggestion": "Clarify how the narrator is tracked by `4.O` in this example. If `4.O` refers to the dog as an object in a different context, or if the narrator is an object in a subsequent clause not shown, this needs to be explained. If the note is incorrect, it should be revised.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#017",
+  "chapter": "reference-tracking",
+  "lines": "234",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'cep (fish) must be the theme'. However, the gloss `g` for the example is `fish basket LOC 4.A=put.in-CAUS`. The `4.A=` prefix indicates the agent (Subject) is fourth person, and the verb is causative. In a 'put into' scenario, the fish is typically the theme/patient, and the basket is the goal/location. The note's assertion that 'cep' *must* be the theme, while the basket is the goal, aligns with the semantics. However, the gloss `4.A=` for the agent is confusing if the sentence is meant to illustrate the *theme* being zero-indexed. The note implies the theme is zero, but the gloss indicates the agent is indexed.",
+    "quote": "note=\"Constructed to illustrate location-noun role assignment. The NP saranip or (basket + locative noun or 'inside') is unambiguously the Goal; cep (fish) must be the theme. Without or, both NPs would be semantically eligible for either argument role when both are zero-indexed.\"",
+    "suggestion": "Clarify the indexing in the gloss and note. If the theme is zero, the gloss should reflect that. If the agent is indexed as 4.A, the note should explain how this interacts with the zero-indexed theme and the location noun.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#014",
+  "chapter": "reference-tracking",
+  "lines": "193",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the Ainu fourth person applies to 'the honorific addressee' and 'the inclusive referent'. However, the previous section on 'Narrative first person' (lines 132-146) and 'Logophoric use in quotations' (lines 169-181) describe the fourth person as relating to the *story-internal protagonist* and the *reported speaker*, respectively. The 'inclusive referent' is mentioned in the context of Sato's analysis (line 140), which is marked as 'contested'. The inclusion of 'honorific addressee' here seems to be a new role not previously detailed in this chapter, potentially introducing an inconsistency or an unelaborated point.",
+    "quote": "The analogy does not constitute a category equivalence ‹contested›. Algonquian obviation is a grammaticalized noun-phrase category that applies systematically to any third-person participant ranked below the proximate in a referential hierarchy, independent of text type; the Ainu fourth person applies to a specific set of referential roles — the narrative protagonist, the honorific addressee, the inclusive referent, the reported speaker — without encoding a proximate/obviative hierarchy on nouns or noun phrases.",
+    "suggestion": "Clarify the roles covered by the fourth person, ensuring consistency with previous descriptions or elaborating on the 'honorific addressee' and 'inclusive referent' roles if they are indeed distinct functions of the fourth person in this context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reference-tracking~p1#010",
+  "chapter": "reference-tracking",
+  "lines": "155",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that `i=` indexes the narrator-protagonist as recipient, implying a first-person reference. However, the gloss `g` shows `4.O=pity 4.O=lodge CONJ 4.O=give`. The `4.` prefix indicates the fourth person, not the first person. This is a contradiction in how the index is interpreted.",
+    "quote": "note=\"The fourth-person object prefix i= indexes the narrator-protagonist as recipient across three chained predicates. In kamuy yukar, i= here tracks the protagonist's first-person reference within the story world.\"",
+    "suggestion": "Clarify whether `i=` in this context refers to the fourth person or the first person, and ensure the gloss and note are consistent.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

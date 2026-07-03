@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "8",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"41\" />; <Ref k=\"sato2008\" p=\"§2.3\" />; <Ref k=\"shiraishi2022\" p=\"§4.1\" />.",
+  "issue": "The citation for Sato 2008 uses a section number (§2.3) while others use page numbers; this may reflect inconsistent locator format for the same type of source.",
+  "suggestion": "Standardize locator format—either use page numbers for all or clarify if section numbers are intentional.",
+  "confidence": 0.9,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "67",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Nakagawa (2024: 25) characterizes Hokkaido Ainu as having relatively few phonemes and a straightforward syllable structure, noting that the five-vowel inventory is constant across all Hokkaido dialects — dialect differences are comparatively small.",
+  "issue": "The em dash creates a run-on sentence; it would be clearer as two sentences or with a semicolon.",
+  "suggestion": "Split into two sentences: '...all Hokkaido dialects. Dialect differences are comparatively small.'",
+  "confidence": 0.8,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "151",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "(Nakagawa 2024: 43.) The algorithm treats /y/ and /w/ as consonants, so",
+  "issue": "There is a period after the citation in parentheses, creating a double punctuation mark before the next sentence.",
+  "suggestion": "Remove the period after the citation: '(Nakagawa 2024: 43) The algorithm...'",
+  "confidence": 1,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "179",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"mat-ikor\" g=\"woman-treasure\" ain=\"macikor\" tr=\"women's possessions\" note=\"The underlying boundary mat|ikor resyllabifies to ma.ci.kor [ma.ʨi.kor] (CV.CV.CVC). The coda /t/ shifts to onset position and undergoes the obligatory t+i → [ʨi] palatalization. The same surface form is attested throughout the Saru corpus, e.g. usa macikor usa tamasay 'various women's treasures and bead-necklaces'.\" cite=\"nakagawa2024:36\" dial=\"SAR\" />",
+  "issue": "The gloss 'woman-treasure' does not match the free translation 'women's possessions' in number (singular vs plural) and word sense (compound vs possessive).",
+  "suggestion": "Revise gloss to 'women-treasure' or 'woman-possession' to align with translation.",
+  "confidence": 0.95,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "210",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<table>",
+  "issue": "In the table under 'Permitted coda consonants', the phoneme /c/ is referred to in prose as /c/ [ʨ], but the table uses /c/ without consistent bracketing of the IPA equivalent. Also, the example for /s/ includes <i lang=\"ain-Latn\">cis</i>, which may be better spelled <i lang=\"ain-Latn\">cís</i> to reflect pitch accent, though not strictly required.",
+  "suggestion": "Ensure consistent notation: either always include [ʨ] after /c/ in prose, or standardize representation. Orthographic consistency for <i lang=\"ain-Latn\">cis</i> is acceptable if unaccented, but verify against source.",
+  "confidence": 0.7,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "282",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (aomidori\\_cs\\_, 2023-12-05) ‹corpus-confirmed›",
+  "issue": "A Discord attribution is tagged with ‹corpus-confirmed›, which implies broader corpus validation, but a single user report does not meet that standard.",
+  "suggestion": "Change evidence grade to ‹speculative› or ‹community-observation› until corroborated.",
+  "confidence": 0.95,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "352",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-19)",
+  "issue": "Discord citation used for a claim about near-absence of /-ow/, tagged with ‹corpus-suggested›, but a single user report cannot support a negative frequency claim without broader data.",
+  "suggestion": "Reclassify as ‹speculative› or add qualifier like 'preliminary observation'.",
+  "confidence": 0.9,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "364",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-19)",
+  "issue": "Same issue as line 352: Discord user cited for a near-zero frequency claim about /-m/, tagged ‹corpus-suggested›, which overstates evidential support.",
+  "suggestion": "Revise evidence grade to ‹speculative› or note as preliminary.",
+  "confidence": 0.9,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "461",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-11) ‹corpus-suggested›",
+  "issue": "Discord citation supports a generalization about epenthetic vowel choice; tagging as ‹corpus-suggested› implies broader data than a single user provides.",
+  "suggestion": "Change to ‹speculative› or attribute more cautiously.",
+  "confidence": 0.85,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "371",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Among the starred onset+vowel combinations, /-c/ and /-h/ are also categorically excluded from coda position (see the preceding section), and the /-c/ exclusion from coda means that *-ac, *-ec, etc., are all absent.",
+  "issue": "The text says /-c/ and /-h/ are excluded from coda position, but earlier in section 'Permitted coda consonants' it correctly states only /c/ and /h/ are excluded. However, this sentence implies both are onset exclusions, which is incorrect. The confusion arises from ambiguous phrasing: 'starred onset+vowel combinations' refers to syllable onsets, but /-c/ and /-h/ are coda exclusions.",
+  "suggestion": "Rephrase to clarify: 'Although /c/ and /h/ are excluded from coda position, the absence of *-ac, *-ec, etc., follows from the coda restriction on /c/, not from onset constraints.'",
+  "confidence": 0.9,
+  "chapter": "syllable-template",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

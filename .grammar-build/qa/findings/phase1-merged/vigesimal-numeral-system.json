@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "vigesimal-numeral-system~p1#027",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "368-370",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example '31 things' is given as <i lang=\"ain-Latn\">sinep ikasma wanpe etuhotnep</i>. However, 31 = 1 + exceed + 30, and 30 is <i lang=\"ain-Latn\">wan etuhotne</i> (prenominal) or <i lang=\"ain-Latn\">wanpe etuhot</i> (counting-off). The form <i lang=\"ain-Latn\">wanpe etuhotnep</i> seems to combine the counting-off form <i lang=\"ain-Latn\">wanpe</i> with the numeral-noun form <i lang=\"ain-Latn\">etuhotnep</i> (which would be the numeral-noun form of <i lang=\"ain-Latn\">etuhotne</i>). But the prose says 'each component stands as an independent noun form', so <i lang=\"ain-Latn\">wanpe</i> is the numeral-noun form for 10 (things), and <i lang=\"ain-Latn\">etuhotnep</i> would be the numeral-noun form for 30 (things). However, the table does not list a numeral-noun form for 30; it only lists the prenominal form <i lang=\"ain-Latn\">wan etuhotne</i>. The numeral-noun form for 30 would presumably be <i lang=\"ain-Latn\">wanpe etuhotnep</i>? But the table at line 327 shows the prenominal form for 30 as <i lang=\"ain-Latn\">wan etuhotne</i>, not a numeral-noun form. The prose at line 369 gives <i lang=\"ain-Latn\">wanpe etuhotnep</i> as the numeral-noun form for 31 things, but this is not consistent with the table's presentation.",
+    "quote": "For composite numeral-noun phrases above 29, each component stands as an independent noun form: '31 things' is <i lang=\"ain-Latn\">sinep ikasma wanpe etuhotnep</i>",
+    "suggestion": "Either add the numeral-noun forms for odd decades to the table, or clarify that the form given is constructed by analogy.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example claims to mean '11 loads', but the structure 'sinep ikasma wan' (1 + exceed + 10) = 11 is correct; however, in the numeral-noun phrase, the decade should appear in its numeral-noun form. 'wan' should be 'wanpe' to match the pattern established in the table and earlier examples (e.g., 'etuhotnep' for 40).",
+    "quote": "<i lang=\"ain-Latn\">sinep ikasma wan sike</i>",
+    "suggestion": "Change to <i lang=\"ain-Latn\">sinep ikasma wanpe sike</i> for consistency with numeral-noun usage in composite phrases.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#006",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "205",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'three-NMLZ exceed ten day LOC' and the morpheme breakdown 're-p ikasma wan to ta' suggest a literal meaning of 'three exceeds ten day LOC'. The free translation 'on the thirteenth (day)' is a reasonable interpretation, but the gloss does not fully capture the 'exceed' component, which is key to the subtractive/additive structure described elsewhere.",
+    "quote": "tr=\"on the thirteenth (day)\"",
+    "suggestion": "Consider adding a gloss component that reflects 'exceed' or 'surpass' more directly, or ensure the note adequately explains this.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'three-NMLZ' for <i lang=\"ain-Latn\">re-p</i> is correct as a numeral-noun form. However, the note at line 209 says 'Here the numeral-noun form rep occurs as a free numeral expression rather than in apposition to a counted noun.' But the example shows <i lang=\"ain-Latn\">rep ikasma wan to ta</i>, where <i lang=\"ain-Latn\">rep</i> is followed by <i lang=\"ain-Latn\">ikasma wan</i> and then <i lang=\"ain-Latn\">to</i> 'day'. The structure is [rep ikasma wan] to ta, where the numeral phrase modifies <i lang=\"ain-Latn\">to</i>. The note says 'rather than in apposition to a counted noun', but <i lang=\"ain-Latn\">to</i> is the counted noun, and the numeral phrase is in apposition to it? Actually, the numeral phrase precedes the noun, which is the prenominal position, but <i lang=\"ain-Latn\">rep</i> is a numeral-noun form, not a prenominal. This is confusing: the numeral phrase <i lang=\"ain-Latn\">rep ikasma wan</i> is acting as a prenominal modifier to <i lang=\"ain-Latn\">to</i>, but it contains a numeral-noun form. This is a syntactic inconsistency with the earlier description that prenominals precede the noun directly.",
+    "quote": "m=\"re-p ikasma wan to ta\" g=\"three-NMLZ exceed ten day LOC\" tr=\"on the thirteenth (day)\"",
+    "suggestion": "Clarify the syntax: either note that the numeral-noun form can appear in the prenominal position in this construction, or re-analyze the example.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#004",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "135-136",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '-p' is used after vowel-final stems (1-5) and '-pe' after consonant-final stems (6-10). However, looking at the table, 'sinep' (1), 'tup' (2), 'rep' (3), 'inep' (4), 'asiknep' (5) all use '-p' or '-pe' after vowel-final stems (sine, tu, re, ine) or consonant-final stems (asikne). Similarly, 'iwanpe' (6), 'arwanpe' (7), 'tupesanpe' (8), 'sinepesanpe' (9), 'wanpe' (10) use '-pe' after consonant-final stems. The description of the distribution of -p/-pe seems inconsistent with the examples provided in the table.",
+    "quote": "The suffix -p (after vowel-final stems 1–5) and <i lang=\"ain-Latn\">-pe</i> (after consonant-final stems 6–10) are instances of the formal noun <A w=\"p\" gl=\"thing\" />",
+    "suggestion": "Re-examine the distribution of -p and -pe based on the table and revise the prose description accordingly.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '-iw' is a suppletive partner to '-n' for human referents (6-10). However, the table shows '-iw' for 6, 7, 8, 9, and '-n' for 1-5 and 20. This contradicts the claim that '-iw' is only for 6-10 and that '-n' is the same as in 'nen'. The table also shows '-n' for 20 ('hotnep'), not '-iw'.",
+    "quote": "The human counterparts <i lang=\"ain-Latn\">-n</i> and its suppletive partner <i lang=\"ain-Latn\">-iw</i> (6–10) are the same <i lang=\"ain-Latn\">-n</i> that appears in the interrogative <i lang=\"ain-Latn\">nen</i> 'who'",
+    "suggestion": "Clarify the distribution of '-n' and '-iw' for human referents, specifying which numbers use which suffix and how they relate to the '-n' in 'nen'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table shows that for 5 (<i lang=\"ain-Latn\">asikne</i>), the numeral-noun form is <i lang=\"ain-Latn\">asiknep</i> (line 85), which uses <i lang=\"ain-Latn\">-p</i> after a vowel-final stem. For 6 (<i lang=\"ain-Latn\">iwan</i>), the form is <i lang=\"ain-Latn\">iwanpe</i> (line 92), using <i lang=\"ain-Latn\">-pe</i> after a consonant-final stem. This is consistent. However, for 10 (<i lang=\"ain-Latn\">wan</i>), the form is <i lang=\"ain-Latn\">wanpe</i> (line 120), which is consonant-final, so <i lang=\"ain-Latn\">-pe</i> is correct. But the prose says 'stems 6–10' are consonant-final, which is correct for 6-9 and 10, but 5 is vowel-final and uses <i lang=\"ain-Latn\">-p</i>. The prose says '1–5' are vowel-final, which is correct for 1-4 and 5. No inconsistency here. However, the prose says 'stems 6–10' are consonant-final, but 10 (<i lang=\"ain-Latn\">wan</i>) is consonant-final, so that's fine. Actually, the issue is that the prose says 'stems 1–5' are vowel-final, but 5 (<i lang=\"ain-Latn\">asikne</i>) ends in 'e', which is a vowel, so that's fine. No inconsistency found. Let me re-check: the table shows for 5: prenominal <i lang=\"ain-Latn\">asikne</i>, numeral-noun <i lang=\"ain-Latn\">asiknep</i>. The stem is <i lang=\"ain-Latn\">asikne</i> (vowel-final), so <i lang=\"ain-Latn\">-p</i> is added. For 6: prenominal <i lang=\"ain-Latn\">iwan</i>, numeral-noun <i lang=\"ain-Latn\">iwanpe</i>. The stem is <i lang=\"ain-Latn\">iwan</i> (consonant-final), so <i lang=\"ain-Latn\">-pe</i> is added. This matches the prose. So no inconsistency. I'll remove this finding.",
+    "quote": "The suffix <i lang=\"ain-Latn\">-p</i> (after vowel-final stems 1–5) and <i lang=\"ain-Latn\">-pe</i> (after consonant-final stems 6–10)",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#016",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "484",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'six time' for 'iwan suy' is a direct translation, but the note explains that 'iwan' (cardinal 6) is used with the force of 'many/several'. The gloss could better reflect this extended meaning, or the note should be more prominent.",
+    "quote": "g=\"six time 4.A=ANTIP=call.out CONJ\"",
+    "suggestion": "Revise the gloss for 'iwan suy' to indicate the 'many/several' meaning, or ensure the note is clearly linked to the gloss.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'six' for <i lang=\"ain-Latn\">iwan</i> is accurate, but the free translation 'called out many times' reflects the intensifier use. The gloss should indicate this extended meaning, perhaps with a note or alternative gloss like 'many' or 'several'.",
+    "quote": "g=\"six time 4.A=ANTIP=call.out CONJ\"",
+    "suggestion": "Add a gloss tag such as 'six>many' or include a note in the example to clarify the semantic bleaching.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#010",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "285",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that in the counting-off form, 'wanpe etuhot' is used for 30. However, the table (lines 50, 66, 73, 80, 87, 94, 101, 108, 115, 122, 129) shows that for counting-off, the suffix '-p' or '-pe' is often dropped or altered (e.g., 'asik' instead of 'asikp', 'hot' instead of 'hotnep'). The form 'wanpe etuhot' for 30 seems to retain the '-pe' suffix from 'wanpe', which might be inconsistent with the general pattern of simplification in the counting-off form.",
+    "quote": "20 = <i lang=\"ain-Latn\">hot</i>, 30 = <i lang=\"ain-Latn\">wanpe etuhot</i>, 40 = <i lang=\"ain-Latn\">tuhot</i>",
+    "suggestion": "Verify the form 'wanpe etuhot' for 30 in the counting-off context and compare it to other examples in the table to ensure consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at line 129 shows the counting-off form for 20 as <i lang=\"ain-Latn\">hot</i> (bare root), which matches. However, the table at line 122 shows the counting-off form for 10 as <i lang=\"ain-Latn\">wan</i> (Chitose: <i lang=\"ain-Latn\">wanpe</i>). The prose at line 285 says 30 = <i lang=\"ain-Latn\">wanpe etuhot</i>, using <i lang=\"ain-Latn\">wanpe</i> (the Chitose counting-off form for 10) rather than <i lang=\"ain-Latn\">wan</i>. This is inconsistent with the table which gives <i lang=\"ain-Latn\">wan</i> as the Saru/Chitose counting-off form for 10, with a note that Chitose uses <i lang=\"ain-Latn\">wanpe</i>. The prose at line 285 does not specify the dialect, but the context is Saru–Chitose (the table caption at line 290 says 'Saru–Chitose'). So for Saru, the counting-off form for 10 is <i lang=\"ain-Latn\">wan</i>, but the prose uses <i lang=\"ain-Latn\">wanpe</i> for 30. This is a contradiction.",
+    "quote": "In the counting-off form, the bare root <i lang=\"ain-Latn\">hot</i> replaces <i lang=\"ain-Latn\">hotne</i>: 20 = <i lang=\"ain-Latn\">hot</i>, 30 = <i lang=\"ain-Latn\">wanpe etuhot</i>, 40 = <i lang=\"ain-Latn\">tuhot</i>",
+    "suggestion": "Either specify that the counting-off form for 30 uses the Chitose variant <i lang=\"ain-Latn\">wanpe</i>, or change to <i lang=\"ain-Latn\">wan etuhot</i> for Saru.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#009",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "266",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'ten toward-two-twenty' for 'wan e-tu-hotne' is a literal translation of the morphemes. While the note explains it as 'ten short of forty', the gloss itself could be more informative about the subtractive structure. The 'toward' gloss for 'e-' is correct but could be expanded upon in the note.",
+    "quote": "g=\"ten toward-two-twenty\"",
+    "suggestion": "Consider a gloss that better reflects the subtractive meaning, or ensure the note fully explains the 'toward' function of 'e-'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'toward-two-twenty' does not align with the morpheme breakdown m=\"wan e-tu-hotne\", where 'e-' is a prefix on 'tu', not a separate word. The gloss should reflect the prefixal nature of 'e-'.",
+    "quote": "g=\"ten toward-two-twenty\"",
+    "suggestion": "Change gloss to \"ten toward-(two-twenty)\" or \"ten toward-two²⁰\" to better reflect the morphological structure.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#005",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "144-145",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the choice between '-p' and '-n' for human referents is weak and neither is ungrammatical. However, the table shows '-n' or '-iw' consistently for human referents (e.g., 'sinen', 'tun', 'ren', 'inen', 'asiknen', 'iwaniw', 'arwaniw', 'tupesaniw', 'sinepesaniw') and '-p' or '-pe' for things (e.g., 'sinep', 'tup', 'rep', 'inep', 'asiknep', 'iwanpe', 'arwanpe', 'tupesanpe', 'sinepesanpe', 'wanpe'). This suggests a stronger, grammatical distinction rather than a weak one.",
+    "quote": "The choice between <i lang=\"ain-Latn\">-p</i> and <i lang=\"ain-Latn\">-n</i> for human referents is weak: <i lang=\"ain-Latn\">-p</i> is described as \"more brusque\" but neither is ungrammatical with persons",
+    "suggestion": "Reconcile the description of the choice between '-p' and '-n' with the clear pattern shown in the table.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at lines 48-49 labels the columns as 'numeral-noun, things (<i lang=\"ain-Latn\">-p/-pe</i>)' and 'numeral-noun, humans (<i lang=\"ain-Latn\">-n/-iw</i>)', implying a strict semantic distinction. The prose then says the choice is weak and <i lang=\"ain-Latn\">-p</i> can be used for humans. This is not a contradiction per se, but the table's labeling could be misleading if read without the prose caveat. However, the prose explicitly notes the weakness, so it's not a contradiction. I'll keep this as a low-severity note.",
+    "quote": "The choice between <i lang=\"ain-Latn\">-p</i> and <i lang=\"ain-Latn\">-n</i> for human referents is weak: <i lang=\"ain-Latn\">-p</i> is described as 'more brusque' but neither is ungrammatical with persons",
+    "suggestion": "Consider adding a footnote to the table noting that <i lang=\"ain-Latn\">-p</i> forms can also refer to humans, albeit with a brusque connotation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#002",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "122",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The entry for 'wan' in the counting-off column for 10 has a parenthetical note about Chitose. This might be better handled as a separate entry or a footnote for clarity.",
+    "quote": "wan (Chitose: wanpe)",
+    "suggestion": "Consider restructuring this entry for better clarity, perhaps by making it a separate row for Chitose or using a footnote.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of dialect variant: the Chitose variant is given in italics inside parentheses, while the main form is also in italics, creating visual redundancy and inconsistent presentation.",
+    "quote": "<i lang=\"ain-Latn\">wan</i> (Chitose: <i lang=\"ain-Latn\">wanpe</i>)",
+    "suggestion": "Use plain text for the parenthetical dialect variant: (Chitose: wanpe)",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#047",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "284",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form <i lang=\"ain-Latn\">wanpe</i> in the counting-off context contradicts the table in section 'roots-form-classes', where the counting-off form for 10 is given as <i lang=\"ain-Latn\">wan</i> (with <i lang=\"ain-Latn\">wanpe</i> noted only as a Chitose variant). Using <i lang=\"ain-Latn\">wanpe</i> here implies it is the standard counting-off form, which is inconsistent.",
+    "quote": "<i lang=\"ain-Latn\">wanpe etuhot</i>",
+    "suggestion": "Use <i lang=\"ain-Latn\">wan</i> instead of <i lang=\"ain-Latn\">wanpe</i> to maintain consistency with the earlier table unless specifically discussing Chitose dialect.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#024",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "190-198",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose says 11 uses <i lang=\"ain-Latn\">sine</i> (prenominal '1'), but the table at line 302 shows 11 as <i lang=\"ain-Latn\">sine ikasma wan</i>, which matches. However, the example at line 202-209 shows <i lang=\"ain-Latn\">rep ikasma wan</i> for 13, using the numeral-noun form <i lang=\"ain-Latn\">rep</i> instead of the prenominal <i lang=\"ain-Latn\">re</i>. The prose at line 193 says 13 = <i lang=\"ain-Latn\">re ikasma wan</i> (prenominal), but the example uses <i lang=\"ain-Latn\">rep</i> (numeral-noun). This is a contradiction: the prose describes the construction as using prenominals, but the example uses a numeral-noun form.",
+    "quote": "11 = <i lang=\"ain-Latn\">sine ikasma wan</i>, 13 = <i lang=\"ain-Latn\">re ikasma wan</i>, 19 = <i lang=\"ain-Latn\">sinepesan ikasma wan</i>",
+    "suggestion": "Either change the prose to note that the numeral-noun form can also be used, or change the example to use the prenominal form <i lang=\"ain-Latn\">re ikasma wan</i>.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#049",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "282",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sequence lists 20, 30, 40, but the pattern for 30 uses <i lang=\"ain-Latn\">wanpe</i>, which is not the standard counting-off form for 10 (which is <i lang=\"ain-Latn\">wan</i> in the table). This creates inconsistency with the earlier presentation.",
+    "quote": "In the counting-off form, the bare root <i lang=\"ain-Latn\">hot</i> replaces <i lang=\"ain-Latn\">hotne</i>: 20 = <i lang=\"ain-Latn\">hot</i>, 30 = <i lang=\"ain-Latn\">wanpe etuhot</i>, 40 = <i lang=\"ain-Latn\">tuhot</i>",
+    "suggestion": "Use <i lang=\"ain-Latn\">wan etuhot</i> for 30 to align with the base form unless dialectal variation is being specifically highlighted.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#048",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "500",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The hyphen in <i lang=\"ain-Latn\">-ko</i> is inconsistently used: in examples like <i lang=\"ain-Latn\">tutko</i> and <i lang=\"ain-Latn\">rerko</i>, it is not separated, suggesting it is a suffix, but the presentation as <i lang=\"ain-Latn\">-ko</i> might imply it is always written with a hyphen, which is not the case.",
+    "quote": "The combining form <i lang=\"ain-Latn\">-ko</i>",
+    "suggestion": "Clarify that <i lang=\"ain-Latn\">-ko</i> is a suffix that fuses phonologically, so forms like <i lang=\"ain-Latn\">tutko</i> are correct without a hyphen.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#046",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "10-11",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form <i lang=\"ain-Latn\">hotne</i> is given without a macron over the 'o'. In the table at line 126, it is also <i lang=\"ain-Latn\">hotne</i>. However, in the example at line 220, it is <i lang=\"ain-Latn\">hotne</i> as well. No macron inconsistency within the chapter. But the word 'Hokkaido' in line 7 is spelled without a macron, which is consistent with the chapter's style. No orthography issues found.",
+    "quote": "the integer 20 (<i lang=\"ain-Latn\">hotne</i>)",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#045",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "516-529",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence is very long and could be broken up. Also, the Japanese gloss 助数詞 is provided without translation, which may be opaque to non-Japanese readers.",
+    "quote": "Whether <i lang=\"ain-Latn\">-p/-pe</i> and <i lang=\"ain-Latn\">-n/-iw</i> constitute numeral classifiers depends on the criterion applied. Nakagawa's answer is unambiguous: Ainu has no numeral classifiers (助数詞) of the Sinitic type; quantification uses the prenominal plus noun directly, analogous to English counting, and the thing/person suffix pair is instead the native derivational contrast parallel to Japanese <span lang=\"ja\">ひとつ/ひとり</span>, a trait shared with the neighbouring Nivkh",
+    "suggestion": "Consider adding a translation or explanation of 助数詞.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#044",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "507-510",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The term 'head of animals' is a bit informal; 'head of livestock' or 'animals' would be clearer. Also, the em dash is used correctly.",
+    "quote": "The animal count noun <i lang=\"ain-Latn\">atuyta</i> is lexically restricted to Saru/Chitose and denotes 10 head of animals in Saru but 20 head in Chitose — a lexical split internal to the same dialect cluster",
+    "suggestion": null,
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#043",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "500-504",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the last two expressions' refers to <i lang=\"ain-Latn\">ine rerko</i> and <i lang=\"ain-Latn\">asikne rerko</i>, but these are the 4th and 5th expressions in the list, not the last two. The list has four items: <i lang=\"ain-Latn\">tutko</i>, <i lang=\"ain-Latn\">rerko</i>, <i lang=\"ain-Latn\">ine rerko</i>, <i lang=\"ain-Latn\">asikne rerko</i>. So 'the last two' is correct (the third and fourth). But the phrasing 'the last two expressions' could be misinterpreted as the final two of a longer list. It's fine.",
+    "quote": "Day-counting uses the combining form <i lang=\"ain-Latn\">-ko</i>: <i lang=\"ain-Latn\">tutko</i> '2 days', <i lang=\"ain-Latn\">rerko</i> '3 days', then <i lang=\"ain-Latn\">ine rerko</i> '4 days', <i lang=\"ain-Latn\">asikne rerko</i> '5 days'. In the last two expressions <i lang=\"ain-Latn\">rerko</i> has bleached from 'three-day-span' to a general 'days' noun",
+    "suggestion": null,
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#042",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "407-409",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The em dashes are used correctly, but the sentence is long and could be broken up for clarity.",
+    "quote": "The error of placing the numeral-noun form before the noun — <i lang=\"ain-Latn\">*sinep tuki</i> for 'one cup' instead of <i lang=\"ain-Latn\">sine tuki</i> or <i lang=\"ain-Latn\">tuki sinep</i> — is explicitly flagged as a common learner mistake",
+    "suggestion": null,
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#041",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "175",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The semicolon should be a period or the sentence should be restructured. The use of a semicolon after a tag is awkward.",
+    "quote": "These reconstructions are ‹speculative›; synchronically the forms are opaque roots.",
+    "suggestion": "Change to 'These reconstructions are speculative. Synchronically the forms are opaque roots.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#040",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "568",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag is visible in prose.",
+    "quote": "‹speculative›",
+    "suggestion": "Remove the tag or rephrase.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#039",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "555",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag is visible in prose.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "Remove the tag or rephrase.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#038",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "536",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag is visible in prose.",
+    "quote": "‹contested›",
+    "suggestion": "Remove the tag or rephrase.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#037",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "460",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag is visible in prose.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Remove the tag or rephrase.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#036",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "414",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag is visible in prose.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Remove the tag or rephrase.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag is visible in prose.",
+    "quote": "‹contested›",
+    "suggestion": "Remove the tag or rephrase.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#035",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "278",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is visible in prose.",
+    "quote": "but that extension is a modern coinage ‹speculative› and lies outside the attested system",
+    "suggestion": "Remove the tag or rephrase to 'but that extension is a modern coinage and lies outside the attested system'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#034",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "236-237",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is visible in prose. This is a pipeline register leak.",
+    "quote": "The 100-value <i lang=\"ain-Latn\">asiknehotnep</i> is independently confirmed ‹corpus-confirmed›",
+    "suggestion": "Remove the tag or rephrase to 'is independently confirmed by corpus evidence'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#033",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "175-176",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is used in prose, which is a pipeline register leak. The tags are meant for internal use and should not appear in the final text. However, the instructions say to report if they are 'visible in prose', which they are here.",
+    "quote": "These reconstructions are ‹speculative›; synchronically the forms are opaque roots.",
+    "suggestion": "Remove the tag or rephrase to 'These reconstructions are speculative; synchronically the forms are opaque roots.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#032",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "7-8",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Japanese glosses in parentheses (数連体詞, 数名詞, 数え上げ) are provided for the three categories. This is fine, but the chapter otherwise does not consistently provide Japanese glosses for technical terms. This could be seen as a register leak if the intended audience is English-speaking linguists, but it's not a major issue.",
+    "quote": "Hokkaido Ainu numerals fall into three grammatical categories — numeral prenominals (数連体詞), numeral nouns (数名詞), and a counting-off form (数え上げ)",
+    "suggestion": null,
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#022",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "566",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'kunkutu' for 10 in Sakhalin Ainu is presented as potentially an Itelmen loan. While this is noted as speculative, the form itself is not broken down or explained further in relation to the Ainu numeral system.",
+    "quote": "kunkutu",
+    "suggestion": "Provide a brief explanation or morpheme breakdown for 'kunkutu' if possible, or ensure the speculative nature is clearly linked to the form itself.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'sinetanku' for 100 in Sakhalin Ainu is presented as from Tungusic 'tanku'. The 'sine-' prefix is not explained in this context, making the form's structure unclear.",
+    "quote": "sinetanku",
+    "suggestion": "Provide a brief explanation or morpheme breakdown for 'sinetanku', clarifying the role of 'sine-'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#021",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "560",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'sineik' for 100 is mentioned for Yakumo and Obihiro. The etymology or structure of this form is not explained, making it difficult to understand its relation to other numeral forms.",
+    "quote": "sineik",
+    "suggestion": "Provide a brief explanation or morpheme breakdown for 'sineik' if possible.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'ik' for 100 is mentioned for Bihoro. The etymology or structure of this form is not explained, making it difficult to understand its relation to other numeral forms.",
+    "quote": "ik",
+    "suggestion": "Provide a brief explanation or morpheme breakdown for 'ik' if possible.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#020",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "550",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'sinehot' for 10 in Asahikawa is presented as decimal. This implies 'hot' means ten. However, the text also states that in decimal dialects, 'hot' takes the value of ten rather than twenty (line 19). This seems consistent, but the form 'sinehot' might be better explained as 'one-ten' rather than just presented as the form for ten.",
+    "quote": "sinehot",
+    "suggestion": "Clarify the structure of 'sinehot' as 'one-ten' to reinforce the decimal system explanation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'tuhot' for 20 in Asahikawa is presented as decimal. This implies 'hot' means ten. The form 'tuhot' would then mean 'two-ten'. This is consistent with the decimal system, but it might be helpful to explicitly state this breakdown.",
+    "quote": "tuhot",
+    "suggestion": "Explicitly state that 'tuhot' means 'two-ten' to reinforce the decimal system explanation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'rehot' for 30 in Asahikawa is presented as decimal. This implies 'hot' means ten. The form 'rehot' would then mean 'three-ten'. This is consistent with the decimal system, but it might be helpful to explicitly state this breakdown.",
+    "quote": "rehot",
+    "suggestion": "Explicitly state that 'rehot' means 'three-ten' to reinforce the decimal system explanation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'wanhot' for 100 in Sōya is presented as decimal ('ten-ten'). This is consistent with the decimal system. However, the form 'wan' itself means 10 in the vigesimal system (line 119). This could be confusing if not clearly distinguished.",
+    "quote": "wanhot",
+    "suggestion": "Ensure the distinction between 'wan' (10 in vigesimal) and its use in 'wanhot' (100 in decimal) is clear.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#015",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "477",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'noiwan' as an intensified variant of 'iwan suy' meaning 'many times'. The morpheme breakdown or etymology of 'noiwan' is not provided, making its connection to 'iwan' less clear.",
+    "quote": "noiwan",
+    "suggestion": "Provide a morpheme breakdown or brief explanation for 'noiwan' to clarify its relationship to 'iwan'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#014",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "452",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'hekattar' is presented as the plural of 'hekaci' with the '-utar' suffix. However, the base form 'hekaci' ends in a vowel, and the '-utar' suffix is described as an associative plural. The resulting form 'hekattar' seems to have an extra 't' compared to a direct application of the suffix (e.g., 'hekaciutar'). This might be a phonetic assimilation or a specific rule for this noun.",
+    "quote": "tu hekattar (&lt; <i lang=\"ain-Latn\">hekaci-utar</i>)",
+    "suggestion": "Verify the form 'hekattar' and its derivation from 'hekaci-utar', and potentially add a note explaining any phonetic changes.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#011",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "369",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'etuhotnep' for 31 in the example 'sinep ikasma wanpe etuhotnep' appears to have an extra '-p' or '-pe' suffix compared to the base form 'etuhotne' (line 254) and the table entry (line 327). This might be a typo or an instance of the numeral-noun form being used in a composite phrase.",
+    "quote": "sinep ikasma wanpe etuhotnep",
+    "suggestion": "Check if 'etuhotnep' is the correct form for '31 things' or if it should be 'etuhotne'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example for '31 things' uses 'sinep ikasma wanpe etuhotnep', which seems to use the numeral-noun form 'sinep' and 'wanpe' and 'etuhotnep'. The example for '11 loads' uses 'sinep ikasma wan sike'. The consistency of using the numeral-noun form ('-p'/'pe') in these composite phrases should be checked against the general rules for numeral-noun usage.",
+    "quote": "sinep ikasma wanpe etuhotnep; <i lang=\"ain-Latn\">sinep ikasma wan sike</i>",
+    "suggestion": "Ensure the use of numeral-noun forms in these composite phrases is consistent with the grammar rules presented elsewhere.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#003",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The entry for 'hot' in the counting-off column for 20 is described as a 'bare root'. This might be clearer if it explicitly stated what it's a bare root *of* (e.g., 'bare root of hotne').",
+    "quote": "hot (bare root)",
+    "suggestion": "Clarify 'bare root' in relation to 'hotne'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#001",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "87",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'asik' for 5 in the counting-off column appears to be missing a final vowel or suffix compared to other entries in the same column (e.g., 'sinep', 'tup', 'rep').",
+    "quote": "asik",
+    "suggestion": "Check if 'asik' is the correct form or if it should be 'asikp' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#031",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "566-568",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that the root is 'plausibly an Itelmen loan' is tagged ‹speculative› and attributed to a Discord message. This is appropriate, but the citation of the Discord message alone without a published source for the Itelmen connection is weak. The tag is correct, but the reliance on a single Discord source for a speculative claim is a citation hygiene issue.",
+    "quote": "Sakhalin Ainu is decimal throughout <Ref k=\"sakaguchi2022\" />. The root for 10 is <i lang=\"ain-Latn\">kunkutu</i>, plausibly an Itelmen loan ‹speculative› <Ref k=\"aynucorporadiscord\" /> (antitwilight, aynu-corpora Discord, 2024-11-22)",
+    "suggestion": "Consider adding a published source for the Itelmen loan hypothesis if one exists, or note that this is a community speculation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#030",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "458-463",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is attributed to a Discord message that itself attributes the observation to Satō. The epistemic tag ‹corpus-suggested› is used, but the source is a secondary report of Satō's work, not a direct corpus citation. The tag should be ‹speculative› or the original source should be cited directly.",
+    "quote": "Small, specified numbers (2, 3) take singular verb agreement; six or more, or unspecified plurals, take plural agreement <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-17, attributed to Satō) ‹corpus-suggested›; this is consistent with Refsing's numeral syntax data <Ref k=\"refsing1986\" p=\"117\" />.",
+    "suggestion": "Change the tag to ‹speculative› or cite Satō's original work if available.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#029",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "414-417",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is used, but the claim is that it is 'undocumented' and 'open', not that it is contested between sources. The tag ‹contested› implies there are conflicting claims in the literature, but the text says it's simply undocumented. A more appropriate tag would be ‹speculative› or no tag.",
+    "quote": "Whether a modifier can intervene between a head noun and its following numeral-noun is undocumented: Satō notes that no such example appears in his data and flags the question as open <Ref k=\"sato2008\" p=\"256\" /> ‹contested›.",
+    "suggestion": "Change ‹contested› to ‹speculative› or remove the tag.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#028",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "406-413",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that the construction is 'arguably more so than its Japanese near-counterpart' is attributed to a Discord message (nukopoli, 2024-12-12) and Refsing (1986). The epistemic tag ‹corpus-suggested› is applied to the whole claim, but the Discord source is a community observation, not a corpus. The tag should be ‹speculative› or the attribution should be clarified.",
+    "quote": "The error of placing the numeral-noun form before the noun ... is explicitly flagged as a common learner mistake <Ref k=\"nakagawa2024\" p=\"465\" />. The [noun + postposed numeral-noun + verb] construction ... has been noted as productive — arguably more so than its Japanese near-counterpart <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-12); <Ref k=\"refsing1986\" p=\"116\" /> ‹corpus-suggested›.",
+    "suggestion": "Change the tag to ‹speculative› or rephrase to attribute the comparison explicitly to the Discord contributor.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#026",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "252-256",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at lines 325-358 shows the same forms, but the table at line 337 shows 50 as <i lang=\"ain-Latn\">wan erehotne</i>, which matches. However, the table at line 347 shows 70 as <i lang=\"ain-Latn\">wan einehotne</i>, and line 357 shows 90 as <i lang=\"ain-Latn\">wan easiknehotne</i>. The prose at line 256 says <i lang=\"ain-Latn\">wan easiknehotne</i> for 90, but the table shows <i lang=\"ain-Latn\">wan easiknehotne</i> as well. No inconsistency here. However, the prose at line 254 says <i lang=\"ain-Latn\">wan etuhotne</i> for 30, but the table at line 327 shows <i lang=\"ain-Latn\">wan etuhotne</i>. That's consistent. But note: the prose at line 254 says 'ten toward forty' for 30, but the literal meaning is 'ten toward two-twenty' (40). The gloss in the example at line 266 says 'ten toward-two-twenty' for 30, which is correct. No inconsistency.",
+    "quote": "Odd decades are subtractive. The pattern is <i lang=\"ain-Latn\">wan</i> + the prefix <i lang=\"ain-Latn\">e-</i> + the next even decade: <i lang=\"ain-Latn\">wan etuhotne</i> = 30; <i lang=\"ain-Latn\">wan erehotne</i> = 50; <i lang=\"ain-Latn\">wan einehotne</i> = 70; <i lang=\"ain-Latn\">wan easiknehotne</i> = 90.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#025",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "231-235",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at line 362 shows 100 as <i lang=\"ain-Latn\">asiknehotne</i>, which matches. However, the prose at line 236 says 'The 100-value <i lang=\"ain-Latn\">asiknehotnep</i> is independently confirmed', using a form with <i lang=\"ain-Latn\">-p</i> suffix. The table and the earlier prose use <i lang=\"ain-Latn\">asiknehotne</i> without <i lang=\"ain-Latn\">-p</i>. This is inconsistent: is the prenominal form <i lang=\"ain-Latn\">asiknehotne</i> or <i lang=\"ain-Latn\">asiknehotnep</i>? The table says <i lang=\"ain-Latn\">asiknehotne</i>, but the prose mentions <i lang=\"ain-Latn\">asiknehotnep</i> as a confirmed form.",
+    "quote": "Even decades from 40 to 100 are multiplicative: ... <i lang=\"ain-Latn\">asiknehotne</i> (5×20=100)",
+    "suggestion": "Clarify that <i lang=\"ain-Latn\">asiknehotne</i> is the prenominal form and <i lang=\"ain-Latn\">asiknehotnep</i> is the numeral-noun form, or correct the inconsistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#023",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "10-11",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at line 126 gives the prenominal form for 20 as <i lang=\"ain-Latn\">hotne</i>, but the counting-off form at line 129 is <i lang=\"ain-Latn\">hot</i> (bare root). The prose at line 10 says 'the integer 20 (<i lang=\"ain-Latn\">hotne</i>)' without noting that this is only the prenominal form, which could mislead readers into thinking <i lang=\"ain-Latn\">hotne</i> is the only form for 20.",
+    "quote": "the integer 20 (<i lang=\"ain-Latn\">hotne</i>) serving as the base of a vigesimal counting system",
+    "suggestion": "Add a note that <i lang=\"ain-Latn\">hotne</i> is the prenominal form; the counting-off form is <i lang=\"ain-Latn\">hot</i>.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#019",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "526-527",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the Handbook labels 'to' and 'suy' as 'word-classifiers' and speculates about earlier systems. However, the previous paragraph (lines 516-522) quotes Nakagawa as stating Ainu has no numeral classifiers of the Sinitic type, and Refsing calling '-p(e)' and '-n/-iw' 'rudimentary classifiers'. This creates a contradiction in how 'to' and 'suy' are categorized and whether Ainu has classifiers at all.",
+    "quote": "The Handbook goes further, applying the label \"word-classifiers\" to <i lang=\"ain-Latn\">to</i> 'X days' and <i lang=\"ain-Latn\">suy</i> 'X times', and speculates about remnants of an earlier, more elaborate classifier system",
+    "suggestion": "Clarify the differing views on classifiers, specifically how 'to' and 'suy' are treated by different sources and how this relates to Nakagawa's and Refsing's definitions.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#018",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "508",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'atuyta' denotes 10 head in Saru and 20 head in Chitose. However, the previous section (lines 10-14) established that Saru-Chitose Ainu uses a vigesimal system. This implies that 'atuyta' should consistently represent 20 head in both Saru and Chitose if they are part of the same vigesimal dialect cluster. The claim of 10 in Saru contradicts the established vigesimal base for that dialect.",
+    "quote": "denotes 10 head of animals in Saru but 20 head in Chitose — a lexical split internal to the same dialect cluster",
+    "suggestion": "Reconcile the stated value of 'atuyta' (10 in Saru) with the established vigesimal base of the Saru-Chitose dialect.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#017",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "502",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'rerko' means '3 days' (line 501) and is derived from 're' (3). However, in the examples for 4 and 5 days ('ine rerko', 'asikne rerko'), 'rerko' is described as having bleached to a general 'days' noun. This implies that 'rerko' itself is not directly representing '3 days' in these constructions, but rather a general 'day span'. This could be clearer if the initial definition of 'rerko' was more nuanced or if the bleaching process was explained earlier.",
+    "quote": "ine rerko '4 days', <i lang=\"ain-Latn\">asikne rerko</i> '5 days'. In the last two expressions <i lang=\"ain-Latn\">rerko</i> has bleached from 'three-day-span' to a general 'days' noun",
+    "suggestion": "Clarify the initial meaning of 'rerko' to better set up its bleached usage in 'ine rerko' and 'asikne rerko'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#013",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "430",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme breakdown 're-n' is glossed as 'three-HUM.NMLZ'. The note clarifies that 're-n' is 'three-human'. The gloss 'HUM.NMLZ' is a bit vague; it would be clearer to specify 'HUMAN.NUMERAL.NOUN.SUFFIX' or similar, especially since the text elsewhere discusses the distinction between numeral nouns and classifiers.",
+    "quote": "m=\"re-n a=ne wa oka=an\"",
+    "suggestion": "Clarify the gloss for 're-n' to be more specific about its function as a human numeral-noun suffix.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#012",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "403",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'the head noun takes the prenominal form alone (re kamuy 'three bears')'. However, the prenominal form of 'three' is 're', not 'rep'. The form 'rep' is the numeral-noun form. This creates a contradiction in the explanation.",
+    "quote": "The prenominal construction *re kamuy rep would be redundant; the head noun takes the prenominal form alone (re kamuy 'three bears') or the postposed numeral-noun alone (kamuy rep 'bears, three').",
+    "suggestion": "Correct the note to state that the head noun takes the prenominal form of the numeral (e.g., 're kamuy' for 'three bears').",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#008",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "242",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme breakdown 'asikne-hotne-n' is glossed as 'five-twenty-HUM.NMLZ'. The note clarifies that 'asikne-hotne-n' means '5 x 20 = 100' and that '-n' is the human numeral-noun suffix. The gloss 'HUM.NMLZ' is a bit ambiguous; it might be better to specify 'HUMAN.NUMERAL.NOUN.SUFFIX' or similar for clarity.",
+    "quote": "m=\"asikne-hotne-n asir cise or ta uekarpa\"",
+    "suggestion": "Clarify the gloss for '-n' to be more specific about its function as a human numeral-noun suffix.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vigesimal-numeral-system~p1#007",
+  "chapter": "vigesimal-numeral-system",
+  "lines": "222",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'nine year exceed twenty year' for 'sinepesan pa ikasma hotne pa' is confusing. The morpheme breakdown 'sinepesan pa ikasma hotne pa' indicates 'nine year exceed twenty year'. The free translation 'twenty-nine years old' is correct, but the gloss seems to be a literal, word-for-word translation that doesn't reflect the grammatical structure or meaning as well as it could. 'pa' is glossed as 'year' in the gloss, but the note says it's repeated after each numeral component in this age expression, implying it might function differently than a simple noun.",
+    "quote": "g=\"nine year exceed twenty year\"",
+    "suggestion": "Revise the gloss to better reflect the grammatical structure and meaning, or ensure the note fully clarifies the role of 'pa'.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

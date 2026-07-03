@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "92",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "The term <A w=\"sakehe\" gl=\"refrain; the sake of —\" />",
+  "issue": "The gloss 'the sake of —' appears to be a literal or erroneous parsing of the word 'sakehe' as 'sake + he', but the term is defined as 'refrain' and the example shows it is not analyzable as 'sake (beverage) + of'. This creates confusion between homophonous forms.",
+  "suggestion": "Revise gloss to 'refrain' only, or clarify that 'the sake of —' is a folk etymology not supported by analysis.",
+  "confidence": 0.9,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "183-185",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"hancikiki sakehe ci=kar\" g=\"(refrain) sake 1PL.EXCL.A=make\" tr=\"[HANCIKIKI] — we made sake\"",
+  "issue": "The gloss for 'hancikiki' is given as '(refrain)' but is not aligned with any morpheme in the 'm' string; it should either be marked as a separate refrain unit or omitted from the gloss line. Additionally, 'ci=kar' is glossed as '1PL.EXCL.A=make', but the free translation uses 'we made', which does not distinguish exclusivity, potentially obscuring a grammatical feature.",
+  "suggestion": "Adjust gloss to include a placeholder for the refrain, e.g., 'REFRAIN sake 1PL.EXCL.A=make', or split the refrain from the narrative clause. Clarify exclusivity in translation if possible.",
+  "confidence": 0.95,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "194-196",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the same narrative situation (marlin-tuna confrontation) carries sakehe <i>tusunapanu</i> in Saru (Biratori), <i>tussay turi tussay matu</i> in Horobetsu, and <i>nissō</i> in Chitose",
+  "issue": "The table on lines 34–39 lists 'kamuy yukar' as having a 'fixed refrain per story', but this passage shows that the same story-type has different refrains across regions, contradicting the claim of 'fixedness'. The contradiction is not acknowledged in the text.",
+  "suggestion": "Revise either the table or this passage to clarify that 'fixed per story' means fixed within a tradition, not across all traditions.",
+  "confidence": 0.98,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "220",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"rep\" gl=\"keep time\" /> / <A w=\"repni\" gl=\"rhythm-stick\" />",
+  "issue": "The forms 'rep' and 'repni' are not consistently macronized. If the underlying form includes a long vowel (e.g., *rēp*), it should be marked; otherwise, consistency in romanization should be maintained.",
+  "suggestion": "Check dialect sources for vowel length and apply macrons consistently, or confirm absence and retain as-is.",
+  "confidence": 0.7,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "240",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa proposes that it originally <strong>indicated the protagonist</strong>: the refrain was an identifying tag that signalled whose voice or experience was being narrated <Ref k=\"endo2022\" p=\"§2.4.2\" />, reporting Nakagawa 2001b: 7 ‹contested›.",
+  "issue": "The citation attributes Nakagawa's claim to Endo (2022), who reports it, but the epistemic tag ‹contested› is applied to the claim itself. However, the source (Nakagawa 2001b) is not directly cited, only reported secondhand, which weakens evidential support.",
+  "suggestion": "Clarify that the claim is secondhand and consider adjusting epistemic tag or citing Nakagawa directly if available.",
+  "confidence": 0.85,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "253-254",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "carries a long sakehe (<i lang=\"ain-Latn\">manayta sanke tar panke tar kocupu</i>) but an unusually short narrative body",
+  "issue": "The phrase 'unusually short narrative body' lacks a clear antecedent or metric for comparison. It is vague and could be misinterpreted.",
+  "suggestion": "Specify what 'unusually short' means in measurable terms (e.g., number of lines, duration) or relative to genre norms.",
+  "confidence": 0.8,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "332",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "of 90 non-refrain lines, 14 are four-syllable lines; of these 14, twelve carry initial accent on the first syllable",
+  "issue": "The phrase 'initial accent on the first syllable' contradicts the scansion table below, where 'kí-wa-tap-ne' and 'c-é-a-hun-ke' are marked with first accent on the first syllable (●○○○), but the earlier lines 'si-né-a-mam-pus' and 'ci-tá-ta-ta-ta' have accent on the second syllable (○●○○○), which violates the 'accent-orientation' claim.",
+  "suggestion": "Revise either the description or the scansion to align: either acknowledge non-initial accents as exceptions or correct the scansion.",
+  "confidence": 0.9,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "414",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "accent orientation: divine epic (kamuy yukar), heroic epic (yukar; both systems)",
+  "issue": "The table claims that both divine and heroic epics use accent orientation, but earlier text (e.g., line 205) states that yukar has personal, variable melody and lacks a fixed refrain, suggesting less formal constraint. The inclusion of 'both systems' for yukar contradicts the earlier genre distinction.",
+  "suggestion": "Clarify whether 'accent orientation' applies to yukar and under what conditions, or revise the table to reflect genre differences.",
+  "confidence": 0.95,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "452",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">ルウェサニウンクㇽ</i>",
+  "issue": "The use of katakana without a Latin transcription or macronized romanization creates inconsistency with the rest of the chapter, which uses Latin script with macrons.",
+  "suggestion": "Provide a macronized Latin transcription (e.g., 'ruwesan iunkur') for consistency.",
+  "confidence": 0.8,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "480",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The Iburi dialect tradition, canonically represented by Chiri Yukie's <Ref k=\"chiri1923\" />",
+  "issue": "The citation 'chiri1923' is used without a page locator, despite the reference being a collection of texts. The claim about consistent use of 'ci=' across the collection requires textual range support.",
+  "suggestion": "Add a page range or note that the pattern is observed throughout the collection.",
+  "confidence": 0.85,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

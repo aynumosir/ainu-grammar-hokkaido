@@ -1,0 +1,478 @@
+[
+ {
+  "id": "copula-ne-predicate-nominals~p1#005",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "193",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'not addressed by any read source' is meta-commentary. The tag ‹original-needs-review› is also a pipeline tag.",
+    "quote": "Whether Hokkaido Ainu morphosyntactically\n        distinguishes specificational from identificational readings is not addressed by any read\n        source ‹original-needs-review›.",
+    "suggestion": "Rephrase to state that no read source addresses this distinction. Remove the ‹original-needs-review› tag.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline term 'read source' and internal tag ‹original-needs-review› appear in the prose.",
+    "quote": "Whether Hokkaido Ainu morphosyntactically distinguishes specificational from identificational readings is not addressed by any read source ‹original-needs-review›.",
+    "suggestion": "Replace 'read source' with 'source in the literature' and remove the tag.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The editorial tag ‹original-needs-review› appears again in the prose, indicating a failure to filter internal review markers before publication.",
+    "quote": "‹original-needs-review›",
+    "suggestion": "Remove the tag from the text.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#004",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "155",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'The read sources do not apply...' and 'the following typology is editorial synthesis... not a claim drawn from any single source' are meta-commentary about the research process rather than prose for the reader. The tag ‹original-needs-review› is also a pipeline tag.",
+    "quote": "The read sources do not apply the Higgins four-way\n        classificational/specificational/identificational grid; the following typology is editorial\n        synthesis from the attested data, not a claim drawn from any single source\n        ‹original-needs-review›.",
+    "suggestion": "Rephrase to state that the typology is a synthesis of attested data, without referring to 'read sources' or 'editorial synthesis'. Remove the ‹original-needs-review› tag.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline terms 'read sources', 'editorial synthesis', and the internal tag ‹original-needs-review› appear in the prose, which is inappropriate for the final published text.",
+    "quote": "The read sources do not apply the Higgins four-way classificational/specificational/identificational grid; the following typology is editorial synthesis from the attested data, not a claim drawn from any single source ‹original-needs-review›.",
+    "suggestion": "Rewrite to remove pipeline language, e.g. 'The attested uses fall into three functional types. The Higgins four-way grid is not applied in the literature; the typology below is based on the attested data.' Remove the tag.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The editorial tag ‹original-needs-review› is exposed in the main text. This is a pipeline register leak and should not appear in the final prose.",
+    "quote": "‹original-needs-review›",
+    "suggestion": "Remove ‹original-needs-review› from the visible text; retain only as metadata if needed.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#009",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "451",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Shibatani labels 'oray' a 'plural suppletive copula form' and then immediately dismisses this as 'conflating the existential plural with the copula'. This implies Shibatani's analysis is incorrect, but the example given ('we were in my village') is a locational sentence, which is typically handled by the existential verb, not the copula. The text seems to be misinterpreting or misrepresenting Shibatani's classification of 'oray' in this context.",
+    "quote": "Shibatani, by contrast, files the locational clause\n        <i lang=\"ain-Latn\">ku-kor kotan ta oray-as</i> 'we were in my village' under \"Copular\n        sentences\" and labels <i lang=\"ain-Latn\">oray</i> a \"plural suppletive copula form\"\n        <Ref k=\"shibatani1990\" p=\"19\" /> — conflating the existential plural with the copula ‹contested›.",
+    "suggestion": "Clarify the relationship between Shibatani's classification of 'oray' and the existential/copula distinction. If 'oray' is indeed an existential form, explain why Shibatani might have misclassified it or why the text interprets it as such.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that oray is unattested as a copula in the Hokkaido corpus (line 454), yet Shibatani explicitly labels it a copula form. This creates a contradiction between the claim and the cited source.",
+    "quote": "labels oray a \"plural suppletive copula form\"",
+    "suggestion": "Clarify that Shibatani's analysis contradicts corpus evidence, rather than presenting it as a simple mislabeling.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#007",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "355",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'No read grammar catalogues the behaviour' and 'flags it as a genuine micro-gap in the description' are meta-commentary. The citation <Ref k=\"aynucorporadiscord\" /> is also used with a ‹speculative› tag, which is appropriate for community observations.",
+    "quote": "No read grammar catalogues\n        the behaviour; Satō 2008: 22 attests the idiom without commenting on its person-marking\n        pattern. A community observation (nukopoli, aynu-corpora Discord, 2023-12-25) flags it as a\n        genuine micro-gap in the description, noting only that the reason is unclear",
+    "suggestion": "Rephrase to state that the behavior is not catalogued in grammars. Remove the phrase 'genuine micro-gap in the description'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline term 'read grammar' appears in the prose.",
+    "quote": "No read grammar catalogues the behaviour",
+    "suggestion": "Replace with 'No published grammar catalogues the behaviour' or 'No grammar in the literature catalogues the behaviour'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#002",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "28",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"sato2008\" p=\"20–21\" /> is placed after the claim about argument structure determining the distribution of 'ne', but the page range '20-21' might not fully cover this specific point about argument structure. It might only cover the requirement of 'ne'.",
+    "quote": "The distribution is determined by argument structure: <i lang=\"ain-Latn\">ne</i> is required\n        <Ref k=\"sato2008\" p=\"20–21\" />; <Ref k=\"refsing1986\" p=\"145\" />. Ijäs's pedagogical grammar",
+    "suggestion": "Verify if pages 20-21 of Sato (2008) explicitly discuss argument structure determining the distribution of 'ne', or adjust the citation.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Two citations are attached to a single claim, but the second citation (refsing1986:145) does not support the full 'when and only when' biconditional. Refsing 1986:145 states that ne requires a nominal complement, but does not explicitly state that nominals require ne — the reverse direction is not confirmed by this source.",
+    "quote": "The distribution is determined by argument structure: ne is required when and only when the predicate is a nominal <Ref k=\"sato2008\" p=\"20–21\" />; <Ref k=\"refsing1986\" p=\"145\" />.",
+    "suggestion": "Separate the claims or provide independent support for the reverse implication.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#014",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "172–183",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'You are a foreigner' has a non-referential complement ('foreigner' denotes a kind, not a specific individual), contradicting the description that both NPs are referential. This example is actually classificational, not equative/identificational.",
+    "quote": "Equative / identificational: both subject and complement are referential noun phrases placed in an identity relation (Refsing1986 p.145):\n\n<Ex m=\"Eani anak repunkur ne\" g=\"2SG TOP foreigner COP\" tr=\"You are a foreigner.\" cite=\"refsing1986:145\" dial=\"SHI\" />",
+    "suggestion": "Either replace the example with a true equative (e.g. 'That person is John') or revise the description to match the example (e.g. 'equative/attributive' or 'identificational/class-membership').",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#020",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "123",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent labeling: other rows use person terms (1SG, 2SG), but this uses '3 (zero)'. Should be '3SG' or '3' consistently.",
+    "quote": "3 (zero)",
+    "suggestion": "Use '3SG' for consistency with '1SG', '2SG'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#018",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "357",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent punctuation around the date: one instance has comma before date, another does not (e.g., line 279: 'Discord 2024-11-13').",
+    "quote": "aynu-corpora Discord, 2023-12-25",
+    "suggestion": "Standardize format: either 'Discord, YYYY-MM-DD' or 'Discord YYYY-MM-DD'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#017",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "279",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent capitalization of 'Discord' — earlier it is 'aynu-corpora Discord', later 'aynu-corpora discord'. Should be standardized.",
+    "quote": "aynu-corpora Discord",
+    "suggestion": "Use consistent casing, e.g., 'aynu-corpora Discord' throughout.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#016",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "74",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› is visible in the prose. These tags are meant to be metadata, not part of the rendered text.",
+    "quote": "‹contested›",
+    "suggestion": "Remove visible ‹contested› from the text; ensure it is only used as metadata.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#015",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "99–134",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table header specifies 'Saru/Chitose' dialects, but the examples for 2SG and 3 are from Refsing (likely Shizunai dialect, as indicated by dial='SHI' elsewhere in the chapter). This creates a mismatch between the header and the data.",
+    "quote": "<th>person (Saru/Chitose)</th>",
+    "suggestion": "Either change the header to 'person (Saru/Chitose, Shizunai)' or ensure all examples are from Saru/Chitose sources.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#006",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "284",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"hoppertraugott2003\" paren /> is attached to the claim about the cross-linguistic attestation of grammaticalization pathways. The `paren` attribute suggests it's a parenthetical citation, but the sentence structure doesn't immediately indicate it's a parenthetical remark.",
+    "quote": "The grammaticalization\n        pathway from 'be' to a translative/result marker is cross-linguistically well attested\n        <Ref k=\"hoppertraugott2003\" paren />. The conjunctive particle",
+    "suggestion": "Ensure the citation is correctly formatted for its intended use (e.g., if it's meant to be a parenthetical citation, ensure the surrounding text supports that).",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#003",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "74",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that 'All analyses agree on the morphological reflex' is followed by a citation <Ref k=\"kindaichi1936\" /> with an epistemic tag ‹contested›. This creates a contradiction: if Kindaichi's analysis is contested, it's not accurate to say *all* analyses agree, especially regarding the historical classification.",
+    "quote": "All\n        analyses agree on the morphological reflex: the 1SG prefix on\n        <i lang=\"ain-Latn\">ne</i> is <i lang=\"ain-Latn\">ku=</i> (A set), not\n        <i lang=\"ain-Latn\">en=</i> (O set).",
+    "suggestion": "Remove the ‹contested› tag from the Kindaichi citation or rephrase the sentence to exclude Kindaichi from the 'all analyses agree' statement.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#001",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "10",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"§4.2.2\" /> is attached to the sentence describing the conflation of homophones, but the page number §4.2.2 does not seem to directly support this specific claim about conflation, only the frequency of 'an'.",
+    "quote": "The count conflates several homophones — the predicate-nominal\n        copula, a mutative case postposition, and anaphoric/interrogative roots — but the copular use",
+    "suggestion": "Verify if §4.2.2 discusses the conflation of homophones or if a different citation is needed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#021",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "130",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example includes 'atuy kor kamuy' glossed as 'he is the sea-god', but the gloss in the table only shows 'a=' for 'he'. The complement 'atuy kor kamuy' ('great sea god') is not fully represented in the gloss or analysis.",
+    "quote": "atuy kor kamuy a=ne",
+    "suggestion": "Ensure full complement is reflected in gloss or example description.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#019",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "405",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'track-POSS' for 'ru-we', but the free translation does not reflect possession. The example translates as 'I am an Ainu', not something involving 'track' or possession. The glossed element 'ruwe' (from ru 'track') is a formal noun here, but the translation does not make that evident.",
+    "quote": "g=\"Ainu 1SG.A=COP track-POSS COP\"",
+    "suggestion": "Revise tr to reflect the full structure, e.g., 'I am an Ainu, as per my lineage/track' or add a literal translation to clarify.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#013",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "468–474",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline terms 'read sources', 'read source', 'editorial synthesis', and internal tag ‹original-needs-review› appear in the prose.",
+    "quote": "The read sources use 'equative' and 'attributive/class-membership' as the descriptive labels for the semantic range of ne (Refsing1986 p.145; Nakagawa2022pos p.474). No source applies the Higgins-style four-way grid to Ainu, and no read source tests whether Hokkaido Ainu morphosyntactically distinguishes a specificational from an identificational reading. The three-way table in §Semantic readings is editorial synthesis ‹original-needs-review›.",
+    "suggestion": "Rewrite to remove pipeline language, e.g. 'The literature uses \"equative\" and \"attributive/class-membership\" as the descriptive labels... No source applies the Higgins-style four-way grid to Ainu, and no source tests whether Hokkaido Ainu morphosyntactically distinguishes a specificational from an identificational reading. The three-way table in §Semantic readings is based on the attested data.' Remove the tag.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#012",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "453–454",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline term 'read source' appears in the prose.",
+    "quote": "The form oray does not appear in the Hokkaido corpus as a copula and is unattested in that function in any other read source ‹corpus-suggested›",
+    "suggestion": "Replace 'read source' with 'source consulted' or 'published source'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#011",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "485",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that the broader question is 'pursued in <Xr ch=\"person-marking-architecture\" />' is followed by the epistemic tag ‹contested›. This implies that the discussion in the linked chapter is contested, but the current sentence presents it as a straightforward continuation.",
+    "quote": "The broader question is pursued in\n        <Xr ch=\"person-marking-architecture\" /> ‹contested›.",
+    "suggestion": "Rephrase to indicate that the broader question is *also* a topic of contestation, or that the linked chapter addresses the contested aspects of this question.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#010",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "474",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'editorial synthesis' is meta-commentary. The tag ‹original-needs-review› is a pipeline tag.",
+    "quote": "The three-way table in §<em>Semantic readings</em> is editorial synthesis\n        ‹original-needs-review›.",
+    "suggestion": "Rephrase to state that the table synthesizes attested data. Remove the ‹original-needs-review› tag.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "copula-ne-predicate-nominals~p1#008",
+  "chapter": "copula-ne-predicate-nominals",
+  "lines": "434",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the terminological disagreement 'has no consequence for the glossing conventions used in this grammar' and that the grammar follows Nakagawa (2024) in treating 'ne' as a 2-place verb sub-typed COP. However, the section title is 'Competing analyses of ne', and the preceding paragraph discusses these competing analyses, implying that the disagreement *does* have consequences for how the analyses are presented and understood, even if the glossing convention is standardized.",
+    "quote": "Practically, all analyses\n        converge on the same morphological facts: A-set prefixes only, no O prefix, no sentence-final\n        use without a complement. The terminological disagreement — whether to call\n        <i lang=\"ain-Latn\">ne</i> a copula subtype of the verb, a distinct 指定詞, or simply a\n        transitive-type verb — has no consequence for the glossing conventions used in this grammar\n        (which follow <Ref k=\"nakagawa2024\" p=\"132\" /> in treating it as a 2-place verb sub-typed COP).",
+    "suggestion": "Rephrase the sentence to clarify that while the *glossing convention* is standardized, the *analyses themselves* differ and are discussed.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

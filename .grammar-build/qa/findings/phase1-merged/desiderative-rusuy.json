@@ -1,0 +1,706 @@
+[
+ {
+  "id": "desiderative-rusuy~p1#027",
+  "chapter": "desiderative-rusuy",
+  "lines": "114",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This epistemic tag reads as a production metadata annotation (listing a proposer and a Discord source) rather than a standard in-text grading. It breaks the reader's flow and belongs in a footnote or endnote.",
+    "quote": "‹proposed, nukopoli, aynu-corpora Discord 2024›",
+    "suggestion": "Move the attribution to a prose footnote or a parenthetical citation: '… a lead consistent with the typological profile of head-marking, nominalization-dependent languages (proposed by nukopoli, aynu-corpora Discord 2024-11-25).'",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag includes a username and date in parentheses, which appears to be a pipeline artifact or incomplete rendering. The standard format uses only the username and date in the citation, not repeated in the tag.",
+    "quote": "‹proposed, nukopoli, aynu-corpora Discord 2024›",
+    "suggestion": "Change to ‹proposed› and keep full attribution in the citation: (nukopoli, aynu-corpora Discord 2024-11-25).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#003",
+  "chapter": "desiderative-rusuy",
+  "lines": "51, 52, 53",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.S' for '=an' is not fully explained in the note or elsewhere. While the note mentions 'Fourth-person (indefinite) subject', the gloss could be more explicit, e.g., '4.S.SUBJ' or 'IND.SUBJ'.",
+    "quote": "m=\"inkar=an rusuy\"\ng=\"look=4.S DES\"\ntr=\"One wants to look; one has a wish to see.\"",
+    "suggestion": "Clarify the gloss for '=an' to '4.S.SUBJ' or 'IND.SUBJ' to better reflect its function as a subject marker.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.S' in the example corresponds to fourth person singular, but the note explains it as 'fourth-person (indefinite) subject' with generic or narrator's first-person reference. The gloss should reflect '4.INDEF' or similar to align with the note.",
+    "quote": "inkar=an rusuy",
+    "suggestion": "Revise gloss from '4.S' to '4.INDEF' to match the semantic explanation in the note.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#024",
+  "chapter": "desiderative-rusuy",
+  "lines": "297",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Chinese characters '要' are not italicized, while the pinyin 'yào' is. For consistency, the characters should also be italicized.",
+    "quote": "Chinese 要 (yào)",
+    "suggestion": "Italicize '要'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'mokor', 'rusuy', 'cis', and 'rusuy' are not italicized, while other Ainu forms in the text are. For consistency, these should be italicized.",
+    "quote": "mokor rusuy 'want to sleep / be getting sleepy' and cis rusuy 'want to cry / be about to cry'",
+    "suggestion": "Italicize 'mokor', 'rusuy', 'cis', and 'rusuy'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "These Ainu phrases are not italicized, inconsistent with the book's treatment of Ainu forms in prose.",
+    "quote": "mokor rusuy … cis rusuy",
+    "suggestion": "Apply <i lang=\"ain-Latn\"> tags: <i lang=\"ain-Latn\">mokor rusuy</i>, <i lang=\"ain-Latn\">cis rusuy</i>.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#004",
+  "chapter": "desiderative-rusuy",
+  "lines": "70, 71",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized here, while 'arpa' is. For consistency, 'rusuy' should also be italicized.",
+    "quote": "arparusuy 'want to go' (from arpa 'go (SG)' + rusuy)",
+    "suggestion": "Italicize 'rusuy' in this instance.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized here, while 'ipe' is. For consistency, 'rusuy' should also be italicized.",
+    "quote": "iperusuy 'want to eat a meal' (from ipe 'eat a meal' + rusuy)",
+    "suggestion": "Italicize 'rusuy' in this instance.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The fused form 'arparusuy' lacks hyphenation or indication of fusion boundary, while other fused forms like 'sinotca-easkay' include a hyphen. Inconsistent formatting.",
+    "quote": "arparusuy",
+    "suggestion": "Use consistent hyphenation: 'arpa-rusuy' to match the pattern in 'sinotca-easkay'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The fused form 'iperusuy' lacks hyphenation, unlike 'sinotca-easkay'. This creates inconsistency in how fused forms are presented.",
+    "quote": "iperusuy",
+    "suggestion": "Use hyphen: 'ipe-rusuy' for consistency with other lexicalized forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#022",
+  "chapter": "desiderative-rusuy",
+  "lines": "278, 279",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized, while 'V' and 'ruwe ne' are. For consistency, 'rusuy' should be italicized.",
+    "quote": "V rusuy ruwe ne",
+    "suggestion": "Italicize 'rusuy'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized, while 'V' and 'ruwe ne' are. For consistency, 'rusuy' should be italicized.",
+    "quote": "ruwe ne V rusuy",
+    "suggestion": "Italicize 'rusuy'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Ainu words in this paragraph are not italicized, whereas elsewhere in the chapter they are consistently given with <i lang=\"ain-Latn\"> tags.",
+    "quote": "rusuy scopes over the resulting aspectual complex … V rusuy ruwe ne … nankor … kusu ne",
+    "suggestion": "Add italic markup to all Ainu forms in this paragraph: <i lang=\"ain-Latn\">rusuy</i>, <i lang=\"ain-Latn\">nankor</i>, <i lang=\"ain-Latn\">kusu ne</i>, etc.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#010",
+  "chapter": "desiderative-rusuy",
+  "lines": "156",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that the distinction rests on Nakagawa's descriptive note is marked as 'corpus-suggested', which seems contradictory. A descriptive note from a source is usually considered direct evidence, not something suggested by the corpus.",
+    "quote": "the distinction rests on Nakagawa's descriptive note ‹corpus-suggested›.",
+    "suggestion": "Change the evidence grade from 'corpus-suggested' to 'corpus-confirmed' or 'consensus' if the note is a direct description, or re-evaluate if 'corpus-suggested' is indeed the correct grade.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is used for a claim that explicitly cites a published descriptive grammar (Nakagawa 2024). The grade suggests tentative corpus evidence, but the source is an authoritative grammar; the tag should be ‹corpus-confirmed› or the description adjusted.",
+    "quote": "the distinction rests on Nakagawa's descriptive note ‹corpus-suggested›",
+    "suggestion": "Either change the tag to ‹corpus-confirmed› or revise the prose to clarify why the evidence is considered merely suggestive.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#006",
+  "chapter": "desiderative-rusuy",
+  "lines": "93, 94, 95",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A' for 'ku=' is not explicitly defined in this chapter, though it's a common gloss for first-person agent. The translation 'I want to eat (it)' implies a transitive verb 'eat', but the gloss only shows '1SG.A=eat'. The object is implied but not glossed.",
+    "quote": "m=\"ku=e rusuy\"\ng=\"1SG.A=eat DES\"\ntr=\"I want to eat (it).\"",
+    "suggestion": "Consider adding a note or clarifying the gloss for '1SG.A' if it's not defined elsewhere in the book. Alternatively, ensure the gloss for 'e' reflects its transitive nature if it's not inherently transitive.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.A=eat DES' uses 'eat' as the root gloss, but the linked dictionary form <A w=\"ipe\" gl=\"eat a meal\" /> suggests a more specific lexical item. The verb 'e' may not be the same as 'ipe', risking a mismatch.",
+    "quote": "ku=e rusuy",
+    "suggestion": "Verify whether 'e' is correctly glossed as 'eat' or should align with a more precise form like 'ipe'. If distinct, adjust gloss or clarify.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#029",
+  "chapter": "desiderative-rusuy",
+  "lines": "300",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The date in the attribution (2024-11-29) does not match the earlier nukopoli citation date (2024-11-25), creating an internal contradiction in community source attributions.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024-11-29)",
+    "suggestion": "Verify and standardize the date across both mentions of nukopoli's contribution to match the correct Discord post date.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#031",
+  "chapter": "desiderative-rusuy",
+  "lines": "266",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The verb 'nukar' appears without macron, while standard Ainu orthography typically marks long vowels. Should be 'nūkar' or 'nukar' consistently across the chapter.",
+    "quote": "somo ku=nukar rusuy",
+    "suggestion": "Check consistency of vowel length marking for 'nukar' throughout the chapter and apply macrons if required by the romanization standard used.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#030",
+  "chapter": "desiderative-rusuy",
+  "lines": "180",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sentence ends with a period inside the quotation mark, but then continues with unquoted prose, creating a punctuation error.",
+    "quote": "e.g. cep ku=kor rusuy 'I want a/the fish'. rusuy is in its auxiliary function; kor takes the normal person prefix.",
+    "suggestion": "Place the period outside the closing quote: 'I want a/the fish'. rusuy...",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#026",
+  "chapter": "desiderative-rusuy",
+  "lines": "305, 306",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kusu ne' is not italicized, while other Ainu forms in the text are. For consistency, this should be italicized.",
+    "quote": "kusu ne",
+    "suggestion": "Italicize 'kusu ne'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#025",
+  "chapter": "desiderative-rusuy",
+  "lines": "301, 302",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'rusuy' and 'rawe' are not italicized, while other Ainu forms in the text are. For consistency, these should be italicized.",
+    "quote": "rusuy and rawe",
+    "suggestion": "Italicize 'rusuy' and 'rawe'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#023",
+  "chapter": "desiderative-rusuy",
+  "lines": "284, 285",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'nankor' and 'kusu ne' are not italicized, while other Ainu forms in the text are. For consistency, these should be italicized.",
+    "quote": "nankor and kusu ne",
+    "suggestion": "Italicize 'nankor' and 'kusu ne'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#021",
+  "chapter": "desiderative-rusuy",
+  "lines": "270",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized here, while 'V' is. For consistency, 'rusuy' should be italicized.",
+    "quote": "somo negates the V rusuy predicate as a unit.",
+    "suggestion": "Italicize 'rusuy'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#019",
+  "chapter": "desiderative-rusuy",
+  "lines": "250",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that the account rests on independently documented behavior of both components is marked as 'corpus-suggested'. This seems to imply that the combination itself is suggested by the corpus, rather than the behavior of the components. If the behavior of the components is well-documented, the claim about the combination might be considered 'corpus-confirmed' or 'consensus'.",
+    "quote": "the account here rests on the independently documented behaviour of both components ‹corpus-suggested›.",
+    "suggestion": "Re-evaluate the evidence grade. If the behavior of both components is well-documented, 'corpus-confirmed' or 'consensus' might be more appropriate for the claim about their combination.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#018",
+  "chapter": "desiderative-rusuy",
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e-' is not italicized, while 'arpa' is. For consistency, 'e-' should be italicized.",
+    "quote": "The applicative prefix e- introduces a goal or beneficiary argument to the intransitive motion verb arpa 'go (SG)'.",
+    "suggestion": "Italicize 'e-'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#016",
+  "chapter": "desiderative-rusuy",
+  "lines": "219, 220",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized in the 'construction' column, while 'kor' is. For consistency, 'rusuy' should be italicized.",
+    "quote": "kor 'have, possess'\nkor rusuy",
+    "suggestion": "Italicize 'rusuy'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#015",
+  "chapter": "desiderative-rusuy",
+  "lines": "213, 214",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'iperusuy' is not italicized, while 'ipe' is. For consistency, 'iperusuy' should be italicized.",
+    "quote": "ipe 'eat a meal'\niperusuy (fused)",
+    "suggestion": "Italicize 'iperusuy'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#014",
+  "chapter": "desiderative-rusuy",
+  "lines": "207, 208",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'arparusuy' is not italicized, while 'arpa' is. For consistency, 'arparusuy' should be italicized.",
+    "quote": "arpa 'go (SG)'\narparusuy (fused)",
+    "suggestion": "Italicize 'arparusuy'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#013",
+  "chapter": "desiderative-rusuy",
+  "lines": "201, 202",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized in the 'construction' column, while 'inkar' is. For consistency, 'rusuy' should be italicized.",
+    "quote": "inkar 'look'\ninkar rusuy",
+    "suggestion": "Italicize 'rusuy'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#012",
+  "chapter": "desiderative-rusuy",
+  "lines": "180",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'cep', 'ku=kor', and 'rusuy' are not italicized, while other Ainu forms in the text are. For consistency, these should be italicized.",
+    "quote": "A nominal object precedes kor in the full clause: e.g. cep ku=kor rusuy 'I want a/the fish'.",
+    "suggestion": "Italicize 'cep', 'ku=kor', and 'rusuy'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#009",
+  "chapter": "desiderative-rusuy",
+  "lines": "143, 144",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized in the 'shape' column, while 'V' was italicized in the row above. For consistency, 'rusuy' should be italicized.",
+    "quote": "rusuy alone or with object\non rusuy itself",
+    "suggestion": "Italicize 'rusuy' in the 'shape' column.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#008",
+  "chapter": "desiderative-rusuy",
+  "lines": "137, 138",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is not italicized in the 'shape' column, while 'V' is. For consistency, 'rusuy' should be italicized.",
+    "quote": "V rusuy\non V; rusuy invariant",
+    "suggestion": "Italicize 'rusuy' in the 'shape' column.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#007",
+  "chapter": "desiderative-rusuy",
+  "lines": "110, 111, 112",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'ku=e rusuy' and 'ku=e easkay' are italicized, but 'kuni' is not. For consistency, 'kuni' should also be italicized.",
+    "quote": "ku=e rusuy, ku=e easkay, and the kuni nominalization",
+    "suggestion": "Italicize 'kuni'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#005",
+  "chapter": "desiderative-rusuy",
+  "lines": "74, 75",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sinotca-easkay' is not italicized, while other Ainu forms in the surrounding text are. This suggests an inconsistency.",
+    "quote": "sinotca-easkay",
+    "suggestion": "Italicize 'sinotca-easkay'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#002",
+  "chapter": "desiderative-rusuy",
+  "lines": "37, 38, 39",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese terms '表74' and '本来的な助動詞' are not italicized, while other Ainu and Japanese terms in the text are. This suggests a potential inconsistency in handling non-Ainu terms.",
+    "quote": "Nakagawa groups rusuy in 表74 alongside a, aan, nankor, easirki, and several further items as 本来的な助動詞 (proper auxiliaries of the Saru dialect).",
+    "suggestion": "Italicize '表74' and '本来的な助動詞' for consistency with other foreign terms, or ensure all such terms are consistently unitalicized.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#001",
+  "chapter": "desiderative-rusuy",
+  "lines": "10, 11, 12, 13",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is inconsistently italicized. It should either be consistently italicized or consistently not italicized when referred to as a form.",
+    "quote": "V rusuy",
+    "suggestion": "Ensure consistent italicization for Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#028",
+  "chapter": "desiderative-rusuy",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation for Bugaeva (2012) lacks page numbers in the prose despite being cited for a specific claim about person marking, while Nakagawa's citation includes detailed pages. This creates inconsistency in citation support.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"306, 312–313\" />; <Ref k=\"bugaeva2012\" p=\"493\" />.",
+    "suggestion": "Add page number(s) to the Bugaeva citation if available, or ensure both sources are cited with equal specificity.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#020",
+  "chapter": "desiderative-rusuy",
+  "lines": "265, 266, 267",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A' for 'ku=' is not explicitly defined in this chapter. The translation 'I do not want to see (it)' implies a transitive verb 'see', but the gloss only shows '1SG.A=see'. The object is implied but not glossed.",
+    "quote": "m=\"somo ku=nukar rusuy\"\ng=\"NEG 1SG.A=see DES\"\ntr=\"I do not want to see (it).\"",
+    "suggestion": "Consider adding a note or clarifying the gloss for '1SG.A' if it's not defined elsewhere in the book. Ensure the gloss for 'nukar' reflects its transitive nature if it's not inherently transitive.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#017",
+  "chapter": "desiderative-rusuy",
+  "lines": "237, 238, 239",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A' for 'ku=' is not explicitly defined in this chapter. The translation 'I want to go to/for it' implies a goal/beneficiary argument introduced by the applicative, but this is not explicitly reflected in the gloss.",
+    "quote": "m=\"ku=e-arpa rusuy\"\ng=\"1SG.A=APPL-go DES\"\ntr=\"I want to go to/for it.\"",
+    "suggestion": "Consider adding a note or clarifying the gloss for '1SG.A' if it's not defined elsewhere in the book. Ensure the gloss for 'e-' accurately reflects its function in introducing a new argument.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "desiderative-rusuy~p1#011",
+  "chapter": "desiderative-rusuy",
+  "lines": "176, 177, 178",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A' for 'ku=' is not explicitly defined in this chapter. The translation 'I want it' implies a transitive verb 'have', but the gloss only shows '1SG.A=have'. The object 'it' is implied but not glossed.",
+    "quote": "m=\"ku=kor rusuy\"\ng=\"1SG.A=have DES\"\ntr=\"I want it.\"",
+    "suggestion": "Consider adding a note or clarifying the gloss for '1SG.A' if it's not defined elsewhere in the book. Ensure the gloss for 'kor' reflects its transitive nature if it's not inherently transitive.",
+    "confidence": 0.5
+   }
+  ]
+ }
+]

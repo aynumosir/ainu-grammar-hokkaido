@@ -1,0 +1,26 @@
+[
+ {
+  "lines": "9",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "904 attested and constructed examples across the grammar",
+  "issue": "Paragraph claims 904 examples, but summing the example counts in the source table (lines 16–66) gives 775, and the dialect table (lines 80–90) also sums to 775.",
+  "suggestion": "Either correct the claim to 775 or add the missing sources/examples that account for the 129-example gap.",
+  "confidence": 0.95,
+  "chapter": "index-of-examples-sources-dialects",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "57,58",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<tr><td>Satō (2009)</td><td>5</td><td>... <tr><td>Satō (2009)</td><td>1</td><td>...",
+  "issue": "Same source key 'Satō (2009)' appears twice with different example counts and different chapter lists, implying two distinct works but with an ambiguous label.",
+  "suggestion": "Disambiguate the two works by appending a, b (e.g., Satō (2009a) and Satō (2009b)).",
+  "confidence": 0.85,
+  "chapter": "index-of-examples-sources-dialects",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

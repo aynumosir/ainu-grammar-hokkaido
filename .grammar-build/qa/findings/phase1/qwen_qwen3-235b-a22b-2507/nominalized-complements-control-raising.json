@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "17",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"p\" gl=\"(thing)\" /> ~ <A\n\t\t\tw=\"pe\"\n\t\t\tgl=\"(thing/person)\"",
+  "issue": "Inconsistent hyphenation and line breaks in the markup for the variant forms 'p' and 'pe'. The same form is presented with a tilde and line breaks, which may cause formatting drift.",
+  "suggestion": "Standardize the presentation of p ~ pe as a single inline expression without line breaks: <A w=\"p\" gl=\"(thing)\" /> ~ <A w=\"pe\" gl=\"(thing/person)\" />",
+  "confidence": 0.95,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "350",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The corpus count of <i lang=\"ain-Latn\">kuni</i> is 6,113 tokens (rank 36), a figure that\n\t\tconflates the complementizer, purposive, and adverbial uses; no per-function count is derivable\n\t\tfrom word-frequency data alone ‹corpus-suggested›.",
+  "issue": "The claim about corpus counts is marked as ‹corpus-suggested›, but the only support is a general frequency figure without a source citation that confirms the breakdown (or lack thereof) by function.",
+  "suggestion": "Add a citation to a corpus study or frequency list that substantiates the 6,113-token count and its conflation across uses, or revise the epistemic tag if no such source is available.",
+  "confidence": 0.85,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "523",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<Ref k=\"bugaeva2016\" p=\"229–304\" paren />",
+  "issue": "Malformed citation tag: the attribute `paren` is not valid in the <Ref> component; likely intended to be `p` or a note about parentheses.",
+  "suggestion": "Correct the tag to <Ref k=\"bugaeva2016\" p=\"229–304\" /> or clarify intent if parenthetical context was meant.",
+  "confidence": 0.9,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "232",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ru-we</i>, <i lang=\"ain-Latn\">sir-i</i>,\n\t\t<i lang=\"ain-Latn\">haw-e</i>, and <i lang=\"ain-Latn\">hum-i</i>",
+  "issue": "Inconsistent hyphenation: 'ru-we' uses a hyphen while 'sir-i', 'haw-e', and 'hum-i' use hyphens but are broken across lines. Orthographic inconsistency in the presentation of possessed forms.",
+  "suggestion": "Standardize to either all hyphenated on the same line or consistent line-break placement. Prefer: 'ru-we, sir-i, haw-e, and hum-i' on one line.",
+  "confidence": 0.9,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "173",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "ramu</i>, for instance, co-occurs with <i lang=\"ain-Latn\">kuni</i> for future and wished content, with\n\t\t\t<i lang=\"ain-Latn\">yak</i> for past or ongoing content, and with the sensory heads\n\t\t\t<i lang=\"ain-Latn\">sir-i</i> and <i lang=\"ain-Latn\">hum-i</i> when thought involves a\n\t\t\tquasi-perceptual quality ‹corpus-suggested›.",
+  "issue": "The term 'hum-i' is used, but earlier in the chapter (line 16) only 'humi' is introduced. The form 'hum-i' appears without prior gloss or explanation of the '-i' suffix as possessive.",
+  "suggestion": "Ensure consistency: either introduce 'hum-i' explicitly as the possessed form of 'humi' earlier, or use 'hum-i' consistently from first mention.",
+  "confidence": 0.8,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "16",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"siri\" gl=\"appearance\" />, <A w=\"hawe\" gl=\"voice\" />, and\n\t\t<A w=\"humi\" gl=\"sound, feeling\" />",
+  "issue": "The forms 'siri', 'hawe', 'humi' are presented without hyphens, but later as 'sir-i', 'haw-e', 'hum-i' with hyphens. This creates orthographic drift in the representation of possessed forms.",
+  "suggestion": "Introduce the possessed forms with hyphens from the first mention (e.g., 'sir-i', 'haw-e', 'hum-i') or clarify that the bare forms are lexical roots.",
+  "confidence": 0.9,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "339",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"míre kuni p ére kuni p nepki ne ki wa\"",
+  "issue": "The morpheme string includes 'p' twice, but the gloss 'NMLZ' is used for both, while the text describes 'kuni p' as a compound nominalizer. The gloss does not distinguish the two nominalization layers (kuni as purposive, p as nominalizer).",
+  "suggestion": "Revise gloss to reflect layered nominalization, e.g., 'PURP NMLZ' for each 'kuni p', or clarify in note that 'p' is a second nominalizer.",
+  "confidence": 0.95,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "340",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"clothe PURP NMLZ feed PURP NMLZ be.work COP do CONJ\"",
+  "issue": "The gloss 'CONJ' for 'wa' is inaccurate; 'wa' is a clause-final conjunction meaning 'and' or 'then', not a syntactic conjunction in the embedded clause. 'do CONJ' mismatches the free translation 'making... her work'.",
+  "suggestion": "Revise gloss to 'and' or 'then' for 'wa', and adjust free translation if needed to reflect sequential actions.",
+  "confidence": 0.85,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "342",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "tr=\"making things to clothe (the grandchild) and things to feed (her) her work,",
+  "issue": "The free translation is grammatically incoherent: 'things to feed (her) her work' lacks a verb and has a double possessive. It does not match the structure of the original.",
+  "suggestion": "Revise to: 'making things to clothe (the grandchild) and things to feed (her) — that is her work,' or similar.",
+  "confidence": 0.9,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

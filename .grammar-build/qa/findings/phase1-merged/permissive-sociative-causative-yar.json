@@ -1,0 +1,1153 @@
+[
+ {
+  "id": "permissive-sociative-causative-yar~p1#006",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "80",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation is attached to the claim that the allomorphy is stated in the Handbook but no consonant-final form is attested in the read corpus sources. The 'corpus-suggested' tag seems to apply to the attestation claim, but the citation itself might not fully support this nuance.",
+    "quote": "<Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" /> ‹corpus-suggested›.",
+    "suggestion": "Verify if the cited source explicitly states the lack of attested forms or if this is an interpretation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› appears after a citation that supports the allomorphy statement (from the Handbook), but the tag seems intended for the corpus claim about lack of attestation. The scope of the tag is ambiguous.",
+    "quote": "read corpus sources <Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" /> ‹corpus-suggested›",
+    "suggestion": "Restructure to clarify: place the tag directly after the corpus claim, before the citation, or attach it only to the clause it modifies.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› is attached to a claim about allomorphy that is based solely on a general reference to the Handbook without specific corpus data. The tag implies corpus support, but the citation does not point to actual corpus tokens, only a descriptive statement.",
+    "quote": "<Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" /> ‹corpus-suggested›",
+    "suggestion": "Either upgrade the citation to include specific corpus examples or change the epistemic tag to ‹speculative› or ‹contested›.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#019",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "161",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '=4.S' indicates a 4th person singular suffix, but the translation 'Let's have (them) eat' implies a 1st person plural hortative or imperative, and the note mentions the derived verb remains intransitive. The gloss should reflect the subject of the hortative/imperative.",
+    "quote": "g=\"eat-CAUS=4.S HORT\"",
+    "suggestion": "Change the gloss to reflect the implied subject of the hortative, e.g., '=1PL.S' or similar, depending on the intended meaning of 'ro'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss `4.S` for `=an` is incorrect. In Ainu, the suffix `=an` on intransitive verbs marks 3.S (third singular subject), not 4.S. The fourth person is typically used for obviation in transitive contexts, not intransitive subject indexing.",
+    "quote": "m=\"ipe-yar=an ro\" g=\"eat-CAUS=4.S HORT\"",
+    "suggestion": "Change `4.S` to `3.S` in the gloss.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#013",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "135",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=1SG.O=ask' seems to indicate a transitive verb with a 4th person subject and 1st person object, but the free translation 'Everything I was asked I told in full' suggests the opposite (1st person subject, 4th person object). The gloss for 'ku=nu-yar' is '1SG.A=hear-CAUS', which implies a 1st person subject, aligning with the translation.",
+    "quote": "g=\"4.A=1SG.O=ask NMLZ TOP all 1SG.A=say CONJ 1SG.A=hear-CAUS\"",
+    "suggestion": "Clarify the person marking in the gloss for 'a=en=kopisi' to match the translation and the gloss for 'ku=nu-yar'. It's likely '1SG.A=ask 4SG.O' or similar.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The free translation 'Everything I was asked I told in full' implies a transitive action of telling, but the gloss for 'ku=nu-yar' is '1SG.A=hear-CAUS'. The 'CONJ' gloss for 'wa' suggests a coordination, but the translation reads more like a single complex statement. The 'NMLZ TOP' gloss for 'p anakne' is unclear in its relation to the rest of the sentence.",
+    "quote": "tr=\"Everything I was asked I told in full — I made it all known.\"",
+    "suggestion": "Re-evaluate the glosses to better reflect the complex sentence structure and the meaning conveyed in the free translation. Specifically, clarify the role of 'p anakne' and ensure the gloss for 'ku=nu-yar' accurately reflects 'made it all known' if that's the intended meaning.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss contains `4.A=1SG.O=ask` which appears to misalign with the morpheme string `a=en=kopisi`. The morpheme `a=` is likely 3SG.A (not 4.A), and `en` is 1SG.O — but `kopisi` means 'ask', so the gloss should reflect that the subject is 3SG.A asking 1SG.O. The use of `4.A` (fourth person/obviative) here is inconsistent with standard Ainu person indexing unless justified by context.",
+    "quote": "g=\"4.A=1SG.O=ask NMLZ TOP all 1SG.A=say CONJ 1SG.A=hear-CAUS\"",
+    "suggestion": "Revise gloss to align with standard Ainu indexing: likely `3.A=1SG.O=ask` unless evidence supports 4.A in this context.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#032",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "238",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ipeyar'.",
+    "quote": "<i lang=\"ain-Latn\">ipeyar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">ipēyar</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nuyar'.",
+    "quote": "<i lang=\"ain-Latn\">nuyar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nūyar</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent orthography: `nuyar` lacks a hyphen, while other instances like `nu-yar` (lines 75, 133, 228) include one. The hyphen should be used consistently in derived forms.",
+    "quote": "<i lang=\"ain-Latn\">nuyar</i>",
+    "suggestion": "Change `nuyar` to `nu-yar`.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent orthography: `ipeyar` lacks a hyphen, while `ipe-yar` appears with a hyphen in line 160 and elsewhere. The derived form should be consistently hyphenated.",
+    "quote": "<i lang=\"ain-Latn\">ipeyar</i>",
+    "suggestion": "Change `ipeyar` to `ipe-yar`.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#005",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "78",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sinot'.",
+    "quote": "<i lang=\"ain-Latn\">sinot-ar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">sinot̄-ar</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: `sinot-ar` lacks a hyphen between stem and suffix, while other forms like `nu-yar` (line 75) and `ipe-yar` (line 160) use hyphens. The suffix `-ar` should be preceded by a hyphen for consistency.",
+    "quote": "a hypothetical <i lang=\"ain-Latn\">sinot-ar</i>",
+    "suggestion": "Change `sinot-ar` to `sinot-ar` → `sinot-ar` should be `sinot-ar` with a hyphen: `sinot-ar` → `sinot-ar` → actually, it's already written correctly? Wait: it *is* written as `sinot-ar`, which has a hyphen. No error.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#004",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "74",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'r'.",
+    "quote": "<i lang=\"ain-Latn\">r</i>-final",
+    "suggestion": "<i lang=\"ain-Latn\">r̄</i>-final",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: the dictionary link uses `nu` without a hyphen, but the following form is written with a hyphen as `nu-yar`. Elsewhere, the hyphenated form is standard (e.g., line 133). The base verb should be consistently hyphenated when combined with suffixes.",
+    "quote": "<A w=\"nu\" gl=\"hear (something)\" /> →\n\t\t<i lang=\"ain-Latn\">nu-yar</i>",
+    "suggestion": "Change `nu` in the <A> tag to `nu-` to reflect derivational form consistency, or ensure that bare stems in dictionary links are unhyphenated throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#044",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "174-175 and 262-263",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The same information about Bugaeva's study excluding -yar is repeated in two sections with slightly different wording. This redundancy may be intentional but could be streamlined.",
+    "quote": "Bugaeva's 2014 causative study, the most comprehensive treatment of Ainu causative morphology available, explicitly excludes -yar for reasons of space",
+    "suggestion": "Consider keeping the full description in one location and cross-referencing or summarizing in the other.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#043",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "80",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read corpus sources' refers to the authors' own reading process, a meta-commentary about source selection rather than a statement about the data itself.",
+    "quote": "no consonant-final form is attested in the read corpus sources",
+    "suggestion": "Consider replacing with 'the corpus sources consulted' or 'the available corpus sources'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#042",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "282",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'speculative' tag is appropriate for a community Discord attribution, but the citation itself is not formatted as a standard reference. The date format is also slightly inconsistent with other community source citations.",
+    "quote": "(antitwilight, aynu-corpora Discord, 26 May 2026) ‹speculative›.",
+    "suggestion": "Format the community source citation consistently, e.g., '(username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />)'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#041",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "280",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'i' and 're'.",
+    "quote": "<i lang=\"ain-Latn\">i=…-re</i>",
+    "suggestion": "<i lang=\"ain-Latn\">ī=…-rē</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'yar'.",
+    "quote": "<i lang=\"ain-Latn\">-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-yar̄</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#040",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "276",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'yar'.",
+    "quote": "<i lang=\"ain-Latn\">-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-yar̄</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'i' and 'a'.",
+    "quote": "<i lang=\"ain-Latn\">*i=a-de</i>",
+    "suggestion": "<i lang=\"ain-Latn\">*ī=ā-de</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'd'.",
+    "quote": "<i lang=\"ain-Latn\">*d &gt; r</i>",
+    "suggestion": "<i lang=\"ain-Latn\">*d̄ &gt; r</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#039",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "273",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'contested' tag is applied to the semantic label question, but the preceding citation block supports the consistency of structural facts. It's unclear if the cited sources also contest the semantic label.",
+    "quote": "remains open ‹contested›.",
+    "suggestion": "Ensure the 'contested' tag is supported by the cited sources regarding the semantic label.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#038",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "269",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This block of citations supports the claim that the structural facts are consistent across four sources. However, it's unclear if all four sources address all the listed structural facts (arity 0, causee unexpressed, adjunct option).",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"201–202, 429\" />; <Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" />; <Ref k=\"kobayashi2015\" p=\"12\" />; <Ref k=\"sato2008\" p=\"234\" />.",
+    "suggestion": "Ensure each cited source actually discusses all the structural facts mentioned in the sentence.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#037",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'yar'.",
+    "quote": "<i lang=\"ain-Latn\">-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-yar̄</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 're' and 'te'.",
+    "quote": "<i lang=\"ain-Latn\">-re/-te/-e</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-rē/-tē/-ē</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'peka', 'un', and 'eun'.",
+    "quote": "<i lang=\"ain-Latn\">or peka/or un/eun</i>",
+    "suggestion": "<i lang=\"ain-Latn\">or pekā/or ūn/eun̄</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#036",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "261",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to the claim that Bugaeva's study excludes -yar for reasons of space. It might not fully support the 'reasons of space' aspect.",
+    "quote": "<Ref k=\"bugaeva2014\" p=\"127\" />.",
+    "suggestion": "Verify if the cited source explicitly mentions 'reasons of space' as the exclusion criterion.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#035",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'yar'.",
+    "quote": "<i lang=\"ain-Latn\">-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-yar̄</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 're'.",
+    "quote": "<i lang=\"ain-Latn\">-re</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-rē</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#034",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "249",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ipe'.",
+    "quote": "<i lang=\"ain-Latn\">ipe-yar=an ro</i>",
+    "suggestion": "<i lang=\"ain-Latn\">ipē-yar=an ro</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#033",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "<i lang=\"ain-Latn\">nu-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nū-yar</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#031",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "228",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "<i lang=\"ain-Latn\">nu-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nū-yar</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "<A w=\"nu\" gl=\"hear (something)\" />",
+    "suggestion": "<A w=\"nū\" gl=\"hear (something)\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'morphosyntax'.",
+    "quote": "morphosyntax",
+    "suggestion": "morphosyntax̄",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#030",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "224",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "<i lang=\"ain-Latn\">nu-re</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nū-re</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "<i lang=\"ain-Latn\">nu-re</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nū-re</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'person index'.",
+    "quote": "person index",
+    "suggestion": "person index̄",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#029",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "218",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation block supports the entire table. However, it's unclear if all sources fully support every row. For example, Bugaeva 2014 might not cover all aspects of the comparison.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"200–202\" />, <Ref k=\"bugaeva2014\" p=\"127, 130, 143\" />, and <Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" />.",
+    "suggestion": "Break down the citations per row if possible, or ensure each source comprehensively covers the information presented in the table.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#028",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'high'.",
+    "quote": "high (190 forms in Bugaeva's Saru sample)",
+    "suggestion": "high̄ (190 forms in Bugaeva's Saru sample)",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'low'.",
+    "quote": "low; few attested forms",
+    "suggestion": "low̄; few attested forms",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#027",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "206",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'indirect'.",
+    "quote": "direct and indirect",
+    "suggestion": "direct and indirect̄",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'indirect'.",
+    "quote": "indirect only",
+    "suggestion": "indirect̄ only",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#026",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "202",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'peka', 'un', and 'eun'.",
+    "quote": "<i lang=\"ain-Latn\">or peka / or un / eun</i> adjunct",
+    "suggestion": "<i lang=\"ain-Latn\">or pekā / or ūn / eun̄</i> adjunct",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#025",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "196",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'person-indexed'.",
+    "quote": "person-indexed",
+    "suggestion": "person-indexed̄",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'person indexing'.",
+    "quote": "no person indexing",
+    "suggestion": "no person indexinḡ",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#024",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "191",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'object'.",
+    "quote": "old subject → object",
+    "suggestion": "old subject → object̄",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'subject'.",
+    "quote": "old subject suppressed",
+    "suggestion": "old subject̄ suppressed",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#023",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 're' and 'te'.",
+    "quote": "<i lang=\"ain-Latn\">-re / -te / -e</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-rē / -tē / -ē</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'yar'.",
+    "quote": "<i lang=\"ain-Latn\">-yar / -ar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-yar̄ / -ar̄</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#022",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "174",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to the claim that Bugaeva's study excludes -yar for reasons of space. It might not fully support the 'reasons of space' aspect.",
+    "quote": "<Ref k=\"bugaeva2014\" p=\"127\" />.",
+    "suggestion": "Verify if the cited source explicitly mentions 'reasons of space' as the exclusion criterion.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#021",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "171",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'yar'.",
+    "quote": "<i lang=\"ain-Latn\">-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-yar̄</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#020",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "165",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ipe'.",
+    "quote": "note=\"After Tamura 2000[1988]: 214. The intransitive S suffix =an on ipe-yar confirms that the derived verb remains intransitive; the eating party is implied by context but not indexed on the verb.\"",
+    "suggestion": "note=\"After Tamura 2000[1988]: 214. The intransitive S suffix =an on ipē-yar confirms that the derived verb remains intransitive; the eating party is implied by context but not indexed on the verb.\"",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#018",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "160",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ipe'.",
+    "quote": "<i lang=\"ain-Latn\">ipe-yar=an ro</i>",
+    "suggestion": "<i lang=\"ain-Latn\">ipē-yar=an ro</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#017",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "151",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 're'.",
+    "quote": "<i lang=\"ain-Latn\">-re/-te/-e</i>",
+    "suggestion": "<i lang=\"ain-Latn\">-rē/-tē/-ē</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#016",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "149",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to the claim about the permissive reading and a softer formulation. It might not fully support the specific nuance of 'softer formulation'.",
+    "quote": "; <Ref k=\"tamura2000\" p=\"214\" />.",
+    "suggestion": "Verify if the cited source explicitly discusses the 'softer formulation' aspect.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#015",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "147",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ipe'.",
+    "quote": "<i lang=\"ain-Latn\">ipe-yar=an ro</i>",
+    "suggestion": "<i lang=\"ain-Latn\">ipē-yar=an ro</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ipe'.",
+    "quote": "<i lang=\"ain-Latn\">ipe-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">ipē-yar</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#014",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "140",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "note=\"ku=nu-yar retains the two-place transitivity of nu 'hear something'; the content made known is the sole object and no causee argument is present.\"",
+    "suggestion": "note=\"ku=nū-yar retains the two-place transitivity of nū 'hear something'; the content made known is the sole object and no causee argument is present.\"",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#012",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "130",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "<i lang=\"ain-Latn\">nu</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nū</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#011",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "127",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is attached to the claim that Nakagawa and the Handbook share the indefinite-causation reading. It might not fully support this specific attribution.",
+    "quote": "; <Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" />.",
+    "suggestion": "Verify if the cited source explicitly states that both Nakagawa and the Handbook share this reading.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#010",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "125",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '誰にでも' is not translated.",
+    "quote": "<span lang=\"ja\">誰にでも</span>",
+    "suggestion": "Translate '誰にでも' to 'to whoever'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "<i lang=\"ain-Latn\">nu-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nū-yar</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#009",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "120",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation is attached to the claim that sources converge only on structural valency facts while leaving the label question open. The 'contested' tag applies to the label question, but the citation might not fully support the convergence on structural facts.",
+    "quote": "; <Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" /> ‹contested›.",
+    "suggestion": "Verify if the cited source explicitly states convergence on structural valency facts.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#008",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "108",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'peka'.",
+    "quote": "<i lang=\"ain-Latn\">or peka</i>",
+    "suggestion": "<i lang=\"ain-Latn\">or pekā</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'eun'.",
+    "quote": "<i lang=\"ain-Latn\">eun</i>",
+    "suggestion": "<i lang=\"ain-Latn\">eun̄</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nu'.",
+    "quote": "<i lang=\"ain-Latn\">nu-yar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nū-yar</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#007",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "104",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'peka'.",
+    "quote": "<i lang=\"ain-Latn\">or peka</i>",
+    "suggestion": "<i lang=\"ain-Latn\">or pekā</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'un'.",
+    "quote": "<i lang=\"ain-Latn\">or un</i>",
+    "suggestion": "<i lang=\"ain-Latn\">or ūn</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'eun'.",
+    "quote": "<i lang=\"ain-Latn\">eun</i>",
+    "suggestion": "<i lang=\"ain-Latn\">eun̄</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'nispa' and 'peka'.",
+    "quote": "<i lang=\"ain-Latn\">nispa or peka a=korar</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nispā or pekā a=korar</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#003",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "70",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is placed at the end of the sentence, but it only supports the claim about the allomorphy of -yar/-ar after consonants. The Bugaeva & Kobayashi citation is also attached here, but it supports the claim about the conditioning environment.",
+    "quote": "; <Ref k=\"nakagawa2024\" p=\"202\" />.",
+    "suggestion": "Ensure citations are placed to support the specific claims they reference.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#002",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "21",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'uko-/uwe-'.",
+    "quote": "sociative <i lang=\"ain-Latn\">uko-/uwe-</i>",
+    "suggestion": "ukō-/uwē-",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#001",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "16",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kobayashi 2015 is attached to the end of the sentence, but it only supports the claim about the net argument count equaling that of its base. The Bugaeva & Kobayashi citation is also attached here, but it supports the claim about the causee being suppressed.",
+    "quote": "; <Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" />; <Ref k=\"kobayashi2015\" p=\"12\" />.",
+    "suggestion": "Move the Kobayashi citation to the end of the sentence it supports, and ensure the Bugaeva & Kobayashi citation is appropriately placed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#046",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "253",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrasing implies a deficit in Ijäs (2023) for not covering `-yar`, but this is not a flaw in Ijäs — it's a design choice in a learner grammar. The tone suggests the omission needs justification, which is inappropriate in a reference grammar that should neutrally report coverage.",
+    "quote": "Ijäs's learner grammar does not treat <i lang=\"ain-Latn\">-yar</i>; Lesson 9 on special\n\t\tverb forms discusses the causative, reciprocal, and antipassive but covers only\n\t\t<i lang=\"ain-Latn\">-re</i> among the causative types",
+    "suggestion": "Rephrase to: 'Ijäs (2023) does not include `-yar` in its treatment of causative forms, focusing only on `-re` in Lesson 9.'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "permissive-sociative-causative-yar~p1#045",
+  "chapter": "permissive-sociative-causative-yar",
+  "lines": "279",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'the read sources' appears multiple times (e.g., lines 80, 118, 261) and reflects pipeline register — it refers to sources processed in the project's reading phase rather than being a standard scholarly term. This is a register leak from the editorial process.",
+    "quote": "the read sources",
+    "suggestion": "Replace 'the read sources' with 'the available sources' or 'the documented sources'.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

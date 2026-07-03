@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "195",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "ku=yup-ihi",
+  "issue": "The morpheme string 'ku=yup-ihi' contains 'yup', but the gloss '1SG.POSS=elder.brother-POSS' uses 'elder.brother', which does not match the root 'yup' (citation form 'yupo'). The root should be consistently represented.",
+  "suggestion": "Either change the m-form to 'ku=yupo-ihi' or adjust the gloss to 'yup-POSS' for consistency with the citation form.",
+  "confidence": 0.95,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "243",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "sik-ihi",
+  "issue": "The morpheme string 'sik-ihi' is glossed as 'eye-POSS', but the example is labeled as constructed and the note states that the third-person possessor is zero. The gloss should reflect the full structure, including the affiliative suffix.",
+  "suggestion": "Gloss as 'eye-AFF' or 'eye-POSS' consistently with other examples, but ensure alignment with the note about zero-marked third person.",
+  "confidence": 0.9,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "380",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "sir-pirka",
+  "issue": "The gloss 'land/appearance-be.good' uses a slash to represent polysemy, but this format is inconsistent with other glosses which do not use slashes. The gloss should pick one primary meaning or use a consistent format for polysemy.",
+  "suggestion": "Use 'land-be.good' or 'appearance-be.good', or adopt a uniform notation like 'land/appearance-BE.GOOD' if polysemy must be shown.",
+  "confidence": 0.85,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "483",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "siwnin",
+  "issue": "The form <A w=\"siwnin\" gl=\"be blue-green (grue)\" /> is followed by <i lang=\"ain-Latn\">sinnin</i>, indicating a variant spelling, but the orthographic variation is not explained or consistently formatted. The use of 'w' vs. absence suggests a phonetic distinction that should be clarified.",
+  "suggestion": "Either standardize to one form or explain the variation (e.g., dialectal or phonological) in a note.",
+  "confidence": 0.8,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "548",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "tan / taan",
+  "issue": "The table lists <A w=\"tan\" gl=\"this (proximal)\" /> / <i lang=\"ain-Latn\">taan</i>, but the second form is not in an <A> tag and lacks a gloss, creating inconsistency in markup and presentation of variants.",
+  "suggestion": "Mark up both forms uniformly: either both in <A> tags with glosses, or annotate the variant clearly outside the tag.",
+  "confidence": 0.95,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "554",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "toan / toon",
+  "issue": "Similar to line 548, <A w=\"toan\" gl=\"that (distal)\" /> / <i lang=\"ain-Latn\">toon</i> presents a variant form outside the <A> tag without gloss or explanation, breaking markup consistency.",
+  "suggestion": "Apply uniform treatment: include both in <A> tags or annotate variants consistently in <i> tags with explanation.",
+  "confidence": 0.95,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "560",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "nean / ne",
+  "issue": "The form <A w=\"nean\" gl=\"that (anaphoric)\" /> / <i lang=\"ain-Latn\">ne</i> again presents a variant outside the <A> tag without gloss, continuing the inconsistent pattern.",
+  "suggestion": "Standardize presentation of phonological variants across the table.",
+  "confidence": 0.95,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "307",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Japanese <i lang=\"ja\">-betsu</i> &lt; <i lang=\"ain-Latn\">pet</i>, <i lang=\"ja\">-nai</i> &lt; <i lang=\"ain-Latn\">nay</i>",
+  "issue": "The use of &lt; is correct for 'from', but in a scholarly context, the typographic convention is often to use a leftward arrow (←) or 'from' in text. While not incorrect, it's a minor stylistic inconsistency.",
+  "suggestion": "Replace &lt; with '←' or 'from' for better readability in prose.",
+  "confidence": 0.7,
+  "chapter": "lexical-semantic-fields-synopsis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,394 @@
+[
+ {
+  "id": "fourth-person-honorific~p1#012",
+  "chapter": "fourth-person-honorific",
+  "lines": "144, 270–271",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The plural fourth-person free pronoun is spelled 'aokay' at line 144 and 'aoka' at line 270–271; the forms are inconsistent within the same chapter.",
+    "quote": "aokay … aoka",
+    "suggestion": "Use one consistent spelling, likely the form attested in the cited sources (e.g. 'aokay' from Nakagawa).",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form is given as 'aokay' without macrons; other forms like 'anani' and 'anoka' may imply vowel length, suggesting potential inconsistency in orthographic representation.",
+    "quote": "aokay",
+    "suggestion": "Check dialect sources for macron marking in 'aokay' and standardize if necessary.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#005",
+  "chapter": "fourth-person-honorific",
+  "lines": "146",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range 254-256 for Nakagawa (2024) is cited in relation to dialectal variation in the narrator's fourth person, but the preceding text only mentions Saru and Chitose allowing singular stems. It's unclear if these pages specifically detail the Horobetsu and Shizunai variations mentioned.",
+    "quote": "174–176, 254–256",
+    "suggestion": "Verify if pages 254-256 specifically support the claims about Horobetsu and Shizunai dialectal differences.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The dialectal claim about Shizunai is stated as fact (verb consistently plural) but the epistemic tag ‹contested› is attached to the citation, making it unclear whether the claim itself is disputed.",
+    "quote": "but the verb is consistently plural <Ref k=\"nakagawa2024\" p=\"174–176, 254–256\" /> ‹contested›.",
+    "suggestion": "Either rephrase the claim as reported (e.g. 'Nakagawa reports that …') or remove the contested tag if the fact is not in doubt.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#002",
+  "chapter": "fourth-person-honorific",
+  "lines": "60",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Tamura (1972) includes page range 39, which is not directly supported by the preceding text that discusses Tamura's analysis of Saru. The text focuses on Tamura's separation of honorific second person and quotative first person, which is likely covered by pages 19-20, 28.",
+    "quote": "174–179; <Ref k=\"tamura1972\" p=\"19–20, 28, 39\" />; <Ref k=\"bugaeva2008\" p=\"37–44\" />; <Ref k=\"bugaeva2012\" p=\"474–476\" />; <Ref k=\"sato2004\" p=\"179–184\" />; <Ref k=\"sato2008\" p=\"259–262\" />; <Ref k=\"takahashi2015\" p=\"205–210\" /> ‹contested›.",
+    "suggestion": "Remove page 39 from the Tamura citation if it does not support the claim.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about Takahashi using 'inclusive person' is marked ‹contested›, but the supporting citation (takahashi2015) is not flagged as low-confidence or speculative; the tag may be overreaching without source critique.",
+    "quote": "‹contested›",
+    "suggestion": "Verify whether the source actually supports the contested interpretation; otherwise, reconsider the use of ‹contested›.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#016",
+  "chapter": "fourth-person-honorific",
+  "lines": "236",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'acapo hawean kor' is not segmented or glossed in 'g', though it appears in the free translation.",
+    "quote": "a=ye wa anun katkemat a=nure sekor a=ye acapo hawean kor",
+    "suggestion": "Include segmentation and gloss for 'acapo hawean kor', or remove it from the example if it is not part of the cited form.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'uncle say while' does not align with any segmented morphemes in 'm'; it appears to be a translation-only addition.",
+    "quote": "4.A=say CONJ other lady 4.A=tell QUOT 4.A=say uncle say while",
+    "suggestion": "Either add the corresponding morphemes to 'm' or remove the unaligned portion from the gloss.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#015",
+  "chapter": "fourth-person-honorific",
+  "lines": "159",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'rehe' is glossed as 'name' in 'g', but 'rehe' means 'name' only in context; the possessive prefix 'a=' on 'rehe' should be glossed as '4.POSS' as in the second clause.",
+    "quote": "a=rehe Ikuresuye sekor a=i=reko",
+    "suggestion": "Ensure consistency: either gloss both 'a=' as '4.POSS' or clarify if one is different.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'name' is used twice, but in the second instance it glosses 'reko', which is a verb meaning 'to name'; it should be glossed as 'name' (V), not 'name' (N).",
+    "quote": "4.POSS=name Ikuresuye QUOT 4.A=4.O=name",
+    "suggestion": "Change the second 'name' in the gloss to 'name' or 'call' to reflect the verbal meaning.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#014",
+  "chapter": "fourth-person-honorific",
+  "lines": "131",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'pe' is present in the 'm' string but not glossed in 'g'.",
+    "quote": "ratcitara hosipi=an yakka a=uni un tunasno hosipi=an pe ne kusu",
+    "suggestion": "Add a gloss for 'pe', e.g., 'NMLZ' or 'NOM', to maintain alignment.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'NMLZ' and 'COP' correspond to 'pe ne' in the example, but 'ne' is not segmented or glossed individually.",
+    "quote": "slowly return=4.S though 4.POSS=home to quickly return=4.S NMLZ COP because",
+    "suggestion": "Segment 'pe ne' in 'm' and gloss 'ne' as 'COP'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#013",
+  "chapter": "fourth-person-honorific",
+  "lines": "79",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'an' in the free translation is rendered as 'exist', but in the gloss it is not explicitly glossed; the gloss 'exist' should be aligned to 'an' in 'ru-we an'.",
+    "quote": "hunak wa arki=an ru-we an",
+    "suggestion": "Update the gloss to include a gloss for 'an', e.g., 'exist' or 'there.is'.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'exist' is present but not linked to any morpheme in the 'm' string; the final 'an' in 'ru-we an' is unaccounted for in the segmentation and gloss.",
+    "quote": "where from come.PL=4.S track-POSS exist",
+    "suggestion": "Revise the 'm' string to include the existential verb as a separate morpheme, e.g., 'ru-we an' → 'ru-we=an' or add the morpheme explicitly. Alternatively, adjust the gloss to match the form.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#011",
+  "chapter": "fourth-person-honorific",
+  "lines": "89–92, 141–143",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that the plural-stem/plural-verbal-morphology constraint applies to narrative fourth-person functions is contradicted by the later statement that Saru and Chitose allow a singular verb stem with a singular narrator.",
+    "quote": "The plural-stem requirement … operates across the honorific, inclusive, and narrative fourth-person functions … Saru and Chitose permit a singular narrator to appear with a singular verb stem",
+    "suggestion": "Either qualify the earlier claim as dialect-dependent (e.g. 'in dialects that enforce the constraint') or hedge the later statement to show that the constraint still holds at the morphological level.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#017",
+  "chapter": "fourth-person-honorific",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The plus sign is used without spaces in morphological decomposition, while elsewhere spaces are used (e.g., 'a=uni'); formatting inconsistency.",
+    "quote": "a= + sinuma",
+    "suggestion": "Use consistent spacing: 'a= + sinuma' → 'a= + sinuma' or 'a=+sinuma'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#009",
+  "chapter": "fourth-person-honorific",
+  "lines": "216",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range 41-44 for Bugaeva (2008) is cited in support of Bugaeva's approach to logophoricity. The preceding text mentions Bugaeva relocating quotation-internal use to logophoricity and documenting it in non-folklore data. It's unclear if these pages specifically cover the 'non-folklore Asahikawa reported-speech data' mentioned.",
+    "quote": "<Ref k=\"bugaeva2008\" p=\"41–44\" />; <Ref k=\"bugaeva2012\" p=\"475–476\" />.",
+    "suggestion": "Confirm that pages 41-44 of Bugaeva (2008) specifically detail the non-folklore data.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#008",
+  "chapter": "fourth-person-honorific",
+  "lines": "208",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range 602-604 for Nakagawa (2024) is cited in support of Nakagawa's counter-argument regarding the divine narrator pattern. However, the preceding text discusses Satō's objections and Nakagawa's counter-arguments, and it's not immediately clear if these specific pages cover all of Nakagawa's points.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"602–604\" />.",
+    "suggestion": "Verify that pages 602-604 fully support Nakagawa's counter-arguments as presented.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#003",
+  "chapter": "fourth-person-honorific",
+  "lines": "73",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2012) p. 475 is placed after the mention of Tamura's Saru account, but it seems to support Nakagawa's points about the plural stem requirement in honorific use, which is discussed earlier in the paragraph.",
+    "quote": "175–176; <Ref k=\"bugaeva2012\" p=\"475\" />.",
+    "suggestion": "Reorder citations to align with the claims they support.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#001",
+  "chapter": "fourth-person-honorific",
+  "lines": "16",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Tamura (1972) includes page ranges that are not directly relevant to the preceding sentence, which discusses Nakagawa and Bugaeva's analyses. The page range 19-20, 28 seems to cover the introduction of the topic, but the specific analyses mentioned in the sentence are not clearly tied to these pages.",
+    "quote": "175–179; <Ref k=\"tamura1972\" p=\"19–20, 28\" />; <Ref k=\"bugaeva2012\" p=\"475–476\" />.",
+    "suggestion": "Adjust page ranges or add a more specific citation if available.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#010",
+  "chapter": "fourth-person-honorific",
+  "lines": "256",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The pronoun 'asinuma' is glossed as '< a= + sinuma 'oneself''. However, in line 202, 'asinuma' is presented alongside fourth-person verbal morphology as indicating referential specificity, which aligns with a fourth-person interpretation. The gloss here suggests a composition that might imply a different function or origin than a pure fourth-person pronoun, potentially creating confusion with the indefinite function discussed earlier.",
+    "quote": "The free pronoun <i lang=\"ain-Latn\">asinuma</i> (&lt; <i lang=\"ain-Latn\">a=</i> + <i lang=\"ain-Latn\">sinuma</i> 'oneself')",
+    "suggestion": "Clarify the relationship between 'a=' as a fourth-person marker and 'sinuma' as 'oneself' in the context of the pronoun 'asinuma', especially in relation to its use with fourth-person verbal morphology.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#007",
+  "chapter": "fourth-person-honorific",
+  "lines": "202",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text claims that the indefinite (in its agent-defocusing function) is referent-non-specific and incompatible with an overt free pronoun. However, it then states that narrators use 'asinuma' (which is identified as the fourth-person singular self-referential pronoun in line 256) alongside fourth-person verbal morphology, indicating referential specificity. This seems to contradict the initial statement about the indefinite's incompatibility with overt free pronouns.",
+    "quote": "yet narrators use <i lang=\"ain-Latn\">asinuma</i> alongside fourth-person verbal morphology, indicating referential specificity.",
+    "suggestion": "Clarify the relationship between the indefinite function, fourth-person morphology, and the use of 'asinuma'. It's possible 'asinuma' is not functioning as an indefinite pronoun here but as a fourth-person pronoun.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#006",
+  "chapter": "fourth-person-honorific",
+  "lines": "165",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'a=' on 'reko' is an indefinite-agent prefix, but the main text and the table (lines 11, 32, 46) consistently identify 'a=' as a transitive-subject prefix and 'i=' as an object prefix, both associated with the fourth person. The gloss in the example (line 159-160) also shows '4.A=' and '4.O=', not an indefinite-agent prefix.",
+    "quote": "a= on rehe is the narrator's possessive prefix; on reko it is an indefinite-agent prefix (someone named); i= indexes the narrator as the named object. The co-occurrence of fourth-person A as agent-defocuser and fourth-person O as narrator-object on one predicate yields a passive-like Japanese reading (私はイクレスイェと名付けられた).",
+    "suggestion": "Reconcile the note's description of 'a=' on 'reko' with the established system, or clarify if it's a distinct usage.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "fourth-person-honorific~p1#004",
+  "chapter": "fourth-person-honorific",
+  "lines": "137",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that Saru and Chitose allow a singular stem with a singular fourth-person narrator, but the example itself (lines 130-132) uses the plural stem 'hosipi' (implied by the gloss 'return.PL') with the singular fourth-person suffix '=an'. This contradicts the note's claim about singular stems being allowed.",
+    "quote": "The intransitive stem hosipi takes the fourth-person S suffix =an; a= functions as the narrator's possessive prefix on uni 'home'. Saru and Chitose allow a singular stem with a singular fourth-person narrator.",
+    "suggestion": "Clarify if the example is an exception, or if the note should reflect the example's usage.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

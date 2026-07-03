@@ -1,0 +1,988 @@
+[
+ {
+  "id": "tam-overview~p1#036",
+  "chapter": "tam-overview",
+  "lines": "250-251",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "These forms are written without hyphens, while similar forms like kor an (line 195) are also written without hyphens, so consistent. However, in the table on line 67, the phrase kor an appears as a unit, but here it is written as separate words. No inconsistency within the chapter.",
+    "quote": "kane an ... kan an ... tek an",
+    "suggestion": null,
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'kane an' is written with a space, but in other contexts such periphrastic forms are written with a hyphen (e.g., 'kor an', 'wa an'). This creates orthographic inconsistency.",
+    "quote": "Saru and Chitose <i lang=\"ain-Latn\">kane an</i>",
+    "suggestion": "Write as 'kane-an' for consistency with 'kor-an' and 'wa-an'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The forms 'kan an' and 'tek an' are written with spaces, while 'kor an' and 'wa an' are consistently spaced but conceptually treated as compounds. However, 'kane an' in line 249 is also spaced, so this may be a consistent style. But if 'kan an' is a dialect variant of 'kor an', it should be formatted the same way.",
+    "quote": "Tokachi and Ishikari have <i lang=\"ain-Latn\">kan an</i>, and Tokachi <i lang=\"ain-Latn\">tek an</i>",
+    "suggestion": "Ensure consistent spacing or hyphenation for all periphrastic aspectual forms.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#005",
+  "chapter": "tam-overview",
+  "lines": "59",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'unmarked' is used, but the table entry for 'person marking' for the 'auxiliary verb' frame states 'on V; the auxiliary is unmarked'. This is slightly redundant and could be phrased more concisely.",
+    "quote": "on <i lang=\"ain-Latn\">V</i>; the auxiliary is unmarked",
+    "suggestion": "on <i lang=\"ain-Latn\">V</i>; the auxiliary is unmarked -> on <i lang=\"ain-Latn\">V</i>; auxiliary unmarked",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The auxiliary verb list includes aan on line 60, but aan is not described as an auxiliary in the text; it is described as the admirative form derived from a + an (lines 287-290). This is consistent: a is the auxiliary, and aan is a derived form. No contradiction.",
+    "quote": "a, aan, nisa, nankor, rusuy, easirki",
+    "suggestion": null,
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#011",
+  "chapter": "tam-overview",
+  "lines": "103",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms <i lang=\"ain-Latn\">a</i> and <i lang=\"ain-Latn\">rok</i> are presented with a slash. While this indicates a pair, it might be clearer to use 'and' or explicitly state they are singular/plural forms.",
+    "quote": "<i lang=\"ain-Latn\">a</i>/<i lang=\"ain-Latn\">rok</i>",
+    "suggestion": "<i lang=\"ain-Latn\">a</i>/<i lang=\"ain-Latn\">rok</i> -> <i lang=\"ain-Latn\">a</i> and <i lang=\"ain-Latn\">rok</i>",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 103, the slash could be replaced with 'and' for clarity.",
+    "quote": "<i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">oka</i>",
+    "suggestion": "<i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">oka</i> -> <i lang=\"ain-Latn\">an</i> and <i lang=\"ain-Latn\">oka</i>",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 103, the slash could be replaced with 'and' for clarity.",
+    "quote": "<i lang=\"ain-Latn\">ek</i>/<i lang=\"ain-Latn\">arki</i>",
+    "suggestion": "<i lang=\"ain-Latn\">ek</i>/<i lang=\"ain-Latn\">arki</i> -> <i lang=\"ain-Latn\">ek</i> and <i lang=\"ain-Latn\">arki</i>",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 103, the slash could be replaced with 'and' for clarity.",
+    "quote": "<i lang=\"ain-Latn\">arpa</i>/<i lang=\"ain-Latn\">paye</i>",
+    "suggestion": "<i lang=\"ain-Latn\">arpa</i>/<i lang=\"ain-Latn\">paye</i> -> <i lang=\"ain-Latn\">arpa</i> and <i lang=\"ain-Latn\">paye</i>",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The slash notation for suppletive pairs uses no spaces around '/', but in other parts of the chapter (e.g., line 104) it is used consistently. However, typographic style should ensure consistent spacing. Here it is correct, but the issue is that in line 307 and 313, the table uses 'pl.' which may conflict with this style.",
+    "quote": "<i lang=\"ain-Latn\">a</i>/<i lang=\"ain-Latn\">rok</i>",
+    "suggestion": "No change needed if slash-without-spaces is the style, but confirm consistency across the chapter.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#043",
+  "chapter": "tam-overview",
+  "lines": "322",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example on lines 333–340 glosses 'aan' as 'PRF.MIR' and 'ru-we ne' as a separate inferential evidential construction, but the text claims 'aan' includes indirect evidentiality and mirativity. The gloss 'PRF.MIR' conflates aspect and evidentiality, while the free translation treats 'aan' as a perfect with evidential nuance. This creates a mismatch between gloss and analysis.",
+    "quote": "aan ru-we ne",
+    "suggestion": "Revise the gloss to separate aspect and evidentiality, e.g., 'PERF INDIRECT.MIR', or clarify that 'PRF.MIR' is a fused category.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#032",
+  "chapter": "tam-overview",
+  "lines": "200-201",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss of an in the second position is given as 'exist' (line 206), but in the note (line 210) it says 'the existential an'. However, the chapter consistently glosses the existential verb as 'EXIST' in other examples? Actually, in line 225, an is glossed as 'exist' in the example m='yuk as wa an na' g='deer stand CONJ exist FIN'. But in the table on line 67, the phrase kor an is described as aspectual, and in line 201 the construction is described as 'a clause chain' where the existential an is part of the frame. The gloss 'exist' is consistent with the description. No mismatch.",
+    "quote": "m='kesto kesto iki=an kor an=an' g='every.day every.day do=4.S while exist=4.S' tr='I went on living, doing this day after day.'",
+    "suggestion": null,
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#025",
+  "chapter": "tam-overview",
+  "lines": "322-325",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Line 322 says the plural rok-oka is formed by pairing the plural of a (i.e., rok) with the plural of an (i.e., oka). But on line 287, the plural of aan is given as rokoka, without a hyphen, and on line 313 in the table it is also rokoka. This mismatch in hyphenation (rok-oka vs rokoka) creates a consistency issue. Additionally, if the analysis is correct, rokoka should be spelled with a hyphen to reflect its composition, but the table and introduction use the unhyphenated form.",
+    "quote": "rok-oka ... the plural of a with the plural of an",
+    "suggestion": "Decide on a consistent representation (with or without hyphen) and update all occurrences.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#024",
+  "chapter": "tam-overview",
+  "lines": "287-288",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The plural of aan is given as rokoka on line 287, but the table on line 313 gives it as aan / pl. rokoka with the same spelling. However, on line 322 the plural is written rok-oka, while the table uses rokoka. This is an orthographic inconsistency: hyphenation of the same form differs between prose and table.",
+    "quote": "aan (plural rokoka)",
+    "suggestion": "Consistently use either rokoka or rok-oka (preferably the hyphenated form if the analysis is a + an, but consistency is key).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#041",
+  "chapter": "tam-overview",
+  "lines": "55-83",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table lists forms in italics with lang='ain-Latn', which is consistent. However, some forms in the table are written with spaces (kor an) while other similar forms are written with spaces (wa an). No inconsistency within the table.",
+    "quote": "a, aan, nisa, nankor, rusuy, easirki, kor an, wa an, wa isam, wa okere, wa kore, easkay, eaykap, koyaykus, amkir, yan, iteki, ro, hani",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#039",
+  "chapter": "tam-overview",
+  "lines": "150-156",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is consistent with the table on lines 162-191, which uses the same three types. No contradiction.",
+    "quote": "Nakagawa divides the lexicon into action, change, and stative verbs",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#038",
+  "chapter": "tam-overview",
+  "lines": "1-3",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Svelte component import is a pipeline artifact that would be processed, but it's not visible to the reader. This is not a register leak in the prose, so not an issue.",
+    "quote": "<script lang=\"ts\"> ... import ... </script>",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#037",
+  "chapter": "tam-overview",
+  "lines": "115-116",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The paragraph lists four resources: time adverbs, prospective/necessity forms, situational evidential siri, and completion forms. However, only three are explicitly listed with examples? Actually, four are listed: (1) time adverbs, (2) prospective/necessity forms, (3) situational evidential, (4) completion forms. That is correct. No issue.",
+    "quote": "Temporal location is recovered from four overt resources.",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#033",
+  "chapter": "tam-overview",
+  "lines": "277-278",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss of a is 'PFV' (perfective). However, on line 272, Nakagawa is said to deny that a is tense or aspect, yet the gloss assigns a perfective aspect value. This inconsistency is between the description (where a is contested) and the example gloss (where a is glossed as PFV). The chapter notes that Nakagawa reads it differently (line 283), but the example gloss uses PFV, which aligns with one analysis. This is not necessarily a contradiction, but it might confuse readers who see PFV in the gloss while the text questions whether it is aspect.",
+    "quote": "m='tane pakno a=e=tumam wa hotke=an a korka' g='now until 4.A=2SG.O=embrace CONJ lie.down=4.S PFV although'",
+    "suggestion": "Consider adding a note in the gloss that the PFV gloss represents one analysis, or use a more neutral gloss like 'AUX' if the chapter's meta-analysis is agnostic.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#031",
+  "chapter": "tam-overview",
+  "lines": "102-105",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The list includes a/rok 'sit', but on lines 264-265, a/rok is described as the source of the perfective/anterior auxiliary. However, the list here also includes an/oka 'exist', which is later described as feeding the existential-aspect frames. This is consistent. The copyedit issue is minor: the em dash before the list could be a colon for clarity, but it's not wrong.",
+    "quote": "The lexical material of these frames comes from the suppletive singular/plural verb pairs that Ijäs's Lesson 9 catalogues as special verb forms — a/rok 'sit', an/oka 'exist', ek/arki 'come', arpa/paye 'go'",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#028",
+  "chapter": "tam-overview",
+  "lines": "288-291",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that the a/aan pair echoes Classical Japanese ki and keri is attributed to Yoshikawa 2022, but the epistemic tag on line 273 is ‹contested› for the analysis of a, and on line 329 the etymology of aan is also tagged ‹contested›. However, the parallel with Japanese is stated without an epistemic tag in lines 288-293. This is a minor inconsistency in tagging practice, but the claim itself may be from Yoshikawa and is not tagged as contested, while the surrounding analyses are. This could be intentional but feels like a leak.",
+    "quote": "Yoshikawa analyses it as perfect plus indirect evidentiality ... the two echoing the direct/indirect past of Classical Japanese ki and keri",
+    "suggestion": "Consider adding a ‹contested› tag or clarifying that the Japanese parallel is part of Yoshikawa's analysis, which is itself contested.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#021",
+  "chapter": "tam-overview",
+  "lines": "194",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'the sequential conjunctive <i lang=\"ain-Latn\">wa</i>' is slightly redundant. 'the sequential connective <i lang=\"ain-Latn\">wa</i>' or simply 'the sequential <i lang=\"ain-Latn\">wa</i>' might be more concise.",
+    "quote": "The resultative <i lang=\"ain-Latn\">wa an</i> joins a lexical verb, the sequential conjunctive <i lang=\"ain-Latn\">wa</i>, and the existential verb",
+    "suggestion": "the sequential conjunctive <i lang=\"ain-Latn\">wa</i> -> the sequential connective <i lang=\"ain-Latn\">wa</i>",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#020",
+  "chapter": "tam-overview",
+  "lines": "187",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 175, adding glosses for 'wa' and 'an' would improve clarity.",
+    "quote": "<i lang=\"ain-Latn\">V wa an</i> on the change-into reading",
+    "suggestion": "Add glosses for 'wa' and 'an' to the table entry for <i lang=\"ain-Latn\">V wa an</i>.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#019",
+  "chapter": "tam-overview",
+  "lines": "181",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 175, adding glosses for 'wa' and 'an' would improve clarity.",
+    "quote": "<i lang=\"ain-Latn\">V wa an</i>; <i lang=\"ain-Latn\">V kor an</i> for the process",
+    "suggestion": "Add glosses for 'wa' and 'an' to the table entry for <i lang=\"ain-Latn\">V wa an</i>.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#018",
+  "chapter": "tam-overview",
+  "lines": "175",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This form is presented in the 'usual frame' column. It might be beneficial to include the gloss for 'kor' and 'an' here for immediate context, similar to how other forms are glossed in the text.",
+    "quote": "<i lang=\"ain-Latn\">V kor an</i>",
+    "suggestion": "Add glosses for 'kor' and 'an' to the table entry for <i lang=\"ain-Latn\">V kor an</i>.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#017",
+  "chapter": "tam-overview",
+  "lines": "154",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses for the suffixes are quite brief. For '-kosanu', 'happen once, briefly' could be expanded to clarify if it's a single event or a short duration. For '-natara', 'persist' is clear but could be more specific if there's a nuance.",
+    "quote": "such as <i lang=\"ain-Latn\">-kosanu</i> 'happen once, briefly' or <i lang=\"ain-Latn\">-natara</i> 'persist'",
+    "suggestion": "Expand the glosses for '-kosanu' and '-natara' for greater clarity.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#016",
+  "chapter": "tam-overview",
+  "lines": "141",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form <i lang=\"ain-Latn\">kusune</i> is presented as a single word in the pedagogical orthography. It might be helpful to explicitly state that this is a non-standard or simplified spelling.",
+    "quote": "her pedagogical orthography writes <i lang=\"ain-Latn\">kusune</i> as one word",
+    "suggestion": "her pedagogical orthography writes <i lang=\"ain-Latn\">kusune</i> as one word -> her pedagogical orthography writes <i lang=\"ain-Latn\">kusune</i> as a single word (a teaching convention)",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#015",
+  "chapter": "tam-overview",
+  "lines": "135",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note explains that '=an' is used as the narrative first person. This is a specific usage and could be more clearly stated as a 'narrative first person' or 'pragmatic first person' rather than just 'fourth person used as'.",
+    "quote": "kusu ne supplies the scheduled-future reading; ek is the singular 'come' stem and =an the fourth person used as the narrative first person.",
+    "suggestion": "=an the fourth person used as the narrative first person -> =an, which functions as a narrative first person.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#014",
+  "chapter": "tam-overview",
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">oasi</i> is 'surely will', and for <i lang=\"ain-Latn\">etokus</i> is 'be about to'. These are presented as future readings, but <i lang=\"ain-Latn\">etokus</i> is glossed as 'be about to', which is more immediate than a general future.",
+    "quote": "<i lang=\"ain-Latn\">kusu ne</i>, <i lang=\"ain-Latn\">oasi</i> 'surely will', and <i lang=\"ain-Latn\">etokus</i> 'be about to'",
+    "suggestion": "Clarify the temporal nuance of <i lang=\"ain-Latn\">etokus</i> if it differs significantly from a general future reading.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#013",
+  "chapter": "tam-overview",
+  "lines": "110",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'tracking the number of the subject' is slightly informal. 'reflecting' or 'corresponding to' might be more precise.",
+    "quote": "the number of the auxiliary tracking the number of the subject",
+    "suggestion": "tracking the number of the subject -> corresponding to the number of the subject",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#012",
+  "chapter": "tam-overview",
+  "lines": "108",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 103, the slash could be replaced with 'and' for clarity.",
+    "quote": "<i lang=\"ain-Latn\">a</i>/<i lang=\"ain-Latn\">rok</i>",
+    "suggestion": "<i lang=\"ain-Latn\">a</i>/<i lang=\"ain-Latn\">rok</i> -> <i lang=\"ain-Latn\">a</i> and <i lang=\"ain-Latn\">rok</i>",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 104, the slash could be replaced with 'and' for clarity.",
+    "quote": "<i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">oka</i>",
+    "suggestion": "<i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">oka</i> -> <i lang=\"ain-Latn\">an</i> and <i lang=\"ain-Latn\">oka</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#010",
+  "chapter": "tam-overview",
+  "lines": "94",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'develops the same point under the cover term' is a bit wordy. 'uses the term' or 'refers to this as' might be more direct.",
+    "quote": "forms that express aspect-like meaning, and Yoshikawa develops the same point under the cover term \"existential aspectual forms\"",
+    "suggestion": "Yoshikawa develops the same point under the cover term \"existential aspectual forms\" -> Yoshikawa uses the term \"existential aspectual forms\" for this.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#008",
+  "chapter": "tam-overview",
+  "lines": "80",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'unchanged otherwise' is a bit vague. It could be clearer what 'otherwise' refers to.",
+    "quote": "bare-stem imperative; clause unchanged otherwise",
+    "suggestion": "bare-stem imperative; clause unchanged otherwise -> bare-stem imperative; clause otherwise unchanged",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#007",
+  "chapter": "tam-overview",
+  "lines": "73",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 59, 'unmarked' is used. The phrasing could be more concise.",
+    "quote": "on <i lang=\"ain-Latn\">V</i>; the transitive verb is unmarked",
+    "suggestion": "on <i lang=\"ain-Latn\">V</i>; the transitive verb is unmarked -> on <i lang=\"ain-Latn\">V</i>; transitive verb unmarked",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#006",
+  "chapter": "tam-overview",
+  "lines": "66",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'need not corefer' is slightly informal. 'are not required to corefer' or 'do not necessarily corefer' might be more formal.",
+    "quote": "both predicates may be indexed; subjects need not corefer",
+    "suggestion": "subjects need not corefer -> subjects do not necessarily corefer",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#004",
+  "chapter": "tam-overview",
+  "lines": "41",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page ranges in the citations are inconsistent (e.g., '492-495' vs '306, 439-443'). While not strictly incorrect, it could be more uniform.",
+    "quote": "<Ref k=\"bugaeva2012\" p=\"492–495\" />; <Ref k=\"nakagawa2024\" p=\"306, 439–443\" />.",
+    "suggestion": "Consider standardizing the format of page ranges if possible, though this is a minor point.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#003",
+  "chapter": "tam-overview",
+  "lines": "31",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Refsing (1986) uses a section marker (§) which is less common than page numbers for this type of reference. It's not strictly wrong, but could be more consistent with the Chiri citation.",
+    "quote": "<Ref k=\"chiri1942\" p=\"96–97\" />; <Ref k=\"refsing1986\" p=\"§14.9.1\" /> ‹contested›.",
+    "suggestion": "If possible, find page numbers for Refsing (1986) to match the format of the Chiri (1942) citation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#002",
+  "chapter": "tam-overview",
+  "lines": "20",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'routes each to its detail chapter' is slightly awkward. 'directs' or 'refers' might be clearer.",
+    "quote": "this chapter maps the forms that supply aspectual, modal, and illocutionary values and routes each to its detail chapter.",
+    "suggestion": "routes each to its detail chapter -> directs each to its detail chapter",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#001",
+  "chapter": "tam-overview",
+  "lines": "10",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2012) includes page numbers, but the citation for Takahashi (2022) does not. This is inconsistent.",
+    "quote": "; <Ref k=\"bugaeva2012\" p=\"491, 493\" />; <Ref k=\"takahashi2022\" />",
+    "suggestion": "Add page numbers to the Takahashi (2022) citation if available, or remove page numbers from the Bugaeva (2012) citation for consistency.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Takahashi (2022) is repeated from the previous sentence, and Yoshikawa (2022) is cited without page numbers. This is inconsistent with other citations in the paragraph.",
+    "quote": "<Ref k=\"takahashi2022\" />; <Ref k=\"yoshikawa2022\" />",
+    "suggestion": "Ensure all citations have consistent formatting, including page numbers if applicable.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#046",
+  "chapter": "tam-overview",
+  "lines": "516",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'final particles' is used here without hyphenation, but in the table (line 78) it is part of 'final-particle layer'. This is an inconsistency in compound noun styling.",
+    "quote": "final particles <i lang=\"ain-Latn\">ro</i>, <i lang=\"ain-Latn\">rok</i>, or <i lang=\"ain-Latn\">no</i>",
+    "suggestion": "Use either 'final-particle' or 'final particle' consistently.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#045",
+  "chapter": "tam-overview",
+  "lines": "313",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The plural form is given as 'rokoka', but in line 322 the plural is written as 'rok-oka' with a hyphen. This is a morphological inconsistency within the same discussion.",
+    "quote": "<i lang=\"ain-Latn\">aan</i> / pl. <i lang=\"ain-Latn\">rokoka</i>",
+    "suggestion": "Use a consistent form: either 'rokoka' or 'rok-oka' throughout.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#044",
+  "chapter": "tam-overview",
+  "lines": "307",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of plural forms: 'pl.' is used here, but in line 313 it is spelled out as 'pl.'. The table should use a consistent label (either 'pl.' or 'plural').",
+    "quote": "<i lang=\"ain-Latn\">a</i> / pl. <i lang=\"ain-Latn\">rok</i>",
+    "suggestion": "Standardize to either 'pl.' or 'plural' across the table.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#042",
+  "chapter": "tam-overview",
+  "lines": "78",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: 'final-particle' is hyphenated here but appears as 'final particle' in other sections (e.g., line 516). The chapter should use a consistent form.",
+    "quote": "directive / final-particle layer",
+    "suggestion": "Use either 'final-particle' or 'final particle' consistently throughout the chapter.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#040",
+  "chapter": "tam-overview",
+  "lines": "407-413",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence about the etymology is tagged with ‹speculative› on line 413, but the preceding part of the paragraph (about the semantics) is not tagged at all, yet it relies on Ijäs (2023) and Nakagawa (2024). The epistemic tagging is inconsistent: the semantics are not tagged, but the etymology is. This is a minor hygiene issue.",
+    "quote": "Epistemic nankor ... Ijäs ... adds an etymology from a verb 'be trustworthy'; no source read for this account confirms that derivation, and it is best left as her own suggestion",
+    "suggestion": "Either add a source tag to the semantics claim or remove the speculative tag from the etymology if the source is sufficient.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#035",
+  "chapter": "tam-overview",
+  "lines": "322-330",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The plural form is written with a hyphen on line 322 (rok-oka) but without a hyphen on lines 287 (rokoka) and 313 (rokoka). This orthographic inconsistency within the same chapter is a formatting drift.",
+    "quote": "rok-oka ... rokoka",
+    "suggestion": "Choose a consistent spelling. Given the morphological analysis (rok + oka), the hyphenated form is more transparent.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#034",
+  "chapter": "tam-overview",
+  "lines": "264-272",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The paragraph lists four different analyses (Kindaichi–Tamura, Bugaeva–Satō, Nakagawa, Yoshikawa) and labels the whole ‹contested› on line 273. However, the example on line 277-278 glosses a as 'PFV', which aligns with one of the analyses (perfective), not with the neutral description. The citation hygiene is mildly inconsistent: the example's gloss commits to one analysis while the text presents multiple views as unresolved.",
+    "quote": "The auxiliary a (plural rok) ... the most disputed member of the system ... the disagreement is substantive",
+    "suggestion": "Either gloss a more neutrally (e.g., 'AUX') or mention in the note that the gloss reflects the perfective analysis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#030",
+  "chapter": "tam-overview",
+  "lines": "411",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This wording ('best left as her own suggestion') is a meta-commentary that addresses the reader as if the book is making a editorial decision about what to include. It reads like a note from the author to themselves or the copyeditor, rather than a neutral presentation of content. This is a register leak from the production process.",
+    "quote": "best left as her own suggestion",
+    "suggestion": "Rephrase to something like 'Ijäs suggests an etymology from a verb meaning 'be trustworthy', but this derivation is not confirmed by other sources.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#029",
+  "chapter": "tam-overview",
+  "lines": "411-413",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text states that Ijäs's etymology is not confirmed by sources read and labels it ‹speculative›. However, the same passage (line 410-411) attributes to Ijäs the range 'must have' on a past event, 'probably' on a future one, which is not tagged as speculative. The citation hygiene here is weak: the claim about the etymology may indeed be speculative, but the surrounding description of the range is not tagged. Additionally, the phrase 'best left as her own suggestion' is a meta-commentary addressed to the production process (a register leak).",
+    "quote": "Ijäs ... adds an etymology from a verb 'be trustworthy'; no source read for this account confirms that derivation, and it is best left as her own suggestion",
+    "suggestion": "Remove 'best left as her own suggestion' and rephrase as a neutral statement about the unattested etymology, e.g. 'Ijäs suggests an etymology from a verb meaning 'be trustworthy', but no source read for this account confirms that derivation.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#027",
+  "chapter": "tam-overview",
+  "lines": "213-215",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "In the example on line 224: m='yuk as wa an na', g='deer stand CONJ exist FIN', tr='A deer is standing.' The gloss of wa as 'CONJ' (conjunctive) is inconsistent with the description on line 214-215 where wa is described as the 'sequential conjunctive'. The gloss should be 'SEQ' or 'CONJ' consistently across the chapter, but CONJ is ambiguous. However, the same wa is glossed as 'CONJ' on line 225 and as 'CONJ' on line 278, so it is consistent within the chapter.",
+    "quote": "wa an",
+    "suggestion": null,
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#026",
+  "chapter": "tam-overview",
+  "lines": "264-265",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "On line 264 the plural of auxiliary a is given as rok, which matches the pair verb list. On line 287 the plural of aan is given as rokoka. But on line 307 in the table, the plural of a is listed as rok. Consistent, but the relationship between a (singular) and rok (plural) is the same as in the verb pair, which is consistent. No contradiction.",
+    "quote": "The auxiliary a (plural rok)",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#023",
+  "chapter": "tam-overview",
+  "lines": "107-108",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The verb pair is given as a/rok 'sit' on line 103–104 and also as a/rok 'sit' on line 107–108, but on line 264–265 the same pair is described as grammaticalized from the verb a/rok 'sit'. Consistent within chapter, but the plural form rok is used for the plural of auxiliary a on line 264, yet the pair verb list on line 104 lists a/rok, while the table on line 307 gives a / pl. rok. No contradiction.",
+    "quote": "a/rok 'sit'",
+    "suggestion": null,
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#022",
+  "chapter": "tam-overview",
+  "lines": "195",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">an</i> is 'existential'. However, in line 90, <i lang=\"ain-Latn\">an</i> is glossed as 'exist'. While related, 'existential' implies a grammatical function, whereas 'exist' is a verb meaning. This could be clarified.",
+    "quote": "and the existential <i lang=\"ain-Latn\">an</i> (plural <i lang=\"ain-Latn\">oka</i>).",
+    "suggestion": "Ensure consistent glossing for <i lang=\"ain-Latn\">an</i>, distinguishing between its lexical meaning ('exist') and its grammatical function ('existential').",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "tam-overview~p1#009",
+  "chapter": "tam-overview",
+  "lines": "91",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">an</i> is 'exist', but the example sentence implies it carries person marking ('=an' in line 204, and here 'ku=' is mentioned as being carried by <i lang=\"ain-Latn\">an</i>). The gloss should reflect this.",
+    "quote": "<i lang=\"ain-Latn\">an</i> 'exist' carries the same <i lang=\"ain-Latn\">ku=</i> as the lexical <i lang=\"ain-Latn\">tere</i> 'wait'",
+    "suggestion": "Change the gloss for <i lang=\"ain-Latn\">an</i> to 'exist, be' or similar to accommodate person marking.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

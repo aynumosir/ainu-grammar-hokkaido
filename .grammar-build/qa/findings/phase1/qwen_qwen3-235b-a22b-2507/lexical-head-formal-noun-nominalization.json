@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "167",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "trace, appearance, voice, sensation",
+  "issue": "The gloss in the table cell for the sensory nouns is given as 'trace, appearance, voice, sensation', but this does not match the individual glosses used elsewhere: 'trace' corresponds to ruwe, 'appearance' to siri, 'voice' to hawe, and 'sensation' to humi. However, the table presents this as a single unified gloss for all four forms together, which may misrepresent them as a polysemous unit rather than distinct lexemes with separate semantic profiles.",
+  "suggestion": "Change the gloss to list them separately: 'trace (ruwe), appearance (siri), voice (hawe), sensation (humi)' or split into individual rows for clarity.",
+  "confidence": 0.95,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "243-247",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ku=kemeyki kor ku=itak hi iyotta pirka",
+  "issue": "The free translation 'it is best to talk while sewing' implies a simultaneous action (talking during sewing), but the gloss '1SG.A=sew CONJ 1SG.A=talk NMLZ most good' suggests two coordinated finite clauses, not a subordinate temporal or manner relation. The gloss does not reflect the simultaneity or dependency implied in the translation.",
+  "suggestion": "Revise the gloss to better reflect the dependency, e.g., '1SG.A=sew while 1SG.A=talk NMLZ most good' or adjust the free translation to 'my sewing and my talking is most good' if coordination is intended.",
+  "confidence": 0.9,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "262-264",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "a=ye hi ka a=kar hi ka a=eramiskari",
+  "issue": "The gloss '4.A=say NMLZ even 4.A=do NMLZ even 4.A=not.know' uses 'even' for 'ka', but the free translation uses 'or' ('not knowing what to say or what to do'). This is a mismatch in logical connective semantics: 'ka' is additive ('even') not disjunctive ('or').",
+  "suggestion": "Either change the free translation to 'not knowing what to say, even what to do' or revise the gloss of 'ka' to reflect disjunction if that is the intended meaning (though this would require reanalysis).",
+  "confidence": 0.85,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "379-387",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "poro cikuni oar isam sir-i ku=nukar wa sonno ku=iruska",
+  "issue": "The morpheme 'sir-i' is glossed as 'appearance-POSS' in the note and in the table as the possessed form of 'sir', but in the main gloss line it appears as 'appearance-POSS' without alignment to a specific morpheme in the 'm' string. The 'm' string has 'sir-i', but the 'g' string has 'appearance-POSS' as a single unit, failing to segment the root and suffix. This violates Leipzig glossing rules.",
+  "suggestion": "Change the gloss to 'appearance - POSS' (with space) to align with 'sir - i'.",
+  "confidence": 0.98,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "428-430",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ci=ronnu-p",
+  "issue": "The gloss is '1PL.A=kill-NMLZ', but the morpheme '-p' is a formal noun, not a bound nominalizing suffix. Glossing it as '-NMLZ' misrepresents it as a derivational affix rather than a separate lexical noun. Elsewhere in the chapter, these are treated as independent words (e.g., in tables).",
+  "suggestion": "Change the gloss to '1PL.A=kill thing' or '1PL.A=kill NMLZ=thing' to reflect its status as a formal noun, not a bound morpheme.",
+  "confidence": 0.97,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "438-440",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ape-o-i",
+  "issue": "The gloss is 'fire-enter-NMLZ', but '-i' is the allomorph of the formal noun 'hi' after consonants, not a bound suffix. Like '-p', it should not be glossed as '-NMLZ' but as a separate nominal head. The current gloss implies a derivational process rather than clausal nominalization via a formal noun.",
+  "suggestion": "Change the gloss to 'fire enter place' or 'fire enter NMLZ=place' to reflect the syntactic status of 'hi' as a formal noun.",
+  "confidence": 0.97,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "124",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "hi (~ i after C)",
+  "issue": "The parenthetical '(~ i after C)' uses 'C' to mean 'consonant', but this abbreviation is not standard in the chapter and may confuse readers. The rest of the chapter spells out 'consonant' or uses examples.",
+  "suggestion": "Change to '(~ i after a consonant)' for clarity and consistency.",
+  "confidence": 0.9,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "usi(ke)",
+  "issue": "The form 'usi(ke)' uses parentheses to indicate optional 'ke', but elsewhere (e.g., line 149) the variants are listed explicitly as 'uske', 'usi', 'usike'. The notation is inconsistent with the table in section 3.1 which lists 'usi' and 'uske' as separate dialect forms.",
+  "suggestion": "Use 'usi / uske' to match the explicit disjunction used elsewhere.",
+  "confidence": 0.85,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "337-339",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "oro ta k=an kotan",
+  "issue": "The gloss 'place LOC 1SG.S=exist village' does not align with the free translation 'the village I live in'. The verb 'k=an' means 'exist' (with person marking), not 'live'. While 'exist' can be used for 'live' in some contexts, the gloss should reflect the lexical meaning, and the translation should ideally clarify the idiomatic use.",
+  "suggestion": "Revise the gloss to 'place LOC 1SG.S=exist village' and the translation to 'the village where I exist' or better, annotate that 'k=an' here means 'live'. Alternatively, adjust the gloss to '1SG.S=live' if that is the intended reading.",
+  "confidence": 0.9,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "467-469",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "nea menoko ani turepta ni",
+  "issue": "The gloss 'that woman INS dig.uba.lily stick' does not reflect the verb morphology. 'turepta' appears to be a finite verb form (3SG.A=?) 'dug uba-lily', but is glossed as a compound noun-like unit 'dig.uba.lily'. This obscures the verbal nature of the relative clause.",
+  "suggestion": "Gloss 'turepta' as 'dig-3SG.A' or 'dug' to reflect its verbal status, e.g., 'dig-3SG.A stick'.",
+  "confidence": 0.8,
+  "chapter": "lexical-head-formal-noun-nominalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

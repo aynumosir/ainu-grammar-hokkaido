@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "14",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"tanne\" gl=\"be long\" />",
+  "issue": "The word 'tanne' is spelled without a macron, but the corresponding entry in the table (line 74) uses 'tanne' without macron as well; however, standard Ainu orthography typically marks vowel length, and consistency within the chapter should be maintained.",
+  "suggestion": "Check if 'tanne' should consistently carry a macron (e.g., 'tānne') based on established romanization; if not, ensure uniformity in spelling throughout.",
+  "confidence": 0.8,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "89",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">méan</i>",
+  "issue": "The form 'méan' includes an acute accent on 'e', but no other forms in the chapter use acute accents. This may reflect an orthographic inconsistency unless specifically justified by dialectal variation.",
+  "suggestion": "Verify whether the acute accent in 'méan' is required by the romanization system in use (e.g., for phonemic distinction) and ensure consistent application across similar forms.",
+  "confidence": 0.75,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "27",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Representative property verbs with 4.S predication and prenominal collocates (Saru baseline)",
+  "issue": "The term '4.S' is used without prior definition in this chapter; readers may not know that it refers to fourth-person singular, especially if this is the first mention.",
+  "suggestion": "Expand or define '4.S' on first use, e.g., 'fourth-person singular (4.S)'.",
+  "confidence": 0.9,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "212-214",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"tunasno pirka\" g=\"quickly be.good\" tr=\"Get well quickly!\"",
+  "issue": "The gloss 'be.good' does not match the free translation 'Get well quickly!', which implies an inchoative or imperative reading related to health recovery, while 'be.good' is more general. The gloss should reflect the health-specific sense seen in the translation.",
+  "suggestion": "Update gloss to 'be.well' or 'be.healthy' to align with the medical sense in the translation.",
+  "confidence": 0.95,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "463",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"an\" gl=\"exist, be present\" />",
+  "issue": "The gloss 'exist, be present' does not fully capture the proposed inchoative function in the example 'pirka an' interpreted as 'become good', which the surrounding text suggests. This creates a mismatch between the gloss and the semantic claim.",
+  "suggestion": "Revise gloss to include potential inchoative nuance, e.g., 'exist, come into being, become present'.",
+  "confidence": 0.85,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "377",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(antitwilight, aynu-corpora Discord, 2026-06-02) <Ref k=\"aynucorporadiscord\" /> ‹contested›",
+  "issue": "The epistemic tag ‹contested› is applied, but the only support is a Discord attribution, which is not a peer-reviewed source. This risks inflating the credibility of an informal observation.",
+  "suggestion": "Either downgrade the epistemic tag to ‹speculative› or add a stronger source to justify ‹contested›.",
+  "confidence": 0.9,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "466",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord, 2024-11-15) <Ref k=\"aynucorporadiscord\" /> ‹speculative›",
+  "issue": "The epistemic tag ‹speculative› is correctly applied, but it is attached to a Discord source without additional corroboration, which is appropriate. However, the tag should not be omitted or weakened in similar cases.",
+  "suggestion": "No change needed, but flag for consistency: ensure all Discord-sourced hypotheses are tagged ‹speculative› or lower.",
+  "confidence": 0.8,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "128",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"sonno ku=pewre or ta ku=nu yukar ne ru-we ne\" g=\"truly 1SG.S=be.young inside LOC 1SG.A=hear yukar COP track-POSS COP\"",
+  "issue": "The morpheme 'ku=nu' is glossed as '1SG.A=hear', but 'nu' is an intransitive verb meaning 'hear', and should take S (intransitive subject) marking, not A (transitive subject). The gloss incorrectly assigns agentive (A) role to the subject of 'nu'.",
+  "suggestion": "Revise gloss to '1SG.S=hear' to reflect correct person-marking frame for intransitive verb.",
+  "confidence": 0.95,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"wen\" gl=\"be bad, be poor\" />",
+  "issue": "The word 'wen' appears without diacritics, but in some Ainu romanization systems, vowel length or quality might be marked. However, consistency with other entries should be verified.",
+  "suggestion": "Ensure orthographic consistency with other forms like 'pewre', 'pirka', etc., and confirm if 'wen' should carry a macron or other mark.",
+  "confidence": 0.7,
+  "chapter": "no-adjective-class-property-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

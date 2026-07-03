@@ -1,0 +1,1250 @@
+[
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#040",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "181-183",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Gloss 'exist.PL' indicates plural subject, but translation uses singular 'it'. Also 'voice-POSS' is not directly reflected in the free translation.",
+    "quote": "g=\"now egg have INFR cluck voice-POSS exist.PL\" tr=\"Apparently having just laid an egg, it is clucking kok-kok.\"",
+    "suggestion": "Either change gloss to 'exist.SG' if the subject is singular, or adjust translation to reflect plural (e.g., 'they are clucking').",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss \"INFR\" for <i lang=\"ain-Latn\">noyne</i> is not standard Leipzig-compliant glossing; the correct gloss should be \"INFER\" or \"EVID\" to align with standard practices. Additionally, \"voice-POSS\" for <i lang=\"ain-Latn\">hawe</i> is not clearly aligned with the morpheme structure.",
+    "quote": "g=\"now egg have INFR cluck voice-POSS exist.PL\"",
+    "suggestion": "Change \"INFR\" to \"INFER\" and clarify \"hawe\" gloss; e.g., \"voice-POSS\" → \"voice-ATTR\" or \"voice-GEN\" if possessive, or use \"sound\" if more accurate.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#018",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotom(no)' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kotom(no)</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '雅語' is not translated or glossed, while other non-English terms are.",
+    "quote": "literary / <span lang=\"ja\">雅語</span>",
+    "suggestion": "literary / <span lang=\"ja\">雅語</span> (literary language)",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form \"kotom(no)\" uses parentheses to indicate optional allomorphy, but this formatting is inconsistent with how other allomorphs are presented in the table (using slashes). This creates a register inconsistency in orthographic presentation.",
+    "quote": "<i lang=\"ain-Latn\">kotom(no)</i>",
+    "suggestion": "Use the same format as other rows: \"<i lang=\"ain-Latn\">kotom</i> / <i lang=\"ain-Latn\">kotomno</i>\" or \"<i lang=\"ain-Latn\">kotom</i>, <i lang=\"ain-Latn\">kotomno</i>\".",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#016",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "119",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'apekor' and 'apokon' are consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">apekor</i> / <i lang=\"ain-Latn\">apokon</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'apokon' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">apokon</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as above: inconsistent formatting of allomorphs with slashes and no surrounding spaces, differing from standard typographic presentation in the same table.",
+    "quote": "<i lang=\"ain-Latn\">apekor</i> / <i lang=\"ain-Latn\">apokon</i>",
+    "suggestion": "Format consistently with commas or spaced slashes, e.g., \"<i lang=\"ain-Latn\">apekor</i>, <i lang=\"ain-Latn\">apokon</i>\".",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#015",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "109",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'pekor', 'pokor', and 'pokon' are consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pekor</i> / <i lang=\"ain-Latn\">pokor</i> / <i lang=\"ain-Latn\">pokon</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation and spacing in the listing of allomorphs: the forms are presented with slashes but without consistent spacing or punctuation, which may affect readability and formatting consistency within the table.",
+    "quote": "<i lang=\"ain-Latn\">pekor</i> / <i lang=\"ain-Latn\">pokor</i> / <i lang=\"ain-Latn\">pokon</i>",
+    "suggestion": "Use consistent spacing around slashes, e.g., \"<i lang=\"ain-Latn\">pekor</i> / <i lang=\"ain-Latn\">pokor</i> / <i lang=\"ain-Latn\">pokon</i>\" → \"<i lang=\"ain-Latn\">pekor</i>, <i lang=\"ain-Latn\">pokor</i>, <i lang=\"ain-Latn\">pokon</i>\" or ensure uniform spacing around slashes.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#043",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "234",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss contains two instances of \"rich.man\", but the Ainu text only has one occurrence of \"nispa\". The second \"rich.man\" in the gloss appears to be a translation addition not reflected in the morpheme line, creating a mismatch.",
+    "quote": "g=\"4.POSS=father equal rich.man not.exist rich.man COP\"",
+    "suggestion": "Revise the gloss to match the morphemes: \"4.POSS=father equal rich.man not.exist COP\" — the final \"rich.man\" in the gloss should be removed or marked as implied.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#039",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "55-57",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Gloss indicates 4th person subject (4.S) but translation uses 3rd person singular 'she', creating a person/number inconsistency.",
+    "quote": "g=\"NEG eat CONJ go=4.S\" tr=\"Without eating, she went.\"",
+    "suggestion": "Change translation to 'Without eating, one went.' or adjust gloss to 3.S if the intended subject is specific.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#042",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "197",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term \"copula\" is used, but in Ainu grammar, <i lang=\"ain-Latn\">ne</i> is more accurately described as a nominalizer or sentence-final particle rather than a copula in the typical sense. While this may be internally consistent with other chapters, the use of \"copula\" could be misleading if not defined.",
+    "quote": "do not take the copula <i lang=\"ain-Latn\">ne</i> ‹consensus›",
+    "suggestion": "Use \"nominalizer\" instead of \"copula\" for accuracy, unless the broader reference grammar consistently uses \"copula\" for <i lang=\"ain-Latn\">ne</i>.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#038",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "251",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kane' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kane</i>",
+    "suggestion": "<i lang=\"ain-Latn\">kane</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '〜ほどに' is not translated or glossed, while other non-English terms are.",
+    "quote": "〜ほどに",
+    "suggestion": "〜ほどに 'to the degree/extent that'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#037",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "239",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'pakno', 'a=ona', 'pakno', 'nispa', 'isam', 'nispa' in the note are not marked with lang='ain-Latn'.",
+    "quote": "pakno marks the degree of the father's wealth as the comparison standard. The prenominal clause [a=ona pakno nispa isam] 'to whose extent/degree no rich man exists' modifies the head nispa 'rich man'. The strategy amounts to a comparative without a dedicated comparative particle: no other rich man exists to the extent/degree of my father. See the full relativization analysis in the prenominal chapter.",
+    "suggestion": "pakno marks the degree of the father's wealth as the comparison standard. The prenominal clause [a=ona pakno nispa isam] 'to whose extent/degree no rich man exists' modifies the head nispa 'rich man'. The strategy amounts to a comparative without a dedicated comparative particle: no other rich man exists to the extent/degree of my father. See the full relativization analysis in the prenominal chapter.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#036",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "234",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'a=ona', 'pakno', 'nispa', 'isam', 'nispa', and 'ne' within the 'm' attribute are not consistently marked with lang='ain-Latn'.",
+    "quote": "m=\"a=ona pakno nispa isam nispa ne\"",
+    "suggestion": "m=\"a=ona pakno nispa isam nispa ne\"",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'equal', 'rich.man', 'not.exist', and 'COP' are not consistently capitalized or formatted.",
+    "quote": "g=\"4.POSS=father equal rich.man not.exist rich.man COP\"",
+    "suggestion": "g=\"4.POSS=father equal rich.man not.exist rich.man COP\"",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#035",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "228",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase '[to whose extent no rich man exists]' is not marked with lang='ain-Latn'.",
+    "quote": "[to whose extent no rich man exists] rich man",
+    "suggestion": "[<i lang=\"ain-Latn\">to whose extent no rich man exists</i>] rich man",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#034",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "224",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pakno' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pakno</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pakno</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#033",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "213",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pakno' is not marked with lang='ain-Latn'.",
+    "quote": "<A w=\"pakno\" gl=\"up to, as far as, to the extent of\" />",
+    "suggestion": "<A w=\"pakno\" gl=\"up to, as far as, to the extent of\" lang=\"ain-Latn\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pakno' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pakno</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pakno</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#032",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "206",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'koraci' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">koraci</i>",
+    "suggestion": "<i lang=\"ain-Latn\">koraci</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#031",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "201",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pokon' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pokon</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pokon</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotom' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kotom</i>",
+    "suggestion": "<i lang=\"ain-Latn\">kotom</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'koraci' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">koraci</i>",
+    "suggestion": "<i lang=\"ain-Latn\">koraci</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#030",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'siri' and 'ne' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">siri ne</i>",
+    "suggestion": "<i lang=\"ain-Latn\">siri ne</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'humi' and 'ne' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">humi ne</i>",
+    "suggestion": "<i lang=\"ain-Latn\">humi ne</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'noyne' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotom' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kotom</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ne' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">ne</i>",
+    "suggestion": "<i lang=\"ain-Latn\">ne</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#029",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "191",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'noyne' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotom' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kotom</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'noyne' and 'siran' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne siran</i>",
+    "suggestion": "<i lang=\"ain-Latn\">noyne siran</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'noyne' and 'humas' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne humas</i>",
+    "suggestion": "<i lang=\"ain-Latn\">noyne humas</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#028",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "187",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'kor', 'noyne', 'tane', 'tamanko', 'kor', 'okokokse', 'hawe', and 'as' in the note are not marked with lang='ain-Latn'.",
+    "quote": "The subject (a hen) is implicit. kor is the transitive verb 'have'; noyne is the inferential clause-linker that marks the entire first clause [tane tamanko kor] 'now having an egg' as inferred rather than directly witnessed. okokokse is onomatopoeic 'kok-kok' used as a sound verb; hawe as 'there is the voice/sound of' closes the main clause.",
+    "suggestion": "The subject (a hen) is implicit. kor is the transitive verb 'have'; noyne is the inferential clause-linker that marks the entire first clause [tane tamanko kor] 'now having an egg' as inferred rather than directly witnessed. okokokse is onomatopoeic 'kok-kok' used as a sound verb; hawe as 'there is the voice/sound of' closes the main clause.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#027",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "181",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'tane', 'tamanko', 'kor', 'noyne', 'okokokse', 'hawe', and 'as' within the 'm' attribute are not consistently marked with lang='ain-Latn'.",
+    "quote": "m=\"tane tamanko kor noyne okokokse hawe as\"",
+    "suggestion": "m=\"tane tamanko kor noyne okokokse hawe as\"",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'now', 'egg', 'have', 'INFR', 'cluck', 'voice-POSS', and 'exist.PL' are not consistently capitalized or formatted.",
+    "quote": "g=\"now egg have INFR cluck voice-POSS exist.PL\"",
+    "suggestion": "g=\"now egg have INFR cluck voice-POSS exist.PL\"",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#026",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "177",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'noyne' and 'siran' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne siran</i>",
+    "suggestion": "<i lang=\"ain-Latn\">noyne siran</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#025",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "173",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a=esanniyo' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">a=esanniyo</i>",
+    "suggestion": "<i lang=\"ain-Latn\">a=esanniyo</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'noyne' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'noyne' and 'ramu' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne ramu</i>",
+    "suggestion": "<i lang=\"ain-Latn\">noyne ramu</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yaynu' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">yaynu</i>",
+    "suggestion": "<i lang=\"ain-Latn\">yaynu</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'noyne' and 'humas' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne humas</i>",
+    "suggestion": "<i lang=\"ain-Latn\">noyne humas</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#024",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "168",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pekor' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pekor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pekor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'noyne' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne</i>",
+    "suggestion": "<i lang=\"ain-Latn\">noyne</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotom' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kotom</i>",
+    "suggestion": "<i lang=\"ain-Latn\">kotom</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'noyne' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotom(no)' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kotom(no)</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#023",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "164",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'pekor', 'nep', 'ka', 'e=nukar', 'e=yki', 'pekor', and 'noyne' in the note are not marked with lang='ain-Latn'.",
+    "quote": "pekor follows the finite clause nep ka e=nukar 'you see something' and connects to the main clause e=yki 'you behave/act'. The presupposition is that nothing is actually visible — the comparison is counterfactual. Satō (2008: 56) uses this example to contrast pekor with noyne: noyne would instead report a genuine inference from evidence.",
+    "suggestion": "pekor follows the finite clause nep ka e=nukar 'you see something' and connects to the main clause e=yki 'you behave/act'. The presupposition is that nothing is actually visible — the comparison is counterfactual. Satō (2008: 56) uses this example to contrast pekor with noyne: noyne would instead report a genuine inference from evidence.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#022",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "159",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'nep', 'ka', 'e=nukar', 'pekor', and 'e=yki' within the 'm' attribute are not consistently marked with lang='ain-Latn'.",
+    "quote": "m=\"nep ka e=nukar pekor e=yki\"",
+    "suggestion": "m=\"nep ka e=nukar pekor e=yki\"",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'EMPH', 'see', 'CONJ', and 'act' are not consistently capitalized or formatted.",
+    "quote": "g=\"something EMPH 2SG.A=see CONJ 2SG.S=act\"",
+    "suggestion": "g=\"something EMPH 2SG.A=see CONJ 2SG.S=act\"",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#021",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "152",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'nepkor' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">nepkor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nepkor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'nepkon' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">nepkon</i>",
+    "suggestion": "<i lang=\"ain-Latn\">nepkon</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#020",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "147",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'apekor' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">apekor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">apekor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'apokon' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">apokon</i>",
+    "suggestion": "<i lang=\"ain-Latn\">apokon</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#019",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "143",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'Pekor' is capitalized mid-sentence.",
+    "quote": "<i lang=\"ain-Latn\">Pekor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pekor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pekor' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pekor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pekor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pokor' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pokor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pokor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pokon' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pokon</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pokon</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#017",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "126",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'noyne' is marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'everyday speech' is not italicized or otherwise marked as a register, unlike 'literary / <span lang=\"ja\">雅語</span>' on line 135.",
+    "quote": "everyday speech",
+    "suggestion": "<i>everyday speech</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#014",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "90",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pekor' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pekor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pekor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'noyne' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">noyne</i>",
+    "suggestion": "<i lang=\"ain-Latn\">noyne</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kotom' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kotom</i>",
+    "suggestion": "<i lang=\"ain-Latn\">kotom</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#013",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "85",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa uses a page range '353–355' which is not consistently formatted with other page ranges in the chapter (e.g., '45–46' on line 36).",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"353–355\" />",
+    "suggestion": "<Ref k=\"nakagawa2024\" p=\"353-355\" />",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '推量・様態' is not translated or glossed, while other non-English terms are.",
+    "quote": "推量・様態",
+    "suggestion": "推量・様態 'conjecture/manner'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#012",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "75",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'wa' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">wa</i>",
+    "suggestion": "<i lang=\"ain-Latn\">wa</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#011",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "71",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'poronno' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">poronno</i>",
+    "suggestion": "<i lang=\"ain-Latn\">poronno</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'poron' is not marked with lang='ain-Latn'.",
+    "quote": "<A w=\"poron\" gl=\"be big, be much\" />",
+    "suggestion": "<A w=\"poron\" gl=\"be big, be much\" lang=\"ain-Latn\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'no' is marked with lang='ain-Latn' here, but not consistently in the first section.",
+    "quote": "<i lang=\"ain-Latn\">no</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#010",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "67",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pirka' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pirka</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pirka</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pirkano' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pirkano</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pirkano</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'k=eyam' and 'no' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">k=eyam no</i>",
+    "suggestion": "<i lang=\"ain-Latn\">k=eyam no</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#009",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "63",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'no' is marked with lang='ain-Latn' here, but not consistently in the first section.",
+    "quote": "<i lang=\"ain-Latn\">no</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'no' is marked with lang='ain-Latn' here, but not consistently in the first section.",
+    "quote": "<i lang=\"ain-Latn\">no</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'pirka', 'no', and 'arpa' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">pirka no arpa</i>",
+    "suggestion": "<i lang=\"ain-Latn\">pirka no arpa</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#008",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "59",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'somo', 'V', 'no', 'somo', 'ipe', and 'wa' in the note are not marked with lang='ain-Latn'.",
+    "quote": "The canonical somo V no construction: no is the required linker after a negated action predicate. Compare the unpreferred *somo ipe wa, which is disfavoured precisely because the preceding predicate is negated.",
+    "suggestion": "The canonical somo V no construction: no is the required linker after a negated action predicate. Compare the unpreferred *somo ipe wa, which is disfavoured precisely because the preceding predicate is negated.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#007",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "55",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'somo', 'ipe', 'no', and 'arpa' within the 'm' attribute are not consistently marked with lang='ain-Latn'.",
+    "quote": "m=\"somo ipe no arpa=an\"",
+    "suggestion": "m=\"somo ipe no arpa=an\"",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'NEG', 'eat', 'CONJ', and 'go' are not consistently capitalized or formatted.",
+    "quote": "g=\"NEG eat CONJ go=4.S\"",
+    "suggestion": "g=\"NEG eat CONJ go=4.S\"",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#006",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "51",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'somo', 'mokor', 'no', 'kamuyoritak', 'kor', and 'an' in the note are not marked with lang='ain-Latn'.",
+    "quote": "no follows the negated predicate somo mokor 'does not sleep'; the main-clause progressive kamuyoritak kor an 'was praying' is expressed with the simultaneity particle kor plus the existential an.",
+    "suggestion": "no follows the negated predicate somo mokor 'does not sleep'; the main-clause progressive kamuyoritak kor an 'was praying' is expressed with the simultaneity particle kor plus the existential an.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#005",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "45",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'somo', 'mokor', 'no', 'kamuyoritak', 'kor', and 'an' within the 'm' attribute are not consistently marked with lang='ain-Latn'.",
+    "quote": "m=\"a=onaha somo mokor no kamuyoritak kor an\"",
+    "suggestion": "m=\"a=onaha somo mokor no kamuyoritak kor an\"",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'NEG', 'CONJ', and 'exist' are not consistently capitalized or formatted.",
+    "quote": "g=\"4.POSS=father NEG sleep CONJ pray CONJ exist\"",
+    "suggestion": "g=\"4.POSS=father NEG sleep CONJ pray CONJ exist\"",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#004",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "34",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'somo' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">somo</i>",
+    "suggestion": "<i lang=\"ain-Latn\">somo</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'no' is marked with lang='ain-Latn' here, but not consistently in the first section.",
+    "quote": "<i lang=\"ain-Latn\">no</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'wa' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">wa</i>",
+    "suggestion": "<i lang=\"ain-Latn\">wa</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kor' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">kor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">kor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'no' is marked with lang='ain-Latn' here, but not consistently in the first section.",
+    "quote": "<i lang=\"ain-Latn\">no</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#003",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "27",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'no' is marked with lang='ain-Latn' here, but not consistently in the first section.",
+    "quote": "<i lang=\"ain-Latn\">no</i>",
+    "suggestion": null,
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'wa' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">wa</i>",
+    "suggestion": "<i lang=\"ain-Latn\">wa</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not marked with lang='ain-Latn'.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "<i lang=\"ain-Latn\">hine</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#002",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "14",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pakno' is not marked with lang='ain-Latn'.",
+    "quote": "<A w=\"pakno\" gl=\"up to, to the extent of\" />",
+    "suggestion": "<A w=\"pakno\" gl=\"up to, to the extent of\" lang=\"ain-Latn\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#001",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'no' is marked with lang='ain-Latn' in other parts of the chapter, but not here. It should be consistently marked.",
+    "quote": "<A w=\"no\" gl=\"(state/manner linker)\" />",
+    "suggestion": "<A w=\"no\" gl=\"(state/manner linker)\" lang=\"ain-Latn\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'pekor', 'apekor', 'noyne', and 'kotom' are not consistently marked with lang='ain-Latn'.",
+    "quote": "<A w=\"pekor\" gl=\"as if (counterfactual)\" />, <A w=\"apekor\" gl=\"as if (strong)\" />, <A w=\"noyne\" gl=\"apparently (inference)\" />, and <A w=\"kotom\" gl=\"it seems (literary)\"",
+    "suggestion": "<A w=\"pekor\" gl=\"as if (counterfactual)\" lang=\"ain-Latn\" />, <A w=\"apekor\" gl=\"as if (strong)\" lang=\"ain-Latn\" />, <A w=\"noyne\" gl=\"apparently (inference)\" lang=\"ain-Latn\" />, and <A w=\"kotom\" gl=\"it seems (literary)\" lang=\"ain-Latn\"",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#044",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "250-259",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text refers to <i lang=\"ain-Latn\">kane</i> as a simultaneity particle, but in the cited chapter <Xr ch=\"simultaneous-kor-clauses\" />, the particle is <i lang=\"ain-Latn\">kor</i>, not <i lang=\"ain-Latn\">kane</i>. This creates an internal contradiction unless <i lang=\"ain-Latn\">kane</i> is an allomorph or dialect variant explicitly established elsewhere.",
+    "quote": "A further degree/comparison use surfaces in Satō's description of <i lang=\"ain-Latn\">kane</i>. Alongside its core function as a simultaneity particle in non-Saru/Chitose dialects…",
+    "suggestion": "Verify whether \"kane\" is a typo for \"kor\" or an alternate form; if the latter, clarify the relationship early in the discussion.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "manner-and-degree-adverbial-clauses~p1#041",
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "lines": "75-76",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› is applied to a claim primarily attributed to Ijäs (2023), a single source, and the citation is used to support the assertion that the claim is not widely supported. However, the tag placement and citation suggest stronger external validation than provided, potentially inflating the epistemic weight.",
+    "quote": "Ijäs presents <i lang=\"ain-Latn\">no</i> for the learner alongside the claim that it tends to mark a same-subject context while <i lang=\"ain-Latn\">wa</i> marks a different-subject one; that framing is Ijäs's own and is not supported by the primary grammars, which derive the distribution from polarity and aspect ‹contested› <Ref k=\"ijas2023\" />.",
+    "suggestion": "Clarify that the ‹contested› tag refers to the lack of support in primary grammars, and ensure the citation clearly supports that point, possibly rephrasing: \"…a framing proposed by Ijäs (2023) but not supported in primary grammars, hence ‹contested›.\"",
+    "confidence": 0.75
+   }
+  ]
+ }
+]

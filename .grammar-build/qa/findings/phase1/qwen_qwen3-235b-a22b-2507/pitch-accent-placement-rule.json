@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "19",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "nísap 'suddenly' (accent on σ1) vs nisáp 'shin' (accent on σ2)",
+  "issue": "The accent placement in the example 'nísap' vs 'nisáp' is presented as a near-minimal pair, but 'nísap' is listed later as a lexical exception to the rule (open σ1 should have σ2 accent, but it has σ1). This creates a contradiction between the presentation in section 2 and the explicit listing of exceptions in section 5.",
+  "suggestion": "Add a note here indicating that 'nísap' is an exception to Rule 2, to align with the later section.",
+  "confidence": 0.95,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "87-88",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "scattered accent marks from a single Shizunai speaker showing both nisáppone and nísappone for 'suddenly'",
+  "issue": "The forms 'nisáppone' (σ2-accent) and 'nísappone' (σ1-accent) are presented as evidence for accentlessness, but 'nísap' is a known exception with σ1-accent. If 'nisáppone' (σ2) is a regular form and 'nísappone' (σ1) is an exception, their co-occurrence might reflect lexical variation, not lack of accent. This contradicts the claim that it supports an accentless classification.",
+  "suggestion": "Revise the interpretation of the Shizunai speaker's variation to acknowledge that one form may be an exception and the other regular, so the evidence is ambiguous.",
+  "confidence": 0.9,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "358",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" paren />",
+  "issue": "The citation includes an invalid attribute 'paren' which is not part of the defined markup. This appears to be a pipeline register leak or malformed tag.",
+  "suggestion": "Remove the 'paren' attribute; correct to <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+  "confidence": 1,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "20",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "nisáp",
+  "issue": "Inconsistent diacritic placement: 'nísap' (σ1) and 'nisáp' (σ2) are contrasted, but in line 251, the same form appears as 'nisáp' with acute on σ2. Orthography is consistent, but the visual contrast in line 20 could be clearer with macrons or spacing. However, this is minor and within acceptable variation.",
+  "suggestion": null,
+  "confidence": 0.7,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "30",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "kamúy",
+  "issue": "The acute accent is placed on the 'u' in 'kamúy', but in other instances (e.g. 'áynu'), it is on the first vowel. This is correct as σ2 accent, but the visual consistency across examples should be confirmed. No actual error, but potential for confusion if not standardized.",
+  "suggestion": null,
+  "confidence": 0.6,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "34",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "ku↗a–ni and ku↗a↘ni are equivalent pronunciations",
+  "issue": "The form 'ku↗a–ni' includes a rise arrow and hyphen, while 'ku↗a↘ni' includes both rise and fall. The claim is that both are acceptable, but this contradicts the earlier claim that a fall on the first syllable (ku↘ani) is deviant. The inclusion of ↘ni suggests a fall after the nucleus, which should not affect acceptability if the rise is preserved.",
+  "suggestion": "Clarify that the final fall is phrasal and not contrastive, so 'ku↗a↘ni' is acceptable in utterance-final position, unlike 'ku↘ani' (with early fall).",
+  "confidence": 0.85,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "153",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "yáykosiramsuypa",
+  "issue": "The example 'yáykosiramsuypa' has an acute on 'yáy', but the syllable 'yay' is written without macron. In consistent orthography, if macrons mark vowel length, they should be used systematically. However, the grammar may not use macrons. This is only an issue if macrons are used elsewhere.",
+  "suggestion": "Ensure consistent use of macrons or lack thereof; if not used, this is acceptable.",
+  "confidence": 0.7,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "204",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa 2024: 26, reported via <Ref k=\"nakagawa2024\" p=\"26\" />",
+  "issue": "Redundant citation: the text says 'Nakagawa 2024: 26, reported via' followed by the same source. The 'reported via' is unnecessary when citing the original source directly.",
+  "suggestion": "Remove 'reported via' and just cite the source.",
+  "confidence": 0.9,
+  "chapter": "pitch-accent-placement-rule",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

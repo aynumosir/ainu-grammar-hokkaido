@@ -1,0 +1,302 @@
+[
+ {
+  "id": "ruwe-ne-inferential~p1#015",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "564",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This directly contradicts the earlier claim on line 73–74 that 'the trace-noun ru forms direct evidentiality alone — the southern dialects have no indirect ru-counterpart'. The later section correctly identifies an exception, but the earlier statement presents the absence of indirect ru as a universal generalization.",
+    "quote": "Asahikawa and Shiranuka have an inferential ru an, apparently in complementary distribution with the siri an of the south — a genuine exception to the generalization that ru forms direct evidentiality alone",
+    "suggestion": "Revise the earlier statement to specify 'in the southern core dialects' or add a forward reference to the dialectal exception.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#009",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "107-114",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The FreqChart includes 'siri ki' as an indirect evidential, but the typological framework in lines 69–70 states that indirect counterparts use an, ki, or as — implying a systematic pattern. However, only siri pairs with ki in the chart; hawe and humi use as, not ki. This contradicts the generalization that the indirect forms are organized by uniform parameters. Either the chart is mislabeled or the typological claim needs qualification.",
+    "quote": "{ label: 'siri ki', values: { ours: 218, dalcorso: 42 } }",
+    "suggestion": "Either correct the label to 'siri as' if that is the intended form, or revise the prose to explain why siri uniquely takes ki in the indirect system.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#008",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "86-89",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text lists 'siri ki' as an indirect form, but in the FreqChart data on line 114, the label is 'siri ki', while in the earlier typological description (lines 69–70), the indirect counterparts are said to use an, ki, or as — yet 'siri ki' is the only indirect form using ki with siri. No other formal noun uses ki with siri in this pattern, and the text elsewhere does not explain why siri would pair with ki while others use as or an. This creates a potential classification inconsistency.",
+    "quote": "16,350 tokens of ruwe ne beside 796 hawe ne, 607 siri ne, and 200 humi ne among the direct forms, and 304 siri an, 395 hawe as, 210 humi as, and 218 siri ki among the indirect",
+    "suggestion": "Clarify whether 'siri ki' is a valid indirect counterpart and how it fits the proposed two-parameter system (reliability and accessibility), or verify if this is a data entry error.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#002",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "294–295",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same pipeline tag appearing in prose again.",
+    "quote": "the cognized fact extracted from it ‹original-needs-review›",
+    "suggestion": "Remove the tag; either replace with an appropriate epistemic grade or leave unmarked.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#001",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "260–262",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The editorial tag ‹original-needs-review› is a pipeline instruction that should not appear in final published prose.",
+    "quote": "each capture a true facet of the same form ‹original-needs-review›",
+    "suggestion": "Remove the tag; revise the claim to its intended evidential grade or leave unmarked if consensus.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#010",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "125",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text analyzes the evidential as <i lang=\"ain-Latn\">ru-e</i>, but in the table (line 42) and elsewhere (line 127), it is consistently written <i lang=\"ain-Latn\">ru-we</i>. This spelling discrepancy suggests a morphological inconsistency.",
+    "quote": "ru-e",
+    "suggestion": "Use 'ru-we' consistently throughout, aligning with the possessed form as established in the table and later prose.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#005",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "261",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Subject–verb number mismatch: 'each' (singular) requires 'captures' rather than 'capture'.",
+    "quote": "each capture a true facet",
+    "suggestion": "Change 'each capture' to 'each captures'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#014",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "75",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation claims that Dal Corso states southern dialects have no indirect *ru*-counterpart, but on line 564–565, the chapter itself reports that Asahikawa and Shiranuka do have ru an — contradicting the generalization. The citation is attached to a claim that is later nuanced within the same chapter.",
+    "quote": "<Ref k=\"dalcorso2018\" p=\"304, 309, 337\" />",
+    "suggestion": "Qualify the claim on line 75 to indicate it applies only to southern core dialects, not all Hokkaido Ainu.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#013",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "595",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ruwe-he' is again glossed as 'track-POSS', but in this Sakhalin example, the form includes the -he suffix not present in southern Hokkaido. The gloss does not distinguish this morphological difference, creating a false impression of identity across dialects.",
+    "quote": "g=\"this be.old box exist track-POSS exist REP\"",
+    "suggestion": "Differentiate the gloss for Sakhalin forms, e.g., 'track-POSS-HE' or 'trace-POSS=SA', to reflect dialect-specific morphology.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#012",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "585",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ruwe-he' is glossed as 'track-POSS', but in the note (line 591), it is explained that East Sakhalin retains the possessed suffix -he, which southern Hokkaido drops. However, 'track-POSS' implies the same possession as ru-we, yet the form is spelled ruwe-he, suggesting a double possessive. The gloss does not reflect the dialectal morphological difference clearly.",
+    "quote": "g=\"be.small river LOC 4.O-wash track-POSS COP\"",
+    "suggestion": "Gloss as 'track-POSS=POSS' or 'trace-POSS-HE' to mark the additional suffix, or add a note in the gloss to clarify the layered possession in Sakhalin.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#011",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "468",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ru' is glossed as 'track', but in the note (line 475), it is stated that 'ru' (not ruwe) closes the clause. However, 'track' is the gloss for the noun, while the formal noun should be glossed as 'track-POSS' or similar. Since this is the bare concept form, the gloss should reflect that it's not possessed, yet 'track' alone does not distinguish it from the lexical noun.",
+    "quote": "g=\"this potato be.green track exist\"",
+    "suggestion": "Use a distinct gloss such as 'trace' or 'fact' for the bare ru in Tokachi to distinguish its evidential function from the possessed form.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#007",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "49",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'appearance, land' here omits 'weather', which is included in the same root's gloss on line 14. This creates an internal inconsistency within the chapter.",
+    "quote": "<A w=\"sir\" gl=\"appearance, land\" />",
+    "suggestion": "Update to match: use 'appearance, land, weather' in both places for consistency.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#006",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "14",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss in the <A> tag includes 'weather', but in the table on line 49, the same root is glossed as 'appearance, land' — omitting 'weather'. This is an internal inconsistency in the semantic specification of the root.",
+    "quote": "<A w=\"sir\" gl=\"visible appearance, land, weather\" />",
+    "suggestion": "Align the gloss in the <A> tag with the table: either add 'weather' to the table or remove it from the inline gloss.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#004",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "445–446",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'no read source' is pipeline wording ('read source' = source that was read in the course of research). In a final publication this should be phrased for the reader, e.g. 'no source consulted provides' or 'no known source provides'.",
+    "quote": "no read source provides a constituency account",
+    "suggestion": "Change 'no read source' to 'no source consulted' or 'no available source'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ruwe-ne-inferential~p1#003",
+  "chapter": "ruwe-ne-inferential",
+  "lines": "237–239",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ainu form has 'pananpe' and 'penanpe' (with 'n' before 'anpe'), but the free translation writes 'Panampe' and 'Penampe' (with 'm'). This is likely a typo or unchecked transliteration.",
+    "quote": "pananpe an penanpe an hine … There were Panampe and Penampe, and …",
+    "suggestion": "Either change the Ainu to 'pamanpe' / 'pemanpe' or change the translation to 'Pananpe' / 'Penanpe' to match the segmented form.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

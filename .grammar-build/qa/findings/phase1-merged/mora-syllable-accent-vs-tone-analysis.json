@@ -1,0 +1,1227 @@
+[
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#048",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "407",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'read directly for this grammar' is meta-commentary about the production process.",
+    "quote": "that study was not\nread directly for this grammar and the claims attributed to it here rest on its treatment in",
+    "suggestion": "Rephrase to 'that study was not consulted directly for this grammar, and the claims attributed to it here are based on its treatment in'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read directly' is a pipeline register leak, indicating a process note rather than a statement intended for the reader.",
+    "quote": "read directly",
+    "suggestion": "Rephrase to 'that study was not consulted first-hand for this grammar' or 'was not available to the author'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Explicit meta-commentary about the author's source access ('was not read directly') is a register leak inappropriate in final prose.",
+    "quote": "that study was not read directly for this grammar and the claims attributed to it here rest on its treatment in Nakagawa (2024) and Nakagawa and Fukazawa (2022)",
+    "suggestion": "Omit or rephrase to focus on evidence: 'The claims here follow Nakagawa (2024) and Nakagawa and Fukazawa (2022), who analyze Itabashi (2001)'",
+    "confidence": 0.99
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#039",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "355",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The tag ‹SA› is used here as a label for Sakhalin Ainu cognates, but it's also used as an epistemic tag elsewhere in the chapter. This could lead to confusion.",
+    "quote": "SA cognate [‹SA›]",
+    "suggestion": "Use a different tag for Sakhalin Ainu cognates, or clarify the dual usage.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of angle brackets and ‹SA› tag in a table header is inconsistent with the rest of the chapter, where dialect tags like ‹SA› are used inline without brackets.",
+    "quote": "SA cognate [‹SA›]",
+    "suggestion": "Use consistent formatting: 'SA cognate (‹SA›)'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#020",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "229",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is placed directly after the citation and before the period, which is unusual formatting.",
+    "quote": "‹contested›.",
+    "suggestion": "Place the tag before the period: '...Nakagawa (2024: 50) ‹contested›.'",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag 'contested' is placed on a sentence that simply states Nakagawa's analysis; it is unclear what is contested. The tag may be misapplied.",
+    "quote": "‹contested›",
+    "suggestion": "Remove the tag or clarify what aspect is contested.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#027",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "271",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'read sources' is meta-commentary about the production process.",
+    "quote": "cannot be assessed from the read sources",
+    "suggestion": "Rephrase to 'cannot be assessed from the literature consulted.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the read sources' is a pipeline register leak, addressed to the production process rather than the reader.",
+    "quote": "the read sources",
+    "suggestion": "Replace with 'the sources consulted' or 'the available literature'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#025",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "264",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrases 'read sources' and 'noted here' are meta-commentary about the writing process.",
+    "quote": "This reanalysis has not been proposed in the read sources; the synchronic data do not require it; it is noted here as a possible alternative formalization",
+    "suggestion": "Rephrase to 'This reanalysis has not been proposed in the literature consulted; the synchronic data do not require it; it is noted as a possible alternative formalization.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the read sources' is a pipeline register leak, addressed to the production process rather than the reader.",
+    "quote": "the read sources",
+    "suggestion": "Replace with 'the sources consulted' or 'the available literature'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#019",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "224",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'The read sources' is meta-commentary about the production process rather than reader-facing prose.",
+    "quote": "The read sources do not argue for it",
+    "suggestion": "Rephrase to 'The sources consulted do not argue for it' or 'The literature does not argue for it'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the read sources' is a pipeline register leak, addressed to the production process rather than the reader.",
+    "quote": "The read sources do not argue for it",
+    "suggestion": "Replace with 'The sources consulted do not argue for it' or 'The available analyses do not argue for it'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#056",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "319-324",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Refsing's claim that Shizunai has stable accent rules is directly contradicted by Nakagawa's observation of variable accent in one speaker, yet both are cited without resolution, creating internal tension.",
+    "quote": "Refsing (1986: 73) treated it as an accent dialect with rules parallel to Saru <Ref k=\"refsing1986\" p=\"73\" />. Nakagawa argues from museum-archive recordings that the same word appears in both accent patterns across tokens from one speaker",
+    "suggestion": "Clarify that Nakagawa's data challenge Refsing's analysis",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#055",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "134",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The colon after 'pairs' introduces a table, but the preceding sentence is awkwardly phrased; 'produce' is an odd verb choice for creating lexical contrasts.",
+    "quote": "These exceptions produce minimal accent pairs:",
+    "suggestion": "Rephrase: 'These exceptions form minimal accent pairs, such as:'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#051",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "53",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag 'corpus-confirmed' is attached to a claim supported by a Discord message and a published source, but the claim is not based on corpus data; the tag may be inflated.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "Consider using a more appropriate tag such as '‹consensus›' or '‹original-needs-review›' if the evidence is from community discussion, or remove the tag.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#050",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "415",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'is a question for the comparative work' is slightly informal.",
+    "quote": "Whether this warrants a formal two-class reconstruction is a question for the\ncomparative work",
+    "suggestion": "Rephrase to 'is a question addressed in the comparative work' or 'remains a question for comparative work'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#049",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "411",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'supplies diachronic motivation' is a bit abstract. It could be more direct.",
+    "quote": "The correspondence also supplies diachronic motivation for Position B",
+    "suggestion": "Rephrase to 'The correspondence also provides diachronic support for Position B' or 'The correspondence also motivates the diachronic interpretation of Position B'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence structure is a bit convoluted with multiple 'rather than' clauses. It could be clearer.",
+    "quote": "if the HA exception class reflects historically\nlong vowels rather than a distinct tonal category, then the two HA accent classes may be the\nsynchronic residue of a former segmental opposition rather than evidence of a register system",
+    "suggestion": "Rephrase for clarity, e.g., 'if the HA exception class reflects historically long vowels (rather than a distinct tonal category), then the two HA accent classes might represent the synchronic residue of a former segmental opposition, rather than evidence of a register system.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#047",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "404",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is placed directly after the citation and before the period, which is unusual formatting.",
+    "quote": "(reported via <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />) ‹contested›.",
+    "suggestion": "Place the tag before the period: '...via <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" /> ‹contested›.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#046",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "400",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'reconstructed vowel length as the earlier contrast' is slightly awkward. It could be more direct.",
+    "quote": "Hattori (1967) reconstructed vowel length as the earlier contrast: Proto-Ainu had a\nlong-vowel/short-vowel distinction, Hokkaido replaced it with accent while Sakhalin retained\nlength",
+    "suggestion": "Rephrase to 'Hattori (1967) reconstructed vowel length as the primary contrast:' or 'Hattori (1967) posited that vowel length was the earlier contrast:'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#045",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "391",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark on 'nisáp' is not explained in relation to the 'σ2 (regular)' class. It appears to be on the second syllable, which is consistent with the regular rule.",
+    "quote": "<i lang=\"ain-Latn\">nisáp</i>",
+    "suggestion": "Ensure accent marks are consistently explained or applied according to the rules described.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#044",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "385",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark on 'nísap' is not explained in relation to the 'initial (exception)' class. It appears to be on the first syllable, which is consistent with the exception rule.",
+    "quote": "<i lang=\"ain-Latn\">nísap</i>",
+    "suggestion": "Ensure accent marks are consistently explained or applied according to the rules described.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#043",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "379",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark on 'mína' is not explained in relation to the 'initial (exception)' class. It appears to be on the first syllable, which is consistent with the exception rule.",
+    "quote": "<i lang=\"ain-Latn\">mína</i>",
+    "suggestion": "Ensure accent marks are consistently explained or applied according to the rules described.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#042",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "373",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark on 'túki' is not explained in relation to the 'initial (exception)' class. It appears to be on the first syllable, which is consistent with the exception rule.",
+    "quote": "<i lang=\"ain-Latn\">túki</i>",
+    "suggestion": "Ensure accent marks are consistently explained or applied according to the rules described.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#041",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "367",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark on 'sísam' is not explained in relation to the 'initial (exception)' class. It appears to be on the first syllable, which is consistent with the exception rule.",
+    "quote": "<i lang=\"ain-Latn\">sísam</i>",
+    "suggestion": "Ensure accent marks are consistently explained or applied according to the rules described.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#040",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "361",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark on 'húre' is not explained in relation to the 'initial (exception)' class. It appears to be on the first syllable, which is consistent with the exception rule.",
+    "quote": "<i lang=\"ain-Latn\">húre</i>",
+    "suggestion": "Ensure accent marks are consistently explained or applied according to the rules described.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#038",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "347",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The semicolon after the first citation and before the second citation is unnecessary and creates a slightly awkward flow.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"27, 51\" />; <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />:",
+    "suggestion": "Remove the semicolon: '<Ref k=\"nakagawa2024\" p=\"27, 51\" />. <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />:' or combine them if appropriate.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#037",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "334",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'neither opposition has neutralized in Sakhalin' is a bit abrupt. It could be clearer that it refers to both the vowel-length opposition and the pitch contrast (or lack thereof).",
+    "quote": "preserves a vowel-length opposition where Hokkaido developed pitch; neither opposition has\nneutralized in Sakhalin",
+    "suggestion": "Clarify: '...neither opposition has neutralized in Sakhalin.' or '...and neither opposition has neutralized in Sakhalin.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#036",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "324",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is placed directly after the citation and before the period, which is unusual formatting.",
+    "quote": "‹contested›.",
+    "suggestion": "Place the tag before the period: '...Ref <Ref k=\"nakagawa2024\" p=\"50\" /> ‹contested›.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#035",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "323",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'reads this as' is slightly informal for a scholarly text.",
+    "quote": "and reads this as accent-neutralization, not a stable\nsystem",
+    "suggestion": "Rephrase to 'interprets this as' or 'considers this to be'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The colon after 'status' creates a sentence fragment. The second part explains the consequence but isn't a complete sentence on its own.",
+    "quote": "One phonological consequence of Shizunai's\naccentless status: the contrast between glide [w] and glottal stop [ʔ] at a hiatus position",
+    "suggestion": "Connect the two parts: 'One phonological consequence of Shizunai's accentless status is that the contrast between glide [w] and glottal stop [ʔ] at a hiatus position...' or rephrase.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#034",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "319",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 'アクセント' (accent) is not translated or glossed in the citation.",
+    "quote": "Refsing (1986: 73) treated it as an accent\ndialect with rules parallel to Saru",
+    "suggestion": "Provide a translation or gloss for 'アクセント', e.g., 'accent dialect'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#033",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "315",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark on 'parúnpe' is not explained in the context of the comparison between Yakumo and Saru dialects.",
+    "quote": "<i lang=\"ain-Latn\">parúnpe</i> in both",
+    "suggestion": "Clarify the accentuation of 'parúnpe' or ensure it aligns with the statement that both varieties agree.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#032",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "311",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent marks in these examples are not consistently explained in relation to the 'irregular accent' rule. It's unclear why the accent shifts in some cases but not others.",
+    "quote": "compare Yakumo <i lang=\"ain-Latn\">notakám</i> vs Saru\n<i lang=\"ain-Latn\">notákam</i>, Yakumo <i lang=\"ain-Latn\">sinuyé</i> vs Saru\n<i lang=\"ain-Latn\">sinúye</i>, Yakumo <i lang=\"ain-Latn\">hoyupú</i> vs Saru\n<i lang=\"ain-Latn\">hoyúpu</i>",
+    "suggestion": "Provide a clearer explanation of how the accent marks in these examples illustrate the irregular accent rule, or ensure the accent marks are consistent with the described behavior.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#031",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "302",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '無アクセント' is not translated or glossed.",
+    "quote": "Accentless (無アクセント)",
+    "suggestion": "Provide a translation or gloss, e.g., 'accentless'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#030",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "299",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The explanation for 'Irregular accent' is concise but could be clearer. It's not immediately obvious why accent would fall on σ3 when both σ1 and σ2 are open, or why σ2 is accented when closed.",
+    "quote": "When both σ1 and σ2 are open, accent falls on σ3; when σ2 is closed, σ2 is accented",
+    "suggestion": "Expand on the explanation, perhaps by providing an example or clarifying the underlying principle.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#029",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "294",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese terms '原則1' and '原則2' are not translated or glossed here, unlike in the table.",
+    "quote": "原則1/2 apply as described",
+    "suggestion": "Provide a translation or gloss, e.g., 'Rules 1/2 apply as described'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#028",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "278",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for this classification is split across two `<Ref>` tags (lines 278 and 279). It would be clearer to combine them.",
+    "quote": "Nakagawa and Fukazawa classify Hokkaido dialects into three prosodic types",
+    "suggestion": "Combine the citations: `<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" /> <Ref k=\"nakagawa2024\" p=\"49–50\" />`",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#026",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "268",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'Community discussion' is vague. It refers to a Discord discussion, which is cited later, but the phrasing could be more specific.",
+    "quote": "Community discussion noted a phonetic resemblance between Hachijō-language intonation and Ainu pitch contours",
+    "suggestion": "Rephrase to 'Community discussion on Discord noted...' or 'A community discussion noted...'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#024",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "260",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The thin space character (&thinsp;) is not necessary before the link to the section.",
+    "quote": "The Sakhalin vowel-length correspondence (§&thinsp;<a href=\"#diachrony\">Diachrony</a> below) supplies a diachronic motive",
+    "suggestion": "§<a href=\"#diachrony\">Diachrony</a> below",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#023",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "255",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The heading 'two prosodic word-classes' is a bit abstract. It might be clearer to specify what distinguishes these classes.",
+    "quote": "<strong>Position B — two prosodic word-classes</strong>",
+    "suggestion": "Consider rephrasing to 'Position B — two lexical register classes' or 'Position B — two classes based on lexical accent specification'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description of Class II words as 'unspecified' could be more precise. It means they follow the default rule, not that they lack any specification.",
+    "quote": "Class I words carry a lexical feature placing accent on σ1 regardless of weight; Class II words are unspecified and realize weight-determined accent.",
+    "suggestion": "Rephrase to 'Class II words follow the default weight-determined accent rule.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#022",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "246",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The heading 'gradient weight-sensitive accent' is slightly unclear. It implies a continuous scale of weight sensitivity, which might not be the intended meaning.",
+    "quote": "<strong>Position A — gradient weight-sensitive accent with a lexical exception class</strong>",
+    "suggestion": "Consider rephrasing to 'weight-sensitive accent with a lexical exception class' or 'accent sensitive to syllable weight with a lexical exception class'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#021",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "236",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'positionally specified nucleus' is a bit dense. It could be clearer.",
+    "quote": "and in the narrower sense of a system with one positionally specified nucleus per word.",
+    "suggestion": "Rephrase to 'and in the narrower sense, a system where the position of a single nucleus is specified within the word.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#018",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "221",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The explanation of the moraic restatement is slightly confusing. It states 'belonging to σ1 when σ1 is heavy, to σ2 when σ1 is light', which seems to contradict the idea of associating with the *second mora* of the word.",
+    "quote": "A moraic restatement of 原則1/2 is formally possible: a closed σ1 has two moras (CV + C), so accent could be described as associating with the second mora of the word — belonging to σ1 when σ1 is heavy, to σ2 when σ1 is light.",
+    "suggestion": "Clarify the association: '...associating with the second mora of the word: this mora belongs to σ1 when σ1 is heavy (CV C), and to σ2 when σ1 is light (CV).'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#017",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "208",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note explains the accent shift but does not explicitly state the free translation for the example, which is missing from the `<Ex>` tag.",
+    "quote": "Stem hopúni: σ1 = ho- (open, CV), accent on σ2 (pu-) by 原則2. Under ku=, σ1 of the phonological word becomes ku- (open, CV); σ2 is the stem's ho-; accent shifts to ho-: ku=hópuni. Paradigm from Nakagawa (2024: 52) and Shiraishi (2022: §5.1).",
+    "suggestion": "Add the free translation 'I get up.' to the `<Ex>` tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#016",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "191",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'as an undivided unit' is slightly vague. It means the entire syllable is accented, but could be more precise.",
+    "quote": "receives accent on σ2 as an undivided unit",
+    "suggestion": "Rephrase to 'receives accent on σ2, treating the syllable as a single unit.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#015",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "183",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'in terms of whether σ1 is open or closed' is slightly redundant. 'Open or closed' already describes the syllable's structure, which determines its weight.",
+    "quote": "in terms of whether σ1 is open or closed — syllable weight rather than mora count.",
+    "suggestion": "Simplify to 'in terms of whether σ1 is open or closed, i.e., its syllable weight, rather than mora count.' or 'in terms of syllable weight (open vs. closed) rather than mora count.'",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of coda consonants includes /y/ and /w/, which are also discussed as glides in the next paragraph. Their inclusion here as coda consonants might be confusing without further clarification.",
+    "quote": "all coda consonants (/p t k m n r s y w/) are equivalent in their weight-conferring effect.",
+    "suggestion": "Clarify the role of /y/ and /w/ as coda consonants in this context, or note that they can function as both glides and coda consonants.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#014",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "139",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table header 'Exception form' is not defined in the text. It refers to forms that deviate from the general accent placement rules.",
+    "quote": "Exception form",
+    "suggestion": "Clarify the header, e.g., 'Lexical exception form'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table header 'Regular form' is not defined in the text. It refers to forms that follow the general accent placement rules.",
+    "quote": "Regular form",
+    "suggestion": "Clarify the header, e.g., 'Regularly accented form'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#013",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "124",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'when σ1 is open yet accent falls on σ1' is slightly awkward. 'Yet' implies a contrast that isn't strongly present here; it's more of a condition.",
+    "quote": "when σ1 is open yet accent falls on σ1",
+    "suggestion": "Rephrase to 'when σ1 is open and accent falls on σ1' or 'when σ1 is open, but accent falls on σ1'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#012",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "117",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviation 'LH' within 'iambic (LH) foot' is not defined. It likely refers to Low-High pitch, but this should be explicit.",
+    "quote": "an <em>iambic (LH) foot</em>",
+    "suggestion": "Define 'LH' when it is first introduced, e.g., 'an iambic (Low-High) foot'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#011",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "109",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '原則2' is not translated or glossed.",
+    "quote": "原則2",
+    "suggestion": "Provide a translation or gloss for '原則2', e.g., 'Rule 2'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#010",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "99",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '原則1' is not translated or glossed.",
+    "quote": "原則1",
+    "suggestion": "Provide a translation or gloss for '原則1', e.g., 'Rule 1'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#009",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "83",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table header 'Shape of σ1' is not defined in the text. It refers to the structure of the first syllable.",
+    "quote": "Shape of σ1",
+    "suggestion": "Define 'σ1' before the table or clarify the header, e.g., 'Shape of the first syllable (σ1)'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#008",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "74",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviation 'σ1' is used without prior definition or explanation of what it represents (e.g., the first syllable).",
+    "quote": "structure of σ1",
+    "suggestion": "Define 'σ1' when it is first introduced, e.g., 'the first syllable (σ1)'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#007",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "60",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark (ˈ) in the examples <i lang=\"ain-Latn\">ˈnuːman</i> and <i lang=\"ain-Latn\">poˈroː</i> is not explained. It appears to indicate primary stress or accent, but the chapter focuses on pitch accent.",
+    "quote": "<i lang=\"ain-Latn\">ˈnuːman</i> 'yesterday' and <i lang=\"ain-Latn\">poˈroː</i> 'big'",
+    "suggestion": "Explain the use of the accent mark (ˈ) or remove it if it's not relevant to the pitch accent system being discussed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#006",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "54",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The accent mark on 'nísap' (line 54) is not explained in relation to the accent rules described earlier. The text states that 'nísap' is an exception where accent falls on σ1 despite σ1 being open, but the accent mark here is on the first syllable, which is consistent with the exception rule.",
+    "quote": "<i lang=\"ain-Latn\">nísap</i> 'suddenly' : <i lang=\"ain-Latn\">nisáp</i> 'shin'",
+    "suggestion": "Clarify how the accent mark on 'nísap' relates to the exception rule, or ensure consistency in accent marking across examples.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#004",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "37",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '上り核アクセント' is not translated or glossed, while other Japanese terms in the chapter are.",
+    "quote": "<em>rising-nucleus</em> system (上り核アクセント)",
+    "suggestion": "Provide a translation or gloss for '上り核アクセント', e.g., 'rising-nucleus accent'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '昇り核' is not italicized, unlike '上り核アクセント' in the previous paragraph.",
+    "quote": "昇り核 'rising kernel'",
+    "suggestion": "Italicize '昇り核': *昇り核* 'rising kernel'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#003",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "26",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The thin space character (&thinsp;) is not necessary before the link to the section.",
+    "quote": "§&thinsp;<a href=\"#mora-syllable\">Mora or syllable?</a>",
+    "suggestion": "§ <a href=\"#mora-syllable\">Mora or syllable?</a>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The thin space character (&thinsp;) is not necessary before the link to the section.",
+    "quote": "§&thinsp;<a href=\"#accent-vs-tone\">Accent versus tone</a>.",
+    "suggestion": "§ <a href=\"#accent-vs-tone\">Accent versus tone</a>.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#002",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The semicolon after the first citation and before the second citation is unnecessary and creates a slightly awkward flow.",
+    "quote": "; <Ref k=\"nakagawa2024\" p=\"48–49\" />; <Ref k=\"sato2008\" p=\"§2.6\" />.",
+    "suggestion": "Remove the semicolon: '; <Ref k=\"nakagawa2024\" p=\"48–49\" />. <Ref k=\"sato2008\" p=\"§2.6\" />.' or combine them if appropriate.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#001",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "11",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'and syllables before it are uniformly low' is a fragment and does not form a complete sentence.",
+    "quote": "and syllables before it are uniformly low",
+    "suggestion": "Connect it to the preceding clause, e.g., '...is specified in the lexicon and contrasts meaning, with syllables before it being uniformly low...'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#054",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "244-253",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Position A is labeled ‹consensus›, but the preceding sentence says 'two analytical positions' implying both are live options; labeling one as consensus contradicts the framing of an open debate.",
+    "quote": "Two analytical positions on the structure of the exception class merit explicit grading. <strong>Position A — gradient weight-sensitive accent with a lexical exception class</strong> ‹consensus›.",
+    "suggestion": "Either remove 'merit explicit grading' or adjust labels to reflect that Position A is majority view but not consensus in context",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#053",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "195",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'read sources' is a pipeline register leak, referring to the author's research process rather than the scholarly record; it should be phrased from the reader's perspective.",
+    "quote": "The read sources do not argue for it",
+    "suggestion": "Replace with: 'The existing literature does not argue for it'",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#052",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "21",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation 'Tamura (1988b: 13)' is presented as a direct source, but the text indicates it is only reported secondhand via Shiraishi (2022). The phrasing risks misrepresenting Tamura's work as directly consulted when it was not.",
+    "quote": "Tamura (1988b: 13) remarked on the similarity (reported via <Ref k=\"shiraishi2022\" p=\"§5\" />)",
+    "suggestion": "Rephrase to clarify indirect attribution: e.g., 'Tamura (1988b) is reported to have remarked on the similarity (via <Ref k=\"shiraishi2022\" p=\"§5\" />)'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "mora-syllable-accent-vs-tone-analysis~p1#005",
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "lines": "50",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses for the Ainu examples use arrows (↗, ↘) to indicate pitch changes, but these are not explained or defined in the text. The free translation 'I get up.' for the example on lines 205-208 is also missing.",
+    "quote": "(<i lang=\"ain-Latn\">ku↗áni</i>) or with a fall after the peak\n(<i lang=\"ain-Latn\">ku↗á↘ni</i>) without any change of meaning, but a fall before the accent\n(<i lang=\"ain-Latn\">ku↘áni</i>) is perceived as anomalous or contrastive",
+    "suggestion": "Define the pitch notation (↗, ↘) and provide a gloss for the example on lines 205-208.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

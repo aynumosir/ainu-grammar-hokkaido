@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "34-36",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "g=\"1SG.A=hear track-POSS COP\"",
+  "issue": "Gloss atoms in the example use uppercase letters (1SG.A, POSS, COP) but the prose style and table examples use lowercase inside <span class=\"sc\"> (e.g. 4.a, poss, cop, 1sg.a). This creates a format inconsistency within the chapter.",
+  "suggestion": "Change gloss atoms to lowercase (e.g., 1sg.a=hear track-poss cop) to match the style established in the prose and tables, relying on CSS for small-caps rendering.",
+  "confidence": 0.9,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "96",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<span class=\"sc\">4.a</span>, <span class=\"sc\">1sg.a</span>, and <span class=\"sc\">2pl.o</span>",
+  "issue": "The prose consistently uses lowercase for gloss atoms (1sg.a, 2pl.o), but the interlinear example on line 34 uses uppercase (1SG.A). The chapter should maintain a single case convention in source code.",
+  "suggestion": "Either align the example to lowercase, or update the prose to uppercase. Lowercase is more consistent with the table and the small-caps rendering.",
+  "confidence": 0.9,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "192-193",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "with a colon and page number when a specific location matters: <Ref k=\"nakagawa2024\" p=\"163\" /> or <Ref k=\"bugaeva2012\" p=\"471\" paren />.",
+  "issue": "The description says page references use a colon, but the illustrating Ref components use only a number (p=\"163\", p=\"471\") without a colon. The example at line 214 also uses a section marker without a colon. The colon syntax is not demonstrated.",
+  "suggestion": "Either clarify that the colon is used only when including a section/example number (e.g., p=\"§13.2\") and page numbers are bare, or revise the description to avoid claiming `colon-delimited` for page references.",
+  "confidence": 0.7,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "84",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "p=\"49, 183\"",
+  "issue": "The page range attribute uses a comma between two page numbers, but the citation-style description (lines 212–214) says page references follow a colon-delimited syntax. If colon-delimited means e.g., '49:183', this is inconsistent. If comma is acceptable, the description should be more precise.",
+  "suggestion": "Either change '49, 183' to '49, 183' (if comma is allowed) and update the description to allow comma for non-consecutive pages, or adopt '49:183' if that is the intended range.",
+  "confidence": 0.5,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "30",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "A mismatch in token count causes a build error.",
+  "issue": "The phrase 'build error' addresses the book's production pipeline rather than the reader. While explaining validation is helpful, repeated mentions (lines 30, 111–112, 194–195) may feel like meta-commentary on the authoring process.",
+  "suggestion": "Replace 'causes a build error' with 'is an error in the data format' or 'is not allowed', and rephrase the other instances similarly to be reader-facing.",
+  "confidence": 0.6,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "111-112",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "an unregistered capital-letter sequence in a gloss line causes a build error.",
+  "issue": "Same register-leak issue as line 30. The technical detail of the build system is not necessary for the reader's understanding of the glossing conventions.",
+  "suggestion": "Rephrase to 'is not permitted' or 'will be flagged as an error in the grammar’s formatting.'",
+  "confidence": 0.6,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "194-195",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "a key that does not appear in the registry causes a build error, so the citation apparatus is closed under the set of registered works.",
+  "issue": "Third occurrence of 'build error'. The sentence explains the self-contained nature of citations but uses pipeline language.",
+  "suggestion": "Rephrase as 'a key must appear in the registry; any missing key is an error in the citation data.'",
+  "confidence": 0.5,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

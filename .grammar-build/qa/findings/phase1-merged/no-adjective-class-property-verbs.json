@@ -1,0 +1,1046 @@
+[
+ {
+  "id": "no-adjective-class-property-verbs~p1#036",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "466",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹speculative› is applied to a community hypothesis. While 'speculative' is appropriate, it might be beneficial to also note the source of the hypothesis more clearly if it's not already evident from the citation.",
+    "quote": "‹speculative›",
+    "suggestion": null,
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹speculative› is correctly applied, but it is attached to a Discord source without additional corroboration, which is appropriate. However, the tag should not be omitted or weakened in similar cases.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024-11-15) <Ref k=\"aynucorporadiscord\" /> ‹speculative›",
+    "suggestion": "No change needed, but flag for consistency: ensure all Discord-sourced hypotheses are tagged ‹speculative› or lower.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#026",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "377",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is applied to a claim attributed to a community source. While 'contested' is appropriate for community hypotheses, it might be more precise to indicate the source of the contestation if known, or to use a less definitive tag if the contestation is not widely established.",
+    "quote": "‹contested›",
+    "suggestion": null,
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› is applied, but the only support is a Discord attribution, which is not a peer-reviewed source. This risks inflating the credibility of an informal observation.",
+    "quote": "(antitwilight, aynu-corpora Discord, 2026-06-02) <Ref k=\"aynucorporadiscord\" /> ‹contested›",
+    "suggestion": "Either downgrade the epistemic tag to ‹speculative› or add a stronger source to justify ‹contested›.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#001",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "16",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'é' in 'méan' is inconsistent with the other words in the list (pirka, hure, poro, pon, wen, tanne, pewre) which do not use macrons.",
+    "quote": "méan",
+    "suggestion": "méan",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The word 'tanne' is spelled without a macron, but the corresponding entry in the table (line 74) uses 'tanne' without macron as well; however, standard Ainu orthography typically marks vowel length, and consistency within the chapter should be maintained.",
+    "quote": "<A w=\"tanne\" gl=\"be long\" />",
+    "suggestion": "Check if 'tanne' should consistently carry a macron (e.g., 'tānne') based on established romanization; if not, ensure uniformity in spelling throughout.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The word 'wen' appears without diacritics, but in some Ainu romanization systems, vowel length or quality might be marked. However, consistency with other entries should be verified.",
+    "quote": "<A w=\"wen\" gl=\"be bad, be poor\" />",
+    "suggestion": "Ensure orthographic consistency with other forms like 'pewre', 'pirka', etc., and confirm if 'wen' should carry a macron or other mark.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#044",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "128",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ku=nu' is glossed as '1SG.A=hear', but 'nu' is an intransitive verb meaning 'hear', and should take S (intransitive subject) marking, not A (transitive subject). The gloss incorrectly assigns agentive (A) role to the subject of 'nu'.",
+    "quote": "m=\"sonno ku=pewre or ta ku=nu yukar ne ru-we ne\" g=\"truly 1SG.S=be.young inside LOC 1SG.A=hear yukar COP track-POSS COP\"",
+    "suggestion": "Revise gloss to '1SG.S=hear' to reflect correct person-marking frame for intransitive verb.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#042",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "212-214",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'be.good' does not match the free translation 'Get well quickly!', which implies an inchoative or imperative reading related to health recovery, while 'be.good' is more general. The gloss should reflect the health-specific sense seen in the translation.",
+    "quote": "m=\"tunasno pirka\" g=\"quickly be.good\" tr=\"Get well quickly!\"",
+    "suggestion": "Update gloss to 'be.well' or 'be.healthy' to align with the medical sense in the translation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#037",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "172",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Section title promises discussion of both causative and applicative morphology, but the content only covers causative suffixes (-re, -e, -ka). No applicative morphology is mentioned anywhere in the section.",
+    "quote": "Morphological identity: causative and applicative morphology",
+    "suggestion": "Either add discussion of applicative morphology or revise the title to 'causative morphology'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#041",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "27",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term '4.S' is used without prior definition in this chapter; readers may not know that it refers to fourth-person singular, especially if this is the first mention.",
+    "quote": "Representative property verbs with 4.S predication and prenominal collocates (Saru baseline)",
+    "suggestion": "Expand or define '4.S' on first use, e.g., 'fourth-person singular (4.S)'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#035",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "461",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pirka an' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "pirka an",
+    "suggestion": "pirka an",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ne an' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "ne an",
+    "suggestion": "ne an",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ne' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "ne",
+    "suggestion": "ne",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#034",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "448",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word '形容詞' is not italicized, unlike other non-Ainu words in the text.",
+    "quote": "形容詞",
+    "suggestion": "形容詞",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#033",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "444",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹consensus› is applied to a claim supported by multiple citations, but the tag itself is redundant when the consensus is already established by the number and nature of the sources.",
+    "quote": "‹consensus›",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#032",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "422",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'en=pirka akkari pirka=an' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "en=pirka akkari pirka=an",
+    "suggestion": "en=pirka akkari pirka=an",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#031",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "408",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹consensus› is applied to a claim supported by multiple citations, but the tag itself is redundant when the consensus is already established by the number and nature of the sources.",
+    "quote": "‹consensus›",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#030",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "402",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pirka wa' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "pirka wa",
+    "suggestion": "pirka wa",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'somo ipe no' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "somo ipe no",
+    "suggestion": "somo ipe no",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#029",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "395",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word '動詞' is not italicized, unlike other non-Ainu words in the text.",
+    "quote": "動詞",
+    "suggestion": "動詞",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#028",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "391",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word '用詞' is not italicized, unlike other non-Ainu words in the text.",
+    "quote": "用詞",
+    "suggestion": "用詞",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#027",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "384",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '形容詞の人稱變化' is not italicized, unlike other non-Ainu phrases in the text.",
+    "quote": "形容詞の人稱變化",
+    "suggestion": "形容詞の人稱變化",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '連体形' is not italicized, unlike other non-Ainu phrases in the text.",
+    "quote": "連体形",
+    "suggestion": "連体形",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '分詞形容詞' is not italicized, unlike other non-Ainu phrases in the text.",
+    "quote": "分詞形容詞",
+    "suggestion": "分詞形容詞",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#025",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "366",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'Poro-pet' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "Poro-pet",
+    "suggestion": "Poro-pet",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'Pon-bets' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "Pon-bets",
+    "suggestion": "Pon-bets",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#024",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "354",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'a=kor cise poro=an' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "a=kor cise poro=an",
+    "suggestion": "a=kor cise poro=an",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'poro nupuri' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "poro nupuri",
+    "suggestion": "poro nupuri",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#023",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "340",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pinne' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "pinne",
+    "suggestion": "pinne",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'matne' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "matne",
+    "suggestion": "matne",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'oya' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "oya",
+    "suggestion": "oya",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#022",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "336",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'hemanta' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "hemanta",
+    "suggestion": "hemanta",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'oar' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "oar",
+    "suggestion": "oar",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kes' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "kes",
+    "suggestion": "kes",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#021",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "332",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tan' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "tan",
+    "suggestion": "tan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'toan' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "toan",
+    "suggestion": "toan",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ne' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "ne",
+    "suggestion": "ne",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sine' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "sine",
+    "suggestion": "sine",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tu' is not italicized, unlike other Ainu forms in the list.",
+    "quote": "tu",
+    "suggestion": "tu",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#020",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "307",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹consensus› is applied to a claim supported by multiple citations, but the tag itself is redundant when the consensus is already established by the number and nature of the sources.",
+    "quote": "‹consensus›",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#019",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "302",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu suffix '-p/-pe' is not italicized, unlike other Ainu forms in the text.",
+    "quote": "p/-pe",
+    "suggestion": "-p/-pe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#018",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "288",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pirka p' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "pirka p",
+    "suggestion": "pirka p",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tan-pe' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "tan-pe",
+    "suggestion": "tan-pe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#017",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "282",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pirka-re' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "pirka-re",
+    "suggestion": "pirka-re",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#016",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "276",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pirka menoko' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "pirka menoko",
+    "suggestion": "pirka menoko",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tan menoko' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "tan menoko",
+    "suggestion": "tan menoko",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#015",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "270",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pirka-no' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "pirka-no",
+    "suggestion": "pirka-no",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#014",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pirka somo ki' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "pirka somo ki",
+    "suggestion": "pirka somo ki",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#013",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "258",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pirka=an' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "pirka=an",
+    "suggestion": "pirka=an",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kamuy ne' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "kamuy ne",
+    "suggestion": "kamuy ne",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#012",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=pirka' is not italicized, unlike other Ainu forms in the table.",
+    "quote": "ku=pirka",
+    "suggestion": "ku=pirka",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#011",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "228",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹consensus› is applied to a claim supported by multiple citations, but the tag itself is redundant when the consensus is already established by the number and nature of the sources.",
+    "quote": "‹consensus›",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#010",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "217",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'Shibatani (1990: 19).', but the example is labeled as Ex. on line 211, and the citation is on line 215.",
+    "quote": "Shibatani (1990: 19). The bare property verb pirka 'be good / be healthy' receives an inchoative reading under the imperative frame. No dedicated inchoative form exists; the reading 'become good/healthy' is forced by context.",
+    "suggestion": "Shibatani ex. 211 (Ref k=\"shibatani1990\" p=\"19\").",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#009",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "195",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹consensus› is applied to a claim supported by multiple citations, but the tag itself is redundant when the consensus is already established by the number and nature of the sources.",
+    "quote": "‹consensus›",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#008",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "179",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'pirka-re' is not italicized, while the base form 'pirka' is.",
+    "quote": "pirka-re",
+    "suggestion": "pirka-re",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'wen-re' is not italicized, while the base form 'wen' is.",
+    "quote": "wen-re",
+    "suggestion": "wen-re",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#007",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "165",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'apkas utar arki ruwe ne' is not italicized, unlike other Ainu forms in the surrounding text.",
+    "quote": "apkas utar arki ruwe ne",
+    "suggestion": "apkas utar arki ruwe ne",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#006",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "156",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'Shibatani ex. 13c.', but the example is labeled as Ex. on line 150, not Ex. 13c.",
+    "quote": "Shibatani ex. 13c.",
+    "suggestion": "Shibatani ex. 150.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#005",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "147",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'Shibatani ex. 13b.', but the example is labeled as Ex. on line 141, not Ex. 13b.",
+    "quote": "Shibatani ex. 13b. The property verb ri 'be tall/high' predicates the third-person subject nupuri 'mountain' with zero person marking and no copula.",
+    "suggestion": "Shibatani ex. 141.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#004",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "133",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'Nakagawa ex. 1', but the example is labeled as Ex. on line 127, not Ex. 1.",
+    "quote": "Nakagawa ex. 1. The property verb pewre 'be young' takes the first-singular intransitive prefix ku= in the same slot as the action verb nu 'hear'; no morphological difference marks one as stative and the other as active.",
+    "suggestion": "Nakagawa ex. 127.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#002",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "21",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹consensus› is applied to a claim supported by multiple citations, but the tag itself is redundant when the consensus is already established by the number and nature of the sources.",
+    "quote": "‹consensus›",
+    "suggestion": null,
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#043",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "463",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'exist, be present' does not fully capture the proposed inchoative function in the example 'pirka an' interpreted as 'become good', which the surrounding text suggests. This creates a mismatch between the gloss and the semantic claim.",
+    "quote": "<A w=\"an\" gl=\"exist, be present\" />",
+    "suggestion": "Revise gloss to include potential inchoative nuance, e.g., 'exist, come into being, become present'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#040",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "89",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'méan' includes an acute accent on 'e', but no other forms in the chapter use acute accents. This may reflect an orthographic inconsistency unless specifically justified by dialectal variation.",
+    "quote": "<i lang=\"ain-Latn\">méan</i>",
+    "suggestion": "Verify whether the acute accent in 'méan' is required by the romanization system in use (e.g., for phonemic distinction) and ensure consistent application across similar forms.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#039",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "422–423",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The verb pirka is intransitive and should take an S-prefix (e.g., ku=), but here it carries the object prefix en=. This contradicts the chapter's core claim that property verbs take intransitive-subject prefixes. The description says akkari takes an object-marked antecedent, but the antecedent en=pirka appears to be a clause with an object prefix on an intransitive verb, which is not a standard pattern.",
+    "quote": "en=pirka akkari pirka=an 'you are more beautiful than I am'",
+    "suggestion": "Revise the example to use a standard comparative construction, e.g., ku=pirka akkari e=pirka=an (if that is grammatical) or provide a glossed example from a source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#038",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "354",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ainu form uses the prefix a=, which is fourth person (indefinite/one's) or first person plural, not first person singular. Earlier in the chapter (line 124) first person singular is consistently ku=. The translation 'my' therefore contradicts the person-marking system described.",
+    "quote": "a=kor cise poro=an 'my house is big' (constructed)",
+    "suggestion": "Change the Ainu form to ku=kor cise poro=an or adjust the translation to 'one's house is big' / 'our house is big'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "no-adjective-class-property-verbs~p1#003",
+  "chapter": "no-adjective-class-property-verbs",
+  "lines": "133",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A=hear' for 'ku=nu' is inconsistent with the note which states 'the property verb pewre 'be young' takes the first-singular intransitive prefix ku= in the same slot as the action verb nu 'hear''. The gloss should reflect '1SG.S=hear' if 'nu' is an action intransitive verb taking the S-prefix, or the note needs clarification on why 'ku=' is glossed as '1SG.A' in this context.",
+    "quote": "m=\"sonno ku=pewre or ta ku=nu yukar ne ru-we ne\"\ng=\"truly 1SG.S=be.young inside LOC 1SG.A=hear yukar COP track-POSS COP\"\ntr=\"That is truly a yukar I heard back when I was young.\"",
+    "suggestion": "g=\"truly 1SG.S=be.young inside LOC 1SG.S=hear yukar COP track-POSS COP\"",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

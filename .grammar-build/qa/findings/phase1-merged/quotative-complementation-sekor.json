@@ -1,0 +1,964 @@
+[
+ {
+  "id": "quotative-complementation-sekor~p1#033",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "347–352",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Phrases such as 'factbase read' and 'available for grading' are production-process terminology (pipeline language) that leak into the published text. They are addressed to the editorial team, not the reader.",
+    "quote": "the material banked for this grammar's nominalization domain — but her treatment of direct and indirect speech falls in a separate lesson not included in the factbase read for this domain ... No Ijäs claims on sekor or quotative framing are available for grading here.",
+    "suggestion": "Rewrite in a reader-facing style: e.g., 'Ijäs's pedagogical grammar covers... but does not treat direct/indirect speech in the sections consulted for this work. Her examples are not available for evaluation here.'",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Clear pipeline register leak: 'factbase' and 'read for this domain' refer to internal editorial procedures, not scholarly content.",
+    "quote": "the factbase read for this domain",
+    "suggestion": "Reword to something like 'not included in the materials analyzed for this domain'.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#007",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'QUOT' is not in italics or marked with lang=\"ain-Latn\".",
+    "quote": "1SG.S=return QUOT 4.A=say",
+    "suggestion": "1SG.S=return <i lang=\"ain-Latn\">sekor</i> 4.A=say",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of dot notation: '1SG.S' uses a dot, but '4.A' also uses a dot — this is consistent within the example, but should be checked across the chapter for uniformity. However, no inconsistency is visible in this chapter alone.",
+    "quote": "g=\"1SG.S=return QUOT 4.A=say\"",
+    "suggestion": "null",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#041",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as above: '4.S' and '1SG.A' use dot notation consistently here, but this should be confirmed across all examples. No internal inconsistency detected in this chapter.",
+    "quote": "g=\"come=4.S QUOT 1SG.A=think\"",
+    "suggestion": "null",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#035",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "215–216",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The place attribute contains Japanese text ('民話8 (その2)') without an English translation. The chapter is in English; untranslated Japanese in a visible field may confuse readers.",
+    "quote": "cite=\"ilcaa1976\" dial=\"SAR\" place=\"Kawakami Matsuko, uwepeker 民話8 (その2) [aa-irc/007#213]\"",
+    "suggestion": "Provide an English gloss: e.g., 'folktale 8 (part 2)'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#034",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "262–263",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The evidence tag ‹corpus-suggested› normally indicates that corpus data support a positive claim. Here the claim is negative ('not established'), making the tag inappropriate. The tag should be omitted or replaced with ‹speculative› if the claim is about absence of evidence.",
+    "quote": "A stable semantic or register distinction between the two verbs in quotative syntax is not established in the read sources ‹corpus-suggested›.",
+    "suggestion": "Remove the tag or change to ‹speculative›.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#030",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "347",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kuni' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "kuni",
+    "suggestion": "<i lang=\"ain-Latn\">kuni</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'sekor' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor",
+    "suggestion": "<i lang=\"ain-Latn\">sekor</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#029",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "341",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'kunak' and 'yak' are not consistently italicized or marked with lang=\"ain-Latn\".",
+    "quote": "kunak/yak",
+    "suggestion": "<i lang=\"ain-Latn\">kunak</i>/<i lang=\"ain-Latn\">yak</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#028",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "334",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'sekor' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor",
+    "suggestion": "<i lang=\"ain-Latn\">sekor</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'sekor hawe ne' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor hawe ne",
+    "suggestion": "<i lang=\"ain-Latn\">sekor hawe ne</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#027",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "330",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'sekor' and 'ari' are not consistently italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor vs ari",
+    "suggestion": "<i lang=\"ain-Latn\">sekor</i> vs <i lang=\"ain-Latn\">ari</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ari' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ari",
+    "suggestion": "<i lang=\"ain-Latn\">ari</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#026",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "322",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'kuni', 'kunak', and 'yak' are not consistently italicized or marked with lang=\"ain-Latn\".",
+    "quote": "kuni/kunak/yak",
+    "suggestion": "<i lang=\"ain-Latn\">kuni</i>/<i lang=\"ain-Latn\">kunak</i>/<i lang=\"ain-Latn\">yak</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#025",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "317",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'sekor' and 'ari' are not consistently italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor/ari",
+    "suggestion": "<i lang=\"ain-Latn\">sekor</i>/<i lang=\"ain-Latn\">ari</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'sekor' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor",
+    "suggestion": "<i lang=\"ain-Latn\">sekor</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#024",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "307",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'sekor' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor",
+    "suggestion": "<i lang=\"ain-Latn\">sekor</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#023",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "298",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference slug 'logophoric-narration-and-reported-discourse' is not marked as a link.",
+    "quote": "logophoric-narration-and-reported-discourse",
+    "suggestion": "<Xr ch=\"logophoric-narration-and-reported-discourse\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#022",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "289",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference slug 'indefinite-fourth-person-paradigm' is not marked as a link.",
+    "quote": "indefinite-fourth-person-paradigm",
+    "suggestion": "<Xr ch=\"indefinite-fourth-person-paradigm\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#021",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "285",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes 'a=' and '=an' are not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "a=, =an",
+    "suggestion": "<i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">=an</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference slug 'fourth-person-honorific' is not marked as a link.",
+    "quote": "fourth-person-honorific",
+    "suggestion": "<Xr ch=\"fourth-person-honorific\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#020",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "271",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes 'a=' and 'ci=' are not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "a=, ci=",
+    "suggestion": "<i lang=\"ain-Latn\">a=</i>/<i lang=\"ain-Latn\">ci=</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme '=an' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "=an",
+    "suggestion": "<i lang=\"ain-Latn\">=an</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#019",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "261",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ye' and 'itak' are not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ye, itak",
+    "suggestion": "<i lang=\"ain-Latn\">ye</i>, <i lang=\"ain-Latn\">itak</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#018",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "249",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'hawe ne' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "hawe ne",
+    "suggestion": "<i lang=\"ain-Latn\">hawe ne</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hawe-ne' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "hawe-ne",
+    "suggestion": "<i lang=\"ain-Latn\">hawe-ne</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference slug 'evidential-schema-overview' is not marked as a link.",
+    "quote": "evidential-schema-overview",
+    "suggestion": "<Xr ch=\"evidential-schema-overview\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#017",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ek' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ek",
+    "suggestion": "<i lang=\"ain-Latn\">ek</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-e' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "haw-e",
+    "suggestion": "<i lang=\"ain-Latn\">haw-e</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "haw",
+    "suggestion": "<i lang=\"ain-Latn\">haw</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#016",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "240",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ek', 'sekor', 'haw-e', 'ne' are not consistently italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ek sekor haw-e ne",
+    "suggestion": "<i lang=\"ain-Latn\">ek</i> <i lang=\"ain-Latn\">sekor</i> <i lang=\"ain-Latn\">haw-e</i> <i lang=\"ain-Latn\">ne</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'QUOT' is not in italics or marked with lang=\"ain-Latn\".",
+    "quote": "come QUOT voice-POSS COP",
+    "suggestion": "come <i lang=\"ain-Latn\">sekor</i> voice-POSS COP",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#015",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "216",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ahun' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ahun",
+    "suggestion": "<i lang=\"ain-Latn\">ahun</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a=ye' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "a=ye",
+    "suggestion": "<i lang=\"ain-Latn\">a=ye</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'akusu' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "akusu",
+    "suggestion": "<i lang=\"ain-Latn\">akusu</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#014",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "209",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'a', 'ahun', 'kuni', 'a=ye', 'akusu', 'toykooripak' are not consistently italicized or marked with lang=\"ain-Latn\".",
+    "quote": "a ahun kuni a=ye akusu toykooripak",
+    "suggestion": "<i lang=\"ain-Latn\">a ahun</i> <i lang=\"ain-Latn\">kuni</i> <i lang=\"ain-Latn\">a=ye</i> <i lang=\"ain-Latn\">akusu</i> <i lang=\"ain-Latn\">toykooripak</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'COMP' is not in italics or marked with lang=\"ain-Latn\".",
+    "quote": "PFV enter COMP say CONJ be.abashed",
+    "suggestion": "PFV enter <i lang=\"ain-Latn\">kuni</i> say CONJ be.abashed",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#013",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "200",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ek' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ek",
+    "suggestion": "<i lang=\"ain-Latn\">ek</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kor an' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "kor an",
+    "suggestion": "<i lang=\"ain-Latn\">kor an</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#012",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ku=matnepo', 'tanto', 'ek', 'kunak', 'ye', 'kor', 'an' are not consistently italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ku=matnepo tanto ek kunak ye kor an",
+    "suggestion": "<i lang=\"ain-Latn\">ku=matnepo</i> <i lang=\"ain-Latn\">tanto</i> <i lang=\"ain-Latn\">ek</i> <i lang=\"ain-Latn\">kunak</i> <i lang=\"ain-Latn\">ye</i> <i lang=\"ain-Latn\">kor an</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'COMP' is not in italics or marked with lang=\"ain-Latn\".",
+    "quote": "1SG.POSS=daughter today come COMP say CONJ exist",
+    "suggestion": "1SG.POSS=daughter today come <i lang=\"ain-Latn\">kuni</i> say CONJ exist",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#011",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "187",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kunak' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "kunak",
+    "suggestion": "<i lang=\"ain-Latn\">kunak</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yak' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "yak",
+    "suggestion": "<i lang=\"ain-Latn\">yak</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kor an' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "kor an",
+    "suggestion": "<i lang=\"ain-Latn\">kor an</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#010",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "183",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kuni' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "kuni",
+    "suggestion": "<i lang=\"ain-Latn\">kuni</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#009",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "178",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'kuni' is not in italics or marked with lang=\"ain-Latn\".",
+    "quote": "hosipi=an kuni a=ye",
+    "suggestion": "hosipi=an <i lang=\"ain-Latn\">kuni</i> a=ye",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#008",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "173",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'ku=' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ku=",
+    "suggestion": "<i lang=\"ain-Latn\">ku=</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#006",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "152",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'eramiskari' and 'eraman' are not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "eramiskari, eraman",
+    "suggestion": "<i lang=\"ain-Latn\">eramiskari</i>, <i lang=\"ain-Latn\">eraman</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#005",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "148",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ya' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ya",
+    "suggestion": "<i lang=\"ain-Latn\">ya</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#004",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "134",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ye', 'ramu', and 'takar' are not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ye, ramu, takar",
+    "suggestion": "<i lang=\"ain-Latn\">ye</i>, <i lang=\"ain-Latn\">ramu</i>, <i lang=\"ain-Latn\">takar</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#003",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "106",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ari' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor (or ari)",
+    "suggestion": "sekor (or <i lang=\"ain-Latn\">ari</i>)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#002",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "44",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ari' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "ari",
+    "suggestion": "<i lang=\"ain-Latn\">ari</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#001",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "12",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ari' is not italicized or marked with lang=\"ain-Latn\".",
+    "quote": "sekor (and its variant ari)",
+    "suggestion": "sekor (and its variant <i lang=\"ain-Latn\">ari</i>)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#040",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "195",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.POSS=daughter' implies a possessive construction, but the morpheme string has 'ku=matnepo', where 'ku=' is the first-person singular possessive prefix. The gloss should align with the morpheme segmentation.",
+    "quote": "g=\"1SG.POSS=daughter today come COMP say CONJ exist\"",
+    "suggestion": "Change gloss to '1SG=daughter' or '1SG.POSS=daughter' consistently; if 'POSS' is used, ensure it's standard across the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#039",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "240",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string shows 'haw-e' but the gloss line has 'voice-POSS COP', where 'POSS' glosses '-e'. However, the note explains '-e' as a possessed ending, which is inconsistent with labeling it as a possessive clitic in the gloss.",
+    "quote": "m=\"ek sekor haw-e ne\"",
+    "suggestion": "Change gloss from 'voice-POSS COP' to 'voice-POSS.ENDING COP' or 'voice-POSS= COP' to better reflect analysis.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#038",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "351",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Editorial meta-commentary: 'grading' refers to the book's internal evidence-tagging workflow, not appropriate in final prose.",
+    "quote": "available for grading here",
+    "suggestion": "Replace with 'available for evaluation' or 'included in this analysis'.",
+    "confidence": 0.97
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#037",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "330",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Another instance of 'read sources', which is a pipeline register leak referring to the editorial process rather than the linguistic record.",
+    "quote": "in the read sources",
+    "suggestion": "Replace with 'in available sources' or 'in the existing literature'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#036",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "263",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'the read sources' is a pipeline register leak, referring to the book's internal research process rather than the linguistic content.",
+    "quote": "the read sources ‹corpus-suggested›",
+    "suggestion": "Replace 'the read sources' with 'available sources' or 'existing sources'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#032",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "84–86, 275",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter's own description (line 84-86) states that the shift is only to the fourth person, but a direct quote from Nakagawa (line 275) includes third person as a possible target ('1→3/4'). This creates a contradiction about the scope of the person shift.",
+    "quote": "84: 'an original first person shifts to the fourth' vs. 275: 'the speaker's-viewpoint person shifts 1→3/4'",
+    "suggestion": "Reconcile: either amend the earlier description to include third person, or explain that Nakagawa's rule differs from the consensus presented here.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "quotative-complementation-sekor~p1#031",
+  "chapter": "quotative-complementation-sekor",
+  "lines": "180",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The free translation 'I said' uses a first-person subject, but the gloss for the matrix verb is '4.A=say' (fourth person). The direct-quote example (line 170) translates the same matrix form a=ye as 'He/she said'. This inconsistency suggests either the gloss or the translation is wrong.",
+    "quote": "tr=\"I said I would return.\" g=\"return=4.S COMP 4.A=say\"",
+    "suggestion": "Either change the translation to 'He/she said I would return' or adjust the gloss to reflect a first-person reading for a= in this context.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

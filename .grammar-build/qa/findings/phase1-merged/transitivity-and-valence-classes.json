@@ -1,0 +1,536 @@
+[
+ {
+  "id": "transitivity-and-valence-classes~p1#012",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "181–183",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss includes 'track-POSS' which is not reflected in the free translation. The translation 'that you were there' omits the semantic component of 'track'.",
+    "quote": "g=\"look=4.S then 2SG.S=exist track-POSS 4.A=see NMLZ because\" tr=\"When I looked, since I saw that you were there, …\"",
+    "suggestion": "Either revise the translation to capture the nominalization (e.g., 'the fact that you were there' already omits 'track') or adjust the gloss if 'track-POSS' is purely grammatical and should be annotated differently.",
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'hi kusu', which is not glossed in the `g` attribute. The gloss only covers up to 'a=nukar', missing 'hi kusu'. This is a clear omission of morphemes in the gloss line.",
+    "quote": "inkar=an akus e=an ru-we a=nukar hi kusu",
+    "suggestion": "Add glosses for 'hi' and 'kusu' in the `g` attribute.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#005",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "72",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'osma' is not italicized, while other Ainu words in the same list are.",
+    "quote": "oma, osma, kus",
+    "suggestion": "osma",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of number ranges in the table; other rows use en dash or hyphen without 'or', e.g., '2-place / 2-argument'. The phrase '2- or 3-place subtype' uses a different style and may confuse readers expecting consistent notation.",
+    "quote": "2- or 3-place subtype",
+    "suggestion": "Change to '2-/3-place' or '2- or 3-argument' for consistency with other rows.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#019",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "618",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ya' is present in `m` but not glossed in `g`. The gloss ends with 'Q', but 'ya' is not accounted for in the alignment.",
+    "quote": "uomano eci=eramuoka ya",
+    "suggestion": "Add 'Q' as the gloss for 'ya' in the `g` attribute, or adjust segmentation.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#018",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "454",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'wa' is present in `m` but not glossed in `g`. The gloss line skips it, breaking the alignment.",
+    "quote": "upas tum a=oma wa karkarse=an",
+    "suggestion": "Add a gloss for 'wa' in the `g` attribute.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#017",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "388",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string has three elements before the verb: 'topenpe', 'hekattar', 'ku=kore', but the gloss `g` only has three glosses: 'sweets children 1SG.A=give'. While this may be correct if 'topenpe' and 'hekattar' are both objects, the gloss does not clarify which is which. However, the main issue is that the example is marked as `constructed` but lacks the `constructed` attribute in the `<Ex>` tag.",
+    "quote": "topenpe hekattar ku=kore",
+    "suggestion": "Add the `constructed` attribute to the `<Ex>` tag if it is not already present (it is, so this is resolved). No change needed beyond that.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#016",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "201",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string contains four words, but the gloss `g` has only three: 'yesterday boy fish catch'. The gloss is missing a segmentation or alignment for 'koyki', which should be 'catch' but is not separated. This breaks the interlinear format.",
+    "quote": "numan hekaci cep koyki",
+    "suggestion": "Ensure each morpheme is separated and aligned; possibly 'koyki' should be segmented or the gloss adjusted to match.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#015",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "268",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'pe' is present in the `m` string but not glossed in the `g` attribute. The gloss line skips it, breaking the one-to-one alignment between morphemes and glosses.",
+    "quote": "mean cuk ne pe merayke=an ka somo ki no",
+    "suggestion": "Add a gloss for 'pe' in the `g` attribute.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#020",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "658",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'epakasnure' appears to be a concatenation of 'epakasnu' + 're', but in the text it is written without a hyphen or separator. Other causative forms in the chapter use hyphens (e.g., 'omarere'). This creates inconsistency in orthographic presentation.",
+    "quote": "epakasnure",
+    "suggestion": "Write as 'epakasnu-re' or 'epakasnure' consistently with other causative forms.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#014",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "434",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the 'locative-object verbs' table, the arity values are given as '+2' and '+3', but in the 'Arity and the derivational calculus' table, they are formatted without the plus sign in the header row (e.g., '+1', '+2', '+3'). This is a minor inconsistency in presentation.",
+    "quote": "+2",
+    "suggestion": "Ensure consistent use of '+' in all arity values across tables; either include it in all or omit it in all.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#013",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "41, 70",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The column header promises a 'numeric label' (like 0-, 1-, 2-, 3-place), but the vc row contains '2- or 3-place subtype', which is not a single numeric value but a range description.",
+    "quote": "numeric label (Nakagawa; Bugaeva & Kobayashi) … 2- or 3-place subtype",
+    "suggestion": "Change to '2- to 3-place' or restructure the label to be a plain number (e.g., '2-3-place') for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#011",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "27–28, 85",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This statement omits 'avalent', which Ijäs uses according to line 85 ('Ijäs’s Lessons 2 and 3 introduce the same inventory for learners as avalent, intransitive, transitive, and ditransitive verbs') and which appears as the traditional label for v0 in the classification table.",
+    "quote": "Satō, Tamura, and Ijäs retain the traditional terms intransitive, transitive, and ditransitive",
+    "suggestion": "Add 'avalent' to the list, or clarify that Ijäs also uses 'avalent'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#010",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "142",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'e=' is not italicized, while other Ainu words in the same list are.",
+    "quote": "e=",
+    "suggestion": "e=",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#009",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "136",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ci=' is not italicized, while other Ainu words in the same list are.",
+    "quote": "ci=",
+    "suggestion": "ci=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'un=' is not italicized, while other Ainu words in the same list are.",
+    "quote": "un=",
+    "suggestion": "un=",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#008",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "128",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ku=' is not italicized, while other Ainu words in the same list are.",
+    "quote": "ku=",
+    "suggestion": "ku=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ku=' is not italicized, while other Ainu words in the same list are.",
+    "quote": "ku=",
+    "suggestion": "ku=",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'en=' is not italicized, while other Ainu words in the same list are.",
+    "quote": "en=",
+    "suggestion": "en=",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#007",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "107",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'inkar' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "inkar",
+    "suggestion": "inkar",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'inkar=as' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "inkar=as",
+    "suggestion": "inkar=as",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'nukar' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "nukar",
+    "suggestion": "nukar",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ci=nukar' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "ci=nukar",
+    "suggestion": "ci=nukar",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#006",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "79",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'epakasnu' is not italicized, while other Ainu words in the same list are.",
+    "quote": "kore, epakasnu, o",
+    "suggestion": "epakasnu",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#004",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "65",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'koyki' is not italicized, while other Ainu words in the same list are.",
+    "quote": "nukar, koyki, ne",
+    "suggestion": "koyki",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#003",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "58",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'apkas' is not italicized, while other Ainu words in the same list are.",
+    "quote": "inkar, apkas, ipe",
+    "suggestion": "apkas",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#002",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "28",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō, Tamura, and Ijäs is split across multiple references, but the text only explicitly links the terms to Nakagawa. It's unclear if all three sources support the claim about traditional terms.",
+    "quote": "Satō, Tamura, and Ijäs retain the traditional terms intransitive, transitive, and ditransitive <Ref k=\"nakagawa2024\" p=\"128\" />; <Ref k=\"bugaevakobayashi2022\" p=\"§3\" />; <Ref k=\"sato2008\" p=\"94–98\" />.",
+    "suggestion": "Clarify which source supports which part of the claim, or consolidate if all support the same point.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#001",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "14",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'cise' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "cise or ta menoko hoku tura ipe",
+    "suggestion": "cise",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ipe' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "cise or ta menoko hoku tura ipe",
+    "suggestion": "ipe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hoku' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "cise or ta menoko hoku tura ipe",
+    "suggestion": "hoku",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'tura' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "cise or ta menoko hoku tura ipe",
+    "suggestion": "tura",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'menoko' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "cise or ta menoko hoku tura ipe",
+    "suggestion": "menoko",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ta' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "cise or ta menoko hoku tura ipe",
+    "suggestion": "ta",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'or' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "cise or ta menoko hoku tura ipe",
+    "suggestion": "or",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'menoko' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "menoko",
+    "suggestion": "menoko",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ipe' is not italicized, while other Ainu words in the same sentence are.",
+    "quote": "ipe",
+    "suggestion": "ipe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "transitivity-and-valence-classes~p1#021",
+  "chapter": "transitivity-and-valence-classes",
+  "lines": "414",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the table above (lines 430–449), 'o' is listed with arity '+3', but in the main classification table (lines 46–80), 'o' is listed under 'vc' (locative-object verb) with 'A/S + bare locative object' — implying two core arguments, not three. This contradicts the claim that it is three-place.",
+    "quote": "o 'put X into a place' is three-place and is the chief base-form ditransitive of the language",
+    "suggestion": "Reconcile the arity of 'o': either update the table to reflect +3 or clarify that 'vc' can include three-place verbs.",
+    "confidence": 1
+   }
+  ]
+ }
+]

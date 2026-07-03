@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "8-17",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Three properties of the Hokkaido Ainu evidential system are treated here because they apply across all four formal-noun evidentials rather than belonging to any single term: the expression of mirativity and its structural separation from the evidential nominalizers; the scope of the evidential predicate over the TAM-marked clause it closes; and the grammaticalization cline by which ordinary sensory nouns become clause-final formal-noun evidentials. Double-evidential stacking is treated alongside grammaticalization because it reveals the hierarchical position that ruwe ne has reached on that cline.",
+  "issue": "The overview lists three properties (mirativity, scope, grammaticalization) but then adds double-evidential stacking as a fourth topic treated alongside grammaticalization. The section structure has four sections (mirativity-aan, evidential-scope, grammaticalization-cline, double-evidentiality), not three. The overview's 'three properties' claim is contradicted by the actual content.",
+  "suggestion": "Change 'Three properties' to 'Four properties' or restructure the overview to match the four sections.",
+  "confidence": 0.9,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "213",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "Three stages are directly attested in the sources, yielding an intra-areal cline ‹original-needs-review›:",
+  "issue": "The epistemic tag ‹original-needs-review› is a pipeline-internal editorial note that should not appear in the published text. It indicates the author has not yet verified this claim against sources.",
+  "suggestion": "Remove the tag or replace with an appropriate grade such as ‹corpus-suggested› if the claim is tentative.",
+  "confidence": 1,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "40-41",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The debate turns on sources consulted second-hand; Yoshikawa's two studies are cited here via <Ref k=\"hirosawa2026\" p=\"90\" />.",
+  "issue": "This sentence is a meta-commentary about the production process (sources consulted second-hand) rather than a claim about Ainu. It leaks pipeline information about how the chapter was researched.",
+  "suggestion": "Remove the sentence or rephrase to state the factual situation without editorial meta-commentary, e.g., 'Yoshikawa's studies are known only through Hirosawa's citation.'",
+  "confidence": 0.8,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "167-168",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "The formal status of the nominalized clause embedded under the evidential is not settled in the sources read directly for this grammar.",
+  "issue": "The phrase 'read directly for this grammar' is a pipeline-register leak addressing the production process rather than the reader. It should be rephrased as a statement about the state of the field.",
+  "suggestion": "Rephrase to: 'The formal status of the nominalized clause embedded under the evidential is not settled in the available literature.'",
+  "confidence": 0.9,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "375",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Attested Type A combinations include hawe as ruwe ne, siri an ruwe ne, and siri ki siri ne",
+  "issue": "The combination 'siri ki siri ne' is listed as a Type A combination, but Type A is defined as 'inner indirect evidential + outer ruwe ne'. 'siri ki siri ne' has siri ne as the outer form, not ruwe ne, and 'siri ki' is not an indirect evidential (it would be a direct form with ki 'do'). This contradicts the definition of Type A.",
+  "suggestion": "Either remove 'siri ki siri ne' from the list of Type A combinations, or clarify that it is a different pattern. Check Dal Corso 2018: 331-333 for the correct classification.",
+  "confidence": 0.7,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "388-396",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The outer form in Types A and B is systematically ruwe ne and not siri ne, hawe ne, or humi ne.",
+  "issue": "This claim is contradicted by the previous paragraph (line 375) which lists 'siri ki siri ne' as an attested Type A combination, where the outer form is siri ne, not ruwe ne.",
+  "suggestion": "Either remove 'siri ki siri ne' from the Type A list, or qualify the claim about systematicity to acknowledge this exception.",
+  "confidence": 0.8,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "419-426",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"poro cep a=ne hum-i ne hum-i as orano\" g=\"big fish 4.A=COP hum-POSS COP hum-POSS stand after\" tr=\"Feeling as though I were a great fish, and as that sensation arose —\"",
+  "issue": "The gloss 'hum-POSS' appears twice but the Ainu form is 'hum-i' both times. The first 'hum-i' is glossed as 'hum-POSS' and the second also as 'hum-POSS', but the free translation distinguishes them: 'Feeling as though...' (direct sensation) vs 'as that sensation arose' (indirect). The gloss should reflect the different functions: the first is a direct evidential (humi ne) and the second is an indirect evidential (humi as). The gloss 'hum-POSS' for both obscures this distinction.",
+  "suggestion": "Gloss the first hum-i as 'hum-POSS' (part of direct evidential) and the second as 'hum-POSS' but with a note distinguishing the constructions, or use more specific glosses like 'SENS' for the direct and 'SENS.INDIR' for the indirect.",
+  "confidence": 0.6,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "419-426",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "m=\"poro cep a=ne hum-i ne hum-i as orano\" g=\"big fish 4.A=COP hum-POSS COP hum-POSS stand after\"",
+  "issue": "The gloss 'stand' for 'as' is inconsistent with the glossing elsewhere in the chapter. In line 381, 'as' is glossed as 'stand' (for hawe as), but in line 73, 'an' (existential) is used for the indirect evidential. The gloss 'stand' for 'as' is acceptable but should be consistent with the chapter's glossing conventions.",
+  "suggestion": "Ensure 'as' is consistently glossed as 'stand' throughout the chapter, or use a more semantically transparent gloss like 'arise' if that better reflects the function.",
+  "confidence": 0.4,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258-259",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "The allomorphs sin (for sir) and aw (for haw) are Tokachi-specific",
+  "issue": "The Ainu forms 'sin' and 'aw' are given in italics in the surrounding text but are not marked with <i lang=\"ain-Latn\"> tags, unlike other Ainu forms in the chapter (e.g., line 254-256).",
+  "suggestion": "Add <i lang=\"ain-Latn\"> tags around 'sin' and 'aw' for consistency.",
+  "confidence": 0.9,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "<Ref k=\"hoppertraugott2003\" paren />",
+  "issue": "The citation uses 'paren' as an attribute, which appears to be a markup instruction rather than a standard citation format. This may be a pipeline artifact.",
+  "suggestion": "Verify the intended citation format and ensure it renders correctly in the published version.",
+  "confidence": 0.5,
+  "chapter": "mirativity-scope-grammaticalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

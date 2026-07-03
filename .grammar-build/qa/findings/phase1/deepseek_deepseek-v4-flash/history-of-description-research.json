@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "160",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "though it was not available to this project for direct consultation",
+  "issue": "Meta-commentary about source availability addresses the production process rather than the reader.",
+  "suggestion": "Remove the clause or rephrase to avoid meta-commentary, e.g., 'The English-language grammar <Ref k=\"tamura2000\" /> made the Saru description accessible to non-Japanese readership.'",
+  "confidence": 1,
+  "chapter": "history-of-description-research",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "188–189",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "against which this grammar triangulates its analyses",
+  "issue": "Meta-commentary about the grammar's methodology addresses the production process rather than the reader.",
+  "suggestion": "Rephrase to 'against which the present grammar is triangulated' or simply 'Together with Tamura's Saru dictionary and grammar, it forms one of the two principal Japanese-language reference works for Ainu.'",
+  "confidence": 0.7,
+  "chapter": "history-of-description-research",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "169",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "large parts of the historical account in the present chapter draw on that survey",
+  "issue": "Meta-commentary about the chapter's sources addresses the production process rather than the reader.",
+  "suggestion": "Rephrase to 'The historical account in this chapter draws heavily on that survey.'",
+  "confidence": 0.6,
+  "chapter": "history-of-description-research",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "51",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "held in this project's sources in the <Ref k=\"batchelor1905\" /> edition and in its final revised form of <Ref k=\"batchelor1938\" />",
+  "issue": "Meta-commentary about source edition addresses the production process rather than the reader.",
+  "suggestion": "Rephrase to 'His dictionary — in the <Ref k=\"batchelor1905\" /> edition and its final revised form of <Ref k=\"batchelor1938\" /> — combined...'",
+  "confidence": 0.5,
+  "chapter": "history-of-description-research",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "92–97",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "Refsing identifies two advances in particular: he demonstrated that the language's person-indexing elements are personal affixes on the verb rather than the free pronouns that Batchelor's description had posited, and he distinguished the abstract nominal form from the personal-reference-bearing concrete (possessed) form",
+  "issue": "Ambiguous pronoun 'he' after 'Refsing' – the antecedent is Kindaichi, not Refsing.",
+  "suggestion": "Change 'he demonstrated' to 'Kindaichi demonstrated' and 'he distinguished' to 'Kindaichi distinguished' to clarify the antecedent.",
+  "confidence": 0.8,
+  "chapter": "history-of-description-research",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "72",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "marked with the dialect tag <span class=\"sc\">sa</span>",
+  "issue": "Dialect tag uses an HTML span with class 'sc' instead of the guillemet tags (e.g., ‹SA›) described in the briefing as the book's convention.",
+  "suggestion": "Replace with guillemet tag ‹SA› for consistency with the book's style.",
+  "confidence": 0.4,
+  "chapter": "history-of-description-research",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "70, 142",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "re-edited with translation and grammatical notes by <Ref k=\"dalcorso2021\" /> (line 70) and later re-edited and annotated by <Ref k=\"dalcorso2021\" /> (line 142)",
+  "issue": "The same citation key 'dalcorso2021' is used for two different re-editions (Piłsudski texts and Murasaki grammar), which may be ambiguous if the reference list has only one entry.",
+  "suggestion": "Ensure the reference list has a single entry for dalcorso2021 that covers both re-editions, or use distinct keys if they are separate works.",
+  "confidence": 0.5,
+  "chapter": "history-of-description-research",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

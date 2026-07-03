@@ -1,0 +1,658 @@
+[
+ {
+  "id": "existential-aspect-an-oka~p1#008",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "184",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'NMLZ' (nominalizer) is present for 'pe' but not explained in the context of the sentence's meaning. The free translation 'taking away what had arrived, and' suggests a more complex nominalization or clausal function.",
+    "quote": "g=\"come CONJ exist NMLZ send.away CONJ\"",
+    "suggestion": "Provide a more descriptive gloss for 'pe' or clarify its function in this specific construction.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'come CONJ exist NMLZ send.away CONJ' does not match the morpheme segmentation: 'wa' is glossed as 'CONJ', but in context it is the sequential particle 'and then', not a general conjunction. 'pe' is glossed as 'NMLZ', but should be 'nominalizer' or 'relativizer' for clarity.",
+    "quote": "ek wa an pe hoppa kor",
+    "suggestion": "Change 'CONJ' to 'SEQ' for 'wa' and 'NMLZ' to 'NMLZ.rel' or 'REL' for 'pe'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#019",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "338",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'nu' is presented with a gloss 'hear' but without the standard italics and `lang='ain-Latn'` attribute used for other Ainu words in the text.",
+    "quote": "and <A w=\"nu\" gl=\"hear\" />",
+    "suggestion": "Apply italics and the `lang='ain-Latn'` attribute to 'nu' for consistency with other Ainu words.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses a comma, but other glosses use semicolons (e.g., line 217: 'be big; become big'). Inconsistent punctuation in glosses.",
+    "quote": "<A w=\"nukar\" gl=\"see, look at\" />",
+    "suggestion": "Use semicolons consistently in multi-sense glosses: 'see; look at'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#003",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rok' is presented without its corresponding singular form, unlike the other pairs listed. It is unclear if 'rok' is the plural or singular form in this pair.",
+    "quote": "Ijäs catalogues <i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">oka</i> as one of several suppletive pairs — alongside <i lang=\"ain-Latn\">a</i>/<i lang=\"ain-Latn\">rok</i>",
+    "suggestion": "Clarify the singular/plural status of 'a' and 'rok' in this pair, e.g., 'a (SG)/rok (PL)' or vice versa.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The author name lacks a diacritic: should be 'Ijäs' (with caron on s) if that is the standard spelling. The citation key is 'ijas2023', but in prose the name should be typeset correctly.",
+    "quote": "Ijas catalogues",
+    "suggestion": "Add the caron: Ijäs (or check the preferred romanization in the bibliography).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#022",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "414",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation includes both a community source attribution (username, Discord, date) and a formal reference key (<Ref k=\"aynucorporadiscord\" />). While not strictly incorrect, it's redundant and could be streamlined.",
+    "quote": "(nukopoli, aynu-corpora Discord, December 2024) <Ref k=\"aynucorporadiscord\" /> ‹speculative›.",
+    "suggestion": "Either use only the community source attribution or the formal reference key, depending on the established style guide for such citations. If both are necessary, ensure consistency.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about correspondence between Hokkaido 'wa an' and Sakhalin 'hemaka' is tagged ‹speculative›, but the only support is a Discord post. This risks epistemic inflation if presented without stronger evidence.",
+    "quote": "(nukopoli, aynu-corpora Discord, December 2024)",
+    "suggestion": "Clarify that this is purely community-sourced and not attested in published grammatical descriptions.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#014",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "301",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'a=ehotke' is presented without a gloss in the table. It is unclear what 'a=' and 'ehotke' mean.",
+    "quote": "<i lang=\"ain-Latn\">a=ehotke wa an=an</i>",
+    "suggestion": "Provide a gloss for 'a=ehotke' and clarify its role in this transitive pattern.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'an=an' appears again, but in a different context. Consistency with line 294 is acceptable, but the lack of macrons or diacritics may reflect orthographic simplification.",
+    "quote": "<i lang=\"ain-Latn\">a=ehotke wa an=an</i>",
+    "suggestion": "Confirm whether macrons are omitted systematically; if so, note orthographic policy. Otherwise, ensure consistency.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#013",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "294",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'hotke=an' is presented without a gloss in the table. It is unclear what 'hotke' means and how '=an' functions here.",
+    "quote": "<i lang=\"ain-Latn\">hotke=an wa an=an</i>",
+    "suggestion": "Provide a gloss for 'hotke' and clarify the role of '=an' in this context, especially in relation to the 'controller of an' column.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'an=an' appears, but the first 'an' is the verb stem and the second '=an' is the person suffix. This could be clearer with hyphenation or morpheme separation.",
+    "quote": "<i lang=\"ain-Latn\">hotke=an wa an=an</i>",
+    "suggestion": "Write as 'an=an' → 'an=an' (correct as is), but ensure consistency in other examples. No change needed if intentional.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#001",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'okay' is presented as an alternative realization of 'oka' without explanation. It is unclear if this is a dialectal variant, a phonological alternation, or a typo.",
+    "quote": "oka / <i lang=\"ain-Latn\">okay</i>",
+    "suggestion": "Clarify the relationship between 'oka' and 'okay', e.g., 'oka / okay (plural)' or 'oka (plural, sometimes realized as okay)'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent orthographic representation of the plural existential: both 'oka' and 'okay' are given, but the text does not consistently use one form. Later in the chapter, 'oka' is used in examples (e.g., line 125), but 'okay' appears in parentheses as a phonological variant.",
+    "quote": "<i lang=\"ain-Latn\">oka</i> / <i lang=\"ain-Latn\">okay</i>",
+    "suggestion": "Choose one primary form (preferably 'oka') and note the allomorph 'okay' in parentheses once, then use consistently.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#028",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "125",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'chat PL while exist.PL' does not align with the morpheme segmentation: 'oka' is the plural existential, but the gloss 'exist.PL' does not reflect the morpheme-by-morpheme segmentation expected in Leipzig format. The gloss should break down 'oka' as 'exist.PL' or 'oka' as a single unit.",
+    "quote": "uenewsar pa kor oka",
+    "suggestion": "Revise gloss to 'chat PL while oka' or split 'oka' into 'exist.PL' if analyzing it as compositional.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#024",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "300-303, 330",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prefix a= is described as fourth-person agent in the note, but the table uses it as first-person agent to translate 'I am lying on it'. This contradicts the explicit statement about a= in the same section.",
+    "quote": "Table pattern (b): 'a=ehotke wa an=an' glossed 'I am lying on it'; line 330 note: 'a= indexes the fourth-person agent'",
+    "suggestion": "Either adjust the table’s gloss and translation to reflect fourth-person (e.g., 'one is lying on it'), or revise the note to allow a= as first-person in this construction.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#023",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "110-111, 116, 139, 294-295",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The suffix =an is consistently glossed as 4.S and called the fourth-person suffix, but in the same section it is used to express first-person singular (translation 'I', table 'I am'). This creates a fundamental inconsistency in person reference throughout the chapter.",
+    "quote": "sinot=an kor an=an … glossed play=4.S … exist=4.S; tr: 'I would always play'; line 139: 'the fourth-person suffix =an'; table: hotke=an wa an=an glossed 'I am / was lying down'",
+    "suggestion": "Decide whether =an is 1SG or 4 (or both). If both, add an explanatory note; align glosses and labels so that the same form is not called 4.S for one example and used to translate 'I' in another.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#029",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "280",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table header uses 'an' but the plural form 'oka' is also relevant. The heading should reflect that the existential verb varies by number.",
+    "quote": "<th>controller of <i lang=\"ain-Latn\">an</i></th>",
+    "suggestion": "Change to 'controller of <i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">oka</i>'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#026",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "257",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'West Japanese' is an unusual modifier; the more conventional term is 'Western Japanese'.",
+    "quote": "West Japanese dialects",
+    "suggestion": "Change 'West Japanese' to 'Western Japanese'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#021",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "371",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'consensus' is presented on its own line, separated from the prose it modifies. It should ideally be integrated into the sentence.",
+    "quote": "‹consensus›:",
+    "suggestion": "Integrate the evidence grade into the sentence, e.g., '... three properties mark the constructions as only partially grammaticalized ‹consensus›:'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#020",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "349",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'nukar' is presented without the standard gloss attribute, unlike other Ainu words in the text.",
+    "quote": "<i lang=\"ain-Latn\">nukar wa an</i> = 'has seen it and now holds that knowledge'.",
+    "suggestion": "Add the gloss attribute to 'nukar', e.g., '<i lang=\"ain-Latn\">nukar</i> (see) <i lang=\"ain-Latn\">wa an</i>'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#017",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "325",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=put.in' for 'a=o' is inconsistent with the gloss 'put.in' for 'o' in the table entry (c) (line 308). It is unclear if 'a=' is a prefix indicating the agent or something else, and if 'o' is the verb stem or an object marker.",
+    "quote": "m=\"a=o wa an\"\ng=\"4.A=put.in CONJ exist\"",
+    "suggestion": "Clarify the gloss for 'a=o' to be consistent with the table and the note. If 'a=' is a prefix, specify its meaning. If 'o' is the verb, ensure it's glossed as such.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#015",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "308",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'a=o' is presented without a gloss in the table. It is unclear what 'a=' and 'o' mean in this context.",
+    "quote": "<i lang=\"ain-Latn\">a=o wa an</i>",
+    "suggestion": "Provide a gloss for 'a=o' and clarify its role in this object-agreement pattern.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#011",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "232",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The tag 'constructed' is placed on a new line after the example, which is unusual formatting. It should ideally be part of the `<Ex>` tag attributes.",
+    "quote": "constructed",
+    "suggestion": "Move the `constructed` attribute inside the `<Ex>` tag, e.g., `<Ex constructed ... />`.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#010",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "209",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'wa' is inconsistent with the gloss 'CONJ' used for 'kor' in example 199. While 'wa' is a conjunctive particle, its specific sequential function might warrant a more distinct gloss.",
+    "quote": "g=\"come CONJ exist\"",
+    "suggestion": "Use a consistent gloss for conjunctive particles, e.g., 'CONJ' for both 'kor' and 'wa' when functioning as clause linkers, or clarify the semantic nuance of 'CONJ' in this context.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#009",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "200",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'while' for 'kor' is inconsistent with the gloss 'CONJ' (conjunctive) used for 'wa' in example 208. While 'kor' can mean 'while', its function here as a conjunctive particle should be consistently glossed.",
+    "quote": "g=\"come while exist\"",
+    "suggestion": "Use a consistent gloss for conjunctive particles, e.g., 'CONJ' for both 'kor' and 'wa' when functioning as clause linkers, or clarify the semantic nuance of 'while' in this context.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#007",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "158",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kan' is introduced without prior explanation in this context. It is presented as an alternative to 'kor an' for first-person subjects in Tokachi.",
+    "quote": "<i lang=\"ain-Latn\">ku=nukar kan ku=an</i> 'I am watching it' is grammatical where <i lang=\"ain-Latn\">*ku=nukar kor ku=an</i> is not.",
+    "suggestion": "Provide a brief explanation or cross-reference for 'kan' when it is first introduced as an alternative to 'kor an'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#006",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text refers to an example 'above' that is not immediately preceding this sentence. The example it likely refers to is the one on lines 110-117, which has a discrepancy in person marking.",
+    "quote": "in the example above, the fourth-person suffix <i lang=\"ain-Latn\">=an</i> appears on",
+    "suggestion": "Ensure the reference to the example is clear and that the example itself is internally consistent regarding person marking.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#002",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "29",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'contested' is applied to the entire sentence, but the citation for Bybee (1994) is presented without page numbers, making it difficult to ascertain which specific part of the claim it supports.",
+    "quote": "<Ref k=\"yoshikawa2022\" />; <Ref k=\"bybee1994\" paren /> ‹contested›.",
+    "suggestion": "Add page numbers to the Bybee (1994) citation if possible, or consider if the 'contested' grade applies equally to both sources.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#030",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "251",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses a comma, but in linguistic glossing, semicolons are standard for separating senses. Also, the verb is described as 'fall asleep' (change) vs. 'sleep' (state), so the gloss order may imply incorrect semantics.",
+    "quote": "<A w=\"mokor\" gl=\"sleep, fall asleep\" />",
+    "suggestion": "Use 'sleep; fall asleep' or reorder to 'fall asleep; sleep' if the inchoative sense is primary.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#027",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "75",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The plural form is written as 'oka', but earlier in the chapter (line 9) the variant 'okay' is noted. This creates orthographic drift within the chapter.",
+    "quote": "<i lang=\"ain-Latn\">V kor an</i> (plural: <i lang=\"ain-Latn\">V kor oka</i>)",
+    "suggestion": "Use 'oka/okay' or specify that 'oka' surfaces as 'okay' in certain environments, and maintain consistent citation of the plural form in constructions.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#025",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "415-417",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This sentence addresses the book's production process ('read sources', 'requires independent verification') rather than informing the reader about Ainu. It leaks editorial meta-commentary into the exposition.",
+    "quote": "The read sources for this grammar do not address this correspondence, and its functional equivalence requires independent verification in the Sakhalin grammatical literature.",
+    "suggestion": "Reword as a non-meta statement: 'This correspondence is not discussed in the sources used for this grammar, and its functional status in Sakhalin remains unclear.' Or simply omit the comment.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#018",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "330",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'an indexes the object', which contradicts the main text (line 318) stating 'an appears bare when the object is third-person or inanimate'. This creates an inconsistency in how the indexing of 'an' is described.",
+    "quote": "note=\"Object-agreement pattern (c): an indexes the object (the thing placed), not the fourth-person agent a=. The agent's action is presupposed; what the construction asserts is the object's resultant state (Nakagawa exx. 996–997).\"",
+    "suggestion": "Reconcile the description of 'an' being bare with the explanation that it indexes the object. Clarify the conditions under which it appears 'bare' versus indexed.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#016",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "318",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry (c) shows '<i lang=\"ain-Latn\">a=o wa an</i>' with 'an' appearing bare. However, the example below (lines 325-331) shows the same form '<i lang=\"ain-Latn\">a=o wa an</i>' and its note explains that 'an indexes the object (the thing placed), not the fourth-person agent a='. This contradicts the statement that 'an appears bare' and suggests it *is* indexed to the object.",
+    "quote": "the existential <i lang=\"ain-Latn\">an</i> appears bare when the object is third-person or inanimate, because no explicit person prefix is required",
+    "suggestion": "Reconcile the description of 'an' being bare with the explanation in the note of example 325-331. Clarify whether 'an' is indexed to the object or if it appears 'bare' in some sense.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#012",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "234",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that '*isepo ray kor an is bad', implying that 'kor an' is inappropriate for the verb 'ray' (die). However, the main text (lines 80-86) states that 'kor an' with change verbs marks 'the process leading toward the change, not the resulting state'. This creates a potential contradiction regarding the application of 'kor an' to punctual change verbs.",
+    "quote": "note=\"Satō's constructed diagnostic (Bugaeva ex. 72f). The punctual change verb ray 'die' yields a stable result state; *isepo ray kor an is bad — death is not an ongoing process.\"",
+    "suggestion": "Clarify the distinction between 'kor an' marking the process leading to change versus the resulting state, and how this applies to punctual verbs like 'ray'. Ensure consistency with the description in section 'kor an: progressive, habitual, and inceptive'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#005",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "116",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that both 'sinot' and 'an' carry the fourth-person suffix '=an', but the free translation uses 'I' (first person). This contradicts the gloss and the note's claim about the fourth-person suffix.",
+    "quote": "note=\"Habitual value set by the temporal clause sittokap kor 'whenever it was noon'. Both sinot and the existential an carry the fourth-person suffix =an, the pair-verb signature (§agreement below).\"",
+    "suggestion": "Reconcile the person marking between the gloss, the free translation, and the note. If the translation is correct, the gloss and note should reflect first-person marking.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "existential-aspect-an-oka~p1#004",
+  "chapter": "existential-aspect-an-oka",
+  "lines": "110",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss indicates '4.S' (fourth person singular) for both 'sinot' and 'an', but the free translation uses 'I' (first person). This is a contradiction in person marking.",
+    "quote": "m=\"sittokap kor pon seta turano sinot=an kor an=an ayne\"\ng=\"noon when small dog with play=4.S while exist=4.S then\"\ntr=\"at noon I would always play with the puppy, and\"",
+    "suggestion": "Correct the gloss to reflect the first-person subject indicated in the translation, or vice versa, and ensure consistency with the note about the pair-verb signature.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

@@ -1,0 +1,1078 @@
+[
+ {
+  "id": "formal-defective-nouns~p1#027",
+  "chapter": "formal-defective-nouns",
+  "lines": "264",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community source attribution is followed by a citation <Ref k=\"aynucorporadiscord\" />. This is redundant as the community source is already cited.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2026-05-29) <Ref k=\"aynucorporadiscord\" />.",
+    "suggestion": "Remove the redundant <Ref k=\"aynucorporadiscord\" />.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that the instrumental pattern is corpus-confirmed is supported only by a single example from a Discord message; a Discord message is not a corpus and does not warrant the epistemic tag ⟨corpus-confirmed⟩.",
+    "quote": "and ani humi a=aste p 'musical instrument' (nukopoli, aynu-corpora Discord, 2026-05-29) … ⟨corpus-confirmed⟩.",
+    "suggestion": "Replace the epistemic tag with ⟨original-needs-review⟩ or cite an actual corpus source if one exists; alternatively, lower the tag to ⟨consensus⟩ if multiple reliable sources support the pattern.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about instrumental <i lang=\"ain-Latn\">ani X p</i> is marked ‹corpus-confirmed›, but the only support is a Discord attribution, which is insufficient justification for that epistemic grade.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2026-05-29) <Ref k=\"aynucorporadiscord\" />",
+    "suggestion": "Downgrade to ‹contested› or ‹community-attested›, or add corpus reference.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#044",
+  "chapter": "formal-defective-nouns",
+  "lines": "367–368",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about the contrast between kuni a=ramu and seko a=ye is attributed solely to a single Discord message but tagged as ⟨corpus-confirmed⟩. A Discord message does not constitute a corpus source.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024-11-09) ⟨corpus-confirmed⟩.",
+    "suggestion": "Replace the epistemic tag with ⟨original-needs-review⟩ or cite a published source; if the Discord message references corpus data, clarify that dependency.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about <i lang=\"ain-Latn\">kuni a=ramu</i> vs <i lang=\"ain-Latn\">sekor a=ye</i> is tagged ‹corpus-confirmed› but supported only by a Discord post, which does not meet the standard for corpus confirmation.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024-11-09) <Ref k=\"aynucorporadiscord\" /> ‹corpus-confirmed›",
+    "suggestion": "Change epistemic tag to ‹community-attested› or provide actual corpus evidence.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#038",
+  "chapter": "formal-defective-nouns",
+  "lines": "339",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">ihi</i>' is confined to the frame '<i lang=\"ain-Latn\">ene an ihi</i>'. The citation <Ref k=\"nakagawa2024\" p=\"257\" /> is attached to this. However, the 'primary function' for '<i lang=\"ain-Latn\">ihi</i>' in the inventory table (line 115) is also 'confined to the frame <i lang=\"ain-Latn\">ene an ihi</i>'. This seems redundant.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"257\" />.",
+    "suggestion": "Consider removing the citation if the information is already fully captured in the table.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that <i lang=\"ain-Latn\">ihi</i> is confined to the frame <i lang=\"ain-Latn\">ene an ihi</i> 'such a thing', but earlier in the table (line 113) the core sense is given as 'thing' without mention of this restriction in the sense column, creating a mismatch between table and prose.",
+    "quote": "ene an ihi",
+    "suggestion": "Update table's 'core sense' for <i lang=\"ain-Latn\">ihi</i> to 'such a thing' or add a usage note.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#039",
+  "chapter": "formal-defective-nouns",
+  "lines": "344",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2022pos\" p=\"493\" /> is attached to a speculative claim about the diachronic hypothesis. It's unclear if page 493 specifically discusses this speculative hypothesis or if it's a general reference.",
+    "quote": "<Ref k=\"nakagawa2022pos\" p=\"493\" /> ‹speculative›",
+    "suggestion": "Verify if page 493 directly supports the speculative claim or if a more specific reference is needed.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is tagged ‹speculative› and supported by a citation, but the epistemic tag appears after the citation, which may suggest the citation supports the speculative status rather than the claim itself. Structure implies the source endorses speculation, but formatting is ambiguous.",
+    "quote": "Nakagawa's diachronic hypothesis — that <i lang=\"ain-Latn\">hi</i> is the historical source of the affiliative suffix <i lang=\"ain-Latn\">-i</i> — is discussed under <Xr ch=\"affiliative-suffix-morphophonology\" /> ‹speculative› <Ref k=\"nakagawa2022pos\" p=\"493\" />.",
+    "suggestion": "Move ‹speculative› before the citation or rephrase to clarify that the hypothesis itself is speculative per the source.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#019",
+  "chapter": "formal-defective-nouns",
+  "lines": "201",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This section states that '<i lang=\"ain-Latn\">p ~ pe</i>' and '<i lang=\"ain-Latn\">hi</i>' behave like suffixes due to phonological fusion. However, the 'antecedent types' for '<i lang=\"ain-Latn\">p ~ pe</i>' (line 60) include 'prenominal', and for '<i lang=\"ain-Latn\">hi</i>' (line 66) it's 'VP only'. If they behave like suffixes, it implies they attach to the immediately preceding word, which might conflict with accepting a VP or prenominal as an antecedent.",
+    "quote": "Phonological fusion. <i lang=\"ain-Latn\">p ~ pe</i> and <i lang=\"ain-Latn\">hi</i> fuse prosodically with the preceding element, behaving synchronically like suffixes, even though each nominalizes the entire preceding VP rather than only the adjacent word",
+    "suggestion": "Clarify how the 'suffix-like' behavior due to phonological fusion is reconciled with the broader antecedent types (VP, prenominal). It might be that the fusion is with the *last word* of the VP or prenominal phrase.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The diagnostic is introduced as one of four properties that distinguish formal nouns as a group, yet only two members (p~pe and hi) are said to fuse. If the other formal nouns do not fuse phonologically, then the diagnostic does not apply to the whole class, contradicting the claim that it is a 'shared diagnostic'.",
+    "quote": "Phonological fusion. p ~ pe and hi fuse prosodically with the preceding element...",
+    "suggestion": "Either specify that the fusion diagnostic applies only to a subset, or provide evidence that other formal nouns also undergo fusion.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#042",
+  "chapter": "formal-defective-nouns",
+  "lines": "96, 207–213",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table lists kur as accepting an NP antecedent (VP; NP), but the prose on distribution asymmetry only mentions utar as ‘exceptionally’ accepting a bare NP, implying that no other formal noun (including kur) does. This directly contradicts the table entry.",
+    "quote": "<td>VP; NP</td> ... the antecedent constraint is not uniform: hi requires a VP antecedent; p ~ pe takes a VP or a prenominal but not a bare NP; utar exceptionally accepts a bare NP as well",
+    "suggestion": "Either remove NP from kur's antecedent types in the table, or add kur to the list of exceptions in the asymmetry paragraph.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#050",
+  "chapter": "formal-defective-nouns",
+  "lines": "432",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent parentheses: <i lang=\"ain-Latn\">ruwe(he)</i> includes optional 'he', but in line 166 the same form is written <i lang=\"ain-Latn\">ruwe(he)</i> with parentheses, while <i lang=\"ain-Latn\">hawe(he)</i> is written without parentheses later. Orthographic inconsistency in optional suffix representation.",
+    "quote": "<i lang=\"ain-Latn\">ru</i> → <i lang=\"ain-Latn\">ruwe(he)</i>",
+    "suggestion": "Standardize to either <i lang=\"ain-Latn\">ruwe(he)</i> throughout or remove parentheses if not contrastive.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#047",
+  "chapter": "formal-defective-nouns",
+  "lines": "311",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: the suffix is written as <i lang=\"ain-Latn\">-ike</i> here, but earlier in the same paragraph as <i lang=\"ain-Latn\">-ke</i> (line 308). Should be consistent with morpheme boundary representation.",
+    "quote": "<i lang=\"ain-Latn\">-ike</i>",
+    "suggestion": "Use <i lang=\"ain-Latn\">-ke</i> throughout unless <i lang=\"ain-Latn\">-ike</i> is phonologically conditioned; clarify conditioning if so.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#015",
+  "chapter": "formal-defective-nouns",
+  "lines": "174",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2022pos\" p=\"480–482\" /> is attached to the claim that four properties distinguish formal nouns. It's possible that these pages detail all four properties, but it's not explicitly stated.",
+    "quote": "Four properties distinguish formal nouns from the other noun subclasses as a group <Ref k=\"nakagawa2022pos\" p=\"480–482\" />.",
+    "suggestion": "Ensure the cited pages indeed cover all four properties mentioned.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#009",
+  "chapter": "formal-defective-nouns",
+  "lines": "127",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"tamura1996\" p=\"s.v. ruwe, hawe\" /> refers to specific entries ('s.v. ruwe, hawe'). It's unclear if these specific entries cover all four items in the table or if other entries in Tamura (1996) are also relevant.",
+    "quote": "<caption>Sensory-evidential formal nouns (<Ref k=\"nakagawa2024\" p=\"258\" />; <Ref k=\"tamura1996\" p=\"s.v. ruwe, hawe\" />)</caption>",
+    "suggestion": "If Tamura (1996) covers all four items, consider a more general page reference or explicitly state that these are examples.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#005",
+  "chapter": "formal-defective-nouns",
+  "lines": "47",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"sato2008\" p=\"175\" /> is listed alongside <Ref k=\"nakagawa2024\" p=\"257\" /> for the general formal nouns. However, the text does not explicitly mention Sato's contribution to this specific list or table, only Nakagawa's.",
+    "quote": "<caption>General formal nouns (<Ref k=\"nakagawa2024\" p=\"257\" />; <Ref k=\"sato2008\" p=\"175\" />)</caption>",
+    "suggestion": "Ensure Sato's contribution is reflected in the text or remove the citation from the table caption if it's not directly supported.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#004",
+  "chapter": "formal-defective-nouns",
+  "lines": "41",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"257–258\" /> is attached to the statement that Nakagawa lists two sets. However, the description of the sensory-evidential set refers to 'his Table 66', which might be on a different page or section than 257-258.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"257–258\" /> lists two sets. The general set covers a range of relational senses; the sensory-evidential set (his Table 66) consists of affiliative forms of sensory nouns grammaticalized as evidential heads.",
+    "suggestion": "Verify if Table 66 is indeed on pages 257-258 or adjust the citation accordingly.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#001",
+  "chapter": "formal-defective-nouns",
+  "lines": "11",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"257\" /> is attached to a phrase that seems to be supported by the subsequent citation <Ref k=\"nakagawa2022pos\" p=\"480–482\" />. It's unclear if the first citation is redundant or if it supports a specific part of the sentence.",
+    "quote": "from which it draws its referential content <Ref k=\"nakagawa2024\" p=\"257\" />; <Ref k=\"nakagawa2022pos\" p=\"480–482\" />.",
+    "suggestion": "Review if both citations are necessary for this specific claim or if one can be removed or if the sentence needs to be split to reflect different support.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"257, 295\" /> is attached to the claim that Nakagawa calls them 'noun particles' and that this reflects their particle-like attachment. It's unclear if both page numbers support both parts of the claim.",
+    "quote": "Nakagawa also calls them <em>noun particles</em> (名助詞 <em>meijoshi</em>), reflecting <Ref k=\"nakagawa2024\" p=\"257, 295\" />.",
+    "suggestion": "Consider splitting the citation or clarifying which page number supports which aspect of the claim.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#049",
+  "chapter": "formal-defective-nouns",
+  "lines": "443",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Phrasing 'has been noted in the community discussion' reads like process commentary rather than integrated content; it highlights the source's informality unnecessarily.",
+    "quote": "The point has been noted in the community discussion (nukopoli, aynu-corpora Discord, 2024-11-25)",
+    "suggestion": "Rephrase as 'Community observation (nukopoli, aynu-corpora Discord, 2024-11-25) suggests' or integrate more smoothly.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#048",
+  "chapter": "formal-defective-nouns",
+  "lines": "368",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '(lest …; whether …)' for <i lang=\"ain-Latn\">kunak</i> includes 'whether', but the prose only discusses 'lest' (negative purpose), with no mention of indirect questions or 'whether' readings. This creates a mismatch between gloss and textual explanation.",
+    "quote": "<A w=\"kunak\" gl=\"(lest …; whether …)\" />",
+    "suggestion": "Either add discussion of indirect questions or revise gloss to '(lest …)' only.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#046",
+  "chapter": "formal-defective-nouns",
+  "lines": "113",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'thing' for <i lang=\"ain-Latn\">ihi</i> in the table does not reflect its restricted syntactic frame mentioned in the same row ('confined to the frame <i lang=\"ain-Latn\">ene an ihi</i>'), which implies a more specific meaning like 'such a thing' rather than generic 'thing'.",
+    "quote": "<i lang=\"ain-Latn\">ihi</i> 'thing' (Tokachi/Ishikari only)",
+    "suggestion": "Revise gloss to 'such a thing' or add a note on restricted usage.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#045",
+  "chapter": "formal-defective-nouns",
+  "lines": "356–358",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A specific quantitative claim (rank, token count) is made without an accompanying citation. The reader cannot verify where these corpus statistics come from.",
+    "quote": "In the Hokkaido corpus kur ranks at position 98 (2,456 tokens), consistent with its dual role as agent-denoting nominalizer in narrative and as a class-term head.",
+    "suggestion": "Add a citation to the corpus description or to the relevant section of the grammar where the corpus is introduced.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#043",
+  "chapter": "formal-defective-nouns",
+  "lines": "328",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The formal noun usi is glossed as 'place' (its core sense) rather than 'NMLZ' as used for other general formal nouns (p, pe, hi at lines 229, 239, 252, 289). This breaks the glossing convention established for the class in this chapter.",
+    "quote": "g=\"face shave place 1SG.S=go CONJ come.back track-POSS COP\"",
+    "suggestion": "Change the gloss of usi to 'NMLZ' for consistency, or adopt a consistent policy for glossing formal nouns with their core sense throughout.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#041",
+  "chapter": "formal-defective-nouns",
+  "lines": "364",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">kuni</i>' is used with '<i lang=\"ain-Latn\">ramu</i>' ('think/believe') for propositional attitudes. It contrasts this with '<i lang=\"ain-Latn\">sekor a=ye</i>' ('say that') for direct assertions. This implies '<i lang=\"ain-Latn\">kuni</i>' is for indirect speech/thought, while '<i lang=\"ain-Latn\">sekor</i>' is for direct speech. This seems consistent.",
+    "quote": "with the transitive verb <i lang=\"ain-Latn\">ramu</i> 'think/believe', the correct embedding is <i lang=\"ain-Latn\">kuni a=ramu</i> 'think that …', contrasting with the quotative frame <i lang=\"ain-Latn\">sekor a=ye</i> 'say that …', which selects a directly reported assertion rather than a propositional attitude",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#040",
+  "chapter": "formal-defective-nouns",
+  "lines": "353",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">kur</i>' combines with the adnominal '<i lang=\"ain-Latn\">un</i>' to form demonyms. However, the examples show '<i lang=\"ain-Latn\">un</i>' preceding '<i lang=\"ain-Latn\">kur</i>'. This implies '<i lang=\"ain-Latn\">un</i>' is a prenominal modifier or a possessive marker, not an adnominal in the sense of being attached to the noun.",
+    "quote": "As a class-term head it combines with the adnominal <i lang=\"ain-Latn\">un</i> to form demonyms: <i lang=\"ain-Latn\">Sar un kur</i> 'a Saru person', <i lang=\"ain-Latn\">Iyoci un kur</i> 'a Yoichi person'",
+    "suggestion": "Clarify the grammatical role of '<i lang=\"ain-Latn\">un</i>'. If it precedes the noun, it might be better described as a prenominal or a particle.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#037",
+  "chapter": "formal-defective-nouns",
+  "lines": "332",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'usi nominalises the VP nanu memke', producing an NP denoting a place. This aligns with the description of '<i lang=\"ain-Latn\">uske</i>' and '<i lang=\"ain-Latn\">usi(ke)</i>' as place/time complementizers. However, the example sentence is 'nanu memke usi ku=oman wa ek ruwe ne'. The morpheme breakdown is 'nanu memke usi ku=oman wa ek ruwe ne'. The gloss is 'face shave place 1SG.S=go CONJ come.back track-POSS COP'. The note says 'usi nominalises the VP nanu memke'. This seems to imply that 'usi' is the nominalizer here. However, the table lists '<i lang=\"ain-Latn\">uske</i>' and '<i lang=\"ain-Latn\">usi(ke)</i>' as formal nouns. The example sentence uses 'usi', not 'uske' or 'usi(ke)'.",
+    "quote": "usi nominalises the VP nanu memke 'shave one's face', producing an NP denoting a place; the evidential ruwe ne closes the matrix clause.",
+    "suggestion": "Clarify if 'usi' in the example is a variant of '<i lang=\"ain-Latn\">uske</i>' or '<i lang=\"ain-Latn\">usi(ke)</i>', and ensure the morpheme breakdown and gloss reflect this.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#036",
+  "chapter": "formal-defective-nouns",
+  "lines": "322",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'form' for '<i lang=\"ain-Latn\">usi(ke)</i>' in the inventory table (line 88) is '<i lang=\"ain-Latn\">usi(ke)</i>', with the core sense 'time, place'. The text here states '<i lang=\"ain-Latn\">usi(ke)</i>' heads NPs denoting location or occasion. This seems consistent. However, the table lists '<i lang=\"ain-Latn\">uske</i>' as a separate entry with the core sense 'place'. The text doesn't explicitly distinguish the function of '<i lang=\"ain-Latn\">uske</i>' from '<i lang=\"ain-Latn\">usi(ke)</i>' in this sentence, implying they might be variants or closely related.",
+    "quote": "<i lang=\"ain-Latn\">uske</i> 'place' and <i lang=\"ain-Latn\">usi(ke)</i> 'time/place' head NPs denoting the location or occasion of an activity:",
+    "suggestion": "Clarify the relationship between '<i lang=\"ain-Latn\">uske</i>' and '<i lang=\"ain-Latn\">usi(ke)</i>'. Are they variants of the same form, or distinct but similar in function?",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#035",
+  "chapter": "formal-defective-nouns",
+  "lines": "311",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text discusses '<i lang=\"ain-Latn\">-ke</i>' as a concretizing suffix forming '<i lang=\"ain-Latn\">hike</i>' from '<i lang=\"ain-Latn\">hi</i>'. Then it introduces '<i lang=\"ain-Latn\">-ike</i>' in '<i lang=\"ain-Latn\">onneike</i>' and suggests it 'may represent the same element'. This implies '<i lang=\"ain-Latn\">-ike</i>' is a variant of '<i lang=\"ain-Latn\">-ke</i>'. However, the analysis of '<i lang=\"ain-Latn\">-ike</i>' as a 'nominalizing suffix' is marked as 'contested'. This could be confusing if '<i lang=\"ain-Latn\">-ke</i>' is presented as a 'concretizing suffix' and '<i lang=\"ain-Latn\">-ike</i>' as a potentially 'nominalizing suffix'.",
+    "quote": "The suffix <i lang=\"ain-Latn\">-ike</i> that appears in lexicalized items such as <i lang=\"ain-Latn\">onneike</i> 'parent/elder' (&lt; <i lang=\"ain-Latn\">onne</i> 'old' + <i lang=\"ain-Latn\">-ike</i> 'person/entity', per Chiri's gloss; noted by antitwilight, aynu-corpora Discord, 2024-11-15) <Ref k=\"aynucorporadiscord\" /> may represent the same element in a lexicalized compound; the synchronic productivity of bare <i lang=\"ain-Latn\">-ike</i> as a nominalizing suffix is a proposed analysis ‹contested›.",
+    "suggestion": "Clarify the relationship between '<i lang=\"ain-Latn\">-ke</i>' and '<i lang=\"ain-Latn\">-ike</i>', and how their functions (concretizing vs. nominalizing) are distinguished or related.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#034",
+  "chapter": "formal-defective-nouns",
+  "lines": "307",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states '<i lang=\"ain-Latn\">hike</i>' is derived from '<i lang=\"ain-Latn\">hi</i>' by '<i lang=\"ain-Latn\">-ke</i>'. This implies '<i lang=\"ain-Latn\">hi</i>' is the base. However, in the inventory table (line 73), '<i lang=\"ain-Latn\">hike</i>' is described as derived from '<i lang=\"ain-Latn\">hi</i> + <i lang=\"ain-Latn\">-ke</i>', and its core sense is 'the one (that …)'. This seems consistent. The potential confusion is that '<i lang=\"ain-Latn\">hi</i>' itself is a formal noun, and '<i lang=\"ain-Latn\">hike</i>' is derived from it.",
+    "quote": "<i lang=\"ain-Latn\">hike</i> 'the one (that …)' is an anaphoric relative head derived from <i lang=\"ain-Latn\">hi</i> by the concretizing suffix <i lang=\"ain-Latn\">-ke</i>",
+    "suggestion": "Ensure the relationship between '<i lang=\"ain-Latn\">hi</i>' as a formal noun and '<i lang=\"ain-Latn\">hike</i>' as a derived anaphoric relative head is clearly explained.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#033",
+  "chapter": "formal-defective-nouns",
+  "lines": "298",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">kani</i>' derives from '<i lang=\"ain-Latn\">ku=an-hi</i>'. The gloss for '<i lang=\"ain-Latn\">hi</i>' is 'thing, matter, time, place'. So '<i lang=\"ain-Latn\">ku=an-hi</i>' would mean 'my existing thing/matter'. This seems to align with the idea of '<i lang=\"ain-Latn\">hi</i>' nominalizing a state of affairs. However, the derivation is described as 'reduced by regular vowel contraction'. This implies a phonological process, but the exact contraction is not shown.",
+    "quote": "The first-person singular <i lang=\"ain-Latn\">kani</i> derives from <i lang=\"ain-Latn\">ku=an-hi</i> 'the thing/fact of my existing', reduced by regular vowel contraction",
+    "suggestion": "Provide the intermediate step or explain the vowel contraction process to show how '<i lang=\"ain-Latn\">ku=an-hi</i>' becomes '<i lang=\"ain-Latn\">kani</i>'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 298, the derivation of '<i lang=\"ain-Latn\">c(i)oka(y)</i>' from '<i lang=\"ain-Latn\">ci=oka(y)</i>' is mentioned with 'reduction', but the specific reduction process is not explained.",
+    "quote": "<i lang=\"ain-Latn\">c(i)oka(y)</i> 'we (exclusive)' from <i lang=\"ain-Latn\">ci=oka(y)</i> + reduction",
+    "suggestion": "Explain the reduction process involved in deriving '<i lang=\"ain-Latn\">c(i)oka(y)</i>' from '<i lang=\"ain-Latn\">ci=oka(y)</i>'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The derivation of '<i lang=\"ain-Latn\">asinuma</i>' from '<i lang=\"ain-Latn\">a=</i> + '<i lang=\"ain-Latn\">sinuma</i>' is given. This seems to imply '<i lang=\"ain-Latn\">sinuma</i>' is a base form, possibly related to '<i lang=\"ain-Latn\">hi</i>'. However, the connection to '<i lang=\"ain-Latn\">hi</i>' is not explicitly made here, unlike the previous examples.",
+    "quote": "and <i lang=\"ain-Latn\">asinuma</i> from <i lang=\"ain-Latn\">a=</i> + <i lang=\"ain-Latn\">sinuma</i>",
+    "suggestion": "Clarify if '<i lang=\"ain-Latn\">sinuma</i>' is related to '<i lang=\"ain-Latn\">hi</i>' or if this is a separate derivation for a pronoun.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#032",
+  "chapter": "formal-defective-nouns",
+  "lines": "293",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that '<i lang=\"ain-Latn\">hi</i>' nominalizes the clause 'sirkunne'. It also states that the antecedent clause has no missing argument, confirming the content-complement function. This is consistent with the description of '<i lang=\"ain-Latn\">hi</i>' in the text (lines 281-285).",
+    "quote": "hi nominalises the clause sirkunne 'it became dark'; the resulting NP is the complement of eramuskari 'not know'. The antecedent clause has no missing argument, confirming the content-complement function.",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#031",
+  "chapter": "formal-defective-nouns",
+  "lines": "289",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the example sentence 'sirkunne hi ka ku=eramuskari-no ku=mokor wa ku=an' is provided. The morpheme breakdown is 'sirkunne hi ka ku=eramuskari-no ku=mokor wa ku=an'. The gloss is 'become.dark NMLZ even 1SG.A=not.know-ADV 1SG.S=sleep CONJ 1SG.S=exist'. The gloss for 'ku=mokor wa ku=an' is '1SG.S=sleep CONJ 1SG.S=exist'. This seems to indicate two separate clauses or coordinated elements. However, the note says 'hi nominalises the clause sirkunne 'it became dark'; the resulting NP is the complement of eramuskari 'not know''. This implies 'sirkunne hi' is the nominalized clause, and 'ku=eramuskari-no' is the complementizer for 'eramuskari'. The gloss for 'ku=mokor wa ku=an' seems to be a separate part of the sentence, possibly a main clause.",
+    "quote": "become.dark NMLZ even 1SG.A=not.know-ADV 1SG.S=sleep CONJ 1SG.S=exist",
+    "suggestion": "Clarify the grammatical structure of the example sentence and ensure the gloss accurately reflects the role of each morpheme and clause.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#030",
+  "chapter": "formal-defective-nouns",
+  "lines": "281",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for '<A w=\"hi\" />' is 'thing, matter, time, place'. The text states it nominalizes the 'state of affairs'. This seems consistent. However, the 'content-complement reading' implies a propositional meaning, which aligns with 'state of affairs'. The gloss 'thing, matter, time, place' might be too concrete for this function.",
+    "quote": "The formal noun <A w=\"hi\" gl=\"thing, matter, time, place\" /> accepts only a VP antecedent and characteristically nominalizes the state of affairs described by the clause — the content-complement reading — without a missing argument",
+    "suggestion": "Ensure the gloss accurately reflects the abstract nature of the nominalized 'state of affairs'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#029",
+  "chapter": "formal-defective-nouns",
+  "lines": "270",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">p ~ pe</i>' combines with a prenominal demonstrative to form a demonstrative pronoun. The example '<i lang=\"ain-Latn\">tanpe</i>' is given, which is consistent with '<i lang=\"ain-Latn\">tan</i>' + '<i lang=\"ain-Latn\">pe</i>'. However, '<i lang=\"ain-Latn\">neap</i>' is given as 'that previously mentioned thing'. The derivation of '<i lang=\"ain-Latn\">neap</i>' is not clear from the context, and it doesn't seem to directly involve '<i lang=\"ain-Latn\">pe</i>'.",
+    "quote": "<i lang=\"ain-Latn\">tanpe</i> 'this (thing)', <i lang=\"ain-Latn\">neap</i> 'that previously mentioned thing'",
+    "suggestion": "Clarify the derivation of '<i lang=\"ain-Latn\">neap</i>' or provide an example that clearly shows the combination with '<i lang=\"ain-Latn\">pe</i>'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#028",
+  "chapter": "formal-defective-nouns",
+  "lines": "266",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">ani</i>' fills the applicative argument slot. However, '<i lang=\"ain-Latn\">ani</i>' is described as an 'instrumental pattern' in the preceding sentence. It's unclear if 'instrumental' and 'applicative' are being used interchangeably here, or if '<i lang=\"ain-Latn\">ani</i>' is functioning as an instrumental marker that introduces an applicative argument.",
+    "quote": "The instrumental <i lang=\"ain-Latn\">ani</i> fills the applicative argument slot while <i lang=\"ain-Latn\">p</i> nominalizes the whole VP ‹corpus-confirmed›.",
+    "suggestion": "Clarify the role of '<i lang=\"ain-Latn\">ani</i>' – is it an instrumental marker, an applicative marker, or both in this context?",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#026",
+  "chapter": "formal-defective-nouns",
+  "lines": "256",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that '<i lang=\"ain-Latn\">p</i>' heads a relative clause with a missing object. This aligns with the description of '<i lang=\"ain-Latn\">p ~ pe</i>' as a relative-clause head. The example is 'kani ku=respa p anakne'. The morpheme breakdown is 'kani ku=respa p anakne'. The gloss is '1SG 1SG.A=raise NMLZ TOP'. This seems consistent.",
+    "quote": "p heads a relative clause with a missing object (the raised entities); anakne marks the nominalized clause as a contrastive topic.",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#025",
+  "chapter": "formal-defective-nouns",
+  "lines": "242",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states '<i lang=\"ain-Latn\">pe</i>' follows the consonant-final clitic '=an'. This aligns with the rule that '<i lang=\"ain-Latn\">pe</i>' follows a consonant-final VP. The gloss for the example is 'quietly sit=4.S NMLZ COP FIN'. The morpheme breakdown is 'ratcitara rok=an pe ne na'. Here, 'rok=an' is glossed as 'sit=4.S'. The clitic '=an' is indeed consonant-final. The note is consistent with the example and the rule.",
+    "quote": "pe after the consonant-final clitic =an (4th-person intransitive). The nominalised clause is predicated with the copula ne.",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#024",
+  "chapter": "formal-defective-nouns",
+  "lines": "233",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that '<i lang=\"ain-Latn\">p</i>' follows the vowel-final predicate 'pirka'. However, the example sentence is 'huci na ipe yakne pirka p'. The predicate 'pirka' is indeed vowel-final. The note also states that the clause 'ipe yakne pirka' is nominalized. This seems consistent.",
+    "quote": "p after the vowel-final predicate pirka 'be good'. The clause ipe yakne pirka 'if one eats, (it) is good' is nominalised as a content complement.",
+    "suggestion": "No change needed, but double-check the glosses and morpheme breakdown for consistency.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#023",
+  "chapter": "formal-defective-nouns",
+  "lines": "223",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The rule states '<i lang=\"ain-Latn\">p</i>' follows a vowel-final VP and '<i lang=\"ain-Latn\">pe</i>' follows a consonant-final VP. However, example 1 (lines 227-233) shows '<i lang=\"ain-Latn\">p</i>' following 'pirka' (vowel-final predicate), which is consistent. Example 2 (lines 237-243) shows '<i lang=\"ain-Latn\">pe</i>' following '=an' (consonant-final clitic). The note says 'pe after the consonant-final clitic =an'. This seems to contradict the rule that '<i lang=\"ain-Latn\">pe</i>' follows a consonant-final *VP*, not just a clitic.",
+    "quote": "<i lang=\"ain-Latn\">p</i> follows a vowel-final VP; <i lang=\"ain-Latn\">pe</i> follows a consonant-final VP",
+    "suggestion": "Clarify if the rule applies to the final element of the VP (which could be a clitic) or if it's specifically about the verb stem. The note implies it's about the final element.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#022",
+  "chapter": "formal-defective-nouns",
+  "lines": "218",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for both '<A w=\"p\" />' and '<A w=\"pe\" />' is 'thing, one'. However, the text later (line 246) states that '<i lang=\"ain-Latn\">p ~ pe</i>' nominalizes a VP with a missing argument, acting as a relative-clause head. This implies it refers to an 'entity' or 'one' that is the missing argument, which aligns with the gloss. But the 'content complement' reading (line 220) suggests it nominalizes a proposition, which doesn't directly map to 'thing, one'.",
+    "quote": "The nominalizer <A w=\"p\" gl=\"thing, one\" /> ~ <A w=\"pe\" gl=\"thing, one\" /> is the most productive member of the set.",
+    "suggestion": "Clarify how the gloss 'thing, one' applies to both the entity reading (relative clause head) and the propositional reading (content complement). Perhaps the gloss is a simplification.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#021",
+  "chapter": "formal-defective-nouns",
+  "lines": "211",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">cikappo utar</i>' is given to illustrate '<i lang=\"ain-Latn\">utar</i>' accepting a bare NP. However, '<i lang=\"ain-Latn\">cikappo</i>' is an adjective meaning 'small'. This means '<i lang=\"ain-Latn\">cikappo utar</i>' is an adjective + noun phrase, not a bare NP in the sense of a noun phrase without a preceding verb or prenominal. It's an adjectival phrase modifying '<i lang=\"ain-Latn\">utar</i>'.",
+    "quote": "(<i lang=\"ain-Latn\">cikappo utar</i> 'small birds')",
+    "suggestion": "Clarify if '<i lang=\"ain-Latn\">cikappo utar</i>' is indeed an example of '<i lang=\"ain-Latn\">utar</i>' accepting a bare NP, or if it's an example of '<i lang=\"ain-Latn\">utar</i>' being modified by an adjective.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#020",
+  "chapter": "formal-defective-nouns",
+  "lines": "207",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '<i lang=\"ain-Latn\">p ~ pe</i>' takes a VP or a prenominal but not a bare NP. However, the 'antecedent types' for '<i lang=\"ain-Latn\">p ~ pe</i>' in the inventory table (line 60) only list 'VP; prenominal (not bare NP)'. This is consistent. The issue is that the text then contrasts this with '<i lang=\"ain-Latn\">utar</i>' accepting a bare NP. The description for '<i lang=\"ain-Latn\">p ~ pe</i>' seems to be missing the contrastive element that '<i lang=\"ain-Latn\">utar</i>' *does* accept a bare NP.",
+    "quote": "Distribution asymmetry within the class. The antecedent constraint is not uniform: <i lang=\"ain-Latn\">hi</i> requires a VP antecedent; <i lang=\"ain-Latn\">p ~ pe</i> takes a VP or a prenominal but not a bare NP; <i lang=\"ain-Latn\">utar</i> exceptionally accepts a bare NP as well (<i lang=\"ain-Latn\">cikappo utar</i> 'small birds') <Ref k=\"nakagawa2024\" p=\"258\" />; <Ref k=\"nakagawa2022pos\" p=\"482\" />.",
+    "suggestion": "Ensure the description for '<i lang=\"ain-Latn\">p ~ pe</i>' clearly highlights what it *doesn't* accept (bare NP) to contrast with '<i lang=\"ain-Latn\">utar</i>'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#018",
+  "chapter": "formal-defective-nouns",
+  "lines": "195",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that when a prenominal demonstrative precedes a formal noun, the result is a 'fused pronoun-like form'. The examples show '<i lang=\"ain-Latn\">tan</i>' and '<i lang=\"ain-Latn\">toan</i>' (demonstratives) combining with '<i lang=\"ain-Latn\">pe</i>' (a formal noun). However, the 'antecedent types' for '<i lang=\"ain-Latn\">p ~ pe</i>' in the inventory table (line 60) state 'VP; prenominal (not bare NP)'. This implies '<i lang=\"ain-Latn\">pe</i>' can take a prenominal antecedent, but the resulting form is described as a 'fused pronoun-like form' rather than a relative clause or complement.",
+    "quote": "<i lang=\"ain-Latn\">tan</i> + <i lang=\"ain-Latn\">pe</i> → <i lang=\"ain-Latn\">tanpe</i> 'this thing', <i lang=\"ain-Latn\">toan</i> + <i lang=\"ain-Latn\">pe</i> → <i lang=\"ain-Latn\">toanpe</i> 'that thing'",
+    "suggestion": "Clarify how the 'fused pronoun-like form' relates to the 'prenominal antecedent' type. Is it a specific type of fusion that occurs with demonstratives?",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#017",
+  "chapter": "formal-defective-nouns",
+  "lines": "187",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The examples '<i lang=\"ain-Latn\">*pirka ruwe</i>' and '<i lang=\"ain-Latn\">*pon kur</i>' are presented as ungrammatical 'as true relativizations'. However, '<i lang=\"ain-Latn\">ruwe</i>' and '<i lang=\"ain-Latn\">kur</i>' are listed as formal nouns in the inventory table (lines 70, 94). If they are formal nouns, they are expected to head relative clauses. The ungrammaticality here seems to be about predicating something *of* the formal noun itself, not about the formal noun failing to head a relative clause.",
+    "quote": "<i lang=\"ain-Latn\">*pirka ruwe</i> 'a good track (as NP)' and <i lang=\"ain-Latn\">*pon kur</i> 'a small person (as NP)' are ungrammatical as true relativizations, where an external clause predicates something of the formal noun itself",
+    "suggestion": "Clarify that these examples are ungrammatical because the formal noun is being treated as the head of a relative clause *and* simultaneously being predicated upon by an external clause, which is not allowed.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#016",
+  "chapter": "formal-defective-nouns",
+  "lines": "180",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that formal nouns are at the 'foot of the independence hierarchy'. However, it then says they are 'below the locative noun's basic form, which at least requires only an immediately preceding NP'. This implies that the locative noun's basic form is *more* independent than the formal noun, which contradicts the idea of formal nouns being at the absolute 'foot'.",
+    "quote": "This places formal nouns at the foot of the independence hierarchy set out in Nakagawa's Table 48 — below the locative noun's basic form, which at least requires only an immediately preceding NP.",
+    "suggestion": "Clarify the hierarchy. If formal nouns are at the absolute foot, then the locative noun's basic form should be above them. If the locative noun's basic form is also very low, the phrasing needs adjustment.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#014",
+  "chapter": "formal-defective-nouns",
+  "lines": "166",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence states that the possessed morphology follows the pattern '<i lang=\"ain-Latn\">ru</i> → <i lang=\"ain-Latn\">ruwe(he)</i>' and '<i lang=\"ain-Latn\">haw</i> → <i lang=\"ain-Latn\">hawe(he)</i>'. This implies that '<i lang=\"ain-Latn\">ruwe</i>' and '<i lang=\"ain-Latn\">hawe</i>' are the possessed forms. However, in the table above, '<i lang=\"ain-Latn\">ruwe</i>' and '<i lang=\"ain-Latn\">hawe</i>' are listed as the 'formal noun' forms, and their 'possessed morphology' is shown as '<i lang=\"ain-Latn\">ru-we</i>' and '<i lang=\"ain-Latn\">haw-e</i>' respectively. This creates a contradiction regarding what constitutes the base possessed form.",
+    "quote": "monosyllabic open-syllable nouns: <i lang=\"ain-Latn\">ru</i> → <i lang=\"ain-Latn\">ruwe(he)</i>, <i lang=\"ain-Latn\">haw</i> → <i lang=\"ain-Latn\">hawe(he)</i>, and so on",
+    "suggestion": "Reconcile the description in the text with the table. Either '<i lang=\"ain-Latn\">ruwe</i>' and '<i lang=\"ain-Latn\">hawe</i>' are the possessed forms and the table should reflect that, or the text should explain that '<i lang=\"ain-Latn\">ruwe(he)</i>' and '<i lang=\"ain-Latn\">hawe(he)</i>' are further derivations from the possessed forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#013",
+  "chapter": "formal-defective-nouns",
+  "lines": "158",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 140, the 'possessed morphology' for '<i lang=\"ain-Latn\">humi</i>' is given as '<i lang=\"ain-Latn\">hum-i</i>'. The 'source noun' is '<A w=\"hum\" gl=\"sound, sensation\" />'. This implies '<i lang=\"ain-Latn\">humi</i>' is derived from '<i lang=\"ain-Latn\">hum</i>', but the morphology shown is '<i lang=\"ain-Latn\">hum-i</i>', which seems to include the base form '<i lang=\"ain-Latn\">hum</i>' and the suffix '<i lang=\"ain-Latn\">-i</i>'.",
+    "quote": "<i lang=\"ain-Latn\">hum-i</i> 'the sound/feeling of —'",
+    "suggestion": "Clarify the derivation: is '<i lang=\"ain-Latn\">humi</i>' the base form, or is it '<i lang=\"ain-Latn\">hum</i>' + '<i lang=\"ain-Latn\">-i</i>'? The table implies the latter, but the 'possessed morphology' column shows '<i lang=\"ain-Latn\">hum-i</i>' as the form.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#012",
+  "chapter": "formal-defective-nouns",
+  "lines": "152",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 140, the 'possessed morphology' for '<i lang=\"ain-Latn\">hawe</i>' is given as '<i lang=\"ain-Latn\">haw-e</i>'. The 'source noun' is '<A w=\"haw\" gl=\"voice, sound\" />'. This implies '<i lang=\"ain-Latn\">hawe</i>' is derived from '<i lang=\"ain-Latn\">haw</i>', but the morphology shown is '<i lang=\"ain-Latn\">haw-e</i>', which seems to include the base form '<i lang=\"ain-Latn\">haw</i>' and the suffix '<i lang=\"ain-Latn\">-e</i>'.",
+    "quote": "<i lang=\"ain-Latn\">haw-e</i> 'the voice of —'",
+    "suggestion": "Clarify the derivation: is '<i lang=\"ain-Latn\">hawe</i>' the base form, or is it '<i lang=\"ain-Latn\">haw</i>' + '<i lang=\"ain-Latn\">-e</i>'? The table implies the latter, but the 'possessed morphology' column shows '<i lang=\"ain-Latn\">haw-e</i>' as the form.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#011",
+  "chapter": "formal-defective-nouns",
+  "lines": "146",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 140, the 'possessed morphology' for '<i lang=\"ain-Latn\">siri</i>' is given as '<i lang=\"ain-Latn\">sir-i</i>'. The 'source noun' is '<A w=\"sir\" gl=\"appearance, land, weather\" />'. This implies '<i lang=\"ain-Latn\">siri</i>' is derived from '<i lang=\"ain-Latn\">sir</i>', but the morphology shown is '<i lang=\"ain-Latn\">sir-i</i>', which seems to include the base form '<i lang=\"ain-Latn\">sir</i>' and the suffix '<i lang=\"ain-Latn\">-i</i>'.",
+    "quote": "<i lang=\"ain-Latn\">sir-i</i> 'the appearance of —'",
+    "suggestion": "Clarify the derivation: is '<i lang=\"ain-Latn\">siri</i>' the base form, or is it '<i lang=\"ain-Latn\">sir</i>' + '<i lang=\"ain-Latn\">-i</i>'? The table implies the latter, but the 'possessed morphology' column shows '<i lang=\"ain-Latn\">sir-i</i>' as the form.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#010",
+  "chapter": "formal-defective-nouns",
+  "lines": "140",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'possessed morphology' for '<i lang=\"ain-Latn\">ruwe</i>' is given as '<i lang=\"ain-Latn\">ru-we</i>'. However, the 'source noun' is '<A w=\"ru\" gl=\"track, path\" />'. This implies '<i lang=\"ain-Latn\">ruwe</i>' is derived from '<i lang=\"ain-Latn\">ru</i>', but the morphology shown is '<i lang=\"ain-Latn\">ru-we</i>', which seems to include the base form '<i lang=\"ain-Latn\">ru</i>' and the suffix '<i lang=\"ain-Latn\">-we</i>'. This could be clearer.",
+    "quote": "<i lang=\"ain-Latn\">ru-we</i> 'the track of —'",
+    "suggestion": "Clarify the derivation: is '<i lang=\"ain-Latn\">ruwe</i>' the base form, or is it '<i lang=\"ain-Latn\">ru</i>' + '<i lang=\"ain-Latn\">-we</i>'? The table implies the latter, but the 'possessed morphology' column shows '<i lang=\"ain-Latn\">ru-we</i>' as the form.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#008",
+  "chapter": "formal-defective-nouns",
+  "lines": "115",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'primary function' for '<i lang=\"ain-Latn\">ihi</i>' is listed as 'confined to the frame <i lang=\"ain-Latn\">ene an ihi</i> 'such a thing''. This implies a very limited function, but the 'core sense' is simply 'thing'. This contrast could be clearer.",
+    "quote": "confined to the frame <i lang=\"ain-Latn\">ene an ihi</i> 'such a thing'",
+    "suggestion": "Ensure the 'core sense' accurately reflects the limited usage described in the 'primary function'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#007",
+  "chapter": "formal-defective-nouns",
+  "lines": "73",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'primary function' for '<i lang=\"ain-Latn\">hike</i>' is 'anaphoric relative head'. However, the 'core sense' is 'the one (that …)'. The derivation is given as '<i lang=\"ain-Latn\">hi</i> + <i lang=\"ain-Latn\">-ke</i>'. This implies '<i lang=\"ain-Latn\">hike</i>' is a nominalization of '<i lang=\"ain-Latn\">hi</i>', which itself is a formal noun. This might be confusing as it's described as a relative head, but derived from another formal noun.",
+    "quote": "anaphoric relative head (derived: <i lang=\"ain-Latn\">hi</i> + <i lang=\"ain-Latn\">-ke</i>)",
+    "suggestion": "Clarify if '<i lang=\"ain-Latn\">hike</i>' functions as a relative head *after* being derived from '<i lang=\"ain-Latn\">hi</i>', or if its primary role is anaphoric reference.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#006",
+  "chapter": "formal-defective-nouns",
+  "lines": "61",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'primary function' for '<i lang=\"ain-Latn\">p ~ pe</i>' lists 'class prefix in pronoun fusion'. However, the 'antecedent types' for '<i lang=\"ain-Latn\">p ~ pe</i>' states 'VP; prenominal (not bare NP)'. It's unclear how a 'class prefix' function relates to the antecedent types, or if it's a separate function not dependent on the antecedent.",
+    "quote": "relative head; content complementizer; class prefix in pronoun fusion",
+    "suggestion": "Clarify the relationship between the 'class prefix' function and the antecedent types, or list it as a separate function if it doesn't depend on the antecedent.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#003",
+  "chapter": "formal-defective-nouns",
+  "lines": "26",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that a 'complementizer' heads a clause with full argument structure. However, the diagnostic described ('arity zero') seems to imply a clause that *lacks* arguments, which is a contradiction. A clause with full argument structure would typically have non-zero arity.",
+    "quote": "as <em>complementizer</em> (補文標識 <em>hōbun hyōshiki</em>) it heads a clause with full argument structure, the diagnostic being arity — a clause summing to arity zero takes a complementizer, one with a net argument gap heads a relative construction",
+    "suggestion": "Clarify the meaning of 'arity zero' in this context. It might refer to a clause that *doesn't require* further arguments to be complete, or perhaps it's a typo and should refer to a clause that *completes* its argument structure.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "formal-defective-nouns~p1#002",
+  "chapter": "formal-defective-nouns",
+  "lines": "20",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Sato divides the class into two: 'nominalizers' and 'formal nouns proper'. However, later in the same paragraph (lines 24-25), it says Nakagawa distinguishes roles: 'relativizer' and 'complementizer'. This could be confusing as 'nominalizer' is used by Sato for one of the two subclasses, while Nakagawa uses 'complementizer' for a role.",
+    "quote": "<Ref k=\"sato2008\" p=\"174–178\" /> divides what Nakagawa treats as a single class into two: <em>nominalizers</em> (名詞化辞 <em>meishikaji</em>) head content clauses with full argument structure, while <em>formal nouns</em> proper head relative clauses from which one argument is missing.",
+    "suggestion": "Clarify the terminology distinction between Sato's subclasses and Nakagawa's roles, especially how 'nominalizer' relates to 'complementizer'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence describes Sato's division. However, the subsequent description of Nakagawa's view (lines 26-28) states that 'complementizer' heads a clause with full argument structure, and a 'relativizer' heads a clause with a missing argument. The terms 'nominalizer' (Sato) and 'complementizer' (Nakagawa) seem to refer to similar functions (heading clauses with full argument structure), but are presented as distinct categories from different analyses.",
+    "quote": "<em>nominalizers</em> (名詞化辞 <em>meishikaji</em>) head content clauses with full argument structure, while <em>formal nouns</em> proper head relative clauses from which one argument is missing.",
+    "suggestion": "Ensure the distinction between Sato's 'nominalizers' and Nakagawa's 'complementizers' is clearly maintained, especially since they both seem to describe clauses with full argument structure.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

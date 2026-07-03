@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "179-180, 183-237",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Ijäs identifies five formation strategies from the revival literature <Ref k=\"ijas2023b\" p=\"§3\" />: [table with six rows]",
+  "issue": "The text states 'five formation strategies' but the table immediately following lists six distinct strategies (compounding, noun incorporation, analytic extension, transparent derivation, semantic extension, direct borrowing).",
+  "suggestion": "Change 'five' to 'six' or remove one row from the table to match the stated number.",
+  "confidence": 1,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "144-145",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "have been replaced throughout the contemporary literature by c and s <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2023-12-08).",
+  "issue": "A claim about the state of 'the contemporary literature' is supported only by a single Discord message, not by a published source. The claim is presented as consensus (no epistemic tag) but the evidence is weak.",
+  "suggestion": "Either add a published source or downgrade the claim with a ‹speculative› or ‹contested› tag.",
+  "confidence": 0.8,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "158-159",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "academic sources and Ainu Association textbooks diverge on this point <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-16).",
+  "issue": "A claim about divergence in 'academic sources and Ainu Association textbooks' is supported only by a Discord message, not by citing the actual sources that diverge.",
+  "suggestion": "Cite the specific academic sources and textbooks that show the divergence, or tag the claim as ‹contested›.",
+  "confidence": 0.8,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "163-164",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "yet editorial practice on whether to write them as one or two tokens remains inconsistent <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-05).",
+  "issue": "A claim about 'editorial practice' is supported only by a Discord message, not by a survey of published works.",
+  "suggestion": "Either provide examples from published sources or tag as ‹speculative›.",
+  "confidence": 0.8,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "203, 246-248",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Table: <i lang=\"ain-Latn\">kampi-nukat-cise</i> (line 203) vs. prose: <i lang=\"ain-Latn\">pon kampinukatcise</i>, <i lang=\"ain-Latn\">haykannu kampinukatcise</i>, <i lang=\"ain-Latn\">poro kampinukatcise</i> (lines 246-248)",
+  "issue": "The same compound 'school' is hyphenated in the table (kampi-nukat-cise) but written as a single word without hyphens in the prose (kampinukatcise). This is an orthographic inconsistency within the chapter.",
+  "suggestion": "Standardize the hyphenation: either use hyphens consistently (kampi-nukat-cise) or write as one word (kampinukatcise) throughout.",
+  "confidence": 0.9,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "121",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "see the neologisms section below",
+  "issue": "This cross-reference uses plain prose instead of the <Xr> component used for all other cross-references in the chapter (e.g., lines 51-52, 251, 305-306, 310).",
+  "suggestion": "Replace with <Xr ch=\"neologisms\" /> or similar, assuming the section has an anchor.",
+  "confidence": 0.7,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

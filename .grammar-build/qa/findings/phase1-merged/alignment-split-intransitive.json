@@ -1,0 +1,516 @@
+[
+ {
+  "id": "alignment-split-intransitive~p1#017",
+  "chapter": "alignment-split-intransitive",
+  "lines": "264",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'No factbase example' refers to internal production processes rather than the reader. The epistemic tag 'original-needs-review' is also present.",
+    "quote": "No factbase example shows an intransitive undergoer indexed by the object forms en=, un=, or i=; the available evidence supports the uniform-S generalization as the correct synchronic description ‹original-needs-review›.",
+    "suggestion": "No example shows an intransitive undergoer indexed by the object forms en=, un=, or i=; the available evidence supports the uniform-S generalization as the correct synchronic description ‹original-needs-review›.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The term 'factbase' is internal pipeline jargon, and the editorial tag ‹original-needs-review› is a production note that should not appear in the published text.",
+    "quote": "No factbase example shows an intransitive undergoer indexed by the object forms en=, un=, or i=; the available evidence supports the uniform-S generalization as the correct synchronic description ‹original-needs-review›.",
+    "suggestion": "Replace 'factbase' with 'corpus' or 'available data'; remove the ‹original-needs-review› tag or replace it with an appropriate epistemic tag such as ‹corpus-confirmed› if the claim is supported.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'factbase' is a pipeline register leak, referring to an internal database not known to the reader. It should not appear in the published text.",
+    "quote": "No factbase example shows",
+    "suggestion": "Replace with 'No attested example in the corpus shows' or 'No example in the available corpus shows'.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Reference to 'the normalised frequency layer' and its technical limitations is a pipeline register leak, exposing internal data-processing stages not relevant to the reader.",
+    "quote": "the normalised frequency layer strips personal-affix clitics and cannot supply per-affix counts for individual S forms.",
+    "suggestion": "Rephrase to focus on the outcome: 'The frequency-normalized data do not preserve personal-affix clitics, so per-affix counts for individual S forms are unavailable.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#018",
+  "chapter": "alignment-split-intransitive",
+  "lines": "78–86",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss marks =an as fourth-person S (4.S), but the free translation uses first-person singular 'I'. The person/number values are inconsistent; the reader cannot tell whether the subject is fourth person or first person.",
+    "quote": "g=\"be.cold autumn COP thing feel.cold=4.S FOC NEG do ADV\" tr=\"It was a cold autumn, but I did not feel cold.\"",
+    "suggestion": "Either change the gloss to 1SG (if =an is being used for first person in this context) or adjust the translation to use 'one' or 'we' to match the fourth person.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'ka somo ki no', which appears to be a clause-final sequence, but the gloss 'be.cold autumn COP thing feel.cold=4.S FOC NEG do ADV' does not align clearly with these words; 'ka' is glossed as FOC but 'somo' as 'thing', while in context it seems 'somo' may be a negated verb and 'ka' a conjunction or focus marker. The alignment between m-words and g-words is ambiguous or incorrect.",
+    "quote": "<Ex m=\"mean cuk ne pe merayke=an ka somo ki no\"",
+    "suggestion": "Realign the gloss to match the morpheme sequence: possibly 'ka' = COP, 'somo' = do, 'ki' = NEG, 'no' = ADV? Or revise m-segmentation if 'somo ki no' is a single verb complex.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#006",
+  "chapter": "alignment-split-intransitive",
+  "lines": "138",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'for this grammar' indicates that the text is being written for the grammar itself, rather than for the reader. The epistemic tag 'speculative' is also present.",
+    "quote": "that book could not be independently consulted for this grammar ‹speculative›.",
+    "suggestion": "that book could not be independently consulted ‹speculative›.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about the production process (source unavailability) addressed to the reader, not part of the scholarly argument.",
+    "quote": "that book could not be independently consulted for this grammar",
+    "suggestion": "Remove the meta-comment or rephrase as a caveat about the source's limited accessibility without referencing the grammar's own consultation process.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#019",
+  "chapter": "alignment-split-intransitive",
+  "lines": "97–106",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same mismatch as the previous example: gloss has 4.S for =an, but translation uses first-person 'I'.",
+    "quote": "g=\"wave-roll=4.S while flow=4.S track-POSS thus exist NMLZ COP CONJ\" tr=\"I was rolled by the waves and drifted along, and so …\"",
+    "suggestion": "Align the translation with the fourth-person gloss, or explain in the note that fourth person is used for first person here.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ene' is not glossed in the 'g' field. It appears in the middle of the clause and is likely a noun or adverb (possibly 'track' or 'path'), but no corresponding gloss is provided.",
+    "quote": "m=\"rir-tursere=an kor mom=an ru-we ene an hi ne hine\"",
+    "suggestion": "Add a gloss for 'ene', e.g., 'track' or 'path', to maintain one-to-one alignment.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#022",
+  "chapter": "alignment-split-intransitive",
+  "lines": "195",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'the pages read' is a pipeline register leak, referring to the authors' source-reading process rather than the content itself. It addresses internal workflow, not the reader.",
+    "quote": "the pages read",
+    "suggestion": "Replace with 'the available portion' or 'the published abstract', which describes the source objectively.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#023",
+  "chapter": "alignment-split-intransitive",
+  "lines": "196",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in spacing: 'apto as' is written with a space, while other Ainu phrases in italics are typically treated as single units or hyphenated when compound. Compare with 'mean cuk' in line 79, which is also a two-word phrase but not commented on. However, 'apto as' may be a fixed expression and should be checked for standard orthographic treatment.",
+    "quote": "<i lang=\"ain-Latn\">apto as</i>",
+    "suggestion": "Verify if 'apto as' should be written as 'apto-as' or remain spaced; ensure consistency across the chapter.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#016",
+  "chapter": "alignment-split-intransitive",
+  "lines": "252",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citation is not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Dal Corso 2025align",
+    "suggestion": "Dal Corso 2025align",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#015",
+  "chapter": "alignment-split-intransitive",
+  "lines": "245",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Nakagawa 2024; Sato 2023b; Sato 2025a",
+    "suggestion": "Nakagawa 2024; Sato 2023b; Sato 2025a",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#014",
+  "chapter": "alignment-split-intransitive",
+  "lines": "238",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Bugaeva 2012; Bugaeva 2008",
+    "suggestion": "Bugaeva 2012; Bugaeva 2008",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citation is not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Nakagawa 2024",
+    "suggestion": "Nakagawa 2024",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#013",
+  "chapter": "alignment-split-intransitive",
+  "lines": "229",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Nakagawa 2024; Ijas 2023",
+    "suggestion": "Nakagawa 2024; Ijas 2023",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#012",
+  "chapter": "alignment-split-intransitive",
+  "lines": "225",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Ijas 2023; Sato 2008; Bugaeva 2021antip",
+    "suggestion": "Ijas 2023; Sato 2008; Bugaeva 2021antip",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#011",
+  "chapter": "alignment-split-intransitive",
+  "lines": "217",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Nakagawa 2024; Sato 2023b; Ijas 2023",
+    "suggestion": "Nakagawa 2024; Sato 2023b; Ijas 2023",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#010",
+  "chapter": "alignment-split-intransitive",
+  "lines": "197",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Nakagawa 2024; Ijas 2023",
+    "suggestion": "Nakagawa 2024; Ijas 2023",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#009",
+  "chapter": "alignment-split-intransitive",
+  "lines": "175",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Nam 2021; Bugaeva 2021antip",
+    "suggestion": "Nam 2021; Bugaeva 2021antip",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#008",
+  "chapter": "alignment-split-intransitive",
+  "lines": "164",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Nakagawa 2024; Sato 2023b",
+    "suggestion": "Nakagawa 2024; Sato 2023b",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#007",
+  "chapter": "alignment-split-intransitive",
+  "lines": "160",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Tamura 1972; Nam 2021",
+    "suggestion": "Tamura 1972; Nam 2021",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#005",
+  "chapter": "alignment-split-intransitive",
+  "lines": "125",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Foley & Van Valin 1984; Mithun 1984",
+    "suggestion": "Foley & Van Valin 1984; Mithun 1984",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#004",
+  "chapter": "alignment-split-intransitive",
+  "lines": "105",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'rittursere' is not italicized, while other Ainu words in the note are.",
+    "quote": "Surface rittursere is segmented as rir-tursere following Nakagawa's analysis of the incorporated wave element. Both patientive intransitives carry =an, not the object form i=.",
+    "suggestion": "Surface <A w=\"rittursere\" gl=\"be rolled by waves\">rittursere</A> is segmented as rir-tursere following Nakagawa's analysis of the incorporated wave element. Both patientive intransitives carry =an, not the object form i=.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#003",
+  "chapter": "alignment-split-intransitive",
+  "lines": "85",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'mean' is not italicized, while other Ainu words in the note are.",
+    "quote": "The ambient predicate mean 'be cold (of weather)' is zero-place and indexes no participant. The experiential predicate merayke 'feel cold' is one-place; its affected experiencer carries the fourth-person S suffix =an, the same form an agentive fourth-person subject would carry.",
+    "suggestion": "The ambient predicate <A w=\"mean\" gl=\"be cold (of weather)\">mean</A> 'be cold (of weather)' is zero-place and indexes no participant. The experiential predicate <A w=\"merayke\" gl=\"feel cold\">merayke</A> 'feel cold' is one-place; its affected experiencer carries the fourth-person S suffix =an, the same form an agentive fourth-person subject would carry.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#002",
+  "chapter": "alignment-split-intransitive",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Nakagawa 2024; Bugaeva 2012",
+    "suggestion": "Nakagawa 2024; Bugaeva 2012",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#001",
+  "chapter": "alignment-split-intransitive",
+  "lines": "10",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Citations are not enclosed in parentheses as indicated by the `paren` attribute in the `<Ref>` tag.",
+    "quote": "Stassen 1997; Foley & Van Valin 1984",
+    "suggestion": "Stassen 1997; Foley & Van Valin 1984",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#021",
+  "chapter": "alignment-split-intransitive",
+  "lines": "137",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹speculative› is appropriately applied, but the citation hygiene is compromised: the claim about Shibatani 1990 is based on indirect association, not direct evidence, yet the Ref points to the source as if it were consulted. This risks misleading the reader into thinking the source supports the claim.",
+    "quote": "A broader active-alignment characterisation sometimes associated with <Ref k=\"shibatani1990\" /> cannot be attributed on the basis of the pages read; that book could not be independently consulted for this grammar ‹speculative›.",
+    "suggestion": "Either remove the Ref k=\"shibatani1990\" or clarify that it is not directly cited, e.g., 'sometimes associated with Shibatani (1990), though not directly consulted'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-split-intransitive~p1#020",
+  "chapter": "alignment-split-intransitive",
+  "lines": "98",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Unexpected attribute 'ain' in the <Ex> component. The standard attributes are m, g, tr, lit, cite, dial, place, note, constructed. 'ain' is not defined and appears to be a leftover or typo.",
+    "quote": "ain=\"rittursere=an kor mom=an ruwe ene an hi ne hine\"",
+    "suggestion": "Remove the 'ain' attribute or replace it with the correct attribute (e.g., m= if it is meant to be the morphemic line, but that is already present on line 99).",
+    "confidence": 1
+   }
+  ]
+ }
+]

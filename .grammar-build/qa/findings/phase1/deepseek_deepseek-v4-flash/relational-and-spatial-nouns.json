@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "42-44",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "those of tum, etok, os, and so follow the regular consonant-final suffix pattern but are inferred rather than directly verified",
+  "issue": "The prose claims <ain>so</ain> follows the consonant-final suffix pattern, but <ain>so</ain> is vowel-final (ends in -o). The table (line 137) gives the affiliative as '—' (unknown) rather than a speculated form, confirming that the pattern does not apply. This is an internal contradiction.",
+  "suggestion": "Remove <ain>so</ain> from the list of consonant-final items, or note that vowel-final stems form the affiliative differently.",
+  "confidence": 0.95,
+  "chapter": "relational-and-spatial-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"hunting.ground upper.back top 4.APass=fly.around CONJ\"",
+  "issue": "The gloss '4.APass' for <ain>a=</ain> is inconsistent with the chapter's other gloss conventions (e.g., line 228 uses '1SG.S' and line 244 uses '4.S' for <ain>=an</ain>). The prose note at line 307 says '4.A=fly.around', which conflicts with the gloss. 'APass' suggests a passive reading that is not standard for Ainu <ain>a=</ain>.",
+  "suggestion": "Change gloss to '4.A' to match the prose note and consistent with field standards.",
+  "confidence": 0.9,
+  "chapter": "relational-and-spatial-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "m=\"iwor so ka a=ehóyupu wa\"",
+  "issue": "The acute accent on <i>ó</i> in <ain>ehóyupu</ain> is a diacritic not used anywhere else in the chapter for Ainu forms. This constitutes an orthographic inconsistency within the chapter.",
+  "suggestion": "Remove the acute accent and use plain <ain>ehoyupu</ain> (or <ain>ehowyupu</ain> if the source spelling is known to be different).",
+  "confidence": 0.85,
+  "chapter": "relational-and-spatial-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "300",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "see person-marking-architecture",
+  "issue": "The cross-reference 'person-marking-architecture' is written as plain text instead of using the <Xr> component. Elsewhere in the chapter, cross-references to sections in other chapters are tagged with <Xr> (e.g., lines 21, 30, 415).",
+  "suggestion": "Replace with <Xr ch=\"person-marking-architecture\" />.",
+  "confidence": 0.95,
+  "chapter": "relational-and-spatial-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "210",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "(Kayano's Saru dictionary)",
+  "issue": "Referenced source is not given a proper citation key or included in the bibliography. The chapter otherwise uses <Ref> tags for all sources.",
+  "suggestion": "Add a bib entry for Kayano's Saru dictionary and replace the inline reference with <Ref k=\"kayano_saru\" />.",
+  "confidence": 0.8,
+  "chapter": "relational-and-spatial-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "45-46",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "pending a dedicated pass through Tamura's dictionary and the Nakagawa corpus texts",
+  "issue": "This comment addresses the book's production process rather than the reader, indicating a future task for the authors. It is a pipeline register leak.",
+  "suggestion": "Rephrase as a direct statement about the current state of knowledge, e.g., 'These have not been directly verified in Tamura's dictionary or the Nakagawa corpus, so they should be treated as speculative.'",
+  "confidence": 0.7,
+  "chapter": "relational-and-spatial-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "152, 158, 163, 400",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "the read sources / the read set",
+  "issue": "Repeated use of 'the read sources' and 'the read set' makes meta-commentary on the authors' data collection process rather than presenting facts directly. While not as explicit as a production note, it is a mild register leak.",
+  "suggestion": "Consider replacing with 'sources consulted' or 'available documentation' in a less meta style, or omit the qualifier where it is not needed.",
+  "confidence": 0.5,
+  "chapter": "relational-and-spatial-nouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

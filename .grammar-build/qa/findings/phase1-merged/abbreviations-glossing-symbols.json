@@ -1,0 +1,474 @@
+[
+ {
+  "id": "abbreviations-glossing-symbols~p1#004",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "213",
+  "category": "orthography",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=cise' is presented in italics with the lang attribute 'ain-Latn', but the 'ain-Latn' class is not defined in the provided code. It should likely be 'ain' or a custom class for Latin script.",
+    "quote": "ku=cise",
+    "suggestion": "Change `lang=\"ain-Latn\"` to `lang=\"ain\"` or define the 'ain-Latn' class.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ru-we' is presented in italics with the lang attribute 'ain-Latn', but the 'ain-Latn' class is not defined in the provided code. It should likely be 'ain' or a custom class for Latin script.",
+    "quote": "ru-we",
+    "suggestion": "Change `lang=\"ain-Latn\"` to `lang=\"ain\"` or define the 'ain-Latn' class.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Lowercase 'sg' and 'poss' in gloss abbreviation '1sg.poss' inconsistent with the uppercase convention used throughout the rest of the chapter (e.g., '1SG.A', 'track.POSS').",
+    "quote": "<span class=\"sc\">1sg.poss</span>=house",
+    "suggestion": "Change to <span class=\"sc\">1SG.POSS</span>=house.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#013",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "462",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'sato2008' is missing page numbers in the main text, while the concordance table provides page numbers for 'sato2008' (line 392). This suggests a potential inconsistency in citation detail.",
+    "quote": "<Ref k=\"sato2008\" />",
+    "suggestion": "Add relevant page numbers to the <Ref> tag for 'sato2008' in the main text, if available and appropriate.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'nakagawa2024' is missing page numbers in the main text, while the concordance table provides page numbers for 'nakagawa2024' (line 381). This suggests a potential inconsistency in citation detail.",
+    "quote": "<Ref k=\"nakagawa2024\" />",
+    "suggestion": "Add relevant page numbers to the <Ref> tag for 'nakagawa2024' in the main text, if available and appropriate.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Two Ref tags appear in the same sentence but are separated by a semicolon and text, suggesting both are meant to support the claim about Japanese-medium grammars. However, the second Ref (nakagawa2024) lacks a page locator, while sato2008 has one earlier (p=\"163\"). This creates an inconsistency in citation rigor.",
+    "quote": "<Ref k=\"sato2008\" />; <Ref k=\"nakagawa2024\" />",
+    "suggestion": "Add page locators to both or rephrase to clarify scope.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#001",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "31",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ray-ke' is presented in italics with the lang attribute 'ain-Latn', but the 'ain-Latn' class is not defined in the provided code. It should likely be 'ain' or a custom class for Latin script.",
+    "quote": "ray-ke",
+    "suggestion": "Change `lang=\"ain-Latn\"` to `lang=\"ain\"` or define the 'ain-Latn' class.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ray-ke' in the table uses lowercase in the example, but the glossing in the rest of the chapter uses uppercase for glosses (e.g., CAUS). This creates inconsistency in presentation, as the morphemic form should align with the standardized uppercase convention when paired with Leipzig-style glosses.",
+    "quote": "ray-ke",
+    "suggestion": "Use uppercase for the morpheme: RAY-KE, to match the glossing style (CAUS) and maintain orthographic consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#018",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "71-74",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morphemic segmentation 'ku=ray-ke' is glossed as '1SG.A=die-CAUS', but the free translation 'I kill (something).' implies a transitive verb, while 'die' is intransitive. This creates a semantic mismatch: the root should be 'kill' rather than 'die'. The glossed root does not support the translation.",
+    "quote": "ku=ray-ke",
+    "suggestion": "Change the root in the morpheme line to 'kor' (a known causative verb root) or change the gloss to 'kill' to align with the translation.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#017",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "38",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example 'ku=kor' is glossed as '<span class=\"sc\">1sg.a</span>=have', but the free translation 'I have it' implies a possessive construction with an object, which is not reflected in the gloss. The gloss 'have' is lexical, not grammatical, and does not align with Leipzig standards which expect a category label like V or perhaps a root gloss. The gloss line should separate person marking from the lexical verb.",
+    "quote": "ku=kor",
+    "suggestion": "Revise the gloss to something like '1SG.A=HAVE' to distinguish grammatical person from lexical meaning and align with uppercase convention.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#016",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "215–216",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Uses a hyphen between the lexical gloss and the grammatical label, but the chapter's portmanteau dot convention (established in the table at lines 44–45 and in the prose at line 66) requires a dot: 'track.POSS'. This contradicts the defined use of the dot for fused gloss atoms.",
+    "quote": "track-<span class=\"sc\">poss</span>",
+    "suggestion": "Change to track.<span class=\"sc\">poss</span>.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#020",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "96-104",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The abbreviations for person and number use inconsistent capitalization: '1' is lowercase in value, while 'PL' and 'SG' are uppercase. This deviates from standard Leipzig-style formatting where such abbreviations are fully uppercase (e.g., 1SG, not 1sg or 1 SG). However, the table uses uppercase consistently, so this may be intentional.",
+    "quote": "1, 1PL, 1SG, 2, 2PL, 2SG, 3, 3PL, 3SG",
+    "suggestion": "No change if uppercase is intentional; otherwise, ensure all person/number abbreviations follow full uppercase (e.g., 1SG not 1sg).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#015",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "82–83",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "References build-time validation, which addresses production pipeline rather than the reader.",
+    "quote": "The grammar's <code>&lt;Ex&gt;</code> component validates every uppercase token at build time and throws if an atom is absent.",
+    "suggestion": "Rephrase to describe the constraint without mentioning build process, e.g., 'All uppercase tokens must be drawn from the inventory below.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#012",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "450",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'dalcorso2018' is missing the page number '304-309' in the main text, but it is present in the concordance table. This is a minor inconsistency.",
+    "quote": "<Ref k=\"dalcorso2018\" p=\"304–309\" />",
+    "suggestion": "Add 'p=\"304–309\"' to the <Ref> tag in the main text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#011",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "448",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss abbreviation 'dir.rsn' is enclosed in `<span class=\"sc\">` tags, which typically denote small caps. However, the definition of 'sc' is not provided in the context, and it might be intended for a different purpose or require a CSS definition.",
+    "quote": "<span class=\"sc\">dir.rsn</span>",
+    "suggestion": "Ensure the 'sc' class is appropriately defined or use a different tag if small caps are not intended.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss abbreviation 'dir.knw' is enclosed in `<span class=\"sc\">` tags, which typically denote small caps. However, the definition of 'sc' is not provided in the context, and it might be intended for a different purpose or require a CSS definition.",
+    "quote": "<span class=\"sc\">dir.knw</span>",
+    "suggestion": "Ensure the 'sc' class is appropriately defined or use a different tag if small caps are not intended.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#010",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "424",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss abbreviation 'ind.rep' is enclosed in `<span class=\"sc\">` tags, which typically denote small caps. However, the definition of 'sc' is not provided in the context, and it might be intended for a different purpose or require a CSS definition.",
+    "quote": "<span class=\"sc\">ind.rep</span>",
+    "suggestion": "Ensure the 'sc' class is appropriately defined or use a different tag if small caps are not intended.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#009",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "416",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'dalcorso2018' is missing the page number '304-309' in the main text, but it is present in the concordance table. This is a minor inconsistency.",
+    "quote": "<Ref k=\"dalcorso2018\" p=\"304–309\" />",
+    "suggestion": "Add 'p=\"304–309\"' to the <Ref> tag in the main text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#008",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "413",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss abbreviations 'dir.rsn' and 'dir.knw' are enclosed in `<span class=\"sc\">` tags, which typically denote small caps. However, the definition of 'sc' is not provided in the context, and it might be intended for a different purpose or require a CSS definition.",
+    "quote": "<span class=\"sc\">dir.rsn</span> / <span class=\"sc\">dir.knw</span>",
+    "suggestion": "Ensure the 'sc' class is appropriately defined or use a different tag if small caps are not intended.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#007",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "389",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'sato2008' is missing the page number '78-80' in the main text, but it is present in the concordance table. This is a minor inconsistency.",
+    "quote": "Japanese tradition: 不定目的語接頭辞 <Ref k=\"sato2008\" p=\"78–80\" />",
+    "suggestion": "Add 'p=\"78–80\"' to the <Ref> tag in the main text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#006",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "381",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'nakagawa2024' is missing the page number '163' in the main text, but it is present in the concordance table. This is a minor inconsistency.",
+    "quote": "Japanese tradition: 不定人称 <Ref k=\"nakagawa2024\" p=\"163\" />",
+    "suggestion": "Add 'p=\"163\"' to the <Ref> tag in the main text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#005",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "224",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i-' is presented in italics with the lang attribute 'ain-Latn', but the 'ain-Latn' class is not defined in the provided code. It should likely be 'ain' or a custom class for Latin script.",
+    "quote": "i-",
+    "suggestion": "Change `lang=\"ain-Latn\"` to `lang=\"ain\"` or define the 'ain-Latn' class.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i=' is presented in italics with the lang attribute 'ain-Latn', but the 'ain-Latn' class is not defined in the provided code. It should likely be 'ain' or a custom class for Latin script.",
+    "quote": "i=",
+    "suggestion": "Change `lang=\"ain-Latn\"` to `lang=\"ain\"` or define the 'ain-Latn' class.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#003",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "71-74",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=ray-ke' is presented in italics with the lang attribute 'ain-Latn', but the 'ain-Latn' class is not defined in the provided code. It should likely be 'ain' or a custom class for Latin script.",
+    "quote": "ku=ray-ke",
+    "suggestion": "Change `lang=\"ain-Latn\"` to `lang=\"ain\"` or define the 'ain-Latn' class.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#002",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "38",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=kor' is presented in italics with the lang attribute 'ain-Latn', but the 'ain-Latn' class is not defined in the provided code. It should likely be 'ain' or a custom class for Latin script.",
+    "quote": "ku=kor",
+    "suggestion": "Change `lang=\"ain-Latn\"` to `lang=\"ain\"` or define the 'ain-Latn' class.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#021",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "379",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The concordance table cites Bugaeva (2012, 2022), but the reference list includes only bugaeva2021antip, bugaeva2022. There is no citation for Bugaeva 2012 in the chapter, which undermines the support for the claim of continuity in her glossing practice.",
+    "quote": "Bugaeva (2012, 2022)",
+    "suggestion": "Add a Ref entry for Bugaeva 2012 or remove the year from the table if not directly cited.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#019",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "44",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The portmanteau dot is used in 'track.<span class=\"sc\">poss</span>' to join a lexical root with a grammatical category, but the other entries in the same cell (1sg.a, 4.s, 2pl.o) are person-and-role portmanteaux. This mixes two distinct uses of the dot in one cell without clarification, potentially confusing the reader.",
+    "quote": "<span class=\"sc\">1sg.a</span>, <span class=\"sc\">4.s</span>, <span class=\"sc\">2pl.o</span>, track.<span class=\"sc\">poss</span>",
+    "suggestion": "Split the cell into two rows or clearly separate the two types of dot usage in the explanation to avoid conflation.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "abbreviations-glossing-symbols~p1#014",
+  "chapter": "abbreviations-glossing-symbols",
+  "lines": "9",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Stray slash in closing tag; should be <em>g</em>.",
+    "quote": "<em>g</</em>",
+    "suggestion": "Change to <em>g</em>.",
+    "confidence": 1
+   }
+  ]
+ }
+]

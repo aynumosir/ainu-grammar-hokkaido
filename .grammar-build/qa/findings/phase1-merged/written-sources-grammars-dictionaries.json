@@ -1,0 +1,930 @@
+[
+ {
+  "id": "written-sources-grammars-dictionaries~p1#028",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "271",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese title '蝦夷島奇觀' is presented without translation or transliteration in the main text, although it is followed by '(Ezoshima kikan)'. It might be beneficial to provide the transliteration immediately after the Japanese characters for clarity.",
+    "quote": "蝦夷島奇觀",
+    "suggestion": "Provide the transliteration '(Ezoshima kikan)' immediately after the Japanese title '蝦夷島奇觀'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Sino-Ainu' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "Sino-Ainu",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'Sino-Ainu'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Japanese title is not translated or romanized, while the rest of the chapter uses English translations for titles (e.g., 'Kaga-ke monjo').",
+    "quote": "蝦夷島奇觀",
+    "suggestion": "Add romanization and translation in parentheses, e.g., 'Ezoshima kikan (Wonders of the Ainu Island)'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#009",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "106",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Year' for Chiri (1953–62) uses a hyphen. A common convention for publication ranges is an en dash (–) or 'to'.",
+    "quote": "1953–62",
+    "suggestion": "Change '1953–62' to '1953–1962' or '1953 to 1962'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "En dash used without spaces around it in a range; elsewhere in the table, years are given as single values or with spaced separators (e.g., '1905 / 1938').",
+    "quote": "1953–62",
+    "suggestion": "Use consistent formatting: either '1953–1962' with an en dash and no spaces, or '1953 / 1962' to match other entries.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#001",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "39",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical note '(SA contrast)' appears to be an internal note about the source's content rather than a description of the source type itself. It might be better integrated into the prose or removed if redundant.",
+    "quote": "grammar (SA contrast)",
+    "suggestion": "Remove '(SA contrast)' or integrate its meaning into the prose.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Dialect tag uses guillemets while all other rows in the table use parentheses (e.g. 'Shizunai (SHI)', 'Saru (SAR)'). This is a formatting inconsistency.",
+    "quote": "Sakhalin ‹SA›",
+    "suggestion": "Change to 'Sakhalin (SA)' to match the other entries.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#007",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "93",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect base 'NW Hokkaido' uses an abbreviation. It might be more consistent with other entries to spell out 'Northwestern Hokkaido'.",
+    "quote": "NW Hokkaido",
+    "suggestion": "Change 'NW Hokkaido' to 'Northwestern Hokkaido'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Language' column entry 'Ainu–English–Japanese' uses a hyphen. A more standard convention for listing multiple languages might be 'Ainu, English, Japanese' or 'Ainu–English, Japanese'.",
+    "quote": "Ainu–English–Japanese",
+    "suggestion": "Change 'Ainu–English–Japanese' to 'Ainu, English, Japanese' or 'Ainu–English, Japanese'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Semicolon is used to separate two Ref elements in the same cell, which may be a formatting inconsistency compared to other rows that use single Ref elements.",
+    "quote": "<Ref k=\"batchelor1905\" />; <Ref k=\"batchelor1938\" />",
+    "suggestion": "Use a comma or 'and' instead of a semicolon for consistency with standard prose formatting, or ensure semicolon usage is consistent throughout the table.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Uses spaced slash to separate years, while other entries use single years or en dashes; inconsistent with '1953–62'.",
+    "quote": "1905 / 1938",
+    "suggestion": "Standardize year ranges: use either '1905–1938' or '1905 / 1938' consistently across all entries.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#034",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "254",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Redundant phrasing: 'four editions to a fourth' is awkward and repetitive.",
+    "quote": "revised through four editions to a fourth in 1938",
+    "suggestion": "Change to 'revised through four editions, the last published in 1938'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#032",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "306",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Batchelor's romanization' is clear. If it refers to a specific system or convention, capitalization might be considered. As is, it's acceptable.",
+    "quote": "Batchelor's romanization",
+    "suggestion": "No change needed unless capitalization is standard for this term in the context.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'NINJAL practical orthography' is clear. If it refers to a specific, formally named orthography, capitalization might be appropriate. As is, it's acceptable.",
+    "quote": "NINJAL practical orthography",
+    "suggestion": "No change needed unless capitalization is standard for this term in the context.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Nakagawa's extended Latin transcription' is clear. If it refers to a specific, formally named transcription system, capitalization might be appropriate. As is, it's acceptable.",
+    "quote": "Nakagawa's extended Latin transcription",
+    "suggestion": "No change needed unless capitalization is standard for this term in the context.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#031",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "297",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'West Sakhalin' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "West Sakhalin",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'West Sakhalin'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of italics for 'reported' is consistent within this paragraph, but the overall convention for marking 'reported' status should be checked for consistency throughout the chapter.",
+    "quote": "<em>reported</em>",
+    "suggestion": "Ensure consistent use of italics (or another marker) for the 'reported' status across the chapter.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Sakhalin contrast' is clear. If it refers to a specific section or concept, capitalization might be considered. As is, it's acceptable.",
+    "quote": "Sakhalin contrast",
+    "suggestion": "No change needed unless capitalization is standard for this term in the context.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#030",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "293",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of italics for 'reported' is consistent within this paragraph, but the overall convention for marking 'reported' status should be checked for consistency throughout the chapter.",
+    "quote": "<em>reported</em>",
+    "suggestion": "Ensure consistent use of italics (or another marker) for the 'reported' status across the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#029",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "284",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of italics for 'reported' is consistent within this paragraph, but the overall convention for marking 'reported' status should be checked for consistency throughout the chapter.",
+    "quote": "<em>reported</em>",
+    "suggestion": "Ensure consistent use of italics (or another marker) for the 'reported' status across the chapter.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'auto-generated' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "auto-generated",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'auto-generated'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#027",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "265",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Edo-period' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "Edo-period",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'Edo-period'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#026",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of italics for 'philological witness' is consistent within this paragraph, but the overall convention for marking specific roles should be checked for consistency throughout the chapter.",
+    "quote": "<em>philological witness</em>",
+    "suggestion": "Ensure consistent use of italics (or another marker) for specific roles like 'philological witness' across the chapter.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of italics for 'reported' is consistent within this paragraph, but the overall convention for marking 'reported' status should be checked for consistency throughout the chapter.",
+    "quote": "<em>reported</em>",
+    "suggestion": "Ensure consistent use of italics (or another marker) for the 'reported' status across the chapter.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'mid-century' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "mid-century",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'mid-century'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Saru–Chitose' uses an en dash. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "Saru–Chitose",
+    "suggestion": "Ensure consistent hyphenation/dashing of compound adjectives like 'Saru–Chitose'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#025",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Ainu–English–Japanese' dictionary entry uses a hyphen. A more standard convention for listing multiple languages might be 'Ainu, English, Japanese' or 'Ainu–English, Japanese'.",
+    "quote": "Ainu–English–Japanese",
+    "suggestion": "Change 'Ainu–English–Japanese' to 'Ainu, English, Japanese' or 'Ainu–English, Japanese'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrasing 'four editions to a fourth' is slightly redundant. It could be simplified.",
+    "quote": "four editions to a fourth",
+    "suggestion": "Rephrase to 'four editions, with the fourth published in 1938' or 'four editions, culminating in a fourth in 1938'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'northwestern Hokkaido' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "northwestern Hokkaido",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'northwestern Hokkaido'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#024",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "243",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'multi-volume' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "multi-volume",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'multi-volume'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'semantic field' is clear. If it's a technical term that is consistently capitalized in the field, consider capitalizing it. Otherwise, it's fine.",
+    "quote": "semantic field",
+    "suggestion": "No change needed unless capitalization is standard for this term in the context.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'cultural-semantic' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "cultural-semantic",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'cultural-semantic'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of italics for 'reported' is consistent within this paragraph, but the overall convention for marking 'reported' status should be checked for consistency throughout the chapter.",
+    "quote": "<em>reported</em>",
+    "suggestion": "Ensure consistent use of italics (or another marker) for the 'reported' status across the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#023",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "235",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'comparative dialect dictionary' is descriptive. If it's a specific title or a well-established category, it might be capitalized. As is, it's acceptable.",
+    "quote": "comparative dialect dictionary",
+    "suggestion": "No change needed unless it's a formal title that should be capitalized.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'word-form' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "word-form",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'word-form'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'dialectological' is clear. If it's referring to a specific field or subfield, capitalization might be considered, but it's fine as is.",
+    "quote": "dialectological",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#022",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "227",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of italics for 'reported' is consistent within this paragraph, but the overall convention for marking 'reported' status should be checked for consistency throughout the chapter.",
+    "quote": "<em>reported</em>",
+    "suggestion": "Ensure consistent use of italics (or another marker) for the 'reported' status across the chapter.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The domain name 'db.aynu.org' is presented without any formatting (like italics or code font). If it's a URL or a specific database name, it might benefit from distinct formatting.",
+    "quote": "db.aynu.org",
+    "suggestion": "Consider formatting 'db.aynu.org' as a URL (e.g., `db.aynu.org`) or a specific database name.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'lexical–paradigmatic' uses an en dash. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "lexical–paradigmatic",
+    "suggestion": "Ensure consistent hyphenation/dashing of compound adjectives like 'lexical–paradigmatic'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#021",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "220",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'lexical-paradigmatic' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "lexical-paradigmatic",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'lexical-paradigmatic'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#020",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "216",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Ainu–Japanese' dictionary entry uses a hyphen. A more standard convention for listing languages in a dictionary title might be 'Ainu-Japanese' or 'Ainu and Japanese'.",
+    "quote": "Ainu–Japanese",
+    "suggestion": "Change 'Ainu–Japanese' to 'Ainu-Japanese' or 'Ainu and Japanese'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'word-forms' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "word-forms",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'word-forms'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'valency-class' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "valency-class",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'valency-class'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#019",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "206",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The compound 'English-language' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "English-language",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'English-language'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'encyclopedia article' is not hyphenated. If it's intended as a compound adjective modifying something (e.g., 'encyclopedia-article source'), it might need hyphenation. As is, it's fine.",
+    "quote": "encyclopedia article",
+    "suggestion": "No change needed unless it's used adjectivally elsewhere and requires hyphenation for consistency.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of italics for 'reported' is consistent within this paragraph, but the overall convention for marking 'reported' status should be checked for consistency throughout the chapter.",
+    "quote": "<em>reported</em>",
+    "suggestion": "Ensure consistent use of italics (or another marker) for the 'reported' status across the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#018",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "200",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'person-marking system' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "person-marking system",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'person-marking'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'formal-noun nominalization paradigm' is a bit dense. It might benefit from slight rephrasing for clarity.",
+    "quote": "formal-noun nominalization paradigm",
+    "suggestion": "Consider rephrasing to 'paradigm of formal-noun nominalization' or similar.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#017",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'single-author' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "single-author",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'single-author'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'micro-variation' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "micro-variation",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'micro-variation'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#016",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "186",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'multi-author' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "multi-author",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'multi-author'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The series title and abbreviation are presented in parentheses. It might be clearer to introduce the series name first and then provide the abbreviation.",
+    "quote": "De Gruyter Mouton series on the Japanese language and linguistics (HJLL 12)",
+    "suggestion": "Rephrase: '...in the De Gruyter Mouton series, the Japanese Language and Linguistics (HJLL), volume 12.' or similar.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#015",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "180",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The compound 'English-language' is hyphenated. This is generally correct, but consistency with other similar compounds in the text should be checked.",
+    "quote": "English-language",
+    "suggestion": "Ensure consistent hyphenation of compound adjectives like 'English-language'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#014",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'person forms' is clear but could be more specific if it refers to a particular grammatical category, e.g., 'person-marking forms' or 'person-affix forms'.",
+    "quote": "person forms",
+    "suggestion": "Consider clarifying 'person forms' if a more specific term is appropriate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#013",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "162",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'sketch-level' uses a hyphen. It might be more consistent to write 'sketch level' or 'at a sketch level'.",
+    "quote": "sketch-level",
+    "suggestion": "Change 'sketch-level' to 'sketch level' or 'at a sketch level'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#012",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "155",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'Shizunai and Saru diverge' is clear but could be slightly more formal or descriptive, e.g., 'Shizunai and Saru differ'.",
+    "quote": "Shizunai and Saru diverge",
+    "suggestion": "Change 'diverge' to 'differ' or 'show divergence'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#011",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "151",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'pre-2020' uses a hyphen. While common, it might be more consistent with other date references to use 'before 2020' or similar.",
+    "quote": "pre-2020",
+    "suggestion": "Change 'pre-2020' to 'before 2020'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'southwest Hokkaido' uses a hyphen. It might be more consistent with other dialect descriptions to use 'Southwest Hokkaido' as a proper noun phrase or 'southwest Hokkaido' without a hyphen.",
+    "quote": "southwest Hokkaido",
+    "suggestion": "Change 'southwest Hokkaido' to 'Southwest Hokkaido' or 'southwest Hokkaido'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#010",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "142",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence structure is slightly awkward. The phrase 'falls outside this grammar's primary scope' could be integrated more smoothly.",
+    "quote": "Chiri's separate grammar of the Sakhalin dialect <Ref k=\"chiri1942\" /> falls outside this grammar's primary scope; it is cited when the Hokkaido–Sakhalin structural comparison in <Xr ch=\"sakhalin-and-kuril-ainu-contrast\" /> requires a Sakhalin-side primary source.",
+    "suggestion": "Rephrase: 'Chiri's separate grammar of the Sakhalin dialect (<Ref k=\"chiri1942\" />), which falls outside this grammar's primary scope, is cited when...'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#008",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "100",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Dialect base' for Hattori (1964) is '19 localities'. This is descriptive but could be more informative if the localities are known or can be grouped.",
+    "quote": "19 localities",
+    "suggestion": "Consider if the 19 localities can be described more specifically (e.g., 'various Hokkaido and Sakhalin localities') or if this level of detail is sufficient.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#006",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 79, 'multi-dialect' for Nakagawa (2024) is accurate but could potentially be more specific if the grammar emphasizes certain dialects or provides a comprehensive overview of all.",
+    "quote": "multi-dialect",
+    "suggestion": "Consider if a more specific description of the dialect coverage is possible, or leave as is if 'multi-dialect' is the intended level of detail.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#005",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "79",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Dialect base' for Bugaeva (2022) is 'multi-dialect'. This is accurate but could be more descriptive if the handbook focuses on specific dialects or a particular range.",
+    "quote": "multi-dialect",
+    "suggestion": "Consider if a more specific description of the dialect coverage is possible, or leave as is if 'multi-dialect' is the intended level of detail.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#004",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "72",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect base 'S. Hokkaido (SAR/CHI)' uses an abbreviation 'S.' and a slash. It could be more consistent with other entries to spell out 'Southern Hokkaido' and use a hyphen or 'and' for the dialects.",
+    "quote": "S. Hokkaido (SAR/CHI)",
+    "suggestion": "Change 'S. Hokkaido (SAR/CHI)' to 'Southern Hokkaido (Saru–Chitose)' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#003",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "65",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect base 'Saru / Chitose' uses a slash. While understandable, it might be more consistent with other entries to use a phrase like 'Saru and Chitose' or 'Saru–Chitose'.",
+    "quote": "Saru / Chitose",
+    "suggestion": "Change 'Saru / Chitose' to 'Saru–Chitose' or 'Saru and Chitose'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#002",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "51",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Dialect base' for Shibatani (1990) is listed as 'general'. This is vague and could be more specific, especially given the context of dialectal variation in Ainu.",
+    "quote": "general",
+    "suggestion": "Clarify 'general' to something more descriptive if possible, or acknowledge its vagueness in the prose.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#035",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "297",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The source `dalcorso2021` appears in the text but is not listed in the table of sources, breaking internal completeness.",
+    "quote": "<Ref k=\"dalcorso2021\" />",
+    "suggestion": "Add a row for `dalcorso2021` in the table with appropriate metadata (Year, Dialect base, Language, Type).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "written-sources-grammars-dictionaries~p1#033",
+  "chapter": "written-sources-grammars-dictionaries",
+  "lines": "112–117",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Tamura 1996 is listed as 'dictionary' without '(reported)' in the table, but the prose (line 221) explicitly says it is 'not held locally in the project corpus', which by the chapter's own definition (line 283) qualifies it as a reported source. Other dictionaries with similar status (Nakagawa 1995, Kayano 1996) are marked '(reported)'.",
+    "quote": "dictionary",
+    "suggestion": "Add '(reported)' to the Type cell for Tamura 1996, or clarify in the prose why it is not considered a reported source despite not being held locally.",
+    "confidence": 0.85
+   }
+  ]
+ }
+]

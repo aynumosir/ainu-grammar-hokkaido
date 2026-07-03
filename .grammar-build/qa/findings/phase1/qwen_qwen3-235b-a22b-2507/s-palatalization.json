@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "14",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "the glide /w/ at a following syllable or word boundary",
+  "issue": "Inconsistent use of slash vs. no slash for phonemes: '/w/' is used here, but elsewhere in the chapter (e.g., line 135) it's written as /w/ without quotes. The formatting should be consistent.",
+  "suggestion": "Use /w/ consistently throughout the chapter without quotation marks.",
+  "confidence": 0.95,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "88",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">cis</i> [tʃiɕ]",
+  "issue": "The phonetic transcription [tʃiɕ] includes [tʃ], but the underlying form is given as /cis/ with /c/ not attested as a phoneme in Hokkaido Ainu. This suggests a mismatch between the underlying form and surface realization, or an error in transcription.",
+  "suggestion": "Verify whether 'cis' should be transcribed with /tʃ/ onset; if so, clarify the morphophonemic derivation or correct the example.",
+  "confidence": 0.9,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "104",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "/o_/ or /u_/",
+  "issue": "The table groups /o/ and /u/ together under the same realization, but the preceding text (line 62) lists /a/, /e/, /o/, and /u/ separately as conditioning the same [sʲ]~[ʃ] realization. However, no example is provided for /u_/ in the table, and the text at line 73 claims 'the general rule applies equally to coda /s/ after /u/', yet the table omits it, creating a content-gap inconsistency.",
+  "suggestion": "Either add an example for /u_/ or clarify that /u_/ is omitted despite the rule applying.",
+  "confidence": 0.85,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "140",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "([aswa])",
+  "issue": "The phonetic transcription [aswa] uses lowercase 'w', but in standard IPA, labio-velar glides are typically represented with [w]. However, the orthographic consistency within the chapter should be checked: elsewhere (e.g., line 139) <span lang=\"ja\">ワ</span> is used, which corresponds to [w], so [aswa] is correct. But the kana transcription アㇲワ uses small ワ, suggesting a non-syllabic /w/, which is consistent. No actual error, but formatting of [aswa] should be checked for IPA compliance.",
+  "suggestion": "Ensure IPA transcriptions use proper symbols: [w] is correct; confirm that [aswa] is intended as [asɰa] or [aswa] based on articulation. No change needed if [w] is intentional.",
+  "confidence": 0.7,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "174",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "read sources",
+  "issue": "The phrase 'read sources' (line 159) and 'directly-read source' (line 204) appears to be a pipeline register leak, referring to the research process rather than the content itself.",
+  "suggestion": "Replace 'read sources' with 'available sources' or 'published sources'; replace 'directly-read source' with 'published acoustic data'.",
+  "confidence": 0.95,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "204",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "directly-read source",
+  "issue": "The phrase 'directly-read source' is a clear pipeline register leak, indicating internal research workflow rather than scholarly exposition.",
+  "suggestion": "Replace with 'published acoustic measurements' or 'empirical data'.",
+  "confidence": 0.98,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "221",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "[ɕiɾʲᶘak˚]",
+  "issue": "The IPA symbol [ᶘ] (voiced postalveolar fricative) is rare and may be a typo or over-specific transcription. It is not standardly used in Ainu phonetic descriptions. The symbol may be intended to represent [ʃ], but [ɕiɾʲɕak˚] is given as an alternative, suggesting [ᶘ] is meant to be distinct.",
+  "suggestion": "Clarify or correct the use of [ᶘ]; consider replacing with [ʃ] if intended, or justify its use with a note on articulation.",
+  "confidence": 0.8,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "citing Kindaichi (1931: 9) and Tamura (1988b: 13) for the forms <i lang=\"ain-Latn\">sini</i> [ʃini] and <i lang=\"ain-Latn\">as</i> [aʃ]",
+  "issue": "The citation attributes [ʃini] and [aʃ] to Kindaichi and Tamura, but no page range or direct reference is given for Kindaichi (1931: 9) — only a page number without context. The cite format should include full locator if used.",
+  "suggestion": "Add full citation context: e.g., <Ref k=\"kindaichi1931\" p=\"9\" /> to match style.",
+  "confidence": 0.9,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "183",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "coda -s after /i/ as シ",
+  "issue": "The dash in '-s' is unspaced and may be a typo; in morphological contexts, it should be attached: /-s/.",
+  "suggestion": "Write /-s/ consistently with slash and no space.",
+  "confidence": 0.95,
+  "chapter": "s-palatalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

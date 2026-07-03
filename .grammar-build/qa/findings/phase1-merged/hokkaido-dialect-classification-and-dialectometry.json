@@ -1,0 +1,597 @@
+[
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#019",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "756",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that eastern and northern forms like the Tokachi allative '<i lang=\"ain-Latn\">en</i>' and the Kushiro particle extension '<i lang=\"ain-Latn\">kay</i>' appear too infrequently for distributional analysis. However, line 557 lists Tokachi as using the '<i lang=\"ain-Latn\">en</i>' allative form, and line 397 mentions the '<i lang=\"ain-Latn\">kay</i>' extension in Kushiro. This suggests these forms are attested, but their infrequency prevents full analysis.",
+    "quote": "Eastern and northern forms — Tokachi allative <i lang=\"ain-Latn\">en</i>, the Kushiro particle extension <i lang=\"ain-Latn\">kay</i> — appear too infrequently for distributional analysis.",
+    "suggestion": "Ensure the phrasing clearly indicates that these forms are attested but their low frequency limits further analysis, rather than implying they are absent."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "77,964 + 43,346 = 121,310, meaning the remainder (88,568 sentences) is distributed among other varieties. However, this contradicts the earlier claim (line 13) that the grammar uses an 'aligned corpus' — if Saru and Shizunai dominate, it challenges claims about 'proportional weighting' mentioned in line 24. The section on corpus method may not reflect this imbalance.",
+    "quote": "The corpus used throughout this grammar (209,878 sentences) is weighted heavily toward Saru (77,964 sentences) and Shizunai (43,346), with all other varieties together making up the remainder.",
+    "suggestion": "Clarify whether 'proportional weighting' refers to speaker representation or text volume, or revise the numbers for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#006",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "428",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for Bihoro/Kushiro states 'unaccented (Bih/Kus); Obihiro standard'. This implies Obihiro is standard, but Obihiro is listed under the 'Standard' accent type in line 228 of the prose. The table entry seems to be a summary for the 'Bihoro / Kushiro' column, but the inclusion of 'Obihiro standard' within that cell is confusing as Obihiro is not in that column.",
+    "quote": "unaccented (Bih/Kus); Obihiro standard",
+    "suggestion": "Rephrase the table entry for clarity, perhaps by separating Obihiro's status or ensuring it's only mentioned in its correct column."
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table entry for Bihoro/Kushiro under 'Accent type' says 'unaccented', but Obihiro is listed separately as 'standard'. However, in the prose (line 239), 'Bihoro, Kushiro, Shiranuka' are all described as unaccented. This contradicts the table, which implies Obihiro is standard but grouped under Bihoro/Kushiro in the header.",
+    "quote": "unaccented (Bih/Kus); Obihiro standard",
+    "suggestion": "Revise the table header to list Bihoro and Kushiro separately, or clarify that only Kushiro and Bihoro are unaccented while Obihiro is standard.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#024",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "32",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that Hattori–Chiri (1960) used nineteen localities, but lists thirteen Hokkaido sites, six Sakhalin sites, and Torii's Kuril materials, totaling twenty. This is a numerical contradiction.",
+    "quote": "nineteen localities",
+    "suggestion": "Revise the count to 'twenty localities' or adjust the listed sites to match the stated number.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#023",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "266–271, 443–452",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Text includes Obihiro among dialects showing regressive consonant assimilation, but the table (row 'Consonant assimilation', column 'Tokachi / Ishikari') shows '—' (no assimilation) for that group.",
+    "quote": "hotke → hokke (Obihiro, Kushiro, Bihoro)",
+    "suggestion": "Align table with text: if Obihiro shows assimilation, either split the column or mark Tokachi/Ishikari as 'partial' or 'limited'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#022",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "258–260, 432–441",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Text (line 258–260) states that Obihiro elides initial h-, but the table (row 'Initial h-', column 'Tokachi / Ishikari') shows 'retained'; Obihiro is the main city in Tokachi and should be covered by that column.",
+    "quote": "Obihiro … elided",
+    "suggestion": "Either change the table entry for Tokachi/Ishikari to 'elided' (or 'elided (Obihiro)'), or revise the text if Obihiro actually retains h-.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#021",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "57–63, 103",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Asai added Chitose to Hattori–Chiri’s 19 sites (→20 lects), but Ono 2020 is described as using a matrix of 21 lects. The number is inconsistent.",
+    "quote": "adding Chitose … 110 items over 21 lects",
+    "suggestion": "Verify the exact size of Asai’s matrix; if it is 21, correct the earlier count; if 20, correct line 103.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#020",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "31–34",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Enumeration lists 13 + 6 = 19 Hokkaido+Sakhalin sites, plus Torii's Kuril materials, but the total is stated as 19; the phrasing implies 20 items.",
+    "quote": "nineteen localities: thirteen Hokkaido sites … together with six Sakhalin sites and Torii's 1903 Kuril materials",
+    "suggestion": "Rephrase to clarify that the Kuril materials are supplementary, e.g. 'thirteen Hokkaido sites and six Sakhalin sites, supplemented by Torii's 1903 Kuril materials'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#018",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "747",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that several 'dialect' rows represent a single speaker's idiolect. However, line 68 makes a similar point about 'several \"dialect\" rows represent a single consultant's idiolect rather than a community variety.' This is a repetition of the same information without adding new context or detail.",
+    "quote": "Several \"dialect\" rows represent a single speaker's idiolect rather than a community variety.",
+    "suggestion": "Remove the redundant statement or combine it with the earlier mention for conciseness."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#017",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "722",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states Sakhalin diverged from Common Ainu at roughly 800 years ago and Kuril's at under 600 years ago. However, line 34 mentions Torii's 1903 Kuril materials, and line 723 states Kuril is historically as well as structurally closer to Hokkaido. If Kuril diverged under 600 years ago, it would be a more recent divergence than Sakhalin's 800 years ago. This seems counterintuitive if Kuril is structurally closer to Hokkaido, suggesting a potential inconsistency in the timeline or interpretation.",
+    "quote": "Sakhalin's divergence from Common Ainu at roughly 800 years and Kuril's at under 600, consistent with the Satsumon-culture migration chronology",
+    "suggestion": "Clarify the timeline of divergence for Sakhalin and Kuril, ensuring it aligns with the statement that Kuril is structurally closer to Hokkaido."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the divergence times of Sakhalin (800 years) and Kuril (under 600 years) are consistent with the Satsumon-culture migration chronology. However, the Satsumon period is generally considered to have ended around the 12th century CE, which would be approximately 800-900 years ago. If Sakhalin diverged 800 years ago, it aligns with the end of the Satsumon period. However, if Kuril diverged under 600 years ago, it would be significantly later than the Satsumon period, making the consistency claim questionable.",
+    "quote": "consistent with the Satsumon-culture migration chronology",
+    "suggestion": "Re-evaluate the consistency claim with the Satsumon-culture migration chronology, or provide further explanation for how the divergence times align."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#016",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "698",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text lists 'distinct interrogative stems' and the '4th-person singular pronoun <i lang=\"ain-Latn\">asinuma</i>' as morphological features clustering in Saru-Chitose. However, line 641-642 mentions interrogatives '<i lang=\"ain-Latn\">hemanta</i>' and '<i lang=\"ain-Latn\">hunna</i>' as Saru-Chitose island features, and line 649 mentions '<i lang=\"ain-Latn\">hemata</i>' as a Saru-Chitose + Sakhalin feature. It's unclear if '<i lang=\"ain-Latn\">hemanta</i>', '<i lang=\"ain-Latn\">hunna</i>', and '<i lang=\"ain-Latn\">hemata</i>' are all considered 'distinct interrogative stems' and if '<i lang=\"ain-Latn\">asinuma</i>' is also a Saru-Chitose specific feature.",
+    "quote": "distinct interrogative stems, and the 4th-person singular pronoun <i lang=\"ain-Latn\">asinuma</i>",
+    "suggestion": "Clarify the specific interrogative stems and pronouns that define the Saru-Chitose cluster, and ensure consistency with other mentions of interrogatives in the text."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the lexicostatistic matrix places Saru and Chitose together with Biratori, Nukibetsu, and Niikappu in the Central-South cluster. However, line 32 lists Yakumo, Oshamambe, Horobetsu, Biratori, Nukibetsu, Niikappu, and Samani as Hokkaido sites. Line 46 mentions Yakumo, Oshamambe, Nukibetsu, Biratori, Niikappu, and Samani as part of the internal Hokkaido clusters. The table (lines 166-171) describes Hattori-Chiri's analysis and mentions 'SW cluster' and 'NE cluster' but doesn't explicitly list the members of the Central-South cluster as described here. There's a potential discrepancy in the exact composition of the Central-South cluster as presented in the prose versus what might be inferred from other parts of the text.",
+    "quote": "&#123;Saru, Chitose, Niikappu, Nukibetsu, Biratori&#125; in the Central-South cluster.",
+    "suggestion": "Ensure the composition of the Central-South cluster is consistently presented throughout the chapter, or clarify if different analyses yield slightly different groupings."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#015",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "646",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the prefix '<i lang=\"ain-Latn\">eci-</i>' (1→2) appears in Saru-Chitose and Sakhalin but not in intervening Hokkaido varieties. However, line 482-485 discusses the Saru/Chitose prefix-only transitive marking with '<i lang=\"ain-Latn\">eci=kore</i>' and contrasts it with Horobetsu and Ishikari using circumfixes. This implies that '<i lang=\"ain-Latn\">eci-</i>' is specific to Saru/Chitose within Hokkaido, and its presence in Sakhalin creates a bridge distribution. The statement that it's not in 'geographically intervening Hokkaido varieties' might be too broad if Horobetsu and Ishikari are considered intervening.",
+    "quote": "Saru–Chitose + Sakhalin: the interrogative <i lang=\"ain-Latn\">hemata</i> 'what' and the prefix <i lang=\"ain-Latn\">eci-</i> '1→2' appear in Saru–Chitose and distant Sakhalin but not in the geographically intervening Hokkaido varieties",
+    "suggestion": "Refine the statement about the distribution of '<i lang=\"ain-Latn\">eci-</i>' to be more precise about which Hokkaido varieties are considered 'intervening' and whether they lack the prefix entirely or have a different form."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#014",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "640",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description of the ABA distribution states that '<i lang=\"ain-Latn\">aw</i>' is peripheral and '<i lang=\"ain-Latn\">parunpe</i>' is central. However, line 637 mentions that '<i lang=\"ain-Latn\">parunpe</i>' spread from the '<i lang=\"ain-Latn\">par</i>-region and displaced '<i lang=\"ain-Latn\">aw</i>' in the centre. This implies the '<i lang=\"ain-Latn\">par</i>-region' is central, which aligns with the description. However, the 'par/car' distribution (lines 293-312) suggests '<i lang=\"ain-Latn\">par</i>' is associated with the southwest, and '<i lang=\"ain-Latn\">car</i>' with the northeast. If the '<i lang=\"ain-Latn\">par</i>-region' is central, it might conflict with the broader East-West or NE-SW divisions.",
+    "quote": "ABA (peripheral conservatism, central innovation): <i lang=\"ain-Latn\">aw</i> (peripheral) vs <i lang=\"ain-Latn\">parunpe</i> (central) 'tongue'.",
+    "suggestion": "Clarify the geographical definition of 'central' in the ABA distribution and how it relates to other regional classifications."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#013",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "607",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the cohortative particle is '<i lang=\"ain-Latn\">no</i>' in Urakawa and Samani. However, line 557 lists Urakawa and Eastern Hidaka as using '<i lang=\"ain-Latn\">en</i>' for the allative particle. It's unclear if Urakawa and Samani use '<i lang=\"ain-Latn\">no</i>' for the cohortative particle and '<i lang=\"ain-Latn\">en</i>' for the allative particle, or if there's a confusion between the two particles or locations.",
+    "quote": "no in Urakawa and Samani.",
+    "suggestion": "Ensure clarity on the specific particles used in Urakawa and Samani, and confirm that '<i lang=\"ain-Latn\">no</i>' is indeed the cohortative particle for these locations."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#012",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "600",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Shizunai uses '<i lang=\"ain-Latn\">konno</i>' which is derived from '<i lang=\"ain-Latn\">kor-no</i>'. However, line 598 lists '<i lang=\"ain-Latn\">kor</i>' as one of the three main conditional particle forms, and Shizunai is listed separately with '<i lang=\"ain-Latn\">konno</i>'. This implies '<i lang=\"ain-Latn\">kor</i>' is not the form used in Shizunai, contradicting its inclusion in the list of forms.",
+    "quote": "cor <i lang=\"ain-Latn\">konno</i> (&lt; <i lang=\"ain-Latn\">kor-no</i>);",
+    "suggestion": "Clarify the relationship between '<i lang=\"ain-Latn\">kor</i>' and '<i lang=\"ain-Latn\">konno</i>' in Shizunai, and ensure Shizunai is correctly categorized regarding the conditional particle."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#011",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "564",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text lists '<i lang=\"ain-Latn\">ekota</i>' as an alternative form for the allative particle in Asahikawa. However, line 560 lists Asahikawa under the '<i lang=\"ain-Latn\">(e)ne</i>' form. This creates a contradiction regarding which form is primary or alternative for Asahikawa.",
+    "quote": "<i lang=\"ain-Latn\">ekota</i> — an Asahikawa alternative form.",
+    "suggestion": "Clarify whether '<i lang=\"ain-Latn\">ekota</i>' is an alternative to '<i lang=\"ain-Latn\">(e)ne</i>' in Asahikawa, or if Asahikawa primarily uses '<i lang=\"ain-Latn\">ekota</i>' and '<i lang=\"ain-Latn\">(e)ne</i>' is found elsewhere."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#010",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "528",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Saru, Chitose, and Ishikari use '<i lang=\"ain-Latn\">pa</i>' for the verbal plural morpheme. However, line 485 states that Horobetsu and Ishikari use circumfixes, implying a morphological similarity between them. If Ishikari uses the circumfix, it's unclear how it also uses '<i lang=\"ain-Latn\">pa</i>' for plural marking, or if these are separate phenomena.",
+    "quote": "Saru, Chitose, Ishikari: <i lang=\"ain-Latn\">pa</i>.",
+    "suggestion": "Clarify how Ishikari's use of circumfixes and the '<i lang=\"ain-Latn\">pa</i>' plural morpheme are reconciled, or if there's a distinction between verbal and other types of plural marking."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#009",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "494",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that Horobetsu uses the circumfix e=kore=as and Ishikari uses e=kore=an. However, line 485 in the prose states that Horobetsu patterns morphologically with Ishikari and Tokachi varieties, not with Saru. This implies Horobetsu and Ishikari are similar morphologically, but the specific examples given for the circumfix are different (as vs an). This could be a minor variation within a broader similarity, but it warrants checking for consistency.",
+    "quote": "Saru/Chitose prefix-only transitive person marking: the portmanteau eci= is the sole marker for all first-person-A–second-person-O combinations. Horobetsu uses the circumfix e=kore=as; Ishikari e=kore=an. After Nakagawa & Fukazawa (2022: §4.1).",
+    "suggestion": "Clarify if the difference between 'as' and 'an' in the Horobetsu and Ishikari examples is significant or if they represent a consistent circumfix pattern within that group."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#008",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "462",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for Sōya under 'mouth' (par/car) is 'both'. This implies Sōya has both 'par' and 'car' forms. However, line 260 states that Sōya retains initial 'h', which is contrasted with elided initial 'h-' in Asahikawa/Nayoro and Bihoro/Kushiro. The 'par/car' alternation is described as affecting the labial-alveolar onset position (line 296). It's unclear how Sōya's retention of initial 'h' relates to its use of both 'par' and 'car' forms.",
+    "quote": "both",
+    "suggestion": "Clarify the relationship between Sōya's initial 'h' retention and its use of both 'par' and 'car' forms for 'mouth'."
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for Sōya under 'mouth' (par/car) is 'both'. This implies Sōya has both 'par' and 'car' forms. However, line 295 states that Nayoro and Asahikawa attest both forms. It's not explicitly stated in the prose that Sōya also attests both forms, making this entry potentially inconsistent or requiring further clarification.",
+    "quote": "both",
+    "suggestion": "Confirm if Sōya indeed attests both 'par' and 'car' forms, and if so, cite the source or provide context."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#007",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "450",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for Sōya under 'Consonant assimilation' is 'partial'. However, line 260 states that Sōya retains initial 'h', which is contrasted with elided initial 'h-' in Asahikawa/Nayoro and Bihoro/Kushiro. The 'Consonant assimilation' feature is described in prose (lines 265-288) as being most extensive in Bihoro. It's unclear if 'partial' for Sōya aligns with the general description of consonant assimilation or if it refers to a different aspect.",
+    "quote": "partial",
+    "suggestion": "Clarify what 'partial' refers to in the context of consonant assimilation for Sōya, and ensure it aligns with the prose description."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#005",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "239",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of locations for the 'Unaccented' accent type includes Bihoro and Kushiro. However, line 428 in the table states that Bihoro/Kushiro are 'unaccented (Bih/Kus); Obihiro standard'. This implies that while Bihoro and Kushiro are unaccented, Obihiro (which is listed under 'Standard' in line 228) is not part of this unaccented group. The table entry for Bihoro/Kushiro seems to contradict the prose's grouping of them as 'unaccented' without further qualification.",
+    "quote": "Unaccented (Shizunai, Urakawa, Samani, Bihoro, Kushiro, Shiranuka): pitch is non-distinctive.",
+    "suggestion": "Clarify the accent type for Bihoro and Kushiro, and ensure consistency with Obihiro's classification."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#004",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "228",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of locations for the 'Standard' accent type includes Sōya. However, line 430 in the table indicates Sōya has 'standard' accent type, but line 440 indicates it retains initial h-, which is contrasted with elided initial h- in Asahikawa/Nayoro (line 438) and Bihoro/Kushiro (line 439). This suggests Sōya might not fully align with the 'standard' group as described in the prose, or that the 'standard' category is broad and encompasses variations.",
+    "quote": "Standard (Saru, Chitose, Horobetsu, Asahikawa, Nayoro, Obihiro, Sōya): two placement rules — a closed first syllable takes high pitch on σ1; an open first syllable takes high pitch on σ2.",
+    "suggestion": "Clarify if Sōya's accent type is fully 'standard' or if it has nuances that differentiate it from other 'standard' locations, especially in relation to the initial h- elision."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#003",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "184",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for Tamura's classification lists 'Ishikari' under the Northeast group. However, the prose description of Tamura's classification (lines 80-87) does not explicitly mention Ishikari, and instead lists 'Central (Teshio, Ishikari)' as part of the Northeast zone. This creates a slight discrepancy between the prose and the table's summary.",
+    "quote": "NE &#123;Sōya; Ishikari; Tokachi, Kitami, Kushiro, Eastern Hidaka&#125; vs SW &#123;Western Hidaka, Eastern Iburi; Shiribeshi&#125;",
+    "suggestion": "Ensure consistency between the prose description and the table entry for the classification of Ishikari."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#002",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "116",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that North Kuril patterns with the northeast Hokkaido group, listing Samani, Obihiro, Kushiro, Bihoro, and Sōya. However, Samani is described as having a 'marginal position' in the Asai 1974 analysis (line 62) and is listed under 'Unaccented' pitch accent type (line 239), which might suggest it's not part of the 'standard' northeast group. This could imply an inconsistency in how Samani is categorized.",
+    "quote": "Within the Hokkaido cluster, North Kuril patterns most strongly with the northeast Hokkaido group — Samani, Obihiro, Kushiro, Bihoro, Sōya — while southwest Hokkaido forms a second tier.",
+    "suggestion": "Verify if Samani is consistently grouped with the northeast Hokkaido group in Ono's analysis or if its inclusion here is an oversimplification."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#001",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "46",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text lists three clusters of Hokkaido varieties. However, the previous sentence states that Hattori-Chiri applied the word list to thirteen Hokkaido sites, and the following sentence mentions Sōya as being closest to Sakhalin. This implies Sōya is also part of the Hokkaido data, but it is not included in any of these three clusters.",
+    "quote": "&#123;Yakumo, Oshamambe&#125;; &#123;Nukibetsu, Biratori, Niikappu&#125;; and &#123;Obihiro, Kushiro, Bihoro&#125;.",
+    "suggestion": "Clarify if Sōya was part of these clusters or if it was treated separately in the analysis."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#029",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "31",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation <Ref k=\"hattorichiri1960\" /> is attached to the entire claim, but the detail about 'nineteen localities' comes from Nakagawa & Fukazawa (2022), not Hattori & Chiri (1960) directly. This misattributes sourcing.",
+    "quote": "applied a 200-item Swadesh-based word list to nineteen localities",
+    "suggestion": "Move the <Ref k=\"nakagawafukazawa2022\" /> citation to the sentence about the number of localities.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#028",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "683",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The date 'June 2026' is in the future relative to the book's writing period (2025–2026), but the context allows for works dated up to 2026. However, attributing a speculative claim to a future Discord message (June 2026) undermines epistemic credibility, especially when tagged as ‹speculative›. The citation appears anachronistic.",
+    "quote": "antitwilight, June 2026 ‹speculative›",
+    "suggestion": "Verify whether 'June 2026' is a typo; if not, consider rephrasing to avoid implying knowledge of future community input.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#027",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "580",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'LOC ALLAT' for 'or en' repeats the same error: 'or' is a case marker (genitive/dative), not 'LOC'. 'en' is the allative particle. The gloss incorrectly labels 'or' as 'LOC'.",
+    "quote": "nean nupuri or en oman kor",
+    "suggestion": "Revise gloss to 'GEN.ALLAT' or 'DAT ALLAT' for accuracy.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#026",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "571",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'LOC ALLAT' for 'or un' misaligns: 'or' is glossed as 'LOC', but 'or' is the genitive/dative case marker, not a locative. 'un' is the allative particle. The gloss incorrectly merges the case marker 'or' with the particle 'un'.",
+    "quote": "mac-ihi sapa-ha or un inkar",
+    "suggestion": "Revise gloss to 'GEN.ALLAT' or 'DAT ALLAT' to reflect that 'or' is a case marker and 'un' is the allative particle.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-dialect-classification-and-dialectometry~p1#025",
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "lines": "47",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "En dash (–) is used inconsistently: elsewhere, such as in 'Shizunai–Samani' or 'NE–SW', en dashes are used, but here it is correct. However, in line 82, 'Teshio, Ishikari' lacks a dash, suggesting inconsistency in boundary notation. The issue is minor but affects typographic register.",
+    "quote": "Shizunai–Niikappu line",
+    "suggestion": "Ensure consistent use of en dashes in geographic boundary expressions throughout.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

@@ -1,0 +1,1067 @@
+[
+ {
+  "id": "sakhalin-contrast-text~p1#024",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "254",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim about Sakaguchi's analysis is marked as ‹speculative›. However, the preceding sentences describe SA person-prefix inventory and the third-person plural suffix with no epistemic marking, implying consensus. This could be a discrepancy if Sakaguchi's analysis is the primary source for these claims.",
+    "quote": "Sakaguchi <Ref k=\"sakaguchi2024\" /> provides the most detailed morphological analysis of the SA person–number paradigm to date ‹speculative›.",
+    "suggestion": "Clarify the epistemic status of the SA person-prefix inventory and the third-person plural suffix. If they are indeed speculative, the unmarked prose should reflect that.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is attached to a claim about Sakaguchi's analysis being the most detailed. This is a subjective evaluation, not a factual claim that can be speculative. The tag should be used for claims about the language, not about the quality of a source.",
+    "quote": "Sakaguchi <Ref k=\"sakaguchi2024\" /> provides the most detailed morphological analysis of the SA person–number paradigm to date ‹speculative›.",
+    "suggestion": "Remove the ‹speculative› tag or rephrase the claim to be about the analysis itself being speculative, e.g., 'Sakaguchi's analysis of the SA person–number paradigm is speculative.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The tag ‹speculative› is applied to Sakaguchi (2024), but the preceding sentence presents the claim as factual ('SA accordingly has no productive indefinite/fourth-person paradigm'). This creates a mismatch between assertion strength and epistemic qualification.",
+    "quote": "‹speculative›",
+    "suggestion": "Either move the ‹speculative› tag to the earlier claim or rephrase to reflect uncertainty.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#022",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "229",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim about Dal Corso's study is marked as ‹contested›. However, the preceding paragraph discusses the SA negative copula construction without any epistemic marking, implying it is consensus. This could be a discrepancy if Dal Corso's study is the primary source for this information.",
+    "quote": "Dal Corso's study of SA negation <Ref k=\"dalcorso2025neg\" /> treats the structural history of the SA <i lang=\"ain-Latn\">han-</i> series and its divergence from the Hokkaido system in detail ‹contested›.",
+    "suggestion": "Clarify the epistemic status of the SA negative copula construction. If it is indeed contested, the unmarked prose should reflect that.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a claim about Dal Corso's study, but the study itself is cited as a source. The tag should indicate the status of the claim, not the source. If the claim is contested, it should be clear who contests it. This is a citation hygiene issue: the tag is misplaced or insufficiently justified.",
+    "quote": "Dal Corso's study of SA negation <Ref k=\"dalcorso2025neg\" /> treats the structural history of the SA <i lang=\"ain-Latn\">han-</i> series and its divergence from the Hokkaido system in detail ‹contested›.",
+    "suggestion": "Either provide a reference for the contestation or remove the tag if the claim is not actually contested.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation key 'dalcorso2025neg' appears to be a placeholder or non-standard key (not matching typical citation patterns like 'dalcorso2024'). This may indicate a pipeline leak or unverified source.",
+    "quote": "dalcorso2025neg",
+    "suggestion": "Verify and standardize citation key to match known sources or mark as pending.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#026",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "274",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference <Xr ch=\"suppletive-verbal-number\" /> is marked with ‹consensus›. However, the preceding sentences discuss SA and HK suppletive verbal number, noting differences in enforcement and providing examples. It's possible that the 'consensus' applies only to the existence of the system in HK, not necessarily to all details discussed in relation to SA.",
+    "quote": "The HK suppletive verbal number system is described in <Xr ch=\"suppletive-verbal-number\" /> ‹consensus›.",
+    "suggestion": "Ensure that the 'consensus' marking accurately reflects the content of the cross-referenced chapter, especially in relation to the contrasts drawn with SA.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Similar to line 204, the epistemic tag ‹consensus› is attached to a cross-reference, not a claim. This is a citation hygiene issue.",
+    "quote": "The HK suppletive verbal number system is described in <Xr ch=\"suppletive-verbal-number\" /> ‹consensus›.",
+    "suggestion": "Move the tag to the claim about the HK system being described, or remove it.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#020",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "204",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference <Xr ch=\"final-h-history-and-sakhalin-length-reflex\" /> is marked with ‹consensus›, but the preceding sentence states that Dal Corso's study <Ref k=\"dalcorso2025neg\" /> treats the SA <i lang=\"ain-Latn\">han-</i> series and its divergence from Hokkaido as ‹contested›. This creates a potential contradiction in the epistemic status of related claims.",
+    "quote": "the diachronic correspondence between the SA surface /-h/ and the HK retained obstruents, with its implications for the internal reconstruction of Proto-Ainu codas, is the subject of <Xr ch=\"final-h-history-and-sakhalin-length-reflex\" /> ‹consensus›.",
+    "suggestion": "Re-evaluate the epistemic status of the cross-referenced section or clarify how the 'consensus' claim relates to the 'contested' claim.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹consensus› is attached to a cross-reference to another chapter, not to a factual claim. This is a citation hygiene issue: epistemic tags should modify claims, not references.",
+    "quote": "the subject of <Xr ch=\"final-h-history-and-sakhalin-length-reflex\" /> ‹consensus›.",
+    "suggestion": "Move the ‹consensus› tag to the claim about the diachronic correspondence, or remove it from the cross-reference.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#044",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "86",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'ike' appears in the m-string but is not glossed. The free translation includes 'sang', which is not accounted for in the gloss string.",
+    "quote": "'ahci cis kanne yuukara 'ike 'en=nuure",
+    "suggestion": "Gloss 'ike' as 'sing' or 'song', and adjust the translation or gloss to align.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#043",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "75",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'uneeno' is present in the m-string but not glossed in the g-string. This is a missing gloss.",
+    "quote": "'aynu 'okore 'uneeno 'ariki=hci",
+    "suggestion": "Add gloss for 'uneeno', likely 'together'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#042",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "53",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation is 'There are many birds on that lake,' but the gloss 'above-LOC' for 'kaa-ta' implies a more specific location than 'on'. The gloss does not fully account for the spatial semantics implied in the translation.",
+    "quote": "tara too kaa-ta cikah renkayne 'okay",
+    "suggestion": "Revise gloss to 'above/on-LOC' or adjust translation for precision.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#041",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "41",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'itanki is glossed as 'bowl' in the example, but the note on line 48 states that 'teeta' means 'here' and 'itanki' is not mentioned. The glossing suggests 'itanki' = 'bowl', but there is no supporting explanation for this form elsewhere in the chapter.",
+    "quote": "teeta 'itanki 'an",
+    "suggestion": "Clarify the gloss of 'itanki' in the note or ensure consistency by referencing it in the note.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#029",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "48",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says 'teeta' has a long vowel 'ee', but the morphemic segmentation in the example (line 42) shows 'teeta' with double 'ee', which is consistent. However, the note says 'the Saru cognate locative is ta (short)', but the example glosses 'teeta' as 'here', not as a locative. The note seems to imply 'teeta' is a locative, but the gloss is 'here' (adverb), creating a mismatch between the note's description and the example's gloss.",
+    "quote": "note=\"SA teeta 'here' carries the phonemic long vowel ee; the Saru cognate locative is ta (short). 'an is the singular existential; the suppletive plural form 'okay appears in (2).\"",
+    "suggestion": "Clarify the note: either state that 'teeta' is a locative adverb meaning 'here', or adjust the gloss to reflect a locative meaning if appropriate.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#047",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "250",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'this structural position' is vague. It refers to the post-verbal suffix position, but the antecedent is not clearly established.",
+    "quote": "HK grammars report no cognate suffix in this structural position",
+    "suggestion": "Clarify as 'post-verbal suffix position' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#039",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "217",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'hannehka ku='oman' is given without a gloss or morphemic segmentation, unlike the other examples in the chapter. This is inconsistent formatting.",
+    "quote": "hannehka ku='oman 'I did not go'.",
+    "suggestion": "Provide a gloss and segmentation for this example, e.g., 'hannehka ku='oman' (NEG 1SG.S=go) 'I did not go'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#038",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "59",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'in the elderly register' is unclear: does it mean the word is used by elderly speakers, or that it is a register of the language? It should be clarified.",
+    "quote": "kaa is the position noun 'above (in contact)' in the elderly register, taking the locative suffix -ta.",
+    "suggestion": "Rephrase to: 'kaa is the position noun 'above (in contact)' used in the elderly register, taking the locative suffix -ta.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#037",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "48",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the Saru cognate locative is ta (short)' is ambiguous: it could mean the locative form in Saru is 'ta', but 'ta' is a locative suffix, not a word meaning 'here'. The note should clarify that 'ta' is the locative suffix in Saru, not a cognate of 'teeta'.",
+    "quote": "SA teeta 'here' carries the phonemic long vowel ee; the Saru cognate locative is ta (short).",
+    "suggestion": "Rephrase to: 'the Saru cognate locative suffix is -ta (short), whereas SA teeta is a locative adverb.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#028",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "23-26",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'elsewhere in this grammar' is a meta-commentary about the book's internal organization, which is a register leak. The chapter should focus on its own content, not refer to other parts of the grammar in a way that breaks the reader's immersion.",
+    "quote": "Piłsudski's 1912 Sakhalin corpus <Ref k=\"pilsudski1912\" />, the earliest substantial Enciw text collection, uses a different Romanization; forms cited from that source elsewhere in this grammar have been converted to the Hattori convention following <Ref k=\"dalcorso2024\" />.",
+    "suggestion": "Rephrase to avoid referencing 'elsewhere in this grammar' directly, e.g., 'Forms cited from that source are converted to the Hattori convention following <Ref k=\"dalcorso2024\" />.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#025",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "266",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"tangiku2022\" p=\"ch. 9\" /> is attached to a claim about the cognacy of SA and HK existential forms. Chapter 9 of Tangiku's work might discuss various aspects of Ainu grammar, not necessarily this specific cognate pair.",
+    "quote": "The existential opposition in examples (1) and (2) — singular <i lang=\"ain-Latn\">'an</i> versus plural <i lang=\"ain-Latn\">'okay</i> — is cognate with HK <i lang=\"ain-Latn\">an</i> versus <i lang=\"ain-Latn\">oka=an</i> <Ref k=\"tangiku2022\" p=\"ch. 9\" />.",
+    "suggestion": "Verify if Chapter 9 of Tangiku's work directly discusses the cognacy of these existential forms. If not, consider a more specific citation or a more general reference to the chapter.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#023",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "241",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"murasaki2025\" p=\"84–85\" /> is attached to a claim about the inverse values of <i lang=\"ain-Latn\">'an-/='an</i> in SA and HK. Pages 84-85 of Murasaki's textbook might contain general information about person marking or specific examples, not necessarily this direct comparison of inverse values.",
+    "quote": "In SA the morpheme <i lang=\"ain-Latn\">'an-/='an</i> functions as first-person plural in the speech of younger speakers, and as first-person singular in the elderly register, the inverse of its value in HK <Ref k=\"murasaki2025\" p=\"84–85\" />; <Ref k=\"sakaguchi2024\" />.",
+    "suggestion": "Verify if pages 84-85 of Murasaki's textbook directly support this claim about the inverse values. If not, consider a more specific citation or a more general reference to the chapter.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#021",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "215",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"murasaki2025\" p=\"11, 15\" /> is attached to the claim about the historical copula root and the negative prefix. Pages 11 and 15 of Murasaki's textbook might contain general information about negation or copula, not necessarily the specific historical etymology of <i lang=\"ain-Latn\">hannehka</i>.",
+    "quote": "the negative predicate, historically the copula root with the negative prefix <i lang=\"ain-Latn\">han-</i> prefixed <Ref k=\"murasaki2025\" p=\"11, 15\" />.",
+    "suggestion": "Verify if pages 11 and 15 of Murasaki's textbook directly support this etymological claim. If not, consider a more specific citation or a more general reference to the chapter.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#019",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "198",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the historical consonants are /-p -t -k -r/, but the examples provided in the table show /-p -k -k -p/ re-emerging. The consonant /-t/ is missing from this list of re-emerging consonants.",
+    "quote": "The SA citation forms <i lang=\"ain-Latn\">ceh teh sih kah</i> all surface with /-h/; the historical /-p -k -k -p/ re-emerge in the affiliative.",
+    "suggestion": "Correct the list of re-emerging historical consonants to include /-t/ if it is indeed present in the underlying forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#018",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "190",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows <i lang=\"ain-Latn\">kap-uhu</i> for SA affiliative and <i lang=\"ain-Latn\">kap-uhu</i> for HK affiliative. The text states that the SA surface /-h/ re-emerges as the historical consonant. This example shows /-p/ re-emerging in both SA and HK, and the suffix appears to be '-uhu' in both cases. This is consistent with the explanation, but the suffix form differs from the '-ihi' seen in other examples.",
+    "quote": "<i lang=\"ain-Latn\">kap-uhu</i>",
+    "suggestion": "No change needed, but note the variation in the affiliative suffix form.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows <i lang=\"ain-Latn\">kap-uhu</i> for SA affiliative and <i lang=\"ain-Latn\">kap-uhu</i> for HK affiliative. The text states that the SA surface /-h/ re-emerges as the historical consonant. This example shows /-p/ re-emerging in both SA and HK, and the suffix appears to be '-uhu' in both cases. This is consistent with the explanation, but the suffix form differs from the '-ihi' seen in other examples.",
+    "quote": "<i lang=\"ain-Latn\">kap-uhu</i>",
+    "suggestion": "No change needed, but note the variation in the affiliative suffix form.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#017",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "183",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows <i lang=\"ain-Latn\">sik-ihi</i> for SA affiliative and <i lang=\"ain-Latn\">sik-i</i> for HK affiliative. The text states that the SA surface /-h/ re-emerges as the historical consonant. This example shows /-k/ re-emerging in SA, but the HK suffix appears to be '-i' instead of '-ihi'. This might be a morphophonemic variation or a typo.",
+    "quote": "<i lang=\"ain-Latn\">sik-ihi</i>",
+    "suggestion": "Verify the HK affiliative suffix for 'eye'. It might be <i lang=\"ain-Latn\">sik-ihi</i> or <i lang=\"ain-Latn\">sik-i</i> depending on the specific morphophonemic rules.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows <i lang=\"ain-Latn\">sik-ihi</i> for SA affiliative and <i lang=\"ain-Latn\">sik-i</i> for HK affiliative. The text states that the SA surface /-h/ re-emerges as the historical consonant. This example shows /-k/ re-emerging in SA, but the HK suffix appears to be '-i' instead of '-ihi'. This might be a morphophonemic variation or a typo.",
+    "quote": "<i lang=\"ain-Latn\">sik-i</i>",
+    "suggestion": "Verify the HK affiliative suffix for 'eye'. It might be <i lang=\"ain-Latn\">sik-ihi</i> or <i lang=\"ain-Latn\">sik-i</i> depending on the specific morphophonemic rules.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#016",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "176",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows <i lang=\"ain-Latn\">tek-ihi</i> for SA affiliative and <i lang=\"ain-Latn\">tek-e</i> for HK affiliative. The text states that the SA surface /-h/ re-emerges as the historical consonant, and the HK affiliative suffix morphophonology is described elsewhere. This example shows /-k/ re-emerging in SA, but the HK suffix appears to be '-e' instead of '-ihi'. This might be a morphophonemic variation or a typo.",
+    "quote": "<i lang=\"ain-Latn\">tek-ihi</i>",
+    "suggestion": "Verify the HK affiliative suffix for 'hand' (eye). It might be <i lang=\"ain-Latn\">tek-ihi</i> or <i lang=\"ain-Latn\">tek-e</i> depending on the specific morphophonemic rules.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows <i lang=\"ain-Latn\">tek-ihi</i> for SA affiliative and <i lang=\"ain-Latn\">tek-e</i> for HK affiliative. The text states that the SA surface /-h/ re-emerges as the historical consonant, and the HK affiliative suffix morphophonology is described elsewhere. This example shows /-k/ re-emerging in SA, but the HK suffix appears to be '-e' instead of '-ihi'. This might be a morphophonemic variation or a typo.",
+    "quote": "<i lang=\"ain-Latn\">tek-e</i>",
+    "suggestion": "Verify the HK affiliative suffix for 'hand' (eye). It might be <i lang=\"ain-Latn\">tek-ihi</i> or <i lang=\"ain-Latn\">tek-e</i> depending on the specific morphophonemic rules.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#015",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows <i lang=\"ain-Latn\">cep-ihi</i> for SA affiliative and <i lang=\"ain-Latn\">cep-ihi</i> for HK affiliative. The text explains that the SA surface /-h/ re-emerges as the historical consonant. This example shows /-p/ re-emerging in both SA and HK, which is consistent, but the visual representation of the suffix differs slightly in other examples.",
+    "quote": "<i lang=\"ain-Latn\">cep-ihi</i>",
+    "suggestion": "No change needed, but note the consistency here.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table shows <i lang=\"ain-Latn\">cep-ihi</i> for SA affiliative and <i lang=\"ain-Latn\">cep-ihi</i> for HK affiliative. The text explains that the SA surface /-h/ re-emerges as the historical consonant. This example shows /-p/ re-emerging in both SA and HK, which is consistent, but the visual representation of the suffix differs slightly in other examples.",
+    "quote": "<i lang=\"ain-Latn\">cep-ihi</i>",
+    "suggestion": "No change needed, but note the consistency here.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#014",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "150",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"murasaki2025\" p=\"2\" /> is attached to a statement about the SA coda consonant replacement. Page 2 of Murasaki's textbook might contain general information about phonology or orthography, not necessarily the specific details of this coda replacement.",
+    "quote": "SA replaces all four with a single surface segment /-h/, which is the reflex of the historical closure when no vowel follows; the original coda emerges when a vowel-initial suffix is added <Ref k=\"murasaki2025\" p=\"2\" />; <Ref k=\"tangiku2022\" p=\"ch. 9\" />.",
+    "suggestion": "Verify if page 2 of Murasaki's textbook directly supports this claim about coda consonants. If not, consider a more specific citation or a more general reference to the chapter.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#013",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">'ikuu</i> for SA and <i lang=\"ain-Latn\">'iku</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">'ikuu</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">'ikuu</i> for SA and <i lang=\"ain-Latn\">'iku</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">'iku</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#012",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "134",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">miina</i> for SA and <i lang=\"ain-Latn\">mina</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">miina</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">miina</i> for SA and <i lang=\"ain-Latn\">mina</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">mina</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#011",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">kee</i> for SA and <i lang=\"ain-Latn\">ke</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">kee</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">kee</i> for SA and <i lang=\"ain-Latn\">ke</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">ke</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#010",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "124",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">poo</i> for SA and <i lang=\"ain-Latn\">po</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">poo</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">poo</i> for SA and <i lang=\"ain-Latn\">po</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">po</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#009",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "119",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">paa</i> for SA and <i lang=\"ain-Latn\">pa</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">paa</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses <i lang=\"ain-Latn\">paa</i> for SA and <i lang=\"ain-Latn\">pa</i> for HK. This is consistent with the text's explanation of vowel length, but it's worth noting the visual difference.",
+    "quote": "<i lang=\"ain-Latn\">pa</i>",
+    "suggestion": "No change needed, but be aware of this consistent pattern.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#008",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "105",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"murasaki2025\" p=\"5\" /> is placed after the statement that the table illustrates the pattern, but page 5 of Murasaki's textbook might contain the general discussion of the pattern rather than the specific pairs listed in the table.",
+    "quote": "A selection of cognate pairs from Murasaki's textbook illustrates the pattern <Ref k=\"murasaki2025\" p=\"5\" />:",
+    "suggestion": "Verify if page 5 contains the specific examples or the general discussion. If it's the general discussion, consider if a more specific citation for the table data is needed, or if this citation is sufficient.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#007",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "92",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'en=' as an HK form. It should be marked as an Ainu form with italics and the `lang` attribute.",
+    "quote": "'en= is the SA first-person singular object prefix (1SG.O), cognate with HK en=. The verb yuukara 'recite oral literature' is the SA cognate of HK yukar; the long initial vowel yuu- in SA corresponds to the short yu- of the HK form, consistent with the SA length–accent correspondence discussed in the preceding section.",
+    "suggestion": "Italicize 'en=': '<i lang=\"ain-Latn\">en=</i>'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#006",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "81",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'eh' as the singular form of 'come'. It should be marked as an Ainu form with italics and the `lang` attribute.",
+    "quote": "'ariki is the suppletive plural stem of 'come' (singular 'eh); =hci is the SA third-person plural subject suffix cliticized to the verb. HK uses the cognate suppletive plural stem arki, but has no suffix cognate to =hci in this position.",
+    "suggestion": "Italicize 'eh': '<i lang=\"ain-Latn\">'eh</i>'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#005",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'ka' as a focus particle and 'nee' as a copula. These should ideally be marked as Ainu forms using italics and the `lang` attribute for consistency.",
+    "quote": "SA analytic negation: the focus particle ka is followed by the negative predicate hannehka (< han- NEG + copula root), with the copula nee optionally omitted. Hokkaido Saru uses somo ne (NEG COP) instead, an entirely distinct form.",
+    "suggestion": "Italicize 'ka' and 'nee': '<i lang=\"ain-Latn\">ka</i>' and '<i lang=\"ain-Latn\">nee</i>'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#004",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "59",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'kaa' and the locative suffix '-ta'. It's not explicitly stated if 'kaa' is an Ainu word or a gloss. If it's an Ainu word, it should be italicized or marked as an Ainu form.",
+    "quote": "kaa is the position noun 'above (in contact)' in the elderly register, taking the locative suffix -ta.",
+    "suggestion": "Italicize 'kaa' if it is an Ainu word: '<i lang=\"ain-Latn\">kaa</i>'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#003",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "48",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'SA teeta' and 'Saru cognate locative is ta'. While 'teeta' is presented as SA, 'ta' is presented as Saru. It's unclear if 'ta' is the direct cognate of 'teeta' or if it's a different word with a similar meaning.",
+    "quote": "SA teeta 'here' carries the phonemic long vowel ee; the Saru cognate locative is ta (short).",
+    "suggestion": "Clarify the relationship between 'teeta' and 'ta' if they are not direct cognates, or ensure the orthography for 'ta' is consistent with other Saru forms if it is.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#002",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "22",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of coda consonants includes '-m', '-w', and '-y', which are typically considered non-obstruents and often behave differently from obstruents like '-h', '-n', and '-s'. This might be a simplification or an overgeneralization.",
+    "quote": "the six permissible coda consonants are <i lang=\"ain-Latn\">-h -m -n -s -w -y</i>.",
+    "suggestion": "Verify if '-m', '-w', and '-y' are indeed treated as coda consonants in the same way as '-h', '-n', and '-s' in this orthography, or if a distinction should be made.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#001",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "15",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"tangiku2022\" p=\"ch. 9\" /> is attached to a sentence that describes potential contrasts, but the page reference likely points to a section discussing those contrasts, not the specific contrasts themselves.",
+    "quote": "minor contrasts with the slightly more southerly Maoka variety and the northeastern Taraika variety are noted where they bear on the comparisons below <Ref k=\"tangiku2022\" p=\"ch. 9\" />.",
+    "suggestion": "Consider if the citation should be placed after the specific mention of contrasts, or if a more general reference to the chapter is appropriate here.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#046",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "92",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹consensus› is attached to a claim about diachronic correspondence in line 204, but the only support cited is <Xr ch=\"final-h-history-and-sakhalin-length-reflex\" />, which is an internal link, not a literature source. This inflates epistemic status without external citation.",
+    "quote": "‹consensus›",
+    "suggestion": "Use a weaker tag like ‹speculative› or add a supporting literature citation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#045",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "12",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of diacritics: 'Raichiishka' uses double 'i', while 'Laichiśka' uses 'ś'. This suggests two different romanization systems within the same term.",
+    "quote": "Raichiishka/Laichiśka",
+    "suggestion": "Standardize to one orthographic form (e.g., Raichiishka or Laichiśka) based on Hattori convention.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The name 'Taraika' is not marked with macrons or diacritics, while other forms like 'Raichiishka' are. Inconsistent orthographic treatment of Ainu dialect names.",
+    "quote": "Maoka variety and the northeastern Taraika variety",
+    "suggestion": "Check if 'Taraika' should be marked with macrons (e.g., Tāraika) per Hattori system.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#040",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "268-270",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says ''eh' is the singular 'come', but in the note for example (4) (line 81), it says ''ariki is the suppletive plural stem of 'come' (singular 'eh)'. However, the example (4) itself (line 75) shows ''ariki=hci' with no singular form. The text here says ''eh' is cognate with HK 'ek', but earlier in line 81, it says the singular is ''eh'. This is consistent. However, the text says 'in example (4)', but example (4) is the one with ''ariki=hci', which does not contain ''eh'. This is a minor inconsistency: the text refers to example (4) for the singular form, but the singular form does not appear in that example.",
+    "quote": "Similarly, <i lang=\"ain-Latn\">'eh</i> (singular 'come') and <i lang=\"ain-Latn\">'ariki</i> (plural 'come') in example (4) are cognate with HK <i lang=\"ain-Latn\">ek / arki</i>.",
+    "suggestion": "Either provide an example with the singular form or rephrase to say 'the singular form ''eh' (cognate with HK 'ek') appears in other contexts'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'the preceding section', but the preceding section is 'Phonological contrasts: vowel length and the final-h reflex' (line 97), which discusses the length-accent correspondence. This is correct, but the phrase 'noted in the preceding section' is a bit vague; it should be more specific, e.g., 'noted in §Phonological contrasts'.",
+    "quote": "The final long vowel in SA <i lang=\"ain-Latn\">'ariki</i> versus the short vowel in HK <i lang=\"ain-Latn\">arki</i> is consistent with the length-accent correspondence <Ref k=\"itabashi2001\" /> noted in the preceding section.",
+    "suggestion": "Replace 'the preceding section' with a specific section reference.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#036",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "198-200",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says the historical codas are /-p -k -k -p/, but the table shows for 'ceh' the historical coda is /-p/ (HK 'cep'), for 'teh' it is /-k/ (HK 'tek'), for 'sih' it is /-k/ (HK 'sik'), and for 'kah' it is /-p/ (HK 'kap'). The sequence /-p -k -k -p/ is correct, but the text says 'historical /-p -k -k -p/' which matches. However, the text earlier said SA replaces /-p -t -k -r/, but here only /-p/ and /-k/ appear. This is consistent with the earlier inconsistency. No new issue.",
+    "quote": "The SA citation forms <i lang=\"ain-Latn\">ceh teh sih kah</i> all surface with /-h/; the historical /-p -k -k -p/ re-emerge in the affiliative.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#035",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "146-152",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says SA replaces /-p -t -k -r/ with /-h/, but the table in lines 166-195 shows SA citation forms ending in /-h/ for 'ceh', 'teh', 'sih', 'kah', which correspond to HK /-p/, /-k/, /-k/, /-p/. However, the text says 'all four' are replaced, but the table only shows examples for /-p/ and /-k/, not /-t/ or /-r/. This is a minor inconsistency: the claim is broader than the evidence provided.",
+    "quote": "A second phonological divergence involves the coda consonants. HK retains the Proto-Ainu coda obstruents /-p -t -k -r/ directly in the citation form of nouns and verb stems. SA replaces all four with a single surface segment /-h/, which is the reflex of the historical closure when no vowel follows; the original coda emerges when a vowel-initial suffix is added <Ref k=\"murasaki2025\" p=\"2\" />; <Ref k=\"tangiku2022\" p=\"ch. 9\" />.",
+    "suggestion": "Either add examples for /-t/ and /-r/ or qualify the statement to say 'most coda obstruents' or provide a reference for the full set.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#034",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "100-104",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says SA has 'no accentual contrast', but earlier in line 19-20, it says 'Long vowels are written double (aa ee oo etc.); every vowel-initial syllable carries the glottal onset written ʼ'. The glottal onset is a prosodic feature, but it is not an accentual contrast. However, the claim 'no accentual contrast' might be contradicted by the existence of the glottal onset, which could be considered a prosodic feature. This is a minor inconsistency: the text should clarify that SA lacks pitch accent but has other prosodic features like glottal onset.",
+    "quote": "Where Saru and other HK varieties carry a lexically contrastive pitch accent on stems, West-Sakhalin has phonemic vowel quantity — long vowels (written double) versus short vowels — with no accentual contrast. The two systems correspond diachronically: what HK encodes as a high pitch on a short vowel, SA encodes as length on that vowel <Ref k=\"itabashi2001\" />; <Ref k=\"tangiku2022\" p=\"ch. 9\" />.",
+    "suggestion": "Add a clarification that SA lacks pitch accent but has phonemic vowel length and glottal onset as prosodic features.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#033",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "92",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says 'yuukara' is the SA cognate of HK 'yukar', but the morphemic segmentation in line 86 shows 'yuukara' as a single word. The gloss in line 87 shows 'yuukara' as 'recite', which is fine. However, the note says 'the long initial vowel yuu- in SA corresponds to the short yu- of the HK form', but the example does not show the HK form. This is not a mismatch, but the note is consistent. No issue.",
+    "quote": "note=\"'en= is the SA first-person singular object prefix (1SG.O), cognate with HK en=. The verb yuukara 'recite oral literature' is the SA cognate of HK yukar; the long initial vowel yuu- in SA corresponds to the short yu- of the HK form, consistent with the SA length–accent correspondence discussed in the preceding section.\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#032",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "81",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says the singular of 'come' is ''eh', but the morphemic segmentation in line 75 shows ''ariki=hci' with no singular form. The note mentions the singular ''eh' but it does not appear in the example. This is not a mismatch per se, but the note introduces a form not present in the example, which could confuse readers. However, the note is explanatory, so it's acceptable. No issue.",
+    "quote": "note=\"'ariki is the suppletive plural stem of 'come' (singular 'eh); =hci is the SA third-person plural subject suffix cliticized to the verb. HK uses the cognate suppletive plural stem arki, but has no suffix cognate to =hci in this position.\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#031",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "70",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says 'hannehka' is the negative predicate, but the gloss in line 65 shows 'hannehka' as 'NEG' and 'nee' as 'COP'. The note says the copula 'nee' is optionally omitted, but the example includes 'nee' (line 64: 'hannehka nee'). The note says 'hannehka' is from 'han- NEG + copula root', but the gloss treats 'hannehka' as a single morpheme glossed 'NEG', not as 'NEG+COP'. This is a gloss mismatch: the morphemic segmentation should reflect the internal structure if the note describes it, or the note should be simplified.",
+    "quote": "note=\"SA analytic negation: the focus particle ka is followed by the negative predicate hannehka (< han- NEG + copula root), with the copula nee optionally omitted. Hokkaido Saru uses somo ne (NEG COP) instead, an entirely distinct form.\"",
+    "suggestion": "Either segment 'hannehka' as 'han-nehka' with gloss 'NEG-COP' and adjust the gloss, or revise the note to not claim it is a combination of NEG + copula root.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#030",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "59",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says 'kaa' is the position noun 'above (in contact)', but the morphemic segmentation in line 53 shows 'kaa-ta' glossed as 'above-LOC'. The note describes 'kaa' as a position noun, but the gloss treats it as a locative noun. This is consistent, but the note says 'taking the locative suffix -ta', which is correct. However, the note says 'in the elderly register', but the example is from Fujiyama Haru, who is elderly, so this is fine. No mismatch found here; re-evaluating: the note says 'kaa' is 'above (in contact)', but the gloss 'above-LOC' implies 'kaa' means 'above' and '-ta' is locative. This is consistent. No issue.",
+    "quote": "note=\"'okay is the suppletive plural existential (singular 'an). kaa is the position noun 'above (in contact)' in the elderly register, taking the locative suffix -ta. SA enforces strict grammatical number agreement; the singular 'an would be ungrammatical with a plural subject here.\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "sakhalin-contrast-text~p1#027",
+  "chapter": "sakhalin-contrast-text",
+  "lines": "7-15",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation <Ref k=\"murasaki2025\" /> is used for the textbook description, but the reference list key 'murasaki2025' is not defined in the chapter; the chapter uses 'murasaki2025' for multiple citations (lines 8, 38, 45, 56, 67, 78, 89, 105, 150, 215, 241, 263) without a full bibliographic entry. This is a citation hygiene issue as the reader cannot verify the source.",
+    "quote": "The sentences glossed in this chapter come from <Ref k=\"murasaki2025\" />, Murasaki Kyōko's revised introductory textbook of West-Sakhalin (Enciw) Ainu.",
+    "suggestion": "Ensure the reference list includes 'murasaki2025' with full bibliographic details, or add a note that the reference is defined elsewhere in the grammar.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

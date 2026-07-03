@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "98, 155, 184",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "line 98: [koˈmaɾe]; line 155: k=ómare; line 184: [kómaɾe]",
+  "issue": "The pitch accent of 'k=omare' is given as second-syllable stress in the example note (phonetic [koˈmaɾe]) but as first-syllable accent in the derivation (k=ómare) and Table 2 (phonetic [kómaɾe]). This contradicts the rule ordering which places accent on the first syllable after deletion.",
+  "suggestion": "Unify the accent notation: change line 98 to '[kómaɾe]' and write 'k=ómare' in the note, or revise the derivation and table if the note's accent is correct.",
+  "confidence": 0.9,
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "88-91",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Learners of Saru and Chitose frequently overgeneralize the deletion … <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.",
+  "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim supported only by a Discord message. The tag overstates the evidence level (a single community observation, not a corpus study).",
+  "suggestion": "Replace ‹corpus-confirmed› with ‹speculative› or a more precise tag such as ‹community-report›.",
+  "confidence": 0.85,
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "123-124",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "neither *ku=ykra nor *k=ikra arises <Ref k=\"nakagawa2024\" p=\"53\" />; <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.",
+  "issue": "The same epistemic-tag inflation: the claim about ungrammatical forms is partly referenced to a Discord message and tagged ‹corpus-confirmed›. The Discord source does not constitute a corpus.",
+  "suggestion": "Downgrade to ‹speculative› or adjust the tag to match the source type.",
+  "confidence": 0.85,
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "129",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "both show the [j] glide <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.",
+  "issue": "Same tag inflation: a Discord message is the sole support for the claim, yet it is marked ‹corpus-confirmed›.",
+  "suggestion": "Change the tag to ‹speculative› or ‹community-report›.",
+  "confidence": 0.85,
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "295-296",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "by the same /u/-deletion that yields ciep → cep",
+  "issue": "The process reducing 'ciep' to 'cep' involves /i/ deletion from ci=, not /u/ deletion. The text incorrectly attributes it to /u/-deletion, contradicting the chapter's own rule that ci= deletes /i/ (lines 26-27).",
+  "suggestion": "Change 'the same /u/-deletion' to 'the same vowel-deletion process' or 'the deletion of the clitic vowel (for ci= it is /i/ deletion, for ku= it is /u/ deletion).",
+  "confidence": 0.95,
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "93-94, 132-133",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "Ex m=\"ku=omare\" ain=\"k=omare\" … Ex m=\"ku=ipe\" ain=\"ku=ype\"",
+  "issue": "The Ex component uses an undocumented 'ain' attribute to show a surface form. This attribute is not listed in the markup conventions provided for this chapter and appears to be a pipeline leak or a non-standard extension.",
+  "suggestion": "Replace 'ain' with a standard attribute such as 'surface' or 'spoken' if supported, or integrate the surface form into the note attribute.",
+  "confidence": 0.7,
+  "chapter": "personal-affix-sandhi-connected-speech-reduction",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

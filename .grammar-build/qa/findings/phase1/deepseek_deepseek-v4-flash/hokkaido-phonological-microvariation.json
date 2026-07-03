@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "8-9",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The thirteen Hokkaido Ainu localities surveyed by Hattori Chiri 1960 show fine-grained phonological differences...",
+  "issue": "The overview states 13 localities, but the pitch-accent table (lines 53-63) lists 15 distinct localities (7 standard, 2 irregular, 6 unaccented). This is a numerical contradiction.",
+  "suggestion": "Either correct the overview to say 'fifteen' or 'more than thirteen', or adjust the table to reflect only 13 (possibly by merging or explaining that some are not from Hattori's survey).",
+  "confidence": 1,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "147-150",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "In eastern standard-accent dialects — Obihiro, Kushiro, Bihoro, Asahikawa, and Nayoro — a word-initial h is absent when the accent falls on σ2",
+  "issue": "Kushiro and Bihoro are classified as unaccented in the accent table (lines 62-64), not as standard-accent. Including them among 'standard-accent dialects' contradicts the earlier classification. Moreover, the elision rule is described as conditioned by accent, which cannot apply in unaccented dialects.",
+  "suggestion": "Reconcile the classifications: either reclassify Kushiro and Bihoro as having some accentual properties that condition the elision, or remove them from the list of standard-accent dialects and describe their elision pattern separately.",
+  "confidence": 1,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "250-256",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "kp → pp ... base: sirpopke, assimilated: sirpokke, gloss: warm",
+  "issue": "The base form 'sirpopke' contains the cluster 'pk', not 'kp'. The assimilated form 'sirpokke' has 'kk', not 'pp'. This contradicts the column headers (cluster kp, result pp) and the other row for kp that is correctly exemplified with 'hayokpe'.",
+  "suggestion": "Correct the row: change cluster to 'pk', result to 'kk', and ensure the base and assimilated forms match. Alternatively, if the intended form is different, adjust accordingly.",
+  "confidence": 1,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "312-314",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The Kuril attestations — Krasheninnikov 1738 and Golovnin 1811 — record car for 'mouth'",
+  "issue": "No citation is provided for this claim. The preceding citation (Kirikae 1994) covers place-name evidence but may or may not include the Kuril data. The reader cannot verify the source.",
+  "suggestion": "Add a citation, e.g., from Kirikae 1994 or another source that documents these historical attestations.",
+  "confidence": 0.8,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "115-117",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "neither has any synchronic account of what structural property of consecutive open syllables triggers the shift",
+  "issue": "This clause lacks a main verb; it is ungrammatical. The intended construction is likely 'nor has any synchronic account been provided' or 'neither has a synchronic account been settled'.",
+  "suggestion": "Rephrase to: 'nor has any synchronic account been provided of what structural property...' or 'neither has any synchronic account been settled of what structural property...'",
+  "confidence": 0.9,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "603-606",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "elided before accented σ2 — Obihiro, Kushiro, Bihoro, Asahikawa, Nayoro",
+  "issue": "This isogloss table entry repeats the same problem as lines 147-150: it lists Kushiro and Bihoro as undergoing elision conditioned by accent, but they are classified as unaccented in the same chapter (see accent table).",
+  "suggestion": "Align with the accent classification: either revise the isogloss definition to note that for unaccented dialects the elision occurs without an accent condition, or correct the classification of Kushiro and Bihoro.",
+  "confidence": 1,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

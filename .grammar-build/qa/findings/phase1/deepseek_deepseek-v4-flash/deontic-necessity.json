@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "8-20",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The auxiliary <A w=\"kuni\" gl=\"should, be supposed to\" /> — the same element that heads purpose-complement clauses — expresses normative expectation or scheduled necessity; combined with the copula <i lang=\"ain-Latn\">ne</i> it forms the predicate <i lang=\"ain-Latn\">kuni ne</i>, the principal deontic proposition form.",
+  "issue": "The overview says 'kuni' alone expresses normative expectation, but the table (lines 40-43) and section §kuni-ne (lines 124-191) consistently treat 'kuni ne' as the deontic form, with 'kuni' alone being the complementizer. The overview's phrasing is ambiguous and contradicts the later detailed treatment.",
+  "suggestion": "Rephrase to: 'The element <A w=\"kuni\" /> — the same that heads purpose-complement clauses — combines with the copula <i lang=\"ain-Latn\">ne</i> to form the predicate <i lang=\"ain-Latn\">kuni ne</i>, which expresses normative expectation or scheduled necessity.'",
+  "confidence": 0.9,
+  "chapter": "deontic-necessity",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "103-111",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"paye=an easirki p mak e=iki hawe an\"\ng=\"go.PL=4.S must NMLZ what 2SG.A=do voice-POSS exist\"\ntr=\"I have to go — what are you doing?\"",
+  "issue": "The gloss for 'easirki' is 'must', but the free translation uses 'have to', which is a weaker obligation. The chapter consistently defines 'easirki' as 'must' (strong obligation), so 'have to' is a mismatch in strength.",
+  "suggestion": "Change the translation to 'I must go — what are you doing?' or adjust the gloss to 'must, have to' to match the translation.",
+  "confidence": 0.8,
+  "chapter": "deontic-necessity",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "148",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-09) ‹corpus-confirmed›",
+  "issue": "The epistemic tag ‹corpus-confirmed› is used for a claim supported only by a Discord message, not a corpus. Discord is a community source, not a corpus, so the tag is inflated.",
+  "suggestion": "Change to ‹community-source› or remove the tag, as the source is already cited.",
+  "confidence": 0.9,
+  "chapter": "deontic-necessity",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "189",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-25) ‹consensus›",
+  "issue": "The epistemic tag ‹consensus› is used for a claim supported only by a single Discord message. Consensus requires broader agreement, not a single community source.",
+  "suggestion": "Change to ‹community-source› or remove the tag.",
+  "confidence": 0.9,
+  "chapter": "deontic-necessity",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "286-302",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The prospective auxiliary <i lang=\"ain-Latn\">kus(u) ne</i> — analysed in <Xr ch=\"epistemic-irrealis-modality\" /> as the conjunction <i lang=\"ain-Latn\">kusu</i> plus the copula <i lang=\"ain-Latn\">ne</i> expressing intention or scheduled future <Ref k=\"nakagawa2024\" p=\"435\" />; <Ref k=\"sato2008\" p=\"85–86\" /> — acquires a directive reading when the subject is second person and the final particle <i lang=\"ain-Latn\">na</i> closes the clause.",
+  "issue": "The section title says 'kus(u) ne na as near-command', but the prose describes 'kus(u) ne' as the prospective auxiliary, with 'na' as a final particle. The table (lines 70-74) lists 'kus(u) ne na' as the form for near-command. The prose and table are inconsistent: the table treats 'kus(u) ne na' as a unit, while the prose treats 'kus(u) ne' as the auxiliary and 'na' as a separate particle.",
+  "suggestion": "Clarify in the prose that the near-command construction is 'kus(u) ne na' as a whole, or adjust the table to show 'kus(u) ne' + 'na' as separate components.",
+  "confidence": 0.7,
+  "chapter": "deontic-necessity",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306-312",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"kotan wente kus arki kus ne aan ru-we ne wa\"\ng=\"village devastate PURP come.PL PURP COP PRF.MIR track-POSS COP CONJ\"\ntr=\"— it turned out that they had been coming to devastate the village, and …\"",
+  "issue": "The gloss has two 'PURP' tags for 'kus', but the note says 'kus ne here is the intentional/prospective'. The gloss should reflect that 'kus' is the purpose/intention marker, not just 'PURP' twice. Also, 'aan' is glossed as 'PRF.MIR' but the note says 'mirative aan', which is inconsistent with the gloss abbreviation.",
+  "suggestion": "Change the gloss to: 'village devastate PURP come.PL PURP COP PRF.MIR track-POSS COP CONJ' — but ensure 'aan' is glossed consistently as 'PRF.MIR' or 'MIR' as per the note. The double 'PURP' is acceptable if both instances are purpose markers, but the note should clarify.",
+  "confidence": 0.6,
+  "chapter": "deontic-necessity",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "324-328",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "The construction <i lang=\"ain-Latn\">iteki … kus ne na</i> extends the prohibitive adverb <i lang=\"ain-Latn\">iteki</i> into the mitigated-prohibition frame, producing 'be careful not to V'; Nakagawa provides an attested example and Ijäs's rendering <i lang=\"ain-Latn\">iteki e=eyruska kus ne na hani!</i> matches it",
+  "issue": "The example 'iteki e=eyruska kus ne na hani!' includes 'hani', which is not mentioned in the description. The construction is described as 'iteki … kus ne na', but the example adds 'hani', which may be a separate particle. This inconsistency could confuse readers.",
+  "suggestion": "Either include 'hani' in the description of the construction or note that 'hani' is an optional emphatic particle.",
+  "confidence": 0.5,
+  "chapter": "deontic-necessity",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "8-9",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Hokkaido Ainu expresses necessity and obligation periphrastically. There is no bound deontic affix; instead, three distinct constructions carry the semantic load.",
+  "issue": "The sentence says 'three distinct constructions', but the chapter describes four main constructions: easirki, kuni ne, yak pirka idioms (four sub-forms), and kus(u) ne na. The number 'three' is inconsistent with the content.",
+  "suggestion": "Change 'three' to 'four' or list the constructions explicitly.",
+  "confidence": 0.8,
+  "chapter": "deontic-necessity",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

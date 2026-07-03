@@ -1,0 +1,528 @@
+[
+ {
+  "id": "gendered-register-speech~p1#009",
+  "chapter": "gendered-register-speech",
+  "lines": "145",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation includes 'asserted' and 'consistent with Endō's account' before the community source attribution. The 'corpus-suggested' grade is applied to a claim that relies on a community source and an assertion, which might not be strong enough for that grade.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024-12-26; asserted; consistent with Endō's account of gendered oral-literature performance <Ref k=\"endo2022\" />) ‹corpus-suggested›.",
+    "suggestion": "Review the grading of 'corpus-suggested' in relation to the supporting evidence. Consider if 'asserted' should be part of the citation or prose.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim supported only by a Discord message and a general reference to Endō's work, not by corpus data. The tag overstates the evidence.",
+    "quote": "consistent with Endō's account of gendered oral-literature performance ... ) ‹corpus-suggested›",
+    "suggestion": "Either downgrade to ‹speculative›, or cite explicitly what corpus data supports the claim.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim supported only by a Discord attribution (nukopoli, aynu-corpora Discord, 2024-12-26) and a secondary source (Endō), which does not constitute corpus-level evidence. This inflates the epistemic strength.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Change ‹corpus-suggested› to ‹community-asserted› or ‹contested› to better reflect the source type.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#014",
+  "chapter": "gendered-register-speech",
+  "lines": "238",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'is not held in the project repository and was not read' is meta-commentary about the research process.",
+    "quote": "the key inventory of age- and sex-conditioned non-everyday vocabulary — is not held in the project repository and was not read;",
+    "suggestion": "Rephrase to 'Hattori 1957 on the elders' special register... is not available or was not consulted'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'were not read for this chapter' is meta-commentary about the research process.",
+    "quote": "are held but were not read for this chapter.",
+    "suggestion": "Rephrase to 'are held but were not consulted for this chapter' or similar.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The statements 'was not read' and 'were not read for this chapter' are pipeline register leaks, revealing internal workflow rather than serving the reader.",
+    "quote": "is not held in the project repository and was not read; Fukuda/Tamura 1961 <Ref k=\"fukuda1961\" /> on Saru SFPs and Kindaichi <Ref k=\"kindaichi1935\" /> on elegant language are held but were not read for this chapter",
+    "suggestion": "Rephrase to 'Hattori 1957 is not available in the project repository; Fukuda/Tamura 1961 and Kindaichi 1935, while available, were not consulted in this chapter.'",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#006",
+  "chapter": "gendered-register-speech",
+  "lines": "98",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'sources read for this chapter' is meta-commentary about the research process, not relevant to the reader.",
+    "quote": "its presence in other Hokkaido regions is not established from the sources read for this chapter ‹speculative›.",
+    "suggestion": "Rephrase to 'sources do not establish its presence in other Hokkaido regions'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Multiple instances of wording that addresses the book's production process (what was read, what was in the repository) rather than the reader, constituting pipeline register leaks.",
+    "quote": "Line 99: 'from the sources read for this chapter' / Line 175: 'were not read for this chapter' / Line 239: 'not held in the project repository and was not read' / Line 240: 'are held but were not read for this chapter'",
+    "suggestion": "Rephrase to state the limitation in terms of the evidence base available, not the chapter's reading process. E.g., 'The genre is not attested in other Hokkaido regions in the available documentation.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#021",
+  "chapter": "gendered-register-speech",
+  "lines": "114",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'menoko-yukar' is segmented with a hyphen, but the gloss 'woman-epic' does not reflect the hyphenation or clarify whether 'menoko' and 'yukar' are separate morphemes. Given that 'yukar' is a known term, the gloss should reflect the compositionality.",
+    "quote": "menoko-yukar anak tup rep pakno ku=eraman",
+    "suggestion": "Revise gloss to 'woman-epic' → 'woman-heroic.epic' or 'men-woman epic' to better align with morpheme segmentation, or adjust segmentation if 'menoko-yukar' is a single lexical unit.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#017",
+  "chapter": "gendered-register-speech",
+  "lines": "27-29, 93-95",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table states that yukar (heroic epic) has no refrain (sakehe), only an opening eyororpe, but the prose claims that the standard yukar has a sakehe as part of its verse architecture, contradicting the table.",
+    "quote": "Lines 27-29: '<td>none (opening <i>eyororpe</i> only)</td>' / Lines 93-95: 'The menoko yukar retains the verse architecture of the standard yukar — notably the sakehe'",
+    "suggestion": "Reconcile the table and prose: either correct the table to indicate that yukar does have a sakehe (possibly a distinct type), or adjust the prose to clarify that the sakehe is not present in standard yukar but is a feature of women's verse.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#023",
+  "chapter": "gendered-register-speech",
+  "lines": "20",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table header uses 'traditional narrator', but the body uses 'men', 'women', 'adult men only', etc. The header could be more precise as 'traditional narrator sex' to match content.",
+    "quote": "traditional narrator",
+    "suggestion": "Change 'traditional narrator' to 'traditional narrator sex' in the table header for clarity and consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#019",
+  "chapter": "gendered-register-speech",
+  "lines": "145",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The word 'asserted' is editorial meta-commentary within the citation block, describing the source's strength rather than presenting factual content. This is a pipeline register leak.",
+    "quote": "asserted; consistent with Endō's account",
+    "suggestion": "Remove 'asserted;' or integrate as 'as asserted by nukopoli (aynucorpora Discord 2024-12-26), consistent with Endō (2022).'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#015",
+  "chapter": "gendered-register-speech",
+  "lines": "243",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'cannot be quantified from it directly' is meta-commentary about the research process.",
+    "quote": "so conversational distribution of any potential gendered particle cannot be quantified from it directly.",
+    "suggestion": "Rephrase to 'so conversational distribution of any potential gendered particle cannot be directly quantified'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'remains beyond what the present evidence supports' is meta-commentary about the research process.",
+    "quote": "remains beyond what the present evidence supports.",
+    "suggestion": "Rephrase to 'is not supported by the present evidence'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#013",
+  "chapter": "gendered-register-speech",
+  "lines": "230",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim 'consistent with the ethnographic picture' is not directly supported by a citation. The only citation in this paragraph is for the community discussion.",
+    "quote": "The ritual speech-act differentiation (<i lang=\"ain-Latn\">hinna</i>/<i lang=\"ain-Latn\">onkami</i>) is attested in community discussion consistent with the ethnographic picture but would benefit from independent primary documentation.",
+    "suggestion": "Either remove the unsupported claim or provide a citation for the 'ethnographic picture'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#011",
+  "chapter": "gendered-register-speech",
+  "lines": "211",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'caranke' is 'formal dispute-resolution oratory'. While descriptive, it might be more concise.",
+    "quote": "(<A w=\"caranke\" gl=\"formal dispute-resolution oratory\" />)",
+    "suggestion": "Consider a shorter, more direct gloss if appropriate, or ensure this level of detail is consistent throughout.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#010",
+  "chapter": "gendered-register-speech",
+  "lines": "178",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical phrase is followed by a comma and then a descriptive clause. This structure is slightly awkward and could be improved.",
+    "quote": "(<em>nenchōshasō tokushugo</em>), the primary source on age- and register-conditioned lexical repertoires.",
+    "suggestion": "Consider rephrasing to '...special language of the older generations' (<em>nenchōshasō tokushugo</em>), which is the primary source on...', or similar.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#008",
+  "chapter": "gendered-register-speech",
+  "lines": "117",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note contains a semicolon that separates two distinct pieces of information. The second part, 'tup and rep give an approximate count', could be a separate sentence or clause.",
+    "quote": "Reconstructed morphemic segmentation; the original surface form is menokoyukar. tup and rep give an approximate count ('two or three'); pakno ≈ 'as many as, or so'.",
+    "suggestion": "Consider splitting the note into two sentences or rephrasing for better flow.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#007",
+  "chapter": "gendered-register-speech",
+  "lines": "106",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This appears to be a citation or reference to a source, but it's not formatted as a standard citation and includes what looks like a file path and line numbers. It's unclear if this is intended to be a direct quote or a reference.",
+    "quote": "AA研アイヌ語資料 「menokoyukar 神謡6（節なし）」, 沙流, aa-irc/019, ll. 0, 66",
+    "suggestion": "Format this as a standard citation or integrate it into the prose more smoothly if it's a reference.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#004",
+  "chapter": "gendered-register-speech",
+  "lines": "55",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses '—' for the 'refrain' column for 'kamuy nomi itak' and 'inonno itak'. This is a dash, but it's not clear if it's intended to be a specific character or just a placeholder.",
+    "quote": "—",
+    "suggestion": "Clarify the intended character for '—' in the table, or use a more standard representation like 'none' or 'N/A'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#003",
+  "chapter": "gendered-register-speech",
+  "lines": "42",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses 'women (and men)' for the traditional narrator of 'kamuy yukar', but in the 'uwepeker' row (line 48), it uses 'women (and men)'. The parentheses are inconsistent.",
+    "quote": "women (and men)",
+    "suggestion": "Standardize the use of parentheses for 'and men' in the 'traditional narrator' column.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#002",
+  "chapter": "gendered-register-speech",
+  "lines": "31",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'irupaye' is 'heroic-content retold as prose', but the note in the table (line 31) says 'heroic-content retold as prose'. This seems to be a repetition rather than a mismatch, but the gloss itself is quite long and might be better as a phrase.",
+    "quote": "women may tell <A w=\"irupaye\" gl=\"heroic-content retold as prose\" /> instead",
+    "suggestion": "Consider if 'heroic-content retold as prose' is the best gloss for 'irupaye' or if it should be a phrase in the text.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#001",
+  "chapter": "gendered-register-speech",
+  "lines": "10,11",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Endō's synthesis is placed at the end of the sentence, but it only supports the second half of the sentence. The first half, about Satō's table, is only supported by the citation for Satō.",
+    "quote": "Satō's table for Chitose specifies narrator sex as a genre-diagnostic parameter alongside melody, <A w=\"sakehe\" gl=\"refrain\" />, and rhythm-tapping <Ref k=\"sato2008\" p=\"259\" />; Endō's synthesis confirms the same allocation across the Hidaka–Iburi region and notes that the norm applies to both the content and the formal-poetic apparatus of each genre <Ref k=\"endo2022\" />.",
+    "suggestion": "Move the <Ref k=\"sato2008\" p=\"259\" /> citation to follow 'rhythm-tapping' and keep the <Ref k=\"endo2022\" /> citation at the end of the sentence.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#024",
+  "chapter": "gendered-register-speech",
+  "lines": "99",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹speculative› is attached to a methodological statement about source availability rather than the claim it modifies ('its presence in other Hokkaido regions is not established'), weakening its impact.",
+    "quote": "sources read for this chapter ‹speculative›",
+    "suggestion": "Move ‹speculative› to directly follow the claim about presence in other regions, not the methodological clause.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#022",
+  "chapter": "gendered-register-speech",
+  "lines": "174-183",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrasing 'were not read for this chapter' is a pipeline register leak, exposing the editorial process rather than presenting a neutral scholarly statement.",
+    "quote": "Three primary sources that might bear on this question were not read for this chapter",
+    "suggestion": "Rephrase to 'Three primary sources that might bear on this question are not included in the current analysis' or similar neutral wording.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#020",
+  "chapter": "gendered-register-speech",
+  "lines": "93",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The compound word 'menokoyukar' is written without a hyphen in the <A> tag, but the hyphenated form 'menoko-yukar' is used in the example (line 114) and in the section title. This creates inconsistency in orthographic representation.",
+    "quote": "menokoyukar",
+    "suggestion": "Change 'menokoyukar' to 'menoko-yukar' in the <A w=\"menokoyukar\" gl=\"women's heroic verse\" /> tag to match the hyphenated form used elsewhere.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#018",
+  "chapter": "gendered-register-speech",
+  "lines": "195",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The section heading promises age-conditioned registers, but the content only discusses honorific (status-conditioned) registers with no age-conditioned features. The section does not deliver on its heading.",
+    "quote": "<S t=\"Honorific and age-conditioned registers\">",
+    "suggestion": "Either revise the heading to 'Honorific (status-conditioned) registers' or add content about age-conditioned registers (e.g., the Hattori 1957 material).",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#016",
+  "chapter": "gendered-register-speech",
+  "lines": "251",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that it is 'possible but undocumented' that other sex-specific formulae are shifting, and then cites <Ref k=\"bugaeva2022\" /> with a 'speculative' grade. This implies that <Ref k=\"bugaeva2022\" /> might provide some evidence for this shift, contradicting the 'undocumented' claim.",
+    "quote": "it is possible but undocumented that other sex-specific formulae are similarly shifting <Ref k=\"bugaeva2022\" /> ‹speculative›.",
+    "suggestion": "Clarify whether <Ref k=\"bugaeva2022\" /> provides any evidence for this shift, or remove the 'undocumented' claim if the source does offer some support.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#012",
+  "chapter": "gendered-register-speech",
+  "lines": "214",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the elegant register is not sex-indexed and that narrators of either sex use the same elevated morphology. However, earlier in the chapter (lines 210-213), it links Kindaichi's genre-density ranking of elegant language features to narrator sex allocation, suggesting a correlation or overlap.",
+    "quote": "The elegant register (<i lang=\"ain-Latn\">atomte itak</i>) and its grammatical hallmarks — applicative case-marking by prefix rather than particle, number-agreement override, and the distinct poetic lexicon — are described in <Xr ch=\"poetic-archaic-elevated-register\" />. The register is not itself sex-indexed: a narrator of either sex performing a genre that uses <i lang=\"ain-Latn\">atomte itak</i> uses the same elevated morphology ‹consensus›.",
+    "suggestion": "Clarify the relationship between the elegant register itself and the genres that employ it, ensuring the distinction between the register's inherent sex-indexing (or lack thereof) and its typical usage in sex-allocated genres is clear.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "gendered-register-speech~p1#005",
+  "chapter": "gendered-register-speech",
+  "lines": "76",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table (lines 27-29) states that 'yukar' (heroic epic) is for men, but the note says 'women may tell irupaye instead'. This implies that 'yukar' is not exclusively for men. The text also states that 'kamuy yukar' (divine epic) is for women (and men) (line 42). This contradicts the claim that 'yukar' is exclusively for men.",
+    "quote": "the two genres allocated exclusively to men are heroic verse (<i lang=\"ain-Latn\">yukar</i>) and prayer (<i lang=\"ain-Latn\">kamuy nomi</i>).",
+    "suggestion": "Clarify the exclusivity of 'yukar' for men, or adjust the text to reflect the nuances presented in the table.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

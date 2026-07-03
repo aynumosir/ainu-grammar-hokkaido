@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "225",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"REFL-REFL-stretch-CAUS=4.S\"",
+  "issue": "Both yay- and si- are glossed identically as REFL despite the chapter's central argument that they are distinct prefixes with different semantics (direct vs indirect reflexive). The dictionary entries in the chapter give them different glosses: yay- as 'reflexive (direct)' and si- as 'reflexive; one's own'. The interlinear gloss conflates this distinction.",
+  "suggestion": "Use distinct gloss abbreviations such as REFL.DIR for yay- and REFL.INDIR for si- to match the dictionary glosses and the analytical contrast.",
+  "confidence": 0.7,
+  "chapter": "reflexive-possessive-si",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "84",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "the Handbook adopt as the current working account",
+  "issue": "Subject-verb disagreement: 'the Handbook' is a singular entity (book title) but takes the plural verb 'adopt'. Should be 'adopts' if referring to the book as a single work, or rephrase to 'the Handbook authors adopt'.",
+  "suggestion": "Change to 'the Handbook adopts' or 'the Handbook authors adopt'.",
+  "confidence": 0.9,
+  "chapter": "reflexive-possessive-si",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "176",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"satoni2022\" p=\"§3.3, §5\" />",
+  "issue": "The citation key 'satoni2022' appears only once in the chapter and is unattested elsewhere. The context attributes the concept to 'Satō's markedness calculus' (singular author), suggesting the key may be a typo for 'sato2022' or a co-authored work that is not properly introduced.",
+  "suggestion": "Verify the correct key with the bibliography; likely should be 'sato2022' if single-authored, or ensure the co-author is indicated if 'satoni2022' is correct.",
+  "confidence": 0.6,
+  "chapter": "reflexive-possessive-si",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

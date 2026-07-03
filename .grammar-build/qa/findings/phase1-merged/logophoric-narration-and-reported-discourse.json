@@ -1,0 +1,866 @@
+[
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#003",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "110-111",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ye' is marked with italics and a language tag, but the gloss '+2' is not italicized.",
+    "quote": "<i lang=\"ain-Latn\">ye</i>",
+    "suggestion": "Ensure consistent formatting for glosses associated with Ainu words.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The notation '(+2)' is used only for <i lang=\"ain-Latn\">ye</i> and <i lang=\"ain-Latn\">ramu</i>, but not consistently applied to other transitive verbs in the same table. This creates formatting drift.",
+    "quote": "transitive (+2)",
+    "suggestion": "Apply '(+2)' consistently to all transitive verbs in the table or remove it entirely if not needed for others.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#034",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "241",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'factbase' is an internal production term that does not belong in the published grammar. It sounds like the authors' internal database of facts, not a term appropriate for the reader.",
+    "quote": "The factbase is candid about what the available evidence does not settle.",
+    "suggestion": "Replace with 'The present analysis' or 'The data' or 'This chapter'.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'factbase' is a pipeline register leak, referring to internal data structures rather than the reader's understanding.",
+    "quote": "The factbase is candid about what the available evidence does not settle.",
+    "suggestion": "Replace 'factbase' with 'available evidence' or 'corpus'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#040",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "364",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This contradicts the earlier description of <i lang=\"ain-Latn\">ye</i> as transitive (+2), which implies it requires an object. If <i lang=\"ain-Latn\">p</i> is not the object, then the valency of <i lang=\"ain-Latn\">ye</i> is not satisfied, creating a structural contradiction.",
+    "quote": "the nominalizer <i lang=\"ain-Latn\">p</i> is zero-valent — it is not the object of <i lang=\"ain-Latn\">ye</i>",
+    "suggestion": "Clarify how the valency of <i lang=\"ain-Latn\">ye</i> is satisfied if <i lang=\"ain-Latn\">p</i> is not its object, possibly by specifying an implicit or null object.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#038",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "164",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists <i lang=\"ain-Latn\">ye</i> as transitive, but the text describes it as following <i lang=\"ain-Latn\">sekor</i> in a lexicalized frame. This contradicts the earlier claim that <i lang=\"ain-Latn\">sekor</i> co-occurs only with intransitive verbs, except for the lexicalized exception. The table should reflect this nuance.",
+    "quote": "intransitive or lexicalized <i lang=\"ain-Latn\">ye</i>",
+    "suggestion": "Revise the table cell for <i lang=\"ain-Latn\">ye</i> to read 'transitive (lexicalized exception)' to match the prose.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#032",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "199-200",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The verb 'arpa' is intransitive (go), so the subject agreement prefix should be glossed as '1SG.S' (subject), not '1SG.A' (agent). The same example uses '1SG.S' for the reporting verb, creating an inconsistency within the same interlinear.",
+    "quote": "m=\"kani k=arpa sekor ku=haw-e-an\" g=\"1SG 1SG.A=go.SG QUOT 1SG.S=voice-POSS-exist\"",
+    "suggestion": "Change '1SG.A=go.SG' to '1SG.S=go.SG' to match the glossing convention used for intransitive verbs elsewhere in the chapter (e.g., 'speak=4.S' in ex. 1).",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#031",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "63",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A frequency claim ('more frequent in the corpus than the intransitive alternative') is attributed to a Discord user and tagged 'corpus-confirmed', which implies the data have been systematically verified from a corpus. The source does not provide transparent corpus evidence.",
+    "quote": "(thegodofneet, aynucorporadiscord, 2025) ‹corpus-confirmed›",
+    "suggestion": "Either verify the frequency from the actual corpus data and cite it directly, or downgrade the tag to '‹speculative›' or '‹original-needs-review›'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#030",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "56",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about ungrammaticality of '*sekor a=ramu' is attributed to a Discord discussion but tagged 'corpus-confirmed'. Grammaticality judgments from community discussion are not corpus evidence; the epistemic tag is inflated.",
+    "quote": "(nukopoli, aynucorporadiscord, 2024) ‹corpus-confirmed›",
+    "suggestion": "Change epistemic tag to '‹contested›' or '‹speculative›', or remove the tag and keep the citation as community discussion.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#036",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "132",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The name appears as 'Kawakamii' with a double 'i'. This is likely a typo for 'Kawakami' (a common Japanese surname).",
+    "quote": "Kawakamii Matsuko",
+    "suggestion": "If the source indeed spells it as 'Kawakamii', retain; otherwise correct to 'Kawakami'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#033",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "237",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'whole-range' appears to be a compound adjective used as a noun; it should be written as two separate words: 'whole range'.",
+    "quote": "The whole-range of the 4th person",
+    "suggestion": "Change 'whole-range' to 'whole range'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#028",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "404",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ari' and 'ani' are not italicized, and the slash is not handled consistently with other morpheme boundaries.",
+    "quote": "<i lang=\"ain-Latn\">ari</i>/<i lang=\"ain-Latn\">ani</i>",
+    "suggestion": "Italicize 'ari' and 'ani', and consider consistent handling of slashes.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#027",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "397",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'asinuma' is not italicized, which is inconsistent with its italicization in other parts of the chapter.",
+    "quote": "<i lang=\"ain-Latn\">asinuma</i>",
+    "suggestion": "Italicize 'asinuma'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'asinuma' is not italicized, which is inconsistent with its italicization in other parts of the chapter.",
+    "quote": "<i lang=\"ain-Latn\">asinuma</i>",
+    "suggestion": "Italicize 'asinuma'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#026",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "386",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'nah' is not italicized, which is inconsistent with the italicization of 'sekor' in the same sentence.",
+    "quote": "<i lang=\"ain-Latn\">nah</i>",
+    "suggestion": "Italicize 'nah'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#025",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "381",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'se' and 'kor' are not italicized, which is inconsistent with the italicization of 'sekor' in the same sentence.",
+    "quote": "<i lang=\"ain-Latn\">se</i> + <i lang=\"ain-Latn\">kor</i>",
+    "suggestion": "Italicize 'se' and 'kor'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#024",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "376",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'Sekor' is capitalized, which is inconsistent with the lowercase 'sekor' used elsewhere in the chapter.",
+    "quote": "<i lang=\"ain-Latn\">Sekor</i>",
+    "suggestion": "Change 'Sekor' to 'sekor'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ari' and 'ani' are not italicized, which is inconsistent with the italicization of 'sekor' in the same sentence.",
+    "quote": "<i lang=\"ain-Latn\">ari</i> or <i lang=\"ain-Latn\">ani</i>",
+    "suggestion": "Italicize 'ari' and 'ani'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ari' and 'ani' are not italicized, and the slash is not handled consistently with other morpheme boundaries.",
+    "quote": "<i lang=\"ain-Latn\">ari</i>/<i lang=\"ain-Latn\">ani</i>",
+    "suggestion": "Italicize 'ari' and 'ani', and consider consistent handling of slashes.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#023",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "364",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'p' is not italicized, which is inconsistent with the italicization of 'sekor' and 'a=ye' in the same sentence.",
+    "quote": "in this frame the nominalizer <i lang=\"ain-Latn\">p</i> is zero-valent",
+    "suggestion": "Italicize 'p'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'a=' is not italicized, which is inconsistent with the italicization of 'sekor' and 'a=ye' in the same sentence.",
+    "quote": "the agent <i lang=\"ain-Latn\">a=</i> (−1) and the implicit 3rd-person zero-object (−1)",
+    "suggestion": "Italicize 'a='.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#022",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "360",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'a=ye', 'p', and 'ne' are not italicized, which is inconsistent with the italicization of 'sekor'.",
+    "quote": "<i lang=\"ain-Latn\">X sekor a=ye p ne</i>",
+    "suggestion": "Italicize 'a=ye', 'p', and 'ne'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#021",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "354",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'a=ye', 'hawe ne', and 'a=' appear in the note without italics, which is inconsistent with their appearance in the examples.",
+    "quote": "The sekor a=ye frame attributes the name; the outer hawe ne predicates the whole naming as conventionally/verbally reported fact. The 4th-person agent a= is used throughout because the name-givers are indefinite.",
+    "suggestion": "Italicize 'a=ye', 'hawe ne', and 'a=' in the note.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#020",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "348-349",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'a=ye' and 'haw-e ne' in the 'm' attribute are not italicized, and the morpheme boundary hyphen in 'haw-e' is not italicized.",
+    "quote": "<Ex\n\t\t m=\"tap a=ye katu Piratur sekor a=ye haw-e ne\"\n\t\t g=\"now 4.A=say manner Piratur QUOT 4.A=say voice-POSS COP\"",
+    "suggestion": "Apply consistent italics to all Ainu forms within the 'm' attribute, including morpheme boundaries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#019",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "341",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'a=ye' and 'hawe ne' are not italicized, which is inconsistent with the italicization of 'sekor'.",
+    "quote": "<i lang=\"ain-Latn\">X sekor a=ye hawe ne</i>",
+    "suggestion": "Italicize 'a=ye' and 'hawe ne'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#018",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "337",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i=' appears in the note without italics, which is inconsistent with its appearance in the examples.",
+    "quote": "hawe as marks hearsay: the narrator reports a perceived event as ambient sound/speech rather than a specific attributed utterance. The 4th-person object i= references the narrator in the oral-narrative first person (cf. §5).",
+    "suggestion": "Italicize 'i=' in the note.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#017",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "332-333",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-e' in the 'm' attribute is not italicized, and the morpheme boundary hyphen is not italicized.",
+    "quote": "<Ex\n\t\t m=\"inne topaha i=kesanpa wa arki haw-e as\"\n\t\t g=\"large herd 4.O=chase CONJ come.PL voice-POSS arise\"",
+    "suggestion": "Apply consistent italics to all Ainu forms within the 'm' attribute, including morpheme boundaries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#016",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "313-314",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-e' in the structure column is not italicized, and the morpheme boundary hyphen is not italicized.",
+    "quote": "<td><i lang=\"ain-Latn\">hawe as</i></td>\n\t\t\t\t<td><i lang=\"ain-Latn\">haw-e as</i> (voice-<span class=\"sc\">poss</span> arise)</td>",
+    "suggestion": "Apply consistent italics to all Ainu forms within the structure column, including morpheme boundaries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#015",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "307-308",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-e' in the structure column is not italicized, and the morpheme boundary hyphen is not italicized.",
+    "quote": "<td><i lang=\"ain-Latn\">hawe ne</i></td>\n\t\t\t\t<td><i lang=\"ain-Latn\">haw-e ne</i> (voice-<span class=\"sc\">poss cop</span>)</td>",
+    "suggestion": "Apply consistent italics to all Ainu forms within the structure column, including morpheme boundaries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#014",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "301-302",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-e-an' in the structure column is not italicized, and the morpheme boundary hyphens are not italicized.",
+    "quote": "<td><i lang=\"ain-Latn\">hawean</i></td>\n\t\t\t\t<td><i lang=\"ain-Latn\">haw-e-an</i> (voice-<span class=\"sc\">poss</span>-exist)</td>",
+    "suggestion": "Apply consistent italics to all Ainu forms within the structure column, including morpheme boundaries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#013",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "285",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw' is not marked with italics, which is inconsistent with other Ainu words in the chapter.",
+    "quote": "<A w=\"haw\" gl=\"voice\" />",
+    "suggestion": "Add italics to 'haw'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#012",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "274",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'asinuma' is not italicized, which is inconsistent with its italicization in other parts of the chapter.",
+    "quote": "<i lang=\"ain-Latn\">asinuma</i>",
+    "suggestion": "Italicize 'asinuma'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#011",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'a=', '=an', and 'i=' are marked with italics and language tags, but the morpheme boundary is not consistently handled with italics in other examples.",
+    "quote": "(<i lang=\"ain-Latn\">a=</i>, <i lang=\"ain-Latn\">=an</i>, <i lang=\"ain-Latn\">i=</i>)",
+    "suggestion": "Consider if the morpheme boundary should be italicized.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#010",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "227-228",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'a=sinuma' is not italicized, which is inconsistent with the italicization of 'asinuma'.",
+    "quote": "<i lang=\"ain-Latn\">asinuma</i> (literally <i lang=\"ain-Latn\">a=sinuma</i> 'the self of one')",
+    "suggestion": "Italicize 'a=sinuma'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#009",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'k=', 'ku=', and 'ku=haw-e-an' appear in the note without italics, which is inconsistent with their appearance in the examples.",
+    "quote": "Self-quotation retains the 1SG prefix k= (reduced form of ku= before a vowel-initial stem) inside the quote. The reporting verb ku=haw-e-an marks the narrator as the 1SG subject of the intransitive hawean. Contrast the preceding example, where the same quoted content attributed to a third party takes asinuma arpa=an.",
+    "suggestion": "Italicize 'k=', 'ku=', and 'ku=haw-e-an' in the note.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#008",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "199-201",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ku=haw-e-an' in the 'm' attribute is not italicized, and the morpheme boundary hyphens are not italicized.",
+    "quote": "<Ex\n\t\t m=\"kani k=arpa sekor ku=haw-e-an\"\n\t\t g=\"1SG 1SG.A=go.SG QUOT 1SG.S=voice-POSS-exist\"\n\t\t tr=\"I said, 'I will go.'\"",
+    "suggestion": "Apply consistent italics to all Ainu forms within the 'm' attribute, including morpheme boundaries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#007",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "189-191",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-e-an' in the 'm' attribute is not italicized, and the morpheme boundary hyphens are not italicized.",
+    "quote": "<Ex\n\t\t m=\"asinuma arpa=an kusu ne sekor haw-e-an\"\n\t\t g=\"4.SG go.SG=4.S PURP COP QUOT voice-POSS-exist\"\n\t\t tr=\"She said, 'I [self] will go.'\"",
+    "suggestion": "Apply consistent italics to all Ainu forms within the 'm' attribute, including morpheme boundaries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#006",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "133",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'haw-e-an=an' appears in the note without italics, which is inconsistent with its appearance in the example.",
+    "quote": "The intransitive haw-e-an=an follows sekor; the quoted string ends with the formal noun hi plus the copula ne. The 4th-person suffix =an inside the quote and on the reporting verb haw-e-an=an signals that the quoted speaker is other than the current narrator — a semi-direct shift treated in §3.",
+    "suggestion": "Italicize 'haw-e-an=an' in the note.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#005",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "127-129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-e-an=an' in the 'm' attribute is not consistently italicized, and the morpheme boundary hyphens are not italicized.",
+    "quote": "<Ex\n\t\tm=\"somo itak=an hi ne sekor haw-e-an=an kor\"\n\t\tg=\"NEG speak=4.S NMLZ COP QUOT voice-POSS-exist=4.S while\"\n\t\ttr=\"Saying, 'One does not speak.'\"",
+    "suggestion": "Apply consistent italics to all Ainu forms within the 'm' attribute, including morpheme boundaries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#004",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "117-118",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ramu' is marked with italics and a language tag, but the gloss '+2' is not italicized.",
+    "quote": "<i lang=\"ain-Latn\">ramu</i>",
+    "suggestion": "Ensure consistent formatting for glosses associated with Ainu words.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#002",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "29",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-e' is marked with italics and a language tag, but the hyphenated morpheme boundary is not consistently handled with italics in other examples.",
+    "quote": "<i lang=\"ain-Latn\">haw-e</i>",
+    "suggestion": "Consider if the hyphenated form should be fully italicized or if only 'haw-e' should be italicized.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#001",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "25",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw' is not marked with italics, which is inconsistent with other Ainu words in the chapter.",
+    "quote": "<A w=\"haw\" gl=\"voice\" />",
+    "suggestion": "Add italics to 'haw'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#041",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "387",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about Sakhalin <i lang=\"ain-Latn\">nah</i> lacks a citation, despite being a factual statement about another dialect.",
+    "quote": "The equivalent in Sakhalin varieties (<i lang=\"ain-Latn\">nah</i>), occupying the same functional slot, is cited for typological contrast only",
+    "suggestion": "Add a citation for the use of <i lang=\"ain-Latn\">nah</i> in Sakhalin varieties.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#039",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "279",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'The chapter's conclusion' is meta-commentary about the chapter's structure, not content, and leaks editorial perspective.",
+    "quote": "The chapter's conclusion is that a genre-convention analysis accounts for the distribution but does not preclude a logophoric analysis of the form: the two claims are compatible if the logophoric device originated in the narrative genre and extended into everyday quotation ‹speculative›.",
+    "suggestion": "Rephrase to 'A conclusion is that...' or 'One may conclude that...'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#037",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "39",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'while holding' for <i lang=\"ain-Latn\">kor</i> is inconsistent with the combined meaning 'while saying' derived in the sentence. The component 'holding' does not clearly contribute to the resulting meaning, creating a mismatch between the compositional gloss and the derived meaning.",
+    "quote": "<i lang=\"ain-Latn\">se</i> 'make a sound / say' + <i lang=\"ain-Latn\">kor</i> 'while / while holding'",
+    "suggestion": "Revise the gloss of <i lang=\"ain-Latn\">kor</i> to better align with the resulting meaning, e.g., 'while doing' or 'during the act of'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#035",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "401-402",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'in the read sources' refers to the sources the authors consulted, which is meta-commentary about the research process; it should be rephrased for the reader.",
+    "quote": "Quantified evidence of asinuma in everyday versus oral-literary speech is not available in the read sources",
+    "suggestion": "Rephrase as 'has not been quantified' or 'is not available'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "logophoric-narration-and-reported-discourse~p1#029",
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "lines": "41",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A Discord user is cited as the sole source for the 'corpus-confirmed' epistemic tag; the claim about etymology actually rests on Nakagawa (2024, a published source), but the tag appears to cover the whole sentence including the Discord citation, which inflates the evidence level.",
+    "quote": "(nukopoli, aynucorporadiscord, 2024) ‹corpus-confirmed›",
+    "suggestion": "Either remove the epistemic tag and simply cite the published source, or change the tag to '‹original-needs-review›' if the discord discussion is the only source for part of the claim.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

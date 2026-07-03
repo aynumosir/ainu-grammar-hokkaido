@@ -1,0 +1,377 @@
+[
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#003",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "224",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kunkutu' is marked with `lang=\"ain-Latn\"` but is also marked with the dialect tag ‹SA›. The `lang` attribute should ideally reflect the specific dialect or be removed if it's meant to be general Ainu.",
+    "quote": "<td><i lang=\"ain-Latn\">kunkutu</i> ‹SA›</td>",
+    "suggestion": "Remove `lang=\"ain-Latn\"` from the table entry for 'kunkutu'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent macron usage in 'inaw' vs 'ināw' within the same table cell; the form should be consistently marked with or without macron.",
+    "quote": "<i lang=\"ain-Latn\">inaw</i> / <i lang=\"ain-Latn\">ināw</i>",
+    "suggestion": "Standardize to either <i lang=\"ain-Latn\">inaw</i> / <i lang=\"ain-Latn\">inaw</i> or <i lang=\"ain-Latn\">ināw</i> / <i lang=\"ain-Latn\">ināw</i>",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#015",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "248",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'person' in the example does not match the intended meaning 'headman' or 'village chief' as defined in the dictionary link <A w=\"kotankorkur\" gl=\"headman, village chief\" />. This creates a mismatch between the example and the lexical entry.",
+    "quote": "g=\"settlement-have-person COP\"",
+    "suggestion": "Change gloss to 'settlement-have-leader COP' to reflect 'headman'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#011",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "169",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table entry for <i lang=\"ain-Latn\">kaya</i> lists 'sail (HA)' but the prose in line 56 states Hokkaido retained the word with the 'narrower meaning sail', implying HA is Hokkaido Ainu. However, 'HA' is not defined in the table, creating ambiguity.",
+    "quote": "sail (HA); fish-skin garment (‹SA›)",
+    "suggestion": "Define 'HA' in table footnote or replace with 'Hokkaido Ainu' for clarity",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#007",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "50-52, 174-177",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Prose (lines 50–52) lists sinduχ as a Sakhalin Ainu form borrowed into Nivkh, but the table (lines 174–177) treats sinduχ as the Nivkh form for the Ainu word sintoko, and the direction is given as unclear. This creates a contradiction about which language sinduχ belongs to.",
+    "quote": "Sakhalin Ainu <i lang=\"ain-Latn\">tonto</i>, <i lang=\"ain-Latn\">sinduχ</i>... appear in Nivkh ... <td><i lang=\"ain-Latn\">sintoko</i></td> ... <td>unclear; ‹SA› Nivkh <i lang=\"ain-Latn\">sinduχ</i></td>",
+    "suggestion": "Reconcile the two statements: either correct the prose to say 'Sakhalin Ainu sintoko appears in Nivkh as sinduχ', or adjust the table to reflect that sinduχ is the Ainu form and update the direction accordingly.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#013",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "233",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss in the dictionary link repeats 'settlement, village' while the preceding sentence uses only 'settlement', creating minor redundancy.",
+    "quote": "The Wanderwort <A w=\"kotan\" gl=\"settlement, village\" /> is the northern-contact item most deeply embedded in the Hokkaido lexicon.",
+    "suggestion": "Align with 'settlement' or keep full gloss if intentional",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#010",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "175",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'sintoko' in the table (line 175) lacks macron marking compared to the phonemic representation in the prose (e.g. 'sinduχ' in line 46); orthographic inconsistency within the chapter.",
+    "quote": "<i lang=\"ain-Latn\">sintoko</i>",
+    "suggestion": "Use macron consistently: <i lang=\"ain-Latn\">sintōkō</i> or clarify absence intentionally",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#006",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "267",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kaya' is mentioned in the note without a language tag, while other Ainu forms in the chapter are consistently marked with `lang=\"ain-Latn\"`.",
+    "quote": "note=\"Constructed minimal context. kaya is the Hokkaido reflex of the Nivkh loanword; the Sakhalin cognate covered fish-skin garments as well (Batchelor 1938: 241).\"",
+    "suggestion": "Add `lang=\"ain-Latn\"` to 'kaya' in the note: `kaya` → `<i lang=\"ain-Latn\">kaya</i>`.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#005",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "262",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kaya a=kar' in the example is not marked with a language tag, while other Ainu forms in the chapter are consistently marked with `lang=\"ain-Latn\"`.",
+    "quote": "m=\"kaya a=kar\"",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `m` attribute: `m=\"<i lang=\\\"ain-Latn\\\">kaya a=kar</i>\"`.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#004",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "247",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kotan-kor-kur ne' in the example is not marked with a language tag, while other Ainu forms in the chapter are consistently marked with `lang=\"ain-Latn\"`.",
+    "quote": "m=\"kotan-kor-kur ne\"",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `m` attribute: `m=\"<i lang=\\\"ain-Latn\\\">kotan-kor-kur ne</i>\"`.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#002",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "217",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tanku' is marked with `lang=\"ain-Latn\"` but is also marked with the dialect tag ‹SA›. The `lang` attribute should ideally reflect the specific dialect or be removed if it's meant to be general Ainu.",
+    "quote": "<td><i lang=\"ain-Latn\">tanku</i> ‹SA›</td>",
+    "suggestion": "Remove `lang=\"ain-Latn\"` from the table entry for 'tanku'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#001",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tonto' is marked with `lang=\"ain-Latn\"` but is also listed as a Sakhalin Ainu form in prose on line 50 and in the table on line 195. It is also mentioned as a Japanese borrowing on line 191. The `lang` attribute should be consistent or removed if it's not specifically referring to a Hokkaido Ainu form.",
+    "quote": "<td><i lang=\"ain-Latn\">tonto</i></td>",
+    "suggestion": "Remove `lang=\"ain-Latn\"` from the table entry for 'tonto'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#018",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "87",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The community source is cited with a username and date, but the epistemic tag ‹contested› is applied to the claim. A Discord attribution alone may not justify the grade without corroboration; however, it is corroborated by Shiraishi and Tangiku, so the tag may stand. Still, the citation format should be consistent.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-11)",
+    "suggestion": "Ensure consistent formatting of community sources across the chapter",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#017",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "130",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about 'kunkutu' being a loan from Itelmen/Kamchadal is marked ‹contested› but attributed only to Tangiku 2022, while the same claim is later said to be independently supported by community analysis. The epistemic grade should reflect the convergence of sources.",
+    "quote": "<Ref k=\"tangiku2022\" p=\"§6.1\" /> ‹contested›",
+    "suggestion": "Change to ‹contested› → ‹corpus-suggested› or add note on convergence",
+    "confidence": 0.75
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The community attribution uses a different username (antitwilight) than in line 240 (also antitwilight, same date), but the citation format varies slightly — one with parentheses, one without. Inconsistent formatting.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (antitwilight, aynu-corpora Discord, 2024-11-22)",
+    "suggestion": "Standardize community citation format across instances",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#016",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "262",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A=make' uses a syntactic label (4.A) not explained in this chapter and inconsistent with Leipzig conventions used elsewhere; the chapter does not define argument roles like '4.A'.",
+    "quote": "g=\"sail 4.A=make\"",
+    "suggestion": "Use standard gloss: 'sail 3PL=make' or 'OBJ=make' if role is object",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#014",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "242",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The compound <A w=\"kotankorkur\" gl=\"headman, village chief\" /> is glossed as 'headman, village chief', but the example (kotan-kor-kur) breaks down as 'settlement-have-person'. The gloss 'person' in the example does not align with 'chief' in the dictionary link.",
+    "quote": "<A w=\"kotankorkur\" gl=\"headman, village chief\" />",
+    "suggestion": "Revise example gloss to 'settlement-have-leader' or dictionary gloss to 'village person' for consistency",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#012",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "191",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The directionality column states 'Ainu (‹SA›) → Nivkh' for <i lang=\"ain-Latn\">tonto</i>, but the prose in line 51 lists <i lang=\"ain-Latn\">tonto</i> as a Sakhalin Ainu word that entered Nivkh — consistent. However, the table omits mention of the Japanese reflex, while the prose in line 318 notes it. The table should include both directions.",
+    "quote": "Ainu (‹SA›) → Nivkh; Ainu → Japanese",
+    "suggestion": "Revise to 'Ainu (‹SA›) → Nivkh; Ainu → Japanese' to match prose",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#009",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "21",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'tanned hide' in the dictionary link for <A w=\"tonto\" gl=\"tanned hide\" /> conflicts with the free translation in line 190 of the table, which includes 'tanned hide' but also shows that the word was borrowed into Japanese as 'todo' meaning 'sea lion'. The gloss should reflect the full semantic range or be consistent with downstream uses.",
+    "quote": "<A w=\"tonto\" gl=\"tanned hide\" />",
+    "suggestion": "Update gloss to 'tanned hide; → J todo 'sea lion'' to match table",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "northern-contact-nivkh-tungusic-manchu~p1#008",
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "lines": "75",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The dialect tag ‹SA› is defined for Sakhalin Ainu only, but here it is applied to Ghilyak (Nivkh), which is not an Ainu dialect.",
+    "quote": "shared with ‹SA› Ghilyak <i lang=\"ain-Latn\">*kaco</i>",
+    "suggestion": "Remove the tag from 'Ghilyak', or if the comparison is intended to refer to the Sakhalin Ainu cognate, restructure the phrase (e.g., 'shared with Ghilyak; the Sakhalin Ainu form is also *kaco').",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

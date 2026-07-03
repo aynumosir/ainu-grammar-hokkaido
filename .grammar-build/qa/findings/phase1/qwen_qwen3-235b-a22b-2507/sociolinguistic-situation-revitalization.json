@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "144",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2023-12-08)",
+  "issue": "The citation attaches a specific Discord comment (nukopoli, 2023-12-08) to a claim about standardization of orthographic conventions, but the reference key 'aynucorporadiscord' alone does not capture the specific attribution; the inline parenthetical is not a proper Ref component and risks being treated as free text rather than a formal citation.",
+  "suggestion": "Wrap the entire attribution in a single Ref component with a locator, e.g., <Ref k=\"aynucorporadiscord\" p=\"nukopoli, 2023-12-08\" />",
+  "confidence": 0.95,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "148",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"ono2022\" p=\"§8.4\" />; <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-09)",
+  "issue": "Same issue as line 144: the Discord attribution is split from the Ref component and presented as free text, undermining citation consistency and traceability.",
+  "suggestion": "Combine into a single Ref with locator: <Ref k=\"aynucorporadiscord\" p=\"nukopoli, 2024-11-09\" />",
+  "confidence": 0.95,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "158",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-16)",
+  "issue": "Again, the Discord citation is presented as free text rather than a structured Ref, breaking citation hygiene.",
+  "suggestion": "Use <Ref k=\"aynucorporadiscord\" p=\"nukopoli, 2024-11-16\" />",
+  "confidence": 0.95,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "163",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-05)",
+  "issue": "Same pattern: informal inline citation instead of structured Ref.",
+  "suggestion": "Replace with <Ref k=\"aynucorporadiscord\" p=\"nukopoli, 2024-11-05\" />",
+  "confidence": 0.95,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "269",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"drink=4.S HORT\"",
+  "issue": "The gloss '4.S' (fourth person singular) is inconsistent with the note stating that =an encodes an 'inclusive agent (speaker plus addressee)', which implies a first-person plural inclusive, not a fourth-person construction. This contradicts the interpretation provided in the note.",
+  "suggestion": "Change gloss to \"drink=1PL.INCL HORT\" or revise note to align with fourth-person interpretation",
+  "confidence": 0.9,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "265-271",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cite=\"ono2022:§8.9\"",
+  "issue": "The cite attribute uses colon syntax (ono2022:§8.9) instead of the standard Ref component with p=\"§8.9\", deviating from the document's usual citation practice and potentially breaking pipeline consistency.",
+  "suggestion": "Replace with standard <Ref k=\"ono2022\" p=\"§8.9\" /> inside the Ex component, if supported, or normalize cite syntax across the document",
+  "confidence": 0.85,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "120",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The Upopoy project required the coining of approximately 180 new Ainu words",
+  "issue": "This claim is repeated verbatim in line 254: \"The Upopoy project assembled approximately 180 new words\" — a duplication within the same chapter.",
+  "suggestion": "Remove one instance or rephrase to avoid repetition",
+  "confidence": 1,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "172",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "tunas-kampi",
+  "issue": "Hyphenation of compound is inconsistent: in table line 196 it appears as <i lang=\"ain-Latn\">tunas-kampi</i>, but in line 246 it appears as <i lang=\"ain-Latn\">uepeker-kampi</i> (with hyphen) and in line 247–248 as <i lang=\"ain-Latn\">kampinukatcise</i> (unhyphenated). No consistent pattern is applied.",
+  "suggestion": "Standardize hyphenation in compounds across the chapter, especially in neologisms",
+  "confidence": 0.8,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "246-248",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "pon kampinukatcise",
+  "issue": "Inconsistent word spacing and compounding: 'pon kampinukatcise', 'haykannu kampinukatcise', 'poro kampinukatcise' mix spacing and compounding without clear orthographic principle, especially when compared to hyphenated forms like 'tunas-kampi'.",
+  "suggestion": "Apply consistent tokenization: either all spaced, all hyphenated, or all compounded based on grammatical status",
+  "confidence": 0.9,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "aynu teetawano ankur kampinuye cise sekor an pe",
+  "issue": "Inconsistent spacing: the phrase is written as multiple words, but similar compounds elsewhere are hyphenated or concatenated. No clear orthographic rule is evident.",
+  "suggestion": "Apply consistent spacing or compounding convention for multi-word neologisms",
+  "confidence": 0.7,
+  "chapter": "sociolinguistic-situation-revitalization",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

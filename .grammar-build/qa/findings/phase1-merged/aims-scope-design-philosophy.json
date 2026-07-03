@@ -1,0 +1,1194 @@
+[
+ {
+  "id": "aims-scope-design-philosophy~p1#002",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "12-15",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Chiri is missing. It is mentioned in the prose but not linked to a reference.",
+    "quote": "Kindaichi and Chiri <Ref k=\"kindaichi1936\" /> through the modern reference grammars of Tamura <Ref k=\"tamura1996\" />; <Ref k=\"tamura2000\" />, Refsing <Ref k=\"refsing1986\" />, Shibatani <Ref k=\"shibatani1990\" />, Satō <Ref k=\"sato2008\" />, Bugaeva <Ref k=\"bugaeva2022\" />, and Nakagawa <Ref k=\"nakagawa2024\" />.",
+    "suggestion": "Add a citation for Chiri, likely <Ref k=\"chiri1942\" /> based on the table later in the chapter.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text names Chiri alongside Kindaichi but only cites Kindaichi 1936. The table lists Chiri 1942 as a separate defining work, so Chiri should have its own citation here.",
+    "quote": "drawing on the full range of prior scholarship from Kindaichi and Chiri <Ref k=\"kindaichi1936\" />",
+    "suggestion": "Add a separate <Ref k=\"chiri1942\" /> after Kindaichi's reference, or cite both jointly.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Chiri is mentioned but not cited with a reference key; only Kindaichi1936 is cited here, creating a citation mismatch.",
+    "quote": "Kindaichi and Chiri <Ref k=\"kindaichi1936\" />",
+    "suggestion": "Add <Ref k=\"chiri1942\" /> after Chiri",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#028",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "280",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose mentions Tamura's Saru dictionary and grammar monograph, but only cites the dictionary (<Ref k=\"tamura1996\" />) and then the grammar monograph (<Ref k=\"tamura2000\" />) separately. It might be clearer to link both to the description of the Saru dialect.",
+    "quote": "<Ref k=\"tamura1996\" />; <Ref k=\"tamura2000\" />.",
+    "suggestion": "Clarify the relationship between the two Tamura citations and the description of the Saru dialect.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The semicolon-separated citations are not formatted consistently with the rest of the text; typically, multiple citations are separated by commas or listed in a single <Ref> tag if supported. This may be a formatting error.",
+    "quote": "<Ref k=\"tamura1996\" />; <Ref k=\"tamura2000\" />.",
+    "suggestion": "Use a single <Ref> tag with multiple keys if supported, or separate with commas",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#027",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "276",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose mentions Kindaichi and Chiri together as establishing basic morphological architecture, but Chiri is not cited here, only Kindaichi.",
+    "quote": "<Ref k=\"kindaichi1936\" />",
+    "suggestion": "Add a citation for Chiri here as well.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation for Kindaichi 1936 is repeated at the end of the sentence, but it was already cited earlier in the paragraph. This creates redundant citation markup.",
+    "quote": "<Ref k=\"kindaichi1936\" />",
+    "suggestion": "Remove the duplicate <Ref k=\"kindaichi1936\" />",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#043",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "254",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation key is 'bugaeva2012', but the work listed in the table and referenced in the prose is from 2022. This appears to be a typo in the citation key, as Bugaeva's handbook is from 2022, not 2012.",
+    "quote": "<Ref k=\"bugaeva2012\" />",
+    "suggestion": "Change citation key from 'bugaeva2012' to 'bugaeva2022'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#040",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "147",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Placeholders 'XX–XXI' have not been resolved to actual part numbers. This is a production-task remnant that should not appear in the final text.",
+    "quote": "the diachrony and contact parts of the grammar (Parts XX–XXI)",
+    "suggestion": "Replace 'Parts XX–XXI' with the actual part numbers (e.g., Parts 20–21) or with the part titles if numbering is not yet fixed.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#039",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "275-285",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The narrative discusses only a subset of the works listed in the preceding table. Bugaeva (2012) is in the table but is never mentioned in the text; Chiri (1942) is in the table but receives only a passing name reference without a separate citation or discussion. The text claims to review 'each work' but omits two of them.",
+    "quote": "Each work contributes something indispensable. Kindaichi and Chiri establish the basic morphological architecture […] Refsing provides the most systematic morphosyntactic account […] Shibatani places Ainu within a typological account […] Tamura's Saru dictionary and grammar monograph remain the central data source […] Satō's grammar gives the most thorough treatment […] The Bugaeva Handbook supplies extensive English coverage […] Nakagawa's grammar brings the description of Hokkaido Ainu to its greatest single-volume comprehensiveness",
+    "suggestion": "Either add a sentence or two about Bugaeva (2012) and give Chiri (1942) its own citation and description, or remove those entries from the table if they are not considered defining for this grammar's position.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#003",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "38",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The number of 'leaf chapters' (176) seems very high for a grammar, especially when compared to the benchmark of Nakagawa (2024) which has 28 top-level chapters. This might be a typo or a misunderstanding of 'leaf chapters'.",
+    "quote": "distributing 176 leaf chapters across 23 structural parts",
+    "suggestion": "Verify the number 176. If it refers to individual sections within larger parts, clarify the terminology.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#041",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "181",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'flagged for editorial review' addresses the internal production process rather than the reader, potentially confusing the reader about the status of the text.",
+    "quote": "this grade is restricted to the five formal domains listed in the previous section and is flagged for editorial review",
+    "suggestion": "Rephrase to describe the grade's function without referencing the editorial workflow, e.g., 'marks new analyses that are presented as proposals for the reader's evaluation'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#038",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "334",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'oral-literature' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "oral-literature",
+    "suggestion": "Define 'oral-literature' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'spoken-language' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "spoken-language",
+    "suggestion": "Define 'spoken-language' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#037",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "330",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'morpheme-boundary' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "morpheme-boundary",
+    "suggestion": "Define 'morpheme-boundary' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Ainu-specific' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "Ainu-specific",
+    "suggestion": "Define 'Ainu-specific' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Latin' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "Latin",
+    "suggestion": "Define 'Latin' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'phonemic' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "phonemic",
+    "suggestion": "Define 'phonemic' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#036",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "321",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'typological' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "typological",
+    "suggestion": "Define 'typological' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#035",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "315",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'teaching norm' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "teaching norm",
+    "suggestion": "Define 'teaching norm' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'historical oral corpus' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "historical oral corpus",
+    "suggestion": "Define 'historical oral corpus' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#034",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "311",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The name 'Ijäs' is not consistently capitalized compared to other names in the same sentence.",
+    "quote": "Ijäs",
+    "suggestion": "Ijäs",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'revival-register' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "revival-register",
+    "suggestion": "Define 'revival-register' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#033",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "304",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference to the aynu-corpora Discord community is cited with a Ref tag, but the prose also mentions community sources are cited as '(username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />)'. This suggests a potential inconsistency in how community contributions are handled.",
+    "quote": "<Ref k=\"aynucorporadiscord\" />",
+    "suggestion": "Clarify whether community contributions are cited directly with handles and dates, or only through the Ref tag.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#032",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "302",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The name 'aynu-corpora' is not consistently capitalized compared to other community names in the same sentence.",
+    "quote": "aynu-corpora",
+    "suggestion": "aynu-corpora",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The name 'Discord' is not consistently capitalized compared to other community names in the same sentence.",
+    "quote": "Discord",
+    "suggestion": "Discord",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'morpheme' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "morpheme",
+    "suggestion": "Define 'morpheme' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#031",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "293",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'morphological' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "morphological",
+    "suggestion": "Define 'morphological' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'alignment' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "alignment",
+    "suggestion": "Define 'alignment' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'word-class' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "word-class",
+    "suggestion": "Define 'word-class' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'evidential' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "evidential",
+    "suggestion": "Define 'evidential' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#030",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "289",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'morphological' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "morphological",
+    "suggestion": "Define 'morphological' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'evidential' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "evidential",
+    "suggestion": "Define 'evidential' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'alignment' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "alignment",
+    "suggestion": "Define 'alignment' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'typological' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "typological",
+    "suggestion": "Define 'typological' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#029",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "281",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'morphosyntax' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "morphosyntax",
+    "suggestion": "Define 'morphosyntax' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'phonetics' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "phonetics",
+    "suggestion": "Define 'phonetics' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#026",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "275",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The name 'Kindaichi' is not consistently capitalized compared to other names in the same sentence.",
+    "quote": "Kindaichi",
+    "suggestion": "Kindaichi",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The name 'Chiri' is not consistently capitalized compared to other names in the same sentence.",
+    "quote": "Chiri",
+    "suggestion": "Chiri",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'morphosyntactic' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "morphosyntactic",
+    "suggestion": "Define 'morphosyntactic' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'typological' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "typological",
+    "suggestion": "Define 'typological' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#025",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "268",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Hokkaido (Saru, Chitose, and others); 28 top-level chapters; 652 pp.' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Hokkaido (Saru, Chitose, and others); 28 top-level chapters; 652 pp.",
+    "suggestion": "Hokkaido (Saru, Chitose, and others); 28 top-level chapters; 652 pp.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#024",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "262",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Hokkaido and Sakhalin, multi-author' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Hokkaido and Sakhalin, multi-author",
+    "suggestion": "Hokkaido and Sakhalin, multi-author",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#023",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "256",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Southern Hokkaido (Saru, Chitose, Biratori)' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Southern Hokkaido (Saru, Chitose, Biratori)",
+    "suggestion": "Southern Hokkaido (Saru, Chitose, Biratori)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#022",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "250",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Chitose and other Hokkaido dialects' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Chitose and other Hokkaido dialects",
+    "suggestion": "Chitose and other Hokkaido dialects",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#021",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "244",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Saru (Hokkaido) [cited second-hand]' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Saru (Hokkaido) [cited second-hand]",
+    "suggestion": "Saru (Hokkaido) [cited second-hand]",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#020",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "238",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Saru (Hokkaido)' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Saru (Hokkaido)",
+    "suggestion": "Saru (Hokkaido)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#019",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "232",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Hokkaido (chapter-length sketch)' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Hokkaido (chapter-length sketch)",
+    "suggestion": "Hokkaido (chapter-length sketch)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#018",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "226",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Shizunai (Hokkaido)' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Shizunai (Hokkaido)",
+    "suggestion": "Shizunai (Hokkaido)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#017",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "220",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The scope description 'Sakhalin-centred' is not consistently capitalized compared to other scope descriptions in the table.",
+    "quote": "Sakhalin-centred",
+    "suggestion": "Sakhalin-centred",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#015",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "212",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi is listed as 'Japanese' language and 'Pan-Ainu outline' scope, but the prose mentions Kindaichi and Chiri together as establishing basic morphological architecture. Chiri's citation is missing.",
+    "quote": "<Ref k=\"kindaichi1936\" />",
+    "suggestion": "Ensure Chiri is cited and its details are consistent with Kindaichi.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#014",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "194",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The name 'Batchelor' is not consistently capitalized compared to other names in the same sentence.",
+    "quote": "Batchelor",
+    "suggestion": "Batchelor",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#013",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'contested' is not consistently capitalized compared to other evidence grades in the same sentence.",
+    "quote": "‹contested›",
+    "suggestion": "‹Contested›",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'corpus-confirmed' is not consistently capitalized compared to other evidence grades in the same sentence.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "‹Corpus-confirmed›",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#012",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "178",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'Speculative' is not consistently capitalized compared to other evidence grades in the same sentence.",
+    "quote": "Speculative",
+    "suggestion": "Speculative",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'Original-needs-review' is not consistently capitalized compared to other evidence grades in the same sentence.",
+    "quote": "Original-needs-review",
+    "suggestion": "Original-needs-review",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#011",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'Consensus' is not consistently capitalized compared to other evidence grades in the same sentence.",
+    "quote": "Consensus",
+    "suggestion": "Consensus",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'Contested' is not consistently capitalized compared to other evidence grades in the same sentence.",
+    "quote": "Contested",
+    "suggestion": "Contested",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'Corpus-confirmed' is not consistently capitalized compared to other evidence grades in the same sentence.",
+    "quote": "Corpus-confirmed",
+    "suggestion": "Corpus-confirmed",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'Corpus-suggested' is not consistently capitalized compared to other evidence grades in the same sentence.",
+    "quote": "Corpus-suggested",
+    "suggestion": "Corpus-suggested",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#010",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "160",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'nominalization-plus-copula evidential paradigm' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "nominalization-plus-copula evidential paradigm",
+    "suggestion": "Define 'nominalization-plus-copula evidential paradigm' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'clause linkage' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "clause linkage",
+    "suggestion": "Define 'clause linkage' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'switch-reference-like phenomena' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "switch-reference-like phenomena",
+    "suggestion": "Define 'switch-reference-like phenomena' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#009",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "156",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'alignment' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "alignment",
+    "suggestion": "Define 'alignment' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'personal-affix system' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "personal-affix system",
+    "suggestion": "Define 'personal-affix system' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'applicative preverb system' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "applicative preverb system",
+    "suggestion": "Define 'applicative preverb system' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The linguistic term 'noun incorporation' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "noun incorporation",
+    "suggestion": "Define 'noun incorporation' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#008",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "144",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'grammaticalization' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "grammaticalization",
+    "suggestion": "Define 'grammaticalization' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'language isolate' is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "language isolate",
+    "suggestion": "Define 'language isolate' on first use, or ensure it is clear from context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#007",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "112",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'uwepeker' is not italicized or marked with a language tag, unlike other Ainu terms in the text.",
+    "quote": "uwepeker",
+    "suggestion": "Italicize 'uwepeker' or use a language tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yukar' is not italicized or marked with a language tag, unlike other Ainu terms in the text.",
+    "quote": "yukar",
+    "suggestion": "Italicize 'yukar' or use a language tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kamuy yukar' is not italicized or marked with a language tag, unlike other Ainu terms in the text.",
+    "quote": "kamuy yukar",
+    "suggestion": "Italicize 'kamuy yukar' or use a language tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#006",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "68",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'SA' is not consistently capitalized compared to other dialect tags in the same sentence.",
+    "quote": "SA",
+    "suggestion": "SA",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'KU' is not consistently capitalized compared to other dialect tags in the same sentence.",
+    "quote": "KU",
+    "suggestion": "KU",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#005",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "60, 250",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect name 'Saru' is not consistently capitalized compared to other dialect names in the same sentence.",
+    "quote": "Saru (the most copiously documented), Chitose, Shizunai, Tokachi, Horobetsu, Mukawa, and Ishikari.",
+    "suggestion": "Saru",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect name 'Tokachi' is not consistently capitalized compared to other dialect names in the same sentence.",
+    "quote": "Tokachi, Horobetsu, Mukawa, and Ishikari.",
+    "suggestion": "Tokachi",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect name 'Horobetsu' is not consistently capitalized compared to other dialect names in the same sentence.",
+    "quote": "Horobetsu",
+    "suggestion": "Horobetsu",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect name 'Mukawa' is not consistently capitalized compared to other dialect names in the same sentence.",
+    "quote": "Mukawa",
+    "suggestion": "Mukawa",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect name 'Ishikari' is not consistently capitalized compared to other dialect names in the same sentence.",
+    "quote": "Ishikari",
+    "suggestion": "Ishikari",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Nibutani' is not consistently capitalized compared to other place names in the same sentence.",
+    "quote": "Nibutani within Saru, Biratori, Honbetsu within Tokachi",
+    "suggestion": "Nibutani",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Biratori' is not consistently capitalized compared to other place names in the same sentence.",
+    "quote": "Biratori",
+    "suggestion": "Biratori",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Honbetsu' is not consistently capitalized compared to other place names in the same sentence.",
+    "quote": "Honbetsu",
+    "suggestion": "Honbetsu",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Tokachi' is not consistently capitalized compared to other place names in the same sentence.",
+    "quote": "Tokachi",
+    "suggestion": "Tokachi",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#004",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "41",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The acronym 'TAM' (Tense-Aspect-Mood) is not defined or glossed within this chapter, although it is a standard linguistic term.",
+    "quote": "TAM",
+    "suggestion": "Define TAM on first use, e.g., 'TAM (Tense-Aspect-Mood)'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#001",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "10, 60",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect name 'Saru' is inconsistently capitalized compared to other dialect names in the same sentence.",
+    "quote": "Saru, Chitose, Shizunai, Tokachi, Horobetsu, Mukawa, and Ishikari",
+    "suggestion": "Saru",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#044",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "311",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation key 'ijas2023' uses a simplified form of the name (without diacritic), but the author's name includes 'ä'. This may affect bibliographic consistency.",
+    "quote": "Ijäs (2023) <Ref k=\"ijas2023\" />",
+    "suggestion": "Ensure the citation key matches the actual spelling in the bibliography (e.g., 'ijäs2023' if accurate)",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#042",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "244",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation for Tamura 2000 is marked as [cited second-hand] in the table, but the citation itself does not carry any indicator of indirect sourcing in the prose, which could mislead readers about direct access.",
+    "quote": "<Ref k=\"tamura2000\" />",
+    "suggestion": "Add a note in the prose or citation tag indicating that Tamura 2000 is cited second-hand",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "aims-scope-design-philosophy~p1#016",
+  "chapter": "aims-scope-design-philosophy",
+  "lines": "218",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose mentions Kindaichi and Chiri together, but Chiri's citation is missing from the prose list of grammars (lines 12-15). This entry in the table is the only reference to Chiri.",
+    "quote": "<Ref k=\"chiri1942\" />",
+    "suggestion": "Add Chiri to the prose list of grammars (lines 12-15).",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

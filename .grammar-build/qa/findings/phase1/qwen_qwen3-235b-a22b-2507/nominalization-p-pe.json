@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "25-26",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">a=e p</i> ‘what one eats’, <i lang=\"ain-Latn\">okay pe</i> ‘what one carries’",
+  "issue": "The free translation 'what one eats' and 'what one carries' implies an interrogative or indefinite meaning, but the glosses in the examples that follow (e.g., Ex 95–103) treat p/pe as a nominalizer forming a head noun ('the one that eats', 'the thing that is carried'), not an interrogative or free relative. This creates a mismatch between the illustrative glosses and the syntactic function described.",
+  "suggestion": "Change translations to 'the thing that one eats' and 'the thing that one carries' to align with the nominalizer function.",
+  "confidence": 0.95,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "46-47",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ami-p</i> ‘clothes’, <i lang=\"ain-Latn\">poro-p</i> ‘the big one’",
+  "issue": "The translation of <i>ami-p</i> as 'clothes' suggests a lexicalized noun, while <i>poro-p</i> as 'the big one' reflects a participant nominalization. The table presents them as parallel allomorph examples, but they belong to different subtypes (lexical vs. phrasal), which could confuse the allomorphy pattern.",
+  "suggestion": "Add a note or separate category in the table to distinguish lexicalized forms like ami-p from phrasal nominalizations.",
+  "confidence": 0.85,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "147-149",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"ani usey a=ku p\" g=\"INS hot.water 4.A=drink NMLZ\" tr=\"a thing to drink hot water with\"",
+  "issue": "The gloss shows '4.A=drink', implying a transitive verb with agent, but the translation 'a thing to drink hot water with' treats the instrument as the head. The verb 'ku' (drink) does not take an instrument argument, so the instrumental 'ani' is semantically mismatched. The structure suggests 'a thing with which one drinks hot water', but 'drink' does not license an instrument in this way.",
+  "suggestion": "Revise the example or gloss to use a verb that licenses an instrument (e.g., 'sip', 'consume'), or change the translation to 'a thing one drinks hot water by means of', though this is awkward. Alternatively, use a different verb like 'sip' or 'pour'.",
+  "confidence": 0.9,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "188-190",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"ne kusu haweoka wa cis pa p ka a=erampewtek\" g=\"COP because speak.PL CONJ cry PL NMLZ even 4.A=not.understand\"",
+  "issue": "The gloss 'COP because speak.PL CONJ cry PL NMLZ' does not align with the translation 'why they were crying'. The morpheme 'kusu' is glossed as 'because', but the translation implies 'why', which is a different subordinator. Additionally, 'cis pa' is glossed as 'cry PL', but 'cis' is singular; 'pa' as plural marker is not standardly attested.",
+  "suggestion": "Verify the segmentation and gloss: possibly 'cis' is the verb 'to cry' and 'pa' is the nominalizer, so 'cis pa' = 'crying (thing/fact)'. Then 'kusu' might be misanalyzed; if it means 'because', the translation should be 'that they were crying', not 'why'. Alternatively, if 'kusu' means 'why', correct the gloss.",
+  "confidence": 0.8,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "198",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"quietly sit=4.S NMLZ COP FIN\"",
+  "issue": "The gloss 'sit=4.S' implies a fourth-person singular subject, but the translation 'One should sit quietly' uses an impersonal 'one', which is not clearly reflected in the gloss. The person marking should be clarified.",
+  "suggestion": "Gloss as 'sit=IMPRS' or 'sit=GEN' to reflect generic/impersonal subject, if supported by the grammar.",
+  "confidence": 0.75,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "218-220",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"a=e=túskote kuni p ne ru-we ne na\" g=\"4.A=2SG.O=tie.up PURP NMLZ COP track-POSS COP FIN\"",
+  "issue": "The gloss 'track-POSS' for 'ru-we' is incorrect; 'ruwe' is the formal noun meaning 'thing heard/understood', not 'track'. The gloss should reflect 'heard' or 'known', not 'track'.",
+  "suggestion": "Change gloss to 'know-POSS' or 'hear-POSS', or use 'infer-POSS' as per inferential use.",
+  "confidence": 0.95,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "24",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">pon-pe</i>",
+  "issue": "Inconsistent hyphenation: 'pon-pe' uses a hyphen, but in the table (line 54) it appears as 'mokor-pe' and 'okay pe' — the latter without a hyphen. The form 'okay pe' should be 'okay-pe' for consistency.",
+  "suggestion": "Standardize to hyphenated form: 'okay-pe'.",
+  "confidence": 0.9,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "54",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">okay pe</i>",
+  "issue": "Inconsistent hyphenation: 'okay pe' lacks a hyphen, while 'an-pe' and 'mokor-pe' include one. All clausal forms should be uniformly hyphenated.",
+  "suggestion": "Change to 'okay-pe'.",
+  "confidence": 0.95,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "163",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"ani cep ku=tuypa makiri\"",
+  "issue": "The morpheme 'tuypa' is not segmented or glossed. The gloss only covers 'INS fish 1SG.A=cut knife', missing 'tuypa'. This is a clear omission in the gloss.",
+  "suggestion": "Segment as 'ku=tyu-pa' or similar and gloss '1SG.A=do-PST' or 'PST' depending on analysis.",
+  "confidence": 0.85,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "323-325",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Token frequency confirms that <i lang=\"ain-Latn\">pe</i> is common but cannot measure this construction directly. The corpus word-frequency table returns 13,249 tokens of <i lang=\"ain-Latn\">pe</i> (rank 15)...",
+  "issue": "The claim about '13,249 tokens' is presented as corpus-confirmed but lacks a citation to a specific corpus or frequency study. The only citation nearby is ‹corpus-suggested›, which underreports the epistemic status of a quantitative claim.",
+  "suggestion": "Add a citation to a corpus source (e.g., ILC database, Aynu Corpora) or downgrade the claim to match the evidence tag.",
+  "confidence": 0.9,
+  "chapter": "nominalization-p-pe",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

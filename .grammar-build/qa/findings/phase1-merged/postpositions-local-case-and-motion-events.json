@@ -1,0 +1,705 @@
+[
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#017",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "202-203",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">peka</i> is 'PERL' (perlative). The main text (line 195) defines <i lang=\"ain-Latn\">peka</i> as marking traversal of a spatially spread area. The example sentence <i lang=\"ain-Latn\">ne kenas or peka ekimne=an kor</i> is translated as 'While hunting through that forest, ...'. The gloss 'PERL' is accurate, but the translation 'through that forest' implies a path, which <i lang=\"ain-Latn\">peka</i> is said to differ from <i lang=\"ain-Latn\">kari</i> on (line 197).",
+    "quote": "<Ex\n\t\t\tm=\"ne kenas or peka ekimne=an kor\"\n\t\t\tg=\"DEM forest place PERL hunt=4.S while\"",
+    "suggestion": "Ensure the translation accurately reflects the meaning of 'perlative' as 'through a spread area' rather than a linear path, or clarify the distinction between <i lang=\"ain-Latn\">peka</i> and <i lang=\"ain-Latn\">kari</i> in the context of this example.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'kor' is glossed as 'while', but it is not included in the m-line. The m-line ends with 'ekimne=an', missing 'kor'.",
+    "quote": "g=\"DEM forest place PERL hunt=4.S while\"",
+    "suggestion": "Add 'kor' to the m-line: 'ne kenas or peka ekimne=an kor'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#015",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "177-178",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">ani</i> is 'INS' (instrumental). The note clarifies <i lang=\"ain-Latn\">ani</i> as an instrumental postpositional adverb. However, the table entry for <i lang=\"ain-Latn\">ani</i> (line 266) glosses it as 'with, by means of (INS)', which is consistent. The issue is that the main text (line 361) states <i lang=\"ain-Latn\">ani</i> is the standard tool-marking device corresponding to Japanese <span lang=\"ja\">で</span>. The gloss 'INS' is correct, but the note's description as 'instrumental postpositional adverb ani' is slightly redundant and could be more concise.",
+    "quote": "<Ex\n\t\t\tm=\"atuy or un cip ani paye=an p ne\"\n\t\t\tg=\"sea place ALLAT boat INS go=4.S NMLZ COP\"\n\t\t\ttr=\"(She) always went to the sea by boat.\"\n\t\t\tcite=\"biratori1969\"\n\t\t\tdial=\"SAR\"\n\t\t\tplace=\"Hiraga Sadamo, 'Urayushiunhur', Biratori Ainu oral literature\"\n\t\t\tnote=\"atuy or un = 'to the sea' (allative); cip ani = 'by boat' (instrumental postpositional adverb ani).\"",
+    "suggestion": "The gloss and note are consistent with the table. No change needed.",
+    "confidence": 0
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'NMLZ COP' for p ne, but the free translation does not reflect a nominalized clause or copula. The structure 'p ne' is a nominalizer + copula, but the translation '(She) always went to the sea by boat' treats it as a finite verb. This mismatch suggests either the gloss or the translation is inaccurate.",
+    "quote": "g=\"sea place ALLAT boat INS go=4.S NMLZ COP\"",
+    "suggestion": "Either revise the translation to reflect nominalization (e.g., 'Her going to the sea by boat was habitual') or remove 'NMLZ COP' from the gloss if the form is actually finite.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#028",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "118",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The adnominal/genitive un is marked as '(yes)' for requiring ⟨place⟩ head, but this contradicts the earlier statement that case particles require ⟨place⟩ heads, since adnominal un is used with non-locative nouns (e.g., Sinutapka un kur). Moreover, the text later states it is etymologically distinct and functions differently.",
+    "quote": "<td>(yes)</td>",
+    "suggestion": "Change '(yes)' to 'no' or clarify in a note that adnominal un does not require a locative noun despite being a case particle.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#027",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "111",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table cell says the translative particle ne does not require a ⟨place⟩ head, but earlier in the same section (line 28), the property 'requires ⟨place⟩ head?' for case particles is defined as 'yes (the four local ones)', implying that ne, being a case particle, should require ⟨place⟩. This contradicts the table.",
+    "quote": "<td>no</td>",
+    "suggestion": "Change 'no' to 'no (exception)' or revise the generalization in the overview table to account for ne as a non-local case particle.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#023",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "211–215",
+  "category": "copyedit",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Paragraph describes perlative peka but the content clearly refers to translative ne; 'perlative peka' is a mistake for 'translative ne'.",
+    "quote": "The perlative peka predicts conversion to a state or category and does not require a place head. It also appears with numerals in copular predications (e.g., ren a=ne wa oka=an …)",
+    "suggestion": "Replace 'perlative peka' with 'translative ne'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#033",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "580,585,590",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in spacing: 'pet or un' vs. 'pet or en' vs. 'pet or ne' — all should be consistent. But more importantly, in line 580 and 585, the example lacks a closing tag or is cut off. Also, 'pet or ne' should probably be 'pet or (e)ne' to match the form given in the dialect label.",
+    "quote": "<i lang=\"ain-Latn\">pet or un</i>, <i lang=\"ain-Latn\">pet or en</i>, <i lang=\"ain-Latn\">pet or ne</i>",
+    "suggestion": "Standardize to: <i lang=\"ain-Latn\">pet or un</i>, <i lang=\"ain-Latn\">pet or en</i>, <i lang=\"ain-Latn\">pet or (e)ne</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#030",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "480",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The translation 'away from' suggests motion away, but the ablative wa already marks source. The verb arpa 'go' implies motion from source, so 'away' is redundant and potentially misleading. Better: 'I went from the mountain.'",
+    "quote": "I went away from the mountain.",
+    "suggestion": "Change to 'I went from the mountain.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#026",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "450–451",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Redundant phrasing: paye is the plural of arpa, so 'arpa's own plural form' repeats the same information.",
+    "quote": "the suppletive plurals are paye 'go (plural)' and arpa's own plural form",
+    "suggestion": "Simplify to: 'the suppletive plural is paye'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#022",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "44, 63",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Overview table lists five core case particles, but the subsequent section says there are six, including the adnominal un, suggesting the table is incomplete.",
+    "quote": "core members: ta, wa, un, peka, ne (line 44) vs 'Nakagawa identifies six case particles' (line 63)",
+    "suggestion": "Add adnominal un to the overview list or clarify that it shows only local case particles",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#011",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to lines 80, 87, 94, 102, and 109, the Japanese term '連体格' (rentaikaku) is used for 'adnominal/genitive'. It would be clearer to use 'adnominal/genitive case' or a similar English term.",
+    "quote": "adnominal/genitive 連体格",
+    "suggestion": "Replace '連体格' with 'adnominal/genitive case' or a similar English term.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#010",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "109",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to lines 80, 87, 94, and 102, the Japanese term '転成格' (tenseikaku) is used for 'translative'. It would be clearer to use 'translative case' or a similar English term.",
+    "quote": "translative 転成格",
+    "suggestion": "Replace '転成格' with 'translative case' or a similar English term.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#009",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "102",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to lines 80, 87, and 94, the Japanese term '経由格' (keiyūkaku) is used for 'perlative'. It would be clearer to use 'perlative case' or a similar English term.",
+    "quote": "perlative 経由格",
+    "suggestion": "Replace '経由格' with 'perlative case' or a similar English term.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#008",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "94",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to lines 80 and 87, the Japanese term '向格' (kōkaku) is used for 'allative'. It would be clearer to use 'allative case' or a similar English term.",
+    "quote": "allative 向格",
+    "suggestion": "Replace '向格' with 'allative case' or a similar English term.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#007",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "87",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 80, the Japanese term '起点格' (kitenkaku) is used for 'ablative'. It would be clearer to use 'ablative case' or a similar English term.",
+    "quote": "ablative 起点格",
+    "suggestion": "Replace '起点格' with 'ablative case' or a similar English term.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#006",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "80",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '位格' (ikaku) is used for 'locative'. While potentially informative, it's not a standard linguistic term in English grammar. It might be better to use a more descriptive English term or a standard linguistic classification if available.",
+    "quote": "locative 位格",
+    "suggestion": "Replace '位格' with a more descriptive English term like 'locative case' or 'case name'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#005",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "52",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <A w=\"or\" /> and <A w=\"oro\" /> is identical ('place, interior of'). While they are related, it might be beneficial to slightly differentiate the glosses to reflect the 'long form' status, perhaps by adding 'long form' or similar to the gloss for <A w=\"oro\" />.",
+    "quote": "<A w=\"or\" gl=\"place, interior of\" /> (long form <A w=\"oro\" gl=\"place, interior of\" />)",
+    "suggestion": "Adjust the gloss for <A w=\"oro\" /> to indicate it's the long form, e.g., 'place, interior of (long form)'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#001",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "13",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"sato2008\" p=\"34–36\" /> is attached to the entire sentence, but it only supports the claim about person prefixes. The distributional autonomy and ability to take any nominal are supported by <Ref k=\"nakagawa2024\" p=\"280, 294–296\" />.",
+    "quote": "postpositional adverbs (後置副詞) are distributionally autonomous, take any preceding nominal, and several carry person prefixes of their own\n\t\t<Ref k=\"sato2008\" p=\"34–36\" />; <Ref k=\"nakagawa2024\" p=\"280, 294–296\" />.",
+    "suggestion": "Split the citation to accurately reflect what each source supports.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#034",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "339",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'akusu' is not present in the m-line 'ruyka kari saramanto kari soyne=an' but is glossed as 'when'.",
+    "quote": "g=\"bridge PERL skylight PERL go.outside=4.S when\"",
+    "suggestion": "Add 'akusu' to the m-line: 'ruyka kari saramanto kari soyne=an akusu'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#032",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "521",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same citation hygiene issue as above: inconsistent formatting of Discord attribution. Also, labeling a Discord comment as ‹corpus-confirmed› may be epistemically inflated if the claim is based solely on community observation without published corpus data.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026-04-27) ‹corpus-confirmed›",
+    "suggestion": "Reformat citation and consider downgrading to ‹community-confirmed› or retaining ‹corpus-confirmed› only if corpus evidence is explicitly cited.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#031",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "517",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation format is inconsistent: the in-text attribution places the username and date after the Ref tag, but standard format seen elsewhere (e.g., line 400) puts the full attribution inside the Ref or as prose before. Also, attaching ‹speculative› to a Discord source is appropriate, but the formatting breaks the expected pattern.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026-05-18) ‹speculative›",
+    "suggestion": "Reformat as: (nukopoli, aynu-corpora Discord 2026-05-18; <Ref k=\"aynucorporadiscord\" />) ‹speculative›",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#029",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "389",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'interior, inside of' for the locative noun un conflicts with the particle un (allative) and adnominal un, but more importantly, in the example <i lang=\"ain-Latn\">cise soy ta</i> 'outside the house', the contrastive pair would be expected: soy 'outside' vs un 'inside'. However, no example is given for un as 'inside', and the form un is already heavily overloaded (particle, adnominal, noun).",
+    "quote": "<A w=\"un\" gl=\"interior, inside of\" />",
+    "suggestion": "Provide an example of un used as a locative noun meaning 'inside', e.g., 'cise un ta', to confirm usage and disambiguate.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#025",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "409, 521",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag 'corpus-confirmed' used for claims supported only by Discord messages, without published corpus verification.",
+    "quote": "‹corpus-confirmed› (lines 409 and 521)",
+    "suggestion": "Either add a published source or downgrade to 'corpus-suggested'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#024",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "142, 478",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Both verbs are intransitive, yet one uses A (transitive subject) and the other S (intransitive subject), an inconsistency in glossing conventions within the chapter.",
+    "quote": "ku=sirepa glossed 1SG.A=arrive (line 142) vs k=arpa glossed 1SG.S=go (line 478)",
+    "suggestion": "Change ku=sirepa gloss to 1SG.S=arrive for consistency",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#021",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "229",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">kim un kamuy</i> is glossed as 'mountain deity (bear)'. The main text (line 228) states that <i lang=\"ain-Latn\">un</i> can function as a genitive, meaning 'of'. If <i lang=\"ain-Latn\">un</i> is genitive here, the phrase should be 'deity of the mountain'. The gloss 'mountain deity' implies <i lang=\"ain-Latn\">kim</i> is an adjective modifying <i lang=\"ain-Latn\">kamuy</i>, or that <i lang=\"ain-Latn\">un</i> is not genitive in this instance. This contradicts the general rule for <i lang=\"ain-Latn\">un</i> as genitive.",
+    "quote": "<i lang=\"ain-Latn\">kim un kamuy</i> 'mountain deity (bear)', <i lang=\"ain-Latn\">Sinutapka",
+    "suggestion": "Clarify the function of <i lang=\"ain-Latn\">un</i> in this specific example, or adjust the gloss to reflect its genitive function (e.g., 'deity of the mountain').",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#020",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "219-220",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">ne</i> is 'TRANSL' (translative). The example sentence <i lang=\"ain-Latn\">aynu ne yaykar</i> is translated as '(It) transformed into a human.' This aligns with the definition of <i lang=\"ain-Latn\">ne</i> as predicting conversion to a state or category (line 212). The gloss is accurate.",
+    "quote": "<Ex\n\t\t\tm=\"aynu ne yaykar\"\n\t\t\tg=\"human TRANSL transform\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#019",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "214",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">ren a=ne wa oka=an</i> is given to illustrate <i lang=\"ain-Latn\">ne</i> linking numerals to copular predication. The gloss is 'we lived, being three'. The translative <i lang=\"ain-Latn\">ne</i> is glossed as 'become, as' (line 212). The example seems to show <i lang=\"ain-Latn\">ne</i> functioning as a copula or marker of state ('being three'), which aligns with the description. No inconsistency found.",
+    "quote": "(e.g., <i lang=\"ain-Latn\">ren a=ne wa oka=an</i> 'we lived, being three')",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#018",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "208",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states <i lang=\"ain-Latn\">peka</i> covers 'the whole region, not a linear route'. This is consistent with the main text (line 197). The example translation 'While hunting through that forest' (line 204) is also consistent with this. No inconsistency found.",
+    "quote": "note=\"ne kenas or peka = 'through that forest area'; peka here covers the whole region, not a linear route. Simultaneous kor 'while' links the clause.\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#016",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "183",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states <i lang=\"ain-Latn\">atuy or un</i> is 'to the sea' (allative). This aligns with the main text's description of <i lang=\"ain-Latn\">un</i> as allative (line 166). However, the table entry for <i lang=\"ain-Latn\">un</i> (line 93) lists it as an allative case particle. The note's description of <i lang=\"ain-Latn\">un</i> as an allative *postpositional adverb* is inconsistent with the table's classification.",
+    "quote": "note=\"atuy or un = 'to the sea' (allative); cip ani = 'by boat' (instrumental postpositional adverb ani).\"",
+    "suggestion": "Correct the note to state that <i lang=\"ain-Latn\">un</i> is an allative case particle, consistent with the table.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#014",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "152",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that going out through a door or window requires the postpositional adverb <i lang=\"ain-Latn\">kari</i>, not <i lang=\"ain-Latn\">wa</i>. This is consistent with the table entry for <i lang=\"ain-Latn\">wa</i> (line 90) which states it marks source, not path, and that path uses <i lang=\"ain-Latn\">kari</i>. However, the example sentence for <i lang=\"ain-Latn\">wa</i> (lines 159-162) uses <i lang=\"ain-Latn\">wa</i> to mean 'from the mountains', which is a source. The contrast here is between path and source, which is consistent.",
+    "quote": "requires the postpositional adverb <A w=\"kari\" gl=\"through, via\" />, not\n\t\t<i lang=\"ain-Latn\">wa</i> <Ref k=\"nakagawa2024\" p=\"297\" />.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#013",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "146",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that <i lang=\"ain-Latn\">ta</i> marks the endpoint of arrival and is identical to the <i lang=\"ain-Latn\">ta</i> marking existence at a location. This aligns with the main text (lines 125-128) which states <i lang=\"ain-Latn\">ta</i> covers both. However, the table entry for <i lang=\"ain-Latn\">ta</i> (line 81) lists 'arrival goal' as one of its meanings, and the note here reinforces this. This seems consistent.",
+    "quote": "note=\"Locative ta marks the endpoint of arrival, identical in form to existence-location ta.\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#012",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "137",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that <i lang=\"ain-Latn\">pet-ka</i> is 'river-surface' and that <i lang=\"ain-Latn\">ka</i> is the locative noun. However, the main text (line 52) identifies <A w=\"or\" gl=\"place, interior of\" /> as the primary locative noun that converts common nouns into ⟨place⟩-arguments. This note implies <i lang=\"ain-Latn\">ka</i> also functions as a locative noun in this context.",
+    "quote": "note=\"pet-ka = river-surface (the locative noun ka 'top/surface' heads the ⟨place⟩ phrase). Locative ta marks existence at a location.\"",
+    "suggestion": "Clarify the role of <i lang=\"ain-Latn\">ka</i> as a locative noun or ensure consistency with the definition of locative nouns provided elsewhere in the chapter.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#004",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "39",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">en=akkari</i> is 'more than me'. The morpheme <i lang=\"ain-Latn\">en</i> is glossed as '1SG.A' (first person singular agentive). However, the table states that postpositional adverbs can take *object* person prefixes. This suggests <i lang=\"ain-Latn\">en</i> should be an object prefix, not an agentive one.",
+    "quote": "some do: <i lang=\"ain-Latn\">en=akkari</i> 'more than me',",
+    "suggestion": "Correct the gloss of <i lang=\"ain-Latn\">en</i> to reflect its function as an object prefix in this context (e.g., '1SG.O').",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">i=os</i> is 'after me'. The morpheme <i lang=\"ain-Latn\">i</i> is glossed as '3SG.A' (third person singular agentive). Similar to the previous point, this should likely be an object prefix.",
+    "quote": "<i lang=\"ain-Latn\">i=os</i> 'after me'",
+    "suggestion": "Correct the gloss of <i lang=\"ain-Latn\">i</i> to reflect its function as an object prefix in this context (e.g., '3SG.O').",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#003",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "34",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">eun k=arpa</i> is glossed as 'I go there'. The table states that postpositional adverbs can open a phrase alone. If <i lang=\"ain-Latn\">eun</i> is a postpositional adverb, it should be glossed as such, and the translation should reflect its meaning. The current gloss 'there' is ambiguous and might be conflating <i lang=\"ain-Latn\">eun</i> with a locative adverb.",
+    "quote": "yes (<i lang=\"ain-Latn\">eun k=arpa</i> 'I go there')",
+    "suggestion": "Clarify the gloss for <i lang=\"ain-Latn\">eun</i> in this example to accurately reflect its function as a postpositional adverb, or adjust the translation to match the gloss.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "postpositions-local-case-and-motion-events~p1#002",
+  "chapter": "postpositions-local-case-and-motion-events",
+  "lines": "29",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">eun</i> is 'to auntie', but the table entry states that postpositional adverbs take 'any nominal'. The example shows <i lang=\"ain-Latn\">eun</i> taking <i lang=\"ain-Latn\">unarpe</i> ('auntie'), which is a nominal. However, the gloss 'to auntie' implies a specific meaning ('to' + 'auntie') rather than just 'auntie'. If <i lang=\"ain-Latn\">eun</i> is the postposition, then 'auntie' should be the nominal it takes.",
+    "quote": "no — takes any NP (<i lang=\"ain-Latn\">unarpe eun</i> 'to auntie')",
+    "suggestion": "Clarify the gloss for <i lang=\"ain-Latn\">eun</i> in this context, or ensure the translation accurately reflects the gloss.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

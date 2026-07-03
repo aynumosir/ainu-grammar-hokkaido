@@ -1,0 +1,476 @@
+[
+ {
+  "id": "external-possession-possessor-raising~p1#007",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "166",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '所属形的接頭辞' is provided in parentheses. While not strictly an error, it's worth ensuring consistency in whether such terms are included and if they are consistently translated or glossed.",
+    "quote": "a set of <em>affiliative-type prefixes</em> (所属形的接頭辞):",
+    "suggestion": "Verify if this is a standard practice for this chapter/book and ensure consistency.",
+    "confidence": 0.4
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss of the Ainu word e- contains an em dash ('—') which appears to be a placeholder or formatting artifact. Standard glossing should use a meaningful word or a hyphen to indicate a bound element. The em dash may be a typographical error.",
+    "quote": "gl=\"its tip/head of —\"",
+    "suggestion": "Replace the em dash with a hyphen or a suitable word (e.g., 'its tip/head of something') depending on the intended meaning.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#001",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "20",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the term 'possessor raising' is marked as 'contested', but the preceding sentence states it 'enters the literature with <Ref k=\"sato2016\" />'. This implies a direct lineage, which might be contradicted by the 'contested' status.",
+    "quote": "and is restated in <Ref k=\"kobayashi2025\" p=\"166–167, 173–175\" /> ‹contested›.",
+    "suggestion": "Clarify the relationship between Sato 2016 and Kobayashi 2025, especially in light of the 'contested' status.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a statement about the historical fact that the label 'possessor raising' appears in a source (Kobayashi 2025). The tag should apply to a linguistically contested claim, not to a bibliographic statement. This misplacement may confuse readers about what is actually contested.",
+    "quote": "restated in <Ref k=\"kobayashi2025\" p=\"166–167, 173–175\" /> ‹contested›.",
+    "suggestion": "Move the tag to the specific analysis that is contested (e.g., the analysis of the raising itself), or remove it if it only reports the existence of the label.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#002",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "36-38",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'body-part NI' lists Kobayashi 2025 (pp. 173-175) and then Satō (2012: 8, cited in Kobayashi 2025: 173). This is redundant and potentially confusing, as the primary source is Kobayashi, who cites Satō.",
+    "quote": "<td>\n\t\t\t\t\t<Ref k=\"kobayashi2025\" p=\"173–175\" />; Satō (2012: 8, cited in\n\t\t\t\t\t<Ref k=\"kobayashi2025\" p=\"173\" />)\n\t\t\t\t</td>",
+    "suggestion": "Simplify the citation to <Ref k=\"kobayashi2025\" p=\"173–175\" /> and potentially add a note about Satō's earlier work if it's crucial.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation style is inconsistent: in-line author-date reference mixed with embedded <Ref> tag. This creates redundancy and potential confusion in formal citation tracking.",
+    "quote": "Satō (2012: 8, cited in <Ref k=\"kobayashi2025\" p=\"173\" />)",
+    "suggestion": "Use only the <Ref> tag with full attribution; rephrase to \"(Satō 2012: 8, cited in Kobayashi 2025: 173)\" or integrate fully into the Ref system.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#017",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "134",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss shows \"1SG.S=wave-lift\", but the morpheme segmentation includes \"ku=\" as 1SG.S, while \"koy\" is 'wave'. The gloss incorrectly merges \"koy-yanke\" as a single unit without separating the incorporated noun. Also, \"1SG.S\" gloss does not align with free translation 'The wave lifted me' — should be object, not subject.",
+    "quote": "m=\"ku=koy-yanke\" g=\"1SG.S=wave-lift\"",
+    "suggestion": "Revise gloss to: \"1SG.O=wave-lift\" or \"wave-lift=1SG.O\" depending on alignment, and ensure morpheme boundaries match gloss segmentation.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Free translation implies agentive subject 'the wave' and object 'me', but the gloss \"1SG.S=wave-lift\" labels the 1SG as subject (S), contradicting the translation. This is a direct inconsistency between gloss and translation.",
+    "quote": "tr=\"The wave lifted me.\"",
+    "suggestion": "Revise either gloss or translation. If the verb is unaccusative with promoted object, translation should reflect passive-like meaning, e.g., \"I got lifted by a wave\", or gloss should mark object (O), not subject (S).",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#021",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "262",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent clitic marking: uses \"a=\" but elsewhere uses \"=an\" (line 103). Should clarify whether \"a=\" is prefix or clitic; notation should be consistent.",
+    "quote": "<A w=\"a=\" gl=\"4.A / unspecified possessor\" />",
+    "suggestion": "Use consistent notation: if clitic, write \"=a\"; if prefix, \"a=\". Given context, \"a=\" is likely correct as prefix.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#020",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "217-218",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting: \"e-\" and \"o-\" in italics vs. plain text in cross-reference. The cross-reference should also format the prefixes consistently.",
+    "quote": "The strings <i lang=\"ain-Latn\">e-</i> and <i lang=\"ain-Latn\">o-</i> are homophonous with the <Xr ch=\"applicative-e\">e- applicative</Xr>",
+    "suggestion": "Use <i lang=\"ain-Latn\">e-</i> and <i lang=\"ain-Latn\">o-</i> in the cross-reference link text as well.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#019",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "174-204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of italics and lang tagging: some forms use <i lang=\"ain-Latn\">, others just <i>. All Ainu forms should uniformly carry lang=\"ain-Latn\" for accessibility and styling.",
+    "quote": "<i lang=\"ain-Latn\">e-kay</i>",
+    "suggestion": "Ensure all Ainu lexical forms in table use <i lang=\"ain-Latn\">, e.g., <i lang=\"ain-Latn\">e-kay</i>.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#013",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "223",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag ‹contested› follows a specific page reference for a claim about surface-transparency. It is unclear whether the contestation concerns the claim itself or the broader analysis. This can misrepresent the support provided by the citation.",
+    "quote": "not always surface-transparent <Ref k=\"kobayashi2025\" p=\"167\" /> ‹contested›.",
+    "suggestion": "Clarify the scope of the contestation; for example, reformulate as '…not always surface-transparent (<Ref k=\"kobayashi2025\" p=\"167\" />), though this view is ‹contested›.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#011",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "341",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'the read sources leave open' is meta-commentary about the research process rather than prose for the reader. It also uses the term 'read sources' which is a pipeline register leak.",
+    "quote": "a question the read sources leave open ‹speculative›.",
+    "suggestion": "Rephrase to something like 'is not addressed in the available literature' or 'remains unclear from the sources'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#009",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "248",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence describes the functions of the <i lang=\"ain-Latn\">ko-</i>, <i lang=\"ain-Latn\">e-</i>, and <i lang=\"ain-Latn\">o-</i> applicatives based on Bugaeva's typological survey. However, the text in section 'Affiliative-type prefixes e- and o-' (lines 163-225) presents <i lang=\"ain-Latn\">e-</i> and <i lang=\"ain-Latn\">o-</i> as having different functions (related to possession/location on a body part) and attaching to unaccusatives, distinct from the applicative use. This sentence seems to conflate the two uses of <i lang=\"ain-Latn\">e-</i> and <i lang=\"ain-Latn\">o-</i>.",
+    "quote": "the <i lang=\"ain-Latn\">ko-</i> applicative is the primary beneficiary/possessor-promotion prefix; <i lang=\"ain-Latn\">e-</i> adds a locative or goal; <i lang=\"ain-Latn\">o-</i> adds a source or endpoint.",
+    "suggestion": "Clarify that the functions described here (locative, goal, source, endpoint) pertain to the *applicative* use of <i lang=\"ain-Latn\">e-</i> and <i lang=\"ain-Latn\">o-</i>, distinguishing them from their 'affiliative-type' function.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#008",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "233",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the applicative prefixes lists Bugaeva 2006 (p. 813) and Bugaeva 2010 (pp. 749-751). If Bugaeva 2010 covers the same material as Bugaeva 2006, or supersedes it, it might be more efficient to cite only the most comprehensive source or clarify the relationship.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"189, 424\" />; <Ref k=\"bugaeva2006\" p=\"813\" />; <Ref k=\"bugaeva2010\" p=\"749–751\" />.",
+    "suggestion": "Check if Bugaeva 2010 supersedes Bugaeva 2006 for this point and adjust citations accordingly.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#005",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "149",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'ex. 4' from Kobayashi 2025, but the main citation for the example is on line 147, which is 'kobayashi2025:174'. This creates a minor inconsistency in referencing.",
+    "quote": "note=\"Kobayashi 2025: ex. 4. rera 'wind' is incorporated into paru 'blow/fan'; the former object konam 'leaf' surfaces as the 3rd-person (zero) intransitive subject of the derived unaccusative rera-paru.\"",
+    "suggestion": "Ensure the example number in the note aligns with the page number cited for the example.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#004",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "140",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 36-38, the note cites Satō (2012) as cited by Kobayashi (2025). It would be more consistent to cite Kobayashi directly as the primary source for this example.",
+    "quote": "note=\"Base transitive: koy (wave, A) yanke (lift) en= (me, O). After koy is incorporated, en= is promoted to intransitive subject; the 1SG.S form ku= surfaces on the derived unaccusative koy-yanke. Satō (2012: 8, cited in Kobayashi 2025: 167).\"",
+    "suggestion": "Change the citation to 'Kobayashi 2025: 167' or similar, and potentially add a note about Satō's earlier work if necessary.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#003",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "108",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'type ③-2: tek→teke', which seems to be an internal reference or a specific classification not fully explained in the text. The arrow notation might be inconsistent with other parts of the document.",
+    "quote": "note=\"The body-part tek 'hand' takes its short affiliative suffix -e (type ③-2: tek→teke) and is incorporated into pase 'be heavy'. The 4th-person intransitive subject =an surfaces as the subject of the derived verb, not as a prefix on the body-part noun. The reading is 'our/the-relevant-persons' hands became heavy/infirm': possessor raised to subject.\"",
+    "suggestion": "Clarify or remove the internal notation 'tek→teke' if it's not standard terminology or explained elsewhere.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#022",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "301",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent notation: \"i=\" used for clitic, but prefix is \"i-\". Confusing homophony claim if forms are not distinguished orthographically.",
+    "quote": "a related use of <i lang=\"ain-Latn\">i=</i> as the fourth-person object clitic",
+    "suggestion": "Clarify distinction: use \"i-\" for prefix, \"=i\" for clitic, to avoid confusion.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#018",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "140",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The note claims en= (1SG.O) is promoted to subject, but the example uses ku=, not en=. This creates a mismatch between the explanation and the form used.",
+    "quote": "Base transitive: koy (wave, A) yanke (lift) en= (me, O). After koy is incorporated, en= is promoted to intransitive subject; the 1SG.S form ku= surfaces",
+    "suggestion": "Either change the example to use en= or correct the note to say ku= is the surface realization of the promoted argument.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#016",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "115-116",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent citation format: mixing narrative citation (Satō 2012: 20–21) with embedded <Ref> tag. This creates pipeline register leakage and risks double-counting sources.",
+    "quote": "Satō 2012: 20–21, as quoted in <Ref k=\"kobayashi2025\" p=\"173\" />",
+    "suggestion": "Standardize: \"(quoted in Kobayashi 2025: 173, citing Satō 2012: 20–21)\" and rely on <Ref> for full source.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#015",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "96-97",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Redundant citation: Satō is again cited via Kobayashi 2025, but already mentioned in table above. Repeating the same citation as an independent source inflates epistemic weight.",
+    "quote": "Satō (2012: 8, cited in <Ref k=\"kobayashi2025\" p=\"173\" />) and <Ref k=\"kobayashi2025\" p=\"173\" /> give the following contrast:",
+    "suggestion": "Consolidate references: \"As previously cited (Satō 2012: 8 in Kobayashi 2025: 173), the following contrast is given:\"",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#014",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "11-13",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example in quotes describes a construction where the possessor ('him') is the object of the verb, but the gloss implies a dative-shift structure. However, the surrounding text claims Hokkaido Ainu lacks this type, so the example may be misleading or incorrectly framed as a counterexample.",
+    "quote": "Hokkaido Ainu lacks a dative-shift EP construction of the type common in European languages ('the wave hit <em>him</em> on the shoulder').",
+    "suggestion": "Rephrase the example to clarify it is illustrating a structure absent in Ainu, not one present.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#012",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "17, 342",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Prose includes references to 'read sources' and 'read source', which are meta-commentary on the authors' own survey process rather than statements about the literature. This breaks the illusion of a finished text and should be replaced with neutral phrasing (e.g., 'published sources' / 'accessible literature').",
+    "quote": [
+     "No read source applies the term \"external possession\" to Hokkaido Ainu directly; the label \"possessor raising\" (所有者の主語への昇格) enters the literature with <Ref k=\"sato2016\" /> and is restated in <Ref k=\"kobayashi2025\" p=\"166–167, 173–175\" /> ‹contested›.",
+     "a question the read sources leave open"
+    ],
+    "suggestion": "Replace 'read source(s)' with 'published source(s)' or 'accessible literature' consistently.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#010",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "328",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence states that Kaiser 1998 treats the EP reading as solely due to the applicative operation, with NI as a feeding process. However, the previous paragraph (lines 241-244) states that Kaiser 1998 analyzes a subset of these configurations as the *interaction* of NI with applicative formation, where a body-part noun is incorporated *while* the applicative slot is filled by the possessor. This suggests a more integrated view than 'applicative operation alone'.",
+    "quote": "The applicative account in <Ref k=\"kaiser1998\" /> treats the EP reading as the product of the applicative operation alone, with NI as an independent feeding process ‹contested›.",
+    "suggestion": "Reconcile the description of Kaiser 1998's analysis. It might be that Kaiser views the *result* as an applicative phenomenon, but the *mechanism* involves NI.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "external-possession-possessor-raising~p1#006",
+  "chapter": "external-possession-possessor-raising",
+  "lines": "159",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that natural-force NI creates an unaccusative that can undergo further derivation. However, the previous section (lines 153-156) states that natural-force NI feeds the affiliative-type prefixes <i lang=\"ain-Latn\">e-</i> and <i lang=\"ain-Latn\">o-</i> because they select exclusively for unaccusative hosts. This implies that the derived unaccusative *can* undergo further derivation, which is consistent. However, the phrasing 'can undergo further derivation' might be slightly underspecified if the primary point is that it *does* feed specific further derivations.",
+    "quote": "body-part NI makes the erstwhile possessor the subject of a new intransitive; natural-force NI makes the erstwhile patient the subject of a new unaccusative that can undergo further derivation ‹corpus-confirmed›.",
+    "suggestion": "Consider rephrasing to explicitly state that it feeds the affiliative-type prefixes, as established earlier in the section.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

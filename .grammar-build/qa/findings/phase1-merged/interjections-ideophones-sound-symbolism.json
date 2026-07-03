@@ -1,0 +1,560 @@
+[
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#020",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "170, 323",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag 'corpus-suggested' is used twice (lines 170, 323) where the only cited source is a personal communication from the aynu-corpora Discord, not a corpus. This inflates the level of evidence attributed to the claim.",
+    "quote": "‹corpus-suggested› (lines 170 and 323, attached to claims supported only by a community Discord post)",
+    "suggestion": "Replace '‹corpus-suggested›' with '‹speculative›' or '‹original-needs-review›' on both lines.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about the pragmatic scale of thank-you forms is tagged as ‹corpus-suggested› but is supported only by a Discord attribution (nukopoli, aynu-corpora Discord, 2024-12-26), which is not corpus data per se. This inflates the epistemic status.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Change ‹corpus-suggested› to ‹community-asserted› or ‹speculative› to better reflect the source type.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#010",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "289",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=eat' for the verb 'e' is unclear. '4.A' likely refers to a 4th person agent, but the 'A' is not explained. The translation 'They eat intestines' implies a plural subject, which aligns with '4.A' potentially representing an unspecified plural human agent.",
+    "quote": "<Ex\n        m=\"kankan a=e\"\n        g=\"intestines 4.A=eat\"\n        tr=\"They eat intestines.\"\n        constructed\n        note=\"Reduplicative noun kankan as a direct object. The 4th-person transitive agent a= marks unspecified human participants. Constructed to illustrate the argument-noun status of reduplicative mimetics.\"\n        />",
+    "suggestion": "Clarify the meaning of '4.A' in the gloss, or ensure it's consistent with the chapter's established glossing conventions.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses '4.A=eat' which mixes person/argument marking with verb root. Standard Leipzig practice would be to separate the agreement marker and verb: '4.A=eat' should be '4.A=eat' only if 'eat' is the full verb; otherwise, it should be segmented. Here, 'a=' is 4th person agent, '=e' is transitive suffix, so gloss should reflect that.",
+    "quote": "g=\"intestines 4.A=eat\"",
+    "suggestion": "Change to `g=\"intestines 4.AG=eat\"` or `g=\"intestines 4.A=eat\"` with explanation if 4.A is standard in the grammar, but ensure consistency with the rest of the book.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#002",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "85",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 131). Consistency is needed.",
+    "quote": "upper-stream Saru <i lang=\"ain-Latn\">hinna</i>; lower-stream <i lang=\"ain-Latn\">hunna</i>",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The slash notation suggests free variation, but the table caption specifies dialectal distribution (upper vs lower stream). The orthography should reflect this consistently in the Function column.",
+    "quote": "<i lang=\"ain-Latn\">hinna</i> / <i lang=\"ain-Latn\">hunna</i>",
+    "suggestion": "In the Function column (line 84), clarify that the variation is dialectal: 'thanks (women's register; upper-stream hinna, lower-stream hunna)'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#025",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "373",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'hail' is a free translation of the ideophone `kaukau`, but in interlinear glossing, ideophones should be glossed as such (e.g., IDEOPH) rather than by their translation equivalent. Using 'hail' as a gloss implies it's a lexical noun.",
+    "quote": "g=\"hail QUOT do=4.S\"",
+    "suggestion": "Change to `g=\"IDEOPH QUOT do=4.S\"` or `g=\"kaukau QUOT do=4.S\"` to avoid misrepresenting the word class.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#023",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "218",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'quickly come' does not use Leipzig interlinear conventions. It should be two separate glosses aligned to the two words in `m`: 'hetak' and 'ek'.",
+    "quote": "g=\"quickly come\"",
+    "suggestion": "Change to `g=\"quickly come.IMP\"` or split into morpheme-aligned glosses if more detail is intended.",
+    "confidence": 0.98
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation implies an imperative directed at someone, but the gloss does not mark the verb as imperative. The verb `ek` is known to be 'come', but the gloss should reflect its imperative form.",
+    "quote": "tr=\"Come quickly!\"",
+    "suggestion": "Update gloss to include IMP marker, e.g., `g=\"quickly come.IMP\"`.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#024",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "277",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sentence begins with 'A small set of nouns' but the following table lists forms that are not clearly established as nouns in the interlinear examples. The classification should be confirmed or hedged.",
+    "quote": "A small set of nouns encodes inherent plurality or collective multiplicity through",
+    "suggestion": "Consider rephrasing to 'A small set of lexical items' unless noun status is definitively established.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#018",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "384",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 85, 131, 175, 300, 310, 323, 330, 347). Consistency is needed.",
+    "quote": "The formal-noun complement system is described in <Xr ch=\"formal-defective-nouns\" />.",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#017",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "368",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that the applicability of the quotative frame to sound-depicting content rests on limited corpus evidence is supported by a single source and marked as 'corpus-suggested'. This is appropriate.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"280\" /> ‹corpus-suggested›.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#016",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "347",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 85, 131, 175, 300, 310, 323, 330). Consistency is needed.",
+    "quote": "<A w=\"moyre\" gl=\"slowly, softly\" />, <A w=\"tunas\" gl=\"immediately\" />, and\n        <A w=\"tuyma\" gl=\"far away\" /> show that the preverbal modifier slot is productive for",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#015",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "330",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 85, 131, 175, 300, 310, 323). Consistency is needed.",
+    "quote": "of <i lang=\"ain-Latn\">kamuy yukar</i> and the formulaic diction of\n        <i lang=\"ain-Latn\">uwepeker</i> — constitute a distinct expressive register that intersects",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#014",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "320",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'hioy'oy' appears in line 79, but 'hioy'oy' appears here. Consistency is needed.",
+    "quote": "the scale\n        <i lang=\"ain-Latn\">hioy'oy</i> &lt; <i lang=\"ain-Latn\">hinna</i> &\n        <i lang=\"ain-Latn\">hinna hinna</i> represents gradient expressiveness through reduplication",
+    "suggestion": "Ensure consistent spelling of 'hioy'oy'/'hioy'oy' throughout the chapter.",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 85, 131, 175, 300, 310). Consistency is needed.",
+    "quote": "The adverb inventory includes words with\n        degree-sensitive semantics (<Xr ch=\"adverbs-degree-comparison\" />), but no primary source",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#013",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "310",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 85, 131, 175, 300). Consistency is needed.",
+    "quote": "for Japanese and\n        Korean — cannot be established from the descriptive literature accessible for this grammar.",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#012",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "303",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the statement that reduplicative nouns are listed individually in dictionaries rather than derived by a synchronic morphological operation is split between two sources. It's unclear if both sources support this specific claim or if one supports the listing and the other the lack of productive derivation.",
+    "quote": "<Ref k=\"tamura1996\" />; <Ref k=\"nakagawa2024\" p=\"264–265\" />.",
+    "suggestion": "Clarify which source supports which part of the claim, or ensure both sources fully support the entire statement.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#011",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "300",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 85, 131, 175). Consistency is needed.",
+    "quote": "as in <i lang=\"ain-Latn\">hinna hinna</i> above).",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#009",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "235",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 疊語法 is not glossed. While the parenthetical explanation is helpful, a direct gloss would be more informative.",
+    "quote": "what Kindaichi and Chiri's grammar calls 疊語法 (reduplicative word\n        formation).",
+    "suggestion": "Provide a gloss for 疊語法, e.g., 'reduplicative word formation'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#008",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "227",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text refers to 'reduplicative mimetics' in the following section, but the following section is titled 'Ideophones and reduplicative mimetics' and discusses 'reduplicative nouns'. The term 'mimetics' might be too broad or not precisely aligned with the content of the next section.",
+    "quote": "Its CVCV\n        shape is shared with the reduplicative mimetics discussed in the following section,",
+    "suggestion": "Clarify if 'mimetics' is intended to encompass the 'reduplicative nouns' or if there's a distinction being made.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#007",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "204",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the proposed analysis of 'hetak ek' is marked as 'proposed' and 'contested', but the evidence grade is 'contested'. This is redundant and could be simplified.",
+    "quote": "(nukopoli, aynu-corpora\n        Discord, 2024-11-24, proposed; <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Remove 'proposed' from the citation as 'contested' already conveys the uncertainty.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#006",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "175",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 85, 131). Consistency is needed.",
+    "quote": "The gender-register conditioning of these forms\n        is treated in <Xr ch=\"gendered-register-speech\" />.",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#005",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'iyayiraykere' appears in line 74 and the table, but 'iyairaykere' appears here. Consistency is needed.",
+    "quote": "with <i lang=\"ain-Latn\">iyayiraykere</i> as the most formal register expression",
+    "suggestion": "Ensure consistent spelling of 'iyayiraykere'/'iyairaykere' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#004",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "157",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'iyayiraykere' appears in line 169, but 'iyairaykere' appears in line 74 and the table. Consistency is needed.",
+    "quote": "from <A w=\"yairayke\" gl=\"be grateful\" />, analogous to",
+    "suggestion": "Ensure consistent spelling of 'iyayiraykere'/'iyayiraykere' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#003",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "131",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'Hokkaido' and 'Hokkaidō' (line 85). Consistency is needed.",
+    "quote": "<A w=\"irankarapte\" gl=\"greetings\" /> is the pan-Hokkaido greeting formula in the modern\n        documentary record and is the form standard in revitalization pedagogy",
+    "suggestion": "Standardize to 'Hokkaido' or 'Hokkaidō' throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#001",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "24",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'hetak' and 'hokure' can function as manner adverbs, but then immediately says they retain their classification as interjections in Nakagawa's analysis. This creates a slight ambiguity about their primary classification in this context.",
+    "quote": "while retaining their classification as interjections in Nakagawa's analysis ‹contested›",
+    "suggestion": "Clarify if Nakagawa's analysis classifies them *primarily* as interjections that *can* function adverbially, or if there's a dual classification.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#026",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "150",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form is spelled without an apostrophe, but in line 142 it appears as `irankarapte` in the Ex block. However, community discussions often include glottal stops. While not necessarily inconsistent, the lack of diacritics may mask phonological detail. However, since the chapter consistently uses `irankarapte`, this may be editorial choice.",
+    "quote": "The morphological structure of <i lang=\"ain-Latn\">irankarapte</i> is not decomposed",
+    "suggestion": "null",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#022",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "169",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form is spelled <i>iyayiraykere</i> in line 169, but the corresponding entry in the table (line 73) and earlier discussion use <i>iyairaykere</i>. This creates an orthographic inconsistency.",
+    "quote": "<i lang=\"ain-Latn\">iyayiraykere</i>",
+    "suggestion": "Change <i>iyayiraykere</i> to <i>iyairaykere</i> for consistency with the rest of the chapter.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#021",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "255, 372",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form 'kaukau' is first presented as a reduplicative noun with the meaning 'hail' (encoding inherent plurality), later used without comment as an ideophone for a sound in a quotative frame. The chapter does not acknowledge the dual classification, which contradicts the earlier treatment as a noun only.",
+    "quote": "kaukau (line 255: noun meaning 'hail' in the reduplicative-noun table; line 372: used in a constructed ideophone example 'kaukau sekor ki=an' tr 'It makes a rattling/pattering sound.')",
+    "suggestion": "Add a note explaining that 'kaukau' also functions as an ideophone describing the sound of hail, or revise the constructed example to use a form not already listed as a noun.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "interjections-ideophones-sound-symbolism~p1#019",
+  "chapter": "interjections-ideophones-sound-symbolism",
+  "lines": "74, 156, 170",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The same lexeme is spelled with two different romanizations within the chapter: 'iyairaykere' in the inventory table and line 156, but 'iyayiraykere' in line 170.",
+    "quote": "iyairaykere (table, line 74 and line 156) vs iyayiraykere (line 170)",
+    "suggestion": "Standardise to one form; based on the dictionary entry <A w=\"iyairaykere\" ...> at line 156, prefer 'iyairaykere'.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

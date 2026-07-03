@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "158-161",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "An object may still be indexed on the verb, as in <i lang=\"ain-Latn\">iteki e yan</i> ‘do not eat it’",
+  "issue": "The example 'iteki e yan' includes the politeness/plural particle 'yan', making it a polite prohibitive, not a bare prohibitive as the context claims. The preceding text discusses the bare prohibitive, where the verb carries no subject index and no yan.",
+  "suggestion": "Either replace the example with a bare prohibitive such as 'iteki e', or clarify that the example illustrates the polite form and move it to the appropriate paragraph.",
+  "confidence": 0.95,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "224-231",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"PROH 4.O=accompany CONJ\" … tr=\"Do not follow me.\"",
+  "issue": "The gloss marks the object prefix as 4.O (indefinite person), but the translation uses 'me' (first person singular). The note explains that the indefinite marker references the narrator, but the gloss does not reflect this pragmatic use, creating a person-number mismatch between gloss and translation.",
+  "suggestion": "Either change the gloss to reflect the first-person function (e.g., '1SG.O') or adjust the translation to match the indefinite interpretation (e.g., 'Do not follow anyone.').",
+  "confidence": 0.85,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "337-345",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"PROH scold NEG 2PL.A=do probably FIN\" … tr=\"You are certainly not to scold (him).\"",
+  "issue": "The gloss indicates second-person plural subject (2PL.A=do), but the translation says 'You' without any plural marking. The note confirms the plural index on the verb, so the translation should explicitly address a plural addressee.",
+  "suggestion": "Change the translation to 'You (pl.) are certainly not to scold (him).' to match the gloss.",
+  "confidence": 0.9,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "133",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "Shiranuka has no separate build-time dialect label, so the example is tagged HK.",
+  "issue": "This note addresses the internal editorial process ('build-time dialect label') rather than the linguistic content for the reader.",
+  "suggestion": "Rephrase to state the linguistic fact: 'The Shiranuka dialect is not separated in the tagging system, so the example is labeled generically as Hokkaido Ainu (HK).' Or simply remove the remark if it is not needed.",
+  "confidence": 0.9,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

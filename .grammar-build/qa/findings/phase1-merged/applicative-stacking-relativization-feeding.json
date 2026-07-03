@@ -1,0 +1,976 @@
+[
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#022",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "271",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrases '‹original-needs-review›', 'factbase-licensed proposal', and 'licensed theory-magnet domain' are meta-commentary related to the book's production and theoretical framing, not direct content for the reader.",
+    "quote": "‹original-needs-review›. The synthesis that a single structural promotion underlies both the NI-feeding and the relativization-feeding paths is a factbase-licensed proposal for the licensed theory-magnet domain of applicatives",
+    "suggestion": "Remove '‹original-needs-review›'. Rephrase the sentence to present the synthesis as a proposal without referencing the production process or theoretical framing jargon.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline-register language: 'factbase-licensed proposal', 'licensed theory-magnet domain', and the editorial tag 'original-needs-review' are addressed to the production process, not to the reader.",
+    "quote": "The synthesis that a single structural promotion underlies both the NI-feeding and the relativization-feeding paths is a factbase-licensed proposal for the licensed theory-magnet domain of applicatives ‹original-needs-review›.",
+    "suggestion": "Remove the tag and rewrite as a straightforward statement: 'This analysis implies that a single structural promotion underlies both the NI-feeding and the relativization-feeding paths.'",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Contains both 'factbase-licensed' and 'theory-magnet domain', which are pipeline jargon, and the visible editorial tag ‹original-needs-review›.",
+    "quote": "is a factbase-licensed proposal for the licensed theory-magnet domain of applicatives ‹original-needs-review›.",
+    "suggestion": "Replace with neutral scholarly language, e.g., 'is proposed here as a unified analysis of applicative promotion'. Remove the epistemic tag.",
+    "confidence": 0.97
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#001",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "19",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase '‹original-needs-review›' and 'factbase-licensed proposal for editorial review' are meta-commentary about the production process, not content for the reader.",
+    "quote": "‹original-needs-review›. This synthesis — grounded in the convergent evidence of Shibatani (1990), Nakagawa (2024), Kaiser (1998), and Dal Corso (2020) on the promotion logic — is offered as a factbase-licensed proposal for editorial review.",
+    "suggestion": "Remove '‹original-needs-review›'. Rephrase the sentence to state the synthesis as a proposal or hypothesis without referencing the production process.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This phrase refers to the internal production process of the book rather than the content for the reader.",
+    "quote": "factbase-licensed proposal for editorial review.",
+    "suggestion": "Remove or rephrase to something like 'a proposal for review'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline-register language addressed to editorial process rather than the reader; tags and phrases like 'factbase-licensed proposal for editorial review' and 'original-needs-review' are meta-commentary inappropriate for a published reference grammar.",
+    "quote": "‹original-needs-review›. This synthesis — grounded in the convergent evidence of Shibatani (1990), Nakagawa (2024), Kaiser (1998), and Dal Corso (2020) on the promotion logic — is offered as a factbase-licensed proposal for editorial review.",
+    "suggestion": "Remove the tag and rewrite the sentence as a declarative summary of the analysis, e.g. 'This synthesis — grounded in the convergent evidence … on the promotion logic — accounts for both feeding relations.'",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹original-needs-review› is visible in the prose, which is a pipeline register leak. These tags should not appear in the final text as they are editorial markers for internal review.",
+    "quote": "‹original-needs-review›",
+    "suggestion": "Remove ‹original-needs-review› or replace with an appropriate unmarked consensus or speculative tag if needed.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'factbase-licensed proposal for editorial review' is a pipeline register leak, referencing internal production processes rather than serving the reader.",
+    "quote": "is offered as a factbase-licensed proposal for editorial review.",
+    "suggestion": "Rephrase to something like 'is proposed here based on convergent evidence' to maintain scholarly tone without exposing editorial mechanics.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#008",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "145",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 139, the Ainu form is presented correctly. However, the note for Ex 173 (line 170) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "<i lang=\"ain-Latn\">pira or un hokuste</i>",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Hyphenation inconsistency: the verb 'hokuste' appears without hyphens in the first two columns but is broken as 'hokus-te' in the third column (incorporated form). While morphological decomposition may motivate the hyphen, the difference in presentation could confuse readers. All three columns of a derivation table should use consistent hyphenation conventions.",
+    "quote": "pira ko-hokuste (col. 2) vs pira-ko-hokus-te (col. 3)",
+    "suggestion": "Either hyphenate 'hokuste' consistently throughout the table (e.g. 'hokus-te' in all columns) or remove the hyphen in the third column (e.g. 'pira-ko-hokuste') if the break is not morphologically required.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent spacing: 'pira or un hokuste' appears with spaces between all elements, but in Ainu orthography, postpositions like 'un' may be written closer or as clitics. Compare with other examples like 'at ani uk' which are spaced similarly, but consistency across the chapter should be confirmed.",
+    "quote": "pira or un hokuste",
+    "suggestion": "Verify standard spacing convention for postpositional phrases in this grammar and apply uniformly. If no standard, pick one and apply consistently.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#027",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "324",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'in the read sources' refers to the production process and the sources consulted, not directly to the reader's understanding of the content.",
+    "quote": "Whether both can independently head distinct relative clauses within a complex sentence has not been investigated in the read sources ‹speculative›.",
+    "suggestion": "Rephrase to something like 'has not been investigated' or 'remains an open question'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read sources' refers to sources consulted by the author, not by the reader; this is a pipeline term that should be replaced with language appropriate for a published reference.",
+    "quote": "has not been investigated in the read sources",
+    "suggestion": "Change to 'has not been investigated in the available literature' or 'has not been reported in published sources'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "'read sources' is pipeline language referring to the research process, not appropriate for final prose; also, ‹speculative› should not be visible if used as a meta-tag.",
+    "quote": "has not been investigated in the read sources ‹speculative›",
+    "suggestion": "Rephrase to 'has not been investigated in the available sources' and ensure ‹speculative› is not rendered in final output unless part of a controlled epistemic tagging system.",
+    "confidence": 0.93
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#038",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "373",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Referring to what a textbook 'does not cover' may reflect a pipeline concern about source coverage rather than a grammatical point; risks sounding like a literature review gap rather than descriptive content.",
+    "quote": "Ijäs's Basic Lessons 3 and 9 do not cover applicative stacking or the feeding relations",
+    "suggestion": "Rephrase to focus on the grammar's complexity, e.g., 'Applicative stacking and feeding relations are advanced constructions not typically introduced in beginner materials such as Ijäs’s Basic Lessons.'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#037",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "271",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'theory-magnet domain' is opaque jargon; 'licensed' is redundant with the previous 'licensed proposal'. The intended meaning is unclear (maybe 'theory-neutral' or 'theory-internal'?).",
+    "quote": "the licensed theory-magnet domain of applicatives",
+    "suggestion": "Consider replacing with clearer phrasing, e.g. 'the domain of applicative theory' or 'the domain of applicative research'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#033",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "374",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'i-' and '-re' are presented with italics and language tags. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "the lessons treat <i lang=\"ain-Latn\">i-</i> and <i lang=\"ain-Latn\">-re</i> as independent operations without addressing their combination with applicatives or with relativization <Ref k=\"ijas2023\" />.",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'applicatives' is not italicized and lacks a language tag. While it's a technical term, it refers to an Ainu grammatical concept and should ideally be treated consistently with other Ainu terms.",
+    "quote": "The learner grammar's entry point — applicatives as independent valency-raisers — is the correct starting place, with the stacking behavior and its downstream interactions belonging to advanced grammar.",
+    "suggestion": "Italicize 'applicatives' and add `lang=\"ain-Latn\"` if it's intended as an Ainu term, or clarify its status if it's purely English terminology.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#032",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "363",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu terms 'nominal/applicative' and 'forming suffix' are not italicized and lack language tags. While they are technical terms, they refer to Ainu grammatical concepts and should ideally be treated consistently with other Ainu terms.",
+    "quote": "The chained sequence — applicative, then antipassive, then re-applicativization, then relativization or incorporation — is bounded only by the template order (person index | nominal/applicative | root | forming suffix | causative | person index;",
+    "suggestion": "Italicize these terms and add `lang=\"ain-Latn\"` if they are intended as Ainu terms, or clarify their status if they are purely English terminology.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu terms 'applicative', 'causative', 'antipassive', 'reflexive', 'incorporation', and 'nominal' are not italicized and lack language tags. While they are technical terms, they refer to Ainu grammatical concepts and should ideally be treated consistently with other Ainu terms.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"211\" />) and the two-slot ceiling. Each step in the chain either adds a slot (applicative, causative) or removes one (antipassive, reflexive, incorporation), and the feeding paths are open whenever the net result is a nominal standing at the direct-object tier ‹contested›.",
+    "suggestion": "Italicize these terms and add `lang=\"ain-Latn\"` if they are intended as Ainu terms, or clarify their status if they are purely English terminology.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#031",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "359",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'standard feeding logic' describes a theoretical concept within the grammar. While informative, the phrasing could be slightly more direct for a reader.",
+    "quote": "note=\"i-kasuy 'do helping' (antipassive, intransitive) is re-applicativized by e- (purpose 'with work'); monrayke 'work' becomes the applied e-object, restoring transitivity. This e-object is accessible to incorporation or relativization via the standard feeding logic.\"",
+    "suggestion": "No significant change needed, but ensure the language remains reader-focused.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#030",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "353",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'tokaci' appears in the morpheme string without italics or a language tag. Similar to line 165, this is a minor inconsistency in orthography within the morpheme segmentation.",
+    "quote": "m=\"tokaci wa ek pewre kur monrayke e-i-kasuy\"",
+    "suggestion": "Consider if 'tokaci' should be italicized or if the morpheme segmentation allows for such variations. If it's a standard morpheme, it might be acceptable, but it's worth noting for consistency.",
+    "confidence": 0.3
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss uses 'Tokachi' without italics or a language tag. While it's a place name, it's also the name of the dialect/region, and consistency with other dialect references might be beneficial.",
+    "quote": "g=\"Tokachi from come young man work APPL-ANTIP-help\"",
+    "suggestion": "Consider italicizing 'Tokachi' and adding `lang=\"ain-Latn\"` for consistency, or ensure all such proper nouns are handled uniformly.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#029",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "345",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i-' is presented with italics and a language tag. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "Antipassive <i lang=\"ain-Latn\">i-</i> reduces a transitive to intransitive by absorbing the object slot with a generic argument; re-adding an applicative restores transitive valency with a new object, which is then accessible to further incorporation or relativization by the same logic as any other applied object <Ref k=\"bugaeva2021antip\" />; <Ref k=\"bugaevakobayashi2022\" p=\"§4.2.3\" />:",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#028",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "334",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'yay-' and 'si-' are presented with dictionary links, which is good. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "Extra applied objects must be reabsorbed by reflexivization (<A w=\"yay-\" gl=\"self (direct)\" /> / <A w=\"si-\" gl=\"self (indirect)\" />), incorporation, or antipassivization before the verb is finalized.",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented correctly with italics and a language tag. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "The <i lang=\"ain-Latn\">yay-ipe-e-ko-sunke</i> example above instantiates two reabsorption strategies on one verb.",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'wh' is presented with italics and a language tag. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "Bugaeva's (2014 abstract) characterization of Ainu as polysynthetic in Baker's sense — with the caveat that it departs from the Mohawk prototype in word order, in-situ <i lang=\"ain-Latn\">wh</i>, and unrestricted morphological causatives — places this stacking capacity in typological perspective <Ref k=\"bugaeva2014\" />.",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#026",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "313",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented correctly with italics and language tags. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "Parallel forms <i lang=\"ain-Latn\">maw-ko-wen</i> and <i lang=\"ain-Latn\">kur-ko-tunas</i> are noted in the same discussion.",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ko-object' is not italicized and lacks a language tag. While it's a technical term, it refers to an Ainu grammatical concept and should ideally be treated consistently with other Ainu terms.",
+    "quote": "If the <i lang=\"ain-Latn\">ko-</i>-object can reach the subject position in closed-stem environments, promotion to direct object in open-stem environments is the weaker operation — collateral support for the relational account ‹contested›.",
+    "suggestion": "Italicize 'ko-object' and add `lang=\"ain-Latn\"` if it's intended as an Ainu term, or clarify its status if it's purely English terminology.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#025",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "308",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sir-peker' is presented in plain text and not italicized, nor does it have a language tag. This is inconsistent with other presentations of Ainu words.",
+    "quote": "The verb <i lang=\"ain-Latn\">sir-ko-peker</i> 'spend the night' — where <i lang=\"ain-Latn\">ko-</i> interrupts the derivationally closed stem <i lang=\"ain-Latn\">sir-peker</i> — has been analysed (attributed to Satō, reported by nukopoli, 2024-12-05 <Ref k=\"aynucorporadiscord\" />) as a construction in which the <i lang=\"ain-Latn\">ko-</i>-object is promoted to the grammatical subject of the whole predicate: <i lang=\"ain-Latn\">ku=sir-ko-peker</i> 'I spend the night' has the experiencer — originally the applied object — in the subject index position.",
+    "suggestion": "Italicize 'sir-peker' and add `lang=\"ain-Latn\"`.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=sir-ko-peker' is presented with italics and a language tag, which is good. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "the <i lang=\"ain-Latn\">ko-</i>-object is promoted to the grammatical subject of the whole predicate: <i lang=\"ain-Latn\">ku=sir-ko-peker</i> 'I spend the night' has the experiencer — originally the applied object — in the subject index position.",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#024",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "300",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Hokkaido Ainu' is not italicized and lacks a language tag. While it's a proper noun referring to a language variety, consistency with other language/dialect references might be beneficial.",
+    "quote": "Baker's Case-theory predicts this should be impossible, yet it is productive in Hokkaido Ainu <Ref k=\"shibatani1988\" p=\"210–211\" />; <Ref k=\"shibatani1990\" p=\"65–66\" /> ‹contested›.",
+    "suggestion": "Consider italicizing 'Hokkaido Ainu' and adding `lang=\"ain-Latn\"` for consistency, or ensure all such proper nouns are handled uniformly.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#023",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "287",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'Patient-object' is not italicized and lacks a language tag. While it's a technical term, it refers to an Ainu grammatical concept and should ideally be treated consistently with other Ainu terms.",
+    "quote": "A relational account assigns the promoted nominal the relation of direct object from the moment of applicative formation. The applied object inherits full direct-object properties, including gap-licensability and incorporability, and stands at the Object tier of the hierarchy. The primary supporting evidence is morphosyntactic: Ainu marks no case distinction between the base Patient-object and the applied object of a ditransitive — both appear as bare NPs, both are cross-referenced by the single O-index on the verb <Ref k=\"nakagawa2024\" p=\"192\" />; <Ref k=\"bugaevakobayashi2022\" p=\"§4.1.1\" />. Without a formal difference between the two objects, assigning them to distinct tiers of the hierarchy lacks morphosyntactic grounding.",
+    "suggestion": "Italicize 'Patient-object' and add `lang=\"ain-Latn\"` if it's intended as an Ainu term, or clarify its status if it's purely English terminology.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#021",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented correctly with italics and language tags. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "The same promotion operates with <i lang=\"ain-Latn\">ko-</i>. A Goal or Addressee that would appear with <i lang=\"ain-Latn\">un</i> 'to' or <i lang=\"ain-Latn\">tura</i> 'with' can head a relative clause built on a <i lang=\"ain-Latn\">ko-</i>-derived predicate.",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#020",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "249",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'Instrument oblique tier to the Direct Object tier' describes theoretical constructs within the grammar. While informative, the phrasing could be slightly more direct for a reader.",
+    "quote": "note=\"The head noun emus 'sword' is interpreted as the e-object (instrument) of the relative clause. A null gap occupies the applied-object position within the clause; emus appears outside as the head. The construction is possible because e- has promoted emus from the Instrument oblique tier to the Direct Object tier.\"",
+    "suggestion": "No significant change needed, but ensure the language remains reader-focused.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#019",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'emus' appears in the morpheme string without italics or a language tag. Similar to line 165, this is a minor inconsistency in orthography within the morpheme segmentation.",
+    "quote": "m=\"sirkorkamuy a=e-tuye emus\"",
+    "suggestion": "Consider if 'emus' should be italicized or if the morpheme segmentation allows for such variations. If it's a standard morpheme, it might be acceptable, but it's worth noting for consistency.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#018",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "215",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented correctly with italics and language tags. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "<i lang=\"ain-Latn\">mokor</i> 'sleep' freely combine with <i lang=\"ain-Latn\">e-</i> (<i lang=\"ain-Latn\">mokor a=e-wen</i> 'I missed sleeping'; <i lang=\"ain-Latn\">sake a=e-niste</i> 'I am strong at wine')",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented correctly with italics and language tags. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "<i lang=\"ain-Latn\">mokor a=e-wen</i> 'I missed sleeping'; <i lang=\"ain-Latn\">sake a=e-niste</i> 'I am strong at wine')",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#017",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented correctly with italics and language tags. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "<i lang=\"ain-Latn\">o-ni-pici</i> alternating with <i lang=\"ain-Latn\">ni o-pici</i> 'fall from a tree'",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#016",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "197",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'o-tumi-osma' is presented with italics and a language tag, which is good. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "The form <i lang=\"ain-Latn\">tumi osma</i> 'war began' is ambiguous, but <i lang=\"ain-Latn\">o-tumi-osma</i> with the locative applicative <i lang=\"ain-Latn\">o-</i> is unambiguously an incorporated word.",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#015",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "188",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pone' is presented in plain text and not italicized, nor does it have a language tag. This is inconsistent with other presentations of Ainu words.",
+    "quote": "note=\"Stage 3: pone incorporates into the verb word, landing outside ko- but inside the person index a=. The Mirror Principle is satisfied: ko- (morphologically inner, syntactically prior) sits between pone (morphologically outer, syntactically later) and the root kuykuy.\"",
+    "suggestion": "Italicize 'pone' and add `lang=\"ain-Latn\"`.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#014",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "183",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pone' appears in the morpheme string without italics or a language tag. Similar to line 165, this is a minor inconsistency in orthography within the morpheme segmentation.",
+    "quote": "m=\"nea cep a=pone-ko-kuykuy\"",
+    "suggestion": "Consider if 'pone' should be italicized or if the morpheme segmentation allows for such variations. If it's a standard morpheme, it might be acceptable, but it's worth noting for consistency.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#013",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "179",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pone' is presented in plain text and not italicized, nor does it have a language tag. This is inconsistent with other presentations of Ainu words.",
+    "quote": "note=\"Stage 2: ko- promotes pone to core object, dropping tura; pone is now an unmarked argument of the three-place verb.\"",
+    "suggestion": "Italicize 'pone' and add `lang=\"ain-Latn\"`.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#012",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pone' appears in the morpheme string without italics or a language tag. Similar to line 165, this is a minor inconsistency in orthography within the morpheme segmentation.",
+    "quote": "m=\"nea cep pone a=ko-kuykuy\"",
+    "suggestion": "Consider if 'pone' should be italicized or if the morpheme segmentation allows for such variations. If it's a standard morpheme, it might be acceptable, but it's worth noting for consistency.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#011",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "170",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pone' is presented in plain text and not italicized, nor does it have a language tag. This is inconsistent with other presentations of Ainu words.",
+    "quote": "note=\"Stage 1: pone 'bone' is an oblique held by the comitative postposition tura 'with'. It cannot incorporate.\"",
+    "suggestion": "Italicize 'pone' and add `lang=\"ain-Latn\"`.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#010",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "165",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pone' appears in the morpheme string without italics or a language tag. While it's within an `<Ex>` block, the morpheme segmentation itself should ideally maintain consistent orthography if possible, or at least be clearly distinguished from the gloss/translation.",
+    "quote": "m=\"nea cep pone tura a=kuykuy\"",
+    "suggestion": "Consider if 'pone' should be italicized or if the morpheme segmentation allows for such variations. If it's a standard morpheme, it might be acceptable, but it's worth noting for consistency.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#009",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "151",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 139, the Ainu form is presented correctly. However, the note for Ex 173 (line 170) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "<i lang=\"ain-Latn\">turepta kusu arpa</i>",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#007",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'at ani uk' is presented in italics with a language tag, which is consistent with other Ainu forms. However, the note for Ex 165 (line 165) uses 'pone' without italics or a language tag, and Ex 174 (line 174) uses 'pone' similarly. This is a minor inconsistency in how Ainu words are presented when not in an `<Ex>` block.",
+    "quote": "<i lang=\"ain-Latn\">at ani uk</i>",
+    "suggestion": "Ensure all Ainu words outside of `<Ex>` blocks are consistently formatted with italics and the `lang=\"ain-Latn\"` attribute.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#006",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "112",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'applicative-then-incorporation feeding sequence' describes a process within the book's theoretical framework, which is fine, but the overall tone feels slightly like internal documentation.",
+    "quote": "note=\"mun 'grass/weeds' and toy 'soil' are comitative objects first promoted by ko-, then incorporated. The implied patient (the demon's flesh) is cross-referenced by a=. Each verb-word is the output of the applicative-then-incorporation feeding sequence.\"",
+    "suggestion": "No significant change needed, but ensure the language remains reader-focused.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#005",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "80",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'valency and template bookkeeping in Xr:valency-voice-overview' is a meta-commentary about the production process and cross-referencing within the book's structure, not content for the reader.",
+    "quote": "note=\"Root suy-pa 'sway (PL)' carries e- and ko- (both applicative), yay- and si- (both reflexive), the adverbial tuyma 'far', and the incorporated object ram 'heart'. The valency and template bookkeeping in Xr:valency-voice-overview holds at every step.\"",
+    "suggestion": "Remove the reference to 'valency and template bookkeeping' and the cross-reference, or rephrase to simply state that the valency rules apply.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#004",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "74",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss lists 'APPL-REFL-APPL-far-REFL-heart-sway-PL'. The morpheme 'far' is glossed as 'far', but it appears to be part of the adverbial element 'tuyma' mentioned in the note. The gloss should ideally reflect morpheme boundaries more clearly or indicate that 'far' is part of a larger unit.",
+    "quote": "g=\"various-rumor 4.A=APPL-REFL-APPL-far-REFL-heart-sway-PL\"",
+    "suggestion": "Consider adjusting the gloss to 'various-rumor 4.A=APPL-REFL-APPL-tuyma-REFL-heart-sway-PL' or similar, if 'tuyma' is the morpheme.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#042",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "306-318",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "A Discord report from December 2024 is cited, but the book was written in 2025–2026, so the date is acceptable. However, the epistemic weight of a Discord comment is high for a ‹contested› claim, and no further corroboration is provided. Risk of epistemic inflation.",
+    "quote": "reported in the aynu-corpora Discord is consistent with the relational account. The verb sir-ko-peker ... has been analysed (attributed to Satō, reported by nukopoli, 2024-12-05 <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Ensure that such community observations are not overvalued; consider adding a qualifier like 'preliminary observation' or cross-checking with published sources if possible.",
+    "confidence": 0.87
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#041",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "244-250",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example is marked as 'constructed' but cited as attested in Nakagawa 2024:194. This creates a conflict: either it is attested (and not constructed) or it is constructed (and not directly attested).",
+    "quote": "based on the instrument applicative i lang=\"ain-Latn\">e-tuye</i> attested in Nakagawa 2024: 194 (ex. 173)",
+    "suggestion": "Clarify: if the form e-tuye is attested but the full sentence is constructed, state that explicitly. Otherwise, remove the attestation claim or remove 'constructed'.",
+    "confidence": 0.92
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#040",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "90-97",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme order is yay-ipe-e-ko-sunke, but the gloss places REFL before food, suggesting yay- modifies ipe. However, yay- is a reflexive clitic filling the ko-slot (Addressee), not modifying the incorporated noun ipe. Gloss implies incorrect structural alignment.",
+    "quote": "m=\"yay-ipe-e-ko-sunke\" g=\"REFL-food-APPL-APPL-lie\"",
+    "suggestion": "Revise gloss to reflect syntactic structure, e.g., \"REFL-APPL-APPL-lie\" with ipe marked as incorporated noun outside the affix chain, or annotate more precisely in the note.",
+    "confidence": 0.88
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#039",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "57-64",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses generic \"APPL\" for both prefixes, but the note specifies that e- contributes Content and ko- contributes Addressee — semantically distinct roles that should ideally be reflected in the gloss.",
+    "quote": "g=\"APPL-APPL-speak\"",
+    "suggestion": "Use more precise glosses such as \"CONT-ADDR-speak\" or \"APPLc-APPLa-speak\" to reflect the distinct semantic contributions, or add a note explaining the genericization.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#036",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "300-302",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The refutation claim is attributed to Shibatani (supported by citations) but then marked as 'contested' without any source for the contestation. The tag implies that the refutation is not universally accepted, but no conflicting analysis or author is cited.",
+    "quote": "Shibatani identifies the applicativization of intransitive bases in Ainu as a direct refutation: Baker's Case-theory predicts this should be impossible, yet it is productive in Hokkaido Ainu <Ref k=\"shibatani1988\" p=\"210–211\" />; <Ref k=\"shibatani1990\" p=\"65–66\" /> ‹contested›.",
+    "suggestion": "Either remove the tag or add a citation to a source that contests Shibatani's argument (e.g. a defense of Baker's approach or an alternative analysis).",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#035",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "13, 331",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Inconsistent spelling of author name: 'satoni2022' (line 13) vs 'sato2023b' (line 331). If these refer to the same author (possibly Satō), the spelling should be unified and the key should be consistent (e.g. sato2022, sato2023b). If they are different authors, 'Satoni' is likely a misspelling (expected: 'Sato' or 'Satō').",
+    "quote": "Line 13: satoni2022; Line 331: sato2023b",
+    "suggestion": "Correct to a single spelling (e.g. 'sato2022' and 'sato2023b') or verify that 'Satoni' is a distinct surname; if so, ensure the formatting is correct.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#034",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "45-46",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is attributed to Bugaeva/Kobayashi and then immediately marked as 'contested', but no source for the contestation is provided. The citation given (bugaevakobayashi2022) is the same source that makes the claim, so it cannot also be the source of contestation.",
+    "quote": "Bugaeva and Kobayashi report no visible semantic difference between the two orders; in both, e- contributes a Content or Instrument object and ko- an Addressee or Goal <Ref k=\"bugaevakobayashi2022\" p=\"§4.1.1\" /> ‹contested›.",
+    "suggestion": "Either remove the tag or add a citation to a conflicting source (e.g. an alternative analysis). If the contestation comes from the following sentence about Nakagawa, rephrase to make that clear and move the tag accordingly.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#003",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "63",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'ko-' contributes the Addressee, but the example given for Nakagawa (2024: 211) shows 'yay-' (reflexive) filling the 'ko-slot'. This implies 'yay-' can function as an Addressee, or that the 'ko-slot' is not exclusively for Addressees, which contradicts the note's assertion.",
+    "quote": "note=\"e- contributes the Content participant; ko- contributes the Addressee. Both applied objects are unmarked bare NPs cross-referenced by a single O-index. Nakagawa 2024: 211 gives e-yay-e-isoytak, with reflexive yay- filling the ko-slot.\"",
+    "suggestion": "Clarify the relationship between 'yay-' and the 'ko-slot', and whether 'yay-' can be considered an Addressee in this context, or if the 'ko-slot' has broader functions.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "applicative-stacking-relativization-feeding~p1#002",
+  "chapter": "applicative-stacking-relativization-feeding",
+  "lines": "44",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'ko-' lists 'Addressee or Goal', but the free translation 'tell stories to someone about something' (line 60) implies 'someone' is the Addressee and 'something' is the Content. The note for Ex 61 also states 'e- contributes the Content participant; ko- contributes the Addressee.' This contradicts the gloss's inclusion of 'Goal' for 'ko-'.",
+    "quote": "in both, <i lang=\"ain-Latn\">e-</i> contributes a Content or Instrument object and <i lang=\"ain-Latn\">ko-</i> an Addressee or Goal <Ref k=\"bugaevakobayashi2022\" p=\"§4.1.1\" /> ‹contested›.",
+    "suggestion": "Clarify the gloss for 'ko-' to align with the note and translation, or adjust the translation/note if 'Goal' is indeed a valid meaning for 'ko-' in this context.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

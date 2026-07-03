@@ -1,0 +1,414 @@
+[
+ {
+  "id": "simultaneous-kor-clauses~p1#005",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "143",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a statement about the lack of quantitative statements for Saru <i lang=\"ain-Latn\">kor</i>. This seems to be a statement about the state of research rather than a corpus-derived suggestion.",
+    "quote": "‹corpus-suggested›.",
+    "suggestion": "Consider removing the tag or using a tag that reflects the absence of evidence, if such a tag exists.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim about absence of evidence, which is not a corpus-suggested finding. The tag seems misplaced.",
+    "quote": "no equivalent quantitative statement has been made for Saru kor ‹corpus-suggested›",
+    "suggestion": "Remove the tag or replace with a statement like 'as far as the corpus evidence shows' if appropriate.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#002",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "26",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a statement about raw token counts, which seems like a direct observation from the corpus rather than a suggestion. This tag might be misapplied.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Consider if a more direct tag like ‹corpus-confirmed› or simply removing the tag is more appropriate.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim that is a logical inference (that the total is an upper bound) rather than a direct corpus observation. The tag may be inflated.",
+    "quote": "so the raw total is an upper bound on any single function ‹corpus-suggested›",
+    "suggestion": "Consider using a different tag such as ‹consensus› or removing the tag, or rephrase to make clear that the corpus data suggests the conflation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#009",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "348",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community analysis is placed before the epistemic tag ‹contested›. This could imply that the community analysis itself is contested, rather than the hypothesis derived from it.",
+    "quote": "(nukopoli, aynu-corpora Discord, 2024 <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+    "suggestion": "Move the epistemic tag to follow the description of the hypothesis: '...a hypothesis put forward by nukopoli (aynu-corpora Discord, 2024 <Ref k=\"aynucorporadiscord\" />); ‹contested›.'",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› is applied to a community-sourced hypothesis, but the tag appears after the citation, potentially implying that the entire claim is contested rather than just the hypothesis. This creates ambiguity in epistemic grading.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024 <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+    "suggestion": "Move the ‹contested› tag to precede the claim it modifies, or enclose it in parentheses directly after the hypothesis.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#001",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"ijas2023\" /> is attached to the end of a sentence that lists two sources. It is unclear if this citation supports the entire sentence or just the part after the semicolon.",
+    "quote": "; <Ref k=\"ijas2023\" />",
+    "suggestion": "Clarify the scope of the citation, potentially by moving it or adding another citation.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation for Ijäs (2023) lacks a page number or locator, while Nakagawa is given specific pages. This creates inconsistent citation support for a claim about form collision that both sources are meant to support.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"340, 347\" />; <Ref k=\"ijas2023\" />",
+    "suggestion": "Add a page number or locator to the Ijäs citation if available, or clarify that the reference is general.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#017",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "244-251",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string 'ku=cis a ku=cis a ayne' is glossed with two 'PFV' markers, but 'a' is a reduplication marker, not a perfective. The gloss incorrectly assigns 'PFV' to 'a', which contradicts standard Ainu analysis.",
+    "quote": "g=\"1SG.S=weep PFV 1SG.S=weep PFV CONJ 1SG.S=recall CONJ 1SG.S=weep only 1SG.A=do CONJ 1SG.S=exist\"",
+    "suggestion": "Replace 'PFV' with 'REDUP' or 'PFV.REDUP' to accurately reflect the function of 'a' in durative-reduplication.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#014",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "106-114",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss contains 'CONJ' three times, but only two instances of <i>kor</i> appear in the morpheme string. The third 'CONJ' is unexplained and not aligned with any morpheme, creating a mismatch between the number of glosses and morphemes.",
+    "quote": "g=\"silver tray place silver small.knife sheath be.with CONJ surface sparkle CONJ descend CONJ\"",
+    "suggestion": "Revise the gloss to have only two 'CONJ' entries, aligned with the two instances of <i>kor</i> in the example.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#013",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "23",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states there are approximately 29,300 occurrences of <i>kor</i>, but earlier in line 8 it is described as having three distinct uses (conjunctive particle, possession verb, conditional reading), and this total is later called an 'upper bound' due to conflation. However, no source is cited for the 29,300 figure itself, despite the claim being presented as corpus-based.",
+    "quote": "Whole-corpus token counts place <i lang=\"ain-Latn\">kor</i> at approximately 29,300 occurrences",
+    "suggestion": "Add a citation (e.g., from Nakagawa or a corpus database) that directly supports the 29,300 count.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#012",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "308-316",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss marks the possessive and subject prefixes as fourth person (4.A, 4.S) but the translation uses first person plural 'our' and 'we'. This is inconsistent with the gloss and with the earlier example where first person is marked with 1SG prefixes.",
+    "quote": "g=\"4.A=have lady PL 4.A=cherish CONJ every.day exist CONJ exist.PL=4.S\" tr=\"Cherishing our ladies, we lived on day after day.\"",
+    "suggestion": "Either adjust the gloss to first person plural (1PL) if the fourth person is being used for first person in this context, or adjust the translation to use fourth person forms (e.g., 'one's ladies' instead of 'our ladies') and explain the usage.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#011",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "226-234",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss marks the object prefixes as fourth person (4.O) but the translation uses first person 'me'. Similarly, the possessive prefix is glossed as fourth person (4.A) but translated as first person 'my'. This is inconsistent with the earlier example where first person is marked with 1SG prefixes.",
+    "quote": "g=\"4.A=have grandmother 4.A=have grandfather both 4.O=love CONJ become.night CONJ 4.O=hold.together CONJ sleep=4.S\" tr=\"My grandmother and grandfather both loved me, and whenever night came they would hold me close and sleep.\"",
+    "suggestion": "Either adjust the gloss to reflect first person (1SG.O and 1SG.POSS) if the fourth person is being used for first person in this context, or adjust the translation to use fourth person forms (e.g., 'loved one' instead of 'loved me') and explain the usage.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#019",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "335",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes parentheses, while other similar entries (e.g., <A w=\"sekor\" gl=\"(quotative complementizer) ~と\" />) place the parenthetical before the main gloss. Inconsistent formatting affects visual parsing.",
+    "quote": "<A w=\"korka\" gl=\"but, although (adversative)\" />",
+    "suggestion": "Standardize the placement of parentheticals in glosses, e.g., '(adversative) but, although'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#010",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "353",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'read for this chapter' is slightly informal and could be more precise. It implies that the authors of the chapter have read these grammars, but it could be stated more directly.",
+    "quote": "the primary grammars read for this chapter do not settle the dialectal priority question.",
+    "suggestion": "Rephrase to something like: 'The primary grammars consulted for this chapter do not settle...' or 'The primary grammars relevant to this chapter do not settle...'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#008",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "250",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note uses a colon after 'k=esikarun kor' and 'ku=ki kor k=an' to introduce the glosses. While understandable, it's slightly less formal than using an em dash or simply stating the gloss directly.",
+    "quote": "note=\"k=esikarun kor: habitual conditional 'whenever I recalled it'. ku=ki kor k=an: progressive 'was continuously doing'. Two distinct kor readings appear within the same clause chain.\"",
+    "suggestion": "Consider using em dashes for clarity: 'k=esikarun kor — habitual conditional...', or rephrasing: 'k=esikarun kor, which means habitual conditional...'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#007",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "233",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'The recurrent pattern — night after night — is the core habitual reading' is a bit of a run-on sentence. The dash creates a slight pause that doesn't fully integrate the two parts.",
+    "quote": "note=\"The first two a=kor are the transitive possession verb 'have' (4th-person A prefix); sirkunne kor is the habitual conditional 'whenever it became night'. The recurrent pattern — night after night — is the core habitual reading.\"",
+    "suggestion": "Rephrase for better flow, e.g., 'The recurrent pattern, night after night, is the core habitual reading.' or 'The core habitual reading is represented by the recurrent pattern: night after night.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#006",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "182",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'assigned by the temporal phase of their respective first predicates' is slightly vague. It could be clearer how the temporal phase assigns the connectives.",
+    "quote": "note=\"no closes the negated somo mokor clause ('without sleeping'); kor an on kamuyoritak forms the progressive 'was praying'. Both no and kor are simultaneous-type connectives, assigned by the temporal phase of their respective first predicates.\"",
+    "suggestion": "Rephrase for clarity, e.g., '...assigned based on the temporal phase of their respective first predicates.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#004",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "132",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'After Tamura 2000: 155, adapted by Ijäs as a teaching example' is slightly awkward. It could be interpreted as the example itself being adapted, or the note being written after Tamura's work.",
+    "quote": "note=\"Different-subject kor clause: the dancer (first person, ku=) and the observer (third person, unexpressed) are distinct. After Tamura 2000: 155, adapted by Ijäs as a teaching example.\"",
+    "suggestion": "Rephrase for clarity, e.g., 'Based on Tamura 2000: 155, adapted by Ijäs as a teaching example.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#003",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "113",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note contains a dangling pronoun: 'hine continues the chain.' It's unclear what 'hine' refers to in this context.",
+    "quote": "note=\"The mikemike kor san sequence is the simultaneity construction: gleaming (ongoing) kor descending. The preceding saya eusi wa closes an attendant-state clause ('sheathed, and'); hine continues the chain.\"",
+    "suggestion": "Clarify what 'hine' refers to, or rephrase the sentence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#018",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "277-280",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation for Refsing (1986) is attached to the entire table, but the table includes data on Horobetsu/Kushiro forms for which Refsing may not be a source, given her focus on Shizunai. This risks over-attribution.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"342, 347–348\" />; <Ref k=\"refsing1986\" p=\"248–250\" />",
+    "suggestion": "Clarify which cells in the table are supported by which source, or add a note specifying the scope of each reference.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#016",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "176-183",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'a=onaha', which is glossed as '4.POSS=father', but 'a=' is a genitive/possessive prefix, not a person prefix. The gloss should reflect possession rather than person marking.",
+    "quote": "g=\"4.POSS=father NEG sleep CONJ pray.to.god CONJ exist\"",
+    "suggestion": "Change '4.POSS=father' to 'father.4.POSS' or '4.POSS.father' to reflect standard Leipzig formatting and accurate grammatical relation.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "simultaneous-kor-clauses~p1#015",
+  "chapter": "simultaneous-kor-clauses",
+  "lines": "126-133",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.O=look.at' implies a transitive verb with a first-person object, but the free translation 's/he looked at me' indicates a third-person subject. The subject of the second clause is not marked in the gloss, creating a person/number inconsistency.",
+    "quote": "g=\"1SG.S=dance CONJ 1SG.O=look.at\"",
+    "suggestion": "Revise the gloss to include the subject of the second clause, e.g., '3SG.S=1SG.O=look.at' or clarify the zero-marked subject.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

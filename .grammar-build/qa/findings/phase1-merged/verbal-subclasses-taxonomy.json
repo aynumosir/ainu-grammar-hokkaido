@@ -1,0 +1,322 @@
+[
+ {
+  "id": "verbal-subclasses-taxonomy~p1#006",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "342",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'sources read for this chapter did not bank' is meta-commentary about the research process rather than prose for the reader.",
+    "quote": "The sources read for this chapter did not bank specific lexical members of the zero-place class",
+    "suggestion": "Rephrase to something like: 'Specific lexical members of the zero-place class were not identified in the sources consulted for this chapter.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'The sources read for this chapter did not bank' is informal, pipeline-oriented language ('bank' as a verb in this sense, 'read for this chapter' is meta). This should be rephrased for a formal reference grammar.",
+    "quote": "The sources read for this chapter did not bank specific lexical members of the zero-place class",
+    "suggestion": "Rephrase to: 'The sources consulted for this chapter do not list specific lexical members of the zero-place class' or 'No specific lexical members of the zero-place class are documented in the sources consulted for this chapter (Nakagawa 2024: 116–117).'",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'did not bank' is a clear pipeline register leak, suggesting internal project terminology (e.g., 'bank' as in data storage) rather than scholarly prose. This is not appropriate for the final text.",
+    "quote": "The sources read for this chapter did not bank specific lexical members",
+    "suggestion": "Replace with: 'The sources reviewed for this chapter did not identify specific lexical members of the zero-place class.'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#003",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "255",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹corpus-confirmed› is used with a community source citation. This grade implies a level of certainty that might not be fully supported by a single community observation.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-17) ‹corpus-confirmed›",
+    "suggestion": "Consider changing the evidence grade to ‹corpus-suggested› or ensuring there are multiple corroborating community sources or other evidence to justify ‹corpus-confirmed›.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Another Discord source tagged as ‹corpus-confirmed›. The briefing flags this as inappropriate when the only support is a single Discord attribution.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-17) ‹corpus-confirmed›.",
+    "suggestion": "Replace the tag with ‹speculative› or remove it, and consider citing a published source (e.g., Satō 2008, Nakagawa 2024) for the claim about serial predicates.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#001",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "128",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹corpus-confirmed› is used with a community source citation. This grade implies a level of certainty that might not be fully supported by a single community observation, especially if it's the sole basis for the claim.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-09) ‹corpus-confirmed›",
+    "suggestion": "Consider changing the evidence grade to ‹corpus-suggested› or ensuring there are multiple corroborating community sources or other evidence to justify ‹corpus-confirmed›.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim supported solely by a Discord message (aynucorporadiscord). According to the briefing, ‹corpus-confirmed› (or ‹consensus›) should not be used when the only evidence is a Discord attribution or a single speculative source.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-09) ‹corpus-confirmed›.",
+    "suggestion": "Replace the tag with ‹speculative› or remove it, and consider citing a published source if available.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#002",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "215",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹consensus› is used with a community source citation. Similar to the above, 'consensus' implies a broader agreement than a single community observation might represent.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-12) ‹consensus›",
+    "suggestion": "Consider changing the evidence grade to ‹corpus-suggested› or ensuring there are multiple corroborating community sources or other evidence to justify ‹consensus›.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about verbal number marking is tagged ‹consensus›, but the only source provided is a Discord message (aynucorporadiscord). The tag is inflated for a non-published, non-corpus source.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-12) ‹consensus›.",
+    "suggestion": "Either provide a published reference (e.g., Nakagawa 2024, Sato 2008) to support the consensus claim, or downgrade the tag to ‹speculative› or remove it.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#011",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "269",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for <A w=\"oka\" gl=\"exist, be\" /> in line 269 lacks the parenthetical note present in line 72 ('exist, be (alternate / often plural)'), creating an inconsistency in how the variant form is described.",
+    "quote": "<A w=\"oka\" gl=\"exist, be\" />",
+    "suggestion": "Update the gloss to match: \"exist, be (alternate / often plural)\".",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#007",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "144–152",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss marks the subject as 4 (fourth person) with the suffix -an, but the free translation uses the first-person pronoun 'I'. Fourth person is not equivalent to first person, creating a person-number mismatch between gloss and translation.",
+    "quote": "m=\"kim ta arpa=an akusu\" g=\"mountain-ward LOC go=4.S when\" tr=\"When (I) went to the mountains…\"",
+    "suggestion": "Either change the gloss to reflect first person (e.g., 1SG.S) if the form is intended to be first person, or adjust the translation to match fourth person (e.g., 'When one went…' or 'When we went…').",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#013",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "212",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The glosses use 'O.SG' and 'O.PL' notation, which is non-standard; standard practice in the chapter is to spell out 'object singular' or use 'theme' as in other entries. This deviates from the otherwise consistent gloss style.",
+    "quote": "<A w=\"rayke\" gl=\"kill (O.SG)\" /> and <A w=\"ronnu\" gl=\"kill (O.PL)\" />",
+    "suggestion": "Use full terms: \"kill (object singular)\" and \"kill (object plural)\" for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#008",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "258–259",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "An extraneous comma after 'morphology' disrupts the sentence flow. The comma is not required before the verb 'is taken up'.",
+    "quote": "how three-place structure interacts with applicative morphology, is taken up in",
+    "suggestion": "Remove the comma: 'how three-place structure interacts with applicative morphology is taken up in'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#005",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "325",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹speculative› is used with a community source citation. While 'speculative' is appropriate for the claim's status, it's worth noting that community observations can sometimes be more than just speculative, depending on the context and the speaker's expertise.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-25) ‹speculative›",
+    "suggestion": "No change needed if the claim is indeed speculative, but be mindful of the nuance when using community sources with evidence grades.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#004",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "308",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹corpus-confirmed› is used with a community source citation. This grade implies a level of certainty that might not be fully supported by a single community observation.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-09) ‹corpus-confirmed›",
+    "suggestion": "Consider changing the evidence grade to ‹corpus-suggested› or ensuring there are multiple corroborating community sources or other evidence to justify ‹corpus-confirmed›.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#014",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "275",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'be, become' omits the parenthetical '(copula)' present in earlier mentions (e.g., line 65), leading to inconsistency in how the word is presented across the chapter.",
+    "quote": "<A w=\"ne\" gl=\"be, become\" />",
+    "suggestion": "Restore the gloss to \"be, become (copula)\" for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#012",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "121, 225",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The verb <A w=\"ramu\" gl=\"think about (something)\" /> is listed under transitive verbs (vt), but in line 121 it is described as transitive despite its stative meaning. However, in the table (line 49), <A w=\"ramu\" gl=\"think about (something)\" /> is correctly listed under vt. But in line 225, <A w=\"kore\" gl=\"give\" /> is listed as a three-place verb, while in the table (line 58) it is correctly categorized. The issue is that the gloss for <A w=\"kore\" gl=\"give\" /> does not indicate its three-place valence, unlike <A w=\"kar\" gl=\"make for\" /> which includes 'for someone'. This creates a subtle inconsistency in descriptive depth.",
+    "quote": "<A w=\"ramu\" gl=\"think about (something)\" />, <A w=\"kore\" gl=\"give\" />",
+    "suggestion": "Update gloss to \"give (to someone, theme)\" or similar to reflect three-place structure.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#010",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "75",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The argument count for negative existential is given as '1-place (S) or predicating', which is ambiguous and inconsistent with the taxonomy's structural focus. All other entries specify clear valence (e.g., '1-place (S)'). The phrase 'or predicating' is vague and does not fit the pattern.",
+    "quote": "1-place (S) or predicating",
+    "suggestion": "Revise to '1-place (S)' or clarify what 'predicating' means in structural terms.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "verbal-subclasses-taxonomy~p1#009",
+  "chapter": "verbal-subclasses-taxonomy",
+  "lines": "69",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of argument count labels: '1-place (S)' in the existential row uses parentheses, while other rows like intransitive (line 37) use '1-place (S)' with the same format. However, the existential row should align with the intransitive row's label since both are 1-place S predicates. But more critically, the existential row lists two forms, <i lang=\"ain-Latn\">an</i> / <i lang=\"ain-Latn\">oka</i>, yet the affix set only says 'S affixes', implying a single paradigm. This may be correct, but the table does not clarify whether both forms fully pattern alike or differ subtly.",
+    "quote": "1-place (S)",
+    "suggestion": "Ensure consistent label formatting; consider adding a note if <i lang=\"ain-Latn\">an</i> and <i lang=\"ain-Latn\">oka</i> differ in person marking despite both being S-marked.",
+    "confidence": 0.85
+   }
+  ]
+ }
+]

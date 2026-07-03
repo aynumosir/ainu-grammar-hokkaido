@@ -1,0 +1,454 @@
+[
+ {
+  "id": "phrasal-and-utterance-intonation~p1#013",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "220-227",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '4.S' for '=an' is inconsistent with the free translation 'How delicious!' which is an exclamation, not a statement about a 4th person subject. The morpheme '=an' is glossed as 4th person subject, but in exclamatory constructions it may function differently. Additionally, the note says 'keraan shows vowel sequence from kera + =an without glide insertion', but the example shows 'kera=an' with a space, not 'keraan'.",
+    "quote": "m=\"kera=an hum-i\" g=\"delicious=4.S sound-POSS\" tr=\"How delicious!\"",
+    "suggestion": "Either adjust the gloss to reflect the exclamatory function (e.g., '4.S' could be kept if accurate, but the free translation should match; or add a note explaining the gloss). Also ensure the example form matches the note's description.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.S' in g=\"delicious=4.S\" does not match the free translation 'How delicious!' — '4.S' implies a fourth-person subject, but the exclamatory meaning suggests a non-literal, deictic or expressive use not captured by the gloss. The morpheme =an is better glossed as an exclamative or emphatic marker here, not '4.S'.",
+    "quote": "<Ex m=\"kera=an hum-i\" g=\"delicious=4.S sound-POSS\" tr=\"How delicious!\" ... />",
+    "suggestion": "Revise gloss to reflect function: e.g., g=\"delicious=EXCL sound-POSS\" or add a note explaining the non-literal use.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#014",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "226",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says 'keraan' but the example shows 'kera=an' with a hyphen. This is a minor inconsistency in the representation of the form within the same note.",
+    "quote": "The form keraan shows vowel sequence from kera + =an without glide insertion (Nakagawa 2024: 43).",
+    "suggestion": "Change 'keraan' to 'kera=an' or add a note that the hyphen is omitted in the citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The note contains meta-commentary about source reporting ('reported via') and editorial observations about form structure that belong in the pipeline, not in the final prose. This is a register leak from the production process.",
+    "quote": "Tamura 1996: 4 (reported via Shiraishi 2022: §7) characterizes this pattern; the form keraan shows vowel sequence from kera + =an without glide insertion (Nakagawa 2024: 43).",
+    "suggestion": "Move source commentary to citation layer; rephrase as: 'The form keraan results from vowel sequence kera + =an without glide insertion.'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#012",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "278-279",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag '‹corpus-suggested›' is used, but the claim is explicitly described as 'community grade' and based on a Discord discussion, not corpus data. '‹corpus-suggested›' implies evidence from a corpus, which contradicts the stated source.",
+    "quote": "The observation is reported here at community grade: asserted and typologically grounded, but awaiting instrumental verification ‹corpus-suggested›.",
+    "suggestion": "Change '‹corpus-suggested›' to '‹speculative›' or '‹original-needs-review›' to match the community-grade description.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim based solely on a Discord community observation with no corpus data cited, which contradicts the meaning of the tag. This is epistemic inflation.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Change to ‹speculative› or ‹community-asserted› to reflect lack of corpus support.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#007",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "257-258",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that suffixes <i lang=\"ain-Latn\">=as</i> and <i lang=\"ain-Latn\">=an</i> carry a secondary accent. The examples provided are <i lang=\"ain-Latn\">iˈruska=ˌas</i> and <i lang=\"ain-Latn\">ipˈe=ˌan</i>. However, the gloss for <i lang=\"ain-Latn\">iˈruska=ˌas</i> is 'we (excl.) are angry', and the gloss for <i lang=\"ain-Latn\">ipˈe=ˌan</i> is not provided. The gloss for <i lang=\"ain-Latn\">ipˈe=ˌan</i> is missing, making it difficult to assess the claim about the secondary accent in that specific instance.",
+    "quote": "personal suffixes such as <i lang=\"ain-Latn\">=as</i> (exclusive 1pl) and <i lang=\"ain-Latn\">=an</i> (4th person S) carry a secondary accent alongside the primary stem accent in open-syllable stems: <i lang=\"ain-Latn\">iˈruska=ˌas</i> 'we (excl.) are angry', <i lang=\"ain-Latn\">ipˈe=ˌan</i> (Kindaichi 1931; Tamura 1970, reported via <Ref k=\"shiraishi2022\" p=\"§5.1\" />).",
+    "suggestion": "Provide the gloss for <i lang=\"ain-Latn\">ipˈe=ˌan</i>.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ipˈe=ˌan' is given without a gloss or translation, and it is unclear whether it means 'we eat' or something else. Also, 'cis=an' is glossed as 'we cry', but '=an' is glossed as 4th person S in the previous example; here it is used for 1pl exclusive? This is inconsistent with the earlier gloss of '=an' as 4th person S.",
+    "quote": "personal suffixes such as =as (exclusive 1pl) and =an (4th person S) carry a secondary accent alongside the primary stem accent in open-syllable stems: iˈruska=ˌas 'we (excl.) are angry', ipˈe=ˌan (Kindaichi 1931; Tamura 1970, reported via Shiraishi 2022: §5.1). The secondary accent is lost when the stem ends in a closed syllable: ˈcis=an 'we cry', ˈsap=an.",
+    "suggestion": "Add a gloss for 'ipˈe=ˌan' (e.g., 'we eat') and clarify the person/number values of '=an' and '=as' to be consistent with the person-marking chapter.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#010",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "145-154",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table at lines 192-195 lists the particle ya as having falling terminal F0, but the prose says 'appears to select a falling rather than a rising contour' — this is consistent. However, the table also lists 'Interrogative (particles he, a, hawe)' as having rising F0, but ya is also an interrogative particle. The table does not include ya in the interrogative row, which is fine, but the note 'exception; possibly Japanese-contact' in the table contradicts the prose's 'contested' epistemic tag — the table presents it as a fact, while the prose hedges.",
+    "quote": "One exception: the particle ya appears to select a falling rather than a rising contour in some Saru data. A form transcribed as amkir_a (from amkir ya 'have you been?') was realized with falling pitch at the utterance end",
+    "suggestion": "Add '‹contested›' to the table note for ya, or remove the epistemic tag from the prose to match the table's certainty.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#020",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "79",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent macron representation: <i lang=\"ain-Latn\">niisah</i>, <i lang=\"ain-Latn\">huure</i>, <i lang=\"ain-Latn\">siisam</i> use double vowels instead of macrons, while the chapter otherwise uses macrons (e.g., nísap). This creates orthographic drift.",
+    "quote": "<i lang=\"ain-Latn\">niisah</i> vs\n\t\t<i lang=\"ain-Latn\">nisah</i>, <i lang=\"ain-Latn\">huure</i>, <i lang=\"ain-Latn\">siisam</i>",
+    "suggestion": "Use macrons consistently: <i lang=\"ain-Latn\">nīsah</i>, <i lang=\"ain-Latn\">hūre</i>, <i lang=\"ain-Latn\">sīsam</i>.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#019",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "75",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of macrons: forms like <i lang=\"ain-Latn\">húre</i> and <i lang=\"ain-Latn\">sísam</i> lack macrons on long vowels that are present in corresponding forms elsewhere (e.g., <i lang=\"ain-Latn\">niisah</i> in line 79). This creates orthographic inconsistency within the chapter.",
+    "quote": "<i lang=\"ain-Latn\">nísap</i>, <i lang=\"ain-Latn\">nína</i>,\n\t\t<i lang=\"ain-Latn\">húre</i> 'red', <i lang=\"ain-Latn\">sísam</i> 'Japanese person'",
+    "suggestion": "Standardize macron usage: use <i lang=\"ain-Latn\">hūre</i>, <i lang=\"ain-Latn\">sīsam</i> to reflect vowel length consistently.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#016",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "267-280",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'feel very close to Ainu' is informal and subjective for a scholarly grammar. It may be acceptable as a direct quote from a community discussion, but it stands out stylistically.",
+    "quote": "Community discussion of Ainu prosody has noted that the intonation patterns of Hachijō-shima Japanese feel 'very close to Ainu'",
+    "suggestion": "Consider rephrasing as 'are perceived as very close to Ainu' or keep as a direct quote with quotation marks, which is already done.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#015",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "258-259",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The primary stress mark is placed before the syllable (iˈruska) but the secondary stress mark is placed before the suffix (=ˌas). This is inconsistent: either both should be before the syllable or both before the morpheme. Also, 'ipˈe=ˌan' lacks a gloss or translation, unlike the previous example.",
+    "quote": "iˈruska=ˌas 'we (excl.) are angry', ipˈe=ˌan",
+    "suggestion": "Standardize stress mark placement (e.g., always before the syllable: iˈruska=ˌas, iˈpe=ˌan) and add a gloss for 'ipˈe=ˌan'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#008",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "270",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that Hachijō-shima Japanese intonation feels 'very close to Ainu' is attributed to a community discussion on Discord. While this is noted as a community observation, the evidence grade is not explicitly stated for this specific claim, but the paragraph concludes with 'The observation is reported here at community grade: asserted and typologically grounded, but awaiting instrumental verification ‹corpus-suggested›'. It might be beneficial to explicitly assign the ‹corpus-suggested› grade to the initial community observation for clarity.",
+    "quote": "(<Ref k=\"aynucorporadiscord\" /> nukopoli, 2024-12-08)",
+    "suggestion": "Add the ‹corpus-suggested› grade directly after the Discord attribution for this specific claim.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#004",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "202-205",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'Nominalized / conjunctive sentence-final' lists 'level or ↘' for terminal F0. However, the preceding text (lines 157-163) states 'In such cases the final F0 is level or falling, and the utterance communicates incompleteness or a request for confirmation rather than a settled assertion (<Ref k=\"shiraishi2022\" p=\"§7\" />, drawing on Tokachi data). This aligns with the Simeon generalization noted above: absence of a terminal rise leaves the utterance prosodically open.' The table entry uses '↘' which is a falling contour, but the text also mentions 'level' and 'absence of a terminal rise'. The table could be more explicit about the 'level' contour and its relation to the 'absence of a terminal rise'.",
+    "quote": "Nominalized / conjunctive sentence-final\n\t\t\t\t\t\tlevel or ↘\n\t\t\t\t\t\tcommunicates incompleteness or request for confirmation",
+    "suggestion": "Consider rephrasing the 'terminal F0' column for this row to 'level or falling' to more closely match the text, or adding a note that 'level' implies absence of a terminal rise.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#002",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "77-79",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Sakhalin cognates show a corresponding long vowel at σ1 for 'nísap' vs 'nisáp', 'húre' vs 'sísam'. However, only 'nísap'/'nisáp' and 'sísam' are listed as examples of exception class words in the preceding sentence. 'húre' is not explicitly listed as an exception word in the preceding sentence, although it is implied by the list of 'a score of others'.",
+    "quote": "Their Sakhalin cognates show a corresponding long vowel at σ1: ‹SA› <i lang=\"ain-Latn\">niisah</i> vs <i lang=\"ain-Latn\">nisah</i>, <i lang=\"ain-Latn\">huure</i>, <i lang=\"ain-Latn\">siisam</i> (Nakagawa 2024: 27, 51).",
+    "suggestion": "Ensure the list of exception words in the preceding sentence is exhaustive or explicitly states that 'húre' is also an exception.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#021",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "147",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The underscore in <i lang=\"ain-Latn\">amkir_a</i> is nonstandard and appears to be a transcription artifact or misrendering of a phonetic boundary. It is not explained and does not conform to the chapter’s otherwise consistent orthography.",
+    "quote": "<i lang=\"ain-Latn\">amkir_a</i>",
+    "suggestion": "Use standard spacing or hyphenation: <i lang=\"ain-Latn\">amkir ya</i> or <i lang=\"ain-Latn\">amkir-ya</i>, with explanation if needed.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#018",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "74",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation is attached to a sentence fragment starting with a period, suggesting it may have been misplaced or detached from its intended claim. This appears to be a formatting error where the citation dangles without clear syntactic attachment.",
+    "quote": "(<Ref k=\"nakagawa2024\" p=\"51\" />; <Ref k=\"shiraishi2022\" p=\"§5.1\" />.)",
+    "suggestion": "Attach the citation directly to the preceding sentence about exception-class words or restructure the punctuation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#017",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "24",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The statement claims that placing the lowest F0 point at σ1 would misidentify the word, but this contradicts the earlier explanation that only the position of the F0 rise (not fall) is distinctive. If nísap has the rise on σ1, then having the lowest F0 at σ1 would be consistent with a correct realization, not a misidentification.",
+    "quote": "only a realization in which the lowest F0 point falls at σ1 would misidentify the word",
+    "suggestion": "Revise to clarify that a realization with the F0 rise on σ2 (instead of σ1) would misidentify the word.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#011",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "192-195",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table cell includes '‹contested›' as an epistemic tag, but the table is a summary of cited sources (Shiraishi 2022 and Tamura 1996). Epistemic tags are used in prose to indicate the evidence grade of a claim; placing one inside a table cell is inconsistent with the book's style and may confuse readers.",
+    "quote": "Particle ya\t↘ falling at utterance end\texception; possibly Japanese-contact ‹contested›",
+    "suggestion": "Remove '‹contested›' from the table cell and instead add a footnote or note in the caption about the contested status.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#009",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "8-11",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The description says Standard Japanese marks the syllable at which F0 drops, but Standard Japanese is a falling-nucleus system where the drop occurs after the accented syllable, not at it. The phrasing is ambiguous and could be read as contradicting the standard analysis.",
+    "quote": "Hokkaido Ainu has a pitch-accent system in which the phonologically distinctive unit is the syllable at which F0 rises — a rising-nucleus (上り核アクセント) system — in contrast with Standard Japanese, whose falling-nucleus system marks the syllable at which F0 subsequently drops",
+    "suggestion": "Rephrase to: '...whose falling-nucleus system marks the syllable after which F0 drops' or '...marks the syllable at which F0 begins to fall'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#006",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "247-248",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that affixes <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">e=</i>, and <i lang=\"ain-Latn\">ci=</i> shift the stem's accent. However, the example provided in the chapter for 'ku=ani' (lines 25-28) shows the accent on 'á' (σ2), which is consistent with the regular rule for CV# stems, and does not demonstrate a shift of accent due to the prefix <i lang=\"ain-Latn\">ku=</i>. The text does not provide an example of an affix shifting accent.",
+    "quote": "Affixes <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">e=</i>, and <i lang=\"ain-Latn\">ci=</i> form a single prosodic word with their host and shift the stem's accent; <i lang=\"ain-Latn\">a=</i> and <i lang=\"ain-Latn\">eci=</i> do not shift accent and are prosodically less integrated (Kindaichi 1931; Tamura 1970, both reported via <Ref k=\"shiraishi2022\" p=\"§5.1\" />; <Ref k=\"nakagawa2024\" p=\"52–53\" />).",
+    "suggestion": "Provide an example demonstrating the accent shift caused by <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">e=</i>, or <i lang=\"ain-Latn\">ci=</i> to support the claim.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#005",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "214-216",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the elevated pitch level in exclamatory utterances interacts with lexical accents without displacing them. However, the example provided (lines 220-227) has the gloss 'kera=an hum-i' with 'delicious=4.S sound-POSS' and the translation 'How delicious!'. The note for this example states 'The formal noun hum-i, possessed form of hum 'sound, feeling', functions as an exclamative complement to the finite clause kera=an 'it is delicious'.' This suggests that 'kera=an' is a finite clause, and 'hum-i' is a complement. The interaction of the elevated pitch with lexical accents is not explicitly demonstrated or explained in the example itself, making the claim about interaction without displacement less clear in context.",
+    "quote": "The elevation is applied to the whole utterance, not only to the final position, so it interacts with the lexical accents of each word without displacing them.",
+    "suggestion": "Provide a clearer example or explanation of how the elevated pitch interacts with lexical accents without displacing them, or rephrase the statement to be less assertive if the example doesn't fully support it.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#003",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "192-194",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for the particle 'ya' states '↘ falling at utterance end' and notes it as an 'exception'. However, the preceding text (lines 145-154) discusses this exception and notes that 'A form transcribed as amkir_a (from amkir ya 'have you been?') was realized with falling pitch at the utterance end'. This implies that the falling contour is associated with 'ya' in this specific context, not necessarily that 'ya' *always* selects a falling contour, or that it's an exception to a rule that 'ya' itself follows. The table entry could be more precise about the context of this exception.",
+    "quote": "Particle <i lang=\"ain-Latn\">ya</i>\n\t\t\t\t\t\t↘ falling at utterance end\n\t\t\t\t\t\texception; possibly Japanese-contact ‹contested›",
+    "suggestion": "Rephrase the table entry to better reflect the nuance discussed in the text, e.g., 'Falling contour with <i lang=\"ain-Latn\">ya</i> in some contexts' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phrasal-and-utterance-intonation~p1#001",
+  "chapter": "phrasal-and-utterance-intonation",
+  "lines": "20-28",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that for 'nísap' vs 'nisáp', 'nísap' can be realized with sustained high pitch on both syllables (nísáp) without shifting to 'nisáp'. However, the example of 'ku=ani' states that 'ku↘ani, with the F0 minimum at the accented syllable, is not acceptable'. This implies that a realization with the F0 minimum at the accented syllable *is* problematic, which contradicts the earlier statement about 'nísap'.",
+    "quote": "For the Saru minimal pair nísap 'suddenly' vs nisáp 'shin', nísap may be realized with sustained high pitch on both syllables (nísáp) without shifting to nisáp; only a realization in which the lowest F0 point falls at σ1 would misidentify the word <Ref k=\"nakagawa2024\" p=\"48–49\" />. Community discussion illustrates the same point with the pronoun ku=ani 'I', whose accent falls on á (σ2, by regular rule): ku↗ani and ku↗a↘ni are both acceptable; ku↘ani, with the F0 minimum at the accented syllable, is not <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-09).",
+    "suggestion": "Clarify the conditions under which an F0 minimum at the accented syllable is problematic. It might be that 'nísáp' can be realized with sustained high pitch, but a realization with a *fall* at the accented syllable would be misidentification. The 'ku=ani' example seems to confirm this interpretation, but the phrasing for 'nísap' could be more precise.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

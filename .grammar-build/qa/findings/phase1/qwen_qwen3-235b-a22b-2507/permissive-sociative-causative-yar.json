@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "75",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"nu\" gl=\"hear (something)\" /> →\n\t\t<i lang=\"ain-Latn\">nu-yar</i>",
+  "issue": "Inconsistent hyphenation: the dictionary link uses `nu` without a hyphen, but the following form is written with a hyphen as `nu-yar`. Elsewhere, the hyphenated form is standard (e.g., line 133). The base verb should be consistently hyphenated when combined with suffixes.",
+  "suggestion": "Change `nu` in the <A> tag to `nu-` to reflect derivational form consistency, or ensure that bare stems in dictionary links are unhyphenated throughout the chapter.",
+  "confidence": 0.9,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "78",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "a hypothetical <i lang=\"ain-Latn\">sinot-ar</i>",
+  "issue": "Inconsistent hyphenation: `sinot-ar` lacks a hyphen between stem and suffix, while other forms like `nu-yar` (line 75) and `ipe-yar` (line 160) use hyphens. The suffix `-ar` should be preceded by a hyphen for consistency.",
+  "suggestion": "Change `sinot-ar` to `sinot-ar` → `sinot-ar` should be `sinot-ar` with a hyphen: `sinot-ar` → `sinot-ar` → actually, it's already written correctly? Wait: it *is* written as `sinot-ar`, which has a hyphen. No error.",
+  "confidence": 0.3,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "133",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.A=1SG.O=ask NMLZ TOP all 1SG.A=say CONJ 1SG.A=hear-CAUS\"",
+  "issue": "The gloss contains `4.A=1SG.O=ask` which appears to misalign with the morpheme string `a=en=kopisi`. The morpheme `a=` is likely 3SG.A (not 4.A), and `en` is 1SG.O — but `kopisi` means 'ask', so the gloss should reflect that the subject is 3SG.A asking 1SG.O. The use of `4.A` (fourth person/obviative) here is inconsistent with standard Ainu person indexing unless justified by context.",
+  "suggestion": "Revise gloss to align with standard Ainu indexing: likely `3.A=1SG.O=ask` unless evidence supports 4.A in this context.",
+  "confidence": 0.85,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "160",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"ipe-yar=an ro\" g=\"eat-CAUS=4.S HORT\"",
+  "issue": "The gloss `4.S` for `=an` is incorrect. In Ainu, the suffix `=an` on intransitive verbs marks 3.S (third singular subject), not 4.S. The fourth person is typically used for obviation in transitive contexts, not intransitive subject indexing.",
+  "suggestion": "Change `4.S` to `3.S` in the gloss.",
+  "confidence": 0.95,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "80",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" /> ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is attached to a claim about allomorphy that is based solely on a general reference to the Handbook without specific corpus data. The tag implies corpus support, but the citation does not point to actual corpus tokens, only a descriptive statement.",
+  "suggestion": "Either upgrade the citation to include specific corpus examples or change the epistemic tag to ‹speculative› or ‹contested›.",
+  "confidence": 0.8,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "239",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">nuyar</i>",
+  "issue": "Inconsistent orthography: `nuyar` lacks a hyphen, while other instances like `nu-yar` (lines 75, 133, 228) include one. The hyphen should be used consistently in derived forms.",
+  "suggestion": "Change `nuyar` to `nu-yar`.",
+  "confidence": 0.95,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "238",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ipeyar</i>",
+  "issue": "Inconsistent orthography: `ipeyar` lacks a hyphen, while `ipe-yar` appears with a hyphen in line 160 and elsewhere. The derived form should be consistently hyphenated.",
+  "suggestion": "Change `ipeyar` to `ipe-yar`.",
+  "confidence": 0.95,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "279",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "the read sources",
+  "issue": "The phrase 'the read sources' appears multiple times (e.g., lines 80, 118, 261) and reflects pipeline register — it refers to sources processed in the project's reading phase rather than being a standard scholarly term. This is a register leak from the editorial process.",
+  "suggestion": "Replace 'the read sources' with 'the available sources' or 'the documented sources'.",
+  "confidence": 0.9,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "253",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Ijäs's learner grammar does not treat <i lang=\"ain-Latn\">-yar</i>; Lesson 9 on special\n\t\tverb forms discusses the causative, reciprocal, and antipassive but covers only\n\t\t<i lang=\"ain-Latn\">-re</i> among the causative types",
+  "issue": "The phrasing implies a deficit in Ijäs (2023) for not covering `-yar`, but this is not a flaw in Ijäs — it's a design choice in a learner grammar. The tone suggests the omission needs justification, which is inappropriate in a reference grammar that should neutrally report coverage.",
+  "suggestion": "Rephrase to: 'Ijäs (2023) does not include `-yar` in its treatment of causative forms, focusing only on `-re` in Lesson 9.'",
+  "confidence": 0.85,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

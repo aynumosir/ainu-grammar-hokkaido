@@ -1,0 +1,302 @@
+[
+ {
+  "id": "noun-phrase-structure~p1#002",
+  "chapter": "noun-phrase-structure",
+  "lines": "292-300",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Note claims a relative-clause modifier (position 4) precedes a property verb (position 3), contradicting the fixed ordering stated in the table (positions 1–4: demo, numeral, property verb/ADN, relative clause) and in prose lines 91–93.",
+    "quote": "The full sentence hinak wa arki wen cikappo utar, 'the bad little birds that came from somewhere', also shows a relative-clause modifier (hinak wa arki) at position 4 preceding wen.",
+    "suggestion": "Correct the note to reflect the actual ordering (property verb before relative clause) or explain why the relative clause appears earlier (e.g., if it is a different type of modifier not subject to the template order).",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#014",
+  "chapter": "noun-phrase-structure",
+  "lines": "321",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text includes a Japanese character '表47' (meaning 'Table 47') but does not provide a corresponding table in this chapter. This may be a reference to an external source, but it is not accessible to the reader here.",
+    "quote": "Relativizability is restricted by noun subclass (表47,",
+    "suggestion": "Replace '表47' with 'Table 47 in Nakagawa 2024' or remove the reference if the table is not reproduced.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#013",
+  "chapter": "noun-phrase-structure",
+  "lines": "289-290",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The colon at the end introduces an example, but the following example (line 293) includes a relative clause modifier (hinak wa arki) that precedes the property verb, contradicting the claim that the property verb scopes over material to its right. The example shows a modifier at position 4, which should precede position 3.",
+    "quote": "A property verb or adnoun at position 3 scopes over the entire nominal complex to its right, including a following formal noun such as <i lang=\"ain-Latn\">utar</i>:",
+    "suggestion": "Revise the claim or provide an example where the property verb is the leftmost modifier to avoid contradiction.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#012",
+  "chapter": "noun-phrase-structure",
+  "lines": "246",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The asterisk and 'is not' are redundant in marking ungrammaticality. Standard practice is to use either the asterisk or the explanatory phrase, not both.",
+    "quote": "<i lang=\"ain-Latn\">*rep mosir</i> is not",
+    "suggestion": "Use either '*rep mosir' or 'rep mosir is not', but not both constructions together.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#009",
+  "chapter": "noun-phrase-structure",
+  "lines": "162",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The forms 'nea' and 'nerok' are presented as variants of 'ne', but 'nerok' shows a different stem ('ner-' vs 'ne-'), suggesting a morphological alternation not reflected in orthography. The lack of macrons in both forms reduces phonological clarity.",
+    "quote": "<i lang=\"ain-Latn\">nea</i> / <i lang=\"ain-Latn\">nerok</i>",
+    "suggestion": "Consider marking vowel length (e.g. 'neā', 'nerōk') and note the stem alternation if relevant, or standardize to a single variant form for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#008",
+  "chapter": "noun-phrase-structure",
+  "lines": "150",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'tooka(y)' uses parentheses for optional 'y', but the base form 'toan' does not have a corresponding 'n' variant. This creates orthographic inconsistency in how variants are presented. Additionally, macrons are missing.",
+    "quote": "<i lang=\"ain-Latn\">tooka(y)</i>",
+    "suggestion": "Standardize variant notation: either use macrons consistently (e.g. 'tōka(y)') or use gemination (e.g. 'tooka(y)') and clarify optional segments uniformly.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#007",
+  "chapter": "noun-phrase-structure",
+  "lines": "143",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'taan' appears with a double 'a', while the base form 'tan' has a single 'a'. This may reflect vowel length, but the orthography is inconsistent with later forms like 'toan' (not *toaan*), suggesting a drift in representation. The extended variant 'taoka(y)' also lacks macrons.",
+    "quote": "<i lang=\"ain-Latn\">taan</i>",
+    "suggestion": "Use macrons to consistently mark vowel length (e.g. 'tān', 'tāan') or use gemination uniformly (e.g. 'taan', 'toaan') throughout the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#006",
+  "chapter": "noun-phrase-structure",
+  "lines": "29",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of macrons in Ainu forms: 'nea' lacks a macron that may be expected if 'ne' is its base form, and other forms in the table (e.g. 'toan') do not consistently reflect vowel length. The dialect table later uses 'nea' and 'nerok', suggesting possible orthographic variation that should be standardized within the chapter.",
+    "quote": "<i lang=\"ain-Latn\">tan</i>, <i lang=\"ain-Latn\">toan</i>, <i lang=\"ain-Latn\">ne</i>, <i lang=\"ain-Latn\">nea</i>",
+    "suggestion": "Standardize macron usage for vowel length across all Ainu forms in the chapter, based on the preferred orthographic convention (e.g. use 'neā' or 'nea' consistently).",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#005",
+  "chapter": "noun-phrase-structure",
+  "lines": "481-482",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same pattern: a claim attributed solely to a Discord discussion is treated as 'corpus-confirmed', which is likely an overstatement of the evidence.",
+    "quote": "verse can add or omit utar freely for syllable count <Ref k='aynucorporadiscord' /> (nukopoli, 2024-11-23) ‹corpus-confirmed›",
+    "suggestion": "Use a more cautious epistemic tag (e.g., '‹corpus-suggested›' or '‹speculative›') unless the claim is independently verified from a corpus study.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#004",
+  "chapter": "noun-phrase-structure",
+  "lines": "248",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A claim sourced only to a Discord message is tagged '‹corpus-confirmed›', which implies systematic corpus evidence beyond a single informal source.",
+    "quote": "rep is already the nominalized form re + nominalizing enclitic -pe <Ref k='aynucorporadiscord' /> (nukopoli, 2024-11-09) ‹corpus-confirmed›",
+    "suggestion": "Downgrade the epistemic tag to '‹contested›' or '‹speculative›' unless independent corpus verification is cited elsewhere.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#001",
+  "chapter": "noun-phrase-structure",
+  "lines": "12, 12",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for ijas2023 is missing page numbers, which is inconsistent with the other citations in the sentence.",
+    "quote": "; <Ref k=\"ijas2023\" />.",
+    "suggestion": "Add page numbers to the ijas2023 citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#015",
+  "chapter": "noun-phrase-structure",
+  "lines": "353",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss is 'luggage-POSS top LOC', but 'sike-he' is the affiliative form of 'sike', not a possessive. The gloss 'POSS' incorrectly implies alienable possession rather than inalienable relational marking.",
+    "quote": "sike-he kasi ta",
+    "suggestion": "Revise gloss to 'luggage-AFF' or 'luggage-ATTR' to reflect affiliative form accurately.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#011",
+  "chapter": "noun-phrase-structure",
+  "lines": "202-204",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'that aforementioned thing' implies a deictic + anaphoric meaning, but the form 'neap' is derived from 'ne' (discourse-anaphoric) + 'pe' (thing). The gloss should reflect compositionality; 'aforementioned' may over-interpret the semantic contribution of 'ne'.",
+    "quote": "<A w=\"neap\" gl=\"that aforementioned thing\" />",
+    "suggestion": "Revise gloss to 'that (anaphoric) thing' or 'the aforementioned thing' to better align with the morpheme 'ne' and its function.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#010",
+  "chapter": "noun-phrase-structure",
+  "lines": "195-197",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that non-Saru dialects use 'nean' where Saru has 'ne', but earlier in the table (line 162), 'nea' is listed as a variant of 'ne' in Saru dialect. This creates a contradiction: is 'nea' a Saru form or a non-Saru form?",
+    "quote": "Non-Saru/Chitose dialects use <i lang=\"ain-Latn\">nean</i> where Saru has <i lang=\"ain-Latn\">ne</i>; eastern Shizunai has <i lang=\"ain-Latn\">ikia</i>/<i lang=\"ain-Latn\">ikirok</i>",
+    "suggestion": "Clarify whether 'nea' is a variant within Saru (as in the table) or a feature of non-Saru dialects (as in the prose), and reconcile the two statements.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-phrase-structure~p1#003",
+  "chapter": "noun-phrase-structure",
+  "lines": "321",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Japanese term '表47' (Table 47) appears in an otherwise English-language text, likely a leftover from a Japanese draft.",
+    "quote": "Relativizability is restricted by noun subclass (表47, Ref k=nakagawa2024 p=215)",
+    "suggestion": "Replace '表47' with 'Table 47' for consistency with the rest of the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

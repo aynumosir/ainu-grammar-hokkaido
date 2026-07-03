@@ -1,0 +1,626 @@
+[
+ {
+  "id": "prenominal-gap-relative-clauses~p1#009",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "296",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 187, the evidence grade '‹corpus-confirmed (as gap)›' is unusual. The '(as gap)' part seems like a specific detail that might be better integrated into the prose or a more detailed note.",
+    "quote": "‹corpus-confirmed (as gap)›.",
+    "suggestion": "Standardize the evidence grade to '‹corpus-confirmed›' and explain the 'gap' aspect in the prose or a note if necessary.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim that 'no attested example of the A of a three-place verb serving as RC head has been reported' is tagged with ‹corpus-confirmed (as gap)›, but this contradicts the meaning of 'corpus-confirmed', which should indicate positive corpus support, not absence of evidence.",
+    "quote": "<Ref k=\"bugaeva2015\" p=\"48\" /> ‹corpus-confirmed (as gap)›",
+    "suggestion": "Change the tag to ‹corpus-suggested› or ‹contested› to accurately reflect the evidential status.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#007",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "187",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade '‹corpus-confirmed (as gap)›' is unusual. Typically, evidence grades are single terms like 'consensus', 'corpus-confirmed', etc. The addition of '(as gap)' seems like a specific detail that might be better integrated into the prose or a more detailed note.",
+    "quote": "‹corpus-confirmed (as gap)›",
+    "suggestion": "Standardize the evidence grade to '‹corpus-confirmed›' and explain the 'gap' aspect in the prose or a note if necessary.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag 'corpus-confirmed (as gap)' is applied to the ditransitive subject position, but the text explicitly states that no examples are attested for this position. The tag contradicts the claim of absence.",
+    "quote": "‹corpus-confirmed (as gap)›",
+    "suggestion": "Replace with '‹speculative›' or '‹contested›' to reflect the lack of evidence.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#004",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "68",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that a total arity of 0 results in a complement clause, and lists 'hi' or 'p' as complementizers. However, the overview section (lines 23-24) states that 'p' or 'pe' supplies the head in a headless relative clause, not as a complementizer. This creates a contradiction regarding the function of 'p'.",
+    "quote": "complement clause (<i lang=\"ain-Latn\">hi</i> or <i lang=\"ain-Latn\">p</i> as complementizer)",
+    "suggestion": "Clarify the role of 'p' and 'pe' in complement clauses versus headless relative clauses.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table claims clause arity +1 for an intransitive verb with subject present, but the arity accounting in lines 39–41 says each NP present subtracts one, so a subject present would give net arity 0, not +1.",
+    "quote": "+1 (intransitive verb, subject present)",
+    "suggestion": "Change the description to 'intransitive verb, subject missing' or adjust the arity value to 0 and reassign the result accordingly.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#019",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "488",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade '‹corpus-suggested›' is applied to the claim that ablative and mutative RC heads are unconfirmed. While this is a reasonable interpretation, the phrasing 'unconfirmed in any source read here' might be better supported by a direct citation to the sources that *don't* confirm them, if available, or by explicitly stating that the lack of confirmation is the basis for the 'corpus-suggested' grade.",
+    "quote": "ablative and mutative RC heads are unconfirmed in any source read here ‹corpus-suggested›.",
+    "suggestion": "Consider adding a citation to Bugaeva (2015:48-49) and Ijäs (2023) here, as they are mentioned in the preceding paragraph as not having attested examples.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Tagging an unconfirmed claim as ‹corpus-suggested› is contradictory. If no source confirms it, the claim lacks corpus suggestion.",
+    "quote": "Second, ablative and mutative RC heads are unconfirmed in any source read here ‹corpus-suggested›.",
+    "suggestion": "Change to ‹speculative› or ‹original-needs-review›.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#018",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "458",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"ijas2023\" /> is placed after the statement that the forms should not be treated as established, but before the evidence grade. It's unclear if the citation supports the statement about established forms or the 'corpus-suggested' grade.",
+    "quote": "the forms she cautiously suggests for these positions should not be treated as established <Ref k=\"ijas2023\" /> ‹corpus-suggested›.",
+    "suggestion": "Place the citation immediately after the claim it supports (Ijäs's suggested forms).",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim explicitly states that the forms are not established and are only cautiously suggested, yet it is tagged with ‹corpus-suggested›, which implies some corpus support. This is inconsistent.",
+    "quote": "the forms she cautiously suggests for these positions should not be treated as established <Ref k=\"ijas2023\" /> ‹corpus-suggested›",
+    "suggestion": "Use ‹speculative› or remove the tag.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#017",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "444",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2015:48) is placed after the quote, but it refers to the claim about 'no examples attested so far'. It would be clearer to place the citation immediately after that specific claim.",
+    "quote": "And her identification of the ditransitive subject as a problematic head position matches Bugaeva's \"no examples attested so far\" <Ref k=\"bugaeva2015\" p=\"48\" />",
+    "suggestion": "Move the citation <Ref k=\"bugaeva2015\" p=\"48\" /> to directly follow 'no examples attested so far'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The evidence grade ‹corpus-confirmed (as gap)› is applied to Ijäs's treatment of the ditransitive subject, but Ijäs's material is constructed and not corpus-attested. The tag falsely implies corpus confirmation.",
+    "quote": "she is consistent in flagging it as an open question rather than asserting ungrammaticality ‹corpus-confirmed (as gap)›",
+    "suggestion": "Change to ‹contested› or ‹speculative› to reflect lack of corpus evidence.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#016",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "404",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"ijas2023\" /> is placed after the statement about Ijäs withholding examples, but before the evidence grade. It's unclear if the citation supports the withholding of examples or the 'corpus-suggested' grade.",
+    "quote": "Ijäs reports the same absence and explicitly withholds constructed examples for these positions <Ref k=\"ijas2023\" />. They are not presented as established ‹corpus-suggested›.",
+    "suggestion": "Place the citation immediately after the claim it supports (Ijäs withholding examples).",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'not presented as established' contradicts the use of ‹corpus-suggested›, which implies some level of corpus-based suggestion. The tag should reflect the absence of evidence rather than tentative presence.",
+    "quote": "They are not presented as established ‹corpus-suggested›.",
+    "suggestion": "Use ‹speculative› or remove the tag if no suggestion is made.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#013",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "335",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.S=go' for 'ku=arpa' implies 'arpa' is a stative verb where 'ku=' marks the subject. However, the note states 'ku=' is the 1SG agent prefix on the transitive verb nukar 'see, read' in a previous example (line 271). It's unclear if 'arpa' is intransitive and 'ku=' marks the subject, or if there's a different convention for intransitive verbs. The gloss could be more precise about the subject marking.",
+    "quote": "g=\"there ALLAT 1SG.S=go restaurant\"",
+    "suggestion": "Clarify the gloss for 'ku=arpa' to explicitly indicate subject marking for an intransitive verb, if that is the case.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'there ALLAT 1SG.S=go restaurant' uses '1SG.S=' which correctly identifies the subject, but the verb 'arpa' is transitive in form (requiring an object), while 'go' is intransitive. The prefix 'ku=' is 1SG, but the alignment should be '1SG.S' only if the verb is intransitive; otherwise, it's ambiguous.",
+    "quote": "oro un ku=arpa ipeusi",
+    "suggestion": "Verify if 'arpa' takes a transitive or intransitive form here; if intransitive, '1SG.S=' is correct, otherwise adjust verb gloss.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#023",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "159",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The evidence grade ‹corpus-confirmed (as gap)› is attached to the row for 'A of 3-place verb', but the table cell says 'no examples attested'. This is a contradiction: 'corpus-confirmed' implies positive evidence, while 'no examples attested' indicates absence of evidence.",
+    "quote": "‹corpus-confirmed (as gap)›",
+    "suggestion": "Change the grade to ‹contested› or ‹speculative› to reflect the lack of attestation despite expectation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#028",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'suwop' may reflect a dialectal variant, but standard romanization of 'red' is often 'suyup' or 'suyup' with 'y'. The spelling 'suwop' may be acceptable in HK dialect, but inconsistency with other chapters should be checked.",
+    "quote": "hure suwop",
+    "suggestion": "Confirm spelling against dialectal norms; if consistent, retain; otherwise, standardize.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#027",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "265",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The word 'kanpisos' appears to be a romanization of 'kanpishos' or 'kanpishō' (book), but standard orthography in the chapter uses macrons. The form lacks a macron on the long vowel, unlike other instances (e.g. 'hure suwop' in line 13).",
+    "quote": "ku=nukar kanpisos",
+    "suggestion": "Check if 'kanpisos' should be 'kanpishō' or 'kanpiso' with macron; ensure consistency with dialectal spelling norms.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#021",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "254, 307",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The formal noun p/pe is glossed as 'NMLZ' in relative clause examples, but in the arity analysis it functions as a head with arity −1, not as a nominalizer. The gloss may misrepresent its grammatical role in relative clauses.",
+    "quote": "NMLZ",
+    "suggestion": "Consider glossing as 'thing' or 'person' in relative clause contexts, or use a consistent gloss that reflects its head status.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#015",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "386",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=father' for 'a=ona' is similar to other examples with 'a='. The note clarifies that 'a=' gives a generic reading. The gloss could be more explicit about this generic function.",
+    "quote": "g=\"4.A=father equal rich.man not.exist rich.man COP\"",
+    "suggestion": "Consider clarifying the gloss for 'a=' to indicate its generic function in this context.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#014",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "354",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'leg-POSS' for 'cikir-ihi' is correct, but the note clarifies that '-ihi' is the POSS suffix and 'cikir' is 'leg'. The gloss could be more explicit by showing the morpheme boundary, e.g., 'leg-POSS'.",
+    "quote": "g=\"leg-POSS long insect\"",
+    "suggestion": "Add a morpheme boundary to the gloss: 'leg-POSS'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#012",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "322",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=ask' for 'a=nu' is similar to line 307. The note clarifies that 'nu' means 'ask, inquire about' and 'a=' gives a generic reading. The gloss could be more explicit about the generic function.",
+    "quote": "g=\"to.it 4.A=ask place even not.exist\"",
+    "suggestion": "Consider clarifying the gloss for 'a=' to indicate its generic function in this context.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#011",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "315",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG=older.brother' for 'ku=yupo' is potentially confusing. 'ku=' is the 1SG prefix, but 'yupo' means 'older brother'. The gloss should reflect that 'ku=' marks the possessor of 'older brother', or that 'older brother' is possessed by the speaker. The note clarifies this, but the gloss itself could be more precise.",
+    "quote": "g=\"COMIT 1SG=older.brother bear shoot uncle\"",
+    "suggestion": "Adjust the gloss for 'ku=yupo' to better reflect the possessive relationship, e.g., '1SG.POSS=older.brother'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#010",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "307",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=drink' implies a 4th person agent, but the note states 'The indefinite fourth-person a= gives a generic reading.' This is a minor point, but the gloss could be more explicit about the generic nature if it's a common convention.",
+    "quote": "g=\"INS hot.water 4.A=drink NMLZ\"",
+    "suggestion": "Consider clarifying the gloss for 'a=' to indicate its generic function in this context.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#008",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "258",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note cites Bugaeva (2015:48) for the frequency of O-relativization vs. A-relativization. This citation is placed at the end of the note, but it refers to a specific claim within the note. It might be clearer to place the citation immediately after the claim it supports.",
+    "quote": "note=\"sawot 'flee, escape' is transitive; kem 'famine' and tumi 'war' are the retained O arguments. The A (the fleeing people) is gapped and the formal noun pe supplies the generic head 'person'. In the corpus, O-relativization is more frequent than A-relativization (Bugaeva 2015: 48).\"",
+    "suggestion": "Move the citation '(Bugaeva 2015: 48)' to directly follow the statement about frequency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#006",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "136",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the example (line 131) is 'there LOC 1SG.A=gather.chestnuts tree'. The note states 'cikuni' is the external head, but the gloss lists it as 'tree'. This is not a direct mismatch, but the gloss could be more explicit about 'cikuni' being the head noun.",
+    "quote": "note=\"The relational noun oro supplies the NP argument of the locative ta; cikuni 'tree' is the external head. Without oro the particle ta has no host.\"",
+    "suggestion": "Consider adding 'head' to the gloss for 'cikuni' if it's standard practice for external heads.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#005",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "116",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'tureptani' as a lexicalized compound, but the morpheme breakdown in the example (line 111) does not show this compound. The gloss for 'turepta' is 'dig.uba-lily', and the note implies 'tureptani' is derived from this. This suggests a missing morpheme or an inconsistency in how the compound is presented.",
+    "quote": "note=\"The instrumental ani must stay in the clause; its removal collapses the arity. The lexicalized compound tureptani 'uba-lily-digging stick' contains the same morphological material but grammatically specifies no instrumental relation.\"",
+    "suggestion": "Clarify the morphemic composition of 'tureptani' or adjust the note.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#002",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "17",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2016:100) is listed first, but it is the second citation in the list of references for the 'morphological change' concept.",
+    "quote": "morphological change to the verb <Ref k=\"bugaeva2016\" p=\"100\" />; <Ref k=\"nakagawa2024\" p=\"503\" />.",
+    "suggestion": "Reorder citations to match the order they appear in the text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#001",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "10",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2015:47) is listed last, but it is the first citation in the list of references for the 'zero gap' concept.",
+    "quote": "zero gap <Ref k=\"nakagawa2024\" p=\"503\" />; <Ref k=\"sato2008\" p=\"168\" />; <Ref k=\"shibatani1990\" p=\"39\" />; <Ref k=\"bugaeva2015\" p=\"47\" />.",
+    "suggestion": "Reorder citations to match the order they appear in the text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#026",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "131",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'there LOC 1SG.A=gather.chestnuts tree' assigns '1SG.A=' to 'yamuk', but the free translation 'the tree at which I gathered chestnuts' implies first person singular agent, while the gloss '1SG.A=' should be '1SG.S=' since 'gather' is intransitive here (no object).",
+    "quote": "oro ta ku=yamuk cikuni",
+    "suggestion": "Change '1SG.A=' to '1SG.S=' in the gloss to match the intransitive semantics.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#025",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "394",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is about theoretical interpretation (grammaticalized vs. pragmatic), but tagged with ‹corpus-suggested›, which refers to corpus evidence. The tag does not match the nature of the claim, which is analytical uncertainty.",
+    "quote": "Whether this is a grammaticalized equivalent to comparison-standard relativization or a pragmatic repair is not settled ‹corpus-suggested›.",
+    "suggestion": "Use ‹contested› or ‹speculative› instead, as they better reflect interpretive disagreement.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#024",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "372",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about island constraint blocking alienable possessor relativization is supported only by Bugaeva 2015, but tagged as ‹consensus›, which implies broader agreement. No other sources are cited for this specific claim, so the grade overstates epistemic confidence.",
+    "quote": "<Ref k=\"bugaeva2015\" p=\"49\" /> ‹consensus›",
+    "suggestion": "Downgrade to ‹corpus-confirmed› or ‹contested› unless additional sources confirm the consensus.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#022",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "280",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'applicative' for the prefix e- is underspecified; in the example (kampi a=e-pakasnu hekattar), e- triggers a valency increase and assigns the Theme (kampi) to O and Recipient to O via applicative semantics, so a more precise gloss like 'APPL' or 'APPL-REC' would better reflect its function.",
+    "quote": "<A w=\"e-\" gl=\"applicative\" />",
+    "suggestion": "Change gl=\"applicative\" to gl=\"APPL\" or gl=\"APPL-REC\" to match standard interlinear practice.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#020",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "31",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a sentence fragment; it lacks a main verb and is not a complete sentence.",
+    "quote": "lexicalized RC-headed nominalizations such as <A w=\"aep\" gl=\"food\" /> in <Xr ch=\"lexical-head-formal-noun-nominalization\" />.",
+    "suggestion": "Integrate with the previous sentence: '…; lexicalized RC-headed nominalizations such as aep are treated in <Xr … />.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "prenominal-gap-relative-clauses~p1#003",
+  "chapter": "prenominal-gap-relative-clauses",
+  "lines": "41-42",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that a positive arity (>= +1) results in a relative clause, but the table on lines 58-75 shows that a total arity of +1 results in a relative clause, while a total arity of 0 results in a complement clause, and a total arity of -1 results in an ungrammatical combination. This implies that a positive arity of +1 is the condition for a relative clause, not any positive arity.",
+    "quote": "When the summed arity of the embedded clause plus its formal-noun head is still positive (≥ +1), one argument slot remains unfilled — that is the gap — and the whole unit functions as a relative clause.",
+    "suggestion": "Clarify that a total arity of +1 specifically indicates a relative clause.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

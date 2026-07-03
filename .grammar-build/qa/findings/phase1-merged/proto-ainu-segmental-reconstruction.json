@@ -1,0 +1,678 @@
+[
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#001",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "604",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Alonso de la Fuente's chapter is internally inconsistent regarding the PA suprasegmental system, citing conflicting views presented in sections §2.3 and §2.4.",
+    "quote": "Alonso de la Fuente's chapter is internally inconsistent on this point: §2.3 sides with Satō's pitch-first view (c), while §2.4 endorses Hattori's length-first view (a), and the chapter identifies Vovin's mora-counting assumption in RPA as \"the source of all problems\"",
+    "suggestion": null,
+    "confidence": 1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text explicitly states that Alonso's chapter is internally inconsistent about the length–pitch dispute, but this is a meta-commentary about the source being discussed, not an inconsistency within the current chapter itself. However, the phrasing 'Alonso de la Fuente's chapter is internally inconsistent on this point' could be read as a claim about the source, but the surrounding context (the current chapter) does not itself contradict anything. The issue is that the text reports an inconsistency in Alonso's work, which is fine, but the sentence 'This inconsistency is recorded in the factbase and cannot be resolved from the sources read here' is a register leak (pipeline language).",
+    "quote": "Alonso de la Fuente's chapter is internally inconsistent on this point: §2.3 sides with Satō's pitch-first view (c), while §2.4 endorses Hattori's length-first view (a), and the chapter identifies Vovin's mora-counting assumption in RPA as 'the source of all problems'",
+    "suggestion": "Remove the pipeline language: 'This inconsistency is recorded in the factbase and cannot be resolved from the sources read here' should be replaced with something like 'This inconsistency remains unresolved in the literature.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The current chapter reports an inconsistency in Alonso's work, but the current chapter itself does not take a position. However, the statement 'This inconsistency is recorded in the factbase' is a register leak. The inconsistency is not in the current chapter, so it's not an internal inconsistency of this chapter. But the reporting of it is fine. However, the text says 'Alonso de la Fuente's chapter is internally inconsistent' — this is a claim about the source, not an inconsistency in the current text. No action needed except the register leak already flagged.",
+    "quote": "Alonso de la Fuente's chapter is internally inconsistent on this point: §2.3 sides with Satō's pitch-first view (c), while §2.4 endorses Hattori's length-first view (a)",
+    "suggestion": "No change needed beyond the register leak fix.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text claims Alonso's chapter is internally inconsistent, but this inconsistency is presented as a finding about the source (Alonso 2022), not an error in the current chapter. However, the current chapter attributes conflicting views to the same source without resolving them, potentially misrepresenting it.",
+    "quote": "Alonso de la Fuente's chapter is internally inconsistent on this point: §2.3 sides with Satō's pitch-first view (c), while §2.4 endorses Hattori's length-first view (a)",
+    "suggestion": "Clarify whether the inconsistency is in Alonso 2022 or in how this chapter interprets it; if the former, cite specific sections of Alonso to support the claim.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#010",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "638-640",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline language: 'before finalization' is addressed to the production process, not the reader.",
+    "quote": "load-bearing RPA citations should be verified against the original before finalization",
+    "suggestion": "Replace with: 'load-bearing RPA citations should be treated with caution, as they are second-hand.'",
+    "confidence": 1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline language: 'the Handbook chapters read' is production-internal.",
+    "quote": "The Hattori (1967) length-pitch correspondence paper, Hattori and Chiri (1960), Asai (1974), and the Satō (2015/2016) accent papers are all cited second-hand via the Handbook chapters read.",
+    "suggestion": "Rephrase to: 'are all cited second-hand via the Handbook chapters.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase \"should be verified before finalization\" is a meta-commentary on the production process, not content for the reader; it leaks editorial workflow into the prose.",
+    "quote": "load-bearing RPA citations should be verified against the original before finalization",
+    "suggestion": "Rephrase to: \"RPA citations are second-hand and require verification against the original monograph.\"",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase \"Handbook chapters read\" refers to the project's reading process, not the content itself — a register leak from the research pipeline.",
+    "quote": "The Hattori (1967) length-pitch correspondence paper, Hattori and Chiri (1960), Asai (1974), and the Satō (2015/2016) accent papers are all cited second-hand via the Handbook chapters read.",
+    "suggestion": "Rephrase to: \"are all cited second-hand via secondary sources (Alonso 2022, Tangiku 2022).\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#003",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "607",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'This inconsistency is recorded in the factbase and cannot be resolved from the sources read here' is meta-commentary about the production process rather than content for the reader.",
+    "quote": "This inconsistency is recorded in the factbase and cannot be resolved from the sources read here; the reconstruction of PA prosody is genuinely unsettled",
+    "suggestion": "Remove the phrase 'This inconsistency is recorded in the factbase and cannot be resolved from the sources read here;'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline language: 'factbase', 'sources read here' are addressed to the production process, not the reader.",
+    "quote": "This inconsistency is recorded in the factbase and cannot be resolved from the sources read here",
+    "suggestion": "Replace with: 'This inconsistency remains unresolved in the literature.'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#008",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "546",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note contains a mix of factual claims, citations, and meta-commentary ('confidence 1.0'). The 'confidence 1.0' part is a pipeline register leak.",
+    "quote": "Reconstructed pre-form: PA */ti-ʔe-p/ (Alonso de la Fuente 2022, Table 18), decomposed as the medial/4th-person prefix *ti-, the verb *ʔe 'eat', and the nominalizer *-p — 'what all eat'. Common Ainu */ciʔep/ gives Horobetsu ciʔep (glottal retained), Saru cep (glottal lost), ‹SA› Raiciska ceh (p debuccalized). Triple-corroborated: Alonso 2022 Table 18, morpheme-db curated decomposition (confidence 1.0), and community discussion (nukopoli, aynu-corpora Discord 2023-12-06).",
+    "suggestion": "Remove 'confidence 1.0'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'confidence 1.0' is a pipeline term and also an overstatement. No source can have confidence 1.0.",
+    "quote": "Triple-corroborated: Alonso 2022 Table 18, morpheme-db curated decomposition (confidence 1.0), and community discussion (nukopoli, aynu-corpora Discord 2023-12-06).",
+    "suggestion": "Remove 'confidence 1.0' or rephrase to 'high confidence'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#007",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "420",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The character &#123;kʸ&#125; is rendered as '{kʸ}'. This is likely a markup issue where the curly braces are not being interpreted correctly.",
+    "quote": "p pʸ t tʸ k &#123;kʸ&#125; kʷ ʔ / m n / s y w [h] [hʸ] / ɾ~l ʈ",
+    "suggestion": "Ensure the markup for '{kʸ}' is correctly rendered, possibly by escaping the braces or using a different method if intended as a literal representation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The character &#123;sʸ&#125; is rendered as '{sʸ}'. This is likely a markup issue where the curly braces are not being interpreted correctly.",
+    "quote": "p pʸ t tʸ k &#123;sʸ&#125; y w [h] [hʸ] / ɾ~l ʈ",
+    "suggestion": "Ensure the markup for '{sʸ}' is correctly rendered, possibly by escaping the braces or using a different method if intended as a literal representation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Curly braces are escaped as HTML entities (&#123; and &#125;) instead of rendering as {kʸ}. This is a formatting error likely due to improper HTML escaping.",
+    "quote": "p pʸ t tʸ k &#123;kʸ&#125; kʷ ʔ / m n / s y w [h] [hʸ] / ɾ~l ʈ",
+    "suggestion": "Use proper HTML or Markdown to render {kʸ} as literal curly braces around kʸ.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#012",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "25-28",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline language: 'project repository', 'reported-evidence status already assigned to that entry' are production-internal terms.",
+    "quote": "The RPA monograph is not held in the project repository; all RPA reconstructions and associated table references are taken from Alonso de la Fuente's reproductions, and citations of Vovin 1993 therefore carry the reported-evidence status already assigned to that entry.",
+    "suggestion": "Rephrase to: 'The RPA monograph was not available for direct consultation; all RPA reconstructions and table references are cited from Alonso de la Fuente's reproductions, and citations of Vovin 1993 are therefore second-hand.'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#011",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "623-624",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline language: 'project repository', 'factbase underlying this chapter' are production-internal terms.",
+    "quote": "is held in the project repository but was not read in detail for the factbase underlying this chapter",
+    "suggestion": "Replace with: 'is available but was not consulted in detail for this chapter.'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#022",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "424",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as line 420: &#123;sʸ&#125; should be {sʸ}, but is incorrectly escaped in HTML.",
+    "quote": "p pʸ t tʸ k &#123;sʸ&#125; y w [h] [hʸ] / ɾ~l ʈ",
+    "suggestion": "Correct to {sʸ} using proper formatting.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#020",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "96-98",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to Alonso's rejection, but the text presents it as Alonso's view. The tag might imply that the rejection itself is contested, which is fine, but it's unclear whether the tag applies to the whole claim or just the 'without residue' part.",
+    "quote": "Alonso rejects the seventeen-vowel system on phonetic and historical grounds: the proposed extra vowel qualities leave no trace in the oldest Nara-period loanword layer, and the distributional alternations attributed to them are reassignable to the five basic vowels without residue <Ref k=\"alonso2022\" p=\"§2.1\" /> ‹contested›.",
+    "suggestion": "Consider moving the tag to the specific claim that is contested, or clarify in the text.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#014",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "441-442",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The abbreviation 'SA' is used for Saru, but earlier in the chapter (e.g., line 68) 'SA' is used with the dialect tag ‹SA› for Sakhalin. This is confusing: 'SA' as a lect abbreviation for Saru vs '‹SA›' as a dialect tag for Sakhalin. The text notes 'SA = Saru (Alonso's convention)' but this conflicts with the use of ‹SA› for Sakhalin throughout.",
+    "quote": "Lect abbreviations follow Alonso 2022 §0: Y = Yakumo, HO = Horobetsu, SA = Saru (Alonso's convention), B = Bihoro; ‹SA› RA = Sakhalin Raiciska; ‹KU› KD/KK/KV = Kuril sources (Dybowski/Klaproth/Voznesenskij), NA = ‹SA› Nairo",
+    "suggestion": "Use a different abbreviation for Saru (e.g., 'SR' or 'SAR') to avoid confusion with the Sakhalin dialect tag.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "As noted, this conflicts with the use of ‹SA› for Sakhalin. The text acknowledges it's Alonso's convention, but it's confusing for the reader.",
+    "quote": "SA = Saru (Alonso's convention)",
+    "suggestion": "Add a note explaining the distinction, or change the abbreviation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#009",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "567",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' is italicized, but the gloss 'Japanese person' is not. Consistency in gloss formatting might be desired.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Consider italicizing glosses or not italicizing Ainu forms if they are already marked with lang='ain-Latn'. However, italics for Ainu forms are common.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' has a macron over the first 'i' but not the second. This might be an inconsistency in representing vowel length or stress.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Verify the correct orthography for 'sísam' and ensure consistency in macron usage.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' is marked with HA (Hokkaido Ainu), but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'sísam' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'túki' has a macron over the 'u', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">túki</i> 'cup' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'túki' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'húre' has a macron over the 'u', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">húre</i> 'red' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'húre' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' has a macron over the first 'i', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'sísam' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' has a macron over the first 'i', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'sísam' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'túki' has a macron over the 'u', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">túki</i> 'cup' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'túki' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'húre' has a macron over the 'u', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">húre</i> 'red' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'húre' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' has a macron over the first 'i', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'sísam' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' has a macron over the first 'i', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'sísam' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'túki' has a macron over the 'u', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">túki</i> 'cup' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'túki' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'húre' has a macron over the 'u', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">húre</i> 'red' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'húre' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' has a macron over the first 'i', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'sísam' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sísam' has a macron over the first 'i', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">sísam</i> 'Japanese person' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'sísam' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'túki' has a macron over the 'u', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">túki</i> 'cup' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'túki' to complete the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'húre' has a macron over the 'u', but the corresponding Sakhalin/Kuril form is missing.",
+    "quote": "HA <i lang=\"ain-Latn\">húre</i> 'red' ↔ ‹SA›",
+    "suggestion": "Provide the corresponding ‹SA› form for 'húre' to complete the example.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#006",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "406",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table number and the citation reference the same table, which is slightly redundant. It's not strictly an error, but could be streamlined.",
+    "quote": "The two revised PA consonant inventories proposed by Alonso de la Fuente are (Table 14; <Ref k=\"alonso2022\" p=\"Table 14\" />):",
+    "suggestion": "Either remove the parenthetical citation or integrate it more smoothly, e.g., '...are presented in Alonso de la Fuente's Table 14 (<Ref k=\"alonso2022\" p=\"Table 14\" />):'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#005",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "195",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This parenthetical note indicates that the information is second-hand, which is relevant for citation hygiene but might be better integrated into the prose or handled in a footnote/endnote.",
+    "quote": "(all second-hand via Alonso 2022, citing Vovin 1993)",
+    "suggestion": "Consider rephrasing to integrate this information more smoothly, e.g., 'Alonso (2022), citing Vovin (1993), presents the following...' or ensure this is consistently applied throughout.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#004",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "20",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"alonso2022\" p=\"§4\" /> is attached to a sentence that seems to be a direct quote or paraphrase of the cited source, but it's not explicitly marked as such.",
+    "quote": "Deeper pre-history — the Pre-Proto-Ainu stage — is reachable only \"ad nauseam by internal reconstruction\" and cannot be independently validated",
+    "suggestion": "Consider adding quotation marks or a phrase like 'according to Alonso' if it's a direct paraphrase.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#023",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "430",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text refers to \"curly braces\" but uses HTML-escaped entities; this creates a mismatch between the descriptive term and the actual rendered characters, which may confuse readers.",
+    "quote": "Items in &#123;curly braces&#125; are motivated by typological reasoning only; items in [square brackets] are plausibly allophonic.",
+    "suggestion": "Either unescape the entities to show { } or rephrase to refer to \"braces in HTML notation\" if escaping is necessary.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#021",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "89",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text lists thirteen vowel symbols (i, ü, e, ö, E, a, ï, ë, A, O, o, u) and implies five long counterparts, but claims twelve short vowels. The count does not match: there are 13 symbols listed, not 12 short vowels.",
+    "quote": "Vovin posited a seventeen-vowel PA system (twelve short plus five long: i ü e ö E a ï ë A O o u plus long counterparts)",
+    "suggestion": "Revise the count to match the listed symbols or correct the list to include only twelve short vowels.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#019",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "632-643",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline language: 'project repository', 'before finalization'.",
+    "quote": "The RPA monograph (Vovin 1993) is not in the project repository, so every page reference to RPA is second-hand via Alonso 2022, and load-bearing RPA citations should be verified against the original before finalization",
+    "suggestion": "Rephrase to: 'The RPA monograph was not available for direct consultation; all page references to RPA are second-hand via Alonso 2022, and load-bearing RPA citations should be treated with caution.'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#018",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "396-401",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is applied to both the hypothesis and Shiratori's proposal, but the text says Shiratori's proposal 'adds independent support'. If it adds support, it might be less speculative, but the tag remains. This is consistent but worth noting.",
+    "quote": "The palatalized-series hypothesis is explicitly typology-driven — posited because the *s/sʸ and *t/tʸ doublets make it typologically expected, not because reflex distributions force it ‹speculative›. Shiratori's (2026) proposal of PA *ia as a new diagnostic for the palatalized series adds independent support for at least *pʸ and *tʸ <Ref k=\"shiratori2026\" /> ‹speculative›.",
+    "suggestion": "No change needed if the tag is intentional, but consider whether 'speculative' is appropriate for a proposal that adds support.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#017",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "108-111",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a Discord attribution, but the claim itself is presented as a community observation. The tag ‹contested› seems to apply to the Discord discussion, not to the Janhunen hypothesis. This is confusing.",
+    "quote": "Community discussion on the aynu-corpora Discord has independently noted this as the more parsimonious account, opposing the introduction of a phonemically unmotivated *H <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-12-23 ‹contested›).",
+    "suggestion": "Clarify what is contested: either the Janhunen hypothesis or the Discord observation. If the hypothesis is contested, move the tag to the hypothesis statement.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Discord citation includes a date (2024-12-23) which is in the past relative to the book's writing (2025-2026), so that's fine. But the epistemic tag ‹contested› is attached to the Discord message, which is unusual — typically tags apply to claims, not sources.",
+    "quote": "Community discussion on the aynu-corpora Discord has independently noted this as the more parsimonious account, opposing the introduction of a phonemically unmotivated *H <Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-12-23 ‹contested›).",
+    "suggestion": "Move the tag to the claim: '...opposing the introduction of a phonemically unmotivated *H ‹contested›.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#016",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "546",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline language: 'morpheme-db curated decomposition (confidence 1.0)' is production-internal terminology.",
+    "quote": "Triple-corroborated: Alonso 2022 Table 18, morpheme-db curated decomposition (confidence 1.0), and community discussion (nukopoli, aynu-corpora Discord 2023-12-06).",
+    "suggestion": "Remove or rephrase to: 'This is supported by Alonso 2022 Table 18, the morpheme database, and community discussion (nukopoli, aynu-corpora Discord 2023-12-06).'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#015",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "554",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference uses 'Xr' without the proper Svelte component syntax. It should be '<Xr ch=\"internal-reconstruction-and-grammaticalization-pathways\" />' or similar. Also, the text says 'See Xr ...' which is a mix of prose and markup.",
+    "quote": "See Xr internal-reconstruction-and-grammaticalization-pathways for the full grammaticalization pathway.",
+    "suggestion": "Replace with proper cross-reference: '<Xr ch=\"internal-reconstruction-and-grammaticalization-pathways\" />'.",
+    "confidence": 1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference is written as plain text 'Xr' instead of using the Svelte component. Also, the chapter slug should be in quotes or as a component attribute.",
+    "quote": "See Xr internal-reconstruction-and-grammaticalization-pathways for the full grammaticalization pathway.",
+    "suggestion": "Replace with '<Xr ch=\"internal-reconstruction-and-grammaticalization-pathways\" />'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#013",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "289",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The abbreviation ‹SA› is used for Sakhalin Ainu, but earlier in the chapter (line 441) NA is defined as '‹SA› Nairo'. Here it says 'Nairo subdialect of ‹SA›' which is inconsistent with the abbreviation NA used elsewhere (e.g., line 476). Also, 'Nairo' is spelled 'Nairo' here but 'Nairo' in line 441? Actually line 441 says 'NA = ‹SA› Nairo' — same spelling. But line 289 says 'Nairo' — check: line 289 has 'Nairo', line 441 has 'Nairo'. Both are 'Nairo'? Let me re-read: line 289: 'Nairo subdialect of ‹SA›' — yes 'Nairo'. Line 441: 'NA = ‹SA› Nairo' — also 'Nairo'. So no inconsistency. However, the abbreviation NA is used in the table (line 476) but not introduced until line 441, which is after line 289. That's a forward reference issue.",
+    "quote": "Nairo subdialect of ‹SA›",
+    "suggestion": "Introduce the abbreviation NA earlier, or use the full form consistently.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The abbreviation '‹SA›' is used for Sakhalin Ainu, but earlier (line 441) 'SA' is defined as Saru. This is confusing because the dialect tag ‹SA› is used for Sakhalin, but the lect abbreviation SA is used for Saru. The text uses both in close proximity.",
+    "quote": "The key evidence is the Nairo subdialect of ‹SA›, where this class surfaces as t- where all other lects have r-",
+    "suggestion": "Ensure consistent use: use ‹SA› only as a dialect tag for Sakhalin, and use a different abbreviation for Saru (e.g., 'SR').",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "proto-ainu-segmental-reconstruction~p1#002",
+  "chapter": "proto-ainu-segmental-reconstruction",
+  "lines": "638",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence indicates that citations to Vovin 1993 are second-hand and need verification against the original source, which is a pipeline register leak and a citation hygiene issue.",
+    "quote": "The RPA monograph (Vovin 1993) is not in the project repository, so every page reference to RPA is second-hand via Alonso 2022, and load-bearing RPA citations should be verified against the original before finalization",
+    "suggestion": "Remove the phrase 'and load-bearing RPA citations should be verified against the original before finalization'.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

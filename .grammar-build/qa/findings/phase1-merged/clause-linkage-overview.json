@@ -1,0 +1,720 @@
+[
+ {
+  "id": "clause-linkage-overview~p1#003",
+  "chapter": "clause-linkage-overview",
+  "lines": "26",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss contains two instances of 'CONJ' for the particle 'hine' and 'hike', but the translation and context suggest 'hine' is a conjunctive particle and 'hike' might be something else or a repetition.",
+    "quote": "g=\"4.POSS=elder.brother-POSS 4.O=raise CONJ exist.PL=4.S NMLZ COP CONJ\"",
+    "suggestion": "Clarify the gloss for 'hike' or ensure consistency with the prose's description of 'hine' as a connective.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'pe ne', which appears to be a nominalizer plus copula construction, but the gloss 'NMLZ COP CONJ' assigns 'CONJ' to 'hike', not to 'pe ne'. However, 'hike' is a connective particle and should be glossed as CONJ, while 'pe ne' should be glossed as NMLZ + COP without CONJ. The current gloss misaligns the grammatical labels.",
+    "quote": "m=\"a=yupi-hi i=resu hine oka=an pe ne hike\"",
+    "suggestion": "Change the gloss to: \"4.POSS=elder.brother-POSS 4.O=raise CONJ exist.PL=4.S NMLZ COP CONJ\" → \"4.POSS=elder.brother-POSS 4.O=raise CONJ exist.PL=4.S NMLZ COP .CONJ\" and adjust the CONJ label to align with 'hike', or split the gloss to reflect that 'pe ne' is not a conjunction.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#011",
+  "chapter": "clause-linkage-overview",
+  "lines": "136",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particle 'ayne' is listed here but not in the earlier inventory of particles (line 87).",
+    "quote": "<i lang=\"ain-Latn\">wa</i>, <i lang=\"ain-Latn\">ayne</i>",
+    "suggestion": "Add 'ayne' to the list in line 87 or clarify its status.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'ayne' appears only once in the inventory table and is not mentioned elsewhere in the chapter. It may be a typographical variant or error for 'awa', which is discussed in detail. If intentional, it should be cross-referenced or explained.",
+    "quote": "<i lang=\"ain-Latn\">ayne</i>",
+    "suggestion": "Verify whether 'ayne' is a dialectal or orthographic variant of 'awa' or another form; if so, add a note or correct the form for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#033",
+  "chapter": "clause-linkage-overview",
+  "lines": "506-508",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that 'tek' is not a connective in Saru or Chitose but is one in other dialects. However, earlier in the chapter (line 192), 'p' and 'hike' are listed under 'narrative cohesion' as connectives, and 'tek' is not mentioned in the inventory table. This omission creates an inconsistency between the inventory and the dialect discussion.",
+    "quote": "<i lang=\"ain-Latn\">Tek</i> is not a connective in Saru or Chitose, where it is an auxiliary, yet in most other dialects it links clauses",
+    "suggestion": "Add 'tek' to the inventory table under a relevant domain (e.g., 'sequential' or 'narrative cohesion') with a dialect note, or explain why it is excluded despite its connective use in other dialects.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#031",
+  "chapter": "clause-linkage-overview",
+  "lines": "417-419",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The second clause 'aynu itak sinep ka erampewtek pa' is glossed without subject indexing on 'erampewtek', yet the translation says 'they do not understand'. The plural 'pa' is glossed as PL, but there is no subject index (e.g., 3PL) on the verb. The gloss fails to show the subject indexing that must be present on the verb if it is finite.",
+    "quote": "g=\"Japanese language INS 1SG.A=raise NMLZ COP CONJ Ainu language one even not.understand PL\"",
+    "suggestion": "Revise the gloss to include the subject index on 'erampewtek', e.g., '3PL.S=not.understand PL', or clarify if 'pa' is the subject and indexed accordingly.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#029",
+  "chapter": "clause-linkage-overview",
+  "lines": "249-251",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation says 'I gathered honewort and put it into the soup', implying that 'it' refers to the honewort. However, the gloss does not show any object indexing or coreference between the two clauses. The second clause 'k=omare' (1SG.A=put.in) lacks an object, making the anaphora invisible in the gloss.",
+    "quote": "g=\"honewort 1SG.A=gather CONJ soup place 1SG.A=put.in\"",
+    "suggestion": "Revise the gloss to include object indexing or add a note explaining the discourse-level anaphora, or adjust the gloss to reflect the object of 'put.in' as third person or demonstrative if morphologically present.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#022",
+  "chapter": "clause-linkage-overview",
+  "lines": "495–503",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Gloss consistently marks person as 4th person (a=, an=, =an), but the translation uses 1st person plural ‘our’ and ‘we’. The note does not explain this shift, so the reader sees a person‑number mismatch.",
+    "quote": "g=\"4.A=have lady PL 4.A=cherish CONJ every.day exist CONJ exist.PL=4.S\" … tr=\"Cherishing our ladies, we lived on day after day.\"",
+    "suggestion": "Either adjust the gloss to ‘1PL’ (if that is the intended reading) or revise the translation to ‘Cherishing the ladies, one lived on…’ to match the 4th‑person gloss.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#021",
+  "chapter": "clause-linkage-overview",
+  "lines": "530",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a pipeline instruction, not a statement for the reader.",
+    "quote": "await verification against the print edition",
+    "suggestion": "Reword as a present-tense fact about the source, e.g., ‘the print edition has not been consulted to verify this claim’.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#020",
+  "chapter": "clause-linkage-overview",
+  "lines": "342–343",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a meta note about verification status, addressed to the production process rather than the reader.",
+    "quote": "The exact author and page of that passage have not been confirmed against the print edition",
+    "suggestion": "Rewrite as a factual statement, e.g., ‘The print edition does not identify the author or page for this passage’ if appropriate, or move to an open-points section.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#026",
+  "chapter": "clause-linkage-overview",
+  "lines": "204",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase ‘these items’ is ambiguous: it could refer to the entire inventory of linkers, but the following sentences and table only list the eight ‘cleaner’ items (wa, kor, kusu are omitted). The reader may wonder which items are being confirmed.",
+    "quote": "Whole-corpus word-form counts confirm that these items carry the descriptive load, with the homonym caveat kept in view.",
+    "suggestion": "Rephrase to ‘the less homonymous items’ or explicitly list the items referred to.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#025",
+  "chapter": "clause-linkage-overview",
+  "lines": "190–198",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Earlier (line 57) orowa is classed as a connective adverb, not a conjunctive particle. In this domain table orowa is listed as a ‘main Hokkaido linker’ alongside particles, blurring the earlier two-class distinction without comment.",
+    "quote": "orowa, connective p/hike, tail-head repetition",
+    "suggestion": "Clarify that the ‘main Hokkaido linkers’ column includes both particles and adverbs, or separate them into two subcolumns.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#024",
+  "chapter": "clause-linkage-overview",
+  "lines": "87",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This initial list of conjunctive particles does not include awa, yak, ciki, hike, or p, all of which appear later as connectives. While the list is labeled ‘examples’, the omission may lead a reader to think the list is exhaustive and then be puzzled by later forms.",
+    "quote": "examples: wa, hine, kor, no, akusu, kusu, yakun, korka, yakka, sekor",
+    "suggestion": "Add a note that this is a representative sample, or expand the list to include all particles used in the chapter.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#019",
+  "chapter": "clause-linkage-overview",
+  "lines": "221",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particle 'hine' is listed here with a count, but it was not previously listed in the inventory of particles (line 87).",
+    "quote": "<td><i lang=\"ain-Latn\">hine</i></td><td>14,368</td><td>neutral clause-chaining</td></tr>",
+    "suggestion": "Add 'hine' to the list in line 87 or clarify its status.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particle 'yakka' is listed here with a count, but it was not previously listed in the inventory of particles (line 87).",
+    "quote": "<td><i lang=\"ain-Latn\">yakka</i></td><td>7,536</td><td>concession ‘even if’</td></tr>",
+    "suggestion": "Add 'yakka' to the list in line 87 or clarify its status.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particle 'sekor' is listed here with a count, but it was not previously listed in the inventory of particles (line 87).",
+    "quote": "<td><i lang=\"ain-Latn\">sekor</i></td><td>6,991</td><td>quotative</td></tr>",
+    "suggestion": "Add 'sekor' to the list in line 87 or clarify its status.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#018",
+  "chapter": "clause-linkage-overview",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose mentions 'kusu ne' as part of the future and intention auxiliary, but the table in section 'inventory' (lines 167-168) lists 'kusu ne' under 'cause and purpose' with the note 'future and intention'. This could be more clearly distinguished.",
+    "quote": "In the aligned Hokkaido corpus <i lang=\"ain-Latn\">wa</i> (≈50,600), <i lang=\"ain-Latn\">kor</i> (≈29,300), and <i lang=\"ain-Latn\">kusu</i> (≈16,000) are among the commonest words, but those totals fold in the ablative and final-particle <i lang=\"ain-Latn\">wa</i>, the verb <i lang=\"ain-Latn\">kor</i> ‘have’, and the future <i lang=\"ain-Latn\">kusu ne</i>, and so overstate the connective.",
+    "suggestion": "Clarify the distinction between clause-linking 'kusu' and the auxiliary 'kusu ne' in the prose or table.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#017",
+  "chapter": "clause-linkage-overview",
+  "lines": "192",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particles 'orowa', 'p', and 'hike' are listed here but not in the earlier inventory of particles (line 87).",
+    "quote": "<i lang=\"ain-Latn\">orowa</i>, connective <i lang=\"ain-Latn\">p</i>/<i lang=\"ain-Latn\">hike</i>, tail-head repetition",
+    "suggestion": "Add 'orowa', 'p', and 'hike' to the list in line 87 or clarify their status.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#016",
+  "chapter": "clause-linkage-overview",
+  "lines": "182",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particles 'ari' and 'ani' are listed here but not in the earlier inventory of particles (line 87).",
+    "quote": "<i lang=\"ain-Latn\">sekor</i>, dialectal <i lang=\"ain-Latn\">ari</i>/<i lang=\"ain-Latn\">ani</i>",
+    "suggestion": "Add 'ari' and 'ani' to the list in line 87 or clarify their status.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#015",
+  "chapter": "clause-linkage-overview",
+  "lines": "173",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particles 'pekor', 'noyne', and 'kotom' are listed here but not in the earlier inventory of particles (line 87).",
+    "quote": "<i lang=\"ain-Latn\">no</i>, <i lang=\"ain-Latn\">pekor</i>, <i lang=\"ain-Latn\">noyne</i>, <i lang=\"ain-Latn\">kotom</i>",
+    "suggestion": "Add 'pekor', 'noyne', and 'kotom' to the list in line 87 or clarify their status.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#014",
+  "chapter": "clause-linkage-overview",
+  "lines": "164",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The forms 'wa kusu' and 'hi kusu' are listed as single particles, but the prose (line 408) describes them as 'reason-only forms'. This could be clearer in the table.",
+    "quote": "<i lang=\"ain-Latn\">kusu</i>, <i lang=\"ain-Latn\">wa kusu</i>, <i lang=\"ain-Latn\">hi kusu</i>",
+    "suggestion": "Clarify that 'wa kusu' and 'hi kusu' are combinations rather than single particles.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#013",
+  "chapter": "clause-linkage-overview",
+  "lines": "155",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particle 'yak' is listed here but not in the earlier inventory of particles (line 87).",
+    "quote": "<i lang=\"ain-Latn\">yakun</i>, <i lang=\"ain-Latn\">yak</i>, <i lang=\"ain-Latn\">ciki</i>, <i lang=\"ain-Latn\">yakka</i>, <i lang=\"ain-Latn\">korka</i>",
+    "suggestion": "Add 'yak' to the list in line 87 or clarify its status.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#012",
+  "chapter": "clause-linkage-overview",
+  "lines": "142",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particle 'awa' is listed here but not in the earlier inventory of particles (line 87).",
+    "quote": "<i lang=\"ain-Latn\">hine</i>, <i lang=\"ain-Latn\">akusu</i>, <i lang=\"ain-Latn\">awa</i>",
+    "suggestion": "Add 'awa' to the list in line 87 or clarify its status.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#010",
+  "chapter": "clause-linkage-overview",
+  "lines": "117",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'inevitable-consequence conditional' is not hyphenated, while 'concessive' and 'adversative' in the table are.",
+    "quote": "Saru marks with <i lang=\"ain-Latn\">kor</i>, and <i lang=\"ain-Latn\">konno</i> for an inevitable-consequence conditional where Saru again uses <i lang=\"ain-Latn\">kor</i>",
+    "suggestion": "Hyphenate 'inevitable consequence conditional' for consistency.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#009",
+  "chapter": "clause-linkage-overview",
+  "lines": "101",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The prose mentions 'kusu ne' as an intention auxiliary, but the table in section 'inventory' (lines 167-168) lists 'kusu ne' under 'cause and purpose' with the note 'future and intention'. This could be more clearly distinguished.",
+    "quote": "<i lang=\"ain-Latn\">Wa</i> is the sequential linker, the ablative case particle, and a sentence-final emphatic; <i lang=\"ain-Latn\">kor</i> is a linker and the transitive verb ‘have’; <i lang=\"ain-Latn\">kusu</i> is a causal/purpose linker, a free ‘therefore’, and part of the intention auxiliary <i lang=\"ain-Latn\">kusu ne</i>; <i lang=\"ain-Latn\">no</i> is a linker and the adverb-forming suffix <i lang=\"ain-Latn\">-no</i>",
+    "suggestion": "Clarify the distinction between clause-linking 'kusu' and the auxiliary 'kusu ne' in the prose or table.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#008",
+  "chapter": "clause-linkage-overview",
+  "lines": "87",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of particles includes 'no', which is also mentioned as an adverb-forming suffix in the prose (lines 104-105). This could be confusing without further clarification in the table.",
+    "quote": "<i lang=\"ain-Latn\">wa, hine, kor, no, akusu, kusu, yakun, korka, yakka, sekor</i>",
+    "suggestion": "Add a note to the table or clarify in the prose that 'no' functions as both a linker and an adverb-forming suffix.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#007",
+  "chapter": "clause-linkage-overview",
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '接続助詞' is not consistently rendered with a language tag.",
+    "quote": "conjunctive particle (<span lang=\"ja\">接続助詞</span>)",
+    "suggestion": "Add `lang=\"ja\"` to the span tag for consistency with other Japanese terms.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '副詞句' is not consistently rendered with a language tag.",
+    "quote": "connective adverb (<span lang=\"ja\">副詞句</span>)",
+    "suggestion": "Add `lang=\"ja\"` to the span tag for consistency with other Japanese terms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#006",
+  "chapter": "clause-linkage-overview",
+  "lines": "55",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '接続助詞' is not consistently rendered with a language tag.",
+    "quote": "post-predicate conjunctive particle (<span lang=\"ja\">接続助詞</span>)",
+    "suggestion": "Add `lang=\"ja\"` to the span tag for consistency with other Japanese terms.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical '(no)' and '(ke)' are not explained or consistently used in the text.",
+    "quote": "clause-initial connective adverb such as <i lang=\"ain-Latn\">orowa(no)</i> ‘and then’ or <i lang=\"ain-Latn\">rapok(ke)</i> ‘meanwhile’",
+    "suggestion": "Clarify the function of the parenthetical elements or remove them if they are not essential.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'conjunctive particle' is used here, but the table later distinguishes between 'conjunctive particle' and 'connective adverb'. This could be clearer.",
+    "quote": "free and can stack after a conjunctive particle.",
+    "suggestion": "Ensure consistent terminology, perhaps by referring to 'post-predicate conjunctive particle' when distinguishing from 'connective adverb'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '助詞' is not consistently rendered with a language tag.",
+    "quote": "Refsing makes this the organizing cut of her chapter, between bound conjunctionalizers and free conjunctions; Nakagawa keeps only the particles as a <span lang=\"ja\">助詞</span> class and folds the free connectives into the adverb phrase",
+    "suggestion": "Add `lang=\"ja\"` to the span tag for consistency with other Japanese terms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#005",
+  "chapter": "clause-linkage-overview",
+  "lines": "46",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'adverbial-clause' is hyphenated, while 'conjunctionalizer' and 'subordinate clause' are not. Consistency is preferred.",
+    "quote": "conjunctionalizer, adverbial-clause marker, and subordinate clause",
+    "suggestion": "Hyphenate 'adverbial clause' or remove the hyphen from 'adverbial-clause' for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#004",
+  "chapter": "clause-linkage-overview",
+  "lines": "31",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'pe ne' closing the chain before 'hike', but 'hike' is glossed as 'CONJ' in the example, implying it's also a connective. The relationship between 'pe ne' and 'hike' is unclear from the note.",
+    "quote": "Each clause around hine is finite: i=resu carries its own fourth-person object index, oka=an its fourth-person S; pe ne closes the chain on a formal-noun predicate before the further connective hike.",
+    "suggestion": "Clarify the role of 'pe ne' and 'hike' in relation to each other and the clause structure.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#002",
+  "chapter": "clause-linkage-overview",
+  "lines": "15",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese character '〜' is not rendered correctly.",
+    "quote": "a Japanese rendering in <span lang=\"ja\">〜て</span> gives no warrant for a converb analysis",
+    "suggestion": "Replace '〜' with the correct character if possible, or use a more standard representation like 'te'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#001",
+  "chapter": "clause-linkage-overview",
+  "lines": "11-12",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Hokkaidō' in the section title is missing in the prose.",
+    "quote": "<i lang=\"ain-Latn\">wa</i>, <i lang=\"ain-Latn\">hine</i>, <i lang=\"ain-Latn\">akusu</i>, <i lang=\"ain-Latn\">kor</i>, <i lang=\"ain-Latn\">kusu</i>, or <i lang=\"ain-Latn\">yakun</i>.",
+    "suggestion": "Add the macron to 'Hokkaido' in the prose.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#032",
+  "chapter": "clause-linkage-overview",
+  "lines": "476-478",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'sekor' is glossed as 'QUOT', which is acceptable, but the structure 'Piratur sekor a=ye' is a naming frame. The gloss does not reflect that 'sekor' functions as a complementizer or quotative marker in a fixed construction, and 'QUOT' may be too generic given its specific role in naming and reported speech.",
+    "quote": "g=\"now 4.A=say way Piratur QUOT 4.A=say voice-POSS COP\"",
+    "suggestion": "Use a more precise gloss such as 'CALL' or 'NAME' in this context, or add a note distinguishing quotative vs. naming uses of 'sekor'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#030",
+  "chapter": "clause-linkage-overview",
+  "lines": "397-399",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'kusne' is glossed as 'intend FIN', but 'kusne' is described elsewhere as a reduced form of 'kusu ne' (future/intention auxiliary). The gloss should reflect that 'kusne' is a fused auxiliary, not a verb with 'intend' as a lexical verb.",
+    "quote": "g=\"rain fall CONJ snow fall CONJ water be.big CONJ truly 1SG.S=come intend FIN\"",
+    "suggestion": "Change the gloss from 'intend FIN' to 'FUT' or 'INTENT.AUX' to match the grammatical description of 'kusu ne' as an intention auxiliary.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#028",
+  "chapter": "clause-linkage-overview",
+  "lines": "221-229",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The evidence grade ‹corpus-suggested› is applied to the claim about 'cleaner items' and their frequencies, but the supporting data (corpus counts) are presented without citation to a specific corpus source or methodology. The claim relies on internal corpus data that is not externally referenced.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Add a citation to the aligned Hokkaido corpus source (e.g., a Ref entry for the corpus) to justify the counts and the ‹corpus-suggested› tag.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#027",
+  "chapter": "clause-linkage-overview",
+  "lines": "31",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The note claims that 'pe ne' closes the chain on a formal-noun predicate, implying finality, yet it is followed by the connective 'hike', which contradicts the idea of closure. This creates a logical inconsistency in the description of clause chaining.",
+    "quote": "note=\"Each clause around hine is finite: i=resu carries its own fourth-person object index, oka=an its fourth-person S; pe ne closes the chain on a formal-noun predicate before the further connective hike.\"",
+    "suggestion": "Revise the note to clarify that 'pe ne' forms a nominalized predicate but does not terminate the clause chain, as it is followed by the connective 'hike'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "clause-linkage-overview~p1#023",
+  "chapter": "clause-linkage-overview",
+  "lines": "113–200",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text claims seven groups plus a parallel-listing use, making eight categories total, but the domain table that follows contains eight rows. The header of the eighth row is ‘narrative cohesion’ (not ‘parallel‑listing’), so the match between the seven groups and the eight rows is unclear, potentially confusing the reader.",
+    "quote": "seven semantic groups — temporal succession, unfolding event, condition, adversative, concession, cause/purpose, and conjecture/manner — together with a parallel-listing use",
+    "suggestion": "Either explicitly align the table rows with the seven groups plus parallel listing, or revise the prose to state that there are eight domains.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

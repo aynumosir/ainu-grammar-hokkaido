@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "84-89",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"children COMIT play=4.S NMLZ even 4.A=father refuse\"",
+  "issue": "The gloss '4.A=father' for 'a=onaha' is inconsistent: 'onaha' is a noun (father), not a verb, so 'a=' cannot be an agent prefix. The translation uses 'my father' implying a possessive reading, but the gloss uses 4.A. The note also states that 'a=' fills the A slot of a transitive verb, which contradicts the noun status of 'onaha'.",
+  "suggestion": "Re-analyze 'a=onaha' as possessive: gloss '1SG.POSS=father' or '4.POSS=father' consistent with translation. Adjust note accordingly.",
+  "confidence": 0.9,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "32-39, 308-316, 323-330",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "When the clause before a formal noun has total arity ≥ +1 … the formal noun fills it as the head of a relative-clause NP. When the clause already has arity 0 … the formal noun nominalizes the whole clause … this is the complement reading.",
+  "issue": "The arity-0 diagnostic is stated as a categorical requirement for complement readings, but the examples 'ahun kuni a=ye' (line 309) and 'pirka kuni ku=ramu' (line 324) are analyzed as complements despite the embedded clauses having arity +1 (no overt subject). The note for the latter acknowledges the arity issue but still maintains a complement reading, contradicting the general rule.",
+  "suggestion": "Explicitly qualify the arity-0 requirement for kuni complements, noting that the irrealis complementizer kuni may allow unsaturated clauses when the subject is pragmatically recoverable, or revise the diagnostic to include such exceptions.",
+  "confidence": 0.9,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "454-455, 512",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "No PRO or empty-category mechanism is posited by the read sources, and no formal control or raising analysis of HA complements appears in the literature surveyed here.",
+  "issue": "The phrase 'the read sources' is a pipeline term (internal to the writing process) not appropriate in a published grammar. It appears again at line 512: 'No read source provides a constituency proof'.",
+  "suggestion": "Replace 'the read sources' with 'the literature consulted' or 'the sources examined'; replace 'read source' with 'source' or 'study'.",
+  "confidence": 0.95,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "454-456, 483-489",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "No PRO or empty-category mechanism is posited by the read sources … The term 'raising' (movement of an embedded subject …) has no attestation … ‹speculative›.",
+  "issue": "The first claim (no PRO/empty-category mechanism) is ungraded, while the nearly equivalent claim about raising is tagged ‹speculative›. This inconsistency in epistemic grading suggests either the tag is missing from the first claim or the second should also be ungraded if factually certain from sources.",
+  "suggestion": "Either remove the ‹speculative› tag from the raising claim (if it is a factual negative claim) or add a ‹speculative›/‹consensus› tag to the first claim for consistency.",
+  "confidence": 0.6,
+  "chapter": "nominalized-complements-control-raising",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

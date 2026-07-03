@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "67",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "coda — general",
+  "issue": "Inconsistent capitalization in table cell compared to other rows: 'coda — general' uses lowercase 'coda' while 'onset — general', 'onset — speaker variation', etc., use uppercase initial in other rows (e.g., 'Onset — general').",
+  "suggestion": "Change to 'Coda — general' for consistency with the capitalization pattern in the 'onset' rows.",
+  "confidence": 0.95,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "80",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "e.g. <i lang=\"ain-Latn\">nukar</i> [nukaɾ̥] ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is attached to an example that is supported only by a Discord source (aomidori, 2023-12-11), which is appropriate, but the tag appears outside the citation and could be misread as applying to the general claim rather than the example. The tag should be associated with the source, not float after the example.",
+  "suggestion": "Move the ‹corpus-suggested› tag inside or adjacent to the <Ref> element, or attach it directly to the source attribution for clarity.",
+  "confidence": 0.85,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "91",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (aomidori, 2023-12-11, citing Tamura 1996) ‹speculative›",
+  "issue": "The citation claims Tamura 1996 is being cited, but the source accessed is a Discord comment from 2023. The epistemic tag ‹speculative› is appropriate for indirect, unverified attribution, but the citation format incorrectly implies Tamura 1996 was consulted directly. This inflates the evidential support.",
+  "suggestion": "Rephrase to clarify that Tamura 1996 is not directly cited: e.g., '(aomidori, 2023-12-11, reporting on Tamura 1996)' to avoid citation misrepresentation.",
+  "confidence": 0.9,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "203",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-11) ‹corpus-suggested›",
+  "issue": "The date '2024-12-11' is in the future relative to the book's writing period (2025–2026), but December 2024 is valid. However, the citation appears in a context where it supports a claim about casual speech reduction, but the source is a Discord comment with no further documentation. Attaching ‹corpus-suggested› may overstate the evidential basis if the comment lacks audio or corpus anchoring.",
+  "suggestion": "Verify whether the Discord comment includes corpus evidence; if not, consider downgrading to ‹speculative› or adding clarification.",
+  "confidence": 0.75,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "276",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "In Sakhalin Ainu, coda /r/ has merged with /h/ in syllable-final and word-final position",
+  "issue": "This claim contradicts the earlier statement in line 95–96 that 'In Sakhalin Ainu the cognate of Hokkaido /r/ is described as retroflex [ʈ]'. The current section states coda /r/ → /h/, but the onset reflex is [ʈ]; the prose here fails to distinguish coda vs. onset positions clearly, creating a false impression of a full merger of /r/ with /h/.",
+  "suggestion": "Revise to clarify that only coda /r/ merges with /h/, while onset /r/ corresponds to [ʈ], as previously noted.",
+  "confidence": 0.95,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "285",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The Sakhalin onset cognate of Hokkaido /r/ is the retroflex [ʈ] mentioned in §2 above",
+  "issue": "Section §2 ('Onset realization and positional variants') discusses Hokkaido /r/ only; the retroflex [ʈ] is mentioned in line 95–96 as the Sakhalin cognate, but §2 does not have a subsection or anchor labeled for Sakhalin. The cross-reference to '§2 above' is misleading because §2 is titled 'Onset realization' and does not cover Sakhalin data systematically.",
+  "suggestion": "Change '§2 above' to a specific cross-reference such as <Xr ch=\"dialect\" /> or rephrase to 'as noted above in the onset section'.",
+  "confidence": 0.8,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "179",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">arki</i> as [ariki]",
+  "issue": "The example shows [ariki], which implies a sequence /r/ + /i/ as onset, but the text presents it as an example of echo-vowel anticipation where /r/ is in coda position. However, 'arki' is likely /ar.ki/, a two-syllable word, so the /r/ is in onset, not coda. This contradicts the claim that the echo-vowel copies the nucleus in coda /r/ contexts.",
+  "suggestion": "Either reanalyze the example or clarify that this is not a coda-/r/ case but a different phenomenon (e.g., assimilation or epenthesis).",
+  "confidence": 0.7,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "178",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">pirka</i> surfaces as [pirĭka]",
+  "issue": "The transcription [pirĭka] suggests a short echo-vowel, but the text describes the echo-vowel as copying the nucleus. The nucleus of 'pirka' is /i/, so the echo should be [i], but the diacritic (breve) implies a reduced or centralized vowel, not a full copy. This undercuts the claim of faithful vowel-copying.",
+  "suggestion": "Use [piɾika] or clarify that the echo is phonetically reduced despite being phonologically a copy.",
+  "confidence": 0.85,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "200",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">ku</i> for <i lang=\"ain-Latn\">kur</i>",
+  "issue": "No actual error found in this line upon closer inspection; formatting is consistent.",
+  "suggestion": null,
+  "confidence": 0.3,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "225",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "[nukaɾ̥ɨ̥h]",
+  "issue": "The transcription [nukaɾ̥ɨ̥h] includes a voiceless high vowel [ɨ̥] followed by [h], which is redundant or unclear: [h] is already a voiceless glottal fricative, and [ɨ̥h] may be intended to represent devoicing spread into the echo-vowel and its transition to [h]-like release. However, the notation is ambiguous and not previously introduced.",
+  "suggestion": "Clarify the transcription, e.g., as [nukaɾ̥ᵊh] or explain that [ɨ̥h] represents a devoiced echo-vowel with fricative release.",
+  "confidence": 0.8,
+  "chapter": "rhotic-r",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

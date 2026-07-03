@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "210",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (thegodofneet, 2024-06-14)",
+  "issue": "Discord citation format inconsistent: missing 'aynucorpora Discord' and message number, unlike other citations (e.g., line 225).",
+  "suggestion": "Add 'aynucorpora Discord' and message reference for consistency.",
+  "confidence": 0.9,
+  "chapter": "japanese-loanwords-in-ainu",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "85",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024)",
+  "issue": "Discord citation style inconsistent: missing 'aynucorpora Discord' and message number.",
+  "suggestion": "Format as '(nukopoli, aynu-corpora Discord, 2024 [message number])'.",
+  "confidence": 0.9,
+  "chapter": "japanese-loanwords-in-ainu",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "349",
+  "category": "copyedit",
+  "severity": "high",
+  "quote": "see examples in §3.1 above",
+  "issue": "Reference to section number '§3.1' does not match any section in the chapter; sections are identified by anchor IDs, not numbers.",
+  "suggestion": "Replace with a cross-reference to the appropriate anchor, e.g., 'see examples in the Early contact section above' or use <Xr> component.",
+  "confidence": 1,
+  "chapter": "japanese-loanwords-in-ainu",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "334-335",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">kampi-nukat-cise</i> 'school' … <i lang=\"ain-Latn\">kanpi pu</i> 'library'",
+  "issue": "Inconsistent spelling of the same root: 'kampi' vs 'kanpi' within the same paragraph without explanation, despite earlier discussion of orthographic variation.",
+  "suggestion": "Choose one spelling (likely 'kampi' to match the example) or note the orthographic choice if intentional.",
+  "confidence": 0.8,
+  "chapter": "japanese-loanwords-in-ainu",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "262-269",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"kampi an=euytek pe moyuk tono\" g=\"document 4.A=dispatch NMLZ tanuki lord\" tr=\"the raccoon-dog lord, dispatched with a written order\"",
+  "issue": "Gloss suggests 'document' is an argument of 'dispatch', but translation treats 'written order' as an instrument; the relationship is unclear and may indicate a misalignment between gloss and translation.",
+  "suggestion": "Verify the parsing and either adjust gloss to reflect instrumental reading or correct the translation.",
+  "confidence": 0.6,
+  "chapter": "japanese-loanwords-in-ainu",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "287",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "modern loans often retain Japanese syllable structure intact ‹corpus-confirmed›",
+  "issue": "Claim tagged as corpus-confirmed but no corpus source is cited; only a single example sentence supports the claim.",
+  "suggestion": "Add a reference to a corpus study or remove the epistemic tag.",
+  "confidence": 0.7,
+  "chapter": "japanese-loanwords-in-ainu",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "72",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "final <i lang=\"ain-Latn\">m → mp</i>; nasal assimilation before labial stop",
+  "issue": "Repair description 'final m → mp' implies the Japanese source ends in /m/, but the source is 'kami' (ending in /mi/), not 'kam'.",
+  "suggestion": "Reformulate as 'final -mi → -mpi; nasal assimilation before labial stop' or similar to match the source.",
+  "confidence": 0.8,
+  "chapter": "japanese-loanwords-in-ainu",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

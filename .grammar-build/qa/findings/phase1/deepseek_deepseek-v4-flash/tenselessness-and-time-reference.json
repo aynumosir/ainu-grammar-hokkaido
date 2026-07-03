@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "135-143",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"tomorrow morning early go.out=4.S probably because\" and tr=\"Tomorrow morning I will probably go out early —\"",
+  "issue": "The gloss includes 'because' for kusu but the free translation does not reflect a causal meaning; the example ends with a dash leaving kusu unaccounted for in the translation.",
+  "suggestion": "Either adjust the free translation to include a clause that renders 'because' (e.g., '… because …') or explain kusu in the note; alternatively, if kusu is misglossed, correct the gloss.",
+  "confidence": 0.8,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "87",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<td>consensus</td>",
+  "issue": "The grade 'consensus' in the table row lacks guillemets, while the other rows use ‹contested› with guillemets, creating a formatting inconsistency.",
+  "suggestion": "Add guillemets: ‹consensus› or remove guillemets from the other rows for consistency.",
+  "confidence": 0.9,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "70",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "<Ref k=\"refsing1986\" p=\"§14.9.1\" />",
+  "issue": "The p attribute uses a section symbol with a section number, while other citations use plain numeric page references. This may cause inconsistency in the bibliography or output.",
+  "suggestion": "Use a numeric page or section reference in a consistent format, e.g., p=\"14.9.1\" or p=\"§14.9.1\" but verify the expected format for section references.",
+  "confidence": 0.5,
+  "chapter": "tenselessness-and-time-reference",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

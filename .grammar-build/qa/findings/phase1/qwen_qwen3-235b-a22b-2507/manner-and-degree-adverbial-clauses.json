@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "110-111",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">pekor</i> / <i lang=\"ain-Latn\">pokor</i> / <i lang=\"ain-Latn\">pokon</i>",
+  "issue": "Inconsistent hyphenation and spacing in the listing of allomorphs: the forms are presented with slashes but without consistent spacing or punctuation, which may affect readability and formatting consistency within the table.",
+  "suggestion": "Use consistent spacing around slashes, e.g., \"<i lang=\"ain-Latn\">pekor</i> / <i lang=\"ain-Latn\">pokor</i> / <i lang=\"ain-Latn\">pokon</i>\" → \"<i lang=\"ain-Latn\">pekor</i>, <i lang=\"ain-Latn\">pokor</i>, <i lang=\"ain-Latn\">pokon</i>\" or ensure uniform spacing around slashes.",
+  "confidence": 0.85,
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "119-120",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">apekor</i> / <i lang=\"ain-Latn\">apokon</i>",
+  "issue": "Same issue as above: inconsistent formatting of allomorphs with slashes and no surrounding spaces, differing from standard typographic presentation in the same table.",
+  "suggestion": "Format consistently with commas or spaced slashes, e.g., \"<i lang=\"ain-Latn\">apekor</i>, <i lang=\"ain-Latn\">apokon</i>\".",
+  "confidence": 0.85,
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "132",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">kotom(no)</i>",
+  "issue": "The form \"kotom(no)\" uses parentheses to indicate optional allomorphy, but this formatting is inconsistent with how other allomorphs are presented in the table (using slashes). This creates a register inconsistency in orthographic presentation.",
+  "suggestion": "Use the same format as other rows: \"<i lang=\"ain-Latn\">kotom</i> / <i lang=\"ain-Latn\">kotomno</i>\" or \"<i lang=\"ain-Latn\">kotom</i>, <i lang=\"ain-Latn\">kotomno</i>\".",
+  "confidence": 0.9,
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "75-76",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Ijäs presents <i lang=\"ain-Latn\">no</i> for the learner alongside the claim that it tends to mark a same-subject context while <i lang=\"ain-Latn\">wa</i> marks a different-subject one; that framing is Ijäs's own and is not supported by the primary grammars, which derive the distribution from polarity and aspect ‹contested› <Ref k=\"ijas2023\" />.",
+  "issue": "The epistemic tag ‹contested› is applied to a claim primarily attributed to Ijäs (2023), a single source, and the citation is used to support the assertion that the claim is not widely supported. However, the tag placement and citation suggest stronger external validation than provided, potentially inflating the epistemic weight.",
+  "suggestion": "Clarify that the ‹contested› tag refers to the lack of support in primary grammars, and ensure the citation clearly supports that point, possibly rephrasing: \"…a framing proposed by Ijäs (2023) but not supported in primary grammars, hence ‹contested›.\"",
+  "confidence": 0.75,
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "197",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "do not take the copula <i lang=\"ain-Latn\">ne</i> ‹consensus›",
+  "issue": "The term \"copula\" is used, but in Ainu grammar, <i lang=\"ain-Latn\">ne</i> is more accurately described as a nominalizer or sentence-final particle rather than a copula in the typical sense. While this may be internally consistent with other chapters, the use of \"copula\" could be misleading if not defined.",
+  "suggestion": "Use \"nominalizer\" instead of \"copula\" for accuracy, unless the broader reference grammar consistently uses \"copula\" for <i lang=\"ain-Latn\">ne</i>.",
+  "confidence": 0.7,
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "180-188",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"now egg have INFR cluck voice-POSS exist.PL\"",
+  "issue": "The gloss \"INFR\" for <i lang=\"ain-Latn\">noyne</i> is not standard Leipzig-compliant glossing; the correct gloss should be \"INFER\" or \"EVID\" to align with standard practices. Additionally, \"voice-POSS\" for <i lang=\"ain-Latn\">hawe</i> is not clearly aligned with the morpheme structure.",
+  "suggestion": "Change \"INFR\" to \"INFER\" and clarify \"hawe\" gloss; e.g., \"voice-POSS\" → \"voice-ATTR\" or \"voice-GEN\" if possessive, or use \"sound\" if more accurate.",
+  "confidence": 0.95,
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "234",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.POSS=father equal rich.man not.exist rich.man COP\"",
+  "issue": "The gloss contains two instances of \"rich.man\", but the Ainu text only has one occurrence of \"nispa\". The second \"rich.man\" in the gloss appears to be a translation addition not reflected in the morpheme line, creating a mismatch.",
+  "suggestion": "Revise the gloss to match the morphemes: \"4.POSS=father equal rich.man not.exist COP\" — the final \"rich.man\" in the gloss should be removed or marked as implied.",
+  "confidence": 0.9,
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "250-259",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "A further degree/comparison use surfaces in Satō's description of <i lang=\"ain-Latn\">kane</i>. Alongside its core function as a simultaneity particle in non-Saru/Chitose dialects…",
+  "issue": "The text refers to <i lang=\"ain-Latn\">kane</i> as a simultaneity particle, but in the cited chapter <Xr ch=\"simultaneous-kor-clauses\" />, the particle is <i lang=\"ain-Latn\">kor</i>, not <i lang=\"ain-Latn\">kane</i>. This creates an internal contradiction unless <i lang=\"ain-Latn\">kane</i> is an allomorph or dialect variant explicitly established elsewhere.",
+  "suggestion": "Verify whether \"kane\" is a typo for \"kor\" or an alternate form; if the latter, clarify the relationship early in the discussion.",
+  "confidence": 0.8,
+  "chapter": "manner-and-degree-adverbial-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

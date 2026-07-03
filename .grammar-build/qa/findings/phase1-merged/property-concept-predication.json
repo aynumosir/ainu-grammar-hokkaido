@@ -1,0 +1,822 @@
+[
+ {
+  "id": "property-concept-predication~p1#026",
+  "chapter": "property-concept-predication",
+  "lines": "324",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence refers to 'read sources' which is meta-commentary about the production process, not content for the reader.",
+    "quote": "the read sources do not provide a systematic degree–comparison paradigm for property verbs, and the gap is noted there.",
+    "suggestion": "The available sources do not provide a systematic degree–comparison paradigm for property verbs, and this gap is noted in the relevant section.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read sources' is a production term referring to sources consulted during writing; it reads as a meta-commentary rather than a statement addressed to the reader.",
+    "quote": "the read sources do not provide a systematic degree–comparison paradigm for property verbs, and the gap is noted there.",
+    "suggestion": "Replace with 'Existing descriptive grammars do not provide a systematic...' or 'The available sources do not provide a systematic...'",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'the read sources' is a pipeline register leak, referring to the editorial process rather than the content itself. It should be rephrased for scholarly tone.",
+    "quote": "the read sources do not provide a systematic degree–comparison paradigm for property verbs, and the gap is noted there.",
+    "suggestion": "the available sources do not provide a systematic degree–comparison paradigm for property verbs, and this gap is addressed in <Xr ch=\"adverbs-degree-comparison\" />.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#015",
+  "chapter": "property-concept-predication",
+  "lines": "219",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for a Discord message should not have an epistemic grade like ‹speculative› attached to it, as it's a community source, not a peer-reviewed publication.",
+    "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, November 2024) ‹speculative›.",
+    "suggestion": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, November 2024)",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same citation formatting issue as above: author and date are outside the <Ref> tag. Also, the evidence grade ‹speculative› is appropriate, but the citation structure should be standardized.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, November 2024) ‹speculative›",
+    "suggestion": "<Ref k=\"aynucorporadiscord\" p=\"nukopoli, November 2024\" /> ‹speculative›",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#005",
+  "chapter": "property-concept-predication",
+  "lines": "114",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for a Discord message should not have an epistemic grade like ‹contested› attached to it, as it's a community source, not a peer-reviewed publication.",
+    "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, November 2024) ‹contested›.",
+    "suggestion": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, November 2024)",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation format is inconsistent: the author and date are placed outside the <Ref> tag, but should be integrated within it for uniformity and proper rendering. Additionally, the evidence grade ‹contested› is attached to a claim based solely on a Discord comment, which may overstate its epistemic status.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, November 2024) ‹contested›",
+    "suggestion": "<Ref k=\"aynucorporadiscord\" p=\"nukopoli, November 2024\" /> ‹contested›",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#036",
+  "chapter": "property-concept-predication",
+  "lines": "302",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'thing' for 'pe', but the free translation renders 'pe' as part of 'a very bad one', where 'one' refers to 'person'. The gloss 'thing' is misleading; 'pe' here functions as a nominalizer, better glossed as 'NMLZ' or 'CLF'.",
+    "quote": "g=\"that.one person very be.bad thing COP\"",
+    "suggestion": "g=\"that.one person very be.bad NMLZ COP\"",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#034",
+  "chapter": "property-concept-predication",
+  "lines": "55-61",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss includes two COP tokens: one after 'epic' (morpheme ne) and one in the evidential frame ru-we ne. The translation does not reflect a copula meaning for the first ne, making the gloss inconsistent with the free translation.",
+    "quote": "gloss: \"... epic COP track-POSS COP\" vs. translation: \"It was when I was really young that I heard this epic.\"",
+    "suggestion": "Either re-gloss the first ne as a different category (e.g., a focus or linking particle) or adjust the translation to reflect the copula (e.g., 'it is an epic that I heard').",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#038",
+  "chapter": "property-concept-predication",
+  "lines": "295",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Spelling of 'arikinne' with double 'n' conflicts with 'arikinne' in example 301. Must standardize to one form. Given Nakagawa (2024) uses 'arikinne', that should be preferred.",
+    "quote": "<A w=\"arikinne\" gl=\"very\" />",
+    "suggestion": "Consistently use 'arikinne' in all instances.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#037",
+  "chapter": "property-concept-predication",
+  "lines": "301",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'arikinne' in the morpheme line uses 'k', but earlier in the text (line 295) it is spelled 'arikinne' with double 'n'. Orthographic inconsistency: should be 'arikinne' throughout.",
+    "quote": "m=\"toan kur arikinne wen pe ne\"",
+    "suggestion": "m=\"toan kur arikinne wen pe ne\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#035",
+  "chapter": "property-concept-predication",
+  "lines": "351",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Japanese parenthetical text appears without translation. While the English gloss of the quote is given immediately before, non-readers of Japanese cannot interpret the original.",
+    "quote": "動詞と形容詞の差は紙一重; §129",
+    "suggestion": "Provide a short translation or transliteration in parentheses, e.g., 'the difference between a verb and an adjective is razor-thin' (dōshi to keiyōshi no sa wa kamihitoe; §129).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#033",
+  "chapter": "property-concept-predication",
+  "lines": "375",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Takahashi 2013 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "takahashi2013:131–133",
+    "suggestion": "takahashi2013:131–133",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#032",
+  "chapter": "property-concept-predication",
+  "lines": "366",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Stassen 1997 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "stassen1997 paren",
+    "suggestion": "stassen1997",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#031",
+  "chapter": "property-concept-predication",
+  "lines": "361",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Shibatani 1990 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "shibatani1990:19",
+    "suggestion": "shibatani1990:19",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2022pos is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2022pos:474–478",
+    "suggestion": "nakagawa2022:474–478",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#030",
+  "chapter": "property-concept-predication",
+  "lines": "357",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2022pos is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "chiri1942, summarized in nakagawa2022pos:478",
+    "suggestion": "chiri1942, summarized in nakagawa2022:478",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#029",
+  "chapter": "property-concept-predication",
+  "lines": "348",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word 形容詞 is not translated or glossed, while other Japanese terms in the text are.",
+    "quote": "形容詞",
+    "suggestion": "形容詞 (adjective)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase is not translated or glossed.",
+    "quote": "動詞と形容詞の差は紙一重",
+    "suggestion": "動詞と形容詞の差は紙一重 ('the difference between a verb and an adjective is razor-thin')",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word 形容詞 is not translated or glossed.",
+    "quote": "形容詞",
+    "suggestion": "形容詞 (adjective)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#028",
+  "chapter": "property-concept-predication",
+  "lines": "339",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:121",
+    "suggestion": "nakagawa2024:121",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#027",
+  "chapter": "property-concept-predication",
+  "lines": "332",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:121",
+    "suggestion": "nakagawa2024:121",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#025",
+  "chapter": "property-concept-predication",
+  "lines": "320",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:120",
+    "suggestion": "nakagawa2024:120",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#024",
+  "chapter": "property-concept-predication",
+  "lines": "312",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:120",
+    "suggestion": "nakagawa2024:120",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#023",
+  "chapter": "property-concept-predication",
+  "lines": "305",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Sato 2008 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "sato2008:20",
+    "suggestion": "sato2008:20",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#022",
+  "chapter": "property-concept-predication",
+  "lines": "294",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:120",
+    "suggestion": "nakagawa2024:120",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#021",
+  "chapter": "property-concept-predication",
+  "lines": "284",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:450",
+    "suggestion": "nakagawa2024:450",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#020",
+  "chapter": "property-concept-predication",
+  "lines": "278",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "sato2008:22; nakagawa2024:407",
+    "suggestion": "sato2008:22; nakagawa2024:407",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#019",
+  "chapter": "property-concept-predication",
+  "lines": "272",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:127",
+    "suggestion": "nakagawa2024:127",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#018",
+  "chapter": "property-concept-predication",
+  "lines": "244",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "sato2008:22; nakagawa2024:407, 450",
+    "suggestion": "sato2008:22; nakagawa2024:407, 450",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#017",
+  "chapter": "property-concept-predication",
+  "lines": "238",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:127",
+    "suggestion": "nakagawa2024:127",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#016",
+  "chapter": "property-concept-predication",
+  "lines": "231",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:127; sato2008:21–22",
+    "suggestion": "nakagawa2024:127; sato2008:21–22",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#014",
+  "chapter": "property-concept-predication",
+  "lines": "207",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:119",
+    "suggestion": "nakagawa2024:119",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#013",
+  "chapter": "property-concept-predication",
+  "lines": "189",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'. The citation for Nakagawa 2022pos should be 'k:p'.",
+    "quote": "nakagawa2024:118–119; nakagawa2022pos:477",
+    "suggestion": "nakagawa2024:118–119; nakagawa2022:477",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#012",
+  "chapter": "property-concept-predication",
+  "lines": "180",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:118",
+    "suggestion": "nakagawa2024:118",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#011",
+  "chapter": "property-concept-predication",
+  "lines": "171",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Kindaichi 1936 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "kindaichi1936:123; shibatani1990:19",
+    "suggestion": "kindaichi1936:123; shibatani1990:19",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#010",
+  "chapter": "property-concept-predication",
+  "lines": "164",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:118",
+    "suggestion": "nakagawa2024:118",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#009",
+  "chapter": "property-concept-predication",
+  "lines": "157",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Kindaichi 1936 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "kindaichi1936:123",
+    "suggestion": "kindaichi1936:123",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#008",
+  "chapter": "property-concept-predication",
+  "lines": "138",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2022pos is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2022pos:475",
+    "suggestion": "nakagawa2022:475",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#007",
+  "chapter": "property-concept-predication",
+  "lines": "130",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Kindaichi 1936 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "kindaichi1936:123",
+    "suggestion": "kindaichi1936:123",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#006",
+  "chapter": "property-concept-predication",
+  "lines": "122",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Kindaichi 1936 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "kindaichi1936:123",
+    "suggestion": "kindaichi1936:123",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#004",
+  "chapter": "property-concept-predication",
+  "lines": "66",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:118, 165–167",
+    "suggestion": "nakagawa2024:118, 165–167",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#003",
+  "chapter": "property-concept-predication",
+  "lines": "59",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:118",
+    "suggestion": "nakagawa2024:118",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#002",
+  "chapter": "property-concept-predication",
+  "lines": "28",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:118–119; sato2008:20–21",
+    "suggestion": "nakagawa2024:118–119; sato2008:20–21",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:119",
+    "suggestion": "nakagawa2024:119",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "property-concept-predication~p1#001",
+  "chapter": "property-concept-predication",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Nakagawa 2024 is inconsistent. It should be 'k:p' not 'k:pages'.",
+    "quote": "nakagawa2024:118; nakagawa2022pos:474–475",
+    "suggestion": "nakagawa2024:118; nakagawa2022:474–475",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

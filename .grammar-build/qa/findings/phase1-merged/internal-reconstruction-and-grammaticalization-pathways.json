@@ -1,0 +1,470 @@
+[
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#001",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "53",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on the 'V' in the suffix notation -(V)hV is inconsistent with the rest of the chapter's orthography, which uses 'V' without macrons for unspecified vowels.",
+    "quote": "-(V)hV",
+    "suggestion": "-(V)hV",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form -(V)hV is inconsistently formatted: parentheses are used for optional vowels, but the capital V suggests a variable vowel, while elsewhere in the chapter (e.g., line 115) it is described as varying with the base. The capitalization may imply a phonological variable rather than an orthographic placeholder.",
+    "quote": "<i lang=\"ain-Latn\">-(V)hV</i>",
+    "suggestion": "Use lowercase consistently: -(v)hv to match standard linguistic convention for optional segments.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#021",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "383",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'e' is glossed as 'eat', but in the free translation it is rendered as 'the thing eaten [by all]', where 'by all' is not represented in the gloss. The prefix 'ci=' is glossed as 'RES' (resultative), but the community alternative suggests 'middle-voice', indicating ambiguity not reflected in the gloss.",
+    "quote": "m=\"ci=e-p\"",
+    "suggestion": "Revise the gloss to include the inclusive or middle semantics, e.g., 'MID=eat-NMLZ' or annotate the ambiguity.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#020",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "301",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The lexical source for the suffix '-ne' is given as 'ne' with gloss 'be (copula)', but the suffix functions as a dynamic verbalizer ('become, go'), which is semantically distinct from the copula. This contradicts the claim of transparent etymology.",
+    "quote": "<A w=\"ne\" gl=\"be (copula)\" />",
+    "suggestion": "Revise the gloss to reflect a more basic meaning like 'become' or 'go', or clarify the diachronic shift in the text.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#019",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "274",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The suffix '-an' is glossed as 'inchoative verbalizer' and exemplified with 'cuk-an' 'become autumn', but the lexical source is given as <A w=\"an\" gl=\"be, exist (SG)\" />, which lacks 'inchoative' semantics. The semantic shift from 'exist' to 'become' is not trivial and should be acknowledged or the source gloss adjusted.",
+    "quote": "<i lang=\"ain-Latn\">-an</i>",
+    "suggestion": "Revise the source gloss to 'be, exist, become' or annotate the semantic extension in the table note.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#018",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "200",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'weather', but in the possessed form (line 202) it is rendered as 'the visible state of —', which omits 'weather' and 'land'. The free translation does not reflect all components of the source noun's gloss.",
+    "quote": "<A w=\"sir\" gl=\"appearance, land, weather\" />",
+    "suggestion": "Revise the free translation to include all semantic components, e.g., 'the appearance/land/weather state of —', or adjust the gloss to match the evidential use.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#015",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "88",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table entry claims 'an' functions as both existential predicate and durative/progressive aspect, but in the later section 'Aspectual an and the posture-verb pathway' (line 348), it is stated that 'an' extends to durative and progressive aspect only in the constructions 'kor an' and 'wa an'. This implies 'an' alone does not express aspect, contradicting the table.",
+    "quote": "<i lang=\"ain-Latn\">an</i> (existential and aspectual)",
+    "suggestion": "Revise the table to specify that aspectual use occurs in periphrastic constructions (e.g., 'an' in 'kor an', 'wa an').",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#014",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "60",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists 'siri' as a formal noun, but in line 200 the source noun is given as <A w=\"sir\" gl=\"appearance, land, weather\" />, and the possessed form is <i>sir-i</i>. However, in the free translation of the table row (line 202), it is glossed as 'the visible state of —', which includes 'visible', not present in the gloss 'appearance, land, weather'. This introduces a meaning component not aligned with the lexical source.",
+    "quote": "<i lang=\"ain-Latn\">ruwe, hawe, siri, humi</i>",
+    "suggestion": "Revise the gloss in <A w=\"sir\" gl=\"appearance, land, weather\" /> to include 'visible' or adjust the free translation to 'the state/appearance of —' for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#009",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "121-122",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text states a 17-vowel system but then gives a breakdown of 12 short + 6 long = 18 vowels, creating a numerical contradiction.",
+    "quote": "attributed the distributional complexity to a 17-vowel PA system: the suffix vowel was selected through vowel harmony with the final vowel of the base. The machinery was extensive — twelve short and six long vowels",
+    "suggestion": "Change '17-vowel PA system' to '18-vowel PA system' or adjust the breakdown to sum to 17 (e.g., 12 short + 5 long, or 11 short + 6 long).",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#023",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "507",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The tilde in '-n~-iw' suggests free variation, but the form 'iw' is not otherwise attested in the chapter. The source is given as <A w=\"aynu\" gl=\"human being\" />, which would predict '-aynu' or '-nu', not '-iw'. This may be a typo or overregularization.",
+    "quote": "<i lang=\"ain-Latn\">-n~-iw</i>",
+    "suggestion": "Verify the form 'iw' and its source; if incorrect, correct to '-nu' or '-aynu'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#013",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "57",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference uses <i>ch</i> attribute pointing to the same chapter. If the <Xr> component expects a different chapter slug for <i>ch</i>, this may not render correctly as an intra-chapter link.",
+    "quote": "§<Xr ch=\"internal-reconstruction-and-grammaticalization-pathways\" s=\"affiliative-hV\">below</Xr>",
+    "suggestion": "If the component supports intra-chapter links without <i>ch</i>, omit the <i>ch</i> attribute and use only <i>s</i> (e.g., <Xr s=\"affiliative-hV\">below</Xr>). Otherwise confirm that the current markup works.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#012",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "472",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference '§ above' is vague; it should point to a specific section anchor or be replaced with the section title.",
+    "quote": "The free-verb-to-bound-suffix pathways (§ above) offer the purest layering",
+    "suggestion": "Replace '§ above' with a proper cross-reference, e.g., '(<Xr ch=\"internal-reconstruction-and-grammaticalization-pathways\" s=\"free-verb-to-suffix\" /> below)' or the section title in quotation marks.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#011",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "438-439",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about the writing process ('sources read for this chapter') and a note that the claim needs further investigation, which addresses the reader as if in a draft rather than presenting established findings.",
+    "quote": "no direct support in the Handbook sources read for this chapter. It is noted here as a community-generated lead that warrants investigation of the old compound-noun record before further evaluation.",
+    "suggestion": "Rephrase to present the community proposal as untested and in need of research without referring to the Handbook sources or the author's writing process (e.g., 'The proposal has not been evaluated in published sources and awaits investigation of the old compound-noun record').",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#008",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The orthography for the reconstructed form *tek.e uses a period to separate syllables, which is not consistently used elsewhere in the chapter for syllable breaks in reconstructed forms. For example, *CVC.V# on line 128 uses a period, but other reconstructed forms do not explicitly show syllable breaks.",
+    "quote": "*tek.e",
+    "suggestion": "Clarify the convention for syllable breaks in reconstructed forms, or use a consistent notation like a hyphen or space if appropriate.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#007",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "102",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The orthography for 'ne' as a copula is inconsistent with the chapter's use of 'V' for unspecified vowels. While 'ne' is a specific morpheme, its presentation without context might suggest a broader pattern.",
+    "quote": "ne",
+    "suggestion": "ne",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#006",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "95",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The orthography for the nominalizer suffix -p/-pe is inconsistent with the chapter's use of 'V' for unspecified vowels. While these are specific forms, the notation could be more uniform.",
+    "quote": "-p/-pe",
+    "suggestion": "-p/-pe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#005",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "88",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The orthography for 'an' as an existential and aspectual marker is inconsistent with the chapter's use of 'V' for unspecified vowels. While 'an' is a specific morpheme, its presentation without context might suggest a broader pattern.",
+    "quote": "an",
+    "suggestion": "an",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#004",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "77",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The orthography for the listed suffixes (-an, -as, -kar, -kor, -ne, -sak) is inconsistent with the chapter's general use of 'V' for unspecified vowels. While these are specific suffixes, the inconsistency might be confusing.",
+    "quote": "-an, -as, -kar, -kor, -ne, -sak",
+    "suggestion": "Consider using a consistent notation like -an, -as, -kar, -kor, -ne, -sak, or clarify if these are fixed forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#003",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The orthography for the applicative prefixes (e-, o-, ko-) is inconsistent with the rest of the chapter's use of 'V' for unspecified vowels. Here, 'e' and 'o' are used without indicating potential variation.",
+    "quote": "e-, o-, ko-",
+    "suggestion": "e-, o-, ko-",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#002",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "60",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The orthography for the listed words (ruwe, hawe, siri, humi) is inconsistent with the glosses provided for their source nouns (ru, haw, sir, hum). The source nouns are presented without final vowels, while the grammaticalized forms retain them. This inconsistency is present in the table and the prose.",
+    "quote": "ruwe, hawe, siri, humi",
+    "suggestion": "Ensure consistent representation of base vowels in source nouns and their grammaticalized forms, or clarify the phonological process involved.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#022",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "402",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The community contribution is cited via Discord and marked as ‹speculative›, but it is presented as a refinement of a reconstruction that is otherwise ‹corpus-confirmed›. This inflates the epistemic status of a speculative interpretation by associating it with a confirmed pathway.",
+    "quote": "A community refinement (nukopoli, aynu-corpora Discord, 2023-12-21)",
+    "suggestion": "Clarify that the refinement is independent of the confirmed reconstruction and remains speculative.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#017",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "151",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'sik-ihi' uses 'ihi' as the affiliative suffix, but in the Janhunen–Alonso analysis (line 131), the suffix is described as -(V)hV, with 'hi' as the fused noun. The use of 'ihi' instead of 'ihe' or 'ehe' may reflect dialectal variation, but it is not explained why 'ihi' appears here when the model predicts 'ihe'.",
+    "quote": "<i lang=\"ain-Latn\">sik-ihi</i>",
+    "suggestion": "Clarify whether 'ihi' is a dialectal variant or correct to 'ihe' for consistency with the model.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#016",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "130",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'thing, time, place' is used for 'hi', but in the example (line 140–142), 'tek-ehe' is glossed as 'hand-POSS' without reflecting 'thing' in the gloss. The morpheme 'hi' contributes semantically to the possessive form, yet its lexical meaning is not represented in the glossing of the example.",
+    "quote": "<A w=\"hi\" gl=\"thing, time, place\" />",
+    "suggestion": "Revise the gloss in the example to include the contribution of 'hi', e.g., 'hand-POSS=thing' or annotate the fusion explicitly.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "internal-reconstruction-and-grammaticalization-pathways~p1#010",
+  "chapter": "internal-reconstruction-and-grammaticalization-pathways",
+  "lines": "494-495",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The word <i>sir</i> is glossed as 'rock' in the classifier section, but earlier (line 201) it is glossed as 'appearance, land, weather' when discussing evidentials. These are different senses and the discrepancy is not cross-referenced or explained.",
+    "quote": "sir 'rock'",
+    "suggestion": "Either unify the gloss to a single core meaning or add a note acknowledging polysemy (e.g., 'appearance, weather; also rock in classifier contexts').",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

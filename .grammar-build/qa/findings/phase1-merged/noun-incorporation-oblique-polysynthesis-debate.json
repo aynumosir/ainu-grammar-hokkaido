@@ -1,0 +1,989 @@
+[
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#019",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "405",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'net penalty' for 'Natural-force transitive subject NI' is listed as '9 / (varies)'. The '(varies)' is vague and doesn't provide a clear comparison point with the '9' from 2022.",
+    "quote": "<td>9 / (varies)</td>",
+    "suggestion": "<td>9 / [specific value from 2016]</td>",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table cell for 'net penalty' in the 'Natural-force transitive subject NI' row states '9 / (varies)', but the text (line 365) says the rank order and frequencies are identical across Satō (2016) and (2022). 'Varies' contradicts this.",
+    "quote": "9 / (varies)",
+    "suggestion": "Replace '(varies)' with the actual 2016 value or clarify that only the 2022 value is available.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#002",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "38",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A' indicates a 4th person agent, but the translation 'I bit the fish with its bones' uses the first person 'I'.",
+    "quote": "g=\"that fish 4.A=bone-APPL-bite\"",
+    "suggestion": "g=\"1.A=bone-APPL-bite\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The translation uses 'I' (first person), but the gloss indicates '4.A' (fourth person agent).",
+    "quote": "tr=\"I bit the fish with its bones.\"",
+    "suggestion": "tr=\"He/She/It bit the fish with its bones.\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string shows 'a=pone-ko-kuykuy', but the gloss '4.A=bone-APPL-bite' does not reflect the possessive relationship implied in the translation 'with its bones'. The possessive is unaccounted for in both gloss and morphemic segmentation.",
+    "quote": "m=\"nea cep a=pone-ko-kuykuy\"",
+    "suggestion": "Include a possessive morpheme (e.g., =i) in the morphemic form or revise the translation to omit 'its'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#028",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "510",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'a=' is given as 'fourth-person A prefix', but the example <i lang=\"ain-Latn\">kina=an</i> is presented as intransitive with the fourth-person subject suffix <i lang=\"ain-Latn\">=an</i>. This implies a contrast between a transitive (with 'a=') and an intransitive (with '=an') construction, but the gloss for 'a=' is not fully consistent with the description of the transitive nature.",
+    "quote": "kina a=kar (phrasal, transitive with the fourth-person A prefix\n<i lang=\"ain-Latn\">a=</i>)",
+    "suggestion": "kina a=kar (phrasal, transitive with the fourth-person A prefix <i lang=\"ain-Latn\">a=</i>)",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'a=kar' is glossed as fourth-person transitive agent, but in the context of 'kina a=kar', this would be a transitive clause with third-person object and fourth-person agent, which is grammatically valid but not clearly distinguished from incorporated form in the example.",
+    "quote": "kina a=kar",
+    "suggestion": "Clarify in the note that 'a=kar' is transitive and 'kar=an' is intransitive incorporated form.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#015",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "339",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade '‹contested›' is applied to a community discussion on Discord. While community discussions can be valuable, applying 'contested' might imply a level of formal scholarly debate that isn't present in a Discord conversation. It might be more appropriate to use a less strong grade or to qualify the nature of the 'contestation'.",
+    "quote": "(antitwilight, aynu-corpora Discord, June 2026; <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "(antitwilight, aynu-corpora Discord, June 2026; <Ref k=\"aynucorporadiscord\" />) ‹community-source›",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is attributed to a single Discord user (antitwilight) and tagged ‹contested›, but the epistemic grade is appropriate. However, the citation format uses a generic reference key 'aynucorporadiscord' without a specific message link or date beyond the month. This is a citation hygiene issue as the source is not precisely locatable.",
+    "quote": "Community discussion in the aynu-corpora Discord has noted that Ainu has very few pure-noun endocentric or exocentric compounds — constructions built solely from two nouns without a verbal head — with nominal formation concentrated on verb stems (antitwilight, aynu-corpora Discord, June 2026; <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Add a more specific citation (e.g., message ID or permalink) if available, or note that the reference is to a general discussion thread.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#040",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "27",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example includes the comitative postposition 'tura', but the free translation 'I bit the fish with its bones' does not reflect the possessive relationship ('its bones') in the gloss. The gloss implies possession, but the morpheme 'tura' alone does not encode possession.",
+    "quote": "nea cep pone tura a=kuykuy",
+    "suggestion": "Revise the translation to 'I bit the fish with the bone' or include a possessive marker in the Ainu form if intended.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#042",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "110",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent with line 89's 'or ta / un' for similar locative/allative meaning. May reflect dialectal variation, but not marked as such.",
+    "quote": "<i lang=\"ain-Latn\">or un</i>",
+    "suggestion": "Clarify whether 'or un' and 'or ta / un' are dialectally distinct or standardize orthography.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#041",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "89",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent spacing around slash: 'or ta / un' vs. 'or un' in line 110. Orthographic inconsistency in representing the same postposition.",
+    "quote": "<i lang=\"ain-Latn\">or ta / un</i>",
+    "suggestion": "Standardize to either 'or ta / un' or 'or/ta / un' and 'or/un' respectively, or clarify if distinction is intentional.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#038",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "336-344",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The username 'antitwilight' is not italicized or formatted consistently with other usernames in the text (e.g., 'thegodofneet' is also not italicized, but this is inconsistent with the general practice of italicizing Ainu words). This is a minor formatting inconsistency.",
+    "quote": "antitwilight",
+    "suggestion": "Either italicize all usernames or leave them unitalicized consistently. The current practice appears to be unitalicized, so no change needed, but it's worth noting.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#037",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "470-475",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This statement is redundant with the earlier discussion of the one-noun-at-a-time limit (lines 189-201). It also appears in a paragraph about register asymmetry, which is a different topic, making the sentence feel disconnected.",
+    "quote": "Ainu rarely incorporates two nouns into one verb.",
+    "suggestion": "Either remove the sentence or integrate it into the earlier discussion of stacking limits.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#036",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "426-432",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'reflexive-rescue option' is not clearly defined earlier in the text. The table mentions 'Reflexive interpretation' as a rescue factor, but the connection to possessor-requiring nouns is not explained until the next sentence. The prose could be clearer.",
+    "quote": "The systematic zero at the foot of the table arises because the inflectional possessor that body-part nouns require makes the incorporated noun definite and thereby removes the reflexive-rescue option.",
+    "suggestion": "Add a brief explanation: '...removes the reflexive-rescue option (i.e., the reflexive interpretation that would otherwise reduce the markedness penalty).'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#035",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "189-201",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'not cases where noun stacking would otherwise be possible' is slightly awkward. It could be read as implying that QI handles cases where NI is blocked, but not cases where stacking would be possible (which is obvious). The intended meaning is likely 'not cases where noun stacking would otherwise be possible (i.e., it only applies when NI is blocked).'",
+    "quote": "The quasi-incorporation strategy discussed in §<Xr ch=\"noun-incorporation-oblique-polysynthesis-debate\" s=\"markedness-qi\" /> is a separate, structurally different response to the ceiling on NI — it handles cases where NI is grammatically blocked, not cases where noun stacking would otherwise be possible.",
+    "suggestion": "Rephrase to: '...it handles cases where NI is grammatically blocked, not cases where noun stacking would otherwise be possible (which are already handled by NI).'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#034",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "310-321",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that Ainu falsifies Baker's prediction is tagged ‹contested›, but the preceding text presents it as a direct falsification without acknowledging that the contestation might come from alternative analyses (e.g., that the verbs in question are not truly unaccusative). The epistemic grade is appropriate, but the prose could be clearer about the nature of the contestation.",
+    "quote": "Baker (1988) derives from Case theory that unaccusative clauses cannot undergo applicative or P-incorporation, because the internal argument already fills the available Case position <Ref k=\"baker1988\" paren />. Ainu falsifies this directly: applicatives attach freely to unaccusative bases, yielding objects that can then incorporate. Shibatani (1990: 66) cites mokor a=e-wen 'I missed sleeping' and sake a=e-niste 'I am strong at wine', both with e- on an unaccusative base, as the falsifying data <Ref k=\"shibatani1990\" p=\"66\" /> ‹contested›.",
+    "suggestion": "Add a brief note on why the data are contested (e.g., 'some analysts question whether these verbs are unaccusative').",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#030",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "530",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹speculative›' is applied to the statement that systematic NI frequency comparison across dialects is intractable. This is a statement about the current limitations of research, not a speculative claim about Ainu grammar itself. The intractability is a factual observation based on the available data.",
+    "quote": "systematic NI frequency comparison across dialects intractable at present ‹speculative›.",
+    "suggestion": "‹corpus-confirmed›",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#026",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "474-475",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹speculative›' is applied to the claim that Ainu data do not support a diachronic claim. This seems to be a statement about the *lack* of evidence for a diachronic claim, rather than a speculative claim itself. The statement itself is a factual observation about the data's limitations.",
+    "quote": "though the Ainu data do not support a diachronic\nclaim about direction of change ‹speculative›.",
+    "suggestion": "‹corpus-confirmed›",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#024",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "455",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'the outer index would be a subject suffix' under true NI. However, the example uses 'en=' which is glossed as '1SG.O' (1st person singular object). This seems to contradict the statement that the outer index would be a subject suffix.",
+    "quote": "askeuk (lit. 'hand-take') is a QI compound meaning 'invite'; the first-singular-object prefix en= sits outside the entire askeuk complex, showing that the compound stays transitive. Under true NI, the incorporated noun would intransitivize the verb and the outer index would be a subject suffix.",
+    "suggestion": "Under true NI, the incorporated noun would intransitivize the verb and the outer index would be an object suffix (if applicable) or a subject prefix/suffix depending on the person.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#017",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "367",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō (2022) is split across two lines, with the page reference only on the second line. This could be confusing.",
+    "quote": "The table records both sets of\nscores; Satō (2022, §5.7) himself describes them as \"tentatively defined\"\n<Ref k=\"satoni2022\" p=\"§5\" />; <Ref k=\"sato2016\" p=\"84–88\" />.",
+    "suggestion": "The table records both sets of\nscores; Satō (2022, §5.7) himself describes them as \"tentatively defined\"\n(<Ref k=\"satoni2022\" p=\"§5\" />; <Ref k=\"sato2016\" p=\"84–88\" />).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#010",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "147",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'a=' as the 4th person transitive agent, which contradicts the translation '(I) chopped it...' (1st person).",
+    "quote": "The ko- applicative encodes the comitative participant ('with'); the comitative postposition tura is dropped. The person prefix a= (4th person transitive agent) sits outside the noun-verb complex in each clause, confirming one-word status. The object of the chopping — the demon's flesh — is recoverable from context and left unexpressed.",
+    "suggestion": "The person prefix a= (1st person transitive agent) sits outside the noun-verb complex in each clause, confirming one-word status. The object of the chopping — the demon's flesh — is recoverable from context and left unexpressed.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#008",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "113",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the incorporated form 'o-tumi-osma' is 'war arose there', but the corresponding oblique marker is 'or un' ('to (place)'). The gloss should more clearly reflect the 'place' aspect.",
+    "quote": "<td><i lang=\"ain-Latn\">o-tumi-osma</i></td>",
+    "suggestion": "<td><i lang=\"ain-Latn\">o-tumi-osma</i></td>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#007",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "106",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the incorporated form 'mun-ko-tata' is 'chop with grass/scraps', but the corresponding oblique marker is 'tura' ('with (comitative)'). The gloss should more clearly reflect the 'comitative' aspect.",
+    "quote": "<td><i lang=\"ain-Latn\">mun-ko-tata</i></td>",
+    "suggestion": "<td><i lang=\"ain-Latn\">mun-ko-tata</i></td>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#006",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "99",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the incorporated form 'turepta-e-arpa' is 'go to dig lily-bulbs', but the corresponding oblique marker is 'kusu' ('for (purpose)'). The gloss should more clearly reflect the 'purpose' aspect.",
+    "quote": "<td><i lang=\"ain-Latn\">turepta-e-arpa</i></td>",
+    "suggestion": "<td><i lang=\"ain-Latn\">turepta-e-arpa</i></td>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#005",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "92",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the incorporated form 'pira-ko-hokuste' is 'fall toward a cliff', but the corresponding oblique marker is 'or ta / un' ('at / to'). The gloss should more clearly reflect the 'to' aspect.",
+    "quote": "<td><i lang=\"ain-Latn\">pira-ko-hokuste</i></td>",
+    "suggestion": "<td><i lang=\"ain-Latn\">pira-ko-hokuste</i></td>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#004",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "82-86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the incorporated form 'at-e-uk' is 'catch with a net', but the gloss for the oblique marker 'ani' is 'with (instrument)'. The gloss for 'at-e-uk' should reflect the 'with' aspect more directly.",
+    "quote": "<td><i lang=\"ain-Latn\">ani</i> 'with (instrument)'</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">e-</i></td>\n\t\t\t\t<td>instrument</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">at-e-uk</i></td>\n\t\t\t\t<td>'catch with a net' (cf. <i lang=\"ain-Latn\">at ani uk</i>)</td>",
+    "suggestion": "<td><i lang=\"ain-Latn\">ani</i> 'with (instrument)'</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">e-</i></td>\n\t\t\t\t<td>instrument</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">at-e-uk</i></td>\n\t\t\t\t<td>'catch with instrument' (cf. <i lang=\"ain-Latn\">at ani uk</i>)</td>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#003",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "42",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'a=' as the 4th person transitive agent, which contradicts the translation 'I bit the fish' (1st person).",
+    "quote": "Shibatani ex. 122, stage 3 of the three-step derivation. The person prefix a= (4th person transitive agent) sits outermost, proving that pone-ko-kuykuy is a single word. The original patient nea cep 'that fish' remains as the surface transitive object.",
+    "suggestion": "The person prefix a= (1st person transitive agent) sits outermost, proving that pone-ko-kuykuy is a single word. The original patient nea cep 'that fish' remains as the surface transitive object.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#001",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "25-26",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'bone' + comitative postposition 'with' is repeated. The second instance of 'tura' is redundant.",
+    "quote": "the comitative participant\n<i lang=\"ain-Latn\">pone tura</i> ('bone' + comitative postposition\n<i lang=\"ain-Latn\">tura</i> 'with') is a peripheral argument:",
+    "suggestion": "the comitative participant\n<i lang=\"ain-Latn\">pone tura</i> ('bone' + comitative postposition <i lang=\"ain-Latn\">tura</i> 'with') is a peripheral argument:",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#046",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "411",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase '(ungrammatical)' is redundant with '0% (0 tokens)' and the high penalty; it may be clearer to state 'ungrammatical' in the note rather than in the data cell.",
+    "quote": "<strong>≥ 10 (ungrammatical)</strong>",
+    "suggestion": "Move 'ungrammatical' to the note or table footer for clarity.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#045",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "339",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The username 'antitwilight' appears in parentheses without being formatted as a community attribution; it should be cited as (antitwilight, aynu-corpora Discord 2026-06) for consistency.",
+    "quote": "with nominal formation concentrated on verb stems (antitwilight, aynu-corpora Discord, June 2026;",
+    "suggestion": "Format as (antitwilight, aynu-corpora Discord 2026-06; <Ref k=\"aynucorporadiscord\" />).",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#044",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "279",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'consensus' is used without the proper epistemic tag ‹consensus›, and the claim is attributed to 'read sources' — a pipeline register leak indicating internal production notes.",
+    "quote": "consensus among the read sources for this domain",
+    "suggestion": "Replace with ‹consensus› or ‹contested› based on actual source agreement, and remove 'read sources'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#043",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "123",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation claims the applicative 'o-' is rare in prose, but the page range (198–199) refers to a section on third-person undecidability, not frequency of 'o-'. This mismatch suggests incorrect page citation.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"198–199\" />",
+    "suggestion": "Verify and correct the page number for the claim about rarity of 'o-' in prose.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#039",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "10",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation points to §2, but the surrounding context discusses noun incorporation in general, while Satō (2022) §2 specifically deals with applicative derivation. The reference may not support the general claim about noun incorporation architecture.",
+    "quote": "<Ref k=\"satoni2022\" p=\"§2\" />.",
+    "suggestion": "Change p=\"§2\" to p=\"§1\" to match the discussion of basic noun incorporation, or clarify the intended reference.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#033",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "508-515",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The evidence grade ‹corpus-confirmed› is applied to a claim supported only by a Discord message from a single user. This is an inflation of the epistemic grade, as 'corpus-confirmed' typically requires systematic corpus evidence, not a single community observation.",
+    "quote": "This diagnostic has been observed in community practice with the pair kinakar=an (incorporated, intransitive) beside kina a=kar (phrasal, transitive with the fourth-person A prefix a=) for the colocation of kina and kar (thegodofneet, aynu-corpora Discord, December 2024; <Ref k=\"aynucorporadiscord\" />). The observation directly corroborates Nakagawa (2024: 482–483) and Satō (2022, §2) ‹corpus-confirmed›.",
+    "suggestion": "Change to ‹corpus-suggested› or ‹speculative›, or provide additional corpus evidence.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#032",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "470-475",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim 'Ainu rarely incorporates two nouns into one verb' directly contradicts the earlier statement (lines 189-201) that Nakagawa records rare exceptions of double-NI. If double-NI is already described as rare, this sentence is redundant and potentially contradictory if it implies a stronger prohibition.",
+    "quote": "Nakagawa (2024: 480) notes that incorporation is commoner in verse than in prose or conversation; Ainu rarely incorporates two nouns into one verb.",
+    "suggestion": "Either remove the redundant statement or clarify that it refers to productive double-NI (not lexicalized exceptions).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#031",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "189-201",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The examples 'cep-ya-o-kuta' and 'itak-mak-kus-te' appear to contain two nouns each (cep 'fish' + ya 'shore'; itak 'word' + mak 'hidden'), but the text claims they are exceptions to the one-noun-at-a-time limit. However, 'mak' is an adjective/adverb meaning 'hidden', not a noun, so 'itak-mak-kus-te' may not be a double-noun example. This undermines the claim about rare double-NI exceptions.",
+    "quote": "The one-noun-at-a-time limit is the productive norm: Shibatani (1990: 72) states that two independently incorporable nouns cannot ordinarily stack. Nakagawa (2024: 488) records rare exceptions (cep-ya-o-kuta 'dump fish onto the shore', itak-mak-kus-te 'use hidden words'), which he places at the lexicalized fringe of the system rather than as evidence for productive double-NI.",
+    "suggestion": "Verify whether 'mak' is indeed a noun in this context, or rephrase to clarify that the exceptions involve noun+adverb or noun+noun combinations.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'cep-ya-o-kuta' contains the applicative prefix 'o-', which is an applicative, not a second noun. This example may involve noun+applicative+verb, not two nouns. The text's characterization as 'double-NI' is inconsistent with the earlier description of applicative-mediated incorporation.",
+    "quote": "Nakagawa (2024: 488) records rare exceptions (cep-ya-o-kuta 'dump fish onto the shore', itak-mak-kus-te 'use hidden words'), which he places at the lexicalized fringe of the system rather than as evidence for productive double-NI.",
+    "suggestion": "Clarify that 'cep-ya-o-kuta' involves an applicative prefix, making it a different structure from stacking two nouns.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#029",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "514",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹corpus-confirmed›' is applied to the observation about the fourth-person subject suffix <i lang=\"ain-Latn\">=an</i> being decisive evidence of incorporation. This seems appropriate, but the preceding sentence describes the example <i lang=\"ain-Latn\">kinakar=an</i> as 'incorporated, intransitive' and <i lang=\"ain-Latn\">kina a=kar</i> as 'phrasal, transitive'. The corroboration is for the diagnostic's decisiveness, not necessarily for the specific examples themselves being universally confirmed.",
+    "quote": "The observation directly corroborates Nakagawa (2024: 482–483) and Satō (2022, §2) ‹corpus-confirmed›.",
+    "suggestion": "The observation directly corroborates Nakagawa (2024: 482–483) and Satō (2022, §2) ‹corpus-confirmed›.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#027",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "482",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'a sequence like cep koyki has no surface index'. However, the example <i lang=\"ain-Latn\">cep koyki</i> is presented as a potential phrasal form, implying that 'cep' is a noun and 'koyki' is a verb. If 'cep' were incorporated, it would be <i lang=\"ain-Latn\">cep-koyki</i>. The statement that there's 'no surface index to place inside or outside' is confusing in this context, as the lack of an overt third-person marker is precisely the problem.",
+    "quote": "Hokkaido Ainu marks third-person A and O with a zero morph: a sequence like\n<i lang=\"ain-Latn\">cep koyki</i> has no surface index to place inside or outside, so the\ntest cannot determine whether the sequence is a phrasal <i lang=\"ain-Latn\">cep koyki</i>\nor an incorporated <i lang=\"ain-Latn\">cep-koyki</i>",
+    "suggestion": "Hokkaido Ainu marks third-person A and O with a zero morph. In a sequence like <i lang=\"ain-Latn\">cep koyki</i>, the absence of an overt person-marking affix on the verb makes it impossible to determine from this diagnostic alone whether <i lang=\"ain-Latn\">cep</i> is a phrasal object or an incorporated noun.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#025",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "461",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This item is listed in the hierarchy as the least accessible, but it is also described as 'ungrammatical' in the table (line 411). The hierarchy should reflect accessibility, so 'ungrammatical' items would logically be at the very bottom or excluded.",
+    "quote": "Possessor-requiring Object NI —",
+    "suggestion": "Clarify the relationship between 'ungrammatical' and its position in the accessibility hierarchy.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#023",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "428-432",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">*a=i-par-oyki</i> is presented as 'I am fed by others', but the gloss for 'a=' is not provided, and the gloss for 'i=' is 'mouth'. The translation 'I am fed by others' implies a passive construction or an agentive phrase, which doesn't directly align with the glosses provided for the components.",
+    "quote": "Satō (2022, §4) illustrates the ungrammatical gap with\n<i lang=\"ain-Latn\">*a=i-par-oyki</i> 'I am fed by others' (lit. 'fed at the mouth'):\n<i lang=\"ain-Latn\">i=</i> would supply the possessor for <A w=\"par\" gl=\"mouth\" />,\nbut <i lang=\"ain-Latn\">i=</i> on an object creates a definite, non-reflexive reading\nthat blocks the rescue <Ref k=\"satoni2022\" p=\"§4\" />.",
+    "suggestion": "Provide glosses for 'a=' and 'i=' in the example to clarify the meaning and the reason for ungrammaticality.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#022",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "422",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹corpus-suggested›' is applied to the statement that the rank order and zero-frequency gap are stable results. Given that the text also states the absolute values are 'tentative', it's unclear if 'corpus-suggested' is the most appropriate grade for the stability of the rank order.",
+    "quote": "‹corpus-suggested›.",
+    "suggestion": "‹consensus›",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#021",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "418-420",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The values for 'Possessor Stranding' and 'Ambiguity' are presented with different values for 2022 and 2016, but the table for 'net penalty' only shows one value for 2022/2016. This discrepancy needs clarification.",
+    "quote": "Restriction factors: Subject NI [+10], Possessor Stranding [+15 in Satō 2022 / +10 in\nSatō 2016], Ambiguity [+4 in 2022 / +7 in 2016]. Rescue factors: Backgrounding [−5 in\n2022 / −8 in 2016], Reflexive interpretation [−14 in 2022 / −9 in 2016].",
+    "suggestion": "Clarify how the different values for restriction and rescue factors are used to arrive at the 'net penalty' scores in the table.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#020",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "411",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'net penalty' for 'Possessor-requiring Object NI' is listed as '≥ 10 (ungrammatical)'. The '≥ 10' is a range, and the '(ungrammatical)' is a description. It's unclear if this is meant to be a specific score or a threshold.",
+    "quote": "<td>≥ 10 (ungrammatical)</td>",
+    "suggestion": "<td>≥ 10 (ungrammatical)</td>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is a note within a table cell, which is unusual formatting. It also seems to be explaining why the score is high, but it's not a score itself.",
+    "quote": "<em>no reflexive rescue available for an object position</em>",
+    "suggestion": "<em>no reflexive rescue available for an object position</em>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#018",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "385",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'net penalty' for 'Object NI' is listed as '0 / 0'. This implies no penalty, which contradicts the idea of a 'markedness penalty' being assigned. It might be that the '0' represents the absence of a penalty, but it's not explicitly clear.",
+    "quote": "<td>0 / 0</td>",
+    "suggestion": "<td>— / —</td>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#016",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "352",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹contested›' is applied to Satō's treatment of the prefix 'i-' as a derivational marker. However, the preceding sentence states that Bugaeva, Nakagawa, and Ijäs analyze it as an antipassive, and the following sentence states that the derivational analysis is *compatible* with a lexicalist account. This suggests that Satō's view is a differing interpretation rather than a directly 'contested' claim in the same way other positions might be.",
+    "quote": "‹contested›.",
+    "suggestion": "‹alternative-analysis›",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#014",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "317-318",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹contested›' is applied to the statement that the cited data falsifies Baker's prediction. If the data *falsifies* the prediction, it should be considered strong evidence against it, not merely 'contested'. The grade might be intended for the overall position, but here it's attached to the falsifying evidence.",
+    "quote": "as the falsifying data\n<Ref k=\"shibatani1990\" p=\"66\" /> ‹contested›.",
+    "suggestion": "as the falsifying data\n<Ref k=\"shibatani1990\" p=\"66\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#013",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "249-251",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹contested›' is applied to the claim that Baker's syntactic head-movement theory is falsified by Ainu data. However, the explanation states that the Mirror Principle argument *partially survives*. This suggests that the position is not entirely falsified, making 'contested' potentially too strong or the explanation needs to be clearer about what aspects are falsified.",
+    "quote": "‹contested› — falsified for Ainu by the unaccusative-applicative data (see\nbelow); the Mirror Principle argument for a syntactic derivation partially\nsurvives even if Case-theoretic details do not",
+    "suggestion": "‹contested› — falsified for Ainu by the unaccusative-applicative data (see\nbelow); the Mirror Principle argument for a syntactic derivation partially\nsurvives, though Case-theoretic details do not",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#012",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "241",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹contested›' is applied twice to the same position. The second instance seems to be a repetition or an error.",
+    "quote": "‹contested› — Satō's Type IV (natural-force transitive subject NI) falsifies\nthe Patient-only characterization; the lexical-compounding parallel is\nundermined by the near-absence of pure noun-noun compounds in the Ainu lexicon\n‹contested›",
+    "suggestion": "‹contested› — Satō's Type IV (natural-force transitive subject NI) falsifies\nthe Patient-only characterization; the lexical-compounding parallel is\nundermined by the near-absence of pure noun-noun compounds in the Ainu lexicon",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#011",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "229-231",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The grade '‹contested›' is applied to the claim that 'initial relations' is too restrictive, but the explanation for why it's contested is that 'applicative-derived objects also incorporate'. This implies that the 'initial relations' requirement is indeed too restrictive, which would make the claim itself 'corpus-confirmed' or at least not 'contested' in this specific aspect.",
+    "quote": "‹contested› — the grammatical-relation requirement is partly supported, but\n'initial relations' is too restrictive given that applicative-derived objects\nalso incorporate",
+    "suggestion": "‹corpus-confirmed› — the grammatical-relation requirement is partly supported, but 'initial relations' is too restrictive given that applicative-derived objects also incorporate",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-oblique-polysynthesis-debate~p1#009",
+  "chapter": "noun-incorporation-oblique-polysynthesis-debate",
+  "lines": "141",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A' indicates a 4th person agent, but the translation '(I) chopped it with grass and chopped it with earth' uses the first person 'I'.",
+    "quote": "m=\"a=mun-ko-tata a=toy-ko-tata ayne\"",
+    "suggestion": "m=\"1.A=mun-ko-tata 1.A=toy-ko-tata ayne\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A' indicates a 4th person agent, but the translation '(I) chopped it with grass and chopped it with earth' uses the first person 'I'.",
+    "quote": "g=\"4.A=grass-APPL-chop 4.A=earth-APPL-chop CONJ\"",
+    "suggestion": "g=\"1.A=grass-APPL-chop 1.A=earth-APPL-chop CONJ\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The translation uses 'I' (first person), but the gloss indicates '4.A' (fourth person agent).",
+    "quote": "tr=\"(I) chopped it with grass and chopped it with earth – \"",
+    "suggestion": "tr=\"(He/She/It) chopped it with grass and chopped it with earth – \"",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

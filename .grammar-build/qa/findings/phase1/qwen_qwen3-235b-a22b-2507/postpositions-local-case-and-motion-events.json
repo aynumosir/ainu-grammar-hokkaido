@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "111",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td>no</td>",
+  "issue": "The table cell says the translative particle ne does not require a ⟨place⟩ head, but earlier in the same section (line 28), the property 'requires ⟨place⟩ head?' for case particles is defined as 'yes (the four local ones)', implying that ne, being a case particle, should require ⟨place⟩. This contradicts the table.",
+  "suggestion": "Change 'no' to 'no (exception)' or revise the generalization in the overview table to account for ne as a non-local case particle.",
+  "confidence": 0.95,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "118",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td>(yes)</td>",
+  "issue": "The adnominal/genitive un is marked as '(yes)' for requiring ⟨place⟩ head, but this contradicts the earlier statement that case particles require ⟨place⟩ heads, since adnominal un is used with non-locative nouns (e.g., Sinutapka un kur). Moreover, the text later states it is etymologically distinct and functions differently.",
+  "suggestion": "Change '(yes)' to 'no' or clarify in a note that adnominal un does not require a locative noun despite being a case particle.",
+  "confidence": 0.9,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "389",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"un\" gl=\"interior, inside of\" />",
+  "issue": "The gloss 'interior, inside of' for the locative noun un conflicts with the particle un (allative) and adnominal un, but more importantly, in the example <i lang=\"ain-Latn\">cise soy ta</i> 'outside the house', the contrastive pair would be expected: soy 'outside' vs un 'inside'. However, no example is given for un as 'inside', and the form un is already heavily overloaded (particle, adnominal, noun).",
+  "suggestion": "Provide an example of un used as a locative noun meaning 'inside', e.g., 'cise un ta', to confirm usage and disambiguate.",
+  "confidence": 0.85,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "480",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "I went away from the mountain.",
+  "issue": "The translation 'away from' suggests motion away, but the ablative wa already marks source. The verb arpa 'go' implies motion from source, so 'away' is redundant and potentially misleading. Better: 'I went from the mountain.'",
+  "suggestion": "Change to 'I went from the mountain.'",
+  "confidence": 0.8,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "517",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026-05-18) ‹speculative›",
+  "issue": "The citation format is inconsistent: the in-text attribution places the username and date after the Ref tag, but standard format seen elsewhere (e.g., line 400) puts the full attribution inside the Ref or as prose before. Also, attaching ‹speculative› to a Discord source is appropriate, but the formatting breaks the expected pattern.",
+  "suggestion": "Reformat as: (nukopoli, aynu-corpora Discord 2026-05-18; <Ref k=\"aynucorporadiscord\" />) ‹speculative›",
+  "confidence": 0.9,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "521",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026-04-27) ‹corpus-confirmed›",
+  "issue": "Same citation hygiene issue as above: inconsistent formatting of Discord attribution. Also, labeling a Discord comment as ‹corpus-confirmed› may be epistemically inflated if the claim is based solely on community observation without published corpus data.",
+  "suggestion": "Reformat citation and consider downgrading to ‹community-confirmed› or retaining ‹corpus-confirmed› only if corpus evidence is explicitly cited.",
+  "confidence": 0.85,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "580,585,590",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">pet or un</i>, <i lang=\"ain-Latn\">pet or en</i>, <i lang=\"ain-Latn\">pet or ne</i>",
+  "issue": "Inconsistency in spacing: 'pet or un' vs. 'pet or en' vs. 'pet or ne' — all should be consistent. But more importantly, in line 580 and 585, the example lacks a closing tag or is cut off. Also, 'pet or ne' should probably be 'pet or (e)ne' to match the form given in the dialect label.",
+  "suggestion": "Standardize to: <i lang=\"ain-Latn\">pet or un</i>, <i lang=\"ain-Latn\">pet or en</i>, <i lang=\"ain-Latn\">pet or (e)ne</i>",
+  "confidence": 0.9,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "177",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"sea place ALLAT boat INS go=4.S NMLZ COP\"",
+  "issue": "The gloss includes 'NMLZ COP' for p ne, but the free translation does not reflect a nominalized clause or copula. The structure 'p ne' is a nominalizer + copula, but the translation '(She) always went to the sea by boat' treats it as a finite verb. This mismatch suggests either the gloss or the translation is inaccurate.",
+  "suggestion": "Either revise the translation to reflect nominalization (e.g., 'Her going to the sea by boat was habitual') or remove 'NMLZ COP' from the gloss if the form is actually finite.",
+  "confidence": 0.8,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "202",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"DEM forest place PERL hunt=4.S while\"",
+  "issue": "The morpheme 'kor' is glossed as 'while', but it is not included in the m-line. The m-line ends with 'ekimne=an', missing 'kor'.",
+  "suggestion": "Add 'kor' to the m-line: 'ne kenas or peka ekimne=an kor'",
+  "confidence": 1,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "339",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"bridge PERL skylight PERL go.outside=4.S when\"",
+  "issue": "The morpheme 'akusu' is not present in the m-line 'ruyka kari saramanto kari soyne=an' but is glossed as 'when'.",
+  "suggestion": "Add 'akusu' to the m-line: 'ruyka kari saramanto kari soyne=an akusu'",
+  "confidence": 1,
+  "chapter": "postpositions-local-case-and-motion-events",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "254-261",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.A=mother.POSS 4.A=head.of-rise track-POSS COP when\"",
+  "issue": "The gloss 'head.of-rise' for e-puni uses 'rise' (intransitive) but the base puni means 'lift something' (transitive); the affiliative prefix e- creates a transitive verb, so the gloss should reflect 'lift', not 'rise'.",
+  "suggestion": "Change gloss to '4.A=head.of-lift'",
+  "confidence": 0.95,
+  "chapter": "middle-anticausative-passive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "237",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "These prefixes are the arity-decreasing (−1) counterparts of the homophonous affiliative e- 'head of' and o- 'base of', which are",
+  "issue": "'homophonous' is inaccurate: the body-region prefixes (he-, ho-) and the affiliative prefixes (e-, o-) are not homophonous (differ in initial h-). The intended meaning is likely 'arity-neutral' or simply 'affiliative'.",
+  "suggestion": "Replace 'homophonous' with 'arity-neutral' or 'affiliative'",
+  "confidence": 0.8,
+  "chapter": "middle-anticausative-passive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "63-68",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "<td><i lang=\"ain-Latn\">car</i></td>\n<td>scatter something</td>\n<td><i lang=\"ain-Latn\">ci-car-i</i></td>\n<td>be scattered (possessive-form variant)</td>",
+  "issue": "The base 'car' is listed as a distinct lexeme with the same gloss as 'cari' (line 42-47), but earlier discussion (line 89) describes ci-cari and ci-car-i as morphological doublets, implying car is a bound variant of cari, not a separate verb. Listing both as separate entries with identical glosses may confuse readers.",
+  "suggestion": "Add a note to the table that car is the bound stem of cari used in possessive/attributive forms, or merge the rows with an explanation.",
+  "confidence": 0.5,
+  "chapter": "middle-anticausative-passive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "217-218",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "the voice interpretation of ci- and si- in such pairs is among the questions that diachronic account addresses ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is attached to a clause that primarily states what the diachronic account (Bugaeva 2025) addresses, rather than making a claim supported by corpus evidence. The tag appears misplaced or the phrasing is ambiguous about what claim is being graded.",
+  "suggestion": "Rephrase to attach the tag directly to the interpreted claim, e.g., 'that ci- and si- have distinct anticausative roles in such pairs is ‹corpus-suggested›'",
+  "confidence": 0.4,
+  "chapter": "middle-anticausative-passive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

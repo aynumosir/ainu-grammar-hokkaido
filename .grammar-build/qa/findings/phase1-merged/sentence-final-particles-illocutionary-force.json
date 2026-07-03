@@ -1,0 +1,1205 @@
+[
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#008",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "137-138",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'yan' includes 'come up from water', which is not reflected in the explanation that it's a 'polite imperative particle'. The gloss seems to be for a lexical verb, not the particle.",
+    "quote": "The polite imperative <A w=\"yan\" gl=\"come up from water; polite imperative particle\" /> requires the <strong>plural</strong> verb stem even when the addressee is one person",
+    "suggestion": "Separate the lexical meaning from the particle function in the gloss, or remove the lexical meaning if it's not relevant to the particle's usage.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'come up from water' is a lexical etymology, not a grammatical gloss. The particle <i lang=\"ain-Latn\">yan</i> is a grammatical morpheme (polite imperative), and including a lexical meaning in the gloss may confuse readers about its current function. The dictionary-linked gloss should reflect grammatical function, not etymology.",
+    "quote": "<A w=\"yan\" gl=\"come up from water; polite imperative particle\" />",
+    "suggestion": "Change the gloss to 'polite imperative' only, or separate etymology into a note. The current form mixes lexical and grammatical information in a grammatical gloss field.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#012",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "199",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.S' is not explained. It likely refers to a fourth-person singular suffix, but this should be clarified.",
+    "quote": "g=\"come=4.S DEL\"",
+    "suggestion": "Expand '4.S' to '4th person singular' or define the notation.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss marks =an as fourth person (4.S), but the translation uses first person singular 'I'. While fourth person can be used for self in soliloquy, the mismatch between gloss and translation is potentially confusing and should be explained or aligned.",
+    "quote": "m=\"ek=an so\" g=\"come=4.S DEL\" tr=\"Should I come too, I wonder.\"",
+    "suggestion": "Either gloss =an as '1SG' if that is the intended reading, or add a note clarifying the fourth-person self-reference.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#004",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "76",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical Japanese names are not consistently italicized or marked as foreign language.",
+    "quote": "<i lang=\"ain-Latn\">rok</i> ‹TOK, Shiranuka (白糠)›; <i lang=\"ain-Latn\">no</i> ‹Urakawa (浦河), Samani (様似)›",
+    "suggestion": "Italicize the Japanese names or use a language tag if appropriate.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The SFP column uses three separate <i> tags for dialectal variants, while other rows use single or double tags. This creates formatting inconsistency within the same column. Additionally, the dialect column already specifies the distribution of <i lang=\"ain-Latn\">rok</i> and <i lang=\"ain-Latn\">no</i>, making the full tripartite listing in the SFP column potentially redundant.",
+    "quote": "<i lang=\"ain-Latn\">ro</i> / <i lang=\"ain-Latn\">rok</i> / <i lang=\"ain-Latn\">no</i>",
+    "suggestion": "Use a single <i lang=\"ain-Latn\">ro/rok/no</i> or <i lang=\"ain-Latn\">ro</i> with dialect notes in the 'dialect' column only, to maintain formatting consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#003",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "63",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Q' is not defined or glossed, and its capitalization is inconsistent with other glosses.",
+    "quote": "homophonous with Q <i lang=\"ain-Latn\">ya</i>",
+    "suggestion": "Define 'Q' or use a more descriptive term like 'question particle'.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of the label '(imper.)': it appears only on the second row for <i lang=\"ain-Latn\">ya</i> (imperative), but the first <i lang=\"ain-Latn\">ya</i> in the same table (polar question) has no such disambiguating label, despite the homophony being explicitly noted in the 'host / notes' cell. This creates an asymmetry in orthographic disambiguation within the same table.",
+    "quote": "<i lang=\"ain-Latn\">ya</i> (imper.)",
+    "suggestion": "Add '(Q)' or '(question)' after the first <i lang=\"ain-Latn\">ya</i> in the SFP column (row 3) to parallel the '(imper.)' label, ensuring consistent disambiguation of homophones.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The SFP column lists both <i lang=\"ain-Latn\">ya</i> and <i lang=\"ain-Latn\">a</i> as variants, but in the 'host / notes' cell, only <i lang=\"ain-Latn\">a</i> is specified as post-consonant. The orthographic alternation is clear, but the table uses two separate <i> tags for a single SFP entry, which may cause parsing or display inconsistencies in some systems.",
+    "quote": "<i lang=\"ain-Latn\">ya</i> / <i lang=\"ain-Latn\">a</i>",
+    "suggestion": "Consider using a single <i lang=\"ain-Latn\">ya/a</i> to represent the allomorphy more compactly, or ensure consistent tagging across the table for disjunctive forms.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#054",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "643-649",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'was not re-read for this chapter' is a clear register leak, referring to the book production process rather than the linguistic content. It reveals editorial workflow decisions and should not appear in the final prose.",
+    "quote": "the Refsing treatment (pp.253, 265–267) was not re-read for this chapter and the Shizunai inventory has not been compiled at Fukuda's level of rigour.",
+    "suggestion": "Rephrase to: 'The Refsing treatment (pp.253, 265–267) has not been fully integrated into the current inventory, and the Shizunai forms lack the systematic analysis of Fukuda (1961).'",
+    "confidence": 0.99
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#046",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "548–550 vs 578–586",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table states that polar questions use bare ruwe with no copula or existential, but the example at lines 578–586 shows ruwe he an with the existential an and the Q-particle he. The note calls this a 'reduced polar-Q frame', but the table does not account for this variant, creating a contradiction.",
+    "quote": "polar (yes/no) question → bare ruwe (verb omitted) → example: e=eraman ruwe",
+    "suggestion": "Either add a row or note to the table explaining that polar questions can also appear with ruwe he an, or adjust the example to match the bare ruwe pattern.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#045",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "544–545",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table claims that content questions use the evidential-tail predicator ruwe an, but the example given uses hi an (nominalizer hi + existential an) instead of ruwe an. The example does not match the described pattern.",
+    "quote": "content (wh) question → ruwe an (existential) → example: hemanta ne kusu ene siran hi an",
+    "suggestion": "Either replace the example with one that uses ruwe an, or revise the table to note that hi an is an alternative or that the pattern varies.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#044",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "44–133 vs 302–331",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The kakari-musubi table (lines 302–331) lists ne as a concordant SFP, but the inventory table (lines 44–133) does not include ne among the SFPs. This is a contradiction: either ne is an SFP and should appear in the inventory, or it is not and should not appear in the concord table.",
+    "quote": "Table row: esta‹SHI› / estap‹TOK› → ne (concordant SFP)",
+    "suggestion": "Either add ne to the inventory table with appropriate illocutionary value, or remove it from the kakari-musubi table and explain its status separately.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#049",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "116 vs 321",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The illocutionary value for nek differs between the two tables: 'emphatic assertion' vs 'assured assertion'. While similar, the inconsistency may confuse readers.",
+    "quote": "Inventory table: nek → 'emphatic assertion'; Kakari-musubi table: nek → 'assured assertion'",
+    "suggestion": "Harmonize the wording, e.g., use 'emphatic assertion' in both places.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#043",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "647",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'SFP' is not defined in this section. It was defined earlier, but for clarity, it should be defined again or the definition should be easily accessible.",
+    "quote": "Whether a form glossable as <i lang=\"ain-Latn\">awa</i> belongs to the Shizunai SFP inventory",
+    "suggestion": "Define 'SFP' as 'sentence-final particle' upon its first use in this section, or ensure the definition from the introduction is readily available.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#042",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "624",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase 'のだ' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "favour by men, like <span lang=\"ja\">のだ</span>, and doing scene-shift and summary work",
+    "suggestion": "Translate the Japanese phrase to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical note '(nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />)' is not consistently formatted. The citation should be integrated more smoothly or presented separately.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />) ‹corpus-suggested›.",
+    "suggestion": "Rephrase the sentence to integrate the citation more naturally, or place it at the end of the sentence.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#041",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "598",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical note '(nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />, asserted, corroborated by Nakagawa 2024: 470)' is not consistently formatted. The citation should be integrated more smoothly or presented separately.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />, asserted, corroborated by Nakagawa 2024: 470)",
+    "suggestion": "Rephrase the sentence to integrate the citation more naturally, or place it at the end of the sentence.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#040",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "585",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase 'Q-副助詞' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "The bare formal noun ru-we (no copula) combines with the Q-副助詞 he and the existential an, realising the reduced polar-Q frame ruwe he an (Nakagawa 2024: 409e). This illustrates the sentence-type switch at the evidential tail: copula ne (declarative) is replaced by existential an and the Q-particle he.",
+    "suggestion": "Translate the Japanese phrase to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#038",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "559",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation '(SFP <i lang=\"ain-Latn\">tapan</i> replaces COP)' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "<i lang=\"ain-Latn\">ruwe tapan</i> (SFP <i lang=\"ain-Latn\">tapan</i> replaces COP)",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase 'ございます-register' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "ceremonial/ございます-register; Fukuda 1961: §33",
+    "suggestion": "Translate the Japanese phrase to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#037",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "554",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation '(SFP <i lang=\"ain-Latn\">un</i>)' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "<i lang=\"ain-Latn\">ruwe un</i> (SFP <i lang=\"ain-Latn\">un</i>)",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation '(Nakagawa 2024: 396)' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "<i lang=\"ain-Latn\">ku=nu ruwe un</i> 'yes, I heard it' (Nakagawa 2024: 396)",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#036",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "548",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation '(verb omitted)' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "bare <i lang=\"ain-Latn\">ruwe</i> (verb omitted)",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation 'did you understand?' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "<i lang=\"ain-Latn\">e=eraman ruwe</i> 'did you understand?'",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#035",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "544",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation '(existential)' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "<i lang=\"ain-Latn\">ruwe an</i> (existential)",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation 'why is it like this?' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "<i lang=\"ain-Latn\">hemanta ne kusu ene siran hi an</i> 'why is it like this?'",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#034",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "539",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviation 'COP' is not defined. It likely refers to 'copula', but this should be explicit.",
+    "quote": "<i lang=\"ain-Latn\">ruwe ne</i> (COP)",
+    "suggestion": "Expand 'COP' to 'copula' or define it.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation '(recognized fact)' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "<i lang=\"ain-Latn\">sirpirka ruwe ne</i> 'the weather is fine (recognized fact)'",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#033",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "508",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical note '(aomidori_cs_ and nukopoli, aynu-corpora Discord 2023-12-12; <Ref k=\"aynucorporadiscord\" />)' is not consistently formatted. The citation should be integrated more smoothly or presented separately.",
+    "quote": "(aomidori_cs_ and nukopoli, aynu-corpora Discord 2023-12-12; <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Rephrase the sentence to integrate the citation more naturally, or place it at the end of the sentence.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#032",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "497",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical note '(asserted; <Ref k=\"aynucorporadiscord\" />)' is not consistently formatted. The citation should be integrated more smoothly or presented separately.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024-07-09, asserted; <Ref k=\"aynucorporadiscord\" />).",
+    "suggestion": "Rephrase the sentence to integrate the citation more naturally, or place it at the end of the sentence.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#031",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "484",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The symbol '∅' is used without explanation. It likely represents a null element, but this should be explicitly stated.",
+    "quote": "the <i lang=\"ain-Latn\">ne</i>/<i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">∅</i> alternation",
+    "suggestion": "Add a note explaining that '∅' represents a null element.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#030",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "478",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '副助詞' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "Q-副助詞 <A w=\"he\" gl=\"polar question focus particle\" /> and the Q-SFPs",
+    "suggestion": "Translate the Japanese term to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#029",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "474",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'COMP' is not defined. It likely refers to 'complementizer', but this should be explicit.",
+    "quote": "SFP in main clauses, COMP in embedded indirect questions ‹contested›",
+    "suggestion": "Expand 'COMP' to 'complementizer' or define it.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#028",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "467",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The slash '/' is used inconsistently for separating items. It is used here, but not in other lists.",
+    "quote": "<A w=\"ya\" gl=\"question particle; complementizer 'whether'\" /> /",
+    "suggestion": "Use commas or 'and' to separate items in lists for consistency.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#027",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "452",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The parenthetical explanation '(purpose + copula + na)' is not consistently formatted. It should either be italicized or enclosed in a consistent markup.",
+    "quote": "The sequence kusu ne na (purpose + copula + na) is common in discourse: the assertive-appeal force of na urges the hearer to acknowledge the speaker's stated intention.",
+    "suggestion": "Italicize the parenthetical explanation or use consistent markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#025",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "437",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The square brackets '[' and ']' are used for 'do X', but are not explained. This is a common convention, but should be explicitly stated.",
+    "quote": "<i lang=\"ain-Latn\">… na</i> [command] reads 'since … / because … [do X]'",
+    "suggestion": "Add a note explaining that square brackets indicate a placeholder or a generalized action.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#024",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "411",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The slash '/' is used inconsistently for separating items. It is used here, but not in other lists.",
+    "quote": "<i lang=\"ain-Latn\">ruwe/hawe/siri/humi</i> +",
+    "suggestion": "Use commas or 'and' to separate items in lists for consistency.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The asterisk '*' is used to denote ungrammaticality, but it is not explained. This is a common convention, but should be explicitly stated.",
+    "quote": "<i lang=\"ain-Latn\">… ruwe ne na</i> and the ungrammaticality of <i lang=\"ain-Latn\">*… na ruwe ne</i>",
+    "suggestion": "Add a note explaining that '*' denotes ungrammaticality.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#023",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "373",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '強調の助詞 (emphatic 副助詞)' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "Satō ex. (oral-literature register). The bare concept form hum (not possessed humi) appears before konna. Satō classifies konna/kan provisionally as a 強調の助詞 (emphatic 副助詞) but flags its grammatical status as 'unclear'; the appearance of the concept form rather than the possessed form before konna is unexplained — the same nouns take possessed forms when functioning as formal-noun evidential heads. See formal-defective-nouns for the possessed/concept-form alternation.",
+    "suggestion": "Translate the Japanese phrase to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#021",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "355",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term '4th-person A prefix' is not consistently defined. 'A' likely refers to the active voice, but this should be explicit.",
+    "quote": "The 4th-person A prefix a= tracks the narrator/speaker in the oral-literature register.",
+    "suggestion": "Clarify that 'A' refers to the active voice.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#019",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "346",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase 'if only I were the wind!' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "The emphatic ta triggers the counterfactual wish reading; the concordant oka is here present but may be omitted in Saru. The couplet continues rera ta ku=ne ('if only I were the wind!')",
+    "suggestion": "Translate the Japanese phrase to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#018",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "325",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tags '‹SHI›' and '‹TOK›' are not consistently formatted. They should either be italicized or enclosed in a consistent markup.",
+    "quote": "<i lang=\"ain-Latn\">esta</i>‹SHI› / <i lang=\"ain-Latn\">estap</i>‹TOK›",
+    "suggestion": "Italicize the dialect tags or use consistent markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviation 'Nk' is not defined. It likely refers to a citation, but its meaning should be clarified.",
+    "quote": "Nk 330",
+    "suggestion": "Provide a key or legend for this abbreviation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#017",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "319",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese gloss 'まさに〜こそ' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "<i lang=\"ain-Latn\">tas(i)</i> 'まさに〜こそ'",
+    "suggestion": "Translate the Japanese gloss to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '〜のだよ' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "assured assertion '〜のだよ (indeed it is)'",
+    "suggestion": "Translate the Japanese phrase to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviations 'Nk', 'Fk', and 'St' are not defined. They likely refer to citations, but their meaning should be clarified.",
+    "quote": "Nk 330; Fk §14/§24; St 73",
+    "suggestion": "Provide a key or legend for these abbreviations.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#016",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "313",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese gloss 'こそ (wish)' is not consistently formatted. It should either be fully translated or consistently presented as a gloss.",
+    "quote": "<i lang=\"ain-Latn\">ta</i> 'こそ (wish)'",
+    "suggestion": "Translate the Japanese gloss to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '〜だったらなあ' is not translated. It should either be translated or consistently presented as a gloss.",
+    "quote": "counterfactual wish '〜だったらなあ'",
+    "suggestion": "Translate the Japanese phrase to English or consistently use the Japanese script with appropriate markup.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviations 'Nk', 'Fk', and 'St' are not defined. They likely refer to citations, but their meaning should be clarified.",
+    "quote": "Nk 330; Fk §12/§25; St 73",
+    "suggestion": "Provide a key or legend for these abbreviations.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#007",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "118",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The symbol '≠' is used without explanation. It likely means 'is not', but this should be clarified.",
+    "quote": "pan-HA; ≠ copula <i lang=\"ain-Latn\">ne</i>",
+    "suggestion": "Replace '≠' with 'is not' or 'differs from'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#006",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "106",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'pan-HA' is inconsistent with the hyphenation used for Ainu forms (e.g., 'C-final').",
+    "quote": "pan-HA; <i lang=\"ain-Latn\">yan hani</i> → <i lang=\"ain-Latn\">yanani</i>",
+    "suggestion": "Change 'pan-HA' to 'pan HA' or 'pan-ha'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#005",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "88",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The symbol '≠' is used without explanation. It likely means 'is not', but this should be clarified.",
+    "quote": "≠ sequential connective <i lang=\"ain-Latn\">wa</i>",
+    "suggestion": "Replace '≠' with 'is not' or 'differs from'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#002",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "57",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'C-final' is inconsistent with the hyphenation used for Ainu forms (e.g., 'pan-HA').",
+    "quote": "C-final → <i lang=\"ain-Latn\">an</i>",
+    "suggestion": "Change 'C-final' to 'C-final' or 'C final'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#053",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "508-509",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation lists two usernames separated by 'and', but the standard format expects a single username. The use of 'and' suggests a joint contribution, but the format should either list both in a comma-separated way within the parentheses or be rephrased to reflect collaborative input without breaking citation syntax.",
+    "quote": "(aomidori_cs_ and nukopoli, aynu-corpora Discord 2023-12-12; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Use: (aomidori_cs_, nukopoli, aynu-corpora Discord 2023-12-12; <Ref k=\"aynucorporadiscord\" />)",
+    "confidence": 0.93
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#052",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "598-599",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Again, 'asserted' appears in the citation, which is not part of the standard format. Additionally, 'corroborated by Nakagawa 2024: 470' is a meta-commentary on source reliability, which belongs in the prose or a note, not embedded in the citation itself. This is a register leak from the editorial pipeline.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />, asserted, corroborated by Nakagawa 2024: 470)",
+    "suggestion": "Move 'corroborated by Nakagawa 2024: 470' to the surrounding prose or note, and remove 'asserted' to clean the citation to: (nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />)",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#051",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "498-499",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'asserted' in the citation is not part of the standard community citation format described in the briefing. The correct format should be just (username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />). The addition of 'asserted' is a pipeline register leak, possibly indicating internal verification status.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024-07-09, asserted; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Remove 'asserted' to conform to the standard citation style: (nukopoli, aynu-corpora Discord 2024-07-09; <Ref k=\"aynucorporadiscord\" />)",
+    "confidence": 0.97
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#050",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "280-288",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹speculative› is correctly applied, but the claim attributes etymological proposals to a Discord user 'antitwilight' without indicating whether this is a real name or handle. The citation format for community sources should consistently include the handle in parentheses as per the style (e.g., (username, aynu-corpora Discord ...)), but here the username appears mid-sentence without proper integration.",
+    "quote": "Members of the Discord-based aynu-corpora community have proposed that ... (antitwilight, aynu-corpora Discord 2024-11-18; <Ref k=\"aynucorporadiscord\" />) ‹speculative›.",
+    "suggestion": "Rephrase to: '(antitwilight, aynu-corpora Discord 2024-11-18; <Ref k=\"aynucorporadiscord\" />)' to match the prescribed citation format for community sources.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#048",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "337, 426, 501, 645",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Phrases like 'the read sources' (lines 337, 426, 501) and 'was not re-read for this chapter' (line 645) are meta-commentary addressed to the production process rather than the reader. They break the expository tone.",
+    "quote": "The read sources do not settle this ‹contested›.",
+    "suggestion": "Rephrase: e.g., 'The sources consulted do not settle this' → 'This question remains unsettled in the literature'; 'was not re-read for this chapter' → 'has not been systematically compiled'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#047",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "135",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The section title groups so (deliberative) under 'imperative and hortative', but so is neither imperative nor hortative; it is a self-directed deliberative. The heading misrepresents the content.",
+    "quote": "Imperative and hortative: yan, ya, ro, so",
+    "suggestion": "Change title to 'Imperative, hortative, and deliberative: yan, ya, ro, so' or restructure to separate so.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#039",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "579",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'Q' and 'POSS' are not explained. 'Q' likely refers to 'question particle' and 'POSS' to 'possessive', but this should be explicit.",
+    "quote": "g=\"now good track-POSS Q exist\"",
+    "suggestion": "Expand 'Q' to 'question particle' and 'POSS' to 'possessive', or ensure they are defined elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#026",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "447",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses '4.S', 'PURP', 'COP', and 'FIN' are not explained. '4.S' likely refers to '4th person singular', 'PURP' to 'purpose', 'COP' to 'copula', and 'FIN' to 'final particle', but this should be explicit.",
+    "quote": "g=\"one throughout go.PL=4.S PURP COP FIN\"",
+    "suggestion": "Expand '4.S' to '4th person singular', 'PURP' to 'purpose', 'COP' to 'copula', and 'FIN' to 'final particle', or ensure they are defined elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#022",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "368",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'EMPH' is not explained. It likely corresponds to 'emphatic' for 'konna', but this should be explicit.",
+    "quote": "g=\"come sound EMPH resonate.mightily\"",
+    "suggestion": "Expand 'EMPH' to 'emphatic' or ensure it's defined elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#020",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "351",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'EMPH', '4.A', and 'FIN' are not explained. 'EMPH' likely corresponds to 'emphatic', '4.A' to '4th person active', and 'FIN' to 'final particle', but this should be explicit.",
+    "quote": "g=\"that only EMPH 4.A=be.troubled FIN\"",
+    "suggestion": "Expand 'EMPH' to 'emphatic', '4.A' to '4th person active', and 'FIN' to 'final particle', or ensure they are defined elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#015",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "272",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'FIN' and 'ADM' are not explained. 'FIN' likely corresponds to 'final particle' for 'na', and 'ADM' to 'admonitive' for 'hani', but this should be explicit.",
+    "quote": "g=\"1SG.POSS=father place-POSS LOC 1SG.A=report PURP COP FIN ADM\"",
+    "suggestion": "Expand 'FIN' to 'final particle' and 'ADM' to 'admonitive', or ensure they are defined elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#014",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "237",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'SOFT' is not explained. It likely corresponds to 'soft assertive' for 'wa', but this should be explicit.",
+    "quote": "g=\"bad old.woman even NEG COP SOFT\"",
+    "suggestion": "Expand 'SOFT' to 'soft assertive' or ensure it's defined elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#013",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "218",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'FIN' is not explained. It likely corresponds to 'final particle' for 'na', but this should be explicit.",
+    "quote": "g=\"good cushion many exist FIN\"",
+    "suggestion": "Expand 'FIN' to 'final particle' or ensure it's defined elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#011",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "185",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.S' is not explained. It likely refers to a fourth-person singular suffix, but this should be clarified.",
+    "quote": "g=\"go.PL=4.S HORT\"",
+    "suggestion": "Expand '4.S' to '4th person singular' or define the notation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#010",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "161",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'ADM' is not explained. It likely corresponds to 'admonitive' for 'hani', but this should be explicit.",
+    "quote": "g=\"again again come.PL IMP ADM\"",
+    "suggestion": "Expand 'ADM' to 'admonitive' or ensure it's defined elsewhere.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#009",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "147-148",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'ro' in the table (line 73-75) is 'hortative (seeks addressee's assent)', but here it's glossed as part of 'let us learn [it]', implying a hortative or first-person plural imperative meaning. This is a potential inconsistency in the glossing of 'ro'.",
+    "quote": "Ijäs's pedagogical grammar title <i lang=\"ain-Latn\">a-eyaypakasnu ro</i> 'let us learn [it]'",
+    "suggestion": "Ensure the gloss for 'ro' in the table accurately reflects its use in examples like this, or clarify the distinction if there are different uses.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sentence-final-particles-illocutionary-force~p1#001",
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "lines": "24-27",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that only 'hani' freely follows another SFP, but then lists 'na hani' and 'yan hani' as examples. This implies that 'na' and 'yan' can precede 'hani', which contradicts the initial statement that only 'hani' can follow another SFP.",
+    "quote": "Stacking is also restricted: only <A w=\"hani\" gl=\"admonitive final particle\" /> freely follows another SFP (<i lang=\"ain-Latn\">na hani</i>, <i lang=\"ain-Latn\">yan hani</i>); no other combination is freely productive",
+    "suggestion": "Clarify the statement to indicate that 'hani' can follow other SFPs like 'na' and 'yan', rather than stating it's the only one that can follow another SFP.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

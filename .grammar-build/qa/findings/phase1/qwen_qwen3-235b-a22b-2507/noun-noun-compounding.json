@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "157",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Community observation (nukopoli, aynu-corpora Discord, 2024-12-09) records that",
+  "issue": "The claim is tagged ‹contested› but supported only by a Discord attribution, which is weaker than scholarly consensus; this risks epistemic inflation by giving community observation undue weight without corroboration.",
+  "suggestion": "Reclassify as ‹speculative› or add a scholarly source to support the accent claim.",
+  "confidence": 0.9,
+  "chapter": "noun-noun-compounding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "337",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The compound accent data (nukopoli, aynu-corpora Discord 2024,",
+  "issue": "The date '2024' is incomplete (should be YYYY-MM-DD like elsewhere), and the citation repeats the same Discord source without additional scholarly support, while the claim remains tagged ‹contested› — inconsistent with the evidential hierarchy.",
+  "suggestion": "Provide complete date (e.g., 2024-12-09) and consider re-evaluating the epistemic tag if no stronger evidence exists.",
+  "confidence": 0.85,
+  "chapter": "noun-noun-compounding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "375",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "<A w=\"haca-hapo\" gl=\"parents (lit. father and mother)\" />",
+  "issue": "The gloss includes a literal translation in parentheses, but the `gl` attribute is meant for Leipzig-style glosses, not free translations. This mixes markup conventions.",
+  "suggestion": "Change `gl` to a simple gloss like \"father-mother\" and move the explanatory text to prose.",
+  "confidence": 0.8,
+  "chapter": "noun-noun-compounding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<Ex m=\"sik-kap\" g=\"eye-skin\" tr=\"eyelid\" cite=\"nakagawa2024:263\" dial=\"HK\" note=\"sik 'eye' and kap 'skin, bark' are both in concept form; their immediate concatenation yields the compound 'eyelid'.\" />",
+  "issue": "The form 'sik-kap' appears with a hyphen here and in the table (line 190), but in the diagnostics section it is written as 'sik-kap' consistently. However, in the semantics section, 'sisam-itak' (line 313) uses a different hyphenation style — possible inconsistency in orthographic rendering of compounds.",
+  "suggestion": "Ensure consistent use of hyphens in compound representations across the chapter.",
+  "confidence": 0.75,
+  "chapter": "noun-noun-compounding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "313",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">sisam-itak</i>",
+  "issue": "The compound is written with a hyphen, but in the contrastive example later (line 393), it appears as 'sisamitak' (solid form). This may reflect a legitimate orthographic distinction (phrase vs compound), but the hyphenated form might be misleading if the standard compound form is unhyphenated.",
+  "suggestion": "Clarify orthographic convention: use solid spelling for compounds unless hyphenation is phonologically or dialectally motivated.",
+  "confidence": 0.8,
+  "chapter": "noun-noun-compounding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "394",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "sisamitak (one compound word) means 'the Japanese language (as a named category)'",
+  "issue": "Earlier in line 313, 'sisam-itak' is described as the compound form meaning 'the Japanese language', but here the solid form 'sisamitak' is given the same meaning. This contradicts the earlier hyphenated spelling.",
+  "suggestion": "Standardize the spelling of the compound: either use 'sisamitak' throughout or clarify that hyphenation is optional.",
+  "confidence": 0.95,
+  "chapter": "noun-noun-compounding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "248",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"claw.POSS-be.long\"",
+  "issue": "The gloss uses 'be.long' for 'tanne', but in the dictionary-linked form (line 243), 'tanne' is glossed as 'be long, be tall'. The gloss should reflect the full semantic range or at least match the root's attested gloss.",
+  "suggestion": "Update gloss to 'claw.POSS-be.long/tall' or 'claw.POSS-be.long' if 'tall' is contextually irrelevant.",
+  "confidence": 0.8,
+  "chapter": "noun-noun-compounding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "257",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"hand.POSS-be.long\"",
+  "issue": "Same issue as above: 'tanne' is glossed as 'be.long' in the example but defined as 'be long, be tall' in the prose. Inconsistent representation of the same root.",
+  "suggestion": "Gloss consistently as 'be.long/tall' or 'be.long' if context justifies restriction.",
+  "confidence": 0.85,
+  "chapter": "noun-noun-compounding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

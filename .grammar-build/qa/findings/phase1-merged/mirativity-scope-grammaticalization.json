@@ -1,0 +1,1549 @@
+[
+ {
+  "id": "mirativity-scope-grammaticalization~p1#053",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "195",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation uses 'paren' as an attribute, which appears to be a markup instruction rather than a standard citation format. This may be a pipeline artifact.",
+    "quote": "<Ref k=\"hoppertraugott2003\" paren />",
+    "suggestion": "Verify the intended citation format and ensure it renders correctly in the published version.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The page locator 's.v. ru, ruwe' is not a standard page range and may not be machine-readable. It should be formatted consistently with other citations.",
+    "quote": "<Ref k=\"tamura1996\" p=\"s.v. ru, ruwe\" />; <Ref k=\"hirosawa2026\" p=\"65\" />",
+    "suggestion": "Use a consistent citation format, e.g., p=\"s.v. 'ru', 'ruwe'\" or retain as-is only if the backend supports 's.v.' parsing.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation 'hoppertraugott2003' uses the attribute 'paren', which is not defined in the markup specification provided. Standard citations use 'p' for pages. This may be a pipeline leak or malformed ref.",
+    "quote": "<Ref k=\"hoppertraugott2003\" paren />",
+    "suggestion": "Change to standard page citation or define 'paren' in the component; if it's meant to be a parenthetical cite, use standard formatting.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#052",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "419-426",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'hum-POSS' appears twice but the Ainu form is 'hum-i' both times. The first 'hum-i' is glossed as 'hum-POSS' and the second also as 'hum-POSS', but the free translation distinguishes them: 'Feeling as though...' (direct sensation) vs 'as that sensation arose' (indirect). The gloss should reflect the different functions: the first is a direct evidential (humi ne) and the second is an indirect evidential (humi as). The gloss 'hum-POSS' for both obscures this distinction.",
+    "quote": "m=\"poro cep a=ne hum-i ne hum-i as orano\" g=\"big fish 4.A=COP hum-POSS COP hum-POSS stand after\" tr=\"Feeling as though I were a great fish, and as that sensation arose —\"",
+    "suggestion": "Gloss the first hum-i as 'hum-POSS' (part of direct evidential) and the second as 'hum-POSS' but with a note distinguishing the constructions, or use more specific glosses like 'SENS' for the direct and 'SENS.INDIR' for the indirect.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'stand' for 'as' is inconsistent with the glossing elsewhere in the chapter. In line 381, 'as' is glossed as 'stand' (for hawe as), but in line 73, 'an' (existential) is used for the indirect evidential. The gloss 'stand' for 'as' is acceptable but should be consistent with the chapter's glossing conventions.",
+    "quote": "m=\"poro cep a=ne hum-i ne hum-i as orano\" g=\"big fish 4.A=COP hum-POSS COP hum-POSS stand after\"",
+    "suggestion": "Ensure 'as' is consistently glossed as 'stand' throughout the chapter, or use a more semantically transparent gloss like 'arise' if that better reflects the function.",
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'as' is again glossed as 'stand' in line 420 ('hum-POSS stand'), but it is the existential verb in an indirect evidential. This repeats the error from line 381.",
+    "quote": "m=\"poro cep a=ne hum-i ne hum-i as orano\"",
+    "suggestion": "Change gloss from 'stand' to 'EXIST' or 'INDF' consistently across examples.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#047",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "213",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹original-needs-review› is a pipeline-internal editorial note that should not appear in the published text. It indicates the author has not yet verified this claim against sources.",
+    "quote": "Three stages are directly attested in the sources, yielding an intra-areal cline ‹original-needs-review›:",
+    "suggestion": "Remove the tag or replace with an appropriate grade such as ‹corpus-suggested› if the claim is tentative.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The editorial tag ‹original-needs-review› is visible in the prose. These epistemic tags should not appear in the final text unless embedded in a note or metadata layer.",
+    "quote": "‹original-needs-review›",
+    "suggestion": "Remove the tag from the main text or move it to a comment/note field.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#030",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'takahashi2013' are missing. They should be 'takahashi2013'.",
+    "quote": "<Ref k=\"takahashi2013\" p=\"130–131\" />; <Ref k=\"nakagawa2024\" p=\"110\" />. The allomorphs",
+    "suggestion": "<Ref k=\"takahashi2013\" p=\"130–131\" />; <Ref k=\"nakagawa2024\" p=\"110\" />. The allomorphs",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'sir' and 'haw' are missing. They should be 'sir' and 'haw'.",
+    "quote": "<i lang=\"ain-Latn\">sin</i> (for <i lang=\"ain-Latn\">sir</i>) and <i lang=\"ain-Latn\">aw</i> (for <i lang=\"ain-Latn\">haw</i>) are Tokachi-specific",
+    "suggestion": "<i lang=\"ain-Latn\">sin</i> (for <i lang=\"ain-Latn\">sir</i>) and <i lang=\"ain-Latn\">aw</i> (for <i lang=\"ain-Latn\">haw</i>) are Tokachi-specific",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'takahashi2013' are missing. They should be 'takahashi2013'.",
+    "quote": "<Ref k=\"takahashi2013\" p=\"130–131\" />. Stage I and Stage II represent a morphological",
+    "suggestion": "<Ref k=\"takahashi2013\" p=\"130–131\" />. Stage I and Stage II represent a morphological",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ainu forms 'sin' and 'aw' are given in italics in the surrounding text but are not marked with <i lang=\"ain-Latn\"> tags, unlike other Ainu forms in the chapter (e.g., line 254-256).",
+    "quote": "The allomorphs sin (for sir) and aw (for haw) are Tokachi-specific",
+    "suggestion": "Add <i lang=\"ain-Latn\"> tags around 'sin' and 'aw' for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#029",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'Saru' is missing. It should be 'Saru'.",
+    "quote": "Stage I dialects the bare concept form closes the clause where Saru uses the possessed",
+    "suggestion": "Stage I dialects the bare concept form closes the clause where Saru uses the possessed",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'haw' and 'ru' are missing. They should be 'haw' and 'rū'.",
+    "quote": "form: Tokachi <i lang=\"ain-Latn\">iruska haw ne</i> 'she was angry', <i lang=\"ain-Latn\">tuk ru ne</i> 'it emerged', alongside Saru",
+    "suggestion": "form: Tokachi <i lang=\"ain-Latn\">iruska haw ne</i> 'she was angry', <i lang=\"ain-Latn\">tuk rū ne</i> 'it emerged', alongside Saru",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'hawe' and 'ruwe' are missing. They should be 'hawe' and 'rūwe'.",
+    "quote": "<i lang=\"ain-Latn\">iruska hawe ne</i> and <i lang=\"ain-Latn\">tuk ruwe ne</i>",
+    "suggestion": "<i lang=\"ain-Latn\">iruska hawe ne</i> and <i lang=\"ain-Latn\">tuk rūwe ne</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in hyphenation: 'haw' is used without hyphen here, but in the table above (line 236) the form is 'hawe' (possessed), and in line 238 it's 'hawe'. The bare stem 'haw' should be consistent with its use in 'hawe'.",
+    "quote": "iruska haw ne",
+    "suggestion": "Use 'haw' consistently for the bare stem and 'hawe' for the possessed form; clarify if 'haw' in 'haw ne' is a typo for 'hawe ne'.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'ru ne' is used without hyphenation, but in the possessed form it's 'ruwe ne'. The bare stem 'ru' should be consistent with its use in 'ruwe'.",
+    "quote": "tuk ru ne",
+    "suggestion": "Clarify whether 'ru' is the bare stem and 'ruwe' the possessed form; ensure consistent presentation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#059",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "380",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'as' is glossed as 'stand' in line 381, but 'as' is the existential verb used in indirect evidentials. The standard gloss for 'as' should be 'EXIST' or 'INDF', not 'stand'. 'Stand' is semantically misleading.",
+    "quote": "m=\"ek haw-e as ru-we ne\"",
+    "suggestion": "Change gloss from 'stand' to 'EXIST' or 'INDF' to align with standard Ainu glossing practice.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#058",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "273",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'wa' at the end is glossed as 'CONJ', but in the scope section (line 150) 'wa' is used as a clause-linker and glossed as 'CONJ'. However, in this example, 'wa' appears to be a clause-final conjunction, but the gloss does not reflect any discrepancy. More critically, the morpheme 'siri' is glossed as 'appearance', but in this adversative use, its meaning has shifted. The gloss should reflect functional shift or be annotated.",
+    "quote": "m=\"sinki siri suke ki wa\"",
+    "suggestion": "Add a note explaining the adversative use of 'siri' or adjust the gloss to 'appearance' → 'though appearance' or similar to reflect syntactic role.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#057",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "84",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'awan' is mentioned as a past-mirative tail, but in the morpheme line 58 it's 'aan', and in line 72 it's 'anan'. The relationship between 'aan', 'anan', and 'awan' is not clarified, and 'awan' is not glossed anywhere. This creates a morpheme-gloss alignment gap.",
+    "quote": "rupus humi ne awan",
+    "suggestion": "Add a note explaining the allomorphy of the mirative auxiliary (aan/anan/awan) or standardize references to it.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#056",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "72",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'anan' at the end is not glossed in the 'g' field. The gloss has 'MIR' but does not align it with 'anan'. Each morpheme must have a corresponding gloss.",
+    "quote": "m=\"supuya at kor sir-an ru-we ne anan\"",
+    "suggestion": "Change the gloss to: \"smoke rise while appearance-exist track-POSS COP MIR\" → \"smoke rise while appearance-exist track-POSS COP anan MIR\" or align 'anan' with 'MIR'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#055",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "58",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'aan', which is not glossed in the 'g' field. The gloss field has 'MIR' but does not align it with 'aan'. Each morpheme in 'm' must have a corresponding gloss in 'g'.",
+    "quote": "m=\"pirka menoko a=ne aan ru-we ne\"",
+    "suggestion": "Change the gloss to: \"good woman 4.A=COP MIR track-POSS COP\" → \"good woman 4.A=COP aan MIR track-POSS COP\" or assign 'aan' as the source of 'MIR' explicitly.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#049",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "167-168",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read directly for this grammar' is a pipeline-register leak addressing the production process rather than the reader. It should be rephrased as a statement about the state of the field.",
+    "quote": "The formal status of the nominalized clause embedded under the evidential is not settled in the sources read directly for this grammar.",
+    "suggestion": "Rephrase to: 'The formal status of the nominalized clause embedded under the evidential is not settled in the available literature.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#045",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "388",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "The outer form in Types A and B is *systematically* <i lang=\"ain-Latn\">ruwe ne</i> and not <i lang=\"ain-Latn\">siri ne</i>,",
+    "suggestion": "The outer form in Types A and B is *systematically* <i lang=\"ain-Latn\">rūwe ne</i> and not <i lang=\"ain-Latn\">siri ne</i>,",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#044",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "384",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "note=\"Constructed after the Type A combinations in Dal Corso 2018: 331 (e.g. Kayano text, ran hawe as ruwe ne; Dal Corso ex. 273, siglum KAY, narrator Kaizawa Tsurushino, Biratori). The inner hawe as (indirect reportative) presents the event from a reported source; the outer ruwe ne frames it as the narrator's established fact.\"",
+    "suggestion": "note=\"Constructed after the Type A combinations in Dal Corso 2018: 331 (e.g. Kayano text, ran hawe as rūwe ne; Dal Corso ex. 273, siglum KAY, narrator Kaizawa Tsurushino, Biratori). The inner hawe as (indirect reportative) presents the event from a reported source; the outer rūwe ne frames it as the narrator's established fact.\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#043",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "380",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "m=\"ek haw-e as ru-we ne\"",
+    "suggestion": "m=\"ek haw-e as rū-we ne\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#042",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "374",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "Attested Type A combinations include <i lang=\"ain-Latn\">hawe as ruwe ne</i>,",
+    "suggestion": "Attested Type A combinations include <i lang=\"ain-Latn\">hawe as rūwe ne</i>,",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "<i lang=\"ain-Latn\">siri an ruwe ne</i>, and <i lang=\"ain-Latn\">siri ki siri ne</i>",
+    "suggestion": "<i lang=\"ain-Latn\">siri an rūwe ne</i>, and <i lang=\"ain-Latn\">siri ki siri ne</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#041",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "357",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'sensory' is missing. It should be 'sensory'.",
+    "quote": "direct sensory + indirect sensory of the same stem",
+    "suggestion": "direct sensory + indirect sensory of the same stem",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'humi' is missing. It should be 'hūmi'.",
+    "quote": "(e.g. <i lang=\"ain-Latn\">…humi ne humi as…</i>)",
+    "suggestion": "(e.g. <i lang=\"ain-Latn\">…hūmi ne hūmi as…</i>)",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#040",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "350",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "direct evidential of lower reliability closed by <i lang=\"ain-Latn\">ruwe ne</i>",
+    "suggestion": "direct evidential of lower reliability closed by <i lang=\"ain-Latn\">rūwe ne</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#039",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "346",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "inner direct evidential + modal + outer <i lang=\"ain-Latn\">ruwe ne</i>",
+    "suggestion": "inner direct evidential + modal + outer <i lang=\"ain-Latn\">rūwe ne</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "(e.g. <i lang=\"ain-Latn\">…hawe ne nankor ruwe ne</i>)",
+    "suggestion": "(e.g. <i lang=\"ain-Latn\">…hawe ne nankor rūwe ne</i>)",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#038",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "337",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "inner indirect evidential + outer <i lang=\"ain-Latn\">ruwe ne</i>",
+    "suggestion": "inner indirect evidential + outer <i lang=\"ain-Latn\">rūwe ne</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "(e.g. <i lang=\"ain-Latn\">…hawe as ruwe ne</i>,",
+    "suggestion": "(e.g. <i lang=\"ain-Latn\">…hawe as rūwe ne</i>,",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "<i lang=\"ain-Latn\">…siri an ruwe ne</i>)",
+    "suggestion": "<i lang=\"ain-Latn\">…siri an rūwe ne</i>)",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#037",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "309",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "characterization and notes the high frequency of <i lang=\"ain-Latn\">ruwe ne</i> in narrative",
+    "suggestion": "characterization and notes the high frequency of <i lang=\"ain-Latn\">rūwe ne</i> in narrative",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "and its summative/transitional function, a point corroborated by Dal Corso's corpus counts",
+    "suggestion": "and its summative/transitional function, a point corroborated by Dal Corso's corpus counts",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#036",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "304",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "<i lang=\"ain-Latn\">ruwe ne</i> as semantically unmarked among the four direct forms, capable of summarizing and marking scene",
+    "suggestion": "<i lang=\"ain-Latn\">rūwe ne</i> as semantically unmarked among the four direct forms, capable of summarizing and marking scene",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'no' is missing. It should be 'no'.",
+    "quote": "transitions much as Japanese <span lang=\"ja\">のだ</span> does — a discourse function",
+    "suggestion": "transitions much as Japanese <span lang=\"ja\">のだ</span> does — a discourse function",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "consistent with its being the most grammaticalized direct member",
+    "suggestion": "consistent with its being the most grammaticalized direct member",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#035",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "297",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwehe' is missing. It should be 'rūwehe'.",
+    "quote": "(<i lang=\"ain-Latn\">ruwehe ʔan</i>), but the sources are thin and Dal Corso flags the",
+    "suggestion": "(<i lang=\"ain-Latn\">rūwehe ʔan</i>), but the sources are thin and Dal Corso flags the",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#034",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "292",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ru' is missing. It should be 'rū'.",
+    "quote": "in Asahikawa and Shiranuka the trace-form <i lang=\"ain-Latn\">ru</i> enters the existential frame as an",
+    "suggestion": "in Asahikawa and Shiranuka the trace-form <i lang=\"ain-Latn\">rū</i> enters the existential frame as an",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ru' is missing. It should be 'rū'.",
+    "quote": "inferential (<i lang=\"ain-Latn\">ru an</i>), apparently in complementary distribution with",
+    "suggestion": "inferential (<i lang=\"ain-Latn\">rū an</i>), apparently in complementary distribution with",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'siri' is missing. It should be 'siri'.",
+    "quote": "the <i lang=\"ain-Latn\">siri an</i> of the southern dialects",
+    "suggestion": "the <i lang=\"ain-Latn\">siri an</i> of the southern dialects",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#033",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "283",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'kindaichi1936' is missing. It should be 'kindaichi1936'.",
+    "quote": "<Ref k=\"kindaichi1936\" p=\"155–160\" />, suggesting the Stage III path is of some age within",
+    "suggestion": "<Ref k=\"kindaichi1936\" p=\"155–160\" />, suggesting the Stage III path is of some age within",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#032",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "278",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'siri' is missing. It should be 'siri'.",
+    "quote": "note=\"Constructed after the adversative siri use documented in Horobetsu and in early records (Chiri 1923: 86, cited by Takahashi 2018: 108). The bare formal noun siri without a following ne functions as an adversative/concessive clause marker, a use not attested in well-described Saru. Takahashi 2018: 111 treats this as a further step in the grammaticalization of the possessed-form nominalizers.\"",
+    "suggestion": "note=\"Constructed after the adversative siri use documented in Horobetsu and in early records (Chiri 1923: 86, cited by Takahashi 2018: 108). The bare formal noun siri without a following ne functions as an adversative/concessive clause marker, a use not attested in well-described Saru. Takahashi 2018: 111 treats this as a further step in the grammaticalization of the possessed-form nominalizers.\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#031",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "273",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'siri' is missing. It should be 'siri'.",
+    "quote": "m=\"sinki siri suke ki wa\"",
+    "suggestion": "m=\"sinki siri suke ki wa\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#028",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "244",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'ruwe', 'siri', 'hawe', 'humi' are missing. They should be 'rūwe', 'siri', 'hawe', 'humi'.",
+    "quote": "<i lang=\"ain-Latn\">ruwe / siri / hawe / humi</i> (bare, clause-internal, no",
+    "suggestion": "<i lang=\"ain-Latn\">rūwe / siri / hawe / humi</i> (bare, clause-internal, no",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#027",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "236",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'ruwe', 'siri', 'hawe', 'humi' are missing. They should be 'rūwe', 'siri', 'hawe', 'humi'.",
+    "quote": "<td><i lang=\"ain-Latn\">ruwe / siri / hawe / humi</i> + copula/existential verb</td>",
+    "suggestion": "<td><i lang=\"ain-Latn\">rūwe / siri / hawe / humi</i> + copula/existential verb</td>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#026",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "228",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'ru', 'sir', 'haw', 'hum' are missing. They should be 'rū', 'sir', 'haw', 'hum'.",
+    "quote": "<td><i lang=\"ain-Latn\">ru / sir / haw / hum</i> (bare, uninflected)</td>",
+    "suggestion": "<td><i lang=\"ain-Latn\">rū / sir / haw / hum</i> (bare, uninflected)</td>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macrons on 'takahashi2013' are missing. They should be 'takahashi2013'.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"110, 390\" />; <Ref k=\"takahashi2013\" p=\"129–131\" />",
+    "suggestion": "<Ref k=\"nakagawa2024\" p=\"110, 390\" />; <Ref k=\"takahashi2013\" p=\"129–131\" />",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#025",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "205",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwehe' is missing. It should be 'rūwehe'. The macron on 'humihi' is missing. It should be 'hūmihi'.",
+    "quote": "(<i lang=\"ain-Latn\">*ruwehe</i>, <i lang=\"ain-Latn\">*humihi</i> as evidentials), and are",
+    "suggestion": "(<i lang=\"ain-Latn\">*rūwehe</i>, <i lang=\"ain-Latn\">*hūmihi</i> as evidentials), and are",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "fixed in linear position <Ref k=\"tamura1996\" p=\"s.v. ruwe\" />. The Ainu system as a whole is",
+    "suggestion": "fixed in linear position <Ref k=\"tamura1996\" p=\"s.v. rūwe\" />. The Ainu system as a whole is",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'manu' is missing. It should be 'manu'.",
+    "quote": "particle <i lang=\"ain-Latn\">manu</i> ‹consensus›.",
+    "suggestion": "particle <i lang=\"ain-Latn\">manu</i> ‹consensus›.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#024",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "192",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "etymology: <i lang=\"ain-Latn\">ruwe</i> derives from 'there is a trace of",
+    "suggestion": "etymology: <i lang=\"ain-Latn\">rūwe</i> derives from 'there is a trace of",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "<Ref k=\"tamura1996\" p=\"s.v. ru, ruwe\" />; <Ref k=\"hirosawa2026\" p=\"65\" />. On the",
+    "suggestion": "<Ref k=\"tamura1996\" p=\"s.v. ru, rūwe\" />; <Ref k=\"hirosawa2026\" p=\"65\" />. On the",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#023",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "188",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'haw' is missing. It should be 'haw'.",
+    "quote": "<A w=\"haw\" gl=\"voice\" /> yields <i lang=\"ain-Latn\">haw-e</i>, and the sound/feeling-noun",
+    "suggestion": "<A w=\"haw\" gl=\"voice\" /> yields <i lang=\"ain-Latn\">haw-e</i>, and the sound/feeling-noun",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'hum' is missing. It should be 'hum'.",
+    "quote": "<A w=\"hum\" gl=\"sound, feeling\" /> yields <i lang=\"ain-Latn\">hum-i</i>. The shift from",
+    "suggestion": "<A w=\"hum\" gl=\"sound, feeling\" /> yields <i lang=\"ain-Latn\">hum-i</i>. The shift from",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#022",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ru' is missing. It should be 'rū'.",
+    "quote": "path-noun <A w=\"ru\" gl=\"track, path\" /> yields the possessed form",
+    "suggestion": "path-noun <A w=\"rū\" gl=\"track, path\" /> yields the possessed form",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "<i lang=\"ain-Latn\">ru-we</i> 'the trace of —', the appearance-noun",
+    "suggestion": "<i lang=\"ain-Latn\">rū-we</i> 'the trace of —', the appearance-noun",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'sir' is missing. It should be 'sir'.",
+    "quote": "<A w=\"sir\" gl=\"appearance, land\" /> yields <i lang=\"ain-Latn\">sir-i</i>, the voice-noun",
+    "suggestion": "<A w=\"sir\" gl=\"appearance, land\" /> yields <i lang=\"ain-Latn\">sir-i</i>, the voice-noun",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#021",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "170",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ne' is missing. It should be 'ne'.",
+    "quote": "copula <i lang=\"ain-Latn\">ne</i> of the direct forms expresses an internal, speaker-anchored",
+    "suggestion": "copula <i lang=\"ain-Latn\">ne</i> of the direct forms expresses an internal, speaker-anchored",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#020",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "160",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "<i lang=\"ain-Latn\">íne nispa ek ruwe ne</i> (singular <i lang=\"ain-Latn\">ek</i> 'come') vs. <i lang=\"ain-Latn\">íne nispa arki ruwe ne</i> (plural <i lang=\"ain-Latn\">arki</i>)",
+    "suggestion": "<i lang=\"ain-Latn\">íne nispa ek rūwe ne</i> (singular <i lang=\"ain-Latn\">ek</i> 'come') vs. <i lang=\"ain-Latn\">íne nispa arki rūwe ne</i> (plural <i lang=\"ain-Latn\">arki</i>)",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "vs. <i lang=\"ain-Latn\">íne nispa arki ruwe ne</i> (plural <i lang=\"ain-Latn\">arki</i>)",
+    "suggestion": "vs. <i lang=\"ain-Latn\">íne nispa arki rūwe ne</i> (plural <i lang=\"ain-Latn\">arki</i>)",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#019",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "154",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "note=\"The clause-linker wa follows ruwe ne in the post-evidential slot, showing that clause-linking material attaches outside the evidential predicate. The embedded verb ek and the person marker =an carry the clause-internal TAM and agreement; ruwe ne scopes over all of it.\"",
+    "suggestion": "note=\"The clause-linker wa follows rūwe ne in the post-evidential slot, showing that clause-linking material attaches outside the evidential predicate. The embedded verb ek and the person marker =an carry the clause-internal TAM and agreement; rūwe ne scopes over all of it.\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#018",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "150",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "m=\"kamuy ek ru-we ne wa paye=an\"",
+    "suggestion": "m=\"kamuy ek rū-we ne wa paye=an\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#017",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "138",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'kusu' is missing. It should be 'kusu'.",
+    "quote": "the purposive modal <i lang=\"ain-Latn\">kusu ne</i> takes the evidential as its complement",
+    "suggestion": "<i lang=\"ain-Latn\">kusu ne</i> takes the evidential as its complement",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'kusu' is missing. It should be 'kusu'. The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "(<i lang=\"ain-Latn\">kusu ne ruwe ne</i> is grammatical) but cannot follow it",
+    "suggestion": "(<i lang=\"ain-Latn\">kusu ne rūwe ne</i> is grammatical) but cannot follow it",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'. The macron on 'kusu' is missing. It should be 'kusu'.",
+    "quote": "(<i lang=\"ain-Latn\">*ruwe ne kusu ne</i> is ungrammatical) <Ref k=\"nakagawa2024\" p=\"393\" />.",
+    "suggestion": "(<i lang=\"ain-Latn\">*rūwe ne kusu ne</i> is ungrammatical) <Ref k=\"nakagawa2024\" p=\"393\" />.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#016",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "134",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "For <i lang=\"ain-Latn\">ruwe ne</i>, the clause-linkers",
+    "suggestion": "For <i lang=\"ain-Latn\">rūwe ne</i>, the clause-linkers",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'hine' is missing. It should be 'hine'.",
+    "quote": "<i lang=\"ain-Latn\">wa</i>, <i lang=\"ain-Latn\">hine</i>, <i lang=\"ain-Latn\">akusu</i>,",
+    "suggestion": "<i lang=\"ain-Latn\">wa</i>, <i lang=\"ain-Latn\">hine</i>, <i lang=\"ain-Latn\">akusu</i>,",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#015",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'somo' is missing. It should be 'sōmo'. The macron on 'ruwe' is missing. It should be 'rūwe'. The macron on 'humi' is missing. It should be 'hūmi'.",
+    "quote": "note=\"Negation somo ki scopes over the embedded verb paye; ruwe ne predicates the resulting negative proposition as an established fact, outside the scope of somo. The parallel pattern holds for siri ne, hawe ne, and humi ne (e.g. …somo ki siri ne).\"",
+    "suggestion": "note=\"Negation sōmo ki scopes over the embedded verb paye; rūwe ne predicates the resulting negative proposition as an established fact, outside the scope of sōmo. The parallel pattern holds for siri ne, hawe ne, and hūmi ne (e.g. …sōmo ki siri ne).\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#014",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "125",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'somo' is missing. It should be 'sōmo'. The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "m=\"paye somo ki ru-we ne\"",
+    "suggestion": "m=\"paye sōmo ki rū-we ne\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'somo' is 'NEG'. This is likely incorrect as 'somo' is described as a negating element, but 'NEG' is usually reserved for a morpheme. It should probably be 'NEG-PART' or similar.",
+    "quote": "g=\"go NEG do track-POSS COP\"",
+    "suggestion": "g=\"go NEG-PART do track-POSS COP\"",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#013",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "118",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'somo' is missing. It should be 'sōmo'. The macron on 'humi' is missing. It should be 'hūmi'.",
+    "quote": "<i lang=\"ain-Latn\">…somo ki humi ne</i>. The outer rhetorical frame",
+    "suggestion": "<i lang=\"ain-Latn\">…sōmo ki hūmi ne</i>. The outer rhetorical frame",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'. The macron on 'somo' is missing. It should be 'sōmo'.",
+    "quote": "<i lang=\"ain-Latn\">ruwe somo ne</i> is categorically different — it negates the evidential",
+    "suggestion": "<i lang=\"ain-Latn\">rūwe sōmo ne</i> is categorically different — it negates the evidential",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#012",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "114",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "<i lang=\"ain-Latn\">…somo ki ruwe ne</i> predicates the negative proposition as a recognized",
+    "suggestion": "<i lang=\"ain-Latn\">…somo ki rūwe ne</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'somo' is missing. It should be 'sōmo'.",
+    "quote": "with <i lang=\"ain-Latn\">somo</i>. The same holds for all four siblings:",
+    "suggestion": "<i lang=\"ain-Latn\">sōmo</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'somo' is missing. It should be 'sōmo'.",
+    "quote": "<i lang=\"ain-Latn\">…somo ki siri ne</i>, <i lang=\"ain-Latn\">…somo ki hawe ne</i>,",
+    "suggestion": "<i lang=\"ain-Latn\">…sōmo ki siri ne</i>, <i lang=\"ain-Latn\">…sōmo ki hawe ne</i>,",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'somo' is missing. It should be 'sōmo'.",
+    "quote": "<i lang=\"ain-Latn\">…somo ki siri ne</i>, <i lang=\"ain-Latn\">…somo ki hawe ne</i>,",
+    "suggestion": "<i lang=\"ain-Latn\">…sōmo ki siri ne</i>, <i lang=\"ain-Latn\">…sōmo ki hawe ne</i>,",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#011",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "97",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'.",
+    "quote": "semantics of <i lang=\"ain-Latn\">aan</i> itself.",
+    "suggestion": "semantics of <i lang=\"ain-Latn\">āan</i> itself.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#010",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "84",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'humi' is missing. It should be 'hūmi'.",
+    "quote": "<i lang=\"ain-Latn\">rupus humi ne awan</i> 'it had completely hardened and frozen', where the",
+    "suggestion": "<i lang=\"ain-Latn\">rupus hūmi ne awan</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'. The macron on 'humi' is missing. It should be 'hūmi'.",
+    "quote": "with <i lang=\"ain-Latn\">aan</i>) follows <i lang=\"ain-Latn\">humi ne</i>.",
+    "suggestion": "with <i lang=\"ain-Latn\">āan</i>) follows <i lang=\"ain-Latn\">hūmi ne</i>.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#009",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "78",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'. The macron on 'anan' is missing. It should be 'ānan'.",
+    "quote": "note=\"Dal Corso ex. 268. The indirect visual siri an is layered under ruwe ne; anan follows the entire complex and contributes the surprise reading. The mirative is anan, not the evidential predicate it follows. On the double-evidential construction siri an ruwe ne, see §5 below.\"",
+    "suggestion": "note=\"Dal Corso ex. 268. The indirect visual siri an is layered under rūwe ne; ānan follows the entire complex and contributes the surprise reading. The mirative is ānan, not the evidential predicate it follows. On the double-evidential construction siri an rūwe ne, see §5 below.\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#008",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "72",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'. The macron on 'anan' is missing. It should be 'ānan'.",
+    "quote": "m=\"supuya at kor sir-an ru-we ne anan\"",
+    "suggestion": "m=\"supuya at kor sir-an rū-we ne ānan\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'anan' is 'MIR'. This seems inconsistent with the description of 'anan' as a mirative auxiliary that follows the evidential.",
+    "quote": "g=\"smoke rise while appearance-exist track-POSS COP MIR\"",
+    "suggestion": "g=\"smoke rise while appearance-exist track-POSS COP AUX\"",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#007",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "66",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'anan' is missing. It should be 'ānan'.",
+    "quote": "The same <i lang=\"ain-Latn\">anan</i> follows double-evidential constructions when a mirative",
+    "suggestion": "<i lang=\"ain-Latn\">ānan</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#006",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "62",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'. The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "note=\"Constructed after the attested pattern in Hirosawa 2026: 90 (ex. 33), Tamura audio materials 02-06: 42 (Saru). The auxiliary aan contributes the mirative reading; ruwe ne closes the proposition as established knowledge. The evidential itself is not the source of the surprise.\"",
+    "suggestion": "note=\"Constructed after the attested pattern in Hirosawa 2026: 90 (ex. 33), Tamura audio materials 02-06: 42 (Saru). The auxiliary āan contributes the mirative reading; rūwe ne closes the proposition as established knowledge. The evidential itself is not the source of the surprise.\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#005",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "58",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'. The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "m=\"pirka menoko a=ne aan ru-we ne\"",
+    "suggestion": "m=\"pirka menoko a=ne āan rū-we ne\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'aan' is 'MIR'. This seems incorrect given the context and the gloss for 'ru-we ne' which is 'track-POSS COP'. 'aan' is described as a perfective auxiliary encoding mirativity.",
+    "quote": "g=\"good woman 4.A=COP MIR track-POSS COP\"",
+    "suggestion": "g=\"good woman 4.A=COP AUX track-POSS COP\"",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#004",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "49",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "while a following <i lang=\"ain-Latn\">ruwe ne</i> reclaims that same content as established fact, producing the",
+    "suggestion": "<i lang=\"ain-Latn\">rūwe ne</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'ruwe' is missing. It should be 'rūwe'.",
+    "quote": "while a following <i lang=\"ain-Latn\">ruwe ne</i> reclaims that same content as established fact, producing the",
+    "suggestion": "<i lang=\"ain-Latn\">rūwe ne</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#003",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "39",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'.",
+    "quote": "aligning <i lang=\"ain-Latn\">aan</i> with the indirect evidential paradigm and treats its mirative",
+    "suggestion": "<i lang=\"ain-Latn\">āan</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'.",
+    "quote": "fact: <i lang=\"ain-Latn\">aan</i>/<i lang=\"ain-Latn\">anan</i> is the element that contributes mirativity ‹corpus-suggested›.",
+    "suggestion": "<i lang=\"ain-Latn\">āan</i>/<i lang=\"ain-Latn\">anan</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#002",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "34",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'.",
+    "quote": "<i lang=\"ain-Latn\">aan</i> encodes not just mirativity",
+    "suggestion": "<i lang=\"ain-Latn\">āan</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'.",
+    "quote": "<i lang=\"ain-Latn\">aan</i> encodes not just mirativity",
+    "suggestion": "<i lang=\"ain-Latn\">āan</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron on 'aan' is missing. It should be 'āan'.",
+    "quote": "inseparable in this auxiliary <Ref k=\"hirosawa2026\" p=\"90\" /> ‹contested›. <Ref k=\"dalcorso2018\" p=\"336\" />, working from",
+    "suggestion": "<i lang=\"ain-Latn\">āan</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#001",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "10",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence structure is slightly awkward due to the semicolon. It could be rephrased for better flow.",
+    "quote": "the expression of mirativity and its structural separation from the evidential nominalizers; the",
+    "suggestion": "Consider rephrasing to something like: '...the expression of mirativity and its structural separation from the evidential nominalizers, the scope of the evidential predicate...'",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'grammaticalization cline by which' is a bit wordy. The connection between the cline and double-evidential stacking could be stated more directly.",
+    "quote": "grammaticalization cline by which ordinary sensory nouns become clause-final formal-noun evidentials. Double-evidential stacking is treated alongside grammaticalization because it reveals the hierarchical position that <i lang=\"ain-Latn\">ruwe ne</i> has reached on that cline.",
+    "suggestion": "Consider rephrasing to: '...grammaticalization cline, whereby ordinary sensory nouns become clause-final formal-noun evidentials. Double-evidential stacking is treated alongside grammaticalization because it reveals the hierarchical position <i lang=\"ain-Latn\">ruwe ne</i> has reached on this cline.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#061",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "309",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same citation hygiene issue as line 141: the Ref is outside the parentheses, but should be inside with the full attribution.",
+    "quote": "aynu-corpora Discord <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-03-17)",
+    "suggestion": "Reformat as: (nukopoli, aynu-corpora Discord 2024-03-17; <Ref k=\"aynucorporadiscord\" />)",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#060",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "141",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation format for community sources is inconsistent. The standard format should be: (username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />). Here, the Ref is inside the parentheses but the username and date are outside.",
+    "quote": "aynu-corpora Discord <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-09)",
+    "suggestion": "Reformat as: (nukopoli, aynu-corpora Discord 2024-11-09; <Ref k=\"aynucorporadiscord\" />)",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#054",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "25",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: the form 'anan' is presented without a hyphen, but in example line 72 it appears as 'anan' without hyphen, while the related form 'awan' is mentioned later (line 85) as 'awan'. The root appears to be 'an' (cf. anan, aan), but the orthographic relationship between aan, anan, and awan is not consistently presented.",
+    "quote": "<A w=\"aan\" /> and to the related form <A w=\"anan\" />",
+    "suggestion": "Consider adding a brief orthographic note or standardizing the presentation (e.g. <A w=\"aan\" />, <A w=\"anan\" />) with a comment on allomorphy if needed.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#051",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "388-396",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This claim is contradicted by the previous paragraph (line 375) which lists 'siri ki siri ne' as an attested Type A combination, where the outer form is siri ne, not ruwe ne.",
+    "quote": "The outer form in Types A and B is systematically ruwe ne and not siri ne, hawe ne, or humi ne.",
+    "suggestion": "Either remove 'siri ki siri ne' from the Type A list, or qualify the claim about systematicity to acknowledge this exception.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#050",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "375",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The combination 'siri ki siri ne' is listed as a Type A combination, but Type A is defined as 'inner indirect evidential + outer ruwe ne'. 'siri ki siri ne' has siri ne as the outer form, not ruwe ne, and 'siri ki' is not an indirect evidential (it would be a direct form with ki 'do'). This contradicts the definition of Type A.",
+    "quote": "Attested Type A combinations include hawe as ruwe ne, siri an ruwe ne, and siri ki siri ne",
+    "suggestion": "Either remove 'siri ki siri ne' from the list of Type A combinations, or clarify that it is a different pattern. Check Dal Corso 2018: 331-333 for the correct classification.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#048",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "40-41",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This sentence is a meta-commentary about the production process (sources consulted second-hand) rather than a claim about Ainu. It leaks pipeline information about how the chapter was researched.",
+    "quote": "The debate turns on sources consulted second-hand; Yoshikawa's two studies are cited here via <Ref k=\"hirosawa2026\" p=\"90\" />.",
+    "suggestion": "Remove the sentence or rephrase to state the factual situation without editorial meta-commentary, e.g., 'Yoshikawa's studies are known only through Hirosawa's citation.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "mirativity-scope-grammaticalization~p1#046",
+  "chapter": "mirativity-scope-grammaticalization",
+  "lines": "8-17",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The overview lists three properties (mirativity, scope, grammaticalization) but then adds double-evidential stacking as a fourth topic treated alongside grammaticalization. The section structure has four sections (mirativity-aan, evidential-scope, grammaticalization-cline, double-evidentiality), not three. The overview's 'three properties' claim is contradicted by the actual content.",
+    "quote": "Three properties of the Hokkaido Ainu evidential system are treated here because they apply across all four formal-noun evidentials rather than belonging to any single term: the expression of mirativity and its structural separation from the evidential nominalizers; the scope of the evidential predicate over the TAM-marked clause it closes; and the grammaticalization cline by which ordinary sensory nouns become clause-final formal-noun evidentials. Double-evidential stacking is treated alongside grammaticalization because it reveals the hierarchical position that ruwe ne has reached on that cline.",
+    "suggestion": "Change 'Three properties' to 'Four properties' or restructure the overview to match the four sections.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

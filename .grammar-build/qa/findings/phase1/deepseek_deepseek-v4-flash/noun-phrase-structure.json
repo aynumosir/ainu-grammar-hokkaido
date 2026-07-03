@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "292-300",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The full sentence hinak wa arki wen cikappo utar, 'the bad little birds that came from somewhere', also shows a relative-clause modifier (hinak wa arki) at position 4 preceding wen.",
+  "issue": "Note claims a relative-clause modifier (position 4) precedes a property verb (position 3), contradicting the fixed ordering stated in the table (positions 1–4: demo, numeral, property verb/ADN, relative clause) and in prose lines 91–93.",
+  "suggestion": "Correct the note to reflect the actual ordering (property verb before relative clause) or explain why the relative clause appears earlier (e.g., if it is a different type of modifier not subject to the template order).",
+  "confidence": 1,
+  "chapter": "noun-phrase-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "321",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Relativizability is restricted by noun subclass (表47, Ref k=nakagawa2024 p=215)",
+  "issue": "The Japanese term '表47' (Table 47) appears in an otherwise English-language text, likely a leftover from a Japanese draft.",
+  "suggestion": "Replace '表47' with 'Table 47' for consistency with the rest of the chapter.",
+  "confidence": 0.9,
+  "chapter": "noun-phrase-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "248",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "rep is already the nominalized form re + nominalizing enclitic -pe <Ref k='aynucorporadiscord' /> (nukopoli, 2024-11-09) ‹corpus-confirmed›",
+  "issue": "A claim sourced only to a Discord message is tagged '‹corpus-confirmed›', which implies systematic corpus evidence beyond a single informal source.",
+  "suggestion": "Downgrade the epistemic tag to '‹contested›' or '‹speculative›' unless independent corpus verification is cited elsewhere.",
+  "confidence": 0.6,
+  "chapter": "noun-phrase-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "481-482",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "verse can add or omit utar freely for syllable count <Ref k='aynucorporadiscord' /> (nukopoli, 2024-11-23) ‹corpus-confirmed›",
+  "issue": "Same pattern: a claim attributed solely to a Discord discussion is treated as 'corpus-confirmed', which is likely an overstatement of the evidence.",
+  "suggestion": "Use a more cautious epistemic tag (e.g., '‹corpus-suggested›' or '‹speculative›') unless the claim is independently verified from a corpus study.",
+  "confidence": 0.6,
+  "chapter": "noun-phrase-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

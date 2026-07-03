@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "25-27, 53",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The Sakhalin variety branched off first, approximately 800 years ago; the Kuril variety diverged less than 600 years ago, following what Janhunen calls the 'Great Migration' of the 13th century",
+  "issue": "Line 53 says 'the 13th-century separation of Common Ainu into its descendant varieties', implying all varieties separated in the 13th century, but lines 25-27 give a later date for Kuril (<600 years ago, i.e. after 1426) while Sakhalin is ~800 years ago (13th c.). These dates are contradictory.",
+  "suggestion": "Harmonize the dates: either adjust the Kuril divergence to match the 13th century, or clarify that the 13th-century separation refers only to the Sakhalin branch.",
+  "confidence": 0.95,
+  "chapter": "genetic-position-macro-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "65",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "together aareally",
+  "issue": "'aareally' is not a word; likely a typo for 'areally' (meaning in terms of areas).",
+  "suggestion": "Change 'aareally' to 'areally'.",
+  "confidence": 0.9,
+  "chapter": "genetic-position-macro-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "327",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "an Eurasian Wanderwort",
+  "issue": "Article 'an' before 'Eurasian' is incorrect; 'Eurasian' begins with a consonant sound ('y'), so 'a' is required.",
+  "suggestion": "Change 'an' to 'a'.",
+  "confidence": 0.95,
+  "chapter": "genetic-position-macro-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "322",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "corroborated by the curated morpheme database (conf. 1.0)",
+  "issue": "The notation '(conf. 1.0)' is unexplained internal shorthand (probably 'confidence 1.0'), not appropriate for the reader. It appears to be a pipeline artifact.",
+  "suggestion": "Either expand or remove the parenthetical. If a confidence score is genuinely part of the argument, explain it; otherwise delete.",
+  "confidence": 0.85,
+  "chapter": "genetic-position-macro-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "early Old Japanese loans dated to the first millennium CE (§ above)",
+  "issue": "The cross-reference '§ above' is informal and vague; a proper section reference (e.g., <Xr> linking to the relevant section) should be used.",
+  "suggestion": "Replace '§ above' with a more precise cross-reference, such as <Xr ch=\"japonic\" /> or the section id.",
+  "confidence": 0.7,
+  "chapter": "genetic-position-macro-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

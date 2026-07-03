@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "39",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "her terms are pedagogical and her example sentences constructed",
+  "issue": "The phrasing 'her terms are pedagogical and her example sentences constructed' reads like a meta-comment about Ijäs's materials rather than integrated exposition, and the passive 'constructed' lacks a verb, creating a fragment.",
+  "suggestion": "Reword to: 'her terms are pedagogical in function, and her example sentences are constructed for teaching.'",
+  "confidence": 0.95,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "95",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "+1 / 0",
+  "issue": "The use of '0' in '+1 / 0' for 'direct causative, transitivity-pair formation' is inconsistent with the rest of the table, which uses integers without slashes; this could confuse the arity value interpretation.",
+  "suggestion": "Use a single value or clarify with a note; e.g., '0 or +1' or 'variable (0 or +1)' to match descriptive clarity elsewhere.",
+  "confidence": 0.8,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "158",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "−1 (×N)",
+  "issue": "The notation '−1 (×N)' in the 'direction' column implies a multiplicative effect on valency reduction, but the 'typical output' says 'an argument or adjunct joins the verb word', which does not clearly reflect iterative valency reduction. This creates ambiguity about whether noun incorporation always reduces valency by one or by more depending on N.",
+  "suggestion": "Clarify either the notation or the output description; e.g., '−1 per incorporation' or adjust the explanation to reflect iterated valency reduction.",
+  "confidence": 0.9,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "280",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "i-ri=an wa or-o wa sini=an na",
+  "issue": "The gloss 'ANTIP-skin=4.S' corresponds to 'i-ri=an', but the free translation 'I will skin the catch and then rest' assigns first-person subject ('I'), which contradicts the fourth-person singular suffix '=an'. The person marking is inconsistent with the translation.",
+  "suggestion": "Revise translation to match the fourth-person subject, e.g., 'He/she will skin the catch and then rest,' or correct the morpheme if first-person was intended.",
+  "confidence": 0.95,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "320",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "nea nispa utar u-koyki kor oka siri a=nukar",
+  "issue": "The gloss 'RECP-attack' for 'u-koyki' assumes 'koyki' means 'attack', but the free translation 'fighting each other' does not specify 'attack'; the verb root 'koyki' is glossed as 'catch' elsewhere (e.g., line 43), raising inconsistency unless contextually justified.",
+  "suggestion": "Either adjust the gloss to 'RECP-fight' or revise the translation to 'attack each other' to maintain consistency with the root's meaning.",
+  "confidence": 0.85,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "454",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=e-yay-ko-tuyma-si-ram-suy-pa",
+  "issue": "The gloss '4.A-APPL-REFL-APPL-far-REFL-heart-sway-PL' does not align fully with the morpheme sequence: 'tuyma' (far) is adverbial and not a valency prefix, yet it is included in the chain of prefixes without marking as adverbial; 'si-ram' is glossed as 'REFL-heart', but 'si-' is a reflexive prefix and 'ram' is a noun, so the gloss should reflect possession or incorporation.",
+  "suggestion": "Revise gloss to clarify structure, e.g., '4.A-APPL-REFL-APPL-ADV-REFL.POSS-heart-sway-PL' or similar to distinguish adverbial and possessive morphology.",
+  "confidence": 0.9,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "457",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "we sway our hearts about ourselves far over various rumours",
+  "issue": "The literal translation 'we sway our hearts about ourselves far over various rumours' includes 'about ourselves' which is not clearly supported by the reflexive markers in the gloss; it may over-interpret the semantic role of 'yay-' and 'si-'.",
+  "suggestion": "Adjust literal translation to more closely reflect structure, e.g., 'we sway heart-reflexive far over various rumours'.",
+  "confidence": 0.8,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "172",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "ci-",
+  "issue": "The prefix <i lang=\"ain-Latn\">ci-</i> is used for the middle voice, but in line 28 it appears as <i lang=\"ain-Latn\">ci=</i> for first-plural-exclusive A index; the use of hyphen vs. equals is correct, but the visual similarity risks confusion. However, the text warns of this homophony, so this may be acceptable. Still, inconsistent spacing or formatting could arise.",
+  "suggestion": "Ensure consistent italics and spacing around affixes throughout; currently acceptable but borderline.",
+  "confidence": 0.7,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "118",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">e-</i> ‘head of’, <i lang=\"ain-Latn\">o-</i> ‘bottom of’",
+  "issue": "The glosses 'head of' and 'bottom of' are in English but not marked as translations; other similar entries use Japanese terms. Inconsistency in language presentation may confuse.",
+  "suggestion": "Either translate consistently into English or use Japanese with translation, e.g., 'e- ‘head of’ (Jp: ato no)'.",
+  "confidence": 0.75,
+  "chapter": "valency-voice-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

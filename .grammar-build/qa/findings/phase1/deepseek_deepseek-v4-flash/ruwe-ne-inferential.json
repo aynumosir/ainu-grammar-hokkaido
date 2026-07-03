@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "260–262",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "each capture a true facet of the same form ‹original-needs-review›",
+  "issue": "The editorial tag ‹original-needs-review› is a pipeline instruction that should not appear in final published prose.",
+  "suggestion": "Remove the tag; revise the claim to its intended evidential grade or leave unmarked if consensus.",
+  "confidence": 1,
+  "chapter": "ruwe-ne-inferential",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "294–295",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "the cognized fact extracted from it ‹original-needs-review›",
+  "issue": "Same pipeline tag appearing in prose again.",
+  "suggestion": "Remove the tag; either replace with an appropriate epistemic grade or leave unmarked.",
+  "confidence": 1,
+  "chapter": "ruwe-ne-inferential",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "237–239",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "pananpe an penanpe an hine … There were Panampe and Penampe, and …",
+  "issue": "The Ainu form has 'pananpe' and 'penanpe' (with 'n' before 'anpe'), but the free translation writes 'Panampe' and 'Penampe' (with 'm'). This is likely a typo or unchecked transliteration.",
+  "suggestion": "Either change the Ainu to 'pamanpe' / 'pemanpe' or change the translation to 'Pananpe' / 'Penanpe' to match the segmented form.",
+  "confidence": 0.9,
+  "chapter": "ruwe-ne-inferential",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "445–446",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "no read source provides a constituency account",
+  "issue": "The phrase 'no read source' is pipeline wording ('read source' = source that was read in the course of research). In a final publication this should be phrased for the reader, e.g. 'no source consulted provides' or 'no known source provides'.",
+  "suggestion": "Change 'no read source' to 'no source consulted' or 'no available source'.",
+  "confidence": 0.7,
+  "chapter": "ruwe-ne-inferential",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "261",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "each capture a true facet",
+  "issue": "Subject–verb number mismatch: 'each' (singular) requires 'captures' rather than 'capture'.",
+  "suggestion": "Change 'each capture' to 'each captures'.",
+  "confidence": 0.8,
+  "chapter": "ruwe-ne-inferential",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

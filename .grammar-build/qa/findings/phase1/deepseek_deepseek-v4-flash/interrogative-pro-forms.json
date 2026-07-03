@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "75, 413",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "which: <i>inan</i>, <i>hinaan</i> vs Saru interrogative: <i>inan</i>",
+  "issue": "The Saru inventory table (line 75) lists hinaan as an interrogative form for 'which', but the indefinite pro-forms table (line 413) gives only inan as the Saru interrogative for 'whichever'. This is a direct contradiction.",
+  "suggestion": "Either remove hinaan from the inventory table or add it to the indefinite table's interrogative column.",
+  "confidence": 1,
+  "chapter": "interrogative-pro-forms",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "100-103, 109-117",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "hemanta and hunna take the existential question frame rather than a copular predicate: 'what is it?' is hemanta an? and 'who is it?' is hunna an? ... hunna ne ya (gloss: who COP FIN, note: 'hunna as a copular predicate')",
+  "issue": "The text states that hemanta and hunna require the existential frame, but the example shows hunna used with the copula ne, and the note explicitly describes it as a copular predicate. This is a direct contradiction.",
+  "suggestion": "Revise the text to acknowledge that these words can also appear in copular constructions, or adjust the example to match the existential frame.",
+  "confidence": 1,
+  "chapter": "interrogative-pro-forms",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "257-258, 208-209",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Shizunai and Tokachi use enon / onon vs table shows only 'enon' for both",
+  "issue": "The text mentions a variant 'onon' for 'where (to)' in Shizunai and Tokachi, but the dialect table lists only 'enon' for those dialects. The table is incomplete with respect to the text.",
+  "suggestion": "Add 'onon' as an alternative form in the table, or clarify in the text that the variant is not shown.",
+  "confidence": 0.8,
+  "chapter": "interrogative-pro-forms",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "439-446",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "nep ka a=kar ka etoranne / gloss: something FOC 4.A=do FOC be.troublesome / tr: Anything (I) do is a bother.",
+  "issue": "The gloss shows two FOC particles (ka) but the free translation does not reflect the second one. The second ka on the verb is untranslated, and the note only discusses the first ka.",
+  "suggestion": "Either adjust the translation to include 'even' or add a note explaining the second ka.",
+  "confidence": 0.5,
+  "chapter": "interrogative-pro-forms",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

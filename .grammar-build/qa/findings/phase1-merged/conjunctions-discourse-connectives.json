@@ -1,0 +1,1168 @@
+[
+ {
+  "id": "conjunctions-discourse-connectives~p1#041",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "224",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Reference to internal production tool 'factbase' leaks pipeline language; the published grammar should not mention internal section numbers from a factbase. Also the Japanese gloss in angle quotes is untranslated.",
+    "quote": "emphatic particle (係助詞 in the kakari-musubi framework, §2.2c of the factbase) with the sense 'こそ/まさに'",
+    "suggestion": "Replace '§2.2c of the factbase' with a cross-reference to the relevant chapter, e.g., 'see <Xr ch=\"cleft-nominalization-focus\" />'.",
+    "confidence": 0.95
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'the read sources' is pipeline jargon for 'the sources consulted during writing'; in published text it should be 'available sources' or 'the literature'.",
+    "quote": "The boundary between the clause-initial emphatic adverb and the emphatic particle is not settled in the read sources",
+    "suggestion": "Rephrase as '... is not settled in the available sources' or '... is not settled in the literature'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase '§2.2c of the factbase' refers to internal production materials ('factbase') not accessible to the reader and constitutes a pipeline register leak.",
+    "quote": "§2.2c of the factbase",
+    "suggestion": "Replace with a reference to a published section or remove the reference to 'factbase'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#009",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "106",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The free translation 'Now — after that — I set off' includes 'after that', which is not directly represented in the gloss 'now' for `tane` or in the morpheme-segmented form `tane k=arpa`.",
+    "quote": "tr=\"Now — after that — I set off.\"",
+    "suggestion": "Either adjust the gloss to reflect the 'after that' meaning in this context, or modify the translation to align more closely with the gloss.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation includes 'after that', which is not present in the morpheme or gloss lines (m=\"tane k=arpa\", g=\"now 1SG.S=go\"); this adds temporal succession not justified by the form.",
+    "quote": "tr=\"Now — after that — I set off.\"",
+    "suggestion": "Revise translation to \"Now — I set off.\" or justify 'after that' in the note.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#023",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "223",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "phonological form <A w=\"tap\" /> also functions as an emphatic particle",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese glosses 'こそ/まさに' are not translated into English, while other Japanese terms like '接続詞' and '副詞' are translated.",
+    "quote": "with the sense 'こそ/まさに', and corpus counts",
+    "suggestion": "Translate 'こそ/まさに' to English or provide an English equivalent.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Japanese term '係助詞' appears without translation or explanation, while the surrounding text otherwise translates Japanese terms.",
+    "quote": "係助詞",
+    "suggestion": "Either translate as '(emphatic particle)' or provide a gloss in parentheses.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#016",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "175",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ne + wa' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "decomposition <i lang=\"ain-Latn\">ne + wa</i> — with",
+    "suggestion": "Add the opening `<i>` tag before 'ne + wa'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented using `<A>` tags, but they are not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "<A w=\"ne\" gl=\"be (COP)\" /> and <A w=\"wa\" gl=\"CONJ (sequential clause-linker)\" />",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tags for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The decomposition is presented without consistent formatting; other similar forms are in italics, but 'ne + wa' is not.",
+    "quote": "ne + wa",
+    "suggestion": "Format as <i lang=\"ain-Latn\">ne + wa</i> for consistency with other Ainu forms.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#046",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "142",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'ANAPH' corresponds to <A w=\"newaanpe\" />, but the morpheme line does not include a separate morpheme for 'ANAPH'; the entire form is present as one unit.",
+    "quote": "g=\"become.pregnant NMLZ APPL-REFL-be.surprised ANAPH\"",
+    "suggestion": "Revise gloss to reflect that 'newaanpe' is a single form, e.g., 'ANAPH.DEM' or 'resumptive'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#049",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "306",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The corpus rank for <A w=\"usa\" /> is missing, though the prose does not mention frequency; for consistency with the table, a note on availability should be added.",
+    "quote": "<td>—</td>",
+    "suggestion": "Add '— (dialectally restricted)' or similar.",
+    "confidence": 0.65
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#048",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "271",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The corpus rank for <A w=\"rapokke\" /> is missing (marked as '—'), but the prose states it is lower than <A w=\"orano\" />; a placeholder or estimate should be provided for consistency.",
+    "quote": "<td>—</td>",
+    "suggestion": "Add estimated rank or note 'insufficient data'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#043",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "66",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'§ below' is imprecise and informal; it would be clearer to specify the section title or use an explicit cross-reference (e.g., 'see section on newaanpe below').",
+    "quote": "The combination of orano with the resumptive form newaanpe (§ below) recurs as a narrative construction",
+    "suggestion": "Replace '§ below' with 'see §newaanpe' or 'see the section on newaanpe below'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#040",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "336",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'bespoke corpus scripting' refers to internal technical processes and is not relevant to the reader.",
+    "quote": "Per-function and Hokkaido-only breakdowns require bespoke corpus\n\t\t\t\t\tscripting.",
+    "suggestion": "Rephrase to indicate that such detailed breakdowns are not available or would require specialized analysis.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#039",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "331",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'raw string-match totals' and the mention of 'disambiguate homonyms' suggest internal process details rather than reader-facing information.",
+    "quote": "Corpus counts are raw string-match totals from the aligned Hokkaido corpus (1,572,917 tokens;\n\t\t\t\t\t\t45,225 types), which includes Sakhalin data and does not disambiguate homonyms. The counts",
+    "suggestion": "Rephrase to focus on the implications of the counts for the reader, e.g., 'Corpus counts are based on string matching...'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'indicative upper bounds on each individual function' is technical and might be better phrased for a general reader.",
+    "quote": "are therefore indicative upper bounds on each individual\n\t\t\t\t\tfunction ‹speculative›.",
+    "suggestion": "Rephrase to something like 'suggest the maximum frequency for each function'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#038",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "321",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tap' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing. The Japanese term `係助詞` is not translated.",
+    "quote": "<i lang=\"ain-Latn\">tap</i> (係助詞) with the sense 'こそ/まさに'",
+    "suggestion": "Add the opening `<i>` tag before 'tap'. Translate `係助詞` to English or provide an English equivalent.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dash in the 'etymology' column for `tap / tapne` is not explained. It implies no etymology is provided, but it's unclear if this is intentional or a placeholder.",
+    "quote": "—",
+    "suggestion": "Clarify the meaning of the dash in this context, or provide an explanation if it's a standard convention.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#037",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "317",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tags are missing.",
+    "quote": "<i lang=\"ain-Latn\">tap</i> / <i lang=\"ain-Latn\">tapne</i>",
+    "suggestion": "Add the opening `<i>` tags before 'tap' and 'tapne'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'homophonous emphatic particle' is not italicized or marked with `lang=\"ain-Latn\"` as Ainu forms are.",
+    "quote": "temporal-emphatic adverb; distinct from the homophonous emphatic particle",
+    "suggestion": "Italicize 'homophonous emphatic particle' if it refers to an Ainu concept, or ensure consistent formatting.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#036",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "309",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'nea' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "<i lang=\"ain-Latn\">nea</i>",
+    "suggestion": "Add the opening `<i>` tag before 'nea'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'newaanpe' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "constituent of <i lang=\"ain-Latn\">newaanpe</i> and topic-resumption NPs",
+    "suggestion": "Add the opening `<i>` tag before 'newaanpe'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#035",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "301",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'usa' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "<i lang=\"ain-Latn\">usa</i>",
+    "suggestion": "Add the opening `<i>` tag before 'usa'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term `副助詞` is not translated, while other Japanese terms like `接続詞` and `副詞` are translated.",
+    "quote": "Tokachi/Kushiro as 副助詞; adverb elsewhere",
+    "suggestion": "Translate `副助詞` to English or provide an English equivalent.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#034",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "297",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'ne + wa' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "proposed <i lang=\"ain-Latn\">ne + wa</i> ‹contested›",
+    "suggestion": "Add the opening `<i>` tag before 'ne + wa'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#033",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "293",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'newa' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "<i lang=\"ain-Latn\">newa</i>",
+    "suggestion": "Add the opening `<i>` tag before 'newa'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#032",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "287",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'nea an pe' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "<i lang=\"ain-Latn\">nea an pe</i> 'that existing thing'; constituent analysis",
+    "suggestion": "Add the opening `<i>` tag before 'nea an pe'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#031",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "282",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'newaanpe' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "<i lang=\"ain-Latn\">newaanpe</i>",
+    "suggestion": "Add the opening `<i>` tag before 'newaanpe'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#030",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "278",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'same lexeme' is not italicized or marked with `lang=\"ain-Latn\"` as Ainu forms are.",
+    "quote": "temporal adverb 'now' (same lexeme; no separate grammaticalized form)",
+    "suggestion": "Italicize 'same lexeme' if it refers to an Ainu concept, or ensure consistent formatting.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#029",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "274",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tane' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "<i lang=\"ain-Latn\">tane</i>",
+    "suggestion": "Add the opening `<i>` tag before 'tane'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#028",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "268",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rapok' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "<i lang=\"ain-Latn\">rapok</i> (locative noun 'moment, juncture') + locative/temporal",
+    "suggestion": "Add the opening `<i>` tag before 'rapok'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#027",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "262",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tags are missing.",
+    "quote": "<i lang=\"ain-Latn\">rapokke</i> / <i lang=\"ain-Latn\">rapoketa</i>",
+    "suggestion": "Add the opening `<i>` tags before 'rapokke' and 'rapoketa'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#026",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "252",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term `接続助詞` is not translated, while other Japanese terms like `接続詞` and `副詞` are translated.",
+    "quote": "sequential; may stack after 接続助詞",
+    "suggestion": "Translate `接続助詞` to English or provide an English equivalent.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'oraun' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "pan-HA; <i lang=\"ain-Latn\">oraun</i> eastern",
+    "suggestion": "Add the opening `<i>` tag before 'oraun'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'or' and 'wano' are in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tags are missing.",
+    "quote": "<i lang=\"ain-Latn\">or</i> (locative noun) + <i lang=\"ain-Latn\">wano</i> (ablative",
+    "suggestion": "Add the opening `<i>` tags before 'or' and 'wano'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#025",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "234-328",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Within the table, Ainu forms are inconsistently presented. Some are in italics with `lang=\"ain-Latn\"`, while others are in `<i lang=\"ain-Latn\">` tags. Additionally, the Japanese term `係助詞` is not translated.",
+    "quote": "<table>\n\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>form</th>\n\t\t\t\t\t\t<th>gloss</th>\n\t\t\t\t\t\t<th>function</th>\n\t\t\t\t\t\t<th>dialect distribution</th>\n\t\t\t\t\t\t<th>etymology</th>\n\t\t\t\t\t\t<th>corpus rank (tokens)</th>\n\t\t\t\t\t</tr>\n\t\t\t\t</thead>\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<i lang=\"ain-Latn\">orano</i> / <i lang=\"ain-Latn\">orowano</i> /\n\t\t\t\t\t\t\t<i lang=\"ain-Latn\">ora</i> / <i lang=\"ain-Latn\">oraun</i>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>'and then, after that'</td>\n\t\t\t\t\t\t<td>sequential; may stack after 接続助詞</td>\n\t\t\t\t\t\t<td>pan-HA; <i lang=\"ain-Latn\">oraun</i> eastern</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<i lang=\"ain-Latn\">or</i> (locative noun) + <i lang=\"ain-Latn\">wano</i> (ablative\n\t\t\t\t\t\t\t'from')\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>114 (1,927)</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<i lang=\"ain-Latn\">rapokke</i> / <i lang=\"ain-Latn\">rapoketa</i>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>'meanwhile, at that time'</td>\n\t\t\t\t\t\t<td>simultaneous temporal</td>\n\t\t\t\t\t\t<td>pan-HA (narrative)</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<i lang=\"ain-Latn\">rapok</i> (locative noun 'moment, juncture') + locative/temporal\n\t\t\t\t\t\t\tsuffix\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>—</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td><i lang=\"ain-Latn\">tane</i></td>\n\t\t\t\t\t\t<td>'now'</td>\n\t\t\t\t\t\t<td>temporal scene-shift and episode reset</td>\n\t\t\t\t\t\t<td>pan-HA</td>\n\t\t\t\t\t\t<td>temporal adverb 'now' (same lexeme; no separate grammaticalized form)</td>\n\t\t\t\t\t\t<td>54 (4,272; conflated with adverb use)</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td><i lang=\"ain-Latn\">newaanpe</i></td>\n\t\t\t\t\t\t<td>'and as for that (fact)'</td>\n\t\t\t\t\t\t<td>resumptive anaphoric; cohesion via co-reference</td>\n\t\t\t\t\t\t<td>pan-HA</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<i lang=\"ain-Latn\">nea an pe</i> 'that existing thing'; constituent analysis\n\t\t\t\t\t\t\ttransparent\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>1,349 (84)</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td><i lang=\"ain-Latn\">newa</i></td>\n\t\t\t\t\t\t<td>'and'</td>\n\t\t\t\t\t\t<td>NP coordination; marks first member, not last</td>\n\t\t\t\t\t\t<td>non-Saru/Chitose; Saru/Chitose use bare juxtaposition</td>\n\t\t\t\t\t\t<td>proposed <i lang=\"ain-Latn\">ne + wa</i> ‹contested›</td>\n\t\t\t\t\t\t<td>— (low; dialectally restricted)</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td><i lang=\"ain-Latn\">usa</i></td>\n\t\t\t\t\t\t<td>'and, as well as'</td>\n\t\t\t\t\t\t<td>NP/VP listing; marks each member</td>\n\t\t\t\t\t\t<td>Tokachi/Kushiro as 副助詞; adverb elsewhere</td>\n\t\t\t\t\t\t<td>—</td>\n\t\t\t\t\t\t<td>—</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td><i lang=\"ain-Latn\">nea</i></td>\n\t\t\t\t\t\t<td>'that (anaphoric)'</td>\n\t\t\t\t\t\t<td>anaphoric determiner; constituent of <i lang=\"ain-Latn\">newaanpe</i> and topic-resumption NPs</td>\n\t\t\t\t\t\t<td>pan-HA</td>\n\t\t\t\t\t\t<td>demonstrative stem</td>\n\t\t\t\t\t\t<td>—</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td><i lang=\"ain-Latn\">tap</i> / <i lang=\"ain-Latn\">tapne</i></td>\n\t\t\t\t\t\t<td>'just now, thus'</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\ttemporal-emphatic adverb; distinct from the homophonous emphatic particle\n\t\t\t\t\t\t\t<i lang=\"ain-Latn\">tap</i> (係助詞)\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>pan-HA</td>\n\t\t\t\t\t\t<td>—</td>\n\t\t\t\t\t\t<td>143 (1,330; conflated across two functions)</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>",
+    "suggestion": "Standardize the presentation of Ainu forms to use `<i lang=\"ain-Latn\">` tags consistently. Translate `係助詞` to English.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#024",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "227",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference `<Xr ch=\"demonstratives-anaphora-definiteness\" />` is not consistently formatted with italics or `lang=\"ain-Latn\"` as Ainu forms are.",
+    "quote": "Cross-reference also <Xr ch=\"demonstratives-anaphora-definiteness\" /> for the demonstrative continuum",
+    "suggestion": "Ensure cross-references to Ainu forms or concepts are consistently formatted.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#022",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "219",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented using `<A>` tags, but they are not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "<A w=\"tap\" /> and <A w=\"tapne\" /> present a dual picture.",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tags for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#021",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "The anaphoric determiner <A w=\"nea\" /> 'that (aforementioned)' is not a connective",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "demonstrative stem that underlies both <A w=\"newaanpe\" /> (§ above) and topic-resumption",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "where an anaphoric NP headed by <A w=\"nea\" /> opens",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#020",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "205",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions `usa` not functioning as a coordination particle in western Hokkaido, which seems to contradict its function as a listing particle in Tokachi/Kushiro as described in the prose. This could be clearer.",
+    "quote": "note=\"Each listed verbal predicate receives usa; the construction is closed by the light verb ki 'do'. In western Hokkaido (including Saru/Chitose), usa does not function as a coordination particle.\"",
+    "suggestion": "Clarify the distinction between the adverbial and particle functions of `usa` across dialects.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#019",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "200",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme-segmented form `m` contains `usa`, but the gloss `g` has `and`. While `usa` is glossed as 'and' in the prose, the gloss `and` for `usa` in the example is very general and doesn't capture its function as marking each coordinated element.",
+    "quote": "m=\"iku usa ipe usa ki\"",
+    "suggestion": "Consider a more specific gloss for `usa` in this example, or ensure the general gloss is understood to encompass its specific role in NP/VP listing.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `and` for `usa` is very general. The free translation `tr` provides a more specific meaning 'Both drink and eat.'",
+    "quote": "g=\"drink and eat and do\"",
+    "suggestion": "Consider a more specific gloss for `usa` in this context, or ensure the general gloss is understood to encompass the listing function.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#018",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "192",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "<A w=\"usa\" /> 'and, as well as, both … and …' serves as the Tokachi/Kushiro counterpart",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented using `<A>` tags, but they are not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "Unlike <A w=\"newa\" />, which marks only the first member, <A w=\"usa\" /> can",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tags for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#017",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme-segmented form `m` contains `newa`, but the gloss `g` has `and`. While `newa` is glossed as 'and' in the prose, the gloss `and` for `newa` in the example is very general and doesn't capture its function as marking the first member of a coordination.",
+    "quote": "m=\"seta newa cikap ci=e\"",
+    "suggestion": "Consider a more specific gloss for `newa` in this example, or ensure the general gloss is understood to encompass its specific role in NP coordination.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `and` for `newa` is very general. The free translation `tr` provides a more specific meaning 'dog and bird'.",
+    "quote": "g=\"dog and bird 1PL.EXCL.A=eat\"",
+    "suggestion": "Consider a more specific gloss for `newa` in this context, or ensure the general gloss is understood to encompass the NP coordination function.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#015",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "corroborates the restriction independently — <A w=\"newa\" /> as an explicit 'and'-coordinator",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#014",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "163",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms `<A w=\"newa\" />` and `<A w=\"usa\" />` are mentioned, but they are not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "Two additional forms operate at the level of nominal coordination rather than at the",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tags for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "<A w=\"newa\" /> 'and' joins two NPs",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "lack <A w=\"newa\" /> in this function",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#013",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "152",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference `<Xr ch=\"demonstratives-anaphora-definiteness\" />` is not consistently formatted with italics or `lang=\"ain-Latn\"` as Ainu forms are.",
+    "quote": "the form participates in both the demonstrative system (<Xr ch=\"demonstratives-anaphora-definiteness\" />) and in discourse-structural",
+    "suggestion": "Ensure cross-references to Ainu forms or concepts are consistently formatted.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#012",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "141",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme-segmented form `m` contains `newaanpe`, but the gloss `g` has `ANAPH` which is a very general gloss. The free translation `tr` provides a more specific meaning 'and as for that'.",
+    "quote": "m=\"honkor hi e-yay-oyamokte newaanpe\"",
+    "suggestion": "Consider a more specific gloss for `newaanpe` in this context, or ensure the general gloss is understood to encompass the resumptive-cohesive function.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `ANAPH` for `newaanpe` is very general. The free translation `tr` provides a more specific meaning 'and as for that'.",
+    "quote": "g=\"become.pregnant NMLZ APPL-REFL-be.surprised ANAPH\"",
+    "suggestion": "Consider a more specific gloss for `newaanpe` in this example, or ensure the general gloss is understood to encompass the resumptive-cohesive function.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#011",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "121",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "<A w=\"newaanpe\" /> is the form most distinctively positioned",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented using `<A>` tags, but they are not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "<A w=\"nea\" gl=\"that (anaphoric demonstrative)\" /> + <A w=\"an\" gl=\"exist, be present\" /> + <A w=\"pe\" gl=\"thing, fact\" />",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tags for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#010",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "112",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "The interaction of <A w=\"tane\" /> with the aspectual",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#008",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "104",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme-segmented form `m` contains `tane`, but the gloss `g` has `now`. While `tane` is glossed as 'now' in the prose, the gloss `now` for `tane` in the example is very general and doesn't capture the discourse-connective use described.",
+    "quote": "m=\"tane k=arpa\"",
+    "suggestion": "Consider a more specific gloss for `tane` in this example, or ensure the general gloss is understood to encompass the discourse-connective function.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#007",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "90",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "<A w=\"tane\" /> is the general temporal adverb 'now'",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#006",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "77",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented using `<A>` tags, but they are not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "<A w=\"rapokke\" /> and <A w=\"rapoketa\" /> mark temporal overlap",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tags for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form is presented using `<A>` tag, but it is not consistently italicized or marked with `lang=\"ain-Latn\"` as other Ainu forms are.",
+    "quote": "from the locative noun <A w=\"rapok\" gl=\"that moment, that juncture\" /> extended",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tag for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#005",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "66, 67",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text refers to `<A w=\"newaanpe\" /> (§ below)`, but the section ID for `newaanpe` is `#newaanpe`, not a section number. This could be confusing.",
+    "quote": "The combination of <A w=\"orano\" /> with the resumptive form <A w=\"newaanpe\" /> (§ below) recurs as a narrative construction",
+    "suggestion": "Change '§ below' to '#newaanpe' or similar reference to the section ID.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#004",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "56-58",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme-segmented form `m` contains `orano`, but the gloss `g` has `then` which is a very general gloss. The free translation `tr` provides a more specific meaning 'and then'.",
+    "quote": "<Ex m=\"sekor ku=hawean akusu orano\"\n\t\t\tg=\"QUOT 1SG.S=say COND then\"\n\t\t\ttr=\"…after I said that, and then, …\"",
+    "suggestion": "Consider a more specific gloss for `orano` in this context, or ensure the general gloss is understood to encompass the sequential meaning.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#003",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "41",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'orowano' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "yields <i lang=\"ain-Latn\">orowano</i> 'from that",
+    "suggestion": "Add the opening `<i>` tag before `orowano`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'orano' is in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tag is missing.",
+    "quote": "The syncopated form <i lang=\"ain-Latn\">orano</i> is the most frequent",
+    "suggestion": "Add the opening `<i>` tag before `orano`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'ora' and 'oraun' are in italics with `lang=\"ain-Latn\"`, but the preceding `<i lang=\"ain-Latn\">` tags are missing.",
+    "quote": "further reductions to <i lang=\"ain-Latn\">ora</i> and <i lang=\"ain-Latn\">oraun</i>",
+    "suggestion": "Add the opening `<i>` tags before 'ora' and 'oraun'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#002",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "37",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms are presented in italics with the `lang=\"ain-Latn\"` attribute, but the `<A>` tags do not have this attribute. This leads to inconsistent rendering.",
+    "quote": "<A w=\"orano\" /> (variant forms <A w=\"orowano\" />, <A w=\"ora\" />, <A w=\"oraun\" />)",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<A>` tags for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#047",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "203",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation format uses a colon instead of the standard 'p.' or 'pp.' used elsewhere (e.g., 'nakagawa2024' p=\"322\").",
+    "quote": "cite=\"nakagawa2024:324\"",
+    "suggestion": "Change to consistent format: cite=\"nakagawa2024\" p=\"324\".",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#045",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "78",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes three synonymous expressions, but the etymology section only supports 'at that juncture'; 'meanwhile' and 'at that time' may not be fully equivalent in nuance.",
+    "quote": "'meanwhile, at that time, at that juncture'",
+    "suggestion": "Revise to 'at that juncture, meanwhile' or clarify the semantic range.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#044",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "25",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation hygiene is inconsistent: the claim about <A w=\"wa\" /> lacks a supporting citation, while similar claims elsewhere are cited to Nakagawa (2024).",
+    "quote": "The sequential particle <A w=\"wa\" /> as a clause-chaining device in its own right is in <Xr ch=\"sequential-wa-and-clause-chaining\" />.",
+    "suggestion": "Add <Ref k=\"nakagawa2024\" p=\"...\" /> to support the claim.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#042",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "171",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag 'corpus-suggested' is applied to a claim supported only by a Discord discussion, not by corpus data. This inflates the evidence level.",
+    "quote": "Community discussion corroborates the restriction independently — newa as an explicit 'and'-coordinator is little used in modern Ainu and its distribution is dialectally conditioned (nukopoli, 2023-12-12) ‹corpus-suggested›.",
+    "suggestion": "Either change the tag to 'speculative' or remove the tag and let the Discord citation stand as anecdotal evidence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "conjunctions-discourse-connectives~p1#001",
+  "chapter": "conjunctions-discourse-connectives",
+  "lines": "17, 18",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example sequence 'hine, orano' is presented as an attested sequence of a bound clause-linker followed by a free connective. However, the gloss for 'orano' is 'and then, after that', which is a sequential meaning. The example itself is later used to illustrate stacking after a 接続助詞 (lines 51-52), but the specific sequence 'hine, orano' is not explicitly shown or glossed in a way that clarifies its function beyond 'and then, after that'. The note on line 62 for a similar example states 'orano follows the conditional–temporal particle akusu directly', which is consistent with the claim, but the initial mention of 'hine, orano' feels slightly out of place without further immediate clarification.",
+    "quote": "… yielding attested sequences such as … hine, orano … 'and then, after that …'",
+    "suggestion": "Clarify the role of 'hine' in the sequence 'hine, orano' or provide a more direct example of stacking if 'hine' is not a typical 接続助詞 in this context.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

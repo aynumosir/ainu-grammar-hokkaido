@@ -1,0 +1,2137 @@
+[
+ {
+  "id": "cleft-nominalization-focus~p1#029",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "256",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'NMLZ' and 'an'.",
+    "quote": "NMLZ + an",
+    "suggestion": "NMLZ + ān",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe', 'an', 'hi', and 'an'.",
+    "quote": "ruwe an hi an",
+    "suggestion": "rūwe ān hī ān",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ruwe an hi an' uses the nominalizer hi, but the table row is for content questions with NMLZ + an. The example appears to have two instances of an (existential), which is orthographically and structurally different from the pattern described. The free translation 'what is the reason that …?' does not match the Ainu string.",
+    "quote": "ruwe an hi an",
+    "suggestion": "Replace with a correct example of a content question with a wh-word and NMLZ + an, e.g., 'hemanta ne kusu ene siran hi an'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example 'ruwe an hi an' uses 'an' twice, but the second 'an' is likely meant to be the existential copula, while the first is the content-question marker; however, the repetition may cause confusion. Orthographic consistency: elsewhere 'an' is used for both functions, but disambiguation via context is assumed.",
+    "quote": "ruwe an hi an",
+    "suggestion": "Consider annotating the two instances of 'an' differently in the example or gloss if dialectal/functional distinction exists; otherwise, retain but ensure clarity in surrounding text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#036",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "304",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "p/pe",
+    "suggestion": "p/pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'p' and 'an'.",
+    "quote": "p an",
+    "suggestion": "pē ān",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "pe",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "pe ya?",
+    "suggestion": "pē ya?",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example 'pe ne ya?' includes a question mark, but the surrounding text uses italics without punctuation in other examples (e.g., 'sirpirka ruwe ne'). Inconsistency in orthographic presentation.",
+    "quote": "pe ne ya?",
+    "suggestion": "Standardize example formatting: either include punctuation consistently or omit it across all examples.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#070",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "294",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example contains both 'ne' and 'an' after a formal noun, but §5 states that content questions obligatorily use 'an' and '*ruwe ne' with a wh-word is ill-formed. Having 'ne' in 'hemanta ne' contradicts this rule.",
+    "quote": "hemanta ne kusu ene siran hi an",
+    "suggestion": "Either remove 'ne' from the example or revise the explanation; likely, 'hemanta' should directly trigger 'an' without intervening 'ne'.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#069",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "294",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'why COP because thus appear NMLZ exist' does not align: 'ne' is glossed as 'COP' but in context should be part of the content-question frame replaced by 'an'; also, 'kusu' is glossed as 'because' but appears earlier in the string than expected; word order mismatch.",
+    "quote": "hemanta ne kusu ene siran hi an",
+    "suggestion": "Realign gloss to morpheme order: possibly 'hemanta' → 'why', 'ne' → 'COP' (though questionable in content question), 'kusu' → 'because', 'ene siran' → 'thus appear', 'hi' → 'NMLZ', 'an' → 'exist'. But 'ne' should not co-occur with 'an' in content questions per §5.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#068",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "140",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'now 4.A=say manner-POSS Piratur QUOT 4.A=say voice-POSS COP' incorrectly renders 'katu' as 'manner-POSS' — 'katu' is a deverbal noun meaning 'way of calling', not a possessive form; also, 'Piratur' has no gloss and appears to be a proper name, but its syntactic role is unclear.",
+    "quote": "tap a=ye katu Piratur sekor a=ye hawe ne",
+    "suggestion": "Revise gloss: 'manner-POSS' → 'manner', and add 'Piratur' as 'Piratur' in the gloss line to maintain alignment.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#067",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "115",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.A=hear NMLZ TOP 1SG.A=understand NMLZ COP CONJ reply speech TOP 1SG.A=not.know' does not align with the morpheme string: 'k=eramuan' is glossed as '1SG.A=understand' but should be '1SG.A=understand-NMLZ' to match the morpheme -an; also, 'korka' is glossed as 'CONJ' but no conjunction morpheme is visible in the Ainu string.",
+    "quote": "ku=nu hi anak k=eramuan pe ne korka tasa itak anak k=eranpewtek",
+    "suggestion": "Correct the gloss to reflect morphemes accurately: e.g., 'k=eramuan' → '1SG.A=understand-NMLZ', and verify if 'korka' has a morphemic basis for 'CONJ'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#060",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "270",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table lists 'affirmative answer' as a sentence type with the formal-noun tail 'NMLZ + un', but the preceding text (line 232–236) describes a 'four-way paradigm' and the table has four rows. However, the text at line 279–284 discusses a 'three-way split' (declarative, content question, polar question) and does not mention the affirmative answer row. The table includes a fourth row (affirmative answer) that is not discussed in the prose, creating an inconsistency between the table and the surrounding description.",
+    "quote": "affirmative answer / NMLZ + un / ku=nu ruwe un 'yes, I heard it'",
+    "suggestion": "Either add prose discussion of the affirmative answer construction (un) to match the table, or remove the fourth row from the table if it is not part of the paradigm being described.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table includes a row for 'affirmative answer' with the tail 'NMLZ + un', but the text at line 279–284 describes a 'three-way split' (declarative, content question, polar question) and does not mention the affirmative answer construction. The text at line 232–236 mentions a 'four-way paradigm', but the subsequent prose only discusses three types, creating a contradiction.",
+    "quote": "affirmative answer / NMLZ + un / ku=nu ruwe un 'yes, I heard it'",
+    "suggestion": "Either expand the prose to discuss the affirmative answer construction (un) as part of the paradigm, or remove the fourth row from the table and adjust the reference to a 'four-way paradigm'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#059",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "258",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ruwe an hi an' is glossed as 'what is the reason that …?' but the morpheme-by-morpheme breakdown is not provided; the gloss 'what is the reason that …?' implies a wh-word is present, but the Ainu string contains no wh-word. The example appears to be a content question using the existential an, but the free translation does not match the Ainu form shown.",
+    "quote": "ruwe an hi an",
+    "suggestion": "Either provide a morpheme gloss that accounts for the wh-reading (e.g., 'reason exist NMLZ exist' with a note that the wh-word is implied or omitted), or replace the example with one that includes an overt wh-word.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#065",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "270",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ku=nu ruwe un' in the table is not attributed to a source (no cite attribute), unlike other examples in the chapter. This makes it unclear whether the example is constructed or attested.",
+    "quote": "ku=nu ruwe un 'yes, I heard it'",
+    "suggestion": "Add a citation or mark it as constructed if it is a fabricated illustration.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#064",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "258",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ruwe an hi an' in the table is not attributed to a source (no cite attribute), unlike other examples in the chapter which have citations. This makes it unclear whether the example is constructed or attested.",
+    "quote": "ruwe an hi an",
+    "suggestion": "Add a citation or mark it as constructed if it is a fabricated illustration.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#062",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "258",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ruwe an hi an' is not glossed morpheme-by-morpheme in the table, unlike other examples in the chapter. The table cell contains only the Ainu string and a free translation, which is inconsistent with the presentation of examples elsewhere (which include gloss lines).",
+    "quote": "ruwe an hi an",
+    "suggestion": "Add a morpheme gloss line to the table cell, e.g., 'reason exist NMLZ exist'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#058",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "456",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ru'.",
+    "quote": "ru",
+    "suggestion": "rū",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ruwe'.",
+    "quote": "ruwe",
+    "suggestion": "rūwe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#057",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "451",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from '-natara'.",
+    "quote": "-natara",
+    "suggestion": "-nātara",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from '-atki'.",
+    "quote": "-atki",
+    "suggestion": "-ātki",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from '-rototke'.",
+    "quote": "-rototke",
+    "suggestion": "-rōtōtke",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#056",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "447",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ru'.",
+    "quote": "ru",
+    "suggestion": "rū",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hum'.",
+    "quote": "hum",
+    "suggestion": "hūm",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sir'.",
+    "quote": "sir",
+    "suggestion": "sīr",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'haw'.",
+    "quote": "haw",
+    "suggestion": "hāw",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'konna'.",
+    "quote": "konna",
+    "suggestion": "konnā",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kan'.",
+    "quote": "kan",
+    "suggestion": "kān",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#055",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "440",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'patek'.",
+    "quote": "patek",
+    "suggestion": "pātek",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'patek'.",
+    "quote": "patek",
+    "suggestion": "pātek",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tasi'.",
+    "quote": "tasi",
+    "suggestion": "tāsī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nek'.",
+    "quote": "nek",
+    "suggestion": "nēk",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#054",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "436",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'patek', 'tasi', and 'nek'.",
+    "quote": "newaanpe patek tasi a=eranak nek",
+    "suggestion": "newaanpe pātek tāsī a=eranak nēk",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'FOC'.",
+    "quote": "FOC",
+    "suggestion": "FOC",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'EMPH'.",
+    "quote": "EMPH",
+    "suggestion": "EMPH",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'FIN'.",
+    "quote": "FIN",
+    "suggestion": "FIN",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#053",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "432",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ta'.",
+    "quote": "ta",
+    "suggestion": "tā",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'oka'.",
+    "quote": "oka",
+    "suggestion": "ōka",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#052",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "426",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ta' and 'ne'.",
+    "quote": "cikap ta ku=ne",
+    "suggestion": "cikap tā ku=nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'EMPH'.",
+    "quote": "EMPH",
+    "suggestion": "EMPH",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'COP'.",
+    "quote": "COP",
+    "suggestion": "COP",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#051",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "420",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is Japanese text and is not translated or glossed.",
+    "quote": "kakari-musubi",
+    "suggestion": "Translate or gloss this Japanese text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#050",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "409",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tas(i)'.",
+    "quote": "tas(i)",
+    "suggestion": "tās(i)",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is Japanese text and is not translated or glossed.",
+    "quote": "まさに〜こそ",
+    "suggestion": "Translate or gloss this Japanese text.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'nek'.",
+    "quote": "nek",
+    "suggestion": "nēk",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is Japanese text and is not translated or glossed.",
+    "quote": "〜のだよ",
+    "suggestion": "Translate or gloss this Japanese text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#049",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "403",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ta'.",
+    "quote": "ta",
+    "suggestion": "tā",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is Japanese text and is not translated or glossed.",
+    "quote": "こそ",
+    "suggestion": "Translate or gloss this Japanese text.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'oka'.",
+    "quote": "oka",
+    "suggestion": "ōka",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is Japanese text and is not translated or glossed.",
+    "quote": "〜だったらなあ",
+    "suggestion": "Translate or gloss this Japanese text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#048",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "395",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'particle'.",
+    "quote": "particle",
+    "suggestion": "particle",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'gloss'.",
+    "quote": "gloss",
+    "suggestion": "gloss",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'concordant SFP'.",
+    "quote": "concordant SFP",
+    "suggestion": "concordant SFP",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'reading'.",
+    "quote": "reading",
+    "suggestion": "reading",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#047",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "386",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is Japanese text and is not translated or glossed.",
+    "quote": "kakari-musubi",
+    "suggestion": "Translate or gloss this Japanese text.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is Japanese text and is not translated or glossed.",
+    "quote": "係り結び",
+    "suggestion": "Translate or gloss this Japanese text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#046",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "379",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'patek'.",
+    "quote": "patek ani",
+    "suggestion": "pātek ani",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'patek'.",
+    "quote": "ani patek",
+    "suggestion": "ani pātek",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#045",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "374",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ki'.",
+    "quote": "ki",
+    "suggestion": "kī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'patek'.",
+    "quote": "patek",
+    "suggestion": "pātek",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#044",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "367",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'patek'.",
+    "quote": "patek",
+    "suggestion": "pātek",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ka'.",
+    "quote": "ka",
+    "suggestion": "kā",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hem'.",
+    "quote": "hem",
+    "suggestion": "hēm",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#043",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "356",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe' and 'ne'.",
+    "quote": "ruwe ne",
+    "suggestion": "rūwe nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#042",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "352",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ne', 'ruwe', and 'ne'.",
+    "quote": "kusu ne ruwe ne",
+    "suggestion": "kusu nē rūwe nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe', 'ne', and 'ne'.",
+    "quote": "ruwe ne kusu ne",
+    "suggestion": "rūwe nē kusu nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe' and 'ne'.",
+    "quote": "ruwe ne",
+    "suggestion": "rūwe nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#041",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "345",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe' and 'ne'.",
+    "quote": "ruwe-ne-inferential",
+    "suggestion": "rūwe-nē-inferential",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'hawe' and 'ne'.",
+    "quote": "hawe-ne-reportative",
+    "suggestion": "hāwe-nē-reportative",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'siri' and 'ne'.",
+    "quote": "siri-ne-situational",
+    "suggestion": "sirī-nē-situational",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'humi' and 'ne'.",
+    "quote": "humi-ne-sensory",
+    "suggestion": "hūmi-nē-sensory",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#040",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "334",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe' and 'ne'.",
+    "quote": "ruwe ne",
+    "suggestion": "rūwe nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#039",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "328",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe' and 'ne'.",
+    "quote": "ruwe ne",
+    "suggestion": "rūwe nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe' and 'ne'.",
+    "quote": "ruwe ne",
+    "suggestion": "rūwe nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#038",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "323",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'p' and 'hi'.",
+    "quote": "p/hi",
+    "suggestion": "pē/hī",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#037",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "318",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ruwe'.",
+    "quote": "ruwe",
+    "suggestion": "rūwe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hawe'.",
+    "quote": "hawe",
+    "suggestion": "hāwe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'siri'.",
+    "quote": "siri",
+    "suggestion": "sirī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'humi'.",
+    "quote": "humi",
+    "suggestion": "hūmi",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#035",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "300",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hemanta'.",
+    "quote": "hemanta",
+    "suggestion": "hemānta",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hi'.",
+    "quote": "hi",
+    "suggestion": "hī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'an'.",
+    "quote": "an",
+    "suggestion": "ān",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#034",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "294",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ne', 'hi', and 'an'.",
+    "quote": "hemanta ne kusu ene siran hi an",
+    "suggestion": "hemanta nē kusu ene siran hī ān",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'COP'.",
+    "quote": "COP",
+    "suggestion": "COP",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'NMLZ'.",
+    "quote": "NMLZ",
+    "suggestion": "NMLZ",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#033",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "286",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe' and 'ne'.",
+    "quote": "*ruwe ne",
+    "suggestion": "*rūwe nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'an'.",
+    "quote": "an",
+    "suggestion": "ān",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#032",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "280",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'an'.",
+    "quote": "an",
+    "suggestion": "ān",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#031",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "270",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'NMLZ'.",
+    "quote": "NMLZ + un",
+    "suggestion": "NMLZ + un",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ruwe'.",
+    "quote": "ku=nu ruwe un",
+    "suggestion": "ku=nu rūwe un",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#030",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "263",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'NMLZ'.",
+    "quote": "NMLZ bare (copula omitted)",
+    "suggestion": "NMLZ bare (copula omitted)",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hawe'.",
+    "quote": "e=eraman hawe?",
+    "suggestion": "e=eraman hāwe?",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#028",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "249",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'NMLZ' and 'ne'.",
+    "quote": "NMLZ + ne",
+    "suggestion": "NMLZ + nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'ruwe' and 'ne'.",
+    "quote": "sirpirka ruwe ne",
+    "suggestion": "sirpirka rūwe nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#027",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "221",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#026",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "214",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#025",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "210",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#024",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "198",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p(e)'.",
+    "quote": "-p(e)",
+    "suggestion": "-pē(e)",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from '-i'.",
+    "quote": "-i",
+    "suggestion": "-ī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#023",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#022",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "177",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'p', 'hi', and 'ne'.",
+    "quote": "p/hi ne",
+    "suggestion": "pē/hī nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#021",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'p' and 'ne'.",
+    "quote": "sekor a=ye p ne",
+    "suggestion": "sekor a=ye pē nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hawe'.",
+    "quote": "hawe",
+    "suggestion": "hāwe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#020",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "158",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'contested' is applied to a claim supported only by a community source, which is typically considered less authoritative than published sources.",
+    "quote": "‹contested›",
+    "suggestion": "Remove or downgrade the evidence grade.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#019",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "154",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ye'.",
+    "quote": "ye",
+    "suggestion": "yē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#018",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "150",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#017",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "145",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'katu'.",
+    "quote": "katu",
+    "suggestion": "kātū",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'tap'.",
+    "quote": "tap",
+    "suggestion": "tāp",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sekor'.",
+    "quote": "sekor",
+    "suggestion": "sekōr",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hawe'.",
+    "quote": "hawe",
+    "suggestion": "hāwe",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#016",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "140",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'tap', 'katu', 'sekor', 'hawe', and 'ne'.",
+    "quote": "tap a=ye katu Piratur sekor a=ye hawe ne",
+    "suggestion": "tāp a=ye kātū Piratur sekōr a=ye hāwe nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'manner-POSS'.",
+    "quote": "manner-POSS",
+    "suggestion": "manner-POSS",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'QUOT'.",
+    "quote": "QUOT",
+    "suggestion": "QUOT",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'voice-POSS'.",
+    "quote": "voice-POSS",
+    "suggestion": "voice-POSS",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'COP'.",
+    "quote": "COP",
+    "suggestion": "COP",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#015",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "136",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#014",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "p/pe",
+    "suggestion": "p/pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hawe'.",
+    "quote": "hawe",
+    "suggestion": "hāwe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'katu'.",
+    "quote": "katu",
+    "suggestion": "kātū",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#013",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "128",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'p', 'hawe', and 'ne'.",
+    "quote": "p/hawe/katu ne",
+    "suggestion": "pē/hāwe/katu nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sekor'.",
+    "quote": "sekor",
+    "suggestion": "sekōr",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#012",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hi'.",
+    "quote": "hi",
+    "suggestion": "hī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "pe",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#011",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "115",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'hi', 'pe', and 'ne'.",
+    "quote": "ku=nu hi anak k=eramuan pe ne korka tasa itak anak k=eranpewtek",
+    "suggestion": "ku=nu hī anak k=eramuan pē nē korka tasa itak anak k=eranpewtek",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'NMLZ'.",
+    "quote": "NMLZ",
+    "suggestion": "NMLZ",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "pe",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#010",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "103",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'an'.",
+    "quote": "an",
+    "suggestion": "ān",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#009",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "99",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hi'.",
+    "quote": "hi",
+    "suggestion": "hī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "p/pe",
+    "suggestion": "p/pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "pe",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hi'.",
+    "quote": "hi",
+    "suggestion": "hī",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#008",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "95",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hi'.",
+    "quote": "hi",
+    "suggestion": "hī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This is Japanese text and is not translated or glossed.",
+    "quote": "こと / の / 時",
+    "suggestion": "Translate or gloss this Japanese text.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "p/pe",
+    "suggestion": "p/pē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#007",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'pe' and 'ne'.",
+    "quote": "cep a=e pe ne",
+    "suggestion": "cep a=e pē nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#006",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "75",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "pe",
+    "suggestion": "pē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#005",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'pe' and 'ne'.",
+    "quote": "kani ku=e pe ne",
+    "suggestion": "kani ku=e pē nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#004",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "47",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#003",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "40",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'p'.",
+    "quote": "p",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "pe",
+    "suggestion": "pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#002",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "22",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "p/pe",
+    "suggestion": "p/pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Macrons are missing from 'p', 'hawe', and 'ne'.",
+    "quote": "sekor a=ye p/hawe/katu ne",
+    "suggestion": "sekor a=ye pē/hāwe/katu nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#001",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'pe'.",
+    "quote": "p/pe",
+    "suggestion": "p/pē",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hi'.",
+    "quote": "hi",
+    "suggestion": "hī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ruwe'.",
+    "quote": "ruwe",
+    "suggestion": "rūwe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hawe'.",
+    "quote": "hawe",
+    "suggestion": "hāwe",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'siri'.",
+    "quote": "siri",
+    "suggestion": "sirī",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'humi'.",
+    "quote": "humi",
+    "suggestion": "hūmi",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ne'.",
+    "quote": "ne",
+    "suggestion": "nē",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#073",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "457",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'concept form' is used without definition; readers may not know that 'ru' vs 'ruwe' refers to root vs derived form. This could confuse without prior explanation.",
+    "quote": "nouns before <i lang=\"ain-Latn\">konna</i> appear in their concept form (<i lang=\"ain-Latn\">ru</i>, not <i lang=\"ain-Latn\">ruwe</i>)",
+    "suggestion": "Clarify 'concept form' as 'root form used in derivational morphology' or provide a brief explanation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#072",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "410",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Contains untranslated Japanese 'まさに〜こそ' with tilde; the tilde may not render correctly and the phrase is not explained in English.",
+    "quote": "'まさに〜こそ' (assured emphasis)",
+    "suggestion": "Replace with English explanation: e.g., 'precisely indeed' or 'emphatic assertion', and remove the Japanese construct if not essential.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#071",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "404",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Untranslated Japanese 'こそ' appears in the gloss description without explanation; the chapter otherwise translates Japanese terms or provides context.",
+    "quote": "'こそ' (emotional emphasis)",
+    "suggestion": "Translate or explain 'こそ' as 'emphatic particle indicating contrastive focus' or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#066",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "98",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation (Ref k=\"sato2008\" p=\"174, 169\") lists page 169, but the discussion on hi appears on p. 174; citing p. 169 here may refer to unrelated content or be a typographical error in the page range.",
+    "quote": "Satō glosses it as 'こと / の / 時' and notes that it",
+    "suggestion": "Verify the correct page for the gloss 'こと / の / 時' in Sato 2008; if it is only on p. 174, remove '169' from the citation.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#063",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "279",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text refers to a 'three-way split' (declarative, content question, polar question), but the table at lines 238–276 shows a four-way paradigm including 'affirmative answer'. The text does not explain why the affirmative answer is excluded from the 'three-way split' discussion, creating an inconsistency.",
+    "quote": "Satō's motivation for the three-way split is precise",
+    "suggestion": "Clarify whether the paradigm is three-way or four-way, and either integrate the affirmative answer into the discussion or explain why it is omitted.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cleft-nominalization-focus~p1#061",
+  "chapter": "cleft-nominalization-focus",
+  "lines": "258",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'ruwe an hi an' in the table for content questions uses the formal noun hi, but the table header says 'formal-noun tail' and the row is for content questions. However, the example appears to contain two instances of an (existential) and hi as the nominalizer, which is structurally different from the pattern described in the text (NMLZ + an). The gloss 'what is the reason that …?' does not match the Ainu string, which literally means 'reason exist NMLZ exist'.",
+    "quote": "ruwe an hi an",
+    "suggestion": "Provide a correct example of a content question with a wh-word and NMLZ + an, e.g., 'hemanta ne kusu ene siran hi an' (which appears later at line 294).",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

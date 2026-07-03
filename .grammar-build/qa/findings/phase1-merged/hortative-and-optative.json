@@ -1,0 +1,735 @@
+[
+ {
+  "id": "hortative-and-optative~p1#018",
+  "chapter": "hortative-and-optative",
+  "lines": "165",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.S=go DEL' indicates a first-person singular subject and a deliberative particle. The translation '(Hmm,) shall I go?' aligns with this. The note contrasts this with the cohortative 'paye=an ro', where the invitation is addressed to the interlocutor. The gloss 'DEL' for 'so' is appropriate, but it might be useful to explicitly state in the note that 'DEL' here signifies self-directed deliberation, contrasting with the 'HORT' which implies interaction.",
+    "quote": "g=\"1SG.S=go DEL\"",
+    "suggestion": "Ensure the gloss 'DEL' is consistently used for this deliberative function and consider adding a brief clarification in the note about the nature of 'DEL' in this context.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'DEL' for so is defined as 'deliberative', but the free translation includes '(Hmm,)' which is not in the gloss. The gloss is fine, but the translation adds a pragmatic element not reflected in the gloss. Minor.",
+    "quote": "m=\"k=arpa so\" g=\"1SG.S=go DEL\" tr=\"(Hmm,) shall I go?\"",
+    "suggestion": "Consider adding a note that '(Hmm,)' is a pragmatic addition, or remove it from the translation for consistency.",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses 'DEL' for <i lang=\"ain-Latn\">so</i>, but the particle is described as deliberative, not a standard category. The tag should be standardized or explained. Also, inconsistency with 'HORT' in previous example despite different functions.",
+    "quote": "g=\"1SG.S=go DEL\"",
+    "suggestion": "Use a consistent and standard gloss tag such as 'DELIB' or 'OPT' and ensure alignment across particles.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#016",
+  "chapter": "hortative-and-optative",
+  "lines": "147",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '2SG.O=carry HORT' indicates a second-person object and a hortative particle. The translation 'Let me carry you!' implies a first-person agent (speaker) acting on behalf of or for the benefit of the second-person addressee. The gloss should ideally reflect the agent, e.g., '1SG.A-2SG.O=carry HORT' or similar, to fully capture the meaning described in the note.",
+    "quote": "g=\"2SG.O=carry HORT\"",
+    "suggestion": "Adjust the gloss to include the first-person agent, e.g., '1SG.A-2SG.O=carry HORT'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '2SG.O' indicates second-person singular object, but the free translation 'Let me carry you' implies a first-person singular subject (agent) and second-person object. The gloss does not show the agent, which is contextually implied. This is a known issue in Ainu where the agent is not overtly marked; however, the gloss should ideally indicate the implied agent, e.g., '1SG.A>2SG.O=carry' or a note. The current gloss is incomplete.",
+    "quote": "m=\"eci=kay ro\" g=\"2SG.O=carry HORT\" tr=\"Let me carry you!\"",
+    "suggestion": "Change gloss to '1SG.A>2SG.O=carry HORT' or add a note in the gloss line: '1SG.A>2SG.O=carry HORT'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '2SG.O=carry HORT' does not reflect the first-person agent, which is contextually implied but not marked morphologically. The gloss should indicate the implied agent or use a different structure.",
+    "quote": "g=\"2SG.O=carry HORT\"",
+    "suggestion": "Revise gloss to something like \"2SG.O=carry HORT\" with a note on implied 1SG agent, or use a syntactic placeholder like PRO.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#015",
+  "chapter": "hortative-and-optative",
+  "lines": "133",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.S=go HORT' correctly indicates a first-person singular subject. However, the translation 'Shall I go? / I'll go then.' implies a volitional or deliberative sense, which the note (lines 137) also explains. The gloss 'HORT' might be too general and could be more specific to 'VOL' or 'DELIB' if such glosses are used elsewhere for these senses, to better distinguish it from the cohortative 'HORT'.",
+    "quote": "tr=\"Shall I go? / I'll go then.\"",
+    "suggestion": "Consider using a more specific gloss for 'HORT' in this context, such as 'VOL' (volitional) or 'DELIB' (deliberative), if these distinctions are made in the grammar.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '1SG.S' is correct for first-person singular subject, but the free translation includes both a question and a statement. The gloss does not indicate interrogative or declarative mood; the hortative particle ro is glossed as HORT, which covers both. This is acceptable, but the dual translation might be confusing. Not a mismatch.",
+    "quote": "m=\"k=arpa ro\" g=\"1SG.S=go HORT\" tr=\"Shall I go? / I'll go then.\"",
+    "suggestion": "No change needed.",
+    "confidence": 0.1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses 'HORT' for the particle <i lang=\"ain-Latn\">ro</i>, but in the volitional use with first-person subject, the function shifts from hortative to volitional/optative. The gloss tag should reflect this functional shift, possibly as 'VOL' or 'OPT'.",
+    "quote": "g=\"1SG.S=go HORT\"",
+    "suggestion": "Change gloss tag from HORT to VOL or OPT to reflect the shift in function for first-person contexts.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#019",
+  "chapter": "hortative-and-optative",
+  "lines": "175",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that the example 'a=eyaypakasnu ro' is 'corpus-confirmed' is supported by a citation to <Ref k=\"ijas2023\" />. However, the text does not specify which part of <Ref k=\"ijas2023\" /> confirms this specific example or its analysis. If the confirmation comes from the title itself, it might be better to state that explicitly or ensure the citation points to the relevant page/section.",
+    "quote": "a=eyaypakasnu ro <Ref k=\"ijas2023\" /> ‹corpus-confirmed›",
+    "suggestion": "If possible, add page numbers or a more specific reference within <Ref k=\"ijas2023\" /> to pinpoint the confirmation of this example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied, but the only support is a citation to Ijäs 2023 without indication of corpus data. If the source is a pedagogical guide, it may not qualify as corpus-confirmed.",
+    "quote": "<Ref k=\"ijas2023\" /> ‹corpus-confirmed›",
+    "suggestion": "Re-evaluate the epistemic tag: if Ijäs 2023 is a constructed or pedagogical text, use ‹speculative› or ‹original-needs-review› instead.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#013",
+  "chapter": "hortative-and-optative",
+  "lines": "102",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'go.around=4.S' and 'look=4.S' indicate a 4th person singular subject, but the translation 'Let us travel around the whole country by car and see it' implies an inclusive 'we' (1st person plural). The gloss should reflect the inclusive reading, perhaps as '4.PL.INC' or similar, to align with the text's explanation of the cohortative.",
+    "quote": "g=\"when LOC even car INS land throughout go.around=4.S CONJ look=4.S HORT\"",
+    "suggestion": "Adjust the gloss for the 4th person marker to reflect the inclusive 'we' reading, e.g., 'go.around=4.PL.INC' and 'look=4.PL.INC'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'ney ta ka' is 'when LOC even', but the free translation has 'Someday'. The gloss does not reflect the temporal nuance of 'ney ta ka' as 'someday' (which is a conventional translation). Also, 'epitta' is glossed as 'throughout' but the translation says 'whole country' — 'throughout the land' would be more literal. Minor mismatch.",
+    "quote": "m=\"ney ta ka kuruma ani mosir epitta payoka=an wa inkar=an ro\" g=\"when LOC even car INS land throughout go.around=4.S CONJ look=4.S HORT\" tr=\"Someday let us travel around the whole country by car and see it.\"",
+    "suggestion": "Consider glossing 'ney ta ka' as 'when LOC even' with a note that it idiomatically means 'someday', or adjust the translation to 'whenever' for consistency. The current gloss is acceptable for a literal gloss.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#001",
+  "chapter": "hortative-and-optative",
+  "lines": "8,9",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particles 'ro', 'rok', and 'no' are presented in italics with the 'ain-Latn' language tag, but the chapter later uses 'ro' and 'rok' without italics or language tags (e.g., lines 54, 57). Consistency in orthography and markup is needed.",
+    "quote": "ro, rok, and no",
+    "suggestion": "Apply consistent markup (italics and lang tag) to all mentions of these particles, or remove it consistently if it's not intended for all instances.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of italics for Ainu particles: some are italicized, others are not in the same sentence. The pattern starts with italics but later examples (e.g., 'so') are not consistently italicized.",
+    "quote": "<i lang=\"ain-Latn\">ro</i>, <i lang=\"ain-Latn\">rok</i>, and <i lang=\"ain-Latn\">no</i>",
+    "suggestion": "Ensure consistent use of italics for all Ainu particles in prose, e.g., <i lang=\"ain-Latn\">so</i> when first mentioned.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#029",
+  "chapter": "hortative-and-optative",
+  "lines": "202-209",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'predicates the speaker's internal desire as an assertion' is a bit technical but clear. No major issues.",
+    "quote": "The desiderative auxiliary rusuy occupies the pre-particle auxiliary slot and predicates the speaker's internal desire as an assertion <Ref k=\"nakagawa2024\" p=\"312–313\" />. A sentence ending in rusuy is a declaration of wanting, not an invitation; ro cannot substitute for it in that position, and rusuy cannot occupy the final-particle slot where ro sits.",
+    "suggestion": "No change needed.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#028",
+  "chapter": "hortative-and-optative",
+  "lines": "194-199",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'scopes over the bare imperative stem' is slightly awkward; 'scopes over' is a technical term but acceptable. The sentence is grammatically correct.",
+    "quote": "The prohibitive adverb iteki (Saru/Chitose form; dialect variants treated in <Xr ch=\"imperative-and-prohibitive\" />) scopes over the bare imperative stem and does not combine with the person-marked hortative clause <Ref k=\"nakagawa2024\" p=\"424–425\" />.",
+    "suggestion": "No change needed.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#023",
+  "chapter": "hortative-and-optative",
+  "lines": "64-66",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'their appropriate dialect tag' could be clearer: 'their respective dialect tag' or 'the appropriate dialect tag for each'.",
+    "quote": "This chapter cites ro as the reference form. Attested examples from other dialect regions carry their appropriate dialect tag; the grammatical description applies across all three variants.",
+    "suggestion": "Change to: 'Attested examples from other dialect regions carry the appropriate dialect tag; the grammatical description applies across all three variants.'",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#022",
+  "chapter": "hortative-and-optative",
+  "lines": "15-18",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'addressed to no one in particular' is slightly redundant with 'self-directed deliberation'; minor stylistic issue.",
+    "quote": "The related particle so marks self-directed deliberation addressed to no one in particular. Together these uses span the domain that descriptive grammars variously call hortative, cohortative, and optative.",
+    "suggestion": "Consider: 'The related particle so marks self-directed deliberation. Together these uses span the domain that descriptive grammars variously call hortative, cohortative, and optative.'",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#021",
+  "chapter": "hortative-and-optative",
+  "lines": "8-10",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The subject 'set' is singular, but the verb 'attaches' and 'converts' are singular, which is correct, but the phrase 'distributed by dialect' is a bit ambiguous: it could be read as the particles are distributed by dialect, which is fine, but the comma placement might be slightly off. However, the main issue is that the sentence is grammatically correct but stylistically awkward; not a high priority.",
+    "quote": "A set of sentence-final particles — ro, rok, and no, distributed by dialect — attaches to a finite clause and converts it into an invitation to joint action.",
+    "suggestion": "Consider rephrasing for clarity: 'A set of sentence-final particles — ro, rok, and no — distributed by dialect, attaches to a finite clause and converts it into an invitation to joint action.'",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#012",
+  "chapter": "hortative-and-optative",
+  "lines": "208",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kusu ne' is mentioned without italics or the 'ain-Latn' language tag, while other Ainu forms are consistently marked. This is inconsistent.",
+    "quote": "kusu ne",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'kusu ne'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#011",
+  "chapter": "hortative-and-optative",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rusuy' is mentioned without italics or the 'ain-Latn' language tag, while other Ainu forms are consistently marked. This is inconsistent.",
+    "quote": "rusuy",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'rusuy'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ro' is mentioned here without italics or the 'ain-Latn' language tag, while it was marked as such on line 8. This is inconsistent with the markup used for other particles.",
+    "quote": "ro",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'ro' for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#010",
+  "chapter": "hortative-and-optative",
+  "lines": "194",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'iteki' is mentioned without italics or the 'ain-Latn' language tag, while other Ainu forms are consistently marked. This is inconsistent.",
+    "quote": "iteki",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'iteki'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'iteki' is mentioned here without italics or the 'ain-Latn' language tag, while other Ainu forms are consistently marked. This is inconsistent.",
+    "quote": "The prohibitive adverb iteki (Saru/Chitose form; dialect variants treated in <Xr ch=\"imperative-and-prohibitive\" />) scopes over the bare imperative stem and does not combine with the person-marked hortative clause",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'iteki'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#009",
+  "chapter": "hortative-and-optative",
+  "lines": "187",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ro' at the end of the example is not marked with italics or the 'ain-Latn' language tag, unlike other Ainu forms in the chapter.",
+    "quote": "paye=an ro",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'ro'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#008",
+  "chapter": "hortative-and-optative",
+  "lines": "172",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ro' at the end of the example is not marked with italics or the 'ain-Latn' language tag, unlike other Ainu forms in the chapter.",
+    "quote": "a=eyaypakasnu ro",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'ro'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#007",
+  "chapter": "hortative-and-optative",
+  "lines": "164",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'so' at the end of the example is not marked with italics or the 'ain-Latn' language tag, unlike other Ainu forms in the chapter.",
+    "quote": "k=arpa so",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'so'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#006",
+  "chapter": "hortative-and-optative",
+  "lines": "146",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ro' at the end of the example is not marked with italics or the 'ain-Latn' language tag, unlike other Ainu forms in the chapter.",
+    "quote": "eci=kay ro",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'ro'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#005",
+  "chapter": "hortative-and-optative",
+  "lines": "131",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ro' at the end of the example is not marked with italics or the 'ain-Latn' language tag, unlike other Ainu forms in the chapter.",
+    "quote": "k=arpa ro",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'ro'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#004",
+  "chapter": "hortative-and-optative",
+  "lines": "101",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ro' at the end of the example is not marked with italics or the 'ain-Latn' language tag, unlike other Ainu forms in the chapter.",
+    "quote": "mosir epitta payoka=an wa inkar=an ro",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'ro'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#003",
+  "chapter": "hortative-and-optative",
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The reference form 'ro' is mentioned here without italics or the 'ain-Latn' language tag, while it was marked as such on line 8. This is inconsistent with the markup used for other particles.",
+    "quote": "ro",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'ro' for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#002",
+  "chapter": "hortative-and-optative",
+  "lines": "54",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particle 'ro' is mentioned here without italics or the 'ain-Latn' language tag, while it was marked as such on line 8. This is inconsistent with the markup used for other particles.",
+    "quote": "Ishikari (alongside ro)",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'ro' for consistency.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The particle 'no' is mentioned here without italics or the 'ain-Latn' language tag, while it was marked as such on line 9. This is inconsistent with the markup used for other particles.",
+    "quote": "Urakawa, Samani",
+    "suggestion": "Add italics and the 'ain-Latn' language tag to 'no' for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#032",
+  "chapter": "hortative-and-optative",
+  "lines": "189",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The page citation jumps from 421–423 to 334, which is out of order and may indicate a citation error or misplaced reference.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"421–423, 334\" />",
+    "suggestion": "Reorder the pages as \"334, 421–423\" or verify that the content on p. 334 is indeed relevant to the morphological contrast.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#031",
+  "chapter": "hortative-and-optative",
+  "lines": "11",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation supports the general classification, but the specific term '勧誘' and its translation 'inducement or invitation' may not be directly attested on those pages; the citation may be too broad.",
+    "quote": "Nakagawa places these under the sentence-final particles (終助詞) in the category of 勧誘, 'inducement or invitation', seeking the addressee's agreement <Ref k=\"nakagawa2024\" p=\"333–335\" />.",
+    "suggestion": "Verify that the term 勧誘 and its translation appear on pp. 333–335 of Nakagawa 2024; otherwise, adjust the citation scope.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#030",
+  "chapter": "hortative-and-optative",
+  "lines": "15",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The particle <i lang=\"ain-Latn\">so</i> is introduced without italics in a context where other particles are italicized, creating formatting inconsistency.",
+    "quote": "<i lang=\"ain-Latn\">so</i>",
+    "suggestion": "Italicize <i lang=\"ain-Latn\">so</i> consistently with <i lang=\"ain-Latn\">ro</i>, <i lang=\"ain-Latn\">rok</i>, and <i lang=\"ain-Latn\">no</i>.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#027",
+  "chapter": "hortative-and-optative",
+  "lines": "180-191",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹consensus› is attached to a claim that is supported by a single source (Nakagawa 2024). While Nakagawa may represent a consensus, the tag is slightly inflated if no other sources are cited. However, this is a common practice in the book; borderline.",
+    "quote": "The formal contrast with the imperative is clear. ... The hortative, by contrast, preserves the full person-marking of the finite clause — paye=an ro retains =an on the verb — and the particle attaches outside that marked predicate <Ref k=\"nakagawa2024\" p=\"421–423, 334\" /> ‹consensus›.",
+    "suggestion": "Consider adding additional sources or removing the tag if the claim is uncontroversial.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#026",
+  "chapter": "hortative-and-optative",
+  "lines": "171-177",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is used for a claim that is supported by a single source (Ijäs 2023), which is a pedagogical guide, not a corpus. The tag 'corpus-confirmed' typically implies verification from a corpus of natural speech or texts, which may not apply here. This is an inflation of the epistemic tag.",
+    "quote": "Ijäs's pedagogical guide carries a hortative clause in its own title: a=eyaypakasnu ro 'let us study [Ainu]', in which the fourth-person transitive agent prefix a= heads an inclusive proposition and ro expresses the invitation <Ref k=\"ijas2023\" /> ‹corpus-confirmed›.",
+    "suggestion": "Change to ‹consensus› or ‹original-needs-review›, or simply remove the tag and rely on the citation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#025",
+  "chapter": "hortative-and-optative",
+  "lines": "88-92",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '4.S' for =an is standard for fourth-person subject, but the free translation 'Let's go' implies an inclusive 'we' (first person plural inclusive). The gloss does not explicitly mark inclusivity; however, this is a known convention in Ainu linguistics where '4' covers inclusive. Not a mismatch per se, but could be clarified. Low severity.",
+    "quote": "m=\"paye=an ro\" g=\"go.PL=4.S HORT\" tr=\"Let's go.\"",
+    "suggestion": "No change needed; this is standard practice.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#024",
+  "chapter": "hortative-and-optative",
+  "lines": "72-79",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹consensus› is attached to a claim that is supported by a cross-reference to another chapter, but no specific source is cited here. The tag seems appropriate, but the cross-reference is to a chapter that presumably contains the consensus claim; however, the tag here might be slightly inflated if the consensus is not explicitly documented in that chapter. This is borderline.",
+    "quote": "The canonical hortative clause is a finite predicate carrying the fourth-person subject marker — the intransitive suffix =an or the transitive agent prefix a= — followed by the hortative particle. The fourth person in this environment receives an inclusive reading: it denotes the speaker and addressee(s) acting together. This is the primary discourse context in which the fourth-person subject functions as an explicit inclusive 'we'; the full paradigm and the broader referential range are set out in <Xr ch=\"indefinite-fourth-person-paradigm\" /> ‹consensus›.",
+    "suggestion": "Consider adding a citation to a source that establishes the consensus, e.g., Nakagawa or Tamura, or remove the tag if the cross-reference suffices.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#020",
+  "chapter": "hortative-and-optative",
+  "lines": "187",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'go.PL=4.S HORT' indicates a 4th person singular subject. However, the text (lines 72-79, 114-115) explains that the cohortative with a fourth-person subject receives an *inclusive* reading ('let us'), implying a plural group. The gloss should reflect this inclusive plural aspect, e.g., 'go.PL.INC=4.S HORT' or 'go.PL=4.PL.INC'.",
+    "quote": "m=\"paye=an ro\"\n\t\t\tg=\"go.PL=4.S HORT\"",
+    "suggestion": "Adjust the gloss to indicate the inclusive plural nature of the 4th person subject, e.g., 'go.PL.INC=4.S HORT' or 'go.PL=4.PL.INC'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#017",
+  "chapter": "hortative-and-optative",
+  "lines": "152",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the first-person agent is 'contextually implied' and that Nakagawa analyzes it as a '1SG-agent, 2SG-object hortative'. However, the gloss on line 147 is '2SG.O=carry HORT', which does not explicitly show the first-person agent. This creates a discrepancy between the gloss and the detailed explanation in the note.",
+    "quote": "Chitose form. The second-person object prefix eci= is overt while the first-person agent is contextually implied. Nakagawa analyses this as a 1SG-agent, 2SG-object hortative in which the speaker proposes to act for the addressee.",
+    "suggestion": "Update the gloss on line 147 to reflect the first-person agent, e.g., '1SG.A-2SG.O=carry HORT', to align with the note.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hortative-and-optative~p1#014",
+  "chapter": "hortative-and-optative",
+  "lines": "107",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that both verbs carry the fourth-person suffix '=an', which is consistent with the gloss on line 102 ('go.around=4.S' and 'look=4.S'). However, the chapter's explanation of the cohortative (lines 72-79) emphasizes an *inclusive* fourth-person reading ('let us'). The gloss and note should ideally reflect this inclusive aspect more clearly, or the gloss should be adjusted to '4.PL.INC' as suggested for line 102.",
+    "quote": "Both finite verbs carry the fourth-person suffix =an, the diagnostic of the pair-verb construction in which wa links two independent finite clauses. The hortative ro scopes over the full conjoined proposition.",
+    "suggestion": "Clarify in the note or adjust the gloss to explicitly indicate the inclusive nature of the fourth-person suffix in this context.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

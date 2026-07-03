@@ -1,0 +1,596 @@
+[
+ {
+  "id": "latin-phonemic-transcription~p1#004",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "193",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹asserted› is used here, but the preceding text presents this as a factual explanation for the orthographic choice. This suggests a potential mismatch between the claim and the evidence grade.",
+    "quote": "<Ref k=\"kirikae1997\" /> ‹asserted›.",
+    "suggestion": "Review the evidence grade for this claim or rephrase the prose to reflect the 'asserted' status.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹asserted› is not one of the standard grades defined for this grammar (consensus, contested, corpus-confirmed, corpus-suggested, speculative, original-needs-review).",
+    "quote": "Kirikae (1997) ‹asserted›",
+    "suggestion": "Replace with an appropriate standard tag or remove the tag if it is not an evidence-grade claim.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹asserted› appears after the citation but is not enclosed in guillemets as per the standard format (‹...›). This breaks the established pattern for evidence grading in the chapter.",
+    "quote": "<Ref k=\"kirikae1997\" /> ‹asserted›",
+    "suggestion": "Wrap the tag in guillemets: ‹asserted› → ‹asserted›",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#014",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "401",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol 'ʼ' is used here for the apostrophe. While technically correct, it might be clearer to use a standard apostrophe character (') for consistency with the prose and other table entries.",
+    "quote": "apostrophe ʼ before vowels",
+    "suggestion": "apostrophe ' before vowels",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of <em>ʼ</em> (modifier letter apostrophe) differs from the straight apostrophe used in the main text (e.g., line 212: <i lang=\"ain-Latn\">'a</i>). This creates orthographic inconsistency in representing the glottal stop onset.",
+    "quote": "apostrophe <em>ʼ</em> before vowels",
+    "suggestion": "Use consistent apostrophe form: replace <em>ʼ</em> with <code>'</code> to match <i lang=\"ain-Latn\">'a</i> elsewhere.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#011",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "319",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation is marked as 'contested' and is followed by the epistemic tag ‹contested›. While not strictly a contradiction, it's redundant and could be simplified to just the tag.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024) ‹contested›",
+    "suggestion": "Remove the citation and keep only the tag ‹contested›.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› is not enclosed in guillemets, breaking the standard format used elsewhere in the chapter for evidence grading.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2024) ‹contested›",
+    "suggestion": "Wrap the tag: ‹contested›",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#009",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "277",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is marked as 'contested' in the table on line 419, but here it is presented as factual support for the claim about the distinction between '=' and '-'. This is an internal inconsistency.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024)",
+    "suggestion": "Remove or qualify this citation here, or update the table.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation format places the parenthetical attribution before the <Ref> tag, whereas elsewhere in the chapter (e.g., line 180) it follows after. This creates inconsistency in citation presentation.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2024)",
+    "suggestion": "Standardize order: move the <Ref> tag before the parenthetical, as in line 180: (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />)",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#021",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "31",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text claims twelve consonants, but the following table lists only eleven consonant graphemes (p, t, k, c, s, m, n, r, w, y, h). No twelfth consonant grapheme is shown.",
+    "quote": "The inventory comprises five vowels and twelve consonants",
+    "suggestion": "Either correct the count to eleven or add the missing grapheme/explanation (e.g. include glottal stop if intended).",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#026",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "387",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The IPA symbol /j/ is used for the glide corresponding to grapheme <i lang=\"ain-Latn\">y</i>, but in the rest of the chapter the grapheme is consistently referred to as <i lang=\"ain-Latn\">y</i>. While correct, the sudden use of /j/ without explicit cross-reference in this row may cause confusion for readers unfamiliar with IPA conventions.",
+    "quote": "/m n r w j h/",
+    "suggestion": "Add a parenthetical note such as \"(/j/ corresponds to grapheme y)\" in the same cell for clarity.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#024",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "137, 147",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Cross-references in table notes use HTML anchor tags, while the rest of the chapter uses <Xr> components for cross-references. This is a formatting inconsistency within the chapter.",
+    "quote": "see §<a href=\"#glide-notation\">glide-notation</a>",
+    "suggestion": "Replace anchor tags with <Xr ch=\"glide-notation\" /> for consistency.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#023",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "314, 417",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose writes the hiatus example with a morpheme boundary hyphen (u-epeker), but the table omits the hyphen (uepeker). This inconsistency may confuse readers about whether the hyphen is part of the orthographic convention.",
+    "quote": "Line 314: \"u-epeker\"; Line 417: \"bare (uepeker)\"",
+    "suggestion": "Ensure consistent representation: either use hyphens in both contexts or omit them in both when focusing on hiatus representation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#022",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "61, 94-101",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The /i/ entry states that it conditions palatalization of /c/, but the /c/ entry does not mention any allophonic variation before /i/, leaving a gap in the description.",
+    "quote": "high front; conditions the palatalization of /s/ and /c/",
+    "suggestion": "Either add a note to the /c/ entry clarifying that it is already palato-alveolar and does not further change, or revise the /i/ entry to avoid implying a change for /c/.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#020",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "441",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'this grammar's c and s' is slightly informal. Consider using a more formal phrasing.",
+    "quote": "their ch and sh renderings are equivalent to this grammar's c and s",
+    "suggestion": "their ch and sh renderings are equivalent to this grammar's <i lang=\"ain-Latn\">c</i> and <i lang=\"ain-Latn\">s</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#019",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "436",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence structure is a bit convoluted. Consider rephrasing for clarity.",
+    "quote": "where that chapter uses IPA symbols for phonetic detail this grammar cites the relevant IPA and maps it to its own grapheme.",
+    "suggestion": "where that chapter uses IPA symbols for phonetic detail, this grammar cites the relevant IPA and maps it to its own grapheme.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#018",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "428",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'insertion or suppression of transitional glides' is a bit wordy. Consider simplifying.",
+    "quote": "the use of = versus - for clitic attachment, and the insertion or suppression of transitional glides at vowel hiatus.",
+    "suggestion": "the use of = versus - for clitic attachment, and the treatment of transitional glides at vowel hiatus.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'analysis of hiatus' is slightly vague. Consider being more specific about what aspect of hiatus is being analyzed.",
+    "quote": "These differences are confined to morpheme-boundary notation and to the analysis of hiatus; they do not affect the phonemic letter values.",
+    "suggestion": "These differences are confined to morpheme-boundary notation and the transcription of vowel hiatus; they do not affect the phonemic letter values.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#017",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "419",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Older variants' column describes glide insertion with examples like '<em>uwepeker</em>'. This is consistent with the Tamura column, but the prose on line 318 uses '<i lang=\"ain-Latn\">uwepeker</i>' and '<i lang=\"ain-Latn\">iyomante</i>' as examples of the older style. There might be a slight inconsistency in how the glide is represented or described.",
+    "quote": "glide insertion: <em>uwepeker</em>, <em>iyomante</em>",
+    "suggestion": "Clarify the exact representation of glide insertion in the 'Older variants' column if it differs from the prose examples.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#016",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "415",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Tamura column shows '<i lang=\"ain-Latn\">uwepeker</i>' for hiatus. This is consistent with the example on line 318, but the description in the 'Older variants' column ('glide insertion: <em>uwepeker</em>, <em>iyomante</em>') might imply a different representation or a more explicit glide. Clarification might be needed.",
+    "quote": "<i lang=\"ain-Latn\">uwepeker</i>",
+    "suggestion": "Ensure the representation of glide insertion in Tamura's work is clearly distinguished if it differs from the bare vowel sequence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#015",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "410",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Older variants' column uses a hyphen. This is consistent with the prose on lines 279-280, but the table on line 406 uses '— (uses - for all)'. This could be more consistent.",
+    "quote": "hyphen - for all morpheme types",
+    "suggestion": "Ensure consistent representation of the hyphen notation across the table and prose.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#013",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "397",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'earlier' notation for vowel-initial words in the Tamura column uses an apostrophe. This is consistent with the text on lines 212-214, but the table on line 401 uses 'apostrophe ʼ before vowels' for 'Older variants'. This could be more consistent.",
+    "quote": "∅ (earlier: ʼa)",
+    "suggestion": "Ensure consistent representation of the apostrophe notation across the table and prose.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#012",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "320",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrasing 'determines whether they should be written' is a bit passive. Consider a more direct phrasing.",
+    "quote": "whether the transitional [w] and [j] are phonemic or predictable epenthetic segments determines whether they should be written.",
+    "suggestion": "whether the transitional [w] and [j] are phonemic or predictable epenthetic segments determines their transcription.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#010",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "318",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">uwepeker</i> is presented as an older style with a transitional glide, but the 'u' and 'w' are adjacent. This might be confusing if the reader expects a clear separation or a different representation of the glide.",
+    "quote": "inserts a transitional glide at the hiatus site: <i lang=\"ain-Latn\">uwepeker</i>, <i lang=\"ain-Latn\">iyomante</i>",
+    "suggestion": "Clarify how the transitional glide is represented in <i lang=\"ain-Latn\">uwepeker</i> if it differs from the bare vowel sequence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#008",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "268",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '<span class=\"sc\">appl</span>-hear' for 'e-nu' is unclear. 'appl' is likely an abbreviation for 'applicative', but this is not defined or standard.",
+    "quote": "<i lang=\"ain-Latn\">e-nu</i> '<span class=\"sc\">appl</span>-hear'.",
+    "suggestion": "Define or expand the gloss '<span class=\"sc\">appl</span>' to be more explicit, e.g., 'applicative'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#007",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "261",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.a=hear' for 'a=nu' is inconsistent. The 'a' in the gloss appears to be a possessive marker, but it's not explicitly glossed as such, and the '4' is unclear in its relation to the 'a'.",
+    "quote": "<i lang=\"ain-Latn\">ku=kor</i> '1<span class=\"sc\">sg.a</span>=have', <i lang=\"ain-Latn\">a=nu</i> '4.<span class=\"sc\">a</span>=hear'.",
+    "suggestion": "Clarify the gloss for 'a=nu' to explain the '4' and the role of 'a'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#006",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "224",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'laryngeal element that triggers morphophonological alternations' is a bit dense. Consider breaking it down or simplifying.",
+    "quote": "it is not a surface fricative but a laryngeal element that triggers morphophonological alternations and corresponds to Sakhalin vowel length.",
+    "suggestion": "it is not a surface fricative but a laryngeal element; it triggers morphophonological alternations and corresponds to Sakhalin vowel length.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#002",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "107",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The IPA symbol [ɕ] is described as 'palato-alveolar', but the grapheme 's' is described as 'alveolar' in the same row. This could be confusing.",
+    "quote": "voiceless alveolar fricative; realized as [ɕ] (palato-alveolar) before /i/ and in",
+    "suggestion": "voiceless alveolar fricative; realized as [ɕ] (palato-alveolar) before /i/ and in",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#001",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "12",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence structure is slightly awkward. Consider rephrasing for better flow.",
+    "quote": "such as the realization of /s/ as [ɕ] before /i/, or the voicing of stops in intervocalic position",
+    "suggestion": "such as the realization of /s/ as [ɕ] before /i/, or the voicing of stops in intervocalic position",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'phonetic realization' is slightly redundant when discussing an inventory. Consider simplifying.",
+    "quote": "The consonant inventory and its phonetic realization are treated in <Xr ch=\"consonant-inventory\" />",
+    "suggestion": "The consonant inventory and its phonetic realization are treated in",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#027",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "200",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Two citations are separated by a semicolon and space, but no space follows the semicolon — this is a typographic inconsistency. Standard punctuation would include a space after the semicolon.",
+    "quote": "<Ref k=\"sato2008\" />; <Ref k=\"nakagawa2024\" />",
+    "suggestion": "Add space after semicolon: \"; \" → \"; \"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#025",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "378",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The IPA transcription in the table includes a phonetic detail ([ɕ]) that is not reflected in the corresponding grapheme column, which only lists 's'. This creates a mismatch between the phonemic representation and the phonetic annotation.",
+    "quote": "/s/ ([ɕ] before /i/)",
+    "suggestion": "Consider adding a note in the 'This grammar' column or adjusting formatting to clarify that [ɕ] is an allophone of /s/.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#005",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "216",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is marked as 'contested' in the table on line 419, but here it is presented as factual support for the claim about the omission of the apostrophe. This is an internal inconsistency.",
+    "quote": "(nukopoli, aynu-corpora Discord 2023)",
+    "suggestion": "Remove or qualify this citation here, or update the table.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "latin-phonemic-transcription~p1#003",
+  "chapter": "latin-phonemic-transcription",
+  "lines": "180",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is marked as 'contested' in the table on line 419, but here it is presented as factual support for the claim about older transcriptions. This is an internal inconsistency.",
+    "quote": "(nukopoli, aynu-corpora Discord 2023)",
+    "suggestion": "Remove or qualify this citation here, or update the table.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

@@ -1,0 +1,630 @@
+[
+ {
+  "id": "ainu-people-homeland-history~p1#001",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "190",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'Ezo kotoba no koto' appears to be a repetition or a mistranscription. It should likely be a single title or a clearer description.",
+    "quote": "Matsumae no koto — Ezo kotoba no koto of c. 1600 with 117 words compiled for use by merchants",
+    "suggestion": "Matsumae no koto, a collection of Ezo words (c. 1600) with 117 words compiled for use by merchants",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The em dash between 'Matsumae no koto' and 'Ezo kotoba no koto' is unclear; it might be intended as a parenthetical remark or an alternative title. The punctuation is awkward and may confuse the reader.",
+    "quote": "including the Matsumae no koto — Ezo kotoba no koto of c. 1600 with 117 words compiled for use by merchants",
+    "suggestion": "Consider using parentheses: 'including the Matsumae no koto (Ezo kotoba no koto) of c. 1600' or rephrase to clarify the relationship between the two titles.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#013",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "43",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Inconsistent spelling: 'Kuril' here vs 'Kurile' used throughout the rest of the chapter (lines 124, 131, 181, 210, 215, 241).",
+    "quote": "across the full chain of the Kuril Islands",
+    "suggestion": "Change to 'Kurile Islands' for consistency, or adopt one spelling globally.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as line 32: 'Hokkaido' lacks macron. The chapter uses 'Hokkaido' throughout, but this may conflict with standard academic romanization which prefers 'Hokkaidō'.",
+    "quote": "Hokkaido",
+    "suggestion": "Standardize to 'Hokkaidō' unless house style explicitly omits macrons.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Ainu name for Sakhalin is given as <i lang=\"ain-Latn\">Karapto</i>, but standard romanization in Janhunen and other sources typically uses <i lang=\"ain-Latn\">Karafto</i> or <i lang=\"ain-Latn\">Karpoto</i>. This may be a spelling variant, but inconsistency with established forms should be checked.",
+    "quote": "Karapto",
+    "suggestion": "Verify preferred romanization; if standard is 'Karafto', update accordingly.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#019",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "117",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This claim contradicts the earlier section (lines 41–47) which presents Hokkaido as the 'core of the historical Ainu territory'. While both statements may be contextually valid (core vs. ancestral), the lack of transitional explanation creates an apparent contradiction between 'core' and 'secondary'.",
+    "quote": "Hokkaido itself is a secondary territory for the Ainu; their earlier homeland was on Honshu",
+    "suggestion": "Add clarifying phrase: e.g., 'while Hokkaido was the core of the historical Ainu territory, it is considered a secondary territory in deeper historical terms'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#015",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "209-210",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Cross-reference written in prose ('the Handbook's chapter') instead of using the <Xr> component, which is the standard method used elsewhere (e.g., line 61, 274). This may be a leftover from an earlier draft or refers to an external volume; either way it is inconsistent with the rest of the chapter.",
+    "quote": "the Handbook's chapter on language contact <Ref k=\"shiraishitangiku2022\" />",
+    "suggestion": "Replace with an <Xr> link if the chapter is part of this grammar; otherwise clarify what 'Handbook' refers to.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#003",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "241",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the Kurile Ainu variety is now extinct, but then mentions that 'forty-one descendants survived' in 1933. This implies there were still people alive who were descendants of Kurile Ainu speakers, which contradicts the idea of the variety being extinct at that point.",
+    "quote": "the Kurile Ainu were relocated to Shikotan in 1884, and by 1933 only forty-one descendants survived — that variety of Ainu is now extinct",
+    "suggestion": "the Kurile Ainu were relocated to Shikotan in 1884, and by 1933 only forty-one descendants survived; that variety of Ainu is now extinct",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#022",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "200",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrasing 'contested as to' is awkward and unidiomatic. Standard usage would be 'contested interpretation of Ainu agency and objectives' or 'it is contested whether Ainu agency and objectives were accurately interpreted'.",
+    "quote": "‹contested as to the interpretation of Ainu agency and objectives›",
+    "suggestion": "Rephrase to: '‹contested interpretation of Ainu agency and objectives›'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#016",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "99",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'prosaic folktale' uses 'prosaic' which normally means 'dull' or 'commonplace'; the intended meaning is likely 'prose folktale' (as opposed to verse epic). This is either a glossing mistake or an infelicitous word choice.",
+    "quote": "called <A w=\"uwepeker\" gl=\"prosaic folktale\" />",
+    "suggestion": "Change gloss to 'prose folktale' if that is the intended meaning.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#012",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "282",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#011",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "277",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Hokkaido' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Hokkaido",
+    "suggestion": "Hokkaido",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Saru' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Saru",
+    "suggestion": "Saru",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Chitose' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Chitose",
+    "suggestion": "Chitose",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#010",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "271",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#009",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "267",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu term 'Upopoy' is not italicized or marked with a language tag, unlike other Ainu terms in the text.",
+    "quote": "Upopoy",
+    "suggestion": "Upopoy",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#008",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "263",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#007",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "258",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#006",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "249",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Hokkaido' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Hokkaido",
+    "suggestion": "Hokkaido",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#005",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Hokkaido' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Hokkaido",
+    "suggestion": "Hokkaido",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#004",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Shikotan' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Shikotan",
+    "suggestion": "Shikotan",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Kurile' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Kurile",
+    "suggestion": "Kurile",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Sakhalin' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Sakhalin",
+    "suggestion": "Sakhalin",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Hokkaido' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Hokkaido",
+    "suggestion": "Hokkaido",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The place name 'Sakhalin' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Sakhalin",
+    "suggestion": "Sakhalin",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ethnonym 'Ainu' is not consistently italicized or marked with a language tag, unlike other Ainu or Japanese terms in the text.",
+    "quote": "Ainu",
+    "suggestion": "Ainu",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#025",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "82",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'god, bear' suggests polysemy, but in Ainu, 'kamuy' means 'god' generally, and 'bear' is a specific instance (e.g., 'kamuy' as 'divine being', with bear being one manifestation). The gloss risks implying 'bear' is a primary meaning rather than a contextual referent.",
+    "quote": "<A w=\"kamuy\" gl=\"god, bear\" />",
+    "suggestion": "Revise to: 'god (esp. bear)' or 'divine being, e.g. bear'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#024",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "13",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term is given as <i lang=\"ain-Latn\">Ainu Moshir</i> but segmented as <i lang=\"ain-Latn\">aynu mo-sir</i>, suggesting a discrepancy in capitalization and romanization. 'moshir' should likely be lowercase in the segmented form, and the romanization should be consistent.",
+    "quote": "Ainu Moshir",
+    "suggestion": "Standardize to <i lang=\"ain-Latn\">Ainu mosir</i> or <i lang=\"ain-Latn\">aynu mosir</i> for consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#023",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "18",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form <i lang=\"ain-Latn\">utari</i> is presented as an affiliative of <i lang=\"ain-Latn\">utar</i>, but standard romanization in Ainu scholarship typically uses macrons for vowel length. The absence of macron may obscure phonological detail (e.g., *utarī*).",
+    "quote": "utari",
+    "suggestion": "Check standard form: if vowel is long, consider <i lang=\"ain-Latn\">utarī</i>.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#021",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "225",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Repeats the population figure from line 92 without additional citation or qualification. While same source (Janhunen 2022 §2.5), the uncritical repetition risks reinforcing a potentially uncertain number as more established than it is.",
+    "quote": "from a figure close to the precolonial Ainu population of roughly 25,000",
+    "suggestion": "Add ‹contested› or ‹corpus-suggested› to flag epistemic status of the 25,000 figure.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#020",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "92",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation points to Janhunen 2022 §2.5, but the same figure is repeated in line 225 with the same citation. If both claims rely solely on the same source, it is acceptable, but the repetition without additional support may overstate confidence in a contested demographic estimate.",
+    "quote": "a figure close to 25,000, possibly more, has been suggested for Hokkaido alone <Ref k=\"janhunen2022\" p=\"§2.5\" />",
+    "suggestion": "Consider marking the claim with ‹contested› or ‹speculative› to reflect uncertainty in precolonial population figures.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#018",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "32",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of macron: 'Hokkaido' appears without macron, while standard orthography in the field typically uses 'Hokkaidō'. The rest of the chapter uses 'Hokkaido' consistently, but this may reflect a house style choice; however, the lack of consistency with external standards or potential drift within the book is a concern.",
+    "quote": "Hokkaido",
+    "suggestion": "Check house style; if macrons are used elsewhere, change to 'Hokkaidō'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#017",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "268",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Tense inconsistency: 'establishes' (present) is followed by 'authorized' (past) within the same list of actions of the 2019 act. The verb should be present tense 'authorizes' for consistency.",
+    "quote": "establishes support mechanisms for cultural and language activities, and authorized the establishment",
+    "suggestion": "Change 'authorized' to 'authorizes'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#014",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "200-201",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag contains extra explanatory text not in the standard format (‹contested›). This appears to be a pipeline note or editorial comment that leaked into the prose.",
+    "quote": "‹contested as to the interpretation of Ainu agency and objectives›",
+    "suggestion": "Remove the extra text and use either just ‹contested› or a natural-language aside.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-people-homeland-history~p1#002",
+  "chapter": "ainu-people-homeland-history",
+  "lines": "200",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag 'contested' is followed by a parenthetical explanation that is not a standard tag. This should be either a standard tag or integrated into the prose.",
+    "quote": "‹contested as to the interpretation of Ainu agency and objectives›",
+    "suggestion": "‹contested› (as to the interpretation of Ainu agency and objectives)",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

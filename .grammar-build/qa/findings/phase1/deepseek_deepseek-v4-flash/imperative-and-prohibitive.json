@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "98-105",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "is ungrammatical as an imperative … ‹corpus-confirmed›",
+  "issue": "The claim that adding a second-person subject prefix to an imperative verb is ungrammatical is tagged ‹corpus-confirmed›, but the only evidence cited is a Discord exchange (siljamimimii, aynu-corpora Discord 2024-11-17) and one reference (ijas2023). A single community message does not constitute corpus confirmation.",
+  "suggestion": "Change tag to ‹speculative› or ‹original-needs-review›, or add corpus evidence if available.",
+  "confidence": 0.9,
+  "chapter": "imperative-and-prohibitive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "14-15, 253-254",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "converts any imperative into a prohibitive” vs “iteki is not restricted to bare imperatives: it also precedes indirect command forms",
+  "issue": "The first statement claims iteki converts any imperative, but the second states it also applies to indirect command forms (which are not imperative constructions). This creates a contradiction unless indirect commands are considered imperatives.",
+  "suggestion": "Change 'any imperative' to 'any directive' or clarify that indirect commands are included under 'imperative'.",
+  "confidence": 0.8,
+  "chapter": "imperative-and-prohibitive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "332-333, 355",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "V nankor na” (table) vs “e=nukar nankor” (example without na)",
+  "issue": "The table lists the construction as 'V nankor na', but the provided example (line 355) has 'nankor' without the final particle 'na', and the gloss does not gloss 'na'. This is inconsistent; either the table should note optionality, or the example should include 'na'.",
+  "suggestion": "Add 'na' to the example if it is obligatory, or amend the table to show 'V nankor (na)' if optional.",
+  "confidence": 0.7,
+  "chapter": "imperative-and-prohibitive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

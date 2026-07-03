@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "149-174, 192-194",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Internal emotional states use the same construction. In the following example, the narrator perceives anger welling up from within — an internal bodily impression",
+  "issue": "The table separates 'internal emotional state' and 'internal bodily impression / intuition' as distinct domains, but the prose treats anger (an emotional state) as 'an internal bodily impression' without explicitly marking the distinction.",
+  "suggestion": "Either modify the prose to say 'internal emotional state' or clarify in the table that the two categories overlap.",
+  "confidence": 0.7,
+  "chapter": "humi-ne-sensory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "216-217",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<Ex ain=\"húmas humi ne kunak ku=ramu kor ku=soyne a p\" m=\"hum-as hum-i ne kunak ku=ramu kor ku=soyne a p\"",
+  "issue": "This example uses an 'ain' attribute (non-segmented form) that is not present in any other example in the chapter, creating formatting inconsistency.",
+  "suggestion": "Remove the 'ain' attribute for consistency, since the segmented 'm' attribute is present and sufficient.",
+  "confidence": 0.5,
+  "chapter": "humi-ne-sensory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "198, 210-211",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "yay-nu=an (line 198) vs yaynu=an (line 210)",
+  "issue": "The same verb yaynu 'feel' is written with a hyphen (yay-nu) in the example gloss but without a hyphen (yaynu) in the prose description, resulting in inconsistent morpheme segmentation.",
+  "suggestion": "Standardize to yay-nu=an throughout, matching the example gloss and morpheme-boundary conventions.",
+  "confidence": 0.6,
+  "chapter": "humi-ne-sensory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

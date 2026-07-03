@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "27–28, 85",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "Satō, Tamura, and Ijäs retain the traditional terms intransitive, transitive, and ditransitive",
+  "issue": "This statement omits 'avalent', which Ijäs uses according to line 85 ('Ijäs’s Lessons 2 and 3 introduce the same inventory for learners as avalent, intransitive, transitive, and ditransitive verbs') and which appears as the traditional label for v0 in the classification table.",
+  "suggestion": "Add 'avalent' to the list, or clarify that Ijäs also uses 'avalent'.",
+  "confidence": 0.9,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "181–183",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "g=\"look=4.S then 2SG.S=exist track-POSS 4.A=see NMLZ because\" tr=\"When I looked, since I saw that you were there, …\"",
+  "issue": "The gloss includes 'track-POSS' which is not reflected in the free translation. The translation 'that you were there' omits the semantic component of 'track'.",
+  "suggestion": "Either revise the translation to capture the nominalization (e.g., 'the fact that you were there' already omits 'track') or adjust the gloss if 'track-POSS' is purely grammatical and should be annotated differently.",
+  "confidence": 0.4,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "41, 70",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "numeric label (Nakagawa; Bugaeva & Kobayashi) … 2- or 3-place subtype",
+  "issue": "The column header promises a 'numeric label' (like 0-, 1-, 2-, 3-place), but the vc row contains '2- or 3-place subtype', which is not a single numeric value but a range description.",
+  "suggestion": "Change to '2- to 3-place' or restructure the label to be a plain number (e.g., '2-3-place') for consistency.",
+  "confidence": 0.7,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

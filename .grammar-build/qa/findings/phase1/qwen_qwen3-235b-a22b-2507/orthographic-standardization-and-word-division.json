@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "12",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Hokkaidō Utari Kyōkai",
+  "issue": "Inconsistent macron usage: 'Hokkaidō' uses a macron, but 'Utari' and 'Kyōkai' do not, despite being part of the same proper name. Standard romanization would either fully macronize or not, depending on the source convention.",
+  "suggestion": "Check consistency with the organization's official romanization; if macrons are used, apply them uniformly (e.g. Utarī, Kyōkai → Utarī Kyōkai).",
+  "confidence": 0.85,
+  "chapter": "orthographic-standardization-and-word-division",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "153",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Aynu·itak",
+  "issue": "Use of middle dot (·) in 'Aynu·itak' is noted as non-standard and originating from Wikipedia, yet it appears in italics without clear markup indicating it is a cited form rather than a recommended form.",
+  "suggestion": "Enclose 'Aynu·itak' in quotes or use <code> to clarify it is a reported usage, not an endorsed form.",
+  "confidence": 0.75,
+  "chapter": "orthographic-standardization-and-word-division",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "99",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"1SG.A=REFL-eat\"",
+  "issue": "The gloss uses '1SG.A' which implies first person singular agent, but the free translation is 'I eat (a meal).' and the morpheme breakdown is 'ku=yay-e'. The 'A' subcategory is not explained or consistently used elsewhere in the chapter, and the standard abbreviation for transitive subject is '1SG' (as in line 83).",
+  "suggestion": "Change '1SG.A' to '1SG' to align with the rest of the text and standard glossing practice unless 'A' is defined and consistently used.",
+  "confidence": 0.95,
+  "chapter": "orthographic-standardization-and-word-division",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "83",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "1<span class=\"sc\">sg</span>",
+  "issue": "Inconsistent formatting of gloss abbreviations: '1SG' is rendered in small caps via span in HTML, but in the example gloss (line 99) it appears as '1SG.A' in plain text. This may cause rendering inconsistency in output formats.",
+  "suggestion": "Ensure consistent use of small caps or plain text for gloss abbreviations across prose and examples.",
+  "confidence": 0.8,
+  "chapter": "orthographic-standardization-and-word-division",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "168",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "macron-n (<i>n̄</i>)",
+  "issue": "The term 'macron-n' is used, but the example shows 'n̄', which combines a macron and a combining diacritic. This may not render consistently across fonts and platforms. The correct Unicode character for macron-n is 'n̄' (U+0144 with U+0304), but typographic clarity is important.",
+  "suggestion": "Use a dedicated character or clarify the intended rendering; consider using 'n̄' with proper Unicode or define the symbol in a note.",
+  "confidence": 0.7,
+  "chapter": "orthographic-standardization-and-word-division",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "282",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Omitted: <i lang=\"ain-Latn\">uepeker</i>, <i lang=\"ain-Latn\">iomante</i>",
+  "issue": "The forms 'uepeker' and 'iomante' are presented without macrons, but if underlying vowels are long, macrons may be expected. No mention is made of vowel length in this context.",
+  "suggestion": "Confirm whether vowel length is relevant in these forms and add macrons if appropriate, or explicitly state that vowel length is not marked in these cases.",
+  "confidence": 0.65,
+  "chapter": "orthographic-standardization-and-word-division",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "298",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "sisamitak",
+  "issue": "The compound 'sisamitak' is presented without macrons, but if any of the vowels are long, this may be inconsistent with the phonemic romanization standard. The chapter does not clarify whether vowel length is marked in compounds.",
+  "suggestion": "Verify vowel length in 'sisamitak' and 'sisam itak' and apply macrons consistently if needed.",
+  "confidence": 0.7,
+  "chapter": "orthographic-standardization-and-word-division",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

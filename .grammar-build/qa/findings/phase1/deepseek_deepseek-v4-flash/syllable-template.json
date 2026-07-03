@@ -1,0 +1,133 @@
+[
+ {
+  "lines": "67",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "Nakagawa (2024: 25) characterizes Hokkaido Ainu as having relatively few phonemes and a straightforward syllable structure, noting that the five-vowel inventory is constant across all Hokkaido dialects — dialect differences are comparatively small.",
+  "issue": "The sentence appears to paraphrase Nakagawa's characterization, but uses 'characterizes...as having relatively few phonemes and a straightforward syllable structure' which is a plausible editorial characterization but not a direct quote. The phrasing 'noting that the five-vowel inventory is constant across all Hokkaido dialects — dialect differences are comparatively small' reads as the book's own summary, not Nakagawa's claim. This is a minor register issue—the sentence blends the book's voice with Nakagawa's.",
+  "suggestion": "Reword to make it clearer: 'Nakagawa (2024: 25) observes that Hokkaido Ainu has relatively few phonemes and a straightforward syllable structure; he notes that the five-vowel inventory is constant across all Hokkaido dialects, with dialect differences being comparatively small.'",
+  "confidence": 0.4,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "82-83",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Nakagawa rejects this on the grounds that no minimal pair exists in monomorphemic forms and that positing /ʔ/ requires many costly deletion rules",
+  "issue": "The text says 'no minimal pair exists in monomorphemic forms', but the phoneme status of /ʔ/ is disputed and the absence of minimal pairs is a standard argument against phonemic status. However, the earlier claim about SA having /aa/ and /ruu/ vs HA /a/ and /ru/ (lines 70-74) involves minimal pairs across dialects, not within HA. This is not a contradiction per se, but the phrasing 'no minimal pair exists' is potentially misleading—there are no minimal pairs in monomorphemic HA forms, but the argument about SA suggests that minimal pairs exist across dialects. The inconsistency is between 'no minimal pair exists' (in HA) and the SA comparison implying that HA does have a length contrast (which is not a minimal pair in HA itself). This is a subtle internal inconsistency.",
+  "suggestion": "Clarify: 'Nakagawa rejects this on the grounds that no minimal pair exists in monomorphemic Hokkaido Ainu forms and that positing /ʔ/ requires many costly deletion rules.'",
+  "confidence": 0.6,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "86-88",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The debate is covered in <Xr ch=\"glottal-stop\" />; the majority position — /ʔ/ as a phonetic boundary element rather than a phoneme — is followed here, retaining V and VC syllable shapes in the template ‹contested›.",
+  "issue": "The epistemic tag ‹contested› is attached to the claim that the majority position retains V and VC shapes. However, the preceding text (lines 80-85) says this is the position followed here, and the tag is placed after 'is followed here, retaining V and VC syllable shapes in the template'. This is inconsistent: if the position is contested, it cannot simultaneously be the 'majority position' that is 'followed here' without clarification. The tag seems misplaced—it should apply to the debate as a whole, not to the book's own adopted position.",
+  "suggestion": "Move ‹contested› to the beginning of the sentence or rephrase: 'The debate is covered in <Xr ch=\"glottal-stop\" />; the position adopted here — /ʔ/ as a phonetic boundary element rather than a phoneme — is a minority view ‹contested›, but it is followed here, retaining V and VC syllable shapes in the template.'",
+  "confidence": 0.7,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "7-8",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "The Hokkaido Ainu syllable has the shape (C)V(C): an optional onset consonant, a single vowel nucleus, and an optional coda consonant",
+  "issue": "The template is described as (C)V(C), but later (lines 10-11) it says 'Four syllable types result', and the table lists V, CV, VC, CVC. This is consistent, but the phrasing 'four syllable types result' implies that (C)V(C) yields exactly four shapes, which is correct. However, the word 'single vowel nucleus' could be misinterpreted as 'only one vowel', but the text later says 'every syllable contains exactly one vowel' (line 56). This is not a contradiction, but the phrasing is redundant: 'single vowel' is implied by 'vowel nucleus'. This is a minor copyediting issue.",
+  "suggestion": "Consider rephrasing: '...an optional onset consonant, a vowel nucleus, and an optional coda consonant' (remove 'single').",
+  "confidence": 0.3,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "59-61",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "The word <i lang=\"ain-Latn\">toop</i> 'far away', which looks like CVVC in the Latin transcription, parses as two syllables <i lang=\"ain-Latn\">to.op</i> (CV.VC), the syllable boundary falling between the two successive vowels",
+  "issue": "The example 'toop' is parsed as to.op (CV.VC). However, the table in the 'Syllabification' section (lines 108-149) does not include an example with a vowel sequence split (VV → V.V). The algorithm in line 99 says 'Split between two adjacent vowels: VV → V.V', but the only example with adjacent vowels is 'teeta' (line 119), which is parsed as 'te.e.ta' (CV.V.CV). The example 'toop' would be a case of VV, but it is not listed in the table. This is not a contradiction, but a gap in coverage: the text mentions 'toop' as an example of CVVC being parsed as CV.VC, but the table only shows 'teeta' (CV.V.CV), not 'toop'. This is a minor inconsistency in example selection.",
+  "suggestion": "Add 'toop' as an additional row in the table, or explain why it is not included (perhaps because it's not a common word?).",
+  "confidence": 0.5,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "67-68",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "Nakagawa (2024: 25) characterizes Hokkaido Ainu as having relatively few phonemes and a straightforward syllable structure, noting that the five-vowel inventory is constant across all Hokkaido dialects — dialect differences are comparatively small.",
+  "issue": "The epistemic status of this claim is unmarked, which is fine since it's attributed to Nakagawa. However, the phrase 'dialect differences are comparatively small' is a generalization that may be contested; it is attributed to Nakagawa but no other source is cited. The chapter later (lines 69-76) discusses SA differences, implying that cross-dialect differences are not small. This is a subtle inconsistency between Nakagawa's characterization and the book's own discussion of SA differences.",
+  "suggestion": "Add a citation to Nakagawa for the specific claim about dialect differences, or qualify it: '...dialect differences are comparatively small (Nakagawa 2024: 25)'.",
+  "confidence": 0.4,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "82-85",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa rejects this on the grounds that no minimal pair exists in monomorphemic forms and that positing /ʔ/ requires many costly deletion rules <Ref k=\"nakagawa2024\" p=\"31–33\" />, a judgement shared by Refsing <Ref k=\"refsing1986\" /> and Chiri (1942) as reported by <Ref k=\"shiraishi2022\" p=\"§4.3\" />.",
+  "issue": "The citation for Chiri (1942) is indirect: 'as reported by <Ref k=\"shiraishi2022\" p=\"§4.3\" />'. This is fine, but the epistemic tag for Nakagawa's rejection is unmarked (implicitly consensus), while the topic itself (the /ʔ/ debate) is tagged ‹contested› in line 88. This is inconsistent: the text presents Nakagawa's rejection as consensus (no tag), but the overall position is tagged ‹contested›. The citation for Nakagawa's rejection should perhaps be tagged as ‹contested› or the inconsistency resolved.",
+  "suggestion": "Either add ‹contested› to the Nakagawa rejection, or rephrase to indicate that this is one side of a debate.",
+  "confidence": 0.6,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "88",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "is followed here, retaining V and VC syllable shapes in the template ‹contested›.",
+  "issue": "The epistemic tag ‹contested› is applied to the book's own adopted position. Typically, tags apply to the claim itself, not to the act of adopting a position. The tag should modify the claim that '/ʔ/ is a phonetic boundary element rather than a phoneme', not the fact that the book follows it. This is a minor misuse of the tag.",
+  "suggestion": "Rephrase: '...the majority position — that /ʔ/ is a phonetic boundary element rather than a phoneme ‹contested› — is followed here, retaining V and VC syllable shapes.'",
+  "confidence": 0.7,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "99-101",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<li>Split between two adjacent <strong>vowels</strong>: VV → V.V.</li> <li>Split between two adjacent <strong>consonants</strong>: CC → C.C.</li> <li>In a VCV sequence, split <strong>before</strong> the consonant: VCV → V.CV.</li>",
+  "issue": "The algorithm in step 3 says 'In a VCV sequence, split before the consonant: VCV → V.CV.' This implies that the consonant goes to the following syllable (onset maximization). However, later in the same section (lines 160-162), the example 'yayrayke' is syllabified as 'yay.ray.ke' (CVC.CVC.CV), which follows the same principle: the consonant /r/ goes to the onset of the next syllable. But the example 'cepkoyki' (line 138) is syllabified as 'cep.koy.ki' (CVC.CVC.CV), which is consistent. However, the algorithm does not specify what happens with VCV sequences that are part of a larger word; step 3 seems to imply that any VCV sequence in the word is split as V.CV, but the examples show that VCV can also be split as VC.V if the first vowel is part of a closed syllable. For example, 'aynu' (line 125) is syllabified as 'ay.nu' (CVC.CV), which requires applying step 2 (CC → C.C) before step 3? The algorithm as given does not account for the interaction between steps. This is a potential inconsistency in the algorithm description.",
+  "suggestion": "Clarify the algorithm: either specify that steps apply in order, or note that resyllabification and morpheme boundaries can affect the outcome. Add a note: 'The algorithm applies iteratively; step 3 applies only after steps 1 and 2 have been applied.'",
+  "confidence": 0.5,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "160-167",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "yayrayke 'commit suicide' = yay.ray.ke (CVC.CVC.CV, three syllables) versus yairayke 'give thanks' = ya.i.ray.ke (CV.V.CVC.CV, four syllables).",
+  "issue": "The text says these are minimal pairs that turn on syllable count. However, the pair is not a true minimal pair because the morpheme boundaries are different. The text acknowledges this: 'The sequence -ay- in the first word is a single closed syllable (CVC); the -ai- in the second is two syllables separated by a morpheme boundary.' This is consistent, but the term 'minimal pair' is typically used for phonemic contrasts, not morphologically conditioned differences. Calling it a 'minimal pair' is misleading.",
+  "suggestion": "Rephrase: 'A contrast that turns on syllable count exists...' or 'A near-minimal pair...'",
+  "confidence": 0.6,
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "171-175",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "Syllabification applies across morpheme boundaries through resyllabification: a coda consonant on one morpheme is re-parsed as the onset of a following vowel-initial morpheme. The compound mat-ikor (woman + possessions) thus surfaces as macikor [ma.ʨi.kor], with the underlying coda /t/ shifting to the onset of the second syllable and palatalizing before /i/",
+  "issue": "The text says 'underlying coda /t/ shifting to the onset of the second syllable' — but the example 'mat-ikor' has /t/ as the coda of the first morpheme and /i/ as the onset of the second. When resyllabification applies, the /t/ becomes the onset of the second syllable (the syllable 'ci'), not the onset of the second morpheme's syllable. The text says 'onset of the second syllable', which is correct. However, the phrase 'underlying coda /t/' is slightly misleading because in the surface form, /t/ is no longer a coda; it becomes an onset. This is a minor inaccuracy.",
+  "suggestion": "",
+  "chapter": "syllable-template",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

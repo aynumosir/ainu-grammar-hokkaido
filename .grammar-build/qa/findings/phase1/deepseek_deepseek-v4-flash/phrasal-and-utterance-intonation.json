@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "8-11",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Hokkaido Ainu has a pitch-accent system in which the phonologically distinctive unit is the syllable at which F0 rises — a rising-nucleus (上り核アクセント) system — in contrast with Standard Japanese, whose falling-nucleus system marks the syllable at which F0 subsequently drops",
+  "issue": "The description says Standard Japanese marks the syllable at which F0 drops, but Standard Japanese is a falling-nucleus system where the drop occurs after the accented syllable, not at it. The phrasing is ambiguous and could be read as contradicting the standard analysis.",
+  "suggestion": "Rephrase to: '...whose falling-nucleus system marks the syllable after which F0 drops' or '...marks the syllable at which F0 begins to fall'",
+  "confidence": 0.7,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145-154",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "One exception: the particle ya appears to select a falling rather than a rising contour in some Saru data. A form transcribed as amkir_a (from amkir ya 'have you been?') was realized with falling pitch at the utterance end",
+  "issue": "The table at lines 192-195 lists the particle ya as having falling terminal F0, but the prose says 'appears to select a falling rather than a rising contour' — this is consistent. However, the table also lists 'Interrogative (particles he, a, hawe)' as having rising F0, but ya is also an interrogative particle. The table does not include ya in the interrogative row, which is fine, but the note 'exception; possibly Japanese-contact' in the table contradicts the prose's 'contested' epistemic tag — the table presents it as a fact, while the prose hedges.",
+  "suggestion": "Add '‹contested›' to the table note for ya, or remove the epistemic tag from the prose to match the table's certainty.",
+  "confidence": 0.8,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "192-195",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Particle ya\t↘ falling at utterance end\texception; possibly Japanese-contact ‹contested›",
+  "issue": "The table cell includes '‹contested›' as an epistemic tag, but the table is a summary of cited sources (Shiraishi 2022 and Tamura 1996). Epistemic tags are used in prose to indicate the evidence grade of a claim; placing one inside a table cell is inconsistent with the book's style and may confuse readers.",
+  "suggestion": "Remove '‹contested›' from the table cell and instead add a footnote or note in the caption about the contested status.",
+  "confidence": 0.9,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "278-279",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The observation is reported here at community grade: asserted and typologically grounded, but awaiting instrumental verification ‹corpus-suggested›.",
+  "issue": "The epistemic tag '‹corpus-suggested›' is used, but the claim is explicitly described as 'community grade' and based on a Discord discussion, not corpus data. '‹corpus-suggested›' implies evidence from a corpus, which contradicts the stated source.",
+  "suggestion": "Change '‹corpus-suggested›' to '‹speculative›' or '‹original-needs-review›' to match the community-grade description.",
+  "confidence": 0.9,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "220-227",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"kera=an hum-i\" g=\"delicious=4.S sound-POSS\" tr=\"How delicious!\"",
+  "issue": "The gloss '4.S' for '=an' is inconsistent with the free translation 'How delicious!' which is an exclamation, not a statement about a 4th person subject. The morpheme '=an' is glossed as 4th person subject, but in exclamatory constructions it may function differently. Additionally, the note says 'keraan shows vowel sequence from kera + =an without glide insertion', but the example shows 'kera=an' with a space, not 'keraan'.",
+  "suggestion": "Either adjust the gloss to reflect the exclamatory function (e.g., '4.S' could be kept if accurate, but the free translation should match; or add a note explaining the gloss). Also ensure the example form matches the note's description.",
+  "confidence": 0.6,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "226",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "The form keraan shows vowel sequence from kera + =an without glide insertion (Nakagawa 2024: 43).",
+  "issue": "The note says 'keraan' but the example shows 'kera=an' with a hyphen. This is a minor inconsistency in the representation of the form within the same note.",
+  "suggestion": "Change 'keraan' to 'kera=an' or add a note that the hyphen is omitted in the citation.",
+  "confidence": 0.8,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258-259",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "iˈruska=ˌas 'we (excl.) are angry', ipˈe=ˌan",
+  "issue": "The primary stress mark is placed before the syllable (iˈruska) but the secondary stress mark is placed before the suffix (=ˌas). This is inconsistent: either both should be before the syllable or both before the morpheme. Also, 'ipˈe=ˌan' lacks a gloss or translation, unlike the previous example.",
+  "suggestion": "Standardize stress mark placement (e.g., always before the syllable: iˈruska=ˌas, iˈpe=ˌan) and add a gloss for 'ipˈe=ˌan'.",
+  "confidence": 0.7,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "256-261",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "personal suffixes such as =as (exclusive 1pl) and =an (4th person S) carry a secondary accent alongside the primary stem accent in open-syllable stems: iˈruska=ˌas 'we (excl.) are angry', ipˈe=ˌan (Kindaichi 1931; Tamura 1970, reported via Shiraishi 2022: §5.1). The secondary accent is lost when the stem ends in a closed syllable: ˈcis=an 'we cry', ˈsap=an.",
+  "issue": "The example 'ipˈe=ˌan' is given without a gloss or translation, and it is unclear whether it means 'we eat' or something else. Also, 'cis=an' is glossed as 'we cry', but '=an' is glossed as 4th person S in the previous example; here it is used for 1pl exclusive? This is inconsistent with the earlier gloss of '=an' as 4th person S.",
+  "suggestion": "Add a gloss for 'ipˈe=ˌan' (e.g., 'we eat') and clarify the person/number values of '=an' and '=as' to be consistent with the person-marking chapter.",
+  "confidence": 0.7,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "267-280",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Community discussion of Ainu prosody has noted that the intonation patterns of Hachijō-shima Japanese feel 'very close to Ainu'",
+  "issue": "The phrase 'feel very close to Ainu' is informal and subjective for a scholarly grammar. It may be acceptable as a direct quote from a community discussion, but it stands out stylistically.",
+  "suggestion": "Consider rephrasing as 'are perceived as very close to Ainu' or keep as a direct quote with quotation marks, which is already done.",
+  "confidence": 0.5,
+  "chapter": "phrasal-and-utterance-intonation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

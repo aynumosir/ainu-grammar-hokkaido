@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "7-8",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "if σ1 is closed (CVC), σ1 bears high pitch; if σ1 is open (CV), σ2 bears high pitch",
+  "issue": "The rule description implies a strict bimoraic weight distinction, but the terms 'closed' and 'open' are used without defining syllable weight in terms of moras or coda presence, which may conflate structural and prosodic properties.",
+  "suggestion": "Clarify that 'closed' means 'ends in a coda consonant (CVC)' and 'open' means 'ends in a vowel (CV)', and explicitly link this to syllable weight (heavy vs light) for consistency with line 10.",
+  "confidence": 0.9,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "10",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "words with a heavy (closed) first syllable are trochaic in accent, and words with a light (open) first syllable are iambic",
+  "issue": "Describes heavy syllables as trochaic (H-L), but the overall system is defined as iambic (L-H); this contradicts the claimed iambic pattern and misaligns with the actual pitch behavior described later (e.g., rising nucleus).",
+  "suggestion": "Revise to: 'words with a heavy (closed) first syllable are accented on σ1 (H-initial), and words with a light (open) first syllable are accented on σ2 (L-H rise)', to avoid metrical mislabeling.",
+  "confidence": 0.95,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "47-48",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The exception-list words create lexical contrasts wherever a segmentally identical (or near-identical) word follows the regular rule.",
+  "issue": "Implies that any exception word with a rule-following homophone creates a minimal pair, but later states (line 169–173) that only three such pairs are established and others are not systematically documented, creating a contradiction.",
+  "suggestion": "Revise to: 'The exception-list words *can* create lexical contrasts where a segmentally identical (or near-identical) word follows the regular rule, though only a few such pairs are attested.'",
+  "confidence": 0.9,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "49",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"51\" />; <Ref k=\"shiraishi2022\" p=\"§5.1\" />:",
+  "issue": "Two citations are given in sequence with no connecting text; the semicolon suggests joint support, but the second citation lacks a page locator after the semicolon, making it ambiguous whether §5.1 applies to both or only the second.",
+  "suggestion": "Use comma or rephrase: '<Ref k=\"nakagawa2024\" p=\"51\" /> and <Ref k=\"shiraishi2022\" p=\"§5.1\" />'",
+  "confidence": 0.95,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "110",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "nísap : nisáp",
+  "issue": "Colon used with spaces around it in 'nísap : nisáp' — inconsistent with typical typographic style for minimal pairs, which usually uses a single space or en-dash.",
+  "suggestion": "Use en-dash: 'nísap–nisáp' or 'nísap : nisáp' with non-breaking spaces if colon is retained.",
+  "confidence": 0.8,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "220",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "by 原則1",
+  "issue": "Japanese term '原則1' (genzoku 1, 'principle 1') appears untranslated and unexplained, while the rest of the text is in English; this breaks register and accessibility.",
+  "suggestion": "Replace with 'by Rule 1' or define the term upon first use.",
+  "confidence": 0.95,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "223",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "by 原則2",
+  "issue": "Same as line 220 — untranslated Japanese term '原則2' used without explanation.",
+  "suggestion": "Replace with 'by Rule 2'.",
+  "confidence": 0.95,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "238",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹proposed› (<Ref k=\"aynucorporadiscord\" />; palestine_2026, 2024-08-12)",
+  "issue": "Epistemic tag ‹proposed› is not in the defined set of evidence grades (consensus, contested, corpus-confirmed, etc.); this is a pipeline register leak.",
+  "suggestion": "Replace ‹proposed› with ‹speculative› or ‹community-observed› if not formally attested.",
+  "confidence": 0.9,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "251",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹speculative› (<Ref k=\"aynucorporadiscord\" />; nukopoli, 2024-12-09)",
+  "issue": "Using ‹speculative› for a community observation is acceptable, but attaching it to a Discord source without corroboration is appropriate — however, the tag should not appear in the prose without being defined in context.",
+  "suggestion": "Ensure ‹speculative› is explained in the chapter’s methodology or remove the tag and integrate the source as parenthetical.",
+  "confidence": 0.8,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "188",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />; <Ref k=\"nakagawa2024\" p=\"49\" />",
+  "issue": "Semicolon-separated citations lack parallel structure: the first has a section marker (§3.1), the second a page number — minor inconsistency in locator format.",
+  "suggestion": "Use consistent locators or separate with 'and' instead of semicolon.",
+  "confidence": 0.7,
+  "chapter": "lexical-contrastive-accent-minimal-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

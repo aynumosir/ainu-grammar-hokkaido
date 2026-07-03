@@ -1,0 +1,635 @@
+[
+ {
+  "id": "katakana-and-small-kana-codas~p1#010",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "135",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /y/ is not represented by a full-size イ. The text states there is no dedicated small kana.",
+    "quote": "イ",
+    "suggestion": "イ",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 129: full-size イ used for coda /y/, marked with `lang=\"ain-Kana\"`, which may extend the language tag beyond Ainu-specific orthographic forms.",
+    "quote": "<td lang=\"ain-Kana\">イ</td>",
+    "suggestion": "See suggestion for line 129.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#009",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /w/ is not represented by a full-size ウ. The text states there is no dedicated small kana.",
+    "quote": "ウ",
+    "suggestion": "ウ",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Full-size ウ is used for coda /w/, which is correct per the text, but the use of `lang=\"ain-Kana\"` on a standard Japanese kana character that is not part of the Ainu-specific extended set may be inconsistent with markup intent. Similar instances occur at line 135 (イ).",
+    "quote": "<td lang=\"ain-Kana\">ウ</td>",
+    "suggestion": "Consider whether `lang=\"ain-Kana\"` should apply only to Ainu-specific kana forms (e.g., small coda kana), or if current usage is intentionally broad.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#005",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "105",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /n/ is 𛅧, not the full-size character.",
+    "quote": "ン",
+    "suggestion": "𛅧",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The full-size katakana ン (U+30F3) is used for coda /n/, which is correct per the text, but the `lang=\"ain-Kana\"` attribute may be misleading since ン is a shared Japanese-Ainu character without distinct Ainu-specific phonetic value in this context. However, this is likely intentional for consistency. No error, but potential ambiguity in tagging.",
+    "quote": "<td lang=\"ain-Kana\">ン</td>",
+    "suggestion": null,
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#026",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "140",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Coda /h/ is listed in the table as a standard coda, but the accompanying note (line 143) states its phonemic status is disputed, and line 210 reiterates this dispute. However, the table presents it without qualification, creating a contradiction between presentation and claim.",
+    "quote": "<td><i lang=\"ain-Latn\">h</i></td>",
+    "suggestion": "Add a footnote or inline marker (e.g., ‹contested›) in the table cell for /h/ to align with the textual assessment.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#025",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "44",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text discusses /c/ as a phoneme, but the coda table (and Ainu phonotactics) do not include /c/ as a possible coda consonant. While this sentence is in the CV syllabary section, the lack of any mention that /c/ does not occur in coda position creates a potential implication that it might, which contradicts the defined coda inventory in <Xr ch=\"syllable-template\" />.",
+    "quote": "The affricate /c/ and its katakana representation carry an orthographic history.",
+    "suggestion": "Add a clarifying sentence noting that /c/ occurs only in onset position and not in codas.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#022",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "99",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table shows ㇳ (small to) for coda /t/, but the standard small-kana for /t/ in Ainu is actually ㇳ (small to) — this is correct. However, the Unicode position column says U+31F3 (small to), but the character displayed is ㇳ which is indeed U+31F3. No inconsistency here. Wait — the issue is that the table row for /t/ shows ㇳ, but the standard small-kana for /t/ in Ainu is actually ㇳ (small to) — this is correct. Let me re-check: the table shows ㇳ for /t/, which is correct. No inconsistency found.",
+    "quote": "<td lang=\"ain-Kana\">ㇳ</td>",
+    "suggestion": null,
+    "confidence": 0
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Actually, the table shows ㇳ for /t/, which is correct. No issue.",
+    "quote": "<td lang=\"ain-Kana\">ㇳ</td>",
+    "suggestion": null,
+    "confidence": 0
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table shows ㇳ (small to) for coda /t/, but the standard small-kana for /t/ in Ainu is actually ㇳ (small to) — this is correct. No inconsistency.",
+    "quote": "<td lang=\"ain-Kana\">ㇳ</td>\n<td>U+31F3 (small to)</td>",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#020",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "268",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /s/ are ㇱ and ㇲ, not the full-size characters.",
+    "quote": "ㇱ or ㇲ",
+    "suggestion": "ㇱ or ㇲ",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /r/ are ㇻ, ㇼ, ㇽ, ㇾ, ㇿ, not the full-size characters.",
+    "quote": "any of the five members of the ra-series or the full-size ル",
+    "suggestion": "any of the five members of the ra-series (ㇻ, ㇼ, ㇽ, ㇾ, ㇿ) or the full-size ル",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /h/ are ㇵ, ㇶ, ㇷ, ㇸ, ㇹ, not the full-size characters.",
+    "quote": "any of the five h-series members",
+    "suggestion": "any of the five h-series members (ㇵ, ㇶ, ㇷ, ㇸ, ㇹ)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#019",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "236",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions yōon contractions for palatalized syllables, but the examples provided (チャ, ショ) are not typically considered yōon in the same way as キョ, キュ, etc. This might be a minor imprecision in terminology or example choice.",
+    "quote": "チャ, ショ",
+    "suggestion": "チャ, シュ, etc.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#018",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "218",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that glides /w/ and /y/ are written with full-size ウ and イ respectively, but the context implies these are not small kana forms.",
+    "quote": "ウ and イ",
+    "suggestion": "ウ and イ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#017",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "205",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /h/ are ㇵ, ㇶ, ㇷ, ㇸ, ㇹ, not the full-size characters.",
+    "quote": "ㇵ ㇶ ㇷ ㇸ ㇹ",
+    "suggestion": "ㇵ ㇶ ㇷ ㇸ ㇹ",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /h/ are ㇵ, ㇶ, ㇷ, ㇸ, ㇹ, not the full-size characters.",
+    "quote": "ㇵ after /a/, ㇶ after /i/, ㇷ after /u/, ㇸ after /e/, ㇹ after /o/",
+    "suggestion": "ㇵ after /a/, ㇶ after /i/, ㇷ after /u/, ㇸ after /e/, ㇹ after /o/",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#016",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "192",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /n/ is 𛅧, not the full-size character.",
+    "quote": "𛅧",
+    "suggestion": "𛅧",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#015",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "187",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states coda /n/ is written with full-size ン, but the small kana version 𛅧 is discussed as a possibility.",
+    "quote": "ン",
+    "suggestion": "ン",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#014",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions full-size ル for coda /r/, but the standard system uses small kana.",
+    "quote": "ル",
+    "suggestion": "ル",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /r/ after /u/ is ㇽ, not the full-size character.",
+    "quote": "ㇽ",
+    "suggestion": "ㇽ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#013",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "168",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /r/ after /o/ is ㇿ, not the full-size character.",
+    "quote": "ㇿ",
+    "suggestion": "ㇿ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#012",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "151",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for 'hu' is ㇷ, not the full-size character.",
+    "quote": "ㇷ",
+    "suggestion": "ㇷ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#011",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "141",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /h/ are ㇵ, ㇶ, ㇷ, ㇸ, ㇹ, not the full-size characters.",
+    "quote": "ㇵ ㇶ ㇷ ㇸ ㇹ",
+    "suggestion": "ㇵ ㇶ ㇷ ㇸ ㇹ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#008",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "123",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /r/ are ㇻ, ㇼ, ㇽ, ㇾ, ㇿ, not the full-size characters.",
+    "quote": "ㇻ ㇼ ㇽ ㇾ ㇿ",
+    "suggestion": "ㇻ ㇼ ㇽ ㇾ ㇿ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#007",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "118",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /m/ is ㇺ, not the full-size character.",
+    "quote": "ㇺ",
+    "suggestion": "ㇺ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#006",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "111",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /p/ is ㇷ゚, not the full-size character.",
+    "quote": "ㇷ゚",
+    "suggestion": "ㇷ゚",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#004",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "99",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /t/ is ㇳ, not the full-size character.",
+    "quote": "ㇳ",
+    "suggestion": "ㇳ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#003",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "93",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /s/ is ㇱ, not the full-size character.",
+    "quote": "ㇱ",
+    "suggestion": "ㇱ",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /s/ is ㇲ, not the full-size character.",
+    "quote": "ㇲ",
+    "suggestion": "ㇲ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#002",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "87",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana for coda /k/ is ㇰ, not the full-size character.",
+    "quote": "ㇰ",
+    "suggestion": "ㇰ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#001",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "26",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The small kana ㇿ is used for coda /r/, not ㇰ. The text seems to be conflating the two.",
+    "quote": "ㇿ for coda /r/ and ㇰ for coda /k",
+    "suggestion": "ㇿ for coda /r/ and ㇰ for coda /k",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#028",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "250",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 191: two consecutive `<Ref>` tags without syntactic connection in the sentence.",
+    "quote": "<Ref k=\"utari1994\" />; <Ref k=\"ono2022\" />.",
+    "suggestion": "Join with \"and\": \"<Ref k=\"utari1994\" /> and <Ref k=\"ono2022\" />.\"",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#027",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "191",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Two citations are given in sequence with no conjunction or punctuation between them in the prose, which is syntactically awkward and may indicate a formatting error.",
+    "quote": "<Ref k=\"nakagawa2024\" />; <Ref k=\"shiraishi2022\" />.",
+    "suggestion": "Insert a conjunction: \"<Ref k=\"nakagawa2024\" /> and <Ref k=\"shiraishi2022\" />.\"",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#024",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "271",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The `paren` attribute in the `<Ref>` tag is non-standard and not defined in the markup specification provided; it may be a pipeline artifact or malformed citation. All other `<Ref>` uses are simple `<Ref k=\"key\" />`.",
+    "quote": "<Ref k=\"utari1994\" paren />",
+    "suggestion": "Either remove `paren` or convert to standard form; if intended to produce parentheses, the rendering layer should handle it — the source should not include presentation logic.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#023",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "259",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term \"toc-chapter\" appears to be a pipeline register leak — likely a typo or internal placeholder (e.g., \"TOC chapter\") meant to be replaced with \"see the chapter\" or similar reader-facing phrasing.",
+    "quote": "The toc-chapter for multi-script rendering and font interoperability is",
+    "suggestion": "Replace \"toc-chapter\" with \"The chapter on\" or \"See the chapter on\"",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "katakana-and-small-kana-codas~p1#021",
+  "chapter": "katakana-and-small-kana-codas",
+  "lines": "54",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag ‹consensus› is attached to a claim supported only by a single Discord message, which is not sufficient evidence for a consensus claim.",
+    "quote": "community discussion has confirmed the consensus <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-17) ‹consensus›.",
+    "suggestion": "Either remove ‹consensus› or add multiple independent sources that demonstrate consensus.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

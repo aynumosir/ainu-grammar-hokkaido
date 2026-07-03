@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "114",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ronnu</i> / <i lang=\"ain-Latn\">ronno</i>",
+  "issue": "Inconsistent orthographic representation of the same stem variant: 'ronnu' vs 'ronno' are presented as alternants, but the difference in final vowel (-u vs -o) is not addressed or explained, and may reflect dialectal or transcriptional variation that should be marked.",
+  "suggestion": "Add a dialect or transcription note explaining the -u/-o variation, or standardize to one form with a footnote if the variation is non-contrastive.",
+  "confidence": 0.9,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "123",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"express.train go.PL=4.S CONJ COP if draw.water=4.S even be.unable because\"",
+  "issue": "The gloss 'go.PL' implies a plural stem, but the morpheme is 'paye', which is glossed as plural in the table, yet the free translation 'we go' uses first-person plural, while the suffix '=an' is glossed as '4.S' (third-person singular or honorific), creating a person/number mismatch.",
+  "suggestion": "Recheck the person index: if the subject is first-person plural, the gloss should reflect that (e.g. =1PL), not =4.S. Alternatively, clarify in the note that 4.S is used for plural reference in this context.",
+  "confidence": 0.95,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "133",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.POSS=father 4.POSS=mother 4.A=kill.PL PL CONJ then\"",
+  "issue": "The morpheme 'a=' is glossed as '4.POSS' for father and mother, but as '4.A' for the verb — inconsistent role marking. If 'a=' is a genitive possessor on nouns, it should not be the same as the agent index on the verb unless homophony is noted. The agent index should be on the verb as '=a' or similar, not 'a='.",
+  "suggestion": "Revise gloss to distinguish possessor from agent: e.g. '4.POSS=father 4.POSS=mother =a-kill.PL' or clarify the allomorphy in a note.",
+  "confidence": 0.9,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "184",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"143–145\" /> ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim based on a surface-string count, but the citation is to Nakagawa2024, a secondary source, not direct corpus analysis. This inflates the evidential strength: secondary interpretation should not carry ‹corpus-suggested› unless the source explicitly presents corpus data.",
+  "suggestion": "Change to ‹contested› or ‹speculative›, or remove the tag if Nakagawa's presentation is interpretive.",
+  "confidence": 0.85,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "399",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"Orok-ASS come.PL=PL\"",
+  "issue": "The gloss 'come.PL=PL' duplicates plural marking: 'come.PL' already reflects the plural stem, and '=PL' glosses '=hci', but the morpheme '=hci' is a bound clitic, not a free plural particle. The gloss should reflect grammatical roles, not just semantic plurality. 'PL' is too vague — it should be dialect-specific, e.g. 'PL.SAK' or 'CLIT.PL'.",
+  "suggestion": "Revise to 'come.PL=CLIT.PL' or 'come.PL=pa' analog, with a note on Sakhalin plural marking.",
+  "confidence": 0.9,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "344",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"fur only 4.A=wear CONJ sleep=4.S PL\"",
+  "issue": "The free translation is 'We wore only fur and slept', but the gloss '4.A=wear' and 'sleep=4.S' uses fourth person, which may not clearly encode first-person plural. The note says 'we', so the gloss should reflect that the 4.S index is being used for first-person plural reference, or be glossed as 1PL.",
+  "suggestion": "Add a note or adjust gloss to 'sleep=4.S[1PL]' to clarify the index's referent.",
+  "confidence": 0.8,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "90",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">oka</i> beside <i lang=\"ain-Latn\">okay</i> elsewhere",
+  "issue": "Inconsistent representation of the same stem: 'oka' vs 'okay' — the final -y is variably included. This variation should be either standardized or explained (e.g. as dialectal or phonological).",
+  "suggestion": "Use one form consistently (e.g. 'okay') and note variation, or use 'oka(y)' as in line 107.",
+  "confidence": 0.9,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "112",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">payeka(y)</i> / <i lang=\"ain-Latn\">payoka(y)</i>",
+  "issue": "Two variants with optional -y, but the vowel difference between 'payeka' and 'payoka' is not addressed. This may reflect dialectal or phonological variation that should be noted.",
+  "suggestion": "Add a dialect note or standardize if one form is dominant.",
+  "confidence": 0.85,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "115",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">eram(u)an</i>",
+  "issue": "Parentheses used to mark optional -u, but in other entries variation is shown with slashes. Inconsistent format for representing allomorphy.",
+  "suggestion": "Use slash notation: 'eraman / eramuan' or standardize to one form with a note.",
+  "confidence": 0.8,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">anu</i> / <i lang=\"ain-Latn\">ama</i>",
+  "issue": "Stem alternation between 'anu' and 'ama' is large and unexplained. While this may be accurate, the orthographic difference is substantial and should be flagged if it reflects dialectal split or transcription variance.",
+  "suggestion": "Add dialect labels or note the variation source.",
+  "confidence": 0.7,
+  "chapter": "suppletive-verbal-number",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

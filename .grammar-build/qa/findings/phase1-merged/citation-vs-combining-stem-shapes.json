@@ -1,0 +1,510 @@
+[
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#013",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "508",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "In the summary table, the surface form for the /i/ → [y] rule is given as '<i lang=\"ain-Latn\">kuyunin</i>'. However, the example in the text (line 328) shows '<i lang=\"ain-Latn\">kuyunin</i>' as the surface form, and the note in the example (line 331) also refers to 'ku=yunin'. The summary table should be consistent with the examples.",
+    "quote": "<i lang=\"ain-Latn\">kuyunin</i>",
+    "suggestion": "Change the surface form in the summary table to '<i lang=\"ain-Latn\">kuyunin</i>'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form <i lang=\"ain-Latn\">kuyunin</i> in the summary table does not match the earlier presentation of the same form as <i lang=\"ain-Latn\">ku=ype</i> and <i lang=\"ain-Latn\">ku=ikra</i>, where the glide is represented as [y] but spelled with 'y'. However, in the example at line 327–333, the surface form is given as <i lang=\"ain-Latn\">kuyunin</i>, while the morphemically segmented form is <i lang=\"ain-Latn\">ku=iunin</i>. The spelling should be consistent: either use <i lang=\"ain-Latn\">ku=yunin</i> or <i lang=\"ain-Latn\">kuyunin</i> throughout.",
+    "quote": "<i lang=\"ain-Latn\">kuyunin</i>",
+    "suggestion": "Standardize the representation of the glide [y] in combining forms: use <i lang=\"ain-Latn\">ku=yunin</i> in the table to match the morpheme boundary notation elsewhere.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#025",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "529",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The summary table lists the surface form as <i lang=\"ain-Latn\">attus</i>, but in the example at line 393–400, the form is used in a phrase as <i lang=\"ain-Latn\">hangan attus mi wa</i>, and in the derivation it is spelled <i lang=\"ain-Latn\">attus</i>. However, in the dialect comparison at line 372, the Saru form is given as <i lang=\"ain-Latn\">ahrus</i>, suggesting the root is <i lang=\"ain-Latn\">rus</i>. The summary table should reflect the correct morphological segmentation <i lang=\"ain-Latn\">at-rus</i> → <i lang=\"ain-Latn\">attus</i> consistently.",
+    "quote": "<i lang=\"ain-Latn\">attus</i>",
+    "suggestion": "Ensure the summary table correctly reflects the compound structure: underlying <i lang=\"ain-Latn\">at-rus</i>, surface <i lang=\"ain-Latn\">attus</i>.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#024",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "514",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The underlying form in the summary table is given as <i lang=\"ain-Latn\">kor-tar</i>, but in the earlier table (line 64), the example is <i lang=\"ain-Latn\">a=kor tar</i> → [aˈkottar], implying the underlying form is <i lang=\"ain-Latn\">kor tar</i> (without a hyphen). The hyphen in the summary table incorrectly suggests a morpheme boundary within a single word.",
+    "quote": "<i lang=\"ain-Latn\">kor-tar</i>",
+    "suggestion": "Use <i lang=\"ain-Latn\">kor tar</i> or <i lang=\"ain-Latn\">kor + tar</i> in the summary table to avoid implying incorrect segmentation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#023",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "494",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the summary table, the underlying form for the palatalization rule is given as <i lang=\"ain-Latn\">mat-ikor</i>, but in the earlier table (line 160), it is correctly segmented as <i lang=\"ain-Latn\">mat-ikor</i> and in the derivation (line 187) as <i lang=\"ain-Latn\">mat-ikor</i>. However, in the example at line 211–220, the morpheme boundary is correctly shown as <i lang=\"ain-Latn\">mat-ikor</i>, but the summary table omits the hyphen, potentially implying a different segmentation.",
+    "quote": "<i lang=\"ain-Latn\">mat-ikor</i>",
+    "suggestion": "Ensure consistent hyphenation: use <i lang=\"ain-Latn\">mat-ikor</i> in the summary table to match the earlier presentation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#016",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "211, 326",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ex component uses a non-standard attribute 'ain' that is not part of the documented API. This appears to be a pipeline artifact.",
+    "quote": "ain=\"usa macikor usa tamasay\"",
+    "suggestion": "Remove the ain attribute; if needed, incorporate the surface form into the m attribute or note.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#015",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "326-333",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same inconsistency as above: m shows underlying form (ku=iunin) instead of surface form (ku=yunin). The non-standard ain attribute provides the surface form.",
+    "quote": "m=\"ku=iunin\" ain=\"kuyunin\"",
+    "suggestion": "Change m to m=\"ku=yunin\" and remove the ain attribute.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#014",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "211-220",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The m attribute shows the underlying form (mat-ikor) rather than the surface form (macikor), while the non-standard ain attribute gives the surface form. In later examples (line 392-400), m correctly shows the surface form. This inconsistent use of m across examples violates the component's intended usage.",
+    "quote": "m=\"usa mat-ikor usa tamasay\" ain=\"usa macikor usa tamasay\"",
+    "suggestion": "Change m to show the surface form with morpheme boundaries: m=\"usa macikor usa tamasay\" and remove the ain attribute.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#020",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "414",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The rule notation '/CV + CVC/' does not match the structure of kor+e (CVC+V). The intended generalization is unclear.",
+    "quote": "/CV + CVC/ → σ2 accent",
+    "suggestion": "Clarify the notation, e.g., '/CVC + V/ → σ2 accent' or provide a more explicit description.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#019",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "375",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'has not been independently verified in a read primary source' is meta-commentary about the verification process, addressing the production pipeline rather than the reader.",
+    "quote": "This Saru form is reported by the community and has not been independently verified in a read primary source ‹speculative›.",
+    "suggestion": "Rephrase to state the fact directly, e.g., 'This Saru form is reported by the community but is not attested in published primary sources.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#012",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "494",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "In the summary table, the surface form for the /t/ → /c/ rule is given as '<i lang=\"ain-Latn\">macikor</i>'. However, the example in the text (line 161) shows '<i lang=\"ain-Latn\">macikor</i>' as the surface form, and the note in the example (line 219) also refers to 'macikor'. The summary table should be consistent with the examples.",
+    "quote": "<i lang=\"ain-Latn\">macikor</i>",
+    "suggestion": "Change the surface form in the summary table to '<i lang=\"ain-Latn\">macikor</i>'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#009",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "375",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'speculative' is applied to a claim based on a Discord attribution, which is typically considered a weaker form of evidence than a corpus.",
+    "quote": "‹speculative›",
+    "suggestion": "Consider changing the evidence grade to 'original-needs-review' if the Discord attribution is the sole basis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#007",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "341",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'speculative' is applied to a claim based on a Discord attribution, which is typically considered a weaker form of evidence than a corpus.",
+    "quote": "‹speculative›",
+    "suggestion": "Consider changing the evidence grade to 'original-needs-review' if the Discord attribution is the sole basis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#006",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "331",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that '*kuyyunin' is ungrammatical because the glide is not an underlying phoneme. However, the preceding text states that the stem /i/ weakens to the glide [y], resulting in 'ku=yunin'. This implies that [y] *is* a surface realization of an underlying phoneme, and the ungrammaticality of '*kuyyunin' might stem from a different reason, perhaps a double glide or incorrect application of the rule.",
+    "quote": "Before the /i/-initial stem iunin, ku= retains its vowel; the stem-initial /i/ weakens to the glide [y], giving ku=yunin (Chitose; Nakagawa 2024: 40). *kuyyunin is ungrammatical because the glide is not an underlying phoneme.",
+    "suggestion": "Clarify the reason for '*kuyyunin' being ungrammatical. If it's due to a double glide, state that. If the glide is indeed a surface realization, the explanation needs refinement.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#004",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "250",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'corpus-confirmed' is applied to a claim based on a Discord attribution, which is typically considered a weaker form of evidence than a corpus.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "Consider changing the evidence grade to 'speculative' or 'original-needs-review' if the Discord attribution is the sole basis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#003",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "219",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'macikor' is the surface form of 'mat' + 'ikor', but the example itself shows 'mat-ikor' as the underlying form and 'macikor' as the surface form. The note is slightly redundant and could be more concise.",
+    "quote": "macikor is the surface form of the compound mat 'woman' + ikor 'treasure'; the coda /t/ of mat resyllabifies before the /i/-initial ikor and palatalizes to /c/.",
+    "suggestion": "Shorten the note to: 'macikor is the surface form of the compound mat-ikor; the coda /t/ of mat resyllabifies before the /i/-initial ikor and palatalizes to /c/.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#001",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "106",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'corpus-suggested' is applied to a claim based on a Discord attribution, which is typically considered a weaker form of evidence than a corpus.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Consider changing the evidence grade to 'speculative' or 'original-needs-review' if the Discord attribution is the sole basis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#022",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "522",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The evidence grade ‹corpus-suggested› is attached directly to the surface form in the summary table, but the only support cited is a Discord attribution (nukopoli, 2024-12-11), which is not a corpus source. This inflates the epistemic status of the claim.",
+    "quote": "[ku] ‹corpus-suggested›",
+    "suggestion": "Move the ‹corpus-suggested› tag to the prose and cite the Discord source explicitly, or downgrade to ‹community-attested› if corpus confirmation is lacking.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#021",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "412",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss of the verb <i lang=\"ain-Latn\">koré</i> as 'give (to someone)' implies a ditransitive meaning, but the proposed morphological analysis as <i lang=\"ain-Latn\">kor</i> 'have' + causative <i lang=\"ain-Latn\">-e</i> would yield 'cause to have', which is semantically distinct from 'give'. The free translation 'give' is not fully supported by the gloss components.",
+    "quote": "the combining stem <i lang=\"ain-Latn\">kor</i> 'have' plus the causative suffix <i lang=\"ain-Latn\">-e</i>",
+    "suggestion": "Either adjust the gloss of <i lang=\"ain-Latn\">koré</i> to reflect 'cause to have' or clarify the semantic extension from 'cause to have' to 'give'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#018",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "214-215",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss uses singular 'woman-treasure' and 'bead.necklace', but the free translation uses plurals 'women's treasures' and 'bead-necklaces'. This is a minor mismatch in number.",
+    "quote": "g=\"various woman-treasure various bead.necklace\" tr=\"women's treasures and bead-necklaces\"",
+    "suggestion": "Either change gloss to 'woman-treasures' and 'bead-necklaces' or adjust translation to singular.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#017",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "138",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The resyllabification result is given as '…V.C' but should be '…V.ti' or '…V.Ci' (the vowel /i/ is part of the syllable). The current phrasing is incomplete.",
+    "quote": "the morphemic sequence …V.ti… resyllabifies to give …V.C",
+    "suggestion": "Change to '…V.ti' or '…V.Ci' to include the vowel.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#011",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "431",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade 'contested' is applied to a claim based on a Discord attribution, which is typically considered a weaker form of evidence than a corpus.",
+    "quote": "The disparity reflects editorial marking practice rather than speaker frequency ‹contested›.",
+    "suggestion": "Consider changing the evidence grade to 'speculative' or 'original-needs-review' if the Discord attribution is the sole basis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#010",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "399",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states the corpus count is 24 tokens, which matches the claim in the main text (line 369). However, the example itself is marked with dial=\"SAR\", which is the Saru dialect, and the main text (line 372) states that the Saru dialect has a different reflex ('ahrus'). This creates a contradiction regarding which dialect the example illustrates.",
+    "quote": "attus is the standard Hokkaido form of the compound at-rus; the /t + r/ cluster has assimilated to /tt/. Corpus count: 24 tokens.",
+    "suggestion": "Either change the `dial` attribute of the example to reflect a general Hokkaido dialect, or adjust the note to clarify that this example, despite being marked SAR, illustrates the general Hokkaido form.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#008",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "369",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that 'attus' is corpus-confirmed is immediately followed by the same evidence grade in guillemets. This is redundant.",
+    "quote": "The form <i lang=\"ain-Latn\">attus</i> is corpus-confirmed (24 tokens) ‹corpus-confirmed›.",
+    "suggestion": "Remove the redundant evidence grade in guillemets: 'The form <i lang=\"ain-Latn\">attus</i> is corpus-confirmed (24 tokens).'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#005",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "313",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '*<i lang=\"ain-Latn\">k=ipe</i>' is ungrammatical, but the previous section (lines 247-250) explains that before /i/, elision does not apply, and the stem /i/ weakens to [y], resulting in 'ku=ype'. The form '*<i lang=\"ain-Latn\">k=ipe</i>' would be the result of elision before /i/, which is stated to not happen. The inclusion of '*<i lang=\"ain-Latn\">k=ipe</i>' as an ungrammatical form seems to contradict the rule described earlier.",
+    "quote": "Nakagawa (2024: 52–53) confirms the ungrammatical forms *<i lang=\"ain-Latn\">k=ipe</i> and *<i lang=\"ain-Latn\">ku=ykra</i> and *<i lang=\"ain-Latn\">k=ikra</i> alike, with only <i lang=\"ain-Latn\">ku=ikra</i> grammatical before the closed /i/-initial stem.",
+    "suggestion": "Remove '*<i lang=\"ain-Latn\">k=ipe</i>' from the list of ungrammatical forms, as it is not directly relevant to the rule about elision before /i/ and subsequent vowel weakening.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "citation-vs-combining-stem-shapes~p1#002",
+  "chapter": "citation-vs-combining-stem-shapes",
+  "lines": "116",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '-pe' is a C-allomorph and '-p' is a V-allomorph. However, '-pe' itself contains a vowel, suggesting it might be a C-allomorph, but the explanation for '-p' as a V-allomorph is unclear in this context. It's more likely that '-pe' is the C-allomorph and '-p' is the V-allomorph, but the phrasing is confusing.",
+    "quote": "the /r/-final combining stem takes the C-allomorph <i lang=\"ain-Latn\">-pe</i> (<i lang=\"ain-Latn\">kor-pe</i> → 'what one has'), whereas a genuine /rV/-final base would take the V-allomorph <i lang=\"ain-Latn\">-p</i>.",
+    "suggestion": "Clarify the distinction between C-allomorph and V-allomorph in relation to '-pe' and '-p'. For example: 'the /r/-final combining stem takes the C-allomorph <i lang=\"ain-Latn\">-pe</i> (<i lang=\"ain-Latn\">kor-pe</i> → 'what one has'), whereas a genuine /rV/-final base would take the V-allomorph <i lang=\"ain-Latn\">-p</i>.'",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

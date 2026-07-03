@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "10",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"rok\" gl=\"sit (PL)\" />",
+  "issue": "The gloss \"sit (PL)\" uses parentheses, but the corresponding singular form on line 9 uses \"(SG)\". The formatting of the glosses should be consistent between singular and plural.",
+  "suggestion": "Change to \"sit (PL)\" to match \"sit (SG)\" or use consistent formatting such as \"sit.PL\" for both",
+  "confidence": 0.95,
+  "chapter": "perfective-anterior-a",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "52",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "arki=an rok",
+  "issue": "The gloss \"come.PL=4.S PFV.PL\" includes \"PFV.PL\" for rok, but the free translation is \"They came.\", which does not indicate perfective aspect. The gloss suggests a perfective reading that is not reflected in the translation.",
+  "suggestion": "Either adjust the gloss to \"come.PL=4.S\" or update the translation to reflect perfective aspect, e.g., \"They have come.\"",
+  "confidence": 0.9,
+  "chapter": "perfective-anterior-a",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "275",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<td><i lang=\"ain-Latn\">rok(o)ka(y)</i></td>",
+  "issue": "The form \"rok(o)ka(y)\" uses optional parentheses inconsistently with other entries in the table. The plural form should be presented consistently with the dialect variants.",
+  "suggestion": "Use a consistent format such as \"rokoka(y)\" or specify variants as in other rows",
+  "confidence": 0.85,
+  "chapter": "perfective-anterior-a",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "280",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<td><i lang=\"ain-Latn\">rok(o)ka(y) anan</i> (doubled; no meaning difference)</td>",
+  "issue": "The form \"rok(o)ka(y) anan\" appears to be a doubled form, but the notation is unclear. The parentheses and spacing should be consistent with the rest of the table.",
+  "suggestion": "Clarify the form, e.g., \"rokoka(y) + anan\" or use consistent parentheses notation",
+  "confidence": 0.8,
+  "chapter": "perfective-anterior-a",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "370",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<span lang=\"ja\">き</span>",
+  "issue": "The Japanese text 'き' is not translated or explained in the surrounding prose, though the chapter otherwise translates Japanese. This may confuse readers unfamiliar with Japanese script.",
+  "suggestion": "Add a translation or explanation, e.g., \"Classical Japanese <span lang=\"ja\">き</span> (ki, direct-evidential past)\"",
+  "confidence": 0.9,
+  "chapter": "perfective-anterior-a",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "381",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<span lang=\"ja\">けり</span>",
+  "issue": "The Japanese text 'けり' is not translated or explained in the surrounding prose, though the chapter otherwise translates Japanese. This may confuse readers unfamiliar with Japanese script.",
+  "suggestion": "Add a translation or explanation, e.g., \"Classical Japanese <span lang=\"ja\">けり</span> (keri, indirect-evidential past)\"",
+  "confidence": 0.9,
+  "chapter": "perfective-anterior-a",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "181",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "‹original-needs-review›",
+  "issue": "The editorial tag ‹original-needs-review› is visible in the prose, which is a pipeline register leak. These tags should not appear in the final text.",
+  "suggestion": "Remove the tag or replace with appropriate scholarly qualification",
+  "confidence": 0.95,
+  "chapter": "perfective-anterior-a",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

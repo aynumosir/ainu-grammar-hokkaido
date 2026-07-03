@@ -1,0 +1,518 @@
+[
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#013",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "255",
+  "category": "copyedit",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Subject-verb agreement error: 'reduplicate' should be 'reduplicates' (singular, agreeing with 'clitic').",
+    "quote": "Only the person clitic reduplicate with a fourth-person subject, not the full stem.",
+    "suggestion": "Change 'reduplicate' to 'reduplicates'.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Subject-verb agreement error: 'clitic' is singular but 'reduplicate' is plural. Should be 'reduplicates'.",
+    "quote": "Only the person clitic reduplicate with a fourth-person subject, not the full stem.",
+    "suggestion": "Only the person clitic reduplicates with a fourth-person subject, not the full stem.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#004",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "249-256",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PFV' for 'a' is inconsistent with the note and translation which describe iterative or emphatic-continuative aspect, not just perfective.",
+    "quote": "m=\"onkami=an a =an a\"\ng=\"worship=4.S PFV =4.S PFV\"\ntr=\"(I) worshipped again and again.\"\nnote=\"Reduplicated a … a with a fourth-person subject: =an attaches to the second a. Only the person clitic reduplicate with a fourth-person subject, not the full stem.\"",
+    "suggestion": "Change gloss 'PFV' to 'ITR' or 'ITER' or 'CONT'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string shows `=an` on the second `a`, but the gloss line has `=4.S PFV` only once, and does not repeat the person clitic in the second auxiliary. The gloss should reflect the reduplicated person clitic.",
+    "quote": "m=\"onkami=an a =an a\"",
+    "suggestion": "g=\"worship=4.S PFV =4.S PFV\"",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#012",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "197",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to the claim about Japanese contact influence (lines 189-197), but the cited sources are Bugaeva (2012) and Nakagawa (2024), which are scholarly works. The tag is not justified by the prose: no separate voice of contestation is presented. The tag appears to inflate the epistemic uncertainty beyond what the argument supports.",
+    "quote": "‹contested›",
+    "suggestion": "Either provide a specific dissenting source or remove the tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#010",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "180-186",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This claim about wa okere carrying 'regret or dismay' contradicts the earlier characterization in the section (lines 166-168) which says wa okere 'foregrounds thoroughness of completion rather than disappearance of the outcome' and does not mention any affective nuance. The table at line 51 describes it as 'action carried through to its end' with no regret component. The shift in semantic characterization is inconsistent within the same section.",
+    "quote": "the conjunction-bearing version carries a nuance of regret or dismay at the completion, while the bare auxiliary is unmarked for affect",
+    "suggestion": "Either reconcile the descriptions or add a note that the affective nuance is context-dependent or emerging.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#008",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "38",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table row labels the aspect domain 'inceptive' and describes kor an (extension) as 'change underway, endpoint in view', but the section covering this (id='inceptive') is titled 'Inceptive extensions of kor an'. However, the overview paragraph (lines 14-15) lists habitual/generic as the third domain and does not mention inceptive as a distinct domain; the table and the section seem to treat inceptive as a domain, but the overview paragraph does not enumerate it alongside the three domains, creating inconsistency in presentation.",
+    "quote": "inceptive",
+    "suggestion": "Either add inceptive to the overview paragraph list or change the table row label to avoid implying a fourth domain not introduced.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#024",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "346",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Semicolon in gloss field: while not incorrect, Leipzig glossing rules typically use spaces or hyphens, not semicolons, in multi-part glosses. Consider using a hyphen or space.",
+    "quote": "<A w=\"nisa\" gl=\"just completed; recent perfect\" />",
+    "suggestion": "gl=\"just completed recent perfect\"",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#020",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "145",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ainu form 'pe okake ta' appears in the note as plain text without italics or lang tag, inconsistent with how Ainu forms are typically presented in the chapter.",
+    "quote": "pe okake ta nominalizes the wa isam clause and frames it temporally.",
+    "suggestion": "Mark as <i lang='ain-Latn'>pe okake ta</i>.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#019",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "267-270",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The hyphens before the suffixes suggest they are bound morphemes, but the prose uses neither italics nor explanation that these are suffix forms. Consistency with other morphological formatting in the chapter (e.g., bold, italics, lang tags) is needed.",
+    "quote": "-rototke encodes a violent repeating sound or act, and -atki encodes repetition or persistence",
+    "suggestion": "Apply consistent formatting, e.g., <i lang='ain-Latn'>-rototke</i> and <i lang='ain-Latn'>-atki</i>.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#018",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "212",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says 'inceptive extension', but the translation is 'Dawn is breaking; it is getting light', which describes a current ongoing process, not necessarily the onset. The section title is 'Inceptive extensions of kor an', but the example describes something already under way, consistent with progressive reading as well. The distinction between inceptive and progressive here is fuzzy.",
+    "quote": "cor an with a change verb in its inceptive extension",
+    "suggestion": "Clarify that inceptive reading arises only under certain conditions (e.g., change-of-state verbs, temporal perspective near onset), or provide an example unambiguously focusing on onset rather than ongoing change.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#017",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "183",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This reference is not in the chapter's bibliography or otherwise introduced; it appears as an isolated cite supporting a specific claim about the nuance difference between wa okere and bare okere. Without knowing if the reference is properly listed elsewhere, this may be fine, but it stands out as an unusual citation for a specific point.",
+    "quote": "<Ref k=\"takahashi2022\" />",
+    "suggestion": "Ensure the reference is included in the book's bibliography; consider adding first-citation detail.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#014",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "335",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The symbol '§' is used alone without a section number or title, which is unclear. It should specify which section is referenced (likely the ranke section with id='ranke').",
+    "quote": "§ above",
+    "suggestion": "Change to '§The iterative auxiliary ranke' or provide a section anchor link.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#025",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "383",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sentence is long and contains two em-dashes, which disrupt readability. Consider breaking into two sentences for clarity.",
+    "quote": "The surface token <i lang=\"ain-Latn\">nisa</i> returns 3,355 hits in the present corpus of 196,184 sentences (rank 71 by frequency), but the token is homophone-prone — bare nouns and other elements sharing this phonological shape are not systematically distinguished at the surface-string level — so the count is indicative of high frequency rather than an accurate auxiliary tally.",
+    "suggestion": "The surface token <i lang=\"ain-Latn\">nisa</i> returns 3,355 hits in the present corpus of 196,184 sentences (rank 71 by frequency). However, the token is homophone-prone — bare nouns and other elements sharing this phonological shape are not systematically distinguished at the surface-string level — so the count is indicative of high frequency rather than an accurate auxiliary tally.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#023",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "279",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation `<Ref k=\"nakagawa2024\" p=\"312\" />` is attached to the Japanese gloss `<span lang=\"ja\">何度も〜する</span>`, but the page cited (312) refers to the auxiliary `ranke`, not necessarily the Japanese gloss itself. This risks misattribution of the gloss to the source.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"312\" />",
+    "suggestion": "Move the citation to follow the claim about `ranke` rather than the Japanese gloss, or clarify that the gloss is Nakagawa's.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#022",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "57",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the table, the form is given as `<i lang=\"ain-Latn\">a … a</i>`, but in the prose (e.g., line 243) it is written as `V a V a`. The representation should be consistent: either `a … a` or `V a V a`.",
+    "quote": "<i lang=\"ain-Latn\">a … a</i>",
+    "suggestion": "Use `V a V a` in the table for consistency with the prose description.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#021",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "13",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Non-breaking spaces (`&nbsp;`) are used around the ellipsis, which may cause inconsistent spacing in rendering; a plain ellipsis with regular spaces or a proper typographic ellipsis should be used for consistency.",
+    "quote": "<i lang=\"ain-Latn\">a&nbsp;…&nbsp;a</i>",
+    "suggestion": "<i lang=\"ain-Latn\">a … a</i>",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#016",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "383",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This sentence reads like a pipeline comment or internal research note, describing corpus statistics with precision that feels out of place in a descriptive grammar reference, especially with the apologetic 'but the token is homophone-prone — bare nouns and other elements sharing this phonological shape are not systematically distinguished' which hedges the claim after making it.",
+    "quote": "The surface token nisa returns 3,355 hits in the present corpus of 196,184 sentences (rank 71 by frequency), but the token is homophone-prone",
+    "suggestion": "Either provide the statistic with a proper citation to the corpus analysis or remove it; the hedging undermines its value.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#015",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "379",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'second person-indexed predicate' is awkward phrasing; should be 'no second-person-indexed predicate' (hyphenate compound modifier) or rephrase.",
+    "quote": "no second person-indexed predicate",
+    "suggestion": "Change to 'no second-person-indexed predicate'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#011",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "192-193",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Line 192 mentions 'wa inu' as a pair-verb form lacking a Japanese model, but this form has not been introduced elsewhere in the chapter; the table and prose only cover wa isam, wa okere, and wa anu as pair verbs. Introducing wa inu here without prior context or definition is confusing.",
+    "quote": "Nakagawa resists a simple calque account, pointing to wa inu 'try by hearing/tasting' as a type that lacks a Japanese structural model",
+    "suggestion": "Add a brief definition of wa inu or indicate it is discussed elsewhere.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#009",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "93",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Line 93 introduces 'wa anu' and says table below situates 'the two completives alongside wa anu', but the table at lines 96-129 includes both completives and then a third row for wa anu. However, wa anu is not previously mentioned or defined in the section; its appearance feels abrupt and the table includes it as a related form, but the prose does not explain its relation to completive aspect beyond 'related but distinct value'.",
+    "quote": "wa anu",
+    "suggestion": "Add a brief explanation of wa anu before the table or in the table caption to clarify its relevance.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#007",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "363-370",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PRF.REC' for 'nisa' is a bit cryptic. While 'REC' likely stands for 'recent', 'PRF' could be confused with 'perfective'. The note clarifies it as 'recent-perfect'.",
+    "quote": "m=\"arwenkamuy ne an=an nisa ru-we ne na\"\ng=\"truly.evil.kamuy COP exist=4.S PRF.REC track-POSS COP FIN\"\ntr=\"(I) have now truly become an evil kamuy.\"\nnote=\"nisa follows the existential an=an and precedes the evidential ruwe ne; the recent-perfect value and the fact-evidential reinforce each other.\"",
+    "suggestion": "Change gloss 'PRF.REC' to 'REC.PRF' or 'R.PRF' or 'RECENT.PRF'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#006",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "317-324",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'while exist=4.S' for 'kor an=an' does not fully convey the habitual aspect described in the note and translation ('Every noon she would play').",
+    "quote": "m=\"sittokap kor pon seta turano sinot=an kor an=an ayne\"\ng=\"noon while little dog together play=4.S while exist=4.S as\"\ntr=\"Every noon she would play with the puppy,\"\nnote=\"sittokap kor 'whenever noon (comes)' provides the frequentative temporal frame; sinot=an kor an=an is the habitual kor an construction. ayne marks the clause as background to what follows.\"",
+    "suggestion": "Change gloss 'while exist=4.S' to 'HAB.while exist=4.S' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#005",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "288-295",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'ITR' for 'ranke' is consistent with the note and translation, but the note also mentions 'habitual', which is not reflected in the gloss.",
+    "quote": "m=\"arpa ranke kor oka=an\"\ng=\"go ITR while exist.PL=4.S\"\ntr=\"(They) keep going again and again.\"\nnote=\"ranke follows arpa 'go' and precedes kor oka=an; ranke takes no person marking. The combination marks repeated habitual going.\"",
+    "suggestion": "Change gloss 'ITR' to 'ITR/HAB'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#003",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "157-164",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'be.gone' for 'isam' does not fully capture the meaning 'vanished' in the translation or the 'disappearance' implied in the note.",
+    "quote": "m=\"caricari wa isam ru-we ne kuni a=ramu kor\"\ng=\"be.scattered CONJ be.gone track-POSS COP COMP 4.A=think while\"\ntr=\"(while she was) thinking that (things) had been scattered and vanished,\"\nnote=\"wa isam is embedded inside a nominalized complement (ru-we ne) governed by ramu 'think'; kuni is the complementizer.\"",
+    "suggestion": "Change gloss 'be.gone' to 'be.absent' or 'vanish'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#002",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "149-155",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'be.gone' for 'isam' does not fully capture the meaning 'passed away' in the translation or the 'disappearance' mentioned in the note.",
+    "quote": "m=\"iyos onne pa wa isam\"\ng=\"then grow.old PL CONJ be.gone\"\ntr=\"Then they grew old and passed away.\"\nnote=\"The postverbal plural clitic pa marks a plural subject; wa isam closes the sequence with the lexical force of disappearance.\"",
+    "suggestion": "Change gloss 'be.gone' to 'be.absent' or 'vanish'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "phasal-iterative-habitual-aspect~p1#001",
+  "chapter": "phasal-iterative-habitual-aspect",
+  "lines": "139-145",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'be.gone' for 'isam' does not fully capture the meaning 'be absent' as stated in the note, nor the nuance of 'vanished' in the translation.",
+    "quote": "m=\"tane rikin wa isam pe okake ta\"\ng=\"now ascend CONJ be.gone NMLZ after LOC\"\ntr=\"Now, after (the god) had ascended and vanished,\"\nnote=\"rikin wa isam: the subject rises and then is absent — isam retains its lexical sense 'be absent'. pe okake ta nominalizes the wa isam clause and frames it temporally.\"",
+    "suggestion": "Change gloss 'be.gone' to 'be.absent' or 'vanish'.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

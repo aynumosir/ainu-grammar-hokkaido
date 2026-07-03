@@ -1,0 +1,973 @@
+[
+ {
+  "id": "consonant-inventory~p1#023",
+  "chapter": "consonant-inventory",
+  "lines": "311-312",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'sources read for this grammar' is a pipeline register leak. The statement 'reported here as a community assertion' is also slightly meta-commentary.",
+    "quote": "The community characterization could not be page-verified in sources read for this grammar and is reported here as a community assertion ‹asserted›.",
+    "suggestion": "Rephrase to 'The community characterization could not be page-verified in the consulted sources and is reported here as a community assertion.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Similar meta-commentary about the verification process, addressing the grammar's methodology rather than the linguistic facts.",
+    "quote": "The community characterization could not be page-verified in sources read for this grammar and is reported here as a community assertion",
+    "suggestion": "Remove the phrase 'could not be page-verified in sources read for this grammar' and simply tag the statement as ‹asserted› if needed.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Phrasing like 'sources read for this grammar' is a pipeline register leak — it refers to the author's research process rather than the final state of knowledge.",
+    "quote": "The community characterization could not be page-verified in sources read for this grammar and is reported here as a community assertion ‹asserted›.",
+    "suggestion": "Rephrase to: 'The community characterization has not been independently verified in published sources and is reported here as a community assertion ‹asserted›.'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#014",
+  "chapter": "consonant-inventory",
+  "lines": "238-240",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that /m/ does not shift to [ŋ] before /k/, citing a community source marked as '‹contested›'. This implies there might be counter-evidence or a lack of consensus, which could be an internal inconsistency if the chapter otherwise presents phonological rules as more settled.",
+    "quote": "The rules apply to /n/ only. The bilabial nasal /m/ does not shift to [ŋ] before /k/: a form such as <i lang=\"ain-Latn\">okamkir</i>, containing underlying /m/ before /k/, retains [m] <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-11) ‹contested›.",
+    "suggestion": "Clarify the status of this claim, perhaps by providing more context on why it's contested or by presenting it with a stronger epistemic grade if consensus is reached.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example 'okamkir' is presented as containing /m/ before /k/, but the surrounding discussion is about /n/ assimilating to [ŋ] before /k/, and /m/ not doing so. However, 'okamkir' is not a known lexical item, and more importantly, the form implies a sequence /mk/, but the earlier example of assimilation was 'honkor' → [hoŋkor] with /n/ → [ŋ]. The lack of assimilation of /m/ is claimed, but the example 'okamkir' is not attested or cited, and its structure contradicts the phonotactic constraints mentioned elsewhere (e.g., no mention of /mk/ clusters).",
+    "quote": "a form such as <i lang=\"ain-Latn\">okamkir</i>, containing underlying /m/ before /k/, retains [m]",
+    "suggestion": "Either provide a real attested example or clarify that 'okamkir' is constructed. Also, ensure consistency: if /m/ does not assimilate, a real example like 'makki' (if it existed) would help, but current sources may not support it.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#039",
+  "chapter": "consonant-inventory",
+  "lines": "294-296",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about what was not consulted addresses the book's production process rather than the reader. This leaks information about source limitations that is not directly relevant to the description.",
+    "quote": "a published acoustic VOT study of Hokkaido Ainu has not been consulted for this grammar",
+    "suggestion": "Remove the clause or rephrase to avoid mentioning what was not done (e.g., 'No published acoustic VOT study is available for Hokkaido Ainu').",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Statement about what sources were 'consulted' refers to the production process, not the linguistic content — a register leak.",
+    "quote": "a published acoustic VOT study of Hokkaido Ainu has not been consulted for this grammar.",
+    "suggestion": "Rephrase to: 'No published acoustic VOT study of Hokkaido Ainu is currently available.'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#006",
+  "chapter": "consonant-inventory",
+  "lines": "122",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description of the allophones of /h/ is clear, but the phonetic symbols [ç] and [ɸ] are not explicitly defined or linked to their descriptions in the table. While common, it might be helpful for consistency to have them explicitly glossed or defined if this were a more introductory text.",
+    "quote": "[h] before /a e o/; [ç] before /i/; [ɸ] before /u/",
+    "suggestion": "No change needed if the audience is assumed to know these symbols, but could add a note for clarity.",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The notation uses semicolons to separate allophones, which is acceptable, but contrasts with the tilde in line 112. This creates format drift in how alternations are expressed within the same table.",
+    "quote": "[h] before /a e o/; [ç] before /i/; [ɸ] before /u/",
+    "suggestion": "Use consistent notation for allophony across all rows — either all with semicolons or all with 'or' or dashes.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#005",
+  "chapter": "consonant-inventory",
+  "lines": "117",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 102, 'laminal' is a description of articulation. Including it directly in the phonetic transcription '[s] (laminal [s̻])' is slightly redundant or could be presented more cleanly.",
+    "quote": "[s] (laminal [s̻]); [ɕ] before /i/",
+    "suggestion": "Change to '[s̻]' or '[s]' with a note 'laminal articulation'.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of [s̻] with a diacritic is correct, but the parentheses placement is slightly awkward. Also, the tilde in the earlier line (112) is again used as a separator, creating inconsistency in how alternations are presented (semicolon vs tilde).",
+    "quote": "[s] (laminal [s̻]); [ɕ] before /i/",
+    "suggestion": "Standardize alternation notation: use 'or' or '–' consistently across the table.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#004",
+  "chapter": "consonant-inventory",
+  "lines": "112",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The notation '[tɕ]~[tʃ]' is a bit ambiguous. It implies a range or variation between two sounds. It would be clearer to specify if these are distinct allophones or if there's a preferred realization.",
+    "quote": "[tɕ]~[tʃ]; [ts] before /u/",
+    "suggestion": "Clarify the relationship between [tɕ] and [tʃ], e.g., 'primarily [tɕ], sometimes [tʃ]' or similar.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The tilde in [tɕ]~[tʃ] uses a low tilde '~', but in IPA, the tilde above (˜) is used for nasalization; here it's being used as a separator between allophones, which is typographically acceptable but nonstandard. Conventionally, a dash or 'or' is preferred in such tables.",
+    "quote": "[tɕ]~[tʃ]; [ts] before /u/",
+    "suggestion": "Replace '~' with 'or' or '–' for clarity: '[tɕ] or [tʃ]' or '[tɕ–tʃ]'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#034",
+  "chapter": "consonant-inventory",
+  "lines": "112, 159-161",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The allophony rule states /c/ becomes [ts] only before /u/, but the example shows [ts] before a devoiced /i/ (with no note allowing this). This contradicts the stated rule.",
+    "quote": "the affricate /c/ has a secondary realization [ts] before /u/ | eci=kay ... surfaces as [et͡sɨ̥kaj]",
+    "suggestion": "Either clarify that the rule applies before devoiced high vowels as well, or correct the transcription to [etɕi̥kaj].",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#044",
+  "chapter": "consonant-inventory",
+  "lines": "257-260",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example 'pon seta' → [poy seta] shows /n/ + /s/ → [y] + /s/, but this is palatalization, not nasal assimilation. The phrase 'these nasal assimilation rules' incorrectly groups this with nasal place assimilation.",
+    "quote": "The sandhi extension of these nasal assimilation rules across morpheme and word boundaries — including /n/ + /s/ → [y] + /s/ (e.g. <i lang=\"ain-Latn\">pon seta</i> → [poy seta] 'puppy') — is treated in <Xr ch=\"coda-r-assimilation-sonorant-sandhi\" />.",
+    "suggestion": "Revise to: 'The extension of phonological rules involving nasals, including sandhi across word boundaries such as /n/ + /s/ → [y] + /s/, is treated in...' to avoid misclassification.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#042",
+  "chapter": "consonant-inventory",
+  "lines": "200",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The arrow notation '→' is used for phonetic transcription, but it's inconsistent with earlier use of brackets alone. Also, the use of 'vs' in running text is acceptable but slightly informal for a reference grammar.",
+    "quote": "The contrast appears in <i lang=\"ain-Latn\">cis</i> 'cry' (→ [tɕiɕ]) vs <i lang=\"ain-Latn\">as</i> 'stand' (→ [asʲ]~[as]).",
+    "suggestion": "Use consistent formatting: either always use arrows before IPA, or use none. Consider rephrasing 'vs' as 'compared to'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#041",
+  "chapter": "consonant-inventory",
+  "lines": "36",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table cell contains both the Ainu letter and IPA, but the use of <i> for 'c' is appropriate; however, the surrounding structure is not a markup issue. No actual gloss mismatch here — this is a display of phoneme and allophones.",
+    "quote": "<i lang=\"ain-Latn\">c</i> [tɕ~tʃ]",
+    "suggestion": null,
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#038",
+  "chapter": "consonant-inventory",
+  "lines": "256-260",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference slug 'coda-r-assimilation-sonorant-sandhi' implies it deals with /r/ sandhi, but the example given is about /n/ sandhi. This suggests an inaccurate reference.",
+    "quote": "including /n/ + /s/ → [y] + /s/ (e.g. pon seta → [poy seta] 'puppy') — is treated in <Xr ch='coda-r-assimilation-sonorant-sandhi' />",
+    "suggestion": "Verify that the referenced chapter also covers /n/ sandhi; if not, update the cross-ref to a more appropriate section.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#033",
+  "chapter": "consonant-inventory",
+  "lines": "382-384",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō (2003) is indirect, being reported via Shiraishi 2022 (§4.3). While this is common practice, it would be stronger if the original Satō (2003) source were consulted and cited directly, or if the specific pages in Shiraishi 2022 that report Satō's findings were more precisely indicated.",
+    "quote": "Satō (2003) further posits underlying /y w/ in Chitose for non-predictable hiatus positions while treating glide appearances after <i lang=\"ain-Latn\">ku-</i> and <i lang=\"ain-Latn\">e-</i> as surface-derived (reported via <Ref k=\"shiraishi2022\" p=\"§4.3\" />).",
+    "suggestion": "If possible, cite Satō (2003) directly. Otherwise, ensure the locator in Shiraishi 2022 is as specific as possible.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#031",
+  "chapter": "consonant-inventory",
+  "lines": "377",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"34–35\" /> is provided for Nakagawa's analysis. It's possible these pages cover the topic, but it would be stronger if the citation pointed to a specific section or subsection within those pages that deals with phoneme junctures and glide derivation.",
+    "quote": "For Saru and Chitose, Nakagawa treats these as surface glides derived at phoneme junctures, not underlying phonemes <Ref k=\"nakagawa2024\" p=\"34–35\" />.",
+    "suggestion": "If possible, add a more specific locator within pages 34-35.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#029",
+  "chapter": "consonant-inventory",
+  "lines": "363",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim of 'consensus' is based on a single community Discord post. While community input is valuable, 'consensus' usually implies broader agreement across multiple sources or speakers, not just one individual's statement on Discord.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2025-12-03) ‹consensus›.",
+    "suggestion": "Change the epistemic grade from '‹consensus›' to something like '‹corpus-suggested›' or '‹community-supported›' to reflect the single source.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#028",
+  "chapter": "consonant-inventory",
+  "lines": "354",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Shiraishi 2022 is too broad (section §3). It should ideally point to a more specific section or page that discusses this nominalizer allomorphy.",
+    "quote": "morphemes ending in /y/ or /w/ take the consonant allomorph — <i lang=\"ain-Latn\">okay-pe</i>, <i lang=\"ain-Latn\">siw-pe</i> — establishing that /-y/ and /-w/ pattern with coda consonants <Ref k=\"shiraishi2022\" p=\"§3\" />; <Ref k=\"nakagawa2024\" p=\"29\" />.",
+    "suggestion": "<Ref k=\"shiraishi2022\" p=\"3.2.1\" /> (assuming 3.2.1 discusses this)",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 is page 29. It's unclear if this single page covers both the accent behavior and the parsing of both 'kamuy' and 'aynu'. If the information is spread across multiple pages or sections, broader citations might be needed.",
+    "quote": "Thus <i lang=\"ain-Latn\">kamuy</i> 'deity' parses as <i lang=\"ain-Latn\">ka.muy</i> (two syllables, accent on the second), and <i lang=\"ain-Latn\">aynu</i> 'person' as <i lang=\"ain-Latn\">ay.nu</i> <Ref k=\"nakagawa2024\" p=\"29\" />.",
+    "suggestion": "Verify if page 29 fully supports both claims or if additional citations are needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#027",
+  "chapter": "consonant-inventory",
+  "lines": "344",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"kindaichi1936\" /> is present, but it's not clear if it's a specific page or section that supports this claim about Kindaichi and Chiri's analysis. If it's a general reference to the work, it might be acceptable, but specific locators are preferred.",
+    "quote": "An earlier analysis by Kindaichi and Chiri <Ref k=\"kindaichi1936\" /> treated these as the second elements of diphthongs;",
+    "suggestion": "If possible, add a page or section number to the citation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#026",
+  "chapter": "consonant-inventory",
+  "lines": "332-333",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phonetic realization [nukaɾ̥ɨ̥h] includes devoiced symbols [ɾ̥] and [ɨ̥]. While these are valid phonetic symbols, their use here without explicit definition or context might be slightly jarring for readers not deeply familiar with phonetics.",
+    "quote": "After voiceless stops /k p t/, coda /r/ devoices: <i lang=\"ain-Latn\">nukar</i> 'look at' may surface as [nukaɾ̥ɨ̥h]",
+    "suggestion": "Consider adding a brief note explaining the devoiced symbols if they are not standard in the chapter's phonetic notation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#024",
+  "chapter": "consonant-inventory",
+  "lines": "320-321",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phonetic symbol [ĭ] is used to represent the vocalic release after coda /r/. This symbol is not explicitly defined or explained in the text, which could be confusing for readers unfamiliar with it.",
+    "quote": "<i lang=\"ain-Latn\">pirka</i> 'good' → [pirĭka], <i lang=\"ain-Latn\">arki</i> 'come (pl.)' → [arĭki]",
+    "suggestion": "Add a note explaining that [ĭ] represents the vocalic release, possibly copying the preceding vowel quality.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#021",
+  "chapter": "consonant-inventory",
+  "lines": "303",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phonetic symbol [ʈ] is used for a retroflex stop. While correct, it's not explicitly defined or glossed in the text, which might be a minor point of inconsistency if other less common phonetic descriptions were glossed.",
+    "quote": "Sakhalin varieties have a retroflex [ʈ] that may be hard to distinguish from [t]",
+    "suggestion": "Add a brief note defining [ʈ] as retroflex if needed for clarity.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#020",
+  "chapter": "consonant-inventory",
+  "lines": "291-293",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the VOT measurements is a community Discord post marked as '‹corpus-suggested›'. While the data might be valid, it's presented as a primary source for acoustic measurements, which is unusual for a scholarly grammar. The text also notes 'a published acoustic VOT study of Hokkaido Ainu has not been consulted for this grammar.'",
+    "quote": "Voice onset time measurements from a Chitose recording session give approximate values of +8 to +15 ms for /p/ and +20 ms for /k/ in onset position; an aspirated [kʰ] variant reached +30 to +43 ms <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-20) ‹corpus-suggested›.",
+    "suggestion": "If possible, find and cite a published source for these acoustic measurements. If not, ensure the '‹corpus-suggested›' tag and the community source are clearly presented as the sole basis for this claim.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#017",
+  "chapter": "consonant-inventory",
+  "lines": "271",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions that 'pet' can surface as [pet] or [bet]. While this illustrates voicing, the phonetic transcription of [pet] is slightly redundant if the phoneme is /p/. It might be clearer to just state the voiced allophone [bet] and imply the unvoiced one is the default.",
+    "quote": "while <i lang=\"ain-Latn\">pet</i> 'river' surfaces as [pet] or [bet] depending on context and speaker.",
+    "suggestion": "State that 'pet' surfaces as [bet] in certain contexts, implying [pet] is the default.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#015",
+  "chapter": "consonant-inventory",
+  "lines": "241-244",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'sources read for this grammar' is meta-commentary about the research process, not relevant to the reader. It's a pipeline register leak.",
+    "quote": "The orthographic implication is that /m/ and /n/ remain distinctly spelled before dorsals — a practice consistent across the standard Romanization — though the systematic phonetic documentation of this non-assimilation across dialects and lexical items is not available in the sources read for this grammar.",
+    "suggestion": "Rephrase to something like '...is not available in the consulted sources.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#010",
+  "chapter": "consonant-inventory",
+  "lines": "197-198",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The notation '[sʲ]~[s]' for coda /s/ after non-/i/ vowels is a bit vague. It suggests variation, but the exact nature of the palatalization or its absence isn't fully specified.",
+    "quote": "After /i/, coda /s/ surfaces as [ɕ]; after other vowels it is [sʲ]~[s]",
+    "suggestion": "Clarify the variation, e.g., 'primarily [sʲ], sometimes [s]' or 'weakly palatalized [sʲ] or plain [s]'.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The notation '[asʲ]~[as]' for the realization of 'as' is similar to the issue on lines 197-198. It implies variation without full clarity.",
+    "quote": "cis 'cry' (→ [tɕiɕ]) vs as 'stand' (→ [asʲ]~[as])",
+    "suggestion": "Clarify the variation, e.g., 'primarily [asʲ], sometimes [as]'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#008",
+  "chapter": "consonant-inventory",
+  "lines": "137",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to lines 102 and 132, 'alveolar flap' is a description. The symbol [ɾ] already implies an alveolar flap. Including the description might be redundant or could be handled as a note.",
+    "quote": "[ɾ] alveolar flap",
+    "suggestion": "Change to '[ɾ]' and add 'alveolar flap' as a note if necessary.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#007",
+  "chapter": "consonant-inventory",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 102, '[n] dental' includes a descriptive term within the phonetic transcription. It would be more standard to use a symbol like [n̪] or have 'dental' as a separate note.",
+    "quote": "[n] dental",
+    "suggestion": "Change to '[n̪]' or '[n]' with a note 'dental articulation'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#003",
+  "chapter": "consonant-inventory",
+  "lines": "102",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The realization for /t/ is given as '[t] dental'. While 'dental' describes the articulation, it's unusual to include it directly in the phonetic transcription like this. It might be better as a note or a separate descriptor.",
+    "quote": "[t] dental",
+    "suggestion": "Change to '[t̪]' or '[t]' with a note 'dental articulation'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#002",
+  "chapter": "consonant-inventory",
+  "lines": "31",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glottal stop [ʔ] is presented in parentheses within the table, suggesting it might be optional or not a full phoneme. However, the prose on lines 10-12 discusses it as a potential phoneme or phonetic element, and the table structure implies it's part of the inventory. The parentheses might be misleading or inconsistent with the surrounding text.",
+    "quote": "([ʔ])",
+    "suggestion": "Remove parentheses if [ʔ] is considered a phoneme in this context, or clarify its status in the prose.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#001",
+  "chapter": "consonant-inventory",
+  "lines": "7-8",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Shiraishi 2022 is too broad (section §2). It should ideally point to a more specific section or page that lists the eleven consonant phonemes.",
+    "quote": "Hokkaido Ainu has eleven consonant phonemes: /p t k c s h m n r y w/ <Ref k=\"nakagawa2024\" p=\"27\" />; <Ref k=\"sato2008\" p=\"§2.2\" />; <Ref k=\"shiraishi2022\" p=\"§2\" />.",
+    "suggestion": "<Ref k=\"shiraishi2022\" p=\"2.1\" /> (assuming 2.1 lists the phonemes)",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#043",
+  "chapter": "consonant-inventory",
+  "lines": "247-254",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The `cite` attribute uses 'nakagawa2024:30', but elsewhere in the chapter, page citations use 'p=\"30\"'. This is a pipeline format inconsistency — the example system expects a key and possibly a page, but 'cite=\"key:pages\"' format may not align with the `<Ref>` component's usage.",
+    "quote": "<Ex m=\"honkor\" g=\"be.pregnant\" tr=\"be pregnant\" note=\"Coda /n/ of the first syllable assimilates...\" cite=\"nakagawa2024:30\" dial=\"SAR\" />",
+    "suggestion": "Change `cite=\"nakagawa24:30\"` to `cite=\"nakagawa2024\" p=\"30\"` or ensure the Ex component parses colon-separated values correctly. If not, standardize to match `<Ref k=\"...\" p=\"...\" />` style.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#040",
+  "chapter": "consonant-inventory",
+  "lines": "7",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The list of phonemes includes 'c' but not 'č' or any other symbol, while in standard Ainu romanization and linguistic literature, the affricate is often represented as 'c' [tɕ~tʃ]. However, the table on line 36 shows [tɕ]~[tʃ], which matches, but the linear text uses 'c' without clarification. This may be consistent internally, but 'c' could be ambiguous without a note on its value.",
+    "quote": "Hokkaido Ainu has eleven consonant phonemes: /p t k c s h m n r y w/",
+    "suggestion": "Add a brief clarification after the first mention: '/p t k c [tɕ~tʃ]/ s h m n r y w/' to align orthographic symbol with IPA value immediately.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#037",
+  "chapter": "consonant-inventory",
+  "lines": "302-303",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "[ʈ] is a voiceless retroflex stop, not a rhotic; it is unlikely /r/ would be realized as a voiceless stop. Likely a mistranscription for a retroflex rhotic like [ɖ] or [ɽ].",
+    "quote": "Sakhalin varieties have a retroflex [ʈ] that may be hard to distinguish from [t]",
+    "suggestion": "Change [ʈ] to a rhotic symbol such as [ɖ] (retroflex flap) or clarify the source's transcription.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#036",
+  "chapter": "consonant-inventory",
+  "lines": "265-267",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The pair /s/~[z] is listed as a non-contrastive pair, but the chapter never describes voicing of /s/ elsewhere; only stop voicing is discussed (lines 275-286). This unsupported claim contradicts the chapter's own scope.",
+    "quote": "The pairs /p/~[b], /t/~[d], /k/~[g], /s/~[z] are non-contrastive",
+    "suggestion": "Either add a discussion of [z] as an allophone of /s/ (possibly under voicing) or remove /s/~[z] from the list.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#035",
+  "chapter": "consonant-inventory",
+  "lines": "188, 191",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "First claim says stops are unreleased; second claim says they are fully released and even implosive. The terms 'unreleased' and 'implosive' are contradictory. Also, 'implosive' likely a typo for 'unreleased' or 'explosive'.",
+    "quote": "The stops /p t k/ are unreleased in coda position — [p̚ t̚ k̚] | some older archival speakers produced fully released coda stops, with the implosive realization more consistent for /p/ than for /k/",
+    "suggestion": "Replace 'implosive' with 'unreleased' or clarify the variation: some speakers produce released stops, but the implosive nature is unexpected unless a different phenomenon is meant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#032",
+  "chapter": "consonant-inventory",
+  "lines": "378-380",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The minimal pair is given as <i lang=\"ain-Latn\">suwat</i> 'pothook' vs <i lang=\"ain-Latn\">suʔat</i> 'pot bail'. The phonetic realization of <i lang=\"ain-Latn\">suʔat</i> is implied to be [suʔat]. However, the text states that the distinction is between [w] and [ʔ]. If <i lang=\"ain-Latn\">suwat</i> is meant to illustrate the [w] realization, its phonetic transcription should be provided to make the contrast clear.",
+    "quote": "In Shizunai, the absence of contrastive pitch means that the distinction between [w] and [ʔ] at a hiatus position — illustrated by the minimal pair <i lang=\"ain-Latn\">suwat</i> 'pothook' vs <i lang=\"ain-Latn\">suʔat</i> 'pot bail' — must be carried by the glide itself, making /w/ phonemically contrastive there <Ref k=\"okuda2025\" />.",
+    "suggestion": "Provide the phonetic transcription for <i lang=\"ain-Latn\">suwat</i>, e.g., '[suwat]', to clearly show the [w] realization and contrast it with [suʔat].",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#030",
+  "chapter": "consonant-inventory",
+  "lines": "368-369",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that sequences like '*yi', '*wi', '*wu' are absent from monomorphemic roots but arise across morpheme boundaries. This implies that these sequences *do* exist in the language, just not in certain contexts. The asterisk (*) usually denotes ungrammaticality or non-existence. If they *do* arise across morpheme boundaries, they are not entirely absent.",
+    "quote": "but the sequences <i lang=\"ain-Latn\">*yi</i>, <i lang=\"ain-Latn\">*wi</i>, <i lang=\"ain-Latn\">*wu</i> are absent from monomorphemic roots, arising only across morpheme boundaries <Ref k=\"nakagawa2024\" p=\"43–45\" />.",
+    "suggestion": "Clarify the statement. Perhaps rephrase to '...are not found word-initially in monomorphemic roots...' or similar, to avoid implying complete absence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#025",
+  "chapter": "consonant-inventory",
+  "lines": "324-325",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word <i lang=\"ain-Latn\">etor</i> is given as 'snot' and <i lang=\"ain-Latn\">etoro</i> as 'to snore'. The phonetic realization for 'snot' is [etoro], which seems to include a vocalic release, similar to the examples in line 320-321. However, the text states this release distinguishes /-r/ from /-rV/ sequences. If 'etor' is /-r/, it should have the release. If 'etoro' is /-rV/, the vowel quality might be different or the preceding vowel longer. The example is confusing regarding the distinction.",
+    "quote": "The minimal pair <i lang=\"ain-Latn\">etor</i> [etoro] 'snot' vs <i lang=\"ain-Latn\">etoro</i> [etoːro] 'to snore'",
+    "suggestion": "Clarify the phonetic realization of 'etor' to show whether it has the vocalic release and how it differs from 'etoro' to illustrate the minimal pair effectively.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#022",
+  "chapter": "consonant-inventory",
+  "lines": "308-309",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "There's a direct contradiction between a community assertion (citing Tamura's dictionary front matter) and a published source (Shiraishi). The community assertion is marked as '‹asserted›' and 'could not be page-verified', while Shiraishi's claim is presented without such caveats. This creates an internal tension regarding the reliability of the sources.",
+    "quote": "Ainu /r/ 'does not resemble [l] at all' (aomidori, <Ref k=\"aynucorporadiscord\" />, 2023-12-11); Shiraishi, by contrast, lists [l] alongside [d] as possible realizations <Ref k=\"shiraishi2022\" p=\"§3\" />.",
+    "suggestion": "Clarify the discrepancy. Either find page-verified support for the community assertion or present Shiraishi's claim as the primary one and the community assertion as a differing view that requires further investigation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#019",
+  "chapter": "consonant-inventory",
+  "lines": "283-284",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">cikap</i> 'bird' is used to show that /k/ seldom voices to [g] after /p/. The phonetic realization is given as [tɕigap], which implies voicing of /k/ to [g]. This contradicts the statement that it 'seldom voices'.",
+    "quote": "Asai (1969) observed that <i lang=\"ain-Latn\">ape</i> 'fire' frequently voices to [abe] while <i lang=\"ain-Latn\">cikap</i> 'bird' seldom voices to [tɕigap] (reported via <Ref k=\"nakagawa2024\" p=\"28\" />).",
+    "suggestion": "Correct the phonetic realization to [tɕikap] or clarify that [tɕigap] is an exceptional voicing.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#018",
+  "chapter": "consonant-inventory",
+  "lines": "277",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">hapo</i> 'mother' is given to illustrate intervocalic voicing. The gloss 'mother' is provided, but the example itself doesn't explicitly show the intervocalic context if 'hapo' is a single morpheme. If it were 'ha=po', the intervocalic nature would be clearer.",
+    "quote": "(i) intervocalic position (<i lang=\"ain-Latn\">hapo</i> ~ [habo]);",
+    "suggestion": "If 'hapo' is a compound or has a morpheme boundary, indicate it in the example or gloss to make the intervocalic context explicit.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">tampe</i> 'true thing' is given to illustrate post-nasal voicing. The gloss 'true thing' is provided. The example shows 'tampe', which implies the /m/ is part of the first syllable and the /p/ is in the second. The voicing of /p/ after /m/ is the point, but the gloss doesn't highlight the morpheme structure that creates this post-nasal environment.",
+    "quote": "(ii) post-nasal position (<i lang=\"ain-Latn\">tampe</i> ~ [tambe]);",
+    "suggestion": "If 'tampe' has a morpheme boundary (e.g., 'tan-pe'), indicate it to make the post-nasal context explicit.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">unarpe</i> is given to illustrate post-/r/ voicing. The gloss is missing. The example shows the /p/ following an /r/, which is the context for voicing. The absence of a gloss makes it difficult to fully assess the example.",
+    "quote": "(iii) post-/r/ position (<i lang=\"ain-Latn\">unarpe</i> ~ [unarbe]).",
+    "suggestion": "Provide a gloss for <i lang=\"ain-Latn\">unarpe</i>.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#016",
+  "chapter": "consonant-inventory",
+  "lines": "251",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note explains the assimilation in 'honkor' and contrasts it with 'anpe'. However, the glosses for 'honkor' and 'anpe' in the text (lines 225 and 232) are 'be pregnant' and 'true thing' respectively. These glosses do not explicitly show the morpheme boundaries or the coda /n/ that is the subject of the assimilation, making the note's explanation less directly supported by the provided glosses.",
+    "quote": "note=\"Coda /n/ of the first syllable assimilates to the place of the following dorsal /k/, yielding surface [hoŋkor]. Contrast anpe [ampe], where coda /n/ assimilates to following labial /p/.\"",
+    "suggestion": "Ensure the glosses for 'honkor' and 'anpe' in the main text clearly indicate the morpheme structure relevant to the assimilation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#013",
+  "chapter": "consonant-inventory",
+  "lines": "232",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'anpe' is 'true thing'. The example shows the assimilation of /n/ to [m] before /p/. The gloss does not explicitly show the morpheme boundary or the coda /n/ that undergoes assimilation, which is the focus of the rule being illustrated.",
+    "quote": "<i lang=\"ain-Latn\">anpe</i> 'true thing' → [ampe]",
+    "suggestion": "Adjust gloss to 'an-pe' or similar to show the morpheme boundary if 'an' is a distinct morpheme, or ensure the gloss accurately reflects the form being analyzed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#012",
+  "chapter": "consonant-inventory",
+  "lines": "224-225",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'honkor' is 'be.pregnant'. The example shows the assimilation of /n/ to [ŋ] before /k/. The gloss 'be.pregnant' does not explicitly indicate the morpheme boundary or the coda /n/ that undergoes assimilation, which is the focus of the rule being illustrated.",
+    "quote": "/n/ → [ŋ] / __ /k/ (dorsal assimilation): <i lang=\"ain-Latn\">honkor</i> 'be pregnant' → [hoŋkor];",
+    "suggestion": "Adjust gloss to 'honkor-be.pregnant' or similar to show the morpheme boundary if 'hon' is a distinct morpheme, or ensure the gloss accurately reflects the form being analyzed.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'kimunkamuy' is 'mountain deity'. The example shows the assimilation of /n/ to [ŋ] before /k/. The gloss does not explicitly show the morpheme boundary or the coda /n/ that undergoes assimilation, which is the focus of the rule being illustrated.",
+    "quote": "<i lang=\"ain-Latn\">kimunkamuy</i> 'mountain deity' → [ki.muŋ.ka.muy]",
+    "suggestion": "Adjust gloss to 'ki-mun-kamuy' or similar to show the morpheme boundary if 'mun' is a distinct morpheme, or ensure the gloss accurately reflects the form being analyzed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#011",
+  "chapter": "consonant-inventory",
+  "lines": "203-204",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim 'with no palatalization' is marked as '‹asserted›' and explicitly states it was 'not directly verified here'. This indicates a low level of confidence and reliance on a community source without independent verification within the read academic sources.",
+    "quote": "with no palatalization <Ref k=\"aynucorporadiscord\" /> (aomidori, 2023-12-11; attributed to Tamura 1996 Saru dictionary front matter, not directly verified here ‹asserted›).",
+    "suggestion": "Either find verification in the read sources or rephrase to emphasize the community assertion more strongly, perhaps with a lower epistemic grade if '‹asserted›' is not a standard grade.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "consonant-inventory~p1#009",
+  "chapter": "consonant-inventory",
+  "lines": "159",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'you (pl.) do' is 'you (pl.) do'. The free translation 'you (pl.) do' is provided. However, the example shows 'eci=kay', which is glossed as 'be.you.pl-do'. The free translation should ideally reflect the 'be' aspect if it's part of the meaning, or the gloss should be simplified if 'be' is not intended to be translated.",
+    "quote": "eci=kay 'you (pl.) do' surfaces as [et͡sɨ̥kaj] with concurrent vowel devoicing",
+    "suggestion": "Adjust gloss to 'you.pl-do' or free translation to 'you (pl.) are doing'.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

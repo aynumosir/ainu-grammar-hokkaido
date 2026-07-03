@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "26",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "diverged from Common Ainu approximately 800 years ago",
+  "issue": "The text states that Sakhalin diverged from Common Ainu approximately 800 years ago, but earlier in line 25 it says the language reached southern Sakhalin around the thirteenth century. If the thirteenth century is ~700 years ago (from 2026), this creates a contradiction between the two dates.",
+  "suggestion": "Reconcile the divergence time with the migration timeline; either adjust '800 years ago' to 'approximately 700 years ago' or clarify the timeline.",
+  "confidence": 0.95,
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "82",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "nína (Nairo niina)",
+  "issue": "The macron usage is inconsistent: 'nína' uses an acute accent, while 'niina' uses double 'i' for length. Elsewhere in the table, long vowels are consistently marked with macrons (e.g., huure, siisam). This suggests a formatting drift in representing vowel length.",
+  "suggestion": "Standardize the representation of long vowels using macrons: use 'nīna' or 'niina' consistently across the table.",
+  "confidence": 0.9,
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "188",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "PA *ciʔep, Alonso de la Fuente 2022 Table 18",
+  "issue": "The citation 'Alonso de la Fuente 2022 Table 18' in the note is not formatted as a proper <Ref> element and appears as free text, breaking citation consistency. The correct reference should be <Ref k=\"alonso2022\" p=\"Table 18\" />.",
+  "suggestion": "Replace the inline citation with a proper <Ref> element.",
+  "confidence": 1,
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "217",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "sis</i> 'eye' (&lt; *<i lang=\"ain-Latn\">sih</i>, with <i lang=\"ain-Latn\">h &gt; s</i> before <i lang=\"ain-Latn\">i</i>)",
+  "issue": "The explanation states that *sih becomes sis due to h > s / i__, but the example shows sis from sik via debuccalization to sih then to sis. This implies two steps: sik > sih > sis. However, the rule 'h > s / i__' applies to coda h, not intervocalic. The conditioning environment is misaligned with the phonological rule stated.",
+  "suggestion": "Clarify the rule: it should be 'h > s / i__#' (word-finally after i), not 'h > s / i__' generally.",
+  "confidence": 0.85,
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "225-232",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"sik-ihi\" g=\"eye-POSS\"",
+  "issue": "The morpheme boundary in 'sik-ihi' suggests that '-ihi' is the possessive suffix, but the gloss 'eye-POSS' does not reflect the internal structure of the stem 'sik' and the suffix '-ihi'. A more precise gloss would break down the components.",
+  "suggestion": "Change gloss to 'eye-POSS' → 'eye-POSS.SG' or better: 'sik=eye, -ihi=POSS' to align with Leipzig rules.",
+  "confidence": 0.8,
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "252",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "teera",
+  "issue": "The word 'teera' uses double 'e' to indicate vowel length, while elsewhere (e.g., 'reera') the same length is marked with macrons (rēra). This creates orthographic inconsistency within the same dialect comparison.",
+  "suggestion": "Use macrons consistently: write 'tēra' and 'rēra'.",
+  "confidence": 0.85,
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "344",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "an independent innovation parallel to the prothetic <i lang=\"ain-Latn\">h-</i> found in the Bihoro dialect of Hokkaido",
+  "issue": "The sentence is grammatically correct but awkwardly phrased. 'An independent innovation parallel to' could be clearer as 'an innovation independent of but parallel to'.",
+  "suggestion": "Reword for clarity: 'an innovation independent of but parallel to the prothetic h- in Bihoro'.",
+  "confidence": 0.7,
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "369-388",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "abbreviated in Alonso de la Fuente's discussion as KD (Dybowski), KK (Krašeninnikov), KL (Klaproth), KT (Torii), and KV (Voznesenskij)",
+  "issue": "The phrase 'abbreviated in Alonso de la Fuente's discussion' reads like internal commentary rather than encyclopedic prose. It implies a perspective on the source rather than stating the abbreviations as established usage.",
+  "suggestion": "Rephrase: 'commonly abbreviated as KD (Dybowski), KK (Krašeninnikov), etc.'",
+  "confidence": 0.75,
+  "chapter": "sakhalin-and-kuril-ainu-contrast",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

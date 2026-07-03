@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "109",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "The alternative frame <i lang=\"ain-Latn\">*ne ka somo ki</i> — negating <i lang=\"ain-Latn\">ne</i> via the standard verbal pattern <i lang=\"ain-Latn\">V ka somo ki</i>",
+  "issue": "The glossed pattern <i lang=\"ain-Latn\">V ka somo ki</i> implies a post-verbal negation frame, but in the example <i lang=\"ain-Latn\">merayke=an ka somo ki</i> (line 301), the verb appears before <i lang=\"ain-Latn\">ka somo ki</i>, suggesting the structure is <i lang=\"ain-Latn\">V ka somo ki</i>, not *<i lang=\"ain-Latn\">ne ka somo ki</i>. The ungrammaticality claim about <i lang=\"ain-Latn\">ne ka somo ki</i> may be correct, but the comparison to <i lang=\"ain-Latn\">V ka somo ki</i> is misleading if <i lang=\"ain-Latn\">ne</i> cannot participate in that frame at all.",
+  "suggestion": "Clarify that <i lang=\"ain-Latn\">ka somo ki</i> attaches to verbs but not to <i lang=\"ain-Latn\">ne</i>, and that the pattern is not simply <i lang=\"ain-Latn\">V ka somo ki</i> but excludes copular <i lang=\"ain-Latn\">ne</i> as a possible host.",
+  "confidence": 0.85,
+  "chapter": "nonverbal-predicate-tam-negation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "144-151",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"pon cápe ku=ne a kusu\" g=\"small cat 1SG.A=COP PFV PURP\" tr=\"Because I was a small cat —\" />",
+  "issue": "The gloss `1SG.A=COP` suggests an ergative alignment (A = agent), but the copula in Ainu typically takes subject agreement in the absolutive or nominative set. The use of `.A` here is inconsistent with standard Ainu person-marking conventions and may reflect a misanalysis. The translation implies a first-person subject, but `.A` is not the expected case for the subject of a copular clause.",
+  "suggestion": "Revise the gloss to `1SG.NOM=COP` or simply `1SG=COP` if the alignment is not ergative, to align with standard descriptions of Ainu person marking.",
+  "confidence": 0.9,
+  "chapter": "nonverbal-predicate-tam-negation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "250-252",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<td><i lang=\"ain-Latn\">an</i></td> <td><i lang=\"ain-Latn\">oka</i> / <i lang=\"ain-Latn\">okay</i></td> <td><i lang=\"ain-Latn\">isam</i></td>",
+  "issue": "The plural form of the existential is given as both <i lang=\"ain-Latn\">oka</i> and <i lang=\"ain-Latn\">okay</i>, but elsewhere (e.g., line 11) it is consistently <i lang=\"ain-Latn\">oka(y)</i>. The variation between <i lang=\"ain-Latn\">oka</i> and <i lang=\"ain-Latn\">okay</i> should be standardized to match the dialectal notation convention used in the chapter.",
+  "suggestion": "Use <i lang=\"ain-Latn\">oka(y)</i> consistently throughout, as in line 11, to reflect dialectal variation without orthographic drift.",
+  "confidence": 0.95,
+  "chapter": "nonverbal-predicate-tam-negation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "272",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"nisatta somo k=an\"",
+  "issue": "The morpheme segmentation shows `k=an`, but the gloss is `1SG.S=exist`. The prefix `k-` is not the first person singular; `k-` is typically second person singular. The first person singular subject is usually marked by `ku-` or `k-` only in specific contexts. This appears to be an error in either segmentation or gloss.",
+  "suggestion": "Verify the segmentation and gloss: if the subject is first person, it should be `ku=an`; if second person, adjust the translation accordingly.",
+  "confidence": 0.8,
+  "chapter": "nonverbal-predicate-tam-negation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "334-341",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"nep eci=e-sirkirap ka somo ki ru-we ne na\" g=\"something 2PL.A=APPL-worry even NEG do track-POSS COP FIN\" tr=\"You will not be troubled by anything.\" />",
+  "issue": "The gloss `2PL.A=APPL-worry` uses `.A` for what should be a patient or experiencer argument. In Ainu, applicatives typically promote oblique arguments, and the person marking on `sirkirap` (worry) should reflect the subject of the verb, not an agentive role. Furthermore, `APPL-worry` suggests a derived form, but `sirkirap` is a root verb. The gloss is misleading.",
+  "suggestion": "Revise gloss to `2PL=worried` or `2PL=feel-worry`, and reconsider the use of `APPL` unless independently justified. Also, `track-POSS` for `ru-we` is non-standard; `track` is not a known gloss for `ru`; it should be `say` or `report`.",
+  "confidence": 0.9,
+  "chapter": "nonverbal-predicate-tam-negation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "337",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cite=\"dalcorso2018:145\"",
+  "issue": "The citation key `dalcorso2018` is not listed in the references cited elsewhere in the chapter (e.g., lines 265–266 cite `dalcorso2025neg`). This may be a typo or an unverified source. If `dalcorso2018` exists, it should be consistently referenced; if not, the citation is invalid.",
+  "suggestion": "Verify the existence of `dalcorso2018` and either correct the key or provide the correct citation. If it's a typo, change to `dalcorso2025neg` or remove if unsupported.",
+  "confidence": 0.75,
+  "chapter": "nonverbal-predicate-tam-negation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "160",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">[complement] ne</i> + existential <i lang=\"ain-Latn\">an</i> /<i lang=\"ain-Latn\">oka=an</i>",
+  "issue": "The slash placement creates ambiguity: it appears to attach to `an` only, but the intent is likely to present two variants: `ne an` and `ne oka=an`. The current formatting suggests `an / oka=an` as alternatives for the existential, but `oka=an` is a plural form, not a variant of `an`.",
+  "suggestion": "Rewrite as `<i lang=\"ain-Latn\">[complement] ne + an</i> or <i lang=\"ain-Latn\">[complement] ne + oka=an</i>` for clarity.",
+  "confidence": 0.8,
+  "chapter": "nonverbal-predicate-tam-negation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

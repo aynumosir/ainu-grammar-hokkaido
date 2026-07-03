@@ -1,0 +1,639 @@
+[
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#015",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "326",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation '0penke, aynu-corpora Discord 2024-03-19' uses '0penke' which might be a username or handle. While community sources are allowed, it's worth ensuring this is the intended format and that the username is clear.",
+    "quote": "0penke, aynu-corpora Discord 2024-03-19",
+    "suggestion": "Confirm if '0penke' is the correct and intended representation of the source.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same pattern as above: a ‹contested› claim supported only by a single Discord message. The text acknowledges it is 'community-proposed' and 'not confirmed', which is more consistent with ‹speculative›.",
+    "quote": "‹contested› (0penke, aynu-corpora Discord 2024-03-19; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Change ‹contested› to ‹speculative›.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is tagged ‹contested› and supported only by a Discord attribution (0penke, aynu-corpora Discord), yet it is introduced with 'after Katayama Ryūmine 2003', implying scholarly authority. The citation to Katayama is not provided via <Ref>, making it unverifiable and potentially misleading.",
+    "quote": "after Katayama Ryūmine 2003, to parse as i lang=\"ain-Latn\">a=e-kir-usi</i> 'the place one has memory of' rather than as a form of i lang=\"ain-Latn\">ekiru</i> 'turn back' ‹contested› (0penke, aynu-corpora Discord 2024-03-19; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Either add a proper <Ref k=\"katayama2003\" /> if supported, or rephrase to clarify that the Katayama connection is unverified and the analysis is solely community-proposed via Discord.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#014",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "314",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation 'gengojiro, aynu-corpora Discord 2025-12-12' is presented with a future date (2025-12-12). Given the context that the book was written in 2025-2026, this date is problematic. It should likely be a past date.",
+    "quote": "gengojiro, aynu-corpora Discord 2025-12-12",
+    "suggestion": "Correct the date to a past date, e.g., '2025-02-12' or similar.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹contested› but the only citation is a single Discord message. A contested claim should ideally have multiple sources or at least a published reference; a single Discord attribution is weak support for the 'contested' grade.",
+    "quote": "making it not straightforwardly assignable to the kamuy yukar or yukar categories ‹contested› (gengojiro, aynu-corpora Discord 2025-12-12; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Either upgrade to ‹speculative› or add a published source if available.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The date '2025-12-12' is in the future relative to the writing period (2025–2026), but December 2025 is plausible. However, the format 'YYYY-MM-DD' is used here but 'YYYY' only in line 225 — inconsistency in date precision for the same source type.",
+    "quote": "(gengojiro, aynu-corpora Discord 2025-12-12; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Standardize Discord citation dates: either always use full date (YYYY-MM-DD) or only year, depending on availability and convention.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#011",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "225",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation 'nukopoli, aynu-corpora Discord 2024' is presented without a specific date (month/day) and is not linked to a Ref tag. While community sources are allowed, the format is inconsistent with other citations that include a Ref tag or a full date.",
+    "quote": "nukopoli, aynu-corpora Discord 2024",
+    "suggestion": "Add a specific date (YYYY-MM-DD) and a corresponding `<Ref k=\"aynucorporadiscord\" />` tag, or remove the specific username if it's not crucial.",
+    "confidence": 0.4
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Discord attribution is cited alongside a formal reference key, but the claim about Tamura's intonation distinction is attributed to a single Discord user without an epistemic grade tag. The surrounding prose is unmarked (consensus default), yet the only support is a community Discord message.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Add an epistemic grade such as ‹speculative› or ‹original-needs-review› to the claim, or rephrase to indicate this is a community observation.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The date '2024' is used for a source in a chapter otherwise citing up to 2026, which is acceptable per context, but the format 'aynu-corpora Discord YYYY' is inconsistent with the standard academic citation style used elsewhere. It should be treated uniformly.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Ensure consistent formatting of all Discord citations, e.g., use parentheses and Ref uniformly, and consider adding a note in the methodology about community sources.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#001",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "12",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The number of token types (45,225) seems unusually high compared to the number of sentences (209,878). Typically, the number of token types is significantly smaller than the number of sentences in a corpus.",
+    "quote": "approximately 209,878 aligned sentences across 45,225 distinct token types",
+    "suggestion": "Verify the numbers for sentences and token types.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The total sentence count in the corpus is stated as 209,878 in line 12, but the dialect breakdown in lines 266–269 adds up to more than this: 121,000 (Saru/Shizunai) + 4,400 (Chitose) + 5,753 (Saru–Chitose) + 13,424 (Mukawa) + 3,098 (Horobetsu) + 1,550 (Tokachi) = 149,225, which is significantly less than 209,878. The remaining ~60,000 sentences are unaccounted for, creating a numerical contradiction.",
+    "quote": "approximately 209,878 aligned sentences",
+    "suggestion": "Revise either the total sentence count or the dialect breakdown figures to ensure internal consistency, or clarify that the listed dialects do not cover the entire corpus.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#028",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "30",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent capitalization: 'Horobetsu' is not italicized or formatted like other dialect names. Compare with table entry 'Horobetsu (HOR)' — should be consistent in casing and tagging.",
+    "quote": "Iburi (Horobetsu)",
+    "suggestion": "Standardize to 'Iburi (HOR)' or 'Iburi (Horobetsu)' throughout.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#027",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "76",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as line 46 — 'paren' attribute appears again, suggesting a formatting instruction not meant for final text.",
+    "quote": "<Ref k=\"dalcorso2018\" paren />; <Ref k=\"hirosawa2026\" paren />",
+    "suggestion": "Remove 'paren' attribute or confirm it is processed correctly in rendering.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#026",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "46",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of 'paren' attribute in Ref is not explained and may be a pipeline leak. It likely indicates parenthetical citation style, but this should not appear in final prose.",
+    "quote": "<Ref k=\"kindaichi1931\" paren />; <Ref k=\"kindaichi1933\" paren />",
+    "suggestion": "Remove 'paren' attribute unless it is processed into correct citation formatting; otherwise, ensure it does not affect output.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#024",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "197",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent with other 'Sample narrators' entries, which list names or use 'multiple'. The use of slash '/' differs from the comma or 'and' used elsewhere (e.g., '川上まつ子, 織田ステノ').",
+    "quote": "various Saru/Chitose narrators",
+    "suggestion": "Change to 'various Saru and Chitose narrators' or 'multiple Saru/Chitose narrators' for consistency.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#023",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "186",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent with other rows: 'others' is not capitalized or formatted uniformly. Compare with row 178 ('and others') and row 189 ('multiple').",
+    "quote": "Horobetsu (HOR), others",
+    "suggestion": "Change to 'Horobetsu (HOR), other localities' or '(HOR, others)' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#022",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "178",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of dialect codes: in other rows, dialect codes are either parenthesized (e.g., 'Iburi (HOR)', 'Saru (SAR)') or listed without parentheses but with spaces (e.g., 'SAR, CHI'). Here, 'SAR, CHI, and others' mixes codes and prose without parentheses, creating format drift.",
+    "quote": "SAR, CHI, and others",
+    "suggestion": "Standardize to 'SAR, CHI, and others' → '(SAR, CHI, others)' or 'Saru, Chitose, and others' for consistency with table conventions.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#020",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "225",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation format mixes a username with a formal reference key. The parentheses are also unbalanced: the opening parenthesis before 'nukopoli' is not closed until after the Ref tag, but the sentence structure is unclear.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Rephrase to integrate the citation properly, e.g. '... (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />).'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#019",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "30",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "See above: the kanji differs from the table entry (line 149).",
+    "quote": "知里幸惠",
+    "suggestion": "Unify to 知里幸惠.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#018",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "149",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "In the table, the narrator for Chiri Yukie's collection is given as 知里幸恵, but earlier in the prose (line 30) the name is given as 知里幸惠 (different final character: 恵 vs 惠). This is an inconsistency in the kanji used for the same person.",
+    "quote": "知里幸恵",
+    "suggestion": "Unify to one form; 知里幸惠 is the standard reading for Chiri Yukie.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#017",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "52",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read here through' and 'cited as reported' is a meta-commentary on the book's methodology rather than a statement about the sources themselves. It addresses the production process.",
+    "quote": "The pre-war editions are read here through Endō and Okuda and are cited as reported.",
+    "suggestion": "Rephrase to something like 'The pre-war editions are accessed via Endō and Okuda's transcriptions and are cited as they appear in those works.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#016",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "327",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states the analysis 'remains community-proposed and has not been confirmed in independent philological commentary. It is noted here without grammatical commitment.' This is a clear statement of its status. However, the preceding sentence uses the phrase 'has been proposed, after Katayama Ryūmine 2003, to parse as'. This phrasing might imply a stronger endorsement than intended, given the subsequent qualification.",
+    "quote": "The analysis is morphologically plausible but remains community-proposed and has not been confirmed in independent philological commentary. It is noted here without grammatical commitment.",
+    "suggestion": "Consider rephrasing the sentence about the proposal to be more neutral, e.g., 'Katayama Ryūmine (2003) proposed an analysis of the title element AEKIRUSHI as...' to better align with the later qualification.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#013",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "250",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note explains that 'ku=' is used because it's conversational framing, not inside the narration. This is a good explanation. However, the example itself (lines 244-246) is presented as 'sine kamuyyukar ku=ye so', which is glossed as 'one kamuy-yukar 1SG.A=tell FIN'. The note's explanation is crucial for understanding why the first person is used here, but the example itself might initially seem to contradict the discussion of the fourth-person narrator.",
+    "quote": "A native performance frame uttered before beginning a kamuy yukar. The first-person ku= (not the narrative fourth-person a=) appears here because this is conversational framing around the narration rather than inside it — illustrating the boundary between the everyday first person and the hero-narrator's fourth-person voice.",
+    "suggestion": "Ensure the example and its note are very clearly linked to the preceding discussion about the fourth-person narrator, perhaps by explicitly stating that this example demonstrates the *contrast* or *boundary*.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#012",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "237",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'per' is used as a shorthand for 'according to' or 'as stated in'. While common in academic writing, it can sometimes be seen as informal. In this context, it's used before a citation.",
+    "quote": "per",
+    "suggestion": "Replace 'per' with 'according to' or 'as stated in' for slightly more formal phrasing, or keep it if it's a consistent stylistic choice within the chapter.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#010",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "217",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the fourth-person prefix 'a= / =an' is used as the hero-narrator's voice in Saru and Chitose texts. However, the example in lines 244-250 uses 'ku=' (first person) for the framing of a kamuy yukar. The note explains this is because it's conversational framing, not inside the narration. This is a good explanation, but it highlights a potential area of confusion if not carefully read.",
+    "quote": "a= / =an",
+    "suggestion": "Ensure the distinction between framing and narrative voice is very clear in the surrounding text or the example's note.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'ci= / =as' is used in Iburi, per Chiri 1923. This is consistent with the description of Chiri Yukie's work in lines 34-38. The example in lines 244-250 uses 'ku=' for framing, and the note explains the contrast with the hero-narrator's voice. The Iburi convention is mentioned in the prose but not directly illustrated in the example, which focuses on Chitose/Saru framing.",
+    "quote": "ci= / =as",
+    "suggestion": "Consider adding an example or further explanation that specifically illustrates the 'ci= / =as' convention in Iburi if it's a key point of contrast.",
+    "confidence": 0.3
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'ek-an' is grammatical where everyday speech requires 'k-ek'. The gloss for 'ek-an' is 'I come.SG'. This implies 'ek-an' is a first-person form. However, the preceding text discusses the fourth-person prefix 'a= / =an' as the hero-narrator's voice. If 'ek-an' is a first-person form, it contradicts the idea of a number-agreement override where 'everyday speech requires k-ek' (first person). It's possible 'ek-an' is a typo and should be something else, or the gloss is misleading in this context.",
+    "quote": "ek-an 'I come.SG'",
+    "suggestion": "Clarify the person marking for 'ek-an' in this specific example, or provide a different example that clearly illustrates the number-agreement override.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'k-ek' is required in everyday speech, contrasting with 'ek-an'. The gloss for 'ek-an' is 'I come.SG'. If 'k-ek' is the everyday form, it's likely also first person. The issue is the potential confusion between the fourth-person narrator and the first-person forms being discussed.",
+    "quote": "k-ek",
+    "suggestion": "Ensure the distinction between the fourth-person narrator and the first-person forms is clear, especially when discussing 'everyday speech'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#009",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "202",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu Times newsletter is listed with 'SAR, CHI, SHI' as primary dialects. The prose description (lines 112-113) mentions 'Contributors include speakers from Saru, Chitose, and Samani'. 'SHI' (Shizunai) is not explicitly mentioned as a contributor location in the prose, though Samani is close to Shizunai. It's possible SHI is implied or covered by 'others'.",
+    "quote": "SAR, CHI, SHI",
+    "suggestion": "Clarify if 'SHI' is indeed represented in the Ainu Times contributors or if 'Samani' is the intended dialect.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#008",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "194",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Glossed Audio Corpus is listed with 'SAR, CHI' as primary dialects. The prose description (lines 106-107) states it provides 'interlinearly glossed Chitose and Saru folktale texts online'. This is consistent. However, the 'Sample narrators' column lists 'various Saru/Chitose narrators'. This is a bit vague and could potentially be more specific if known, but it is consistent with the prose.",
+    "quote": "SAR, CHI",
+    "suggestion": "Consider if more specific narrator information is available and relevant for the table.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#007",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "186",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Chiba University materials are listed with 'Horobetsu (HOR), others' as primary dialects. The prose description (lines 103-104) mentions 'Horobetsu and related dialect texts'. This is consistent. However, the 'Sample narrators' column lists '金成マツ, multiple'. These names are not mentioned in the prose description of the Chiba University materials.",
+    "quote": "Horobetsu (HOR), others",
+    "suggestion": "Either mention these specific narrators in the prose description of the Chiba University materials or remove them from the table if they are not highlighted in the text.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#006",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "178",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The NINJAL oral-literature corpus is listed with 'SAR, CHI, and others' as primary dialects. The prose description (lines 102-103) states it aggregates recordings 'across dialects (primarily Saru and Chitose, with additional localities)'. This is consistent. However, the 'Sample narrators' column lists '木村きみ, 小田イト, multiple'. These names are not mentioned in the prose description of the NINJAL corpus.",
+    "quote": "SAR, CHI, and others",
+    "suggestion": "Either mention these specific narrators in the prose description of the NINJAL corpus or remove them from the table if they are not highlighted in the text.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#005",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "170",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Nakagawa text series is listed with 'Chitose (CHI)' as the primary dialect. The prose description (lines 93-94) mentions 'Chitose-dialect kamuy yukar and uwepeker narrated principally by 白沢ナベ'. This is consistent. However, the 'Sample narrators' column lists '白沢ナベ (Shirasawa Nabe)' which is correct, but the text in line 94 mentions '白沢ナベ (Shirasawa Nabe)' as the principal narrator. The table entry is fine, but the prose could be more precise about the narrator's name.",
+    "quote": "Chitose (CHI)",
+    "suggestion": "Ensure consistency in the spelling/romanization of 'Shirasawa Nabe' if it appears elsewhere.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#004",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "162",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text in lines 70-71 states the ILCAA Ainu materials cover 'Saru and Shizunai narrators'. The table entry for ILCAA Ainu materials lists 'Saru, Shizunai (SAR, SHI)' as primary dialects. This is consistent. However, the 'Genre coverage' for ILCAA lists 'uwepeker, kamuy yukar, inonno itak'. The text in lines 71-72 mentions 'uwepeker, kamuy yukar, and prayer texts'. 'inonno itak' and 'prayer texts' are likely the same, but it's worth noting the slight variation in terminology.",
+    "quote": "Saru, Shizunai (SAR, SHI)",
+    "suggestion": "Ensure 'inonno itak' and 'prayer texts' are consistently used or clearly equated.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#003",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "156",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Recording/publication period' for the Biratori oral-literature archive is listed as '1969–'. This implies ongoing recording, but the text in lines 58-59 states the bulk of the corpus derives from recordings made in the three decades *after* World War II, and line 61 mentions the archive is 'held by the National Ainu Museum'. The '–' suggests it's still active, which might be true, but the context implies a specific period of collection.",
+    "quote": "1969–",
+    "suggestion": "Clarify the end date or the nature of the '–' if it implies ongoing collection.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#002",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "147",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table lists 'kamuy yukar' as the genre coverage for the Chiri Yukie collection. However, the text in section 'Chiri Yukie and the pre-war foundations' (lines 29-31) states it contains 'seventeen Iburi (Horobetsu) divine epics', which aligns with 'kamuy yukar'. The issue is that line 147 is a direct cell in a table, and the text above it (lines 29-31) describes the content more specifically. It might be better to be more specific in the table if possible, or ensure consistency.",
+    "quote": "kamuy yukar",
+    "suggestion": "Consider if 'divine epics' or 'kamuy yukar' is the most precise term for the table, ensuring it aligns with the description in the prose.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#025",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "244-251",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'so' marked as FIN in the gloss, but the free translation 'Let me tell one kamuy yukar.' expresses a hortative or volitional meaning not reflected in the gloss 'FIN' (finite). The gloss does not capture the mood or illocutionary force implied in the translation.",
+    "quote": "m=\"sine kamuyyukar ku=ye so\" g=\"one kamuy-yukar 1SG.A=tell FIN\"",
+    "suggestion": "Revise gloss to include mood, e.g., '1SG.A=tell HORT' or '1SG.A=tell VOL', or adjust translation to a declarative like 'I will tell one kamuy yukar.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oral-literature-and-spoken-corpora~p1#021",
+  "chapter": "oral-literature-and-spoken-corpora",
+  "lines": "267",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table in lines 168–174 lists the Nakagawa text series (Chitose dialect) and the Glossed Audio Corpus (SAR, CHI) as major sources, yet the text claims only ~4,400 Chitose sentences, which seems low given the 24-volume annotated series. This underrepresentation contradicts the emphasis on Nakagawa's corpus as 'the most extensively annotated single-narrator Hokkaido corpus'.",
+    "quote": "Chitose adds approximately 4,400 (plus 5,753 classified as Saru–Chitose combined)",
+    "suggestion": "Reconcile the low sentence count attributed to Chitose with the significance of Nakagawa's 24-volume series; possibly revise the number or clarify that 'sentences' refers only to a subset of the corpus.",
+    "confidence": 0.85
+   }
+  ]
+ }
+]

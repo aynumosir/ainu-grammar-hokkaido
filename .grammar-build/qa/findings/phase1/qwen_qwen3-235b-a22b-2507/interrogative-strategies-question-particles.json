@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "23",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹contested› <Ref k=\"fukuda1961\" p=\"§8, §31\" />",
+  "issue": "The epistemic tag ‹contested› is attached to a claim about the classification of he as a 副助詞, but the supporting citation (Fukuda 1961) is the same source being contested, creating a circular justification. There is no external source cited to substantiate the contested status.",
+  "suggestion": "Add an additional source or clarify with a different citation that independently contests Fukuda's classification.",
+  "confidence": 0.85,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "224-226",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"a=rayke ciki he pirka\" g=\"4.A=kill COND Q good\"",
+  "issue": "The gloss 'COND' for 'ciki' implies a conditional morpheme, but the free translation 'Is it OK if I (rather than you) kill it?' expresses permissibility or evaluation ('OK'), which is not reflected in the gloss. The semantic component of permissibility or evaluation is present in tr but missing in g.",
+  "suggestion": "Revise gloss to include a modal or evaluative component, e.g., 'COND Q good' → 'COND Q good.ATTR' or add a separate gloss for the evaluative predicate.",
+  "confidence": 0.95,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "238-240",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"keman hi ta he\" g=\"famine NMLZ LOC Q\"",
+  "issue": "The free translation 'At the time of the famine?' suggests a temporal meaning, but the gloss 'LOC' indicates location. The morpheme 'hi ta' glossed as 'NMLZ LOC' may be functioning temporally (as 'time of'), but this is not reflected in the gloss.",
+  "suggestion": "Revise gloss to 'NMLZ TIME' or 'NMLZ TEMP' to align with the temporal interpretation in the translation.",
+  "confidence": 0.9,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "252-254",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"hnta kusu somo e=ipe he\" g=\"where because NEG 2SG.S=eat Q\"",
+  "issue": "The free translation 'Why aren't you eating?' interprets 'hnta kusu' as 'why', but the gloss renders them as 'where because', which fails to reflect the fused adverbial meaning. The morpheme 'hnta' is glossed as 'where' but used as 'why', indicating a semantic shift not captured in the gloss.",
+  "suggestion": "Revise gloss to reflect the adverbial use, e.g., 'why' or 'where.REASON', or annotate 'hnta' as having a context-dependent meaning.",
+  "confidence": 0.95,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306-308",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"taan pe nep tap an a\" g=\"this thing what just exist Q\"",
+  "issue": "The morpheme 'tap' is glossed as 'just', but there is no corresponding element in the free translation 'What is this?'. The aspectual meaning of 'just' is not reflected in the translation, creating a mismatch.",
+  "suggestion": "Revise translation to include the temporal nuance, e.g., 'What is this just now?', or reconsider the gloss of 'tap'.",
+  "confidence": 0.8,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "346-348",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"hemanta ne kusu ene sir-an hi an\" g=\"what COP because like.this appear-4.S NMLZ exist\"",
+  "issue": "The free translation 'Why is it like this?' expresses a causal-wh meaning, but the gloss 'what COP because' does not clearly reflect that 'hemanta ne kusu' functions as a single fused interrogative expression meaning 'why'. The gloss fails to show the syntactic or semantic fusion.",
+  "suggestion": "Revise gloss to group 'hemanta ne kusu' as a unit, e.g., 'why' or 'what.COP.REASON', to reflect its function.",
+  "confidence": 0.9,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "370-372",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The declarative <i lang=\"ain-Latn\">hemanta ne?</i> = 'what is it?' / 'why?'",
+  "issue": "This contradicts the earlier claim in line 252–255 where 'hnta kusu' is used to express 'why', implying that 'why' is derived compositionally. Here, 'hemanta ne' alone is said to mean 'why', suggesting a direct wh-word for 'why', which conflicts with the compositional account.",
+  "suggestion": "Clarify whether 'why' is expressed by a dedicated form or only compositionally, and reconcile the two accounts.",
+  "confidence": 0.85,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "431",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹asserted›",
+  "issue": "The epistemic tag ‹asserted› is used without explanation and appears to be non-standard in the defined grading system (which includes ‹consensus›, ‹contested›, etc.). This may be a pipeline leak or undefined tag.",
+  "suggestion": "Replace with a defined epistemic grade such as ‹community-asserted› or reclassify based on source type.",
+  "confidence": 0.75,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "451",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-04) ‹asserted›",
+  "issue": "The tag ‹asserted› is applied to a Discord source, but the epistemic grading system does not define this tag. Using an undefined grade risks inflating the epistemic status of a community assertion.",
+  "suggestion": "Use ‹community-asserted› or ‹anecdotal›, or standardize the grading system to include such tags.",
+  "confidence": 0.8,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "27",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "the ∅-tail on the formal nouns <A w=\"ruwe\" gl=\"track-POSS\" />, <A w=\"hawe\" gl=\"voice-POSS\" />,",
+  "issue": "Inconsistent use of hyphenation in glosses: 'track-POSS' and 'voice-POSS' use hyphens, but later in line 29 'appearance-POSS' and 'sound-POSS' are also hyphenated — this is consistent, but the formatting should be verified across all instances to ensure no drift.",
+  "suggestion": "Ensure uniform hyphenation in all gl attributes for formal nouns.",
+  "confidence": 0.95,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "55-61",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "gloss: \"... epic COP track-POSS COP\" vs. translation: \"It was when I was really young that I heard this epic.\"",
+  "issue": "The gloss includes two COP tokens: one after 'epic' (morpheme ne) and one in the evidential frame ru-we ne. The translation does not reflect a copula meaning for the first ne, making the gloss inconsistent with the free translation.",
+  "suggestion": "Either re-gloss the first ne as a different category (e.g., a focus or linking particle) or adjust the translation to reflect the copula (e.g., 'it is an epic that I heard').",
+  "confidence": 0.9,
+  "chapter": "property-concept-predication",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "323-325",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "the read sources do not provide a systematic degree–comparison paradigm for property verbs, and the gap is noted there.",
+  "issue": "The phrase 'read sources' is a production term referring to sources consulted during writing; it reads as a meta-commentary rather than a statement addressed to the reader.",
+  "suggestion": "Replace with 'Existing descriptive grammars do not provide a systematic...' or 'The available sources do not provide a systematic...'",
+  "confidence": 0.7,
+  "chapter": "property-concept-predication",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "351",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "動詞と形容詞の差は紙一重; §129",
+  "issue": "Japanese parenthetical text appears without translation. While the English gloss of the quote is given immediately before, non-readers of Japanese cannot interpret the original.",
+  "suggestion": "Provide a short translation or transliteration in parentheses, e.g., 'the difference between a verb and an adjective is razor-thin' (dōshi to keiyōshi no sa wa kamihitoe; §129).",
+  "confidence": 0.8,
+  "chapter": "property-concept-predication",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

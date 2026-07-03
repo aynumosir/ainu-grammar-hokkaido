@@ -1,0 +1,676 @@
+[
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#017",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "321-322",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'yakun' is too general. The translation indicates a conditional function ('If I am full').",
+    "quote": "m=\"kironnu=an yakun a=i=rayke yakun a=i=rayke yakka pirka\"\ng=\"be.satiated=4.S CONJ 4.A=4.O=kill CONJ 4.A=4.O=kill CONJ be.good\"\ntr=\"If I am full, even if they kill me — let them; it is fine.\"",
+    "suggestion": "Change gloss for 'yakun' to 'COND'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'yakka' is too general. The translation 'even if they kill me' indicates a concessive function.",
+    "quote": "m=\"kironnu=an yakun a=i=rayke yakun a=i=rayke yakka pirka\"\ng=\"be.satiated=4.S CONJ 4.A=4.O=kill CONJ 4.A=4.O=kill CONJ be.good\"\ntr=\"If I am full, even if they kill me — let them; it is fine.\"",
+    "suggestion": "Change gloss for 'yakka' to 'CONC'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss marks both the agent (a=) and the object (i=) as 4th person, but the translation uses 'they' (3rd person plural) for the agent and 'me' (1st person singular) for the object. The note explains that i= is a 4th-person object, so the translation should maintain the 4th person (e.g., 'even if one kills one' or 'even if someone kills someone').",
+    "quote": "m=\"kironnu=an yakun a=i=rayke yakun a=i=rayke yakka pirka\" g=\"be.satiated=4.S CONJ 4.A=4.O=kill CONJ 4.A=4.O=kill CONJ be.good\" tr=\"If I am full, even if they kill me — let them; it is fine.\"",
+    "suggestion": "Change the translation of a=i=rayke to 'even if one kills one' or 'even if someone kills someone' to match the 4th person gloss.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ' is used three times, but two are for yakun (hypothetical) and one for yakka (concessive). These should be distinguished: 'HYP' for yakun and 'CONC' for yakka. Using 'CONJ' for both obscures functional differences.",
+    "quote": "g=\"be.satiated=4.S CONJ 4.A=4.O=kill CONJ 4.A=4.O=kill CONJ be.good\"",
+    "suggestion": "Differentiate: 'be.satiated=4.S HYP 4.A=4.O=kill HYP 4.A=4.O=kill CONC be.good'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#021",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "391-395",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'hike', 'ka', 'kor', and 'ka' are not italicized.",
+    "quote": "Etymologically it is the loose-link formal noun hike plus ka, a formation parallel to the kor + ka source of korka.",
+    "suggestion": "Italicize 'hike', 'ka', 'kor', and 'ka' for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes a parenthetical explanation, which is acceptable, but other <A> tags do not. This is a minor inconsistency in style.",
+    "quote": "<A w=\"hike\" gl=\"thing, fact (linking noun)\" />",
+    "suggestion": "Either add similar explanations to other <A> tags or remove the parenthetical for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#019",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "367-368",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'kor' and 'ka' are not italicized.",
+    "quote": "conditional kor plus scalar ka — literally 'even when'",
+    "suggestion": "Italicize 'kor' and 'ka' for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'when; while' is used here, but in line 185 it was 'while; when; have'. Inconsistent ordering and content of glosses for the same word.",
+    "quote": "<A w=\"kor\" gl=\"when; while\" />",
+    "suggestion": "Standardize to 'when; while' or 'while; when' across all instances.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#016",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "304-306",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'yak' and 'ka' are not italicized.",
+    "quote": "The etymology is transparent: conditional yak plus scalar ka, literally 'even if', the same analysis given for Shizunai by Refsing",
+    "suggestion": "Italicize 'yak' and 'ka' for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'if, when' is used again, but earlier (line 14) it included the qualifier '(habitual or evaluative)'. This creates inconsistency in how the particle's semantic range is presented.",
+    "quote": "<A w=\"yak\" gl=\"if, when\" />",
+    "suggestion": "Use the full gloss 'if, when (habitual or evaluative)' consistently.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'even, also' is used, but in line 368 the same form is glossed identically. This is consistent, but 'also' may not be the best gloss for ka in concessive contexts. However, since it's consistent, this is low severity.",
+    "quote": "<A w=\"ka\" gl=\"even, also\" />",
+    "suggestion": "null",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#008",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "185-187",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kor' is not italicized, while the Japanese translations are.",
+    "quote": "The particle kor carries two distinct conjunctive uses — simultaneity ('〜しながら') and a habitual or general-causation conditional ('〜するたびに / 〜すると') — that are sometimes indistinguishable in context",
+    "suggestion": "Italicize 'kor' for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'have', which is not discussed in the conditional section. While kor has a possessive use, it is not relevant here. The gloss should be trimmed to match the current context: 'while; when'.",
+    "quote": "<A w=\"kor\" gl=\"while; when; have\" />",
+    "suggestion": "Change to gl=\"while; when (habitual, conditional)\" to reflect the current usage.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#002",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "54-56",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yak' is not italicized, while 'un' is.",
+    "quote": "conditional yak plus the allative/attributive postposition un",
+    "suggestion": "Italicize 'yak' for consistency with other Ainu forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'if, when' is used here, but in line 14, the same particle is glossed as 'if, when (habitual or evaluative)'. The gloss is inconsistent within the chapter.",
+    "quote": "<A w=\"yak\" gl=\"if, when\" />",
+    "suggestion": "Unify the gloss: use 'if, when (habitual or evaluative)' in both places.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#001",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "13-19",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of particles uses italics for some but not others (e.g., 'yak' and 'yakne' are not italicized).",
+    "quote": "yakun (hypothetical conditional), yak and yakne (evaluative and oral-literary conditionals), ciki / cik (mood-restricted conditional), kor in its conditional use (habitual or temporal), yakka (concessive and permissive), and korka (adversative).",
+    "suggestion": "Italicize all Ainu forms in the list for consistency.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of italics for Ainu forms: some are in <i> tags, others use <A> component. The form <i lang=\"ain-Latn\">yakun</i> appears in italics here but later uses of yakun (e.g., line 44) are also in <i> tags, while other particles like <A w=\"yak\" gl=\"if, when (habitual or evaluative)\" /> use the dictionary-linked <A> component. This creates formatting inconsistency.",
+    "quote": "<i lang=\"ain-Latn\">yakun</i>",
+    "suggestion": "Use the <A> component for all cited particles where a gloss is provided, or use <i lang=\"ain-Latn\"> consistently throughout. Since yak is later given with <A>, yakun should be too if it has a defined gloss.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The particle <i lang=\"ain-Latn\">yakne</i> is presented in italics without a dictionary <A> tag, while nearby particles like <A w=\"yak\" gl=\"...\" /> are tagged. This creates inconsistency in markup treatment of lexical items.",
+    "quote": "<i lang=\"ain-Latn\">yakne</i>",
+    "suggestion": "Replace with <A w=\"yakne\" gl=\"if, when (evaluative, literary)\" /> or similar to match the treatment of yak, ensuring consistent tagging of lexical particles.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent markup: particles are in <i> tags here but elsewhere dialect variants are handled within <A> or with consistent formatting. Also, the slash notation mixes two forms without using the <A> component or consistent typographic treatment.",
+    "quote": "<i lang=\"ain-Latn\">ciki</i> / <i lang=\"ain-Latn\">cik</i>",
+    "suggestion": "Use <A w=\"ciki\" gl=\"if (mood-restricted)\" /> (cik in some dialects) or split into two <A> tags if both forms are lexically entered.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#020",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "377-378",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'korka' is too general. The translation 'but, even the bends had become narrow' indicates an adversative function.",
+    "quote": "m=\"nay poro p ne korka nay nutap ka hutne uske ne wa an\"\ng=\"river big NMLZ COP CONJ river bend even narrow place COP CONJ exist\"\ntr=\"The river was big, but even the bends had become narrow.\"",
+    "suggestion": "Change gloss for 'korka' to 'ADV'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ' is used for korka, an adversative particle. 'CONJ' is too generic; it should be 'ADV' or 'BUT' to reflect adversative meaning.",
+    "quote": "g=\"river big NMLZ COP CONJ river bend even narrow place COP CONJ exist\"",
+    "suggestion": "Change to 'BUT' or 'ADV': 'river big NMLZ COP BUT river bend even narrow place COP exist'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#018",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "344-345",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'yakka' is too general. The translation 'You may eat it' indicates a permissive/concessive function.",
+    "quote": "m=\"e=e yakka pirka\"\ng=\"2SG.A=eat CONJ be.good\"\ntr=\"You may eat it.\"",
+    "suggestion": "Change gloss for 'yakka' to 'CONC' or 'PERM'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ' is used for yakka in a permissive construction. Since yakka is a concessive particle, the gloss should be 'CONC' or 'PERM' rather than the underspecified 'CONJ'.",
+    "quote": "g=\"2SG.A=eat CONJ be.good\"",
+    "suggestion": "Change to 'CONC': '2SG.A=eat CONC be.good'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#009",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "206-207",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'kor' is too general. The translation 'When(ever) it gets dark...' indicates a conditional function.",
+    "quote": "m=\"sironuman kor cikap utar iwak\"\ng=\"get.dark CONJ bird ASS go.home\"\ntr=\"When(ever) it gets dark, the birds go home.\"",
+    "suggestion": "Change gloss for 'kor' to 'COND'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Again, 'CONJ' is used for kor in a conditional context. Since kor here functions as a habitual conditional ('whenever'), the gloss should reflect that (e.g., 'COND.HAB' or 'WHEN'), not the generic 'CONJ'.",
+    "quote": "g=\"get.dark CONJ bird ASS go.home\"",
+    "suggestion": "Change to 'COND.HAB' or 'WHEN': 'get.dark WHEN bird ASS go.home'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#006",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "150-151",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'ciki' is too general. The translation 'As I speak, listen...' indicates a conditional function.",
+    "quote": "m=\"itak=an ciki e=nu katu ene an hi\"\ng=\"speak=4.S CONJ 2SG.A=hear manner thus exist NMLZ\"\ntr=\"As I speak, listen in the following manner.\"",
+    "suggestion": "Change gloss for 'ciki' to 'COND'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ' is used for ciki, but ciki is a mood-restricted conditional, not a general conjunction. The gloss should reflect its conditional nature (e.g., 'COND') and possibly its mood restriction.",
+    "quote": "g=\"speak=4.S CONJ 2SG.A=hear manner thus exist NMLZ\"",
+    "suggestion": "Change 'CONJ' to 'COND': 'speak=4.S COND 2SG.A=hear manner thus exist NMLZ'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#004",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "111-112",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'yak' is too general. The translation 'Keeping you alive is frightening' implies a conditional or evaluative function, not just a conjunction.",
+    "quote": "m=\"a=e=siknure yak isitoma=an\"\ng=\"4.A=2SG.O=let.live CONJ be.frightening=4.S\"\ntr=\"Keeping you alive is frightening.\"",
+    "suggestion": "Change gloss for 'yak' to 'COND' or 'EVAL'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ' for yak is again too generic. Given that yak is a conditional particle with specific semantic roles (habitual/evaluative), the gloss should reflect 'COND' or 'HAB' rather than the underspecified 'CONJ'.",
+    "quote": "g=\"4.A=2SG.O=let.live CONJ be.frightening=4.S\"",
+    "suggestion": "Change to 'COND' or 'HAB' to match the particle's function: '4.A=2SG.O=let.live HAB be.frightening=4.S'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#003",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "70-72",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'CONJ' for 'yakun' is too general. The translation 'If it gets dark' indicates a conditional function, not just a general conjunction.",
+    "quote": "m=\"sirkunne yakun suy ruyanpe an nankor\"\ng=\"get.dark CONJ again storm exist probably\"\ntr=\"If it gets dark, there will probably be another storm.\"",
+    "suggestion": "Change gloss for 'yakun' to 'COND'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ' does not match the particle yakun, which is a conditional, not a general conjunction. The particle is labeled as a conditional in the text, and 'CONJ' is misleadingly broad. The correct gloss should reflect 'COND' or 'HYP' to distinguish it from other connectives.",
+    "quote": "g=\"get.dark CONJ again storm exist probably\"",
+    "suggestion": "Change 'CONJ' to 'COND' or 'g=\"get.dark HYP again storm exist probably'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#025",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "17",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Again, <i lang=\"ain-Latn\">kor</i> is in italics without <A> tag, while later it is properly tagged as <A w=\"kor\" gl=\"while; when; have\" /> (line 185). This creates inconsistency in how lexical items are marked.",
+    "quote": "<i lang=\"ain-Latn\">kor</i>",
+    "suggestion": "Replace with <A w=\"kor\" gl=\"when; while (conditional, habitual)\" /> to match later usage and ensure consistency.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Particle presented in <i> tag without <A> component, while later it is discussed with <A> tags (e.g., line 301). Inconsistent markup.",
+    "quote": "<i lang=\"ain-Latn\">yakka</i>",
+    "suggestion": "Replace with <A w=\"yakka\" gl=\"even if, even though\" /> to align with later usage.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Presented in <i> tag without <A> component, while later section uses <A> for related forms. Inconsistent presentation.",
+    "quote": "<i lang=\"ain-Latn\">korka</i>",
+    "suggestion": "Replace with <A w=\"korka\" gl=\"but, however (adversative)\" /> for consistency.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#024",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "414-415",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'akusu' and 'ruwe ne' are not italicized.",
+    "quote": "the factual conditional akusu can follow a ruwe ne tail — the functional equivalent of Japanese のだ — whereas the Japanese factual conditional と / たら rejects a preceding のだ.",
+    "suggestion": "Italicize 'akusu' and 'ruwe ne' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#023",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "407-409",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'kusu ne' and 'ruwe ne' are not italicized.",
+    "quote": "kusu ne ruwe ne is well-formed while *ruwe ne kusu ne is not, confirming that the connective scopes over the evidential",
+    "suggestion": "Italicize 'kusu ne' and 'ruwe ne' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#022",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "403-405",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'yakun', 'akusu', and 'korka' are not italicized.",
+    "quote": "hawe ne yakun 'if (it is reported that) X', ruwe ne akusu 'and (as established fact) Y was then discovered', and ruwe ne korka 'though X is the case'",
+    "suggestion": "Italicize 'yakun', 'akusu', and 'korka' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#015",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "280-282",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'factual / realis' is not italicized, while the Ainu terms 'akusu' / 'awa' are.",
+    "quote": "<td><i lang=\"ain-Latn\">akusu</i> / <i lang=\"ain-Latn\">awa</i></td>\n<td>factual / realis</td>",
+    "suggestion": "Italicize descriptive phrases in the table for consistency with the Ainu terms.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#014",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "274-275",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'habitual / general causation' is not italicized, while the Ainu term 'kor' is.",
+    "quote": "<td><i lang=\"ain-Latn\">kor</i> (conditional)</td>\n<td>habitual / general causation</td>",
+    "suggestion": "Italicize descriptive phrases in the table for consistency with the Ainu terms.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#013",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "266-267",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'individual conditional' is not italicized, while the Ainu terms 'ciki' / 'cik' are.",
+    "quote": "<td><i lang=\"ain-Latn\">ciki</i> / <i lang=\"ain-Latn\">cik</i></td>\n<td>individual conditional</td>",
+    "suggestion": "Italicize descriptive phrases in the table for consistency with the Ainu terms.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#012",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "257-258",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'habitual / evaluative' is not italicized, while the Ainu term 'yak' is.",
+    "quote": "<td><i lang=\"ain-Latn\">yak</i></td>\n<td>habitual / evaluative</td>",
+    "suggestion": "Italicize descriptive phrases in the table for consistency with the Ainu terms.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#011",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "250-251",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'hypothetical (one-off)' is not italicized, while the Ainu term 'yakun' is.",
+    "quote": "<td><i lang=\"ain-Latn\">yakun</i></td>\n<td>hypothetical (one-off)</td>",
+    "suggestion": "Italicize descriptive phrases in the table for consistency with the Ainu terms.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#010",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "215-216",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'pe ne' and 'p ne' are not italicized, while 'kor' is.",
+    "quote": "A formal-noun tail pe ne / p ne frequently closes the matrix of a kor conditional",
+    "suggestion": "Italicize 'pe ne' and 'p ne' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#007",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "173-179",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim is marked as ‹speculative› and relies on community discussion from 2024, which is fine, but the phrasing 'awaits support from primary sources' suggests a potential pipeline issue where the source material might not have been fully available or processed.",
+    "quote": "A diachronic connection between the conditional ciki and the homophonous adverb ciki 'now' — pointing to a grammaticalization path from 'now (if …)' toward the conditional–admonitive — is advanced in community discussion but likewise awaits support from primary sources ‹speculative› (antitwilight, <Ref k=\"aynucorporadiscord\" /> 2024).",
+    "suggestion": "Consider rephrasing to 'is proposed in community discussion but awaits corroboration from primary sources' if the primary sources are indeed missing.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#005",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "120-125",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim is marked as ‹contested› and relies on community discussion from 2026, which is in the future relative to the book's publication date (2025-2026). This seems to be a pipeline artifact.",
+    "quote": "In the Ishikari dialect the sequence yak easir (conditional yak plus easir 'only then') extends the evaluative conditional into an explicit obligation construction — 'it is only fitting if one does X' — moving from evaluation toward necessity ‹contested›; the analysis is proposed in community discussion and awaits corroboration from a primary grammar of Ishikari (nukopoli, <Ref k=\"aynucorporadiscord\" /> 2026).",
+    "suggestion": "Remove the ‹contested› tag if the community discussion is the sole basis and it's not yet published/verified.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "conditional-temporal-concessive-clauses~p1#026",
+  "chapter": "conditional-temporal-concessive-clauses",
+  "lines": "1",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'CONJ' is used for yakun, but in the table (line 250ff), yakun is clearly labeled a conditional. Using 'CONJ' blurs the distinction between general conjunction and conditional. The gloss should be 'HYP' or 'COND'.",
+    "quote": "g=\"get.dark CONJ again storm exist probably\"",
+    "suggestion": "Change 'CONJ' to 'HYP' to reflect the hypothetical conditional function.",
+    "confidence": 0.95
+   }
+  ]
+ }
+]

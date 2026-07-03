@@ -1,0 +1,1407 @@
+[
+ {
+  "id": "kinship-honorific-possession~p1#048",
+  "chapter": "kinship-honorific-possession",
+  "lines": "38, 72",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose lists 'ekasi' as a concept-construction term, but the affiliative-construction table includes 'ekas' as the concept form and 'ekasi' as its short affiliative form; the address note then says 'concept-set ekasi used for address'. This blurs the strict dichotomous classification and suggests an inconsistency in the analysis or presentation.",
+    "quote": "The concept-construction set contains principally senior-generation terms: … ekasi …",
+    "suggestion": "Clarify whether 'ekasi' is a lexeme that straddles both sets, or revise one of the two statements to avoid contradiction.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss states 'hapo' means 'mother' in most dialects and 'father' in Chitose and Horobetsu, but later in line 425 it says 'hapo' means 'father' in Chitose — consistent — yet also says 'mother' shifts to 'totto' to avoid homonymy with widespread 'hapo' meaning 'mother'. This implies 'hapo' cannot simultaneously mean both 'mother' and 'father' in overlapping areas without clarification.",
+    "quote": "<A w=\"hapo\" gl=\"mother (most dialects); father (Chitose, Horobetsu)\" />",
+    "suggestion": "Clarify that in Chitose, 'hapo' means 'father', hence 'mother' is displaced to 'totto'; revise earlier gloss if needed for coherence.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#002",
+  "chapter": "kinship-honorific-possession",
+  "lines": "38",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hapo' is listed here without a macron, but it appears with a macron in the citation <Ref k=\"nakagawa2024\" p=\"221–226\" /> on line 14. Consistency is needed.",
+    "quote": "<A w=\"hapo\" gl=\"mother (most dialects); father (Chitose, Horobetsu)\" />",
+    "suggestion": "Check if 'hapo' should consistently have a macron or not.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss claims 'father' for mici in Saru, but the table in section 'two-paradigms' lists 'ona' as the term for 'father' in the affiliative-construction set, and the text later states that 'mici' belongs to the concept-construction set. This creates a conflict in assignment and construction type.",
+    "quote": "<A w=\"mici\" gl=\"father (Saru, Shizunai, Tokachi, Kushiro)\" />",
+    "suggestion": "Revise the gloss to reflect that 'mici' is a concept-construction term meaning 'father' in specific dialects, or confirm consistency with the table.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#058",
+  "chapter": "kinship-honorific-possession",
+  "lines": "349",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for 'ku=kor totto' is '1SG.A=have mother', but 'totto' is glossed as 'breast', not 'mother'. The free translation confirms 'my mother', so either the gloss of 'totto' must reflect 'mother' here, or the decomposition is misleading.",
+    "quote": "g=\"1SG.A=hand-POSS be.injured NMLZ LOC 1SG.A=have mother mugwort leaf take CONJ\"",
+    "suggestion": "Revise gloss to '1SG.A=have breast' and explain semantic extension to 'mother' in note, or update 'totto' gloss in context.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#054",
+  "chapter": "kinship-honorific-possession",
+  "lines": "215",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that concept-construction terms like 'mici', 'hapo', 'ekasi', 'huci' serve as vocatives, but 'hapo' is also claimed to mean 'father' in Chitose (line 425), while 'mici' is listed as 'father' in Saru etc. (line 37). This creates ambiguity: which term is used for vocative 'father' in which dialect?",
+    "quote": "<i lang=\"ain-Latn\">mici</i>, <i lang=\"ain-Latn\">hapo</i>, <i lang=\"ain-Latn\">ekasi</i>, <i lang=\"ain-Latn\">huci</i>",
+    "suggestion": "Specify dialect alignment: e.g., 'in Chitose, hapo is used vocatively for father, while in Saru, mici fills that role'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#053",
+  "chapter": "kinship-honorific-possession",
+  "lines": "173",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Similar to 'mataki', 'matkarku' is listed as a concept form in the table, yet the note suggests it is used vocatively as 'ku=matkarku', which contradicts the established pattern that only specific terms like 'yupo' and 'sapo' have dedicated address forms.",
+    "quote": "address form: (<i lang=\"ain-Latn\">ku=matkarku</i>, Nakagawa ex. 265)",
+    "suggestion": "Rephrase to indicate this is a reported usage rather than a standard address form, or provide evidence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#052",
+  "chapter": "kinship-honorific-possession",
+  "lines": "131",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The address form is given as 'ku=mataki', but 'mataki' is the short affiliative form of 'matak', which is listed as 'younger sister (of a sister)'. The form 'mataki' is not marked as an address form elsewhere, and this conflicts with the pattern where address forms like 'yupo' and 'sapo' differ from the standard affiliative.",
+    "quote": "address form: (<i lang=\"ain-Latn\">ku=mataki</i>, Nakagawa ex. 265)",
+    "suggestion": "Clarify whether 'ku=mataki' is truly an address form or just a possessed form; consider rephrasing note to avoid implying vocative use.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#050",
+  "chapter": "kinship-honorific-possession",
+  "lines": "196",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about the short affiliative being identical to the concept form for vowel-final stems is supported only by a single source (Nakagawa 2024), which does not constitute broad consensus warranting the ‹consensus› tag.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"227\" /> ‹consensus›.",
+    "suggestion": "Either add additional citations if available, or downgrade to no tag or a weaker tag such as ‹corpus-confirmed›.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#047",
+  "chapter": "kinship-honorific-possession",
+  "lines": "455",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'onne' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">onne</i>",
+    "suggestion": "Check if 'onne' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ike' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">ike</i>",
+    "suggestion": "Check if 'ike' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#046",
+  "chapter": "kinship-honorific-possession",
+  "lines": "451",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'onneke(he)' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">onneke(he)</i>",
+    "suggestion": "Check if 'onneke(he)' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'onneike' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">onneike</i>",
+    "suggestion": "Check if 'onneike' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#045",
+  "chapter": "kinship-honorific-possession",
+  "lines": "446",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'macirpe' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">macirpe</i>",
+    "suggestion": "Check if 'macirpe' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'tures(i)' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">tures(i)</i>",
+    "suggestion": "Check for macron consistency on 'tures(i)'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#044",
+  "chapter": "kinship-honorific-possession",
+  "lines": "442",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ak' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">ak</i>",
+    "suggestion": "Check for macron consistency on 'ak'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'mat-ak' appears without a macron on 'ak'. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">mat-ak</i>",
+    "suggestion": "Check for macron consistency on 'ak'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'matapa' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">matapa</i>",
+    "suggestion": "Check for macron consistency on 'matapa'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'mat-apa' appears without a macron on 'apa'. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">mat-apa</i>",
+    "suggestion": "Check if 'apa' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#043",
+  "chapter": "kinship-honorific-possession",
+  "lines": "437",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'konnarpe' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">kor konnarpe</i>",
+    "suggestion": "Check if 'konnarpe' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#042",
+  "chapter": "kinship-honorific-possession",
+  "lines": "433",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'konnarpe' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">konnarpe</i>",
+    "suggestion": "Check if 'konnarpe' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'unarpe' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">kor unarpe</i>",
+    "suggestion": "Check if 'unarpe' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'koracapo' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">koracapo</i>",
+    "suggestion": "Check if 'koracapo' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'koruci' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">koruci</i>",
+    "suggestion": "Check if 'koruci' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#041",
+  "chapter": "kinship-honorific-possession",
+  "lines": "429",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hapo' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">hapo</i>",
+    "suggestion": "Check for macron consistency on 'hapo'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#040",
+  "chapter": "kinship-honorific-possession",
+  "lines": "425",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hapo' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">hapo</i>",
+    "suggestion": "Check for macron consistency on 'hapo'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'totto' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">totto</i>",
+    "suggestion": "Check for macron consistency on 'totto'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hapo' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">hapo</i>",
+    "suggestion": "Check for macron consistency on 'hapo'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#039",
+  "chapter": "kinship-honorific-possession",
+  "lines": "421",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'aca' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">aca</i>",
+    "suggestion": "Check for macron consistency on 'aca'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'mici' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">mici</i>",
+    "suggestion": "Check for macron consistency on 'mici'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'iyapo' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">iyapo</i>",
+    "suggestion": "Check if 'iyapo' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hampe' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">hampe</i>",
+    "suggestion": "Check if 'hampe' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hapo' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">hapo</i>",
+    "suggestion": "Check for macron consistency on 'hapo'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#038",
+  "chapter": "kinship-honorific-possession",
+  "lines": "407",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ukokor' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">ukokor</i>",
+    "suggestion": "Check if 'ukokor' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kopokor' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">kopokor</i>",
+    "suggestion": "Check if 'kopokor' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#037",
+  "chapter": "kinship-honorific-possession",
+  "lines": "397",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hon' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">hon</i> 'belly'",
+    "suggestion": "Check if 'hon' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#036",
+  "chapter": "kinship-honorific-possession",
+  "lines": "391",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'mat' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">mat</i> 'wife'",
+    "suggestion": "Check for macron consistency on 'mat'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ukor' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">ukor</i>",
+    "suggestion": "Check if 'ukor' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#035",
+  "chapter": "kinship-honorific-possession",
+  "lines": "385",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'po' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">po</i> 'child'",
+    "suggestion": "Check for macron consistency on 'po'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'poho' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">a=poho an</i>",
+    "suggestion": "Check for macron consistency on 'poho'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#034",
+  "chapter": "kinship-honorific-possession",
+  "lines": "355",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hapo' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">hapo</i>",
+    "suggestion": "Check for macron consistency on 'hapo'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'totto' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">totto</i>",
+    "suggestion": "Check for macron consistency on 'totto'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#033",
+  "chapter": "kinship-honorific-possession",
+  "lines": "349",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'teke-he' appears without a macron on 'teke'. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">ku=teke-he</i>",
+    "suggestion": "Check if 'teke' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'piro' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">piro hi ta</i>",
+    "suggestion": "Check if 'piro' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'totto' appears without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">ku=kor totto</i>",
+    "suggestion": "Check if 'totto' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#032",
+  "chapter": "kinship-honorific-possession",
+  "lines": "339",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'HK' is in all caps. While other dialect tags are also in all caps, it's worth noting if this is a consistent style choice or if it should be lowercase.",
+    "quote": "<i lang=\"ain-Latn\">HK</i>",
+    "suggestion": "Ensure consistent casing for dialect tags.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#031",
+  "chapter": "kinship-honorific-possession",
+  "lines": "334",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'yup-i' and 'sa-ha' are presented without macrons on the base forms 'yupi' and 'sa'. This is inconsistent with the potential macron usage for these base forms as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">a=yup-i an a=sa-ha an</i>",
+    "suggestion": "Verify if 'yupi' and 'sa' should have macrons.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#030",
+  "chapter": "kinship-honorific-possession",
+  "lines": "319",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'SHI' is in all caps. While other dialect tags are also in all caps, it's worth noting if this is a consistent style choice or if it should be lowercase.",
+    "quote": "<i lang=\"ain-Latn\">SHI</i>",
+    "suggestion": "Ensure consistent casing for dialect tags.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'saha' appears without a macron. This is inconsistent with the potential macron usage for this term as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">an=saha</i>",
+    "suggestion": "Check for macron consistency on 'saha'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#029",
+  "chapter": "kinship-honorific-possession",
+  "lines": "315",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'yupi-hi' and 'sa-ha' are presented without macrons on the base forms 'yupi' and 'sa'. This is inconsistent with the potential macron usage for these base forms as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">a=yupi-hi an=sa-ha</i>",
+    "suggestion": "Verify if 'yupi' and 'sa' should have macrons.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'haw-ehe' is presented without a macron on 'haw'. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">haw-ehe</i>",
+    "suggestion": "Check if 'haw' should have a macron.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'voice' for 'haw-ehe' is presented without a macron. This is inconsistent with the potential macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">voice-POSS</i>",
+    "suggestion": "Check if 'voice' should have a macron.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#028",
+  "chapter": "kinship-honorific-possession",
+  "lines": "283",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'onautari' and 'unuutari' appear without macrons. This is consistent with the lack of macrons on 'utar' (line 272) and 'unu' (line 64), but inconsistent with the potential macron usage for 'utari' (line 274).",
+    "quote": "<i lang=\"ain-Latn\">onautari</i> and <i lang=\"ain-Latn\">unuutari</i>",
+    "suggestion": "Ensure consistent macron usage for these compound forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#027",
+  "chapter": "kinship-honorific-possession",
+  "lines": "274",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'utari' appears without a macron. The concept form on line 272 is '<A w=\"utar\" gl=\"family, companions, kin-group members\" />'. It's unclear if 'utari' should have a macron.",
+    "quote": "<i lang=\"ain-Latn\">k=utari</i>",
+    "suggestion": "Check for macron consistency on 'utari'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#026",
+  "chapter": "kinship-honorific-possession",
+  "lines": "252",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'ona-ha' and 'unu-hu' are presented without macrons on the base forms 'ona' and 'unu'. This is inconsistent with the potential macron usage for these base forms as discussed elsewhere.",
+    "quote": "<i lang=\"ain-Latn\">a=ona-ha an a=unu-hu an</i>",
+    "suggestion": "Verify if 'ona' and 'unu' should have macrons.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#025",
+  "chapter": "kinship-honorific-possession",
+  "lines": "238",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'sapo' and 'yupo' appear without macrons. This is inconsistent with potential macron usage in other related forms and the general need for consistent orthography.",
+    "quote": "<i lang=\"ain-Latn\">ku=sapo</i> and <i lang=\"ain-Latn\">ku=yupo</i>",
+    "suggestion": "Ensure consistent macron usage for 'sapo' and 'yupo'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'mataki' and 'matkarku' appear without macrons. These are derived from the forms in the table (lines 128, 171) which also lack macrons. This suggests a potential systematic omission of macrons for these terms.",
+    "quote": "<i lang=\"ain-Latn\">ku=mataki</i> and <i lang=\"ain-Latn\">ku=matkarku</i>",
+    "suggestion": "Check for consistent macron usage for 'mataki' and 'matkarku'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#024",
+  "chapter": "kinship-honorific-possession",
+  "lines": "229",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yupo' appears without a macron. Based on line 110, 'yupo' is the address form for elder brother. It's possible 'yupo' should have a macron for consistency.",
+    "quote": "<i lang=\"ain-Latn\">ku=yupo</i>",
+    "suggestion": "Check for macron consistency on 'yupo'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#023",
+  "chapter": "kinship-honorific-possession",
+  "lines": "220",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'sapo' appears without a macron. Based on line 117, 'saha' is the reference form for elder sister, and 'sapo' is the address form. It's possible 'sapo' should have a macron for consistency.",
+    "quote": "<i lang=\"ain-Latn\">ku=sapo</i>",
+    "suggestion": "Check for macron consistency on 'sapo'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#022",
+  "chapter": "kinship-honorific-possession",
+  "lines": "213",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'yupo' and 'sapo' are presented without macrons. Given that 'yupi' and 'saha' are used elsewhere (lines 110, 117), and macrons are inconsistently applied, it's possible these address forms should also have macrons.",
+    "quote": "<i lang=\"ain-Latn\">yupo</i> and <i lang=\"ain-Latn\">sapo</i>",
+    "suggestion": "Check for macron consistency on 'yupo' and 'sapo'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'mici', 'hapo', 'ekasi', 'huci' are presented without macrons. 'hapo' is also inconsistently represented with or without a macron earlier in the text (lines 14, 38). 'ekasi' is also presented as 'ekas' in the table (line 71).",
+    "quote": "<i lang=\"ain-Latn\">mici</i>, <i lang=\"ain-Latn\">hapo</i>, <i lang=\"ain-Latn\">ekasi</i>, <i lang=\"ain-Latn\">huci</i>",
+    "suggestion": "Ensure consistent macron usage for these terms, and resolve the discrepancy for 'ekasi'/'ekas'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#021",
+  "chapter": "kinship-honorific-possession",
+  "lines": "208",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Several Ainu terms listed here appear without macrons. Based on other parts of the text and common Ainu orthography, some of these might require macrons (e.g., 'sut' vs 'sut', 'ekas' vs 'ekasi', 'aca' vs 'acaha', 'yup' vs 'yupi').",
+    "quote": "<i lang=\"ain-Latn\">ona</i>, <i lang=\"ain-Latn\">unu</i>, <i lang=\"ain-Latn\">sut</i>, <i lang=\"ain-Latn\">ekas</i>, <i lang=\"ain-Latn\">aca</i>, <i lang=\"ain-Latn\">yup</i>, <i lang=\"ain-Latn\">sa</i>",
+    "suggestion": "Review the macrons for these terms for consistency with the rest of the chapter.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#020",
+  "chapter": "kinship-honorific-possession",
+  "lines": "192",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The derived forms 'yupi(hi)', 'suci(hi)', 'maci(hi)', 'turesi(hi)' are presented with macrons, but the base forms 'yup', 'sut', 'mat', 'tures' are presented without macrons. This suggests inconsistency in macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">yup→yupi(hi)</i>, <i lang=\"ain-Latn\">sut→suci(hi)</i>, <i lang=\"ain-Latn\">mat→maci(hi)</i>, <i lang=\"ain-Latn\">tures→turesi(hi)</i>",
+    "suggestion": "Verify if the base forms 'yup', 'sut', 'mat', 'tures' should also carry macrons.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#019",
+  "chapter": "kinship-honorific-possession",
+  "lines": "187",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "These Ainu words are presented without macrons, but the concept forms in the table (lines 57, 64, 113, 148) also lack macrons. However, the long affiliative forms derived from them (lines 59, 66, 115, 150) sometimes include macrons (e.g., 'onaha', 'unuhu', 'saha', 'poho'). This suggests inconsistency in how macrons are applied to these base forms.",
+    "quote": "<i lang=\"ain-Latn\">ona</i>, <i lang=\"ain-Latn\">unu</i>, <i lang=\"ain-Latn\">sa</i>, <i lang=\"ain-Latn\">po</i>",
+    "suggestion": "Ensure consistent application of macrons to these base forms, especially when they appear in different contexts (concept form, short affiliative, long affiliative).",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The derived forms 'onaha' and 'unuhu' are presented with macrons, but the base forms 'ona' and 'unu' are presented without macrons. This implies inconsistency in macron usage for related forms.",
+    "quote": "<i lang=\"ain-Latn\">ona→onaha</i>, <i lang=\"ain-Latn\">unu→unuhu</i>",
+    "suggestion": "Verify if the base forms 'ona' and 'unu' should also carry macrons.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#018",
+  "chapter": "kinship-honorific-possession",
+  "lines": "177",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'mippo' appears without a macron in the table. The concept form on line 176 is '<i lang=\"ain-Latn\">mippo</i>'. It's unclear if the macron is missing from 'mippo'.",
+    "quote": "<i lang=\"ain-Latn\">mippo</i>",
+    "suggestion": "Check for macron consistency on 'mippo'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#017",
+  "chapter": "kinship-honorific-possession",
+  "lines": "170",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'matkarku' appears without a macron in the table. The concept form on line 169 is '<i lang=\"ain-Latn\">matkarku</i>'. It's unclear if the macron is missing from 'matkarku'.",
+    "quote": "<i lang=\"ain-Latn\">matkarku</i>",
+    "suggestion": "Check for macron consistency on 'matkarku'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#016",
+  "chapter": "kinship-honorific-possession",
+  "lines": "163",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'karku' appears without a macron in the table. The concept form on line 162 is '<i lang=\"ain-Latn\">karku</i>'. It's unclear if the macron is missing from 'karku'.",
+    "quote": "<i lang=\"ain-Latn\">karku</i>",
+    "suggestion": "Check for macron consistency on 'karku'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#015",
+  "chapter": "kinship-honorific-possession",
+  "lines": "156",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'matnepo' appears without a macron in the table. The concept form on line 155 is '<i lang=\"ain-Latn\">matnepo</i>'. It's unclear if the macron is missing from 'matnepo'.",
+    "quote": "<i lang=\"ain-Latn\">matnepo</i>",
+    "suggestion": "Check for macron consistency on 'matnepo'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#014",
+  "chapter": "kinship-honorific-possession",
+  "lines": "149",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'po' appears without a macron in the table. The concept form on line 148 is '<i lang=\"ain-Latn\">po</i>'. It's unclear if the macron is missing from 'po'.",
+    "quote": "<i lang=\"ain-Latn\">po</i>",
+    "suggestion": "Check for macron consistency on 'po'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#013",
+  "chapter": "kinship-honorific-possession",
+  "lines": "142",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'turesi' appears without a macron in the table. The concept form on line 141 is '<i lang=\"ain-Latn\">tures</i>'. It's unclear if the macron is missing from 'turesi'.",
+    "quote": "<i lang=\"ain-Latn\">turesi</i>",
+    "suggestion": "Check for macron consistency on 'turesi'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#012",
+  "chapter": "kinship-honorific-possession",
+  "lines": "135",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'matapa' appears without a macron in the table. The concept form on line 134 is '<i lang=\"ain-Latn\">matapa</i>'. It's unclear if the macron is missing from 'matapa'.",
+    "quote": "<i lang=\"ain-Latn\">matapa</i>",
+    "suggestion": "Check for macron consistency on 'matapa'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#011",
+  "chapter": "kinship-honorific-possession",
+  "lines": "128",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'mataki' appears without a macron in the table. The concept form on line 127 is '<i lang=\"ain-Latn\">matak</i>'. It's unclear if the macron is missing from 'mataki'.",
+    "quote": "<i lang=\"ain-Latn\">mataki</i>",
+    "suggestion": "Check for macron consistency on 'mataki'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#010",
+  "chapter": "kinship-honorific-possession",
+  "lines": "121",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'aki' appears without a macron in the table. The concept form on line 120 is '<i lang=\"ain-Latn\">ak</i>'. It's unclear if the macron is missing from 'aki'.",
+    "quote": "<i lang=\"ain-Latn\">aki</i>",
+    "suggestion": "Check for macron consistency on 'aki'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#009",
+  "chapter": "kinship-honorific-possession",
+  "lines": "114",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'sa' appears without a macron in the table. The concept form on line 113 is '<i lang=\"ain-Latn\">sa</i>'. It's unclear if the macron is missing from 'sa'.",
+    "quote": "<i lang=\"ain-Latn\">sa</i>",
+    "suggestion": "Check for macron consistency on 'sa'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#008",
+  "chapter": "kinship-honorific-possession",
+  "lines": "107",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'yupi' appears without a macron in the table. The concept form on line 106 is '<i lang=\"ain-Latn\">yup</i>'. It's unclear if the macron is missing from 'yupi'.",
+    "quote": "<i lang=\"ain-Latn\">yupi</i>",
+    "suggestion": "Check for macron consistency on 'yupi'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#007",
+  "chapter": "kinship-honorific-possession",
+  "lines": "100",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'maci' appears without a macron in the table. The concept form on line 99 is '<i lang=\"ain-Latn\">mat</i>'. It's unclear if the macron is missing from 'maci'.",
+    "quote": "<i lang=\"ain-Latn\">maci</i>",
+    "suggestion": "Check for macron consistency on 'maci'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#006",
+  "chapter": "kinship-honorific-possession",
+  "lines": "93",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hoku' appears without a macron in the table. The concept form on line 92 is '<i lang=\"ain-Latn\">hoku</i>'. It's unclear if the macron is missing from 'hoku'.",
+    "quote": "<i lang=\"ain-Latn\">hoku</i>",
+    "suggestion": "Check for macron consistency on 'hoku'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#005",
+  "chapter": "kinship-honorific-possession",
+  "lines": "86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'aca' appears without a macron in the table, but the concept form on line 85 is '<i lang=\"ain-Latn\">aca</i>'. The gloss on line 88 is 'uncle; father (Sōya, Samani)'. It's unclear if the macron is missing from 'aca'.",
+    "quote": "<i lang=\"ain-Latn\">aca</i>",
+    "suggestion": "Check for macron consistency on 'aca'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#004",
+  "chapter": "kinship-honorific-possession",
+  "lines": "79",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'suci' appears without a macron in the table, but the concept form on line 78 is '<i lang=\"ain-Latn\">sut</i>'. The gloss on line 81 is 'grandmother, elder woman'. It's unclear if the macron is missing from 'suci' or if it's a different form.",
+    "quote": "<i lang=\"ain-Latn\">suci</i>",
+    "suggestion": "Check for macron consistency on 'suci' and its relation to 'sut'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#003",
+  "chapter": "kinship-honorific-possession",
+  "lines": "71",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ekas' appears without a macron in the table, but the gloss on line 37 lists '<A w=\"ekasi\" gl=\"grandfather, elder man\" />' which implies a final 'i'. This might be a typo or an inconsistency in how the concept form is presented.",
+    "quote": "<i lang=\"ain-Latn\">ekas</i>",
+    "suggestion": "Verify if the concept form should be 'ekas' or 'ekasi' and ensure consistency with the gloss.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#001",
+  "chapter": "kinship-honorific-possession",
+  "lines": "14",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hapo' is written with a macron in the citation <Ref k=\"nakagawa2024\" p=\"221–226\" /> but without one here. Consistency is needed.",
+    "quote": "<i lang=\"ain-Latn\">ku=kor hapo</i>",
+    "suggestion": "Check if 'hapo' should consistently have a macron or not.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#060",
+  "chapter": "kinship-honorific-possession",
+  "lines": "455",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Etymological claim based solely on Discord user input, tagged ‹speculative› — appropriate — but no primary source is cited. While acceptable for speculative content, it should not stand alone without a reference to potential source materials.",
+    "quote": "antitwilight (aynu-corpora Discord, 2024-11-15) proposes the etymology",
+    "suggestion": "Add a note that this etymology lacks published attestation or cite potential parallels.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#059",
+  "chapter": "kinship-honorific-possession",
+  "lines": "429",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Attribution to a Discord user who 'cites' Chiri, but no actual reference to Chiri is provided. This risks epistemic indirection: the claim should either cite Chiri directly or frame the Discord comment as secondary.",
+    "quote": "thegodofneet (aynu-corpora Discord, 2026-06-08) cites Chiri's dialect survey",
+    "suggestion": "Add full citation to Chiri or rephrase as 'as noted in community discussion, based on Chiri's survey'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#057",
+  "chapter": "kinship-honorific-possession",
+  "lines": "315",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss renders 'an=sa-ha' as '4.A=elder.sister-POSS', but 'an=' is described as a dialectal variant of 'a=' (Shizunai). The gloss does not mark this dialectal variation, potentially misleading readers about form-function mapping.",
+    "quote": "m=\"nekon ne wa a=yupi-hi an=sa-ha haw-ehe ka isam ruwe ne\"",
+    "suggestion": "Add a note in the gloss or example metadata that 'an=' is a Shizunai variant of 'a='.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#056",
+  "chapter": "kinship-honorific-possession",
+  "lines": "282",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Another Discord attribution for a lexical observation (compounds onnautari/unuutari), tagged ‹contested›. While plausible, such compounds should ideally be corpus-attested; citing only Discord risks epistemic inflation.",
+    "quote": "nukopoli (aynu-corpora Discord, 2026-06-15) further notes",
+    "suggestion": "Add corpus source if available, or retain with clearer hedge like 'proposed in community discussion'.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#055",
+  "chapter": "kinship-honorific-possession",
+  "lines": "277",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "A Discord attribution is cited as evidence for a conceptual claim about obligatorily possessed kin terms, and tagged ‹contested› — appropriate — but the same idea is already supported by Bugaeva (line 267–269), making the Discord cite redundant or epistemically downgraded.",
+    "quote": "thegodofneet (aynu-corpora Discord, 2025-09-17) observes",
+    "suggestion": "Either remove the Discord attribution or clarify it as community corroboration rather than primary evidence.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#051",
+  "chapter": "kinship-honorific-possession",
+  "lines": "78",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The concept form 'sut' appears in the affiliative-construction table, but in the prose (line 39) 'huci' is listed as the concept-construction term for 'grandmother'. This suggests 'sut' should not be in the affiliative set if 'huci' is its concept-construction counterpart.",
+    "quote": "<td><i lang=\"ain-Latn\">sut</i></td>",
+    "suggestion": "Verify whether 'sut' and 'huci' are dialect variants or if one is misclassified; align table with textual classification.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "kinship-honorific-possession~p1#049",
+  "chapter": "kinship-honorific-possession",
+  "lines": "144",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss includes the word '(tales)' which is unclear; it may be an abbreviation for 'tales' (narrative tradition) or a typographical error. No other gloss in the table uses this formatting.",
+    "quote": "younger sister of a brother (tales)",
+    "suggestion": "Replace with a clear note such as '(narrative)' or remove if unintentional.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "180",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "tr=\"I said I would return.\" g=\"return=4.S COMP 4.A=say\"",
+  "issue": "The free translation 'I said' uses a first-person subject, but the gloss for the matrix verb is '4.A=say' (fourth person). The direct-quote example (line 170) translates the same matrix form a=ye as 'He/she said'. This inconsistency suggests either the gloss or the translation is wrong.",
+  "suggestion": "Either change the translation to 'He/she said I would return' or adjust the gloss to reflect a first-person reading for a= in this context.",
+  "confidence": 0.8,
+  "chapter": "quotative-complementation-sekor",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "84–86, 275",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "84: 'an original first person shifts to the fourth' vs. 275: 'the speaker's-viewpoint person shifts 1→3/4'",
+  "issue": "The chapter's own description (line 84-86) states that the shift is only to the fourth person, but a direct quote from Nakagawa (line 275) includes third person as a possible target ('1→3/4'). This creates a contradiction about the scope of the person shift.",
+  "suggestion": "Reconcile: either amend the earlier description to include third person, or explain that Nakagawa's rule differs from the consensus presented here.",
+  "confidence": 0.9,
+  "chapter": "quotative-complementation-sekor",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "347–352",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "the material banked for this grammar's nominalization domain — but her treatment of direct and indirect speech falls in a separate lesson not included in the factbase read for this domain ... No Ijäs claims on sekor or quotative framing are available for grading here.",
+  "issue": "Phrases such as 'factbase read' and 'available for grading' are production-process terminology (pipeline language) that leak into the published text. They are addressed to the editorial team, not the reader.",
+  "suggestion": "Rewrite in a reader-facing style: e.g., 'Ijäs's pedagogical grammar covers... but does not treat direct/indirect speech in the sections consulted for this work. Her examples are not available for evaluation here.'",
+  "confidence": 1,
+  "chapter": "quotative-complementation-sekor",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "262–263",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "A stable semantic or register distinction between the two verbs in quotative syntax is not established in the read sources ‹corpus-suggested›.",
+  "issue": "The evidence tag ‹corpus-suggested› normally indicates that corpus data support a positive claim. Here the claim is negative ('not established'), making the tag inappropriate. The tag should be omitted or replaced with ‹speculative› if the claim is about absence of evidence.",
+  "suggestion": "Remove the tag or change to ‹speculative›.",
+  "confidence": 0.7,
+  "chapter": "quotative-complementation-sekor",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "215–216",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "cite=\"ilcaa1976\" dial=\"SAR\" place=\"Kawakami Matsuko, uwepeker 民話8 (その2) [aa-irc/007#213]\"",
+  "issue": "The place attribute contains Japanese text ('民話8 (その2)') without an English translation. The chapter is in English; untranslated Japanese in a visible field may confuse readers.",
+  "suggestion": "Provide an English gloss: e.g., 'folktale 8 (part 2)'.",
+  "confidence": 0.6,
+  "chapter": "quotative-complementation-sekor",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

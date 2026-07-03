@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "91",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<Ref k=\"batchelor1905\" />; <Ref k=\"batchelor1938\" />",
+  "issue": "Semicolon is used to separate two Ref elements in the same cell, which may be a formatting inconsistency compared to other rows that use single Ref elements.",
+  "suggestion": "Use a comma or 'and' instead of a semicolon for consistency with standard prose formatting, or ensure semicolon usage is consistent throughout the table.",
+  "confidence": 0.9,
+  "chapter": "written-sources-grammars-dictionaries",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "254",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "revised through four editions to a fourth in 1938",
+  "issue": "Redundant phrasing: 'four editions to a fourth' is awkward and repetitive.",
+  "suggestion": "Change to 'revised through four editions, the last published in 1938'.",
+  "confidence": 0.95,
+  "chapter": "written-sources-grammars-dictionaries",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "271",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "蝦夷島奇觀",
+  "issue": "Japanese title is not translated or romanized, while the rest of the chapter uses English translations for titles (e.g., 'Kaga-ke monjo').",
+  "suggestion": "Add romanization and translation in parentheses, e.g., 'Ezoshima kikan (Wonders of the Ainu Island)'.",
+  "confidence": 0.85,
+  "chapter": "written-sources-grammars-dictionaries",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "297",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"dalcorso2021\" />",
+  "issue": "The source `dalcorso2021` appears in the text but is not listed in the table of sources, breaking internal completeness.",
+  "suggestion": "Add a row for `dalcorso2021` in the table with appropriate metadata (Year, Dialect base, Language, Type).",
+  "confidence": 0.9,
+  "chapter": "written-sources-grammars-dictionaries",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "106",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "1953–62",
+  "issue": "En dash used without spaces around it in a range; elsewhere in the table, years are given as single values or with spaced separators (e.g., '1905 / 1938').",
+  "suggestion": "Use consistent formatting: either '1953–1962' with an en dash and no spaces, or '1953 / 1962' to match other entries.",
+  "confidence": 0.9,
+  "chapter": "written-sources-grammars-dictionaries",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "92",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "1905 / 1938",
+  "issue": "Uses spaced slash to separate years, while other entries use single years or en dashes; inconsistent with '1953–62'.",
+  "suggestion": "Standardize year ranges: use either '1905–1938' or '1905 / 1938' consistently across all entries.",
+  "confidence": 0.85,
+  "chapter": "written-sources-grammars-dictionaries",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

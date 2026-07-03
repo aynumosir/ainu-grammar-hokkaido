@@ -1,0 +1,1129 @@
+[
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#034",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "340",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'factbase-verified' is internal jargon and not appropriate for the reader.",
+    "quote": "The basis is the factbase-verified five-use analysis of the fourth person and the directly read combination data",
+    "suggestion": "The basis is the verified five-use analysis of the fourth person and the combination data",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'directly read' is meta-commentary about the research process.",
+    "quote": "and the directly read combination data",
+    "suggestion": "and the combination data",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline terms 'factbase-verified' and 'directly read' are not appropriate for the reader.",
+    "quote": "factbase-verified five-use analysis of the fourth person and the directly read combination data",
+    "suggestion": "Replace with 'corpus-confirmed' and 'directly attested' or similar.",
+    "confidence": 1
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Editorial tag left in the text.",
+    "quote": "‹original-needs-review›",
+    "suggestion": "Remove or replace with appropriate epistemic tag.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The terms 'factbase-verified' and 'directly read' are pipeline register leaks, referring to internal editorial processes rather than scholarly exposition.",
+    "quote": "The basis is the factbase-verified five-use analysis of the fourth person and the directly read combination data",
+    "suggestion": "Replace with neutral phrasing such as 'The basis is the empirically supported five-use analysis of the fourth person and the primary combination data.'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#022",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "231",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'was not available to verify' is meta-commentary about the research process rather than information for the reader.",
+    "quote": "and the 1990 work in which an active characterisation may appear was not available to verify",
+    "suggestion": "and the 1990 work in which an active characterisation may appear could not be consulted.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Note about source availability.",
+    "quote": "was not available to verify",
+    "suggestion": "Rephrase as 'could not be consulted' or similar.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'was not available to verify' is a register leak indicating source-access limitations during production, not suitable for final prose.",
+    "quote": "‹speculative›. The 1990 work in which an active characterisation may appear was not available to verify",
+    "suggestion": "Rephrase to: 'The 1990 work in which an active characterisation may appear remains inaccessible.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#043",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "434",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'factbase-verified' is internal jargon. 'Directly read' is meta-commentary.",
+    "quote": "The overlay is grounded in the factbase-verified five-use analysis of the fourth person and the directly read combination data",
+    "suggestion": "The overlay is grounded in the verified five-use analysis of the fourth person and the combination data",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Pipeline terms and editorial tag.",
+    "quote": "factbase-verified five-use analysis of the fourth person and the directly read combination data, and is presented as an integrative account of the competing labels rather than a new theoretical proposal ‹original-needs-review›",
+    "suggestion": "Remove pipeline terms and replace editorial tag.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#029",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "296-298",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'come.PL=4.S' indicates a fourth-person subject, but the translation 'you' implies a second-person addressee. The gloss should clarify how '4.S' relates to the second-person honorific address.",
+    "quote": "m=\"hunak wa arki=an ru-we an\"\ng=\"where from come.PL=4.S track-POSS exist\"\ntr=\"Where have you come from?\"",
+    "suggestion": "Clarify the gloss '4.S' in relation to the honorific second-person address.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation 'Where have you come from?' uses 'you' (singular), but the gloss 'come.PL=4.S' and the note indicate plural verb stem selected by the fourth-person suffix. The translation should reflect either plural addressee or honorific singular.",
+    "quote": "hunak wa arki=an ru-we an",
+    "suggestion": "Revise translation to 'Where have you (hon.) come from?' or 'Where have you all come from?' to match the morphology.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#005",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "73",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of '=' symbol is inconsistent with the use of '-' in other parts of the table and text.",
+    "quote": "S=A=O; zero or absent",
+    "suggestion": "S-A-O; zero or absent",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent formatting of 'INDEF' — elsewhere written as 'indefinite' (e.g., line 89, 117); 'INDEF' may be acceptable as a label but should be consistent.",
+    "quote": "4 / INDEF",
+    "suggestion": "Standardize as '4 / indefinite' to match prose usage.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#023",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "238",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō 2025 is missing. It should be provided to support the claim.",
+    "quote": "Satō's 2025 characterisation",
+    "suggestion": "Add citation for Satō 2025.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag may be too weak if source was directly read.",
+    "quote": "‹speculative›",
+    "suggestion": "Change to ‹corpus-confirmed› if directly read, or clarify source status.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#049",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "117",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.O=pity 4.O=lodge CONJ 4.O=give' assigns '4.O' to all three verbs, but the free translation 'Take pity on me and give me lodging' implies first-person object ('me'), not fourth-person. This creates a mismatch between gloss and translation.",
+    "quote": "i=erampokiwen i=rewsire wa i=kore",
+    "suggestion": "Revise either the gloss or the translation to align: if the speaker is the fourth person, the translation should reflect that; if not, the gloss should not use '4.O'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#050",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "16",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Subject-verb agreement error: 'relationship' is singular, but verb is plural 'are'.",
+    "quote": "the relationship between indexing and nominal argument structure are taken up",
+    "suggestion": "Change 'are' to 'is'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#014",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "172",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The tag '‹SA›' appears to be a dialect tag, but it's used here in a context that seems to refer to a specific region or variety of Ainu (Sakhalin) rather than a dialect contrast within Hokkaido Ainu.",
+    "quote": "‹SA› Sakhalin person indexing",
+    "suggestion": "Clarify the meaning and scope of '‹SA›' in this context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#012",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "134",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphenation of '=an' and '=as' is inconsistent with other examples where they appear as suffixes attached to a stem (e.g., 'arki=as').",
+    "quote": "word-like <i lang=\"ain-Latn\">=an</i> and <i lang=\"ain-Latn\">=as</i>, clitic-like",
+    "suggestion": "ંકી=as",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphenation of 'ku=' and 'en=' is inconsistent with other examples where they appear as prefixes attached to a stem (e.g., 'ci=o').",
+    "quote": "full prefixes such as <i lang=\"ain-Latn\">ku=</i> and <i lang=\"ain-Latn\">en=</i>",
+    "suggestion": "ku=",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#007",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "101",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'formally distinct from both' is slightly vague. It could be clearer if it specified what 'both' refers to.",
+    "quote": "prefixal but formally distinct from both",
+    "suggestion": "prefixal but formally distinct from the A and S forms",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#006",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "80",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of '≠' symbol is inconsistent with the use of '=' and '-' in other parts of the table and text.",
+    "quote": "S≠A≠O; tripartite",
+    "suggestion": "S-A-O; tripartite",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#004",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "66",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of '=' symbol is inconsistent with the use of '-' in other parts of the table and text.",
+    "quote": "S=A=O; neutral",
+    "suggestion": "S-A-O; neutral",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#003",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "59",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of '=' symbol is inconsistent with the use of '-' in other parts of the table and text.",
+    "quote": "S=A=O; neutral",
+    "suggestion": "S-A-O; neutral",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#002",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "52",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of '≠' symbol is inconsistent with the use of '=' and '-' in other parts of the table and text.",
+    "quote": "S≠A≠O; tripartite",
+    "suggestion": "S-A-O; tripartite",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#001",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "45",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of '≠' symbol is inconsistent with the use of '=' and '-' in other parts of the table and text.",
+    "quote": "S=A≠O; nominative–accusative",
+    "suggestion": "S=A-O; nominative-accusative",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#048",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "335-345",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹original-needs-review› is editorial and should not appear in the published text; its presence here inflates the claim's status despite being tied to internal pipeline language ('factbase-verified', 'directly read').",
+    "quote": "This overlay does not replace the tripartite exponence... ‹original-needs-review›. The basis is the factbase-verified five-use analysis...",
+    "suggestion": "Remove ‹original-needs-review› and rephrase the sentence to present the synthesis as interpretive rather than original.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#047",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "344",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'not as a new theoretical commitment' reads as defensive meta-commentary likely intended for editorial review, not the reader.",
+    "quote": "the synthesis is offered as an integrative label for an existing pattern, not as a new theoretical commitment.",
+    "suggestion": "Rephrase to: 'the synthesis is presented as an integrative description of an existing pattern.'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#046",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "150",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about production process.",
+    "quote": "attributions via Dal Corso are second-hand for this grammar",
+    "suggestion": "Rephrase as 'attributions reported by Dal Corso' or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#045",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "446",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō (2024) is missing the page number. It should be provided to support the claim.",
+    "quote": "Satō (2024, as reported by Dal Corso) argues for the original account, while most earlier work assumes a later merger",
+    "suggestion": "Satō (2024: page number) argues for the original account",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation 'Dal Corso 2025align' is not a standard format. It should likely be 'Dal Corso 2025' with a page reference.",
+    "quote": "Dal Corso 2025align: 194–195",
+    "suggestion": "Correct the citation format.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#044",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "442",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Dal Corso's proposal is missing. It should be provided to support the claim.",
+    "quote": "Dal Corso proposes for ‹SA›, is a live disagreement",
+    "suggestion": "Add citation for Dal Corso's proposal.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#042",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "426",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation 'Dal Corso 2025align' is not a standard format. It should likely be 'Dal Corso 2025' with a page reference.",
+    "quote": "Dal Corso 2025align: 187–188, 213",
+    "suggestion": "Correct the citation format.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#041",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "404",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'no object index' for the third-person participants, but Satō's analysis posits a 'zero third-person object'. This creates a slight contradiction or at least a point of confusion that could be clarified.",
+    "quote": "note=\"The 1SG.A subject is indexed; both non-subject participants are third person and appear as bare noun phrases with no object index. Satō's analysis posits a zero third-person object for the recipient; Nakagawa's analysis requires no zero.\"",
+    "suggestion": "Clarify the relationship between 'no object index' and 'zero third-person object'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#040",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "391",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa's description is missing. It should be provided to support the claim.",
+    "quote": "Nakagawa describes the same verbs through valency, with two bare object phrases when both are third person",
+    "suggestion": "Add citation for Nakagawa's description.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#039",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "387",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō's argument is missing. It should be provided to support the claim.",
+    "quote": "Satō argues that the object index in three-place verbs such as <i lang=\"ain-Latn\">kore</i> 'give' ordinarily identifies the human recipient while the theme stays unindexed — a secundative pattern in the indexing slot",
+    "suggestion": "Add citation for Satō's argument.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō 2008 is missing the page number. It should be provided to support the claim.",
+    "quote": "Satō 2008: 147; Satō 2023b: 40, 47",
+    "suggestion": "Satō 2008: 147",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#038",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "382",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Ijas 2023 is missing the page number. It should be provided to support the claim.",
+    "quote": "Nakagawa 2024: 363–365; Ijas 2023",
+    "suggestion": "Ijas 2023",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#037",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "375",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'no personal index appears on the verb' and contrasts it with Satō's 'zero affix for each third-person role'. This implies a distinction between 'no index' and 'zero affix' which could be more explicitly defined or reconciled.",
+    "quote": "note=\"Constructed following Ijäs's pedagogical model (L2–L3); both arguments are third person and no personal index appears on the verb. Nakagawa's analysis requires no third-person affix here; Satō's analysis posits a zero affix for each third-person role.\"",
+    "suggestion": "Clarify the distinction between 'no personal index' and 'zero affix'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#036",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "358",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva's paradigm table is missing. It should be provided to support the claim.",
+    "quote": "Bugaeva's paradigm table writes Ø in the third row, describing the surface form without adjudicating between the two analyses",
+    "suggestion": "Add citation for Bugaeva's paradigm table.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#035",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "354",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō's argument is missing. It should be provided to support the claim.",
+    "quote": "Satō argues for a zero third-person affix, required to account for the cap of two personal indexes per verb and the ungrammaticality of three-index combinations in causative and ditransitive configurations",
+    "suggestion": "Add citation for Satō's argument.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Sato 2025a is missing the page number. It should be provided to support the claim.",
+    "quote": "Satō 2023b: 39; Sato 2025a: 369",
+    "suggestion": "Sato 2025a: 369",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#033",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "328",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Dal Corso's framing is missing. It should be provided to support the claim.",
+    "quote": "Dal Corso's participant-referentiality-mismatch framing for ‹SA› Sakhalin treats the same dimension as a referential hierarchy of speech-act participants, but explicitly limits that analysis to Sakhalin data",
+    "suggestion": "Add citation for Dal Corso's framing.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation 'Dal Corso 2025align' is not a standard format. It should likely be 'Dal Corso 2025' with a page reference.",
+    "quote": "Dal Corso 2025align: 196–200",
+    "suggestion": "Correct the citation format.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#032",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "320",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'fourth-person prefix a= fills the A position', but the gloss shows '4.A=defeat' and '4.A=kill'. This creates a slight inconsistency between the gloss and the note regarding the form of the prefix.",
+    "quote": "note=\"The fourth-person prefix a= fills the A position and defocuses the agent; the lexical patient remains the object of both transitive verbs. The passive-flavoured English translation reflects agent-defocusing, not a voice alternation in the Ainu.\"",
+    "suggestion": "Ensure consistency between gloss and note regarding the form of the prefix.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#031",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "314-316",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A=defeat' and '4.A=kill' indicates a fourth-person agent. However, the translation 'The evil kamuy was defeated and killed' implies the kamuy is the patient, not the agent. The gloss should clarify the role of the fourth person in this context.",
+    "quote": "m=\"wen kamuy a=maketa wa a=rayke ru-we ne\"\ng=\"bad god 4.A=defeat CONJ 4.A=kill track-POSS COP\"\ntr=\"The evil kamuy was defeated and killed.\"",
+    "suggestion": "Clarify the role of the fourth person in the gloss, especially in relation to the translation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#030",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "302",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note explains that '=an' is a fourth-person S suffix, but the gloss in the example is 'come.PL=4.S'. This creates a slight inconsistency between the gloss and the note regarding the form of the suffix.",
+    "quote": "note=\"The addressee is a single person, yet the fourth-person S suffix =an selects the plural stem arki. The plural signals honorific elevation rather than number of referents.\"",
+    "suggestion": "Ensure consistency between gloss and note regarding the form of the suffix.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#028",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "289",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Tamura 1972 is missing the page numbers. It should be provided to support the claim.",
+    "quote": "Nakagawa 2024: 174–179; Tamura 1972: 18–20, 28, 34; Bugaeva 2008: 40–43",
+    "suggestion": "Tamura 1972: 18–20, 28, 34",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#027",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "281",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Sato 2008 is missing the page number. It should be provided to support the claim.",
+    "quote": "Nakagawa 2024: 170, 173; Sato 2008: 146–147",
+    "suggestion": "Sato 2008: 146–147",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#026",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "273",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states '1SG.A acting on 2SG.O', which aligns with the gloss '1SG.A>2SG.O'. However, the translation is 'I can help you', where 'I' is the agent and 'you' is the object. The gloss and note should be consistent with this interpretation.",
+    "quote": "note=\"The single prefix eci= encodes 1SG.A acting on 2SG.O; no separate first- and second-person indexes co-occur. The form is homophonous with the plain 2PL index in A, S, and O.\"",
+    "suggestion": "Ensure consistency between gloss, note, and translation regarding agent and object roles.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#025",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "267-269",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A>2SG.O' indicates a first-person agent acting on a second-person object. However, the translation 'I can help you' implies the first person is the agent and the second person is the object. The gloss should reflect this directionality more clearly.",
+    "quote": "m=\"nep ka eci=kasuy pe an ya\"\ng=\"something even 1SG.A>2SG.O=help NMLZ exist Q\"\ntr=\"Is there anything I can help you with?\"",
+    "suggestion": "Clarify the directionality in the gloss, e.g., '1SG.A→2SG.O'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#024",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "261",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Tamura 1972 is missing the page number. It should be provided to support the claim.",
+    "quote": "Tamura 1972: 27–28; Bugaeva 2008: 38; Bugaeva 2012: 474; Nakagawa 2024: 170, 173",
+    "suggestion": "Tamura 1972: 27–28",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#021",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "210",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Dal Corso's argument is missing. It should be provided to support the claim.",
+    "quote": "He dismisses the tripartite component for Sakhalin by arguing that the S and A forms sharing common origin belong to a nominative sub-system rather than tripartite cells, while the fourth-person or participant-referentiality-mismatch dimension is analysed as inverse",
+    "suggestion": "Add citation for Dal Corso's argument.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Dal Corso's statement is missing. It should be provided to support the claim.",
+    "quote": "He is explicit that this diachrony may not extend to Ainu as a whole and that the hierarchical analysis may not apply to Hokkaido",
+    "suggestion": "Add citation for Dal Corso's statement.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#020",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "201",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō 2023/2025 is missing. It should be provided to support the claim.",
+    "quote": "Satō 2023/2025; Bugaeva's Ø notation is compatible",
+    "suggestion": "Add citation for Satō 2023/2025.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#019",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "195",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō 2024 is missing. It should be provided to support the claim.",
+    "quote": "Satō 2024, reported by Dal Corso",
+    "suggestion": "Add citation for Satō 2024.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#018",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "188",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō 2014 is missing. It should be provided to support the claim.",
+    "quote": "Satō 2014, reported by Dal Corso",
+    "suggestion": "Add citation for Satō 2014.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#017",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "183",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Dal Corso 2023/2025 is missing. It should be provided to support the claim.",
+    "quote": "Dal Corso 2023/2025",
+    "suggestion": "Add citation for Dal Corso 2023/2025.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Dal Corso's analysis is missing. It should be provided to support the claim.",
+    "quote": "typologically suggestive for interaction cells; not demonstrated as replacing row-wise tripartite for Hokkaido ‹contested›",
+    "suggestion": "Add citation for Dal Corso's analysis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#016",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "177",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Okuda 2015 is missing. It should be provided to support the claim.",
+    "quote": "Okuda 2015, as reported by Dal Corso",
+    "suggestion": "Add citation for Okuda 2015.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#015",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "173",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Dal Corso's warning is missing. It should be provided to support the claim.",
+    "quote": "contrastive; Dal Corso warns the diachrony and hierarchical analysis may not apply to Hokkaido ‹contested›",
+    "suggestion": "Add citation for Dal Corso's warning.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#013",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "165",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states Bugaeva was 'read directly' but Okuda 2015 is 'reported via Dal Corso'. This implies Dal Corso is a source for Okuda's position, but Dal Corso is also listed as a separate analysis later. This could be clearer.",
+    "quote": "Bugaeva (read directly); Okuda 2015 (reported via Dal Corso)",
+    "suggestion": "Clarify the relationship between Bugaeva, Okuda, and Dal Corso's attributions.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#011",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "129",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'fourth-person O prefix i=', but the gloss for the example shows '4.O=pity' and '4.O=lodge'. It should be consistent whether it's 'O' or '4.O'.",
+    "quote": "note=\"The fourth-person O prefix i= indexes the narrative protagonist three times; with a= for A and =an for S, all three roles are kept formally distinct within the same paradigm row.\"",
+    "suggestion": "Ensure consistency between 'O' and '4.O' in glosses and notes.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#010",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "123-125",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss uses '4.O' for all verbs, but the translation implies the speaker is the recipient ('me', 'me'). This suggests the 'O' might be referring to the speaker in some contexts, which is not explicitly stated in the gloss.",
+    "quote": "m=\"i=erampokiwen i=rewsire wa i=kore\"\ng=\"4.O=pity 4.O=lodge CONJ 4.O=give\"\ntr=\"Take pity on me and give me lodging.\"",
+    "suggestion": "Clarify the referent of '4.O' in this context, especially in relation to the translation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#009",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "112",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'o 'board'' but the morpheme in the example is 'ci=o'. It should be clarified if 'o' is a separate morpheme or part of 'ci=o'.",
+    "quote": "note=\"The exclusive group is marked as A by the prefix ci= on the transitive o 'board' and as S by the suffix =as on the intransitive plural arki 'come'; the object counterpart un= is not triggered in this chain.\"",
+    "suggestion": "Clarify the morpheme 'o' in relation to 'ci='.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "alignment-hierarchical-and-the-debate~p1#008",
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "lines": "106-108",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss indicates '1PL.EXCL.A=board' and '1PL.EXCL.S' for 'come.PL', but the translation 'we boarded it and came' implies a single 'we' performing both actions. The gloss should clarify if the same group is acting as both A and S.",
+    "quote": "m=\"kuruma an wa ci=o tek arki=as\"\ng=\"car exist CONJ 1PL.EXCL.A=board then come.PL=1PL.EXCL.S\"\ntr=\"There was a car, and we boarded it and came.\"",
+    "suggestion": "Clarify if the glossed '1PL.EXCL.A' and '1PL.EXCL.S' refer to the same group of people.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

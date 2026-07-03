@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "154",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"rikin\" gl=\"go up (vi)\" />",
+  "issue": "The gloss 'go up (vi)' includes a part-of-speech tag '(vi)', but other similar dictionary-linked Ainu words in the same section (e.g., <A w=\"retar\" gl=\"be white\" />, <A w=\"us\" gl=\"go out\" />) do not include such tags, creating inconsistency in gloss formatting within the chapter.",
+  "suggestion": "Either add '(vi)' to all intransitive verbs in this list or remove it from 'rikin' for consistency.",
+  "confidence": 0.95,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "262",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"1SG.A=shout-TRVZ\"",
+  "issue": "The gloss 'TRVZ' is not a standard Leipzig gloss; it appears to be an ad hoc abbreviation for 'transitivizer', but the standard gloss for transitivizing causatives is 'CAUS'. This creates a mismatch with the consistent use of 'CAUS' in other examples (e.g., lines 145, 187, 217).",
+  "suggestion": "Change 'TRVZ' to 'CAUS' for consistency with other examples and Leipzig norms.",
+  "confidence": 0.98,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "217",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"1SG.A=APPL-REFL-know.nothing-CAUS CONJ 1SG.S=exist\"",
+  "issue": "The morpheme segmentation in 'm' is 'ko-si-ranpewtek-ka', but the gloss breaks it as 'APPL-REFL-know.nothing-CAUS', implying that 'ranpewtek' corresponds to 'know.nothing'. However, 'ranpewtek' is a single morpheme meaning 'not know' or 'ignorant', and 'know.nothing' is a free translation, not a morpheme-by-morpheme gloss. This creates a misalignment between m and g.",
+  "suggestion": "Revise the gloss to reflect actual morphemes, e.g., 'APPL-REFL-ignorant-CAUS' or better segment the stem if possible.",
+  "confidence": 0.85,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "81,87,93",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">-ke</i> on intr. / <i lang=\"ain-Latn\">-V</i> on tr.",
+  "issue": "The phrase appears three times in Table 1 with identical wording but inconsistent italicization: in lines 81 and 93, only the suffixes are italicized, but in line 87, the entire phrase including 'on intr.' and 'on tr.' is italicized. This creates typographic inconsistency.",
+  "suggestion": "Ensure consistent italicization: only the suffixes should be in italics, not the explanatory text.",
+  "confidence": 0.9,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "336",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2026) ‹community-proposed›",
+  "issue": "The citation format mixes inline attribution with a Ref tag, but the year 2026 is in the future relative to the book's writing period (2025–2026). However, since the context states that dates up to 2026 are acceptable and such works exist, this is not an error. But the evidence grade ‹community-proposed› is not defined in the provided list of evidence grades; only ‹corpus-suggested›, ‹corpus-confirmed›, etc., are listed.",
+  "suggestion": "Replace ‹community-proposed› with ‹corpus-suggested› or define ‹community-proposed› in the evidence grade list.",
+  "confidence": 0.8,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "343",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2026) ‹corpus-suggested›",
+  "issue": "Same issue as above: the citation includes a future date (2026), but per context this is acceptable. However, the evidence grade ‹corpus-suggested› is used correctly here, unlike the undefined ‹community-proposed› above.",
+  "suggestion": "Ensure consistency in evidence grades; use only defined grades unless newly introduced with justification.",
+  "confidence": 0.75,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "357",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"bugaeva2025\" paren />",
+  "issue": "The citation uses 'paren' attribute without a page number, but it is attached to a claim about a 'diachronic account', which requires specific source support. Moreover, Bugaeva 2025 is dated after the book’s writing period (2025–2026), making it potentially unreleased. While future dates are allowed, a source from 2025 should be treated with caution unless confirmed available.",
+  "suggestion": "Verify availability of Bugaeva 2025; if not yet published, downgrade claim or add ‹speculative› or ‹original-needs-review› tag.",
+  "confidence": 0.8,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "non-productive and the intransitive and transitive members are recorded as separate dictionary entries",
+  "issue": "The word 'non-productive' is hyphenated, but elsewhere in the chapter (e.g., line 126) it appears as 'nonproductive' (without hyphen). This creates orthographic inconsistency.",
+  "suggestion": "Choose one spelling (preferably 'non-productive' for clarity) and use it consistently.",
+  "confidence": 0.9,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "207",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "indirect reflexive prefix <i lang=\"ain-Latn\">si-</i>",
+  "issue": "The prefix is written as <i lang=\"ain-Latn\">si-</i> here, but in the example at line 216 it appears as 'si-ranpewtek', suggesting the prefix is 'si-'. However, in other scholarly works, this prefix may be variably written with or without hyphen. Within this chapter, consistency is maintained, so this may not be an error, but the hyphenation should be checked against the book's orthographic standard.",
+  "suggestion": "Ensure consistent hyphenation of clitics and prefixes throughout the chapter; if 'si-' is used, maintain it uniformly.",
+  "confidence": 0.7,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

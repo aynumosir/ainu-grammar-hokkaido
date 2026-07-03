@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "85",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The direct/indirect analysis (line four) is the framework Nakagawa (2024: 189) and the Handbook adopt as the current working account ‹contested›.",
+  "issue": "The epistemic tag ‹contested› is attached to a claim that is explicitly stated to be the adopted working account by authoritative sources (Nakagawa 2024 and the Handbook), which contradicts the usual meaning of ‹contested›. This risks epistemic inconsistency.",
+  "suggestion": "Reconsider the epistemic tag: either remove ‹contested› or replace with a more appropriate tag like ‹consensus› or ‹corpus-confirmed› if warranted by the sources.",
+  "confidence": 0.9,
+  "chapter": "reflexive-possessive-si",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "117",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "A discussion on the aynu-corpora Discord (nukopoli, <Ref k=\"aynucorporadiscord\" />, 2024)",
+  "issue": "The reference to a Discord discussion as a source is presented without critical distance, and the format resembles pipeline commentary rather than integrated scholarly prose. While community sources are allowed, the phrasing risks normalizing informal sources without sufficient epistemic qualification.",
+  "suggestion": "Add an epistemic tag such as ‹community-observation› or ‹speculative› to flag the informal provenance of the claim.",
+  "confidence": 0.7,
+  "chapter": "reflexive-possessive-si",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "123",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "A separate thread (aomidori_cs_, <Ref k=\"aynucorporadiscord\" />, 2023) proposed that one prefix may originally have encoded a voice distinct from reflexive proper, without adducing corroborating evidence ‹speculative›.",
+  "issue": "The phrase 'without adducing corroborating evidence' reads as meta-commentary from the pipeline rather than integrated narrative. It editorializes the source in a way that may belong in a review note, not in the main text.",
+  "suggestion": "Rephrase to: 'A separate thread (aomidori_cs_, 2023) speculated that one prefix may originally have encoded a voice distinct from reflexive proper, though no supporting evidence was provided.'",
+  "confidence": 0.8,
+  "chapter": "reflexive-possessive-si",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"ku=ko-si-ranpewtek-ka wa k=an\" g=\"1SG.A=APPL-REFL-know.nothing-CAUS CONJ IPFV\" tr=\"I was pretending not to know about it.\"",
+  "issue": "The gloss 'APPL-REFL' in g=\"1SG.A=APPL-REFL-know.nothing-CAUS\" does not match the morpheme structure m=\"ku=ko-si-ranpewtek-ka\", where 'ko-' is the applicative and 'si-' is the reflexive. The gloss should reflect 'APPL' and 'REFL' as separate elements aligned with 'ko-' and 'si-', but currently merges them. Additionally, 'know.nothing' is not a standard gloss; 'not.know' or 'ignorant' would be clearer.",
+  "suggestion": "Revise gloss to: \"1SG.A=APPL-REFL-not.know-CAUS CONJ IPFV\" to better align with morpheme boundaries and semantics.",
+  "confidence": 0.95,
+  "chapter": "reflexive-possessive-si",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "225",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"REFL-REFL-stretch-CAUS=4.S\"",
+  "issue": "The gloss 'REFL-REFL' implies two instances of the same reflexive morpheme, but the morpheme line m=\"yay-si-turi-re=an\" contains two distinct prefixes: 'yay-' and 'si-', each with different semantic and distributional properties. The gloss should distinguish them as 'yay-' = 'REFL1' or 'REFL-direct' and 'si-' = 'REFL2' or 'REFL-indirect' to avoid conflation.",
+  "suggestion": "Revise gloss to: \"REFL-direct-REFL-indirect-stretch-CAUS=4.S\" or use distinct abbreviations if established in the literature.",
+  "confidence": 0.9,
+  "chapter": "reflexive-possessive-si",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "158",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"yay-\" />-possessive <A w=\"yay-par-oyki\" gl=\"feed oneself; do to one's own mouth\" />",
+  "issue": "Inconsistent hyphenation: 'yay-' is written with a trailing hyphen when standing alone, but 'yay-par-oyki' is not segmented with spaces or consistent marking. The chapter otherwise uses spaced forms for multi-morpheme verbs. This creates orthographic drift.",
+  "suggestion": "Standardize to either 'yay-par-oyki' throughout or use morpheme-segmented form 'yay par oyki' if that is the chapter's convention.",
+  "confidence": 0.8,
+  "chapter": "reflexive-possessive-si",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">a=</i>, <i lang=\"ain-Latn\">ci=</i>",
+  "issue": "Inconsistent use of italics and lang-tagging for Ainu forms: some are in <i lang=\"ain-Latn\">, others are not. The chapter uses <i lang=\"ain-Latn\"> for phonemic forms, but should be consistent. Also, the equals sign may be better represented as part of the morpheme.",
+  "suggestion": "Ensure all Ainu morphemes are consistently tagged with <i lang=\"ain-Latn\"> and formatted (e.g., <i lang=\"ain-Latn\">a=</i>, <i lang=\"ain-Latn\">ci=</i>, <i lang=\"ain-Latn\">=an</i>, <i lang=\"ain-Latn\">=as</i>).",
+  "confidence": 0.85,
+  "chapter": "reflexive-possessive-si",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

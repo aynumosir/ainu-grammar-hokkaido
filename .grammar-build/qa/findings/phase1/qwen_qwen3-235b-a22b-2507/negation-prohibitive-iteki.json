@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "8",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"iteki\" gl=\"don't\" />",
+  "issue": "The gloss 'don't' is an English contraction that conflates negation and imperative mood, but the Ainu word iteki is a prohibitive adverb, not a verb. The gloss should reflect its grammatical category more precisely.",
+  "suggestion": "Use 'PROH' or 'prohib' as the gloss to align with Leipzig conventions used elsewhere in the chapter.",
+  "confidence": 0.95,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "with 1239 tokens ‹corpus-confirmed›",
+  "issue": "The claim of 1239 tokens is marked as ‹corpus-confirmed›, but no corpus citation is provided (e.g., a reference to the aligned Hokkaido corpus with a specific version or access date). The only support is Nakagawa 2024, which may not contain raw corpus counts.",
+  "suggestion": "Add a corpus citation such as `<Ref k=\"hokkaido-corpus\" p=\"v2.1\" />` or clarify the source of the token count.",
+  "confidence": 0.85,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "90",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">itekke</i> for Shizunai, Samani, and Tokachi; <i lang=\"ain-Latn\">etekke</i> for Shiranuka, Bihoro, and Tokachi",
+  "issue": "Inconsistent hyphenation and spacing in dialect listing: 'Shizunai, Samani, and Tokachi' vs. 'Shiranuka, Bihoro, Tokachi' (missing 'and'). This creates a minor formatting inconsistency.",
+  "suggestion": "Standardize to include 'and' before the last item in each list: 'Shiranuka, Bihoro, and Tokachi'.",
+  "confidence": 0.7,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "137",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"PROH be.angry CONJ get.up CONJ 2SG.O=explain=4.S PURP COP FIN\"",
+  "issue": "The gloss 'CONJ' appears twice but corresponds to the Ainu particle 'no', which is a subordinator meaning 'without', not a coordinator. This misrepresents the grammatical function.",
+  "suggestion": "Replace 'CONJ' with 'NMLZ' or 'NEG.SBJV' to reflect the subordinating, negative function of 'no'.",
+  "confidence": 0.95,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "138",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "tr=\"Get up without being angry, and I will explain the reason to you.\"",
+  "issue": "The free translation includes 'and I will explain the reason to you', but the glossed clause '2SG.O=explain=4.S' suggests 'I (1SG) will explain (it) to you (2SG)', not 'the reason'. The object 'reason' is not present in the morpheme line or gloss.",
+  "suggestion": "Revise translation to 'Get up without being angry, and I will explain (it) to you' or add the missing object in the morpheme/gloss line.",
+  "confidence": 0.9,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "215",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"PROH 2SG.A=hide CONJ 2SG.A=say NMLZ COP FIN\"",
+  "issue": "The gloss 'CONJ' is used for 'no', which is not a coordinating conjunction but a subordinator introducing a negative adverbial clause ('without hiding'). This misrepresents the syntactic role.",
+  "suggestion": "Replace 'CONJ' with 'NMLZ' or 'NEG.SBJV' to reflect the subordinating function of 'no'.",
+  "confidence": 0.95,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "225",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"PROH 4.O=accompany CONJ\"",
+  "issue": "The gloss 'CONJ' is used for 'no', but 'no' here functions as a subordinator ('without'), not a coordinator. The gloss does not match the syntactic function.",
+  "suggestion": "Replace 'CONJ' with 'NMLZ' or 'NEG.SBJV'.",
+  "confidence": 0.95,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "316",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"NEG 2SG.A=eat even.if good\"",
+  "issue": "The gloss 'even.if' combines two words but corresponds to the single Ainu particle 'yakka', which should be glossed as a unit. Also, 'good' is a translation of 'pirka', but the gloss should reflect the word class (ADJ or ADJ.COP).",
+  "suggestion": "Use 'CONCESS' or 'EVEN.IF' for 'yakka' and 'good' → 'good.ADJ' or 'be.good'.",
+  "confidence": 0.85,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "351",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">ikia(n)kunak</i>",
+  "issue": "The form 'ikia(n)kunak' includes optional parentheses, suggesting variation, but this orthographic choice is not explained or consistently used elsewhere.",
+  "suggestion": "Choose either 'ikiankunak' or 'ikiankunak (variant: ikiankunak)' for consistency.",
+  "confidence": 0.75,
+  "chapter": "negation-prohibitive-iteki",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

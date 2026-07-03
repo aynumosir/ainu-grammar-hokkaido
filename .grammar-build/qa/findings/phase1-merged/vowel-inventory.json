@@ -1,0 +1,1133 @@
+[
+ {
+  "id": "vowel-inventory~p1#008",
+  "chapter": "vowel-inventory",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a glottal stop followed by a vowel in 'weʔen' might be misinterpreted as a long vowel, which the chapter states is not phonemic in Hokkaido Ainu.",
+    "quote": "weʔen",
+    "suggestion": "weʔen",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a glottal stop followed by a vowel in 'toʔo' might be misinterpreted as a long vowel, which the chapter states is not phonemic in Hokkaido Ainu.",
+    "quote": "toʔo",
+    "suggestion": "toʔo",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The glottal stop is transcribed with ʔ, which is standard, but earlier in the chapter (line 169) the same phenomenon is described as 'glottal onset' without specifying the symbol. The use of ʔ is fine, but ensure consistency with other chapters that may use different symbols (e.g., ʼ or ʔ).",
+    "quote": "<i lang=\"ain-Latn\">weʔen</i> 'very bad'; <i lang=\"ain-Latn\">toʔo</i> 'faraway'",
+    "suggestion": "No change needed unless other chapters use a different symbol.",
+    "confidence": 0.2
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Glottal stop `ʔ` is used in practical orthography. While common in linguistic descriptions, it may be better to use a hyphen or apostrophe (`we'en`) if not in IPA.",
+    "quote": "<i lang=\"ain-Latn\">weʔen</i> 'very bad'",
+    "suggestion": "Use `[weʔen]` for phonetic precision or `we'en` in practical orthography.",
+    "confidence": 0.75
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as above: `toʔo` uses IPA glottal stop in Latin text.",
+    "quote": "<i lang=\"ain-Latn\">toʔo</i> 'faraway'",
+    "suggestion": "Use `[toʔo]` or `to'o`.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#005",
+  "chapter": "vowel-inventory",
+  "lines": "134",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ring diacritic under 'i' in 'eci=kay' is used to indicate devoicing, but the chapter states that Hokkaido Ainu has no phonemic vowel length. This diacritic might be confused with a macron indicating length.",
+    "quote": "eci=kay",
+    "suggestion": "eci=kay",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ring diacritic under 'ɨ' in 'et͡sɨ̥kaj' is used to indicate devoicing, but the chapter states that Hokkaido Ainu has no phonemic vowel length. This diacritic might be confused with a macron indicating length.",
+    "quote": "et͡sɨ̥kaj",
+    "suggestion": "et͡sɨ̥kaj",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ring diacritic under 'ɨ' in 'ɨ̥' is used to indicate devoicing, but the chapter states that Hokkaido Ainu has no phonemic vowel length. This diacritic might be confused with a macron indicating length.",
+    "quote": "ɨ̥",
+    "suggestion": "ɨ̥",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phonetic transcription uses [ɨ̥] (devoiced barred i), but the Ainu orthographic form is <i lang=\"ain-Latn\">eci=kay</i> with /i/. The use of [ɨ] suggests a centralized allophone, which is not discussed in the text. This may be a phonetic detail that is accurate, but it is inconsistent with the general description of /i/ as [i].",
+    "quote": "[et͡sɨ̥kaj]",
+    "suggestion": "Either explain the centralized allophone or use [i̥] for consistency.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The symbol [ɨ̥] is used, but Hokkaido Ainu does not have a central vowel /ɨ/. The devoiced vowel in `ci` sequences is derived from /i/, not /ɨ/. This may reflect a misinterpretation of the phonetic realization or a transcription error.",
+    "quote": "[et͡sɨ̥kaj]",
+    "suggestion": "Verify whether [i̥] or [j̊] is intended. If the vowel is devoiced /i/, it should be [et͡si̥kaj] or [et͡sçkaj] if palatal frication is involved. If centralization occurs, justify it with source data.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#004",
+  "chapter": "vowel-inventory",
+  "lines": "118",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ring diacritic under 'i' in 'ci̥se' is used to indicate devoicing, but the chapter states that Hokkaido Ainu has no phonemic vowel length. This diacritic might be confused with a macron indicating length.",
+    "quote": "ci̥se",
+    "suggestion": "ci̥se",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ring diacritic under 'u' in 'su̥tu' is used to indicate devoicing, but the chapter states that Hokkaido Ainu has no phonemic vowel length. This diacritic might be confused with a macron indicating length.",
+    "quote": "su̥tu",
+    "suggestion": "su̥tu",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The ring diacritic under 'e' in 'se̥ta' is used to indicate devoicing, but the chapter states that Hokkaido Ainu has no phonemic vowel length. This diacritic might be confused with a macron indicating length.",
+    "quote": "se̥ta",
+    "suggestion": "se̥ta",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The devoicing diacritic (ring below) is used inconsistently: in the text, the ring is placed under the vowel (e.g., ci̥se), but in the earlier example (line 134) the devoiced vowel is transcribed as [ɨ̥] with a different diacritic. The ring below is standard for devoicing, but the inconsistency between the Ainu orthography and phonetic transcription is not a problem per se. However, the ring below may not render correctly in all fonts; consider using a combining ring below (U+0325) consistently.",
+    "quote": "<i lang=\"ain-Latn\">ci̥se</i> 'house', <i lang=\"ain-Latn\">su̥tu</i> 'root', <i lang=\"ain-Latn\">se̥ta</i> 'dog'.",
+    "suggestion": "Ensure the combining ring below is used consistently and check rendering.",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of diacritics: `ci̥se` uses a combining ring below for devoicing, but this form is not rendered with IPA brackets and appears inline as Latin text. The ring below is typographically inconsistent with the surrounding orthography and may be intended as `cise` with a note on devoicing, or should be in IPA [cɨ̥se].",
+    "quote": "<i lang=\"ain-Latn\">ci̥se</i> 'house'",
+    "suggestion": "Either use IPA consistently: `[cɨ̥se]`, or use the practical orthography without diacritics and describe devoicing in text: `cise` (with devoicing).",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as above: `su̥tu` uses a combining ring below for devoicing, but is not in IPA format. This creates typographic inconsistency with the practical orthography.",
+    "quote": "<i lang=\"ain-Latn\">su̥tu</i> 'root'",
+    "suggestion": "Use either `[su̥tu]` in IPA or `sutu` in practical orthography, depending on style.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same pattern: `se̥ta` uses a combining ring below, but is presented as Latin text. Inconsistent formatting for devoicing.",
+    "quote": "<i lang=\"ain-Latn\">se̥ta</i> 'dog'",
+    "suggestion": "Use `[se̥ta]` or `seta` consistently.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#009",
+  "chapter": "vowel-inventory",
+  "lines": "176",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'niisah' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "niisah",
+    "suggestion": "niisah",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'nisah' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "nisah",
+    "suggestion": "nisah",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'nísap' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "nísap",
+    "suggestion": "nísap",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'nisáp' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "nisáp",
+    "suggestion": "nisáp",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Sakhalin Ainu forms use double <i> for length, but the chapter states that Hokkaido has no phonemic length. The contrast is clear, but the orthographic representation of length in Sakhalin Ainu is not explained. This is a minor inconsistency in presentation.",
+    "quote": "‹SA› <i lang=\"ain-Latn\">niisah</i> vs. <i lang=\"ain-Latn\">nisah</i>",
+    "suggestion": "Add a brief note that Sakhalin Ainu orthography uses double vowels for length.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#006",
+  "chapter": "vowel-inventory",
+  "lines": "158",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'kaː' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "kaː",
+    "suggestion": "kaː",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'toː' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "toː",
+    "suggestion": "toː",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'niː' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "niː",
+    "suggestion": "niː",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'ˈnuːman' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "ˈnuːman",
+    "suggestion": "ˈnuːman",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a macron in 'poˈroː' to indicate vowel length is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "poˈroː",
+    "suggestion": "poˈroː",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Use of `ː` for vowel length in practical orthography. While acceptable in phonetic transcription, in running text with `lang=\"ain-Latn\"`, it may be preferable to use double vowels (e.g., `kaa`) for consistency with standard Ainu orthography.",
+    "quote": "<i lang=\"ain-Latn\">kaː</i> 'thread'",
+    "suggestion": "Use `kaa` instead of `kaː` unless phonetic precision is required. If phonetic, enclose in IPA brackets.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as above: `toː` uses length mark instead of doubled vowel.",
+    "quote": "<i lang=\"ain-Latn\">toː</i> 'lake'",
+    "suggestion": "Use `too` or `[toː]`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue: `niː` uses length mark.",
+    "quote": "<i lang=\"ain-Latn\">niː</i> 'tree'",
+    "suggestion": "Use `nii` or `[niː]`.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Combines stress mark and length in practical orthography. Should be either IPA `[ˈnuːman]` or practical `numan` with length implied by accent.",
+    "quote": "<i lang=\"ain-Latn\">ˈnuːman</i> 'yesterday'",
+    "suggestion": "Use `[ˈnuːman]` for phonetic accuracy or `numan` with note on accent-induced lengthening.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as above: `poˈroː` mixes stress and length marks in Latin text.",
+    "quote": "<i lang=\"ain-Latn\">poˈroː</i> 'big'",
+    "suggestion": "Use `[poˈroː]` or `poro`.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#021",
+  "chapter": "vowel-inventory",
+  "lines": "263",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Mukawa vowel shift claim is supported only by a Discord message and tagged ‹corpus-suggested›, which is appropriate. However, the following sentence says 'whether it is a stable feature... is not settled', which is consistent with the tag. No issue here.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-03-18) ‹corpus-suggested›",
+    "suggestion": null,
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue: Discord attribution tagged as ‹corpus-suggested›, implying broader corpus support than a single user comment provides.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-03-18) ‹corpus-suggested›",
+    "suggestion": "Change to ‹community-observation› or ‹speculative›.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#019",
+  "chapter": "vowel-inventory",
+  "lines": "213-214",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The frequency claim is tagged ‹corpus-suggested› and attributed to a Discord message, which is appropriate. However, the following sentence says 'these frequency ranks cannot be reproduced from per-segment counts at this writing', which undermines the evidence base for the claim. The tag may still be acceptable, but the contradiction between 'suggested' and 'cannot be reproduced' is notable.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-09-25) ‹corpus-suggested›",
+    "suggestion": "Consider adding a note that the claim is preliminary, or remove the tag if the evidence is too weak.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim supported only by a Discord attribution. This risks inflating the evidential weight: a single community observation should not carry the same grade as systematic corpus analysis.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-09-25) ‹corpus-suggested›",
+    "suggestion": "Downgrade to ‹speculative› or ‹community-observation› unless the claim is backed by published corpus tools or data exports.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#017",
+  "chapter": "vowel-inventory",
+  "lines": "77-78",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about /e/ and /o/ realization is supported by a Discord attribution (single informant) and then said to be 'corroborated' by earlier formant data via Shiraishi. However, the epistemic tag is unmarked (consensus), which inflates the evidence level for a claim that ultimately rests on one Discord message plus secondary citation.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-08; corroborated by the Obata & Teshima and Ōhashi formant data, per <Ref k=\"shiraishi2022\" p=\"§2\" />)",
+    "suggestion": "Add ‹corpus-suggested› or ‹speculative› tag, or rephrase to clarify the weight of evidence.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation to `aynucorporadiscord` is presented as primary source for the equivalence to Japanese vowels, but the corroborating evidence is already covered by Shiraishi (2022), which synthesizes the older studies. The Discord cite adds no new support and may be redundant or misleading.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-08; corroborated by the Obata & Teshima and Ōhashi formant data, per <Ref k=\"shiraishi2022\" p=\"§2\" />)",
+    "suggestion": "Remove the Discord attribution here unless it provides independent perceptual data not in Shiraishi.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#042",
+  "chapter": "vowel-inventory",
+  "lines": "101",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss `g=\"person\"` is not aligned with Leipzig glossing standards — it should be a grammatical or morpheme-by-morpheme label, not a free translation. Here, it duplicates the `tr` field and fails to provide a morphemic breakdown.",
+    "quote": "<Ex m=\"aynu\" g=\"person\" tr=\"person; human being\" ain=\"[ái̯nʊ]\" cite=\"nakagawa2024:26\" dial=\"HK\" note=\"The historical Japanese transcription as アイノ reflects the back-rounded quality of /u/, which Japanese listeners perceived as near [o].\" />",
+    "suggestion": "Change `g=\"person\"` to `g=\"person\"` only if this is intended as a lexical item with no internal structure; however, standard practice would expect a gloss like `g=\"Aynu\"` or `g=\"human\"` if it's unanalyzable. Given that `aynu` is a root, consider `g=\"person\"` but note that this deviates from typical interlinear format where roots are often left unglossed or tagged as such. Better: `g=\"person\"` → `g=\"person\"` with awareness that it's a full lexical item.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#041",
+  "chapter": "vowel-inventory",
+  "lines": "272-273",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'remain a gap in the literature' is a bit informal. Consider 'are lacking in the literature' or 'have not been systematically undertaken'.",
+    "quote": "Systematic acoustic comparisons of vowel space across Hokkaido dialect regions remain a gap in the literature",
+    "suggestion": "Change to 'have not been systematically undertaken'",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#040",
+  "chapter": "vowel-inventory",
+  "lines": "214-216",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a meta-commentary about the limitations of the grammar's tools, which is appropriate but slightly informal. Consider moving to a footnote or rephrasing.",
+    "quote": "The corpus tools available for this grammar count word tokens rather than phoneme occurrences, so these frequency ranks cannot be reproduced from per-segment counts at this writing",
+    "suggestion": "No change needed, but ensure consistency with other such meta-comments in the book.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#039",
+  "chapter": "vowel-inventory",
+  "lines": "8-11",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'triangular, symmetric, and stable' is a bit informal for a scholarly grammar. Consider 'triangular and symmetric, with no dialectal reduction or expansion'.",
+    "quote": "The inventory is triangular, symmetric, and stable: no Hokkaido dialect reduces it to four vowels or expands it to six",
+    "suggestion": "Rephrase for formality.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#038",
+  "chapter": "vowel-inventory",
+  "lines": "270-271",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'under accent' is contradictory if the dialects are accentless. Clarify that the reference is to the general Hokkaido accent system, not these specific dialects.",
+    "quote": "The Shizunai (静内) and Samani dialect areas are accentless (<Xr ch=\"pitch-accent-placement-rule\" />), which affects the realization of vowels under accent but does not alter the underlying inventory.",
+    "suggestion": "Change to 'which in other dialects affects the realization of vowels under accent, but does not alter the underlying inventory in these accentless varieties'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#037",
+  "chapter": "vowel-inventory",
+  "lines": "258-266",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the shift is general in the recording' is vague. Does it mean the shift applies to all tokens of /i/ and /e/ in the recording? The following clause contradicts this by saying /i/ retains [i] in some tokens. Clarify.",
+    "quote": "In recordings of the Mukawa dialect (Katayama corpus), /i/ is realized as a lowered, fronted vowel approximating [e], and /e/ as a more open [ɛ]; the shift is general in the recording, though /i/ retains a canonical [i] realization outside the affiliative form in some tokens",
+    "suggestion": "Change to 'the shift is widespread in the recording, though /i/ retains a canonical [i] realization in some tokens, particularly outside the affiliative form'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#036",
+  "chapter": "vowel-inventory",
+  "lines": "240-241",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The semicolon is used correctly, but the list of absent contexts is introduced with a semicolon and then continues with commas. Consider restructuring for clarity.",
+    "quote": "The pattern is confined to two derivational contexts; it is absent from the plural suffix <i lang=\"ain-Latn\">-pa</i>",
+    "suggestion": "Change to 'The pattern is confined to two derivational contexts and is absent from the plural suffix -pa, from personal prefixes, and from underived forms.'",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#035",
+  "chapter": "vowel-inventory",
+  "lines": "234-236",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'full assimilation to the root vowel' is ambiguous: does it mean the suffix vowel assimilated to the root vowel, or the root vowel assimilated to the suffix? Clarify.",
+    "quote": "hypothesizing that the suffix was originally <i lang=\"ain-Latn\">-i</i> (the 3sg possessive), which underwent full assimilation to the root vowel",
+    "suggestion": "Change to 'which underwent full assimilation to the root vowel (i.e., the suffix vowel became identical to the root vowel)'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#034",
+  "chapter": "vowel-inventory",
+  "lines": "224-226",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the vowel suffix' is redundant; the suffix is a vowel. Consider 'the suffix that forms the possessed (affiliative) form of nouns'.",
+    "quote": "the suffix that derives transitive verbs from intransitives, and the vowel suffix that forms the possessed (affiliative) form of nouns",
+    "suggestion": "Remove 'vowel' or rephrase.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#033",
+  "chapter": "vowel-inventory",
+  "lines": "209-210",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'a characteristic that persists' is a dangling modifier; it is not clear what 'characteristic' refers to. Rephrase.",
+    "quote": "/e/ is markedly more frequent than in Japanese, a characteristic that persists when person-affix tokens (<i lang=\"ain-Latn\">a=</i>, <i lang=\"ain-Latn\">=an</i>, and related forms) are excluded from the count",
+    "suggestion": "Change to 'and this higher frequency persists even when person-affix tokens are excluded'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#032",
+  "chapter": "vowel-inventory",
+  "lines": "168-169",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'breaks the extended vowel' is unclear. Does it mean the glottal onset interrupts the vowel? Clarify.",
+    "quote": "breaks the extended vowel with a glottal onset",
+    "suggestion": "Change to 'interrupts the lengthened vowel with a glottal stop'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#031",
+  "chapter": "vowel-inventory",
+  "lines": "161-162",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'not conducted consciously' is awkward. Consider 'not produced consciously' or 'not under conscious control'.",
+    "quote": "not conducted consciously",
+    "suggestion": "Change to 'not produced consciously'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#030",
+  "chapter": "vowel-inventory",
+  "lines": "128-129",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'eci̥ci̥snupehe' has two devoiced vowels in consecutive syllables, but the text says 'consecutive vowels'. This is correct, but the term 'consecutive vowels' might be misinterpreted as vowel hiatus. Consider 'consecutive devoiced vowels' or 'vowels in consecutive syllables'.",
+    "quote": "consecutive vowels (<i lang=\"ain-Latn\">eci̥ci̥snupehe</i> 'your tears')",
+    "suggestion": "Change to 'consecutive devoiced vowels in adjacent syllables'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#029",
+  "chapter": "vowel-inventory",
+  "lines": "123-124",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This sentence is a fragment; it follows a period but is not a complete sentence. It should be integrated with the previous sentence or rephrased.",
+    "quote": "Northern dialects devoice more frequently.",
+    "suggestion": "Change to 'Northern dialects devoice more frequently than southern ones.' or integrate as '...shows heavy inter-speaker and inter-dialectal variation, with northern dialects devoicing more frequently.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#028",
+  "chapter": "vowel-inventory",
+  "lines": "115-116",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'in the same environment' is ambiguous: does it mean flanked by voiceless consonants, or the same environment as /i/ and /u/? Clarify.",
+    "quote": "/i/ and /u/ devoice when flanked by voiceless consonants; /e/ is occasionally affected in the same environment.",
+    "suggestion": "Change to 'in the same environment (i.e., between voiceless consonants)'",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#027",
+  "chapter": "vowel-inventory",
+  "lines": "63-64",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The parenthetical includes a semicolon that separates the year from the description, but the description itself contains commas. This is acceptable but slightly awkward. Consider restructuring.",
+    "quote": "Obata & Teshima (1933; three male speakers, Asahikawa and Sakhalin, the first acoustic study of Ainu)",
+    "suggestion": "Rephrase as 'Obata & Teshima (1933) — the first acoustic study of Ainu, with three male speakers from Asahikawa and Sakhalin —'",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#026",
+  "chapter": "vowel-inventory",
+  "lines": "8-11",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The colon introduces a list of two items, but the second item 'expands it to six' is not parallel to the first. Consider rephrasing for parallelism.",
+    "quote": "The inventory is triangular, symmetric, and stable: no Hokkaido dialect reduces it to four vowels or expands it to six",
+    "suggestion": "Change to 'no Hokkaido dialect reduces it to four vowels or expands it to six' is already parallel. No change needed.",
+    "confidence": 0.1
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#025",
+  "chapter": "vowel-inventory",
+  "lines": "270-271",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Earlier (line 13) it says 'Phonemic vowel length is absent from all Hokkaido dialects', and here it says some dialects are accentless. This is not a contradiction, but the relationship between accent and vowel length is discussed later (lines 176-186). The claim that Shizunai and Samani are accentless may contradict the general statement that Hokkaido has pitch accent, but it is presented as a dialectal variation. This is fine, but ensure consistency with the prosody chapters.",
+    "quote": "The Shizunai (静内) and Samani dialect areas are accentless",
+    "suggestion": "No change needed, but cross-reference the prosody chapter for accentless dialects.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#024",
+  "chapter": "vowel-inventory",
+  "lines": "240-250",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says the pattern is confined to two contexts (transitive derivation and possessed noun formation), but then lists the plural suffix -pa as an example of where it is absent. This is consistent, but the list of absent contexts also includes personal prefixes and underived forms, which are not derivational contexts. This is fine, but the wording 'two derivational contexts' may be slightly misleading if the possessed noun formation is considered inflectional rather than derivational.",
+    "quote": "The characterization as vowel harmony is contested. The pattern is confined to two derivational contexts; it is absent from the plural suffix <i lang=\"ain-Latn\">-pa</i>",
+    "suggestion": "Rephrase to 'two morphological contexts' to avoid the derivational/inflectional ambiguity.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#023",
+  "chapter": "vowel-inventory",
+  "lines": "222-236",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says the suffix was originally -i (3sg possessive), but earlier (line 225) it says the suffix 'forms the possessed (affiliative) form of nouns'. The 3sg possessive is a different category from the affiliative form. This may be a conflation or a specific claim by Chiri that needs clarification.",
+    "quote": "Chiri (1952) named this pattern 母音調和 ('vowel harmony'), hypothesizing that the suffix was originally <i lang=\"ain-Latn\">-i</i> (the 3sg possessive), which underwent full assimilation to the root vowel",
+    "suggestion": "Clarify that Chiri's hypothesis links the suffix to the 3sg possessive marker, not the affiliative suffix per se.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#022",
+  "chapter": "vowel-inventory",
+  "lines": "8-11",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Later in the chapter (lines 258-266), the Mukawa dialect is described as having /i/ realized as [e] and /e/ as [ɛ], which could be interpreted as a near-merger that effectively reduces the contrast. While the claim says 'reduces it to four vowels', the Mukawa shift might be seen as a step toward reduction. This is a potential inconsistency depending on interpretation.",
+    "quote": "no Hokkaido dialect reduces it to four vowels or expands it to six",
+    "suggestion": "Clarify that the inventory remains phonemically five even if phonetic realizations shift, or add a qualification.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#020",
+  "chapter": "vowel-inventory",
+  "lines": "250",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is applied to the characterization of the vowel co-occurrence pattern. This is appropriate, but the tag appears after the sentence ending with 'productive harmony', which is the claim being contested. The tag placement is correct.",
+    "quote": "‹contested›",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#015",
+  "chapter": "vowel-inventory",
+  "lines": "260",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of square brackets around '[e]' is inconsistent with the use of square brackets for phonetic transcription elsewhere in the chapter (e.g., '[a]', '[e̞]–[ɛ̝]').",
+    "quote": "[e]",
+    "suggestion": "[e]",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of square brackets around '[i]' is inconsistent with the use of square brackets for phonetic transcription elsewhere in the chapter (e.g., '[a]', '[e̞]–[ɛ̝]').",
+    "quote": "[i]",
+    "suggestion": "[i]",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#014",
+  "chapter": "vowel-inventory",
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'kom-pa' is used to separate morphemes, but the chapter does not consistently use hyphens for morpheme boundaries in other examples (e.g., 'okay-pe', 'siw-pe').",
+    "quote": "kom-pa",
+    "suggestion": "kom-pa",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'ku-kor' is used to separate morphemes, but the chapter does not consistently use hyphens for morpheme boundaries in other examples (e.g., 'okay-pe', 'siw-pe').",
+    "quote": "ku-kor",
+    "suggestion": "ku-kor",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#013",
+  "chapter": "vowel-inventory",
+  "lines": "231",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'nan-u' is used to separate morphemes, but the chapter does not consistently use hyphens for morpheme boundaries in other examples (e.g., 'okay-pe', 'siw-pe').",
+    "quote": "nan-u",
+    "suggestion": "nan-u",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#012",
+  "chapter": "vowel-inventory",
+  "lines": "227",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'kay-e' is used to separate morphemes, but the chapter does not consistently use hyphens for morpheme boundaries in other examples (e.g., 'okay-pe', 'siw-pe').",
+    "quote": "kay-e",
+    "suggestion": "kay-e",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'mos-o' is used to separate morphemes, but the chapter does not consistently use hyphens for morpheme boundaries in other examples (e.g., 'okay-pe', 'siw-pe').",
+    "quote": "mos-o",
+    "suggestion": "mos-o",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'yak-u' is used to separate morphemes, but the chapter does not consistently use hyphens for morpheme boundaries in other examples (e.g., 'okay-pe', 'siw-pe').",
+    "quote": "yak-u",
+    "suggestion": "yak-u",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'tek-e' is used to separate morphemes, but the chapter does not consistently use hyphens for morpheme boundaries in other examples (e.g., 'okay-pe', 'siw-pe').",
+    "quote": "tek-e",
+    "suggestion": "tek-e",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#011",
+  "chapter": "vowel-inventory",
+  "lines": "211",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of an equals sign in 'a=' is not explained and might be a formatting error or an unexplained morpheme boundary marker.",
+    "quote": "a=",
+    "suggestion": "a=",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of an equals sign in '=an' is not explained and might be a formatting error or an unexplained morpheme boundary marker.",
+    "quote": "=an",
+    "suggestion": "=an",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#010",
+  "chapter": "vowel-inventory",
+  "lines": "193",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a breve in '[ai̯]' to indicate a falling diphthong is potentially confusing given the chapter's discussion of vowel sequences and coda glides, and the general absence of phonemic vowel length.",
+    "quote": "[ai̯]",
+    "suggestion": "[ai̯]",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a breve in '[au̯]' to indicate a falling diphthong is potentially confusing given the chapter's discussion of vowel sequences and coda glides, and the general absence of phonemic vowel length.",
+    "quote": "[au̯]",
+    "suggestion": "[au̯]",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a breve in '[ui̯]' to indicate a falling diphthong is potentially confusing given the chapter's discussion of vowel sequences and coda glides, and the general absence of phonemic vowel length.",
+    "quote": "[ui̯]",
+    "suggestion": "[ui̯]",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a breve in '[eu̯]' to indicate a falling diphthong is potentially confusing given the chapter's discussion of vowel sequences and coda glides, and the general absence of phonemic vowel length.",
+    "quote": "[eu̯]",
+    "suggestion": "[eu̯]",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of a breve in '[oi̯]' to indicate a falling diphthong is potentially confusing given the chapter's discussion of vowel sequences and coda glides, and the general absence of phonemic vowel length.",
+    "quote": "[oi̯]",
+    "suggestion": "[oi̯]",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#007",
+  "chapter": "vowel-inventory",
+  "lines": "163",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of Katakana 'ユーカラ' to represent a lengthened vowel is inconsistent with the chapter's statement that Hokkaido Ainu has no phonemic vowel length.",
+    "quote": "ユーカラ",
+    "suggestion": "ユーカラ",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#003",
+  "chapter": "vowel-inventory",
+  "lines": "55",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron over the 'u' in '[ɯ̹]' is inconsistent with the use of macrons for vowel length, which is stated to be absent in Hokkaido Ainu.",
+    "quote": "[ɯ̹]",
+    "suggestion": "[ɯ̹]",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#002",
+  "chapter": "vowel-inventory",
+  "lines": "49",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron over the 'o' in '[o̞]–[ɔ̝]' is inconsistent with the use of macrons for vowel length, which is stated to be absent in Hokkaido Ainu.",
+    "quote": "[o̞]–[ɔ̝]",
+    "suggestion": "[o̞]–[ɔ̝]",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#001",
+  "chapter": "vowel-inventory",
+  "lines": "39",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron over the 'e' in '[e̞]–[ɛ̝]' is inconsistent with the use of macrons for vowel length, which is stated to be absent in Hokkaido Ainu.",
+    "quote": "[e̞]–[ɛ̝]",
+    "suggestion": "[e̞]–[ɛ̝]",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#018",
+  "chapter": "vowel-inventory",
+  "lines": "136-137",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A single Discord message is tagged ‹corpus-confirmed›, which normally implies systematic corpus evidence. A single observation from a Discord user does not meet the standard for 'corpus-confirmed'.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-20) ‹corpus-confirmed›",
+    "suggestion": "Change to ‹corpus-suggested› or ‹speculative›, or add corroborating corpus reference.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "vowel-inventory~p1#016",
+  "chapter": "vowel-inventory",
+  "lines": "8-11",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that no dialect reduces or expands the inventory is supported only by a single page cite to Nakagawa 2024, but the epistemic tag is unmarked (i.e., consensus). Given the later discussion of Mukawa vowel shifts (lines 258-266) which could be interpreted as near-merger, the claim may be stronger than the evidence warrants.",
+    "quote": "The inventory is triangular, symmetric, and stable: no Hokkaido dialect reduces it to four vowels or expands it to six <Ref k=\"nakagawa2024\" p=\"25\" />.",
+    "suggestion": "Consider adding an epistemic tag like ‹consensus› or ‹corpus-confirmed›, or qualifying the claim with 'in the standard description'.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

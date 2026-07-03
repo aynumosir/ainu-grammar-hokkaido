@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "122-123",
+  "category": "copyedit",
+  "severity": "high",
+  "quote": "The plural of ante is okayte (< okay + -te)",
+  "issue": "The form 'ante' is used as the stem, but the decomposition shows the stem is 'okay'. This is likely a typo, as 'ante' is a different verb meaning 'put' whose plural would be 'antere'.",
+  "suggestion": "Change 'ante' to 'okay' or rephrase to clarify that the plural of 'okay' is 'okayte'.",
+  "confidence": 1,
+  "chapter": "glides-w-y",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "176-177; 183-184",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "ináw /i.náw/ CV — open; ohaw /o.háw/ CV — open",
+  "issue": "The σ1 type for these words is labeled 'CV — open', but the first syllable is a vowel only (/i/ and /o/), not a consonant-vowel syllable. This contradicts the description.",
+  "suggestion": "Change the σ1 type to 'V — open' for these rows, or adjust the column to reflect the actual syllable structure.",
+  "confidence": 1,
+  "chapter": "glides-w-y",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "126",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "selecting the consonant allomorph on the evidence that stem-final /y/ is a consonant; vowel-final stems take -re <Ref k=\"aynucorporadiscord\" /> (nukopoli, 2025-12-03) ‹corpus-confirmed›",
+  "issue": "The claim is tagged as 'corpus-confirmed' but the only citation is a Discord post, which is not a corpus or published source. This inflates the evidence strength.",
+  "suggestion": "Either remove the tag or replace the citation with a published source; if the Discord post references a corpus, note that explicitly.",
+  "confidence": 0.7,
+  "chapter": "glides-w-y",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "325",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "but neither read source provides acoustic data bearing on whether the i in yaírayke ever surfaces as [ji]",
+  "issue": "The phrase 'read source' is production-oriented language (author's note about sources consulted), not appropriate for a reader-facing text.",
+  "suggestion": "Change 'read source' to 'source' or 'source consulted'.",
+  "confidence": 0.8,
+  "chapter": "glides-w-y",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

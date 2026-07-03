@@ -1,0 +1,499 @@
+[
+ {
+  "id": "person-number-interactions~p1#010",
+  "chapter": "person-number-interactions",
+  "lines": "327-328",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PL' appears twice in example 328, once for '-hcin' and once for '-hci'. The note states 'The Sakhalin plural element -hci/-hcin appears with a second-person plural subject, not a third-person one, undermining its analysis as third-person plural agreement.' The gloss should clarify the distinct roles of '-hcin' and '-hci' if they are indeed different, or be more precise about their shared function as plural markers in this context.",
+    "quote": "m=\"eciokaya-hcin naa eci=paye-hci-hi nee nanko\"\ng=\"2PL-PL still 2PL.S=go.PL-PL-NMLZ COP probably\"",
+    "suggestion": "Clarify the gloss for '-hcin' and '-hci' to better reflect their function as plural markers, perhaps by using a consistent notation like 'PL' for both if they are homophonous in function, or by differentiating them if their roles are distinct.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes '2PL-PL' and 'go.PL-PL', which duplicates plural marking unnecessarily and inaccurately. The morpheme '-hci' is glossed as 'PL' twice, but it likely functions once per word. The double 'PL' on 'go' may reflect reduplication not present in the source.",
+    "quote": "g=\"2PL-PL go.PL-PL-NMLZ COP probably\"",
+    "suggestion": "Revise to '2PL=go-PL-NMLZ' or similar, avoiding redundant 'PL' glossing unless morphology explicitly supports it.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#002",
+  "chapter": "person-number-interactions",
+  "lines": "68",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text uses both 'clitic' and 'auxiliary' to describe the status of 'outer pa'. While the tag 'contested' indicates disagreement, the text should ideally use consistent terminology or clearly explain the nuances of each term.",
+    "quote": "Saru, Chitose, Ishikari; clitic/auxiliary status ‹contested›",
+    "suggestion": "Clarify the relationship between 'clitic' and 'auxiliary' in this context, or choose one term and stick with it, noting the contested status.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The orthography for 'ci' and '-ci' is inconsistent. In Shizunai, it appears as 'ci', while in Horobetsu, it is '-ci'. This could be confusing, especially since the text later discusses 'outer ci' and 'fossilized inner suffix'.",
+    "quote": "Shizunai <i lang=\"ain-Latn\">ci</i> / Horobetsu <i lang=\"ain-Latn\">-ci</i>",
+    "suggestion": "Standardize the orthography for these forms, perhaps by always including the hyphen when it functions as a suffix.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table uses 'outer <i lang=\"ain-Latn\">pa</i>' but earlier in the text the outer element is referred to with a hyphen in some contexts. This creates inconsistency in how the outer clitic is represented.",
+    "quote": "outer <i lang=\"ain-Latn\">pa</i>",
+    "suggestion": "Standardize the representation of the outer clitic as 'pa' (without hyphen) in all contexts outside the root, including the table.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: Shizunai form is given as 'ci' (unhyphenated) while Horobetsu is '-ci' (with hyphen), despite both being suffixes. This suggests a formatting inconsistency in morpheme representation.",
+    "quote": "Shizunai <i lang=\"ain-Latn\">ci</i> / Horobetsu <i lang=\"ain-Latn\">-ci</i>",
+    "suggestion": "Use consistent hyphenation: either both as 'ci' or both as '-ci', depending on positional analysis. Given Horobetsu's fossilized suffix status, '-ci' is justified; Shizunai's outer clitic should remain 'ci' without hyphen.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#021",
+  "chapter": "person-number-interactions",
+  "lines": "159",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'the minimal pair' implies a single pair, but three examples (lines 166, 176, 187) are presented, not a single minimal pair.",
+    "quote": "The minimal pair demonstrating the position contrast uses the fourth-person intransitive suffix",
+    "suggestion": "Change 'The minimal pair' to 'Minimal pairs' or 'Examples illustrating the position contrast'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#019",
+  "chapter": "person-number-interactions",
+  "lines": "44",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table says eci= covers 1A→2O, but the text later doesn't elaborate on this portmanteau use. This is not an inconsistency within the chapter.",
+    "quote": "2PL A, S, O; also 1A→2O",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#018",
+  "chapter": "person-number-interactions",
+  "lines": "99-100",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text does not specify which singular S affixes these are, but the context makes it clear. No problem.",
+    "quote": "a singular S affix selects the singular stem",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#017",
+  "chapter": "person-number-interactions",
+  "lines": "296",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The line number reference is for a note, which is fine. No register leak.",
+    "quote": "NOTE: The Shizunai … parallel to Saru outer pa.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#016",
+  "chapter": "person-number-interactions",
+  "lines": "329",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The translation 'You people' might be slightly informal or regionally marked; consider 'You (plural) must have gone too.' for consistency with other formal translations.",
+    "quote": "tr=\"You people must have gone too.\"",
+    "suggestion": null,
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#013",
+  "chapter": "person-number-interactions",
+  "lines": "133",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Omit the pound sign before 'constructed' in the `<Ex>` tag; should be just `constructed`.",
+    "quote": "£constructed",
+    "suggestion": "Change `£constructed` to `constructed`.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#012",
+  "chapter": "person-number-interactions",
+  "lines": "363",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'human' is not italicized, unlike other Ainu terms or grammatical concepts that are italicized for emphasis or as technical terms. It is unclear if 'human' is intended as a technical term or simply descriptive.",
+    "quote": "human recipient while the theme remains an unindexed bare noun phrase",
+    "suggestion": "Italicize 'human' if it is intended as a technical term, or remove italics from other similar terms if it is not.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#011",
+  "chapter": "person-number-interactions",
+  "lines": "351-353",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "There is an extraneous closing italic tag `</i>` after `-pa` on line 351, and an extraneous opening italic tag `<i>` before `pa` on line 353. This is likely a markup error.",
+    "quote": "V/<i lang=\"ain-Latn\">-pa</i></i\n> stem combines with causative morphology before the person affix while outer <i lang=\"ain-Latn\"\n>pa</i\n> appears outside.",
+    "suggestion": "Remove the extraneous `</i>` on line 351 and the extraneous `<i>` on line 353.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#001",
+  "chapter": "person-number-interactions",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'fourth-person' is used without explanation or definition. It is also not consistently capitalized, appearing as 'fourth-person' here but 'fourth-person' in line 209 and 'fourth-person' in line 275.",
+    "quote": "fourth-person series",
+    "suggestion": "Define 'fourth-person' on first use and ensure consistent capitalization.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The distinction between the suffix <i lang=\"ain-Latn\">-pa</i> and the clitic <i lang=\"ain-Latn\">pa</i> is not consistently maintained in the text. For example, line 57 lists '-pa' as a verbal number suffix, while line 64 lists 'outer pa' as an outer number element. The distinction is further complicated by the fact that both are written as <i lang=\"ain-Latn\">pa</i> in the text, with the only difference being the hyphen.",
+    "quote": "a root-attaching plural suffix <i lang=\"ain-Latn\">-pa</i> and an outer plural auxiliary or clitic <i lang=\"ain-Latn\">pa</i>",
+    "suggestion": "Clarify the orthographic distinction between the suffix and the clitic, perhaps by using a different notation for one of them, or by consistently referring to them by their full names.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#023",
+  "chapter": "person-number-interactions",
+  "lines": "330",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Multiple citations in one 'cite' attribute are separated by semicolon, but the schema expects a single source per example or a combined reference. This format may break pipeline parsing.",
+    "quote": "cite=\"murasaki1979:52; nakagawa2024:155\"",
+    "suggestion": "Use a single primary source or combine with proper syntax, e.g., 'murasaki1979:52 [as cited in nakagawa2024:155]'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#022",
+  "chapter": "person-number-interactions",
+  "lines": "309",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent representation of the same morpheme: 'hci' vs 'hsi' without explanation. While dialectal variation is expected, the lack of diacritics or note on phonetic equivalence may confuse readers.",
+    "quote": "<i lang=\"ain-Latn\">=(a)hci</i> (Aniwa Bay <i lang=\"ain-Latn\">=(a)hsi</i>)",
+    "suggestion": "Add a brief note explaining the variation, e.g., '(a)hci ~ (a)hsi (Aniwa Bay)' to indicate dialectal or transcriptional variation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#020",
+  "chapter": "person-number-interactions",
+  "lines": "14",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of hyphenation for the same morpheme: '-pa' (with hyphen) vs 'pa' (without) when both refer to the outer clitic. The outer element should be consistently marked as 'pa' without a hyphen when outside the stem.",
+    "quote": "<i lang=\"ain-Latn\">-pa</i> and an outer plural auxiliary or clitic <i lang=\"ain-Latn\">pa</i>",
+    "suggestion": "Change '-pa' to 'pa' in the phrase 'an outer plural auxiliary or clitic <i lang=\"ain-Latn\">pa</i>' to maintain orthographic consistency with the outer form.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#015",
+  "chapter": "person-number-interactions",
+  "lines": "268-275",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged ‹consensus›, but it is based on a single source (Nakagawa 2024, pp. 174-179, 254-256). No other sources are cited for this conclusion, so the tag may be inflated.",
+    "quote": "The crossed mismatches ... confirm that the fourth-person form-set is not simply a plural of the first person, and they supply evidence for the historically composite character of the series ‹consensus›.",
+    "suggestion": "Either add supporting citations or downgrade to ‹corpus-confirmed› if Nakagawa's data suffice, or note that further sources are needed to justify 'consensus'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#014",
+  "chapter": "person-number-interactions",
+  "lines": "198-201",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that 'both combine with causative suffixes' is ambiguous: it could mean inner -pa and outer pa each combine with causative suffixes individually, or that they combine with causatives simultaneously. The preceding text already established that inner -pa attaches to the root inside person markers and outer pa follows the inflected form. The description could be clearer whether causatives intervene between root and person marker (for inner -pa) or between person inflection and outer pa.",
+    "quote": "The two may co-occur on the same verb — a V/-pa stem combined with outer pa — and both combine with causative suffixes while maintaining their respective attachment sites",
+    "suggestion": "Clarify: 'the root-attaching -pa combines with causative suffixes before person marking, while outer pa follows the fully inflected verb.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#009",
+  "chapter": "person-number-interactions",
+  "lines": "288-289",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PL' for 'ci' in example 288 is ambiguous. The note explains that 'Shizunai ci follows the fourth-person S suffix =an in the outer-plural slot, parallel to Saru outer pa.' The gloss should reflect this specific function, perhaps as 'OUTER.PL', to distinguish it from other plural markers and align with the explanation.",
+    "quote": "m=\"hoski no hotke=an ci akus\"\ng=\"first ADV sleep=4.S PL then\"",
+    "suggestion": "Change the gloss for 'ci' to 'OUTER.PL'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#008",
+  "chapter": "person-number-interactions",
+  "lines": "245-246",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PL' for 'arki' in example 245 is potentially confusing. The note states 'the fourth-person S suffix =an appears on the plural suppletive stem arki.' The gloss should clearly indicate that 'arki' itself is the plural form, perhaps by glossing it as 'come.PL' or 'come.PLURAL'.",
+    "quote": "m=\"hunak wa arki=an ru-we an\"\ng=\"where from come.PL=4.S track-POSS exist\"",
+    "suggestion": "Change the gloss to 'come.PL' or 'come.PLURAL'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#007",
+  "chapter": "person-number-interactions",
+  "lines": "226-227",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PL' for 'paye' in example 226 is potentially confusing. The note states 'The plural suppletive paye co-occurs with =an; the reference is inherently multiple (speaker + addressee).' The gloss should clearly indicate that 'paye' itself is the plural form, perhaps by glossing it as 'go.PL' or 'go.PLURAL'.",
+    "quote": "m=\"eani hem paye=an ro\"\ng=\"2SG also go.PL=4.S HORT\"",
+    "suggestion": "Change the gloss to 'go.PL' or 'go.PLURAL'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#006",
+  "chapter": "person-number-interactions",
+  "lines": "187-188",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PL' for 'pa' in example 188 is ambiguous. The note explains that 'outer pa follows the person-inflected form of the second predicate.' The gloss should reflect this specific function, perhaps as 'OUTER.PL', to distinguish it from other plural markers and align with the explanation.",
+    "quote": "m=\"rus patek a=mi wa hotke=an pa\"\ng=\"fur only 4.A=wear CONJ sleep=4.S PL\"",
+    "suggestion": "Change the gloss for 'pa' to 'OUTER.PL'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#005",
+  "chapter": "person-number-interactions",
+  "lines": "177-178",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PL' for '-pa' in example 178 is potentially misleading. The note clarifies that 'Stem-forming -pa precedes the fourth-person S suffix =an, confirming root-level attachment.' The gloss should reflect this specific function, perhaps as 'STEM.PL', to distinguish it from other plural markers and align with the explanation.",
+    "quote": "m=\"irwak sinne sorekusu iki-pa=an\"\ng=\"sibling like exactly do-PL=4.S\"",
+    "suggestion": "Change the gloss for '-pa' to 'STEM.PL'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#004",
+  "chapter": "person-number-interactions",
+  "lines": "167-168",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PL' for 'pa' in example 167 is ambiguous. Given the note states 'Outer pa follows the fourth-person S suffix =an', the gloss should reflect this specific function, perhaps as 'OUTER.PL', to differentiate it from other plural markers and align with the explanation.",
+    "quote": "m=\"nenpoka iki=an pa wa siknu=an wa\"\ng=\"somehow do=4.S PL CONJ live=4.S CONJ\"",
+    "suggestion": "Change the gloss for 'pa' to 'OUTER.PL'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "person-number-interactions~p1#003",
+  "chapter": "person-number-interactions",
+  "lines": "130-131",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'PL' for the outer <i lang=\"ain-Latn\">pa</i> in example 130 does not align with the note which states it illustrates 'outer pa following the 1PL.EXCL S affix on an intransitive verb'. The gloss should reflect the function of 'outer pa' more clearly, perhaps as 'OUTER.PL' or similar, to distinguish it from other plural markers.",
+    "quote": "m=\"apkas=as pa\"\ng=\"walk=1PL.EXCL.S PL\"",
+    "suggestion": "Change the gloss for 'pa' to 'OUTER.PL' or a similar more descriptive term.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

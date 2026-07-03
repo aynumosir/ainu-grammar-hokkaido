@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "80",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "no consonant-final form is attested in the read corpus sources",
+  "issue": "The phrase 'read corpus sources' refers to the authors' own reading process, a meta-commentary about source selection rather than a statement about the data itself.",
+  "suggestion": "Consider replacing with 'the corpus sources consulted' or 'the available corpus sources'.",
+  "confidence": 0.8,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "80",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "read corpus sources <Ref k=\"bugaevakobayashi2022\" p=\"§4.3.1\" /> ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› appears after a citation that supports the allomorphy statement (from the Handbook), but the tag seems intended for the corpus claim about lack of attestation. The scope of the tag is ambiguous.",
+  "suggestion": "Restructure to clarify: place the tag directly after the corpus claim, before the citation, or attach it only to the clause it modifies.",
+  "confidence": 0.7,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "174-175 and 262-263",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Bugaeva's 2014 causative study, the most comprehensive treatment of Ainu causative morphology available, explicitly excludes -yar for reasons of space",
+  "issue": "The same information about Bugaeva's study excluding -yar is repeated in two sections with slightly different wording. This redundancy may be intentional but could be streamlined.",
+  "suggestion": "Consider keeping the full description in one location and cross-referencing or summarizing in the other.",
+  "confidence": 0.5,
+  "chapter": "permissive-sociative-causative-yar",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

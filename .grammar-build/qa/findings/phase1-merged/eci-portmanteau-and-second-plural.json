@@ -1,0 +1,462 @@
+[
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#007",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "194-195",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '1SG.A>2SG.O=help' for 'eci=kasuy' is a bit dense. While it conveys the meaning, it could be more explicit about the portmanteau nature. The note clarifies this, but the gloss itself could be more transparent.",
+    "quote": "m=\"nep ka eci=kasuy pe an ya\"\ng=\"what even 1SG.A>2SG.O=help thing exist Q\"",
+    "suggestion": "Consider a gloss like '1SG.A-2SG.O.PORT=help' or '1SG.A>2SG.O.PORT=help' to explicitly mark the portmanteau function within the gloss itself.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '1SG.A>2SG.O=help' assigns specific agent and object roles to 'eci=', but the section 'The 1A→2O portmanteau' states that 'eci=' covers all four combinations (1SG/1PL.EXCL × 2SG/2PL). The gloss implies a specific 1SG→2SG reading, but the form itself is underspecified. The gloss over-specifies the meaning relative to the morpheme.",
+    "quote": "nep ka eci=kasuy pe an ya",
+    "suggestion": "Use a neutral gloss like '1→2=help' or '1A>2O=help' without specifying number, to reflect the portmanteau's underspecification.",
+    "confidence": 0.97
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#005",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "121-122",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme segmentation 'eci=paye' includes 'paye' which is glossed as 'go.PL'. However, the note states 'eci= marks 2PL.S on the intransitive paye'. This suggests 'paye' itself might be the plural stem, and the gloss should reflect this more clearly, perhaps as '2PL.S=go.PL' or similar, to show that 'paye' is the plural form of 'go'. The gloss 'go.PL' is ambiguous as to whether it's a separate morpheme or part of the verb stem.",
+    "quote": "m=\"eci=paye tek nean cise oro eci=epa cik anakne\"\ng=\"2PL.S=go.PL CONJ that house LOC 2PL.A=reach COND TOP\"",
+    "suggestion": "Clarify the gloss for 'eci=paye' to explicitly show that 'paye' is the plural stem for 'go', e.g., '2PL.S=go.PL' or '2PL.S=go(PL)'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss has '2PL.S=go.PL' for 'eci=paye' and '2PL.A=reach' for 'eci=epa', but the note says 'eci= marks 2PL.S on the intransitive paye in the first clause and 2PL.A on the transitive epa in the second'. This shows that the same form 'eci=' is glossed with different grammatical roles (S vs A), but the gloss string uses '2PL.S' and '2PL.A' — implying a distinction that the text claims does not exist (second-person neutrality). This contradicts the claim that second person is neutral across S, A, O.",
+    "quote": "eci=paye tek nean cise oro eci=epa cik anakne",
+    "suggestion": "Gloss both as '2PL=...' without specifying S/A to reflect neutrality, or revise the analysis to acknowledge role distinction.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#004",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "111-112",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'e=oman' and 'e=ray' are both glossed as '2SG.S=go' and '2SG.S=die' respectively. However, the morpheme segmentation in 'm' shows 'e=oman' and 'e=ray'. The gloss should reflect the morpheme segmentation more closely, perhaps by indicating the verb root separately if it's not directly represented by the gloss word.",
+    "quote": "m=\"sinen ne e=oman wa e=ray yakun\"\ng=\"one COP 2SG.S=go CONJ 2SG.S=die COND\"",
+    "suggestion": "Adjust the gloss to accurately reflect the morpheme segmentation, e.g., '2SG.S=go' and '2SG.S=die' if 'oman' and 'ray' are the verb roots.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '2SG.S=go' for 'e=oman' and '2SG.S=die' for 'e=ray' implies that 'e=' is the subject marker, but the free translation 'you go alone and die' does not distinguish between agent and object roles. However, the note says 'both intransitive verbs oman and ray carry e= because the addressee is singular; the role is the same (2SG.S)'. This is consistent, but the gloss uses '2SG.S' while the table in section 'Second-person neutrality' uses '2SG' without role specification. Inconsistency in labeling between sections.",
+    "quote": "sinen ne e=oman wa e=ray yakun",
+    "suggestion": "Standardize role labels: either use '2SG.S' throughout or simplify to '2SG' in all tables and glosses.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#002",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "60",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry states that 'eci=' is the counterpart for the 1->2 portmanteau function, and then notes that 'no separate 2SG-only form exists for this cell'. This contradicts the preceding column which lists '<i lang=\"ain-Latn\">e=</i> 2SG.O' as the counterpart for the 2PL.O function. If 'eci=' is the 1->2 portmanteau, it implies a 2SG-only form should exist for the 1SG.A > 2SG.O case, which is covered by the portmanteau. The note implies a lack of a distinct 2SG form for this specific cell, which is confusing given the overall discussion of 2SG vs 2PL.",
+    "quote": "eci= (no separate 2SG-only form exists for this cell)",
+    "suggestion": "Clarify the relationship between the 2SG and 2PL forms in the context of the 1->2 portmanteau. It might be that 'eci=' serves as the 2SG.O form in this specific 1->2 context, and the note is trying to explain why there isn't a *separate* form for 1SG.A > 2SG.O that is distinct from the general 2PL.A/O form.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table column header is 'e= counterpart', but the cell for the portmanteau row gives 'eci=' instead of the expected singular counterpart. This is inconsistent with the first three rows, which give the corresponding singular form (e= 2SG.S, e= 2SG.A, e= 2SG.O). The cell should either be empty or indicate that no counterpart exists.",
+    "quote": "e= counterpart: <i lang=\"ain-Latn\">eci=</i> (no separate 2SG-only form exists for this cell)",
+    "suggestion": "Replace the cell content with '—' or 'none' to match the column header, or revise the column header to clarify that it shows the relevant form for comparison.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#006",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "145-146",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The asterisk (*) indicating unattested forms is placed before the equals sign (=) in the Ainu forms. Standard linguistic notation typically places the asterisk before the entire form, including any affixes, to indicate ungrammaticality or unattestedness.",
+    "quote": "i lang=\"ain-Latn\">*ku=e=</i>, <i lang=\"ain-Latn\">*ku=eci=</i>, <i lang=\"ain-Latn\">*ci=e=</i>, and <i lang=\"ain-Latn\">*ci=eci=</i>",
+    "suggestion": "Move the asterisk to the beginning of each form: '*ku=e=', '*ku=eci=', '*ci=e=', '*ci=eci='.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The asterisked forms use '=' as a boundary marker, but in the case of '*ku=e=' and '*ci=e=', the second '=' is part of the second-person index, not a separator. This creates ambiguity: is '*ku=e=' meant to be ku + e= or ku= + e=? Orthographic inconsistency with the rest of the chapter, which consistently uses '=' only between person markers and stems.",
+    "quote": "*ku=e=, *ku=eci=, *ci=e=, and *ci=eci=",
+    "suggestion": "Use parentheses or spacing to clarify: e.g., *ku=e=* or *ku+(e=)* to avoid misreading.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#021",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "351-353",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The chapter normalizes to '=', but the mention of Ijäs's hyphen notation uses 'e-' and 'eci-', while earlier in the same section (line 318) it says 'her pedagogical hyphen notation (e-arpa) is normalized here'. Inconsistent representation of Ijäs's notation: sometimes with hyphen, sometimes with dash.",
+    "quote": "Ijäs writes <i lang=\"ain-Latn\">e-</i> and <i lang=\"ain-Latn\">eci-</i> with a hyphen",
+    "suggestion": "Use consistent formatting: either always 'e-' or 'e-', and 'eci-' or 'eci-', throughout.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#017",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "48-49, 53",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "In the table at lines 48 and 53, the phrase '3rd person' is used, while elsewhere in the chapter (e.g., lines 70, 220) the term 'third person' is spelled out. This is a minor orthographic inconsistency within the chapter.",
+    "quote": "3rd person",
+    "suggestion": "Standardize to either '3rd person' or 'third person' throughout the chapter for consistency.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#016",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "79-108",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table header limits the baseline group to 'Saru–Chitose', but the text at line 132–134 states that Nakagawa records eci= as the 2PL index in Saru, Chitose, Horobetsu, and Shizunai, while Ishikari and Tokachi also show es=. The table omits Horobetsu and Shizunai from the baseline, which is a minor inconsistency with the broader textual description.",
+    "quote": "2PL (Saru–Chitose baseline) … 2PL (Ishikari, Tokachi)",
+    "suggestion": "Either expand the table header to include the full list (e.g., 'Saru, Chitose, Horobetsu, Shizunai') or add a note that the table is simplified for illustration.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#014",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "322-328",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the previous example, the gloss '1SG.A>2SG.O=give' for 'eci=kore' is a bit dense. The note clarifies the portmanteau nature. The use of '=' as a boundary is consistent with the chapter's convention, but the gloss could be more explicit about 'kore' being the verb root.",
+    "quote": "m=\"tanpe eci=kore na\"\ng=\"this 1SG.A>2SG.O=give FIN\"\ntr=\"I give this to you.\"\ncite=\"ijas2023\"\nconstructed\nnote=\"Constructed from Ijäs Lesson 5, presenting a 1SG-agent-plus-2SG-object construction. The reference paradigm generalises eci= to all four 1→2 number combinations. As a ditransitive, kore indexes the recipient (2nd person) in the object slot; the thing given (tanpe) is a bare noun phrase.\"",
+    "suggestion": "Consider a gloss like '1SG.A>2SG.O.PORT=give' to explicitly mark the portmanteau function within the gloss itself, or '1SG.A>2SG.O=give(ROOT)' if 'give' is the gloss for 'kore'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#013",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "312-318",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'e=arpa' with the gloss '2SG.S=go'. The note explains that Ijäs uses 'e-arpa' and it's normalized to '='. However, the gloss '2SG.S=go' implies that 'go' is the verb root and '=' is the boundary. If 'arpa' is the verb root, the gloss should reflect that. The note mentions 'personal-index boundary', which is consistent with the use of '=', but the gloss could be more explicit about 'arpa' being the verb.",
+    "quote": "m=\"e=arpa\"\ng=\"2SG.S=go\"\ntr=\"You go.\"\ncite=\"ijas2023\"\nconstructed\nnote=\"Constructed from Ijäs Lesson 2. Her pedagogical hyphen notation (e-arpa) is normalized here to the personal-index boundary =.\"",
+    "suggestion": "Adjust the gloss to '2SG.S=go' where 'go' is the gloss for 'arpa', or if 'arpa' is a plural stem, adjust accordingly. The current gloss is acceptable if 'go' is understood as the gloss for 'arpa'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#003",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "76",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'fourth person' is presented with an epistemic grade tag '‹consensus›' which is unusual. Epistemic grades typically apply to claims about linguistic phenomena, not to specific terminology.",
+    "quote": "fourth person ‹consensus›",
+    "suggestion": "Remove the epistemic grade tag from 'fourth person'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#001",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "15",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation range spans multiple lines and includes multiple references. It would be clearer to list each reference separately with its corresponding page numbers.",
+    "quote": "15–18",
+    "suggestion": "Split the citation range into individual references with their respective page numbers.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#020",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "301-309",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The source <Ref k=\"ijas2023\" /> is cited as a learner grammar, yet it is used to support a claim marked ‹consensus› about the reference paradigm. This inflates the epistemic status: a pedagogical source should not underwrite a consensus claim about the full paradigm.",
+    "quote": "The online learner grammar by Ijäs introduces <i lang=\"ain-Latn\">e=</i> in Lesson 2...",
+    "suggestion": "Remove ‹consensus› from the sentence or rephrase to indicate that Ijäs's grammar is pedagogical and not a primary source for the full paradigm.",
+    "confidence": 0.93
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#019",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "256-284",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table says outer plural 'pa' occurs in Saru, Chitose, and Ishikari, but earlier in section 'Second-person neutrality', it states that Ishikari uses 'es=' for 2PL, not 'eci='. This raises a question: does 'eci=' co-occur with outer 'pa' in Ishikari if 'eci=' is not the 2PL index there? The co-occurrence claim assumes 'eci=' is the 2PL index in all listed dialects, but Ishikari uses 'es=' instead.",
+    "quote": "outer plural <i lang=\"ain-Latn\">pa</i> (Saru, Chitose, Ishikari)",
+    "suggestion": "Clarify whether 'eci=' and outer 'pa' co-occur in Ishikari, or restrict the claim to Saru and Chitose.",
+    "confidence": 0.88
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#018",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "8-18",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The term 'prefix' is used, but in the analysis, <i>eci=</i> is treated as a clitic-like element (per Bugaeva, cited later). This creates a terminological inconsistency: calling it a 'prefix' contradicts the later claim that it is clitic-like and inseparable from the stem.",
+    "quote": "The prefix <i lang=\"ain-Latn\">eci=</i> occupies two cells in the Hokkaido Ainu personal-index system.",
+    "suggestion": "Change 'prefix' to 'personal index' or 'clitic' to align with the morphological analysis in section 'Notation'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#015",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "348-351",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'eci=' is clitic-like and inseparable, while 'e=' is a full prefix that shifts the accent kernel. However, in the context of the chapter, 'eci=' is presented as a prefix (lines 8, 11, 24, 131, 141, 205, 243, 252, 303, 308, 321, 322, 341). This creates a contradiction regarding the morphological status of 'eci=' and 'e=' as presented by Bugaeva versus the chapter's general treatment.",
+    "quote": "Bugaeva assigns graduated status on prosodic and separability grounds: <i lang=\"ain-Latn\">eci=</i> is clitic-like — inseparable from the stem and not shifting the accent kernel — while <i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">ci=</i>, <i lang=\"ain-Latn\">e=</i>, <i lang=\"ain-Latn\">en=</i>, <i lang=\"ain-Latn\">un=</i>, and <i lang=\"ain-Latn\">i=</i> are full prefixes that do shift it <Ref k=\"bugaeva2012\" p=\"472–473\" /> ‹contested›.",
+    "suggestion": "Reconcile the description of 'eci=' and 'e=' as clitic-like/prefix with their consistent treatment as prefixes throughout the chapter. It might be that Bugaeva's analysis is presented as a specific viewpoint ('contested') and the chapter's convention of using '=' for personal indexes is a separate house convention. Clarify this distinction.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#012",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "304-305",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This statement from Ijäs's learner grammar seems to contradict the general description of 'e=' as the second-person singular index on intransitive verbs (line 301-302) and its role as a second-person singular counterpart in transitive contexts (Table, lines 45, 50, 55). While 'e=' can mark a 2SG object with a 3rd person agent, presenting it *solely* as that in this context, without mentioning its intransitive use or its role as a 2SG agent, might be an oversimplification or a misrepresentation of its broader function as presented elsewhere in the chapter.",
+    "quote": "and <i lang=\"ain-Latn\">e=</i> as the second-person singular object form with a third-person agent <Ref k=\"ijas2023\" />.",
+    "suggestion": "Add a brief clarification that this is Ijäs's specific pedagogical presentation and that 'e=' has broader functions as discussed elsewhere in the chapter.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#011",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "281",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for the outer plural auxiliary 'pa' states its co-occurrence with 'eci=' is 'follows <i lang=\"ain-Latn\">eci=</i>verb when additional plurality is marked'. This implies that 'pa' follows the entire 'eci=verb' unit. However, the description in the 'position' column states 'outside the fully person-inflected form'. This suggests 'pa' comes after the verb, including its person marking. The phrasing 'follows <i lang=\"ain-Latn\">eci=</i>verb' could be interpreted as 'eci=' being a separate verb, which is not the case.",
+    "quote": "follows <i lang=\"ain-Latn\">eci=</i>verb when additional plurality is marked",
+    "suggestion": "Clarify the position of the outer plural auxiliary 'pa' relative to the 'eci=' prefix and the verb stem. It should be 'follows the verb inflected with <i lang=\"ain-Latn\">eci=</i>'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#010",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "275",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for the stem suffix '-pa' states its co-occurrence with 'eci=' is 'independent of the personal index'. This seems to contradict the general understanding that suffixes attach to the verb stem, which is then inflected for person. While '-pa' might be independent in terms of its *domain* of plurality (verbal/event vs. participant), its *position* (inside person suffixes) suggests it's not entirely independent of the personal index's structural slot.",
+    "quote": "independent of the personal index",
+    "suggestion": "Rephrase 'independent of the personal index' to be more precise about the nature of its independence, perhaps focusing on its domain or function rather than its structural relationship.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#009",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "269",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'suppletive plural stem' states 'yes' for co-occurrence with 'eci=', and provides the example '<i lang=\"ain-Latn\">eci=paye</i> = 2PL.S + go.PL'. This implies that 'eci=' marks 2PL.S and 'paye' is the plural stem for 'go'. However, the note for example 128 (lines 121-128) states 'eci= marks 2PL.S on the intransitive paye'. This suggests that 'eci=' is the 2PL.S marker and 'paye' is the verb stem itself, which already incorporates plurality. The table entry '2PL.S + go.PL' might be redundant or misleading if 'paye' inherently means 'go.PL'.",
+    "quote": "yes; <i lang=\"ain-Latn\">eci=paye</i> = 2PL.S + go.PL",
+    "suggestion": "Clarify the relationship between 'eci=' and the plural stem 'paye'. If 'paye' is the plural stem, the gloss should reflect that 'eci=' is the person marker and 'paye' is the plural verb stem. For example, '2PL.S + go(PL)' or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "eci-portmanteau-and-second-plural~p1#008",
+  "chapter": "eci-portmanteau-and-second-plural",
+  "lines": "205-208",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'eci=i=' is recorded for 1st person agent and 4th person object, with 'eci=' as the agent index and 'i=' as the 4th person object. However, earlier in the chapter (line 11-13), 'eci=' is described as the 2nd person plural index and the portmanteau for 1st-to-2nd combinations. This creates a contradiction: is 'eci=' a 2nd person plural index, or a 1st person agent index when combined with a 4th person object? The description of 'eci=i=' seems to imply 'eci=' is the 1st person agent index, which conflicts with its primary definition as a 2nd person plural index.",
+    "quote": "Nakagawa's Saru combination table records <i lang=\"ain-Latn\">eci=i=</i> when the agent is first person and the object is fourth person: the agent index <i lang=\"ain-Latn\">eci=</i> and the fourth-person object <i lang=\"ain-Latn\">i=</i> appear as separate prefixes <Ref k=\"nakagawa2024\" p=\"170\" />. The 1→2 cells merge the two slots into one, in keeping with the two-index cap: a verb carries at most one agent index and one object index, and the portmanteau satisfies both positions simultaneously.",
+    "suggestion": "Clarify the role of 'eci=' in the 1st person agent + 4th person object combination. It's possible 'eci=' is being used in a different sense here, or there's a misunderstanding of the 'eci=i=' form. If 'eci=' is indeed the 1st person agent index in this specific context, the chapter needs to reconcile this with its definition as a 2nd person plural index.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

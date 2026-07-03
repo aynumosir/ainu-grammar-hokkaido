@@ -1,0 +1,997 @@
+[
+ {
+  "id": "relational-and-spatial-nouns~p1#018",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "299",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'the Japanese source gloss uses singular first person, reflecting the narrative first-person reading that Ishikari shares with the fourth-person narrative use of Saru'. This is a complex sentence and could be broken down or rephrased for clarity.",
+    "quote": "note=\"cise soy ta 'at the outside of the house'. The form =as is the first-person-plural-exclusive intransitive suffix; the Japanese source gloss uses singular first person, reflecting the narrative first-person reading that Ishikari shares with the fourth-person narrative use of Saru (see person-marking-architecture).\"",
+    "suggestion": "Break down the sentence or rephrase for better readability. For example: 'The Japanese source gloss uses singular first person. This reflects a narrative first-person reading, which Ishikari shares with the fourth-person narrative use of Saru (see person-marking-architecture).'",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference 'person-marking-architecture' is written as plain text instead of using the <Xr> component. Elsewhere in the chapter, cross-references to sections in other chapters are tagged with <Xr> (e.g., lines 21, 30, 415).",
+    "quote": "see person-marking-architecture",
+    "suggestion": "Replace with <Xr ch=\"person-marking-architecture\" />.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#009",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "138",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The affiliative form for 'so' is marked with a dash. This implies it's not attested or doesn't exist. However, the text later discusses 'so' (line 158) and its potential combination with 'ka'. If it's a relational noun, it should likely have an affiliative form.",
+    "quote": "— ‹speculative›",
+    "suggestion": "Investigate and provide the affiliative form for 'so', or explain why it's absent.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The em dash (—) is used to indicate absence of a form, but it is not consistently used across the table. Other rows have forms, but this one uses a dash. While acceptable, the lack of a standardized placeholder (e.g., '—' or 'not attested') may cause parsing issues.",
+    "quote": "— ‹speculative›",
+    "suggestion": "Use a consistent placeholder such as '—' or 'not attested' across all cells where data is missing.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#027",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "446",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for nukopoli is provided, but the specific username is missing. The format usually includes the username.",
+    "quote": "nukopoli (<Ref k=\"aynucorporadiscord\" /> 2024-11-24) as <i lang=\"ain-Latn\">ka un</i> 'be at the top of (someone)'",
+    "suggestion": "Add the username of the contributor from the Discord discussion.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹proposed› appears in the main text without being attached to a citation or note, making it unclear who proposed it and based on what evidence.",
+    "quote": "‹proposed›",
+    "suggestion": "Attach the tag to a citation or move it into a note with attribution.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#020",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "307",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the example 'iwor so ka a=ehóyupu wa' is 'hunting-ground + upper-back + top + 4.A=fly.around + CONJ'. The translation is 'flew over the top of the hunting ground's upper part'. The gloss for 'so' is 'upper-back' and for 'ka' is 'top'. The translation seems to interpret 'so ka' as 'top of the upper part'. The gloss could be more explicit about how 'so' and 'ka' combine semantically.",
+    "quote": "hunting-ground + upper-back + top + 4.A=fly.around + CONJ",
+    "suggestion": "Refine the gloss to better reflect the semantic combination of 'so' and 'ka' in this context, e.g., 'hunting-ground upper-back-TOP LOC 4.A=fly.around CONJ' or similar, to align with the translation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '4.APass' for <ain>a=</ain> is inconsistent with the chapter's other gloss conventions (e.g., line 228 uses '1SG.S' and line 244 uses '4.S' for <ain>=an</ain>). The prose note at line 307 says '4.A=fly.around', which conflicts with the gloss. 'APass' suggests a passive reading that is not standard for Ainu <ain>a=</ain>.",
+    "quote": "g=\"hunting.ground upper.back top 4.APass=fly.around CONJ\"",
+    "suggestion": "Change gloss to '4.A' to match the prose note and consistent with field standards.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#019",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "306",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example uses 'so ka', but the text discusses 'so' as 'upper back/rear' and 'ka' as 'top/surface'. The gloss for 'so' in the table is 'upper back/rear of X', and for 'ka' is 'top/surface of X, above X'. The combination 'so ka' might imply 'upper back of the top' or 'top of the upper back'. The gloss 'over the top of the hunting ground's upper part' seems to interpret 'so' as modifying 'iwor' and 'ka' as modifying the resulting phrase.",
+    "quote": "iwor so ka a=ehóyupu wa",
+    "suggestion": "Clarify the semantic contribution of 'so' and 'ka' in this specific stacked construction to ensure the translation accurately reflects the interaction.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The acute accent on <i>ó</i> in <ain>ehóyupu</ain> is a diacritic not used anywhere else in the chapter for Ainu forms. This constitutes an orthographic inconsistency within the chapter.",
+    "quote": "m=\"iwor so ka a=ehóyupu wa\"",
+    "suggestion": "Remove the acute accent and use plain <ain>ehoyupu</ain> (or <ain>ehowyupu</ain> if the source spelling is known to be different).",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#040",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "93",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The affiliative form of <i>tum</i> is given as <i>tumi</i>, but the general pattern for consonant-final stems is echo vowel + i (e.g., <i>sam</i> → <i>sami</i>, <i>ka</i> → <i>kasi</i>). However, <i>tum</i> ends in a nasal, and the expected echo vowel might be <i>tumo</i> or <i>tumu</i> by analogy with other nasal-final stems (if any). The form <i>tumi</i> may not follow the stated pattern consistently.",
+    "quote": "<td><i lang=\"ain-Latn\">tumi</i> ‹speculative›</td>",
+    "suggestion": "Verify the expected echo vowel for nasal-final stems; if <i>tumi</i> is indeed irregular, add a note explaining the deviation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#034",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "42-44",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose claims <ain>so</ain> follows the consonant-final suffix pattern, but <ain>so</ain> is vowel-final (ends in -o). The table (line 137) gives the affiliative as '—' (unknown) rather than a speculated form, confirming that the pattern does not apply. This is an internal contradiction.",
+    "quote": "those of tum, etok, os, and so follow the regular consonant-final suffix pattern but are inferred rather than directly verified",
+    "suggestion": "Remove <ain>so</ain> from the list of consonant-final items, or note that vowel-final stems form the affiliative differently.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#046",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "432",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of '4th person' in parentheses is inconsistent with other entries that use '1SG', '2SG', etc. The person labels should be uniformly abbreviated or spelled out.",
+    "quote": "<i lang=\"ain-Latn\">a=or</i> (4th person)",
+    "suggestion": "Use '4SG' or '4th' consistently across the list.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#037",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "152, 158, 163, 400",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Repeated use of 'the read sources' and 'the read set' makes meta-commentary on the authors' data collection process rather than presenting facts directly. While not as explicit as a production note, it is a mild register leak.",
+    "quote": "the read sources / the read set",
+    "suggestion": "Consider replacing with 'sources consulted' or 'available documentation' in a less meta style, or omit the qualifier where it is not needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#035",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "210",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Referenced source is not given a proper citation key or included in the bibliography. The chapter otherwise uses <Ref> tags for all sources.",
+    "quote": "(Kayano's Saru dictionary)",
+    "suggestion": "Add a bib entry for Kayano's Saru dictionary and replace the inline reference with <Ref k=\"kayano_saru\" />.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#033",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "515",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that the hypothesis is 'not yet generalized across the full inventory' is followed by the epistemic tag ‹speculative›. This is slightly redundant, as the speculative nature implies it's not generalized. The tag itself conveys the uncertainty.",
+    "quote": "but not yet generalized across the full inventory ‹speculative›.",
+    "suggestion": "Remove the phrase 'but not yet generalized across the full inventory' as the ‹speculative› tag already indicates this.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#032",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "505",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva is provided with '(paren)', which suggests that only a parenthetical reference is available. However, the citation key 'bugaeva2022' is present, implying a full entry should exist in the bibliography. If it's truly only a parenthetical reference, it should be noted more explicitly or the citation key should be removed if it's not meant to be a full reference.",
+    "quote": "<Ref k=\"bugaeva2022\" paren />",
+    "suggestion": "Clarify the nature of the Bugaeva citation. If it's a full reference, ensure it's formatted correctly. If it's only a parenthetical mention, adjust accordingly.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#031",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "498",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'person affixes' and 'affiliative alternation'. While these are discussed in the chapter, the term 'person affixes' is not explicitly defined or consistently used. It might be clearer to refer to 'personal prefixes' or 'person marking'.",
+    "quote": "person affixes, affiliative alternation, incorporation",
+    "suggestion": "Use consistent terminology for person marking, e.g., 'personal prefixes' or 'person marking'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#030",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "474",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa is provided with page numbers. However, the text refers to 'them' which is plural, and the page numbers 241 and 280 are listed. It's unclear if both pages support the claim about treating them as a noun subclass throughout, or if one page supports one aspect and the other supports another.",
+    "quote": "Nakagawa <Ref k=\"nakagawa2024\" p=\"241, 280\" /> treats them as a noun subclass throughout.",
+    "suggestion": "Clarify which page number supports which aspect of the claim, or ensure both pages comprehensively support the entire statement.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#029",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "471",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The examples 'tekkotor' and 'tumpu' are given as evidence for noun status. In the table, 'tekkotor' is explained as 'tek' + 'kotor' (line 127), and 'tumpu' is explained as 'tum' + 'pu' (line 374). The glosses provided here are just the compound words themselves.",
+    "quote": "tekkotor, tumpu",
+    "suggestion": "Provide brief glosses for 'tekkotor' and 'tumpu' to clarify their meaning and the components involved, e.g., 'tekkotor (hand-surface) 'palm of the hand'', 'tumpu (interior-house) 'storehouse''.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#028",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "467",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The examples 'ku=sapa' and 'ku=tek' are given as parallels to relational nouns. However, 'sapa' and 'tek' are typically glossed as 'head' and 'hand' respectively, which are body parts. The text correctly identifies them as inalienably-possessed nouns. The issue is that the glosses provided here are incomplete.",
+    "quote": "ku=sapa 'my head', ku=tek 'my hand'",
+    "suggestion": "Provide full glosses for 'ku=sapa' and 'ku=tek', e.g., 'my head' and 'my hand'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#026",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "432",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'a=or' is 'the protagonist's/their general place'. While 'a=' is often glossed as 4th person, 'protagonist' implies a specific role. 'General place' is also a bit vague. It might be better to stick to a more direct gloss of the 'a=' prefix.",
+    "quote": "a=or (4th person) 'the protagonist's/their general place'",
+    "suggestion": "Gloss 'a=' as '4th person' and the phrase as 'their place' or 'the place of the fourth person'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#025",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "422",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note is good, but the phrasing 'ku=an is the first-person-singular intransitive subject form of the existential an' could be slightly more concise.",
+    "quote": "note=\"Constructed to illustrate direct first-person possession of the relational noun or. The prefix ku= marks the possessor on or; ku=an is the first-person-singular intransitive subject form of the existential an.\"",
+    "suggestion": "Rephrase to 'ku=an is the 1SG.S form of the existential verb 'an'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#024",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "421",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example is marked as 'constructed'. While this is useful information, it's presented as a standalone tag without any accompanying text explaining why it's constructed or what it illustrates.",
+    "quote": "constructed",
+    "suggestion": "Add a brief note explaining why the example is constructed, e.g., 'Constructed to illustrate direct first-person possession of the relational noun or.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#023",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "395",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The archaic directional suffix '-na' is analyzed as being attached to 'setur-na' and 'kotor-na'. However, the text states these are analyzed as 'setur-na' and 'kotor-na' respectively. It seems 'setur' is the base for 'setunna', not 'setur-na'. Similarly, 'kotor' is the base for 'kotunna'. The '-na' is the suffix.",
+    "quote": "setur-na and kotor-na",
+    "suggestion": "Clarify the analysis: 'setunna' is analyzed as 'setur' + '-na', and 'kotunna' as 'kotor' + '-na'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#022",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "371",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The toponym 'o-tum-nay' is proposed as 'head-interior-river'. The 'o-' prefix is typically 'place' or 'thing'. If 'tum' means 'interior', then 'o-tum-nay' would mean 'place of interior river' or 'river of the interior'. The gloss 'head-interior-river' implies 'o' means 'head', which is not standard for this prefix.",
+    "quote": "o-tum-nay",
+    "suggestion": "Clarify the meaning of the 'o-' prefix in this toponym or adjust the proposed etymology.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#021",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "330",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The literal translation 'this machine's-place at' for 'tan KIKAY or ta a=ewkoytak hi an yakun' is provided. While it captures the structure, it might not fully convey the idiomatic meaning of 'having a conversation with this machine'.",
+    "quote": "this machine's-place at",
+    "suggestion": "Consider a slightly more idiomatic literal translation if possible, or ensure the free translation adequately captures the meaning.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#017",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "280",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'the immediately following example' which is example 248. This is correct. However, the phrasing could be slightly more direct.",
+    "quote": "note=\"Nakagawa ex. 419. ka ta 'on top of / onto' marks the locative goal on the tree. Contrast cikuni kasi un 'toward the treetop' (allative) in the immediately following example (Nakagawa 2024: 299), where the affiliative kasi appears before the allative particle un.\"",
+    "suggestion": "Rephrase to 'Contrast cikuni kasi un 'toward the treetop' (allative) in example 248 (Nakagawa 2024: 299), where the affiliative kasi appears before the allative particle un.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#016",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "255",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'or un 'to the place of (i.e. toward) the sea')'. The parenthetical explanation is a bit wordy. Also, 'orowano' is not explained in relation to 'or un'.",
+    "quote": "note=\"or un 'to the place of (i.e. toward) the sea'; the instrumental postpositional adverb ani follows. The full clause is orowano atuy or un cip ani paye=an ranke p ne.\"",
+    "suggestion": "Simplify the parenthetical explanation and clarify the relationship between 'orowano' and 'or un'. For example: 'or un 'toward the sea'; the instrumental postpositional adverb ani follows. The full clause is orowano atuy or un cip ani paye=an ranke p ne, where 'orowano' is a variant or related form.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#015",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "245",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'the fused otta form only arises with ta'. This is correct, but the sentence structure could be slightly improved for flow.",
+    "quote": "note=\"or peka 'through the area of' uses the perlative particle; the fused otta form only arises with ta, not with peka or un.\"",
+    "suggestion": "Rephrase to 'The fused form 'otta' arises only with 'ta', not with 'peka' or 'un'.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#014",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "235",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'The case particle ta attaches to or in the 〈場所〉 slot.' This is slightly redundant as 'or' itself is in the 〈場所〉 slot. It could be phrased more concisely.",
+    "quote": "note=\"The relational noun or follows the host noun cise 'house'; the possessor ku= marks the host noun, not or itself. The case particle ta attaches to or in the 〈場所〉 slot.\"",
+    "suggestion": "Rephrase to 'The case particle ta attaches to or, which occupies the 〈場所〉 slot.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#013",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "206",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the community discussion is provided, but the specific username of the contributor is missing. The format usually includes the username.",
+    "quote": "A community discussion on <i lang=\"ain-Latn\">samampa</i> (nukopoli, <Ref k=\"aynucorporadiscord\" /> 2024-11-26) analyses it as <i lang=\"ain-Latn\">sam-am-pa</i> 'lying on the side'",
+    "suggestion": "Add the username of the contributor from the Discord discussion.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The source for the proposal about 'samama' is attributed to 'Kayano's Saru dictionary' but lacks a specific citation key or page number. This makes it difficult to verify.",
+    "quote": "and proposes that <i lang=\"ain-Latn\">samama</i> 'to place sideways' = <i lang=\"ain-Latn\">sam-ama</i> (Kayano's Saru dictionary) ‹proposed›.",
+    "suggestion": "Provide a full citation for Kayano's Saru dictionary.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#012",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "194",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'kasi' is used before the allative particle 'un'. However, the example in line 76 shows 'cikuni kasi un', where 'kasi' is indeed followed by 'un'. The gloss for 'un' is 'toward', which is consistent with an allative function. The issue is more about the clarity of the connection between the form and its function.",
+    "quote": "The first uses the concept (bare) form <i lang=\"ain-Latn\">ka</i> before the locative particle <i lang=\"ain-Latn\">ta</i>; the second uses the affiliative <i lang=\"ain-Latn\">kasi</i> before the allative <i lang=\"ain-Latn\">un</i>.",
+    "suggestion": "Ensure the gloss for 'un' is consistently 'allative' or similar, and that the connection between 'kasi' and 'un' is clearly explained as an example of the affiliative form preceding the allative particle.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#011",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "158",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The noun 'so' is discussed here. In the table, its affiliative form is marked with a dash (line 138), suggesting it's not attested. However, the text later discusses its use in a construction ('iwor so ka'). This implies it is used, and thus likely has an affiliative form.",
+    "quote": "so",
+    "suggestion": "Reconcile the information about the affiliative form of 'so' between the table and the prose.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#010",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "152",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The noun 'kotor' is discussed here. In the table, its affiliative form is listed as 'kotoro' (line 123), but the example in line 126 uses 'tek kotor' without an apparent affiliative suffix. This suggests inconsistency in how 'kotor' is treated morphologically.",
+    "quote": "kotor",
+    "suggestion": "Clarify the morphophonological behavior of 'kotor' regarding its affiliative form.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#008",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The affiliative form for 'soy' is given as 'soyo'. However, the example in line 293 uses 'soy ta', implying the concept form is used directly before the case particle. This might indicate a different morphophonological rule or that 'soy' is not always inflected this way.",
+    "quote": "soyo ‹speculative›",
+    "suggestion": "Clarify the affiliative form for 'soy' and its usage, especially in light of the example in line 293.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#007",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "123",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The affiliative form for 'kotor' is given as 'kotoro'. However, the example in line 126 shows 'tek kotor', implying 'kotor' is used directly without an affiliative suffix. This might indicate a different morphophonological rule or that 'kotor' is not always inflected this way.",
+    "quote": "kotoro ‹speculative›",
+    "suggestion": "Clarify the affiliative form for 'kotor' and its usage, especially in light of the example in line 126.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#006",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "117",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The affiliative form for 'os' is given as 'osi'. This matches the later mention of 'os(i)' (line 382), but the concept form in the table is 'os' (line 116). The 'i' is missing from the concept form.",
+    "quote": "osi ‹speculative›",
+    "suggestion": "Ensure consistency between the concept form 'os' and the affiliative form 'osi', or update the concept form to 'os(i)'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#005",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "111",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The affiliative form for 'etok' is given as 'etoki'. However, 'etok' was identified as a typo for 'enka' in line 42 and line 80. If 'enka' is the correct concept form, then 'etoki' is incorrect.",
+    "quote": "etoki ‹speculative›",
+    "suggestion": "Correct 'etok' to 'enka' and verify the affiliative form for 'enka'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#004",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "93",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The affiliative form for 'tum' is given as 'tumi'. However, the general pattern for consonant-final stems (as mentioned in line 44, though potentially misstated) would suggest a different suffix. The gloss 'interior/amid' also seems to fit 'tum' better than 'tumi'.",
+    "quote": "tumi ‹speculative›",
+    "suggestion": "Verify the affiliative form for 'tum'. If 'tumi' is correct, the description in line 44 needs clarification.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#003",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "80",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The concept form 'enka' is listed in the table, but it was previously listed as 'etok' in line 42. This is a discrepancy.",
+    "quote": "enka",
+    "suggestion": "Ensure consistency between line 42 and line 80.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#002",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "42",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'etok' is listed here, but it appears as 'enka' in the table (line 80). This is likely a typo.",
+    "quote": "tum, etok, os, and so",
+    "suggestion": "Change 'etok' to 'enka'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'os' is listed here, but it appears as 'os(i)' in the table (line 116) and in later discussion (line 382). The 'i' is missing here.",
+    "quote": "tum, etok, os, and so",
+    "suggestion": "Change 'os' to 'os(i)'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'so' is listed here, but it appears as 'soy' in the table (line 131) and in later discussion (line 308). This is likely a typo.",
+    "quote": "tum, etok, os, and so",
+    "suggestion": "Change 'so' to 'soy'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'consonant-final suffix pattern' for deriving affiliative forms. However, the examples in the table show vowel-final suffixes (e.g., 'oro', 'kasi', 'sami'). This might be a misunderstanding of the pattern or a typo.",
+    "quote": "consonant-final suffix pattern",
+    "suggestion": "Clarify or correct the description of the suffix pattern.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#001",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "8",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'or' is 'place/locus', but the text later states that 'or' has bleached to function as a general locative placeholder (lines 319-325). The gloss could be updated to reflect this broader meaning or a note added.",
+    "quote": "<A w=\"or\" gl=\"place/locus\" />",
+    "suggestion": "Update gloss to 'place/locus/general locative placeholder' or add a note.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#045",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "400",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The tag ‹speculative› is applied to a negative claim about source coverage ('no grammar treats it'), which risks epistemic inflation: absence of evidence is not evidence of absence. The tag may overstate the certainty of the claim.",
+    "quote": "no primary-source grammar in the read set treats it as such ‹speculative›",
+    "suggestion": "Rephrase to clarify uncertainty, e.g., 'its status as a fossil form remains ‹speculative› due to lack of attestation in primary grammars'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#044",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "372",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The word 'proposed' appears in running text, which may reflect a pipeline comment or editorial note rather than integrated prose. It is not enclosed in a note or tagged as such.",
+    "quote": "proposed: <i lang=\"ain-Latn\">o-tum-nay</i>",
+    "suggestion": "Either integrate as 'It has been proposed that...' or move to a note/citation.",
+    "confidence": 0.85
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹proposed› appears in the main text without being enclosed in a note or citation context, making it appear as if it's part of the narrative rather than a meta-commentary.",
+    "quote": "‹proposed›",
+    "suggestion": "Ensure epistemic tags are consistently formatted and placed — preferably after the relevant claim and clearly marked.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#043",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "311",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation format is inconsistent: <Ref k=\"ilcaa1976\" paren /> is used with a parenthetical note, but the full source details are given in plain text. This may be a pipeline leak or incomplete rendering.",
+    "quote": "(<Ref k=\"ilcaa1976\" paren />, Kawagami Matsuko, uwepeker 民話8, aa-irc/006 line 52)",
+    "suggestion": "Use consistent citation markup; either fully integrate with <Ref> or move all details to a note with proper formatting.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#042",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "202",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› is attached after the citation, but the citation itself (Nakagawa 2024:297) should be the source of the claim. If Nakagawa does not explicitly label the variation as corpus-suggested, the tag may represent an overstatement of evidential support.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"297\" /> ‹corpus-suggested›",
+    "suggestion": "Ensure alignment between citation and epistemic tag; if Nakagawa does not make the claim about corpus support, consider revising the tag or citing a corpus-based source.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#041",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "159",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'over the top of' suggests a single relational noun, but the construction uses two: <i>so</i> ('upper back') and <i>ka</i> ('top'). The free translation should reflect the layered meaning more precisely, e.g., 'over the upper-back part of the hunting ground, on top of it'.",
+    "quote": "<i lang=\"ain-Latn\">iwor so ka</i> 'over the top of the hunting ground'",
+    "suggestion": "Revise translation to clarify stacking: 'over the upper-back area on top of the hunting ground' or similar.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#039",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "47",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The page locator uses 's.v.' (sub verbo), which is non-standard in this citation style; other citations use numerical pages or ranges. This inconsistency may affect pipeline processing.",
+    "quote": "<Ref k=\"tamura1996\" p=\"s.v. or, ka, sam, tum, corpok, soy, kotor\" />",
+    "suggestion": "Standardize to a uniform citation format, e.g., use 'entry' or remove 's.v.' and list entries plainly if allowed by style.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#038",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "12",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation <Ref k=\"sato2021\" /> lacks a page number, while other citations in the same paragraph include specific pages. This may reduce precision, especially since Sato 2021 is cited multiple times with different locators elsewhere.",
+    "quote": "<Ref k=\"sato2021\" />",
+    "suggestion": "Add page numbers to <Ref k=\"sato2021\" /> if available, or confirm that the general citation is intentional.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "relational-and-spatial-nouns~p1#036",
+  "chapter": "relational-and-spatial-nouns",
+  "lines": "45-46",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This comment addresses the book's production process rather than the reader, indicating a future task for the authors. It is a pipeline register leak.",
+    "quote": "pending a dedicated pass through Tamura's dictionary and the Nakagawa corpus texts",
+    "suggestion": "Rephrase as a direct statement about the current state of knowledge, e.g., 'These have not been directly verified in Tamura's dictionary or the Nakagawa corpus, so they should be treated as speculative.'",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

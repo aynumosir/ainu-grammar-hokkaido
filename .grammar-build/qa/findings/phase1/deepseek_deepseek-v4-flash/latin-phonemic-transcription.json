@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "31",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The inventory comprises five vowels and twelve consonants",
+  "issue": "The text claims twelve consonants, but the following table lists only eleven consonant graphemes (p, t, k, c, s, m, n, r, w, y, h). No twelfth consonant grapheme is shown.",
+  "suggestion": "Either correct the count to eleven or add the missing grapheme/explanation (e.g. include glottal stop if intended).",
+  "confidence": 0.95,
+  "chapter": "latin-phonemic-transcription",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "193",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Kirikae (1997) ‹asserted›",
+  "issue": "The epistemic tag ‹asserted› is not one of the standard grades defined for this grammar (consensus, contested, corpus-confirmed, corpus-suggested, speculative, original-needs-review).",
+  "suggestion": "Replace with an appropriate standard tag or remove the tag if it is not an evidence-grade claim.",
+  "confidence": 0.9,
+  "chapter": "latin-phonemic-transcription",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "61, 94-101",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "high front; conditions the palatalization of /s/ and /c/",
+  "issue": "The /i/ entry states that it conditions palatalization of /c/, but the /c/ entry does not mention any allophonic variation before /i/, leaving a gap in the description.",
+  "suggestion": "Either add a note to the /c/ entry clarifying that it is already palato-alveolar and does not further change, or revise the /i/ entry to avoid implying a change for /c/.",
+  "confidence": 0.5,
+  "chapter": "latin-phonemic-transcription",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "314, 417",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Line 314: \"u-epeker\"; Line 417: \"bare (uepeker)\"",
+  "issue": "The prose writes the hiatus example with a morpheme boundary hyphen (u-epeker), but the table omits the hyphen (uepeker). This inconsistency may confuse readers about whether the hyphen is part of the orthographic convention.",
+  "suggestion": "Ensure consistent representation: either use hyphens in both contexts or omit them in both when focusing on hiatus representation.",
+  "confidence": 0.6,
+  "chapter": "latin-phonemic-transcription",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "137, 147",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "see §<a href=\"#glide-notation\">glide-notation</a>",
+  "issue": "Cross-references in table notes use HTML anchor tags, while the rest of the chapter uses <Xr> components for cross-references. This is a formatting inconsistency within the chapter.",
+  "suggestion": "Replace anchor tags with <Xr ch=\"glide-notation\" /> for consistency.",
+  "confidence": 0.4,
+  "chapter": "latin-phonemic-transcription",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

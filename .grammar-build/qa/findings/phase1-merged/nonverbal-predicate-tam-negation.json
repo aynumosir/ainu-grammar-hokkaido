@@ -1,0 +1,446 @@
+[
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#002",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "118-120",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim that person-marking loss is 'not explained by any read primary source' is contradicted by the citation immediately following it, which attributes the observation to a community member and labels it 'speculative'. This suggests that the primary sources *do not* explain it, which is what the community source is confirming. The phrasing is slightly confusing.",
+    "quote": "in the <i lang=\"ain-Latn\">ka somo ne</i> frame, the copula frequently carries no overt subject affix; this person-marking loss in the negated copular frame is noted but not explained by any read primary source ‹speculative› (nukopoli, aynu-corpora Discord 2023; <Ref k=\"aynucorporadiscord\" />).",
+    "suggestion": "Rephrase to clarify that the primary sources do not explain this phenomenon, and the community source confirms this lack of explanation and labels it speculative. For example: 'this person-marking loss in the negated copular frame is noted but not explained by any read primary source; the observation is speculative (nukopoli, aynu-corpora Discord 2023; <Ref k=\"aynucorporadiscord\" />).'"
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "An epistemic tag ‹speculative› is attached to a statement attributed solely to a Discord source. The note says 'not explained by any read primary source', but the tag implies the claim itself is speculative, not the explanation. Moreover, citing Discord for the existence of an observation is fine, but labeling it speculative about the claim is misleading: the observation itself (person-marking loss) is attested, the speculation is about why. The tag should qualify the explanation, not the observation.",
+    "quote": "this person-marking loss in the negated copular frame is noted but not explained by any read primary source ‹speculative› (nukopoli, aynu-corpora Discord 2023; <Ref k=\"aynucorporadiscord\" />).",
+    "suggestion": "Rephrase: '...is observed (nukopoli, aynu-corpora Discord 2023; <Ref k=\"aynucorporadiscord\" />), though the motivation remains ‹speculative›.'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#014",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "251",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The plural form is given as 'oka / okay' in the table, but earlier in the chapter (lines 11, 57, 161, 230) it appears as 'oka(y)' with parentheses. The table uses a slash which is inconsistent with the parenthesized notation used elsewhere. This is a minor formatting drift.",
+    "quote": "<td><i lang=\"ain-Latn\">oka</i> / <i lang=\"ain-Latn\">okay</i></td>",
+    "suggestion": "Unify to 'oka(y)' throughout, including the table.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The plural form of the existential is given as both <i lang=\"ain-Latn\">oka</i> and <i lang=\"ain-Latn\">okay</i>, but elsewhere (e.g., line 11) it is consistently <i lang=\"ain-Latn\">oka(y)</i>. The variation between <i lang=\"ain-Latn\">oka</i> and <i lang=\"ain-Latn\">okay</i> should be standardized to match the dialectal notation convention used in the chapter.",
+    "quote": "<td><i lang=\"ain-Latn\">an</i></td> <td><i lang=\"ain-Latn\">oka</i> / <i lang=\"ain-Latn\">okay</i></td> <td><i lang=\"ain-Latn\">isam</i></td>",
+    "suggestion": "Use <i lang=\"ain-Latn\">oka(y)</i> consistently throughout, as in line 11, to reflect dialectal variation without orthographic drift.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#006",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "264-265",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for <Ref k=\"dalcorso2025neg\" /> is given as 'p=\"41–42\" paren'. The 'paren' attribute is typically used to indicate that the citation should be parenthetical. However, the text immediately following this citation is 'and by <Ref k=\"ijas2023\" /> (lesson 9)', which is not parenthetical. This suggests that the 'paren' attribute might be misplaced or that the intention was for the entire phrase to be parenthetical, which is not reflected in the markup.",
+    "quote": "The etymological decomposition of <i lang=\"ain-Latn\">isam</i> as <i lang=\"ain-Latn\">i-</i> (antipassive) + root <i lang=\"ain-Latn\">*sam</i> is ‹speculative› and is proposed independently by <Ref k=\"dalcorso2025neg\" p=\"41–42\" paren /> and by <Ref k=\"ijas2023\" /> (lesson 9);",
+    "suggestion": "Remove the 'paren' attribute from the <Ref k=\"dalcorso2025neg\" /> citation if the intention is not for it to be parenthetical, or adjust the surrounding text and markup to ensure correct parenthetical citation if that was the intent."
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The source for this claim is not cited. The chapter provides numerous inline citations for other claims but here there is no Ref. The Matsumae wordlist is a known source but should be cited.",
+    "quote": "the form <i lang=\"ain-Latn\">isam</i> 'ない' is attested in the 1630 <em>Matsumae no koto</em> wordlist",
+    "suggestion": "Add a citation, e.g., <Ref k=\"matsumae1630\" /> or equivalent.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference to <Xr ch=\"negation-existential-possessive-isam\" /> leads to a non-existent chapter (slug not defined in this grammar). The correct chapter name for 'negation of existential and possessive' is not clearly defined; the phrase 'negation-existential-possessive-isam' is not used elsewhere in the document. The cross-ref might be broken or intended for a future chapter but is left as a placeholder.",
+    "quote": "The etymological decomposition of <i lang=\"ain-Latn\">isam</i> as <i lang=\"ain-Latn\">i-</i> (antipassive) + root <i lang=\"ain-Latn\">*sam</i> is ‹speculative› and is proposed independently by <Ref k=\"dalcorso2025neg\" p=\"41–42\" paren /> and by <Ref k=\"ijas2023\" /> (lesson 9); see <Xr ch=\"negation-existential-possessive-isam\" /> for fuller discussion.",
+    "suggestion": "Replace with a valid chapter slug (e.g., 'existential-negation' if such a chapter exists; otherwise note as placeholder).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#019",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "334-341",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss `2PL.A=APPL-worry` uses `.A` for what should be a patient or experiencer argument. In Ainu, applicatives typically promote oblique arguments, and the person marking on `sirkirap` (worry) should reflect the subject of the verb, not an agentive role. Furthermore, `APPL-worry` suggests a derived form, but `sirkirap` is a root verb. The gloss is misleading.",
+    "quote": "<Ex m=\"nep eci=e-sirkirap ka somo ki ru-we ne na\" g=\"something 2PL.A=APPL-worry even NEG do track-POSS COP FIN\" tr=\"You will not be troubled by anything.\" />",
+    "suggestion": "Revise gloss to `2PL=worried` or `2PL=feel-worry`, and reconsider the use of `APPL` unless independently justified. Also, `track-POSS` for `ru-we` is non-standard; `track` is not a known gloss for `ru`; it should be `say` or `report`.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#017",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "144-151",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss `1SG.A=COP` suggests an ergative alignment (A = agent), but the copula in Ainu typically takes subject agreement in the absolutive or nominative set. The use of `.A` here is inconsistent with standard Ainu person-marking conventions and may reflect a misanalysis. The translation implies a first-person subject, but `.A` is not the expected case for the subject of a copular clause.",
+    "quote": "<Ex m=\"pon cápe ku=ne a kusu\" g=\"small cat 1SG.A=COP PFV PURP\" tr=\"Because I was a small cat —\" />",
+    "suggestion": "Revise the gloss to `1SG.NOM=COP` or simply `1SG=COP` if the alignment is not ergative, to align with standard descriptions of Ainu person marking.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#010",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "163-164",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is used for a claim sourced from a single Discord user. 'Contested' implies the claim is disputed in the literature, but here it's merely a single community observation. The tag is too strong for an anecdotal attribution.",
+    "quote": "a community member notes that ~ne an corresponds to Japanese 〜になる 'become', while ~ne kor is not idiomatic ‹contested› (thegodofneet, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />).",
+    "suggestion": "Replace ‹contested› with ‹speculative› or remove the tag entirely; the Discord citation already qualifies it as informal.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#021",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "160",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The slash placement creates ambiguity: it appears to attach to `an` only, but the intent is likely to present two variants: `ne an` and `ne oka=an`. The current formatting suggests `an / oka=an` as alternatives for the existential, but `oka=an` is a plural form, not a variant of `an`.",
+    "quote": "<i lang=\"ain-Latn\">[complement] ne</i> + existential <i lang=\"ain-Latn\">an</i> /<i lang=\"ain-Latn\">oka=an</i>",
+    "suggestion": "Rewrite as `<i lang=\"ain-Latn\">[complement] ne + an</i> or <i lang=\"ain-Latn\">[complement] ne + oka=an</i>` for clarity.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#015",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "354",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The cross-reference to the chapter 'ruwe-ne-inferential' appears twice (lines 133 and 354). The chapter slug may be correct, but the consistency of referencing is fine. No error, but note the repetition.",
+    "quote": "<Xr ch=\"ruwe-ne-inferential\" />",
+    "suggestion": "No change needed.",
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#007",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "307",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the '4th-person S suffix =an marks the narrative first person'. This is a contradiction in terms. A 4th-person suffix should mark a 4th person, not a 1st person. It's possible that '4th-person' is a typo and it should be '1st-person', or that 'narrative first person' is a specific grammatical category that is being referred to as '4th-person' in this context. Without further clarification, this statement is confusing.",
+    "quote": "note=\"Nakagawa ex. 15. The post-verbal ka somo ki no frame negates the property verb merayke 'feel cold'. The 4th-person S suffix =an marks the narrative first person; contrast the 0-place meteorological verb mean 'it is cold (weather)', which has no subject index.\"",
+    "suggestion": "Clarify the meaning of '4th-person S suffix =an' and its relation to 'narrative first person'. If it is indeed a 1st-person suffix, correct the '4th-person' designation. If '4th-person' has a specific technical meaning in this grammar, it should be explained or cross-referenced."
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#005",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "205-207",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'affirmative reply' lists '<i lang=\"ain-Latn\">NMLZ + un</i>' as the frame and provides the example <i lang=\"ain-Latn\">ruwe un</i>. The example <i lang=\"ain-Latn\">ruwe un</i> contains <i lang=\"ain-Latn\">ruwe</i>, which is a formal noun, and <i lang=\"ain-Latn\">un</i>. The frame description '<i lang=\"ain-Latn\">NMLZ + un</i>' implies that <i lang=\"ain-Latn\">un</i> is the marker for affirmative replies, possibly following a nominalized complement. However, the prose in section 'TAM on copular predicates: the perfect and the ne/an clause-edge alternation' (lines 171-177) discusses the <i lang=\"ain-Latn\">ne</i> / <i lang=\"ain-Latn\">an</i> alternation at the right clause edge for illocutionary distinctions, with <i lang=\"ain-Latn\">ne</i> closing declaratives and <i lang=\"ain-Latn\">an</i> closing content questions. It's unclear how <i lang=\"ain-Latn\">un</i> fits into this system as an affirmative reply marker, and whether it's related to <i lang=\"ain-Latn\">an</i> or <i lang=\"ain-Latn\">ne</i>.",
+    "quote": "<td><i lang=\"ain-Latn\">NMLZ + un</i></td>\n<td>affirmative reply</td>\n<td><i lang=\"ain-Latn\">ruwe un</i></td>",
+    "suggestion": "Clarify the function of <i lang=\"ain-Latn\">un</i> as an affirmative reply marker and its relationship to the other clause-edge elements (<i lang=\"ain-Latn\">ne</i>, <i lang=\"ain-Latn\">an</i>) discussed in the chapter. Explain if <i lang=\"ain-Latn\">un</i> is a distinct particle or a form of <i lang=\"ain-Latn\">an</i> or <i lang=\"ain-Latn\">ne</i> used in this context."
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#004",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "195-197",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'content question' lists '<i lang=\"ain-Latn\">NMLZ + an?</i>' as the frame and provides an example <i lang=\"ain-Latn\">hemanta ruwe an?</i>. However, the example sentence contains <i lang=\"ain-Latn\">ruwe</i>, which is a formal noun, and <i lang=\"ain-Latn\">an</i>. The frame description '<i lang=\"ain-Latn\">NMLZ + an?</i>' implies that <i lang=\"ain-Latn\">an</i> itself is the marker for content questions, possibly following a nominalized complement. The example <i lang=\"ain-Latn\">hemanta ruwe an?</i> suggests that <i lang=\"ain-Latn\">an</i> might be functioning as a question particle or copula in this context, and that <i lang=\"ain-Latn\">ruwe</i> is the complement. The question mark after <i lang=\"ain-Latn\">an</i> in the frame description is also ambiguous. It's unclear if <i lang=\"ain-Latn\">an</i> is always present or if it's optional, or if the question mark indicates something else.",
+    "quote": "<td><i lang=\"ain-Latn\">NMLZ + an?</i></td>\n<td>content question (with question word)</td>\n<td><i lang=\"ain-Latn\">hemanta ruwe an?</i> 'why (is it that …)?'</td>",
+    "suggestion": "Clarify the role of <i lang=\"ain-Latn\">an</i> in content questions. If <i lang=\"ain-Latn\">an</i> is the predicate in this construction, the frame should reflect that. If it's a question particle, its position and interaction with other elements need to be clearer. The question mark in '<i lang=\"ain-Latn\">NMLZ + an?</i>' should be explained or removed if it's not standard notation."
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#003",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "162-163",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that <i lang=\"ain-Latn\">~ne kor</i> is 'not idiomatic' and marks this as 'contested'. However, the preceding sentence (lines 154-158) states that <i lang=\"ain-Latn\">ne</i> covers both 'be X' and 'become X' without dedicated morphology, and that the sequence <i lang=\"ain-Latn\">[complement] ne</i> + existential <i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">oka=an</i> makes the inchoative reading salient. The claim that <i lang=\"ain-Latn\">~ne kor</i> is not idiomatic seems to contradict the general statement about <i lang=\"ain-Latn\">ne</i>'s ability to express 'become X' and the role of the existential <i lang=\"ain-Latn\">an</i> in making the inchoative reading salient. It's unclear how <i lang=\"ain-Latn\">~ne kor</i> specifically relates to this inchoative meaning or why it would be considered non-idiomatic in contrast to <i lang=\"ain-Latn\">~ne an</i>.",
+    "quote": "that <i lang=\"ain-Latn\">~ne an</i> corresponds to Japanese 〜になる 'become', while <i lang=\"ain-Latn\">~ne kor</i> is not idiomatic ‹contested› (thegodofneet, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />).",
+    "suggestion": "Clarify the relationship between <i lang=\"ain-Latn\">ne</i>, <i lang=\"ain-Latn\">an</i>, and <i lang=\"ain-Latn\">kor</i> in expressing inchoative meanings, and explain why <i lang=\"ain-Latn\">~ne kor</i> is considered not idiomatic or contested in this context. If <i lang=\"ain-Latn\">kor</i> is a possessive verb, its use with <i lang=\"ain-Latn\">ne</i> might be expected to yield a different meaning than inchoation."
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#001",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "59",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for existential negation lists both 'suppletive <i lang=\"ain-Latn\">isam</i>' and 'alternatively <i lang=\"ain-Latn\">somo an</i>'. The prose immediately preceding this table (lines 32-36) states that the existential draws on the suppletive lexical negative <i lang=\"ain-Latn\">isam</i>, and that possessive <A w=\"kor\" gl=\"have\" /> similarly has the suppletive negative <A w=\"sak\" gl=\"lack\" />. The prose in section 'The existential an/oka(y) and its suppletive negative isam' (lines 228-289) also focuses on <i lang=\"ain-Latn\">isam</i> as the primary negation, only mentioning <i lang=\"ain-Latn\">somo an</i> as an alternative later. This suggests that <i lang=\"ain-Latn\">somo an</i> might be a secondary or less common strategy, and its inclusion as an equal alternative in the table might be misleading.",
+    "quote": "suppletive <i lang=\"ain-Latn\">isam</i>; alternatively <i lang=\"ain-Latn\">somo an</i>",
+    "suggestion": "Consider rephrasing the table entry to indicate that <i lang=\"ain-Latn\">isam</i> is the primary suppletive negative, and <i lang=\"ain-Latn\">somo an</i> is an alternative strategy. For example: 'suppletive <i lang=\"ain-Latn\">isam</i>; alternative: <i lang=\"ain-Latn\">somo an</i>'."
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#020",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "337",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation key `dalcorso2018` is not listed in the references cited elsewhere in the chapter (e.g., lines 265–266 cite `dalcorso2025neg`). This may be a typo or an unverified source. If `dalcorso2018` exists, it should be consistently referenced; if not, the citation is invalid.",
+    "quote": "cite=\"dalcorso2018:145\"",
+    "suggestion": "Verify the existence of `dalcorso2018` and either correct the key or provide the correct citation. If it's a typo, change to `dalcorso2025neg` or remove if unsupported.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#018",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "272",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme segmentation shows `k=an`, but the gloss is `1SG.S=exist`. The prefix `k-` is not the first person singular; `k-` is typically second person singular. The first person singular subject is usually marked by `ku-` or `k-` only in specific contexts. This appears to be an error in either segmentation or gloss.",
+    "quote": "m=\"nisatta somo k=an\"",
+    "suggestion": "Verify the segmentation and gloss: if the subject is first person, it should be `ku=an`; if second person, adjust the translation accordingly.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#016",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "109",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The glossed pattern <i lang=\"ain-Latn\">V ka somo ki</i> implies a post-verbal negation frame, but in the example <i lang=\"ain-Latn\">merayke=an ka somo ki</i> (line 301), the verb appears before <i lang=\"ain-Latn\">ka somo ki</i>, suggesting the structure is <i lang=\"ain-Latn\">V ka somo ki</i>, not *<i lang=\"ain-Latn\">ne ka somo ki</i>. The ungrammaticality claim about <i lang=\"ain-Latn\">ne ka somo ki</i> may be correct, but the comparison to <i lang=\"ain-Latn\">V ka somo ki</i> is misleading if <i lang=\"ain-Latn\">ne</i> cannot participate in that frame at all.",
+    "quote": "The alternative frame <i lang=\"ain-Latn\">*ne ka somo ki</i> — negating <i lang=\"ain-Latn\">ne</i> via the standard verbal pattern <i lang=\"ain-Latn\">V ka somo ki</i>",
+    "suggestion": "Clarify that <i lang=\"ain-Latn\">ka somo ki</i> attaches to verbs but not to <i lang=\"ain-Latn\">ne</i>, and that the pattern is not simply <i lang=\"ain-Latn\">V ka somo ki</i> but excludes copular <i lang=\"ain-Latn\">ne</i> as a possible host.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#013",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "192",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example in the table gives only the Ainu phrase and an English translation, but no morphemic gloss. This is a table cell, not an Ex element, so it may be acceptable, but the translation 'it is said' corresponds to a=ye hawe (formally 'someone says') plus ne (COP). The translation 'it is said (that …)' is a common rendering but does not reflect the literal copula; the chapter elsewhere uses consistent interlinear glossing. The inconsistency is minor but the lack of gloss in the table may confuse readers comparing with the text's normal Ex format.",
+    "quote": "<i lang=\"ain-Latn\">a=ye hawe ne</i> 'it is said (that …)'",
+    "suggestion": "Either add a gloss below the table or leave as is (tables often have only translations). No strong issue.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#012",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "315",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example *pirka ne is cited with the gloss 'be-good COP', but the main text of the chapter (lines 9-10) states that the copula ne is 'Ainu copula ne'. In the property-verb section, the point is that property verbs are verbs themselves and do not require a copula. The translation 'be-good COP' is ambiguous: 'be good' is the property verb; the asterisk indicates the error. But the example *pirka ne literally means 'good COP', but the gloss 'be-good COP' implies the property verb is already a predicate; the error is the copula after it. The inconsistency is in the gloss: 'be-good' is a single gloss for pirka, but ne is glossed as 'COP', which is fine. However, the note says 'be-good COP' which is not a gloss but a translation; the example line within the prose has no Ex tag, so it's just inline. No actual glitch, but the wording is slightly sloppy: 'be-good COP' is not a standard way to present a starred form.",
+    "quote": "The error of inserting the copula after a property word — *pirka ne 'be-good COP' — is flagged by Nakagawa as the characteristic learner mistake",
+    "suggestion": "Present the example as *pirka ne (with interlinear gloss) or rephrase to 'the copula ne after a property verb, as in *pirka ne'. The current inline is acceptable but could be clarified.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#011",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "218-219",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'confirmed against the primary source' is ambiguous and possibly inflated: it's not clear that the community member checked the primary source or simply confirmed the grammar fact. Also the citation to Discord for a 'confirmation' is methodologically weak; the claim itself (the ordering constraint) is already supported by Nakagawa 2024. The statement should be clearer or the Discord citation omitted.",
+    "quote": "confirmed against the primary source by a community member (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />).",
+    "suggestion": "Rephrase: '—a pattern consistent with Nakagawa's description (p. 393) and affirmed by a community member (nukopoli, aynu-corpora Discord 2024)'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#009",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "80",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹consensus› is placed on a general typological claim citing a single source (Miestamo 2005). A single source does not establish 'consensus' unless the source itself summarizes consensus; the tag is inflated. Also the claim is not a primary-consensus fact about Ainu but a typological statement.",
+    "quote": "The recourse to dedicated negative lexemes for the existential and possessive types, alongside a frame strategy for the copula, is consistent with the cross-linguistic pattern whereby existential and possessive predicates frequently recruit non-standard negation <Ref k=\"miestamo2005\" paren /> ‹consensus›.",
+    "suggestion": "Replace ‹consensus› with ‹corpus-confirmed› or drop the tag; or rephrase to 'consistent with cross-linguistic patterns (Miestamo 2005)' without a tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nonverbal-predicate-tam-negation~p1#008",
+  "chapter": "nonverbal-predicate-tam-negation",
+  "lines": "9, 14, 18, 20-21, 23, 33-34, etc.",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The overview says 'how the inchoative reading arises without any dedicated morphology' but the chapter provides no dedicated morphology explanation; instead it says the inchoative reading 'is read off context without dedicated morphology' (line 155). The wording in the overview is redundant and self-contradictory within the chapter.",
+    "quote": "\"morphology\" in the overview description of the interface between predicate types and TAM/negation",
+    "suggestion": "Remove 'without any dedicated morphology' from line 22 or adjust to avoid implying a non-existent dedication.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

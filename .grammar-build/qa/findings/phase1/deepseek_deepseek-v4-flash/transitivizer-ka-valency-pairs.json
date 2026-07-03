@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "19-20",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The literature has not settled its classification <Ref k=\"bugaeva2014\" p=\"129–130, 143\" />; <Ref k=\"kobayashi2015\" p=\"33\" /> ‹contested›.",
+  "issue": "The epistemic tag ‹contested› is attached to a citation that supports the claim (Kobayashi 2015:33 is cited as evidence for the debate), but the tag implies the claim itself is contested, not that the source is contested. The tag should be on the claim, not the citation.",
+  "suggestion": "Move ‹contested› to before the citation, e.g., '...its classification ‹contested› <Ref k=\"bugaeva2014\" ... />; <Ref k=\"kobayashi2015\" ... />.'",
+  "confidence": 0.8,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "124-126",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Bugaeva's 387-verb Saru sample counts 111 verbs with -V and 9 with -ke, classifying all as direct causatives on semantic grounds <Ref k=\"bugaeva2014\" p=\"130, 143\" />.",
+  "issue": "The count of 111 + 9 = 120 verbs, but the sample is said to be 387 verbs. The remaining 267 verbs are unaccounted for (presumably other causative types like -re/-te/-e, but the sentence implies the sample is only about -V and -ke). Later in the debate section (line 284) the same source is cited with counts 111 (-V), 9 (-ke), 38 (-ka) = 158, still not 387. The 387-verb sample likely includes all verb types, but the prose here implies the sample is only about -V and -ke.",
+  "suggestion": "Clarify: 'Bugaeva's 387-verb Saru sample includes 111 verbs with -V and 9 with -ke...' or specify that the 387 is the total sample size, not just these two types.",
+  "confidence": 0.7,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "250-258",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "Community observation identifies a productive 'treat-verb' pattern within the third type: forms such as nimaw-e-kar 'treat a wound with medicinal bark', osoro-kar 'wipe', and sikaye-kar 'hammer in a peg' each incorporate an instrument or body-part noun into kar 'do' <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2024). These are incorporated-object constructions and belong to the account in <Xr ch=\"noun-incorporation-object\" />, not to the transitivizer suffix ‹corpus-suggested›.",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to the claim that these are incorporated-object constructions, but the only support is a Discord message from a community member. A single Discord attribution does not constitute corpus evidence; the tag should be ‹speculative› or the claim should be attributed to the community source without a corpus tag.",
+  "suggestion": "Change ‹corpus-suggested› to ‹speculative› or remove the tag and simply attribute to the Discord source.",
+  "confidence": 0.9,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "319-324",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "Ijäs's Lesson 9 states that -re 'turns intransitive verbs into transitive verbs', which captures the right intuition for the valency-increasing set as a whole but supplies no allomorphy and does not distinguish -ka, -ke, or the lexical forming-suffix pairs as separate sub-types <Ref k=\"ijas2023\" /> ‹consensus on the intuition; allomorphy detail absent›.",
+  "issue": "The epistemic tag ‹consensus on the intuition; allomorphy detail absent› is not a standard grade. It mixes a claim about consensus (which is not supported by any citation) with a meta-commentary about the source. This is a register leak and citation-hygiene issue.",
+  "suggestion": "Remove the tag and simply state the fact about Ijäs's lesson, or if consensus is claimed, provide a citation for that consensus.",
+  "confidence": 0.9,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "336",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2026) ‹community-proposed›.",
+  "issue": "The tag ‹community-proposed› is not a standard epistemic grade. It appears to be a non-standard tag used for community-sourced claims. This should be either ‹speculative› or a standard tag.",
+  "suggestion": "Replace ‹community-proposed› with ‹speculative› or define this tag in the front matter if it is intentional.",
+  "confidence": 0.8,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "343",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord 2026) ‹corpus-suggested›.",
+  "issue": "The tag ‹corpus-suggested› is applied to a claim supported only by a Discord message. A single community observation does not constitute corpus evidence; the tag should be ‹speculative›.",
+  "suggestion": "Change ‹corpus-suggested› to ‹speculative›.",
+  "confidence": 0.9,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "148",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "note=\"...The suffix -ke here selects non-agentive, inanimate objects; agentive human causees take the productive -te (compare Nakagawa 2024: 202–203, exx. 196–197 on ahun-ke vs ahun-te).\"",
+  "issue": "The note discusses ahun-ke vs ahun-te, but the example is ran-ke 'lower'. The note is about a different verb (ahun) and may confuse the reader about the example at hand.",
+  "suggestion": "Either remove the parenthetical comparison or add a note that the same distinction applies to ran-ke vs ran-te (if attested).",
+  "confidence": 0.6,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "215-222",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "note=\"Satō ex. 6, approximately p. 36 (the OCR of Satō 2007 carries no per-page running heads; the location is approximate within the pp. 31–39 article).\"",
+  "issue": "The note contains meta-commentary about the source's formatting (OCR, no running heads) that is addressed to the production process, not the reader. This is a pipeline register leak.",
+  "suggestion": "Simplify to: 'Satō ex. 6, p. 36 (approximate; the article spans pp. 31–39).'",
+  "confidence": 0.9,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "357",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "<Ref k=\"bugaeva2025\" paren />",
+  "issue": "The reference key 'bugaeva2025' suggests a source dated 2025, which is in the future relative to the book's writing (2025-2026). However, the briefing says not to flag future dates. The issue is that the reference key uses a year that may not correspond to a published work; if it is a forthcoming work, it should be marked as such (e.g., 'forthcoming').",
+  "suggestion": "If the work is not yet published, add 'forthcoming' or use a different key convention.",
+  "confidence": 0.5,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "19-20",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "the literature has not settled its classification <Ref k=\"bugaeva2014\" p=\"129–130, 143\" />; <Ref k=\"kobayashi2015\" p=\"33\" /> ‹contested›.",
+  "issue": "The semicolon before the second citation is awkward; it reads as if the second citation is separate from the claim. Better to integrate: '...classification <Ref k=\"bugaeva2014\" p=\"129–130, 143\" />; <Ref k=\"kobayashi2015\" p=\"33\" /> ‹contested›.' could be rephrased.",
+  "suggestion": "Rephrase to: '...its classification remains contested <Ref k=\"bugaeva2014\" p=\"129–130, 143\" />; <Ref k=\"kobayashi2015\" p=\"33\" />.'",
+  "confidence": 0.4,
+  "chapter": "transitivizer-ka-valency-pairs",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

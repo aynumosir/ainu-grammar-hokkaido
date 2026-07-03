@@ -1,0 +1,869 @@
+[
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#018",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "319-320",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.POSS=name' for 'a=rehe' is unclear. 'a=' is the fourth-person subject/possessive marker. 'rehe' is likely the verb 'to name'. The gloss should reflect the possessive function of 'a=' with the verb 'name'. Similarly, '4.A=4.O=name' for 'a=i=reko' is also a bit dense.",
+    "quote": "4.POSS=name Ikuresuye QUOT 4.A=4.O=name",
+    "suggestion": "Clarify the glosses: 'a=rehe' could be '4.POSS=name-VERB' or 'name-4.POSS', and 'a=i=reko' could be '4.A=4.O=name-VERB' or 'name-4.A-4.O'. The note clarifies the meaning, but the gloss could be more explicit.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.POSS=name' for a=rehe, but the translation is 'I was named' — passive. The gloss shows active fourth-person A and O, but the translation is passive. The note explains the combination, but the mismatch between active gloss and passive translation is confusing.",
+    "quote": "m=\"a=rehe Ikuresuye sekor a=i=reko\" g=\"4.POSS=name Ikuresuye QUOT 4.A=4.O=name\" tr=\"I was named Ikuresuye.\"",
+    "suggestion": "Either change translation to 'They named me Ikuresuye.' or add a note explaining the passive reading.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A=4.O=name' is problematic: it implies both fourth-person A and O are marked on the same verb 'reko' 'name', but the morpheme is 'a=i=reko', which appears to be 'a=' (POSS) + 'i=' (O) + 'reko'. The glossing of '4.A=4.O=name' conflates the possessive prefix 'a=' (on 'rehe') with the object index 'i=' on the verb. The verb itself only bears 'i=' as O, not A.",
+    "quote": "g=\"4.POSS=name Ikuresuye QUOT 4.A=4.O=name\"",
+    "suggestion": "Revise to '4.POSS=name Ikuresuye QUOT 4.O=name' — the A role is not indexed on the verb.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#005",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "161-163",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Nakagawa lists five referential values, but then lists 'addressee-inclusive first plural' and 'honorific second person'. The table at lines 185-209 lists 'inclusive' (speaker plus addressee) and 'honorific addressee'. The initial description seems to conflate 'addressee-inclusive first plural' with 'inclusive' and 'honorific second person' with 'honorific addressee'. The table's descriptions are more precise and align better with the subsequent discussion.",
+    "quote": "Nakagawa lists five referential values for the same formal row — addressee-inclusive first\nplural, honorific second person, indefinite or impersonal human agent, the narrator or\nprotagonist of oral narrative, and the quoted speaker inside reported speech — stressing that\nno single meaning covers all five",
+    "suggestion": "Align the prose description with the table's terminology for clarity, e.g., 'addressee-inclusive first plural' should be 'inclusive' and 'honorific second person' should be 'honorific addressee'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table on lines 176-211 lists five functions, but the numbering and labels differ slightly: the table has '① inclusive', '② honorific addressee', '③ indefinite / impersonal', '④ narrative self-reference', '⑤ logophoric reported speaker'. The prose says 'addressee-inclusive first plural' (table says just 'inclusive'), 'honorific second person' (table says 'honorific addressee'), 'indefinite or impersonal human agent' (table says 'indefinite / impersonal'), 'the narrator or protagonist of oral narrative' (table says 'narrative self-reference'), 'the quoted speaker inside reported speech' (table says 'logophoric reported speaker'). These are minor terminological differences but could confuse readers.",
+    "quote": "Nakagawa lists five referential values for the same formal row — addressee-inclusive first plural, honorific second person, indefinite or impersonal human agent, the narrator or protagonist of oral narrative, and the quoted speaker inside reported speech — stressing that no single meaning covers all five.",
+    "suggestion": "Harmonize the prose description with the table labels, or add a note that the labels vary by author.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#001",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "7-11",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states there are three verbal indexes, but then lists two subject indexes (a= and =an) and one object index (i=). The description of 'a=' and '=an' as subject indexes for different transitivity types is correct, but the initial statement of 'three verbal indexes' is ambiguous and could be interpreted as three distinct morphemes rather than three roles covered by two morphemes and one role covered by another.",
+    "quote": "Three verbal indexes make up the Hokkaido Ainu form-set called the fourth person by\nNakagawa, the indefinite by Bugaeva, and the inclusive person by Takahashi:\na= or dialectally an= as the subject of a\ntransitive verb (A role), =an as the subject of an intransitive verb\n(S), and i= as the object (O).",
+    "suggestion": "Clarify that there are three roles (S, A, O) covered by specific morphemes, and that the A and S roles are marked by different forms of the same underlying morpheme.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table on lines 16-53 lists 'a=, dialectally an=' for A, but the prose here says 'a= or dialectally an=' — the table uses a comma, the prose uses 'or'. This is a minor formatting inconsistency but could confuse readers about whether these are alternatives or dialectal variants.",
+    "quote": "Three verbal indexes make up the Hokkaido Ainu form-set called the fourth person by Nakagawa, the indefinite by Bugaeva, and the inclusive person by Takahashi: a= or dialectally an= as the subject of a transitive verb (A role), =an as the subject of an intransitive verb (S), and i= as the object (O).",
+    "suggestion": "Make consistent: either use 'or' in both or comma in both.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#017",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "309-310",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.O=pity' for 'i=erampokiwen' is a direct gloss of the morpheme. However, the verb 'erampokiwen' itself means 'to pity'. The gloss should reflect the full verb meaning, not just the person marking.",
+    "quote": "4.O=pity 4.O=lodge CONJ 4.O=give",
+    "suggestion": "Change '4.O=pity' to '4.O=pity-VERB' or 'pity-4.O' to indicate that 'i=' marks the object of the verb 'pity'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.O=pity', '4.O=lodge', '4.O=give', but the translation uses imperative 'Take pity on me and give me lodging.' The gloss shows no imperative marking — the verb forms are unmarked for mood. The translation adds an imperative reading that isn't in the gloss. The note says 'indexing the narrator/protagonist as object', but doesn't explain the imperative. This is a mismatch between the gloss (indicative) and translation (imperative).",
+    "quote": "m=\"i=erampokiwen i=rewsire wa i=kore\" g=\"4.O=pity 4.O=lodge CONJ 4.O=give\" tr=\"Take pity on me and give me lodging.\"",
+    "suggestion": "Either add imperative gloss (e.g., 'IMP') or change translation to 'One takes pity on me, lodges me, and gives to me.' or similar indicative reading.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#037",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "285",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A=eat' assigns a fourth-person agent to 'a=e p', but the free translation 'This plant is one that people eat' uses a relative clause with an embedded generic agent. The gloss implies a main-clause person index, but the construction is a nominalization where the agent is syntactically embedded and not a matrix subject. This over-personalizes the gloss.",
+    "quote": "g=\"4.A=eat NMLZ COP\"",
+    "suggestion": "Gloss as 'eat' without '4.A=', or use 'GEN=eat' to reflect generic agent without asserting fourth-person indexing in the matrix.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#036",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "268",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme segmentation 'a=nu' implies 'a=' is a prefix on the verb 'nu' 'hear'. But in the gloss (line 269), it is '4.A=hear', which matches. However, in the free translation (line 270), 'One hears the breeze' uses an impersonal subject, while the gloss assigns a specific person index (4.A). This creates a mismatch: the gloss implies a person-marked agent, but the translation expresses a generic subject without referential specificity.",
+    "quote": "m=\"maw a=nu\"",
+    "suggestion": "Revise gloss to 'IMPFV=hear' or 'GEN=hear' to better align with the translation, or revise translation to 'People hear the breeze' to justify '4.A'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#035",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "262",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A=hear' implies the morpheme 'a=nu' is segmented as 'a=nu' with 'a=' as the fourth-person A prefix. However, in the example (line 268), the form is 'a=nu', and in the preceding text (line 261), it is referred to as 'a=nu'. But the free translation 'One hears the breeze' treats the subject as generic/indefinite, not specifically 'fourth-person A'. While this may be acceptable, the gloss '4.A' assigns a specific person index that may not align with the impersonal use, which is not necessarily agentive in a referential sense.",
+    "quote": "g=\"4.A=hear\"",
+    "suggestion": "Consider glossing as 'IND=hear' or 'IMPFV=hear' to reflect impersonal use, or clarify that '4.A' here encodes the impersonal function.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#021",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "100-111",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table on line 28 lists 'a=, dialectally an=' for A, implying an= is a dialectal variant. But the prose here says Saru/Chitose/Horobetsu preserve an= in verse formulae, and Nakagawa regards an= as historically prior. This contradicts the table's implication that an= is merely a dialectal alternative — it's also a historical/register variant in the same dialects.",
+    "quote": "In Saru and the dialects to the west, a= is the regular transitive-subject form. Elsewhere the longer allomorph an= appears in varying distributions: Tokachi uses an= before vowel-initial stems without first-syllable accent and a= elsewhere; Ishikari and Samani favour an=; Shiranuka mostly has an= with a= chiefly before ye; Shizunai shows no such split. Even Saru, Chitose, and Horobetsu preserve an= in verse formulae, and Nakagawa regards an= as historically prior ‹speculative›.",
+    "suggestion": "Either add a note to the table about verse formulae, or rephrase the table entry to 'a= (dialectally an=; also preserved in verse formulae in Saru/Chitose/Horobetsu)'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#041",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "372",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'opposite mismatches' is vague and unclear. It lacks antecedent — what is the contrast?",
+    "quote": "Horobetsu and Shizunai display opposite mismatches",
+    "suggestion": "Clarify: e.g., 'display mismatches in the opposite direction to Saru and Chitose'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#031",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "277-282",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'participant nominalizations' is technical but appropriate for a reference grammar. The example 'a=e-p' uses a hyphen, but the chapter normally uses = for the person index. The note on line 263-264 explains that Ijäs uses a hyphen, but here the chapter itself uses a hyphen in 'a=e-p'. This is inconsistent with the chapter's own convention of using = for person indexes.",
+    "quote": "The generic-agent prefix combines with the nominalizer p ~ pe to yield participant nominalizations of the type a=e-p 'food' (literally 'what people eat').",
+    "suggestion": "Change 'a=e-p' to 'a=e p' (with space) or 'a=e=p' (with equals sign) to be consistent with the chapter's notation. The hyphen should be reserved for the nominalizer p, not for the person index.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#027",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "403-418",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag is placed at the end of the sentence, but the entire paragraph is about competing labels, so the tag could apply to any of the analyses. It's unclear whether the tag applies specifically to Takahashi's claim or to the whole paragraph. The tag should be placed immediately after the claim it modifies.",
+    "quote": "Takahashi's 'inclusive person' gives the Tokachi system a unified participant label, arguing that the inclusive function is primary ‹contested›.",
+    "suggestion": "Move the tag to after 'primary' or rephrase: '‹contested› Takahashi's \"inclusive person\"...'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#012",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "231",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence structure 'Japanese translations routinely render the construction with a passive, but Ainu has no subject-promoting passive morphology' is slightly awkward. The 'but' clause feels like it's contrasting the Japanese translation with Ainu grammar, which is the intent, but the phrasing could be smoother.",
+    "quote": "Japanese translations routinely render the construction\nwith a passive, but Ainu has no subject-promoting passive morphology: the agent does not\nreceive subject marking, and the patient is not promoted to a nominative argument",
+    "suggestion": "Rephrase to something like: 'While Japanese translations routinely render this construction passively, Ainu lacks subject-promoting passive morphology.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#002",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "100-105",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'first-syllable accent' but does not define what this means in the context of Ainu phonology or orthography. This term is not consistently used or explained elsewhere in the chapter.",
+    "quote": "In Saru and the dialects to the west, <i lang=\"ain-Latn\">a=</i> is the regular\ntransitive-subject form. Elsewhere the longer allomorph <i lang=\"ain-Latn\">an=</i> appears in\nvarying distributions: Tokachi uses <i lang=\"ain-Latn\">an=</i> before vowel-initial stems\nwithout first-syllable accent and <i lang=\"ain-Latn\">a=</i> elsewhere; Ishikari and Samani\nfavour <i lang=\"ain-Latn\">an=</i>; Shiranuka mostly has <i lang=\"ain-Latn\">an=</i> with\n<i lang=\"ain-Latn\">a=</i> chiefly before <A w=\"ye\" gl=\"say\" />",
+    "suggestion": "Define 'first-syllable accent' or rephrase to avoid the term if it's not a standard linguistic concept in this context.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#040",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "203",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In section 'Honorific, narrative, and logophoric uses' (line 372), it says 'Horobetsu and Shizunai display opposite mismatches between verb number and the available pronouns', implying that singular stems may be used for plural referents or vice versa. But in the table (line 203), it says 'singular stems possible in Saru/Chitose; plural elsewhere', which excludes Horobetsu and Shizunai from allowing singular stems. This contradicts the later statement.",
+    "quote": "singular stems possible in Saru/Chitose; plural elsewhere",
+    "suggestion": "Revise the table or the later text to align on whether Horobetsu/Shizunai allow singular stems for narrative self-reference.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#039",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "106",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that Saru and Chitose use 'a=' as the regular form (line 100), but later says they preserve 'an=' in verse. This is not contradictory — dialectal variation and stylistic preservation can coexist. However, Horobetsu was not previously mentioned in the allomorphy discussion, so its inclusion here is inconsistent with the earlier dialectal scope.",
+    "quote": "Even Saru, Chitose, and Horobetsu preserve an= in verse formulae",
+    "suggestion": "Either introduce Horobetsu earlier or remove it from this list to maintain consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#038",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "332",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sentence is grammatically correct but awkward. The second clause lacks a subject: 'the antipassive derives...' — what is 'the antipassive'? It refers to the prefix 'i-', but this is not clearly stated.",
+    "quote": "they differ syntactically: the person index occupies the O slot of an already-transitive stem, while the antipassive derives an intransitive stem from a transitive base.",
+    "suggestion": "Revise to: 'while the detransitive prefix derives an intransitive stem from a transitive base.'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#034",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "45",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "No issue — 'i=' is consistently written with trailing equals as a prefix.",
+    "quote": "i=</i> as the object",
+    "suggestion": null,
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#033",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "28",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The dialectal variant 'an=' is missing the trailing equals sign, unlike 'a=' which has it. This creates inconsistency in clitic notation within the same phrase.",
+    "quote": "<i lang=\"ain-Latn\">a=</i>, dialectally <i lang=\"ain-Latn\">an=",
+    "suggestion": "Add trailing equals: 'a=', dialectally 'an='.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#032",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "9",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of hyphen vs. equals sign in marking clitics: 'a=' uses equals, but the dialectal variant 'an=' is not marked with equals in the same way. Later in the text (e.g., line 10) '=an' is correctly marked with equals on both sides.",
+    "quote": "a=</i> or dialectally <i lang=\"ain-Latn\">an=",
+    "suggestion": "Write as 'a=' or dialectally 'an=' to maintain consistent clitic notation with equals signs.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "No issue — directional clitic placement is correct: 'a=' is a prefix (trailing =), '=an' is a suffix (leading =). Notation is consistent with Leipzig style.",
+    "quote": "=an</i> as the subject",
+    "suggestion": null,
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#030",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "89-97",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'PL' for pa, but the translation 'We wore only fur and slept' is singular in English (though 'we' is plural). The gloss correctly marks pa as plural, but the translation doesn't reflect the plural explicitly — 'slept' is ambiguous. This is minor but could be improved.",
+    "quote": "m=\"rus patek a=mi wa hotke=an pa\" g=\"fur only 4.A=wear CONJ sleep=4.S PL\" tr=\"We wore only fur and slept.\"",
+    "suggestion": "Change translation to 'We wore only fur and slept (plural).' or add a note about the plural auxiliary.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#029",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "67-75",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'you' for eani is a second-person pronoun, but the translation 'Let you and me go too!' implies first-person inclusive. The gloss should reflect that eani is being used in an inclusive context, or the translation should be adjusted. The note says 'addressee-inclusive hortative', so eani here means 'you (and I)' — but the gloss just says 'you', which is ambiguous.",
+    "quote": "m=\"eani hem paye=an ro\" g=\"you also go.PL=4.S HORT\" tr=\"Let you and me go too!\"",
+    "suggestion": "Either gloss eani as 'you (inclusive)' or add a note explaining the inclusive reading of eani in this context.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#028",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "421-431",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag is attached to the claim that Dal Corso's reanalysis is inapplicable to Hokkaido. But the sentence says Dal Corso himself 'explicitly cautioned' this, so it's not contested — it's a self-limitation by the author. The tag should not be used for a claim that the source itself makes.",
+    "quote": "Dal Corso applies the label 'fourth person' to the cognate Sakhalin AN-series by word form, while his diachronic reanalysis — which rejects the tripartite component for Sakhalin and treats the cognate system as mixed nominative–neutral–inverse — is explicitly cautioned as inapplicable to Hokkaido ‹contested›.",
+    "suggestion": "Remove the ‹contested› tag, or if the applicability is contested by other scholars, clarify: '...is explicitly cautioned as inapplicable to Hokkaido by Dal Corso himself, though this limitation is ‹contested› by some.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#026",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "370-378",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table on line 201-203 says for function ④ 'narrative self-reference: singular stems possible in Saru/Chitose; plural elsewhere'. The prose says Horobetsu and Shizunai display 'opposite mismatches' — this implies that the verb number and pronoun number don't match, not simply that plural stems are used. The table's 'plural elsewhere' is an oversimplification that contradicts the prose's more nuanced description.",
+    "quote": "In oral narrative the protagonist's first person is expressed by the same row. In Saru and Chitose a singular narrator may appear with singular verb stems and the pronoun asinuma; Horobetsu and Shizunai display opposite mismatches between verb number and the available pronouns.",
+    "suggestion": "Update the table to reflect the complexity: 'singular stems possible in Saru/Chitose; variable elsewhere with possible mismatches between verb number and pronoun (see text)'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#025",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "347-367",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table on line 191-193 says for function ② 'honorific addressee: esteemed second person; human addressing adult men or kamuy'. The prose here says 'women addressing adult men and humans addressing kamuy in prayer'. The table says 'human addressing adult men or kamuy' (no gender specification), while the prose specifies 'women'. This is a minor inconsistency — the table generalizes while the prose specifies a gender.",
+    "quote": "Honorific use applies the fourth-person row to an esteemed addressee. Nakagawa describes women addressing adult men and humans addressing kamuy in prayer; Tamura documents the same politeness value for Saru; Satō groups it with the literary-person system of oral performance.",
+    "suggestion": "Either add 'women' to the table or remove 'women' from the prose to be consistent.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#024",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "186-209",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table says for function ④ 'singular stems possible in Saru/Chitose; plural elsewhere'. But the prose on lines 370-378 says 'In Saru and Chitose a singular narrator may appear with singular verb stems... Horobetsu and Shizunai display opposite mismatches between verb number and the available pronouns'. This suggests that in Horobetsu/Shizunai the verb number may not simply be 'plural' — there are mismatches. The table oversimplifies.",
+    "quote": "Table rows: ① inclusive: plural verb stem; common in cohortative frames. ② honorific addressee: plural stem even for a single addressee. ③ indefinite / impersonal: plural stem; agent may appear in an or wa phrase. ④ narrative self-reference: singular stems possible in Saru/Chitose; plural elsewhere. ⑤ logophoric reported speaker: dialectal scope; best established for Saru.",
+    "suggestion": "Refine the table entry to reflect the complexity: 'singular stems possible in Saru/Chitose; variable elsewhere (see text)'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#023",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "115-125",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag is attached to the entire claim about clitic/affix status, but the sentence presents Sakaguchi's criterion as converging with Bugaeva and Nakagawa. The tag should apply to the contested status of the analysis, not to the convergence claim itself. The tag placement is ambiguous.",
+    "quote": "Sakaguchi's formal clitic criterion — developed on Sakhalin evidence — converges on the same autonomy ranking for the fourth-person S form ‹contested›.",
+    "suggestion": "Move the tag to the beginning of the sentence or rephrase: '‹contested› Sakaguchi's formal clitic criterion...'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#022",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "100-111",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is used for a claim about documentation completeness, not about a specific corpus finding. The tag normally indicates that a claim is suggested by corpus data, but here it's used for a meta-claim about the state of documentation. This is a category mismatch.",
+    "quote": "The Hokkaido-wide quantitative distribution of the two allomorphs is incompletely documented ‹corpus-suggested›.",
+    "suggestion": "Either remove the tag or rephrase to something like '‹corpus-suggested› based on available corpora' if that's what's meant.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#020",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "355-356",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This statement claims that the plural stem is conditioned by 'register' rather than 'count of persons'. This is consistent with the explanation for honorific use. However, the table entry for 'inclusive' (line 188) also mentions plural verb stems, and 'inclusive' refers to 'speaker plus addressee', which can be a single person (speaker) plus another person (addressee), or multiple people. This suggests that 'count of persons' might still play a role, or that 'register' is being used broadly to encompass politeness and inclusivity.",
+    "quote": "The verb takes a plural stem even for a single referent, a number agreement conditioned\nby register rather than by the count of persons.",
+    "suggestion": "Clarify the relationship between 'register' and 'count of persons' in conditioning plural verb stems, especially in relation to the 'inclusive' category.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#019",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "329-333",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the person index 'i=' occupies the O slot of an already-transitive stem, while the antipassive derives an intransitive stem from a transitive base. This is a correct distinction. However, the initial statement that 'i=' is phonologically identical to 'i-' might be an oversimplification. The notation difference ('=' vs '-') is highlighted, but the phonological identity is presented as a fact without qualification, which could be misleading if there are subtle phonetic differences or if the identity is only partial.",
+    "quote": "The prefix <i lang=\"ain-Latn\">i=</i> is phonologically identical to the detransitivising\nprefix <i lang=\"ain-Latn\">i-</i> 'something/someone', which incorporates a generic object and\nreduces the verb's transitivity. The two are notated differently — <i lang=\"ain-Latn\">=</i>\nfor the person index, <i lang=\"ain-Latn\">-</i> for the derivational prefix — and they differ\nsyntactically: the person index occupies the O slot of an already-transitive stem, while the\nantipassive derives an intransitive stem from a transitive base.",
+    "suggestion": "Qualify the statement about phonological identity, e.g., 'phonologically similar' or 'appears phonologically identical', and emphasize that the distinction is primarily morphological and syntactic.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#016",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "279-280",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the generic-agent prefix combines with the nominalizer 'p ~ pe' to yield participant nominalizations of the type 'a=e-p' meaning 'food' (literally 'what people eat'). However, the example at lines 285-287 shows 'a=e p' where 'p' is glossed as 'NMLZ' (nominalizer) and 'a=e' is glossed as '4.A=eat'. This implies 'a=e' is the verb 'eat' and 'p' is the nominalizer, forming 'what people eat'. The earlier statement that 'a=e-p' means 'food' and is a participant nominalization is correct, but the example clarifies the structure more precisely.",
+    "quote": "The generic-agent prefix combines with the nominalizer\n<i lang=\"ain-Latn\">p</i> ~ <i lang=\"ain-Latn\">pe</i> to yield participant nominalizations of\nthe type <i lang=\"ain-Latn\">a=e-p</i> 'food' (literally 'what people eat')",
+    "suggestion": "Ensure the explanation of 'a=e-p' as 'food' and its derivation is consistent with the example, perhaps by explicitly stating that 'a=e' is the verb 'eat' and 'p' is the nominalizer forming 'what people eat'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#015",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "260-261",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Ijäs's grammar illustrates the 'generic-human value' and glosses 'a=nu' as 'people hear (it)'. However, the example at lines 267-270 uses 'a=nu' and glosses it as '4.A=hear', with the translation 'One hears the breeze.' This implies 'a=' is the generic-human agent, and 'nu' is the verb 'hear'. The earlier mention of 'a=nu' as 'people hear (it)' might be a simplification or a different interpretation of the same morphemes.",
+    "quote": "Ijäs's learner grammar illustrates the same generic-human value, glossing\n<i lang=\"ain-Latn\">a=nu</i> as 'people hear (it)'",
+    "suggestion": "Ensure consistency in the glossing and explanation of 'a=nu'. If 'nu' is the verb 'hear', then 'a=' is the generic agent. The earlier phrasing 'people hear (it)' might be better as 'people hear it' or 'one hears it' to align with the 'generic human agent' concept.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#014",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "250-251",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'place from' for 'or wa' is a literal translation. While it conveys the meaning in this context, it might be better to use a more established gloss for 'or wa' if one exists, or to clarify its function as a postposition indicating source or agent.",
+    "quote": "kamuy place from 4.A=protect CONJ god place from 4.A=help CONJ",
+    "suggestion": "Consider using a more standard gloss for 'or wa' if available, or adding a brief explanation of its function as a postposition indicating source/agent.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#013",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "240-241",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'track-POSS' for 'ru-we' is unclear. The morpheme 'ru' is glossed as 'track' and 'we' as 'POSS'. The note states 'The patient wen kamuy stays in the object role across two transitive predicates; a= supplies an unspecified human agent.' This suggests 'ru-we' might be a possessive form related to the predicate, but the gloss is not immediately decipherable in context.",
+    "quote": "wen kamuy 4.A=defeat CONJ 4.A=kill track-POSS COP",
+    "suggestion": "Clarify the gloss for 'ru-we', perhaps by breaking down 'ru' and 'we' or providing a more contextually appropriate gloss for the compound.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#011",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "223",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the 'inclusive/fourth-person series triggers plural verb forms even where the referent would otherwise be singular'. This is consistent with the table entry for 'honorific addressee' (line 193) and 'inclusive' (line 188) which both mention plural verb stems. However, the 'narrative self-reference' (line 203) also mentions singular stems being possible in some dialects, which seems to contradict the general statement about plural forms being triggered.",
+    "quote": "Tokachi preserves the same clusivity split, and Takahashi observes that the\ninclusive/fourth-person series triggers plural verb forms even where the referent would\notherwise be singular",
+    "suggestion": "Clarify that the plural verb form trigger is a general tendency for the inclusive/fourth-person series, but exceptions exist for narrative self-reference in specific dialects.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#010",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "207",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'the \"I/we\" of a quoted or reported speaker' is a free translation. The table entry for 'logophoric reported speaker' refers to 'quoted or reported speaker'. The 'I/we' is implied by the logophoric nature.",
+    "quote": "the \"I/we\" of a quoted or reported speaker",
+    "suggestion": "Shorten to 'quoted or reported speaker' to be more concise and consistent with other entries.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#009",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "202",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'protagonist or narrator's \"I\" in oral narrative' is a free translation. The table entry for 'narrative self-reference' refers to 'protagonist or narrator'. The 'I' is implied by 'self-reference'.",
+    "quote": "protagonist or narrator's \"I\" in oral narrative",
+    "suggestion": "Shorten to 'protagonist or narrator' to be more concise and consistent with other entries.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#008",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "197",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'generic human agent, 'people, one, someone'' is a free translation. The table entry for 'indefinite / impersonal' refers to 'generic human agent'. The examples 'people, one, someone' are illustrative but could be integrated more smoothly.",
+    "quote": "generic human agent, 'people, one, someone'",
+    "suggestion": "Rephrase to 'generic human agent (e.g., people, one, someone)' or similar to maintain clarity.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#007",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "192",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The description 'esteemed second person; human addressing adult men or kamuy' is a free translation. The table entry for 'honorific addressee' refers to 'esteemed second person'. The additional detail about who is addressing whom is context, but the core gloss should focus on the referent.",
+    "quote": "esteemed second person; human addressing adult men or kamuy",
+    "suggestion": "Simplify to 'esteemed second person' or 'addressee as esteemed second person' to better match the 'typical reference' column's style.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#006",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "187",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'we including you' is a free translation. The table entry for 'inclusive' refers to 'speaker plus addressee'. While these are semantically related, the gloss could be more precise by directly reflecting the 'speaker plus addressee' concept.",
+    "quote": "speaker plus addressee, 'we including you'",
+    "suggestion": "Change 'we including you' to 'speaker and addressee' or similar to directly reflect the 'speaker plus addressee' description.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#004",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "130-131",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the plural auxiliary 'pa' positions itself outside the person index (stem=an pa), while the stem-forming plural suffix '-pa' sits inside (stem-pa=an). However, the example at lines 138-146 shows 'pa' following '=an' (nenpoka iki=an pa wa siknu=an wa), which aligns with the description of 'pa' as an auxiliary. The example at lines 148-155 shows '-pa' preceding '=an' (irwak sinne sorekusu iki-pa=an), which aligns with the description of '-pa' as a stem-forming suffix. The inconsistency lies in the phrasing 'stem=an pa' vs 'stem-pa=an' which is correctly illustrated by the examples, but the initial statement could be clearer about the distinct functions of 'pa' and '-pa'.",
+    "quote": "The plural auxiliary <i lang=\"ain-Latn\">pa</i> of Saru, Chitose, and Ishikari positions\nitself outside the person index (stem<i lang=\"ain-Latn\">=an pa</i>), while the stem-forming\nplural suffix <i lang=\"ain-Latn\">-pa</i> sits inside (stem<i lang=\"ain-Latn\">-pa=an</i>).",
+    "suggestion": "Ensure the distinction between the auxiliary 'pa' and the suffix '-pa' is consistently maintained and clearly explained, perhaps by explicitly stating that 'pa' is a separate word/clitic while '-pa' is a bound suffix.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "indefinite-fourth-person-paradigm~p1#003",
+  "chapter": "indefinite-fourth-person-paradigm",
+  "lines": "115-125",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Bugaeva treats '=an' as word-like and 'a=' as clitic-like, but then Nakagawa is described as writing all person indexes with '=' as a convenient notation, and separately documenting the high autonomy of '=an'. This creates a slight confusion about whether Nakagawa's notation implies a specific analysis of 'a=' or if it's purely notational. The subsequent mention of Sakaguchi's criterion converging on the same autonomy ranking for the S form ('=an') further complicates the picture regarding 'a='.",
+    "quote": "The clitic-or-affix status of <i lang=\"ain-Latn\">=an</i> and <i lang=\"ain-Latn\">a=</i> is\ncontested: Bugaeva treats <i lang=\"ain-Latn\">=an</i> as word-like and\n<i lang=\"ain-Latn\">a=</i> as clitic-like on the basis of prosodic independence and\nseparability; Nakagawa writes all person indexes with <i lang=\"ain-Latn\">=</i> as a\nconvenient notation and separately documents the high autonomy of <i lang=\"ain-Latn\">=an</i>; \nSakaguchi's formal clitic criterion — developed on Sakhalin evidence — converges on the same\nautonomy ranking for the fourth-person S form <Ref k=\"bugaeva2012\" p=\"472–473\" />; <Ref\n\t\t\t k=\"nakagawa2024\"\n\t\t\t p=\"49, 183\"\n\t\t />;\n<Ref k=\"sakaguchi2024\" p=\"ix, 62–64, 77–85, 163\" /> ‹contested›. Ordering and wordhood\ndiagnostics are treated in <Xr ch=\"personal-affix-template-and-ordering\" />.",
+    "suggestion": "Clarify Nakagawa's stance on 'a=' specifically, or ensure the description of his notation doesn't imply an analysis that isn't explicitly stated. Perhaps rephrase to emphasize that Nakagawa's notation is for convenience and his analysis of autonomy focuses on '=an'.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

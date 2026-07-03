@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "263",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "the read sources ‹corpus-suggested›",
+  "issue": "The phrase 'the read sources' is a pipeline register leak, referring to the book's internal research process rather than the linguistic content.",
+  "suggestion": "Replace 'the read sources' with 'available sources' or 'existing sources'.",
+  "confidence": 0.95,
+  "chapter": "quotative-complementation-sekor",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "330",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "in the read sources",
+  "issue": "Another instance of 'read sources', which is a pipeline register leak referring to the editorial process rather than the linguistic record.",
+  "suggestion": "Replace with 'in available sources' or 'in the existing literature'.",
+  "confidence": 0.95,
+  "chapter": "quotative-complementation-sekor",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "347",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "the factbase read for this domain",
+  "issue": "Clear pipeline register leak: 'factbase' and 'read for this domain' refer to internal editorial procedures, not scholarly content.",
+  "suggestion": "Reword to something like 'not included in the materials analyzed for this domain'.",
+  "confidence": 0.98,
+  "chapter": "quotative-complementation-sekor",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "351",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "available for grading here",
+  "issue": "Editorial meta-commentary: 'grading' refers to the book's internal evidence-tagging workflow, not appropriate in final prose.",
+  "suggestion": "Replace with 'available for evaluation' or 'included in this analysis'.",
+  "confidence": 0.97,
+  "chapter": "quotative-complementation-sekor",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "240",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"ek sekor haw-e ne\"",
+  "issue": "The morpheme string shows 'haw-e' but the gloss line has 'voice-POSS COP', where 'POSS' glosses '-e'. However, the note explains '-e' as a possessed ending, which is inconsistent with labeling it as a possessive clitic in the gloss.",
+  "suggestion": "Change gloss from 'voice-POSS COP' to 'voice-POSS.ENDING COP' or 'voice-POSS= COP' to better reflect analysis.",
+  "confidence": 0.85,
+  "chapter": "quotative-complementation-sekor",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"1SG.POSS=daughter today come COMP say CONJ exist\"",
+  "issue": "The gloss '1SG.POSS=daughter' implies a possessive construction, but the morpheme string has 'ku=matnepo', where 'ku=' is the first-person singular possessive prefix. The gloss should align with the morpheme segmentation.",
+  "suggestion": "Change gloss to '1SG=daughter' or '1SG.POSS=daughter' consistently; if 'POSS' is used, ensure it's standard across the chapter.",
+  "confidence": 0.9,
+  "chapter": "quotative-complementation-sekor",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "g=\"1SG.S=return QUOT 4.A=say\"",
+  "issue": "Inconsistent use of dot notation: '1SG.S' uses a dot, but '4.A' also uses a dot — this is consistent within the example, but should be checked across the chapter for uniformity. However, no inconsistency is visible in this chapter alone.",
+  "suggestion": "null",
+  "confidence": 0.6,
+  "chapter": "quotative-complementation-sekor",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "g=\"come=4.S QUOT 1SG.A=think\"",
+  "issue": "Same as above: '4.S' and '1SG.A' use dot notation consistently here, but this should be confirmed across all examples. No internal inconsistency detected in this chapter.",
+  "suggestion": "null",
+  "confidence": 0.6,
+  "chapter": "quotative-complementation-sekor",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

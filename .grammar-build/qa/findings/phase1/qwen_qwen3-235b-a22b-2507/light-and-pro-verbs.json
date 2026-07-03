@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "34",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ki</i> / <i lang=\"ain-Latn\">iki</i> 'do'",
+  "issue": "Inconsistent representation of the verb form: the table lists both 'ki' and 'iki', but elsewhere in the chapter (e.g., line 170) 'iki' is treated as a variant. The slash presentation suggests equivalence, but no explanation is given for when each form occurs.",
+  "suggestion": "Clarify in a note or text that 'iki' is a phonological variant of 'ki' (e.g., in specific dialects or environments), or standardize to one form if contextually appropriate.",
+  "confidence": 0.9,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "137",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"flee=4.S even walk=4.S even cannot ADV cry only 4.A=do while\"",
+  "issue": "The gloss includes '4.A=do' for 'a=ki', but the free translation says 'doing nothing but cry', which implies intransitive or reflexive action, not a transitive 'do' with an A argument. This creates a mismatch between the grammatical role (A) and the semantic role (S).",
+  "suggestion": "Revise gloss to '4.S=do' or rephrase translation to reflect transitive semantics, e.g., 'doing only crying (as an action performed)'",
+  "confidence": 0.95,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "147",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"2SG.S=speak voice-POSS 1SG.A=hear NMLZ following reply 1SG.A=do PURP COP FIN\"",
+  "issue": "The morpheme 'ku=ki' is glossed as '1SG.A=do', but the free translation 'I will listen... and answer accordingly' suggests the reply is the action, not the subject performing 'do'. The gloss implies the speaker is doing something to the reply, but the translation suggests the reply itself is the action verbalized by 'ki'.",
+  "suggestion": "Gloss 'ku=ki' as '1SG.S=do' or adjust to reflect event nominalization, e.g., '1SG.S=verbalize' or '1SG.S=perform'",
+  "confidence": 0.9,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "213",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"one even 4.A=lose even NEG do track-POSS COP because\"",
+  "issue": "The morpheme 'a=isamka' is glossed as '4.A=lose', but the free translation 'I did not lose even a single one' indicates first-person subject, not fourth-person. This contradicts the person marking in the gloss.",
+  "suggestion": "Correct gloss to '1SG.A=lose' or revise translation to match fourth-person subject",
+  "confidence": 0.95,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "312",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"be.cold.weather autumn COP NMLZ feel.cold=4.S even NEG do ADV\"",
+  "issue": "The morpheme 'merayke=an' is glossed as 'feel.cold=4.S', but in the context of 'I did not feel cold', the subject should be first-person, not fourth-person. The gloss mismatches the expected person index.",
+  "suggestion": "Revise gloss to 'feel.cold=1SG.S' to match translation",
+  "confidence": 0.9,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "35",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "transitive; takes transitive-type subject marking",
+  "issue": "The table describes 'ki' as transitive and taking transitive subject marking, but in example (93–100) and (103–109), 'ki' is unindexed while the lexical verb carries the person marker. This contradicts the claim that 'ki' takes transitive subject marking.",
+  "suggestion": "Revise table entry to clarify that 'ki' is formally transitive but typically unindexed in support constructions, with person marking on the complement",
+  "confidence": 0.95,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "42",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "two-place copular verb; the predicate complement is not indexed as an object",
+  "issue": "The table says 'ne' is two-place but does not index its complement as an object, which contradicts the definition of transitive/double argument verbs. This conflicts with the general valence diagnostics described in lines 58–59.",
+  "suggestion": "Clarify that 'ne' is formally two-place but only indexes the subject, or revise to 'one-place with predicate complement'",
+  "confidence": 0.85,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "49",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "intransitive existential; plural counterpart <i lang=\"ain-Latn\">oka</i>",
+  "issue": "The table lists 'oka' as the plural counterpart of 'an', but in the text (line 52) it says 'indexes its subject as S when a subject is present; zero-place compounds built on an index none'. This implies 'an' can be both intransitive and zero-place, but the table does not reflect this distinction.",
+  "suggestion": "Revise table to distinguish between intransitive 'an' with subject and zero-place 'an' in compounds",
+  "confidence": 0.8,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "169",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "The variant <i lang=\"ain-Latn\">iki</i> is clearest in template diagnostics.",
+  "issue": "The form 'iki' is introduced here as a variant, but earlier in the chapter (e.g., line 10) only 'ki' is mentioned. No explanation is given for when 'iki' vs 'ki' is used, creating orthographic drift.",
+  "suggestion": "Introduce 'iki' earlier or clarify that it is a phonological variant of 'ki' in specific contexts",
+  "confidence": 0.85,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "415",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "constructed\ncite=\"ijas2023\"",
+  "issue": "The example is marked as 'constructed' and cited only to Ijäs 2023, but no page number is provided. Constructed examples should include a locator if citing a pedagogical source.",
+  "suggestion": "Add page or section reference, e.g., 'ijas2023:ex. 4.7' or 'ijas2023:ch. 4'",
+  "confidence": 0.7,
+  "chapter": "light-and-pro-verbs",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

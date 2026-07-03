@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "161, 351",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "suffix <A w=\"=an\" gl=\"1SG intransitive subject\" /> (line 161) vs. arki=an 'come.PL=4.S' (line 351)",
+  "issue": "The morpheme =an is glossed as '1SG intransitive subject' in the person-marking section and as '4.S' (fourth person subject) in the number agreement section, without explanation of the polysemy.",
+  "suggestion": "Add a note explaining that =an has different functions depending on genre (prayer vs. narrative), or use a consistent gloss such as '1/4.S' and clarify in prose.",
+  "confidence": 1,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "7, 76",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "gl=\"divine worship / prayer ceremony\" (line 7) vs. gl=\"divine worship\" (line 76)",
+  "issue": "The same term 'kamuy nomi' is glossed differently in two places: once with a slash and once without.",
+  "suggestion": "Use a consistent gloss for 'kamuy nomi' throughout the chapter.",
+  "confidence": 0.9,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "129, 131",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "atomte-itak (line 129 section title) vs. atomte itak (line 131 A tag)",
+  "issue": "The term for the elevated register is hyphenated in the section title but written as two words in the A tag, creating an inconsistency.",
+  "suggestion": "Decide on a standard spelling (with or without hyphen) and apply it consistently.",
+  "confidence": 0.8,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "99, 119, 123, 301",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "nukopoli, aynu-corpora Discord, 2024-12-26, asserted; <Ref k=\"aynucorporadiscord\" />",
+  "issue": "The word 'asserted' in citations is a meta-commentary on the reliability of the source, which is not standard for a reference grammar and resembles pipeline register.",
+  "suggestion": "Remove 'asserted' or replace with 'pers. comm.' or simply cite the source without comment.",
+  "confidence": 0.7,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "330",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "cite=\"ainukoraci1991\"",
+  "issue": "The example's cite attribute lacks a page or issue number, relying only on the periodical reference. Although the note gives 'Ainu Times issue 41', the formal cite attribute is incomplete.",
+  "suggestion": "Add a more specific page or issue reference to the cite attribute, e.g., 'ainukoraci1991:41'.",
+  "confidence": 0.6,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

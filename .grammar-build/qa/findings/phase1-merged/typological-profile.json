@@ -1,0 +1,1374 @@
+[
+ {
+  "id": "typological-profile~p1#008",
+  "chapter": "typological-profile",
+  "lines": "145",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō (2022) is given as `satoni2022`, which seems like a typo. It should likely be `sato2022` to match the text.",
+    "quote": "Satō (2016; 2022) provides the fullest typology of Ainu noun incorporation, identifying four types that differ in their effect on verbal valency <Ref k=\"sato2016\" />; <Ref k=\"satoni2022\" />:",
+    "suggestion": "<Ref k=\"sato2016\" />; <Ref k=\"sato2022\" />:",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation key 'satoni2022' does not match the author name 'Satō' given in the prose; the expected key based on the prose would be 'sato2022'.",
+    "quote": "<Ref k=\"satoni2022\" />",
+    "suggestion": "Change the key to 'sato2022' (or verify the correct key in the bibliography).",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation for Satō 2022 uses 'satoni2022' as the key, but the prose cites 'Satō (2016; 2022)', implying the same author. The key 'satoni2022' suggests a different name (possibly 'Satoni') and is inconsistent with the author name used in the text.",
+    "quote": "Satō (2016; 2022) provides the fullest typology of Ainu noun incorporation",
+    "suggestion": "Verify if 'satoni2022' is the correct citation key for Satō 2022; if not, update to match author name consistency (e.g., 'sato2022').",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#017",
+  "chapter": "typological-profile",
+  "lines": "233",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community member's username is tagged with '@', which is typical for social media but not standard in academic citations. It should be presented as a name.",
+    "quote": "Community member @aomidori_cs_ (aynu-corpora",
+    "suggestion": "Community member aomidori_cs_ (aynu-corpora",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about SOV order being contact-induced is attributed solely to a Discord comment and marked ‹speculative›, but it is presented without a stronger source. While the tag is appropriate, attaching a full epistemic claim like word-order change to a single Discord attribution risks epistemic inflation if not flagged more cautiously.",
+    "quote": "Community member @aomidori_cs_ (aynu-corpora Discord, 2024-01-29)",
+    "suggestion": "Reinforce with a literature-based speculative source if possible, or make explicit that this is a community hypothesis not yet supported in published research.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#005",
+  "chapter": "typological-profile",
+  "lines": "128",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'REFL.POSS' appears twice in the morpheme breakdown, but only one instance is explained in the note. It's unclear if this is a typo or if there are two distinct morphemes with the same gloss.",
+    "quote": "g=\"APPL-REFL-APPL-far-REFL.POSS-heart-turn.repeatedly-PL\"",
+    "suggestion": "APPL-REFL-APPL-far-REFL.POSS-heart-turn.repeatedly-PL",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'si-' is glossed as 'REFL.POSS' in the example, but in the note it is described as 'reflexive-possessive'. The glossing convention should be consistent. Additionally, 'si-' as a reflexive-possessive morpheme may not be clearly distinguished from other reflexive markers like 'yay-', raising potential ambiguity.",
+    "quote": "e-yay-ko-tuyma-si-ram-suy-pa",
+    "suggestion": "Ensure gloss consistency; consider clarifying whether 'si-' is a separate morpheme or a variant of 'yay-' or part of a portmanteau.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#012",
+  "chapter": "typological-profile",
+  "lines": "184",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This description is a bit vague. It might be clearer to specify that the incorporated body-part noun is part of an intransitive construction, and an external argument (likely the subject of the intransitive verb) is still present.",
+    "quote": "body-part incorporated into an intransitive base; external argument retained",
+    "suggestion": "body-part incorporated into an intransitive base; the subject argument is retained",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The 'canonical example' cell for S-incorporation, body-part nouns contains descriptive prose rather than a lexical example, breaking the table's pattern.",
+    "quote": "body-part incorporated into an intransitive base; external argument retained",
+    "suggestion": "Add a representative example such as '*ram-suy*' 'heart-revolve' or similar if attested.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#011",
+  "chapter": "typological-profile",
+  "lines": "178",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This description is a bit vague. It might be clearer to specify that the incorporated noun *itself* fills the A position.",
+    "quote": "supernatural or insect noun fills the A position from within the verb",
+    "suggestion": "the incorporated supernatural or insect noun fills the A position",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table cell for 'canonical example' in the A-incorporation row contains prose instead of a lexical example like the others (e.g., 'cep-e', 'sir-pirka'). This breaks the table's pattern and lacks a concrete illustration.",
+    "quote": "supernatural or insect noun fills the A position from within the verb",
+    "suggestion": "Provide a canonical example form, e.g., '*mu-kamuy*' 'god-enter' or similar, if attested, to match table format.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#051",
+  "chapter": "typological-profile",
+  "lines": "117-119, 199-202",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The same claim (open head-marking / no fixed closed paradigm) is presented without an epistemic tag in lines 117–119 but tagged as ‹contested› in lines 199–202, creating an internal contradiction about its epistemic status.",
+    "quote": "Hokkaido Ainu is genuinely polysynthetic in Nichols' sense of <em>open head-marking</em>: there is no fixed closed paradigm of what categories may accumulate on the verb <Ref k=\"bugaeva2022\" p=\"Ch.1 §4.7\" />. … Bugaeva's (2022) characterization as 'open head-marking' identifies why: the inventory of what may be incorporated or stacked is unconstrained by a fixed paradigm, unlike the closed agreement paradigms of dependent-marking languages <Ref k=\"bugaeva2022\" p=\"Ch.1 §4.7\" /> ‹contested›.",
+    "suggestion": "Either remove the ‹contested› tag from line 202 or add a qualifying statement to the first instance to indicate that the characterization is contested.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#055",
+  "chapter": "typological-profile",
+  "lines": "321",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'ruwe' may reflect a romanization without macrons. If the phonemic form includes a long vowel (e.g., /ruːwe/), it should be marked. However, if the project uses a macron-free orthography, this is acceptable.",
+    "quote": "<A w=\"ruwe\" gl=\"track, trace (evidential)\" />",
+    "suggestion": "Ensure consistency with other Ainu forms in the chapter regarding macron usage.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#054",
+  "chapter": "typological-profile",
+  "lines": "405",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The suffix '-pa' is written without a macron. If this suffix is phonemically /-pā/, it should be marked accordingly. Other instances of '-pa' in the text (e.g., line 132) also lack macrons.",
+    "quote": "suppletive <strong>SG/PL stems</strong> and pluractional <i lang=\"ain-Latn\">-pa</i>",
+    "suggestion": "Check phonemic length of '-pa' and apply macron consistently if needed.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#053",
+  "chapter": "typological-profile",
+  "lines": "307",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'arki' lacks a macron on the 'a', while Ainu orthography typically marks vowel length. If the plural stem is phonemically /aːrki/, it should be written 'ārki' or 'arki' consistently with the system used. Other forms like 'arpa' and 'paye' show no macrons, suggesting a macron-free orthography may be intended.",
+    "quote": "<i lang=\"ain-Latn\">ek</i> / <i lang=\"ain-Latn\">arki</i> 'come'",
+    "suggestion": "Ensure consistent orthographic treatment: either apply macrons throughout or omit them entirely based on project style.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The singular 'arpa' and plural 'paye' show no macrons. If vowel length is phonemic, forms should be checked for consistency with the project's orthographic standard. Inconsistency with macron usage across examples may reflect drift.",
+    "quote": "<i lang=\"ain-Latn\">arpa</i> / <i lang=\"ain-Latn\">paye</i> 'go'",
+    "suggestion": "Verify and standardize macron usage across all Ainu forms in the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#052",
+  "chapter": "typological-profile",
+  "lines": "271",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The name 'Tamura' appears without macrons, while other Japanese names (e.g., Shibatani, Nakagawa) are consistently presented without diacritics. However, if the source uses macrons (e.g., Tamura 1972), consistency should be maintained. No macron inconsistency is evident here, but orthographic consistency across names should be verified.",
+    "quote": "Tamura lists the same forms as separate sub-persons",
+    "suggestion": "Confirm standard romanization of 'Tamura' in source; if no macrons are used, current form is acceptable.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#050",
+  "chapter": "typological-profile",
+  "lines": "466",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'head-marking' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "head-marking",
+    "suggestion": "head-marking",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'SOV' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "SOV",
+    "suggestion": "SOV",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'polysynthesis' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "polysynthesis",
+    "suggestion": "polysynthesis",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#049",
+  "chapter": "typological-profile",
+  "lines": "457",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The terms 'katakana' and 'Roman script' are not italicized, but they are key typological features being highlighted.",
+    "quote": "katakana and Roman script",
+    "suggestion": "katakana and Roman script",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#048",
+  "chapter": "typological-profile",
+  "lines": "450",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'rising-nucleus pitch accent' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "rising-nucleus pitch accent",
+    "suggestion": "rising-nucleus pitch accent",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#047",
+  "chapter": "typological-profile",
+  "lines": "443",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The terms 'small', '5 vowels', '11-12 consonants', and '(C)V(C)' are not italicized, but they are key typological features being highlighted.",
+    "quote": "small: 5 vowels / 11–12 consonants; syllable canon (C)V(C); see",
+    "suggestion": "small: 5 vowels / 11–12 consonants; syllable canon (C)V(C); see",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#046",
+  "chapter": "typological-profile",
+  "lines": "437",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'four-term' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "four-term",
+    "suggestion": "<strong>four-term</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#045",
+  "chapter": "typological-profile",
+  "lines": "432",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'vigesimal' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "vigesimal",
+    "suggestion": "<strong>vigesimal</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#044",
+  "chapter": "typological-profile",
+  "lines": "426",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The terms 'ordinary vs locative' are not italicized, but they are key typological features being highlighted.",
+    "quote": "ordinary vs locative",
+    "suggestion": "<strong>ordinary vs locative</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#043",
+  "chapter": "typological-profile",
+  "lines": "419",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morphemes 'e-', 'ko-', and 'o-' are not italicized, but they are presented as linguistic forms.",
+    "quote": "e-/ko-/o-",
+    "suggestion": "<i>e-/ko-/o-</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#042",
+  "chapter": "typological-profile",
+  "lines": "412",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'four types' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "four types",
+    "suggestion": "<strong>four types</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#041",
+  "chapter": "typological-profile",
+  "lines": "405",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The terms 'SG/PL stems' are not italicized, but they are key typological features being highlighted.",
+    "quote": "SG/PL stems",
+    "suggestion": "<strong>SG/PL stems</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#040",
+  "chapter": "typological-profile",
+  "lines": "398",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'fourth person' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "fourth person",
+    "suggestion": "<strong>fourth person</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#039",
+  "chapter": "typological-profile",
+  "lines": "391",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'mixed' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "mixed",
+    "suggestion": "<strong>mixed</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#038",
+  "chapter": "typological-profile",
+  "lines": "384",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'person-indexing' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "person-indexing",
+    "suggestion": "<strong>person-indexing</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#037",
+  "chapter": "typological-profile",
+  "lines": "377",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'absent' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "absent",
+    "suggestion": "<strong>absent</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#036",
+  "chapter": "typological-profile",
+  "lines": "372",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'postpositions' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "postpositions",
+    "suggestion": "<strong>postpositions</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#035",
+  "chapter": "typological-profile",
+  "lines": "368",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'SOV' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "SOV",
+    "suggestion": "<strong>SOV</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#034",
+  "chapter": "typological-profile",
+  "lines": "362",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'head-marking' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "head-marking",
+    "suggestion": "<strong>head-marking</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#033",
+  "chapter": "typological-profile",
+  "lines": "357",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'polysynthetic' is not italicized, but it is a key typological feature being highlighted.",
+    "quote": "polysynthetic",
+    "suggestion": "<strong>polysynthetic</strong>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#032",
+  "chapter": "typological-profile",
+  "lines": "331",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "evidential-schema-overview",
+    "suggestion": "<Xr ch=\"evidential-schema-overview\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#031",
+  "chapter": "typological-profile",
+  "lines": "321",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ruwe' is not italicized, but it is presented as a linguistic example.",
+    "quote": "ruwe",
+    "suggestion": "<A w=\"ruwe\" gl=\"track, trace (evidential)\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'siri' is not italicized, but it is presented as a linguistic example.",
+    "quote": "siri",
+    "suggestion": "<A w=\"siri\" gl=\"visible appearance (evidential)\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hawe' is not italicized, but it is presented as a linguistic example.",
+    "quote": "hawe",
+    "suggestion": "<A w=\"hawe\" gl=\"voice (evidential)\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'humi' is not italicized, but it is presented as a linguistic example.",
+    "quote": "humi",
+    "suggestion": "<A w=\"humi\" gl=\"sound, feeling (evidential)\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ne' is not italicized, but it is presented as a linguistic example.",
+    "quote": "ne",
+    "suggestion": "<A w=\"ne\" gl=\"be (copula)\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#030",
+  "chapter": "typological-profile",
+  "lines": "311",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "vigesimal-numeral-system",
+    "suggestion": "<Xr ch=\"vigesimal-numeral-system\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "numeral-classifiers-ordinals-and-quantifier-syntax",
+    "suggestion": "<Xr ch=\"numeral-classifiers-ordinals-and-quantifier-syntax\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "suppletive-verbal-number",
+    "suggestion": "<Xr ch=\"suppletive-verbal-number\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#029",
+  "chapter": "typological-profile",
+  "lines": "307",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ek' is not italicized, but it is presented as a linguistic example.",
+    "quote": "ek",
+    "suggestion": "<i>ek</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'arki' is not italicized, but it is presented as a linguistic example.",
+    "quote": "arki",
+    "suggestion": "<i>arki</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'arpa' is not italicized, but it is presented as a linguistic example.",
+    "quote": "arpa",
+    "suggestion": "<i>arpa</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'paye' is not italicized, but it is presented as a linguistic example.",
+    "quote": "paye",
+    "suggestion": "<i>paye</i>",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu suffix '-pa' is not italicized, but it is presented as a linguistic example.",
+    "quote": "-pa",
+    "suggestion": "<i>-pa</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#028",
+  "chapter": "typological-profile",
+  "lines": "297",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "property-concept-predication",
+    "suggestion": "<Xr ch=\"property-concept-predication\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#027",
+  "chapter": "typological-profile",
+  "lines": "291",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "relational-and-spatial-nouns",
+    "suggestion": "<Xr ch=\"relational-and-spatial-nouns\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#026",
+  "chapter": "typological-profile",
+  "lines": "286",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'or' is not italicized, but it is presented as a linguistic example.",
+    "quote": "or",
+    "suggestion": "<A w=\"or\" gl=\"place\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ka' is not italicized, but it is presented as a linguistic example.",
+    "quote": "ka",
+    "suggestion": "<A w=\"ka\" gl=\"top\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'sam' is not italicized, but it is presented as a linguistic example.",
+    "quote": "sam",
+    "suggestion": "<A w=\"sam\" gl=\"side\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'tum' is not italicized, but it is presented as a linguistic example.",
+    "quote": "tum",
+    "suggestion": "<A w=\"tum\" gl=\"middle\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'pet or ta' is not italicized, but it is presented as a linguistic example.",
+    "quote": "pet or ta",
+    "suggestion": "<i>pet or ta</i>",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#025",
+  "chapter": "typological-profile",
+  "lines": "275",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "indefinite-fourth-person-paradigm",
+    "suggestion": "<Xr ch=\"indefinite-fourth-person-paradigm\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "fourth-person-honorific",
+    "suggestion": "<Xr ch=\"fourth-person-honorific\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#024",
+  "chapter": "typological-profile",
+  "lines": "271",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The quote \"fourth person\" is missing its closing quotation mark.",
+    "quote": "Nakagawa uses \"fourth person\", Tamura lists the same forms as separate sub-persons, and Bugaeva",
+    "suggestion": "Nakagawa uses \"fourth person\", Tamura lists the same forms as separate sub-persons, and Bugaeva",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#023",
+  "chapter": "typological-profile",
+  "lines": "267",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'fourth person' is not italicized, but it is a technical term being discussed.",
+    "quote": "fourth person",
+    "suggestion": "<em>fourth person</em>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#022",
+  "chapter": "typological-profile",
+  "lines": "259",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "person-marking-architecture",
+    "suggestion": "<Xr ch=\"person-marking-architecture\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "alignment-hierarchical-and-the-debate",
+    "suggestion": "<Xr ch=\"alignment-hierarchical-and-the-debate\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "alignment-split-intransitive",
+    "suggestion": "<Xr ch=\"alignment-split-intransitive\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#021",
+  "chapter": "typological-profile",
+  "lines": "255",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The quote is missing its closing quotation mark.",
+    "quote": "mixed, with elements of tripartite alignment",
+    "suggestion": "mixed, with elements of tripartite alignment\"",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#020",
+  "chapter": "typological-profile",
+  "lines": "250",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morphemes '=as' and '=an' are not italicized, but they are presented as linguistic forms.",
+    "quote": "suffix (<i lang=\"ain-Latn\">=as</i>, <i lang=\"ain-Latn\">=an</i>) while A is marked by a",
+    "suggestion": "suffix (<i lang=\"ain-Latn\">=as</i>, <i lang=\"ain-Latn\">=an</i>) while A is marked by a",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morphemes 'ci=' and 'a=' are not italicized, but they are presented as linguistic forms.",
+    "quote": "prefix (<i lang=\"ain-Latn\">ci=</i>, <i lang=\"ain-Latn\">a=</i>) and O by a",
+    "suggestion": "prefix (<i lang=\"ain-Latn\">ci=</i>, <i lang=\"ain-Latn\">a=</i>) and O by a",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morphemes 'un=' and 'i=' are not italicized, but they are presented as linguistic forms.",
+    "quote": "distinct prefix (<i lang=\"ain-Latn\">un=</i>, <i lang=\"ain-Latn\">i=</i>)",
+    "suggestion": "distinct prefix (<i lang=\"ain-Latn\">un=</i>, <i lang=\"ain-Latn\">i=</i>)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#019",
+  "chapter": "typological-profile",
+  "lines": "245",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'nominative–accusative' is hyphenated with an en dash, which is correct for compound adjectives. However, the text uses 'nominative–accusative' later on line 391. Consistency would suggest using the same form.",
+    "quote": "first-singular row is nominative–accusative",
+    "suggestion": "nominative–accusative",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morphemes 'e=' and 'eci=' are not italicized, but they are presented as linguistic forms.",
+    "quote": "second-person rows are neutral: <i lang=\"ain-Latn\">e=</i> (2SG) and",
+    "suggestion": "second-person rows are neutral: <i lang=\"ain-Latn\">e=</i> (2SG) and",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#018",
+  "chapter": "typological-profile",
+  "lines": "236",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'somo' is not italicized, but it is presented as a linguistic example.",
+    "quote": "negator <A w=\"somo\" gl=\"not (clausal negator)\" /> as a cross-linguistic diagnostic found in SVO",
+    "suggestion": "negator <A w=\"somo\" gl=\"not (clausal negator)\" /> as a cross-linguistic diagnostic found in SVO",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#016",
+  "chapter": "typological-profile",
+  "lines": "217",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dashes here are used for parenthetical information. While not strictly incorrect, using parentheses might be clearer and more consistent with standard punctuation.",
+    "quote": "postpositional phrases — built on relational nouns and postpositions — follow the head noun with the adpositional element in final position",
+    "suggestion": "postpositional phrases (built on relational nouns and postpositions) follow the head noun with the adpositional element in final position",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'relational-noun' is not hyphenated, but it functions as a compound adjective modifying 'system'. Hyphenation would improve clarity.",
+    "quote": "relational-noun system",
+    "suggestion": "relational-noun system",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "relational-and-spatial-nouns",
+    "suggestion": "<Xr ch=\"relational-and-spatial-nouns\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "postpositions-local-case-and-motion-events",
+    "suggestion": "<Xr ch=\"postpositions-local-case-and-motion-events\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#015",
+  "chapter": "typological-profile",
+  "lines": "203",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morphemes 'e-', 'ko-', and 'o-' are not italicized, but they are presented as linguistic forms.",
+    "quote": "The applicative system (<i>e-</i>, <i>ko-</i>, <i>o-</i>) further",
+    "suggestion": "The applicative system (<i>e-</i>, <i>ko-</i>, <i>o-</i>) further",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation key 'kaiser1998' is not enclosed in `<Ref k=\"...\" />` tags, making it a broken cross-reference.",
+    "quote": "kaiser1998",
+    "suggestion": "<Ref k=\"kaiser1998\" />",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#014",
+  "chapter": "typological-profile",
+  "lines": "197",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'type-I' is not italicized, but it seems to be a technical term that might benefit from italics for emphasis.",
+    "quote": "Shibatani (1988) analysed Ainu incorporation as a productive type-I lexical compounding process",
+    "suggestion": "type-I",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#013",
+  "chapter": "typological-profile",
+  "lines": "191",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "noun-incorporation-object",
+    "suggestion": "<Xr ch=\"noun-incorporation-object\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "noun-incorporation-subject-possessor-stranding",
+    "suggestion": "<Xr ch=\"noun-incorporation-subject-possessor-stranding\" />",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference link is not italicized, but it refers to a section title which is typically italicized.",
+    "quote": "noun-incorporation-oblique-polysynthesis-debate",
+    "suggestion": "<Xr ch=\"noun-incorporation-oblique-polysynthesis-debate\" />",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#010",
+  "chapter": "typological-profile",
+  "lines": "171",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sir-pirka' is not italicized, but it is presented as an example of Ainu language.",
+    "quote": "<i>sir-pirka</i> 'the weather is good' (land/appearance + be.good)",
+    "suggestion": "<i>sir-pirka</i> 'the weather is good' (land/appearance + be.good)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#009",
+  "chapter": "typological-profile",
+  "lines": "163",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep-e' is not italicized, but it is presented as an example of Ainu language.",
+    "quote": "<i>cep-e</i> 'eat fish' (fish + eat; object absorbed)",
+    "suggestion": "<i>cep-e</i> 'eat fish' (fish + eat; object absorbed)",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#007",
+  "chapter": "typological-profile",
+  "lines": "140",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The slash in 'grammar/lexicon' might be better represented as 'grammar–lexicon' or 'grammar and lexicon' for clarity.",
+    "quote": "the grammar/lexicon boundary",
+    "suggestion": "grammar–lexicon boundary",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#006",
+  "chapter": "typological-profile",
+  "lines": "131",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag 'HK' is not defined or explained in the chapter. It should be defined or removed if not relevant.",
+    "quote": "dial=\"HK\"",
+    "suggestion": "null",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'reflexive-possessive (si-)' but the morpheme breakdown in 'm' is 'e-yay-ko-tuyma-si-ram-suy-pa'. It's unclear which morpheme corresponds to 'si-' and if it is indeed reflexive-possessive.",
+    "quote": "Nine syllables, eight bound morphemes in a single verb word: two applicative prefixes (e-, ko-), reflexive (yay-), incorporated distance noun (tuyma 'far'), reflexive-possessive (si-), incorporated body-part noun (ram 'heart, mind'), verbal root (suy 'revolve'), and pluractional suffix (-pa). After Shibatani (1990 §1) as an illustration of Classical Ainu polysynthetic capacity.",
+    "suggestion": "Nine syllables, eight bound morphemes in a single verb word: two applicative prefixes (e-, ko-), reflexive (yay-), incorporated distance noun (tuyma 'far'), reflexive-possessive (si-), incorporated body-part noun (ram 'heart, mind'), verbal root (suy 'revolve'), and pluractional suffix (-pa). After Shibatani (1990 §1) as an illustration of Classical Ainu polysynthetic capacity.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#004",
+  "chapter": "typological-profile",
+  "lines": "67",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'kore' as a verb, but in the example 'ku=kore', 'kore' is glossed as 'give'. It's likely that 'kore' is the verb root and 'ku=' is the prefix. The note should clarify this.",
+    "quote": "Both non-subject participants surface as bare NPs with no case morphology; the verb ku=kore indexes only the 1SG agent. Recipient vs theme is recoverable from the semantics of kore 'give' and from constituent order, not from case marking.",
+    "suggestion": "Both non-subject participants surface as bare NPs with no case morphology; the verb <A w=\"kore\" gl=\"give\" /> indexes only the 1SG agent. Recipient vs theme is recoverable from the semantics of kore 'give' and from constituent order, not from case marking.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#003",
+  "chapter": "typological-profile",
+  "lines": "44",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The word 'differ' is not italicized, but it seems to be part of a list of correlates that are being contrasted.",
+    "quote": "differ systematically from",
+    "suggestion": "differ systematically from",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dash here seems to be used inconsistently with the dash used on line 44. It might be better to use a colon or a semicolon.",
+    "quote": "dependent-marking correlates — case on nouns, adnominal genitive marking, agreement suffixes on",
+    "suggestion": "dependent-marking correlates: case on nouns, adnominal genitive marking, agreement suffixes on",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#002",
+  "chapter": "typological-profile",
+  "lines": "20",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The quote is missing its closing quotation mark.",
+    "quote": "Head-marking is \"well attested in the Americas and",
+    "suggestion": "Head-marking is \"well attested in the Americas and",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The italics for *Greater Pacific Rim* are not closed.",
+    "quote": "characterizes the *Greater Pacific Rim* (GPR) macroarea",
+    "suggestion": "characterizes the *Greater Pacific Rim* (GPR) macroarea",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "typological-profile~p1#001",
+  "chapter": "typological-profile",
+  "lines": "16",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The quote is missing its closing quotation mark.",
+    "quote": "Bugaeva's analysis frames Ainu as \"a head-marking language of the Pacific Rim\"",
+    "suggestion": "Bugaeva's analysis frames Ainu as \"a head-marking language of the Pacific Rim\"",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

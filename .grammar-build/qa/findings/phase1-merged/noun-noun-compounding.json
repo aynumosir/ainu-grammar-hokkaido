@@ -1,0 +1,1387 @@
+[
+ {
+  "id": "noun-noun-compounding~p1#051",
+  "chapter": "noun-noun-compounding",
+  "lines": "391-394",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'sisam itak' is written with a space, but earlier in the chapter (lines 313-315) it says '<i lang=\"ain-Latn\">sisam-itak</i> 'the Japanese language (as a named category)'' with a hyphen. There is inconsistency in the representation of the compound: in lines 313-315 it is written with a hyphen, here it is written solid (without space or hyphen). The text is inconsistent in orthographic representation of the same compound.",
+    "quote": "sisam itak (two words) means 'speech/language of a Japanese person (in context)', while <i lang=\"ain-Latn\">sisamitak</i> (one compound word) means 'the Japanese language (as a named category)'",
+    "suggestion": "Harmonize the orthography: either consistently use a hyphen or write it solid, and ensure consistency throughout the chapter.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Earlier in line 313, 'sisam-itak' is described as the compound form meaning 'the Japanese language', but here the solid form 'sisamitak' is given the same meaning. This contradicts the earlier hyphenated spelling.",
+    "quote": "sisamitak (one compound word) means 'the Japanese language (as a named category)'",
+    "suggestion": "Standardize the spelling of the compound: either use 'sisamitak' throughout or clarify that hyphenation is optional.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#028",
+  "chapter": "noun-noun-compounding",
+  "lines": "313",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sisam'.",
+    "quote": "<i lang=\"ain-Latn\">sisam-itak</i> 'the Japanese language (as a",
+    "suggestion": "sisam",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sisam'.",
+    "quote": "named category)' is restrictive with <A w=\"sisam\" gl=\"Japanese person, non-Ainu\" /> as",
+    "suggestion": "sisam",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The compound is written with a hyphen, but in the contrastive example later (line 393), it appears as 'sisamitak' (solid form). This may reflect a legitimate orthographic distinction (phrase vs compound), but the hyphenated form might be misleading if the standard compound form is unhyphenated.",
+    "quote": "<i lang=\"ain-Latn\">sisam-itak</i>",
+    "suggestion": "Clarify orthographic convention: use solid spelling for compounds unless hyphenation is phonologically or dialectally motivated.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#011",
+  "chapter": "noun-noun-compounding",
+  "lines": "121",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sik'.",
+    "quote": "m=\"sik-kap\"",
+    "suggestion": "sīk",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'sik-kap' appears with a hyphen here and in the table (line 190), but in the diagnostics section it is written as 'sik-kap' consistently. However, in the semantics section, 'sisam-itak' (line 313) uses a different hyphenation style — possible inconsistency in orthographic rendering of compounds.",
+    "quote": "<Ex m=\"sik-kap\" g=\"eye-skin\" tr=\"eyelid\" cite=\"nakagawa2024:263\" dial=\"HK\" note=\"sik 'eye' and kap 'skin, bark' are both in concept form; their immediate concatenation yields the compound 'eyelid'.\" />",
+    "suggestion": "Ensure consistent use of hyphens in compound representations across the chapter.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#050",
+  "chapter": "noun-noun-compounding",
+  "lines": "256-258",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue as above: 'be.long' is a verb gloss for a constituent that should be in concept form.",
+    "quote": "m=\"teke-tanne\" g=\"hand.POSS-be.long\" tr=\"thief (lit. 'the one whose hand reaches far')\"",
+    "suggestion": "Consider 'long' instead of 'be.long'.",
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as above: 'tanne' is glossed as 'be.long' in the example but defined as 'be long, be tall' in the prose. Inconsistent representation of the same root.",
+    "quote": "g=\"hand.POSS-be.long\"",
+    "suggestion": "Gloss consistently as 'be.long/tall' or 'be.long' if context justifies restriction.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#049",
+  "chapter": "noun-noun-compounding",
+  "lines": "247-249",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'claw.POSS-be.long' uses a verb form 'be.long' for 'tanne', but in the compound context, 'tanne' is said to appear in concept (nominal) form. While the literal translation supports the verb reading, the gloss as 'be.long' is inconsistent with the general claim about concept forms.",
+    "quote": "m=\"ami-tanne\" g=\"claw.POSS-be.long\" tr=\"crab (lit. 'the one whose claw is long')\"",
+    "suggestion": "If consistency with the concept-form rule is desired, consider glossing 'tanne' as 'long' (adjective/noun) rather than 'be.long'.",
+    "confidence": 0.4
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses 'be.long' for 'tanne', but in the dictionary-linked form (line 243), 'tanne' is glossed as 'be long, be tall'. The gloss should reflect the full semantic range or at least match the root's attested gloss.",
+    "quote": "g=\"claw.POSS-be.long\"",
+    "suggestion": "Update gloss to 'claw.POSS-be.long/tall' or 'claw.POSS-be.long' if 'tall' is contextually irrelevant.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#039",
+  "chapter": "noun-noun-compounding",
+  "lines": "337-339",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same problem as lines 160-163: a '‹contested›' tag on a claim supported only by a single Discord message, with no opposing source cited. The tag implies scholarly disagreement but none is referenced.",
+    "quote": "The compound accent data (nukopoli, aynu-corpora Discord 2024, <Ref k=\"aynucorporadiscord\" />) confirms that <i lang=\"ain-Latn\">cise-kor-kur</i> and <i lang=\"ain-Latn\">kotan-kor-kur</i> are single words with second-syllable accent ‹contested›.",
+    "suggestion": "Either provide a source for the contestation or change the tag to '‹speculative›' or remove it.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The date '2024' is incomplete (should be YYYY-MM-DD like elsewhere), and the citation repeats the same Discord source without additional scholarly support, while the claim remains tagged ‹contested› — inconsistent with the evidential hierarchy.",
+    "quote": "The compound accent data (nukopoli, aynu-corpora Discord 2024,",
+    "suggestion": "Provide complete date (e.g., 2024-12-09) and consider re-evaluating the epistemic tag if no stronger evidence exists.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#038",
+  "chapter": "noun-noun-compounding",
+  "lines": "160-163",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Epistemic tag ‹contested› is applied to a claim whose sole cited support is a single Discord attribution (nukopoli, aynu-corpora Discord) with no indication of contrary evidence. According to the reviewer briefing, claims supported only by Discord should not be tagged ‹contested› without additional source of contestation.",
+    "quote": "Community observation (nukopoli, aynu-corpora Discord, 2024-12-09) records that <i lang=\"ain-Latn\">cisekorkur</i> 'head of household' and <i lang=\"ain-Latn\">kotankorkur</i> 'village chief' each carry their accent on the second syllable of the compound as a single word, with no secondary peak on either internal constituent <Ref k=\"aynucorporadiscord\" /> ‹contested›.",
+    "suggestion": "Change ‹contested› to ‹speculative› or remove the epistemic tag, since the claim rests on a single community observation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is tagged ‹contested› but supported only by a Discord attribution, which is weaker than scholarly consensus; this risks epistemic inflation by giving community observation undue weight without corroboration.",
+    "quote": "Community observation (nukopoli, aynu-corpora Discord, 2024-12-09) records that",
+    "suggestion": "Reclassify as ‹speculative› or add a scholarly source to support the accent claim.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#057",
+  "chapter": "noun-noun-compounding",
+  "lines": "375",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes a literal translation in parentheses, but the `gl` attribute is meant for Leipzig-style glosses, not free translations. This mixes markup conventions.",
+    "quote": "<A w=\"haca-hapo\" gl=\"parents (lit. father and mother)\" />",
+    "suggestion": "Change `gl` to a simple gloss like \"father-mother\" and move the explanatory text to prose.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#056",
+  "chapter": "noun-noun-compounding",
+  "lines": "401-407",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The reference 'ijas2023' is not listed in the bibliography nor discussed elsewhere; it appears as an orphan citation. Also, the sentence structure is a run-on with a colon and semicolon; it could be clearer.",
+    "quote": "<Ref k=\"ijas2023\" /> presents the compound–phrase distinction as a key point for learners of Ainu, treating the presence or absence of internal syntactic modification (TAM morphology, person marking) on the first element as the diagnostic: a root bearing its own grammatical morphology is in a phrase; a root appearing directly before the head with no such morphology is a compound constituent.",
+    "suggestion": "Ensure the reference is included in the bibliography, and consider breaking the sentence into two for readability.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#055",
+  "chapter": "noun-noun-compounding",
+  "lines": "157-162",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The word 'community observation' is a register leak if the audience expects only published sources; but this is acceptable given the grammar's use of community sources. Low severity.",
+    "quote": "Community observation (nukopoli, aynu-corpora Discord, 2024-12-09) records that <i lang=\"ain-Latn\">cisekorkur</i> 'head of household' and <i lang=\"ain-Lt\">kotankorkur</i> 'village chief' each carry their accent on the second syllable of the compound as a single word, with no secondary peak on either internal constituent <Ref k=\"aynucorporadiscord\" /> ‹contested›.",
+    "suggestion": "None necessary.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#054",
+  "chapter": "noun-noun-compounding",
+  "lines": "33-34",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The HTML comment at the top is a pipeline artifact that could be removed for the final publication, but it may be intentional for source management. Low severity.",
+    "quote": "<!-- src/lib/grammar/chapters/noun-noun-compounding.svelte -->",
+    "suggestion": "Consider removing the comment if it is not needed in the final output.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#044",
+  "chapter": "noun-noun-compounding",
+  "lines": "25-30",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence says the head hosts the affiliative suffix and possessive affixes, but in the diagnostics (e.g., lines 73-97) it is shown that in compounds these affixes attach to the outermost edge of the compound, not specifically to the head constituent. There is a subtle contradiction: 'hosts' implies they attach directly to the head, but the compound diagnostics show they attach to the whole word.",
+    "quote": "The resulting compound is right-headed: the head is the rightmost constituent, which determines the grammatical class of the whole and hosts the <Xr ch=\"concept-form-affiliative-form\">affiliative (possessed) suffix</Xr> and personal possessive affixes. The diminutive <i lang=\"ain-Latn\">-po</i> is explicitly excluded from compound formation — it is a derivational suffix on a finished noun, not a compound constituent (see <Xr ch=\"nominal-derivation-diminutive-augmentative\" />) <Ref k=\"nakagawa2024\" p=\"265\" />.",
+    "suggestion": "Rephrase to clarify that the head determines the grammatical class, but affix attachment is at the word level: '…the head determines the grammatical class, and the whole compound hosts the affiliative suffix and possessive affixes at its outermost edge.'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#043",
+  "chapter": "noun-noun-compounding",
+  "lines": "8-11",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation covers a page range but the claim is broad and likely supported by multiple sources; the page range might be too broad to pinpoint the claim. This is a mild citation hygiene concern.",
+    "quote": "The process is productive across the lexicon and supplies much of the vocabulary for tools, animals, plants, social roles, and place names <Ref k=\"nakagawa2024\" p=\"261–272\" />.",
+    "suggestion": "Consider narrowing the page range or adding additional sources if the claim is a synthesis.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#041",
+  "chapter": "noun-noun-compounding",
+  "lines": "374-377",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "These examples are attributed to the same Discord discussion but are given without an epistemic tag, while the preceding paragraph claims about the same material are ‹contested›. This inconsistency in tagging within the same section is confusing.",
+    "quote": "The attested examples cited in the same discussion — <A w=\"haca-hapo\" gl=\"parents (lit. father and mother)\" /> as coordinate and <A w=\"po-at\" gl=\"womb (lit. child-place)\" /> as exocentric — function as lexical items rather than templates for new formation <Ref k=\"aynucorporadiscord\" />.",
+    "suggestion": "Either add an appropriate epistemic tag to these claims or harmonize the tagging across the paragraph.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#037",
+  "chapter": "noun-noun-compounding",
+  "lines": "417",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from '-pe'.",
+    "quote": "via <i lang=\"ain-Latn\">-p/-pe</i> and related suffixes is treated in",
+    "suggestion": "-pē",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#036",
+  "chapter": "noun-noun-compounding",
+  "lines": "394",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sisam'.",
+    "quote": "<i lang=\"ain-Latn\">sisamitak</i> (one compound word) means 'the Japanese",
+    "suggestion": "sisam",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'itak'.",
+    "quote": "sisamitak* (one compound word) means 'the Japanese",
+    "suggestion": "itak",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#035",
+  "chapter": "noun-noun-compounding",
+  "lines": "375",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'haca'.",
+    "quote": "<A w=\"haca-hapo\" gl=\"parents (lit. father and mother)\" /> as coordinate and",
+    "suggestion": "hāca",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'hapo'.",
+    "quote": "haca-hapo* as coordinate and",
+    "suggestion": "hāpo",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'po'.",
+    "quote": "<A w=\"po-at\" gl=\"womb (lit. child-place)\" /> as exocentric —",
+    "suggestion": "pō",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#034",
+  "chapter": "noun-noun-compounding",
+  "lines": "358",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kamuy'.",
+    "quote": "The same applies to sequences with",
+    "suggestion": "kamuy",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kamuy'.",
+    "quote": "<i lang=\"ain-Latn\">kamuy cise</i> 'a spirit's house (in context)' is attributive; a",
+    "suggestion": "kamuy",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#033",
+  "chapter": "noun-noun-compounding",
+  "lines": "352",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kane'.",
+    "quote": "<i lang=\"ain-Latn\">kane cise</i> 'a metal house' uses",
+    "suggestion": "kane",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ku='. It appears to be a clitic, and the macron is present in other examples like line 55.",
+    "quote": "<i lang=\"ain-Latn\">*ku=kane cise</i> as 'my metal's house' is not a grammatical possessive frame here), and the combination is",
+    "suggestion": "kū=",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kane'.",
+    "quote": "*ku=kane cise* as 'my metal's house' is not a grammatical possessive frame here), and the combination is",
+    "suggestion": "kane",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#032",
+  "chapter": "noun-noun-compounding",
+  "lines": "342",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'a='. It appears to be a clitic, and the macron is present in other examples like line 55.",
+    "quote": "<i lang=\"ain-Latn\">a=kor cise</i> 'my house', where",
+    "suggestion": "ā=",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#031",
+  "chapter": "noun-noun-compounding",
+  "lines": "338",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'cise'.",
+    "quote": "<i lang=\"ain-Latn\">cise-kor-kur</i> and",
+    "suggestion": "cīse",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kor-kur'.",
+    "quote": "<i lang=\"ain-Latn\">cise-kor-kur</i> and",
+    "suggestion": "kōrkur",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kotan'.",
+    "quote": "<i lang=\"ain-Latn\">kotan-kor-kur</i> are single words with second-syllable accent ‹contested›.",
+    "suggestion": "kōtan",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kor-kur'.",
+    "quote": "<i lang=\"ain-Latn\">kotan-kor-kur</i> are single words with second-syllable accent ‹contested›.",
+    "suggestion": "kōrkur",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'mosir'.",
+    "quote": "The same template extends to <i lang=\"ain-Latn\">mosir-kor-kur</i> 'ruler of the land' and",
+    "suggestion": "mosir",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kor-kur'.",
+    "quote": "mosir-kor-kur 'ruler of the land' and",
+    "suggestion": "kōrkur",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#030",
+  "chapter": "noun-noun-compounding",
+  "lines": "333",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'cise'.",
+    "quote": "note=\"N-kor-kur compound type; confirmed as a single phonological word by accent data (nukopoli, aynu-corpora Discord, 2024-12-09): accent falls on the second syllable of the whole compound.\"",
+    "suggestion": "cīse",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#029",
+  "chapter": "noun-noun-compounding",
+  "lines": "329",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'cise'.",
+    "quote": "m=\"cise-kor-kur\"",
+    "suggestion": "cīse",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'cise'.",
+    "quote": "g=\"house-have-person\"",
+    "suggestion": "cīse",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#027",
+  "chapter": "noun-noun-compounding",
+  "lines": "308",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'Poropet'.",
+    "quote": "<A w=\"Poropet\" gl=\"Horobetsu (place name)\" /> derives from",
+    "suggestion": "Pōropet",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'poro'.",
+    "quote": "<A w=\"poro\" gl=\"be big\" />+<A w=\"pet\" gl=\"river\" /> ('large river'), and",
+    "suggestion": "pōro",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'Siretoko'.",
+    "quote": "<A w=\"Siretoko\" gl=\"Shiretoko (place name)\" /> from",
+    "suggestion": "Siretoko",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sir'.",
+    "quote": "<A w=\"sir\" gl=\"appearance, land\" />+<A w=\"etoko\" gl=\"tip, front end\" />",
+    "suggestion": "sir",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#026",
+  "chapter": "noun-noun-compounding",
+  "lines": "285",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'koyki'.",
+    "quote": "note=\"cikap 'bird' in concept form is the implicit object of the transitive verb koyki 'catch, seize'; the compound names the hawk by its characteristic predatory action. Type ⑥: N + 2-arg-V.\"",
+    "suggestion": "kōyki",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#025",
+  "chapter": "noun-noun-compounding",
+  "lines": "280",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'koyki'.",
+    "quote": "m=\"cikap-koyki\"",
+    "suggestion": "kōyki",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'koyki'.",
+    "quote": "g=\"bird-catch\"",
+    "suggestion": "kōyki",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#024",
+  "chapter": "noun-noun-compounding",
+  "lines": "261",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'teke'.",
+    "quote": "note=\"teke is the affiliative form of tek 'hand'. The compound lexicalizes the thief as someone whose reach is long. Type ⑤: N.POSS + 1-arg-V.\"",
+    "suggestion": "teke",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#023",
+  "chapter": "noun-noun-compounding",
+  "lines": "256",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'teke'.",
+    "quote": "m=\"teke-tanne\"",
+    "suggestion": "teke",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#022",
+  "chapter": "noun-noun-compounding",
+  "lines": "252",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ami'.",
+    "quote": "note=\"ami is the affiliative form of am 'claw'; the compound names the crab by a characteristic body feature. Type ⑤: N.POSS + 1-arg-V.\"",
+    "suggestion": "āmi",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#021",
+  "chapter": "noun-noun-compounding",
+  "lines": "247",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ami'.",
+    "quote": "m=\"ami-tanne\"",
+    "suggestion": "āmi",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#020",
+  "chapter": "noun-noun-compounding",
+  "lines": "233",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'poro'.",
+    "quote": "For types ②③ the intransitive root — including property verbs such as",
+    "suggestion": "pōro",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'retar'.",
+    "quote": "<A w=\"retar\" gl=\"be white\" /> — appears in what is",
+    "suggestion": "retār",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#019",
+  "chapter": "noun-noun-compounding",
+  "lines": "226",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'koyki'.",
+    "quote": "<td><i lang=\"ain-Latn\">cikap-koyki</i></td>",
+    "suggestion": "kōyki",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'koyki'.",
+    "quote": "<td>bird–catch</td>",
+    "suggestion": "kōyki",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#018",
+  "chapter": "noun-noun-compounding",
+  "lines": "218",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ami'.",
+    "quote": "<td><i lang=\"ain-Latn\">ami-tanne</i></td>",
+    "suggestion": "āmi",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ami'.",
+    "quote": "<td>claw.POSS–be.long</td>",
+    "suggestion": "āmi",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#017",
+  "chapter": "noun-noun-compounding",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'menoko'.",
+    "quote": "<td><i lang=\"ain-Latn\">menoko-monrayke</i></td>",
+    "suggestion": "menōko",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'menoko'.",
+    "quote": "<td>woman–work</td>",
+    "suggestion": "menōko",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#016",
+  "chapter": "noun-noun-compounding",
+  "lines": "197",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'rep'.",
+    "quote": "<td><i lang=\"ain-Latn\">rep-ni</i></td>",
+    "suggestion": "rēp",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'rep'.",
+    "quote": "<td>be.offshore–tree</td>",
+    "suggestion": "rēp",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#015",
+  "chapter": "noun-noun-compounding",
+  "lines": "190",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sik'.",
+    "quote": "<td><i lang=\"ain-Latn\">sik-kap</i></td>",
+    "suggestion": "sīk",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sik'.",
+    "quote": "<td>eye–skin</td>",
+    "suggestion": "sīk",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#014",
+  "chapter": "noun-noun-compounding",
+  "lines": "158",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'cise'.",
+    "quote": "cisekorkur 'head of household' and",
+    "suggestion": "cīse",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'korkur'.",
+    "quote": "cisekorkur 'head of household' and",
+    "suggestion": "kōrkur",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'kotan'.",
+    "quote": "kotankorkur 'village chief' each carry their accent on the second",
+    "suggestion": "kōtan",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'korkur'.",
+    "quote": "kotankorkur 'village chief' each carry their accent on the second",
+    "suggestion": "kōrkur",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#013",
+  "chapter": "noun-noun-compounding",
+  "lines": "130",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'ni'.",
+    "quote": "combines with <A w=\"ni\" gl=\"tree, wood\" /> to give <i lang=\"ain-Latn\">ni-kap</i> 'bark', and with <A w=\"cep\" gl=\"fish\" /> to give",
+    "suggestion": "nī",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'retar'.",
+    "quote": "Because property verbs such as <A w=\"retar\" gl=\"be white\" /> occur in concept form without any morphological marking, the",
+    "suggestion": "retār",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#012",
+  "chapter": "noun-noun-compounding",
+  "lines": "126",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'sik'.",
+    "quote": "note=\"sik 'eye' and kap 'skin, bark' are both in concept form; their immediate concatenation yields the compound 'eyelid'.\"",
+    "suggestion": "sīk",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#010",
+  "chapter": "noun-noun-compounding",
+  "lines": "104",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'retar'.",
+    "quote": "retatcir\" (where <i lang=\"ain-Latn\">retat</i> is a sandhi reduction of <i lang=\"ain-Latn\">retar</i> and",
+    "suggestion": "retār",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#009",
+  "chapter": "noun-noun-compounding",
+  "lines": "95",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'mat'.",
+    "quote": "note=\"Compound: mat appears in its concept form inside the compound; the affiliative -i attaches to the right edge of the whole matutar unit.\"",
+    "suggestion": "māt",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#008",
+  "chapter": "noun-noun-compounding",
+  "lines": "90",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'a='. It appears to be a clitic, and the macron is present in other examples like line 55.",
+    "quote": "m=\"a=mat-utar-i\"",
+    "suggestion": "ā=",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#007",
+  "chapter": "noun-noun-compounding",
+  "lines": "86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'mat'.",
+    "quote": "note=\"Phrase: affiliative suffix -i attaches to mac (the concept-form stem of mat 'woman, wife'), and utar 'people/companions' is a separate syntactic head.\"",
+    "suggestion": "māt",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#006",
+  "chapter": "noun-noun-compounding",
+  "lines": "81",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'a='. It appears to be a clitic, and the macron is present in other examples like line 55.",
+    "quote": "m=\"a=mac-i utar\"",
+    "suggestion": "ā=",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#005",
+  "chapter": "noun-noun-compounding",
+  "lines": "59",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'a='. It appears to be a clitic, and the macron is present in other examples like line 55.",
+    "quote": "m=\"a=poro-yupi\"",
+    "suggestion": "ā=",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#004",
+  "chapter": "noun-noun-compounding",
+  "lines": "55",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'a='. It appears to be a clitic, and the macron is present in other examples like line 59.",
+    "quote": "note=\"Syntactic phrase: the possessive affix a= precedes yupi alone; poro is an independent attributive verb.\"",
+    "suggestion": "ā=",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#003",
+  "chapter": "noun-noun-compounding",
+  "lines": "28",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The macron is missing from 'po'.",
+    "quote": "The diminutive <i lang=\"ain-Latn\">-po</i> is explicitly excluded from compound formation — it is a derivational suffix on a finished noun, not a compound constituent",
+    "suggestion": "-pō",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#002",
+  "chapter": "noun-noun-compounding",
+  "lines": "21",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'treated as nominal' is slightly vague. It could be clearer if it specified *how* they are treated as nominal.",
+    "quote": "all reduce to the same underlying N+N type once intransitive roots are treated as nominal",
+    "suggestion": "all reduce to the same underlying N+N type once intransitive roots are treated as nominals",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#001",
+  "chapter": "noun-noun-compounding",
+  "lines": "16",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence is slightly awkward due to the repetition of 'root'. Consider rephrasing for better flow.",
+    "quote": "The base structural type is the concatenation of two nominal concept forms: a modifier root followed by a head root, the head carrying the compound's semantic class.",
+    "suggestion": "The base structural type is the concatenation of two nominal concept forms: a modifier followed by a head, with the head carrying the compound's semantic class.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#053",
+  "chapter": "noun-noun-compounding",
+  "lines": "413-416",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, a claim sourced to a Discord discussion is tagged '‹contested›' without indication of what contests it. The epistemic tag is not supported by the citation.",
+    "quote": "Community discussion (nukopoli, aynu-corpora Discord, 2023-12-25) notes that verbs taking an intransitive-type modifier present an ambiguity between incorporation and lexicalized compounding that cannot always be resolved by surface form alone <Ref k=\"aynucorporadiscord\" /> ‹contested›.",
+    "suggestion": "Change to '‹speculative›' or remove the tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#052",
+  "chapter": "noun-noun-compounding",
+  "lines": "313-315",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag '‹corpus-confirmed›' is used for the claim that 'sisam-itak' is restrictive. However, the only support cited is Nakagawa (2024: 233), and the compound itself is not directly from corpus data. The tag seems inflated relative to the source provided.",
+    "quote": "sisam-itak 'the Japanese language (as a named category)' is restrictive with <A w=\"sisam\" gl=\"Japanese person, non-Ainu\" /> as modifier ‹corpus-confirmed›.",
+    "suggestion": "If the claim is is supported only by Nakagawa and not by a corpus, change the tag to something like '‹consensus›' or remove it.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#048",
+  "chapter": "noun-noun-compounding",
+  "lines": "224-227",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "For type ⑥ (N + 2-arg-V), the gloss 'bird–catch' treats 'koyki' as a verb (catch), but again the text claims that within compounds, all constituents appear in concept (nominal) form. The gloss as a verb is inconsistent with that claim. Also, the translation 'hawk' suggests an agent noun ('one that catches birds'), which is not reflected in the gloss.",
+    "quote": "<td><i lang=\"ain-Latn\">cikap-koyki</i></td> <td>bird–catch</td> <td>hawk</td>",
+    "suggestion": "Consider a gloss like 'bird-catching' or a nominalized form, and ensure consistency with the notion that verbs appear as nouns inside compounds.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#047",
+  "chapter": "noun-noun-compounding",
+  "lines": "204-206",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'woman–work' for type ③ (N + 1-arg-V) treats 'monrayke' as a verb (work), but the structure is N + 1-arg-V, and the text says these appear in nominal concept form. The translation 'women's work' is possessive, which reflects a noun-noun relationship, not verb+noun. There is a mismatch between the claimed structural type (N + V) and the translation (which reads as N-N possessive).",
+    "quote": "<td><i lang=\"ain-Latn\">menoko-monrayke</i></td> <td>woman–work</td> <td>women's work</td>",
+    "suggestion": "Either adjust the translation to reflect a verb+noun compound (e.g., 'woman-working' or 'work of women') or reconsider whether this example truly fits the N+1-arg-V type.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#046",
+  "chapter": "noun-noun-compounding",
+  "lines": "197-199",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'be.offshore' for 'rep' is a verb gloss, but the table describes type ② as '1-arg-V + N' (one-argument verb + noun). However, in the text (lines 233-236) it says that intransitive roots appear in nominal concept form inside compounds. The gloss as a verb ('be.offshore') is inconsistent with the claim that they appear as nouns. The same issue applies to type ③ and others where verb glosses are used.",
+    "quote": "<td><i lang=\"ain-Latn\">rep-ni</i></td> <td>be.offshore–tree</td> <td>driftwood</td>",
+    "suggestion": "Consider using nominal glosses where appropriate, e.g., 'offshore' instead of 'be.offshore', to align with the claim that constituents are in concept form. Alternatively, note explicitly that verb meanings are still relevant.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#045",
+  "chapter": "noun-noun-compounding",
+  "lines": "150-153",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'type ⑤ below' but type ⑤ is described later (lines 239-270). The cross-reference 'below' is ambiguous; also the chapter structure has type ⑤ as a subsection before type ⑥, so 'below' works spatially but could be clearer. Additionally, the note about morphophonology is not further elaborated, and there is no cross-reference to where the affiliative suffix morphophonology is discussed within this chapter.",
+    "quote": "In type ⑤ below the modifier appears in the affiliative (possessed) form instead. The morphophonological behavior of the affiliative suffix at such junctures is treated in <Xr ch=\"affiliative-suffix-morphophonology\" />.",
+    "suggestion": "Consider adding a specific cross-reference to the section on type ⑤ rather than 'below', and ensure the morphophonology discussion is consistent with the chapter's content.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#042",
+  "chapter": "noun-noun-compounding",
+  "lines": "393-395",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is used for a claim sourced only to a Discord message, not a corpus. The tag implies corpus evidence, but the only cited support is a community discussion.",
+    "quote": "while <i lang=\"ain-Latn\">sisamitak</i> (one compound word) means 'the Japanese language (as a named category)' (nukopoli, aynu-corpora Discord, 2024-11-05) <Ref k=\"aynucorporadiscord\" /> ‹corpus-suggested›.",
+    "suggestion": "Change to ‹speculative› or remove the epistemic tag entirely if it is unsupported by corpus data.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-noun-compounding~p1#040",
+  "chapter": "noun-noun-compounding",
+  "lines": "370-374",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, a claim sourced solely to a Discord discussion is tagged ‹contested› without indication of what contests it or who contests it. The tag is unsupported by the citation.",
+    "quote": "Community discussion (antitwilight, aynu-corpora Discord, 2026-06-02) proposes that this sparsity reflects the verb-centred character of Ainu nominal derivation… <Ref k=\"aynucorporadiscord\" /> ‹contested›.",
+    "suggestion": "Remove ‹contested› or replace with ‹speculative›, as the source is a single community contribution.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

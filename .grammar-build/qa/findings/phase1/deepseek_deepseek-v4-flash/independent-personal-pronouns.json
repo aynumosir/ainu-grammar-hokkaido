@@ -1,0 +1,57 @@
+[
+ {
+  "lines": "389,225",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "prose: Shizunai anokay (line 389); table: anoka (line 225)",
+  "issue": "The prose claims Shizunai fourth‑person plural pronoun is anokay, but the dialect paradigm table shows anoka (without final y). This directly contradicts the table.",
+  "suggestion": "Change 'anokay' to 'anoka' in line 389 to match the table, or add an explicit comment about variation.",
+  "chapter": "independent-personal-pronouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "24-25, 162-233",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The sole pronoun that is dialect-invariant across all of Hokkaido is 2SG eani.",
+  "issue": "The table of dialects does not include Horobetsu SG forms, so the claim that eani is invariant across all Hokkaido is not supported by the data presented in the chapter. The table only gives Horobetsu PL, leaving Horobetsu SG unattested.",
+  "suggestion": "Either add Horobetsu SG data to the table or qualify the claim (e.g., '…across all dialects for which data are available').",
+  "chapter": "independent-personal-pronouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "236-239",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Corpus search returns kani at 502 tokens, eani at 716, and asinuma at 668; by contrast, the first-person exclusive plural coka reaches only 39 tokens ‹corpus-confirmed›.",
+  "issue": "No source citation is given for the corpus token counts. The epistemic tag ‹corpus-confirmed› is applied only to the coka figure, but the other numbers presumably come from the same corpus and lack any citation or tag.",
+  "suggestion": "Add a reference to the corpus used (e.g., a citation key or a note specifying the corpus) and consider tagging all numbers consistently.",
+  "chapter": "independent-personal-pronouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "407",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "<Ex\n    ain=\"asinuma anakne iwor so ka a=ehoyupu wa\"\n    m=\"asinuma anak=ne iwor so ka a=e-hoyupu wa\"\n    ... />",
+  "issue": "The Ex element has an extra attribute 'ain' that is not part of the standard set of attributes (m, g, tr, cite, dial, place, note). It is likely a leftover from an earlier data model or a copy‑paste error.",
+  "suggestion": "Remove the 'ain' attribute from the Ex element.",
+  "chapter": "independent-personal-pronouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "118,181",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Composition table: 1PL.EXCL (line 118); Dialect table: 1 (line 181).",
+  "issue": "The composition table labels the first‑person plural as '1PL.EXCL', explicitly marking clusivity, while the dialect table uses only '1'. This inconsistency in labeling may confuse readers about whether the first‑person plural is always exclusive.",
+  "suggestion": "Align the labels: either both use '1(EXCL)' or the dialect table also explicitly notes exclusive or includes a footnote about clusivity.",
+  "chapter": "independent-personal-pronouns",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

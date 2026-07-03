@@ -1,0 +1,974 @@
+[
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#029",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "81-82",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss assigns singular 'person' to 'kur', while the free translation uses plural 'ones'. In context 'kur' likely denotes person-like figures, but the number mismatch between gloss and translation is potentially misleading.",
+    "quote": "g=\"two shining person\" tr=\"two shining ones\"",
+    "suggestion": "Either gloss 'person' (with number unmarked) and accept the translation 'ones', or adjust the gloss to 'shining person(s)' or 'person (unmarked for number)' to clarify.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss uses singular 'person' but the free translation uses plural 'ones'. In the table (line 230) the gloss is given as 'two shining ones // three shining ones', adding inconsistency. While this may be intentional (English singular for unmarked Ainu 'kur'), the mismatch in number between gloss and translation is at least confusing.",
+    "quote": "g=\"two shining person\" vs g=\"three shining person\" (with tr 'two shining ones' / 'three shining ones')",
+    "suggestion": "Either gloss 'person(s)' or add a note that 'kur' is unmarked for number and the translation reflects English count conventions.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'two shining person' does not match the number: 'kur' is glossed as 'person' (singular), but 'tu' means 'two', and the free translation is 'two shining ones'. The gloss should reflect plural or collective number.",
+    "quote": "tu imeru kur",
+    "suggestion": "Change gloss to 'two shining people' or 'two shining persons' to match translation.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#031",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "331-332",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, the phrase 'read for this grammar' is process-oriented and reads as an internal note. It belongs to the production team's review, not to the argument.",
+    "quote": "no source read for this grammar addresses the diachrony or areality of the couplet device directly",
+    "suggestion": "Rephrase to 'The available sources on Hokkaido Ainu do not address the diachrony or areality of the couplet device directly' or simply 'No sources known to the present authors address…'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Epistemic tag appears inline without guillemets.",
+    "quote": "‹speculative›",
+    "suggestion": "Change to «speculative».",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#019",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "245",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§3\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§3\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community source attribution `(nukopoli, 2026, asserted; <Ref k=\"aynucorporadiscord\" />)` includes the word 'asserted' which is not standard for community source attributions and might be a pipeline artifact.",
+    "quote": "nukopoli, 2026, asserted",
+    "suggestion": "Remove 'asserted' and ensure the format is consistent with other community source attributions.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Endō 2022: §3, characteristic 4` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"endo2022\" p=\"§3\" />`).",
+    "quote": "Endō 2022: §3, characteristic 4",
+    "suggestion": "Standardize the citation format to `<Ref k=\"endo2022\" p=\"§3, characteristic 4\" />` or similar.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹consensus› is absent, but the claim is presented without a grade. However, a Discord attribution is used as corroborating evidence for Endō, which may inflate its epistemic status. Discord sources should not be used to confirm scholarly consensus without caution.",
+    "quote": "(nukopoli, 2026, asserted; corroborates Endō 2022: §3, characteristic 4)",
+    "suggestion": "Add appropriate epistemic tag such as ‹corpus-suggested› or ‹contested› to reflect reliance on community source.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#016",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "158",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"sato2008\" p=\"264\"` is missing a section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"sato2008\" p=\"264\"",
+    "suggestion": "Add a section locator to the `Ref k=\"sato2008\"` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sentence attributes a claim to Satō 2008, but the only citation is to p.264, which was already cited for the example. No specific page or quote is given for the claim about archaic forms being markers of elevated register.",
+    "quote": "Satō 2008 notes the archaic counting forms otu and ore",
+    "suggestion": "Add more precise locator if possible, or verify that p.264 supports this interpretive claim.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#035",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "90",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 80: 'kur' is glossed as 'person' (singular), but 're' means 'three', and the translation is 'three shining ones'. The gloss fails to reflect plurality.",
+    "quote": "re imeru kur",
+    "suggestion": "Change gloss to 'three shining people' or 'three shining persons'.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#034",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "54",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 43: 'nispa' is treated as a single lexical item in translation ('chief'), but the segmentation presents it as a separate word without internal glossing. The morpheme segmentation and glossing are inconsistent with the assumption that 'nispa' is atomic.",
+    "quote": "tuyma nispa",
+    "suggestion": "Ensure consistent treatment of 'nispa' across examples; either segment it if it has internal structure or keep it whole.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#033",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "43",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'near chief' does not match the morpheme segmentation: 'hanke' is correctly glossed as 'near', but 'nispa' is a single word meaning 'chief, lord', yet it is not segmented or glossed as a compound. The segmentation implies two separate morphemes, but no internal structure is indicated.",
+    "quote": "hanke nispa",
+    "suggestion": "Revise segmentation to match gloss or vice versa; e.g., if 'nispa' is unanalyzable, leave as one unit: m=\"hanke nispa\" g=\"near chief\".",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#028",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "81-82, 230",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The same phrase 'tu imeru kur // re imeru kur' is glossed differently: the Ex tag gives a literal gloss with singular 'person', while the table uses the free translation 'two shining ones // three shining ones'. This inconsistency will confuse readers.",
+    "quote": "g=\"two shining person\" tr=\"two shining ones\" (lines 81-82) vs <td>two shining ones // three shining ones</td> (line 230)",
+    "suggestion": "Harmonize the table with the literal gloss (e.g. 'two shining person (persons)' or change the Ex gloss to match the free translation, but keep consistent). The table likely intends the free translation, so changing the Ex gloss to 'two shining person' and adding a note about number may suffice, or the table can show the literal gloss. Consistency is key.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#040",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "299",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue: epistemic tag appears inline without guillemets, violating formatting consistency.",
+    "quote": "‹speculative›",
+    "suggestion": "Change to «speculative».",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#039",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "294",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹contested› appears inline in the prose without guillemets, making it visible to readers. These tags should be formatted consistently, preferably in guillemets.",
+    "quote": "‹contested›",
+    "suggestion": "Change to «contested».",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#038",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "283",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› is visible in the prose, which violates the instruction that such tags should not appear in the final text unless enclosed in guillemets or otherwise marked. Here it is inline and unmarked.",
+    "quote": "‹corpus-suggested›",
+    "suggestion": "Wrap in guillemets: «corpus-suggested».",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#032",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "245-246",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The word 'asserted' is an editorial tag that belongs in the production pipeline. It is unusual in a published grammar to mark a source explicitly as 'asserted'; either the claim is accepted or it is not. The phrasing suggests uncertainty about the reliability of the Discord source, but an evidence-grade tag would be more standard.",
+    "quote": "(nukopoli, 2026, <em>asserted</em>; corroborates Endō 2022: §3, characteristic 4)",
+    "suggestion": "Either remove 'asserted' and let the citation stand (with an appropriate epistemic tag if needed) or rephrase as '(nukopoli, 2026, personal communication) which corroborates Endō 2022: §3, characteristic 4'.",
+    "confidence": 0.65
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The italicized 'asserted' within the citation appears to be an internal editorial marking; it is not typical of published reference works and may confuse readers.",
+    "quote": "<em>asserted</em>",
+    "suggestion": "Consider removing 'asserted' and instead use an evidence-grade tag like ‹original-needs-review› if the team has not yet verified the claim, or simply cite without such a label.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#027",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "337",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"okuda2022\" p=\"§2.2\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"okuda2022\" p=\"§2.2\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"okuda2022\"` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹speculative› is applied to a claim about the typological significance of the absence of phonological requirements, but the supporting citations do not explicitly address this speculative aspect.",
+    "quote": "speculative",
+    "suggestion": "Verify if the sources indeed support this speculative claim, or re-evaluate the tag.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#026",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "306",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"sato2008\" p=\"263–264\"` is missing a section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"sato2008\" p=\"263–264\"",
+    "suggestion": "Add a section locator to the `Ref k=\"sato2008\"` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§3.4\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§3.4\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#025",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "299",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹speculative› is applied to a claim about genre-tagged corpus quantification, but the supporting citation `Ref k=\"endo2022\" p=\"§3\"` does not directly support this specific claim.",
+    "quote": "speculative",
+    "suggestion": "Verify if the cited section indeed supports this claim, or find a more specific citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#024",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "294",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is applied to a claim about couplet density tracking a continuum, but the supporting citations do not explicitly address this contested nature.",
+    "quote": "contested",
+    "suggestion": "Verify if the sources indeed contest this claim, or re-evaluate the tag.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"kindaichi1935\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"kindaichi1935\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"kindaichi1935\"` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#023",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "283",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim about metrical insufficiency resolution, but the supporting citation `Ref k=\"sakehe-refrain-and-sung-verse-structure\"` does not directly support this specific claim.",
+    "quote": "corpus-suggested",
+    "suggestion": "Verify if the cited section indeed supports this claim, or find a more specific citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#022",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "274",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§4\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§4\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"sato2008\" p=\"264\"` is missing a section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"sato2008\" p=\"264\"",
+    "suggestion": "Add a section locator to the `Ref k=\"sato2008\"` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§3\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§3\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#021",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "262",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§4\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§4\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#020",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "256",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Endō 2022: §4` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"endo2022\" p=\"§4\" />`).",
+    "quote": "Endō 2022: §4",
+    "suggestion": "Standardize the citation format to `<Ref k=\"endo2022\" p=\"§4\" />` or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#018",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "212",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"sato2008\" p=\"264\"` is missing a section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"sato2008\" p=\"264\"",
+    "suggestion": "Add a section locator to the `Ref k=\"sato2008\"` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#017",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "177",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"nakagawa1995\" p=\"45\"` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"nakagawa1995\" p=\"45\" />`).",
+    "quote": "Ref k=\"nakagawa1995\" p=\"45\"",
+    "suggestion": "Standardize the citation format to `<Ref k=\"nakagawa1995\" p=\"45\" />` or similar.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"tamura1996\" p=\"xv–xvii\"` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"tamura1996\" p=\"xv–xvii\" />`).",
+    "quote": "Ref k=\"tamura1996\" p=\"xv–xvii\"",
+    "suggestion": "Standardize the citation format to `<Ref k=\"tamura1996\" p=\"xv–xvii\" />` or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#015",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "148",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Satō 2008: 264` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"sato2008\" p=\"264\" />`).",
+    "quote": "Satō 2008: 264",
+    "suggestion": "Standardize the citation format to `<Ref k=\"sato2008\" p=\"264\" />` or similar.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"sato2008\" p=\"264\"` is missing a section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"sato2008\" p=\"264\"",
+    "suggestion": "Add a section locator to the `Ref k=\"sato2008\"` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§4\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§4\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#014",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "140",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is applied to a claim about the analytical distinction between antonymic and synonymic types, but the supporting citations do not explicitly address this contested nature.",
+    "quote": "contested",
+    "suggestion": "Verify if the sources indeed contest this distinction, or re-evaluate the tag.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#013",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "133",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The cross-reference to 'below' uses an anchor link that is not standard for chapter sections. It should likely be a cross-chapter link or a standard internal link.",
+    "quote": "§<a href=\"#tu-re-formula\">below</a>",
+    "suggestion": "Change to `<Xr ch=\"parallelism-couplets-and-word-pairs\" s=\"tu-re-formula\" />` or similar.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#012",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "111",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§4\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§4\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `sato2008 p=\"264\"` is missing a section locator, unlike the other citations in this sentence.",
+    "quote": "sato2008 p=\"264\"",
+    "suggestion": "Add a section locator to the `sato2008` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#011",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "105",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§4\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§4\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#010",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "100",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Endō 2022: ch.10 §4, ex.17` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"endo2022\" p=\"§4\" />`).",
+    "quote": "Endō 2022: ch.10 §4, ex.17",
+    "suggestion": "Standardize the citation format to `<Ref k=\"endo2022\" p=\"ch.10 §4, ex.17\" />` or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#009",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "94",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `nakagawa1995:45` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"nakagawa1995\" p=\"45\" />`).",
+    "quote": "nakagawa1995:45",
+    "suggestion": "Standardize the citation format to `<Ref k=\"nakagawa1995\" p=\"45\" />` or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#008",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "84",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `nakagawa1995:45` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"nakagawa1995\" p=\"45\" />`).",
+    "quote": "nakagawa1995:45",
+    "suggestion": "Standardize the citation format to `<Ref k=\"nakagawa1995\" p=\"45\" />` or similar.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Nakagawa 1995: 45; cited in Endō 2022: ch.10 §4, ex.16` is not in the same format as other citations in the chapter and mixes citation styles.",
+    "quote": "Nakagawa 1995: 45; cited in Endō 2022: ch.10 §4, ex.16",
+    "suggestion": "Standardize the citation format to `<Ref k=\"nakagawa1995\" p=\"45\" />` and `<Ref k=\"endo2022\" p=\"ch.10 §4, ex.16\" />`.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#007",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "71",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Ref k=\"endo2022\" p=\"§4\"` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "Ref k=\"endo2022\" p=\"§4\"",
+    "suggestion": "Add a page number or section locator to the `Ref k=\"endo2022\"` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#006",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "65",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Endō 2022: ch.10 §4, ex.19` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"endo2022\" p=\"§4\" />`).",
+    "quote": "Endō 2022: ch.10 §4, ex.19",
+    "suggestion": "Standardize the citation format to `<Ref k=\"endo2022\" p=\"ch.10 §4, ex.19\" />` or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#005",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "58",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `endo2022` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "endo2022",
+    "suggestion": "Add a page number or section locator to the `endo2022` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Endō 2022: ch.10 §4, ex.18` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"endo2022\" p=\"§4\" />`).",
+    "quote": "Endō 2022: ch.10 §4, ex.18",
+    "suggestion": "Standardize the citation format to `<Ref k=\"endo2022\" p=\"ch.10 §4, ex.18\" />` or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#004",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "48",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `endo2022` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "endo2022",
+    "suggestion": "Add a page number or section locator to the `endo2022` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `Endō 2022: ch.10 §4, ex.18` is not in the same format as other citations in the chapter (e.g., `<Ref k=\"endo2022\" p=\"§4\" />`).",
+    "quote": "Endō 2022: ch.10 §4, ex.18",
+    "suggestion": "Standardize the citation format to `<Ref k=\"endo2022\" p=\"ch.10 §4, ex.18\" />` or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#003",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "23",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `sato2008 p=\"264\"` is missing a section locator, unlike the other citations in this sentence.",
+    "quote": "sato2008 p=\"264\"",
+    "suggestion": "Add a section locator to the `sato2008` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `endo2022` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "endo2022",
+    "suggestion": "Add a page number or section locator to the `endo2022` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `endo2022` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "endo2022",
+    "suggestion": "Add a page number or section locator to the `endo2022` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#002",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "17",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `endo2022` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "endo2022",
+    "suggestion": "Add a page number or section locator to the `endo2022` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#001",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "12",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `kindaichi1935` is missing a page number or section locator, unlike the other citations in this sentence.",
+    "quote": "kindaichi1935",
+    "suggestion": "Add a page number or section locator to the `kindaichi1935` citation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `sato2008 p=\"264\"` is missing a section locator, unlike the other citations in this sentence.",
+    "quote": "sato2008 p=\"264\"",
+    "suggestion": "Add a section locator to the `sato2008` citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#037",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "204,205",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The numerals 'tu' and 're' are written without macrons, but if the grammar's standard includes macrons for vowel length, they may require them (e.g., 'tú', 'ré'). Inconsistent with potential macron usage elsewhere.",
+    "quote": "tu // re",
+    "suggestion": "Check and standardize macron usage for all numeral forms in the chapter.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#036",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "194,195",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in macron usage: 'hanke' lacks a macron, but the standard romanization of this word is often 'hanke' (no macron), while 'tuyma' should be 'tuyhma' or 'tuyma'? However, 'tuyma' appears without macron throughout, but if other words use macrons for vowel length, this may be inconsistent. Check: 'hanke' vs 'hánke'? But more importantly, 'tuyma' is consistently unmarked, though some sources mark it as 'túyma'.",
+    "quote": "hanke // tuyma",
+    "suggestion": "Verify standard macron usage in this grammar's orthography; ensure consistent marking across all instances of these words.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "parallelism-couplets-and-word-pairs~p1#030",
+  "chapter": "parallelism-couplets-and-word-pairs",
+  "lines": "175-177",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'read for this chapter' is a production-oriented meta-comment rather than reader-facing language. It references the compiling process instead of the evidence itself.",
+    "quote": "directly attested in the primary sources read for this chapter",
+    "suggestion": "Rephrase to 'directly attested in the sources cited for this section' or simply 'attested in the following sources'.",
+    "confidence": 0.85
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Another instance of the meta-commentary pattern 'read for this chapter'. While less obtrusive than the full phrase, it still subtly addresses the production workflow.",
+    "quote": "the primary sources read for this chapter",
+    "suggestion": "Change to 'the primary sources consulted for this section' or simply 'the following sources'.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

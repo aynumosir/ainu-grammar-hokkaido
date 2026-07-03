@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "58-60",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "e= counterpart: <i lang=\"ain-Latn\">eci=</i> (no separate 2SG-only form exists for this cell)",
+  "issue": "The table column header is 'e= counterpart', but the cell for the portmanteau row gives 'eci=' instead of the expected singular counterpart. This is inconsistent with the first three rows, which give the corresponding singular form (e= 2SG.S, e= 2SG.A, e= 2SG.O). The cell should either be empty or indicate that no counterpart exists.",
+  "suggestion": "Replace the cell content with '—' or 'none' to match the column header, or revise the column header to clarify that it shows the relevant form for comparison.",
+  "confidence": 1,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "79-108",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "2PL (Saru–Chitose baseline) … 2PL (Ishikari, Tokachi)",
+  "issue": "The table header limits the baseline group to 'Saru–Chitose', but the text at line 132–134 states that Nakagawa records eci= as the 2PL index in Saru, Chitose, Horobetsu, and Shizunai, while Ishikari and Tokachi also show es=. The table omits Horobetsu and Shizunai from the baseline, which is a minor inconsistency with the broader textual description.",
+  "suggestion": "Either expand the table header to include the full list (e.g., 'Saru, Chitose, Horobetsu, Shizunai') or add a note that the table is simplified for illustration.",
+  "confidence": 0.7,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "48-49, 53",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "3rd person",
+  "issue": "In the table at lines 48 and 53, the phrase '3rd person' is used, while elsewhere in the chapter (e.g., lines 70, 220) the term 'third person' is spelled out. This is a minor orthographic inconsistency within the chapter.",
+  "suggestion": "Standardize to either '3rd person' or 'third person' throughout the chapter for consistency.",
+  "confidence": 0.5,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

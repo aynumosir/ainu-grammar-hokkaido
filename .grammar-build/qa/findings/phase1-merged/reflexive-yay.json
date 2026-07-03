@@ -1,0 +1,1941 @@
+[
+ {
+  "id": "reflexive-yay~p1#062",
+  "chapter": "reflexive-yay",
+  "lines": "316-325",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'PFV' (perfective) for 'a', but the translation says 'Again and again giving thanks' which implies iterative/habitual, not perfective. The gloss and translation are mismatched in aspect. Additionally, the gloss has '4.A=say' twice but the translation does not reflect the repetition — 'as she was telling it' is singular.",
+    "quote": "m=\"petkorkamuy kamuy katkemat a=ko-yay-irayke hi a=ye a a=ye a kor\" g=\"river.deity deity woman 4.A=APPL-REFL-be.grateful NMLZ 4.A=say PFV 4.A=say PFV CONJ\" tr=\"Again and again giving thanks to the river-deity woman, as she was telling it …\"",
+    "suggestion": "Either change the gloss to reflect iterative aspect (e.g., 'ITER' or 'HAB') or adjust the translation to match the perfective gloss.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme segmentation 'ko-yay-irayke' is glossed as 'APPL-REFL-be.grateful', but the free translation is 'be grateful to someone for something one has experienced oneself'. The gloss does not reflect the double valency shift: applicative (ko-) and reflexive (yay-) both alter argument structure, but the glossing is underspecified.",
+    "quote": "a=ko-yay-irayke",
+    "suggestion": "Revise gloss to 'APPL-REFL-thank' or 'APPL-REFL-be.grateful' with explanation in note.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#046",
+  "chapter": "reflexive-yay",
+  "lines": "318",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ko-yay-irayke' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ko-yay-irayke",
+    "suggestion": "Italicize 'ko-yay-irayke' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The 'ain' attribute has 'koyayrayke' while the 'm' attribute has 'ko-yay-irayke'. The note (line 324) explains that 'yay-irayke surfaces as yayrayke', but the 'ain' form has 'koyayrayke' (with 'ko' attached) while the 'm' form has 'ko-yay-irayke'. The 'ain' form should reflect the surface pronunciation, but 'koyayrayke' has only one 'y' (from 'yay' + 'irayke' → 'yayrayke' → 'koyayrayke'), while the 'm' form has 'ko-yay-irayke' with two 'y's. This is inconsistent: if the surface form is 'koyayrayke', the segmented form should be 'ko-yay-rayke' or similar, not 'ko-yay-irayke'.",
+    "quote": "ain=\"petkorkamuy kamuy katkemat a=koyayrayke hi a=ye a a=ye a kor\" m=\"petkorkamuy kamuy katkemat a=ko-yay-irayke hi a=ye a a=ye a kor\"",
+    "suggestion": "Either change the 'm' form to 'ko-yay-rayke' to match the surface form, or change the 'ain' form to 'koyayirayke' to match the segmented form.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#013",
+  "chapter": "reflexive-yay",
+  "lines": "95",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yaykarkarsere' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yaykarkarsere",
+    "suggestion": "Italicize 'yaykarkarsere' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-karkarse-re' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-karkarse-re",
+    "suggestion": "Italicize 'yay-karkarse-re' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The 'ain' attribute has 'yaykarkarsere' (no hyphen) while the 'm' attribute has 'yay-karkarse-re' (with hyphens). This is inconsistent: the 'ain' line should match the segmented form in 'm' for consistency, or the hyphens should be explained. Typically, 'ain' is the unsegmented surface form and 'm' is the segmented form, so this is correct, but the inconsistency in the number of 'r's (karkarsere vs karkarse-re) is a problem: 'ain' has 'karkarsere' (with two 'r's) while 'm' has 'karkarse-re' (with one 'r' before the hyphen). This is an orthographic inconsistency.",
+    "quote": "ain=\"asinuma ka nusa sam ta yaykarkarsere=an kor paraparak\" m=\"asinuma ka nusa sam ta yay-karkarse-re=an kor paraparak\"",
+    "suggestion": "Ensure the 'ain' and 'm' forms have the same number of 'r's: either 'karkarsere' in both or 'karkarse-re' in both.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#028",
+  "chapter": "reflexive-yay",
+  "lines": "195",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is applied to a claim that is presented as the 'current best analysis' and adopted by multiple sources. This suggests a contradiction in how the evidence is presented.",
+    "quote": "Satō's direct/indirect account, developed for Chitose, is adopted by Nakagawa and the Handbook as the current best analysis ‹contested›",
+    "suggestion": "Re-evaluate the epistemic tag for this claim, or clarify why it is considered contested despite being widely adopted.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is applied to a claim that is supported by three scholarly sources (Satō, Nakagawa, Bugaeva & Kobayashi). The tag suggests the claim is disputed, but the text does not identify who contests it or provide a counter-source. The later text (lines 267-272) notes that 'Satō himself notes that the direct/indirect analysis has not reached consensus' and that 'the earlier intentional/unintentional framing remains in pedagogical use', but these are not presented as contesting the analysis — they are presented as historical context. The tag ‹contested› is too strong for a claim that is described as 'the current best analysis'.",
+    "quote": "Satō's direct/indirect account, developed for Chitose, is adopted by Nakagawa and the Handbook as the current best analysis ‹contested› <Ref k=\"sato2007\" />; <Ref k=\"nakagawa2024\" p=\"189\" />; <Ref k=\"bugaevakobayashi2022\" p=\"§4.2.2\" />.",
+    "suggestion": "Either remove the ‹contested› tag, or change it to ‹consensus› (since multiple sources agree), or provide a specific counter-source that contests the analysis.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#018",
+  "chapter": "reflexive-yay",
+  "lines": "119",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-rayke' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-rayke",
+    "suggestion": "Italicize 'yay-rayke' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-rayke' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-rayke",
+    "suggestion": "Italicize 'si-rayke' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'rayke' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "rayke",
+    "suggestion": "Italicize 'rayke' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistency in hyphenation: 'yay-rayke' is written with a hyphen, but in the example at line 245 it appears as 'yay-rayke' (correct), while in the table at line 163 it is 'yay-pusu'. However, in the example at line 317, 'koyayrayke' is written without hyphens, suggesting possible formatting drift. The prefix 'yay-' should consistently be separated with a hyphen when analyzed.",
+    "quote": "yay-rayke",
+    "suggestion": "Ensure consistent hyphenation in all forms: yay-rayke, si-rayke, etc.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#075",
+  "chapter": "reflexive-yay",
+  "lines": "349",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The decomposition uses 'ki' as a light verb glossed as 'do', but no gloss is provided for 'p'. The segment 'p' likely represents a causative or applicative, but it is unglossed, violating Leipzig standards.",
+    "quote": "yay-ki-p-niwkes",
+    "suggestion": "Provide a gloss for 'p' (e.g., 'CAUS' or 'APPL') or justify its absence.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#073",
+  "chapter": "reflexive-yay",
+  "lines": "107",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The decomposition uses 'REFL-bottom.body.region-CAUS' but 'ho-' is glossed as 'bottom of' elsewhere (line 26). The gloss 'bottom.body.region' is inconsistent with established glossing.",
+    "quote": "yay-ho-nok-ka",
+    "suggestion": "Use gl=\"REFL-bottom-CAUS\" or update consistently if 'bottom.body.region' is intended as a technical term.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#072",
+  "chapter": "reflexive-yay",
+  "lines": "82",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss is a free translation, but in context, a morpheme-level gloss like 'REFL-treat' would be more consistent with the treatment of other prefixed forms.",
+    "quote": "<A w=\"yay-kara\" gl=\"treat oneself, attend to oneself\" />",
+    "suggestion": "Use gl=\"REFL-treat\" and keep the free translation in the prose.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#071",
+  "chapter": "reflexive-yay",
+  "lines": "51",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'feed oneself' does not align with the literal breakdown provided in the same sentence: 'do about one's own mouth'. The morphemes 'yay-', 'par', and 'oyki' are not accurately reflected in the gloss.",
+    "quote": "<A w=\"yay-par-oyki\" gl=\"feed oneself\" />",
+    "suggestion": "Revise to gl=\"REFL-mouth-do.about\" or provide a more accurate free translation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#069",
+  "chapter": "reflexive-yay",
+  "lines": "18",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'indirect reflexive' is a phrase, while other prefix glosses (e.g., 'reciprocal', 'antipassive') are single terms. This creates inconsistency in gloss style. The Leipzig-style gloss in examples uses 'REFL', so this should be standardized.",
+    "quote": "<A w=\"si-\" gl=\"indirect reflexive\" />",
+    "suggestion": "Use a standardized gloss such as gl=\"INDIR-REFL\" or gl=\"REFL\" with context in prose.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#068",
+  "chapter": "reflexive-yay",
+  "lines": "8",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'reflexive' for 'yay-' is underspecified. In context, it should at minimum be 'REFL' to match Leipzig conventions used elsewhere (e.g., in examples like yay-karkarse-re). Other prefixes like <A w=\"si-\" gl=\"indirect reflexive\" /> use more descriptive glosses, creating inconsistency.",
+    "quote": "<A w=\"yay-\" gl=\"reflexive\" />",
+    "suggestion": "Change gl=\"reflexive\" to gl=\"REFL\" or gl=\"reflexive\" to match internal conventions.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#067",
+  "chapter": "reflexive-yay",
+  "lines": "340-343",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The template shows 'person-index' at both ends, but the text says reflexive/applicative are 'inside the person-index layer'. This is contradictory: if person-index appears both before and after the root, then reflexive/applicative are between two person-index slots, not 'inside' a single layer. The template should be clarified.",
+    "quote": "The verb template places reflexive and applicative prefixes inside the person-index layer and outside the root: person-index — reflexive/applicative — root — forming-suffix — causative — person-index",
+    "suggestion": "Rephrase to 'The verb template places reflexive and applicative prefixes between the outer person-index layer and the root: outer person-index — reflexive/applicative — root — forming-suffix — causative — inner person-index' or similar.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example word contains 'si-' which is described as a reflexive prefix, but earlier in the chapter (line 18) si- is described as 'indirect reflexive'. The text here says 'Two reflexive prefixes' but the example has yay- and si-, which are two different types of reflexive. This is not necessarily an error, but it could be clarified that they are two different reflexive prefixes, not two instances of the same prefix.",
+    "quote": "Two reflexive prefixes and two applicatives can co-occur on a single root, as in the showcase word a=e-yay-ko-tuyma-si-ram-suy-pa discussed in <Xr ch=\"valency-voice-overview\" s=\"template\" />",
+    "suggestion": "Change 'Two reflexive prefixes' to 'Two different reflexive prefixes (yay- and si-)' for clarity.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#066",
+  "chapter": "reflexive-yay",
+  "lines": "23-28",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'from the inside of the verb word' is unclear. It is not standard terminology and may confuse readers. The intended meaning is likely that these prefixes are closer to the root than person prefixes, but the phrasing is awkward.",
+    "quote": "Nakagawa lists yay- among the 名詞的接頭辞 (nominal prefixes) of the verb-derivation chapter alongside si-, the reciprocal u-, the antipassive i-, and the lexical body-region prefixes he-/ho-, all of them arity −1 and all filling the object slot from the inside of the verb word",
+    "suggestion": "Rephrase to 'all filling the object slot and appearing closer to the root than person prefixes' or similar.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#065",
+  "chapter": "reflexive-yay",
+  "lines": "207-209",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for pusu is 'float something up', but the translations of the derived forms are 'pop up by swimming' and 'float of itself'. The base verb is transitive ('float something up'), but the derived forms are intransitive. This is not necessarily an error, but the semantic connection between 'float something up' and 'pop up by swimming' is unclear. The reader might wonder how 'swimming' enters the meaning. This is a minor copyedit issue.",
+    "quote": "The canonical Chitose minimal pair is yay-pusu 'pop up by swimming (volitionally)' vs si-pusu 'float of itself (spontaneously)', both from pusu 'float something up'",
+    "suggestion": "Consider adding a note explaining the semantic connection, or provide a more literal gloss for pusu that better connects to the derived meanings.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#064",
+  "chapter": "reflexive-yay",
+  "lines": "256-264",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.O=see' for 'i=nukar', but the translation says 'On seeing me'. The 'me' (first person) does not match the gloss '4.O' (fourth person/indefinite). The translation should reflect the fourth-person object, or the gloss should be changed to '1SG.O' if the intended meaning is 'me'.",
+    "quote": "m=\"i=nukar rok pe si-etaye wa isam\" g=\"4.O=see PRF thing REFL-withdraw CONJ be.absent\" tr=\"On seeing me, it withdrew and was gone.\"",
+    "suggestion": "Either change the gloss to '1SG.O=see' or change the translation to 'On seeing someone, it withdrew and was gone.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#063",
+  "chapter": "reflexive-yay",
+  "lines": "234-242",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'know-CAUS' for 'ranpewtek-ka', but the translation says 'pretending to know nothing'. The causative suffix -ka is not reflected in the translation as a causative meaning — 'pretend' is not a causative of 'know'. The note (line 241) says '-ka causativizes the resulting stative', but the translation does not show this. The gloss and translation are mismatched.",
+    "quote": "m=\"ku=ko-si-ranpewtek-ka wa ki=an\" g=\"1SG.A=APPL-REFL-know-CAUS CONJ do=4.S\" tr=\"I was pretending to know nothing about it.\"",
+    "suggestion": "Either change the gloss to reflect the idiomatic meaning (e.g., 'pretend') or adjust the translation to show the causative component (e.g., 'cause oneself to know nothing').",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#061",
+  "chapter": "reflexive-yay",
+  "lines": "94-103",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '1SG.EMPH' for 'asinuma', but the free translation says 'I too'. The 'too' (ka) is not reflected in the gloss — 'ka' is glossed as 'even' but the translation uses 'too'. This is a minor mismatch: 'even' and 'too' have different meanings. The gloss should match the translation.",
+    "quote": "m=\"asinuma ka nusa sam ta yay-karkarse-re=an kor paraparak\" g=\"1SG.EMPH even altar beside LOC REFL-roll-CAUS=4.S CONJ wail\" tr=\"I too rolled about by the altar, wailing.\"",
+    "suggestion": "Change the gloss of 'ka' to 'too' or change the translation to 'even I'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#060",
+  "chapter": "reflexive-yay",
+  "lines": "13-16",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says =an is 'fourth-person', but in the example at line 97, =an is glossed as '4.S' (fourth-person singular). The text here says 'first-person plural' but then mentions =an as 'fourth-person'. This is inconsistent: if =an is fourth-person, it is not first-person plural. The text should clarify that =as is first-person plural exclusive and =an is fourth-person (indefinite/impersonal), not first-person plural.",
+    "quote": "Placed in the first-person plural, a verb bearing yay- takes the intransitive S-suffixes =as (exclusive) or =an (fourth-person) rather than the transitive A-prefixes",
+    "suggestion": "Rephrase to: 'Placed in the first-person plural, a verb bearing yay- takes the intransitive S-suffix =as (exclusive); in the fourth person, it takes =an.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#053",
+  "chapter": "reflexive-yay",
+  "lines": "354",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'u-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "u-",
+    "suggestion": "Italicize 'u-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#052",
+  "chapter": "reflexive-yay",
+  "lines": "349",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yaykipniwkes' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yaykipniwkes",
+    "suggestion": "Italicize 'yaykipniwkes' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-ki-p-niwkes' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-ki-p-niwkes",
+    "suggestion": "Italicize 'yay-ki-p-niwkes' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ki' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ki",
+    "suggestion": "Italicize 'ki' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'niwkes' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "niwkes",
+    "suggestion": "Italicize 'niwkes' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#051",
+  "chapter": "reflexive-yay",
+  "lines": "345",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'e-yay-ko-tuyma-si-ram-suy-pa' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "e-yay-ko-tuyma-si-ram-suy-pa",
+    "suggestion": "Italicize 'e-yay-ko-tuyma-si-ram-suy-pa' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#050",
+  "chapter": "reflexive-yay",
+  "lines": "340",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#049",
+  "chapter": "reflexive-yay",
+  "lines": "336",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "i-",
+    "suggestion": "Italicize 'i-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#048",
+  "chapter": "reflexive-yay",
+  "lines": "329",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ruska' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ruska",
+    "suggestion": "Italicize 'ruska' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ko-ruska' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ko-ruska",
+    "suggestion": "Italicize 'ko-ruska' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-ko-ruska' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-ko-ruska",
+    "suggestion": "Italicize 'yay-ko-ruska' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i-ruska' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "i-ruska",
+    "suggestion": "Italicize 'i-ruska' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#047",
+  "chapter": "reflexive-yay",
+  "lines": "324",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ko-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ko-",
+    "suggestion": "Italicize 'ko-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#045",
+  "chapter": "reflexive-yay",
+  "lines": "309",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ko-yay-irayke' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ko-yay-irayke",
+    "suggestion": "Italicize 'ko-yay-irayke' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ko-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ko-",
+    "suggestion": "Italicize 'ko-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#044",
+  "chapter": "reflexive-yay",
+  "lines": "298",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#043",
+  "chapter": "reflexive-yay",
+  "lines": "289",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-etu-uyna' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-etu-uyna",
+    "suggestion": "Italicize 'si-etu-uyna' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#042",
+  "chapter": "reflexive-yay",
+  "lines": "279",
+  "category": "speculative",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim is marked as ‹speculative›, but the following sentence states that 'no diachronic evidence bearing on a pre-reflexive function of either prefix has been identified in the sources consulted for this grammar.' This implies the speculation is based on a lack of evidence rather than positive support.",
+    "quote": "The hypothesis that the two prefixes represent historically distinct voice categories rather than two subtypes of reflexive (aomidori_cs_, aynu-corpora Discord 2023, <Ref k=\"aynucorporadiscord\" />) ‹speculative›",
+    "suggestion": "Clarify the basis for the speculation, or consider if it should be presented differently if there's no supporting evidence.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#041",
+  "chapter": "reflexive-yay",
+  "lines": "272",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yaykaopiwki' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yaykaopiwki",
+    "suggestion": "Italicize 'yaykaopiwki' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#040",
+  "chapter": "reflexive-yay",
+  "lines": "267",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#039",
+  "chapter": "reflexive-yay",
+  "lines": "263",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-etaye' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-etaye",
+    "suggestion": "Italicize 'si-etaye' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-etaye' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-etaye",
+    "suggestion": "Italicize 'yay-etaye' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#038",
+  "chapter": "reflexive-yay",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-etaye' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-etaye",
+    "suggestion": "Italicize 'si-etaye' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#037",
+  "chapter": "reflexive-yay",
+  "lines": "250",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-etaye' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-etaye",
+    "suggestion": "Italicize 'si-etaye' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-etaye' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-etaye",
+    "suggestion": "Italicize 'si-etaye' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#036",
+  "chapter": "reflexive-yay",
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-rayke' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-rayke",
+    "suggestion": "Italicize 'yay-rayke' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-rayke' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-rayke",
+    "suggestion": "Italicize 'si-rayke' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-etaye' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-etaye",
+    "suggestion": "Italicize 'yay-etaye' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#035",
+  "chapter": "reflexive-yay",
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#034",
+  "chapter": "reflexive-yay",
+  "lines": "235",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-ranpewtek-ka' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-ranpewtek-ka",
+    "suggestion": "Italicize 'si-ranpewtek-ka' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#033",
+  "chapter": "reflexive-yay",
+  "lines": "225",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-mokor-e' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-mokor-e",
+    "suggestion": "Italicize 'si-mokor-e' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-kamuy-ne-re' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-kamuy-ne-re",
+    "suggestion": "Italicize 'si-kamuy-ne-re' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-ranpewtek-ka' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-ranpewtek-ka",
+    "suggestion": "Italicize 'si-ranpewtek-ka' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#032",
+  "chapter": "reflexive-yay",
+  "lines": "221",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#031",
+  "chapter": "reflexive-yay",
+  "lines": "215",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-pusu' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-pusu",
+    "suggestion": "Italicize 'si-pusu' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#030",
+  "chapter": "reflexive-yay",
+  "lines": "207",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-pusu' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-pusu",
+    "suggestion": "Italicize 'yay-pusu' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-pusu' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-pusu",
+    "suggestion": "Italicize 'si-pusu' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pusu' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "pusu",
+    "suggestion": "Italicize 'pusu' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#029",
+  "chapter": "reflexive-yay",
+  "lines": "199",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#027",
+  "chapter": "reflexive-yay",
+  "lines": "194",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#026",
+  "chapter": "reflexive-yay",
+  "lines": "183",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#025",
+  "chapter": "reflexive-yay",
+  "lines": "177",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#024",
+  "chapter": "reflexive-yay",
+  "lines": "171",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#023",
+  "chapter": "reflexive-yay",
+  "lines": "164",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#022",
+  "chapter": "reflexive-yay",
+  "lines": "144",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#021",
+  "chapter": "reflexive-yay",
+  "lines": "138",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-kar' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-kar",
+    "suggestion": "Italicize 'yay-kar' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#020",
+  "chapter": "reflexive-yay",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-kar' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-kar",
+    "suggestion": "Italicize 'yay-kar' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#019",
+  "chapter": "reflexive-yay",
+  "lines": "128",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-kar' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-kar",
+    "suggestion": "Italicize 'yay-kar' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#017",
+  "chapter": "reflexive-yay",
+  "lines": "114",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence refers to the 'analytic literature' which is meta-commentary about the production process, not reader-facing content.",
+    "quote": "The decomposition has not been verified against the analytic literature.",
+    "suggestion": "Rephrase to focus on the lack of verification, e.g., 'This decomposition has not been verified against existing analyses.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#016",
+  "chapter": "reflexive-yay",
+  "lines": "111",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=yayhonokka' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ku=yayhonokka",
+    "suggestion": "Italicize 'ku=yayhonokka' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ci=honokka' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ci=honokka",
+    "suggestion": "Italicize 'ci=honokka' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'taan hanokka' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "taan hanokka",
+    "suggestion": "Italicize 'taan hanokka' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#015",
+  "chapter": "reflexive-yay",
+  "lines": "106",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yayhonokka' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yayhonokka",
+    "suggestion": "Italicize 'yayhonokka' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-ho-nok-ka' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-ho-nok-ka",
+    "suggestion": "Italicize 'yay-ho-nok-ka' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ho-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "ho-",
+    "suggestion": "Italicize 'ho-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#014",
+  "chapter": "reflexive-yay",
+  "lines": "102",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-karkarse-re' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-karkarse-re",
+    "suggestion": "Italicize 'yay-karkarse-re' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#012",
+  "chapter": "reflexive-yay",
+  "lines": "86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '-kar' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "-kar",
+    "suggestion": "Italicize '-kar' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'nimawe-kar' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "nimawe-kar",
+    "suggestion": "Italicize 'nimawe-kar' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'osoro-kar' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "osoro-kar",
+    "suggestion": "Italicize 'osoro-kar' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-kara' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-kara",
+    "suggestion": "Italicize 'yay-kara' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#011",
+  "chapter": "reflexive-yay",
+  "lines": "81",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-kara' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-kara",
+    "suggestion": "Italicize 'yay-kara' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kara' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "kara",
+    "suggestion": "Italicize 'kara' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cise-kar' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "cise-kar",
+    "suggestion": "Italicize 'cise-kar' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#010",
+  "chapter": "reflexive-yay",
+  "lines": "74",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#009",
+  "chapter": "reflexive-yay",
+  "lines": "69",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-si-turi-re' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-si-turi-re",
+    "suggestion": "Italicize 'yay-si-turi-re' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-yay-",
+    "suggestion": "Italicize 'si-yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#008",
+  "chapter": "reflexive-yay",
+  "lines": "60",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yáy-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yáy-",
+    "suggestion": "Italicize 'yáy-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yáyesiru' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yáyesiru",
+    "suggestion": "Italicize 'yáyesiru' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yáy' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yáy",
+    "suggestion": "Italicize 'yáy' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#007",
+  "chapter": "reflexive-yay",
+  "lines": "51",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-par-oyki' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-par-oyki",
+    "suggestion": "Italicize 'yay-par-oyki' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'par' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "par",
+    "suggestion": "Italicize 'par' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#006",
+  "chapter": "reflexive-yay",
+  "lines": "47",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#005",
+  "chapter": "reflexive-yay",
+  "lines": "41",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-kotan' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-kotan",
+    "suggestion": "Italicize 'yay-kotan' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#004",
+  "chapter": "reflexive-yay",
+  "lines": "37",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#003",
+  "chapter": "reflexive-yay",
+  "lines": "23",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#002",
+  "chapter": "reflexive-yay",
+  "lines": "18",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'si-' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "si-",
+    "suggestion": "Italicize 'si-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#001",
+  "chapter": "reflexive-yay",
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'yay-' is not consistently italicized or marked with lang='ain-Latn' when introduced in prose.",
+    "quote": "yay-",
+    "suggestion": "Italicize 'yay-' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=as' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "=as",
+    "suggestion": "Italicize '=as' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is not consistently italicized or marked with lang='ain-Latn'.",
+    "quote": "=an",
+    "suggestion": "Italicize '=an' and add lang='ain-Latn'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#074",
+  "chapter": "reflexive-yay",
+  "lines": "330",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The arrow notation '→' is used without prior introduction or consistent formatting. In a prose context, this may confuse readers. The surrounding text uses plain text descriptions, so symbolic arrows should be avoided or consistently formatted.",
+    "quote": "→ yay-ko-ruska (vt, 'be angry at oneself')",
+    "suggestion": "Use 'becomes' or 'yields' instead of arrows, or set the chain in a list.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#070",
+  "chapter": "reflexive-yay",
+  "lines": "42",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'one's own village' is a free translation, not a morpheme-by-morpheme gloss. Since 'yay-' is glossed as 'one's own' and 'kotan' as 'village', the compound should reflect that structure.",
+    "quote": "<A w=\"yay-kotan\" gl=\"one's own village\" />",
+    "suggestion": "Use gl=\"REFL-village\" or add a morpheme-level breakdown in prose.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#059",
+  "chapter": "reflexive-yay",
+  "lines": "348-354",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is applied to a claim attributed solely to a Discord message, and the text itself says 'the analysis awaits verification against primary morphological descriptions'. A claim that has not been verified should be tagged ‹speculative› or ‹original-needs-review›, not ‹contested›.",
+    "quote": "A community-proposed decomposition of yaykipniwkes as yay-ki-p-niwkes — with ki 'do' as a light verb and niwkes as the state predicate (nukopoli, aynu-corpora Discord 2024, <Ref k=\"aynucorporadiscord\" />) ‹contested› — illustrates the opaque prefix stacking that occurs in this zone; the analysis awaits verification against primary morphological descriptions.",
+    "suggestion": "Change ‹contested› to ‹speculative› or ‹original-needs-review›.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#058",
+  "chapter": "reflexive-yay",
+  "lines": "278-282",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is correctly applied here, but the claim is attributed to a single Discord message (aomidori_cs_, aynu-corpora Discord 2023). The tag is appropriate, but the citation hygiene issue is that the claim is presented as a 'hypothesis' based on a community source, which is fine — no inflation here. However, the text then says 'no diachronic evidence ... has been identified in the sources consulted for this grammar', which contradicts the implication that this is a hypothesis worth discussing. This is more of a copyedit issue: if no evidence exists, why is the hypothesis mentioned?",
+    "quote": "The hypothesis that the two prefixes represent historically distinct voice categories rather than two subtypes of reflexive (aomidori_cs_, aynu-corpora Discord 2023, <Ref k=\"aynucorporadiscord\" />) ‹speculative› — no diachronic evidence bearing on a pre-reflexive function of either prefix has been identified in the sources consulted for this grammar.",
+    "suggestion": "Consider removing the hypothesis entirely, or add a note that it is mentioned only for completeness.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#057",
+  "chapter": "reflexive-yay",
+  "lines": "272-277",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is applied to a claim attributed solely to a Discord message. As with the earlier finding, a claim from a single community source that has not been verified against the analytic literature should be tagged ‹speculative› or ‹original-needs-review›, not ‹contested›.",
+    "quote": "A community reformulation characterizes yay- as 'by one's own power' (reflexive) and si- as 'happens to / gets through others' (anticausative), with yaykaopiwki 'save oneself by one's own action' cited as a diagnostic (nukopoli, aynu-corpora Discord 2024, <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Change ‹contested› to ‹speculative› or ‹original-needs-review›.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#056",
+  "chapter": "reflexive-yay",
+  "lines": "106-114",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is used for a claim that is attributed solely to a Discord message. The tag implies the claim is debated in the scholarly literature, but the text itself says 'The decomposition has not been verified against the analytic literature' (lines 114-115). A claim that has not been verified and comes only from a community source should be tagged ‹speculative› or ‹original-needs-review›, not ‹contested›.",
+    "quote": "A community decomposition of yayhonokka 'educate, discipline' as yay-ho-nok-ka (REFL-bottom.body.region-CAUS) would show yay- stacking over the body-region prefix ho- and a causative suffix, with cross-dialectal support from Saru and Shizunai forms (ku=yayhonokka; ci=honokka; taan hanokka) (nukopoli, aynu-corpora Discord 2026, <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Change ‹contested› to ‹speculative› or ‹original-needs-review›.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#055",
+  "chapter": "reflexive-yay",
+  "lines": "60-66",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is attached to a claim whose only support is a single Discord attribution (nukopoli, aynu-corpora Discord 2024). The claim is also supported by Nakagawa (2024:188), but the tag appears to apply specifically to the community corpus observation. A single Discord message does not constitute 'corpus-confirmed' evidence — this is an inflation of the epistemic grade.",
+    "quote": "The accent of yay- is stable: the prefix carries primary stress as yáy- regardless of the following segment, unless lexicalization has displaced it <Ref k=\"nakagawa2024\" p=\"188\" />. Forms such as yáyesiru confirm that the accent falls on yáy even before a vowel-initial stem; this accent pattern is corroborated by community corpus observation (nukopoli, aynu-corpora Discord 2024, <Ref k=\"aynucorporadiscord\" />) ‹corpus-confirmed›.",
+    "suggestion": "Change ‹corpus-confirmed› to ‹corpus-suggested› or remove the tag entirely, since the Nakagawa citation already provides scholarly support.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "reflexive-yay~p1#054",
+  "chapter": "reflexive-yay",
+  "lines": "8-10",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that yay- 'reduces arity by one' is contradicted later in the same paragraph (lines 13-16) where it says verbs bearing yay- take intransitive S-suffixes, which is consistent with arity reduction. However, the phrase 'converting the base transitive to an intransitive' is contradicted by the later discussion of yay- attaching to nominals (lines 40-44) where 'arity is unchanged because a noun carries no object slot to absorb' — if yay- always reduces arity by one, attaching to a noun (which has no object slot) should not be possible, or the arity reduction claim needs qualification.",
+    "quote": "The prefix yay- fills the object position of a transitive verb with a participant coreferential with the subject, reducing arity by one and converting the base transitive to an intransitive",
+    "suggestion": "Clarify that yay- reduces arity by one only when attached to a verb (which has an object slot); when attached to a noun, arity is unchanged.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

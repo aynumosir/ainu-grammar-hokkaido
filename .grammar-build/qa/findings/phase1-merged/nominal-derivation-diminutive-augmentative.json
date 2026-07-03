@@ -1,0 +1,924 @@
+[
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#030",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "220-222",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss of okkay in the example is 'man', but earlier (table line 81) okkay is glossed as 'male youth (bound root, Saru/Chitose)', and line 208 states that okkay does not occur as a free noun in Saru. The gloss is inconsistent with the characterization of okkay as a bound root.",
+    "quote": "g=\"man-DIM\"",
+    "suggestion": "Change the gloss to something like 'male.youth-DIM' or 'bound.root-DIM' to match the preceding description.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string is 'okkay-po', but if the base is 'okkay' (as in table), and the suffix is '-po', the expected output should be 'okkaypo' (possibly with gemination). The hyphenation suggests no fusion or gemination, but the table (line 82) shows 'okkaypo' without hyphen.",
+    "quote": "m=\"okkay-po utar\"",
+    "suggestion": "Either remove the hyphen in the example to 'okkaypo' or explain the morphophonological process (e.g. optional gemination).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#022",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "212",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'okkay' is in italics and has the correct lang attribute. However, the word 'okkay' in the table (line 80) is also in italics but lacks the lang attribute. This is an inconsistency in markup.",
+    "quote": "where <i lang=\"ain-Latn\">okkay</i> is a free noun",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<i>` tag for 'okkay' in the table.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'okkayo' and 'po' are in italics and have the correct lang attribute. However, the word 'po' in the table (line 205) is not italicized and lacks the lang attribute. This is an inconsistency in markup.",
+    "quote": "[<i lang=\"ain-Latn\">okkayo</i> 'male' + <i lang=\"ain-Latn\">po</i> 'child'] = 'son'.",
+    "suggestion": "Add italics and `lang=\"ain-Latn\"` to the word 'po' in the table.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'okkayopo' is in italics and has the correct lang attribute. However, the word 'okkay' in the table (line 80) is also in italics but lacks the lang attribute. This is an inconsistency in markup.",
+    "quote": "is <i lang=\"ain-Latn\">okkayopo</i>",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<i>` tag for 'okkay' in the table.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'okkayopo' is used to disambiguate the noun+noun reading, but the base 'okkay' in the table (line 80) is spelled with 'y', while here it appears as 'okkayo'. This suggests a stem change not otherwise noted, or an orthographic inconsistency.",
+    "quote": "<i lang=\"ain-Latn\">okkayopo</i>",
+    "suggestion": "Ensure consistent spelling of the base 'okkay' across the chapter. If 'okkayo' is the full form, clarify this in the text.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#008",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "80-85",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'okkaypo' in the table is lowercase, while 'cikappo' in the first row is capitalized. This indicates an inconsistency in capitalization.",
+    "quote": "<td><i lang=\"ain-Latn\">okkay</i></td>\n\t\t\t\t<td>'male youth (bound root, Saru/Chitose)'</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">okkaypo</i></td>\n\t\t\t\t<td>'young man, boy'</td>\n\t\t\t\t<td><Ref k=\"nakagawa2024\" p=\"265\" /></td>",
+    "suggestion": "Standardize capitalization for Ainu forms in the table, likely to lowercase.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'okkay' in the table is spelled with a single 'y', but in section #okkaypo (line 215) the same base is spelled 'okkayo' (with 'o'). This creates orthographic inconsistency for the same morpheme.",
+    "quote": "<i lang=\"ain-Latn\">okkay</i>",
+    "suggestion": "Check whether 'okkay' and 'okkayo' represent dialectal variants or a spelling inconsistency. If the latter, standardize to one form in both table and prose.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#036",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "150",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string uses 'cikap-po', but the table gives 'cikappo' with gemination. This inconsistency between table and examples undermines morphological regularity.",
+    "quote": "m=\"pon cikap-po utar hene euesayne\"",
+    "suggestion": "Change 'cikap-po' to 'cikappo' in the example or clarify that gemination is optional or context-dependent.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#035",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "141",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string has 'cep-po', but the table (line 61) gives the diminutive as 'ceppo' with geminated 'p'. The hyphenated form implies no gemination, conflicting with the table.",
+    "quote": "m=\"pon cep-po utar pirasa wa\"",
+    "suggestion": "Revise to 'ceppo' in the example or explain the absence of gemination. If gemination is regular, the example should reflect it.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#034",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "132",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes 'cikap-po', but in the table (line 54) the diminutive form is 'cikappo' with geminated 'p'. The hyphenated form 'cikap-po' suggests no gemination, contradicting the table's spelling.",
+    "quote": "m=\"hinak wa arki wen cikap-po utar\"",
+    "suggestion": "Either revise the example to 'cikappo' (without hyphen if fused) or explain the junctural variation. If gemination is phonologically regular, the example should reflect it.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#031",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "165-166",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The specific token count and rank are given without any source citation. The claim is tagged ‹corpus-confirmed›, but no reference is attached to allow verification.",
+    "quote": "The high frequency of okkaypo alone — 1,457 tokens, rank 136 in the Hokkaido sub-corpus — confirms that DIM derivatives are a live and frequent nominal class ‹corpus-confirmed›.",
+    "suggestion": "Add a citation to the corpus from which these figures are drawn (e.g., the ILCAA or a published word-list).",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#037",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "27",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'concept form' is linked, but in section #okkaypo (line 233) it is referred to as 'concept form' without linking. Inconsistent linking of the same technical term.",
+    "quote": "attaches to the <Xr ch=\"concept-form-affiliative-form\">concept form</Xr> of a noun stem",
+    "suggestion": "Link 'concept form' consistently when first mentioned in each section, or not at all. Currently, it's linked in #morphology but not in #okkaypo.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#033",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "31, 36",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'sources read here' is informal and reads like a pipeline comment rather than polished prose.",
+    "quote": "the sources read here",
+    "suggestion": "Rephrase to 'the sources consulted' or 'the sources examined'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#032",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "189",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'a read primary grammatical source' is informal and suggests a pipeline comment ('the sources I read'). It may confuse readers.",
+    "quote": "Neither analysis has been confirmed by a read primary grammatical source",
+    "suggestion": "Rephrase to 'a primary grammatical source consulted' or 'the available primary grammatical sources'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#027",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "266",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'porore' is in italics and has the correct lang attribute. However, the word 'poro' in line 257 is not formatted this way, creating an inconsistency.",
+    "quote": "<i lang=\"ain-Latn\">porore</i>",
+    "suggestion": "Ensure consistent formatting for all Ainu words, including 'poro'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pon' is in italics and has the correct lang attribute. However, the word 'pon' in line 257 is not formatted this way, creating an inconsistency.",
+    "quote": "<i lang=\"ain-Latn\">pon</i> stacking freely with DIM derivatives",
+    "suggestion": "Ensure consistent formatting for all Ainu words, including 'pon'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'pon cikappo' and 'pon ceppo' are in italics and have the correct lang attribute. However, 'cikappo' is capitalized here, while in line 159 it was also capitalized. In line 161, 'ceppo' was lowercase. This indicates an inconsistent capitalization style for derived forms.",
+    "quote": "(<i lang=\"ain-Latn\">pon cikappo</i>, <i lang=\"ain-Latn\">pon ceppo</i>)",
+    "suggestion": "Standardize capitalization for derived Ainu forms, likely to lowercase.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#026",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "257",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'pon' and 'poro' are not marked with `lang=\"ain-Latn\"` or italics, unlike other Ainu words mentioned in the text (e.g., 'poro' in line 12, 'pon' in line 141).",
+    "quote": "the prenominal property verbs <A w=\"pon\" gl=\"be small\" /> and <A w=\"poro\" gl=\"be big\" />",
+    "suggestion": "Apply consistent formatting (italics and lang attribute) to the Ainu words 'pon' and 'poro'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#025",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "244",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ku=akipo' is in italics and has the correct lang attribute. However, the word 'akipo' is not explicitly defined or glossed as a base form, and its derivation from 'ak' (if that's the base) is not shown. The suffix '-po' is discussed, but the base 'ak' is not.",
+    "quote": "<i lang=\"ain-Latn\">ku=akipo</i>",
+    "suggestion": "Clarify the base morpheme 'ak' and its relation to the diminutive/affective meaning in this context.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ku=kor operpo' is in italics and has the correct lang attribute. However, the base 'oper' is not explicitly defined or glossed, and its derivation from 'oper' is not shown. The suffix '-po' is discussed, but the base 'oper' is not.",
+    "quote": "<i lang=\"ain-Latn\">ku=kor operpo</i>",
+    "suggestion": "Clarify the base morpheme 'oper' and its relation to the diminutive/affective meaning in this context.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#024",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "229",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'po' is not marked with `lang=\"ain-Latn\"` or italics, unlike other Ainu words mentioned in the text (e.g., 'poro', 'po' in line 214).",
+    "quote": "The free noun <A w=\"po\" gl=\"child, son\" /> has an affiliative form",
+    "suggestion": "Apply consistent formatting (italics and lang attribute) to the Ainu word 'po'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'poho' is in italics and has the correct lang attribute. However, the word 'po' in the table (line 205) is not italicized and lacks the lang attribute. This is an inconsistency in markup.",
+    "quote": "<i lang=\"ain-Latn\">poho</i>",
+    "suggestion": "Add italics and `lang=\"ain-Latn\"` to the word 'po' in the table.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'po:poho' is in italics and has the correct lang attribute. However, the word 'po' in the table (line 205) is not italicized and lacks the lang attribute. This is an inconsistency in markup.",
+    "quote": "<i lang=\"ain-Latn\">po:poho</i>",
+    "suggestion": "Add italics and `lang=\"ain-Latn\"` to the word 'po' in the table.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#023",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "220-226",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'okkay-po' in the example is hyphenated, but the 'okkaypo' in the table (line 82) is not. This suggests an inconsistency in how the derived form is presented.",
+    "quote": "<Ex\n\t\t\tm=\"okkay-po utar\"\n\t\t\tg=\"man-DIM ASS\"\n\t\t\ttr=\"young men (Saru: unambiguously DIM reading)\"\n\t\t\tcite=\"ilcaa1976\"\n\t\t\tdial=\"SAR\"\n\t\t\tplace=\"Kawakami Matsuko 川上まつ子, isoytak 独話1, ILCAA Ainu materials [aa-irc/003#26]\"\n\t/>",
+    "suggestion": "Ensure consistent representation of derived forms, either as 'okkay-po' or 'okkaypo'. Given the table uses 'okkaypo', it might be better to use that form here if it's the standard representation of the derived noun.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#021",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "207",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'okkaypo' is in italics and has the correct lang attribute. However, the word 'okkaypo' in the table (line 82) is also in italics but lacks the lang attribute. This is an inconsistency in markup.",
+    "quote": "In <i lang=\"ain-Latn\">okkaypo</i> the ambiguity is",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<i>` tag for 'okkaypo' in the table.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'okkay' is in italics and has the correct lang attribute. However, the word 'okkay' in the table (line 80) is also in italics but lacks the lang attribute. This is an inconsistency in markup.",
+    "quote": "In <i lang=\"ain-Latn\">okkay</i> is a free noun",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<i>` tag for 'okkay' in the table.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'okkay' is in italics and has the correct lang attribute. However, the word 'okkay' in the table (line 80) is also in italics but lacks the lang attribute. This is an inconsistency in markup.",
+    "quote": "[bound root <i lang=\"ain-Latn\">okkay</i> + DIM]",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `<i>` tag for 'okkay' in the table.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#020",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "194",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word '-po' is not marked with `lang=\"ain-Latn\"` or italics, unlike other Ainu morphemes mentioned in the text (e.g., '-po' in line 8, '-po' in line 28).",
+    "quote": "The broader pattern of class-term residues in animal and plant names — where a frozen",
+    "suggestion": "Apply consistent formatting (italics and lang attribute) to the Ainu morpheme '-po'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme '-po' is in italics and has the correct lang attribute. However, the morpheme '-po' in line 194 is not formatted this way, creating an inconsistency.",
+    "quote": "The <i lang=\"ain-Latn\">-po</i> pattern is",
+    "suggestion": "Ensure consistent formatting for all Ainu morphemes, including '-po'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#019",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "190",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ise' is in italics and has the correct lang attribute. However, the word 'ise' in the same paragraph (line 181) is not formatted this way, creating an inconsistency.",
+    "quote": "the status of <i lang=\"ain-Latn\">ise</i> as an independent",
+    "suggestion": "Ensure consistent formatting for all Ainu words, including 'ise'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#018",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "186",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'rimse' is in italics and has the correct lang attribute. However, the word 'ise' in the same paragraph (line 181) is not formatted this way, creating an inconsistency.",
+    "quote": "and <i lang=\"ain-Latn\">rimse</i> 'dance')",
+    "suggestion": "Ensure consistent formatting for all Ainu words, including 'ise'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ise' is in italics and has the correct lang attribute. However, the word 'ise' in the same paragraph (line 181) is not formatted this way, creating an inconsistency.",
+    "quote": "and treats <i lang=\"ain-Latn\">ise</i> in",
+    "suggestion": "Ensure consistent formatting for all Ainu words, including 'ise'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#017",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "181",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ise' is not marked with `lang=\"ain-Latn\"` or italics, unlike other Ainu words mentioned in the text (e.g., 'poro', 'po', 'cikap').",
+    "quote": "expressive base plus the diminutive (nukopoli, aynu-corpora",
+    "suggestion": "Apply consistent formatting (italics and lang attribute) to the Ainu word 'ise'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'pawse' is in italics and has the correct lang attribute. However, the word 'ise' in the same sentence (line 181) is not formatted this way, creating an inconsistency.",
+    "quote": "compare <i lang=\"ain-Latn\">pawse</i>",
+    "suggestion": "Ensure consistent formatting for all Ainu words, including 'ise'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#016",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "174",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'isepo' is presented with an initial lowercase 'i', while other Ainu words like 'cikappo' (line 159) are capitalized. This suggests an inconsistency in capitalization.",
+    "quote": "The best-known case is <A w=\"isepo\" gl=\"rabbit\" />.",
+    "suggestion": "Standardize capitalization for Ainu words, likely to lowercase.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#015",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "163",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cikappo' here is capitalized, but 'ceppo' in the previous sentence was lowercase. This indicates an inconsistent capitalization style for derived forms.",
+    "quote": "<i lang=\"ain-Latn\">pon cikappo utar</i> phrase.",
+    "suggestion": "Standardize capitalization for derived Ainu forms, likely to lowercase.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#014",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "159",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cikappo' here is capitalized, but in the table (line 54) it was also capitalized. However, other derived forms like 'ceppo' (line 61) and 'menokopo' (line 75) are lowercase. This indicates an inconsistent capitalization style for derived forms.",
+    "quote": "The Saru examples confirm that <i lang=\"ain-Latn\">cikappo</i> and",
+    "suggestion": "Standardize capitalization for derived Ainu forms, likely to lowercase.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ceppo' here is lowercase, but 'cikappo' in the previous sentence is capitalized. This suggests an inconsistency in capitalization.",
+    "quote": "<i lang=\"ain-Latn\">ceppo</i> behave as ordinary common nouns",
+    "suggestion": "Standardize capitalization for Ainu forms, likely to lowercase.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#013",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "150-156",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'cikap-po' in the example is hyphenated, but the 'cikappo' in the table (line 54) is not. This suggests an inconsistency in how the derived form is presented.",
+    "quote": "<Ex\n\t\t\tm=\"pon cikap-po utar hene euesayne\"\n\t\t\tg=\"be.small bird-DIM ASS even flock.together\"\n\t\t\ttr=\"even small birds flocking together\"\n\t\t\tcite=\"chiba2015\"\n\t\t\tdial=\"HOR\"\n\t\t\tplace=\"Kanenari Matsu 金成マツ, 六人の山子, 千葉大学報告書 [chiba-325/25#19]\"\n\t/>",
+    "suggestion": "Ensure consistent representation of derived forms, either as 'cikap-po' or 'cikappo'. Given the table uses 'cikappo', it might be better to use that form here if it's the standard representation of the derived noun.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#012",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "141-147",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'cep-po' in the example is hyphenated, but the 'ceppo' in the table (line 61) is not. This suggests an inconsistency in how the derived form is presented.",
+    "quote": "<Ex\n\t\t\tm=\"pon cep-po utar pirasa wa\"\n\t\t\tg=\"be.small fish-DIM ASS spread.out CONJ\"\n\t\t\ttr=\"spreading out the small fish\"\n\t\t\tcite=\"ilcaa1976\"\n\t\t\tdial=\"SAR\"\n\t\t\tplace=\"Kawakami Matsuko 川上まつ子, uwepeker 民話14, ILCAA Ainu materials [aa-irc/020#61]\"\n\t/>",
+    "suggestion": "Ensure consistent representation of derived forms, either as 'cep-po' or 'ceppo'. Given the table uses 'ceppo', it might be better to use that form here if it's the standard representation of the derived noun.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#011",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "132-138",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'cikap-po' in the example is hyphenated, but the 'cikappo' in the table (line 54) is not. This suggests an inconsistency in how the derived form is presented.",
+    "quote": "<Ex\n\t\t\tm=\"hinak wa arki wen cikap-po utar\"\n\t\t\tg=\"where from come.PL bad bird-DIM ASS\"\n\t\t\ttr=\"the bad little birds that came from somewhere\"\n\t\t\tcite=\"ilcaa1976\"\n\t\t\tdial=\"SAR\"\n\t\t\tplace=\"Kawakami Matsuko 川上まつ子, uwepeker 民話15, ILCAA Ainu materials [aa-irc/022#23]\"\n\t/>",
+    "suggestion": "Ensure consistent representation of derived forms, either as 'cikap-po' or 'cikappo'. Given the table uses 'cikappo', it might be better to use that form here if it's the standard representation of the derived noun.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#009",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "101",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term '指小辞' is not translated into English, while other Japanese terms or concepts are either translated or explained in context.",
+    "quote": "<span lang=\"ja\">指小辞</span>",
+    "suggestion": "Translate '指小辞' to 'diminutive suffix' or 'diminutive marker' for clarity.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#007",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "73-78",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'menokopo' in the table is lowercase, while 'cikappo' in the first row is capitalized. This suggests an inconsistency in capitalization.",
+    "quote": "<td><i lang=\"ain-Latn\">menoko</i></td>\n\t\t\t\t<td>'woman'</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">menokopo</i></td>\n\t\t\t\t<td>'girl'</td>\n\t\t\t\t<td><Ref k=\"kindaichi1936\" p=\"25\" /></td>",
+    "suggestion": "Standardize capitalization for Ainu forms in the table, likely to lowercase.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#006",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "66-71",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'supuyapo' in the table is lowercase, while 'cikappo' in the previous row is capitalized. This indicates an inconsistency in capitalization.",
+    "quote": "<td><i lang=\"ain-Latn\">supuya</i></td>\n\t\t\t\t<td>'smoke'</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">supuyapo</i></td>\n\t\t\t\t<td>'faint smoke'</td>\n\t\t\t\t<td><Ref k=\"nakagawa2024\" p=\"264\" /></td>",
+    "suggestion": "Standardize capitalization for Ainu forms in the table, likely to lowercase.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#005",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "52-56",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cikappo' in the table is capitalized, while other Ainu forms in the chapter (e.g., 'ceppo', 'supuyapo') are lowercase. This suggests a potential inconsistency in capitalization.",
+    "quote": "<td><i lang=\"ain-Latn\">cikap</i></td>\n\t\t\t\t<td>'bird'</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">cikappo</i></td>\n\t\t\t\t<td>'small bird'</td>\n\t\t\t\t<td><Ref k=\"nakagawa2024\" p=\"264\" /></td>",
+    "suggestion": "Standardize capitalization for Ainu forms in the table, likely to lowercase.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#004",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "35",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"265\" /> is placed after the statement about the function of -po derivatives. It's possible this page number supports the claim, but it's worth double-checking if it specifically addresses the 'ordinary free nouns' aspect.",
+    "quote": "function as ordinary free nouns <Ref k=\"nakagawa2024\" p=\"265\" />.",
+    "suggestion": "Verify if page 265 specifically supports the claim that -po derivatives function as ordinary free nouns.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#003",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "30",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"nakagawa2024\" p=\"264\" /> is placed after the statement about Nakagawa's exclusion, but the page number 264 might not cover this specific point, which is elaborated on page 265.",
+    "quote": "Nakagawa explicitly excludes the suffix from <Xr ch=\"noun-noun-compounding\">compound-noun formation</Xr>: a form such as",
+    "suggestion": "Verify if page 264 supports this specific exclusion or if page 265 should be cited.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#001",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "10",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for 'ijas2023' is missing page numbers, which might be expected for a grammatical treatment.",
+    "quote": "kindaichi1936, 25; ijas2023",
+    "suggestion": "Add page numbers for ijas2023 if available.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#040",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "250",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The tag ‹corpus-suggested› is used, but the claim is based on a single published source (Kindaichi 1936), not corpus data per se. The example is from narrative text, but the extension is not confirmed in multiple corpus instances.",
+    "quote": "recorded as a single-source, dialect-specific datum ‹corpus-suggested›",
+    "suggestion": "Consider using ‹contested› or ‹single-source› if available, or ‹speculative›, rather than ‹corpus-suggested›, which implies broader corpus support.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#039",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "188",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as line 182: use of ‹proposed› as an evidence grade, which is not in the defined set.",
+    "quote": "palestine_2026, 2024-08-28) <Ref k=\"aynucorporadiscord\" /> ‹proposed›",
+    "suggestion": "Replace with ‹speculative› or another standard grade.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is marked ‹speculative›, but it is supported only by Discord attributions and lack of confirmation — which aligns with the criteria for ‹speculative›, so this may be correct. However, the use of ‹proposed› earlier suggests inconsistent tagging.",
+    "quote": "is unclear ‹speculative›",
+    "suggestion": "Ensure consistent use of evidence grades. If ‹proposed› is intended as a synonym for ‹speculative›, standardize to the latter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#038",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "182",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is tagged ‹proposed›, but the citation is to a Discord source. However, the tag ‹proposed› is not a standard epistemic grade listed in the briefing (which includes ‹speculative›, ‹contested›, etc.). This appears to be an unrecognized or custom tag.",
+    "quote": "nukopoli, aynu-corpora Discord, 2023-12-11; palestine_2026, 2024-08-28) <Ref k=\"aynucorporadiscord\" /> ‹proposed›",
+    "suggestion": "Replace ‹proposed› with ‹speculative› or ‹community-source› if no standard tag fits, to maintain consistency with the defined evidence grades.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#029",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "214-215",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The compound base is given as okkayo, but the free noun is described as okkay (line 208 and table). No explanation is given for why the base differs, creating an apparent inconsistency.",
+    "quote": "The unambiguous form for the N+N reading in those dialects is okkayopo with the full base [okkayo 'male' + po 'child']",
+    "suggestion": "Clarify that okkayo is the concept form of okkay, or align the forms if okkayo is not the expected base.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#028",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "93",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that okkaypo is 'ambiguous across dialects' contradicts the later statement (lines 208-210) that the form is unambiguously DIM in Saru/Chitose.",
+    "quote": "For the special status of okkaypo — which is ambiguous across dialects between the DIM reading and a noun–noun reading",
+    "suggestion": "Change 'across dialects' to 'in some dialects' or 'in dialects where okkay is a free noun'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#010",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "113",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <A w=\"-po\" /> is 'diminutive suffix', but the literal translation of <i lang=\"ain-Latn\">ku=sampepo</i> is 'my little heart'. The 'little' part aligns with diminutive, but 'heart' is not directly glossed as a base for -po in this example. The free translation 'my dear one' suggests an affective use, which is discussed later, but the literal translation highlights a potential mismatch or missing information about the base 'sampe'.",
+    "quote": "Kindaichi's example <i lang=\"ain-Latn\">ku=sampepo</i> 'my dear one' (lit. 'my little heart')",
+    "suggestion": "Clarify the base morpheme 'sampe' and its relation to 'heart' and the diminutive/affective meaning.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "nominal-derivation-diminutive-augmentative~p1#002",
+  "chapter": "nominal-derivation-diminutive-augmentative",
+  "lines": "10-12",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states there is no productive augmentative suffix, but then immediately introduces 'poro' as a way to achieve upward size modification. While 'poro' is a property verb and not a suffix, the phrasing could be clearer to avoid implying that 'poro' is the *only* way or that it's a direct replacement for a suffix.",
+    "quote": "No productive augmentative suffix — a suffix encoding 'large X' — is described for Hokkaido Ainu in any of the grammatical treatments consulted. Upward size modification relies on the prenominal property verb <A w=\"poro\" gl=\"be big\" />",
+    "suggestion": "Rephrase to clarify that 'poro' is a separate strategy, not a direct suffix replacement.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

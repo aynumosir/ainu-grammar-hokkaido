@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "8-59",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Three verse-and-narrative traditions each carry a distinct constellation of features — melody, the sakehe refrain, and rhythm-tapping",
+  "issue": "The text claims three traditions, but the following table lists four distinct genres (heroic epic, divine epic, prose-style epic, prose tale), creating a numeric contradiction.",
+  "suggestion": "Revise 'three' to 'four' or adjust the table/genre count to match.",
+  "confidence": 0.95,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "459",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "The Tangiku source has not been read directly for this grammar; the claim is flagged as needing verification against the primary text.",
+  "issue": "Pipeline comment about source verification not yet completed; addresses production process rather than reader.",
+  "suggestion": "Remove or rephrase to a neutral statement, e.g., 'This analysis requires verification against the primary text.'",
+  "confidence": 1,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "330, 375",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Hatozawa Wateke (幌別/Monbetsu) [line 330] vs. Hatozawa Wateke, Biratori/Monbetsu [line 375]",
+  "issue": "Geographic attribution for Hatozawa Wateke differs: one citation says Horobetsu (幌別/Monbetsu), the other says Biratori/Monbetsu.",
+  "suggestion": "Verify correct location and harmonize across both occurrences.",
+  "confidence": 0.8,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "77, 258, 267, 454",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">asserted</i> [line 77], <i lang=\"ain-Latn\">proposed</i> [lines 258, 267], <i lang=\"ain-Latn\">asserted</i> [line 454]",
+  "issue": "English words 'asserted' and 'proposed' are tagged as Ainu (lang='ain-Latn'), which is incorrect; they should be marked as English or not language-tagged.",
+  "suggestion": "Remove lang='ain-Latn' from these English words, or use <i> or <em> without lang attribute.",
+  "confidence": 0.95,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "209, 408",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Prayer (<i lang=\"ain-Latn\">kamuy nomi</i>) [line 209] vs. prayer (<i lang=\"ain-Latn\">inonno itak</i>) [line 408]",
+  "issue": "The same genre ('prayer') is referred to by two different Ainu terms without explanation that they are synonyms or dialectal variants.",
+  "suggestion": "Either consistently use one term, or explicitly note the equivalence (e.g., 'prayer (kamuy nomi / inonno itak)').",
+  "confidence": 0.7,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "83",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "a Abuta yukar passage",
+  "issue": "Indefinite article 'a' used before vowel-initial word 'Abuta'; should be 'an'.",
+  "suggestion": "Change 'a Abuta' to 'an Abuta'.",
+  "confidence": 1,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "120, 188",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "narrator 鍋沢ネブキ [line 120] vs. 鍋澤ねぷき [line 188]",
+  "issue": "Same narrator's name spelled with different kanji (沢 vs 澤) and different kana (ネブキ vs ねぷき).",
+  "suggestion": "Choose one standardized spelling and use consistently.",
+  "confidence": 0.8,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "276",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "HA verse",
+  "issue": "Abbreviation 'HA' introduced without explanation; reader may not know it stands for 'Hokkaido Ainu'.",
+  "suggestion": "Spell out 'Hokkaido Ainu' on first use or define the abbreviation explicitly.",
+  "confidence": 0.6,
+  "chapter": "sakehe-refrain-and-sung-verse-structure",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

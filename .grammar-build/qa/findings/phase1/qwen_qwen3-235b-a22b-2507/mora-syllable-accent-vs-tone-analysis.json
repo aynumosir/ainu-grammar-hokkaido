@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "21",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Tamura (1988b: 13) remarked on the similarity (reported via <Ref k=\"shiraishi2022\" p=\"§5\" />)",
+  "issue": "The citation 'Tamura (1988b: 13)' is presented as a direct source, but the text indicates it is only reported secondhand via Shiraishi (2022). The phrasing risks misrepresenting Tamura's work as directly consulted when it was not.",
+  "suggestion": "Rephrase to clarify indirect attribution: e.g., 'Tamura (1988b) is reported to have remarked on the similarity (via <Ref k=\"shiraishi2022\" p=\"§5\" />)'",
+  "confidence": 0.95,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The read sources do not argue for it",
+  "issue": "The phrase 'read sources' is a pipeline register leak, referring to the author's research process rather than the scholarly record; it should be phrased from the reader's perspective.",
+  "suggestion": "Replace with: 'The existing literature does not argue for it'",
+  "confidence": 0.98,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "407",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "that study was not read directly for this grammar and the claims attributed to it here rest on its treatment in Nakagawa (2024) and Nakagawa and Fukazawa (2022)",
+  "issue": "Explicit meta-commentary about the author's source access ('was not read directly') is a register leak inappropriate in final prose.",
+  "suggestion": "Omit or rephrase to focus on evidence: 'The claims here follow Nakagawa (2024) and Nakagawa and Fukazawa (2022), who analyze Itabashi (2001)'",
+  "confidence": 0.99,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "244-253",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Two analytical positions on the structure of the exception class merit explicit grading. <strong>Position A — gradient weight-sensitive accent with a lexical exception class</strong> ‹consensus›.",
+  "issue": "Position A is labeled ‹consensus›, but the preceding sentence says 'two analytical positions' implying both are live options; labeling one as consensus contradicts the framing of an open debate.",
+  "suggestion": "Either remove 'merit explicit grading' or adjust labels to reflect that Position A is majority view but not consensus in context",
+  "confidence": 0.9,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "134",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "These exceptions produce minimal accent pairs:",
+  "issue": "The colon after 'pairs' introduces a table, but the preceding sentence is awkwardly phrased; 'produce' is an odd verb choice for creating lexical contrasts.",
+  "suggestion": "Rephrase: 'These exceptions form minimal accent pairs, such as:'",
+  "confidence": 0.85,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "319-324",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Refsing (1986: 73) treated it as an accent dialect with rules parallel to Saru <Ref k=\"refsing1986\" p=\"73\" />. Nakagawa argues from museum-archive recordings that the same word appears in both accent patterns across tokens from one speaker",
+  "issue": "Refsing's claim that Shizunai has stable accent rules is directly contradicted by Nakagawa's observation of variable accent in one speaker, yet both are cited without resolution, creating internal tension.",
+  "suggestion": "Clarify that Nakagawa's data challenge Refsing's analysis",
+  "confidence": 0.95,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "355",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "SA cognate [‹SA›]",
+  "issue": "The use of angle brackets and ‹SA› tag in a table header is inconsistent with the rest of the chapter, where dialect tags like ‹SA› are used inline without brackets.",
+  "suggestion": "Use consistent formatting: 'SA cognate (‹SA›)'",
+  "confidence": 0.8,
+  "chapter": "mora-syllable-accent-vs-tone-analysis",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

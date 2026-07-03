@@ -1,0 +1,775 @@
+[
+ {
+  "id": "noun-incorporation-object~p1#020",
+  "chapter": "noun-incorporation-object",
+  "lines": "82-90",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The free translation uses first-person singular 'I', but the gloss shows 4th-person S suffix =an on both verbs, indicating a 4th-person subject. The translation should reflect the 4th person or a note should explain that 4th person can be used for first person in narrative.",
+    "quote": "tr=\"I went down to the river and caught fish again, and at last …\" … g=\"… descend.SG=4.S … fish-catch=4.S …\"",
+    "suggestion": "Change translation to 'One went down … and caught fish again …' or add a note explaining the narrative use of 4th person.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss has 'PL.PRF' but the free translation 'I went down' suggests 1st person singular; the morpheme string does not contain a clear plural or perfect marker on the subject, and the person index =an is 4.S, not 1SG.",
+    "quote": "g=\"river place LOC descend.SG=4.S CONJ again fish-catch=4.S PL.PRF then\"",
+    "suggestion": "Check if 'PL.PRF' in the gloss is accurate; it may be a misanalysis of 'wa' or another element. If the subject is 1SG, the gloss should reflect that consistently with the translation.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation uses 1SG 'I', but the example is marked with =an (4th person S), which contradicts the translation. The morpheme string lacks a 1SG marker.",
+    "quote": "tr=\"I went down to the river and caught fish again, and at last …\"",
+    "suggestion": "Revise translation to match 4th person, e.g., 'Someone went down...' or correct the morpheme/gloss if the subject is indeed 1SG.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#011",
+  "chapter": "noun-incorporation-object",
+  "lines": "213",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cise-kar' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cise-kar",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'wakka-ta' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "wakka-ta",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: 'cise-kar' vs 'wakka-ta' (line 214) — both are Object NI compounds. The chapter otherwise uses hyphens consistently, so this is a minor drift.",
+    "quote": "<i lang=\"ain-Latn\">cise-kar</i>",
+    "suggestion": "Ensure all incorporated compounds use the same hyphenation style.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#010",
+  "chapter": "noun-incorporation-object",
+  "lines": "205",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ni-tuye' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "ni-tuye",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pukusa-ta' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "pukusa-ta",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Hyphenation of incorporated compounds varies: 'ni-tuye' vs 'pukusa-ta' (line 206) — both are Object NI compounds, so hyphenation should be consistent. Elsewhere 'cep-koyki' uses hyphen, so 'ni-tuye' should follow.",
+    "quote": "<i lang=\"ain-Latn\">ni-tuye</i>",
+    "suggestion": "Ensure consistent hyphenation for incorporated compounds; all should use hyphen if 'cep-koyki' does.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#026",
+  "chapter": "noun-incorporation-object",
+  "lines": "247",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The translation ends with 'and lived on', but the Ainu morphemes end with 'ne wa' (COP CONJ), suggesting a clause-final copula, not 'lived'. The verb 'ruwe' is glossed as 'exist', not 'live', and 'k=an' is 'I exist', not 'I lived'.",
+    "quote": "tr=\"I bought land, built a house there, and lived on.\"",
+    "suggestion": "Revise translation to 'I bought land, built a house there, and existed on it' or adjust gloss if 'ruwe' is intended to mean 'live'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "'track-POSS' in the gloss has no clear morpheme in the example 'k=an ruwe ne'; 'ruwe' is glossed as 'exist', 'ne' as 'COP', and 'k=an' as '1SG.S=exist'. 'track-POSS' appears to be a misanalysis.",
+    "quote": "g=\"land 1SG.A=buy CONJ place-POSS LOC 1SG.S=house-build CONJ 1SG.S=exist track-POSS COP CONJ\"",
+    "suggestion": "Remove or correct 'track-POSS' in the gloss; it likely stems from a misreading of 'wa' or 'ne'.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#024",
+  "chapter": "noun-incorporation-object",
+  "lines": "89",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This factual claim in the example note lacks a citation. The example cites ilcaa1976 for the narrative text, but the frequency claim is not supported by that source.",
+    "quote": "The compound cep-koyki 'fish-catch' occurs 144 times in the Hokkaido corpus (rank 848).",
+    "suggestion": "Add a citation to the corpus study from which the frequency and rank are drawn.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#023",
+  "chapter": "noun-incorporation-object",
+  "lines": "172",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹consensus› is applied to a statement about the chapter's own content, not to a factual claim that requires evidence. This is a misuse of the tag.",
+    "quote": "the contrast between the phrasal and the incorporated frame is developed here ‹consensus›",
+    "suggestion": "Remove the tag or replace with a more appropriate tag if the statement is contested.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#019",
+  "chapter": "noun-incorporation-object",
+  "lines": "309",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i-' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "i-",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'i=' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "i=",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#018",
+  "chapter": "noun-incorporation-object",
+  "lines": "296",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep-ya-o-kuta' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep-ya-o-kuta",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ya' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "ya",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'o-' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "o-",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'itak-mak-kus-te' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "itak-mak-kus-te",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#017",
+  "chapter": "noun-incorporation-object",
+  "lines": "266",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep-koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep-koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'Sikotpet-tomotuye' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "Sikotpet-tomotuye",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#016",
+  "chapter": "noun-incorporation-object",
+  "lines": "255",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'apa asi' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "apa asi",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'apa-asi' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "apa-asi",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep-koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep-koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'wakka ta' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "wakka ta",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'wakka-ta' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "wakka-ta",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#015",
+  "chapter": "noun-incorporation-object",
+  "lines": "250",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=cise-kar' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "ku=cise-kar",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cise' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cise",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'k=an' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "k=an",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=an' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "ku=an",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#014",
+  "chapter": "noun-incorporation-object",
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'toy ku=hok wa or-o ta ku=cise-kar wa k=an ruwe ne wa' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "toy ku=hok wa or-o ta ku=cise-kar wa k=an ruwe ne wa",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#013",
+  "chapter": "noun-incorporation-object",
+  "lines": "225",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kem-eyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "kem-eyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#012",
+  "chapter": "noun-incorporation-object",
+  "lines": "220",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ape-ari' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "ape-ari",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#009",
+  "chapter": "noun-incorporation-object",
+  "lines": "199",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'sik-erayke' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "sik-erayke",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#008",
+  "chapter": "noun-incorporation-object",
+  "lines": "194",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'soy-osma' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "soy-osma",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#007",
+  "chapter": "noun-incorporation-object",
+  "lines": "169",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'numan hekaci cep koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "numan hekaci cep koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep-koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep-koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#006",
+  "chapter": "noun-incorporation-object",
+  "lines": "77",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep-koyki=an' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep-koyki=an",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#005",
+  "chapter": "noun-incorporation-object",
+  "lines": "68",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kinakar' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "kinakar",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kinakar=an' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "kinakar=an",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'kina a=kar' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "kina a=kar",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#004",
+  "chapter": "noun-incorporation-object",
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form '=an' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "=an",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'a=' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "a=",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#003",
+  "chapter": "noun-incorporation-object",
+  "lines": "40",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pukusa a=ta' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "pukusa a=ta",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pukusa-ta=an' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "pukusa-ta=an",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#002",
+  "chapter": "noun-incorporation-object",
+  "lines": "22, 23",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep ku=koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep ku=koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'ku=cep-koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "ku=cep-koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep-koyki=an' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep-koyki=an",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#001",
+  "chapter": "noun-incorporation-object",
+  "lines": "15",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'cep-koyki' is italicized but not tagged with `lang=\"ain-Latn\"` as is done elsewhere in the chapter for Ainu forms.",
+    "quote": "cep-koyki",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the italics tag.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#028",
+  "chapter": "noun-incorporation-object",
+  "lines": "72",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "A Discord comment is tagged with ‹corpus-confirmed›, which overstates the epistemic status: community discussion alone does not rise to corpus confirmation unless tied to attested data.",
+    "quote": "thegodofneet, aynu-corpora Discord, 2024 <Ref k=\"aynucorporadiscord\" />) ‹corpus-confirmed›",
+    "suggestion": "Downgrade to ‹speculative› or ‹community-observed› if not directly corpus-attested.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#027",
+  "chapter": "noun-incorporation-object",
+  "lines": "296",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme breakdown in prose describes 'ya' as 'shore' and 'o-' as applicative, but no gloss is provided for this example. The absence of a full glossed example for this rare structure is a gap in exposition.",
+    "quote": "cep-ya-o-kuta",
+    "suggestion": "Add a full <Ex> with gloss and translation for cep-ya-o-kuta to maintain consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#025",
+  "chapter": "noun-incorporation-object",
+  "lines": "89",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The note claims cep-koyki occurs 144 times in the Hokkaido corpus, but earlier in the same chapter (line 111), the total count of NI tokens from the Chitose narrator is only 517. This creates a potential inconsistency if cep-koyki alone accounts for a large portion without clarification.",
+    "quote": "note=\"The 4.S suffix =an on cep-koyki is the diagnostic: after O-NI the compound is intransitive. The compound cep-koyki 'fish-catch' occurs 144 times in the Hokkaido corpus (rank 848).\"",
+    "suggestion": "Clarify whether the 144 occurrences are in the Chitose corpus or the entire Hokkaido corpus to avoid confusion.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#022",
+  "chapter": "noun-incorporation-object",
+  "lines": "285",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the read sources' is a pipeline-internal reference (sources read by the author) and is not appropriate for the reader. It should be rephrased to refer to the literature or the sources consulted.",
+    "quote": "the read sources do not resolve",
+    "suggestion": "Change to 'the sources consulted for this chapter do not resolve' or 'the literature does not resolve'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-object~p1#021",
+  "chapter": "noun-incorporation-object",
+  "lines": "169",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The Ainu example includes 'numan' (yesterday), but the English translation omits it, creating a mismatch between the Ainu text and the translation.",
+    "quote": "numan hekaci cep koyki 'the boy caught some fish'",
+    "suggestion": "Add 'yesterday' to the translation: 'Yesterday the boy caught some fish.'",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

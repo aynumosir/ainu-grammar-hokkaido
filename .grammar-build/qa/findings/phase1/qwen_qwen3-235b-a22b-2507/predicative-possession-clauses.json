@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "14",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=yup-i an",
+  "issue": "The gloss '4.POSS=elder.brother-POSS exist' uses 'POSS' for both the possessive prefix and the affiliative suffix, but the glossing standard typically distinguishes these; the suffix should be glossed as -AFF or similar to match the concept of 'affiliative form'.",
+  "suggestion": "Change gloss to '4.POSS=elder.brother-AFF exist'",
+  "confidence": 0.95,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "163",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "4.POSS=younger.sister-POSS exist",
+  "issue": "Same issue as in line 14: the suffix -ha on 'sa' is an affiliative suffix and should not be glossed as 'POSS' on both the prefix and the suffix; this leads to ambiguity in morpheme alignment.",
+  "suggestion": "Change gloss to '4.POSS=younger.sister-AFF exist'",
+  "confidence": 0.95,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "172",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "4.POSS=child-POSS even exist",
+  "issue": "The gloss 'child-POSS' repeats the same issue: the suffix -ho is an affiliative marker and should be glossed distinctly from the possessive prefix.",
+  "suggestion": "Change gloss to '4.POSS=child-AFF even exist'",
+  "confidence": 0.95,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "211",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "soul-have CONJ exist",
+  "issue": "The compound 'ramat-kor' is glossed as 'soul-have', but the morpheme-by-morpheme segmentation implies 'ramat-kor' is a single unit; the gloss should reflect incorporation, possibly as 'soul-HAVE' or 'soul-holding'.",
+  "suggestion": "Change gloss to 'soul-HAVE CONJ exist'",
+  "confidence": 0.85,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "253",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa 2024: 323; Bugaeva 2012: 496",
+  "issue": "The 'source' column in the table uses informal citation format (author year: page) instead of the standard <Ref> markup used elsewhere in the chapter, creating inconsistency in citation style.",
+  "suggestion": "Replace with <Ref k=\"nakagawa2024\" p=\"323\" /> and <Ref k=\"bugaeva2012\" p=\"496\" />",
+  "confidence": 0.9,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "263",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Bugaeva 2012: 496",
+  "issue": "Same issue as line 253 — source is given in plain text instead of <Ref> markup, breaking citation consistency.",
+  "suggestion": "Replace with <Ref k=\"bugaeva2012\" p=\"496\" />",
+  "confidence": 0.9,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "okay",
+  "issue": "The plural existential is spelled 'okay' in line 13 but 'oka' in line 185; this variation should be noted or standardized, as it may reflect dialectal or orthographic inconsistency.",
+  "suggestion": "Add a note on variation or standardize to 'oka' if preferred; otherwise mark as ~okay",
+  "confidence": 0.7,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "185",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "okay~oka",
+  "issue": "The spelling 'okay' and 'oka' are presented as variants, but elsewhere only 'okay' is used; this should be consistently marked throughout the chapter.",
+  "suggestion": "Ensure all instances reflect the variant form: okay~oka",
+  "confidence": 0.8,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "222",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "a=kohon-kor wa an=an",
+  "issue": "The free translation is given as 'was pregnant with (lit. hold-belly-have, one-exists)' — the literal translation is garbled and does not match the morpheme breakdown.",
+  "suggestion": "Revise literal translation to '3POSS=belly-have CONJ exist=4INTR' or similar",
+  "confidence": 0.8,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "221",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=kohon-kor wa an=an",
+  "issue": "The example includes '=an' as a suffix on the existential verb, but the gloss does not reflect this; the gloss should include the 4th-person intransitive suffix.",
+  "suggestion": "Update gloss to '4.POSS=belly-HAVE CONJ exist=4INTR'",
+  "confidence": 0.9,
+  "chapter": "predicative-possession-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

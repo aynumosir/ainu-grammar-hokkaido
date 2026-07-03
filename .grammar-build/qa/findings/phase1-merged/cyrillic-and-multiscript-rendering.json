@@ -1,0 +1,342 @@
+[
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#011",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "170",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation for community assertion uses a `<Ref>` tag with `paren`, consistent with the pattern observed on lines 32, 42, 48, and 122.",
+    "quote": "asserted by nukopoli (aynu-corpora Discord, 2024) <Ref k=\"aynucorporadiscord\" paren />",
+    "suggestion": "Standardize the citation format for community discussions.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about Soviet minority-language orthographic policy is presented as unmarked consensus but supported only by a Discord attribution, which is a weak source for a historical policy claim.",
+    "quote": "asserted by nukopoli (aynu-corpora Discord, 2024) <Ref k=\"aynucorporadiscord\" paren />",
+    "suggestion": "Either add an epistemic tag such as ‹speculative› or replace the Discord citation with a scholarly source on Soviet orthographic policy.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about Soviet minority-language orthographic policy is attributed only to a Discord user without a specific date (only '2024'), unlike other Discord citations which include month and day or at least a full year. This is less precise than the standard citation format used elsewhere in the chapter.",
+    "quote": "asserted by nukopoli (aynu-corpora Discord, 2024)",
+    "suggestion": "Include a more specific date if available, e.g., '2024-XX-XX', or at minimum ensure consistency by using the same format as other Discord citations.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#004",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "48",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation for community record also uses a `<Ref>` tag with `paren`, suggesting a potential pattern of inconsistent citation formatting for community contributions.",
+    "quote": "community record (nukopoli, aynu-corpora Discord, 2024) <Ref k=\"aynucorporadiscord\" paren />",
+    "suggestion": "Standardize the citation format for community discussions and records.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation points to Nakagawa 2024, page 49, as the source for the adoption of the =/- boundary markers. However, Nakagawa 2024 is a re-edition of a 1986 text collection, and it is unlikely that a 2024 reissue contains new methodological decisions from 1986. This creates a potential anachronism in citation: the claim attributes a 1986 innovation to a 2024 volume, which may misrepresent the source.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"49\" />",
+    "suggestion": "Revise the citation to clarify that the 1986 original introduced the convention, and the 2024 edition is a republication. For example: 'Nakagawa adopted this device in his 1986 text collection (reprinted in Nakagawa 2024, p. 49)'.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#007",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions a dedicated small 'ン' (<span lang=\"ain-Kana\">𛅧</span>, U+1B167) for the non-moraic nasal coda, but the table entry for '-n' only lists the full-size 'ン'. This creates a discrepancy between the description and the table.",
+    "quote": "Full-size ン; a dedicated small ン (<span lang=\"ain-Kana\">𛅧</span>, U+1B167) exists",
+    "suggestion": "Update the table to include the dedicated small 'ン' or clarify its usage in relation to the '-n' coda.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The character U+1B167 (𛅧) is used to represent a small ン, but it is not part of the standard Katakana Phonetic Extensions block (U+31F0–U+31FF) and may not render consistently. The note mentions limited font support, but the use of this character contrasts with the otherwise standardized use of U+31F0–U+31FF in the table. This creates a minor orthographic inconsistency in the presentation of small kana.",
+    "quote": "<span lang=\"ain-Kana\">𛅧</span>",
+    "suggestion": "Consider adding a note that U+1B167 is non-standard or not widely supported, or use a fallback representation consistent with the other entries.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#012",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "182",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation for community discussion also uses a `<Ref>` tag with `paren`, and the epistemic tag ‹speculative› is applied to the entire sentence, including the citation.",
+    "quote": "scheuewsuiski and nukopoli, aynu-corpora Discord, December 2024) <Ref k=\"aynucorporadiscord\" paren /> ‹speculative›",
+    "suggestion": "Ensure consistent citation formatting for community discussions and consider if the ‹speculative› tag should apply to the entire sentence or just the claim.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The date 'December 2024' in the citation is inconsistent with the context: today is July 2026, so December 2024 is a past date and should be formatted consistently with other Discord citations (which use YYYY-MM-DD). The current format 'December 2024' deviates from the standard 'YYYY-MM-DD' used elsewhere (e.g., 2023, 2024 without month names).",
+    "quote": "December 2024",
+    "suggestion": "Change 'December 2024' to '2024-12'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#013",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "198",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Ainu forms appear as 'italicised inline form', but the preceding sentence mentions 'Latin phonemic transcription' and the following sentence mentions 'katakana surface form'. It's unclear if 'italicised inline form' refers specifically to the Latin transcription or if it's a general statement about how Ainu forms are presented.",
+    "quote": "italicised inline form.",
+    "suggestion": "Clarify whether all Ainu forms are italicized, or if this applies only to specific contexts like inline citations.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#010",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "138",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The examples 'sir' and 'kor' for the coda consonant '-r' appear to be full words rather than morphemes with a coda, and the gloss '<i lang=\"ain-Latn\">-r</i>' suggests it's a morpheme.",
+    "quote": "<i lang=\"ain-Latn\">sir</i> 'appearance' → <span lang=\"ain-Kana\">シㇼ</span>, <i lang=\"ain-Latn\">kor</i> 'have' → <span lang=\"ain-Kana\">コㇿ</span>",
+    "suggestion": "Ensure the examples accurately represent the morphemic structure and glossing.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#009",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "128",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to lines 110 and 115, the example 'nep' for the coda consonant '-p' appears to be a full word rather than a morpheme with a coda, and the gloss '<i lang=\"ain-Latn\">-p</i>' suggests it's a morpheme.",
+    "quote": "<i lang=\"ain-Latn\">nep</i> 'what' → <span lang=\"ain-Kana\">ネㇷ゚</span>",
+    "suggestion": "Ensure the example accurately represents the morphemic structure and glossing.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#008",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "122",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation for community discussion also uses a `<Ref>` tag with `paren`, consistent with the pattern observed on lines 32, 42, and 48.",
+    "quote": "community discussion (toracatman, aynu-corpora Discord, 2023) <Ref k=\"aynucorporadiscord\" paren />",
+    "suggestion": "Standardize the citation format for community discussions.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#006",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "115",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 110, the example 'hum' for the coda consonant '-m' appears to be a full word rather than a morpheme with a coda, and the gloss '<i lang=\"ain-Latn\">-m</i>' suggests it's a morpheme.",
+    "quote": "<i lang=\"ain-Latn\">hum</i> 'sound' → <span lang=\"ain-Kana\">フㇺ</span>",
+    "suggestion": "Ensure the example accurately represents the morphemic structure and glossing.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#005",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "110",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example provided for the coda consonant '-k' shows 'sik' translating to 'シㇰ'. However, the gloss for '-k' is given as '<i lang=\"ain-Latn\">-k</i>', implying it's a coda. The example 'sik' seems to be a full word, not a morpheme with a coda.",
+    "quote": "<i lang=\"ain-Latn\">sik</i> 'eye' → <span lang=\"ain-Kana\">シㇰ</span>",
+    "suggestion": "Clarify if 'sik' is a word or a morpheme, and ensure the example accurately reflects the morphemic analysis and glossing.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#003",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "42",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 32, this citation for community discussion uses a `<Ref>` tag with `paren` which might be redundant or inconsistently applied.",
+    "quote": "community discussion (nukopoli, aynu-corpora Discord, 2023) <Ref k=\"aynucorporadiscord\" paren />",
+    "suggestion": "Ensure consistent citation formatting for community discussions.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#002",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "32",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community discussion is inconsistent. It includes the username, platform, and date, but then uses a `<Ref>` tag with `paren` which might be redundant or intended for a different purpose.",
+    "quote": "community discussion (nukopoli, aynu-corpora Discord, 2023) <Ref k=\"aynucorporadiscord\" paren />",
+    "suggestion": "Clarify the intended use of `paren` in the `<Ref>` tag or consider a more streamlined citation format for community discussions.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#001",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "10",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa 2024 appears to be misplaced. It is listed after refsing1986, but the text implies it supports the use of Latin phonemic transcription in modern corpus annotation, which might be a more recent development than refsing1986.",
+    "quote": "refsing1986; nakagawa2024",
+    "suggestion": "Consider reordering or clarifying the citation to ensure it accurately reflects which sources support which claims.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#015",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "132",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The coda consonant -r is represented by multiple characters (five) in the table, but they are presented in a single table cell without clear separation or labelling. This could lead to confusion in parsing which character corresponds to which vowel. The text explains the vowel-indexing, but the visual presentation in the table could be improved for clarity.",
+    "quote": "<td lang=\"ain-Kana\">ㇻ ㇼ ㇽ ㇾ ㇿ</td>",
+    "suggestion": "Use separate cells or clearly delimit the characters (e.g., with spaces or commas) and label them explicitly in the table or caption.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "cyrillic-and-multiscript-rendering~p1#014",
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "lines": "105",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table header says 'small kana' but the row for -n uses full-size ン (with a note explaining that a dedicated small ン exists but has limited font support). This creates a contradiction between the header and the actual content.",
+    "quote": "Coda consonants (small kana appended to the syllable kana)",
+    "suggestion": "Revise the header to read 'Coda consonants (small kana appended to the syllable kana; -n uses full-size ン due to font limitations)' or move the exception into a footnote.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

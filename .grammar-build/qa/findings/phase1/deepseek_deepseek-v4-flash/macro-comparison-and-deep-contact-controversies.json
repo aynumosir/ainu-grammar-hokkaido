@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "105",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "see §6 below",
+  "issue": "The table row for Korean lexical comparisons says 'see §6 below', but there is no section numbered §6 in this chapter. The section that discusses Korean proposals is 'contact-vs-inheritance' (line 342), which would be §7 if sections were numbered sequentially.",
+  "suggestion": "Change '§6' to '§ Contact-vs-inheritance' or update the section numbering to match.",
+  "confidence": 0.95,
+  "chapter": "macro-comparison-and-deep-contact-controversies",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "116",
+  "category": "copyedit",
+  "severity": "high",
+  "quote": "only systematic sound-to-sound correspondences across a significant portion of core vocabulary, independent of areal diffusion, constitutes evidence for common descent",
+  "issue": "Subject-verb agreement error: the subject 'correspondences' is plural, so the verb should be plural 'constitute', not 'constitutes'.",
+  "suggestion": "Change 'constitutes' to 'constitute'.",
+  "confidence": 0.98,
+  "chapter": "macro-comparison-and-deep-contact-controversies",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "395",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "aomidori_cs_",
+  "issue": "The username 'aomidori_cs_' contains underscores that may be a pipeline formatting artifact or intended as markdown for italics. In the surrounding text, usernames are written without such markings.",
+  "suggestion": "Write as 'aomidori_cs' without trailing underscore, or apply consistent formatting for usernames.",
+  "confidence": 0.6,
+  "chapter": "macro-comparison-and-deep-contact-controversies",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13, 33, 185, 268-270, 314-315, 334",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Hokkaido (no macron) vs Jōmon and Tōhoku (with macron)",
+  "issue": "Inconsistent use of macrons: 'Hokkaido' appears without macron throughout the chapter, while 'Jōmon' and 'Tōhoku' consistently include macrons. This may be intentional (following English stylistic conventions), but it creates a visual inconsistency in romanization of Japanese place names.",
+  "suggestion": "Either add macron to Hokkaidō or remove macrons from Jōmon and Tōhoku for consistency.",
+  "confidence": 0.5,
+  "chapter": "macro-comparison-and-deep-contact-controversies",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

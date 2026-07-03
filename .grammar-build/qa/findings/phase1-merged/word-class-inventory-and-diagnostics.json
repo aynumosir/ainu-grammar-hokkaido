@@ -1,0 +1,1749 @@
+[
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#059",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "374-380",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "No mismatch; the gloss reflects the verbal analysis while the translation is natural English.",
+    "quote": "g=\"be.small child\" tr=\"a small child\"",
+    "suggestion": null,
+    "confidence": 0
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The `m` field contains two words (`pon`, `hekaci`) but the `g` field only glosses `pon` as 'be.small'; `hekaci` is not glossed. This leaves a morpheme unglossed in the interlinear.",
+    "quote": "<Ex m=\"pon hekaci\" g=\"be.small child\" tr=\"a small child\" ... />",
+    "suggestion": "Update `g` to \"be.small child\" with two gloss words, or split the example if only `pon` is under analysis.",
+    "confidence": 0.99
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#016",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "311",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'ruwe', 'siri', 'hawe', and 'humi' are 'affiliative forms' of sensory nouns. However, paragraph 529 discusses a diachronic proposal that the 'affiliative suffix -i' derives from the formal noun 'hi'. This suggests a potential confusion between 'affiliative form' as a noun subclass and 'affiliative suffix'.",
+    "quote": "<Xr ch=\"concept-form-affiliative-form\">affiliative forms</Xr> of the sensory nouns",
+    "suggestion": "Clarify the relationship between 'affiliative forms' and the 'affiliative suffix' to avoid confusion.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "If these are formal nouns, the table says they take no person affix. But if they are affiliative forms, they take possessive affixes. This is a direct contradiction that needs resolution.",
+    "quote": "Four formal nouns grammaticalise further into the evidential system: ... are affiliative forms",
+    "suggestion": "Either clarify that these evidential forms are a special subclass of formal nouns that do take possessive affixes (and update the table), or reclassify them as something other than formal nouns.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#045",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "316-319",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A single community Discord post from 2026 is the only source for a claimed productive pattern. This should be tagged with an appropriate epistemic grade (e.g., ‹speculative› or ‹original-needs-review›) rather than left as unmarked consensus.",
+    "quote": "(nukopoli, aynu-corpora Discord 2026; <Ref k=\"aynucorporadiscord\" />)",
+    "suggestion": "Add ‹speculative› or ‹original-needs-review› tag, or find a published source.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about productive instrument-nominalisation is supported only by a Discord attribution (nukopoli, 2026), yet it carries no epistemic tag like ‹contested› or ‹speculative›, despite being a single community source. This inflates the epistemic weight of the claim.",
+    "quote": "nukopoli, aynu-corpora Discord 2026; <Ref k=\"aynucorporadiscord\" />",
+    "suggestion": "Add ‹contested› or ‹speculative› after the citation to reflect its evidential status.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#003",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "171",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table indicates that common nouns (concept form) take 'none' for person affix type. However, the text in paragraph 151 states that nouns carry 'at most one person affix — the possessive (transitive-subject) affix, not the nominative affix of verbs'. This implies that some nouns might not take any person affix, but the 'none' here might be too absolute if the affiliative form takes a possessive affix.",
+    "quote": "<td>none</td>",
+    "suggestion": "Clarify if 'none' means absolutely no person affix is possible, or if it refers to a specific type of affix not being present.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table indicates that common nouns (concept form) are not a 'place' argument. However, paragraph 235 states that locative nouns 'always function as place arguments'. This suggests a distinction in how common nouns function as arguments.",
+    "quote": "<td>no</td>",
+    "suggestion": "Ensure consistency in the description of noun argument roles.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent with prose. No issue.",
+    "quote": "common noun — concept form ... person affix type: none",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#082",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "484",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example `onture-p` 'strawberry' is analyzed as containing a verb head, but no interlinear example is provided to show the segmentation and gloss of `onture` as a verb. The claim that it contains a '1-argument-verb head' lacks supporting morphemic analysis in an `<Ex>` block, making the assertion unverified within the chapter.",
+    "quote": "onture-p",
+    "suggestion": "Provide an `<Ex>` for `onture-p` with `m`, `g`, and `tr` to substantiate the verbal head claim.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#080",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "380",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss `g` field contains two words ('be.small' and 'child') but only one morpheme is present in the `m` field: `pon`. The noun `hekaci` 'child' is not segmented or aligned in `m`, making the gloss misaligned. Either `m` should be `pon hekaci` with two separate words or the gloss should only reflect `pon`.",
+    "quote": "g=\"be.small child\"",
+    "suggestion": "Change `m` to \"pon hekaci\" and `g` to \"be.small child\" with proper segmentation, or split into two examples if intended to show attributive use alone.",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#078",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "7-14",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text claims meaning is excluded, but then immediately uses semantic criteria (properties vs events) to illustrate the classification. This is a direct contradiction.",
+    "quote": "Meaning is explicitly excluded from the classification — words designating properties are verbs, words denoting events can be nouns",
+    "suggestion": "Either remove the claim that meaning is excluded, or rephrase the examples to avoid semantic characterizations (e.g., 'words that function as predicates without a copula are verbs, words that serve as arguments are nouns').",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#043",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "258-261",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose presents the inanimate use of utar as a fact about Saru dialects, but the example note explicitly marks this as contested. The prose should be hedged (e.g., 'Nakagawa reports that in Saru dialects...') or the epistemic tag should be applied to the prose claim.",
+    "quote": "in the Saru dialects its range extends to inanimates on animist grounds, since all things carry a spirit in the Ainu worldview",
+    "suggestion": "Add 'Nakagawa reports that' or similar hedging, and/or add ‹contested› tag to the prose claim.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#042",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "203-208",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table claims formal nouns take no person affix, but the text (lines 309-315) states that ruwe, siri, hawe, humi are 'affiliative forms' of sensory nouns — affiliative forms by definition take the possessive affix. This is a direct contradiction: either these evidential forms are not formal nouns, or the table is wrong about formal nouns taking no person affix.",
+    "quote": "formal (defective) noun ... person affix type: none",
+    "suggestion": "Either add a note to the table that some formal nouns (evidentials) appear in affiliative form with possessive affixes, or clarify in the prose that ruwe etc. are not formal nouns in the same sense.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#083",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "534",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form `kuni` appears without macron, while phonemic length may be relevant. However, no other forms in the chapter use macrons, so this may reflect a consistent orthographic choice. No internal inconsistency is evident.",
+    "quote": "<A w=\"kuni\" />",
+    "suggestion": "null",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#077",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "513-526",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Appropriate. No leak.",
+    "quote": "The deepest terminological split",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#076",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "473-474",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Appropriate section title. No leak.",
+    "quote": "Three disputed boundaries",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#075",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "418-431",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Appropriate scholarly evaluation. No leak.",
+    "quote": "The most consequential classification decision",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#074",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "94-98",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Appropriate scholarly commentary. No leak.",
+    "quote": "The consensus at the macro level is solid",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#073",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "7-14",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Attributed to sources; not a register leak.",
+    "quote": "Meaning is explicitly excluded from the classification",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#072",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "482-483",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent. No issue.",
+    "quote": "onture-p",
+    "suggestion": null,
+    "confidence": 0
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent. No issue.",
+    "quote": "haca-hapo ... po-at",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#071",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "452",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent. No issue.",
+    "quote": "tunasno pirka",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#070",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "375",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent with other examples of attributive use. No issue.",
+    "quote": "pon hekaci",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#069",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "300",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent use of hyphens and equals signs. No issue.",
+    "quote": "tan-pe ... a=ye",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#068",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "242",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent with other examples. No issue.",
+    "quote": "en=sam",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#067",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "139-141",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent use of '=' for clitic boundaries. No issue.",
+    "quote": "ku=mina ... ku=pewre",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#066",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "42-89",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent use of Japanese terminology. No issue.",
+    "quote": "動詞, 名詞, etc.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#065",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "18-27",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Standard orthography for author names. No issue.",
+    "quote": "Satō ... Ijäs ... Refsing",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#064",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "7-8",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistently used without macron throughout the chapter. No internal inconsistency.",
+    "quote": "Hokkaido",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#062",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "496-510",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Two different forms with overlapping glosses; this is acceptable.",
+    "quote": "<A w=\"yakun\" gl=\"if\" />, <A w=\"yakne\" gl=\"as for, if\" />",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#060",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "451-458",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss gives the stative reading while the translation gives the inchoative reading; this is intentional to show the ambiguity. No error.",
+    "quote": "g=\"quickly be.good\" tr=\"Get well quickly!\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#058",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "299-306",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Translation matches gloss. No issue.",
+    "quote": "tr=\"This is what is called a pot.\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#057",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "288-296",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss includes phonological conditioning information in parentheses, which is non-standard. The conditioning should be explained in the prose, not in the gloss.",
+    "quote": "gl=\"thing, one (after V)\" / gl=\"thing, one (after C)\"",
+    "suggestion": "Change gloss to 'thing, one' and explain the allomorphy in the text.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#056",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "275-279",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Ambiguous antecedent: 'the possessed form' could refer to utari or to a different form.",
+    "quote": "the possessed form implying a specific relational anchor",
+    "suggestion": "Rephrase: 'utari, being the possessed form, implies...'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#055",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "270-271",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is metadata, not prose. No issue.",
+    "quote": "place=\"川上まつ子 '和人になった兄' (1986), NAM database nam-archive/kawakami-minwa/13, line 226\"",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#053",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "213-219",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "No error; consistent with the table.",
+    "quote": "*ku=tek is ungrammatical as a possessive",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#052",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "150-151",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Terminological inconsistency: 'nominative affix' vs 'subject affix' used elsewhere.",
+    "quote": "nominative affix of verbs",
+    "suggestion": "Consider using 'subject affix' for consistency with other parts of the chapter.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#051",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "94-98",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Informal but clear reference to section 3. No error.",
+    "quote": "the no-adjective section",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#049",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "7-8",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Minor redundancy; 'formal behaviour' already covers morphology.",
+    "quote": "formal (morphological) behaviour",
+    "suggestion": "Consider 'formal (morphosyntactic) behaviour' or just 'formal behaviour'.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#041",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "196-201",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Consistent: pronouns themselves do not take person affixes; they can trigger affixes on other elements. No issue.",
+    "quote": "pronoun ... person affix type: none",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#040",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "150-151",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a standard convention; no inconsistency.",
+    "quote": "the possessive (transitive-subject) affix",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#039",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "94-98",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that auxiliary verb treatment is the 'only top-level disagreement' is contradicted by the earlier mention (lines 22-23) that Satō subdivides nouns differently, which could be considered a top-level disagreement about class boundaries. However, the table shows all three schemes agree on the six main classes (verb, noun, adverb, adnoun, interjection, particle), with only auxiliary verb placement varying. The noun subclassification is internal to the noun class, not a top-level disagreement. No inconsistency.",
+    "quote": "The consensus at the macro level is solid: six or seven classes, with the treatment of auxiliary verbs as the only top-level disagreement.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#038",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "27",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag is correctly used to indicate that Refsing's classification is disputed. No problem.",
+    "quote": "Refsing's Shizunai grammar ... ‹contested›.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#084",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "139",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form `ku=mina` is given as 'I laugh', but the root should be `mina` 'laugh', and `ku=` is the 1SG.S prefix. However, the verb `mina` is not previously introduced or linked with `<A>`, unlike other verbs like `an`, `arpa`, etc.",
+    "quote": "The same 1SG intransitive-subject prefix <i lang=\"ain-Latn\">ku=</i> that marks the action verb <i lang=\"ain-Latn\">ku=mina</i> 'I laugh' marks the property verb <i lang=\"ain-Latn\">ku=pewre</i> 'I am young'",
+    "suggestion": "Link `mina` with `<A w=\"mina\" gl=\"laugh\" />` when first mentioned.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#081",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "275",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form `utari` is presented without macrons, while other forms like `utar` are consistent. However, `utari` may be the correct affiliative form of `utar`, but the lack of diacritics could indicate orthographic inconsistency if macrons are otherwise used in the chapter. No other forms in this chapter use macrons, so this may be acceptable.",
+    "quote": "<A w=\"utari\" />",
+    "suggestion": "Check whether macron usage is standard in this chapter; if not, leave as-is. Otherwise, consider adding macron: `utāri` if phonologically warranted.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#079",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "77",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table cell for 'auxiliary verb' in the 'Satō 2008 (6)' column contains '(under particle)', while in the 'Nakagawa 2024 (6)' column it is marked similarly. However, the header 'Handbook ch. 14 (7)' correctly lists 'Auxiliary verb ✓'. This inconsistency suggests a formatting drift: the em-tagged class name appears in the row label but is inconsistently rendered across columns.",
+    "quote": "<em>auxiliary verb</em> 助動詞",
+    "suggestion": "Ensure consistent formatting: either use plain text for all entries in the column or apply <em> tags uniformly. For example, change '(under particle)' to plain text if not intended to be emphasized.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#063",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "513-526",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag is attached to a descriptive statement about the literature, not to a claim that is itself contested. The tag should be on the evaluation of which analysis is correct.",
+    "quote": "The three analyses are incompatible at the word-class level, though they agree on the inventory of forms involved ‹contested›.",
+    "suggestion": "Move the tag to a separate sentence: 'Which analysis is correct remains ‹contested›.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#061",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "477-491",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Awkward phrasing; consider 'noun modifier or compound noun constituent'.",
+    "quote": "noun-modifier or compound-noun constituent",
+    "suggestion": "Rephrase: 'a noun modifier or a constituent of a compound noun'.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'many items classed as N+N compounds have a verbal non-head', then gives an example and says it 'has a 1-argument-verb head'. This is contradictory: 'non-head' vs 'head'. The example onture-p has -p as the head and onture as the non-head (which is verbal). The text should say 'verbal non-head' consistently.",
+    "quote": "has a 1-argument-verb head",
+    "suggestion": "Change 'has a 1-argument-verb head' to 'has a 1-argument verb as its non-head element'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#054",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "256-261",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A cultural claim presented as fact without citation; the cited source (Nakagawa 2024:259) is about grammatical number, not animist worldview.",
+    "quote": "since all things carry a spirit in the Ainu worldview",
+    "suggestion": "Either add a citation for the worldview claim, or hedge it (e.g., 'as Nakagawa explains, reflecting the Ainu worldview where...').",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#050",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "18-27",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag is attached to a descriptive statement about Refsing's analysis, not to a claim that is itself contested. The tag should either be removed (since the description is factual) or moved to a separate sentence that evaluates Refsing's approach.",
+    "quote": "Refsing's Shizunai grammar ... together ‹contested›.",
+    "suggestion": "Either remove the tag, or rephrase: 'Refsing's analysis is ‹contested›.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#048",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "531-536",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Single Discord source for a broad claim; tag should be ‹speculative› rather than ‹contested›.",
+    "quote": "(nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+    "suggestion": "Change ‹contested› to ‹speculative›.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Correct use of tag.",
+    "quote": "‹speculative›",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#047",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "484-488",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "A single Discord post from 2026 is the only source for a broad empirical claim. The tag ‹contested› may be too strong; ‹speculative› would be more appropriate given the thin evidence base.",
+    "quote": "(antitwilight, aynu-corpora Discord 2026; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+    "suggestion": "Change ‹contested› to ‹speculative›, or add a published source.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#046",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "427-431",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Non-standard compound epistemic tag not defined in the system. Also, the prose claim 'all subsequent description has inherited that move' is contradicted by the tag's 'contested (historical)' component.",
+    "quote": "‹contested (historical); consensus in the modern literature›",
+    "suggestion": "Either use a standard single tag (e.g., ‹consensus›) and explain the historical dispute in the prose, or use two separate sentences with appropriate tags.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#044",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "275-279",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The ‹contested› tag appears to apply to the whole sentence, but the sentence reports a claim that is 'corroborated by' a published source. If it's corroborated, it shouldn't be contested. The tag likely belongs to the previous paragraph's claim about inanimate utar, not to this claim about utari.",
+    "quote": "Community members have elaborated that ... ‹contested›.",
+    "suggestion": "Move the ‹contested› tag to the end of the previous paragraph (line 271) and remove it from this sentence, or clarify what exactly is contested about the utari claim.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#037",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "7-14",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim 'Meaning is explicitly excluded from the classification' is presented as ‹consensus› (unmarked), but the cited sources (Nakagawa 2024, Nakagawa 2022) are the same author; no evidence is given that this is a consensus view across the literature. The epistemic tag should be ‹consensus› only if multiple independent sources agree, or the claim should be downgraded to ‹corpus-confirmed› or attributed to Nakagawa specifically.",
+    "quote": "Word class in Hokkaido Ainu is determined by two converging criteria: grammatical role in the clause and formal (morphological) behaviour. Meaning is explicitly excluded from the classification — words designating properties are verbs, words denoting events can be nouns, and the same root may function in more than one class without derivation <Ref k=\"nakagawa2024\" p=\"115–116\" />; <Ref k=\"nakagawa2022pos\" p=\"473\" />. Classes are prototype-based and their boundaries are gradient; between canonical members and the periphery lies a continuum of items sharing some but not all defining properties <Ref k=\"nakagawa2024\" p=\"115–116\" />.",
+    "suggestion": "Either add a citation to another author who explicitly excludes meaning, or change the epistemic framing to 'Nakagawa explicitly excludes meaning from the classification' and tag as ‹corpus-confirmed›.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#036",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "534",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'pe', 'hi', and 'kuni' nominalizations. Paragraph 291 lists 'p'/'pe' and 'hi' as formal nouns. 'Kuni' is not explicitly listed as a formal noun in this chapter. This might be an oversight or an indication that 'kuni' functions similarly in nominalization.",
+    "quote": "<A w=\"pe\" />, <A w=\"hi\" />, and <A w=\"kuni\" /> nominalisations with auxiliary-like predicates handle what many languages express with infinitives or purpose clauses (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Verify if 'kuni' is indeed a formal noun or if it functions as a nominalizer in a similar way, and clarify its status.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#035",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "530",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions a diachronic proposal that the affiliative suffix '-i' derives from the formal noun 'hi'. This is flagged as speculative. However, paragraph 529 discusses the 'affiliative suffix -i' in relation to 'affiliative forms' of sensory nouns. The connection between the suffix, the form, and the formal noun 'hi' needs to be clearly established.",
+    "quote": "A diachronic proposal that the affiliative suffix <i lang=\"ain-Latn\">-i</i> derives from the formal noun <A w=\"hi\" /> is Nakagawa's own and flagged as a hypothesis <Ref k=\"nakagawa2022pos\" p=\"493\" /> ‹speculative›.",
+    "suggestion": "Clarify the relationship between the affiliative suffix, affiliative forms, and the formal noun 'hi'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#034",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "523",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Refsing uses 'nominalizer' broadly to cover what Chiri treated as mood morphemes. This is consistent with the idea of different analyses of the same forms. However, the text does not explicitly state what Chiri's 'mood morphemes' are, only that Refsing covers them under 'nominalizer'.",
+    "quote": "Refsing <Ref k=\"refsing1986\" p=\"259–264\" /> uses \"nominalizer\" more broadly to cover what Chiri treated as mood morphemes (<A w=\"ruwe\" />, <A w=\"siri\" />, <A w=\"hawe\" />) as one of four sentence-conversion types.",
+    "suggestion": "Briefly explain what Chiri's 'mood morphemes' are, or how they function, to better understand Refsing's broader use of 'nominalizer'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#033",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "517",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Satō distinguishes 'nominalizer' (producing an internally complete content clause) from 'formal noun' (head of a relative clause with a gap), classifying both as noun subclasses. Nakagawa, however, retains 'formal noun' as the word-class label and uses 'complementizer' for the grammatical role a formal noun plays in certain clausal contexts. This implies that Nakagawa sees 'formal noun' as a word class and its function as a complementizer as a role, whereas Satō sees both as noun subclasses.",
+    "quote": "from 形式名詞 (formal noun) — the head of a relative clause with a gap; both are noun subclasses in his system.",
+    "suggestion": "Ensure the distinction between Satō's and Nakagawa's classification of nominalizers and formal nouns is clearly articulated.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#032",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "504",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This statement says Refsing groups conjunctions, interjections, and adverbs together in one macro-class. This is consistent with the earlier mention on line 27 that Refsing groups these three. However, the term 'counterpart of the modern distributed analysis' might be misleading, as the modern analysis distributes them, while Refsing groups them.",
+    "quote": "Refsing <Ref k=\"refsing1986\" p=\"76\" /> keeps conjunctions, interjections, and adverbs together in one macro-class — the counterpart of the modern distributed analysis ‹contested›.",
+    "suggestion": "Clarify the relationship between Refsing's grouping and the modern distributed analysis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#031",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "500",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that items glossed as conjunctions are distributed between conjunctive particles and adverbs based on their primary function. This implies a functional distinction. However, paragraph 507 states that the same item receives different labels ('conjunction, conjunctive particle, or postpositional adverb') depending on the analytical framework, with 'no consequence for the forms themselves'. This suggests that the functional distinction might not be as clear-cut as implied.",
+    "quote": "on the basis of their primary function <Ref k=\"nakagawa2024\" p=\"116–117\" />",
+    "suggestion": "Reconcile the idea of 'primary function' determining distribution with the statement that the same item can be labeled differently without consequence for the form.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#030",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "486",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that most nominal compound formation is verb-centered, which is consistent with the convertibility of intransitives to nouns. However, the example 'haca-hapo' ('parents') and 'po-at' ('womb') are given as examples of coordinate or exocentric pure-noun compounds. The term 'pure-noun compounds' might imply they are not verb-centered, which could be a point of contention.",
+    "quote": "most nominal compound formation is verb-centred, in keeping with the near-universal convertibility of intransitives to nouns (antitwilight, aynu-corpora Discord 2026; <Ref k=\"aynucorporadiscord\" />) ‹contested›.",
+    "suggestion": "Clarify the distinction between verb-centered nominal compounds and 'pure-noun compounds'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#029",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "482",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'onture-p' is given as 'strawberry' and explained as 'that which swims upstream', with a 1-argument-verb head. This aligns with the statement that intransitive verbs convert to nouns without morphological change. However, the gloss for 'p' is 'thing, one (after V)' in line 291, which seems to contradict the idea of a verb head here. It should be 'thing, one (after C)' if 'onture' ends in a consonant.",
+    "quote": "<i>onture-p</i> 'strawberry' (literally 'that which swims upstream') has a 1-argument-verb head",
+    "suggestion": "Clarify the gloss for 'p' in this context or ensure consistency with the phonological rules for 'p' and 'pe'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#028",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "467",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the split between linkers 'wa' and 'no' in conjoined VPs reduces to a semantic distinction (static vs dynamic) in the whole VP, not a difference in the part of speech of its head. This is consistent with the argument that property words are verbs. However, the specific semantic distinction between 'wa' and 'no' needs to be clearly explained in relation to static vs dynamic VPs.",
+    "quote": "reduces to a semantic (static vs dynamic) distinction in the whole VP, not a difference in the part of speech of its head <Ref k=\"nakagawa2022pos\" p=\"479\" />.",
+    "suggestion": "Provide a clear explanation of the semantic distinction between 'wa' and 'no' in conjoined VPs.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#027",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "457",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'pirka ne' for 'become good' is ungrammatical because the copula 'ne' cannot add an inchoative value, as 'pirka' already encodes change-of-state. This implies that 'pirka' inherently has an inchoative meaning. However, paragraph 447 states that the stative/inchoative identity is general to Ainu intransitive verbs and does not distinguish property words from action verbs. This suggests that the inchoative reading is a general property, not specific to 'pirka'.",
+    "quote": "pirka means both 'be good/healthy' and 'become good/healthy'; the bare imperative form receives the inchoative reading here. *pirka ne for 'become good' is ungrammatical because the copula ne cannot add an inchoative value — pirka already encodes change-of-state as an intransitive verb.",
+    "suggestion": "Clarify if the inchoative reading is inherent to 'pirka' or a general property of intransitive verbs in this context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#026",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "438",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions applicative affixes 'e-/o-/ko-'. Paragraph 439 states these attach to property words under the same semantic conditions as to action verbs. This is consistent. However, the specific examples of these affixes might need to be clearly linked to property verbs.",
+    "quote": "and applicative (<i lang=\"ain-Latn\">e-/o-/ko-</i>) affixes attach to property words",
+    "suggestion": "Provide specific examples of applicative affixes attached to property verbs.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#025",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "424",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The list of words translating English adjectives includes 'mea' with the gloss 'be cold'. Paragraph 424 states these are all intransitive verbs. This is consistent with the overall argument of the section. However, the gloss 'be cold' is a stative description, which is typical of verbs.",
+    "quote": "<A w=\"mea\" gl=\"be cold\" /> — are all intransitive verbs",
+    "suggestion": "No change needed, the gloss is consistent with the classification.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#024",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "404",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the boundary between auxiliary verbs and particles is gradient and contested. However, paragraph 399 states that the Handbook chapter splits auxiliary verbs into a seventh class on the grounds that they head predicates but cannot stand as independent words. This suggests a clear distinction is made in the Handbook, which might contradict the idea of a gradient boundary.",
+    "quote": "the boundary is gradient rather than sharp <Ref k=\"nakagawa2024\" p=\"291–292\" /> ‹contested›.",
+    "suggestion": "Clarify how the Handbook's classification relates to the idea of a gradient boundary.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#023",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "390",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text lists 'final particles' and 'conjunctive particles' as subtypes of particles. However, paragraph 500 states that items glossed as conjunctions are distributed between 'conjunctive particles' and adverbs. This implies that 'conjunctive particles' are a distinct category, but the term 'conjunctions' itself is not set up as an independent class.",
+    "quote": "final particles (終助詞), and conjunctive particles (接続助詞).",
+    "suggestion": "Clarify the relationship between 'conjunctions', 'conjunctive particles', and other particle types.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#022",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "375",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example shows 'pon hekaci' glossed as 'be.small child' and translated as 'a small child'. The note states that 'pon' means 'be small' and precedes the noun in attributive position. This aligns with the text. However, paragraph 369 states that the property verb 'pon' occupies the same pre-noun position as an adnoun but retains full verbal morphology in the predicate. The example here shows it in attributive position.",
+    "quote": "m=\"pon hekaci\"\n\t\t\t\tg=\"be.small child\"\n\t\t\t\ttr=\"a small child\"",
+    "suggestion": "Ensure consistency in the explanation of 'pon's' behavior in both attributive and predicate positions.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#021",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "363",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that a prenominal followed by the formal noun 'pe' yields a demonstrative pronoun. The examples 'tanpe' and 'toanpe' are given as 'this thing' and 'that thing'. This aligns with the statement. However, the gloss for 'tan' is 'this' and for 'toan' is 'that', which are prenominals. The fusion with 'pe' creates the pronoun.",
+    "quote": "(<A w=\"tanpe\" gl=\"this thing\" />, <A w=\"toanpe\" gl=\"that thing\" />);",
+    "suggestion": "No change needed, the explanation is consistent.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#020",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "355",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">toan ta</i>' is given as 'over there', with 'toan' being a demonstrative prenominal and 'ta' a locative particle. This aligns with the statement that case particles can attach directly to adnouns. However, the gloss for 'toan' is 'that', and the phrase 'over there' implies a locative meaning. This might be a slight mismatch between the gloss and the example's interpretation.",
+    "quote": "— <i lang=\"ain-Latn\">toan ta</i> 'over there' joins a demonstrative prenominal with the locative particle directly, while a common noun requires a formal noun first <Ref k=\"nakagawa2024\" p=\"283, 288\" />.",
+    "suggestion": "Ensure the gloss for 'toan' accurately reflects its use in the example 'toan ta'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#019",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "345",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text lists 'tura' as a postpositional adverb meaning 'together with'. Paragraph 344 lists 'ani' as 'with, by means of'. The distinction between 'ani' and 'tura' as postpositional adverbs needs to be clear, especially since both relate to 'with'.",
+    "quote": "<A w=\"tura\" gl=\"together with\" /> <Ref k=\"nakagawa2024\" p=\"280–281\" />.",
+    "suggestion": "Clarify the semantic and syntactic differences between 'ani' and 'tura'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#018",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "331",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'esoyne' is 'to the outside'. Paragraph 330 states that directionals are built from locative-noun stems. This implies 'esoyne' is derived from a locative noun related to 'outside'.",
+    "quote": "<A w=\"esoyne\" gl=\"to the outside\" />",
+    "suggestion": "Ensure consistency in the explanation of directional formation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#017",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "317",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'the thing for X-ing with' is used to explain the instrumental nominalization. However, paragraph 316 mentions 'ani' meaning 'with', and 'p' as the formal noun. The construction 'ani' + verb + 'p' yields 'the thing for X-ing with'. This implies 'p' is the nominalizer, and 'ani' specifies the purpose or instrument.",
+    "quote": "the thing for X-ing with",
+    "suggestion": "Ensure the explanation clearly distinguishes the roles of 'ani' and 'p' in this construction.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#015",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "305",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'tanpe' is a demonstrative pronoun formed by the fusion of 'tan' and 'pe'. However, paragraph 364 states that a prenominal followed by the formal noun 'pe' yields a demonstrative pronoun. This implies 'tan' is a prenominal, which aligns with the note. The note also mentions 'p' nominalizing a VP, which is consistent with the function of formal nouns.",
+    "quote": "The demonstrative prenominal tan fuses with pe to yield the demonstrative pronoun tanpe; the second formal noun p nominalises the quotative VP su sekor a=ye 'is called a pot', supplying the predicate complement of the copula ne.",
+    "suggestion": "Ensure consistency in the explanation of how demonstrative pronouns are formed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#014",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "291",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses for 'p' and 'pe' are 'thing, one (after V)' and 'thing, one (after C)' respectively. Paragraph 295 states that the allomorphy 'p' after a vowel / 'pe' after a consonant is phonologically conditioned. This implies that 'p' follows a vowel and 'pe' follows a consonant, which contradicts the glosses indicating 'p' after V (verb) and 'pe' after C (consonant).",
+    "quote": "<A w=\"p\" gl=\"thing, one (after V)\" />/<A w=\"pe\" gl=\"thing, one (after C)\" />",
+    "suggestion": "Correct the glosses to reflect the phonological conditioning: 'p' after a consonant and 'pe' after a vowel, or clarify the distinction between phonological conditioning and word class conditioning.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#013",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "278",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'utari' (affiliative form of utar) carries a distinct semantic range ('family, kinship companions') with the possessed form implying a specific relational anchor, and this is corroborated by Nakagawa. However, the claim is also flagged as 'contested'. This suggests that while Nakagawa supports the semantic range, there might be other aspects of this claim that are disputed.",
+    "quote": "(thegodofneet, aynu-corpora Discord 2025; <Ref k=\"aynucorporadiscord\" />; corroborated by <Ref k=\"nakagawa2024\" p=\"251–252\" />) ‹contested›.",
+    "suggestion": "Clarify what specific aspect of the claim is 'contested' if Nakagawa's data corroborates the semantic range.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#012",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "271",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'utar' marks an inanimate noun (furs) in this example, and that Kindaichi & Chiri restrict 'utar' to animates unless personified. This highlights a disagreement, which is correctly flagged as 'contested'. The note is consistent with the claim.",
+    "quote": "utar marks an inanimate noun (furs); the 4th-person transitive prefix a= encodes the narrative first person. Kindaichi & Chiri 1936: 31 restrict utar to animates unless personified — a genuine descriptive disagreement with Nakagawa's Saru data ‹contested›.",
+    "suggestion": "No change needed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#011",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "247",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that 'sam' takes the objective prefix 'en=', contrasting with the possessive prefix 'ku=' on an affiliative common noun. This aligns with the table entries for locative nouns taking objective affixes and affiliative common nouns taking possessive affixes. However, the gloss for 'en=' is '1SG.O', which is consistent with the objective affix. The contrast is clear.",
+    "quote": "The locative noun sam takes the objective prefix en= (first-singular O), contrasting with the possessive prefix ku= that would appear on an affiliative common noun.",
+    "suggestion": "No change needed, the note clarifies the distinction.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#010",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "235",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This statement claims locative nouns 'always function as place arguments', which aligns with the table (lines 186, 193). However, paragraph 172 states that common nouns (concept form) are 'no' place argument. This contrast is clear, but the phrasing 'always function as place arguments' for locative nouns might be too strong if there are exceptions.",
+    "quote": "Both take the objective affix and always function as place arguments, distinguishing them formally from common nouns <Ref k=\"nakagawa2024\" p=\"238–248\" />.",
+    "suggestion": "Confirm if 'always' is accurate for locative nouns functioning as place arguments.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#009",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "227",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the appositive N₁ N₂(concept) construction is 'not replaceable by a possessive prefix'. This implies a contrast with possessive constructions, but the table for common nouns (concept form) lists 'none' for person affix type, and for affiliative form lists 'possessive (A-type)'. This suggests that concept forms do not take possessive prefixes, which aligns with the statement.",
+    "quote": "(not replaceable by a possessive prefix)",
+    "suggestion": "Ensure clarity on the distinction between concept form and affiliative form regarding possessive prefixes.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#008",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "218",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that an affix cannot appear on a bare concept-form noun, citing '*ku=tek' as ungrammatical. However, paragraph 171 states that common nouns (concept form) take 'none' for person affix type. This implies that no affix is possible, which aligns with the statement, but the specific example might be better placed in the 'concept form' section.",
+    "quote": "An affix cannot appear on a bare concept-form noun: <i lang=\"ain-Latn\">*ku=tek</i> is ungrammatical as a possessive.",
+    "suggestion": "Ensure consistency in the explanation of affix restrictions on concept-form nouns.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#007",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "207",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table states that formal (defective) nouns are only place arguments for 'hi' and 'uske'. However, paragraph 293 lists 'hi' and 'uske' as canonical members of formal nouns. This implies that these specific formal nouns can function as place arguments, while others might not.",
+    "quote": "<td>only <i lang=\"ain-Latn\">hi</i>, <i lang=\"ain-Latn\">uske</i></td>",
+    "suggestion": "Clarify if this limitation applies to all formal nouns or only specific ones.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#006",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "192",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table indicates that locative nouns (basic form) take an 'objective (O-type)' affix. Paragraph 217 states that a locative noun takes the objective (O-type) affix. This seems consistent, but the 'O-type' might need further clarification in relation to other affix types.",
+    "quote": "<td>objective (O-type)</td>",
+    "suggestion": "Ensure the terminology 'O-type' is consistently used and explained.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#005",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "185",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table indicates that locative nouns (long form) take an 'objective (O-type)' affix. Paragraph 217 states that a locative noun takes the objective (O-type) affix. This seems consistent, but the 'O-type' might need further clarification in relation to other affix types.",
+    "quote": "<td>objective (O-type)</td>",
+    "suggestion": "Ensure the terminology 'O-type' is consistently used and explained.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#004",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "178",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table indicates that common nouns (affiliative form) take a 'possessive (A-type)' affix. However, paragraph 216 states that the affiliative form takes the possessive (A-type) affix, and paragraph 151 states that nouns carry 'at most one person affix — the possessive (transitive-subject) affix'. This seems consistent, but the 'A-type' might need further clarification in relation to the 'transitive-subject' affix.",
+    "quote": "<td>possessive (A-type)</td>",
+    "suggestion": "Ensure the terminology 'A-type' and 'transitive-subject' is consistently used and explained.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#002",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "78",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'auxiliary verb' under Nakagawa 2024 (6) states '(under particle)', but the text in paragraph 19 states that Nakagawa distributes auxiliary verbs under particles. This implies they are a subcategory of particles, not that they are simply 'under' them in a general sense.",
+    "quote": "<td>(under particle)</td>",
+    "suggestion": "Clarify the relationship between auxiliary verbs and particles in Nakagawa's 2024 scheme.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'auxiliary verb' under Satō 2008 (6) states '(under particle)', but the text in paragraph 22 states that Satō subdivides noun to accommodate nominalizers and numeral nouns as distinct subclasses. It does not mention Satō's treatment of auxiliary verbs.",
+    "quote": "<td>(under particle)</td>",
+    "suggestion": "Verify Satō's treatment of auxiliary verbs and update the table accordingly.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "word-class-inventory-and-diagnostics~p1#001",
+  "chapter": "word-class-inventory-and-diagnostics",
+  "lines": "27",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Refsing groups conjunctions, interjections, and adverbs together, but later (line 504) it says Refsing keeps them together in one macro-class, which is described as the counterpart of the modern distributed analysis. This implies they are grouped, not necessarily that they are treated as a single unit within that macro-class.",
+    "quote": "Refsing's Shizunai grammar <Ref k=\"refsing1986\" p=\"74–76\" /> collapses the inventory into three\nmacro-classes (Nominals, Verbals, Clitics), treating adnouns as clitics and grouping\nconjunctions, interjections, and adverbs together ‹contested›.",
+    "suggestion": "Clarify if 'grouping' means treating them as a single unit or simply placing them within the same macro-class.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "226-234",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.A=have grandmother 4.A=have grandfather both 4.O=love CONJ become.night CONJ 4.O=hold.together CONJ sleep=4.S\" tr=\"My grandmother and grandfather both loved me, and whenever night came they would hold me close and sleep.\"",
+  "issue": "The gloss marks the object prefixes as fourth person (4.O) but the translation uses first person 'me'. Similarly, the possessive prefix is glossed as fourth person (4.A) but translated as first person 'my'. This is inconsistent with the earlier example where first person is marked with 1SG prefixes.",
+  "suggestion": "Either adjust the gloss to reflect first person (1SG.O and 1SG.POSS) if the fourth person is being used for first person in this context, or adjust the translation to use fourth person forms (e.g., 'loved one' instead of 'loved me') and explain the usage.",
+  "confidence": 0.9,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "308-316",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.A=have lady PL 4.A=cherish CONJ every.day exist CONJ exist.PL=4.S\" tr=\"Cherishing our ladies, we lived on day after day.\"",
+  "issue": "The gloss marks the possessive and subject prefixes as fourth person (4.A, 4.S) but the translation uses first person plural 'our' and 'we'. This is inconsistent with the gloss and with the earlier example where first person is marked with 1SG prefixes.",
+  "suggestion": "Either adjust the gloss to first person plural (1PL) if the fourth person is being used for first person in this context, or adjust the translation to use fourth person forms (e.g., 'one's ladies' instead of 'our ladies') and explain the usage.",
+  "confidence": 0.9,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "26",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "so the raw total is an upper bound on any single function ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim that is a logical inference (that the total is an upper bound) rather than a direct corpus observation. The tag may be inflated.",
+  "suggestion": "Consider using a different tag such as ‹consensus› or removing the tag, or rephrase to make clear that the corpus data suggests the conflation.",
+  "confidence": 0.6,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "143",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "no equivalent quantitative statement has been made for Saru kor ‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim about absence of evidence, which is not a corpus-suggested finding. The tag seems misplaced.",
+  "suggestion": "Remove the tag or replace with a statement like 'as far as the corpus evidence shows' if appropriate.",
+  "confidence": 0.7,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

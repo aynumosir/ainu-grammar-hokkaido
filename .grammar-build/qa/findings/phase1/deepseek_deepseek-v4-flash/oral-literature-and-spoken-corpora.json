@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "225",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />)",
+  "issue": "The Discord attribution is cited alongside a formal reference key, but the claim about Tamura's intonation distinction is attributed to a single Discord user without an epistemic grade tag. The surrounding prose is unmarked (consensus default), yet the only support is a community Discord message.",
+  "suggestion": "Add an epistemic grade such as ‹speculative› or ‹original-needs-review› to the claim, or rephrase to indicate this is a community observation.",
+  "confidence": 0.7,
+  "chapter": "oral-literature-and-spoken-corpora",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "314-315",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "making it not straightforwardly assignable to the kamuy yukar or yukar categories ‹contested› (gengojiro, aynu-corpora Discord 2025-12-12; <Ref k=\"aynucorporadiscord\" />)",
+  "issue": "The claim is tagged ‹contested› but the only citation is a single Discord message. A contested claim should ideally have multiple sources or at least a published reference; a single Discord attribution is weak support for the 'contested' grade.",
+  "suggestion": "Either upgrade to ‹speculative› or add a published source if available.",
+  "confidence": 0.8,
+  "chapter": "oral-literature-and-spoken-corpora",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "326-327",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹contested› (0penke, aynu-corpora Discord 2024-03-19; <Ref k=\"aynucorporadiscord\" />)",
+  "issue": "Same pattern as above: a ‹contested› claim supported only by a single Discord message. The text acknowledges it is 'community-proposed' and 'not confirmed', which is more consistent with ‹speculative›.",
+  "suggestion": "Change ‹contested› to ‹speculative›.",
+  "confidence": 0.8,
+  "chapter": "oral-literature-and-spoken-corpora",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "52",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "The pre-war editions are read here through Endō and Okuda and are cited as reported.",
+  "issue": "The phrase 'read here through' and 'cited as reported' is a meta-commentary on the book's methodology rather than a statement about the sources themselves. It addresses the production process.",
+  "suggestion": "Rephrase to something like 'The pre-war editions are accessed via Endō and Okuda's transcriptions and are cited as they appear in those works.'",
+  "confidence": 0.6,
+  "chapter": "oral-literature-and-spoken-corpora",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "149",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "知里幸恵",
+  "issue": "In the table, the narrator for Chiri Yukie's collection is given as 知里幸恵, but earlier in the prose (line 30) the name is given as 知里幸惠 (different final character: 恵 vs 惠). This is an inconsistency in the kanji used for the same person.",
+  "suggestion": "Unify to one form; 知里幸惠 is the standard reading for Chiri Yukie.",
+  "confidence": 0.9,
+  "chapter": "oral-literature-and-spoken-corpora",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "30",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "知里幸惠",
+  "issue": "See above: the kanji differs from the table entry (line 149).",
+  "suggestion": "Unify to 知里幸惠.",
+  "confidence": 0.9,
+  "chapter": "oral-literature-and-spoken-corpora",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "225",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "(nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />)",
+  "issue": "The citation format mixes a username with a formal reference key. The parentheses are also unbalanced: the opening parenthesis before 'nukopoli' is not closed until after the Ref tag, but the sentence structure is unclear.",
+  "suggestion": "Rephrase to integrate the citation properly, e.g. '... (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />).'",
+  "confidence": 0.5,
+  "chapter": "oral-literature-and-spoken-corpora",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

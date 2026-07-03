@@ -1,0 +1,431 @@
+[
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#004",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "88-94",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss uses fourth person (4.A, 4.S) but the free translation uses first person 'I'. While fourth person can sometimes be translated as 'I' in narrative, this mismatch may confuse readers without explicit justification.",
+    "quote": "g='beneath.it 4.A=walk.along CONJ go=4.S CONJ' tr='Walking beneath it, I went along, and then…'",
+    "suggestion": "Either change the translation to use a more generic subject (e.g., 'one went along') or add a note explaining the narrative use of fourth person.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss '4.A=walk.along' implies a transitive verb with agent (4.A), but the verb eapkas is intransitive ('walk along'). The free translation uses 'I', but the gloss shows 4th person (4.A/4.S), creating a person/number inconsistency. The note also refers to §5, but no such section exists in this chapter.",
+    "quote": "<Ex\n\t\tm=\"corpokke a=eapkas wa arpa=an ayne\"\n\t\tg=\"beneath.it 4.A=walk.along CONJ go=4.S CONJ\"\n\t\ttr=\"Walking beneath it, I went along, and then…\"\n\t\tcite=\"nakagawa2024:340\"\n\t\tdial=\"SAR\"\n\t\tplace=\"Nakagawa ex. 605, after Kayano 1974a: 68\"\n\t\tnote=\"wa marks the walking as manner and route of the going; ayne is the culminative particle treated in §5 below.\"",
+    "suggestion": "Revise gloss to '4.S=walk.along' and adjust translation to match 4th person, or correct person indexing. Change note reference from '§5' to '§4' (id='ayne-culminative').",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#007",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "190-198",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss uses '1SG.S=cry' twice, but the morpheme string shows 'ku=cis' both times, where 'ku=' is 1SG.S. However, the free translation 'Crying and crying' lacks subject reference, and the gloss implies reduplication of full clause including subject, which may not be accurate. The note refers to 'the full sentence continues', but this is not indicated in the example markup.",
+    "quote": "<Ex\n\t\tm=\"ku=cis a ku=cis a ayne\"\n\t\tg=\"1SG.S=cry PFV 1SG.S=cry PFV CONJ\"\n\t\ttr=\"Crying and crying, and finally…\"\n\t\tcite=\"ainukoraci1991\"\n\t\tdial=\"SAR\"\n\t\tplace=\"丸野和子, '&quot;Kuma&quot; turano k=an', Ainu Times no. 15/1, text 24 (excerpt)\"\n\t\tnote=\"The V a V a ayne intensifier pattern: the perfective a marks each iteration; ayne closes the protracted stretch and points to the outcome. The full sentence continues with the result clause.\"",
+    "suggestion": "Add 'lit' field to clarify literal structure, or mark as 'constructed' if illustrative. Confirm whether reduplication includes subject or just verb+auxiliary.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#012",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "163-164",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form is given as 'orowa(no)' with optional parentheses, but in the table on line 50 it appears as 'orowa(no)' without consistency in hyphenation or parentheses. Elsewhere (line 378) it is split as 'orowa' = 'or' + 'wa'. Orthographic representation drifts between hyphenated, parenthetical, and split forms.",
+    "quote": "<i lang=\"ain-Latn\">orowa(no)</i> 'and then, from there after'",
+    "suggestion": "Standardize to 'orowa (or wano)' or similar consistent format throughout.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#010",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "313",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The katakana character マ is not accompanied by a romanized equivalent or explanation, while other Ainu forms are consistently romanized. This breaks the pattern of providing both scripts.",
+    "quote": "while katakana\n\t\ttranscription writes マ in the relevant environment",
+    "suggestion": "Add romanization: \"writes マ (ma)\".",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#009",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "304-307",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The particle is italicized as [ma] with brackets, while other particles are given without brackets (e.g., <i lang=\"ain-Latn\">wa</i>). Inconsistent formatting: brackets suggest phonetic transcription, but not consistently applied elsewhere.",
+    "quote": "When <i lang=\"ain-Latn\">wa</i> immediately follows a stem ending in\n\t\t<i lang=\"ain-Latn\">-n</i> or <i lang=\"ain-Latn\">-m</i>, the initial\n\t\t<i lang=\"ain-Latn\">w-</i> assimilates to the preceding nasal and the particle surfaces as\n\t\t<i lang=\"ain-Latn\">[ma]</i>.",
+    "suggestion": "Remove brackets: <i lang=\"ain-Latn\">ma</i>, or use /ma/ for phonetic clarity.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#006",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "345-346",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'swappable for' is not the standard collocation; 'swappable with' is more idiomatic.",
+    "quote": "swappable for hine",
+    "suggestion": "Change to 'swappable with hine'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#002",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "11",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'hine' is not consistently italicized throughout the chapter. For example, on line 138, it appears without italics.",
+    "quote": "<i lang=\"ain-Latn\">hine</i>",
+    "suggestion": "Ensure consistent italicization for all Ainu words.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#001",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "7",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the Ainu word 'wa' includes '(then)' and '(connective)' which are not standard glossing conventions. These should be separate glosses or integrated more smoothly.",
+    "quote": "<A w=\"wa\" gl=\"and (then), so (connective)\" />",
+    "suggestion": "<A w=\"wa\" gl=\"and, so, then (connective)\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#013",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "332-372",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example shows 'mosir wa' but the text says the form extends to 'wano'. The example should reflect the allomorphy by showing 'mosir wano' or noting the variant.",
+    "quote": "<table>\n\t\t\t\t<tr>\n\t\t\t\t\t<td><i lang=\"ain-Latn\">wa(no)</i> ablative</td>\n\t\t\t\t\t<td>case particle / postposition</td>\n\t\t\t\t\t<td>follows a NP or locative nominal; glossed ABL; extends to\n\t\t\t\t\t\t<i lang=\"ain-Latn\">wano</i></td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<i lang=\"ain-Latn\">mosir wa</i>\n\t\t\t\t\t\t<br />'from the land'\n\t\t\t\t\t</td>\n\t\t\t\t</tr>",
+    "suggestion": "Change example to 'mosir wano' or add note: '(also mosir wano)'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#011",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "206-207",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example referenced ('corpokke a=eapkas wa arpa=an ayne') was used earlier to illustrate the manner reading of 'wa', but here it is cited as an example of the 'wa…wa…ayne' pattern. However, this example contains only one 'wa', not a run of 'wa…wa…'. This contradicts the claim being made.",
+    "quote": "as in the manner example above\n\t\t\t(<i lang=\"ain-Latn\">corpokke a=eapkas wa arpa=an ayne</i>).",
+    "suggestion": "Either correct the reference to a true multi-wa chain or revise the claim to acknowledge that a single 'wa' can precede 'ayne'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#008",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "289",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'be.no.more' for 'isam' does not clearly convey terminative aspect; it may be underspecified. The translation 'S/he has gone' implies perfective, but the gloss does not show person indexing present on the verb in natural usage.",
+    "quote": "<Ex m=\"arpa wa isam\" g=\"go CONJ be.no.more\" tr=\"S/he has gone.\" constructed />",
+    "suggestion": "Revise gloss to 'finish' or 'terminate' and include person marker if present in actual forms, e.g., 'go CONJ finish.3SG'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#005",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "94",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note references '§5', but the chapter does not use numbered sections; this is a relic from a numbered draft or an inconsistent cross-reference.",
+    "quote": "note='wa marks the walking as manner and route of the going; ayne is the culminative particle treated in §5 below.'",
+    "suggestion": "Change to 'treated in the section “The culminative ayne” below' or simply 'treated below'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "sequential-wa-and-clause-chaining~p1#003",
+  "chapter": "sequential-wa-and-clause-chaining",
+  "lines": "311-314",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is tagged as corpus-confirmed, but the only citation is a Discord message, which is not a corpus source, inflating the epistemic status.",
+    "quote": "The pattern is phonological and pan-dialectal at the segment level ‹corpus-confirmed›: the standard romanized orthography retains wa throughout to represent the underlying form, while katakana transcription writes マ in the relevant environment, reflecting the surface pronunciation (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />).",
+    "suggestion": "Downgrade the tag to ‹speculative› or add a proper corpus citation if available; remove the corpus-confirmed tag.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

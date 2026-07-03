@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "41",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynucorporadiscord, 2024) ‹corpus-confirmed›",
+  "issue": "A Discord user is cited as the sole source for the 'corpus-confirmed' epistemic tag; the claim about etymology actually rests on Nakagawa (2024, a published source), but the tag appears to cover the whole sentence including the Discord citation, which inflates the evidence level.",
+  "suggestion": "Either remove the epistemic tag and simply cite the published source, or change the tag to '‹original-needs-review›' if the discord discussion is the only source for part of the claim.",
+  "confidence": 0.7,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "56",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "(nukopoli, aynucorporadiscord, 2024) ‹corpus-confirmed›",
+  "issue": "The claim about ungrammaticality of '*sekor a=ramu' is attributed to a Discord discussion but tagged 'corpus-confirmed'. Grammaticality judgments from community discussion are not corpus evidence; the epistemic tag is inflated.",
+  "suggestion": "Change epistemic tag to '‹contested›' or '‹speculative›', or remove the tag and keep the citation as community discussion.",
+  "confidence": 0.9,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "63",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "(thegodofneet, aynucorporadiscord, 2025) ‹corpus-confirmed›",
+  "issue": "A frequency claim ('more frequent in the corpus than the intransitive alternative') is attributed to a Discord user and tagged 'corpus-confirmed', which implies the data have been systematically verified from a corpus. The source does not provide transparent corpus evidence.",
+  "suggestion": "Either verify the frequency from the actual corpus data and cite it directly, or downgrade the tag to '‹speculative›' or '‹original-needs-review›'.",
+  "confidence": 0.9,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "199-200",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"kani k=arpa sekor ku=haw-e-an\" g=\"1SG 1SG.A=go.SG QUOT 1SG.S=voice-POSS-exist\"",
+  "issue": "The verb 'arpa' is intransitive (go), so the subject agreement prefix should be glossed as '1SG.S' (subject), not '1SG.A' (agent). The same example uses '1SG.S' for the reporting verb, creating an inconsistency within the same interlinear.",
+  "suggestion": "Change '1SG.A=go.SG' to '1SG.S=go.SG' to match the glossing convention used for intransitive verbs elsewhere in the chapter (e.g., 'speak=4.S' in ex. 1).",
+  "confidence": 1,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "237",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "The whole-range of the 4th person",
+  "issue": "'whole-range' appears to be a compound adjective used as a noun; it should be written as two separate words: 'whole range'.",
+  "suggestion": "Change 'whole-range' to 'whole range'.",
+  "confidence": 0.9,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "241",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The factbase is candid about what the available evidence does not settle.",
+  "issue": "'factbase' is an internal production term that does not belong in the published grammar. It sounds like the authors' internal database of facts, not a term appropriate for the reader.",
+  "suggestion": "Replace with 'The present analysis' or 'The data' or 'This chapter'.",
+  "confidence": 1,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "401-402",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Quantified evidence of asinuma in everyday versus oral-literary speech is not available in the read sources",
+  "issue": "'in the read sources' refers to the sources the authors consulted, which is meta-commentary about the research process; it should be rephrased for the reader.",
+  "suggestion": "Rephrase as 'has not been quantified' or 'is not available'.",
+  "confidence": 1,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "132",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Kawakamii Matsuko",
+  "issue": "The name appears as 'Kawakamii' with a double 'i'. This is likely a typo for 'Kawakami' (a common Japanese surname).",
+  "suggestion": "If the source indeed spells it as 'Kawakamii', retain; otherwise correct to 'Kawakami'.",
+  "confidence": 0.6,
+  "chapter": "logophoric-narration-and-reported-discourse",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

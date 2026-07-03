@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "11",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "drawing on the full range of prior scholarship from Kindaichi and Chiri <Ref k=\"kindaichi1936\" />",
+  "issue": "The text names Chiri alongside Kindaichi but only cites Kindaichi 1936. The table lists Chiri 1942 as a separate defining work, so Chiri should have its own citation here.",
+  "suggestion": "Add a separate <Ref k=\"chiri1942\" /> after Kindaichi's reference, or cite both jointly.",
+  "confidence": 1,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "275-285",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Each work contributes something indispensable. Kindaichi and Chiri establish the basic morphological architecture […] Refsing provides the most systematic morphosyntactic account […] Shibatani places Ainu within a typological account […] Tamura's Saru dictionary and grammar monograph remain the central data source […] Satō's grammar gives the most thorough treatment […] The Bugaeva Handbook supplies extensive English coverage […] Nakagawa's grammar brings the description of Hokkaido Ainu to its greatest single-volume comprehensiveness",
+  "issue": "The narrative discusses only a subset of the works listed in the preceding table. Bugaeva (2012) is in the table but is never mentioned in the text; Chiri (1942) is in the table but receives only a passing name reference without a separate citation or discussion. The text claims to review 'each work' but omits two of them.",
+  "suggestion": "Either add a sentence or two about Bugaeva (2012) and give Chiri (1942) its own citation and description, or remove those entries from the table if they are not considered defining for this grammar's position.",
+  "confidence": 0.95,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "147",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "the diachrony and contact parts of the grammar (Parts XX–XXI)",
+  "issue": "Placeholders 'XX–XXI' have not been resolved to actual part numbers. This is a production-task remnant that should not appear in the final text.",
+  "suggestion": "Replace 'Parts XX–XXI' with the actual part numbers (e.g., Parts 20–21) or with the part titles if numbering is not yet fixed.",
+  "confidence": 1,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "181",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "this grade is restricted to the five formal domains listed in the previous section and is flagged for editorial review",
+  "issue": "The phrase 'flagged for editorial review' addresses the internal production process rather than the reader, potentially confusing the reader about the status of the text.",
+  "suggestion": "Rephrase to describe the grade's function without referencing the editorial workflow, e.g., 'marks new analyses that are presented as proposals for the reader's evaluation'.",
+  "confidence": 0.6,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

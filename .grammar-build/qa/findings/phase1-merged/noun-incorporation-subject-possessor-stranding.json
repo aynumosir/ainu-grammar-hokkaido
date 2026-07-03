@@ -1,0 +1,320 @@
+[
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#003",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "217",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Stranding' restriction for 'possessor-requiring object NI' is listed as '+15 / +10'. This is the same penalty as for 'possessor-requiring intransitive subject NI' (line 203). However, the text in section 236-237 states that this subtype is ungrammatical because 'no available rescue reduces the net penalty sufficiently'. If the penalty is the same, the difference in grammaticality must stem from the rescues, which are listed as '-' for object NI and 'Backgrounding −5 / −8, Reflexive −14 / −9' for intransitive subject NI. This seems consistent, but the high penalty for stranding itself might warrant further explanation.",
+    "quote": "<td>Stranding +15 / +10, Ambiguity +4 / +7</td>",
+    "suggestion": "Ensure the penalties and rescues accurately reflect the described grammaticality differences.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'possessor-requiring object NI' states '— (no reflexive rescue)'. However, the text in section 232 states that the 'Reflexive rescue' applies 'only where the stranded possessor is coreferential with the predicate's subject — possible for subject-incorporated body-parts (possessor = experiencer = S) but not for possessed object nouns, because the inflectional possessor i= there makes the noun definite and blocks any reflexive reading'. This implies that the *reason* there is no reflexive rescue for object NI is due to the nature of the possessor marking, which is consistent. However, the table entry could be more explicit about *why* there is no reflexive rescue.",
+    "quote": "<td>— (no reflexive rescue)</td>",
+    "suggestion": "Consider adding a brief parenthetical explanation to the table entry, e.g., '(due to definite possessor)', to align with the prose explanation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The net score for possessor-requiring object NI is given as '10', but based on the restrictions (Stranding +15/+10 and Ambiguity +4/+7) and no rescues, the net should be 19 (2022) and 17 (2016). The cell also lacks the alternative-year slash used in other rows.",
+    "quote": "possessor-req. object NI / Stranding +15 / +10, Ambiguity +4 / +7 / — (no reflexive rescue) / 10 / 0 (ungrammatical)",
+    "suggestion": "Change the net cell to '19 / 17' to match the restrictions and rescues.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The '% Chitose' cell says '0 (ungrammatical)', but the table header specifies '% (Chitose)' in line 20, implying frequency data from the Chitose corpus. However, an ungrammatical construction cannot have a frequency of 0 in a corpus of attested speech — it would simply be absent. This creates a contradiction between grammaticality judgment and corpus-based frequency reporting.",
+    "quote": "0 (ungrammatical)",
+    "suggestion": "Revise to '— (ungrammatical)' or '0 (unattested, ungrammatical)' to clarify that the zero frequency is due to ungrammaticality, not mere absence.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#006",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "348",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community-proposed analysis is attributed to a Discord discussion with a specific date, but the evidence grade is '‹contested›'. While community input can be valuable, 'contested' usually implies a debate among established scholars or sources. If the 'contested' status arises solely from this community discussion, it might be more appropriate to use a different grade or to explicitly state that the analysis is 'community-proposed and debated'.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> ‹contested›",
+    "suggestion": "Clarify the basis for the '‹contested›' grade, or use a different grade if the contestation is not from established scholarly sources.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about 'kur-ko-tunas' is attributed solely to a Discord source and marked ‹contested›, which is appropriate. However, the citation is attached to the entire sentence including multiple forms, but only 'kur-ko-tunas' is novel; the others are more widely attested. The citation should be more precisely scoped.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> ‹contested›",
+    "suggestion": "Attach the <Ref k=\"aynucorporadiscord\" /> only to 'kur-ko-tunas' or rephrase to isolate the community-proposed form.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#012",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "212",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The net penalty for 'nat.-force tr. subject NI' is given as '9' in the table, but based on the calculation in the row (Subject +10, Ambiguity +4 / +7; Backgrounding −5 / −8), the 2022 net should be (10+4)−5 = 9, which matches, but the 2016 version would be (10+7)−8 = 9 as well — yet the table shows only a single '9' instead of '9 / 9'. This contradicts the format used in other rows which show both values.",
+    "quote": "9",
+    "suggestion": "Change '9' to '9 / 9' to maintain parallel structure with other rows in the 'net (2022 / 2016)' column.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#009",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "133",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string shows 'tek-e-pase', but the gloss 'hand-POSS-heavy' does not account for the hyphen between 'e' and 'pase'. The gloss implies that only 'tek-e' is possessed, but the segmentation suggests 'e' is a separate morpheme (possibly the applicative, which the note explicitly denies). This creates ambiguity about whether '-e' is possessive or applicative, and the gloss fails to distinguish them.",
+    "quote": "ku=tek-e-pase",
+    "suggestion": "Revise the gloss to clarify the morpheme boundaries, e.g., 'hand-POSS-heavy' → 'hand-POSS=heavy' or adjust the morpheme segmentation to 'tek-e=pase' if clitic-like, or explicitly mark the possessive suffix as distinct from applicative.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#008",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "91",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'sir-pirka' is glossed as 'weather-be.good' in line 92, but in the example it appears as a single unit without morpheme boundary marking, while the free translation treats it as a meteorological predicate. The gloss should reflect the incorporated structure more precisely, possibly as 'weather-be.good' or 'weather-good', but the current segmentation in 'm' does not show a hyphen between sir and pirka, creating a mismatch.",
+    "quote": "nisatta anak sir-pirka nankor",
+    "suggestion": "Change 'sir-pirka' in line 91 to 'sir-pirka' only if it is indeed a compound; otherwise, ensure consistent hyphenation. Alternatively, adjust the gloss to match the actual segmentation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#001",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "195",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'natural-force intransitive subject NI' lists Mithun type 'I', but the text in the previous section (lines 68-70) states that this subtype is distinguished from object incorporation because 'the phrasal counterpart does not exist', which is characteristic of Mithun Type II, not Type I.",
+    "quote": "<td>nat.-force intr. subject NI</td>\n\t\t\t\t<td>I</td>\n\t\t\t\t<td>6.8</td>\n\t\t\t\t<td>35</td>\n\t\t\t\t<td>zero-place result; no phrasal counterpart</td>",
+    "suggestion": "Change 'I' to 'II' for Mithun type, or adjust the prose to align with Type I.",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'possessor-requiring intransitive subject NI' lists Mithun type 'II', but the text in section 109 (lines 116-118) states that this corresponds to Mithun's Type II, which is described as rearranging grammatical relations rather than lexical compounding. This seems consistent, but the prose in section 109 (lines 111-112) states that the incorporated noun requires a possessor and carries its possessive morphology into the verb word, which is characteristic of Mithun Type II. However, the table entry for 'natural-force intransitive subject NI' (line 195) lists Mithun type 'I' but describes a lack of phrasal counterpart, which is characteristic of Type II. There is a potential mismatch in how Mithun types are applied across these subtypes.",
+    "quote": "<td>possessor-req. intr. subject NI</td>\n\t\t\t\t<td>II</td>\n\t\t\t\t<td>5.6</td>\n\t\t\t\t<td>29</td>\n\t\t\t\t<td>none — possessor promoted to S</td>",
+    "suggestion": "Review the classification of subtypes according to Mithun's types for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#014",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "353",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of '*' to mark unattested forms is correct, but it appears without explanation in a chapter that may be read independently. While likely covered elsewhere, its first use here should be minimally clarified.",
+    "quote": "The attested form is <i lang=\"ain-Latn\">sir-ko-kunne</i>, not the hypothetical <i lang=\"ain-Latn\">*ko-sir-kunne</i>.",
+    "suggestion": "Add a brief note on the use of '*' for unattested forms, or ensure cross-reference to a chapter where it is defined.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#005",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "301",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note for example 302 uses 'A' and 'O' to refer to grammatical roles (Agent and Object). While common in linguistic analysis, these are typically capitalized when referring to specific case frames or roles within a particular theory. Here, they are used in a descriptive manner. It might be slightly clearer to use lowercase 'agent' and 'object' or to explicitly state the theoretical framework if these capitalized abbreviations are intended to be technical terms.",
+    "quote": "rir 'wave' is the incorporated former A subject of tursere 'roll/tumble'; the original O (the speaker) now surfaces as S, indexed by =an. The parallel mom=an 'drift' is a separate intransitive clause.",
+    "suggestion": "Use lowercase 'agent' and 'object' or clarify the use of capitalized 'A' and 'O'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#004",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "265",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade '‹contested›' is used in prose, but it is typically used for claims that are debated within the field. Here, it seems to be used to indicate a point of theoretical debate between two accounts. While not strictly incorrect, it might be clearer to use a more descriptive phrase if the intent is to highlight an ongoing scholarly discussion rather than a factual dispute.",
+    "quote": "‹contested›",
+    "suggestion": "Consider rephrasing to 'is debated' or similar, or ensure '‹contested›' is consistently used for such points.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#013",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "316",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Both 'koy' and 'rir' are glossed as 'wave', but 'rir' has an additional gloss 'billow'. This suggests a potential synonymy, but the orthography of 'koy' vs 'rir' is not addressed. More importantly, in example 295, 'rir' is used, not 'koy', and no example uses 'koy'. This creates a drift in lexical representation without attestation.",
+    "quote": "<A w=\"koy\" gl=\"wave\" />, <A w=\"rir\" gl=\"wave, billow\" />",
+    "suggestion": "Either provide an example with 'koy' or note that it is a less-attested variant of 'rir'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#011",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "203",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Abbreviation 'possessor-req.' is used here, but in row 217, it's repeated as 'possessor-req. object NI'. The prose consistently uses 'possessor-requiring'. This creates inconsistency in abbreviation style within the same table.",
+    "quote": "possessor-req. intr. subject NI",
+    "suggestion": "Use either 'possessor-requiring' in full or standardize the abbreviation to 'possessor-req.' throughout the table.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#010",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "195",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The abbreviation 'nat.-force' uses a period, but in row 209, the same term is written as 'nat.-force tr. subject NI' — inconsistent with the full form 'natural-force' used in section headings and prose. This creates orthographic drift within the same table.",
+    "quote": "nat.-force intr. subject NI",
+    "suggestion": "Standardize to 'natural-force' in all table entries for consistency.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#007",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "358",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the previous finding, the claim that subject incorporation is structurally distinct from other prefix types is attributed to a Discord discussion and marked as '‹contested›'. If the contestation stems from the community source itself, it might be more accurate to describe it as a 'community proposal' or 'speculative analysis' rather than 'contested' in the scholarly sense, unless there are other sources supporting this contestation.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> ‹contested›",
+    "suggestion": "Clarify the source and nature of the 'contested' status for this claim.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "noun-incorporation-subject-possessor-stranding~p1#002",
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "lines": "203",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'Stranding' restriction for 'possessor-requiring intransitive subject NI' is listed as '+15 / +10'. However, the text in section 109 (lines 111-115) describes possessor stranding as a key feature of this subtype, and the text in section 163 (lines 161-162) mentions a 'markedness penalty that stranding would otherwise attract'. The positive value for 'Stranding' seems counterintuitive if it's a core feature that is then 'rescued'.",
+    "quote": "<td>Subject +10, Stranding +15 / +10</td>",
+    "suggestion": "Clarify the scoring for 'Stranding' or its role in the markedness calculus.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

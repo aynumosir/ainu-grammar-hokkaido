@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "14",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "tun katkemat",
+  "issue": "The example 'tun katkemat' is presented as illustrating the post-nominal appositional position of the numeral noun, but the order numeral noun + noun is pre-nominal, contradicting the description. The correct post-nominal order would be 'katkemat tun'.",
+  "suggestion": "Change 'tun katkemat' to 'katkemat tun' or revise the description to acknowledge a pre-nominal possibility.",
+  "confidence": 0.9,
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "271-272, 44",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the archaic root ar 'one' (also seen in ar-itak 'one word' and the counting-off base)",
+  "issue": "The text claims that the counting-off base uses 'ar', but the counting-off column in the table (Saru dialect) shows 'sinep' for 1, 'tup' for 2, etc., not 'ar'-based forms. This contradicts the table data.",
+  "suggestion": "Either correct the text to specify that 'ar' appears only in certain dialects/compounds, or update the table to reflect 'ar'-based counting-off forms if evidence supports that.",
+  "confidence": 0.8,
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "468, 470",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "§<a href=\"#person-counting\">§person-counting</a>",
+  "issue": "Double section symbol ($$) in cross-reference at lines 468 and 470. Other cross-references (e.g., line 399, 581) are inconsistently formatted: some have § before the anchor with no § inside the link, others have § inside. This inconsistency should be normalized.",
+  "suggestion": "Standardize cross-reference formatting: use either § before the anchor or inside the link text, not both, and apply uniformly.",
+  "confidence": 0.8,
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "318-319",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "epub — chapter and page are uncalibrated in the current reading",
+  "issue": "This comment is directed at the production pipeline (reminder to calibrate references), not the reader. It is a meta note about the state of the manuscript.",
+  "suggestion": "Remove or rephrase for the reader, e.g., 'the exact chapter and page numbers are from the EPUB edition and may differ from print editions'.",
+  "confidence": 0.9,
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "392, 544",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "asserted",
+  "issue": "Metadata tags like 'asserted' (line 392) and 'asserted, attributed to Satō' (line 544) leak into the prose, reading as internal workflow notes rather than accessible citations.",
+  "suggestion": "Rephrase naturally, e.g., 'as reported by nukopoli (aynucorpora Discord 2024-11-09)' for line 392 and 'attributed to Satō by nukopoli (aynucorpora Discord 2024-11-17)' for line 544.",
+  "confidence": 0.6,
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "504",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "‹corpus-suggested›",
+  "issue": "The claim about the noun–numeral.noun–verb pattern is marked as 'corpus-suggested', but the only direct source cited is aynucorporadiscord (community discussion), not a systematic corpus. The epistemic tag may be inflated.",
+  "suggestion": "Change to '‹speculative›' or '‹community-observed›', or add a corpus citation if available.",
+  "confidence": 0.7,
+  "chapter": "numeral-classifiers-ordinals-and-quantifier-syntax",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

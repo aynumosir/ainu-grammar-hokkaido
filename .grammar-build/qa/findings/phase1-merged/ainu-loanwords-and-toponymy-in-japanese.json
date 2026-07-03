@@ -1,0 +1,1254 @@
+[
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#036",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "384",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence refers to the process of verification ('sources directly read for this chapter') rather than directly addressing the reader about the status of the information. This is a 'pipeline register leak'.",
+    "quote": "None were verified in the sources directly read for this chapter; they are listed with that status recorded.",
+    "suggestion": "Rephrase to focus on the status of the information: 'The status of these items as Ainu loans has not been verified in the sources consulted for this chapter.'",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This phrase is addressed to the editorial/production process (reporting what was and wasn't checked in the pipeline) rather than to the reader. While methodological caveats belong in a grammar, the phrasing 'in the sources directly read for this chapter' sounds like an internal note.",
+    "quote": "None were verified in the sources directly read for this chapter",
+    "suggestion": "Rephrase to something more reader-facing, e.g., 'None have been verified against primary sources for the present study; they are listed here with the status recorded.' Alternatively, rely on the [UNVERIFIED] status in the table and remove the meta-sentence.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'sources directly read for this chapter' is a clear register leak, exposing the book's production pipeline. It should not appear in final prose.",
+    "quote": "None were verified in the sources directly read for this chapter; they are listed with that status recorded.",
+    "suggestion": "Rephrase to: 'These etymologies are widely cited but lack verification in the scholarly sources consulted for this chapter.'",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#048",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "170",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is attached to a claim supported only by a Discord message (nukopoli, aynu-corpora Discord). The tag is inflated and misleading for a non-corpus source.",
+    "quote": "‹corpus-confirmed›",
+    "suggestion": "Replace ‹corpus-confirmed› with a more appropriate tag such as ‹discord-attribution› or remove the tag entirely, since the claim is not based on a corpus analysis.",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation attributes a linguistic observation to a Discord user without a supporting academic source, yet the claim is marked ‹corpus-confirmed› in line 170. This inflates the epistemic status: a Discord comment cannot support a ‹corpus-confirmed› tag unless it references or analyzes primary corpus data.",
+    "quote": "nukopoli (aynu-corpora Discord, 2023-12-11, corroborating Tamura 1996) registers this as a mistaken conflation",
+    "suggestion": "Downgrade to ‹proposed› or ‹community-suggested› and clarify that the Discord comment is not corpus analysis.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#034",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "369",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word 'ɸina' is marked with `lang=\"ja\"` and italicized. This is consistent. However, the Ainu word 'pinne' is marked with `<A w=\"pinne\" gl=\"male, masculine\" />` but is not italicized and lacks `lang=\"ain-Latn\"`.",
+    "quote": "matagi <i lang=\"ja\">ɸina</i> 'elder brother (matagi usage)' as a reflex of Ainu <A w=\"pinne\" gl=\"male, masculine\" />",
+    "suggestion": "Italicize and mark the Ainu word: <i lang=\"ain-Latn\">pinne</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese words 'hatagi'/'hattagi' are marked with `lang=\"ja\"` and italicized. This is consistent. However, the Ainu word 'pattaki' is marked with `<A w=\"pattaki\" gl=\"grasshopper\" />` but is not italicized and lacks `lang=\"ain-Latn\"`.",
+    "quote": "matagi <i lang=\"ja\">hatagi</i>/<i lang=\"ja\">hattagi</i> 'locust' as a reflex of Ainu <A w=\"pattaki\" gl=\"grasshopper\" />",
+    "suggestion": "Italicize and mark the Ainu word: <i lang=\"ain-Latn\">pattaki</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Ainu word is given as <i lang=\"ain-Latn\">pinne</i>, but standard Ainu orthography typically uses <i>ne</i> for the /ne/ syllable. However, dialectal variation exists. The form <i>pinne</i> may reflect a specific transcription, but without dialectal specification, it risks orthographic inconsistency.",
+    "quote": "<A w=\"pinne\" gl=\"male, masculine\" />",
+    "suggestion": "Confirm orthographic consistency with Tamura or Nakagawa; if <i>pinne</i> is attested, add a dialect tag (e.g., ‹SA›).",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#033",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "348",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese forms are marked with `lang=\"ja\"` and italicized. This is consistent. However, the Ainu proto-form '*si kor pe' is not marked with `lang=\"ain-Latn\"`.",
+    "quote": "<i lang=\"ja\">sikorope</i> in Akita, with reduced forms <i lang=\"ja\">sikoro</i>, <i lang=\"ja\">sikonohe</i>, <i lang=\"ja\">siko no ki</i> elsewhere",
+    "suggestion": "Mark the Ainu proto-form: <i lang=\"ain-Latn\">*si kor pe</i>",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu sound change is mentioned but not explicitly linked to the Ainu language using markup.",
+    "quote": "antedates the Ainu sound change",
+    "suggestion": "Specify the language: antedates the Ainu (<i lang=\"ain-Latn\">*siw kor pe</i> → <i lang=\"ain-Latn\">*si ker pe</i>) sound change",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form <i lang=\"ja\">sikonohe</i> uses <i>he</i>, which in modern Japanese romanization should be <i>e</i> when representing the /e/ sound (as in 'he' = /e/ in Hepburn). This creates inconsistency with standard romanization practices used elsewhere (e.g., <i>ki</i>, <i>no</i>).",
+    "quote": "<i lang=\"ja\">sikonohe</i>",
+    "suggestion": "Change <i>sikonohe</i> to <i>sikone</i> or use kana (シコネ) for consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#019",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'atuy' is marked with `lang=\"ain-Latn\"` and italicized. The proposed Old Japanese form 'atu-' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">atuy</i>",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">atu-</i>",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table of Old Japanese forms employs inconsistent diacritics: circumflex, umlaut, and no diacritic all appear for what are presumably long vowels. This creates an impression of carelessness and may confuse readers unfamiliar with the conventions.",
+    "quote": "atu- (no diacritic), Nipë (e-umlaut), Sirupa (no diacritic), Töya (o-umlaut), karimba (no diacritic), matô (o-circumflex), tôra (o-circumflex), sömö (o-umlaut)",
+    "suggestion": "Standardise the OJ romanization to the system used elsewhere in the book (likely the modified Hepburn with macrons, e.g., ō, ē). Use macrons uniformly or decide on a single diacritic type.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#047",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "471",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹speculative› is applied to the entire sentence, which includes factual claims about the proposals being unverified and not tested. It might be more precise to apply this grade specifically to the proposed Korean-origin candidates themselves.",
+    "quote": "This is unverified and has not been tested against the comparative literature; it is noted here as an acknowledged edge case, not a claim ‹speculative›.",
+    "suggestion": "Consider applying the grade more narrowly if possible, or ensure the sentence clearly frames the speculative aspect.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is attributed to a Discord user and marked ‹speculative›, which is appropriate, but again lacks a formal `<Ref k=\"aynucorporadiscord\" />` tag, breaking citation consistency seen in lines 170 and 372.",
+    "quote": "Antitwilight (aynu-corpora Discord, 2024-11-15) has proposed Korean-origin candidates...",
+    "suggestion": "Add `<Ref k=\"aynucorporadiscord\" />` after the attribution.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#057",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "400,406,412,418",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'source form not established here' is repeated and inconsistently formatted — sometimes in parentheses, sometimes not. It also uses uppercase 'Ainu' as a noun, which may be acceptable but varies in usage.",
+    "quote": "Ainu (source form not established here)",
+    "suggestion": "Standardize to: '(Ainu source form not established in consulted sources)' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#046",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "468",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu roots 'nay' and 'casi' are marked with `lang=\"ain-Latn\"` and italicized. This is consistent. However, the name 'Antitwilight' is not marked with a language tag.",
+    "quote": "Antitwilight (aynu-corpora Discord, 2024-11-15) has proposed Korean-origin candidates for several Ainu roots, including <i lang=\"ain-Latn\">nay</i>, <i lang=\"ain-Latn\">casi</i>, and others",
+    "suggestion": "Mark the name with `lang=\"en\"`: Antitwilight (aynu-corpora Discord, 2024-11-15)",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#045",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "452",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese place name '稚内' is marked with `lang=\"ja\"` and italicized. This is consistent. However, the gloss 'young interior' is not marked with a language tag.",
+    "quote": "Reading Ainu-derived place names through kanji orthography produces folk etymologies — <i lang=\"ja\">稚内</i> as 'young interior'?",
+    "suggestion": "Mark the gloss with `lang=\"en\"`: — <i lang=\"ja\">稚内</i> as 'young interior'?",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#044",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "449",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 45, the Japanese reflex '-betsu' is italicized. It would be more consistent to not italicize the Japanese reflex here.",
+    "quote": "Rendaku produces <i lang=\"ain-Latn\">pet</i> → <i lang=\"ja\">-betsu</i>",
+    "suggestion": "Remove italics from the Japanese reflex: Rendaku produces <i lang=\"ain-Latn\">pet</i> → -betsu",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#043",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "448",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence is a bit short and abrupt. It could be integrated more smoothly with the preceding or following sentence.",
+    "quote": "as described in <Xr ch=\"syllable-template\" />.",
+    "suggestion": "Consider combining it with the next sentence or rephrasing for better flow.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#042",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "426",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word 'iruka' is marked with `lang=\"ja\"` and italicized. This is consistent. However, the Ainu forms 'rika' are not marked with `lang=\"ain-Latn\"`.",
+    "quote": "Vovin's argument that <i lang=\"ja\">iruka</i> 'dolphin' is an Ainu loan",
+    "suggestion": "Mark the Ainu forms: cf. Saru <i lang=\"ain-Latn\">rika</i> / Kuril <i lang=\"ain-Latn\">rika</i> 'whale meat'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#041",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "425",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'Asserting these as Ainu loans' is slightly awkward. Consider rephrasing for better flow.",
+    "quote": "Asserting these as Ainu loans without a primary source risks repeating popular etymology.",
+    "suggestion": "Claiming these as Ainu loans without a primary source risks repeating popular etymology.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#032",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "340",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `g` attribute is not marked with `lang=\"en\"` or similar. While English is the default, explicit markup is good practice.",
+    "quote": "g=\"bitter-have-thing\"",
+    "suggestion": "Add `lang=\"en\"` to the `g` attribute: g=\"<span lang=\\\"en\\\">bitter-have-thing</span>\"",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses within the `tr` attribute are enclosed in single quotes. This is redundant.",
+    "quote": "tr=\"(Proto-Ainu) thing that holds bitterness; ancestor of sikerpe 'Amur cork-tree fruit'\"",
+    "suggestion": "Remove single quotes: tr=\"(Proto-Ainu) thing that holds bitterness; ancestor of sikerpe Amur cork-tree fruit\"",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms '*siw kor pe' and 'sikerpe' within the note are not marked with `lang=\"ain-Latn\"` and are not italicized. The vowel change '(o → e)' is also not marked with a language tag.",
+    "quote": "note=\"Constructed illustration of the reconstructed proto-form *siw kor pe per Ochiai (2026: 196). The attested Saru form sikerpe reflects w-deletion and regressive vowel assimilation (o → e). This is an analytical construction, not a form found in any attested Ainu text.\"",
+    "suggestion": "Mark the Ainu forms with `lang=\"ain-Latn\"` and italicize them. Mark the vowel change with `lang=\"ain-Latn\"`: The attested Saru form <i lang=\"ain-Latn\">sikerpe</i> reflects <i lang=\"ain-Latn\">w</i>-deletion and regressive vowel assimilation (<i lang=\"ain-Latn\">o → e</i>).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#031",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "334",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morpheme 'w' is not marked with `lang=\"ain-Latn\"`. The vowel change 'o → e' is also not marked with a language tag.",
+    "quote": "<i lang=\"ain-Latn\">sikerpe</i> through <i lang=\"ain-Latn\">w</i>-deletion and regressive vowel assimilation (<i lang=\"ain-Latn\">o → e</i>)",
+    "suggestion": "Mark the Ainu morpheme and the vowel change: <i lang=\"ain-Latn\">w</i>-deletion and regressive vowel assimilation (<i lang=\"ain-Latn\">o → e</i>)",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#030",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "329",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese word for the tree, キハダ, is not marked with `lang=\"ja\"`. Also, the scientific name is italicized but not marked with a language tag.",
+    "quote": "<A w=\"sikerpe\" gl=\"Amur cork-tree fruit\" /> — fruit of the Amur cork tree (<i lang=\"ja\">キハダ</i> <i>Phellodendron amurense</i>)",
+    "suggestion": "Mark the Japanese word with `lang=\"ja\"` and italicize it. Mark the scientific name with `lang=\"la\"` and italicize it: — fruit of the Amur cork tree (<i lang=\"ja\">キハダ</i> <i>Phellodendron amurense</i>)",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'thing that holds bitterness' is enclosed in single quotes. While not strictly wrong, it's more common to just have the text without quotes when it's a direct gloss.",
+    "quote": "<i lang=\"ain-Latn\">*siw kor pe</i> 'thing that holds bitterness'",
+    "suggestion": "Remove single quotes: <i lang=\"ain-Latn\">*siw kor pe</i> thing that holds bitterness",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses for the Ainu morphemes are enclosed in single quotes. This is redundant.",
+    "quote": "<i lang=\"ain-Latn\">siw</i> 'bitter' + <i lang=\"ain-Latn\">kor</i> 'hold, have' + <i lang=\"ain-Latn\">pe</i> 'thing'",
+    "suggestion": "Remove single quotes: <i lang=\"ain-Latn\">siw</i> bitter + <i lang=\"ain-Latn\">kor</i> hold, have + <i lang=\"ain-Latn\">pe</i> thing",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#028",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "319",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'head-middle-stream' is presented without language markup. It's an English gloss of an Ainu etymology.",
+    "quote": "o-tum-nay 'head-middle-stream'",
+    "suggestion": "Add `lang=\"en\"` to the gloss: <span lang=\"en\">'head-middle-stream'</span>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#027",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "304",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu forms 'rika' are marked with `lang=\"ain-Latn\"` and italicized. This is consistent. However, the Japanese word 'iruka' is not marked with `lang=\"ja\"` or italicized.",
+    "quote": "Saru <i lang=\"ain-Latn\">rika</i> / Kuril <i lang=\"ain-Latn\">rika</i> 'whale meat'",
+    "suggestion": "Mark the Japanese word: <i lang=\"ja\">iruka</i> 'dolphin'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#026",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "295",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'somo' is marked with `lang=\"ain-Latn\"` and italicized. The proposed Old Japanese form 'sömö' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">somo</i>",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">sömö</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#025",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "289",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'tura' is marked with `lang=\"ain-Latn\"` and italicized. The proposed Old Japanese form 'tôra' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">tura</i>",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">tôra</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#024",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "283",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu compound 'mat-po' is marked with `lang=\"ain-Latn\"` and italicized. The proposed Old Japanese form 'matô' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">mat-po</i> (woman-child)",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">matô</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#023",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "277",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'karinpa' is marked with `lang=\"ain-Latn\"` and italicized. The proposed Old Japanese form 'karimba' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">karinpa</i>",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">karimba</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#022",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "271",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu compound 'to-ya' is marked with `lang=\"ain-Latn\"` and italicized. The proposed Old Japanese place name 'Töya' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">to-ya</i> (lake + shore)",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">Töya</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#021",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "265",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu compound 'sir-pa' is marked with `lang=\"ain-Latn\"` and italicized. The proposed Old Japanese place name 'Sirupa' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">sir-pa</i> (land + head)",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">Sirupa</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#020",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "259",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu compound 'ni-pet' is marked with `lang=\"ain-Latn\"` and italicized. The proposed Old Japanese place name 'Nipë' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">ni-pet</i> (tree + river)",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">Nipë</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#018",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "247",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'nay' is marked with `lang=\"ain-Latn\"` and italicized. This is consistent, but the proposed Old Japanese form 'na' is not marked with `lang=\"ja\"` or italicized. For clarity, it would be better to mark the Old Japanese form.",
+    "quote": "<i lang=\"ain-Latn\">nay</i>",
+    "suggestion": "Mark the Old Japanese form: <i lang=\"ja\">na</i>",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#015",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The morpheme-segmented Ainu form `sir etok` is not marked with `lang=\"ain-Latn\"`. While it's in an `<Ex>` tag which implies Ainu, explicit markup is preferred for consistency and clarity.",
+    "quote": "m=\"sir etok\"",
+    "suggestion": "Add `lang=\"ain-Latn\"` to the `m` attribute: m=\"<i lang=\\\"ain-Latn\\\">sir etok</i>\"",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss `g` attribute is not marked with `lang=\"en\"` or similar. While English is the default, explicit markup is good practice.",
+    "quote": "g=\"land head\"",
+    "suggestion": "Add `lang=\"en\"` to the `g` attribute: g=\"<span lang=\\\"en\\\">land head</span>\"",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes 'sir' and 'etok' within the note are not marked with `lang=\"ain-Latn\"` and are not italicized. This is inconsistent with how Ainu forms are generally presented.",
+    "quote": "note=\"Constructed illustration of the compound underlying Shiretoko 知床 (Shibatani 1990 §1). sir 'land, visible landscape' combines with etok 'tip, head' to form a compound place name; the Japanese reflex preserves the Ainu compound structure.\"",
+    "suggestion": "Mark the Ainu morphemes with `lang=\"ain-Latn\"` and italicize them: sir 'land, visible landscape' combines with etok 'tip, head'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#014",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "183",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu morphemes are marked with `lang=\"ain-Latn\"` and then glossed. The glosses are also enclosed in single quotes. This is a bit redundant. Typically, the gloss is just the text following the morpheme.",
+    "quote": "<i lang=\"ain-Latn\">ni-kap-us-i</i> — <i lang=\"ain-Latn\">ni</i> 'tree' + <i lang=\"ain-Latn\">kap</i> 'bark' + <i lang=\"ain-Latn\">-us-i</i> 'habitually-at'",
+    "suggestion": "Remove the single quotes around the glosses: <i lang=\"ain-Latn\">ni</i> 'tree' + <i lang=\"ain-Latn\">kap</i> 'bark' + <i lang=\"ain-Latn\">-us-i</i> 'habitually-at'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#013",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "167",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'to' is linked via `<A w=\"to\" gl=\"lake, pond\" />`, but the gloss 'lake, pond' is repeated in the prose. This is redundant.",
+    "quote": "nukopoli (aynu-corpora Discord, 2023-12-11, corroborating Tamura 1996) registers this as a mistaken conflation: 'pond' or 'lake' is <A w=\"to\" gl=\"lake, pond\" />",
+    "suggestion": "Remove the gloss from the `<A>` tag if it's repeated in the prose, or remove the repetition in the prose.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#012",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "131",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The `paren` attribute is used here, but it's not a standard attribute for `<Ref>` components. It's unclear what its intended function is. If it's meant to indicate that the citation should be in parentheses, that's usually handled by the surrounding text.",
+    "quote": "against <Ref k=\"chiri1956\" paren />",
+    "suggestion": "Remove the `paren` attribute: against <Ref k=\"chiri1956\" />",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#011",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese place name 'Nopporo' has the Ainu reflex part in italics (`<em>pporo</em>`). This is inconsistent with the chapter's general markup for Ainu forms and Japanese names. The `<em>` tag is also semantically incorrect here.",
+    "quote": "野幌 Nopporo (&lt; <i lang=\"ain-Latn\">nupuri</i>?, illustrative)",
+    "suggestion": "Use `lang=\"ja\"` for the Japanese name and `lang=\"ain-Latn\"` for the Ainu component, and remove the `<em>` tag. For example: 野幌 No<i lang=\"ain-Latn\">pporo</i> (&lt; <i lang=\"ain-Latn\">nupuri</i>?, illustrative).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#010",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "109",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese place name 'Shiretoko' has the Ainu reflex part in italics (`<em>retoko</em>`). This is inconsistent with the chapter's general markup for Ainu forms and Japanese names. The `<em>` tag is also semantically incorrect here.",
+    "quote": "知床 Shiretoko (&lt; <i lang=\"ain-Latn\">sir-etok</i> 'headland', illustrative)",
+    "suggestion": "Use `lang=\"ja\"` for the Japanese name and `lang=\"ain-Latn\"` for the Ainu component, and remove the `<em>` tag. For example: 知床 Shi<i lang=\"ain-Latn\">retoko</i> (&lt; <i lang=\"ain-Latn\">sir-etok</i> 'headland', illustrative).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#009",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "102",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese place name 'Tōyako' has the Ainu reflex part in italics (`<em>yako</em>`). This is inconsistent with the chapter's general markup for Ainu forms and Japanese names. The `<em>` tag is also semantically incorrect here.",
+    "quote": "洞爺湖 Tōyako (&lt; <i lang=\"ain-Latn\">to-ya</i> 'lake-shore', illustrative)",
+    "suggestion": "Use `lang=\"ja\"` for the Japanese name and `lang=\"ain-Latn\"` for the Ainu component, and remove the `<em>` tag. For example: 洞爺湖 Tō<i lang=\"ain-Latn\">yako</i> (&lt; <i lang=\"ain-Latn\">to-ya</i> 'lake-shore', illustrative).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#008",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "93",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese place name 'Tomakomai' has the Ainu reflex part in italics (`<em>komai</em>`). This is inconsistent with the chapter's general markup for Ainu forms and Japanese names. The `<em>` tag is also semantically incorrect here.",
+    "quote": "苫小牧 Tomakomai (&lt; <i lang=\"ain-Latn\">to-mak-oma-i</i>?, illustrative)",
+    "suggestion": "Use `lang=\"ja\"` for the Japanese name and `lang=\"ain-Latn\"` for the Ainu component, and remove the `<em>` tag. For example: 苫小牧 Tomak<i lang=\"ain-Latn\">omai</i> (&lt; <i lang=\"ain-Latn\">to-mak-oma-i</i>?, illustrative).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#007",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "86",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese place names 'Usu' and 'Nii' have the Ainu reflex part in italics (`<em>Us</em>`, `<em>kappu</em>`). This is inconsistent with the chapter's general markup for Ainu forms and Japanese names. The `<em>` tag is also semantically incorrect here.",
+    "quote": "有珠 U<em>su</em>; 新冠 Nii<em>kappu</em> (&lt; <i lang=\"ain-Latn\">ni-kap-us-i</i>, illustrative)",
+    "suggestion": "Use `lang=\"ja\"` for the Japanese names and `lang=\"ain-Latn\"` for the Ainu components, and remove the `<em>` tags. For example: 有珠 U<i lang=\"ain-Latn\">su</i>; 新冠 Nii<i lang=\"ain-Latn\">kappu</i> (&lt; <i lang=\"ain-Latn\">ni-kap-us-i</i>, illustrative).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#006",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "75",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 45, the Japanese reflex '-betsu' is italicized. It would be more consistent to not italicize the Japanese reflex here.",
+    "quote": "<i lang=\"ja\">-betsu</i> ベツ (rendaku of <i lang=\"ain-Latn\">pet</i>)",
+    "suggestion": "Remove italics from the Japanese reflex: -betsu ベツ (rendaku of <i lang=\"ain-Latn\">pet</i>)",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#005",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "66",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese place names are presented with kanji and romanization. The romanization has the Ainu reflex part in italics (`<em>nai</em>`). This is inconsistent with the general practice in the chapter where Ainu forms are italicized with `lang=\"ain-Latn\"` and Japanese forms with `lang=\"ja\"`. Also, the `<em>` tag is for emphasis, not language/script indication.",
+    "quote": "稚内 Wakka<em>nai</em>, 木古内 Kiko<em>nai</em>, 歌志内 Utashi<em>nai</em>",
+    "suggestion": "Use `lang=\"ja\"` for the Japanese names and `lang=\"ain-Latn\"` for the Ainu components, and remove the `<em>` tags. For example: 稚内 Wakka<i lang=\"ain-Latn\">nai</i>, 木古内 Kiko<i lang=\"ain-Latn\">nai</i>, 歌志内 Utashi<i lang=\"ain-Latn\">nai</i>.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#004",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "45",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'pet' is italicized with `lang=\"ain-Latn\"`, but the Japanese reflex '-betsu' is also italicized with `lang=\"ja\"`. While not strictly incorrect, it's more common to italicize Ainu forms and leave Japanese transliterations or romanizations in plain text unless they are being specifically highlighted as Japanese words within an Ainu context. Given the context of Japanese reflexes, it might be clearer to not italicize the Japanese part.",
+    "quote": "<i lang=\"ain-Latn\">pet</i> → <i lang=\"ja\">-betsu</i>",
+    "suggestion": "Remove italics from the Japanese reflex: <i lang=\"ain-Latn\">pet</i> → -betsu",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#002",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "30",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'verified only at the level of their Ainu component elements' is a bit wordy. Consider simplifying.",
+    "quote": "Individual toponyms cited in this chapter as examples have been verified only at the level of their Ainu component elements through the Tamura and Nakagawa dictionaries, not against the primary place-name sources.",
+    "suggestion": "Individual toponyms cited in this chapter as examples have been verified only for their Ainu component elements through the Tamura and Nakagawa dictionaries, not against the primary place-name sources.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#001",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "16",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The sentence structure is slightly awkward. Consider rephrasing for better flow.",
+    "quote": "Its primary evidence is toponymic, and lexical loans proper are few.",
+    "suggestion": "Its primary evidence is toponymic; lexical loans proper are few.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#056",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "32",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'verified only at the level of their Ainu component elements through the Tamura and Nakagawa dictionaries, not against the primary place-name sources' reads like a pipeline note about source verification status, not a scholarly statement. It risks exposing editorial process to the reader.",
+    "quote": "not against the primary place-name sources.",
+    "suggestion": "Rephrase to: 'etymologies are based on Ainu lexical sources; primary place-name documentation was not consulted.'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#055",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "316",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is attributed solely to a Discord user and marked ‹proposed›, which is appropriate, but the citation format mixes narrative attribution with formal `<Ref>` markup. The inline mention lacks a formal `<Ref k=\"aynucorporadiscord\" />` tag, unlike other Discord citations (e.g., line 470).",
+    "quote": "nukopoli (aynu-corpora Discord, 2026-01-22) proposes that the Iwate place name Otomonai...",
+    "suggestion": "Add `<Ref k=\"aynucorporadiscord\" />` after the Discord attribution to maintain citation consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#054",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "116",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Japanese reflex is given as <i lang=\"ja\">Nuburi- / Nopporo-</i>, but the example only shows <i lang=\"ain-Latn\">nupuri</i> as the source. The phonological reduction to <i lang=\"ja\">-poro</i> is not explained, and the intermediate form <i lang=\"ain-Latn\">nupuri</i> → <i lang=\"ja\">Nopporo</i> lacks morphophonemic justification in the text, creating a mismatch between form and reflex.",
+    "quote": "<td>野幌 Nopporo (&lt; <i lang=\"ain-Latn\">nupuri</i>?, illustrative)</td>",
+    "suggestion": "Clarify the phonological steps from <i lang=\"ain-Latn\">nupuri</i> to <i lang=\"ja\">Nopporo</i>, or note that this is a conventional reduction pattern.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#053",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "109",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The compound <i lang=\"ain-Latn\">sir-etok</i> includes <i lang=\"ain-Latn\">etok</i>, which is not defined or glossed in the table. The gloss for <i lang=\"ain-Latn\">sir</i> is 'land, visible landscape', but the translation 'headland' depends on the unanalyzed second element <i lang=\"ain-Latn\">etok</i>, creating a mismatch between the morphemic form and the available glossing.",
+    "quote": "<td>知床 Shiretoko (&lt; <i lang=\"ain-Latn\">sir-etok</i> 'headland', illustrative)</td>",
+    "suggestion": "Add a gloss for <i lang=\"ain-Latn\">etok</i> in the note or table, or clarify that this is an illustrative compound with partially unanalyzed morphology.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#052",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "102",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss for <i lang=\"ain-Latn\">to</i> in the table is 'lake, pond', but the compound <i lang=\"ain-Latn\">to-ya</i> is interpreted as 'lake-shore'. The element <i lang=\"ain-Latn\">ya</i> is not defined or glossed anywhere in the table, making the semantic extension from 'lake' to 'lake-shore' unexplained and creating a gloss-translation mismatch.",
+    "quote": "<td>洞爺湖 Tōyako (&lt; <i lang=\"ain-Latn\">to-ya</i> 'lake-shore', illustrative)</td>",
+    "suggestion": "Define <i lang=\"ain-Latn\">ya</i> in the note or table, or clarify that this is a conventional compound whose second element is not independently glossed here.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#051",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "93",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The proposed Ainu form <i lang=\"ain-Latn\">to-mak-oma-i</i> includes the elements <i lang=\"ain-Latn\">to</i> 'lake' and <i lang=\"ain-Latn\">mak</i> (unidentified), but the table only glosses <i lang=\"ain-Latn\">oma</i> as 'be located in/at'. The components <i lang=\"ain-Latn\">to</i> and <i lang=\"ain-Latn\">mak</i> are not explained or glossed, creating a mismatch between the morphemic form and the available gloss.",
+    "quote": "<td>苫小牧 Tomakomai (&lt; <i lang=\"ain-Latn\">to-mak-oma-i</i>?, illustrative)</td>",
+    "suggestion": "Either provide glosses for <i lang=\"ain-Latn\">to</i> and <i lang=\"ain-Latn\">mak</i> in the note or table, or clarify that the internal structure is not fully analyzed here.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#050",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "86",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Ainu form <i lang=\"ain-Latn\">ni-kap-us-i</i> is given as the source for Nii<em>kappu</em>, but the gloss in the table row (line 84) is for the suffix <i lang=\"ain-Latn\">-us(i)</i> meaning 'place where X habitually is'. The example implies that <i lang=\"ain-Latn\">kap</i> means 'bark', but this component is not glossed in the table, creating a mismatch between the morphemic breakdown and the gloss.",
+    "quote": "<td>有珠 U<em>su</em>; 新冠 Nii<em>kappu</em> (&lt; <i lang=\"ain-Latn\">ni-kap-us-i</i>, illustrative)</td>",
+    "suggestion": "Add a gloss for <i lang=\"ain-Latn\">kap</i> in the table or clarify that the example is illustrative and not fully glossed.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#049",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "25, 151, 186, 216, 435, 452",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter inconsistently uses both 'Hokkaidō' (with macron) and 'Hokkaido' (without macron) for the same geographical term. A scholarly grammar should adopt a consistent romanization (preferably the long-vowel form 'Hokkaidō').",
+    "quote": "Hokkaidō (line 25) / Hokkaido (lines 151, 186, 216, 452)",
+    "suggestion": "Standardise to 'Hokkaidō' throughout, or choose one convention and apply it uniformly. If the macron is used in the rest of the book, ensure it is used here as well.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#040",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "419",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This status marker '[UNVERIFIED in sources read]' is meta-commentary about the production process and not intended for the reader. It's a 'pipeline register leak'.",
+    "quote": "[UNVERIFIED in sources read]",
+    "suggestion": "Replace with a more reader-facing status, e.g., '[Status: Unverified]' or similar, or integrate into the prose.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#039",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "413",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This status marker '[UNVERIFIED in sources read]' is meta-commentary about the production process and not intended for the reader. It's a 'pipeline register leak'.",
+    "quote": "[UNVERIFIED in sources read]",
+    "suggestion": "Replace with a more reader-facing status, e.g., '[Status: Unverified]' or similar, or integrate into the prose.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#038",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "407",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This status marker '[UNVERIFIED in sources read]' is meta-commentary about the production process and not intended for the reader. It's a 'pipeline register leak'.",
+    "quote": "[UNVERIFIED in sources read]",
+    "suggestion": "Replace with a more reader-facing status, e.g., '[Status: Unverified]' or similar, or integrate into the prose.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#037",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "401",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This status marker '[UNVERIFIED in sources read]' is meta-commentary about the production process and not intended for the reader. It's a 'pipeline register leak'.",
+    "quote": "[UNVERIFIED in sources read]",
+    "suggestion": "Replace with a more reader-facing status, e.g., '[Status: Unverified]' or similar, or integrate into the prose.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#035",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "372",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹proposed› is applied to the entire sentence, which includes factual claims about the phonological plausibility and consistency with Vovin's thesis. It might be more precise to apply this grade specifically to the claim that these are reflexes of the Ainu words.",
+    "quote": "‹proposed›.",
+    "suggestion": "Consider applying the grade more narrowly if possible, or ensure the sentence clearly frames the proposed aspect.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#029",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "322",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹proposed› is applied to the entire sentence, which includes factual claims about the plausibility of the analysis and its consistency with the Tōhoku substrate. It might be more precise to apply this grade specifically to the claim that the name derives from Ainu *o-tum-nay*.",
+    "quote": "‹proposed›.",
+    "suggestion": "Consider applying the grade more narrowly if possible, or ensure the sentence clearly frames the proposed aspect.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#017",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "233",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The caption states that all etymologies are contested, but the table itself does not consistently mark individual entries as contested. This creates a slight disconnect between the caption and the table's presentation.",
+    "quote": "All etymologies are Vovin's proposals and are contested; see text.",
+    "suggestion": "Ensure that the contested nature of each etymology is either clearly indicated in the table (e.g., with an evidence grade) or rephrase the caption to be less absolute if some are less contested than others.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#016",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "228",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The evidence grade ‹contested› is applied to the entire sentence, which includes factual claims about Vovin's proposal and the content of the Man'yōshū. It might be more precise to apply this grade specifically to the claim that these are Ainu loans, rather than the existence of the texts or Vovin's proposal itself.",
+    "quote": "‹contested›.",
+    "suggestion": "Consider applying the grade more narrowly if possible, or ensure the sentence clearly frames the contested aspect.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "ainu-loanwords-and-toponymy-in-japanese~p1#003",
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "lines": "41",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (1995) is placed after the Tamura (1996) citation, but it seems to refer to the same list of elements ('nay, oma') mentioned in the preceding sentence. It's unclear if Nakagawa also covers 'us, oma, to, sir, nupuri, kotan' or just 'nay, oma'. The current placement suggests it supports the entire list, which might be inaccurate.",
+    "quote": "; <Ref k=\"nakagawa1995\" p=\"s.v. nay, oma\" />",
+    "suggestion": "Clarify the scope of the Nakagawa citation. If it only supports 'nay, oma', it might be better placed directly after those elements are mentioned, or the sentence structure adjusted.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

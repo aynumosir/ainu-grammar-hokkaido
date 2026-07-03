@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "91",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "nisatta anak sir-pirka nankor",
+  "issue": "The morpheme 'sir-pirka' is glossed as 'weather-be.good' in line 92, but in the example it appears as a single unit without morpheme boundary marking, while the free translation treats it as a meteorological predicate. The gloss should reflect the incorporated structure more precisely, possibly as 'weather-be.good' or 'weather-good', but the current segmentation in 'm' does not show a hyphen between sir and pirka, creating a mismatch.",
+  "suggestion": "Change 'sir-pirka' in line 91 to 'sir-pirka' only if it is indeed a compound; otherwise, ensure consistent hyphenation. Alternatively, adjust the gloss to match the actual segmentation.",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "133",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ku=tek-e-pase",
+  "issue": "The morpheme string shows 'tek-e-pase', but the gloss 'hand-POSS-heavy' does not account for the hyphen between 'e' and 'pase'. The gloss implies that only 'tek-e' is possessed, but the segmentation suggests 'e' is a separate morpheme (possibly the applicative, which the note explicitly denies). This creates ambiguity about whether '-e' is possessive or applicative, and the gloss fails to distinguish them.",
+  "suggestion": "Revise the gloss to clarify the morpheme boundaries, e.g., 'hand-POSS-heavy' → 'hand-POSS=heavy' or adjust the morpheme segmentation to 'tek-e=pase' if clitic-like, or explicitly mark the possessive suffix as distinct from applicative.",
+  "confidence": 0.85,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "nat.-force intr. subject NI",
+  "issue": "The abbreviation 'nat.-force' uses a period, but in row 209, the same term is written as 'nat.-force tr. subject NI' — inconsistent with the full form 'natural-force' used in section headings and prose. This creates orthographic drift within the same table.",
+  "suggestion": "Standardize to 'natural-force' in all table entries for consistency.",
+  "confidence": 0.95,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "203",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "possessor-req. intr. subject NI",
+  "issue": "Abbreviation 'possessor-req.' is used here, but in row 217, it's repeated as 'possessor-req. object NI'. The prose consistently uses 'possessor-requiring'. This creates inconsistency in abbreviation style within the same table.",
+  "suggestion": "Use either 'possessor-requiring' in full or standardize the abbreviation to 'possessor-req.' throughout the table.",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "212",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "9",
+  "issue": "The net penalty for 'nat.-force tr. subject NI' is given as '9' in the table, but based on the calculation in the row (Subject +10, Ambiguity +4 / +7; Backgrounding −5 / −8), the 2022 net should be (10+4)−5 = 9, which matches, but the 2016 version would be (10+7)−8 = 9 as well — yet the table shows only a single '9' instead of '9 / 9'. This contradicts the format used in other rows which show both values.",
+  "suggestion": "Change '9' to '9 / 9' to maintain parallel structure with other rows in the 'net (2022 / 2016)' column.",
+  "confidence": 0.95,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "220",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "0 (ungrammatical)",
+  "issue": "The '% Chitose' cell says '0 (ungrammatical)', but the table header specifies '% (Chitose)' in line 20, implying frequency data from the Chitose corpus. However, an ungrammatical construction cannot have a frequency of 0 in a corpus of attested speech — it would simply be absent. This creates a contradiction between grammaticality judgment and corpus-based frequency reporting.",
+  "suggestion": "Revise to '— (ungrammatical)' or '0 (unattested, ungrammatical)' to clarify that the zero frequency is due to ungrammaticality, not mere absence.",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "316",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"koy\" gl=\"wave\" />, <A w=\"rir\" gl=\"wave, billow\" />",
+  "issue": "Both 'koy' and 'rir' are glossed as 'wave', but 'rir' has an additional gloss 'billow'. This suggests a potential synonymy, but the orthography of 'koy' vs 'rir' is not addressed. More importantly, in example 295, 'rir' is used, not 'koy', and no example uses 'koy'. This creates a drift in lexical representation without attestation.",
+  "suggestion": "Either provide an example with 'koy' or note that it is a less-attested variant of 'rir'.",
+  "confidence": 0.7,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "347",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> ‹contested›",
+  "issue": "The claim about 'kur-ko-tunas' is attributed solely to a Discord source and marked ‹contested›, which is appropriate. However, the citation is attached to the entire sentence including multiple forms, but only 'kur-ko-tunas' is novel; the others are more widely attested. The citation should be more precisely scoped.",
+  "suggestion": "Attach the <Ref k=\"aynucorporadiscord\" /> only to 'kur-ko-tunas' or rephrase to isolate the community-proposed form.",
+  "confidence": 0.8,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "353",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "The attested form is <i lang=\"ain-Latn\">sir-ko-kunne</i>, not the hypothetical <i lang=\"ain-Latn\">*ko-sir-kunne</i>.",
+  "issue": "The use of '*' to mark unattested forms is correct, but it appears without explanation in a chapter that may be read independently. While likely covered elsewhere, its first use here should be minimally clarified.",
+  "suggestion": "Add a brief note on the use of '*' for unattested forms, or ensure cross-reference to a chapter where it is defined.",
+  "confidence": 0.6,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

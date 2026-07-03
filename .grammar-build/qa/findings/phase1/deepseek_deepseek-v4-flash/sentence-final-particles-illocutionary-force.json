@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "44–133 vs 302–331",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Table row: esta‹SHI› / estap‹TOK› → ne (concordant SFP)",
+  "issue": "The kakari-musubi table (lines 302–331) lists ne as a concordant SFP, but the inventory table (lines 44–133) does not include ne among the SFPs. This is a contradiction: either ne is an SFP and should appear in the inventory, or it is not and should not appear in the concord table.",
+  "suggestion": "Either add ne to the inventory table with appropriate illocutionary value, or remove it from the kakari-musubi table and explain its status separately.",
+  "confidence": 0.95,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "544–545",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "content (wh) question → ruwe an (existential) → example: hemanta ne kusu ene siran hi an",
+  "issue": "The table claims that content questions use the evidential-tail predicator ruwe an, but the example given uses hi an (nominalizer hi + existential an) instead of ruwe an. The example does not match the described pattern.",
+  "suggestion": "Either replace the example with one that uses ruwe an, or revise the table to note that hi an is an alternative or that the pattern varies.",
+  "confidence": 0.9,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "548–550 vs 578–586",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "polar (yes/no) question → bare ruwe (verb omitted) → example: e=eraman ruwe",
+  "issue": "The table states that polar questions use bare ruwe with no copula or existential, but the example at lines 578–586 shows ruwe he an with the existential an and the Q-particle he. The note calls this a 'reduced polar-Q frame', but the table does not account for this variant, creating a contradiction.",
+  "suggestion": "Either add a row or note to the table explaining that polar questions can also appear with ruwe he an, or adjust the example to match the bare ruwe pattern.",
+  "confidence": 0.85,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "135",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "Imperative and hortative: yan, ya, ro, so",
+  "issue": "The section title groups so (deliberative) under 'imperative and hortative', but so is neither imperative nor hortative; it is a self-directed deliberative. The heading misrepresents the content.",
+  "suggestion": "Change title to 'Imperative, hortative, and deliberative: yan, ya, ro, so' or restructure to separate so.",
+  "confidence": 0.9,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "337, 426, 501, 645",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The read sources do not settle this ‹contested›.",
+  "issue": "Phrases like 'the read sources' (lines 337, 426, 501) and 'was not re-read for this chapter' (line 645) are meta-commentary addressed to the production process rather than the reader. They break the expository tone.",
+  "suggestion": "Rephrase: e.g., 'The sources consulted do not settle this' → 'This question remains unsettled in the literature'; 'was not re-read for this chapter' → 'has not been systematically compiled'.",
+  "confidence": 0.8,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "199–201",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"ek=an so\" g=\"come=4.S DEL\" tr=\"Should I come too, I wonder.\"",
+  "issue": "The gloss marks =an as fourth person (4.S), but the translation uses first person singular 'I'. While fourth person can be used for self in soliloquy, the mismatch between gloss and translation is potentially confusing and should be explained or aligned.",
+  "suggestion": "Either gloss =an as '1SG' if that is the intended reading, or add a note clarifying the fourth-person self-reference.",
+  "confidence": 0.7,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "116 vs 321",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "Inventory table: nek → 'emphatic assertion'; Kakari-musubi table: nek → 'assured assertion'",
+  "issue": "The illocutionary value for nek differs between the two tables: 'emphatic assertion' vs 'assured assertion'. While similar, the inconsistency may confuse readers.",
+  "suggestion": "Harmonize the wording, e.g., use 'emphatic assertion' in both places.",
+  "confidence": 0.6,
+  "chapter": "sentence-final-particles-illocutionary-force",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

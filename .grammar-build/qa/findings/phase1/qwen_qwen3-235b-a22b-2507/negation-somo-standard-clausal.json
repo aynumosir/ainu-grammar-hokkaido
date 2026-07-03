@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "104-111",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"noka-ha poka somo a=nukar\" g=\"figure-POSS even NEG 4.A=see\" tr=\"One did not even see its figure.\" cite=\"nakagawa2024:407\" dial=\"SAR\" note=\"Nakagawa ex. 832. The simple preverbal pattern; the possessed noun noka-ha carries the additive poka ‘even’, a polarity item licensed under somo.\" />",
+  "issue": "The gloss '4.A=see' implies a transitive verb with agent-patient indexing, but the free translation 'One did not even see its figure' uses impersonal 'one' as subject, which mismatches the person/number indexing suggested in the gloss.",
+  "suggestion": "Either revise the gloss to reflect impersonal subject (e.g. '3.ABS=see') or adjust the translation to match the agentive reading (e.g. 'He did not even see its figure').",
+  "confidence": 0.95,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "149-157",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"ruyanpe somo ruy\" g=\"rain NEG be.intense\" tr=\"It did not rain.\" lit=\"the rain was not intense\" cite=\"takahashi2016:75\" dial=\"TOK\" note=\"Takahashi ex. 11b, against the affirmative ruyanpe ruy ‘it rained’ (ex. 11a); the clauses differ only in somo.\" />",
+  "issue": "The free translation 'It did not rain' contradicts both the gloss 'be.intense' and the literal translation 'the rain was not intense', suggesting a stronger negation of existence rather than intensity.",
+  "suggestion": "Revise the free translation to 'It did not rain heavily' or 'The rain was not intense' to align with the gloss and literal translation.",
+  "confidence": 0.98,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "203-209",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"eci=yayeymontasa somo ki yakka\" g=\"2PL.S=take.revenge NEG do even.if\" tr=\"Even if you do not take revenge,\" cite=\"nakagawa2024:407\" dial=\"SAR\" note=\"Nakagawa ex. 834. The same periphrasis without ka; yayeymontasa is intransitive, so eci= indexes the 2PL subject.\" />",
+  "issue": "The gloss '2PL.S=take.revenge' suggests a transitive verb, but the note states 'yayeymontasa is intransitive', creating an internal contradiction.",
+  "suggestion": "Revise the gloss to reflect intransitivity, e.g. '2PL.S=revenge.self' or '2PL.S=take.revenge(INTR)', to match the note.",
+  "confidence": 0.9,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "303-309",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"sinep ka a=isamka ka somo ki ru-we ne kusu\" g=\"one even 4.A=lose even NEG do track-POSS COP because\" tr=\"Since I did not lose even a single one,\" cite=\"nakagawa2024:393\" dial=\"SAR\" note=\"Nakagawa ex. 779. The negated predicate a=isamka ka somo ki sits inside the evidential ru-we ne; the evidential itself is outside the scope of somo.\" />",
+  "issue": "The morpheme 'a=isamka' is glossed as '4.A=lose', but 'isamka' is derived from 'isam' (to be lost), which is unaccusative; the gloss implies transitivity that mismatches the syntactic behavior.",
+  "suggestion": "Revise the gloss to '4.A=be.lost' or '4.A=lose(INTR)' to reflect unaccusative semantics.",
+  "confidence": 0.93,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "337-344",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ex m=\"somo ipe no mokor\" g=\"NEG eat.a.meal ADV sleep\" tr=\"He went to sleep without eating.\" cite=\"bugaeva2022; takahashi2016:76\" dial=\"HK\" note=\"The parallel with the successive linker, *somo ipe wa mokor, is ungrammatical: a negated event links only with the stative no.\" />",
+  "issue": "The citation 'bugaeva2022' is not defined in the references; all other citations use keys like 'bugaeva2012'. This appears to be a typo or non-existent source.",
+  "suggestion": "Verify the correct key; likely 'bugaeva2012' or another existing key. If 'bugaeva2022' is intended, ensure it is in the bibliography.",
+  "confidence": 0.97,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "396-404",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "The standard negator varies dialectally. <i lang=\"ain-Latn\">somo</i> covers most of Hokkaido; the eastern Pacific coast and parts of the east use other free negators in the same structural slot, and the eastern dialects also have a rare suffix <i lang=\"ain-Latn\">-ko</i> that derives a rhetorical negative adverb from a stative intransitive — a genuinely morphological negative in an otherwise periphrastic system <Ref k=\"nakagawa2024\" p=\"407–408\" />; <Ref k=\"takahashi2016\" p=\"73\" />; <Ref k=\"dalcorso2025neg\" p=\"41\" />.",
+  "issue": "The suffix is written as \"-ko\" in prose but appears without hyphen in the table (e.g., \"omo\", \"homo\"); consistency in hyphenation of clitics and suffixes should be maintained.",
+  "suggestion": "Use consistent hyphenation: either \"-ko\" throughout or \"ko\" without hyphen; prefer \"-ko\" when referring to a bound morpheme.",
+  "confidence": 0.85,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "419",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<td><i lang=\"ain-Latn\">omo</i>, <i lang=\"ain-Latn\">homo</i></td>",
+  "issue": "The forms \"omo\" and \"homo\" are listed without macrons; if phonemic length is contrastive, macron consistency with other dialectal forms should be checked.",
+  "suggestion": "Verify whether \"omo\" and \"homo\" should include macrons (e.g., \"ōmo\", \"hōmo\") based on source data; ensure orthographic consistency across the table.",
+  "confidence": 0.8,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "186-189",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Against this, Satō’s description of Chitose, as reported by Takahashi, analyses <i lang=\"ain-Latn\">somo ki</i> as a single auxiliary rather than as <i lang=\"ain-Latn\">ki</i> negated over a complement; the internal constituency of the periphrasis is therefore genuinely disputed ‹contested› <Ref k=\"sato2008\" p=\"86\" />; <Ref k=\"takahashi2016\" p=\"74\" />.",
+  "issue": "Satō is cited as analyzing <i>somo ki</i> as a single auxiliary, but the cited page in Satō (p. 86) is not provided in the earlier reference (Satō 2008 p. 22); this creates a potential inconsistency in source support.",
+  "suggestion": "Ensure that Satō 2008 p. 86 is indeed the source of the auxiliary analysis; if not, correct the page or clarify attribution.",
+  "confidence": 0.88,
+  "chapter": "negation-somo-standard-clausal",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

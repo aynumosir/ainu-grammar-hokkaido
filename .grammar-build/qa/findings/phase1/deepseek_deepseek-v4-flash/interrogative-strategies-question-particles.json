@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "228, 243",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "Nakagawa 2024: 409d",
+  "issue": "Two different examples in the same chapter are both cited as Nakagawa 2024: 409d; one should likely be 409c or 409e.",
+  "suggestion": "Verify the correct example labels from the source and correct one of the citations.",
+  "confidence": 0.9,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "431",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "is confirmed by community observation … ‹asserted›",
+  "issue": "The prose states the claim is 'confirmed' but the epistemic tag is ‹asserted›, which is a weaker grade; the two conflict.",
+  "suggestion": "Either change 'confirmed' to 'asserted by a community source' or change the tag to ‹corpus-confirmed› if the evidence warrants.",
+  "confidence": 0.8,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "223–226",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"a=rayke ciki he pirka\" g=\"4.A=kill COND Q good\" tr=\"Is it OK if I (rather than you) kill it?\"",
+  "issue": "The Ainu subject 'a=' is glossed as 4.A (generic/indefinite), but the translation specifies 'I (rather than you)', introducing a contrast not present in the gloss.",
+  "suggestion": "Either adjust the gloss to indicate a first-person, non-contrastive interpretation (e.g., '1SG.INDEF=kill') if the fourth person can be used that way, or revise the translation to 'Is it OK if (I) kill it?' without the contrast.",
+  "confidence": 0.7,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "22, 208",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "副助詞",
+  "issue": "The Japanese term '副助詞' is used without translation or explanation; the intended English-only reader may not understand it.",
+  "suggestion": "Add a brief gloss or footnote: 'adverbial particle (副助詞)'.",
+  "confidence": 0.6,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "440–447",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "Community documentation from across several dialects corroborates this: in most dialects outside Saru, bare affirmative or negative interjections are not used to answer a question, and the verb-repetition strategy is employed exclusively. Forms such as e, ho, and m are responses to being addressed or called, not affirmation/denial particles",
+  "issue": "The strong claim about 'most dialects outside Saru' is presented as fact (no epistemic tag) but the only source given is a single Discord message tagged ‹asserted›, which is insufficient to support 'community documentation from across several dialects'.",
+  "suggestion": "Either provide multiple published sources or add an epistemic tag (e.g., ‹corpus-suggested›) to the broader claim, or rephrase to indicate it relies on one community member's assertion.",
+  "confidence": 0.5,
+  "chapter": "interrogative-strategies-question-particles",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

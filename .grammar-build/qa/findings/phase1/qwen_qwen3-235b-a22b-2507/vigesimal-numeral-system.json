@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "122",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">wan</i> (Chitose: <i lang=\"ain-Latn\">wanpe</i>)",
+  "issue": "Inconsistent formatting of dialect variant: the Chitose variant is given in italics inside parentheses, while the main form is also in italics, creating visual redundancy and inconsistent presentation.",
+  "suggestion": "Use plain text for the parenthetical dialect variant: (Chitose: wanpe)",
+  "confidence": 0.95,
+  "chapter": "vigesimal-numeral-system",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "284",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">wanpe etuhot</i>",
+  "issue": "The form <i lang=\"ain-Latn\">wanpe</i> in the counting-off context contradicts the table in section 'roots-form-classes', where the counting-off form for 10 is given as <i lang=\"ain-Latn\">wan</i> (with <i lang=\"ain-Latn\">wanpe</i> noted only as a Chitose variant). Using <i lang=\"ain-Latn\">wanpe</i> here implies it is the standard counting-off form, which is inconsistent.",
+  "suggestion": "Use <i lang=\"ain-Latn\">wan</i> instead of <i lang=\"ain-Latn\">wanpe</i> to maintain consistency with the earlier table unless specifically discussing Chitose dialect.",
+  "confidence": 0.9,
+  "chapter": "vigesimal-numeral-system",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "266",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"ten toward-two-twenty\"",
+  "issue": "The gloss 'toward-two-twenty' does not align with the morpheme breakdown m=\"wan e-tu-hotne\", where 'e-' is a prefix on 'tu', not a separate word. The gloss should reflect the prefixal nature of 'e-'.",
+  "suggestion": "Change gloss to \"ten toward-(two-twenty)\" or \"ten toward-two²⁰\" to better reflect the morphological structure.",
+  "confidence": 0.85,
+  "chapter": "vigesimal-numeral-system",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "370",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">sinep ikasma wan sike</i>",
+  "issue": "The example claims to mean '11 loads', but the structure 'sinep ikasma wan' (1 + exceed + 10) = 11 is correct; however, in the numeral-noun phrase, the decade should appear in its numeral-noun form. 'wan' should be 'wanpe' to match the pattern established in the table and earlier examples (e.g., 'etuhotnep' for 40).",
+  "suggestion": "Change to <i lang=\"ain-Latn\">sinep ikasma wanpe sike</i> for consistency with numeral-noun usage in composite phrases.",
+  "confidence": 0.9,
+  "chapter": "vigesimal-numeral-system",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "482",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"six time 4.A=ANTIP=call.out CONJ\"",
+  "issue": "The gloss 'six' for <i lang=\"ain-Latn\">iwan</i> is accurate, but the free translation 'called out many times' reflects the intensifier use. The gloss should indicate this extended meaning, perhaps with a note or alternative gloss like 'many' or 'several'.",
+  "suggestion": "Add a gloss tag such as 'six>many' or include a note in the example to clarify the semantic bleaching.",
+  "confidence": 0.8,
+  "chapter": "vigesimal-numeral-system",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "500",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "The combining form <i lang=\"ain-Latn\">-ko</i>",
+  "issue": "The hyphen in <i lang=\"ain-Latn\">-ko</i> is inconsistently used: in examples like <i lang=\"ain-Latn\">tutko</i> and <i lang=\"ain-Latn\">rerko</i>, it is not separated, suggesting it is a suffix, but the presentation as <i lang=\"ain-Latn\">-ko</i> might imply it is always written with a hyphen, which is not the case.",
+  "suggestion": "Clarify that <i lang=\"ain-Latn\">-ko</i> is a suffix that fuses phonologically, so forms like <i lang=\"ain-Latn\">tutko</i> are correct without a hyphen.",
+  "confidence": 0.75,
+  "chapter": "vigesimal-numeral-system",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "282",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "In the counting-off form, the bare root <i lang=\"ain-Latn\">hot</i> replaces <i lang=\"ain-Latn\">hotne</i>: 20 = <i lang=\"ain-Latn\">hot</i>, 30 = <i lang=\"ain-Latn\">wanpe etuhot</i>, 40 = <i lang=\"ain-Latn\">tuhot</i>",
+  "issue": "The sequence lists 20, 30, 40, but the pattern for 30 uses <i lang=\"ain-Latn\">wanpe</i>, which is not the standard counting-off form for 10 (which is <i lang=\"ain-Latn\">wan</i> in the table). This creates inconsistency with the earlier presentation.",
+  "suggestion": "Use <i lang=\"ain-Latn\">wan etuhot</i> for 30 to align with the base form unless dialectal variation is being specifically highlighted.",
+  "confidence": 0.85,
+  "chapter": "vigesimal-numeral-system",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

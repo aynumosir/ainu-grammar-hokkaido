@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "69",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "1-place (S)",
+  "issue": "Inconsistent formatting of argument count labels: '1-place (S)' in the existential row uses parentheses, while other rows like intransitive (line 37) use '1-place (S)' with the same format. However, the existential row should align with the intransitive row's label since both are 1-place S predicates. But more critically, the existential row lists two forms, <i lang=\"ain-Latn\">an</i> / <i lang=\"ain-Latn\">oka</i>, yet the affix set only says 'S affixes', implying a single paradigm. This may be correct, but the table does not clarify whether both forms fully pattern alike or differ subtly.",
+  "suggestion": "Ensure consistent label formatting; consider adding a note if <i lang=\"ain-Latn\">an</i> and <i lang=\"ain-Latn\">oka</i> differ in person marking despite both being S-marked.",
+  "confidence": 0.85,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "75",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "1-place (S) or predicating",
+  "issue": "The argument count for negative existential is given as '1-place (S) or predicating', which is ambiguous and inconsistent with the taxonomy's structural focus. All other entries specify clear valence (e.g., '1-place (S)'). The phrase 'or predicating' is vague and does not fit the pattern.",
+  "suggestion": "Revise to '1-place (S)' or clarify what 'predicating' means in structural terms.",
+  "confidence": 0.9,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "269",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<A w=\"oka\" gl=\"exist, be\" />",
+  "issue": "The gloss for <A w=\"oka\" gl=\"exist, be\" /> in line 269 lacks the parenthetical note present in line 72 ('exist, be (alternate / often plural)'), creating an inconsistency in how the variant form is described.",
+  "suggestion": "Update the gloss to match: \"exist, be (alternate / often plural)\".",
+  "confidence": 0.95,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "121, 225",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<A w=\"ramu\" gl=\"think about (something)\" />, <A w=\"kore\" gl=\"give\" />",
+  "issue": "The verb <A w=\"ramu\" gl=\"think about (something)\" /> is listed under transitive verbs (vt), but in line 121 it is described as transitive despite its stative meaning. However, in the table (line 49), <A w=\"ramu\" gl=\"think about (something)\" /> is correctly listed under vt. But in line 225, <A w=\"kore\" gl=\"give\" /> is listed as a three-place verb, while in the table (line 58) it is correctly categorized. The issue is that the gloss for <A w=\"kore\" gl=\"give\" /> does not indicate its three-place valence, unlike <A w=\"kar\" gl=\"make for\" /> which includes 'for someone'. This creates a subtle inconsistency in descriptive depth.",
+  "suggestion": "Update gloss to \"give (to someone, theme)\" or similar to reflect three-place structure.",
+  "confidence": 0.75,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "342",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "The sources read for this chapter did not bank specific lexical members",
+  "issue": "The phrase 'did not bank' is a clear pipeline register leak, suggesting internal project terminology (e.g., 'bank' as in data storage) rather than scholarly prose. This is not appropriate for the final text.",
+  "suggestion": "Replace with: 'The sources reviewed for this chapter did not identify specific lexical members of the zero-place class.'",
+  "confidence": 0.95,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "212",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"rayke\" gl=\"kill (O.SG)\" /> and <A w=\"ronnu\" gl=\"kill (O.PL)\" />",
+  "issue": "The glosses use 'O.SG' and 'O.PL' notation, which is non-standard; standard practice in the chapter is to spell out 'object singular' or use 'theme' as in other entries. This deviates from the otherwise consistent gloss style.",
+  "suggestion": "Use full terms: \"kill (object singular)\" and \"kill (object plural)\" for consistency.",
+  "confidence": 0.8,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "275",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"ne\" gl=\"be, become\" />",
+  "issue": "The gloss 'be, become' omits the parenthetical '(copula)' present in earlier mentions (e.g., line 65), leading to inconsistency in how the word is presented across the chapter.",
+  "suggestion": "Restore the gloss to \"be, become (copula)\" for consistency.",
+  "confidence": 0.9,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

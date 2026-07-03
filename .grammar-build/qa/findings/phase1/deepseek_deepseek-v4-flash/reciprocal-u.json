@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "78-80",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "u-hekote 'be a married couple (singular)' / u-hekotpa 'be a married couple (plural suppletive)'",
+  "issue": "The gloss for u-hekote says '(singular)' but the prefix u- normally requires a plural/collective subject; a singular subject with a reciprocal verb is contradictory unless the verb is lexicalized. The example in §collective-readings (u-tures-kor) explicitly notes that a singular subject is possible for inherently two-party relations, but here the gloss '(singular)' is unexplained and appears to contradict the general rule stated in §overview that u- always takes a plural or collective subject.",
+  "suggestion": "Either add a note explaining that u-hekote is lexicalized and allows a singular subject (like u-tures-kor), or change the gloss to 'be a married couple' without '(singular)'.",
+  "confidence": 0.7,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "116",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "This u- + causative-on-intransitive path to a sociative reading is treated further in <Xr ch=\"reciprocal-u\" s=\"sociative\" /> below.",
+  "issue": "The cross-reference points to the same chapter (reciprocal-u) and section anchor 'sociative', but the section with id='sociative' is titled 'The sociative uko- and uwe-' (§sociative), which discusses uko-/uwe- prefixes, not the u- + causative-on-intransitive path. The sociative reading of u- + causative-on-intransitive is actually discussed in §causativized (lines 207-215), not in §sociative. The cross-reference is misleading.",
+  "suggestion": "Change the cross-reference to point to §causativized (id='causativized') instead of §sociative.",
+  "confidence": 0.9,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "210",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "u-horip-pa-re 'all dance/exorcise together', u-kira-re 'all escape together'",
+  "issue": "The gloss for u-horip-pa-re includes 'exorcise' which is not present in the base verb horip-pa (likely 'dance' or similar); the gloss seems to add a meaning not supported by the base. Also, the gloss 'all dance/exorcise together' uses 'all' which is not reflected in the morphemic breakdown (u- + horip-pa + -re).",
+  "suggestion": "Verify the correct gloss of horip-pa and adjust; if 'exorcise' is a separate meaning, it should be noted separately or the gloss should be simplified to 'all dance together'.",
+  "confidence": 0.5,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "237-238",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "but the semantic path from 'cause each other to carry' to 'observe intently' is unresolved in the sources ‹contested› <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024).",
+  "issue": "The epistemic tag ‹contested› is used, but the only source cited is a single Discord message from a user. A single Discord attribution does not constitute a 'contested' status in the scholarly literature; it is more appropriate to use ‹speculative› or ‹original-needs-review›. The tag ‹contested› implies multiple sources disagree, which is not supported by the citation.",
+  "suggestion": "Change ‹contested› to ‹speculative› or remove the epistemic tag entirely, as the Discord source alone is insufficient for 'contested'.",
+  "confidence": 0.8,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "242-243",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "and its complement uwaste 'increase (of humans, plants)' is semantically differentiated <Ref k=\"aynucorporadiscord\" /> (gengojiro, aynu-corpora Discord, 2024) ‹corpus-suggested›.",
+  "issue": "The epistemic tag ‹corpus-suggested› is used, but the only source cited is a Discord message. A Discord message is not a corpus; the tag ‹corpus-suggested› implies evidence from a corpus, which is not provided. The citation is insufficient to support the tag.",
+  "suggestion": "Either provide a corpus citation or change the tag to ‹speculative› or remove it.",
+  "confidence": 0.7,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "214",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"188\" /> ‹corpus-suggested›.",
+  "issue": "The epistemic tag ‹corpus-suggested› is attached to a claim supported by a published source (Nakagawa 2024). If Nakagawa 2024 is a published grammar or paper, it is not a 'corpus-suggested' claim but rather a published analysis. The tag seems inappropriate for a cited published work.",
+  "suggestion": "Remove the ‹corpus-suggested› tag or replace with ‹consensus› if the claim is widely accepted.",
+  "confidence": 0.6,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "80",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "both are confirmed by the primary sources ‹consensus› <Ref k=\"nakagawa2024\" p=\"187–188\" />.",
+  "issue": "The tag ‹consensus› is used but only one source (Nakagawa 2024) is cited. Consensus typically requires multiple independent sources. A single source does not constitute consensus.",
+  "suggestion": "Either add additional sources or change the tag to something like ‹corpus-confirmed› or remove it.",
+  "confidence": 0.5,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "116",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "This u- + causative-on-intransitive path to a sociative reading is treated further in <Xr ch=\"reciprocal-u\" s=\"sociative\" /> below.",
+  "issue": "The phrase 'below' is a pipeline register leak; in the final published book, the cross-reference should not say 'below' but should rely on the section reference. The <Xr> component should handle the navigation, so 'below' is redundant and informal.",
+  "suggestion": "Remove 'below' and let the cross-reference stand alone: '...is treated further in <Xr ch=\"reciprocal-u\" s=\"sociative\" />.'",
+  "confidence": 0.8,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "140",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "u-tumam-an",
+  "issue": "The example u-tumam-an in the table uses a hyphen between tumam and -an, but elsewhere in the chapter, the 4th person S suffix =an is written with an equals sign (e.g., line 181: =an). The hyphenation is inconsistent with the chapter's convention of using = for clitics and - for affixes.",
+  "suggestion": "Change to u-tumam=an to match the convention used elsewhere.",
+  "confidence": 0.9,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "181",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "u-oruspe-nu=an",
+  "issue": "The morpheme boundary between nu and =an uses = for the clitic, but the boundary between u- and oruspe uses a hyphen. This is consistent with the chapter's convention, but note that in the table (line 164), u-oruspe-nu is written without the =an suffix, which is fine. No actual inconsistency here, but the hyphen in u-oruspe-nu might be better as u-oruspe-nu (no change needed). Actually, this is consistent.",
+  "suggestion": null,
+  "confidence": 0,
+  "chapter": "reciprocal-u",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

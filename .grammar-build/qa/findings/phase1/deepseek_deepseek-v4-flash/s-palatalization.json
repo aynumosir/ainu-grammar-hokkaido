@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "55-56",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "...(reported via aynucorporadiscord, nukopoli, 2023-12-11; shiraishi2022 p.§3 corroborates the general pattern) ‹speculative›.",
+  "issue": "The epistemic tag ‹speculative› is applied to a claim that the text itself says is corroborated by a published source (shiraishi2022). This creates an internal inconsistency between the tag and the stated level of support.",
+  "suggestion": "Either remove the ‹speculative› tag or revise the wording to explain why the claim remains speculative despite corroboration (e.g., because the specific detail from Tamura is only via Discord).",
+  "confidence": 0.8,
+  "chapter": "s-palatalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "157",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "is not resolved in the read sources.",
+  "issue": "The phrase 'read sources' is a pipeline term (meaning materials available to the author) that is not appropriate for a reader-facing reference grammar.",
+  "suggestion": "Replace with 'the available literature' or 'existing work'.",
+  "confidence": 0.9,
+  "chapter": "s-palatalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "160",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "The broader sandhi environment ... is treated there.",
+  "issue": "The pronoun 'there' is vague and the sentence sounds like a note left for the author referring to another chapter; rephrase for the reader.",
+  "suggestion": "Rewrite to '... is treated in the chapter on coda-r assimilation (see above).' or similar.",
+  "confidence": 0.7,
+  "chapter": "s-palatalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "205",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "The phonetic detail is graded accordingly.",
+  "issue": "Meta-commentary about the epistemic grading system, addressed to the production process rather than the reader.",
+  "suggestion": "Remove or rephrase as a plain statement, e.g., 'No acoustic measurements are available for these details.'",
+  "confidence": 0.8,
+  "chapter": "s-palatalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "239",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "has not been confirmed in other compounds or other speakers in any read source",
+  "issue": "Again 'read source' is a pipeline term inappropriate for the reader.",
+  "suggestion": "Replace 'any read source' with 'any published study' or 'the corpus data reviewed'.",
+  "confidence": 0.9,
+  "chapter": "s-palatalization",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

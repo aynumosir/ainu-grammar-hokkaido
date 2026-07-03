@@ -1,0 +1,803 @@
+[
+ {
+  "id": "adnominal-possession-double-marking~p1#006",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "239",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">tekehe</i> is missing its closing italics tag.",
+    "quote": "<i lang=\"ain-Latn\">sik : sikihi</i> 'eye'; <i lang=\"ain-Latn\">tek : tekehe</i> 'hand';",
+    "suggestion": "<i lang=\"ain-Latn\">tekehe</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">tasiroho</i> is missing its closing italics tag.",
+    "quote": "<i lang=\"ain-Latn\">tusa : tusaha</i> 'sleeve'; <i lang=\"ain-Latn\">tasiro : tasiroho</i>",
+    "suggestion": "<i lang=\"ain-Latn\">tasiroho</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: `tusaha` and `tasiroho` are written without hyphens, but in the table they appear as part of a colon-separated pair without clarification. Elsewhere in the chapter, affiliative forms like `tekehe` are segmented as `tek-ehe` in examples. This creates orthographic drift.",
+    "quote": "<i lang=\"ain-Latn\">tusa : tusaha</i> 'sleeve'; <i lang=\"ain-Latn\">tasiro : tasiroho</i> 'mountain-knife'",
+    "suggestion": "Use consistent segmentation (e.g., `tusa : tus-a-ha`, `tasiro : tasir-o-ho`) or clarify that the table uses unsegmented forms.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#002",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "153-155",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">otopi(hi)</i> is missing its closing italics tag.",
+    "quote": "<i lang=\"ain-Latn\">teke(he)</i>, <i lang=\"ain-Latn\">sapa(ha)</i>, <i lang=\"ain-Latn\"\n>otopi(hi)</i>.",
+    "suggestion": "<i lang=\"ain-Latn\">otopi(hi)</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent parentheses and formatting in the presentation of optional long-form suffixes: `teke(he)` vs `sapa(ha)` vs `otopi(hi)`. The closing parenthesis is sometimes attached and sometimes separated.",
+    "quote": "teke(he)\", \"sapa(ha)\", \"otopi(hi)",
+    "suggestion": "Standardize to either `teke(he)`, `sapa(ha)`, `otopi(hi)` or use spaced variants consistently if intended.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#004",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "205",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'village-POSS' does not reflect the meaning 'the Wajin's village' as the possessive relationship is between 'Wajin' and 'village'. The gloss should indicate possession for 'village'.",
+    "quote": "g=\"Wajin village-POSS\"",
+    "suggestion": "g=\"Wajin village.POSS\"",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'village-POSS' for 'kotan-u' interprets the suffix '-u' as a possessive gloss (POSS). However, the noun 'sisam' is glossed as 'Wajin' without any possessive marking. The free translation 'the Wajin's village' implies possessive relation expressed only by the head noun's possessive suffix. This is consistent with the head-marking analysis, but the gloss 'village-POSS' could be clarified as 'village-AFF' (affiliative) to avoid confusion, as the suffix is the affiliative, not a separate possessive case.",
+    "quote": "g=\"Wajin village-POSS\" tr=\"the Wajin's village\"",
+    "suggestion": "Consider changing gloss 'POSS' to 'AFF' to align with the terminology used elsewhere in the chapter (affiliative suffix).",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#031",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "331",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss `4.POSS=elder.brother-POSS` suggests that the 4th person prefix marks possession on the brother, but the free translation 'my elder brother's younger sister' implies that the 4th person refers to the speaker (first person). This creates a mismatch between the person indexing in the gloss and the intended referent.",
+    "quote": "g=\"4.POSS=elder.brother-POSS younger.sister-POSS\"",
+    "suggestion": "Revise gloss to `1SG.POSS=elder.brother-POSS` or clarify that 4th person is used deictically for the speaker in narrative context.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#035",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "94",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same as line 85: use of `V` without definition and inconsistent capitalization of `V` vs `vowel` elsewhere.",
+    "quote": "(<i lang=\"ain-Latn\">c=</i> before V)",
+    "suggestion": "Replace `V` with `vowel-initial stem`.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#034",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "85",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The parenthetical explanation uses `V` to mean vowel, but this abbreviation is not defined in the chapter and may confuse readers unfamiliar with linguistic notation.",
+    "quote": "(<i lang=\"ain-Latn\">k=</i> before V)",
+    "suggestion": "Replace `V` with `vowel-initial stem` for clarity.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#033",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "12",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form `ku=tek-ehe` uses a hyphen in the suffix, but in other places like the table (line 87), the same form is written without a hyphen as `ku=tekehe`. This creates inconsistency in hyphenation of the affiliative suffix.",
+    "quote": "ku=tek-ehe",
+    "suggestion": "Standardize to either `ku=tek-ehe` or `ku=tekehe` throughout.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#029",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "188",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note uses special characters '①' and '③-2' that are not used in the main text; these appear to be references to a classification system (likely from Nakagawa) that has not been introduced in this chapter. This is potentially confusing to the reader.",
+    "quote": "note=\"Two 1SG-possessed body-part nouns, each as the intransitive subject of arka 'be.sore'. kema 'leg/foot' is type-① (vowel-final stem) with the long affiliative suffix -ha; tek 'hand' is type-③-2 with affiliative -ehe.\"",
+    "suggestion": "Either explain the type numbers earlier or replace with descriptive terms (e.g., 'vowel-final stem' and 'consonant-final stem' as appropriate).",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#028",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "147-156",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says the long form is 'short + -hV₁', but the examples given for the long forms are 'tekehe', 'sapaha', 'otopihi'. However, the short forms are 'teke', 'sapa', 'otopi'. The addition of '-hV₁' would double the final vowel? For example, 'teke' + '-he' would give 'tekehe' (consistent), but 'sapa' + '-ha' gives 'sapaha' (consistent), and 'otopi' + '-hi' gives 'otopihi' (consistent). This is actually consistent, so no issue. But the description 'short + -hV₁' could be clarified as 'short form + -hV' where the vowel is a copy of the preceding vowel.",
+    "quote": "Each inalienable noun has two affiliative shapes: a short form ... and a long form (short + -hV₁). ... In the paradigm above, parenthesised endings mark the optional long-form extension: teke(he), sapa(ha), otopi(hi).",
+    "suggestion": "No change needed; the description is clear enough.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#027",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "134-143",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Line 142 writes 'k=ótop-i' with an acute accent on the 'o', while in the table (line 88) the same form is written 'k=otop-i' without an accent. This is an inconsistency in representing accent across the chapter.",
+    "quote": "k=ótop-i",
+    "suggestion": "Ensure consistent accent marking: either always mark it or always omit it in tables and prose for the same word.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#026",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "88",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "In the table row for 1SG, the example for 'otop' (hair) is given as 'k=otop-i' with a hyphen between the prefix and stem, and the stem-accent indicated. However, in the same table, the 1PL.EXCL row has 'c=otop-i'. The hyphenation is inconsistent with the earlier line 139-142 where the same form is written 'k=ótop-i' with acute accent. The table lacks the accent on the stem vowel for 'k=otop-i' (line 88) while line 142 has 'k=ótop-i'. This is an orthographic inconsistency.",
+    "quote": "k=otop-i",
+    "suggestion": "Add the acute accent to 'k=otop-i' to match line 142: 'k=ótop-i'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "In the table, the prefix form is given as 'ku= (k= before V)'. However, in the same table, the 2SG form is simply 'e=' with no allomorph indicated, but in line 103 it appears as 'e=' which is consistent as 'e=' does not have a pre-vocalic variant like 'ku=' does. This is not an error but a potential inconsistency in presentation: the table includes the allomorph note for 1SG but not for other prefixes that also have pre-vocalic variants (e.g., 'ci=' becomes 'c='). The note for 'ci=' is given in lines 94-95, so this is partially consistent, but the table layout could be improved.",
+    "quote": "ku= (k= before V)",
+    "suggestion": "No change needed if the allomorph is only noted where needed, but consider adding a general note.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#024",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "292-295",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The '‹contested›' tag applies to the structural constraint claim, but the sentence already presents the two sides of the debate (Tamura vs. Nakagawa). The tag is therefore redundant and may be meant to indicate that the debate is ongoing, not that Nakagawa's specific claim is contested.",
+    "quote": "the older analysis requires a specific referential possessor <Ref k=\"tamura2000\" paren />, while Nakagawa 2024: 227–233 argues the constraint is structural — the affiliative appears wherever a person prefix or relative-clause configuration demands it, regardless of possessor specificity ‹contested›.",
+    "suggestion": "Rephrase to '‹contested›' could be placed earlier or omitted, as the sentence already conveys the contested nature.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#022",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "17",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The tag '‹consensus›' is attached to a claim citing only two sources (Nakagawa 2024 and Bugaeva 2021). This is a reasonable number of sources, but the tag 'consensus' may slightly overstate it, as two sources do not necessarily constitute a consensus.",
+    "quote": "‹consensus›",
+    "suggestion": "Consider changing to '‹corpus-confirmed›' or just removing the tag, as the claim is standard.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#017",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "359",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">ku=kor</i>, <i lang=\"ain-Latn\">seta</i>, <i lang=\"ain-Latn\">hure</i>, <i lang=\"ain-Latn\">toan</i>, <i lang=\"ain-Latn\">kur</i>, <i lang=\"ain-Latn\">kor</i>, <i lang=\"ain-Latn\">cape</i>, and <i lang=\"ain-Latn\">retar</i> are missing their closing italics tags.",
+    "quote": "m=\"ku=kor seta hure toan kur kor cape retar\"",
+    "suggestion": "m=\"<i lang=\"ain-Latn\">ku=kor</i> <i lang=\"ain-Latn\">seta</i> <i lang=\"ain-Latn\">hure</i> <i lang=\"ain-Latn\">toan</i> <i lang=\"ain-Latn\">kur</i> <i lang=\"ain-Latn\">kor</i> <i lang=\"ain-Latn\">cape</i> <i lang=\"ain-Latn\">retar</i>\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'have' is not italicized, while other Ainu terms are.",
+    "quote": "g=\"1SG.A=have dog be.red that person have cat be.white\"",
+    "suggestion": "have",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#016",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "354",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'uninflected' is not italicized, while other Ainu terms are.",
+    "quote": "remaining in the concept\n(uninflected) form",
+    "suggestion": "uninflected",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#015",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "336",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'yup' and 'tures' are not italicized.",
+    "quote": "Each noun enters the affiliative construction independently: yup 'elder brother' with affiliative -ihi (type-③-1); tures 'younger sister' with affiliative -ihi (type-③-1).",
+    "suggestion": "yup",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'yup' and 'tures' are not italicized.",
+    "quote": "Each noun enters the affiliative construction independently: yup 'elder brother' with affiliative -ihi (type-③-1); tures 'younger sister' with affiliative -ihi (type-③-1).",
+    "suggestion": "tures",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#014",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "330",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words <i lang=\"ain-Latn\">yup-ihi</i> and <i lang=\"ain-Latn\">tures-ihi</i> are missing their closing italics tags.",
+    "quote": "m=\"a=yup-ihi tures-ihi\"",
+    "suggestion": "m=\"<i lang=\"ain-Latn\">a=yup-ihi</i> <i lang=\"ain-Latn\">tures-ihi</i>\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#013",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "325",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'third-person' is not italicized, while other Ainu terms are.",
+    "quote": "marked by a zero third-person",
+    "suggestion": "third-person",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#012",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "312",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <A w=\"utar\" gl=\"family, kin, companions\" /> is not italicized.",
+    "quote": "<A w=\"utar\" gl=\"family, kin, companions\" /> has an affiliative form",
+    "suggestion": "<i lang=\"ain-Latn\">utar</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">utari(hi)</i> is missing its closing italics tag.",
+    "quote": "<i lang=\"ain-Latn\">utari(hi)</i>",
+    "suggestion": "<i lang=\"ain-Latn\">utari(hi)</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">utar</i> is missing its closing italics tag.",
+    "quote": "Nakagawa 2024: 251–252 on the behaviour of <i lang=\"ain-Latn\">utar</i> in narrative ‹contested›.",
+    "suggestion": "<i lang=\"ain-Latn\">utar</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#011",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "285",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">kor</i> is not italicized.",
+    "quote": "typically alienable and takes <i lang=\"ain-Latn\">kor</i>, but a trap-bow is affiliative",
+    "suggestion": "<i lang=\"ain-Latn\">kor</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">kuwehe</i> is missing its closing italics tag.",
+    "quote": "(<i lang=\"ain-Latn\">kuwehe</i>)",
+    "suggestion": "<i lang=\"ain-Latn\">kuwehe</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word <i lang=\"ain-Latn\">kor</i> is not italicized.",
+    "quote": "with <i lang=\"ain-Latn\">kor</i>",
+    "suggestion": "<i lang=\"ain-Latn\">kor</i>",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#010",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "275",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">huraha</i> is missing its closing italics tag.",
+    "quote": "<i lang=\"ain-Latn\">atay : ataye</i> 'price'; <i lang=\"ain-Latn\">hura : huraha</i>",
+    "suggestion": "<i lang=\"ain-Latn\">huraha</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">kotanuhu</i> is missing its closing italics tag.",
+    "quote": "'smell'; <i lang=\"ain-Latn\">kotan : kotanuhu</i> 'village'",
+    "suggestion": "<i lang=\"ain-Latn\">kotanuhu</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#009",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "267",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">cisehe</i> is missing its closing italics tag.",
+    "quote": "<i lang=\"ain-Latn\">ohaw : ohawe</i> 'nettle stew'; <i lang=\"ain-Latn\">cise : cisehe</i>",
+    "suggestion": "<i lang=\"ain-Latn\">cisehe</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#008",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "259",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">macihi</i> is missing its closing italics tag.",
+    "quote": "<i lang=\"ain-Latn\">yup : yupihi</i> 'elder brother'; <i lang=\"ain-Latn\">mat : macihi</i>",
+    "suggestion": "<i lang=\"ain-Latn\">macihi</i>",
+    "confidence": 0.9
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">poho</i> is missing its closing italics tag.",
+    "quote": "'wife'; <i lang=\"ain-Latn\">po : poho</i> 'son'",
+    "suggestion": "<i lang=\"ain-Latn\">poho</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#007",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "248",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">atuhu</i> is missing its closing italics tag.",
+    "quote": "<i lang=\"ain-Latn\">nit : nicihi</i> 'spear shaft'; <i lang=\"ain-Latn\">at : atuhu</i>",
+    "suggestion": "<i lang=\"ain-Latn\">atuhu</i>",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#003",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "177-178",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'plain possessed noun' is not italicized, while other Ainu terms are.",
+    "quote": "the affiliative <i lang=\"ain-Latn\">haw-e</i> is independently attested as a\nplain possessed noun at <Ref k=\"nakagawa2024\" p=\"258\" />.",
+    "suggestion": "plain possessed noun",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#001",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "139-142",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example <i lang=\"ain-Latn\">k=ótop-i</i> shows the accent on the first stem vowel, but the preceding text states the accent is on the first stem vowel. This is redundant.",
+    "quote": "Before a vowel-initial stem, <i lang=\"ain-Latn\">ku=</i>\nreduces to <i lang=\"ain-Latn\">k=</i> and <i lang=\"ain-Latn\">ci=</i> to\n<i lang=\"ain-Latn\">c=</i>, with the accent on the first stem vowel:\n<i lang=\"ain-Latn\">k=ótop-i</i>",
+    "suggestion": "Remove 'with the accent on the first stem vowel:' from the sentence.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#032",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "359",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss `1SG.A=have dog be.red that person have cat be.white` uses `kur kor` for third person, but the morpheme line has `kur kor`, suggesting two forms where only one (`kor`) is expected for 3SG. The prefix `ku=` is used for 1SG, but no prefix appears on `kur`, creating inconsistency.",
+    "quote": "ku=kor seta hure toan kur kor cape retar",
+    "suggestion": "Either revise morpheme line to `ku=kor ... Ø=kor` or adjust gloss to `3SG.A=have` for consistency with zero-marking convention.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#030",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "173",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The example includes `e=haw-e` glossed as a 2SG-possessed noun, but the free translation 'don't raise your voice' implies a 2SG object, while the glossing system elsewhere uses `e=` for 2SG subject (A) prefixes. This creates ambiguity about whether the possessive prefix here is correctly aligned with person marking on nouns versus verbs.",
+    "quote": "iteki [[e=haw-e] aste]",
+    "suggestion": "Clarify in the note or gloss whether the prefix `e=` on the noun follows the same paradigm as verbal subject prefixes, or if alignment differs in possessive NPs.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#025",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "386-389",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The evidence grade '‹corpus-suggested›' is appropriate for a suggestion based on corpus data. However, the claim is attributed to Bugaeva (2021), which is a single source. The tag '‹corpus-suggested›' may overstate the strength of the evidence if it is only a suggestion from one paper.",
+    "quote": "Bugaeva (2021) reads this as an in-progress shift ... ‹corpus-suggested›",
+    "suggestion": "No action needed if the corpus evidence is clear; but if the claim is speculative, consider changing to '‹speculative›'.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#023",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "286-290",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim that a trap-bow can also take 'kor' is referenced to Nakagawa 2024: 229. However, the evidence grade '‹contested›' suggests the claim is disputed, but the single citation to Nakagawa does not clearly indicate a controversy. The conflicting claims within the same sentence (one part says the trap-bow is affiliative, the other says it can also be with 'kor') are presented without clear resolution, and the tag '‹contested›' may refer to the broader debate about the triggering condition, not this specific claim.",
+    "quote": "yet the same trap-bow can also be expressed with <i lang=\"ain-Latn\">kor</i> when framed as an ordinary transferable object <Ref k=\"nakagawa2024\" p=\"229\" /> ‹contested›.",
+    "suggestion": "Clarify the source of the controversy, or provide additional citations for the 'kor' option. Consider moving the '‹contested›' tag to the subsequent sentence about the broader debate.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#021",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "310-317",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about 'utar' having an affiliative form is attributed to a Discord discussion and Nakagawa 2024: 251–252. However, the Discord source is inherently weak, and the cited Nakagawa pages may not fully support the claim as stated. The epistemic tag '‹contested›' inflates the certainty of the source.",
+    "quote": "‹contested›",
+    "suggestion": "Change the epistemic tag to '‹speculative›' or '‹original-needs-review›' given the reliance on a Discord source.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#020",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "170-178",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about the parsed example is graded as '‹contested›' but relies solely on a Discord message (a weak source) with a 'proposed parse'. The citation to Nakagawa 2024 supporting the independent attestation of 'haw-e' does not support the parsing claim, so the overall evidence for the contested parse is thin.",
+    "quote": "‹contested› <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2025-12-03, proposed parse; the affiliative <i lang=\"ain-Latn\">haw-e</i> is independently attested as a plain possessed noun at <Ref k=\"nakagawa2024\" p=\"258\" />).",
+    "suggestion": "Reclassify the claim as '‹speculative›' or remove it if not sufficiently supported.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#019",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "310-317",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The entire paragraph reads as a meta-comment about a community debate, not an established grammatical description. This is more appropriate for an acknowledgments section or a footnote.",
+    "quote": "Community discussion in the aynu-corpora Discord ... proposes that the companion/group noun ... has an affiliative form ... on the grounds that a group of companions is hard to conceive without a relational anchor",
+    "suggestion": "Either remove the paragraph or move it to a footnote with an explicit note that it represents a proposal from community discussion.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#018",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "170-178",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'proposed as' suggests a tentative or unofficial interpretation, which is more appropriate for a research note than a definitive grammar. Combined with the overt citation of a Discord source with a proposed parse, this reads as a comment on the production process rather than established fact.",
+    "quote": "proposed as 'don't raise your voice'",
+    "suggestion": "Remove 'proposed as' and rephrase to a neutral statement, or move this to a footnote.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The evidence grade '‹contested›' appears in prose along with a Discord citation, which is already a weak source. The contested tag is redundant and gives the impression of an unresolved editorial note rather than a scholarly caveat.",
+    "quote": "‹contested›",
+    "suggestion": "Remove '‹contested›' since the contested nature is already conveyed by the Discord citation and the word 'proposed'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "adnominal-possession-double-marking~p1#005",
+  "chapter": "adnominal-possession-double-marking",
+  "lines": "213",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'lord descendant-POSS prosper' does not fully capture the meaning of the free translation 'The descendants of Lord Ikuresuye will prosper.' The gloss should indicate that 'descendant' is possessed by 'Lord Ikuresuye'.",
+    "quote": "tr=\"The descendants of Lord Ikuresuye will prosper.\"",
+    "suggestion": "g=\"Ikuresuye lord descendant.POSS prosper\"",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

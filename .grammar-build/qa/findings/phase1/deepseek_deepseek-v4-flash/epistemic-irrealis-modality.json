@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "113-114",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "In the corpus the form returns 1,977 tokens at rank 108 — the highest frequency among the modal auxiliaries",
+  "issue": "The specific token count and rank are given without any attached citation or source. Neither the preceding reference tags (line 15) nor any nearby tag support this quantitative claim.",
+  "suggestion": "Add a citation for the corpus data, e.g., <Ref k=\"icls2024\" /> or a note indicating the corpus source.",
+  "confidence": 0.8,
+  "chapter": "epistemic-irrealis-modality",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "198",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa documents all three at 2024: 435, §14.1.2 (exx.966–969); Satō at 2008: 85–86.",
+  "issue": "The citation format mixes plain text with page references, unlike the rest of the chapter which uses <Ref> tags. It should be formatted as 'Nakagawa (2024: 435, §14.1.2)' and 'Satō (2008: 85–86)' or use <Ref> tags.",
+  "suggestion": "Replace with proper parenthetical citations: 'Nakagawa (2024: 435, §14.1.2); Satō (2008: 85–86)' or insert <Ref k=\"nakagawa2024\" p=\"435\" /> and <Ref k=\"sato2008\" p=\"85-86\" />.",
+  "confidence": 0.9,
+  "chapter": "epistemic-irrealis-modality",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "133-135",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "iteki … somo eci=ki nankor na 'you had better not not do it'",
+  "issue": "The translation 'you had better not not do it' is awkward and potentially confusing. The intended meaning is a double negative (do not not do it), but a simpler rendering like 'you had better do it' would be clearer.",
+  "suggestion": "Simplify to 'you had better do it' or add a clarifying note about the double negation.",
+  "confidence": 0.6,
+  "chapter": "epistemic-irrealis-modality",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "289",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "the claim that they carry the stated meanings rests on Nakagawa's documented paradigm ‹corpus-suggested›",
+  "issue": "The epistemic tag '‹corpus-suggested›' is used for claims about forms (oasi, etokus, etokoyki) for which no corpus examples are available (as stated in lines 287-288). The grading may be inflated; '‹speculative›' or '‹original-needs-review›' would be more appropriate.",
+  "suggestion": "Change the tag to '‹speculative›' to reflect the lack of corpus support for these forms.",
+  "confidence": 0.5,
+  "chapter": "epistemic-irrealis-modality",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

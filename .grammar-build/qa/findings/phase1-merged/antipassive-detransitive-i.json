@@ -1,0 +1,866 @@
+[
+ {
+  "id": "antipassive-detransitive-i~p1#029",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "364",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'factbase evidence' and 'requires editorial review' are meta-commentary related to the production of the grammar, not content for the reader. The sentence also mentions 'goes beyond any single cited source', which is a statement about the author's process.",
+    "quote": "This synthesis is tied to the factbase evidence for the residual distribution and Nam's phonological argument and requires editorial review; it goes beyond any single cited source.",
+    "suggestion": "Rephrase to focus on the content and evidence, e.g., 'This synthesis is supported by evidence of residual distribution and Nam's phonological argument, and represents a novel interpretation that synthesizes multiple sources.'",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a note to the editors, not to the reader. 'factbase' is a pipeline term, and 'requires editorial review' is a meta-instruction.",
+    "quote": "This synthesis is tied to the factbase evidence for the residual distribution and Nam's phonological argument and requires editorial review; it goes beyond any single cited source.",
+    "suggestion": "Remove or rewrite as a substantive claim with appropriate epistemic grading, e.g., 'This synthesis draws on the residual distribution and Nam's phonological argument, but it goes beyond any single cited source and is therefore graded ‹speculative›.'",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The terms 'factbase' and 'requires editorial review' are pipeline register leaks, exposing internal editorial workflow rather than being part of the scholarly narrative.",
+    "quote": "This synthesis is tied to the factbase evidence for the residual distribution and Nam's phonological argument and requires editorial review; it goes beyond any single cited source.",
+    "suggestion": "Rephrase to: 'This synthesis draws on corpus evidence for the residual distribution and Nam's phonological argument and is not directly supported by any single cited source.'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#007",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "100",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'i-e' is presented as the base for 'ipe', but the gloss for 'e' is 'eat sth', while 'ipe' is glossed as 'food; eat a meal'. This implies a semantic shift and nominalization that isn't explicitly explained in the table.",
+    "quote": "<td><i lang=\"ain-Latn\">e</i> 'eat sth'</td>\n<td><i lang=\"ain-Latn\">ipe</i> (&lt; <i lang=\"ain-Latn\">i-e</i>)</td>",
+    "suggestion": "Add a brief note in the table or in the surrounding text explaining the semantic shift and nominalization from 'eat sth' to 'food; eat a meal' for 'ipe'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The surface form 'ipe' lacks a hyphen, while the reconstructed form 'i-e' includes one, creating inconsistency in hyphenation for the same morphological pattern as in line 88.",
+    "quote": "ipe (&lt; i-e)",
+    "suggestion": "Write as 'i-pe' to maintain consistent hyphenation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#006",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "88",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The form 'i-nukar' is presented as the base for 'inkar', but the gloss for 'nukar' is 'see/look at sth', while 'inkar' is glossed as 'gaze, look'. This implies a semantic shift that isn't explicitly explained in the table.",
+    "quote": "<td><i lang=\"ain-Latn\">nukar</i> 'see/look at sth'</td>\n<td><i lang=\"ain-Latn\">inkar</i> (&lt; <i lang=\"ain-Latn\">i-nukar</i>)</td>",
+    "suggestion": "Add a brief note in the table or in the surrounding text explaining the semantic shift from 'see/look at sth' to 'gaze, look' for 'inkar'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'inkar' is written without hyphens, while the reconstructed form 'i-nukar' includes a hyphen. This creates a hyphenation inconsistency for the same morphological form within the same table cell.",
+    "quote": "inkar (&lt; i-nukar)",
+    "suggestion": "Write as 'i-nkar' to maintain consistent hyphenation with 'i-nukar'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#035",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "347",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This phrase addresses the production process (what sources were read) rather than the reader. It should be rephrased to state the fact without referencing the grammar's research process.",
+    "quote": "Since Bugaeva (2010) is not read directly for this grammar",
+    "suggestion": "Rephrase to something like 'Bugaeva (2010) is not available for direct consultation in this study, so the analysis is based on secondary reports' or simply remove the meta-commentary.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'not read directly for this grammar' is a pipeline register leak, referring to the book's internal research process rather than the linguistic content.",
+    "quote": "Since Bugaeva (2010) is not read directly for this grammar, and since the competing segmentation ik-ka vs. i-kV-ka cannot be decided from the surface form alone, the fossil analysis is graded ‹contested›.",
+    "suggestion": "Rephrase to: 'Since Bugaeva (2010) is not available in full, and since the competing segmentation...'",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#021",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "301",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'sources read directly for this grammar' is meta-commentary about the research process rather than prose for the reader. It suggests the author's personal research process rather than presenting established knowledge.",
+    "quote": "Three accounts of the historical source of antipassive <i lang=\"ain-Latn\">i-</i> are in active competition, and none is settled in the sources read directly for this grammar.",
+    "suggestion": "Rephrase to something like 'and none is settled in the available literature' or 'and none is settled according to current scholarship'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'sources read directly for this grammar' addresses the production process rather than the reader. It is a meta-commentary on the research methodology.",
+    "quote": "Three accounts of the historical source of antipassive i- are in active competition, and none is settled in the sources read directly for this grammar.",
+    "suggestion": "Rephrase to something like 'Three accounts are in active competition, and none is settled in the available literature.'",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#038",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "341-355",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The section presents Bugaeva's analysis of ikka as i-kV-ka, but earlier in the chapter (line 89) 'inkar' is presented as i-nukar with phonological fusion. Yet here, 'i-kV-ka' is treated as recoverable, despite similar phonological opacity. This is inconsistent: if inkar has undergone fusion and is lexicalized, so might ikka, yet the text treats ikka's structure as debatable while inkar's is accepted.",
+    "quote": "The transitive verb <A w=\"ikka\" gl=\"steal, take by stealth\" /> has been analyzed as i-kV-ka... This analysis is attributed to Bugaeva (2010) by nukopoli... Vovin's competing reconstruction of Proto-Ainu *ihka for the same root implies no antipassive layer...",
+    "suggestion": "Acknowledge the parallel degree of opacity between inkar and ikka and adjust the confidence in either analysis accordingly.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#034",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "42-50",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss marks =an as fourth person (4.S), but the translation uses first person 'I'. If =an is fourth person, the translation should not be 'I' unless explained. The note says both =an tokens carry fourth-person S reference, yet the translation uses 'I'.",
+    "quote": "m=\"i-ri=an wa or-o wa sini=an na\" g=\"ANTIP-skin=4.S CONJ place-POSS from rest=4.S FIN\" tr=\"I will skin the catch and then rest.\"",
+    "suggestion": "Change translation to use fourth person (e.g., 'One will skin the catch and then rest') or add a note explaining that fourth person is used logophorically for first person in this context.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#033",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "14-15, 256-257",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Line 14 glosses =an as fourth person (4.S), but line 256-257 states it carries first-person-singular reference in narrative context, without explanation of the shift. This is a direct contradiction in the person value assigned to the same morpheme.",
+    "quote": "suffixal S indexes — =as (1PL.EXCL.S) and =an (4.S) … the suffixal =an carries logophoric first-person-singular reference in the narrative context",
+    "suggestion": "Either consistently gloss =an as 4.S and adjust the translation in line 256-257 to reflect fourth person, or explain that fourth person can be used logophorically for first person and adjust the gloss in line 14 accordingly.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#032",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "391",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation includes both a direct attribution to a Discord user and a reference to the general 'aynucorporadiscord' source. This is redundant.",
+    "quote": "(nukopoli, aynu-corpora Discord 2023-12-08) <Ref k=\"aynucorporadiscord\" />.",
+    "suggestion": "Remove the redundant '<Ref k=\"aynucorporadiscord\" />' citation.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#031",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "381",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of '<span class=\"sc\">RES</span>' and '<span class=\"sc\">ANTIP</span>' as abbreviations is not explicitly defined in the text. While 'ANTIP' is inferable from the chapter's topic, 'RES' for 'object-resultative' is less obvious.",
+    "quote": "The Handbook glosses the latter object-resultative (<span class=\"sc\">RES</span>) where this chapter's analysis uses <span class=\"sc\">ANTIP</span>",
+    "suggestion": "Define these abbreviations when they are first introduced, or spell them out in full.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#030",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "371",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'affected side' is used here. Earlier in the chapter, 'Patient' (lines 197, 317) and 'object' (lines 8, 233) are used to refer to the argument that is demoted or suppressed. 'Affected side' is a new term.",
+    "quote": "The middle prefix <i lang=\"ain-Latn\">ci-</i>, treated in full in <Xr ch=\"middle-anticausative-passive\" />, likewise reduces arity by one but from the affected side: it presents an event as experienced by the Patient rather than suppressing the Patient from the frame.",
+    "suggestion": "Standardize the terminology. Use 'Patient' or 'object' consistently, or ensure 'affected side' is clearly defined in context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#028",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "360",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'i-mak' is 'behind'. The text states it's a 'ritual 'thing/place' reading'. This implies that 'i-mak' itself has a generic-noun origin, similar to 'i-omante'. The gloss should reflect this if it's part of the argument.",
+    "quote": "and ritual 'thing/place' readings (<i lang=\"ain-Latn\">i-omante</i>, <i lang=\"ain-Latn\">i-mak</i> 'behind') — fits the generic-noun hypothesis better than the pronoun-first account, since a grammaticalized human pronoun would be expected to bias the antipassive toward human Patients rather than generating the observed range",
+    "suggestion": "Clarify the gloss for 'i-mak' to indicate its potential generic-noun origin if that is relevant to the argument being made.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#027",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "355",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The forms 'inkar' and 'ipe' are presented as lexicalized antipassives. This is consistent with the table and surrounding text. However, the text implies that 'ikka' also parallels these at a 'deeper historical stratum'. This connection could be made clearer.",
+    "quote": "If the Bugaeva/community segmentation is correct, <i lang=\"ain-Latn\">ikka</i> parallels the lexicalized antipassives <i lang=\"ain-Latn\">inkar</i> and <i lang=\"ain-Latn\">ipe</i> at a deeper historical stratum where the causative has since merged with the root ‹speculative›.",
+    "suggestion": "Ensure the connection between 'ikka' and the other lexicalized antipassives is explicitly stated as a historical parallel, and that the 'deeper historical stratum' concept is well-supported by the cited sources.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#026",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "348",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The segmentation <i lang=\"ain-Latn\">i-kV-ka</i> is used, where 'kV' is a placeholder for the root 'steal'. The gloss in the example (line 342) uses 'steal' directly. This inconsistency between the placeholder in the text and the root in the gloss could be confusing.",
+    "quote": "since the competing segmentation <i lang=\"ain-Latn\">ik-ka</i> vs. <i lang=\"ain-Latn\">i-kV-ka</i> cannot be decided from the surface form alone, the fossil analysis is graded ‹contested›.",
+    "suggestion": "Either use 'steal' consistently in the text when referring to the root, or use 'kV' in the gloss as well, with a note explaining its placeholder status.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#025",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "342",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'ANTIP-steal-CAUS' for 'i-kV-ka' is consistent with the text. However, the text states that 'ikka' is analyzed as 'i-kV-ka', implying that 'kV' represents the root 'steal'. The gloss should reflect this more directly.",
+    "quote": "<i lang=\"ain-Latn\">i-kV-ka</i> (ANTIP-steal-CAUS), a frozen antipassive re-transitivized by the direct causative suffix <i lang=\"ain-Latn\">-ka</i>, synchronically opaque but historically preserving the derivational layer.",
+    "suggestion": "Change the gloss to 'ANTIP-steal-CAUS' to explicitly show 'steal' as the root, or clarify that 'kV' is a placeholder for the root 'steal'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2010) is provided twice, once via the Discord community and once directly. This is redundant.",
+    "quote": "This analysis is attributed to Bugaeva (2010) by nukopoli in the aynu-corpora Discord community (nukopoli, aynu-corpora Discord 2026-05-19) <Ref k=\"aynucorporadiscord\" />; <Ref k=\"bugaeva2010\" />.",
+    "suggestion": "Remove the redundant citation for Bugaeva (2010).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#024",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "328",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The possessed suffix is written as '<i lang=\"ain-Latn\">-hV</i>/<i lang=\"ain-Latn\">-VhV</i>'. The 'h' appears to be missing a hyphen, suggesting it's part of the suffix, not a separate element. The use of '<i lang=\"ain-Latn\">-hV</i>' implies a stem followed by '-hV'.",
+    "quote": "the clause-final nominalizer <i lang=\"ain-Latn\">i</i> (&lt; *<i lang=\"ain-Latn\">ihi</i>), and the possessed suffix <i lang=\"ain-Latn\">-​hV</i>/<i lang=\"ain-Latn\">-​VhV</i>, he reconstructs",
+    "suggestion": "Ensure the hyphenation is consistent for suffixes, e.g., '<i lang=\"ain-Latn\">*-hV</i>' or '<i lang=\"ain-Latn\">*-VhV</i>' if these are the reconstructed forms.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'preserved the h' and then 'word-initial *h was subsequently lost'. This implies that the 'h' was present initially and then lost. The reconstruction *<i lang=\"ain-Latn\">hi</i> suggests an initial 'h'. The explanation could be clearer about the sequence of events.",
+    "quote": "The initial consonant was lost through the accumulated phonological effect of a long incorporation history: incorporated noun-stems that are word-initial rarely follow a vowel, which would have preserved the h, and word-initial *<i lang=\"ain-Latn\">h</i> was subsequently lost in that position.",
+    "suggestion": "Clarify the phonological process: was the 'h' lost before or after the incorporation? The current phrasing suggests it was lost *after* incorporation, which might be counterintuitive if the 'h' was part of the original noun.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#023",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "316",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses for 'he-' and 'ho-' are 'head' and 'bottom' respectively. These are typically nouns. If they are prefixes, their glosses should reflect their function as prefixes, e.g., 'head-prefix' or 'bottom-prefix'.",
+    "quote": "the body-part prefixes <i lang=\"ain-Latn\">he-</i> 'head' and <i lang=\"ain-Latn\">ho-</i> 'bottom' arose from incorporated body-part nouns.",
+    "suggestion": "Clarify if 'he-' and 'ho-' are prefixes or incorporated nouns, and adjust the glosses accordingly.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'Patient-demoting' is used here. Earlier, 'detransitivizing' (line 8) and 'object-demoting' (line 308) were used. For consistency, one term should be preferred.",
+    "quote": "Once the incorporated generic noun grammaticalized into a Patient-demoting voice morpheme, the antipassive form — superficially resembling the pronoun — extended to unspecified speech-act participants, and this extension gave rise to the clitic <i lang=\"ain-Latn\">i=</i>.",
+    "suggestion": "Standardize the terminology. Use 'detransitivizing' or 'object-demoting' consistently, or ensure 'Patient-demoting' is clearly defined or understood in context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#022",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "308",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'object-demoting' is used here. Earlier in the chapter, 'detransitivizing' (line 8) and 'Patient-demoting' (line 317) are used. While related, 'object-demoting' is a new phrasing.",
+    "quote": "the clitic was grammaticalized into a derivational voice prefix as its object-demoting function became conventionalized",
+    "suggestion": "Standardize the terminology. Either use 'detransitivizing' or 'Patient-demoting' consistently, or ensure 'object-demoting' is clearly defined or understood in context.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#020",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "280",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'APPL-ANTIP-help' for 'e-i-kasuy' is consistent with the surrounding text. However, the free translation 'A young man who came from Tokachi helped with the work' implies that 'work' is the object of 'help'. The note clarifies that 'monrayke' (matter, work) specifies what the helping is directed at, and the human Patient is suppressed. The gloss could be more explicit about this.",
+    "quote": "g=\"Tokachi from come young man matter APPL-ANTIP-help\"",
+    "suggestion": "Consider adding a gloss for 'monrayke' within the example's gloss line, or ensuring the note fully clarifies its role as the applied object.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#019",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for Tamura 1993[1979] is unusual, with the year in brackets. While this might indicate a republication date, it's inconsistent with the standard citation format used elsewhere in the chapter.",
+    "quote": "The latter form is attested in a Saru oral narrative (Tamura 1993[1979]: 6, cited via Bugaeva 2021: 219 in Nam 2021: 62) and constitutes the core corpus evidence that the Person-Affix test extends to real discourse contexts, not only constructed elicitation.",
+    "suggestion": "Standardize the citation format for Tamura 1993[1979] to match other citations, e.g., 'Tamura 1979' or 'Tamura 1993' depending on which date is primary.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#018",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "256",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss in the example (line 44) for '=an' is '4.S' (fourth-person singular subject). The note here states it carries 'logophoric first-person-singular reference'. This is a direct contradiction regarding the person and number reference of '=an'.",
+    "quote": "the suffixal <i lang=\"ain-Latn\">=an</i> carries logophoric first-person-singular reference in the narrative context.",
+    "suggestion": "Correct the gloss in the example (line 44) to reflect '1.S' if the note is accurate, or correct the note to reflect '4.S' if the gloss is accurate. Given the context of the example and the note on line 49, it's more likely the note on line 256 is incorrect.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#017",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "238",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">i-nu=an</i> is 'ANTIP-hear=4.S'. The gloss for <i lang=\"ain-Latn\">a=i=nu</i> is '4.A=4.O=hear'. The note clarifies that the <i lang=\"ain-Latn\">i=</i> in the second example is the object clitic. However, the gloss for <i lang=\"ain-Latn\">i-nu=an</i> doesn't explicitly state that the 'i-' is the antipassive prefix, relying on the surrounding text for that information.",
+    "quote": "A minimal diagnostic: <i lang=\"ain-Latn\">i-nu=an</i> (ANTIP-hear=4.S) is intransitive, proven by the suffixal <i lang=\"ain-Latn\">=an</i>; while <i lang=\"ain-Latn\">a=i=nu</i> (4.A=4.O=hear) is transitive and the <i lang=\"ain-Latn\">i=</i> there is the object clitic, not the antipassive prefix",
+    "suggestion": "Consider adding 'ANTIP-' to the gloss for <i lang=\"ain-Latn\">i-nu=an</i> to make the distinction clearer within the example itself, e.g., 'ANTIP-hear=4.S'.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text mentions 'applicative e-' and 'affiliative e-'. It's unclear if these are distinct prefixes with the same form or if 'affiliative' is a description of one of the functions of 'e-'. The hyphenation suggests they are distinct morphemes.",
+    "quote": "The arity computation — the same instrument that distinguishes applicative <i lang=\"ain-Latn\">e-</i> from affiliative <i lang=\"ain-Latn\">e-</i> and from the second-person clitic <i lang=\"ain-Latn\">e=</i> — is the sole disambiguating tool in both cases",
+    "suggestion": "Clarify the distinction between 'applicative e-' and 'affiliative e-', perhaps by providing separate examples or explanations if they are indeed different morphemes.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#016",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "226",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'fourth-person' is presented as a cross-reference link. While this is functional, it's unusual to have a cross-reference link within a descriptive phrase like this. Typically, cross-references are used for section titles or specific terms being defined.",
+    "quote": "the <Xr ch=\"indefinite-fourth-person-paradigm\">fourth-person</Xr> object clitic <i lang=\"ain-Latn\">i=</i> is a person index belonging to the transitive object paradigm.",
+    "suggestion": "Remove the cross-reference link from 'fourth-person' and ensure the term is clear from context or defined elsewhere.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#015",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "206",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The quote from Ijäs is presented as a direct translation of her characterization. However, the chapter generally translates Ainu terms and concepts, not descriptions from secondary sources unless they are being directly quoted and attributed. It's unclear if 'thing/place' is a direct translation or a summary.",
+    "quote": "her characterization — the prefix 'takes the place of the object and fills it with a generic meaning of thing/place' — renders Bugaeva's substance accurately",
+    "suggestion": "Clarify whether 'thing/place' is a direct quote or a summary of Ijäs's characterization. If it's a direct quote, it should be marked as such. If it's a summary, it should be phrased as such.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#014",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "202",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 逆受動態 is provided with an English translation 'antipassive'. As with other instances of foreign language terms, this could be removed if the English term is sufficient and consistent with the chapter's style.",
+    "quote": "Nakagawa endorses this reanalysis, noting that the term 逆受動態 (antipassive) has become standard in recent work following Bugaeva, and adopts it while acknowledging the derivational tradition",
+    "suggestion": "Consider removing the Japanese term and its translation, as 'antipassive' is already established as the term used in the chapter.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#013",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "188",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese phrase '人を' is provided with an English translation 'people-as-object'. Similar to line 140, this is a foreign language term with a translation. If the chapter aims for consistency, it should either translate all such terms or provide them without translation if context is sufficient.",
+    "quote": "describing the identical prefix as derivational <i lang=\"ain-Latn\">i-</i> '人を' (people-as-object) and listing no antipassive in its voice inventory",
+    "suggestion": "Consider removing the Japanese phrase and its translation, as the meaning is conveyed by the surrounding English text.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#012",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "175",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The glosses 'amuse people' and 'make people feel humble' for 'i-newsar-ka' and 'i-oripak-ka' respectively, imply that 'people' is the object. However, the text states these are antipassivizations of the *causee*. This suggests a potential mismatch in how the object/causee is being represented in the gloss.",
+    "quote": "as <i lang=\"ain-Latn\">i-newsar-ka</i> 'amuse people' and <i lang=\"ain-Latn\">i-oripak-ka</i> 'make people feel humble' — an antipassivization of the causee rare across languages",
+    "suggestion": "Clarify the glosses to explicitly indicate that 'people' is the causee, not the direct object, if that is the intended analysis.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#011",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "164",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note explains that 'i-huraye' is intransitive and the object is suppressed. However, the gloss for 'i-huraye' in the table (line 112) is 'do the washing', which implies an object. This creates a slight tension between the table's gloss and the note's explanation of argument structure.",
+    "quote": "The antipassive i-huraye 'do the washing' is intransitive; the specific object (laundry) is inferrable from context but suppressed from the argument frame. The embedding clause ene wa poka a=reka hi ka isam means literally 'there is no way to praise her' — the conventional formula for incomparable beauty.",
+    "suggestion": "Adjust the gloss in the table to better reflect the intransitive nature, e.g., 'perform washing' or 'engage in washing'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#010",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "152",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'i-y-os(no)' is 'afterward, later'. The 'i-' prefix is described as 'fossilized residually'. It's unclear if 'i-y-os(no)' is a single lexical item or if 'i-' is a prefix and 'y-os(no)' is the root. The gloss doesn't reflect the prefix.",
+    "quote": "the adverb <i lang=\"ain-Latn\">i-mak</i> 'behind' and the particle <i lang=\"ain-Latn\">i-y-os(no)</i> 'afterward, later', where the original Patient-incorporating reading is entirely opaque",
+    "suggestion": "Clarify the morphological analysis of 'i-y-os(no)' and ensure the gloss reflects the presence of the 'i-' prefix if it's considered part of the word's derivation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#009",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "146",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The forms 'i-nukar' and 'i-e' are presented as the bases for 'inkar' and 'ipe' respectively. This is consistent with the table, but the table itself doesn't fully explain the semantic shift and nominalization that occurred.",
+    "quote": "the morphological boundary is no longer transparent: <i lang=\"ain-Latn\">inkar</i> 'gaze' (&lt; <i lang=\"ain-Latn\">i-nukar</i>) and <i lang=\"ain-Latn\">ipe</i> 'food; eat a meal' (&lt; <i lang=\"ain-Latn\">i-e</i>) have undergone",
+    "suggestion": "Ensure the explanation in the table (lines 88 and 100) is sufficient, or expand on it here if necessary.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#008",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "140",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term <span lang=\"ja\">婉曲</span> is provided with an English translation ('indirect expression'). While this is helpful, the chapter otherwise translates Ainu terms and doesn't typically provide translations for foreign language terms within the prose, relying on context or separate glosses.",
+    "quote": "— a euphemistic narrowing noted by Nakagawa as <span lang=\"ja\">婉曲</span> (indirect expression) — while <i lang=\"ain-Latn\">i-omante</i> and <i lang=\"ain-Latn\">i-carpa</i> are",
+    "suggestion": "Consider removing the Japanese term and its translation, as the meaning is clear from the context of 'euphemistic narrowing'. Alternatively, if the Japanese term is crucial, ensure it's consistently handled throughout the chapter.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#005",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "49",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that '=an' carries 'fourth-person S reference'. However, the gloss in the example (line 44) lists '=an' as '4.S', which is consistent. The note's phrasing is slightly redundant.",
+    "quote": "The intransitive suffix =an on i-ri confirms that the antipassive has intransitivized ri 'skin sth'; the Patient — the catch — is outside the argument frame. Both clause-final =an tokens carry fourth-person S reference.",
+    "suggestion": "Rephrase the note to avoid redundancy, e.g., 'Both clause-final =an tokens carry S reference for the fourth person.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#004",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "34",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphenation in 're-transitivized' (line 28) is inconsistent with 're-transitivized' used here.",
+    "quote": "→ <i lang=\"ain-Latn\">si-ko-i-ruska</i> (vi) → <i lang=\"ain-Latn\">i-ruska-re</i> (vt, 'make sb angry') → <i lang=\"ain-Latn\">ko-i-ruska-re</i> (vd) shows that",
+    "suggestion": "Change 're-transitivized' to 're-transitivized'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphenation in 're-transitivized' (line 28) is inconsistent with 're-transitivized' used here.",
+    "quote": "→ <i lang=\"ain-Latn\">i-ruska-re</i> (vt, 'make sb angry') → <i lang=\"ain-Latn\">ko-i-ruska-re</i> (vd) shows that",
+    "suggestion": "Change 're-transitivized' to 're-transitivized'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#003",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "28",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphenation in 're-transitivized' is inconsistent with 're-transitivized' used later in the same paragraph (line 31).",
+    "quote": "<i lang=\"ain-Latn\">ko-i-ruska</i> (APPL-ANTIP-be.angry at), a re-transitivized applicative of the antipassive <i lang=\"ain-Latn\">i-ruska</i> 'be angry', is well-formed, and so is the further reflexivized <i lang=\"ain-Latn\">si-ko-i-ruska</i>",
+    "suggestion": "Change 're-transitivized' to 're-transitivized'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphenation in 're-transitivized' (line 28) is inconsistent with 're-transitivized' used here.",
+    "quote": "<i lang=\"ain-Latn\">si-ko-i-ruska</i>",
+    "suggestion": "Change 're-transitivized' to 're-transitivized'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphenation in 're-transitivized' (line 28) is inconsistent with 're-transitivized' used here.",
+    "quote": "The derivational chain <i lang=\"ain-Latn\">ruska</i> (vt) → <i lang=\"ain-Latn\">i-ruska</i> (vi) → <i lang=\"ain-Latn\">ko-i-ruska</i> (vt) → <i lang=\"ain-Latn\">si-ko-i-ruska</i> (vi) → <i lang=\"ain-Latn\">i-ruska-re</i> (vt, 'make sb angry') → <i lang=\"ain-Latn\">ko-i-ruska-re</i> (vd) shows that",
+    "suggestion": "Change 're-transitivized' to 're-transitivized'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#002",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'three-place' is inconsistent with 'one-place' and 'two-place' used earlier in the sentence.",
+    "quote": "one-place intransitive, and a three-place ditransitive yields a two-place transitive <Ref k=\"nakagawa2024\" p=\"190–192\" />; <Ref k=\"bugaevakobayashi2022\" p=\"§4.2.3\" />.",
+    "suggestion": "Change 'three-place' to 'three-place'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The hyphen in 'person-affix' (line 16) is inconsistent with 'person-index' used here.",
+    "quote": "suffixal S indexes — <i lang=\"ain-Latn\">=as</i> (1PL.EXCL.S) and <i lang=\"ain-Latn\">=an</i> (4.S) — where the base transitive had taken prefixal A indexes such as <i lang=\"ain-Latn\">ci=</i> and <i lang=\"ain-Latn\">a=</i>.",
+    "suggestion": "Change 'person-affix' to 'person-index' for consistency.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#001",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "8",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for the A-word 'i-' is 'antipassive / detransitivizing prefix'. While 'antipassive' is a voice category, 'detransitivizing prefix' describes its function. It's unusual to have both a voice label and a functional description in a single gloss for a prefix.",
+    "quote": "<A w=\"i-\" gl=\"antipassive / detransitivizing prefix\" /> occupies the object",
+    "suggestion": "Consider simplifying the gloss to 'antipassive prefix' or 'detransitivizing prefix' depending on the intended emphasis, or separating the two concepts if possible.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#037",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "387-392",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is attributed solely to a Discord post and marked as ‹contested›, but the citation to Bugaeva and Kobayashi (2022) does not support the extension being proposed. The epistemic grade is appropriate, but attaching a literature citation that does not substantiate the extension creates citation hygiene issues.",
+    "quote": "A community-proposed analysis identifies a productive series of middle-voice derivatives... (nukopoli, aynu-corpora Discord 2023-12-08) <Ref k=\"aynucorporadiscord\" />. This extends the picture in <Ref k=\"bugaevakobayashi2022\" p=\"§4.2.4\" /> and is graded ‹contested› pending systematic corpus verification.",
+    "suggestion": "Clarify that Bugaeva and Kobayashi (2022) do not report this series, or remove the p=\"§4.2.4\" cite if it doesn't support the specific examples.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "antipassive-detransitive-i~p1#036",
+  "chapter": "antipassive-detransitive-i",
+  "lines": "38",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim is tagged as ‹corpus-confirmed›, but the only support is a general reference to Bugaeva and Kobayashi (2022) without a specific data source or corpus count citation. The number '655' and 'rank 264' are presented without a verifiable citation, making the evidential grade too strong for the support given.",
+    "quote": "In the corpus, iruska 'be angry' appears 655 times (rank 264), making it among the most frequent antipassive derivatives ‹corpus-confirmed›.",
+    "suggestion": "Downgrade to ‹contested› or add a specific corpus reference (e.g., Nakagawa corpus statistics) to justify ‹corpus-confirmed›.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

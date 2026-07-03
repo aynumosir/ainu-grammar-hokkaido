@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "77-79",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "eaykap occurs 1,082 times, eramiskari 464, erampewtek 454, niwkes 177, and koyaykus 154, against affirmative easkay 1,324 and amkir 143.",
+  "issue": "The order of lexical negatives listed in the sentence (eaykap, eramiskari, erampewtek, niwkes, koyaykus) does not match the order of their frequencies given (1,082; 464; 454; 177; 154), which would imply koyaykus = 154, but the actual frequency for koyaykus is stated as 154, while niwkes is 177 — the numbers are correct but the pairing via order is ambiguous and potentially misleading.",
+  "suggestion": "Explicitly pair each form with its count: e.g., 'eaykap (1,082), eramiskari (464), erampewtek (454), niwkes (177), and koyaykus (154)'",
+  "confidence": 0.95,
+  "chapter": "negation-ability-cognition-predicates",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "179",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "a=tekehe ka a=epuni ka eaykap pe ne kusu",
+  "issue": "The morpheme string includes two instances of a= (on tekehe and epuni), but the gloss '4=hand.POSS even 4.A=raise even cannot NMLZ COP because' suggests the first a= is possessive (correctly glossed as 4=) and the second as agentive (4.A=), yet the free translation 'Because I could not even raise my hand' uses first person, contradicting the 4th person gloss.",
+  "suggestion": "Check whether the example should be 1st person throughout; if so, change gloss to '1SG=hand.POSS even 1SG.A=raise even cannot NMLZ COP because'. If 4th person is correct, change translation to 'Because one could not even raise one's hand'.",
+  "confidence": 0.9,
+  "chapter": "negation-ability-cognition-predicates",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "189",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "kira=an ka apkas=an ka eaykap no cis patek a=ki kor",
+  "issue": "The gloss 'flee=4.S even walk=4.S even cannot ADV cry only 4.A=do while' assigns 4th person to both verbs, but the free translation 'Unable to flee or to walk, doing nothing but cry,' uses first person ('I'), creating a person mismatch.",
+  "suggestion": "Either change the translation to 'Unable to flee or to walk, doing nothing but cry,' with an impersonal subject, or revise the gloss to reflect 1SG if the speaker is the subject.",
+  "confidence": 0.85,
+  "chapter": "negation-ability-cognition-predicates",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "257",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "cip a=o ka eramiskari p ne korka",
+  "issue": "The morpheme 'eramiskari' is glossed as 'never' in the gloss line, but 'never' is an adverbial meaning that may not fully align with the lexical negative verb meaning 'not know'; the gloss should reflect the verb's core meaning, e.g., 'not.know' or 'have.never', to match its use as a negative experiential auxiliary.",
+  "suggestion": "Change gloss from 'never' to 'not.know' or 'have.never' to better reflect the verb's lexical meaning and usage.",
+  "confidence": 0.8,
+  "chapter": "negation-ability-cognition-predicates",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "328",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "sir-kunne kor soyne hi a=eramiskari aan ru-we somo ne",
+  "issue": "The free translation 'I had not known that he went out when night fell.' uses first person singular ('I'), but the subject of a=eramiskari is glossed as 4.A, which typically refers to a third or indefinite person, not first person.",
+  "suggestion": "Either revise the translation to 'He had not known that he went out...' or 'One had not known...', or verify if a= here indexes 1SG and adjust the gloss accordingly.",
+  "confidence": 0.85,
+  "chapter": "negation-ability-cognition-predicates",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "389",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "kuani anakne pu ari an cise ku=nukar eramuskare",
+  "issue": "The morpheme 'eramuskare' is used as a post-verbal auxiliary, but the gloss '1SG.A=see never' treats it as a separate clause-final verb; it should be glossed as an auxiliary, e.g., 'see never' or 'see not.know', to reflect its syntactic role.",
+  "suggestion": "Revise gloss to '1SG.A=see have.never' or '1SG.A=see not.know' to align with its auxiliary function.",
+  "confidence": 0.75,
+  "chapter": "negation-ability-cognition-predicates",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "120-124",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "eramiskari, with eramuskari recorded for a single Nibutani speaker and eramuskare in Ishikari; erampewtek appears as erampetek elsewhere",
+  "issue": "The variant forms are given without consistent macron marking: eramuskari vs. eramuskare — if the final vowel differs in length, it should be marked; otherwise, orthographic consistency is needed.",
+  "suggestion": "Standardize macron usage: e.g., eramuskari, eramuskare → eramuskarī / eramuskarē if vowel length is contrastive, or use consistent unmarked forms if not.",
+  "confidence": 0.6,
+  "chapter": "negation-ability-cognition-predicates",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "390",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "1SG TOP storehouse QUOT exist house 1SG.A=see never",
+  "issue": "The gloss 'an cise' is rendered as 'house', but earlier in the note it is explained as part of 'pu ari an cise' meaning 'a building called a pu (storehouse)'; thus 'an cise' should not be glossed as 'house' independently, as it may misrepresent the compound noun.",
+  "suggestion": "Revise gloss to avoid isolating 'an cise' as 'house'; instead, treat 'pu ari an cise' as a unit or gloss 'an cise' as 'called building' or similar.",
+  "confidence": 0.7,
+  "chapter": "negation-ability-cognition-predicates",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

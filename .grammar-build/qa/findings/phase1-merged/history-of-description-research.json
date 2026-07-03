@@ -1,0 +1,1290 @@
+[
+ {
+  "id": "history-of-description-research~p1#048",
+  "chapter": "history-of-description-research",
+  "lines": "160",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about source availability addresses the production process rather than the reader.",
+    "quote": "though it was not available to this project for direct consultation",
+    "suggestion": "Remove the clause or rephrase to avoid meta-commentary, e.g., 'The English-language grammar <Ref k=\"tamura2000\" /> made the Saru description accessible to non-Japanese readership.'",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This phrase uses first-person plural possessive ('this project') and refers to internal access limitations — a register leak from the production pipeline. The grammar otherwise maintains an impersonal scholarly voice.",
+    "quote": "though it was not available to this project for direct consultation",
+    "suggestion": "Rephrase to: 'though it was not available for direct consultation'",
+    "confidence": 0.98
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#037",
+  "chapter": "history-of-description-research",
+  "lines": "301",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table lists Nakagawa (2024) as an 'extensive grammar', but the text refers to it as 'An extensive grammar of the Ainu language' (line 337).",
+    "quote": "Nakagawa",
+    "suggestion": "Ensure consistency in the description of Nakagawa's work.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table includes Nakagawa 2024 as a source, but in the prose (line 337), Nakagawa's work is cited as <Ref k=\"nakagawa2024\" /> — implying it is available. However, on line 343, the grammar states 'A critical review of its analyses and relation to earlier grammars is available in <Ref k=\"sato2025b\" />' — a 2025 source. Since this is July 2026, a 2025 review is plausible, but the table includes a 2024 source without noting any potential availability issues. No problem per se, but the prose on line 160 says 'though it was not available to this project for direct consultation' regarding Tamura 2000 — yet no such note is made for Nakagawa 2024, which is more recent. This creates an internal inconsistency in citation transparency.",
+    "quote": "2024",
+    "suggestion": "Add a note clarifying whether Nakagawa 2024 was directly consulted or not, to match the transparency of the Tamura 2000 statement.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#023",
+  "chapter": "history-of-description-research",
+  "lines": "223",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table lists '1905 / 1938' for Batchelor, but the text mentions 1905 and 1938 editions separately (lines 51-52).",
+    "quote": "Batchelor",
+    "suggestion": "Clarify the table entry to reflect the distinct editions mentioned in the text.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "In the table, the year entry uses a spaced slash (' / '), while other multi-year entries (e.g., line 126) use an en dash. This creates format drift in date presentation.",
+    "quote": "1905 / 1938",
+    "suggestion": "Use an en dash: '1905–1938'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#057",
+  "chapter": "history-of-description-research",
+  "lines": "14",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Slight awkwardness due to repeated 'and' in close succession: '...glossaries for practical administrative use. The most comprehensive of these... contains... and short texts, and it served...'",
+    "quote": "and short texts, and it served",
+    "suggestion": "Replace with: '...and short texts; it served'",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#056",
+  "chapter": "history-of-description-research",
+  "lines": "322",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The prefixes are italicized and tagged with lang=\"ain-Latn\", but the spacing and punctuation are inconsistent: there is a space after each comma, but the final 'and' is in plain text. For typographic consistency, the list should be uniformly formatted.",
+    "quote": "<i lang=\"ain-Latn\">e-</i>, <i lang=\"ain-Latn\">ko-</i>, and <i lang=\"ain-Latn\">o-</i>",
+    "suggestion": "Ensure consistent spacing and formatting: '<i lang=\"ain-Latn\">e-</i>, <i lang=\"ain-Latn\">ko-</i>, and <i lang=\"ain-Latn\">o-</i>' is acceptable, but confirm uniform italics and language tagging.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#054",
+  "chapter": "history-of-description-research",
+  "lines": "70, 142",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The same citation key 'dalcorso2021' is used for two different re-editions (Piłsudski texts and Murasaki grammar), which may be ambiguous if the reference list has only one entry.",
+    "quote": "re-edited with translation and grammatical notes by <Ref k=\"dalcorso2021\" /> (line 70) and later re-edited and annotated by <Ref k=\"dalcorso2021\" /> (line 142)",
+    "suggestion": "Ensure the reference list has a single entry for dalcorso2021 that covers both re-editions, or use distinct keys if they are separate works.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#053",
+  "chapter": "history-of-description-research",
+  "lines": "72",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Dialect tag uses an HTML span with class 'sc' instead of the guillemet tags (e.g., ‹SA›) described in the briefing as the book's convention.",
+    "quote": "marked with the dialect tag <span class=\"sc\">sa</span>",
+    "suggestion": "Replace with guillemet tag ‹SA› for consistency with the book's style.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#051",
+  "chapter": "history-of-description-research",
+  "lines": "51",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about source edition addresses the production process rather than the reader.",
+    "quote": "held in this project's sources in the <Ref k=\"batchelor1905\" /> edition and in its final revised form of <Ref k=\"batchelor1938\" />",
+    "suggestion": "Rephrase to 'His dictionary — in the <Ref k=\"batchelor1905\" /> edition and its final revised form of <Ref k=\"batchelor1938\" /> — combined...'",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#050",
+  "chapter": "history-of-description-research",
+  "lines": "169",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about the chapter's sources addresses the production process rather than the reader.",
+    "quote": "large parts of the historical account in the present chapter draw on that survey",
+    "suggestion": "Rephrase to 'The historical account in this chapter draws heavily on that survey.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#049",
+  "chapter": "history-of-description-research",
+  "lines": "188–189",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Meta-commentary about the grammar's methodology addresses the production process rather than the reader.",
+    "quote": "against which this grammar triangulates its analyses",
+    "suggestion": "Rephrase to 'against which the present grammar is triangulated' or simply 'Together with Tamura's Saru dictionary and grammar, it forms one of the two principal Japanese-language reference works for Ainu.'",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#047",
+  "chapter": "history-of-description-research",
+  "lines": "372",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Ono (2022) is missing a page number, which is present for other citations.",
+    "quote": "The revitalization movement and the emergence of new-speaker varieties constitute a distinct strand of contemporary research. Its history is surveyed in <Ref k=\"ono2022\" /> and treated",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#046",
+  "chapter": "history-of-description-research",
+  "lines": "365",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Yasuoka (2023) is missing a page number, which is present for other citations.",
+    "quote": "Natural-language-processing-oriented work, including the philological study of Sino-Ainu materials by <Ref k=\"yasuoka2023\" />, marks a",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#045",
+  "chapter": "history-of-description-research",
+  "lines": "361",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for NINJAL (2003) and Glossed Audio Corpus (2016) are missing page numbers, which are present for other citations.",
+    "quote": "The annotated oral-literature text editions published by Nakagawa and others, the NINJAL Corpus of Ainu oral literature <Ref k=\"ninjal2003\" />, and the Glossed Audio Corpus <Ref k=\"glossedcorpus2016\" /> have made the oral-narrative tradition available in digitally",
+    "suggestion": "Add page numbers to the citations if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#044",
+  "chapter": "history-of-description-research",
+  "lines": "353",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Alonso (2022) is missing a page number, which is present for other citations.",
+    "quote": "The Handbook chapter by <Ref k=\"alonso2022\" /> critically reviewed earlier Proto-Ainu reconstruction proposals,",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Vovin (1993) is missing a page number, which is present for other citations.",
+    "quote": "including those of <Ref k=\"vovin1993\" />, and advanced a revised segmental and suprasegmental inventory.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa (2022) is missing a page number, which is present for other citations.",
+    "quote": "Dialectological classification has been reconsidered by <Ref k=\"nakagawafukazawa2022\" /> and in subsequent quantitative analyses.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#043",
+  "chapter": "history-of-description-research",
+  "lines": "348",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Dal Corso (2018) is missing a page number, which is present for other citations.",
+    "quote": "Dal Corso's dissertation on Ainu evidentiality <Ref k=\"dalcorso2018\" /> provided a semantico-pragmatic account of the formal-noun evidential system and a",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Itabashi (2001) is missing a page number, which is present for other citations.",
+    "quote": "Historical phonology has been examined by <Ref k=\"itabashi2001\" />, who established the diachronic correspondence",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#042",
+  "chapter": "history-of-description-research",
+  "lines": "343",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō (2025b) is missing a page number, which is present for other citations.",
+    "quote": "A critical review of its analyses and relation to earlier grammars is available in <Ref k=\"sato2025b\" />.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#041",
+  "chapter": "history-of-description-research",
+  "lines": "337",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa (2024) is missing a page number, which is present for other citations.",
+    "quote": "Nakagawa Hiroshi's <Ref k=\"nakagawa2024\" /> — <i lang=\"ja\">アイヌ語広文典</i> ('An extensive grammar of the Ainu language') — is the most recent single-author reference grammar of",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#040",
+  "chapter": "history-of-description-research",
+  "lines": "327",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2022) is missing a page number, which is present for other citations.",
+    "quote": "Her treatment of the diachrony of anticausatives <Ref k=\"bugaeva2025\" /> extends the historical dimension of the valency description. The Handbook of the Ainu language <Ref k=\"bugaeva2022\" />, which she edited, assembles specialist treatments of every major domain:",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for Shiraishi (2022), Bugaeva & Kobayashi (2022), Nakagawa & Fukazawa (2022), Endo (2022), Okuda (2022), Alonso (2022), and Ono (2022) are missing page numbers, which are present for other citations.",
+    "quote": "phonology <Ref k=\"shiraishi2022\" />, verbal valency <Ref k=\"bugaevakobayashi2022\" />, dialectology <Ref k=\"nakagawafukazawa2022\" />, oral literature <Ref k=\"endo2022\" /> <Ref k=\"okuda2022\" />, historical and comparative linguistics <Ref k=\"alonso2022\" />, and the revitalization movement <Ref k=\"ono2022\" />. The Handbook constitutes the most comprehensive reference work on Ainu available in English.",
+    "suggestion": "Add page numbers to the citations if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#039",
+  "chapter": "history-of-description-research",
+  "lines": "323",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2021antip) is missing a page number, which is present for other citations.",
+    "quote": "her analysis of the antipassive <Ref k=\"bugaeva2021antip\" /> placed Ainu within the comparative typology of antipassive constructions;",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for Bugaeva (2021poss) and Bugaeva (2014) are missing page numbers, which are present for other citations.",
+    "quote": "and her work on possession <Ref k=\"bugaeva2021poss\" /> and causatives <Ref k=\"bugaeva2014\" /> has refined the standard valency analysis.",
+    "suggestion": "Add page numbers to the citations if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Bugaeva (2025) is missing a page number, which is present for other citations.",
+    "quote": "Her treatment of the diachrony of anticausatives <Ref k=\"bugaeva2025\" /> extends the historical dimension of the valency description.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#038",
+  "chapter": "history-of-description-research",
+  "lines": "319-321",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for Bugaeva (2006) and Bugaeva (2010) are missing page numbers, which are present for other citations.",
+    "quote": "Bugaeva Anna's research has reshaped understanding of several grammatical subsystems. Her work on Ainu applicatives <Ref k=\"bugaeva2006\" /> <Ref k=\"bugaeva2010\" /> provided a cross-linguistically situated analysis of the three applicative prefixes",
+    "suggestion": "Add page numbers to the citations if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#036",
+  "chapter": "history-of-description-research",
+  "lines": "300",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 2024 is listed in the table for Nakagawa, but the text mentions 2024 for Nakagawa's grammar (line 337). The table entry for 2024 seems to refer to this work.",
+    "quote": "2024",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#035",
+  "chapter": "history-of-description-research",
+  "lines": "294",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 2022 is listed in the table for Bugaeva (ed.), but the text mentions 2022 for the Handbook of the Ainu language (line 327). The table entry for 2022 seems to refer to this work.",
+    "quote": "2022",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#034",
+  "chapter": "history-of-description-research",
+  "lines": "288",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 2008 is listed in the table, but the text mentions 2008 for Satō's grammar (line 185). The table entry for 2008 seems to refer to this work.",
+    "quote": "2008",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#033",
+  "chapter": "history-of-description-research",
+  "lines": "282",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 2000 is listed in the table, but the text mentions 2000 for Tamura's English-language grammar (line 159). The table entry for 2000 seems to refer to this work.",
+    "quote": "2000",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#032",
+  "chapter": "history-of-description-research",
+  "lines": "276",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1996 is listed in the table, but the text mentions 1996 for Tamura's dictionary (line 156). The table entry for 1996 seems to refer to this work.",
+    "quote": "1996",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#031",
+  "chapter": "history-of-description-research",
+  "lines": "270",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1990 is listed in the table, but the text mentions 1990 for Shibatani's chapter (line 174). The table entry for 1990 seems to refer to this work.",
+    "quote": "1990",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#030",
+  "chapter": "history-of-description-research",
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1986 is listed in the table, but the text mentions 1986 for Refsing's monograph (line 164). The table entry for 1986 seems to refer to this work.",
+    "quote": "1986",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#029",
+  "chapter": "history-of-description-research",
+  "lines": "258",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1979 is listed in the table, but the text mentions 1979 for Murasaki's grammar (line 142). The table entry for 1979 seems to refer to this work.",
+    "quote": "1979",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#028",
+  "chapter": "history-of-description-research",
+  "lines": "252",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1969 is listed in the table, but the text mentions 1969 for Asai's grammar (line 143). The table entry for 1969 seems to refer to this work.",
+    "quote": "1969",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#027",
+  "chapter": "history-of-description-research",
+  "lines": "246",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1964 is listed in the table, but the text mentions 1964 for Hattori's edited dictionary (line 138). The table entry for 1964 seems to refer to this work.",
+    "quote": "1964",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#026",
+  "chapter": "history-of-description-research",
+  "lines": "240",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1942 is listed in the table, but the text mentions 1942 for Chiri's grammar (line 106). The table entry for 1942 seems to refer to this work.",
+    "quote": "1942",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#025",
+  "chapter": "history-of-description-research",
+  "lines": "234",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1936 is listed in the table, but the text mentions 1936 for Kindaichi & Chiri's grammar (line 104). The table entry for 1936 seems to refer to this work.",
+    "quote": "1936",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#024",
+  "chapter": "history-of-description-research",
+  "lines": "228",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1912 is listed in the table, but the text mentions 1912 for Piłsudski's collection (line 66). The table entry for 1912 seems to refer to this work.",
+    "quote": "1912",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#022",
+  "chapter": "history-of-description-research",
+  "lines": "217",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1898 is listed in the table, but the text mentions 1898 for Kanazawa's work (line 16). The table entry for 1898 seems to refer to this work.",
+    "quote": "1898",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#021",
+  "chapter": "history-of-description-research",
+  "lines": "210",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1887 is listed in the table, but the text mentions 1887 for Chamberlain's monograph (line 41). The table entry for 1887 seems to refer to this work.",
+    "quote": "1887",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#020",
+  "chapter": "history-of-description-research",
+  "lines": "204",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The year 1792 is listed in the table, but the text mentions 1792 as the compilation year for the *Ezo hōgen moshiogusa* (lines 11-12). The table entry for 1792 seems to refer to this work.",
+    "quote": "1792",
+    "suggestion": "Ensure consistency between table entries and text references.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#019",
+  "chapter": "history-of-description-research",
+  "lines": "185",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Satō (2008) is missing a page number, which is present for other citations.",
+    "quote": "Satō Tomomi's grammar <Ref k=\"sato2008\" /> is the most comprehensive Japanese-language",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#018",
+  "chapter": "history-of-description-research",
+  "lines": "179",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Shibatani (1988) is missing a page number, which is present for other citations.",
+    "quote": "His 1988 article <Ref k=\"shibatani1988\" /> had placed Ainu noun incorporation within the cross-linguistic typology of polysynthesis,",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#017",
+  "chapter": "history-of-description-research",
+  "lines": "174",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Shibatani (1990) is missing a page number, which is present for other citations.",
+    "quote": "Shibatani's 1990 chapter on Ainu <Ref k=\"shibatani1990\" />, in his typological survey of the",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#016",
+  "chapter": "history-of-description-research",
+  "lines": "164",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Refsing (1986) is missing a page number, which is present for other citations.",
+    "quote": "Refsing's 1986 monograph <Ref k=\"refsing1986\" /> on the Shizunai dialect applied the",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#015",
+  "chapter": "history-of-description-research",
+  "lines": "159",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Tamura (2000) is missing a page number, which is present for other citations.",
+    "quote": "The English-language grammar <Ref k=\"tamura2000\" /> made the Saru description accessible to non-Japanese readership,",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#014",
+  "chapter": "history-of-description-research",
+  "lines": "155-156",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Refsing (1986) is missing a page number for the comparison of Tamura's and Kindaichi's treatment of noun opposition.",
+    "quote": "where Kindaichi had treated the opposition as applicable to all nouns <Ref k=\"refsing1986\" p=\"22, 42–47\" />.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Tamura (1996) is missing a page number, which is present for other citations.",
+    "quote": "Her Saru-dialect dictionary <Ref k=\"tamura1996\" /> remains the most comprehensive single-dialect Ainu dictionary and is used throughout this grammar as a primary lexical resource.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#013",
+  "chapter": "history-of-description-research",
+  "lines": "150",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for Fukuda (1956), Tamura (1960), and Fukuda (1961) are missing page numbers, which are present for other citations.",
+    "quote": "Her early articles on Saru verbal morphology <Ref k=\"fukuda1956\" />, auxiliary verbs <Ref k=\"tamura1960\" />, and particle systems <Ref k=\"fukuda1961\" /> applied distributional criteria to morpheme classification,",
+    "suggestion": "Add page numbers to the citations if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#012",
+  "chapter": "history-of-description-research",
+  "lines": "142",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for Murasaki (1979) and Dalcorso (2021) are missing page numbers, which are present for other citations.",
+    "quote": "The Sakhalin variety was described in the grammar of <Ref k=\"murasaki1979\" />, later re-edited and annotated by <Ref k=\"dalcorso2021\" />.",
+    "suggestion": "Add page numbers to the citations if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Asai (1969) is missing a page number, which is present for other citations.",
+    "quote": "Asai Tōru produced a grammar of the Ishikari dialect <Ref k=\"asai1969\" />, extending the descriptive record to a variety north of the Saru basin.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#011",
+  "chapter": "history-of-description-research",
+  "lines": "135",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Hattori & Chiri (1960) is missing a page number, which is present for other citations.",
+    "quote": "The lexicostatistic study he undertook with Chiri Mashiho surveyed 19 Ainu localities — 13 on Hokkaido, 6 on Sakhalin — using a 200-item Swadesh list and established the first quantitative basis for internal dialect classification <Ref k=\"hattorichiri1960\" />.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Hattori (1964) is missing a page number, which is present for other citations.",
+    "quote": "The Ainu dialect dictionary he subsequently edited <Ref k=\"hattori1964\" /> covers the same 19 localities and",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#010",
+  "chapter": "history-of-description-research",
+  "lines": "128",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence refers to Tamura's work but lacks a specific citation, while the preceding paragraph cites Refsing (1986) for a comparison with Tamura.",
+    "quote": "The contrast between this tradition and the formal-distributional analysis of Tamura is a recurring reference point in the history of Ainu grammaticography.",
+    "suggestion": "Add a citation to Tamura's relevant work or clarify the reference.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#009",
+  "chapter": "history-of-description-research",
+  "lines": "113",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Chiri (1923) is missing a page number, which is present for other citations.",
+    "quote": "Chiri Yukie (1903–1922) compiled the first published collection of Ainu kamuy yukar (divine epics) with Japanese translations <Ref k=\"chiri1923\" />, a text-publication project that",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#008",
+  "chapter": "history-of-description-research",
+  "lines": "109",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Chiri (1953) is missing a page number, which is present for other citations.",
+    "quote": "before his death in 1961 <Ref k=\"chiri1953\" />.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#007",
+  "chapter": "history-of-description-research",
+  "lines": "103",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi & Chiri (1936) is missing a page number, which is present for other citations.",
+    "quote": "the joint grammar <Ref k=\"kindaichi1936\" />, <i lang=\"ja\">アイヌ語法概説</i> ('An outline of Ainu grammar'), co-authored with Kindaichi.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Chiri (1942) is missing a page number, which is present for other citations.",
+    "quote": "Chiri subsequently undertook fieldwork on Sakhalin and produced a grammar centred on the Sakhalin dialects <Ref k=\"chiri1942\" />.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#006",
+  "chapter": "history-of-description-research",
+  "lines": "84",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kindaichi (1933) is missing a page number, which is present for other citations.",
+    "quote": "His primary interest lay in the oral-literature tradition — particularly the heroic epics known as yukar — and his grammatical work was conceived as an instrument for that philological programme <Ref k=\"kindaichi1933\" />.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Refsing (1986) is missing a page number for the mention of Kannari Matsu's notebooks.",
+    "quote": "eventually filling seventy notebooks <Ref k=\"refsing1986\" p=\"19\" />.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#005",
+  "chapter": "history-of-description-research",
+  "lines": "66",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Piłsudski (1912) is missing a page number, which is present for other citations.",
+    "quote": "Bronisław Piłsudski's collection <Ref k=\"pilsudski1912\" />, compiled from fieldwork on",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citations for Dalcorso (2024) and Dalcorso (2021) are missing page numbers, which are present for other citations.",
+    "quote": "been reassessed in <Ref k=\"dalcorso2024\" />, and the texts have been re-edited with translation and grammatical notes by <Ref k=\"dalcorso2021\" />.",
+    "suggestion": "Add page numbers to the citations if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#004",
+  "chapter": "history-of-description-research",
+  "lines": "58",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Refsing (1986) is missing a page number for the first mention of the criticism.",
+    "quote": "Refsing <Ref k=\"refsing1986\" p=\"18–19\" /> documents Chiri Mashiho's extended criticism cataloguing",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#003",
+  "chapter": "history-of-description-research",
+  "lines": "51-52",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Batchelor (1905) is missing a page number, which is present for other citations.",
+    "quote": "His dictionary — held in this project's sources in the <Ref k=\"batchelor1905\" /> edition and in its final revised form of <Ref k=\"batchelor1938\" /> — combined Ainu-English-Japanese glosses",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#002",
+  "chapter": "history-of-description-research",
+  "lines": "23-26",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Yasuoka (2023) is missing a page number, which is present for other citations.",
+    "quote": "The Sino-Ainu glosses embedded in the <i lang=\"ja\">Ezoshima kikan</i> have been studied by <Ref k=\"yasuoka2023\" />, contributing to a digitally oriented philological programme that bridges the manuscript tradition and modern corpus resources.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#001",
+  "chapter": "history-of-description-research",
+  "lines": "16",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Kanazawa (1898) is missing a page number, which is present for other citations.",
+    "quote": "the Saru-dialect topical conversation dictionary of <Ref k=\"kanazawa1898\" />.",
+    "suggestion": "Add a page number to the citation if available.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#059",
+  "chapter": "history-of-description-research",
+  "lines": "337",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The English translation is not in title case, while other translated titles (e.g., line 103) use sentence-style capitalization. Inconsistent capitalization style for translated titles.",
+    "quote": "<i lang=\"ja\">アイヌ語広文典</i> ('An extensive grammar of the Ainu language')",
+    "suggestion": "Use title case: 'An Extensive Grammar of the Ainu Language'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#058",
+  "chapter": "history-of-description-research",
+  "lines": "103",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Japanese title is correctly given, but the English translation uses lowercase 'grammar' in 'An outline of Ainu grammar' — standard title case would capitalize 'Grammar'.",
+    "quote": "<i lang=\"ja\">アイヌ語法概説</i> ('An outline of Ainu grammar')",
+    "suggestion": "Use title case: 'An Outline of Ainu Grammar'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#055",
+  "chapter": "history-of-description-research",
+  "lines": "15",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Hyphenated compound 'Saru-dialect' is used once, but elsewhere the unhyphenated 'Saru dialect' or similar forms are used (e.g., line 149). Inconsistent hyphenation of the same term within the chapter.",
+    "quote": "Saru-dialect",
+    "suggestion": "Use 'Saru dialect' consistently without hyphenation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "history-of-description-research~p1#052",
+  "chapter": "history-of-description-research",
+  "lines": "92–97",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Ambiguous pronoun 'he' after 'Refsing' – the antecedent is Kindaichi, not Refsing.",
+    "quote": "Refsing identifies two advances in particular: he demonstrated that the language's person-indexing elements are personal affixes on the verb rather than the free pronouns that Batchelor's description had posited, and he distinguished the abstract nominal form from the personal-reference-bearing concrete (possessed) form",
+    "suggestion": "Change 'he demonstrated' to 'Kindaichi demonstrated' and 'he distinguished' to 'Kindaichi distinguished' to clarify the antecedent.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

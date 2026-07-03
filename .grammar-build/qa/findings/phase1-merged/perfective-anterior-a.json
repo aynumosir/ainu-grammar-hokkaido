@@ -1,0 +1,650 @@
+[
+ {
+  "id": "perfective-anterior-a~p1#025",
+  "chapter": "perfective-anterior-a",
+  "lines": "181",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The editorial tag ‹original-needs-review› appears in the published prose, which is a pipeline remnant that should not be visible to readers.",
+    "quote": "‹original-needs-review›",
+    "suggestion": "Remove the tag or replace with an appropriate epistemic tag such as ‹contested› or ‹speculative› if the claim is genuinely preliminary.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The editorial tag ‹original-needs-review› is visible in the prose, which is a pipeline register leak. These tags should not appear in the final text.",
+    "quote": "‹original-needs-review›",
+    "suggestion": "Remove the tag or replace with appropriate scholarly qualification",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#028",
+  "chapter": "perfective-anterior-a",
+  "lines": "52",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss \"come.PL=4.S PFV.PL\" includes \"PFV.PL\" for rok, but the free translation is \"They came.\", which does not indicate perfective aspect. The gloss suggests a perfective reading that is not reflected in the translation.",
+    "quote": "arki=an rok",
+    "suggestion": "Either adjust the gloss to \"come.PL=4.S\" or update the translation to reflect perfective aspect, e.g., \"They have come.\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#026",
+  "chapter": "perfective-anterior-a",
+  "lines": "36-43",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss marks the auxiliary a as PFV (perfective), but the free translation uses past perfect ('had held', 'had lain'), which adds an anterior relative meaning not directly supported by the gloss. While context may justify a past perfect reading, the disconnect between PFV and the translation’s temporal configuration could mislead readers about the auxiliary's semantic range.",
+    "quote": "g=\"now until 4.A=2SG.O=embrace CONJ lie.down=4.S PFV although\" / tr=\"Until now I had held you in my arms and lain down with you, but —\"",
+    "suggestion": "Either adjust the gloss to indicate past perfect/anterior (e.g., PST.PFV or ANT) or adjust the translation to simple past to align with the perfective gloss. However, if the intention is to show that the perfective can be interpreted as anterior in this discourse context, a note explaining the mismatch would suffice.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#024",
+  "chapter": "perfective-anterior-a",
+  "lines": "420",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Hirosawa's analysis is provided with a page number. It's unclear if this page number is the sole source for the analysis described or if other parts of the work also contribute.",
+    "quote": "Ref k=\"hirosawa2026\" p=\"90\"",
+    "suggestion": "Consider if the page number is sufficient or if a broader citation is needed.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#023",
+  "chapter": "perfective-anterior-a",
+  "lines": "407",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹speculative› is applied to the entire sentence, but the citation for bybee1994 is placed before the tag. It's unclear if bybee1994 is the sole source for the 'speculative' status or if other sources also contribute to this.",
+    "quote": "bybee1994 paren ‹speculative›.",
+    "suggestion": "Clarify which sources support the 'speculative' status, or move the tag to be associated with the specific source if it applies only to that source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#022",
+  "chapter": "perfective-anterior-a",
+  "lines": "398",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is applied to the entire sentence, but the citation for bugaeva2012 is placed after the tag. It's unclear if bugaeva2012 is the sole source for the 'contested' status or if other sources also contribute to this.",
+    "quote": "bugaeva2012:493 ‹contested›.",
+    "suggestion": "Clarify which sources support the 'contested' status, or move the tag to be associated with the specific source if it applies only to that source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#021",
+  "chapter": "perfective-anterior-a",
+  "lines": "384",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The equation 'き+あり = a+an' is presented as a structural parallel. While clear in context, it could be more formally presented, perhaps with explicit labels for each component.",
+    "quote": "き+あり = a+an",
+    "suggestion": "Consider using a more formal notation or adding labels to clarify the components of the parallel.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#020",
+  "chapter": "perfective-anterior-a",
+  "lines": "343",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The bracketed '[haw+an]' is used to represent a hypothesized etymological combination. While understandable in context, it could be more formally presented, perhaps as a gloss or a more explicit notation.",
+    "quote": "The competing segmentation [haw+an] is one of the etymological readings Yoshikawa discusses.",
+    "suggestion": "Consider using a more formal notation for the hypothesized etymological combination, or ensure consistency with how such combinations are presented elsewhere in the text.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#019",
+  "chapter": "perfective-anterior-a",
+  "lines": "341",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the Horobetsu form 'awan' is split between two sources. It's unclear if both sources present the same information about the form and its value, or if one is primary.",
+    "quote": "chiri1942:158; yoshikawa2018:4",
+    "suggestion": "Consider rephrasing to clarify which source(s) support the claim about 'awan', or if they both do.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#018",
+  "chapter": "perfective-anterior-a",
+  "lines": "322",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note describes the function of 'aan' and 'ruwe ne' in sequence. The phrasing 'ruwe ne then packages' is a bit informal. Also, 'realized content' could be more specific.",
+    "quote": "aan encodes indirect, retrospective access to this information. ruwe ne then packages the realized content as established fact.",
+    "suggestion": "Rephrase for more formal tone and clarity, e.g., 'ruwe ne then frames the discovered information as established fact.'",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#017",
+  "chapter": "perfective-anterior-a",
+  "lines": "312",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the integration of perfect aspect, indirect evidentiality, and mirativity is split between two sources. It's unclear if both sources present the same integrated view or if one is primary.",
+    "quote": "yoshikawa2018; yoshikawa2022.",
+    "suggestion": "Consider rephrasing to clarify which source(s) support the integrated view, or if they both do.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#016",
+  "chapter": "perfective-anterior-a",
+  "lines": "290",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The dialect tag '(HOR)' is placed after the Ainu form. While understandable, it might be more consistent with other examples if it were integrated into the note or presented in a more structured way.",
+    "quote": "awokay (HOR)",
+    "suggestion": "Consider integrating the dialect tag into the note or presenting it more consistently with other examples.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#015",
+  "chapter": "perfective-anterior-a",
+  "lines": "280",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note '(doubled; no meaning difference)' is a bit abrupt and could be integrated more smoothly into the sentence or explained more fully. It's unclear what 'doubled' refers to specifically in this context (e.g., the repetition of 'anan' or something else).",
+    "quote": "rok(o)ka(y) anan (doubled; no meaning difference)",
+    "suggestion": "Rephrase the note for clarity and smoother integration, or expand on what 'doubled' means in this context.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#014",
+  "chapter": "perfective-anterior-a",
+  "lines": "260",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is applied to the entire sentence, but the citation for yoshikawa2022 is placed after the tag. It's unclear if yoshikawa2022 is the sole source for the 'contested' status or if the other sources also contribute to this.",
+    "quote": "yoshikawa2022 ‹contested›.",
+    "suggestion": "Clarify which sources support the 'contested' status, or move the tag to be associated with the specific source if it applies only to that source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#013",
+  "chapter": "perfective-anterior-a",
+  "lines": "253",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The bracketed '[a+an]' is used to represent a hypothesized etymological combination. While understandable in context, it could be more formally presented, perhaps as a gloss or a more explicit notation.",
+    "quote": "exactly as [a+an] predicts",
+    "suggestion": "Consider using a more formal notation for the hypothesized etymological combination, or ensure consistency with how such combinations are presented elsewhere in the text.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#012",
+  "chapter": "perfective-anterior-a",
+  "lines": "250",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the decomposition of 'aan' is split across multiple sources. It's unclear if all sources agree on the decomposition or if one is primary.",
+    "quote": "nakagawa2024:308; yoshikawa2018; yoshikawa2022.",
+    "suggestion": "Consider rephrasing to clarify which source(s) support the decomposition, or if they all do.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#011",
+  "chapter": "perfective-anterior-a",
+  "lines": "220",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹corpus-confirmed› is applied to the entire sentence, but the citation for Nakagawa is not explicitly linked to the tag. It's implied that Nakagawa's examples confirm this, but it could be more explicit.",
+    "quote": "The connection is established by Nakagawa's glossed corpus examples ‹corpus-confirmed›.",
+    "suggestion": "Clarify that Nakagawa's examples are the basis for the ‹corpus-confirmed› tag.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#010",
+  "chapter": "perfective-anterior-a",
+  "lines": "214",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'Nakagawa's attested form' and then provides a citation. It would be clearer to directly cite Nakagawa for the form and the observation about '=an'.",
+    "quote": "Nakagawa's attested form is onkami=an a =an a 'worshipped over and over' (Nakagawa 2024: 308, ex. 453), where =an abbreviates the repeated verb base in the second occurrence.",
+    "suggestion": "Rephrase to directly cite Nakagawa for the attested form and the observation about '=an'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#009",
+  "chapter": "perfective-anterior-a",
+  "lines": "206",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range 307-308 for nakagawa2024 seems unusually large for a single point. It might be a typo or indicate a broader discussion.",
+    "quote": "nakagawa2024:307–308; bugaeva2012:493",
+    "suggestion": "Verify the page range for nakagawa2024.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#008",
+  "chapter": "perfective-anterior-a",
+  "lines": "181",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹original-needs-review› is applied to the entire sentence, but the citation for yoshikawa2022 is placed after the tag. It's unclear if yoshikawa2022 is the sole source for the 'original-needs-review' status or if the other sources also contribute to this.",
+    "quote": "nakagawa2024:306–307; yoshikawa2022 ‹original-needs-review›.",
+    "suggestion": "Clarify which sources support the 'original-needs-review' status, or move the tag to be associated with the specific source if it applies only to that source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#007",
+  "chapter": "perfective-anterior-a",
+  "lines": "131",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'exceptional a' is in quotes, suggesting it's a specific term or concept. However, it's not defined or introduced as such prior to this mention.",
+    "quote": "the 'exceptional a' on time-invariant constants is reanalysed as a certainty marker anchored to the speaker's direct knowledge",
+    "suggestion": "Introduce 'exceptional a' as a term or concept before using it in quotes, or remove the quotes if it's not a formal term.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#006",
+  "chapter": "perfective-anterior-a",
+  "lines": "108",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'wa an' is not italicized, while other Ainu forms like 'a' and 'rok' are italicized throughout the chapter. This is an inconsistency in orthography.",
+    "quote": "wa an",
+    "suggestion": "Italicize 'wa an'.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#005",
+  "chapter": "perfective-anterior-a",
+  "lines": "64",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The epistemic tag ‹contested› is applied to the entire sentence, but the citation for yoshikawa2022 is placed after the tag. It's unclear if yoshikawa2022 is the sole source for the 'contested' status or if the other sources also contribute to this.",
+    "quote": "nakagawa2024:306–307; bugaeva2012:493; yoshikawa2022 ‹contested›.",
+    "suggestion": "Clarify which sources support the 'contested' status, or move the tag to be associated with the specific source if it applies only to that source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#004",
+  "chapter": "perfective-anterior-a",
+  "lines": "56",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example 'ek=an a' is presented as a singular counterpart to 'arki=an rok', but the note states 'ek' is the singular verb stem, while 'a' is the singular auxiliary. This implies 'ek=an a' is a complete clause, which is consistent. However, the phrasing 'Compare the singular ek=an a' might imply it's a direct comparison of the auxiliary form, which is not the case.",
+    "quote": "Compare the singular ek=an a 'she came'.",
+    "suggestion": "Rephrase to clarify that 'ek=an a' is the singular counterpart clause, contrasting with the plural example.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#003",
+  "chapter": "perfective-anterior-a",
+  "lines": "43",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'a' as if it were a discourse particle itself, rather than an auxiliary verb. This could be confusing.",
+    "quote": "The contrast particle korka signals that this clause supplies the background to a subsequent reversal — a discourse environment typical of a.",
+    "suggestion": "Rephrase to clarify that 'a' is an auxiliary verb that often appears in such discourse environments.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#002",
+  "chapter": "perfective-anterior-a",
+  "lines": "31",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The page range 439-443 for nakagawa2024 seems unusually large for a single point. It might be a typo or indicate a broader discussion.",
+    "quote": "nakagawa2024:306, 439–443; bugaeva2012:492–495",
+    "suggestion": "Verify the page range for nakagawa2024.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#001",
+  "chapter": "perfective-anterior-a",
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for the number-sensitivity of 'a' and 'rok' is split across multiple sources. It's unclear which source specifically supports the claim about number-sensitivity, or if all do. It might be clearer to list them as supporting the general statement about the pair.",
+    "quote": "nakagawa2024:307; yoshikawa2022; bugaeva2012:493",
+    "suggestion": "Consider rephrasing to clarify which source(s) support the number-sensitivity claim, or if they all do.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#032",
+  "chapter": "perfective-anterior-a",
+  "lines": "381",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Japanese text 'けり' is not translated or explained in the surrounding prose, though the chapter otherwise translates Japanese. This may confuse readers unfamiliar with Japanese script.",
+    "quote": "<span lang=\"ja\">けり</span>",
+    "suggestion": "Add a translation or explanation, e.g., \"Classical Japanese <span lang=\"ja\">けり</span> (keri, indirect-evidential past)\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#031",
+  "chapter": "perfective-anterior-a",
+  "lines": "370",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The Japanese text 'き' is not translated or explained in the surrounding prose, though the chapter otherwise translates Japanese. This may confuse readers unfamiliar with Japanese script.",
+    "quote": "<span lang=\"ja\">き</span>",
+    "suggestion": "Add a translation or explanation, e.g., \"Classical Japanese <span lang=\"ja\">き</span> (ki, direct-evidential past)\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#030",
+  "chapter": "perfective-anterior-a",
+  "lines": "280",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form \"rok(o)ka(y) anan\" appears to be a doubled form, but the notation is unclear. The parentheses and spacing should be consistent with the rest of the table.",
+    "quote": "<td><i lang=\"ain-Latn\">rok(o)ka(y) anan</i> (doubled; no meaning difference)</td>",
+    "suggestion": "Clarify the form, e.g., \"rokoka(y) + anan\" or use consistent parentheses notation",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#029",
+  "chapter": "perfective-anterior-a",
+  "lines": "275",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form \"rok(o)ka(y)\" uses optional parentheses inconsistently with other entries in the table. The plural form should be presented consistently with the dialect variants.",
+    "quote": "<td><i lang=\"ain-Latn\">rok(o)ka(y)</i></td>",
+    "suggestion": "Use a consistent format such as \"rokoka(y)\" or specify variants as in other rows",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "perfective-anterior-a~p1#027",
+  "chapter": "perfective-anterior-a",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss \"sit (PL)\" uses parentheses, but the corresponding singular form on line 9 uses \"(SG)\". The formatting of the glosses should be consistent between singular and plural.",
+    "quote": "<A w=\"rok\" gl=\"sit (PL)\" />",
+    "suggestion": "Change to \"sit (PL)\" to match \"sit (SG)\" or use consistent formatting such as \"sit.PL\" for both",
+    "confidence": 0.95
+   }
+  ]
+ }
+]

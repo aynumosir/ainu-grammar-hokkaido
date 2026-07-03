@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "112, 152, 174",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "line 112: \"<A w=\"mean\" gl=\"be cold (weather)\" />\" vs line 152: \"<i lang=\"ain-Latn\">me-an</i>\" and line 174: \"m=\"me-an\"\"",
+  "issue": "The same form is written as 'mean' (dictionary form) in line 112 and as 'me-an' (segmented) in the table and example. This is a formatting inconsistency that could confuse readers.",
+  "suggestion": "Either consistently use the segmented form 'me-an' throughout, or add a note that 'mean' is the lexicalized form. A minimal fix would be to use 'me-an' in line 112 as well.",
+  "confidence": 0.8,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "222–223",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "Lexicalized denominal compounds such as nispa a=ne 'I am a master' and inne 'be numerous'",
+  "issue": "'nispa a=ne' is a clause (noun + inflected verb), not a compound. The term 'compound' is inaccurate for a phrase with a separate noun and verb. The other example 'inne' is a genuine compound. This mislabeling could mislead readers about the morphological status.",
+  "suggestion": "Rephrase to 'Lexicalized denominal constructions such as nispa a=ne 'I am a master' and the compound inne 'be numerous'' or similar.",
+  "confidence": 0.9,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "173–181, 399–407, 462–470",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "In line 176: 'coldness-kill=4.S' translated as 'I did not feel cold' (first person). In line 400: 'look=4.S' translated as 'I looked'. In line 464: '4.A=enter' translated as 'I sank'.",
+  "issue": "The gloss consistently uses '4' (fourth person) for the person index, but the translation uses first person 'I'. While this is a known usage of the fourth person in Ainu narrative, the gloss and translation are not directly aligned. The notes explain the relationship, but the gloss itself does not reflect the narrative first-person reading.",
+  "suggestion": "Either change the gloss to '1SG' (but that would be inaccurate for the fourth person marker) or add a note in the gloss itself, e.g., '4.S (narrative 1SG)'. The existing notes already explain, so this is a minor issue.",
+  "confidence": 0.5,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "30",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "distinguished where they diverge ‹contested›.",
+  "issue": "The epistemic tag ‹contested› is attached to the claim that the two accounts diverge. But the statement is about how the chapter presents the accounts, not a factual claim about the language. The tag may be misplaced or unnecessary.",
+  "suggestion": "Remove the tag or move it to the specific points of divergence.",
+  "confidence": 0.6,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "8",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "chapters routed from <Xr ch=\"valency-voice-overview\" />",
+  "issue": "'routed from' might be a typo for 'rooted from' or 'routed' could be intended as 'directed from'. The phrasing is slightly odd.",
+  "suggestion": "If 'rooted' was intended, change to 'rooted from'. If 'routed' is intentional, it is fine.",
+  "confidence": 0.4,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "111–114, 152–168",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "In text: 'sirpirka' (line 111), 'mean' (112), 'hawas' (113), 'sirkunne' (114), 'sitcuk' (114). In table: 'me-an' (152), 'sir-me-man' (157), 'sir-popke' (162), 'sir-sesek' (167).",
+  "issue": "The text uses unhyphenated forms for lexicalized compounds, while the table uses hyphens to show morphological composition. This is a systematic difference, but it could be confusing when the same form appears in both places (e.g., 'mean' vs 'me-an'). The inconsistency is not a contradiction but a formatting drift.",
+  "suggestion": "Either consistently use hyphens in all morphological analyses, or use unhyphenated forms in prose and hyphens only in examples/tables. The current mix is acceptable but could be clarified.",
+  "confidence": 0.7,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "133",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "£constructed",
+  "issue": "Omit the pound sign before 'constructed' in the `<Ex>` tag; should be just `constructed`.",
+  "suggestion": "Change `£constructed` to `constructed`.",
+  "confidence": 0.9,
+  "chapter": "person-number-interactions",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "198-201",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The two may co-occur on the same verb — a V/-pa stem combined with outer pa — and both combine with causative suffixes while maintaining their respective attachment sites",
+  "issue": "The claim that 'both combine with causative suffixes' is ambiguous: it could mean inner -pa and outer pa each combine with causative suffixes individually, or that they combine with causatives simultaneously. The preceding text already established that inner -pa attaches to the root inside person markers and outer pa follows the inflected form. The description could be clearer whether causatives intervene between root and person marker (for inner -pa) or between person inflection and outer pa.",
+  "suggestion": "Clarify: 'the root-attaching -pa combines with causative suffixes before person marking, while outer pa follows the fully inflected verb.'",
+  "confidence": 0.6,
+  "chapter": "person-number-interactions",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "268-275",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The crossed mismatches ... confirm that the fourth-person form-set is not simply a plural of the first person, and they supply evidence for the historically composite character of the series ‹consensus›.",
+  "issue": "The claim is tagged ‹consensus›, but it is based on a single source (Nakagawa 2024, pp. 174-179, 254-256). No other sources are cited for this conclusion, so the tag may be inflated.",
+  "suggestion": "Either add supporting citations or downgrade to ‹corpus-confirmed› if Nakagawa's data suffice, or note that further sources are needed to justify 'consensus'.",
+  "confidence": 0.8,
+  "chapter": "person-number-interactions",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "329",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "tr=\"You people must have gone too.\"",
+  "issue": "The translation 'You people' might be slightly informal or regionally marked; consider 'You (plural) must have gone too.' for consistency with other formal translations.",
+  "suggestion": null,
+  "confidence": 0.4,
+  "chapter": "person-number-interactions",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "296",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "NOTE: The Shizunai … parallel to Saru outer pa.",
+  "issue": "The line number reference is for a note, which is fine. No register leak.",
+  "suggestion": null,
+  "confidence": 0,
+  "chapter": "person-number-interactions",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "99-100",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "a singular S affix selects the singular stem",
+  "issue": "The text does not specify which singular S affixes these are, but the context makes it clear. No problem.",
+  "suggestion": null,
+  "confidence": 0,
+  "chapter": "person-number-interactions",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "2PL A, S, O; also 1A→2O",
+  "issue": "The table says eci= covers 1A→2O, but the text later doesn't elaborate on this portmanteau use. This is not an inconsistency within the chapter.",
+  "suggestion": null,
+  "confidence": 0,
+  "chapter": "person-number-interactions",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

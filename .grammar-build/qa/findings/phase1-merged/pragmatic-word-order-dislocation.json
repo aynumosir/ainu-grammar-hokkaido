@@ -1,0 +1,297 @@
+[
+ {
+  "id": "pragmatic-word-order-dislocation~p1#001",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "198",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'read sources' is meta-commentary about the production process and should be replaced with more direct phrasing, such as 'available sources' or 'the literature'.",
+    "quote": "read sources",
+    "suggestion": "available sources",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'read sources' is a pipeline term referring to the author's reading process, not appropriate for the reader.",
+    "quote": "only two examples are documented in the read sources (Bugaeva 2022 ch.1, exx.18–19)",
+    "suggestion": "Change to 'documented in the literature' or 'documented by Bugaeva (2022)'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#011",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "180",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss includes 'NMLZ COP PURP' at the end, but the morpheme string ends with 'kusu', which is glossed as 'PURP' in the example. The 'NMLZ COP' part does not correspond to any morpheme in the 'm' string, suggesting a mismatch.",
+    "quote": "g=\"body=grow-PL PFV 4.A=wife-COP-child-ASS-POSS 4.A=child-ASS-POSS do PFV NMLZ COP PURP\"",
+    "suggestion": "Verify the segmentation and gloss alignment; possibly the 'NMLZ COP' is incorrectly included or belongs to a different form.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation includes 'because the children did so', but the glossed clause 'a=po-utar-i ki' is translated as 'the children did so', which is not clearly causal. The gloss lacks a causal marker, and the structure 'ki' as 'do' does not inherently express causality.",
+    "quote": "tr=\"They all grew up — the daughters and the children — because the children did so.\"",
+    "suggestion": "Revise translation to remove 'because' unless supported by context or gloss, e.g., 'They all grew up — the daughters and the children — and the children did so.'",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#005",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "60-69",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The translation says 'never left my side' but the note says the predicate means 'never even approached leaving me'. These are different.",
+    "quote": "tr=\"My dog, as for it, never left my side, so it ate with me.\" and note=\"the complex predicate 'never even approached leaving me' follows\"",
+    "suggestion": "Change the translation to 'never even approached leaving me' to match the note, or adjust the note.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#004",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "48, 256-259",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The prose groups ka with anak(ne) as topic markers, but the table only lists anak(ne) for topic-marking, and the overview (line 31) calls ka an 'additive-focus particle'.",
+    "quote": "the element made topic by anak(ne) or ka",
+    "suggestion": "Either remove ka from line 48 or add ka to the table as a topic marker.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#014",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "277",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of <i lang=\"ain-Latn\">ki</i> in the table is inconsistent with the surrounding text, which uses <A w=\"ki\" gl=\"do\" /> when first introducing the form. The table should maintain consistent markup for linguistic terms.",
+    "quote": "postverbal, clause-final NP + <i lang=\"ain-Latn\">ki</i>",
+    "suggestion": "Use <A w=\"ki\" gl=\"do\" /> in the table for consistency.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#010",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "137",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The dialect tag 'SHI' is used here, but elsewhere in the chapter (e.g., line 138) the full name 'Shizunai' is mentioned. Inconsistent use of abbreviations vs. full names may confuse readers if not standardized.",
+    "quote": "dial=\"SHI\"",
+    "suggestion": "Ensure consistency in dialect tagging: either always use abbreviations (SHI) with a key, or spell out the name.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#007",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "199",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is based on only two examples from one source, not a corpus; the tag ‹corpus-suggested› may be inflated.",
+    "quote": "so its frequency and range are open ‹corpus-suggested›.",
+    "suggestion": "Change to ‹speculative› or remove the tag.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#006",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "101, 109",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "'asserted' is meta-commentary about the source's status, not standard citation practice.",
+    "quote": "nukopoli, aynu-corpora Discord 2024-11-09; asserted; consistent with Shibatani 1990 p.38",
+    "suggestion": "Remove 'asserted' or rephrase as 'as asserted by nukopoli'.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#003",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table uses an HTML `<table>` tag directly. While this might render correctly, it's generally better to use Markdown table syntax for consistency within SvelteKit components, unless there's a specific reason for HTML.",
+    "quote": "<table>",
+    "suggestion": "Convert to Markdown table syntax.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#002",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese text is not translated, while other Japanese terms in the chapter are. It should be translated or removed if not essential.",
+    "quote": "Japanese <span lang=\"ja\">丈/だけ</span>",
+    "suggestion": "Japanese take/dake",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#013",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "283",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table entry cites Bugaeva 2012 p. 498 for wh-in-situ, but the prose on line 145 cites the same source and page for the same claim. This is consistent, but the table uses a full tag while the prose uses a minimal one — minor formatting inconsistency.",
+    "quote": "<Ref k=\"bugaeva2012\" p=\"498\" />",
+    "suggestion": "Standardize citation format between prose and table, though not strictly an error.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#012",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "242",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim about Japanese influence on the word order 'patek ani' is tagged as ‹contested›, but the only support is a Discord comment (nukopoli), which is a weak source for such a claim. Elevating a single community assertion to a contested scholarly debate may overstate its status.",
+    "quote": "‹contested›",
+    "suggestion": "Downgrade epistemic tag to ‹speculative› or add a stronger source.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#009",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "109",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The phrase 'after <Ref k=\"tamura1996\" />' is an unusual citation format. 'After' suggests a derivative or secondary claim, but the structure implies direct reporting. This could misrepresent the evidential support.",
+    "quote": "nukopoli, aynu-corpora Discord 2023-12-08, asserted; after <Ref k=\"tamura1996\" />)",
+    "suggestion": "Rephrase to clarify the relationship, e.g., 'reported in Tamura (1996), as cited in nukopoli, aynu-corpora Discord 2023-12-08'.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "pragmatic-word-order-dislocation~p1#008",
+  "chapter": "pragmatic-word-order-dislocation",
+  "lines": "101",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation to Shibatani 1990 is marked with 'paren', which appears to be a pipeline artifact indicating a parenthetical citation, but it is not standard markup and may not render correctly. The use of 'paren' as an attribute is not defined in the provided schema.",
+    "quote": "nukopoli, aynu-corpora Discord 2024-11-09; asserted; consistent with <Ref k=\"shibatani1990\" p=\"38\" paren />)",
+    "suggestion": "Replace 'paren' with a standard attribute such as 'note=\"parenthetical\"' or remove it if not needed.",
+    "confidence": 0.85
+   }
+  ]
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "8",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<A w=\"yay-\" gl=\"reflexive\" />",
+  "issue": "The gloss 'reflexive' for 'yay-' is underspecified. In context, it should at minimum be 'REFL' to match Leipzig conventions used elsewhere (e.g., in examples like yay-karkarse-re). Other prefixes like <A w=\"si-\" gl=\"indirect reflexive\" /> use more descriptive glosses, creating inconsistency.",
+  "suggestion": "Change gl=\"reflexive\" to gl=\"REFL\" or gl=\"reflexive\" to match internal conventions.",
+  "confidence": 0.95,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "18",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<A w=\"si-\" gl=\"indirect reflexive\" />",
+  "issue": "The gloss 'indirect reflexive' is a phrase, while other prefix glosses (e.g., 'reciprocal', 'antipassive') are single terms. This creates inconsistency in gloss style. The Leipzig-style gloss in examples uses 'REFL', so this should be standardized.",
+  "suggestion": "Use a standardized gloss such as gl=\"INDIR-REFL\" or gl=\"REFL\" with context in prose.",
+  "confidence": 0.9,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "42",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"yay-kotan\" gl=\"one's own village\" />",
+  "issue": "The gloss 'one's own village' is a free translation, not a morpheme-by-morpheme gloss. Since 'yay-' is glossed as 'one's own' and 'kotan' as 'village', the compound should reflect that structure.",
+  "suggestion": "Use gl=\"REFL-village\" or add a morpheme-level breakdown in prose.",
+  "confidence": 0.85,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "51",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<A w=\"yay-par-oyki\" gl=\"feed oneself\" />",
+  "issue": "The gloss 'feed oneself' does not align with the literal breakdown provided in the same sentence: 'do about one's own mouth'. The morphemes 'yay-', 'par', and 'oyki' are not accurately reflected in the gloss.",
+  "suggestion": "Revise to gl=\"REFL-mouth-do.about\" or provide a more accurate free translation.",
+  "confidence": 0.9,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "82",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<A w=\"yay-kara\" gl=\"treat oneself, attend to oneself\" />",
+  "issue": "The gloss is a free translation, but in context, a morpheme-level gloss like 'REFL-treat' would be more consistent with the treatment of other prefixed forms.",
+  "suggestion": "Use gl=\"REFL-treat\" and keep the free translation in the prose.",
+  "confidence": 0.9,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "107",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "yay-ho-nok-ka",
+  "issue": "The decomposition uses 'REFL-bottom.body.region-CAUS' but 'ho-' is glossed as 'bottom of' elsewhere (line 26). The gloss 'bottom.body.region' is inconsistent with established glossing.",
+  "suggestion": "Use gl=\"REFL-bottom-CAUS\" or update consistently if 'bottom.body.region' is intended as a technical term.",
+  "confidence": 0.8,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "120",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "yay-rayke",
+  "issue": "Inconsistency in hyphenation: 'yay-rayke' is written with a hyphen, but in the example at line 245 it appears as 'yay-rayke' (correct), while in the table at line 163 it is 'yay-pusu'. However, in the example at line 317, 'koyayrayke' is written without hyphens, suggesting possible formatting drift. The prefix 'yay-' should consistently be separated with a hyphen when analyzed.",
+  "suggestion": "Ensure consistent hyphenation in all forms: yay-rayke, si-rayke, etc.",
+  "confidence": 0.85,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "317",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=ko-yay-irayke",
+  "issue": "The morpheme segmentation 'ko-yay-irayke' is glossed as 'APPL-REFL-be.grateful', but the free translation is 'be grateful to someone for something one has experienced oneself'. The gloss does not reflect the double valency shift: applicative (ko-) and reflexive (yay-) both alter argument structure, but the glossing is underspecified.",
+  "suggestion": "Revise gloss to 'APPL-REFL-thank' or 'APPL-REFL-be.grateful' with explanation in note.",
+  "confidence": 0.95,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "330",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "→ yay-ko-ruska (vt, 'be angry at oneself')",
+  "issue": "The arrow notation '→' is used without prior introduction or consistent formatting. In a prose context, this may confuse readers. The surrounding text uses plain text descriptions, so symbolic arrows should be avoided or consistently formatted.",
+  "suggestion": "Use 'becomes' or 'yields' instead of arrows, or set the chain in a list.",
+  "confidence": 0.8,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "349",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "yay-ki-p-niwkes",
+  "issue": "The decomposition uses 'ki' as a light verb glossed as 'do', but no gloss is provided for 'p'. The segment 'p' likely represents a causative or applicative, but it is unglossed, violating Leipzig standards.",
+  "suggestion": "Provide a gloss for 'p' (e.g., 'CAUS' or 'APPL') or justify its absence.",
+  "confidence": 0.9,
+  "chapter": "reflexive-yay",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "9-10",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">kani</i> ‘I’, <i lang=\"ain-Latn\">eani</i> ‘you’,\n\t\t<i lang=\"ain-Latn\">coka</i> ‘we (excluding you)’, <i lang=\"ain-Latn\">asinuma</i> ‘the\n\t\tfourth-person self’",
+  "issue": "Inconsistent capitalization in gloss: 'fourth-person self' is lowercase while other pronouns are capitalized (I, you, we). This creates a stylistic inconsistency in the presentation of formal person labels.",
+  "suggestion": "Capitalize consistently: 'the Fourth-Person Self' or use lowercase for all.",
+  "confidence": 0.9,
+  "chapter": "person-marking-architecture",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "128",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">asinuma</i> / <i lang=\"ain-Latn\">aoka</i>",
+  "issue": "Inconsistent hyphenation: 'asinuma' appears without hyphens, while elsewhere in the chapter (e.g., line 233) it is segmented as 'i=erampokiwen'. The free pronoun form should reflect consistent morphological segmentation or orthographic presentation.",
+  "suggestion": "Use segmented form if intended morphemically, or keep consistently unsegmented in free pronoun list.",
+  "confidence": 0.7,
+  "chapter": "person-marking-architecture",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "130",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">=an</i>",
+  "issue": "The table lists '=an' as the S form for 4/INDEF, but in the example on line 231–233, 'i=erampokiwen' uses 'i=' as the object form and '=an' as the S suffix. However, the gloss '4.O=' is used consistently, suggesting that the fourth-person S form should be 'a=' or 'an=', not '=an'. The suffix '=an' is positionally correct (post-stem), but the prefix/suffix alignment across roles is inconsistent: A=a=, S=an, O=i= — yet the table implies symmetry that isn't fully supported.",
+  "suggestion": "Verify whether the S form should be 'an=' (prefixal) or '=an' (suffixal) and ensure consistency with dialectal variation noted on line 243. If '=an' is correct, clarify that A and S are on different sides.",
+  "confidence": 0.85,
+  "chapter": "person-marking-architecture",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "243-244",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The choice of <i lang=\"ain-Latn\">a=</i> over <i lang=\"ain-Latn\">an=</i> for the fourth-person A\n\t\tis itself dialectal: Saru and the western dialects use <i lang=\"ain-Latn\">a=</i>, while Tokachi,\n\t\tIshikari, Shiranuka, and Samani favour <i lang=\"ain-Latn\">an=</i>",
+  "issue": "Contradicts the table on line 129–130, which lists 'a=' (not 'an=') as the A form for 4/INDEF, with a parenthetical '(dialectally an=)'. But the text says dialects other than Saru use 'an=', implying 'a=' is primary. This creates confusion about which is the default form.",
+  "suggestion": "Revise either the table or the paragraph to align: if 'a=' is Saru and 'an=' elsewhere, the table should list 'a=' as primary with dialectal variant 'an=' in parentheses — which it does — but the text should clarify that 'a=' is the Saru form and 'an=' is the non-Saru variant.",
+  "confidence": 0.9,
+  "chapter": "person-marking-architecture",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "252-253",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "boundary symbols used throughout the grammar follow a working convention: <i\n\t\t\tlang=\"ain-Latn\">=</i\n\t\t> writes the personal-index boundary and <i lang=\"ain-Latn\">-</i> the boundary",
+  "issue": "The HTML tag is incorrectly split across lines, causing potential rendering issues. The closing tag for the first <i> is misplaced due to line break after 'writes'.",
+  "suggestion": "Keep <i lang=\"ain-Latn\">=</i> on a single line to avoid parsing errors.",
+  "confidence": 0.95,
+  "chapter": "person-marking-architecture",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "375-377",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "hunak wa arki=an ru-we an",
+  "issue": "The gloss 'come.PL=4.S' implies the suffix '=an' is the fourth-person S marker, but the free translation is 'Where have you come from?' — addressing a second person. This contradicts the claim that fourth-person forms are used honorifically for second person. The gloss should reflect honorific 2SG/O rather than 4.S if the referent is second person.",
+  "suggestion": "Revise gloss to 'come.PL=HON.2SG.S' or add a note clarifying that fourth-person morphology is used for honorific second person, or adjust the free translation to reflect first-person narrative or inclusive plural.",
+  "confidence": 0.8,
+  "chapter": "person-marking-architecture",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "395-396",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "the homophonous detransitivising prefix <i lang=\"ain-Latn\">i-</i> ‘something’",
+  "issue": "The detransitiviser is described as 'i-', but in example line 231–233, 'i=erampokiwen' uses 'i=' as a fourth-person object marker. The prefix 'i-' and clitic 'i=' are homophonous but differ in boundary symbol (= vs -), yet the text calls them 'homophonous' without clarifying the morphological distinction.",
+  "suggestion": "Clarify that 'i=' (clitic) and 'i-' (prefix) are homophonous in form but differ in attachment and function, and ensure boundary symbols are consistently used to distinguish them.",
+  "confidence": 0.85,
+  "chapter": "person-marking-architecture",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

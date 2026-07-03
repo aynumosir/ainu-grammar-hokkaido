@@ -32,7 +32,7 @@ const modelDir = MODEL.replace(/[^a-z0-9.-]+/gi, '_');
 const OUT_DIR = join(ROOT, '.grammar-build/qa/findings/phase1', modelDir);
 mkdirSync(OUT_DIR, { recursive: true });
 
-const SYSTEM = `${STYLE}\n\nYou will receive one chapter source file with line numbers. Respond with the JSON array of findings only — no prose before or after.`;
+const SYSTEM = `${STYLE}\n\nYou will receive one chapter source file with line numbers. Respond with the JSON array of findings only — no prose before or after. Report at most 25 findings; if you find more, keep the most severe.`;
 
 function numberLines(src: string): string {
 	return src
@@ -41,9 +41,18 @@ function numberLines(src: string): string {
 		.join('\n');
 }
 
+/** Generated apparatus chapters (Tier C — scripts-only, no LLM sweep). */
+const GENERATED = new Set([
+	'index-of-subjects',
+	'index-of-grammatical-morphemes',
+	'index-of-examples-sources-dialects',
+	'consolidated-references-bibliography',
+]);
+
 let slugs = readdirSync(CHAPTER_DIR)
 	.filter((f) => f.endsWith('.svelte'))
 	.map((f) => f.replace(/\.svelte$/, ''))
+	.filter((s) => !GENERATED.has(s))
 	.sort();
 if (ONLY) slugs = slugs.filter((s) => ONLY.includes(s));
 slugs = slugs.filter((s) => !existsSync(join(OUT_DIR, `${s}.json`))).slice(0, LIMIT);
@@ -57,7 +66,7 @@ async function processChapter(slug: string) {
 	const src = readFileSync(join(CHAPTER_DIR, `${slug}.svelte`), 'utf8');
 	try {
 		const out = await chat(MODEL, SYSTEM, `Chapter slug: ${slug}\n\n${numberLines(src)}`, {
-			maxTokens: 12000,
+			maxTokens: 16000,
 		});
 		let findings: any[];
 		try {

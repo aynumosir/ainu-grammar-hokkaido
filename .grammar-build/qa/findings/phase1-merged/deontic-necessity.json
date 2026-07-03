@@ -1,0 +1,665 @@
+[
+ {
+  "id": "deontic-necessity~p1#020",
+  "chapter": "deontic-necessity",
+  "lines": "306-312",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has two 'PURP' tags for 'kus', but the note says 'kus ne here is the intentional/prospective'. The gloss should reflect that 'kus' is the purpose/intention marker, not just 'PURP' twice. Also, 'aan' is glossed as 'PRF.MIR' but the note says 'mirative aan', which is inconsistent with the gloss abbreviation.",
+    "quote": "m=\"kotan wente kus arki kus ne aan ru-we ne wa\"\ng=\"village devastate PURP come.PL PURP COP PRF.MIR track-POSS COP CONJ\"\ntr=\"— it turned out that they had been coming to devastate the village, and …\"",
+    "suggestion": "Change the gloss to: 'village devastate PURP come.PL PURP COP PRF.MIR track-POSS COP CONJ' — but ensure 'aan' is glossed consistently as 'PRF.MIR' or 'MIR' as per the note. The double 'PURP' is acceptable if both instances are purpose markers, but the note should clarify.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme kus is glossed as 'PURP' (purpose), but it appears twice and the second instance (kus ne) is the prospective auxiliary, not a purpose marker; the two uses should be distinguished.",
+    "quote": "g=\"village devastate PURP come.PL PURP COP PRF.MIR track-POSS COP CONJ\"",
+    "suggestion": "Use different glosses: first 'PURP' for purpose kus, second 'INT' or 'PROS' for kusu ne to distinguish intentional from prospective use.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#016",
+  "chapter": "deontic-necessity",
+  "lines": "103-111",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss for 'easirki' is 'must', but the free translation uses 'have to', which is a weaker obligation. The chapter consistently defines 'easirki' as 'must' (strong obligation), so 'have to' is a mismatch in strength.",
+    "quote": "m=\"paye=an easirki p mak e=iki hawe an\"\ng=\"go.PL=4.S must NMLZ what 2SG.A=do voice-POSS exist\"\ntr=\"I have to go — what are you doing?\"",
+    "suggestion": "Change the translation to 'I must go — what are you doing?' or adjust the gloss to 'must, have to' to match the translation.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes =an (fourth person), but the gloss '4.S' in the aligned gloss line is inconsistent: it should be '4.A' to match the agentive =an suffix.",
+    "quote": "m=\"paye=an easirki p mak e=iki hawe an\"",
+    "suggestion": "Change gloss from '4.S' to '4.A' to align with the =an morpheme in the m field.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#010",
+  "chapter": "deontic-necessity",
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kus(u) ne na' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 17, but not in the table on line 70.",
+    "quote": "<i lang=\"ain-Latn\">kus(u) ne na</i>",
+    "suggestion": "Italicize 'kus(u) ne na' on line 70.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'V kus(u) ne na' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 17, but not in the table on line 71.",
+    "quote": "<i lang=\"ain-Latn\">V kus(u) ne na</i>",
+    "suggestion": "Italicize 'V kus(u) ne na' on line 71.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent parentheses use: kus(u) appears with parentheses here but as kusu elsewhere (e.g., line 306).",
+    "quote": "<i lang=\"ain-Latn\">kus(u) ne na</i>",
+    "suggestion": "Standardize to either kusu or kus(u) throughout the chapter.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#002",
+  "chapter": "deontic-necessity",
+  "lines": "14",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'yak pirka' is not consistently italicized throughout the chapter. It appears italicized in the table on lines 46, 52, 58, 64, 70, but not in the prose on line 14.",
+    "quote": "<A w=\"yak pirka\" />",
+    "suggestion": "Italicize 'yak pirka' on line 14.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrases 'yak wen', 'yakka pirka', and 'yakka wen' are not consistently italicized throughout the chapter. They appear italicized in the table on lines 52, 58, 64, 70, but not in the prose on line 15.",
+    "quote": "<A w=\"yak wen\" />, <A w=\"yakka pirka\" />, <A w=\"yakka wen\" />",
+    "suggestion": "Italicize 'yak wen', 'yakka pirka', and 'yakka wen' on line 15.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kus(u) ne' is not consistently italicized throughout the chapter. It appears italicized in the table on line 70, but not in the prose on line 17.",
+    "quote": "<i lang=\"ain-Latn\">kus(u) ne</i>",
+    "suggestion": "Italicize 'kus(u) ne' on line 17.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent parentheses use: sometimes written as kus(u), sometimes as kusu. The form should be orthographically consistent throughout the chapter.",
+    "quote": "kus(u) ne",
+    "suggestion": "Choose one form (preferably kusu) and use it consistently, or use kus(u) consistently if variant spelling is intentional.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#027",
+  "chapter": "deontic-necessity",
+  "lines": "316",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'PURP' for kus is incorrect in this context: here, kus is part of the prospective auxiliary kus ne, not a purpose marker; it should be glossed as 'PROS' or 'INT' (intentional).",
+    "quote": "g=\"2SG.S=go.SG PURP COP FIN\"",
+    "suggestion": "Change 'PURP' to 'PROS' or 'INT' to reflect the prospective meaning of kus in kus ne.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#026",
+  "chapter": "deontic-necessity",
+  "lines": "258",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme eaykap is glossed as 'be.unable', but in the context of double negation (somo ... eaykap), it likely means 'be able'; the gloss should reflect the positive ability meaning under negation.",
+    "quote": "g=\"NEG 4.A=enter.SG be.unable NMLZ COP FIN 2SG.A=enter.SG if be.good FIN\"",
+    "suggestion": "Change 'be.unable' to 'be.able' to correctly reflect the semantics of eaykap in a negative construction.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#025",
+  "chapter": "deontic-necessity",
+  "lines": "172",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme =an is glossed as 'be' in '4.A=be', but 'an' is the fourth-person subject marker, not a form of 'to be'; the verb 'to be' is expressed by ne. The gloss 'be' incorrectly assigns the meaning of ne to =an.",
+    "quote": "m=\"a=an kuni ne na\"",
+    "suggestion": "Change gloss from '4.A=be' to '4.A=be' → '4.A' and 'be' → 'be' should be removed; better: '4.A=exist' or simply '4.A' with 'be' reserved for ne.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#024",
+  "chapter": "deontic-necessity",
+  "lines": "152",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'COMP' for kuni is misleading in this context: the note correctly identifies kuni as an irrealis complementizer, but 'COMP' is underspecified and does not reflect the irrealis nature of the clause; it should be 'IRREAL' or similar to distinguish from other complementizers.",
+    "quote": "g=\"devastate COMP think while exist NMLZ COP PRF.MIR track-POSS COP CONJ\"",
+    "suggestion": "Change 'COMP' to 'IRREAL' or 'PURP' to better reflect the irrealis/purpose function of kuni in this example.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#022",
+  "chapter": "deontic-necessity",
+  "lines": "8-9",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence says 'three distinct constructions', but the chapter describes four main constructions: easirki, kuni ne, yak pirka idioms (four sub-forms), and kus(u) ne na. The number 'three' is inconsistent with the content.",
+    "quote": "Hokkaido Ainu expresses necessity and obligation periphrastically. There is no bound deontic affix; instead, three distinct constructions carry the semantic load.",
+    "suggestion": "Change 'three' to 'four' or list the constructions explicitly.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#021",
+  "chapter": "deontic-necessity",
+  "lines": "324-328",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'iteki e=eyruska kus ne na hani!' includes 'hani', which is not mentioned in the description. The construction is described as 'iteki … kus ne na', but the example adds 'hani', which may be a separate particle. This inconsistency could confuse readers.",
+    "quote": "The construction <i lang=\"ain-Latn\">iteki … kus ne na</i> extends the prohibitive adverb <i lang=\"ain-Latn\">iteki</i> into the mitigated-prohibition frame, producing 'be careful not to V'; Nakagawa provides an attested example and Ijäs's rendering <i lang=\"ain-Latn\">iteki e=eyruska kus ne na hani!</i> matches it",
+    "suggestion": "Either include 'hani' in the description of the construction or note that 'hani' is an optional emphatic particle.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#014",
+  "chapter": "deontic-necessity",
+  "lines": "126",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kuni' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 11, but not in the prose on line 126.",
+    "quote": "<A w=\"kuni\" />",
+    "suggestion": "Italicize 'kuni' on line 126.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ne' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 13, but not in the prose on line 127.",
+    "quote": "<i lang=\"ain-Latn\">ne</i>",
+    "suggestion": "Italicize 'ne' on line 127.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kuni' within the cross-reference is not italicized.",
+    "quote": "<Xr ch=\"kuni-complementizer-purpose-complements\">irrealis complementizer</Xr>",
+    "suggestion": "Italicize 'kuni' within the Xr tag.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#013",
+  "chapter": "deontic-necessity",
+  "lines": "116",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu words 'nankor', 'rusuy', and 'nisa' are not consistently italicized throughout the chapter. They appear italicized in the prose on lines 92 and 97, but not in the prose on line 116.",
+    "quote": "<i lang=\"ain-Latn\">nankor</i>, <i lang=\"ain-Latn\">rusuy</i>, and <i lang=\"ain-Latn\">nisa</i>.",
+    "suggestion": "Italicize 'nankor', 'rusuy', and 'nisa' on line 116.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#012",
+  "chapter": "deontic-necessity",
+  "lines": "104",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'easirki' appears in the morpheme-segmented example (m attribute) but is not italicized.",
+    "quote": "<Ex\n\t\tm=\"paye=an easirki p mak e=iki hawe an\"\n\t\tg=\"go.PL=4.S must NMLZ what 2SG.A=do voice-POSS exist\"\n\t\ttr=\"I have to go — what are you doing?\"\n\t\tcite=\"nakagawa2024:309\"\n\t\tdial=\"CHI\"\n\t\tplace=\"Nakagawa ex. 457\"\n\t\tnote=\"The nominalizer p closes the easirki clause. The final mak e=iki hawe an is a rhetorical question in the hawe-frame existential evidential; the fourth-person =an functions as the narrative first person.\"\n\t/>",
+    "suggestion": "Italicize 'easirki' within the 'm' attribute of the Ex tag.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#011",
+  "chapter": "deontic-necessity",
+  "lines": "91",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'easirki' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 10, but not in the prose on line 91.",
+    "quote": "<A w=\"easirki\" gl=\"must, be obliged to\" />",
+    "suggestion": "Italicize 'easirki' on line 91.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#009",
+  "chapter": "deontic-necessity",
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'yakka wen' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 15, but not in the table on line 64.",
+    "quote": "<i lang=\"ain-Latn\">yakka wen</i>",
+    "suggestion": "Italicize 'yakka wen' on line 64.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'V yakka wen' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 15, but not in the table on line 65.",
+    "quote": "<i lang=\"ain-Latn\">V yakka wen</i>",
+    "suggestion": "Italicize 'V yakka wen' on line 65.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#008",
+  "chapter": "deontic-necessity",
+  "lines": "58",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'yakka pirka' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 15, but not in the table on line 58.",
+    "quote": "<i lang=\"ain-Latn\">yakka pirka</i>",
+    "suggestion": "Italicize 'yakka pirka' on line 58.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'V yakka pirka' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 15, but not in the table on line 59.",
+    "quote": "<i lang=\"ain-Latn\">V yakka pirka</i>",
+    "suggestion": "Italicize 'V yakka pirka' on line 59.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#007",
+  "chapter": "deontic-necessity",
+  "lines": "52",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'yak wen' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 15, but not in the table on line 52.",
+    "quote": "<i lang=\"ain-Latn\">yak wen</i>",
+    "suggestion": "Italicize 'yak wen' on line 52.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'V yak wen (na)' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 15, but not in the table on line 53.",
+    "quote": "<i lang=\"ain-Latn\">V yak wen (na)</i>",
+    "suggestion": "Italicize 'V yak wen (na)' on line 53.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#006",
+  "chapter": "deontic-necessity",
+  "lines": "46",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'yak pirka' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 14, but not in the table on line 46.",
+    "quote": "<i lang=\"ain-Latn\">yak pirka</i>",
+    "suggestion": "Italicize 'yak pirka' on line 46.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'V yak pirka (na)' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 14, but not in the table on line 47.",
+    "quote": "<i lang=\"ain-Latn\">V yak pirka (na)</i>",
+    "suggestion": "Italicize 'V yak pirka (na)' on line 47.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#005",
+  "chapter": "deontic-necessity",
+  "lines": "40",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'kuni (ne)' is not consistently italicized throughout the chapter. It appears italicized in the prose on lines 11 and 13, but not in the table on line 40.",
+    "quote": "<i lang=\"ain-Latn\">kuni (ne)</i>",
+    "suggestion": "Italicize 'kuni (ne)' on line 40.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrases 'V kuni' and 'V kuni ne' are not consistently italicized throughout the chapter. They appear italicized in the prose on lines 11 and 13, but not in the table on line 41.",
+    "quote": "<i lang=\"ain-Latn\">V kuni</i> / <i lang=\"ain-Latn\">V kuni ne</i>",
+    "suggestion": "Italicize 'V kuni' and 'V kuni ne' on line 41.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#004",
+  "chapter": "deontic-necessity",
+  "lines": "34",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'easirki' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 10, but not in the table on line 34.",
+    "quote": "<i lang=\"ain-Latn\">easirki</i>",
+    "suggestion": "Italicize 'easirki' on line 34.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu phrase 'V easirki' is not consistently italicized throughout the chapter. It appears italicized in the prose on line 10, but not in the table on line 35.",
+    "quote": "<i lang=\"ain-Latn\">V easirki</i>",
+    "suggestion": "Italicize 'V easirki' on line 35.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#003",
+  "chapter": "deontic-necessity",
+  "lines": "19",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'na' is not consistently italicized throughout the chapter. It appears italicized in the table on lines 47, 53, 71, but not in the prose on line 19.",
+    "quote": "<i lang=\"ain-Latn\">na</i>",
+    "suggestion": "Italicize 'na' on line 19.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#001",
+  "chapter": "deontic-necessity",
+  "lines": "10",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'easirki' is not consistently italicized throughout the chapter. It appears italicized in the table on lines 34, 40, 46, 52, 58, 64, 70, but not in the prose on line 10.",
+    "quote": "<A w=\"easirki\" gl=\"must, have to\" />",
+    "suggestion": "Italicize 'easirki' on line 10.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'kuni' is not consistently italicized throughout the chapter. It appears italicized in the table on lines 40, 46, 52, 58, 64, 70, but not in the prose on line 11.",
+    "quote": "<A w=\"kuni\" gl=\"should, be supposed to\" />",
+    "suggestion": "Italicize 'kuni' on line 11.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu word 'ne' is not consistently italicized throughout the chapter. It appears italicized in the table on lines 40, 46, 52, 58, 64, 70, but not in the prose on line 13.",
+    "quote": "<i lang=\"ain-Latn\">ne</i>",
+    "suggestion": "Italicize 'ne' on line 13.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#023",
+  "chapter": "deontic-necessity",
+  "lines": "119",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim cites a precise token count (1977) for nankor but gives no source for this number; the epistemic tag ‹corpus-suggested› is too weak for a specific quantitative claim, especially when no citation supports the number.",
+    "quote": "frequency of <i lang=\"ain-Latn\">easirki</i> in the Hokkaido corpus is substantially lower than that of <i lang=\"ain-Latn\">nankor</i> (approximately 1977 tokens) ‹corpus-suggested›",
+    "suggestion": "Add a citation (e.g., to Nakagawa 2024 or a corpus source) for the 1977 token figure, or remove the number and rephrase generically.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#019",
+  "chapter": "deontic-necessity",
+  "lines": "286-302",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The section title says 'kus(u) ne na as near-command', but the prose describes 'kus(u) ne' as the prospective auxiliary, with 'na' as a final particle. The table (lines 70-74) lists 'kus(u) ne na' as the form for near-command. The prose and table are inconsistent: the table treats 'kus(u) ne na' as a unit, while the prose treats 'kus(u) ne' as the auxiliary and 'na' as a separate particle.",
+    "quote": "The prospective auxiliary <i lang=\"ain-Latn\">kus(u) ne</i> — analysed in <Xr ch=\"epistemic-irrealis-modality\" /> as the conjunction <i lang=\"ain-Latn\">kusu</i> plus the copula <i lang=\"ain-Latn\">ne</i> expressing intention or scheduled future <Ref k=\"nakagawa2024\" p=\"435\" />; <Ref k=\"sato2008\" p=\"85–86\" /> — acquires a directive reading when the subject is second person and the final particle <i lang=\"ain-Latn\">na</i> closes the clause.",
+    "suggestion": "Clarify in the prose that the near-command construction is 'kus(u) ne na' as a whole, or adjust the table to show 'kus(u) ne' + 'na' as separate components.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#018",
+  "chapter": "deontic-necessity",
+  "lines": "189",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹consensus› is used for a claim supported only by a single Discord message. Consensus requires broader agreement, not a single community source.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-25) ‹consensus›",
+    "suggestion": "Change to ‹community-source› or remove the tag.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#017",
+  "chapter": "deontic-necessity",
+  "lines": "148",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-confirmed› is used for a claim supported only by a Discord message, not a corpus. Discord is a community source, not a corpus, so the tag is inflated.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-09) ‹corpus-confirmed›",
+    "suggestion": "Change to ‹community-source› or remove the tag, as the source is already cited.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "deontic-necessity~p1#015",
+  "chapter": "deontic-necessity",
+  "lines": "8-20",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The overview says 'kuni' alone expresses normative expectation, but the table (lines 40-43) and section §kuni-ne (lines 124-191) consistently treat 'kuni ne' as the deontic form, with 'kuni' alone being the complementizer. The overview's phrasing is ambiguous and contradicts the later detailed treatment.",
+    "quote": "The auxiliary <A w=\"kuni\" gl=\"should, be supposed to\" /> — the same element that heads purpose-complement clauses — expresses normative expectation or scheduled necessity; combined with the copula <i lang=\"ain-Latn\">ne</i> it forms the predicate <i lang=\"ain-Latn\">kuni ne</i>, the principal deontic proposition form.",
+    "suggestion": "Rephrase to: 'The element <A w=\"kuni\" /> — the same that heads purpose-complement clauses — combines with the copula <i lang=\"ain-Latn\">ne</i> to form the predicate <i lang=\"ain-Latn\">kuni ne</i>, which expresses normative expectation or scheduled necessity.'",
+    "confidence": 0.9
+   }
+  ]
+ }
+]

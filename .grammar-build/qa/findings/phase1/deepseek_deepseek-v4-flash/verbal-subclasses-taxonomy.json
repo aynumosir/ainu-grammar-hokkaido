@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "127–129",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-09) ‹corpus-confirmed›.",
+  "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim supported solely by a Discord message (aynucorporadiscord). According to the briefing, ‹corpus-confirmed› (or ‹consensus›) should not be used when the only evidence is a Discord attribution or a single speculative source.",
+  "suggestion": "Replace the tag with ‹speculative› or remove it, and consider citing a published source if available.",
+  "confidence": 0.95,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "144–152",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"kim ta arpa=an akusu\" g=\"mountain-ward LOC go=4.S when\" tr=\"When (I) went to the mountains…\"",
+  "issue": "The gloss marks the subject as 4 (fourth person) with the suffix -an, but the free translation uses the first-person pronoun 'I'. Fourth person is not equivalent to first person, creating a person-number mismatch between gloss and translation.",
+  "suggestion": "Either change the gloss to reflect first person (e.g., 1SG.S) if the form is intended to be first person, or adjust the translation to match fourth person (e.g., 'When one went…' or 'When we went…').",
+  "confidence": 0.9,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "215–216",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-12) ‹consensus›.",
+  "issue": "The claim about verbal number marking is tagged ‹consensus›, but the only source provided is a Discord message (aynucorporadiscord). The tag is inflated for a non-published, non-corpus source.",
+  "suggestion": "Either provide a published reference (e.g., Nakagawa 2024, Sato 2008) to support the consensus claim, or downgrade the tag to ‹speculative› or remove it.",
+  "confidence": 0.8,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "254–255",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-11-17) ‹corpus-confirmed›.",
+  "issue": "Another Discord source tagged as ‹corpus-confirmed›. The briefing flags this as inappropriate when the only support is a single Discord attribution.",
+  "suggestion": "Replace the tag with ‹speculative› or remove it, and consider citing a published source (e.g., Satō 2008, Nakagawa 2024) for the claim about serial predicates.",
+  "confidence": 0.95,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "342–343",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The sources read for this chapter did not bank specific lexical members of the zero-place class",
+  "issue": "The phrase 'The sources read for this chapter did not bank' is informal, pipeline-oriented language ('bank' as a verb in this sense, 'read for this chapter' is meta). This should be rephrased for a formal reference grammar.",
+  "suggestion": "Rephrase to: 'The sources consulted for this chapter do not list specific lexical members of the zero-place class' or 'No specific lexical members of the zero-place class are documented in the sources consulted for this chapter (Nakagawa 2024: 116–117).'",
+  "confidence": 0.85,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258–259",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "how three-place structure interacts with applicative morphology, is taken up in",
+  "issue": "An extraneous comma after 'morphology' disrupts the sentence flow. The comma is not required before the verb 'is taken up'.",
+  "suggestion": "Remove the comma: 'how three-place structure interacts with applicative morphology is taken up in'.",
+  "confidence": 0.9,
+  "chapter": "verbal-subclasses-taxonomy",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

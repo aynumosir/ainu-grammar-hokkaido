@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "48, 256-259",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the element made topic by anak(ne) or ka",
+  "issue": "The prose groups ka with anak(ne) as topic markers, but the table only lists anak(ne) for topic-marking, and the overview (line 31) calls ka an 'additive-focus particle'.",
+  "suggestion": "Either remove ka from line 48 or add ka to the table as a topic marker.",
+  "confidence": 0.9,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "60-69",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "tr=\"My dog, as for it, never left my side, so it ate with me.\" and note=\"the complex predicate 'never even approached leaving me' follows\"",
+  "issue": "The translation says 'never left my side' but the note says the predicate means 'never even approached leaving me'. These are different.",
+  "suggestion": "Change the translation to 'never even approached leaving me' to match the note, or adjust the note.",
+  "confidence": 0.9,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "198",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "only two examples are documented in the read sources (Bugaeva 2022 ch.1, exx.18–19)",
+  "issue": "'read sources' is a pipeline term referring to the author's reading process, not appropriate for the reader.",
+  "suggestion": "Change to 'documented in the literature' or 'documented by Bugaeva (2022)'.",
+  "confidence": 0.8,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "101, 109",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "nukopoli, aynu-corpora Discord 2024-11-09; asserted; consistent with Shibatani 1990 p.38",
+  "issue": "'asserted' is meta-commentary about the source's status, not standard citation practice.",
+  "suggestion": "Remove 'asserted' or rephrase as 'as asserted by nukopoli'.",
+  "confidence": 0.7,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "199",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "so its frequency and range are open ‹corpus-suggested›.",
+  "issue": "The claim is based on only two examples from one source, not a corpus; the tag ‹corpus-suggested› may be inflated.",
+  "suggestion": "Change to ‹speculative› or remove the tag.",
+  "confidence": 0.5,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,721 @@
+[
+ {
+  "id": "evidential-schema-overview~p1#027",
+  "chapter": "evidential-schema-overview",
+  "lines": "30-33",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The morphemic line has 'Piratur' but the gloss and translation have 'Piraturu'; the Ainu form and its English rendering disagree.",
+    "quote": "m=\"tap a=ye katu Piratur sekor a=ye haw-e ne\" g=\"this 4.A=say manner Piraturu QUOT 4.A=say voice-POSS COP\" tr=\"This way of saying it is called Piraturu, so they say.\"",
+    "suggestion": "Change the morphemic line to 'Piraturu' or change the gloss and translation to 'Piratur'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string contains two instances of 'a=ye', but the gloss only aligns one '4.A=say' and does not account for the second. The gloss should reflect both occurrences.",
+    "quote": "m=\"tap a=ye katu Piratur sekor a=ye haw-e ne\" g=\"this 4.A=say manner Piraturu QUOT 4.A=say voice-POSS COP\"",
+    "suggestion": "Revise gloss to: \"this 4.A=say manner Piraturu QUOT 4.A=say voice-POSS COP\" → \"this 4.A=say manner Piraturu QUOT 4.A=say voice-POSS COP\" with both '4.A=say' present, or clarify if one is extraneous.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#008",
+  "chapter": "evidential-schema-overview",
+  "lines": "158",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for REL+ ACCES− states '— (no indirect *ru-form in southern Hokkaido)'. However, line 492 mentions an 'inferential <i lang=\"ain-Latn\">ru an</i>' in Asahikawa and Shiranuka, which are Hokkaido dialects. This suggests that indirect <i lang=\"ain-Latn\">ru</i> forms *do* exist in some Hokkaido contexts, contradicting the note in the table.",
+    "quote": "— (no indirect <i lang=\"ain-Latn\">*ru</i>-form in southern Hokkaido)",
+    "suggestion": "Clarify the scope of 'southern Hokkaido' or adjust the table note to reflect the existence of indirect <i lang=\"ain-Latn\">ru</i> forms in other Hokkaido dialects.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table lists only ruwe ne under REL+, but the next row (empty cell in first column) includes siri ne in the same ACCES+ column, implying it is also REL+. This contradicts the two-parameter model where REL+ should include only one form.",
+    "quote": "<tr><td>REL+ (highest reliability)</td><td><i lang=\"ain-Latn\">ruwe ne</i></td><td>— (no indirect *ru*-form in southern Hokkaido)</td></tr>",
+    "suggestion": "Revise table to either group siri ne under a separate REL tier or clarify that REL+ includes both ruwe ne and siri ne.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#013",
+  "chapter": "evidential-schema-overview",
+  "lines": "285-287",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"aynucorporadiscord\" /> is placed after the community discussion attribution, but the sentence also refers to Yoshikawa (2020) and Hirosawa's analysis. The citation might be intended to cover the community discussion part only.",
+    "quote": "Community discussion, summarizing Yoshikawa (2020), characterizes <i lang=\"ain-Latn\">ruwe ne</i> as semantically unmarked relative to the other forms — lacking their specific evidentiary highlighting — and as functioning to close a narrative segment and transition to the next (場面転換・統括), consistent with Hirosawa's analysis (nukopoli, aynu-corpora Discord, 2024-03-17) <Ref k=\"aynucorporadiscord\" />; this observation is treated here as corroboration of the literature rather than an independent authority.",
+    "suggestion": "Consider placing <Ref k=\"aynucorporadiscord\" /> immediately after the community discussion attribution '(nukopoli, aynu-corpora Discord, 2024-03-17)' to clarify what it supports.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Cites a Discord post (2024-03-17) for a claim attributed to Yoshikawa 2020, but no citation for Yoshikawa 2020 is given. The only Yoshikawa citation is to Yoshikawa 2018, marked ‹speculative›.",
+    "quote": "Community discussion, summarizing Yoshikawa (2020), characterizes ruwe ne as semantically unmarked... (nukopoli, aynu-corpora Discord, 2024-03-17)",
+    "suggestion": "Add Ref k=\"yoshikawa2020\" or clarify that Yoshikawa 2020 is not cited and the attribution may be inaccurate.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#007",
+  "chapter": "evidential-schema-overview",
+  "lines": "88",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese characters 音・感じ are not italicized or marked with a language tag, unlike other Japanese terms in the chapter (e.g., line 249, 250, 252, 253).",
+    "quote": "音・感じ sound, feeling",
+    "suggestion": "Add `lang=\"ja\"` attribute to the span containing 音・感じ, or italicize them.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of slash in gloss: other entries use single terms (e.g., 'the trace of —'), but this uses a slash. Should be standardized to match the others.",
+    "quote": "'the sound/feeling of —'",
+    "suggestion": "Use either 'the sound of —' or 'the feeling of —', or consistently format as 'the sound or feeling of —'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#033",
+  "chapter": "evidential-schema-overview",
+  "lines": "519",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'appearance-exist' corresponds to 'sir-an', but 'track-POSS' is glossed as 'ru-we', which mismatches the morpheme 'ru-we' (should be 'ruwe'). Also, 'MIR' is not defined in the example or prose.",
+    "quote": "g=\"smoke rise while appearance-exist track-POSS COP MIR\"",
+    "suggestion": "Revise gloss to: 'appearance-exist track-POSS COP admirative' and define 'anan' as 'admirative' in note or tr.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#032",
+  "chapter": "evidential-schema-overview",
+  "lines": "477",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent italicization: other formal nouns are in italics (e.g., ruwe), but these concept forms are not. Should be standardized.",
+    "quote": "ru / sir / haw / hum",
+    "suggestion": "Italicize: <i lang=\"ain-Latn\">ru / sir / haw / hum</i>",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of parentheses: 'for' is used instead of 'of' or standard gloss notation. Also, 'sin' and 'aw' are not linked to dialects or sources in this sentence.",
+    "quote": "allomorphs <i lang=\"ain-Latn\">sin</i> (for <i lang=\"ain-Latn\">sir</i>) and <i lang=\"ain-Latn\">aw</i> (for <i lang=\"ain-Latn\">haw</i>)",
+    "suggestion": "Use: 'allomorphs <i lang=\"ain-Latn\">sin</i> of <i lang=\"ain-Latn\">sir</i> and <i lang=\"ain-Latn\">aw</i> of <i lang=\"ain-Latn\">haw</i>' and ensure source covers this.",
+    "confidence": 0.65
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#029",
+  "chapter": "evidential-schema-overview",
+  "lines": "103",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is applied to a claim about what the dictionary says (a factual statement), not to a speculation by the author. The dictionary's own lack of resolution is not speculative.",
+    "quote": "Whether the concept form (sir, haw) and the corresponding possessed form carry a usage or nuance difference is explicitly left unresolved in Tamura's dictionary <Ref k=\"tamura1996\" p=\"s.v. sir\" /> ‹speculative›.",
+    "suggestion": "Remove the ‹speculative› tag (or replace it with a tag that accurately reflects the statement's status, e.g., no tag needed).",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#026",
+  "chapter": "evidential-schema-overview",
+  "lines": "552",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"yoshikawa2018\" /> is marked as 'cited second-hand' and is preceded by a reference to Hirosawa (2026). It's unclear if <Ref k=\"yoshikawa2018\" /> is the primary source for Yoshikawa's argument or if Hirosawa's work is the actual source being consulted for Yoshikawa's views.",
+    "quote": "Yoshikawa argues that <i lang=\"ain-Latn\">aan</i> signals indirect evidentiality plus mirativity (reported via <Ref k=\"hirosawa2026\" p=\"90\" />) <Ref k=\"yoshikawa2018\" /> ‹speculative — Yoshikawa 2018 cited second-hand›.",
+    "suggestion": "Clarify the citation chain. If Hirosawa (2026) is the source for Yoshikawa's argument, then <Ref k=\"yoshikawa2018\" /> might be redundant or should be presented differently to indicate it's a secondary citation.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#023",
+  "chapter": "evidential-schema-overview",
+  "lines": "486",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 'versatile nominalization' is not italicized or marked with a language tag, unlike other Japanese terms in the chapter (e.g., line 249, 250, 252, 253).",
+    "quote": "Kindaichi and Chiri had already noted the nominalizers in conjunction-like uses; Takahashi shows Horobetsu has systematized this extension, bringing evidentiality into the set of categories expressed in adverbial clauses alongside aspect and modality — an instance of 'versatile nominalization' <Ref k=\"takahashi2018\" p=\"112\" /> ‹corpus-suggested›.",
+    "suggestion": "Add `lang=\"ja\"` attribute to the span containing 'versatile nominalization', or italicize it.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#022",
+  "chapter": "evidential-schema-overview",
+  "lines": "411",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese term 'unmarked' is not italicized or marked with a language tag, unlike other Japanese terms in the chapter (e.g., line 249, 250, 252, 253).",
+    "quote": "uses <i lang=\"ain-Latn\">ru</i>, which is unmarked for information type",
+    "suggestion": "Add `lang=\"ja\"` attribute to the span containing 'unmarked', or italicize it.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#018",
+  "chapter": "evidential-schema-overview",
+  "lines": "331",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This note states that <i lang=\"ain-Latn\">un</i> is not evidential. However, the table lists '<i lang=\"ain-Latn\">NMLZ + un</i>' as an 'affirmative answer' frame. While not directly evidential, it functions as a response frame, which could be considered a type of discourse function related to evidentiality or speech acts.",
+    "quote": "<i lang=\"ain-Latn\">un</i> is a final particle, not itself evidential",
+    "suggestion": "Consider if a slight rephrasing is needed to avoid potential confusion, or if the current phrasing is sufficient given the context of 'affirmative answer'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#017",
+  "chapter": "evidential-schema-overview",
+  "lines": "329",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'NMLZ' is not defined or glossed in this chapter. While it's likely an abbreviation for nominalizer, it's not explicitly stated.",
+    "quote": "<i lang=\"ain-Latn\">NMLZ + un</i>",
+    "suggestion": "Define 'NMLZ' on first use, or replace it with a more descriptive term like 'NOMINALIZER'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#016",
+  "chapter": "evidential-schema-overview",
+  "lines": "324",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'NMLZ' is not defined or glossed in this chapter. While it's likely an abbreviation for nominalizer, it's not explicitly stated.",
+    "quote": "<i lang=\"ain-Latn\">NMLZ</i> (bare)",
+    "suggestion": "Define 'NMLZ' on first use, or replace it with a more descriptive term like 'NOMINALIZER'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#015",
+  "chapter": "evidential-schema-overview",
+  "lines": "319",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'NMLZ' is not defined or glossed in this chapter. While it's likely an abbreviation for nominalizer, it's not explicitly stated.",
+    "quote": "<i lang=\"ain-Latn\">NMLZ + an</i>",
+    "suggestion": "Define 'NMLZ' on first use, or replace it with a more descriptive term like 'NOMINALIZER'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#014",
+  "chapter": "evidential-schema-overview",
+  "lines": "314",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The term 'NMLZ' is not defined or glossed in this chapter. While it's likely an abbreviation for nominalizer, it's not explicitly stated.",
+    "quote": "<i lang=\"ain-Latn\">NMLZ + ne</i>",
+    "suggestion": "Define 'NMLZ' on first use, or replace it with a more descriptive term like 'NOMINALIZER'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#010",
+  "chapter": "evidential-schema-overview",
+  "lines": "249-253",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese terms <span lang=\"ja\">確説法</span> / <span lang=\"ja\">事実法</span> are not consistently formatted with the other Japanese terms in this sentence. They are not enclosed in a span with `lang=\"ja\"` and are not italicized.",
+    "quote": "<span lang=\"ja\">見説法</span> (seeing-speech mood), <i lang=\"ain-Latn\">hawe</i> the <span lang=\"ja\">聞説法</span>, <i lang=\"ain-Latn\">humi</i> the <span lang=\"ja\">感説法</span>, and <i lang=\"ain-Latn\">ruwe</i> the <span lang=\"ja\">確説法</span> / <span lang=\"ja\">事実法</span>",
+    "suggestion": "Wrap <span lang=\"ja\">確説法</span> / <span lang=\"ja\">事実法</span> in a span with `lang=\"ja\"` and italicize them, similar to the other Japanese terms in the sentence.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#009",
+  "chapter": "evidential-schema-overview",
+  "lines": "206-207",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"aynucorporadiscord\" /> is placed after the entire sentence, including the specific date and username. It should ideally be placed directly after the community discussion attribution.",
+    "quote": "Community discussion characterizes <i lang=\"ain-Latn\">ruwe ne</i> in the same terms — frequent especially in oral narratives and legends, functioning like Japanese <span lang=\"ja\">のだ</span> to close narrative segments and mark topic shifts (nukopoli, aynu-corpora Discord, 2024-11-09) <Ref k=\"aynucorporadiscord\" />.",
+    "suggestion": "Move <Ref k=\"aynucorporadiscord\" /> to immediately follow '(nukopoli, aynu-corpora Discord, 2024-11-09)'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#006",
+  "chapter": "evidential-schema-overview",
+  "lines": "80",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese character 声 is not italicized or marked with a language tag, unlike other Japanese terms in the chapter (e.g., line 249, 250, 252, 253).",
+    "quote": "声 voice",
+    "suggestion": "Add `lang=\"ja\"` attribute to the span containing 声, or italicize it.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#005",
+  "chapter": "evidential-schema-overview",
+  "lines": "72",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese characters 様子・天候・大地 are not italicized or marked with a language tag, unlike other Japanese terms in the chapter (e.g., line 249, 250, 252, 253).",
+    "quote": "様子・天候・大地 appearance, weather, land",
+    "suggestion": "Add `lang=\"ja\"` attribute to the span containing 様子・天候・大地, or italicize them.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#004",
+  "chapter": "evidential-schema-overview",
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Japanese characters 跡・道 are not italicized or marked with a language tag, unlike other Japanese terms in the chapter (e.g., line 249, 250, 252, 253).",
+    "quote": "跡・道 track, path",
+    "suggestion": "Add `lang=\"ja\"` attribute to the span containing 跡・道, or italicize them.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#001",
+  "chapter": "evidential-schema-overview",
+  "lines": "13-14",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation <Ref k=\"hirosawa2026\" p=\"64\" /> appears after the claim about the sensory origin of the formal nouns, but it is unlikely to support this specific detail, as it is cited for the general evidential values in line 14. The citation for the sensory origin is <Ref k=\"nakagawa2024\" p=\"258, 390–392\" />.",
+    "quote": "The four formal nouns that build the construction — <i lang=\"ain-Latn\">ruwe</i>, <i lang=\"ain-Latn\">siri</i>, <i lang=\"ain-Latn\">hawe</i>, and <i lang=\"ain-Latn\">humi</i> — are each the possessed form of a common sensory noun, and they carry their sensory origin into their evidential meaning <Ref k=\"nakagawa2024\" p=\"258, 390–392\" />; <Ref k=\"hirosawa2026\" p=\"64\" />.",
+    "suggestion": "Move <Ref k=\"hirosawa2026\" p=\"64\" /> to follow the claim about the four formal nouns and their evidential values, or remove it if it does not support the preceding claim.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#034",
+  "chapter": "evidential-schema-overview",
+  "lines": "520",
+  "category": "translation-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The translation 'it turned out' implies inferential evidentiality, but the example includes both siri an (indirect visual) and ruwe ne (direct inferential), with anan (admirative). The translation does not reflect the layered evidentiality or surprise.",
+    "quote": "tr=\"Smoke was rising — it turned out!\"",
+    "suggestion": "Revise to capture surprise and discovery: 'Smoke was rising — so that's what it was!' or similar.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#031",
+  "chapter": "evidential-schema-overview",
+  "lines": "212",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table caption attributes data to Dal Corso 2018 p. 72, but the prose (line 198) says the counts are from 'Dal Corso's Hokkaido reference texts' — implying multiple sources. This risks misrepresenting the citation as covering the full corpus.",
+    "quote": "Token frequencies in Dal Corso's Hokkaido reference corpora <Ref k=\"dalcorso2018\" p=\"72\" />",
+    "suggestion": "Revise caption to: 'Token frequencies in Dal Corso's (2018) Hokkaido reference texts (p. 72)' to match prose.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#030",
+  "chapter": "evidential-schema-overview",
+  "lines": "180-182",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Contradicts earlier claim that ruwe ne is highest reliability (REL+), while siri ne is not. Here, siri ne is grouped with ruwe ne as 'higher-reliability', conflicting with the table's REL+/REL− distinction.",
+    "quote": "The underlying sense hierarchy runs Sight > Smell/Taste–Touch > Hearing, yielding a coarser visual/non-visual split: ruwe ne and siri ne are the higher-reliability direct members, humi ne and hawe ne the lower",
+    "suggestion": "Clarify whether siri ne is REL+ or REL−, or revise the hierarchy description to reflect a three-tier model.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#028",
+  "chapter": "evidential-schema-overview",
+  "lines": "517-524",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note refers to the embedded form as 'siri an', but the example's morphemic line shows 'sir-an' (bare concept form), not the possessed 'siri'. This contradicts the note's description.",
+    "quote": "note=\"... The indirect visual siri an is embedded under the direct ruwe ne ...\"",
+    "suggestion": "Change the note to 'sir an' (or 'sir-an') to match the example, or adjust the example to 'siri an' if the source supports the possessed form.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#025",
+  "chapter": "evidential-schema-overview",
+  "lines": "524",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that <i lang=\"ain-Latn\">ruwe ne</i> systematically functions as a higher-scope operator, ratifying another evidential's output. This aligns with the idea of <i lang=\"ain-Latn\">ruwe ne</i> being the 'epistemic-incorporation operator' mentioned in line 537. However, the preceding text in section 'Double evidentiality' (lines 510-514) describes a scenario where a character's indirect source is placed within the narrator's <i lang=\"ain-Latn\">ruwe ne</i>, yielding both the character's subjective source and the narrator's assertion of the event as traditional knowledge. This implies <i lang=\"ain-Latn\">ruwe ne</i> is not just ratifying, but also asserting traditional knowledge.",
+    "quote": "The supporting outer form is systematically <i lang=\"ain-Latn\">ruwe ne</i>, never <i lang=\"ain-Latn\">siri ne</i> — evidence that <i lang=\"ain-Latn\">ruwe ne</i> functions as a higher-scope operator that ratifies another evidential's output as established fact.",
+    "suggestion": "Ensure the description of <i lang=\"ain-Latn\">ruwe ne</i>'s function as a higher-scope operator is consistent with its role in asserting traditional knowledge, as described in the example.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#024",
+  "chapter": "evidential-schema-overview",
+  "lines": "492",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence states that the <i lang=\"ain-Latn\">ru</i> form enters the indirect frame in Asahikawa and Shiranuka. This contradicts the note in the table on line 158, which states there is 'no indirect *ru-form in southern Hokkaido'. While this sentence specifies northern dialects, it implies that <i lang=\"ain-Latn\">ru</i> *can* be indirect in Hokkaido, which is a broader claim than the table's specific exclusion for the south.",
+    "quote": "Asahikawa and Shiranuka show an inferential <i lang=\"ain-Latn\">ru an</i>, with the trace-noun entering the indirect frame in apparent complementary distribution with the <i lang=\"ain-Latn\">siri an</i> of the southern dialects <Ref k=\"dalcorso2018\" p=\"326\" />.",
+    "suggestion": "Ensure consistency between the table note and this statement about dialectal variation. The table note could be more precise about the geographical limitations of the absence of indirect <i lang=\"ain-Latn\">ru</i> forms.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#021",
+  "chapter": "evidential-schema-overview",
+  "lines": "380-382",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the intentive <i lang=\"ain-Latn\">kusu ne</i> cannot follow the evidential <i lang=\"ain-Latn\">ruwe ne</i>, but then provides an example where <i lang=\"ain-Latn\">kusu ne ruwe ne</i> is well-formed. This is a direct contradiction. It's possible the example is meant to illustrate the opposite, or there's a typo in the example or the preceding statement.",
+    "quote": "The layering is transparent from ordering: the formal noun may be followed by aspectual material (<i lang=\"ain-Latn\">a</i>, <i lang=\"ain-Latn\">nankor</i>), final particles (<i lang=\"ain-Latn\">na</i>, <i lang=\"ain-Latn\">wa</i>), and clause-linkers (<i lang=\"ain-Latn\">hine</i>, <i lang=\"ain-Latn\">kusu</i>), but the intentive <i lang=\"ain-Latn\">kusu ne</i> ('intends to') cannot follow the evidential: <i lang=\"ain-Latn\">kusu ne ruwe ne</i> is well-formed but <i lang=\"ain-Latn\">*ruwe ne kusu ne</i> is not <Ref k=\"nakagawa2024\" p=\"393\" />.",
+    "suggestion": "Correct the example or the statement to be consistent. If <i lang=\"ain-Latn\">kusu ne ruwe ne</i> is well-formed, then the statement that the intentive cannot follow the evidential is incorrect. If <i lang=\"ain-Latn\">*ruwe ne kusu ne</i> is the correct ungrammatical form, then the example <i lang=\"ain-Latn\">kusu ne ruwe ne</i> should be presented as well-formed, and the statement should reflect that the evidential follows the intentive.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#020",
+  "chapter": "evidential-schema-overview",
+  "lines": "365",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the evidential scopes over the whole clause including the number distinction. However, line 374 states that the formal noun scopes over the TAM-marked clause, and TAM includes aspectual auxiliaries, perfective <i lang=\"ain-Latn\">a</i>, and negation. It's unclear if number is considered part of TAM in this context, or if the evidential's scope is being described in relation to TAM.",
+    "quote": "The suppletive plural come-form arki (vs. singular ek) encodes number inside the nominalized clause; the evidential scopes over the whole clause including this number distinction.",
+    "suggestion": "Clarify whether number is considered part of TAM for the purpose of evidential scope, or rephrase to explicitly state that the evidential scopes over the nominalized clause which contains the number distinction.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#019",
+  "chapter": "evidential-schema-overview",
+  "lines": "342",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss provided for the negated example is 'it is a fact that [one does not …]'. This implies that <i lang=\"ain-Latn\">somo</i> negates the embedded clause, and <i lang=\"ain-Latn\">ruwe ne</i> asserts the factuality of that negated clause. However, the preceding sentence states that the formal noun remains outside the scope of negation. This gloss seems to contradict that statement by showing <i lang=\"ain-Latn\">ruwe ne</i> asserting the fact of the negation.",
+    "quote": "(<i lang=\"ain-Latn\">…somo ki ruwe ne</i> 'it is a fact that [one does not …]')",
+    "suggestion": "Clarify the scope of negation and the role of <i lang=\"ain-Latn\">ruwe ne</i> in relation to it. Ensure the gloss accurately reflects the described grammatical structure.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#012",
+  "chapter": "evidential-schema-overview",
+  "lines": "281",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Hirosawa and Dal Corso disagree on the framework for <i lang=\"ain-Latn\">ruwe ne</i>. However, the preceding sentences describe Hirosawa's argument (discourse-new information, speaker's territory) and Dal Corso's argument (inapplicable territory-of-information account). The disagreement is about the *framework* for <i lang=\"ain-Latn\">ruwe ne</i>, not necessarily about its function itself, which might be more nuanced than a simple disagreement.",
+    "quote": "These two recent treatments disagree on the right framework for <i lang=\"ain-Latn\">ruwe ne</i> ‹contested›.",
+    "suggestion": "Clarify the nature of the disagreement: is it about the best theoretical framework, or about the specific semantic/pragmatic function of <i lang=\"ain-Latn\">ruwe ne</i>?",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#011",
+  "chapter": "evidential-schema-overview",
+  "lines": "271-272",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence claims that the ontological type of the predicate independently constrains the available evidential choice with ‹consensus›. However, the preceding sentence states that the choice is constrained by information source *and* ontological type, and the following section 'Predication type and the Tokachi stage-level constraint' details this constraint. The word 'independently' might be misleading if the two factors (source and predicate type) interact.",
+    "quote": "The ontological type of the predicate thus independently constrains the available evidential ‹consensus›.",
+    "suggestion": "Rephrase to clarify the relationship between information source and predicate type, or remove 'independently' if it implies they operate in isolation.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#003",
+  "chapter": "evidential-schema-overview",
+  "lines": "21-23",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This sentence states that there are four direct evidential forms using <i lang=\"ain-Latn\">ne</i>, and a parallel set of indirect counterparts. However, the table in section 'eight-form' (lines 146-176) shows that <i lang=\"ain-Latn\">siri</i> and <i lang=\"ain-Latn\">hawe</i> have two indirect forms each (<i lang=\"ain-Latn\">siri an</i>, <i lang=\"ain-Latn\">siri ki</i>; <i lang=\"ain-Latn\">hawe as</i>), while <i lang=\"ain-Latn\">ruwe</i> has no indirect form listed, and <i lang=\"ain-Latn\">humi</i> has one (<i lang=\"ain-Latn\">humi as</i>). This results in more than four indirect forms, not a simple parallel set.",
+    "quote": "Four <em>direct</em> evidential forms use the copula <i lang=\"ain-Latn\">ne</i>; a parallel set of indirect counterparts replaces it with the existential <i lang=\"ain-Latn\">an</i>, the action verb <i lang=\"ain-Latn\">ki</i>, or the posture verb <i lang=\"ain-Latn\">as</i> <Ref k=\"dalcorso2018\" p=\"304–314\" />.",
+    "suggestion": "Rephrase to accurately reflect the number and distribution of indirect forms, or clarify what 'parallel set' refers to.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "evidential-schema-overview~p1#002",
+  "chapter": "evidential-schema-overview",
+  "lines": "17-20",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the copula anchors the proposition to the speaker's direct or reflective perspective. However, line 21 states that the four *direct* evidential forms use the copula <i lang=\"ain-Latn\">ne</i>, implying that <i lang=\"ain-Latn\">ne</i> is specifically for direct evidentiality, not reflective perspective.",
+    "quote": "The structural template is [CLAUSE]-FORMAL.NOUN + <i lang=\"ain-Latn\">ne</i>: the nominalized event is presented as the possessed trace, appearance, voice, or feeling of something, and the copula closes the predication. The formal noun specifies the information channel; the copula anchors the proposition to the speaker's direct or reflective perspective.",
+    "suggestion": "Clarify whether <i lang=\"ain-Latn\">ne</i> is exclusively for direct evidentiality or if it can also anchor reflective perspectives. If it's only for direct, rephrase the sentence to reflect that.",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

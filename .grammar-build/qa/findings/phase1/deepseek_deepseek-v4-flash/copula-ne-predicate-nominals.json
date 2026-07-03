@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "152–155",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The read sources do not apply the Higgins four-way classificational/specificational/identificational grid; the following typology is editorial synthesis from the attested data, not a claim drawn from any single source ‹original-needs-review›.",
+  "issue": "Pipeline terms 'read sources', 'editorial synthesis', and the internal tag ‹original-needs-review› appear in the prose, which is inappropriate for the final published text.",
+  "suggestion": "Rewrite to remove pipeline language, e.g. 'The attested uses fall into three functional types. The Higgins four-way grid is not applied in the literature; the typology below is based on the attested data.' Remove the tag.",
+  "confidence": 1,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "193–194",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Whether Hokkaido Ainu morphosyntactically distinguishes specificational from identificational readings is not addressed by any read source ‹original-needs-review›.",
+  "issue": "Pipeline term 'read source' and internal tag ‹original-needs-review› appear in the prose.",
+  "suggestion": "Replace 'read source' with 'source in the literature' and remove the tag.",
+  "confidence": 1,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "355–356",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "No read grammar catalogues the behaviour",
+  "issue": "Pipeline term 'read grammar' appears in the prose.",
+  "suggestion": "Replace with 'No published grammar catalogues the behaviour' or 'No grammar in the literature catalogues the behaviour'.",
+  "confidence": 1,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "453–454",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The form oray does not appear in the Hokkaido corpus as a copula and is unattested in that function in any other read source ‹corpus-suggested›",
+  "issue": "Pipeline term 'read source' appears in the prose.",
+  "suggestion": "Replace 'read source' with 'source consulted' or 'published source'.",
+  "confidence": 1,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "468–474",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The read sources use 'equative' and 'attributive/class-membership' as the descriptive labels for the semantic range of ne (Refsing1986 p.145; Nakagawa2022pos p.474). No source applies the Higgins-style four-way grid to Ainu, and no read source tests whether Hokkaido Ainu morphosyntactically distinguishes a specificational from an identificational reading. The three-way table in §Semantic readings is editorial synthesis ‹original-needs-review›.",
+  "issue": "Pipeline terms 'read sources', 'read source', 'editorial synthesis', and internal tag ‹original-needs-review› appear in the prose.",
+  "suggestion": "Rewrite to remove pipeline language, e.g. 'The literature uses \"equative\" and \"attributive/class-membership\" as the descriptive labels... No source applies the Higgins-style four-way grid to Ainu, and no source tests whether Hokkaido Ainu morphosyntactically distinguishes a specificational from an identificational reading. The three-way table in §Semantic readings is based on the attested data.' Remove the tag.",
+  "confidence": 1,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "172–183",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Equative / identificational: both subject and complement are referential noun phrases placed in an identity relation (Refsing1986 p.145):\n\n<Ex m=\"Eani anak repunkur ne\" g=\"2SG TOP foreigner COP\" tr=\"You are a foreigner.\" cite=\"refsing1986:145\" dial=\"SHI\" />",
+  "issue": "The example 'You are a foreigner' has a non-referential complement ('foreigner' denotes a kind, not a specific individual), contradicting the description that both NPs are referential. This example is actually classificational, not equative/identificational.",
+  "suggestion": "Either replace the example with a true equative (e.g. 'That person is John') or revise the description to match the example (e.g. 'equative/attributive' or 'identificational/class-membership').",
+  "confidence": 0.9,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "99–134",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "<th>person (Saru/Chitose)</th>",
+  "issue": "The table header specifies 'Saru/Chitose' dialects, but the examples for 2SG and 3 are from Refsing (likely Shizunai dialect, as indicated by dial='SHI' elsewhere in the chapter). This creates a mismatch between the header and the data.",
+  "suggestion": "Either change the header to 'person (Saru/Chitose, Shizunai)' or ensure all examples are from Saru/Chitose sources.",
+  "confidence": 0.7,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

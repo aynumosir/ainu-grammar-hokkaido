@@ -1,0 +1,1055 @@
+[
+ {
+  "id": "accent-in-compounds-and-affixation~p1#027",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "253-254",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The morphemic line (m) has 'a=kore' but the gloss has '4.A=give'. The gloss '4.A' corresponds to the indefinite person prefix a=, but the verb stem is 'kore' (not 'kor'). The gloss should be '4.A=give' for 'a=kore', but the morphemic segmentation shows 'a=kore' which is correct. However, the gloss 'give' does not match the stem 'kore' which is a lexicalized form of 'kor-e' (have-CAUS). The gloss should reflect the lexicalized meaning 'give' but the morphemic analysis is inconsistent with the gloss.",
+    "quote": "m=\"topenpe atay poka ka somo a=kore\"\nain=\"tópenpe atay póka ka somo a=koré\"\ng=\"sweet price even also NEG 4.A=give\"",
+    "suggestion": "Either change the morphemic line to 'a=kor-e' to match the gloss '4.A=have-CAUS' or change the gloss to '4.A=give' and note the lexicalization. The current mismatch between 'kore' (m) and 'give' (g) is acceptable if explained, but the gloss '4.A=give' implies a single morpheme 'kore' which contradicts the analysis in the text.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The free translation 'She couldn't even be given the price of one sweet' implies a passive meaning ('be given'), but the gloss '4.A=give' with 4th person indefinite subject would normally be active ('one gives' or 'someone gives'). The translation seems to interpret 'a=kore' as passive, which is not reflected in the gloss.",
+    "quote": "m=\"topenpe atay poka ka somo a=kore\"\ng=\"sweet price even also NEG 4.A=give\"\ntr=\"She couldn't even be given the price of one sweet.\"",
+    "suggestion": "Either adjust the translation to reflect the active indefinite subject ('One couldn't even give the price of one sweet') or add a note explaining the passive interpretation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme segmentation is 'a=kore', but the Ainu line is 'a=koré', with accent on 'ré'. The gloss '4.A=give' does not reflect the accent. The free translation says 'be given', which matches 'give'. But the morpheme 'kore' is written without accent in 'm', but with accent in 'ain'. Inconsistency between 'm' and 'ain' fields.",
+    "quote": "a=kore",
+    "suggestion": "Ensure 'm' field matches 'ain' field: change 'kore' to 'koré' in 'm'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#022",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "420",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states the primary accent is on 'rú' in 'irúska=àn'. However, 'iruska' has an open σ1 ('i'), so according to the general rule (lines 8-10), the accent should be on σ2 ('rú'). This is consistent. The issue is that the notation 'á' and 'à' is used for primary and secondary accents, but the chapter primarily uses acute accents for high pitch. This introduces a new notation without explanation.",
+    "quote": "primary accent á on\n<i lang=\"ain-Latn\">rú</i>, secondary accent à on <i lang=\"ain-Latn\">àn</i>",
+    "suggestion": "Explain the notation for primary and secondary accents, or use consistent notation throughout the chapter.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'ipe' has accent 'ipé'. This is consistent with 'ipe' having an open σ1 ('i') and accent on σ2 ('pé'). However, the explanation for 'iruska' (lines 419-421) uses 'á' for primary accent and 'à' for secondary accent. This example uses 'é' and 'à', which is inconsistent notation.",
+    "quote": "<i lang=\"ain-Latn\">ipe</i> 'eat' with <i lang=\"ain-Latn\">=an</i> gives\n<i lang=\"ain-Latn\">ipé=àn</i>.",
+    "suggestion": "Use consistent notation for primary and secondary accents throughout the chapter.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'primary accent á on rú' but the form 'irúska' has the acute accent on 'rú' (σ2), which is correct for a word with open σ1. However, the secondary accent is marked with a grave accent 'àn', but the text says 'secondary accent à on àn' — the grave accent is on the first 'à' of 'àn', which is correct. But the notation 'irúska=àn' uses a grave on the suffix, while the primary accent is acute. This is consistent, but the description 'primary accent á on rú' is confusing because 'rú' already has an acute accent in 'irúska'. The issue is that the primary accent is on 'rú' (σ2), not on the first syllable.",
+    "quote": "irúska=àn (primary accent á on rú, secondary accent à on àn)",
+    "suggestion": "Clarify: 'primary accent on rú (σ2), secondary accent on àn (the suffix)'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form 'ipé=àn' shows the primary accent on 'pé' (σ2 of 'ipe') and secondary on 'àn'. But earlier in the chapter, 'ipe' is given as having accent on σ2 (ipé) in the context of 'ku=ipe' → 'kúype'. The accent pattern for 'ipe' is consistent, but the secondary accent on '=àn' after a vowel-final stem is described as 'secondary (lower-level) accent'. However, the notation 'ipé=àn' uses an acute on 'pé' and a grave on 'àn', which is consistent with the description.",
+    "quote": "irúska=àn (primary accent á on rú, secondary accent à on àn); ipe 'eat' with =an gives ipé=àn",
+    "suggestion": "No change needed, but ensure consistency with the earlier example of 'ku=ipe'.",
+    "confidence": 0.3
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'cis=an' and 'sap=an' have primary accent on σ1 because both stems have closed σ1. But 'cis' is CVC (closed) → accent on σ1, and 'sap' is CVC (closed) → accent on σ1. However, the forms are written without any accent mark, which is inconsistent with the notation used elsewhere (e.g., 'irúska=àn' has accents marked). The lack of accent marks on 'cis=an' and 'sap=an' could be interpreted as unaccented, but the text says they carry primary accent on σ1.",
+    "quote": "When the stem ends in a consonant, the secondary accent on the suffix is lost: cis=an 'we cry' and sap=an 'we go out' carry only the primary accent on σ1 (both stems have closed σ1 → 原則1) with no secondary peak on =an",
+    "suggestion": "Add accent marks: 'cís=an' and 'sáp=an' to show the primary accent on σ1.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#048",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "349",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that 'en=' has closed σ1 (en, CVC), so 原則1 places accent on σ1. But 'en' is two consonants and a vowel — 'e' is the nucleus, 'n' the coda — so 'en' is CVC, closed. Correct. But in the example 'wa én=kore', the accent is on 'én', which is σ1 — correct. But the spelling 'én' shows the accent, which is fine. No error, but the earlier analysis of 'ku=' as CV (open) vs 'en=' as CVC (closed) is critical. 'ku' is CV, open; 'en' is CVC, closed — so different accent rules apply. This is consistent.",
+    "quote": "en= (closed σ1 (en, CVC))",
+    "suggestion": "No change needed, but ensure consistency in syllabification of clitic forms.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#047",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "237",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that a regular causative from 'kor' + '-e' would yield *kóre, with σ1 'kor' (CVC) → 原則1 → accent on σ1 'kó'. But 'kóre' has the accent on 'ó', which is in the first syllable — correct. However, the expected form should be 'kóre' with accent on 'ko', but the spelling 'kóre' suggests the accent is on the vowel 'o', which is fine. But the actual attested form is 'koré', with accent on the second syllable. The contradiction is that the expected form *kóre has accent on σ1, but the attested form 'koré' has accent on σ2, which contradicts the rule unless the word is reanalyzed as disyllabic with open σ1.",
+    "quote": "*kóre",
+    "suggestion": "Clarify that the expected form *kóre follows from CVC σ1 → 原則1, but attested 'koré' suggests reanalysis as CV.CVC with open σ1 → 原則2.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#045",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "131",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The text states that 'somo' has open σ1 (so) → 原則2 → accent on σ2 (mó). But 'somo' is two syllables: so.mo. σ1 is 'so' (CV, open), so accent should fall on σ2 'mó'. This is correct. But in the example 'ka somó ki', 'somó' is written with accent on 'mó', which is σ2 — correct. However, in the doubled form 'somósomo', the accent is on the first 'mó', which is σ2 of the first 'somo', but now σ1 of the entire word is 'so' (CV), so 原則2 should place accent on σ2, which is correct. But the text says 'only the front element's accent survives', which implies the accent pattern is preserved, but in 'somósomo', the first syllable is still light, so the rule applies. No contradiction, but the explanation could be clearer.",
+    "quote": "somó",
+    "suggestion": "Clarify that the accent rule applies to the entire prosodic word, not just the front stem.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#043",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "93",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The syllable breakdown states that σ1 is 'ka', which is open (CV), so the accent should fall on σ2 'mú' by 原則2. However, 'kamúy' has the accent on 'mú', which is correct, but the text says 'accent on mú' — this is accurate, but the phrasing could mislead since 'mú' is the second mora of the first syllable in some analyses. More critically, 'ka' is not a syllable in 'kamuy' — 'ka' is the onset and nucleus of a CVC syllable 'kam'.",
+    "quote": "kamúy has open σ1 (ka) → 原則2 → accent on mú",
+    "suggestion": "Revise to: 'kamúy has closed σ1 (kam) → 原則1 → accent on σ1 (kam)', but this contradicts the rule stated earlier. Alternatively, reanalyze: if 'ka' is taken as σ1, then 'muy' is σ2, but 'ka' is not a valid syllable in 'kamuy'. There is an internal contradiction in syllabification.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The syllabification of 'hórka' as σ1 = 'hor' implies a CVC structure, which triggers 原則1 (accent on σ1). This is consistent. But 'hor' as a syllable is CV.C? 'hor' is more likely analyzed as a single syllable /hora/ or /hor/ — if /hor/ is CVC, then accent on σ1 is correct. However, in standard Ainu romanization, 'horka' is typically /hor.ka/, making σ1 'hor' (CVC) → 原則1 → accent on 'hor'. This is consistent. But earlier 'kamuy' was split as 'ka.muy', contradicting the treatment of 'hor.ka'. Inconsistency in syllabification between 'kamuy' and 'horka'.",
+    "quote": "hórka has closed σ1 (hor) → 原則1 → accent on hór",
+    "suggestion": "Ensure consistent syllabification: either both 'kamuy' and 'horka' are split as CVC.CV, or apply the same rules. If 'kamuy' is 'ka.muy' (CV.CV), then σ1 is open → 原則2 → accent on σ2 'muy', but the text says accent is on 'mú', which is in σ1 — contradiction.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#025",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "455-456",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This classification of person affixes as prefixes vs. clitics based on prosodic word behavior is presented as a definitive outcome. However, the chapter has previously used undefined terms like '原則1' and '原則2' in explanations related to these affixes, which undermines the certainty of this classification.",
+    "quote": "prefixes —\n<i lang=\"ain-Latn\">ku=</i>, <i lang=\"ain-Latn\">e=</i>, <i lang=\"ain-Latn\">ci=</i>,\n<i lang=\"ain-Latn\">en=</i>; clitics — <i lang=\"ain-Latn\">a=</i>,\n<i lang=\"ain-Latn\">eci=</i>",
+    "suggestion": "Ensure all underlying rules and terms used in the analysis are clearly defined and consistently applied before presenting definitive classifications.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#023",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "424-425",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that stems 'cis' and 'sap' have closed σ1 and accent on σ1 due to '原則1'. However, '原則1' is not defined in this chapter. The explanation relies on an undefined term.",
+    "quote": "the secondary accent\non the suffix is lost: <i lang=\"ain-Latn\">cis=an</i> 'we cry' and\n<i lang=\"ain-Latn\">sap=an</i> 'we go out' carry only the primary accent on σ1 (both\nstems have closed σ1 → 原則1)",
+    "suggestion": "Define '原則1' or ensure it is defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#021",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "416-417",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the suffix carries a secondary accent when attached to a vowel-final stem. However, the example 'iruska' (vowel-final) with '=an' gives 'irúska=àn', where the secondary accent is on 'àn'. The example 'ipe' (vowel-final) with '=an' gives 'ipé=àn', where the secondary accent is also on 'àn'. This is consistent. The issue is that the explanation of the primary stem accent is not fully clear in relation to the suffix accent.",
+    "quote": "When a personal-number suffix (<i lang=\"ain-Latn\">=an</i>,\n<i lang=\"ain-Latn\">=as</i>) attaches to a vowel-final verb stem, the suffix carries a\nsecondary (lower-level) accent alongside the primary stem accent",
+    "suggestion": "Ensure the explanation of primary and secondary accent is clear and consistent across all examples.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#020",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "349",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '原則1' places the accent on σ1. However, '原則1' is not defined in this chapter. The explanation relies on an undefined term.",
+    "quote": "so 原則1 places the accent on σ1.",
+    "suggestion": "Define '原則1' or ensure it is defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the accent in 'wa én=kore' is on 'én'. This is consistent with 'en=' being a closed σ1 (CVC) and '原則1' (undefined) accenting σ1. However, the preceding sentence states that 'en=' opens the prosodic word as a closed σ1. The example 'wa én=kore' implies that 'en=' is treated as a closed syllable, which is consistent with the rule, but the explanation relies on the undefined '原則1'.",
+    "quote": "the phrase <i lang=\"ain-Latn\">wa én=kore</i> shows the accent on <i lang=\"ain-Latn\">én</i>,",
+    "suggestion": "Define '原則1' or ensure it is defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#019",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "343",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the accent is on σ2 ('ínkar'). However, 'inkar' has an open σ1 ('in'), so according to the general rule (lines 8-10), the accent should be on σ2. This is consistent. The issue is that the explanation for 'ku=ipe' (lines 339) seems to contradict this. The explanation for 'ku=inkar' is consistent with the general rule, but the preceding example is not.",
+    "quote": "<i lang=\"ain-Latn\">ku=</i> + <i lang=\"ain-Latn\">inkar</i> → <i lang=\"ain-Latn\">ku=ínkar</i> with no glide and accent on σ2",
+    "suggestion": "Ensure consistency in the explanation of accent placement, particularly in relation to the general rules and other examples.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#018",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "339",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that glide formation occurs before accent shift, resulting in 'ku=ýpe'. However, the example shows 'kúype' with the accent on the first syllable. This contradicts the explanation that the accent shift applies before glide formation and results in the accent on the second syllable of the new word.",
+    "quote": "<i lang=\"ain-Latn\">ku=ipe</i> → <i lang=\"ain-Latn\">ku=ýpe</i> / <i lang=\"ain-Latn\">kúype</i>.",
+    "suggestion": "Clarify the order of operations (accent shift, glide formation) and ensure the resulting forms and accent placements are consistent.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#017",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "330",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the accent shift occurs before vowel deletion, resulting in 'ku=ómáre'. However, the final form 'k=ómare' shows the accent on 'ómare', which is consistent with the shifted accent. The issue is more about the clarity of the step-by-step process and ensuring the accent marker is correctly placed in the intermediate form.",
+    "quote": "→ accent shift → <i lang=\"ain-Latn\">ku=ómáre</i> → vowel\ndeletion → <i lang=\"ain-Latn\">k=ómare</i>",
+    "suggestion": "Ensure the accent marker is consistently placed in intermediate forms to clearly show the effect of the accent shift before deletion.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#016",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "318-320",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This explanation describes the accent shift for bases with open σ1. However, the general rule (lines 8-10) states that accent is on σ2 if σ1 is open. The explanation here implies that after prefixation, the accent shifts to the original σ1 of the base, which becomes σ2 of the new word. This seems to be a restatement of the rule, but the phrasing could be more precise about the interaction of the prefix and the base's original accent.",
+    "quote": "In each case the base has open σ1 and accents σ2; after the CV prefix is added, σ1 of\nthe new prosodic word is the prefix itself (open) and σ2 — which is the original σ1 of\nthe base — receives the high pitch.",
+    "suggestion": "Ensure the explanation clearly articulates how the prefixation interacts with the base's accentuation, especially in relation to the defined accent rules.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#015",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "272",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '原則2' applies. However, '原則2' is not defined in this chapter. The explanation relies on an undefined term.",
+    "quote": "Each prefix contributes a light (CV) σ1; 原則2 applies and the accent falls on σ2 of the new word",
+    "suggestion": "Define '原則2' or ensure it is defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#014",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "260",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states that the accent of 'koré' reflects '原則2'. However, '原則2' is not defined in this chapter. Additionally, the explanation 'σ1 ko = CV, open → 原則2' is inconsistent with the general rule stated in lines 8-10 (accent on σ2 if σ1 is open).",
+    "quote": "note=\"The σ2 accent of koré reflects the iambic pattern of a lexicalized open-initial disyllable (σ1 ko = CV, open → 原則2). The co-existent ditransitive korpare 'give to someone' is attested alongside it in the Saru corpus.\"",
+    "suggestion": "Define '原則2' and ensure the explanation of accent placement for 'koré' is consistent with the chapter's stated rules.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#012",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "243-244",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that σ1 'ko' is open and '原則2' (undefined) applies, resulting in accent on σ2 ('ré'). This contradicts the general rule stated in lines 8-10, which assigns accent to σ2 when σ1 is open. The use of '原則2' here is also undefined.",
+    "quote": "whereupon σ1 <i lang=\"ain-Latn\">ko</i> is open → 原則2 → accent on <i lang=\"ain-Latn\">ré</i>.",
+    "suggestion": "Clarify the accent placement rule for 'koré' and ensure consistency with the general rules and definitions.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The community's alternative explanation for 'koré' is that it's a contraction of 'korpare', which 'independently yields σ2 accent'. However, the accentuation of 'korpare' itself is not explained or demonstrated, making this claim difficult to evaluate within the chapter's context.",
+    "quote": "which independently yields σ2 accent\n<Ref k=\"aynucorporadiscord\" /> (nukopoli 2024-12-26) ‹contested›.",
+    "suggestion": "Provide the accentuation of 'korpare' or explain how it yields σ2 accent to support this claim.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#011",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "237-238",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that a regular causative derivation from 'kor' + '-e' would yield '*kóre' because 'kor' has a closed σ1 (CVC) and '原則1' (undefined) would accent σ1. This explanation relies on an undefined rule ('原則1').",
+    "quote": "A regular\ncausative derivation from <i lang=\"ain-Latn\">kor</i> 'have' + <i lang=\"ain-Latn\">-\ne</i> would yield <i lang=\"ain-Latn\">*kóre</i> (σ1\n<i lang=\"ain-Latn\">kor</i> = CVC → 原則1 → σ1 accented);",
+    "suggestion": "Define '原則1' or ensure it is defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#008",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "172",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '原則2' shifts the accent to σ2. However, '原則2' is not defined in this chapter. The explanation relies on an undefined term.",
+    "quote": "原則2 shifts the accent to σ2 of the new prosodic word, which is the σ1 of the original\nbase.",
+    "suggestion": "Define '原則2' or ensure it is defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#007",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "150-151",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that 'yay-' is a closed syllable (CVC) and that '原則1' places the accent on σ1. However, '原則1' is not defined in this chapter. The explanation relies on an undefined term.",
+    "quote": "The reflexive prefix <A w=\"yay-\" gl=\"self, reflexive\" /> always opens the prosodic word\nas σ1. <i lang=\"ain-Latn\">yay</i> is a closed syllable (CVC), so 原則1 places the\naccent on σ1 — on <i lang=\"ain-Latn\">yáy</i> — regardless of the shape of the following\nstem",
+    "suggestion": "Define '原則1' or ensure it is defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#006",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "137",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the accent in 'somósomo' falls on 'mó'. However, the preceding sentence (line 136) states that 'only the front element's accent survives'. The front element is 'somo', which has accent on 'somó' (line 131). If only the front element's accent survives, it should be on the first syllable of 'somo', not the second syllable of the second 'somo'. This seems to be a contradiction.",
+    "quote": "giving\n<i lang=\"ain-Latn\">somósomo</i> with a single high syllable on <i lang=\"ain-Latn\">mó</i>",
+    "suggestion": "Clarify which syllable receives the accent in 'somósomo' and ensure it aligns with the stated rule of 'front element's accent surviving'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#005",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "115-117",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that the first-element priority rule is a 'strong default' and then immediately introduces exceptions ('hasínaw', 'cepétu', 'nayétok') that 'carry the iambic pattern even when the front element's isolated accent would predict otherwise'. This phrasing could be clearer about the nature of these exceptions and how they relate to the 'default' rule.",
+    "quote": "The first-element priority is a strong default. <Ref k=\"shiraishi2022\" p=\"§5.2\" /> notes a\nset of lexicalized compound nouns that carry the iambic pattern even when the front\nelement's isolated accent would predict otherwise: <i lang=\"ain-Latn\">hasínaw</i>,",
+    "suggestion": "Rephrase to more clearly distinguish the default rule from the exceptions, perhaps by stating the exceptions first or using stronger contrastive language.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#004",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "109",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The explanation states that 'kotan' has an open σ1 ('ko') and applies '原則2', resulting in accent on σ2 ('tán'). This contradicts the general rule stated in lines 8-10, which assigns accent to σ2 when σ1 is open. The use of '原則2' here is also undefined.",
+    "quote": "<i lang=\"ain-Latn\">kotan</i> 'village' has open σ1 (<i lang=\"ain-Latn\">ko</i>) → 原則2 →\naccent on <i lang=\"ain-Latn\">tán</i>, retained in <i lang=\"ain-Latn\">kotánkorkur</i>\n'village chief'.",
+    "suggestion": "Clarify the accent placement rule for 'kotan' and ensure consistency with the general rules and definitions.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#002",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "93",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '原則2' applies to 'kamúy', but the rule described in lines 8-10 suggests accent on σ1 if closed, and σ2 if open. 'ka' is an open syllable (CV), so according to the rule 'accent on σ2', it should be 'kamúy'. However, the text states '原則2' applies, which is not defined. The explanation seems to imply a rule that is not fully stated here.",
+    "quote": "<i lang=\"ain-Latn\">kamúy</i> has open σ1 (<i lang=\"ain-Latn\">ka</i>) → 原則2 → accent on σ2 <i lang=\"ain-Latn\">mú</i>",
+    "suggestion": "Clarify the rules being applied, especially '原則2', and ensure consistency with the initial description of accent placement.",
+    "confidence": 0.8
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that '原則1' applies to 'hórka', which has a closed σ1 ('hor'). The rule described in lines 8-10 states that accent is on σ1 when closed. This is consistent with the example. However, '原則1' is not defined in the chapter.",
+    "quote": "<i lang=\"ain-Latn\">hórka</i> has closed σ1 (<i lang=\"ain-Latn\">hor</i>) → 原則1 → accent on <i lang=\"ain-Latn\">hór</i>",
+    "suggestion": "Define '原則1' or ensure it is defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#001",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "8-10",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that high pitch is assigned to σ1 when closed, and σ2 otherwise. However, the following sentence refers to '原則2' (Principle 2) which is not defined in this chapter, and the explanation of accent placement rules seems incomplete or relies on external definitions.",
+    "quote": "In all standard-accent dialects of Hokkaido Ainu, high pitch is assigned to σ1 when σ1 is\nclosed (has a coda), and to σ2 otherwise — with a memorized set of lexical exceptions (see\n<Xr ch=\"pitch-accent-placement-rule\" />).",
+    "suggestion": "Define '原則1' and '原則2' or ensure they are defined in the referenced cross-chapter link.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#031",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "258-259",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The 'place' attribute contains Japanese text (川上まつ子, 独話2, AA研アイヌ語資料) without translation, which is inconsistent with the rest of the chapter where Japanese terms are either translated or explained.",
+    "quote": "place=\"川上まつ子, isoytak 独話2, AA研アイヌ語資料 [aa-irc/004#105]\"",
+    "suggestion": "Add an English translation or transliteration of the Japanese text, e.g., 'Matsuko Kawakami, isoytak monologue 2, AA研 Ainu language materials [aa-irc/004#105]'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#030",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "253-254",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation key 'ilcaa1976' is not defined in the references section of this chapter. It appears to be a corpus citation, but the format is inconsistent with other citations in the chapter (which use author-year format like 'nakagawa2024').",
+    "quote": "cite=\"ilcaa1976\"",
+    "suggestion": "Either add the full reference for 'ilcaa1976' or use a consistent citation format.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#028",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "339-340",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form 'ku=ýpe' uses a non-standard character 'ý' (y with acute accent) which is not used elsewhere in the chapter. The standard representation would be 'ku=y'pe' or 'ku=ype' with the accent on the preceding syllable.",
+    "quote": "ku=ipe → ku=ýpe / kúype",
+    "suggestion": "Replace 'ku=ýpe' with 'ku=y'pe' or 'ku=ype' with appropriate accent marking on the preceding syllable.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#024",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "438",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The notation '-hV' is used to represent the affiliative suffix, with 'V' indicating a variable vowel. However, the examples provided are '-hi', '-he', '-ha'. The use of 'V' in the notation is not consistently explained or applied in the examples.",
+    "quote": "<i lang=\"ain-Latn\">-\n<i lang=\"ain-Latn\">hV</i> — realizing as <i lang=\"ain-Latn\">-hi</i>,\n<i lang=\"ain-Latn\">-he</i>, <i lang=\"ain-Latn\">-ha</i> etc. according to the vowel-copy\nrule",
+    "suggestion": "Clarify the notation '-hV' and ensure it is consistently applied or explained in relation to the examples.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#013",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "259",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'place' attribute in the `<Ex>` tag contains a mix of Japanese and Ainu script, along with a file path. This is unusual for a 'place' attribute, which typically denotes a geographical location or a specific publication venue. It seems to be providing source details rather than a place.",
+    "quote": "place=\"川上まつ子, isoytak 独話2, AA研アイヌ語資料 [aa-irc/004#105]\"",
+    "suggestion": "Consider if 'place' is the correct attribute for this information, or if it should be part of a 'note' or a different attribute if available.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#003",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "105",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim is marked as '‹corpus-suggested›' but is supported by a Discord attribution and a reference to Nakagawa 2024. The 'corpus-suggested' tag might be redundant or indicate a lower confidence than the supporting sources suggest.",
+    "quote": "The assignments\nfollow from the principle: <i lang=\"ain-Latn\">cise</i> 'house' has open σ1\n(<i lang=\"ain-Latn\">ci</i>) → 原則2 → accent on <i lang=\"ain-Latn\">sé</i>, which becomes\nthe sole peak of <i lang=\"ain-Latn\">cisékorkur</i> 'householder';",
+    "suggestion": "Review the evidence grade for this claim. If the Discord attribution is the primary support, 'corpus-suggested' might be appropriate, but if Nakagawa 2024 is a strong source, a higher grade might be warranted.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#046",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "153",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The form 'yáykoytak' has an accent mark on 'á', but the preceding text says the accent is on 'yáy', which is σ1. 'yáy' is one syllable, so the accent should be on that syllable. But 'yáykoytak' writes 'áy', which may imply two syllables. Should be 'yáykoytak' or 'yáykoytak' — but the accent mark placement is ambiguous.",
+    "quote": "yáykoytak",
+    "suggestion": "Use consistent syllable boundaries: if 'yay' is one syllable, mark it as 'yáy', not 'yáy'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#044",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "50",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The macron in 'kamúy' is on the 'u', but in standard Ainu orthography, pitch accent is marked with an acute accent, not macron. The use of macron here is incorrect; it should be acute for high pitch.",
+    "quote": "kamúy",
+    "suggestion": "Replace macron with acute accent: kamúy → kámuy or keep acute on ú as in mú.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The compound form 'kamúynomi' shows the accent on 'ú', but if the accent is on σ2 of the first element 'kamuy', and 'kamuy' is two syllables, then the accent should be on 'mú', not 'ka'. But 'kamúy' has accent on 'mú', so 'kamúynomi' implies the accent remains on 'mú', which is now σ2 of the compound. The spelling 'kamúynomi' places the accent mark on 'a', which is incorrect.",
+    "quote": "kamúynomi",
+    "suggestion": "Correct to 'kamúynomi' → 'kamuyómo' or clarify syllabification. If the accent is on 'mú', write 'kamuyómo'.",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#042",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "8",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent use of Greek sigma: 'σ1' is used for syllable count, but the term 'σ1' appears without italics or special formatting in running text, while it should be consistently formatted as a linguistic variable.",
+    "quote": "σ1 when σ1 is closed",
+    "suggestion": "Wrap σ1 in <i> tags or use a consistent typographic style for linguistic variables throughout.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#041",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "426",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則1 used without explanation.",
+    "quote": "原則1",
+    "suggestion": "Replace with 'Principle 1'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#040",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "349",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則1 used without explanation.",
+    "quote": "原則1 places the accent on σ1",
+    "suggestion": "Replace with 'Principle 1'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#039",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "272",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則2 used without explanation.",
+    "quote": "原則2 applies",
+    "suggestion": "Replace with 'Principle 2'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#038",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "243-244",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則2 used without explanation.",
+    "quote": "原則2 → accent on ré",
+    "suggestion": "Replace with 'Principle 2'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#037",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "212",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則2 used without explanation.",
+    "quote": "原則2 → accent on σ2 (kó)",
+    "suggestion": "Replace with 'Principle 2'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#036",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "172-173",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則2 used without explanation.",
+    "quote": "原則2 shifts the accent to σ2",
+    "suggestion": "Replace with 'Principle 2'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#035",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "150-151",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則1 used without explanation.",
+    "quote": "原則1 places the accent on σ1",
+    "suggestion": "Replace with 'Principle 1'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#034",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "131",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則2 used without explanation.",
+    "quote": "原則2: somó",
+    "suggestion": "Replace with 'Principle 2'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#033",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "107",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則2 used without explanation.",
+    "quote": "原則2 → accent on sé",
+    "suggestion": "Replace with 'Principle 2'.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: 原則2 used without explanation.",
+    "quote": "原則2 → accent on tán",
+    "suggestion": "Replace with 'Principle 2'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#032",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "93-94",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The term 原則2 (Japanese for 'principle 2') is used without explanation, similar to line 19. This is a register leak from Japanese-language sources.",
+    "quote": "原則2 → accent on σ2 mú",
+    "suggestion": "Replace with 'Principle 2' or add a parenthetical explanation.",
+    "confidence": 0.9
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue as above: 原則1 (Japanese for 'principle 1') is used without explanation.",
+    "quote": "原則1 → accent on hór",
+    "suggestion": "Replace with 'Principle 1' or add a parenthetical explanation.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#029",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "339-340",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The form 'kúype' shows the accent on the first syllable (kú), but the text says 'accent on σ2' for the prefixed form. If the base is 'ipe' (open σ1, accent on σ2 = 'ipé'), then after prefixation the accent should be on σ2 of the new word, which would be 'ku=ípe' → 'kúype'? This is inconsistent: 'kúype' has accent on σ1 (ku), not σ2 (i).",
+    "quote": "ku=ipe → ku=ýpe / kúype",
+    "suggestion": "Verify the accent placement. If the base 'ipe' has accent on σ2 (ipé), then after prefixation with ku= (CV), the new σ2 is 'i', so the accent should be on 'i': 'ku=ípe' → 'kúype' would be correct if the glide formation preserves the accent on the vowel. But the notation 'kúype' suggests the accent is on 'u', which is σ1. Clarify or correct.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#026",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "19-21",
+  "category": "register-leak",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The term 原則2 (Japanese for 'principle 2') is used without explanation or translation, unlike the rest of the chapter where it is glossed or explained. This is a register leak from the author's Japanese-language source material.",
+    "quote": "The Yakumo irregular system, where 原則2 shifts one position further right, produces different surface outputs for the same derivations but applies the same prosodic-word logic; its characterization is given in <Xr ch=\"pitch-accent-placement-rule\" />.",
+    "suggestion": "Replace 原則2 with 'Principle 2' or add a parenthetical gloss '(Principle 2)' on first use in this chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#010",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "203",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'ekótanne' is 'belong to a village, be a villager'. The table shows 'e=kotan-ne' as the form. The explanation states that 'e-' creates a light σ1, and '原則2' shifts accent to σ2. This results in 'ekótanne'. The gloss is adequate, but the connection to the applicative prefix 'e-' could be made more explicit if the gloss were 'be a villager (APPL)' or similar.",
+    "quote": "<td><i lang=\"ain-Latn\">ekótanne</i></td>",
+    "suggestion": "Consider if the gloss could be more specific to reflect the applicative function, e.g., 'be a villager (APPL)' or similar, if appropriate.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "accent-in-compounds-and-affixation~p1#009",
+  "chapter": "accent-in-compounds-and-affixation",
+  "lines": "195",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'epúni' is 'lift up (something)'. The table shows 'e=puni' as the form, and 'puni' as the base with accent 'púni'. The explanation states that 'e-' creates a light σ1, and '原則2' shifts accent to σ2. This would result in 'epúni'. However, the gloss 'lift up (something)' doesn't fully capture the applicative meaning implied by 'e-'.",
+    "quote": "<td><i lang=\"ain-Latn\">epúni</i></td>",
+    "suggestion": "Consider if the gloss could be more specific to reflect the applicative function, e.g., 'lift something up (APPL)' or similar, if appropriate.",
+    "confidence": 0.5
+   }
+  ]
+ }
+]

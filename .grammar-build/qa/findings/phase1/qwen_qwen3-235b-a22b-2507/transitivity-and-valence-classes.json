@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "70",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "2- or 3-place subtype",
+  "issue": "Inconsistent formatting of number ranges in the table; other rows use en dash or hyphen without 'or', e.g., '2-place / 2-argument'. The phrase '2- or 3-place subtype' uses a different style and may confuse readers expecting consistent notation.",
+  "suggestion": "Change to '2-/3-place' or '2- or 3-argument' for consistency with other rows.",
+  "confidence": 0.95,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "434",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "+2",
+  "issue": "In the 'locative-object verbs' table, the arity values are given as '+2' and '+3', but in the 'Arity and the derivational calculus' table, they are formatted without the plus sign in the header row (e.g., '+1', '+2', '+3'). This is a minor inconsistency in presentation.",
+  "suggestion": "Ensure consistent use of '+' in all arity values across tables; either include it in all or omit it in all.",
+  "confidence": 0.8,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "181",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "inkar=an akus e=an ru-we a=nukar hi kusu",
+  "issue": "The morpheme string includes 'hi kusu', which is not glossed in the `g` attribute. The gloss only covers up to 'a=nukar', missing 'hi kusu'. This is a clear omission of morphemes in the gloss line.",
+  "suggestion": "Add glosses for 'hi' and 'kusu' in the `g` attribute.",
+  "confidence": 1,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "268",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "mean cuk ne pe merayke=an ka somo ki no",
+  "issue": "The morpheme 'pe' is present in the `m` string but not glossed in the `g` attribute. The gloss line skips it, breaking the one-to-one alignment between morphemes and glosses.",
+  "suggestion": "Add a gloss for 'pe' in the `g` attribute.",
+  "confidence": 1,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "201",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "numan hekaci cep koyki",
+  "issue": "The morpheme string contains four words, but the gloss `g` has only three: 'yesterday boy fish catch'. The gloss is missing a segmentation or alignment for 'koyki', which should be 'catch' but is not separated. This breaks the interlinear format.",
+  "suggestion": "Ensure each morpheme is separated and aligned; possibly 'koyki' should be segmented or the gloss adjusted to match.",
+  "confidence": 1,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "388",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "topenpe hekattar ku=kore",
+  "issue": "The morpheme string has three elements before the verb: 'topenpe', 'hekattar', 'ku=kore', but the gloss `g` only has three glosses: 'sweets children 1SG.A=give'. While this may be correct if 'topenpe' and 'hekattar' are both objects, the gloss does not clarify which is which. However, the main issue is that the example is marked as `constructed` but lacks the `constructed` attribute in the `<Ex>` tag.",
+  "suggestion": "Add the `constructed` attribute to the `<Ex>` tag if it is not already present (it is, so this is resolved). No change needed beyond that.",
+  "confidence": 0.7,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "454",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "upas tum a=oma wa karkarse=an",
+  "issue": "The morpheme 'wa' is present in `m` but not glossed in `g`. The gloss line skips it, breaking the alignment.",
+  "suggestion": "Add a gloss for 'wa' in the `g` attribute.",
+  "confidence": 1,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "618",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "uomano eci=eramuoka ya",
+  "issue": "The morpheme 'ya' is present in `m` but not glossed in `g`. The gloss ends with 'Q', but 'ya' is not accounted for in the alignment.",
+  "suggestion": "Add 'Q' as the gloss for 'ya' in the `g` attribute, or adjust segmentation.",
+  "confidence": 1,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "658",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "epakasnure",
+  "issue": "The form 'epakasnure' appears to be a concatenation of 'epakasnu' + 're', but in the text it is written without a hyphen or separator. Other causative forms in the chapter use hyphens (e.g., 'omarere'). This creates inconsistency in orthographic presentation.",
+  "suggestion": "Write as 'epakasnu-re' or 'epakasnure' consistently with other causative forms.",
+  "confidence": 0.85,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "414",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "o 'put X into a place' is three-place and is the chief base-form ditransitive of the language",
+  "issue": "In the table above (lines 430–449), 'o' is listed with arity '+3', but in the main classification table (lines 46–80), 'o' is listed under 'vc' (locative-object verb) with 'A/S + bare locative object' — implying two core arguments, not three. This contradicts the claim that it is three-place.",
+  "suggestion": "Reconcile the arity of 'o': either update the table to reflect +3 or clarify that 'vc' can include three-place verbs.",
+  "confidence": 1,
+  "chapter": "transitivity-and-valence-classes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

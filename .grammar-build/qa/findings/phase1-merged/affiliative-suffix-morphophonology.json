@@ -1,0 +1,374 @@
+[
+ {
+  "id": "affiliative-suffix-morphophonology~p1#014",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "454",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string contains multiple elements including 'piro hi ta' and 'noya ham uk wa', but the gloss 'get.injured NMLZ LOC' only covers part of it and does not align with all morphemes. The gloss omits 'piro' and misaligns 'hi ta' as 'NMLZ LOC' without clear correspondence.",
+    "quote": "m=\"ku=tek-ehe piro hi ta ku=kor totto noya ham uk wa\"",
+    "suggestion": "Revise the gloss to fully align: g=\"1SG.A=hand-POSS injury NMLZ LOC 1SG.A=have mother mugwort leaf take CONJ\"",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'get.injured' does not match the morpheme 'piro', which is more accurately a noun meaning 'injury' or 'wound'. The verb 'get injured' is not directly expressed in the morpheme string, creating a semantic mismatch.",
+    "quote": "g=\"1SG.A=hand-POSS get.injured NMLZ LOC 1SG.A=have mother mugwort leaf take CONJ\"",
+    "suggestion": "Change 'get.injured' to 'injury' to reflect the nominal form: g=\"1SG.A=hand-POSS injury NMLZ LOC 1SG.A=have mother mugwort leaf take CONJ\"",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#013",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "322",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string has five elements: 'a=yup-i', 'an', 'a=sa-ha', 'an', but the gloss only provides four: '4.A=elder.brother-POSS exist 4.A=elder.sister-POSS exist'. The second 'an' is not aligned with a separate gloss item, causing a mismatch.",
+    "quote": "m=\"a=yup-i an a=sa-ha an\"",
+    "suggestion": "Ensure each 'an' is individually glossed: g=\"4.A=elder.brother-POSS exist 4.A=elder.sister-POSS exist\"",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#012",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "163",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string contains three main constituents: 'a=yup-ihi', 'an=sa-ha', and 'haw-ehe ka isam', but the gloss only provides three gloss units for what should be at least four (including 'also absent'). The gloss 'voice-POSS also absent' combines two morphemes into one gloss unit without proper segmentation.",
+    "quote": "m=\"a=yup-ihi an=sa-ha haw-ehe ka isam\"",
+    "suggestion": "Revise the gloss to segment all elements: g=\"4.A=elder.brother-POSS 4.A=elder.sister-POSS voice-POSS also absent\"",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#011",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "105",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string contains two instances of 'ka arka', but the gloss line only provides one set of glosses for 'ka arka', leading to a misalignment between morphemes and glosses.",
+    "quote": "m=\"ku=kema-ha ka arka ku=tek-ehe ka arka\"",
+    "suggestion": "Duplicate the gloss 'also hurt' to match both instances: g=\"1SG.A=leg-POSS also hurt 1SG.A=hand-POSS also hurt\"",
+    "confidence": 0.95
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss line has two instances of 'also hurt', but the morpheme line has two 'ka arka' sequences, each corresponding to one 'also hurt'. The gloss is correct in content but was flagged due to prior misalignment in the morpheme line; however, once the morpheme line is fixed, the gloss should be verified for exact alignment.",
+    "quote": "g=\"1SG.A=leg-POSS also hurt 1SG.A=hand-POSS also hurt\"",
+    "suggestion": "Ensure the gloss exactly aligns with the corrected morpheme string after duplication.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#002",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "30",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This statement is contradicted by the table at lines 134–152 which shows both short -e and long -ehe; the uniform suffix is described as -e(he) but the examples show the pattern is -e (short) + -ehe (long), not a single uniform form. The prose says the suffix is uniform but the data show two subforms.",
+    "quote": "Glide-final stems (type ②) take the uniform suffix -e(he).",
+    "suggestion": "Reword to 'take the uniform suffix -e (short) or -ehe (long)' or clarify that -e(he) means the suffix is always based on /e/ but has a short and long variant.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#017",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The subscript '₁' is used in '-hV₁', but in other places (e.g., line 337) it is written as 'V₁' without italics on the 'V'. For typographic consistency, the variable 'V' should be styled uniformly (likely italic) when used as a symbol.",
+    "quote": "<em>-hV₁</em>",
+    "suggestion": "Ensure consistent typographic styling of linguistic variables: use <em>V</em>₁ or V₁ throughout.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#010",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "467–476",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The compound form is given as 'tar-ac-i(hi)' but the base noun is 'at' (cord); the consonant change from /t/ to /c/ (palatalization) before /i/ is not explained. This could be a regular phonological process, but it's not mentioned elsewhere, creating a potential inconsistency in the description of how compounds form.",
+    "quote": "tar-at → tar-ac-i(hi)",
+    "suggestion": "Add a note or cross-reference about palatalization of /t/ before /i/ in compounds, or adjust the example to match expected forms without palatalization.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#008",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "10–12",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The notation -hV₁ suggests the suffix is hV₁ (e.g., -ha, -he, -hi, etc.). However, the long forms in the tables show -ha, -he, -hi, etc. This is consistent, but the explanation says 'copy vowel + /h/ + copy vowel again', which would produce VhV (e.g., aha, ehe), but the actual suffix is -hV (e.g., -ha, -he). The description should say '/h/ followed by copy vowel', not 'copy vowel + /h/ + copy vowel again', to match the data.",
+    "quote": "long form consisting of copy vowel + /h/ + copy vowel again, notated -hV₁ where V₁ is the stem's last vowel",
+    "suggestion": "Change to '/h/ followed by the copy vowel' or adjust the notation to VhV if that's the intended analysis.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#007",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "320–328",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation uses a colon followed by a page number ('huber2025:251'), while other citations in the chapter use 'p.' or 'p. ' (e.g., 'p. 227', 'p. 152–153'). This colon-based format is inconsistent with the rest of the chapter's style. Also, the date '2025' is within the acceptable range per the briefing, so that's fine.",
+    "quote": "cite='huber2025:251'",
+    "suggestion": "Change to 'huber2025 p. 251' or 'huber2025:251'—just make it consistent with other citations.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#006",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "30, 128, 176",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The notation -e(he) is used throughout, but in the data table rows (e.g., 136-137) the short form is shown as -e and the long as -ehe, not as -e(he). The parentheses notation implies one suffix with an optional element, but the data show two distinct forms. This is an orthographic inconsistency in how the suffix is described vs. displayed.",
+    "quote": "type ② (...) uniform suffix -e(he); uniformly -e(he); suffix -e(he)",
+    "suggestion": "Consistently use either -e(he) with a note that it has short and long forms, or list -e/-ehe throughout.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#005",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "572–585",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹proposed› is used here, but this tag is not listed among the defined evidence grades in the briefing (which lists consensus, contested, corpus-confirmed, corpus-suggested, speculative, original-needs-review). This introduces an undefined tag.",
+    "quote": "A community analysis of Sakhalin data observes ... (nukopoli, 2024-12-16) ‹proposed›",
+    "suggestion": "Replace ‹proposed› with an allowed tag such as ‹speculative› or ‹corpus-suggested›, or add it to the list of allowed tags if intentional.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#001",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "67",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for 'etu' is 'nose'. The long affiliative form is given as 'etu-hu'. The vowel in the suffix '-hu' is /u/, but the final vowel of the stem 'etu' is /u/. This is consistent with the description of the long form adding '-hV₁' where V₁ is the stem's last vowel. However, the table in section 'Type ①: vowel-final stems' (lines 47-94) shows 'etu' with a long affiliative of 'etu-hu', which implies V₁=/u/. This contradicts the general rule stated in line 97 that 'In each row the suffix vowel is identical to the stem-final vowel: /a/, /u/, /e/, /o/ respectively.' For 'etu', the stem-final vowel is /u/, so the suffix vowel should be /u/, making it 'etu-hu'. This is consistent. The issue is that the example 'etu-hu' is listed under Type ① (vowel-final stems), but the description for Type ① states that the long form adds '-hV₁', repeating the stem-final vowel. For 'etu', the stem-final vowel is /u/, so the long form should be 'etu-hu'. This is consistent.",
+    "quote": "etu-hu"
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#018",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "567",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation <Ref k=\"vovin1993\" paren /> appears with an unknown attribute 'paren', which is not defined in the markup specification. This may be a pipeline leak or malformed citation.",
+    "quote": "<Ref k=\"vovin1993\" paren />",
+    "suggestion": "Verify correct citation syntax; likely should be <Ref k=\"vovin1993\" /> or with 'p' for pages if intended.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#016",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "314",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The forms 'yupihi' and 'sikihi' are written without hyphens, while in the table they appear as 'yupi-hi' and 'siki-hi'. This inconsistency in hyphenation of the long affiliative suffix occurs within the same chapter.",
+    "quote": "<i lang=\"ain-Latn\">yupihi</i> at 759 tokens and <i lang=\"ain-Latn\">sikihi</i>",
+    "suggestion": "Use consistent hyphenation: either always 'yupi-hi' or always 'yupihi'.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#015",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "270",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent hyphenation: in the table, long affiliative forms are written with a hyphen (e.g., 'ami-hi'), but in the text and examples, they are often written without (e.g., 'amihi' in line 314). This creates orthographic drift within the chapter.",
+    "quote": "<i lang=\"ain-Latn\">ami-hi</i>",
+    "suggestion": "Standardize to either hyphenated (ami-hi) or closed (amihi) form throughout the chapter.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#009",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "12–13, 44",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The notation -hV₁ is introduced but then the long suffix is referred to as '-hV₁' (line 13) and also as 'long form adds -hV₁' (line 44). However, the suffix in the tables is shown as -ha, -he, etc., which is -hV (without the subscript 1). The subscript 1 is only in the explanation. In line 44, it says 'adds -hV₁' but the examples show -ha, -hu, etc. This is inconsistent: the notation should match the displayed forms.",
+    "quote": "notated -hV₁ where V₁ is the stem's last vowel",
+    "suggestion": "Use -hV or adjust all occurrences to -hV₁ consistently in prose.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#004",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "492",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The irregular par yields paro(ho). But the diachrony section at line 495 says the ending -o(ho) is from or 'inside, place', not an affiliative suffix proper. This contradicts the description of the true irregular as having an affiliative form not derived by productive rules; the irregularity is explained as a different morphological source (locative suffix), which is consistent with the rules if or takes the long form. The inconsistency is in labeling it a 'true irregular' when it in fact follows a regular pattern for a different lexical element.",
+    "quote": "par → paro(ho), not the expected ③-1 *parihi",
+    "suggestion": "Reframe: 'par is not irregular in the strict sense; its affiliative-like ending is the locative long-form of the noun or' or remove 'true irregular' label.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "affiliative-suffix-morphophonology~p1#003",
+  "chapter": "affiliative-suffix-morphophonology",
+  "lines": "247",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The free translation at line 324 says 'I have an elder brother; I have an elder sister.' but the gloss line does not include a 1SG element; it glosses a= as 4th person. This is a person mismatch between the gloss (4th person) and the translation (1st person). Third-person or fourth-person reference might be intended but the translation uses first person.",
+    "quote": "gl='4.A=elder.brother-POSS exist 4.A=elder.sister-POSS exist'",
+    "suggestion": "Either change the gloss to 1SG or change the translation to match the gloss, e.g., 'one has an elder brother; one has an elder sister' or 'he/she has an elder brother; he/she has an elder sister'.",
+    "confidence": 0.6
+   }
+  ]
+ }
+]

@@ -1,0 +1,586 @@
+[
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#005",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "506-507",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim is marked `‹contested›`. The community source is described as 'proposed' and 'consistent with Refsing 1986 and Nakagawa 2024'. This indicates that the community source's proposal is supported by published works, but the overall claim is still contested. The citation structure is clear in showing the support, but the `‹contested›` grade is key here.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (thegodofneet, aynu-corpora Discord, 2024-11-13, proposed;\nconsistent with Refsing 1986: 145 and Nakagawa 2024: 118–119) ‹contested›.",
+    "suggestion": "No significant change needed. The citation clearly shows the basis for the claim and its contested status.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is used, but the claim is attributed to a Discord user and said to be 'consistent with' two published sources. If it is consistent with published sources, why is it ‹contested›? The tag seems mismatched: either the claim is supported by published sources (so should be ‹corpus-confirmed› or ‹consensus›) or it is genuinely contested (but then the 'consistent with' claim is misleading).",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (thegodofneet, aynu-corpora Discord, 2024-11-13, proposed; consistent with Refsing 1986: 145 and Nakagawa 2024: 118–119) ‹contested›.",
+    "suggestion": "Either remove the ‹contested› tag and upgrade to ‹corpus-confirmed› if the published sources indeed support it, or clarify why it remains contested despite consistency with published sources.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation includes inline attribution with a username and date, while the Ref tag alone should carry the source. This format deviates from the clean separation of citation and commentary expected in scholarly text.",
+    "quote": "Ref k=\"aynucorporadiscord\" (thegodofneet, aynu-corpora Discord, 2024-11-13, proposed; consistent with Refsing 1986: 145 and Nakagawa 2024: 118–119) ‹contested›",
+    "suggestion": "Move the inline attribution to after the Ref tag, e.g., <Ref k=\"aynucorporadiscord\" /> (thegodofneet, aynu-corpora Discord, 2024-11-13, proposed; consistent with Refsing 1986: 145 and Nakagawa 2024: 118–119) ‹contested›.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#004",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "495-496",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The claim is marked as `‹speculative›`, and the supporting community source is also described as `speculative` with the note \"reason unclear\". This is consistent, but the citation structure could be slightly improved for clarity. The `‹speculative›` grade is applied to the prose, and the source itself is also marked as speculative.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2023-12-25, speculative;\n\"reason unclear\") ‹speculative›.",
+    "suggestion": "No significant change needed, as the speculative nature is clearly indicated by both the grade and the source's description.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹speculative› is appropriate for a Discord attribution, but the text says 'no read primary source addresses the pattern systematically' — this is a meta-commentary about source availability that reads like a pipeline note. Also, the phrase 'no read primary source' is awkward and may be a register leak (should be 'no primary source read' or 'no primary source consulted').",
+    "quote": "One micro-fact about <i lang=\"ain-Latn\">ne</i> in the <i lang=\"ain-Latn\">ka somo ne</i> negation frame and sporadically in other contexts is that the copula appears without a subject affix — the person marking is absent in a way not predicted by the zero-marking of third person <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2023-12-25, speculative; \"reason unclear\") ‹speculative›. This is an open gap in the description: no read primary source addresses the pattern systematically, and no structural account of the affix loss has been proposed.",
+    "suggestion": "Rephrase to: 'no primary source consulted addresses the pattern systematically' or simply 'no primary source addresses the pattern systematically'.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The claim that the copula appears without a subject affix in 'ka somo ne' is tagged as ‹speculative› and supported only by a Discord comment labeled 'speculative'. This is appropriate, but the citation format is inconsistent: it includes a username and date in parentheses inline, while other such citations are formatted with the full attribution after the Ref tag.",
+    "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, 2023-12-25, speculative; \"reason unclear\") ‹speculative›",
+    "suggestion": "Standardize the citation format: move the inline attribution to after the Ref tag, as in line 177, to maintain consistency.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#003",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "396-398",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "This citation is for a claim about dialect variation in responses to polar questions. It cites a community source and provides a list of eight dialect localities. The `‹corpus-confirmed›` grade is applied to the community source. While the information is detailed, it's worth considering if the 'asserted ✔' and the list of localities are distinct pieces of evidence that should be presented more clearly, or if the `‹corpus-confirmed›` grade adequately covers this.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted ✔;\nreported across eight dialect localities: Yakumo, Horobetsu, Saru, Tokachi, Bibai, Asahikawa,\nNayoro, and Sōya) ‹corpus-confirmed›.",
+    "suggestion": "No significant change needed, but ensure the 'asserted ✔' is intended as a confirmation of the community source's claim, and that the list of localities is part of that assertion.",
+    "confidence": 0.5
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Again, the epistemic tag ‹corpus-confirmed› is used for a claim supported only by a Discord message (with a checkmark emoji). The claim about dialect variation in polar question answering is attributed to a single Discord user's assertion, not to corpus data. The tag should be ‹speculative› or at most ‹corpus-suggested›.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted ✔; reported across eight dialect localities: Yakumo, Horobetsu, Saru, Tokachi, Bibai, Asahikawa, Nayoro, and Sōya) ‹corpus-confirmed›.",
+    "suggestion": "Change ‹corpus-confirmed› to ‹speculative› or ‹corpus-suggested›, or provide actual corpus citations for each dialect.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation includes a checkmark (✔) and a list of dialects in the attribution, which is excessive for a scholarly citation. The dialect list should be in the prose, not the citation.",
+    "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, 2024-12-04, asserted ✔; reported across eight dialect localities: Yakumo, Horobetsu, Saru, Tokachi, Bibai, Asahikawa, Nayoro, and Sōya)",
+    "suggestion": "Move the dialect list to the prose and keep the citation clean: <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted) ‹corpus-confirmed›.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#002",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "380-382",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to the previous finding, the community source is cited as the primary support for the claim about the absence of 'yes'/'no' words, but it also references Nakagawa 2024: 396. The phrasing 'confirmed against' suggests Nakagawa is the primary source being verified by the community, which contradicts the placement of the community source citation first. The `‹corpus-confirmed›` grade is applied to the community source.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted; reported\nacross multiple dialects; confirmed against the affirmative-frame <i lang=\"ain-Latn\">ruwe un</i>\nof Nakagawa 2024: 396) ‹corpus-confirmed›.",
+    "suggestion": "Rephrase to clarify the relationship between the community source and Nakagawa. For example: '...asserted by nukopoli (aynu-corpora Discord, 2024-12-04), with confirmation from Nakagawa 2024: 396 regarding the affirmative-frame <i lang=\"ain-Latn\">ruwe un</i>.'",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim is that there are no dedicated 'yes' and 'no' words. The evidence cited is a Discord assertion 'confirmed against' a published source (Nakagawa 2024: 396). However, the published source shows an affirmative frame 'ruwe un', which is not a simple 'yes' word but a construction. The epistemic tag ‹corpus-confirmed› seems inflated for a claim supported only by a Discord message and a single published example that is not directly about the absence of yes/no words. The tag should be ‹corpus-suggested› or ‹speculative›.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted; reported across multiple dialects; confirmed against the affirmative-frame <i lang=\"ain-Latn\">ruwe un</i> of Nakagawa 2024: 396) ‹corpus-confirmed›.",
+    "suggestion": "Change ‹corpus-confirmed› to ‹corpus-suggested› or ‹speculative›, or add more robust corpus evidence.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation includes a nested reference to 'ruwe un of Nakagawa 2024: 396' in text, but this should be a proper Ref tag. Also, the inline description is overly detailed for a citation.",
+    "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, 2024-12-04, asserted; reported across multiple dialects; confirmed against the affirmative-frame ruwe un of Nakagawa 2024: 396)",
+    "suggestion": "Simplify and reformat: <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted; reported across multiple dialects; confirmed against <Ref k=\"nakagawa2024\" p=\"396\" />) ‹corpus-confirmed›.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#001",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "177-178",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 3,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation `<Ref k=\"aynucorporadiscord\" />` is attached to a claim that is also supported by `<Ref k=\"sato2008\" p=\"3–4\" />`. The community source is cited as the primary support, but the page numbers for Sato are also provided. It's unclear if the community source confirms Sato or vice versa, or if they are independent confirmations. The `‹corpus-confirmed›` grade seems to apply to the community source, but the citation structure is a bit muddled.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-09, confirmed against\n<Ref k=\"sato2008\" p=\"3–4\" />) ‹corpus-confirmed›",
+    "suggestion": "Clarify the relationship between the community source and the published source. If the community source confirms Sato, it could be phrased as 'confirmed against <Ref k=\"sato2008\" p=\"3–4\" /> by nukopoli (aynu-corpora Discord, 2024-11-09)'. If they are independent, consider listing them separately or clarifying which aspect each supports.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The claim about the intransitivity of 'an' and the transitive 'un' is attributed to a Discord message 'confirmed against' a published source. The epistemic tag ‹corpus-confirmed› is used, but the primary evidence is a Discord message, not corpus data. The tag should be ‹consensus› if the published source supports it, or ‹corpus-suggested› if the Discord message is the main source.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-09, confirmed against <Ref k=\"sato2008\" p=\"3–4\" />) ‹corpus-confirmed›.",
+    "suggestion": "Change to ‹consensus› if Sato 2008 clearly supports the claim, or ‹corpus-suggested› if the Discord message is the main evidence.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The citation includes a nested Ref tag inside parentheses, which is invalid markup. The Ref tag should not be embedded in text like this.",
+    "quote": "Ref k=\"aynucorporadiscord\" (nukopoli, aynu-corpora Discord, 2024-11-09, confirmed against Ref k=\"sato2008\" p=\"3–4\")",
+    "suggestion": "Reformat as: <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-09, confirmed against Sato 2008: 3–4).",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#017",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "353-355",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'NEG.exist' for 'isam' is inconsistent with the standard gloss for 'isam' as a negative existential verb. The text at line 347 calls it 'bare-predicate use of isam', but the gloss treats it as a single morpheme 'NEG.exist'. The repetition 'isam isam' is glossed as 'NEG.exist NEG.exist', but the translation 'gone, gone' suggests a reduplication for emphasis, which is not captured in the gloss. Also, 'CAWAN' is in all caps, suggesting it's a loanword (Japanese 'chawan' for bowl), but the gloss does not indicate this.",
+    "quote": "m=\"mak ne hine nea CAWAN isam isam\"\ng=\"how COP CONJ that bowl NEG.exist NEG.exist\"\ntr=\"How can that bowl be gone, gone?\"",
+    "suggestion": "Gloss 'CAWAN' as 'bowl' (or 'rice.bowl' if a loanword), and consider glossing 'isam isam' as 'NEG.exist~EMPH' or similar to show reduplication. Also, ensure consistency with other glosses of 'isam' in the chapter (if any).",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss has 'NEG.exist NEG.exist' for two instances of 'isam', but 'isam' is a negative existential verb and should be glossed consistently. Having two identical glosses for repeated 'isam' is acceptable, but the free translation 'gone, gone' suggests reduplication for emphasis, not two separate negations. The gloss should reflect that 'isam' is repeated for discourse emphasis, not a compound predicate.",
+    "quote": "g=\"how COP CONJ that bowl NEG.exist NEG.exist\"",
+    "suggestion": "Revise gloss to clarify reduplication: 'NEG.exist^REDUP' or add a note explaining the repetition as emphatic.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#016",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "337",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'FIN' for 'un' is not explained in the chapter. The text at line 330 calls 'un' a 'final particle', but the gloss uses 'FIN' which is an abbreviation for 'final' or 'finite'. The free translation 'Yes, I heard it' includes 'Yes' which is not present in the Ainu text. The gloss does not show how 'Yes' is derived. The note (line 342) says 'The final particle un forms the affirmative-reply frame', but the gloss does not indicate that 'un' carries affirmative force. This is a gloss-translation mismatch: the translation adds 'Yes' without a corresponding morpheme in the gloss.",
+    "quote": "m=\"ku=nu ru-we un\"\ng=\"1SG.A=hear track-POSS FIN\"\ntr=\"Yes, I heard it.\"",
+    "suggestion": "Either add a gloss for 'un' as 'AFF' (affirmative) or 'FIN.AFF' to match the translation, or adjust the translation to not include 'Yes' (e.g., 'I heard it' with a note that it's an affirmative reply).",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme string includes a hyphen in 'ru-we', but the gloss 'track-POSS' suggests a possessive clitic, which should be aligned as 'ru-we' → 'track-POSS'. However, the hyphen placement implies a stem-clitic boundary, but 'ruwe' is a formal noun meaning 'hearing', not 'track'. This is a likely segmentation or gloss error.",
+    "quote": "m=\"ku=nu ru-we un\"",
+    "suggestion": "Verify whether 'ruwe' should be segmented as 'ru-we' or 'ruwe' (unsegmented). If 'ruwe' is a single morpheme, correct to m=\"ku=nu ruwe un\" and g=\"1SG.A=hear NMLZ FIN\".",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#019",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "471-475",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'COP' for 'ne' does not show person marking. The note (line 475) says 'Third-person subject: the copula ne takes no person affix (zero = 3rd person)'. The gloss should indicate zero third-person marking, e.g., 'COP[3SG]' or '3SG.S=COP' (but see previous issue about S vs A).",
+    "quote": "m=\"nispa ne yakun\"\ng=\"chief COP COND\"\ntr=\"if (he) is a chief …\"",
+    "suggestion": "Add a gloss for zero third-person, e.g., 'COP[3SG]' or '3SG.A=COP' (if using A for transitive subject).",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "No actual issue; the gloss is consistent. However, the absence of a subject affix on 'ne' in third person is correctly represented, but the gloss does not indicate person. This is standard in Leipzig glossing, so no fix needed.",
+    "quote": "g=\"chief COP COND\"",
+    "suggestion": null,
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#009",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "496",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This phrase is ungrammatical and appears to be a pipeline note or shorthand ('no read primary source' instead of 'no primary source read' or 'no primary source consulted'). It reads like an editorial instruction rather than polished prose.",
+    "quote": "no read primary source",
+    "suggestion": "Change to 'no primary source consulted' or 'no primary source read'.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#006",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "298-301",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table lists 'NMLZ + un' as an affirmative reply, but the example 'ku=nu ruwe un' is glossed in the text (line 337) as 'Yes, I heard it.' However, the table caption says 'The formal-noun illocutionary paradigm (after Nakagawa 2024: 392–396)', but the text at lines 329-332 describes 'NMLZ + un' as 'the affirmative-answer member' that 'reduces the declarative frame by replacing the copula with the final particle un'. This contradicts the table's classification: the table shows 'NMLZ + un' as a separate illocutionary type, but the text says it is a reduction of the declarative frame, not a distinct illocutionary value. The table should either list it as a variant of the declarative or the text should clarify that it is a distinct affirmative reply construction.",
+    "quote": "<td><i lang=\"ain-Latn\">NMLZ + un</i></td>\n\t\t\t\t<td>affirmative reply</td>\n\t\t\t\t<td><i lang=\"ain-Latn\">ku=nu ruwe un</i></td>",
+    "suggestion": "Either change the table row to indicate it is a reduced declarative (e.g., 'affirmative reply (reduced declarative)') or adjust the text to treat it as a distinct illocutionary type consistent with the table.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#022",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "7",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter uses 'Hokkaido' without a macron (ō) consistently, but the book title or other chapters might use 'Hokkaidō'. This is a minor orthographic consistency issue across the book, but within the chapter it is consistent.",
+    "quote": "Hokkaido Ainu",
+    "suggestion": "Ensure the entire book uses the same romanization (Hokkaido vs Hokkaidō).",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#021",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "192-198",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'exist.S' again, and 'inside.of' for 'or'. Also, 'anakne' is glossed as 'TOP' (topic marker), but the text at line 198 says 'anakne is the topic marker'. This is consistent. However, the gloss 'gently' for 'apunno' appears twice, which is fine. The main issue is the inconsistent glossing of 'or' and 'an'.",
+    "quote": "m=\"e=kor iwatarap apunno hon or ta anakne apunno an wa\"\ng=\"2SG.A=have infant gently womb inside.of LOC TOP gently exist.S CONJ\"",
+    "suggestion": "Same as above: standardize glosses for 'or' and 'an'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#020",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "181-188",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss 'exist.S' uses 'S' to indicate intransitive subject? But the text says 'an' is an existential verb. The gloss 'exist.S' is inconsistent with other glosses of 'an' in the chapter: line 99 has 'exist' (no S), line 193 has 'exist.S' again. The 'S' might indicate a specific form (e.g., singular vs plural 'oka'), but this is not explained. Also, 'inside.of' for 'or' is unusual; elsewhere 'or' is glossed as 'place' or 'inside'.",
+    "quote": "m=\"iwor or ta an wa\"\ng=\"mountains inside.of LOC exist.S CONJ\"",
+    "suggestion": "Standardize the gloss for 'an' (either 'exist' or 'exist.S' with explanation) and for 'or' (e.g., 'place' or 'inside').",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#014",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "229",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says 'the formal noun hawe (voice-NMLZ) nominates the whole quotation as the complement', but the gloss in the example (line 224) shows 'hawe' glossed as 'NMLZ' (nominalizer), not 'voice-NMLZ'. The note uses 'voice-NMLZ' which is more specific than the gloss. This is a minor inconsistency between the note and the gloss.",
+    "quote": "note=\"Specificational copular: the nominalized clause tap a=ye katu 'the way of now saying' is the subject; the quoted name Piratur sekor a=ye hawe 'the formal-noun report of calling it Piratur' is the complement before ne. The formal noun hawe (voice-NMLZ) nominates the whole quotation as the complement.\"",
+    "suggestion": "Either change the gloss to 'voice-NMLZ' or change the note to just 'NMLZ'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#013",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "137",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The 'place' attribute is used inconsistently: some examples have 'place' with a description (e.g., line 187: '川上まつ子, uwepeker 民話8, AA研アイヌ語資料 [aa-irc/006#128]'), while others have just 'Nakagawa ex. 15'. This is a formatting inconsistency, not a content error.",
+    "quote": "place=\"Nakagawa ex. 15\"",
+    "suggestion": "Standardize the 'place' attribute format across all examples, or remove it where not needed.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#012",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "84",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The citation 'shibatani1990' is used, but the reference list should include Shibatani 1990. The page number '19' is given, but the text at line 88 says 'Shibatani explicitly analyses as noun incorporation <Ref k=\"shibatani1990\" p=\"19\" />' — this is consistent. No issue here, just noting for completeness.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"126–128\" />; <Ref k=\"sato2008\" p=\"21\" />; <Ref k=\"shibatani1990\" p=\"19\" />.",
+    "suggestion": null,
+    "confidence": 0
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#011",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "7-10",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The quotation is from Nakagawa 2022, but the citation is given as <Ref k=\"nakagawa2022pos\" p=\"474\" />. The key 'nakagawa2022pos' is used, but in the bibliography this might be the same as 'nakagawa2022' or a different work. Consistency check: elsewhere in the chapter, 'nakagawa2024' is used for the 2024 grammar. The key 'nakagawa2022pos' should be verified to match the bibliography entry.",
+    "quote": "As Nakagawa states in the Handbook chapter on parts of speech, \"the element that occupies the predicate position in Ainu is invariably a verb phrase and the head of the verb phrase is a verb or an auxiliary verb\"",
+    "suggestion": "Ensure the key 'nakagawa2022pos' matches the bibliography entry for Nakagawa's 2022 Handbook chapter.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#024",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "111",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The dialect label 'HK' is used, but the chapter elsewhere refers to 'Hokkaido' or 'Hokkaidō' in prose. This creates inconsistency in dialect naming.",
+    "quote": "dial=\"HK\"",
+    "suggestion": "Standardize to either 'HK' and 'SAR' throughout or spell out 'Hokkaido' and 'Saru' in full.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#023",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "102",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The dialect label 'SAR' is used in the first example, but the chapter elsewhere uses 'Saru' in prose (e.g., line 386). This creates inconsistency in dialect naming.",
+    "quote": "dial=\"SAR\"",
+    "suggestion": "Standardize to either 'SAR' and 'HK' throughout or spell out 'Saru' and 'Hokkaido' in full for clarity and consistency.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#018",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "462-467",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '1SG.S=COP' uses 'S' for subject, but the copula 'ne' is described as taking transitive-subject prefixes (line 454-455: 'the copula in the conditional takes the same transitive-subject person indexes as in the declarative'). The gloss should use 'A' (agent/transitive subject) rather than 'S' (intransitive subject) to be consistent with the text's description. The same issue appears in line 471-475.",
+    "quote": "m=\"aynu ku=ne yakun\"\ng=\"Ainu 1SG.S=COP COND\"\ntr=\"if I am an Ainu …\"",
+    "suggestion": "Change '1SG.S=COP' to '1SG.A=COP' to match the text's description of transitive-subject marking on the copula.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#015",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "321",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss '2SG.S=understand' uses 'S' for subject, but the person-marking chapter (referenced elsewhere) might use different abbreviations. More importantly, the free translation includes both a question and an exclamation, but the gloss does not indicate any illocutionary force. The note (line 325) explains that it's a polar question or exclamative depending on intonation, but the gloss itself is neutral. This is not a mismatch per se, but the gloss could be improved to show the ambiguity.",
+    "quote": "m=\"e=eraman hawe\"\ng=\"2SG.S=understand NMLZ\"\ntr=\"You understood? / You understood!\"",
+    "suggestion": "Consider adding a note in the gloss or using a more explicit gloss like '2SG.S=understand NMLZ[POLAR/EXCL]' or similar, but this may be beyond the scope of the glossing conventions.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#010",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "414-415",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue: a Discord assertion with a checkmark is tagged ‹corpus-confirmed›. The claim about response-to-call utterances not being affirmations is again supported only by a Discord message.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-12-04, asserted ✔) ‹corpus-confirmed›.",
+    "suggestion": "Change ‹corpus-confirmed› to ‹speculative› or ‹corpus-suggested›.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#008",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "386-398",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says Saru dialect uses a Japanese-like pattern (affirming/denying propositional content), but then says other dialects repeat the verb phrase. However, the example at lines 401-407 is a constructed elliptical reply 'somo ku=oman' 'I am not going' with the note 'Constructed elliptical reply to a polar yes/no question. In non-Saru dialects, the VP is repeated without a yes/no affirmation particle'. This implies Saru does NOT use VP repetition, but the text earlier (lines 386-389) says Saru mirrors Japanese (which would use affirmation/denial particles). But the example is labeled 'non-Saru dialects', so the inconsistency is that the text describes Saru as using a different strategy, but no example of Saru strategy is given, and the constructed example only illustrates the non-Saru strategy. This is a minor inconsistency in coverage.",
+    "quote": "In the Saru dialect the answer pattern mirrors Japanese: the respondent targets the propositional content of the question and affirms or denies it ('no, I am not going' in reply to 'are you not going?'). In other dialects — attested for Yakumo, Horobetsu, Tokachi, Bibai, Asahikawa, and Sōya among others — the respondent avoids a simple yes/no particle altogether and instead repeats the relevant verb phrase.",
+    "suggestion": "Add an example of the Saru dialect strategy (e.g., with affirmation/denial particles) to balance the presentation, or clarify that the constructed example is only for non-Saru dialects.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "oblique-adjunct-verbless-clauses~p1#007",
+  "chapter": "oblique-adjunct-verbless-clauses",
+  "lines": "346-349",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The text says 'bare-predicate use of isam functions as the full predicate of a content question', but the example (lines 352-360) shows 'mak ne hine nea CAWAN isam isam' with the gloss 'how COP CONJ that bowl NEG.exist NEG.exist' and translation 'How can that bowl be gone, gone?'. This is a rhetorical question with a wh-word 'mak', not a content question (which would expect an answer). The text calls it a 'content question' but the example is a rhetorical question. Also, the section is about 'formal-noun fragments', but isam is not a formal noun; it's a negative existential verb. This seems misplaced.",
+    "quote": "An additional bare-predicate use of <i lang=\"ain-Latn\">isam</i> functions as the full predicate of a content question in the corpus. Nakagawa's example shows <i lang=\"ain-Latn\">isam, isam?</i> 'it's gone, gone?' functioning as the rhetorical pivot of a question where the missing entity is already established in discourse:",
+    "suggestion": "Either reclassify the example as a rhetorical question (not a content question) or move it to a different section (e.g., elliptical answers or negative predication).",
+    "confidence": 0.7
+   }
+  ]
+ }
+]

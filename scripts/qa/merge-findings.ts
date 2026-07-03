@@ -30,10 +30,19 @@ const CATEGORY_FAMILY: Record<string, string> = {
 	'verify-quote': 'fact',
 };
 
+/** Generated apparatus chapters — Tier C, excluded from LLM findings. */
+const GENERATED = new Set([
+	'index-of-subjects',
+	'index-of-grammatical-morphemes',
+	'index-of-examples-sources-dialects',
+	'consolidated-references-bibliography',
+]);
+
 const modelDirs = readdirSync(P1).filter((d) => !d.endsWith('.log') && !d.endsWith('.json'));
 const slugs = new Set<string>();
 for (const d of modelDirs)
-	for (const f of readdirSync(join(P1, d))) if (f.endsWith('.json')) slugs.add(f.replace(/\.json$/, ''));
+	for (const f of readdirSync(join(P1, d)))
+		if (f.endsWith('.json') && !GENERATED.has(f.replace(/\.json$/, ''))) slugs.add(f.replace(/\.json$/, ''));
 
 interface F {
 	lines: string;

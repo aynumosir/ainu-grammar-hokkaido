@@ -1,0 +1,1185 @@
+[
+ {
+  "id": "hokkaido-phonological-microvariation~p1#051",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "603-606",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This isogloss table entry repeats the same problem as lines 147-150: it lists Kushiro and Bihoro as undergoing elision conditioned by accent, but they are classified as unaccented in the same chapter (see accent table).",
+    "quote": "elided before accented σ2 — Obihiro, Kushiro, Bihoro, Asahikawa, Nayoro",
+    "suggestion": "Align with the accent classification: either revise the isogloss definition to note that for unaccented dialects the elision occurs without an accent condition, or correct the classification of Kushiro and Bihoro.",
+    "confidence": 1
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This lists Obihiro, Kushiro, and Bihoro as having h-elision. But earlier in the section 'Word-initial h-elision' (line 147), the eliding dialects are listed as Obihiro, Kushiro, Bihoro, Asahikawa, and Nayoro — consistent. However, if Obihiro is unaccented (per line 63), the condition 'when the accent falls on σ2' (line 148) cannot apply, since unaccented dialects lack lexical pitch. This creates a logical contradiction: h-elision is conditioned by accent placement, yet applies in unaccented dialects.",
+    "quote": "elided before accented σ2 — Obihiro, Kushiro, Bihoro, Asahikawa, Nayoro",
+    "suggestion": "Revise the conditioning environment for h-elision to not rely on accent placement if it occurs in unaccented dialects, or clarify that the rule applies historically or by analogy.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#044",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "669",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviation 'KU' is not defined in the text. It's unclear what it refers to.",
+    "quote": "Krasheninnikov (1738) and Golovnin (1811) ‹KU›",
+    "suggestion": "Define 'KU' on first use or use the full term.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The sources Krasheninnikov (1738) and Golovnin (1811) are cited in prose without a `<Ref />` tag, while other citations are formalized. This is inconsistent citation practice and omits verifiable references for these claims.",
+    "quote": "Krasheninnikov (1738) and Golovnin (1811) ‹KU› both record <i lang=\"ain-Latn\">car</i>",
+    "suggestion": "Add proper `<Ref k=\"...\" />` entries for Krasheninnikov and Golovnin, or integrate them into an existing source like `<Ref k=\"hattorichiri1960\" />` if appropriate.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#057",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "598",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Obihiro is listed here as having 'standard' accent, but in the earlier table (line 63), it is listed among unaccented dialects. This is a direct contradiction in the classification of Obihiro.",
+    "quote": "standard (σ1-open→σ2 high) — Saru, Chitose, Horobetsu, Obihiro, Sōya",
+    "suggestion": "Revise one of the tables to reflect a consistent classification of Obihiro. Given that the earlier table (line 51–66) is more detailed and specific to pitch, it should take precedence unless contradicted by a citation.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#056",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "63",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "This list includes Bihoro, Kushiro, and Samani as unaccented. However, in the isogloss table (line 599), Bihoro and Kushiro are listed under 'unaccented', but Obihiro is listed under 'standard' accent, while in the earlier table (line 63), Obihiro is in the unaccented group. This contradicts the later classification in line 599, where Obihiro is listed under 'standard'.",
+    "quote": "Shizunai, Urakawa, Samani, Bihoro, Kushiro, Shiranuka",
+    "suggestion": "Reconcile the classification of Obihiro: either it is unaccented (and should not be in the standard list in line 598) or it is standard (and should not be in the unaccented list in line 63).",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#053",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "103-110",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Same issue as above: gloss `g=\"spatula\"` fails to account for \"wooden\" in the free translation `tr=\"wooden spatula\"`, creating a consistent mismatch across both examples in this contrast.",
+    "quote": "<Ex m=\"iperékut\" g=\"spatula\" tr=\"wooden spatula\" constructed dial=\"YAK\" note=\"Irregular accent type: open σ1 and σ2 force accent to σ3. Same lexeme as the Saru form, differing only in accent position. Data from Nakagawa & Fukazawa 2022 §3.1.\" />",
+    "suggestion": "Revise gloss to `g=\"wooden-spatula\"` or adjust translation to `\"spatula\"` for consistency with the gloss.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#052",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "95-102",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss `g=\"spatula\"` does not match the free translation `tr=\"wooden spatula\"`, which includes the modifier \"wooden\" absent in the gloss. This creates a mismatch between the interlinear gloss and the translation.",
+    "quote": "<Ex m=\"ipérekut\" g=\"spatula\" tr=\"wooden spatula\" constructed dial=\"SAR\" note=\"Standard accent type: open σ1 forces accent to σ2. Accent mark (´) marks the onset of the high-pitch domain. Comparative form from Nakagawa & Fukazawa 2022 §3.1.\" />",
+    "suggestion": "Update the gloss to reflect the full meaning, e.g., `g=\"wooden-spatula\"` or adjust the translation to `\"spatula\"` if that is the intended meaning.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#048",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "250-256",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The base form 'sirpopke' contains the cluster 'pk', not 'kp'. The assimilated form 'sirpokke' has 'kk', not 'pp'. This contradicts the column headers (cluster kp, result pp) and the other row for kp that is correctly exemplified with 'hayokpe'.",
+    "quote": "kp → pp ... base: sirpopke, assimilated: sirpokke, gloss: warm",
+    "suggestion": "Correct the row: change cluster to 'pk', result to 'kk', and ensure the base and assimilated forms match. Alternatively, if the intended form is different, adjust accordingly.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#047",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "147-150",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Kushiro and Bihoro are classified as unaccented in the accent table (lines 62-64), not as standard-accent. Including them among 'standard-accent dialects' contradicts the earlier classification. Moreover, the elision rule is described as conditioned by accent, which cannot apply in unaccented dialects.",
+    "quote": "In eastern standard-accent dialects — Obihiro, Kushiro, Bihoro, Asahikawa, and Nayoro — a word-initial h is absent when the accent falls on σ2",
+    "suggestion": "Reconcile the classifications: either reclassify Kushiro and Bihoro as having some accentual properties that condition the elision, or remove them from the list of standard-accent dialects and describe their elision pattern separately.",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#046",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "8-9",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The overview states 13 localities, but the pitch-accent table (lines 53-63) lists 15 distinct localities (7 standard, 2 irregular, 6 unaccented). This is a numerical contradiction.",
+    "quote": "The thirteen Hokkaido Ainu localities surveyed by Hattori Chiri 1960 show fine-grained phonological differences...",
+    "suggestion": "Either correct the overview to say 'fifteen' or 'more than thirteen', or adjust the table to reflect only 13 (possibly by merging or explaining that some are not from Hattori's survey).",
+    "confidence": 1
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#058",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "367",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The use of hyphenation varies: sometimes written with hyphens (`-iw`, `-uy`), sometimes without (`siwnin`, `suynin`). While this may reflect morpheme boundaries, consistency in orthographic presentation should be maintained. The chapter uses both forms interchangeably without explanation.",
+    "quote": "-iw and -uy",
+    "suggestion": "Standardize the use of hyphens in morpheme notation, especially when discussing alternations like `-iw` vs `-uy`.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#045",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "682",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"ono2020\" />; <Ref k=\"nakagawafukazawa2022\" p=\"§6\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§6\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#043",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "655",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviations 'SA' and 'HA' are not defined in the text. It's unclear what they refer to.",
+    "quote": "‹SA›–HA border",
+    "suggestion": "Define 'SA' and 'HA' on first use or use the full terms.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#042",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "636",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.7\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.7\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#041",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "630",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.7\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.7\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#040",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "623",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.5\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.5\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#039",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "618",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#038",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "612",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.3\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.3\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#037",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "606",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.2\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.2\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#036",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "598",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#035",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "593",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'source' column in the table is missing citations for some rows, making it difficult to verify the information.",
+    "quote": "source",
+    "suggestion": "Add citations for all rows in the 'source' column.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#034",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "570",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.7, Table 17\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.7, Table 17\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#033",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "549",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community sources is inconsistent. It should include the username, platform, and date, followed by the reference tag.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-03-18)",
+    "suggestion": "Format as: (username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#032",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "541",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§2.3\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§2.3\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#031",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "513",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviations 'eastern' and 'Samani' are used in conjunction with 'southwest'. It's unclear if 'eastern' refers to a specific subset of eastern dialects or all of them.",
+    "quote": "eastern/Samani <i lang=\"ain-Latn\">i</i> vs southwest <i lang=\"ain-Latn\">e</i>",
+    "suggestion": "Clarify the scope of 'eastern' or use more precise geographical terms.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#030",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "506",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The symbol '~' is used inconsistently. In some places it indicates an alternation, in others it seems to indicate a contrast or comparison.",
+    "quote": "Sōya <i lang=\"ain-Latn\">e</i> ~ general <i lang=\"ain-Latn\">o</i>",
+    "suggestion": "Use consistent notation for alternations (e.g., 'vs' or 'alternates with') and comparisons.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#029",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "499",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The phrase 'tendency toward' is vague. It's unclear if this is a consistent alternation or a phonetic realization.",
+    "quote": "Yakumo tendency toward <i lang=\"ain-Latn\">e</i>",
+    "suggestion": "Clarify the nature of the variation, e.g., 'Yakumo alternates <i lang=\"ain-Latn\">o</i> with <i lang=\"ain-Latn\">e</i>' or 'Yakumo shows a tendency for <i lang=\"ain-Latn\">e</i> realization'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#028",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "492",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviation 'NE' is not defined in the text. It's unclear if it refers to Northeast or a specific dialect.",
+    "quote": "NE <i lang=\"ain-Latn\">o</i> vs default <i lang=\"ain-Latn\">u</i>",
+    "suggestion": "Define 'NE' on first use or use the full term 'Northeast'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#027",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "485",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The abbreviation 'HA' is not defined in the text. It's unclear if it refers to Hokkaido Ainu or a specific dialect.",
+    "quote": "Sōya <i lang=\"ain-Latn\">o-</i> vs most HA <i lang=\"ain-Latn\">u-</i>",
+    "suggestion": "Define 'HA' on first use or use the full term 'Hokkaido Ainu'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#026",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "465",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" /> §3.5 (Tables 9–11)",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.5 (Tables 9–11)\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#025",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "457",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.6, Table 15\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.6, Table 15\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#024",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "447",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community sources is inconsistent. It should include the username, platform, and date, followed by the reference tag.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2024-12-06)",
+    "suggestion": "Format as: (username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#023",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "433",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.6, Table 12\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.6, Table 12\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#022",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "421",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.5, Table 8\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.5, Table 8\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#021",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "367",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.5, Table 7\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.5, Table 7\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#020",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "358",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community sources is inconsistent. It should include the username, platform, and date, followed by the reference tag.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-08)",
+    "suggestion": "Format as: (username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#019",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "333",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "Nakagawa 1996 (via <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />)",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#018",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "322",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "Kindaichi, Chiri, and Naert 1958 (via <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />)",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#017",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "306",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#016",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "299",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#015",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "284",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format for community sources is inconsistent. It should include the username, platform, and date, followed by the reference tag.",
+    "quote": "<Ref k=\"aynucorporadiscord\" /> (antitwilight, 2024-11-17)",
+    "suggestion": "Format as: (username, aynu-corpora Discord YYYY-MM-DD; <Ref k=\"aynucorporadiscord\" />).",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#014",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "202",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.3, Table 5\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.3, Table 5\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#013",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "192",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.2\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.2\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#012",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "153",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.2, Table 4\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.2, Table 4\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#011",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "137",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#010",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "127",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#009",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "117",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#008",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "109",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "Data from Nakagawa & Fukazawa 2022 §3.1.",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#007",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "101",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "Comparative form from Nakagawa & Fukazawa 2022 §3.1.",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#006",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "93",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#005",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "64",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of 'final-high' is not clearly defined in the context of pitch accent. It's unclear if this refers to the last syllable or a specific position.",
+    "quote": "pitch non-contrastive lexically; Samani tends final-high; Shizunai shows no positional pattern",
+    "suggestion": "Clarify what 'final-high' refers to, e.g., 'high pitch on the final syllable'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#004",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "59",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of 'σ1', 'σ2', and 'σ3' is inconsistent with the surrounding text which uses 'σ1' and 'σ2' for syllables. It's unclear if this is a typo or a different notation.",
+    "quote": "σ1 and σ2 both open → σ3 high (rather than σ2)",
+    "suggestion": "Clarify the notation or ensure consistency with the rest of the document.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#003",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "54",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The use of 'σ1' and 'σ2' is inconsistent with the surrounding text which uses 'σ1' and 'σ2' for syllables. It's unclear if this is a typo or a different notation.",
+    "quote": "σ1 closed → σ1 high; σ1 open → σ2 high",
+    "suggestion": "Clarify the notation or ensure consistency with the rest of the document.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#002",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "39",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#001",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "11",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation for Nakagawa & Fukazawa 2022 is missing a page or section number, making it difficult to locate the specific information referenced.",
+    "quote": "<Ref k=\"nakagawafukazawa2022\" /> §3",
+    "suggestion": "Add a specific page or section number to the citation, e.g., <Ref k=\"nakagawafukazawa2022\" p=\"§3.1\" />.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#055",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "58",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The table under 'Pitch-accent microvariation' lists only Yakumo and Oshamambe as 'Irregular' type, but the text in section 'The Yakumo–Oshamambe irregular type' treats them as the only two, which is consistent. However, in the isogloss table at the end (line 597), 'standard' accent is listed for Saru, Chitose, Horobetsu, Obihiro, Sōya — but Obihiro is listed in the unaccented group in the earlier table (line 63), creating a contradiction.",
+    "quote": "Yakumo, Oshamambe",
+    "suggestion": "Check whether Obihiro is unaccented (as per line 63) or standard-accented (as per line 598). The two tables must align. Currently, Obihiro appears in both unaccented and standard groups, which is contradictory.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#054",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "113",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent placement of the acute accent: in `hopúni`, the accent is on the second syllable (ú), while in `hopuní`, it is on the final syllable (í). This is correct phonologically, but the orthographic representation should be checked for consistency in macron or accent marking across the chapter. However, since no macrons are used elsewhere, and only acute accents for pitch, this may be acceptable. But the lack of diacritics in other examples (e.g., `ipérekut`) raises concerns about consistency.",
+    "quote": "Saru <i lang=\"ain-Latn\">hopúni</i> 'fly' vs Yakumo <i lang=\"ain-Latn\">hopuní</i>",
+    "suggestion": "Ensure consistent use of acute accents to mark pitch across all cited forms, or clarify that accent marking is only used where contrastive.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#050",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "115-117",
+  "category": "copyedit",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This clause lacks a main verb; it is ungrammatical. The intended construction is likely 'nor has any synchronic account been provided' or 'neither has a synchronic account been settled'.",
+    "quote": "neither has any synchronic account of what structural property of consecutive open syllables triggers the shift",
+    "suggestion": "Rephrase to: 'nor has any synchronic account been provided of what structural property...' or 'neither has any synchronic account been settled of what structural property...'",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "hokkaido-phonological-microvariation~p1#049",
+  "chapter": "hokkaido-phonological-microvariation",
+  "lines": "312-314",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "No citation is provided for this claim. The preceding citation (Kirikae 1994) covers place-name evidence but may or may not include the Kuril data. The reader cannot verify the source.",
+    "quote": "The Kuril attestations — Krasheninnikov 1738 and Golovnin 1811 — record car for 'mouth'",
+    "suggestion": "Add a citation, e.g., from Kirikae 1994 or another source that documents these historical attestations.",
+    "confidence": 0.8
+   }
+  ]
+ }
+]

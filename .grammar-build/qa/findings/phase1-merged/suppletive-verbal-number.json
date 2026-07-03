@@ -1,0 +1,1822 @@
+[
+ {
+  "id": "suppletive-verbal-number~p1#045",
+  "chapter": "suppletive-verbal-number",
+  "lines": "398-406",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'come.PL=PL' for ariki=hci, but the translation uses 'came' (past tense). The gloss does not indicate tense. Also, the gloss 'PL' for =hci is redundant with 'come.PL', which the note explains as 'doubling the plural exponence'. The gloss should perhaps gloss =hci as 'PL.EMPH' or 'PL.AUG' to indicate the over-marking.",
+    "quote": "m=\"Orohko-utah ariki=hci\"\ng=\"Orok-ASS come.PL=PL\"\ntr=\"The Oroks came.\"",
+    "suggestion": "Gloss =hci as 'PL.EMPH' or add a note about the doubling.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'come.PL=PL' duplicates plural marking: 'come.PL' already reflects the plural stem, and '=PL' glosses '=hci', but the morpheme '=hci' is a bound clitic, not a free plural particle. The gloss should reflect grammatical roles, not just semantic plurality. 'PL' is too vague — it should be dialect-specific, e.g. 'PL.SAK' or 'CLIT.PL'.",
+    "quote": "g=\"Orok-ASS come.PL=PL\"",
+    "suggestion": "Revise to 'come.PL=CLIT.PL' or 'come.PL=pa' analog, with a note on Sakhalin plural marking.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#039",
+  "chapter": "suppletive-verbal-number",
+  "lines": "132-140",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.A=kill.PL' for a=ronnu, but the translation is passive ('were killed'). The gloss does not indicate the passive/agentless reading that the note explains ('the indefinite a= gives the agentless reading'). The gloss should reflect that a= is indefinite/agentless, not just '4.A'.",
+    "quote": "m=\"a=onáha a=unúhu a=ronnu pa wa ora\"\ng=\"4.POSS=father 4.POSS=mother 4.A=kill.PL PL CONJ then\"\ntr=\"My father and my mother were killed, and then …\"",
+    "suggestion": "Gloss a= as 'INDEF.A' or '4.A (agentless)' to match the translation.",
+    "confidence": 0.7
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The morpheme 'a=' is glossed as '4.POSS' for father and mother, but as '4.A' for the verb — inconsistent role marking. If 'a=' is a genitive possessor on nouns, it should not be the same as the agent index on the verb unless homophony is noted. The agent index should be on the verb as '=a' or similar, not 'a='.",
+    "quote": "g=\"4.POSS=father 4.POSS=mother 4.A=kill.PL PL CONJ then\"",
+    "suggestion": "Revise gloss to distinguish possessor from agent: e.g. '4.POSS=father 4.POSS=mother =a-kill.PL' or clarify the allomorphy in a note.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#038",
+  "chapter": "suppletive-verbal-number",
+  "lines": "122-130",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.S' for the subject index =an, but the translation uses 'we' (first person plural). The note says 'the fourth-person S suffix =an, here a plural first-person reference'. The gloss should indicate the person/number more precisely, e.g., '4.S' is ambiguous between singular and plural fourth person. The note clarifies, but the gloss alone is misleading.",
+    "quote": "m=\"kiwkode paye=an wa ne yakun wakkata=an ka eaykap kusu\"\ng=\"express.train go.PL=4.S CONJ COP if draw.water=4.S even be.unable because\"\ntr=\"If we go by express train, we cannot even draw water.\"",
+    "suggestion": "Consider glossing =an as '1PL.S' or '4PL.S' to match the translation, or add a note to the gloss.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The gloss 'go.PL' implies a plural stem, but the morpheme is 'paye', which is glossed as plural in the table, yet the free translation 'we go' uses first-person plural, while the suffix '=an' is glossed as '4.S' (third-person singular or honorific), creating a person/number mismatch.",
+    "quote": "g=\"express.train go.PL=4.S CONJ COP if draw.water=4.S even be.unable because\"",
+    "suggestion": "Recheck the person index: if the subject is first-person plural, the gloss should reflect that (e.g. =1PL), not =4.S. Alternatively, clarify in the note that 4.S is used for plural reference in this context.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#077",
+  "chapter": "suppletive-verbal-number",
+  "lines": "89-93",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The dialect names are given in English (Saru, Chitose, etc.) without macrons. The standard romanization would be 'Saru', 'Chitose', 'Mukawa', 'Shizunai', 'Tokachi'. These are fine without macrons, but the inconsistency with 'Hokkaido' is notable.",
+    "quote": "Saru, Chitose, Mukawa, and Shizunai have <i lang=\"ain-Latn\">oka</i> beside <i lang=\"ain-Latn\">okay</i> elsewhere; Saru and Chitose have <i lang=\"ain-Latn\">arpa</i> for 'go' where other dialects often use <i lang=\"ain-Latn\">oman</i>; and Tokachi has no singular partner to <i lang=\"ain-Latn\">ronno</i> 'kill', so it treats that verb as number-invariant",
+    "suggestion": "No change needed, but consider adding macrons to 'Hokkaidō' for consistency with scholarly norms.",
+    "confidence": 0.3
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent representation of the same stem: 'oka' vs 'okay' — the final -y is variably included. This variation should be either standardized or explained (e.g. as dialectal or phonological).",
+    "quote": "<i lang=\"ain-Latn\">oka</i> beside <i lang=\"ain-Latn\">okay</i> elsewhere",
+    "suggestion": "Use one form consistently (e.g. 'okay') and note variation, or use 'oka(y)' as in line 107.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#002",
+  "chapter": "suppletive-verbal-number",
+  "lines": "118",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'vd' in 'vt/vd' is not explained or used elsewhere in the chapter. It's unclear what this abbreviation signifies in this context.",
+    "quote": "<td>be in / put into a place</td><td><i lang=\"ain-Latn\">oma</i></td><td><i lang=\"ain-Latn\">o</i></td><td>locative-object vt/vd</td><td>place object</td>",
+    "suggestion": "Clarify or remove 'vd' if it's not a standard or explained grammatical category within this chapter.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'place object' for the 'number locus' column is vague. It's unclear if this refers to the object itself being in a place, or the object indicating a place.",
+    "quote": "<td>be in / put into a place</td><td><i lang=\"ain-Latn\">oma</i></td><td><i lang=\"ain-Latn\">o</i></td><td>locative-object vt/vd</td><td>place object</td>",
+    "suggestion": "Clarify the gloss 'place object' for better understanding.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Parentheses used to mark optional -u, but in other entries variation is shown with slashes. Inconsistent format for representing allomorphy.",
+    "quote": "<i lang=\"ain-Latn\">eram(u)an</i>",
+    "suggestion": "Use slash notation: 'eraman / eramuan' or standardize to one form with a note.",
+    "confidence": 0.8
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Stem alternation between 'anu' and 'ama' is large and unexplained. While this may be accurate, the orthographic difference is substantial and should be flagged if it reflects dialectal split or transcription variance.",
+    "quote": "<i lang=\"ain-Latn\">anu</i> / <i lang=\"ain-Latn\">ama</i>",
+    "suggestion": "Add dialect labels or note the variation source.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#001",
+  "chapter": "suppletive-verbal-number",
+  "lines": "107",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 2,
+  "models": [
+   "google/gemini-2.5-flash-lite",
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The Ainu form 'oka(y)' is presented with an optional 'y'. While this might be correct, it's inconsistent with other forms in the table and chapter that do not show optional elements in parentheses.",
+    "quote": "<td>be, exist</td><td><i lang=\"ain-Latn\">an</i></td><td><i lang=\"ain-Latn\">oka(y)</i></td><td>vi</td><td>S</td>",
+    "suggestion": "Remove the parentheses around 'y' in 'oka(y)' to match the consistent orthography of other entries.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The singular stem is given as 'arpa / oman' with a slash, but the table header says 'singular stem' (singular). The slash suggests dialectal variation, but the table does not explain this. Elsewhere (line 91-92) it says Saru and Chitose have arpa where other dialects use oman, so the slash is appropriate, but the table lacks a note about dialect variation.",
+    "quote": "<tr><td>go</td><td><i lang=\"ain-Latn\">arpa</i> / <i lang=\"ain-Latn\">oman</i></td><td><i lang=\"ain-Latn\">paye</i></td><td>vi</td><td>S</td></tr>",
+    "suggestion": "Add a footnote or note to the table explaining that arpa and oman are dialectal variants.",
+    "confidence": 0.7
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table entry 'oka(y)' is ambiguous: it could mean the form is oka with optional -y, or it could mean oka and okay are variants. The text in line 90 clarifies that oka is used in Saru, Chitose, Mukawa, and Shizunai, while okay is used elsewhere. The table should reflect this dialectal variation more clearly.",
+    "quote": "The table uses <i lang=\"ain-Latn\">oka(y)</i> for the plural of 'be, exist', but line 90 uses <i lang=\"ain-Latn\">oka</i> and <i lang=\"ain-Latn\">okay</i> as dialectal variants. The table should indicate the variation.",
+    "suggestion": "Add a note to the table explaining the dialectal variation, or use separate rows for oka and okay.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#043",
+  "chapter": "suppletive-verbal-number",
+  "lines": "343-351",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '4.A=wear' for a=mi and '4.S=sleep' for hotke=an, but the translation uses 'we' (first person plural). The note says 'pa follows the fully inflected hotke=an, after the person suffix =an'. The gloss should indicate that =an is first person plural, not just '4.S', to match the translation.",
+    "quote": "m=\"rus patek a=mi wa hotke=an pa\"\ng=\"fur only 4.A=wear CONJ sleep=4.S PL\"\ntr=\"We wore only fur and slept.\"",
+    "suggestion": "Gloss =an as '1PL.S' or '4PL.S' to match the translation.",
+    "confidence": 0.6
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The free translation is 'We wore only fur and slept', but the gloss '4.A=wear' and 'sleep=4.S' uses fourth person, which may not clearly encode first-person plural. The note says 'we', so the gloss should reflect that the 4.S index is being used for first-person plural reference, or be glossed as 1PL.",
+    "quote": "g=\"fur only 4.A=wear CONJ sleep=4.S PL\"",
+    "suggestion": "Add a note or adjust gloss to 'sleep=4.S[1PL]' to clarify the index's referent.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#036",
+  "chapter": "suppletive-verbal-number",
+  "lines": "114",
+  "category": "orthography",
+  "severity": "medium",
+  "agreement": 2,
+  "models": [
+   "deepseek/deepseek-v4-flash",
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The plural stem is given as 'ronnu / ronno' with a slash, but line 93 says Tokachi has no singular partner to ronno 'kill', so it treats that verb as number-invariant. The table does not indicate this dialectal restriction.",
+    "quote": "<tr><td>kill</td><td><i lang=\"ain-Latn\">rayke</i> / <i lang=\"ain-Latn\">rayki</i></td><td><i lang=\"ain-Latn\">ronnu</i> / <i lang=\"ain-Latn\">ronno</i></td><td>vt</td><td>O</td></tr>",
+    "suggestion": "Add a note to the table about the Tokachi dialect having only ronno.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The plural stem is given as 'payeka(y) / payoka(y)' with a slash, suggesting dialectal or free variation. The table does not explain this variation.",
+    "quote": "<tr><td>wander about</td><td><i lang=\"ain-Latn\">omanan</i></td><td><i lang=\"ain-Latn\">payeka(y)</i> / <i lang=\"ain-Latn\">payoka(y)</i></td><td>vi</td><td>S</td></tr>",
+    "suggestion": "Add a note explaining the variation between payeka and payoka.",
+    "confidence": 0.5
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Inconsistent orthographic representation of the same stem variant: 'ronnu' vs 'ronno' are presented as alternants, but the difference in final vowel (-u vs -o) is not addressed or explained, and may reflect dialectal or transcriptional variation that should be marked.",
+    "quote": "<i lang=\"ain-Latn\">ronnu</i> / <i lang=\"ain-Latn\">ronno</i>",
+    "suggestion": "Add a dialect or transcription note explaining the -u/-o variation, or standardize to one form with a footnote if the variation is non-contrastive.",
+    "confidence": 0.9
+   },
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "Two variants with optional -y, but the vowel difference between 'payeka' and 'payoka' is not addressed. This may reflect dialectal or phonological variation that should be noted.",
+    "quote": "<i lang=\"ain-Latn\">payeka(y)</i> / <i lang=\"ain-Latn\">payoka(y)</i>",
+    "suggestion": "Add a dialect note or standardize if one form is dominant.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#055",
+  "chapter": "suppletive-verbal-number",
+  "lines": "1-8",
+  "category": "register-leak",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The HTML comment contains production notes ('Apparatus added in this change', 'used in place of citing the edited volume') that are addressed to the book's production process, not to the reader. This is a pipeline register leak.",
+    "quote": "<!--\n\tChapter: Verbal Number — Suppletive Stems and the Pluractional -pa.\n\tAttested examples are attributed to the underlying narrator + document (the ILCAA\n\taligned Saru materials, ilcaa1976; Nakagawa 2024; Shibatani 1990), never to an\n\taggregator. Apparatus added in this change: bibliography/registry key nakagawa2022\n\t(Handbook ch. 17 \"Verbal number\", authored by Nakagawa), used in place of citing the\n\tedited volume bugaeva2022 for that chapter.\n-->",
+    "suggestion": "Remove the comment or rewrite it as a reader-facing note if necessary.",
+    "confidence": 0.95
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "This is a meta-commentary about the citation system, not intended for the reader. It should be removed or moved to a production note.",
+    "quote": "Apparatus added in this change: bibliography/registry key nakagawa2022 (Handbook ch. 17 \"Verbal number\", authored by Nakagawa), used in place of citing the edited volume bugaeva2022 for that chapter.",
+    "suggestion": "Remove the comment entirely.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#034",
+  "chapter": "suppletive-verbal-number",
+  "lines": "184-192",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The note says homophonous forms inflate the counts for an, oka, and ek, but the table also includes san, ahun, tuye, and hosipi, which are not mentioned as having homophonous forms. The table heading says 'Type A: suppletive stems', but the table includes non-suppletive pairs, making the data misleading.",
+    "quote": "The figures are tokens of the written surface string, and homophonous <i lang=\"ain-Latn\">an</i>, <i lang=\"ain-Latn\">oka</i>, and <i lang=\"ain-Latn\">ek</i> — which also serve as existential, auxiliary, and other functions — inflate the existential and motion rows",
+    "suggestion": "Either restrict the table to true suppletive pairs (arpa/paye, ek/arki, an/oka, as/roski, a/rok, omanan/payeka, asi/roski, rayke/ronnu, eramuan/eramuoka, anu/ari, uk/uyna, oma/o) or rename the table to include all number-alternating pairs and add a note about the mixed types.",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#033",
+  "chapter": "suppletive-verbal-number",
+  "lines": "188",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table in §Type A includes san/sap 'go down' as a suppletive pair, but §Types B and C lists san/sap as a Type B -n/-p alternation, not a suppletive stem. The table heading says 'Type A: suppletive stems', so san/sap does not belong there.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">san</i> / <i lang=\"ain-Latn\">sap</i> 'go down'</td><td>1,424</td><td>795</td><td>1.79</td></tr>",
+    "suggestion": "Remove the san/sap row from the Type A table, or add a note explaining why it appears there despite being a Type B alternation.",
+    "confidence": 0.95
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same problem as san/sap: ahun/ahup is listed as a Type B -n/-p alternation in §Types B and C, but appears in the Type A suppletive stems table.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">ahun</i> / <i lang=\"ain-Latn\">ahup</i> 'enter'</td><td>1,401</td><td>670</td><td>2.09</td></tr>",
+    "suggestion": "Remove the ahun/ahup row from the Type A table.",
+    "confidence": 0.95
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "tuye/tuypa is listed as a Type C -pa alternation in §Types B and C, but appears in the Type A suppletive stems table.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">tuye</i> / <i lang=\"ain-Latn\">tuypa</i> 'cut'</td><td>518</td><td>201</td><td>2.58</td></tr>",
+    "suggestion": "Remove the tuye/tuypa row from the Type A table.",
+    "confidence": 0.95
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "hosipi/hosippa is described in §Types B and C as a derived intransitive with -pa alternation (line 289 mentions hosippa 'return.PL' < ho-sipi), but appears in the Type A suppletive stems table.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">hosipi</i> / <i lang=\"ain-Latn\">hosippa</i> 'return'</td><td>1,021</td><td>555</td><td>1.84</td></tr>",
+    "suggestion": "Remove the hosipi/hosippa row from the Type A table.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#076",
+  "chapter": "suppletive-verbal-number",
+  "lines": "15",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter uses 'Hokkaido' without a macron, but the standard romanization of the Japanese name is 'Hokkaidō'. The chapter should be consistent in its use of macrons.",
+    "quote": "Hokkaido Ainu",
+    "suggestion": "Change to 'Hokkaidō' or add a note explaining the romanization choice.",
+    "confidence": 0.6
+   },
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The chapter consistently uses 'Hokkaido' without a macron, which is a valid romanization but inconsistent with the standard scholarly practice of using macrons for long vowels in Japanese. The chapter should either use macrons throughout or explain the choice.",
+    "quote": "Hokkaido (multiple occurrences)",
+    "suggestion": "Standardize to 'Hokkaidō' or add a note about the romanization system.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#075",
+  "chapter": "suppletive-verbal-number",
+  "lines": "432-442",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the reverse mismatch' is unclear. It refers to the opposite of the polite imperative mismatch, but the connection could be made clearer.",
+    "quote": "The reverse mismatch is a semantically plural subject specified by a numeral, which ordinarily takes the singular intransitive stem. Tamura's rule of thumb, reported through Nakagawa, is that two, three, and sometimes four favour the singular <Ref k=\"nakagawa2024\" p=\"160–162\" />. The threshold is not firm: the culturally salient <i lang=\"ain-Latn\">iwan</i> 'six' often takes the singular as well, and the quantifier <i lang=\"ain-Latn\">poronno</i> 'many' favours the plural yet is recorded with singular predicates by both Nakagawa and Satō, so no predictive rule covers the full range of numeral, quantifier, dialect, and stance <Ref k=\"nakagawa2024\" p=\"161–162\" />; <Ref k=\"sato2008\" p=\"101\" /> ‹contested›.",
+    "suggestion": "Rephrase to 'The opposite mismatch occurs when...' or 'Conversely, a semantically plural subject...'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#074",
+  "chapter": "suppletive-verbal-number",
+  "lines": "409-419",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'a bare singular stem commands one addressee' is slightly awkward. It means 'a bare singular stem is used to command one addressee'.",
+    "quote": "Two environments separate semantic number from stem number. A semantically singular referent takes the plural stem in the polite imperative: a bare singular stem commands one addressee (<i lang=\"ain-Latn\">ek!</i> 'come!'), but the polite imperative in <i lang=\"ain-Latn\">yan</i> requires the plural stem even for one addressee, so <i lang=\"ain-Latn\">arki yan</i> is well formed and <i lang=\"ain-Latn\">*ek yan</i> is not <Ref k=\"nakagawa2024\" p=\"160\" />.",
+    "suggestion": "Rephrase to 'a bare singular stem is used to command one addressee'.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#073",
+  "chapter": "suppletive-verbal-number",
+  "lines": "390-396",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'over-mark a stem that is already suppletively plural' is clear, but the example in line 398-406 shows this with ariki=hci. The note explains the doubling, but the text could be clearer.",
+    "quote": "The Sakhalin marker serves as a contrast. Murasaki analysed <i lang=\"ain-Latn\">-hci</i> as a third-person plural affix, but its optionality and its appearance with non-third-person reference led Nakagawa to class it with optional plural markers rather than person indexes <Ref k=\"murasaki1979\" p=\"49–52\" />; <Ref k=\"nakagawa2024\" p=\"153–155\" />. It can over-mark a stem that is already suppletively plural.",
+    "suggestion": "No change needed, but consider adding a brief explanation of 'over-mark'.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#072",
+  "chapter": "suppletive-verbal-number",
+  "lines": "375-388",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'yaynupa-as' is given as the bound form, but the base 'yaynu' is not glossed. The reader may not know what 'yaynu' means.",
+    "quote": "The status of pa2 is disputed. Nakagawa and the Handbook treat it, eastern <i lang=\"ain-Latn\">ci</i>, and Sakhalin <i lang=\"ain-Latn\">hci</i> as a single clitic class distinct from the stem suffix, on the positional evidence above, with Sakaguchi reaching the same conclusion for <i lang=\"ain-Latn\">hci</i> <Ref k=\"nakagawa2024\" p=\"156–159\" />; <Ref k=\"nakagawa2022\" />. Satō's Chitose data make the clitic analysis less secure there: <i lang=\"ain-Latn\">=an pa</i> is rare, a consultant rejected <i lang=\"ain-Latn\">*yaynu-as pa</i> in favour of the bound <i lang=\"ain-Latn\">yaynupa-as</i>, and <i lang=\"ain-Latn\">okaypa</i> is marginal <Ref k=\"sato2025b\" p=\"25–26\" /> ‹contested›.",
+    "suggestion": "Add a gloss for yaynu (e.g., 'think' or 'ponder') to clarify the example.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#071",
+  "chapter": "suppletive-verbal-number",
+  "lines": "363-373",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'i=res-pa' is not glossed. The reader may not know what i= and res mean. Also, the gloss 'they raised me' suggests a third person plural subject, but the example is not fully analyzed.",
+    "quote": "The clitic primarily indexes participant plurality, especially of the agent, which is the device behind one cross-linguistically unusual property of Ainu: plural-marked transitives can co-occur with a plural transitive subject, as in <i lang=\"ain-Latn\">i=res-pa</i> 'they raised me' <Ref k=\"shibatani1990\" p=\"53\" />.",
+    "suggestion": "Add a full gloss for i=res-pa, e.g., '1SG.O=raise-PL' or similar.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#070",
+  "chapter": "suppletive-verbal-number",
+  "lines": "300-308",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the three in rough complementary distribution' is unclear. It likely refers to pa2, ci, and hci/ahci, but the antecedent is ambiguous.",
+    "quote": "Plurality is also marked outside the stem. Western Hokkaido — Saru, Chitose, Ishikari — uses the postverbal element pa2; eastern Hokkaido uses <i lang=\"ain-Latn\">ci</i>; and Sakhalin has <i lang=\"ain-Latn\">=hci</i> / <i lang=\"ain-Latn\">=ahci</i>, the three in rough complementary distribution <Ref k=\"nakagawa2024\" p=\"151–159\" />; <Ref k=\"nakagawa2022\" />. Reduplication occupies the same descriptive neighbourhood but ordinarily contributes iterative, continuative, or intensive lexical aspect, and stays outside the number category proper <Ref k=\"nakagawa2024\" p=\"151–153\" />.",
+    "suggestion": "Rephrase to 'the three markers are in rough complementary distribution'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#069",
+  "chapter": "suppletive-verbal-number",
+  "lines": "286-297",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'hosippa' is given as 'return.PL' with the etymology < ho-sipi, but the base form 'hosipi' is not given. The reader may not know the singular form. Also, 'hopunire' and 'hopunpare' are not glossed or explained in detail.",
+    "quote": "Derived transitives inherit the number relation of the base that supplies their affected participant. A transitive built on an intransitive keeps subject-type agreement, as with <i lang=\"ain-Latn\">hosippa</i> 'return.PL' (&lt; <i lang=\"ain-Latn\">ho-sipi</i>); a causative in <i lang=\"ain-Latn\">-re</i> tracks the causee, which is the original intransitive subject, so <i lang=\"ain-Latn\">hopunire</i> is used for sending off one slain bear and <i lang=\"ain-Latn\">hopunpare</i> for three wolves <Ref k=\"nakagawa2024\" p=\"145–146\" />.",
+    "suggestion": "Provide the singular form 'hosipi' and glosses for hopunire and hopunpare.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#068",
+  "chapter": "suppletive-verbal-number",
+  "lines": "257-263",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The example 'hoyupu / hoyuppa' shows a geminate -pp- in the plural, which is not explained. The pattern is -pa suffix, but the base ends in -pu, so the plural should be *hoyupa? The geminate suggests a phonological process, but it is not discussed.",
+    "quote": "When a derivational prefix <i lang=\"ain-Latn\">si-</i>, <i lang=\"ain-Latn\">he-</i>, or <i lang=\"ain-Latn\">ho-</i> builds an intransitive on a Type-C transitive, the alternation is preserved and the derived verb agrees with its subject: <i lang=\"ain-Latn\">situri</i> / <i lang=\"ain-Latn\">siturpa</i> 'stretch' (&lt; <i lang=\"ain-Latn\">turi</i> / <i lang=\"ain-Latn\">turpa</i> 'stretch something'), <i lang=\"ain-Latn\">hopuni</i> / <i lang=\"ain-Latn\">hopunpa</i> 'rise, get up', <i lang=\"ain-Latn\">hoyupu</i> / <i lang=\"ain-Latn\">hoyuppa</i> 'run' <Ref k=\"nakagawa2024\" p=\"150–151\" />.",
+    "suggestion": "Add a note explaining the gemination in hoyuppa, or check if the form is correct.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#067",
+  "chapter": "suppletive-verbal-number",
+  "lines": "227-235",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'change-of-object semantics' is a bit unclear. It likely means 'semantics involving a change of state in the object', but the hyphenation is awkward.",
+    "quote": "Type C replaces a stem-final vowel with <i lang=\"ain-Latn\">-pa</i>. It is the most populous class and consists mainly of transitives denoting a change of state in the object; many pair with a same-root intransitive whose S corresponds to the transitive O <Ref k=\"nakagawa2024\" p=\"149–151\" />; <Ref k=\"nakagawa2022\" />. The change-of-object semantics is a strong tendency with lexical exceptions: <i lang=\"ain-Latn\">piru</i> / <i lang=\"ain-Latn\">pirpa</i> 'wipe', <i lang=\"ain-Latn\">suwe</i> / <i lang=\"ain-Latn\">supa</i> 'boil', and <i lang=\"ain-Latn\">ani</i> / <i lang=\"ain-Latn\">anpa</i> 'hold, carry' impose no change on the object and have no intransitive partner <Ref k=\"nakagawa2024\" p=\"149–150\" />.",
+    "suggestion": "Rephrase to 'semantics involving a change of state in the object' or 'change-of-state semantics'.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#066",
+  "chapter": "suppletive-verbal-number",
+  "lines": "196-205",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the number relation runs off the moving participant' is slightly unclear. It likely means 'the number agreement tracks the moving participant', but 'runs off' is an unusual phrasing.",
+    "quote": "Two further patterns have a segmentable exponent and a wider, though still lexically bounded, membership. Type B alternates a final <i lang=\"ain-Latn\">-n</i> in the singular with <i lang=\"ain-Latn\">-p</i> in the plural, and is confined to intransitives of directed motion. The matching transitives are derived with singular <i lang=\"ain-Latn\">-ke</i> (or <i lang=\"ain-Latn\">-ka</i>) and plural <i lang=\"ain-Latn\">-te</i>, and the number relation runs off the moving participant, with <i lang=\"ain-Latn\">rikinka</i> an exception to the <i lang=\"ain-Latn\">-ke</i> shape <Ref k=\"nakagawa2024\" p=\"148–149\" />.",
+    "suggestion": "Rephrase to 'the number agreement tracks the moving participant' or 'the number relation is keyed to the moving participant'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#065",
+  "chapter": "suppletive-verbal-number",
+  "lines": "107-119",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table includes non-suppletive pairs, which contradicts the section heading and description. This is a major content inconsistency.",
+    "quote": "The table rows for Type A suppletive stems include several pairs that are not suppletive (san/sap, ahun/ahup, tuye/tuypa, hosipi/hosippa). This is a content error, not a copyedit issue per se, but it affects the clarity of the chapter.",
+    "suggestion": "Remove the non-suppletive rows from the Type A table, or rename the table to include all number-alternating pairs.",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#064",
+  "chapter": "suppletive-verbal-number",
+  "lines": "86-93",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'Dialect membership is part of each entry' is unclear. It likely means that dialect information is included in the table entries, but the table does not have a dialect column. This is a minor clarity issue.",
+    "quote": "Type A is total stem alternation: the singular and plural members are lexically distinct. The class is small and centres on basic existence, posture, and motion verbs, with a handful of transitives of handling and affected change <Ref k=\"nakagawa2024\" p=\"146–147\" />; <Ref k=\"sato2008\" p=\"102\" />. Dialect membership is part of each entry. Saru, Chitose, Mukawa, and Shizunai have <i lang=\"ain-Latn\">oka</i> beside <i lang=\"ain-Latn\">okay</i> elsewhere; Saru and Chitose have <i lang=\"ain-Latn\">arpa</i> for 'go' where other dialects often use <i lang=\"ain-Latn\">oman</i>; and Tokachi has no singular partner to <i lang=\"ain-Latn\">ronno</i> 'kill', so it treats that verb as number-invariant <Ref k=\"nakagawa2024\" p=\"146–147\" />.",
+    "suggestion": "Either add a dialect column to the table or rephrase to 'Dialectal variation is noted in the table entries'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#063",
+  "chapter": "suppletive-verbal-number",
+  "lines": "72-81",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence 'Ijäs's learner grammar states the same architecture for the classroom: nouns do not inflect for number, and a subset of verbs have distinct singular and plural forms, set out in her Lesson 9' is slightly awkward. The phrase 'for the classroom' is redundant with 'learner grammar'. Minor stylistic issue.",
+    "quote": "In Corbett's typology of number the category is verbal number proper: a value on the predicate keyed to participant or event plurality, set apart from the agreement number of a nominal controller <Ref k=\"corbett2000\" paren />. The pattern is cross-linguistically uncommon, and Nakagawa places Ainu among the few languages of northern Eurasia that carry it, with the isolates Ket and Burushaski; even within Ainu the opposition reaches a minority of the verbal lexicon <Ref k=\"nakagawa2024\" p=\"141\" />; <Ref k=\"nakagawa2022\" /> ‹consensus›. Ijäs's learner grammar states the same architecture for the classroom: nouns do not inflect for number, and a subset of verbs have distinct singular and plural forms, set out in her Lesson 9 <Ref k=\"ijas2023\" />. Her example sentences are constructed teaching material rather than corpus attestations.",
+    "suggestion": "Consider rephrasing to 'Ijäs's learner grammar presents the same architecture: nouns do not inflect for number, and a subset of verbs have distinct singular and plural forms, as set out in her Lesson 9'.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#062",
+  "chapter": "suppletive-verbal-number",
+  "lines": "32-34",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The em dashes around 'S of an intransitive, O of a transitive' are used correctly, but the sentence could be clearer. Minor stylistic issue.",
+    "quote": "Following Durie, Shibatani states the cross-class generalization as selection of the principally affected argument — S of an intransitive, O of a transitive — rather than as agreement <Ref k=\"shibatani1990\" p=\"51–53\" />.",
+    "suggestion": "No change needed, but consider rephrasing for clarity.",
+    "confidence": 0.2
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#061",
+  "chapter": "suppletive-verbal-number",
+  "lines": "26-38",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'a singular one the singular stem' is missing a verb ('takes'). This is a minor grammatical issue.",
+    "quote": "Transitivity fixes which argument the plural stem tracks. An intransitive verb indexes the number of S, its sole argument, and the relation is close to agreement: a plural subject index and a plural subject phrase take the plural stem, a singular one the singular stem. A transitive verb indexes the plurality of O, or of the action construed through O, independently of subject number; the singular stem is the default and surfaces even with an overtly plural object <Ref k=\"nakagawa2024\" p=\"142–145\" />; <Ref k=\"sato2008\" p=\"101\" />.",
+    "suggestion": "Change to 'a singular one takes the singular stem'.",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#060",
+  "chapter": "suppletive-verbal-number",
+  "lines": "15-23",
+  "category": "copyedit",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The sentence is very long and contains multiple semicolons separating citations. The structure is grammatically correct but could be clearer. Minor stylistic issue.",
+    "quote": "A small, high-frequency class of Hokkaido Ainu verbs distinguishes a singular from a plural stem. The contrast is carried by the verb: ordinary nouns are number-neutral, and the plurality of a participant is read from context, quantification, or human collectives such as <A w=\"utar\" gl=\"people, fellows\" />, while the verb itself is the only locus at which number is grammaticalized <Ref k=\"nakagawa2024\" p=\"124–125, 140–141\" />; <Ref k=\"sato2008\" p=\"99–101\" />; <Ref k=\"shibatani1990\" p=\"51–54\" />; <Ref k=\"nakagawa2022\" />.",
+    "suggestion": "Consider breaking the sentence into two or restructuring the citations.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#059",
+  "chapter": "suppletive-verbal-number",
+  "lines": "386-387",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The forms kuspare and korpare are not explained or glossed. The reader may not know what these forms mean. This is a minor clarity issue.",
+    "quote": "Nakagawa reads forms such as <i lang=\"ain-Latn\">kuspare</i> and <i lang=\"ain-Latn\">korpare</i> as evidence that pa2 is drifting toward affixhood.",
+    "suggestion": "Add glosses or translations for kuspare and korpare.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#058",
+  "chapter": "suppletive-verbal-number",
+  "lines": "376-378",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the positional evidence above' refers to the table in the same section, which is fine, but the reference is slightly vague. Minor issue.",
+    "quote": "Nakagawa and the Handbook treat it, eastern <i lang=\"ain-Latn\">ci</i>, and Sakhalin <i lang=\"ain-Latn\">hci</i> as a single clitic class distinct from the stem suffix, on the positional evidence above, with Sakaguchi reaching the same conclusion for <i lang=\"ain-Latn\">hci</i>",
+    "suggestion": "Consider adding a specific reference to the table or examples.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#057",
+  "chapter": "suppletive-verbal-number",
+  "lines": "308",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The terms pa1 and pa2 are used without explanation of what they refer to (the Handbook's terminology). This is a minor register issue.",
+    "quote": "The diagnostic that separates the root-bound suffix pa1 from the clitic pa2 in Saru is position.",
+    "suggestion": "Add a brief explanation or footnote defining pa1 and pa2.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#056",
+  "chapter": "suppletive-verbal-number",
+  "lines": "293-296",
+  "category": "register-leak",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The phrase 'the pa1 of the Handbook account' is a reference to the Handbook's terminology, which may not be clear to the reader without explanation. This is a minor register issue.",
+    "quote": "The Type-C suffix <i lang=\"ain-Latn\">-pa</i> is therefore a stem-forming, root-bound suffix, the pa1 of the Handbook account, and is kept apart from the outer plural clitic pa2 treated next; its place in the verb word is set out in <Xr ch=\"verb-word-template\" />, and the derivation in <Xr ch=\"causative-morphological-re-e-te\" /> <Ref k=\"nakagawa2022\" />.",
+    "suggestion": "Consider adding a brief explanation of the Handbook's pa1/pa2 distinction, or rephrase to avoid the internal reference.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#054",
+  "chapter": "suppletive-verbal-number",
+  "lines": "165-172",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹corpus-suggested› is attached to a claim that is supported by a citation to Nakagawa (2024). The tag suggests the claim is suggested by corpus data, but the citation is to a secondary source (Nakagawa), not directly to the corpus. If the claim is based on corpus data, a direct citation to the corpus would be more appropriate.",
+    "quote": "A surface-string count over the aligned corpus points in the same direction without giving a grammatically disambiguated figure. ... The figures are tokens of the written surface string, and homophonous <i lang=\"ain-Latn\">an</i>, <i lang=\"ain-Latn\">oka</i>, and <i lang=\"ain-Latn\">ek</i> — which also serve as existential, auxiliary, and other functions — inflate the existential and motion rows <Ref k=\"nakagawa2024\" p=\"143–145\" /> ‹corpus-suggested›.",
+    "suggestion": "Consider adding a direct citation to the corpus (e.g., ilcaa1976) or clarifying that the corpus data is reported in Nakagawa.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#053",
+  "chapter": "suppletive-verbal-number",
+  "lines": "77-78",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹consensus› is attached to a claim that is supported by two citations to Nakagawa. The tag suggests the claim is widely accepted, but the citations are only to Nakagawa. If the claim is consensus, additional citations from other scholars would strengthen it.",
+    "quote": "Nakagawa places Ainu among the few languages of northern Eurasia that carry it, with the isolates Ket and Burushaski; even within Ainu the opposition reaches a minority of the verbal lexicon <Ref k=\"nakagawa2024\" p=\"141\" />; <Ref k=\"nakagawa2022\" /> ‹consensus›.",
+    "suggestion": "Consider adding citations from other scholars to support the consensus claim, or downgrade the tag to ‹corpus-confirmed› or remove it.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#048",
+  "chapter": "suppletive-verbal-number",
+  "lines": "454-462",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'exist.SG' for an, but the translation uses 'had' (past tense). The gloss is tenseless, but the translation uses past tense. Minor issue.",
+    "quote": "m=\"iwan a=yupi an iwan a=saha an\"\ng=\"six 4.POSS=elder.brother exist.SG six 4.POSS=elder.sister exist.SG\"\ntr=\"I had six elder brothers and six elder sisters.\"",
+    "suggestion": "Standardize tense or add a note.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#047",
+  "chapter": "suppletive-verbal-number",
+  "lines": "444-452",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'stand.SG' for as and 'exist.SG' for an, but the translation uses 'are standing' (present tense). The gloss is consistent with the tenseless analysis, but the translation uses present tense. This is a minor stylistic issue.",
+    "quote": "m=\"re cise as wa an\"\ng=\"three house stand.SG CONJ exist.SG\"\ntr=\"Three houses are standing.\"",
+    "suggestion": "Either use present tense in gloss or add a note about tenselessness.",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#042",
+  "chapter": "suppletive-verbal-number",
+  "lines": "276-284",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "Same issue as above: gloss has present tense 'rise.PL' but translation uses past tense 'got up'.",
+    "quote": "m=\"a=yuputari ka hopunpa\"\ng=\"4.POSS=elder.brothers also rise.PL\"\ntr=\"My elder brothers also got up.\"",
+    "suggestion": "Standardize tense between gloss and translation, or add a note about tenselessness.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#041",
+  "chapter": "suppletive-verbal-number",
+  "lines": "266-274",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'rise.SG' for hopuni, but the translation uses 'got up' (past tense). The gloss does not indicate tense, which is fine for Ainu, but the mismatch between present tense gloss and past tense translation could be confusing. This is a minor stylistic issue.",
+    "quote": "m=\"a=yupi hopuni\"\ng=\"4.POSS=elder.brother rise.SG\"\ntr=\"My elder brother got up.\"",
+    "suggestion": "Either use present tense in the translation ('gets up') or add a note that Ainu verbs are tenseless.",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#032",
+  "chapter": "suppletive-verbal-number",
+  "lines": "461",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'an' as a singular existential stem. Line 107 lists '<i lang=\"ain-Latn\">an</i>' as the singular stem for 'be, exist'. This is consistent.",
+    "quote": "note=\"Even iwan 'six', the culturally salient large number, occurs with singular an, against any simple 'low numeral selects singular' threshold.\"",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#031",
+  "chapter": "suppletive-verbal-number",
+  "lines": "448",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The citation format 'nakagawa2024:162' is used here, but other citations in the chapter use 'p=' (e.g., line 19). This is an inconsistency in citation style.",
+    "quote": "cite=\"nakagawa2024:162\"",
+    "suggestion": "Standardize citation format to use 'p=' for page numbers.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The 'place' attribute includes 'after Tamura 1988a'. While informative, it's unusual to include bibliographic information within the 'place' attribute of an example tag. This might be better handled in a citation or a note.",
+    "quote": "place=\"Nakagawa ex. 89, after Tamura 1988a\"",
+    "suggestion": "Consider moving the reference to Tamura 1988a to a citation or a note if it's not directly related to the geographical or situational place of the example.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'as' as a 'posture stem'. Line 110 lists '<i lang=\"ain-Latn\">as</i>' as the singular stem for 'stand', which is a posture verb. This is consistent.",
+    "quote": "note=\"The numeral re 'three' specifies a plural subject, yet both the posture stem as and the existential stem an are singular.\"",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#030",
+  "chapter": "suppletive-verbal-number",
+  "lines": "429",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'yan' selects the plural stem 'arki'. This aligns with the example and the text. However, the gloss for 'yan' in example 425 (line 425) is 'IMP.POL'. It would be helpful to explicitly state that 'yan' is the polite imperative marker.",
+    "quote": "note=\"The polite imperative yan selects the plural stem arki; the plural morphology belongs to the directive register, not to a plural addressee.\"",
+    "suggestion": "Add 'IMP.POL' to the gloss for 'yan' in the note for clarity.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#029",
+  "chapter": "suppletive-verbal-number",
+  "lines": "424",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss 'come.on' for 'hokure' is repeated. While it might be a stylistic choice for emphasis, it's worth checking if this repetition is intended or if a single gloss would suffice.",
+    "quote": "g=\"come.on come.on fire side LOC come.PL IMP.POL\"",
+    "suggestion": "Consider if the repetition of 'come.on' is necessary or if a single gloss would be clearer.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#028",
+  "chapter": "suppletive-verbal-number",
+  "lines": "414",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">arki yan</i>' is presented as well-formed, with '<i lang=\"ain-Latn\">ek yan</i>' being ungrammatical. The gloss for '<i lang=\"ain-Latn\">yan</i>' is 'IMP.POL' (polite imperative) in example 425 (line 425). However, the gloss for '<i lang=\"ain-Latn\">arki</i>' is 'come.PL' (line 424), and '<i lang=\"ain-Latn\">ek</i>' is 'come.SG' (line 109). The text states that the polite imperative requires the plural stem even for one addressee. This implies '<i lang=\"ain-Latn\">ek</i>' is the singular stem and '<i lang=\"ain-Latn\">arki</i>' is the plural stem for 'come'.",
+    "quote": "so <i lang=\"ain-Latn\">arki yan</i> is well formed and <i lang=\"ain-Latn\">*ek yan</i> is not",
+    "suggestion": "Ensure the glosses for '<i lang=\"ain-Latn\">ek</i>' and '<i lang=\"ain-Latn\">arki</i>' are consistently presented as singular and plural respectively, and that the explanation for why '<i lang=\"ain-Latn\">ek yan</i>' is ungrammatical is clear.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#027",
+  "chapter": "suppletive-verbal-number",
+  "lines": "405",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions 'ariki' as a 'Sakhalin plural stem'. This aligns with the gloss in example 406 ('come.PL'). However, the table on line 108 lists '<i lang=\"ain-Latn\">paye</i>' as the plural stem for 'go', and line 109 lists '<i lang=\"ain-Latn\">arki</i>' as the plural stem for 'come'. This suggests '<i lang=\"ain-Latn\">arki</i>' is a plural stem in southern Hokkaido as well, not exclusively Sakhalin.",
+    "quote": "note=\"The Sakhalin plural stem ariki is over-marked by hci, doubling the plural exponence the southern Hokkaido system carries on the stem alone.\"",
+    "suggestion": "Clarify whether '<i lang=\"ain-Latn\">arki</i>' is a plural stem in both Sakhalin and southern Hokkaido, and adjust the note accordingly.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#026",
+  "chapter": "suppletive-verbal-number",
+  "lines": "399",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">Orohko-utah ariki=hci</i>' has the gloss '<i lang=\"ain-Latn\">Orok-ASS come.PL=PL</i>'. The gloss for 'Orohko-utah' is 'Orok-ASS'. It's unclear what 'ASS' stands for in this context (e.g., associative, accusative, etc.).",
+    "quote": "m=\"Orohko-utah ariki=hci\"",
+    "suggestion": "Clarify the meaning of 'ASS' in the gloss.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#025",
+  "chapter": "suppletive-verbal-number",
+  "lines": "381",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">yaynu-as pa</i>' is presented as ungrammatical, with '<i lang=\"ain-Latn\">yaynupa-as</i>' being preferred. The gloss for 'yaynu' is missing, making it difficult to understand the contrast.",
+    "quote": "a consultant rejected <i lang=\"ain-Latn\">*yaynu-as pa</i> in favour of the bound <i lang=\"ain-Latn\">yaynupa-as</i>",
+    "suggestion": "Provide the gloss for 'yaynu' to clarify the meaning and the reason for the ungrammaticality of '<i lang=\"ain-Latn\">yaynu-as pa</i>'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#024",
+  "chapter": "suppletive-verbal-number",
+  "lines": "370",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">hotke=an ci</i>' is described as having 'ci' as a productive auxiliary outside the person clitic. The gloss 'we slept' is provided, but the role of 'ci' in this gloss is not explicit.",
+    "quote": "(<i lang=\"ain-Latn\">hotke=an ci</i> 'we slept')",
+    "suggestion": "Clarify the role of 'ci' in the gloss 'we slept' and its function as a productive auxiliary.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#023",
+  "chapter": "suppletive-verbal-number",
+  "lines": "366",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">i=res-pa</i>' is presented as 'they raised me'. The gloss 'i=' is not provided, but if 'i=' is a third-person plural subject marker, then 'res-pa' would be the verb. The '-pa' here is likely the Type C suffix, not the clitic.",
+    "quote": "<i lang=\"ain-Latn\">i=res-pa</i> 'they raised me'",
+    "suggestion": "Provide the gloss for 'i=' to clarify the subject, and confirm that '-pa' in this instance is the Type C suffix and not the clitic.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">iki-ci=as</i>' is described as having 'ci' as a fossilized suffix inside the person clitic. However, the gloss for '<i lang=\"ain-Latn\">ci</i>' is not provided, and its function as a 'fossilized suffix' is not elaborated upon.",
+    "quote": "in Horobetsu it is a fossilized suffix inside the person clitic (<i lang=\"ain-Latn\">iki-ci=as</i>), while in Shizunai it is a productive auxiliary outside it (<i lang=\"ain-Latn\">hotke=an ci</i> 'we slept')",
+    "suggestion": "Provide a gloss for 'ci' in '<i lang=\"ain-Latn\">iki-ci=as</i>' and clarify its status as a fossilized suffix.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#022",
+  "chapter": "suppletive-verbal-number",
+  "lines": "355",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.POSS' for 'a=' is inconsistent with the gloss '4.A' in example 345 (line 345). This suggests 'a=' might have multiple glosses or there's an inconsistency.",
+    "quote": "g=\"4.POSS=companions come.on a.lot quickly cook PL CONJ eat PL be.full PL\"",
+    "suggestion": "Ensure consistent glossing for 'a=' across examples.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#021",
+  "chapter": "suppletive-verbal-number",
+  "lines": "345",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '4.A' for 'a=' is inconsistent with the gloss '4.S' for '=an' in the same example. This suggests 'a=' might not always be a subject marker, or there's an inconsistency in glossing.",
+    "quote": "g=\"fur only 4.A=wear CONJ sleep=4.S PL\"",
+    "suggestion": "Clarify the glossing of 'a=' and '=an' to ensure consistency.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#020",
+  "chapter": "suppletive-verbal-number",
+  "lines": "333",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">rayke pa</i>' shows the outer clitic 'pa' following a singular stem '<i lang=\"ain-Latn\">rayke</i>'. This is consistent with the description.",
+    "quote": "<td>possible, with plural value: <i lang=\"ain-Latn\">rayke pa</i></td>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#019",
+  "chapter": "suppletive-verbal-number",
+  "lines": "327",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">a=hopun-pa-re</i>' shows the Type C suffix '-pa' inside the causative '-re'. This is consistent with the description.",
+    "quote": "<td>inside: <i lang=\"ain-Latn\">a=hopun-pa-re</i></td>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">a=se-re pa</i>' shows the outer clitic 'pa' outside the causative '-re'. This is consistent with the description.",
+    "quote": "<td>outside: <i lang=\"ain-Latn\">a=se-re pa</i>, <i lang=\"ain-Latn\">a=kira-re pa</i></td>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#018",
+  "chapter": "suppletive-verbal-number",
+  "lines": "322",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">soyen-pa=an</i>' shows the Type C suffix '-pa' inside the person index '=an'. This contradicts the statement on line 327 that the Type C suffix is 'inside' the causative '-re' but outside the person index.",
+    "quote": "<td>inside: <i lang=\"ain-Latn\">soyen-pa=an</i>, <i lang=\"ain-Latn\">iki-pa=an</i></td>",
+    "suggestion": "Clarify the position of the Type C suffix relative to the person index, as the examples seem to contradict the description.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The example '<i lang=\"ain-Latn\">inkar=an pa</i>' shows the outer clitic 'pa' outside the person index '=an'. This is consistent with the description.",
+    "quote": "<td>outside: <i lang=\"ain-Latn\">inkar=an pa</i>, <i lang=\"ain-Latn\">iki=an pa</i></td>",
+    "suggestion": "No change needed.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#017",
+  "chapter": "suppletive-verbal-number",
+  "lines": "289",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Type C replaces a stem-final vowel with '-pa'. For 'return', the plural is '<i lang=\"ain-Latn\">hosippa</i>' and the base intransitive is '<i lang=\"ain-Latn\">ho-sipi</i>'. This implies the suffix is '-pa', not that it replaces a vowel.",
+    "quote": "<i lang=\"ain-Latn\">hosippa</i> 'return.PL' (&lt; <i lang=\"ain-Latn\">ho-sipi</i>)",
+    "suggestion": "Rephrase the description of the Type C suffix to accurately reflect its application, especially in cases like 'return'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#016",
+  "chapter": "suppletive-verbal-number",
+  "lines": "283",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'hopunpa' is the plural stem. This aligns with line 261, but it's worth noting the consistency.",
+    "quote": "note=\"The plural stem hopunpa agrees with the plural S yuputari.\"",
+    "suggestion": "No change needed, but this confirms the singular/plural pairing.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#015",
+  "chapter": "suppletive-verbal-number",
+  "lines": "273",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'hopuni' is the singular member. However, line 261 lists '<i lang=\"ain-Latn\">hopuni</i> / <i lang=\"ain-Latn\">hopunpa</i>' for 'rise, get up', implying '<i lang=\"ain-Latn\">hopuni</i>' is the singular and '<i lang=\"ain-Latn\">hopunpa</i>' is the plural. This note seems to contradict that by only mentioning the singular.",
+    "quote": "note=\"The derived intransitive hopuni is the singular member, with a singular S.\"",
+    "suggestion": "Clarify if 'hopuni' is indeed the singular form and if 'hopunpa' is the plural, and ensure the note accurately reflects this.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#014",
+  "chapter": "suppletive-verbal-number",
+  "lines": "260",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Type C replaces a stem-final vowel with '-pa'. For 'stretch', the derived intransitive is '<i lang=\"ain-Latn\">siturpa</i>' and the base transitive is '<i lang=\"ain-Latn\">turpa</i>'. This implies the suffix is '-pa', not that it replaces a vowel.",
+    "quote": "<i lang=\"ain-Latn\">situri</i> / <i lang=\"ain-Latn\">siturpa</i> 'stretch' (&lt; <i lang=\"ain-Latn\">turi</i> / <i lang=\"ain-Latn\">turpa</i> 'stretch something')",
+    "suggestion": "Rephrase the description of the Type C suffix to accurately reflect its application, especially in cases like 'stretch'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The singular is '<i lang=\"ain-Latn\">hopuni</i>' and the plural is '<i lang=\"ain-Latn\">hopunpa</i>'. This suggests the suffix is '-pa', not that it replaces a vowel.",
+    "quote": "<i lang=\"ain-Latn\">hopuni</i> / <i lang=\"ain-Latn\">hopunpa</i> 'rise, get up'",
+    "suggestion": "Ensure the description of the Type C suffix accurately reflects its application.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The singular is '<i lang=\"ain-Latn\">hoyupu</i>' and the plural is '<i lang=\"ain-Latn\">hoyuppa</i>'. This suggests the suffix is '-pa', not that it replaces a vowel.",
+    "quote": "<i lang=\"ain-Latn\">hoyupu</i> / <i lang=\"ain-Latn\">hoyuppa</i> 'run'",
+    "suggestion": "Ensure the description of the Type C suffix accurately reflects its application.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#013",
+  "chapter": "suppletive-verbal-number",
+  "lines": "252",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The paired intransitive '<i lang=\"ain-Latn\">yaske</i>' does not seem to follow the Type C pattern described.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">yasa</i></td><td><i lang=\"ain-Latn\">yaspa</i></td><td>tear</td><td><i lang=\"ain-Latn\">yaske</i></td><td>tear (intr.)</td></tr>",
+    "suggestion": "Clarify the derivation of '<i lang=\"ain-Latn\">yaspa</i>' and its relationship to '<i lang=\"ain-Latn\">yasa</i>' and '<i lang=\"ain-Latn\">yaske</i>'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#012",
+  "chapter": "suppletive-verbal-number",
+  "lines": "248",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The table entry for 'cut' shows '<i lang=\"ain-Latn\">tuye</i>' / '<i lang=\"ain-Latn\">tuypa</i>' for the transitive pair. The preceding text states Type C replaces a stem-final vowel with '-pa'. This implies '<i lang=\"ain-Latn\">tuypa</i>' is derived from '<i lang=\"ain-Latn\">tuye</i>' by replacing the final vowel with '-pa'. However, the paired intransitive is '<i lang=\"ain-Latn\">tuy</i>', which does not seem to follow the Type C pattern.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">tuye</i></td><td><i lang=\"ain-Latn\">tuypa</i></td><td>cut</td><td><i lang=\"ain-Latn\">tuy</i></td><td>get cut</td></tr>",
+    "suggestion": "Clarify the derivation of '<i lang=\"ain-Latn\">tuypa</i>' and its relationship to '<i lang=\"ain-Latn\">tuye</i>' and '<i lang=\"ain-Latn\">tuy</i>'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 248, the paired intransitive '<i lang=\"ain-Latn\">kay</i>' does not seem to follow the Type C pattern described.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">kaye</i></td><td><i lang=\"ain-Latn\">kaypa</i></td><td>break, snap</td><td><i lang=\"ain-Latn\">kay</i></td><td>snap</td></tr>",
+    "suggestion": "Clarify the derivation of '<i lang=\"ain-Latn\">kaypa</i>' and its relationship to '<i lang=\"ain-Latn\">kaye</i>' and '<i lang=\"ain-Latn\">kay</i>'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The paired intransitive '<i lang=\"ain-Latn\">makke</i>' does not seem to follow the Type C pattern described.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">maka</i></td><td><i lang=\"ain-Latn\">makpa</i></td><td>open</td><td><i lang=\"ain-Latn\">makke</i></td><td>open (intr.)</td></tr>",
+    "suggestion": "Clarify the derivation of '<i lang=\"ain-Latn\">makpa</i>' and its relationship to '<i lang=\"ain-Latn\">maka</i>' and '<i lang=\"ain-Latn\">makke</i>'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The paired intransitive '<i lang=\"ain-Latn\">noyke</i>' does not seem to follow the Type C pattern described.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">noye</i></td><td><i lang=\"ain-Latn\">noypa</i></td><td>twist</td><td><i lang=\"ain-Latn\">noyke</i></td><td>get twisted</td></tr>",
+    "suggestion": "Clarify the derivation of '<i lang=\"ain-Latn\">noypa</i>' and its relationship to '<i lang=\"ain-Latn\">noye</i>' and '<i lang=\"ain-Latn\">noyke</i>'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#011",
+  "chapter": "suppletive-verbal-number",
+  "lines": "231",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Type C replaces a stem-final vowel with '-pa'. However, for 'wipe', the singular is '<i lang=\"ain-Latn\">piru</i>' and the plural is '<i lang=\"ain-Latn\">pirpa</i>'. This implies the suffix is '-pa', not that it replaces a vowel.",
+    "quote": "<i lang=\"ain-Latn\">piru</i> / <i lang=\"ain-Latn\">pirpa</i> 'wipe'",
+    "suggestion": "Rephrase the description of the Type C suffix to accurately reflect its application, especially in cases like 'wipe'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to 'wipe', the singular is '<i lang=\"ain-Latn\">suwe</i>' and the plural is '<i lang=\"ain-Latn\">supa</i>'. This suggests the suffix is '-pa', not that it replaces a vowel.",
+    "quote": "<i lang=\"ain-Latn\">suwe</i> / <i lang=\"ain-Latn\">supa</i> 'boil'",
+    "suggestion": "Ensure the description of the Type C suffix accurately reflects its application.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Again, the singular is '<i lang=\"ain-Latn\">ani</i>' and the plural is '<i lang=\"ain-Latn\">anpa</i>'. This suggests the suffix is '-pa', not that it replaces a vowel.",
+    "quote": "<i lang=\"ain-Latn\">ani</i> / <i lang=\"ain-Latn\">anpa</i> 'hold, carry'",
+    "suggestion": "Ensure the description of the Type C suffix accurately reflects its application.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#010",
+  "chapter": "suppletive-verbal-number",
+  "lines": "222",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The singular vt '<i lang=\"ain-Latn\">ahunke</i>' and plural vt '<i lang=\"ain-Latn\">ahupte</i>' for 'go in' do not directly show the '-ke' and '-te' suffixes as described in the preceding text.",
+    "quote": "<tr><td>go in</td><td><i lang=\"ain-Latn\">ahun</i></td><td><i lang=\"ain-Latn\">ahup</i></td><td><i lang=\"ain-Latn\">ahunke</i></td><td><i lang=\"ain-Latn\">ahupte</i></td></tr>",
+    "suggestion": "Clarify the interaction of the suffixes with the stems for 'go in'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#009",
+  "chapter": "suppletive-verbal-number",
+  "lines": "218",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The text states that Type B transitives are derived with singular '<i lang=\"ain-Latn\">-ke</i>' (or '<i lang=\"ain-Latn\">-ka</i>') and plural '<i lang=\"ain-Latn\">-te</i>'. However, the entry for 'go up' shows '<i lang=\"ain-Latn\">rikinka</i>' as the singular vt and '<i lang=\"ain-Latn\">rikipte</i>' as the plural vt. This suggests the suffix is not simply '-ke' or '-te' but is incorporated into the stem.",
+    "quote": "<tr><td>go up</td><td><i lang=\"ain-Latn\">rikin</i></td><td><i lang=\"ain-Latn\">rikip</i></td><td><i lang=\"ain-Latn\">rikinka</i></td><td><i lang=\"ain-Latn\">rikipte</i></td></tr>",
+    "suggestion": "Clarify how the '-ke'/'ka' and '-te' suffixes interact with the stems, especially in cases like '<i lang=\"ain-Latn\">rikinka</i>'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Similar to line 218, the singular vt '<i lang=\"ain-Latn\">ranke</i>' and plural vt '<i lang=\"ain-Latn\">rapte</i>' for 'go down' do not directly show the '-ke' and '-te' suffixes as described in the preceding text.",
+    "quote": "<tr><td>go down</td><td><i lang=\"ain-Latn\">ran</i></td><td><i lang=\"ain-Latn\">rap</i></td><td><i lang=\"ain-Latn\">ranke</i></td><td><i lang=\"ain-Latn\">rapte</i></td></tr>",
+    "suggestion": "Clarify the interaction of the suffixes with the stems for 'go down'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Again, the singular vt '<i lang=\"ain-Latn\">sanke</i>' and plural vt '<i lang=\"ain-Latn\">sapte</i>' for 'go down a mountain, go forward' do not directly show the '-ke' and '-te' suffixes as described in the preceding text.",
+    "quote": "<tr><td>go down a mountain, go forward</td><td><i lang=\"ain-Latn\">san</i></td><td><i lang=\"ain-Latn\">sap</i></td><td><i lang=\"ain-Latn\">sanke</i></td><td><i lang=\"ain-Latn\">sapte</i></td></tr>",
+    "suggestion": "Clarify the interaction of the suffixes with the stems for 'go down a mountain, go forward'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The singular vt '<i lang=\"ain-Latn\">yanke</i>' and plural vt '<i lang=\"ain-Latn\">yapte</i>' for 'land, go ashore' do not directly show the '-ke' and '-te' suffixes as described in the preceding text.",
+    "quote": "<tr><td>land, go ashore</td><td><i lang=\"ain-Latn\">yan</i></td><td><i lang=\"ain-Latn\">yap</i></td><td><i lang=\"ain-Latn\">yanke</i></td><td><i lang=\"ain-Latn\">yapte</i></td></tr>",
+    "suggestion": "Clarify the interaction of the suffixes with the stems for 'land, go ashore'.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#008",
+  "chapter": "suppletive-verbal-number",
+  "lines": "184",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The entry for 'go' lists '<i lang=\"ain-Latn\">arpa</i> / <i lang=\"ain-Latn\">paye</i>'. However, line 91 states '<i lang=\"ain-Latn\">arpa</i> for 'go' where other dialects often use <i lang=\"ain-Latn\">oman</i>'. This suggests '<i lang=\"ain-Latn\">arpa</i>' might be a dialectal variant for 'go', not necessarily the singular stem paired with '<i lang=\"ain-Latn\">paye</i>'.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">arpa</i> / <i lang=\"ain-Latn\">paye</i> 'go'</td><td>3,074</td><td>2,926</td><td>1.05</td></tr>",
+    "suggestion": "Clarify the relationship between '<i lang=\"ain-Latn\">arpa</i>', '<i lang=\"ain-Latn\">oman</i>', and '<i lang=\"ain-Latn\">paye</i>' in the context of singular/plural stems for 'go'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Line 91 mentions '<i lang=\"ain-Latn\">arpa</i>' for 'go' in some dialects, and line 108 lists '<i lang=\"ain-Latn\">arpa</i> / <i lang=\"ain-Latn\">oman</i>' as singular stems for 'go'. This table entry only lists '<i lang=\"ain-Latn\">arpa</i> / <i lang=\"ain-Latn\">paye</i>'. The relationship between these forms is not entirely clear.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">arpa</i> / <i lang=\"ain-Latn\">paye</i> 'go'</td><td>3,074</td><td>2,926</td><td>1.05</td></tr>",
+    "suggestion": "Clarify the singular stem(s) for 'go' and how they relate to '<i lang=\"ain-Latn\">arpa</i>', '<i lang=\"ain-Latn\">oman</i>', and '<i lang=\"ain-Latn\">paye</i>'.",
+    "confidence": 0.6
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Line 107 lists '<i lang=\"ain-Latn\">an</i>' as the singular stem for 'be, exist' and '<i lang=\"ain-Latn\">oka(y)</i>' as the plural. This table entry lists '<i lang=\"ain-Latn\">an</i> / <i lang=\"ain-Latn\">oka</i>'. The plural form is presented differently here.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">an</i> / <i lang=\"ain-Latn\">oka</i> 'exist'</td><td>82,852</td><td>9,455</td><td>8.8</td></tr>",
+    "suggestion": "Ensure consistency in the plural form for 'exist' between line 107 and this table entry.",
+    "confidence": 0.7
+   },
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "Line 114 lists '<i lang=\"ain-Latn\">rayke</i> / <i lang=\"ain-Latn\">rayki</i>' as singular stems for 'kill' and '<i lang=\"ain-Latn\">ronnu</i> / <i lang=\"ain-Latn\">ronno</i>' as plural. This table entry simplifies to '<i lang=\"ain-Latn\">rayke</i> / <i lang=\"ain-Latn\">ronnu</i>'.",
+    "quote": "<tr><td><i lang=\"ain-Latn\">rayke</i> / <i lang=\"ain-Latn\">ronnu</i> 'kill'</td><td>803</td><td>202</td><td>3.98</td></tr>",
+    "suggestion": "Consider whether the simplified forms in the table are sufficient or if the variants should be included for completeness.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#007",
+  "chapter": "suppletive-verbal-number",
+  "lines": "161",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note states 'eci=' is a 'plural subject index', but the gloss in example 162 (line 156) shows '2PL.A'. This creates ambiguity about whether 'eci=' refers to subject or object, and whether it's first, second, or third person plural.",
+    "quote": "note=\"The plural stem eramuoka is selected by the plural subject index eci=, one of the rare transitive pairs whose number locus is the subject.\"",
+    "suggestion": "Clarify the grammatical role and person/number of 'eci=' consistently.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#006",
+  "chapter": "suppletive-verbal-number",
+  "lines": "156",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss '2PL.A' for 'eci=' is inconsistent with the prose on line 144 which states 'a=eci=rayke' means 'I kill you (pl)'. This implies 'a=' is 'I' and 'eci=' is 'you (pl)'.",
+    "quote": "g=\"2PL.A=understand.PL Q\"",
+    "suggestion": "Ensure consistency in glossing 'a=' and 'eci=' across the text.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#005",
+  "chapter": "suppletive-verbal-number",
+  "lines": "144",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The gloss for <i lang=\"ain-Latn\">a=eci=rayke</i> is given as 'I kill you (pl)' in the prose, but the gloss in example 162 (line 156) shows '2PL.A'. This suggests 'eci' might be 'you plural' rather than 'I'.",
+    "quote": "Nakagawa's <i lang=\"ain-Latn\">a=eci=rayke</i> 'I kill you (pl)' keeps singular <i lang=\"ain-Latn\">rayke</i> under an overtly plural object",
+    "suggestion": "Reconcile the gloss for 'a=eci=rayke' between the prose and the example, or clarify the role of 'a=' and 'eci='.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#004",
+  "chapter": "suppletive-verbal-number",
+  "lines": "139",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note refers to 'a=' as an 'indefinite'. While this might be correct, the gloss in the example (line 134) shows 'a=' as '4.A'. This is a discrepancy in how 'a=' is glossed.",
+    "quote": "note=\"Two affected objects select the transitive plural stem ronnu; the indefinite a= gives the agentless reading. The trailing pa is the postverbal plural clitic of the next section.\"",
+    "suggestion": "Clarify the gloss for 'a=' to be consistent between the note and the example gloss.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#003",
+  "chapter": "suppletive-verbal-number",
+  "lines": "129",
+  "category": "orthography",
+  "severity": "low",
+  "agreement": 1,
+  "models": [
+   "google/gemini-2.5-flash-lite"
+  ],
+  "issues": [
+   {
+    "model": "google/gemini-2.5-flash-lite",
+    "issue": "The note mentions '=an' as a 'fourth-person S suffix', but the gloss in the example (line 124) shows '=an' as '4.S'. This is a minor inconsistency in terminology.",
+    "quote": "note=\"The intransitive plural stem paye takes the fourth-person S suffix =an, here a plural first-person reference; the plurality sits on the single argument S.\"",
+    "suggestion": "Ensure consistent terminology for '=an' (e.g., 'fourth-person singular suffix' or '4.S suffix').",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#078",
+  "chapter": "suppletive-verbal-number",
+  "lines": "184",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "qwen/qwen3-235b-a22b-2507"
+  ],
+  "issues": [
+   {
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim based on a surface-string count, but the citation is to Nakagawa2024, a secondary source, not direct corpus analysis. This inflates the evidential strength: secondary interpretation should not carry ‹corpus-suggested› unless the source explicitly presents corpus data.",
+    "quote": "<Ref k=\"nakagawa2024\" p=\"143–145\" /> ‹corpus-suggested›",
+    "suggestion": "Change to ‹contested› or ‹speculative›, or remove the tag if Nakagawa's presentation is interpretive.",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#052",
+  "chapter": "suppletive-verbal-number",
+  "lines": "438-440",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a claim that is supported by two citations (Nakagawa 2024 and Satō 2008). The tag suggests the claim is contested, but the citations are to the sources that support the claim. If the claim is contested by other scholars, a citation to the contesting source is needed.",
+    "quote": "the quantifier <i lang=\"ain-Latn\">poronno</i> 'many' favours the plural yet is recorded with singular predicates by both Nakagawa and Satō, so no predictive rule covers the full range of numeral, quantifier, dialect, and stance <Ref k=\"nakagawa2024\" p=\"161–162\" />; <Ref k=\"sato2008\" p=\"101\" /> ‹contested›.",
+    "suggestion": "Either remove the ‹contested› tag or add a citation to a source that contests the claim.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#051",
+  "chapter": "suppletive-verbal-number",
+  "lines": "380-383",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a claim attributed to Satō (2025b). The tag suggests the claim is contested, but the citation is to Satō himself. If the claim is contested by other scholars, a citation to the contesting source is needed.",
+    "quote": "Satō's Chitose data make the clitic analysis less secure there: <i lang=\"ain-Latn\">=an pa</i> is rare, a consultant rejected <i lang=\"ain-Latn\">*yaynu-as pa</i> in favour of the bound <i lang=\"ain-Latn\">yaynupa-as</i>, and <i lang=\"ain-Latn\">okaypa</i> is marginal <Ref k=\"sato2025b\" p=\"25–26\" /> ‹contested›.",
+    "suggestion": "Either remove the ‹contested› tag or add a citation to a source that contests Satō's view.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#050",
+  "chapter": "suppletive-verbal-number",
+  "lines": "147-149",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a claim attributed to Satō (2008). The tag suggests the claim is contested, but the citation is to Satō himself. If the claim is contested by other scholars, a citation to the contesting source is needed.",
+    "quote": "Satō reaches the same conclusion, that the conditions on the transitive plural stem remain partly obscure <Ref k=\"sato2008\" p=\"101\" /> ‹contested›.",
+    "suggestion": "Either remove the ‹contested› tag or add a citation to a source that contests Satō's view.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#049",
+  "chapter": "suppletive-verbal-number",
+  "lines": "37",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The epistemic tag ‹contested› is attached to a claim that is attributed to Nakagawa (2024) with a page reference. The tag suggests the claim is contested, but the citation is to Nakagawa himself, who is the source of the claim. If the claim is contested by other scholars, the tag should be supported by a citation to the contesting source.",
+    "quote": "Nakagawa accepts the S/O split but reads the intransitive side as agreement-like and reserves the selectional, marked character for the transitive side, so the agreement-versus-selection question is best left open <Ref k=\"nakagawa2024\" p=\"145\" /> ‹contested›.",
+    "suggestion": "Either remove the ‹contested› tag or add a citation to a source that contests Nakagawa's view.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#046",
+  "chapter": "suppletive-verbal-number",
+  "lines": "422-430",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'come.PL' for arki and 'IMP.POL' for yan, but the translation uses 'Please come' (polite imperative). The gloss does not indicate that the plural stem is used for politeness, not plurality. The note explains this, but the gloss alone is misleading.",
+    "quote": "m=\"hokure hokure ape sam ta arki yan\"\ng=\"come.on come.on fire side LOC come.PL IMP.POL\"\ntr=\"Please come, come near the fire.\"",
+    "suggestion": "Gloss arki as 'come.PL(POL)' or add a note to the gloss.",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#044",
+  "chapter": "suppletive-verbal-number",
+  "lines": "353-361",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has 'cook PL' for suke pa, 'eat PL' for ipe pa, and 'be.full PL' for kironnu pa, but the translation uses imperatives ('cook', 'eat', 'eat your fill'). The gloss does not indicate the imperative mood. The note says 'Three pa clitics follow non-suppleting predicates across a directive addressed to plural companions', but the gloss lacks imperative marking.",
+    "quote": "m=\"a=utárihi hokure poronno túnas suke pa wa ipe pa kironnu pa\"\ng=\"4.POSS=companions come.on a.lot quickly cook PL CONJ eat PL be.full PL\"\ntr=\"My companions, hurry, cook plenty, eat, and eat your fill.\"",
+    "suggestion": "Add imperative gloss (e.g., 'cook.IMP PL') or add a note explaining the directive force.",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#040",
+  "chapter": "suppletive-verbal-number",
+  "lines": "154-162",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The gloss has '2PL.A' for eci=, but the translation uses 'you all' (second person plural). The note says 'the plural stem eramuoka is selected by the plural subject index eci='. The gloss is consistent, but '2PL.A' could be misinterpreted as agentive; the verb 'understand' is stative, so the subject is not agentive. The gloss should perhaps use '2PL.S' for a stative verb.",
+    "quote": "m=\"uomano eci=eramuoka ya\"\ng=\"all 2PL.A=understand.PL Q\"\ntr=\"Do you all understand?\"",
+    "suggestion": "Consider glossing eci= as '2PL.S' since 'understand' is not agentive, or add a note about the subject type.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#037",
+  "chapter": "suppletive-verbal-number",
+  "lines": "115",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The table says the number locus for 'understand' is S (exceptional), but line 150-151 says 'eram(u)an / eramuoka 'understand', attested as a pair only in Saru, Chitose, and Shizunai, tracks the number of the subject.' This is consistent, but the table uses 'eramuoka(y)' with optional final -y, while line 155 uses 'eramuoka' without -y. The inconsistency in the form is minor but could confuse.",
+    "quote": "<tr><td>understand</td><td><i lang=\"ain-Latn\">eram(u)an</i></td><td><i lang=\"ain-Latn\">eramuoka(y)</i></td><td>vt</td><td>S (exceptional; see below)</td></tr>",
+    "suggestion": "Standardize the form of eramuoka(y) throughout the chapter, or add a note about the variation.",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "suppletive-verbal-number~p1#035",
+  "chapter": "suppletive-verbal-number",
+  "lines": "86-93",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "agreement": 1,
+  "models": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "issues": [
+   {
+    "model": "deepseek/deepseek-v4-flash",
+    "issue": "The description of Type A as 'total stem alternation' contradicts the inclusion of san/sap, ahun/ahup, tuye/tuypa, and hosipi/hosippa in the table, which are segmentable alternations (Type B or C), not suppletive.",
+    "quote": "Type A is total stem alternation: the singular and plural members are lexically distinct. The class is small and centres on basic existence, posture, and motion verbs, with a handful of transitives of handling and affected change",
+    "suggestion": "Align the table with the description by removing non-suppletive pairs, or expand the description to include all types.",
+    "confidence": 0.9
+   }
+  ]
+ }
+]
