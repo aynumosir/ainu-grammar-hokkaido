@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "9",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "<em>g</</em>",
+  "issue": "Stray slash in closing tag; should be <em>g</em>.",
+  "suggestion": "Change to <em>g</em>.",
+  "confidence": 1,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "82–83",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "The grammar's <code>&lt;Ex&gt;</code> component validates every uppercase token at build time and throws if an atom is absent.",
+  "issue": "References build-time validation, which addresses production pipeline rather than the reader.",
+  "suggestion": "Rephrase to describe the constraint without mentioning build process, e.g., 'All uppercase tokens must be drawn from the inventory below.'",
+  "confidence": 0.7,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "213",
+  "category": "orthography",
+  "severity": "high",
+  "quote": "<span class=\"sc\">1sg.poss</span>=house",
+  "issue": "Lowercase 'sg' and 'poss' in gloss abbreviation '1sg.poss' inconsistent with the uppercase convention used throughout the rest of the chapter (e.g., '1SG.A', 'track.POSS').",
+  "suggestion": "Change to <span class=\"sc\">1SG.POSS</span>=house.",
+  "confidence": 1,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "215–216",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "track-<span class=\"sc\">poss</span>",
+  "issue": "Uses a hyphen between the lexical gloss and the grammatical label, but the chapter's portmanteau dot convention (established in the table at lines 44–45 and in the prose at line 66) requires a dot: 'track.POSS'. This contradicts the defined use of the dot for fused gloss atoms.",
+  "suggestion": "Change to track.<span class=\"sc\">poss</span>.",
+  "confidence": 1,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

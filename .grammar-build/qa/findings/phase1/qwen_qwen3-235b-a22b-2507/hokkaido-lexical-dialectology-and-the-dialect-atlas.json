@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "80-85",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">par</i> / <i lang=\"ain-Latn\">car</i> 'mouth'; <i lang=\"ain-Latn\">hempak</i> / <i lang=\"ain-Latn\">nempak</i> 'how many'; <i lang=\"ain-Latn\">hempara</i> / <i lang=\"ain-Latn\">nempara</i> 'when'",
+  "issue": "Inconsistent use of italics and spacing in the table: the entries are inconsistently formatted with regard to spacing around the slash. Some have spaces around '/' (e.g., 'par' / 'car'), while others do not (e.g., 'hempak'/'nempak' — though in markup it's actually consistent, the visual presentation may vary). However, the main issue is that the first slash has spaces, the others do not, creating visual inconsistency.",
+  "suggestion": "Ensure uniform spacing around slashes: use either 'par' / 'car', 'hempak' / 'nempak', 'hempara' / 'nempara' or remove all spaces consistently.",
+  "confidence": 0.9,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "92-93",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">aw</i> (margins) vs <i lang=\"ain-Latn\">parunpe</i> (center) 'tongue'",
+  "issue": "The free translation 'tongue' is assigned to both forms, but the table cell only lists 'aw' and 'parunpe' as variants. However, in the text (§aba-patterns), 'aw' is glossed as 'tongue' and 'parunpe' as a compound meaning 'that which lies inside the par region'. The table oversimplifies by labeling both as 'tongue' without indicating that 'parunpe' is a compound referring to location in the mouth, not a direct synonym.",
+  "suggestion": "Revise the table entry to clarify that 'parunpe' is a compound term, e.g., 'aw' (margins) vs 'parunpe' (center) 'tongue (lit. that which lies in the par region)'",
+  "confidence": 0.95,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "112",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">mici</i> 'father' (Kuriles to Horobetsu)",
+  "issue": "The term 'mici' is glossed as 'father', but in the section 'ABA distributions and retention at the periphery' (line 340), the same form is described as appearing along the Pacific Coast arc from the Kuril Islands to Horobetsu. However, in the section 'Saru–Chitose as a lexically distinct group' (line 387), 'oka' is listed as existential plural, and 'iyapo' is mentioned as a form for 'father' near the Saru river. The inconsistency arises because 'mici' and 'iyapo' are both used for 'father' in different regions, but the table presents 'mici' as the sole example without acknowledging competing forms.",
+  "suggestion": "Clarify in the table or footnote that multiple terms for 'father' exist, e.g., 'mici' (Pacific Coast) and 'iyapo' (Saru river area), to avoid implying a single isogloss.",
+  "confidence": 0.85,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "117",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">iyapo</i> 'father' (near Saru river mouth)",
+  "issue": "The table lists 'iyapo' as meaning 'father', but this form is only attested at an isolated inland point. The table implies it is a full isogloss type ('Ishikari Watershed'), but the text describes it as geographically isolated and not part of a broader pattern. This creates a mismatch between the table's implication of a coherent distribution and the actual limited attestation.",
+  "suggestion": "Revise the table header or description to indicate that 'Ishikari Watershed' refers to a localized innovation, not a widespread isogloss.",
+  "confidence": 0.8,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "206-213",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"nean nupuri or en oman kor\" g=\"that mountain place ALLAT go while\" tr=\"when (they) went toward that mountain\"",
+  "issue": "The gloss 'ALLAT' corresponds to the postposition 'en', but the free translation uses 'toward', which is temporal ('when') rather than directional. The translation should reflect motion toward a place, not time. The example is labeled as illustrating the allative 'en', so the translation should be spatial, e.g., 'they went toward that mountain'. The word 'when' in the translation is incorrect and contradicts the grammatical function.",
+  "suggestion": "Change translation to: \"(they) went toward that mountain\" or \"as they went toward that mountain\" to match the allative use.",
+  "confidence": 0.95,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "216-223",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"mac-ihi sapa-ha or un inkar\" g=\"wife-POSS head-POSS place ALLAT look\" tr=\"looking toward (at) my wife's head\"",
+  "issue": "The gloss includes '-ihi' and '-ha' as 'POSS', but these are specifically affiliative suffixes marking inalienable possession. The translation uses 'my wife's head', which implies a possessive pronoun not present in the Ainu. The morpheme 'mac-ihi' means 'wife's' (inalienable), not 'my wife'. The free translation incorrectly introduces a first-person possessor.",
+  "suggestion": "Revise translation to: \"looking toward (at) the wife's head\" or specify if context implies first person, but do not assume it.",
+  "confidence": 0.9,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "240",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"car\" gl=\"mouth\" /> and <i lang=\"ain-Latn\">caro</i>",
+  "issue": "The dictionary-linked form <A w=\"car\" gl=\"mouth\" /> uses unitalicized 'car', while the following mention is italicized as <i lang=\"ain-Latn\">caro</i>. This creates inconsistency in typographic treatment of Ainu forms.",
+  "suggestion": "Italicize the <A> tag content or remove italics from <i> tags consistently, depending on style. Preferably: use <A w=\"car\" gl=\"mouth\" /> rendered in italics via CSS, or remove <i> from <caro>.",
+  "confidence": 0.7,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "304",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "reconstructs a Proto-Ainu palatalized initial <i lang=\"ain-Latn\">*pʸaɾ</i>, whose northeastern reflex yielded /c/ while the southwestern region generalized plain /p/ (reported via <Ref k=\"nakagawafukazawa2022\" p=\"§3.4\" />) ‹speculative›",
+  "issue": "The claim is tagged ‹speculative›, which is appropriate, but the citation is to Nakagawa and Fukazawa (2022), who are reporting the idea, not originating it. The source of the reconstruction is not clearly attributed, and the epistemic tag may be misplaced if Nakagawa and Fukazawa are merely summarizing a speculative idea from another source.",
+  "suggestion": "Clarify the origin of the reconstruction, e.g., \"reconstructs (reported via Nakagawa & Fukazawa 2022)\" or attribute to the original proponent if known.",
+  "confidence": 0.8,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "392",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">hemata</i> (the Sakhalin cognate of <i lang=\"ain-Latn\">hemanta</i>) 'what'",
+  "issue": "The form 'hemata' is presented without macrons or diacritics, while 'hemanta' is used in the Saru–Chitose context. The spelling difference may reflect actual variation, but without comment, it appears inconsistent. If 'hemata' is the correct Sakhalin form, it should be consistently used; otherwise, orthographic variation should be noted.",
+  "suggestion": "Check if 'hemata' vs 'hemanta' reflects dialectal spelling or a typo; if intentional, add a note on orthographic variation.",
+  "confidence": 0.75,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "407-408",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "proposed a partition into northern (Sōya), eastern (Obihiro / Kushiro / Bihoro / Asahikawa / Nayoro), central-southern (Yakumo / Oshamambe / Horobetsu / Biratori / Nukibetsu / Niikappu), and eastern-Hidaka (Samani) zones",
+  "issue": "Samani is listed both as part of the 'eastern' group (in the list) and as a separate 'eastern-Hidaka' zone. This creates a contradiction: either Samani is included in the eastern group or it is a distinct zone. The sentence structure implies four separate groups, but Samani is mentioned twice.",
+  "suggestion": "Revise to: \"northern (Sōya), eastern (Obihiro / Kushiro / Bihoro / Asahikawa / Nayoro / Samani), central-southern (Yakumo / Oshamambe / Horobetsu / Biratori / Nukibetsu / Niikappu), and eastern-Hidaka (Samani)\" — but this duplicates Samani. Better: clarify that 'eastern-Hidaka' is a subset or correct grouping.",
+  "confidence": 0.95,
+  "chapter": "hokkaido-lexical-dialectology-and-the-dialect-atlas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

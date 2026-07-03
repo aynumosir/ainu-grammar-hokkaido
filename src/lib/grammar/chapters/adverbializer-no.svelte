@@ -156,7 +156,7 @@
 		m="a=ona-ha somo mokor no kamuyoritak kor an"
 		g="4.POSS=father-POSS NEG sleep ADV pray CONJ exist"
 		tr="My father was praying to the gods without sleeping."
-		cite="nakagawa2024:340"
+		cite="nakagawa2024:341"
 		dial="SAR"
 		place="Nakagawa ex. 614"
 		note="No adverbializes the negated intransitive predicate somo mokor, making it the attendant circumstance under which the progressive predicate kamuyoritak kor an holds."

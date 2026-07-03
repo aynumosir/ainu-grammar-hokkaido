@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "20-24",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Three further suffix types occupy the same post-stem slot: the forming suffixes -V and -ke that build transitivity pairs, the direct-causative / transitivizer -ka, and the valency-neutral indefinite causative -yar / -ar.",
+  "issue": "The text says -yar/-ar is a 'fourth' type, but the paragraph lists 'Three further suffix types' (meaning three), then lists four: (-V), (-ke), (-ka), (-yar/-ar). The count is inconsistent with the items enumerated.",
+  "suggestion": "Change 'Three further suffix types' to 'Four further suffix types' or rephrase to list only three, omitting -yar/-ar as it's treated separately.",
+  "confidence": 1,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "102-108",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "One phonological property separates the productive suffix from the non-productive cluster: it does not shift the pitch-accent kernel of the stem — kú-re and sinót-te, not *ku-ré or *sinot-té",
+  "issue": "No actual gloss mismatch found; the examples are consistent with the claim. The statement is unsupported by a contrasting example but not contradictory. Dropping this finding.",
+  "suggestion": null,
+  "confidence": 0,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "115-123",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "‹corpus-confirmed› ... ‹speculative› ... The proposed extended reading of the construction is not confirmed in the primary literature.",
+  "issue": "The epistemic tag ‹corpus-confirmed› is attached to a claim whose only cited support is a Discord message (nukopoli, aynu-corpora Discord, 2026). A Discord attribution is not a corpus, and this contradicts the standard for 'corpus-confirmed' which should require peer-reviewed corpus evidence. Similarly, the ‹speculative› tag is used for another Discord-based claim, which is appropriate, but the 'corpus-confirmed' tag is inflated.",
+  "suggestion": "Downgrade 'corpus-confirmed' to 'speculative' or 'original-needs-review', or add a proper corpus citation if available.",
+  "confidence": 0.9,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "241-248",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "At 190 tokens, the productive suffix outnumbers the three non-productive types combined and is the only one that covers both direct and indirect causation from both vi and vt bases",
+  "issue": "The table in lines 214-238 shows -V (111), -ke (9), -ka (38) = 158 total for non-productive, and -re/-te/-e (190). The text says 'outnumbers the three non-productive types combined' — 190 > 158, correct. But the table also shows -re/-te/-e includes 129 direct and 61 indirect; the text says 'both direct and indirect causation from both vi and vt bases' — the table shows 113 vi / 16 vt for direct (not both vi and vt for indirect? Actually indirect is separate count: '(+ 61 indirect)' without base breakdown. The claim that it covers 'both vi and vt bases' for indirect causation is unsupported by the table data, which does not split indirect by base type. This is a potential inconsistency: the text implies indirect causation applies to both vi and vt, but the table doesn't show that breakdown.",
+  "suggestion": "Either clarify in the table that the 61 indirect tokens come from both vi and vt bases, or adjust the text to match the table data (e.g., 'from vi and vt bases where attested').",
+  "confidence": 0.6,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "267-270",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "When the base intransitive has an agentive subject, the productive causative yields an indirect causative ... When the base is stative or non-agentive, the direct reading predominates",
+  "issue": "This contradicts the claim in lines 265-270 that the productive suffix spans both direct and indirect readings, but the text says the reading is determined by base type. However, this is not a strict contradiction; it's a generalization about typical readings. But earlier at lines 244-247, the table shows 129 direct and 61 indirect tokens for the productive suffix, which aligns. However, the text here says agentive base yields indirect, non-agentive yields direct — but the table includes direct causation from both vi and vt bases (113 vi, 16 vt), where vi bases could be agentive. So an agentive vi base could yield direct causation according to the table, but the text says agentive yields indirect. This is an internal contradiction: the text's semantic rule (agentive→indirect, stative→direct) conflicts with the quantitative data showing many direct readings from vi bases (which are often agentive).",
+  "suggestion": "Align the text with the table: clarify that while the productive suffix can yield both readings, the distribution is not strictly determined by agentivity; agentive bases often allow indirect but can also have direct readings (especially with transitive bases), and the table shows many direct cases from agentive verbs.",
+  "confidence": 0.7,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "297-301",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "Ijäs's Lesson 9 formulation that -re 'simply turns intransitive verbs into transitive verbs' is a workable approximation ... ‹consensus›",
+  "issue": "The epistemic tag ‹consensus› is attached to a description of Ijäs's formulation. The text itself says this formulation 'omits ... the permissive reading, the causativization of transitives, and the direct-causative uses', which undermines it as consensus. Additionally, the only citation is a single pedagogical source (Ijäs 2023), not a consensus of multiple scholars. The tag is inflated.",
+  "suggestion": "Replace 'consensus' with 'original-needs-review' or remove the tag entirely, as the text already critiques the formulation.",
+  "confidence": 0.9,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "327-337",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹corpus-confirmed› ... consistent with the motion-verb causative paradigm documented by Nakagawa",
+  "issue": "The claim about rikin-ka and the non-existence of *rikip-ka is tagged ‹corpus-confirmed› but the only cited source is a Discord message from nukopoli (2026). This does not meet the standard for 'corpus-confirmed', which should require a published corpus analysis. The text also says it is 'consistent with Nakagawa', but Nakagawa's cited work (2024) does not include this specific claim about the plural allomorph in the chapter. The tag is inflated.",
+  "suggestion": "Change 'corpus-confirmed' to 'speculative' or 'original-needs-review', or provide a corpus citation.",
+  "confidence": 0.8,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "352-353, 376-388",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "Dialect variation, the -ka → -re/-te shift, and the Horobetsu switch-reference function",
+  "issue": "The section heading combines three topics; the text under 'Diachrony' actually discusses synchronic dialect variation and a function that may not be diachronic. The heading 'Diachrony' (line 352) is misleading for a section that mostly describes synchronic dialect differences and a synchronic switch-reference function. The term 'diachrony' is misapplied.",
+  "suggestion": "Change section title to 'Dialect variation and the Horobetsu switch-reference function' or similar, removing 'diachrony'.",
+  "confidence": 0.5,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "386-387",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Whether the switch-reference function is an independent grammaticalization or a secondary extension of the causative meaning is not settled in the accessible sources; no equivalent use is documented for Saru or Chitose ‹contested›",
+  "issue": "The epistemic tag ‹contested› is used for a claim about lack of documentation in Saru/Chitose. The text itself says 'not settled in the accessible sources', which is not a contestation but an absence of evidence. The tag ‹contested› implies there are competing published analyses, which is not supported by the text. Additionally, no source is cited for this 'contestation'; the only citation is Takahashi 2017 for the Horobetsu data.",
+  "suggestion": "Replace 'contested' with 'speculative' or rephrase as 'not documented for Saru or Chitose in the accessible sources' without an epistemic tag.",
+  "confidence": 0.7,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "116-122",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "{'<'} i=yairayke-re ... {'<'} i=rankarap-te",
+  "issue": "The notation i=yairayke-re and i=rankarap-te uses the curly-brace and less-than sign to indicate derivation, but this is not explained in the chapter or the markup conventions. This is a minor formatting inconsistency with the rest of the chapter, which uses simpler notation. Also, 'iyairaykere' is given with no morpheme breaks in the text but then analyzed; the formatting is inconsistent with the interlinear examples.",
+  "suggestion": "Standardize the derivation notation or explain it; consider using the same morpheme-break style as elsewhere (hyphens).",
+  "confidence": 0.4,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

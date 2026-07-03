@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "78",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Tamura 1972b: 158, via Refsing1986 p. 243; Kindaichi 1960: 193, via Refsing1986 p. 243",
+  "issue": "The claim attributes etymology to Tamura 1972b and Kindaichi 1960, but cites them only indirectly via Refsing 1986. The epistemic tag ‹speculative› is not applied to this claim, though the text explicitly states the source material was not independently verified.",
+  "suggestion": "Add ‹speculative› after the etymology claim to reflect indirect sourcing.",
+  "confidence": 0.95,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "104",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Hokkaido and Sakhalin",
+  "issue": "Inconsistent macron usage: earlier in the chapter, 'Hokkaidō' appears with a macron (e.g., line 89 'ek hine' → [ekine]), but here 'Hokkaido' is unmarked. The chapter otherwise uses macrons in phonological discussion.",
+  "suggestion": "Standardize to 'Hokkaidō' with macron throughout.",
+  "confidence": 0.8,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "151",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "kanpi ku=sanke ru-we ne akusu itasa kanpi ek ru-we ne",
+  "issue": "The free translation 'I had sent a letter, and in return a letter came.' implies a reciprocal relationship not present in the gloss 'letter 1SG.A=send.out track-POSS COP CONJ in.return letter come track-POSS COP'. The gloss lacks any equivalent for 'in return'.",
+  "suggestion": "Revise gloss to include a semantic component for reciprocity, e.g., 'in.return' or 'in.exchange'.",
+  "confidence": 0.9,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "214",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "whole-corpus word-form counts register approximately 3,861 tokens for akusu and 2,071 for awa",
+  "issue": "This count contradicts the earlier statement in line 104 that hine has 14,368 tokens — all labeled ‹corpus-suggested› — but here akusu and awa counts are presented without epistemic tagging, despite similar aggregation issues (Hokkaido and Sakhalin combined, homonym filtering not confirmed).",
+  "suggestion": "Add ‹corpus-suggested› to the akusu and awa counts for consistency.",
+  "confidence": 0.9,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "240",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "factbase §6, gap 6",
+  "issue": "The term 'factbase' and reference to 'gap 6' are internal pipeline markers not intended for publication. This is a register leak from the production process.",
+  "suggestion": "Replace with neutral phrasing: 'No comparable count exists for hine or akusu in any Hokkaido variety; the quantitative base is limited to a single informant's Shizunai material.'",
+  "confidence": 1,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "301",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "factbase §6, gap 5",
+  "issue": "Another instance of pipeline register leak: 'factbase' and 'gap 5' are not intended for final text.",
+  "suggestion": "Remove the parenthetical: 'so the claim is treated as speculative.'",
+  "confidence": 1,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "455",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "but it was not read directly — all attributed page numbers reach it through Nakagawa2024 and Refsing1986",
+  "issue": "Meta-commentary about source access ('not read directly') and editorial process leaks into the prose. This is a pipeline register leak.",
+  "suggestion": "Rephrase to: 'Tamura's 1972 study is cited indirectly through Nakagawa (2024) and Refsing (1986), so the page attributions are secondary.'",
+  "confidence": 1,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "456",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹speculative for those page numbers›",
+  "issue": "The epistemic tag is attached to a meta-comment about citation provenance, not to the claim itself. Epistemic tags should modify claims, not editorial notes.",
+  "suggestion": "Move the ‹speculative› tag to the claim about Tamura's etymology (line 78) and remove this parenthetical.",
+  "confidence": 0.95,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "88",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "ek hine",
+  "issue": "The example uses 'ek' without macron, but if 'ekine' is the phonological realization, the underlying form should consistently reflect vowel length. Earlier in the chapter, macrons are used in phonological discussion (e.g., line 89 'a=ne hine' → [aneine]).",
+  "suggestion": "Use macron consistently: 'ek' → 'ēk' if phonemically long.",
+  "confidence": 0.7,
+  "chapter": "hine-akusu-switch-reference",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

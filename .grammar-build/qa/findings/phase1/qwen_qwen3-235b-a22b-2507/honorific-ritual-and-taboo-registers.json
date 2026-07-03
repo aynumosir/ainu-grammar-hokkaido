@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "104",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"hapo\" gl=\"mother / father (colloquial, dialect-variable)\" />",
+  "issue": "The gloss 'mother / father' for <A w=\"hapo\" /> conflicts with the subsequent sentence (line 115–117) stating that in Chitose and Horobetsu, 'hapo' means 'father', not 'mother'. The gloss implies equal semantic range, but the text specifies asymmetric dialect distribution: 'mother' in most Hokkaido varieties, 'father' in some. This creates ambiguity about whether 'hapo' ever means both simultaneously or is strictly dialect-specific.",
+  "suggestion": "Revise the gloss to reflect dialect specificity, e.g., 'mother (most HK) / father (Chitose, Horobetsu)' or split into separate entries with dialect tags.",
+  "confidence": 0.9,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "115",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The colloquial term <A w=\"hapo\" /> shows conspicuous dialect variation: it means 'mother' in most Hokkaido varieties but 'father' in Chitose and Horobetsu",
+  "issue": "This directly contradicts the earlier gloss in line 104, which labels 'hapo' as meaning 'mother / father (colloquial, dialect-variable)', implying bidirectional variability. However, the later statement specifies unidirectional variation: 'mother' in most varieties, 'father' only in specific ones. The earlier gloss should not present the meanings as symmetric alternatives.",
+  "suggestion": "Update the gloss in line 104 to accurately reflect the asymmetric distribution described in line 115, e.g., 'mother (most HK), father (Chitose, Horobetsu)'",
+  "confidence": 0.95,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "269",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "was not held or consulted in the preparation of this grammar",
+  "issue": "The phrase 'was not held or consulted in the preparation of this grammar' is a pipeline register leak, revealing editorial process details rather than presenting the information from the reader's perspective. It belongs to the production meta-discourse and should be reframed objectively.",
+  "suggestion": "Rephrase to: 'Hattori (1957) has not been consulted for this grammar due to limited availability.'",
+  "confidence": 0.98,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "297",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "which was not held or consulted in the preparation of this grammar",
+  "issue": "This is another instance of pipeline register leak, exposing internal research limitations. Such statements compromise the scholarly tone and should be neutralized.",
+  "suggestion": "Rephrase to: 'Hattori (1957) is not included in the consulted sources for this grammar.'",
+  "confidence": 0.98,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "299",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "What the read sources make available is the mechanism",
+  "issue": "The term 'read sources' is a pipeline register leak, referring to the research process rather than the available evidence. It should be replaced with a more standard scholarly expression.",
+  "suggestion": "Change to: 'The available sources provide the mechanism'",
+  "confidence": 0.97,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "135",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "鍋沢モトゾウ",
+  "issue": "The name 鍋沢モトゾウ appears without a macron in the romanized form (Motoanrek), though it is standard to mark long vowels in Ainu romanization. If 'Motoanrek' represents 'Motōanrek', the macron is missing. Inconsistency in macron usage affects orthographic register.",
+  "suggestion": "Check and correct macron usage: 'Motoanrek' → 'Motōanrek' if warranted",
+  "confidence": 0.7,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "207",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"1SG.A=APPL-APPL-worship\"",
+  "issue": "The gloss 'APPL-APPL' suggests two applicative morphemes, but the morphemic segmentation is 'k=e-ko-onkami', which contains only two prefixes: e- and ko-. While both may be applicatives, the gloss does not align clearly with the morpheme count or labeling. If both are APPL, the segmentation should reflect that; if they are distinct types, the gloss should differentiate them.",
+  "suggestion": "Revise gloss to potentially distinguish the applicatives (e.g., 'APPL1-APPL2') or confirm that 'e-' and 'ko-' are both standardly classified as APPL in this context.",
+  "confidence": 0.8,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "200-208",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cite=\"endo2022\"",
+  "issue": "The example cites only 'endo2022' without a page or example number, while the note references 'Endō (2022) §2.3'. For consistency and verifiability, the cite attribute should include the locator (e.g., cite=\"endo2022:§2.3\" or cite=\"endo2022:ex.13\").",
+  "suggestion": "Update cite attribute to include section or example number: cite=\"endo2022:§2.3, ex.13\"",
+  "confidence": 0.9,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "196",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"endo2022\" /> (§2.3)",
+  "issue": "The citation <Ref k=\"endo2022\" /> is separate from the parenthetical '(§2.3)', which breaks the standard pattern of including locators within the Ref component (e.g., p=\"§2.3\"). This risks misattribution and weakens citation integrity.",
+  "suggestion": "Merge into: <Ref k=\"endo2022\" p=\"§2.3\" />",
+  "confidence": 0.95,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "269",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Source: nukopoli, aynu-corpora Discord, 2024-12-26 (asserted)",
+  "issue": "The note contains a full citation that duplicates the <Ref k=\"aynucorporadiscord\" /> already present in the prose. This creates redundancy and risks inconsistency. The full citation should be in the Ref, not in the note.",
+  "suggestion": "Remove the full citation from the note and rely on the inline <Ref> with parenthetical attribution.",
+  "confidence": 0.9,
+  "chapter": "honorific-ritual-and-taboo-registers",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

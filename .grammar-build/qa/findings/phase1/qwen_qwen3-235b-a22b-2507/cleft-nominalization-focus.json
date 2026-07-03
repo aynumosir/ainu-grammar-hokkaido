@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "98",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Satō glosses it as 'こと / の / 時' and notes that it",
+  "issue": "The citation (Ref k=\"sato2008\" p=\"174, 169\") lists page 169, but the discussion on hi appears on p. 174; citing p. 169 here may refer to unrelated content or be a typographical error in the page range.",
+  "suggestion": "Verify the correct page for the gloss 'こと / の / 時' in Sato 2008; if it is only on p. 174, remove '169' from the citation.",
+  "confidence": 0.85,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "115",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ku=nu hi anak k=eramuan pe ne korka tasa itak anak k=eranpewtek",
+  "issue": "The gloss '1SG.A=hear NMLZ TOP 1SG.A=understand NMLZ COP CONJ reply speech TOP 1SG.A=not.know' does not align with the morpheme string: 'k=eramuan' is glossed as '1SG.A=understand' but should be '1SG.A=understand-NMLZ' to match the morpheme -an; also, 'korka' is glossed as 'CONJ' but no conjunction morpheme is visible in the Ainu string.",
+  "suggestion": "Correct the gloss to reflect morphemes accurately: e.g., 'k=eramuan' → '1SG.A=understand-NMLZ', and verify if 'korka' has a morphemic basis for 'CONJ'.",
+  "confidence": 0.95,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "140",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "tap a=ye katu Piratur sekor a=ye hawe ne",
+  "issue": "The gloss 'now 4.A=say manner-POSS Piratur QUOT 4.A=say voice-POSS COP' incorrectly renders 'katu' as 'manner-POSS' — 'katu' is a deverbal noun meaning 'way of calling', not a possessive form; also, 'Piratur' has no gloss and appears to be a proper name, but its syntactic role is unclear.",
+  "suggestion": "Revise gloss: 'manner-POSS' → 'manner', and add 'Piratur' as 'Piratur' in the gloss line to maintain alignment.",
+  "confidence": 0.9,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "ruwe an hi an",
+  "issue": "The example 'ruwe an hi an' uses 'an' twice, but the second 'an' is likely meant to be the existential copula, while the first is the content-question marker; however, the repetition may cause confusion. Orthographic consistency: elsewhere 'an' is used for both functions, but disambiguation via context is assumed.",
+  "suggestion": "Consider annotating the two instances of 'an' differently in the example or gloss if dialectal/functional distinction exists; otherwise, retain but ensure clarity in surrounding text.",
+  "confidence": 0.7,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "294",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "hemanta ne kusu ene siran hi an",
+  "issue": "The gloss 'why COP because thus appear NMLZ exist' does not align: 'ne' is glossed as 'COP' but in context should be part of the content-question frame replaced by 'an'; also, 'kusu' is glossed as 'because' but appears earlier in the string than expected; word order mismatch.",
+  "suggestion": "Realign gloss to morpheme order: possibly 'hemanta' → 'why', 'ne' → 'COP' (though questionable in content question), 'kusu' → 'because', 'ene siran' → 'thus appear', 'hi' → 'NMLZ', 'an' → 'exist'. But 'ne' should not co-occur with 'an' in content questions per §5.",
+  "confidence": 0.95,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "294",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "hemanta ne kusu ene siran hi an",
+  "issue": "The example contains both 'ne' and 'an' after a formal noun, but §5 states that content questions obligatorily use 'an' and '*ruwe ne' with a wh-word is ill-formed. Having 'ne' in 'hemanta ne' contradicts this rule.",
+  "suggestion": "Either remove 'ne' from the example or revise the explanation; likely, 'hemanta' should directly trigger 'an' without intervening 'ne'.",
+  "confidence": 0.98,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "307",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "pe ne ya?",
+  "issue": "The example 'pe ne ya?' includes a question mark, but the surrounding text uses italics without punctuation in other examples (e.g., 'sirpirka ruwe ne'). Inconsistency in orthographic presentation.",
+  "suggestion": "Standardize example formatting: either include punctuation consistently or omit it across all examples.",
+  "confidence": 0.75,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "404",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "'こそ' (emotional emphasis)",
+  "issue": "Untranslated Japanese 'こそ' appears in the gloss description without explanation; the chapter otherwise translates Japanese terms or provides context.",
+  "suggestion": "Translate or explain 'こそ' as 'emphatic particle indicating contrastive focus' or similar.",
+  "confidence": 0.8,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "410",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "'まさに〜こそ' (assured emphasis)",
+  "issue": "Contains untranslated Japanese 'まさに〜こそ' with tilde; the tilde may not render correctly and the phrase is not explained in English.",
+  "suggestion": "Replace with English explanation: e.g., 'precisely indeed' or 'emphatic assertion', and remove the Japanese construct if not essential.",
+  "confidence": 0.85,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "457",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "nouns before <i lang=\"ain-Latn\">konna</i> appear in their concept form (<i lang=\"ain-Latn\">ru</i>, not <i lang=\"ain-Latn\">ruwe</i>)",
+  "issue": "The term 'concept form' is used without definition; readers may not know that 'ru' vs 'ruwe' refers to root vs derived form. This could confuse without prior explanation.",
+  "suggestion": "Clarify 'concept form' as 'root form used in derivational morphology' or provide a brief explanation.",
+  "confidence": 0.7,
+  "chapter": "cleft-nominalization-focus",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

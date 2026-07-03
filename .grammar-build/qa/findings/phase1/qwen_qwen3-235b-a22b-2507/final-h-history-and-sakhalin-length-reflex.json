@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "52",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"eye-POSS\"",
+  "issue": "The gloss 'POSS' does not align with the standard Leipzig glossing rules; the affiliative suffix -ihi is grammaticalized from the noun 'hi' 'thing, place, time', not a possessive morpheme per se. The gloss should reflect the morphological composition (e.g., -i-hi as 'ATTR-hi') or at least use a more precise label like 'ATTR' or 'AFFIL'.",
+  "suggestion": "Change 'POSS' to 'AFFIL' or 'ATTR' to better reflect the grammatical nature of the suffix.",
+  "confidence": 0.95,
+  "chapter": "final-h-history-and-sakhalin-length-reflex",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "93",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td><i lang=\"ain-Latn\">tek-ehe</i></td>",
+  "issue": "The table lists HA affiliative as 'tek-ehe', but in line 94 the gloss is 'hand; stick', while the example in line 15 uses 'tek-ehe' specifically for 'hand (of someone)'. The table conflates two meanings without clarification, potentially misleading the reader about form–meaning mapping.",
+  "suggestion": "Clarify in the table note or split entries if 'hand' and 'stick' are distinct senses with potentially different forms.",
+  "confidence": 0.9,
+  "chapter": "final-h-history-and-sakhalin-length-reflex",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "103",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td><i lang=\"ain-Latn\">sik-ihi</i></td>",
+  "issue": "The table lists ‹SA›RA affiliative as 'sik-ihi', but earlier in line 99 the citation form is 'sis' (from *sih), and the base consonant has debuccalized. The form 'sik-ihi' implies retention of /k/, which contradicts the debuccalization rule unless the underlying form is restored morphologically. However, this is not explained in the table cell, creating a misleading surface-level inconsistency.",
+  "suggestion": "Add a note to the table or cell explaining that 'sik-ihi' reflects the underlying base consonant /k/ restored in the affiliative, despite surface 'sis'.",
+  "confidence": 0.98,
+  "chapter": "final-h-history-and-sakhalin-length-reflex",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "117",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td><i lang=\"ain-Latn\">mac-ihi</i></td>",
+  "issue": "The form 'mac-ihi' appears in the ‹SA›RA affiliative column for 'mat', but in the same row, the HA cognate is 'mat-aha'. The affricate 'c' in 'mac-ihi' arises from /t/ → [c] before front vowel /i/, but the table does not indicate that this is a conditioned alternation, making it appear as a different base consonant rather than an allophonic rule.",
+  "suggestion": "Add a footnote or annotation to the table explaining the /t/ → [c] alternation before /i/ in ‹SA›RA.",
+  "confidence": 0.97,
+  "chapter": "final-h-history-and-sakhalin-length-reflex",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "144",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "mac-ihi",
+  "issue": "The form 'mac-ihi' uses 'c' for the affricate, but in other parts of the text (e.g., line 99 'sis') the orthography uses 's'. The use of 'c' vs. 's' is inconsistent unless 'c' is a deliberate representation of [t͡s] or [ɕ]. The chapter should standardize on one convention for affricates or clarify the distinction.",
+  "suggestion": "Ensure consistent use of 'c' for affricates throughout; if 'c' = [t͡s], state this in a methodological note.",
+  "confidence": 0.9,
+  "chapter": "final-h-history-and-sakhalin-length-reflex",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "294",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"alonso2022\" p=\"§2.3, §2.4\" />",
+  "issue": "The citation cites both §2.3 and §2.4 of Alonso2022, but the claim attributes opposing views to the same author without clarifying that this reflects internal contradiction in the source. The citation supports the observation of contradiction, but the placement implies endorsement of both, which could mislead.",
+  "suggestion": "Rephrase to clarify that the citation documents an internal contradiction in Alonso2022, not a unified position.",
+  "confidence": 0.95,
+  "chapter": "final-h-history-and-sakhalin-length-reflex",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "311",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "prefers Janhunen's vowel-dropping account (see also §1 on the affiliative)",
+  "issue": "The phrase 'see also §1 on the affiliative' uses informal referencing ('§1') inconsistent with the structured cross-reference system (<Xr>) used elsewhere. It reads like an author's note rather than final prose.",
+  "suggestion": "Replace with <Xr ch=\"affiliative-suffix-morphophonology\" /> or similar formal link.",
+  "confidence": 0.85,
+  "chapter": "final-h-history-and-sakhalin-length-reflex",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "347",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "‹disputed›",
+  "issue": "The tag ‹disputed› appears in prose but is not among the standard evidence grades listed in the briefing (which include ‹contested›, ‹speculative›, etc.). This is a register leak or formatting inconsistency.",
+  "suggestion": "Change '‹disputed›' to '‹contested›', the standard term used elsewhere for dialectal disagreement.",
+  "confidence": 0.98,
+  "chapter": "final-h-history-and-sakhalin-length-reflex",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

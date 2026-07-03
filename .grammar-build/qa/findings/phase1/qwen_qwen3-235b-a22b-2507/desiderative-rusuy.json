@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"306, 312–313\" />; <Ref k=\"bugaeva2012\" p=\"493\" />.",
+  "issue": "The citation for Bugaeva (2012) lacks page numbers in the prose despite being cited for a specific claim about person marking, while Nakagawa's citation includes detailed pages. This creates inconsistency in citation support.",
+  "suggestion": "Add page number(s) to the Bugaeva citation if available, or ensure both sources are cited with equal specificity.",
+  "confidence": 0.95,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "114",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "‹proposed, nukopoli, aynu-corpora Discord 2024›",
+  "issue": "The epistemic tag includes a username and date in parentheses, which appears to be a pipeline artifact or incomplete rendering. The standard format uses only the username and date in the citation, not repeated in the tag.",
+  "suggestion": "Change to ‹proposed› and keep full attribution in the citation: (nukopoli, aynu-corpora Discord 2024-11-25).",
+  "confidence": 0.9,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "300",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "(nukopoli, aynu-corpora Discord 2024-11-29)",
+  "issue": "The date in the attribution (2024-11-29) does not match the earlier nukopoli citation date (2024-11-25), creating an internal contradiction in community source attributions.",
+  "suggestion": "Verify and standardize the date across both mentions of nukopoli's contribution to match the correct Discord post date.",
+  "confidence": 0.95,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "50",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "inkar=an rusuy",
+  "issue": "The gloss '4.S' in the example corresponds to fourth person singular, but the note explains it as 'fourth-person (indefinite) subject' with generic or narrator's first-person reference. The gloss should reflect '4.INDEF' or similar to align with the note.",
+  "suggestion": "Revise gloss from '4.S' to '4.INDEF' to match the semantic explanation in the note.",
+  "confidence": 0.9,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "92",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "ku=e rusuy",
+  "issue": "The gloss '1SG.A=eat DES' uses 'eat' as the root gloss, but the linked dictionary form <A w=\"ipe\" gl=\"eat a meal\" /> suggests a more specific lexical item. The verb 'e' may not be the same as 'ipe', risking a mismatch.",
+  "suggestion": "Verify whether 'e' is correctly glossed as 'eat' or should align with a more precise form like 'ipe'. If distinct, adjust gloss or clarify.",
+  "confidence": 0.8,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "180",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "e.g. cep ku=kor rusuy 'I want a/the fish'. rusuy is in its auxiliary function; kor takes the normal person prefix.",
+  "issue": "The sentence ends with a period inside the quotation mark, but then continues with unquoted prose, creating a punctuation error.",
+  "suggestion": "Place the period outside the closing quote: 'I want a/the fish'. rusuy...",
+  "confidence": 0.95,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "266",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "somo ku=nukar rusuy",
+  "issue": "The verb 'nukar' appears without macron, while standard Ainu orthography typically marks long vowels. Should be 'nūkar' or 'nukar' consistently across the chapter.",
+  "suggestion": "Check consistency of vowel length marking for 'nukar' throughout the chapter and apply macrons if required by the romanization standard used.",
+  "confidence": 0.85,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "arparusuy",
+  "issue": "The fused form 'arparusuy' lacks hyphenation or indication of fusion boundary, while other fused forms like 'sinotca-easkay' include a hyphen. Inconsistent formatting.",
+  "suggestion": "Use consistent hyphenation: 'arpa-rusuy' to match the pattern in 'sinotca-easkay'.",
+  "confidence": 0.8,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "71",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "iperusuy",
+  "issue": "The fused form 'iperusuy' lacks hyphenation, unlike 'sinotca-easkay'. This creates inconsistency in how fused forms are presented.",
+  "suggestion": "Use hyphen: 'ipe-rusuy' for consistency with other lexicalized forms.",
+  "confidence": 0.8,
+  "chapter": "desiderative-rusuy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "8-18",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "The prefix <i lang=\"ain-Latn\">eci=</i> occupies two cells in the Hokkaido Ainu personal-index system.",
+  "issue": "The term 'prefix' is used, but in the analysis, <i>eci=</i> is treated as a clitic-like element (per Bugaeva, cited later). This creates a terminological inconsistency: calling it a 'prefix' contradicts the later claim that it is clitic-like and inseparable from the stem.",
+  "suggestion": "Change 'prefix' to 'personal index' or 'clitic' to align with the morphological analysis in section 'Notation'.",
+  "confidence": 0.95,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "110-118",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "sinen ne e=oman wa e=ray yakun",
+  "issue": "The gloss '2SG.S=go' for 'e=oman' and '2SG.S=die' for 'e=ray' implies that 'e=' is the subject marker, but the free translation 'you go alone and die' does not distinguish between agent and object roles. However, the note says 'both intransitive verbs oman and ray carry e= because the addressee is singular; the role is the same (2SG.S)'. This is consistent, but the gloss uses '2SG.S' while the table in section 'Second-person neutrality' uses '2SG' without role specification. Inconsistency in labeling between sections.",
+  "suggestion": "Standardize role labels: either use '2SG.S' throughout or simplify to '2SG' in all tables and glosses.",
+  "confidence": 0.9,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "120-128",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "eci=paye tek nean cise oro eci=epa cik anakne",
+  "issue": "The gloss has '2PL.S=go.PL' for 'eci=paye' and '2PL.A=reach' for 'eci=epa', but the note says 'eci= marks 2PL.S on the intransitive paye in the first clause and 2PL.A on the transitive epa in the second'. This shows that the same form 'eci=' is glossed with different grammatical roles (S vs A), but the gloss string uses '2PL.S' and '2PL.A' — implying a distinction that the text claims does not exist (second-person neutrality). This contradicts the claim that second person is neutral across S, A, O.",
+  "suggestion": "Gloss both as '2PL=...' without specifying S/A to reflect neutrality, or revise the analysis to acknowledge role distinction.",
+  "confidence": 0.98,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145-147",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "*ku=e=, *ku=eci=, *ci=e=, and *ci=eci=",
+  "issue": "The asterisked forms use '=' as a boundary marker, but in the case of '*ku=e=' and '*ci=e=', the second '=' is part of the second-person index, not a separator. This creates ambiguity: is '*ku=e=' meant to be ku + e= or ku= + e=? Orthographic inconsistency with the rest of the chapter, which consistently uses '=' only between person markers and stems.",
+  "suggestion": "Use parentheses or spacing to clarify: e.g., *ku=e=* or *ku+(e=)* to avoid misreading.",
+  "confidence": 0.85,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "194-201",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "nep ka eci=kasuy pe an ya",
+  "issue": "The gloss '1SG.A>2SG.O=help' assigns specific agent and object roles to 'eci=', but the section 'The 1A→2O portmanteau' states that 'eci=' covers all four combinations (1SG/1PL.EXCL × 2SG/2PL). The gloss implies a specific 1SG→2SG reading, but the form itself is underspecified. The gloss over-specifies the meaning relative to the morpheme.",
+  "suggestion": "Use a neutral gloss like '1→2=help' or '1A>2O=help' without specifying number, to reflect the portmanteau's underspecification.",
+  "confidence": 0.97,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "256-284",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "outer plural <i lang=\"ain-Latn\">pa</i> (Saru, Chitose, Ishikari)",
+  "issue": "The table says outer plural 'pa' occurs in Saru, Chitose, and Ishikari, but earlier in section 'Second-person neutrality', it states that Ishikari uses 'es=' for 2PL, not 'eci='. This raises a question: does 'eci=' co-occur with outer 'pa' in Ishikari if 'eci=' is not the 2PL index there? The co-occurrence claim assumes 'eci=' is the 2PL index in all listed dialects, but Ishikari uses 'es=' instead.",
+  "suggestion": "Clarify whether 'eci=' and outer 'pa' co-occur in Ishikari, or restrict the claim to Saru and Chitose.",
+  "confidence": 0.88,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "301-309",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The online learner grammar by Ijäs introduces <i lang=\"ain-Latn\">e=</i> in Lesson 2...",
+  "issue": "The source <Ref k=\"ijas2023\" /> is cited as a learner grammar, yet it is used to support a claim marked ‹consensus› about the reference paradigm. This inflates the epistemic status: a pedagogical source should not underwrite a consensus claim about the full paradigm.",
+  "suggestion": "Remove ‹consensus› from the sentence or rephrase to indicate that Ijäs's grammar is pedagogical and not a primary source for the full paradigm.",
+  "confidence": 0.93,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "351-353",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Ijäs writes <i lang=\"ain-Latn\">e-</i> and <i lang=\"ain-Latn\">eci-</i> with a hyphen",
+  "issue": "The chapter normalizes to '=', but the mention of Ijäs's hyphen notation uses 'e-' and 'eci-', while earlier in the same section (line 318) it says 'her pedagogical hyphen notation (e-arpa) is normalized here'. Inconsistent representation of Ijäs's notation: sometimes with hyphen, sometimes with dash.",
+  "suggestion": "Use consistent formatting: either always 'e-' or 'e-', and 'eci-' or 'eci-', throughout.",
+  "confidence": 0.8,
+  "chapter": "eci-portmanteau-and-second-plural",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

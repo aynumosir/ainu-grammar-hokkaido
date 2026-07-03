@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "68",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">okay-hi</i>",
+  "issue": "Inconsistency in spelling of the plural existential root: earlier in the text it is given as <i lang=\"ain-Latn\">oka(y)</i>, but here written as <i lang=\"ain-Latn\">okay</i>. The form should be consistent with the established variant <i lang=\"ain-Latn\">oka(y)</i>.",
+  "suggestion": "Change <i lang=\"ain-Latn\">okay-hi</i> to <i lang=\"ain-Latn\">oka(y)-hi</i> for consistency.",
+  "confidence": 0.95,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "119",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">oka(y)</i>, suppressed)",
+  "issue": "Inconsistent parentheses formatting in table cell: the opening parenthesis is inside the <i> tag, but the closing is outside. This creates markup imbalance.",
+  "suggestion": "Wrap the entire parenthetical in the <i> tag: <i lang=\"ain-Latn\">oka(y)</i> (+ <i lang=\"ain-Latn\">hi</i>, suppressed)",
+  "confidence": 0.9,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "125",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">oka(y)</i>, suppressed)",
+  "issue": "Same parentheses inconsistency as in line 119: closing parenthesis outside the <i> tag.",
+  "suggestion": "Fix markup: <i lang=\"ain-Latn\">oka(y)</i> (+ <i lang=\"ain-Latn\">hi</i>, suppressed)",
+  "confidence": 0.9,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "132",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">oka(y)</i>, suppressed)",
+  "issue": "Same parentheses inconsistency as above.",
+  "suggestion": "Fix markup: <i lang=\"ain-Latn\">oka(y)</i> (+ <i lang=\"ain-Latn\">hi</i>, suppressed)",
+  "confidence": 0.9,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "138",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">oka(y)</i>, suppressed)",
+  "issue": "Same parentheses inconsistency in table cell.",
+  "suggestion": "Fix markup: <i lang=\"ain-Latn\">oka(y)</i> (+ <i lang=\"ain-Latn\">hi</i>, suppressed)",
+  "confidence": 0.9,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "214",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "—",
+  "issue": "The em dash used for missing data in the table cell may not be semantically clear. A more standard notation like \"—\" or \"n/a\" would improve clarity.",
+  "suggestion": "Replace with \"—\" or \"n/a\" for consistency with academic tables.",
+  "confidence": 0.8,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "349",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4sg FOC 4.O=look.at\"",
+  "issue": "The gloss '4sg' in the pronoun does not match the free translation 'me' or the grammatical role as object (4.O). The pronoun asinuma is 4SG, but the gloss should reflect its role as object if the free translation is 'me'.",
+  "suggestion": "Revise gloss to '4sg.O' or '4.O' to align with object indexing and translation.",
+  "confidence": 0.9,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "409",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4sg TOP hunting.ground summit over 4.A=APPL-fly.about CONJ\"",
+  "issue": "The gloss '4sg' for asinuma does not reflect its function as first-person narrative self in the free translation 'myself'. There is a mismatch between the gloss (third-person-like '4sg') and the actual referent (first person).",
+  "suggestion": "Add a note or adjust gloss to reflect logophoric/narrative self use, e.g., '4sg=1' or annotate in note.",
+  "confidence": 0.85,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "415",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "The ka here is the postposition 'over/on top of' (path marker with the applicative e-), not the scalar focus particle.",
+  "issue": "The explanation of 'ka' as a postposition is helpful, but it could be clearer that this is a different morpheme from the scalar particle 'ka' mentioned earlier. The distinction should be explicitly marked to avoid confusion.",
+  "suggestion": "Clarify: \"The ka here is the spatial postposition 'over', homophonous with but distinct from the scalar focus particle ka.\"",
+  "confidence": 0.9,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "393",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (.k1270, aynu-corpora Discord, 2024-03-22; ‹speculative›, attributed to Nakagawa)",
+  "issue": "The citation format is inconsistent: the Ref tag is separate from the inline attribution. Also, attributing a speculative idea to Nakagawa without a direct source may inflate epistemic status.",
+  "suggestion": "Integrate the citation: (username .k1270, aynu-corpora Discord 2024-03-22; <Ref k=\"aynucorporadiscord\" />), and remove 'attributed to Nakagawa' unless directly cited.",
+  "confidence": 0.85,
+  "chapter": "independent-personal-pronouns",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

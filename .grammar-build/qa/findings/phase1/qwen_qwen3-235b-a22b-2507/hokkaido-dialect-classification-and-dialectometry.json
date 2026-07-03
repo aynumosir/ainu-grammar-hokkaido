@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "32",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "nineteen localities",
+  "issue": "The text states that Hattori–Chiri (1960) used nineteen localities, but lists thirteen Hokkaido sites, six Sakhalin sites, and Torii's Kuril materials, totaling twenty. This is a numerical contradiction.",
+  "suggestion": "Revise the count to 'twenty localities' or adjust the listed sites to match the stated number.",
+  "confidence": 0.95,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "47",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Shizunai–Niikappu line",
+  "issue": "En dash (–) is used inconsistently: elsewhere, such as in 'Shizunai–Samani' or 'NE–SW', en dashes are used, but here it is correct. However, in line 82, 'Teshio, Ishikari' lacks a dash, suggesting inconsistency in boundary notation. The issue is minor but affects typographic register.",
+  "suggestion": "Ensure consistent use of en dashes in geographic boundary expressions throughout.",
+  "confidence": 0.7,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "429",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "unaccented (Bih/Kus); Obihiro standard",
+  "issue": "The table entry for Bihoro/Kushiro under 'Accent type' says 'unaccented', but Obihiro is listed separately as 'standard'. However, in the prose (line 239), 'Bihoro, Kushiro, Shiranuka' are all described as unaccented. This contradicts the table, which implies Obihiro is standard but grouped under Bihoro/Kushiro in the header.",
+  "suggestion": "Revise the table header to list Bihoro and Kushiro separately, or clarify that only Kushiro and Bihoro are unaccented while Obihiro is standard.",
+  "confidence": 0.9,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "571",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "mac-ihi sapa-ha or un inkar",
+  "issue": "The gloss 'LOC ALLAT' for 'or un' misaligns: 'or' is glossed as 'LOC', but 'or' is the genitive/dative case marker, not a locative. 'un' is the allative particle. The gloss incorrectly merges the case marker 'or' with the particle 'un'.",
+  "suggestion": "Revise gloss to 'GEN.ALLAT' or 'DAT ALLAT' to reflect that 'or' is a case marker and 'un' is the allative particle.",
+  "confidence": 0.85,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "580",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "nean nupuri or en oman kor",
+  "issue": "The gloss 'LOC ALLAT' for 'or en' repeats the same error: 'or' is a case marker (genitive/dative), not 'LOC'. 'en' is the allative particle. The gloss incorrectly labels 'or' as 'LOC'.",
+  "suggestion": "Revise gloss to 'GEN.ALLAT' or 'DAT ALLAT' for accuracy.",
+  "confidence": 0.85,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "683",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "antitwilight, June 2026 ‹speculative›",
+  "issue": "The date 'June 2026' is in the future relative to the book's writing period (2025–2026), but the context allows for works dated up to 2026. However, attributing a speculative claim to a future Discord message (June 2026) undermines epistemic credibility, especially when tagged as ‹speculative›. The citation appears anachronistic.",
+  "suggestion": "Verify whether 'June 2026' is a typo; if not, consider rephrasing to avoid implying knowledge of future community input.",
+  "confidence": 0.8,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "753-755",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The corpus used throughout this grammar (209,878 sentences) is weighted heavily toward Saru (77,964 sentences) and Shizunai (43,346), with all other varieties together making up the remainder.",
+  "issue": "77,964 + 43,346 = 121,310, meaning the remainder (88,568 sentences) is distributed among other varieties. However, this contradicts the earlier claim (line 13) that the grammar uses an 'aligned corpus' — if Saru and Shizunai dominate, it challenges claims about 'proportional weighting' mentioned in line 24. The section on corpus method may not reflect this imbalance.",
+  "suggestion": "Clarify whether 'proportional weighting' refers to speaker representation or text volume, or revise the numbers for consistency.",
+  "confidence": 0.9,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "31",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "applied a 200-item Swadesh-based word list to nineteen localities",
+  "issue": "The citation <Ref k=\"hattorichiri1960\" /> is attached to the entire claim, but the detail about 'nineteen localities' comes from Nakagawa & Fukazawa (2022), not Hattori & Chiri (1960) directly. This misattributes sourcing.",
+  "suggestion": "Move the <Ref k=\"nakagawafukazawa2022\" /> citation to the sentence about the number of localities.",
+  "confidence": 0.8,
+  "chapter": "hokkaido-dialect-classification-and-dialectometry",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

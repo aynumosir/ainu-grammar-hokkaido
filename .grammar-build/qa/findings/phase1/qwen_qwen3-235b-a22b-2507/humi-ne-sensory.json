@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "37",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "45 of 2232 evidential tokens (2.02%)",
+  "issue": "The percentage (2.02%) does not match the fraction given: 45/2232 ≈ 2.016%, which rounds to 2.02%, so this is accurate. However, the following count for 'humi as' is 37, and the total of 45 + 37 = 82, but the text does not clarify whether the 2232 includes both direct and indirect forms or only direct. This creates ambiguity in interpreting the frequency claim.",
+  "suggestion": "Clarify whether the 2232 tokens include only direct evidentials or both direct and indirect, to avoid misinterpretation of the frequency ranking.",
+  "confidence": 0.85,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "40",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "both counts place the sensory evidential as the third-most frequent direct form and second-to-last in the full eight-form system",
+  "issue": "The statement claims 'humi ne' is third-most frequent among direct forms, but only two other direct forms (ruwe ne, siri ne) are mentioned as higher; however, hawe ne is also a direct form, and if humi ne is third, hawe ne must be fourth. But then 'second-to-last in the full eight-form system' implies only one form is less frequent than humi ne, contradicting the earlier implication that hawe ne is less reliable and possibly less frequent. The ranking logic is inconsistent.",
+  "suggestion": "Specify the full ranking or clarify that 'second-to-last' refers to the indirect forms as well, to resolve the contradiction.",
+  "confidence": 0.9,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "121",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"various delicious.things 4.A=4.O=EP-eat-CAUS sound-POSS COP Q\"",
+  "issue": "The gloss includes 'EP' (epistemic particle?) which is not present in the morpheme string 'a=i=y-e-re'; the morphemes are a= (4.A), i= (4.O), y-e-re (eat-CAUS), so 'EP' is incorrect or unexplained.",
+  "suggestion": "Remove 'EP' from the gloss or correct it to match the morpheme breakdown.",
+  "confidence": 0.95,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "184",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"freeze.solid sound-POSS COP MIR\"",
+  "issue": "The gloss includes 'MIR' for 'awan', but 'awan' is not in the morpheme string 'rupus hum-i ne'. The example includes 'awan' in the free translation but not in the m/g/tr line; the m string lacks 'awan'.",
+  "suggestion": "Add 'awan' to the m and g strings to reflect its presence in the translation and note.",
+  "confidence": 0.9,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "189",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "note=\"Chiri 1936: 192, cited via Hirosawa 2026: 66. A bodily-tactile state (freezing solid) is encoded with humi ne; the admirative tail awan carries the surprised-retrospective value. The source noun hum 'feeling' grounds the tactile domain in the same formal noun that covers sound.\"",
+  "issue": "The note states that 'awan' is present and carries the admirative value, but the m/g/tr lines do not include 'awan'. This contradicts the example's own structure.",
+  "suggestion": "Include 'awan' in the m and g strings to match the note and translation.",
+  "confidence": 0.95,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "219",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"sound-stand sound-POSS COP COMP 1SG.A=think while 1SG.S=go.outside PFV NMLZ\"",
+  "issue": "The morpheme string includes 'p' at the end, glossed as 'NMLZ', but in the free translation it is rendered as '— but (nothing was there)', which is not a nominalization. The gloss 'NMLZ' does not match the translation.",
+  "suggestion": "Either correct the gloss of 'p' to reflect a contrastive or disappointed expectation, or adjust the translation to match a nominalization.",
+  "confidence": 0.9,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "299",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"tea 1SG.A=drink CONJ be.delicious sound-POSS\"",
+  "issue": "The morpheme string is 'usey ku=ku wa keraan hum-i', but the gloss has 'be.delicious' for 'keraan', which is not attested in the dictionary entries provided. Also, 'keraan' is not otherwise defined in the chapter.",
+  "suggestion": "Verify and define 'keraan' or correct the gloss to match the known lexicon.",
+  "confidence": 0.8,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "345",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"person come sound-POSS stand\"",
+  "issue": "The morpheme string is 'aynu ek hum-i as', where 'ek' means 'come', but the gloss does not align 'ek' with 'come' properly; 'aynu ek' should be 'person come', 'hum-i' as 'sound-POSS', 'as' as 'stand'. The alignment is correct, but the compound meaning 'the sound of someone arriving' is not reflected in the gloss.",
+  "suggestion": "Adjust the gloss to reflect the nominalized meaning, e.g., 'person-come sound-POSS stand'.",
+  "confidence": 0.7,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "364",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"big fish 4.A=COP sound-POSS COP sound-POSS stand after.that 4=elder.brother-POSS follow swim=4.S CONJ\"",
+  "issue": "The morpheme string includes 'os ma=an wa', glossed as 'follow swim=4.S CONJ', but 'os' is not glossed as 'follow', and 'ma=an' is not 'swim'. 'ma=an' likely corresponds to 'os', not 'swim'.",
+  "suggestion": "Correct the gloss to align 'os' with 'follow' and 'ma=an' with 'swim=4.S'.",
+  "confidence": 0.95,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "437",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "… ran hum ne awan",
+  "issue": "The Ainu form 'ran' is not otherwise attested in the chapter; it may be a dialect variant, but it is not explained. Also, 'hum' is used instead of 'humi', which is consistent with the dialect note, but the romanization should be consistent with the chapter's standards.",
+  "suggestion": "Add a note explaining 'ran' or verify its form; ensure dialectal forms are consistently marked.",
+  "confidence": 0.7,
+  "chapter": "humi-ne-sensory",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

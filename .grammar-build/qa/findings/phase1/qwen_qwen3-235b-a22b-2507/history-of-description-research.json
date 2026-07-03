@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "15",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Saru-dialect",
+  "issue": "Hyphenated compound 'Saru-dialect' is used once, but elsewhere the unhyphenated 'Saru dialect' or similar forms are used (e.g., line 149). Inconsistent hyphenation of the same term within the chapter.",
+  "suggestion": "Use 'Saru dialect' consistently without hyphenation.",
+  "confidence": 0.95,
+  "chapter": "history-of-description-research",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "222",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "1905 / 1938",
+  "issue": "In the table, the year entry uses a spaced slash (' / '), while other multi-year entries (e.g., line 126) use an en dash. This creates format drift in date presentation.",
+  "suggestion": "Use an en dash: '1905–1938'",
+  "confidence": 0.9,
+  "chapter": "history-of-description-research",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "300",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "2024",
+  "issue": "The table includes Nakagawa 2024 as a source, but in the prose (line 337), Nakagawa's work is cited as <Ref k=\"nakagawa2024\" /> — implying it is available. However, on line 343, the grammar states 'A critical review of its analyses and relation to earlier grammars is available in <Ref k=\"sato2025b\" />' — a 2025 source. Since this is July 2026, a 2025 review is plausible, but the table includes a 2024 source without noting any potential availability issues. No problem per se, but the prose on line 160 says 'though it was not available to this project for direct consultation' regarding Tamura 2000 — yet no such note is made for Nakagawa 2024, which is more recent. This creates an internal inconsistency in citation transparency.",
+  "suggestion": "Add a note clarifying whether Nakagawa 2024 was directly consulted or not, to match the transparency of the Tamura 2000 statement.",
+  "confidence": 0.85,
+  "chapter": "history-of-description-research",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "160",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "though it was not available to this project for direct consultation",
+  "issue": "This phrase uses first-person plural possessive ('this project') and refers to internal access limitations — a register leak from the production pipeline. The grammar otherwise maintains an impersonal scholarly voice.",
+  "suggestion": "Rephrase to: 'though it was not available for direct consultation'",
+  "confidence": 0.98,
+  "chapter": "history-of-description-research",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "322",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">e-</i>, <i lang=\"ain-Latn\">ko-</i>, and <i lang=\"ain-Latn\">o-</i>",
+  "issue": "The prefixes are italicized and tagged with lang=\"ain-Latn\", but the spacing and punctuation are inconsistent: there is a space after each comma, but the final 'and' is in plain text. For typographic consistency, the list should be uniformly formatted.",
+  "suggestion": "Ensure consistent spacing and formatting: '<i lang=\"ain-Latn\">e-</i>, <i lang=\"ain-Latn\">ko-</i>, and <i lang=\"ain-Latn\">o-</i>' is acceptable, but confirm uniform italics and language tagging.",
+  "confidence": 0.8,
+  "chapter": "history-of-description-research",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "14",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "and short texts, and it served",
+  "issue": "Slight awkwardness due to repeated 'and' in close succession: '...glossaries for practical administrative use. The most comprehensive of these... contains... and short texts, and it served...'",
+  "suggestion": "Replace with: '...and short texts; it served'",
+  "confidence": 0.75,
+  "chapter": "history-of-description-research",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "103",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ja\">アイヌ語法概説</i> ('An outline of Ainu grammar')",
+  "issue": "The Japanese title is correctly given, but the English translation uses lowercase 'grammar' in 'An outline of Ainu grammar' — standard title case would capitalize 'Grammar'.",
+  "suggestion": "Use title case: 'An Outline of Ainu Grammar'",
+  "confidence": 0.9,
+  "chapter": "history-of-description-research",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "337",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ja\">アイヌ語広文典</i> ('An extensive grammar of the Ainu language')",
+  "issue": "The English translation is not in title case, while other translated titles (e.g., line 103) use sentence-style capitalization. Inconsistent capitalization style for translated titles.",
+  "suggestion": "Use title case: 'An Extensive Grammar of the Ainu Language'",
+  "confidence": 0.9,
+  "chapter": "history-of-description-research",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

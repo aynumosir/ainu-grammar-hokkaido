@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "35",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"an\" gl=\"exist, be\" />",
+  "issue": "The gloss 'exist, be' suggests two meanings, but the verb is used only as 'exist' in the examples; no instance of 'be' (as copula or equative) appears in this chapter.",
+  "suggestion": "Revise gloss to 'exist' only, or clarify context where it might mean 'be'.",
+  "confidence": 0.85,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44-46",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"sapo an ru-we\" g=\"older.sister exist track-POSS\"",
+  "issue": "The gloss 'track-POSS' for 'ru-we' does not match the free translation 'Older sister, are you there?' which expresses a polar question, not tracking or possession. The correct gloss should reflect evidential or question-tracking function.",
+  "suggestion": "Change 'track-POSS' to 'Q.POLAR' or 'EVID.POLAR' to align with the intended meaning.",
+  "confidence": 0.95,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "91-93",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"sapo totekno e=an ru-we\" g=\"older.sister in.good.health 2SG.S=exist track-POSS\"",
+  "issue": "The gloss 'track-POSS' for 'ru-we' is inconsistent with the free translation 'have you been well?' and the analysis that identifies it as a polar-question frame. The gloss should reflect question evidentiality, not possession.",
+  "suggestion": "Change 'track-POSS' to 'Q.POLAR' or 'EVID.POLAR' to maintain consistency across examples.",
+  "confidence": 0.95,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "103-105",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"totekno ku=an wa\" g=\"in.good.health 1SG.S=exist CONJ\"",
+  "issue": "The gloss 'CONJ' for 'wa' does not match its function as a clause-linking particle that closes a turn; 'CONJ' is too vague and does not reflect its discourse-pragmatic role in Ainu. The note describes it as signaling a complete turn, which 'CONJ' fails to capture.",
+  "suggestion": "Use a more precise gloss such as 'CL.LINK' or 'TURN.CLOSE' to better reflect its function.",
+  "confidence": 0.9,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "133-136",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"numan poronno upas as kusu tanto sonno merayke na\"",
+  "issue": "The morpheme 'as' is glossed as 'fall' in the example, but the note states 'as' means 'stand/fall' and is used specifically for snowfall. The gloss should reflect this specialized meaning.",
+  "suggestion": "Revise gloss of 'as' to 'fall(snow)' or 'lie' to better match the semantic domain.",
+  "confidence": 0.8,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "156-158",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"sonno merayke=an\" g=\"truly be.cold=4.S\"",
+  "issue": "The gloss '=4.S' for '=an' conflicts with the note and surrounding text that describe it as the 4th-person intransitive suffix, not a subject marker per se. The gloss should reflect role (indefinite experiencer) rather than syntactic subject.",
+  "suggestion": "Change '=4.S' to '=INDF.S' or '=4.EX' to better represent the indefinite/experiencer function.",
+  "confidence": 0.9,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "180-183",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "m=\"nisatta sirpirka nankor na\" g=\"tomorrow be.fine.weather INFR FIN\"",
+  "issue": "The form 'nankor na' is described in the note as undergoing sandhi to 'nankornā', but the morpheme line does not reflect this: it should be 'nankornā' or marked for sandhi.",
+  "suggestion": "Revise m=\"nisatta sirpirka nankor na\" to m=\"nisatta sirpirka nankornā\" or use diacritics to indicate sandhi.",
+  "confidence": 0.75,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "175-177",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "The Asahikawa form undergoes sandhi: <i lang=\"ain-Latn\">nankor</i> followed by the final particle <i lang=\"ain-Latn\">na</i> surfaces as <i lang=\"ain-Latn\">nankornā</i>, rendered in the source's Katakana as ナンコンナー.",
+  "issue": "The term 'final particle' is used for 'na', but in the example it appears before 'nankor', contradicting the linear order. The description should clarify that 'na' follows 'nankor' in surface form.",
+  "suggestion": "Rephrase to: 'nankor followed by the sentence-final particle na surfaces as nankornā'.",
+  "confidence": 0.8,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "219-221",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<td><i lang=\"ain-Latn\">sapo totekno e=an ru-we?</i></td>",
+  "issue": "The table lists 'polar-question frame' as a feature, but the earlier section (§2) already attributes this same function to the first utterance; the table implies novelty, creating redundancy without clarification.",
+  "suggestion": "Clarify in the table note that this is a recurrence of the polar-question frame with person marking added.",
+  "confidence": 0.7,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "36",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "3rd person is zero-marked",
+  "issue": "The term '3rd person' appears without macron (3rd), while other instances in the chapter use '3rd' consistently; no inconsistency in form, but '3rd' vs 'third' should be checked for style.",
+  "suggestion": "Ensure consistent use of '3rd' or 'third' throughout the chapter.",
+  "confidence": 0.6,
+  "chapter": "everyday-conversation-text",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

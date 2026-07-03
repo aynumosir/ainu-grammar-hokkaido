@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "195",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Both Manner and Path roles (each 2%)",
+  "issue": "The note claims Manner and Path are each 2%, but the table (line 147) shows Manner at 3% and Path at 2%.",
+  "suggestion": "Change to 'Manner (3%) and Path (2%)' or 'Manner and Path roles (3% and 2% respectively)'.",
+  "confidence": 1,
+  "chapter": "applicative-e",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "276",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹corpus-confirmed›. The two constructions serve different functions",
+  "issue": "The epistemic tag ‹corpus-confirmed› is applied to a claim whose only source is a Discord message (nukopoli, aynu-corpora Discord 2026). This inflates the confidence beyond what the evidence supports.",
+  "suggestion": "Replace ‹corpus-confirmed› with ‹speculative› or add a stronger published source.",
+  "confidence": 0.8,
+  "chapter": "applicative-e",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "cannot be verified against the diachronic record from the read sources",
+  "issue": "The phrase 'from the read sources' is a meta-commentary referring to the author's own reading process, not appropriate for a reference grammar aimed at the reader.",
+  "suggestion": "Rephrase to 'from available sources' or 'from the historical record'.",
+  "confidence": 0.7,
+  "chapter": "applicative-e",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "323",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "the nearest theoretical alternative present in the read literature",
+  "issue": "Similar to line 306, 'the read literature' is a meta-commentary about the author's consulted sources.",
+  "suggestion": "Rephrase to 'the literature' or 'the main theoretical alternative'.",
+  "confidence": 0.6,
+  "chapter": "applicative-e",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "105",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<td lang=\"ain-Kana\">ン</td>",
+  "issue": "The full-size katakana ン (U+30F3) is used for coda /n/, which is correct per the text, but the `lang=\"ain-Kana\"` attribute may be misleading since ン is a shared Japanese-Ainu character without distinct Ainu-specific phonetic value in this context. However, this is likely intentional for consistency. No error, but potential ambiguity in tagging.",
+  "suggestion": null,
+  "confidence": 0.6,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "129",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<td lang=\"ain-Kana\">ウ</td>",
+  "issue": "Full-size ウ is used for coda /w/, which is correct per the text, but the use of `lang=\"ain-Kana\"` on a standard Japanese kana character that is not part of the Ainu-specific extended set may be inconsistent with markup intent. Similar instances occur at line 135 (イ).",
+  "suggestion": "Consider whether `lang=\"ain-Kana\"` should apply only to Ainu-specific kana forms (e.g., small coda kana), or if current usage is intentionally broad.",
+  "confidence": 0.5,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "135",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<td lang=\"ain-Kana\">イ</td>",
+  "issue": "Same issue as line 129: full-size イ used for coda /y/, marked with `lang=\"ain-Kana\"`, which may extend the language tag beyond Ainu-specific orthographic forms.",
+  "suggestion": "See suggestion for line 129.",
+  "confidence": 0.5,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "259",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "The toc-chapter for multi-script rendering and font interoperability is",
+  "issue": "The term \"toc-chapter\" appears to be a pipeline register leak — likely a typo or internal placeholder (e.g., \"TOC chapter\") meant to be replaced with \"see the chapter\" or similar reader-facing phrasing.",
+  "suggestion": "Replace \"toc-chapter\" with \"The chapter on\" or \"See the chapter on\"",
+  "confidence": 0.95,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "271",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"utari1994\" paren />",
+  "issue": "The `paren` attribute in the `<Ref>` tag is non-standard and not defined in the markup specification provided; it may be a pipeline artifact or malformed citation. All other `<Ref>` uses are simple `<Ref k=\"key\" />`.",
+  "suggestion": "Either remove `paren` or convert to standard form; if intended to produce parentheses, the rendering layer should handle it — the source should not include presentation logic.",
+  "confidence": 0.9,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The affricate /c/ and its katakana representation carry an orthographic history.",
+  "issue": "The text discusses /c/ as a phoneme, but the coda table (and Ainu phonotactics) do not include /c/ as a possible coda consonant. While this sentence is in the CV syllabary section, the lack of any mention that /c/ does not occur in coda position creates a potential implication that it might, which contradicts the defined coda inventory in <Xr ch=\"syllable-template\" />.",
+  "suggestion": "Add a clarifying sentence noting that /c/ occurs only in onset position and not in codas.",
+  "confidence": 0.85,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "140",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td><i lang=\"ain-Latn\">h</i></td>",
+  "issue": "Coda /h/ is listed in the table as a standard coda, but the accompanying note (line 143) states its phonemic status is disputed, and line 210 reiterates this dispute. However, the table presents it without qualification, creating a contradiction between presentation and claim.",
+  "suggestion": "Add a footnote or inline marker (e.g., ‹contested›) in the table cell for /h/ to align with the textual assessment.",
+  "confidence": 0.9,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "191",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" />; <Ref k=\"shiraishi2022\" />.",
+  "issue": "Two citations are given in sequence with no conjunction or punctuation between them in the prose, which is syntactically awkward and may indicate a formatting error.",
+  "suggestion": "Insert a conjunction: \"<Ref k=\"nakagawa2024\" /> and <Ref k=\"shiraishi2022\" />.\"",
+  "confidence": 0.95,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "250",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"utari1994\" />; <Ref k=\"ono2022\" />.",
+  "issue": "Same issue as line 191: two consecutive `<Ref>` tags without syntactic connection in the sentence.",
+  "suggestion": "Join with \"and\": \"<Ref k=\"utari1994\" /> and <Ref k=\"ono2022\" />.\"",
+  "confidence": 0.95,
+  "chapter": "katakana-and-small-kana-codas",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

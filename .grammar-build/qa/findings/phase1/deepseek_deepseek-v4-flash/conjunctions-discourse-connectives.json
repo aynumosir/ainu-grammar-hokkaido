@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "224",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "emphatic particle (係助詞 in the kakari-musubi framework, §2.2c of the factbase) with the sense 'こそ/まさに'",
+  "issue": "Reference to internal production tool 'factbase' leaks pipeline language; the published grammar should not mention internal section numbers from a factbase. Also the Japanese gloss in angle quotes is untranslated.",
+  "suggestion": "Replace '§2.2c of the factbase' with a cross-reference to the relevant chapter, e.g., 'see <Xr ch=\"cleft-nominalization-focus\" />'.",
+  "confidence": 0.95,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "226",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "The boundary between the clause-initial emphatic adverb and the emphatic particle is not settled in the read sources",
+  "issue": "'the read sources' is pipeline jargon for 'the sources consulted during writing'; in published text it should be 'available sources' or 'the literature'.",
+  "suggestion": "Rephrase as '... is not settled in the available sources' or '... is not settled in the literature'.",
+  "confidence": 0.8,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "171",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Community discussion corroborates the restriction independently — newa as an explicit 'and'-coordinator is little used in modern Ainu and its distribution is dialectally conditioned (nukopoli, 2023-12-12) ‹corpus-suggested›.",
+  "issue": "Epistemic tag 'corpus-suggested' is applied to a claim supported only by a Discord discussion, not by corpus data. This inflates the evidence level.",
+  "suggestion": "Either change the tag to 'speculative' or remove the tag and let the Discord citation stand as anecdotal evidence.",
+  "confidence": 0.7,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "66",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "The combination of orano with the resumptive form newaanpe (§ below) recurs as a narrative construction",
+  "issue": "'§ below' is imprecise and informal; it would be clearer to specify the section title or use an explicit cross-reference (e.g., 'see section on newaanpe below').",
+  "suggestion": "Replace '§ below' with 'see §newaanpe' or 'see the section on newaanpe below'.",
+  "confidence": 0.6,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

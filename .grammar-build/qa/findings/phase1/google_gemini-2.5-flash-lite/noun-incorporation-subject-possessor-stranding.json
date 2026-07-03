@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "195",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td>nat.-force intr. subject NI</td>\n\t\t\t\t<td>I</td>\n\t\t\t\t<td>6.8</td>\n\t\t\t\t<td>35</td>\n\t\t\t\t<td>zero-place result; no phrasal counterpart</td>",
+  "issue": "The table entry for 'natural-force intransitive subject NI' lists Mithun type 'I', but the text in the previous section (lines 68-70) states that this subtype is distinguished from object incorporation because 'the phrasal counterpart does not exist', which is characteristic of Mithun Type II, not Type I.",
+  "suggestion": "Change 'I' to 'II' for Mithun type, or adjust the prose to align with Type I.",
+  "confidence": 0.9,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<td>possessor-req. intr. subject NI</td>\n\t\t\t\t<td>II</td>\n\t\t\t\t<td>5.6</td>\n\t\t\t\t<td>29</td>\n\t\t\t\t<td>none — possessor promoted to S</td>",
+  "issue": "The table entry for 'possessor-requiring intransitive subject NI' lists Mithun type 'II', but the text in section 109 (lines 116-118) states that this corresponds to Mithun's Type II, which is described as rearranging grammatical relations rather than lexical compounding. This seems consistent, but the prose in section 109 (lines 111-112) states that the incorporated noun requires a possessor and carries its possessive morphology into the verb word, which is characteristic of Mithun Type II. However, the table entry for 'natural-force intransitive subject NI' (line 195) lists Mithun type 'I' but describes a lack of phrasal counterpart, which is characteristic of Type II. There is a potential mismatch in how Mithun types are applied across these subtypes.",
+  "suggestion": "Review the classification of subtypes according to Mithun's types for consistency.",
+  "confidence": 0.8,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "203",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<td>Subject +10, Stranding +15 / +10</td>",
+  "issue": "The 'Stranding' restriction for 'possessor-requiring intransitive subject NI' is listed as '+15 / +10'. However, the text in section 109 (lines 111-115) describes possessor stranding as a key feature of this subtype, and the text in section 163 (lines 161-162) mentions a 'markedness penalty that stranding would otherwise attract'. The positive value for 'Stranding' seems counterintuitive if it's a core feature that is then 'rescued'.",
+  "suggestion": "Clarify the scoring for 'Stranding' or its role in the markedness calculus.",
+  "confidence": 0.7,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "217",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<td>Stranding +15 / +10, Ambiguity +4 / +7</td>",
+  "issue": "The 'Stranding' restriction for 'possessor-requiring object NI' is listed as '+15 / +10'. This is the same penalty as for 'possessor-requiring intransitive subject NI' (line 203). However, the text in section 236-237 states that this subtype is ungrammatical because 'no available rescue reduces the net penalty sufficiently'. If the penalty is the same, the difference in grammaticality must stem from the rescues, which are listed as '-' for object NI and 'Backgrounding −5 / −8, Reflexive −14 / −9' for intransitive subject NI. This seems consistent, but the high penalty for stranding itself might warrant further explanation.",
+  "suggestion": "Ensure the penalties and rescues accurately reflect the described grammaticality differences.",
+  "confidence": 0.7,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "218",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<td>— (no reflexive rescue)</td>",
+  "issue": "The table entry for 'possessor-requiring object NI' states '— (no reflexive rescue)'. However, the text in section 232 states that the 'Reflexive rescue' applies 'only where the stranded possessor is coreferential with the predicate's subject — possible for subject-incorporated body-parts (possessor = experiencer = S) but not for possessed object nouns, because the inflectional possessor i= there makes the noun definite and blocks any reflexive reading'. This implies that the *reason* there is no reflexive rescue for object NI is due to the nature of the possessor marking, which is consistent. However, the table entry could be more explicit about *why* there is no reflexive rescue.",
+  "suggestion": "Consider adding a brief parenthetical explanation to the table entry, e.g., '(due to definite possessor)', to align with the prose explanation.",
+  "confidence": 0.6,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "265",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "‹contested›",
+  "issue": "The evidence grade '‹contested›' is used in prose, but it is typically used for claims that are debated within the field. Here, it seems to be used to indicate a point of theoretical debate between two accounts. While not strictly incorrect, it might be clearer to use a more descriptive phrase if the intent is to highlight an ongoing scholarly discussion rather than a factual dispute.",
+  "suggestion": "Consider rephrasing to 'is debated' or similar, or ensure '‹contested›' is consistently used for such points.",
+  "confidence": 0.5,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "301",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "rir 'wave' is the incorporated former A subject of tursere 'roll/tumble'; the original O (the speaker) now surfaces as S, indexed by =an. The parallel mom=an 'drift' is a separate intransitive clause.",
+  "issue": "The note for example 302 uses 'A' and 'O' to refer to grammatical roles (Agent and Object). While common in linguistic analysis, these are typically capitalized when referring to specific case frames or roles within a particular theory. Here, they are used in a descriptive manner. It might be slightly clearer to use lowercase 'agent' and 'object' or to explicitly state the theoretical framework if these capitalized abbreviations are intended to be technical terms.",
+  "suggestion": "Use lowercase 'agent' and 'object' or clarify the use of capitalized 'A' and 'O'.",
+  "confidence": 0.5,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "348",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> ‹contested›",
+  "issue": "The community-proposed analysis is attributed to a Discord discussion with a specific date, but the evidence grade is '‹contested›'. While community input can be valuable, 'contested' usually implies a debate among established scholars or sources. If the 'contested' status arises solely from this community discussion, it might be more appropriate to use a different grade or to explicitly state that the analysis is 'community-proposed and debated'.",
+  "suggestion": "Clarify the basis for the '‹contested›' grade, or use a different grade if the contestation is not from established scholarly sources.",
+  "confidence": 0.7,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "358",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> ‹contested›",
+  "issue": "Similar to the previous finding, the claim that subject incorporation is structurally distinct from other prefix types is attributed to a Discord discussion and marked as '‹contested›'. If the contestation stems from the community source itself, it might be more accurate to describe it as a 'community proposal' or 'speculative analysis' rather than 'contested' in the scholarly sense, unless there are other sources supporting this contestation.",
+  "suggestion": "Clarify the source and nature of the 'contested' status for this claim.",
+  "confidence": 0.7,
+  "chapter": "noun-incorporation-subject-possessor-stranding",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ }
+]

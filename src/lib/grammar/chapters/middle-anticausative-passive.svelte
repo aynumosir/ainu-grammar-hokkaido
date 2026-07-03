@@ -287,7 +287,7 @@
 		m="seta or wa aynu a=kupapa"
 		g="dog place from person 4.A=bite"
 		tr="A person was bitten by a dog."
-		cite="nakagawa2024:429"
+		cite="nakagawa2024:428"
 		dial="SAR"
 		place="Nakagawa ex. 945″"
 		note="The dog appears in the or wa 'from' demoted-agent phrase; the indefinite transitive prefix a= occupies the A slot; the patient aynu 'person' remains the grammatical object."

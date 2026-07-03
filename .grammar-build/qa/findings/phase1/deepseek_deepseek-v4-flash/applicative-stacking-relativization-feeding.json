@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "19-22",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "‹original-needs-review›. This synthesis — grounded in the convergent evidence of Shibatani (1990), Nakagawa (2024), Kaiser (1998), and Dal Corso (2020) on the promotion logic — is offered as a factbase-licensed proposal for editorial review.",
+  "issue": "Pipeline-register language addressed to editorial process rather than the reader; tags and phrases like 'factbase-licensed proposal for editorial review' and 'original-needs-review' are meta-commentary inappropriate for a published reference grammar.",
+  "suggestion": "Remove the tag and rewrite the sentence as a declarative summary of the analysis, e.g. 'This synthesis — grounded in the convergent evidence … on the promotion logic — accounts for both feeding relations.'",
+  "confidence": 0.95,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "45-46",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Bugaeva and Kobayashi report no visible semantic difference between the two orders; in both, e- contributes a Content or Instrument object and ko- an Addressee or Goal <Ref k=\"bugaevakobayashi2022\" p=\"§4.1.1\" /> ‹contested›.",
+  "issue": "The claim is attributed to Bugaeva/Kobayashi and then immediately marked as 'contested', but no source for the contestation is provided. The citation given (bugaevakobayashi2022) is the same source that makes the claim, so it cannot also be the source of contestation.",
+  "suggestion": "Either remove the tag or add a citation to a conflicting source (e.g. an alternative analysis). If the contestation comes from the following sentence about Nakagawa, rephrase to make that clear and move the tag accordingly.",
+  "confidence": 0.85,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "270-272",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "The synthesis that a single structural promotion underlies both the NI-feeding and the relativization-feeding paths is a factbase-licensed proposal for the licensed theory-magnet domain of applicatives ‹original-needs-review›.",
+  "issue": "Pipeline-register language: 'factbase-licensed proposal', 'licensed theory-magnet domain', and the editorial tag 'original-needs-review' are addressed to the production process, not to the reader.",
+  "suggestion": "Remove the tag and rewrite as a straightforward statement: 'This analysis implies that a single structural promotion underlies both the NI-feeding and the relativization-feeding paths.'",
+  "confidence": 0.9,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "324",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "has not been investigated in the read sources",
+  "issue": "The phrase 'read sources' refers to sources consulted by the author, not by the reader; this is a pipeline term that should be replaced with language appropriate for a published reference.",
+  "suggestion": "Change to 'has not been investigated in the available literature' or 'has not been reported in published sources'.",
+  "confidence": 0.8,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13, 331",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Line 13: satoni2022; Line 331: sato2023b",
+  "issue": "Inconsistent spelling of author name: 'satoni2022' (line 13) vs 'sato2023b' (line 331). If these refer to the same author (possibly Satō), the spelling should be unified and the key should be consistent (e.g. sato2022, sato2023b). If they are different authors, 'Satoni' is likely a misspelling (expected: 'Sato' or 'Satō').",
+  "suggestion": "Correct to a single spelling (e.g. 'sato2022' and 'sato2023b') or verify that 'Satoni' is a distinct surname; if so, ensure the formatting is correct.",
+  "confidence": 0.75,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145-147",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "pira ko-hokuste (col. 2) vs pira-ko-hokus-te (col. 3)",
+  "issue": "Hyphenation inconsistency: the verb 'hokuste' appears without hyphens in the first two columns but is broken as 'hokus-te' in the third column (incorporated form). While morphological decomposition may motivate the hyphen, the difference in presentation could confuse readers. All three columns of a derivation table should use consistent hyphenation conventions.",
+  "suggestion": "Either hyphenate 'hokuste' consistently throughout the table (e.g. 'hokus-te' in all columns) or remove the hyphen in the third column (e.g. 'pira-ko-hokuste') if the break is not morphologically required.",
+  "confidence": 0.6,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "300-302",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Shibatani identifies the applicativization of intransitive bases in Ainu as a direct refutation: Baker's Case-theory predicts this should be impossible, yet it is productive in Hokkaido Ainu <Ref k=\"shibatani1988\" p=\"210–211\" />; <Ref k=\"shibatani1990\" p=\"65–66\" /> ‹contested›.",
+  "issue": "The refutation claim is attributed to Shibatani (supported by citations) but then marked as 'contested' without any source for the contestation. The tag implies that the refutation is not universally accepted, but no conflicting analysis or author is cited.",
+  "suggestion": "Either remove the tag or add a citation to a source that contests Shibatani's argument (e.g. a defense of Baker's approach or an alternative analysis).",
+  "confidence": 0.75,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "271",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "the licensed theory-magnet domain of applicatives",
+  "issue": "The phrase 'theory-magnet domain' is opaque jargon; 'licensed' is redundant with the previous 'licensed proposal'. The intended meaning is unclear (maybe 'theory-neutral' or 'theory-internal'?).",
+  "suggestion": "Consider replacing with clearer phrasing, e.g. 'the domain of applicative theory' or 'the domain of applicative research'.",
+  "confidence": 0.5,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

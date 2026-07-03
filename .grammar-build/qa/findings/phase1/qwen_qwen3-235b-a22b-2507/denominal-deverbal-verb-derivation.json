@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "111",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"sirpirka\" gl=\"be fine weather\" /> (&lt; <A w=\"sir\" gl=\"surroundings, weather\" /> + <A w=\"pirka\" gl=\"be good\" />)",
+  "issue": "The gloss for 'sirpirka' is 'be fine weather', but the component glosses 'surroundings, weather' and 'be good' do not clearly combine to yield that meaning. The compound meaning is not transparent from the parts, and no literal translation or compositional note is provided to bridge the gap.",
+  "suggestion": "Add a literal translation or compositional note, e.g., \"lit: surroundings be good → be fine weather\".",
+  "confidence": 0.85,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "174-180",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "me-an cuk ne pe me-rayke=an ka somo ki no",
+  "issue": "The morpheme 'cuk' is not glossed in the 'g' line, but appears in the 'm' line. This is a missing gloss for a visible morpheme.",
+  "suggestion": "Add a gloss for 'cuk', e.g., 'autumn', to align with the free translation.",
+  "confidence": 0.95,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "207-213",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "okkayo ku=ne",
+  "issue": "The gloss '1SG.A=COP' for 'ku=ne' assigns an A (agent) role, but in a copular construction with a subject and predicate nominal, the subject is not an agent. The gloss should reflect a subject (S) or topic role, not A.",
+  "suggestion": "Revise gloss to '1SG.S=COP' or '1SG.NOM=COP' to avoid implying agentivity.",
+  "confidence": 0.9,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "343-388",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">ikka</i></td>\n\t\t\t\t\t<td><i lang=\"ain-Latn\">eikka</i></td>",
+  "issue": "Inconsistency in hyphenation: 'eikka' appears without a hyphen, but in other contexts, prefixes like 'e-' are often separated. While not necessarily incorrect, it contrasts with the treatment of other prefixed forms like 'ko-ruska' (l. 474). Check for consistency in prefix marking across the chapter.",
+  "suggestion": "Verify whether 'eikka' should be segmented as 'e-ikka' for consistency with other prefixed forms.",
+  "confidence": 0.7,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "400-407",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "inkar=an akus e=an ru-we a=nukar",
+  "issue": "The gloss '2SG.S=exist' for 'e=an' does not match the morpheme 'e=an' in the 'm' line. 'e=an' is a first-person singular subject form, not second-person. The free translation 'I saw' confirms this. The gloss is incorrect.",
+  "suggestion": "Correct gloss to '1SG.S=exist' or '1SG.S=be.there'.",
+  "confidence": 0.95,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "463-470",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "upas tum a=oma wa karkarse=an",
+  "issue": "The gloss '4.A=enter' for 'a=oma' assigns an A (agent) role, but 'oma' is a locative-object verb with a single external argument (the entity entering), which should be S (subject), not A. The person indexing should reflect intransitive subject marking, not transitive A.",
+  "suggestion": "Revise gloss to '4.S=enter' or '4.S=be.in' to reflect intransitive status.",
+  "confidence": 0.85,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "509-515",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cite=\"ijas2023\"",
+  "issue": "The citation 'ijas2023' is used without page numbers for a constructed example. Since the example is pedagogical and not corpus-attested, the citation should clarify the source location (e.g., lesson number) rather than just the author and year.",
+  "suggestion": "Add lesson or section locator, e.g., 'ijas2023:L3'.",
+  "confidence": 0.8,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "152-153",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">me-an</i></td>\n\t\t\t\t\t<td><i lang=\"ain-Latn\">me-rayke</i></td>",
+  "issue": "Inconsistency in hyphenation: 'me-an' uses a hyphen, but 'mean' is written as one word in line 112. Either 'me-an' should be 'mean' or 'me-rayke' should be 'me-rayke' consistently with hyphenation for morpheme boundaries.",
+  "suggestion": "Standardize to either fully hyphenated (me-an, me-rayke) or unhyphenated (mean, merayke) based on chapter convention.",
+  "confidence": 0.9,
+  "chapter": "denominal-deverbal-verb-derivation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -488,7 +488,7 @@
 		m="hetak pusu wa inkar"
 		g="come.on dig CONJ look"
 		tr="Come on, dig it up and look!"
-		cite="nakagawa2024:421"
+		cite="nakagawa2024:422"
 		dial="CHI"
 		place="Nakagawa ex. 911"
 		note="The singular imperative is a chain of bare verbs; no second-person subject prefix appears."

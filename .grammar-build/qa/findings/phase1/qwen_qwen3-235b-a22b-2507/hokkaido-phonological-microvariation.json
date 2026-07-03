@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "95-102",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"ipérekut\" g=\"spatula\" tr=\"wooden spatula\" constructed dial=\"SAR\" note=\"Standard accent type: open σ1 forces accent to σ2. Accent mark (´) marks the onset of the high-pitch domain. Comparative form from Nakagawa & Fukazawa 2022 §3.1.\" />",
+  "issue": "The gloss `g=\"spatula\"` does not match the free translation `tr=\"wooden spatula\"`, which includes the modifier \"wooden\" absent in the gloss. This creates a mismatch between the interlinear gloss and the translation.",
+  "suggestion": "Update the gloss to reflect the full meaning, e.g., `g=\"wooden-spatula\"` or adjust the translation to `\"spatula\"` if that is the intended meaning.",
+  "confidence": 0.95,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "103-110",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"iperékut\" g=\"spatula\" tr=\"wooden spatula\" constructed dial=\"YAK\" note=\"Irregular accent type: open σ1 and σ2 force accent to σ3. Same lexeme as the Saru form, differing only in accent position. Data from Nakagawa & Fukazawa 2022 §3.1.\" />",
+  "issue": "Same issue as above: gloss `g=\"spatula\"` fails to account for \"wooden\" in the free translation `tr=\"wooden spatula\"`, creating a consistent mismatch across both examples in this contrast.",
+  "suggestion": "Revise gloss to `g=\"wooden-spatula\"` or adjust translation to `\"spatula\"` for consistency with the gloss.",
+  "confidence": 0.95,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "113",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Saru <i lang=\"ain-Latn\">hopúni</i> 'fly' vs Yakumo <i lang=\"ain-Latn\">hopuní</i>",
+  "issue": "Inconsistent placement of the acute accent: in `hopúni`, the accent is on the second syllable (ú), while in `hopuní`, it is on the final syllable (í). This is correct phonologically, but the orthographic representation should be checked for consistency in macron or accent marking across the chapter. However, since no macrons are used elsewhere, and only acute accents for pitch, this may be acceptable. But the lack of diacritics in other examples (e.g., `ipérekut`) raises concerns about consistency.",
+  "suggestion": "Ensure consistent use of acute accents to mark pitch across all cited forms, or clarify that accent marking is only used where contrastive.",
+  "confidence": 0.8,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "58",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Yakumo, Oshamambe",
+  "issue": "The table under 'Pitch-accent microvariation' lists only Yakumo and Oshamambe as 'Irregular' type, but the text in section 'The Yakumo–Oshamambe irregular type' treats them as the only two, which is consistent. However, in the isogloss table at the end (line 597), 'standard' accent is listed for Saru, Chitose, Horobetsu, Obihiro, Sōya — but Obihiro is listed in the unaccented group in the earlier table (line 63), creating a contradiction.",
+  "suggestion": "Check whether Obihiro is unaccented (as per line 63) or standard-accented (as per line 598). The two tables must align. Currently, Obihiro appears in both unaccented and standard groups, which is contradictory.",
+  "confidence": 0.9,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "63",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Shizunai, Urakawa, Samani, Bihoro, Kushiro, Shiranuka",
+  "issue": "This list includes Bihoro, Kushiro, and Samani as unaccented. However, in the isogloss table (line 599), Bihoro and Kushiro are listed under 'unaccented', but Obihiro is listed under 'standard' accent, while in the earlier table (line 63), Obihiro is in the unaccented group. This contradicts the later classification in line 599, where Obihiro is listed under 'standard'.",
+  "suggestion": "Reconcile the classification of Obihiro: either it is unaccented (and should not be in the standard list in line 598) or it is standard (and should not be in the unaccented list in line 63).",
+  "confidence": 0.95,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "598",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "standard (σ1-open→σ2 high) — Saru, Chitose, Horobetsu, Obihiro, Sōya",
+  "issue": "Obihiro is listed here as having 'standard' accent, but in the earlier table (line 63), it is listed among unaccented dialects. This is a direct contradiction in the classification of Obihiro.",
+  "suggestion": "Revise one of the tables to reflect a consistent classification of Obihiro. Given that the earlier table (line 51–66) is more detailed and specific to pitch, it should take precedence unless contradicted by a citation.",
+  "confidence": 0.95,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "605",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "elided before accented σ2 — Obihiro, Kushiro, Bihoro, Asahikawa, Nayoro",
+  "issue": "This lists Obihiro, Kushiro, and Bihoro as having h-elision. But earlier in the section 'Word-initial h-elision' (line 147), the eliding dialects are listed as Obihiro, Kushiro, Bihoro, Asahikawa, and Nayoro — consistent. However, if Obihiro is unaccented (per line 63), the condition 'when the accent falls on σ2' (line 148) cannot apply, since unaccented dialects lack lexical pitch. This creates a logical contradiction: h-elision is conditioned by accent placement, yet applies in unaccented dialects.",
+  "suggestion": "Revise the conditioning environment for h-elision to not rely on accent placement if it occurs in unaccented dialects, or clarify that the rule applies historically or by analogy.",
+  "confidence": 0.85,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "367",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "-iw and -uy",
+  "issue": "The use of hyphenation varies: sometimes written with hyphens (`-iw`, `-uy`), sometimes without (`siwnin`, `suynin`). While this may reflect morpheme boundaries, consistency in orthographic presentation should be maintained. The chapter uses both forms interchangeably without explanation.",
+  "suggestion": "Standardize the use of hyphens in morpheme notation, especially when discussing alternations like `-iw` vs `-uy`.",
+  "confidence": 0.7,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "667",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Krasheninnikov (1738) and Golovnin (1811) ‹KU› both record <i lang=\"ain-Latn\">car</i>",
+  "issue": "The sources Krasheninnikov (1738) and Golovnin (1811) are cited in prose without a `<Ref />` tag, while other citations are formalized. This is inconsistent citation practice and omits verifiable references for these claims.",
+  "suggestion": "Add proper `<Ref k=\"...\" />` entries for Krasheninnikov and Golovnin, or integrate them into an existing source like `<Ref k=\"hattorichiri1960\" />` if appropriate.",
+  "confidence": 0.9,
+  "chapter": "hokkaido-phonological-microvariation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

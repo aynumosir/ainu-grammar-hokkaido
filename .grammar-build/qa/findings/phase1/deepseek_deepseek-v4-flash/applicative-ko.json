@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "174-176, 185",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the verb returns to intransitive arity (line 175) ... each incorporated form is transitive (4.A prefix a=), confirming the arity increase from the intransitive base tata (line 185).",
+  "issue": "The prose claims that incorporation of the comitative applied object returns the verb to intransitive arity, but the note on the accompanying example states the incorporated form is transitive (derived from intransitive base). These two statements directly contradict one another.",
+  "suggestion": "Correct the prose: 'the verb remains transitive (the incorporated applied object does not reduce arity)' or revise the note to match the prose if the note is wrong. The pattern described in the note (transitive output) aligns with the typical effect of incorporation on comitative applied objects.",
+  "confidence": 0.9,
+  "chapter": "applicative-ko",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "294-295",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the transitive base (64%) predominates",
+  "issue": "The text cites 64% as the proportion of transitive bases for the Source role, but Table 1 (line 98) and an earlier prose passage (line 120) both give 66% for this category. The number is inconsistent within the chapter.",
+  "suggestion": "Change '64%' to '66%' to match the table and earlier statement.",
+  "confidence": 1,
+  "chapter": "applicative-ko",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "228",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "the opening kohopuni example",
+  "issue": "The compound verb is written as 'kohopuni' (no hyphen) in the prose, whereas elsewhere in the chapter (e.g., line 31, 130) the same form appears as 'ko-hopuni' with a hyphen. Inconsistent hyphenation within the same chapter.",
+  "suggestion": "Write as 'ko-hopuni' for consistency, matching the example and the usual convention for prefixed verbs.",
+  "confidence": 0.7,
+  "chapter": "applicative-ko",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "321, 329, 339, 351",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord 2023-12-14) ‹contested› … <Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2023-12-14) ‹contested› … (nukopoli, aynu-corpora Discord, 2024-11-11) ‹speculative› … (nukopoli, citing Satō, aynu-corpora Discord, 2024-12-05) ‹contested›",
+  "issue": "Discord-based sources are cited in an inconsistent format: sometimes plain inline text, sometimes a <Ref> tag with inline name/date. This diverges from the book's use of <Ref> for all other sources and may confuse readers and the rendering pipeline.",
+  "suggestion": "Standardise Discord citations: either always use inline text (e.g., '(nukopoli, aynu-corpora Discord YYYY-MM-DD)') or always wrap the source in a <Ref> that expands to the full bibliographic entry. The current mixture is a formatting drift.",
+  "confidence": 0.8,
+  "chapter": "applicative-ko",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

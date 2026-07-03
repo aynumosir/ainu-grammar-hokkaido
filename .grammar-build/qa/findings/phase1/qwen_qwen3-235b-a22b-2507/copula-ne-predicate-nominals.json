@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "28",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The distribution is determined by argument structure: ne is required when and only when the predicate is a nominal <Ref k=\"sato2008\" p=\"20–21\" />; <Ref k=\"refsing1986\" p=\"145\" />.",
+  "issue": "Two citations are attached to a single claim, but the second citation (refsing1986:145) does not support the full 'when and only when' biconditional. Refsing 1986:145 states that ne requires a nominal complement, but does not explicitly state that nominals require ne — the reverse direction is not confirmed by this source.",
+  "suggestion": "Separate the claims or provide independent support for the reverse implication.",
+  "confidence": 0.85,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "74",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "‹contested›",
+  "issue": "The epistemic tag ‹contested› is visible in the prose. These tags are meant to be metadata, not part of the rendered text.",
+  "suggestion": "Remove visible ‹contested› from the text; ensure it is only used as metadata.",
+  "confidence": 0.95,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "155",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "‹original-needs-review›",
+  "issue": "The editorial tag ‹original-needs-review› is exposed in the main text. This is a pipeline register leak and should not appear in the final prose.",
+  "suggestion": "Remove ‹original-needs-review› from the visible text; retain only as metadata if needed.",
+  "confidence": 0.98,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "194",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "‹original-needs-review›",
+  "issue": "The editorial tag ‹original-needs-review› appears again in the prose, indicating a failure to filter internal review markers before publication.",
+  "suggestion": "Remove the tag from the text.",
+  "confidence": 0.98,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "279",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "aynu-corpora Discord",
+  "issue": "Inconsistent capitalization of 'Discord' — earlier it is 'aynu-corpora Discord', later 'aynu-corpora discord'. Should be standardized.",
+  "suggestion": "Use consistent casing, e.g., 'aynu-corpora Discord' throughout.",
+  "confidence": 0.75,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "357",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "aynu-corpora Discord, 2023-12-25",
+  "issue": "Inconsistent punctuation around the date: one instance has comma before date, another does not (e.g., line 279: 'Discord 2024-11-13').",
+  "suggestion": "Standardize format: either 'Discord, YYYY-MM-DD' or 'Discord YYYY-MM-DD'.",
+  "confidence": 0.8,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "405",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"Ainu 1SG.A=COP track-POSS COP\"",
+  "issue": "The gloss includes 'track-POSS' for 'ru-we', but the free translation does not reflect possession. The example translates as 'I am an Ainu', not something involving 'track' or possession. The glossed element 'ruwe' (from ru 'track') is a formal noun here, but the translation does not make that evident.",
+  "suggestion": "Revise tr to reflect the full structure, e.g., 'I am an Ainu, as per my lineage/track' or add a literal translation to clarify.",
+  "confidence": 0.85,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "123",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "3 (zero)",
+  "issue": "Inconsistent labeling: other rows use person terms (1SG, 2SG), but this uses '3 (zero)'. Should be '3SG' or '3' consistently.",
+  "suggestion": "Use '3SG' for consistency with '1SG', '2SG'.",
+  "confidence": 0.9,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "130",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "atuy kor kamuy a=ne",
+  "issue": "The example includes 'atuy kor kamuy' glossed as 'he is the sea-god', but the gloss in the table only shows 'a=' for 'he'. The complement 'atuy kor kamuy' ('great sea god') is not fully represented in the gloss or analysis.",
+  "suggestion": "Ensure full complement is reflected in gloss or example description.",
+  "confidence": 0.7,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "452",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "labels oray a \"plural suppletive copula form\"",
+  "issue": "The text states that oray is unattested as a copula in the Hokkaido corpus (line 454), yet Shibatani explicitly labels it a copula form. This creates a contradiction between the claim and the cited source.",
+  "suggestion": "Clarify that Shibatani's analysis contradicts corpus evidence, rather than presenting it as a simple mislabeling.",
+  "confidence": 0.9,
+  "chapter": "copula-ne-predicate-nominals",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "120",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ar suy</i> → [assuy]",
+  "issue": "The example shows [assuy] as the surface form, but the gloss in the table (line 122) is 'once more', which does not align with the morpheme breakdown. The form <i lang=\"ain-Latn\">ar</i> means 'once' and <i lang=\"ain-Latn\">suy</i> means 'again', so the free translation should reflect 'again' or 'once again' rather than 'once more' if consistency with standard glossing is intended.",
+  "suggestion": "Change 'once more' to 'again' or 'once again' for consistency with morpheme meanings.",
+  "confidence": 0.9,
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "130",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">ku=kor yupi</i> → <i lang=\"ain-Latn\">kukoy yupi</i>",
+  "issue": "The output form <i lang=\"ain-Latn\">kukoy yupi</i> shows /y/ as the result of /r/+/y/ → [yy], but the romanization writes it as 'yupi' rather than 'yyupi' or 'yupi' with geminate indication. This is inconsistent with other geminate outputs like [tt], [ss], [nn], which are explicitly doubled in orthography.",
+  "suggestion": "Consider writing the surface form as <i lang=\"ain-Latn\">kukoyyupi</i> or note the gemination explicitly to maintain consistency with other geminate representations.",
+  "confidence": 0.75,
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "353",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "[poy seta]",
+  "issue": "The table entry for /n/ + /s/ lists the surface as [js] → ys, but the example writes [poy seta], which suggests [j] is realized as [y] and merged with the following /s/ into a single [y] onset, not a geminate. However, the description states that [js] behaves as a geminate and is written as <em>y</em> in <i lang=\"ain-Latn\">poy seta</i>, implying a single [y]. This contradicts the claim that it surfaces as [js] → ys (implying a geminate or affricate-like sequence).",
+  "suggestion": "Revise either the surface form to [pojs seta] or clarify that [js] simplifies to [j] (written as y) before /s/, not geminating.",
+  "confidence": 0.95,
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "369",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "[poy yuk]",
+  "issue": "Parallel to the /n/+/s/ case, the /n/+/y/ example shows [poy yuk], but the rule states /n/ → [j] / _{s, y}, yielding [jj] → yy. The output [poy yuk] suggests only a single [j] glide, not a geminate [jj]. This contradicts the table's claim of [jj] → yy.",
+  "suggestion": "Either change the surface form to [poyyuk] or revise the rule to state that /n/ → [j] results in a single [j], not gemination.",
+  "confidence": 0.95,
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "385",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "[yayaw wakka]",
+  "issue": "The rule for /n/ + /w/ is /n/ → ∅ / _w, so the surface should be [yayawakka] (with no geminate). However, the example shows [yayaw wakka], which implies a geminate [w] or at least a lengthened onset. This contradicts the deletion rule.",
+  "suggestion": "Revise the surface form to [yayawakka] or clarify that /n/ deletion before /w/ does not trigger gemination.",
+  "confidence": 0.85,
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "462",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "t+i → ci",
+  "issue": "The rule is written as 't+i → ci' without proper formatting or explanation. It should be formatted consistently with other rules (e.g., /t/ + /i/ → [ci]) and explained as an assimilation or affrication rule.",
+  "suggestion": "Reformat as: /t/ + /i/ → [ci] (affrication at morpheme boundary).",
+  "confidence": 0.9,
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "463",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "mat-ikor → macikor",
+  "issue": "The example shows mat-ikor → macikor, but this involves both /t/+/i/ → [c] and /k/ assimilation. However, the rule is described as applying without exception, yet earlier sections do not mention this rule, and it contradicts the absence of /t/+/i/ → [c] in the main rule inventory. This rule belongs in a different chapter (<Xr ch=\"rhotic-r\" />), but its presentation here as an exceptionless sandhi rule conflicts with the chapter’s focus on /r/ and /n/ coda processes.",
+  "suggestion": "Move full discussion to the referenced chapter and only cite it briefly here without claiming it as part of the current sandhi system.",
+  "confidence": 0.95,
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "630",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "/n/-sandhi before /s/, /y/",
+  "issue": "The rule is listed as /n/ → [j] / _{s, y}, but in the table above (line 334), it is stated as /n/ → [j] / _{s, y}; [j] then combines with the following continuant to form a geminate. However, the surface forms in examples (e.g., [poy seta]) do not reflect gemination, contradicting the claim.",
+  "suggestion": "Revise the rule statement to clarify that [j] + /s/ or /y/ results in a single palatal glide or affricate, not gemination.",
+  "confidence": 0.85,
+  "chapter": "coda-r-assimilation-sonorant-sandhi",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

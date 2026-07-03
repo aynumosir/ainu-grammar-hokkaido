@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "64",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "=</code></td>",
+  "issue": "The table uses uppercase 'HK' in the dialect tag list (line 164) but lowercase 'hk' in the prose (line 148), creating inconsistency in tag formatting.",
+  "suggestion": "Standardize the dialect tag to either all uppercase or lowercase; currently, 'HK' appears in the table but 'hk' in the text.",
+  "confidence": 0.95,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "164",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<tr><td>HK</td><td>Hokkaido (variety not further specified)</td></tr>",
+  "issue": "Dialect tag 'HK' is uppercase in the table, while the prose uses lowercase 'hk' (line 148), violating orthographic consistency within the chapter.",
+  "suggestion": "Change 'HK' to 'hk' in the table to match the lowercase convention used in the text.",
+  "confidence": 0.95,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "87",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "‹contested›",
+  "issue": "The evidence-grade label ‹contested› is placed in the prose but is not enclosed in guillemets as required by the style defined in section 'Evidence-grade labels' (line 223).",
+  "suggestion": "Wrap the label in guillemets: ‹contested›.",
+  "confidence": 0.9,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "237",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<td><em>consensus</em></td>",
+  "issue": "The table uses italics for evidence grades (e.g., <em>consensus</em>), but the surrounding text describes the labels as being in guillemets. This creates a formatting mismatch between the description and presentation.",
+  "suggestion": "Use guillemets in the table: <td>‹consensus›</td>.",
+  "confidence": 0.85,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "241",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<td><em>contested</em></td>",
+  "issue": "Same as line 237: the use of italics instead of guillemets for evidence grades in the table contradicts the stated formatting convention.",
+  "suggestion": "Change to ‹contested› using guillemets.",
+  "confidence": 0.85,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "245",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<td><em>corpus-confirmed</em></td>",
+  "issue": "Evidence grade is italicized instead of being enclosed in guillemets as per the chapter's own rules.",
+  "suggestion": "Replace with ‹corpus-confirmed›.",
+  "confidence": 0.85,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "249",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<td><em>corpus-suggested</em></td>",
+  "issue": "Inconsistent formatting: evidence grades should be in guillemets, not italics.",
+  "suggestion": "Use ‹corpus-suggested›.",
+  "confidence": 0.85,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "253",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<td><em>speculative</em></td>",
+  "issue": "Evidence grade formatted in italics instead of guillemets, violating internal consistency.",
+  "suggestion": "Change to ‹speculative›.",
+  "confidence": 0.85,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "257",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<td><em>original-needs-review</em></td>",
+  "issue": "Evidence grade is italicized rather than enclosed in guillemets as specified.",
+  "suggestion": "Use ‹original-needs-review›.",
+  "confidence": 0.85,
+  "chapter": "glossing-abbreviations-and-citation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

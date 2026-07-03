@@ -298,7 +298,7 @@
 		m="usey ku=ku wa keraan hum-i"
 		g="tea 1SG.A=drink CONJ be.delicious sound-POSS"
 		tr="I drank tea — how delicious!"
-		cite="nakagawa2024:395"
+		cite="nakagawa2024:396"
 		dial="CHI"
 		place="Nakagawa ex. 793, Chitose"
 		note="The bare formal noun humi functions as an exclamative main clause, without the copula ne. The gustatory evaluation triggers the non-visual sensory evidential; the insubordinated frame conveys immediate spontaneous reaction."

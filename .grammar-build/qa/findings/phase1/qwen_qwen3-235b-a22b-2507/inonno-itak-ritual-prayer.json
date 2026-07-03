@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "80",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The corpus of 209,878 sentences returns <A w=\"kamuynomi\" /> 405 times (rank 405) and <A w=\"inonno\" /> 203 times (rank 675)",
+  "issue": "The term <A w=\"inonno\" /> is used, but the full phrase in the glossary entry is <A w=\"inonno itak\" />; counting only 'inonno' may conflate the prayer word with other uses of the word 'inonno' (e.g. as a standalone noun), leading to misleading frequency data.",
+  "suggestion": "Use <A w=\"inonno itak\" /> in the frequency count or clarify that the count is for the word 'inonno' regardless of collocation.",
+  "confidence": 0.9,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "118",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"Asirpanomi\" gl=\"New Year's prayer\" />",
+  "issue": "Inconsistent macron usage: 'Asirpanomi' lacks macrons, while standard romanization would likely include them (e.g., Ashirpa-nomi, with long vowels). Other forms like 'Cinomisirkamuynomi' and 'Asircepnomi' also lack macrons, suggesting a drift in orthographic consistency.",
+  "suggestion": "Standardize macron usage across all loanwords and proper nouns, e.g., Ashirpa-nomi, Cino-misir-kamuynomi, etc., per standard Ainu romanization.",
+  "confidence": 0.7,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "219",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"god woman house-POSS now TOP 4.A=APPL-arrive FIN\"",
+  "issue": "The gloss 'APPL' in '4.A=APPL-arrive' does not align with the morpheme breakdown in the m-line 'a=ko-sirepa'. 'ko-' is the goal applicative, but 'APPL' is too vague and does not specify which applicative (goal, path, etc.) is used.",
+  "suggestion": "Replace 'APPL' with 'GOAL' to match the specific applicative prefix 'ko-', so the gloss becomes '4.A=GOAL-arrive'.",
+  "confidence": 0.95,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "326",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"truly be.grateful heart 1SG.A=have CONJ 1SG.A=worship track-POSS DEM.PROX FIN\"",
+  "issue": "The gloss 'track-POSS' for 'ru-we' does not match the morphemic segmentation 'ruwe' in the m-line. The hyphen suggests a clitic or affix, but 'ruwe' is a single word. Also, 'ruwe' is glossed as 'track, fact' elsewhere, so 'track-POSS' misrepresents its structure.",
+  "suggestion": "Change 'ru-we' to 'ruwe' in the m-line or adjust the gloss to 'fact-POSS' without a hyphen, and ensure alignment.",
+  "confidence": 0.9,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "328",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "ain=\"sonno yayrayke kewtum ku=kor wa ku=onkamuy ruwe tapan na\"",
+  "issue": "The form 'onkamuy' in the ain attribute has a final -y not present in the normalized morphemic line 'ku=onkami'. This creates orthographic inconsistency within the same example.",
+  "suggestion": "Either normalize both lines to 'onkami' or annotate the dialectal variation more clearly in the note (e.g., 'final -y reflects Samani phonology').",
+  "confidence": 0.85,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "351",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"arki=an\" gl=\"come.PL=4.S\" />",
+  "issue": "The gloss '4.S' suggests fourth person singular, but 'arki=an' is a plural form ('we come'). The person-number gloss is inconsistent with the verb form.",
+  "suggestion": "Correct the gloss to '4.PL' to match 'arki=an' as a plural verb form.",
+  "confidence": 0.9,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "286",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<A w=\"i-resu-\" gl=\"raise me; my raiser\" /> = 1.O-raise = 'the one who raised me'",
+  "issue": "The explanation mixes gloss and analysis: '= 1.O-raise =' is informal and reads like pipeline commentary rather than prose.",
+  "suggestion": "Rephrase as: '(from 1.O-raise, \"the one who raised me\")'.",
+  "confidence": 0.8,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "176",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">k=e-ko-onkami</i>",
+  "issue": "The text transcribes the form as 'k=e-ko-onkami', but this suggests a clitic '=' after 'k', while the morphological structure is prefixal stacking 'e-ko-'. The '=' should not appear between the reduced 'ku-' and the applicative prefixes.",
+  "suggestion": "Write as 'keko-onkami' or 'k=e-ko-onkami' only if '=' marks a boundary, but clarify that it is not a clitic. Better: 'k-e-ko-onkami' with hyphens between prefixes.",
+  "confidence": 0.85,
+  "chapter": "inonno-itak-ritual-prayer",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

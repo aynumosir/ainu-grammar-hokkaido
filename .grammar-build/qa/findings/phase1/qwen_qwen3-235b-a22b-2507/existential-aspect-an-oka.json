@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "9",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">oka</i> / <i lang=\"ain-Latn\">okay</i>",
+  "issue": "Inconsistent orthographic representation of the plural existential: both 'oka' and 'okay' are given, but the text does not consistently use one form. Later in the chapter, 'oka' is used in examples (e.g., line 125), but 'okay' appears in parentheses as a phonological variant.",
+  "suggestion": "Choose one primary form (preferably 'oka') and note the allomorph 'okay' in parentheses once, then use consistently.",
+  "confidence": 0.95,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "75",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">V kor an</i> (plural: <i lang=\"ain-Latn\">V kor oka</i>)",
+  "issue": "The plural form is written as 'oka', but earlier in the chapter (line 9) the variant 'okay' is noted. This creates orthographic drift within the chapter.",
+  "suggestion": "Use 'oka/okay' or specify that 'oka' surfaces as 'okay' in certain environments, and maintain consistent citation of the plural form in constructions.",
+  "confidence": 0.9,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "125",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "uenewsar pa kor oka",
+  "issue": "The gloss 'chat PL while exist.PL' does not align with the morpheme segmentation: 'oka' is the plural existential, but the gloss 'exist.PL' does not reflect the morpheme-by-morpheme segmentation expected in Leipzig format. The gloss should break down 'oka' as 'exist.PL' or 'oka' as a single unit.",
+  "suggestion": "Revise gloss to 'chat PL while oka' or split 'oka' into 'exist.PL' if analyzing it as compositional.",
+  "confidence": 0.85,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "183",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ek wa an pe hoppa kor",
+  "issue": "The gloss 'come CONJ exist NMLZ send.away CONJ' does not match the morpheme segmentation: 'wa' is glossed as 'CONJ', but in context it is the sequential particle 'and then', not a general conjunction. 'pe' is glossed as 'NMLZ', but should be 'nominalizer' or 'relativizer' for clarity.",
+  "suggestion": "Change 'CONJ' to 'SEQ' for 'wa' and 'NMLZ' to 'NMLZ.rel' or 'REL' for 'pe'.",
+  "confidence": 0.9,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "280",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<th>controller of <i lang=\"ain-Latn\">an</i></th>",
+  "issue": "The table header uses 'an' but the plural form 'oka' is also relevant. The heading should reflect that the existential verb varies by number.",
+  "suggestion": "Change to 'controller of <i lang=\"ain-Latn\">an</i>/<i lang=\"ain-Latn\">oka</i>'",
+  "confidence": 0.8,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "294",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">hotke=an wa an=an</i>",
+  "issue": "The form 'an=an' appears, but the first 'an' is the verb stem and the second '=an' is the person suffix. This could be clearer with hyphenation or morpheme separation.",
+  "suggestion": "Write as 'an=an' → 'an=an' (correct as is), but ensure consistency in other examples. No change needed if intentional.",
+  "confidence": 0.7,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "301",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">a=ehotke wa an=an</i>",
+  "issue": "The form 'an=an' appears again, but in a different context. Consistency with line 294 is acceptable, but the lack of macrons or diacritics may reflect orthographic simplification.",
+  "suggestion": "Confirm whether macrons are omitted systematically; if so, note orthographic policy. Otherwise, ensure consistency.",
+  "confidence": 0.75,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "414",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord, December 2024)",
+  "issue": "The claim about correspondence between Hokkaido 'wa an' and Sakhalin 'hemaka' is tagged ‹speculative›, but the only support is a Discord post. This risks epistemic inflation if presented without stronger evidence.",
+  "suggestion": "Clarify that this is purely community-sourced and not attested in published grammatical descriptions.",
+  "confidence": 0.9,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "337",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"nukar\" gl=\"see, look at\" />",
+  "issue": "The gloss uses a comma, but other glosses use semicolons (e.g., line 217: 'be big; become big'). Inconsistent punctuation in glosses.",
+  "suggestion": "Use semicolons consistently in multi-sense glosses: 'see; look at'.",
+  "confidence": 0.85,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "251",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"mokor\" gl=\"sleep, fall asleep\" />",
+  "issue": "The gloss uses a comma, but in linguistic glossing, semicolons are standard for separating senses. Also, the verb is described as 'fall asleep' (change) vs. 'sleep' (state), so the gloss order may imply incorrect semantics.",
+  "suggestion": "Use 'sleep; fall asleep' or reorder to 'fall asleep; sleep' if the inchoative sense is primary.",
+  "confidence": 0.8,
+  "chapter": "existential-aspect-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

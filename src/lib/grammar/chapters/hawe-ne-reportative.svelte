@@ -144,7 +144,7 @@
 		m="tap a=ye katu Piratur sekor a=ye haw-e ne"
 		g="thus 4.A=say manner Biratori QUOT 4.A=say voice-POSS COP"
 		tr="The way one says it is 'Biratori' (so they call it)."
-		cite="nakagawa2024:392"
+		cite="nakagawa2024:393"
 		dial="SAR"
 		place="Nakagawa ex. 778; underlying source Kawamura 1985: 30, Saru"
 		note="hawe ne predicates the naming 'Biratori' as verbally transmitted knowledge — the speaker heard this name used, rather than independently assigning it. Compare the ruwe ne version at Hirosawa (2026: 81, ex. 24), where the same naming is presented as assimilated personal knowledge, illustrating the gradient boundary between the two forms."

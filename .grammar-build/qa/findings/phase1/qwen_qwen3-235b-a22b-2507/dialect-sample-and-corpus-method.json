@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "187-189",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "木村きみ and 小田イト",
+  "issue": "Untranslated Japanese proper names appear without accompanying romanization or gloss, while the rest of the chapter consistently uses romanized forms for narrators.",
+  "suggestion": "Add romanized forms in parentheses after each name, e.g., '木村きみ (Kimura Kimi) and 小田イト (Oda Ito)'",
+  "confidence": 0.95,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "221-222",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "神崎雅好 and 萱野志朗",
+  "issue": "Untranslated Japanese proper names appear without romanization, inconsistent with the treatment of other narrators in the corpus list.",
+  "suggestion": "Add romanized forms: '神崎雅好 (Kanzaki Masayoshi) and 萱野志朗 (Kayano Shiro)'",
+  "confidence": 0.95,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "50",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "NINJAL corpus <Ref k=\"ninjal2003\" />",
+  "issue": "The Ref tag is placed after the noun phrase rather than integrated into it, potentially implying that 'NINJAL corpus' is a separate source from <Ref k=\"ninjal2003\" />, but the citation key refers to the same work. This creates ambiguity about whether this is a distinct source.",
+  "suggestion": "Integrate the citation directly: '<Ref k=\"ninjal2003\" /> (NINJAL corpus)' or rephrase to 'the NINJAL corpus <Ref k=\"ninjal2003\" />'",
+  "confidence": 0.9,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "59",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "Bugaeva topical dictionary <Ref k=\"bugaeva2015topical\" />",
+  "issue": "Same issue as line 50: the citation is appended after the noun phrase, risking misinterpretation that the dictionary and the Ref are separate entities.",
+  "suggestion": "Rephrase to '<Ref k=\"bugaeva2015topical\" /> (Bugaeva topical dictionary)' or 'the Bugaeva topical dictionary <Ref k=\"bugaeva2015topical\" />'",
+  "confidence": 0.9,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "66",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "ILCAA Saru/Shizunai materials <Ref k=\"ilcaa1976\" />",
+  "issue": "Citation placement creates ambiguity: it appears as if 'ILCAA Saru/Shizunai materials' is a distinct source from <Ref k=\"ilcaa1976\" />, but the key likely refers to that very material.",
+  "suggestion": "Rephrase to '<Ref k=\"ilcaa1976\" /> (ILCAA Saru/Shizunai materials)'",
+  "confidence": 0.9,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "72",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "Chiba University materials <Ref k=\"chiba2015\" />",
+  "issue": "Same pattern: citation separated from noun phrase, suggesting possible distinction between the materials and the cited source.",
+  "suggestion": "Rephrase to '<Ref k=\"chiba2015\" /> (Chiba University materials)'",
+  "confidence": 0.9,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "131",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Kasuga's 2026 dialectometric analysis extends coverage to 75 localities <Ref k=\"kasuga2026\" /> ‹corpus-suggested›",
+  "issue": "The evidence grade ‹corpus-suggested› follows the citation but is not attached to the claim about extending coverage to 75 localities. This creates ambiguity: does the grade apply to the existence of the study or to the claim about 75 localities?",
+  "suggestion": "Attach the grade directly to the claim: 'extends coverage to 75 localities ‹corpus-suggested› <Ref k=\"kasuga2026\" />'",
+  "confidence": 0.85,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "172-174",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Saru sub-corpus is the largest (around 77,964 sentences), followed by the Shizunai/southern materials (approximately 43,295 sentences), a Mukawa component (approximately 13,424 sentences), and the Chitose sub-corpus (approximately 4,420 sentences)",
+  "issue": "The total of the listed sub-corpora (77,964 + 43,295 + 13,424 + 4,420 = 139,103) is significantly less than the stated total corpus size of 167,890 sentences. The remaining ~28,787 sentences are unaccounted for, yet the prose says 'with smaller contributions from Tokachi, Horobetsu, and other localities' — but does not quantify them, making the numbers internally inconsistent.",
+  "suggestion": "Revise to include an estimate for the 'smaller contributions' or adjust the total to match the sum, or clarify that the stated numbers are partial.",
+  "confidence": 0.95,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "171",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "approximately 167,890 sentences",
+  "issue": "This total is not reconciled with the sum of the sub-corpus sizes provided in the next lines, creating a numerical contradiction.",
+  "suggestion": "Either revise the total or provide a breakdown that adds up to it.",
+  "confidence": 0.95,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "262",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "<em>ruwe ne</em>: 16,350 tokens in the 167,890-sentence Hokkaido corpus",
+  "issue": "Inconsistent formatting: 'ruwe ne' is in italics, but other Ainu forms in the chapter are not consistently italicized. The grammar should standardize on either italics or roman for Ainu forms.",
+  "suggestion": "Use consistent formatting for Ainu forms — either all in italics or none — per the style guide.",
+  "confidence": 0.8,
+  "chapter": "dialect-sample-and-corpus-method",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

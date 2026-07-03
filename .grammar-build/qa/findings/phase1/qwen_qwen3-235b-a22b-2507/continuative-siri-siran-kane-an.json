@@ -1,0 +1,141 @@
+[
+ {
+  "lines": "108",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "nea kur arpa kor sir-an",
+  "issue": "The morpheme string includes 'sir-an', but the gloss 'appearance-exist' treats it as a single unit, while the analysis in the text treats 'sir' as the noun and '-an' as the existential verb. The gloss should reflect this separation to align with the morphological analysis.",
+  "suggestion": "Split the gloss into 'appearance exist' to match the morphological segmentation 'sir-an' as noun + existential verb.",
+  "confidence": 0.95,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "127",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "supuya at kor sir-an ru-we ne anan",
+  "issue": "The gloss 'appearance-exist' combines 'sir-an' into one gloss, but the morphological segmentation implies 'sir' (appearance) and 'an' (exist) are separate. This obscures the structure and conflicts with the analysis that 'sir-an' is a compound of noun + existential.",
+  "suggestion": "Change 'appearance-exist' to 'appearance exist' in the gloss to reflect the morphological structure.",
+  "confidence": 0.95,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "211",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "asir sapa tuye kane an hine mina kane an wa",
+  "issue": "The gloss 'exist' is used for both instances of 'kane an', but 'kane' is a conjunction and 'an' is the existential verb. The gloss should reflect the conjunction 'CONJ' and the existential 'exist' separately, as in other examples.",
+  "suggestion": "Change 'CONJ exist' to 'CONJ exist' (already correct), but ensure 'kane' is glossed as the conjunction, not part of the existential. The current gloss is acceptable if 'kane' is understood as the conjunction, but consistency with other sections should be checked.",
+  "confidence": 0.8,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "249",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=tura wa cepkoyki=an kan an pe a=ki kan oka=an ainne",
+  "issue": "The gloss for 'kan an' is 'CONJ exist', but 'kan' is a conjunction and 'an' is the existential. This is consistent with other examples, but the glossing of 'kan' as 'CONJ' is underspecified — it should be 'CONJ' only if it functions as a conjunction, which it does. However, the gloss 'CONJ exist' is acceptable if 'kan' is the conjunction and 'an' the existential.",
+  "confidence": 0.7,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "259",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "poro cise as kan an na",
+  "issue": "The gloss 'CONJ exist' for 'kan an' treats 'kan' as a conjunction, but in the text it is described as a connector in a pair-verb construction. The gloss should reflect that 'kan' is a conjunction linking the lexical verb to 'an', which it does. No actual error, but potential inconsistency in how 'kan' is glossed across dialects.",
+  "confidence": 0.6,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "11",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "sir-an",
+  "issue": "The form is written with a hyphen in 'sir-an' in the text and table, but in the examples it appears as 'sir-an' (correctly). However, in the table (line 38), it is written as <i>siran</i> without hyphen, which may reflect orthographic inconsistency.",
+  "suggestion": "Ensure consistent hyphenation: use 'sir-an' throughout or 'siran' if that is the established form. The text uses both.",
+  "confidence": 0.85,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "38",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">siran</i> (<i lang=\"ain-Latn\">sir-an</i>)",
+  "issue": "In the table, 'siran' is given without hyphen, while 'sir-an' is in parentheses. This may reflect a formatting inconsistency — either both should be hyphenated or not. The text elsewhere uses 'sir-an' as the segmented form.",
+  "suggestion": "Standardize to 'sir-an' in all technical contexts, or use 'siran' as the orthographic form consistently.",
+  "confidence": 0.9,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">kane an</i>",
+  "issue": "The form is written with a space in 'kane an' in the table and text, but morphologically it is a pair-verb construction where 'kane' is a conjunction and 'an' the existential. The spacing is consistent, but should be checked for uniformity with other forms like 'kor an'.",
+  "confidence": 0.7,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "56",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">kan an</i>",
+  "issue": "Same as above — spacing in 'kan an' should be consistent with 'kane an' and 'kor an'. It is, but the point is to confirm uniformity.",
+  "confidence": 0.6,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "62",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">tek an</i>",
+  "issue": "Same spacing issue — 'tek an' should be consistently spaced like other pair-verb forms.",
+  "confidence": 0.6,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "194",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa 2024: 309–310 table 74",
+  "issue": "The citation 'Nakagawa 2024: 309–310 table 74' appears in prose but is not formatted as a <Ref> element, while other citations are. This is inconsistent citation hygiene.",
+  "suggestion": "Replace with <Ref k=\"nakagawa2024\" p=\"309–310\" /> and reference the table in prose if needed.",
+  "confidence": 0.95,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "275",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa 2024: 448–449",
+  "issue": "The citation 'Nakagawa 2024: 448–449' appears in prose and is not formatted with a <Ref> element, breaking citation consistency.",
+  "suggestion": "Replace with <Ref k=\"nakagawa2024\" p=\"448–449\" />.",
+  "confidence": 0.95,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

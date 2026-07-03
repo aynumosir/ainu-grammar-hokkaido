@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "112, 159-161",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the affricate /c/ has a secondary realization [ts] before /u/ | eci=kay ... surfaces as [et͡sɨ̥kaj]",
+  "issue": "The allophony rule states /c/ becomes [ts] only before /u/, but the example shows [ts] before a devoiced /i/ (with no note allowing this). This contradicts the stated rule.",
+  "suggestion": "Either clarify that the rule applies before devoiced high vowels as well, or correct the transcription to [etɕi̥kaj].",
+  "confidence": 0.9,
+  "chapter": "consonant-inventory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "188, 191",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The stops /p t k/ are unreleased in coda position — [p̚ t̚ k̚] | some older archival speakers produced fully released coda stops, with the implosive realization more consistent for /p/ than for /k/",
+  "issue": "First claim says stops are unreleased; second claim says they are fully released and even implosive. The terms 'unreleased' and 'implosive' are contradictory. Also, 'implosive' likely a typo for 'unreleased' or 'explosive'.",
+  "suggestion": "Replace 'implosive' with 'unreleased' or clarify the variation: some speakers produce released stops, but the implosive nature is unexpected unless a different phenomenon is meant.",
+  "confidence": 0.7,
+  "chapter": "consonant-inventory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "265-267",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The pairs /p/~[b], /t/~[d], /k/~[g], /s/~[z] are non-contrastive",
+  "issue": "The pair /s/~[z] is listed as a non-contrastive pair, but the chapter never describes voicing of /s/ elsewhere; only stop voicing is discussed (lines 275-286). This unsupported claim contradicts the chapter's own scope.",
+  "suggestion": "Either add a discussion of [z] as an allophone of /s/ (possibly under voicing) or remove /s/~[z] from the list.",
+  "confidence": 0.8,
+  "chapter": "consonant-inventory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "302-303",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "Sakhalin varieties have a retroflex [ʈ] that may be hard to distinguish from [t]",
+  "issue": "[ʈ] is a voiceless retroflex stop, not a rhotic; it is unlikely /r/ would be realized as a voiceless stop. Likely a mistranscription for a retroflex rhotic like [ɖ] or [ɽ].",
+  "suggestion": "Change [ʈ] to a rhotic symbol such as [ɖ] (retroflex flap) or clarify the source's transcription.",
+  "confidence": 0.6,
+  "chapter": "consonant-inventory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "256-260",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "including /n/ + /s/ → [y] + /s/ (e.g. pon seta → [poy seta] 'puppy') — is treated in <Xr ch='coda-r-assimilation-sonorant-sandhi' />",
+  "issue": "The cross-reference slug 'coda-r-assimilation-sonorant-sandhi' implies it deals with /r/ sandhi, but the example given is about /n/ sandhi. This suggests an inaccurate reference.",
+  "suggestion": "Verify that the referenced chapter also covers /n/ sandhi; if not, update the cross-ref to a more appropriate section.",
+  "confidence": 0.5,
+  "chapter": "consonant-inventory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "294-296",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "a published acoustic VOT study of Hokkaido Ainu has not been consulted for this grammar",
+  "issue": "Meta-commentary about what was not consulted addresses the book's production process rather than the reader. This leaks information about source limitations that is not directly relevant to the description.",
+  "suggestion": "Remove the clause or rephrase to avoid mentioning what was not done (e.g., 'No published acoustic VOT study is available for Hokkaido Ainu').",
+  "confidence": 0.7,
+  "chapter": "consonant-inventory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "311-312",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "The community characterization could not be page-verified in sources read for this grammar and is reported here as a community assertion",
+  "issue": "Similar meta-commentary about the verification process, addressing the grammar's methodology rather than the linguistic facts.",
+  "suggestion": "Remove the phrase 'could not be page-verified in sources read for this grammar' and simply tag the statement as ‹asserted› if needed.",
+  "confidence": 0.5,
+  "chapter": "consonant-inventory",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

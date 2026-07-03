@@ -189,7 +189,7 @@
 		m="turepta e-arpa"
 		g="lily.bulb APPL-go"
 		tr="go to dig lily-bulbs"
-		cite="nakagawa2024:195"
+		cite="nakagawa2024:196"
 		dial="SAR"
 		place="Nakagawa ex. 180"
 		note="Verbal phrase. The applied object turepta encodes the purpose of the motion, paraphrasable as turepta kusu arpa 'go for the purpose of digging lily-bulbs'. Both Manner and Path roles (each 2%) derive exclusively from intransitive bases."

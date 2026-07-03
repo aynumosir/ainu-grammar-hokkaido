@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "182",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "December 2024",
+  "issue": "The date 'December 2024' in the citation is inconsistent with the context: today is July 2026, so December 2024 is a past date and should be formatted consistently with other Discord citations (which use YYYY-MM-DD). The current format 'December 2024' deviates from the standard 'YYYY-MM-DD' used elsewhere (e.g., 2023, 2024 without month names).",
+  "suggestion": "Change 'December 2024' to '2024-12'",
+  "confidence": 0.95,
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "120",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<span lang=\"ain-Kana\">𛅧</span>",
+  "issue": "The character U+1B167 (𛅧) is used to represent a small ン, but it is not part of the standard Katakana Phonetic Extensions block (U+31F0–U+31FF) and may not render consistently. The note mentions limited font support, but the use of this character contrasts with the otherwise standardized use of U+31F0–U+31FF in the table. This creates a minor orthographic inconsistency in the presentation of small kana.",
+  "suggestion": "Consider adding a note that U+1B167 is non-standard or not widely supported, or use a fallback representation consistent with the other entries.",
+  "confidence": 0.8,
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "132",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<td lang=\"ain-Kana\">ㇻ ㇼ ㇽ ㇾ ㇿ</td>",
+  "issue": "The coda consonant -r is represented by multiple characters (five) in the table, but they are presented in a single table cell without clear separation or labelling. This could lead to confusion in parsing which character corresponds to which vowel. The text explains the vowel-indexing, but the visual presentation in the table could be improved for clarity.",
+  "suggestion": "Use separate cells or clearly delimit the characters (e.g., with spaces or commas) and label them explicitly in the table or caption.",
+  "confidence": 0.85,
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "170",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "asserted by nukopoli (aynu-corpora Discord, 2024)",
+  "issue": "The claim about Soviet minority-language orthographic policy is attributed only to a Discord user without a specific date (only '2024'), unlike other Discord citations which include month and day or at least a full year. This is less precise than the standard citation format used elsewhere in the chapter.",
+  "suggestion": "Include a more specific date if available, e.g., '2024-XX-XX', or at minimum ensure consistency by using the same format as other Discord citations.",
+  "confidence": 0.9,
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "47",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"49\" />",
+  "issue": "The citation points to Nakagawa 2024, page 49, as the source for the adoption of the =/- boundary markers. However, Nakagawa 2024 is a re-edition of a 1986 text collection, and it is unlikely that a 2024 reissue contains new methodological decisions from 1986. This creates a potential anachronism in citation: the claim attributes a 1986 innovation to a 2024 volume, which may misrepresent the source.",
+  "suggestion": "Revise the citation to clarify that the 1986 original introduced the convention, and the 2024 edition is a republication. For example: 'Nakagawa adopted this device in his 1986 text collection (reprinted in Nakagawa 2024, p. 49)'.",
+  "confidence": 0.98,
+  "chapter": "cyrillic-and-multiscript-rendering",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

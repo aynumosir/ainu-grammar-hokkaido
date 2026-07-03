@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "258",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ruwe an hi an",
+  "issue": "The example 'ruwe an hi an' is glossed as 'what is the reason that …?' but the morpheme-by-morpheme breakdown is not provided; the gloss 'what is the reason that …?' implies a wh-word is present, but the Ainu string contains no wh-word. The example appears to be a content question using the existential an, but the free translation does not match the Ainu form shown.",
+  "suggestion": "Either provide a morpheme gloss that accounts for the wh-reading (e.g., 'reason exist NMLZ exist' with a note that the wh-word is implied or omitted), or replace the example with one that includes an overt wh-word.",
+  "confidence": 0.8,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "270",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "affirmative answer / NMLZ + un / ku=nu ruwe un 'yes, I heard it'",
+  "issue": "The table lists 'affirmative answer' as a sentence type with the formal-noun tail 'NMLZ + un', but the preceding text (line 232–236) describes a 'four-way paradigm' and the table has four rows. However, the text at line 279–284 discusses a 'three-way split' (declarative, content question, polar question) and does not mention the affirmative answer row. The table includes a fourth row (affirmative answer) that is not discussed in the prose, creating an inconsistency between the table and the surrounding description.",
+  "suggestion": "Either add prose discussion of the affirmative answer construction (un) to match the table, or remove the fourth row from the table if it is not part of the paradigm being described.",
+  "confidence": 0.9,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "ruwe an hi an",
+  "issue": "The example 'ruwe an hi an' in the table for content questions uses the formal noun hi, but the table header says 'formal-noun tail' and the row is for content questions. However, the example appears to contain two instances of an (existential) and hi as the nominalizer, which is structurally different from the pattern described in the text (NMLZ + an). The gloss 'what is the reason that …?' does not match the Ainu string, which literally means 'reason exist NMLZ exist'.",
+  "suggestion": "Provide a correct example of a content question with a wh-word and NMLZ + an, e.g., 'hemanta ne kusu ene siran hi an' (which appears later at line 294).",
+  "confidence": 0.7,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "ruwe an hi an",
+  "issue": "The example 'ruwe an hi an' is not glossed morpheme-by-morpheme in the table, unlike other examples in the chapter. The table cell contains only the Ainu string and a free translation, which is inconsistent with the presentation of examples elsewhere (which include gloss lines).",
+  "suggestion": "Add a morpheme gloss line to the table cell, e.g., 'reason exist NMLZ exist'.",
+  "confidence": 0.6,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "270",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "affirmative answer / NMLZ + un / ku=nu ruwe un 'yes, I heard it'",
+  "issue": "The table includes a row for 'affirmative answer' with the tail 'NMLZ + un', but the text at line 279–284 describes a 'three-way split' (declarative, content question, polar question) and does not mention the affirmative answer construction. The text at line 232–236 mentions a 'four-way paradigm', but the subsequent prose only discusses three types, creating a contradiction.",
+  "suggestion": "Either expand the prose to discuss the affirmative answer construction (un) as part of the paradigm, or remove the fourth row from the table and adjust the reference to a 'four-way paradigm'.",
+  "confidence": 0.8,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "279",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Satō's motivation for the three-way split is precise",
+  "issue": "The text refers to a 'three-way split' (declarative, content question, polar question), but the table at lines 238–276 shows a four-way paradigm including 'affirmative answer'. The text does not explain why the affirmative answer is excluded from the 'three-way split' discussion, creating an inconsistency.",
+  "suggestion": "Clarify whether the paradigm is three-way or four-way, and either integrate the affirmative answer into the discussion or explain why it is omitted.",
+  "confidence": 0.7,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "ruwe an hi an",
+  "issue": "The example 'ruwe an hi an' in the table is not attributed to a source (no cite attribute), unlike other examples in the chapter which have citations. This makes it unclear whether the example is constructed or attested.",
+  "suggestion": "Add a citation or mark it as constructed if it is a fabricated illustration.",
+  "confidence": 0.5,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "270",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "ku=nu ruwe un 'yes, I heard it'",
+  "issue": "The example 'ku=nu ruwe un' in the table is not attributed to a source (no cite attribute), unlike other examples in the chapter. This makes it unclear whether the example is constructed or attested.",
+  "suggestion": "Add a citation or mark it as constructed if it is a fabricated illustration.",
+  "confidence": 0.5,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "ruwe an hi an",
+  "issue": "The example 'ruwe an hi an' uses the nominalizer hi, but the table row is for content questions with NMLZ + an. The example appears to have two instances of an (existential), which is orthographically and structurally different from the pattern described. The free translation 'what is the reason that …?' does not match the Ainu string.",
+  "suggestion": "Replace with a correct example of a content question with a wh-word and NMLZ + an, e.g., 'hemanta ne kusu ene siran hi an'.",
+  "confidence": 0.6,
+  "chapter": "cleft-nominalization-focus",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

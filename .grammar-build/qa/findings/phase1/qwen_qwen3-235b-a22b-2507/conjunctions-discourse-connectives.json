@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "224",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "§2.2c of the factbase",
+  "issue": "The phrase '§2.2c of the factbase' refers to internal production materials ('factbase') not accessible to the reader and constitutes a pipeline register leak.",
+  "suggestion": "Replace with a reference to a published section or remove the reference to 'factbase'.",
+  "confidence": 0.95,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "176",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "ne + wa",
+  "issue": "The decomposition is presented without consistent formatting; other similar forms are in italics, but 'ne + wa' is not.",
+  "suggestion": "Format as <i lang=\"ain-Latn\">ne + wa</i> for consistency with other Ainu forms.",
+  "confidence": 0.8,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "223",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "係助詞",
+  "issue": "The Japanese term '係助詞' appears without translation or explanation, while the surrounding text otherwise translates Japanese terms.",
+  "suggestion": "Either translate as '(emphatic particle)' or provide a gloss in parentheses.",
+  "confidence": 0.85,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "25",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "The sequential particle <A w=\"wa\" /> as a clause-chaining device in its own right is in <Xr ch=\"sequential-wa-and-clause-chaining\" />.",
+  "issue": "The citation hygiene is inconsistent: the claim about <A w=\"wa\" /> lacks a supporting citation, while similar claims elsewhere are cited to Nakagawa (2024).",
+  "suggestion": "Add <Ref k=\"nakagawa2024\" p=\"...\" /> to support the claim.",
+  "confidence": 0.75,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "78",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "'meanwhile, at that time, at that juncture'",
+  "issue": "The gloss includes three synonymous expressions, but the etymology section only supports 'at that juncture'; 'meanwhile' and 'at that time' may not be fully equivalent in nuance.",
+  "suggestion": "Revise to 'at that juncture, meanwhile' or clarify the semantic range.",
+  "confidence": 0.7,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "106",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "tr=\"Now — after that — I set off.\"",
+  "issue": "The free translation includes 'after that', which is not present in the morpheme or gloss lines (m=\"tane k=arpa\", g=\"now 1SG.S=go\"); this adds temporal succession not justified by the form.",
+  "suggestion": "Revise translation to \"Now — I set off.\" or justify 'after that' in the note.",
+  "confidence": 0.9,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "142",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"become.pregnant NMLZ APPL-REFL-be.surprised ANAPH\"",
+  "issue": "The gloss 'ANAPH' corresponds to <A w=\"newaanpe\" />, but the morpheme line does not include a separate morpheme for 'ANAPH'; the entire form is present as one unit.",
+  "suggestion": "Revise gloss to reflect that 'newaanpe' is a single form, e.g., 'ANAPH.DEM' or 'resumptive'.",
+  "confidence": 0.95,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "203",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cite=\"nakagawa2024:324\"",
+  "issue": "The citation format uses a colon instead of the standard 'p.' or 'pp.' used elsewhere (e.g., 'nakagawa2024' p=\"322\").",
+  "suggestion": "Change to consistent format: cite=\"nakagawa2024\" p=\"324\".",
+  "confidence": 0.9,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "271",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "<td>—</td>",
+  "issue": "The corpus rank for <A w=\"rapokke\" /> is missing (marked as '—'), but the prose states it is lower than <A w=\"orano\" />; a placeholder or estimate should be provided for consistency.",
+  "suggestion": "Add estimated rank or note 'insufficient data'.",
+  "confidence": 0.6,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "<td>—</td>",
+  "issue": "The corpus rank for <A w=\"usa\" /> is missing, though the prose does not mention frequency; for consistency with the table, a note on availability should be added.",
+  "suggestion": "Add '— (dialectally restricted)' or similar.",
+  "confidence": 0.65,
+  "chapter": "conjunctions-discourse-connectives",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

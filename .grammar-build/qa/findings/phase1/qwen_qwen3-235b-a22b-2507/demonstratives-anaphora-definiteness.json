@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "98",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"kindaichi1936\" p=\"58\" />; <Ref k=\"nakagawa2024\" p=\"288\" />",
+  "issue": "Two citations are separated by a semicolon but formatted as two separate <Ref> elements, which may cause rendering or parsing issues. The semicolon suggests a single citation list, but the markup treats them as independent elements.",
+  "suggestion": "Wrap both references in a single citation group if supported, or remove the semicolon and use punctuation appropriate for separate elements.",
+  "confidence": 0.95,
+  "chapter": "demonstratives-anaphora-definiteness",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "229",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "cite=\"nakagawa2024:287\"",
+  "issue": "The cite attribute uses a colon-separated format (nakagawa2024:287), but the standard format in this document is cite=\"key\" with a separate p=\"pages\" attribute. This inconsistency breaks the expected citation structure.",
+  "suggestion": "Change to cite=\"nakagawa2024\" p=\"287\"",
+  "confidence": 1,
+  "chapter": "demonstratives-anaphora-definiteness",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "170",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">toan</i> (c. 735 tokens) and <i lang=\"ain-Latn\">tanpe</i> (c. 391 tokens)",
+  "issue": "The text cites 'tanpe' as a form being counted, but 'tanpe' does not appear in the earlier table or discussion of deictic prenominals. The deictic singular is 'tan', and 'tanpe' is a demonstrative pronoun (formed from tan + pe). This creates confusion about whether the count refers to the prenominal or the pronoun. The table in line 213 lists 'tan-pe' as the pronoun, suggesting 'tanpe' is a variant form, but the corpus count should specify which form is actually attested.",
+  "suggestion": "Clarify whether the corpus count refers to tan, tanpe, or both; consider using the form actually searched in the corpus (e.g., 'tan' or 'tanpe').",
+  "confidence": 0.9,
+  "chapter": "demonstratives-anaphora-definiteness",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "43",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">taan</i>",
+  "issue": "In the table, the form is spelled <i lang=\"ain-Latn\">taan</i>, but in the etymology section (line 94), it is described as the long variant of <i lang=\"ain-Latn\">tan</i>. While this is consistent, the spelling 'taan' (with double a) suggests phonemic length, but elsewhere in the chapter (e.g., line 343) 'nea' and 'nean' are contrasted with single vs. double consonants or vowels. Orthographic consistency across the chapter should be maintained, especially for minimal pairs.",
+  "suggestion": "Ensure that vowel length is consistently marked with macrons or doubling across all examples and tables (e.g., tān vs. tan), or confirm that the current doubling convention is standard and consistently applied.",
+  "confidence": 0.85,
+  "chapter": "demonstratives-anaphora-definiteness",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "317",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">toon pe</i> 'that'; <i lang=\"ain-Latn\">tooka pe</i> 'those'",
+  "issue": "The gloss for 'tooka pe' is given as 'those', but in the earlier table (line 50), 'tooka(y)' is the plural of 'toan'. This suggests 'tooka' is the plural deictic prenominal. However, here it is combined with 'pe' (nominalizer), forming a pronoun. The gloss 'those' is acceptable, but it should be consistent with the earlier analysis that 'tooka' is a plural prenominal, not a root. The form 'tooka pe' should be glossed as 'those (things)' or similar to distinguish it from the prenominal use.",
+  "suggestion": "Gloss as 'those (things)' or 'the ones over there' to clarify it is a nominalized plural demonstrative, not a bare prenominal.",
+  "confidence": 0.8,
+  "chapter": "demonstratives-anaphora-definiteness",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "79",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "verse-register <i lang=\"ain-Latn\">tanan</i> (pl. <i lang=\"ain-Latn\">tanoka(y)</i>)",
+  "issue": "The plural is given as 'tanoka(y)', with optional 'y', but in line 45, the plural of 'taan' is given as 'taoka(y)', suggesting a consistent pattern. However, in line 96, the plural is spelled 'tanokay' / 'tonokay' without parentheses. This inconsistency in marking optional 'y' should be resolved.",
+  "suggestion": "Standardize the representation of optional 'y' in plurals: either always use parentheses (tanoka(y)) or spell out both variants.",
+  "confidence": 0.75,
+  "chapter": "demonstratives-anaphora-definiteness",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "333",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">toon</i> / <i lang=\"ain-Latn\">ton</i> 'that'",
+  "issue": "The table lists 'toon' and 'ton' as variants for 'that', but in the earlier Saru table (line 49), 'toan' is the distal singular. Later (line 374), a dialect variation is noted between 'toan' and 'toon'. However, 'ton' is not mentioned elsewhere. This introduces a new form 'ton' without prior mention or explanation, creating confusion about its distribution and relationship to 'toan' and 'toon'.",
+  "suggestion": "Either introduce 'ton' earlier or clarify in a note that it is a Shizunai variant of 'toan'.",
+  "confidence": 0.9,
+  "chapter": "demonstratives-anaphora-definiteness",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "349",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "no form <i lang=\"ain-Latn\">*neta</i> or <i lang=\"ain-Latn\">*neyta</i> functioning as 'the aforementioned place'",
+  "issue": "The form *neyta is already attested in the table above (line 326) as the interrogative 'where'. Using *neyta here as an unattested anaphoric place form is misleading, since neyta exists but with a different function. The claim should clarify that while neyta exists, it is not used anaphorically for 'the aforementioned place'.",
+  "suggestion": "Revise to: 'no form *neta or *neyta functioning as \"the aforementioned place\", despite neyta existing as an interrogative'.",
+  "confidence": 0.95,
+  "chapter": "demonstratives-anaphora-definiteness",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

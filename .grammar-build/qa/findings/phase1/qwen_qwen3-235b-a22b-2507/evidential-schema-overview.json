@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "31-33",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"tap a=ye katu Piratur sekor a=ye haw-e ne\" g=\"this 4.A=say manner Piraturu QUOT 4.A=say voice-POSS COP\"",
+  "issue": "The morpheme string contains two instances of 'a=ye', but the gloss only aligns one '4.A=say' and does not account for the second. The gloss should reflect both occurrences.",
+  "suggestion": "Revise gloss to: \"this 4.A=say manner Piraturu QUOT 4.A=say voice-POSS COP\" → \"this 4.A=say manner Piraturu QUOT 4.A=say voice-POSS COP\" with both '4.A=say' present, or clarify if one is extraneous.",
+  "confidence": 0.95,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "87",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "'the sound/feeling of —'",
+  "issue": "Inconsistent use of slash in gloss: other entries use single terms (e.g., 'the trace of —'), but this uses a slash. Should be standardized to match the others.",
+  "suggestion": "Use either 'the sound of —' or 'the feeling of —', or consistently format as 'the sound or feeling of —'.",
+  "confidence": 0.8,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "157-158",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<tr><td>REL+ (highest reliability)</td><td><i lang=\"ain-Latn\">ruwe ne</i></td><td>— (no indirect *ru*-form in southern Hokkaido)</td></tr>",
+  "issue": "The table lists only ruwe ne under REL+, but the next row (empty cell in first column) includes siri ne in the same ACCES+ column, implying it is also REL+. This contradicts the two-parameter model where REL+ should include only one form.",
+  "suggestion": "Revise table to either group siri ne under a separate REL tier or clarify that REL+ includes both ruwe ne and siri ne.",
+  "confidence": 0.9,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "180-182",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "The underlying sense hierarchy runs Sight > Smell/Taste–Touch > Hearing, yielding a coarser visual/non-visual split: ruwe ne and siri ne are the higher-reliability direct members, humi ne and hawe ne the lower",
+  "issue": "Contradicts earlier claim that ruwe ne is highest reliability (REL+), while siri ne is not. Here, siri ne is grouped with ruwe ne as 'higher-reliability', conflicting with the table's REL+/REL− distinction.",
+  "suggestion": "Clarify whether siri ne is REL+ or REL−, or revise the hierarchy description to reflect a three-tier model.",
+  "confidence": 0.85,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "212",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Token frequencies in Dal Corso's Hokkaido reference corpora <Ref k=\"dalcorso2018\" p=\"72\" />",
+  "issue": "The table caption attributes data to Dal Corso 2018 p. 72, but the prose (line 198) says the counts are from 'Dal Corso's Hokkaido reference texts' — implying multiple sources. This risks misrepresenting the citation as covering the full corpus.",
+  "suggestion": "Revise caption to: 'Token frequencies in Dal Corso's (2018) Hokkaido reference texts (p. 72)' to match prose.",
+  "confidence": 0.8,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "282-287",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Community discussion, summarizing Yoshikawa (2020), characterizes ruwe ne as semantically unmarked... (nukopoli, aynu-corpora Discord, 2024-03-17)",
+  "issue": "Cites a Discord post (2024-03-17) for a claim attributed to Yoshikawa 2020, but no citation for Yoshikawa 2020 is given. The only Yoshikawa citation is to Yoshikawa 2018, marked ‹speculative›.",
+  "suggestion": "Add Ref k=\"yoshikawa2020\" or clarify that Yoshikawa 2020 is not cited and the attribution may be inaccurate.",
+  "confidence": 0.75,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "477",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "ru / sir / haw / hum",
+  "issue": "Inconsistent italicization: other formal nouns are in italics (e.g., ruwe), but these concept forms are not. Should be standardized.",
+  "suggestion": "Italicize: <i lang=\"ain-Latn\">ru / sir / haw / hum</i>",
+  "confidence": 0.7,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "478",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "allomorphs <i lang=\"ain-Latn\">sin</i> (for <i lang=\"ain-Latn\">sir</i>) and <i lang=\"ain-Latn\">aw</i> (for <i lang=\"ain-Latn\">haw</i>)",
+  "issue": "Inconsistent use of parentheses: 'for' is used instead of 'of' or standard gloss notation. Also, 'sin' and 'aw' are not linked to dialects or sources in this sentence.",
+  "suggestion": "Use: 'allomorphs <i lang=\"ain-Latn\">sin</i> of <i lang=\"ain-Latn\">sir</i> and <i lang=\"ain-Latn\">aw</i> of <i lang=\"ain-Latn\">haw</i>' and ensure source covers this.",
+  "confidence": 0.65,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "519",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"smoke rise while appearance-exist track-POSS COP MIR\"",
+  "issue": "The gloss 'appearance-exist' corresponds to 'sir-an', but 'track-POSS' is glossed as 'ru-we', which mismatches the morpheme 'ru-we' (should be 'ruwe'). Also, 'MIR' is not defined in the example or prose.",
+  "suggestion": "Revise gloss to: 'appearance-exist track-POSS COP admirative' and define 'anan' as 'admirative' in note or tr.",
+  "confidence": 0.9,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "520",
+  "category": "translation-mismatch",
+  "severity": "medium",
+  "quote": "tr=\"Smoke was rising — it turned out!\"",
+  "issue": "The translation 'it turned out' implies inferential evidentiality, but the example includes both siri an (indirect visual) and ruwe ne (direct inferential), with anan (admirative). The translation does not reflect the layered evidentiality or surprise.",
+  "suggestion": "Revise to capture surprise and discovery: 'Smoke was rising — so that's what it was!' or similar.",
+  "confidence": 0.8,
+  "chapter": "evidential-schema-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

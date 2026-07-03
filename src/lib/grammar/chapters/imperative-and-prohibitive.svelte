@@ -88,7 +88,7 @@
 		m="hetak pusu wa inkar"
 		g="INTERJ dig CONJ look"
 		tr="Come on, dig it up and look!"
-		cite="nakagawa2024:421"
+		cite="nakagawa2024:422"
 		dial="CHI"
 		place="Nakagawa ex. 911"
 		note="Two bare-stem verbs (pusu, inkar) linked by the sequential particle wa. The absence of any second-person subject prefix is the sole formal mark of the singular imperative."

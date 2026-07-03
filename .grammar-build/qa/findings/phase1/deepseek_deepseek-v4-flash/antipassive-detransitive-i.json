@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "14-15, 256-257",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "suffixal S indexes — =as (1PL.EXCL.S) and =an (4.S) … the suffixal =an carries logophoric first-person-singular reference in the narrative context",
+  "issue": "Line 14 glosses =an as fourth person (4.S), but line 256-257 states it carries first-person-singular reference in narrative context, without explanation of the shift. This is a direct contradiction in the person value assigned to the same morpheme.",
+  "suggestion": "Either consistently gloss =an as 4.S and adjust the translation in line 256-257 to reflect fourth person, or explain that fourth person can be used logophorically for first person and adjust the gloss in line 14 accordingly.",
+  "confidence": 0.9,
+  "chapter": "antipassive-detransitive-i",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "42-50",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"i-ri=an wa or-o wa sini=an na\" g=\"ANTIP-skin=4.S CONJ place-POSS from rest=4.S FIN\" tr=\"I will skin the catch and then rest.\"",
+  "issue": "The gloss marks =an as fourth person (4.S), but the translation uses first person 'I'. If =an is fourth person, the translation should not be 'I' unless explained. The note says both =an tokens carry fourth-person S reference, yet the translation uses 'I'.",
+  "suggestion": "Change translation to use fourth person (e.g., 'One will skin the catch and then rest') or add a note explaining that fourth person is used logophorically for first person in this context.",
+  "confidence": 0.9,
+  "chapter": "antipassive-detransitive-i",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "300-301",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Three accounts of the historical source of antipassive i- are in active competition, and none is settled in the sources read directly for this grammar.",
+  "issue": "The phrase 'sources read directly for this grammar' addresses the production process rather than the reader. It is a meta-commentary on the research methodology.",
+  "suggestion": "Rephrase to something like 'Three accounts are in active competition, and none is settled in the available literature.'",
+  "confidence": 0.8,
+  "chapter": "antipassive-detransitive-i",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "347",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Since Bugaeva (2010) is not read directly for this grammar",
+  "issue": "This phrase addresses the production process (what sources were read) rather than the reader. It should be rephrased to state the fact without referencing the grammar's research process.",
+  "suggestion": "Rephrase to something like 'Bugaeva (2010) is not available for direct consultation in this study, so the analysis is based on secondary reports' or simply remove the meta-commentary.",
+  "confidence": 0.8,
+  "chapter": "antipassive-detransitive-i",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "364-365",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "This synthesis is tied to the factbase evidence for the residual distribution and Nam's phonological argument and requires editorial review; it goes beyond any single cited source.",
+  "issue": "This is a note to the editors, not to the reader. 'factbase' is a pipeline term, and 'requires editorial review' is a meta-instruction.",
+  "suggestion": "Remove or rewrite as a substantive claim with appropriate epistemic grading, e.g., 'This synthesis draws on the residual distribution and Nam's phonological argument, but it goes beyond any single cited source and is therefore graded ‹speculative›.'",
+  "confidence": 0.9,
+  "chapter": "antipassive-detransitive-i",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

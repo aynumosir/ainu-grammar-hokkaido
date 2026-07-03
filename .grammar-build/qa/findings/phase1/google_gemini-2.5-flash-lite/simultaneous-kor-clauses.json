@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "14",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "; <Ref k=\"ijas2023\" />",
+  "issue": "The citation <Ref k=\"ijas2023\" /> is attached to the end of a sentence that lists two sources. It is unclear if this citation supports the entire sentence or just the part after the semicolon.",
+  "suggestion": "Clarify the scope of the citation, potentially by moving it or adding another citation.",
+  "confidence": 0.7,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "26",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a statement about raw token counts, which seems like a direct observation from the corpus rather than a suggestion. This tag might be misapplied.",
+  "suggestion": "Consider if a more direct tag like ‹corpus-confirmed› or simply removing the tag is more appropriate.",
+  "confidence": 0.6,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "113",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "note=\"The mikemike kor san sequence is the simultaneity construction: gleaming (ongoing) kor descending. The preceding saya eusi wa closes an attendant-state clause ('sheathed, and'); hine continues the chain.\"",
+  "issue": "The note contains a dangling pronoun: 'hine continues the chain.' It's unclear what 'hine' refers to in this context.",
+  "suggestion": "Clarify what 'hine' refers to, or rephrase the sentence.",
+  "confidence": 0.7,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "132",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "note=\"Different-subject kor clause: the dancer (first person, ku=) and the observer (third person, unexpressed) are distinct. After Tamura 2000: 155, adapted by Ijäs as a teaching example.\"",
+  "issue": "The phrase 'After Tamura 2000: 155, adapted by Ijäs as a teaching example' is slightly awkward. It could be interpreted as the example itself being adapted, or the note being written after Tamura's work.",
+  "suggestion": "Rephrase for clarity, e.g., 'Based on Tamura 2000: 155, adapted by Ijäs as a teaching example.'",
+  "confidence": 0.6,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "143",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "‹corpus-suggested›.",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a statement about the lack of quantitative statements for Saru <i lang=\"ain-Latn\">kor</i>. This seems to be a statement about the state of research rather than a corpus-derived suggestion.",
+  "suggestion": "Consider removing the tag or using a tag that reflects the absence of evidence, if such a tag exists.",
+  "confidence": 0.6,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "182",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "note=\"no closes the negated somo mokor clause ('without sleeping'); kor an on kamuyoritak forms the progressive 'was praying'. Both no and kor are simultaneous-type connectives, assigned by the temporal phase of their respective first predicates.\"",
+  "issue": "The phrase 'assigned by the temporal phase of their respective first predicates' is slightly vague. It could be clearer how the temporal phase assigns the connectives.",
+  "suggestion": "Rephrase for clarity, e.g., '...assigned based on the temporal phase of their respective first predicates.'",
+  "confidence": 0.6,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "233",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "note=\"The first two a=kor are the transitive possession verb 'have' (4th-person A prefix); sirkunne kor is the habitual conditional 'whenever it became night'. The recurrent pattern — night after night — is the core habitual reading.\"",
+  "issue": "The phrase 'The recurrent pattern — night after night — is the core habitual reading' is a bit of a run-on sentence. The dash creates a slight pause that doesn't fully integrate the two parts.",
+  "suggestion": "Rephrase for better flow, e.g., 'The recurrent pattern, night after night, is the core habitual reading.' or 'The core habitual reading is represented by the recurrent pattern: night after night.'",
+  "confidence": 0.6,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "250",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "note=\"k=esikarun kor: habitual conditional 'whenever I recalled it'. ku=ki kor k=an: progressive 'was continuously doing'. Two distinct kor readings appear within the same clause chain.\"",
+  "issue": "The note uses a colon after 'k=esikarun kor' and 'ku=ki kor k=an' to introduce the glosses. While understandable, it's slightly less formal than using an em dash or simply stating the gloss directly.",
+  "suggestion": "Consider using em dashes for clarity: 'k=esikarun kor — habitual conditional...', or rephrasing: 'k=esikarun kor, which means habitual conditional...'",
+  "confidence": 0.5,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "348",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "(nukopoli, aynu-corpora Discord, 2024 <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+  "issue": "The citation for the community analysis is placed before the epistemic tag ‹contested›. This could imply that the community analysis itself is contested, rather than the hypothesis derived from it.",
+  "suggestion": "Move the epistemic tag to follow the description of the hypothesis: '...a hypothesis put forward by nukopoli (aynu-corpora Discord, 2024 <Ref k=\"aynucorporadiscord\" />); ‹contested›.'",
+  "confidence": 0.7,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "353",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "the primary grammars read for this chapter do not settle the dialectal priority question.",
+  "issue": "The phrase 'read for this chapter' is slightly informal and could be more precise. It implies that the authors of the chapter have read these grammars, but it could be stated more directly.",
+  "suggestion": "Rephrase to something like: 'The primary grammars consulted for this chapter do not settle...' or 'The primary grammars relevant to this chapter do not settle...'",
+  "confidence": 0.6,
+  "chapter": "simultaneous-kor-clauses",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ }
+]

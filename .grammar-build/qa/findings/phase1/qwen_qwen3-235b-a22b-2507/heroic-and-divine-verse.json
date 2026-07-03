@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "69",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i> (Saru); <i lang=\"ain-Latn\">ci=</i> / <i lang=\"ain-Latn\">=as</i> (Iburi)",
+  "issue": "The table entry for 'hero-person marking (Saru/Chitose)' lists both Saru and Chitose dialects, but the Iburi form is included in the same cell without clarifying that Chitose is not covered by the ci=/=as form. This contradicts the later table in section §iburi-person, which specifies that Chitose may use ci=/=as only initially before switching to a=/=an.",
+  "suggestion": "Revise the table cell to clarify dialect variation: e.g., '<i lang=\"ain-Latn\">a=</i> / <i lang=\"ain-Latn\">=an</i> (Saru, Chitose baseline); <i lang=\"ain-Latn\">ci=</i> / <i lang=\"ain-Latn\">=as</i> (Iburi)'",
+  "confidence": 0.95,
+  "chapter": "heroic-and-divine-verse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "118",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"rametok\" gl=\"bravery; brave person; hero\" /> (<i lang=\"ain-Latn\">ram-etok</i>",
+  "issue": "Inconsistent hyphenation: the dictionary-linked form is 'rametok' (no hyphen), but the parenthetical segmentation is 'ram-etok'. Should be consistent with morphemic analysis or lexical entry.",
+  "suggestion": "Either change linked form to 'ram-etok' or adjust segmentation to 'rametok'. Given that 'ram' + 'etok' is a known compound, prefer 'ram-etok' in both places.",
+  "confidence": 0.85,
+  "chapter": "heroic-and-divine-verse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "212",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"hancikiki sake-he ci=kar\" g=\"refrain sake-POSS 1PL.EXCL.A=make\"",
+  "issue": "The morpheme 'hancikiki' is glossed as 'refrain' in the example, but in the note (l.218) it is identified as the specific sakehe refrain of a sparrow-sake-party kamuy yukar. 'refrain' is too generic; it should reflect that this is a specific lexicalized refrain, not a translation of a grammatical term.",
+  "suggestion": "Change gloss of 'hancikiki' to something like 'sparrow-party!' or 'onomatopoeic refrain' to distinguish it from the genre term 'sakehe'.",
+  "confidence": 0.9,
+  "chapter": "heroic-and-divine-verse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "218",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "note=\"The sakehe hancikiki is the fixed refrain for this sparrow-sake-party kamuy yukar. ...\"",
+  "issue": "The note attributes linguistic analysis (identifying 'hancikiki' as a fixed refrain) to Biratori 1969 in the cite attribute, but the note itself contains interpretive content not necessarily present in the source. The citation does not support the full claim in the note.",
+  "suggestion": "Clarify that the identification of 'hancikiki' as the refrain is the editor's analysis, possibly citing Endō 2022 or another secondary source for such interpretations.",
+  "confidence": 0.8,
+  "chapter": "heroic-and-divine-verse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "349",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "uncontracted <i lang=\"ain-Latn\">ku-</i> person marker",
+  "issue": "The form is written as 'ku-' with a hyphen, but in the rest of the chapter, person markers are given without hyphens when standalone (e.g., 'a=', 'ci='). This creates inconsistency in formatting.",
+  "suggestion": "Write as '<i lang=\"ain-Latn\">ku</i>-' or '<i lang=\"ain-Latn\">ku=</i>' for consistency with other person markers.",
+  "confidence": 0.75,
+  "chapter": "heroic-and-divine-verse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "440",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Chitose (opening only)",
+  "issue": "Earlier in the chapter (l.90–91, l.387), Chitose is grouped with Saru as using a=/=an. The current table introduces a new claim — that Chitose uses ci=/=as initially — but this is not foreshadowed or explained in the main prose before the table, creating a disconnect.",
+  "suggestion": "Add a sentence in the preceding paragraph to preview that Chitose shows mixed usage, transitioning from ci=/=as to a=/=an.",
+  "confidence": 0.8,
+  "chapter": "heroic-and-divine-verse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "557",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2026-06-15, <code>asserted</code>",
+  "issue": "The citation date (2026-06-15) is in the future relative to the book's writing period (2025–2026). While future dates are allowed per briefing, the combination of a future date and lack of peer-reviewed support for the claim about elegant kin terms raises epistemic concerns, especially since it's used to support a lexical assertion.",
+  "suggestion": "Add a cautionary note or seek corroboration from published sources; alternatively, confirm that the Discord source is treated as valid per project guidelines.",
+  "confidence": 0.7,
+  "chapter": "heroic-and-divine-verse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "583",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">tuk-no pinni si-kopa-yar / aynu pito</i>",
+  "issue": "Inconsistent spacing: 'tuk-no' uses a hyphen, but 'aynu pito' does not. If 'tuk-no' is a compound, it should be consistently marked; otherwise, use space. Also, 'si-kopa-yar' may be better as 'si-kop-a-yar' for morpheme alignment.",
+  "suggestion": "Standardize hyphenation: either 'tuk no' or 'tuk-no'; and consider breaking 'si-kopa-yar' into 'si-kop-a-yar' if morpheme boundaries justify it.",
+  "confidence": 0.7,
+  "chapter": "heroic-and-divine-verse",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

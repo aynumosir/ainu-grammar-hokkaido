@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "8, 15, 38, 42, 56, 62",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Four constructions complement the progressive kor an … the Tokachi–Ishikari pair kan an / tek an.",
+  "issue": "The introductory text lists four constructions, but the table immediately below has five rows (siran, kane an, hine an, kan an, tek an), treating kan an and tek an as separate forms. This creates a mismatch between the prose count and the table’s form count.",
+  "suggestion": "Either revise the prose to read 'five constructions' or consolidate the table rows for kan an and tek an into one row with a note that they are dialect variants.",
+  "confidence": 0.8,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "157, 158, 160, 161",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The present chapter treats siran / siri ne as a form that licenses a continuative reading … The direct-perception evidential siri ne and the indirect visual siri an receive their full treatment…",
+  "issue": "The slash pair 'siran / siri ne' in line 157 equates siran (sir-an, appearance-based continuative) with siri ne (direct-perception evidential), which are distinct forms. Later (lines 160–161) the chapter correctly distinguishes siri ne from siri an (indirect visual evidential). The intended reference in line 157 is almost certainly siri an, not siri ne.",
+  "suggestion": "Replace 'siri ne' with 'siri an' in line 157.",
+  "confidence": 1,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "249, 250, 255",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"a=tura wa cepkoyki=an kan an pe a=ki kan oka=an ainne\"\ng=\"4.A=accompany CONJ catch.fish=4.S CONJ exist NMLZ 4.A=do CONJ exist.PL=4.S CONJ\"",
+  "issue": "The morphemic line ends with 'ainne' but the gloss line has no corresponding gloss for 'ainne'. The translation 'while' suggests a conjunction, which is omitted from the gloss.",
+  "suggestion": "Add a gloss for 'ainne', e.g. 'CONJ' (or 'while', following the translation), and adjust spacing so that the final gloss token is not fused with 'exist.PL=4.S'. For example: '… CONJ exist.PL=4.S CONJ' becomes '… CONJ exist.PL=4.S while'.",
+  "confidence": 1,
+  "chapter": "continuative-siri-siran-kane-an",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

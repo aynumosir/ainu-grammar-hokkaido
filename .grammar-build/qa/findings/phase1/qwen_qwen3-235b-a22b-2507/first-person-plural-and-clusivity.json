@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "15-16",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Saru <i lang=\"ain-Latn\">coka</i>, with dialectal counterparts Tokachi <i lang=\"ain-Latn\">ciokay</i> and <i lang=\"ain-Latn\">ciutari</i>",
+  "issue": "Inconsistent hyphenation and orthographic representation of the same form: 'coka', 'ciokay', 'ciutari' — the latter two include 'ci' from the prefix, while the first does not, possibly reflecting dialect variation, but the lack of explanation or consistent formatting (e.g., hyphen placement) creates drift.",
+  "suggestion": "Standardize representation with hyphens or clarify dialectal differences in segmentation, e.g., 'coka', 'ci-o-kay', 'ci-u-tari' if morphemic consistency is intended.",
+  "confidence": 0.85,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "45-46",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "1PL.EXCL — pronoun Saru <i lang=\"ain-Latn\">coka</i>, Tokachi <i lang=\"ain-Latn\">ciokay</i>/<i lang=\"ain-Latn\">ciutari</i>",
+  "issue": "Inconsistent use of hyphens and orthographic forms: 'coka' vs. 'ciokay' and 'ciutari' — the latter two include the 'ci-' prefix explicitly, while 'coka' does not, creating orthographic drift within the same table cell.",
+  "suggestion": "Use parallel forms: either 'coka'/'ciokay'/'ciutari' with explanation, or standardize to hyphenated morphemic forms (e.g., 'co-ka', 'ci-o-kay', 'ci-u-tari') for consistency.",
+  "confidence": 0.9,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "55-56",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "4 / indefinite — pronoun Saru <i lang=\"ain-Latn\">aoka</i>, Tokachi <i lang=\"ain-Latn\">anokay</i>/<i lang=\"ain-Latn\">anutari</i>",
+  "issue": "Parallel inconsistency in free pronoun representation: 'aoka' vs. 'anokay' and 'anutari' — similar to the exclusive forms, the prefix 'a-' vs. 'an-' is inconsistently reflected, creating orthographic drift.",
+  "suggestion": "Align with exclusive row formatting: use 'aoka', 'an-o-kay', 'an-u-tari' or explain the morphological variation explicitly.",
+  "confidence": 0.85,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "93-101",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"kuruma an wa ci=o tek arki=as\"",
+  "issue": "The gloss '1PL.EXCL.A=board' for 'ci=o' is correct, but the free translation says 'we boarded it and came' — the plural 'we' is inclusive in English, but the marker is explicitly exclusive. This may mislead readers about the semantic force of the form.",
+  "suggestion": "Revise free translation to clarify exclusivity, e.g., 'There was a car, and we (excluding you) boarded it and came.'",
+  "confidence": 0.95,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "147-155",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"2SG also go.PL=4.S HORT\"",
+  "issue": "The gloss uses '4.S' but the free translation 'Let you and me go too!' expresses an inclusive 'we', which is correct, but the gloss does not reflect the inclusive meaning — it should clarify that '4.S' here functions as inclusive first plural.",
+  "suggestion": "Revise gloss to '2SG also go.PL=INCL.1PL.S HORT' or add a note that '4.S' is used for inclusive 'we'.",
+  "confidence": 0.9,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258-266",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cite=\"ijas2023\"",
+  "issue": "The citation 'ijas2023' is used without page numbers, and the source is a learner grammar — a non-primary descriptive source. The example is constructed, but the citation format lacks specificity expected for scholarly support.",
+  "suggestion": "Add page or section reference if available, e.g., 'ijas2023:45', or clarify the nature of the source in the citation.",
+  "confidence": 0.8,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "7",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "The first-person plural of Hokkaido Ainu is exclusively exclusive",
+  "issue": "Redundant phrasing: 'exclusively exclusive' is awkward and potentially confusing. While intended for emphasis, it could be rephrased for clarity.",
+  "suggestion": "Rephrase to 'The first-person plural of Hokkaido Ainu is always exclusive in meaning.'",
+  "confidence": 0.7,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "219-220",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "the <i lang=\"ain-Latn\">ci=</i>-series functions as a grammatically plural encoding of the first singular",
+  "issue": "Inconsistent notation: uses '=series' with equals sign, while elsewhere 'ci-' with hyphen is used (e.g., line 183). This creates orthographic drift across dialects.",
+  "suggestion": "Standardize to either 'ci=' or 'ci-' throughout, depending on morphological convention adopted.",
+  "confidence": 0.85,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

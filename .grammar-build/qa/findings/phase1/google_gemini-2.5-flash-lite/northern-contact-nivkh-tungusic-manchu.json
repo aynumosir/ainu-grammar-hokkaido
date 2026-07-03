@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "195",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<td><i lang=\"ain-Latn\">tonto</i></td>",
+  "issue": "The Ainu form 'tonto' is marked with `lang=\"ain-Latn\"` but is also listed as a Sakhalin Ainu form in prose on line 50 and in the table on line 195. It is also mentioned as a Japanese borrowing on line 191. The `lang` attribute should be consistent or removed if it's not specifically referring to a Hokkaido Ainu form.",
+  "suggestion": "Remove `lang=\"ain-Latn\"` from the table entry for 'tonto'.",
+  "confidence": 0.7,
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "217",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<td><i lang=\"ain-Latn\">tanku</i> ‹SA›</td>",
+  "issue": "The Ainu form 'tanku' is marked with `lang=\"ain-Latn\"` but is also marked with the dialect tag ‹SA›. The `lang` attribute should ideally reflect the specific dialect or be removed if it's meant to be general Ainu.",
+  "suggestion": "Remove `lang=\"ain-Latn\"` from the table entry for 'tanku'.",
+  "confidence": 0.7,
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "224",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<td><i lang=\"ain-Latn\">kunkutu</i> ‹SA›</td>",
+  "issue": "The Ainu form 'kunkutu' is marked with `lang=\"ain-Latn\"` but is also marked with the dialect tag ‹SA›. The `lang` attribute should ideally reflect the specific dialect or be removed if it's meant to be general Ainu.",
+  "suggestion": "Remove `lang=\"ain-Latn\"` from the table entry for 'kunkutu'.",
+  "confidence": 0.7,
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "247",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "m=\"kotan-kor-kur ne\"",
+  "issue": "The Ainu form 'kotan-kor-kur ne' in the example is not marked with a language tag, while other Ainu forms in the chapter are consistently marked with `lang=\"ain-Latn\"`.",
+  "suggestion": "Add `lang=\"ain-Latn\"` to the `m` attribute: `m=\"<i lang=\\\"ain-Latn\\\">kotan-kor-kur ne</i>\"`.",
+  "confidence": 0.7,
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "262",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "m=\"kaya a=kar\"",
+  "issue": "The Ainu form 'kaya a=kar' in the example is not marked with a language tag, while other Ainu forms in the chapter are consistently marked with `lang=\"ain-Latn\"`.",
+  "suggestion": "Add `lang=\"ain-Latn\"` to the `m` attribute: `m=\"<i lang=\\\"ain-Latn\\\">kaya a=kar</i>\"`.",
+  "confidence": 0.7,
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "267",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "note=\"Constructed minimal context. kaya is the Hokkaido reflex of the Nivkh loanword; the Sakhalin cognate covered fish-skin garments as well (Batchelor 1938: 241).\"",
+  "issue": "The Ainu form 'kaya' is mentioned in the note without a language tag, while other Ainu forms in the chapter are consistently marked with `lang=\"ain-Latn\"`.",
+  "suggestion": "Add `lang=\"ain-Latn\"` to 'kaya' in the note: `kaya` → `<i lang=\"ain-Latn\">kaya</i>`.",
+  "confidence": 0.7,
+  "chapter": "northern-contact-nivkh-tungusic-manchu",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ }
+]

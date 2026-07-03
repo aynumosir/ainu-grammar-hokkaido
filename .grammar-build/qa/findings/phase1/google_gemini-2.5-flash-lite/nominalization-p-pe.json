@@ -1,0 +1,167 @@
+[
+ {
+  "lines": "22-27",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The same split holds whether the host is a single stative stem (poro-p ‘the big one’, pon-pe ‘the small one’) or a full clause (a=e p ‘what one eats’, okay pe ‘what one carries’)",
+  "issue": "The text states that the split between -p and -pe is conditioned by the final segment of the host (vowel vs. consonant). However, the example 'a=e p' is presented as following a vowel, but the gloss 'what one eats' implies the host is 'a=e', which ends in 'e' (a vowel). This seems consistent. The example 'okay pe' is presented as following a consonant, but the gloss 'what one carries' implies the host is 'okay', which ends in 'y' (a consonant). This also seems consistent. The issue might be in the table later.",
+  "suggestion": null,
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "vowel\n\t\t\t\t<td><i lang=\"ain-Latn\">-p</i> / clausal <i lang=\"ain-Latn\">p</i></td>",
+  "issue": "The table entry for 'vowel' lists '-p' as the allomorph, but then also lists 'clausal p'. This suggests 'p' is used for clausal nominalization after a vowel, which contradicts the initial statement that '-p' follows a stem-final vowel. It's unclear if 'clausal p' is a distinct form or just the allomorph '-p' used in a clausal context.",
+  "suggestion": "Clarify if 'clausal p' is a separate form or the same allomorph used in a clausal context. If it's the same, consider removing 'clausal'.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "52",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "consonant\n\t\t\t\t<td><i lang=\"ain-Latn\">-pe</i> / clausal <i lang=\"ain-Latn\">pe</i></td>",
+  "issue": "Similar to line 44, the table entry for 'consonant' lists '-pe' as the allomorph, but then also lists 'clausal pe'. This suggests 'pe' is used for clausal nominalization after a consonant, which contradicts the initial statement that '-pe' follows a stem-final consonant. It's unclear if 'clausal pe' is a distinct form or just the allomorph '-pe' used in a clausal context.",
+  "suggestion": "Clarify if 'clausal pe' is a separate form or the same allomorph used in a clausal context. If it's the same, consider removing 'clausal'.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "96-102",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"tapan kina a=e p ne toan kina somo a=e p ne\"\ng=\"this plant 4.A=eat NMLZ COP that plant NEG 4.A=eat NMLZ COP\"\ntr=\"This plant is one that people eat; that plant is one that people do not eat.\"\nnote=\"The fourth person a= gives a generic human eater; p is the object head of each clause — the thing eaten. The vowel-final e selects the short allomorph -p.\"",
+  "issue": "The gloss for 'a=e' is '4.A=eat', and the note explains 'p' as 'the object head of each clause — the thing eaten'. However, the free translation 'This plant is one that people eat' implies 'a=e p' refers to the *plant* being eaten, making the plant the object. The gloss and note seem to suggest 'p' is the object, but the translation implies the plant is the object. This is confusing regarding argument roles.",
+  "suggestion": "Re-evaluate the gloss and note to clarify the argument structure and the role of 'p' in relation to 'a=e' and the nominalized entity.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "106-112",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"a=se wa okay pe\"\ng=\"4.A=carry.on.back CONJ exist.PL NMLZ\"\ntr=\"the things one is carrying along\"\nnote=\"pe is the object of se and the subject of okay; the consonant-final okay selects the allomorph -pe.\"",
+  "issue": "The note states 'pe is the object of se and the subject of okay'. However, 'se' is glossed as 'carry.on.back' and 'okay' as 'exist.PL'. It's unclear how 'pe' functions as both object of 'se' and subject of 'okay' within this structure, especially given the glosses. The gloss '4.A=carry.on.back CONJ exist.PL NMLZ' doesn't fully clarify the relationship.",
+  "suggestion": "Clarify the grammatical roles of 'pe' in relation to 'se' and 'okay' in the gloss and/or note.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "127-134",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"a=e-suke-p\"\ng=\"4.A=APPL-cook-NMLZ\"\ntr=\"kitchen utensil\"\nlit=\"thing one cooks with\"\nnote=\"The applicative e- licenses the instrumental participant that p nominalizes; the plain compound sukemakiri has no such prefix.\"",
+  "issue": "The gloss '4.A=APPL-cook-NMLZ' and the literal translation 'thing one cooks with' suggest that 'p' nominalizes the instrument used for cooking. However, the free translation is 'kitchen utensil'. It's unclear how 'utensil' is derived from 'thing one cooks with' without further explanation of the role of 'APPL' and '4.A'.",
+  "suggestion": "Provide a more direct link between the literal translation and the free translation, or elaborate on how 'utensil' is implied by the components.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "147-153",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"ani usey a=ku p\"\ng=\"INS hot.water 4.A=drink NMLZ\"\ntr=\"a thing to drink hot water with\"\nnote=\"The instrumental ani stays inside the clause; p is the generic instrument head, the object of ku 'drink'.\"",
+  "issue": "The note states 'p is the generic instrument head, the object of ku 'drink''. This seems contradictory. If 'p' is the instrument head, it should be the instrument *used* for drinking, not the object *of* drinking. The translation 'a thing to drink hot water with' supports 'p' being the instrument.",
+  "suggestion": "Clarify the role of 'p' as either the instrument head or the object of 'ku', ensuring consistency with the translation and note.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "163-170",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"ani cep ku=tuypa makiri\"\ng=\"INS fish 1SG.A=cut knife\"\ntr=\"the knife I cut fish with\"\nnote=\"Ijäs Lesson 11. The instrumental ani is fronted and retained; the head here is the common noun makiri, the same gap strategy that p and pe carry without a lexical head.\"",
+  "issue": "The example uses 'makiri' (knife) as the head noun, and the note explains that 'p and pe carry the same gap strategy without a lexical head'. This example, however, *does* have a lexical head. This creates a slight inconsistency in illustrating the 'headless' nature of p/pe nominalization.",
+  "suggestion": "Either find an example where 'p' or 'pe' functions as the head noun in a similar construction, or rephrase the note to acknowledge that this example illustrates the *strategy* but not the *headless* aspect.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "187-194",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"ne kusu haweoka wa cis pa p ka a=erampewtek\"\ng=\"COP because speak.PL CONJ cry PL NMLZ even 4.A=not.understand\"\ntr=\"I did not even understand why they were crying.\"\nnote=\"p is not an argument of speak or cry; the clause haweoka wa cis pa is complete (arity 0). p nominalizes the whole reason clause, which is then the object of a=erampewtek.\"",
+  "issue": "The gloss has 'NMLZ' for 'p', and the note states 'p nominalizes the whole reason clause, which is then the object of a=erampewtek'. This implies 'p' itself is the object. However, the gloss for 'a=erampewtek' is '4.A=not.understand', and the translation is 'I did not even understand why...'. This suggests the nominalized clause (introduced by 'p') is the object of 'understand', not 'p' itself.",
+  "suggestion": "Clarify whether 'p' is the object or if the nominalized clause (headed by 'p') is the object of 'a=erampewtek'.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "197-203",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"ratcitara rok=an pe ne na\"\ng=\"quietly sit=4.S NMLZ COP FIN\"\ntr=\"One should sit quietly.\"\nnote=\"pe nominalizes a saturated intransitive; the predication pe ne na carries the deontic 'should' reading of Satō's content-clause use.\"",
+  "issue": "The gloss for 'pe' is 'NMLZ', and the note says 'pe nominalizes a saturated intransitive'. The translation 'One should sit quietly' implies a deontic modality. The note attributes this reading to 'pe ne na'. It's unclear if 'pe' itself carries the deontic meaning or if it's a combination with 'ne na'.",
+  "suggestion": "Clarify if 'pe' contributes to the deontic reading or if it's solely a function of 'ne na' in this context.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "218-225",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"a=e=túskote kuni p ne ru-we ne na\"\ng=\"4.A=2SG.O=tie.up PURP NMLZ COP track-POSS COP FIN\"\ntr=\"You will surely be tied up.\"\nnote=\"The fourth-person agent a= with the second-person object e= yields a passive-like reading; kuni p forms a future/deontic nominal, and the framing predicate ru-we ne presents it as established fact.\"",
+  "issue": "The gloss for 'p' is 'NMLZ', and the note says 'kuni p forms a future/deontic nominal'. The translation is 'You will surely be tied up'. It's unclear if 'p' alone is the nominalizer or if 'kuni p' is a unit that forms the nominal. The gloss only marks 'p' as NMLZ.",
+  "suggestion": "Clarify if 'kuni' is part of the nominalization process or if 'p' is the sole nominalizer, and how 'kuni' modifies the nominalization.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "285",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "Bugaeva treats these light bound nouns as the generic heads of gapped relative clauses <Ref k=\"shibatani1990\" p=\"33–34\" />; <Ref k=\"refsing1986\" p=\"259–264\" />; <Ref k=\"sato2008\" p=\"174–175\" />; <Ref k=\"nakagawa2024\" p=\"508\" />; <Ref k=\"bugaeva2015\" p=\"47\" /> ‹contested›.",
+  "issue": "The citation for Bugaeva's treatment is placed at the end of the sentence, but the specific page numbers for Bugaeva are listed as '47' for Bugaeva2015. The text mentions 'Bugaeva treats these light bound nouns...', implying Bugaeva's work is the primary source for this specific claim, but the citation is mixed with others.",
+  "suggestion": "Ensure the citation for Bugaeva's specific claim is clearly linked, possibly by placing the Bugaeva citation immediately after the mention of Bugaeva.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "303",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Her report that the subject of a ditransitive resists being the head matches Bugaeva's finding that no example of an A-of-three-place-verb head is attested; the construction is an attested gap rather than a settled ungrammaticality ‹corpus-confirmed›.",
+  "issue": "The sentence states that the subject of a ditransitive *resists* being the head, which matches Bugaeva's finding that no example is *attested*. It then concludes 'the construction is an attested gap rather than a settled ungrammaticality'. This phrasing is slightly confusing. If no example is attested, it's hard to call it an 'attested gap'. It might be better to say it's a *potential* gap or a *lack of attestation*.",
+  "suggestion": "Rephrase to clarify the status of the construction: '...matches Bugaeva's finding that no example of an A-of-three-place-verb head is attested; this lack of attestation suggests it functions as a gap rather than being definitively ungrammatical.'",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306-308",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "Her difficulty in finding ablative <i lang=\"ain-Latn\">wa(no)</i> ‘from which’ or mutative <i lang=\"ain-Latn\">ne</i> ‘as which’ as relative-clause heads is shared by the sources read here, so the forms she suggests for them are left aside rather than presented as established ‹corpus-suggested› <Ref k=\"ijas2023\" />; <Ref k=\"bugaeva2015\" p=\"48\" />.",
+  "issue": "The text states that the difficulty in finding certain relative-clause heads is shared by the sources read here. The citation for this shared difficulty is <Ref k=\"ijas2023\" />; <Ref k=\"bugaeva2015\" p=\"48\" />. It's unclear if both sources confirm this difficulty or if only one does, and if the forms suggested by Ijäs are left aside because of this shared difficulty or for other reasons.",
+  "suggestion": "Clarify which source(s) confirm the difficulty and the reason for leaving Ijäs's suggested forms aside.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "326",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "The corpus word-frequency table returns 13,249 tokens of <i lang=\"ain-Latn\">pe</i> (rank 15), a figure that folds together the formal noun, the numeral counter <i lang=\"ain-Latn\">-pe</i>, and lexical <i lang=\"ain-Latn\">pe</i> ‘water’, while the short allomorph <i lang=\"ain-Latn\">p</i> is obscured by segmentation.",
+  "issue": "The text states that the short allomorph <i lang=\"ain-Latn\">p</i> is 'obscured by segmentation'. This implies that when the corpus counts tokens, 'p' is not counted separately or is merged with other forms. However, the previous sentence mentions 'the numeral counter <i lang=\"ain-Latn\">-pe</i>', which implies that '-pe' is a distinct form. It's unclear why '-p' would be obscured by segmentation if '-pe' is counted, and how this relates to the overall frequency count.",
+  "suggestion": "Clarify how 'p' is obscured by segmentation and how this affects its frequency count compared to 'pe'.",
+  "chapter": "nominalization-p-pe",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ }
+]

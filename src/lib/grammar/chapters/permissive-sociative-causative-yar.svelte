@@ -134,7 +134,7 @@
 		m="a=en=kopisi p anakne opitta ku=ye wa ku=nu-yar"
 		g="4.A=1SG.O=ask NMLZ TOP all 1SG.A=say CONJ 1SG.A=hear-CAUS"
 		tr="Everything I was asked I told in full — I made it all known."
-		cite="nakagawa2024:428"
+		cite="nakagawa2024:432"
 		dial="SAR"
 		place="Nakagawa ex. 959, after Tamura 1984: 12"
 		note="ku=nu-yar retains the two-place transitivity of nu 'hear something'; the content made known is the sole object and no causee argument is present."

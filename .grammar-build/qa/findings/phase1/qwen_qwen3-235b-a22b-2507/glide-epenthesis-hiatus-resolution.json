@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "39",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "The word <i lang=\"ain-Latn\">iyomante</i> 'the bear-spirit-sending ceremony'",
+  "issue": "The free translation 'the bear-spirit-sending ceremony' does not match the glossed morphemes /i=omante/ where 'i=' is the indefinite/antipassive prefix and 'omante' means 'send away'. The translation implies a more specific cultural meaning not reflected in the morpheme-by-morpheme breakdown.",
+  "suggestion": "Revise translation to 'the sending-away ceremony (of a bear spirit)' to align with morphemic content, or add a note explaining the cultural specificity.",
+  "confidence": 0.85,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "40",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "/i=omante/ (&lt; the indefinite-object prefix",
+  "issue": "HTML entity '&lt;' appears literally instead of rendering as '<'. This is a markup error that should be corrected to ensure proper display.",
+  "suggestion": "Replace '&lt;' with '<'.",
+  "confidence": 0.95,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "/u=epeker/ (&lt; <A w=\"u=\" gl=\"RECP\" /> + <A w=\"epeker\" gl=\"tell a story\" />)",
+  "issue": "The gloss 'tell a story' for 'epeker' does not fully match the free translation 'tell each other stories', which includes reciprocity not present in the stem alone. The stem should reflect the full meaning or the translation adjusted.",
+  "suggestion": "Change gloss to 'tell stories' or 'narrate' to better support the reciprocal construction, or annotate the reciprocity in the prefix.",
+  "confidence": 0.8,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "193-197",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"i=omante\" ... g=\"ANTIP=send.away\" ... tr=\"sends it away; (ceremonially) performs the bear-spirit-sending\"",
+  "issue": "The free translation includes ceremonial nuance ('performs the bear-spirit-sending') not reflected in the gloss 'ANTIP=send.away'. This introduces meaning not accounted for morphemically.",
+  "suggestion": "Revise translation to 'sends it away' only, or expand gloss to include cultural context if justified by analysis.",
+  "confidence": 0.9,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "203-207",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"u=epeker\" ... g=\"RECP=tell.story\" ... tr=\"tell each other stories; tell stories together\"",
+  "issue": "The gloss 'tell.story' is a compound without space or hyphen, while other glosses use spaces. Also, 'story' is singular but translation implies plural.",
+  "suggestion": "Standardize to 'tell stories' or 'tell.story' consistently across examples.",
+  "confidence": 0.85,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "228",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, 2023-12-11) ‹corpus-confirmed›",
+  "issue": "The epistemic tag ‹corpus-confirmed› is applied to a Discord attribution, which may overstate evidential strength if not backed by published corpus data.",
+  "suggestion": "Downgrade to ‹corpus-suggested› unless independent corpus verification is confirmed.",
+  "confidence": 0.75,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "274-277",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"ku=ikra\" g=\"1SG.A=send\" tr=\"I send it/them\"",
+  "issue": "The gloss 'send' does not match the stem 'ikra', which is used earlier as 'send away' (omante). Inconsistency in translation of same root.",
+  "suggestion": "Ensure consistent glossing of 'ikra' as 'send' or 'send away' across chapter.",
+  "confidence": 0.9,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "379",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "APPL=speak 'talk to someone'",
+  "issue": "The gloss appears in table without proper formatting; it should be aligned with other entries and possibly italicized or separated from the translation.",
+  "suggestion": "Format consistently with other rows, e.g., place gloss in italics or separate column.",
+  "confidence": 0.7,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "385",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "APPL=talk.to.each.other",
+  "issue": "The gloss uses 'talk.to.each.other' while standard format uses underscores or spaces. Inconsistent with 'RECP.speak' and 'tell.story'.",
+  "suggestion": "Use consistent format: 'APPL=talk.to.each.other' → 'APPL=talk.to.each.other' or 'APPL=talk.to.each.other'.",
+  "confidence": 0.85,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "480",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "志賀雪湖 (Okuda 2025 <Ref k=\"okuda2025\" />)",
+  "issue": "Untranslated Japanese name appears without romanization or explanation, while the rest of the text translates Japanese terms.",
+  "suggestion": "Add romanization: 'Shiga Sekko (Okuda 2025)' or provide footnote.",
+  "confidence": 0.9,
+  "chapter": "glide-epenthesis-hiatus-resolution",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

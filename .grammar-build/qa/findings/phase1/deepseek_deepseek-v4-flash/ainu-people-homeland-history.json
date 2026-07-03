@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "43",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "across the full chain of the Kuril Islands",
+  "issue": "Inconsistent spelling: 'Kuril' here vs 'Kurile' used throughout the rest of the chapter (lines 124, 131, 181, 210, 215, 241).",
+  "suggestion": "Change to 'Kurile Islands' for consistency, or adopt one spelling globally.",
+  "confidence": 1,
+  "chapter": "ainu-people-homeland-history",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "200-201",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "‹contested as to the interpretation of Ainu agency and objectives›",
+  "issue": "The epistemic tag contains extra explanatory text not in the standard format (‹contested›). This appears to be a pipeline note or editorial comment that leaked into the prose.",
+  "suggestion": "Remove the extra text and use either just ‹contested› or a natural-language aside.",
+  "confidence": 0.9,
+  "chapter": "ainu-people-homeland-history",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "209-210",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "the Handbook's chapter on language contact <Ref k=\"shiraishitangiku2022\" />",
+  "issue": "Cross-reference written in prose ('the Handbook's chapter') instead of using the <Xr> component, which is the standard method used elsewhere (e.g., line 61, 274). This may be a leftover from an earlier draft or refers to an external volume; either way it is inconsistent with the rest of the chapter.",
+  "suggestion": "Replace with an <Xr> link if the chapter is part of this grammar; otherwise clarify what 'Handbook' refers to.",
+  "confidence": 0.8,
+  "chapter": "ainu-people-homeland-history",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "99",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "called <A w=\"uwepeker\" gl=\"prosaic folktale\" />",
+  "issue": "The gloss 'prosaic folktale' uses 'prosaic' which normally means 'dull' or 'commonplace'; the intended meaning is likely 'prose folktale' (as opposed to verse epic). This is either a glossing mistake or an infelicitous word choice.",
+  "suggestion": "Change gloss to 'prose folktale' if that is the intended meaning.",
+  "confidence": 0.6,
+  "chapter": "ainu-people-homeland-history",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "189-191",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "including the Matsumae no koto — Ezo kotoba no koto of c. 1600 with 117 words compiled for use by merchants",
+  "issue": "The em dash between 'Matsumae no koto' and 'Ezo kotoba no koto' is unclear; it might be intended as a parenthetical remark or an alternative title. The punctuation is awkward and may confuse the reader.",
+  "suggestion": "Consider using parentheses: 'including the Matsumae no koto (Ezo kotoba no koto) of c. 1600' or rephrase to clarify the relationship between the two titles.",
+  "confidence": 0.7,
+  "chapter": "ainu-people-homeland-history",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "268",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "establishes support mechanisms for cultural and language activities, and authorized the establishment",
+  "issue": "Tense inconsistency: 'establishes' (present) is followed by 'authorized' (past) within the same list of actions of the 2019 act. The verb should be present tense 'authorizes' for consistency.",
+  "suggestion": "Change 'authorized' to 'authorizes'.",
+  "confidence": 1,
+  "chapter": "ainu-people-homeland-history",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

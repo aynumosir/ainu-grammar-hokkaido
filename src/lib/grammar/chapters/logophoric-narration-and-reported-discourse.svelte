@@ -348,7 +348,7 @@
 		m="tap a=ye katu Piratur sekor a=ye haw-e ne"
 		g="now 4.A=say manner Piratur QUOT 4.A=say voice-POSS COP"
 		tr="The current way of calling it is 'Piratur' — that is what is said."
-		cite="nakagawa2024:392"
+		cite="nakagawa2024:393"
 		dial="SAR"
 		place="Nakagawa ex. 778, after Kawamura 1985: 30"
 		note="The sekor a=ye frame attributes the name; the outer hawe ne predicates the whole naming as conventionally/verbally reported fact. The 4th-person agent a= is used throughout because the name-givers are indefinite."

@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "93",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "menokoyukar",
+  "issue": "The compound word 'menokoyukar' is written without a hyphen in the <A> tag, but the hyphenated form 'menoko-yukar' is used in the example (line 114) and in the section title. This creates inconsistency in orthographic representation.",
+  "suggestion": "Change 'menokoyukar' to 'menoko-yukar' in the <A w=\"menokoyukar\" gl=\"women's heroic verse\" /> tag to match the hyphenated form used elsewhere.",
+  "confidence": 0.95,
+  "chapter": "gendered-register-speech",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "114",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "menoko-yukar anak tup rep pakno ku=eraman",
+  "issue": "The morpheme 'menoko-yukar' is segmented with a hyphen, but the gloss 'woman-epic' does not reflect the hyphenation or clarify whether 'menoko' and 'yukar' are separate morphemes. Given that 'yukar' is a known term, the gloss should reflect the compositionality.",
+  "suggestion": "Revise gloss to 'woman-epic' → 'woman-heroic.epic' or 'men-woman epic' to better align with morpheme segmentation, or adjust segmentation if 'menoko-yukar' is a single lexical unit.",
+  "confidence": 0.9,
+  "chapter": "gendered-register-speech",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145-146",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹corpus-suggested›",
+  "issue": "The epistemic tag ‹corpus-suggested› is applied to a claim supported only by a Discord attribution (nukopoli, aynu-corpora Discord, 2024-12-26) and a secondary source (Endō), which does not constitute corpus-level evidence. This inflates the epistemic strength.",
+  "suggestion": "Change ‹corpus-suggested› to ‹community-asserted› or ‹contested› to better reflect the source type.",
+  "confidence": 0.85,
+  "chapter": "gendered-register-speech",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "174-183",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Three primary sources that might bear on this question were not read for this chapter",
+  "issue": "The phrasing 'were not read for this chapter' is a pipeline register leak, exposing the editorial process rather than presenting a neutral scholarly statement.",
+  "suggestion": "Rephrase to 'Three primary sources that might bear on this question are not included in the current analysis' or similar neutral wording.",
+  "confidence": 0.95,
+  "chapter": "gendered-register-speech",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "237-240",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "is not held in the project repository and was not read; Fukuda/Tamura 1961 <Ref k=\"fukuda1961\" /> on Saru SFPs and Kindaichi <Ref k=\"kindaichi1935\" /> on elegant language are held but were not read for this chapter",
+  "issue": "The statements 'was not read' and 'were not read for this chapter' are pipeline register leaks, revealing internal workflow rather than serving the reader.",
+  "suggestion": "Rephrase to 'Hattori 1957 is not available in the project repository; Fukuda/Tamura 1961 and Kindaichi 1935, while available, were not consulted in this chapter.'",
+  "confidence": 0.98,
+  "chapter": "gendered-register-speech",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "20",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "traditional narrator",
+  "issue": "The table header uses 'traditional narrator', but the body uses 'men', 'women', 'adult men only', etc. The header could be more precise as 'traditional narrator sex' to match content.",
+  "suggestion": "Change 'traditional narrator' to 'traditional narrator sex' in the table header for clarity and consistency.",
+  "confidence": 0.8,
+  "chapter": "gendered-register-speech",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "99",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "sources read for this chapter ‹speculative›",
+  "issue": "The epistemic tag ‹speculative› is attached to a methodological statement about source availability rather than the claim it modifies ('its presence in other Hokkaido regions is not established'), weakening its impact.",
+  "suggestion": "Move ‹speculative› to directly follow the claim about presence in other regions, not the methodological clause.",
+  "confidence": 0.9,
+  "chapter": "gendered-register-speech",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

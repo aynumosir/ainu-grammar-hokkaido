@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "65",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "[teˈʔeta] 'long ago'",
+  "issue": "The example [teˈʔeta] is listed as an attested form with a clearly audible glottal stop, but in the emphatic glottal insertion section (table at lines 288–304), the same form [teʔeta] is derived morphologically from teta via emphatic insertion. This creates a conflict between treating [teˈʔeta] as a phonetically automatic form in one place and as a morphologically derived emphatic form in another.",
+  "suggestion": "Clarify whether [teˈʔeta] 'long ago' in line 65 is being cited as a phonetically automatic realization or as an instance of emphatic glottal insertion, and ensure consistency with the later table.",
+  "confidence": 0.95,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "290",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">weʔen</i> [weʔen]",
+  "issue": "The orthographic representation uses 'ʔ' in the Latin transcription (weʔen), which mixes IPA symbol with roman letters. Standard Ainu orthography does not use IPA symbols; if this is meant to be a phonemic or phonetic transcription, it should be clearly distinguished from the orthographic form.",
+  "suggestion": "Use a consistent orthographic representation, e.g., *we'en* if using an apostrophe for glottal stop, or clarify that this is a phonetic transcription by placing it in brackets consistently.",
+  "confidence": 0.85,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "295",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">toʔo</i> [toʔo]",
+  "issue": "Same issue as line 290: use of IPA [ʔ] inside a Latin orthography tag <i lang=\"ain-Latn\">. This mixes writing systems inconsistently.",
+  "suggestion": "Use *to'o* in the orthography and [toʔo] in the phonetic transcription, keeping the IPA symbol only within square brackets.",
+  "confidence": 0.9,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "300",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">teʔeta</i> [teʔeta]",
+  "issue": "Same inconsistency: IPA [ʔ] appears in the Latin orthography-tagged form. This form should be represented orthographically without IPA symbols.",
+  "suggestion": "Write the orthographic form as *te'eta* or similar, reserving [teʔeta] for the phonetic transcription.",
+  "confidence": 0.9,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "248",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"su at\"",
+  "issue": "The morphemic segmentation shows two separate words \"su at\", but the gloss and translation treat it as a compound noun 'pot handle'. The segmentation should reflect compounding if it's a single lexical item, or be marked as a phrase.",
+  "suggestion": "Use a hyphen or equals sign to indicate compounding, e.g., m=\"su-at\" or m=\"su=at\", or clarify in the note that this is a phrasal compound.",
+  "confidence": 0.8,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "249",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"pot cord\"",
+  "issue": "The gloss \"pot cord\" does not align with standard Leipzig glossing conventions, which expect morpheme-by-morpheme labels. Here, it's a free translation rather than a gloss.",
+  "suggestion": "Replace with aligned morpheme glosses, e.g., g=\"pot rope\", or if morphemes are su and at, use g=\"pot cord\" only if both roots are independently glossed elsewhere. Alternatively, clarify that this is a free translation and move to 'tr'.",
+  "confidence": 0.75,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "240",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"pothook\"",
+  "issue": "The gloss field contains a full translation rather than morpheme-by-morpheme glossing. Since the morphemic segmentation is given as a single word \"suwat\", the gloss should either reflect internal structure or be labeled as unanalyzable.",
+  "suggestion": "Use gl=\"pothook\" or add note=\"opaque compound, unsegmentable\" and leave g empty or mark as g=\"—\".",
+  "confidence": 0.8,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "185",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"sap=an\" g=\"depart=4.S\"",
+  "issue": "The gloss \"4.S\" is non-standard; standard Ainu glossing uses \"4\" for fourth person and \"S\" for subject, but the convention in this book appears to be \"4.SBJ\" or similar. Inconsistency with other sections may exist.",
+  "suggestion": "Check consistency across chapters; if \"4.S\" is used elsewhere, retain it, but otherwise standardize to \"4.SBJ\" or \"4.INTR\" for intransitive subject.",
+  "confidence": 0.9,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "210",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.A=have speech\"",
+  "issue": "The gloss mixes morpheme labels (4.A, have, speech) without clear segmentation alignment. The morphemic structure is a=kor itak, so the gloss should reflect that segmentation: e.g., g=\"4.A=have\" for a=kor and separate glossing for itak.",
+  "suggestion": "Restructure example or split into two clauses; or adjust gloss to g=\"4.A=have speech\" only if kor is analyzed as 'have' and itak as 'speech', but then segmentation should be m=\"a=kor itak\" with two words.",
+  "confidence": 0.85,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "264",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "/u<i>ʔ</i>a/ : /u<i>w</i>a/",
+  "issue": "Use of HTML <i> tags inside phonemic slashes is inconsistent and likely a formatting error. The intent may be to italicize only the contrasting segments, but this mixes markup and phonological notation awkwardly.",
+  "suggestion": "Use consistent formatting, e.g., /u[ʔ]a/ : /u[w]a/ or /uˈʔa/ : /uˈwa/, without HTML inside the slashes.",
+  "confidence": 0.8,
+  "chapter": "glottal-stop",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

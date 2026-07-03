@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "11",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">e=</i>",
+  "issue": "The form <i lang=\"ain-Latn\">e=</i> is presented without any dialect variation or allomorphy discussion, but later in the chapter (e.g., line 251) it is used in constructed examples with no mention of potential dialect-specific realizations. Given that <i lang=\"ain-Latn\">ku=</i> has a noted allomorph <i lang=\"ain-Latn\">k=</i>, and dialects are specified for other forms, the absence of any comment on possible variation for <i lang=\"ain-Latn\">e=</i> creates an orthographic asymmetry.",
+  "suggestion": "Add a brief note on whether <i lang=\"ain-Latn\">e=</i> exhibits dialectal or phonologically conditioned allomorphy, or explicitly state that it does not, to parallel the treatment of <i lang=\"ain-Latn\">ku=</i>.",
+  "confidence": 0.85,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "40",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Saru/Chitose/Mukawa <i lang=\"ain-Latn\">k=</i> before vowel-initial stems (a, u, e, o)",
+  "issue": "The vowels are listed as (a, u, e, o), omitting <i lang=\"ain-Latn\">i</i>. However, in line 139, Ijäs's note specifies that initial <i lang=\"ain-Latn\">i</i> retains the fuller form — implying that <i lang=\"ain-Latn\">ku=</i> does not reduce before <i lang=\"ain-Latn\">i</i>-initial stems. The list should include <i lang=\"ain-Latn\">i</i> for completeness and clarity.",
+  "suggestion": "Revise to: \"(a, u, e, o, i)\" or clarify that reduction does not occur before <i lang=\"ain-Latn\">i</i>-initial stems.",
+  "confidence": 0.8,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"ku=hosipi\" g=\"1SG.S=return\" tr=\"I go back.\"",
+  "issue": "The gloss uses 'return', but the free translation uses 'go back'. While these are semantically close, 'return' implies coming back to a point of origin, whereas 'go back' may not. The gloss should align more precisely with the translation or vice versa.",
+  "suggestion": "Change either the gloss to 'go.back' or the translation to 'I return' for consistency.",
+  "confidence": 0.9,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "210",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"topenpe en=kore\" g=\"sweets 1SG.O=give\" tr=\"You gave me sweets.\"",
+  "issue": "The gloss '1SG.O=give' does not mark tense or aspect, while the translation is in the past tense. The morpheme string shows no overt tense marker, but the translation implies past. This creates a mismatch unless the tense is pragmatically inferred.",
+  "suggestion": "Add a note explaining that tense is inferred from context in constructed examples, or adjust the translation to a present/future form like 'You give me sweets' to avoid implying unmarked tense.",
+  "confidence": 0.85,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "250",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"kunneywa wakka e=ku\" g=\"morning water 2SG.A=drink\" tr=\"You drink water in the morning.\"",
+  "issue": "The gloss '2SG.A=drink' uses 'drink' as the verb root, but the morpheme string has 'ku', which is the expected form of 'drink' only if it is a reduced form of 'ku' from a stem like 'kuk' or 'kuy'. The morpheme segmentation does not match the glossed root.",
+  "suggestion": "Verify the correct stem and morphemic segmentation. If the stem is 'ku', gloss as '2SG.A=drink' is acceptable, but ensure consistency with other examples. If the stem is longer, correct the segmentation (e.g., 'e=kuk').",
+  "confidence": 0.75,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "285",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"something even 1SG.A>2SG.O=help NMLZ exist Q\"",
+  "issue": "The gloss uses '1SG.A>2SG.O=help', but the morpheme string is 'eci=kasuy'. The gloss implies a portmanteau meaning 'I help you', but 'kasuy' is glossed as 'help', while in line 179, the same root 'kasuy' is used with 'en=kasuy' and glossed as '1SG.O=help'. The root appears to be transitive, but the directionality in the gloss (A>O) is not standard in Leipzig glossing, which typically uses separate glosses for subject and object. Moreover, the gloss '1SG.A>2SG.O' is non-standard and should be replaced with a conventional format like '1SG.S.2SG.O=help' or '1SG>2SG=help'.",
+  "suggestion": "Revise the gloss to use standard portmanteau notation, e.g., '1SG>2SG=help' or '1SG.S.2SG.O=help', and ensure consistency with Leipzig norms.",
+  "confidence": 0.95,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "194",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "bare <i lang=\"ain-Latn\">en=</i> covers the 2SG→1SG cell; Chitose extends the same bare form to 2PL→1SG",
+  "issue": "The text states that Chitose extends bare <i lang=\"ain-Latn\">en=</i> to 2PL→1SG, but in the table (line 53), it says that 1→2 uses portmanteau <i lang=\"ain-Latn\">eci=</i> instead — implying that <i lang=\"ain-Latn\">eci=</i> is used for 1→2, not 2→1. However, no mention is made of <i lang=\"ain-Latn\">eci=</i> being used in the 2PL→1SG direction. This creates a contradiction: if Chitose uses bare <i lang=\"ain-Latn\">en=</i> for 2PL→1SG, then <i lang=\"ain-Latn\">eci=</i> should not be involved, but the table implies <i lang=\"ain-Latn\">eci=</i> is used for 1→2 only, not 2→1. The directionality and form usage must be clarified.",
+  "suggestion": "Revise either the table or the prose to clarify whether <i lang=\"ain-Latn\">en=</i> or <i lang=\"ain-Latn\">eci=</i> is used in 2PL→1SG in Chitose, and ensure directional consistency.",
+  "confidence": 0.9,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "53",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "1→2 uses portmanteau <i lang=\"ain-Latn\">eci=</i> instead",
+  "issue": "The table footnote says '1→2 uses portmanteau <i lang=\"ain-Latn\">eci=</i> instead', but it appears in the 2SG row under the O column. This implies that when 1SG acts on 2SG, <i lang=\"ain-Latn\">eci=</i> is used — which is correct — but the placement in the 2SG row might mislead readers into thinking <i lang=\"ain-Latn\">eci=</i> is a 2SG form. The note should clarify that this is a portmanteau for 1→2 combinations, not a 2SG-specific form.",
+  "suggestion": "Rephrase the note to: \"The 1→2 combination uses the portmanteau <i lang=\"ain-Latn\">eci=</i>, replacing separate 1SG and 2SG indexes.\"",
+  "confidence": 0.95,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "273",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "All four 1→2 combinations — 1SG→2SG, 1SG→2PL, 1PL.EXCL→2SG, 1PL.EXCL→2PL — surface as <i lang=\"ain-Latn\">eci=</i>",
+  "issue": "This contradicts the earlier statement in the table (line 53) that says '1→2 uses portmanteau <i lang=\"ain-Latn\">eci=</i> instead', which could be interpreted as only 1SG→2SG. But more critically, it conflicts with line 192–193, which says that in Saru and Chitose, bare <i lang=\"ain-Latn\">en=</i> covers 2SG→1SG and 2PL→1SG. If <i lang=\"ain-Latn\">eci=</i> is used for 1→2, then <i lang=\"ain-Latn\">en=</i> should not be used for 2→1 — but the text allows both. The directionality must be consistently defined: <i lang=\"ain-Latn\">eci=</i> for 1→2, <i lang=\"ain-Latn\">en=</i> for 3→1SG and (in some dialects) 2→1SG. The claim that <i lang=\"ain-Latn\">eci=</i> covers all 1→2 combinations is correct, but the coexistence of <i lang=\"ain-Latn\">en=</i> for 2→1SG must not imply bidirectional syncretism.",
+  "suggestion": "Clarify that <i lang=\"ain-Latn\">eci=</i> is strictly for 1→2 (A→O), while <i lang=\"ain-Latn\">en=</i> in 2→1SG is a separate syncretic use, not involving <i lang=\"ain-Latn\">eci=</i>.",
+  "confidence": 0.9,
+  "chapter": "first-second-person-singular-affixes",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

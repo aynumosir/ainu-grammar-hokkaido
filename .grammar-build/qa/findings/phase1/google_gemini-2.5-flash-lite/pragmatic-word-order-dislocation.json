@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "198",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "read sources",
+  "issue": "The phrase 'read sources' is meta-commentary about the production process and should be replaced with more direct phrasing, such as 'available sources' or 'the literature'.",
+  "suggestion": "available sources",
+  "confidence": 0.9,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "241",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "Japanese <span lang=\"ja\">丈/だけ</span>",
+  "issue": "The Japanese text is not translated, while other Japanese terms in the chapter are. It should be translated or removed if not essential.",
+  "suggestion": "Japanese take/dake",
+  "confidence": 0.8,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "245",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<table>",
+  "issue": "The table uses an HTML `<table>` tag directly. While this might render correctly, it's generally better to use Markdown table syntax for consistency within SvelteKit components, unless there's a specific reason for HTML.",
+  "suggestion": "Convert to Markdown table syntax.",
+  "confidence": 0.7,
+  "chapter": "pragmatic-word-order-dislocation",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ }
+]

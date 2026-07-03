@@ -366,7 +366,7 @@
 		m="seta or wa aynu a=kupapa"
 		g="dog place from person 4.A=bite"
 		tr="A person was bitten by a dog."
-		cite="nakagawa2024:429"
+		cite="nakagawa2024:428"
 		dial="SAR"
 		place="Nakagawa ex. 945″"
 		note="The dog appears in an or wa ‘from’ phrase; the indefinite transitive subject a= stays on the verb and the patient aynu ‘person’ stays the object."

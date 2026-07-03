@@ -61,7 +61,7 @@
 		m="topenpe hekattar ku=kore"
 		g="sweets children 1SG.A=give"
 		tr="I gave the children sweets."
-		cite="nakagawa2024:127"
+		cite="nakagawa2024:128"
 		dial="SAR"
 		place="Nakagawa ex. 11a"
 		note="Both non-subject participants surface as bare NPs with no case morphology; the verb ku=kore indexes only the 1SG agent. Recipient vs theme is recoverable from the semantics of kore 'give' and from constituent order, not from case marking."

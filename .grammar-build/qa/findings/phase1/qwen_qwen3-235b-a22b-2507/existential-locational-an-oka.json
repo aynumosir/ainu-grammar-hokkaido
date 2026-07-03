@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "8",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<A w=\"oka\" gl=\"exist, be, live (pl)\" /> / <A w=\"okay\" gl=\"exist, be, live (pl)\" />",
+  "issue": "Inconsistent orthographic representation: the two variants of the plural existential verb are presented with different spellings (oka vs okay), but the gloss is identical. This may suggest a need for consistency in how variants are displayed, especially since the chapter later discusses the distribution of oka vs okay.",
+  "suggestion": "Consider using a unified format such as <A w=\"oka/okay\" gl=\"exist, be, live (pl)\" /> to reflect dialectal variation more consistently.",
+  "confidence": 0.9,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "32",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "an ranks first in the approximately 1.57 million–token Hokkaido corpus (86,986 occurrences) and oka twenty-third (9,637)",
+  "issue": "The text states that an ranks first and oka twenty-third by frequency, but in the table at lines 169–177, oka is said to rank 23 (9,637 tokens) and okay 96 (2,608 tokens). The frequency figure for oka (9,637) is attributed only to oka in the table, but the prose combines oka and okay as homonym-mixed counts under oka’s rank, creating a contradiction.",
+  "suggestion": "Revise the prose to clarify that the 9,637 occurrences attributed to oka in rank 23 exclude okay, or adjust the table to reflect combined counts if that was the intent.",
+  "confidence": 0.95,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "119",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">kotan ta oka</i> 'they are in the village'",
+  "issue": "The example lacks a subject NP, yet the translation implies a plural third-person subject ('they'). The template [SUBJ-NP] [LOC or ta] oka suggests a subject should be present, but none appears in the example.",
+  "suggestion": "Either add a subject (e.g., iwor 'they') to match the translation or revise the translation to 'there are (people) in the village' to reflect an impersonal reading.",
+  "confidence": 0.85,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "176",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "rank 96 in the full corpus (2,608 tokens, homonym-mixed)",
+  "issue": "The table entry for okay claims 2,608 tokens and rank 96, but earlier prose (line 32) only mentions oka at rank 23 with 9,637 tokens and does not reference okay’s rank or frequency. This creates a discrepancy: if okay is a variant of the same verb, its rank and count should be accounted for in the overall frequency discussion.",
+  "suggestion": "Revise the frequency paragraph to include both oka and okay counts and clarify whether ranks are for individual forms or combined.",
+  "confidence": 0.9,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "227",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.A=have village LOC truly one COP exist.PL=4.S CONJ\"",
+  "issue": "The gloss includes 'have' for the prefix a=, but the morpheme a= in this context is the fourth-person agent marker, not the verb 'have' (kor). This misglossing could confuse readers about the function of a=.",
+  "suggestion": "Change 'have' to '4.A' or '4.SBJ' to reflect agent indexing, not the lexical verb 'have'.",
+  "confidence": 0.95,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "292",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"how COP CONJ that bowl not.exist not.exist\"",
+  "issue": "The morpheme sequence includes two instances of isam, but the gloss repeats 'not.exist not.exist' without indicating reduplication or emphasis. The note mentions rhetorical emphasis, but the gloss should reflect this morphologically or with a tag.",
+  "suggestion": "Use 'not.exist=REDUP' or 'not.exist²' to indicate repetition for emphasis.",
+  "confidence": 0.8,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "385",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">an</i> (sg) / <i lang=\"ain-Latn\">okay</i> (pl)",
+  "issue": "The plural form is given as okay here, but earlier in the chapter (e.g., line 8) both oka and okay are presented as variants. This section selectively uses only okay for the plural, which may imply a dialectal or functional restriction not justified in this context.",
+  "suggestion": "Use oka/okay to maintain consistency with earlier presentation of variation.",
+  "confidence": 0.85,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "59",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" />; nukopoli, aynu-corpora Discord, 2024 ‹consensus›",
+  "issue": "The citation format is non-standard: the inline attribution 'nukopoli, aynu-corpora Discord, 2024' appears outside the Ref component and duplicates information. The Ref alone should carry the citation, with metadata handled in the bibliography.",
+  "suggestion": "Move the full attribution into the Ref component as e.g., <Ref k=\"aynucorporadiscord\" p=\"nukopoli, 2024\" /> and remove the inline text.",
+  "confidence": 0.9,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "399",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"aynucorporadiscord\" />; nukopoli, aynu-corpora Discord, 2024 ‹contested›",
+  "issue": "Same as line 59: the citation is split between Ref and inline text, violating consistent citation formatting. Additionally, a Discord source is tagged ‹contested›, which is appropriate, but the formatting remains problematic.",
+  "suggestion": "Use <Ref k=\"aynucorporadiscord\" p=\"nukopoli, 2024\" /> and remove the inline attribution.",
+  "confidence": 0.9,
+  "chapter": "existential-locational-an-oka",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

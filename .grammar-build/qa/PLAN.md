@@ -238,14 +238,26 @@ pilot audit + per-phase stratified sample audits; adjudication of disagreements 
 classification; final read of the 5 theory-magnet chapters; 100% review of high-severity edit
 packets. Nothing else.
 
-## 6. Open decisions (user sign-off)
-1. **Runner mix** — resolved by pilot data; default hybrid (Codex first pass, Sonnet dual-check
-   Tier A, Fable adjudicates). Confirm pilot approach.
-2. **Fix cadence** — ledger-first, batch fixes, staging→promote (recommended) vs fix-as-found.
-3. **Discoveries output** — deferred backlog until post-campaign (recommended per review) vs
-   inline comparative notes during the campaign.
-4. **Lint blocking** — blocking for SSR-throw mirrors + pipeline-token greps; report-only for
-   style checks (recommended).
-5. **aynu-itah side** — when Phase 4 finds the error is in the Sakhalin book: file issues there
-   only (recommended) vs fix both books in one campaign.
-6. **git init** — confirm bringing the repo under git (Phase 0a.1) is acceptable.
+## 6. Decisions (RESOLVED 2026-07-04 — user delegated; Fable decided)
+1. **Runner mix — DECIDED (updated with OpenRouter):** user supplied an OpenRouter key; local
+   LLMs ruled out (GPU already saturated + freeze-risk rule). Sweep tier = 3 cross-family cheap
+   models (qwen3-235b-a22b-2507 $0.09/$0.10, deepseek-v4-flash $0.09/$0.18,
+   gemini-2.5-flash-lite $0.10/$0.40 — ~$0.15/model for the whole book, multi-sweep by design);
+   verify tier = glm-4.7 / kimi-k2.5 / gemini-2.5-flash (~$35–100 for dual-checked Tier A+B)
+   + Codex gpt-5.5 (subscription) as the uncorrelated checker; Fugu 1M for whole-book sweeps;
+   Fable = design/audit/adjudication only. Phase-1 sweep models are FORBIDDEN from
+   memory-based fact-checking (internal consistency + style only).
+2. **Fix cadence — DECIDED:** ledger-first, batch fixes, staging (workers.dev) → promote.
+3. **Discoveries — DECIDED:** deferred backlog until post-campaign.
+4. **Lint blocking — DECIDED:** errors block build (wired); style checks warn.
+5. **aynu-itah — DECIDED:** issues filed only; no edits there during this campaign.
+6. **git — DONE:** repo committed (authored baseline 12e8ead; Phase-0 3ec7b21).
+
+## 7. Execution log
+- 2026-07-04: Phase 0a done — git baseline; PostHog build-crash root-fixed via bun patch
+  (`bun run build` now exits 0); crawl script; staging discipline documented.
+  Phase 0b done — audit suite live + wired into build (0 errors after 16 registry fixes;
+  1,156 warnings recorded); gloss-concordance script replaces the planned 471-call
+  Phase-3 concordance (106 inconsistently-glossed morphemes reported, incl. i= and a=
+  outlier classes). Ledger seeded (28 recon findings). Phase 1 sweeps launched ×3 models.
+  Fugu review of this plan still pending (limit resets Jul 6 09:00).

@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "104",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"paye=an easirki p mak e=iki hawe an\"",
+  "issue": "The morpheme string includes =an (fourth person), but the gloss '4.S' in the aligned gloss line is inconsistent: it should be '4.A' to match the agentive =an suffix.",
+  "suggestion": "Change gloss from '4.S' to '4.A' to align with the =an morpheme in the m field.",
+  "confidence": 0.95,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "119",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "frequency of <i lang=\"ain-Latn\">easirki</i> in the Hokkaido corpus is substantially lower than that of <i lang=\"ain-Latn\">nankor</i> (approximately 1977 tokens) ‹corpus-suggested›",
+  "issue": "The claim cites a precise token count (1977) for nankor but gives no source for this number; the epistemic tag ‹corpus-suggested› is too weak for a specific quantitative claim, especially when no citation supports the number.",
+  "suggestion": "Add a citation (e.g., to Nakagawa 2024 or a corpus source) for the 1977 token figure, or remove the number and rephrase generically.",
+  "confidence": 0.85,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "152",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"devastate COMP think while exist NMLZ COP PRF.MIR track-POSS COP CONJ\"",
+  "issue": "The gloss 'COMP' for kuni is misleading in this context: the note correctly identifies kuni as an irrealis complementizer, but 'COMP' is underspecified and does not reflect the irrealis nature of the clause; it should be 'IRREAL' or similar to distinguish from other complementizers.",
+  "suggestion": "Change 'COMP' to 'IRREAL' or 'PURP' to better reflect the irrealis/purpose function of kuni in this example.",
+  "confidence": 0.9,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "172",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"a=an kuni ne na\"",
+  "issue": "The morpheme =an is glossed as 'be' in '4.A=be', but 'an' is the fourth-person subject marker, not a form of 'to be'; the verb 'to be' is expressed by ne. The gloss 'be' incorrectly assigns the meaning of ne to =an.",
+  "suggestion": "Change gloss from '4.A=be' to '4.A=be' → '4.A' and 'be' → 'be' should be removed; better: '4.A=exist' or simply '4.A' with 'be' reserved for ne.",
+  "confidence": 0.95,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"NEG 4.A=enter.SG be.unable NMLZ COP FIN 2SG.A=enter.SG if be.good FIN\"",
+  "issue": "The morpheme eaykap is glossed as 'be.unable', but in the context of double negation (somo ... eaykap), it likely means 'be able'; the gloss should reflect the positive ability meaning under negation.",
+  "suggestion": "Change 'be.unable' to 'be.able' to correctly reflect the semantics of eaykap in a negative construction.",
+  "confidence": 0.9,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"village devastate PURP come.PL PURP COP PRF.MIR track-POSS COP CONJ\"",
+  "issue": "The morpheme kus is glossed as 'PURP' (purpose), but it appears twice and the second instance (kus ne) is the prospective auxiliary, not a purpose marker; the two uses should be distinguished.",
+  "suggestion": "Use different glosses: first 'PURP' for purpose kus, second 'INT' or 'PROS' for kusu ne to distinguish intentional from prospective use.",
+  "confidence": 0.95,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "316",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"2SG.S=go.SG PURP COP FIN\"",
+  "issue": "The gloss 'PURP' for kus is incorrect in this context: here, kus is part of the prospective auxiliary kus ne, not a purpose marker; it should be glossed as 'PROS' or 'INT' (intentional).",
+  "suggestion": "Change 'PURP' to 'PROS' or 'INT' to reflect the prospective meaning of kus in kus ne.",
+  "confidence": 0.95,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "17",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "kus(u) ne",
+  "issue": "Inconsistent parentheses use: sometimes written as kus(u), sometimes as kusu. The form should be orthographically consistent throughout the chapter.",
+  "suggestion": "Choose one form (preferably kusu) and use it consistently, or use kus(u) consistently if variant spelling is intentional.",
+  "confidence": 0.8,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "70",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">kus(u) ne na</i>",
+  "issue": "Inconsistent parentheses use: kus(u) appears with parentheses here but as kusu elsewhere (e.g., line 306).",
+  "suggestion": "Standardize to either kusu or kus(u) throughout the chapter.",
+  "confidence": 0.8,
+  "chapter": "deontic-necessity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

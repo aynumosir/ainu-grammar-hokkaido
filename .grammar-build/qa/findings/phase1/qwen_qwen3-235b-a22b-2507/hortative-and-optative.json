@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "8",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ro</i>, <i lang=\"ain-Latn\">rok</i>, and <i lang=\"ain-Latn\">no</i>",
+  "issue": "Inconsistent use of italics for Ainu particles: some are italicized, others are not in the same sentence. The pattern starts with italics but later examples (e.g., 'so') are not consistently italicized.",
+  "suggestion": "Ensure consistent use of italics for all Ainu particles in prose, e.g., <i lang=\"ain-Latn\">so</i> when first mentioned.",
+  "confidence": 0.95,
+  "chapter": "hortative-and-optative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "15",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">so</i>",
+  "issue": "The particle <i lang=\"ain-Latn\">so</i> is introduced without italics in a context where other particles are italicized, creating formatting inconsistency.",
+  "suggestion": "Italicize <i lang=\"ain-Latn\">so</i> consistently with <i lang=\"ain-Latn\">ro</i>, <i lang=\"ain-Latn\">rok</i>, and <i lang=\"ain-Latn\">no</i>.",
+  "confidence": 0.9,
+  "chapter": "hortative-and-optative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "130",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"1SG.S=go HORT\"",
+  "issue": "The gloss uses 'HORT' for the particle <i lang=\"ain-Latn\">ro</i>, but in the volitional use with first-person subject, the function shifts from hortative to volitional/optative. The gloss tag should reflect this functional shift, possibly as 'VOL' or 'OPT'.",
+  "suggestion": "Change gloss tag from HORT to VOL or OPT to reflect the shift in function for first-person contexts.",
+  "confidence": 0.85,
+  "chapter": "hortative-and-optative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "164",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"1SG.S=go DEL\"",
+  "issue": "The gloss uses 'DEL' for <i lang=\"ain-Latn\">so</i>, but the particle is described as deliberative, not a standard category. The tag should be standardized or explained. Also, inconsistency with 'HORT' in previous example despite different functions.",
+  "suggestion": "Use a consistent and standard gloss tag such as 'DELIB' or 'OPT' and ensure alignment across particles.",
+  "confidence": 0.8,
+  "chapter": "hortative-and-optative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "11",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Nakagawa places these under the sentence-final particles (終助詞) in the category of 勧誘, 'inducement or invitation', seeking the addressee's agreement <Ref k=\"nakagawa2024\" p=\"333–335\" />.",
+  "issue": "The citation supports the general classification, but the specific term '勧誘' and its translation 'inducement or invitation' may not be directly attested on those pages; the citation may be too broad.",
+  "suggestion": "Verify that the term 勧誘 and its translation appear on pp. 333–335 of Nakagawa 2024; otherwise, adjust the citation scope.",
+  "confidence": 0.7,
+  "chapter": "hortative-and-optative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "175",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"ijas2023\" /> ‹corpus-confirmed›",
+  "issue": "The epistemic tag ‹corpus-confirmed› is applied, but the only support is a citation to Ijäs 2023 without indication of corpus data. If the source is a pedagogical guide, it may not qualify as corpus-confirmed.",
+  "suggestion": "Re-evaluate the epistemic tag: if Ijäs 2023 is a constructed or pedagogical text, use ‹speculative› or ‹original-needs-review› instead.",
+  "confidence": 0.8,
+  "chapter": "hortative-and-optative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "189",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"421–423, 334\" />",
+  "issue": "The page citation jumps from 421–423 to 334, which is out of order and may indicate a citation error or misplaced reference.",
+  "suggestion": "Reorder the pages as \"334, 421–423\" or verify that the content on p. 334 is indeed relevant to the morphological contrast.",
+  "confidence": 0.9,
+  "chapter": "hortative-and-optative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"2SG.O=carry HORT\"",
+  "issue": "The gloss '2SG.O=carry HORT' does not reflect the first-person agent, which is contextually implied but not marked morphologically. The gloss should indicate the implied agent or use a different structure.",
+  "suggestion": "Revise gloss to something like \"2SG.O=carry HORT\" with a note on implied 1SG agent, or use a syntactic placeholder like PRO.",
+  "confidence": 0.85,
+  "chapter": "hortative-and-optative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

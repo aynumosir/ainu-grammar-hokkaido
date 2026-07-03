@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "68",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"kuru\" gl=\"person\" />",
+  "issue": "The etymology note suggests that kur is derived from kuru 'person', but the gloss in the <A> tag is 'person', which may be too generic given that kur is specifically a polite form. The prose states that kur 'selects specifically for a person referent and carries a polite register', so the gloss should reflect this nuance.",
+  "suggestion": "Change gl=\"person\" to gl=\"person (polite)\" to match the description in the surrounding text.",
+  "confidence": 0.9,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "70",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ku=kor-kur",
+  "issue": "The gloss is given as \"1SG.A=have-NMLZ\", but the example is analyzed as meaning 'the one I have; husband'. The verb kor means 'to have', but the nominalizing suffix -kur is being treated here as part of a phrasal nominalization. However, the gloss does not mark -kur as a nominalizer distinct from the root, and it conflates the derivational morphology. The segmentation implies -kur is a bound morpheme, but it's listed as a formal noun in the table, suggesting inconsistency.",
+  "suggestion": "Revise gloss to clarify morpheme boundaries: \"1SG.A=have-NMLZ.POL\" or reconsider segmentation if -kur is a clitic or separate word.",
+  "confidence": 0.85,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "83",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "usi ~ uske",
+  "issue": "Inconsistency in macron usage: other forms like p ~ pe use macrons consistently (pe), but usi ~ uske lacks macron on usi despite likely underlying vowel length. Compare with hi ~ i, where variation is noted. The form uske suggests a long vowel, so usi may be underspecified.",
+  "suggestion": "Standardize to \"usi ~ ūske\" or note the vowel length alternation explicitly.",
+  "confidence": 0.7,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "164",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "eun a=nu usi ka isam",
+  "issue": "The morpheme string includes 'a=nu', glossed as '4.A=hear' in the example, but in this context 'a=nu' means 'to ask about', not 'to hear'. The gloss 'hear' mismatches the translation 'place to ask about'. This is a clear semantic mismatch between gloss and translation.",
+  "suggestion": "Revise gloss from 'hear' to 'ask.about' or similar to align with the translation.",
+  "confidence": 0.95,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "193",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "aynu ek hum",
+  "issue": "The gloss 'sound' for hum does not match the free translation 'the sound of a man's coming'. The verb ek 'come' is not reflected in the gloss, and hum is a noun meaning 'sound', but the construction implies a deverbal nominalization. The glossing fails to show how the clause combines with hum.",
+  "suggestion": "Add a gloss element for the event, e.g., 'come.SOUND' or mark hum as a nominalizer if that is the intended analysis.",
+  "confidence": 0.8,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "235",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "pirka aynu a=ne hum as",
+  "issue": "The gloss gives '4.A=COP' for a=ne, but the free translation is '(someone) felt like a good person', which does not involve copular predication. The verb as 'exist' is existential, not equative. The gloss misrepresents the syntactic role of a=ne here.",
+  "suggestion": "Revise gloss to reflect evidential or experiential use, e.g., '4.A=seem' or '4.A=appear', or reconsider the analysis of a=ne in this context.",
+  "confidence": 0.9,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "323",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"aep\" gl=\"food\" /> (&lt; <i lang=\"ain-Latn\">a=e-p</i>)",
+  "issue": "The gloss 'food' is provided for aep, but the historical decomposition is given as '4.A=eat-NMLZ'. The gloss 'thing one eats' is listed, but the agent prefix a= is glossed as '4.A', while the translation implies a generic 'one'. The fourth person is not clearly explained, and the gloss assumes knowledge of the person system.",
+  "suggestion": "Clarify in a note or gloss that '4.A' refers to a generic/honorific participant, or adjust gloss to 'one.eats-NMLZ'.",
+  "confidence": 0.8,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "328",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ci=ronnu-p",
+  "issue": "The morpheme breakdown is given as '1PL.A=kill-NMLZ', but the meaning is 'fox' (lit. 'things we kill'). The gloss assumes ronnu means 'kill', but in this context it must be a nominalized form meaning 'killed things'. The verb root is likely ron 'kill', but ronnu may be a derived or altered form.",
+  "suggestion": "Revise the morpheme breakdown to reflect the actual verb form, e.g., '1PL.A=kill-PST-NMLZ' or verify the stem ronnu.",
+  "confidence": 0.85,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "333",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ape-o-i",
+  "issue": "The morpheme breakdown is 'fire-enter-NMLZ', but the structure ape-o-i suggests 'fire' (ape) + applicative o + nominalizer i. The gloss 'enter' does not clearly reflect the applicative morphology. The verb root is likely 'enter', but the applicative o licenses the fire as a theme or goal.",
+  "suggestion": "Revise gloss to 'fire-APPL-NMLZ' or 'place.where.fire.enters' to better reflect structure.",
+  "confidence": 0.9,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "361",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<A w=\"ipeusi\" gl=\"restaurant\" />",
+  "issue": "The form ipeusi is given without macron, but if usi is a formal noun meaning 'place', and if the prefix is i- (from hi 'thing/time/place'), then vowel length may be present. Compare with hi ~ i in table. Inconsistency in marking vowel length across the chapter.",
+  "suggestion": "Standardize to \"ipēusi\" or note vowel length variation.",
+  "confidence": 0.7,
+  "chapter": "headless-internally-headed-noun-modifying-clauses",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "lines": "222-223",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "Bugaeva independently states the same finding: Ainu \"does not show the syntactic relations subject and object either by case marking or by word order\" <Ref k=\"nakagawa2022pos\" /> ‹contested›.",
+  "issue": "The text attributes the quote to Bugaeva, but the citation is to Nakagawa 2022pos, not to Bugaeva. This is a citational mismatch: the reference does not support the attribution.",
+  "suggestion": "Either change the citation to a Bugaeva source (e.g. bugaeva2012) or reattribute the quote to Nakagawa and adjust the text accordingly.",
+  "confidence": 1,
+  "chapter": "constituent-order-head-final",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "352-354",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"a=kor kusu ne menoko\" g=\"4.A=have PURP COP woman\" tr=\"The woman I am to marry.\"",
+  "issue": "The gloss uses '4.A=have' (fourth person actor) but the free translation and the note use first person 'I am to have'. The person value in the gloss is inconsistent with the interpretation given in the translation and note.",
+  "suggestion": "Either change the gloss to '1SG.A=have' (if the source allows first person a=) or adjust the translation to reflect fourth person (e.g. 'the woman one is to marry').",
+  "confidence": 1,
+  "chapter": "constituent-order-head-final",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]
