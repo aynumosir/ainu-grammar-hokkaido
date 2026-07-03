@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "294",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "the transitive base (64%) predominates",
+  "issue": "The text states that the transitive base for the Source role is 64%, but Table 1 shows 66% for both Recipient and Source roles.",
+  "suggestion": "Change '64%' to '66%' to match Table 1.",
+  "confidence": 0.95,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "319",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "sir-epa (environment + e-applicative + root pa 'go')",
+  "issue": "The gloss 'environment' for 'sir-' is inconsistent with the standard interpretation of 'sir-' as 'surroundings' or 'vicinity'; 'environment' may be too technical or modern a term.",
+  "suggestion": "Use 'surroundings' or 'vicinity' instead of 'environment'.",
+  "confidence": 0.8,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "321",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2023-12-14) ‹contested›",
+  "issue": "The citation format is inconsistent: the in-text attribution places the username before the source, but standard practice puts the source first. Also, the ‹contested› tag appears after the citation rather than being integrated into the sentence structure.",
+  "suggestion": "Reformat as: (aynu-corpora Discord, nukopoli, 2023-12-14; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+  "confidence": 0.9,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "329",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2023-12-14)",
+  "issue": "Same citation hygiene issue as line 321: inconsistent ordering of username and source, and misplaced ‹contested› tag.",
+  "suggestion": "Reformat as: (aynu-corpora Discord, nukopoli, 2023-12-14; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+  "confidence": 0.9,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "339",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, aynu-corpora Discord, 2024-11-11) ‹speculative›",
+  "issue": "Same citation formatting problem: username and source order is reversed, and epistemic tag placement is inconsistent.",
+  "suggestion": "Reformat as: (aynu-corpora Discord, nukopoli, 2024-11-11; <Ref k=\"aynucorporadiscord\" />) ‹speculative›",
+  "confidence": 0.9,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "351",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> (nukopoli, citing Satō, aynu-corpora Discord, 2024-12-05)",
+  "issue": "Citation format is malformed: 'citing Satō' appears mid-attribution, which disrupts the standard pattern. Also, username and source order is inconsistent.",
+  "suggestion": "Reformat as: (aynu-corpora Discord, nukopoli citing Satō, 2024-12-05; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+  "confidence": 0.85,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "279",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"1SG.A=APPL-APPL-narrate\"",
+  "issue": "The gloss uses two identical \"APPL\" labels, but the two applicatives are semantically distinct: the first is e- (Content), the second is ko- (Addressee). Using the same gloss risks obscuring their functional difference.",
+  "suggestion": "Differentiate the glosses, e.g., \"APPL-Content\" and \"APPL-Addressee\", or use \"APPL-e\" and \"APPL-ko\" if space allows.",
+  "confidence": 0.8,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "30",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"4.A=APPL-fly.up\"",
+  "issue": "The gloss \"fly.up\" does not match the verb stem \"hopuni\", which is glossed elsewhere as \"fly up\". The use of a period instead of a space may be inconsistent with the rest of the chapter.",
+  "suggestion": "Change \"fly.up\" to \"fly up\" to match the prose glossing style.",
+  "confidence": 0.95,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "180",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"4.A=garbage-APPL-chop 4.A=earth-APPL-chop then\"",
+  "issue": "The gloss treats 'garbage' and 'earth' as part of the morpheme segmentation, but they are incorporated nouns, not morphemes of the verb. This misrepresents the structure: the segmentation shows 'mun-ko-tata' and 'toy-ko-tata', so the gloss should reflect that 'mun' and 'toy' are separate lexical items being incorporated.",
+  "suggestion": "Revise gloss to something like: \"4.A=3SG.OBJ-APPL-chop\" with a note that the object is incorporated, or use \"OBJ-garbage-APPL-chop\" to clarify syntactic role.",
+  "confidence": 0.75,
+  "chapter": "applicative-ko",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

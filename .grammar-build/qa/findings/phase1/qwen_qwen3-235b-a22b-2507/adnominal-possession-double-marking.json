@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "173",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "iteki [[e=haw-e] aste]",
+  "issue": "The example includes `e=haw-e` glossed as a 2SG-possessed noun, but the free translation 'don't raise your voice' implies a 2SG object, while the glossing system elsewhere uses `e=` for 2SG subject (A) prefixes. This creates ambiguity about whether the possessive prefix here is correctly aligned with person marking on nouns versus verbs.",
+  "suggestion": "Clarify in the note or gloss whether the prefix `e=` on the noun follows the same paradigm as verbal subject prefixes, or if alignment differs in possessive NPs.",
+  "confidence": 0.85,
+  "chapter": "adnominal-possession-double-marking",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "153-155",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "teke(he)\", \"sapa(ha)\", \"otopi(hi)",
+  "issue": "Inconsistent parentheses and formatting in the presentation of optional long-form suffixes: `teke(he)` vs `sapa(ha)` vs `otopi(hi)`. The closing parenthesis is sometimes attached and sometimes separated.",
+  "suggestion": "Standardize to either `teke(he)`, `sapa(ha)`, `otopi(hi)` or use spaced variants consistently if intended.",
+  "confidence": 0.95,
+  "chapter": "adnominal-possession-double-marking",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "239-241",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">tusa : tusaha</i> 'sleeve'; <i lang=\"ain-Latn\">tasiro : tasiroho</i> 'mountain-knife'",
+  "issue": "Inconsistent hyphenation: `tusaha` and `tasiroho` are written without hyphens, but in the table they appear as part of a colon-separated pair without clarification. Elsewhere in the chapter, affiliative forms like `tekehe` are segmented as `tek-ehe` in examples. This creates orthographic drift.",
+  "suggestion": "Use consistent segmentation (e.g., `tusa : tus-a-ha`, `tasiro : tasir-o-ho`) or clarify that the table uses unsegmented forms.",
+  "confidence": 0.9,
+  "chapter": "adnominal-possession-double-marking",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "331",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"4.POSS=elder.brother-POSS younger.sister-POSS\"",
+  "issue": "The gloss `4.POSS=elder.brother-POSS` suggests that the 4th person prefix marks possession on the brother, but the free translation 'my elder brother's younger sister' implies that the 4th person refers to the speaker (first person). This creates a mismatch between the person indexing in the gloss and the intended referent.",
+  "suggestion": "Revise gloss to `1SG.POSS=elder.brother-POSS` or clarify that 4th person is used deictically for the speaker in narrative context.",
+  "confidence": 0.9,
+  "chapter": "adnominal-possession-double-marking",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "359",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "ku=kor seta hure toan kur kor cape retar",
+  "issue": "The gloss `1SG.A=have dog be.red that person have cat be.white` uses `kur kor` for third person, but the morpheme line has `kur kor`, suggesting two forms where only one (`kor`) is expected for 3SG. The prefix `ku=` is used for 1SG, but no prefix appears on `kur`, creating inconsistency.",
+  "suggestion": "Either revise morpheme line to `ku=kor ... Ø=kor` or adjust gloss to `3SG.A=have` for consistency with zero-marking convention.",
+  "confidence": 0.8,
+  "chapter": "adnominal-possession-double-marking",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "12",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "ku=tek-ehe",
+  "issue": "The form `ku=tek-ehe` uses a hyphen in the suffix, but in other places like the table (line 87), the same form is written without a hyphen as `ku=tekehe`. This creates inconsistency in hyphenation of the affiliative suffix.",
+  "suggestion": "Standardize to either `ku=tek-ehe` or `ku=tekehe` throughout.",
+  "confidence": 0.95,
+  "chapter": "adnominal-possession-double-marking",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "85",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "(<i lang=\"ain-Latn\">k=</i> before V)",
+  "issue": "The parenthetical explanation uses `V` to mean vowel, but this abbreviation is not defined in the chapter and may confuse readers unfamiliar with linguistic notation.",
+  "suggestion": "Replace `V` with `vowel-initial stem` for clarity.",
+  "confidence": 0.9,
+  "chapter": "adnominal-possession-double-marking",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "94",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "(<i lang=\"ain-Latn\">c=</i> before V)",
+  "issue": "Same as line 85: use of `V` without definition and inconsistent capitalization of `V` vs `vowel` elsewhere.",
+  "suggestion": "Replace `V` with `vowel-initial stem`.",
+  "confidence": 0.95,
+  "chapter": "adnominal-possession-double-marking",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

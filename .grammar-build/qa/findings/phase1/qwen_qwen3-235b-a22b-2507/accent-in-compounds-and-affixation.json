@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "8",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "σ1 when σ1 is closed",
+  "issue": "Inconsistent use of Greek sigma: 'σ1' is used for syllable count, but the term 'σ1' appears without italics or special formatting in running text, while it should be consistently formatted as a linguistic variable.",
+  "suggestion": "Wrap σ1 in <i> tags or use a consistent typographic style for linguistic variables throughout.",
+  "confidence": 0.95,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "93",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "kamúy has open σ1 (ka) → 原則2 → accent on mú",
+  "issue": "The syllable breakdown states that σ1 is 'ka', which is open (CV), so the accent should fall on σ2 'mú' by 原則2. However, 'kamúy' has the accent on 'mú', which is correct, but the text says 'accent on mú' — this is accurate, but the phrasing could mislead since 'mú' is the second mora of the first syllable in some analyses. More critically, 'ka' is not a syllable in 'kamuy' — 'ka' is the onset and nucleus of a CVC syllable 'kam'.",
+  "suggestion": "Revise to: 'kamúy has closed σ1 (kam) → 原則1 → accent on σ1 (kam)', but this contradicts the rule stated earlier. Alternatively, reanalyze: if 'ka' is taken as σ1, then 'muy' is σ2, but 'ka' is not a valid syllable in 'kamuy'. There is an internal contradiction in syllabification.",
+  "confidence": 0.8,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "95",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "hórka has closed σ1 (hor) → 原則1 → accent on hór",
+  "issue": "The syllabification of 'hórka' as σ1 = 'hor' implies a CVC structure, which triggers 原則1 (accent on σ1). This is consistent. But 'hor' as a syllable is CV.C? 'hor' is more likely analyzed as a single syllable /hora/ or /hor/ — if /hor/ is CVC, then accent on σ1 is correct. However, in standard Ainu romanization, 'horka' is typically /hor.ka/, making σ1 'hor' (CVC) → 原則1 → accent on 'hor'. This is consistent. But earlier 'kamuy' was split as 'ka.muy', contradicting the treatment of 'hor.ka'. Inconsistency in syllabification between 'kamuy' and 'horka'.",
+  "suggestion": "Ensure consistent syllabification: either both 'kamuy' and 'horka' are split as CVC.CV, or apply the same rules. If 'kamuy' is 'ka.muy' (CV.CV), then σ1 is open → 原則2 → accent on σ2 'muy', but the text says accent is on 'mú', which is in σ1 — contradiction.",
+  "confidence": 0.85,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "50",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "kamúy",
+  "issue": "The macron in 'kamúy' is on the 'u', but in standard Ainu orthography, pitch accent is marked with an acute accent, not macron. The use of macron here is incorrect; it should be acute for high pitch.",
+  "suggestion": "Replace macron with acute accent: kamúy → kámuy or keep acute on ú as in mú.",
+  "confidence": 0.9,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "52",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "kamúynomi",
+  "issue": "The compound form 'kamúynomi' shows the accent on 'ú', but if the accent is on σ2 of the first element 'kamuy', and 'kamuy' is two syllables, then the accent should be on 'mú', not 'ka'. But 'kamúy' has accent on 'mú', so 'kamúynomi' implies the accent remains on 'mú', which is now σ2 of the compound. The spelling 'kamúynomi' places the accent mark on 'a', which is incorrect.",
+  "suggestion": "Correct to 'kamúynomi' → 'kamuyómo' or clarify syllabification. If the accent is on 'mú', write 'kamuyómo'.",
+  "confidence": 0.75,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "131",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "somó",
+  "issue": "The text states that 'somo' has open σ1 (so) → 原則2 → accent on σ2 (mó). But 'somo' is two syllables: so.mo. σ1 is 'so' (CV, open), so accent should fall on σ2 'mó'. This is correct. But in the example 'ka somó ki', 'somó' is written with accent on 'mó', which is σ2 — correct. However, in the doubled form 'somósomo', the accent is on the first 'mó', which is σ2 of the first 'somo', but now σ1 of the entire word is 'so' (CV), so 原則2 should place accent on σ2, which is correct. But the text says 'only the front element's accent survives', which implies the accent pattern is preserved, but in 'somósomo', the first syllable is still light, so the rule applies. No contradiction, but the explanation could be clearer.",
+  "suggestion": "Clarify that the accent rule applies to the entire prosodic word, not just the front stem.",
+  "confidence": 0.7,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "153",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "yáykoytak",
+  "issue": "The form 'yáykoytak' has an accent mark on 'á', but the preceding text says the accent is on 'yáy', which is σ1. 'yáy' is one syllable, so the accent should be on that syllable. But 'yáykoytak' writes 'áy', which may imply two syllables. Should be 'yáykoytak' or 'yáykoytak' — but the accent mark placement is ambiguous.",
+  "suggestion": "Use consistent syllable boundaries: if 'yay' is one syllable, mark it as 'yáy', not 'yáy'.",
+  "confidence": 0.8,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "237",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "*kóre",
+  "issue": "The text states that a regular causative from 'kor' + '-e' would yield *kóre, with σ1 'kor' (CVC) → 原則1 → accent on σ1 'kó'. But 'kóre' has the accent on 'ó', which is in the first syllable — correct. However, the expected form should be 'kóre' with accent on 'ko', but the spelling 'kóre' suggests the accent is on the vowel 'o', which is fine. But the actual attested form is 'koré', with accent on the second syllable. The contradiction is that the expected form *kóre has accent on σ1, but the attested form 'koré' has accent on σ2, which contradicts the rule unless the word is reanalyzed as disyllabic with open σ1.",
+  "suggestion": "Clarify that the expected form *kóre follows from CVC σ1 → 原則1, but attested 'koré' suggests reanalysis as CV.CVC with open σ1 → 原則2.",
+  "confidence": 0.9,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "253",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=kore",
+  "issue": "The morpheme segmentation is 'a=kore', but the Ainu line is 'a=koré', with accent on 'ré'. The gloss '4.A=give' does not reflect the accent. The free translation says 'be given', which matches 'give'. But the morpheme 'kore' is written without accent in 'm', but with accent in 'ain'. Inconsistency between 'm' and 'ain' fields.",
+  "suggestion": "Ensure 'm' field matches 'ain' field: change 'kore' to 'koré' in 'm'.",
+  "confidence": 0.95,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "349",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "en= (closed σ1 (en, CVC))",
+  "issue": "The text states that 'en=' has closed σ1 (en, CVC), so 原則1 places accent on σ1. But 'en' is two consonants and a vowel — 'e' is the nucleus, 'n' the coda — so 'en' is CVC, closed. Correct. But in the example 'wa én=kore', the accent is on 'én', which is σ1 — correct. But the spelling 'én' shows the accent, which is fine. No error, but the earlier analysis of 'ku=' as CV (open) vs 'en=' as CVC (closed) is critical. 'ku' is CV, open; 'en' is CVC, closed — so different accent rules apply. This is consistent.",
+  "suggestion": "No change needed, but ensure consistency in syllabification of clitic forms.",
+  "confidence": 0.6,
+  "chapter": "accent-in-compounds-and-affixation",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

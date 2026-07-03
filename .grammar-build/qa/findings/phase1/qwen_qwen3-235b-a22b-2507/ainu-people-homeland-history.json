@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "32",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Hokkaido",
+  "issue": "Inconsistent use of macron: 'Hokkaido' appears without macron, while standard orthography in the field typically uses 'Hokkaidō'. The rest of the chapter uses 'Hokkaido' consistently, but this may reflect a house style choice; however, the lack of consistency with external standards or potential drift within the book is a concern.",
+  "suggestion": "Check house style; if macrons are used elsewhere, change to 'Hokkaidō'.",
+  "confidence": 0.85,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "41",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Hokkaido",
+  "issue": "Same as line 32: 'Hokkaido' lacks macron. The chapter uses 'Hokkaido' throughout, but this may conflict with standard academic romanization which prefers 'Hokkaidō'.",
+  "suggestion": "Standardize to 'Hokkaidō' unless house style explicitly omits macrons.",
+  "confidence": 0.85,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "117",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Hokkaido itself is a secondary territory for the Ainu; their earlier homeland was on Honshu",
+  "issue": "This claim contradicts the earlier section (lines 41–47) which presents Hokkaido as the 'core of the historical Ainu territory'. While both statements may be contextually valid (core vs. ancestral), the lack of transitional explanation creates an apparent contradiction between 'core' and 'secondary'.",
+  "suggestion": "Add clarifying phrase: e.g., 'while Hokkaido was the core of the historical Ainu territory, it is considered a secondary territory in deeper historical terms'.",
+  "confidence": 0.9,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "92",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "a figure close to 25,000, possibly more, has been suggested for Hokkaido alone <Ref k=\"janhunen2022\" p=\"§2.5\" />",
+  "issue": "The citation points to Janhunen 2022 §2.5, but the same figure is repeated in line 225 with the same citation. If both claims rely solely on the same source, it is acceptable, but the repetition without additional support may overstate confidence in a contested demographic estimate.",
+  "suggestion": "Consider marking the claim with ‹contested› or ‹speculative› to reflect uncertainty in precolonial population figures.",
+  "confidence": 0.8,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "225",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "from a figure close to the precolonial Ainu population of roughly 25,000",
+  "issue": "Repeats the population figure from line 92 without additional citation or qualification. While same source (Janhunen 2022 §2.5), the uncritical repetition risks reinforcing a potentially uncertain number as more established than it is.",
+  "suggestion": "Add ‹contested› or ‹corpus-suggested› to flag epistemic status of the 25,000 figure.",
+  "confidence": 0.75,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "200",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "‹contested as to the interpretation of Ainu agency and objectives›",
+  "issue": "The phrasing 'contested as to' is awkward and unidiomatic. Standard usage would be 'contested interpretation of Ainu agency and objectives' or 'it is contested whether Ainu agency and objectives were accurately interpreted'.",
+  "suggestion": "Rephrase to: '‹contested interpretation of Ainu agency and objectives›'",
+  "confidence": 0.95,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "18",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "utari",
+  "issue": "The form <i lang=\"ain-Latn\">utari</i> is presented as an affiliative of <i lang=\"ain-Latn\">utar</i>, but standard romanization in Ainu scholarship typically uses macrons for vowel length. The absence of macron may obscure phonological detail (e.g., *utarī*).",
+  "suggestion": "Check standard form: if vowel is long, consider <i lang=\"ain-Latn\">utarī</i>.",
+  "confidence": 0.8,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Ainu Moshir",
+  "issue": "The term is given as <i lang=\"ain-Latn\">Ainu Moshir</i> but segmented as <i lang=\"ain-Latn\">aynu mo-sir</i>, suggesting a discrepancy in capitalization and romanization. 'moshir' should likely be lowercase in the segmented form, and the romanization should be consistent.",
+  "suggestion": "Standardize to <i lang=\"ain-Latn\">Ainu mosir</i> or <i lang=\"ain-Latn\">aynu mosir</i> for consistency.",
+  "confidence": 0.9,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Karapto",
+  "issue": "The Ainu name for Sakhalin is given as <i lang=\"ain-Latn\">Karapto</i>, but standard romanization in Janhunen and other sources typically uses <i lang=\"ain-Latn\">Karafto</i> or <i lang=\"ain-Latn\">Karpoto</i>. This may be a spelling variant, but inconsistency with established forms should be checked.",
+  "suggestion": "Verify preferred romanization; if standard is 'Karafto', update accordingly.",
+  "confidence": 0.7,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "82",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"kamuy\" gl=\"god, bear\" />",
+  "issue": "The gloss 'god, bear' suggests polysemy, but in Ainu, 'kamuy' means 'god' generally, and 'bear' is a specific instance (e.g., 'kamuy' as 'divine being', with bear being one manifestation). The gloss risks implying 'bear' is a primary meaning rather than a contextual referent.",
+  "suggestion": "Revise to: 'god (esp. bear)' or 'divine being, e.g. bear'",
+  "confidence": 0.85,
+  "chapter": "ainu-people-homeland-history",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

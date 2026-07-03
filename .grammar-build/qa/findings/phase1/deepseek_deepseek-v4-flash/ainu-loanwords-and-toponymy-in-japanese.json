@@ -1,0 +1,50 @@
+[
+ {
+  "lines": "170",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "‹corpus-confirmed›",
+  "issue": "The epistemic tag ‹corpus-confirmed› is attached to a claim supported only by a Discord message (nukopoli, aynu-corpora Discord). The tag is inflated and misleading for a non-corpus source.",
+  "suggestion": "Replace ‹corpus-confirmed› with a more appropriate tag such as ‹discord-attribution› or remove the tag entirely, since the claim is not based on a corpus analysis.",
+  "confidence": 0.95,
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "25, 151, 186, 216, 435, 452",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "Hokkaidō (line 25) / Hokkaido (lines 151, 186, 216, 452)",
+  "issue": "The chapter inconsistently uses both 'Hokkaidō' (with macron) and 'Hokkaido' (without macron) for the same geographical term. A scholarly grammar should adopt a consistent romanization (preferably the long-vowel form 'Hokkaidō').",
+  "suggestion": "Standardise to 'Hokkaidō' throughout, or choose one convention and apply it uniformly. If the macron is used in the rest of the book, ensure it is used here as well.",
+  "confidence": 0.9,
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "252, 258, 264, 270, 276, 282, 288, 294",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "atu- (no diacritic), Nipë (e-umlaut), Sirupa (no diacritic), Töya (o-umlaut), karimba (no diacritic), matô (o-circumflex), tôra (o-circumflex), sömö (o-umlaut)",
+  "issue": "The table of Old Japanese forms employs inconsistent diacritics: circumflex, umlaut, and no diacritic all appear for what are presumably long vowels. This creates an impression of carelessness and may confuse readers unfamiliar with the conventions.",
+  "suggestion": "Standardise the OJ romanization to the system used elsewhere in the book (likely the modified Hepburn with macrons, e.g., ō, ē). Use macrons uniformly or decide on a single diacritic type.",
+  "confidence": 0.7,
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "384",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "None were verified in the sources directly read for this chapter",
+  "issue": "This phrase is addressed to the editorial/production process (reporting what was and wasn't checked in the pipeline) rather than to the reader. While methodological caveats belong in a grammar, the phrasing 'in the sources directly read for this chapter' sounds like an internal note.",
+  "suggestion": "Rephrase to something more reader-facing, e.g., 'None have been verified against primary sources for the present study; they are listed here with the status recorded.' Alternatively, rely on the [UNVERIFIED] status in the table and remove the meta-sentence.",
+  "confidence": 0.6,
+  "chapter": "ainu-loanwords-and-toponymy-in-japanese",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

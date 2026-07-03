@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "7",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"e-\" gl=\"applicative: about, by means of, at\" />",
+  "issue": "The gloss for 'e-' includes 'at' (location), but in the table at lines 74 and 90, 'e-' is associated with 'at (location)' while 'o-' is restricted to 'toward (place)'. The example at lines 29–37 uses 'emus e-tuye' with 'sword' as an instrument, not a location, yet 'at' in the gloss could mislead as a locative-only reading.",
+  "suggestion": "Revise gloss to clarify scope, e.g., \"applicative: about, by means of, at (location)\" only if supported by consistent usage; otherwise, consider splitting senses.",
+  "confidence": 0.85,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "45",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<span lang=\"ja\">充当接頭辞</span>",
+  "issue": "The Japanese term is not translated in the surrounding English prose, though the chapter otherwise translates Japanese terms (e.g., '格の関係を表わす接頭辞' is translated later). This creates inconsistency in accessibility.",
+  "suggestion": "Add translation: 'lit. \"applicative prefix\"'.",
+  "confidence": 0.75,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "76",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Content 39%, Theme-Patient 17%, Instrument 13%",
+  "issue": "The table attributes 13% of e- uses to Instrument, but in section 'Semantic roles of the applied object' (line 120), Content is 39% and Theme-Patient 17%, with Instrument and locative roles 'only at third place'. However, the table lists Instrument at 13% and does not mention locative roles in the e- row, creating ambiguity about whether 'locative roles' are included under another label.",
+  "suggestion": "Clarify in the table or text whether 'Instrument 13%' includes or excludes locative roles, or list locative roles separately if distinct.",
+  "confidence": 0.9,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "196",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">nep e-simpay</i> 'worry <em>about</em> something'",
+  "issue": "The free translation uses 'about', but the morpheme 'e-' is glossed in the A tag at line 7 as 'about, by means of, at'. The example illustrates Content/Theme, but the translation 'worry about' may not fully capture the semantic nuance of 'Content' as a thematic object.",
+  "suggestion": "Use a more precise translation like 'worry over something' or 'be anxious about something' to better reflect 'Content' role.",
+  "confidence": 0.8,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "229",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord 2024)",
+  "issue": "The claim about the etymology of 'eykaun' is labeled ‹speculative›, which is appropriate, but the only support is a Discord post. However, the epistemic tag is correctly applied and not inflated, so this is borderline. Still, attaching a Ref to 'aynucorporadiscord' without page or message ID weakens verifiability.",
+  "suggestion": "Add message locator if available, e.g., 'aynu-corpora Discord 2024-03-15 #etymology'; otherwise, retain but ensure tag remains ‹speculative›.",
+  "confidence": 0.7,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "287",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "ku=sir-ko-peker",
+  "issue": "The form is analyzed as containing 'ko-', but the gloss does not reflect the applicative function. The free translation 'I pass the night' implies subject raising, but no gloss is provided for the example to show how 'ko-' contributes.",
+  "suggestion": "Add an Ex block or clarify glossing of 'ko-' in this compound.",
+  "confidence": 0.8,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "301",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "ko-e- or e-ko-",
+  "issue": "The text states that 'ko-e-' and 'e-ko-' are both attested, but in the example immediately following, 'e-yay-e-isoytak' shows 'e-' twice, not 'ko-e-' or 'e-ko-'. This creates confusion about whether the stacking order is being illustrated correctly.",
+  "suggestion": "Provide an example of 'ko-e-' or 'e-ko-' stacking explicitly, or revise to match the cited form.",
+  "confidence": 0.95,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "344",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "at-e-uk",
+  "issue": "The form 'at-e-uk' is translated as 'catch with a net', but the glossing of 'e-' as 'by means of' would require alignment. However, no gloss is provided in an Ex block, and the structure implies 'e-' encodes the instrumental, but this is not made explicit.",
+  "suggestion": "Add an Ex block with glossing to confirm alignment of 'e-' with 'with a net'.",
+  "confidence": 0.8,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "368",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "he-puni",
+  "issue": "The form 'he-puni' is written with 'he-', but the prefix is described as 'head' and may vary in spelling (e.g., 'he-' vs. 'he='); consistency with macrons or hyphenation should be checked. No macron is used, but if 'he' is long, it should be 'hē'.",
+  "suggestion": "Verify vowel length and orthography; if short, current form is fine.",
+  "confidence": 0.6,
+  "chapter": "applicative-system-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

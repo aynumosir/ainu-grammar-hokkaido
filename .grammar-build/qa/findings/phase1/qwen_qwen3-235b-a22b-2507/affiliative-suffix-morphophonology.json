@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "105",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"ku=kema-ha ka arka ku=tek-ehe ka arka\"",
+  "issue": "The morpheme string contains two instances of 'ka arka', but the gloss line only provides one set of glosses for 'ka arka', leading to a misalignment between morphemes and glosses.",
+  "suggestion": "Duplicate the gloss 'also hurt' to match both instances: g=\"1SG.A=leg-POSS also hurt 1SG.A=hand-POSS also hurt\"",
+  "confidence": 0.95,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "106",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"1SG.A=leg-POSS also hurt 1SG.A=hand-POSS also hurt\"",
+  "issue": "The gloss line has two instances of 'also hurt', but the morpheme line has two 'ka arka' sequences, each corresponding to one 'also hurt'. The gloss is correct in content but was flagged due to prior misalignment in the morpheme line; however, once the morpheme line is fixed, the gloss should be verified for exact alignment.",
+  "suggestion": "Ensure the gloss exactly aligns with the corrected morpheme string after duplication.",
+  "confidence": 0.85,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "163",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"a=yup-ihi an=sa-ha haw-ehe ka isam\"",
+  "issue": "The morpheme string contains three main constituents: 'a=yup-ihi', 'an=sa-ha', and 'haw-ehe ka isam', but the gloss only provides three gloss units for what should be at least four (including 'also absent'). The gloss 'voice-POSS also absent' combines two morphemes into one gloss unit without proper segmentation.",
+  "suggestion": "Revise the gloss to segment all elements: g=\"4.A=elder.brother-POSS 4.A=elder.sister-POSS voice-POSS also absent\"",
+  "confidence": 0.9,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "322",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"a=yup-i an a=sa-ha an\"",
+  "issue": "The morpheme string has five elements: 'a=yup-i', 'an', 'a=sa-ha', 'an', but the gloss only provides four: '4.A=elder.brother-POSS exist 4.A=elder.sister-POSS exist'. The second 'an' is not aligned with a separate gloss item, causing a mismatch.",
+  "suggestion": "Ensure each 'an' is individually glossed: g=\"4.A=elder.brother-POSS exist 4.A=elder.sister-POSS exist\"",
+  "confidence": 0.8,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "454",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"ku=tek-ehe piro hi ta ku=kor totto noya ham uk wa\"",
+  "issue": "The morpheme string contains multiple elements including 'piro hi ta' and 'noya ham uk wa', but the gloss 'get.injured NMLZ LOC' only covers part of it and does not align with all morphemes. The gloss omits 'piro' and misaligns 'hi ta' as 'NMLZ LOC' without clear correspondence.",
+  "suggestion": "Revise the gloss to fully align: g=\"1SG.A=hand-POSS injury NMLZ LOC 1SG.A=have mother mugwort leaf take CONJ\"",
+  "confidence": 0.9,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "455",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"1SG.A=hand-POSS get.injured NMLZ LOC 1SG.A=have mother mugwort leaf take CONJ\"",
+  "issue": "The gloss 'get.injured' does not match the morpheme 'piro', which is more accurately a noun meaning 'injury' or 'wound'. The verb 'get injured' is not directly expressed in the morpheme string, creating a semantic mismatch.",
+  "suggestion": "Change 'get.injured' to 'injury' to reflect the nominal form: g=\"1SG.A=hand-POSS injury NMLZ LOC 1SG.A=have mother mugwort leaf take CONJ\"",
+  "confidence": 0.95,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "270",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ami-hi</i>",
+  "issue": "Inconsistent hyphenation: in the table, long affiliative forms are written with a hyphen (e.g., 'ami-hi'), but in the text and examples, they are often written without (e.g., 'amihi' in line 314). This creates orthographic drift within the chapter.",
+  "suggestion": "Standardize to either hyphenated (ami-hi) or closed (amihi) form throughout the chapter.",
+  "confidence": 0.9,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "314",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">yupihi</i> at 759 tokens and <i lang=\"ain-Latn\">sikihi</i>",
+  "issue": "The forms 'yupihi' and 'sikihi' are written without hyphens, while in the table they appear as 'yupi-hi' and 'siki-hi'. This inconsistency in hyphenation of the long affiliative suffix occurs within the same chapter.",
+  "suggestion": "Use consistent hyphenation: either always 'yupi-hi' or always 'yupihi'.",
+  "confidence": 0.95,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "13",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<em>-hV₁</em>",
+  "issue": "The subscript '₁' is used in '-hV₁', but in other places (e.g., line 337) it is written as 'V₁' without italics on the 'V'. For typographic consistency, the variable 'V' should be styled uniformly (likely italic) when used as a symbol.",
+  "suggestion": "Ensure consistent typographic styling of linguistic variables: use <em>V</em>₁ or V₁ throughout.",
+  "confidence": 0.7,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "567",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"vovin1993\" paren />",
+  "issue": "The citation <Ref k=\"vovin1993\" paren /> appears with an unknown attribute 'paren', which is not defined in the markup specification. This may be a pipeline leak or malformed citation.",
+  "suggestion": "Verify correct citation syntax; likely should be <Ref k=\"vovin1993\" /> or with 'p' for pages if intended.",
+  "confidence": 0.85,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

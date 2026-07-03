@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "10",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">-re</i> after a vowel or the glides <i lang=\"ain-Latn\">y</i>, <i lang=\"ain-Latn\">w</i>",
+  "issue": "Inconsistent formatting of glide list: 'y', 'w' are presented with italics and lang tags individually, while the vowel environment is not broken down. This creates a visual and structural inconsistency in how phonological environments are displayed.",
+  "suggestion": "Format all segment types uniformly, e.g., 'after a vowel or the glides <i lang=\"ain-Latn\">y</i>, <i lang=\"ain-Latn\">w</i>' → 'after <i lang=\"ain-Latn\">V</i>, <i lang=\"ain-Latn\">y</i>, or <i lang=\"ain-Latn\">w</i>' for parallelism.",
+  "confidence": 0.9,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "110",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "it does not shift the pitch-accent kernel of the stem — <i lang=\"ain-Latn\">kú-re</i> and <i lang=\"ain-Latn\">sinót-te</i>, not <i lang=\"ain-Latn\">*ku-ré</i> or <i lang=\"ain-Latn\">*sinot-té</i>",
+  "issue": "The accent marking in <i lang=\"ain-Latn\">kú-re</i> suggests the accent remains on the first syllable, but this conflicts with the expected allomorphy pattern: if the accent kernel is preserved, it should be shown on the stem alone (e.g., <i lang=\"ain-Latn\">kú</i>-re), not spreading to the suffix. The notation implies a surface form where the accent is on the suffix, which contradicts the claim.",
+  "suggestion": "Revise to <i lang=\"ain-Latn\">kú-re</i> (with accent on stem) and clarify that the accent does not shift to the suffix, avoiding forms like *ku-ré which falsely suggest suffixal accent.",
+  "confidence": 0.85,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "116",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">iyairaykere</i> ({'<'} <i lang=\"ain-Latn\">i=yairayke-re</i>",
+  "issue": "Inconsistent hyphenation: the lexical form is given as <i lang=\"ain-Latn\">iyairaykere</i> (unhyphenated), but the segmented form is <i lang=\"ain-Latn\">i=yairayke-re</i>. This creates a mismatch between the surface form and its morphological breakdown.",
+  "suggestion": "Hyphenate consistently: either <i lang=\"ain-Latn\">iyairayke-re</i> or clarify that the unhyphenated form is a lexicalized compound.",
+  "confidence": 0.9,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "117",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">irankarapte</i> ({'<'} <i lang=\"ain-Latn\">i=rankarap-te</i>",
+  "issue": "Same issue as above: surface form <i lang=\"ain-Latn\">irankarapte</i> lacks hyphenation, but segmented form <i lang=\"ain-Latn\">i=rankarap-te</i> includes it. This creates inconsistency in morphological representation.",
+  "suggestion": "Use <i lang=\"ain-Latn\">irankarap-te</i> for consistency with segmentation.",
+  "confidence": 0.9,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "120",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord, 2024)",
+  "issue": "The community source is dated 2024, but the text states the observation is speculative (‹speculative›), yet it is attributed to a 2024 source while the book was written in 2025–2026. This is not a future date issue (which should not be flagged), but the citation year (2024) is earlier than the book’s writing period, which is acceptable. However, the speculative tag is appropriate given the source type.",
+  "suggestion": "No change needed, but verify that 2024 is not a typo for 2025 or 2026 given the context of ongoing community discussion.",
+  "confidence": 0.7,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "236",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "113 vi / 16 vt (+ 61 indirect)",
+  "issue": "The table entry implies that 61 of the 190 tokens are indirect causatives, but it does not specify whether these are from vi or vt bases. However, the total count (113 + 16 + 61 = 190) suggests double-counting: the 61 indirect tokens may already be included in the 113 vi and 16 vt counts. This creates a numerical contradiction.",
+  "suggestion": "Clarify whether the 61 indirect tokens are a subset of the 129 direct tokens or a separate category. Rephrase as '113 vi (61 indirect), 16 vt (all direct)' or similar to avoid additive confusion.",
+  "confidence": 0.95,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "288",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"1PL.EXCL.O=eat-CAUS CONJ 4.O=give person 1PL.EXCL.O=abandon like seem\"",
+  "issue": "The gloss for 'ipe-re' is 'eat-CAUS', but the free translation is 'fed', which is correct. However, the morpheme segmentation includes 'un=ipe-re', where 'un=' is glossed as '1PL.EXCL.O', but in the gloss line it appears as '1PL.EXCL.O=eat-CAUS'. The morpheme 'ipe' means 'eat a meal', not 'eat' — the gloss should reflect the lexical entry <A w=\"ipe\" gl=\"eat a meal\" />, so 'eat-CAUS' is underspecified.",
+  "suggestion": "Change gloss from 'eat-CAUS' to 'eat-meal-CAUS' or 'meal-eat-CAUS' to align with the defined gloss for <A w=\"ipe\" gl=\"eat a meal\" />.",
+  "confidence": 0.9,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "318",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"4.O=hand take CONJ 4.O=enter-CAUS track-POSS COP then\"",
+  "issue": "The morpheme 'uk' is glossed as 'hand', but in the sentence it is part of 'i=teke uk', which means 'took my hand'. 'teke' means 'hand', so 'uk' likely means 'my' or is a possessive marker. The gloss 'hand' for 'uk' is incorrect; it should be a possessive or pronoun.",
+  "suggestion": "Verify the segmentation: likely 'i=teke' = 'my hand', so 'uk' may be a typo or mis-segmentation. Correct to 'i=teke' as a unit or adjust segmentation.",
+  "confidence": 0.6,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "381",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">é-re</i> 'make eat'",
+  "issue": "The form <i lang=\"ain-Latn\">é-re</i> begins with an accented é, but no explanation is given for the accent or capitalization. Elsewhere, causative forms are written with lowercase (e.g., <i lang=\"ain-Latn\">e-re</i>). This suggests a possible typo or inconsistent orthographic representation.",
+  "suggestion": "Use <i lang=\"ain-Latn\">e-re</i> for consistency unless the accent is phonemically significant and intended.",
+  "confidence": 0.85,
+  "chapter": "causative-morphological-re-e-te",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

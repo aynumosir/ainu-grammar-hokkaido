@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "116",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"sonno\" gl=\"truly\" /> and <A w=\"sino\" gl=\"truly\" />",
+  "issue": "The gloss for both 'sonno' and 'sino' is given as 'truly', but in the table at lines 89–91, 'sonno' and 'sino' are listed as variants with the gloss 'truly, really'. The gloss in the prose is underspecified compared to the table.",
+  "suggestion": "Update the gloss in the prose to match the table: gl=\"truly, really\" for both.",
+  "confidence": 0.95,
+  "chapter": "adverbs-degree-comparison",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "177",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"be.quick-ADV be.good\"",
+  "issue": "The gloss uses 'ADV' for tunas-no, but the established glossing convention in this chapter uses 'adverbializer' for -no (e.g., line 32). The gloss is inconsistent with the chapter's own standards.",
+  "suggestion": "Change 'be.quick-ADV' to 'be.quick-adverbializer' to align with the established glossing practice.",
+  "confidence": 0.98,
+  "chapter": "adverbs-degree-comparison",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "218",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "selected directional adverbs are given below (Nakagawa 2024: 277–279, 表68–69):",
+  "issue": "The citation uses a parenthetical format (Nakagawa 2024: 277–279) rather than the standard <Ref> component, breaking citation consistency. The table is also not explicitly labeled as from Nakagawa, though implied.",
+  "suggestion": "Replace the parenthetical with a proper <Ref k=\"nakagawa2024\" p=\"277–279\" /> and ensure the table is clearly attributed.",
+  "confidence": 0.9,
+  "chapter": "adverbs-degree-comparison",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "308",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<table>",
+  "issue": "The table uses '表70' and '表71' (Japanese for 'Table 70', 'Table 71') in the rowspan cells, but the rest of the chapter is in English. This creates language inconsistency.",
+  "suggestion": "Replace '表70' with 'basic (Table 70)' and '表71' with 'transitive-conversion (Table 71)' for consistency.",
+  "confidence": 0.85,
+  "chapter": "adverbs-degree-comparison",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "442",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"this fish 1SG.O=more.than be.big\"",
+  "issue": "The gloss 'more.than' does not match the established gloss for akkari as 'exceeding' or 'more than, exceeding' in the text. It also splits 'more.than' with a dot, which is inconsistent with other glosses.",
+  "suggestion": "Change 'more.than' to 'exceeding' or 'more.than' (without dot) to match prior usage.",
+  "confidence": 0.95,
+  "chapter": "adverbs-degree-comparison",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "457",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<A w=\"koraci\" gl=\"like, in the manner of\" /> and <A w=\"neno\" gl=\"like\" />",
+  "issue": "The gloss for 'neno' is given as 'like', but in the earlier table (line 323), 'neno' is listed with the gloss 'like, in the manner of (equative)', matching 'koraci'. The prose gloss is underspecified.",
+  "suggestion": "Update the gloss to 'like, in the manner of' for consistency with the table.",
+  "confidence": 0.9,
+  "chapter": "adverbs-degree-comparison",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "463",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "has not been distinguished as a formal ambiguity in the sources read for this chapter",
+  "issue": "The phrase 'sources read for this chapter' is a pipeline register leak — it refers to the author's research process rather than the linguistic content.",
+  "suggestion": "Rephrase to: 'has not been distinguished as a formal ambiguity in the available sources'.",
+  "confidence": 0.95,
+  "chapter": "adverbs-degree-comparison",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "474",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "from the sources read for this chapter",
+  "issue": "Again, 'sources read for this chapter' is a register leak referring to the author's workflow, not the linguistic analysis.",
+  "suggestion": "Rephrase to: 'from the available sources'.",
+  "confidence": 0.95,
+  "chapter": "adverbs-degree-comparison",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

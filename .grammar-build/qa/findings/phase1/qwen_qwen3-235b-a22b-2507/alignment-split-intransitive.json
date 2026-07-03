@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "78",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<Ex m=\"mean cuk ne pe merayke=an ka somo ki no\"",
+  "issue": "The morpheme string includes 'ka somo ki no', which appears to be a clause-final sequence, but the gloss 'be.cold autumn COP thing feel.cold=4.S FOC NEG do ADV' does not align clearly with these words; 'ka' is glossed as FOC but 'somo' as 'thing', while in context it seems 'somo' may be a negated verb and 'ka' a conjunction or focus marker. The alignment between m-words and g-words is ambiguous or incorrect.",
+  "suggestion": "Realign the gloss to match the morpheme sequence: possibly 'ka' = COP, 'somo' = do, 'ki' = NEG, 'no' = ADV? Or revise m-segmentation if 'somo ki no' is a single verb complex.",
+  "confidence": 0.85,
+  "chapter": "alignment-split-intransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "98",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"rir-tursere=an kor mom=an ru-we ene an hi ne hine\"",
+  "issue": "The morpheme 'ene' is not glossed in the 'g' field. It appears in the middle of the clause and is likely a noun or adverb (possibly 'track' or 'path'), but no corresponding gloss is provided.",
+  "suggestion": "Add a gloss for 'ene', e.g., 'track' or 'path', to maintain one-to-one alignment.",
+  "confidence": 0.9,
+  "chapter": "alignment-split-intransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "137",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "A broader active-alignment characterisation sometimes associated with <Ref k=\"shibatani1990\" /> cannot be attributed on the basis of the pages read; that book could not be independently consulted for this grammar ‹speculative›.",
+  "issue": "The epistemic tag ‹speculative› is appropriately applied, but the citation hygiene is compromised: the claim about Shibatani 1990 is based on indirect association, not direct evidence, yet the Ref points to the source as if it were consulted. This risks misleading the reader into thinking the source supports the claim.",
+  "suggestion": "Either remove the Ref k=\"shibatani1990\" or clarify that it is not directly cited, e.g., 'sometimes associated with Shibatani (1990), though not directly consulted'.",
+  "confidence": 0.8,
+  "chapter": "alignment-split-intransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "195",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "the pages read",
+  "issue": "The phrase 'the pages read' is a pipeline register leak, referring to the authors' source-reading process rather than the content itself. It addresses internal workflow, not the reader.",
+  "suggestion": "Replace with 'the available portion' or 'the published abstract', which describes the source objectively.",
+  "confidence": 0.95,
+  "chapter": "alignment-split-intransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "264",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "No factbase example shows",
+  "issue": "The term 'factbase' is a pipeline register leak, referring to an internal database not known to the reader. It should not appear in the published text.",
+  "suggestion": "Replace with 'No attested example in the corpus shows' or 'No example in the available corpus shows'.",
+  "confidence": 0.95,
+  "chapter": "alignment-split-intransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "267",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "the normalised frequency layer strips personal-affix clitics and cannot supply per-affix counts for individual S forms.",
+  "issue": "Reference to 'the normalised frequency layer' and its technical limitations is a pipeline register leak, exposing internal data-processing stages not relevant to the reader.",
+  "suggestion": "Rephrase to focus on the outcome: 'The frequency-normalized data do not preserve personal-affix clitics, so per-affix counts for individual S forms are unavailable.'",
+  "confidence": 0.9,
+  "chapter": "alignment-split-intransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "196",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">apto as</i>",
+  "issue": "Inconsistency in spacing: 'apto as' is written with a space, while other Ainu phrases in italics are typically treated as single units or hyphenated when compound. Compare with 'mean cuk' in line 79, which is also a two-word phrase but not commented on. However, 'apto as' may be a fixed expression and should be checked for standard orthographic treatment.",
+  "suggestion": "Verify if 'apto as' should be written as 'apto-as' or remain spaced; ensure consistency across the chapter.",
+  "confidence": 0.7,
+  "chapter": "alignment-split-intransitive",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

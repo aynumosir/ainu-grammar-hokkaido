@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "25-27",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"a=yupi-hi i=resu hine oka=an pe ne hike\"",
+  "issue": "The morpheme string includes 'pe ne', which appears to be a nominalizer plus copula construction, but the gloss 'NMLZ COP CONJ' assigns 'CONJ' to 'hike', not to 'pe ne'. However, 'hike' is a connective particle and should be glossed as CONJ, while 'pe ne' should be glossed as NMLZ + COP without CONJ. The current gloss misaligns the grammatical labels.",
+  "suggestion": "Change the gloss to: \"4.POSS=elder.brother-POSS 4.O=raise CONJ exist.PL=4.S NMLZ COP CONJ\" → \"4.POSS=elder.brother-POSS 4.O=raise CONJ exist.PL=4.S NMLZ COP .CONJ\" and adjust the CONJ label to align with 'hike', or split the gloss to reflect that 'pe ne' is not a conjunction.",
+  "confidence": 0.95,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "31",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "note=\"Each clause around hine is finite: i=resu carries its own fourth-person object index, oka=an its fourth-person S; pe ne closes the chain on a formal-noun predicate before the further connective hike.\"",
+  "issue": "The note claims that 'pe ne' closes the chain on a formal-noun predicate, implying finality, yet it is followed by the connective 'hike', which contradicts the idea of closure. This creates a logical inconsistency in the description of clause chaining.",
+  "suggestion": "Revise the note to clarify that 'pe ne' forms a nominalized predicate but does not terminate the clause chain, as it is followed by the connective 'hike'.",
+  "confidence": 0.9,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "136",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">ayne</i>",
+  "issue": "The form 'ayne' appears only once in the inventory table and is not mentioned elsewhere in the chapter. It may be a typographical variant or error for 'awa', which is discussed in detail. If intentional, it should be cross-referenced or explained.",
+  "suggestion": "Verify whether 'ayne' is a dialectal or orthographic variant of 'awa' or another form; if so, add a note or correct the form for consistency.",
+  "confidence": 0.7,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "221-229",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "‹corpus-suggested›",
+  "issue": "The evidence grade ‹corpus-suggested› is applied to the claim about 'cleaner items' and their frequencies, but the supporting data (corpus counts) are presented without citation to a specific corpus source or methodology. The claim relies on internal corpus data that is not externally referenced.",
+  "suggestion": "Add a citation to the aligned Hokkaido corpus source (e.g., a Ref entry for the corpus) to justify the counts and the ‹corpus-suggested› tag.",
+  "confidence": 0.85,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "249-251",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"honewort 1SG.A=gather CONJ soup place 1SG.A=put.in\"",
+  "issue": "The free translation says 'I gathered honewort and put it into the soup', implying that 'it' refers to the honewort. However, the gloss does not show any object indexing or coreference between the two clauses. The second clause 'k=omare' (1SG.A=put.in) lacks an object, making the anaphora invisible in the gloss.",
+  "suggestion": "Revise the gloss to include object indexing or add a note explaining the discourse-level anaphora, or adjust the gloss to reflect the object of 'put.in' as third person or demonstrative if morphologically present.",
+  "confidence": 0.9,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "397-399",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"rain fall CONJ snow fall CONJ water be.big CONJ truly 1SG.S=come intend FIN\"",
+  "issue": "The morpheme 'kusne' is glossed as 'intend FIN', but 'kusne' is described elsewhere as a reduced form of 'kusu ne' (future/intention auxiliary). The gloss should reflect that 'kusne' is a fused auxiliary, not a verb with 'intend' as a lexical verb.",
+  "suggestion": "Change the gloss from 'intend FIN' to 'FUT' or 'INTENT.AUX' to match the grammatical description of 'kusu ne' as an intention auxiliary.",
+  "confidence": 0.95,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "417-419",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"Japanese language INS 1SG.A=raise NMLZ COP CONJ Ainu language one even not.understand PL\"",
+  "issue": "The second clause 'aynu itak sinep ka erampewtek pa' is glossed without subject indexing on 'erampewtek', yet the translation says 'they do not understand'. The plural 'pa' is glossed as PL, but there is no subject index (e.g., 3PL) on the verb. The gloss fails to show the subject indexing that must be present on the verb if it is finite.",
+  "suggestion": "Revise the gloss to include the subject index on 'erampewtek', e.g., '3PL.S=not.understand PL', or clarify if 'pa' is the subject and indexed accordingly.",
+  "confidence": 0.9,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "476-478",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"now 4.A=say way Piratur QUOT 4.A=say voice-POSS COP\"",
+  "issue": "The morpheme 'sekor' is glossed as 'QUOT', which is acceptable, but the structure 'Piratur sekor a=ye' is a naming frame. The gloss does not reflect that 'sekor' functions as a complementizer or quotative marker in a fixed construction, and 'QUOT' may be too generic given its specific role in naming and reported speech.",
+  "suggestion": "Use a more precise gloss such as 'CALL' or 'NAME' in this context, or add a note distinguishing quotative vs. naming uses of 'sekor'.",
+  "confidence": 0.8,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "506-508",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">Tek</i> is not a connective in Saru or Chitose, where it is an auxiliary, yet in most other dialects it links clauses",
+  "issue": "The text states that 'tek' is not a connective in Saru or Chitose but is one in other dialects. However, earlier in the chapter (line 192), 'p' and 'hike' are listed under 'narrative cohesion' as connectives, and 'tek' is not mentioned in the inventory table. This omission creates an inconsistency between the inventory and the dialect discussion.",
+  "suggestion": "Add 'tek' to the inventory table under a relevant domain (e.g., 'sequential' or 'narrative cohesion') with a dialect note, or explain why it is excluded despite its connective use in other dialects.",
+  "confidence": 0.95,
+  "chapter": "clause-linkage-overview",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

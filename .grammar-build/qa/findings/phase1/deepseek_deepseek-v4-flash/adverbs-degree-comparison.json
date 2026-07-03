@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "30-35",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Nakagawa identifies five formation routes for adverbs proper... The five are: (i) basic/lexical adverbs (本来型); (ii) intransitive verb + the suffix -no; (iii) bare intransitive conversion; (iv) transitive verb conversion; and (v) directional formations built on locative roots with pronominal prefixes and directional suffixes.",
+  "issue": "The chapter lists five formation routes. However, the section on 'Postpositional adverbs' treats them as a separate category, yet some postpositional adverbs (e.g., akkari) are said to be derived via transitive verb conversion (route iv). This creates overlap and confusion about whether postpositional adverbs are a sixth route or a subset.",
+  "suggestion": "Clarify that postpositional adverbs are a syntactic subclass that includes items from routes (i) and (iv), not a separate formation route.",
+  "confidence": 0.7,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "63-113 and 116-120",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Table lists 'sonno' / 'sino' as 'truly, really' in degree subclass. Prose says 'The degree adverbs sonno and sino are cross-class items: both also function as general prenominals meaning 'real, true''.",
+  "issue": "In the table, sonno/sino are classified under 'degree' only. In the prose, they are described as 'cross-class items' (adverb and prenominal). This is a mild inconsistency: the table implies they are only degree adverbs, while the prose correctly notes their dual function. The table's category label should reflect the dual nature.",
+  "suggestion": "Add a note to the table or rename the subclass as 'degree / prenominal' to match the prose.",
+  "confidence": 0.8,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "132-142",
+  "category": "gloss-mismatch",
+  "severity": "low",
+  "quote": "ikiya seta e=na",
+  "issue": "The gloss for 'na' is not provided. The example uses a form 'na' which is not glossed in the text. The cited community source may gloss it, but in the chapter it is presented without gloss for the reader.",
+  "suggestion": "Add a gloss gloss for 'na' in the inline example or add an explanatory note.",
+  "confidence": 0.6,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "213-215",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "in Ishikari, Tokachi, and eastern Hokkaido dialects the initial h- drops, so herepasi 'seaward' appears as erepasi",
+  "issue": "The prose says the h- drops, giving 'erepasi'. In the table on line 265, 'herepasi' is shown with the note '(→ erepasi in E. dialects)'. This is consistent. However, the prose says 'Ishikari, Tokachi, and eastern Hokkaido' but the table note says just 'E. dialects'. Minor inconsistency in specificity.",
+  "suggestion": "Align the prose with the table note, or vice versa. E.g., harmonize to 'eastern dialects (including Ishikari and Tokachi)'.",
+  "confidence": 0.5,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "395-402",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "‹corpus-suggested›",
+  "issue": "The claim that pon is used as a diminutive degree modifier is tagged ‹corpus-suggested›. This is an epistemic tag that leaks the production pipeline, telling the reader about the evidence grade rather than the linguistic fact. The tag should be removed or converted to a note about evidence status if the style guide permits such tags.",
+  "suggestion": "Remove '‹corpus-suggested›' or replace with a natural-language hedge like 'appears to be'.",
+  "confidence": 0.9,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "462-463",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "‹speculative›",
+  "issue": "The claim that the overlap between equative 'as ... as' and manner 'like' has 'not been distinguished as a formal ambiguity in the sources read for this chapter' is tagged ‹speculative›. This is a pipeline note about what the sources do or don't contain, not a linguistic fact.",
+  "suggestion": "Remove the tag and rephrase if needed (e.g., 'The overlap between the equative and manner readings of koraci has not been formally distinguished in the literature reviewed here.')",
+  "confidence": 0.9,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "473-474",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "from the sources read for this chapter",
+  "issue": "This is a meta-commentary addressed to the production process (what the author did or did not read), not a statement about Ainu. Leaks the pipeline.",
+  "suggestion": "Remove 'from the sources read for this chapter' and simply state that the frequency has not been quantified.",
+  "confidence": 0.9,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "142",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "(nukopoli, aynu-corpora Discord 2025; <Ref k=\"aynucorporadiscord\" />) ‹contested›",
+  "issue": "A community Discord source is cited with the epistemic grade ‹contested›. However, ‹contested› implies there is disagreement among sources, but the only source cited is a single Discord message. Contradictory: a single source cannot be 'contested' by itself; it needs at least one other source to contest it. This inflates the epistemic grade.",
+  "suggestion": "Either remove '‹contested›' or provide a second source that contests the claim.",
+  "confidence": 0.8,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "148-154",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "Community corpus analysis records the traditional order ani patek... (nukopoli, aynu-corpora Discord 2024; <Ref k=\"aynucorporadiscord\" />) ‹corpus-suggested›",
+  "issue": "The claim is based on a Discord message but tagged ‹corpus-suggested›, which implies it is based on corpus evidence. The Discord message may be a corpus analysis, but the citation is to a Discord message, not to a corpus. The tag inflates the evidence level.",
+  "suggestion": "Either change the tag to something lower (e.g., '‹speculative›' if the source is informal) or provide a proper corpus citation.",
+  "confidence": 0.6,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "188-191",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "the most frequently attested members of this bare-conversion pattern are tunas 'be quick; quickly', moyre 'be gentle; gently', hanke 'be near; nearby', and tuyma 'be far; far away'",
+  "issue": "The semicolon in the glosses is used to separate the verb meaning from the adverb meaning. This is ambiguous because the same semicolon is used elsewhere to separate alternative glosses (e.g., 'be good, be well' on line 22). Consider using a different separator or explicitly labeling the two meanings.",
+  "suggestion": "Use a comma or add labels: 'be quick (verb), quickly (adverb)'.",
+  "confidence": 0.5,
+  "chapter": "adverbs-degree-comparison",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

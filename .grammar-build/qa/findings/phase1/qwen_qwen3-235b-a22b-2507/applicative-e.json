@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "47",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "sirkorkamuy emus e-tuye",
+  "issue": "The morpheme string contains 'e-tuye' but the gloss 'APPL-cut' does not reflect the hyphen; the segmentation implies a prefix + root structure not mirrored in the glossing format. The gloss should use a hyphen or mark the boundary to align with morphemic analysis.",
+  "suggestion": "Change gloss to 'APPL-cut' → 'APPL-cut' (no change needed if format is standard) OR update m to 'e-tuye' → 'e-tuye' if already correct; but consistency with other examples like 'e-apkas' suggests hyphen is expected. However, 'e-tuye' in m is correctly hyphenated; the issue may be that 'APPL-cut' should be 'APPL-cut' (same). No actual mismatch — likely false alarm. Re-evaluate: 'e-tuye' is correctly segmented and glossed as APPL-cut. No real issue.",
+  "confidence": 0.3,
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "174",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=kemaha a=e-apkas easkay",
+  "issue": "The morpheme string shows 'a=e-apkas' but the gloss renders it as '4.A=APPL-walk', where the outer 'a=' is glossed as '4.A' (agent) while the same prefix appears on the noun as '4.POSS'. This creates a person/number inconsistency: the same prefix cannot simultaneously mark possessive and agent unless the syntax supports coreference, which is not clarified. The gloss implies two separate prefixes but the form uses the same 'a='.",
+  "suggestion": "Revise gloss to clarify that the same prefix 'a=' serves dual functions (possessive on noun, agent on verb), e.g., '4.POSS=foot 4=APPL-walk can' or add note on clitic sharing.",
+  "confidence": 0.9,
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "220",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "i=corpokke e=e-hoyupu yak pirka na",
+  "issue": "The morpheme string has 'e=e-hoyupu', which includes two instances of 'e-', but the gloss renders only one as '2SG.A=APPL-run'. The first 'e=' is correctly glossed as agent, but the second 'e-' (the applicative) is not separated in the gloss. This conflates the second-person clitic 'e=' with the applicative 'e-', creating ambiguity in alignment.",
+  "suggestion": "Revise morpheme string or gloss to distinguish the two 'e-' elements, e.g., m: 'i=corpokke e= e-hoyupu' OR g: '1SG.O=under 2SG.A=APPL-run COND good FIN' with space to show separation.",
+  "confidence": 0.95,
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "130",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Cause",
+  "issue": "The table lists 'Cause' as a role with 8%, but this role does not appear in Nakagawa's four sub-types listed earlier (§2: instrument, purpose, content/theme, locative). This introduces a category not previously defined or discussed, creating a contradiction between classification systems.",
+  "suggestion": "Either add 'Cause' to the initial typology or clarify that this is a separate corpus-based categorization not aligned with Nakagawa's types.",
+  "confidence": 0.9,
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "149",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Manner (<i lang=\"ain-Latn\">kor</i>)",
+  "issue": "Manner is listed as a role with 3%, but it was not included in Nakagawa’s four sub-types outlined in the earlier table (instrument, purpose, content/theme, locative). This creates a mismatch between the two classification schemes presented in the same chapter.",
+  "confidence": 0.85,
+  "suggestion": "Either revise the first table to include Manner and other roles, or add a note explaining that the second table uses a more fine-grained, corpus-driven classification.",
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "154",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Path (<i lang=\"ain-Latn\">peka</i>)",
+  "issue": "Path is listed separately from Location in the second table (each 2%), but in the first table (Nakagawa's types), locative (type 4) combines both location and path under one category with shared paraphrase via 'ta/un/peka'. This contradicts the later disaggregation.",
+  "suggestion": "Revise either table to align: either combine Path and Location in the second table or split the first table accordingly.",
+  "confidence": 0.9,
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "19",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"137, 140\" />",
+  "issue": "The citation claims evidence for the valency-class diagnostic from pages 137 and 140, but the surrounding prose attributes this diagnostic to Nakagawa 2024 generally without specifying that those pages contain the diagnostic test. If those pages do not actually discuss the diagnostic, the citation is misplaced.",
+  "suggestion": "Verify that pp. 137 and 140 discuss the prefixal agent indexes and resistance to S suffixes; otherwise, correct page numbers or remove citation.",
+  "confidence": 0.7,
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "31",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "kotán",
+  "issue": "The accent is marked on 'kotán' but not on 'ekótanne' — inconsistency in macron or accent marking. If 'kotán' has acute accent, 'ekótanne' should reflect prosodic shift. Orthographic inconsistency in accent representation within a minimal pair example.",
+  "suggestion": "Mark accent on 'ekótanne' as 'ekótanne' or use macrons consistently if that is the system.",
+  "confidence": 0.8,
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "275",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "nukopoli, aynu-corpora Discord 2026",
+  "issue": "The phrase 'nukopoli, aynu-corpora Discord 2026' appears in parentheses mid-sentence as a source attribution, which is acceptable, but it is formatted as narrative text rather than being fully integrated or cited via Ref. This risks appearing like editorial commentary.",
+  "suggestion": "Ensure that all such attributions are enclosed in <Ref> or marked clearly as community sources; currently it is cited correctly with <Ref k=\"aynucorporadiscord\" />, so may not be an error.",
+  "confidence": 0.5,
+  "chapter": "applicative-e",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

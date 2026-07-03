@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "340",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "The basis is the factbase-verified five-use analysis of the fourth person and the directly read combination data",
+  "issue": "The terms 'factbase-verified' and 'directly read' are pipeline register leaks, referring to internal editorial processes rather than scholarly exposition.",
+  "suggestion": "Replace with neutral phrasing such as 'The basis is the empirically supported five-use analysis of the fourth person and the primary combination data.'",
+  "confidence": 0.95,
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "344",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "the synthesis is offered as an integrative label for an existing pattern, not as a new theoretical commitment.",
+  "issue": "The phrase 'not as a new theoretical commitment' reads as defensive meta-commentary likely intended for editorial review, not the reader.",
+  "suggestion": "Rephrase to: 'the synthesis is presented as an integrative description of an existing pattern.'",
+  "confidence": 0.85,
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "231",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "‹speculative›. The 1990 work in which an active characterisation may appear was not available to verify",
+  "issue": "The phrase 'was not available to verify' is a register leak indicating source-access limitations during production, not suitable for final prose.",
+  "suggestion": "Rephrase to: 'The 1990 work in which an active characterisation may appear remains inaccessible.'",
+  "confidence": 0.9,
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "335-345",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "This overlay does not replace the tripartite exponence... ‹original-needs-review›. The basis is the factbase-verified five-use analysis...",
+  "issue": "The epistemic tag ‹original-needs-review› is editorial and should not appear in the published text; its presence here inflates the claim's status despite being tied to internal pipeline language ('factbase-verified', 'directly read').",
+  "suggestion": "Remove ‹original-needs-review› and rephrase the sentence to present the synthesis as interpretive rather than original.",
+  "confidence": 0.95,
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "76",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "4 / INDEF",
+  "issue": "Inconsistent formatting of 'INDEF' — elsewhere written as 'indefinite' (e.g., line 89, 117); 'INDEF' may be acceptable as a label but should be consistent.",
+  "suggestion": "Standardize as '4 / indefinite' to match prose usage.",
+  "confidence": 0.8,
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "117",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "i=erampokiwen i=rewsire wa i=kore",
+  "issue": "The gloss '4.O=pity 4.O=lodge CONJ 4.O=give' assigns '4.O' to all three verbs, but the free translation 'Take pity on me and give me lodging' implies first-person object ('me'), not fourth-person. This creates a mismatch between gloss and translation.",
+  "suggestion": "Revise either the gloss or the translation to align: if the speaker is the fourth person, the translation should reflect that; if not, the gloss should not use '4.O'.",
+  "confidence": 0.95,
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "296-298",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "hunak wa arki=an ru-we an",
+  "issue": "The free translation 'Where have you come from?' uses 'you' (singular), but the gloss 'come.PL=4.S' and the note indicate plural verb stem selected by the fourth-person suffix. The translation should reflect either plural addressee or honorific singular.",
+  "suggestion": "Revise translation to 'Where have you (hon.) come from?' or 'Where have you all come from?' to match the morphology.",
+  "confidence": 0.9,
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "16",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "the relationship between indexing and nominal argument structure are taken up",
+  "issue": "Subject-verb agreement error: 'relationship' is singular, but verb is plural 'are'.",
+  "suggestion": "Change 'are' to 'is'.",
+  "confidence": 1,
+  "chapter": "alignment-hierarchical-and-the-debate",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "18",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">poronno</i>",
+  "issue": "The form <i lang=\"ain-Latn\">poronno</i> is presented without macrons, but if the underlying stem <i lang=\"ain-Latn\">poro</i> has a long vowel (as is typical in standard Ainu orthography), the reduplicated form should reflect vowel length, possibly as <i lang=\"ain-Latn\">poronō</i> or <i lang=\"ain-Latn\">poronno</i> with a macron if phonemically justified. The current form may obscure phonological transparency.",
+  "suggestion": "Check whether <i lang=\"ain-Latn\">poronno</i> should be marked with a macron (e.g., <i lang=\"ain-Latn\">poronō</i>) to reflect vowel length; ensure consistency with treatment of long vowels in other reduplicated or suffixed forms.",
+  "confidence": 0.7,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "86",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">moyre-no</i>",
+  "issue": "The form <i lang=\"ain-Latn\">moyre-no</i> appears with a hyphen in the table, but in line 60 it is given as <i lang=\"ain-Latn\">moyre-no</i> in an <Ex> block, and in line 11 it as <i lang=\"ain-Latn\">moyre-no</i>. While hyphenation is consistent, the stem <i lang=\"ain-Latn\">moyre</i> may etymologically derive from <i lang=\"ain-Latn\">moyra</i> with a long vowel; if so, the form should be <i lang=\"ain-Latn\">moyrāno</i> or similar. Absent macron marking, this may reflect orthographic inconsistency.",
+  "suggestion": "Verify vowel length in <i lang=\"ain-Latn\">moyre</i>; if long, consider marking it (e.g., <i lang=\"ain-Latn\">moyrē-no</i>) for consistency with phonological norms.",
+  "confidence": 0.65,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "98",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">ponno</i>",
+  "issue": "The form <i lang=\"ain-Latn\">ponno</i> is presented without macrons, but if derived from <i lang=\"ain-Latn\">pon</i> 'be small', reduplication or suffixation may involve vowel lengthening. Compare with <i lang=\"ain-Latn\">poronno</i>; if one is marked for length, the other should be too. Orthographic inconsistency may obscure phonological pattern.",
+  "suggestion": "Check whether <i lang=\"ain-Latn\">ponno</i> should be <i lang=\"ain-Latn\">ponnō</i> or otherwise marked for vowel length; ensure parallel treatment with <i lang=\"ain-Latn\">poronno</i>.",
+  "confidence": 0.7,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "88",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"ijas2023\" /> (constructed)",
+  "issue": "The citation includes '(constructed)' in the evidence status cell, which appears to be a meta-comment rather than a citation. This may be a register leak, as 'constructed' is already marked in the <Ex> block above and should not appear as part of the citation.",
+  "suggestion": "Remove '(constructed)' from the table cell and retain only <Ref k=\"ijas2023\" />, as the constructed status is already indicated in the example markup.",
+  "confidence": 0.9,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "109",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "<i lang=\"ain-Latn\">*porono</i>",
+  "issue": "The form <i lang=\"ain-Latn\">*porono</i> is marked with an asterisk to indicate unacceptability, but the expected regular form would be <i lang=\"ain-Latn\">poro-no</i> with a hyphen, consistent with <i lang=\"ain-Latn\">moyre-no</i> and <i lang=\"ain-Latn\">tunas-no</i>. The form <i lang=\"ain-Latn\">*porono</i> lacks the hyphen, suggesting either a spelling error or incorrect morphological segmentation.",
+  "suggestion": "Change <i lang=\"ain-Latn\">*porono</i> to <i lang=\"ain-Latn\">*poro-no</i> for morphological consistency with other derived adverbs.",
+  "confidence": 0.95,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "52",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"be.fast-ADV be.good\"",
+  "issue": "The gloss 'be.fast-ADV' combines a semantic gloss 'be.fast' with a syntactic category 'ADV', while 'be.good' is purely semantic. This is inconsistent. If 'ADV' is a syntactic tag, it should be separated or consistently applied. Moreover, 'be.fast' as a gloss for <i lang=\"ain-Latn\">tunas</i> is correct, but the suffix <i lang=\"ain-Latn\">-no</i> should be glossed as a derivational morpheme (e.g., 'ADV' or 'ADVZ'), not fused with the root.",
+  "suggestion": "Change gloss to \"be.fast-ADVZ be.good\" or \"be.fast\" \"ADV\" \"be.good\" with aligned segmentation, ensuring derivational suffix is separately glossed.",
+  "confidence": 0.9,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "61",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "g=\"be.slow-ADV\"",
+  "issue": "Same issue as line 52: the gloss fuses 'be.slow' with 'ADV'. The suffix <i lang=\"ain-Latn\">-no</i> should be glossed separately as a derivational morpheme (e.g., 'ADVZ' or 'ADV'), not attached to the root gloss.",
+  "suggestion": "Change to \"be.slow\" \"ADVZ\" or similar, with proper segmentation.",
+  "confidence": 0.9,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "16",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "the boundary between suffix and post-predicate particle is difficult to draw exactly",
+  "issue": "The text asserts ambiguity in distinguishing the suffixal and particle uses of <i lang=\"ain-Latn\">no</i>, but later sections clearly separate the two: word-level suffixation (Section 2) vs. clause-level particle use (Section 3). The claim of indistinct boundary is not reflected in the analysis, which treats them as distinct.",
+  "suggestion": "Revise the sentence to acknowledge analytical distinction despite formal identity, rather than asserting boundary difficulty.",
+  "confidence": 0.8,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "43",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "<i lang=\"ain-Latn\">tunas-no</i>, from <A w=\"tunas\" gl=\"be fast\" />",
+  "issue": "The form <i lang=\"ain-Latn\">tunas-no</i> is written with a hyphen, but in line 80 it appears in the table as <i lang=\"ain-Latn\">tunas-no</i>, and in the example as <i lang=\"ain-Latn\">tunas-no</i>. While consistent, the stem <i lang=\"ain-Latn\">tunas</i> may have a long vowel (cf. *tunās); if so, macron marking should be applied consistently.",
+  "suggestion": "Verify vowel length in <i lang=\"ain-Latn\">tunas</i> and apply macron if needed (e.g., <i lang=\"ain-Latn\">tunās-no</i>) across all instances.",
+  "confidence": 0.6,
+  "chapter": "adverbializer-no",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

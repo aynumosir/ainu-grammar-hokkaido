@@ -1,0 +1,38 @@
+[
+ {
+  "lines": "93-94",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "rank among the most frequent modal forms in the corpus (<i lang='ain-Latn'>easkay</i> 1,324 tokens, rank 139; <i lang='ain-Latn'>eaykap</i> 1,082 tokens, rank 169) ‹corpus-confirmed›",
+  "issue": "A corpus-confirmed claim with token counts is stated without any source citation. The tag implies the data come from a specific corpus, but no Ref is provided.",
+  "suggestion": "Add a source reference (e.g., the corpus name or a citation key) after the figures, or change the tag to match the evidential basis actually available.",
+  "confidence": 0.95,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "131-133 and 319",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "[131-133] 'In the auxiliary function the <i lang='ain-Latn'>e-</i> is part of the lexical form rather than a live derivational operation' (no tag) vs [319] 'the auxiliary function is grammaticalized and the <i lang='ain-Latn'>e-</i> is no longer a live derivation in this context ‹speculative›'",
+  "issue": "The same claim about the frozen status of e- in the auxiliary function is given in two places with different epistemic grades: unmarked (implying consensus or established fact) in section 2, and ‹speculative› in section 4. This internal inconsistency needs to be resolved by choosing one uniform grade or explaining the difference.",
+  "suggestion": "Harmonize the epistemic grading: either remove the ‹speculative› tag in line 319 if the claim is well supported, or add a comparable tag to the earlier passage if it is considered speculative.",
+  "confidence": 0.9,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "284",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "the read sources do not derive the circumstantial-obstacle semantics compositionally from this decomposition",
+  "issue": "'the read sources' is a phrase typical of the author’s production notes rather than a formal reference to the literature. It sounds as if the writer is saying 'the sources I have read' rather than introducing published work.",
+  "suggestion": "Replace 'the read sources' with 'the available literature' or 'the sources consulted' to better suit scholarly prose.",
+  "confidence": 0.8,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

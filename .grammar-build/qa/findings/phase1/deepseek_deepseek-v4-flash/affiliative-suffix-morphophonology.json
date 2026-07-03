@@ -1,0 +1,110 @@
+[
+ {
+  "lines": "30",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "Glide-final stems (type ②) take the uniform suffix -e(he).",
+  "issue": "This statement is contradicted by the table at lines 134–152 which shows both short -e and long -ehe; the uniform suffix is described as -e(he) but the examples show the pattern is -e (short) + -ehe (long), not a single uniform form. The prose says the suffix is uniform but the data show two subforms.",
+  "suggestion": "Reword to 'take the uniform suffix -e (short) or -ehe (long)' or clarify that -e(he) means the suffix is always based on /e/ but has a short and long variant.",
+  "confidence": 0.7,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "247",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "gl='4.A=elder.brother-POSS exist 4.A=elder.sister-POSS exist'",
+  "issue": "The free translation at line 324 says 'I have an elder brother; I have an elder sister.' but the gloss line does not include a 1SG element; it glosses a= as 4th person. This is a person mismatch between the gloss (4th person) and the translation (1st person). Third-person or fourth-person reference might be intended but the translation uses first person.",
+  "suggestion": "Either change the gloss to 1SG or change the translation to match the gloss, e.g., 'one has an elder brother; one has an elder sister' or 'he/she has an elder brother; he/she has an elder sister'.",
+  "confidence": 0.6,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "492",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "par → paro(ho), not the expected ③-1 *parihi",
+  "issue": "The irregular par yields paro(ho). But the diachrony section at line 495 says the ending -o(ho) is from or 'inside, place', not an affiliative suffix proper. This contradicts the description of the true irregular as having an affiliative form not derived by productive rules; the irregularity is explained as a different morphological source (locative suffix), which is consistent with the rules if or takes the long form. The inconsistency is in labeling it a 'true irregular' when it in fact follows a regular pattern for a different lexical element.",
+  "suggestion": "Reframe: 'par is not irregular in the strict sense; its affiliative-like ending is the locative long-form of the noun or' or remove 'true irregular' label.",
+  "confidence": 0.5,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "572–585",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "A community analysis of Sakhalin data observes ... (nukopoli, 2024-12-16) ‹proposed›",
+  "issue": "The epistemic tag ‹proposed› is used here, but this tag is not listed among the defined evidence grades in the briefing (which lists consensus, contested, corpus-confirmed, corpus-suggested, speculative, original-needs-review). This introduces an undefined tag.",
+  "suggestion": "Replace ‹proposed› with an allowed tag such as ‹speculative› or ‹corpus-suggested›, or add it to the list of allowed tags if intentional.",
+  "confidence": 0.5,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "30, 128, 176",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "type ② (...) uniform suffix -e(he); uniformly -e(he); suffix -e(he)",
+  "issue": "The notation -e(he) is used throughout, but in the data table rows (e.g., 136-137) the short form is shown as -e and the long as -ehe, not as -e(he). The parentheses notation implies one suffix with an optional element, but the data show two distinct forms. This is an orthographic inconsistency in how the suffix is described vs. displayed.",
+  "suggestion": "Consistently use either -e(he) with a note that it has short and long forms, or list -e/-ehe throughout.",
+  "confidence": 0.4,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "320–328",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "cite='huber2025:251'",
+  "issue": "The citation uses a colon followed by a page number ('huber2025:251'), while other citations in the chapter use 'p.' or 'p. ' (e.g., 'p. 227', 'p. 152–153'). This colon-based format is inconsistent with the rest of the chapter's style. Also, the date '2025' is within the acceptable range per the briefing, so that's fine.",
+  "suggestion": "Change to 'huber2025 p. 251' or 'huber2025:251'—just make it consistent with other citations.",
+  "confidence": 0.3,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "10–12",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "long form consisting of copy vowel + /h/ + copy vowel again, notated -hV₁ where V₁ is the stem's last vowel",
+  "issue": "The notation -hV₁ suggests the suffix is hV₁ (e.g., -ha, -he, -hi, etc.). However, the long forms in the tables show -ha, -he, -hi, etc. This is consistent, but the explanation says 'copy vowel + /h/ + copy vowel again', which would produce VhV (e.g., aha, ehe), but the actual suffix is -hV (e.g., -ha, -he). The description should say '/h/ followed by copy vowel', not 'copy vowel + /h/ + copy vowel again', to match the data.",
+  "suggestion": "Change to '/h/ followed by the copy vowel' or adjust the notation to VhV if that's the intended analysis.",
+  "confidence": 0.8,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "12–13, 44",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "notated -hV₁ where V₁ is the stem's last vowel",
+  "issue": "The notation -hV₁ is introduced but then the long suffix is referred to as '-hV₁' (line 13) and also as 'long form adds -hV₁' (line 44). However, the suffix in the tables is shown as -ha, -he, etc., which is -hV (without the subscript 1). The subscript 1 is only in the explanation. In line 44, it says 'adds -hV₁' but the examples show -ha, -hu, etc. This is inconsistent: the notation should match the displayed forms.",
+  "suggestion": "Use -hV or adjust all occurrences to -hV₁ consistently in prose.",
+  "confidence": 0.6,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "467–476",
+  "category": "internal-inconsistency",
+  "severity": "low",
+  "quote": "tar-at → tar-ac-i(hi)",
+  "issue": "The compound form is given as 'tar-ac-i(hi)' but the base noun is 'at' (cord); the consonant change from /t/ to /c/ (palatalization) before /i/ is not explained. This could be a regular phonological process, but it's not mentioned elsewhere, creating a potential inconsistency in the description of how compounds form.",
+  "suggestion": "Add a note or cross-reference about palatalization of /t/ before /i/ in compounds, or adjust the example to match expected forms without palatalization.",
+  "confidence": 0.3,
+  "chapter": "affiliative-suffix-morphophonology",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

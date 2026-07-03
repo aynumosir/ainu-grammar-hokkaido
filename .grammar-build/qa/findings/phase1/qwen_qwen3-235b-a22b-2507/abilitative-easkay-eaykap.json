@@ -1,0 +1,123 @@
+[
+ {
+  "lines": "93",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">easkay</i> 1,324 tokens, rank 139; <i lang=\"ain-Latn\">eaykap</i> 1,082 tokens, rank 169",
+  "issue": "Inconsistent use of commas in large numbers: '1,324' uses a comma, but '1,082' also uses a comma — this is consistent, but the issue is that spaces or non-breaking commas should be used in Ainu orthography contexts to avoid confusion with morpheme separators. However, since both use commas, there is no inconsistency in formatting between the two. No actual orthographic drift here.",
+  "suggestion": null,
+  "confidence": 0.3,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "113",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"314\" />; <Ref k=\"bugaeva2012\" p=\"494\" /> ‹consensus›",
+  "issue": "The epistemic tag ‹consensus› is attached to a claim supported only by two citations, which may not constitute broad consensus. This risks epistemic inflation if these are the only sources.",
+  "suggestion": "Downgrade to ‹corpus-confirmed› or verify if additional sources support consensus.",
+  "confidence": 0.8,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "207",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"nakagawa2024\" p=\"315\" />; <Ref k=\"ijas2023\" /> ‹consensus›",
+  "issue": "The claim about lexical encoding of inability is tagged ‹consensus› but supported only by Nakagawa and Ijäs (2023), which may be a single source if Ijäs is not widely corroborated. Discord mention later suggests some claims are contested.",
+  "suggestion": "Consider tagging as ‹corpus-confirmed› or ‹contested› given community input.",
+  "confidence": 0.75,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "304",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "A community observation (nukopoli, aynu-corpora Discord, 2024-11-25) adds that the ability periphrases...",
+  "issue": "Phrasing 'A community observation' reads like meta-commentary about data sourcing rather than integrated prose; it should be rephrased to present the observation as part of the analysis.",
+  "suggestion": "Rephrase to: 'Some speakers note that the ability periphrases...'",
+  "confidence": 0.9,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "310",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"aynucorporadiscord\" /> ‹contested›",
+  "issue": "The epistemic tag ‹contested› is applied to a claim supported only by a Discord attribution, which inherently lacks peer review or broad validation. This creates a contradiction: the source type does not support a strong epistemic stance either way.",
+  "suggestion": "Either remove the tag or revise to ‹community-observation› if such a category existed; alternatively, flag for editorial review.",
+  "confidence": 0.85,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "130",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<A w=\"askay\" gl=\"be able\" /> and <A w=\"aykap\" gl=\"be unable\" />",
+  "issue": "The gloss \"be able\" for \"askay\" is inconsistent with standalone gloss in table (\"be able\") but the auxiliary form is \"easkay\". However, the root \"askay\" is glossed as \"be able\", while in the table the auxiliary \"easkay\" has the same meaning. No actual mismatch.",
+  "suggestion": null,
+  "confidence": 0.4,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "272",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "m=\"e=ma eaykap yakun atuy or ta e=sus ka koyaykus\"",
+  "gloss": "2SG.S=walk be.unable COND sea place LOC 2SG.S=swim even circ.unable",
+  "issue": "The morpheme 'ma' is glossed as 'walk', but in the free translation it is part of a conditional 'If you cannot walk'. The gloss 'walk' for 'ma' is incorrect; it should be 'go' or 'move'. Moreover, 'ma' is not a verb root here — 'e=ma' means 'you go', but the structure suggests 'if you cannot walk', so 'ma' likely means 'walk'. However, without source verification, we rely on internal consistency.",
+  "suggestion": "Verify gloss of 'ma'; if it means 'walk', then gloss should reflect that. Currently, it's plausible.",
+  "confidence": 0.6,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "273",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"2SG.S=walk be.unable COND sea place LOC 2SG.S=swim even circ.unable\"",
+  "issue": "The gloss 'COND' for 'yakun' is not defined in the example or text. The word 'yakun' likely means 'if', but it is not glossed as such. 'COND' is an undefined abbreviation.",
+  "suggestion": "Gloss 'yakun' as 'if' or define 'COND' in a footnote or glossary.",
+  "confidence": 0.9,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "274",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "tr=\"If you cannot walk, you cannot even swim in the sea.\"",
+  "issue": "The free translation includes 'in the sea', but the gloss has 'sea place LOC' — 'atuy or' means 'sea place', but 'or' is glossed as 'place', which may not clearly mean 'in'. The locative case is marked by 'ta', which is glossed as 'LOC', so 'atuy or ta' = 'sea place LOC' → 'in the sea'. This is acceptable, but the gloss chain is opaque.",
+  "suggestion": "Improve gloss clarity: 'sea place=LOC' or 'at sea'.",
+  "confidence": 0.8,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "283",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "the reflexive <i lang=\"ain-Latn\">yay-</i>, and a root <i lang=\"ain-Latn\">kus</i> — is internally visible, but the read sources do not derive the circumstantial-obstacle semantics compositionally from this decomposition",
+  "issue": "The phrase 'the read sources' is a pipeline register leak — it refers to the research process rather than the content itself.",
+  "suggestion": "Replace with 'available sources' or 'existing analyses'.",
+  "confidence": 0.95,
+  "chapter": "abilitative-easkay-eaykap",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

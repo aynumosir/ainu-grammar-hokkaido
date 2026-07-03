@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "15-17",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "The free pronoun for this row is Saru <i lang=\"ain-Latn\">coka</i>, with dialectal counterparts Tokachi <i lang=\"ain-Latn\">ciokay</i> and <i lang=\"ain-Latn\">ciutari</i>. Both the Saru and Tokachi forms are built on the transitive-subject prefix <i lang=\"ain-Latn\">ci=</i>",
+  "issue": "The text uses <i lang=\"ain-Latn\">ci=</i> to refer to the prefix, but the Tokachi pronoun <i lang=\"ain-Latn\">ciokay</i> appears to start with the same morpheme without the equals sign. This could be confusing.",
+  "suggestion": "Consider clarifying if the Tokachi form is built on the prefix <i lang=\"ain-Latn\">ci=</i> or if <i lang=\"ain-Latn\">ci</i> in <i lang=\"ain-Latn\">ciokay</i> is a separate element or a variant of the prefix.",
+  "confidence": 0.5,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "45-46",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "1PL.EXCL — pronoun Saru <i lang=\"ain-Latn\">coka</i>, Tokachi <i lang=\"ain-Latn\">ciokay</i>/<i lang=\"ain-Latn\">ciutari</i>",
+  "issue": "The Tokachi forms <i lang=\"ain-Latn\">ciokay</i> and <i lang=\"ain-Latn\">ciutari</i> are presented as alternatives, but the text in lines 15-17 states <i lang=\"ain-Latn\">ciokay</i> is a Tokachi counterpart. It's unclear if <i lang=\"ain-Latn\">ciutari</i> is also Tokachi or another dialect.",
+  "suggestion": "Clarify the dialectal origin of <i lang=\"ain-Latn\">ciutari</i> or remove it from the Tokachi list if it belongs elsewhere.",
+  "confidence": 0.5,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "55-56",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "4 / indefinite — pronoun Saru <i lang=\"ain-Latn\">aoka</i>, Tokachi <i lang=\"ain-Latn\">anokay</i>/<i lang=\"ain-Latn\">anutari</i>",
+  "issue": "Similar to the 1PL.EXCL row, the Tokachi forms <i lang=\"ain-Latn\">anokay</i> and <i lang=\"ain-Latn\">anutari</i> are presented as alternatives. It's unclear if <i lang=\"ain-Latn\">anutari</i> is also Tokachi or another dialect.",
+  "suggestion": "Clarify the dialectal origin of <i lang=\"ain-Latn\">anutari</i> or remove it from the Tokachi list if it belongs elsewhere.",
+  "confidence": 0.5,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "94-100",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"kuruma an wa ci=o tek arki=as\" g=\"car exist CONJ 1PL.EXCL.A=board then come.PL=1PL.EXCL.S\" tr=\"There was a car, and we boarded it and came.\" note=\"ci= indexes the exclusive group as A of the transitive o; =as indexes the same group as S of the intransitive plural arki.\"",
+  "issue": "The gloss <g>1PL.EXCL.A=board</g> indicates <i lang=\"ain-Latn\">ci=</i> is the A subject of 'board', and <g>come.PL=1PL.EXCL.S</g> indicates <i lang=\"ain-Latn\">=as</i> is the S subject of 'come'. However, the note states <i lang=\"ain-Latn\">ci=</i> indexes the exclusive group as A of the transitive 'o' (board), and <i lang=\"ain-Latn\">=as</i> indexes the same group as S of the intransitive 'arki' (come). The gloss for 'board' is missing the object 'it' which is implied in the translation.",
+  "suggestion": "The gloss for 'board' should ideally reflect the transitive nature and the object, or the note should be more precise about the relationship between the morphemes and the verb stems.",
+  "confidence": 0.7,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "111-118",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"sanbyakugojuen a=un=kore hike ka\" g=\"350.yen 4.A=1PL.EXCL.O=give although even\" tr=\"although we were given 350 yen, …\" note=\"The prefix sequence a=un= stacks a fourth-person (indefinite/impersonal) A and a first-plural-exclusive O on a single transitive stem.\"",
+  "issue": "The gloss <g>4.A=1PL.EXCL.O=give</g> correctly identifies <i lang=\"ain-Latn\">a=</i> as 4.A and <i lang=\"ain-Latn\">un=</i> as 1PL.EXCL.O. However, the note states that <i lang=\"ain-Latn\">a=un=</i> stacks a fourth-person A and a first-plural-exclusive O. This implies <i lang=\"ain-Latn\">a=</i> is the A and <i lang=\"ain-Latn\">un=</i> is the O. The gloss is consistent with this, but the phrasing in the note could be slightly clearer by explicitly stating which morpheme corresponds to which role.",
+  "suggestion": "No change needed, but ensure consistency in how stacked prefixes are described.",
+  "confidence": 0.5,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "148-155",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"eani hem paye=an ro\" g=\"2SG also go.PL=4.S HORT\" tr=\"Let you and me go too!\" note=\"The hortative construction includes the addressee; the fourth-person S suffix =an appears on the plural stem paye, not the exclusive =as.\"",
+  "issue": "The gloss <g>go.PL=4.S</g> indicates <i lang=\"ain-Latn\">=an</i> is the S suffix for the fourth person. The translation 'Let you and me go too!' implies an inclusive 'we'. The note clarifies that <i lang=\"ain-Latn\">=an</i> appears on the plural stem <i lang=\"ain-Latn\">paye</i>, not the exclusive <i lang=\"ain-Latn\">=as</i>. This aligns with the text's claim that the fourth-person row handles inclusive 'we'. However, the gloss could explicitly state '4.S.INCL' or similar to make the inclusive function clearer.",
+  "suggestion": "Consider changing the gloss to <g>go.PL=4.S.INCL</g> or similar to explicitly mark the inclusive function.",
+  "confidence": 0.7,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ },
+ {
+  "lines": "258-266",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<Ex m=\"cise or ta okay=as\" g=\"house place LOC exist.PL=1PL.EXCL.S\" tr=\"We are at the house.\" constructed note=\"Constructed after the pattern of Ijäs's learner materials. The exclusive S suffix =as is written -as in that source; okay is the plural existential stem.\"",
+  "issue": "The gloss <g>exist.PL=1PL.EXCL.S</g> correctly identifies <i lang=\"ain-Latn\">okay=as</i>. The note clarifies that <i lang=\"ain-Latn\">=as</i> is the exclusive S suffix and <i lang=\"ain-Latn\">okay</i> is the plural existential stem. The translation 'We are at the house' implies an inclusive 'we'. However, the gloss explicitly marks it as <i lang=\"ain-Latn\">1PL.EXCL.S</i>. This creates a contradiction between the gloss and the translation/context.",
+  "suggestion": "Either change the translation to reflect an exclusive 'we' (e.g., 'We [excluding you] are at the house.') or change the gloss to <g>exist.PL=1PL.INCL.S</g> if the intention was inclusive. Given the chapter's focus on clusivity, this is a significant point of confusion.",
+  "confidence": 0.9,
+  "chapter": "first-person-plural-and-clusivity",
+  "model": "google/gemini-2.5-flash-lite",
+  "phase": "phase1"
+ }
+]

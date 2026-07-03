@@ -1,0 +1,62 @@
+[
+ {
+  "lines": "78–86",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"be.cold autumn COP thing feel.cold=4.S FOC NEG do ADV\" tr=\"It was a cold autumn, but I did not feel cold.\"",
+  "issue": "The gloss marks =an as fourth-person S (4.S), but the free translation uses first-person singular 'I'. The person/number values are inconsistent; the reader cannot tell whether the subject is fourth person or first person.",
+  "suggestion": "Either change the gloss to 1SG (if =an is being used for first person in this context) or adjust the translation to use 'one' or 'we' to match the fourth person.",
+  "confidence": 0.9,
+  "chapter": "alignment-split-intransitive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "97–106",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"wave-roll=4.S while flow=4.S track-POSS thus exist NMLZ COP CONJ\" tr=\"I was rolled by the waves and drifted along, and so …\"",
+  "issue": "Same mismatch as the previous example: gloss has 4.S for =an, but translation uses first-person 'I'.",
+  "suggestion": "Align the translation with the fourth-person gloss, or explain in the note that fourth person is used for first person here.",
+  "confidence": 0.9,
+  "chapter": "alignment-split-intransitive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "136–138",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "that book could not be independently consulted for this grammar",
+  "issue": "Meta-commentary about the production process (source unavailability) addressed to the reader, not part of the scholarly argument.",
+  "suggestion": "Remove the meta-comment or rephrase as a caveat about the source's limited accessibility without referencing the grammar's own consultation process.",
+  "confidence": 1,
+  "chapter": "alignment-split-intransitive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "264–267",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "No factbase example shows an intransitive undergoer indexed by the object forms en=, un=, or i=; the available evidence supports the uniform-S generalization as the correct synchronic description ‹original-needs-review›.",
+  "issue": "The term 'factbase' is internal pipeline jargon, and the editorial tag ‹original-needs-review› is a production note that should not appear in the published text.",
+  "suggestion": "Replace 'factbase' with 'corpus' or 'available data'; remove the ‹original-needs-review› tag or replace it with an appropriate epistemic tag such as ‹corpus-confirmed› if the claim is supported.",
+  "confidence": 1,
+  "chapter": "alignment-split-intransitive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ },
+ {
+  "lines": "98",
+  "category": "copyedit",
+  "severity": "medium",
+  "quote": "ain=\"rittursere=an kor mom=an ruwe ene an hi ne hine\"",
+  "issue": "Unexpected attribute 'ain' in the <Ex> component. The standard attributes are m, g, tr, lit, cite, dial, place, note, constructed. 'ain' is not defined and appears to be a leftover or typo.",
+  "suggestion": "Remove the 'ain' attribute or replace it with the correct attribute (e.g., m= if it is meant to be the morphemic line, but that is already present on line 99).",
+  "confidence": 1,
+  "chapter": "alignment-split-intransitive",
+  "model": "deepseek/deepseek-v4-flash",
+  "phase": "phase1"
+ }
+]

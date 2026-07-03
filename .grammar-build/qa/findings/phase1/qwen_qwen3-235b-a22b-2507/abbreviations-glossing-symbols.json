@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "31",
+  "category": "orthography",
+  "severity": "medium",
+  "quote": "ray-ke",
+  "issue": "The morpheme 'ray-ke' in the table uses lowercase in the example, but the glossing in the rest of the chapter uses uppercase for glosses (e.g., CAUS). This creates inconsistency in presentation, as the morphemic form should align with the standardized uppercase convention when paired with Leipzig-style glosses.",
+  "suggestion": "Use uppercase for the morpheme: RAY-KE, to match the glossing style (CAUS) and maintain orthographic consistency.",
+  "confidence": 0.9,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "38",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ku=kor",
+  "issue": "The example 'ku=kor' is glossed as '<span class=\"sc\">1sg.a</span>=have', but the free translation 'I have it' implies a possessive construction with an object, which is not reflected in the gloss. The gloss 'have' is lexical, not grammatical, and does not align with Leipzig standards which expect a category label like V or perhaps a root gloss. The gloss line should separate person marking from the lexical verb.",
+  "suggestion": "Revise the gloss to something like '1SG.A=HAVE' to distinguish grammatical person from lexical meaning and align with uppercase convention.",
+  "confidence": 0.95,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "71-74",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ku=ray-ke",
+  "issue": "The morphemic segmentation 'ku=ray-ke' is glossed as '1SG.A=die-CAUS', but the free translation 'I kill (something).' implies a transitive verb, while 'die' is intransitive. This creates a semantic mismatch: the root should be 'kill' rather than 'die'. The glossed root does not support the translation.",
+  "suggestion": "Change the root in the morpheme line to 'kor' (a known causative verb root) or change the gloss to 'kill' to align with the translation.",
+  "confidence": 0.98,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "44",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "<span class=\"sc\">1sg.a</span>, <span class=\"sc\">4.s</span>, <span class=\"sc\">2pl.o</span>, track.<span class=\"sc\">poss</span>",
+  "issue": "The portmanteau dot is used in 'track.<span class=\"sc\">poss</span>' to join a lexical root with a grammatical category, but the other entries in the same cell (1sg.a, 4.s, 2pl.o) are person-and-role portmanteaux. This mixes two distinct uses of the dot in one cell without clarification, potentially confusing the reader.",
+  "suggestion": "Split the cell into two rows or clearly separate the two types of dot usage in the explanation to avoid conflation.",
+  "confidence": 0.85,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "96-104",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "1, 1PL, 1SG, 2, 2PL, 2SG, 3, 3PL, 3SG",
+  "issue": "The abbreviations for person and number use inconsistent capitalization: '1' is lowercase in value, while 'PL' and 'SG' are uppercase. This deviates from standard Leipzig-style formatting where such abbreviations are fully uppercase (e.g., 1SG, not 1sg or 1 SG). However, the table uses uppercase consistently, so this may be intentional.",
+  "suggestion": "No change if uppercase is intentional; otherwise, ensure all person/number abbreviations follow full uppercase (e.g., 1SG not 1sg).",
+  "confidence": 0.7,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "379",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "Bugaeva (2012, 2022)",
+  "issue": "The concordance table cites Bugaeva (2012, 2022), but the reference list includes only bugaeva2021antip, bugaeva2022. There is no citation for Bugaeva 2012 in the chapter, which undermines the support for the claim of continuity in her glossing practice.",
+  "suggestion": "Add a Ref entry for Bugaeva 2012 or remove the year from the table if not directly cited.",
+  "confidence": 0.9,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "460",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"sato2008\" />; <Ref k=\"nakagawa2024\" />",
+  "issue": "Two Ref tags appear in the same sentence but are separated by a semicolon and text, suggesting both are meant to support the claim about Japanese-medium grammars. However, the second Ref (nakagawa2024) lacks a page locator, while sato2008 has one earlier (p=\"163\"). This creates an inconsistency in citation rigor.",
+  "suggestion": "Add page locators to both or rephrase to clarify scope.",
+  "confidence": 0.8,
+  "chapter": "abbreviations-glossing-symbols",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

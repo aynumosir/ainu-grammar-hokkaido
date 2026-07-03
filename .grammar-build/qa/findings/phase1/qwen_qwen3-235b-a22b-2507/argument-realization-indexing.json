@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "63",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "cep a=koyki",
+  "issue": "The gloss '4.A=catch' suggests a fourth-person agent, but the free translation is 'We catch fish.', which implies first-person plural. This is inconsistent unless dialectal or contextual factors explain the discrepancy, but no such explanation is provided here.",
+  "suggestion": "Either change the free translation to match the gloss (e.g., 'They catch fish' or 'Someone (non-salient) catches fish') or adjust the gloss if the intended meaning is truly first-person plural.",
+  "confidence": 0.95,
+  "chapter": "argument-realization-indexing",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "142",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ekasi ku=kore na",
+  "issue": "The gloss '1SG.A=give' does not account for the theme argument ('it') in the free translation 'I'll give it to the old man.' While the note explains the theme is null and contextually recoverable, the gloss should reflect the transitivity of the verb or mark the object as zero. As written, the gloss appears intransitive while the translation and analysis claim otherwise.",
+  "suggestion": "Revise the gloss to include a zero object, e.g., '1SG.A=give-3SG.O' or use a notation like '1SG.A=give' with a comment that object is zero and recoverable from valency.",
+  "confidence": 0.9,
+  "chapter": "argument-realization-indexing",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "194",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "cep a=koyki",
+  "issue": "The table entry cites 'Satō 2025' without a page number, while other examples in the same table (e.g., lines 186, 200) also lack citations despite claiming to be from Satō 2025. This creates uncertainty about whether these are actual attested examples or constructed illustrations.",
+  "suggestion": "Add page numbers or example numbers from Satō 2025 for each example in the table, or clarify if they are constructed.",
+  "confidence": 0.85,
+  "chapter": "argument-realization-indexing",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "207",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "wakka eci=ta-re",
+  "issue": "The gloss 'I make you dip water' implies a causative construction with two core arguments (subject and object), but the gloss field in the table only says 'dip water', missing both the causative morphology and the person marking. The form 'eci=ta-re' appears to encode 'you (OBJ) dip', but this is not reflected in the table's gloss.",
+  "suggestion": "Revise the gloss to reflect the full meaning, e.g., 'make-you-dip water' or 'cause-you-to-dip water', and ensure alignment with the interlinear logic.",
+  "confidence": 0.9,
+  "chapter": "argument-realization-indexing",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "303",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "ci a=e-p saranip or oma-re",
+  "issue": "The morpheme string includes 'a=e-p' (4.A=eat-NMLZ), but the free translation 'She put the cooked food into the basket' does not mention eating. The verb 'oma-re' means 'be in-CAUS', not 'eat'. There is a clear mismatch between the glossed verb stem and the free translation.",
+  "suggestion": "Correct either the morpheme string or the translation. If the intended verb is 'put into', the stem should be something like 'kup' or 'kup-re', not 'oma-re'.",
+  "confidence": 0.98,
+  "chapter": "argument-realization-indexing",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "340",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "a= and ku=",
+  "issue": "Inconsistent formatting of clitic markers: sometimes written with spaces around '=' (e.g., 'a =', 'ku =') and sometimes not. Here, 'a=' and 'ku=' are correctly attached, but elsewhere spacing may vary.",
+  "suggestion": "Ensure consistent attachment of clitics without spaces (e.g., always 'a=', 'ku=') throughout the chapter.",
+  "confidence": 0.8,
+  "chapter": "argument-realization-indexing",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "158",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "the bare verb form = 3SG = citation/dictionary form",
+  "issue": "The phrasing 'citation/dictionary form' appears to be a meta-linguistic note rather than integrated prose, possibly leaking from editorial notes or community discussion. It reads like a parenthetical aside rather than a smooth part of the narrative.",
+  "suggestion": "Rephrase as: 'the bare verb form corresponds to the third-person singular and is identical to the citation or dictionary form.'",
+  "confidence": 0.75,
+  "chapter": "argument-realization-indexing",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "232",
+  "category": "citation-hygiene",
+  "severity": "low",
+  "quote": "Baker's (Ref k=\"baker1988\" p=\"229–232\" paren /)",
+  "issue": "Malformed citation markup: 'paren' is not a valid attribute; likely a typo or pipeline artifact. Should be either 'note' or removed.",
+  "suggestion": "Correct to: <Ref k=\"baker1988\" p=\"229–232\" />",
+  "confidence": 0.95,
+  "chapter": "argument-realization-indexing",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

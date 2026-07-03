@@ -1,0 +1,86 @@
+[
+ {
+  "lines": "38",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "In the corpus, iruska 'be angry' appears 655 times (rank 264), making it among the most frequent antipassive derivatives ‹corpus-confirmed›.",
+  "issue": "The claim is tagged as ‹corpus-confirmed›, but the only support is a general reference to Bugaeva and Kobayashi (2022) without a specific data source or corpus count citation. The number '655' and 'rank 264' are presented without a verifiable citation, making the evidential grade too strong for the support given.",
+  "suggestion": "Downgrade to ‹contested› or add a specific corpus reference (e.g., Nakagawa corpus statistics) to justify ‹corpus-confirmed›.",
+  "confidence": 0.9,
+  "chapter": "antipassive-detransitive-i",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "88",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "inkar (&lt; i-nukar)",
+  "issue": "The form 'inkar' is written without hyphens, while the reconstructed form 'i-nukar' includes a hyphen. This creates a hyphenation inconsistency for the same morphological form within the same table cell.",
+  "suggestion": "Write as 'i-nkar' to maintain consistent hyphenation with 'i-nukar'.",
+  "confidence": 0.8,
+  "chapter": "antipassive-detransitive-i",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "100",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "ipe (&lt; i-e)",
+  "issue": "The surface form 'ipe' lacks a hyphen, while the reconstructed form 'i-e' includes one, creating inconsistency in hyphenation for the same morphological pattern as in line 88.",
+  "suggestion": "Write as 'i-pe' to maintain consistent hyphenation.",
+  "confidence": 0.8,
+  "chapter": "antipassive-detransitive-i",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "344",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "Since Bugaeva (2010) is not read directly for this grammar, and since the competing segmentation ik-ka vs. i-kV-ka cannot be decided from the surface form alone, the fossil analysis is graded ‹contested›.",
+  "issue": "The phrase 'not read directly for this grammar' is a pipeline register leak, referring to the book's internal research process rather than the linguistic content.",
+  "suggestion": "Rephrase to: 'Since Bugaeva (2010) is not available in full, and since the competing segmentation...'",
+  "confidence": 0.95,
+  "chapter": "antipassive-detransitive-i",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "364",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "This synthesis is tied to the factbase evidence for the residual distribution and Nam's phonological argument and requires editorial review; it goes beyond any single cited source.",
+  "issue": "The terms 'factbase' and 'requires editorial review' are pipeline register leaks, exposing internal editorial workflow rather than being part of the scholarly narrative.",
+  "suggestion": "Rephrase to: 'This synthesis draws on corpus evidence for the residual distribution and Nam's phonological argument and is not directly supported by any single cited source.'",
+  "confidence": 0.95,
+  "chapter": "antipassive-detransitive-i",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "387-392",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "A community-proposed analysis identifies a productive series of middle-voice derivatives... (nukopoli, aynu-corpora Discord 2023-12-08) <Ref k=\"aynucorporadiscord\" />. This extends the picture in <Ref k=\"bugaevakobayashi2022\" p=\"§4.2.4\" /> and is graded ‹contested› pending systematic corpus verification.",
+  "issue": "The claim is attributed solely to a Discord post and marked as ‹contested›, but the citation to Bugaeva and Kobayashi (2022) does not support the extension being proposed. The epistemic grade is appropriate, but attaching a literature citation that does not substantiate the extension creates citation hygiene issues.",
+  "suggestion": "Clarify that Bugaeva and Kobayashi (2022) do not report this series, or remove the p=\"§4.2.4\" cite if it doesn't support the specific examples.",
+  "confidence": 0.85,
+  "chapter": "antipassive-detransitive-i",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "341-355",
+  "category": "internal-inconsistency",
+  "severity": "high",
+  "quote": "The transitive verb <A w=\"ikka\" gl=\"steal, take by stealth\" /> has been analyzed as i-kV-ka... This analysis is attributed to Bugaeva (2010) by nukopoli... Vovin's competing reconstruction of Proto-Ainu *ihka for the same root implies no antipassive layer...",
+  "issue": "The section presents Bugaeva's analysis of ikka as i-kV-ka, but earlier in the chapter (line 89) 'inkar' is presented as i-nukar with phonological fusion. Yet here, 'i-kV-ka' is treated as recoverable, despite similar phonological opacity. This is inconsistent: if inkar has undergone fusion and is lexicalized, so might ikka, yet the text treats ikka's structure as debatable while inkar's is accepted.",
+  "suggestion": "Acknowledge the parallel degree of opacity between inkar and ikka and adjust the confidence in either analysis accordingly.",
+  "confidence": 0.8,
+  "chapter": "antipassive-detransitive-i",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

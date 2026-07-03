@@ -1,0 +1,98 @@
+[
+ {
+  "lines": "88",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=e=tuy-e-re",
+  "issue": "The gloss '4.A=2SG.O=cut-TRVZ-CAUS' includes 'TRVZ' (transitivizer), but the morpheme string does not contain a separate transitivizer morpheme; the base verb is already transitive as 'tuy-e', so the causative is applied directly. The gloss implies an extra morpheme not present in the segmentation.",
+  "suggestion": "Change gloss to '4.A=2SG.O=cut-CAUS' to match the morpheme count and avoid implying a transitivizer is present.",
+  "confidence": 0.95,
+  "chapter": "causee-marking-ditransitive-double-causative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "230",
+  "category": "gloss-mismatch",
+  "severity": "high",
+  "quote": "a=e=kor-e-re",
+  "issue": "The gloss '4.A=2SG.O=have-CAUS-CAUS' labels the base as 'have', but the morpheme segmentation uses 'kor', which is glossed earlier as 'have, hold (transitive)'. The gloss should reflect the actual root 'kor' rather than its English translation to maintain consistency with Leipzig rules.",
+  "suggestion": "Change gloss to '4.A=2SG.O=kor-CAUS-CAUS' to align with the morpheme form.",
+  "confidence": 0.9,
+  "chapter": "causee-marking-ditransitive-double-causative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "239",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<A w=\"oma\" gl=\"be inside (a place)\" />",
+  "issue": "The verb 'oma' is described as a locative verb meaning 'be inside (a place)', but in line 140, the base verb for 'omare' is given as 'omare' itself meaning 'put X in Y'. This creates a contradiction: either 'oma' is the base and 'omare' is the causative, or 'omare' is the base. The table in lines 139–146 treats 'omare' as the base, conflicting with the analysis here.",
+  "suggestion": "Revise either the table or the text to consistently treat 'oma' as the intransitive base and 'omare' as its causative; update the table row accordingly.",
+  "confidence": 0.85,
+  "chapter": "causee-marking-ditransitive-double-causative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "140",
+  "category": "internal-inconsistency",
+  "severity": "medium",
+  "quote": "<i lang=\"ain-Latn\">omare</i> 'put X in Y'",
+  "issue": "This line presents 'omare' as the base verb with arity +3, but in section §4, 'oma' is introduced as the intransitive base and 'omare' as its causative. A +3 verb cannot be a base for a causative that results in +4 unless it is already transitive; presenting 'omare' as the base verb contradicts the derivational sequence established elsewhere.",
+  "suggestion": "Change the table entry to reflect 'oma' as the base verb (vi, +1), 'omare' as the first causative (vt, +2), and 'omare-re' as the double causative (+3 → +4).",
+  "confidence": 0.9,
+  "chapter": "causee-marking-ditransitive-double-causative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "89",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "cut-TRVZ-CAUS",
+  "issue": "The use of 'TRVZ' as an abbreviation for transitivizer is inconsistent with the rest of the chapter, where 'TR' or full 'transitivizer' is used in other glosses. No other example uses 'TRVZ'.",
+  "suggestion": "Standardize to 'TR' or 'TRANSIT' if abbreviating, or use 'transitivizer' consistently.",
+  "confidence": 0.8,
+  "chapter": "causee-marking-ditransitive-double-causative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "180",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "nukopoli (aynu-corpora Discord, November 2024)",
+  "issue": "The claim about lexicalized forms like 'iyairaykere' and 'irankarapte' being analyzed as containing 'i=' + stem + '-re/-te' is attributed only to a Discord user and marked ‹contested›, yet it is presented without sufficient hedging and used as a basis for a broader typological claim about indefinite causees. The epistemic status does not justify the explanatory weight it carries in the following paragraph.",
+  "suggestion": "Add stronger hedging, e.g., 'tentatively proposed', and clarify that this analysis does not underpin the general three-way gradient, which should be supported by more robust evidence.",
+  "confidence": 0.8,
+  "chapter": "causee-marking-ditransitive-double-causative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "110",
+  "category": "copyedit",
+  "severity": "low",
+  "quote": "§<span class=\"sc\">5</span>",
+  "issue": "The use of <span class=\"sc\">5</span> suggests small caps formatting for '5', but this is likely a pipeline artifact or incorrect markup. Section references should be plain text or use proper semantic tagging.",
+  "suggestion": "Replace with plain '§5' or use appropriate Svelte component if available.",
+  "confidence": 0.95,
+  "chapter": "causee-marking-ditransitive-double-causative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "27",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "-re/-te/-e",
+  "issue": "The hyphenation of the allomorphs varies: sometimes written with spaces around slashes (e.g., '-re/-te/-e'), sometimes without. In line 68, it's '-re/-te/-e' (with spaces), but elsewhere it's written without spaces. Inconsistent formatting affects readability and professionalism.",
+  "suggestion": "Standardize to '-re/-te/-e' without spaces around slashes throughout the chapter.",
+  "confidence": 0.9,
+  "chapter": "causee-marking-ditransitive-double-causative",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

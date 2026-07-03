@@ -1,0 +1,122 @@
+[
+ {
+  "lines": "19",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "‹original-needs-review›",
+  "issue": "The epistemic tag ‹original-needs-review› is visible in the prose, which is a pipeline register leak. These tags should not appear in the final text as they are editorial markers for internal review.",
+  "suggestion": "Remove ‹original-needs-review› or replace with an appropriate unmarked consensus or speculative tag if needed.",
+  "confidence": 0.95,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "21",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "is offered as a factbase-licensed proposal for editorial review.",
+  "issue": "The phrase 'factbase-licensed proposal for editorial review' is a pipeline register leak, referencing internal production processes rather than serving the reader.",
+  "suggestion": "Rephrase to something like 'is proposed here based on convergent evidence' to maintain scholarly tone without exposing editorial mechanics.",
+  "confidence": 0.98,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "270",
+  "category": "register-leak",
+  "severity": "high",
+  "quote": "is a factbase-licensed proposal for the licensed theory-magnet domain of applicatives ‹original-needs-review›.",
+  "issue": "Contains both 'factbase-licensed' and 'theory-magnet domain', which are pipeline jargon, and the visible editorial tag ‹original-needs-review›.",
+  "suggestion": "Replace with neutral scholarly language, e.g., 'is proposed here as a unified analysis of applicative promotion'. Remove the epistemic tag.",
+  "confidence": 0.97,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "324",
+  "category": "register-leak",
+  "severity": "medium",
+  "quote": "has not been investigated in the read sources ‹speculative›",
+  "issue": "'read sources' is pipeline language referring to the research process, not appropriate for final prose; also, ‹speculative› should not be visible if used as a meta-tag.",
+  "suggestion": "Rephrase to 'has not been investigated in the available sources' and ensure ‹speculative› is not rendered in final output unless part of a controlled epistemic tagging system.",
+  "confidence": 0.93,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "373",
+  "category": "register-leak",
+  "severity": "low",
+  "quote": "Ijäs's Basic Lessons 3 and 9 do not cover applicative stacking or the feeding relations",
+  "issue": "Referring to what a textbook 'does not cover' may reflect a pipeline concern about source coverage rather than a grammatical point; risks sounding like a literature review gap rather than descriptive content.",
+  "suggestion": "Rephrase to focus on the grammar's complexity, e.g., 'Applicative stacking and feeding relations are advanced constructions not typically introduced in beginner materials such as Ijäs’s Basic Lessons.'",
+  "confidence": 0.85,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "57-64",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "g=\"APPL-APPL-speak\"",
+  "issue": "The gloss uses generic \"APPL\" for both prefixes, but the note specifies that e- contributes Content and ko- contributes Addressee — semantically distinct roles that should ideally be reflected in the gloss.",
+  "suggestion": "Use more precise glosses such as \"CONT-ADDR-speak\" or \"APPLc-APPLa-speak\" to reflect the distinct semantic contributions, or add a note explaining the genericization.",
+  "confidence": 0.9,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "90-97",
+  "category": "gloss-mismatch",
+  "severity": "medium",
+  "quote": "m=\"yay-ipe-e-ko-sunke\" g=\"REFL-food-APPL-APPL-lie\"",
+  "issue": "The morpheme order is yay-ipe-e-ko-sunke, but the gloss places REFL before food, suggesting yay- modifies ipe. However, yay- is a reflexive clitic filling the ko-slot (Addressee), not modifying the incorporated noun ipe. Gloss implies incorrect structural alignment.",
+  "suggestion": "Revise gloss to reflect syntactic structure, e.g., \"REFL-APPL-APPL-lie\" with ipe marked as incorporated noun outside the affix chain, or annotate more precisely in the note.",
+  "confidence": 0.88,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "145-148",
+  "category": "orthography",
+  "severity": "low",
+  "quote": "pira or un hokuste",
+  "issue": "Inconsistent spacing: 'pira or un hokuste' appears with spaces between all elements, but in Ainu orthography, postpositions like 'un' may be written closer or as clitics. Compare with other examples like 'at ani uk' which are spaced similarly, but consistency across the chapter should be confirmed.",
+  "suggestion": "Verify standard spacing convention for postpositional phrases in this grammar and apply uniformly. If no standard, pick one and apply consistently.",
+  "confidence": 0.8,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "244-250",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "based on the instrument applicative i lang=\"ain-Latn\">e-tuye</i> attested in Nakagawa 2024: 194 (ex. 173)",
+  "issue": "The example is marked as 'constructed' but cited as attested in Nakagawa 2024:194. This creates a conflict: either it is attested (and not constructed) or it is constructed (and not directly attested).",
+  "suggestion": "Clarify: if the form e-tuye is attested but the full sentence is constructed, state that explicitly. Otherwise, remove the attestation claim or remove 'constructed'.",
+  "confidence": 0.92,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "306-318",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "reported in the aynu-corpora Discord is consistent with the relational account. The verb sir-ko-peker ... has been analysed (attributed to Satō, reported by nukopoli, 2024-12-05 <Ref k=\"aynucorporadiscord\" />)",
+  "issue": "A Discord report from December 2024 is cited, but the book was written in 2025–2026, so the date is acceptable. However, the epistemic weight of a Discord comment is high for a ‹contested› claim, and no further corroboration is provided. Risk of epistemic inflation.",
+  "suggestion": "Ensure that such community observations are not overvalued; consider adding a qualifier like 'preliminary observation' or cross-checking with published sources if possible.",
+  "confidence": 0.87,
+  "chapter": "applicative-stacking-relativization-feeding",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]

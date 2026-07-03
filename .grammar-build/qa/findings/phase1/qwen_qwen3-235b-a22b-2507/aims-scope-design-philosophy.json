@@ -1,0 +1,74 @@
+[
+ {
+  "lines": "12",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Kindaichi and Chiri <Ref k=\"kindaichi1936\" />",
+  "issue": "Chiri is mentioned but not cited with a reference key; only Kindaichi1936 is cited here, creating a citation mismatch.",
+  "suggestion": "Add <Ref k=\"chiri1942\" /> after Chiri",
+  "confidence": 0.95,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "244",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"tamura2000\" />",
+  "issue": "The citation for Tamura 2000 is marked as [cited second-hand] in the table, but the citation itself does not carry any indicator of indirect sourcing in the prose, which could mislead readers about direct access.",
+  "suggestion": "Add a note in the prose or citation tag indicating that Tamura 2000 is cited second-hand",
+  "confidence": 0.9,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "254",
+  "category": "citation-hygiene",
+  "severity": "high",
+  "quote": "<Ref k=\"bugaeva2012\" />",
+  "issue": "The citation key is 'bugaeva2012', but the work listed in the table and referenced in the prose is from 2022. This appears to be a typo in the citation key, as Bugaeva's handbook is from 2022, not 2012.",
+  "suggestion": "Change citation key from 'bugaeva2012' to 'bugaeva2022'",
+  "confidence": 1,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "276",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"kindaichi1936\" />",
+  "issue": "The citation for Kindaichi 1936 is repeated at the end of the sentence, but it was already cited earlier in the paragraph. This creates redundant citation markup.",
+  "suggestion": "Remove the duplicate <Ref k=\"kindaichi1936\" />",
+  "confidence": 0.85,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "280",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "<Ref k=\"tamura1996\" />; <Ref k=\"tamura2000\" />.",
+  "issue": "The semicolon-separated citations are not formatted consistently with the rest of the text; typically, multiple citations are separated by commas or listed in a single <Ref> tag if supported. This may be a formatting error.",
+  "suggestion": "Use a single <Ref> tag with multiple keys if supported, or separate with commas",
+  "confidence": 0.8,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ },
+ {
+  "lines": "311",
+  "category": "citation-hygiene",
+  "severity": "medium",
+  "quote": "Ijäs (2023) <Ref k=\"ijas2023\" />",
+  "issue": "The citation key 'ijas2023' uses a simplified form of the name (without diacritic), but the author's name includes 'ä'. This may affect bibliographic consistency.",
+  "suggestion": "Ensure the citation key matches the actual spelling in the bibliography (e.g., 'ijäs2023' if accurate)",
+  "confidence": 0.75,
+  "chapter": "aims-scope-design-philosophy",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "phase": "phase1"
+ }
+]
