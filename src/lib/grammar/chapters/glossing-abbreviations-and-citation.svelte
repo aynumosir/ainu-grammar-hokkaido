@@ -6,7 +6,7 @@
 	<p>
 		Examples of Ainu data follow the three-line interlinear format of the Leipzig Glossing Rules
 		<Ref k="comrie2015" paren />. The <em>morphemic</em> line segments each Ainu word at morpheme
-		and clitic boundaries; the <em>gloss</em> line aligns one label with each morpheme; the
+		and person-marker boundaries; the <em>gloss</em> line aligns one label with each morpheme; the
 		<em>free translation</em> gives an idiomatic English rendering. A fourth line, the <em>literal
 		translation</em>, is supplied where the morpheme-by-morpheme reading illuminates an opaque or
 		partially grammaticalized form.
@@ -34,7 +34,7 @@
 		m="ku=nu ru-we ne"
 		g="1SG.A=hear track-POSS COP"
 		tr="I heard it."
-		note="Illustrates the format: the morphemic line segments at clitic (=) and affix (-) boundaries; the gloss line aligns one label per morpheme. The possessed evidential formal noun ruwe (ru-we, 'the trace of —') is discussed in the evidential chapters."
+		note="Illustrates the format: the morphemic line segments at person-marker (=) and affix (-) boundaries; the gloss line aligns one label per morpheme. The possessed evidential formal noun ruwe (ru-we, 'the trace of —') is discussed in the evidential chapters."
 		constructed
 	/>
 </S>
@@ -62,7 +62,7 @@
 			</tr>
 			<tr>
 				<td><code>=</code></td>
-				<td>clitic boundary (personal-index morphemes throughout)</td>
+				<td>person-marker boundary (orthographic convention, all personal indexes)</td>
 				<td><i lang="ain-Latn">ku=nu</i></td>
 				<td><span class="sc">1sg.a</span>=hear</td>
 			</tr>
@@ -76,15 +76,19 @@
 	</table>
 
 	<p>
-		The <code>=</code> symbol is used for all personal-index morphemes, reflecting the
-		clitic-like properties of the Hokkaido person-marking set: its members attach at word edges
-		rather than deeper inside the stem, and at least two — the intransitive-subject suffixes
-		<i lang="ain-Latn">=an</i> and <i lang="ain-Latn">=as</i> — show degrees of prosodic
-		independence that set them apart from typical inflectional affixes
-		<Ref k="nakagawa2024" p="49, 183" />; <Ref k="bugaeva2012" p="472–473" />. The choice of
-		<code>=</code> throughout is a working convention that is deliberately neutral on the question
-		of which markers are true clitics and which are affixes; that classification is examined in
-		<Xr ch="personal-affix-template-and-ordering" /> ‹contested›.
+		The <code>=</code> symbol is used for all personal-index morphemes as an orthographic
+		convention of the Nakagawa lineage, not as Leipzig clitic notation — Nakagawa states
+		explicitly that his <code>=</code> is unrelated to the general-linguistic affix/clitic
+		display convention, and adopted it to keep inflectional person marking apart from
+		derivation and the dictionary headword recoverable <Ref k="nakagawa2024" p="58–60" />.
+		Satō and Ijäs notate the same morphemes with hyphens. Morphologically the set is mixed:
+		at least two members — the intransitive-subject markers <i lang="ain-Latn">=an</i> and
+		<i lang="ain-Latn">=as</i> — show degrees of independence that set them apart from typical
+		inflectional affixes <Ref k="nakagawa2024" p="49, 183" />;
+		<Ref k="bugaeva2012" p="472–473" />, while the prefixal markers pattern with ordinary
+		affixes. The choice of <code>=</code> throughout is thus deliberately neutral on which
+		markers are true clitics and which are affixes; that classification is examined in
+		<Xr ch="personal-affix-template-and-ordering" s="boundary-status" /> ‹contested›.
 	</p>
 
 	<p>

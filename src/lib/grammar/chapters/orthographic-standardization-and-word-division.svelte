@@ -20,7 +20,7 @@
 	<p>
 		The present chapter addresses three questions those chapters leave aside: how the current
 		academic romanization came to prevail over its predecessors; what principles govern the boundary
-		between an inflectional clitic, a derivational affix, and an independent word in the written
+		between an inflectional person marker, a derivational affix, and an independent word in the written
 		form; and which conventions this grammar adopts where the literature is still divided. The
 		institutional context of standardization and revitalization is taken up in
 		<Xr ch="sociolinguistic-situation-revitalization" />.
@@ -69,23 +69,37 @@
 	</p>
 </S>
 
-<S t="The = sign and the clitic–affix boundary" id="equals-sign">
+<S t="The = sign for person markers: an orthographic device, not a clitic analysis" id="equals-sign">
 	<p>
-		Among the innovations of the modern academic romanization, the most analytically consequential
-		is the use of two distinct boundary markers: the hyphen <code>-</code> for derivational
-		prefixes and suffixes, and the equals sign <code>=</code> for inflectional person affixes.
-		This distinction is now standard in published grammars and text transcriptions.
+		Among the innovations of the modern romanization, the most consequential is the use of two
+		distinct boundary markers: the hyphen <code>-</code> for derivational prefixes and suffixes,
+		and the equals sign <code>=</code> for the inflectional person markers. The practice is not
+		universal: it dominates the Nakagawa-lineage descriptive and pedagogical literature, while
+		Satō consistently writes the person markers with hyphens (<i lang="ain-Latn">ku-kor wa
+		k-ek</i> 'I bring it') <Ref k="sato2008" />, as does Ijäs <Ref k="ijas2023" />; Hattori's
+		dialect dictionary and much of Tamura's work print the inflected forms solid
+		(<i lang="ain-Latn">kumokor</i>, <i lang="ain-Latn">kuytak</i>); and Kirikae separates the
+		person marker as an independent word (<i lang="ain-Latn">ku mokor</i>). Nakagawa surveys
+		these four systems and their trade-offs himself <Ref k="nakagawa2024" p="58–60" />.
 	</p>
 	<p>
-		Nakagawa traces its origin to his own data-management practice in the early 1980s: working on
-		Ainu texts, he used hyphens for derivational morphemes such as <i lang="ain-Latn">yay-</i>
-		'self/reflexive' and <i lang="ain-Latn">-re</i> 'causative' and equals signs for person affixes
-		such as <i lang="ain-Latn">ku=</i> '1<span class="sc">sg</span> transitive subject' and
-		<i lang="ain-Latn">=an</i> 'fourth-person intransitive subject'. The notation entered print in
-		the orthographic principles section of the 1986 publication
-		<span lang="ja">語りの中の生活誌</span>, from where it spread to other researchers and became
-		the accepted practice <Ref k="nakagawa2024" />; <Ref k="aynucorporadiscord" /> (nukopoli,
-		2024–11–09) ‹consensus›.
+		Nakagawa traces the = notation's origin to his own data-management practice in the early
+		1980s: working on Ainu texts, he used hyphens for derivational morphemes such as
+		<i lang="ain-Latn">yay-</i> 'self/reflexive' and <i lang="ain-Latn">-re</i> 'causative' and
+		equals signs for person markers such as <i lang="ain-Latn">ku=</i>
+		'1<span class="sc">sg</span> transitive subject' and <i lang="ain-Latn">=an</i>
+		'fourth-person intransitive subject'. The notation entered print in the orthographic
+		principles section of the 1986 publication <span lang="ja">語りの中の生活誌</span>, from
+		where it spread to other researchers and teaching materials
+		<Ref k="nakagawa2024" p="58–60" />; <Ref k="aynucorporadiscord" /> (nukopoli, 2024–11–09)
+		‹consensus›. Crucially, Nakagawa states in so many words that this use of <code>=</code> is
+		<em>unrelated</em> to the general-linguistic convention whereby the equals sign marks a
+		clitic boundary (<span lang="ja">接辞・接語の表示慣習とは無関係である</span>), and he
+		concedes that Satō's hyphen notation conforms better to standard practice; he retains
+		<code>=</code> for learnability — it keeps inflectional person marking visually distinct
+		from derivation and lets a learner recover the dictionary headword
+		(<i lang="ain-Latn">ku=itak</i> → <i lang="ain-Latn">itak</i>)
+		<Ref k="nakagawa2024" p="58–60" /> ‹consensus›.
 	</p>
 	<p>
 		The distinction the notation encodes is morphological: person affixes are inflectional —
@@ -102,21 +116,27 @@
 	/>
 
 	<p>
-		The person clitic <i lang="ain-Latn">ku=</i> marks the first-person transitive agent; the
+		The person marker <i lang="ain-Latn">ku=</i> marks the first-person transitive agent; the
 		derivational prefix <i lang="ain-Latn">yay-</i> is a reflexive, here producing the idiomatic
-		reading 'eat a meal'. The morphological system behind this layering — the full paradigm of
-		person affixes and their template positions — is described in
-		<Xr ch="personal-affix-template-and-ordering" />, and the reflexive
+		reading 'eat a meal'. The <code>=</code> carries no claim that the person markers are
+		clitics in the Leipzig-glossing sense: their morphological status is mixed and contested —
+		<i lang="ain-Latn">=an</i> shows genuinely clitic-like separability, while the prefixal
+		markers pattern with ordinary affixes in accent and syllabification. That question, with
+		Nakagawa's and Sakaguchi's diagnostics, is treated in
+		<Xr ch="personal-affix-template-and-ordering" s="boundary-status" />; the reflexive
 		<i lang="ain-Latn">yay-</i> in <Xr ch="reflexive-yay" />.
 	</p>
 	<p>
-		Older texts and some pedagogical materials use hyphens for all bound morphemes, leaving the
-		inflectional–derivational distinction unmarked in the written form. The <em>Akor Itak</em>
-		textbook and related classroom materials apply spacing conventions designed for readability
-		that do not always track the = / - distinction. The present grammar uses = throughout for person
-		affixes and - for derivational morphemes; the gloss line follows the same boundary symbols, so
-		the morphemic form and its gloss align symbol-for-symbol. The full gloss abbreviation list is
-		given in <Xr ch="glossing-abbreviations-and-citation" />.
+		Satō's grammar and Ijäs's course — like older texts — use hyphens for all bound morphemes,
+		leaving the inflectional–derivational distinction unmarked in the written form. The
+		<em>Akor Itak</em> textbook and related classroom materials apply spacing conventions
+		designed for readability that do not always track the = / - distinction. The present grammar
+		uses = throughout for person markers and - for derivational morphemes, for orthographic
+		continuity with the now-dominant convention in Hokkaidō materials — not as an analysis of
+		the markers as clitics; examples quoted from hyphen-notation sources (Satō, Ijäs, Refsing)
+		are renotated accordingly. The gloss line follows the same boundary symbols, so the morphemic
+		form and its gloss align symbol-for-symbol. The full gloss abbreviation list is given in
+		<Xr ch="glossing-abbreviations-and-citation" />.
 	</p>
 </S>
 
@@ -125,7 +145,7 @@
 		The most debated segmentation level is the space: where does one orthographic word end and the
 		next begin? Hokkaido Ainu morphology offers no fully decisive test, since the language's
 		polysynthetic character allows a verb complex with incorporated noun, multiple derivational
-		layers, and person clitics to be parsed, in principle, as one word or as several.
+		layers, and person markers to be parsed, in principle, as one word or as several.
 	</p>
 	<p>
 		A case where the written boundary carries semantic weight is the pair
@@ -145,9 +165,10 @@
 		constructions. In the construction <i lang="ain-Latn">kor an</i> 'be in a state of having',
 		<i lang="ain-Latn">kor</i> and the existential <i lang="ain-Latn">an</i> are standardly
 		written as two separate words. In the possessive complex <i lang="ain-Latn">ku=kor cise</i>
-		'my house', the cliticized verb is written attached to the person prefix by the = sign. Satō
-		<Ref k="sato2008" p="85–90" /> and Nakagawa <Ref k="nakagawa2024" /> apply this practice
-		consistently without making the underlying analysis fully explicit; the relevant morphosyntactic
+		'my house', the person marker is written attached to the verb <i lang="ain-Latn">kor</i> by
+		the = sign (Satō's notation renders the same complex as <i lang="ain-Latn">ku-kor cise</i>)
+		<Ref k="sato2008" p="85–90" />; <Ref k="nakagawa2024" />. Both authors apply their respective
+		notations consistently without making the underlying analysis fully explicit; the relevant morphosyntactic
 		analysis is taken up in <Xr ch="concept-form-affiliative-form" />. A further dimension concerns
 		the middle-dot sometimes found in the romanization of the language name
 		(<em>Aynu·itak</em>): this derives from a 2007 Japanese Wikipedia entry that used the dot as

@@ -20,7 +20,7 @@
 		id,
 		constructed = false
 	}: {
-		/** Morphemic line: words separated by spaces, morphemes by `-`, clitics by `=`. */
+		/** Morphemic line: words by spaces, derivational morphemes by `-`, person markers by `=` (orthographic convention, not a clitic claim). */
 		m: string;
 		/** Gloss line: one gloss word per morphemic word. */
 		g: string;

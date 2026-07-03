@@ -253,6 +253,18 @@ packets. Nothing else.
 5. **aynu-itah — DECIDED:** issues filed only; no edits there during this campaign.
 6. **git — DONE:** repo committed (authored baseline 12e8ead; Phase-0 3ec7b21).
 
+## 6a. Notation doctrine (user correction, 2026-07-04 — source-verified)
+The book's `=` on person markers is the **Nakagawa-lineage orthographic convention** (origin:
+his 1980s data-management notation; print debut 1986 『語りの中の生活誌』) — Nakagawa states
+expressly it is UNRELATED to the Leipzig/general-linguistic clitic `=` (nakagawa2024:58–60,
+表9 four-system survey: unmarked Hattori/Tamura · space Kirikae · hyphen Satō · = Nakagawa).
+Satō 2008 (ku-kor wa k-ek) and Ijäs 2023 (428 hyphen vs 2 =) are the hyphen camp. Person
+markers are morphologically MIXED — =an clitic-like (separability: ka intervention), prefixal
+set affix-like (accent, syllabification). QA consequences: (1) verify lane must never flag
+=/- renotation of quoted examples against source notation as a discrepancy; (2) prose that
+asserts clitic status as fact is an error class (conventions chapters fixed; 12 chapters
+ledgered as doctrine-clitic-notation); (3) sweep briefing corrected.
+
 ## 7. Execution log
 - 2026-07-04: Phase 0a done — git baseline; PostHog build-crash root-fixed via bun patch
   (`bun run build` now exits 0); crawl script; staging discipline documented.

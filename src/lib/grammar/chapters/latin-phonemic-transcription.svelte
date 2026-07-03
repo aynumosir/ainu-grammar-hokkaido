@@ -249,39 +249,42 @@
 	</p>
 </S>
 
-<S t="Morpheme and clitic boundary markers" id="boundary-markers">
+<S t="Morpheme and person-marker boundary notation" id="boundary-markers">
 	<p>
 		Two punctuation marks segment the internal structure of Ainu words in this grammar and in the
 		interlinear glosses documented in <Xr ch="glossing-abbreviations-and-citation" />:
 	</p>
 	<ul>
 		<li>
-			The <strong>equals sign</strong> <code>=</code> marks the boundary between a person-marking
-			clitic and its host stem: <i lang="ain-Latn">ku=kor</i> '1<span class="sc">sg.a</span>=have',
-			<i lang="ain-Latn">a=nu</i> '4.<span class="sc">a</span>=hear'. The clitic is inflectional and
-			prosodically dependent; the equals sign conventionally signals that the attached element is a
-			phrasal clitic rather than a lexical prefix.
+			The <strong>equals sign</strong> <code>=</code> marks the boundary between a person marker
+			and its stem: <i lang="ain-Latn">ku=kor</i> '1<span class="sc">sg.a</span>=have',
+			<i lang="ain-Latn">a=nu</i> '4.<span class="sc">a</span>=hear'. This is an orthographic
+			device of the Nakagawa lineage — expressly <em>not</em> the general-linguistic use of
+			<code>=</code> for phrasal clitics <Ref k="nakagawa2024" p="58–60" />: it keeps
+			inflectional person marking visually distinct from derivation and makes the dictionary
+			headword recoverable. The markers' actual affix-versus-clitic status is mixed and
+			contested (see <Xr ch="personal-affix-template-and-ordering" s="boundary-status" />).
 		</li>
 		<li>
 			The <strong>hyphen</strong> <code>-</code> marks derivational morpheme boundaries and
 			stem-internal junctures: <i lang="ain-Latn">yay-nu</i> 'self-hear (listen)', <i
 				lang="ain-Latn">e-nu</i
-			> '<span class="sc">appl</span>-hear'. Derivational prefixes and suffixes remain part of the
-			derived stem and are not prosodically independent in the same way as the person-marking
-			clitics.
+			> '<span class="sc">appl</span>-hear'. Derivational prefixes and suffixes form part of the
+			derived stem, which the person markers attach outside of.
 		</li>
 	</ul>
 	<p>
-		The distinction between <code>=</code> and <code>-</code> was introduced by Nakagawa in his
-		1986 publication 『語りの中の生活誌』 and has since become the standard convention in Hokkaido
-		Ainu linguistics <Ref k="nakagawa2024" />; <Ref k="aynucorporadiscord" /> (nukopoli,
-		aynu-corpora Discord 2024). The convention is not universal in the pre-1986 literature:
-		Tamura's 1996 dictionary and her earlier papers use only hyphens for all bound morphemes, and
-		Refsing <Ref k="refsing1986" /> follows a similar practice. From Nakagawa's 1986 adoption
-		onward, however, the equals-sign convention has been used consistently in
-		<Ref k="sato2008" />, <Ref k="bugaeva2022" />, and <Ref k="nakagawa2024" />, and it is
-		adopted here. The morphological and syntactic status of the person-marking clitics is developed
-		throughout Part V.
+		The distinction between <code>=</code> and <code>-</code> originates in Nakagawa's personal
+		data-management notation of the early 1980s and entered print in the 1986 publication
+		『語りの中の生活誌』, from where it spread through Hokkaido Ainu teaching and descriptive
+		materials <Ref k="nakagawa2024" p="58–60" />; <Ref k="aynucorporadiscord" /> (nukopoli,
+		aynu-corpora Discord 2024). It has never been universal: Tamura's dictionary and papers
+		print inflected forms solid or hyphenated, Refsing <Ref k="refsing1986" /> and Satō
+		<Ref k="sato2008" /> use hyphens for all bound morphemes (<i lang="ain-Latn">ku-kor wa
+		k-ek</i>), and Ijäs <Ref k="ijas2023" /> follows the hyphen practice; Nakagawa
+		<Ref k="nakagawa2024" /> and the Handbook tradition <Ref k="bugaeva2022" /> use
+		<code>=</code>, and it is adopted here. The morphological and syntactic status of the
+		person markers is developed throughout Part V.
 	</p>
 	<p>
 		Word-division decisions — how compounds, incorporating forms, and postpositional groups are
@@ -401,10 +404,10 @@
 				<td>apostrophe <em>ʼ</em> before vowels</td>
 			</tr>
 			<tr>
-				<td><code>=</code> (clitic boundary)</td>
+				<td><code>=</code> (person-marker boundary)</td>
 				<td>—</td>
+				<td>— (unsegmented or <em>-</em>)</td>
 				<td>— (uses <em>-</em> for all)</td>
-				<td>=</td>
 				<td>=</td>
 				<td>=</td>
 				<td>hyphen <em>-</em> for all morpheme types</td>
@@ -425,9 +428,10 @@
 		Across the four main sources, the segmental inventory is identical and the letter choices for
 		the consonants and vowels are uniform ‹consensus›. The differences are notational conventions:
 		the treatment of the glottal stop onset (suppressed everywhere in modern practice), the use of
-		<code>=</code> versus <code>-</code> for clitic attachment, and the insertion or suppression of
-		transitional glides at vowel hiatus. Tamura's 1996 dictionary uses only hyphens and inserts
-		glides; Satō, Nakagawa, and the Handbook use <code>=</code> and are divided on glide insertion.
+		<code>=</code> versus <code>-</code> for the person markers, and the insertion or suppression
+		of transitional glides at vowel hiatus. Tamura's 1996 dictionary uses only hyphens and inserts
+		glides; Satō likewise hyphenates the person markers; Nakagawa and the Handbook use
+		<code>=</code>; the sources are divided on glide insertion.
 		These differences are confined to morpheme-boundary notation and to the analysis of hiatus; they
 		do not affect the phonemic letter values.
 	</p>

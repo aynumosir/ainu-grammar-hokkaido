@@ -34,7 +34,7 @@
 			</tr>
 			<tr>
 				<td><code>=</code></td>
-				<td>clitic (personal-index) boundary</td>
+				<td>person-marker boundary (orthographic convention — not a clitic claim)</td>
 				<td><i lang="ain-Latn">ku=kor</i> / <span class="sc">1sg.a</span>=have 'I have it'</td>
 			</tr>
 			<tr>
@@ -51,9 +51,19 @@
 		The personal indexes (<i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>,
 		<i lang="ain-Latn">eci=</i>, <i lang="ain-Latn">a=</i>, <i lang="ain-Latn">=an</i>,
 		<i lang="ain-Latn">=as</i>, and the object prefixes) are uniformly marked with
-		<code>=</code> throughout the grammar. The sources agree that they are prosodically
-		separable from the stem; their morphological status as clitics versus prefixes is a
-		contested analytical question treated in <Xr ch="person-marking-architecture" />.
+		<code>=</code> throughout the grammar. This follows the orthographic convention begun by
+		Nakagawa (from his 1980s data-management practice, promulgated in the 1986
+		<span lang="ja">語りの中の生活誌</span> and now dominant in Hokkaidō teaching and
+		descriptive materials): the <code>=</code> keeps inflectional person marking visually
+		distinct from derivation and makes the dictionary headword recoverable. It is expressly
+		<em>not</em> the Leipzig-glossing clitic boundary — Nakagawa himself notes his usage is
+		unrelated to that convention <Ref k="nakagawa2024" p="58–60" />. Other sources notate the
+		same elements differently: Satō and Ijäs write them with hyphens, Hattori and Tamura solid,
+		Kirikae with a space; examples quoted from those sources are renotated to <code>=</code>
+		here. The markers' actual morphological status — clitic-like for
+		<i lang="ain-Latn">=an</i>, affix-like for the prefixal set — is mixed and contested, and
+		is treated in <Xr ch="person-marking-architecture" /> and
+		<Xr ch="personal-affix-template-and-ordering" s="boundary-status" />.
 		Derivational material — applicative prefixes, the causative suffix
 		<i lang="ain-Latn">-ke</i>, the reflexive and reciprocal prefixes, and the plural
 		stem suffix <i lang="ain-Latn">-pa</i> — is separated with <code>-</code>.
@@ -71,7 +81,7 @@
 		m="ku=ray-ke"
 		g="1SG.A=die-CAUS"
 		tr="I kill (something)."
-		note="Illustrating the three boundary symbols: = separates the personal-index clitic ku= from the stem; - separates the verb root ray from the CAUS suffix. The portmanteau gloss 1SG.A joins two atoms with the dot, expressing person (1SG) and role (A) from a single morpheme."
+		note="Illustrating the three boundary symbols: = separates the person marker ku= from the stem (an orthographic convention, not a clitic analysis); - separates the verb root ray from the CAUS suffix. The portmanteau gloss 1SG.A joins two atoms with the dot, expressing person (1SG) and role (A) from a single morpheme."
 		constructed
 	/>
 </S>

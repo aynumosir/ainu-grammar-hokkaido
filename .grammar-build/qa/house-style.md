@@ -14,7 +14,9 @@ to you but the chapter is internally consistent about it, do not report it.
 
 - `<Ex m="…" g="…" tr="…" cite="key:pages" dial="…" place="…" note="…" />` —
   interlinear example: `m` = morphemically segmented Ainu (words space-separated,
-  morphemes by `-`, clitics by `=`), `g` = aligned Leipzig gloss (one gloss word per
+  derivational morphemes by `-`, person markers by `=` — an orthographic convention of the
+  Nakagawa lineage, NOT Leipzig clitic notation; do not treat = as a claim of clitic status,
+  and do not flag =/- differences against source notation: sources are renotated), `g` = aligned Leipzig gloss (one gloss word per
   m-word), `tr` = free translation, `lit` = literal translation, `constructed` =
   non-attested illustration.
 - `<Ref k="key" p="pages" />` — literature citation. `<Xr ch="slug" s="anchor" />` —

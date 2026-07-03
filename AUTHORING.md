@@ -267,7 +267,7 @@ parenthesised). Citing here also adds the key to the chapter's auto reference li
 <Ex m="ku=kor" g="1SG.A=have" tr="I have it." constructed />
 ```
 
-Props: `m` (morphemic line — words by spaces, morphemes by `-`, clitics by `=`),
+Props: `m` (morphemic line — words by spaces, derivational morphemes by `-`, person markers by `=`; the `=` is the Nakagawa-lineage orthographic convention, NOT a Leipzig clitic claim — see nakagawa2024:58–60),
 `g` (gloss line — **one gloss-word per morphemic word**; the counts must match or it
 throws), `tr` (free translation), and optional `ain` (surface line when it differs
 from the segmentation), `orig`+`origLang` (source script, e.g. `orig="…" origLang="ain-Kana"`),
@@ -307,7 +307,7 @@ handle `lang="ain"` tagging and the dictionary link-out for you.
 - Follow the **Leipzig Glossing Rules**. Three aligned lines minimum: morphemic `m`,
   gloss `g`, translation `tr`; add `ain` (surface) and `orig` (source script) when
   they differ.
-- Morpheme boundary `-`, clitic boundary `=`, fused/portmanteau with `.` inside one
+- Derivational boundary `-`, person-marker boundary `=` (orthographic convention, not a clitic analysis), fused/portmanteau with `.` inside one
   gloss word (`4.A`, `1SG.A`).
 - **One gloss-word per morphemic word** — counts must match exactly.
 - Every grammatical category is an **ALL-CAPS atom** from `abbreviations.ts`
