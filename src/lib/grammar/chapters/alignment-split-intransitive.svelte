@@ -79,7 +79,7 @@
 		m="mean cuk ne pe merayke=an ka somo ki no"
 		g="be.cold autumn COP thing feel.cold=4.S FOC NEG do ADV"
 		tr="It was a cold autumn, but I did not feel cold."
-		cite="nakagawa2024:131"
+		cite="nakagawa2024:130"
 		dial="SAR"
 		place="Nakagawa ex. 15, after Kayano 1974a"
 		note="The ambient predicate mean 'be cold (of weather)' is zero-place and indexes no participant. The experiential predicate merayke 'feel cold' is one-place; its affected experiencer carries the fourth-person S suffix =an, the same form an agentive fourth-person subject would carry."

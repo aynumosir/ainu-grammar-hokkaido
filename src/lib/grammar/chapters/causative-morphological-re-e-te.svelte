@@ -317,7 +317,7 @@
 		m="i=teke uk hine i=ahun-te ruwe ne akus"
 		g="4.O=hand take CONJ 4.O=enter-CAUS track-POSS COP then"
 		tr="He took my hand and brought me inside."
-		cite="nakagawa2024:203"
+		cite="nakagawa2024:202"
 		dial="SAR"
 		place="Nakagawa ex. 197"
 		note="ahun-te with a volitional human causee, cross-referenced by the logophoric 4th-person prefix i=. Contrast ahun-ke (Nakagawa ex. 196), used when the causee is non-volitional cargo. The -te allomorph follows the consonant-final stem ahun."

@@ -35,7 +35,7 @@ const pageCache = new Map<string, string>();
 function pageText(key: string, printed: number): string | null {
 	const id = `${key}:${printed}`;
 	if (pageCache.has(id)) return pageCache.get(id)!;
-	const f = pageFile(map[key], printed);
+	const f = pageFile(map[key], printed, key);
 	const t = existsSync(f) ? readFileSync(f, 'utf8') : null;
 	if (t !== null) pageCache.set(id, t);
 	return t;

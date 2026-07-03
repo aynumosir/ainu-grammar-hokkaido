@@ -121,7 +121,7 @@
 		m="nep kameaske ene ne yakkay en=kasuy kun pe an cik pirka hike"
 		g="what monster thus COP even 1SG.O=help should NMLZ exist if good although"
 		tr="It would be good if any monster were to help me."
-		cite="nakagawa2024:171"
+		cite="nakagawa2024:170"
 		dial="TOK"
 		place="Nakagawa ex. 122, after Takahashi 2007: 63"
 		note="en= indexes the speaker as the object of kasuy 'help'; the transitive subject is not specified by an overt prefix."

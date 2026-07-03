@@ -101,7 +101,7 @@
 		m="ney ta ka kuruma ani mosir epitta payoka=an wa inkar=an ro"
 		g="when LOC even car INS land throughout go.around=4.S CONJ look=4.S HORT"
 		tr="Someday let us travel around the whole country by car and see it."
-		cite="nakagawa2024:334"
+		cite="nakagawa2024:333"
 		dial="SAR"
 		place="Nakagawa ex. 575, after Honda 2001: 19"
 		note="Both finite verbs carry the fourth-person suffix =an, the diagnostic of the pair-verb construction in which wa links two independent finite clauses. The hortative ro scopes over the full conjoined proposition." />
@@ -131,7 +131,7 @@
 		m="k=arpa ro"
 		g="1SG.S=go HORT"
 		tr="Shall I go? / I'll go then."
-		cite="nakagawa2024:335"
+		cite="nakagawa2024:334"
 		dial="HK"
 		place="Nakagawa ex. 578, after Tamura"
 		note="With a first-person rather than fourth-person subject, ro shifts from a cohortative 'let us' to a volitional 'shall I / I will', presenting the speaker's intention as a proposal open to the addressee's response." />
@@ -146,7 +146,7 @@
 		m="eci=kay ro"
 		g="2SG.O=carry HORT"
 		tr="Let me carry you!"
-		cite="nakagawa2024:335"
+		cite="nakagawa2024:334"
 		dial="CHI"
 		place="Nakagawa ex. 579"
 		note="Chitose form. The second-person object prefix eci= is overt while the first-person agent is contextually implied. Nakagawa analyses this as a 1SG-agent, 2SG-object hortative in which the speaker proposes to act for the addressee." />

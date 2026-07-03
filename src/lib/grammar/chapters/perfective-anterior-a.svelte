@@ -37,7 +37,7 @@
 		m="tane pakno a=e=tumam wa hotke=an a korka"
 		g="now until 4.A=2SG.O=embrace CONJ lie.down=4.S PFV although"
 		tr="Until now I had held you in my arms and lain down with you, but —"
-		cite="nakagawa2024:306"
+		cite="nakagawa2024:305"
 		dial="SAR"
 		place="Nakagawa ex. 448"
 		note="Person marking (4.A=, =4.S) falls on the lexical verbs tumam 'embrace' and hotke 'lie down'; the auxiliary a carries no person index. The contrast particle korka signals that this clause supplies the background to a subsequent reversal — a discourse environment typical of a." />

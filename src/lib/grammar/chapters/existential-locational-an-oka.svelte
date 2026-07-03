@@ -83,7 +83,7 @@
 			m="orwano ku=cise or ta ku=an kor"
 			g="then 1SG.POSS=house place LOC 1SG.S=exist while"
 			tr="Then, while I was in my house, —"
-			cite="nakagawa2024:167"
+			cite="nakagawa2024:166"
 			dial="ISH"
 			place="Nakagawa ex. 104, after Sunazawa Kura 1983: 75"
 			note="Locational predication: the oblique or ta 'at the place of' follows the location NP. The first-person intransitive prefix ku= indexes the subject on the existential stem."

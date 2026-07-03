@@ -104,7 +104,7 @@
 		m="paye=an easirki p mak e=iki hawe an"
 		g="go.PL=4.S must NMLZ what 2SG.A=do voice-POSS exist"
 		tr="I have to go — what are you doing?"
-		cite="nakagawa2024:309"
+		cite="nakagawa2024:308"
 		dial="CHI"
 		place="Nakagawa ex. 457"
 		note="The nominalizer p closes the easirki clause. The final mak e=iki hawe an is a rhetorical question in the hawe-frame existential evidential; the fourth-person =an functions as the narrative first person."

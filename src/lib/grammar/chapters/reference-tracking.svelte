@@ -149,7 +149,7 @@
 			m="i=erampokiwen i=rewsire wa i=kore"
 			g="4.O=pity 4.O=lodge CONJ 4.O=give"
 			tr="Take pity on me and give me lodging."
-			cite="nakagawa2024:171"
+			cite="nakagawa2024:170"
 			dial="SAR"
 			place="Nakagawa ex. 127"
 			note="The fourth-person object prefix i= indexes the narrator-protagonist as recipient across three chained predicates. In kamuy yukar, i= here tracks the protagonist's first-person reference within the story world."

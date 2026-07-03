@@ -158,7 +158,7 @@
 		m="ene wa poka a=reka hi ka isam menoko i-huraye kor an na"
 		g="thus CONJ even 4.A=praise NMLZ even not.exist woman ANTIP-wash while exist FIN"
 		tr="A woman of incomparable beauty was doing the laundry."
-		cite="nakagawa2024:191"
+		cite="nakagawa2024:190"
 		dial="CHI"
 		place="Nakagawa ex. 170"
 		note="The antipassive i-huraye 'do the washing' is intransitive; the specific object (laundry) is inferrable from context but suppressed from the argument frame. The embedding clause ene wa poka a=reka hi ka isam means literally 'there is no way to praise her' — the conventional formula for incomparable beauty."

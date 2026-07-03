@@ -136,7 +136,7 @@
 		m="nisatta kunneywa tunas soyne=an nankor kusu"
 		g="tomorrow morning early go.out=4.S probably because"
 		tr="Tomorrow morning I will probably go out early —"
-		cite="nakagawa2024:311"
+		cite="nakagawa2024:310"
 		dial="SAR"
 		place="Nakagawa ex. 468"
 		note="The temporal adverb nisatta 'tomorrow' supplies the future anchor; the epistemic auxiliary nankor adds probability. The verb soyne=an 'go out' carries no future inflection."

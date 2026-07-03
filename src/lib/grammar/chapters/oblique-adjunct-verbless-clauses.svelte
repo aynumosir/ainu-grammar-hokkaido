@@ -132,7 +132,7 @@
 		m="merayke=an ka somo ki no"
 		g="feel.cold=4.S even NEG do ADV"
 		tr="Without even feeling cold…"
-		cite="nakagawa2024:131"
+		cite="nakagawa2024:130"
 		dial="SAR"
 		place="Nakagawa ex. 15"
 		note="The 1-place merayke indexes the experiencer via the fourth-person S suffix =an, as opposed to 0-place mean, which takes no index."

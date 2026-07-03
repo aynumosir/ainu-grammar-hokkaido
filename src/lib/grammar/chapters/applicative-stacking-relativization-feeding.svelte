@@ -106,7 +106,7 @@
 		m="a=mun-ko-tata a=toy-ko-tata ayne"
 		g="4.A=grass-APPL-chop 4.A=soil-APPL-chop then"
 		tr="chopping along with the grass, chopping along with the soil, and then …"
-		cite="nakagawa2024:198"
+		cite="nakagawa2024:197"
 		dial="CHI"
 		place="Nakagawa ex. 190"
 		note="mun 'grass/weeds' and toy 'soil' are comitative objects first promoted by ko-, then incorporated. The implied patient (the demon's flesh) is cross-referenced by a=. Each verb-word is the output of the applicative-then-incorporation feeding sequence."

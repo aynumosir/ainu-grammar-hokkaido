@@ -247,7 +247,7 @@
 		m="sirkorkamuy emus e-tuye"
 		g="standing.tree sword APPL-cut"
 		tr="He cut a standing tree with a sword."
-		cite="nakagawa2024:194"
+		cite="nakagawa2024:193"
 		dial="SAR"
 		place="Nakagawa ex. 173, after Monbetsu-chō 1969: 237"
 		note="The instrument emus ‘sword’ is the applied object licensed by e-, which raises tuye ‘cut’ from a two-place to a three-place verb."
@@ -343,7 +343,7 @@
 		m="aynu kam ka upas ka ta ci-cari"
 		g="human flesh even snow even LOC RES-scatter"
 		tr="Human flesh and snow too lay scattered on the ground."
-		cite="nakagawa2024:190"
+		cite="nakagawa2024:189"
 		dial="CHI"
 		place="Nakagawa ex. 167"
 	/>

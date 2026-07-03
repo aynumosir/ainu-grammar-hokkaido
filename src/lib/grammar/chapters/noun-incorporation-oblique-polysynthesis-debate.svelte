@@ -141,7 +141,7 @@
 		m="a=mun-ko-tata a=toy-ko-tata ayne"
 		g="4.A=grass-APPL-chop 4.A=earth-APPL-chop CONJ"
 		tr="(I) chopped it with grass and chopped it with earth — "
-		cite="nakagawa2024:198"
+		cite="nakagawa2024:197"
 		dial="CHI"
 		place="Nakagawa ex. 190"
 		note="The ko- applicative encodes the comitative participant ('with'); the comitative postposition tura is dropped. The person prefix a= (4th person transitive agent) sits outside the noun-verb complex in each clause, confirming one-word status. The object of the chopping — the demon's flesh — is recoverable from context and left unexpressed."

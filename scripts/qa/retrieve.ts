@@ -43,8 +43,33 @@ export function parsePages(spec: string): number[] {
 	return [...out].sort((a, b) => a - b);
 }
 
-export function pageFile(entry: SourceMapEntry, printedPage: number): string {
-	return join(BOOKS_ROOT, entry.dir, `page-${String(printedPage + entry.offset).padStart(4, '0')}.txt`);
+// footer-derived exact maps (see footer-map.ts); preferred over constant offsets
+const PAGE_MAP_DIR = join(ROOT, '.grammar-build/qa/page-map');
+const printedToFileCache = new Map<string, Map<number, number> | null>();
+/** Sources whose footer map is trusted (dense, consistent anchors). */
+const FOOTER_TRUSTED = new Set(['nakagawa2024', 'sato2008', 'refsing1986', 'murasaki2025']);
+
+function printedToFile(key: string): Map<number, number> | null {
+	if (printedToFileCache.has(key)) return printedToFileCache.get(key)!;
+	let m: Map<number, number> | null = null;
+	if (FOOTER_TRUSTED.has(key)) {
+		const p = join(PAGE_MAP_DIR, `${key}.json`);
+		if (existsSync(p)) {
+			const raw = JSON.parse(readFileSync(p, 'utf8')).fileToPrinted as Record<string, number>;
+			m = new Map();
+			for (const [file, printed] of Object.entries(raw)) {
+				if (!m.has(printed)) m.set(printed, +file); // first file wins on rare repeats
+			}
+		}
+	}
+	printedToFileCache.set(key, m);
+	return m;
+}
+
+export function pageFile(entry: SourceMapEntry, printedPage: number, key?: string): string {
+	const map = key ? printedToFile(key) : null;
+	const file = map?.get(printedPage) ?? printedPage + entry.offset;
+	return join(BOOKS_ROOT, entry.dir, `page-${String(file).padStart(4, '0')}.txt`);
 }
 
 /** Fetch the OCR text for cited printed pages (±context). Returns null if unmapped. */
@@ -61,7 +86,7 @@ export function retrieve(
 	for (const p of printed) for (let d = -context; d <= context; d++) want.add(p + d);
 	const pages: { printed: number; text: string }[] = [];
 	for (const p of [...want].sort((a, b) => a - b)) {
-		const f = pageFile(entry, p);
+		const f = pageFile(entry, p, key);
 		if (existsSync(f)) pages.push({ printed: p, text: readFileSync(f, 'utf8') });
 	}
 	return { pages, calibrated: entry.calibrated };

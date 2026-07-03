@@ -330,7 +330,7 @@
 		m="a=yup-ihi tures-ihi"
 		g="4.POSS=elder.brother-POSS younger.sister-POSS"
 		tr="my elder brother's younger sister"
-		cite="nakagawa2024:225"
+		cite="nakagawa2024:224"
 		dial="SAR"
 		place="Nakagawa ex. 259; embedded in the clause nea a=tura a=yupihi turesihi, ne Iskar emko wa a=tura okkaypo a=eutannere"
 		note="The 4th-person prefix a= on yupihi indexes the narrator's elder brother; the following turesihi carries a zero (3rd-person) prefix whose referent is that elder brother. Each noun enters the affiliative construction independently: yup 'elder brother' with affiliative -ihi (type-③-1); tures 'younger sister' with affiliative -ihi (type-③-1)."

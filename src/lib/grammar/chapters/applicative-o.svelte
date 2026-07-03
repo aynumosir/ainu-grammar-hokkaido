@@ -88,7 +88,7 @@
 		m="tumi o-ek"
 		g="war APPL-come"
 		tr="War came to [the village]."
-		cite="nakagawa2024:199"
+		cite="nakagawa2024:198"
 		dial="CHI"
 		place="Nakagawa ex. 192"
 		note="The place goal (the village, contextually implicit) is the applied object licensed by o-; ek 'come' shifts from intransitive to transitive. The contrast is Nakagawa ex. 193, tumi ko-ek 'war came to [one's] sister', where the animate goal requires ko-."

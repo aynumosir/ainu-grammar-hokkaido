@@ -148,7 +148,7 @@
 		m="eani hem paye=an ro"
 		g="2SG also go.PL=4.S HORT"
 		tr="Let you and me go too!"
-		cite="nakagawa2024:176"
+		cite="nakagawa2024:175"
 		dial="CHI"
 		place="Nakagawa ex. 138"
 		note="The hortative construction includes the addressee; the fourth-person S suffix =an appears on the plural stem paye, not the exclusive =as."
