@@ -245,7 +245,25 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	nichols1986: { sourceRole: 'typological-framework', heldLocally: false },
 	givon1978: { sourceRole: 'typological-framework', heldLocally: false },
 	croft1991: { sourceRole: 'typological-framework', heldLocally: false },
-	comrie2015: { sourceRole: 'typological-framework', heldLocally: false }
+	comrie2015: { sourceRole: 'typological-framework', heldLocally: false },
+
+	// Registry↔bibliography parity fixes (QA Phase 0b, audit-chapters registry-parity)
+	alonso2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	janhunen2022: { sourceRole: 'background', heldLocally: true, path: 'books/2022_Bugaeva' },
+	shiraishitangiku2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	tangiku2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	vovin2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	chiba2015: { sourceRole: 'primary-data', heldLocally: false },
+	chiri1955: { sourceRole: 'background', heldLocally: false },
+	chiri1956: { sourceRole: 'primary-data', heldLocally: false },
+	diessel1999: { sourceRole: 'typological-framework', heldLocally: false },
+	hoppertraugott2003: { sourceRole: 'typological-framework', heldLocally: false },
+	kindaichi1931: { sourceRole: 'background', heldLocally: false },
+	kindaichi1935: { sourceRole: 'background', heldLocally: false },
+	nakagawa2001b: { sourceRole: 'background', heldLocally: false },
+	ochiai2026: { sourceRole: 'prior-analysis', heldLocally: false },
+	tamura1973: { sourceRole: 'prior-analysis', heldLocally: false },
+	yoshikawa2018: { sourceRole: 'prior-analysis', heldLocally: false }
 };
 
 /**

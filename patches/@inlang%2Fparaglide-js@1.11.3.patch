@@ -1,0 +1,12 @@
+diff --git a/dist/index.js b/dist/index.js
+index 7587a497d148b663b2836283d0530cadb86aee1a..81ace7af45ac15d42614e97bfbc4ede2705b0d60 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -10864,6 +10864,7 @@ ${reexportAliases(message)}`;
+ }
+ const posthogToken = "phc_oE6Qs5mT6oXMw9Z0Om1CqIBpg5RcSLYmghoFR5irZOd";
+ const posthog = new PostHog(posthogToken, {
++  disabled: true, // patched: telemetry shutdown timeout crashed builds (ERR_UNHANDLED_REJECTION)
+   host: "https://eu.posthog.com",
+   // Events are not captured if not immediately flushed.
+   //
