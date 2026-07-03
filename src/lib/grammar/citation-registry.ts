@@ -71,6 +71,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	bugaeva2022: { dbSlug: '2022-bugaeva', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
 	nakagawa2024: { dbSlug: '2024-nakagawa', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2024_Nakagawa' },
 	nakagawa2022: { dbSlug: '2022-hiroshi-nakagawa-17-verbal-number', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	nakagawa2022pos: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
 	tamuramasashi2011: { sourceRole: 'prior-analysis', heldLocally: true },
 	asai1969: { dbSlug: '1969-asai-toru-ainugo-no-bunpo-ainugo-ishikari-hogen-bunpo-no-gai', sourceRole: 'prior-analysis', heldLocally: false },
 	chamberlain1887: { dbSlug: '2018-basil-hall-chamberlain-ainu-grammar', sourceRole: 'philological-witness', heldLocally: false },
@@ -80,6 +81,12 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	murasaki1979: { dbSlug: '1979-murasaki-kyoko-karafuto-ainugo-bunpo-hen-sakhalin-ainu-grammar-vo', sourceRole: 'prior-analysis', heldLocally: false },
 	murasaki2025: { dbSlug: '2025-murasaki', sourceRole: 'primary-data', heldLocally: true, path: 'books/2025_Murasaki' },
 	dalcorso2021: { dbSlug: '2021-dal-corso-elia-the-language-and-folklore-of-west-sakhalin-ainu-a', sourceRole: 'prior-analysis', heldLocally: false },
+
+	// Oral-literature chapters (Handbook ch.10–11)
+	endo2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	okuda2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	sato2009yukar: { sourceRole: 'prior-analysis', heldLocally: true },
+	chiri1923: { sourceRole: 'primary-data', heldLocally: false },
 
 	// Pedagogical / standard / text-collection
 	kayano1987: { dbSlug: '1987-kayano', sourceRole: 'primary-data', heldLocally: true, path: 'books/1987_Kayano' },
@@ -100,6 +107,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	kanazawa1898: { sourceRole: 'primary-data', heldLocally: false },
 
 	// Phonology, prosody, morphophonology
+	shiraishi2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
 	chiri1952: { sourceRole: 'prior-analysis', heldLocally: true },
 	okuda2025: { sourceRole: 'prior-analysis', heldLocally: true },
 	ochiai2023: { dbSlug: '2023-ochiai-izumi-a-disparity-in-the-final-vowels-in-ainu-word-final', sourceRole: 'prior-analysis', heldLocally: true },
@@ -107,6 +115,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	itabashi2001: { sourceRole: 'prior-analysis', heldLocally: true },
 	shiratori2026: { sourceRole: 'prior-analysis', heldLocally: true },
 	fukuda1956: { sourceRole: 'prior-analysis', heldLocally: true },
+	fukuda1961: { sourceRole: 'prior-analysis', heldLocally: true },
 	nakagawa2009: { sourceRole: 'prior-analysis', heldLocally: true },
 	kirikae1984: { sourceRole: 'prior-analysis', heldLocally: true },
 
@@ -132,6 +141,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	sato2007: { sourceRole: 'prior-analysis', heldLocally: true },
 	kobayashi2010: { sourceRole: 'prior-analysis', heldLocally: true },
 	kobayashi2020: { sourceRole: 'prior-analysis', heldLocally: true },
+	kobayashi2025: { sourceRole: 'prior-analysis', heldLocally: true },
 	sato2023b: { sourceRole: 'prior-analysis', heldLocally: true },
 
 	// Noun incorporation
@@ -141,6 +151,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	dalcorso2020: { dbSlug: '2020-dal-corso-elia-the-interaction-of-relativization-and-noun-incorporation-in-southern-hokkaido-ainu', sourceRole: 'prior-analysis', heldLocally: true },
 	barrie2021: { dbSlug: '2021-barrie-michael-mathieu-eric-noun-incorporation-and-polysynthesis', sourceRole: 'typological-framework', heldLocally: true },
 	kaiser1998: { dbSlug: '1998-lizanne-kaiser-the-interaction-of-noun-incorporation-and-applicat', sourceRole: 'prior-analysis', heldLocally: false },
+	yoshida2013: { sourceRole: 'prior-analysis', heldLocally: true },
 
 	// Tense / aspect / mood
 	tamura1960: { sourceRole: 'prior-analysis', heldLocally: true },
@@ -186,6 +197,10 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	sato2025b: { sourceRole: 'prior-analysis', heldLocally: true },
 
 	// Dialectology
+	hattorichiri1960: { sourceRole: 'prior-analysis', heldLocally: false },
+	asai1974: { sourceRole: 'prior-analysis', heldLocally: false },
+	tamura1988: { sourceRole: 'prior-analysis', heldLocally: false },
+	kirikae1994: { sourceRole: 'prior-analysis', heldLocally: false },
 	ono2020: { sourceRole: 'prior-analysis', heldLocally: true },
 	nakagawafukazawa2022: { dbSlug: '2022-nakagawa-hiroshi-hokkaido-ainu-dialects-towards-a-classification-of', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
 	fukazawaono2024: { sourceRole: 'prior-analysis', heldLocally: true },
@@ -202,6 +217,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	yasuoka2023: { sourceRole: 'philological-witness', heldLocally: true },
 
 	// Sociolinguistics & revitalization
+	ono2022: { sourceRole: 'background', heldLocally: true },
 	sato2012: { sourceRole: 'background', heldLocally: true },
 	ijas2023b: { sourceRole: 'background', heldLocally: true },
 
@@ -228,7 +244,8 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	stassen1997: { sourceRole: 'typological-framework', heldLocally: false },
 	nichols1986: { sourceRole: 'typological-framework', heldLocally: false },
 	givon1978: { sourceRole: 'typological-framework', heldLocally: false },
-	croft1991: { sourceRole: 'typological-framework', heldLocally: false }
+	croft1991: { sourceRole: 'typological-framework', heldLocally: false },
+	comrie2015: { sourceRole: 'typological-framework', heldLocally: false }
 };
 
 /**

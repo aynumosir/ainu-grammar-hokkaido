@@ -4,8 +4,8 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "bun scripts/gen-grammar-search.ts && vite dev",
-		"build": "bun scripts/gen-grammar-search.ts && vite build",
+		"dev": "bun scripts/gen-apparatus.ts && bun scripts/gen-grammar-search.ts && vite dev",
+		"build": "bun scripts/gen-apparatus.ts && bun scripts/gen-grammar-search.ts && vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",

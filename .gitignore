@@ -12,7 +12,11 @@ dist
 /build
 
 # Local grammar draft/build artifacts (regenerable, heavy)
-.grammar-build/
+# (note: `.grammar-build/*` not `.grammar-build/` so the qa/ subdir can be re-included —
+#  git cannot re-include children of an excluded directory)
+.grammar-build/*
+# QA campaign plan + findings ledger are NOT regenerable — keep versioned
+!.grammar-build/qa/
 
 # Generated code (regenerated from toc-final.json by scripts/gen-grammar.ts)
 src/lib/paraglide

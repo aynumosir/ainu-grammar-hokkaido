@@ -237,6 +237,20 @@ export const bibliography: Record<string, BibEntry> = {
 		place: 'Berlin & Boston',
 		url: 'https://db.aynu.org/sources/2022-hiroshi-nakagawa-17-verbal-number'
 	},
+	nakagawa2022pos: {
+		region: 'general',
+		author: 'Nakagawa, Hiroshi 中川裕',
+		citeAuthor: 'Nakagawa',
+		year: '2022',
+		title: 'Parts of speech — with a focus on the classification of nouns',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: '473–500',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 14 of the Handbook; page numbers from epub pagebreak markers'
+	},
 	tamuramasashi2011: {
 		region: 'hokkaido',
 		author: 'Tamura Masashi 田村雅史',
@@ -311,6 +325,60 @@ export const bibliography: Record<string, BibEntry> = {
 		title: "The language and folklore of West Sakhalin Ainu: A re-edition of Murasaki Kyōko's 'Karafuto Ainugo' with translation and grammatical notes",
 		url: 'https://db.aynu.org/sources/2021-dal-corso-elia-the-language-and-folklore-of-west-sakhalin-ainu-a',
 		reported: true
+	},
+
+	// ───────────────────────── Oral-literature chapters (Handbook ch.10–11) ─────────────────────────
+	endo2022: {
+		region: 'general',
+		author: 'Endō Shiho 遠藤志保',
+		citeAuthor: 'Endō',
+		year: '2022',
+		title: 'Ainu oral literature',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: 'ch. 10',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 10 of the Handbook; the primary English synthesis on genre taxonomy, sakehe, elegant vs everyday language, and rhetoric. Read in full (epub→pandoc; cited by section, no page numbers).'
+	},
+	okuda2022: {
+		region: 'general',
+		author: 'Okuda Osami 奥田統己',
+		citeAuthor: 'Okuda',
+		year: '2022',
+		title: 'Meter in Ainu oral literature',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: 'ch. 11',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 11 of the Handbook; the syllable-count vs accent-orientation metre analysis with full scansion tables. Read in full (epub→pandoc; cited by section).'
+	},
+	sato2009yukar: {
+		region: 'hokkaido',
+		author: 'Satō Tomomi 佐藤知己',
+		citeAuthor: 'Satō',
+		year: '2009',
+		title: 'アイヌ語虻田方言の英雄叙事詩（yukar）テキストとその言語的特徴 (1)',
+		titleTr: 'The heroic epic (yukar) text of the Abuta dialect of Ainu and its linguistic characteristics, part 1',
+		container: '北海道立アイヌ民族文化研究センター研究紀要 [Research Bulletin of the Hokkaido Ainu Culture Research Center]',
+		pages: '15: 1–38',
+		lang: 'ja',
+		note: 'Narrated by Tōshima Tanke 遠島タンケ; Iburi (Abuta/虻田) yukar. Read by section; OCR page numbers garbled.'
+	},
+	chiri1923: {
+		region: 'hokkaido',
+		author: 'Chiri Yukie 知里幸恵',
+		citeAuthor: 'Chiri Yukie',
+		year: '1923',
+		title: 'アイヌ神謡集',
+		titleTr: "A collection of Ainu divine epics [Ainu Shin'yōshū]",
+		publisher: 'Kyōdo Kenkyūsha 郷土研究社',
+		place: 'Tokyo',
+		lang: 'ja',
+		note: 'Horobetsu/Iburi kamuy yukar with Japanese translation; the first published Ainu-language oral-literature collection, compiled by Yukie Chiri (1903–1922). Digitised as 桃内 2008 (桃内義弥).'
 	},
 
 	// ───────────────────────── Pedagogical / standard / text-collection books ─────────────────────────
@@ -424,6 +492,19 @@ export const bibliography: Record<string, BibEntry> = {
 		lang: 'ja',
 		reported: true
 	},
+	chiri1956: {
+		region: 'general',
+		author: 'Chiri Mashiho 知里真志保',
+		citeAuthor: 'Chiri',
+		year: '1956',
+		title: '地名アイヌ語小辞典',
+		titleTr: 'A small dictionary of Ainu place-name language (Chimei Ainugo shō jiten)',
+		publisher: 'Nihon Jōmin Bunka Kenkyūjo 日本常民文化研究所',
+		place: 'Tokyo',
+		lang: 'ja',
+		reported: true,
+		note: 'The standard Ainu place-name etymological dictionary; cited second-hand via Shibatani (1990 §1). Individual toponym etymologies in this grammar require verification against this source.'
+	},
 	batchelor1905: {
 		region: 'hokkaido',
 		author: 'Batchelor, John',
@@ -468,6 +549,18 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 
 	// ───────────────────────── Phonology, prosody, morphophonology ─────────────────────────
+	shiraishi2022: {
+		region: 'general',
+		author: 'Shiraishi Hideto 白石英才',
+		citeAuthor: 'Shiraishi',
+		year: '2022',
+		title: 'Phonetics and phonology',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva'
+	},
 	chiri1952: {
 		region: 'general',
 		author: 'Chiri Mashiho 知里真志保',
@@ -494,6 +587,17 @@ export const bibliography: Record<string, BibEntry> = {
 		title: 'A disparity in the final vowels in Ainu: Word-final CV and CCV',
 		container: 'Phonological Externalization',
 		url: 'https://db.aynu.org/sources/2023-ochiai-izumi-a-disparity-in-the-final-vowels-in-ainu-word-final'
+	},
+	ochiai2026: {
+		region: 'general',
+		author: 'Ochiai Izumi 落合いずみ',
+		citeAuthor: 'Ochiai',
+		year: '2026',
+		title: '日本語借用形から探るアイヌ語sikerpe「キハダの実」の語源',
+		titleTr: 'The etymology of Ainu sikerpe "Amur cork tree fruit" as revealed by its Japanese loan forms',
+		container: '北方言語研究 [Northern Language Studies]',
+		pages: '16: 175–199',
+		lang: 'ja'
 	},
 	dalcorso2024: {
 		region: 'sakhalin',
@@ -528,6 +632,18 @@ export const bibliography: Record<string, BibEntry> = {
 		year: '1956',
 		title: 'On the morphological structure of the verbs in Saru dialect of Ainu',
 		container: 'Onsei no Kenkyū 7'
+	},
+	fukuda1961: {
+		region: 'hokkaido',
+		author: 'Fukuda (Tamura) Suzuko 福田すゞ子',
+		citeAuthor: 'Fukuda',
+		year: '1961',
+		title: 'アイヌ語沙流方言の副助詞と終助詞',
+		titleTr: 'The adverbial and sentence-final particles of the Saru dialect of Ainu',
+		container: '言語研究 [Gengo Kenkyū / Journal of the Linguistic Society of Japan]',
+		pages: '39: 22–38',
+		lang: 'ja',
+		note: 'Published under maiden name 福田すゞ子; the author is the same person as Tamura Suzuko 田村すゞ子. Sequel to the 1960 paper on auxiliary verbs (民族学研究 24-4). Journal volume confirmed as 言語研究 39 from the standard bibliographic entry; running pages 22–38 confirmed by OCR.'
 	},
 	nakagawa2009: {
 		region: 'hokkaido',
@@ -731,6 +847,18 @@ export const bibliography: Record<string, BibEntry> = {
 		pages: '167–174',
 		lang: 'ja'
 	},
+	kobayashi2025: {
+		region: 'hokkaido',
+		author: 'Kobayashi Miki 小林美紀',
+		citeAuthor: 'Kobayashi',
+		year: '2025',
+		title: 'アイヌ語における主語抱合と所属形的接頭辞 e-/o- による派生',
+		titleTr:
+			'Subject incorporation and derivation by affiliative-type prefixes e-/o- in Ainu',
+		container: '北方言語研究 [Northern Language Studies]',
+		pages: '15: 165–178',
+		lang: 'ja'
+	},
 	sato2023b: {
 		region: 'hokkaido',
 		author: 'Satō Tomomi 佐藤知己',
@@ -799,6 +927,17 @@ export const bibliography: Record<string, BibEntry> = {
 		pages: '157–178',
 		url: 'https://db.aynu.org/sources/1998-lizanne-kaiser-the-interaction-of-noun-incorporation-and-applicat'
 	},
+	yoshida2013: {
+		region: 'general',
+		author: 'Yoshida Erika 吉田恵理佳',
+		citeAuthor: 'Yoshida',
+		year: '2013',
+		title: 'アイヌ語の被抱合名詞に関する一考察',
+		titleTr: 'A note on incorporated nouns in Ainu',
+		container: '思言 [Shigen: Tokyo University of Foreign Studies linguistics journal] 9',
+		pages: '167–174',
+		lang: 'ja'
+	},
 
 	// ───────────────────────── Tense / aspect / mood / auxiliaries ─────────────────────────
 	tamura1960: {
@@ -817,6 +956,16 @@ export const bibliography: Record<string, BibEntry> = {
 		year: '2006',
 		title: '千歳方言のアスペクト——kor an、wa an',
 		titleTr: 'Aspect in the Chitose dialect: kor an, wa an',
+		lang: 'ja'
+	},
+	yoshikawa2018: {
+		region: 'hokkaido',
+		author: 'Yoshikawa Yoshimi 吉川佳見',
+		citeAuthor: 'Yoshikawa',
+		year: '2018',
+		title: 'アイヌ語の助動詞 aan と証拠性',
+		titleTr: 'The auxiliary aan and evidentiality in Ainu',
+		container: '北方言語研究 [Northern Language Studies] 8',
 		lang: 'ja'
 	},
 	yoshikawa2020: {
@@ -1009,6 +1158,17 @@ export const bibliography: Record<string, BibEntry> = {
 		titleTr: 'Demonstrative expressions in the Tokachi dialect',
 		lang: 'ja'
 	},
+	diessel1999: {
+		region: 'general',
+		author: 'Diessel, Holger',
+		citeAuthor: 'Diessel',
+		year: '1999',
+		title: 'Demonstratives: Form, function and grammaticalization',
+		container: 'Typological Studies in Language 42',
+		publisher: 'John Benjamins',
+		place: 'Amsterdam',
+		reported: true
+	},
 
 	// ───────────────────────── Logophoricity & reported speech ─────────────────────────
 	bugaeva2008: {
@@ -1054,6 +1214,54 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 
 	// ───────────────────────── Dialectology ─────────────────────────
+	hattorichiri1960: {
+		region: 'general',
+		author: 'Hattori Shirō 服部四郎 & Chiri Mashiho 知里真志保',
+		citeAuthor: 'Hattori & Chiri',
+		year: '1960',
+		title: 'アイヌ語方言の語彙統計学的研究',
+		titleTr: 'A lexicostatistic study of the Ainu dialects',
+		container: '民族學研究 [Minzokugaku Kenkyū]',
+		pages: '24(4): 1–56',
+		lang: 'ja',
+		reported: true,
+		note: 'Founding lexicostatistic study; 19 sites (13 HA + 6 ‹SA›), 200-item Swadesh list. The data matrix underlying all subsequent HA classification work. Cited second-hand via Nakagawa & Fukazawa (2022) and Ono (2020).'
+	},
+	asai1974: {
+		region: 'general',
+		author: 'Asai Tōru 浅井亨',
+		citeAuthor: 'Asai',
+		year: '1974',
+		title: 'アイヌ語諸方言の分類について——語彙統計学的方法の再検討',
+		titleTr: 'On the classification of Ainu dialects: a reconsideration of the lexicostatistic method',
+		container: '北方文化研究 [Hoppō Bunka Kenkyū]',
+		pages: '8: 45–136',
+		lang: 'ja',
+		reported: true,
+		note: 'Cluster analysis of the Hattori & Chiri (1960) matrix plus Chitose data; the "major division" paper reanalysed by Ono (2020). Cited second-hand via Nakagawa & Fukazawa (2022) and Ono (2020).'
+	},
+	tamura1988: {
+		region: 'hokkaido',
+		author: 'Tamura Suzuko 田村すゞ子',
+		citeAuthor: 'Tamura',
+		year: '1988',
+		title: 'アイヌ語',
+		titleTr: 'Ainu language [encyclopedia article]',
+		lang: 'ja',
+		reported: true,
+		note: 'Source of the Northeast/Southwest bipartite division of Hokkaido Ainu dialects; English adaptation as Tamura (2000). Cited second-hand via Nakagawa & Fukazawa (2022).'
+	},
+	kirikae1994: {
+		region: 'hokkaido',
+		author: 'Kirikae Hideo 切替英雄',
+		citeAuthor: 'Kirikae',
+		year: '1994',
+		title: 'アイヌ語地名における等語線',
+		titleTr: 'Isoglosses in Ainu place names',
+		lang: 'ja',
+		reported: true,
+		note: 'Place-name study documenting the par/car isogloss distribution across Hokkaido (Table 22). Cited second-hand via Nakagawa & Fukazawa (2022).'
+	},
 	ono2020: {
 		region: 'general',
 		author: 'Ono, Yohei 小野洋平',
@@ -1103,6 +1311,48 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 
 	// ───────────────────────── Historical / comparative ─────────────────────────
+	alonso2022: {
+		region: 'general',
+		author: 'Alonso de la Fuente, José Andrés',
+		citeAuthor: 'Alonso de la Fuente',
+		year: '2022',
+		title: 'The Ainu language through time',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: 'ch. 5',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 5 of the Handbook; the primary reconstruction source — a critical review of Vovin (1993) with revised PA segmental and suprasegmental inventories. Epub reflowable: cited by §/Table, no print-page numbers.'
+	},
+	janhunen2022: {
+		region: 'general',
+		author: 'Janhunen, Juha A.',
+		citeAuthor: 'Janhunen',
+		year: '2022',
+		title: 'Ainu ethnic origins',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: 'ch. 2',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 2 of the Handbook; Ainu as a language isolate, ethnogenesis (Jōmon/Satsumon/Okhotsk), internal taxonomy, and contact-loan diagnostics.'
+	},
+	tangiku2022: {
+		region: 'sakhalin',
+		author: 'Tangiku Itsuji 丹菊逸治',
+		citeAuthor: 'Tangiku',
+		year: '2022',
+		title: 'Differences between Karafuto and Hokkaido Ainu dialects',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: 'ch. 9',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 9 of the Handbook; the ‹SA›↔HA systematic contrast: final-consonant debuccalization, vowel-length/pitch correspondence, affiliative morphology, person affixes, and numerals.'
+	},
 	vovin1993: {
 		region: 'general',
 		author: 'Vovin, Alexander',
@@ -1113,6 +1363,34 @@ export const bibliography: Record<string, BibEntry> = {
 		publisher: 'Brill',
 		place: 'Leiden',
 		reported: true
+	},
+	vovin2022: {
+		region: 'general',
+		author: 'Vovin, Alexander',
+		citeAuthor: 'Vovin',
+		year: '2022',
+		title: 'Ainu elements in early Japonic',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: 'ch. 6',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 6 of the Handbook; the Ainu-loans-in-Old-Japanese thesis (Man\'yōshū material; §§1–6). A live but contested claim.'
+	},
+	shiraishitangiku2022: {
+		region: 'general',
+		author: 'Shiraishi Hidetoshi 白石英才 & Tangiku Itsuji 丹菊逸治',
+		citeAuthor: 'Shiraishi & Tangiku',
+		year: '2022',
+		title: 'Language contact in the north',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: 'ch. 7',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 7 of the Handbook; read in full. Sakhalin sociolinguistics and Ainu↔Nivkh↔Uilta↔Manchu lexical borrowing (§§1–3).'
 	},
 
 	// ───────────────────────── Orthography & philology ─────────────────────────
@@ -1154,6 +1432,20 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 
 	// ───────────────────────── Sociolinguistics & revitalization ─────────────────────────
+	ono2022: {
+		region: 'hokkaido',
+		author: 'Ōno, Tetsuhito',
+		citeAuthor: 'Ōno',
+		year: '2022',
+		title: 'The history and current status of the Ainu language revival movement',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		pages: 'ch. 12',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva',
+		note: 'Chapter 12 of the Handbook; the primary synthesis on the Hokkaido revitalization movement: assimilation history, speaker decline, revival figures, language classes, legislation, FRPAC, Upopoy, orthographic conventions, neologisms, and new-speaker varieties. Epub reflowable: cited by §-number.'
+	},
 	sato2012: {
 		region: 'general',
 		author: 'Satō Tomomi 佐藤知己',
@@ -1169,7 +1461,9 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Ijäs',
 		year: '2023',
 		title: 'Language revitalization through lexical modernization and neologism-coining',
-		note: 'On modern coinages; cite when discussing neo-Ainu forms (contrast boxes only)'
+		container: 'Aynu teetawano ankur kanpinuye 3',
+		pages: '117–160',
+		note: 'On modern coinages and lexical modernization strategies; cite when discussing neo-Ainu neologisms'
 	},
 
 	// ───────────────────────── Corpus / data resources ─────────────────────────
@@ -1182,6 +1476,17 @@ export const bibliography: Record<string, BibEntry> = {
 		titleTr: 'Corpus of Ainu oral literature',
 		url: 'https://ninjal-cjfle.ninjal.ac.jp/',
 		note: 'Aligned Hokkaido Ainu oral-literature corpus with audio (Saru, Chitose, and other dialects); narrators include 木村きみ, 小田イト, and others. Cite the underlying narrator and document for examples.',
+		lang: 'ja'
+	},
+	chiba2015: {
+		region: 'hokkaido',
+		author: 'Chiba University Ainu Language Research Project 千葉大学 (eds.)',
+		citeAuthor: 'Chiba University (eds.)',
+		year: '2015',
+		title: '千葉大学アイヌ語資料集',
+		titleTr: 'Chiba University Ainu language materials collection',
+		url: 'https://db.aynu.org/sources/chiba-325',
+		note: 'Ainu oral-literature recordings (Horobetsu and other dialects); narrators include Kanenari Matsu 金成マツ. Cite the underlying narrator and document for examples.',
 		lang: 'ja'
 	},
 	ainukoraci1991: {
@@ -1227,6 +1532,18 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 
 	// ───────────────────────── Typological & theoretical frameworks (not held; cited for framing) ─────────────────────────
+	comrie2015: {
+		region: 'general',
+		author: 'Comrie, Bernard, Martin Haspelmath & Balthasar Bickel',
+		citeAuthor: 'Comrie, Haspelmath & Bickel',
+		year: '2015',
+		title: 'The Leipzig Glossing Rules: Conventions for interlinear morpheme-by-morpheme glosses',
+		publisher: 'Max Planck Institute for Evolutionary Anthropology & Leipzig University',
+		place: 'Leipzig',
+		url: 'https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf',
+		note: 'Revised edition (original 2004); the standard reference for interlinear morpheme glossing',
+		reported: true
+	},
 	mithun1984: {
 		region: 'general',
 		author: 'Mithun, Marianne',
@@ -1391,5 +1708,79 @@ export const bibliography: Record<string, BibEntry> = {
 		container: 'Journal of Linguistics 27(1)',
 		pages: '1–27',
 		reported: true
+	},
+	hoppertraugott2003: {
+		region: 'general',
+		author: 'Hopper, Paul J. & Elizabeth Closs Traugott',
+		citeAuthor: 'Hopper & Traugott',
+		year: '2003',
+		title: 'Grammaticalization',
+		container: 'Cambridge Textbooks in Linguistics',
+		publisher: 'Cambridge University Press',
+		place: 'Cambridge',
+		note: '2nd edition (1st ed. 1993); the standard typological reference for grammaticalization clines and layering',
+		reported: true
+	},
+
+	// ───────────────────────── Oral literature (additional) ─────────────────────────
+	kindaichi1931: {
+		region: 'general',
+		author: 'Kindaichi Kyōsuke 金田一京助',
+		citeAuthor: 'Kindaichi',
+		year: '1931',
+		title: 'アイヌ叙事詩ユーカラ概説',
+		titleTr: 'An outline of the Ainu heroic epic yukar',
+		publisher: '龍吟社',
+		place: 'Tokyo',
+		lang: 'ja',
+		reported: true,
+		note: 'Source of the five-syllable metre description (p. 165); cited via Okuda (2022).'
+	},
+	kindaichi1935: {
+		region: 'general',
+		author: 'Kindaichi Kyōsuke 金田一京助',
+		citeAuthor: 'Kindaichi',
+		year: '1935',
+		title: '原始文学としてのユーカラ',
+		titleTr: 'Yukar as primitive literature',
+		lang: 'ja',
+		reported: true,
+		note: 'Source of the elegant-language (atomte itak) genre-density ranking; reprinted in 金田一京助全集 11 (Sanseidō, 1992) and cited via Endō (2022) with 1992 page numbers (pp. 381–382 for the elegant-language passage).'
+	},
+	nakagawa2001b: {
+		region: 'hokkaido',
+		author: 'Nakagawa Hiroshi 中川裕',
+		citeAuthor: 'Nakagawa',
+		year: '2001',
+		title: 'アイヌ文化——口承文芸',
+		titleTr: 'Ainu culture: oral literature',
+		lang: 'ja',
+		reported: true,
+		note: 'Source of the four-function genre classification (songs / word play / chants / narrative) adopted by Endō (2022). Cited via Endō (2022).'
+	},
+	tamura1973: {
+		region: 'hokkaido',
+		author: 'Tamura Suzuko 田村すゞ子',
+		citeAuthor: 'Tamura',
+		year: '1973',
+		title: 'アイヌ語の詩について——詩の言語的特徴',
+		titleTr: 'On Ainu poetry: Linguistic characteristics of verse',
+		lang: 'ja',
+		reported: true,
+		note: 'Source of the five-syllable metrical description (p. 56); cited via Okuda (2022).'
+	},
+	chiri1955: {
+		region: 'general',
+		author: 'Chiri Mashiho 知里真志保',
+		citeAuthor: 'Chiri',
+		year: '1955',
+		title: 'アイヌ文学',
+		titleTr: 'Ainu literature',
+		container: '日本詩人全集 27',
+		publisher: '新潮社',
+		place: 'Tokyo',
+		lang: 'ja',
+		reported: true,
+		note: 'Source of genre-term dialect distribution data and variant sakehe forms; cited via Endō (2022).'
 	}
 };
