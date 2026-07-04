@@ -171,7 +171,7 @@
 
 	<p>
 		Whether the reverse indexing (theme indexed, causee as bare NP) ever occurs is not
-		settled in the read sources ‹speculative›.
+		settled in the sources consulted ‹speculative›.
 	</p>
 
 	<p>

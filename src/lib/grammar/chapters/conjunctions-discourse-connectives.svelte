@@ -221,9 +221,9 @@
 		in the immediate narrative moment or resuming a prior referent with deictic force
 		<Ref k="nakagawa2024" p="516" />. However, the phonological form
 		<A w="tap" /> also functions as an emphatic particle (係助詞 in the kakari-musubi
-		framework, §2.2c of the factbase) with the sense 'こそ/まさに', and corpus counts
+		framework) with the sense 'こそ/まさに', and corpus counts
 		(rank 143; 1,330 tokens) conflate the two uses. The boundary between the clause-initial
-		emphatic adverb and the emphatic particle is not settled in the read sources ‹speculative›.
+		emphatic adverb and the emphatic particle is not settled in the sources consulted ‹speculative›.
 		The particle use is treated in <Xr ch="cleft-nominalization-focus" />. Cross-reference
 		also <Xr ch="demonstratives-anaphora-definiteness" /> for the demonstrative continuum
 		within which both <A w="nea" /> and <A w="tap" /> sit.

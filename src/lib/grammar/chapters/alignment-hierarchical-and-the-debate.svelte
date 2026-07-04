@@ -227,8 +227,12 @@
 		that the incorporable nominal corresponds to the patient subject of an intransitive
 		clause or to a transitive object — explicitly invoking an unaccusative analysis
 		<Ref k="shibatani1988" p="210–211" />. The abstract assigns no alignment label to the
-		person-indexing paradigm, and the 1990 work in which an active characterisation may
-		appear was not available to verify <Ref k="shibatani1988" p="210–211" /> ‹speculative›.
+		person-indexing paradigm, In the 1990 monograph Shibatani does operate
+		with an active/inactive classification of intransitives — his applicative discussion tests
+		Baker's claim that no inactive intransitive clause feeds applicative formation, and
+		falsifies it with Ainu data — but that is a verb-class distinction inside the
+		incorporation argument, not an alignment label assigned to the person-indexing paradigm
+		<Ref k="shibatani1990" /> ‹contested›.
 	</p>
 
 	<p>
@@ -337,8 +341,8 @@
 		portmanteau and 2→1 irregular cells display a referential-participant hierarchy
 		overlaid on the S/A/O frame. This overlay does not replace the tripartite exponence
 		of the 1PL.EXCL and fourth-person rows; both dimensions are operative in the same
-		paradigm ‹original-needs-review›. The basis is the factbase-verified five-use
-		analysis of the fourth person and the directly read combination data
+		paradigm ‹speculative›. The basis is the five-use
+		analysis of the fourth person and the combination data cited here
 		(<Ref k="nakagawa2024" p="174–179" />; <Ref k="tamura1972" p="27–28, 34" />;
 		<Ref k="bugaeva2008" p="38, 40–43" />); the synthesis is offered as an integrative
 		label for an existing pattern, not as a new theoretical commitment.
@@ -431,9 +435,9 @@
 		set and in the <i lang="ain-Latn">eci=</i> portmanteau and 2→1 irregular cells. This
 		overlay encodes referential distinctions — inclusive versus exclusive, honorific versus
 		plain, logophoric versus direct report — that fall outside the binary S/A/O frame. The
-		overlay is grounded in the factbase-verified five-use analysis of the fourth person and
-		the directly read combination data, and is presented as an integrative account of the
-		competing labels rather than a new theoretical proposal ‹original-needs-review›.
+		overlay is grounded in the five-use analysis of the fourth person and
+		the combination data cited above, and is presented as an integrative account of the
+		competing labels rather than a new theoretical proposal ‹speculative›.
 	</p>
 
 	<p>

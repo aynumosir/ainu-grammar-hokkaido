@@ -412,7 +412,7 @@
 		One community observation notes a correspondence between Hokkaido
 		<i lang="ain-Latn">wa an</i> and a Sakhalin form <i lang="ain-Latn">hemaka</i> in
 		cross-variety word lists (nukopoli, aynu-corpora Discord, December 2024)
-		<Ref k="aynucorporadiscord" /> ‹speculative›. The read sources for this grammar do not
+		<Ref k="aynucorporadiscord" /> ‹speculative›. The sources consulted for this grammar do not
 		address this correspondence, and its functional equivalence requires independent
 		verification in the Sakhalin grammatical literature.
 	</p>

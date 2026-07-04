@@ -361,7 +361,7 @@
 
 	<Ex
 		m="poro cep a=ne hum-i ne hum-i as orano a=yupi-hi os ma=an wa"
-		g="big fish 4.A=COP sound-POSS COP sound-POSS stand after.that 4=elder.brother-POSS follow swim=4.S CONJ"
+		g="big fish 4.A=COP sound-POSS COP sound-POSS stand after.that 4.POSS=elder.brother-POSS follow swim=4.S CONJ"
 		tr="It felt as though I had become a great fish, and then I swam after my elder brother."
 		cite="ilcaa1976"
 		dial="SAR"

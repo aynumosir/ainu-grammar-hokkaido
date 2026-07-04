@@ -47,7 +47,7 @@
 			<tr>
 				<td><i lang="ain-Latn">hine</i> multi-clause chain</td>
 				<td>prose <i lang="ain-Latn">uwepeker</i></td>
-				<td>pan-Hokkaido (absent in 本別; <i lang="ain-Latn">hinne</i> ‹十勝›)</td>
+				<td>pan-Hokkaido (absent in 本別; <i lang="ain-Latn">hinne</i> ‹TOK›)</td>
 				<td>event enumeration, scene-setting opening frame</td>
 			</tr>
 			<tr>
@@ -303,8 +303,8 @@
 		the sequence perfective <i lang="ain-Latn">a</i> plus a connective such as
 		<i lang="ain-Latn">korka</i>, <i lang="ain-Latn">wa</i>, or nominal
 		<i lang="ain-Latn">p</i> tends to fall at points where the scene, topic, or actor of a
-		narrative changes <Ref k="bugaeva2022" /> ‹speculative; exact chapter and page not
-		confirmed against the print edition›. The structure appears in the following Saru example
+		narrative changes <Ref k="bugaeva2022" /> ‹speculative› (the chapter-and-page attribution is
+		unconfirmed). The structure appears in the following Saru example
 		from Dal Corso's evidence corpus:
 	</p>
 
@@ -397,8 +397,8 @@
 		level of episodes, the <i lang="ain-Latn">ruwe ne a p</i> /
 		<i lang="ain-Latn">ruwe ne akusu</i> boundary markers identified in the preceding section
 		tend in corpus narrative to coincide with just those points where the actor or scene
-		changes <Ref k="bugaeva2022" /> ‹speculative; exact chapter and page not confirmed against
-		the print edition›. The interaction of the evidential system with narrative genre is
+		changes <Ref k="bugaeva2022" /> ‹speculative› (the chapter-and-page attribution is
+		unconfirmed). The interaction of the evidential system with narrative genre is
 		pursued further in <Xr ch="narrative-tam-evidential-patterning-by-genre" />.
 	</p>
 </S>

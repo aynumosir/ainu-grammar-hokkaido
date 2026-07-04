@@ -73,7 +73,7 @@
 				<td><i lang="ain-Latn">ro</i> / <i lang="ain-Latn">rok</i> / <i lang="ain-Latn">no</i></td>
 				<td>hortative (seeks addressee's assent)</td>
 				<td>any person, freq. 4th-pl; see debate below</td>
-				<td><i lang="ain-Latn">rok</i> ‹TOK, Shiranuka (白糠)›; <i lang="ain-Latn">no</i> ‹Urakawa (浦河), Samani (様似)›</td>
+				<td><i lang="ain-Latn">rok</i> ‹TOK› (Shiranuka 白糠); <i lang="ain-Latn">no</i> (Urakawa 浦河, Samani 様似)</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">so</i></td>
@@ -166,7 +166,7 @@
 		/>
 
 		<p>
-			The hortative <A w="ro" gl="hortative particle" /> (‹TOK, Shiranuka› <i lang="ain-Latn">rok</i>;
+			The hortative <A w="ro" gl="hortative particle" /> (‹TOK› Shiranuka <i lang="ain-Latn">rok</i>;
 			Urakawa/Samani <i lang="ain-Latn">no</i>) seeks the addressee's assent for a proposed joint
 			action <Ref k="nakagawa2024" p="333" />; <Ref k="sato2008" p="73" />;
 			<Ref k="fukuda1961" p="§23" />. An earlier analysis held that
@@ -334,7 +334,7 @@
 			In Saru the concordant SFP is optional — the closing particle "is not necessarily
 			present" <Ref k="fukuda1961" p="§11" /> — which raises the question of whether the
 			concord is a productive grammatical constraint or a set of conventionalized collocations.
-			The read sources do not settle this ‹contested›.
+			The sources consulted do not settle this ‹contested›.
 		</p>
 
 		<Ex
@@ -422,7 +422,7 @@
 	<p>
 		Within the outer SFP slot, only <i lang="ain-Latn">hani</i> freely follows another SFP
 		<Ref k="fukuda1961" p="§28" />. No other combination of two SFPs is freely attested in
-		the read sources; longer stacks have not been systematically studied in the Hokkaido
+		the sources consulted; longer stacks have not been systematically studied in the Hokkaido
 		corpus ‹corpus-suggested›. <i lang="ain-Latn">tapan</i> does not add to the outer SFP
 		slot: it occupies the predicator position of the formal noun and is not a stacking
 		particle in the same sense.
@@ -498,7 +498,7 @@
 			(nukopoli, aynu-corpora Discord 2024-07-09, asserted;
 			<Ref k="aynucorporadiscord" />). Whether this phonological shift applies equally to
 			both the connective and the SFP, or whether only one of the two undergoes it in a given
-			dialect, is not documented in the read sources ‹speculative›.
+			dialect, is not documented in the sources consulted ‹speculative›.
 		</p>
 		<p>
 			The community discussion has also proposed a morphological analysis of

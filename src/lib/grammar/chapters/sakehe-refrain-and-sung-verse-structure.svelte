@@ -455,7 +455,7 @@
 		after Tangiku 2020). If the Tangiku analysis survives scrutiny, it would demonstrate at
 		least one historical period or textual tradition in which rhyme was a conscious structural
 		choice rather than an artefact of phonological probability ‹contested›. The Tangiku source
-		has not been read directly for this grammar; the claim is flagged as needing verification
+		has not been consulted directly for this grammar; the claim is flagged as needing verification
 		against the primary text.
 	</p>
 </S>

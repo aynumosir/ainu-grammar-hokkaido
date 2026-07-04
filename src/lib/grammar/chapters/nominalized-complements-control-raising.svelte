@@ -450,8 +450,8 @@
 	<p>
 		Because complement clauses in Hokkaido Ainu are finite and carry their own person morphology,
 		the embedded subject is always expressible: the verb inside the complement bears its own person
-		affixes independently of the matrix clause. No PRO or empty-category mechanism is posited by the
-		read sources, and no formal control or raising analysis of HA complements appears in the
+		affixes independently of the matrix clause. No PRO or empty-category mechanism is posited in the
+		sources consulted, and no formal control or raising analysis of HA complements appears in the
 		literature surveyed here.
 	</p>
 

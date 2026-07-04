@@ -260,7 +260,7 @@
 		<i lang="ain-Latn">kuni</i>/<i lang="ain-Latn">kunak</i> for indirect complements
 		<Ref k="nakagawa2024" p="476" />; <Ref k="sato2008" p="176" />. A stable semantic or
 		register distinction between the two verbs in quotative syntax is not established in
-		the read sources ‹corpus-suggested›.
+		the sources consulted ‹corpus-suggested›.
 	</p>
 </S>
 
@@ -327,7 +327,7 @@
 	</p>
 
 	<p>
-		Three questions remain open in the read sources. First, the geographical and register
+		Three questions remain open in the sources consulted. First, the geographical and register
 		distribution of <i lang="ain-Latn">sekor</i> vs <i lang="ain-Latn">ari</i> across
 		Hokkaido dialects is documented only by Refsing's Shizunai attestation of both
 		<Ref k="refsing1986" p="§14.14" />; whether <i lang="ain-Latn">ari</i> carries any
@@ -339,15 +339,15 @@
 		read here ‹speculative›. Third, the logophoricity analysis of Nikitina and Bugaeva
 		awaits corpus-level testing at construction level; whether the person-shift pattern
 		under <i lang="ain-Latn">kunak</i>/<i lang="ain-Latn">yak</i> distributes differently
-		from the generic fourth-person use is not settled by evidence in the read sources
+		from the generic fourth-person use is not settled by evidence in the sources consulted
 		‹contested›.
 	</p>
 
 	<p>
 		Ijäs's pedagogical grammar covers relative clauses and the formal-noun nominalizer
 		system in Lesson 11 — the material banked for this grammar's nominalization domain —
-		but her treatment of direct and indirect speech falls in a separate lesson not included
-		in the factbase read for this domain <Ref k="ijas2023" />. No Ijäs claims on
+		but her treatment of direct and indirect speech falls in a separate lesson not yet
+		incorporated here <Ref k="ijas2023" />. No Ijäs claims on
 		<i lang="ain-Latn">sekor</i> or quotative framing are available for grading here.
 	</p>
 </S>

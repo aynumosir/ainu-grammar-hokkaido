@@ -283,7 +283,7 @@
 			patterns are non-conditional and lexeme-specific, proposes them as evidence for a
 			distinct underlying Proto-Ainu consonant series
 			<Ref k="aynucorporadiscord" /> (antitwilight, November 2024); the proposal goes
-			beyond the read sources and awaits verification ‹speculative›.
+			beyond the sources consulted and awaits verification ‹speculative›.
 		</p>
 	</S>
 

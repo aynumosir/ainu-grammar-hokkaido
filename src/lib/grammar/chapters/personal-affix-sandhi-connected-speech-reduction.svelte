@@ -5,7 +5,7 @@
 
 <S t="Overview" id="overview">
 	<p>
-		The personal clitics of Hokkaido Ainu undergo systematic phonological changes at their
+		The person markers of Hokkaido Ainu undergo systematic phonological changes at their
 		juncture with a following verb or noun stem. The most salient is the deletion of the vowel
 		of <i lang="ain-Latn">ku=</i> and <i lang="ain-Latn">ci=</i> before stem-initial vowels
 		other than /i/, a feature of the southern varieties (Saru, Chitose, Mukawa). This deletion
@@ -13,7 +13,7 @@
 		<Xr ch="accent-in-compounds-and-affixation" /> and with the vowel-weakening mechanism
 		described in <Xr ch="glide-epenthesis-hiatus-resolution" />. The general sandhi processes
 		that operate across all morpheme junctures — coda-/r/ assimilation, nasal-place assimilation
-		— are the subject of <Xr ch="coda-r-assimilation-sonorant-sandhi" />; the person-clitic
+		— are the subject of <Xr ch="coda-r-assimilation-sonorant-sandhi" />; the person-marker
 		inventory and its morphosyntactic analysis are laid out in
 		<Xr ch="person-marking-architecture" />.
 	</p>
@@ -27,7 +27,7 @@
 		the same environments <Ref k="nakagawa2024" p="33, 52" />; <Ref k="sato2008" p="xii" />.
 		The vowel /i/ is excluded from the deletion domain: before a stem beginning with /i/, a
 		distinct vowel-weakening process applies (§3 below). Outside the southern zone, most
-		Hokkaido dialects preserve the full clitic forms without deletion
+		Hokkaido dialects preserve the full marker forms without deletion
 		<Ref k="nakagawa2024" p="52" />; <Ref k="nakagawafukazawa2022" p="§3" />.
 	</p>
 
@@ -73,7 +73,7 @@
 				<td>/i/ — open σ1</td>
 				<td><i lang="ain-Latn">ku=ipe</i></td>
 				<td><i lang="ain-Latn">ku=ype</i> [kuˈype]</td>
-				<td>stem /i/ → [j]; NO clitic deletion (§3)</td>
+				<td>stem /i/ → [j]; NO marker deletion (§3)</td>
 			</tr>
 			<tr>
 				<td>/i/ — closed σ1</td>
@@ -141,7 +141,7 @@
 
 <S t="Prosodic integration and rule ordering" id="prosodic-integration">
 	<p>
-		The clitics <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, and
+		The markers <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, and
 		<i lang="ain-Latn">ci=</i> form a single prosodic word with the following stem, so that the
 		pitch-accent placement rules (原則1 / 原則2; <Xr ch="pitch-accent-placement-rule" />) are
 		reapplied to the whole unit. The crucial ordering point is that the accent shift occurs
@@ -174,7 +174,7 @@
 				<td>—</td>
 			</tr>
 			<tr>
-				<td>after clitic attachment</td>
+				<td>after marker attachment</td>
 				<td><i lang="ain-Latn">ku=ómare</i></td>
 				<td>ku|ó|ma|re — new σ1 = CV (open) → 原則2: accent on new σ2</td>
 				<td>prosodic-word formation; accent reapplied</td>
@@ -198,7 +198,7 @@
 	</p>
 
 	<p>
-		The clitics <i lang="ain-Latn">a=</i> (fourth-person agent/subject) and
+		The markers <i lang="ain-Latn">a=</i> (fourth-person agent/subject) and
 		<i lang="ain-Latn">eci=</i> (second-person plural agent/subject) behave differently: they do
 		not form a single prosodic word with the stem, so the stem retains its underlying accent
 		without shift. Thus <i lang="ain-Latn">omáre</i> → <i lang="ain-Latn">a=omáre</i> (accent
@@ -207,11 +207,11 @@
 
 	<table>
 		<caption>
-			Table 3. Accent-class split among personal clitics
+			Table 3. Accent-class split among person markers
 		</caption>
 		<thead>
 			<tr>
-				<th>clitic</th>
+				<th>marker</th>
 				<th>prosodic-word formation</th>
 				<th>accent shift on V-initial stem</th>
 				<th>vowel deletion before &#123;a, e, u, o&#125;</th>
@@ -254,14 +254,14 @@
 
 <S t="Juncture tightness and the =an boundary" id="juncture-tightness">
 	<p>
-		Within the personal-clitic class as a whole, the degree of phonological integration with the
+		Within the person-marker class as a whole, the degree of phonological integration with the
 		host stem varies beyond the binary inner/outer accent-class split. Community phonetic
 		observation — uncorroborated by instrumental study in the sources read for this grammar —
-		reports that the clitic group binds more tightly to its host than a compound constituent
+		reports that the marker group binds more tightly to its host than a compound constituent
 		does: <i lang="ain-Latn">a=kor itak</i> 'speech one has' surfaces as [akorəʔitak], with a
 		glottal catch at the word boundary after <i lang="ain-Latn">kor</i>, rather than
 		resyllabifying the coda /r/ across the compound juncture to *[ako.ri.tak]
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-03-18) ‹speculative›. Within the clitic
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-03-18) ‹speculative›. Within the marker
 		paradigm, the inner-class markers (<i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>)
 		are reported to be phonetically tighter than the outer-class markers
 		(<i lang="ain-Latn">a=</i>, <i lang="ain-Latn">=an</i>), the latter tending to be realized
@@ -308,7 +308,7 @@
 		<Ref k="nakagawa2024" p="37–38" />;
 		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-07-09) ‹corpus-confirmed›. The sandhi forms
 		are produced in speech but not written in standard transcription, so corpus searches for
-		assimilated personal-clitic forms typically return nothing; the spoken distribution of the
+		assimilated person-marker forms typically return nothing; the spoken distribution of the
 		rule is consequently under-documented in the written record
 		<Ref k="nakagawa2024" p="37–38" />. The wider romanization policy and its divergence from
 		katakana practice are discussed in
@@ -316,10 +316,10 @@
 	</p>
 
 	<p>
-		The coda /r/ of a verb stem can interact with personal-clitic sandhi when a /r/-final stem
-		precedes a vowel-initial clitic or suffix. The regressive assimilation rules of
+		The coda /r/ of a verb stem can interact with person-marker sandhi when a /r/-final stem
+		precedes a vowel-initial marker or suffix. The regressive assimilation rules of
 		<Xr ch="coda-r-assimilation-sonorant-sandhi" /> operate on the coda /r/ first and produce
-		the form that then serves as input to personal-clitic juncture rules. The fast-speech
+		the form that then serves as input to person-marker juncture rules. The fast-speech
 		deletion of word-final /r/ itself (<i lang="ain-Latn">kur</i> →
 		<i lang="ain-Latn">ku</i>, <i lang="ain-Latn">kor</i> → <i lang="ain-Latn">ko</i>) is
 		treated in <Xr ch="rhotic-r" />.
@@ -328,21 +328,21 @@
 
 <S t="The clitic–affix cline" id="clitic-affix-cline">
 	<p>
-		Nakagawa's standard romanization applies the equals sign to all person markers that cliticize
-		to the left or right edge of the verb: <i lang="ain-Latn">ku=</i>,
+		Nakagawa's standard romanization applies the equals sign to all person markers at the
+		left or right edge of the verb: <i lang="ain-Latn">ku=</i>,
 		<i lang="ain-Latn">e=</i>, <i lang="ain-Latn">a=</i>, <i lang="ain-Latn">ci=</i>,
 		<i lang="ain-Latn">eci=</i>, <i lang="ain-Latn">en=</i>, <i lang="ain-Latn">un=</i>,
 		<i lang="ain-Latn">=an</i>, and <i lang="ain-Latn">=as</i>
-		<Ref k="nakagawa2024" p="33" />. The convention, generalized and standardized in the 1980s
-		from Nakagawa's Chitose dictionary practice, signals prosodic dependency without full
-		morphological integration — clitic status as against derivational-affix status (marked with
-		a hyphen). The orthographic policy is discussed in
-		<Xr ch="orthographic-standardization-and-word-division" />.
+		<Ref k="nakagawa2024" p="33" />. The <code>=</code> is an orthographic device — Nakagawa
+		states expressly that it is unrelated to the linguistic convention of marking clitics with
+		an equals sign <Ref k="nakagawa2024" p="58–60" /> — so the notation itself carries no claim
+		about clitic as against affix status. The orthographic policy is discussed in
+		<Xr ch="orthographic-standardization-and-word-division" s="equals-sign" />.
 	</p>
 
 	<p>
-		The phonological evidence surveyed in this chapter shows that the personal markers, while all
-		clitic by the orthographic criterion, occupy different positions along the clitic-to-affix
+		The phonological evidence surveyed in this chapter shows that the personal markers — written
+		uniformly with <code>=</code> — occupy different positions along the clitic-to-affix
 		cline. Three independent diagnostics converge on the same two-way split:
 	</p>
 
@@ -356,8 +356,8 @@
 		</li>
 		<li>
 			<strong>Vowel deletion</strong>: only <i lang="ain-Latn">ku=</i> and
-			<i lang="ain-Latn">ci=</i> lose their clitic vowels before non-/i/ stems in the southern
-			dialects, marking them as the most tightly bonded members of the clitic paradigm (§2
+			<i lang="ain-Latn">ci=</i> lose their vowels before non-/i/ stems in the southern
+			dialects, marking them as the most tightly bonded members of the marker paradigm (§2
 			above; <Ref k="nakagawa2024" p="52" paren />).
 		</li>
 		<li>

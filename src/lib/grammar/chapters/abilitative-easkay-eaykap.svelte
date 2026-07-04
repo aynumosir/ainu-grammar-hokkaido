@@ -281,7 +281,7 @@
 		The morphological structure of <A w="koyaykus" /> — comprising the
 		<Xr ch="applicative-ko"><i lang="ain-Latn">ko-</i> applicative prefix</Xr>, the
 		reflexive <i lang="ain-Latn">yay-</i>, and a root <i lang="ain-Latn">kus</i> — is
-		internally visible, but the read sources do not derive the circumstantial-obstacle
+		internally visible, but the sources consulted do not derive the circumstantial-obstacle
 		semantics compositionally from this decomposition
 		<Ref k="nakagawa2024" p="316" /> ‹speculative›.
 	</p>

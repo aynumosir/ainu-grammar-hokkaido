@@ -427,8 +427,8 @@
 		Historically, Kindaichi &amp; Chiri <Ref k="kindaichi1936" p="123–124" /> still posited a
 		形容詞 class with its own person-inflected paradigm; Chiri's later work
 		<Ref k="chiri1942" /> rejected the verb/adjective distinction and coined the unified term 用詞
-		for the merged class; all subsequent description has inherited that move ‹contested (historical);
-		consensus in the modern literature›.
+		for the merged class; all subsequent description has inherited that move — historically contested, now the
+		consensus of the modern literature ‹consensus›.
 	</p>
 
 	<p>

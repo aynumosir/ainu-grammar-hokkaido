@@ -296,7 +296,7 @@
 		"Special language of the older generations among the Ainu" (nenchōshasō tokushugo,
 		年長者層特殊語), which was not held or consulted in the preparation of this grammar. No
 		systematic hunting-substitute or in-law name-avoidance word list was recoverable from the
-		read grammars or the aligned corpus ‹speculative›. What the read sources make available is
+		read grammars or the aligned corpus ‹speculative›. What the sources consulted make available is
 		the <em>mechanism</em> — lexical substitution by a genre- or context-conditioned alternate
 		form — and several attested examples from the prayer and epic registers, as described above.
 		The hunting and bear-ceremony vocabulary, and the kinship-avoidance pairs, remain a gap

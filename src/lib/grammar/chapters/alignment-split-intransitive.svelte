@@ -261,9 +261,9 @@
 		between A-like and O-like S marking according to control or discourse construal. Such an
 		inventory would require a raw-token study across the corpus; the normalised frequency layer
 		strips personal-affix clitics and cannot supply per-affix counts for individual S forms.
-		No factbase example shows an intransitive undergoer indexed by the object forms
+		No example in the material consulted shows an intransitive undergoer indexed by the object forms
 		<i lang="ain-Latn">en=</i>, <i lang="ain-Latn">un=</i>, or <i lang="ain-Latn">i=</i>;
 		the available evidence supports the uniform-S generalization as the correct synchronic
-		description ‹original-needs-review›.
+		description ‹speculative›.
 	</p>
 </S>

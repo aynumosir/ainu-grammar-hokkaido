@@ -311,7 +311,7 @@
 		<i lang="ain-Latn">oar</i> under <i lang="ain-Latn">somo</i> for ‘completely not, absolutely
 		not’; these illustrate an attested pattern but are not corpus evidence <Ref k="ijas2023" />. A
 		dedicated free-choice paradigm — a distinct ‘anything whatever’ or ‘whoever’ series set apart
-		from the existential one — is not described in the read sources; the scalar minimizers carry the
+		from the existential one — is not described in the sources consulted; the scalar minimizers carry the
 		‘even the least’ load that free-choice items carry elsewhere ‹speculative›.
 	</p>
 </S>

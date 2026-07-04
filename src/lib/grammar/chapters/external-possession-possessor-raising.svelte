@@ -338,7 +338,7 @@
 		at the boundary between Type II (lexical-level compounding) and Type III
 		(manipulation of discourse referents), but assigning the Ainu data precisely
 		requires corpus evidence on whether an independent possessor NP can co-occur with
-		the incorporated body-part noun — a question the read sources leave open
+		the incorporated body-part noun — a question the sources consulted leave open
 		‹speculative›. The natural-force and applicative mechanisms sit closer to Type I
 		(simple argument reduction) and to applicative constructions respectively; their
 		co-existence in a polysynthetic head-marking language

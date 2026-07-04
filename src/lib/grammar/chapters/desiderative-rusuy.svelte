@@ -111,7 +111,8 @@
 		<i lang="ain-Latn">ku=e rusuy</i>, <i lang="ain-Latn">ku=e easkay</i>, and the
 		<i lang="ain-Latn">kuni</i> nominalization divide the work that a single to-infinitive carries
 		in English — a lead consistent with the typological profile of head-marking,
-		nominalization-dependent languages ‹proposed, nukopoli, aynu-corpora Discord 2024›.
+		nominalization-dependent languages (nukopoli, aynu-corpora Discord 2024;
+		<Ref k="aynucorporadiscord" />) ‹speculative›.
 	</p>
 </S>
 

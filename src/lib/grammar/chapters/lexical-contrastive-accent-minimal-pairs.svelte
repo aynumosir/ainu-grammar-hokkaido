@@ -235,7 +235,7 @@
 		<i lang="ain-Latn">kamúynomi</i> by first-element priority,
 		<Ref k="nakagawa2024" p="54" />). The Ainu accent on the first element is expected; the
 		observation concerned the different prosodic placement that this term acquires when it is
-		borrowed into Japanese-language usage ‹proposed›
+		borrowed into Japanese-language usage ‹speculative›
 		(<Ref k="aynucorporadiscord" />; palestine_2026, 2024-08-12). That is a property of the
 		borrowing in its receiving language. Within Ainu, <i lang="ain-Latn">kamuynomi</i> follows
 		the first-element-priority pattern of all compounds, detailed in

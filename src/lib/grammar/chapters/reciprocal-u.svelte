@@ -260,11 +260,11 @@
 
 	<Ex
 		m="matkaci a=maci turano a=u-ko-kor hine oka=an wa"
-		g="girl 1SG.POSS=wife together 1SG.A=RECP-APPL-have CONJ exist.PL=4.S CONJ"
+		g="girl 4.POSS=wife together 4.A=RECP-APPL-have CONJ exist.PL=4.S CONJ"
 		tr="Together with my wife, I had a daughter, and we went on living."
 		cite="nakagawa2024:208"
 		dial="SAR"
-		note="Nakagawa ex. 218. a=u-ko-kor is transitive (arity 0 preserves the base kor's transitivity): the 1SG.A prefix a= on the verb confirms this. The plain reciprocal u-kor 'marry each other' is intransitive and takes =an."
+		note="Nakagawa ex. 218. a=u-ko-kor is transitive (arity 0 preserves the base kor's transitivity): the 4.A prefix a= (narrative first person) on the verb confirms this. The plain reciprocal u-kor 'marry each other' is intransitive and takes =an."
 	/>
 
 	<Ex

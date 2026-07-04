@@ -184,7 +184,7 @@
 				<td>A of 3-place verb (ditransitive subject)</td>
 				<td>no examples attested</td>
 				<td>gap (expected)</td>
-				<td>‹corpus-confirmed (as gap)›</td>
+				<td>‹corpus-confirmed› (as gap)</td>
 			</tr>
 			<tr>
 				<td>oblique — instrumental</td>
@@ -293,7 +293,7 @@
 			No attested example of the A of a three-place verb serving as RC head has been reported.
 			Bugaeva states the absence explicitly — "no examples attested so far" — without deciding
 			whether the position is grammatically excluded or merely rare
-			<Ref k="bugaeva2015" p="48" /> ‹corpus-confirmed (as gap)›.
+			<Ref k="bugaeva2015" p="48" /> ‹corpus-confirmed› (as gap).
 		</p>
 	</S>
 
@@ -312,7 +312,7 @@
 		/>
 		<Ex
 			m="turano ku=yupo kamuy cotca acapo"
-			g="COMIT 1SG=older.brother bear shoot uncle"
+			g="COMIT 1SG.POSS=older.brother bear shoot uncle"
 			tr="the uncle my brother shot the bear with"
 			cite="bugaeva2015:48"
 			dial="HK"
@@ -443,7 +443,7 @@
 		<Ref k="bugaeva2022" p="ch. 1" /> ‹consensus›. And her identification of the ditransitive
 		subject as a problematic head position matches Bugaeva's "no examples attested so far"
 		<Ref k="bugaeva2015" p="48" />; she is consistent in flagging it as an open question rather
-		than asserting ungrammaticality ‹corpus-confirmed (as gap)›.
+		than asserting ungrammaticality ‹corpus-confirmed› (as gap).
 	</p>
 	<p>
 		Two of her claims need a hedge. Her report that the ordering of multiple stative modifiers

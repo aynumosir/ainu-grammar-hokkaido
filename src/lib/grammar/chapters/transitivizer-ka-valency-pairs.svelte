@@ -320,8 +320,8 @@
 		transitive verbs', which captures the right intuition for the valency-increasing set as a
 		whole but supplies no allomorphy and does not distinguish
 		<i lang="ain-Latn">-ka</i>, <i lang="ain-Latn">-ke</i>, or the lexical forming-suffix
-		pairs as separate sub-types <Ref k="ijas2023" /> ‹consensus on the intuition; allomorphy
-		detail absent›.
+		pairs as separate sub-types <Ref k="ijas2023" /> ‹consensus› (the source gives no
+		allomorphy detail).
 	</p>
 </S>
 
@@ -333,7 +333,7 @@
 		<i lang="ain-Latn">san</i>/<i lang="ain-Latn">sap</i>,
 		<i lang="ain-Latn">yan</i>/<i lang="ain-Latn">yap</i>, and
 		<i lang="ain-Latn">ahun</i>/<i lang="ain-Latn">ahup</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord 2026) ‹community-proposed›.
+		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord 2026) ‹speculative›.
 		In reduplication contexts <i lang="ain-Latn">rikin</i> alternates with
 		<i lang="ain-Latn">rikip</i>.
 	</p>

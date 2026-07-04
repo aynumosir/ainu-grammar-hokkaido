@@ -165,7 +165,7 @@
 
 	<p>
 		The formal status of the nominalized clause embedded under the evidential is not settled in
-		the sources read directly for this grammar. Its finiteness is evident from its TAM and person
+		the sources consulted directly for this grammar. Its finiteness is evident from its TAM and person
 		marking. <Ref k="dalcorso2018" p="314–315" /> observes that the copula
 		<i lang="ain-Latn">ne</i> of the direct forms expresses an internal, speaker-anchored
 		viewpoint while the existential and posture verbs of the indirect forms express an external
@@ -210,7 +210,7 @@
 
 	<p>
 		Within Hokkaido, the grammaticalization has advanced differently across dialects. Three stages
-		are directly attested in the sources, yielding an intra-areal cline ‹original-needs-review›:
+		are directly attested in the sources, yielding an intra-areal cline ‹speculative›:
 	</p>
 
 	<table>

@@ -214,7 +214,7 @@
 	</ul>
 
 	<p>
-		The three-way ambiguity is described functionally in the read sources but lacks a unified
+		The three-way ambiguity is described functionally in the sources consulted but lacks a unified
 		syntactic account; Satō 2013's analysis of <i lang="ain-Latn">siri an</i> as a
 		polysemous aspectual-modal-evidential in Chitose is cited by Dal Corso but was not
 		consulted directly <Ref k="dalcorso2018" p="316" /> ‹speculative›. Discourse context and
@@ -223,7 +223,7 @@
 
 	<Ex
 		m="i=resu sir-i an sekor yaynu=an kor an=an a p"
-		g="1SG.O=raise appearance-POSS exist QUOT 4.S=think while 4.S=exist PFV NMLZ"
+		g="4.O=raise appearance-POSS exist QUOT 4.S=think while 4.S=exist PFV NMLZ"
 		tr="I had been thinking that (my older sibling) was raising me, but (it turned out otherwise)…"
 		cite="ilcaa1976"
 		dial="SAR"
@@ -281,7 +281,7 @@
 		A notably absent frame is the affirmative-answer construction: unlike
 		<i lang="ain-Latn">ruwe un</i>, there is no attested
 		<i lang="ain-Latn">*siri un</i> — the <i lang="ain-Latn">un</i>-answer is restricted to
-		<i lang="ain-Latn">ruwe</i> in the read sources
+		<i lang="ain-Latn">ruwe</i> in the sources consulted
 		<Ref k="nakagawa2024" p="396" /> ‹corpus-confirmed›. The polar-question reduction — bare
 		<i lang="ain-Latn">siri</i> without a following predicate — is an instance of
 		insubordination: a nominalized clause pressed into main-clause function. Takahashi

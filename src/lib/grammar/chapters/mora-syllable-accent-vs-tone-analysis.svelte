@@ -221,7 +221,7 @@
 		A moraic restatement of 原則1/2 is formally possible: a closed σ1 has two moras (CV + C), so
 		accent could be described as associating with the second mora of the word — belonging to σ1
 		when σ1 is heavy, to σ2 when σ1 is light. This restatement covers the same data but posits
-		mora-counting that is not independently evidenced elsewhere in Ainu phonology. The read sources
+		mora-counting that is not independently evidenced elsewhere in Ainu phonology. The sources consulted
 		do not argue for it: Shiraishi characterizes the pattern as iambic and syllable-based <Ref
 			k="shiraishi2022"
 			p="§5.1"
@@ -261,14 +261,14 @@
 		(§&thinsp;<a href="#diachrony">Diachrony</a> below) supplies a diachronic motive: the HA
 		exception class corresponds systematically to SA long-vowel forms, suggesting the two HA
 		classes may reflect a former segmental length distinction rather than a discrete tonal
-		specification. This reanalysis has not been proposed in the read sources; the synchronic data
+		specification. This reanalysis has not been proposed in the sources consulted; the synchronic data
 		do not require it; it is noted here as a possible alternative formalization ‹speculative›.
 	</p>
 	<p>
 		Community discussion noted a phonetic resemblance between Hachijō-language intonation and Ainu
 		pitch contours <Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-08). No systematic published
 		comparison of the two systems has been consulted here; the significance of any resemblance —
-		intonational, accentual, or areal — cannot be assessed from the read sources ‹speculative›.
+		intonational, accentual, or areal — cannot be assessed from the sources consulted ‹speculative›.
 	</p>
 </S>
 
@@ -404,7 +404,7 @@
 		default (原則2) is a Hokkaido innovation. Satō dissents on the directionality in his contribution
 		to the Handbook (reported via <Ref k="nakagawafukazawa2022" p="§3.1" />) ‹contested›. Itabashi
 		(2001) argues the length–pitch diachrony in detail <Ref k="itabashi2001" />; that study was not
-		read directly for this grammar and the claims attributed to it here rest on its treatment in
+		consulted directly for this grammar and the claims attributed to it here rest on its treatment in
 		Nakagawa (2024) and Nakagawa and Fukazawa (2022).
 	</p>
 	<p>

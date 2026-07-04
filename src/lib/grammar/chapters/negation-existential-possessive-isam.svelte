@@ -105,7 +105,7 @@
 
 	<Ex
 		m="k=uni-hi okari anakne nep ka isam"
-		g="1SG=home-POSS around TOP something even not.exist"
+		g="1SG.POSS=home-POSS around TOP something even not.exist"
 		tr="There is nothing around my house."
 		cite="sato2008"
 		dial="HK"
@@ -131,7 +131,7 @@
 		<i lang="ain-Latn">an</i>/<i lang="ain-Latn">oka</i>. An existential or locational predicate may
 		still be negated analytically by placing <i lang="ain-Latn">somo</i> before
 		<i lang="ain-Latn">an</i>, as with any verbal predicate <Ref k="nakagawa2024" p="365–366" />;
-		<Ref k="sato2008" p="124" />. The read sources agree that <i lang="ain-Latn">isam</i> is the
+		<Ref k="sato2008" p="124" />. The sources consulted agree that <i lang="ain-Latn">isam</i> is the
 		lexical negative of the existential, but they do not quantify when a speaker selects lexical
 		<i lang="ain-Latn">isam</i> over analytic <i lang="ain-Latn">somo an</i>.
 	</p>

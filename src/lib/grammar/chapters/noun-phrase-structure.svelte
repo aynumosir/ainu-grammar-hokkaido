@@ -174,7 +174,7 @@
 
 	<Ex
 		m="tan cise e=uni ne ru-we"
-		g="this house 2SG=home COP track-POSS"
+		g="this house 2SG.POSS=home COP track-POSS"
 		tr="Is this house yours?"
 		cite="sato2008:131"
 		dial="CHI"

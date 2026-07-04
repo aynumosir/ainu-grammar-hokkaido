@@ -168,7 +168,7 @@
 		suggest the palato-alveolar realization before /i/ is phonetically distinct from Japanese [ɕ],
 		with less hissing and a blade rather than lamino-palatal contact
 		<Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-11) ‹corpus-suggested›; this granularity
-		is not addressed in the read academic sources.
+		is not addressed in the academic literature consulted.
 	</p>
 
 	<p>
@@ -201,7 +201,7 @@
 		(→ [asʲ]~[as]). Before the particle <i lang="ain-Latn">wa</i>, coda /s/ retains plain [s]
 		regardless of the preceding vowel: <i lang="ain-Latn">as wa</i> 'standing, then' → [as wa],
 		with no palatalization <Ref k="aynucorporadiscord" /> (aomidori, 2023-12-11; attributed to
-		Tamura 1996 Saru dictionary front matter, not directly verified here ‹asserted›).
+		Tamura 1996 Saru dictionary front matter, not directly verified here ‹speculative›).
 	</p>
 
 	<p>
@@ -309,7 +309,7 @@
 		[l] at all' (aomidori, <Ref k="aynucorporadiscord" />, 2023-12-11); Shiraishi, by contrast,
 		lists [l] alongside [d] as possible realizations <Ref k="shiraishi2022" p="§3" />. The
 		community characterization could not be page-verified in sources read for this grammar and is
-		reported here as a community assertion ‹asserted›.
+		reported here as a community assertion ‹speculative›.
 	</p>
 
 	<p>

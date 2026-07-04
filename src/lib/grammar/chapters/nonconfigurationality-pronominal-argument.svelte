@@ -193,7 +193,7 @@
 		<Ref k="nakagawa2022pos" />. This is the ‹contested› heart of the question: whether role is
 		fixed by first-noun default (Shibatani, Satō 2008) or is genuinely free and recoverable only
 		via person-indexing and real-world plausibility (Nakagawa, Bugaeva). No corpus-level count of
-		A-before-O versus O-before-A frequencies in transitive clauses exists in the read literature;
+		A-before-O versus O-before-A frequencies in transitive clauses exists in the literature consulted;
 		the Nakagawa triple is the strongest available evidence, but it derives from one speaker in one
 		session ‹contested›.
 	</p>

@@ -344,9 +344,9 @@
 		of earlier forms. Aldehyde8908 (2025, <Ref k="aynucorporadiscord" />) countered that some
 		‹SA› subdialects genuinely surface with <i lang="ain-Latn">p/t/k</i> (Taraika,
 		Tarantomari), so writing the surface form is the accurate representation of those dialects,
-		while the uniform <i lang="ain-Latn">h</i> convention would misrepresent them ‹disputed›.
+		while the uniform <i lang="ain-Latn">h</i> convention would misrepresent them ‹contested›.
 		The dispute reflects the genuine ‹SA›-internal variation noted above and has no consensus
-		resolution in the read sources. Ijäs <Ref k="ijas2023" /> addresses the SA–HA affiliative
+		resolution in the sources consulted. Ijäs <Ref k="ijas2023" /> addresses the SA–HA affiliative
 		alternation in pedagogical terms, making the base-consonant restoration accessible to
 		learners encountering ‹SA› citation forms for the first time.
 	</p>

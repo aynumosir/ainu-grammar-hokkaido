@@ -549,8 +549,8 @@
 		perfective auxiliary <i lang="ain-Latn">aan</i> and to <i lang="ain-Latn">anan</i>
 		<Ref k="hirosawa2026" p="90" />. Yoshikawa argues that <i lang="ain-Latn">aan</i>
 		signals indirect evidentiality plus mirativity (reported via
-		<Ref k="hirosawa2026" p="90" />) <Ref k="yoshikawa2018" /> ‹speculative — Yoshikawa
-		2018 cited second-hand›.
+		<Ref k="hirosawa2026" p="90" />) <Ref k="yoshikawa2018" /> ‹speculative› (Yoshikawa
+		2018 cited second-hand).
 	</p>
 	<p>
 		The two mechanisms can co-occur. When <i lang="ain-Latn">aan</i> places information outside

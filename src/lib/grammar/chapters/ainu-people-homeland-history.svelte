@@ -197,8 +197,8 @@
 		constituted the principal economic link between the Ainu and the Japanese domains. Episodic
 		tensions over trade terms escalated into armed conflicts, most notably the Shakushain War of
 		1669–1672 and the Menashi-Kunashir uprising of 1789, both of which ended with Ainu defeat
-		and tightened Matsumae control ‹contested as to the interpretation of Ainu agency
-		and objectives›.
+		and tightened Matsumae control ‹contested› (the interpretation of Ainu agency and
+		objectives is debated).
 	</p>
 	<p>
 		The broader trade network extending from Sakhalin into the Amur basin and ultimately

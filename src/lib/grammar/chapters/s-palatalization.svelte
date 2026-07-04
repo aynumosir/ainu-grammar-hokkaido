@@ -157,7 +157,7 @@
 		the palatal colouring that the coda /s/ otherwise carries. Whether this is best analysed as
 		anticipatory labial assimilation blocking palatalization, or as a context-sensitive
 		allophone rule that takes precedence over the general coda rule, is not resolved in the
-		read sources. The broader sandhi environment in which /s/ participates at word junctures —
+		sources consulted. The broader sandhi environment in which /s/ participates at word junctures —
 		including the /r/+/s/ cluster that produces progressive effects (see
 		<Xr ch="coda-r-assimilation-sonorant-sandhi" />) — is treated there.
 	</p>

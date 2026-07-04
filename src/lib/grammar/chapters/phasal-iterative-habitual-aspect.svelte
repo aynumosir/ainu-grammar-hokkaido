@@ -241,7 +241,7 @@
 			The perfective auxiliary <A w="a" gl="perfective/anterior (SG)" /> (plural
 			<A w="rok" gl="perfective/anterior (PL)" />) reduplicates to mark iterative or
 			emphatic-continuative aspect. The construction <i lang="ain-Latn">V a V a</i> signals
-			that the event occurred repeatedly; when the subject is fourth person, the person clitic
+			that the event occurred repeatedly; when the subject is fourth person, the person marker
 			<i lang="ain-Latn">=an</i> migrates to the second auxiliary rather than remaining solely
 			on the lexical verb <Ref k="nakagawa2024" p="307–308" />.
 		</p>
@@ -252,7 +252,7 @@
 			cite="nakagawa2024:307"
 			dial="SAR"
 			place="ex. 453"
-			note="Reduplicated a … a with a fourth-person subject: =an attaches to the second a. Only the person clitic reduplicate with a fourth-person subject, not the full stem."
+			note="Reduplicated a … a with a fourth-person subject: =an attaches to the second a. Only the person marker reduplicates with a fourth-person subject, not the full stem."
 		/>
 		<p>
 			Bugaeva labels this pattern "emphatic continuative" <Ref k="bugaeva2012" p="493" />.

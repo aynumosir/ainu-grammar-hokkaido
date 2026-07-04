@@ -326,8 +326,9 @@
 				<td
 					>Evidence-grade label scoping over the immediately preceding claim. The
 					closed set is: ‹consensus›, ‹contested›, ‹corpus-confirmed›,
-					‹corpus-suggested›, ‹speculative›, ‹original-needs-review›. Unmarked prose
-					is treated as consensus and is not labelled.</td
+					‹corpus-suggested›, ‹speculative›. Unmarked prose is treated as consensus
+					and is not labelled; analyses original to this grammar are marked
+					‹speculative› and identified as such in the prose.</td
 				>
 			</tr>
 		</tbody>

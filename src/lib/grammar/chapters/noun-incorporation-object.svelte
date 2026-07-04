@@ -282,7 +282,7 @@
 		verb vocabulary rather than a productive derivational slot
 		<Ref k="nakagawa2024" p="480" />. Whether Ainu NI is best analysed as purely lexical, as
 		Baker's syntactic head-movement, or as a hybrid that must reference both grammatical relations
-		and semantic roles as Shibatani proposes is a dispute the read sources do not resolve; it is
+		and semantic roles as Shibatani proposes is a dispute the sources consulted do not resolve; it is
 		taken up in <Xr ch="noun-incorporation-oblique-polysynthesis-debate" />
 		<Ref k="shibatani1988" paren />; <Ref k="shibatani1990" p="60–66" />; <Ref
 			k="baker1988"

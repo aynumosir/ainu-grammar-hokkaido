@@ -221,7 +221,7 @@
 			reflect the institutional structure of Wajin–Ainu trade: <A w="tono" gl="lord" />
 			titles the Japanese trade-post supervisor, and <A w="tunci" gl="interpreter" /> names
 			the bilingual go-between required in formal dealings — plausibly &lt; archaic Japanese
-			通事/通詞 <i lang="ja">tsūji</i> ‹asserted›
+			通事/通詞 <i lang="ja">tsūji</i> ‹speculative›
 			<Ref k="aynucorporadiscord" /> (thegodofneet, aynu-corpora Discord, 2024-06-14).
 		</p>
 
@@ -360,7 +360,7 @@
 		establish ‹speculative›. The compound <i lang="ain-Latn">umma menoko</i> illustrates how
 		native and loan morphology interact productively: the bare juxtaposition is ambiguous
 		between 'horse and girl' (appositive) and 'horse-girl' (compound); inserting the copula
-		explicitly as <i lang="ain-Latn">umma-ne-menoko</i> removes the ambiguity ‹proposed›
+		explicitly as <i lang="ain-Latn">umma-ne-menoko</i> removes the ambiguity ‹speculative›
 		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2023-12-12 [356]).
 	</p>
 </S>
@@ -403,7 +403,7 @@
 		<i lang="ain-Latn">sisamitak</i> 'Japanese [language]' (a language name) are argued to
 		differ semantically and phonologically: the former has two independent accentual words,
 		while the latter functions as a single compound with one accent domain. Writing them
-		together obscures the accentuation and conflates the two meanings ‹asserted›
+		together obscures the accentuation and conflates the two meanings ‹speculative›
 		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2024-11-05 [299];
 		2024-12-20 [549]).
 	</p>

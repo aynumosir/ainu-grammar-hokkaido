@@ -276,7 +276,7 @@
 
 <S t="The register lexicon" id="register-lexicon">
 	<p>
-		The distinctive verse and prayer vocabulary is documented across the read sources
+		The distinctive verse and prayer vocabulary is documented across the sources consulted
 		in scattered but consistent testimony. The table below collects attested
 		everyday–elegant word pairs with genre specification and source attribution.
 	</p>

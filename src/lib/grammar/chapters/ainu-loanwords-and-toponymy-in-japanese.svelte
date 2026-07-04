@@ -319,7 +319,7 @@
 		<i lang="ain-Latn">o-tum-nay</i> 'head-middle-stream'. The analysis is morphologically
 		plausible within Ainu and consistent with the Tōhoku <i lang="ja">-nai</i> substrate, but
 		has not been verified against <Ref k="chiri1956" paren /> or published place-name catalogues
-		<Ref k="aynucorporadiscord" /> ‹proposed›.
+		<Ref k="aynucorporadiscord" /> ‹speculative›.
 	</p>
 </S>
 
@@ -373,15 +373,15 @@
 			phonologically plausible — the initial <i lang="ja">p- → ɸ-</i> change and the
 			<i lang="ja">h-</i> variant reflect regular Japanese alternations — and they are consistent
 			with Vovin's OJ substrate thesis, but neither has been verified against published
-			philological sources for the matagi lexicon ‹proposed›.
+			philological sources for the matagi lexicon ‹speculative›.
 		</p>
 	</S>
 
 	<S t="Standard Japanese items attributed to Ainu origin" id="standard-japanese">
 		<p>
 			Several items in standard Japanese are widely attributed to Ainu origin in the popular
-			literature and encyclopaedic reference works. None were verified in the sources directly
-			read for this chapter; they are listed with that status recorded.
+			literature and encyclopaedic reference works. None could be verified in the sources consulted
+			for this chapter; they are listed with that status recorded.
 		</p>
 
 		<table>

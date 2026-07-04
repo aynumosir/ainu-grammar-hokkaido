@@ -364,7 +364,7 @@
 		<li>Genre-conditioned grammar: person marking and number in sung epic — <Xr ch="oral-literature-genre-taxonomy" /></li>
 		<li>Geographic vocabulary — <Xr ch="lexical-semantic-fields-synopsis" /></li>
 		<li>Glide codas /w/ and /y/ — <Xr ch="katakana-and-small-kana-codas" /></li>
-		<li>Glide epenthesis at the i= and u= clitic boundary — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
+		<li>Glide epenthesis at the i- and u- prefix boundary — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>Glide notation in hiatus — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>Glide phonemicity in Shizunai: a dialect-specific contrast — <Xr ch="glides-w-y" /></li>
 		<li>Glide transcription and vowel hiatus — <Xr ch="latin-phonemic-transcription" /></li>
@@ -561,7 +561,7 @@
 		<li>Modifier order inside the NP — <Xr ch="constituent-order-head-final" /></li>
 		<li>mokor wa an: sleep as a result-state — <Xr ch="existential-aspect-an-oka" /></li>
 		<li>Mora or syllable as the accent domain? — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
-		<li>Morpheme and clitic boundary markers — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>Morpheme and person-marker boundary notation — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Morpheme boundary conventions — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Morpheme boundary symbols and the interlinear format — <Xr ch="abbreviations-glossing-symbols" /></li>
 		<li>Morphological and lexical divergences — <Xr ch="sakhalin-and-kuril-ainu-contrast" /></li>
@@ -952,7 +952,7 @@
 		<li>The *g / *hd / *s tangle: two scenarios — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
 		<li>The /i/-initial block and vowel weakening — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
 		<li>The /r/ coda series — <Xr ch="katakana-and-small-kana-codas" /></li>
-		<li>The = sign and the clitic–affix boundary — <Xr ch="orthographic-standardization-and-word-division" /></li>
+		<li>The = sign for person markers: an orthographic device, not a clitic analysis — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>The 1A→2O portmanteau — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>The ③-1 default surfaces in compounds — <Xr ch="affiliative-suffix-morphophonology" /></li>
 		<li>The a / aan opposition: aspect, evidentiality, and the Classical Japanese parallel — <Xr ch="perfective-anterior-a" /></li>

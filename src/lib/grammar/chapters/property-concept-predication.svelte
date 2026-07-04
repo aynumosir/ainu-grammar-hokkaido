@@ -320,7 +320,7 @@
 		<Ref k="nakagawa2024" p="120" />. The derived adverb quantifies the manner of the event
 		described by the main predicate and is not itself a predicate. The comparative construction
 		(<i lang="ain-Latn">akkari</i> 'surpassing, more than') and the full adverb system are
-		treated in <Xr ch="adverbs-degree-comparison" />; the read sources do not provide a
+		treated in <Xr ch="adverbs-degree-comparison" />; the sources consulted do not provide a
 		systematic degree–comparison paradigm for property verbs, and the gap is noted there.
 	</p>
 

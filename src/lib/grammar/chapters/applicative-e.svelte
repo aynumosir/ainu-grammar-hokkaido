@@ -212,18 +212,18 @@
 
 	<p>
 		Path applied objects carry a directional relation along a route rather than a static
-		location. The example below has a postpositional noun bearing the first-person object
+		location. The example below has a postpositional noun bearing the fourth-person object
 		prefix as the applied object:
 	</p>
 
 	<Ex
 		m="i=corpokke e=e-hoyupu yak pirka na"
-		g="1SG.O=under 2SG.A=APPL-run COND good FIN"
+		g="4.O=under 2SG.A=APPL-run COND good FIN"
 		tr="You had better run under me."
 		cite="nakagawa2024:196"
 		dial="SAR"
 		place="Nakagawa ex. 184"
-		note="The postpositional noun corpokke 'under' carries the 1SG object prefix i=, yielding i=corpokke 'under me' as the path applied object. The outer second-person agent prefix e= precedes the applicative e- and the root hoyupu 'run' in the single verb word e=e-hoyupu."
+		note="The postpositional noun corpokke 'under' carries the fourth-person object prefix i= — the speaker is a character quoted inside a folktale, Nakagawa's quotation-speaker use of the fourth person — yielding i=corpokke 'under me' as the path applied object. The outer second-person agent prefix e= precedes the applicative e- and the root hoyupu 'run' in the single verb word e=e-hoyupu."
 	/>
 </S>
 
@@ -304,20 +304,20 @@
 		derived from the postpositional phrase <i lang="ain-Latn">ka un</i> 'be on top of'
 		(nukopoli, aynu-corpora Discord 2024) <Ref k="aynucorporadiscord" /> ‹speculative›. The
 		etymology is semantically motivated but cannot be verified against the diachronic record
-		from the read sources; synchronically, <i lang="ain-Latn">eykaun</i> functions as a
+		from the sources consulted; synchronically, <i lang="ain-Latn">eykaun</i> functions as a
 		transitive base.
 	</p>
 
 	<p>
 		The analytical question of whether some <i lang="ain-Latn">e-</i> forms are better
 		described as lexical preverbs (case-relation prefixes) than as applicatives in the
-		cross-linguistic sense is not engaged by the principal read sources. Bugaeva treats all
+		cross-linguistic sense is not engaged by the principal sources consulted. Bugaeva treats all
 		three markers as applicatives throughout and positions the older labels — 充当相
 		(Kindaichi and Chiri 1936) and case-prefix 格の関係を表わす接頭辞 (Chiri 1942) — as
 		historical precursors rather than competing analyses <Ref k="bugaeva2006" p="186" />;
 		<Ref k="nakagawa2024" p="192–193" />. Baker's incorporation analysis, which treats
 		applicative formation as P-incorporation in the syntax, is the nearest theoretical
-		alternative present in the read literature <Ref k="baker1988" paren />; <Ref
+		alternative present in the literature consulted <Ref k="baker1988" paren />; <Ref
 			k="shibatani1990"
 			p="65"
 		/> ‹contested›. A dedicated assessment appears in <Xr ch="applicative-system-overview" />.

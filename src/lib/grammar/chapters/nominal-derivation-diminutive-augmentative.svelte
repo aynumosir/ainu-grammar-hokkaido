@@ -179,14 +179,14 @@
 		One analysis holds that <i lang="ain-Latn">ise</i> is an onomatopoeia for the rabbit's
 		high-pitched call, so <i lang="ain-Latn">isepo</i> originated as 'the small/dear thing
 		that goes <i>ise</i>' — an expressive base plus the diminutive (nukopoli, aynu-corpora
-		Discord, 2023-12-11; palestine_2026, 2024-08-28) <Ref k="aynucorporadiscord" /> ‹proposed›.
+		Discord, 2023-12-11; palestine_2026, 2024-08-28) <Ref k="aynucorporadiscord" /> ‹speculative›.
 		A related line invokes the productive pattern by which an onomatopoeic base followed by
 		<i lang="ain-Latn">-se</i> yields a verb (compare <i lang="ain-Latn">pawse</i>
 		'a fox calls', where <i lang="ain-Latn">paw</i> is the cry, and
 		<i lang="ain-Latn">rimse</i> 'dance'), and treats <i lang="ain-Latn">ise</i> in
 		<i lang="ain-Latn">isepo</i> as the base of such a nominalized verb with
 		<i lang="ain-Latn">-po</i> added (palestine_2026, 2024-08-28)
-		<Ref k="aynucorporadiscord" /> ‹proposed›. Neither analysis has been confirmed by a read
+		<Ref k="aynucorporadiscord" /> ‹speculative›. Neither analysis has been confirmed by a read
 		primary grammatical source; the status of <i lang="ain-Latn">ise</i> as an independent
 		morpheme in contemporary Hokkaido Ainu is unclear ‹speculative›.
 	</p>

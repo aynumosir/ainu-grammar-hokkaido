@@ -247,6 +247,7 @@
 		<li><i lang="ain-Latn">hum-as</i> — <Xr ch="humi-ne-sensory" /></li>
 		<li><i lang="ain-Latn">hum-i</i> — <Xr ch="phrasal-and-utterance-intonation" />, <Xr ch="evidential-schema-overview" />, <Xr ch="humi-ne-sensory" />, <Xr ch="mirativity-scope-grammaticalization" /></li>
 		<li><i lang="ain-Latn">i-huraye</i> — <Xr ch="antipassive-detransitive-i" />, <Xr ch="ruwe-ne-inferential" /></li>
+		<li><i lang="ain-Latn">i-omante</i> — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li><i lang="ain-Latn">i-ri=an</i> — <Xr ch="valency-voice-overview" />, <Xr ch="antipassive-detransitive-i" /></li>
 		<li><i lang="ain-Latn">i=ahun-te</i> — <Xr ch="causative-morphological-re-e-te" /></li>
 		<li><i lang="ain-Latn">i=corpokke</i> — <Xr ch="applicative-e" /></li>
@@ -257,7 +258,6 @@
 		<li><i lang="ain-Latn">i=kimatekka</i> — <Xr ch="nonconfigurationality-pronominal-argument" /></li>
 		<li><i lang="ain-Latn">i=kore</i> — <Xr ch="person-marking-architecture" />, <Xr ch="object-indexing-monotransitive" />, <Xr ch="indefinite-fourth-person-paradigm" />, <Xr ch="fourth-person-honorific" />, <Xr ch="alignment-hierarchical-and-the-debate" />, <Xr ch="causative-morphological-re-e-te" />, <Xr ch="reference-tracking" /></li>
 		<li><i lang="ain-Latn">i=nukar</i> — <Xr ch="independent-personal-pronouns" />, <Xr ch="reflexive-yay" />, <Xr ch="reflexive-possessive-si" /></li>
-		<li><i lang="ain-Latn">i=omante</i> — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li><i lang="ain-Latn">i=omap</i> — <Xr ch="simultaneous-kor-clauses" /></li>
 		<li><i lang="ain-Latn">i=oyakke</i> — <Xr ch="topic-marking-anakne" />, <Xr ch="pragmatic-word-order-dislocation" /></li>
 		<li><i lang="ain-Latn">i=resu</i> — <Xr ch="siri-ne-situational" />, <Xr ch="clause-linkage-overview" />, <Xr ch="hine-akusu-switch-reference" />, <Xr ch="tail-head-linkage-and-narrative-cohesion" /></li>
@@ -303,6 +303,7 @@
 		<li><i lang="ain-Latn">kor</i> — <Xr ch="reduplication-phonology-rule-interaction" />, <Xr ch="word-class-inventory-and-diagnostics" />, <Xr ch="nominal-subclasses-and-bound-nouns" />, <Xr ch="alienable-inalienable-split" />, <Xr ch="adnominal-possession-double-marking" />, <Xr ch="relational-and-spatial-nouns" />, <Xr ch="postpositions-local-case-and-motion-events" />, <Xr ch="light-and-pro-verbs" />, <Xr ch="adverbializer-no" />, <Xr ch="person-marking-architecture" />, <Xr ch="first-second-person-singular-affixes" />, <Xr ch="fourth-person-honorific" />, <Xr ch="personal-affix-template-and-ordering" />, <Xr ch="alignment-split-intransitive" />, <Xr ch="valency-voice-overview" />, <Xr ch="antipassive-detransitive-i" />, <Xr ch="reflexive-yay" />, <Xr ch="reciprocal-u" />, <Xr ch="middle-anticausative-passive" />, <Xr ch="noun-incorporation-subject-possessor-stranding" />, <Xr ch="nonconfigurationality-pronominal-argument" />, <Xr ch="existential-locational-an-oka" />, <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="quotative-complementation-sekor" />, <Xr ch="nominalized-complements-control-raising" />, <Xr ch="tam-overview" />, <Xr ch="tenselessness-and-time-reference" />, <Xr ch="existential-aspect-an-oka" />, <Xr ch="continuative-siri-siran-kane-an" />, <Xr ch="phasal-iterative-habitual-aspect" />, <Xr ch="deontic-necessity" />, <Xr ch="evidential-schema-overview" />, <Xr ch="ruwe-ne-inferential" />, <Xr ch="siri-ne-situational" />, <Xr ch="humi-ne-sensory" />, <Xr ch="mirativity-scope-grammaticalization" />, <Xr ch="negation-ability-cognition-predicates" />, <Xr ch="simultaneous-kor-clauses" />, <Xr ch="conditional-temporal-concessive-clauses" />, <Xr ch="manner-and-degree-adverbial-clauses" />, <Xr ch="tail-head-linkage-and-narrative-cohesion" />, <Xr ch="topic-marking-anakne" />, <Xr ch="logophoric-narration-and-reported-discourse" />, <Xr ch="narrative-tam-evidential-patterning-by-genre" />, <Xr ch="hokkaido-dialect-classification-and-dialectometry" />, <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" />, <Xr ch="japanese-loanwords-in-ainu" /></li>
 		<li><i lang="ain-Latn">korka</i> — <Xr ch="light-and-pro-verbs" />, <Xr ch="property-concept-predication" />, <Xr ch="tam-overview" />, <Xr ch="perfective-anterior-a" />, <Xr ch="negation-somo-standard-clausal" />, <Xr ch="negation-ability-cognition-predicates" />, <Xr ch="negation-polarity-items-scope" />, <Xr ch="conditional-temporal-concessive-clauses" />, <Xr ch="topic-marking-anakne" />, <Xr ch="cleft-nominalization-focus" /></li>
 		<li><i lang="ain-Latn">kotan-u</i> — <Xr ch="adnominal-possession-double-marking" /></li>
+		<li><i lang="ain-Latn">ku-ikra</i> — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li><i lang="ain-Latn">ku-wehe</i> — <Xr ch="alienable-inalienable-split" /></li>
 		<li><i lang="ain-Latn">ku=an</i> — <Xr ch="formal-defective-nouns" />, <Xr ch="relational-and-spatial-nouns" />, <Xr ch="person-marking-architecture" />, <Xr ch="first-second-person-singular-affixes" />, <Xr ch="existential-locational-an-oka" />, <Xr ch="lexical-semantic-fields-synopsis" />, <Xr ch="everyday-conversation-text" /></li>
 		<li><i lang="ain-Latn">ku=arpa</i> — <Xr ch="prenominal-gap-relative-clauses" /></li>
@@ -322,7 +323,6 @@
 		<li><i lang="ain-Latn">ku=horipi</i> — <Xr ch="simultaneous-kor-clauses" /></li>
 		<li><i lang="ain-Latn">ku=hosipi</i> — <Xr ch="light-and-pro-verbs" />, <Xr ch="adverbializer-no" />, <Xr ch="first-second-person-singular-affixes" />, <Xr ch="personal-affix-template-and-ordering" />, <Xr ch="quotative-complementation-sekor" />, <Xr ch="negation-existential-possessive-isam" />, <Xr ch="clause-linkage-overview" />, <Xr ch="causal-and-purpose-clauses" /></li>
 		<li><i lang="ain-Latn">ku=hotuye-kar</i> — <Xr ch="transitivizer-ka-valency-pairs" /></li>
-		<li><i lang="ain-Latn">ku=ikra</i> — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li><i lang="ain-Latn">ku=inkar</i> — <Xr ch="argument-realization-indexing" />, <Xr ch="nonconfigurationality-pronominal-argument" /></li>
 		<li><i lang="ain-Latn">ku=ipe</i> — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
 		<li><i lang="ain-Latn">ku=iruska</i> — <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="negation-somo-standard-clausal" />, <Xr ch="negation-ability-cognition-predicates" /></li>
@@ -461,9 +461,9 @@
 		<li><i lang="ain-Latn">tu-p</i> — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
 		<li><i lang="ain-Latn">tunas-no</i> — <Xr ch="adverbializer-no" />, <Xr ch="adverbs-degree-comparison" /></li>
 		<li><i lang="ain-Latn">tura</i> — <Xr ch="applicative-stacking-relativization-feeding" />, <Xr ch="nominalized-complements-control-raising" /></li>
+		<li><i lang="ain-Latn">u-epeker</i> — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li><i lang="ain-Latn">u-koyki</i> — <Xr ch="valency-voice-overview" />, <Xr ch="reciprocal-u" /></li>
 		<li><i lang="ain-Latn">u-oruspe-nu=an</i> — <Xr ch="reciprocal-u" /></li>
-		<li><i lang="ain-Latn">u=epeker</i> — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li><i lang="ain-Latn">un</i> — <Xr ch="word-class-inventory-and-diagnostics" />, <Xr ch="nominal-subclasses-and-bound-nouns" />, <Xr ch="deverbal-denominal-noun-derivation" />, <Xr ch="interrogative-pro-forms" />, <Xr ch="relational-and-spatial-nouns" />, <Xr ch="postpositions-local-case-and-motion-events" />, <Xr ch="indefinite-fourth-person-paradigm" />, <Xr ch="fourth-person-honorific" />, <Xr ch="oblique-adjunct-verbless-clauses" />, <Xr ch="prenominal-gap-relative-clauses" />, <Xr ch="ruwe-ne-inferential" />, <Xr ch="siri-ne-situational" />, <Xr ch="interrogative-strategies-question-particles" />, <Xr ch="hokkaido-dialect-classification-and-dialectometry" />, <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
 		<li><i lang="ain-Latn">un=ipe-re</i> — <Xr ch="causative-morphological-re-e-te" /></li>
 		<li><i lang="ain-Latn">un=osura</i> — <Xr ch="causative-morphological-re-e-te" /></li>

@@ -35,6 +35,8 @@ const VALID_GUILLEMET_TAGS = new Set([
 	'original-needs-review',
 	// dialect-contrast tags used in prose
 	'SA',
+	// meta-documentation cell in the conventions chapter's own notation table
+	'grade',
 	'KU',
 	'ISH',
 	'TOK',
@@ -292,9 +294,9 @@ for (const ch of chapters) {
 	for (const m of prose.matchAll(/‹([^›‹]{1,80})›/g)) {
 		const tag = m[1].trim();
 		if (!VALID_GUILLEMET_TAGS.has(tag))
-			report('warn', 'grade-tag', slug, 0, `invalid guillemet tag ‹${tag}›`);
+			report('error', 'grade-tag', slug, 0, `invalid guillemet tag ‹${tag}›`);
 		if (tag === 'original-needs-review' && !NEEDS_REVIEW_ALLOWLIST.has(slug))
-			report('warn', 'needs-review-tag', slug, 0, `‹original-needs-review› shipped in prose`);
+			report('error', 'needs-review-tag', slug, 0, `‹original-needs-review› shipped in prose`);
 	}
 
 	// E: [UNVERIFIED] must never ship; W: TODO/FIXME
@@ -311,7 +313,7 @@ for (const ch of chapters) {
 	// W: pipeline register leaks
 	for (const re of REGISTER_LEAKS) {
 		const m = prose.match(re);
-		if (m) report('warn', 'register-leak', slug, 0, `pipeline register in prose: "${m[0]}"`);
+		if (m) report('error', 'register-leak', slug, 0, `pipeline register in prose: "${m[0]}"`);
 	}
 
 	// W: duplicated sentences within a chapter (≥60 chars)

@@ -149,10 +149,10 @@
 		Refsing describes the copula as covering "the equative and attributive meanings of the copula"
 		without filling existential or locative roles
 		<Ref k="refsing1986" p="145" />; <Ref k="nakagawa2022pos" p="474" />. The attested uses fall
-		into three functional types. The read sources do not apply the Higgins four-way
+		into three functional types. The sources consulted do not apply the Higgins four-way
 		classificational/specificational/identificational grid; the following typology is editorial
 		synthesis from the attested data, not a claim drawn from any single source
-		‹original-needs-review›.
+		‹speculative›.
 	</p>
 
 	<p>
@@ -191,7 +191,7 @@
 		<i lang="ain-Latn">tap a=ye katu Piratur sekor a=ye hawe ne</i> 'the way it is now said is
 		"Piratur"' <Ref k="nakagawa2024" p="392" />. Whether Hokkaido Ainu morphosyntactically
 		distinguishes specificational from identificational readings is not addressed by any read
-		source ‹original-needs-review›.
+		source ‹speculative›.
 	</p>
 </S>
 
@@ -465,13 +465,13 @@
 	</p>
 
 	<p>
-		<strong>Classificational/specificational typology.</strong> The read sources use "equative"
+		<strong>Classificational/specificational typology.</strong> The sources consulted use "equative"
 		and "attributive/class-membership" as the descriptive labels for the semantic range of
 		<i lang="ain-Latn">ne</i> <Ref k="refsing1986" p="145" />; <Ref k="nakagawa2022pos" p="474" />.
 		No source applies the Higgins-style four-way grid to Ainu, and no read source tests whether
 		Hokkaido Ainu morphosyntactically distinguishes a specificational from an identificational
 		reading. The three-way table in §<em>Semantic readings</em> is editorial synthesis
-		‹original-needs-review›.
+		‹speculative›.
 	</p>
 
 	<p>

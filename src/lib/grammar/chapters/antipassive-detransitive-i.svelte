@@ -223,7 +223,7 @@
 	<p>
 		Two surface strings <i lang="ain-Latn">i-</i> must be kept distinct. The antipassive prefix
 		<i lang="ain-Latn">i-</i> is a derivational element in the slot immediately before the verb
-		root; the <Xr ch="indefinite-fourth-person-paradigm">fourth-person</Xr> object clitic
+		root; the <Xr ch="indefinite-fourth-person-paradigm">fourth-person</Xr> object marker
 		<i lang="ain-Latn">i=</i> is a person index belonging to the transitive object paradigm. Both
 		are segmentally identical, and both can appear on the same verb surface, but their
 		distributional profiles diverge <Ref k="bugaeva2021antip" />; <Ref k="nam2021" p="62–63" />.
@@ -232,14 +232,14 @@
 	<p>
 		The antipassive prefix satisfies the object slot derivationally and renders the verb
 		intransitive: the derived verb takes S suffixes and cannot simultaneously host a separate
-		object clitic. The fourth-person clitic, by contrast, leaves the verb transitive and is
-		cross-referenced by a prefixal A index alongside the <i lang="ain-Latn">i=</i> object clitic.
+		object marker. The fourth-person marker, by contrast, leaves the verb transitive and is
+		cross-referenced by a prefixal A index alongside the <i lang="ain-Latn">i=</i> object marker.
 		A minimal diagnostic: <i lang="ain-Latn">i-nu=an</i> (ANTIP-hear=4.S) is intransitive, proven
 		by the suffixal <i lang="ain-Latn">=an</i>; while <i lang="ain-Latn">a=i=nu</i>
-		(4.A=4.O=hear) is transitive and the <i lang="ain-Latn">i=</i> there is the object clitic, not
+		(4.A=4.O=hear) is transitive and the <i lang="ain-Latn">i=</i> there is the object marker, not
 		the antipassive prefix <Ref k="nakagawa2024" p="190–191" />. The arity computation — the same
 		instrument that distinguishes applicative <i lang="ain-Latn">e-</i> from affiliative
-		<i lang="ain-Latn">e-</i> and from the second-person clitic <i lang="ain-Latn">e=</i> — is the
+		<i lang="ain-Latn">e-</i> and from the second-person marker <i lang="ain-Latn">e=</i> — is the
 		sole disambiguating tool in both cases <Ref k="nakagawa2024" p="192–193" />.
 	</p>
 </S>
@@ -298,9 +298,9 @@
 <S t="Origin: the three-way reconstruction debate" id="diachrony">
 	<p>
 		Three accounts of the historical source of antipassive <i lang="ain-Latn">i-</i> are in active
-		competition, and none is settled in the sources read directly for this grammar. The dispute
+		competition, and none is settled in the sources consulted directly for this grammar. The dispute
 		turns on the direction of the relationship between the antipassive prefix and the fourth-person
-		object clitic <i lang="ain-Latn">i=</i>, and on what the ultimate etymon of both might be.
+		object marker <i lang="ain-Latn">i=</i>, and on what the ultimate etymon of both might be.
 	</p>
 
 	<p>
@@ -344,7 +344,7 @@
 		preserving the derivational layer. This analysis is attributed to Bugaeva (2010) by nukopoli in
 		the aynu-corpora Discord community (nukopoli, aynu-corpora Discord 2026-05-19) <Ref
 			k="aynucorporadiscord"
-		/>; <Ref k="bugaeva2010" />. Since Bugaeva (2010) is not read directly for this grammar, and
+		/>; <Ref k="bugaeva2010" />. Since Bugaeva (2010) is not consulted directly for this grammar, and
 		since the competing segmentation <i lang="ain-Latn">ik-ka</i> vs.
 		<i lang="ain-Latn">i-kV-ka</i> cannot be decided from the surface form alone, the fossil
 		analysis is graded ‹contested›. Vovin's competing reconstruction of Proto-Ainu *<i
@@ -360,9 +360,9 @@
 		'thing/place' readings (<i lang="ain-Latn">i-omante</i>, <i lang="ain-Latn">i-mak</i>
 		'behind') — fits the generic-noun hypothesis better than the pronoun-first account, since a
 		grammaticalized human pronoun would be expected to bias the antipassive toward human Patients
-		rather than generating the observed range ‹original-needs-review›. This synthesis is tied to
-		the factbase evidence for the residual distribution and Nam's phonological argument and requires
-		editorial review; it goes beyond any single cited source.
+		rather than generating the observed range ‹speculative›. This synthesis rests on the
+		residual-distribution evidence and Nam's phonological argument; it is original to this
+		grammar and goes beyond any single cited source.
 	</p>
 </S>
 

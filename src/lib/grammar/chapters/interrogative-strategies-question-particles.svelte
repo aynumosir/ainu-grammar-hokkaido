@@ -184,7 +184,7 @@
 		wh-word in a content question; and the bare formal noun without either predicate
 		treats even the existence of the described state as the open question — the polar
 		reading <Ref k="sato2008" p="137" /> ‹speculative›. The account is Satō's own
-		working hypothesis, not a derivation shared across the read sources.
+		working hypothesis, not a derivation shared across the sources consulted.
 	</p>
 	<p>
 		Nakagawa gives the content question an additional expansion:
@@ -325,7 +325,7 @@
 		('be' + Q-particle → 'or'), the Q-particle supplying the alternative reading
 		‹contested› <Ref k="aynucorporadiscord" /> (aomidori_cs_, 2023-12-12).
 		This etymology is consistent with the pattern but is not independently documented
-		in the read sources.
+		in the sources consulted.
 	</p>
 </S>
 
@@ -344,11 +344,11 @@
 
 	<Ex
 		m="hemanta ne kusu ene sir-an hi an"
-		g="what COP because like.this appear-4.S NMLZ exist"
+		g="what COP because like.this appearance-exist NMLZ exist"
 		tr="Why is it like this?"
 		cite="nakagawa2024:407"
 		dial="SAR"
-		note="Nakagawa ex. 856. The wh-expression hemanta ne kusu 'what because = why' stays in the clause-initial adjunct position; sir-an is the fourth-person intransitive of the verb 'appear, seem'; hi an is the expanded content-question frame (formal noun + existential)."
+		note="Nakagawa ex. 856. The wh-expression hemanta ne kusu 'what because = why' stays in the clause-initial adjunct position; sir-an is the impersonal 'it is so' (sir 'appearance' + an 'exist'); hi an is the expanded content-question frame (formal noun + existential)."
 	/>
 
 	<p>
@@ -428,7 +428,7 @@
 		direct and semi-direct speech under intransitive verbs; the transitivity split
 		(<A w="sekor" /> ⇒ intransitive reporter, <A w="kuni" /> ⇒ transitive reporter)
 		is confirmed by community observation
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-09) ‹asserted›.
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-09) ‹speculative›.
 		The direct/semi-direct/indirect speech continuum, person-switching in logophoric
 		speech, and the <A w="sekor" /> / <A w="kuni" /> contrast are treated in
 		<Xr ch="clause-linkage-overview" />.
@@ -448,7 +448,7 @@
 		polarity responses. Forms such as <i lang="ain-Latn">e</i>,
 		<i lang="ain-Latn">ho</i>, and <i lang="ain-Latn">m</i> are responses to being
 		addressed or called, not affirmation/denial particles
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-04) ‹asserted›.
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-04) ‹speculative›.
 	</p>
 	<p>
 		One attested affirmative-response frame retains the formal noun and adds the

@@ -197,7 +197,7 @@
 
 	<Ex
 		m="tan cise e=uni ne ru-we"
-		g="this house 2SG=home COP track-POSS"
+		g="this house 2SG.POSS=home COP track-POSS"
 		tr="Is this house yours?"
 		cite="sato2008:131, 135"
 		dial="CHI"
@@ -259,7 +259,7 @@
 		state of affairs be presented as a fact the speaker now owns. The possessed morphology — which,
 		as Satō notes, presupposes an antecedent — is the formal anchor of this account, and it
 		explains why the older ‘fact mood’ label, the modern source label, and the discourse-new label
-		each capture a true facet of the same form ‹original-needs-review›.
+		each capture a true facet of the same form ‹speculative›.
 	</p>
 </S>
 
@@ -292,7 +292,7 @@
 		cognitively stable — properties take <i lang="ain-Latn">ru</i> while transient scenes take
 		<i lang="ain-Latn">sir</i> <Ref k="takahashi2013" p="131–133" /> become two faces of one
 		contrast: <i lang="ain-Latn">siri</i> profiles the accessible appearance, and
-		<i lang="ain-Latn">ruwe</i> the cognized fact extracted from it ‹original-needs-review›. The
+		<i lang="ain-Latn">ruwe</i> the cognized fact extracted from it ‹speculative›. The
 		boundary with <i lang="ain-Latn">hawe</i> is similarly non-rigid — Hirosawa cites near-identical
 		sentences alternating <i lang="ain-Latn">hawe ne</i> and <i lang="ain-Latn">ruwe ne</i>, which
 		fits a form that can absorb information of any original channel once it has become knowledge

@@ -481,8 +481,8 @@
 	<Ex
 		ain="iwan suy a=i=hotuyekar hine"
 		m="iwan suy a=i=hotuyekar hine"
-		g="six time 4.A=ANTIP=call.out CONJ"
-		tr="called out many times"
+		g="six time 4.A=4.O=call.out CONJ"
+		tr="(I) was called out to many times"
 		cite="nakagawa2024:469"
 		dial="SAR"
 		note="iwan suy: the cardinal 6 is used with the force of 'many/several'. This use is restricted to fixed collocations; a compositional 'six times' reading is also possible in context."

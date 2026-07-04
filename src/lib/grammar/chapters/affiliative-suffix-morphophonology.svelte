@@ -580,7 +580,7 @@
 		analysis further notes a Sakhalin variant <em>-hike</em> in a subset of forms
 		(<i lang="ain-Latn">sani ike</i> alternating with <i lang="ain-Latn">sanihi</i>),
 		where <em>-ke</em> may represent an additional nominal element appended to the affiliative
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-16) ‹proposed›. The distributional and
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-16) ‹speculative›. The distributional and
 		historical relationship between Sakhalin <em>-hike</em> and Hokkaido <em>-hi</em> has
 		not been formally investigated in the accessible sources ‹speculative›.
 	</p>
@@ -591,7 +591,7 @@
 		analysed as <i lang="ain-Latn">onne</i> 'old' + <em>-ike</em>, with the compound then
 		additionally taking the affiliative suffix (<i lang="ain-Latn">onneke-he</i>), showing
 		that <em>-ike</em> here is a stem-forming element and the affiliative suffix is separate
-		<Ref k="aynucorporadiscord" /> (antitwilight, 2024-11-15) ‹proposed›. The affiliation
+		<Ref k="aynucorporadiscord" /> (antitwilight, 2024-11-15) ‹speculative›. The affiliation
 		of this <em>-ike</em> to the affiliative paradigm, if any, is etymological rather than
 		synchronic and is not a productive pattern in Hokkaido Ainu.
 	</p>

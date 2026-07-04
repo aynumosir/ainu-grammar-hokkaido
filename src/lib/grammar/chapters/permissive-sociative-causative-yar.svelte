@@ -115,7 +115,7 @@
 
 <S t="Readings: indefinite, permissive, and sociative" id="semantics">
 	<p>
-		Three semantic characterisations appear in or near the literature, and the read sources
+		Three semantic characterisations appear in or near the literature, and the sources consulted
 		converge only on the structural valency facts while leaving the label question open
 		<Ref k="nakagawa2024" p="201–202" />; <Ref k="bugaevakobayashi2022" p="§4.3.1" />
 		‹contested›.
@@ -168,8 +168,8 @@
 	<p>
 		The label <em>sociative causative</em> — marking the causer's participation together
 		with or on behalf of others — has been mentioned in connection with
-		<i lang="ain-Latn">-yar</i> alongside the indefinite and permissive labels. The read
-		sources do not adjudicate between the three characterisations. Bugaeva's 2014 causative
+		<i lang="ain-Latn">-yar</i> alongside the indefinite and permissive labels. The
+		sources consulted do not adjudicate between the three characterisations. Bugaeva's 2014 causative
 		study, the most comprehensive treatment of Ainu causative morphology available, explicitly
 		excludes <i lang="ain-Latn">-yar</i> for reasons of space
 		<Ref k="bugaeva2014" p="127" />.
@@ -258,7 +258,7 @@
 
 <S t="Open questions" id="gaps">
 	<p>
-		Several questions are unanswered in the read sources. Bugaeva's 387-verb Saru causative
+		Several questions are unanswered in the sources consulted. Bugaeva's 387-verb Saru causative
 		study — the most comprehensive available — excludes <i lang="ain-Latn">-yar</i> for
 		reasons of space <Ref k="bugaeva2014" p="127" />. No source in the present corpus
 		offers a distributional account of which verb classes the suffix selects, what semantic

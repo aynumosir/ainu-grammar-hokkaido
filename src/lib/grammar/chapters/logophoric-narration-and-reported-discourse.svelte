@@ -238,7 +238,7 @@
 		<Xr ch="fourth-person-honorific" />.
 	</p>
 	<p>
-		The factbase is candid about what the available evidence does not settle. The logophoric
+		The available evidence leaves several points unsettled. The logophoric
 		analysis is based on Saru–Chitose data (Mrs. Ito Oda, Biratori); whether
 		<i lang="ain-Latn">asinuma</i> carries the same dedicated 'original speaker' meaning in other
 		Hokkaido dialects is unverified ‹speculative›. <Ref k="nakagawa2024" p="471" /> notes the
@@ -399,7 +399,7 @@
 		<Ref k="bugaeva2008" p="42–43" />. Second, the distributional boundary between the
 		genre-bound narration convention (§5) and a grammaticalized logophoric device is not resolved:
 		quantified evidence of <i lang="ain-Latn">asinuma</i> in everyday versus oral-literary speech
-		is not available in the read sources ‹speculative›. Third, the non-Saru dialect behaviour of
+		is not available in the sources consulted ‹speculative›. Third, the non-Saru dialect behaviour of
 		the quotative system — what role <i lang="ain-Latn">ari</i>/<i lang="ain-Latn">ani</i> plays
 		in the DRD/SDRD/IRD split, and whether the same transitivity constraint holds — has not been
 		described at the same level of detail as the Saru–Chitose baseline in

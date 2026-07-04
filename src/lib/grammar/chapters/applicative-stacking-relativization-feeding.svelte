@@ -16,10 +16,9 @@
 		hierarchy <Ref k="kaiser1998" />; <Ref k="dalcorso2020" />;
 		<Ref k="keenancomrie1977" paren />. Both relations turn on the same structural shift: from a
 		postposition-marked peripheral role to an unmarked core object whose position is targetable
-		by later grammatical operations ‹original-needs-review›. This synthesis — grounded in the
+		by later grammatical operations ‹speculative›. This synthesis — grounded in the
 		convergent evidence of Shibatani (1990), Nakagawa (2024), Kaiser (1998), and Dal Corso
-		(2020) on the promotion logic — is offered as a factbase-licensed proposal for editorial
-		review.
+		(2020) on the promotion logic — is a proposal original to this grammar.
 	</p>
 	<p>
 		The chapter also treats applicative stacking — the co-occurrence of two applicative prefixes
@@ -267,8 +266,8 @@
 		morphosyntactic direct object in the relative clause — there is no distinct 'applied-object
 		relativization' mechanism separate from ordinary object relativization
 		<Ref k="kaiser1998" />. The synthesis that a single structural promotion underlies both the
-		NI-feeding and the relativization-feeding paths is a factbase-licensed proposal for the
-		licensed theory-magnet domain of applicatives ‹original-needs-review›.
+		NI-feeding and the relativization-feeding paths is a proposal original to this
+		grammar ‹speculative›.
 	</p>
 </S>
 
@@ -321,7 +320,7 @@
 		For double-applicative verbs, both applied objects are morphosyntactically equivalent (bare
 		NPs, single O-index), and both are in principle accessible to gap-formation or incorporation
 		individually. Whether both can independently head distinct relative clauses within a complex
-		sentence has not been investigated in the read sources ‹speculative›.
+		sentence has not been investigated in the sources consulted ‹speculative›.
 	</p>
 </S>
 

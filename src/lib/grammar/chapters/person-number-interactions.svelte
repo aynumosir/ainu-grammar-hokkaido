@@ -297,7 +297,7 @@
 	<p>
 		Horobetsu presents a formally different element. Its <i lang="ain-Latn">-ci</i> suffix appears
 		fossilized in items such as <i lang="ain-Latn">iki-ci</i> and <i lang="ain-Latn">kar-ici</i>,
-		and the diagnostic ordering places it inside the person clitic (<i lang="ain-Latn">iki-ci=as</i>),
+		and the diagnostic ordering places it inside the person marker (<i lang="ain-Latn">iki-ci=as</i>),
 		with the derivational layer rather than the outer plural slot. The Horobetsu form therefore
 		behaves like a root-level suffix, not like the outer elements of Shizunai or Saru <Ref
 			k="nakagawa2024"

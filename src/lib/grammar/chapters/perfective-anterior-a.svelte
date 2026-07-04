@@ -178,7 +178,7 @@
 		synchronic-discourse claim about the typical environments of <i lang="ain-Latn">a</i>,
 		while the direct-evidential account is a semantic one about its grammatical value. An event
 		marked as the speaker's directly witnessed background is precisely the configuration that
-		both accounts predict <Ref k="nakagawa2024" p="306–307" />; <Ref k="yoshikawa2022" /> ‹original-needs-review›.
+		both accounts predict <Ref k="nakagawa2024" p="306–307" />; <Ref k="yoshikawa2022" /> ‹speculative›.
 	</p>
 </S>
 

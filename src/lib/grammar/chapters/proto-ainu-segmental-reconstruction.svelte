@@ -604,8 +604,8 @@
 		Alonso de la Fuente's chapter is internally inconsistent on this point: §2.3 sides with
 		Satō's pitch-first view (c), while §2.4 endorses Hattori's length-first view (a), and the
 		chapter identifies Vovin's mora-counting assumption in RPA as "the source of all problems"
-		<Ref k="alonso2022" p="§2.3, §2.4" />. This inconsistency is recorded in the factbase and
-		cannot be resolved from the sources read here; the reconstruction of PA prosody is genuinely
+		<Ref k="alonso2022" p="§2.3, §2.4" />. This inconsistency
+		cannot be resolved from the sources consulted here; the reconstruction of PA prosody is genuinely
 		unsettled ‹contested›.
 	</p>
 	<p>
@@ -619,9 +619,8 @@
 		and motivating the rightward-shift analysis. The aynu-corpora Discord has noted this debate
 		as an unresolved live question, recognising the Hattori/Satō opposition accurately
 		<Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-11 ‹contested›). Itabashi's dedicated study
-		of the ‹SA› vowel-length ↔ HA pitch-accent historical relation <Ref k="itabashi2001" /> is
-		held in the project repository but was not read in detail for the factbase underlying this
-		chapter; the diachrony here is captured via Hattori (1967) and Itabashi (2004) as reported
+		of the ‹SA› vowel-length ↔ HA pitch-accent historical relation <Ref k="itabashi2001" /> has
+		not yet been incorporated in detail here; the diachrony is captured via Hattori (1967) and Itabashi (2004) as reported
 		in Alonso 2022 and Tangiku 2022. The relationship between the accent classes and the
 		synchronic accent-placement rules is treated in <Xr ch="pitch-accent-placement-rule" />
 		and the prosodic-unit debate in <Xr ch="mora-syllable-accent-vs-tone-analysis" />.
@@ -630,7 +629,7 @@
 
 <S t="Open questions and honest gaps" id="gaps">
 	<p>
-		Several questions bearing on PA segments cannot be settled from the read sources. The choice
+		Several questions bearing on PA segments cannot be settled from the sources consulted. The choice
 		between Alonso's two consonant scenarios (§4.3) turns on evidence that neither phonological
 		typology nor the attested reflex distribution yet settles decisively. The palatalized-series
 		proposal (§4.5) rests entirely on typological reasoning and is not required by the philological

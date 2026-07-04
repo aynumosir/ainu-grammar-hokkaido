@@ -237,7 +237,7 @@
 			ninety per cent of the predicate pairs joined by <i lang="ain-Latn">wa</i> share a subject
 			<Ref k="refsing1986" p="240" />. No comparable count exists for
 			<i lang="ain-Latn">hine</i> or <i lang="ain-Latn">akusu</i> in any Hokkaido variety; the
-			quantitative base is a single informant's Shizunai material (factbase §6, gap 6). The
+			quantitative base is a single informant's Shizunai material. The
 			ninety-per-cent figure is consistent with a preference but demonstrably not with a
 			constraint: Satō shows that <i lang="ain-Latn">wa</i> tolerates different-subject junctions
 			without any change in form, as in the child-throws-stone / barrel-falls example where the
@@ -284,7 +284,7 @@
 			participant and thereby produces an apparent different-subject tendency. The observed SS/DS
 			distributions are statistical consequences of discourse function, not evidence for a
 			grammaticalized opposition <Ref k="nakagawa2024" p="338, 345" />;
-			<Ref k="sato2008" p="44, 47" /> ‹consensus for the basic semantic descriptions›.
+			<Ref k="sato2008" p="44, 47" /> ‹consensus› (for the basic semantic descriptions).
 		</p>
 	</S>
 
@@ -299,7 +299,7 @@
 			<Ref k="bugaeva2022" /> ‹speculative›. The perfective marks the anterior situation as
 			completed and cut off from the present; an adverb of time typically follows to open the new
 			episode. The printed location of this observation has not been confirmed against the
-			Handbook print edition (factbase §6, gap 5), so the claim is treated as speculative.
+			Handbook print edition, so the claim is treated as speculative.
 		</p>
 
 		<p>
@@ -376,7 +376,7 @@
 		</table>
 
 		<p>
-			The ‹original-needs-review› synthesis draws on what each source establishes independently.
+			The ‹speculative› synthesis draws on what each source establishes independently.
 			<i lang="ain-Latn">Hine</i> neutrally chains events along a single narrative strand — which
 			by default is the protagonist's sequential acts — hence the same-subject predominance
 			without a grammatical constraint. <i lang="ain-Latn">Akusu</i> frames the second event as
@@ -385,7 +385,7 @@
 			particle requires a particular subject configuration; the SS/DS distributions reflect the
 			default narrative configuration of each connective's domain. A corpus annotation of subject
 			continuity across <i lang="ain-Latn">hine</i> and <i lang="ain-Latn">akusu</i> junctions
-			in Saru text would supply the empirical test ‹original-needs-review›.
+			in Saru text would supply the empirical test ‹speculative›.
 		</p>
 	</S>
 </S>
@@ -417,7 +417,7 @@
 		<i lang="ain-Latn">ruwe ne</i> is associated with scene transition and summary framing in
 		prose narrative, and that <i lang="ain-Latn">ruwe ne akusu</i> functions as a compound of
 		that discourse anchoring with the discovery connective
-		<Ref k="aynucorporadiscord" /> ‹asserted; corroborated by <Ref k="sato2009" p="52" />›. The
+		<Ref k="aynucorporadiscord" /> ‹speculative› — corroborated by <Ref k="sato2009" p="52" />. The
 		observation is consistent with the evidential+linker ordering described by Nakagawa
 		<Ref k="nakagawa2024" p="393" /> and with the <i lang="ain-Latn">ruwe ne</i> system set out
 		in <Xr ch="ruwe-ne-inferential" />.
@@ -453,7 +453,7 @@
 		<span lang="ja">〜して</span> constructions (Tamura 1972b), is the primary source for nearly
 		every claim about <i lang="ain-Latn">hine</i> in the grammars consulted here, but it was not
 		read directly — all attributed page numbers reach it through
-		<Ref k="nakagawa2024" /> and <Ref k="refsing1986" /> ‹speculative for those page numbers›.
+		<Ref k="nakagawa2024" /> and <Ref k="refsing1986" /> ‹speculative› (the page attributions are second-hand).
 		The quantitative base is thin: Refsing's ninety-per-cent same-subject count for
 		<i lang="ain-Latn">wa</i> in Shizunai is the only published figure; no per-function counts
 		for <i lang="ain-Latn">hine</i> or <i lang="ain-Latn">akusu</i> in any Hokkaido variety
@@ -462,7 +462,7 @@
 		<i lang="ain-Latn">awa</i> — are homonym-mixed, Hokkaido-and-Sakhalin combined, and carry no
 		subject-continuity annotation. Whether <i lang="ain-Latn">akusu</i> junctions show measurably
 		lower same-subject rates than <i lang="ain-Latn">hine</i> junctions — the empirical test of
-		the ‹original-needs-review› synthesis — remains open and requires bespoke corpus annotation
+		the ‹speculative› synthesis — remains open and requires bespoke corpus annotation
 		over a tagged Saru text. The reference-tracking apparatus as a whole is drawn together in
 		<Xr ch="reference-tracking" />; narrative cohesion and tail-head linkage are treated in
 		<Xr ch="tail-head-linkage-and-narrative-cohesion" />.

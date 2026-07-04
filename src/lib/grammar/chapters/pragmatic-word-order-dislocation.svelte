@@ -195,8 +195,8 @@
 		to recover participant identity <Ref k="bugaeva2022" p="ch.1 §7" />.
 	</p>
 	<p>
-		The pattern is attested but not quantified: only two examples are documented in the read
-		sources (Bugaeva 2022 ch.1, exx.18–19), both from Chitose narrative texts, so its frequency
+		The pattern is attested but not quantified: only two examples are documented in the
+		sources consulted (Bugaeva 2022 ch.1, exx.18–19), both from Chitose narrative texts, so its frequency
 		and range are open ‹corpus-suggested›. No right-dislocation marker has grammaticalized; the
 		<i lang="ain-Latn">ki</i> that closes the afterthought is the ordinary light verb 'do', and
 		the construction has no dedicated morphological signature distinct from any other

@@ -276,7 +276,7 @@
 				<td>because Ainu has natural-force transitive subject NI (Type IV), the
 					unaccusative account fails; the defining property is the incorporated noun's
 					low degree of agentivity; four types ranked by a markedness calculus</td>
-				<td>consensus among the read sources for this domain</td>
+				<td>consensus among the sources consulted for this domain</td>
 			</tr>
 			<tr>
 				<td>NI⊃QI accessibility hierarchy</td>

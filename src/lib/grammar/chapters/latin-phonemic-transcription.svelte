@@ -190,7 +190,7 @@
 		between a palatal and non-palatal series in Ainu: the affricate is uniformly palato-alveolar
 		regardless of the following vowel, and the kana typography that distinguishes large from small
 		character would imply a distinction that Ainu phonology does not make
-		<Ref k="kirikae1997" /> ‹asserted›.
+		<Ref k="kirikae1997" /> ‹speculative›.
 	</p>
 	<p>
 		The fricative <i lang="ain-Latn">s</i> is written uniformly throughout, even though its

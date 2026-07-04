@@ -149,17 +149,17 @@
 		<i lang="ain-Latn">enka</i> encodes vertical distance above without contact ('over, above').
 		The pair <i lang="ain-Latn">corpok</i> / <i lang="ain-Latn">pok</i> occupies a similar
 		near-duplicate slot in the 'below' domain; the distributional boundary between them is
-		not settled by the read sources ‹contested›. The noun <i lang="ain-Latn">kotor</i>
+		not settled by the sources consulted ‹contested›. The noun <i lang="ain-Latn">kotor</i>
 		appears reliably as a component of the compound
 		<i lang="ain-Latn">tekkotor</i> 'palm of the hand' (lit. hand + surface)
 		<Ref k="nakagawa2024" p="250" />, and the pattern suggests a class of vertical-surface
 		spatial nouns; but its use as a free relational noun head (i.e.
 		<i lang="ain-Latn">X kotor ta</i> 'at the face of X') is less thoroughly documented
-		in the read sources. The noun <i lang="ain-Latn">so</i> appears in corpus narrative in the
+		in the sources consulted. The noun <i lang="ain-Latn">so</i> appears in corpus narrative in the
 		construction <i lang="ain-Latn">iwor so ka</i> 'over the top of the hunting ground',
 		where <i lang="ain-Latn">so</i> (upper back area) combines with <i lang="ain-Latn">ka</i>
 		(top) — a stacking of two relational nouns into a single locative expression (see §4
-		below). Its standalone affiliative form has not been identified in the read sources.
+		below). Its standalone affiliative form has not been identified in the sources consulted.
 	</p>
 
 	<p>
@@ -207,7 +207,7 @@
 		<i lang="ain-Latn">sam-am-pa</i> 'lying on the side' — identifying
 		<i lang="ain-Latn">sam</i> 'side' as a productive base entering compound verb
 		formation — and proposes that <i lang="ain-Latn">samama</i>
-		'to place sideways' = <i lang="ain-Latn">sam-ama</i> (Kayano's Saru dictionary) ‹proposed›.
+		'to place sideways' = <i lang="ain-Latn">sam-ama</i> (Kayano's Saru dictionary) ‹speculative›.
 		This use of <i lang="ain-Latn">sam</i> as an incorporated nominal base in complex
 		verbs is a point of intersection with the noun-incorporation system (see
 		<Xr ch="noun-incorporation-object" />).
@@ -370,10 +370,10 @@
 		Similarly, <i lang="ain-Latn">tum</i> 'interior/midst' appears in place-name
 		formation (proposed: <i lang="ain-Latn">o-tum-nay</i>
 		'head-interior-river' for the toponym Otomonai; nukopoli,
-		<Ref k="aynucorporadiscord" /> 2026-01-22) ‹proposed› and in compound verbs
+		<Ref k="aynucorporadiscord" /> 2026-01-22) ‹speculative› and in compound verbs
 		(<i lang="ain-Latn">tumpu</i> 'storehouse' = <i lang="ain-Latn">tum</i>
 		'interior' + <i lang="ain-Latn">pu</i>; antitwilight,
-		<Ref k="aynucorporadiscord" /> 2024-11-16) ‹proposed›, but its distributional
+		<Ref k="aynucorporadiscord" /> 2024-11-16) ‹speculative›, but its distributional
 		range in the first-class frame remains less thoroughly documented than that of
 		<i lang="ain-Latn">or</i> or <i lang="ain-Latn">ka</i>.
 	</p>
@@ -446,9 +446,9 @@
 		<i lang="ain-Latn">ka un</i> 'be at the top of (someone)'
 		with an applicative or transitivizing suffix — effectively the relational noun
 		<i lang="ain-Latn">ka</i> with allative <i lang="ain-Latn">un</i>
-		grammaticalized as a comparative marker ‹proposed›. Whether
+		grammaticalized as a comparative marker ‹speculative›. Whether
 		this represents a synchronically transparent construction or a frozen derivation
-		is not settled by the read sources.
+		is not settled by the sources consulted.
 	</p>
 </S>
 

@@ -304,7 +304,7 @@
 		attested record, are marked <em>‹speculative›</em>. Novel re-analyses by this grammar's
 		authors, permitted only within the five theory-magnet domains identified in <Xr
 			ch="aims-scope-design-philosophy"
-		/>, are marked <em>‹original-needs-review›</em> with the supporting reasoning attached.
+		/>, are marked <em>‹speculative›</em> with the supporting reasoning attached.
 		Comprehensive grading conventions and examples of each grade are given in <Xr
 			ch="glossing-abbreviations-and-citation"
 		/>.
