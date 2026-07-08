@@ -1,0 +1,16 @@
+name: Notify ainu-mcp authored grammar refresh
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -sf -X POST \
+            -H "Authorization: Bearer ${{ secrets.AINU_MCP_DISPATCH_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/aynumosir/ainu-mcp/dispatches \
+            -d '{"event_type":"authored-grammar-changed","client_payload":{"repo":"ainu-grammar-hokkaido"}}'
