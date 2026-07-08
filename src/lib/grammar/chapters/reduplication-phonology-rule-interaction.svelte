@@ -14,7 +14,10 @@
 		on the juncture when a suffix follows the reduplicated complex. Aspect and iterative
 		semantics belong to <Xr ch="phasal-iterative-habitual-aspect" />; verbal-number
 		pluractionality to <Xr ch="suppletive-verbal-number" />; nominalizer allomorphy
-		consulted in §5 to <Xr ch="nominalization-p-pe" />.
+		consulted in §5 to <Xr ch="nominalization-p-pe" />. Live morphological decompositions of
+		reduplicated forms — full-copy, VC-echo (<i lang="ain-Latn">cirir</i>), and
+		final-syllable (<i lang="ain-Latn">hepokiki</i>) types with their argument-structure
+		annotations — are browsable in the Ainu morpheme database (mdb.aynu.org/processes).
 	</p>
 </S>
 
