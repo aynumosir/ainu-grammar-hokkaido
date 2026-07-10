@@ -242,6 +242,7 @@
 		<li>Dialect edges — <Xr ch="hine-akusu-switch-reference" /></li>
 		<li>Dialect geography: the h-series and n-series — <Xr ch="interrogative-pro-forms" /></li>
 		<li>Dialect microvariation — <Xr ch="evidential-schema-overview" /></li>
+		<li>Dialect mixture — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Dialect range and Sakhalin contrast — <Xr ch="causal-and-purpose-clauses" /></li>
 		<li>Dialect tags and example attribution — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Dialect variation and the existential-aspect family — <Xr ch="existential-aspect-an-oka" /></li>
@@ -256,6 +257,7 @@
 		<li>Dialectal variation and the Sakhalin coda-/r/ reflex — <Xr ch="rhotic-r" /></li>
 		<li>Dialectometric reanalyses — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>Dictionaries and lexical resources — <Xr ch="written-sources-grammars-dictionaries" /></li>
+		<li>Digraphs, voiced letters, and spurious vowels — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Direct and indirect causation; coercive and permissive use — <Xr ch="causative-morphological-re-e-te" /></li>
 		<li>Direct and indirect evidentiality: the eight-form system — <Xr ch="evidential-schema-overview" /></li>
 		<li>Direct and indirect quotation — <Xr ch="quotative-complementation-sekor" /></li>
@@ -288,6 +290,7 @@
 		<li>easirki — obligation — <Xr ch="deontic-necessity" /></li>
 		<li>easkay: ability and possibility — <Xr ch="abilitative-easkay-eaykap" /></li>
 		<li>eaykap and koyaykus: inability distinguished by source — <Xr ch="abilitative-easkay-eaykap" /></li>
+		<li>Echo vowels and syllable-final r — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Edo-period records and the philological tradition — <Xr ch="history-of-description-research" /></li>
 		<li>Elegant kinship terms as register diagnostics — <Xr ch="honorific-ritual-and-taboo-registers" /></li>
 		<li>Elegant register, applicative morphology, and poetic verse language — <Xr ch="narrative-tam-evidential-patterning-by-genre" /></li>
@@ -342,6 +345,7 @@
 		<li>Fourth-person object: i= — <Xr ch="object-indexing-monotransitive" /></li>
 		<li>Fourth-person plurals and number mismatches — <Xr ch="person-number-interactions" /></li>
 		<li>Free verbs grammaticalized as bound suffixes — <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></li>
+		<li>From Batchelor to the modern standard — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>From documentation to revival — <Xr ch="sociolinguistic-situation-revitalization" /></li>
 		<li>From early romanizations to the modern standard — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>From the 1997 law to the 2019 recognition — <Xr ch="ainu-people-homeland-history" /></li>
@@ -707,6 +711,7 @@
 		<li>Person indexing: causee priority and secundative alignment — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
 		<li>Person marking — <Xr ch="property-concept-predication" /></li>
 		<li>Person marking and verbal status — <Xr ch="copula-ne-predicate-nominals" /></li>
+		<li>Person marking and word division — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Person marking as the transitivity test — <Xr ch="transitivity-and-valence-classes" /></li>
 		<li>Person marking in the directive clause — <Xr ch="imperative-and-prohibitive" /></li>
 		<li>Person marking on predicative kor — <Xr ch="predicative-possession-clauses" /></li>
@@ -802,6 +807,7 @@
 		<li>r-sandhi at reduplicant codas — <Xr ch="reduplication-phonology-rule-interaction" /></li>
 		<li>rapokke and rapoketa — simultaneous temporal — <Xr ch="conjunctions-discourse-connectives" /></li>
 		<li>RC heads: common nouns and bound nouns — <Xr ch="prenominal-gap-relative-clauses" /></li>
+		<li>Reading Batchelor materials today — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Readings: indefinite, permissive, and sociative — <Xr ch="permissive-sociative-causative-yar" /></li>
 		<li>Reason and cause: 'because' — <Xr ch="causal-and-purpose-clauses" /></li>
 		<li>Reference tracking across clauses — <Xr ch="nonconfigurationality-pronominal-argument" /></li>
@@ -929,6 +935,7 @@
 		<li>Syntactic identity: the person-marking frame — <Xr ch="no-adjective-class-property-verbs" /></li>
 		<li>Syntactic position and embedding — <Xr ch="interrogative-pro-forms" /></li>
 		<li>Synthesis — <Xr ch="alignment-hierarchical-and-the-debate" /></li>
+		<li>Systematic features of Batchelor's orthography — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 	</ul>
 	<h3>T</h3>
 	<ul class="subject-index">
@@ -1084,6 +1091,7 @@
 		<li>The hawe family: report verb, reportative evidential, and hearsay — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
 		<li>The he particle: scope and category — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li>The head-final profile — <Xr ch="constituent-order-head-final" /></li>
+		<li>The Hepburn-derived tradition — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>The hero-narrator person system — <Xr ch="poetic-archaic-elevated-register" /></li>
 		<li>The heroic epic: yukar and sakorpe — <Xr ch="oral-literature-genre-taxonomy" />, <Xr ch="heroic-and-divine-verse" /></li>
 		<li>The Hokkaido dialect landscape — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>

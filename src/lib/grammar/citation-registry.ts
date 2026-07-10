@@ -101,6 +101,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	kayano1996: { dbSlug: '1996-kayano-kayanos-ainu-dictionary', sourceRole: 'primary-data', heldLocally: false },
 	hattori1964: { sourceRole: 'primary-data', heldLocally: false },
 	chiri1953: { sourceRole: 'primary-data', heldLocally: false },
+	batchelor1897: { dbSlug: 'ainu-bible-batchelor-translation', sourceRole: 'philological-witness', heldLocally: false },
 	batchelor1905: { dbSlug: '1905-batchelor-ainu-english-japanese-dictionary', sourceRole: 'philological-witness', heldLocally: false },
 	batchelor1938: { dbSlug: '1938-batchelor-ainu-english-japanese-dictionary-4ed', sourceRole: 'philological-witness', heldLocally: false },
 	bugaeva2015topical: { dbSlug: '2015-bugaeva-anna-a-topical-dictionary-of-conversational-ainu-englis', sourceRole: 'primary-data', heldLocally: false },
@@ -108,6 +109,8 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 
 	// Phonology, prosody, morphophonology
 	shiraishi2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	majewicz2022: { sourceRole: 'background', heldLocally: true, path: 'books/2022_Bugaeva' },
+	laufer1917: { sourceRole: 'prior-analysis', heldLocally: false },
 	chiri1952: { sourceRole: 'prior-analysis', heldLocally: true },
 	okuda2025: { sourceRole: 'prior-analysis', heldLocally: true },
 	ochiai2023: { dbSlug: '2023-ochiai-izumi-a-disparity-in-the-final-vowels-in-ainu-word-final', sourceRole: 'prior-analysis', heldLocally: true },
@@ -213,6 +216,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	// Orthography & philology
 	kirikae1997: { sourceRole: 'prior-analysis', heldLocally: true },
 	nakagawa2006: { sourceRole: 'prior-analysis', heldLocally: true },
+	sakaguchi2019: { dbSlug: '2019-sakaguchi-ainu-rohen-monogatari-jon-bachera-1-5-hanashi', sourceRole: 'primary-data', heldLocally: true },
 	fukazawa2017: { sourceRole: 'philological-witness', heldLocally: true },
 	yasuoka2023: { sourceRole: 'philological-witness', heldLocally: true },
 
@@ -256,6 +260,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	chiba2015: { sourceRole: 'primary-data', heldLocally: false },
 	chiri1955: { sourceRole: 'background', heldLocally: false },
 	chiri1956: { sourceRole: 'primary-data', heldLocally: false },
+	chiri1956nyumon: { sourceRole: 'prior-analysis', heldLocally: false },
 	diessel1999: { sourceRole: 'typological-framework', heldLocally: false },
 	hoppertraugott2003: { sourceRole: 'typological-framework', heldLocally: false },
 	kindaichi1931: { sourceRole: 'background', heldLocally: false },

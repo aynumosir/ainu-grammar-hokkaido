@@ -99,6 +99,11 @@ export const parts: Part[] = [
 				summary: "The Cyrillic transcription of Ainu in the Russian and Sakhalin tradition and the interoperability of Latin, katakana, and Cyrillic renderings."
 			},
 			{
+				slug: "historical-orthographies-and-the-batchelor-tradition",
+				title: "Historical Orthographies and the Batchelor Tradition",
+				summary: "The pre-phonemic Latin orthographies of Hokkaido Ainu — Batchelor's Hepburn-derived system and its lineage through Kindaichi, Kannari Matsu, and Chiri Yukie — their systematic correspondences with the modern standard, and how texts written in them are read and converted today."
+			},
+			{
 				slug: "orthographic-standardization-and-word-division",
 				title: "Orthographic Standardization and the Word-Division Problem",
 				summary: "The competing romanization norms, the unresolved question of where word boundaries fall, and the spacing and hyphenation conventions this grammar adopts."

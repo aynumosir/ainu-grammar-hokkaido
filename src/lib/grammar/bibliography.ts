@@ -505,6 +505,31 @@ export const bibliography: Record<string, BibEntry> = {
 		reported: true,
 		note: 'The standard Ainu place-name etymological dictionary; cited second-hand via Shibatani (1990 §1). Individual toponym etymologies in this grammar require verification against this source.'
 	},
+	chiri1956nyumon: {
+		region: 'general',
+		author: 'Chiri Mashiho 知里真志保',
+		citeAuthor: 'Chiri',
+		year: '1956',
+		title: 'アイヌ語入門――とくに地名研究者のために',
+		titleTr: 'An introduction to Ainu, especially for place-name researchers',
+		publisher: 'Nire Shobō 楡書房',
+		place: 'Sapporo',
+		lang: 'ja',
+		reported: true,
+		note: 'Topical suffix distinguishes this from chiri1956 (地名アイヌ語小辞典, same author-year). Contains the extended critique of Batchelor’s dictionary; cited via Refsing (1986: 18–19) and Nakagawa (2024: 90).'
+	},
+	batchelor1897: {
+		region: 'hokkaido',
+		author: 'Batchelor, John (tr.)',
+		citeAuthor: 'Batchelor',
+		year: '1897',
+		title:
+			'Chikoro utarapa ne Yesu Kiristo ashiri aeuitaknup (The New Testament of our Lord and Saviour Jesus Christ in Ainu)',
+		publisher: 'British & Foreign Bible Society',
+		place: 'Yokohama',
+		url: 'https://db.aynu.org/sources/ainu-bible-batchelor-translation',
+		note: 'The Ainu New Testament (チコロ・ウタラパ); with the Psalms and Jonah, the largest connected-text corpus in Batchelor’s orthography. Quoted from the digitised full text; cited by book, chapter and verse.'
+	},
 	batchelor1905: {
 		region: 'hokkaido',
 		author: 'Batchelor, John',
@@ -549,6 +574,30 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 
 	// ───────────────────────── Phonology, prosody, morphophonology ─────────────────────────
+	majewicz2022: {
+		region: 'general',
+		author: 'Majewicz, Alfred F.',
+		citeAuthor: 'Majewicz',
+		year: '2022',
+		title: 'Ainu language Western records',
+		editor: 'Anna Bugaeva',
+		container: 'Handbook of the Ainu language (HJLL 12)',
+		publisher: 'De Gruyter Mouton',
+		place: 'Berlin & Boston',
+		url: 'https://db.aynu.org/sources/2022-bugaeva'
+	},
+	laufer1917: {
+		region: 'general',
+		author: 'Laufer, Berthold',
+		citeAuthor: 'Laufer',
+		year: '1917',
+		title:
+			'The vigesimal and decimal systems in the Ainu numerals with some remarks on Ainu phonology',
+		container: 'Journal of the American Oriental Society 37',
+		pages: '192–208',
+		reported: true,
+		note: 'Quoted via Majewicz (2022: §5).'
+	},
 	shiraishi2022: {
 		region: 'general',
 		author: 'Shiraishi Hideto 白石英才',
@@ -1401,7 +1450,23 @@ export const bibliography: Record<string, BibEntry> = {
 		year: '1997',
 		title: 'アイヌによるアイヌ語表記',
 		titleTr: 'Ainu-language orthography by Ainu',
-		lang: 'ja'
+		container: '国文学 解釈と鑑賞 62(1)',
+		pages: '99–107',
+		lang: 'ja',
+		note: 'Consulted in the author’s revised 2016 text; page citations follow the 1997 journal printing.'
+	},
+	sakaguchi2019: {
+		region: 'hokkaido',
+		author: 'Sakaguchi Ryō 阪口諒 & Watanabe Kaori 渡邊香織',
+		citeAuthor: 'Sakaguchi & Watanabe',
+		year: '2019',
+		title: '『アイヌ炉辺物語』（1〜5話）――ジョン・バチェラー、1924年、東京',
+		titleTr: 'Ainu Fireside Stories (tales 1–5): John Batchelor, 1924, Tokyo',
+		container: '千葉大学ユーラシア言語文化論集 21',
+		pages: '243–261',
+		url: 'https://db.aynu.org/sources/2019-sakaguchi-ainu-rohen-monogatari-jon-bachera-1-5-hanashi',
+		lang: 'ja',
+		note: 'Re-edition of five of Batchelor’s 1924 Ainu Fireside Stories: original text, modern respelling (表記変更), and new Japanese translation.'
 	},
 	nakagawa2006: {
 		region: 'hokkaido',
