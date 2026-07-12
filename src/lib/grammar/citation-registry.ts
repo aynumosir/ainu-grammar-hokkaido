@@ -133,6 +133,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 
 	// Valency
 	bugaeva2006: { dbSlug: '2006-bugaeva-anna-applicatives-in-ainu', sourceRole: 'prior-analysis', heldLocally: true },
+	bugaeva2015relative: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/ブガエワアンナ・長崎郁編『アイヌ語研究の諸問題』' },
 	bugaeva2010: { dbSlug: '2010-anna-bugaeva-ainu-applicatives-in-typological-perspective', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2014: { sourceRole: 'prior-analysis', heldLocally: true },
 	nam2021: { dbSlug: '2021-nam-deokhyun-some-evidence-for-the-origin-of-the-ainu-antipassive-prefix-i', sourceRole: 'prior-analysis', heldLocally: true },

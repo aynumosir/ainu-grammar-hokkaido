@@ -552,6 +552,15 @@ export const bibliography: Record<string, BibEntry> = {
 		url: 'https://db.aynu.org/sources/1938-batchelor-ainu-english-japanese-dictionary-4ed',
 		reported: true
 	},
+	bugaeva2015relative: {
+		region: 'hokkaido',
+		author: 'Bugaeva, Anna',
+		citeAuthor: 'Bugaeva',
+		year: '2015',
+		title: 'Relative clauses and noun complements in Ainu',
+		container: 'Bugaeva, Anna & Iku Nagasaki (eds.), アイヌ語研究の諸問題. Sapporo: Hokkaido Shuppan Kikaku Center',
+		note: 'Applicative ko- as lexical Source (ko-nu) documented at p. 84 fn. 14'
+	},
 	bugaeva2015topical: {
 		region: 'hokkaido',
 		author: 'Bugaeva, Anna, Shiho Endō & Shirō Akasegawa',
