@@ -4,14 +4,15 @@
 
 <S t="Overview" id="overview">
 	<p>
-		The prefix <A w="si-" gl="reflexive; one's own" /> reduces the argument frame of a
-		transitive verb by one, identifying the object position with the subject and yielding an
-		intransitive verb. Like the sister prefix <A w="yay-" gl="reflexive (direct)" />
-		(treated in <Xr ch="reflexive-yay" />), it is glossed <span lang="ja">自分</span> 'self'
-		and carries arity −1 in Nakagawa's calculus, so the derived verb shifts from the prefixal
-		A-set (<i lang="ain-Latn">a=</i>, <i lang="ain-Latn">ci=</i>) to the suffixal S-set
-		(<i lang="ain-Latn">=an</i>, <i lang="ain-Latn">=as</i>), as diagnosed in
-		<Xr ch="person-marking-architecture" /> <Ref k="nakagawa2024" p="188–189" />;
+		The prefix <A w="si-" gl="AUTOC/ANTIC; REFL.POSS" /> has to be glossed by
+		construction. On verbs, Bugaeva's 2025 analysis treats it as historically reflexive
+		but synchronically chiefly <em>autocausative</em> (AUTOC: self-induced motion or
+		change), with a secondary/emerging anticausative (ANTIC) use. In Nakagawa's arity
+		calculus and in Satō's direct/indirect account, it still reduces the external argument
+		frame by one and shifts the resulting verb to the intransitive S-index set. On nouns
+		and incorporated nominals, however, <i lang="ain-Latn">si-</i> is REFL.POSS: it marks
+		the noun as belonging to the clause subject, as in <i lang="ain-Latn">si-ram</i>
+		'one's own heart' <Ref k="bugaeva2025" p="§3.1.2" />; <Ref k="nakagawa2024" p="188–189" />;
 		<Ref k="bugaevakobayashi2022" p="§4.2.2" />.
 	</p>
 	<p>
@@ -137,7 +138,7 @@
 
 	<Ex
 		m="i=nukar rok pe si-etaye wa isam"
-		g="4.O=see PRF NMLZ REFL-withdraw CONJ not.exist"
+		g="4.O=see PRF NMLZ AUTOC-withdraw CONJ not.exist"
 		tr="The thing that had caught sight of me withdrew and was gone."
 		cite="ilcaa1976"
 		dial="SHI"

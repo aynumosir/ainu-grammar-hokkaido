@@ -217,7 +217,7 @@
 		</p>
 	</S>
 
-	<S t="Notes on POSS and ANTIP" id="poss-antip-notes">
+	<S t="Notes on POSS, ANTIP, AUTOC, ANTIC, and MID" id="poss-antip-notes">
 		<p>
 			<strong>POSS</strong> glosses two distinct but related phenomena: the person-possessive
 			prefix slot (<i lang="ain-Latn">ku=cise</i>, <span class="sc">1sg.poss</span>=house
@@ -235,6 +235,22 @@
 			antipassive analysis <Ref k="bugaeva2021antip" />. Its analysis and its boundary with
 			the homophonous fourth-person object prefix <i lang="ain-Latn">i=</i> are treated in
 			<Xr ch="antipassive-detransitive-i" />.
+		</p>
+		<p>
+			<strong>REFL</strong>, <strong>AUTOC</strong>, <strong>ANTIC</strong>,
+			<strong>REFL.POSS</strong>, and <strong>MID</strong> are separated by construction rather
+			than by surface form. Verbal <i lang="ain-Latn">yay-</i> is glossed REFL, following
+			Bugaeva's contrast between reflexive proper and the <i lang="ain-Latn">si-</i> line.
+			Verbal <i lang="ain-Latn">si-</i> is normally AUTOC (autocausative, self-induced
+			motion or change) in Bugaeva's 2025 analysis, with an emerging or lexicalized ANTIC
+			use; nominal <i lang="ain-Latn">si-</i> and <i lang="ain-Latn">yay-</i> are glossed
+			REFL.POSS when they mark a subject-coreferent possessor. The suffix
+			<i lang="ain-Latn">-ke</i> is the primary ANTIC/INTR.SG marker in Bugaeva's
+			anticausative paper, while the homophonous lexical-transitive
+			<i lang="ain-Latn">-ke</i> is glossed TR or CAUS.LEX. The prefix
+			<i lang="ain-Latn">ci-</i> is kept separate as MID/RES, because it suppresses the
+			agent/resultatively profiles the affected participant rather than marking
+			self-causation <Ref k="bugaeva2025" />; <Ref k="bugaevakobayashi2022" p="§4.2" />.
 		</p>
 	</S>
 
