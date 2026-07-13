@@ -67,7 +67,20 @@
 		in verse rather than prose or conversational registers
 		<Ref k="nakagawa2024" p="199" />; <Ref k="sato2008" p="244" />. Bugaeva's lexical
 		frequency order is <i lang="ain-Latn">ko- &gt; e- &gt; o-</i>
-		<Ref k="bugaeva2006" p="188" />.
+		<Ref k="bugaeva2006" p="188" />. The register observation is older than either
+		treatment: Fukuda already set <i lang="ain-Latn">o-</i> aside as frequent in
+		伝承文学や歌 (oral literature and song) but rare in conversation, surviving there only
+		in a handful of 化石化した形式 (fossilized forms) <Ref k="fukuda1956" p="fn. 16" />.
+	</p>
+
+	<p>
+		The Source row of the table has lexicographic backing in Nakagawa's own dictionary:
+		the entry for the prefix gives 〜〈場所〉へ・〜〈場所〉に・〜〈場所〉から (to / at / from a
+		place), interchangeable with the postposition <i lang="ain-Latn">un</i>
+		<Ref k="nakagawa1995" />. The ablative から sense is thus registered by Nakagawa
+		himself, against the narrower goal-and-location-only formulation that Bugaeva reports
+		from his earlier work <Ref k="bugaeva2006" p="191" />; the place restriction is
+		unaffected — all three senses take place nouns only.
 	</p>
 </S>
 
