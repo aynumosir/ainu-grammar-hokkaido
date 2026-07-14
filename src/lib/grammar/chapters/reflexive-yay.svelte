@@ -250,12 +250,12 @@
 
 	<Ex
 		m="ku=ko-si-ranpewtek-ka wa ki=an"
-		g="1SG.A=APPL-REFL-know-CAUS CONJ do=4.S"
+		g="1SG.A=APPL-AUTOC-know-CAUS CONJ do=4.S"
 		tr="I was pretending to know nothing about it."
 		cite="sato2007"
 		dial="CHI"
 		place="Satō ex. 6; Chitose"
-		note="ko- promotes the object-of-pretence to applied object; si- marks that the unknowing-state depends on others' belief; -ka causativizes the resulting stative. ki=an (do=4.S) marks the ongoing activity as intransitive, confirming the final vi status of the complex."
+		note="ko- promotes the object-of-pretence to applied object; si- contributes the autocausative/indirect self-involvement reading: the unknowing-state depends on others' belief; -ka causativizes the resulting stative. ki=an (do=4.S) marks the ongoing activity as intransitive, confirming the final vi status of the complex."
 	/>
 
 	<p>

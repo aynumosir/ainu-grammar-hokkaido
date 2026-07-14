@@ -107,7 +107,7 @@
 		cross-referencing: <i lang="ain-Latn">a=en=montapire</i> 'the indefinite agent informed me as
 		object' <Ref k="nakagawa2024" p="190" />. This restriction distinguishes
 		<i lang="ain-Latn">ci-</i> sharply from the reflexive
-		<A w="yay-" gl="reflexive (direct)" /> and the antipassive
+		<A w="yay-" gl="REFL" /> and the antipassive
 		<A w="i-" gl="antipassive" />, which are available across persons.
 	</p>
 

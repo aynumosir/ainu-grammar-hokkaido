@@ -195,12 +195,12 @@
 
 	<Ex
 		m="ku=ko-si-ranpewtek-ka wa k=an"
-		g="1SG.A=APPL-REFL-know.nothing-CAUS CONJ IPFV"
+		g="1SG.A=APPL-AUTOC-know.nothing-CAUS CONJ IPFV"
 		tr="I was pretending not to know about it."
 		cite="sato2007"
 		dial="CHI"
 		place="Satō ex. 6 (approx. p. 36)"
-		note="ko- is the applicative referencing what the subject ostensibly does not know; si- contributes the indirect-reflexive reading; -ka is the direct-causative suffix. Together si-ranpewtek-ka yields the pretend-to reading. The final k=an is a contracted progressive existential (kor an)."
+		note="ko- is the applicative referencing what the subject ostensibly does not know; si- contributes the autocausative/indirect self-involvement reading; -ka is the direct-causative suffix. Together si-ranpewtek-ka yields the pretend-to reading. The final k=an is a contracted progressive existential (kor an)."
 	/>
 
 	<p>
@@ -224,10 +224,10 @@
 
 	<Ex
 		m="yay-si-turi-re=an"
-		g="REFL-REFL-stretch-CAUS=4.S"
+		g="REFL-AUTOC-stretch-CAUS=4.S"
 		tr="I lay down, stretching myself out."
 		constructed
-		note="The verb form yay-si-turi-re is attested in Nakagawa (2024: 189) to demonstrate the yay-outer / si-inner ordering; the surrounding clause is constructed. The fourth-person S suffix =an confirms that si-turi-re is intransitive."
+		note="The verb form yay-si-turi-re is attested in Nakagawa (2024: 189) to demonstrate the yay-outer / si-inner ordering; the surrounding clause is constructed. The fourth-person S suffix =an confirms that si-turi-re is intransitive; the inner verbal si- is glossed AUTOC, while the outer yay- is REFL."
 	/>
 
 	<p>

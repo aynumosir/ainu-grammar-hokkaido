@@ -447,18 +447,18 @@
 		two causatives, two incorporated objects, and a lexical prefix, alongside a reciprocal, reflexive,
 		or antipassive and the agreement indexes <Ref k="bugaeva2014" />. The classic showcase loads an
 		incorporated object (<A w="ram" gl="heart" />), an adverbial element
-		(<A w="tuyma" gl="far" />), two reflexives, and two applicatives onto one transitive root:
+		(<A w="tuyma" gl="far" />), one reflexive proper, one reflexive-possessive prefix, and two applicatives onto one transitive root:
 	</p>
 
 	<Ex
 		m="usa-oruspe a=e-yay-ko-tuyma-si-ram-suy-pa"
-		g="various-rumor 4.A-APPL-REFL-APPL-far-REFL-heart-sway-PL"
+		g="various-rumor 4.A-APPL-REFL-APPL-far-REFL.POSS-heart-sway-PL"
 		tr="We keep swaying our hearts afar over various rumours."
 		lit="we sway our hearts about ourselves far over various rumours"
 		cite="shibatani1990:73; bugaeva2014"
 		dial="HK"
 		place="after Chiri 1936: 169; Shibatani ex. 131 / Bugaeva ex. 1"
-		note="One transitive root suy-pa ‘sway (PL)’ carries an incorporated object, an adverbial, two reflexives, and two applicatives; the whole reads ‘we wonder about various rumours’."
+		note="One transitive root suy-pa ‘sway (PL)’ carries an incorporated object, an adverbial, an outer reflexive proper, an inner reflexive-possessive si- before ram ‘heart’, and two applicatives; the whole reads ‘we wonder about various rumours’."
 	/>
 
 	<p>
