@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 159 works cited across the grammar into a single
+		This chapter gathers the 165 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -18,9 +18,11 @@
 	<p class="bib-entry">Asai Tōru 浅井亨 (1969). <i lang="ja">アイヌ語の文法——アイヌ語石狩方言文法の概略</i>. [An outline of the grammar of the Ishikari dialect of Ainu]. アイヌ民族誌 1. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Batchelor, John (1905). <i>An Ainu–English–Japanese dictionary (including a grammar of the Ainu language)</i>. Tokyo: Methodist Publishing House. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Batchelor, John (1938). <i>An Ainu–English–Japanese dictionary, 4th edn</i>. Tokyo: Iwanami Shoten 岩波書店. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Batchelor, John (tr.) (1897). <i>Chikoro utarapa ne Yesu Kiristo ashiri aeuitaknup (The New Testament of our Lord and Saviour Jesus Christ in Ainu)</i>. Yokohama: British &amp; Foreign Bible Society.</p>
 	<p class="bib-entry">Biratori Town Ainu oral-literature archive 平取町アイヌ口承文芸 (1969). <i lang="ja">平取町アイヌ口承文芸</i>. [Biratori Town Ainu oral literature].</p>
 	<p class="bib-entry">Bugaeva, Anna (2008). <i>Reported discourse and logophoricity in Southern Hokkaido dialects of Ainu</i>. Gengo Kenkyū 133. 31–75.</p>
 	<p class="bib-entry">Bugaeva, Anna (2012). <i>Southern Hokkaido Ainu</i>. The languages of Japan and Korea. Ed. Nicolas Tranter. 461–509. London: Routledge.</p>
+	<p class="bib-entry">Bugaeva, Anna (2015). <i>Relative clauses and noun complements in Ainu</i>. Bugaeva, Anna &amp; Iku Nagasaki (eds.), アイヌ語研究の諸問題. Sapporo: Hokkaido Shuppan Kikaku Center.</p>
 	<p class="bib-entry">Bugaeva, Anna ブガエワ・アンナ (2014). <i lang="ja">アイヌ語使役構文に関する再考察</i>. [A reconsideration of the causative construction in Ainu].</p>
 	<p class="bib-entry">Bugaeva, Anna, Shiho Endō &amp; Shirō Akasegawa (2015). <i>A topical dictionary of conversational Ainu</i>.</p>
 	<p class="bib-entry">Chiba University Ainu Language Research Project 千葉大学 (eds.) (2015). <i lang="ja">千葉大学アイヌ語資料集</i>. [Chiba University Ainu language materials collection].</p>
@@ -41,7 +43,7 @@
 	<p class="bib-entry">Kayano Shigeru 萱野茂 (1996). <i lang="ja">萱野茂のアイヌ語辞典</i>. [Kayano's Ainu dictionary (Saru)]. Tokyo: Sanseidō 三省堂. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Kirikae Hideo 切替英雄 (1984). <i lang="ja">名詞句の構造と合成名詞</i>. [The structure of noun phrases and compound nouns].</p>
 	<p class="bib-entry">Kirikae Hideo 切替英雄 (1994). <i lang="ja">アイヌ語地名における等語線</i>. [Isoglosses in Ainu place names]. <span class="reported-badge">reported</span></p>
-	<p class="bib-entry">Kirikae Hideo 切替英雄 (1997). <i lang="ja">アイヌによるアイヌ語表記</i>. [Ainu-language orthography by Ainu].</p>
+	<p class="bib-entry">Kirikae Hideo 切替英雄 (1997). <i lang="ja">アイヌによるアイヌ語表記</i>. [Ainu-language orthography by Ainu]. 国文学 解釈と鑑賞 62(1). 99–107.</p>
 	<p class="bib-entry">Kobayashi Miki 小林美紀 (2010). <i lang="ja">動詞接頭辞si-とyay-の項同定機能</i>. [The argument-identifying function of the verbal prefixes si- and yay-].</p>
 	<p class="bib-entry">Kobayashi Miki 小林美紀 (2015). <i lang="ja">アイヌ語動詞の結合価と項構造</i>. [Valency and argument structure of the Ainu verb (dissertation)].</p>
 	<p class="bib-entry">Kobayashi Miki 小林美紀 (2020). <i lang="ja">空間・場所を項とするアイヌ語動詞の結合価を増やす操作について：otkeとkamuを例として</i>. [On valency-increasing operations for Ainu verbs that take space or place as an argument: otke and kamu as case studies]. 千葉大学ユーラシア言語文化論集 22. 167–174.</p>
@@ -58,6 +60,7 @@
 	<p class="bib-entry">Refsing, Kirsten (1986). <i>The Ainu language: The morphology and syntax of the Shizunai dialect</i>. Aarhus: Aarhus University Press.</p>
 	<p class="bib-entry">Refsing, Kirsten (2011). <i>Tense, aspect and actionality in the Ainu language</i>. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Research Institute for Languages and Cultures of Asia and Africa (ILCAA), Tokyo University of Foreign Studies (1976). <i lang="ja">AA研アイヌ語資料</i>. [ILCAA Ainu language materials].</p>
+	<p class="bib-entry">Sakaguchi Ryō 阪口諒 &amp; Watanabe Kaori 渡邊香織 (2019). <i lang="ja">『アイヌ炉辺物語』（1〜5話）――ジョン・バチェラー、1924年、東京</i>. [Ainu Fireside Stories (tales 1–5): John Batchelor, 1924, Tokyo]. 千葉大学ユーラシア言語文化論集 21. 243–261.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2004). <i lang="ja">アイヌ文学における一人称体の問題</i>. [The problem of the first-person form in Ainu literature].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2006). <i lang="ja">千歳方言のアスペクト——kor an、wa an</i>. [Aspect in the Chitose dialect: kor an, wa an].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2007). <i lang="ja">千歳方言の再帰接頭辞yay-とsi-について</i>. [On the reflexive prefixes yay- and si- in the Chitose dialect].</p>
@@ -128,6 +131,7 @@
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1953). <i lang="ja">分類アイヌ語辞典</i>. [A classified dictionary of Ainu (plants, animals, humans), 1953–1962]. Tokyo: Nihon Jōmin Bunka Kenkyūjo 日本常民文化研究所. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1955). <i lang="ja">アイヌ文学</i>. [Ainu literature]. 日本詩人全集 27. Tokyo: 新潮社. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1956). <i lang="ja">地名アイヌ語小辞典</i>. [A small dictionary of Ainu place-name language (Chimei Ainugo shō jiten)]. Tokyo: Nihon Jōmin Bunka Kenkyūjo 日本常民文化研究所. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Chiri Mashiho 知里真志保 (1956). <i lang="ja">アイヌ語入門――とくに地名研究者のために</i>. [An introduction to Ainu, especially for place-name researchers]. Sapporo: Nire Shobō 楡書房. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Comrie, Bernard (1976). <i>Aspect: An introduction to the study of verbal aspect and related problems</i>. Cambridge: Cambridge University Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Comrie, Bernard, Martin Haspelmath &amp; Balthasar Bickel (2015). <i>The Leipzig Glossing Rules: Conventions for interlinear morpheme-by-morpheme glosses</i>. Leipzig: Max Planck Institute for Evolutionary Anthropology &amp; Leipzig University. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Corbett, Greville G. (2000). <i>Number</i>. Cambridge: Cambridge University Press. <span class="reported-badge">reported</span></p>
@@ -150,6 +154,8 @@
 	<p class="bib-entry">Kindaichi Kyōsuke 金田一京助 (1933). <i lang="ja">アイヌ文学</i>. [Ainu literature]. Tokyo: Kawade Shobō 河出書房.</p>
 	<p class="bib-entry">Kindaichi Kyōsuke 金田一京助 (1935). <i lang="ja">原始文学としてのユーカラ</i>. [Yukar as primitive literature]. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Kindaichi Kyōsuke 金田一京助 &amp; Chiri Mashiho 知里真志保 (1936). <i lang="ja">アイヌ語法概説</i>. [An outline of Ainu grammar]. Tokyo: Iwanami Shoten 岩波書店.</p>
+	<p class="bib-entry">Laufer, Berthold (1917). <i>The vigesimal and decimal systems in the Ainu numerals with some remarks on Ainu phonology</i>. Journal of the American Oriental Society 37. 192–208. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Majewicz, Alfred F. (2022). <i>Ainu language Western records</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Miestamo, Matti (2005). <i>Standard negation: The negation of declarative verbal main clauses in a typological perspective</i>. Berlin: Mouton de Gruyter. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Mithun, Marianne (1984). <i>The evolution of noun incorporation</i>. Language 60(4). 847–894. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 (2024). <i lang="ja">アイヌ語広文典</i>. [Ainugo kōbunten [An extensive grammar of the Ainu language]]. Tokyo: Hakusuisha 白水社.</p>

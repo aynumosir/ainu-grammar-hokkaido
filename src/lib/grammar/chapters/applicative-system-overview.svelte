@@ -48,6 +48,17 @@
 		<i lang="ain-Latn">o-</i> restricted to 〜〈場所〉へ (toward a place)
 		<Ref k="nakagawa2024" p="194–199" />; <Ref k="sato2008" p="239–245" />.
 	</p>
+
+	<p>
+		The sources do not slice this space identically. Satō's summary groups 手段・着点・場所
+		(means, goal, location) under <i lang="ain-Latn">e-</i> and <i lang="ain-Latn">o-</i>
+		together and gives <i lang="ain-Latn">ko-</i> as 方向・手段 (direction, means) — extending
+		the instrumental sense to <i lang="ain-Latn">ko-</i> as well
+		<Ref k="sato2008" p="239–245" />. Bugaeva's corpus tables place Means-Instrument with
+		<i lang="ain-Latn">e-</i> (13% of its uses) and record no instrument class for
+		<i lang="ain-Latn">ko-</i> <Ref k="bugaeva2006" p="190" />; the divergence is one of
+		classification granularity rather than of data.
+	</p>
 </S>
 
 <S t="The three prefixes at a glance" id="three-prefixes">

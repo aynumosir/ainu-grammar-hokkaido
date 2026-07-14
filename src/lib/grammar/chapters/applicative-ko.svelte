@@ -119,7 +119,12 @@
 		categories (5% each) stand out for their predominantly transitive base verbs (66%), a
 		profile consistent with transfer and extraction verbs rather than the one-place motion verbs
 		that feed the Goal uses (95% intransitive base)
-		<Ref k="bugaeva2006" p="190" />.
+		<Ref k="bugaeva2006" p="190" />. A lexical instance of the Source use is
+		<i lang="ain-Latn">ko-nu</i> 'hear/ask something from someone', where
+		<i lang="ain-Latn">ko-</i> adds the Source participant to two-place
+		<i lang="ain-Latn">nu</i> 'hear', alongside the oblique alternatives
+		<i lang="ain-Latn">wa</i> (ablative) and <i lang="ain-Latn">eun</i>
+		<Ref k="bugaeva2015relative" p="84 fn. 14" />.
 	</p>
 </S>
 
