@@ -128,7 +128,7 @@
 
 	<Ex
 		m="sunku anakne peka ta si-pusu wa mom pe ne"
-		g="Ezo.pine TOP surface LOC REFL-float.up CONJ flow NMLZ COP"
+		g="Ezo.pine TOP surface LOC ANTIC-float.up CONJ flow NMLZ COP"
 		tr="The Ezo pine floats up to the water surface and flows along by itself."
 		cite="sato2007"
 		dial="CHI"

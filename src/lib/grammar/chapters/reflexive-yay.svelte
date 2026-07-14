@@ -272,7 +272,7 @@
 
 	<Ex
 		m="i=nukar rok pe si-etaye wa isam"
-		g="4.O=see PRF thing REFL-withdraw CONJ be.absent"
+		g="4.O=see PRF thing AUTOC-withdraw CONJ be.absent"
 		tr="On seeing me, it withdrew and was gone."
 		cite="ilcaa1976"
 		dial="SHI"
