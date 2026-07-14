@@ -79,13 +79,13 @@
 				<td><i lang="ain-Latn">rew-ke</i></td>
 				<td><i lang="ain-Latn">rew-e</i></td>
 				<td><i lang="ain-Latn">-ke</i> on intr. / <i lang="ain-Latn">-V</i> on tr.</td>
-				<td>'come out' / 'let sth out'</td>
+				<td>'be bent, bend (vi)' / 'bend sth'</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">yas-ke</i></td>
 				<td><i lang="ain-Latn">yas-a</i></td>
 				<td><i lang="ain-Latn">-ke</i> on intr. / <i lang="ain-Latn">-V</i> on tr.</td>
-				<td>'run' / 'send sth'</td>
+				<td>'split, tear (vi)' / 'tear, rip sth'</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">per-ke</i></td>
