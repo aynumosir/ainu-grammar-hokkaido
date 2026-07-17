@@ -21,10 +21,10 @@
 	<p>
 		The slot <i lang="ain-Latn">u-</i> occupies is the same nominal/applicative position as the
 		<Xr ch="reflexive-yay">reflexive prefix</Xr> <A w="yay-" gl="REFL" />,
-		<A w="si-" gl="AUTOC/ANTIC; REFL.POSS" />, and the
+		<A w="si-" gl="AUTOC/ANTIC/REFL; REFL.POSS" />, and the
 		<Xr ch="antipassive-detransitive-i">antipassive</Xr> <A w="i-" gl="antipassive" />; these
 		prefixes all decrease or rearrange valency, but their semantic domains differ —
-		self-directed action, verbal autocausative/anticausative or reflexive possession, object defocusing, and mutual participation, respectively. The prefix
+		self-directed action, autocausative/anticausative/reflexive or reflexive-possessive marking, object defocusing, and mutual participation, respectively. The prefix
 		is highly productive: it attaches to base transitive verbs, to applicative-prefixed stems,
 		and to causativized forms, with the arity calculus predicting the transitivity of each output
 		(see <Xr ch="valency-voice-overview" s="inventory" />). A further complication is that

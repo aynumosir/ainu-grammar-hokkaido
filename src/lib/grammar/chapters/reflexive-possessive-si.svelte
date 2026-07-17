@@ -4,10 +4,13 @@
 
 <S t="Overview" id="overview">
 	<p>
-		The prefix <A w="si-" gl="AUTOC/ANTIC; REFL.POSS" /> has to be glossed by
+		The prefix <A w="si-" gl="AUTOC/ANTIC/REFL; REFL.POSS" /> has to be glossed by
 		construction. On verbs, Bugaeva's 2025 analysis treats it as historically reflexive
 		but synchronically chiefly <em>autocausative</em> (AUTOC: self-induced motion or
-		change), with a secondary/emerging anticausative (ANTIC) use. In Nakagawa's arity
+		change), with a secondary/emerging anticausative (ANTIC) use; where the object slot
+		remains genuinely self-coreferent, as in the 'pretend to' construction with the
+		causatives <i lang="ain-Latn">-re</i>/<i lang="ain-Latn">-ka</i>, the gloss stays
+		REFL. In Nakagawa's arity
 		calculus and in Satō's direct/indirect account, it still reduces the external argument
 		frame by one and shifts the resulting verb to the intransitive S-index set. On nouns
 		and incorporated nominals, however, <i lang="ain-Latn">si-</i> is REFL.POSS: it marks
@@ -195,12 +198,12 @@
 
 	<Ex
 		m="ku=ko-si-ranpewtek-ka wa k=an"
-		g="1SG.A=APPL-AUTOC-know.nothing-CAUS CONJ IPFV"
+		g="1SG.A=APPL-REFL-know.nothing-CAUS CONJ IPFV"
 		tr="I was pretending not to know about it."
 		cite="sato2007"
 		dial="CHI"
 		place="Satō ex. 6 (approx. p. 36)"
-		note="ko- is the applicative referencing what the subject ostensibly does not know; si- contributes the autocausative/indirect self-involvement reading; -ka is the direct-causative suffix. Together si-ranpewtek-ka yields the pretend-to reading. The final k=an is a contracted progressive existential (kor an)."
+		note="ko- is the applicative referencing what the subject ostensibly does not know; si- fills the object slot of the causativized stem with a subject-coreferent 'self', hence REFL; -ka is the direct-causative suffix. Together si-ranpewtek-ka yields the pretend-to reading. The final k=an is a contracted progressive existential (kor an)."
 	/>
 
 	<p>
@@ -224,10 +227,10 @@
 
 	<Ex
 		m="yay-si-turi-re=an"
-		g="REFL-AUTOC-stretch-CAUS=4.S"
+		g="REFL-REFL-stretch-CAUS=4.S"
 		tr="I lay down, stretching myself out."
 		constructed
-		note="The verb form yay-si-turi-re is attested in Nakagawa (2024: 189) to demonstrate the yay-outer / si-inner ordering; the surrounding clause is constructed. The fourth-person S suffix =an confirms that si-turi-re is intransitive; the inner verbal si- is glossed AUTOC, while the outer yay- is REFL."
+		note="The verb form yay-si-turi-re is attested in Nakagawa (2024: 189) to demonstrate the yay-outer / si-inner ordering; the surrounding clause is constructed. The fourth-person S suffix =an confirms that si-turi-re is intransitive. Both prefixes keep the reflexive gloss: an autocausative reading of the inner si- is conceivable but not asserted by Nakagawa's analysis."
 	/>
 
 	<p>

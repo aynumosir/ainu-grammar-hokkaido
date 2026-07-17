@@ -250,8 +250,11 @@
 			Bugaeva's contrast between reflexive proper and the <i lang="ain-Latn">si-</i> line.
 			Verbal <i lang="ain-Latn">si-</i> is normally AUTOC (autocausative, self-induced
 			motion or change) in Bugaeva's 2025 analysis, with an emerging or lexicalized ANTIC
-			use; nominal <i lang="ain-Latn">si-</i> and <i lang="ain-Latn">yay-</i> are glossed
-			REFL.POSS when they mark a subject-coreferent possessor. The suffix
+			use; it keeps the gloss REFL where it fills a genuinely self-coreferent object slot,
+			as in the 'pretend to' construction with causative <i lang="ain-Latn">-re</i>/<i
+				lang="ain-Latn">-ka</i>. Nominal <i lang="ain-Latn">si-</i> and
+			<i lang="ain-Latn">yay-</i> are glossed REFL.POSS when they mark a subject-coreferent
+			possessor. The suffix
 			<i lang="ain-Latn">-ke</i> is the primary ANTIC/INTR.SG marker in Bugaeva's
 			anticausative paper, while the homophonous lexical-transitive
 			<i lang="ain-Latn">-ke</i> is glossed TR or CAUS.LEX. The prefix

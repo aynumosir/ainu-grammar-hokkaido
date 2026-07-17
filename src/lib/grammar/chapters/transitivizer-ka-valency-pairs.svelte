@@ -214,11 +214,11 @@
 
 	<Ex
 		m="ku=ko-si-ranpewtek-ka wa k=an"
-		g="1SG.A=APPL-AUTOC-know.nothing-CAUS CONJ 1SG.S=exist"
+		g="1SG.A=APPL-REFL-know.nothing-CAUS CONJ 1SG.S=exist"
 		tr="I pretended not to know about it."
 		cite="sato2007"
 		dial="CHI"
-		note="Satō ex. 6, approximately p. 36 (the OCR of Satō 2007 carries no per-page running heads; the location is approximate within the pp. 31–39 article). The APPL prefix ko- supplies the semantic object (the thing one pretends not to know); si- contributes the autocausative/indirect self-involvement reading; -ka is the causative suffix. The following wa k=an reports the resulting state."
+		note="Satō ex. 6, approximately p. 36 (the OCR of Satō 2007 carries no per-page running heads; the location is approximate within the pp. 31–39 article). The APPL prefix ko- supplies the semantic object (the thing one pretends not to know); si- is the reflexive object of the causativized stem, hence REFL; -ka is the causative suffix. The following wa k=an reports the resulting state."
 	/>
 </S>
 

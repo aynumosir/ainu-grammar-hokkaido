@@ -175,7 +175,7 @@
 
 <S t="Anticausative semantics and the si- overlap" id="anticausative-si">
 	<p>
-		The reflexive prefix <A w="si-" gl="AUTOC/ANTIC" /> covers a semantic domain that
+		The reflexive prefix <A w="si-" gl="AUTOC/ANTIC/REFL" /> covers a semantic domain that
 		overlaps partially with the middle. Under Satō's analysis, adopted by Nakagawa and the Handbook,
 		<i lang="ain-Latn">si-</i> marks the subject's indirect involvement — through another agent,
 		through circumstance, or through a force outside the subject's direct control <Ref
