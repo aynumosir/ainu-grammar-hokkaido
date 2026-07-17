@@ -120,6 +120,8 @@
 			<tr><td>ALLAT</td><td>allative</td></tr>
 			<tr><td>ANAPH</td><td>anaphoric (discourse-tracking)</td></tr>
 			<tr><td>ANTIP</td><td>antipassive</td></tr>
+			<tr><td>ANTIC</td><td>anticausative</td></tr>
+			<tr><td>AUTOC</td><td>autocausative</td></tr>
 			<tr><td>APPL</td><td>applicative</td></tr>
 			<tr><td>ASS</td><td>associative plural</td></tr>
 			<tr><td>ATTR</td><td>attributive</td></tr>
@@ -132,6 +134,7 @@
 			<tr><td>COP</td><td>copula</td></tr>
 			<tr><td>DEL</td><td>deliberative</td></tr>
 			<tr><td>DEM</td><td>demonstrative</td></tr>
+			<tr><td>DIR</td><td>direct (as in CAUS.DIR, direct causative)</td></tr>
 			<tr><td>DES</td><td>desiderative</td></tr>
 			<tr><td>DIM</td><td>diminutive</td></tr>
 			<tr><td>DIST</td><td>distal</td></tr>
@@ -151,8 +154,11 @@
 			<tr><td>INS</td><td>instrumental</td></tr>
 			<tr><td>INT</td><td>intensifier</td></tr>
 			<tr><td>INTERJ</td><td>interjection</td></tr>
+			<tr><td>INTR</td><td>intransitive</td></tr>
 			<tr><td>IPFV</td><td>imperfective</td></tr>
 			<tr><td>ITR</td><td>iterative</td></tr>
+			<tr><td>LEX</td><td>lexical / lexicalized (as in CAUS.LEX, lexical causative)</td></tr>
+			<tr><td>MID</td><td>middle (voice)</td></tr>
 			<tr><td>LOC</td><td>locative</td></tr>
 			<tr><td>MIR</td><td>mirative</td></tr>
 			<tr><td>NEG</td><td>negative</td></tr>
@@ -183,6 +189,7 @@
 			<tr><td>SOFT</td><td>softener (imperative-mitigating particle)</td></tr>
 			<tr><td>TOP</td><td>topic</td></tr>
 			<tr><td>TRANSL</td><td>translative (as, become)</td></tr>
+			<tr><td>TR</td><td>transitive</td></tr>
 			<tr><td>TRVZ</td><td>transitivizer</td></tr>
 			<tr><td>VBLZ</td><td>verbalizer</td></tr>
 		</tbody>
@@ -217,7 +224,7 @@
 		</p>
 	</S>
 
-	<S t="Notes on POSS and ANTIP" id="poss-antip-notes">
+	<S t="Notes on POSS, ANTIP, AUTOC, ANTIC, and MID" id="poss-antip-notes">
 		<p>
 			<strong>POSS</strong> glosses two distinct but related phenomena: the person-possessive
 			prefix slot (<i lang="ain-Latn">ku=cise</i>, <span class="sc">1sg.poss</span>=house
@@ -235,6 +242,25 @@
 			antipassive analysis <Ref k="bugaeva2021antip" />. Its analysis and its boundary with
 			the homophonous fourth-person object prefix <i lang="ain-Latn">i=</i> are treated in
 			<Xr ch="antipassive-detransitive-i" />.
+		</p>
+		<p>
+			<strong>REFL</strong>, <strong>AUTOC</strong>, <strong>ANTIC</strong>,
+			<strong>REFL.POSS</strong>, and <strong>MID</strong> are separated by construction rather
+			than by surface form. Verbal <i lang="ain-Latn">yay-</i> is glossed REFL, following
+			Bugaeva's contrast between reflexive proper and the <i lang="ain-Latn">si-</i> line.
+			Verbal <i lang="ain-Latn">si-</i> is normally AUTOC (autocausative, self-induced
+			motion or change) in Bugaeva's 2025 analysis, with an emerging or lexicalized ANTIC
+			use; it keeps the gloss REFL where it fills a genuinely self-coreferent object slot,
+			as in the 'pretend to' construction with causative <i lang="ain-Latn">-re</i>/<i
+				lang="ain-Latn">-ka</i>. Nominal <i lang="ain-Latn">si-</i> and
+			<i lang="ain-Latn">yay-</i> are glossed REFL.POSS when they mark a subject-coreferent
+			possessor. The suffix
+			<i lang="ain-Latn">-ke</i> is the primary ANTIC/INTR.SG marker in Bugaeva's
+			anticausative paper, while the homophonous lexical-transitive
+			<i lang="ain-Latn">-ke</i> is glossed TR or CAUS.LEX. The prefix
+			<i lang="ain-Latn">ci-</i> is kept separate as MID/RES, because it suppresses the
+			agent/resultatively profiles the affected participant rather than marking
+			self-causation <Ref k="bugaeva2025" p="§1.2, §3.1.2" />; <Ref k="bugaevakobayashi2022" p="§4.2" />.
 		</p>
 	</S>
 

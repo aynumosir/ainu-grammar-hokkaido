@@ -95,10 +95,109 @@
 				<td><Xr ch="transitivizer-ka-valency-pairs" /></td>
 			</tr>
 			<tr>
+				<td>Bugaeva's anticausative <i lang="ain-Latn">-ke</i></td>
+				<td>causer suppressed / lexical pair</td>
+				<td>primary ANTIC/INTR.SG member of change-of-state pairs: <i lang="ain-Latn">rew-ke</i> 'be bent' beside <i lang="ain-Latn">rew-e</i> 'bend something'</td>
+				<td><Xr ch="middle-anticausative-passive" />; <Ref k="bugaeva2025" p="§1.2, §2" /></td>
+			</tr>
+			<tr>
+				<td>verbal <i lang="ain-Latn">si-</i></td>
+				<td>−1 / rearranged</td>
+				<td>AUTOC as the default verbal label in Bugaeva's 2025 account, with lexical/emerging ANTIC uses; nominal <i lang="ain-Latn">si-</i> remains REFL.POSS</td>
+				<td><Xr ch="reflexive-possessive-si" />; <Ref k="bugaeva2025" p="§3.1.2" /></td>
+			</tr>
+			<tr>
+				<td>middle/resultative <i lang="ain-Latn">ci-</i></td>
+				<td>agent absorbed</td>
+				<td>MID/RES: suppresses the original agent and profiles the affected result (<i lang="ain-Latn">ci-cari</i> 'be scattered')</td>
+				<td><Xr ch="middle-anticausative-passive" /></td>
+			</tr>
+			<tr>
 				<td>verbal-number suffix <i lang="ain-Latn">-pa</i>, suppletive plural stems, reduplication</td>
 				<td>0</td>
 				<td>stem alternation for number or aspect; no effect on the argument frame</td>
 				<td><Xr ch="suppletive-verbal-number" /></td>
+			</tr>
+		</tbody>
+	</table>
+</S>
+
+<S t="Visual paradigm for one stem" id="visual-paradigm">
+	<p>
+		For data modelling, it is useful to visualize an Ainu stem the way Japanese grammars
+		visualize intransitive–transitive pairs: the stem may branch into a direct transitive,
+		a productive causative, an anticausative, an autocausative, a reflexive, and an
+		antipassive. The branches are not symmetric and should not be assigned one flat tag.
+		Bugaeva's 2025 analysis is especially important here: <i lang="ain-Latn">-ke</i> is
+		the primary anticausative marker, while verbal <i lang="ain-Latn">si-</i> is mainly
+		autocausative and only secondarily anticausative <Ref k="bugaeva2025" p="§1.2, §4" />.
+	</p>
+	<table>
+		<thead>
+			<tr>
+				<th>branch</th>
+				<th>marker</th>
+				<th>gloss tag</th>
+				<th>example shape</th>
+				<th>database entry / rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>productive causative</td>
+				<td><i lang="ain-Latn">-re/-e/-te</i></td>
+				<td>CAUS</td>
+				<td><i lang="ain-Latn">nukar-e</i>, <i lang="ain-Latn">mi-re</i></td>
+				<td><code>DER-CAUS-*</code></td>
+			</tr>
+			<tr>
+				<td>lexical transitive / direct causative</td>
+				<td><i lang="ain-Latn">-ke</i>, <i lang="ain-Latn">-ka</i></td>
+				<td>TR, CAUS.LEX, CAUS.DIR</td>
+				<td><i lang="ain-Latn">ray-ke</i>, <i lang="ain-Latn">sat-ke</i></td>
+				<td><code>-ke-tr</code>, <code>-ka</code></td>
+			</tr>
+			<tr>
+				<td>anticausative / intransitive pair</td>
+				<td><i lang="ain-Latn">-ke</i></td>
+				<td>ANTIC, INTR.SG</td>
+				<td><i lang="ain-Latn">rew-ke</i>, <i lang="ain-Latn">piras-ke</i></td>
+				<td><code>-ke-antic</code>, <code>DER-ANTIC-ke</code></td>
+			</tr>
+			<tr>
+				<td>transitivizer / equipollent pair</td>
+				<td><i lang="ain-Latn">-V</i></td>
+				<td>TR, TR.SG</td>
+				<td><i lang="ain-Latn">rew-e</i>, <i lang="ain-Latn">piras-a</i>, <i lang="ain-Latn">noy-e</i></td>
+				<td><code>-V-tr</code>, <code>DER-TR-V</code></td>
+			</tr>
+			<tr>
+				<td>autocausative / secondary anticausative</td>
+				<td><i lang="ain-Latn">si-</i></td>
+				<td>AUTOC; ANTIC where spontaneous/lexicalized</td>
+				<td><i lang="ain-Latn">si-kir-u</i>, <i lang="ain-Latn">si-pusu</i></td>
+				<td><code>si-</code>, <code>DER-AUTOC-si-prefix</code></td>
+			</tr>
+			<tr>
+				<td>reflexive proper</td>
+				<td><i lang="ain-Latn">yay-</i></td>
+				<td>REFL</td>
+				<td><i lang="ain-Latn">yay-nukar</i></td>
+				<td><code>yay-</code>, <code>DER-REFL-prefix</code></td>
+			</tr>
+			<tr>
+				<td>reflexive possession</td>
+				<td><i lang="ain-Latn">si-/yay-</i> + N</td>
+				<td>REFL.POSS</td>
+				<td><i lang="ain-Latn">si-ram</i>, <i lang="ain-Latn">yay-kotan</i></td>
+				<td><code>DER-REFL-POSS-prefix</code></td>
+			</tr>
+			<tr>
+				<td>middle/resultative</td>
+				<td><i lang="ain-Latn">ci-</i></td>
+				<td>MID, RES</td>
+				<td><i lang="ain-Latn">ci-cari</i></td>
+				<td><code>ci-</code>, <code>DER-MID-ci-prefix</code></td>
 			</tr>
 		</tbody>
 	</table>

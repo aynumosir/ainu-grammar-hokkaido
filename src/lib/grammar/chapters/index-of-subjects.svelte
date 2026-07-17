@@ -624,7 +624,7 @@
 		<li>Notation — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>Notation conventions — <Xr ch="abbreviations-glossing-symbols" /></li>
 		<li>Notes on evidential labels — <Xr ch="abbreviations-glossing-symbols" /></li>
-		<li>Notes on POSS and ANTIP — <Xr ch="abbreviations-glossing-symbols" /></li>
+		<li>Notes on POSS, ANTIP, AUTOC, ANTIC, and MID — <Xr ch="abbreviations-glossing-symbols" /></li>
 		<li>Notes on role labels A, S, and O — <Xr ch="abbreviations-glossing-symbols" /></li>
 		<li>Notes on the fourth person — <Xr ch="abbreviations-glossing-symbols" /></li>
 		<li>Noun incorporation and allied spatial operators — <Xr ch="applicative-o" /></li>
@@ -1369,6 +1369,7 @@
 		<li>Verse metre: two analytical systems — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
 		<li>Verse structure: the two metres — <Xr ch="oral-literature-genre-taxonomy" /></li>
 		<li>Vigesimal numerals — <Xr ch="typological-profile" /></li>
+		<li>Visual paradigm for one stem — <Xr ch="denominal-deverbal-verb-derivation" /></li>
 		<li>Vocative fragments and address utterances — <Xr ch="oblique-adjunct-verbless-clauses" /></li>
 		<li>Voicing — <Xr ch="consonant-inventory" /></li>
 		<li>Volitional and deliberative uses — <Xr ch="hortative-and-optative" /></li>

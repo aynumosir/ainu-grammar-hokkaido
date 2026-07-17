@@ -64,13 +64,13 @@
 
 	<p>
 		The showcase documented by Shibatani — attributed to Chiri (1936: 169) — combines two
-		applicatives with two reflexives, an adverbial element, and an incorporated object on a
-		single root:
+		applicatives with one reflexive proper, one reflexive-possessive prefix, an adverbial
+		element, and an incorporated object on a single root:
 	</p>
 
 	<Ex
 		m="usa-oruspe a=e-yay-ko-tuyma-si-ram-suy-pa"
-		g="various-rumor 4.A=APPL-REFL-APPL-far-REFL-heart-sway-PL"
+		g="various-rumor 4.A=APPL-REFL-APPL-far-REFL.POSS-heart-sway-PL"
 		tr="We keep wondering about various rumours."
 		lit="we sway our hearts afar and toward ourselves over various rumours"
 		cite="shibatani1990:73; bugaeva2014"

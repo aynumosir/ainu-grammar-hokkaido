@@ -187,8 +187,25 @@
 						p="§4.2.2"
 					/></td>
 			</tr>
+
+			<tr>
+				<td>Bugaeva diachronic split</td>
+				<td>REFL proper retained as the main function of <i lang="ain-Latn">yay-</i></td>
+				<td>REFL &gt; AUTOC &gt; ANTIC pathway; synchronically chiefly autocausative, with emerging anticausative uses</td>
+				<td><Ref k="bugaeva2025" p="§3.1.2, §5" /></td>
+			</tr>
 		</tbody>
 	</table>
+
+	<p>
+		For the grammar's glossing practice, Bugaeva's 2025 diachronic formulation is the
+		most useful high-level distinction: <i lang="ain-Latn">yay-</i> is REFL proper, while
+		verbal <i lang="ain-Latn">si-</i> has shifted along the common path from reflexive to
+		autocausative and only secondarily to anticausative. The older direct/indirect
+		terminology remains important for explaining individual examples, but it is no
+		longer the primary glossing distinction used in the morpheme database
+		<Ref k="bugaeva2025" p="§3.1.2" />.
+	</p>
 
 	<p>
 		Satō's direct/indirect account, developed for Chitose, is adopted by Nakagawa and the
@@ -213,7 +230,7 @@
 
 	<Ex
 		m="sunku anakne peka ta si-pusu wa mom pe ne"
-		g="spruce TOP surface LOC REFL-float CONJ drift thing COP"
+		g="spruce TOP surface LOC ANTIC-float CONJ drift thing COP"
 		tr="Spruce floats on the water and drifts — that is its nature."
 		cite="sato2007"
 		dial="CHI"
@@ -238,7 +255,7 @@
 		cite="sato2007"
 		dial="CHI"
 		place="Satō ex. 6; Chitose"
-		note="ko- promotes the object-of-pretence to applied object; si- marks that the unknowing-state depends on others' belief; -ka causativizes the resulting stative. ki=an (do=4.S) marks the ongoing activity as intransitive, confirming the final vi status of the complex."
+		note="ko- promotes the object-of-pretence to applied object; si- supplies the subject-coreferent object of the causativized stative, hence REFL: the unknowing-state depends on others' belief; -ka causativizes the resulting stative. ki=an (do=4.S) marks the ongoing activity as intransitive, confirming the final vi status of the complex."
 	/>
 
 	<p>
@@ -255,7 +272,7 @@
 
 	<Ex
 		m="i=nukar rok pe si-etaye wa isam"
-		g="4.O=see PRF thing REFL-withdraw CONJ be.absent"
+		g="4.O=see PRF thing AUTOC-withdraw CONJ be.absent"
 		tr="On seeing me, it withdrew and was gone."
 		cite="ilcaa1976"
 		dial="SHI"

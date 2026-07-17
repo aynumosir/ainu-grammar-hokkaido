@@ -4,14 +4,18 @@
 
 <S t="Overview" id="overview">
 	<p>
-		The prefix <A w="si-" gl="reflexive; one's own" /> reduces the argument frame of a
-		transitive verb by one, identifying the object position with the subject and yielding an
-		intransitive verb. Like the sister prefix <A w="yay-" gl="reflexive (direct)" />
-		(treated in <Xr ch="reflexive-yay" />), it is glossed <span lang="ja">自分</span> 'self'
-		and carries arity −1 in Nakagawa's calculus, so the derived verb shifts from the prefixal
-		A-set (<i lang="ain-Latn">a=</i>, <i lang="ain-Latn">ci=</i>) to the suffixal S-set
-		(<i lang="ain-Latn">=an</i>, <i lang="ain-Latn">=as</i>), as diagnosed in
-		<Xr ch="person-marking-architecture" /> <Ref k="nakagawa2024" p="188–189" />;
+		The prefix <A w="si-" gl="AUTOC/ANTIC/REFL; REFL.POSS" /> has to be glossed by
+		construction. On verbs, Bugaeva's 2025 analysis treats it as historically reflexive
+		but synchronically chiefly <em>autocausative</em> (AUTOC: self-induced motion or
+		change), with a secondary/emerging anticausative (ANTIC) use; where the object slot
+		remains genuinely self-coreferent, as in the 'pretend to' construction with the
+		causatives <i lang="ain-Latn">-re</i>/<i lang="ain-Latn">-ka</i>, the gloss stays
+		REFL. In Nakagawa's arity
+		calculus and in Satō's direct/indirect account, it still reduces the external argument
+		frame by one and shifts the resulting verb to the intransitive S-index set. On nouns
+		and incorporated nominals, however, <i lang="ain-Latn">si-</i> is REFL.POSS: it marks
+		the noun as belonging to the clause subject, as in <i lang="ain-Latn">si-ram</i>
+		'one's own heart' <Ref k="bugaeva2025" p="§3.1.2" />; <Ref k="nakagawa2024" p="188–189" />;
 		<Ref k="bugaevakobayashi2022" p="§4.2.2" />.
 	</p>
 	<p>
@@ -127,7 +131,7 @@
 
 	<Ex
 		m="sunku anakne peka ta si-pusu wa mom pe ne"
-		g="Ezo.pine TOP surface LOC REFL-float.up CONJ flow NMLZ COP"
+		g="Ezo.pine TOP surface LOC ANTIC-float.up CONJ flow NMLZ COP"
 		tr="The Ezo pine floats up to the water surface and flows along by itself."
 		cite="sato2007"
 		dial="CHI"
@@ -137,7 +141,7 @@
 
 	<Ex
 		m="i=nukar rok pe si-etaye wa isam"
-		g="4.O=see PRF NMLZ REFL-withdraw CONJ not.exist"
+		g="4.O=see PRF NMLZ AUTOC-withdraw CONJ not.exist"
 		tr="The thing that had caught sight of me withdrew and was gone."
 		cite="ilcaa1976"
 		dial="SHI"
@@ -199,7 +203,7 @@
 		cite="sato2007"
 		dial="CHI"
 		place="Satō ex. 6 (approx. p. 36)"
-		note="ko- is the applicative referencing what the subject ostensibly does not know; si- contributes the indirect-reflexive reading; -ka is the direct-causative suffix. Together si-ranpewtek-ka yields the pretend-to reading. The final k=an is a contracted progressive existential (kor an)."
+		note="ko- is the applicative referencing what the subject ostensibly does not know; si- fills the object slot of the causativized stem with a subject-coreferent 'self', hence REFL; -ka is the direct-causative suffix. Together si-ranpewtek-ka yields the pretend-to reading. The final k=an is a contracted progressive existential (kor an)."
 	/>
 
 	<p>
@@ -226,7 +230,7 @@
 		g="REFL-REFL-stretch-CAUS=4.S"
 		tr="I lay down, stretching myself out."
 		constructed
-		note="The verb form yay-si-turi-re is attested in Nakagawa (2024: 189) to demonstrate the yay-outer / si-inner ordering; the surrounding clause is constructed. The fourth-person S suffix =an confirms that si-turi-re is intransitive."
+		note="The verb form yay-si-turi-re is attested in Nakagawa (2024: 189) to demonstrate the yay-outer / si-inner ordering; the surrounding clause is constructed. The fourth-person S suffix =an confirms that si-turi-re is intransitive. Both prefixes keep the reflexive gloss: an autocausative reading of the inner si- is conceivable but not asserted by Nakagawa's analysis."
 	/>
 
 	<p>

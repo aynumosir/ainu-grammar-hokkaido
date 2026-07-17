@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 164 works cited across the grammar into a single
+		This chapter gathers the 165 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -22,6 +22,7 @@
 	<p class="bib-entry">Biratori Town Ainu oral-literature archive 平取町アイヌ口承文芸 (1969). <i lang="ja">平取町アイヌ口承文芸</i>. [Biratori Town Ainu oral literature].</p>
 	<p class="bib-entry">Bugaeva, Anna (2008). <i>Reported discourse and logophoricity in Southern Hokkaido dialects of Ainu</i>. Gengo Kenkyū 133. 31–75.</p>
 	<p class="bib-entry">Bugaeva, Anna (2012). <i>Southern Hokkaido Ainu</i>. The languages of Japan and Korea. Ed. Nicolas Tranter. 461–509. London: Routledge.</p>
+	<p class="bib-entry">Bugaeva, Anna (2015). <i>Relative clauses and noun complements in Ainu</i>. Bugaeva, Anna &amp; Iku Nagasaki (eds.), アイヌ語研究の諸問題. Sapporo: Hokkaido Shuppan Kikaku Center.</p>
 	<p class="bib-entry">Bugaeva, Anna ブガエワ・アンナ (2014). <i lang="ja">アイヌ語使役構文に関する再考察</i>. [A reconsideration of the causative construction in Ainu].</p>
 	<p class="bib-entry">Bugaeva, Anna, Shiho Endō &amp; Shirō Akasegawa (2015). <i>A topical dictionary of conversational Ainu</i>.</p>
 	<p class="bib-entry">Chiba University Ainu Language Research Project 千葉大学 (eds.) (2015). <i lang="ja">千葉大学アイヌ語資料集</i>. [Chiba University Ainu language materials collection].</p>

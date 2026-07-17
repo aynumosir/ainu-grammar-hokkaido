@@ -107,7 +107,7 @@
 		cross-referencing: <i lang="ain-Latn">a=en=montapire</i> 'the indefinite agent informed me as
 		object' <Ref k="nakagawa2024" p="190" />. This restriction distinguishes
 		<i lang="ain-Latn">ci-</i> sharply from the reflexive
-		<A w="yay-" gl="reflexive (direct)" /> and the antipassive
+		<A w="yay-" gl="REFL" /> and the antipassive
 		<A w="i-" gl="antipassive" />, which are available across persons.
 	</p>
 
@@ -175,7 +175,7 @@
 
 <S t="Anticausative semantics and the si- overlap" id="anticausative-si">
 	<p>
-		The reflexive prefix <A w="si-" gl="reflexive (indirect)" /> covers a semantic domain that
+		The reflexive prefix <A w="si-" gl="AUTOC/ANTIC/REFL" /> covers a semantic domain that
 		overlaps partially with the middle. Under Satō's analysis, adopted by Nakagawa and the Handbook,
 		<i lang="ain-Latn">si-</i> marks the subject's indirect involvement — through another agent,
 		through circumstance, or through a force outside the subject's direct control <Ref
@@ -207,15 +207,16 @@
 	</p>
 
 	<p>
-		Bugaeva's diachronic study of anticausatives in Ainu traces the historical pathways by which
-		transitive and causative verbs acquire intransitive partners via <i lang="ain-Latn">ci-</i>,
-		<i lang="ain-Latn">si-</i>, and related morphology, setting them within the cross-linguistic
-		typology of inchoative-causative alternations <Ref k="bugaeva2025" />. The inchoative-causative
-		interface — where a stem such as <A w="rewke" gl="become soft" /> /
-		<A w="rewe" gl="soften something" /> pairs a spontaneous intransitive with a transitive — is
-		treated in <Xr ch="transitivizer-ka-valency-pairs" />; the voice interpretation of
-		<i lang="ain-Latn">ci-</i> and <i lang="ain-Latn">si-</i> in such pairs is among the questions
-		that diachronic account addresses ‹corpus-suggested›.
+		Bugaeva's diachronic study of anticausatives in Ainu concentrates on two markers:
+		the primary anticausative / intransitivizing suffix <i lang="ain-Latn">-ke</i>, and
+		<i lang="ain-Latn">si-</i>, whose path is REFLEXIVE &gt; AUTOCAUSATIVE &gt;
+		ANTICAUSATIVE <Ref k="bugaeva2025" p="§1.2, §3.1.2, §5" />. The inchoative-causative
+		interface — where a stem such as <A w="rewke" gl="be bent" /> /
+		<A w="rewe" gl="bend something" /> pairs a spontaneous intransitive with a transitive — is
+		treated in <Xr ch="transitivizer-ka-valency-pairs" />. The prefix
+		<i lang="ain-Latn">ci-</i> is therefore best kept as a separate MID/RES resultative prefix:
+		it suppresses an agent and profiles an affected result, but it is not the same historical
+		problem as Bugaeva's <i lang="ain-Latn">si-</i> anticausative path.
 	</p>
 </S>
 
