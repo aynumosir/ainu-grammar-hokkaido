@@ -439,7 +439,10 @@
 				</tr>
 				<tr>
 					<td><i lang="ain-Latn">tum</i></td>
-					<td><i lang="ain-Latn">tumuke(he)</i></td>
+					<td>
+						<i lang="ain-Latn">tumuke(he)</i>; contracted
+						<i lang="ain-Latn">tumke</i> ‹corpus-confirmed›
+					</td>
 					<td>inside a homogeneous mass</td>
 					<td>1</td>
 				</tr>
@@ -511,7 +514,7 @@
 			cite="nakagawa2024:239"
 			dial="CHI"
 			place="Nakagawa ex. 278"
-			note="The long form kasi (< ka-si-ke[-he]) of Type-1 locative ka heads the clause alone; the basic form *ka could not appear here without a preceding antecedent NP. The fourth-person suffix =an carries narrative-first-person reference."
+			note="The long form kasi (ka + -si, extendable to kasike(he)) of Type-1 locative ka heads the clause alone; the basic form *ka could not appear here without a preceding antecedent NP. The fourth-person suffix =an carries narrative-first-person reference."
 		/>
 
 		<Ex

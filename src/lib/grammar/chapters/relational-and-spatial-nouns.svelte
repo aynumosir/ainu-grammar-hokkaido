@@ -36,14 +36,19 @@
 
 <S t="Inventory and semantics" id="inventory">
 	<p>
-		The table below lists the core members with their concept form, possessed (affiliative)
-		form, spatial meaning, and a representative construction. The affiliative forms of
-		<i lang="ain-Latn">or</i> and <i lang="ain-Latn">ka</i> are directly attested in the
-		sources cited; those of <i lang="ain-Latn">tum</i>, <i lang="ain-Latn">etok</i>,
-		<i lang="ain-Latn">os</i>, and <i lang="ain-Latn">so</i> follow the regular
-		consonant-final suffix pattern but are inferred rather than directly verified in
-		the sources consulted, and should be treated as ‹speculative› pending a dedicated pass
-		through Tamura's dictionary and the Nakagawa corpus texts.
+		The table below lists the core members with their concept form, possessed (long)
+		form, spatial meaning, and a representative construction. Possessed forms follow the
+		locative-noun long-form system — the lexically specified suffixes
+		<i lang="ain-Latn">-ke</i>, <i lang="ain-Latn">-V</i>, and <i lang="ain-Latn">-si</i>
+		(§ below) — rather than the common-noun affiliative pattern
+		<Ref k="nakagawa2024" p="226, 241–246" />. Nakagawa gives the long forms of
+		<i lang="ain-Latn">or</i>, <i lang="ain-Latn">ka</i>, <i lang="ain-Latn">enka</i>,
+		<i lang="ain-Latn">sam</i>, <i lang="ain-Latn">tum</i>, and
+		<i lang="ain-Latn">corpok</i> directly; <i lang="ain-Latn">samake</i> and the
+		contracted <i lang="ain-Latn">tumke</i> are also frequent in corpus text
+		‹corpus-confirmed›. The forms given for <i lang="ain-Latn">os</i>,
+		<i lang="ain-Latn">pok</i>, and <i lang="ain-Latn">kotor</i> are not directly
+		verified in the sources consulted ‹speculative›.
 		<Ref k="nakagawa2024" p="241, 296–299" />; <Ref k="tamura1996" p="s.v. or, ka, sam, tum, corpok, soy, kotor" />;
 		<Ref k="sato2021" />
 	</p>
@@ -52,7 +57,7 @@
 		<thead>
 			<tr>
 				<th>concept form</th>
-				<th>affiliative form</th>
+				<th>possessed / long form</th>
 				<th>spatial relation</th>
 				<th>canonical construction</th>
 			</tr>
@@ -60,7 +65,7 @@
 		<tbody>
 			<tr>
 				<td><i lang="ain-Latn">or</i></td>
-				<td><i lang="ain-Latn">oro</i></td>
+				<td><i lang="ain-Latn">oro</i>; <i lang="ain-Latn">orke(he)</i></td>
 				<td>'place/locus of X'</td>
 				<td>
 					<i lang="ain-Latn">cise or ta</i> → <i lang="ain-Latn">cise otta</i>
@@ -69,7 +74,7 @@
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">ka</i></td>
-				<td><i lang="ain-Latn">kasi</i></td>
+				<td><i lang="ain-Latn">kasi(ke)(he)</i>; contracted <i lang="ain-Latn">kaske</i></td>
 				<td>'top/surface of X, above X'</td>
 				<td>
 					<i lang="ain-Latn">ni ka ta</i> 'on/onto the tree';
@@ -78,37 +83,46 @@
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">enka</i></td>
-				<td><i lang="ain-Latn">enkasi</i></td>
+				<td><i lang="ain-Latn">enkasi(ke)(he)</i></td>
 				<td>'above X, over X' (vertical distance)</td>
 				<td><i lang="ain-Latn">nupuri enka ta</i> 'above the mountain'</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">sam</i></td>
-				<td><i lang="ain-Latn">sami</i></td>
+				<td><i lang="ain-Latn">samake(he)</i></td>
 				<td>'side of X, beside X'</td>
-				<td><i lang="ain-Latn">cise sam ta</i> 'beside the house'</td>
+				<td>
+					<i lang="ain-Latn">cise sam ta</i> 'beside the house';
+					<i lang="ain-Latn">e=samake ta</i> 'beside you'
+				</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">tum</i></td>
-				<td><i lang="ain-Latn">tumi</i> ‹speculative›</td>
+				<td>
+					<i lang="ain-Latn">tumuke(he)</i>; contracted
+					<i lang="ain-Latn">tumke</i> ‹corpus-confirmed›
+				</td>
 				<td>'interior of X, amid X'</td>
-				<td><i lang="ain-Latn">utar tum ta</i> 'among the people'</td>
+				<td>
+					<i lang="ain-Latn">utar tum ta</i> 'among the people';
+					<i lang="ain-Latn">aynu tumke wa</i> 'from among the Ainu'
+				</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">corpok</i></td>
-				<td><i lang="ain-Latn">corpoki</i></td>
+				<td><i lang="ain-Latn">corpok(i)ke(he)</i></td>
 				<td>'underside of X, below/beneath X'</td>
 				<td><i lang="ain-Latn">cise corpok ta</i> 'below the house'</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">pok</i></td>
-				<td><i lang="ain-Latn">poki</i></td>
+				<td><i lang="ain-Latn">poki</i> ‹speculative›</td>
 				<td>'bottom/underside of X'</td>
 				<td><i lang="ain-Latn">sehpok ta</i> 'beneath the bed'</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">etok</i></td>
-				<td><i lang="ain-Latn">etoki</i> ‹speculative›</td>
+				<td><i lang="ain-Latn">etoko(ho)</i></td>
 				<td>'front/ahead of X'</td>
 				<td><i lang="ain-Latn">cise etok ta</i> 'in front of the house'</td>
 			</tr>
@@ -129,7 +143,7 @@
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">soy</i></td>
-				<td><i lang="ain-Latn">soyo</i> ‹speculative›</td>
+				<td>— (Type-2: the basic form stands alone)</td>
 				<td>'exterior/outside of X'</td>
 				<td><i lang="ain-Latn">cise soy ta</i> 'outside the house'</td>
 			</tr>
@@ -168,6 +182,63 @@
 		class that does not require a 〈場所〉 host
 		<Ref k="nakagawa2024" p="280–282" />; <Ref k="sato2008" p="34–36" />. This dual
 		membership is a structural fact at the heart of the noun-vs-adposition debate in §8.
+	</p>
+</S>
+
+<S t="The long-form suffixes -ke, -V, and -si" id="long-forms">
+	<p>
+		The possessed forms in the table are built with a small suffix set —
+		<i lang="ain-Latn">-ke</i>, an echo or fixed vowel (<i lang="ain-Latn">-V</i>), and
+		<i lang="ain-Latn">-si</i> — that is lexically specified per noun: Nakagawa's
+		<em>long form</em> (長形) of the locative noun
+		<Ref k="nakagawa2024" p="241–246" />. The system is separate from the common-noun
+		affiliative suffixes, and Nakagawa hypothesises that one layer of common-noun
+		possessive morphology was borrowed from it <Ref k="nakagawa2024" p="226, 247" />
+		‹speculative›. <i lang="ain-Latn">-ke</i> is the most frequent member, and several
+		nouns combine two layers: <i lang="ain-Latn">kasi</i>
+		(<i lang="ain-Latn">ka</i> + <i lang="ain-Latn">-si</i>) is further extendable to
+		<i lang="ain-Latn">kasike(he)</i>.
+	</p>
+	<p>
+		Consonant-final bases insert an echo vowel before <i lang="ain-Latn">-ke</i>:
+		<i lang="ain-Latn">sam-a-ke</i>, <i lang="ain-Latn">tum-u-ke</i>. The contracted
+		shapes without the echo vowel are frequent in text —
+		<i lang="ain-Latn">tumke</i> is much commoner in the corpus than
+		<i lang="ain-Latn">tumuke</i> (<i lang="ain-Latn">aynu tumke wa</i> 'from among
+		the Ainu', <i lang="ain-Latn">amam tumke ta</i> 'among the grain'), and
+		<i lang="ain-Latn">kaske</i> stands beside <i lang="ain-Latn">kasike</i>
+		‹corpus-confirmed›.
+	</p>
+	<p>
+		Three grammatical properties ride on the long form
+		<Ref k="nakagawa2024" p="241–246" />. It can head a noun phrase alone, which the
+		Type-1 basic form cannot; it is the form that carries the objective person prefixes
+		(<i lang="ain-Latn">e=samake ta</i> 'beside you'); and it accepts the further
+		possessive extension <i lang="ain-Latn">-he</i>
+		(<i lang="ain-Latn">samakehe</i>). In running text the long form appears almost
+		always in the layered locative frame, followed by a case particle:
+		<i lang="ain-Latn">X samake ta</i>, <i lang="ain-Latn">X tumke ta/wa</i>, and
+		temporal <i lang="ain-Latn">okake ta</i> 'after that, afterwards', a high-frequency
+		narrative connective ‹corpus-confirmed›.
+	</p>
+
+	<Ex
+		m="e=samake ta an"
+		g="2SG.O=beside LOC exist"
+		tr="It is beside you."
+		cite="kanazawa1898"
+		dial="SAR" />
+
+	<p>
+		This locational <i lang="ain-Latn">-ke</i> is homophonous with two verbal suffixes —
+		the anticausative <i lang="ain-Latn">-ke</i> and the transitivizing
+		<i lang="ain-Latn">-ke</i> of the lexical valency pairs
+		(<Xr ch="transitivizer-ka-valency-pairs" />) — but distinct from both: it attaches
+		only to the closed locative-noun class and yields a noun, never a verb. A further
+		homograph is the additive adverb <i lang="ain-Latn">orke</i> '(of) both', which
+		coincides in shape with the long form <i lang="ain-Latn">orke(he)</i> of
+		<i lang="ain-Latn">or</i>; corpus tokens of <i lang="ain-Latn">orke</i> mix the two
+		and have to be sorted contextually ‹corpus-suggested›.
 	</p>
 </S>
 
