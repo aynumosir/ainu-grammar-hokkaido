@@ -134,8 +134,8 @@
 			</tr>
 			<tr>
 				<td>/r/ + /r/ (dissimilation)</td>
-				<td>nn</td>
-				<td>[nn]</td>
+				<td>n</td>
+				<td>[n]</td>
 				<td>
 					<i lang="ain-Latn">ku=kor rusuy</i> → <i lang="ain-Latn">kukon rusuy</i>
 				</td>
@@ -210,7 +210,7 @@
 				</tr>
 				<tr>
 					<td>/ku=kor rusuy/</td>
-					<td>/r/ + /r/ → [nn] (dissim.)</td>
+					<td>/r/ + /r/ → [n] (dissim.)</td>
 					<td>[kukonrusuy]</td>
 					<td>'I want it'</td>
 					<td>word</td>

@@ -407,6 +407,12 @@
 	</p>
 
 	<table>
+		<caption>
+			Weakening across the person-prefix boundary. The
+			<i lang="ain-Latn">ku=inkar</i> row is Nakagawa's published example of the blocking
+			<Ref k="nakagawa2024" p="53" />; the <i lang="ain-Latn">ku=ikra</i> rows apply the
+			same rule to another attested stem.
+		</caption>
 		<thead>
 			<tr>
 				<th>prefix</th>
@@ -423,6 +429,13 @@
 				<td>open: /i/ (V)</td>
 				<td><i lang="ain-Latn">ku=ype</i> [kúy.pe]</td>
 				<td>CVC.CV — licit</td>
+			</tr>
+			<tr>
+				<td><i lang="ain-Latn">ku=</i></td>
+				<td><i lang="ain-Latn">inkar</i> 'look'</td>
+				<td>closed: /in/ (VC)</td>
+				<td><i lang="ain-Latn">ku=inkar</i> [ku.ín.kar]</td>
+				<td>CV.VC.CVC — licit</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">ku=</i></td>
@@ -455,13 +468,16 @@
 
 <S t="Loanword syllable adaptation" id="loanwords">
 	<p>
-		Japanese and Russian loanwords that contain consonant clusters or CVVC structures are
-		adapted to fit the (C)V(C) template by vowel epenthesis. The epenthetic segment is
-		typically /o/ or a copy of the nearest adjacent vowel
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-11) ‹corpus-suggested›. The Russian
-		borrowing <i lang="ain-Latn">potoloko</i> (← Rus. потолок 'ceiling') illustrates the
-		repair of a word-final CC cluster (/lk/) and a word-initial CC onset (/pt/), both
-		broken up by the epenthetic /o/. A hypothetical English loanword like
+		Loanwords that contain consonant clusters or CVVC structures are adapted to fit the
+		(C)V(C) template by vowel epenthesis. The epenthetic segment is typically /o/ or a copy
+		of the nearest adjacent vowel
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-11) ‹corpus-suggested›. In Hokkaido
+		the donor language is Japanese; Russian borrowings belong to the Sakhalin varieties, so
+		the clearest illustration of the repair comes from there ‹SA›:
+		<i lang="ain-Latn">potoloko</i> (← Rus. потолок 'ceiling') breaks up both a
+		word-initial CC onset (/pt/) and a word-final CC cluster (/lk/) with epenthetic /o/.
+		Its single corpus attestation is Sakhalin, in Sentoku Tarōji's letters —
+		<i lang="ain-Latn">keta potoloko kasiketa okay=ahci</i> ‹corpus-confirmed›. A hypothetical English loanword like
 		<i lang="ain-Latn">Christmas</i> would enter as something like
 		<i lang="ain-Latn">kurisumas</i>, with each cluster split by an inserted vowel
 		<Ref k="nakagawa2024" p="42" />.
@@ -470,8 +486,9 @@
 	<p>
 		The identity of the epenthetic vowel is not always /o/: a copy of the adjacent vowel
 		also occurs, and the choice may reflect the phonological neighborhood rather than a
-		single underlying default. Historical loan adaptation from Russian and Japanese into Ainu
-		across contact periods shows the (C)V(C) template operating as a consistent filter,
-		with epenthesis as the principal repair strategy ‹corpus-suggested›.
+		single underlying default. Loan adaptation across contact periods — Japanese into
+		Hokkaido Ainu, Russian into the Sakhalin varieties — shows the (C)V(C) template
+		operating as a consistent filter, with epenthesis as the principal repair strategy
+		‹corpus-suggested›.
 	</p>
 </S>

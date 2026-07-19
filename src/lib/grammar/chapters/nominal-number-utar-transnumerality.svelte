@@ -156,10 +156,13 @@
 		The discrepancy most likely reflects dialect variation rather than a uniform pan-Hokkaido
 		norm: the animacy restriction appears stronger in eastern and classical-norm speech,
 		while Saru extends <i lang="ain-Latn">utar</i> to inanimates within the animist
-		conceptual frame. That the textbook illustrations
-		<i lang="ain-Latn">suma utar</i> and <i lang="ain-Latn">ni utar</i> themselves are
-		constructed forms without corpus attestation (corpus search: 0 hits) underlines
-		that neither side of this debate rests on a large attested base ‹contested›.
+		conceptual frame. The two textbook illustrations do not fare alike in the corpus:
+		<i lang="ain-Latn">suma utar</i> 'stones' does not occur, but
+		<i lang="ain-Latn">ni utar</i> 'trees' does, in a Saru/Chitose prose report —
+		<i lang="ain-Latn">nítay or ta ni utar ka poronno a=momka</i> 'in the forest many
+		trees too were swept away'. The inanimate extension therefore has attested support,
+		thin though it is: two occurrences against none for the stone example
+		‹corpus-confirmed›.
 	</p>
 
 	<Ex
