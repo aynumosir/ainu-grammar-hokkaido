@@ -14,9 +14,16 @@
  *             cell holds several forms maps them left-to-right onto the count
  *             columns. Ratio columns are recomputed from the refreshed counts.
  *
+ * A figure ATTRIBUTED to a source — a table whose caption cites one, or a
+ * sentence carrying a <Ref> — measures that author's corpus, not ours. Those
+ * are never rewritten: replacing them would put our numbers under someone
+ * else's name. They are reported with what our corpus says, for comparison.
+ *
  * Percentages, shares and derived rates are NOT touched: they are not raw
  * frequencies and cannot be recovered from the frequency endpoint. Multi-word
- * phrases are reported, never rewritten — the endpoint counts single tokens.
+ * forms are counted as n-grams over the positional token layer, so a phrase
+ * such as `ruwe ne` is checked like any single token — but it carries no rank,
+ * because the corpus holds no ranked inventory of n-grams.
  *
  * Report → .grammar-build/qa/corpus-figures.json
  */
@@ -28,6 +35,7 @@ const ROOT = join(import.meta.dir, '..');
 const CHAPTER_DIR = join(ROOT, 'src/lib/grammar/chapters');
 const REPORT_PATH = join(ROOT, '.grammar-build/qa/corpus-figures.json');
 const ENDPOINT = 'https://corpus.aynu.org/v1/freq/word?token=';
+const NGRAM_ENDPOINT = 'https://corpus.aynu.org/v1/freq/ngram?tokens=';
 
 const WRITE = process.argv.includes('--write');
 const CONCURRENCY = 6;
@@ -48,7 +56,7 @@ interface Figure {
 	actual?: number;
 	actualRank?: number | null;
 	drift?: number;
-	status: 'match' | 'stale' | 'unresolved' | 'skipped';
+	status: 'match' | 'stale' | 'unresolved' | 'skipped' | 'attributed';
 	reason?: string;
 }
 
@@ -62,9 +70,13 @@ const normalise = (form: string) =>
 const cache = new Map<string, { count: number; rank: number | null; found: boolean }>();
 async function lookup(token: string) {
 	if (cache.has(token)) return cache.get(token)!;
-	const res = await fetch(ENDPOINT + encodeURIComponent(token));
+	// Multi-word forms are n-grams: the token-frequency table only holds single
+	// tokens, so a phrase is counted from the positional token layer instead.
+	const phrase = /\s/.test(token);
+	const url = phrase ? NGRAM_ENDPOINT + encodeURIComponent(token) : ENDPOINT + encodeURIComponent(token);
+	const res = await fetch(url);
 	const body = (await res.json()) as { data?: { found: boolean; count: number | null; rank: number | null } };
-	const value = { count: body.data?.count ?? 0, rank: body.data?.rank ?? null, found: Boolean(body.data?.found) };
+	const value = { count: body.data?.count ?? 0, rank: phrase ? null : (body.data?.rank ?? null), found: Boolean(body.data?.found) };
 	cache.set(token, value);
 	return value;
 }
@@ -114,8 +126,20 @@ function extract(chapter: string, src: string): Pending[] {
 		if (/<\/?(td|p|tr|li)\b|<Ref\b|\.\s/.test(gap)) { record('unresolved', 'form and figure are separated by a cell, sentence or citation boundary'); continue; }
 		if (/^[-=]|[-=]$/.test(form)) { record('skipped', 'bound morpheme — token frequency counts free tokens, not affix occurrences'); continue; }
 		const token = normalise(form);
-		if (/\s/.test(token)) { record('skipped', 'multi-word phrase — the frequency endpoint counts single tokens'); continue; }
 
+		// Attribution guard: if the sentence carrying this figure cites a source,
+		// the number is that source's measurement.
+		const sentStart = Math.max(
+			src.lastIndexOf('<p>', at),
+			src.lastIndexOf('. ', at),
+			src.lastIndexOf('<td>', at),
+		);
+		const afterEnds = [src.indexOf('. ', at), src.indexOf('</p>', at), src.indexOf('</td>', at)].filter((i) => i > 0);
+		const sentEnd = afterEnds.length ? Math.min(...afterEnds) : Math.min(src.length, at + 400);
+		if (/<Ref\b/.test(src.slice(Math.max(0, sentStart), sentEnd))) {
+			record('attributed', 'figure is cited to a source — it measures that corpus, not ours');
+			continue;
+		}
 		const lead = src.slice(Math.max(0, at - 60), at);
 		const hedged = /\b(roughly|approximately|about|around|some|nearly|over|under|~)\s*$/i.test(lead.trimEnd() + ' ');
 		if (hedged && /00$/.test(m[1].replace(/,/g, ''))) {
@@ -129,7 +153,7 @@ function extract(chapter: string, src: string): Pending[] {
 				// Anchor both edits: a plain string replace would find the rank's digits
 				// inside the freshly written count (6,362 contains "36").
 				let replacement = whole.replace(/^[0-9][0-9,]*/, fmt(actual, m[1]));
-				if (m[2] && actualRank != null) {
+				if (m[2] && actualRank != null && !/\s/.test(token)) {
 					replacement = replacement.replace(/(rank\s*)[0-9][0-9,]*/, (_, lead: string) => lead + fmt(actualRank, m[2]!));
 				}
 				const idx = text.indexOf(whole, Math.max(0, at - 200));
@@ -144,6 +168,8 @@ function extract(chapter: string, src: string): Pending[] {
 		const headers = [...block.matchAll(/<th>([\s\S]*?)<\/th>/g)].map((h) => strip(h[1]));
 		const countCols = headers.map((h, i) => (COUNT_HEADERS.test(h) ? i : -1)).filter((i) => i >= 0);
 		if (!countCols.length) continue;
+		const caption = block.match(/<caption>([\s\S]*?)<\/caption>/)?.[1] ?? '';
+		const attributedTable = /<Ref\b/.test(caption);
 		const ratioCols = headers.map((h, i) => (RATIO_HEADERS.test(h) ? i : -1)).filter((i) => i >= 0);
 
 		for (const row of block.matchAll(/<tr>(?![\s\S]*?<th>)([\s\S]*?)<\/tr>/g)) {
@@ -167,12 +193,16 @@ function extract(chapter: string, src: string): Pending[] {
 				const raw = strip(cell[1]);
 				if (!/^[0-9][0-9,]*$/.test(raw)) return;
 				const token = normalise(forms[i]);
-				if (/\s/.test(token) || /^[-=]|[-=]$/.test(forms[i])) {
-					out.push({ chapter, line: rowLine, form: forms[i], token, kind: 'table', stated: num(raw), statedRank: null, status: 'skipped', reason: /\s/.test(token) ? 'multi-word phrase — the frequency endpoint counts single tokens' : 'bound morpheme — token frequency counts free tokens' });
+				if (/^[-=]|[-=]$/.test(forms[i])) {
+					out.push({ chapter, line: rowLine, form: forms[i], token, kind: 'table', stated: num(raw), statedRank: null, status: 'skipped', reason: 'bound morpheme — token frequency counts free tokens' });
 					return;
 				}
 				// The first figure in a row owns the rewrite for the whole row, so that
 				// every refreshed count and any derived ratio land in one edit.
+				if (attributedTable) {
+					out.push({ chapter, line: rowLine, form: forms[i], token, kind: 'table', stated: num(raw), statedRank: null, status: 'attributed', reason: 'table is cited to a source — its figures measure that corpus, not ours' });
+					return;
+				}
 				const owns = !rowClaimed;
 				rowClaimed = true;
 				const fig: Pending = {
@@ -224,7 +254,7 @@ for (const file of chapters) {
 	const pending = extract(chapter, src);
 	if (!pending.length) continue;
 
-	const resolvable = pending.filter((p) => p.status === 'match' && p.token);
+	const resolvable = pending.filter((p) => (p.status === 'match' || p.status === 'attributed') && p.token);
 	let index = 0;
 	await Promise.all(
 		Array.from({ length: Math.min(CONCURRENCY, resolvable.length) }, async () => {
@@ -234,6 +264,12 @@ for (const file of chapters) {
 					const { count, rank, found } = await lookup(fig.token);
 					fig.actual = count;
 					fig.actualRank = rank;
+					// an attributed figure keeps its status: we record what our corpus
+					// says for comparison, but the printed number is not ours to change
+					if (fig.status === 'attributed') {
+						fig.drift = fig.stated ? Math.round(((count - fig.stated) / fig.stated) * 100) : 0;
+						continue;
+					}
 					if (!found) { fig.status = 'unresolved'; fig.reason = 'form not in the corpus'; continue; }
 					fig.drift = fig.stated ? Math.round(((count - fig.stated) / fig.stated) * 100) : 0;
 					const rankStale = fig.statedRank != null && rank != null && fig.statedRank !== rank;
@@ -260,17 +296,19 @@ for (const file of chapters) {
 const stale = figures.filter((f) => f.status === 'stale');
 const unresolved = figures.filter((f) => f.status === 'unresolved');
 const skipped = figures.filter((f) => f.status === 'skipped');
+const attributed = figures.filter((f) => f.status === 'attributed');
 const matched = figures.filter((f) => f.status === 'match');
 
 mkdirSync(dirname(REPORT_PATH), { recursive: true });
-writeFileSync(REPORT_PATH, JSON.stringify({ generated: new Date().toISOString(), counts: { matched: matched.length, stale: stale.length, unresolved: unresolved.length, skipped: skipped.length }, figures }, null, '\t'));
+writeFileSync(REPORT_PATH, JSON.stringify({ generated: new Date().toISOString(), counts: { matched: matched.length, stale: stale.length, unresolved: unresolved.length, skipped: skipped.length, attributed: attributed.length }, figures }, null, '\t'));
 
-console.log(`corpus figures: ${matched.length} current, ${stale.length} stale, ${unresolved.length} unresolved, ${skipped.length} not checkable`);
+console.log(`corpus figures: ${matched.length} current, ${stale.length} stale, ${attributed.length} attributed elsewhere, ${unresolved.length} unresolved, ${skipped.length} not checkable`);
 for (const f of [...stale].sort((a, b) => Math.abs(b.drift ?? 0) - Math.abs(a.drift ?? 0)).slice(0, 20)) {
 	console.log(`  ${WRITE ? 'updated' : 'stale  '} ${f.form.padEnd(16)} ${String(f.stated).padStart(7)} → ${String(f.actual).padStart(7)} (${(f.drift ?? 0) > 0 ? '+' : ''}${f.drift}%)  ${f.chapter}:${f.line}`);
 }
 for (const f of unresolved.slice(0, 10)) console.log(`  unresolved ${f.form.padEnd(16)} ${f.chapter}:${f.line} — ${f.reason}`);
-for (const f of skipped.slice(0, 10)) console.log(`  phrase     ${f.form.padEnd(16)} ${f.chapter}:${f.line} — ${f.reason}`);
+for (const f of skipped.slice(0, 10)) console.log(`  skipped    ${f.form.padEnd(16)} ${f.chapter}:${f.line} — ${f.reason}`);
+for (const f of attributed.slice(0, 12)) console.log(`  attributed ${f.form.padEnd(16)} prints ${String(f.stated).padStart(6)}, our corpus has ${String(f.actual ?? '?').padStart(6)}  ${f.chapter}:${f.line}`);
 console.log(`→ ${REPORT_PATH}`);
 
 if (!WRITE && stale.length) {
