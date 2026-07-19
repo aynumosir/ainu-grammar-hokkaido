@@ -113,6 +113,14 @@ correctly.
     raw inline forms must do it by hand.
 11. **Grammar-only boundary** (§1) is respected — no lexicography.
 12. **Foundational-chapter matrices are signed off** before dependents are drafted.
+13. **Every printed form is attested or registered.** Every Ainu form in `<A w>`,
+    `<Ex m>`, and `<i lang="ain-Latn">` must resolve to a corpus token or a
+    morpheme-database entry: run `bun run attest:gen` to (re)build the attestation
+    cache, then `bun run attest`. An unattested form at an `<A>` site is an error
+    (the dictionary link it renders is dead by construction); at `<Ex>`/inline sites
+    it is a warning. Legitimate gaps — Sakhalin/Kuril contrast forms, quoted
+    historical spellings, schematic notation — are registered with their reason in
+    `src/lib/grammar/attestation-exceptions.ts`.
 
 ---
 
