@@ -24,7 +24,7 @@
 	<p>
 		The matrix verbs that take <i lang="ain-Latn">sekor</i> overlap substantially with
 		those that select the indirect-speech markers: <A w="ye" gl="say" />,
-		<A w="itak" gl="speak, say" />, <A w="haweok" gl="speak up" />, and
+		<A w="itak" gl="speak, say" />, <A w="hawean" gl="say (singular subject)" />, and
 		<A w="ramu" gl="think" />. The choice between the quotative and the nominalizing
 		complementizers encodes the direct-vs-indirect distinction and controls the
 		person-marking pattern in the embedded clause

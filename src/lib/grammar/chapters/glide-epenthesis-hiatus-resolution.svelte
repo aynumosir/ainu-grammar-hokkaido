@@ -41,7 +41,8 @@
 		in connected speech, but the [y] between prefix and stem is a nonphonemic transition that
 		standard orthography does not treat as a separate segment <Ref k="nakagawa2024" p="34" />.
 		Likewise <i lang="ain-Latn">uwepeker</i> 'tell each other stories' is phonemically
-		/u-epeker/ (&lt; <A w="u-" gl="RECP" /> + <A w="epeker" gl="tell a story" />), and the [w]
+		/u-epeker/ (&lt; <A w="u-" gl="RECP" /> + <i lang="ain-Latn">epeker</i>, a stem posited by
+		the analysis and not attested as a free word ‹speculative›), and the [w]
 		at the prefix–stem juncture is a transitional sound rather than a grammatically independent
 		consonant.
 	</p>

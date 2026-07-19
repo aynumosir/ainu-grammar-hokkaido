@@ -78,7 +78,8 @@
 		The weather stem <A w="sir" gl="weather" /> combines with stative predicates to form a set
 		of meteorological expressions: <A w="sirpirka" gl="the weather is fine" />,
 		<A w="sirkunne" gl="it is dark, night falls" />,
-		<A w="sirramante" gl="the weather is calm" />, and similar. The corpus count for
+		<A w="sirsesek" gl="the weather is hot" />,
+		<A w="sirmeman" gl="the weather is cool" />, and similar. The corpus count for
 		<i lang="ain-Latn">sirpirka</i> stands at 102 tokens (rank 1,104), confirming its standing
 		as the most frequent member of the set ‹corpus-confirmed›. The cold stem
 		<A w="me" gl="cold" /> functions identically: <i lang="ain-Latn">me-an</i> 'it is cold'
