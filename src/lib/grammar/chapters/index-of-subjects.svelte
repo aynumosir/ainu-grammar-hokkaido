@@ -1135,6 +1135,7 @@
 		<li>The locative noun or and the ⟨place⟩ requirement — <Xr ch="postpositions-local-case-and-motion-events" /></li>
 		<li>The logophoric fourth person in speech reports — <Xr ch="quotative-complementation-sekor" /></li>
 		<li>The logophoricity debate — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
+		<li>The long-form suffixes -ke, -V, and -si — <Xr ch="relational-and-spatial-nouns" /></li>
 		<li>The macro-comparison catalogue — <Xr ch="macro-comparison-and-deep-contact-controversies" /></li>
 		<li>The macro-comparison proposals — <Xr ch="genetic-position-macro-comparison" /></li>
 		<li>The menoko yukar — women's heroic verse — <Xr ch="gendered-register-speech" /></li>

@@ -199,6 +199,7 @@
 		<li><i lang="ain-Latn">e=pirka</i> — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li><i lang="ain-Latn">e=poro</i> — <Xr ch="property-concept-predication" /></li>
 		<li><i lang="ain-Latn">e=ray</i> — <Xr ch="first-second-person-singular-affixes" />, <Xr ch="eci-portmanteau-and-second-plural" /></li>
+		<li><i lang="ain-Latn">e=samake</i> — <Xr ch="relational-and-spatial-nouns" /></li>
 		<li><i lang="ain-Latn">e=sini</i> — <Xr ch="deontic-necessity" /></li>
 		<li><i lang="ain-Latn">e=sinki</i> — <Xr ch="deontic-necessity" /></li>
 		<li><i lang="ain-Latn">e=sus</i> — <Xr ch="abilitative-easkay-eaykap" /></li>

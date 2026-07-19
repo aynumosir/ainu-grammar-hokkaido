@@ -6,7 +6,7 @@
 	<p>
 		This index lists every source from which an interlinear example is drawn, with the chapters
 		in which its examples appear and the number of examples taken from it. It is generated from the
-		909 attested and constructed examples across the grammar; constructed examples are
+		910 attested and constructed examples across the grammar; constructed examples are
 		attributed to the source whose analysis they illustrate. Full bibliographic details are in
 		<Xr ch="consolidated-references-bibliography" />.
 	</p>
@@ -35,7 +35,7 @@
 			<tr><td>Hokkaidō Utari Kyōkai (1994)</td><td>18</td><td><Xr ch="alienable-inalienable-split" />, <Xr ch="concept-form-affiliative-form" />, <Xr ch="affiliative-suffix-morphophonology" />, <Xr ch="adnominal-possession-double-marking" />, <Xr ch="external-possession-possessor-raising" />, <Xr ch="independent-personal-pronouns" />, <Xr ch="demonstratives-anaphora-definiteness" />, <Xr ch="interrogative-pro-forms" />, <Xr ch="everyday-conversation-text" /></td></tr>
 			<tr><td>Huber (2025)</td><td>5</td><td><Xr ch="affiliative-suffix-morphophonology" />, <Xr ch="kinship-honorific-possession" />, <Xr ch="predicative-possession-clauses" /></td></tr>
 			<tr><td>Ijäs (2023)</td><td>33</td><td><Xr ch="verb-word-template" />, <Xr ch="transitivity-and-valence-classes" />, <Xr ch="light-and-pro-verbs" />, <Xr ch="denominal-deverbal-verb-derivation" />, <Xr ch="adverbializer-no" />, <Xr ch="first-second-person-singular-affixes" />, <Xr ch="first-person-plural-and-clusivity" />, <Xr ch="eci-portmanteau-and-second-plural" />, <Xr ch="object-indexing-monotransitive" />, <Xr ch="indefinite-fourth-person-paradigm" />, <Xr ch="fourth-person-honorific" />, <Xr ch="personal-affix-template-and-ordering" />, <Xr ch="person-number-interactions" />, <Xr ch="alignment-hierarchical-and-the-debate" />, <Xr ch="valency-voice-overview" />, <Xr ch="nominalization-p-pe" />, <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="prenominal-gap-relative-clauses" />, <Xr ch="tam-overview" />, <Xr ch="desiderative-rusuy" />, <Xr ch="abilitative-easkay-eaykap" />, <Xr ch="deontic-necessity" />, <Xr ch="negation-existential-possessive-isam" />, <Xr ch="negation-prohibitive-iteki" />, <Xr ch="clause-linkage-overview" />, <Xr ch="simultaneous-kor-clauses" />, <Xr ch="conditional-temporal-concessive-clauses" /></td></tr>
-			<tr><td>Kanazawa (1898)</td><td>11</td><td><Xr ch="nonverbal-predicate-tam-negation" />, <Xr ch="siri-ne-situational" />, <Xr ch="negation-ability-cognition-predicates" />, <Xr ch="negation-polarity-items-scope" />, <Xr ch="negation-prohibitive-iteki" /></td></tr>
+			<tr><td>Kanazawa (1898)</td><td>12</td><td><Xr ch="relational-and-spatial-nouns" />, <Xr ch="nonverbal-predicate-tam-negation" />, <Xr ch="siri-ne-situational" />, <Xr ch="negation-ability-cognition-predicates" />, <Xr ch="negation-polarity-items-scope" />, <Xr ch="negation-prohibitive-iteki" /></td></tr>
 			<tr><td>Kayano (1996)</td><td>1</td><td><Xr ch="nominalization-p-pe" /></td></tr>
 			<tr><td>Kindaichi &amp; Chiri (1936)</td><td>3</td><td><Xr ch="nominal-number-utar-transnumerality" />, <Xr ch="independent-personal-pronouns" />, <Xr ch="property-concept-predication" /></td></tr>
 			<tr><td>Kobayashi (2025)</td><td>3</td><td><Xr ch="external-possession-possessor-raising" /></td></tr>
@@ -79,7 +79,7 @@
 	<table>
 		<thead><tr><th>Dialect / label</th><th>Examples</th></tr></thead>
 		<tbody>
-			<tr><td>SAR</td><td>429</td></tr>
+			<tr><td>SAR</td><td>430</td></tr>
 			<tr><td>HK</td><td>145</td></tr>
 			<tr><td>CHI</td><td>117</td></tr>
 			<tr><td>SHI</td><td>30</td></tr>
