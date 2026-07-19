@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 165 works cited across the grammar into a single
+		This chapter gathers the 166 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -90,6 +90,7 @@
 	<p class="bib-entry">Yoshikawa Yoshimi 吉川佳見 (2018). <i lang="ja">アイヌ語の助動詞 aan と証拠性</i>. [The auxiliary aan and evidentiality in Ainu]. 北方言語研究 [Northern Language Studies] 8.</p>
 	<p class="bib-entry">Yoshikawa Yoshimi 吉川佳見 (2020). <i lang="ja">アイヌ語における存在型アスペクト形式</i>. [Existential-type aspect forms in Ainu (dissertation)].</p>
 	<p class="bib-entry">Yoshikawa Yoshimi 吉川佳見 (2022). <i>Existential aspectual forms in the Saru and Chitose dialects of Ainu</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
+	<p class="bib-entry">Yu Zhuo 于拙 (2025). <i lang="ja">アイヌ語コーパスの構築およびテキスト分析の研究：形態素の自動解析処理を中心に</i>. [Building an Ainu corpus and analysing its texts: automatic morphological processing].</p>
 </S>
 
 <S t="Sakhalin Ainu" id="sakhalin">
