@@ -28,7 +28,7 @@
 		Plurality may be made explicit by the
 		<Xr ch="formal-defective-nouns">formal noun</Xr>
 		<A w="utar" gl="plural; relatives, people" />, but this addition is strictly optional. In
-		the 209,878-sentence Hokkaido corpus <i lang="ain-Latn">utar</i> records 8,050 tokens
+		the 209,878-sentence Hokkaido corpus <i lang="ain-Latn">utar</i> records 8,051 tokens
 		(rank 30 among distinct types) — high frequency reflecting pragmatic salience, not
 		grammatical compulsion ‹corpus-confirmed›.
 	</p>

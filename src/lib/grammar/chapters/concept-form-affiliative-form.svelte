@@ -336,7 +336,7 @@
 		to 'X's companions/kin', on the grounds that companions belonging to no one are
 		conceptually difficult to realise and the form consistently presupposes a possessor
 		<Ref k="aynucorporadiscord" /> ‹contested›. The corpus count for
-		<i lang="ain-Latn">utari</i> is 1,501 tokens. The analysis extends — rather than
+		<i lang="ain-Latn">utari</i> is 1,502 tokens. The analysis extends — rather than
 		contradicts — Nakagawa's observation that <i lang="ain-Latn">k=utari</i> 'my family'
 		is attested alongside the concept form <Ref k="nakagawa2024" p="251–252" />; the
 		semantic narrowing under affiliation is the community's addition.

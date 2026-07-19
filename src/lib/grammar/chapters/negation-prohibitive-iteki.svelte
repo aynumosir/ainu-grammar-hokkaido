@@ -10,7 +10,7 @@
 		<i lang="ain-Latn">iteki</i> and its dialect counterparts as <span lang="ja">禁止の語句</span>
 		‘prohibition words’, and Bugaeva glosses the construction as <span class="sc">proh</span> before
 		the verb <Ref k="nakagawa2024" p="424" />; <Ref k="bugaeva2012" p="497" />. In the aligned
-		Hokkaido corpus <i lang="ain-Latn">iteki</i> is the frequent, default form, with 1239 tokens
+		Hokkaido corpus <i lang="ain-Latn">iteki</i> is the frequent, default form, with 1278 tokens
 		‹corpus-confirmed›.
 	</p>
 

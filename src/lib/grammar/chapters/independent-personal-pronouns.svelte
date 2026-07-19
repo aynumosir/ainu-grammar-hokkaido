@@ -233,9 +233,9 @@
 	</table>
 
 	<p>
-		Corpus search returns <i lang="ain-Latn">kani</i> at 502 tokens,
+		Corpus search returns <i lang="ain-Latn">kani</i> at 522 tokens,
 		<i lang="ain-Latn">eani</i> at 716, and <i lang="ain-Latn">asinuma</i> at 668; by contrast,
-		the first-person exclusive plural <i lang="ain-Latn">coka</i> reaches only 39 tokens
+		the first-person exclusive plural <i lang="ain-Latn">coka</i> reaches only 41 tokens
 		‹corpus-confirmed›. The disproportion between singular and plural frequencies matches
 		Nakagawa's description of the plural forms as genuinely marginal
 		<Ref k="nakagawa2024" p="250" />. Clusivity in the first-person plural — exclusive
@@ -399,7 +399,7 @@
 		In oral narrative, the fourth-person pronoun <i lang="ain-Latn">asinuma</i> functions
 		routinely as the first-person narrative self, alternating with or supplementing the verbal
 		index <i lang="ain-Latn">ku=</i>/<i lang="ain-Latn">k=</i>. Corpus evidence places
-		<i lang="ain-Latn">asinuma</i> at 668 tokens, predominantly in Saru narrative texts. The
+		<i lang="ain-Latn">asinuma</i> at 669 tokens, predominantly in Saru narrative texts. The
 		fourth-person pronoun appears in this function with topic-focus particles — the same
 		focus-hosting role described above:
 	</p>

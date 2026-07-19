@@ -286,7 +286,7 @@
 		<p>
 			Geographic vocabulary is among the richest and highest-frequency sub-fields of the native
 			lexicon. The core set includes <A w="kotan" gl="village, settlement" /> (4,210 corpus tokens,
-			rank 56), <A w="pet" gl="river (the area's representative river)" /> (1,344 tokens),
+			rank 56), <A w="pet" gl="river (the area's representative river)" /> (1,353 tokens),
 			<A w="nay" gl="stream, tributary" /> (559 tokens), <A w="to" gl="lake, pond" />,
 			<A w="nupuri" gl="mountain" />, <A w="atuy" gl="sea" />,
 			<A w="sir" gl="land, surface, appearance" />, and
@@ -464,7 +464,7 @@
 				<td><A w="retar" gl="be white" /></td>
 				<td>white</td>
 				<td>dawn brightness; purity</td>
-				<td>261</td>
+				<td>262</td>
 			</tr>
 			<tr>
 				<td><A w="kunne" gl="be black, be dark" /></td>

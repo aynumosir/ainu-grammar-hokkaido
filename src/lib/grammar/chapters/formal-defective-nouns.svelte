@@ -354,7 +354,7 @@
 		<i lang="ain-Latn">Sar un kur</i> 'a Saru person',
 		<i lang="ain-Latn">Iyoci un kur</i> 'a Yoichi person'
 		<Ref k="nakagawa2024" p="234" />. In the Hokkaido corpus
-		<i lang="ain-Latn">kur</i> ranks at position 98 (2,456 tokens), consistent with its dual
+		<i lang="ain-Latn">kur</i> ranks at position 98 (2,461 tokens), consistent with its dual
 		role as agent-denoting nominalizer in narrative and as a class-term head.
 	</p>
 	<p>

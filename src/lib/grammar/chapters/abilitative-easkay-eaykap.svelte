@@ -90,8 +90,8 @@
 	<p>
 		The two highest-frequency members, <A w="easkay" gl="be able to" /> and
 		<A w="eaykap" gl="be unable to" />, together rank among the most frequent modal
-		forms in the corpus (<i lang="ain-Latn">easkay</i> 1,324 tokens, rank 139;
-		<i lang="ain-Latn">eaykap</i> 1,082 tokens, rank 169) ‹corpus-confirmed›. The
+		forms in the corpus (<i lang="ain-Latn">easkay</i> 1,447 tokens, rank 137;
+		<i lang="ain-Latn">eaykap</i> 1,237 tokens, rank 158) ‹corpus-confirmed›. The
 		experiential pair <i lang="ain-Latn">amkir</i> and <i lang="ain-Latn">eramiskari</i>
 		share the same constructional frame and the same lexical-negation pattern; their
 		interaction with the negation system is developed in

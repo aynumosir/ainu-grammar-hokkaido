@@ -181,14 +181,14 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr><td><i lang="ain-Latn">arpa</i> / <i lang="ain-Latn">paye</i> 'go'</td><td>3,074</td><td>2,926</td><td>1.05</td></tr>
-			<tr><td><i lang="ain-Latn">ek</i> / <i lang="ain-Latn">arki</i> 'come'</td><td>4,777</td><td>1,691</td><td>2.83</td></tr>
-			<tr><td><i lang="ain-Latn">an</i> / <i lang="ain-Latn">oka</i> 'exist'</td><td>82,852</td><td>9,455</td><td>8.8</td></tr>
-			<tr><td><i lang="ain-Latn">rayke</i> / <i lang="ain-Latn">ronnu</i> 'kill'</td><td>803</td><td>202</td><td>3.98</td></tr>
-			<tr><td><i lang="ain-Latn">san</i> / <i lang="ain-Latn">sap</i> 'go down'</td><td>1,424</td><td>795</td><td>1.79</td></tr>
-			<tr><td><i lang="ain-Latn">ahun</i> / <i lang="ain-Latn">ahup</i> 'enter'</td><td>1,401</td><td>670</td><td>2.09</td></tr>
-			<tr><td><i lang="ain-Latn">tuye</i> / <i lang="ain-Latn">tuypa</i> 'cut'</td><td>518</td><td>201</td><td>2.58</td></tr>
-			<tr><td><i lang="ain-Latn">hosipi</i> / <i lang="ain-Latn">hosippa</i> 'return'</td><td>1,021</td><td>555</td><td>1.84</td></tr>
+			<tr><td><i lang="ain-Latn">arpa</i> / <i lang="ain-Latn">paye</i> 'go'</td><td>3,167</td><td>3,012</td><td>1.05</td></tr>
+			<tr><td><i lang="ain-Latn">ek</i> / <i lang="ain-Latn">arki</i> 'come'</td><td>5,012</td><td>1,737</td><td>2.89</td></tr>
+			<tr><td><i lang="ain-Latn">an</i> / <i lang="ain-Latn">oka</i> 'exist'</td><td>87,127</td><td>9,640</td><td>9.0</td></tr>
+			<tr><td><i lang="ain-Latn">rayke</i> / <i lang="ain-Latn">ronnu</i> 'kill'</td><td>855</td><td>210</td><td>4.07</td></tr>
+			<tr><td><i lang="ain-Latn">san</i> / <i lang="ain-Latn">sap</i> 'go down'</td><td>1,447</td><td>809</td><td>1.79</td></tr>
+			<tr><td><i lang="ain-Latn">ahun</i> / <i lang="ain-Latn">ahup</i> 'enter'</td><td>1,431</td><td>675</td><td>2.12</td></tr>
+			<tr><td><i lang="ain-Latn">tuye</i> / <i lang="ain-Latn">tuypa</i> 'cut'</td><td>534</td><td>205</td><td>2.60</td></tr>
+			<tr><td><i lang="ain-Latn">hosipi</i> / <i lang="ain-Latn">hosippa</i> 'return'</td><td>1,073</td><td>565</td><td>1.90</td></tr>
 		</tbody>
 	</table>
 </S>

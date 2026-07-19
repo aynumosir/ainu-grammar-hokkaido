@@ -216,7 +216,7 @@
 			The animal loans — <A w="umma" gl="horse" />, <A w="meko" gl="cat" />,
 			<A w="peko" gl="cattle" /> — fill gaps in the Ainu fauna lexicon for mainland
 			domestic species absent from Hokkaido before sustained contact. The corpus shows
-			<A w="umma" gl="horse" /> with 146 tokens (rank 881 in the full vocabulary), making
+			<A w="umma" gl="horse" /> with 146 tokens (rank 882 in the full vocabulary), making
 			it the most frequent Japanese animal loan by a large margin. The administrative items
 			reflect the institutional structure of Wajin–Ainu trade: <A w="tono" gl="lord" />
 			titles the Japanese trade-post supervisor, and <A w="tunci" gl="interpreter" /> names

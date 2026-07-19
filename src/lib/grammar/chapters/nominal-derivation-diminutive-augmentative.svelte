@@ -162,7 +162,7 @@
 		example shows the same stacking in a second dialect, with the focus particle
 		<i lang="ain-Latn">hene</i> 'even' scoping over the entire
 		<i lang="ain-Latn">pon cikappo utar</i> phrase. The high frequency of
-		<i lang="ain-Latn">okkaypo</i> alone — 1,457 tokens, rank 136 in the Hokkaido sub-corpus
+		<i lang="ain-Latn">okkaypo</i> alone — 1,462 tokens, rank 136 in the Hokkaido sub-corpus
 		— confirms that DIM derivatives are a live and frequent nominal class ‹corpus-confirmed›.
 	</p>
 </S>

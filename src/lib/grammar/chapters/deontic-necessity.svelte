@@ -116,7 +116,7 @@
 		shared by <i lang="ain-Latn">nankor</i>, <i lang="ain-Latn">rusuy</i>, and
 		<i lang="ain-Latn">nisa</i>. The frequency of <i lang="ain-Latn">easirki</i> in the
 		Hokkaido corpus is substantially lower than that of <i lang="ain-Latn">nankor</i>
-		(approximately 1977 tokens) ‹corpus-suggested›, consistent with the stronger deontic
+		(approximately 2402 tokens) ‹corpus-suggested›, consistent with the stronger deontic
 		commitment it expresses and its restriction to contexts of genuine obligation.
 	</p>
 </S>

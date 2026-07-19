@@ -80,7 +80,7 @@
 		<A w="sirkunne" gl="it is dark, night falls" />,
 		<A w="sirsesek" gl="the weather is hot" />,
 		<A w="sirmeman" gl="the weather is cool" />, and similar. The corpus count for
-		<i lang="ain-Latn">sirpirka</i> stands at 102 tokens (rank 1,104), confirming its standing
+		<i lang="ain-Latn">sirpirka</i> stands at 147 tokens (rank 873), confirming its standing
 		as the most frequent member of the set ‹corpus-confirmed›. The cold stem
 		<A w="me" gl="cold" /> functions identically: <i lang="ain-Latn">me-an</i> 'it is cold'
 		incorporates <i lang="ain-Latn">me</i> as the subject of the existential

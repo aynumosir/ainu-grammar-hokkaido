@@ -97,7 +97,7 @@
 		In each row the suffix vowel is identical to the stem-final vowel: /a/, /u/, /e/, /o/
 		respectively. Because the short affiliative coincides with the concept form, corpus
 		string-searches cannot separate them; frequency figures for long forms —
-		<i lang="ain-Latn">sapaha</i> 203 tokens <Ref k="nakagawa2024" p="227" /> — are the only
+		<i lang="ain-Latn">sapaha</i> 206 tokens <Ref k="nakagawa2024" p="227" /> — are the only
 		clean affiliative counts for this class.
 	</p>
 
@@ -311,7 +311,7 @@
 			The kinship term <A w="yup" gl="elder brother" /> takes the same ③-1 suffix as body
 			parts, confirming that sub-type membership cuts across semantic domains. The corpus
 			attests <i lang="ain-Latn">yupihi</i> at 759 tokens and
-			<i lang="ain-Latn">sikihi</i> at 132 tokens <Ref k="nakagawa2024" p="228" />.
+			<i lang="ain-Latn">sikihi</i> at 133 tokens <Ref k="nakagawa2024" p="228" />.
 			The affiliatives <i lang="ain-Latn">siri</i> and <i lang="ain-Latn">humi</i> are
 			lexically frozen in their short forms in the evidential construction; the long forms
 			<i lang="ain-Latn">sirihi</i> and <i lang="ain-Latn">humihi</i> appear in the plain

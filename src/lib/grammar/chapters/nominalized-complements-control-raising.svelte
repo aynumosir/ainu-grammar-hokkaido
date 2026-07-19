@@ -347,7 +347,7 @@
 	/>
 
 	<p>
-		The corpus count of <i lang="ain-Latn">kuni</i> is 6,113 tokens (rank 36), a figure that
+		The corpus count of <i lang="ain-Latn">kuni</i> is 6,362 tokens (rank 38), a figure that
 		conflates the complementizer, purposive, and adverbial uses; no per-function count is derivable
 		from word-frequency data alone ‹corpus-suggested›.
 	</p>

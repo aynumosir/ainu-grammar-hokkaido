@@ -218,14 +218,14 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr><td><i lang="ain-Latn">hine</i></td><td>14,368</td><td>neutral clause-chaining</td></tr>
-			<tr><td><i lang="ain-Latn">yakka</i></td><td>7,536</td><td>concession ‘even if’</td></tr>
-			<tr><td><i lang="ain-Latn">sekor</i></td><td>6,991</td><td>quotative</td></tr>
-			<tr><td><i lang="ain-Latn">yakun</i></td><td>4,516</td><td>hypothetical conditional</td></tr>
-			<tr><td><i lang="ain-Latn">akusu</i></td><td>3,861</td><td>sequential discovery</td></tr>
-			<tr><td><i lang="ain-Latn">korka</i></td><td>3,700</td><td>adversative</td></tr>
-			<tr><td><i lang="ain-Latn">hike</i></td><td>3,159</td><td>loose link / adversative</td></tr>
-			<tr><td><i lang="ain-Latn">awa</i></td><td>2,071</td><td>sequential discovery (verse)</td></tr>
+			<tr><td><i lang="ain-Latn">hine</i></td><td>14,431</td><td>neutral clause-chaining</td></tr>
+			<tr><td><i lang="ain-Latn">yakka</i></td><td>8,181</td><td>concession ‘even if’</td></tr>
+			<tr><td><i lang="ain-Latn">sekor</i></td><td>7,563</td><td>quotative</td></tr>
+			<tr><td><i lang="ain-Latn">yakun</i></td><td>4,767</td><td>hypothetical conditional</td></tr>
+			<tr><td><i lang="ain-Latn">korka</i></td><td>4,195</td><td>adversative</td></tr>
+			<tr><td><i lang="ain-Latn">akusu</i></td><td>3,900</td><td>sequential discovery</td></tr>
+			<tr><td><i lang="ain-Latn">hike</i></td><td>3,223</td><td>loose link / adversative</td></tr>
+			<tr><td><i lang="ain-Latn">awa</i></td><td>2,122</td><td>sequential discovery (verse)</td></tr>
 		</tbody>
 	</table>
 </S>
