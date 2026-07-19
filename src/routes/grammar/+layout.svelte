@@ -3,6 +3,7 @@
 	import { parts, appendices, chapterNumber } from '$lib/grammar/toc';
 	import SectionOutline from '$lib/grammar/components/SectionOutline.svelte';
 	import GrammarSearch from '$lib/grammar/components/GrammarSearch.svelte';
+	import FormCard from '$lib/grammar/components/FormCard.svelte';
 	let { children } = $props();
 
 	let current = $derived($page.url.pathname.replace(/^\/grammar\/?/, '').replace(/\/$/, ''));
@@ -54,6 +55,7 @@
 			{@render children()}
 		</main>
 	</div>
+	<FormCard />
 </div>
 
 <style>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import { dictionaryUrl } from '../links';
+	import { showCard, hideCard } from '../form-card.svelte';
 
 	let {
 		w,
@@ -17,7 +18,15 @@
 </script>
 
 <i lang="ain" class="ain"
-	><a href={dictionaryUrl(w)} target="_blank" rel="noopener" title={`Look up ${w} in the dictionary`}
+	><a
+		href={dictionaryUrl(w)}
+		target="_blank"
+		rel="noopener"
+		title={`Look up ${w} in the dictionary`}
+		onmouseenter={(e) => showCard(e.currentTarget, w)}
+		onfocus={(e) => showCard(e.currentTarget, w)}
+		onmouseleave={() => hideCard()}
+		onblur={() => hideCard()}
 		>{#if children}{@render children()}{:else}{w}{/if}</a
 	></i
 >{#if gl}&nbsp;‘{gl}’{/if}

@@ -4,3 +4,4 @@ export { default as Ref } from './Ref.svelte';
 export { default as A } from './A.svelte';
 export { default as Xr } from './Xr.svelte';
 export { default as FreqChart } from './FreqChart.svelte';
+export { default as FormCard } from './FormCard.svelte';
