@@ -13,6 +13,8 @@
 		"lint": "prettier --check . && eslint .",
 		"audit": "bun scripts/audit-chapters.ts",
 		"attest:gen": "bun scripts/gen-attestation.ts",
+		"figures": "bun scripts/refresh-corpus-figures.ts",
+		"figures:write": "bun scripts/refresh-corpus-figures.ts --write",
 		"attest": "bun scripts/audit-attestation.ts"
 	},
 	"devDependencies": {
