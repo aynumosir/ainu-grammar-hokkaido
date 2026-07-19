@@ -234,11 +234,21 @@
 		the anticausative <i lang="ain-Latn">-ke</i> and the transitivizing
 		<i lang="ain-Latn">-ke</i> of the lexical valency pairs
 		(<Xr ch="transitivizer-ka-valency-pairs" />) — but distinct from both: it attaches
-		only to the closed locative-noun class and yields a noun, never a verb. A further
-		homograph is the additive adverb <i lang="ain-Latn">orke</i> '(of) both', which
-		coincides in shape with the long form <i lang="ain-Latn">orke(he)</i> of
-		<i lang="ain-Latn">or</i>; corpus tokens of <i lang="ain-Latn">orke</i> mix the two
-		and have to be sorted contextually ‹corpus-suggested›.
+		only to the closed locative-noun class and yields a noun, never a verb.
+	</p>
+	<p>
+		The string <i lang="ain-Latn">orke</i> carries two readings that have to be sorted
+		contextually, and Tamura's Saru dictionary documents both
+		<Ref k="tamura1996" p="s.v. arikikpa, cikuni, cikosomokur koyaykatanu" />. In
+		<i lang="ain-Latn">suptom orke</i> 'the place around the middle of the trunk' and
+		<i lang="ain-Latn">utar orkehe</i> it is the ordinary long form of
+		<i lang="ain-Latn">or</i>, the same locative formation described above — the
+		<i lang="ain-Latn">-he</i> extension in the second confirms the analysis. In the
+		paired frame <i lang="ain-Latn">N orke … N orke</i> the same string reads additively:
+		<i lang="ain-Latn">anun orke apa orke nep uwehosi arikikpa</i> 'outsiders and kin
+		alike, all of them vie with each other in working hard'. Corpus tokens divide the
+		same way — <i lang="ain-Latn">tu kewtum orke re kewtum orke</i> 'in two hearts, in
+		three hearts' keeps the locative sense under the numerals ‹corpus-confirmed›.
 	</p>
 </S>
 
