@@ -1,0 +1,61 @@
+name: Corpus drift
+
+# The corpus grows, so figures printed against an older snapshot decay and
+# forms can fall out of step with what is actually attested. Both checks query
+# corpus.aynu.org and mdb.aynu.org, which makes them too slow and too dependent
+# on a live service to gate a pull request — they run on a cadence instead and
+# report, so drift surfaces without blocking anyone's branch.
+on:
+  schedule:
+    # Mondays, 03:00 UTC
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+
+      # Token counts printed in the chapters vs the live corpus. Fails when a
+      # figure is stale; figures attributed to a source are never counted here.
+      - name: Corpus figures
+        id: figures
+        continue-on-error: true
+        run: bun run figures
+
+      # Every Ainu form printed in the grammar must be attested in the corpus or
+      # the database, or carry a registered exception.
+      - name: Attestation
+        id: attest
+        continue-on-error: true
+        run: |
+          bun run attest:gen
+          bun run attest
+
+      - name: Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: drift-reports
+          path: .grammar-build/qa/
+          if-no-files-found: warn
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### Corpus drift"
+            echo ""
+            echo "- corpus figures: \`${{ steps.figures.outcome }}\`"
+            echo "- attestation: \`${{ steps.attest.outcome }}\`"
+            echo ""
+            echo "Reports are attached as the \`drift-reports\` artifact."
+            echo "Refresh figures with \`bun run figures:write\`."
+          } >> "$GITHUB_STEP_SUMMARY"
