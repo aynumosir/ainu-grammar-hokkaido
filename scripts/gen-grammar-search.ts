@@ -17,7 +17,7 @@
  * Wired into `bun run build` (see package.json) so the index is always fresh.
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { parts, chapterNumber } from '../src/lib/grammar/toc.ts';
@@ -123,6 +123,8 @@ for (const part of parts) {
 }
 
 const outPath = join(root, 'static/grammar-search.json');
+// static/ holds only generated files, so a fresh checkout has no such directory
+mkdirSync(dirname(outPath), { recursive: true });
 writeFileSync(outPath, JSON.stringify(docs));
 
 const withText = docs.filter((d) => d.text.length > 200).length;
