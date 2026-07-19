@@ -81,7 +81,26 @@
 		explicitly that his <code>=</code> is unrelated to the general-linguistic affix/clitic
 		display convention, and adopted it to keep inflectional person marking apart from
 		derivation and the dictionary headword recoverable <Ref k="nakagawa2024" p="58–60" />.
-		Satō and Ijäs notate the same morphemes with hyphens. Morphologically the set is mixed:
+	</p>
+
+	<p>
+		Readers coming from general linguistics should register the departure: in the Leipzig
+		Glossing Rules <code>=</code> marks a clitic boundary <Ref k="comrie2015" paren />, and
+		this grammar's <code>=</code> makes no such claim. Yu states the point directly, noting
+		that the Ainu equals sign is widely but wrongly assumed to descend from the Leipzig
+		clitic sign <Ref k="yu2025" p="§2.5.1" />:
+	</p>
+
+	<blockquote lang="ja">
+		人称接辞には，一般的な言語のハイフンとは異なり，慣習に従ってイコール「=」で表されることが多く、この表記法は言語学的に接語（clitic）を表す習慣であるイコールサインあるいはダブルハイフンに由来すると考えられることが多いが、実際には中川裕氏により広まった、接語とは無関係に人称接辞とその他派生接辞と区別するためだけの表記法であり、特に接辞と接語の違いを主張したわけではないと指摘されている。ただし実際には接辞か接語かは議論の余地がある。
+	</blockquote>
+
+	<p>
+		The convention is not universal, and part of the field writes against it. Satō notates
+		the same morphemes with hyphens — <i lang="ain-Latn">ku-ye</i>,
+		<i lang="ain-Latn">a-kor</i> <Ref k="sato2009" p="53–54" /> — as does Ijäs's teaching
+		grammar <Ref k="ijas2023" />, and Yu records both practices side by side
+		<Ref k="yu2025" p="§2.5.1" />. Morphologically the set is mixed:
 		at least two members — the intransitive-subject markers <i lang="ain-Latn">=an</i> and
 		<i lang="ain-Latn">=as</i> — show degrees of independence that set them apart from typical
 		inflectional affixes <Ref k="nakagawa2024" p="49, 183" />;

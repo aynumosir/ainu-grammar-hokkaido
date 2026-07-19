@@ -180,6 +180,16 @@ export const bibliography: Record<string, BibEntry> = {
 		place: 'Sapporo',
 		lang: 'ja'
 	},
+	yu2025: {
+		region: 'hokkaido',
+		author: 'Yu Zhuo 于拙',
+		citeAuthor: 'Yu',
+		year: '2025',
+		title: 'アイヌ語コーパスの構築およびテキスト分析の研究：形態素の自動解析処理を中心に',
+		titleTr: 'Building an Ainu corpus and analysing its texts: automatic morphological processing',
+		lang: 'ja',
+		note: 'Doctoral research on Ainu corpus construction; §2.5.1 traces the = person-marker notation to Nakagawa and separates it from the Leipzig clitic sign.'
+	},
 	sato2023a: {
 		region: 'hokkaido',
 		author: 'Satō Tomomi 佐藤知己',

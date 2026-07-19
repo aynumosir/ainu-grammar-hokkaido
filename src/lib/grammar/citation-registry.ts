@@ -66,6 +66,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	tamura2000: { dbSlug: '2000-suzuko-tamura-the-ainu-language', sourceRole: 'prior-analysis', heldLocally: false },
 	sato2008: { dbSlug: '2008-sato', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2008_Sato' },
 	sato2009: { sourceRole: 'prior-analysis', heldLocally: true },
+	yu2025: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr' },
 	sato2023a: { sourceRole: 'prior-analysis', heldLocally: false },
 	bugaeva2012: { sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2022: { dbSlug: '2022-bugaeva', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
