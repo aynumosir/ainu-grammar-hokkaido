@@ -49,7 +49,7 @@
 		The finite verb word can be modelled as an ordered set of position classes. The model is a
 		descriptive abstraction over the recurrent linear positions of person indexes, valency-changing
 		morphology, the lexical stem, stem-number morphology, derivational suffixes, and the outer plural
-		markers. Read from the outer left edge to the outer right edge, the zones are as follows.
+		markers. Read from the outer left edge to the outer right edge, the zones are as follows. <Ref k="bugaeva2012" p="§15.4.4.1" />
 	</p>
 
 	<table>

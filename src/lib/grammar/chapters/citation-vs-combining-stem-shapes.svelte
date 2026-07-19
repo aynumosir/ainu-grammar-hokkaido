@@ -15,7 +15,7 @@
 		/i/; (3) vowel elision in the person prefixes <i lang="ain-Latn">ku=</i> and
 		<i lang="ain-Latn">ci=</i> before vowel-initial stems; and (4) the historical compound
 		assimilation visible in the elm-bark robe name
-		<i lang="ain-Latn">attus</i> (underlying <i lang="ain-Latn">at-rus</i>).
+		<i lang="ain-Latn">attus</i> (underlying <i lang="ain-Latn">at-rus</i>). <Ref k="shiraishi2022" p="§4.4" />
 	</p>
 
 	<p>

@@ -137,7 +137,7 @@
 		routinely carries two person indexes and one or two derivational prefixes, and a single
 		incorporated nominal already constitutes a polymorphemic complex. The register difference between
 		Classical Ainu and everyday speech — and what it implies for the grammar/lexicon boundary — is
-		a live research question ‹contested›.
+		a live research question <Ref k="shibatani1990" p="5" /> ‹contested›.
 	</p>
 	<p>
 		Satō (2016; 2022) provides the fullest typology of Ainu noun incorporation, identifying four

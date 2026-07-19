@@ -41,7 +41,7 @@
 
 <S t="Morpheme boundary conventions" id="boundary-conventions">
 	<p>
-		Three boundary symbols appear within tokens in the morphemic and gloss lines:
+		Three boundary symbols appear within tokens in the morphemic and gloss lines: <Ref k="comrie2015" />
 	</p>
 
 	<table>

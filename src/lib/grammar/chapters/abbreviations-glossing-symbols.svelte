@@ -14,7 +14,8 @@
 		attribution, example selection, and the layout of example headers is set out in
 		<Xr ch="glossing-abbreviations-and-citation" />.
 	</p>
-	<p>Three symbols mark morpheme structure within a word:</p>
+	<p>Three symbols mark morpheme structure within a word: <Ref k="comrie2015" />
+	</p>
 	<table>
 		<thead>
 			<tr>

@@ -11,7 +11,7 @@
 		the positional difference between subject prefixes and subject suffixes entails for the verb's
 		internal structure. The chapter covers the personal-affix layer of the verb; the full verb word
 		template, including TAM, negation, and nominalization layers, is treated in
-		<Xr ch="verb-word-template" />.
+		<Xr ch="verb-word-template" />. <Ref k="bugaeva2006" p="3" />
 	</p>
 
 	<table>

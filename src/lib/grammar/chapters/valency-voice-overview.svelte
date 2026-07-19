@@ -56,7 +56,7 @@
 		effects in Nakagawa’s sense, and they predict the person-marking diagnostics used by Satō and the
 		Handbook. Several surface strings recur across rows, so the arity and the host verb class settle
 		how a given occurrence is glossed. Each operation is developed in its own chapter, listed in the
-		final column.
+		final column. <Ref k="bugaeva2012" p="§15.4.4.1" />
 	</p>
 
 	<table>

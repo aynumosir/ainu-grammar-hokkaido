@@ -165,8 +165,8 @@
 	<S t="Derivation walkthroughs" id="r-derivation">
 		<p>
 			The derivations below move from underlying (orthographic) representations to surface
-			phonetic forms. Boundaries: <em>=</em> marks clitic attachment, space marks word boundary.
-		</p>
+			phonetic forms. Boundaries: <em>=</em> marks clitic attachment, space marks word boundary. <Ref k="nakagawa2024" p="§1.2.1" />
+	</p>
 
 		<table>
 			<caption>/r/-sandhi: underlying to surface</caption>

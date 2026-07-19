@@ -334,6 +334,6 @@
 		adverb vs. emphatic particle) are therefore indicative upper bounds on each individual
 		function ‹speculative›. The count for <A w="newaanpe" /> is relatively clean given the
 		form's low homonymy. Per-function and Hokkaido-only breakdowns require bespoke corpus
-		scripting.
+		scripting. <Ref k="tamura1996" />
 	</p>
 </S>

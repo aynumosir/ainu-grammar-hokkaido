@@ -300,7 +300,7 @@
 		free-translation line follows ordinary English sentence capitalization. Personal names and
 		place names are capitalized when they appear in English running prose but retain lower case in
 		glossed lines and in in-text Ainu citations: <i lang="ain-Latn">sisam mosir</i> 'Japan
-		(Wajin-land)', <i lang="ain-Latn">pirika menoko</i> 'a beautiful woman'.
+		(Wajin-land)', <i lang="ain-Latn">pirika menoko</i> 'a beautiful woman'. <Ref k="bugaeva2022" />
 	</p>
 	<p>
 		Punctuation within Ainu text follows the source when a text is being cited; the grammar's own

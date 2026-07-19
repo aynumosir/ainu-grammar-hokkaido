@@ -360,7 +360,7 @@
 		'thing/place' readings (<i lang="ain-Latn">i-omante</i>, <i lang="ain-Latn">i-mak</i>
 		'behind') — fits the generic-noun hypothesis better than the pronoun-first account, since a
 		grammaticalized human pronoun would be expected to bias the antipassive toward human Patients
-		rather than generating the observed range ‹speculative›. This synthesis rests on the
+		rather than generating the observed range <Ref k="nam2021" p="§4.1" /> ‹speculative›. This synthesis rests on the
 		residual-distribution evidence and Nam's phonological argument; it is original to this
 		grammar and goes beyond any single cited source.
 	</p>

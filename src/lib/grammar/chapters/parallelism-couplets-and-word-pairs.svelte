@@ -137,7 +137,7 @@
 	<p>
 		Endō 2022 does not sort these into discrete sub-types, treating all three under the
 		single label 対句. The distinction between antonymic and synonymic types is analytical,
-		not a native speaker's metalinguistic category ‹contested›.
+		not a native speaker's metalinguistic category <Ref k="endo2022" /> ‹contested›.
 	</p>
 </S>
 

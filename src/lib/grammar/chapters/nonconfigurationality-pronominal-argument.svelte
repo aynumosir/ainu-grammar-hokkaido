@@ -503,7 +503,7 @@
 		is no obviation morphology on the NP, no "obviative" nominal suffix marking a secondary
 		third-person referent. The fourth-person prefix set on the verb does analogous work for first-
 		and fourth-person participants in discourse, but it is verbal morphology, not nominal, and it
-		targets person, not rank-in-discourse ‹contested› (<Xr ch="indefinite-fourth-person-paradigm" />).
+		targets person, not rank-in-discourse <Ref k="bugaeva2012" p="§15.4.1" /> ‹contested› (<Xr ch="indefinite-fourth-person-paradigm" />).
 	</p>
 </S>
 
