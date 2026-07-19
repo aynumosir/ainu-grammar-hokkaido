@@ -215,7 +215,7 @@
 		intransitivize. The width of the prefix's semantic scope — extending to Recipient and Causee
 		demotion, not only Patient — and its discourse conditioning give the antipassive account
 		stronger typological grounding. This chapter adopts Bugaeva's label while registering Tamura's
-		and Satō's derivational reading as the earlier, still-maintained alternative ‹contested›.
+		and Satō's derivational reading as the earlier, still-maintained alternative <Ref k="sato2008" p="§29.2" /> ‹contested›.
 	</p>
 </S>
 

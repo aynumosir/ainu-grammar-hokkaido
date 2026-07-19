@@ -86,7 +86,7 @@
 		an accent dialect with rules analogous to Saru; archival evidence — scattered accent marks from a
 		single Shizunai speaker showing both <i lang="ain-Latn">nisáppone</i> and
 		<i lang="ain-Latn">nísappone</i> for 'suddenly' — supports Nakagawa's accentless
-		classification ‹contested›. Unaccented varieties and the phonological consequences of
+		classification <Ref k="nakagawa2024" p="§1.4.2" /> ‹contested›. Unaccented varieties and the phonological consequences of
 		accent loss are treated in <Xr ch="hokkaido-phonological-microvariation" />.
 	</p>
 </S>

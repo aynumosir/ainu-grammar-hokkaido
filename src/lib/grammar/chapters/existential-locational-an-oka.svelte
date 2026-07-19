@@ -253,7 +253,7 @@
 		its subject and the lacked item as its object:
 		<i lang="ain-Latn">tamasay ka sak</i> 'has no necklace even'.
 		This LACK/HAVE pairing parallels the EXIST/ISAM pairing and shows the same
-		suppletive negation strategy across the non-dynamic predicate system.
+		suppletive negation strategy across the non-dynamic predicate system. <Ref k="bugaeva2012" />
 	</p>
 
 	<table>

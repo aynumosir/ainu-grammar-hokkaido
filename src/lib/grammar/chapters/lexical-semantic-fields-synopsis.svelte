@@ -13,7 +13,7 @@
 		a layered spatial-deictic system anchored to river orientation. The table below maps each field
 		to its grammatically active sub-structure and to the chapters that give the full account. For
 		vocabulary lookup, the Itak dictionary carries the attested lexicon; this chapter is a finding
-		aid, not a word list.
+		aid, not a word list. <Ref k="bugaeva2022" p="§5.1.1" />
 	</p>
 
 	<table>

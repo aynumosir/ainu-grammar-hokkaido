@@ -323,7 +323,7 @@
 		prefix and affiliative suffix — the result is a chain of possessed nouns, each indexed for its
 		own possessor. The innermost noun carries an overt person prefix; the next noun takes the
 		innermost noun's referent as its possessor, which is then marked by a zero third-person
-		prefix. Nakagawa 2024: 224 (ex. 259) illustrates this in a Saru narrative passage:
+		prefix. Nakagawa 2024: 224 (ex. 259) illustrates this in a Saru narrative passage: <Ref k="nakagawa2024" p="223–224" />
 	</p>
 
 	<Ex

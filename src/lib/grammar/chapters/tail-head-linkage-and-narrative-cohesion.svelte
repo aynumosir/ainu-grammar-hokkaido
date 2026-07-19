@@ -210,7 +210,7 @@
 		The construction packages everything narrated up to that point as settled background and
 		opens the narrative onto the first complication of the story proper. The formal-noun
 		grammaticalization cline that underlies this use — relative-head → complement-marker →
-		connective — is treated in <Xr ch="nominalization-p-pe" />.
+		connective — is treated in <Xr ch="nominalization-p-pe" />. <Ref k="nakagawa2024" p="§4" />
 	</p>
 
 	<p>

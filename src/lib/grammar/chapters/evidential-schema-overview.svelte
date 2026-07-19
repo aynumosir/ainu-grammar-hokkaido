@@ -125,7 +125,7 @@
 		<i lang="ain-Latn">hawe ne</i> the <em>reported</em> cell. The boundary between the visual
 		(<i lang="ain-Latn">siri</i>) and the knowledge-from-trace (<i lang="ain-Latn">ruwe</i>)
 		cells is contested in the recent literature and is discussed in
-		<Xr ch="ruwe-ne-inferential" s="visual-puzzle">the ruwe ne chapter</Xr> ‹contested›.
+		<Xr ch="ruwe-ne-inferential" s="visual-puzzle">the ruwe ne chapter</Xr> <Ref k="dalcorso2018" p="311–312" />; <Ref k="hirosawa2026" p="81" /> ‹contested›.
 	</p>
 </S>
 
@@ -232,7 +232,7 @@
 	<p>
 		These counts derive from Dal Corso's specific reference texts (Kayano, Tamura, Nakagawa,
 		Bugaeva), not from the full Hokkaido corpus, and should be treated as indicative of the
-		skew rather than as absolute proportions ‹corpus-suggested›. The dominance of
+		skew rather than as absolute proportions <Ref k="dalcorso2018" p="41" /> ‹corpus-suggested›. The dominance of
 		<i lang="ain-Latn">ruwe ne</i> is consistent with its status as the unmarked, most
 		grammaticalized member of the paradigm. The genre distribution of evidential usage across
 		narrative registers is treated in <Xr ch="narrative-tam-evidential-patterning-by-genre" />.

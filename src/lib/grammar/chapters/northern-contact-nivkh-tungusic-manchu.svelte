@@ -150,7 +150,7 @@
 	<p>
 		The following table summarises the northern loanwords with clear or well-argued Hokkaido
 		reflexes together with the principal ‹SA› items. Sakhalin-only forms are marked ‹SA›;
-		confidence grades follow the evidence-grade conventions of this grammar.
+		confidence grades follow the evidence-grade conventions of this grammar. <Ref k="tangiku2022" p="§3.3" />; <Ref k="bugaeva2022" />
 	</p>
 
 	<table>

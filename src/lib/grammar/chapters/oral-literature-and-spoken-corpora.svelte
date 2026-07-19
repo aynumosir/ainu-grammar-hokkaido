@@ -19,7 +19,7 @@
 		comparable texts). For the genre system and its grammatical correlates see
 		<Xr ch="oral-literature-genre-taxonomy" />; for poetic register,
 		<Xr ch="poetic-archaic-elevated-register" />; for corpus method and dialect sampling,
-		<Xr ch="dialect-sample-and-corpus-method" />.
+		<Xr ch="dialect-sample-and-corpus-method" />. <Ref k="bugaeva2012" p="§15.4.4.1.4" />
 	</p>
 </S>
 

@@ -102,7 +102,7 @@
 	</ol>
 
 	<p>
-		The algorithm applied to several representative words:
+		The algorithm applied to several representative words: <Ref k="nakagawa2024" p="§1.3" />
 	</p>
 
 	<table>

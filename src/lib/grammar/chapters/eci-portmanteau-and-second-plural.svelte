@@ -27,7 +27,7 @@
 			>e=</i
 		> and <i lang="ain-Latn">en=</i>, to <Xr ch="object-indexing-monotransitive" /> for the
 		two-index cap and ditransitive object choice, and to <Xr ch="person-number-interactions" />
-		for plural agreement.
+		for plural agreement. <Ref k="bugaeva2012" p="§15" />; <Ref k="tamura1972" />
 	</p>
 
 	<table>

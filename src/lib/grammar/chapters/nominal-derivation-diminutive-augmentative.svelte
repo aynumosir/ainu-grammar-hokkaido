@@ -125,7 +125,7 @@
 		associative-plural formal noun <A w="utar" gl="people, companions" /> (treated in
 		<Xr ch="nominal-number-utar-transnumerality" />), and in the second and third examples the
 		prenominal property verb <A w="pon" gl="be small" /> stacks with the DIM derivative,
-		confirming that the suffix and the prenominal are independent strategies.
+		confirming that the suffix and the prenominal are independent strategies. <Ref k="ilcaa1976" />; <Ref k="chiba2015" />
 	</p>
 
 	<Ex

@@ -15,7 +15,7 @@
 		that operate across all morpheme junctures — coda-/r/ assimilation, nasal-place assimilation
 		— are the subject of <Xr ch="coda-r-assimilation-sonorant-sandhi" />; the person-marker
 		inventory and its morphosyntactic analysis are laid out in
-		<Xr ch="person-marking-architecture" />.
+		<Xr ch="person-marking-architecture" />. <Ref k="nakagawa2024" p="§2" />
 	</p>
 </S>
 
@@ -31,7 +31,8 @@
 		<Ref k="nakagawa2024" p="52" />; <Ref k="nakagawafukazawa2022" p="§3" />.
 	</p>
 
-	<p>The two deletion rules can be stated as:</p>
+	<p>The two deletion rules can be stated as: <Ref k="nakagawa2024" p="§1.4.5" />
+	</p>
 
 	<ul>
 		<li>/u/ → ∅ / <i lang="ain-Latn">ku=</i> __ &#123;a, e, u, o&#125;…</li>
@@ -151,7 +152,7 @@
 	</p>
 
 	<p>
-		The derivation of <i lang="ain-Latn">k=ómare</i> illustrates the two-step ordering:
+		The derivation of <i lang="ain-Latn">k=ómare</i> illustrates the two-step ordering: <Ref k="nakagawa2024" p="§1.4.5" />
 	</p>
 
 	<table>

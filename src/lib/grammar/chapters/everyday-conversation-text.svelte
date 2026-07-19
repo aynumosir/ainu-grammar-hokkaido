@@ -127,7 +127,7 @@
 		main-clause assertion. The causal connective belongs to the pattern treated in
 		<Xr ch="causal-and-purpose-clauses" />. The property verb
 		<A w="merayke" gl="be cold" /> is an intransitive predicate whose subject — the weather
-		— is zero-marked at 3rd person.
+		— is zero-marked at 3rd person. <Ref k="bugaeva2022" />
 	</p>
 
 	<Ex

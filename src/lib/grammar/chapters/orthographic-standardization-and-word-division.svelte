@@ -246,7 +246,7 @@
 	<p>
 		The following table summarizes the decisions made above, drawn together for ready reference.
 		The entries cover features where published sources diverge and where a reader moving between
-		this grammar and other descriptions may encounter different practice.
+		this grammar and other descriptions may encounter different practice. <Ref k="nakagawa2024" p="58" />
 	</p>
 
 	<table>

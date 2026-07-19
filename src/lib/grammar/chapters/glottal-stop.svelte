@@ -154,7 +154,7 @@
 			The accent argument applies only in pitch-accent varieties. In the accentless Shizunai
 			dialect it does not hold, and phonemic /ʔ/ has been demonstrated there (§ below). The
 			non-phonemic analysis stands for the accent-dialect majority and is adopted here for those
-			varieties ‹contested›.
+			varieties <Ref k="chiri1942" p="461" /> ‹contested›.
 		</p>
 	</S>
 

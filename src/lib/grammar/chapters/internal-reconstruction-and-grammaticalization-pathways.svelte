@@ -257,7 +257,7 @@
 	<p>
 		The most transparent set of grammaticalization events in Ainu involves free verbs reanalysed as
 		derivational suffixes on nouns and verbs. Alonso documents six such suffixes with unambiguous
-		lexical sources (Alonso 2022 §3.1, Table 16; drawing on Dettmer 1989):
+		lexical sources (Alonso 2022 §3.1, Table 16; drawing on Dettmer 1989): <Ref k="alonso2022" />
 	</p>
 
 	<table>

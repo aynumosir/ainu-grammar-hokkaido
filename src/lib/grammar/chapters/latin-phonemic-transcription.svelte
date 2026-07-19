@@ -29,7 +29,7 @@
 <S t="Phoneme-to-grapheme correspondences" id="correspondences">
 	<p>
 		The inventory comprises five vowels and twelve consonants, listed in the table below alongside
-		their IPA equivalents and the primary allophonic notes that bear on the transcription.
+		their IPA equivalents and the primary allophonic notes that bear on the transcription. <Ref k="nakagawa2022pos" />
 	</p>
 
 	<table>

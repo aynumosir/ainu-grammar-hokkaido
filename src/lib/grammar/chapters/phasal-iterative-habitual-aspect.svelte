@@ -14,7 +14,7 @@
 		<A w="ranke" gl="do repeatedly, again and again" />. Habitual and generic readings arise from
 		<i lang="ain-Latn">kor an</i> in appropriate temporal or frequentative contexts. The
 		recent-perfect auxiliary <A w="nisa" gl="just completed" /> marks an event as already
-		finished and still current at the moment of speech.
+		finished and still current at the moment of speech. <Ref k="nakagawa2024" p="450" />; <Ref k="sato2006" p="47" />
 	</p>
 	<p>
 		All these strategies recruit the auxiliary and pair-verb frames whose architecture is laid out
@@ -22,7 +22,7 @@
 		<i lang="ain-Latn">wa an</i> are treated as the core existential-aspect system in
 		<Xr ch="existential-aspect-an-oka" />; the perfective auxiliary <i lang="ain-Latn">a</i>
 		and its admirative counterpart <i lang="ain-Latn">aan</i> are treated in
-		<Xr ch="perfective-anterior-a" />.
+		<Xr ch="perfective-anterior-a" />. <Ref k="nakagawa2024" p="§15.1" />
 	</p>
 	<table>
 		<thead>

@@ -66,7 +66,7 @@
 		The table below gives the core semantic range, arity effect, and most frequent
 		applied-object roles in Bugaeva's corpus sample for each prefix; full role distributions
 		and corpus examples are in <Xr ch="applicative-e" />, <Xr ch="applicative-ko" />, and
-		<Xr ch="applicative-o" />.
+		<Xr ch="applicative-o" />. <Ref k="bugaeva2006" p="190" />
 	</p>
 
 	<table>

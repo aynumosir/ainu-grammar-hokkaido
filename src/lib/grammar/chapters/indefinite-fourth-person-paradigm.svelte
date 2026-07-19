@@ -10,7 +10,7 @@
 		transitive verb (A role), <i lang="ain-Latn">=an</i> as the subject of an intransitive verb
 		(S), and <i lang="ain-Latn">i=</i> as the object (O). The full S/A/O architecture of all four
 		persons is laid out in <Xr ch="person-marking-architecture" />; this chapter covers the
-		internal paradigm and the referential values licensed by the row.
+		internal paradigm and the referential values licensed by the row. <Ref k="nakagawa2024" p="§4.4.5" />; <Ref k="bugaeva2012" p="269" />
 	</p>
 
 	<table>

@@ -10,7 +10,7 @@
 		different terms: pre-war geography-based groupings; post-war quantitative lexicostatistics
 		producing numerical similarity matrices and dendrograms; and more recent statistical
 		reanalyses of those same matrices with spectral clustering and correspondence analysis,
-		which contest the canonical groupings at several points.
+		which contest the canonical groupings at several points. <Ref k="tamura2000" p="3" />; <Ref k="ono2020" />
 	</p>
 	<p>
 		This chapter traces the classification debate and the phonological and morphological

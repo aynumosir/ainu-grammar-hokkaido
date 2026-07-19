@@ -17,7 +17,7 @@
 		consulted in §5 to <Xr ch="nominalization-p-pe" />. Live morphological decompositions of
 		reduplicated forms — full-copy, VC-echo (<i lang="ain-Latn">cirir</i>), and
 		final-syllable (<i lang="ain-Latn">hepokiki</i>) types with their argument-structure
-		annotations — are browsable in the Ainu morpheme database (mdb.aynu.org/processes).
+		annotations — are browsable in the Ainu morpheme database (mdb.aynu.org/processes). <Ref k="nakagawa2024" p="§4.3.4" />
 	</p>
 </S>
 

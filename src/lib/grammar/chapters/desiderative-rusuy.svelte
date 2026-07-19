@@ -170,7 +170,7 @@
 		transitive possessive verb <A w="kor" gl="have, possess, hold" /> as the lexical
 		<i lang="ain-Latn">V</i>. The possessed entity — the thing wanted — appears as the object of
 		<i lang="ain-Latn">kor</i>, and <i lang="ain-Latn">rusuy</i> attaches in its normal auxiliary
-		position:
+		position: <Ref k="bugaeva2012" p="467" />; <Ref k="nakagawa2024" p="421" />
 	</p>
 
 	<Ex
@@ -185,7 +185,7 @@
 		<i lang="ain-Latn">kor rusuy</i> is thus a sub-case of <i lang="ain-Latn">V rusuy</i> in which
 		<i lang="ain-Latn">V</i> is the possessive verb <i lang="ain-Latn">kor</i> 'have'. The semantic
 		contrast it encodes — thing-desire versus action-desire — is crosslinguistically common in
-		languages that use a single desiderative auxiliary:
+		languages that use a single desiderative auxiliary: <Ref k="nakagawa2024" />
 	</p>
 
 	<table>
@@ -231,7 +231,7 @@
 		The applicative prefix <A w="e-" gl="applicative" /> (treated fully in <Xr ch="applicative-e" />)
 		introduces a new patient, goal, or stimulus argument to an otherwise intransitive verb. When that
 		transitivized verb precedes <i lang="ain-Latn">rusuy</i>, the result is an
-		applicative-desiderative expressing desire directed toward an explicit referent:
+		applicative-desiderative expressing desire directed toward an explicit referent: <Ref k="bugaeva2022" />; <Ref k="bugaeva2012" p="469" />
 	</p>
 
 	<Ex

@@ -14,7 +14,7 @@
 		reveals the hierarchical position that <i lang="ain-Latn">ruwe ne</i> has reached on that
 		cline. The individual evidentials are described in <Xr ch="evidential-schema-overview" />,
 		<Xr ch="ruwe-ne-inferential" />, <Xr ch="siri-ne-situational" />,
-		<Xr ch="hawe-ne-reportative" />, and <Xr ch="humi-ne-sensory" />.
+		<Xr ch="hawe-ne-reportative" />, and <Xr ch="humi-ne-sensory" />. <Ref k="bugaeva2022" />
 	</p>
 </S>
 

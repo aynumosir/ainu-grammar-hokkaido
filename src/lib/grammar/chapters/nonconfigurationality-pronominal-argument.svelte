@@ -459,7 +459,7 @@
 		commitments about what counts as an argument. No Ainu specialist has published a study
 		dedicated to the PAH or the nonconfigurationality hypothesis as such; the framing reaches Ainu
 		through Bugaeva's and Satō's typological discussions. Chapter authors should present the
-		classification as a live framing question rather than an established result ‹contested›.
+		classification as a live framing question rather than an established result <Ref k="bugaeva2022" /> ‹contested›.
 	</p>
 </S>
 

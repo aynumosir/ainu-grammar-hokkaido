@@ -151,8 +151,8 @@
 			as [n] before a following rhotic onset. Nakagawa (2024: 35) identifies
 			<i lang="ain-Latn">ku=kor rusuy</i> 'I want it' → [kukonrusuy] as the only published
 			Hokkaido example of this dissimilation. The complementary statement alongside the
-			assimilation rule is:
-		</p>
+			assimilation rule is: <Ref k="nakagawa2024" p="§1.2.1" />
+	</p>
 		<p>
 			/r/ → n / _r (dissimilation — avoidance of adjacent rhotics at syllable margins).
 		</p>

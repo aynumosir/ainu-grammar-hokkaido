@@ -440,7 +440,7 @@
 		possessor argument that is not relevant in a direct address. The illocutionary inventory of
 		Hokkaido Ainu, including the interaction of address, register, and honorific speech, is the
 		subject of <Xr ch="sentence-final-particles-illocutionary-force" /> and
-		<Xr ch="honorific-ritual-and-taboo-registers" />.
+		<Xr ch="honorific-ritual-and-taboo-registers" />. <Ref k="nakagawa2024" p="§4" />
 	</p>
 </S>
 

@@ -189,7 +189,7 @@
 
 <S t="Script policy" id="policy">
 	<p>
-		The following conventions apply to all Ainu forms in this grammar:
+		The following conventions apply to all Ainu forms in this grammar: <Ref k="nakagawa2024" p="§0.4" />
 	</p>
 	<ul>
 		<li>

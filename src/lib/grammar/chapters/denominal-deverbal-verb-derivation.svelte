@@ -234,7 +234,7 @@
 	<p>
 		A set of temperature terms shows the zero-place and one-place contrast side by side. The
 		zero-place member describes the ambient climate and carries no person index; the one-place member
-		describes a felt bodily state and carries the intransitive subject index.
+		describes a felt bodily state and carries the intransitive subject index. <Ref k="nakagawa2024" p="128–130" />
 	</p>
 
 	<table>

@@ -427,7 +427,7 @@
 		In every pattern, the property verb itself remains morphologically unchanged —
 		which follows from its verbal status, since Ainu verbs in general carry
 		no degree inflections. These strategies are documented with corpus examples
-		in <Xr ch="adverbs-degree-comparison" />.
+		in <Xr ch="adverbs-degree-comparison" />. <Ref k="kanazawa1898" />; <Ref k="biratori1969" />
 	</p>
 </S>
 

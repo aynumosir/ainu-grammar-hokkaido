@@ -26,7 +26,7 @@
 	<p>
 		The table below places the exclusive row beside the fourth-person/indefinite row, whose first
 		function is the inclusive 'we'. The contrast between the two rows is the structural basis of
-		clusivity in Hokkaido Ainu.
+		clusivity in Hokkaido Ainu. <Ref k="tamura1972" p="§2.2" />; <Ref k="sato2008" />
 	</p>
 
 	<table>
@@ -123,7 +123,7 @@
 		different participants. Their historical relationship — including whether Hokkaido
 		<i lang="ain-Latn">un=</i> and the Sakhalin counterpart <i lang="ain-Latn">in=</i> are
 		cognates of the exclusive O or of the indefinite O — is part of the broader alignment debate
-		and is pursued in <Xr ch="alignment-hierarchical-and-the-debate" /> ‹contested›.
+		and is pursued in <Xr ch="alignment-hierarchical-and-the-debate" /> <Ref k="dalcorso2025align" p="§2.3" /> ‹contested›.
 	</p>
 </S>
 

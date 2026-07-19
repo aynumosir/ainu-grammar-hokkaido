@@ -229,7 +229,7 @@
 
 	<p>
 		The boundary between zero-place and one-place verbs is sharpest in the temperature vocabulary.
-		Climate predicates take no person index; the felt-temperature counterparts take a subject.
+		Climate predicates take no person index; the felt-temperature counterparts take a subject. <Ref k="nakagawa2024" p="129–130" />
 	</p>
 
 	<table>

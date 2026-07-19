@@ -18,7 +18,7 @@
 		<A w="pirkano" gl="well, in a good way" /> belongs to the word-formation domain and is treated
 		in <Xr ch="adverbializer-no" />; the conditional and concessive particles, though partially
 		manner-like in their semantics, are documented in
-		<Xr ch="conditional-temporal-concessive-clauses" />.
+		<Xr ch="conditional-temporal-concessive-clauses" />. <Ref k="nakagawa2024" p="§9" />; <Ref k="sato2008" p="§1.7" />
 	</p>
 </S>
 

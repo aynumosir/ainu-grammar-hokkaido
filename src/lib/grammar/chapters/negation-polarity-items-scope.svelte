@@ -370,7 +370,7 @@
 		individual indefinite types, or a formal account of the scope ambiguities in evidential and
 		nominalized clauses; the corpus tools available here count lemmas, not the multi-word
 		<i lang="ain-Latn">[interrogative] ka … somo</i> configurations, so no per-construction frequency
-		is asserted ‹corpus-suggested›.
+		is asserted ‹corpus-suggested›. <Ref k="dalcorso2025neg" p="41" />
 	</p>
 
 	<p>

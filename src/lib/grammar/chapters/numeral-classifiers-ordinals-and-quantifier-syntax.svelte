@@ -22,7 +22,7 @@
 		ordinal strategies, quantifier float, and the universal and approximative quantifiers.
 		The cardinal system, the vigesimal arithmetic, and the 1–20 paradigm are treated in
 		<Xr ch="vigesimal-numeral-system" />; nominal <i lang="ain-Latn">-utar</i> plurality
-		and transnumerality in <Xr ch="nominal-number-utar-transnumerality" />.
+		and transnumerality in <Xr ch="nominal-number-utar-transnumerality" />. <Ref k="nakagawa2024" p="§17.1" />
 	</p>
 
 	<table>
@@ -296,7 +296,7 @@
 		Whether <i lang="ain-Latn">-p/-pe</i>, <i lang="ain-Latn">-n/-iw</i>,
 		<i lang="ain-Latn">to</i>, and <i lang="ain-Latn">suy</i> constitute "numeral
 		classifiers" is unresolved in the literature, partly because the disagreement is
-		terminological ‹contested›.
+		terminological <Ref k="bugaeva2012" p="§5.3" /> ‹contested›.
 	</p>
 
 	<p>

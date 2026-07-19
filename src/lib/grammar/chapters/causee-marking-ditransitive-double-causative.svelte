@@ -17,7 +17,7 @@
 		causative morphology are developed in <Xr ch="causative-morphological-re-e-te" />.
 		The indefinite causative <i lang="ain-Latn">-yar</i>/<i lang="ain-Latn">-ar</i>,
 		which adds a causer while leaving the causee both unexpressed and unindexed, is
-		treated in <Xr ch="permissive-sociative-causative-yar" />.
+		treated in <Xr ch="permissive-sociative-causative-yar" />. <Ref k="bugaeva2014" p="§7" />
 	</p>
 </S>
 
@@ -105,7 +105,7 @@
 
 	<p>
 		The table below tracks arity through the causative chain. The third row covers double
-		causatives, taken up in §<span class="sc">5</span>.
+		causatives, taken up in §<span class="sc">5</span>. <Ref k="nakagawa2024" p="§13.3" />; <Ref k="bugaeva2014" p="§7" />
 	</p>
 
 	<table>

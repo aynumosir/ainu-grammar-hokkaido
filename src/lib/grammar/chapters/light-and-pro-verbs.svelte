@@ -441,7 +441,7 @@
 		of the lexical stem; <i lang="ain-Latn">ki</i>, <i lang="ain-Latn">ne</i>, and
 		<i lang="ain-Latn">an</i> provide a higher predicate host above the already-built stem. The
 		lexical semantics of the copula and existential are treated in
-		<Xr ch="copula-ne-predicate-nominals" /> and <Xr ch="existential-locational-an-oka" />.
+		<Xr ch="copula-ne-predicate-nominals" /> and <Xr ch="existential-locational-an-oka" />. <Ref k="nakagawa2024" p="451" />; <Ref k="bugaeva2022" />
 	</p>
 
 	<p>

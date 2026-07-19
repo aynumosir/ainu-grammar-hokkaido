@@ -109,7 +109,7 @@
 	<p>
 		The <i lang="ain-Latn">nísap</i> : <i lang="ain-Latn">nisáp</i> pair also has a
 		diachronic dimension. Sakhalin Ainu preserves vowel-length distinctions in exactly the
-		positions where Hokkaido Ainu carries an accent distinction:
+		positions where Hokkaido Ainu carries an accent distinction: <Ref k="itabashi2001" />
 	</p>
 
 	<table>

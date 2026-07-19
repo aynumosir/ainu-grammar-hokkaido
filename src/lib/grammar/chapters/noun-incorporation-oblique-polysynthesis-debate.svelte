@@ -64,7 +64,7 @@
 		Each postposition or case relation that can be expressed obliquely has a corresponding
 		applicative encoding the same relation as a core object, and only through that applicative
 		can the noun incorporate. Nakagawa (2024: 484) summarises the pairings; the table below
-		assembles them alongside the relevant applicative prefix and an incorporated-form gloss.
+		assembles them alongside the relevant applicative prefix and an incorporated-form gloss. <Ref k="nakagawa2024" p="§19" />
 	</p>
 
 	<table>
@@ -419,7 +419,7 @@
 		Satō 2016], Ambiguity [+4 in 2022 / +7 in 2016]. Rescue factors: Backgrounding [−5 in
 		2022 / −8 in 2016], Reflexive interpretation [−14 in 2022 / −9 in 2016]. The absolute
 		values are tentative; the stable result is the rank order and the zero-frequency gap at
-		the bottom ‹corpus-suggested›.
+		the bottom <Ref k="sato2016" p="88–89" /> ‹corpus-suggested›.
 	</p>
 
 	<p>
@@ -527,7 +527,7 @@
 			s="markedness-qi"
 		/> are from one narrator; comparable counts for Saru or Horobetsu are not available
 		because the undecidability of third-person tokens in other narrators' texts makes
-		systematic NI frequency comparison across dialects intractable at present ‹speculative›.
+		systematic NI frequency comparison across dialects intractable at present <Ref k="sato2016" p="84" /> ‹speculative›.
 		The typological comparison — Mithun's four-type hierarchy applied to Ainu — is
 		introduced in <Xr ch="valency-voice-overview" />;
 		subject incorporation and possessor-stranding data are developed in

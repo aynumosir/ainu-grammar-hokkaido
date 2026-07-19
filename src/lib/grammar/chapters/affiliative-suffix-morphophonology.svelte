@@ -334,8 +334,8 @@
 			the stem's last vowel (③-2) rather than defaulting to /i/; a smaller set inserts /u/
 			regardless of stem vowel quality (③-3, restricted to V₁ = /a/ stems). Both sub-types
 			accept the same optional long-form extension. The conditioning matrix after Nakagawa
-			2024: 228, 表51:
-		</p>
+			2024: 228, 表51: <Ref k="nakagawa2024" p="228" />
+	</p>
 
 		<table>
 			<thead>

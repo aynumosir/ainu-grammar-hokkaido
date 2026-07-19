@@ -206,8 +206,8 @@
 			the second and third persons are neutral (S=A=O), and the first-person plural exclusive
 			and the fourth person are tripartite (S≠A≠O) — so neither an ergative nor a nominative
 			characterization covers the whole system. The paradigm and the alignment question are
-			set out in <Xr ch="person-marking-architecture" />.
-		</p>
+			set out in <Xr ch="person-marking-architecture" />. <Ref k="bugaeva2012" />
+	</p>
 	</S>
 
 	<S t="Notes on the fourth person" id="fourth-person-label">

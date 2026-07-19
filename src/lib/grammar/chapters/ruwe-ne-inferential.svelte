@@ -539,7 +539,7 @@
 	<p>
 		The endpoint of that cline is reached unevenly across Hokkaido, and the differences are
 		morphosyntactic: a single semantic field realized by varied forms, which cautions against
-		writing one morphology for all of Hokkaido ‹contested›:
+		writing one morphology for all of Hokkaido <Ref k="hirosawa2026" p="144" /> ‹contested›:
 	</p>
 
 	<ul>

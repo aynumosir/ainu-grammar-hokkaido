@@ -60,7 +60,7 @@
 	</p>
 	<p>
 		Head-finality applies at every level of structure. The following table — adapted from the
-		Shibatani (1990: 23–24) inventory — shows the major construction types:
+		Shibatani (1990: 23–24) inventory — shows the major construction types: <Ref k="shibatani1990" p="§3.2" />
 	</p>
 
 	<table>
@@ -157,7 +157,7 @@
 		Shibatani (1990: 22) argues that word order encodes grammatical role: "Since there are no
 		case inflections on nouns, word order plays as important a role as in English in determining
 		the grammatical functions of certain nouns." He presents the following pair as a minimal
-		role-contrast ‹contested›:
+		role-contrast <Ref k="shibatani1990" p="§3.2" /> ‹contested›:
 	</p>
 
 	<Ex

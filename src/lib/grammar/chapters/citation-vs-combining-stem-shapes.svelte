@@ -472,7 +472,7 @@
 	<p>
 		The table below collects the principal citation/combining alternations documented in this
 		chapter. For each rule, the underlying and surface forms are given; chapters treating the
-		full paradigm are indicated.
+		full paradigm are indicated. <Ref k="nakagawa2024" p="§1.2.1" />
 	</p>
 
 	<table>
