@@ -111,6 +111,15 @@
 		receives the message conveyed by <i lang="ain-Latn">nu-yar</i> while the verb itself
 		indexes no causee <Ref k="biratori1969" />.
 	</p>
+	<Ex
+		m="tuyma no new ka a=korar ka korayniwkes"
+		g="far even COMP also 4=marry.off also feel.cannot.do"
+		tr="I felt I couldn't have her married off far away."
+		cite="biratori1969"
+		dial="SAR"
+		place="Biratori oral lit., 木村きみ narration"
+		note="korar (kor-ar, 'marry off') is the indefinite causative: the causer a= (4th-person, logophoric, referring to the narrator) is indexed on the verb, but the causee — the woman married off — is neither expressed nor cross-referenced, recoverable only from discourse. This is the structural signature of -ar."
+	/>
 </S>
 
 <S t="Readings: indefinite, permissive, and sociative" id="semantics">

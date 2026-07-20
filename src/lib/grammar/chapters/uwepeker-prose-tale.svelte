@@ -77,6 +77,20 @@
 		men <Ref k="sato2008" p="259" />. The gendered allocation of genres is discussed in
 		<Xr ch="gendered-register-speech" />.
 	</p>
+	<p>
+		Speakers themselves characterise the prose tale as serious, factual narration rather than
+		fiction. Osuka Rieko of Shiraoi insists on the genre's truth-status, contrasting it with
+		fabricated talk:
+	</p>
+	<Ex
+		m="uwepeker anak sunke hawe ka somo ne"
+		g="uwepeker TOP lie talk also NEG COP"
+		tr="Uwepeker is not false talk at all."
+		cite="zaidanradio2001"
+		dial="HOR"
+		place="大須賀るえ子 (Osuka Rieko), Shiraoi; アイヌ語ラジオ講座テキスト 10"
+		note="A metalinguistic comment on genre: the speaker denies that uwepeker belongs with sunke itak ('lying/false talk'). The predicate hawe ka somo ne ('is also not talk [of that kind]') frames the negation over the noun phrase sunke hawe. hawe = voice/word/talk."
+	/>
 </S>
 
 <S t="Sub-genre types and typical themes" id="sub-genres">
@@ -163,6 +177,15 @@
 		<Xr ch="quotative-complementation-sekor" /> and
 		<Xr ch="logophoric-narration-and-reported-discourse" />.
 	</p>
+	<Ex
+		m="a=ne ruwe ne sekor amameponcikappo isoytak"
+		g="4=COP track-POSS COP QUOT little.sparrow tell.tale.PFV"
+		tr="[…and so] I was [one of them] — thus Little Sparrow told the tale."
+		cite="ilcaa1976"
+		dial="SAR"
+		place="川上まつ子 (Kawakami Matsuko), uwepeker '民話15' (ILCAA Ainu materials 022:109)"
+		note="Canonical closing formula. The fourth-person copula a=ne (narrator-as-protagonist 'I am') is wrapped in the quotative sekor, and the verb of narration isoytak then names the fourth-person protagonist amameponcikappo ('Little Sparrow'), disclosing the identity of the first-person narrator. ruwe ne predicates the whole disclosure as established fact."
+	/>
 </S>
 
 <S t="Person of narration: the fourth-person narrator-protagonist" id="fourth-person-narrator">

@@ -1573,6 +1573,25 @@ export const bibliography: Record<string, BibEntry> = {
 		note: 'Ainu oral-literature recordings (Horobetsu and other dialects); narrators include Kanenari Matsu 金成マツ. Cite the underlying narrator and document for examples.',
 		lang: 'ja'
 	},
+	zaidanradio2001: {
+		region: 'hokkaido',
+		author: 'Hokkaido Ainu Association / Hokkaido Radio School (北海道アイヌ協会・ラジオ講座)',
+		citeAuthor: 'Radio School text',
+		year: '2001',
+		title: 'アイヌ語ラジオ講座テキスト',
+		url: 'https://www.ff-ainu.or.jp/radio/files/01-1.pdf',
+		note: 'Ainu-language radio lecture texts. Contributors include 大須賀るえ子 (Shiraoi). Cite the underlying speaker for examples.'
+	},
+	nakamoto2009: {
+		region: 'hokkaido',
+		author: 'Nakamoto Mutsuko 中本ムツ子 (speaker); Kayano Shigeru 萱野茂 (supervising)',
+		citeAuthor: 'Nakamoto (CD Express)',
+		year: '2009',
+		title: 'CDエクスプレス アイヌ語',
+		titleTr: 'CD Express Ainugo',
+		publisher: 'Hakusuisha 白水社',
+		note: 'Chitose-dialect language course audio+text. Speaker 中本ムツ子 (Chitose). Cite lesson/exercise number for examples.'
+	},
 	ainukoraci1991: {
 		region: 'hokkaido',
 		author: 'Ainu language learner group, Otaru アイヌ語学習者グループ（小樽）',

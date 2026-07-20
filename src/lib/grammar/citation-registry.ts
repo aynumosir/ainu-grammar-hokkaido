@@ -230,6 +230,8 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	// Corpus / data resources
 	ninjal2003: { sourceRole: 'primary-data', heldLocally: false },
 	ainukoraci1991: { sourceRole: 'primary-data', heldLocally: false },
+	zaidanradio2001: { sourceRole: 'primary-data', heldLocally: false },
+	nakamoto2009: { sourceRole: 'primary-data', heldLocally: false },
 	glossedcorpus2016: { dbSlug: '2016-nakagawa-hiroshi-a-glossed-audio-corpus-of-ainu-folklore', sourceRole: 'primary-data', heldLocally: false },
 	ilcaa1976: { dbSlug: 'ilcaa-ainu-materials', sourceRole: 'primary-data', heldLocally: false },
 	biratori1969: { dbSlug: 'biratori-ainu-oral-literature', sourceRole: 'primary-data', heldLocally: false },
