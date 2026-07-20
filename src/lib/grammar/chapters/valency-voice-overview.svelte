@@ -452,7 +452,7 @@
 
 	<Ex
 		m="usa-oruspe a=e-yay-ko-tuyma-si-ram-suy-pa"
-		g="various-rumor 4.A-APPL-REFL-APPL-far-REFL.POSS-heart-sway-PL"
+		g="various-rumor 4.A=APPL-REFL-APPL-far-REFL.POSS-heart-sway-PL"
 		tr="We keep swaying our hearts afar over various rumours."
 		lit="we sway our hearts about ourselves far over various rumours"
 		cite="shibatani1990:73; bugaeva2014"
