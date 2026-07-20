@@ -273,7 +273,7 @@
 		The sources do not explain the origin of this one-sided suffix system ‹consensus›.
 	</p>
 	<p>
-		For the wider landscape of noun-deriving morphology, including deverbal noun formation and
+		For the wider system of noun-deriving morphology, including deverbal noun formation and
 		the productive nominalizer suffixes, see <Xr ch="deverbal-denominal-noun-derivation" />.
 		For verbal number suppletives whose selection interacts with nouns headed by DIM derivatives,
 		see <Xr ch="suppletive-verbal-number" />.

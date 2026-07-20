@@ -145,7 +145,7 @@
 	<p>
 		Sugimura's agreeing response uses the same property verb
 		<A w="merayke" gl="be cold" /> with the 4th-person intransitive suffix
-		<A w="=an" />. The 4th / indefinite person, whose S-role clitic is <i lang="ain-Latn">=an</i>,
+		<A w="=an" />. The 4th / indefinite person, whose S-role index is <i lang="ain-Latn">=an</i>,
 		shifts the perspective from a specific 3rd-person subject to a general experiencer
 		(<Xr ch="indefinite-fourth-person-paradigm" />). The existential-type aspect form
 		<i lang="ain-Latn">V=an</i> is the same suffix in its aspectual function, discussed

@@ -199,7 +199,7 @@
 
 	<p>
 		The particle <i lang="ain-Latn">easir</i> 'only then, at that point' frequently follows
-		<i lang="ain-Latn">ayne</i> to underscore the delay before the outcome
+		<i lang="ain-Latn">ayne</i> to mark the delay before the outcome
 		<Ref k="sato2008" p="44" />; <Ref k="ijas2023" />. The pattern
 		<i lang="ain-Latn">wa…wa…ayne</i> is common in narrative: a run of
 		<i lang="ain-Latn">wa</i>-chained steps leads up to a final <i lang="ain-Latn">ayne</i>

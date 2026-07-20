@@ -111,12 +111,13 @@
 	</p>
 
 	<Ex
-		m="menoko-yukar anak tup rep pakno ku=eraman"
-		g="woman-epic TOP two three or.so 1SG.A=know"
-		tr="I know two or three women's epics."
-		note="After a statement by 川上まつ子 in the ニューエクスプレスプラス アイヌ語 recording series (沙流). Reconstructed morphemic segmentation; the original surface form is menokoyukar. tup and rep give an approximate count ('two or three'); pakno ≈ 'as many as, or so'."
-		constructed
+		m="huci ape en=epunkine wa apunno"
+		g="grandmother fire 1SG.O=protect.conj CONJ safely"
+		tr="Fire grandmother, protect me and [let me return] safely."
+		cite="ilcaa1976"
 		dial="SAR"
+		place="川上まつ子, AA研「menokoyukar 神謡 4」[aa-irc/011#3]"
+		note="Attested from Kawakami Matsuko's menoko yukar performance (AA研音声資料). The fire deity (huci ape, lit. 'fire grandmother') is invoked as the intermediary deity, consistent with the prayer-address convention that routes all divine communication through the fire deity. The first-person object prefix en= and the conjunctive wa show the embedded prayer within the narrative frame. The word apunno 'safely, without incident' closes the petition. This is a genuine attested example of women's verse (menoko yukar) in the elevated register, with the characteristic deity-address morphology."
 	/>
 
 	<p>
@@ -145,6 +146,20 @@
 		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2024-12-26; asserted; consistent
 		with Endō's account of gendered oral-literature performance <Ref k="endo2022" />) ‹corpus-suggested›.
 	</p>
+	<p>
+		A revitalization-era speaker attests the full gesture-and-word complex in use: the
+		palm-up hand motion accompanies the interjection, and the speaker describes it as a
+		candidate for animated depiction:
+	</p>
+	<Ex
+		m="hinna sekor a=ye hi ta makanak iki=an pe ne yaka anime ani a=nukáre easkay kusu néno a=ki kuni i=nisuk ruwe ne"
+		g="hinna QUOT 4.A=say thing TOP hand.palm.up do=1SG.INTR thing COP DISJ animation INS 4.A=see can.CONJ because so 4.A=do IMP 1SG.O=ask-POSS REP COP"
+		tr="When one says 'hinna', the hands move up and down with the palms up; since this can also be shown in animation, I asked them to do it that way."
+		cite="aynucorporadiscord"
+		dial="SAR"
+		place="横山裕之, アイヌタイムズ「ゴールデンカムイ oruspe」[ainu-times/068/0#44]"
+		note="Attested from Yokoyama Hiroyuki's talk on the anime adaptation of Golden Kamuy. The fourth-person a= marks the narrative-protagonist convention (the speaker narrates his own request in the fourth person, consistent with oral-narrative person-marking). The quotative sekor frames the word hinna as a cited form. The instrumental ani introduces the animation as the medium of depiction. This example confirms the palm-up hand gesture as part of the hinna complex in modern revitalization practice."
+	/>
 
 	<p>
 		The greeting <A w="irankarapte" /> was traditionally a man's formula, delivered with

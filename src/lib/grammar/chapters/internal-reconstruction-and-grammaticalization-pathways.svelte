@@ -364,7 +364,7 @@
 	</p>
 </S>
 
-<S t="The nominalizers -p/-pe and the cep showcase" id="nominalizers">
+<S t="The nominalizers -p/-pe and the cep case" id="nominalizers">
 	<p>
 		The nominalizer suffix <i lang="ain-Latn">-p/-pe</i> derives participant nouns and thing-nouns
 		from predicates. Its lexical source is the free noun <A w="pe" gl="thing, object" />, which

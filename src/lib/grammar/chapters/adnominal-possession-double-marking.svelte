@@ -382,12 +382,12 @@
 
 	<p>
 		With a third-person possessor, <i lang="ain-Latn">kor</i> loses its overt A-prefix and can
-		cliticise phonologically to the following head noun, yielding units such as
+		lean phonologically onto the following head noun, yielding units such as
 		<i lang="ain-Latn">kor-ninkari</i> 'X's earrings'. Bugaeva (2021) reads this as an in-progress
 		shift from the dependent-marking pattern of the full verbal construction toward a head-marking
-		configuration in which <i lang="ain-Latn">kor</i> has become a clitic on the possessed noun
+		configuration in which <i lang="ain-Latn">kor</i> has become a dependent marker on the possessed noun
 		<Ref k="bugaeva2021poss" p="59" /> ‹corpus-suggested›.
-		This trajectory — verbal appositive classifier to head-marking clitic — parallels the path
+		This trajectory — verbal appositive classifier to head-marking dependent — parallels the path
 		already completed in the inalienable system, where the affiliative suffix now sits squarely on
 		the head.
 	</p>

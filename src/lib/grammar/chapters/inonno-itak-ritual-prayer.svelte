@@ -189,6 +189,21 @@
 			constructed
 			note="Constructed to illustrate the 1SG prefix in prayer speech; the ruwe tapan na frame marks formal/ceremonial assertion — see §ruwe-tapan below."
 		/>
+
+		<p>
+			Attested narrative prose confirms the iterative worship pattern with the fourth-person
+			index. A Saru uwepeker records the protagonist worshipping "twice and three times":
+		</p>
+
+		<Ex
+			m="tu ray onkami re ray onkami"
+			g="2 INT worship 3 INT worship"
+			tr="[She] worshipped greatly, twice and three times."
+			cite="ilcaa1976"
+			dial="SAR"
+			place="川上まつ子, AA研「uwepeker 民話8(その1)」[aa-irc/006#164]"
+			note="The fourth-person a= is zero-marked here (null allomorph in narrative prose). The numeral-adverb frame tu…re… ('twice…thrice…') with ray (intensifier) is the standard formulaic expression of repeated ritual action. Contrast the 1SG ku= in prayer proper (§person-marking)."
+		/>
 	</S>
 
 	<S t="Applicative case-marking" id="applicative">
@@ -221,6 +236,22 @@
 			cite="sato2008:263"
 			dial="CHI"
 			note="Satō 2008 ex. 20 (Chitose): elegant-register example contrasting with the colloquial particle-marked form. The goal applicative ko- incorporates the locative relation that would be marked by ta in everyday speech. Here the fourth-person a= marks the (narrative) first person, illustrating the register's applicative morphology in a verse context; in prayer proper, ku- would replace a= (see §person-marking)."
+		/>
+
+		<p>
+			The same goal-applicative pattern recurs in narrative prose. A Saru uwepeker records
+			the iterative worship frame with the applicative prefix on the verb and the
+			fourth-person narrative index:
+		</p>
+
+		<Ex
+			m="ko-onkami a ko-onkami a ayne ora"
+			g="APPL-worship 4 APPL-worship 4 PFV CONJ"
+			tr="Having worshipped [the deity] again and again, finally…"
+			cite="ilcaa1976"
+			dial="SAR"
+			place="川上まつ子, AA研「uwepeker 民話8(その2)」[aa-irc/007#276]"
+			note="The goal applicative ko- marks the deity as the target of worship; the fourth-person a= indexes the narrative protagonist. The verb reduplication (ko-onkami a ko-onkami a) is the standard iterative-intensive frame in ritual narrative, paralleling the 'twice and three times' pattern in §person-marking."
 		/>
 
 		<p>

@@ -27,6 +27,22 @@
 		Members of this cohort — sometimes called "rememberers" — have since been recruited as language
 		resources and participants in the revival movement <Ref k="ono2022" p="§3" />.
 	</p>
+	<p>
+		The same transmission loss is thematised from within the reviving community in composed
+		Ainu prose. Writing in the <i lang="ain-Latn">Ainu Times</i> newsletter, a Saru–Chitose
+		speaker states the breakdown directly, casting the whole proposition in the reportative
+		<i lang="ain-Latn">hawe ne</i> frame:
+	</p>
+
+	<Ex
+		m="tane oka onawtari anakne, poroserke aynu uwepeker ye eaykap pe ne kusu, tane oka hekattar utar ka aynu uwepeker erampewtek pe ne hawe ne."
+		g="now exist.PL parent-ASS TOP most aynu folktale say cannot NMLZ COP because now exist.PL child PL also aynu folktale not.know NMLZ COP REP COP"
+		tr="Nowadays, it is said, most parents cannot tell Ainu folktales; the children now cannot know Ainu folktales either."
+		cite="ainukoraci1991"
+		dial="SAR"
+		place="Ainu Times 60 (contributor 菅野由布子); Saru–Chitose composed prose"
+		note="Composed modern prose from the Ainu Times newsletter (菅野由布子), thematising the very breakdown of intergenerational transmission described above. The sentence pairs the negative auxiliary eaykap 'be unable to' (ye eaykap 'cannot tell') with the negative verb erampewtek 'not know/understand', and frames the statement with the reportative evidential hawe ne, presenting it as general reported knowledge rather than the writer's direct assertion."
+	/>
 </S>
 
 <S t="The speaker situation" id="speakers">

@@ -248,6 +248,25 @@
 	</p>
 
 	<p>
+		A performer's own metalinguistic statement, recorded in the AA研 archive, puts the
+		sakehe at the centre of the sung/prose boundary: the narrator Kawakami Matsuko explains
+		that a <i lang="ain-Latn">menoko yukar</i> is performed <i lang="ain">sakekoye</i>
+		('told with the refrain'), and that when the refrain is omitted the same material is
+		told as <i lang="ain-Latn">uwepeker</i>:
+	</p>
+
+	<Ex
+		m="menoko-yukar sekor sake=ko=ye kor"
+		g="woman-yukar QUOT sakehe=COMIT=say CONJ"
+		ain="menokoyukar って sakekoye するんだけども sakehe 言わないで uwepeker に言うの。"
+		tr="A menoko yukar is told with the refrain (sakekoye); but when one does not say the sakehe, one tells it as a uwepeker (prose tale)."
+		cite="ilcaa1976"
+		dial="SAR"
+		place="川上まつ子, AA研「menokoyukar 神謡6（節なし）」[aa-irc/019#0]"
+		note="A metalinguistic (code-switched) statement in which the narrator names the criterion that separates sung verse from prose: presence versus absence of the sakehe refrain. The same narrator adds (aa-irc/019#66) that 'the sakehe is long, the uwepeker is short' — the refrain is also a length-diagnostic. The m/g lines gloss only the Ainu words embedded in the Japanese-metalanguage frame shown in the ain surface line."
+	/>
+
+	<p>
 		The community discussion archives one live genre-boundary case that bears on the sakehe's
 		defining role. A kamuy yukar narrated by Oda Suteno (織田ステノ, 'Lazybones Child') carries
 		a long sakehe (<i lang="ain-Latn">manayta sanke tar panke tar kocupu</i>) but an

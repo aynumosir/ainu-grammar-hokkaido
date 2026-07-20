@@ -78,7 +78,7 @@ citation-registry.ts.
 		<i lang="ain-Latn">erampewtek</i> 454, <i lang="ain-Latn">niwkes</i> 177, and
 		<i lang="ain-Latn">koyaykus</i> 154, against affirmative <i lang="ain-Latn">easkay</i> 1,324
 		and <i lang="ain-Latn">amkir</i> 143. These are lemma-level token totals, normalized across
-		dialects with personal clitics stripped, so they measure the salience of each item rather than
+		dialects with personal affixes stripped, so they measure the salience of each item rather than
 		the rate of any one construction; on that measure the class belongs to the core grammar of
 		negation and not to an incidental lexical field ‹corpus-confirmed›.
 	</p>

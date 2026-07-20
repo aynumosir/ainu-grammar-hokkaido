@@ -204,7 +204,7 @@
 	</table>
 
 	<p>
-		Crucially, <i lang="ain-Latn">e-</i> and <i lang="ain-Latn">o-</i> in this
+		<i lang="ain-Latn">e-</i> and <i lang="ain-Latn">o-</i> in this
 		function attach only to unaccusative intransitives — verbs whose sole argument
 		is a theme or patient — not to unergatives (agent-subject intransitives)
 		<Ref k="kobayashi2025" p="171" /> ‹corpus-confirmed›. This selectional
@@ -298,7 +298,7 @@
 		level, enabling fully possessor-free NI. For the broader function of
 		<i lang="ain-Latn">i-</i> as antipassive and detransitiviser, see
 		<Xr ch="antipassive-detransitive-i" />. A related use of
-		<i lang="ain-Latn">i=</i> as the fourth-person object clitic — homophonous with
+		<i lang="ain-Latn">i=</i> as the fourth-person object index — homophonous with
 		the antipassive prefix but distinct in status — is documented in
 		<Xr ch="person-marking-architecture" />.
 	</p>

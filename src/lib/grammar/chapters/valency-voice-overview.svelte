@@ -445,7 +445,7 @@
 	<p>
 		Stacking is extensive and bounded by the template. A single verb may carry up to two applicatives,
 		two causatives, two incorporated objects, and a lexical prefix, alongside a reciprocal, reflexive,
-		or antipassive and the agreement indexes <Ref k="bugaeva2014" />. The classic showcase loads an
+		or antipassive and the agreement indexes <Ref k="bugaeva2014" />. The classic example loads an
 		incorporated object (<A w="ram" gl="heart" />), an adverbial element
 		(<A w="tuyma" gl="far" />), one reflexive proper, one reflexive-possessive prefix, and two applicatives onto one transitive root:
 	</p>

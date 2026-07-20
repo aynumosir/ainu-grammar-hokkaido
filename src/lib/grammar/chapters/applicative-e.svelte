@@ -285,7 +285,7 @@
 		Three homophonous prefixes occupy the same surface slot and require the arity computation
 		for disambiguation: the applicative <i lang="ain-Latn">e-</i> (+1), the affiliative
 		<i lang="ain-Latn">e-</i> 'head of' (0), which fills a body-part position while
-		retaining its own possessor, and the second-person agent clitic <i lang="ain-Latn">e=</i>
+		retaining its own possessor, and the second-person agent index <i lang="ain-Latn">e=</i>
 		(a person index, effective −1 on the available slots) <Ref
 			k="nakagawa2024"
 			p="192–193"

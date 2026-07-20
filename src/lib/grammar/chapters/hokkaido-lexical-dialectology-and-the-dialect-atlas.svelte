@@ -388,7 +388,7 @@
 		you (pl)' (<Ref k="nakagawafukazawa2022" p="§5" />).
 	</p>
 	<p>
-		Strikingly, several of these Saru–Chitose forms recur in ‹SA› Sakhalin: the form
+		Several of these Saru–Chitose forms recur in ‹SA› Sakhalin: the form
 		<i lang="ain-Latn">hemata</i> (the Sakhalin cognate of <i lang="ain-Latn">hemanta</i>) 'what'
 		and the prefix <i lang="ain-Latn">eci-</i> appear in both Saru–Chitose and ‹SA›, yet are
 		absent from much of northeast Hokkaido. Nakagawa and Fukazawa find this distribution "hard to

@@ -167,7 +167,7 @@
 
 	<p>
 		The variant <i lang="ain-Latn">iki</i> is clearest in template diagnostics. The plural suffix
-		<i lang="ain-Latn">-pa</i> and the outer plural clitic <i lang="ain-Latn">pa</i> form a minimal
+		<i lang="ain-Latn">-pa</i> and the outer plural element <i lang="ain-Latn">pa</i> form a minimal
 		ordering pair with this verb: <i lang="ain-Latn">iki-pa=an</i> has root-bound
 		<i lang="ain-Latn">-pa</i> inside the fourth-person subject suffix, while
 		<i lang="ain-Latn">iki=an pa</i> has the clitic after the person-inflected word <Ref

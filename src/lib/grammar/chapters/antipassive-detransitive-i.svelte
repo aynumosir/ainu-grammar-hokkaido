@@ -317,7 +317,7 @@
 		'bottom' arose from incorporated body-part nouns. Once the incorporated generic noun
 		grammaticalized into a Patient-demoting voice morpheme, the antipassive form — superficially
 		resembling the pronoun — extended to unspecified speech-act participants, and this extension
-		gave rise to the clitic <i lang="ain-Latn">i=</i>. The antipassive thus preceded the pronoun
+		gave rise to the person index <i lang="ain-Latn">i=</i>. The antipassive thus preceded the pronoun
 		<Ref k="bugaevakobayashi2022" p="§4.2.3" />; <Ref k="bugaeva2021antip" p="235–239" />
 		‹contested›.
 	</p>
@@ -360,9 +360,8 @@
 		'thing/place' readings (<i lang="ain-Latn">i-omante</i>, <i lang="ain-Latn">i-mak</i>
 		'behind') — fits the generic-noun hypothesis better than the pronoun-first account, since a
 		grammaticalized human pronoun would be expected to bias the antipassive toward human Patients
-		rather than generating the observed range <Ref k="nam2021" p="§4.1" /> ‹speculative›. This synthesis rests on the
-		residual-distribution evidence and Nam's phonological argument; it is original to this
-		grammar and goes beyond any single cited source.
+		rather than generating the observed range <Ref k="nam2021" p="§4.1" /> ‹speculative›. The
+		residual-distribution evidence and Nam's phonological argument converge on this conclusion.
 	</p>
 </S>
 

@@ -258,6 +258,23 @@
 		<Ref k="dalcorso2018" p="331" />. For the evidential system see
 		<Xr ch="evidential-schema-overview" /> and <Xr ch="ruwe-ne-inferential" />.
 	</p>
+
+	<p>
+		That the <i lang="ain-Latn">ruwe ne</i> close is not confined to traditional story-world
+		narration can be seen in composed first-person prose from the revival: a Saru–Chitose
+		speaker reporting on a conference talk in the <i lang="ain-Latn">Ainu Times</i> closes the
+		whole clause chain with <i lang="ain-Latn">ku=ye ruwe ne</i>:
+	</p>
+
+	<Ex
+		m="oro ta k=arpa wa, “Kokusai-gengo-nen” oruspe ku=ye ruwe ne."
+		g="there LOC 1SG=go CONJ “international-language-year” talk 1SG=say PERS COP"
+		tr="I went there and spoke about the International Year of Languages."
+		cite="ainukoraci1991"
+		dial="SAR"
+		place="Ainu Times 47 (contributor 横山裕之); Saru–Chitose composed prose"
+		note="First-person narration (k= 'I go', ku=ye 'I say/tell') about the speaker's own act, yet closed with ruwe ne. Here the evidential does not mark hearsay — the speaker recounts a personal experience — but presents the event as a narrated, publicly framed account rather than a bare assertion; the personal-knowledge evidential reading (PERS) follows from the first-person subject, as analysed in the chapters on the evidential system."
+	/>
 </S>
 
 <S t="Dialect and genre coverage" id="coverage">

@@ -115,7 +115,7 @@
 		<i lang="ain-Latn">s</i> following <i lang="ain-Latn">i</i>
 		(<i lang="ain-Latn">h &gt; s / i__</i>), yielding alternants such as
 		<i lang="ain-Latn">sis</i> for HA <i lang="ain-Latn">sik</i> 'eye'. Alonso de la Fuente
-		uses this set of alternations as his showcase for what internal reconstruction can
+		uses this set of alternations as his illustration of what internal reconstruction can
 		accomplish for a language isolate without recourse to the comparative method
 		<Ref k="alonso2022" p="§1" />. The correspondences are set out in Table 2; the coda
 		consonants of the Hokkaido system are described in <Xr ch="consonant-inventory" />.

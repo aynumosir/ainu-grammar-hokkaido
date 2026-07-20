@@ -361,7 +361,7 @@
 	/>
 
 	<p>
-		The clitic primarily indexes participant plurality, especially of the agent, which is the device
+		The outer plural element primarily indexes participant plurality, especially of the agent, which is the device
 		behind one cross-linguistically unusual property of Ainu: plural-marked transitives can co-occur
 		with a plural transitive subject, as in <i lang="ain-Latn">i=res-pa</i> 'they raised me'
 		<Ref k="shibatani1990" p="53" />. The eastern <i lang="ain-Latn">ci</i> behaves the same way and
@@ -380,7 +380,7 @@
 		<Ref k="nakagawa2022" />. Satō's Chitose data make the clitic analysis less secure there:
 		<i lang="ain-Latn">=an pa</i> is rare, a consultant rejected <i lang="ain-Latn">*yaynu-as pa</i>
 		in favour of the bound <i lang="ain-Latn">yaynupa-as</i>, and <i lang="ain-Latn">okaypa</i> is
-		marginal <Ref k="sato2025b" p="25–26" /> ‹contested›. The descriptive generalization is robust: the
+		marginal <Ref k="sato2025b" p="25–26" /> ‹contested›. The descriptive generalization is consistent: the
 		postverbal marker supplies plurality where the stem does not, and adds emphatic or event-plural
 		force where the stem already carries number; Nakagawa reads forms such as
 		<i lang="ain-Latn">kuspare</i> and <i lang="ain-Latn">korpare</i> as evidence that pa2 is drifting

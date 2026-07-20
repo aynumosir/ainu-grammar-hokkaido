@@ -10,7 +10,7 @@
 		second plural <i lang="ain-Latn">eci=</i>, and the fourth-person series, whose number behavior
 		is reference-dependent rather than form-fixed. Verbal number forms a second layer, realized
 		through suppletive singular/plural stem alternations and through two homophonous formatives: a
-		root-attaching plural suffix <i lang="ain-Latn">-pa</i> and an outer plural auxiliary or clitic
+		root-attaching plural suffix <i lang="ain-Latn">-pa</i> and an outer plural auxiliary or element
 		<i lang="ain-Latn">pa</i> that follows the person-inflected verb <Ref
 			k="nakagawa2024"
 			p="140–162"
