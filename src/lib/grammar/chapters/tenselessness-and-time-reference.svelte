@@ -196,6 +196,16 @@
 		<i lang="ain-Latn">kor an</i> clause renders the discourse context, not a grammatical tense
 		feature.
 	</p>
+
+	<Ex
+		m="arwen kamuy ne an=an nisa ruwe ne na"
+		g="very.bad god COP exist=4.S PRF.REC INFR COP FIN"
+		tr="He has become a terribly bad god."
+		cite="biratori1969"
+		dial="SAR"
+		place="Kaizawa Turushino [biratori/004/004#80]"
+		note="The recent perfect nisa marks the change-of-state as just completed; the past reading ('has become') is an inference from the completion semantics, not from a tense morpheme. The verb an=an 'exist' carries no tense inflection; ruwe ne is the nominalized assertion frame."
+	/>
 </S>
 
 <S t="Prospective and future reference" id="prospective">
