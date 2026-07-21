@@ -62,7 +62,11 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	chiri1942: { dbSlug: '1942-chiri', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/1942_Chiri' },
 	refsing1986: { dbSlug: '1986-refsing', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/1986_Refsing' },
 	shibatani1990: { dbSlug: '1990-shibatani', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/1990_Shibatani' },
-	tajima1992: { sourceRole: 'prior-analysis', heldLocally: false },
+	tajima1992: {
+		sourceRole: 'prior-analysis',
+		heldLocally: true,
+		path: 'books/1992_Tajima/Complex_predicate_formation_in_Ainu.pdf'
+	},
 	tamura1996: { dbSlug: '1996-tamura', sourceRole: 'primary-data', heldLocally: false },
 	tamura2000: { dbSlug: '2000-suzuko-tamura-the-ainu-language', sourceRole: 'prior-analysis', heldLocally: false },
 	sato2008: { dbSlug: '2008-sato', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2008_Sato' },
