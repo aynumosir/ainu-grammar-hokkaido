@@ -179,6 +179,14 @@
 		subject — the 'reflexive interpretation rescue' in Satō's markedness calculus, treated in
 		<Xr ch="noun-incorporation-subject-possessor-stranding" /> <Ref k="satoni2022" p="§3.3, §5" />.
 	</p>
+	<p>
+		The reciprocal construction uses the same word-internal possession pattern with
+		<i lang="ain-Latn">u-</i>. Forms such as <i lang="ain-Latn">u-tek-kisma</i>
+		‘shake hands’, <i lang="ain-Latn">u-oruspe-nu</i> ‘discuss things’, and
+		<i lang="ain-Latn">u-itak-nu</i> ‘agree; obey’ are treated together with the
+		reflexive patterns in <Xr ch="reciprocal-u" s="quasi-possessive" />. The shared structure
+		is a possessor prefix followed by a bare incorporated noun and its verbal host.
+	</p>
 </S>
 
 <S t="The 'pretend to' construction" id="pretend">

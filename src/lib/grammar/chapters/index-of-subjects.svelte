@@ -39,6 +39,7 @@
 		<li>Adnouns and prenominals — <Xr ch="word-class-inventory-and-diagnostics" /></li>
 		<li>Adverb incorporation and stacking limits — <Xr ch="noun-incorporation-oblique-polysynthesis-debate" /></li>
 		<li>Adverbs and postpositional adverbs — <Xr ch="word-class-inventory-and-diagnostics" /></li>
+		<li>Aeuitaknup: a nominalized quasi-possessive reciprocal — <Xr ch="reciprocal-u" /></li>
 		<li>Affiliative-suffix position — <Xr ch="noun-noun-compounding" /></li>
 		<li>Affiliative-type prefixes e- and o- — <Xr ch="external-possession-possessor-raising" /></li>
 		<li>Aims and intended readership — <Xr ch="aims-scope-design-philosophy" /></li>
@@ -100,6 +101,7 @@
 	<h3>B</h3>
 	<ul class="subject-index">
 		<li>Bare complementation — <Xr ch="nominalized-complements-control-raising" /></li>
+		<li>Bare incorporated nouns and word-internal possessors — <Xr ch="reciprocal-u" /></li>
 		<li>Batchelor, Piłsudski, and early Western documentation — <Xr ch="history-of-description-research" /></li>
 		<li>BE-type: existential possession with affiliative nouns — <Xr ch="predicative-possession-clauses" /></li>
 		<li>Bihoro and eastern-dialect cluster simplification — <Xr ch="coda-r-assimilation-sonorant-sandhi" /></li>
@@ -348,6 +350,7 @@
 		<li>From Batchelor to the modern standard — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>From documentation to revival — <Xr ch="sociolinguistic-situation-revitalization" /></li>
 		<li>From early romanizations to the modern standard — <Xr ch="orthographic-standardization-and-word-division" /></li>
+		<li>From hearing words to agreement and obedience — <Xr ch="reciprocal-u" /></li>
 		<li>From the 1997 law to the 2019 recognition — <Xr ch="ainu-people-homeland-history" /></li>
 		<li>Fukazawa and Ono 2024: boundary dialects — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>Function of the sakehe: the protagonist-index debate — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
@@ -800,6 +803,7 @@
 		<li>Qualitative-possessive compounds: the N-kor-kur type — <Xr ch="noun-noun-compounding" /></li>
 		<li>Quantifier float and the noun–numeral–verb pattern — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
 		<li>Quantifier syntax: three positions — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
+		<li>Quasi-possessive reciprocals: formation and motivation — <Xr ch="reciprocal-u" /></li>
 		<li>Quotative density and the reportative frame — <Xr ch="narrative-tam-evidential-patterning-by-genre" /></li>
 	</ul>
 	<h3>R</h3>

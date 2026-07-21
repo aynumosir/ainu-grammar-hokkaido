@@ -62,6 +62,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	chiri1942: { dbSlug: '1942-chiri', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/1942_Chiri' },
 	refsing1986: { dbSlug: '1986-refsing', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/1986_Refsing' },
 	shibatani1990: { dbSlug: '1990-shibatani', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/1990_Shibatani' },
+	tajima1992: { sourceRole: 'prior-analysis', heldLocally: false },
 	tamura1996: { dbSlug: '1996-tamura', sourceRole: 'primary-data', heldLocally: false },
 	tamura2000: { dbSlug: '2000-suzuko-tamura-the-ainu-language', sourceRole: 'prior-analysis', heldLocally: false },
 	sato2008: { dbSlug: '2008-sato', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2008_Sato' },
@@ -103,6 +104,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	hattori1964: { sourceRole: 'primary-data', heldLocally: false },
 	chiri1953: { sourceRole: 'primary-data', heldLocally: false },
 	batchelor1897: { dbSlug: 'ainu-bible-batchelor-translation', sourceRole: 'philological-witness', heldLocally: false },
+	batchelor1903: { sourceRole: 'philological-witness', heldLocally: false },
 	batchelor1905: { dbSlug: '1905-batchelor-ainu-english-japanese-dictionary', sourceRole: 'philological-witness', heldLocally: false },
 	batchelor1938: { dbSlug: '1938-batchelor-ainu-english-japanese-dictionary-4ed', sourceRole: 'philological-witness', heldLocally: false },
 	bugaeva2015topical: { dbSlug: '2015-bugaeva-anna-a-topical-dictionary-of-conversational-ainu-englis', sourceRole: 'primary-data', heldLocally: false },
@@ -141,6 +143,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	bugaeva2021antip: { dbSlug: '2021-anna-bugaeva-unspecified-participant-a-case-of-antipassive-in-a', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2025: { dbSlug: '2025-bugaeva-anna-a-diachronic-study-of-anticausatives-in-ainu', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaevakobayashi2022: { dbSlug: '2022-anna-bugaeva-15-verbal-valency', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
+	alpatovbugaevanedjalkov2007: { sourceRole: 'prior-analysis', heldLocally: false },
 	kobayashi2015: { sourceRole: 'prior-analysis', heldLocally: true },
 	takahashi2017: { sourceRole: 'prior-analysis', heldLocally: true },
 	sato2007: { sourceRole: 'prior-analysis', heldLocally: true },
@@ -178,6 +181,10 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	// Nominalization & relativization
 	bugaeva2015: { dbSlug: '2015-bugaeva-anna-an-equivalent-of-the-standard-of-comparison-relativization-in-ainu', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2016: { dbSlug: '2016-bugaeva-anna-on-the-innovative-nature-of-sakhalin-ainu-focusing-on-nominalization', sourceRole: 'prior-analysis', heldLocally: true },
+	moe2021: { sourceRole: 'primary-data', heldLocally: false },
+	cambridgeturkish2022: { sourceRole: 'primary-data', heldLocally: false },
+	dehkhoda1931: { sourceRole: 'primary-data', heldLocally: false },
+	lealglanz2021: { sourceRole: 'prior-analysis', heldLocally: false },
 	takahashi2018: { sourceRole: 'prior-analysis', heldLocally: true },
 
 	// Possession
