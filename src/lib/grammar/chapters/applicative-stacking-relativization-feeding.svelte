@@ -63,7 +63,7 @@
 	/>
 
 	<p>
-		The showcase documented by Shibatani — attributed to Chiri (1936: 169) — combines two
+		The example documented by Shibatani — attributed to Chiri (1936: 169) — combines two
 		applicatives with one reflexive proper, one reflexive-possessive prefix, an adverbial
 		element, and an incorporated object on a single root:
 	</p>
@@ -80,7 +80,7 @@
 	/>
 
 	<p>
-		Bugaeva and Kobayashi's second showcase demonstrates re-intransitivization through stacking:
+		Bugaeva and Kobayashi's second example demonstrates re-intransitivization through stacking:
 		a frame extended by two applicatives is collapsed back to bivalent by incorporating one
 		applied object and reflexivizing the other
 		<Ref k="bugaevakobayashi2022" p="§4.1.1" />:

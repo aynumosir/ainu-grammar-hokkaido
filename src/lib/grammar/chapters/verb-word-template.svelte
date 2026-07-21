@@ -117,7 +117,7 @@
 			p="96"
 		/>. The second is the position of the two homophonous plural <i lang="ain-Latn">pa</i>
 		elements. The Type-C plural suffix <i lang="ain-Latn">-pa</i> is root-bound and stands inside the
-		person suffix and inside the causative, whereas the outer plural clitic
+		person suffix and inside the causative, whereas the outer plural element
 		<i lang="ain-Latn">pa</i> follows the whole person-inflected verb:
 		<i lang="ain-Latn">iki-pa=an</i> with the suffix before <i lang="ain-Latn">=an</i> contrasts with
 		<i lang="ain-Latn">iki=an pa</i> with the clitic after it <Ref k="nakagawa2024" p="156–159" />.

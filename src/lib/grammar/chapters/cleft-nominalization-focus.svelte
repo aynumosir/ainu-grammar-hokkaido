@@ -451,7 +451,7 @@
 		>, and the clause ends with a verb in the suffix <i lang="ain-Latn">-natara</i>,
 		<i lang="ain-Latn">-atki</i>, or <i lang="ain-Latn">-rototke</i>
 		<Ref k="sato2008" p="65–66" />. This construction is
-		restricted to oral literature and its grammatical status is unclear; crucially, the
+		restricted to oral literature and its grammatical status is unclear; the
 		nouns before <i lang="ain-Latn">konna</i> appear in their concept form
 		(<i lang="ain-Latn">ru</i>, not <i lang="ain-Latn">ruwe</i>), unlike their use as
 		evidential formal nouns, a distribution that Satō flags as unexplained ‹contested›.

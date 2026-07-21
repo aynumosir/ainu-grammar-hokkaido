@@ -192,6 +192,15 @@
 		number-agreement override is a diagnostic of verse language and does not appear in prose
 		<Ref k="sato2008" p="263" />. See <Xr ch="person-marking-architecture" /> for the paradigm.
 	</p>
+	<Ex
+		m="yaykeste=an wa tan uske ta ek=an wa an=an ruwe ne korka"
+		g="wander.about=4.S CONJ DEM place LOC come=4.S CONJ exist=4.S track-POSS COP but"
+		tr="I wandered about and came to this place and have been living here, but …"
+		cite="ilcaa1976"
+		dial="SAR"
+		place="Kawakami Matsuko, uwepeker 10"
+		note="The narrative 'I' is indexed by the fourth-person =an throughout: ek=an pairs the singular verb ek 'come' with the 4th-person ending, and an=an ruwe ne closes the clause as narrative-default. The everyday 1SG ku= never appears; the protagonist speaks of herself in the non-everyday logophoric frame."
+	/>
 	<p>
 		The narrative closes with a retrospective identification formula. The fourth-person
 		"I" who has narrated throughout is revealed at the end: the narrator supplies the

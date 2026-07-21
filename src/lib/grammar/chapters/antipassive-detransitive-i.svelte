@@ -267,6 +267,16 @@
 		discourse contexts, not only constructed elicitation.
 	</p>
 
+	<Ex
+		m="ipe=as kaki, iku=as ka ki wa"
+		g="eat=1PL.EXCL.S also ANTIP-drink=1PL.EXCL.S also do CONJ"
+		tr="We ate and also drank."
+		cite="ainukoraci1991"
+		dial="SAR"
+		place="浜田 隆史, 'te ta anakne...', Ainu Times no. 40 (ainu-times/040/0#16)"
+		note="The suffix =as (1PL.EXCL.S) on both ipe and i-ku confirms intransitive status. i-ku is the antipassive of ku 'drink', here in its lexicalized 'drink (alcohol)' sense. The parallel structure ipe=as … iku=as shows both antipassive derivatives taking the same intransitive S suffix in a single coordinated clause."
+	/>
+
 	<p>
 		The antipassive can be re-applicativized: the applicative prefix <i lang="ain-Latn">e-</i>
 		reintroduces a content or instrument object to the now-intransitive stem, raising arity by one
@@ -317,7 +327,7 @@
 		'bottom' arose from incorporated body-part nouns. Once the incorporated generic noun
 		grammaticalized into a Patient-demoting voice morpheme, the antipassive form — superficially
 		resembling the pronoun — extended to unspecified speech-act participants, and this extension
-		gave rise to the clitic <i lang="ain-Latn">i=</i>. The antipassive thus preceded the pronoun
+		gave rise to the person index <i lang="ain-Latn">i=</i>. The antipassive thus preceded the pronoun
 		<Ref k="bugaevakobayashi2022" p="§4.2.3" />; <Ref k="bugaeva2021antip" p="235–239" />
 		‹contested›.
 	</p>
@@ -360,9 +370,8 @@
 		'thing/place' readings (<i lang="ain-Latn">i-omante</i>, <i lang="ain-Latn">i-mak</i>
 		'behind') — fits the generic-noun hypothesis better than the pronoun-first account, since a
 		grammaticalized human pronoun would be expected to bias the antipassive toward human Patients
-		rather than generating the observed range <Ref k="nam2021" p="§4.1" /> ‹speculative›. This synthesis rests on the
-		residual-distribution evidence and Nam's phonological argument; it is original to this
-		grammar and goes beyond any single cited source.
+		rather than generating the observed range <Ref k="nam2021" p="§4.1" /> ‹speculative›. The
+		residual-distribution evidence and Nam's phonological argument converge on this conclusion.
 	</p>
 </S>
 

@@ -114,6 +114,15 @@
 		participant is the O of a transitive verb. The identity belongs to the 1SG row of the
 		paradigm and is not tracking control ‹consensus›.
 	</p>
+	<Ex
+		m="Sapporo or un ku=arpa ka somo ki; ku=sesek humi!"
+		g="Sapporo ALLAT LOC 1SG=go also NEG COP; 1SG=be.hot INTERJ!"
+		tr="I won't go to Sapporo; I'm hot!"
+		cite="nakamoto2009"
+		dial="CHI"
+		place="CD Express Ainugo"
+		note="A 1SG agentive intransitive (arpa, controllable 'go') and a 1SG experiential intransitive (sesek, uncontrollable 'be hot') both index the subject with the same ku=. The identical person form is exactly what the claim above predicts: the 1SG row does not distinguish control."
+	/>
 </S>
 
 <S t="Lexical classes, the unaccusative diagnostic, and incorporation" id="lexical-classes">

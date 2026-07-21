@@ -216,6 +216,19 @@
 		<Ref k="aynucorporadiscord" />) ‹speculative›.
 	</p>
 	<p>
+		A Saru narrative records the genre terms in disjunctive alternation, with the narrator
+		uncertain whether the performance was <i lang="ain-Latn">yukar</i> or <i lang="ain-Latn">oyna</i>:
+	</p>
+	<Ex
+		m="ipinu pa katu ka a=erampewtek no yukar he oyna he ki pa kor"
+		g="hear PFV but FOC 4=know.NEG COND yukar DISJ oyna DISJ do PFV CONJ"
+		tr="I did not know whether they were listening secretly, but I heard them doing yukar or oyna."
+		cite="ilcaa1976"
+		dial="SAR"
+		place="川上まつ子, AA研「uwepeker 民話8(その2)」[aa-irc/007#149]"
+		note="The disjunctive particle he…he… ('or…or…') coordinates the two genre terms, treating them as interchangeable alternatives in the narrator's uncertainty. The fourth-person a= on erampewtek 'know' indexes the narrative protagonist. The light verb ki 'do' takes the genre nouns as its complement, showing that yukar and oyna function as activity nouns (cf. ukooyna, ukoyukara 'do oyna/yukar reciprocally' in aa-irc/007#136)."
+	/>
+	<p>
 		The Abuta dialect (Iburi, 虻田) yukar narrated by 遠島タンケ attests the same aspectual and
 		comparative apparatus as Saru/Chitose verse narrative, including durative
 		<i lang="ain-Latn">kor okay</i>, resultative <i lang="ain-Latn">wa okay</i> /
@@ -393,6 +406,20 @@
 		closure connects to the broader system of narrative reference tracking treated in
 		<Xr ch="reference-tracking" />.
 	</p>
+	<p>
+		The opening move of a Saru uwepeker shows the narrator naming the genre in the first
+		person before the tale proper begins — the performative self-announcement that frames
+		the prose narration:
+	</p>
+	<Ex
+		m="uwepeker ku=ye kusu ne a korka"
+		g="prose.tale 1SG.A=say because COP 4 CONJ"
+		tr="I will tell a uwepeker, but…"
+		cite="ilcaa1976"
+		dial="SAR"
+		place="川上まつ子, AA研「uwepeker 民話20」[aa-irc/029#0]"
+		note="The narrator announces the genre with the 1SG agent prefix ku= on ye 'say'. The fourth-person a= in ne a korka marks the narrative voice that follows. Contrast the Shizunai narrator Oda Suteno's shorter frame takne uwepeker ku=ye 'I will tell a short uwepeker' (aa-irc/026#0)."
+	/>
 	<p>
 		<i lang="ain-Latn">Ucaskuma</i> / <i lang="ain-Latn">upaskuma</i> designates a looser
 		genre of oral tradition, legend, and historical account; it imposes no fixed verse or

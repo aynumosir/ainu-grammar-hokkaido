@@ -356,7 +356,7 @@
 		resulting system — a single coda <i lang="ain-Latn">h</i> for historically distinct
 		<i lang="ain-Latn">p, t, k</i> — would be irrecoverable from ‹SA› alone; the Hokkaido
 		cognates and the ‹SA› affiliative together supply the two independent verification routes
-		that Alonso de la Fuente <Ref k="alonso2022" p="§1" /> calls a showcase of internal
+		that Alonso de la Fuente <Ref k="alonso2022" p="§1" /> calls an illustration of internal
 		reconstruction for an isolate. The genetic position of Ainu — an isolate for which no
 		comparative method in the strict sense applies — makes this type of internal, morphologically
 		mediated evidence especially load-bearing; for the macro-comparative context see

@@ -92,7 +92,7 @@
 		number-neutral unless plurality is supplied lexically or by context, so that
 		<i lang="ain-Latn">cep</i> 'fish' may be read as singular or plural <Ref k="ijas2023" />;
 		<Ref k="nakagawa2024" p="124–125" />; <Ref k="shibatani1990" p="32–33" />. Number enters the
-		verbal system separately, through stem alternation and the plural clitics treated in
+		verbal system separately, through stem alternation and the plural elements treated in
 		<Xr ch="suppletive-verbal-number" />.
 	</p>
 </S>

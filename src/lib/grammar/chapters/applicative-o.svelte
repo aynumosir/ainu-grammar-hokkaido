@@ -124,6 +124,16 @@
 		constructed
 		note="The place goal pet 'river' is a bare noun in direct-object position — no postposition — because o- has licensed it as a core object. The postpositional paraphrase is pet ta arpa or pet or un arpa. The prefixal 1SG.A index ku= proves the derived transitivity; compare the intransitive base ku=arpa-as (with suffixal S =as), where no place object is licensed."
 	/>
+
+	<Ex
+		m="kamuy or oarpa hine ora nea menoko a=kor wa"
+		g="god place APPL-go CONJ CONJ DEM woman 4.A=have CONJ"
+		tr="He went to the place of the kamuy (heaven), and then took that (human) woman as his wife."
+		cite="biratori1969"
+		dial="SAR"
+		place="Kurokawa Teshime [biratori/024/003#145]"
+		note="The place goal kamuy or 'the place of the kamuy' is the applied object licensed by o- on arpa; the postposition or co-occurs with the applicative, confirming that o- promotes the locative adjunct to core-object status. The fourth-person agent a= on kor marks an unspecified agent in the narrative."
+	/>
 </S>
 
 <S t="Lexicalized forms and productive use" id="lexicalization">

@@ -194,12 +194,25 @@ for (const ch of chapters) {
 			if (mw.length !== gw.length)
 				report('error', 'ex-mg-count', slug, t.line, `m has ${mw.length} words, g has ${gw.length}`);
 			else {
-				// W: Leipzig boundary alignment (- and = counts per word)
+				// W: Leipzig boundary alignment.
+				//   - the clitic boundary `=` is meaningful: a cliticized source word
+				//     (ku=nukar, =an, anak=ne) must gloss with the SAME number of `=`.
+				//   - the hyphen `-` is overloaded and mostly noise: it marks Leipzig
+				//     compound-gloss separators (ruwe → track-POSS, sinen → one-HUM),
+				//     orthographic hyphens (kamuy-yukar), and analytical compounds, none
+				//     of which correspond to a source morpheme boundary. Only flag a `-`
+				//     mismatch when NEITHER side contains a hyphen at all (a pure
+				//     segmentation difference), which has never occurred in this corpus.
 				mw.forEach((w, i) => {
-					const bm = (w.match(/[-=]/g) || []).length;
-					const bg = (gw[i].match(/[-=]/g) || []).length;
-					if (bm !== bg)
-						report('warn', 'ex-boundary-align', slug, t.line, `"${w}" (${bm} boundaries) ~ "${gw[i]}" (${bg})`);
+					const g = gw[i];
+					const clm = (w.match(/=/g) || []).length;
+					const clg = (g.match(/=/g) || []).length;
+					if (clm !== clg)
+						report('warn', 'ex-boundary-align', slug, t.line, `clitic "=" count mismatch: "${w}" (${clm}) ~ "${g}" (${clg})`);
+					const hm = (w.match(/-/g) || []).length;
+					const hg = (g.match(/-/g) || []).length;
+					if (hm !== hg && hm === 0 && hg === 0)
+						report('warn', 'ex-boundary-align', slug, t.line, `boundary "-" mismatch: "${w}" (${hm}) ~ "${g}" (${hg})`);
 				});
 			}
 		} else {

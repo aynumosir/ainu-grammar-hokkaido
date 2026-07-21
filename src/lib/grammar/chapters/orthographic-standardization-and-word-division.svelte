@@ -53,7 +53,7 @@
 		correspondent.
 	</p>
 	<p>
-		The pivotal choices within this shared framework concern the affricate and the sibilant. The
+		The central choices within this shared framework concern the affricate and the sibilant. The
 		modern standard writes <i>c</i> for the affricate /c/ and <i>s</i> for the sibilant /s/,
 		abandoning the digraphs <i>ch</i>/<i>sh</i>, the diacriticized forms <i>č</i>/<i>š</i>, and
 		the phonetically motivated <i>ts</i>. Usage of <i>ch</i>/<i>sh</i> now survives mainly in
@@ -92,7 +92,7 @@
 		principles section of the 1986 publication <span lang="ja">語りの中の生活誌</span>, from
 		where it spread to other researchers and teaching materials
 		<Ref k="nakagawa2024" p="58–60" />; <Ref k="aynucorporadiscord" /> (nukopoli, 2024–11–09)
-		‹consensus›. Crucially, Nakagawa states in so many words that this use of <code>=</code> is
+		‹consensus›. Nakagawa states in so many words that this use of <code>=</code> is
 		<em>unrelated</em> to the general-linguistic convention whereby the equals sign marks a
 		clitic boundary (<span lang="ja">接辞・接語の表示慣習とは無関係である</span>), and he
 		concedes that Satō's hyphen notation conforms better to standard practice; he retains
@@ -195,7 +195,7 @@
 			Japanese-influenced surface <i lang="ain-Latn">n</i>, and others the etymological split;
 			the assimilation of the nasal in loanwords like
 			<i lang="ain-Latn">kampi</i> 'paper' (← Japanese <span lang="ja">紙</span> <i>kaNbi</i>)
-			presents a particularly intricate case where different analytical stances yield different
+			presents a particularly complex case where different analytical stances yield different
 			spellings <Ref k="aynucorporadiscord" /> (nukopoli, 2024–03–23; 2024–11–16) ‹contested›.
 			The phonological rule is analyzed in <Xr ch="coda-r-assimilation-sonorant-sandhi" />.
 			This grammar follows the etymological-morphological convention: <A w="kamuy" gl="spirit, deity" />

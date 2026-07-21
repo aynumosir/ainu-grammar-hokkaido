@@ -201,7 +201,7 @@
 		The auxiliary may reduplicate to express an iterative or prolonged-continuity reading —
 		'went on V-ing, V-ed over and over'. The pattern repeats the verb-plus-auxiliary unit:
 		<i lang="ain-Latn">V a V a</i> (singular) or <i lang="ain-Latn">V rok V rok</i> (plural).
-		With a fourth-person subject, the person clitic may stand alone in the second occurrence
+		With a fourth-person subject, the person index may stand alone in the second occurrence
 		(<i lang="ain-Latn">=an a =an a</i>), abbreviating the repeated verb base
 		<Ref k="nakagawa2024" p="307–308" />; <Ref k="bugaeva2012" p="493" />.
 	</p>

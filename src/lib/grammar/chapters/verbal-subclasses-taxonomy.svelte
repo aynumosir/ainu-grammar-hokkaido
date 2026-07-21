@@ -178,7 +178,7 @@
 		<em>agentive</em> intransitives, whose S argument is volitional and agent-like (motion, action,
 		and activity predicates), and <em>patientive</em> intransitives, whose S argument is an
 		experiencer or the subject of a state (property predicates, involuntary experience verbs).
-		Crucially, the basic person-affix paradigm does not encode this contrast morphologically: both
+		The basic person-affix paradigm does not encode this contrast morphologically: both
 		groupings select the same S affix set across all persons
 		<Ref k="nakagawa2024" p="126–127" />. The agreement system is therefore not split-intransitive
 		in the morphological sense — S-set assignment depends only on valence, not on the

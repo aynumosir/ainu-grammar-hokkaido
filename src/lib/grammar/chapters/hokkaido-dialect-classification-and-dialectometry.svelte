@@ -2,7 +2,7 @@
 	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
 </script>
 
-<S t="The Hokkaido dialect landscape" id="overview">
+<S t="The Hokkaido dialect system" id="overview">
 	<p>
 		The Ainu communities documented across Hokkaido in the late nineteenth and twentieth
 		centuries show both continuous gradient variation and a set of discrete isoglosses whose

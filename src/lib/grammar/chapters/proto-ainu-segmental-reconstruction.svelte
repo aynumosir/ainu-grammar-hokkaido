@@ -533,7 +533,7 @@
 
 	<p>
 		The internal reconstruction of <i lang="ain-Latn">cep</i> 'fish' is Alonso de la Fuente's
-		showcase for what internal reconstruction can recover for an isolate
+		illustration of what internal reconstruction can recover for an isolate
 		<Ref k="alonso2022" p="Table 18" />:
 	</p>
 

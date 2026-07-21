@@ -263,7 +263,7 @@
 			<Ref k="fukuda1961" p="§28" />. Its structural property is free stacking after
 			<i lang="ain-Latn">na</i> or <i lang="ain-Latn">yan</i>, yielding bipartite clusters
 			<i lang="ain-Latn">na hani</i> and <i lang="ain-Latn">yan hani</i>; the latter
-			contracts to <i lang="ain-Latn">yanani</i> in Chitose. Crucially,
+			contracts to <i lang="ain-Latn">yanani</i> in Chitose.
 			<i lang="ain-Latn">hani</i> is not restricted to imperatives, as the following shows:
 		</p>
 
@@ -597,7 +597,7 @@
 			<i lang="ain-Latn">sekor</i> &lt; <i lang="ain-Latn">se</i> 'make a sound' +
 			<i lang="ain-Latn">kor</i> 'while' (nukopoli, aynu-corpora Discord 2024-11-09;
 			<Ref k="aynucorporadiscord" />, asserted, corroborated by Nakagawa 2024: 470)
-			underscores its adverbial origin: it is 'saying while', not a clause-closing
+			confirms its adverbial origin: it is 'saying while', not a clause-closing
 			illocutionary marker. The full syntactic and typological treatment of
 			<i lang="ain-Latn">sekor</i> is in <Xr ch="quotative-complementation-sekor" /> and
 			<Xr ch="logophoric-narration-and-reported-discourse" />.

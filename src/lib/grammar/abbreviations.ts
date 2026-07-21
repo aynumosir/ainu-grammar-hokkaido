@@ -40,6 +40,7 @@ export const abbreviations: Record<string, string> = {
 	COP: 'copula',
 	ANAPH: 'anaphoric (discourse-tracking)',
 	DEM: 'demonstrative',
+	DISJ: 'disjunctive (or-coordinating particle)',
 	DIR: 'direct (as in CAUS.DIR, direct causative)',
 	DES: 'desiderative',
 	DIM: 'diminutive',

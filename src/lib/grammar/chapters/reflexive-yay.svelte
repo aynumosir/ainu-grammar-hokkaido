@@ -358,7 +358,7 @@
 		layer and outside the root: person-index — reflexive/applicative — root —
 		forming-suffix — causative — person-index
 		<Ref k="nakagawa2024" p="210–212" />. Two reflexive prefixes and two applicatives can
-		co-occur on a single root, as in the showcase word
+		co-occur on a single root, as in the word
 		<i lang="ain-Latn">a=e-yay-ko-tuyma-si-ram-suy-pa</i> discussed in
 		<Xr ch="valency-voice-overview" s="template" />
 		<Ref k="shibatani1990" p="73" />; <Ref k="bugaeva2014" />.

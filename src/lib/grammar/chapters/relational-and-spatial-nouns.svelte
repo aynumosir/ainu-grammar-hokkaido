@@ -395,7 +395,7 @@
 	</p>
 </S>
 
-<S t="The pivotal role of or" id="or-drift">
+<S t="The central role of or" id="or-drift">
 	<p>
 		Among the relational nouns, <i lang="ain-Latn">or</i> occupies a singular position:
 		its meaning has bleached to the point where it functions as a general locative

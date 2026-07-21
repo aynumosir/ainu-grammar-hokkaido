@@ -199,7 +199,7 @@
 
 	<S t="Person affixes and independent pronouns" id="topic-pronouns">
 		<p>
-			A delimiting particle cannot attach to a person-agreement prefix. Those prefixes are clitics
+			A delimiting particle cannot attach to a person-agreement prefix. Those prefixes are bound indexes
 			that form a morphological unit with the stem; they are not free words and cannot host a
 			postposition or particle. Topicalizing a first- or second-person participant therefore
 			requires the free independent pronoun (<A w="kani" gl="I" />,

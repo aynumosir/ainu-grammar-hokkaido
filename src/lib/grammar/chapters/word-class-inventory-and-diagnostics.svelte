@@ -23,7 +23,7 @@
 		but subdivides noun to accommodate nominalizers and numeral nouns as distinct subclasses. Ijäs
 		<Ref k="ijas2023" /> follows the six-class scheme in her pedagogical grammar. Refsing's
 		Shizunai grammar <Ref k="refsing1986" p="74–76" /> collapses the inventory into three
-		macro-classes (Nominals, Verbals, Clitics), treating adnouns as clitics and grouping
+		macro-classes (Nominals, Verbals, Particles), treating adnouns as particles and grouping
 		conjunctions, interjections, and adverbs together ‹contested›.
 	</p>
 
