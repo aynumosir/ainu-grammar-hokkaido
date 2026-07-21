@@ -6,7 +6,7 @@
 	<p>
 		This index lists every source from which an interlinear example is drawn, with the chapters
 		in which its examples appear and the number of examples taken from it. It is generated from the
-		910 attested and constructed examples across the grammar; constructed examples are
+		912 attested and constructed examples across the grammar; constructed examples are
 		attributed to the source whose analysis they illustrate. Full bibliographic details are in
 		<Xr ch="consolidated-references-bibliography" />.
 	</p>
@@ -16,12 +16,12 @@
 			<tr><td>Ainu Koraci (1991)</td><td>25</td><td><Xr ch="citation-vs-combining-stem-shapes" />, <Xr ch="concept-form-affiliative-form" />, <Xr ch="affiliative-suffix-morphophonology" />, <Xr ch="kinship-honorific-possession" />, <Xr ch="interrogative-pro-forms" />, <Xr ch="vigesimal-numeral-system" />, <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" />, <Xr ch="causative-morphological-re-e-te" />, <Xr ch="applicative-o" />, <Xr ch="copula-ne-predicate-nominals" />, <Xr ch="existential-locational-an-oka" />, <Xr ch="property-concept-predication" />, <Xr ch="nonverbal-predicate-tam-negation" />, <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="sequential-wa-and-clause-chaining" />, <Xr ch="simultaneous-kor-clauses" />, <Xr ch="pragmatic-word-order-dislocation" />, <Xr ch="japanese-loanwords-in-ainu" />, <Xr ch="inonno-itak-ritual-prayer" /></td></tr>
 			<tr><td>Alonso de la Fuente (2022)</td><td>2</td><td><Xr ch="genetic-position-macro-comparison" />, <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></td></tr>
 			<tr><td>aynu-corpora Discord (2023–2026)</td><td>1</td><td><Xr ch="s-palatalization" /></td></tr>
-			<tr><td>Batchelor (1897)</td><td>2</td><td><Xr ch="historical-orthographies-and-the-batchelor-tradition" /></td></tr>
+			<tr><td>Batchelor (1897)</td><td>3</td><td><Xr ch="historical-orthographies-and-the-batchelor-tradition" />, <Xr ch="reciprocal-u" /></td></tr>
 			<tr><td>Biratori Ainu oral literature (1969)</td><td>15</td><td><Xr ch="citation-vs-combining-stem-shapes" />, <Xr ch="word-class-inventory-and-diagnostics" />, <Xr ch="nominal-number-utar-transnumerality" />, <Xr ch="relational-and-spatial-nouns" />, <Xr ch="postpositions-local-case-and-motion-events" />, <Xr ch="tam-overview" />, <Xr ch="perfective-anterior-a" />, <Xr ch="deontic-necessity" />, <Xr ch="epistemic-irrealis-modality" />, <Xr ch="negation-polarity-items-scope" />, <Xr ch="sakehe-refrain-and-sung-verse-structure" />, <Xr ch="heroic-and-divine-verse" /></td></tr>
 			<tr><td>Bugaeva (2021)</td><td>1</td><td><Xr ch="external-possession-possessor-raising" /></td></tr>
 			<tr><td>Bugaeva (2006)</td><td>2</td><td><Xr ch="applicative-ko" />, <Xr ch="applicative-stacking-relativization-feeding" /></td></tr>
+			<tr><td>Bugaeva (2016)</td><td>5</td><td><Xr ch="reciprocal-u" />, <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="nominalized-complements-control-raising" /></td></tr>
 			<tr><td>Bugaeva (2012)</td><td>4</td><td><Xr ch="predicative-possession-clauses" />, <Xr ch="existential-aspect-an-oka" />, <Xr ch="negation-somo-standard-clausal" /></td></tr>
-			<tr><td>Bugaeva (2016)</td><td>4</td><td><Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="nominalized-complements-control-raising" /></td></tr>
 			<tr><td>Bugaeva (2015)</td><td>13</td><td><Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="prenominal-gap-relative-clauses" />, <Xr ch="headless-internally-headed-noun-modifying-clauses" />, <Xr ch="manner-and-degree-adverbial-clauses" /></td></tr>
 			<tr><td>Bugaeva (2008)</td><td>1</td><td><Xr ch="logophoric-narration-and-reported-discourse" /></td></tr>
 			<tr><td>Bugaeva (2022)</td><td>2</td><td><Xr ch="negation-somo-standard-clausal" />, <Xr ch="pragmatic-word-order-dislocation" /></td></tr>
@@ -59,6 +59,7 @@
 			<tr><td>Satō (2009)</td><td>5</td><td><Xr ch="clause-linkage-overview" />, <Xr ch="hine-akusu-switch-reference" />, <Xr ch="conditional-temporal-concessive-clauses" />, <Xr ch="tail-head-linkage-and-narrative-cohesion" /></td></tr>
 			<tr><td>Satō (2009)</td><td>1</td><td><Xr ch="narrative-tam-evidential-patterning-by-genre" /></td></tr>
 			<tr><td>Shibatani (1990)</td><td>26</td><td><Xr ch="typological-profile" />, <Xr ch="word-class-inventory-and-diagnostics" />, <Xr ch="verbal-subclasses-taxonomy" />, <Xr ch="no-adjective-class-property-verbs" />, <Xr ch="suppletive-verbal-number" />, <Xr ch="adverbializer-no" />, <Xr ch="valency-voice-overview" />, <Xr ch="applicative-stacking-relativization-feeding" />, <Xr ch="noun-incorporation-oblique-polysynthesis-debate" />, <Xr ch="constituent-order-head-final" />, <Xr ch="nonconfigurationality-pronominal-argument" />, <Xr ch="oblique-adjunct-verbless-clauses" />, <Xr ch="copula-ne-predicate-nominals" />, <Xr ch="headless-internally-headed-noun-modifying-clauses" />, <Xr ch="adverbs-degree-comparison" /></td></tr>
+			<tr><td>Tajima (1992)</td><td>1</td><td><Xr ch="reciprocal-u" /></td></tr>
 			<tr><td>Takahashi (2015)</td><td>5</td><td><Xr ch="person-marking-architecture" />, <Xr ch="first-person-plural-and-clusivity" />, <Xr ch="personal-affix-template-and-ordering" />, <Xr ch="person-number-interactions" />, <Xr ch="alignment-hierarchical-and-the-debate" /></td></tr>
 			<tr><td>Takahashi (2013)</td><td>2</td><td><Xr ch="evidential-schema-overview" />, <Xr ch="ruwe-ne-inferential" /></td></tr>
 			<tr><td>Takahashi (2016)</td><td>3</td><td><Xr ch="negation-somo-standard-clausal" />, <Xr ch="negation-ability-cognition-predicates" /></td></tr>
@@ -80,12 +81,12 @@
 		<thead><tr><th>Dialect / label</th><th>Examples</th></tr></thead>
 		<tbody>
 			<tr><td>SAR</td><td>430</td></tr>
-			<tr><td>HK</td><td>145</td></tr>
+			<tr><td>HK</td><td>146</td></tr>
 			<tr><td>CHI</td><td>117</td></tr>
 			<tr><td>SHI</td><td>30</td></tr>
 			<tr><td>TOK</td><td>17</td></tr>
 			<tr><td>ISH</td><td>11</td></tr>
-			<tr><td>SA</td><td>10</td></tr>
+			<tr><td>SA</td><td>11</td></tr>
 			<tr><td>HOR</td><td>8</td></tr>
 			<tr><td>ASA</td><td>7</td></tr>
 			<tr><td>YAK</td><td>1</td></tr>

@@ -130,6 +130,17 @@ export const bibliography: Record<string, BibEntry> = {
 		place: 'Cambridge',
 		url: 'https://db.aynu.org/sources/1990-shibatani'
 	},
+	tajima1992: {
+		region: 'general',
+		author: 'Tajima, Masakazu',
+		citeAuthor: 'Tajima',
+		year: '1992',
+		title: 'Complex predicate formation in Ainu',
+		titleTr: 'MA thesis',
+		publisher: 'McGill University',
+		place: 'Montreal',
+		url: 'https://escholarship.mcgill.ca/concern/theses/6w924c98j'
+	},
 	tamura1996: {
 		region: 'hokkaido',
 		author: 'Tamura Suzuko 田村すゞ子',
@@ -540,6 +551,16 @@ export const bibliography: Record<string, BibEntry> = {
 		url: 'https://db.aynu.org/sources/ainu-bible-batchelor-translation',
 		note: 'The Ainu New Testament (チコロ・ウタラパ); with the Psalms and Jonah, the largest connected-text corpus in Batchelor’s orthography. Quoted from the digitised full text; cited by book, chapter and verse.'
 	},
+	batchelor1903: {
+		region: 'hokkaido',
+		author: 'Batchelor, John',
+		citeAuthor: 'Batchelor',
+		year: '1903',
+		title: 'A grammar of the Ainu language',
+		publisher: 'Kelly & Walsh',
+		place: 'Yokohama',
+		url: 'https://books.google.com/books?id=G_xK9M0bOb8C'
+	},
 	batchelor1905: {
 		region: 'hokkaido',
 		author: 'Batchelor, John',
@@ -865,6 +886,19 @@ export const bibliography: Record<string, BibEntry> = {
 		place: 'Berlin & Boston',
 		url: 'https://db.aynu.org/sources/2022-anna-bugaeva-15-verbal-valency'
 	},
+	alpatovbugaevanedjalkov2007: {
+		region: 'general',
+		author: 'Alpatov, Vladimir M., Anna Ju. Bugaeva & Vladimir P. Nedjalkov',
+		citeAuthor: 'Alpatov, Bugaeva & Nedjalkov',
+		year: '2007',
+		title: 'Reciprocals and sociatives in Ainu',
+		editor: 'Vladimir P. Nedjalkov',
+		container: 'Reciprocal constructions (Typological Studies in Language 71), vol. 4',
+		pages: '1751–1822',
+		publisher: 'John Benjamins',
+		place: 'Amsterdam & Philadelphia',
+		url: 'https://wals.info/refdb/record/Alpatov-et-al-2007'
+	},
 	kobayashi2015: {
 		region: 'hokkaido',
 		author: 'Kobayashi Miki 小林美紀',
@@ -1146,6 +1180,44 @@ export const bibliography: Record<string, BibEntry> = {
 		container: 'Linguistic crossings and crosslinguistics in Northeast Asia (Studia Orientalia 117)',
 		place: 'Helsinki',
 		url: 'https://db.aynu.org/sources/2016-bugaeva-anna-on-the-innovative-nature-of-sakhalin-ainu-focusing-on-nominalization'
+	},
+	moe2021: {
+		region: 'general',
+		author: 'Ministry of Education, Republic of China (Taiwan)',
+		citeAuthor: 'Ministry of Education',
+		year: '2021',
+		title: '重編國語辭典修訂本: 聽話',
+		titleTr: 'Revised Mandarin Chinese Dictionary: tīnghuà',
+		url: 'https://dict.revised.moe.edu.tw/dictView.jsp?ID=53714&la=0&powerMode=0',
+		lang: 'zh'
+	},
+	cambridgeturkish2022: {
+		region: 'general',
+		author: 'Cambridge University Press',
+		citeAuthor: 'Cambridge Dictionary',
+		year: '2022',
+		title: 'Cambridge English–Turkish Dictionary: obey',
+		url: 'https://dictionary.cambridge.org/dictionary/english-turkish/obey'
+	},
+	dehkhoda1931: {
+		region: 'general',
+		author: 'Dehkhoda, Ali-Akbar دهخدا، علی‌اکبر',
+		citeAuthor: 'Dehkhoda',
+		year: '1931–1973',
+		title: 'لغت‌نامهٔ دهخدا: حرف‌شنوی',
+		titleTr: 'Dehkhoda Dictionary: harf-šenavi',
+		url: 'https://lamtakam.com/dictionaries/dehkhoda/250904/حرف+شنوی+',
+		lang: 'fa'
+	},
+	lealglanz2021: {
+		region: 'general',
+		author: 'Leal, Jonatas & Oliver Glanz',
+		citeAuthor: 'Leal & Glanz',
+		year: '2021',
+		title: '“God’s obedience”: A linguistic and narrative exploration of the Hebrew idiom in 1 Kings 17:22 and its theological implications',
+		container: 'Andrews University Seminary Studies 59(2)',
+		pages: '203–226',
+		url: 'https://www.andrews.edu/library/car/cardigital/Periodicals/AUSS/2021/2021_59_2.pdf'
 	},
 	takahashi2018: {
 		region: 'hokkaido',
