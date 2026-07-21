@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 166 works cited across the grammar into a single
+		This chapter gathers the 173 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -16,6 +16,7 @@
 	<p class="bib-blurb">Primary sources and studies of the variety this grammar describes.</p>
 	<p class="bib-entry">Ainu language learner group, Otaru アイヌ語学習者グループ（小樽） (1991). <i lang="ja">アイヌタイムズ</i>. [Ainu Times (Ainu language learners' newsletter)].</p>
 	<p class="bib-entry">Asai Tōru 浅井亨 (1969). <i lang="ja">アイヌ語の文法——アイヌ語石狩方言文法の概略</i>. [An outline of the grammar of the Ishikari dialect of Ainu]. アイヌ民族誌 1. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Batchelor, John (1903). <i>A grammar of the Ainu language</i>. Yokohama: Kelly &amp; Walsh.</p>
 	<p class="bib-entry">Batchelor, John (1905). <i>An Ainu–English–Japanese dictionary (including a grammar of the Ainu language)</i>. Tokyo: Methodist Publishing House. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Batchelor, John (1938). <i>An Ainu–English–Japanese dictionary, 4th edn</i>. Tokyo: Iwanami Shoten 岩波書店. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Batchelor, John (tr.) (1897). <i>Chikoro utarapa ne Yesu Kiristo ashiri aeuitaknup (The New Testament of our Lord and Saviour Jesus Christ in Ainu)</i>. Yokohama: British &amp; Foreign Bible Society.</p>
@@ -114,6 +115,7 @@
 	<p class="bib-blurb">Dialectology, reconstruction, typology, and conventions.</p>
 	<p class="bib-entry">Aikhenvald, Alexandra Y. (2004). <i>Evidentiality</i>. Oxford: Oxford University Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Alonso de la Fuente, José Andrés (2022). <i>The Ainu language through time</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 5. Berlin &amp; Boston: De Gruyter Mouton.</p>
+	<p class="bib-entry">Alpatov, Vladimir M., Anna Ju. Bugaeva &amp; Vladimir P. Nedjalkov (2007). <i>Reciprocals and sociatives in Ainu</i>. Reciprocal constructions (Typological Studies in Language 71), vol. 4. Ed. Vladimir P. Nedjalkov. 1751–1822. Amsterdam &amp; Philadelphia: John Benjamins.</p>
 	<p class="bib-entry">Asai Tōru 浅井亨 (1974). <i lang="ja">アイヌ語諸方言の分類について——語彙統計学的方法の再検討</i>. [On the classification of Ainu dialects: a reconsideration of the lexicostatistic method]. 北方文化研究 [Hoppō Bunka Kenkyū]. 8: 45–136. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">aynu-corpora Discord community (2023–2026). <i>Community linguistic discussion (aynu-corpora Discord archive)</i>.</p>
 	<p class="bib-entry">Baker, Mark C. (1988). <i>Incorporation: A theory of grammatical function changing</i>. Chicago: University of Chicago Press. <span class="reported-badge">reported</span></p>
@@ -127,6 +129,7 @@
 	<p class="bib-entry">Bugaeva, Anna (ed.) (2022). <i>Handbook of the Ainu language</i>. Handbooks of Japanese Language and Linguistics 12. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Bugaeva, Anna &amp; Miki Kobayashi (2022). <i>Verbal valency</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. 465–509. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Bybee, Joan, Revere Perkins &amp; William Pagliuca (1994). <i>The evolution of grammar: Tense, aspect, and modality in the languages of the world</i>. Chicago: University of Chicago Press. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Cambridge University Press (2022). <i>Cambridge English–Turkish Dictionary: obey</i>.</p>
 	<p class="bib-entry">Chamberlain, Basil Hall (1887). <i>The language, mythology, and geographical nomenclature of Japan viewed in the light of Aino studies</i>. Tokyo: Imperial University. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1952). <i lang="ja">アイヌ語に於ける母音調和</i>. [Vowel harmony in Ainu].</p>
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1953). <i lang="ja">分類アイヌ語辞典</i>. [A classified dictionary of Ainu (plants, animals, humans), 1953–1962]. Tokyo: Nihon Jōmin Bunka Kenkyūjo 日本常民文化研究所. <span class="reported-badge">reported</span></p>
@@ -138,6 +141,7 @@
 	<p class="bib-entry">Corbett, Greville G. (2000). <i>Number</i>. Cambridge: Cambridge University Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Croft, William (1991). <i>The evolution of negation</i>. Journal of Linguistics 27(1). 1–27. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Dal Corso, Elia (2018). <i>Ainu evidentiality: A semantico-pragmatic analysis and a morphosyntactic account</i>. London: SOAS, University of London.</p>
+	<p class="bib-entry">Dehkhoda, Ali-Akbar دهخدا، علی‌اکبر (1931–1973). <i lang="fa">لغت‌نامهٔ دهخدا: حرف‌شنوی</i>. [Dehkhoda Dictionary: harf-šenavi].</p>
 	<p class="bib-entry">Diessel, Holger (1999). <i>Demonstratives: Form, function and grammaticalization</i>. Typological Studies in Language 42. Amsterdam: John Benjamins. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Endō Shiho 遠藤志保 (2022). <i>Ainu oral literature</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 10. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Foley, William A. &amp; Robert D. Van Valin, Jr. (1984). <i>Functional syntax and universal grammar</i>. Cambridge Studies in Linguistics 38. Cambridge: Cambridge University Press. <span class="reported-badge">reported</span></p>
@@ -156,8 +160,10 @@
 	<p class="bib-entry">Kindaichi Kyōsuke 金田一京助 (1935). <i lang="ja">原始文学としてのユーカラ</i>. [Yukar as primitive literature]. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Kindaichi Kyōsuke 金田一京助 &amp; Chiri Mashiho 知里真志保 (1936). <i lang="ja">アイヌ語法概説</i>. [An outline of Ainu grammar]. Tokyo: Iwanami Shoten 岩波書店.</p>
 	<p class="bib-entry">Laufer, Berthold (1917). <i>The vigesimal and decimal systems in the Ainu numerals with some remarks on Ainu phonology</i>. Journal of the American Oriental Society 37. 192–208. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Leal, Jonatas &amp; Oliver Glanz (2021). <i>“God’s obedience”: A linguistic and narrative exploration of the Hebrew idiom in 1 Kings 17:22 and its theological implications</i>. Andrews University Seminary Studies 59(2). 203–226.</p>
 	<p class="bib-entry">Majewicz, Alfred F. (2022). <i>Ainu language Western records</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Miestamo, Matti (2005). <i>Standard negation: The negation of declarative verbal main clauses in a typological perspective</i>. Berlin: Mouton de Gruyter. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Ministry of Education, Republic of China (Taiwan) (2021). <i lang="zh">重編國語辭典修訂本: 聽話</i>. [Revised Mandarin Chinese Dictionary: tīnghuà].</p>
 	<p class="bib-entry">Mithun, Marianne (1984). <i>The evolution of noun incorporation</i>. Language 60(4). 847–894. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 (2024). <i lang="ja">アイヌ語広文典</i>. [Ainugo kōbunten [An extensive grammar of the Ainu language]]. Tokyo: Hakusuisha 白水社.</p>
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 &amp; Fukazawa Mika 深澤美香 (2022). <i>Hokkaido Ainu dialects: Towards a classification of Ainu dialects</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
@@ -182,6 +188,7 @@
 	<p class="bib-entry">Shiraishi Hidetoshi 白石英才 &amp; Tangiku Itsuji 丹菊逸治 (2022). <i>Language contact in the north</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 7. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Shiratori Shiori 白鳥詩織 (2026). <i lang="ja">口蓋化子音の改訂に向けたアイヌ祖語 *ia の提唱</i>. [A proposal of Proto-Ainu *ia toward a revision of the palatalized consonants].</p>
 	<p class="bib-entry">Stassen, Leon (1997). <i>Intransitive predication</i>. Oxford: Oxford University Press. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Tajima, Masakazu (1992). <i>Complex predicate formation in Ainu</i>. Montreal: McGill University.</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2022). <i>Aspect and evidentiality</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Talmy, Leonard (2000). <i>Toward a cognitive semantics</i>. Cambridge, MA: MIT Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Vovin, Alexander (1993). <i>A reconstruction of Proto-Ainu</i>. Brill's Japanese Studies Library 4. Leiden: Brill. <span class="reported-badge">reported</span></p>

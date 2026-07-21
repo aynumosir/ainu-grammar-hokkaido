@@ -506,7 +506,7 @@ export const parts: Part[] = [
 			{
 				slug: "reciprocal-u",
 				title: "The Reciprocal u-",
-				summary: "The reciprocal prefix u- 'each other/mutually', its collective/associative readings, and its interaction with plurality."
+				summary: "The reciprocal prefix u- 'each other/mutually', including quasi-possessive incorporation, the formation of aeuitaknup, and reflexive-possessive parallels."
 			},
 			{
 				slug: "middle-anticausative-passive",
