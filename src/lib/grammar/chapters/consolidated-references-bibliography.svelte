@@ -188,7 +188,7 @@
 	<p class="bib-entry">Shiraishi Hidetoshi 白石英才 &amp; Tangiku Itsuji 丹菊逸治 (2022). <i>Language contact in the north</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 7. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Shiratori Shiori 白鳥詩織 (2026). <i lang="ja">口蓋化子音の改訂に向けたアイヌ祖語 *ia の提唱</i>. [A proposal of Proto-Ainu *ia toward a revision of the palatalized consonants].</p>
 	<p class="bib-entry">Stassen, Leon (1997). <i>Intransitive predication</i>. Oxford: Oxford University Press. <span class="reported-badge">reported</span></p>
-	<p class="bib-entry">Tajima, Masakazu (1992). <i>Complex predicate formation in Ainu</i>. [MA thesis]. Montreal: McGill University.</p>
+	<p class="bib-entry">Tajima, Masakazu (1992). <i>Complex predicate formation in Ainu</i>. Montreal: McGill University.</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2022). <i>Aspect and evidentiality</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Talmy, Leonard (2000). <i>Toward a cognitive semantics</i>. Cambridge, MA: MIT Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Vovin, Alexander (1993). <i>A reconstruction of Proto-Ainu</i>. Brill's Japanese Studies Library 4. Leiden: Brill. <span class="reported-badge">reported</span></p>

@@ -136,10 +136,10 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Tajima',
 		year: '1992',
 		title: 'Complex predicate formation in Ainu',
-		titleTr: 'MA thesis',
 		publisher: 'McGill University',
 		place: 'Montreal',
-		url: 'https://escholarship.mcgill.ca/concern/theses/6w924c98j'
+		url: 'https://escholarship.mcgill.ca/concern/theses/6w924c98j',
+		note: 'MA thesis'
 	},
 	tamura1996: {
 		region: 'hokkaido',
