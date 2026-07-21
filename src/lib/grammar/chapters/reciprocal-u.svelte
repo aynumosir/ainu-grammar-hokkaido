@@ -445,10 +445,13 @@
 		<i lang="ain-Latn">u-</i> + <Xr ch="applicative-e"><i lang="ain-Latn">e-</i></Xr>
 		respectively <Ref k="nakagawa2024" p="208, 211–212" />;
 		<Ref k="bugaevakobayashi2022" p="§4.3.2" />. Because the applicative contributes arity +1 and
-		<i lang="ain-Latn">u-</i> contributes −1, the net arity is zero: the sociative is
-		valency-neutral. The minimal pair <A w="u-kor" gl="marry (lit. have each other)" /> (arity −1,
-		intransitive) versus <A w="u-ko-kor" gl="have together" /> (arity 0, transitive) makes this
-		decisive <Ref k="nakagawa2024" p="208" />:
+		<i lang="ain-Latn">u-</i> contributes −1, the net arity change is zero: the sociative is
+		valency-neutral. The transitive verb <A w="kor" gl="have" /> starts with arity 2. Plain
+		<A w="u-kor" gl="marry (lit. have each other)" /> applies only reciprocal
+		<i lang="ain-Latn">u-</i>, so 2 − 1 = 1 and the result is intransitive. In
+		<A w="u-ko-kor" gl="have together" />, sociative <i lang="ain-Latn">uko-</i> combines
+		<i lang="ain-Latn">ko-</i> (+1) with <i lang="ain-Latn">u-</i> (−1), for a net change of
+		0; 2 + 0 = 2, and the result remains transitive <Ref k="nakagawa2024" p="208" />:
 	</p>
 
 	<Ex
@@ -457,7 +460,7 @@
 		tr="Together with my wife, I had a daughter, and we went on living."
 		cite="nakagawa2024:208"
 		dial="SAR"
-		note="Nakagawa ex. 218. a=u-ko-kor is transitive (arity 0 preserves the base kor's transitivity): the 4.A prefix a= (narrative first person) on the verb confirms this. The plain reciprocal u-kor 'marry each other' is intransitive and takes =an."
+		note="Nakagawa ex. 218. a=u-ko-kor is transitive because sociative uko- preserves the base verb kor's arity: kor has arity 2, and uko- has net arity change 0. The 4.A prefix a= (narrative first person) on the verb confirms this. Plain reciprocal u-kor 'marry each other' is intransitive because u- reduces arity from 2 to 1 and takes =an."
 	/>
 
 	<Ex
