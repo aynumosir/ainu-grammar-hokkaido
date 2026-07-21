@@ -267,6 +267,16 @@
 		discourse contexts, not only constructed elicitation.
 	</p>
 
+	<Ex
+		m="ipe=as kaki, iku=as ka ki wa"
+		g="eat=1PL.EXCL.S also ANTIP-drink=1PL.EXCL.S also do CONJ"
+		tr="We ate and also drank."
+		cite="ainukoraci1991"
+		dial="SAR"
+		place="浜田 隆史, 'te ta anakne...', Ainu Times no. 40 (ainu-times/040/0#16)"
+		note="The suffix =as (1PL.EXCL.S) on both ipe and i-ku confirms intransitive status. i-ku is the antipassive of ku 'drink', here in its lexicalized 'drink (alcohol)' sense. The parallel structure ipe=as … iku=as shows both antipassive derivatives taking the same intransitive S suffix in a single coordinated clause."
+	/>
+
 	<p>
 		The antipassive can be re-applicativized: the applicative prefix <i lang="ain-Latn">e-</i>
 		reintroduces a content or instrument object to the now-intransitive stem, raising arity by one

@@ -120,6 +120,15 @@
 		place="Biratori oral lit., 木村きみ narration"
 		note="korar (kor-ar, 'marry off') is the indefinite causative: the causer a= (4th-person, logophoric, referring to the narrator) is indexed on the verb, but the causee — the woman married off — is neither expressed nor cross-referenced, recoverable only from discourse. This is the structural signature of -ar."
 	/>
+	<Ex
+		m="eun a=nuyar."
+		g="to 4.A=hear-CAUS"
+		tr="I had it heard / I reported (it) to [them]."
+		cite="biratori1969"
+		dial="SAR"
+		place="貝澤 とぅるしの narration (biratori/004/002#80)"
+		note="nuyar (nu-yar) keeps the two-place frame of nu 'hear something': the causer a= (4th-person, logophoric) is indexed on the verb, while the recipient of the message is supplied by the eun adjunct and the causee (the hearer) is neither expressed nor cross-referenced — the structural signature of the indefinite causative."
+	/>
 </S>
 
 <S t="Readings: indefinite, permissive, and sociative" id="semantics">
