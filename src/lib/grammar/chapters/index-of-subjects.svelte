@@ -910,6 +910,7 @@
 		<li>Speaker and dialect variation — <Xr ch="s-palatalization" /></li>
 		<li>Special number uses and lexicalized expressions — <Xr ch="vigesimal-numeral-system" /></li>
 		<li>Stacking with applicatives and the verb-word template — <Xr ch="reflexive-yay" /></li>
+		<li>Stacking, co-incorporation, and the pondering chain — <Xr ch="adverbial-incorporation" /></li>
 		<li>Stacking, ordering, and the verb-word template — <Xr ch="valency-voice-overview" /></li>
 		<li>Stacking, productivity, and the feeding relation — <Xr ch="applicative-system-overview" /></li>
 		<li>Stacking, re-applicativization, and the feeding of noun incorporation — <Xr ch="applicative-e" /></li>
@@ -1015,6 +1016,7 @@
 		<li>The causal–purpose polysemy: how the readings are resolved — <Xr ch="causal-and-purpose-clauses" /></li>
 		<li>The causativized reciprocal — <Xr ch="reciprocal-u" /></li>
 		<li>The causee as object — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
+		<li>The central role of or — <Xr ch="relational-and-spatial-nouns" /></li>
 		<li>The choice of c, and s before i — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>The ci- middle prefix — <Xr ch="middle-anticausative-passive" /></li>
 		<li>The class of relational nouns — <Xr ch="relational-and-spatial-nouns" /></li>
@@ -1028,6 +1030,7 @@
 		<li>The conditional, concessive, and adversative subsystem — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li>The consonant analysis — <Xr ch="glides-w-y" /></li>
 		<li>The constituency of the nominalized clause — <Xr ch="nominalized-complements-control-raising" /></li>
+		<li>The construction and the -no diagnostic — <Xr ch="adverbial-incorporation" /></li>
 		<li>The continuative field in overview — <Xr ch="continuative-siri-siran-kane-an" /></li>
 		<li>The conventional word-pair inventory — <Xr ch="parallelism-couplets-and-word-pairs" /></li>
 		<li>The coordination–subordination continuum — <Xr ch="clause-linkage-overview" /></li>
@@ -1098,8 +1101,8 @@
 		<li>The Hepburn-derived tradition — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>The hero-narrator person system — <Xr ch="poetic-archaic-elevated-register" /></li>
 		<li>The heroic epic: yukar and sakorpe — <Xr ch="oral-literature-genre-taxonomy" />, <Xr ch="heroic-and-divine-verse" /></li>
-		<li>The Hokkaido dialect landscape — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>The Hokkaido dialect sample — <Xr ch="dialect-sample-and-corpus-method" /></li>
+		<li>The Hokkaido dialect system — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>The honorific address system: fourth-person forms and the pronoun set — <Xr ch="honorific-ritual-and-taboo-registers" /></li>
 		<li>The honorific and logophoric functions in the fourth-person system — <Xr ch="fourth-person-honorific" /></li>
 		<li>The hortative system — <Xr ch="hortative-and-optative" /></li>
@@ -1160,7 +1163,7 @@
 		<li>The no-adjective analysis — <Xr ch="word-class-inventory-and-diagnostics" /></li>
 		<li>The nominalization-plus-copula schema — <Xr ch="evidential-schema-overview" /></li>
 		<li>The nominalization-to-lexicalization cline — <Xr ch="headless-internally-headed-noun-modifying-clauses" /></li>
-		<li>The nominalizers -p/-pe and the cep showcase — <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></li>
+		<li>The nominalizers -p/-pe and the cep case — <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></li>
 		<li>The non-shifting class: a=, eci= — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>The northern contact zone — <Xr ch="northern-contact-nivkh-tungusic-manchu" /></li>
 		<li>The numeral roots 1–10 and the three form classes — <Xr ch="vigesimal-numeral-system" /></li>
@@ -1188,7 +1191,6 @@
 		<li>The phonemic status of the glide transition across dialects — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>The phonological shape of the reduplicant — <Xr ch="reduplication-phonology-rule-interaction" /></li>
 		<li>The pitch contour — <Xr ch="pitch-accent-placement-rule" /></li>
-		<li>The pivotal role of or — <Xr ch="relational-and-spatial-nouns" /></li>
 		<li>The place restriction: spatial goals versus animate goals — <Xr ch="applicative-o" /></li>
 		<li>The placement rule — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>The plural and polite imperative: yan — <Xr ch="imperative-and-prohibitive" /></li>
@@ -1223,6 +1225,7 @@
 		<li>The register lexicon — <Xr ch="poetic-archaic-elevated-register" /></li>
 		<li>The register of prayer: atomte-itak — <Xr ch="inonno-itak-ritual-prayer" /></li>
 		<li>The reported-discourse system in overview — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
+		<li>The resu family and the applicative interaction — <Xr ch="adverbial-incorporation" /></li>
 		<li>The reverse direction: Ainu elements in early Japonic — <Xr ch="macro-comparison-and-deep-contact-controversies" /></li>
 		<li>The rhotic /r/ — <Xr ch="consonant-inventory" /></li>
 		<li>The right personal layer: =as and =an — <Xr ch="personal-affix-template-and-ordering" /></li>
@@ -1347,7 +1350,7 @@
 		<li>Typological comparison: Hachijō intonation — <Xr ch="phrasal-and-utterance-intonation" /></li>
 		<li>Typological framing — <Xr ch="aims-scope-design-philosophy" />, <Xr ch="no-adjective-class-property-verbs" /></li>
 		<li>Typological note — <Xr ch="parallelism-couplets-and-word-pairs" /></li>
-		<li>Typological placement — <Xr ch="tenselessness-and-time-reference" /></li>
+		<li>Typological placement — <Xr ch="adverbial-incorporation" />, <Xr ch="tenselessness-and-time-reference" /></li>
 		<li>Typological placement: pitch accent, not tone — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
 		<li>Typological placement: the C1 system — <Xr ch="evidential-schema-overview" /></li>
 		<li>Typologically unusual features in the regional context — <Xr ch="typological-profile" /></li>
@@ -1396,6 +1399,7 @@
 		<li>What a 'comprehensive reference grammar' commits to — <Xr ch="aims-scope-design-philosophy" /></li>
 		<li>What Ainu does not exhibit — <Xr ch="nonconfigurationality-pronominal-argument" /></li>
 		<li>What controls the plural verb — <Xr ch="person-number-interactions" /></li>
+		<li>What is incorporated is a verb, not an adverb — <Xr ch="adverbial-incorporation" /></li>
 		<li>What reached Hokkaido — <Xr ch="northern-contact-nivkh-tungusic-manchu" /></li>
 		<li>What split-intransitive alignment predicts — <Xr ch="alignment-split-intransitive" /></li>
 		<li>Word spacing and compound boundaries — <Xr ch="orthographic-standardization-and-word-division" /></li>

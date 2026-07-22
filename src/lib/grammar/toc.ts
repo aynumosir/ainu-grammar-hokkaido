@@ -527,6 +527,11 @@ export const parts: Part[] = [
 				slug: "noun-incorporation-oblique-polysynthesis-debate",
 				title: "Oblique Incorporation and the Syntactic-vs-Lexicalist Debate",
 				summary: "Adverbial/oblique incorporation, its feeding of relativization, and the central syntactic-NI vs lexical-compounding controversy."
+			},
+			{
+				slug: "adverbial-incorporation",
+				title: "Adverbial (Manner) Incorporation and the Property-Verb Question",
+				summary: "Manner/depictive verb-compounding (pirka-resu 'raise well'), its reanalysis as property-verb rather than adverb incorporation, its arity-neutral interaction with the applicatives, and its typological placement."
 			}
 		]
 	},

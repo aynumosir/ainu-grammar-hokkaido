@@ -250,6 +250,12 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	// Typological & theoretical frameworks
 	mithun1984: { sourceRole: 'typological-framework', heldLocally: false },
 	baker1988: { sourceRole: 'typological-framework', heldLocally: false },
+	baker1996: { sourceRole: 'typological-framework', heldLocally: false },
+	rosen1989: { sourceRole: 'typological-framework', heldLocally: false },
+	gerdts1998: { sourceRole: 'typological-framework', heldLocally: false },
+	compton2012: { sourceRole: 'typological-framework', heldLocally: false },
+	kantarovich2024: { sourceRole: 'typological-framework', heldLocally: false },
+	evans2003: { sourceRole: 'typological-framework', heldLocally: false },
 	keenancomrie1977: { sourceRole: 'typological-framework', heldLocally: false },
 	foleyvanvalin1984: { sourceRole: 'typological-framework', heldLocally: false },
 	aikhenvald2004: { sourceRole: 'typological-framework', heldLocally: false },

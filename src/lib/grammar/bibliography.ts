@@ -1739,6 +1739,68 @@ export const bibliography: Record<string, BibEntry> = {
 		place: 'Chicago',
 		reported: true
 	},
+	baker1996: {
+		region: 'general',
+		author: 'Baker, Mark C.',
+		citeAuthor: 'Baker',
+		year: '1996',
+		title: 'The polysynthesis parameter',
+		publisher: 'Oxford University Press',
+		place: 'Oxford',
+		reported: true
+	},
+	rosen1989: {
+		region: 'general',
+		author: 'Rosen, Sara Thomas',
+		citeAuthor: 'Rosen',
+		year: '1989',
+		title: 'Two types of noun incorporation: A lexical analysis',
+		container: 'Language 65(2)',
+		pages: '294–317',
+		reported: true
+	},
+	gerdts1998: {
+		region: 'general',
+		author: 'Gerdts, Donna B.',
+		citeAuthor: 'Gerdts',
+		year: '1998',
+		title: 'Incorporation',
+		editor: 'Andrew Spencer & Arnold M. Zwicky',
+		container: 'The Handbook of Morphology',
+		pages: '84–100',
+		publisher: 'Blackwell',
+		place: 'Oxford',
+		reported: true
+	},
+	compton2012: {
+		region: 'general',
+		author: 'Compton, Richard',
+		citeAuthor: 'Compton',
+		year: '2012',
+		title: 'The syntax and semantics of modification in Inuktitut: Adjectives and adverbs in a polysynthetic language',
+		container: 'PhD dissertation, University of Toronto',
+		reported: true
+	},
+	kantarovich2024: {
+		region: 'general',
+		author: 'Kantarovich, Jessica',
+		citeAuthor: 'Kantarovich',
+		year: '2024',
+		title: 'Incorporation as a grammaticalization pathway: Chukchi incorporating morphology in areal perspective',
+		container: 'Journal of Language Contact 17(1)',
+		pages: '163–217',
+		reported: true
+	},
+	evans2003: {
+		region: 'general',
+		author: 'Evans, Nicholas',
+		citeAuthor: 'Evans',
+		year: '2003',
+		title: 'Bininj Gun-wok: A pan-dialectal grammar of Mayali, Kunwinjku and Kune',
+		publisher: 'Pacific Linguistics',
+		place: 'Canberra',
+		reported: true
+	},
 	keenancomrie1977: {
 		region: 'general',
 		author: 'Keenan, Edward L. & Bernard Comrie',

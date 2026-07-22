@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 173 works cited across the grammar into a single
+		This chapter gathers the 181 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -34,6 +34,7 @@
 	<p class="bib-entry">Fukuda (Tamura) Suzuko 田村すゞ子 (1956). <i>On the morphological structure of the verbs in Saru dialect of Ainu</i>. Onsei no Kenkyū 7.</p>
 	<p class="bib-entry">Fukuda (Tamura) Suzuko 福田すゞ子 (1961). <i lang="ja">アイヌ語沙流方言の副助詞と終助詞</i>. [The adverbial and sentence-final particles of the Saru dialect of Ainu]. 言語研究 [Gengo Kenkyū / Journal of the Linguistic Society of Japan]. 39: 22–38.</p>
 	<p class="bib-entry">Hirosawa 廣澤 (2026). <i lang="ja">証拠性表現の用法——ruwe ne を中心に</i>. [The uses of evidential expressions, centred on ruwe ne].</p>
+	<p class="bib-entry">Hokkaido Ainu Association / Hokkaido Radio School (北海道アイヌ協会・ラジオ講座) (2001). <i>アイヌ語ラジオ講座テキスト</i>.</p>
 	<p class="bib-entry">Hokkaidō Utari Kyōkai 北海道ウタリ協会 (1994). <i lang="ja">アコㇿイタㇰ——テキスト アイヌ語会話</i>. [Akor Itak: A textbook of Ainu conversation]. Sapporo:</p>
 	<p class="bib-entry">Huber, Klára フダー・クラーラ (2025). <i lang="ja">主観性から見たアイヌ語の所有表現</i>. [Ainu possessive expressions from the perspective of subjectivity].</p>
 	<p class="bib-entry">Ijäs, Silja (2023). <i>Aynu itak a-eyaypakasnu ro — Let’s learn Ainu: Ainu language grammar guide</i>.</p>
@@ -55,6 +56,7 @@
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 (2009). <i lang="ja">アイヌ語の接頭辞</i>. [The prefixes of Ainu].</p>
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 (ed.) (2000). <i lang="ja">アイヌ口承文芸テキスト集 1–24</i>. [A collection of Ainu oral-literature texts, vols. 1–24 (2000–2025)].</p>
 	<p class="bib-entry">Nakagawa Hiroshi, Anna Bugaeva, Miki Kobayashi &amp; Yoshimi Yoshikawa (eds.) (2016). <i>A glossed audio corpus of Ainu folklore</i>.</p>
+	<p class="bib-entry">Nakamoto Mutsuko 中本ムツ子 (speaker); Kayano Shigeru 萱野茂 (supervising) (2009). <i>CDエクスプレス アイヌ語</i>. [CD Express Ainugo]. Hakusuisha 白水社.</p>
 	<p class="bib-entry">National Institute for Japanese Language and Linguistics 国立国語研究所 (2003). <i lang="ja">アイヌ語口承文芸コーパス</i>. [Corpus of Ainu oral literature].</p>
 	<p class="bib-entry">Okuda Osami 奥田統己 (2025). <i lang="ja">アイヌ語のわたり音と母音連続</i>. [Glides and vowel hiatus in Ainu].</p>
 	<p class="bib-entry">Ōno, Tetsuhito (2022). <i>The history and current status of the Ainu language revival movement</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 12. Berlin &amp; Boston: De Gruyter Mouton.</p>
@@ -119,6 +121,7 @@
 	<p class="bib-entry">Asai Tōru 浅井亨 (1974). <i lang="ja">アイヌ語諸方言の分類について——語彙統計学的方法の再検討</i>. [On the classification of Ainu dialects: a reconsideration of the lexicostatistic method]. 北方文化研究 [Hoppō Bunka Kenkyū]. 8: 45–136. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">aynu-corpora Discord community (2023–2026). <i>Community linguistic discussion (aynu-corpora Discord archive)</i>.</p>
 	<p class="bib-entry">Baker, Mark C. (1988). <i>Incorporation: A theory of grammatical function changing</i>. Chicago: University of Chicago Press. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Baker, Mark C. (1996). <i>The polysynthesis parameter</i>. Oxford: Oxford University Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Barrie, Michael &amp; Éric Mathieu (2021). <i>Noun incorporation and polysynthesis</i>.</p>
 	<p class="bib-entry">Bugaeva, Anna (2006). <i>Applicatives in Ainu</i>.</p>
 	<p class="bib-entry">Bugaeva, Anna (2010). <i>Ainu applicatives in typological perspective</i>. Studies in Language 34(4). 749–801.</p>
@@ -136,6 +139,7 @@
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1955). <i lang="ja">アイヌ文学</i>. [Ainu literature]. 日本詩人全集 27. Tokyo: 新潮社. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1956). <i lang="ja">地名アイヌ語小辞典</i>. [A small dictionary of Ainu place-name language (Chimei Ainugo shō jiten)]. Tokyo: Nihon Jōmin Bunka Kenkyūjo 日本常民文化研究所. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1956). <i lang="ja">アイヌ語入門――とくに地名研究者のために</i>. [An introduction to Ainu, especially for place-name researchers]. Sapporo: Nire Shobō 楡書房. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Compton, Richard (2012). <i>The syntax and semantics of modification in Inuktitut: Adjectives and adverbs in a polysynthetic language</i>. PhD dissertation, University of Toronto. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Comrie, Bernard (1976). <i>Aspect: An introduction to the study of verbal aspect and related problems</i>. Cambridge: Cambridge University Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Comrie, Bernard, Martin Haspelmath &amp; Balthasar Bickel (2015). <i>The Leipzig Glossing Rules: Conventions for interlinear morpheme-by-morpheme glosses</i>. Leipzig: Max Planck Institute for Evolutionary Anthropology &amp; Leipzig University. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Corbett, Greville G. (2000). <i>Number</i>. Cambridge: Cambridge University Press. <span class="reported-badge">reported</span></p>
@@ -144,8 +148,10 @@
 	<p class="bib-entry">Dehkhoda, Ali-Akbar دهخدا، علی‌اکبر (1931–1973). <i lang="fa">لغت‌نامهٔ دهخدا: حرف‌شنوی</i>. [Dehkhoda Dictionary: harf-šenavi].</p>
 	<p class="bib-entry">Diessel, Holger (1999). <i>Demonstratives: Form, function and grammaticalization</i>. Typological Studies in Language 42. Amsterdam: John Benjamins. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Endō Shiho 遠藤志保 (2022). <i>Ainu oral literature</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 10. Berlin &amp; Boston: De Gruyter Mouton.</p>
+	<p class="bib-entry">Evans, Nicholas (2003). <i>Bininj Gun-wok: A pan-dialectal grammar of Mayali, Kunwinjku and Kune</i>. Canberra: Pacific Linguistics. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Foley, William A. &amp; Robert D. Van Valin, Jr. (1984). <i>Functional syntax and universal grammar</i>. Cambridge Studies in Linguistics 38. Cambridge: Cambridge University Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Fukazawa Mika 深澤美香 &amp; Ono Yohei 小野洋平 (2024). <i lang="ja">アイヌ語の方言境界再考</i>. [Ainu dialect boundaries reconsidered].</p>
+	<p class="bib-entry">Gerdts, Donna B. (1998). <i>Incorporation</i>. The Handbook of Morphology. Ed. Andrew Spencer &amp; Arnold M. Zwicky. 84–100. Oxford: Blackwell. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Givón, Talmy (1978). <i>Negation in language: Pragmatics, function, ontology</i>. Pragmatics (Syntax and Semantics 9). Ed. Peter Cole. 69–112. New York: Academic Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Haspelmath, Martin (1997). <i>Indefinite pronouns</i>. Oxford Studies in Typology and Linguistic Theory. Oxford: Oxford University Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Hattori Shirō 服部四郎 (ed.) (1964). <i lang="ja">アイヌ語方言辞典</i>. [An Ainu dialect dictionary]. Tokyo: Iwanami Shoten 岩波書店. <span class="reported-badge">reported</span></p>
@@ -153,6 +159,7 @@
 	<p class="bib-entry">Hopper, Paul J. &amp; Elizabeth Closs Traugott (2003). <i>Grammaticalization</i>. Cambridge Textbooks in Linguistics. Cambridge: Cambridge University Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Itabashi Yoshizō 板橋義三 (2001). <i lang="ja">樺太アイヌ語の母音の長短と北海道アイヌ語のピッチアクセントとの史的関係</i>. [The diachronic relation between Sakhalin Ainu vowel length and Hokkaido Ainu pitch accent].</p>
 	<p class="bib-entry">Janhunen, Juha A. (2022). <i>Ainu ethnic origins</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 2. Berlin &amp; Boston: De Gruyter Mouton.</p>
+	<p class="bib-entry">Kantarovich, Jessica (2024). <i>Incorporation as a grammaticalization pathway: Chukchi incorporating morphology in areal perspective</i>. Journal of Language Contact 17(1). 163–217. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Kasuga Hayato 春日勇人 (2026). <i lang="ja">アイヌ語多地点方言分類——75地点の計量的分析</i>. [A multi-locality classification of Ainu dialects: a quantitative analysis of 75 sites].</p>
 	<p class="bib-entry">Keenan, Edward L. &amp; Bernard Comrie (1977). <i>Noun phrase accessibility and universal grammar</i>. Linguistic Inquiry 8(1). 63–99. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Kindaichi Kyōsuke 金田一京助 (1931). <i lang="ja">アイヌ叙事詩ユーカラ概説</i>. [An outline of the Ainu heroic epic yukar]. Tokyo: 龍吟社. <span class="reported-badge">reported</span></p>
@@ -179,6 +186,7 @@
 	<p class="bib-entry">Ono, Yohei 小野洋平 (2020). <i>Reconsideration of the "major division" of Ainu dialects: A statistical reanalysis of Asai (1974)</i>. Journal of the Linguistic Society of Japan.</p>
 	<p class="bib-entry">Peng, Fred C. C. &amp; Barron Brainerd (1970). <i>A grammar of Ainu number names</i>. Lingua 25. 381–397. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Peterson, David A. (2007). <i>Applicative constructions</i>. Oxford: Oxford University Press. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Rosen, Sara Thomas (1989). <i>Two types of noun incorporation: A lexical analysis</i>. Language 65(2). 294–317. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2012). <i lang="ja">アイヌ語の現状と復興</i>. [The current situation and revitalization of the Ainu language].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2016). <i>A classification of the types of noun incorporation in Ainu and its implications for morphosyntactic typology</i>. Crosslinguistics and linguistic crossings in Northeast Asia (Studia Orientalia 117). Ed. Ekaterina Gruzdeva &amp; Juha Janhunen. Helsinki:</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2022). <i>Noun incorporation in Ainu</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
