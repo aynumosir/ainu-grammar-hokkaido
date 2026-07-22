@@ -5,7 +5,7 @@
 
 <S t="The construction and the -no diagnostic" id="overview">
 	<p>
-		A verb stem may carry, immediately before its root, a second stative element that reads
+		A verb stem may carry, immediately before its root, a second, non-head verb stem that reads
 		as a manner: <A w="pirka-resu" gl="raise well" />, <A w="tomte-resu" gl="raise with care" />.
 		The mechanism is the one Shibatani sets out for what he calls adverb incorporation: the
 		adverbial suffix <i lang="ain-Latn">-no</i> drops, and the bare stem sits against the verb
@@ -188,8 +188,8 @@
 	<p>
 		Read as verb-verb compounding, the Ainu pattern has clearer relatives. A non-head predicate
 		expressing manner or result inside one verbal word is the shape of the Chinese resultative
-		verb compound (<i lang="zh">养好</i> 'raise-good'); Ainu realises the same relation head-first
-		reversed, with the manner verb before the head and the head last ‹speculative›.
+		verb compound (<i lang="zh">养好</i> 'raise-good'); Ainu reverses that order, with the manner
+		verb before the lexical head ‹speculative›.
 		Bound evaluative morphology of the Inuit type — Inuktitut <i lang="iu-Latn">-tsiaq-</i>
 		'well' — translates alike but differs in kind: the postbase is bound from the lexicon, not a
 		free verb drawn into the word, so Eskimologists treat it as derivation rather than
