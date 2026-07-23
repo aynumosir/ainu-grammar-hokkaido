@@ -9,10 +9,17 @@
  * Run: bun run scripts/phonotactics-stats.ts
  */
 
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { homedir } from 'node:os';
 
-const DICT_ROOT = join(process.env.HOME!, 'projects/Ainu/ainu-dictionaries');
+const DICT_ROOT =
+	process.env.AINU_DICTIONARIES_ROOT ?? join(homedir(), 'projects/Ainu/ainu-dictionaries');
+if (!existsSync(DICT_ROOT)) {
+	throw new Error(
+		`Dictionary root not found: ${DICT_ROOT} — set AINU_DICTIONARIES_ROOT to an ainu-dictionaries checkout.`
+	);
+}
 
 const SOURCES: { key: string; file: string; column: number }[] = [
 	{ key: 'tamura1996', file: '1996_Tamura_Ainu-Saru-Dialect-Dictionary/original.tsv', column: 0 },
@@ -40,17 +47,26 @@ function normalize(raw: string): string | null {
 	s = s.replace(/[áéíóúàèìòù]/g, (c) => ACCENT_STRIP[c]);
 	if (!s || /\s/.test(s)) return null; // multiword
 	if (/^[-=]|[-=]$/.test(s)) return null; // bound affix / clitic
-	s = s.replace(/[-='ʔ]/g, ''); // internal joiners and glottal marks
+	// drop joiners; keep word-internal ' / ʔ as a syllable-boundary mark for the syllabifier
+	s = s.replace(/[-=]/g, '').replace(/ʔ/g, "'").replace(/^'+|'+$/g, '').replace(/''+/g, "'");
 	if (!s) return null;
-	for (const ch of s) if (!VOWELS.has(ch) && !CONSONANTS.has(ch)) return null;
+	for (const ch of s) if (ch !== "'" && !VOWELS.has(ch) && !CONSONANTS.has(ch)) return null;
 	if (![...s].some((c) => VOWELS.has(c))) return null;
 	return s;
 }
 
 type Syllable = { onset: string; nucleus: string; coda: string };
 
-/** (C)V(C) syllabification: V.V and C.C split, CV never split. */
+/** (C)V(C) syllabification: V.V and C.C split, CV never split; ' forces a boundary. */
 function syllabify(word: string): Syllable[] | null {
+	if (word.includes("'")) {
+		const parts = word.split("'").map(syllabifyRun);
+		return parts.every(Boolean) ? (parts as Syllable[][]).flat() : null;
+	}
+	return syllabifyRun(word);
+}
+
+function syllabifyRun(word: string): Syllable[] | null {
 	const sylls: Syllable[] = [];
 	let i = 0;
 	while (i < word.length) {
@@ -81,6 +97,8 @@ const sorted = (m: Map<string, number>) =>
 
 const perSource: Record<string, { raw: number; kept: number }> = {};
 const lexicon = new Set<string>();
+// raw headword + source key per normalized type, so exceptional entries stay traceable
+const attestations = new Map<string, { raw: string; source: string }[]>();
 
 for (const src of SOURCES) {
 	const lines = readFileSync(join(DICT_ROOT, src.file), 'utf8').split('\n').slice(1);
@@ -89,14 +107,20 @@ for (const src of SOURCES) {
 	for (const line of lines) {
 		if (!line.trim()) continue;
 		raw++;
-		const lemma = normalize(line.split('\t')[src.column] ?? '');
+		const rawLemma = line.split('\t')[src.column] ?? '';
+		const lemma = normalize(rawLemma);
 		if (lemma) {
 			kept++;
 			lexicon.add(lemma);
+			const list = attestations.get(lemma) ?? [];
+			if (!list.some((a) => a.source === src.key)) list.push({ raw: rawLemma.trim(), source: src.key });
+			attestations.set(lemma, list);
 		}
 	}
 	perSource[src.key] = { raw, kept };
 }
+
+const attested = (word: string) => ({ word, attestations: attestations.get(word) ?? [] });
 
 const shapeCounts = new Map<string, number>();
 const onsetCounts = new Map<string, number>();
@@ -108,6 +132,8 @@ const hiatusCounts = new Map<string, number>(); // V.V
 const lengthCounts = new Map<string, number>(); // syllables per word
 const initialType = new Map<string, number>(); // vowel- vs consonant-initial words
 const unparsable: string[] = [];
+const codaCWords = new Set<string>();
+const tiWords = new Set<string>();
 let totalSyllables = 0;
 
 for (const word of lexicon) {
@@ -115,6 +141,10 @@ for (const word of lexicon) {
 	if (!sylls) {
 		unparsable.push(word);
 		continue;
+	}
+	for (const s of sylls) {
+		if (s.coda === 'c') codaCWords.add(word);
+		if (s.onset === 't' && s.nucleus === 'i') tiWords.add(word);
 	}
 	count(lengthCounts, String(sylls.length));
 	count(initialType, sylls[0].onset ? 'C-initial' : 'V-initial');
@@ -138,7 +168,11 @@ const result = {
 	sources: perSource,
 	lexiconTypes: lexicon.size,
 	parsedWords: lexicon.size - unparsable.length,
-	unparsable: unparsable.sort(),
+	audit: {
+		unparsable: unparsable.sort().map(attested),
+		codaC: [...codaCWords].sort().map(attested),
+		ti: [...tiWords].sort().map(attested)
+	},
 	totalSyllables,
 	syllableShapes: sorted(shapeCounts),
 	wordInitial: sorted(initialType),
