@@ -27,6 +27,18 @@
 		could be described as a restricted tone or register system is addressed in
 		§&thinsp;<a href="#accent-vs-tone">Accent versus tone</a>.
 	</p>
+	<p>
+		Not every description has found the system. Simeon, eliciting at dictation speed from
+		rememberer-speakers in 1967, reported no minimal pairs for stress and tied primary
+		prominence to the final syllable of his "contour" unit, leaving secondary stress
+		unpredictable <Ref k="simeon1968" p="11–12" /> — this in Hiratori, the same dialect area
+		where Tamura was concurrently documenting lexical accent contrasts of the
+		<i lang="ain-Latn">nísap</i> : <i lang="ain-Latn">nisáp</i> type. The discrepancy is
+		best explained by method: list intonation in slow elicitation overwrites lexical pitch
+		with phrase-level prominence, so the accent system is invisible unless connected speech
+		or paradigmatic contrast is examined. The episode is a standing caution for reading any
+		pre-Tamura Western description of Ainu prosody ‹speculative›.
+	</p>
 </S>
 
 <S t="The rising-nucleus system" id="rising-nucleus">

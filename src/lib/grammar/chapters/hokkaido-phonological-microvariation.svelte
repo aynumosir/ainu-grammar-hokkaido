@@ -457,6 +457,35 @@
 			lexically isolated <Ref k="nakagawafukazawa2022" p="§3.6, Table 15" />.
 		</p>
 	</S>
+
+	<S t="Allophonic microvariation in the 1967 field record" id="simeon-allophony">
+		<p>
+			Simeon's fieldwork of June–July 1967 on Hiratori, Horobetsu, and Higashi-Shizunai —
+			the informants were Kayano Shigeru, Itaku Haru, and Sasaki Taro — records a set of
+			sub-phonemic differences among three southern dialects that later descriptions rarely
+			separate <Ref k="simeon1968" p="13–17" />. Intervocalic voicing of the obstruents runs
+			along a gradient: Higashi-Shizunai shows [b d g dʑ] most freely
+			(<i lang="ain-Latn">hapo</i> [habo] 'mother', <i lang="ain-Latn">ante</i> [ande]
+			'put down', <i lang="ain-Latn">yakun</i> [jagun] 'if',
+			<i lang="ain-Latn">eci</i> [edʑi] 'you (pl.)'), Horobetsu less often, and Hiratori
+			hardly at all. The [ɸ] realization of /h/ before /u/ is constant in Horobetsu and
+			Higashi-Shizunai and optional in Hiratori (<i lang="ain-Latn">hure</i> [ɸure] 'red');
+			final /n/ surfaces as [ŋ] in Horobetsu and Higashi-Shizunai
+			(<i lang="ain-Latn">kotan</i> [kotaŋ]); and in Horobetsu the contrast of /h/ and /s/
+			is neutralized before /i/, giving free variation of the type
+			<i lang="ain-Latn">unihi</i> ~ <i lang="ain-Latn">unisi</i> '(my) home'
+			<Ref k="simeon1968" p="13" /> — the same sibilant–laryngeal instability treated in
+			<Xr ch="s-palatalization" />.
+		</p>
+		<p>
+			These observations carry a caveat. Except for Kayano, Simeon's informants had seldom
+			spoken Ainu for decades, all were bilingual, and no acoustic verification was made; a
+			gradient of intervocalic voicing in particular could reflect Japanese interference or
+			moribund-speaker variability as easily as an old isogloss. The record is best read as
+			a dated snapshot of individual speakers, valuable precisely because each is localized
+			and named ‹speculative›.
+		</p>
+	</S>
 </S>
 
 <S t="Vowel alternations" id="vowel-alternations">

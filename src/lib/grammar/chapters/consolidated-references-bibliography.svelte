@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 181 works cited across the grammar into a single
+		This chapter gathers the 182 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -75,6 +75,7 @@
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2023). <i lang="ja">動詞の結合価と3項動詞</i>. [Verb valency and three-place verbs (ditransitives)].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2025). <i>Basic sentence structures in Ainu</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2025). <i lang="ja">書評：中川裕『アイヌ語広文典』</i>. [Review of Nakagawa Hiroshi's Ainugo kōbunten].</p>
+	<p class="bib-entry">Simeon, George John (1968). <i>The phonemics and morphology of Hokkaido Ainu</i>. Los Angeles: PhD dissertation, University of Southern California.</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2011). <i lang="ja">十勝方言の指示表現</i>. [Demonstrative expressions in the Tokachi dialect].</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2013). <i lang="ja">十勝方言における証拠性と叙述類型</i>. [Evidentiality and predication types in the Tokachi dialect].</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2014). <i lang="ja">アイヌ語十勝方言例文集</i>. [A collection of example sentences in the Tokachi dialect of Ainu].</p>

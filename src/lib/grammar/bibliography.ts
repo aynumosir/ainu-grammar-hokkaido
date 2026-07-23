@@ -614,6 +614,17 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 
 	// ───────────────────────── Phonology, prosody, morphophonology ─────────────────────────
+	simeon1968: {
+		region: 'hokkaido',
+		author: 'Simeon, George John',
+		citeAuthor: 'Simeon',
+		year: '1968',
+		title: 'The phonemics and morphology of Hokkaido Ainu',
+		publisher: 'PhD dissertation, University of Southern California',
+		place: 'Los Angeles',
+		url: 'https://db.aynu.org/sources/1968-simeon-phonemics-morphology-hokkaido-ainu',
+		note: 'Structuralist sketch from June–July 1967 fieldwork on the Hiratori, Horobetsu, and Higashi-Shizunai dialects; informants Kayano Shigeru, Itaku Haru, and Sasaki Taro.'
+	},
 	majewicz2022: {
 		region: 'general',
 		author: 'Majewicz, Alfred F.',
