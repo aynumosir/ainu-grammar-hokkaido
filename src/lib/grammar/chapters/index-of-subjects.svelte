@@ -519,6 +519,7 @@
 		<li>Lexical loans beyond toponymy — <Xr ch="ainu-loanwords-and-toponymy-in-japanese" /></li>
 		<li>Lexical modernization and neologisms — <Xr ch="sociolinguistic-situation-revitalization" /></li>
 		<li>Lexical negation and the negation-ability interface — <Xr ch="abilitative-easkay-eaykap" /></li>
+		<li>Lexical statistics — <Xr ch="syllable-template" /></li>
 		<li>Lexicalization and less transparent ko- forms — <Xr ch="applicative-ko" /></li>
 		<li>Lexicalization and non-compositional meaning — <Xr ch="noun-noun-compounding" /></li>
 		<li>Lexicalization in animal names: isepo and the class-term question — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
