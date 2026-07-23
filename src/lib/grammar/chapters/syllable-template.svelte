@@ -295,6 +295,92 @@
 	</p>
 </S>
 
+<S t="Lexical statistics" id="lexical-statistics">
+	<p>
+		The frequency figures in this section are drawn from a syllable count over the headwords of
+		three dictionaries of southern Hokkaido dialects: Tamura's Saru dictionary
+		<Ref k="tamura1996" />, Nakagawa's Chitose dictionary <Ref k="nakagawa1995" />, and
+		Kayano's Saru (Nibutani) dictionary <Ref k="kayano1996" />. After removing bound affixes,
+		clitics, multi-word headwords, and forms containing letters outside the Latin
+		transcription of the Hokkaido phoneme inventory, the three sources yield 13,853 distinct
+		single-word types; 13,834 of these parse exhaustively into (C)V(C) syllables, giving
+		50,857 syllables in all. The 19 residues are transcription errors in the source files.
+		Headwords include derived and compound stems, so the figures describe the lexicon as
+		dictionaries record it; cluster counts in particular reflect morpheme seams as well as
+		root-internal sequences.
+	</p>
+
+	<table>
+		<caption>
+			Syllable shapes across 50,857 syllables of the three-dictionary headword sample.
+		</caption>
+		<thead>
+			<tr>
+				<th>shape</th>
+				<th>count</th>
+				<th>share</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>CV</td>
+				<td>29,560</td>
+				<td>58.1%</td>
+			</tr>
+			<tr>
+				<td>CVC</td>
+				<td>14,008</td>
+				<td>27.5%</td>
+			</tr>
+			<tr>
+				<td>V</td>
+				<td>5,737</td>
+				<td>11.3%</td>
+			</tr>
+			<tr>
+				<td>VC</td>
+				<td>1,552</td>
+				<td>3.1%</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p>
+		Open syllables outnumber closed ones by a little over two to one (69.4% against 30.6%),
+		and syllables with an onset outnumber onsetless ones six to one. Words run from one to
+		twelve syllables, with three- and four-syllable words together making up over half the
+		types; the mean is 3.7 syllables per word. About a third of word types (4,915 of 13,834)
+		begin with a vowel.
+	</p>
+
+	<p>
+		Among nuclei, /a/ leads with 29.7% of all syllables, followed by /e/ (21.0%), /o/
+		(17.2%), /i/ (16.7%), and /u/ (15.5%). The most frequent onset is /k/ (9,292 of 43,413
+		filled onsets, 21.4%), with /r s p t n/ each between 4,700 and 5,300; /w/ is the rarest
+		onset at 1,058. Coda frequency splits sharply by position in the word. Word-finally /r/
+		dominates (1,117 of 4,644 final codas), ahead of /p/ and /k/; word-internally /n/ leads
+		(2,292 of 10,907 internal codas), followed by /y/ — a reflection of the many
+		<i lang="ain-Latn">-Vn-</i> and <i lang="ain-Latn">-Vy-</i> sequences in derived stems.
+		The sample contains no coda /h/ whatsoever, and the nine orthographic coda-/c/ tokens all
+		trace to transcription errors in the source files, so the count confirms the categorical
+		exclusion of /c h/ from coda position stated above.
+	</p>
+
+	<p>
+		Of the 99 heterosyllabic coda-onset combinations the nine codas and eleven onsets permit,
+		98 are attested at least once. The single systematic gap is *<i lang="ain-Latn">t.y</i>,
+		consistent with the affrication of /t/ + /y/ to /c/ at morpheme boundaries (see
+		<Xr ch="coda-r-assimilation-sonorant-sandhi" />). The distribution is heavily skewed: the
+		ten commonest junctures (<i lang="ain-Latn">n.k</i> 624, <i lang="ain-Latn">r.k</i> 578,
+		<i lang="ain-Latn">n.n</i> 551, <i lang="ain-Latn">y.k</i> 524,
+		<i lang="ain-Latn">k.k</i> 487, and so on) account for over 40% of all cluster tokens,
+		while the rarest attested combinations (<i lang="ain-Latn">p.w</i>,
+		<i lang="ain-Latn">w.h</i>) occur once each, at compound seams. Vowel hiatus (V.V) is
+		likewise common — 2,374 sequences — with <i lang="ain-Latn">e.a</i> the most frequent
+		pairing (237) and <i lang="ain-Latn">i.i</i> the least (24).
+	</p>
+</S>
+
 <S t="Phonotactic gaps in the syllable inventory" id="gaps">
 	<p>
 		Several syllable shapes that the (C)V(C) template formally permits are absent or
@@ -318,7 +404,11 @@
 					Nakagawa 2024: 43, 45 (Table 1 shows the <i lang="ain-Latn">ti</i> cell
 					empty). The surface affricate [ʨi] always derives from underlying /t/ + /i/
 					across a morpheme boundary — see <Xr ch="coda-r-assimilation-sonorant-sandhi" />.
-					No HA root with stem-internal <i lang="ain-Latn">ti</i> is attested.
+					No HA root with stem-internal <i lang="ain-Latn">ti</i> is attested. The
+						three-dictionary headword sample (see the lexical statistics above) contains
+						<i lang="ain-Latn">ti</i> only in transparent compounds such as
+						<i lang="ain-Latn">petikuswa</i> (<i lang="ain-Latn">pet-ikus-wa</i>),
+						where the /t/ + /i/ contact sits on a morpheme seam.
 				</td>
 			</tr>
 			<tr>
@@ -340,15 +430,21 @@
 					The corpus contains very few tokens of /c/ before /u e o/ followed by a coda;
 					Nakagawa (2024: 43) notes that /c/ before /a/ or /u/ aligns more naturally
 					with native-speaker perception than before other vowels, suggesting a partial
-					front-vowel affinity for the affricate. Systematic frequency data await
-					per-segment corpus counting.
+					front-vowel affinity for the affricate. The headword sample bears the
+						asymmetry out: onset /c/ occurs before /i/ in 1,129 syllables and before
+						/a/ in 316, against 128 for /u/, 116 for /e/, and 86 for /o/; with a coda
+						added the counts fall to 81 (<i lang="ain-Latn">cuC</i>), 51
+						(<i lang="ain-Latn">ceC</i>), and 42 (<i lang="ain-Latn">coC</i>) — rare
+						but attested.
 				</td>
 			</tr>
 			<tr>
 				<td>-<i lang="ain-Latn">ow</i></td>
 				<td>near-absent ‹corpus-suggested›</td>
 				<td>
-					Corpus survey returns almost no /-ow/ tokens
+					Two word-final <i lang="ain-Latn">-ow</i> types occur in the
+						13,834-word headword sample, and a corpus survey returns almost no /-ow/
+						tokens
 					<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-19). A diachronic account
 					proposes that earlier *-aw(e) shifted to -ew(e) in most environments
 					<Ref k="aynucorporadiscord" /> (antitwilight, 2024-12-19) ‹speculative›.
@@ -356,12 +452,17 @@
 			</tr>
 			<tr>
 				<td>-<i lang="ain-Latn">m</i> word-finally</td>
-				<td>near-zero ‹corpus-suggested›</td>
+				<td>disputed ‹corpus-suggested›</td>
 				<td>
 					Orthographic /-m/ before /p/ or /m/ is an assimilation notation for underlying
-					/-n/ (see above); a stem-final /-m/ that stays /-m/ before other segments is
+					/-n/ (see above); at token level a stem-final /-m/ that stays /-m/ before other segments is
 					very rare in the corpus
-					<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-19).
+					<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-19). Dictionary types
+						tell against a categorical gap: 275 of the 13,834 headwords in the lexical
+						sample end in <i lang="ain-Latn">-m</i>, among them
+						<i lang="ain-Latn">amam</i> 'grain', <i lang="ain-Latn">isam</i>
+						'not exist', and <i lang="ain-Latn">hum</i> 'sound', so the rarity claim
+						can hold only of running-text token counts.
 				</td>
 			</tr>
 		</tbody>
