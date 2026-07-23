@@ -145,6 +145,24 @@
 		</tbody>
 	</table>
 
+	<p>
+		The earliest firsthand field record of this rule set is Simeon's 1967 survey of Hiratori,
+		Horobetsu, and Higashi-Shizunai <Ref k="simeon1968" p="22–24" />. Working from citation
+		forms with echo vowels (<i lang="ain-Latn">oara</i>, <i lang="ain-Latn">koro</i>,
+		<i lang="ain-Latn">kuru</i>, <i lang="ain-Latn">asiri</i>), he states the same
+		alternations — <i lang="ain-Latn">oat tuye</i> 'he cut completely',
+		<i lang="ain-Latn">ot teeta</i> 'very ancient times', <i lang="ain-Latn">kon nispa</i>
+		'my master', <i lang="ain-Latn">an kun ne</i> 'it is a man',
+		<i lang="ain-Latn">asin-no</i> 'newly', and dissimilated
+		<i lang="ain-Latn">ku kot cise</i> 'my house'. Two of his observations add texture the
+		modern sources lack: the rules were <strong>mandatory in Higashi-Shizunai but optional in
+		Hiratori and Horobetsu</strong>, where the unassimilated base form was the preferred
+		variant; and his Hiratori informant — Kayano Shigeru — judged the assimilated variants
+		"indicative of an older form of speech". Both points suggest that by the 1960s the
+		sandhi was receding in the Saru valley as a live process while remaining categorical
+		further east ‹speculative›.
+	</p>
+
 	<S t="Dissimilation: /r/ before /r/" id="r-dissimilation">
 		<p>
 			The sequence /r/+/r/ does not geminate to [rr] but dissimilates: the coda /r/ surfaces

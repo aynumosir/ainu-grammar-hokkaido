@@ -81,6 +81,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	tamuramasashi2011: { sourceRole: 'prior-analysis', heldLocally: true },
 	asai1969: { dbSlug: '1969-asai-toru-ainugo-no-bunpo-ainugo-ishikari-hogen-bunpo-no-gai', sourceRole: 'prior-analysis', heldLocally: false },
 	chamberlain1887: { dbSlug: '2018-basil-hall-chamberlain-ainu-grammar', sourceRole: 'philological-witness', heldLocally: false },
+	simeon1968: { dbSlug: '1968-simeon-phonemics-morphology-hokkaido-ainu', sourceRole: 'prior-analysis', heldLocally: false },
 
 	// Sakhalin / contrast grammars
 	pilsudski1912: { dbSlug: '1912-pilsudski', sourceRole: 'primary-data', heldLocally: true, path: 'books/1912_Pilsudski' },

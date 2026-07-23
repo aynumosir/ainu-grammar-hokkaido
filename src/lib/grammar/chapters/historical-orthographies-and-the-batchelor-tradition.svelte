@@ -362,6 +362,19 @@
 			until Kindaichi <Ref k="refsing1986" p="22–23" />. Forms cited from this corpus in the
 			present grammar are therefore identified by source, never by dialect tag.
 		</p>
+		<p>
+			Two independent checks on Batchelor's material come from Simeon's 1967 fieldwork
+			<Ref k="simeon1968" p="2–4" />. His Horobetsu informant, Itaku Haru (b. c. 1883),
+			had worked in Batchelor's household for eight years from age sixteen and identified
+			one of the missionary's principal informants as a speaker of the
+			<strong>Niikappu</strong> dialect — a rare direct datum on where Batchelor's forms
+			came from, and consistent with the southern-Hokkaido character of his corpus. Simeon
+			also ran an accuracy test: he translated Batchelor's English glosses into Japanese,
+			elicited the Ainu from his own informants, and found the responses "either similar to
+			or exactly the same as what Batchelor had transcribed", allowing for dialect
+			differences <Ref k="simeon1968" p="3" />. The transcriptions themselves are thus more
+			trustworthy than the grammatical framework built on them.
+		</p>
 	</S>
 </S>
 

@@ -228,6 +228,19 @@
 		that a "non-syllabic vowel" triggers the consonant-class allomorphs of both the nominalizer
 		and the plural suffix.
 	</p>
+	<p>
+		The fullest structuralist defence of the diphthong view is Simeon's, who classes /w y/ as
+		"nonsyllabic vowels" on four grounds: phonetic similarity to /u i/, a clustering pattern
+		unlike that of the consonants, the narrow allophonic range they share with the vowels, and
+		their undergoing the same elision as syllabic vowels <Ref k="simeon1968" p="14–15" />. The
+		cost of the analysis shows in his inventory of units: alongside rising and falling
+		diphthongs he must admit a triphthong <i lang="ain-Latn">yay</i> and a "geminate
+		diphthong" <i lang="ain-Latn">ayay</i> 'baby' <Ref k="simeon1968" p="18" /> — sequences
+		the coda analysis parses without any new unit types, as <i lang="ain-Latn">yay</i> (CVC)
+		and <i lang="ain-Latn">a.yay</i> (V.CVC). His own morphophonemics also lists the elision
+		and clustering behavior that the consonant analysis takes as diagnostic, so the same data
+		sorted by modern criteria land on the opposite conclusion.
+	</p>
 </S>
 
 <S t="Assessment" id="assessment">

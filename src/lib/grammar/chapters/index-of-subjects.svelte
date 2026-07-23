@@ -51,6 +51,7 @@
 		<li>All intransitive subjects use the S set — <Xr ch="alignment-split-intransitive" /></li>
 		<li>Alliteration and rhyme — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
 		<li>Allomorphy — <Xr ch="deverbal-denominal-noun-derivation" />, <Xr ch="causative-morphological-re-e-te" /></li>
+		<li>Allophonic microvariation in the 1967 field record — <Xr ch="hokkaido-phonological-microvariation" /></li>
 		<li>Altaic and related proposals — <Xr ch="genetic-position-macro-comparison" /></li>
 		<li>Alternative and disjunctive questions — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li>Ambient predicates: mean = me + an — <Xr ch="existential-locational-an-oka" /></li>
