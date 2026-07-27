@@ -160,6 +160,20 @@
 		place="横山裕之, アイヌタイムズ「ゴールデンカムイ oruspe」[ainu-times/068/0#44]"
 		note="Attested from Yokoyama Hiroyuki's talk on the anime adaptation of Golden Kamuy. The fourth-person a= marks the narrative-protagonist convention (the speaker narrates his own request in the fourth person, consistent with oral-narrative person-marking). The quotative sekor frames the word hinna as a cited form. The instrumental ani introduces the animation as the medium of depiction. This example confirms the palm-up hand gesture as part of the hinna complex in modern revitalization practice."
 	/>
+	<p>
+		The women's formal greeting gesture is likewise attested in the oral-literary register,
+		where a female narrator describes performing <i lang="ain-Latn">raymik</i> as part of the
+		conventionalised greeting routine of oral narrative:
+	</p>
+	<Ex
+		m="mak raymik hawe ne raymik=an ruwe ne a p oraun"
+		g="how raymik way COP raymik=4.S REP COP CONJ thing after"
+		tr="However she performed the women's greeting (raymik), having done the greeting, and then …"
+		cite="biratori1969"
+		dial="SAR"
+		place="貝澤とぅるしの口演 ウエペケㇾ「パㇱクㇽトノ ヤニ アコㇿ」[biratori/004/010#70]"
+		note="Attested use of raymik as a woman's formal greeting in connected oral narrative. The fourth-person intransitive suffix =an marks the narrative-protagonist convention (the female narrator refers to herself in the fourth person). The reduplicated framing raymik hawe ne raymik=an mirrors the conventionalised, formulaic character of the ritual speech-act, consistent with the sex-differentiated greeting complex described above."
+	/>
 
 	<p>
 		The greeting <A w="irankarapte" /> was traditionally a man's formula, delivered with
