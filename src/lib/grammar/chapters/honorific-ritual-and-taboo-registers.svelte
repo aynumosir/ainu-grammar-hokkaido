@@ -109,8 +109,19 @@
 		forms; the collective compounds <A w="onautari" gl="fathers / parents" /> and
 		<A w="unuutari" gl="mothers / parents" /> each carry the extended meaning 'parents (both)'
 		alongside the primary 'fathers' and 'mothers' readings <Ref k="aynucorporadiscord" />
-		(nukopoli, 2026-06-15, asserted) ‹corpus-suggested›.
+		(nukopoli, 2026-06-15, asserted) ‹corpus-suggested›. In the oral-literary register these
+		forms surface with the fourth-person possessive prefix <i lang="ain-Latn">a=</i> in a
+		dignified self-reference, as when a narrator names her parents as deities:
 	</p>
+	<Ex
+		m="a=onaha a=unuhu wakkauskamuy ne wa"
+		g="4.A=poss.father 4.A=poss.mother water-deity COP CONJ"
+		tr="[My] father and mother were water-deities, and …"
+		cite="ilcaa1976"
+		dial="SAR"
+		place="川上まつ子口演 uwepeker 民話 9 [aa-irc/009#136]"
+		note="Attested use of the elegant possessed kin-noun forms onaha 'father' and unuhu 'mother' with the fourth-person possessive a= (the oral-narrative person-marking convention). The narrator dignifies her parents by naming them wakkauskamuy 'water-deities'. The example confirms onaha/unuhu as the literary-register kin terms in connected ritual narration, in contrast to the dialectally unstable colloquial hapo."
+	/>
 	<p>
 		The colloquial term <A w="hapo" /> shows conspicuous dialect variation: it means 'mother' in
 		most Hokkaido varieties but 'father' in Chitose and Horobetsu, while in the Kuril varieties it

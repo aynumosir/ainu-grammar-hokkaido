@@ -379,6 +379,27 @@
 		likewise common — 2,376 sequences — with <i lang="ain-Latn">e.a</i> the most frequent
 		pairing (237) and <i lang="ain-Latn">i.i</i> the least (24).
 	</p>
+
+	<p>
+		Weighting by running text instead of dictionary types changes the picture in instructive
+		ways. A token count over the 168,302 Hokkaido sentences of the corpus described in
+		<Xr ch="dialect-sample-and-corpus-method" /> — 1,057,229 parsed word tokens, 2,201,575
+		syllables, after excluding tokens in legacy orthographies whose digraph spellings
+		syllabify falsely — gives CV 58.1%, CVC 19.6%, V 15.8%, VC 6.4%. The CV share is
+		identical to the type count, but closed syllables drop from 31.1% to 26.0% and
+		onsetless syllables rise from 14.8% to 22.2%, both driven by the high-frequency
+		vowel-initial grammatical words (<i lang="ain-Latn">a=</i>, <i lang="ain-Latn">an</i>,
+		<i lang="ain-Latn">or</i>, <i lang="ain-Latn">oka</i>). Word-final coda ranking
+		reverses: /n/ leads with 117,224 tokens against 78,781 for /r/, where the type count
+		has /r/ first — a frequency effect of words like <i lang="ain-Latn">an</i>,
+		<i lang="ain-Latn">wen</i>, and <i lang="ain-Latn">pon</i> against the many but
+		individually rarer /r/-final content stems. Word-final /-m/ is likewise secure at token
+		level: 12,605 tokens (1.2% of parsed tokens), led by <i lang="ain-Latn">isam</i>
+		(3,838), <i lang="ain-Latn">kam</i>, <i lang="ain-Latn">kewtum</i>, and
+		<i lang="ain-Latn">hum</i>. Residual coda-/c/ and coda-/h/ tokens number about 130
+		(0.006% of syllables) and trace to transcription noise, so the categorical coda ban
+		holds at token level as well.
+	</p>
 </S>
 
 <S t="Phonotactic gaps in the syllable inventory" id="gaps">
@@ -452,7 +473,7 @@
 			</tr>
 			<tr>
 				<td>-<i lang="ain-Latn">m</i> word-finally</td>
-				<td>disputed ‹corpus-suggested›</td>
+				<td>not a gap ‹corpus-confirmed›</td>
 				<td>
 					Orthographic /-m/ before /p/ or /m/ is an assimilation notation for underlying
 					/-n/ (see above); at token level a stem-final /-m/ that stays /-m/ before other segments is
@@ -461,8 +482,10 @@
 						tell against a categorical gap: 276 of the 13,872 headwords in the lexical
 						sample end in <i lang="ain-Latn">-m</i>, among them
 						<i lang="ain-Latn">amam</i> 'grain', <i lang="ain-Latn">isam</i>
-						'not exist', and <i lang="ain-Latn">hum</i> 'sound', so the rarity claim
-						can hold only of running-text token counts.
+						'not exist', and <i lang="ain-Latn">hum</i> 'sound'. The token count
+						settles it: 12,605 word-final /-m/ tokens occur in the Hokkaido corpus
+						(1.2% of parsed tokens), 3,838 of them <i lang="ain-Latn">isam</i>
+						alone, so word-final /-m/ is unremarkable at both type and token level.
 				</td>
 			</tr>
 		</tbody>

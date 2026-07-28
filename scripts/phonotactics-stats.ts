@@ -164,6 +164,81 @@ for (const word of lexicon) {
 	}
 }
 
+// ── Token-weighted pass over the running-text corpus (Hokkaido sentences) ──
+
+const CORPUS_JSONL =
+	process.env.AINU_CORPUS_JSONL ?? join(homedir(), 'projects/Ainu/ainu-corpora/data.jsonl');
+
+type TokenStats = {
+	sentences: number;
+	tokens: number;
+	parsedTokens: number;
+	totalSyllables: number;
+	syllableShapes: Record<string, number>;
+	onsets: Record<string, number>;
+	nuclei: Record<string, number>;
+	codasWordFinal: Record<string, number>;
+	codasWordInternal: Record<string, number>;
+	finalMTokens: number;
+	topFinalMWords: Record<string, number>;
+};
+
+function tokenPass(): TokenStats | null {
+	if (!existsSync(CORPUS_JSONL)) return null;
+	const shapes = new Map<string, number>();
+	const onsets = new Map<string, number>();
+	const nuclei = new Map<string, number>();
+	const codaFin = new Map<string, number>();
+	const codaInt = new Map<string, number>();
+	const finalM = new Map<string, number>();
+	let sentences = 0,
+		tokens = 0,
+		parsed = 0,
+		syllTotal = 0;
+	for (const line of readFileSync(CORPUS_JSONL, 'utf8').split('\n')) {
+		if (!line) continue;
+		const rec = JSON.parse(line);
+		if (!rec.text || !(rec.dialect_lv1 ?? []).includes('北海道')) continue;
+		sentences++;
+		for (const rawTok of String(rec.text).toLowerCase().split(/\s+/)) {
+			// strip punctuation and the sandhi underscore; = and - join clitics into one phonological word
+			let t = rawTok.replace(/[_.,!?"“”「」『』()（）…;:—–~〜『』［\]\[]/g, '').replace(/[-=]/g, '');
+			t = t.replace(/ʔ/g, "'").replace(/^'+|'+$/g, '').replace(/''+/g, "'");
+			if (!t) continue;
+			tokens++;
+			if (/sh|ch|th/.test(t)) continue; // legacy-orthography digraphs syllabify falsely
+			let ok = [...t].some((c) => VOWELS.has(c));
+			for (const ch of t) if (ch !== "'" && !VOWELS.has(ch) && !CONSONANTS.has(ch)) ok = false;
+			if (!ok) continue;
+			const sylls = syllabify(t);
+			if (!sylls) continue;
+			parsed++;
+			for (let i = 0; i < sylls.length; i++) {
+				const s = sylls[i];
+				syllTotal++;
+				count(shapes, `${s.onset ? 'C' : ''}V${s.coda ? 'C' : ''}`);
+				if (s.onset) count(onsets, s.onset);
+				count(nuclei, s.nucleus);
+				if (s.coda) count(i === sylls.length - 1 ? codaFin : codaInt, s.coda);
+			}
+			if (sylls[sylls.length - 1].coda === 'm') count(finalM, t);
+		}
+	}
+	return {
+		sentences,
+		tokens,
+		parsedTokens: parsed,
+		totalSyllables: syllTotal,
+		syllableShapes: sorted(shapes),
+		onsets: sorted(onsets),
+		nuclei: sorted(nuclei),
+		codasWordFinal: sorted(codaFin),
+		codasWordInternal: sorted(codaInt),
+		finalMTokens: [...finalM.values()].reduce((a, b) => a + b, 0),
+		topFinalMWords: Object.fromEntries(Object.entries(sorted(finalM)).slice(0, 20))
+	};
+}
+
 const result = {
 	sources: perSource,
 	lexiconTypes: lexicon.size,
@@ -184,7 +259,8 @@ const result = {
 	codasWordFinal: sorted(codaFinal),
 	codasWordInternal: sorted(codaInternal),
 	heterosyllabicClusters: sorted(clusterCounts),
-	vowelHiatus: sorted(hiatusCounts)
+	vowelHiatus: sorted(hiatusCounts),
+	corpusTokens: tokenPass()
 };
 
 mkdirSync('.grammar-build', { recursive: true });
