@@ -361,7 +361,7 @@
 		co-occur on a single root, as in the word
 		<i lang="ain-Latn">a=e-yay-ko-tuyma-si-ram-suy-pa</i> discussed in
 		<Xr ch="valency-voice-overview" s="template" />
-		<Ref k="shibatani1990" p="73" />; <Ref k="bugaeva2014" />.
+		<Ref k="shibatani1990" p="73" />; <Ref k="bugaeva2014polysynthesis" />.
 		A community-proposed decomposition of
 		<i lang="ain-Latn">yaykipniwkes</i> as <i lang="ain-Latn">yay-ki-p-niwkes</i> —
 		with <i lang="ain-Latn">ki</i> 'do' as a light verb and

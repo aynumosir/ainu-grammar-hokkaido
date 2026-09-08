@@ -168,7 +168,7 @@
 		> 'sway one's mind'; <A w="tuyma" gl="be far" /> — a stative verb, glossed here 'deeply' —
 		adds a manner over that core (+0), and only then do the applicative <i lang="ain-Latn">ko-</i
 		>, the reflexive <i lang="ain-Latn">yay-</i>, and the applicative <i lang="ain-Latn">e-</i>
-		stack outward <Ref k="bugaeva2014" />. The database keeps <i lang="ain-Latn">tuyma</i> here as
+		stack outward <Ref k="bugaeva2014polysynthesis" />. The database keeps <i lang="ain-Latn">tuyma</i> here as
 		the stative verb rather than a separate adverb entry, so the manner reading follows from its
 		non-head position, not from a change of class.
 	</p>
