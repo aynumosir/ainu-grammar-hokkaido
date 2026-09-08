@@ -4,20 +4,17 @@
 
 <S t="Overview" id="overview">
 	<p>
-		Ainu's classification as a language isolate, surveyed in
-		<Xr ch="genetic-position-macro-comparison" />, means that no genetic relationship accounts
-		for resemblances between Ainu and Japanese vocabulary. Demonstrable shared items are contact
-		loans, and the directionality of that contact is asymmetric by period and domain. The
+		No genetic relationship between Ainu and Japanese has been established
+		(<Xr ch="genetic-position-macro-comparison" />). Proposed loans require evidence for
+		contact and borrowing direction; lexical resemblance alone does not establish either
+		<Ref k="vovin2022" p="185–188" />. The
 		companion chapter <Xr ch="japanese-loanwords-in-ainu" /> documents the large stratum of
 		Japanese vocabulary that entered Ainu after sustained post-medieval contact with the Wajin:
 		domesticated animals, material culture, administrative titles, and, from the Meiji era
 		onward, unmarked quotations of modern Japanese terms. The reverse current — Ainu material
-		entering Japanese — is narrower in scope and less systematically studied. Its primary
-		evidence is toponymic, and lexical loans proper are few. Vovin
-		<Ref k="vovin2022" p="§1" /> observes that "it is silently assumed that there are no Ainu
-		loanwords in Japanese" and acknowledges the absence of any comprehensive study; the same
-		observation is echoed in Ijäs's typological overview of the language
-		<Ref k="ijas2023" />.
+		entering Japanese — is narrower in scope and less systematically studied. Vovin examines proposed Ainu loans in Old Japanese vocabulary and place names
+		<Ref k="vovin2022" p="185–188" />. His opening observation about the lack of a
+		comprehensive study concerns Japanese loans in Ainu <Ref k="vovin2022" p="185" />.
 	</p>
 	<p>
 		The geographical distribution of Ainu-origin place names testifies to a former Ainu
@@ -27,9 +24,9 @@
 		might have once lived in that region as well"; Ainu place names also occur in southern
 		Kamchatka. Chiri Mashiho devoted major scholarly effort to this toponymic substrate
 		<Ref k="chiri1956" />, and that dictionary remains the standard reference for individual
-		etymologies. Individual toponyms cited in this chapter as examples have been verified only
-		at the level of their Ainu component elements through the Tamura and Nakagawa dictionaries,
-		not against the primary place-name sources.
+		etymologies. The Tamura and Nakagawa dictionaries establish the component words; the historical
+		analysis of a particular place name requires a separate source. Municipal accounts
+		supply the analyses of Nopporo and Niikappu cited below.
 	</p>
 </S>
 
@@ -38,8 +35,8 @@
 		A small set of Ainu geographic roots recur as diagnostic final elements in Japanese place
 		names, constituting the backbone of the toponymic substrate. Because these elements are
 		independently attested in the Ainu lexicon with stable meanings
-		<Ref k="tamura1996" p="s.v. nay, pet, us, oma, to, sir, nupuri, kotan" />;
-		<Ref k="nakagawa1995" p="s.v. nay, oma" />, the toponymic analysis rests on solid
+		<Ref k="tamura1996" p="s.v. nay, pet, us, oma, to, sir, kotan" />;
+		<Ref k="nakagawa1995" p="s.v. nay, oma, nup" />, the toponymic analysis rests on solid
 		morphological footing at the elemental level even where the etymology of a specific
 		place name requires verification against <Ref k="chiri1956" />. Japanese reflexes typically
 		show rendaku (sequential voicing: <i lang="ain-Latn">pet</i> → <i lang="ja">-betsu</i>),
@@ -80,13 +77,6 @@
 				</td>
 			</tr>
 			<tr>
-				<td><A w="us" gl="be habitually at, grow at" />/<i lang="ain-Latn">-us(i)</i></td>
-				<td>'be habitually attached to/at'; nominalized: 'place where X habitually is'</td>
-				<td><i lang="ja">-ushi / -us</i> ウシ</td>
-				<td>有珠 U<em>su</em>; 新冠 Nii<em>kappu</em> (&lt; <i lang="ain-Latn">ni-kap-us-i</i>, illustrative)</td>
-				<td><Ref k="tamura1996" p="s.v. us, -us(i)" /></td>
-			</tr>
-			<tr>
 				<td><A w="oma" gl="be located in/at" />/<i lang="ain-Latn">-oma(-i)</i></td>
 				<td>'be located in/at'; nominalized: 'place where X is'</td>
 				<td><i lang="ja">-omai / -oma</i></td>
@@ -110,11 +100,11 @@
 				<td><Ref k="shibatani1990" p="§1" /></td>
 			</tr>
 			<tr>
-				<td><A w="nupuri" gl="mountain" /></td>
-				<td>'mountain'</td>
-				<td><i lang="ja">Nuburi- / Nopporo-</i> (reductions)</td>
-				<td>野幌 Nopporo (&lt; <i lang="ain-Latn">nupuri</i>?, illustrative)</td>
-				<td><Ref k="tamura1996" p="s.v. nupuri" /></td>
+				<td><A w="nup" gl="field, plain" /></td>
+				<td>'field, plain'</td>
+				<td><i lang="ja">Nopporo</i> (from a compound river name)</td>
+				<td>野幌 Nopporo (&lt; <i lang="ain-Latn">nup-or-o-pet</i> 'river in the field')</td>
+				<td><Ref k="sapporo2021" p="Atsubetsu 3" /></td>
 			</tr>
 			<tr>
 				<td><A w="kotan" gl="village, settlement" /></td>
@@ -127,8 +117,9 @@
 	</table>
 
 	<p>
-		All etymologies in the table are illustrative; individual place names require verification
-		against <Ref k="chiri1956" paren /> and related primary sources. A specific Japanese name
+		The Nopporo analysis follows Sapporo's published account. Other entries marked
+		"illustrative" require checking against <Ref k="chiri1956" paren /> and related
+		place-name sources. A specific Japanese name
 		may involve phonological reduction, analogical replacement, or overlay by later Japanese
 		morphology that obscures the Ainu source compound. The component Ainu forms are well
 		attested in the living lexicon; it is the mapping from a given Japanese string to those
@@ -156,7 +147,7 @@
 		m="nay san"
 		g="stream go.down"
 		tr="The stream flows downstream."
-		note="Constructed illustration of nay as a geographic common noun. The motion verb san 'go down toward the sea/shore' takes nay as its subject; the construction shows nay as a free noun in an active predication. The san direction also underlies the panke/penke 'downstream/upstream' spatial terms that feed Hokkaido toponym patterns."
+		note="Constructed illustration of nay as a geographic common noun. The motion verb san 'go down toward the sea/shore' takes nay as its subject; the construction shows nay as a free noun in an active predication."
 		constructed
 	/>
 
@@ -180,11 +171,10 @@
 		The verbal element <A w="us" gl="be habitually at, grow at" /> (Tamura 1996, s.v.
 		<i lang="ain-Latn">us</i>) means 'be habitually attached to, grow at'; the suffix
 		<i lang="ain-Latn">-us(i)</i> nominalizes this to 'place where X habitually grows or is
-		found'. The compound <i lang="ain-Latn">ni-kap-us-i</i> — <i lang="ain-Latn">ni</i>
-		'tree' + <i lang="ain-Latn">kap</i> 'bark' + <i lang="ain-Latn">-us-i</i> 'habitually-at'
-		— yields 'place where bark trees stand', commonly cited as the source of Niikappu 新冠
-		(illustrative only; <Ref k="tamura1996" p="s.v. -us(i)" />). The suffix also surfaces in
-		Usu 有珠 and several other Hokkaido names.
+		found' <Ref k="tamura1996" p="s.v. us, -us(i)" />. Niikappu 新冠 is recorded as
+		<i lang="ain-Latn">nikap</i> 'tree bark' in the town's historical account
+		<Ref k="niikappu2024" p="7" />; its components are <i lang="ain-Latn">ni</i> 'tree'
+		and <i lang="ain-Latn">kap</i> 'bark' <Ref k="tamura1996" p="s.v. ni, kap" />.
 	</p>
 	<p>
 		The element <A w="oma" gl="be located in/at" /> 'be located in, be contained in' (Tamura
@@ -230,8 +220,8 @@
 
 	<table>
 		<caption>
-			Selected Ainu loan candidates in Eastern Old Japanese, after Vovin (2022, Ch.6 §2). All
-			etymologies are Vovin's proposals and are contested; see text.
+			Selected Ainu loan candidates in Eastern Old Japanese
+			<Ref k="vovin2022" p="186–188" />. The etymologies are Vovin's proposals.
 		</caption>
 		<thead>
 			<tr>
@@ -273,9 +263,9 @@
 				<td>14.3529</td>
 			</tr>
 			<tr>
-				<td><i lang="ja">karimba</i></td>
-				<td><i lang="ain-Latn">karinpa</i></td>
-				<td>'cherry bark'</td>
+				<td><i lang="ja">kariᵐba</i></td>
+				<td><i lang="ain-Latn">karinpa</i> 'cherry bark'</td>
+				<td>'cherry tree'</td>
 				<td>14.3399</td>
 			</tr>
 			<tr>
@@ -301,8 +291,8 @@
 
 	<p>
 		Vovin also argues that modern Japanese <i lang="ja">iruka</i> 'dolphin' is an Ainu loan,
-		"isolated in Japonic; cf. Saru <i lang="ain-Latn">rika</i> / Kuril
-		<i lang="ain-Latn">rika</i> 'whale meat'" <Ref k="vovin2022" p="§2" /> ‹contested›.
+		comparing it with Saru <i lang="ain-Latn">riká</i> and Kuril
+		<i lang="ain-Latn">rika</i> 'whale meat' <Ref k="vovin2022" p="185" /> ‹contested›.
 	</p>
 	<p>
 		This programme forms a minority and contested position. Vovin (2022 Ch.6 §1) himself
@@ -325,8 +315,8 @@
 
 <S t="A case study: sikerpe and the Japanese siko-type" id="sikerpe">
 	<p>
-		Ochiai (2026) provides a model of rigorous Ainu → Japanese lexical identification.
-		The Ainu form <A w="sikerpe" gl="Amur cork-tree fruit" /> — fruit of the Amur cork tree
+		Ochiai (2026) proposes an Ainu source for Japanese dialectal names of the Amur cork tree
+		<Ref k="ochiai2026" p="195–196" />. The Ainu form <A w="sikerpe" gl="Amur cork-tree fruit" /> — fruit of the Amur cork tree
 		(<i lang="ja">キハダ</i> <i>Phellodendron amurense</i>) — is analysed as a reflex of
 		Proto-Ainu <i lang="ain-Latn">*siw kor pe</i> 'thing that holds bitterness':
 		<i lang="ain-Latn">siw</i> 'bitter' + <i lang="ain-Latn">kor</i> 'hold, have' +
@@ -346,15 +336,17 @@
 	<p>
 		A cluster of Japanese dialectal names for the same tree — most conservatively
 		<i lang="ja">sikorope</i> in Akita, with reduced forms <i lang="ja">sikoro</i>,
-		<i lang="ja">sikonohe</i>, <i lang="ja">siko no ki</i> elsewhere — are loans from Ainu
-		<i lang="ain-Latn">*si kor pe</i>, borrowed before the Ainu vowel change to
-		<i lang="ain-Latn">*si ker pe</i> had completed <Ref k="ochiai2026" p="199" />. Two
+		<i lang="ja">sikonohe</i>, <i lang="ja">siko no ki</i> elsewhere — are analysed by Ochiai as loans from Ainu
+		<i lang="ain-Latn">*si kor pe</i>. In this reconstruction, borrowing followed
+		<i lang="ain-Latn">w</i>-deletion from <i lang="ain-Latn">*siw kor pe</i> and preceded
+		the change to <i lang="ain-Latn">*si ker pe</i>
+		<Ref k="ochiai2026" p="195–196" />. Two
 		complementary arguments support the claim. First, the Japanese <i lang="ja">siko-</i> type
 		is morphologically opaque in Japanese and has no Japanese-internal etymology, while the
 		Ainu compound is transparent — the asymmetry that is diagnostic of borrowing direction.
 		Second, the Japanese form preserves the earlier vowel /o/ in the second syllable, showing
-		that the borrowing antedates the Ainu sound change; this gives a terminus ante quem for
-		the Ainu historical phonology, linking contact evidence to reconstruction
+		that, in Ochiai's reconstruction, borrowing precedes the Ainu vowel change. The
+		borrowing therefore supplies a relative terminus post quem for that change
 		<Ref k="ochiai2026" p="197–199" />. The reconstruction side of this analysis connects to
 		<Xr ch="proto-ainu-segmental-reconstruction" />.
 	</p>

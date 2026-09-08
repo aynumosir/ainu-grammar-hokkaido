@@ -281,6 +281,8 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	vovin2022: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
 	chiba2015: { sourceRole: 'primary-data', heldLocally: false },
 	chiri1955: { sourceRole: 'background', heldLocally: false },
+	niikappu2024: { sourceRole: 'background', heldLocally: false },
+	sapporo2021: { sourceRole: 'background', heldLocally: false },
 	chiri1956: { sourceRole: 'primary-data', heldLocally: false },
 	chiri1956nyumon: { sourceRole: 'prior-analysis', heldLocally: false },
 	diessel1999: { sourceRole: 'typological-framework', heldLocally: false },
