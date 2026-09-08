@@ -93,9 +93,9 @@
 				<td><Xr ch="causative-morphological-re-e-te" /></td>
 			</tr>
 			<tr>
-				<td>intransitive S suffixes</td>
-				<td><i lang="ain-Latn">=as</i> '1PL.EXCL.S', <i lang="ain-Latn">=an</i> '4.S'</td>
-				<td>at the right edge of the inflected stem; the side-switch for these two person rows</td>
+				<td>person suffixes</td>
+				<td><i lang="ain-Latn">=as</i>, <i lang="ain-Latn">=an</i>; values depend on the dialect and person combination</td>
+				<td>at the right edge of the stem; S indexes on intransitives, also parts of combined transitive forms</td>
 				<td><Xr ch="personal-affix-template-and-ordering" /></td>
 			</tr>
 			<tr>
@@ -110,7 +110,7 @@
 	<p>
 		Two ordering facts anchor the template. The first is a side-switch by transitivity. The
 		first-plural-exclusive and fourth-person subjects appear as <em>suffixes</em> on an intransitive
-		stem but as <em>prefixes</em> on a transitive one: <i lang="ain-Latn">inkar=an</i> 'I/one looked'
+		stem and as <em>prefixes</em> on a transitive verb with a third-person object: <i lang="ain-Latn">inkar=an</i> 'I/one looked'
 		and <i lang="ain-Latn">arki=as</i> 'we came' beside <i lang="ain-Latn">a=nukar</i> 'I/one saw it'
 		and <i lang="ain-Latn">ci=nukar</i> 'we saw it' <Ref k="nakagawa2024" p="166–169" />; <Ref
 			k="sato2008"
@@ -150,7 +150,8 @@
 		transitive verb indexes subject (A) and object (O) <Ref k="nakagawa2024" p="126" />. The surest
 		operational test puts the verb in the first-person plural: an intransitive takes the suffix
 		<i lang="ain-Latn">=as</i> (exclusive) or <i lang="ain-Latn">=an</i> (fourth person), a
-		transitive the prefix <i lang="ain-Latn">ci=</i> or <i lang="ain-Latn">a=</i>, the other person
+		transitive with a third-person object the prefix <i lang="ain-Latn">ci=</i> or
+		<i lang="ain-Latn">a=</i> (dialectal <i lang="ain-Latn">an=</i>), the other person
 		cells being uninformative — a side-switch Satō calls irregular and still unexplained <Ref
 			k="sato2008"
 			p="96"

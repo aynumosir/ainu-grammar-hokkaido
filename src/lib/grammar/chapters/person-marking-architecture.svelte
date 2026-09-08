@@ -273,14 +273,14 @@
 <S t="Syncretism and portmanteau cells" id="syncretism">
 	<p>
 		Second person collapses the role distinction: <i lang="ain-Latn">e=</i> marks 2SG as A, S, and
-		O, and <i lang="ain-Latn">eci=</i> does the same for 2PL. The same <i lang="ain-Latn">eci=</i>
+		O, and <i lang="ain-Latn">eci=</i> does the same for 2PL. In Saru and Chitose, the same <i lang="ain-Latn">eci=</i>
 		additionally serves as the portmanteau exponent for a first-person A acting on a second-person O,
 		covering 1SG→2SG, 1SG→2PL, 1PL.EXCL→2SG, and 1PL.EXCL→2PL with a single prefix in place of a
 		sequence of first- and second-person indexes <Ref k="tamura1972" p="27–28" />; <Ref
 			k="bugaeva2008"
 			p="38"
-		/>; <Ref k="bugaeva2012" p="474" />; <Ref k="nakagawa2024" p="170, 173" />. The surrounding
-		clause resolves the resulting ambiguity, and the cell is developed in <Xr
+		/>; <Ref k="bugaeva2012" p="474" />; <Ref k="nakagawa2024" p="171, 173" />. Clause and discourse
+		context can help resolve the resulting ambiguity, and the cell is developed in <Xr
 			ch="eci-portmanteau-and-second-plural"
 		/>.
 	</p>
