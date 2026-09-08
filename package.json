@@ -7,6 +7,8 @@
 		"dev": "bun scripts/gen-apparatus.ts && bun scripts/gen-grammar-search.ts && vite dev",
 		"build": "bun scripts/gen-apparatus.ts && bun scripts/audit-chapters.ts --quiet && bun scripts/gen-grammar-search.ts && vite build",
 		"preview": "vite preview",
+		"test:sitemap:unit": "bun test src/lib/sitemap.test.mjs",
+		"test:sitemap": "bun run build && bun run test:sitemap:unit && bun scripts/test-sitemap-built.mjs",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
