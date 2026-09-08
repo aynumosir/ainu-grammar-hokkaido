@@ -18,7 +18,7 @@
 		Among the three applicative prefixes of Hokkaido Ainu,
 		<i lang="ain-Latn">ko-</i> is the most frequent. Bugaeva's Saru and Chitose corpus
 		places the order <i lang="ain-Latn">ko-</i> &gt; <i lang="ain-Latn">e-</i> &gt;
-		<i lang="ain-Latn">o-</i> by token frequency; taken together, applicative verbs account
+		<i lang="ain-Latn">o-</i> in her lexical survey; taken together, applicative verbs account
 		for roughly one-third of all verbs and up to seven percent of the entire Ainu lexicon
 		<Ref k="bugaeva2006" p="188" />. Nakagawa characterizes the applied object as 〜に向かって
 		(directed toward) or 〜とともに (together with), two senses that correspond to the
@@ -38,11 +38,11 @@
 
 <S t="Semantic roles of the applied object" id="roles">
 	<p>
-		Bugaeva's systematic role-by-role classification of <i lang="ain-Latn">ko-</i> tokens in
-		her Saru and Chitose sample yields the distribution in Table 1
-		<Ref k="bugaeva2006" p="190" />. Each percentage is the share of
-		<i lang="ain-Latn">ko-</i> tokens in which the applied object bears that role; the intr/tr
-		column records the proportion derived from an intransitive vs transitive base verb.
+		Bugaeva's classification of <i lang="ain-Latn">ko-</i> derivations uses verbs from
+		the Saru and Chitose dictionaries and her Chitose fieldwork with Ito Oda
+		<Ref k="bugaeva2006" p="189, fn. 6; 190" />. Each percentage is the share of
+		derivations assigned to that role in her sample; the intr/tr column records the
+		proportion derived from an intransitive or transitive base verb.
 	</p>
 
 	<table>
@@ -50,7 +50,7 @@
 		<thead>
 			<tr>
 				<th>applied-object role</th>
-				<th>% of tokens</th>
+				<th>% of sampled derivations</th>
 				<th>intr base / tr base (%)</th>
 				<th>adjunct paraphrase</th>
 			</tr>
@@ -296,7 +296,7 @@
 		<i lang="ain-Latn">ko-</i> adds the Source)'
 		<Ref k="bugaeva2006" p="191" />. Here the
 		<i lang="ain-Latn">ko-</i> applied object bears the Source role (the person stolen from),
-		one of the Table 1 categories in which the transitive base (64%) predominates, as this
+		one of the Table 1 categories in which the transitive base (66%) predominates, as this
 		chain confirms.
 	</p>
 	<p>

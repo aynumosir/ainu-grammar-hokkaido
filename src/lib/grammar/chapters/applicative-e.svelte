@@ -50,7 +50,7 @@
 		cite="nakagawa2024:193"
 		dial="SAR"
 		place="Nakagawa ex. 173, after Monbetsu-chō 1969: 237"
-		note="The instrument emus 'sword' is the applied object licensed by e-, which raises tuye from a two-place to a three-place verb. Both objects — tree and sword — are core arguments marked by person affixes in a three-person frame."
+		note="The instrument emus 'sword' is the applied object licensed by e-, which raises tuye from a two-place to a three-place verb. Both tree and sword are bare object noun phrases; no overt person marker occurs in this example. A three-place verb can index at most one subject and one object (Bugaeva 2006: 188, fn. 5)."
 	/>
 </S>
 
@@ -96,8 +96,9 @@
 	</table>
 
 	<p>
-		Bugaeva's corpus study of the Chitose and Saru dialects supplies percentage figures across
-		all attested applied-object roles <Ref k="bugaeva2006" p="190" />. The intr/tr column
+		Bugaeva classifies applicative verbs collected from the Chitose and Saru dictionaries
+		and her Chitose fieldwork with Ito Oda <Ref k="bugaeva2006" p="189, fn. 6; 190" />.
+		The percentages describe this lexical sample. The intr/tr column
 		records what proportion of each role class is derived from an intransitive versus a
 		transitive base.
 	</p>
@@ -187,12 +188,12 @@
 
 	<Ex
 		m="turepta e-arpa"
-		g="lily.bulb APPL-go"
+		g="dig.lily.bulbs APPL-go"
 		tr="go to dig lily-bulbs"
 		cite="nakagawa2024:195"
-		dial="SAR"
-		place="Nakagawa ex. 180"
-		note="Verbal phrase. The applied object turepta encodes the purpose of the motion, paraphrasable as turepta kusu arpa 'go for the purpose of digging lily-bulbs'. Both Manner and Path roles (each 2%) derive exclusively from intransitive bases."
+		dial="HK"
+		place="Nakagawa, unnumbered illustration under (2)"
+		note="The applied object turepta 'dig lily bulbs' is an intransitive verb used nominally to express the purpose of motion. Nakagawa gives the paraphrase turepta kusu arpa. In Bugaeva's sample, Purpose and Path each account for 2% and derive exclusively from intransitive bases (2006: 190)."
 	/>
 
 	<p>
@@ -229,8 +230,8 @@
 
 <S t="Content and Theme-Patient: the dominant and non-oblique uses" id="content">
 	<p>
-		Content (39%) and Theme-Patient (17%) together constitute more than half of all attested
-		<i lang="ain-Latn">e-</i> forms and derive almost entirely from intransitive bases
+		Content (39%) and Theme-Patient (17%) together constitute more than half of the
+		<i lang="ain-Latn">e-</i> derivations in Bugaeva's sample and derive almost entirely from intransitive bases
 		(91% and 96% respectively). These roles correspond to Nakagawa's type (3): the applied
 		object has no adpositional paraphrase, and <i lang="ain-Latn">e-</i> here functions as
 		direct transitivization rather than oblique promotion <Ref k="bugaeva2006" p="191" />;
@@ -299,13 +300,13 @@
 		Many verbs carry a lexicalized <i lang="ain-Latn">e-</i> whose applicative analysis is
 		opaque in current usage. A community-proposed decomposition treats <A
 			w="eykaun"
-			gl="surpass, exceed"
+			gl="be superior"
 		/> as applicative <i lang="ain-Latn">e-</i> applied to <i lang="ain-Latn">kaun</i>
 		derived from the postpositional phrase <i lang="ain-Latn">ka un</i> 'be on top of'
-		(nukopoli, aynu-corpora Discord 2024) <Ref k="aynucorporadiscord" /> ‹speculative›. The
-		etymology is semantically motivated but cannot be verified against the diachronic record
-		from the sources consulted; synchronically, <i lang="ain-Latn">eykaun</i> functions as a
-		transitive base.
+		(nukopoli, aynu-corpora Discord 2024) <Ref k="aynucorporadiscord" /> ‹speculative›. Nakagawa's Chitose dictionary classifies <i lang="ain-Latn">eykaun</i> 'be superior'
+		as intransitive; <i lang="ain-Latn">ko-eykaun</i> 'surpass someone' is transitive
+		<Ref k="nakagawa1995" p="90, 196, s.v. eykaun, koeykaun" />. The proposed etymology
+		does not establish a productive transitivizing analysis of the present-day base.
 	</p>
 
 	<p>
@@ -326,9 +327,11 @@
 
 <S t="Stacking, re-applicativization, and the feeding of noun incorporation" id="stacking">
 	<p>
-		<i lang="ain-Latn">e-</i> stacks freely with <i lang="ain-Latn">ko-</i> in both orders,
-		<i lang="ain-Latn">ko-e-</i> and <i lang="ain-Latn">e-ko-</i>, with no documented
-		meaning difference between the two sequences on the same verb type. In
+		Bugaeva and Kobayashi describe double applicatives in
+		<i lang="ain-Latn">ko-e-</i> and <i lang="ain-Latn">e-ko-</i>, with
+		<i lang="ain-Latn">ko-</i> encoding Addressee or Recipient and
+		<i lang="ain-Latn">e-</i> Content. They report no visible meaning difference
+		between these combinations <Ref k="bugaevakobayashi2022" p="519" />. In
 		<A w="e-ko-isoytak" gl="tell stories to someone about something" />,
 		<i lang="ain-Latn">e-</i> contributes the Content applied object (the stories told) and
 		<i lang="ain-Latn">ko-</i> the Addressee (the person addressed) <Ref

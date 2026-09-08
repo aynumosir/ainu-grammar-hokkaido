@@ -19,12 +19,12 @@
 	</p>
 
 	<p>
-		Bugaeva's corpus study of the Chitose and Saru dialects supplies a role breakdown for the
-		applied objects of <i lang="ain-Latn">o-</i>
-		<Ref k="bugaeva2006" p="191" />. All three categories resolve to postpositional expressions
-		in <i lang="ain-Latn">ta</i> 'at/to' or <i lang="ain-Latn">or un</i> 'into', making
-		<i lang="ain-Latn">o-</i> the only applicative whose applied object is consistently
-		paraphrasable by a locative postposition. The intr-base column records how many forms in
+		Bugaeva gives a role breakdown for <i lang="ain-Latn">o-</i> derivations drawn
+		from the Chitose and Saru dictionaries and her Chitose fieldwork
+		<Ref k="bugaeva2006" p="189, fn. 6; 191" />. Her table gives
+		<i lang="ain-Latn">ta</i>/<i lang="ain-Latn">un</i> as paraphrases for Goal,
+		<i lang="ain-Latn">ta</i> for Location, and <i lang="ain-Latn">wa</i> for Source;
+		Theme has no postpositional paraphrase. The intr-base column records how many forms in
 		each role class derive from an intransitive base.
 	</p>
 
@@ -60,9 +60,8 @@
 	</table>
 
 	<p>
-		The role figures are drawn from a single Chitose/Saru corpus sample; no pan-Hokkaido
-		frequency study has been conducted ‹corpus-suggested›. They are consistent with the
-		claim, made by Nakagawa on the basis of text distributions, that
+		The role figures describe Bugaeva's lexical sample <Ref k="bugaeva2006" p="189–191" />.
+		Nakagawa separately observes that
 		<i lang="ain-Latn">o-</i> is the rarest of the three applicatives and occurs predominantly
 		in verse rather than prose or conversational registers
 		<Ref k="nakagawa2024" p="199" />; <Ref k="sato2008" p="244" />. Bugaeva's lexical
@@ -78,8 +77,8 @@
 		the entry for the prefix gives 〜〈場所〉へ・〜〈場所〉に・〜〈場所〉から (to / at / from a
 		place), interchangeable with the postposition <i lang="ain-Latn">un</i>
 		<Ref k="nakagawa1995" />. The ablative から sense is thus registered by Nakagawa
-		himself, against the narrower goal-and-location-only formulation that Bugaeva reports
-		from his earlier work <Ref k="bugaeva2006" p="191" />; the place restriction is
+		himself; Bugaeva also includes Source among the overlapping meanings of
+		<i lang="ain-Latn">ko-</i> and <i lang="ain-Latn">o-</i> <Ref k="bugaeva2006" p="191" />; the place restriction is
 		unaffected — all three senses take place nouns only.
 	</p>
 </S>

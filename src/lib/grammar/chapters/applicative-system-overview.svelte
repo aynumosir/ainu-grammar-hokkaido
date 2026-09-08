@@ -151,14 +151,16 @@
 	</p>
 	<p>
 		For <i lang="ain-Latn">ko-</i>, Addressee (20%), Goal (19%), Comitative (18%), and
-		Benefactive (18%) together account for three-quarters of applied-object tokens; Source
-		and Recipient each contribute 5%, with the remainder across Cause, Range, and Location
+		Benefactive (18%) together account for three-quarters of the sampled derivations.
+		Malefactive contributes 6%, Source and Recipient 5% each, and the remaining 9%
+		combines Cause, Range, Purpose, and Location
 		<Ref k="bugaeva2006" p="190" />. The <i lang="ain-Latn">o-</i> distribution is
-		narrowest: locative roles (Goal-into-place 57%, Location 29%, Source/Theme 14%) cover
-		all attested instances, all paraphrasable by <i lang="ain-Latn">ta</i> /
-		<i lang="ain-Latn">un</i> 'at/to' <Ref k="bugaeva2006" p="191" />. The role
-		percentages are from a single corpus sample and serve as approximations; no
-		pan-Hokkaido frequency study has been conducted ‹corpus-suggested›.
+		narrowest: Goal accounts for 57%, Location 29%, and Source/Theme 14%.
+		Goal has <i lang="ain-Latn">ta</i>/<i lang="ain-Latn">un</i> paraphrases,
+		Location has <i lang="ain-Latn">ta</i>, Source has <i lang="ain-Latn">wa</i>, and Theme has none
+		<Ref k="bugaeva2006" p="191" />. These percentages describe the lexical sample
+		collected from two dictionaries and Chitose fieldwork
+		<Ref k="bugaeva2006" p="189, fn. 6" />.
 	</p>
 </S>
 
@@ -231,16 +233,13 @@
 		<Ref k="bugaeva2006" p="191" />.
 	</p>
 	<p>
-		A community-proposed etymology for
-		<A w="eykaun" gl="surpass, excel" /> illustrates the Content / Theme-adding function in
-		a compound form: the verb may derive from <i lang="ain-Latn">e-</i> applicativizing the
-		locative predicate <i lang="ain-Latn">ka un</i> 'be above' →
-		<i lang="ain-Latn">eykaun</i> 'surpass something', with a parallel
-		<i lang="ain-Latn">-u</i> transitivizer yielding the doublet
-		<i lang="ain-Latn">kaunu</i> (nukopoli, aynu-corpora Discord 2024)
-		<Ref k="aynucorporadiscord" />. The proposal is consistent with the range of
-		<i lang="ain-Latn">e-</i>'s Content / Theme uses, but the lexical history has not been
-		established in the peer-reviewed literature ‹speculative›.
+		The Chitose verb <A w="eykaun" gl="be superior" /> is intransitive;
+		<i lang="ain-Latn">ko-eykaun</i> 'surpass someone' is transitive
+		<Ref k="nakagawa1995" p="90, 196, s.v. eykaun, koeykaun" />. A community
+		etymology connecting <i lang="ain-Latn">eykaun</i> with
+		<i lang="ain-Latn">ka un</i> 'be above' remains speculative
+		<Ref k="aynucorporadiscord" /> ‹speculative›. Its present-day valency provides
+		no evidence for a productive Content-adding <i lang="ain-Latn">e-</i> in this word.
 	</p>
 </S>
 
@@ -354,7 +353,7 @@
 		carries the postpositional meaning that would otherwise be expressed by a separate
 		postposition: <i lang="ain-Latn">at-e-uk</i> 'catch with a net'
 		(= <i lang="ain-Latn">at ani uk</i>), <i lang="ain-Latn">pira-ko-hokus-te</i>
-		'fall toward a cliff' (= <i lang="ain-Latn">pira or un hokuste</i>)
+		'cause something to fall toward a cliff' (= <i lang="ain-Latn">pira or un hokuste</i>)
 		<Ref k="nakagawa2024" p="484" />. Shibatani (1990) demonstrates that Baker's
 		Case-theoretic prediction — that unaccusative bases are blocked from applicative
 		formation — is falsified in Ainu, which does applicativize unaccusatives

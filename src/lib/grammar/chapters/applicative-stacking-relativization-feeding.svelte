@@ -35,13 +35,13 @@
 	<p>
 		Up to two applicative prefixes appear on one verb simultaneously, each raising arity by one
 		<Ref k="bugaeva2014" />; <Ref k="bugaevakobayashi2022" p="§4.1.1" />. The most productive
-		double-applicative patterns pair <i lang="ain-Latn">e-</i> (Content, Instrument, Location,
-		Purpose) with <i lang="ain-Latn">ko-</i> (Addressee, Goal, Comitative), in either order
+		double-applicative patterns pair <i lang="ain-Latn">e-</i> (Content) with
+		<i lang="ain-Latn">ko-</i> (Addressee/Recipient), in either order
 		— <i lang="ain-Latn">e-ko-</i> or <i lang="ain-Latn">ko-e-</i>. Bugaeva and Kobayashi
 		report no visible semantic difference between the two orders; in both,
-		<i lang="ain-Latn">e-</i> contributes a Content or Instrument object and
-		<i lang="ain-Latn">ko-</i> an Addressee or Goal
-		<Ref k="bugaevakobayashi2022" p="§4.1.1" /> ‹contested›. Nakagawa places applicative
+		<i lang="ain-Latn">e-</i> contributes Content and
+		<i lang="ain-Latn">ko-</i> an Addressee or Recipient
+		<Ref k="bugaevakobayashi2022" p="519" /> ‹contested›. Nakagawa places applicative
 		prefixes in the single slot immediately inside the person index and before the root, so
 		whether order encodes any semantic scope remains open
 		<Ref k="nakagawa2024" p="211" /> ‹speculative›.
@@ -59,7 +59,7 @@
 		tr="tell stories to someone about something"
 		cite="bugaeva2006:188"
 		dial="HK"
-		note="e- contributes the Content participant; ko- contributes the Addressee. Both applied objects are unmarked bare NPs cross-referenced by a single O-index. Nakagawa 2024: 211 gives e-yay-e-isoytak, with reflexive yay- filling the ko-slot."
+		note="e- contributes the Content participant; ko- contributes the Addressee. The citation form contains no expressed subject or object. A three-place verb allows at most one subject index and one object index, so a single object index does not independently mark both objects (Bugaeva 2006: 188, fn. 5)."
 	/>
 
 	<p>
@@ -144,7 +144,7 @@
 				<td><i lang="ain-Latn">pira or un hokuste</i></td>
 				<td><i lang="ain-Latn">pira ko-hokuste</i></td>
 				<td><i lang="ain-Latn">pira-ko-hokus-te</i></td>
-				<td>Goal/Locative ('cliff', falling toward)</td>
+				<td>Goal/Locative ('cliff', causing something to fall toward)</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">turepta kusu arpa</i></td>
