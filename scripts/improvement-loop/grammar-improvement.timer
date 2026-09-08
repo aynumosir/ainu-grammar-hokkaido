@@ -1,0 +1,11 @@
+[Unit]
+Description=Repeat the Hokkaido Ainu source audit
+
+[Timer]
+OnStartupSec=5min
+OnUnitInactiveSec=15min
+AccuracySec=30s
+Unit=grammar-improvement.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "summary", "pr_urls", "chapters_checked", "next_targets", "blockers"],
+  "properties": {
+    "status": {"type": "string", "enum": ["completed", "needs_followup", "blocked", "no_change"]},
+    "summary": {"type": "string"},
+    "pr_urls": {"type": "array", "items": {"type": "string"}},
+    "chapters_checked": {"type": "array", "items": {"type": "string"}},
+    "next_targets": {"type": "array", "items": {"type": "string"}},
+    "blockers": {"type": "array", "items": {"type": "string"}}
+  }
+}
