@@ -90,7 +90,6 @@
 		<li>Assertive and softening: na, wa, un — <Xr ch="sentence-final-particles-illocutionary-force" /></li>
 		<li>Assessment — <Xr ch="glides-w-y" /></li>
 		<li>at-rus → attus: a compound assimilation — <Xr ch="citation-vs-combining-stem-shapes" /></li>
-		<li>Attachment to the base stem: rikinka and the absence of rikipka — <Xr ch="transitivizer-ka-valency-pairs" /></li>
 		<li>Attestation and source coverage — <Xr ch="inonno-itak-ritual-prayer" /></li>
 		<li>Attribution: the original-source rule — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>Attributive and predicative positions — <Xr ch="property-concept-predication" /></li>
@@ -642,6 +641,7 @@
 		<li>Null and zero arguments — <Xr ch="argument-realization-indexing" /></li>
 		<li>Null arguments and zero anaphora — <Xr ch="nonconfigurationality-pronominal-argument" /></li>
 		<li>Number agreement in the elevated register — <Xr ch="inonno-itak-ritual-prayer" /></li>
+		<li>Number alternation and causative attachment — <Xr ch="transitivizer-ka-valency-pairs" /></li>
 		<li>Number and the fourth person — <Xr ch="person-marking-architecture" /></li>
 		<li>Number suppletion: an (sg) and oka / okay (pl) — <Xr ch="existential-locational-an-oka" /></li>
 		<li>Number-agreement override — <Xr ch="poetic-archaic-elevated-register" /></li>

@@ -110,6 +110,7 @@
 		<li><i lang="ain-Latn">a=se</i> — <Xr ch="nominalization-p-pe" /></li>
 		<li><i lang="ain-Latn">a=sospa</i> — <Xr ch="sequential-wa-and-clause-chaining" /></li>
 		<li><i lang="ain-Latn">a=ta</i> — <Xr ch="noun-incorporation-object" /></li>
+		<li><i lang="ain-Latn">a=teke</i> — <Xr ch="causative-morphological-re-e-te" /></li>
 		<li><i lang="ain-Latn">a=teke-he</i> — <Xr ch="concept-form-affiliative-form" />, <Xr ch="negation-polarity-items-scope" /></li>
 		<li><i lang="ain-Latn">a=tekehe</i> — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li><i lang="ain-Latn">a=toy-ko-tata</i> — <Xr ch="applicative-system-overview" />, <Xr ch="applicative-ko" />, <Xr ch="applicative-stacking-relativization-feeding" />, <Xr ch="noun-incorporation-oblique-polysynthesis-debate" /></li>
@@ -273,7 +274,6 @@
 		<li><i lang="ain-Latn">i=resu</i> — <Xr ch="siri-ne-situational" />, <Xr ch="clause-linkage-overview" />, <Xr ch="hine-akusu-switch-reference" />, <Xr ch="tail-head-linkage-and-narrative-cohesion" /></li>
 		<li><i lang="ain-Latn">i=rewsire</i> — <Xr ch="person-marking-architecture" />, <Xr ch="indefinite-fourth-person-paradigm" />, <Xr ch="fourth-person-honorific" />, <Xr ch="alignment-hierarchical-and-the-debate" />, <Xr ch="reference-tracking" /></li>
 		<li><i lang="ain-Latn">i=sam</i> — <Xr ch="reference-tracking" />, <Xr ch="topic-marking-anakne" />, <Xr ch="pragmatic-word-order-dislocation" /></li>
-		<li><i lang="ain-Latn">i=teke</i> — <Xr ch="causative-morphological-re-e-te" /></li>
 		<li><i lang="ain-Latn">i=tomteresu</i> — <Xr ch="adverbial-incorporation" /></li>
 		<li><i lang="ain-Latn">i=tura</i> — <Xr ch="negation-prohibitive-iteki" /></li>
 		<li><i lang="ain-Latn">i=ukotumam</i> — <Xr ch="simultaneous-kor-clauses" /></li>
