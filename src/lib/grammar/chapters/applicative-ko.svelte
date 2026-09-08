@@ -278,11 +278,12 @@
 	/>
 	<p>
 		<i lang="ain-Latn">ko-</i> also stacks with the <Xr ch="applicative-e">e- applicative</Xr>.
-		When both prefixes appear on the same verb, <i lang="ain-Latn">e-</i> adds its Content or
-		Instrument applied object and <i lang="ain-Latn">ko-</i> adds its Addressee or Recipient
+		In the double-applicative pattern described by Bugaeva and Kobayashi,
+		<i lang="ain-Latn">e-</i> adds its Content applied object and
+		<i lang="ain-Latn">ko-</i> adds its Addressee or Recipient
 		applied object; the orders <i lang="ain-Latn">ko-e-</i> and
 		<i lang="ain-Latn">e-ko-</i> are both attested with no reported semantic difference
-		<Ref k="bugaevakobayashi2022" p="§4.1.1" />; <Ref k="bugaeva2006" p="188" />. The speech
+		<Ref k="bugaevakobayashi2022" p="519" />; <Ref k="bugaeva2006" p="188" />. The speech
 		verb <A w="isoytak" gl="narrate, tell stories" /> is the standard illustration:
 		<i lang="ain-Latn">e-ko-isoytak</i> is a three-place frame in which
 		<i lang="ain-Latn">e-</i> encodes the topic narrated and
