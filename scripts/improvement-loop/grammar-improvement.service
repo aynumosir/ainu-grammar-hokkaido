@@ -4,7 +4,7 @@ Description=Source audit of the Hokkaido Ainu grammar
 [Service]
 Type=exec
 ExecStart=/usr/bin/python3 %h/.local/share/ainu-grammar-improvement/runner.py --config %h/.config/ainu-grammar-improvement/config.json
-Environment="PATH=%h/.local/bin:%h/.bun/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PATH=%h/.local/bin:%h/.bun/bin:%h/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin"
 UMask=0077
 MemoryHigh=3G
 MemoryMax=4G
@@ -14,4 +14,3 @@ TasksMax=256
 RuntimeMaxSec=125min
 TimeoutStopSec=30s
 KillMode=control-group
-
