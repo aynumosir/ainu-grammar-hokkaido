@@ -351,15 +351,11 @@
 
 <S t="Third person and the two-affix cap" id="third-person">
 	<p>
-		The third-person row is formally uniform — Ø for A, S, and O — but the
-		interpretation is contested. Nakagawa treats third person as the absence of any affix:
-		a bare noun phrase satisfies the verb's valency position without triggering a marker
-		<Ref k="nakagawa2024" p="169" />. Satō argues for a zero third-person affix, required
-		to account for the cap of two personal indexes per verb and the ungrammaticality of
-		three-index combinations in causative and ditransitive configurations
-		<Ref k="sato2023b" p="39" />; <Ref k="sato2025a" p="369" />. Bugaeva's paradigm
-		table writes Ø in the third row, describing the surface form without adjudicating
-		between the two analyses <Ref k="bugaeva2012" p="471" /> ‹contested›.
+		Third person has no overt marker for A, S, or O <Ref k="nakagawa2024" p="166, 170" />;
+		<Ref k="bugaeva2012" p="471" />. Its analysis is disputed. Satō argues for a zero
+		third-person affix using the absence of causative forms that would index three
+		participants; his criticism targets Nakagawa's 2001 account, which posits no
+		third-person affix <Ref k="sato2023b" p="39, n. 3" /> ‹contested›.
 	</p>
 
 	<p>
@@ -387,15 +383,13 @@
 	</p>
 
 	<p>
-		The ditransitive evidence bears directly on alignment. Satō argues that the object
-		index in three-place verbs such as <i lang="ain-Latn">kore</i> 'give' ordinarily
-		identifies the human recipient while the theme stays unindexed — a secundative
-		pattern in the indexing slot <Ref k="sato2008" p="147" />;
-		<Ref k="sato2023b" p="40, 47" />. Nakagawa describes the same verbs through valency,
-		with two bare object phrases when both are third person
-		<Ref k="nakagawa2024" p="363–365" />. Both accounts converge on the generalization
-		that a verb hosts at most one subject index and one object index; the difference is
-		whether the unfilled third-person position contains a zero marker ‹contested›.
+		With <i lang="ain-Latn">kore</i> 'give', Satō treats recipient indexing as the
+		ordinary secundative pattern while acknowledging exceptional theme indexing
+		<Ref k="sato2023b" p="40, n. 5" />. Nakagawa's examples show both objects as bare
+		noun phrases and allow either to be omitted when recoverable from context
+		<Ref k="nakagawa2024" p="127" />. Their analyses of third person differ: Satō argues
+		for a zero third-person index against Nakagawa's 2001 account, using the limit of
+		two indexed arguments per verb <Ref k="sato2023b" p="39, n. 3" /> ‹contested›.
 	</p>
 
 	<Ex
@@ -403,9 +397,9 @@
 		g="sweets children 1SG.A=give"
 		tr="I gave the children sweets."
 		cite="nakagawa2024:127"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 11a"
-		note="The 1SG.A subject is indexed; both non-subject participants are third person and appear as bare noun phrases with no object index. Satō's analysis posits a zero third-person object for the recipient; Nakagawa's analysis requires no zero."
+		note="Both objects are expressed as bare noun phrases. Third person has no overt person marker; ku= marks the first-person singular subject. Nakagawa also gives versions with either object omitted when recoverable from context (ex. 11b–c). The source does not specify a dialect for this example."
 	/>
 
 	<p>

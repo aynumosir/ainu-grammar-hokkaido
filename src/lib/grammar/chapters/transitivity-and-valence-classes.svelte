@@ -373,15 +373,15 @@
 	<p>
 		Three-place verbs license a subject and two bare objects, both omissible and without a fixed
 		grammatical order between them. With <i lang="ain-Latn">kore</i> 'give', the theme and the
-		recipient are both bare third-person phrases and only the subject is indexed below. Almost all
+		recipient are both bare third-person phrases; the subject has an overt person index below. Almost all
 		three-place verbs are derived, by an applicative such as <i lang="ain-Latn">ko-</i> or the
 		causative <i lang="ain-Latn">-re</i>, the chief base-form member being the locative
 		<i lang="ain-Latn">o</i> 'put X into a place' <Ref k="bugaevakobayashi2022" p="§4.2" />;
-		<Ref k="nakagawa2024" p="134" />. Satō analyses the object index on
-		<i lang="ain-Latn">kore</i> as tracking the recipient, a secundative pattern, a point on which
-		Bugaeva's account differs; the indexing options are set out in
-		<Xr ch="object-indexing-monotransitive" /> and <Xr ch="argument-realization-indexing" />
-		‹contested›.
+		<Ref k="nakagawa2024" p="134" />. Satō describes recipient indexing with
+		<i lang="ain-Latn">kore</i> as the ordinary secundative pattern while accepting
+		Bugaeva's examples of theme indexing <Ref k="sato2023b" p="40, n. 5" />. The indexing
+		options are set out in <Xr ch="object-indexing-monotransitive" /> and
+		<Xr ch="argument-realization-indexing" />.
 	</p>
 
 	<Ex
@@ -389,9 +389,9 @@
 		g="sweets children 1SG.A=give"
 		tr="I gave the children sweets."
 		cite="nakagawa2024:127"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 11a"
-		note="Both non-subject arguments are bare third-person noun phrases; only the 1SG.A subject is indexed. topenpe ku=kore and hekattar ku=kore are identical in form, the を/に contrast belonging to the Japanese translation."
+		note="Both objects are expressed as bare noun phrases. Third person has no overt person marker; ku= marks the first-person singular subject. Nakagawa also gives versions with either object omitted when recoverable from context (ex. 11b–c). The source does not specify a dialect for this example."
 	/>
 
 	<p>
@@ -661,12 +661,11 @@
 		<Ref k="nakagawa2024" p="135" />. Satō declines to raise so rare a configuration to a regular
 		class, given that the ordinary three-place verb already exceeds the two-index cap and is
 		syntactically special on its own <Ref k="sato2025b" p="22–23" /> ‹contested›. The second
-		dispute is the third-person zero. Nakagawa's arity excludes any third-person affix, while Satō
-		holds that a zero third-person affix is required to explain why a verb cannot host three person
-		indexes — why, for instance, <i lang="ain-Latn">*en-e-raykere</i> 'he makes me kill you' is
-		impossible, the two overt affixes having already filled the cap with no room for the
-		third-person causer <Ref k="nakagawa2024" p="137" />; <Ref k="sato2023b" p="39" />;
-		<Ref k="sato2025b" p="23–24" /> ‹contested›. Ijäs's zero sign for the unmarked third person is
+		dispute concerns third person. In criticism of Nakagawa's 2001 no-affix account, Satō
+		argues for a zero third-person affix using a hypothetical causative meaning 'he makes
+		me kill you'. Two overt object indexes would leave no position for the third-person
+		causer under the two-index limit. He reports no examples and judges the combination
+		probably impossible <Ref k="sato2023b" p="39, n. 3" /> ‹contested›. Ijäs's zero sign for the unmarked third person is
 		compatible with either side if it is read as the absence of an overt segment
 		<Ref k="ijas2023" />.
 	</p>

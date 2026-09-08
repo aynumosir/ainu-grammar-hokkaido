@@ -277,13 +277,10 @@
 
 <S t="Zero third-person object" id="third-zero">
 	<p>
-		Third-person objects carry no overt index. With a first- or second-person subject, the visible
-		personal prefix is the A form alone — <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">ci=</i>,
-		<i lang="ain-Latn">e=</i>, <i lang="ain-Latn">eci=</i>, or <i lang="ain-Latn">a=</i>; with
-		third-person subject and object alike, the finite verb carries no overt person prefix <Ref
-			k="nakagawa2024"
-			p="169"
-		/>; <Ref k="bugaeva2012" p="471" />.
+		Third-person objects have no overt person marker. With a third-person object,
+		overt person marking comes from the subject form; when subject and object are
+		both third person, neither has an overt marker <Ref k="nakagawa2024" p="166, 170" />;
+		<Ref k="bugaeva2012" p="471" />.
 	</p>
 
 	<Ex
@@ -297,15 +294,12 @@
 	/>
 
 	<p>
-		Whether the absence of a third-person index reflects a zero affix or the simple absence of any
-		third-person exponent is contested. Nakagawa treats third person as lacking an affix; Satō
-		argues that a zero third-person affix must be posited to sustain the two-index cap — the
-		ungrammaticality of sequences such as <i lang="ain-Latn">*Ø=en=e=kore</i> 'one makes me give
-		you' follows if both subject and object slots are already occupied by zero, blocking a third
-		index <Ref k="nakagawa2024" p="169" />; <Ref k="sato2023b" p="39" />; <Ref
-			k="sato2025a"
-			p="369"
-		/> ‹contested›. The alignment implications of the zero versus absent-exponent analysis are
-		pursued in <Xr ch="alignment-hierarchical-and-the-debate" />.
+		The analysis of third person is disputed. Satō argues for a zero third-person affix
+		against Nakagawa's 2001 account, which posits no such affix. He considers a hypothetical
+		causative meaning 'he makes me kill you': indexes for the two non-third-person objects
+		would leave no position for a zero third-person subject under the two-index limit.
+		Satō reports no examples of this combination and judges it probably impossible
+		<Ref k="sato2023b" p="39, n. 3" /> ‹contested›. The alignment implications are
+		treated in <Xr ch="alignment-hierarchical-and-the-debate" />.
 	</p>
 </S>

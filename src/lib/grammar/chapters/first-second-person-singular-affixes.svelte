@@ -155,13 +155,12 @@
 
 <S t="First-person singular object: en=" id="en">
 	<p>
-		The object counterpart of 1SG is <i lang="ain-Latn">en=</i>. It indexes a first-person
-		singular participant in the O role: the patient of a monotransitive verb or, with three-place
-		verbs such as <i lang="ain-Latn">kore</i> 'give' and <i lang="ain-Latn">epakasnu</i>
-		'teach', the human recipient rather than the theme
-		<Ref k="nakagawa2024" p="169" />; <Ref k="sato2008" p="147" />; <Ref k="sato2023b" p="47" />;
-		<Ref k="sato2025a" p="368–371" />. The secundative object-indexing pattern — recipient indexed,
-		theme left as a bare noun phrase — is developed in <Xr ch="object-indexing-monotransitive" />.
+		The object counterpart of 1SG is <i lang="ain-Latn">en=</i>
+		<Ref k="nakagawa2024" p="170, table 27" />. It indexes a first-person singular
+		participant in the O role. With <i lang="ain-Latn">kore</i> 'give', the indexed
+		object is normally the recipient; Satō also acknowledges cases in which the theme
+		is indexed <Ref k="sato2023b" p="40, n. 5" />. The selection of the indexed object
+		in three-place verbs is treated in <Xr ch="object-indexing-monotransitive" />.
 	</p>
 
 	<Ex

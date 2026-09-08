@@ -62,9 +62,9 @@
 		g="sweets children 1SG.A=give"
 		tr="I gave the children sweets."
 		cite="nakagawa2024:127"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 11a"
-		note="Both non-subject participants surface as bare NPs with no case morphology; the verb ku=kore indexes only the 1SG agent. Recipient vs theme is recoverable from the semantics of kore 'give' and from constituent order, not from case marking."
+		note="Both objects are expressed as bare noun phrases. Third person has no overt person marker; ku= marks the first-person singular subject. Nakagawa also gives versions with either object omitted when recoverable from context (ex. 11b–c). The source does not specify a dialect for this example."
 	/>
 
 	<p>

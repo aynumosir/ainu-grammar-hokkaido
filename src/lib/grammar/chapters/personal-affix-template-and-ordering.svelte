@@ -276,14 +276,13 @@
 
 <S t="The two-index ceiling" id="two-index-ceiling">
 	<p>
-		A finite verb hosts at most one subject index and one object index. No additional personal
-		prefix or suffix is possible regardless of how many semantic participants the predicate
-		involves. The restriction is most visible in three-place predicates: with
-		<i lang="ain-Latn">kore</i> 'give', recipient and theme cannot each receive an overt index.
-		When both are third person, neither is indexed and both surface as bare noun phrases <Ref
-			k="nakagawa2024"
-			p="363–365"
-		/>; <Ref k="sato2023b" p="39, 47" />.
+		A verb permits person indexing of at most two arguments: a subject and one object
+		<Ref k="sato2023b" p="39, n. 3" />. A three-place verb such as
+		<i lang="ain-Latn">kore</i> 'give' therefore has only one object-indexing position for
+		its recipient and theme. Third-person arguments have no overt person marker
+		<Ref k="nakagawa2024" p="166, 170" />. In the following example both objects are
+		expressed as bare noun phrases; either can be omitted when recoverable from context
+		<Ref k="nakagawa2024" p="127, ex. 11a–c" />.
 	</p>
 
 	<Ex
@@ -291,38 +290,40 @@
 		g="sweets children 1SG.A=give"
 		tr="I gave the children sweets."
 		cite="nakagawa2024:127"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 11a"
-		note="Both non-subject participants are third-person bare noun phrases; only the 1SG.A subject is indexed. The ceiling prevents a separate object index for either recipient or theme."
+		note="Both objects are expressed as bare noun phrases. Third person has no overt person marker; ku= marks the first-person singular subject. Nakagawa also gives versions with either object omitted when recoverable from context (ex. 11b–c). The source does not specify a dialect for this example."
 	/>
 
 	<p>
-		When a non-third participant is present with a three-place predicate, the object index is
-		assigned to the human recipient. Satō analyses this as a secundative pattern, treating the
-		recipient as the selected undergoer of the indexing slot; Nakagawa frames the same verbs as
-		three-place predicates with two bare object phrases that may occur in varying word order, and
-		neither obligatorily indexed when both are third person <Ref k="sato2008" p="147" />; <Ref
-			k="sato2023b"
-			p="40, 47"
-		/>; <Ref k="sato2025a" p="368–371" />; <Ref k="nakagawa2024" p="363–365" /> ‹contested›.
-		Object-indexing rules and the recipient-vs-theme selection are developed in
+		With <i lang="ain-Latn">kore</i>, the object index normally represents the recipient.
+		Satō describes this as a secundative pattern, but accepts Bugaeva's examples in which
+		the theme is indexed. He analyses these exceptional cases as a change in which argument
+		is selected as undergoer <Ref k="sato2023b" p="40, n. 5" />. The indexed role also
+		depends on the verb: with <i lang="ain-Latn">omare</i> 'put in', the object index
+		represents the theme <Ref k="sato2023b" p="38, n. 2" />. See
 		<Xr ch="object-indexing-monotransitive" />.
 	</p>
 
 	<p>
-		The ceiling also determines how reflexive and reciprocal derivations interact with personal
-		marking. Once <i lang="ain-Latn">yay-</i>, <i lang="ain-Latn">si-</i>, or
-		<i lang="ain-Latn">u-</i> occupies the internal argument position as part of a derived stem,
-		the verb is indexed according to its derived valence; a separate object index for the same
-		participant would exceed the cap and is ungrammatical <Ref k="tamura1972" p="35" />; <Ref
-			k="nakagawa2024"
-			p="183, 196–199"
-		/>. Satō uses this two-index restriction to argue that a zero third-person index must be posited
-		in the paradigm, so that the cap is stateable uniformly, in disagreement with Nakagawa's earlier
-		position that third person has no affix <Ref k="sato2023b" p="39" />; <Ref
-			k="sato2025a"
-			p="369"
-		/>; <Ref k="nakagawa2024" p="169" /> ‹contested›.
+		Reflexive and reciprocal prefixes belong to the derivational stem. In their
+		valence-reducing uses, <i lang="ain-Latn">yay-</i>, <i lang="ain-Latn">si-</i>, and
+		<i lang="ain-Latn">u-</i> reduce the number of arguments by one
+		<Ref k="nakagawa2024" p="185–188" />. Person marking then follows the derived
+		verb's valence. A two-place base becomes intransitive, while a three-place base can
+		remain transitive: Satō lists <i lang="ain-Latn">ko-ruska</i> as three-place and
+		<i lang="ain-Latn">yay-ko-ruska</i> as transitive <Ref k="sato2023b" p="40" />.
+		The derived transitive retains an object-indexing position. Nakagawa's template
+		places person indexes outside these derivational prefixes
+		<Ref k="nakagawa2024" p="210, table 45" />.
+	</p>
+	<p>
+		The analysis of third person remains disputed. Satō argues for a zero third-person
+		index using the absence of causative forms that would index three participants.
+		He contrasts this with Nakagawa's 2001 analysis, in which third person has no affix
+		<Ref k="sato2023b" p="39, n. 3" /> ‹contested›. This argument concerns the number
+		of indexed participants; the reflexive and reciprocal prefixes themselves are
+		derivational elements.
 	</p>
 </S>
 
@@ -449,11 +450,9 @@
 		occupying a fixed position between subject and direct object — a useful classroom rule that
 		does not correspond to a syntactic constraint; Nakagawa's data on three-place predicates allow
 		the two bare object phrases to appear in varying orders <Ref k="nakagawa2024" p="363–365" />.
-		The zero-marking of third-person transitive arguments in her examples is factually accurate but
-		theoretically neutral: it is compatible with Nakagawa's position that there is no third-person
-		affix and with Satō's posit of a zero index required by the two-index ceiling <Ref
-			k="nakagawa2024"
-			p="169"
-		/>; <Ref k="sato2023b" p="39" />; <Ref k="sato2025a" p="369" /> ‹contested›.
+		The lack of an overt third-person marker does not settle the zero-affix question.
+		Satō's argument for a zero index, in opposition to Nakagawa's 2001 account, rests on
+		the restriction on indexing three participants <Ref k="sato2023b" p="39, n. 3" />
+		‹contested›; see <Xr ch="personal-affix-template-and-ordering" s="two-index-ceiling" />.
 	</p>
 </S>
