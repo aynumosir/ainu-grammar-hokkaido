@@ -109,7 +109,7 @@
 
 	<p>
 		The four largest categories — Addressee, Goal, Comitative, and Benefactive — account for
-		roughly three-quarters of all uses. All four share a common structural denominator: the
+		roughly three-quarters of Bugaeva's sampled derivations. All four share a common structural denominator: the
 		applied object is an entity the action is directed toward or performed alongside. For the
 		Comitative role, where the postposition <i lang="ain-Latn">tura</i> 'together with' offers
 		a paraphrase, the applicative construction promotes the companion to the object slot and
@@ -269,11 +269,12 @@
 	/>
 	<p>
 		<i lang="ain-Latn">ko-</i> also stacks with the <Xr ch="applicative-e">e- applicative</Xr>.
-		When both prefixes appear on the same verb, <i lang="ain-Latn">e-</i> adds its Content or
-		Instrument applied object and <i lang="ain-Latn">ko-</i> adds its Addressee or Recipient
+		In the double-applicative pattern described by Bugaeva and Kobayashi,
+		<i lang="ain-Latn">e-</i> adds its Content applied object and
+		<i lang="ain-Latn">ko-</i> adds its Addressee or Recipient
 		applied object; the orders <i lang="ain-Latn">ko-e-</i> and
 		<i lang="ain-Latn">e-ko-</i> are both attested with no reported semantic difference
-		<Ref k="bugaevakobayashi2022" p="§4.1.1" />; <Ref k="bugaeva2006" p="188" />. The speech
+		<Ref k="bugaevakobayashi2022" p="519" />; <Ref k="bugaeva2006" p="188" />. The speech
 		verb <A w="isoytak" gl="narrate, tell stories" /> is the standard illustration:
 		<i lang="ain-Latn">e-ko-isoytak</i> is a three-place frame in which
 		<i lang="ain-Latn">e-</i> encodes the topic narrated and
@@ -295,9 +296,8 @@
 		<i lang="ain-Latn">ko-e-ikka</i> 'steal something from someone (vd,
 		<i lang="ain-Latn">ko-</i> adds the Source)'
 		<Ref k="bugaeva2006" p="191" />. Here the
-		<i lang="ain-Latn">ko-</i> applied object bears the Source role (the person stolen from),
-		one of the Table 1 categories in which the transitive base (66%) predominates, as this
-		chain confirms.
+		<i lang="ain-Latn">ko-</i> applied object bears the Source role (the person stolen from)
+		and attaches to the transitive base <i lang="ain-Latn">e-ikka</i>.
 	</p>
 	<p>
 		The learner grammar of <Ref k="ijas2023" /> includes
