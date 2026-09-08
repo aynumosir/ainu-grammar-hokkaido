@@ -83,8 +83,8 @@
 	<table>
 		<thead><tr><th>Dialect / label</th><th>Examples</th></tr></thead>
 		<tbody>
-			<tr><td>SAR</td><td>444</td></tr>
-			<tr><td>HK</td><td>152</td></tr>
+			<tr><td>SAR</td><td>442</td></tr>
+			<tr><td>HK</td><td>154</td></tr>
 			<tr><td>CHI</td><td>119</td></tr>
 			<tr><td>SHI</td><td>30</td></tr>
 			<tr><td>TOK</td><td>17</td></tr>

@@ -197,8 +197,8 @@
 		g="girl play"
 		tr="The girl played."
 		cite="nakagawa2024:431"
-		dial="SAR"
-		place="Nakagawa ex. 954, after Tamura 1984"
+		dial="HK"
+		place="Nakagawa ex. 954"
 	/>
 
 	<Ex
@@ -206,7 +206,7 @@
 		g="mother girl play-CAUS"
 		tr="Mother made the girl play."
 		cite="nakagawa2024:431"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 954′"
 		note="The base subject matkaci ‘girl’ is the object of the derived causative."
 	/>

@@ -125,9 +125,9 @@
 		with <i lang="ain-Latn">-ke</i>, classifying all as direct causatives on semantic grounds
 		<Ref k="bugaeva2014" p="130, 143" />. The <i lang="ain-Latn">-V</i> set is closed and
 		non-productive; no new pairs of this type are formed, and the members are listed
-		separately in the dictionaries <Ref k="tamura1996" />. The three motion verbs that take
-		<i lang="ain-Latn">-ke</i> as their transitive suffix (<i lang="ain-Latn">ran</i>,
-		<i lang="ain-Latn">ahun</i>, <i lang="ain-Latn">yan</i>) have plural counterparts formed
+		separately in the dictionaries <Ref k="tamura1996" />. Motion verbs that take
+		<i lang="ain-Latn">-ke</i> as their transitive suffix include <i lang="ain-Latn">ran</i>,
+		<i lang="ain-Latn">ahun</i>, and <i lang="ain-Latn">yan</i>; their plural counterparts are formed
 		with the productive suffix <i lang="ain-Latn">-te</i> instead
 		<Ref k="nakagawa2024" p="202–203" />.
 	</p>
@@ -145,7 +145,7 @@
 		g="1SG.A=descend-CAUS"
 		tr="I lowered it."
 		constructed
-		note="Transitive counterpart of ran via the motion-verb forming suffix -ke. The 1SG.A prefix ku= marks the verb as transitive. The suffix -ke here selects non-agentive, inanimate objects; agentive human causees take the productive -te (compare Nakagawa 2024: 202–203, exx. 196–197 on ahun-ke vs ahun-te)."
+		note="Transitive counterpart of ran via the motion-verb forming suffix -ke. The prefix ku= indexes the first-person subject; its form is shared by intransitive and transitive verbs. Nakagawa contrasts ahun-ke with luggage and ahun-te with a human causee (2024: 202, exx. 196–197); he describes the distinction as a tendency."
 	/>
 </S>
 
@@ -155,23 +155,21 @@
 		<i lang="ain-Latn">-ka</i> as its transitive suffix in most Hokkaido dialects. Nakagawa's
 		表43 also lists a further set of verbs to which <i lang="ain-Latn">-ka</i> attaches
 		without belonging to the motion-verb class: <A w="retar" gl="be white" />,
-		<A w="us" gl="go out" />, <A w="iunin" gl="settle (vi)" />, and several
+		<A w="us" gl="go out" />, <A w="iunin" gl="hurt, ache (vi)" />, and several
 		dialect-restricted forms (<i lang="ain-Latn">teyne</i> in Ishikari;
 		<i lang="ain-Latn">een</i> in Yakumo, Saru, and Bihoro). The distribution across this
 		second group is a lexical property of the individual verbs, not a regional feature
-		<Ref k="nakagawa2024" p="203" />.
+		<Ref k="nakagawa2024" p="202" />.
 	</p>
 	<p>
-		In Saru, the pair <i lang="ain-Latn">nam-te ~ nam-ka</i> 'make cold' shows
-		intra-dialectal competition between the productive suffix <i lang="ain-Latn">-te</i> and
-		<i lang="ain-Latn">-ka</i> on the same base
-		<Ref k="kobayashi2015" p="33" />; the analytical implications are taken up in the debate
-		section below. Cross-dialectally,
-		<i lang="ain-Latn">-ka</i> covers a broader verb class in northeastern Hokkaido; the
-		replacement of <i lang="ain-Latn">-ka</i> by <i lang="ain-Latn">-re/-te/-e</i> is most
-		advanced in Saru, as Bugaeva's sample of 38 <i lang="ain-Latn">-ka</i> verbs against
-		190 <i lang="ain-Latn">-re/-e/-te</i> verbs shows
-		<Ref k="bugaeva2014" p="135–136, 143–144" />.
+		The Saru pair <i lang="ain-Latn">nam-te ~ nam-ka</i> 'make cold' shows
+		that both suffixes can occur on the same lexical base
+		<Ref k="kobayashi2015" p="34" />. Bugaeva interprets broader northeastern
+		use of <i lang="ain-Latn">-ka</i> as evidence of replacement by the productive
+		suffix <Ref k="bugaeva2014" p="135–136, 144" />. Nakagawa finds no clear
+		regional predominance <Ref k="nakagawa2024" p="202" /> ‹contested›.
+		The relative sizes of lexical categories in a southwestern sample do not by
+		themselves establish the geographical extent or rate of change.
 	</p>
 
 	<Ex
@@ -187,7 +185,7 @@
 		g="1SG.A=go.up-CAUS"
 		tr="I raised it."
 		constructed
-		note="Transitive counterpart via -ka. The 1SG.A prefix ku= marks transitive status."
+		note="Transitive counterpart via -ka. The prefix ku= indexes the first-person subject; its form is shared by intransitive and transitive verbs."
 	/>
 
 	<p>
@@ -195,7 +193,7 @@
 		<i lang="ain-Latn">-te/-re</i> is visible on verbs that admit both: for
 		<A w="ahun" gl="enter" />, <i lang="ain-Latn">ahun-ke</i> encodes direct causation with
 		a non-agentive, inanimate causee (putting luggage inside), while
-		<i lang="ain-Latn">ahun-te</i> or <i lang="ain-Latn">ahun-re</i> is used when the causee
+		<i lang="ain-Latn">ahun-te</i> is used in the example where the causee
 		is an agentive human brought inside
 		<Ref k="nakagawa2024" p="202–203" />. The parallel holds for
 		<i lang="ain-Latn">-ka</i>: it signals that the causee is treated as a highly affected
@@ -262,7 +260,7 @@
 		g="1SG.A=shout-TRVZ"
 		tr="I called someone."
 		constructed
-		note="The transitivizer -kar adds an object slot to the intransitive hotuye 'shout'. The 1SG.A prefix ku= marks the derived verb as transitive."
+		note="The transitivizer -kar adds an object slot to the intransitive hotuye 'shout'. The prefix ku= indexes the first-person subject; its form is shared by intransitive and transitive verbs."
 	/>
 </S>
 
@@ -279,15 +277,14 @@
 	<p>
 		Bugaeva (2014: 129–130, 143) unifies <i lang="ain-Latn">-V</i>,
 		<i lang="ain-Latn">-ke</i>, and <i lang="ain-Latn">-ka</i> as direct causatives,
-		opposing them as a group to the indirect causative <i lang="ain-Latn">-re/-te/-e</i> by
-		the non-agentive, highly-affected causee they encode. The 387-verb Saru count — 111 verbs
-		under <i lang="ain-Latn">-V</i>, 9 under <i lang="ain-Latn">-ke</i>, 38 under
-		<i lang="ain-Latn">-ka</i> — establishes the proportions but does not settle the
-		morphological-status question independently
-		<Ref k="bugaeva2014" p="130, 143" />.
+		while <i lang="ain-Latn">-re/-te/-e</i> has both direct and indirect uses.
+		Her counts describe a lexical sample; they do not measure token frequency or
+		settle the morphological-status question
+		<Ref k="bugaeva2014" p="127, 130, 134, 143" />. The published figures and their
+		total discrepancy are given in <Xr ch="causative-morphological-re-e-te" s="productivity" />.
 	</p>
 	<p>
-		Kobayashi (2015: 33) adduces evidence for separating
+		Kobayashi (2015: 34–35) adduces evidence for separating
 		<i lang="ain-Latn">-ka</i> from the most lexicalized forming suffixes. Two properties
 		distinguish it: intra-dialectal alternation with <i lang="ain-Latn">-re/-e/-te</i>
 		(the <i lang="ain-Latn">nam-te ~ nam-ka</i> Saru pair noted above), and attachment to
@@ -295,7 +292,7 @@
 		<i lang="ain-Latn">ipe-rusuy-ka</i> 'make hungry' both show
 		<i lang="ain-Latn">-ka</i> appended to a multi-morpheme derived stem, a combinatorial
 		freedom the closed <i lang="ain-Latn">-V</i> and <i lang="ain-Latn">-ke</i> forming
-		suffixes do not share <Ref k="kobayashi2015" p="33" />. The
+		suffixes do not share <Ref k="kobayashi2015" p="34–35" />. The
 		<i lang="ain-Latn">si-…-ka</i> 'pretend' construction described above
 		provides a further case: <i lang="ain-Latn">-ka</i> attaches outside the reflexive prefix
 		<i lang="ain-Latn">si-</i>, which has already reconfigured the argument frame.
@@ -307,13 +304,13 @@
 		follow stems in <i lang="ain-Latn">m</i> or <i lang="ain-Latn">y</i> — "大体 as a
 		tendency, with exceptions." The qualifier matters: a pure phonological allomorph would
 		show regular conditioning; the exceptions reflect a lexical residue that fits neither a
-		clean allomorphy account nor a uniform forming-suffix categorisation. Satō also notes that
-		some <i lang="ain-Latn">-ke</i> and <i lang="ain-Latn">-e</i> forms are bleached
-		transitivizers with no causative semantics
-		(<i lang="ain-Latn">san-ke</i> 'put out a fine' from <i lang="ain-Latn">san</i> 'go
-		out'), which aligns with Nakagawa's forming-suffix category and places the
-		productive/lexical boundary inside, not between, these suffixes
-		<Ref k="sato2008" p="235–238" />.
+		clean allomorphy account nor a uniform forming-suffix categorisation. Satō also describes weakened causative meaning in some
+		<i lang="ain-Latn">-ke</i> forms: <i lang="ain-Latn">san</i> 'descend toward
+		the shore' yields <i lang="ain-Latn">sanke</i> 'put forward/out', illustrated by
+		a sentence about paying a fine. He also discusses the vowel-formed transitive pairs
+		<i lang="ain-Latn">kay-e/kay-pa</i> 'break' and
+		<i lang="ain-Latn">tuy-e/tuy-pa</i> 'cut' under transitivization
+		<Ref k="sato2008" p="237–238" />.
 	</p>
 	<p>
 		Ijäs's Lesson 9 states that <i lang="ain-Latn">-re</i> 'turns intransitive verbs into
@@ -325,31 +322,22 @@
 	</p>
 </S>
 
-<S t="Attachment to the base stem: rikinka and the absence of rikipka" id="reduplication">
+<S t="Number alternation and causative attachment" id="reduplication">
 	<p>
-		The verb <A w="rikin" gl="go up (vi)" /> belongs to a class of Hokkaido Ainu
-		motion-verb intransitives showing a <i lang="ain-Latn">-n</i>/<i lang="ain-Latn">-p</i>
-		stem alternation in reduplication and some plural contexts, paralleling
-		<i lang="ain-Latn">san</i>/<i lang="ain-Latn">sap</i>,
-		<i lang="ain-Latn">yan</i>/<i lang="ain-Latn">yap</i>, and
-		<i lang="ain-Latn">ahun</i>/<i lang="ain-Latn">ahup</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord 2026) ‹speculative›.
-		In reduplication contexts <i lang="ain-Latn">rikin</i> alternates with
-		<i lang="ain-Latn">rikip</i>.
+		Motion-verb number alternation affects the choice of stem in causative forms.
+		Nakagawa distinguishes the singular forms with <i lang="ain-Latn">-ke</i>
+		from plural forms with the productive suffix <i lang="ain-Latn">-te</i>
+		<Ref k="nakagawa2024" p="201–202" />. The singular causative of
+		<A w="rikin" gl="go up (vi)" /> is <i lang="ain-Latn">rikin-ka</i> in
+		the varieties listed in his table <Ref k="nakagawa2024" p="202" />.
 	</p>
 	<p>
-		When <i lang="ain-Latn">-ka</i> attaches, only <i lang="ain-Latn">rikin-ka</i> is
-		attested; the form <i lang="ain-Latn">*rikip-ka</i> is absent from the corpus
-		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord 2026) ‹corpus-suggested›.
-		The distribution shows that <i lang="ain-Latn">-ka</i> targets the citation form of the
-		stem — the singular <i lang="ain-Latn">-n</i> variant — not the alternate
-		<i lang="ain-Latn">-p</i> shape that arises in reduplicated environments. The attachment
-		point is the lexical base, prior to any stem alternation, a property shared by other
-		causative suffixes that affix to the verb stem before verbal-number morphology applies.
-		This behavior is consistent with Kobayashi's evidence that
-		<i lang="ain-Latn">-ka</i> operates at the same morphological level as the productive
-		causative rather than with the most lexicalized forming suffixes
-		<Ref k="kobayashi2015" p="33" />.
+		Causative attachment does not generally precede verbal-number morphology. Nakagawa's
+		template places forming or plural material before the causative suffix
+		<Ref k="nakagawa2024" p="210, table 45" />. Kobayashi's argument for grouping
+		<i lang="ain-Latn">-ka</i> with causative suffixes rests on dialect variation
+		and its attachment to derived stems <Ref k="kobayashi2015" p="34–35" />.
+		It does not establish a general restriction to singular citation stems.
 	</p>
 	<p>
 		The diachronic account of the <i lang="ain-Latn">-V</i> and

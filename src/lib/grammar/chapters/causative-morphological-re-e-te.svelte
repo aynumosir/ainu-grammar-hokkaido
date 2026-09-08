@@ -6,11 +6,11 @@
 <S t="Place in the causative inventory" id="overview">
 	<p>
 		Hokkaido Ainu marks causation with a small set of verb-final suffixes. The productive
-		majority is one underlying form realized as three phonologically conditioned allomorphs:
+		causative has three phonologically conditioned allomorphs. Nakagawa gives the distribution:
 		<i lang="ain-Latn">-re</i> after a vowel or the glides <i lang="ain-Latn">y</i>,
-		<i lang="ain-Latn">w</i>; <i lang="ain-Latn">-te</i> after any consonant other than
-		<i lang="ain-Latn">r</i>; and <i lang="ain-Latn">-e</i> after <i lang="ain-Latn">r</i>
-		<Ref k="nakagawa2024" p="200–201" />; <Ref k="bugaeva2014" p="134" />. In Nakagawa's
+		<i lang="ain-Latn">w</i>; <i lang="ain-Latn">-te</i> after consonants other than
+		<i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i>, and <i lang="ain-Latn">r</i>; and <i lang="ain-Latn">-e</i> after <i lang="ain-Latn">r</i>
+		<Ref k="nakagawa2024" p="200" />. In Nakagawa's
 		arity calculus it carries the value <strong>+1</strong>: the original subject of the
 		base verb is reassigned to the object position of the derived verb, and a new causer
 		participant fills the subject position <Ref k="nakagawa2024" p="200–201, 431" />.
@@ -34,13 +34,12 @@
 
 <S t="Allomorphy" id="allomorphy">
 	<p>
-		The three surface forms are phonologically predictable from the stem-final segment
-		<Ref k="nakagawa2024" p="201" />; <Ref k="bugaeva2014" p="134" />; <Ref k="tamura2000" paren />.
-		Tamura's Saru dictionary and Bugaeva's 387-verb Saru/HSW corpus sample converge on the
-		same conditioning environments. Satō's Chitose textbook gives the same three allomorphs
-		with the qualification "大体 by stem-final sound, but with exceptions", acknowledging a
-		residue of forms that resist the phonological prediction
-		<Ref k="sato2008" p="234–238" />.
+		The table follows Nakagawa's distribution of the three allomorphs
+		<Ref k="nakagawa2024" p="200" />. Bugaeva likewise gives
+		<i lang="ain-Latn">-re</i> after vowels and <i lang="ain-Latn">y</i>,
+		<i lang="ain-Latn">-e</i> after <i lang="ain-Latn">r</i>, and
+		<i lang="ain-Latn">-te</i> after the remaining consonants, without separately
+		listing <i lang="ain-Latn">w</i> <Ref k="bugaeva2014" p="134" />.
 	</p>
 
 	<table>
@@ -71,19 +70,19 @@
 			<tr>
 				<td>after vowel; after <i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i></td>
 				<td><i lang="ain-Latn">-re</i></td>
-				<td><i lang="ain-Latn">tuy</i> 'cut (vi)'</td>
+				<td><i lang="ain-Latn">tuy</i> 'fall'</td>
 				<td><i lang="ain-Latn">tuy-re</i></td>
-				<td>'make (sb) cut'</td>
+				<td>'cause to fall, drop'</td>
 			</tr>
 			<tr>
-				<td>after consonant other than <i lang="ain-Latn">r</i></td>
+				<td>after consonants other than <i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i>, <i lang="ain-Latn">r</i></td>
 				<td><i lang="ain-Latn">-te</i></td>
 				<td><i lang="ain-Latn">sinot</i> 'play'</td>
 				<td><i lang="ain-Latn">sinot-te</i></td>
 				<td>'make/let play'</td>
 			</tr>
 			<tr>
-				<td>after consonant other than <i lang="ain-Latn">r</i></td>
+				<td>after consonants other than <i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i>, <i lang="ain-Latn">r</i></td>
 				<td><i lang="ain-Latn">-te</i></td>
 				<td><i lang="ain-Latn">ek</i> 'come (SG)'</td>
 				<td><i lang="ain-Latn">ek-te</i></td>
@@ -199,55 +198,67 @@
 
 <S t="Productive vs. non-productive causatives" id="productivity">
 	<p>
-		Bugaeva's 387-verb Saru/HSW corpus sample provides the most comprehensive quantitative
-		treatment of the suffix inventory <Ref k="bugaeva2014" p="130, 143–144" />. The four
-		suffix types divide by count, base-class, and causation type:
+		Bugaeva classifies <i lang="ain-Latn">-V</i>, <i lang="ain-Latn">-ke</i>, and
+		<i lang="ain-Latn">-ka</i> as non-productive direct causatives. The productive
+		<i lang="ain-Latn">-re/-e/-te</i> derives both direct and indirect causatives
+		<Ref k="bugaeva2014" p="130, 134" />. The counts below describe her lexical
+		sample, assembled from dictionaries and other sources.
 	</p>
 
-	<table>
-		<thead>
-			<tr>
-				<th>suffix</th>
-				<th>sample (n)</th>
-				<th>vi / vt base</th>
-				<th>causation type</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">-V</i></td>
-				<td>111</td>
-				<td>109 vi / 2 vt</td>
-				<td>direct (lexical)</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">-ke</i></td>
-				<td>9</td>
-				<td>9 vi / 0 vt</td>
-				<td>direct</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">-ka</i></td>
-				<td>38</td>
-				<td>33 vi / 5 vt</td>
-				<td>direct</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">-re</i> / <i lang="ain-Latn">-te</i> / <i lang="ain-Latn">-e</i></td>
-				<td>190</td>
-				<td>113 vi / 16 vt (+ 61 indirect)</td>
-				<td>direct (129) + indirect (61)</td>
-			</tr>
-		</tbody>
-	</table>
+	<details>
+		<summary>Published comparison: Bugaeva's causative sample (2014)</summary>
+		<p>
+			The paper reports a sample of 387 verbs. Its four category totals in Table 1 sum
+			to 348 (111 + 9 + 38 + 190). The figures below reproduce that table; the discrepancy
+			prevents an unambiguous whole-sample percentage calculation
+			<Ref k="bugaeva2014" p="127, 143, table 1" />.
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>suffix</th>
+					<th>verbs in published sample</th>
+					<th>vi (including verb roots) / vt base</th>
+					<th>causation type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><i lang="ain-Latn">-V</i></td>
+					<td>111</td>
+					<td>109 vi / 2 vt</td>
+					<td>direct (lexical)</td>
+				</tr>
+				<tr>
+					<td><i lang="ain-Latn">-ke</i></td>
+					<td>9</td>
+					<td>9 vi / 0 vt</td>
+					<td>direct</td>
+				</tr>
+				<tr>
+					<td><i lang="ain-Latn">-ka</i></td>
+					<td>38</td>
+					<td>33 vi / 5 vt</td>
+					<td>direct</td>
+				</tr>
+				<tr>
+					<td><i lang="ain-Latn">-re</i> / <i lang="ain-Latn">-te</i> / <i lang="ain-Latn">-e</i></td>
+					<td>190</td>
+					<td>direct: 113 vi / 16 vt; indirect: 25 vi / 36 vt</td>
+					<td>direct (129) + indirect (61)</td>
+				</tr>
+			</tbody>
+		</table>
+	</details>
 
 	<p>
-		At 190 tokens, the productive suffix outnumbers the three non-productive types combined
-		and is the only one that covers both direct and indirect causation from both vi and vt
-		bases <Ref k="bugaeva2014" p="143" />. It also attaches freely to derived stems — those
-		prefixed by applicatives or reciprocal <i lang="ain-Latn">u-</i> — while the
-		non-productive suffixes do not <Ref k="kobayashi2015" p="33" />. This combinatorial
-		range marks it as the productive default of Hokkaido Ainu causation ‹consensus›.
+		Attachment to a derived stem does not uniquely identify the productive suffix.
+		Kobayashi gives <i lang="ain-Latn">ar-us-tek-ka</i> 'annihilate' and
+		<i lang="ain-Latn">ipe-rusuy-ka</i> 'make hungry' as evidence that
+		<i lang="ain-Latn">-ka</i> can follow derived material. She distinguishes
+		<i lang="ain-Latn">-ka</i> and the productive causative from the more lexically
+		restricted forming suffixes <i lang="ain-Latn">-V</i> and
+		<i lang="ain-Latn">-ke</i> <Ref k="kobayashi2015" p="34–35" />.
 	</p>
 
 	<p>
@@ -307,18 +318,16 @@
 
 <S t="Motion verbs and restrictions" id="motion-verbs">
 	<p>
-		A subset of singular motion verbs takes <i lang="ain-Latn">-ke</i> as their primary
-		causative suffix, and Nakagawa documents a semantic split within this class: when a
-		non-volitional object (cargo, luggage) is caused to move, the suffix
-		<i lang="ain-Latn">-ke</i> is standard; when a volitional person is caused to move,
-		the productive <i lang="ain-Latn">-te</i> is used instead
-		<Ref k="nakagawa2024" p="202–203" />. The minimal contrast for
-		<A w="ahun" gl="enter (SG)" /> at Nakagawa's examples 196–197:
+		A subset of singular motion verbs takes <i lang="ain-Latn">-ke</i>. Nakagawa
+		notes that, where both forms occur, <i lang="ain-Latn">-ke</i> is often used
+		with things, while the productive suffix is generally used with volitional beings.
+		His examples contrast luggage with a human causee in
+		<A w="ahun" gl="enter (SG)" /> <Ref k="nakagawa2024" p="202, exx. 196–197" />:
 	</p>
 
 	<Ex
-		m="i=teke uk hine i=ahun-te ruwe ne akus"
-		g="4.O=hand take CONJ 4.O=enter-CAUS track-POSS COP then"
+		m="a=teke uk hine i=ahun-te ruwe ne akus"
+		g="4.POSS=hand take CONJ 4.O=enter-CAUS track-POSS COP then"
 		tr="He took my hand and brought me inside."
 		cite="nakagawa2024:202"
 		dial="SAR"
@@ -327,17 +336,13 @@
 	/>
 
 	<p>
-		The <i lang="ain-Latn">-ke</i> / productive-suffix alternation applies to
-		<A w="ran" gl="descend (SG)" /> (<i lang="ain-Latn">ran-ke</i> for objects,
-		<i lang="ain-Latn">ran-te</i> for persons) and
-		<A w="yan" gl="come ashore (SG)" /> (<i lang="ain-Latn">yan-ke</i> for objects)
-		<Ref k="nakagawa2024" p="202–203" />. The verb <A w="rikin" gl="go up (SG)" /> takes
-		<i lang="ain-Latn">-ka</i> (<i lang="ain-Latn">rikin-ka</i>) in most dialects; its
-		reduplicated plural allomorph <i lang="ain-Latn">rikip</i> does not feed a causative
-		<i lang="ain-Latn">*rikip-ka</i>, the causative being formed on the singular stem
-		only <Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2026)
-		‹corpus-confirmed›, consistent with the motion-verb causative paradigm documented by
-		Nakagawa <Ref k="nakagawa2024" p="202–203" />.
+		Nakagawa's singular motion-verb list includes
+		<i lang="ain-Latn">ran-ke</i>, <i lang="ain-Latn">san-ke</i>,
+		<i lang="ain-Latn">asin-ke</i>, <i lang="ain-Latn">ahun-ke</i>, and
+		<i lang="ain-Latn">yan-ke</i>. For <A w="rikin" gl="go up (SG)" />, he
+		records <i lang="ain-Latn">rikin-ka</i> in Saru, Chitose, Horobetsu, and
+		Bihoro <Ref k="nakagawa2024" p="202, tables 42–43" />. Number alternation is
+		discussed in <Xr ch="transitivizer-ka-valency-pairs" s="reduplication" />.
 	</p>
 
 	<p>
@@ -354,25 +359,26 @@
 
 <S t="Dialect variation, the -ka → -re/-te shift, and the Horobetsu switch-reference function" id="diachrony">
 	<p>
-		The productive suffix is encroaching on <i lang="ain-Latn">-ka</i> territory across
-		Hokkaido dialects, with the shift most advanced in Saru and the southwest. Many verbs
-		that take <i lang="ain-Latn">-ka</i> in northeastern Hokkaido appear with
-		<i lang="ain-Latn">-re/-te/-e</i> in Saru; intra-dialectal doublets such as
-		<i lang="ain-Latn">nam-te</i> ~ <i lang="ain-Latn">nam-ka</i> in Saru document the
-		change in progress <Ref k="bugaeva2014" p="135–136, 143–144" />;
-		<Ref k="kobayashi2015" p="33" />. Sakhalin varieties (‹SA›) preserve
-		<i lang="ain-Latn">-ka</i> more broadly
-		<Ref k="bugaeva2014" p="135–136" />.
+		Bugaeva reports broader use of <i lang="ain-Latn">-ka</i> in northeastern
+		Hokkaido and Sakhalin than in southwestern Hokkaido, interpreting the comparison
+		as replacement by the productive suffix <Ref k="bugaeva2014" p="135–136, 144" />.
+		Nakagawa records lexical and dialect differences but does not regard
+		<i lang="ain-Latn">-ka</i> as characteristic of a particular region
+		<Ref k="nakagawa2024" p="202" />. The regional generalization is therefore
+		‹contested›. Within Saru, both <i lang="ain-Latn">nam-te</i> and
+		<i lang="ain-Latn">nam-ka</i> 'make cold' are recorded
+		<Ref k="kobayashi2015" p="34" />.
 	</p>
 
 	<p>
-		The <i lang="ain-Latn">-ka</i> suffix straddles the transitivizer and direct-causative
-		functions in a way the productive suffix does not. Satō 2008 flags some
-		<i lang="ain-Latn">-ke</i> and <i lang="ain-Latn">-e</i> forms as bleached
-		transitivizations — <i lang="ain-Latn">san</i> → <i lang="ain-Latn">san-ke</i>
-		'put out a fine', where no causer argument is introduced — distinct from the grammatical
-		causative <Ref k="sato2008" p="237–238" />. The productive suffix is unambiguously
-		causative in function ‹consensus›.
+		The boundary between causation and lexical transitivization depends on the analysis.
+		Satō discusses <i lang="ain-Latn">sanke</i> in a sentence about paying a fine,
+		and treats pairs such as <i lang="ain-Latn">kay-e</i> 'break' and
+		<i lang="ain-Latn">kay-pa</i> 'break (plural)' as cases of transitivization
+		<Ref k="sato2008" p="237–238" />. Bugaeva's classification includes lexical
+		transitivization within direct causation and assigns both direct and indirect
+		functions to the productive suffix <Ref k="bugaeva2014" p="129–130, 134" />
+		‹contested›.
 	</p>
 
 	<p>
