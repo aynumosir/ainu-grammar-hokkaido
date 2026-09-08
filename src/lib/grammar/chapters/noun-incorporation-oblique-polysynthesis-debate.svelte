@@ -90,7 +90,7 @@
 				<td><i lang="ain-Latn">e-</i> / <i lang="ain-Latn">ko-</i></td>
 				<td>locative / allative</td>
 				<td><i lang="ain-Latn">pira-ko-hokuste</i></td>
-				<td>'fall toward a cliff' (cf. <i lang="ain-Latn">pira or un hokuste</i>)</td>
+				<td>'cause something to fall toward a cliff' (cf. <i lang="ain-Latn">pira or un hokuste</i>)</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">kusu</i> 'for (purpose)'</td>

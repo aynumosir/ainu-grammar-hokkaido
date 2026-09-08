@@ -912,7 +912,7 @@ export const bibliography: Record<string, BibEntry> = {
 		title: 'Verbal valency',
 		editor: 'Anna Bugaeva',
 		container: 'Handbook of the Ainu language (HJLL 12)',
-		pages: '465–509',
+		pages: '515–548',
 		publisher: 'De Gruyter Mouton',
 		place: 'Berlin & Boston',
 		url: 'https://db.aynu.org/sources/2022-anna-bugaeva-15-verbal-valency'

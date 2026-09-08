@@ -521,15 +521,13 @@
 		intersects with external possession).
 	</p>
 	<p>
-		A productive derived construction involves the verb
-		<i lang="ain-Latn">eykaun</i> 'to surpass/be superior to', analysed by
-		nukopoli (<Ref k="aynucorporadiscord" /> 2024-11-24) as
-		<i lang="ain-Latn">ka un</i> 'be at the top of (someone)'
-		with an applicative or transitivizing suffix — effectively the relational noun
-		<i lang="ain-Latn">ka</i> with allative <i lang="ain-Latn">un</i>
-		grammaticalized as a comparative marker ‹speculative›. Whether
-		this represents a synchronically transparent construction or a frozen derivation
-		is not settled by the sources consulted.
+		Nakagawa's Chitose dictionary classifies <i lang="ain-Latn">eykaun</i> 'be superior'
+		as a one-place verb and <i lang="ain-Latn">ko-eykaun</i> 'surpass someone' as a
+		two-place verb <Ref k="nakagawa1995" p="90, 196, s.v. eykaun, koeykaun" />.
+		A community etymology relates <i lang="ain-Latn">eykaun</i> to the locative phrase
+		<i lang="ain-Latn">ka un</i> 'be above'
+		<Ref k="aynucorporadiscord" /> ‹speculative›. The proposed historical relationship
+		remains unestablished.
 	</p>
 </S>
 

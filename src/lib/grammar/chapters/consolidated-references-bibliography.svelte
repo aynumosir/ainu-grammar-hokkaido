@@ -133,7 +133,7 @@
 	<p class="bib-entry">Bugaeva, Anna (2021). <i>Appositive possession in Ainu and around the Pacific</i>.</p>
 	<p class="bib-entry">Bugaeva, Anna (2025). <i>A diachronic study of anticausatives in Ainu</i>.</p>
 	<p class="bib-entry">Bugaeva, Anna (ed.) (2022). <i>Handbook of the Ainu language</i>. Handbooks of Japanese Language and Linguistics 12. Berlin &amp; Boston: De Gruyter Mouton.</p>
-	<p class="bib-entry">Bugaeva, Anna &amp; Miki Kobayashi (2022). <i>Verbal valency</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. 465–509. Berlin &amp; Boston: De Gruyter Mouton.</p>
+	<p class="bib-entry">Bugaeva, Anna &amp; Miki Kobayashi (2022). <i>Verbal valency</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. 515–548. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Bybee, Joan, Revere Perkins &amp; William Pagliuca (1994). <i>The evolution of grammar: Tense, aspect, and modality in the languages of the world</i>. Chicago: University of Chicago Press. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Cambridge University Press (2022). <i>Cambridge English–Turkish Dictionary: obey</i>.</p>
 	<p class="bib-entry">Chamberlain, Basil Hall (1887). <i>The language, mythology, and geographical nomenclature of Japan viewed in the light of Aino studies</i>. Tokyo: Imperial University. <span class="reported-badge">reported</span></p>
