@@ -15,13 +15,27 @@ import time
 
 
 def redact(text):
-    text = re.sub(r"/home/[^/\s\"']+", "~", text)
+    text = re.sub(r"/home/[^/\s\\\"']+", "~", text)
     return text.replace(Path.home().name, "<username>")
+
+
+def redacted_value(value):
+    if isinstance(value, str):
+        return redact(value)
+    if isinstance(value, list):
+        return [redacted_value(item) for item in value]
+    if isinstance(value, dict):
+        return {redact(key): redacted_value(item) for key, item in value.items()}
+    return value
+
+
+def encode(value, **kwargs):
+    return json.dumps(redacted_value(value), ensure_ascii=False, **kwargs)
 
 
 def save(path, value):
     temporary = path.with_suffix(path.suffix + ".tmp")
-    temporary.write_text(redact(json.dumps(value, ensure_ascii=False, indent=2)) + "\n")
+    temporary.write_text(encode(value, indent=2) + "\n")
     temporary.replace(path)
 
 
@@ -74,13 +88,15 @@ def execute(command, prompt, cwd, log_path, timeout):
 
     def consume(line, log):
         nonlocal final, turn_completed, failed, usage
-        safe = redact(line.decode("utf-8", errors="replace"))
-        log.write(safe + "\n")
-        log.flush()
+        decoded = line.decode("utf-8", errors="replace")
         try:
-            event = json.loads(safe)
+            event = redacted_value(json.loads(decoded))
         except json.JSONDecodeError:
+            log.write(redact(decoded) + "\n")
+            log.flush()
             return
+        log.write(json.dumps(event, ensure_ascii=False) + "\n")
+        log.flush()
         if event.get("type") == "turn.completed":
             turn_completed = True
             usage = event.get("usage")
@@ -186,7 +202,7 @@ def cycle(config_path):
                              "retry_after": time.time() + 21600 if failures >= 3 else 0})
             save(status_path, previous)
             with (state_dir / "history.jsonl").open("a") as history:
-                history.write(redact(json.dumps(previous, ensure_ascii=False)) + "\n")
+                history.write(encode(previous) + "\n")
         if previous.get("retry_after", 0) > time.time():
             print("Waiting for the retry window after repeated failures.")
             return 0
@@ -209,12 +225,12 @@ def cycle(config_path):
                        "log": log_path.name})
         save(status_path, result)
         with (state_dir / "history.jsonl").open("a") as history:
-            history.write(redact(json.dumps(result, ensure_ascii=False)) + "\n")
+            history.write(encode(result) + "\n")
         # Keep summaries indefinitely; retain the latest 30 detailed event logs.
         logs = sorted(state_dir.glob("[0-9]*.jsonl"))
         for old in logs[:-30]:
             old.unlink()
-        print(redact(json.dumps(result, ensure_ascii=False)))
+        print(encode(result))
         return 0 if result["success"] else 1
 
 

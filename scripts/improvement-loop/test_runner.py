@@ -98,6 +98,19 @@ class RunnerTests(unittest.TestCase):
         runner.save(path, {"path": str(Path.home()) + "/test"})
         self.assertEqual(json.loads(path.read_text())["path"], "~/test")
 
+    def test_redaction_preserves_escaped_json_strings(self):
+        value = 'print("' + str(Path.home()) + '")\nnext line'
+        event = {"type": "item.completed", "item": {"type": "command_execution", "command": value}}
+        self.execute("print(" + repr(json.dumps(event)) + ")")
+        parsed = json.loads((self.directory / "events.jsonl").read_text())
+        self.assertEqual(parsed["item"]["command"], 'print("~")\nnext line')
+        path = self.directory / "status.json"
+        runner.save(path, {"text": value})
+        self.assertEqual(json.loads(path.read_text())["text"], 'print("~")\nnext line')
+        result = self.execute(self.successful_code(dict(SUMMARY, summary=value)))
+        self.assertTrue(result["success"])
+        self.assertEqual(result["result"]["summary"], 'print("~")\nnext line')
+
     def config(self):
         config = self.directory / "config.json"
         config.write_text(json.dumps({"state_dir": str(self.directory)}))
