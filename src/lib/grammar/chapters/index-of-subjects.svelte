@@ -196,6 +196,7 @@
 		<li>Corpus profile — <Xr ch="permissive-sociative-causative-yar" /></li>
 		<li>Corpus quantification — <Xr ch="aims-scope-design-philosophy" /></li>
 		<li>Corpus-frequency methodology — <Xr ch="dialect-sample-and-corpus-method" /></li>
+		<li>Counts from the annotated MDB inventory — <Xr ch="applicative-system-overview" /></li>
 		<li>Coverage and documentation gaps — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
 		<li>Coverage and the Hokkaido documentary record — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>Cross-source glossing concordance — <Xr ch="abbreviations-glossing-symbols" /></li>

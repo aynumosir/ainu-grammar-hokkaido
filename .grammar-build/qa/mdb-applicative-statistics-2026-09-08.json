@@ -1,0 +1,44 @@
+{
+  "source": {
+    "url": "https://mdb.aynu.org/applicatives",
+    "revision": "295ed93d735cc2f2750a15643312dce1e1e4efa9",
+    "path": "morpheme_db/applicatives.json",
+    "sha256": "ccdcfc21eef3081eaf9bd0e5be51abaf47112e7468f720aef75a91147ef87a22"
+  },
+  "counting_unit": "Distinct (prefix, verb_lemma) groups among attested verb entries",
+  "verification": {
+    "source_recount": "Independent recount agrees: 107 entries, 92 eligible entries, 91 verb lemmas; 43 e-, 34 ko-, 14 o-",
+    "review": "Two independent reviewers; findings resolved",
+    "source_refresh": "Live attestation refresh failed; existing cache retained. Local attestation audit: 0 errors, 968 warnings."
+  },
+  "changes": [
+    {
+      "chapter": "applicative-system-overview",
+      "before": "Published role percentages repeated in the main overview; several lexical distributions described as corpus uses.",
+      "after": "Main quantitative tables calculate MDB role counts with explicit denominators, exclusions, inherited annotation confidence, mixed-dialect limitations, and source identity. Published role classifications remain attributed.",
+      "evidence": "scripts/applicative-stats.ts; source commit and SHA-256 above; Bugaeva 2006:189 fn.6,190–191",
+      "verdict": "provenance clarified"
+    },
+    {
+      "chapter": "applicative-e",
+      "before": "Published percentage table was the primary quantitative account; percentages repeated in structural example discussions.",
+      "after": "MDB counts are primary; published figures are an expandable comparison. Structural descriptions no longer repeat percentages from the published sample.",
+      "evidence": "scripts/applicative-stats.ts; Bugaeva 2006:190; Nakagawa 2024:195–196",
+      "verdict": "provenance clarified"
+    },
+    {
+      "chapter": "applicative-ko",
+      "before": "Published percentage table was primary; role shares described as all uses.",
+      "after": "MDB counts are primary; published comparison refers explicitly to sampled derivations. Base-valency figures remain attributed to Bugaeva.",
+      "evidence": "scripts/applicative-stats.ts; Bugaeva 2006:189 fn.6,190",
+      "verdict": "provenance clarified"
+    },
+    {
+      "chapter": "applicative-o",
+      "before": "Place-only restriction was universal; role figures referred to the sole published table.",
+      "after": "MDB counts include its medium-confidence instrumental annotation, with disagreement explicitly marked contested. Published comparison and Nakagawa restriction are attributed.",
+      "evidence": "MDB applicative annotations; Nakagawa 2024:198–199; Kayano 1996 s.v. oipep; Bugaeva 2006:191",
+      "verdict": "disagreement preserved"
+    }
+  ]
+}
