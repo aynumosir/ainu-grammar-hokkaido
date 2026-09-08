@@ -299,7 +299,7 @@
 		The mirror configuration is less regular. Most dialectal paradigms express 2→1 with a
 		second-person A index followed by the first-person object form, but Saru and Chitose drop the
 		expected second-person subject and use bare <i lang="ain-Latn">en=</i> for 2SG→1SG, Chitose
-		extending the bare form to 2PL→1SG as well <Ref k="nakagawa2024" p="170, 173" />; <Ref
+		extending the bare form to 2PL→1SG as well <Ref k="nakagawa2024" p="171, 173" />; <Ref
 			k="sato2008"
 			p="146–147"
 		/>.
