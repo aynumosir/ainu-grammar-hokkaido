@@ -1,6 +1,7 @@
 <!-- src/lib/grammar/chapters/applicative-o.svelte -->
 <script lang="ts">
 	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import ApplicativeStats from '$lib/grammar/components/ApplicativeStats.svelte';
 </script>
 
 <S t="Applied-object roles and the place restriction" id="function">
@@ -13,11 +14,29 @@
 		Its function is to promote a place-denoting noun into the verb's argument set as a direct
 		object, raising arity by one: a base intransitive becomes transitive and a base transitive
 		becomes a ditransitive <Ref k="nakagawa2024" p="198–199" />; <Ref k="bugaeva2006" p="186–188" />.
-		The applied object of <i lang="ain-Latn">o-</i> is always a spatial noun — a goal, a
-		location, or a source — never an animate participant, which separates it from
-		<i lang="ain-Latn">ko-</i> <Ref k="nakagawa2024" p="198–199" />; <Ref k="bugaeva2006" p="191" />.
+		Nakagawa describes <i lang="ain-Latn">o-</i> as taking a place-denoting applied
+		object, contrasting it with <i lang="ain-Latn">ko-</i>
+		<Ref k="nakagawa2024" p="198–199" />. Bugaeva's role table includes Goal,
+		Location, and a combined Source/Theme category <Ref k="bugaeva2006" p="191" />.
 	</p>
 
+	<p>
+		The following proportions are calculated from MDB's annotated applicative inventory.
+		They count distinct verb lemmas marked attested, excluding nominalizations and collapsing
+		person-marked citation forms. The sample selection, dialect limitations, and meaning of
+		the confidence labels are specified in <Xr ch="applicative-system-overview" s="mdb-counts" />.
+	</p>
+	<ApplicativeStats prefix="o-" />
+	<p>
+		MDB retains an Instrument annotation for <i lang="ain-Latn">oipe</i>, with medium
+		confidence. This differs from Nakagawa's place restriction; the inventory count
+		preserves that annotation without settling the analysis. The underlying dictionary
+		evidence and proposed interpretation are recorded in the
+		<a href="https://mdb.aynu.org/applicatives">MDB applicative entry</a> ‹contested›.
+	</p>
+
+	<details>
+		<summary>Published comparison: Bugaeva's lexical sample (2006: 191)</summary>
 	<p>
 		Bugaeva gives a role breakdown for <i lang="ain-Latn">o-</i> derivations drawn
 		from the Chitose and Saru dictionaries and her Chitose fieldwork
@@ -58,9 +77,10 @@
 			</tr>
 		</tbody>
 	</table>
+	</details>
 
 	<p>
-		The role figures describe Bugaeva's lexical sample <Ref k="bugaeva2006" p="189–191" />.
+		The published comparison figures describe Bugaeva's lexical sample <Ref k="bugaeva2006" p="189–191" />.
 		Nakagawa separately observes that
 		<i lang="ain-Latn">o-</i> is the rarest of the three applicatives and occurs predominantly
 		in verse rather than prose or conversational registers
@@ -73,13 +93,12 @@
 	</p>
 
 	<p>
-		The Source row of the table has lexicographic backing in Nakagawa's own dictionary:
+		The Source role has lexicographic backing in Nakagawa's own dictionary:
 		the entry for the prefix gives 〜〈場所〉へ・〜〈場所〉に・〜〈場所〉から (to / at / from a
 		place), interchangeable with the postposition <i lang="ain-Latn">un</i>
 		<Ref k="nakagawa1995" />. The ablative から sense is thus registered by Nakagawa
 		himself; Bugaeva also includes Source among the overlapping meanings of
-		<i lang="ain-Latn">ko-</i> and <i lang="ain-Latn">o-</i> <Ref k="bugaeva2006" p="191" />; the place restriction is
-		unaffected — all three senses take place nouns only.
+		<i lang="ain-Latn">ko-</i> and <i lang="ain-Latn">o-</i> <Ref k="bugaeva2006" p="191" />.
 	</p>
 </S>
 

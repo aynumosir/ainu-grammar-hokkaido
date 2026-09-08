@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import ApplicativeStats from '$lib/grammar/components/ApplicativeStats.svelte';
 </script>
 
 <S t="Overview" id="overview">
@@ -15,8 +16,8 @@
 		<Xr ch="applicative-system-overview">the applicative system</Xr>.
 	</p>
 	<p>
-		Among the three applicative prefixes of Hokkaido Ainu,
-		<i lang="ain-Latn">ko-</i> is the most frequent. Bugaeva's Saru and Chitose corpus
+		Bugaeva reports <i lang="ain-Latn">ko-</i> as the most frequent
+		applicative prefix. Her Saru and Chitose lexical sample
 		places the order <i lang="ain-Latn">ko-</i> &gt; <i lang="ain-Latn">e-</i> &gt;
 		<i lang="ain-Latn">o-</i> in her lexical survey; taken together, applicative verbs account
 		for roughly one-third of all verbs and up to seven percent of the entire Ainu lexicon
@@ -37,6 +38,16 @@
 </S>
 
 <S t="Semantic roles of the applied object" id="roles">
+	<p>
+		The following proportions are calculated from MDB's annotated applicative inventory.
+		They count distinct verb lemmas marked attested, excluding nominalizations and collapsing
+		person-marked citation forms. The sample selection, dialect limitations, and meaning of
+		the confidence labels are specified in <Xr ch="applicative-system-overview" s="mdb-counts" />.
+	</p>
+	<ApplicativeStats prefix="ko-" />
+
+	<details>
+		<summary>Published comparison: Bugaeva's lexical sample (2006: 190)</summary>
 	<p>
 		Bugaeva's classification of <i lang="ain-Latn">ko-</i> derivations uses verbs from
 		the Saru and Chitose dictionaries and her Chitose fieldwork with Ito Oda
@@ -126,6 +137,7 @@
 		<i lang="ain-Latn">wa</i> (ablative) and <i lang="ain-Latn">eun</i>
 		<Ref k="bugaeva2015relative" p="84 fn. 14" />.
 	</p>
+	</details>
 </S>
 
 <S t="Goal and addressee: relations directed toward a person" id="goal-addressee">
@@ -190,12 +202,9 @@
 		note="The comitative applied objects mun 'garbage' and toy 'earth' are incorporated between the person prefix and ko-; each incorporated form is transitive (4.A prefix a=), confirming the arity increase from the intransitive base tata."
 	/>
 	<p>
-		Benefactive uses (18%) cover contexts in which the applied object's interests are served
-		by the action, with an approximately even split across intransitive and transitive base
-		verbs. At their boundary the Malefactive category (6%) shades into adversative uses: the
-		applied object is the entity against whose interest the action runs, most commonly derived
-		from intransitive bases (86%), consistent with the pattern of adding a new human object to
-		a one-place activity verb
+		Benefactive uses cover contexts in which the applied object's interests are served
+		by the action. The Malefactive category shades into adversative uses: the
+		applied object is the entity against whose interest the action runs
 		<Ref k="bugaeva2006" p="190" />.
 	</p>
 </S>

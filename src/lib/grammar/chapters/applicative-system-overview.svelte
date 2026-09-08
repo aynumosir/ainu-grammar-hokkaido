@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import ApplicativeStats from '$lib/grammar/components/ApplicativeStats.svelte';
+	import stats from '$lib/grammar/data/mdb-applicative-stats.json';
 </script>
 
 <S t="Definition and valency effect" id="definition">
@@ -38,7 +40,7 @@
 
 	<p>
 		The applied object's semantic range is broader than the canonical benefactive or
-		instrumental applicative found in many languages. Bugaeva's corpus study of Chitose and
+		instrumental applicative found in many languages. Bugaeva's lexical study of Chitose and
 		Saru applicatives maps the three prefixes onto instruments, locations, goals,
 		comitatives, benefactives, malefactives, recipients, sources, themes, content, causes,
 		paths, and purposes <Ref k="bugaeva2006" p="187–196" />. Nakagawa's heading
@@ -54,8 +56,8 @@
 		(means, goal, location) under <i lang="ain-Latn">e-</i> and <i lang="ain-Latn">o-</i>
 		together and gives <i lang="ain-Latn">ko-</i> as 方向・手段 (direction, means) — extending
 		the instrumental sense to <i lang="ain-Latn">ko-</i> as well
-		<Ref k="sato2008" p="239–245" />. Bugaeva's corpus tables place Means-Instrument with
-		<i lang="ain-Latn">e-</i> (13% of its uses) and record no instrument class for
+		<Ref k="sato2008" p="239–245" />. Bugaeva's lexical tables place Means-Instrument with
+		<i lang="ain-Latn">e-</i> and record no instrument class for
 		<i lang="ain-Latn">ko-</i> <Ref k="bugaeva2006" p="190" />; the divergence is one of
 		classification granularity rather than of data.
 	</p>
@@ -63,10 +65,11 @@
 
 <S t="The three prefixes at a glance" id="three-prefixes">
 	<p>
-		The table below gives the core semantic range, arity effect, and most frequent
-		applied-object roles in Bugaeva's corpus sample for each prefix; full role distributions
-		and corpus examples are in <Xr ch="applicative-e" />, <Xr ch="applicative-ko" />, and
-		<Xr ch="applicative-o" />. <Ref k="bugaeva2006" p="190" />
+		The table below summarizes the semantic ranges and arity effects in Bugaeva's
+		account <Ref k="bugaeva2006" p="190–191" />. Counts calculated from the annotated MDB
+		inventory follow in <Xr ch="applicative-system-overview" s="mdb-counts" />;
+		the per-prefix discussions give attested examples and comparisons with the published
+		sample: <Xr ch="applicative-e" />, <Xr ch="applicative-ko" />, and <Xr ch="applicative-o" />.
 	</p>
 
 	<table>
@@ -75,8 +78,7 @@
 				<th>prefix</th>
 				<th>core semantic range</th>
 				<th>arity</th>
-				<th>most frequent applied-object roles (Bugaeva 2006: 190–191)</th>
-				<th>frequency in lexicon</th>
+				<th>principal roles in Bugaeva's account</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -84,28 +86,25 @@
 				<td><i lang="ain-Latn">e-</i></td>
 				<td>about; by means of; at (location); for (purpose)</td>
 				<td>+1</td>
-				<td>Content 39%, Theme-Patient 17%, Instrument 13%</td>
-				<td>second most frequent</td>
+				<td>Content, Theme-Patient, Instrument</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">ko-</i></td>
 				<td>toward (person/non-place goal); together with</td>
 				<td>+1</td>
-				<td>Addressee 20%, Goal 19%, Comitative 18%, Benefactive 18%</td>
-				<td>most frequent</td>
+				<td>Addressee, Goal, Comitative, Benefactive</td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">o-</i></td>
 				<td>into / toward (place goal only)</td>
 				<td>+1</td>
-				<td>Goal-into-place 57%, Location 29%</td>
-				<td>least frequent; largely verse</td>
+				<td>Goal-into-place, Location</td>
 			</tr>
 		</tbody>
 	</table>
 
 	<p>
-		The lexical frequency order is
+		Bugaeva reports the lexical frequency order
 		<i lang="ain-Latn">ko- &gt; e- &gt; o-</i>
 		<Ref k="bugaeva2006" p="188" />. <i lang="ain-Latn">o-</i> is rare in prose and
 		confined largely to verse; Satō similarly marks it uncommon in his pedagogical treatment
@@ -123,21 +122,46 @@
 	/>
 </S>
 
-<S t="Semantic roles of the applied object" id="roles">
+<S t="Counts from the annotated MDB inventory" id="mdb-counts">
 	<p>
-		Bugaeva's (2006) role classification of the Chitose/Saru corpus sample yields two
-		findings that bear on typological interpretation
-		<Ref k="bugaeva2006" p="188–196" />. First, the most frequent role added by
-		<i lang="ain-Latn">e-</i> is Content (39%), followed by Theme-Patient (17%); only at
-		third place do instrument and locative roles appear. Second, 75–96% of
-		<i lang="ain-Latn">e-</i> applied objects across roles derive from intransitive bases,
-		meaning the applicative is introducing a new core object rather than re-encoding a
-		participant that already had an object-like coding
-		<Ref k="bugaeva2006" p="190–191" />.
+		A count of the
+		<a href={stats.source.url}
+			>MDB applicative annotations (revision {stats.source.revision.slice(0, 8)})</a>
+		yields {stats.verbLemmas} distinct verb lemmas from {stats.inputEntries} entries.
+		Only entries marked attested and classified as verbs are retained. Coinages,
+		uncertain or excluded entries, and nominalizations are omitted. Person-marked
+		citation forms sharing a verb lemma count once within each prefix.
 	</p>
 	<p>
-		These figures reflect a typological property: most Ainu applicatives are
-		<em>obligatory</em> rather than promotional. In the canonical promotional type, an
+		Each percentage is calculated as the number of retained verb lemmas with a recorded
+		role divided by all retained verb lemmas for that prefix. Counts follow MDB's role
+		assignments and retain its high, medium, and low confidence labels. Attested status
+		can rest on dictionary evidence; it does not require a corpus token. Recounting
+		these annotations leaves their linguistic interpretation open to verification.
+	</p>
+	{#each stats.prefixes as block}
+		<ApplicativeStats prefix={block.prefix as 'e-' | 'ko-' | 'o-'} />
+	{/each}
+	<p>
+		These proportions describe a selected inventory. Its evidence spans several dialects,
+		including Sakhalin, and lacks a complete dialect classification for each entry.
+		The counts therefore cannot establish Hokkaido speech frequencies, a whole-lexicon
+		frequency order, or productivity. An unrepresented role may still be attested elsewhere.
+		The source has no structured base-valency field, so no base-valency percentages are
+		calculated here. Percentages are rounded to one decimal place.
+	</p>
+</S>
+
+<S t="Semantic roles of the applied object" id="roles">
+	<p>
+		Content is the largest recorded category for <i lang="ain-Latn">e-</i> in the MDB
+		count above. Bugaeva likewise identifies Content as the largest category in her
+		Chitose/Saru lexical sample <Ref k="bugaeva2006" p="190" />. The two samples differ
+		in selection and coverage, so their percentages need not agree.
+	</p>
+	<p>
+		Bugaeva characterizes Ainu applicatives as predominantly <em>obligatory</em>
+		<Ref k="bugaeva2006" p="186–187, 191–196" />. In the canonical promotional type, an
 		oblique participant has a postpositional paraphrase that the applicative replaces
 		optionally; in Ainu, the majority of applied objects — especially the Content class of
 		<i lang="ain-Latn">e-</i> — have no independent postpositional frame, so the
@@ -150,17 +174,14 @@
 		per-prefix chapters.
 	</p>
 	<p>
-		For <i lang="ain-Latn">ko-</i>, Addressee (20%), Goal (19%), Comitative (18%), and
-		Benefactive (18%) together account for three-quarters of the sampled derivations.
-		Malefactive contributes 6%, Source and Recipient 5% each, and the remaining 9%
-		combines Cause, Range, Purpose, and Location
-		<Ref k="bugaeva2006" p="190" />. The <i lang="ain-Latn">o-</i> distribution is
-		narrowest: Goal accounts for 57%, Location 29%, and Source/Theme 14%.
+		For <i lang="ain-Latn">ko-</i>, Bugaeva distinguishes Addressee, Goal, Comitative,
+		Benefactive, Malefactive, Source, and Recipient, with Cause, Range, Purpose, and
+		Location combined in a residual category <Ref k="bugaeva2006" p="190" />.
+		Her <i lang="ain-Latn">o-</i> classification groups Goal, Location, and Source/Theme.
 		Goal has <i lang="ain-Latn">ta</i>/<i lang="ain-Latn">un</i> paraphrases,
 		Location has <i lang="ain-Latn">ta</i>, Source has <i lang="ain-Latn">wa</i>, and Theme has none
-		<Ref k="bugaeva2006" p="191" />. These percentages describe the lexical sample
-		collected from two dictionaries and Chitose fieldwork
-		<Ref k="bugaeva2006" p="189, fn. 6" />.
+		<Ref k="bugaeva2006" p="191" />. The published distributions are retained as
+		comparisons in the per-prefix discussions.
 	</p>
 </S>
 
