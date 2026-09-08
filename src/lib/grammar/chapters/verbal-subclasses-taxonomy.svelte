@@ -228,10 +228,12 @@
 	</p>
 
 	<p>
-		Because the verb carries at most two person indexes, the second object is unindexed when it is
-		third person. The indexed O slot falls on the recipient or the more animate participant; the
-		theme or propositional content remains a bare noun phrase. When both non-subject arguments are
-		third person, only A is indexed:
+		A three-place verb permits person indexing of its subject and one object. With
+		<i lang="ain-Latn">kore</i>, the indexed object is normally the recipient, though
+		Satō acknowledges exceptional theme indexing <Ref k="sato2023b" p="39, n. 3; 40, n. 5" />.
+		Both objects are third person in the example below and have no overt person marker;
+		the visible <i lang="ain-Latn">ku=</i> marks the first-person singular subject
+		<Ref k="nakagawa2024" p="127, 166, 170" />.
 	</p>
 
 	<Ex
@@ -239,9 +241,9 @@
 		g="sweets children 1SG.A=give"
 		tr="I gave the children sweets."
 		cite="nakagawa2024:127"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 11a"
-		note="kore 'give' is a three-place verb. Both the recipient hekattar 'children' and the theme topenpe 'sweets' are third person and surface as bare noun phrases; only the 1SG.A subject is indexed by ku=. Were the recipient first or second person, an O affix for that participant would appear on the verb."
+		note="Both objects are expressed as bare noun phrases. Third person has no overt person marker; ku= marks the first-person singular subject. Nakagawa also gives versions with either object omitted when recoverable from context (ex. 11b–c). The source does not specify a dialect for this example."
 	/>
 
 	<p>

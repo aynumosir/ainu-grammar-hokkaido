@@ -169,11 +169,12 @@
 
 		<dt id="ditransitive"><strong>ditransitive</strong></dt>
 		<dd>
-			A verb requiring three arguments: an agent-like subject, a recipient-like primary
-			object, and a theme-like secondary object. Hokkaido Ainu caps person indexes at two
-			per verb; with three-place predicates such as <A w="kore" gl="give" />, the object
-			index targets the human recipient while the theme surfaces as an unindexed noun phrase
-			<Ref k="sato2023b" />; <Ref k="nakagawa2024" p="363–365" />.
+			A verb with an agent, a recipient, and a theme. Hokkaido Ainu permits person
+			indexing of at most two arguments per verb. With <A w="kore" gl="give" />, the
+			object index normally represents the recipient, though theme indexing also occurs
+			<Ref k="sato2023b" p="38, n. 2; 39, n. 3; 40, n. 5" />. Either object may be
+			expressed as a bare noun phrase or omitted when recoverable from context
+			<Ref k="nakagawa2024" p="127" />.
 			See <Xr ch="valency-voice-overview" /> and <Xr ch="object-indexing-monotransitive" />.
 		</dd>
 

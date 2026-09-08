@@ -357,14 +357,11 @@
 	</p>
 
 	<p>
-		Plural accumulation does not affect the cap on person affixes. A finite verb carries at most one
-		subject index and one object index, and no third argument is indexed by person. In ditransitives
-		such as <i lang="ain-Latn">kore</i> 'give', plural morphology can co-occur with the ordinary
-		object-indexing pattern in which the object affix tracks the human recipient while the theme
-		remains an unindexed bare noun phrase <Ref k="sato2008" p="147" />; <Ref
-			k="sato2023b"
-			p="39, 47"
-		/>. The two-affix cap and the ditransitive pattern are treated in
-		<Xr ch="object-indexing-monotransitive" /> and <Xr ch="personal-affix-template-and-ordering" />.
+		The limit on person indexing is two arguments per verb: a subject and one object
+		<Ref k="sato2023b" p="39, n. 3" />. With <i lang="ain-Latn">kore</i> 'give', the
+		object index normally represents the recipient, though Satō acknowledges exceptional
+		theme indexing <Ref k="sato2023b" p="40, n. 5" />. Object selection and the indexing
+		limit are treated in <Xr ch="object-indexing-monotransitive" /> and
+		<Xr ch="personal-affix-template-and-ordering" s="two-index-ceiling" />.
 	</p>
 </S>

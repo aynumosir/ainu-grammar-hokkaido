@@ -142,14 +142,10 @@
 		/>. Its forms, together with the second singular, are treated in <Xr
 			ch="first-second-person-singular-affixes"
 		/>. The second-person cells are neutral, <i lang="ain-Latn">e=</i> and
-		<i lang="ain-Latn">eci=</i> spanning A, S, and O alike. The third person is unmarked. Whether the
-		blank reflects a zero affix or the absence of any third-person exponent is disputed: Satō argues
-		that a zero third-person affix is required by the cap of two indexes per verb and by the
-		ungrammaticality of three-index combinations, against an analysis that recognises no third-person
-		affix at all <Ref k="nakagawa2024" p="169" />; <Ref k="sato2023b" p="39, 47" />; <Ref
-			k="sato2025a"
-			p="369"
-		/> ‹contested›.
+		<i lang="ain-Latn">eci=</i> spanning A, S, and O alike. The third person is unmarked. Satō argues for a zero third-person affix
+		using the absence of causative forms that would index three participants. He contrasts
+		this with Nakagawa's 2001 account, which posits no third-person affix
+		<Ref k="sato2023b" p="39, n. 3" /> ‹contested›.
 	</p>
 
 	<Ex
@@ -306,16 +302,17 @@
 	</p>
 
 	<p>
-		A verb admits at most one subject index and one object index, and no third argument is ever
-		indexed. The cap shapes ditransitive marking. With verbs such as <i lang="ain-Latn">kore</i>
-		‘give’ the object index falls on the human recipient while the theme stays a bare noun phrase,
-		a secundative pattern that Satō takes as further evidence for a zero third-person affix; Nakagawa
-		describes the same three-place verbs through valence, with two bare object phrases and neither
-		obligatorily indexed when both are third person <Ref k="sato2008" p="147" />; <Ref
-			k="sato2023b"
-			p="39, 47"
-		/>; <Ref k="sato2025a" p="368–371" />; <Ref k="nakagawa2024" p="363–365" /> ‹contested›. Object
-		indexing and the three-place verbs are treated in <Xr ch="object-indexing-monotransitive" />.
+		A verb permits person indexing of at most two arguments: its subject and one object
+		<Ref k="sato2023b" p="39, n. 3" />. With <i lang="ain-Latn">kore</i> 'give', the
+		object index normally represents the recipient. Satō treats this as a secundative
+		pattern while acknowledging exceptional theme indexing
+		<Ref k="sato2023b" p="40, n. 5" />. Third-person arguments have no overt person
+		marker <Ref k="nakagawa2024" p="166, 170" />; the example below expresses both
+		objects as bare noun phrases <Ref k="nakagawa2024" p="127" />. The distinction
+		between an absent affix and a zero third-person index is disputed: Satō argues for
+		the latter against Nakagawa's 2001 account <Ref k="sato2023b" p="39, n. 3" />
+		‹contested›. See <Xr ch="object-indexing-monotransitive" /> and
+		<Xr ch="personal-affix-template-and-ordering" s="two-index-ceiling" />.
 	</p>
 
 	<Ex
@@ -323,9 +320,9 @@
 		g="sweets children 1SG.A=give"
 		tr="I gave the children sweets."
 		cite="nakagawa2024:127"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 11a"
-		note="Both non-subject participants are third person and surface as bare noun phrases; only the 1SG.A subject is indexed."
+		note="Both objects are expressed as bare noun phrases. Third person has no overt person marker; ku= marks the first-person singular subject. Nakagawa also gives versions with either object omitted when recoverable from context (ex. 11b–c). The source does not specify a dialect for this example."
 	/>
 </S>
 

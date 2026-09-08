@@ -241,9 +241,10 @@
 		object in Ainu <Ref k="nakagawa2024" p="127" />. A three-place verb such as
 		<i lang="ain-Latn">kore</i> 'give' takes a subject and two bare objects, all omissible, yet only
 		two participants can be indexed on the verb — the two-index cap holds even where the clause has
-		three arguments <Ref k="nakagawa2024" p="127" />; <Ref k="sato2023b" p="39" />. When a non-third
-		person is indexed it is the human recipient that the object affix tracks, a secundative pattern
-		taken up in <Xr ch="object-indexing-monotransitive" /> <Ref k="sato2023b" p="41" />.
+		three arguments <Ref k="nakagawa2024" p="127" />; <Ref k="sato2023b" p="39" />. With <i lang="ain-Latn">kore</i>,
+		the object index normally tracks the recipient, though Satō also acknowledges theme
+		indexing <Ref k="sato2023b" p="40, n. 5" />. The pattern is treated in
+		<Xr ch="object-indexing-monotransitive" />.
 	</p>
 
 	<Ex
@@ -251,9 +252,9 @@
 		g="sweets children 1SG.A=give"
 		tr="I gave the children sweets."
 		cite="nakagawa2024:127"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 11a"
-		note="Both non-subject arguments are bare third-person noun phrases; only the 1SG.A subject is indexed."
+		note="Both objects are expressed as bare noun phrases. Third person has no overt person marker; ku= marks the first-person singular subject. Nakagawa also gives versions with either object omitted when recoverable from context (ex. 11b–c). The source does not specify a dialect for this example."
 	/>
 
 	<p>
@@ -437,9 +438,11 @@
 	</table>
 
 	<p>
-		A reflexive or reciprocal prefix occupies the object position itself, so a subject index and an
-		object index for the same participant never co-occur <Ref k="nakagawa2024" p="183" />, and the
-		antipassive <i lang="ain-Latn">i-</i> absorbs the object of a transitive stem, as in
+		In their valence-reducing uses, reflexive and reciprocal prefixes reduce the number
+		of arguments by one <Ref k="nakagawa2024" p="185–188" />. The resulting verb takes
+		person marking according to its derived valence: reflexivizing a three-place base
+		can leave a transitive verb, as with <i lang="ain-Latn">yay-ko-ruska</i>
+		<Ref k="sato2023b" p="40" />. The antipassive <i lang="ain-Latn">i-</i> absorbs the object of a transitive stem, as in
 		<i lang="ain-Latn">ruska</i> 'be angry at' → <i lang="ain-Latn">i-ruska</i> 'be angry' <Ref
 			k="bugaevakobayashi2022"
 			p="§4"
