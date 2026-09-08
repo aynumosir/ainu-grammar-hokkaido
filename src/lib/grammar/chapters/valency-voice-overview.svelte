@@ -28,13 +28,14 @@
 		<i lang="ain-Latn">=as</i> (first-plural exclusive) and <i lang="ain-Latn">=an</i> (fourth); a
 		derived transitive takes the prefixal A indexes <i lang="ain-Latn">ci=</i> and
 		<i lang="ain-Latn">a=</i> <Ref k="sato2008" p="96" />; <Ref k="nakagawa2024" p="137, 140" />.
-		Placing a verb in the first-person plural is therefore the one operative test of its derived
+		The first-plural exclusive and fourth-person forms therefore provide diagnostics of derived
 		transitivity. Satō’s pair <i lang="ain-Latn">pukusa a=ta</i> ‘we dig
-		<A w="pukusa" gl="lily bulb" />’ beside <i lang="ain-Latn">pukusa-ta=an</i> makes the point:
+		<A w="pukusa" gl="wild garlic" />’ beside <i lang="ain-Latn">pukusa-ta=an</i> makes the point:
 		incorporating the object intransitivizes the verb, and the fourth-person S suffix
-		<i lang="ain-Latn">=an</i> becomes available <Ref k="satoni2022" p="§2" />. A verb hosts at most
-		two person affixes, one subject and one object, so every operation works under a two-slot ceiling
-		<Ref k="sato2023b" p="39" />; <Ref k="bugaevakobayashi2022" p="§2" />. Ijäs’s learner image of
+		<i lang="ain-Latn">=an</i> becomes available <Ref k="satoni2022" p="552, ex. 2" />. A verb hosts at most
+		two person affixes, one subject and one object. This limits person indexing; a
+		three-argument verb still has two objects <Ref k="bugaeva2006" p="188, n. 5" />;
+		<Ref k="sato2023b" p="47–48" />. Ijäs’s learner image of
 		argument “pockets” on the verb beside external “slots” renders the same head-marking intuition
 		<Ref k="nichols1986" paren />; her terms are pedagogical and her example sentences constructed
 		<Ref k="ijas2023" /> ‹consensus›.
@@ -425,7 +426,7 @@
 			p="§5–6"
 		/>. Bugaeva places Ainu among the polysynthetic languages in Baker’s sense while recording where
 		it departs from the Mohawk prototype — its word order, its in-situ <i lang="ain-Latn">wh</i>, and
-		its unrestricted morphological causatives <Ref k="baker1988" paren />; <Ref k="bugaeva2014" />
+		its unrestricted morphological causatives <Ref k="bugaeva2014polysynthesis" />
 		‹contested›. These questions are developed in <Xr ch="noun-incorporation-object" /> and
 		<Xr ch="noun-incorporation-oblique-polysynthesis-debate" />.
 	</p>
@@ -445,7 +446,7 @@
 	<p>
 		Stacking is extensive and bounded by the template. A single verb may carry up to two applicatives,
 		two causatives, two incorporated objects, and a lexical prefix, alongside a reciprocal, reflexive,
-		or antipassive and the agreement indexes <Ref k="bugaeva2014" />. The classic example loads an
+		or antipassive and the agreement indexes <Ref k="bugaeva2014polysynthesis" />. The classic example loads an
 		incorporated object (<A w="ram" gl="heart" />), an adverbial element
 		(<A w="tuyma" gl="far" />), one reflexive proper, one reflexive-possessive prefix, and two applicatives onto one transitive root:
 	</p>
@@ -455,7 +456,7 @@
 		g="various-rumor 4.A=APPL-REFL-APPL-far-REFL.POSS-heart-sway-PL"
 		tr="We keep swaying our hearts afar over various rumours."
 		lit="we sway our hearts about ourselves far over various rumours"
-		cite="shibatani1990:73; bugaeva2014"
+		cite="shibatani1990:73; bugaeva2014polysynthesis"
 		dial="HK"
 		place="after Chiri 1936: 169; Shibatani ex. 131 / Bugaeva ex. 1"
 		note="One transitive root suy-pa ‘sway (PL)’ carries an incorporated object, an adverbial, an outer reflexive proper, an inner reflexive-possessive si- before ram ‘heart’, and two applicatives; the whole reads ‘we wonder about various rumours’."
@@ -463,8 +464,8 @@
 
 	<p>
 		The Handbook’s <i lang="ain-Latn">yay-ipe-e-ko-sunke</i> ‘eat meagre meals’ shows the converse, a
-		three-object applicative frame re-intransitivized by incorporating one object and reflexivizing
-		another <Ref k="bugaevakobayashi2022" p="§4.1.1" />. Valency morphology also interacts with verbal
+		three-argument applicative frame reduced to one argument by incorporating one object and
+		reflexivizing the other <Ref k="bugaevakobayashi2022" p="520" />. Valency morphology also interacts with verbal
 		number, since what a plural stem or the plural <i lang="ain-Latn">-pa</i> tracks depends on
 		transitivity: an intransitive plural tracks subject number, a transitive plural tracks object or
 		event number <Ref k="ijas2023" />; <Ref k="nakagawa2024" p="142–159" /> ‹consensus›. That system

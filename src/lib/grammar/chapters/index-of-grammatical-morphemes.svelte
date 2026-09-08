@@ -27,7 +27,6 @@
 		<li><i lang="ain-Latn">a=e-tuye</i> — <Xr ch="applicative-stacking-relativization-feeding" /></li>
 		<li><i lang="ain-Latn">a=e-u-itak-nu-p</i> — <Xr ch="reciprocal-u" /></li>
 		<li><i lang="ain-Latn">a=e-yay-ko-tuyma-si-ram-suy-pa</i> — <Xr ch="valency-voice-overview" />, <Xr ch="applicative-stacking-relativization-feeding" /></li>
-		<li><i lang="ain-Latn">a=e=kor-e-re</i> — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
 		<li><i lang="ain-Latn">a=e=siknure</i> — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li><i lang="ain-Latn">a=e=tumam</i> — <Xr ch="tam-overview" />, <Xr ch="perfective-anterior-a" /></li>
 		<li><i lang="ain-Latn">a=e=túskote</i> — <Xr ch="nominalization-p-pe" />, <Xr ch="kuni-complementizer-purpose-complements" /></li>

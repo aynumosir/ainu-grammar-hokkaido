@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 184 works cited across the grammar into a single
+		This chapter gathers the 185 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -24,7 +24,8 @@
 	<p class="bib-entry">Bugaeva, Anna (2008). <i>Reported discourse and logophoricity in Southern Hokkaido dialects of Ainu</i>. Gengo Kenkyū 133. 31–75.</p>
 	<p class="bib-entry">Bugaeva, Anna (2012). <i>Southern Hokkaido Ainu</i>. The languages of Japan and Korea. Ed. Nicolas Tranter. 461–509. London: Routledge.</p>
 	<p class="bib-entry">Bugaeva, Anna (2015). <i>Relative clauses and noun complements in Ainu</i>. Bugaeva, Anna &amp; Iku Nagasaki (eds.), アイヌ語研究の諸問題. Sapporo: Hokkaido Shuppan Kikaku Center.</p>
-	<p class="bib-entry">Bugaeva, Anna ブガエワ・アンナ (2014). <i lang="ja">アイヌ語使役構文に関する再考察</i>. [A reconsideration of the causative construction in Ainu].</p>
+	<p class="bib-entry">Bugaeva, Anna ブガエワ・アンナ (2014). <i lang="ja">アイヌ語使役構文に関する再考察</i>. [Reconsidering Causative Constructions in Ainu]. 北方言語研究 [Northern Language Studies] 4. 127–147.</p>
+	<p class="bib-entry">Bugaeva, Anna ブガエワ・アンナ (2014). <i>Polysynthesis in Ainu</i>. International Symposium on Polysynthesis in the World's Languages. Tokyo: National Institute for Japanese Language and Linguistics.</p>
 	<p class="bib-entry">Bugaeva, Anna, Shiho Endō &amp; Shirō Akasegawa (2015). <i>A topical dictionary of conversational Ainu</i>.</p>
 	<p class="bib-entry">Chiba University Ainu Language Research Project 千葉大学 (eds.) (2015). <i lang="ja">千葉大学アイヌ語資料集</i>. [Chiba University Ainu language materials collection].</p>
 	<p class="bib-entry">Chiri Yukie 知里幸恵 (1923). <i lang="ja">アイヌ神謡集</i>. [A collection of Ainu divine epics [Ainu Shin'yōshū]]. Tokyo: Kyōdo Kenkyūsha 郷土研究社.</p>
@@ -74,8 +75,8 @@
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2009). <i lang="ja">アイヌ語虻田方言の英雄叙事詩（yukar）テキストとその言語的特徴 (1)</i>. [The heroic epic (yukar) text of the Abuta dialect of Ainu and its linguistic characteristics, part 1]. 北海道立アイヌ民族文化研究センター研究紀要 [Research Bulletin of the Hokkaido Ainu Culture Research Center]. 15: 1–38.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2021). <i lang="ja">千歳方言の位置名詞orの用法</i>. [The uses of the locative noun or in the Chitose dialect].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2023). <i lang="ja">アイヌ語</i>. [The Ainu language (handbook/encyclopedia grammar)]. 世界の言語シリーズ / 朝倉日本語講座.</p>
-	<p class="bib-entry">Satō Tomomi 佐藤知己 (2023). <i lang="ja">動詞の結合価と3項動詞</i>. [Verb valency and three-place verbs (ditransitives)].</p>
-	<p class="bib-entry">Satō Tomomi 佐藤知己 (2025). <i>Basic sentence structures in Ainu</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
+	<p class="bib-entry">Satō Tomomi 佐藤知己 (2023). <i lang="ja">アイヌ語の動詞の結合価と3項動詞</i>. [Verb valency and three-place verbs in Ainu]. 北方人文研究 16. 37–64.</p>
+	<p class="bib-entry">Satō Tomomi 佐藤知己 (2025). <i>Basic Sentence Structures in Ainu</i>. Studia Orientalia 126. 353–376.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2025). <i lang="ja">書評：中川裕『アイヌ語広文典』</i>. [Review of Nakagawa Hiroshi's Ainugo kōbunten].</p>
 	<p class="bib-entry">Simeon, George John (1968). <i>The phonemics and morphology of Hokkaido Ainu</i>. Los Angeles: PhD dissertation, University of Southern California.</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2011). <i lang="ja">十勝方言の指示表現</i>. [Demonstrative expressions in the Tokachi dialect].</p>
@@ -178,7 +179,7 @@
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 (2024). <i lang="ja">アイヌ語広文典</i>. [Ainugo kōbunten [An extensive grammar of the Ainu language]]. Tokyo: Hakusuisha 白水社.</p>
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 &amp; Fukazawa Mika 深澤美香 (2022). <i>Hokkaido Ainu dialects: Towards a classification of Ainu dialects</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Nakagawa, Hiroshi 中川裕 (2022). <i>Verbal number</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
-	<p class="bib-entry">Nakagawa, Hiroshi 中川裕 (2022). <i>Parts of speech — with a focus on the classification of nouns</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. 473–500. Berlin &amp; Boston: De Gruyter Mouton.</p>
+	<p class="bib-entry">Nakagawa, Hiroshi 中川裕 (2022). <i>Parts of speech — with a focus on the classification of nouns</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. 473–514. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Nam, Deokhyun 南徳鉉 (2021). <i>Some evidence for the origin of the Ainu antipassive prefix i-</i>.</p>
 	<p class="bib-entry">Nichols, Johanna (1986). <i>Head-marking and dependent-marking grammar</i>. Language 62(1). 56–119. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Nikitina, Tatiana &amp; Anna Bugaeva (2021). <i>Logophoric speech is not indirect: Towards a syntactic approach to reported speech constructions</i>. Linguistics 59(3).</p>

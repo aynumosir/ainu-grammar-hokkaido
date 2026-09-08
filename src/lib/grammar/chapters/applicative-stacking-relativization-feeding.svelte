@@ -34,7 +34,7 @@
 <S t="Applicative stacking" id="stacking">
 	<p>
 		Up to two applicative prefixes appear on one verb simultaneously, each raising arity by one
-		<Ref k="bugaeva2014" />; <Ref k="bugaevakobayashi2022" p="§4.1.1" />. The most productive
+		<Ref k="bugaeva2014polysynthesis" />; <Ref k="bugaevakobayashi2022" p="§4.1.1" />. The most productive
 		double-applicative patterns pair <i lang="ain-Latn">e-</i> (Content) with
 		<i lang="ain-Latn">ko-</i> (Addressee/Recipient), in either order
 		— <i lang="ain-Latn">e-ko-</i> or <i lang="ain-Latn">ko-e-</i>. Bugaeva and Kobayashi
@@ -73,7 +73,7 @@
 		g="various-rumor 4.A=APPL-REFL-APPL-far-REFL.POSS-heart-sway-PL"
 		tr="We keep wondering about various rumours."
 		lit="we sway our hearts afar and toward ourselves over various rumours"
-		cite="shibatani1990:73; bugaeva2014"
+		cite="shibatani1990:73; bugaeva2014polysynthesis"
 		dial="HK"
 		place="after Chiri 1936: 169; Shibatani ex. 131 / Bugaeva ex. 1"
 		note="Root suy-pa 'sway (PL)' carries e- and ko- (both applicative), yay- and si- (both reflexive), the adverbial tuyma 'far', and the incorporated object ram 'heart'. The valency and template bookkeeping in Xr:valency-voice-overview holds at every step."
@@ -81,18 +81,18 @@
 
 	<p>
 		Bugaeva and Kobayashi's second example demonstrates re-intransitivization through stacking:
-		a frame extended by two applicatives is collapsed back to bivalent by incorporating one
+		a three-argument frame is reduced to one argument by incorporating one
 		applied object and reflexivizing the other
-		<Ref k="bugaevakobayashi2022" p="§4.1.1" />:
+		<Ref k="bugaevakobayashi2022" p="520, ex. 5" />:
 	</p>
 
 	<Ex
 		m="yay-ipe-e-ko-sunke"
 		g="REFL-food-APPL-APPL-lie"
 		tr="eat meagre meals"
-		cite="bugaevakobayashi2022:§4.1.1"
+		cite="bugaevakobayashi2022:520"
 		dial="HK"
-		note="ipe 'food' is incorporated as the e-object (Content); yay- fills the ko-object slot (Addressee = reflexive self). The resulting verb is transitive with a single indexed object."
+		note="ipe 'food' is incorporated as the e-object (Content); yay- fills the ko-object slot (Addressee = reflexive self). The resulting verb is intransitive: the two applied objects have been absorbed, leaving one argument. This citation form contains no person affix."
 	/>
 
 	<p>
@@ -108,20 +108,18 @@
 		cite="nakagawa2024:197"
 		dial="CHI"
 		place="Nakagawa ex. 190"
-		note="mun 'grass/weeds' and toy 'soil' are comitative objects first promoted by ko-, then incorporated. The implied patient (the demon's flesh) is cross-referenced by a=. Each verb-word is the output of the applicative-then-incorporation feeding sequence."
+		note="mun 'grass/weeds' and toy 'soil' are comitative objects first promoted by ko-, then incorporated. The prefix a= (4.A) indexes the subject. The patient (the demon's flesh) is supplied by context, without an overt person index. Each verb-word is the output of the applicative-then-incorporation feeding sequence."
 	/>
 </S>
 
 <S t="The feeding of oblique incorporation" id="incorporation-feeding">
 	<p>
-		The wordhood diagnostic in <Xr ch="noun-incorporation-object" /> establishes that only core
-		objects — nominals that stand in the argument position targeted by the outermost person
-		index — can incorporate into the verb word. A nominal held in a postpositional phrase
-		(<A w="ani" gl="with (instrumental)" />, <A w="ta" gl="at, in (locative)" />,
-		<A w="kusu" gl="for, in order to (purpose)" />) has no such position and cannot incorporate.
-		The applicative removes the postposition and assigns the nominal core-object status;
-		incorporation then proceeds. Nakagawa gives three parallel derivations
-		<Ref k="nakagawa2024" p="484" />:
+		The following derivations illustrate incorporation of an applied object: an
+		instrument, goal, or purpose nominal combines with an applicative-derived verb,
+		then incorporates <Ref k="nakagawa2024" p="484" />. Incorporation does not
+		require eligibility for a person index. Satō shows that the location argument of
+		<A w="omare" gl="put X in Y" /> can incorporate even though the theme is the
+		argument available for object indexing <Ref k="sato2023b" p="47, ex. 13" />.
 	</p>
 
 	<table>
@@ -279,15 +277,13 @@
 	</p>
 
 	<p>
-		A relational account assigns the promoted nominal the relation of direct object from the
-		moment of applicative formation. The applied object inherits full direct-object properties,
-		including gap-licensability and incorporability, and stands at the Object tier of the
-		hierarchy. The primary supporting evidence is morphosyntactic: Ainu marks no case distinction
-		between the base Patient-object and the applied object of a ditransitive — both appear as
-		bare NPs, both are cross-referenced by the single O-index on the verb
-		<Ref k="nakagawa2024" p="192" />; <Ref k="bugaevakobayashi2022" p="§4.1.1" />. Without a
-		formal difference between the two objects, assigning them to distinct tiers of the hierarchy
-		lacks morphosyntactic grounding.
+		An applicative analysis treats the promoted nominal as an object. Bare-NP coding is
+		one piece of evidence: neither object in a double-object construction takes a case
+		postposition. Only one object can receive a person index, however. Bugaeva notes
+		that first- and second-person referents have indexing priority and leaves the extent
+		of symmetry between the two objects open <Ref k="bugaeva2006" p="188, n. 5" />.
+		Shared bare-NP coding therefore does not establish identical behaviour under every
+		object diagnostic.
 	</p>
 
 	<p>
@@ -317,26 +313,23 @@
 	</p>
 
 	<p>
-		For double-applicative verbs, both applied objects are morphosyntactically equivalent (bare
-		NPs, single O-index), and both are in principle accessible to gap-formation or incorporation
-		individually. Whether both can independently head distinct relative clauses within a complex
-		sentence has not been investigated in the sources consulted ‹speculative›.
+		The same distinction matters for double applicatives: a single object-index position
+		cannot establish that both applied objects behave identically. Accessibility to
+		relativization or incorporation must be checked for the particular construction
+		<Ref k="bugaeva2006" p="188, n. 5" />.
 	</p>
 </S>
 
-<S t="The two-slot ceiling, re-applicativization, and chained feeding" id="ceiling">
+<S t="Person indexing and derivational chains" id="ceiling">
 	<p>
-		The verb word accommodates at most two person indexes — one A-type and one O-type — so the
-		ceiling on simultaneously indexed participants is two, regardless of how many applicatives
-		stack <Ref k="sato2023b" p="39" />; <Ref k="bugaevakobayashi2022" p="§2" />;
-		<Ref k="nakagawa2024" p="210–212" />. Extra applied objects must be reabsorbed by
-		reflexivization (<A w="yay-" gl="self (direct)" /> / <A w="si-" gl="self (indirect)" />),
-		incorporation, or antipassivization before the verb is finalized.
-		The <i lang="ain-Latn">yay-ipe-e-ko-sunke</i> example above instantiates two reabsorption
-		strategies on one verb. Bugaeva's (2014 abstract) characterization of Ainu as polysynthetic
-		in Baker's sense — with the caveat that it departs from the Mohawk prototype in word order,
-		in-situ <i lang="ain-Latn">wh</i>, and unrestricted morphological causatives — places this
-		stacking capacity in typological perspective <Ref k="bugaeva2014" />.
+		A verb carries at most one subject person index and one object person index.
+		Three-argument verbs nevertheless have two objects; one object remains without a
+		person index <Ref k="bugaeva2006" p="188, n. 5" />;
+		<Ref k="sato2023b" p="47–48" />. This indexing limit does not require
+		incorporation or reflexivization of an extra object. In
+		<i lang="ain-Latn">yay-ipe-e-ko-sunke</i>, those operations reduce a
+		three-argument frame to one argument, yielding an intransitive verb
+		<Ref k="bugaevakobayashi2022" p="520" />.
 	</p>
 
 	<p>
@@ -359,13 +352,11 @@
 	/>
 
 	<p>
-		The chained sequence — applicative, then antipassive, then re-applicativization, then
-		relativization or incorporation — is bounded only by the template order (person index |
-		nominal/applicative | root | forming suffix | causative | person index;
-		<Ref k="nakagawa2024" p="211" />) and the two-slot ceiling. Each step in the chain
-		either adds a slot (applicative, causative) or removes one (antipassive, reflexive,
-		incorporation), and the feeding paths are open whenever the net result is a nominal
-		standing at the direct-object tier ‹contested›.
+		These examples establish particular derivational chains. Their availability also
+		depends on the lexical base and the meaning of the combination. Nakagawa allows
+		repetition within an affix class but explicitly notes lexical restrictions on
+		derivational affixes <Ref k="nakagawa2024" p="210" />. The person-index limit
+		alone does not determine which chains are possible.
 	</p>
 
 	<p>

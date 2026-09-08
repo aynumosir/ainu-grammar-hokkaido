@@ -8,8 +8,9 @@
 		The productive causative suffix <i lang="ain-Latn">-re</i>/<i lang="ain-Latn">-te</i
 		>/<i lang="ain-Latn">-e</i> raises arity by one. Applied to an intransitive base it
 		creates a two-place transitive; applied to a transitive base it creates a three-place
-		ditransitive; applied a second time to a derived causative stem it produces a
-		four-place verb. The chapter follows the causee — the participant who is made or
+		ditransitive. A second causativization adds one further argument, yielding three
+		arguments from an originally one-place base or four from an originally two-place base.
+		The chapter follows the causee — the participant who is made or
 		permitted to act — through each of these steps: its expression as the O of a derived
 		transitive, the priority it takes over the theme when both objects compete for the
 		single O-index slot, and the behaviour of double causatives under the two-slot
@@ -17,7 +18,8 @@
 		causative morphology are developed in <Xr ch="causative-morphological-re-e-te" />.
 		The indefinite causative <i lang="ain-Latn">-yar</i>/<i lang="ain-Latn">-ar</i>,
 		which adds a causer while leaving the causee both unexpressed and unindexed, is
-		treated in <Xr ch="permissive-sociative-causative-yar" />. <Ref k="bugaeva2014" p="§7" />
+		treated in <Xr ch="permissive-sociative-causative-yar" />.
+		<Ref k="bugaevakobayashi2022" p="520–521" />; <Ref k="nakagawa2024" p="135, 431" />
 	</p>
 </S>
 
@@ -26,7 +28,7 @@
 		When <i lang="ain-Latn">-re/-te/-e</i> derives a transitive verb from an intransitive
 		base, the former intransitive subject becomes the O of the causative verb. Person
 		marking shows this shift directly. The intransitive <A w="sinot" gl="play (intr)" />
-		takes the first-person A prefix <i lang="ain-Latn">ku=</i>; once the causative
+		takes the first-person S prefix <i lang="ain-Latn">ku=</i>; once the causative
 		<i lang="ain-Latn">-te</i> is added, that same participant reappears as the
 		first-person object <i lang="ain-Latn">en=</i>, and the new causer —
 		<i lang="ain-Latn">hapo</i> 'mother' — occupies the A position, unmarked because
@@ -35,11 +37,11 @@
 
 	<Ex
 		m="ku=sinot"
-		g="1SG.A=play"
+		g="1SG.S=play"
 		tr="I play."
 		cite="nakagawa2024:431"
-		dial="SAR"
-		place="Nakagawa ex. 954, after Tamura 1984"
+		dial="HK"
+		place="Nakagawa ex. 955"
 	/>
 
 	<Ex
@@ -47,19 +49,17 @@
 		g="mother 1SG.O=play-CAUS"
 		tr="Mother made me play."
 		cite="nakagawa2024:431"
-		dial="SAR"
-		place="Nakagawa ex. 955"
-		note="The base subject ku= (1SG.A) reappears as the causee en= (1SG.O) of the causative; hapo 'mother' is the new causer, indexed by zero (third-person A is not marked)."
+		dial="HK"
+		place="Nakagawa ex. 955′"
+		note="The base subject ku= (1SG.S) reappears as the causee en= (1SG.O) of the causative; hapo 'mother' is the new causer, indexed by zero (third-person A is not marked)."
 	/>
 
 	<p>
-		The causee bears no case particle. Ainu objects are invariably unmarked, so the
-		causee surfaces as a bare NP alongside any O-set affix that cross-references it,
-		in exactly the same way the patient of any transitive does
-		<Ref k="bugaeva2014" p="142" />; <Ref k="nakagawa2024" p="201" />. The same
-		principle carries into the three-place frame that arises when a transitive base is
-		causativized: the marking type does not change, only the number of competitors for
-		the single O-index slot increases.
+		In the illustrated causative construction, the causee NP takes no case particle
+		<Ref k="nakagawa2024" p="431, ex. 954′" />. A causativized transitive likewise
+		has a double-object frame: the causee and the original theme can appear as bare NPs,
+		although one is often omitted when recoverable from context
+		<Ref k="bugaevakobayashi2022" p="521" />.
 	</p>
 </S>
 
@@ -67,11 +67,9 @@
 	<p>
 		When <i lang="ain-Latn">-re/-te/-e</i> applies to a transitive verb (arity +2), the
 		result has arity +3. The new causer fills the A position, the original transitive
-		subject (now the causee) fills one O position, and the original patient or theme
-		fills a second O position. Bugaeva (2014: 142) characterizes the causee in this frame
-		as an unmarked direct object in a double-object construction, parallel in its coding
-		to a recipient in an applicative-derived ditransitive
-		<Ref k="bugaeva2014" p="142" />; <Ref k="bugaevakobayashi2022" p="§4.1.2" />.
+		subject becomes the causee, and the original patient or theme remains an object.
+		Bugaeva and Kobayashi describe the result as a double-object construction
+		<Ref k="bugaevakobayashi2022" p="521, ex. 6c" />.
 	</p>
 
 	<p>
@@ -88,7 +86,7 @@
 		m="a=e=tuy-e-re"
 		g="4.A=2SG.O=cut-TRVZ-CAUS"
 		tr="I made you cut the grapevines."
-		cite="bugaevakobayashi2022:§4.1.2"
+		cite="bugaevakobayashi2022:521"
 		dial="SAR"
 		place="Nakagawa corpus K7803233UP.144; Handbook ex. 6c"
 		note="Attested form in context: ki kusu hat punkar a=e=tuy-e-re wa. The theme 'grapevines' (hat punkar) is a bare NP with no index on the verb; only the causer and causee are cross-referenced."
@@ -105,7 +103,8 @@
 
 	<p>
 		The table below tracks arity through the causative chain. The third row covers double
-		causatives, taken up in §<span class="sc">5</span>. <Ref k="nakagawa2024" p="§13.3" />; <Ref k="bugaeva2014" p="§7" />
+		causatives, taken up below. <Ref k="nakagawa2024" p="135, 431" />;
+		<Ref k="bugaevakobayashi2022" p="521" />
 	</p>
 
 	<table>
@@ -142,7 +141,7 @@
 				<td>+3</td>
 				<td><i lang="ain-Latn">omare-re</i></td>
 				<td>+4</td>
-				<td>causer (A-affix), causee (O-affix), theme (NP), place (NP)</td>
+				<td>causer, causee, theme, place; participants may be supplied by context</td>
 			</tr>
 		</tbody>
 	</table>
@@ -160,13 +159,13 @@
 	</p>
 
 	<p>
-		This outcome places Ainu causative ditransitives in the secundative column of
-		ditransitive indexing typology (see <Xr ch="object-indexing-monotransitive" />): the
-		causee, as derived O, patterns with the O of a monotransitive verb for person-marking
-		purposes, rather than the original patient claiming that slot
-		<Ref k="sato2023b" />; <Ref k="bugaevakobayashi2022" p="§4.1.2" />. The pattern
-		mirrors what applies in applicative-derived ditransitives, where the applied object
-		— not the original patient — is indexed in the O-position ‹corpus-suggested›.
+		In this example, the causee receives the same O-series marking as the object of a
+		monotransitive, while the original theme is unindexed
+		<Ref k="bugaevakobayashi2022" p="521, ex. 6c" />. Comparisons with other
+		ditransitives need to specify the construction: Satō reports both the usual recipient
+		indexing of <A w="kore" gl="give" /> and examples of theme indexing
+		<Ref k="sato2023b" p="40, n. 5" />. Applicative objects are discussed in
+		<Xr ch="object-indexing-monotransitive" />.
 	</p>
 
 	<p>
@@ -212,7 +211,7 @@
 		after <i lang="ain-Latn">r</i>), the second causative surfaces as
 		<i lang="ain-Latn">-re</i> (the allomorph after a vowel), producing the sequence
 		<i lang="ain-Latn">-e-re</i> <Ref k="nakagawa2024" p="200–201" />;
-		<Ref k="bugaeva2014" p="134" />.
+		<Ref k="bugaevakobayashi2022" p="520, n. 6; 521" />.
 	</p>
 
 	<p>
@@ -222,36 +221,29 @@
 		new A, and the original possessor becomes a causee-beneficiary in the O position. A
 		second <i lang="ain-Latn">-re</i> yields <i lang="ain-Latn">kor-e-re</i>
 		(have-<span class="sc">caus-caus</span>, +4): an outer causer now makes the giver
-		give. Bugaeva (2014: 142–143) records <i lang="ain-Latn">kor-e-re</i> as attested
-		once in her 387-verb Saru sample <Ref k="bugaeva2014" p="142–143" />.
+		give. Bugaeva cites <i lang="ain-Latn">korere</i> from Batchelor's dictionary
+		<Ref k="bugaeva2014" p="143" />. Nakagawa likewise lists dictionary records,
+		while noting the lack of usage examples for that entry
+		<Ref k="nakagawa2024" p="135" />.
 	</p>
 
-	<Ex
-		m="a=e=kor-e-re"
-		g="4.A=2SG.O=have-CAUS-CAUS"
-		tr="I caused you to give (something to someone)."
-		constructed
-		note="The form kor-e-re 'cause to give' (have-CAUS-CAUS) is attested in Bugaeva (2014: 142–143); this constructed illustration shows the person-indexing pattern: the outer causer takes a= (fourth person, narrative first person) and the immediate causee-giver takes e= (2SG.O), while the recipient and the theme given have no index on the verb."
-	/>
 
 	<p>
 		<A w="omarere" gl="cause someone to put X in Y" /> provides a second documented
 		instance. The base <A w="oma" gl="be inside (a place)" /> is a locative verb;
 		<A w="omare" gl="put X in Y (causative of oma)" /> is its three-place causative;
 		<i lang="ain-Latn">omare-re</i> is the double causative with four participants
-		<Ref k="bugaevakobayashi2022" p="§4.1.2" />.
+		<Ref k="nakagawa2024" p="135, ex. 34" />.
 	</p>
 
 	<p>
-		The two-slot ceiling limits what can be cross-referenced in any four-place frame.
-		Of four participants, only the outer causer (A-slot) and the immediate causee
-		(O-slot) can be indexed by person affixes on the verb; the remaining objects must
-		be expressed as overt bare NPs. The asymmetry between a morphologically productive
-		stacking operation and its restricted expressibility in person marking explains the
-		marginal corpus status of double causatives. Bugaeva and Kobayashi observe that the
-		licensing of double-object frames and double causatives in Ainu is cross-linguistically
-		unusual, most languages blocking iterative morphological causativization
-		<Ref k="bugaevakobayashi2022" p="§4.1.2" /> ‹corpus-suggested›.
+		The limit of two person indexes also applies to a four-argument frame. It does not
+		require all remaining participants to appear as overt NPs. In Nakagawa's Saru example,
+		<i lang="ain-Latn">a=omarere</i> 'I made [her] put [it there]' indexes the causer;
+		the causee, theme, and destination are recovered from the surrounding passage.
+		Nakagawa describes four-argument verbs as very rare, but gives this passage as an
+		attested instance <Ref k="nakagawa2024" p="135, ex. 34" />. The person-index
+		limit alone does not explain their rarity.
 	</p>
 </S>
 
@@ -260,9 +252,10 @@
 		The causative sits within a broader combinability system in which two applicatives,
 		two causatives, two incorporated objects, reflexive, and agreement indexes can
 		co-occur on a single verb — surveyed in <Xr ch="valency-voice-overview" />
-		<Ref k="bugaeva2014" />; <Ref k="bugaevakobayashi2022" p="§4.1.1" />. The two-slot
-		ceiling is the shared operational bound across all combinations
-		<Ref k="sato2023b" />; <Ref k="bugaevakobayashi2022" p="§2" />.
+		<Ref k="bugaeva2014polysynthesis" />; <Ref k="bugaevakobayashi2022" p="§4.1.1" />. The two-slot
+		limit concerns person affixes. Argument count and the lexical restrictions on
+		derivation must be assessed separately <Ref k="sato2023b" p="47–48" />;
+		<Ref k="nakagawa2024" p="210" />.
 	</p>
 
 	<p>

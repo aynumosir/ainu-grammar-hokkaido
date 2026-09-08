@@ -73,9 +73,10 @@
 	</table>
 
 	<p>
-		A finite verb carries at most one subject index and one object index; a third argument — such
-		as the theme in a ditransitive clause — is never additionally person-indexed and surfaces as a
-		bare noun phrase <Ref k="sato2023b" p="39, 47" />; <Ref k="sato2025a" p="369–371" />. The
+		A finite verb carries at most one subject index and one object index. In a ditransitive,
+		only one of the two objects can receive a person index; the other may appear as a bare
+		NP or be recovered from context. The indexed role varies across constructions
+		<Ref k="sato2023b" p="40, n. 5; 47–48" />; <Ref k="sato2025a" p="369–370" />. The
 		object index occupies the prefixal argument-marking layer immediately before the lexical stem,
 		alongside the transitive subject index; derivational material — applicatives, the causative, the
 		antipassive, the reflexive, and the root-attaching plural <i lang="ain-Latn">-pa</i> — sits

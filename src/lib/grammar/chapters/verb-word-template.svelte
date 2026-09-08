@@ -318,7 +318,7 @@
 			<tr>
 				<td>3</td>
 				<td>three-place / ditransitive</td>
-				<td>three bare arguments possible; only two fit on the verb</td>
+				<td>three arguments; at most one subject and one object person index</td>
 				<td><i lang="ain-Latn">kore</i> 'give', <i lang="ain-Latn">epakasnu</i> 'teach', locative <i lang="ain-Latn">o</i> 'put in'</td>
 			</tr>
 			<tr>
