@@ -316,15 +316,15 @@
 		<i lang="ain-Latn">e-yay-e-isoytak</i> as a further expansion that inserts the
 		reflexive <i lang="ain-Latn">yay-</i> between the two applicatives, treating the whole
 		as one word <Ref k="bugaevakobayashi2022" p="§4.1.1" />;
-		<Ref k="nakagawa2024" p="211" />. The arity ceiling on double applicatives follows from
-		the two-person-affix cap: a verb may carry at most one subject index and one object
-		index, so a third applied object is unindexable without compensatory
-		intransitivization <Ref k="bugaevakobayashi2022" p="§2" />;
-		<Ref k="sato2023b" p="39" />. The Handbook illustrates the compensatory strategy in
-		<i lang="ain-Latn">yay-ipe-e-ko-sunke</i> 'eat meagre meals', where three
-		applied-object positions are successively reduced — one object incorporated
-		(<i lang="ain-Latn">ipe</i> 'food'), one reflexivized (<i lang="ain-Latn">yay-</i>)
-		<Ref k="bugaevakobayashi2022" p="§4.1.1" />. The full range of applicative–reflexive
+		<Ref k="nakagawa2024" p="210" />. Person indexing is a separate constraint:
+		a three-argument verb can have two objects although only one receives a person
+		index <Ref k="bugaeva2006" p="188, n. 5" />. Incorporation and reflexivization
+		can subsequently reduce valency. In the Handbook's
+		<i lang="ain-Latn">yay-ipe-e-ko-sunke</i> 'eat meagre meals', the subject and
+		two applied objects form a three-argument frame; incorporating
+		<i lang="ain-Latn">ipe</i> 'food' and reflexivizing the other object with
+		<i lang="ain-Latn">yay-</i> leave a one-argument, intransitive verb
+		<Ref k="bugaevakobayashi2022" p="520" />. The full range of applicative–reflexive
 		and applicative–causative stacking is in
 		<Xr ch="applicative-stacking-relativization-feeding" />.
 	</p>

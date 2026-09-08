@@ -266,11 +266,11 @@ export const bibliography: Record<string, BibEntry> = {
 		title: 'Parts of speech — with a focus on the classification of nouns',
 		editor: 'Anna Bugaeva',
 		container: 'Handbook of the Ainu language (HJLL 12)',
-		pages: '473–500',
+		pages: '473–514',
 		publisher: 'De Gruyter Mouton',
 		place: 'Berlin & Boston',
 		url: 'https://db.aynu.org/sources/2022-bugaeva',
-		note: 'Chapter 14 of the Handbook; page numbers from epub pagebreak markers'
+		note: 'Chapter 14 of the Handbook'
 	},
 	tamuramasashi2011: {
 		region: 'hokkaido',
@@ -873,8 +873,23 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Bugaeva',
 		year: '2014',
 		title: 'アイヌ語使役構文に関する再考察',
-		titleTr: 'A reconsideration of the causative construction in Ainu',
+		titleTr: 'Reconsidering Causative Constructions in Ainu',
+		container: '北方言語研究 [Northern Language Studies] 4',
+		pages: '127–147',
+		url: 'https://hdl.handle.net/2115/55125',
 		lang: 'ja'
+	},
+	bugaeva2014polysynthesis: {
+		region: 'hokkaido',
+		author: 'Bugaeva, Anna ブガエワ・アンナ',
+		citeAuthor: 'Bugaeva',
+		year: '2014',
+		title: 'Polysynthesis in Ainu',
+		container: "International Symposium on Polysynthesis in the World's Languages",
+		publisher: 'National Institute for Japanese Language and Linguistics',
+		place: 'Tokyo',
+		url: 'https://www2.ninjal.ac.jp/past-events/polysynthesis-sympo/ISPS_abstracts_all_20140108.pdf',
+		note: 'Conference abstract, 20–21 February 2014'
 	},
 	nam2021: {
 		region: 'general',
@@ -997,8 +1012,11 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Satō Tomomi 佐藤知己',
 		citeAuthor: 'Satō',
 		year: '2023',
-		title: '動詞の結合価と3項動詞',
-		titleTr: 'Verb valency and three-place verbs (ditransitives)',
+		title: 'アイヌ語の動詞の結合価と3項動詞',
+		titleTr: 'Verb valency and three-place verbs in Ainu',
+		container: '北方人文研究 16',
+		pages: '37–64',
+		url: 'https://hdl.handle.net/2115/88711',
 		lang: 'ja'
 	},
 
@@ -1368,11 +1386,10 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Satō Tomomi 佐藤知己',
 		citeAuthor: 'Satō',
 		year: '2025',
-		title: 'Basic sentence structures in Ainu',
-		editor: 'Anna Bugaeva',
-		container: 'Handbook of the Ainu language (HJLL 12)',
-		publisher: 'De Gruyter Mouton',
-		place: 'Berlin & Boston'
+		title: 'Basic Sentence Structures in Ainu',
+		container: 'Studia Orientalia 126',
+		pages: '353–376',
+		url: 'https://journal.fi/store/article/view/179230'
 	},
 	sato2025b: {
 		region: 'hokkaido',

@@ -288,7 +288,7 @@
 			</tr>
 			<tr>
 				<td>Baker-parameter polysynthesis</td>
-				<td><Ref k="bugaeva2014" /></td>
+				<td><Ref k="bugaeva2014polysynthesis" /></td>
 				<td>Ainu is polysynthetic in Baker's sense (holophrastic argument encoding)
 					but deviates from the Mohawk prototype in word order,
 					<i lang="ain-Latn">wh</i>-in-situ, and unrestricted morphological causatives</td>

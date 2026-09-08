@@ -187,7 +187,7 @@
 		cite="nakagawa2024:197"
 		dial="CHI"
 		place="Nakagawa ex. 190"
-		note="The comitative applied objects mun 'garbage' and toy 'earth' are incorporated between the person prefix and ko-; each incorporated form is transitive (4.A prefix a=), confirming the arity increase from the intransitive base tata."
+		note="The comitative applied objects mun 'garbage' and toy 'earth' are incorporated between the person prefix and ko-; tata is transitive, ko- adds a comitative object, and incorporation reduces the resulting three-argument frame back to two arguments. The prefix a= (4.A) indexes the subject."
 	/>
 	<p>
 		Benefactive uses (18%) cover contexts in which the applied object's interests are served

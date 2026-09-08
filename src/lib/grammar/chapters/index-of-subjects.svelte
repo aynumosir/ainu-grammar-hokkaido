@@ -713,6 +713,7 @@
 		<li>Person agreement in kor an — <Xr ch="existential-aspect-an-oka" /></li>
 		<li>Person agreement in wa an — <Xr ch="existential-aspect-an-oka" /></li>
 		<li>Person and number marking — <Xr ch="sakhalin-contrast-text" /></li>
+		<li>Person indexing and derivational chains — <Xr ch="applicative-stacking-relativization-feeding" /></li>
 		<li>Person indexing: causee priority and secundative alignment — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
 		<li>Person marking — <Xr ch="property-concept-predication" /></li>
 		<li>Person marking and verbal status — <Xr ch="copula-ne-predicate-nominals" /></li>
@@ -1294,7 +1295,6 @@
 		<li>The two possessive constructions — <Xr ch="adnominal-possession-double-marking" /></li>
 		<li>The two writing systems — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>The two-index ceiling — <Xr ch="personal-affix-template-and-ordering" /></li>
-		<li>The two-slot ceiling, re-applicativization, and chained feeding — <Xr ch="applicative-stacking-relativization-feeding" /></li>
 		<li>The Type-2 classification controversy — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>The unexpressed causee — <Xr ch="permissive-sociative-causative-yar" /></li>
 		<li>The V(ka)Vt frame: morphology and the person locus — <Xr ch="abilitative-easkay-eaykap" /></li>

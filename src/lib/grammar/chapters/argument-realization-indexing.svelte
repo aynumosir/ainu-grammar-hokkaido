@@ -116,35 +116,32 @@
 
 <S t="Null and zero arguments" id="null-arguments">
 	<p>
-		"It is not necessary in Ainu for a noun phrase that is clear from the context to appear in a
-		sentence, and such a noun phrase is not even represented by a pronoun; even if a verb takes two
-		objects, it is normal for only one of them to be present" — <Ref k="bugaeva2022" /> (ch.14,
-		before ex.75). <Ref k="nakagawa2024" p="361" /> formalises this in the sentence template: a
-		NP "need not be present in the sentence as long as it can be supplied meaningfully from
-		context." The missing argument is read as a zero anaphor — not a phonologically null pronoun
-		alongside the index, but the index itself satisfying the valency slot with no additional NP
-		exponency.
+		An NP recoverable from context can be omitted without being replaced by an independent
+		pronoun. Nakagawa notes that even with a two-object verb, usually only one object NP
+		is present <Ref k="nakagawa2022pos" p="510" />. His sentence template likewise
+		allows contextually recoverable NPs to be absent <Ref k="nakagawa2024" p="361" />.
+		Such omission is available to an object that has no person index, as the next example
+		illustrates.
 	</p>
 
 	<p>
-		A particularly clear case arises with three-place verbs. A verb hosts at most one subject index
-		and one object index (<Xr ch="person-marking-architecture" />; <Xr
-			ch="object-indexing-monotransitive"
-		/>), so the third argument of a ditransitive — typically the theme — is never indexed and
-		appears only as an optional bare NP or is null. Its reference remains unambiguous: "verbal
-		valency guarantees the interpretation of anaphoric reference without any personal affix"
-		<Ref k="sato2025a" p="368–369" />. The following clause is the second in a two-sentence
-		passage; the preceding clause establishes the theme (a sweet). The second clause drops it
-		entirely, leaving only the human recipient and the first-singular agent overt or indexed:
+		A three-place verb has at most one subject index and one object index
+		(<Xr ch="object-indexing-monotransitive" />). Which object is indexed depends on
+		the construction: <A w="kore" gl="give" /> usually indexes the recipient, with
+		theme indexing also reported, while <A w="omare" gl="put X in Y" /> indexes the
+		theme rather than the location <Ref k="sato2023b" p="40, n. 5; 47–48" />.
+		An unindexed object may be supplied by context. In the following passage, the
+		preceding sentence establishes a sweet as the theme; the second clause omits its NP
+		<Ref k="sato2025a" p="370, ex. 21" />:
 	</p>
 
 	<Ex
 		m="ekasi ku=kore na"
 		g="old.man 1SG.A=give FIN"
 		tr="I'll give it to the old man."
-		cite="sato2025a:368"
-		dial="HK"
-		note="Satō 2025 ex. 21 (second clause). The theme — a sweet, established in the preceding clause tanpe topenpe ne na 'this is a sweet' — is null. The verb kore 'give' is three-place; valency alone guarantees the theme's interpretation. Only the human recipient ekasi 'old man' and the 1SG agent ku= are expressed."
+		cite="sato2025a:370"
+		dial="CHI"
+		note="Satō 2025 ex. 21 (second clause). The theme — a sweet, established in the preceding clause tanpe topenpe ne na 'this is a sweet' — is null. The verb kore 'give' is three-place; the preceding sentence supplies the theme's referent. Only the human recipient ekasi 'old man' and the 1SG agent ku= are expressed."
 	/>
 
 	<p>

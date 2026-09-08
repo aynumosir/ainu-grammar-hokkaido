@@ -147,8 +147,8 @@
 		g="girl play"
 		tr="The girl played."
 		cite="nakagawa2024:431"
-		dial="SAR"
-		place="Nakagawa ex. 954, after Tamura 1984"
+		dial="HK"
+		place="Nakagawa ex. 954"
 	/>
 
 	<Ex
@@ -156,7 +156,7 @@
 		g="mother girl play-CAUS"
 		tr="Mother made the girl play."
 		cite="nakagawa2024:431"
-		dial="SAR"
+		dial="HK"
 		place="Nakagawa ex. 954′"
 		note="The base intransitive subject matkaci becomes the causee object; hapo is the new causer subject. The -te allomorph follows the consonant-final stem sinot."
 	/>
@@ -173,8 +173,8 @@
 		g="mother 1SG.O=play-CAUS"
 		tr="Mother made me play."
 		cite="nakagawa2024:431"
-		dial="SAR"
-		place="Nakagawa ex. 955"
+		dial="HK"
+		place="Nakagawa ex. 955′"
 		note="The first-person argument shifts from the subjective index ku= to the objective en=, diagnosing the arity increase from vi to vt."
 	/>
 
@@ -186,10 +186,13 @@
 		<i lang="ain-Latn">tuy-e</i> 'cut' [vt] with <i lang="ain-Latn">-re</i> added —
 		carries two simultaneous person indexes and is cited by Bugaeva and Kobayashi as evidence
 		that causativization of transitives is both licensed and productive
-		<Ref k="bugaevakobayashi2022" p="§4.1.2" />. Double causatives — the productive suffix
-		added to an already causativized base — are also attested, yielding a four-place verb;
-		the attested <i lang="ain-Latn">kor-e-re</i> 'cause to give' is one such form
-		<Ref k="bugaeva2014" p="142–143" />. Both the double-object frame and double causatives
+		<Ref k="bugaevakobayashi2022" p="521" />. Adding a second causative increases
+		arity by one again: an originally one-place base yields three arguments, while an
+		originally two-place base yields four. Bugaeva's four-argument
+		<i lang="ain-Latn">kor-e-re</i> 'cause to give' is a dictionary citation
+		<Ref k="bugaeva2014" p="142–143" />; Nakagawa provides a textual example with
+		<i lang="ain-Latn">omarere</i> 'cause someone to put X in Y'
+		<Ref k="nakagawa2024" p="135, ex. 34" />. Both the double-object frame and double causatives
 		are treated in <Xr ch="causee-marking-ditransitive-double-causative" />.
 	</p>
 </S>

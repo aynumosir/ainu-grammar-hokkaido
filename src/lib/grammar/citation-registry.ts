@@ -144,6 +144,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	bugaeva2015relative: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/ブガエワアンナ・長崎郁編『アイヌ語研究の諸問題』' },
 	bugaeva2010: { dbSlug: '2010-anna-bugaeva-ainu-applicatives-in-typological-perspective', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2014: { sourceRole: 'prior-analysis', heldLocally: true },
+	bugaeva2014polysynthesis: { sourceRole: 'prior-analysis', heldLocally: true },
 	nam2021: { dbSlug: '2021-nam-deokhyun-some-evidence-for-the-origin-of-the-ainu-antipassive-prefix-i', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2021antip: { dbSlug: '2021-anna-bugaeva-unspecified-participant-a-case-of-antipassive-in-a', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2025: { dbSlug: '2025-bugaeva-anna-a-diachronic-study-of-anticausatives-in-ainu', sourceRole: 'prior-analysis', heldLocally: true },
