@@ -1,6 +1,7 @@
 <!-- src/lib/grammar/chapters/applicative-e.svelte -->
 <script lang="ts">
 	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import ApplicativeStats from '$lib/grammar/components/ApplicativeStats.svelte';
 </script>
 
 <S t="Valency effect and position" id="overview">
@@ -30,8 +31,8 @@
 		word for prosodic purposes, a pattern the community archive documents with forms such as
 		<i lang="ain-Latn">kotán</i> → <i lang="ain-Latn">ekótanne</i> (nukopoli, aynu-corpora
 		Discord 2024) <Ref k="aynucorporadiscord" />; <Ref k="nakagawa2024" p="192–194" />
-		‹consensus›. Among the three applicatives, <i lang="ain-Latn">ko-</i> is the most
-		frequent, followed by <i lang="ain-Latn">e-</i> and then <i lang="ain-Latn">o-</i>;
+		‹consensus›. Bugaeva reports <i lang="ain-Latn">ko-</i> as the most
+		frequent applicative, followed by <i lang="ain-Latn">e-</i> and then <i lang="ain-Latn">o-</i>;
 		by Bugaeva's estimate, applicative-derived verbs account for roughly one-third of all
 		Ainu verbs and up to seven percent of the total lexicon <Ref k="bugaeva2006" p="188" />.
 	</p>
@@ -95,6 +96,16 @@
 		</tbody>
 	</table>
 
+	<p>
+		The following proportions are calculated from MDB's annotated applicative inventory.
+		They count distinct verb lemmas marked attested, excluding nominalizations and collapsing
+		person-marked citation forms. The sample selection, dialect limitations, and meaning of
+		the confidence labels are specified in <Xr ch="applicative-system-overview" s="mdb-counts" />.
+	</p>
+	<ApplicativeStats prefix="e-" />
+
+	<details>
+		<summary>Published comparison: Bugaeva's lexical sample (2006: 190)</summary>
 	<p>
 		Bugaeva classifies applicative verbs collected from the Chitose and Saru dictionaries
 		and her Chitose fieldwork with Ito Oda <Ref k="bugaeva2006" p="189, fn. 6; 190" />.
@@ -166,7 +177,12 @@
 	</table>
 
 	<p>
-		The instrument sub-type (type 1, 13%) has a clear <i lang="ain-Latn">ani</i>-paraphrase.
+		These percentages describe Bugaeva's lexical sample and were not calculated from MDB.
+	</p>
+	</details>
+
+	<p>
+		The instrument sub-type (type 1) has a clear <i lang="ain-Latn">ani</i>-paraphrase.
 		A straightforward instance is a general capability statement using the motion verb
 		<A w="apkas" gl="walk" />:
 	</p>
@@ -182,7 +198,7 @@
 	/>
 
 	<p>
-		The purpose sub-type (type 2, 2%) takes a goal or activity noun that can be replaced by
+		The purpose sub-type (type 2) takes a goal or activity noun that can be replaced by
 		a <i lang="ain-Latn">kusu</i>-phrase:
 	</p>
 
@@ -193,11 +209,11 @@
 		cite="nakagawa2024:195"
 		dial="HK"
 		place="Nakagawa, unnumbered illustration under (2)"
-		note="The applied object turepta 'dig lily bulbs' is an intransitive verb used nominally to express the purpose of motion. Nakagawa gives the paraphrase turepta kusu arpa. In Bugaeva's sample, Purpose and Path each account for 2% and derive exclusively from intransitive bases (2006: 190)."
+		note="The applied object turepta 'dig lily bulbs' is an intransitive verb used nominally to express the purpose of motion. Nakagawa gives the paraphrase turepta kusu arpa."
 	/>
 
 	<p>
-		Locative applied objects (type 4, combining Location 5% and Path 2%) take a place or
+		Locative applied objects (type 4, combining Location and Path) take a place or
 		postpositional noun, paraphrasable with <i lang="ain-Latn">ta</i>,
 		<i lang="ain-Latn">un</i>, or <i lang="ain-Latn">peka</i>:
 	</p>
@@ -230,9 +246,7 @@
 
 <S t="Content and Theme-Patient: the dominant and non-oblique uses" id="content">
 	<p>
-		Content (39%) and Theme-Patient (17%) together constitute more than half of the
-		<i lang="ain-Latn">e-</i> derivations in Bugaeva's sample and derive almost entirely from intransitive bases
-		(91% and 96% respectively). These roles correspond to Nakagawa's type (3): the applied
+		Content and Theme-Patient correspond to Nakagawa's type (3): the applied
 		object has no adpositional paraphrase, and <i lang="ain-Latn">e-</i> here functions as
 		direct transitivization rather than oblique promotion <Ref k="bugaeva2006" p="191" />;
 		<Ref k="nakagawa2024" p="195–196" />. The verb <A w="simpay" gl="worry" /> is
