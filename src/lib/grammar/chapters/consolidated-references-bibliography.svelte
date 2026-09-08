@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 182 works cited across the grammar into a single
+		This chapter gathers the 184 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -58,12 +58,14 @@
 	<p class="bib-entry">Nakagawa Hiroshi, Anna Bugaeva, Miki Kobayashi &amp; Yoshimi Yoshikawa (eds.) (2016). <i>A glossed audio corpus of Ainu folklore</i>.</p>
 	<p class="bib-entry">Nakamoto Mutsuko 中本ムツ子 (speaker); Kayano Shigeru 萱野茂 (supervising) (2009). <i>CDエクスプレス アイヌ語</i>. [CD Express Ainugo]. Hakusuisha 白水社.</p>
 	<p class="bib-entry">National Institute for Japanese Language and Linguistics 国立国語研究所 (2003). <i lang="ja">アイヌ語口承文芸コーパス</i>. [Corpus of Ainu oral literature].</p>
+	<p class="bib-entry">Niikappu Town 新冠町 (2024). <i>新冠百話 第七十三話</i>. 広報にいかっぷ 694 (November). 7.</p>
 	<p class="bib-entry">Okuda Osami 奥田統己 (2025). <i lang="ja">アイヌ語のわたり音と母音連続</i>. [Glides and vowel hiatus in Ainu].</p>
 	<p class="bib-entry">Ōno, Tetsuhito (2022). <i>The history and current status of the Ainu language revival movement</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 12. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Refsing, Kirsten (1986). <i>The Ainu language: The morphology and syntax of the Shizunai dialect</i>. Aarhus: Aarhus University Press.</p>
 	<p class="bib-entry">Refsing, Kirsten (2011). <i>Tense, aspect and actionality in the Ainu language</i>. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Research Institute for Languages and Cultures of Asia and Africa (ILCAA), Tokyo University of Foreign Studies (1976). <i lang="ja">AA研アイヌ語資料</i>. [ILCAA Ainu language materials].</p>
 	<p class="bib-entry">Sakaguchi Ryō 阪口諒 &amp; Watanabe Kaori 渡邊香織 (2019). <i lang="ja">『アイヌ炉辺物語』（1〜5話）――ジョン・バチェラー、1924年、東京</i>. [Ainu Fireside Stories (tales 1–5): John Batchelor, 1924, Tokyo]. 千葉大学ユーラシア言語文化論集 21. 243–261.</p>
+	<p class="bib-entry">Sapporo City 札幌市 (2021). <i>厚別区 地名のギモン</i>. 広報さっぽろ (August), 厚別区. 2–3.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2004). <i lang="ja">アイヌ文学における一人称体の問題</i>. [The problem of the first-person form in Ainu literature].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2006). <i lang="ja">千歳方言のアスペクト——kor an、wa an</i>. [Aspect in the Chitose dialect: kor an, wa an].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2007). <i lang="ja">千歳方言の再帰接頭辞yay-とsi-について</i>. [On the reflexive prefixes yay- and si- in the Chitose dialect].</p>

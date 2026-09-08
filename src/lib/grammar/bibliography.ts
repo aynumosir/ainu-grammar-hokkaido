@@ -513,6 +513,26 @@ export const bibliography: Record<string, BibEntry> = {
 		lang: 'ja',
 		reported: true
 	},
+	niikappu2024: {
+		region: 'hokkaido',
+		author: 'Niikappu Town 新冠町',
+		citeAuthor: 'Niikappu Town',
+		year: '2024',
+		title: '新冠百話 第七十三話',
+		container: '広報にいかっぷ 694 (November)',
+		pages: '7',
+		url: 'https://www.niikappu.jp/gyose/koho/kohoshi/documents/k694-7.pdf'
+	},
+	sapporo2021: {
+		region: 'hokkaido',
+		author: 'Sapporo City 札幌市',
+		citeAuthor: 'Sapporo City',
+		year: '2021',
+		title: '厚別区 地名のギモン',
+		container: '広報さっぽろ (August), 厚別区',
+		pages: '2–3',
+		url: 'https://www.city.sapporo.jp/somu/koho-shi/202108/documents/202108atsuall.pdf'
+	},
 	chiri1956: {
 		region: 'general',
 		author: 'Chiri Mashiho 知里真志保',
