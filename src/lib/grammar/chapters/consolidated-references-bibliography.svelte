@@ -65,7 +65,7 @@
 	<p class="bib-entry">Refsing, Kirsten (2011). <i>Tense, aspect and actionality in the Ainu language</i>. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Research Institute for Languages and Cultures of Asia and Africa (ILCAA), Tokyo University of Foreign Studies (1976). <i lang="ja">AA研アイヌ語資料</i>. [ILCAA Ainu language materials].</p>
 	<p class="bib-entry">Sakaguchi Ryō 阪口諒 &amp; Watanabe Kaori 渡邊香織 (2019). <i lang="ja">『アイヌ炉辺物語』（1〜5話）――ジョン・バチェラー、1924年、東京</i>. [Ainu Fireside Stories (tales 1–5): John Batchelor, 1924, Tokyo]. 千葉大学ユーラシア言語文化論集 21. 243–261.</p>
-	<p class="bib-entry">Sapporo City 札幌市 (2021). <i>厚別区 地名のギモン</i>. 広報さっぽろ (August), 厚別区. 2–3.</p>
+	<p class="bib-entry">Sapporo City 札幌市 (2021). <i>厚別区 地名のギモン</i>. 広報さっぽろ (August), 厚別区. 2–4.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2004). <i lang="ja">アイヌ文学における一人称体の問題</i>. [The problem of the first-person form in Ainu literature].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2006). <i lang="ja">千歳方言のアスペクト——kor an、wa an</i>. [Aspect in the Chitose dialect: kor an, wa an].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2007). <i lang="ja">千歳方言の再帰接頭辞yay-とsi-について</i>. [On the reflexive prefixes yay- and si- in the Chitose dialect].</p>

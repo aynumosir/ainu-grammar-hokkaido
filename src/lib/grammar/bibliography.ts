@@ -530,7 +530,7 @@ export const bibliography: Record<string, BibEntry> = {
 		year: '2021',
 		title: '厚別区 地名のギモン',
 		container: '広報さっぽろ (August), 厚別区',
-		pages: '2–3',
+		pages: '2–4',
 		url: 'https://www.city.sapporo.jp/somu/koho-shi/202108/documents/202108atsuall.pdf'
 	},
 	chiri1956: {
