@@ -169,6 +169,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 
 	// Tense / aspect / mood
 	tamura1960: { sourceRole: 'prior-analysis', heldLocally: true },
+	sato2006glides: { sourceRole: 'primary-data', heldLocally: false },
 	sato2006: { sourceRole: 'prior-analysis', heldLocally: true },
 	yoshikawa2020: { sourceRole: 'prior-analysis', heldLocally: true },
 	yoshikawa2022: { dbSlug: '2022-yoshimi-yoshikawa-existential-aspectual-forms-in-the-saru-and-chitos', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },

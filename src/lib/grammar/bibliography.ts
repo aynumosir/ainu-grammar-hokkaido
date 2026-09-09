@@ -1100,6 +1100,18 @@ export const bibliography: Record<string, BibEntry> = {
 		titleTr: 'Auxiliary verbs in the Saru dialect',
 		lang: 'ja'
 	},
+	sato2006glides: {
+		region: 'hokkaido',
+		author: 'Satō Tomomi 佐藤知己',
+		citeAuthor: 'Satō',
+		year: '2006',
+		title: 'The Study of the Ainu Language',
+		container: 'Journal of the Graduate School of Letters 1',
+		pages: '45–52',
+		publisher: 'Graduate School of Letters, Hokkaido University',
+		url: 'https://eprints.lib.hokudai.ac.jp/repo/huscap/all/5762/1-4_SATO.pdf',
+		lang: 'en'
+	},
 	sato2006: {
 		region: 'hokkaido',
 		author: 'Satō Tomomi 佐藤知己',

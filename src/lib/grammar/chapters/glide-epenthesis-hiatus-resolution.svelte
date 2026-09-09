@@ -216,22 +216,38 @@
 			and R2 are morphosyntactically conditioned: they apply only at a productive prefix
 			boundary — after <A w="i-" gl="ANTIP" />, <A w="u-" gl="RECP" />, and variably
 			<A w="si-" gl="REFL" /> — and not after the second-person-plural prefix
-			<A w="eci-" gl="2PL.A" />, after applicative <A w="ru-" />, nor at the juncture
+			<A w="eci-" gl="2PL.A" />, after <A w="ru-" gl="in a half way" />, nor at the juncture
 			between an incorporated noun and its verbal host
 			<Ref k="shiraishi2022" p="§4.3" />.
 		</p>
 		<p>
-			The contrast between a prefix boundary and a compound morpheme boundary is illustrated
-			by a community observation: the compound <i lang="ain-Latn">i-o-ci</i> (roughly 'the
-			place where things are many') surfaces as <i lang="ain-Latn">ioci</i>, not
-			*<i lang="ain-Latn">iyoci</i>, because the morpheme boundary is a compound juncture
-			rather than a productive prefix–stem juncture
-			<Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-11) ‹corpus-confirmed›. The pair
-			<i lang="ain-Latn">iyocispare</i> vs. <i lang="ain-Latn">niocire</i> further illustrates
-			the conditioning: in <i lang="ain-Latn">iyocispare</i> the productive
-			<i lang="ain-Latn">i-</i> prefix triggers the glide; at the boundary in
-			<i lang="ain-Latn">niocire</i> the conditions for R1 are not met and no glide appears.
+			Satō's Chitose examples provide direct evidence for the morphological restriction.
+			He contrasts insertion after indefinite <i lang="ain-Latn">i-</i> and reciprocal
+			<i lang="ain-Latn">u-</i> with <i lang="ain-Latn">turi-ecipo</i> 'propel a boat
+			with a pole', which has no [y] at the boundary after <i lang="ain-Latn">turi</i>
+			'pole'. His <i lang="ain-Latn">ru-emina</i> 'smile' similarly lacks [w] after
+			<i lang="ain-Latn">ru-</i>. He reports spectrographic evidence for these
+			differences and treats the inserted glides as phonemes at a surface level
+			<Ref k="sato2006glides" p="47–49" />.
 		</p>
+		<Ex
+			m="turi-ecipo"
+			ain="turiecipo"
+			g="pole-propel.boat.with"
+			tr="Propel a boat with a pole."
+			cite="sato2006glides:48"
+			dial="CHI"
+			note="Satō reports no [y] between the final /i/ of turi and the initial /e/ of ecipo. He relates this to the morphological status of the preceding noun stem."
+		/>
+		<p>
+			The December 11 community exchange raises further comparisons. Gengojiro asks
+			whether <i lang="ain-Latn">i-o-ci</i> would lack [y]; nukopoli juxtaposes
+			<i lang="ain-Latn">iyocispare</i> and <i lang="ain-Latn">niocire</i>
+			<Ref k="aynucorporadiscord" /> (2023-12-11) ‹corpus-suggested›.
+			The exchange leaves the proposed comparison unresolved. These forms require
+			independent analysis before they can establish a boundary-conditioned rule.
+		</p>
+
 		<p>
 			The bear-ceremony word <i lang="ain-Latn">iyomante</i> is informative here. Nakagawa
 			<Ref k="nakagawa2024" p="34" />, Okuda <Ref k="okuda2025" />, and Satō all assign a
@@ -430,44 +446,47 @@
 	</p>
 </S>
 
-<S t="Glottal insertion when glide cannot appear" id="glottal-insertion">
+<S t="Glottal realization at hiatus" id="glottal-insertion">
 	<p>
-		When the morphosyntactic conditions of §3 do not permit glide epenthesis and the adjacent
-		vowel is non-high so that R3/R4 weakening does not apply, [ʔ] fills the hiatus. Tamura
-		(1970: 586–587, 1996: xv, cited in Shiraishi 2022 §4.3) notes that the glottal onset is
-		most clearly audible when the second vowel is accented or belongs to a closed syllable:
+		Shiraishi describes glottal insertion as an available realization when the first
+		vowel is non-high or when morphological conditions exclude glide insertion.
+		The closure or tension is especially audible when the second vowel bears accent
+		or belongs to a closed syllable. If these conditions are not fully met, the
+		transition can be gradual <Ref k="shiraishi2022" p="§4.3" />. His examples include
 		<i lang="ain-Latn">aˈʔep</i> 'food', <i lang="ain-Latn">aˈʔoypep</i> 'tableware',
-		<i lang="ain-Latn">eˈʔikka</i>, <i lang="ain-Latn">teˈʔeta</i> 'a long time ago'. In
-		non-prominent environments the transition is gradual rather than sharply glottalized
-		<Ref k="shiraishi2022" p="§4.3" />.
+		<i lang="ain-Latn">eˈʔikka</i> 'steal', and <i lang="ain-Latn">teˈʔeta</i>
+		'ancient times'. He notes that most examples in this set come from his own
+		observations of Tamura's Saru recordings <Ref k="shiraishi2022" p="§4.3, example (6), n. 9" />.
 	</p>
 	<p>
-		A morphologically restricted h-insertion applies within the
-		<Xr ch="concept-form-affiliative-form">affiliative (possessed) form</Xr> of nouns when
-		two vowels would be adjacent: <i lang="ain-Latn">onaa</i> →
-		<i lang="ain-Latn">ona-h-a</i> 'his/her father';
-		<i lang="ain-Latn">sikii</i> → <i lang="ain-Latn">siki-h-i</i> 'his/her eyes'
-		(Kindaichi &amp; Chiri 1936: 14, cited in Shiraishi 2022 §4.3 n.8). This process is
-		restricted to possessive derivation and is treated in
-		<Xr ch="affiliative-suffix-morphophonology" />.
+		Shiraishi also mentions /h/-insertion in specific morphological contexts,
+		including possessive formation. Citing Kindaichi and Chiri (1974 [1936]: 14),
+		he gives <i lang="ain-Latn">onaa</i> → <i lang="ain-Latn">onaha</i> 'one's father'
+		and <i lang="ain-Latn">sikii</i> → <i lang="ain-Latn">sikihi</i> 'one's eyes'
+		<Ref k="shiraishi2022" p="§4.3, n. 8" />. This account describes a restricted
+		morphological process; it does not establish a general /h/-insertion rule for
+		adjacent vowels. For the possessive forms, see <Xr ch="affiliative-suffix-morphophonology" />.
 	</p>
 	<p>
-		Whether [ʔ] at these junctures constitutes an underlying phoneme /ʔ/ or is a predictable
-		boundary marker is contested; the debate is taken up in <Xr ch="glottal-stop" />.
+		The phonological representation of glottal realizations is contested; see
+		<Xr ch="glottal-stop" /> for segmental and syllable-boundary accounts.
 	</p>
 </S>
 
 <S t="Vowel deletion as an alternative hiatus strategy" id="vowel-deletion">
 	<p>
-		Vowel deletion provides a fourth resolution route, particularly for non-high vowels at
-		morpheme boundaries where glide formation is unavailable. Shiraishi
-		<Ref k="shiraishi2022" p="§4.3" /> documents:
-		<i lang="ain-Latn">keran</i> (&lt; <i lang="ain-Latn">kera=an</i> 'is delicious'),
-		<i lang="ain-Latn">sisotta</i> (&lt; <i lang="ain-Latn">siso or=ta</i> 'on the fireplace'),
-		and <i lang="ain-Latn">noya noya</i> (&lt; <i lang="ain-Latn">noye a noye a</i>). Deletion
-		is conditioned by speech rate and prosodic context and is not in free variation with glide
-		epenthesis at the same boundary. The full account, including the accent interactions that
-		block resyllabification, is in
+		Shiraishi lists vowel deletion alongside glide insertion as a hiatus-resolution
+		process <Ref k="shiraishi2022" p="§4.3, example (5)" />. His examples are
+		<i lang="ain-Latn">keran</i> (&lt; <i lang="ain-Latn">kera-an</i>) 'be delicious',
+		<i lang="ain-Latn">sisotta</i> (&lt; <i lang="ain-Latn">siso or_ta</i>) 'be at the
+		north seat of a house', and <i lang="ain-Latn">noya noya</i>
+		(&lt; <i lang="ain-Latn">noye a noye a</i>) 'twisting and twisting'.
+	</p>
+	<p>
+		These examples illustrate deletion in different morphological and phrasal
+		environments. Shiraishi does not give a shared speech-rate condition for the set.
+		The vowel deletion involving <i lang="ain-Latn">ku=</i> and
+		<i lang="ain-Latn">ci=</i> is treated separately in
 		<Xr ch="personal-affix-sandhi-connected-speech-reduction" />.
 	</p>
 </S>
