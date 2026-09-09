@@ -26,11 +26,13 @@
 			<tr>
 				<td>left personal layer</td>
 				<td>
-					A prefixes: <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">ci=</i>,
+					A prefixes with a third-person object: <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">ci=</i>,
 					<i lang="ain-Latn">a=</i>/<i lang="ain-Latn">an=</i>,
-					<i lang="ain-Latn">e=</i>, <i lang="ain-Latn">eci=</i>; O prefixes:
+					<i lang="ain-Latn">e=</i>, <i lang="ain-Latn">eci=</i>
+					(Ishikari <i lang="ain-Latn">es=</i>); O prefixes with a third-person subject:
 					<i lang="ain-Latn">en=</i>, <i lang="ain-Latn">un=</i>,
-					<i lang="ain-Latn">i=</i>
+					<i lang="ain-Latn">e=</i>, <i lang="ain-Latn">eci=</i>
+					(Ishikari <i lang="ain-Latn">es=</i>), <i lang="ain-Latn">i=</i>
 				</td>
 				<td>before the derived stem</td>
 			</tr>
@@ -61,9 +63,10 @@
 			<tr>
 				<td>right personal layer</td>
 				<td>
-					<i lang="ain-Latn">=as</i> (1PL.EXCL.S); <i lang="ain-Latn">=an</i> (4.S)
+					<i lang="ain-Latn">=as</i>, <i lang="ain-Latn">=an</i>: S indexes on
+					intransitives; also parts of combined transitive paradigms in several dialects
 				</td>
-				<td>after the intransitive stem or derived intransitive</td>
+				<td>after the stem; person values depend on the paradigm</td>
 			</tr>
 			<tr>
 				<td>outer number layer</td>
@@ -77,9 +80,10 @@
 	</table>
 
 	<p>
-		The table is a positional map, not a template in which every slot must be filled. Most verb
-		forms contain only the stem and one index; a verb with a third-person subject and third-person
-		object shows no overt personal material. The outer number layer is relevant here because it
+		The table locates personal and derivational material around the stem. A transitive verb with
+		a third-person subject and third-person object shows no overt personal index. Other A–O
+		combinations can have a single prefix, a sequence of prefixes, or a prefix and suffix together,
+		depending on the dialect <Ref k="nakagawa2024" p="170–173" />. The outer number layer is relevant here because it
 		supplies an ordering diagnostic for the right edge: material that follows a fully
 		person-inflected form belongs outside the personal-affix template, even where earlier
 		descriptions treated comparable segments as person markers <Ref k="nakagawa2024" p="151–159" />;
@@ -89,14 +93,14 @@
 
 <S t="The left personal layer: A and O prefixes" id="left-layer">
 	<p>
-		When a transitive verb is inflected for a non-third subject, the A index occupies the leftmost
-		position in the word: 1SG <i lang="ain-Latn">ku=</i>, 1PL.EXCL
+		With a third-person object, the basic transitive A forms are prefixes: 1SG <i lang="ain-Latn">ku=</i>, 1PL.EXCL
 		<i lang="ain-Latn">ci=</i>, 4th/indefinite <i lang="ain-Latn">a=</i> or
 		<i lang="ain-Latn">an=</i>, 2SG <i lang="ain-Latn">e=</i>, and 2PL
-		<i lang="ain-Latn">eci=</i> all stand before the stem. Object indexes are prefixal across all
-		persons: 1SG <i lang="ain-Latn">en=</i>, 1PL.EXCL <i lang="ain-Latn">un=</i>, 4th
+		<i lang="ain-Latn">eci=</i> stand before the stem; Ishikari has <i lang="ain-Latn">es=</i> for 2PL.
+		With a third-person subject, the basic O forms are also prefixes: 1SG <i lang="ain-Latn">en=</i>, 1PL.EXCL <i lang="ain-Latn">un=</i>, 4th
 		<i lang="ain-Latn">i=</i>, and 2SG/2PL <i lang="ain-Latn">e=</i>/<i lang="ain-Latn">eci=</i>
-		stand before the stem when overt <Ref k="nakagawa2024" p="166–170" />; <Ref
+		(Ishikari 2PL <i lang="ain-Latn">es=</i>) stand before the stem
+		<Ref k="nakagawa2024" p="166–170" />; <Ref
 			k="bugaeva2012"
 			p="471"
 		/>.
@@ -109,7 +113,7 @@
 		cite="nakagawa2024:168"
 		dial="SAR"
 		place="Nakagawa ex. 111"
-		note="ku= reduces to k= before a vowel-initial stem. Both transitive predicates place the A index in the left personal layer."
+		note="Both verbs have third-person objects. In western Hidaka and Chitose, ku= loses u before a-, u-, e-, and o-initial words (Nakagawa pp. 166–167); the two e-initial stems here show k= in Saru."
 	/>
 
 	<p>
@@ -130,11 +134,19 @@
 	</p>
 
 	<p>
-		The 4th-person A prefix shows a dialectal split within the left personal layer. Saru and the
-		western dialects use <i lang="ain-Latn">a=</i> exclusively; Tokachi, Ishikari, Shiranuka, and
-		Samani favour <i lang="ain-Latn">an=</i> under locally varying conditions, and Nakagawa takes
-		<i lang="ain-Latn">an=</i> to be the older form <Ref k="nakagawa2024" p="167–168" />. Both
-		shapes occupy the same left-edge position ‹consensus›.
+		The basic 4th-person A prefix varies between <i lang="ain-Latn">a=</i> and
+		<i lang="ain-Latn">an=</i>. Saru and varieties farther west normally use
+		<i lang="ain-Latn">a=</i>. Nakagawa nevertheless records apparent
+		<i lang="ain-Latn">an=</i> forms in Saru, Chitose, and Horobetsu, especially in formulaic
+		verse. He interprets these as survivals of an older form <Ref k="nakagawa2024" p="168–169" />.
+	</p>
+	<p>
+		In Tokachi, <i lang="ain-Latn">an=</i> occurs before vowel-initial words whose accent
+		is not on the first syllable; <i lang="ain-Latn">a=</i> occurs elsewhere. Nakagawa
+		reports no conditioning of the alternation in Shizunai. Ishikari, Shiranuka, and Samani
+		usually have <i lang="ain-Latn">an=</i>, with <i lang="ain-Latn">a=</i> also attested;
+		Shiranuka particularly favours <i lang="ain-Latn">a=</i> with
+		<i lang="ain-Latn">ye</i> 'say' <Ref k="nakagawa2024" p="169" />.
 	</p>
 
 	<Ex
@@ -148,15 +160,51 @@
 	/>
 </S>
 
+<S t="Combined subject and object forms" id="combined-forms">
+	<p>
+		The A and O inventories do not combine uniformly. In Saru and Chitose,
+		<i lang="ain-Latn">eci=</i> covers all four first-person A to second-person O number
+		combinations. A second-person singular A acting on first-person O is marked by
+		<i lang="ain-Latn">en=</i> (1SG.O) or <i lang="ain-Latn">un=</i> (1PL.O), without
+		a separate <i lang="ain-Latn">e=</i>. Chitose uses the same bare forms for a second-person
+		plural A; Saru has <i lang="ain-Latn">eci=en=</i> and
+		<i lang="ain-Latn">eci=un=</i> in those cells <Ref k="nakagawa2024" p="171, 173" />.
+	</p>
+	<p>
+		Other dialects include combinations with a suffix on a transitive verb. Horobetsu has
+		<i lang="ain-Latn">e=…=as</i> for first-person singular or plural A acting on 2SG.O.
+		Ishikari distinguishes singular <i lang="ain-Latn">e=…=an</i> from plural
+		<i lang="ain-Latn">e=…=as</i> in that relation, with
+		<i lang="ain-Latn">es=</i> replacing <i lang="ain-Latn">e=</i> for 2PL.O
+		<Ref k="nakagawa2024" p="171–172, tables 30–31" />. The suffix therefore does not by
+		itself identify an intransitive predicate or a fixed person value across dialects.
+	</p>
+	<Ex
+		m="es=koinkar=an na"
+		g="2PL.O=watch.over=1SG.A FIN"
+		tr="I will watch over you."
+		cite="nakagawa2024:174"
+		dial="ISH"
+		place="Nakagawa ex. 134, after Sunazawa 1983: 58"
+		note="A bear addresses the people. Nakagawa identifies the combination as 1SG.A–2PL.O: es= precedes the transitive stem, and =an follows it."
+	/>
+	<p>
+		The first-to-second-person combinations are compared in
+		<Xr ch="eci-portmanteau-and-second-plural" />.
+	</p>
+</S>
+
 <S t="The right personal layer: =as and =an" id="right-layer">
 	<p>
 		Two subject indexes appear at the right edge of the inflected verb: 1PL.EXCL
 		<i lang="ain-Latn">=as</i> and 4th/indefinite <i lang="ain-Latn">=an</i>. Both mark S on
-		intransitive verbs and follow any stem-internal suffix. Their transitive-subject counterparts,
+		intransitive verbs and follow any stem-internal suffix. With a third-person object, their
+		basic transitive-subject counterparts,
 		<i lang="ain-Latn">ci=</i> and <i lang="ain-Latn">a=</i>/<i lang="ain-Latn">an=</i>, stand in
 		the left personal layer. This side-switch — suffix on an intransitive S, prefix on a transitive
 		A — is the positional basis on which Bugaeva calls these two rows tripartite: each keeps A, S,
-		and O formally and positionally distinct <Ref k="nakagawa2024" p="166–167" />; <Ref
+		and O formally and positionally distinct in the basic Saru–Chitose paradigm
+		<Ref k="nakagawa2024" p="166–167" />; <Ref
 			k="bugaeva2012"
 			p="472"
 		/>; <Ref k="bugaeva2008" p="32" />.
@@ -167,8 +215,8 @@
 			<tr>
 				<th>person row</th>
 				<th>S: intransitive (right-edge suffix)</th>
-				<th>A: transitive (left-edge prefix)</th>
-				<th>O (left-edge prefix)</th>
+				<th>A with 3rd-person O (left-edge prefix)</th>
+				<th>O with 3rd-person A (left-edge prefix)</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -210,14 +258,12 @@
 	/>
 
 	<p>
-		All other persons keep their subject index on the left. First singular
-		<i lang="ain-Latn">ku=</i> marks both S and A as a prefix, opposed to the object
-		<i lang="ain-Latn">en=</i>. Second-person <i lang="ain-Latn">e=</i> and
-		<i lang="ain-Latn">eci=</i> are neutral — the same form serves A, S, and O — and always
-		prefixal. Third person is zero in all roles. The portmanteau function of
-		<i lang="ain-Latn">eci=</i> for a first-person A acting on a second-person O is a separate
-		rule and is developed in <Xr ch="eci-portmanteau-and-second-plural" />. The right personal
-		layer is the exclusive domain of the two side-switching rows ‹consensus›.
+		In the basic Saru–Chitose paradigm, first singular <i lang="ain-Latn">ku=</i> marks
+		S and A, while <i lang="ain-Latn">en=</i> marks O. Second-person
+		<i lang="ain-Latn">e=</i> and <i lang="ain-Latn">eci=</i> are prefixal in each role;
+		third person has no overt form <Ref k="bugaeva2012" p="471–472" />. These basic rows
+		must be read alongside the combined paradigms: suffixes can encode a first-person singular
+		A in several dialects <Ref k="nakagawa2024" p="171–173" />.
 	</p>
 </S>
 
@@ -227,9 +273,11 @@
 		right-edge person suffix. The causatives <i lang="ain-Latn">-re</i>,
 		<i lang="ain-Latn">-e</i>, and <i lang="ain-Latn">-ka</i>, and the stem-forming plural
 		<i lang="ain-Latn">-pa</i>, all follow the root and precede <i lang="ain-Latn">=as</i> or
-		<i lang="ain-Latn">=an</i>. A causativised intransitive, for example, yields a derived stem to
-		which the right-edge person suffix then attaches: the personal layer is outside the valency
-		layer in both directions <Ref k="nakagawa2024" p="196–199" />; <Ref k="sato2023b" p="40" />.
+		<i lang="ain-Latn">=an</i> when the person combination selects a suffix.
+		The derived verb's valence and its A–O combination determine the personal forms;
+		causativization does not itself require a person suffix. Nakagawa's template places
+		person indexes outside the derivational layers <Ref k="nakagawa2024" p="210, table 45" />;
+		<Ref k="sato2023b" p="40" />.
 	</p>
 
 	<p>
