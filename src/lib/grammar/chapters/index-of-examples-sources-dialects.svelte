@@ -15,7 +15,7 @@
 		<tbody>
 			<tr><td>Ainu Koraci (1991)</td><td>28</td><td><Xr ch="sociolinguistic-situation-revitalization" />, <Xr ch="oral-literature-and-spoken-corpora" />, <Xr ch="citation-vs-combining-stem-shapes" />, <Xr ch="concept-form-affiliative-form" />, <Xr ch="affiliative-suffix-morphophonology" />, <Xr ch="kinship-honorific-possession" />, <Xr ch="interrogative-pro-forms" />, <Xr ch="vigesimal-numeral-system" />, <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" />, <Xr ch="causative-morphological-re-e-te" />, <Xr ch="applicative-o" />, <Xr ch="antipassive-detransitive-i" />, <Xr ch="copula-ne-predicate-nominals" />, <Xr ch="existential-locational-an-oka" />, <Xr ch="property-concept-predication" />, <Xr ch="nonverbal-predicate-tam-negation" />, <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="sequential-wa-and-clause-chaining" />, <Xr ch="simultaneous-kor-clauses" />, <Xr ch="pragmatic-word-order-dislocation" />, <Xr ch="japanese-loanwords-in-ainu" />, <Xr ch="inonno-itak-ritual-prayer" /></td></tr>
 			<tr><td>Alonso de la Fuente (2022)</td><td>2</td><td><Xr ch="genetic-position-macro-comparison" />, <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></td></tr>
-			<tr><td>aynu-corpora Discord (2023–2026)</td><td>2</td><td><Xr ch="s-palatalization" />, <Xr ch="gendered-register-speech" /></td></tr>
+			<tr><td>aynu-corpora Discord (2023–2026)</td><td>3</td><td><Xr ch="s-palatalization" />, <Xr ch="glottal-stop" />, <Xr ch="gendered-register-speech" /></td></tr>
 			<tr><td>Batchelor (1897)</td><td>3</td><td><Xr ch="historical-orthographies-and-the-batchelor-tradition" />, <Xr ch="reciprocal-u" /></td></tr>
 			<tr><td>Biratori Ainu oral literature (1969)</td><td>20</td><td><Xr ch="citation-vs-combining-stem-shapes" />, <Xr ch="word-class-inventory-and-diagnostics" />, <Xr ch="nominal-number-utar-transnumerality" />, <Xr ch="relational-and-spatial-nouns" />, <Xr ch="postpositions-local-case-and-motion-events" />, <Xr ch="permissive-sociative-causative-yar" />, <Xr ch="applicative-o" />, <Xr ch="tam-overview" />, <Xr ch="tenselessness-and-time-reference" />, <Xr ch="perfective-anterior-a" />, <Xr ch="deontic-necessity" />, <Xr ch="epistemic-irrealis-modality" />, <Xr ch="negation-polarity-items-scope" />, <Xr ch="gendered-register-speech" />, <Xr ch="sakehe-refrain-and-sung-verse-structure" />, <Xr ch="heroic-and-divine-verse" /></td></tr>
 			<tr><td>Bugaeva (2021)</td><td>1</td><td><Xr ch="external-possession-possessor-raising" /></td></tr>
@@ -61,6 +61,7 @@
 			<tr><td>Satō (2009)</td><td>5</td><td><Xr ch="clause-linkage-overview" />, <Xr ch="hine-akusu-switch-reference" />, <Xr ch="conditional-temporal-concessive-clauses" />, <Xr ch="tail-head-linkage-and-narrative-cohesion" /></td></tr>
 			<tr><td>Satō (2009)</td><td>1</td><td><Xr ch="narrative-tam-evidential-patterning-by-genre" /></td></tr>
 			<tr><td>Shibatani (1990)</td><td>27</td><td><Xr ch="typological-profile" />, <Xr ch="word-class-inventory-and-diagnostics" />, <Xr ch="verbal-subclasses-taxonomy" />, <Xr ch="no-adjective-class-property-verbs" />, <Xr ch="suppletive-verbal-number" />, <Xr ch="adverbializer-no" />, <Xr ch="valency-voice-overview" />, <Xr ch="applicative-stacking-relativization-feeding" />, <Xr ch="noun-incorporation-oblique-polysynthesis-debate" />, <Xr ch="adverbial-incorporation" />, <Xr ch="constituent-order-head-final" />, <Xr ch="nonconfigurationality-pronominal-argument" />, <Xr ch="oblique-adjunct-verbless-clauses" />, <Xr ch="copula-ne-predicate-nominals" />, <Xr ch="headless-internally-headed-noun-modifying-clauses" />, <Xr ch="adverbs-degree-comparison" /></td></tr>
+			<tr><td>Shiraishi (2022)</td><td>1</td><td><Xr ch="glottal-stop" /></td></tr>
 			<tr><td>Tajima (1992)</td><td>1</td><td><Xr ch="reciprocal-u" /></td></tr>
 			<tr><td>Takahashi (2015)</td><td>5</td><td><Xr ch="person-marking-architecture" />, <Xr ch="first-person-plural-and-clusivity" />, <Xr ch="personal-affix-template-and-ordering" />, <Xr ch="person-number-interactions" />, <Xr ch="alignment-hierarchical-and-the-debate" /></td></tr>
 			<tr><td>Takahashi (2013)</td><td>2</td><td><Xr ch="evidential-schema-overview" />, <Xr ch="ruwe-ne-inferential" /></td></tr>
@@ -84,7 +85,7 @@
 		<thead><tr><th>Dialect / label</th><th>Examples</th></tr></thead>
 		<tbody>
 			<tr><td>SAR</td><td>435</td></tr>
-			<tr><td>HK</td><td>161</td></tr>
+			<tr><td>HK</td><td>163</td></tr>
 			<tr><td>CHI</td><td>119</td></tr>
 			<tr><td>SHI</td><td>30</td></tr>
 			<tr><td>TOK</td><td>17</td></tr>

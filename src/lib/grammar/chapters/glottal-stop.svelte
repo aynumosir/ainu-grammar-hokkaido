@@ -158,69 +158,85 @@
 		</p>
 	</S>
 
-	<S t="Juncture gradation and prosodic integration" id="juncture">
+	<S t="Juncture variation" id="juncture">
 		<p>
-			The phonetic realization of [ʔ] at morpheme and word boundaries varies with the prosodic
-			integration of the flanking elements. Three degrees of boundary tightness are audible in a
-			single compound across careful and casual speech. In
-			<i lang="ain-Latn">itakorapiru=an</i> 'be telling the story in full', the most separated
-			pronunciation is [itak|orapiru…] with a full juncture stop; an intermediate version shows
-			[itak⁀orapiru…] with partial resyllabification alongside an audible [ʔ]; and the most
-			integrated realization is [ita.ko.rapiru…] with full resyllabification and no glottal.
-			Acoustic measurement confirms that the presence or absence of a voiceless interval between
-			the coda /k/ and the following /o/ distinguishes the [−C.ʔV] and [+C.V] realizations
-			‹corpus-suggested›
-			(<Ref k="aynucorporadiscord" />, nukopoli, 2024-12-21).
+			Resyllabification can be blocked at a morpheme boundary, with a glottal stop appearing
+			before the following vowel. Shiraishi reports this occasionally before a vowel bearing
+			secondary accent and at boundaries such as reduplicant–base
+			<Ref k="shiraishi2022" p="§4.4" />. The realization of a particular boundary can vary.
+			A community analysis distinguishes three tokens of
+			<i lang="ain-Latn">itakorapiru=an</i>: C0170L00947
+			[<i lang="ain-Latn">itak̚ʔorapiru=an</i>] with a clear glottal closure,
+			C0179L00408 with partial joining and an audible glottal, and C0180L00668
+			[<i lang="ain-Latn">i.ta.ko.ra.pi.ru=an</i>] with resyllabification
+			<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-21) ‹corpus-suggested›.
+			The verb means 'finish speaking': Ishii's transcription of Kawakami Matsuko's
+			<i lang="ain-Latn">uwepeker</i> 18 has <i lang="ain-Latn">itakorapiru=an</i>
+			in line 53, translated 'when I have finished speaking'
+			<Ref k="ilcaa1976" p="uwepeker 18, line 53, note 32" />.
+		</p>
+		<p>
+			The community analysis reports a separate voiceless interval of about 40 ms between
+			/k/ and /o/ in C0170L00947, and no such interval in the other two tokens. It nevertheless
+			describes a glottal in the middle token. The interval measurement therefore does not
+			by itself distinguish all three reported realizations. These are measurements and
+			interpretations reported for three tokens; the note does not establish a systematic
+			careful-versus-casual speech contrast
+			<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-21) ‹corpus-suggested›.
 		</p>
 
 		<p>
-			The suffix <i lang="ain-Latn">=an</i> (fourth-person intransitive subject) provides a clear
-			test after a stop-final stem. After <A w="sap" gl="depart, leave" /> the suffix
-			<i lang="ain-Latn">=an</i> does not trigger resyllabification of the coda /p/ onto the
-			following vowel; a juncture [ʔ] appears instead, yielding [sapʔan]
-			‹corpus-suggested›
-			(<Ref k="aynucorporadiscord" />, nukopoli, 2023-12-27).
+			A community note reports [sapʔan] for <i lang="ain-Latn">sap=an</i>, alongside
+			[sa.nan] for <i lang="ain-Latn">san=an</i>, and subsequently mentions a pronunciation
+			<i lang="ain-Latn">sapas</i> <Ref k="aynucorporadiscord" />
+			(nukopoli, 2023-12-27) ‹corpus-suggested›. The last form is written with
+			<i lang="ain-Latn">=as</i>; it cannot simply be treated as another transcription of
+			<i lang="ain-Latn">sap=an</i>. This brief report supports neither an invariant
+			glottal stop after every consonant-final stem nor a general ban on resyllabification.
+			<i lang="ain-Latn">sap</i> is the plural counterpart of
+			<i lang="ain-Latn">san</i> 'go downstream, toward the shore'
+			<Ref k="tamura1996" p="s.v. san, sap" />.
 		</p>
 
 		<Ex
 			m="sap=an"
-			g="depart=4.S"
-			tr="(we/they) depart"
-			constructed
-			note="Illustrates the C + =an juncture. The suffix =an does not trigger resyllabification of the preceding stop; juncture [ʔ] appears before the vowel, yielding [sapʔan] rather than *[sa.pan]. Compare the tighter-bound ku=, e=, ci= prefixes where resyllabification applies."
+			g="go.downstream=4.S"
+			tr="We (inclusive) go downstream."
+			cite="shiraishi2022:§5.1"
+			dial="HK"
+			place="Example (21b), following Tamura"
+			note="Shiraishi cites this form for accent on a one-syllable stem. The glottal realization [sapʔan] is reported separately in the December 27 community note; it is not supplied by this accent example."
 		/>
 
 		<p>
-			The prefixes <i lang="ain-Latn">ku=, e=, ci=</i> are prosodically integrated with their
-			stem, forming a single prosodic word and triggering vowel-deletion and accent-shift processes
-			(see <Xr ch="personal-affix-sandhi-connected-speech-reduction" /> and
-			<Xr ch="pitch-accent-placement-rule" />). The prefix <i lang="ain-Latn">a=</i>, which does
-			not shift lexical accent, is accordingly less tightly bound
-			<Ref k="nakagawa2024" p="53" />.
-			Acoustic observation of <i lang="ain-Latn">a=kor itak</i> 'there is speech' yields
-			[a.ko.rəʔi.tak]: the echo vowel [ə] follows coda /r/ in
-			<i lang="ain-Latn">kor</i>, and [ʔ] appears at the compound boundary before
-			<i lang="ain-Latn">itak</i>, while the a=–kor boundary shows no juncture stop
-			‹corpus-suggested›
-			(<Ref k="aynucorporadiscord" />, nukopoli, 2024-03-18).
+			In notes on Mukawa recordings, <i lang="ain-Latn">a=kor itak</i> is transcribed
+			[akorəʔitak], with an echo vowel after /r/ and a glottal before
+			<i lang="ain-Latn">itak</i>. The same discussion gives
+			<i lang="ain-Latn">unukar=an</i> as [unukaran], then adds [unkarəʔan] in careful
+			speech <Ref k="aynucorporadiscord" /> (nukopoli, 2024-03-18) ‹corpus-suggested›.
+			These observations show why the presence of a glottal in one token cannot determine
+			the phonetic realization of all person-marker boundaries.
 		</p>
 
 		<Ex
 			m="a=kor itak"
 			g="4.A=have speech"
-			tr="(someone) speaks; there is speech"
-			constructed
-			note="Pronounced [a.ko.rə.ʔi.tak]: the echo vowel [ə] follows coda /r/ in kor, and [ʔ] marks the compound boundary before itak. The person-prefix boundary a=–kor shows no juncture stop. The a= prefix does not trigger the accent shift that ku= and e= trigger, consistent with weaker prosodic integration."
+			tr="The speech/language one has (literal)."
+			cite="aynucorporadiscord"
+			dial="HK"
+			place="nukopoli, 2024-03-18, notes on Mukawa recordings"
+			note="Reported transcription [akorəʔitak]. The glottal follows kor and precedes itak. This observation does not rank a= against the other person markers by degree of integration."
 		/>
 
 		<p>
-			These observations together point to a gradient of boundary tightness within the
-			person-marking system: the productive object/agent prefix class
-			(<i lang="ain-Latn">ku=, e=, ci=</i>) is the most integrated; the
-			<i lang="ain-Latn">a=</i> boundary is tighter than a compound word boundary but looser than
-			the productive-prefix class; and the <i lang="ain-Latn">=an</i> suffix boundary is the
-			least integrated of the person-marking elements examined here. Glide insertion at hiatus
-			and the broader juncture phonology are treated in
+			A later community note suggests that <i lang="ain-Latn">a=</i> and
+			<i lang="ain-Latn">=an</i> tend to be pronounced more independently than
+			<i lang="ain-Latn">ku=</i> and <i lang="ain-Latn">e=</i>
+			<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-05) ‹speculative›.
+			The note gives no ordering between <i lang="ain-Latn">a=</i> and
+			<i lang="ain-Latn">=an</i>. Accent behavior and juncture realization are treated in
+			<Xr ch="accent-in-compounds-and-affixation" /> and
+			<Xr ch="personal-affix-sandhi-connected-speech-reduction" />; vowel hiatus is treated in
 			<Xr ch="glide-epenthesis-hiatus-resolution" />.
 		</p>
 	</S>
