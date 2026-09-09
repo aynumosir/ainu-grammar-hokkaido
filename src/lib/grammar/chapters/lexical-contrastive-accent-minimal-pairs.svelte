@@ -243,15 +243,16 @@
 	</p>
 
 	<p>
-		For reduplicated forms, direct evidence from phonetically transcribed accent-dialect texts
-		is sparse. A community observation reports that <i lang="ain-Latn">somósomo</i> — the
-		reduplicated form of <i lang="ain-Latn">somó</i> 'even, also' — functions as a single
-		prosodic word accented on σ2, matching the base, and that the two-word string
-		<i lang="ain-Latn">ka somó ki</i> 'even … too' assigns accent on the base word
-		independently ‹speculative› (<Ref k="aynucorporadiscord" />; nukopoli, 2024-12-09). The
-		pattern is consistent with first-element priority — in full reduplication the first copy
-		retains its accent and the echo copy is de-accented — but primary-source confirmation from
-		the phonetically transcribed descriptive literature is lacking. The prosodic-word domain and
-		its role in accent assignment are treated in <Xr ch="accent-in-compounds-and-affixation" />.
+		A community listening note compares the accent of the negative adverb
+		<i lang="ain-Latn">somó</i> 'not' with the doubled form
+		<i lang="ain-Latn">somósomo</i>. It reports second-syllable accent on
+		<i lang="ain-Latn">somó</i> in <i lang="ain-Latn">ka somó ki</i>, and on
+		<i lang="ain-Latn">somósomo</i> with no later peak, interpreting the doubled form
+		as a single word <Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-20)
+		‹corpus-suggested›. The string <i lang="ain-Latn">ka somó ki</i> belongs to the
+		negative construction V (<i lang="ain-Latn">ka</i>)
+		<i lang="ain-Latn">somo ki</i> <Ref k="nakagawa2024" p="407" />; see
+		<Xr ch="negation-somo-standard-clausal" />. The reported accent pattern is discussed
+		in <Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 </S>
