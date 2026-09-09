@@ -11,8 +11,11 @@
 		remains genuinely self-coreferent, as in the 'pretend to' construction with the
 		causatives <i lang="ain-Latn">-re</i>/<i lang="ain-Latn">-ka</i>, the gloss stays
 		REFL. In Nakagawa's arity
-		calculus and in Satō's direct/indirect account, it still reduces the external argument
-		frame by one and shifts the resulting verb to the intransitive S-index set. On nouns
+		calculus, its valence-reducing use removes one argument. The resulting verb is
+		intransitive when the base is two-place; a three-place base can yield a transitive
+		derivative. Satō lists <i lang="ain-Latn">ko-i-ruska-re</i> as three-place and
+		<i lang="ain-Latn">si-ko-i-ruska-re</i> as transitive
+		<Ref k="sato2023b" p="40" />. On nouns
 		and incorporated nominals, however, <i lang="ain-Latn">si-</i> is REFL.POSS: it marks
 		the noun as belonging to the clause subject, as in <i lang="ain-Latn">si-ram</i>
 		'one's own heart' <Ref k="bugaeva2025" p="§3.1.2" />; <Ref k="nakagawa2024" p="188–189" />;
@@ -21,12 +24,12 @@
 	<p>
 		<A w="si-" /> is more restricted in distribution than <A w="yay-" />: the latter attaches
 		to transitives, intransitives, and nouns alike (with arity 0 on nouns, as in
-		<A w="yay-kotan" gl="one's own village" />), whereas <A w="si-" /> is productive only on
-		transitive bases <Ref k="nakagawa2024" p="188" />. Beyond the basic reflexive reading it
+		<A w="yay-kotan" gl="one's own village" />), while Nakagawa describes <A w="si-" /> as more restricted in its choice
+		of verbal bases <Ref k="nakagawa2024" p="187" />. Beyond the basic reflexive reading it
 		also functions as a <em>reflexive-possessive</em>, marking the subject-coreferent possessor
 		of an incorporated nominal, and it enters a 'pretend to' construction when combined with
 		the causative suffixes <i lang="ain-Latn">-re</i> and <i lang="ain-Latn">-ka</i>
-		<Ref k="nakagawa2024" p="189" />; <Ref k="sato2007" />. The meaning that underlies all
+		<Ref k="nakagawa2024" p="188" />; <Ref k="sato2007" />. The meaning that underlies all
 		three uses is the same: the subject's involvement passes through another participant or
 		external circumstance rather than arising from direct self-initiated action.
 	</p>
@@ -78,23 +81,23 @@
 				<td>mode of involvement</td>
 				<td>direct self-action</td>
 				<td>indirect — via another participant or circumstance</td>
-				<td><Ref k="sato2007" p="31–38" />; adopted by <Ref k="nakagawa2024" p="189" />
+				<td><Ref k="sato2007" p="31–38" />; adopted by <Ref k="nakagawa2024" p="188" />
 				and <Ref k="bugaevakobayashi2022" p="§4.2.2" /></td>
 			</tr>
 		</tbody>
 	</table>
 
 	<p>
-		The direct/indirect analysis (line four) is the framework Nakagawa (2024: 189) and the
-		Handbook adopt as the current working account ‹contested›. Satō (2007: ≈31–38) builds it
-		from three paradigm cases: <A w="si-nuye" gl="have oneself tattooed" /> 'have oneself
-		tattooed' (traditional Ainu tattooing required another person to do the work);
-		<A w="si-kasuy-re" gl="have others help oneself" /> 'have others help oneself' (the help
-		comes from outside); and <A w="si-ranpewtek-ka" gl="pretend not to know" /> 'pretend not
-		to know' (the pretence succeeds only if another observer believes it). In each case the
-		subject's reflexive involvement is mediated by another party's action or perception. Satō
-		himself qualifies the account as not yet established
-		(<span lang="ja">定説ではない</span>) <Ref k="sato2007" />.
+		The Handbook illustrates Satō's direct/indirect account with
+		<A w="si-nuye" gl="have oneself tattooed" />,
+		<A w="si-kasuy-re" gl="have others help oneself" />, and
+		<A w="si-ranpewtek-ka" gl="pretend not to know" />. It relates the first two
+		to another person's action and the third to another person's perception of the
+		pretended state <Ref k="bugaevakobayashi2022" p="§4.2.2" /> ‹contested›.
+		Nakagawa discusses the direct/indirect account <Ref k="nakagawa2024" p="188" />.
+		Satō describes his proposal as provisional and incomplete, with spatial
+		<i lang="ain-Latn">si-</i> still requiring investigation
+		<Ref k="sato2007" p="39" />.
 	</p>
 	<p>
 		None of the earlier analyses is fully discredited. The intentionality framing (Kindaichi,
@@ -131,12 +134,12 @@
 
 	<Ex
 		m="sunku anakne peka ta si-pusu wa mom pe ne"
-		g="Ezo.pine TOP surface LOC ANTIC-float.up CONJ flow NMLZ COP"
-		tr="The Ezo pine floats up to the water surface and flows along by itself."
-		cite="sato2007"
+		g="Ezo.spruce TOP water.surface LOC ANTIC-draw.out CONJ drift NMLZ COP"
+		tr="Ezo spruce floats on water and drifts."
+		cite="sato2007:36"
 		dial="CHI"
-		place="Shirasawa Nabe; Satō ex. 4 (approx. p. 36)"
-		note="si-pusu 'float up spontaneously' has no agentive subject; yay-pusu would require one. The absence of an A-set prefix confirms the intransitive output."
+		place="Shirasawa Nabe; Satō ex. 4"
+		note="Satō classifies si-pusu here as a reflexive derivative of a non-causative two-place verb. The clause has a third-person subject with no overt person marker. This example illustrates spontaneous floating; Satō's objections to a general unintentional meaning for si- also draw on intentional uses such as 'have someone help oneself' and 'pretend not to know'."
 	/>
 
 	<Ex
@@ -192,7 +195,7 @@
 <S t="The 'pretend to' construction" id="pretend">
 	<p>
 		<A w="si-" /> combined with a causative suffix yields a 'pretend to V' reading.
-		Nakagawa (2024: 189) gives three examples with the productive suffix
+		Nakagawa (2024: 188) gives three examples with the productive suffix
 		<i lang="ain-Latn">-re</i>: <A w="si-mokor-e" gl="feign sleep" /> 'feign sleep',
 		<A w="si-kamuyne-re" gl="pretend to be a kamuy" /> 'pretend to be a kamuy', and
 		<A w="si-ponpene-re" gl="act childishly" /> 'act childishly'. With the direct-causative
@@ -206,47 +209,55 @@
 
 	<Ex
 		m="ku=ko-si-ranpewtek-ka wa k=an"
-		g="1SG.A=APPL-REFL-know.nothing-CAUS CONJ IPFV"
+		g="1SG.A=APPL-REFL-know.nothing-CAUS CONJ 1SG.S=exist"
 		tr="I was pretending not to know about it."
-		cite="sato2007"
+		cite="sato2007:36"
 		dial="CHI"
-		place="Satō ex. 6 (approx. p. 36)"
-		note="ko- is the applicative referencing what the subject ostensibly does not know; si- fills the object slot of the causativized stem with a subject-coreferent 'self', hence REFL; -ka is the direct-causative suffix. Together si-ranpewtek-ka yields the pretend-to reading. The final k=an is a contracted progressive existential (kor an)."
+		place="Shirasawa Nabe; Satō ex. 6"
+		note="Satō writes ku-ko-si-ranpewtek-ka wa k-an and glosses the final k- as first-person singular subject, an as 'exist'. The existential follows the person-marked reflexive-causative predicate in a wa construction. Both predicates refer to the same first-person singular subject."
 	/>
 
 	<p>
-		The construction is limited to verbs of state or appearance assignable by an external
-		observer; verbs of direct physical action or creation do not enter it
-		<Ref k="nakagawa2024" p="189" />.
+		The cited examples establish 'pretend to' readings for particular combinations of
+		<i lang="ain-Latn">si-</i> and causative morphology. Nakagawa also records
+		<i lang="ain-Latn">si-ray-re</i> 'pretend to be dead'
+		<Ref k="nakagawa2024" p="188" />. Satō discusses
+		<i lang="ain-Latn">si-ranpewtek-ka</i> as an intentional act and interprets the
+		observer's recognition of the pretended state as indirect participation
+		<Ref k="sato2007" p="37–38" />.
 	</p>
 </S>
 
 <S t="Position in the verb template" id="template">
 	<p>
-		In the slot ordering summarised in <Xr ch="valency-voice-overview" />,
-		<A w="si-" /> precedes the root and any incorporated nominal but follows the applicative
-		prefixes. The ordering constraint with <A w="yay-" /> is decisive:
-		<i lang="ain-Latn">yay-si-</i> is attested — Nakagawa (2024: 189) cites
-		<A w="yay-si-turi-re" gl="lay oneself down while stretching" /> 'lay oneself down while
-		stretching' — while the reverse <i lang="ain-Latn">*si-yay-</i> is not
-		<Ref k="nakagawa2024" p="189" />. This places <A w="si-" /> closer to the root, in a
-		position Nakagawa compares to forming affixes.
+		The relative order of reflexive and applicative prefixes depends on the derivation.
+		Nakagawa places nominal and applicative prefixes in the same region of the template
+		and states that their order depends on meaning <Ref k="nakagawa2024" p="210" />.
+		Satō records both <i lang="ain-Latn">ko-si-ranpewtek-ka</i>, with the applicative
+		outside <i lang="ain-Latn">si-</i>, and <i lang="ain-Latn">si-ko-etaye</i>,
+		with <i lang="ain-Latn">si-</i> outside the applicative
+		<Ref k="sato2007" p="36–37, ex. 6, 8" />. For the two reflexive prefixes together,
+		Nakagawa cites <A w="yay-si-turi-re" gl="lie down stretching oneself" /> and reports
+		no examples of the reverse order. He tentatively compares the inner
+		<i lang="ain-Latn">si-</i> to a stem-forming affix
+		<Ref k="nakagawa2024" p="188" />.
 	</p>
 
 	<Ex
 		m="yay-si-turi-re=an"
 		g="REFL-REFL-stretch-CAUS=4.S"
-		tr="I lay down, stretching myself out."
+		tr="I lie down, stretching myself out."
+		cite="nakagawa2024:188"
 		constructed
-		note="The verb form yay-si-turi-re is attested in Nakagawa (2024: 189) to demonstrate the yay-outer / si-inner ordering; the surrounding clause is constructed. The fourth-person S suffix =an confirms that si-turi-re is intransitive. Both prefixes keep the reflexive gloss: an autocausative reading of the inner si- is conceivable but not asserted by Nakagawa's analysis."
+		note="Nakagawa cites the stem yay-si-turi-re. The fourth-person inflection is constructed. His analysis starts with transitive turi, derives intransitive si-turi, adds causative -re to form a transitive, and applies yay- to yield the final intransitive. The suffix =an attaches to that whole derived stem."
 	/>
 
 	<p>
-		The derivation chain illustrates the ordering across the arity calculus: the ditransitive
-		<i lang="ain-Latn">ko-i-ruska</i> yields the intransitive
-		<i lang="ain-Latn">si-ko-i-ruska</i> when <A w="si-" /> is prefixed — it absorbs the
-		applicative complex's object slot while remaining to its left
-		<Ref k="nakagawa2024" p="210–211" />; <Ref k="bugaevakobayashi2022" p="§4.1.1" />. In
+		Satō's derivation list gives transitive <i lang="ain-Latn">ko-i-ruska</i> →
+		intransitive <i lang="ain-Latn">si-ko-i-ruska</i>, with <i lang="ain-Latn">si-</i>
+		outside the applicative. The corresponding causative
+		<i lang="ain-Latn">si-ko-i-ruska-re</i> is transitive
+		<Ref k="sato2023b" p="40" />. In
 		the polysynthetic example discussed in <Xr ch="valency-voice-overview" /> —
 		<i lang="ain-Latn">a=e-yay-ko-tuyma-si-ram-suy-pa</i> — a second <A w="si-" /> sits
 		immediately before the incorporated noun <A w="ram" gl="heart" /> in the
