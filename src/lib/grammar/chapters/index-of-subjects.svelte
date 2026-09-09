@@ -875,7 +875,7 @@
 		<li>Second-person neutrality: e= and eci= — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>Second-person objects: e= and eci= — <Xr ch="object-indexing-monotransitive" /></li>
 		<li>Second-person singular: e= — <Xr ch="first-second-person-singular-affixes" /></li>
-		<li>Secondary accent on personal-number suffixes — <Xr ch="accent-in-compounds-and-affixation" /></li>
+		<li>Secondary accent on person suffixes — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>sekor and the reporting-verb split — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
 		<li>sekor in the complementizer system — <Xr ch="quotative-complementation-sekor" /></li>
 		<li>sekor is not a sentence-final particle — <Xr ch="sentence-final-particles-illocutionary-force" /></li>
