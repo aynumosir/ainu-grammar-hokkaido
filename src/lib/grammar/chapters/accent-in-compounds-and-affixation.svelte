@@ -146,37 +146,42 @@
 <S t="Derivational prefixes" id="derivational">
 	<S t="The reflexive prefix yay-" id="yay">
 		<p>
-			The reflexive prefix <A w="yay-" gl="self, reflexive" /> always opens the prosodic word
-			as σ1. <i lang="ain-Latn">yay</i> is a closed syllable (CVC), so 原則1 places the
-			accent on σ1 — on <i lang="ain-Latn">yáy</i> — regardless of the shape of the following
-			stem <Ref k="nakagawa2024" p="53" />. The published example is
-			<i lang="ain-Latn">yáykoytak</i> 'talk to oneself' (&lt;
-			<i lang="ain-Latn">yay-ko-itak</i>). The community additionally reports
-			<i lang="ain-Latn">yáyesiru</i> 'concentrate (on oneself)' as a further illustration
-			that <i lang="ain-Latn">yáy</i> holds the accent whether the following syllable is
-			consonant-initial or vowel-initial
-			<Ref k="aynucorporadiscord" /> (nukopoli 2024-11-10, attributed to
-			<Ref k="nakagawa2024" />). Lexicalized <i lang="ain-Latn">yay-</i> derivatives may
-			deviate and require per-form verification. The distribution of
-			<i lang="ain-Latn">yay-</i> and the co-reflexive <i lang="ain-Latn">si-</i> in Chitose
-			is examined in <Ref k="sato2007" />; the morphosyntax of both reflexive prefixes is set
-			out in <Xr ch="applicative-system-overview" />.
+			Nakagawa applies the accent rules to the whole derivative after prefixation. His
+			example <i lang="ain-Latn">yáykoytak</i> 'talk to oneself', from
+			<i lang="ain-Latn">yay-ko-itak</i>, begins with the closed syllable
+			<i lang="ain-Latn">yay</i>, which receives the accent under 原則1
+			<Ref k="nakagawa2024" p="53" />. This account depends on the shape of the whole
+			derivative; it does not assign <i lang="ain-Latn">yay-</i> an invariant position
+			at the beginning of every prefixed form.
+		</p>
+		<p>
+			A community listening note reports accent on <i lang="ain-Latn">yáy-</i> before
+			both consonants and vowels, including the variants
+			<i lang="ain-Latn">yáy.esiru</i> and <i lang="ain-Latn">yáyesiru</i>. The
+			contributor bases the generalization on a few examples heard and excludes
+			individually lexicalized forms <Ref k="aynucorporadiscord" />
+			(nukopoli, 2024-11-10) ‹corpus-suggested›. In Nakagawa's Chitose dictionary,
+			<i lang="ain-Latn">yayesiru</i> means 'rub one's body against (a place or surface)'
+			<Ref k="nakagawa1995" p="s.v. yayesiru, siru" />. The distribution of
+			<i lang="ain-Latn">yay-</i> and <i lang="ain-Latn">si-</i> is treated in
+			<Xr ch="reflexive-yay" /> and <Xr ch="reflexive-possessive-si" />.
 		</p>
 	</S>
 
-	<S t="Applicative prefixes as prosodic-word heads" id="applicatives">
+	<S t="Nominal and applicative e-" id="applicatives">
 		<p>
-			The applicative prefixes <A w="e-" gl="APPL (body-part/location)" />,
-			<A w="ko-" gl="APPL (goal/recipient)" />, and <A w="o-" gl="APPL (path)" /> open the
-			prosodic word as a light (CV) σ1 when they attach to a base
-			<Ref k="nakagawa2024" p="53" />; <Ref k="bugaeva2006" paren />. Because σ1 is open,
-			原則2 shifts the accent to σ2 of the new prosodic word, which is the σ1 of the original
-			base. The result is that prefixation moves the high syllable one position earlier in the
-			string compared with the free base.
+			Nakagawa illustrates derivational accent with <i lang="ain-Latn">puní</i>
+			'lift (something)' → <i lang="ain-Latn">epúni</i> 'lift the head of (something)'
+			<Ref k="nakagawa2024" p="53" />. Here <i lang="ain-Latn">e-</i> forms an
+			initial open syllable (V), so 原則2 places the accent on the following syllable.
+			This <i lang="ain-Latn">e-</i> is a nominal prefix referring to the object's head;
+			it leaves the verb's valence unchanged. Nakagawa distinguishes it from the
+			argument-adding applicative <i lang="ain-Latn">e-</i>
+			<Ref k="nakagawa2024" p="191–193" />.
 		</p>
 
 		<table>
-			<caption>Accent shift under the applicative e- (standard-accent dialects)</caption>
+			<caption>Accent in derivatives with nominal or applicative e- (standard-accent dialects)</caption>
 			<thead>
 				<tr>
 					<th>free / phrasal form</th>
@@ -190,33 +195,32 @@
 			<tbody>
 				<tr>
 					<td><i lang="ain-Latn">puni</i></td>
-					<td><i lang="ain-Latn">púni</i></td>
-					<td><i lang="ain-Latn">e=puni</i></td>
+					<td><i lang="ain-Latn">puní</i></td>
+					<td><i lang="ain-Latn">e-puni</i></td>
 					<td><i lang="ain-Latn">epúni</i></td>
-					<td>'lift up (something)'</td>
+					<td>'lift the head of (something)'</td>
 					<td><Ref k="nakagawa2024" p="53" /></td>
 				</tr>
 				<tr>
 					<td><i lang="ain-Latn">kotan ne</i> (phrase)</td>
 					<td><i lang="ain-Latn">kotán ne</i></td>
-					<td><i lang="ain-Latn">e=kotan-ne</i></td>
+					<td><i lang="ain-Latn">e-kotan-ne</i></td>
 					<td><i lang="ain-Latn">ekótanne</i></td>
-					<td>'belong to a village, be a villager'</td>
+					<td>'live in someone's village'</td>
 					<td><Ref k="aynucorporadiscord" /> (nukopoli 2024-11-10)</td>
 				</tr>
 			</tbody>
 		</table>
 
 		<p>
-			In <i lang="ain-Latn">ekótanne</i>, the prefix <i lang="ain-Latn">e-</i> creates a new
-			light σ1 → 原則2 → accent on σ2 (<i lang="ain-Latn">kó</i>). The free word
-			<i lang="ain-Latn">kotán</i> accents σ2 (<i lang="ain-Latn">tán</i>) by the same rule;
-			in the applicative form the high syllable has moved one position to the left. The
-			<i lang="ain-Latn">ekótanne</i> example is a community extrapolation from the general
-			one-word analysis of applicative-prefixed forms
-			<Ref k="aynucorporadiscord" /> (nukopoli 2024-11-10), consistent with the published
-			<i lang="ain-Latn">epúni</i> <Ref k="nakagawa2024" p="53" /> ‹corpus-suggested›. The
-			morphology and syntax of the applicative prefixes are treated in
+			The <i lang="ain-Latn">ekótanne</i> example is a community proposal based on
+			treating the derivative as one accentual word: initial <i lang="ain-Latn">e</i>
+			is open, and 原則2 places the accent on <i lang="ain-Latn">kó</i>
+			<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-10) ‹corpus-suggested›.
+			Tamura analyses <i lang="ain-Latn">ekotanne</i> as
+			<i lang="ain-Latn">e-kotan-ne</i> 'at (a place)–village–be', with the meaning
+			'live in someone's village' <Ref k="tamura1996" p="s.v. ekotanne" />.
+			The morphology and syntax of the applicative prefixes are treated in
 			<Xr ch="applicative-system-overview" />.
 		</p>
 	</S>

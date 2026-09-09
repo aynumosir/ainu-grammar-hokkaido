@@ -57,13 +57,18 @@
 		<Xr ch="noun-incorporation-object" />.
 	</p>
 	<p>
-		The accent of <i lang="ain-Latn">yay-</i> is stable: the prefix carries primary stress
-		as <i lang="ain-Latn">yáy-</i> regardless of the following segment, unless lexicalization
-		has displaced it <Ref k="nakagawa2024" p="188" />. Forms such as
-		<i lang="ain-Latn">yáyesiru</i> confirm that the accent falls on
-		<i lang="ain-Latn">yáy</i> even before a vowel-initial stem; this accent pattern is
-		corroborated by community corpus observation (nukopoli, aynu-corpora Discord 2024,
-		<Ref k="aynucorporadiscord" />) ‹corpus-confirmed›.
+		Nakagawa illustrates accent in prefixed derivatives with
+		<i lang="ain-Latn">yáykoytak</i> 'talk to oneself', from
+		<i lang="ain-Latn">yay-ko-itak</i>. The initial closed syllable carries the accent
+		under his rule for derivatives <Ref k="nakagawa2024" p="53" />. A community note
+		reports accent on <i lang="ain-Latn">yáy-</i> before both consonants and vowels,
+		including <i lang="ain-Latn">yáyesiru</i>; the contributor limits this observation
+		to a few examples heard and excludes individually lexicalized forms
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-10) ‹corpus-suggested›.
+		Nakagawa's Chitose dictionary gives <i lang="ain-Latn">yayesiru</i> the meaning
+		'rub one's body against (a place or surface)'
+		<Ref k="nakagawa1995" p="s.v. yayesiru, siru" />. Accent under further prefixation
+		depends on the resulting form; see <Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 	<p>
 		<i lang="ain-Latn">si-</i> is more restricted than <i lang="ain-Latn">yay-</i> in base
