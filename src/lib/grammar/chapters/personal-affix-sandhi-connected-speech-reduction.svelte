@@ -345,9 +345,9 @@
 	</p>
 
 	<p>
-		The phonological evidence surveyed in this chapter shows that the personal markers — written
-		uniformly with <code>=</code> — occupy different positions along the clitic-to-affix
-		cline. Three independent diagnostics converge on the same two-way split:
+		Accent placement, vowel deletion, and juncture realization provide evidence about how
+		personal markers combine with their hosts. These patterns differ in scope and do not
+		establish a single ranking of all markers:
 	</p>
 
 	<ul>
@@ -360,25 +360,22 @@
 		</li>
 		<li>
 			<strong>Vowel deletion</strong>: only <i lang="ain-Latn">ku=</i> and
-			<i lang="ain-Latn">ci=</i> lose their vowels before non-/i/ stems in the southern
-			dialects, marking them as the most tightly bonded members of the marker paradigm (§2
-			above; <Ref k="nakagawa2024" p="52" paren />).
+			<i lang="ain-Latn">ci=</i> lose their vowels before stem-initial /a/, /e/, /u/, or /o/
+			in the dialects described in §2 above (<Ref k="nakagawa2024" p="52" paren />).
 		</li>
 		<li>
-			<strong>Juncture opacity</strong>: the <i lang="ain-Latn">=an</i> boundary blocks the
-			resyllabification that is otherwise permitted at morpheme-internal junctures, placing it
-			above the level of a derivational suffix in phonological independence (§5 above;
-			<Ref k="aynucorporadiscord" /> nukopoli, 2023-12-27, ‹speculative›).
+			<strong>Juncture variation</strong>: reported <i lang="ain-Latn">=an</i> realizations
+			include joined forms and glottal boundaries. These observations do not establish
+			obligatory blocking of resyllabification or rank the boundary against derivational
+			suffixes (§5 above; <Ref k="aynucorporadiscord" /> nukopoli, 2023-12-27 and
+			2024-03-18, ‹corpus-suggested›).
 		</li>
 	</ul>
 
 	<p>
-		The three criteria jointly define a gradient: inner clitics &gt; outer clitics &gt;
-		independent words, with <i lang="ain-Latn">ku=</i> and <i lang="ain-Latn">ci=</i> the most
-		tightly integrated members and <i lang="ain-Latn">=an</i> the loosest. A parallel gradation
-		in morphophonological tightness across person-marking sub-classes has been documented for
-		Sakhalin Ainu <Ref k="sakaguchi2024" paren />, providing a comparative point for the
-		Hokkaido two-way split. The morphosyntactic diagnostics for the Hokkaido system are taken up
+		The juncture observations leave the relative phonological independence of
+		<i lang="ain-Latn">=an</i> unresolved. The morphosyntactic diagnostics for the Hokkaido
+		system are taken up
 		in <Xr ch="person-marking-architecture" /> and the template position of each marker in
 		<Xr ch="personal-affix-template-and-ordering" />.
 	</p>
