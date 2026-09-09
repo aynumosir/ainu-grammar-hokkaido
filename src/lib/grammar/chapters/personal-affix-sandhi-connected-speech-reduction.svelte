@@ -259,32 +259,30 @@
 
 <S t="Juncture tightness and the =an boundary" id="juncture-tightness">
 	<p>
-		Within the person-marker class as a whole, the degree of phonological integration with the
-		host stem varies beyond the binary inner/outer accent-class split. Community phonetic
-		observation — uncorroborated by instrumental study in the sources read for this grammar —
-		reports that the marker group binds more tightly to its host than a compound constituent
-		does: <i lang="ain-Latn">a=kor itak</i> 'speech one has' surfaces as [akorəʔitak], with a
-		glottal catch at the word boundary after <i lang="ain-Latn">kor</i>, rather than
-		resyllabifying the coda /r/ across the compound juncture to *[ako.ri.tak]
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-03-18) ‹speculative›. Within the marker
-		paradigm, the inner-class markers (<i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>)
-		are reported to be phonetically tighter than the outer-class markers
-		(<i lang="ain-Latn">a=</i>, <i lang="ain-Latn">=an</i>), the latter tending to be realized
-		more independently in measured speech
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-03-18) ‹speculative›.
+		Community notes on Mukawa recordings compare <i lang="ain-Latn">a=kor itak</i>
+		'speech one has', transcribed [akorəʔitak], with <i lang="ain-Latn">unukar=an</i>,
+		transcribed [unukaran]. A follow-up in the same discussion reports [unkarəʔan] in careful
+		speech <Ref k="aynucorporadiscord" /> (nukopoli, 2024-03-18) ‹corpus-suggested›.
+		The glottal realization at the <i lang="ain-Latn">=an</i> boundary thus varies in
+		these observations. A separate note suggests that <i lang="ain-Latn">a=</i> and
+		<i lang="ain-Latn">=an</i> tend to be pronounced more independently than
+		<i lang="ain-Latn">ku=</i> and <i lang="ain-Latn">e=</i>
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-05) ‹speculative›.
 	</p>
 
 	<p>
-		The suffix <i lang="ain-Latn">=an</i> (fourth-person S) shows a juncture pattern distinct
-		from that of derivational suffixes: after a consonant-final stem, the coda does not
-		resyllabify onto the following /a/ by the regular resyllabification rule of
-		<Xr ch="syllable-template" />. Instead the boundary is marked by a glottal stop or tense
-		onset: <i lang="ain-Latn">sap=an</i> → [sapʔan], not *[sa.pan]
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-27) ‹speculative›. This contrasts with the
-		morpheme-internal resyllabification seen in true derivational junctures such as
-		<i lang="ain-Latn">sik-o</i> → [si.ko] <Ref k="nakagawa2024" p="38–39" />;
-		<Ref k="shiraishi2022" p="§4.4" />. The
-		<i lang="ain-Latn">=an</i> suffix carries a secondary accent in Shiraishi's example
+		The reported [sapʔan] pronunciation of <i lang="ain-Latn">sap=an</i> occurs in a
+		brief note that also contrasts [sa.nan] and later mentions
+		<i lang="ain-Latn">sapas</i> <Ref k="aynucorporadiscord" />
+		(nukopoli, 2023-12-27) ‹corpus-suggested›. These observations do not establish that
+		<i lang="ain-Latn">=an</i> invariably blocks resyllabification after a consonant.
+		Shiraishi describes resyllabification as frequent across morpheme boundaries, with
+		occasional blocking before an accented vowel or at certain morphological boundaries
+		<Ref k="shiraishi2022" p="§4.4" />. For the reported variation, see
+		<Xr ch="glottal-stop" s="juncture" />.
+	</p>
+	<p>
+		The <i lang="ain-Latn">=an</i> suffix carries a secondary accent in Shiraishi's example
 		<i lang="ain-Latn">iˈruska-ˌan</i> 'we (inclusive) are angry'. The secondary accent
 		is lost when the stem consists of a single closed syllable, (C)VC:
 		<i lang="ain-Latn">ˈcis-an</i> 'we (inclusive) cry' and

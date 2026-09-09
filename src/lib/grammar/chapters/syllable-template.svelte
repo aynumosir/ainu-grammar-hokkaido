@@ -187,11 +187,11 @@
 	/>
 
 	<p>
-		The palatalization rule t+i → [ʨi] is categorically obligatory wherever the coda /t/ of
-		one morpheme and the onset /i/ of the next come into contact; it is covered in detail in
-		<Xr ch="coda-r-assimilation-sonorant-sandhi" />. Resyllabification is blocked when the
-		following vowel bears secondary accent or when the boundary separates a reduplicant from
-		its base, where a glottal boundary element appears instead
+		When resyllabification brings /t/ before /i/, /t/ is palatalized to [ʨ]
+		<Ref k="shiraishi2022" p="§4.4" />. The consonant alternations are treated in
+		<Xr ch="coda-r-assimilation-sonorant-sandhi" />. Shiraishi reports occasional blocking of resyllabification before a vowel
+		bearing secondary accent and at boundaries such as reduplicant–base; a glottal stop
+		appears in these cases
 		<Ref k="shiraishi2022" p="§4.4" />. The interaction of resyllabification with the
 		morphophonology of personal affixes is treated in
 		<Xr ch="personal-affix-sandhi-connected-speech-reduction" />.

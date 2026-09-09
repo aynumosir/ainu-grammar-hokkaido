@@ -468,8 +468,8 @@
 	<h3>J</h3>
 	<ul class="subject-index">
 		<li>Joint-participation and collective readings — <Xr ch="reciprocal-u" /></li>
-		<li>Juncture gradation and prosodic integration — <Xr ch="glottal-stop" /></li>
 		<li>Juncture tightness and the =an boundary — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
+		<li>Juncture variation — <Xr ch="glottal-stop" /></li>
 	</ul>
 	<h3>K</h3>
 	<ul class="subject-index">
