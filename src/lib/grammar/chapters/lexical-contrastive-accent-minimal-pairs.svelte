@@ -35,7 +35,9 @@
 		The person-marking prefixes <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, and
 		<i lang="ain-Latn">ci=</i> are incorporated into the prosodic word and can shift accent
 		relative to its base; <i lang="ain-Latn">a=</i> and <i lang="ain-Latn">eci=</i> do not
-		trigger a shift. Compounds suppress the accent of all but the initial element. These
+		trigger a shift. Compounds tend to give priority to the first element's accent, with
+		exceptions; later accents may survive as weaker secondary accents
+		<Ref k="nakagawa2024" p="54" />; <Ref k="shiraishi2022" p="§5.2" />. These
 		morphological and compositional effects on accent placement are treated in
 		<Xr ch="accent-in-compounds-and-affixation" /> and, for the person-affix interaction,
 		in <Xr ch="person-marking-architecture" />.
@@ -238,7 +240,8 @@
 		borrowed into Japanese-language usage ‹speculative›
 		(<Ref k="aynucorporadiscord" />; palestine_2026, 2024-08-12). That is a property of the
 		borrowing in its receiving language. Within Ainu, <i lang="ain-Latn">kamuynomi</i> follows
-		the first-element-priority pattern of all compounds, detailed in
+		the first-element-priority tendency described by Nakagawa, who explicitly
+		notes exceptions <Ref k="nakagawa2024" p="54" />; see
 		<Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 

@@ -153,12 +153,13 @@
 		<Xr ch="affiliative-suffix-morphophonology" />.
 	</p>
 	<p>
-		Prosodically the compound constitutes a single phonological word with a single accent peak.
-		Community observation (nukopoli, aynu-corpora Discord, 2024-12-09) records that
+		Compound accent commonly gives priority to the first element, but later accents may
+		persist as weaker secondary accents <Ref k="shiraishi2022" p="§5.2" />.
+		A tentative community observation (nukopoli, aynu-corpora Discord, 2024-12-09)
+		reports second-syllable accent with no later peak in
 		<i lang="ain-Latn">cisekorkur</i> 'head of household' and
-		<i lang="ain-Latn">kotankorkur</i> 'village chief' each carry their accent on the second
-		syllable of the compound as a single word, with no secondary peak on either internal
-		constituent <Ref k="aynucorporadiscord" /> ‹contested›. The general account of compound
+		<i lang="ain-Latn">kotankorkur</i> 'village chief'
+		<Ref k="aynucorporadiscord" /> ‹corpus-suggested›. The general account of compound
 		prosody is in <Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 </S>
@@ -330,13 +331,13 @@
 			g="house-have-person"
 			tr="head of household, houseowner"
 			constructed
-			note="N-kor-kur compound type; confirmed as a single phonological word by accent data (nukopoli, aynu-corpora Discord, 2024-12-09): accent falls on the second syllable of the whole compound."
+			note="N-kor-kur compound type. A tentative community observation reports second-syllable accent with no later peak (nukopoli, aynu-corpora Discord, 2024-12-09)."
 		/>
 
 		<p>
-			The compound accent data (nukopoli, aynu-corpora Discord 2024,
-			<Ref k="aynucorporadiscord" />) confirms that <i lang="ain-Latn">cise-kor-kur</i> and
-			<i lang="ain-Latn">kotan-kor-kur</i> are single words with second-syllable accent ‹contested›.
+			A tentative community observation reports second-syllable accent with no later peak
+			in <i lang="ain-Latn">cise-kor-kur</i> and <i lang="ain-Latn">kotan-kor-kur</i>
+			(nukopoli, 2024-12-09, <Ref k="aynucorporadiscord" />) ‹corpus-suggested›.
 			The same template extends to <i lang="ain-Latn">mosir-kor-kur</i> 'ruler of the land' and
 			similar formations. This construction must be distinguished from the syntactic alienable
 			possession phrase <i lang="ain-Latn">a=kor cise</i> 'my house', where
@@ -388,15 +389,18 @@
 		and meaning.
 	</p>
 	<p>
-		A minimal orthographic contrast illustrates the semantic stake:
-		<i lang="ain-Latn">sisam itak</i> (two words) means 'speech/language of a Japanese person
-		(in context)', while <i lang="ain-Latn">sisamitak</i> (one compound word) means 'the Japanese
-		language (as a named category)' (nukopoli, aynu-corpora Discord, 2024-11-05)
-		<Ref k="aynucorporadiscord" /> ‹corpus-suggested›. The compound reading adds a categorical,
-		language-name interpretation absent from the phrase. Accent reinforces the distinction: the
-		compound bears a single peak, the phrase retains peaks on both members (nukopoli, aynu-corpora
-		Discord, 2024-12-20) <Ref k="aynucorporadiscord" />. Full treatment of the prosodic test
-		is in <Xr ch="accent-in-compounds-and-affixation" />.
+		The spelling of <i lang="ain-Latn">sisam itak</i> illustrates a disputed application
+		of these criteria. In a community discussion, nukopoli proposed a semantic distinction
+		between <i lang="ain-Latn">sisam itak</i> 'the language of a Wajin person' and
+		<i lang="ain-Latn">sisamitak</i> 'Japanese' (2024-11-05). On 2024-12-20, the same
+		contributor argued for two-word spelling on the basis of the reported pronunciation
+		<i lang="ain-Latn">sísam iták</i>; keycja responded with a corpus-search link to an
+		entry written <i lang="ain-Latn">sisamitak</i>
+		<Ref k="aynucorporadiscord" /> ‹contested›. This exchange leaves the proposed
+		contrast unresolved. More generally, secondary accents can weaken in both compounds
+		and closely combined phrases, so the number of peaks alone does not settle the
+		compound–phrase distinction <Ref k="shiraishi2022" p="§5.2" />. See
+		<Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 	<p>
 		<Ref k="ijas2023" /> presents the compound–phrase distinction as a key point for learners of

@@ -168,7 +168,7 @@
 		<li>Complement-taking predicates — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>Completion, anteriority, and the admirative — <Xr ch="tam-overview" /></li>
 		<li>Completive aspect: wa isam and wa okere — <Xr ch="phasal-iterative-habitual-aspect" /></li>
-		<li>Compound nouns: first-element priority — <Xr ch="accent-in-compounds-and-affixation" /></li>
+		<li>Compound words: first-element priority — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Concept form and affiliative (possessed) form — <Xr ch="lexical-head-formal-noun-nominalization" /></li>
 		<li>Condition, concession, cause, and the mood of the matrix clause — <Xr ch="clause-linkage-overview" /></li>
 		<li>Conditional kor — temporal and habitual — <Xr ch="conditional-temporal-concessive-clauses" /></li>
