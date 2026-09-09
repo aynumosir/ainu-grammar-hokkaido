@@ -397,15 +397,15 @@
 		</li>
 	</ul>
 	<p>
-		The name for the source language itself illustrates one of the finer integration
-		distinctions. The two-word phrase <i lang="ain-Latn">sisam itak</i> 'the speech of the
-		Wajin' (a descriptive NP) and the single compound
-		<i lang="ain-Latn">sisamitak</i> 'Japanese [language]' (a language name) are argued to
-		differ semantically and phonologically: the former has two independent accentual words,
-		while the latter functions as a single compound with one accent domain. Writing them
-		together obscures the accentuation and conflates the two meanings ‹speculative›
-		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2024-11-05 [299];
-		2024-12-20 [549]).
+		The spelling of the language name <i lang="ain-Latn">sisam itak</i> has been debated
+		in community discussion. Nukopoli initially proposed a semantic distinction between
+		<i lang="ain-Latn">sisam itak</i> 'the language of a Wajin person' and
+		<i lang="ain-Latn">sisamitak</i> 'Japanese' (2024-11-05), then argued for two-word
+		spelling from the reported pronunciation <i lang="ain-Latn">sísam iták</i>
+		(2024-12-20). Keycja supplied a corpus-search link to an entry written
+		<i lang="ain-Latn">sisamitak</i> in the latter discussion
+		<Ref k="aynucorporadiscord" /> ‹contested›. The proposed semantic and accentual
+		contrast remains unresolved; see <Xr ch="noun-noun-compounding" />.
 	</p>
 	<p>
 		Ochiai's study of <A w="sikerpe" gl="Amur cork tree fruit (Phellodendron amurense)" />
