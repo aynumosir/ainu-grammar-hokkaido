@@ -152,6 +152,7 @@
 		<li>Cognition: experience and understanding — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li>Colour terms — <Xr ch="lexical-semantic-fields-synopsis" /></li>
 		<li>Combinatorial limits and related morphology — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
+		<li>Combined subject and object forms — <Xr ch="personal-affix-template-and-ordering" /></li>
 		<li>Comitative and benefactive uses — <Xr ch="applicative-ko" /></li>
 		<li>Common nouns: concept form and affiliative form — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>Common vs proper nouns — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
