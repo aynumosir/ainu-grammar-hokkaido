@@ -69,7 +69,6 @@
 		<li>Answer and response strategies — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li>Anticausative semantics and the si- overlap — <Xr ch="middle-anticausative-passive" /></li>
 		<li>Applicative case-marking — <Xr ch="poetic-archaic-elevated-register" />, <Xr ch="heroic-and-divine-verse" />, <Xr ch="inonno-itak-ritual-prayer" /></li>
-		<li>Applicative prefixes as prosodic-word heads — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Applicative stacking — <Xr ch="applicative-stacking-relativization-feeding" /></li>
 		<li>Applied-object roles and the place restriction — <Xr ch="applicative-o" /></li>
 		<li>Apposition and attributive juxtaposition — <Xr ch="noun-phrase-structure" /></li>
@@ -153,6 +152,7 @@
 		<li>Cognition: experience and understanding — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li>Colour terms — <Xr ch="lexical-semantic-fields-synopsis" /></li>
 		<li>Combinatorial limits and related morphology — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
+		<li>Combined subject and object forms — <Xr ch="personal-affix-template-and-ordering" /></li>
 		<li>Comitative and benefactive uses — <Xr ch="applicative-ko" /></li>
 		<li>Common nouns: concept form and affiliative form — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>Common vs proper nouns — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
@@ -378,7 +378,7 @@
 		<li>Glide transcription and vowel hiatus — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Glides /y/ and /w/ as consonants — <Xr ch="consonant-inventory" /></li>
 		<li>Gloss abbreviation inventory — <Xr ch="abbreviations-glossing-symbols" /></li>
-		<li>Glottal insertion when glide cannot appear — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
+		<li>Glottal realization at hiatus — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>Glottal stop, vowel-initial words, and onset representation — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Goal and addressee: relations directed toward a person — <Xr ch="applicative-ko" /></li>
 		<li>Graded positions — <Xr ch="hine-akusu-switch-reference" /></li>
@@ -621,6 +621,7 @@
 		<li>newaanpe — the resumptive anaphoric connective — <Xr ch="conjunctions-discourse-connectives" /></li>
 		<li>nisa: the recent-perfect companion — <Xr ch="perfective-anterior-a" /></li>
 		<li>Nivkh and the northern contact zone — <Xr ch="genetic-position-macro-comparison" /></li>
+		<li>Nominal and applicative e- — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Nominal-frame conditionals: B ne yakun — <Xr ch="oblique-adjunct-verbless-clauses" /></li>
 		<li>Nominalizer allomorphy — <Xr ch="glides-w-y" /></li>
 		<li>Nominalizers: subclass or grammatical role? — <Xr ch="word-class-inventory-and-diagnostics" /></li>

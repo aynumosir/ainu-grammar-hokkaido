@@ -26,12 +26,15 @@
 	<p>
 		Positionally, <i lang="ain-Latn">e-</i> occupies the slot between the outer person prefix
 		and the root: <em>person — applicative — root — forming-suffix — causative-suffix —
-		suffixal-person</em> <Ref k="nakagawa2024" p="210–212" />. The prefix and root together
-		form a single accentual unit; Nakagawa analyses the applicative-plus-verb sequence as one
-		word for prosodic purposes, a pattern the community archive documents with forms such as
-		<i lang="ain-Latn">kotán</i> → <i lang="ain-Latn">ekótanne</i> (nukopoli, aynu-corpora
-		Discord 2024) <Ref k="aynucorporadiscord" />; <Ref k="nakagawa2024" p="192–194" />
-		‹consensus›. Bugaeva reports <i lang="ain-Latn">ko-</i> as the most
+		suffixal-person</em> <Ref k="nakagawa2024" p="210–212" />. Nakagawa applies
+		the accent rules to the whole prefixed derivative <Ref k="nakagawa2024" p="53" />.
+		A community discussion proposes the pattern <i lang="ain-Latn">kotán ne</i> →
+		<i lang="ain-Latn">ekótanne</i> from this account <Ref k="aynucorporadiscord" />
+		(nukopoli, 2024-11-10) ‹corpus-suggested›. The general discussion in
+		<Xr ch="accent-in-compounds-and-affixation" /> also distinguishes nominal
+		<i lang="ain-Latn">e-</i> 'head' in <i lang="ain-Latn">epúni</i> from applicative
+		<i lang="ain-Latn">e-</i>; nominal <i lang="ain-Latn">e-</i> leaves valence
+		unchanged <Ref k="nakagawa2024" p="191–193" />. Bugaeva reports <i lang="ain-Latn">ko-</i> as the most
 		frequent applicative, followed by <i lang="ain-Latn">e-</i> and then <i lang="ain-Latn">o-</i>;
 		by Bugaeva's estimate, applicative-derived verbs account for roughly one-third of all
 		Ainu verbs and up to seven percent of the total lexicon <Ref k="bugaeva2006" p="188" />.
