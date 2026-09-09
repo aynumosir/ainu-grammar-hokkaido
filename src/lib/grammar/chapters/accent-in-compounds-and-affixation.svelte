@@ -7,33 +7,32 @@
 	<p>
 		In all standard-accent dialects of Hokkaido Ainu, high pitch is assigned to σ1 when σ1 is
 		closed (has a coda), and to σ2 otherwise — with a memorized set of lexical exceptions (see
-		<Xr ch="pitch-accent-placement-rule" />). These rules evaluate the <em>prosodic word</em>
-		as their domain: a prefix or compounding element that fuses with a base creates a new
-		prosodic word, and the placement rules are reapplied from the new left edge
-		<Ref k="nakagawa2024" p="52–54" />; <Ref k="shiraishi2022" p="§5.1–5.2" />;
-		<Ref k="sato2008" p="§2.6" />. Prefixation may therefore shift accent inward, and
-		compounding suppresses all accent peaks after the first. Affixes divide accordingly: those
-		that enter the prosodic word of their base shift its accent; those that remain outside it
-		leave the base accent intact. The accent data thereby provide one of the clearest
-		phonological diagnostics for the prefix/clitic boundary in the person-affix paradigm. The
+		<Xr ch="pitch-accent-placement-rule" />). Accent placement depends on the
+		<em>prosodic word</em> and on the type of morphological combination. Nakagawa applies
+		the placement rules to the whole derivative when derivational prefixes are added;
+		for compounds, he describes retention of the first element's accent as a tendency
+		with exceptions <Ref k="nakagawa2024" p="53–54" />. Shiraishi reports that later
+		accents in closely combined forms may become secondary and often disappear
+		<Ref k="shiraishi2022" p="§5.2" />. Person markers differ in whether they shift the
+		stem accent. Bugaeva uses this difference together with their syntactic behavior to
+		distinguish prefixes from clitics <Ref k="bugaeva2012" p="472–473" />. The
 		Yakumo irregular system, where 原則2 shifts one position further right, produces different
 		surface outputs for the same derivations but applies the same prosodic-word logic; its
 		characterization is given in <Xr ch="pitch-accent-placement-rule" />.
 	</p>
 </S>
 
-<S t="Compound nouns: first-element priority" id="compounds">
+<S t="Compound words: first-element priority" id="compounds">
 	<p>
-		When two or more free forms combine as a compound noun, the result carries a single accent
-		peak. <Ref k="nakagawa2024" p="54" /> states the general outcome as a first-element
-		priority rule: only the front element's lexical accent survives; all syllables belonging
-		to rear elements are low. For a polysyllabic front element, the accent it bears in
-		isolation — as assigned by the placement rules to that element's own σ1 — is retained
-		unchanged.
+		Nakagawa describes compound accent as incompletely understood and states two broad
+		tendencies: the first element's accent remains, and a monosyllabic first element
+		bears the accent. He explicitly notes that these patterns do not apply to every
+		compound <Ref k="nakagawa2024" p="54" />. The following forms illustrate
+		first-element priority.
 	</p>
 
 	<table>
-		<caption>Compound accent: first-element priority (standard-accent dialects)</caption>
+		<caption>Examples of first-element priority in compound accent</caption>
 		<thead>
 			<tr>
 				<th>front element</th>
@@ -91,7 +90,7 @@
 	<p>
 		The accent positions follow from the placement rules applied to the front element in
 		isolation. <i lang="ain-Latn">kamúy</i> has open σ1 (<i lang="ain-Latn">ka</i>) → 原則2
-		→ accent on σ2 <i lang="ain-Latn">mú</i>; that accent is the sole high syllable of
+		→ accent on σ2 <i lang="ain-Latn">muy</i>; that accent is the sole high syllable of
 		<i lang="ain-Latn">kamúynomi</i>. <i lang="ain-Latn">hórka</i> has closed σ1
 		(<i lang="ain-Latn">hor</i>) → 原則1 → accent on <i lang="ain-Latn">hór</i>; that accent
 		survives in <i lang="ain-Latn">hórkareyep</i>. The monosyllabic
@@ -100,8 +99,8 @@
 	</p>
 
 	<p>
-		For <i lang="ain-Latn">cisékorkur</i> and <i lang="ain-Latn">kotánkorkur</i>, the community
-		reports that both are single words with the front-element accent as their sole peak
+		For <i lang="ain-Latn">cisékorkur</i> and <i lang="ain-Latn">kotánkorkur</i>, a tentative community
+		observation reports second-syllable accent with no later peak in either form
 		<Ref k="aynucorporadiscord" /> (nukopoli 2024-12-09) ‹corpus-suggested›. The assignments
 		follow from the principle: <i lang="ain-Latn">cise</i> 'house' has open σ1
 		(<i lang="ain-Latn">ci</i>) → 原則2 → accent on <i lang="ain-Latn">sé</i>, which becomes
@@ -112,34 +111,34 @@
 	</p>
 
 	<p>
-		The first-element priority is a strong default. <Ref k="shiraishi2022" p="§5.2" /> notes a
-		set of lexicalized compound nouns that carry the iambic pattern even when the front
-		element's isolated accent would predict otherwise: <i lang="ain-Latn">hasínaw</i>,
-		<i lang="ain-Latn">cepétu</i> 'fish snout', <i lang="ain-Latn">nayétok</i> 'stream
-		source' all show accent on σ2 of the compound, as if the form were an underived disyllabic
-		root. These represent lexicalized items requiring per-form verification ‹contested›. The
-		prosodic-unit question (mora vs syllable) bearing on the weight analysis is addressed in
-		<Xr ch="mora-syllable-accent-vs-tone-analysis" />; attested minimal-pair contrasts in
-		compound accent are listed in <Xr ch="lexical-contrastive-accent-minimal-pairs" />.
+		Shiraishi describes second-syllable accent in some compounds whose first element is
+		CVC and whose second element begins with a vowel. His examples include
+		<i lang="ain-Latn">hasínaw</i> 'a type of ritual wand',
+		<i lang="ain-Latn">cepétu</i> 'fish snout', and
+		<i lang="ain-Latn">nayétok</i> 'source of a stream'. He reports Kindaichi and
+		Chiri's interpretation that such forms have become lexicalized and are felt to be
+		non-complex <Ref k="shiraishi2022" p="§5.2" />. The analysis of syllable weight
+		is treated in <Xr ch="mora-syllable-accent-vs-tone-analysis" />, and accent contrasts
+		in <Xr ch="lexical-contrastive-accent-minimal-pairs" />.
 	</p>
 </S>
 
-<S t="somo and somósomo as a prosodic diagnostic" id="somo">
+<S t="Reported accent in somo and somósomo" id="somo">
 	<p>
-		The negative adverb <A w="somo" gl="not" /> illustrates the prosodic-word boundary
-		transparently. As an independent word, <i lang="ain-Latn">somo</i> has open σ1
-		(<i lang="ain-Latn">so</i>) and thus accent on σ2 by 原則2:
-		<i lang="ain-Latn">somó</i>. This is its accent in phrases such as
-		<i lang="ain-Latn">ka somó ki</i> 'does not do even', where
-		<i lang="ain-Latn">somo</i> is a separate prosodic word. When doubled to form the
-		intensified negation <i lang="ain-Latn">somosomo</i> 'not at all, definitely not', the
-		pair becomes a single prosodic word: only the front element's accent survives, giving
-		<i lang="ain-Latn">somósomo</i> with a single high syllable on <i lang="ain-Latn">mó</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli 2024-12-09) ‹corpus-suggested›. The contrast
-		<i lang="ain-Latn">ka somó ki</i> (two prosodic words) versus
-		<i lang="ain-Latn">somósomo</i> (one prosodic word) instantiates the same mechanism as
-		the compound table above. The negation system and <A w="somo" /> are treated in
+		The negative adverb <A w="somo" gl="not" /> occurs before a predicate or in the frame
+		V (<i lang="ain-Latn">ka</i>) <i lang="ain-Latn">somo ki</i>. Nakagawa describes
+		both constructions and notes that <i lang="ain-Latn">ka</i> is optional in the latter
+		<Ref k="nakagawa2024" p="407" />. The construction is treated in
 		<Xr ch="negation-somo-standard-clausal" />.
+	</p>
+	<p>
+		A community listening note reports second-syllable accent on
+		<i lang="ain-Latn">somó</i> in the string <i lang="ain-Latn">ka somó ki</i>.
+		The same note gives the doubled form as <i lang="ain-Latn">somósomo</i>, with
+		second-syllable accent and no later peak, and interprets it as a single word
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-20) ‹corpus-suggested›.
+		The reported accent pattern is limited to these forms; the note does not establish
+		a prosodic-word count for the whole string <i lang="ain-Latn">ka somó ki</i>.
 	</p>
 </S>
 
@@ -236,32 +235,37 @@
 		</p>
 
 		<p>
-			The verb <i lang="ain-Latn">koré</i> 'give' is a well-attested departure. A regular
-			causative derivation from <i lang="ain-Latn">kor</i> 'have' +
-			<i lang="ain-Latn">-e</i> would yield <i lang="ain-Latn">*kóre</i> (σ1
-			<i lang="ain-Latn">kor</i> = CVC → 原則1 → σ1 accented); the attested form is
-			<i lang="ain-Latn">koré</i>, with accent on σ2
-			<Ref k="nakagawa2024" p="53" />; <Ref k="shiraishi2022" p="§5.2" />. Nakagawa's account
-			is that the morpheme boundary between <i lang="ain-Latn">kor</i> and
-			<i lang="ain-Latn">-e</i> has eroded sufficiently for the form to be treated as a
-			monomorphemic disyllabic root, whereupon σ1 <i lang="ain-Latn">ko</i> is open → 原則2
-			→ accent on <i lang="ain-Latn">ré</i>. The community proposes alternatively that
-			<i lang="ain-Latn">koré</i> is a phonological contraction of
-			<i lang="ain-Latn">korpare</i> 'give to someone', which independently yields σ2 accent
-			<Ref k="aynucorporadiscord" /> (nukopoli 2024-12-26) ‹contested›. Both accounts predict
-			the same surface accentuation; the accent <i lang="ain-Latn">koré</i> is attested in the
-			Saru corpus:
+			Nakagawa derives <i lang="ain-Latn">koré</i> 'give' from
+			<i lang="ain-Latn">kor</i> 'have' and causative <i lang="ain-Latn">-e</i>.
+			Retention of the base accent would give initial accent, but the bare form has
+			second-syllable accent. He attributes this to weakened awareness of the derivation,
+			allowing the ordinary rule for an open initial syllable to apply
+			<Ref k="nakagawa2024" p="53" />. The surface syllables are
+			<i lang="ain-Latn">ko.re</i>, both open; stem-accent retention and the resulting
+			form's syllable structure are separate parts of the explanation. Shiraishi reports
+			the same lexicalization account <Ref k="shiraishi2022" p="§5.2" />.
+		</p>
+		<p>
+			A community message proposes <i lang="ain-Latn">koré</i> &lt;
+			<i lang="ain-Latn">korpare</i> without developing a phonological or accentual
+			account <Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-26) ‹speculative›.
+			Tamura lists <i lang="ain-Latn">korpare</i> as the plural counterpart of
+			<i lang="ain-Latn">kore</i> and analyses it as <i lang="ain-Latn">kor-pa-re</i>
+			'have–plural–cause' <Ref k="tamura1996" p="s.v. korpare" />.
+			These analyses are discussed in <Xr ch="citation-vs-combining-stem-shapes" />.
+			The accent marks in the following example are present in Hamada's published
+			transcription of Kawakami Matsuko's speech:
 		</p>
 
 		<Ex
 			m="topenpe atay poka ka somo a=kore"
-			ain="tópenpe atay póka ka somo a=koré"
+			ain="tópenpe atay póka ka somo a=koré."
 			g="sweet price even also NEG 4.A=give"
 			tr="She couldn't even be given the price of one sweet."
 			cite="ilcaa1976"
 			dial="SAR"
-			place="川上まつ子, isoytak 独話2, AA研アイヌ語資料 [aa-irc/004#105]"
-			note="The σ2 accent of koré reflects the iambic pattern of a lexicalized open-initial disyllable (σ1 ko = CV, open → 原則2). The co-existent ditransitive korpare 'give to someone' is attested alongside it in the Saru corpus."
+			place="Kawakami Matsuko, isoytak 2; Hamada Takashi transcription, publisher line 106 [aa-irc/004#105]"
+			note="The daughter helped with the stage performance but received no payment. The accent marks reproduce Hamada's transcription; they establish the transcribed form, not its historical derivation."
 		/>
 	</S>
 </S>
@@ -270,10 +274,11 @@
 	<S t="The shifting class: ku=, e=, ci=, en=" id="shifting">
 		<p>
 			The person-marking prefixes <i lang="ain-Latn">ku=</i> (1SG agent/subject),
-			<i lang="ain-Latn">e=</i> (2SG), and <i lang="ain-Latn">ci=</i> (inclusive 1PL) form
+			<i lang="ain-Latn">e=</i> (2SG), and <i lang="ain-Latn">ci=</i> form
 			a single prosodic word with their base
-			<Ref k="nakagawa2024" p="52" />; <Ref k="shiraishi2022" p="§5.1" />;
-			<Ref k="sato2008" p="§2.6" />. Each prefix contributes a light (CV) σ1; 原則2 applies
+			<Ref k="nakagawa2024" p="52" />; <Ref k="shiraishi2022" p="§5.1" />. Before contraction or glide formation,
+			each prefix contributes an open σ1 (CV for <i lang="ain-Latn">ku=</i> and
+			<i lang="ain-Latn">ci=</i>, V for <i lang="ain-Latn">e=</i>); 原則2 applies
 			and the accent falls on σ2 of the new word — one position earlier than the base accent
 			when the base's own σ1 was open:
 		</p>
@@ -312,14 +317,14 @@
 					<td><i lang="ain-Latn">yupíhi</i></td>
 					<td><i lang="ain-Latn">ku=yupihi</i></td>
 					<td><i lang="ain-Latn">ku=yúpihi</i></td>
-					<td>'my elder brother'</td>
+					<td>'my brother'</td>
 					<td><Ref k="shiraishi2022" p="§5.1" /></td>
 				</tr>
 			</tbody>
 		</table>
 
 		<p>
-			In each case the base has open σ1 and accents σ2; after the CV prefix is added, σ1 of
+			In each case the base has open σ1 and accents σ2; after the open-syllable prefix is added, σ1 of
 			the new prosodic word is the prefix itself (open) and σ2 — which is the original σ1 of
 			the base — receives the high pitch.
 		</p>
@@ -331,31 +336,33 @@
 			<Xr ch="personal-affix-sandhi-connected-speech-reduction" /> and
 			<Xr ch="glides-w-y" />. The accent shift precedes deletion, so the shifted accent
 			survives in the contracted surface form: <i lang="ain-Latn">ku=</i> +
-			<i lang="ain-Latn">omáre</i> → accent shift → <i lang="ain-Latn">ku=ómáre</i> → vowel
+			<i lang="ain-Latn">omáre</i> → accent shift → <i lang="ain-Latn">ku=ómare</i> → vowel
 			deletion → <i lang="ain-Latn">k=ómare</i>; <i lang="ain-Latn">ci=</i> +
 			<i lang="ain-Latn">etú</i> → <i lang="ain-Latn">c=étu</i>
-			<Ref k="nakagawa2024" p="52" />.
+			<Ref k="nakagawa2024" p="52" />. Nakagawa also includes Mukawa among the dialects
+			with this contraction; most other dialects retain the uncontracted form.
 		</p>
 
 		<p>
-			Before a base-initial <i lang="ain-Latn">i</i>, vowel deletion is blocked and glide
-			formation (<i lang="ain-Latn">i</i> → <i lang="ain-Latn">y</i>) substitutes; the accent
-			shift still applies: <i lang="ain-Latn">ku=ipe</i> → <i lang="ain-Latn">ku=ýpe</i> /
-			<i lang="ain-Latn">kúype</i>. When the base-initial <i lang="ain-Latn">i</i> is in a
-			closed syllable, glide formation is itself blocked by the phonotactic constraint against
-			CCC clusters: <i lang="ain-Latn">ku=</i> + <i lang="ain-Latn">inkar</i> →
-			<i lang="ain-Latn">ku=ínkar</i> with no glide and accent on σ2
+			In Saru and Chitose, base-initial <i lang="ain-Latn">i</i> can become
+			<i lang="ain-Latn">y</i> after <i lang="ain-Latn">ku=</i> or
+			<i lang="ain-Latn">e=</i>. The glide closes the first syllable, which bears the accent:
+			<i lang="ain-Latn">ku=ipe</i> is pronounced /<i lang="ain-Latn">kúype</i>/ and
+			<i lang="ain-Latn">e=itak</i> /<i lang="ain-Latn">éytak</i>/.
+			When the base's initial syllable is closed, this change would create three consecutive
+			consonants and is blocked: <i lang="ain-Latn">ku=inkar</i> is pronounced
+			/<i lang="ain-Latn">kuínkar</i>/, with accent on σ2
 			<Ref k="nakagawa2024" p="52–53" />.
 		</p>
 
 		<p>
-			The 1SG object prefix <i lang="ain-Latn">en=</i> behaves analogously: it opens the
-			prosodic word as a closed σ1 (<i lang="ain-Latn">en</i>, CVC), so 原則1 places the
-			accent on σ1. In Nakagawa's textbook the phrase
-			<i lang="ain-Latn">wa én=kore</i> shows the accent on <i lang="ain-Latn">én</i>,
-			consistent with this rule
-			<Ref k="aynucorporadiscord" /> (nukopoli 2024-11-10, attributed to
-			<Ref k="nakagawa2024" />) ‹corpus-suggested›.
+			The 1SG object prefix <i lang="ain-Latn">en=</i> contributes a closed σ1
+			(VC), so 原則1 places the accent on the prefix. Bugaeva includes
+			<i lang="ain-Latn">en=</i> among the prefixes whose accent follows the general
+			placement rule <Ref k="bugaeva2012" p="473" />. A community note also reports
+			<i lang="ain-Latn">wa én=kore</i> from an unspecified textbook by Nakagawa
+			<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-05); that report does not identify
+			the edition or page.
 		</p>
 	</S>
 
@@ -363,8 +370,7 @@
 		<p>
 			The indefinite-person prefix <i lang="ain-Latn">a=</i> and the 2PL prefix
 			<i lang="ain-Latn">eci=</i> leave the accent of the base unchanged
-			<Ref k="nakagawa2024" p="53" />; <Ref k="shiraishi2022" p="§5.1" />;
-			<Ref k="sato2008" p="§2.6" />. They attach outside the prosodic word of the stem:
+			<Ref k="nakagawa2024" p="53" />; <Ref k="shiraishi2022" p="§5.1" />:
 		</p>
 
 		<table>
@@ -376,6 +382,7 @@
 					<th>a= / eci= form</th>
 					<th>accent</th>
 					<th>gloss</th>
+					<th>source</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -384,7 +391,8 @@
 					<td><i lang="ain-Latn">omáre</i></td>
 					<td><i lang="ain-Latn">a=omare</i></td>
 					<td><i lang="ain-Latn">a=omáre</i></td>
-					<td>'was put (somewhere)' (4th/indef.)</td>
+					<td>'someone puts X into Y'</td>
+					<td><Ref k="nakagawa2024" p="53" /></td>
 				</tr>
 				<tr>
 					<td><i lang="ain-Latn">etu</i></td>
@@ -392,45 +400,45 @@
 					<td><i lang="ain-Latn">eci=etu</i></td>
 					<td><i lang="ain-Latn">eci=etú</i></td>
 					<td>'your (pl.) nose'</td>
+					<td><Ref k="nakagawa2024" p="53" /></td>
 				</tr>
 				<tr>
 					<td><i lang="ain-Latn">onaha</i></td>
 					<td><i lang="ain-Latn">onáha</i></td>
 					<td><i lang="ain-Latn">a=onaha</i></td>
 					<td><i lang="ain-Latn">a=onáha</i></td>
-					<td>'his/her mother' (4th/indef.)</td>
+					<td>'my father (in folktales)'</td>
+					<td><Ref k="shiraishi2022" p="§5.1" /></td>
 				</tr>
 			</tbody>
 		</table>
 
 		<p>
-			<i lang="ain-Latn">a=</i> and <i lang="ain-Latn">eci=</i> also do not trigger the vowel
-			contraction that the shifting prefixes undergo in Saru and Chitose after the accent
-			shift. The combined phonological evidence — no shift, no contraction — aligns with the
-			morphosyntactic assessment in <Xr ch="person-marking-architecture" /> that
-			<i lang="ain-Latn">a=</i> and <i lang="ain-Latn">eci=</i> are prosodic clitics, while
-			<i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, <i lang="ain-Latn">ci=</i>, and
-			<i lang="ain-Latn">en=</i> are prefixes proper. The position-class arrangement of person
-			affixes in the verb word is set out in <Xr ch="verb-word-template" />.
+			Bugaeva classifies <i lang="ain-Latn">a=</i> and <i lang="ain-Latn">eci=</i> as
+			clitics because they are inseparable from the stem, lack an independent accent, and
+			preserve the stem's accent. Her analysis classifies the accent-shifting markers as
+			prefixes <Ref k="bugaeva2012" p="472–473" />. The classification draws on both
+			phonological and syntactic evidence. The notation <i lang="ain-Latn">=</i> itself
+			has no phonological significance in Nakagawa's account
+			<Ref k="nakagawa2024" p="52" />. For the person paradigm and its morphological
+			analyses, see <Xr ch="person-marking-architecture" /> and
+			<Xr ch="verb-word-template" />.
 		</p>
 	</S>
 
-	<S t="Secondary accent on personal-number suffixes" id="secondary">
+	<S t="Secondary accent on person suffixes" id="secondary">
 		<p>
-			When a personal-number suffix (<i lang="ain-Latn">=an</i>,
-			<i lang="ain-Latn">=as</i>) attaches to a vowel-final verb stem, the suffix carries a
-			secondary (lower-level) accent alongside the primary stem accent
-			<Ref k="shiraishi2022" p="§5.1" />. The verb <i lang="ain-Latn">iruska</i> 'be angry'
-			with the plural suffix gives <i lang="ain-Latn">irúska=àn</i> (primary accent á on
-			<i lang="ain-Latn">rú</i>, secondary accent à on <i lang="ain-Latn">àn</i>);
-			<i lang="ain-Latn">ipe</i> 'eat' with <i lang="ain-Latn">=an</i> gives
-			<i lang="ain-Latn">ipé=àn</i>. When the stem ends in a consonant, the secondary accent
-			on the suffix is lost: <i lang="ain-Latn">cis=an</i> 'we cry' and
-			<i lang="ain-Latn">sap=an</i> 'we go out' carry only the primary accent on σ1 (both
-			stems have closed σ1 → 原則1) with no secondary peak on
-			<i lang="ain-Latn">=an</i> <Ref k="shiraishi2022" p="§5.1" />. The number-suffix
-			paradigm is described in <Xr ch="verb-word-template" /> and
-			<Xr ch="person-marking-architecture" />.
+			Shiraishi describes an accent on the person suffixes <i lang="ain-Latn">=an</i>
+			and <i lang="ain-Latn">=as</i> alongside the stem accent, following Tamura;
+			Kindaichi calls it a secondary accent <Ref k="shiraishi2022" p="§5.1" />.
+			His examples include <i lang="ain-Latn">irúska=àn</i> 'we (inclusive) are angry'
+			and <i lang="ain-Latn">ipé=às</i> 'we (exclusive) eat'. Acute and grave marks here
+			represent primary and secondary accent respectively. The suffix loses its secondary
+			accent when the stem consists of a single closed syllable, (C)VC:
+			<i lang="ain-Latn">cís=an</i> 'we (inclusive) cry' and
+			<i lang="ain-Latn">sáp=an</i> 'we (inclusive) go downstream'
+			<Ref k="shiraishi2022" p="§5.1" />. The person paradigm and the other functions of
+			these markers are described in <Xr ch="person-marking-architecture" />.
 		</p>
 	</S>
 </S>
@@ -451,18 +459,15 @@
 
 <S t="Prosodic-word status as a morphological diagnostic" id="diagnostics">
 	<p>
-		The accent patterns reviewed in this chapter offer a phonological diagnostic for
-		grammatical category that is independent of morphological segmentation. A morpheme that
-		enters the prosodic word of its host and shifts the accent is a prefix in the prosodic
-		sense; a morpheme that leaves the host accent untouched is a clitic or a non-incorporating
-		suffix. Applied to the Hokkaido Ainu person-affix paradigm, the test produces: prefixes —
-		<i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, <i lang="ain-Latn">ci=</i>,
-		<i lang="ain-Latn">en=</i>; clitics — <i lang="ain-Latn">a=</i>,
-		<i lang="ain-Latn">eci=</i>
-		<Ref k="nakagawa2024" p="52–53" />; <Ref k="shiraishi2022" p="§5.1" />. The same
-		prosodic-word criterion distinguishes compound-internal structure (a single prosodic word,
-		one accent peak) from phrasal juxtaposition (two prosodic words with independent accent
-		peaks).
+		Accent contributes to the analysis of person markers together with evidence about
+		their attachment and syntactic separability. Bugaeva's distinction between
+		accent-shifting prefixes and the clitics <i lang="ain-Latn">a=</i> and
+		<i lang="ain-Latn">eci=</i> combines these criteria
+		<Ref k="bugaeva2012" p="472–473" />. Accent reduction also provides evidence about
+		prosodic grouping. Shiraishi's survey includes compounds, modifier–noun combinations,
+		and verb–auxiliary combinations; later accents may remain secondary or disappear
+		<Ref k="shiraishi2022" p="§5.2" />. The number of audible accent peaks therefore needs
+		to be considered together with the construction.
 	</p>
 
 	<p>

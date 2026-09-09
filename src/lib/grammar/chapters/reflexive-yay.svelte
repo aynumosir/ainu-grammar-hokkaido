@@ -5,27 +5,27 @@
 
 <S t="The reflexive yay- in the valency system" id="overview">
 	<p>
-		The prefix <A w="yay-" gl="reflexive" /> fills the object position of a transitive verb with
-		a participant coreferential with the subject, reducing arity by one and converting the base
-		transitive to an intransitive <Ref k="nakagawa2024" p="188" />; <Ref
-			k="bugaevakobayashi2022"
-			p="§4.2.2"
-		/>. Placed in the first-person plural, a verb bearing <i lang="ain-Latn">yay-</i> takes the
-		intransitive S-suffixes <i lang="ain-Latn">=as</i> (exclusive) or <i lang="ain-Latn">=an</i>
-		(fourth-person) rather than the transitive A-prefixes — the person-affix test of the
-		derivation described in <Xr ch="valency-voice-overview" />
-		<Ref k="sato2008" p="96" />; <Ref k="nakagawa2024" p="137" />. A sister prefix
-		<A w="si-" gl="indirect reflexive" /> occupies the same template slot and carries the same
-		arity value; its own distribution and the two prefixes' contrast are treated below
-		and in <Xr ch="reflexive-possessive-si" />.
+		In its valence-reducing use, <A w="yay-" gl="reflexive" /> identifies an object
+		with the subject and reduces the number of arguments by one. A two-place base
+		becomes intransitive; a three-place base can remain transitive, as in
+		<i lang="ain-Latn">ko-ruska</i> → <i lang="ain-Latn">yay-ko-ruska</i>
+		<Ref k="nakagawa2024" p="185, 187–188" />; <Ref k="sato2023b" p="40" />.
+		Person marking follows the resulting valence. The intransitive derivatives take
+		S indexes, including the Saru–Chitose first-person plural exclusive
+		<i lang="ain-Latn">=as</i> and fourth-person <i lang="ain-Latn">=an</i>
+		<Ref k="nakagawa2024" p="166, 210" />. The corresponding derivations with
+		<A w="si-" gl="indirect reflexive" /> are treated in
+		<Xr ch="reflexive-possessive-si" />; person marking is treated in
+		<Xr ch="personal-affix-template-and-ordering" s="two-index-ceiling" />.
 	</p>
 	<p>
 		Nakagawa lists <i lang="ain-Latn">yay-</i> among the 名詞的接頭辞 (nominal prefixes) of the
 		verb-derivation chapter alongside <i lang="ain-Latn">si-</i>, the reciprocal
 		<A w="u-" gl="reciprocal" />, the antipassive <A w="i-" gl="antipassive" />, and the
-		lexical body-region prefixes <A w="he-" gl="head of" />/<A w="ho-" gl="bottom of" />, all
-		of them arity −1 and all filling the object slot from the inside of the verb word
-		<Ref k="nakagawa2024" p="185–192" />. <Xr ch="antipassive-detransitive-i" /> and
+		lexical body-region prefixes <A w="he-" gl="head of" />/<A w="ho-" gl="bottom of" />, classified
+		as arity −1 in their argument-reducing uses <Ref k="nakagawa2024" p="185" />.
+		He separately gives arity 0 for <i lang="ain-Latn">yay-</i> on intransitive verbs
+		and nouns <Ref k="nakagawa2024" p="187" />. <Xr ch="antipassive-detransitive-i" /> and
 		<Xr ch="reciprocal-u" /> develop the parallel operators. Ijäs's learner lessons (L3 and L9)
 		do not cover the reflexive prefixes, as she addresses them in later material
 		<Ref k="ijas2023" />.
@@ -34,13 +34,15 @@
 
 <S t="Morphological range and the possessive yay-" id="morphological-range">
 	<p>
-		<i lang="ain-Latn">yay-</i> is nearly unrestricted in base selection: it attaches to
-		transitives and ditransitives of any semantic class, and to derived transitives
-		(causativized or applicativized stems) <Ref k="nakagawa2024" p="188" />. The prefix also
-		attaches to nominals, where arity is unchanged because a noun carries no object slot to
-		absorb — the reading is then possessive, 'one's own':
-		<A w="yay-kotan" gl="one's own village" /> (<i lang="ain-Latn">yay-</i> +
-		<A w="kotan" gl="village" />) is a representative form
+		<i lang="ain-Latn">yay-</i> has a wider distribution than
+		<i lang="ain-Latn">si-</i>. Nakagawa records it on transitive verbs, intransitive
+		verbs, and ordinary nouns. Its arity is unchanged in
+		<i lang="ain-Latn">an</i> 'exist' → <i lang="ain-Latn">yay-an</i> 'be ordinary'
+		and <A w="kotan" gl="village" /> → <A w="yay-kotan" gl="one's own village" />
+		<Ref k="nakagawa2024" p="187" />. Base selection has lexical restrictions:
+		Nakagawa reports no examples of <i lang="ain-Latn">yay-turi</i>,
+		<i lang="ain-Latn">yay-rutu</i>, or <i lang="ain-Latn">yay-suye</i>, despite
+		attested counterparts with <i lang="ain-Latn">si-</i>
 		<Ref k="nakagawa2024" p="188" />.
 	</p>
 	<p>
@@ -71,13 +73,12 @@
 		depends on the resulting form; see <Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 	<p>
-		<i lang="ain-Latn">si-</i> is more restricted than <i lang="ain-Latn">yay-</i> in base
-		selection, and when both co-occur the ordering is fixed:
-		<i lang="ain-Latn">yay-si-turi-re</i> 'lay oneself down stretching' places
-		<i lang="ain-Latn">yay-</i> outside <i lang="ain-Latn">si-</i>, while the reverse
-		<i lang="ain-Latn">*si-yay-</i> is unattested <Ref k="nakagawa2024" p="189" />.
-		Nakagawa infers that <i lang="ain-Latn">si-</i> sits closer to the root, behaving more
-		like a forming element than an independent prefix.
+		Nakagawa cites <i lang="ain-Latn">yay-si-turi-re</i> 'lie down stretching oneself'
+		with <i lang="ain-Latn">yay-</i> outside <i lang="ain-Latn">si-</i>. He reports
+		no examples of the reverse order and tentatively suggests that
+		<i lang="ain-Latn">si-</i> is closer to a stem-forming affix
+		<Ref k="nakagawa2024" p="188" />. This is an observation about the attested
+		order; Nakagawa presents the morphological interpretation as a possibility.
 	</p>
 </S>
 
@@ -187,7 +188,7 @@
 				<td>direct vs indirect reflexive</td>
 				<td>subject acts directly on itself, without mediation</td>
 				<td>subject is involved only indirectly: through others, through circumstance, or through social perception</td>
-				<td><Ref k="sato2007" />; adopted by <Ref k="nakagawa2024" p="189" />; <Ref
+				<td><Ref k="sato2007" />; discussed by <Ref k="nakagawa2024" p="188" />; <Ref
 						k="bugaevakobayashi2022"
 						p="§4.2.2"
 					/></td>
@@ -213,9 +214,9 @@
 	</p>
 
 	<p>
-		Satō's direct/indirect account, developed for Chitose, is adopted by Nakagawa and the
-		Handbook as the current best analysis ‹contested›
-		<Ref k="sato2007" />; <Ref k="nakagawa2024" p="189" />; <Ref
+		Satō proposes the direct/indirect account for Chitose; Nakagawa discusses it,
+		and the Handbook presents further examples in its support ‹contested›
+		<Ref k="sato2007" p="37–39" />; <Ref k="nakagawa2024" p="188" />; <Ref
 			k="bugaevakobayashi2022"
 			p="§4.2.2"
 		/>. It holds that <i lang="ain-Latn">yay-</i> marks an action the subject performs
@@ -226,21 +227,21 @@
 		perceive it as holding.
 	</p>
 	<p>
-		The canonical Chitose minimal pair is <i lang="ain-Latn">yay-pusu</i> 'pop up by
-		swimming (volitionally)' vs <i lang="ain-Latn">si-pusu</i> 'float of itself
-		(spontaneously)', both from <A w="pusu" gl="float something up" />
-		<Ref k="sato2007" />. The <i lang="ain-Latn">si-</i> form applies to a physical property
-		of spruce:
+		A frequently discussed contrast is <i lang="ain-Latn">yay-pusu</i> 'pop up by
+		swimming' and <i lang="ain-Latn">si-pusu</i> 'float up spontaneously', both from
+		<A w="pusu" gl="float something up" />. Satō surveys earlier descriptions of
+		this pair <Ref k="sato2007" p="31–33" />. His Chitose data include the following
+		<i lang="ain-Latn">si-pusu</i> example concerning spruce:
 	</p>
 
 	<Ex
 		m="sunku anakne peka ta si-pusu wa mom pe ne"
-		g="spruce TOP surface LOC ANTIC-float CONJ drift thing COP"
-		tr="Spruce floats on the water and drifts — that is its nature."
-		cite="sato2007"
+		g="Ezo.spruce TOP water.surface LOC ANTIC-draw.out CONJ drift NMLZ COP"
+		tr="Ezo spruce floats on water and drifts."
+		cite="sato2007:36"
 		dial="CHI"
-		place="Satō ex. 4; narrator 白沢ナベ, Chitose"
-		note="si-pusu 'float of itself': buoyancy is a property of the wood, not a directed self-act. The spruce has no volition, showing that the si-/yay- distinction is not intentional vs unintentional but direct vs indirect involvement. The contrast with yay-pusu 'pop up by swimming' is Satō's primary minimal pair."
+		place="Shirasawa Nabe; Satō ex. 4"
+		note="Satō classifies si-pusu here as a reflexive derivative of a non-causative two-place verb. The clause has a third-person subject with no overt person marker. This example illustrates spontaneous floating; Satō's objections to a general unintentional meaning for si- also draw on intentional uses such as 'have someone help oneself' and 'pretend not to know'."
 	/>
 
 	<p>
@@ -248,19 +249,19 @@
 		<i lang="ain-Latn">si-mokor-e</i> 'feign sleep',
 		<i lang="ain-Latn">si-kamuy-ne-re</i> 'pretend to be a deity',
 		<i lang="ain-Latn">si-ranpewtek-ka</i> 'pretend to know nothing'
-		<Ref k="nakagawa2024" p="189" />; <Ref k="sato2007" />. In each case the subject's
+		<Ref k="nakagawa2024" p="188" />; <Ref k="sato2007" />. In each case the subject's
 		performed state depends on how others perceive her — a condition that cannot hold
 		without an audience, hence the indirect marking:
 	</p>
 
 	<Ex
-		m="ku=ko-si-ranpewtek-ka wa ki=an"
-		g="1SG.A=APPL-REFL-know-CAUS CONJ do=4.S"
-		tr="I was pretending to know nothing about it."
-		cite="sato2007"
+		m="ku=ko-si-ranpewtek-ka wa k=an"
+		g="1SG.A=APPL-REFL-know.nothing-CAUS CONJ 1SG.S=exist"
+		tr="I was pretending not to know about it."
+		cite="sato2007:36"
 		dial="CHI"
-		place="Satō ex. 6; Chitose"
-		note="ko- promotes the object-of-pretence to applied object; si- supplies the subject-coreferent object of the causativized stative, hence REFL: the unknowing-state depends on others' belief; -ka causativizes the resulting stative. ki=an (do=4.S) marks the ongoing activity as intransitive, confirming the final vi status of the complex."
+		place="Shirasawa Nabe; Satō ex. 6"
+		note="Satō writes ku-ko-si-ranpewtek-ka wa k-an and glosses the final k- as first-person singular subject, an as 'exist'. The existential follows the person-marked reflexive-causative predicate in a wa construction. Both predicates refer to the same first-person singular subject."
 	/>
 
 	<p>
@@ -271,8 +272,7 @@
 		<i lang="ain-Latn">yay-etaye</i> 'draw oneself out (actively)' vs
 		<i lang="ain-Latn">si-etaye</i> 'withdraw, pull oneself back in (in response to
 		something)' <Ref k="bugaevakobayashi2022" p="§4.2.2" />. The Shizunai corpus
-		supplies an attested instance of <i lang="ain-Latn">si-etaye</i> where the withdrawal
-		is triggered by being seen:
+		supplies the following example of <i lang="ain-Latn">si-etaye</i>:
 	</p>
 
 	<Ex
@@ -282,15 +282,13 @@
 		cite="ilcaa1976"
 		dial="SHI"
 		place="Oda Suteno, reyep kamuy; ILCAA materials aa-irc/027#108"
-		note="si-etaye: withdrawal triggered by the act of being seen — an externally caused, indirect involvement of the subject in its own motion. Its yay- counterpart yay-etaye 'draw oneself out' involves no external trigger."
+		note="The fourth-person object index i= on nukar 'see' refers to the narrator: the entity sees the narrator and withdraws. The same example is discussed in the si- chapter."
 	/>
 
 	<p>
-		Satō himself notes that the direct/indirect analysis has not reached consensus
-		(<span lang="ja">定説ではない</span>) <Ref k="sato2007" />; <Ref
-			k="nakagawa2024"
-			p="189"
-		/>. The earlier intentional/unintentional framing (Kindaichi, Tamura) remains in
+		Satō presents the direct/indirect account as a provisional proposal and states
+		that it remains incomplete, particularly in its treatment of spatial
+		<i lang="ain-Latn">si-</i> <Ref k="sato2007" p="39" />. The earlier intentional/unintentional framing (Kindaichi, Tamura) remains in
 		pedagogical use ‹contested›. A community reformulation characterizes
 		<i lang="ain-Latn">yay-</i> as 'by one's own power' (reflexive) and
 		<i lang="ain-Latn">si-</i> as 'happens to / gets through others' (anticausative), with
@@ -317,15 +315,15 @@
 
 <S t="Stacking with applicatives and the verb-word template" id="ordering-stacking">
 	<p>
-		<i lang="ain-Latn">yay-</i> combines freely with the applicative prefixes
-		<i lang="ain-Latn">e-</i>, <i lang="ain-Latn">ko-</i>, and
-		<i lang="ain-Latn">o-</i> (see <Xr ch="applicative-system-overview" />). Since an
-		applicative raises arity by one (+1) and <i lang="ain-Latn">yay-</i> lowers it by
-		one (−1), their combination on a transitive base preserves the original transitivity
-		while shifting which object position holds the reflexive participant. On a base that
-		already has an outer applicative-object, <i lang="ain-Latn">yay-</i> fills the inner
-		original-object slot with 'self'; the outer applicative slot remains available for an
-		external NP.
+		Reflexive and applicative prefixes can occur in either order. Satō gives
+		<i lang="ain-Latn">e-yay-reka</i> 'praise oneself for something' and
+		<i lang="ain-Latn">yay-ko-sina</i> 'tie something on oneself'
+		<Ref k="sato2007" p="35, ex. 1–2" />. Nakagawa states that the order of nominal
+		and applicative prefixes depends on the meaning of the derivative, and that
+		base selection is lexically restricted <Ref k="nakagawa2024" p="210" />.
+		Where the applicative adds one argument and the reflexive removes one, their
+		combination preserves the base's argument count. The attested construction
+		determines which participant is reflexive.
 	</p>
 	<p>
 		The combination <i lang="ain-Latn">ko-yay-irayke</i> 'be grateful to someone for
@@ -347,16 +345,14 @@
 	/>
 
 	<p>
-		The derivational chain through <A w="ruska" gl="be angry at" /> demonstrates the
-		calculus across further steps: <i lang="ain-Latn">ruska</i> (vt) →
-		<i lang="ain-Latn">ko-ruska</i> (vd, 'be angry toward') →
-		<i lang="ain-Latn">yay-ko-ruska</i> (vt, 'be angry at oneself') →
-		<i lang="ain-Latn">i-ruska</i> (vi, 'be angry', object defocused) — each step
-		changes arity by exactly one unit <Ref k="nakagawa2024" p="212" />; <Ref
-			k="sato2023b"
-			p="40"
-		/> ‹consensus›. The antipassive <i lang="ain-Latn">i-</i> in the same chain
-		is treated in <Xr ch="antipassive-detransitive-i" />.
+		Satō lists transitive <A w="ruska" gl="be angry at" /> → three-place
+		<i lang="ain-Latn">ko-ruska</i> → transitive
+		<i lang="ain-Latn">yay-ko-ruska</i>. The antipassive
+		<i lang="ain-Latn">i-ruska</i> is an intransitive derivative of
+		<i lang="ain-Latn">ruska</i> <Ref k="sato2023b" p="40" />.
+		These formations illustrate separate argument-reducing operations:
+		reflexivization of <i lang="ain-Latn">ko-ruska</i> and antipassivization of
+		<i lang="ain-Latn">ruska</i>. See <Xr ch="antipassive-detransitive-i" />.
 	</p>
 	<p>
 		The verb template places reflexive and applicative prefixes inside the person-index
@@ -373,8 +369,8 @@
 		<i lang="ain-Latn">niwkes</i> as the state predicate (nukopoli, aynu-corpora Discord
 		2024, <Ref k="aynucorporadiscord" />) ‹contested› — illustrates the opaque prefix
 		stacking that occurs in this zone; the analysis awaits verification against primary
-		morphological descriptions. The reciprocal <i lang="ain-Latn">u-</i>, which parallels
-		<i lang="ain-Latn">yay-</i> in its arity value while filling both S and O slots
-		simultaneously, is in <Xr ch="reciprocal-u" />.
+		morphological descriptions. The reciprocal <i lang="ain-Latn">u-</i>, also listed among the arity-reducing
+		nominal prefixes <Ref k="nakagawa2024" p="185" />, is treated in
+		<Xr ch="reciprocal-u" />.
 	</p>
 </S>

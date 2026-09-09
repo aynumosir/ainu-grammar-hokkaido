@@ -85,9 +85,8 @@
 		the first syllable of the reduplicated complex is closed, it carries the primary accent;
 		if open, the accent falls on the second syllable
 		<Ref k="nakagawa2024" p="50" />. In <i lang="ain-Latn">ketketcep</i> the first
-		syllable is the closed <i lang="ain-Latn">ket</i>, giving [ˈketketcep]. Lexicalized
-		compounds with reduplicated elements follow the first-element priority rule governing
-		all compounds (<Xr ch="accent-in-compounds-and-affixation" />;
+		syllable is the closed <i lang="ain-Latn">ket</i>, giving [ˈketketcep]. For compounds with reduplicated elements, first-element priority is a possible
+		accent pattern; the broader compound-accent tendencies have exceptions (<Xr ch="accent-in-compounds-and-affixation" />;
 		<Ref k="nakagawa2024" p="54" />).
 	</p>
 </S>

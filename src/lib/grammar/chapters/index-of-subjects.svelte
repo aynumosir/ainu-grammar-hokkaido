@@ -168,7 +168,7 @@
 		<li>Complement-taking predicates — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>Completion, anteriority, and the admirative — <Xr ch="tam-overview" /></li>
 		<li>Completive aspect: wa isam and wa okere — <Xr ch="phasal-iterative-habitual-aspect" /></li>
-		<li>Compound nouns: first-element priority — <Xr ch="accent-in-compounds-and-affixation" /></li>
+		<li>Compound words: first-element priority — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Concept form and affiliative (possessed) form — <Xr ch="lexical-head-formal-noun-nominalization" /></li>
 		<li>Condition, concession, cause, and the mood of the matrix clause — <Xr ch="clause-linkage-overview" /></li>
 		<li>Conditional kor — temporal and habitual — <Xr ch="conditional-temporal-concessive-clauses" /></li>
@@ -491,7 +491,7 @@
 		<li>ko- in the derivational chain and with e- — <Xr ch="applicative-ko" /></li>
 		<li>kor an: progressive, habitual, and inceptive — <Xr ch="existential-aspect-an-oka" /></li>
 		<li>kor in derived particles — <Xr ch="simultaneous-kor-clauses" /></li>
-		<li>koré: two analyses of a lexicalized junction — <Xr ch="citation-vs-combining-stem-shapes" /></li>
+		<li>koré: derivation and lexicalization — <Xr ch="citation-vs-combining-stem-shapes" /></li>
 		<li>korka and hikeka — adversative — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li>kuni as complement marker — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>kuni in the complementizer system — <Xr ch="kuni-complementizer-purpose-complements" /></li>
@@ -836,6 +836,7 @@
 		<li>Relationship to the imperative, prohibitive, and desiderative — <Xr ch="hortative-and-optative" /></li>
 		<li>Relative-clause modifiers — <Xr ch="noun-phrase-structure" /></li>
 		<li>Reliability of the record and open questions — <Xr ch="gendered-register-speech" /></li>
+		<li>Reported accent in somo and somósomo — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Resolving the syncretism — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>Restrictive focus: patek and its near-synonyms — <Xr ch="topic-marking-anakne" /></li>
 		<li>Revisions to the consonant correspondences: Alonso 2022 — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
@@ -874,7 +875,7 @@
 		<li>Second-person neutrality: e= and eci= — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>Second-person objects: e= and eci= — <Xr ch="object-indexing-monotransitive" /></li>
 		<li>Second-person singular: e= — <Xr ch="first-second-person-singular-affixes" /></li>
-		<li>Secondary accent on personal-number suffixes — <Xr ch="accent-in-compounds-and-affixation" /></li>
+		<li>Secondary accent on person suffixes — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>sekor and the reporting-verb split — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
 		<li>sekor in the complementizer system — <Xr ch="quotative-complementation-sekor" /></li>
 		<li>sekor is not a sentence-final particle — <Xr ch="sentence-final-particles-illocutionary-force" /></li>
@@ -905,7 +906,6 @@
 		<li>siran — the appearance-based continuative — <Xr ch="continuative-siri-siran-kane-an" /></li>
 		<li>Size modification without suffixation: prenominal pon and poro — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
 		<li>Softeners and benefactive requests: hani and wa kore — <Xr ch="imperative-and-prohibitive" /></li>
-		<li>somo and somósomo as a prosodic diagnostic — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Sound symbolism: patterns and limits of the evidence — <Xr ch="interjections-ideophones-sound-symbolism" /></li>
 		<li>Source citation and the bibliography — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Source gaps and the reported-evidence convention — <Xr ch="written-sources-grammars-dictionaries" /></li>

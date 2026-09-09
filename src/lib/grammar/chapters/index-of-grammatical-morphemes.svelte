@@ -289,7 +289,7 @@
 		<li><i lang="ain-Latn">isam</i> — <Xr ch="reduplication-phonology-rule-interaction" />, <Xr ch="concept-form-affiliative-form" />, <Xr ch="affiliative-suffix-morphophonology" />, <Xr ch="kinship-honorific-possession" />, <Xr ch="interrogative-pro-forms" />, <Xr ch="antipassive-detransitive-i" />, <Xr ch="reflexive-yay" />, <Xr ch="reflexive-possessive-si" />, <Xr ch="constituent-order-head-final" />, <Xr ch="nonconfigurationality-pronominal-argument" />, <Xr ch="oblique-adjunct-verbless-clauses" />, <Xr ch="existential-locational-an-oka" />, <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="prenominal-gap-relative-clauses" />, <Xr ch="headless-internally-headed-noun-modifying-clauses" />, <Xr ch="phasal-iterative-habitual-aspect" />, <Xr ch="negation-existential-possessive-isam" />, <Xr ch="negation-polarity-items-scope" />, <Xr ch="sequential-wa-and-clause-chaining" />, <Xr ch="manner-and-degree-adverbial-clauses" />, <Xr ch="topic-marking-anakne" />, <Xr ch="pragmatic-word-order-dislocation" /></li>
 		<li><i lang="ain-Latn">isitoma=an</i> — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li><i lang="ain-Latn">itak=an</i> — <Xr ch="conditional-temporal-concessive-clauses" />, <Xr ch="logophoric-narration-and-reported-discourse" /></li>
-		<li><i lang="ain-Latn">k=an</i> — <Xr ch="demonstratives-anaphora-definiteness" />, <Xr ch="transitivizer-ka-valency-pairs" />, <Xr ch="reflexive-possessive-si" />, <Xr ch="noun-incorporation-object" />, <Xr ch="nonverbal-predicate-tam-negation" />, <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="simultaneous-kor-clauses" />, <Xr ch="topic-marking-anakne" /></li>
+		<li><i lang="ain-Latn">k=an</i> — <Xr ch="demonstratives-anaphora-definiteness" />, <Xr ch="transitivizer-ka-valency-pairs" />, <Xr ch="reflexive-yay" />, <Xr ch="reflexive-possessive-si" />, <Xr ch="noun-incorporation-object" />, <Xr ch="nonverbal-predicate-tam-negation" />, <Xr ch="lexical-head-formal-noun-nominalization" />, <Xr ch="simultaneous-kor-clauses" />, <Xr ch="topic-marking-anakne" /></li>
 		<li><i lang="ain-Latn">k=apkas</i> — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li><i lang="ain-Latn">k=arpa</i> — <Xr ch="oral-literature-and-spoken-corpora" />, <Xr ch="postpositions-local-case-and-motion-events" />, <Xr ch="hortative-and-optative" />, <Xr ch="negation-somo-standard-clausal" />, <Xr ch="conjunctions-discourse-connectives" />, <Xr ch="logophoric-narration-and-reported-discourse" /></li>
 		<li><i lang="ain-Latn">k=e-ko-onkami</i> — <Xr ch="honorific-ritual-and-taboo-registers" /></li>
@@ -309,7 +309,7 @@
 		<li><i lang="ain-Latn">karkarse=an</i> — <Xr ch="transitivity-and-valence-classes" />, <Xr ch="denominal-deverbal-verb-derivation" /></li>
 		<li><i lang="ain-Latn">kem-ihi</i> — <Xr ch="middle-anticausative-passive" /></li>
 		<li><i lang="ain-Latn">kera=an</i> — <Xr ch="phrasal-and-utterance-intonation" /></li>
-		<li><i lang="ain-Latn">ki=an</i> — <Xr ch="reflexive-yay" />, <Xr ch="interjections-ideophones-sound-symbolism" /></li>
+		<li><i lang="ain-Latn">ki=an</i> — <Xr ch="interjections-ideophones-sound-symbolism" /></li>
 		<li><i lang="ain-Latn">kira=an</i> — <Xr ch="light-and-pro-verbs" />, <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li><i lang="ain-Latn">kironnu=an</i> — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li><i lang="ain-Latn">ko-ek</i> — <Xr ch="applicative-system-overview" />, <Xr ch="applicative-ko" /></li>

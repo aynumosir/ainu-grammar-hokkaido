@@ -35,7 +35,9 @@
 		The person-marking prefixes <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, and
 		<i lang="ain-Latn">ci=</i> are incorporated into the prosodic word and can shift accent
 		relative to its base; <i lang="ain-Latn">a=</i> and <i lang="ain-Latn">eci=</i> do not
-		trigger a shift. Compounds suppress the accent of all but the initial element. These
+		trigger a shift. Compounds tend to give priority to the first element's accent, with
+		exceptions; later accents may survive as weaker secondary accents
+		<Ref k="nakagawa2024" p="54" />; <Ref k="shiraishi2022" p="§5.2" />. These
 		morphological and compositional effects on accent placement are treated in
 		<Xr ch="accent-in-compounds-and-affixation" /> and, for the person-affix interaction,
 		in <Xr ch="person-marking-architecture" />.
@@ -238,20 +240,22 @@
 		borrowed into Japanese-language usage ‹speculative›
 		(<Ref k="aynucorporadiscord" />; palestine_2026, 2024-08-12). That is a property of the
 		borrowing in its receiving language. Within Ainu, <i lang="ain-Latn">kamuynomi</i> follows
-		the first-element-priority pattern of all compounds, detailed in
+		the first-element-priority tendency described by Nakagawa, who explicitly
+		notes exceptions <Ref k="nakagawa2024" p="54" />; see
 		<Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 
 	<p>
-		For reduplicated forms, direct evidence from phonetically transcribed accent-dialect texts
-		is sparse. A community observation reports that <i lang="ain-Latn">somósomo</i> — the
-		reduplicated form of <i lang="ain-Latn">somó</i> 'even, also' — functions as a single
-		prosodic word accented on σ2, matching the base, and that the two-word string
-		<i lang="ain-Latn">ka somó ki</i> 'even … too' assigns accent on the base word
-		independently ‹speculative› (<Ref k="aynucorporadiscord" />; nukopoli, 2024-12-09). The
-		pattern is consistent with first-element priority — in full reduplication the first copy
-		retains its accent and the echo copy is de-accented — but primary-source confirmation from
-		the phonetically transcribed descriptive literature is lacking. The prosodic-word domain and
-		its role in accent assignment are treated in <Xr ch="accent-in-compounds-and-affixation" />.
+		A community listening note compares the accent of the negative adverb
+		<i lang="ain-Latn">somó</i> 'not' with the doubled form
+		<i lang="ain-Latn">somósomo</i>. It reports second-syllable accent on
+		<i lang="ain-Latn">somó</i> in <i lang="ain-Latn">ka somó ki</i>, and on
+		<i lang="ain-Latn">somósomo</i> with no later peak, interpreting the doubled form
+		as a single word <Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-20)
+		‹corpus-suggested›. The string <i lang="ain-Latn">ka somó ki</i> belongs to the
+		negative construction V (<i lang="ain-Latn">ka</i>)
+		<i lang="ain-Latn">somo ki</i> <Ref k="nakagawa2024" p="407" />; see
+		<Xr ch="negation-somo-standard-clausal" />. The reported accent pattern is discussed
+		in <Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 </S>
