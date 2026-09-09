@@ -1,6 +1,7 @@
 <!-- src/lib/grammar/chapters/citation-vs-combining-stem-shapes.svelte -->
 <script lang="ts">
 	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import koreSpellings from '$lib/grammar/data/kore-spelling-counts.json';
 </script>
 
 <S t="Overview" id="overview">
@@ -400,46 +401,52 @@
 	/>
 </S>
 
-<S t="koré: two analyses of a lexicalized junction" id="kore">
+<S t="koré: derivation and lexicalization" id="kore">
 	<p>
-		The verb <A w="koré" gl="give (to someone)" /> presents a case where the synchronic
-		combining-form analysis and a competing historical account remain unsettled.
+		Nakagawa analyses <A w="koré" gl="give (to someone)" /> as
+		<i lang="ain-Latn">kor</i> 'have' plus causative <i lang="ain-Latn">-e</i>.
+		He explains its second-syllable accent by weakened awareness of that derivation:
+		the ordinary accent rule applies to the whole form, whose surface syllables are
+		<i lang="ain-Latn">ko.re</i> (CV.CV), instead of retaining the base accent
+		<Ref k="nakagawa2024" p="53" />. Shiraishi reports the same interpretation and
+		also gives <i lang="ain-Latn">kay-e</i> 'break' and <i lang="ain-Latn">tuy-e</i>
+		'cut' as examples <Ref k="shiraishi2022" p="§5.2" />. See
+		<Xr ch="causative-morphological-re-e-te" /> and
+		<Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
-
 	<p>
-		<strong>Nakagawa's morphological analysis</strong>
-		<Ref k="nakagawa2024" p="53" />: <i lang="ain-Latn">koré</i> is the combining stem
-		<i lang="ain-Latn">kor</i> 'have' plus the causative suffix <i lang="ain-Latn">-e</i>,
-		parallel to <i lang="ain-Latn">kay-e</i> 'break (tr.)', <i lang="ain-Latn">tuy-e</i>
-		'sell'. The surface accent <i lang="ain-Latn">koré</i> (σ2 high) rather than
-		*<i lang="ain-Latn">kóre</i> (σ1 high) follows from the iambic placement rule
-		reapplying to the whole as if monomorphemic once lexicalization has obscured the morpheme
-		boundary: /CV + CVC/ → σ2 accent. The same accent pattern holds for the parallel lexicalized
-		causatives treated in <Xr ch="causative-morphological-re-e-te" />
-		<Ref k="shiraishi2022" p="§5.2" />.
+		A community message proposes <i lang="ain-Latn">koré</i> &lt;
+		<i lang="ain-Latn">korpare</i> <Ref k="aynucorporadiscord" />
+		(nukopoli, 2024-12-26) ‹speculative›. The message supplies no derivation of the
+		accent or argument about synchronic productivity. Tamura lists
+		<i lang="ain-Latn">korpare</i> as the plural counterpart of <i lang="ain-Latn">kore</i>,
+		with the analysis <i lang="ain-Latn">kor-pa-re</i> 'have–plural–cause'
+		<Ref k="tamura1996" p="s.v. korpare" />. The occurrence of both forms in transcripts
+		does not decide their historical relationship.
 	</p>
-
 	<p>
-		<strong>The community contraction account</strong>: <i lang="ain-Latn">koré</i> is a
-		contraction of <i lang="ain-Latn">korpare</i>, the ditransitive root 'give to sb' (corpus
-		frequency 153)
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-26). Both
-		<i lang="ain-Latn">koré</i> and <i lang="ain-Latn">korpare</i> are productive in attested
-		narrative speech; the accent <i lang="ain-Latn">koré</i> (not
-		*<i lang="ain-Latn">kóre</i>) is agreed under both accounts. The corpus attests
-		<i lang="ain-Latn">koré</i> (accent-marked) 30 times and <i lang="ain-Latn">kore</i>
-		(unaccented, orthographic variant) 3120 times; the disparity reflects editorial marking
-		practice rather than speaker frequency ‹contested›.
+		A count of {koreSpellings.documents} distinct archived ILCAA transcriptions
+		({koreSpellings.aligned_units.toLocaleString('en-US')} aligned units; snapshot
+		{koreSpellings.snapshot_date}) gives the following written-form occurrences
+		<Ref k="ilcaa1976" />:
 	</p>
-
+	<table>
+		<caption>Written spellings in the archived ILCAA Saru and Shizunai transcripts</caption>
+		<thead><tr><th>spelling</th><th>occurrences</th></tr></thead>
+		<tbody>
+			<tr><td><i lang="ain-Latn">koré</i></td><td>{koreSpellings.counts['koré']}</td></tr>
+			<tr><td><i lang="ain-Latn">kore</i></td><td>{koreSpellings.counts.kore}</td></tr>
+			<tr><td><i lang="ain-Latn">korpare</i></td><td>{koreSpellings.counts.korpare}</td></tr>
+		</tbody>
+	</table>
 	<p>
-		The two analyses make different predictions about the combining system:
-		Nakagawa's account treats <i lang="ain-Latn">kor-e</i> as a still-productive, if now
-		lexicalized, causative combination; the contraction account treats
-		<i lang="ain-Latn">koré</i> as an opaque form derived from
-		<i lang="ain-Latn">korpare</i> by phonological reduction, making the
-		<i lang="ain-Latn">kor</i> + suffix boundary morphologically inert in this lexical item.
-		Neither is settled by the accessible sources.
+		The count uses Ainu transcript fields, normalizes Unicode spelling and letter case,
+		and matches forms bounded by non-word characters. Person markers separated by
+		<code>=</code> allow a match; additional adjacent letters do not. Documents with
+		the same publisher URL and identical ordered Ainu text count once. These are counts
+		of written spellings in this collection. Unmarked spellings provide no accent
+		measurement, and the counts establish neither pronunciation frequencies nor
+		morphological productivity.
 	</p>
 </S>
 

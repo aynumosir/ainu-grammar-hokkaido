@@ -241,26 +241,26 @@
 		and the prosodic word as the domain of accent.
 	</p>
 	<p>
-		Two word-level prosodic facts bear on this question. First, the person-affix paradigm
-		distinguishes clitics by their degree of prosodic integration with the following stem.
-		Affixes <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, and
-		<i lang="ain-Latn">ci=</i> form a single prosodic word with their host and shift the stem's
-		accent; <i lang="ain-Latn">a=</i> and <i lang="ain-Latn">eci=</i> do not shift accent and
-		are prosodically less integrated (Kindaichi 1931; Tamura 1970, both reported via
-		<Ref k="shiraishi2022" p="§5.1" />; <Ref k="nakagawa2024" p="52–53" />). This clitic-class
-		distinction is treated in <Xr ch="person-marking-architecture" /> and
-		<Xr ch="accent-in-compounds-and-affixation" />; it constitutes a gradient of prosodic
-		bonding that may correlate with phrase-boundary placement in connected speech.
+		Person markers differ in whether they shift the stem accent. The prefixes
+		<i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, and
+		<i lang="ain-Latn">ci=</i> enter the domain of accent assignment;
+		<i lang="ain-Latn">a=</i> and <i lang="ain-Latn">eci=</i> preserve the stem accent
+		<Ref k="nakagawa2024" p="52–53" />; <Ref k="shiraishi2022" p="§5.1" />.
+		Bugaeva uses accent behavior together with syntactic inseparability to classify
+		<i lang="ain-Latn">a=</i> and <i lang="ain-Latn">eci=</i> as clitics
+		<Ref k="bugaeva2012" p="472–473" />. For this analysis and the person paradigm, see
+		<Xr ch="person-marking-architecture" /> and
+		<Xr ch="accent-in-compounds-and-affixation" />.
 	</p>
 	<p>
-		Second, personal suffixes such as <i lang="ain-Latn">=as</i> (exclusive 1pl) and
-		<i lang="ain-Latn">=an</i> (4th person S) carry a secondary accent alongside the primary
-		stem accent in open-syllable stems: <i lang="ain-Latn">iˈruska=ˌas</i> 'we (excl.) are
-		angry', <i lang="ain-Latn">ipˈe=ˌan</i> (Kindaichi 1931; Tamura 1970, reported via
-		<Ref k="shiraishi2022" p="§5.1" />). The secondary accent is lost when the stem ends in a
-		closed syllable: <i lang="ain-Latn">ˈcis=an</i> 'we cry', <i lang="ain-Latn">ˈsap=an</i>.
-		The prosodic word template and the suffix interactions are treated in
-		<Xr ch="verb-word-template" />.
+		Person suffixes can bear a secondary accent alongside the stem accent. Shiraishi gives
+		<i lang="ain-Latn">iˈruska=ˌas</i> 'we (exclusive) are angry' and
+		<i lang="ain-Latn">ipˈe=ˌan</i> 'we (inclusive) eat'. The secondary accent is lost
+		when the stem consists of a single closed syllable, (C)VC:
+		<i lang="ain-Latn">ˈcis=an</i> 'we (inclusive) cry' and
+		<i lang="ain-Latn">ˈsap=an</i> 'we (inclusive) go downstream'
+		<Ref k="shiraishi2022" p="§5.1" />. These suffix patterns are treated in
+		<Xr ch="accent-in-compounds-and-affixation" s="secondary" />.
 	</p>
 </S>
 
