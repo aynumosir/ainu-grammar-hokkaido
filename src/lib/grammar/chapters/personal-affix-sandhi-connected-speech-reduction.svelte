@@ -280,10 +280,11 @@
 		morpheme-internal resyllabification seen in true derivational junctures such as
 		<i lang="ain-Latn">sik-o</i> → [si.ko] <Ref k="nakagawa2024" p="38–39" />;
 		<Ref k="shiraishi2022" p="§4.4" />. The
-		<i lang="ain-Latn">=an</i> suffix also carries a secondary accent when the verb stem closes
-		with a CV(+) syllable: <i lang="ain-Latn">iˈruska-ˌan</i> 'one is angry' retains both
-		accents. This secondary accent disappears when the stem ends in a CVC syllable:
-		<i lang="ain-Latn">ˈcis-an</i> 'one cries', <i lang="ain-Latn">ˈsap-an</i>
+		<i lang="ain-Latn">=an</i> suffix carries a secondary accent in Shiraishi's example
+		<i lang="ain-Latn">iˈruska-ˌan</i> 'we (inclusive) are angry'. The secondary accent
+		is lost when the stem consists of a single closed syllable, (C)VC:
+		<i lang="ain-Latn">ˈcis-an</i> 'we (inclusive) cry' and
+		<i lang="ain-Latn">ˈsap-an</i> 'we (inclusive) go downstream'
 		<Ref k="shiraishi2022" p="§5.1" />.
 	</p>
 </S>
