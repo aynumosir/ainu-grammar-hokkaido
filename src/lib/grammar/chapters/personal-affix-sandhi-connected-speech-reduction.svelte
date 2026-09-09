@@ -81,7 +81,7 @@
 				<td>/i/ — closed σ1</td>
 				<td><i lang="ain-Latn">ku=inkar</i></td>
 				<td>/kuínkar/</td>
-				<td>no change; both processes blocked (§3)</td>
+				<td>marker deletion does not apply; weakening blocked by /ynk/ (§3)</td>
 			</tr>
 		</tbody>
 	</table>
