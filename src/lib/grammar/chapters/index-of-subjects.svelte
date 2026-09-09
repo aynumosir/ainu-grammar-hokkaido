@@ -61,6 +61,7 @@
 		<li>anak and anakne: the topic particle — <Xr ch="topic-marking-anakne" /></li>
 		<li>anak versus anakne and diachrony — <Xr ch="topic-marking-anakne" /></li>
 		<li>Analyses and open questions — <Xr ch="nominalization-p-pe" />, <Xr ch="prenominal-gap-relative-clauses" />, <Xr ch="quotative-complementation-sekor" /></li>
+		<li>Analyses of the glide transition (わたり) — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>Analytic negation: hannehka versus somo — <Xr ch="sakhalin-contrast-text" /></li>
 		<li>Analytical boundaries — <Xr ch="light-and-pro-verbs" /></li>
 		<li>Analytical frameworks — <Xr ch="evidential-schema-overview" /></li>
@@ -373,7 +374,7 @@
 		<li>Glide codas /w/ and /y/ — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>Glide epenthesis at the i- and u- prefix boundary — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>Glide notation in hiatus — <Xr ch="orthographic-standardization-and-word-division" /></li>
-		<li>Glide phonemicity in Shizunai: a dialect-specific contrast — <Xr ch="glides-w-y" /></li>
+		<li>Glide phonemicity in Shizunai — <Xr ch="glides-w-y" /></li>
 		<li>Glide transcription and vowel hiatus — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Glides /y/ and /w/ as consonants — <Xr ch="consonant-inventory" /></li>
 		<li>Gloss abbreviation inventory — <Xr ch="abbreviations-glossing-symbols" /></li>
@@ -576,6 +577,7 @@
 		<li>Morphological identity: causative and applicative morphology — <Xr ch="no-adjective-class-property-verbs" /></li>
 		<li>Morphological isoglosses — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>Morphological range and the possessive yay- — <Xr ch="reflexive-yay" /></li>
+		<li>Morphological restrictions and lexicalization — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>Morphological status and open questions — <Xr ch="kuni-complementizer-purpose-complements" /></li>
 		<li>Morphological status of the indexes and notation — <Xr ch="first-person-plural-and-clusivity" /></li>
 		<li>Morphology — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
@@ -897,6 +899,7 @@
 		<li>Separating contact, inheritance, and chance — <Xr ch="macro-comparison-and-deep-contact-controversies" /></li>
 		<li>Shared diagnostics — <Xr ch="formal-defective-nouns" /></li>
 		<li>Shizunai ci and Sakhalin =hci: position as the diagnostic — <Xr ch="person-number-interactions" /></li>
+		<li>Shizunai contrasts and their representation — <Xr ch="glottal-stop" /></li>
 		<li>Short and long affiliative forms — <Xr ch="concept-form-affiliative-form" /></li>
 		<li>Side-encoding and allomorphy — <Xr ch="indefinite-fourth-person-paradigm" /></li>
 		<li>Side-encoding: prefixes for A, suffixes for S — <Xr ch="person-marking-architecture" /></li>
@@ -1028,7 +1031,6 @@
 		<li>The clitic–affix cline — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
 		<li>The cohortative: inclusive fourth-person subject — <Xr ch="hortative-and-optative" /></li>
 		<li>The comparative method and what isolate status entails — <Xr ch="genetic-position-macro-comparison" /></li>
-		<li>The compound-boundary block — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>The compound–phrase boundary — <Xr ch="noun-noun-compounding" /></li>
 		<li>The concept-form rule — <Xr ch="noun-noun-compounding" /></li>
 		<li>The conditional, concessive, and adversative subsystem — <Xr ch="conditional-temporal-concessive-clauses" /></li>
@@ -1093,7 +1095,6 @@
 		<li>The genetic isolate and its typological placement — <Xr ch="typological-profile" /></li>
 		<li>The genre system: parameters and macro-categories — <Xr ch="oral-literature-genre-taxonomy" /></li>
 		<li>The given-information restriction — <Xr ch="topic-marking-anakne" /></li>
-		<li>The glide transition (わたり) and its non-phonemic status — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>The glottal stop — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>The glottal stop [ʔ] — <Xr ch="glottal-stop" /></li>
 		<li>The grammaticalization cline — <Xr ch="mirativity-scope-grammaticalization" /></li>
@@ -1257,7 +1258,6 @@
 		<li>The shared clause-final frame paradigm — <Xr ch="evidential-schema-overview" /></li>
 		<li>The shifting class: ku=, e=, ci=, en= — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>The Shizunai demonstrative grid and dialect variation — <Xr ch="demonstratives-anaphora-definiteness" /></li>
-		<li>The Shizunai minimal pair — <Xr ch="glottal-stop" /></li>
 		<li>The short and long affiliative: the vowel-copy principle — <Xr ch="affiliative-suffix-morphophonology" /></li>
 		<li>The single fricative and its positional variants — <Xr ch="s-palatalization" /></li>
 		<li>The siri an polysemy — <Xr ch="siri-ne-situational" /></li>
