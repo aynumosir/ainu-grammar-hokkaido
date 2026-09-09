@@ -41,7 +41,8 @@
 
 	<table>
 		<caption>
-			Table 1. Deletion and weakening at the ku= / ci= juncture, Saru/Chitose/Mukawa
+			Table 1. Deletion and weakening at the ku= / ci= juncture. Nakagawa (2024: 52–53)
+			describes weakening for Saru and Chitose; the deletion discussion also includes Mukawa.
 		</caption>
 		<thead>
 			<tr>
@@ -73,13 +74,13 @@
 			<tr>
 				<td>/i/ — open σ1</td>
 				<td><i lang="ain-Latn">ku=ipe</i></td>
-				<td><i lang="ain-Latn">ku=ype</i> [kuˈype]</td>
+				<td><i lang="ain-Latn">ku=ype</i> /kúype/</td>
 				<td>stem /i/ → [j]; NO marker deletion (§3)</td>
 			</tr>
 			<tr>
 				<td>/i/ — closed σ1</td>
-				<td><i lang="ain-Latn">ku=ikra</i></td>
-				<td><i lang="ain-Latn">ku=ikra</i></td>
+				<td><i lang="ain-Latn">ku=inkar</i></td>
+				<td>/kuínkar/</td>
 				<td>no change; both processes blocked (§3)</td>
 			</tr>
 		</tbody>
@@ -94,49 +95,52 @@
 	<Ex
 		m="ku=omare"
 		ain="k=omare"
-		g="1SG.A=exit"
-		tr="I go out."
-		note="Underlying ku=omare; in the Saru and Chitose dialects the /u/ of ku= deletes before the /o/-initial stem, yielding the spoken form k=omare [koˈmaɾe]. Standard romanized orthography writes the underlying form."
-		constructed
+		g="1SG.A=put.into"
+		tr="I put it into something."
+		note="Nakagawa derives ku=ómare → k=ómare /kómare/. The /u/ of ku= deletes before the /o/-initial stem after accent placement."
+		cite="nakagawa2024:52"
+		place="Saru and Chitose"
 	/>
 </S>
 
 <S t="The /i/-initial block and vowel weakening" id="i-block">
 	<p>
-		When the stem begins with /i/, deletion of <i lang="ain-Latn">ku=</i>'s /u/ is blocked; the
-		stem-initial /i/ instead undergoes 母音弱化 (vowel weakening), becoming the glide [j]:
-		<i lang="ain-Latn">ku=ipe</i> → <i lang="ain-Latn">ku=ype</i> /kuˈype/, while
-		*<i lang="ain-Latn">k=ipe</i> is ungrammatical <Ref k="nakagawa2024" p="52" />;
-		<Ref k="sato2008" p="xii" />. The same process operates with <i lang="ain-Latn">e=</i>:
-		<i lang="ain-Latn">e=itak</i> → <i lang="ain-Latn">eytak</i> [ejˈtak] 'your words / you
-		speak' <Ref k="nakagawa2024" p="40" />. The weakening process (/i/ → [j] after a
-		vowel-final prefix) is described in broader scope in
-		<Xr ch="glide-epenthesis-hiatus-resolution" />.
+		Nakagawa describes stem-initial /i/ weakening to /y/ after <i lang="ain-Latn">ku=</i>
+		and <i lang="ain-Latn">e=</i> in Saru and Chitose:
+		<i lang="ain-Latn">ku=ipe</i> → /kúype/ 'I eat a meal' and
+		<i lang="ain-Latn">e=itak</i> → /éytak/ 'you speak'
+		<Ref k="nakagawa2024" p="52" />. In these examples, the marker vowel is retained,
+		and the stem's /i/ becomes a coda: /kuy.pe/ and /ey.tak/.
+		For derivational-prefix examples, see <Xr ch="glide-epenthesis-hiatus-resolution" />.
 	</p>
-
 	<p>
-		A second environment blocks weakening: when the stem's first syllable is closed (CVC), the
-		result of weakening would produce an illicit consonant cluster. The stem
-		<i lang="ain-Latn">ikra</i> has σ1 = <i lang="ain-Latn">ik</i> (coda /k/); weakening
-		would yield the onset sequence /k-jk-/, which violates the (C)V(C) syllable canon
-		(<Xr ch="syllable-template" />). Accordingly <i lang="ain-Latn">ku=ikra</i> is the only
-		licit form: neither *<i lang="ain-Latn">ku=ykra</i> nor *<i lang="ain-Latn">k=ikra</i>
-		arises <Ref k="nakagawa2024" p="53" />;
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›. By contrast,
-		stems with an open /i/-initial syllable do undergo weakening:
-		<i lang="ain-Latn">eytasa</i> (&lt; <i lang="ain-Latn">e=</i> + <i lang="ain-Latn">itasa</i>)
-		and <i lang="ain-Latn">eywanke</i> (&lt; <i lang="ain-Latn">e=</i> +
-		<i lang="ain-Latn">iwanke</i>) both show the [j] glide
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.
+		In <i lang="ain-Latn">inkar</i> 'look' and <i lang="ain-Latn">ikka</i> 'steal',
+		the first syllable is closed: /in/ or /ik/, of shape VC. Nakagawa gives
+		/kuínkar/ and /kuíkka/. Weakening would create /ynk/ or /ykk/, three consonants
+		that cannot fit between two (C)V(C) syllable nuclei
+		<Ref k="nakagawa2024" p="53" />. A community discussion gives the analogous
+		judgment <i lang="ain-Latn">ku=ikra</i>, rejecting
+		*<i lang="ain-Latn">ku=ykra</i> and *<i lang="ain-Latn">k=ikra</i>
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-suggested›.
+	</p>
+	<p>
+		That discussion also compares the lexical verbs <i lang="ain-Latn">eikra</i>
+		'send' and <i lang="ain-Latn">eywanke</i> 'use' with the adverb
+		<i lang="ain-Latn">eytasa</i> 'too; very'. Their meanings and word classes are
+		listed by Tamura <Ref k="tamura1996" p="s.vv. eikra, eywanke, eytasa" />.
+		The discussion proposes derivations with <i lang="ain-Latn">e-</i>; it does not
+		present these words as second-person forms of <i lang="ain-Latn">ikra</i>,
+		<i lang="ain-Latn">iwanke</i>, or <i lang="ain-Latn">itasa</i>.
 	</p>
 
 	<Ex
 		m="ku=ipe"
 		ain="ku=ype"
-		g="1SG.A=eat"
-		tr="I eat."
-		note="Underlying ku=ipe; the /u/ of ku= is retained (deletion is blocked before /i/), and the stem-initial /i/ weakens to the glide [j], giving ku=ype [kuype]. The form *k=ipe is ungrammatical."
-		constructed
+		g="1SG.S=eat.meal"
+		tr="I eat a meal."
+		note="Nakagawa gives /kúype/. The /u/ of ku= is retained, while the stem-initial /i/ becomes the coda /y/."
+		cite="nakagawa2024:52"
+		place="Saru and Chitose"
 	/>
 </S>
 
