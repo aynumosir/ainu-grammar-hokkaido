@@ -81,7 +81,7 @@
 				<td>mode of involvement</td>
 				<td>direct self-action</td>
 				<td>indirect — via another participant or circumstance</td>
-				<td><Ref k="sato2007" p="31–38" />; adopted by <Ref k="nakagawa2024" p="188" />
+				<td><Ref k="sato2007" p="31–38" />; discussed by <Ref k="nakagawa2024" p="188" />
 				and <Ref k="bugaevakobayashi2022" p="§4.2.2" /></td>
 			</tr>
 		</tbody>

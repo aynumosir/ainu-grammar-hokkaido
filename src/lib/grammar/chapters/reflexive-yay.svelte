@@ -183,7 +183,7 @@
 				<td>direct vs indirect reflexive</td>
 				<td>subject acts directly on itself, without mediation</td>
 				<td>subject is involved only indirectly: through others, through circumstance, or through social perception</td>
-				<td><Ref k="sato2007" />; adopted by <Ref k="nakagawa2024" p="188" />; <Ref
+				<td><Ref k="sato2007" />; discussed by <Ref k="nakagawa2024" p="188" />; <Ref
 						k="bugaevakobayashi2022"
 						p="§4.2.2"
 					/></td>
