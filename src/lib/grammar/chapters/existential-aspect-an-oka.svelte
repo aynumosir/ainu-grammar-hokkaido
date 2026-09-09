@@ -343,7 +343,7 @@
 		Nakagawa's 1981 analysis attributed the distinction to the degree of active involvement of
 		the perceiver: <i lang="ain-Latn">nukar kor an</i> is active, deliberate looking, while
 		<i lang="ain-Latn">nukar wa an</i> is a passive coming-into-view of a scene
-		<Ref k="nakagawa2024" p="445" />. Satō (2006) challenges this characterization. In his
+		<Ref k="nakagawa2024" p="445" />. Satō (2006b) challenges this characterization. In his
 		account the primary contrast is between continuation of the perceiving action and
 		continuation of the post-acquisition knowledge state: <i lang="ain-Latn">nukar kor an</i>
 		= 'is in the act of looking' and <i lang="ain-Latn">nukar wa an</i> = 'has seen it and
