@@ -5,14 +5,14 @@
 
 <S t="The two functions of eci=" id="two-functions">
 	<p>
-		The prefix <i lang="ain-Latn">eci=</i> occupies two cells in the Hokkaido Ainu
+		In Saru and Chitose, <i lang="ain-Latn">eci=</i> has two functions in the
 		personal-index system. As the second-person plural index it marks the agent, subject,
 		or object of a predicate whose addressee participant is plural, in parallel with the
 		second-person singular <i lang="ain-Latn">e=</i>. As the portmanteau for first-to-second
 		combinations it simultaneously indexes the subject and the object when a first-person
 		agent — singular or exclusive plural — acts on a second-person object, singular or plural.
 		The two functions share a single surface form, producing a syncretism that surrounding
-		context consistently resolves <Ref k="nakagawa2024" p="166–173" />; <Ref
+		context helps resolve <Ref k="nakagawa2024" p="166–173" />; <Ref
 			k="tamura1972"
 			p="27–28"
 		/>; <Ref k="bugaeva2012" p="471–474" />.
@@ -33,7 +33,7 @@
 	<table>
 		<thead>
 			<tr>
-				<th>structural environment</th>
+				<th>structural environment (Saru–Chitose)</th>
 				<th>function of <i lang="ain-Latn">eci=</i></th>
 				<th><i lang="ain-Latn">e=</i> counterpart</th>
 			</tr>
@@ -82,7 +82,7 @@
 				<th>role</th>
 				<th>2SG</th>
 				<th>2PL (Saru–Chitose baseline)</th>
-				<th>2PL (Ishikari, Tokachi)</th>
+				<th>2PL (Ishikari)</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -129,7 +129,7 @@
 
 	<p>
 		Nakagawa's combination tables record <i lang="ain-Latn">eci=</i> as the 2PL index in
-		Saru, Chitose, Horobetsu, and Shizunai, while Ishikari and Tokachi also show
+		Saru, Chitose, Horobetsu, Shizunai, and Tokachi. Ishikari has
 		<i lang="ain-Latn">es=</i> in the second-plural row <Ref k="nakagawa2024" p="166–172" />.
 		Where a dialect supplies <i lang="ain-Latn">es=</i>, it fills the same neutral paradigm
 		cell with the same functional range.
@@ -138,7 +138,8 @@
 
 <S t="The 1A→2O portmanteau" id="portmanteau">
 	<p>
-		When a first-person agent acts on a second-person object, <i lang="ain-Latn">eci=</i>
+		In Saru and Chitose, when a first-person agent acts on a second-person object,
+		<i lang="ain-Latn">eci=</i>
 		indexes the complete local-person relation. The four subject/object number combinations —
 		1SG acting on 2SG, 1SG acting on 2PL, 1PL.EXCL acting on 2SG, and 1PL.EXCL acting on
 		2PL — all receive the same prefix. The stacked sequences
@@ -150,7 +151,7 @@
 		first-to-second-person relation <Ref k="bugaeva2008" p="38" />; <Ref
 			k="bugaeva2012"
 			p="474"
-		/>; <Ref k="nakagawa2024" p="170, 173" />; <Ref k="tamura1972" p="27–28" /> ‹consensus›.
+		/>; <Ref k="nakagawa2024" p="171, 173" />; <Ref k="tamura1972" p="27–28" /> ‹consensus›.
 	</p>
 
 	<table>
@@ -201,14 +202,24 @@
 	/>
 
 	<p>
-		The portmanteau character of the 1→2 form is confirmed by the contrast with the 1→4
-		combination. Nakagawa's Saru combination table records <i lang="ain-Latn">eci=i=</i>
-		when the agent is first person and the object is fourth person: the agent index
-		<i lang="ain-Latn">eci=</i> and the fourth-person object <i lang="ain-Latn">i=</i> appear
-		as separate prefixes <Ref k="nakagawa2024" p="170" />. The 1→2 cells merge the two slots
-		into one, in keeping with the two-index cap: a verb carries at most one agent index and
-		one object index, and the portmanteau satisfies both positions simultaneously. The cap and
-		its consequences for three-argument verbs are treated in <Xr ch="object-indexing-monotransitive" />.
+		Saru also has combinations with two overt prefixes. Nakagawa records
+		<i lang="ain-Latn">ku=i=</i> for 1SG.A→4.O and
+		<i lang="ain-Latn">eci=i=</i> for 2PL.A→4.O; the latter contains the ordinary
+		second-person plural <i lang="ain-Latn">eci=</i>. His 1PL.A→4.O cell is
+		<i lang="ain-Latn">a=i=</i> <Ref k="nakagawa2024" p="171, table 28" />.
+		The single <i lang="ain-Latn">eci=</i> of the 1→2 cells therefore has to be distinguished
+		from <i lang="ain-Latn">eci=</i> as one member of a longer prefix sequence.
+		Object-indexing restrictions are treated in <Xr ch="object-indexing-monotransitive" />.
+	</p>
+	<p>
+		The 1→2 forms differ elsewhere in Hokkaido. Horobetsu has
+		<i lang="ain-Latn">e=…=as</i> or <i lang="ain-Latn">eci=…=as</i>, according to
+		object number. Ishikari uses <i lang="ain-Latn">e=…=an</i> and
+		<i lang="ain-Latn">es=…=an</i> with a singular A, and
+		<i lang="ain-Latn">e=…=as</i> and <i lang="ain-Latn">es=…=as</i> with a plural A.
+		Tokachi has <i lang="ain-Latn">eci=…=an</i> across all four number combinations
+		<Ref k="nakagawa2024" p="171–172, tables 30–33" />. These combinations are illustrated in
+		<Xr ch="personal-affix-template-and-ordering" s="combined-forms" />.
 	</p>
 </S>
 
@@ -233,7 +244,7 @@
 		object <i lang="ain-Latn">en=</i>, Saru uses bare <i lang="ain-Latn">en=</i> alone,
 		suppressing the expected <i lang="ain-Latn">*e=en=</i>; Chitose extends this to 2PL→1SG,
 		making <i lang="ain-Latn">*eci=en=</i> ungrammatical in that variety as well
-		<Ref k="nakagawa2024" p="170, 173" />; <Ref k="sato2008" p="146–147" />. The full 2→1
+		<Ref k="nakagawa2024" p="171, 173" />; <Ref k="sato2008" p="146–147" />. The full 2→1
 		paradigm and its dialect variation are developed in <Xr ch="first-second-person-singular-affixes" />.
 	</p>
 </S>
@@ -304,7 +315,7 @@
 		for a first-person singular agent acting on a second-person singular object, and
 		<i lang="ain-Latn">e=</i> as the second-person singular object form with a third-person
 		agent <Ref k="ijas2023" />. Her pedagogical scope covers one number combination of the
-		portmanteau; the reference sources extend <i lang="ain-Latn">eci=</i> to all four
+		portmanteau; the Saru–Chitose descriptions extend <i lang="ain-Latn">eci=</i> to all four
 		first-to-second-person subject/object number combinations and additionally treat it as the
 		full 2PL index across A, S, and O ‹consensus›.
 	</p>
@@ -324,7 +335,7 @@
 		tr="I give this to you."
 		cite="ijas2023"
 		constructed
-		note="Constructed from Ijäs Lesson 5, presenting a 1SG-agent-plus-2SG-object construction. The reference paradigm generalises eci= to all four 1→2 number combinations. As a ditransitive, kore indexes the recipient (2nd person) in the object slot; the thing given (tanpe) is a bare noun phrase."
+		note="Constructed from Ijäs Lesson 5, presenting a 1SG-agent-plus-2SG-object construction. The Saru–Chitose paradigm generalises eci= to all four 1→2 number combinations. As a ditransitive, kore indexes the recipient (2nd person) in the object slot; the thing given (tanpe) is a bare noun phrase."
 	/>
 
 	<p>
