@@ -232,32 +232,37 @@
 		</p>
 
 		<p>
-			The verb <i lang="ain-Latn">koré</i> 'give' is a well-attested departure. A regular
-			causative derivation from <i lang="ain-Latn">kor</i> 'have' +
-			<i lang="ain-Latn">-e</i> would yield <i lang="ain-Latn">*kóre</i> (σ1
-			<i lang="ain-Latn">kor</i> = CVC → 原則1 → σ1 accented); the attested form is
-			<i lang="ain-Latn">koré</i>, with accent on σ2
-			<Ref k="nakagawa2024" p="53" />; <Ref k="shiraishi2022" p="§5.2" />. Nakagawa's account
-			is that the morpheme boundary between <i lang="ain-Latn">kor</i> and
-			<i lang="ain-Latn">-e</i> has eroded sufficiently for the form to be treated as a
-			monomorphemic disyllabic root, whereupon σ1 <i lang="ain-Latn">ko</i> is open → 原則2
-			→ accent on <i lang="ain-Latn">ré</i>. The community proposes alternatively that
-			<i lang="ain-Latn">koré</i> is a phonological contraction of
-			<i lang="ain-Latn">korpare</i> 'give to someone', which independently yields σ2 accent
-			<Ref k="aynucorporadiscord" /> (nukopoli 2024-12-26) ‹contested›. Both accounts predict
-			the same surface accentuation; the accent <i lang="ain-Latn">koré</i> is attested in the
-			Saru corpus:
+			Nakagawa derives <i lang="ain-Latn">koré</i> 'give' from
+			<i lang="ain-Latn">kor</i> 'have' and causative <i lang="ain-Latn">-e</i>.
+			Retention of the base accent would give initial accent, but the bare form has
+			second-syllable accent. He attributes this to weakened awareness of the derivation,
+			allowing the ordinary rule for an open initial syllable to apply
+			<Ref k="nakagawa2024" p="53" />. The surface syllables are
+			<i lang="ain-Latn">ko.re</i>, both open; stem-accent retention and the resulting
+			form's syllable structure are separate parts of the explanation. Shiraishi reports
+			the same lexicalization account <Ref k="shiraishi2022" p="§5.2" />.
+		</p>
+		<p>
+			A community message proposes <i lang="ain-Latn">koré</i> &lt;
+			<i lang="ain-Latn">korpare</i> without developing a phonological or accentual
+			account <Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-26) ‹speculative›.
+			Tamura lists <i lang="ain-Latn">korpare</i> as the plural counterpart of
+			<i lang="ain-Latn">kore</i> and analyses it as <i lang="ain-Latn">kor-pa-re</i>
+			'have–plural–cause' <Ref k="tamura1996" p="s.v. korpare" />.
+			These analyses are discussed in <Xr ch="citation-vs-combining-stem-shapes" />.
+			The accent marks in the following example are present in Hamada's published
+			transcription of Kawakami Matsuko's speech:
 		</p>
 
 		<Ex
 			m="topenpe atay poka ka somo a=kore"
-			ain="tópenpe atay póka ka somo a=koré"
+			ain="tópenpe atay póka ka somo a=koré."
 			g="sweet price even also NEG 4.A=give"
 			tr="She couldn't even be given the price of one sweet."
 			cite="ilcaa1976"
 			dial="SAR"
-			place="川上まつ子, isoytak 独話2, AA研アイヌ語資料 [aa-irc/004#105]"
-			note="The σ2 accent of koré reflects the iambic pattern of a lexicalized open-initial disyllable (σ1 ko = CV, open → 原則2). The co-existent ditransitive korpare 'give to someone' is attested alongside it in the Saru corpus."
+			place="Kawakami Matsuko, isoytak 2; Hamada Takashi transcription, publisher line 106 [aa-irc/004#105]"
+			note="The daughter helped with the stage performance but received no payment. The accent marks reproduce Hamada's transcription; they establish the transcribed form, not its historical derivation."
 		/>
 	</S>
 </S>

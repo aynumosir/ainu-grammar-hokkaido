@@ -491,7 +491,7 @@
 		<li>ko- in the derivational chain and with e- — <Xr ch="applicative-ko" /></li>
 		<li>kor an: progressive, habitual, and inceptive — <Xr ch="existential-aspect-an-oka" /></li>
 		<li>kor in derived particles — <Xr ch="simultaneous-kor-clauses" /></li>
-		<li>koré: two analyses of a lexicalized junction — <Xr ch="citation-vs-combining-stem-shapes" /></li>
+		<li>koré: derivation and lexicalization — <Xr ch="citation-vs-combining-stem-shapes" /></li>
 		<li>korka and hikeka — adversative — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li>kuni as complement marker — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>kuni in the complementizer system — <Xr ch="kuni-complementizer-purpose-complements" /></li>
