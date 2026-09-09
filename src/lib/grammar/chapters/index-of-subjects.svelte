@@ -836,6 +836,7 @@
 		<li>Relationship to the imperative, prohibitive, and desiderative — <Xr ch="hortative-and-optative" /></li>
 		<li>Relative-clause modifiers — <Xr ch="noun-phrase-structure" /></li>
 		<li>Reliability of the record and open questions — <Xr ch="gendered-register-speech" /></li>
+		<li>Reported accent in somo and somósomo — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Resolving the syncretism — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>Restrictive focus: patek and its near-synonyms — <Xr ch="topic-marking-anakne" /></li>
 		<li>Revisions to the consonant correspondences: Alonso 2022 — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
@@ -905,7 +906,6 @@
 		<li>siran — the appearance-based continuative — <Xr ch="continuative-siri-siran-kane-an" /></li>
 		<li>Size modification without suffixation: prenominal pon and poro — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
 		<li>Softeners and benefactive requests: hani and wa kore — <Xr ch="imperative-and-prohibitive" /></li>
-		<li>somo and somósomo as a prosodic diagnostic — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Sound symbolism: patterns and limits of the evidence — <Xr ch="interjections-ideophones-sound-symbolism" /></li>
 		<li>Source citation and the bibliography — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Source gaps and the reported-evidence convention — <Xr ch="written-sources-grammars-dictionaries" /></li>

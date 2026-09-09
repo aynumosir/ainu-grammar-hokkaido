@@ -124,22 +124,22 @@
 	</p>
 </S>
 
-<S t="somo and somósomo as a prosodic diagnostic" id="somo">
+<S t="Reported accent in somo and somósomo" id="somo">
 	<p>
-		The negative adverb <A w="somo" gl="not" /> illustrates the prosodic-word boundary
-		transparently. As an independent word, <i lang="ain-Latn">somo</i> has open σ1
-		(<i lang="ain-Latn">so</i>) and thus accent on σ2 by 原則2:
-		<i lang="ain-Latn">somó</i>. This is its accent in phrases such as
-		<i lang="ain-Latn">ka somó ki</i> 'does not do even', where
-		<i lang="ain-Latn">somo</i> is a separate prosodic word. When doubled to form the
-		intensified negation <i lang="ain-Latn">somosomo</i> 'not at all, definitely not', the
-		pair becomes a single prosodic word: only the front element's accent survives, giving
-		<i lang="ain-Latn">somósomo</i> with a single high syllable on <i lang="ain-Latn">mó</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli 2024-12-09) ‹corpus-suggested›. The contrast
-		<i lang="ain-Latn">ka somó ki</i> (two prosodic words) versus
-		<i lang="ain-Latn">somósomo</i> (one prosodic word) instantiates the same mechanism as
-		the compound table above. The negation system and <A w="somo" /> are treated in
+		The negative adverb <A w="somo" gl="not" /> occurs before a predicate or in the frame
+		V (<i lang="ain-Latn">ka</i>) <i lang="ain-Latn">somo ki</i>. Nakagawa describes
+		both constructions and notes that <i lang="ain-Latn">ka</i> is optional in the latter
+		<Ref k="nakagawa2024" p="407" />. The construction is treated in
 		<Xr ch="negation-somo-standard-clausal" />.
+	</p>
+	<p>
+		A community listening note reports second-syllable accent on
+		<i lang="ain-Latn">somó</i> in the string <i lang="ain-Latn">ka somó ki</i>.
+		The same note gives the doubled form as <i lang="ain-Latn">somósomo</i>, with
+		second-syllable accent and no later peak, and interprets it as a single word
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-20) ‹corpus-suggested›.
+		The reported accent pattern is limited to these forms; the note does not establish
+		a prosodic-word count for the whole string <i lang="ain-Latn">ka somó ki</i>.
 	</p>
 </S>
 
