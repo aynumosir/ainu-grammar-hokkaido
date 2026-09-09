@@ -1104,7 +1104,7 @@ export const bibliography: Record<string, BibEntry> = {
 		region: 'hokkaido',
 		author: 'Satō Tomomi 佐藤知己',
 		citeAuthor: 'Satō',
-		year: '2006',
+		year: '2006a',
 		title: 'The Study of the Ainu Language',
 		container: 'Journal of the Graduate School of Letters 1',
 		pages: '45–52',
@@ -1116,7 +1116,7 @@ export const bibliography: Record<string, BibEntry> = {
 		region: 'hokkaido',
 		author: 'Satō Tomomi 佐藤知己',
 		citeAuthor: 'Satō',
-		year: '2006',
+		year: '2006b',
 		title: '千歳方言のアスペクト——kor an、wa an',
 		titleTr: 'Aspect in the Chitose dialect: kor an, wa an',
 		lang: 'ja'
