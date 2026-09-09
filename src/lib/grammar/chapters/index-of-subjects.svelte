@@ -69,7 +69,6 @@
 		<li>Answer and response strategies — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li>Anticausative semantics and the si- overlap — <Xr ch="middle-anticausative-passive" /></li>
 		<li>Applicative case-marking — <Xr ch="poetic-archaic-elevated-register" />, <Xr ch="heroic-and-divine-verse" />, <Xr ch="inonno-itak-ritual-prayer" /></li>
-		<li>Applicative prefixes as prosodic-word heads — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Applicative stacking — <Xr ch="applicative-stacking-relativization-feeding" /></li>
 		<li>Applied-object roles and the place restriction — <Xr ch="applicative-o" /></li>
 		<li>Apposition and attributive juxtaposition — <Xr ch="noun-phrase-structure" /></li>
@@ -621,6 +620,7 @@
 		<li>newaanpe — the resumptive anaphoric connective — <Xr ch="conjunctions-discourse-connectives" /></li>
 		<li>nisa: the recent-perfect companion — <Xr ch="perfective-anterior-a" /></li>
 		<li>Nivkh and the northern contact zone — <Xr ch="genetic-position-macro-comparison" /></li>
+		<li>Nominal and applicative e- — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Nominal-frame conditionals: B ne yakun — <Xr ch="oblique-adjunct-verbless-clauses" /></li>
 		<li>Nominalizer allomorphy — <Xr ch="glides-w-y" /></li>
 		<li>Nominalizers: subclass or grammatical role? — <Xr ch="word-class-inventory-and-diagnostics" /></li>
