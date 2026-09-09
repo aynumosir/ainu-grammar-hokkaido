@@ -152,6 +152,7 @@
 		<li>Cognition: experience and understanding — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li>Colour terms — <Xr ch="lexical-semantic-fields-synopsis" /></li>
 		<li>Combinatorial limits and related morphology — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
+		<li>Combined subject and object forms — <Xr ch="personal-affix-template-and-ordering" /></li>
 		<li>Comitative and benefactive uses — <Xr ch="applicative-ko" /></li>
 		<li>Common nouns: concept form and affiliative form — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>Common vs proper nouns — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
@@ -167,7 +168,7 @@
 		<li>Complement-taking predicates — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>Completion, anteriority, and the admirative — <Xr ch="tam-overview" /></li>
 		<li>Completive aspect: wa isam and wa okere — <Xr ch="phasal-iterative-habitual-aspect" /></li>
-		<li>Compound nouns: first-element priority — <Xr ch="accent-in-compounds-and-affixation" /></li>
+		<li>Compound words: first-element priority — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Concept form and affiliative (possessed) form — <Xr ch="lexical-head-formal-noun-nominalization" /></li>
 		<li>Condition, concession, cause, and the mood of the matrix clause — <Xr ch="clause-linkage-overview" /></li>
 		<li>Conditional kor — temporal and habitual — <Xr ch="conditional-temporal-concessive-clauses" /></li>
@@ -377,7 +378,7 @@
 		<li>Glide transcription and vowel hiatus — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Glides /y/ and /w/ as consonants — <Xr ch="consonant-inventory" /></li>
 		<li>Gloss abbreviation inventory — <Xr ch="abbreviations-glossing-symbols" /></li>
-		<li>Glottal insertion when glide cannot appear — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
+		<li>Glottal realization at hiatus — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>Glottal stop, vowel-initial words, and onset representation — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Goal and addressee: relations directed toward a person — <Xr ch="applicative-ko" /></li>
 		<li>Graded positions — <Xr ch="hine-akusu-switch-reference" /></li>
@@ -835,6 +836,7 @@
 		<li>Relationship to the imperative, prohibitive, and desiderative — <Xr ch="hortative-and-optative" /></li>
 		<li>Relative-clause modifiers — <Xr ch="noun-phrase-structure" /></li>
 		<li>Reliability of the record and open questions — <Xr ch="gendered-register-speech" /></li>
+		<li>Reported accent in somo and somósomo — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Resolving the syncretism — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>Restrictive focus: patek and its near-synonyms — <Xr ch="topic-marking-anakne" /></li>
 		<li>Revisions to the consonant correspondences: Alonso 2022 — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
@@ -904,7 +906,6 @@
 		<li>siran — the appearance-based continuative — <Xr ch="continuative-siri-siran-kane-an" /></li>
 		<li>Size modification without suffixation: prenominal pon and poro — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
 		<li>Softeners and benefactive requests: hani and wa kore — <Xr ch="imperative-and-prohibitive" /></li>
-		<li>somo and somósomo as a prosodic diagnostic — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Sound symbolism: patterns and limits of the evidence — <Xr ch="interjections-ideophones-sound-symbolism" /></li>
 		<li>Source citation and the bibliography — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Source gaps and the reported-evidence convention — <Xr ch="written-sources-grammars-dictionaries" /></li>

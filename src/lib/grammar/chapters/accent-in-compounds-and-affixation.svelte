@@ -7,32 +7,32 @@
 	<p>
 		In all standard-accent dialects of Hokkaido Ainu, high pitch is assigned to σ1 when σ1 is
 		closed (has a coda), and to σ2 otherwise — with a memorized set of lexical exceptions (see
-		<Xr ch="pitch-accent-placement-rule" />). These rules evaluate the <em>prosodic word</em>
-		as their domain: a prefix or compounding element that fuses with a base creates a new
-		prosodic word, and the placement rules are reapplied from the new left edge
-		<Ref k="nakagawa2024" p="52–54" />; <Ref k="shiraishi2022" p="§5.1–5.2" />;
-		<Ref k="sato2008" p="§2.6" />. Prefixation may therefore shift accent inward, and
-		compounding suppresses all accent peaks after the first. Person markers differ in whether they shift the stem accent. Bugaeva uses this
-		difference together with their syntactic behavior to distinguish prefixes from clitics
-		<Ref k="bugaeva2012" p="472–473" />. The
+		<Xr ch="pitch-accent-placement-rule" />). Accent placement depends on the
+		<em>prosodic word</em> and on the type of morphological combination. Nakagawa applies
+		the placement rules to the whole derivative when derivational prefixes are added;
+		for compounds, he describes retention of the first element's accent as a tendency
+		with exceptions <Ref k="nakagawa2024" p="53–54" />. Shiraishi reports that later
+		accents in closely combined forms may become secondary and often disappear
+		<Ref k="shiraishi2022" p="§5.2" />. Person markers differ in whether they shift the
+		stem accent. Bugaeva uses this difference together with their syntactic behavior to
+		distinguish prefixes from clitics <Ref k="bugaeva2012" p="472–473" />. The
 		Yakumo irregular system, where 原則2 shifts one position further right, produces different
 		surface outputs for the same derivations but applies the same prosodic-word logic; its
 		characterization is given in <Xr ch="pitch-accent-placement-rule" />.
 	</p>
 </S>
 
-<S t="Compound nouns: first-element priority" id="compounds">
+<S t="Compound words: first-element priority" id="compounds">
 	<p>
-		When two or more free forms combine as a compound noun, the result carries a single accent
-		peak. <Ref k="nakagawa2024" p="54" /> states the general outcome as a first-element
-		priority rule: only the front element's lexical accent survives; all syllables belonging
-		to rear elements are low. For a polysyllabic front element, the accent it bears in
-		isolation — as assigned by the placement rules to that element's own σ1 — is retained
-		unchanged.
+		Nakagawa describes compound accent as incompletely understood and states two broad
+		tendencies: the first element's accent remains, and a monosyllabic first element
+		bears the accent. He explicitly notes that these patterns do not apply to every
+		compound <Ref k="nakagawa2024" p="54" />. The following forms illustrate
+		first-element priority.
 	</p>
 
 	<table>
-		<caption>Compound accent: first-element priority (standard-accent dialects)</caption>
+		<caption>Examples of first-element priority in compound accent</caption>
 		<thead>
 			<tr>
 				<th>front element</th>
@@ -90,7 +90,7 @@
 	<p>
 		The accent positions follow from the placement rules applied to the front element in
 		isolation. <i lang="ain-Latn">kamúy</i> has open σ1 (<i lang="ain-Latn">ka</i>) → 原則2
-		→ accent on σ2 <i lang="ain-Latn">mú</i>; that accent is the sole high syllable of
+		→ accent on σ2 <i lang="ain-Latn">muy</i>; that accent is the sole high syllable of
 		<i lang="ain-Latn">kamúynomi</i>. <i lang="ain-Latn">hórka</i> has closed σ1
 		(<i lang="ain-Latn">hor</i>) → 原則1 → accent on <i lang="ain-Latn">hór</i>; that accent
 		survives in <i lang="ain-Latn">hórkareyep</i>. The monosyllabic
@@ -99,8 +99,8 @@
 	</p>
 
 	<p>
-		For <i lang="ain-Latn">cisékorkur</i> and <i lang="ain-Latn">kotánkorkur</i>, the community
-		reports that both are single words with the front-element accent as their sole peak
+		For <i lang="ain-Latn">cisékorkur</i> and <i lang="ain-Latn">kotánkorkur</i>, a tentative community
+		observation reports second-syllable accent with no later peak in either form
 		<Ref k="aynucorporadiscord" /> (nukopoli 2024-12-09) ‹corpus-suggested›. The assignments
 		follow from the principle: <i lang="ain-Latn">cise</i> 'house' has open σ1
 		(<i lang="ain-Latn">ci</i>) → 原則2 → accent on <i lang="ain-Latn">sé</i>, which becomes
@@ -111,34 +111,34 @@
 	</p>
 
 	<p>
-		The first-element priority is a strong default. <Ref k="shiraishi2022" p="§5.2" /> notes a
-		set of lexicalized compound nouns that carry the iambic pattern even when the front
-		element's isolated accent would predict otherwise: <i lang="ain-Latn">hasínaw</i>,
-		<i lang="ain-Latn">cepétu</i> 'fish snout', <i lang="ain-Latn">nayétok</i> 'stream
-		source' all show accent on σ2 of the compound, as if the form were an underived disyllabic
-		root. These represent lexicalized items requiring per-form verification ‹contested›. The
-		prosodic-unit question (mora vs syllable) bearing on the weight analysis is addressed in
-		<Xr ch="mora-syllable-accent-vs-tone-analysis" />; attested minimal-pair contrasts in
-		compound accent are listed in <Xr ch="lexical-contrastive-accent-minimal-pairs" />.
+		Shiraishi describes second-syllable accent in some compounds whose first element is
+		CVC and whose second element begins with a vowel. His examples include
+		<i lang="ain-Latn">hasínaw</i> 'a type of ritual wand',
+		<i lang="ain-Latn">cepétu</i> 'fish snout', and
+		<i lang="ain-Latn">nayétok</i> 'source of a stream'. He reports Kindaichi and
+		Chiri's interpretation that such forms have become lexicalized and are felt to be
+		non-complex <Ref k="shiraishi2022" p="§5.2" />. The analysis of syllable weight
+		is treated in <Xr ch="mora-syllable-accent-vs-tone-analysis" />, and accent contrasts
+		in <Xr ch="lexical-contrastive-accent-minimal-pairs" />.
 	</p>
 </S>
 
-<S t="somo and somósomo as a prosodic diagnostic" id="somo">
+<S t="Reported accent in somo and somósomo" id="somo">
 	<p>
-		The negative adverb <A w="somo" gl="not" /> illustrates the prosodic-word boundary
-		transparently. As an independent word, <i lang="ain-Latn">somo</i> has open σ1
-		(<i lang="ain-Latn">so</i>) and thus accent on σ2 by 原則2:
-		<i lang="ain-Latn">somó</i>. This is its accent in phrases such as
-		<i lang="ain-Latn">ka somó ki</i> 'does not do even', where
-		<i lang="ain-Latn">somo</i> is a separate prosodic word. When doubled to form the
-		intensified negation <i lang="ain-Latn">somosomo</i> 'not at all, definitely not', the
-		pair becomes a single prosodic word: only the front element's accent survives, giving
-		<i lang="ain-Latn">somósomo</i> with a single high syllable on <i lang="ain-Latn">mó</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli 2024-12-09) ‹corpus-suggested›. The contrast
-		<i lang="ain-Latn">ka somó ki</i> (two prosodic words) versus
-		<i lang="ain-Latn">somósomo</i> (one prosodic word) instantiates the same mechanism as
-		the compound table above. The negation system and <A w="somo" /> are treated in
+		The negative adverb <A w="somo" gl="not" /> occurs before a predicate or in the frame
+		V (<i lang="ain-Latn">ka</i>) <i lang="ain-Latn">somo ki</i>. Nakagawa describes
+		both constructions and notes that <i lang="ain-Latn">ka</i> is optional in the latter
+		<Ref k="nakagawa2024" p="407" />. The construction is treated in
 		<Xr ch="negation-somo-standard-clausal" />.
+	</p>
+	<p>
+		A community listening note reports second-syllable accent on
+		<i lang="ain-Latn">somó</i> in the string <i lang="ain-Latn">ka somó ki</i>.
+		The same note gives the doubled form as <i lang="ain-Latn">somósomo</i>, with
+		second-syllable accent and no later peak, and interprets it as a single word
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-20) ‹corpus-suggested›.
+		The reported accent pattern is limited to these forms; the note does not establish
+		a prosodic-word count for the whole string <i lang="ain-Latn">ka somó ki</i>.
 	</p>
 </S>
 
@@ -458,10 +458,11 @@
 		their attachment and syntactic separability. Bugaeva's distinction between
 		accent-shifting prefixes and the clitics <i lang="ain-Latn">a=</i> and
 		<i lang="ain-Latn">eci=</i> combines these criteria
-		<Ref k="bugaeva2012" p="472–473" />. The same
-		prosodic-word criterion distinguishes compound-internal structure (a single prosodic word,
-		one accent peak) from phrasal juxtaposition (two prosodic words with independent accent
-		peaks).
+		<Ref k="bugaeva2012" p="472–473" />. Accent reduction also provides evidence about
+		prosodic grouping. Shiraishi's survey includes compounds, modifier–noun combinations,
+		and verb–auxiliary combinations; later accents may remain secondary or disappear
+		<Ref k="shiraishi2022" p="§5.2" />. The number of audible accent peaks therefore needs
+		to be considered together with the construction.
 	</p>
 
 	<p>
