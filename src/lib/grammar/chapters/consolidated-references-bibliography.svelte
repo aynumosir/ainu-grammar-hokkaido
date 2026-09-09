@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 185 works cited across the grammar into a single
+		This chapter gathers the 186 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -68,7 +68,8 @@
 	<p class="bib-entry">Sakaguchi Ryō 阪口諒 &amp; Watanabe Kaori 渡邊香織 (2019). <i lang="ja">『アイヌ炉辺物語』（1〜5話）――ジョン・バチェラー、1924年、東京</i>. [Ainu Fireside Stories (tales 1–5): John Batchelor, 1924, Tokyo]. 千葉大学ユーラシア言語文化論集 21. 243–261.</p>
 	<p class="bib-entry">Sapporo City 札幌市 (2021). <i>厚別区 地名のギモン</i>. 広報さっぽろ (August), 厚別区. 2–4.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2004). <i lang="ja">アイヌ文学における一人称体の問題</i>. [The problem of the first-person form in Ainu literature].</p>
-	<p class="bib-entry">Satō Tomomi 佐藤知己 (2006). <i lang="ja">千歳方言のアスペクト——kor an、wa an</i>. [Aspect in the Chitose dialect: kor an, wa an].</p>
+	<p class="bib-entry">Satō Tomomi 佐藤知己 (2006a). <i>The Study of the Ainu Language</i>. Journal of the Graduate School of Letters 1. 45–52. Graduate School of Letters, Hokkaido University.</p>
+	<p class="bib-entry">Satō Tomomi 佐藤知己 (2006b). <i lang="ja">千歳方言のアスペクト——kor an、wa an</i>. [Aspect in the Chitose dialect: kor an, wa an].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2007). <i lang="ja">千歳方言の再帰接頭辞yay-とsi-について</i>. [On the reflexive prefixes yay- and si- in the Chitose dialect].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2008). <i lang="ja">アイヌ語文法の基礎</i>. [Foundations of Ainu grammar]. Tokyo: Daigaku Shorin 大学書林.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2009). <i lang="ja">アイヌ語の条件表現について</i>. [On the conditional expressions of Ainu]. Tsumagari Toshirō 津曲敏郎 (ed.), サハリンの言語世界 [The linguistic world of Sakhalin]. 49–56. Sapporo: Graduate School of Letters, Hokkaido University 北海道大学大学院文学研究科.</p>

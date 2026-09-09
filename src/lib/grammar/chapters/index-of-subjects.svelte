@@ -377,7 +377,7 @@
 		<li>Glide transcription and vowel hiatus — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Glides /y/ and /w/ as consonants — <Xr ch="consonant-inventory" /></li>
 		<li>Gloss abbreviation inventory — <Xr ch="abbreviations-glossing-symbols" /></li>
-		<li>Glottal insertion when glide cannot appear — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
+		<li>Glottal realization at hiatus — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>Glottal stop, vowel-initial words, and onset representation — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Goal and addressee: relations directed toward a person — <Xr ch="applicative-ko" /></li>
 		<li>Graded positions — <Xr ch="hine-akusu-switch-reference" /></li>
