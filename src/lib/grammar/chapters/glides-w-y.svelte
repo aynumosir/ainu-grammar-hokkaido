@@ -27,7 +27,7 @@
 		<i lang="ain-Latn">yi</i>, <i lang="ain-Latn">wi</i>, and <i lang="ain-Latn">wu</i>.
 		The full phoneme inventory is in <Xr ch="consonant-inventory" /> and
 		<Xr ch="vowel-inventory" />; the (C)V(C) syllable canon in <Xr ch="syllable-template" />.
-		The allophonic glide that appears at morpheme-boundary hiatus — the [j] in
+		The glide that appears at morpheme-boundary hiatus — the [j] in
 		<i lang="ain-Latn">i-y-ekarkar</i> — is a separate process treated in
 		<Xr ch="glide-epenthesis-hiatus-resolution" />.
 	</p>
@@ -331,69 +331,50 @@
 			<Xr ch="syllable-template" />.
 		</p>
 		<p>
-			The minimal pair <i lang="ain-Latn">yayráyke</i> 'commit suicide' (three syllables,
-			/yay.ray.ke/) vs. <i lang="ain-Latn">yaírayke</i> 'give thanks' (four syllables,
-			/ya.i.ray.ke/) illustrates the practical stakes of syllabification at this juncture
-			<Ref k="nakagawa2024" p="42" />: the two words differ in syllable count and in whether the
-			reflexive morpheme <i lang="ain-Latn">yay-</i> is present, but neither read source provides
-			acoustic data bearing on whether the <i lang="ain-Latn">i</i> in
-			<i lang="ain-Latn">yaírayke</i> ever surfaces as [ji] in connected speech.
+			Nakagawa distinguishes <i lang="ain-Latn">yayrayke</i> 'commit suicide'
+			(/yay.ray.ke/) from <i lang="ain-Latn">yairayke</i> 'give thanks'
+			(/ya.i.ray.ke/) in Saru and Chitose <Ref k="nakagawa2024" p="42" />.
+			Okuda argues for /yayirayke/ for the latter word, based on his observations of
+			Shirasawa Nabe's Chitose pronunciation and Saru recordings, together with Tamura's
+			report of similar Saru realizations. He describes an elongated palatal constriction
+			at the accented second syllable and argues that /ya.irayke/ would incorrectly
+			permit a glottal realization at that boundary
+			<Ref k="okuda2025" p="44" /> ‹contested›.
 		</p>
 	</S>
 </S>
 
-<S t="Glide phonemicity in Shizunai: a dialect-specific contrast" id="dialect-shizunai">
+<S t="Glide phonemicity in Shizunai" id="dialect-shizunai">
 	<p>
-		In the accent dialects — Saru, Chitose, and related varieties — the accentual contrast between
-		fossilized and transparent compounds renders the question of /w/ phonemicity at hiatus
-		redundant: pitch, not glide presence, carries the contrast. In Shizunai (east Hidaka), an
-		accentless dialect, this alternative is unavailable. Okuda <Ref k="okuda2025" /> reports a
-		minimal pair from a Shizunai speaker (Oda Steno) that is unique in the Hokkaido documentation:
+		Okuda reports the contrast [suwat] 'pothook' and [suʔat] 'pot bail' in Shizunai,
+		crediting its discovery to 志賀雪湖. Both words are related to
+		<i lang="ain-Latn">su</i> 'pot' and <i lang="ain-Latn">at</i> 'cord', with greater
+		semantic opacity in the pothook term. Okuda finds no distinctive pitch accent in
+		Orita Suteno's variety and takes this pair as evidence for phonological /w/
+		<Ref k="okuda2025" p="41" /> ‹contested›.
 	</p>
-
 	<table>
-		<thead>
-			<tr>
-				<th>form</th>
-				<th>IPA</th>
-				<th>gloss</th>
-				<th>structural character</th>
-			</tr>
-		</thead>
+		<caption>Shizunai lexical contrast reported by Okuda (2025: 41)</caption>
+		<thead><tr><th>gloss</th><th>reported pronunciation</th><th>Okuda's phonological representations</th></tr></thead>
 		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">suwat</i></td>
-				<td>[suwat]</td>
-				<td>'pothook' (炉かぎ)</td>
-				<td>fossilized compound; /w/ phonemic, contrast with [ʔ] below</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">su'at</i></td>
-				<td>[suʔat]</td>
-				<td>'pot bail' (鍋のつる)</td>
-				<td>transparent <i lang="ain-Latn">su</i> 'pot' + <i lang="ain-Latn">at</i>; boundary [ʔ]</td>
-			</tr>
+			<tr><td>pothook</td><td>[suwat]</td><td>/suwat/</td></tr>
+			<tr><td>pot bail</td><td>[suʔat]</td><td>/su’at/ or /suat/</td></tr>
 		</tbody>
 	</table>
-
 	<p>
-		<i lang="ain-Latn">suwat</i> [suwat] and <i lang="ain-Latn">su'at</i> [suʔat] are
-		phonetically distinct. In an accent dialect this contrast would be carried by pitch — the
-		fossilized compound would have a fixed accent pattern differing from the transparent form; in
-		Shizunai, where pitch is not distinctive, the glide vs. glottal-stop difference bears the
-		entire lexical distinction. Parallel contrasts for /y/ at front-vowel hiatus in Shizunai —
-		/u'a/ ~ /uwa/, /i'o/ ~ /iyo/, /i'e/ ~ /iye/ — extend the argument beyond this single pair
-		<Ref k="okuda2025" />. Okuda's conclusion: "one cannot say, without specifying the dialect,
-		that the glides <i lang="ain-Latn">y</i>/<i lang="ain-Latn">w</i> are non-phonemic"
-		<Ref k="okuda2025" /> ‹contested›.
+		Okuda also describes /u’a/ : /uwa/, /u’e/ : /uwe/, /i’o/ : /iyo/ and /i’e/ : /iye/.
+		Weakening of the intervening segments can cause phonetic overlap. The analysis
+		therefore concerns lexical contrasts despite variable realization. It does not require
+		a separate glottal-stop phoneme: Okuda also discusses syllable-boundary representations
+		<Ref k="okuda2025" p="41, 44" />; see <Xr ch="glottal-stop" s="shizunai" />.
 	</p>
 	<p>
-		The Shizunai data do not overturn the Nakagawa–Shiraishi analysis of Saru and Chitose, where
-		accent carries the contrast the glide would otherwise mark. They demonstrate that /y/ and /w/
-		phonemicity at hiatus is a dialect-dependent property: phonemic in accentless Shizunai,
-		non-phonemic in the accent dialects
-		<Ref k="okuda2025" />; <Ref k="nakagawafukazawa2022" p="§3.1" />. For the classification of
-		Shizunai as accentless and its implications, see <Xr ch="pitch-accent-placement-rule" />.
+		Okuda notes that the pothook/pot-bail pair can have different accents in Saru.
+		He does not treat this as proof that glides lack phonological status in all accent
+		varieties. His comparison includes Satō's Chitose analysis, which places glide
+		insertion within phonology, and Nakagawa's competing analysis of these glides as
+		phonetic transitions <Ref k="okuda2025" p="41–43" /> ‹contested›.
+		The disagreement concerns both dialectal patterns and the analysis of a given dialect.
 	</p>
 </S>
 

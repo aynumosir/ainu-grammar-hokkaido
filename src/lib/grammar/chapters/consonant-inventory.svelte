@@ -372,20 +372,16 @@
 	</p>
 
 	<p>
-		The phonemic status of onset /y/ and /w/ is dialect-dependent and remains
-		unsettled ‹contested›. For Saru and Chitose, Nakagawa treats these as surface glides derived
-		at phoneme junctures, not underlying phonemes <Ref k="nakagawa2024" p="34–35" />. In
-		Shizunai, the absence of contrastive pitch means that the distinction between [w] and [ʔ] at
-		a hiatus position — illustrated by the minimal pair
-		<i lang="ain-Latn">suwat</i> 'pothook' vs <i lang="ain-Latn">suʔat</i> 'pot bail' — must
-		be carried by the glide itself, making /w/ phonemically contrastive there
-		<Ref k="okuda2025" />. Satō (2003) further posits underlying /y w/ in Chitose for
-		non-predictable hiatus positions while treating glide appearances after
-		<i lang="ain-Latn">ku-</i> and <i lang="ain-Latn">e-</i> as surface-derived (reported via
-		<Ref k="shiraishi2022" p="§4.3" />). Okuda concludes that no dialect-neutral statement
-		about glide phonemicity is possible <Ref k="okuda2025" />.
+		The disputed status of transitional glides concerns some realizations of [y] and [w]
+		at morpheme junctures. Nakagawa treats these as non-phonemic transitions
+		<Ref k="nakagawa2024" p="34–35" />. Okuda argues for phonological /w/ in the Shizunai
+		pair [suwat] 'pothook' and [suʔat] 'pot bail', and describes Satō's competing Chitose
+		account in which glide insertion occurs within phonology
+		<Ref k="okuda2025" p="41–43" /> ‹contested›. These disagreements do not extend to
+		all occurrences of the consonant phonemes /y/ and /w/. Nor does the Shizunai pair
+		require a separate /ʔ/ phoneme: Okuda allows /su’at/ or /suat/ for 'pot bail' and
+		discusses syllable-boundary analyses <Ref k="okuda2025" p="41, 44" />.
 	</p>
-
 	<p>
 		The accent behavior of syllables closed by /y/ or /w/ is treated in
 		<Xr ch="pitch-accent-placement-rule" />. Glide insertion, hiatus resolution, and

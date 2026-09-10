@@ -120,7 +120,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	majewicz2022: { sourceRole: 'background', heldLocally: true, path: 'books/2022_Bugaeva' },
 	laufer1917: { sourceRole: 'prior-analysis', heldLocally: false },
 	chiri1952: { sourceRole: 'prior-analysis', heldLocally: true },
-	okuda2025: { sourceRole: 'prior-analysis', heldLocally: true },
+	okuda2025: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/2025_奥田統己_アイヌ語のわたり音と母音連続.ocr/pdftotext/all.txt' },
 	ochiai2023: { dbSlug: '2023-ochiai-izumi-a-disparity-in-the-final-vowels-in-ainu-word-final', sourceRole: 'prior-analysis', heldLocally: true },
 	dalcorso2024: { dbSlug: '2024-dal-corso-elia-elements-of-sakhalin-ainu-phonetics-phonology-and-morphosyntax-in-bronis-aw-pi-sudskis-corpus-of-ainu-folklore', sourceRole: 'prior-analysis', heldLocally: true },
 	itabashi2001: { sourceRole: 'prior-analysis', heldLocally: true },

@@ -60,7 +60,7 @@
 	<p class="bib-entry">Nakamoto Mutsuko 中本ムツ子 (speaker); Kayano Shigeru 萱野茂 (supervising) (2009). <i>CDエクスプレス アイヌ語</i>. [CD Express Ainugo]. Hakusuisha 白水社.</p>
 	<p class="bib-entry">National Institute for Japanese Language and Linguistics 国立国語研究所 (2003). <i lang="ja">アイヌ語口承文芸コーパス</i>. [Corpus of Ainu oral literature].</p>
 	<p class="bib-entry">Niikappu Town 新冠町 (2024). <i>新冠百話 第七十三話</i>. 広報にいかっぷ 694 (November). 7.</p>
-	<p class="bib-entry">Okuda Osami 奥田統己 (2025). <i lang="ja">アイヌ語のわたり音と母音連続</i>. [Glides and vowel hiatus in Ainu].</p>
+	<p class="bib-entry">Okuda Osami 奥田統己 (2025). <i lang="ja">アイヌ語のわたり音と母音連続</i>. [Glides and vowel hiatus in Ainu]. 北海道方言研究会50周年記念論集 生活語の半世紀（北海道方言研究会叢書7）. 40–45.</p>
 	<p class="bib-entry">Ōno, Tetsuhito (2022). <i>The history and current status of the Ainu language revival movement</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 12. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Refsing, Kirsten (1986). <i>The Ainu language: The morphology and syntax of the Shizunai dialect</i>. Aarhus: Aarhus University Press.</p>
 	<p class="bib-entry">Refsing, Kirsten (2011). <i>Tense, aspect and actionality in the Ainu language</i>. <span class="reported-badge">reported</span></p>

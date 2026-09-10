@@ -333,12 +333,11 @@
 		museum-archive recordings that the same word appears in both accent patterns across tokens from
 		one speaker — <i lang="ain-Latn">nisáppone</i> five times vs
 		<i lang="ain-Latn">nísappone</i> twice — and reads this as accent-neutralization, not a stable
-		system <Ref k="nakagawa2024" p="50" /> ‹contested›. One phonological consequence of Shizunai's
-		accentless status: the contrast between glide [w] and glottal stop [ʔ] at a hiatus position
-		must carry the functional load that pitch contrast carries elsewhere, as argued for the pair
-		<i lang="ain-Latn">suwat</i> 'pothook' vs <i lang="ain-Latn">suʔat</i> 'pot bail' in <Ref
-			k="okuda2025"
-		/>; see <Xr ch="glides-w-y" />.
+		system <Ref k="nakagawa2024" p="50" /> ‹contested›. For Orita Suteno's Shizunai variety, Okuda argues that the contrast
+		[suwat] 'pothook' : [suʔat] 'pot bail' provides evidence for phonological /w/ because
+		it occurs without distinctive pitch accent. He notes that this pair can also have
+		different accents in Saru, while retaining the wider disagreement over glide analysis
+		<Ref k="okuda2025" p="41–43" />; see <Xr ch="glides-w-y" />.
 	</p>
 	<p>
 		The accentless dialects differ in their accentless origin. Bihoro, Kushiro, and Shiranuka lost

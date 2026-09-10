@@ -13,204 +13,84 @@
 		or /u/ reduces to a glide after a preceding prefix; (3) <em>glottal insertion</em>, in
 		which [ʔ] marks the syllable onset; and (4) <em>vowel deletion</em>, in which one of the
 		adjacent vowels is elided. The present chapter covers strategies (1) and (2), together with
-		the phonotactic constraint that blocks both of them in certain environments. The
+		their morphological and phonological conditions. The
 		glottal-insertion strategy is treated in <Xr ch="glottal-stop" />, and vowel deletion in
 		the context of personal-prefix sandhi is covered in
 		<Xr ch="personal-affix-sandhi-connected-speech-reduction" />.
 	</p>
 	<p>
-		Glide epenthesis applies only after specific prefixes — the
-		indefinite/antipassive prefix <A w="i-" gl="ANTIP" />, the reciprocal
-		<A w="u-" gl="RECP" />, and variably the reflexive <A w="si-" gl="REFL" /> — and only
-		at a prefix boundary, not at a compound morpheme boundary. Vowel weakening is also
-		prefix-conditioned. Both are blocked when a glide before a closed syllable would create an
-		illicit onset cluster, because the (C)V(C) syllable canon of Hokkaido Ainu forbids
-		consonant clusters within a single syllable: see <Xr ch="syllable-template" />
-		<Ref k="nakagawa2024" p="41–42" />.
+		In Satō's account, as summarized by Shiraishi, productive glide insertion is
+		conditioned by a subset of prefixes, including indefinite-person
+		<A w="i-" />, reciprocal <A w="u-" gl="RECP" />, and reflexive
+		<A w="si-" gl="REFL" />. Incorporated stems do not trigger it in the same way
+		<Ref k="shiraishi2022" p="§4.3" />. This restriction does not exclude glides in
+		lexicalized compounds: Okuda's Shizunai evidence includes
+		<i lang="ain-Latn">suwat</i> 'pothook' <Ref k="okuda2025" p="41" />.
+		Vowel weakening has separate conditions, discussed below.
 	</p>
 </S>
 
-<S t="The glide transition (わたり) and its non-phonemic status" id="glide-watari">
+<S t="Analyses of the glide transition (わたり)" id="glide-watari">
 	<p>
-		Nakagawa <Ref k="nakagawa2024" p="34" /> defines わたり 'glide, transition' as the sound
-		produced while the vocal tract reconfigures between two successive phonemic targets in
-		normal-tempo speech. In his analysis of Saru and Chitose, this transition is not an
-		independent phoneme. The word <i lang="ain-Latn">iyomante</i> 'the bear-spirit-sending
-		ceremony' — phonemically /i-omante/ (&lt; the indefinite-object prefix
-		<A w="i-" gl="ANTIP" /> + <A w="omante" gl="send away" />) — is pronounced [iyomante]
-		in connected speech, but the [y] between prefix and stem is a nonphonemic transition that
-		standard orthography does not treat as a separate segment <Ref k="nakagawa2024" p="34" />.
-		Likewise <i lang="ain-Latn">uwepeker</i> 'tell each other stories' is phonemically
-		/u-epeker/ (&lt; <A w="u-" gl="RECP" /> + <i lang="ain-Latn">epeker</i>, a stem posited by
-		the analysis and not attested as a free word ‹speculative›), and the [w]
-		at the prefix–stem juncture is a transitional sound rather than a grammatically independent
-		consonant.
+		Nakagawa describes わたり 'transition' as a sound produced between successive
+		phonemic targets. In his analysis, the [y] in [iyomante] 'bear-spirit-sending
+		ceremony' is absent from the phonological representation /iomante/ and from his
+		spelling. Similarly, he treats the [w] after initial /u/ in
+		<i lang="ain-Latn">uenewsar</i> 'talk together' as transitional, while retaining
+		the lexical /w/ within <i lang="ain-Latn">newsar</i>
+		<Ref k="nakagawa2024" p="34–35" />.
 	</p>
 	<p>
-		Two diagnostics establish non-phonemic status for Saru and Chitose. The nominalizer
-		allomorphy test: morphemes ending in a genuine /y/ or /w/ take the consonant-allomorph
-		<i lang="ain-Latn">-pe</i> of the nominalizer (e.g. <i lang="ain-Latn">okay-pe</i>,
-		<i lang="ain-Latn">siw-pe</i>), while vowel-initial stems take <i lang="ain-Latn">-p</i>
-		even when preceded by an epenthetic glide: <i lang="ain-Latn">iyomante-p</i>, not
-		*<i lang="ain-Latn">iyomante-pe</i> <Ref k="shiraishi2022" p="§3" />;
-		<Ref k="nakagawa2024" p="34" />. The double-glide test (described in §5 below) provides a
-		second criterion for vowel-weakening contexts. The general analysis of /y/ and /w/ as
-		consonant phonemes in the inventory — and the diagnostics that establish root-phoneme /y/
-		/w/ — is developed in <Xr ch="glides-w-y" />. Whether the transition [y]/[w] at morpheme
-		boundaries is phonemic in varieties other than Saru and Chitose is a genuinely contested
-		question, treated in §8.
+		This account is disputed, including for Chitose. Okuda explains how Satō's
+		analysis introduces glides within phonology, after some prefix derivations,
+		without requiring them at the deepest underlying level
+		<Ref k="okuda2025" p="42–43" />. The derivational argument discussed below must
+		therefore be evaluated against the ordering of processes in each account.
+		For the status of lexical and syllable-final /y/ and /w/, see
+		<Xr ch="glides-w-y" />; for the dialect evidence, see the final section below.
 	</p>
 </S>
 
 <S t="Glide epenthesis at the i- and u- prefix boundary" id="glide-insertion">
 	<p>
-		Glide epenthesis operates at the juncture of a vowel-final prefix and a
+		Glide epenthesis can occur at the juncture of a vowel-final prefix and a
 		vowel-initial stem. The relevant prefixes are the indefinite-object/antipassive
 		<A w="i-" gl="ANTIP" /> and the reciprocal prefix <A w="u-" gl="RECP" />
-		<Ref k="kindaichi1936" p="13" />; <Ref k="shiraishi2022" p="§4.3" />. After /i/ a
-		[y]-glide appears; after /u/ a [w]-glide. The rules:
+		<Ref k="kindaichi1936" p="13" />; <Ref k="shiraishi2022" p="§4.3" />. In these contexts, /i/ is followed by
+		[y], and /u/ by [w]. The insertion patterns can be summarized as follows:
 	</p>
 	<p>
 		<strong>R1</strong>&ensp;∅ → y / i- ___ V &ensp;(at a prefix boundary)<br />
 		<strong>R2</strong>&ensp;∅ → w / u- ___ V &ensp;(at a prefix boundary)
 	</p>
 
+	<p>
+		Shiraishi lists the following forms as examples of glide insertion
+		<Ref k="shiraishi2022" p="§4.3, example (4)" />. The table preserves his forms
+		and meanings; their presence in this list does not establish a single underlying
+		representation or a uniform productive derivation across dialects.
+	</p>
 	<table>
-		<caption>Table 1. Glide epenthesis at the i- and u- prefix boundary</caption>
-		<thead>
-			<tr>
-				<th>prefix</th>
-				<th>stem</th>
-				<th>phonemic form</th>
-				<th>surface form</th>
-				<th>gloss</th>
-				<th>source</th>
-			</tr>
-		</thead>
+		<caption>Table 1. Forms illustrating glide insertion in Shiraishi (2022)</caption>
+		<thead><tr><th>form</th><th>meaning</th></tr></thead>
 		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">i-</i> ANTIP</td>
-				<td><i lang="ain-Latn">omante</i></td>
-				<td>/i-omante/</td>
-				<td>[iy.o.man.te]</td>
-				<td>'sends it away'</td>
-				<td><Ref k="nakagawa2024" p="34" /></td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">i-</i> ANTIP</td>
-				<td><i lang="ain-Latn">oikir</i></td>
-				<td>/i-oikir/</td>
-				<td>[iy.oi.kir]</td>
-				<td>'piles things up'</td>
-				<td><Ref k="shiraishi2022" p="§4.3" /></td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">i-</i> ANTIP</td>
-				<td><i lang="ain-Latn">ekarkar</i></td>
-				<td>/i-ekarkar/</td>
-				<td>[iy.ek.kar.kar]</td>
-				<td>'makes things'</td>
-				<td><Ref k="shiraishi2022" p="§4.3" /></td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">i-</i> ANTIP</td>
-				<td><i lang="ain-Latn">uta</i></td>
-				<td>/i-uta/</td>
-				<td>[iy.u.ta]</td>
-				<td>'quarrels with someone'</td>
-				<td><Ref k="shiraishi2022" p="§4.3" /></td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">u-</i> RECP</td>
-				<td><i lang="ain-Latn">epeker</i></td>
-				<td>/u-epeker/</td>
-				<td>[uw.e.pe.ker]</td>
-				<td>'tell each other stories'</td>
-				<td><Ref k="nakagawa2024" p="34" /></td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">u-</i> RECP</td>
-				<td><i lang="ain-Latn">ekarkar</i></td>
-				<td>/u-ekarkar/</td>
-				<td>[uw.ek.kar.kar]</td>
-				<td>'make things together'</td>
-				<td><Ref k="shiraishi2022" p="§4.3" /></td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">u-</i> RECP</td>
-				<td><i lang="ain-Latn">atte</i></td>
-				<td>/u-atte/</td>
-				<td>[uw.at.te]</td>
-				<td>'help each other'</td>
-				<td><Ref k="shiraishi2022" p="§4.3" /></td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">u-</i> RECP</td>
-				<td><i lang="ain-Latn">osurpa</i></td>
-				<td>/u-osurpa/</td>
-				<td>[uw.os.sur.pa]</td>
-				<td>'cross together'</td>
-				<td><Ref k="shiraishi2022" p="§4.3" /></td>
-			</tr>
+			<tr><td><i lang="ain-Latn">iyekarkar</i></td><td>do to me</td></tr>
+			<tr><td><i lang="ain-Latn">iyoikir</i></td><td>treasures</td></tr>
+			<tr><td><i lang="ain-Latn">iyuta</i></td><td>grind grains in a mortar</td></tr>
+			<tr><td><i lang="ain-Latn">uwekarkar</i></td><td>do to each other</td></tr>
+			<tr><td><i lang="ain-Latn">uwepeker</i></td><td>folktale</td></tr>
+			<tr><td><i lang="ain-Latn">uwatte</i></td><td>increase</td></tr>
+			<tr><td><i lang="ain-Latn">uwosurpa</i></td><td>divorce</td></tr>
 		</tbody>
 	</table>
-
 	<p>
-		The epenthetic glide is determined by the prefix vowel — /i/ triggers [y], /u/ triggers
-		[w] — independently of the quality of the following stem vowel. Table 1 shows y-insertion
-		before /o/, /oi/, /e/, and /u/, and w-insertion before /e/ and /o/. A derivation for the
-		canonical pair:
+		In Nakagawa's analysis of the ceremony term, /iomante/ is realized as [iyomante]
+		<Ref k="nakagawa2024" p="34" />. Here the inserted [y] belongs to the phonetic
+		realization. Satō's account places insertion at a phonological level; the
+		comparison below keeps these analyses distinct <Ref k="okuda2025" p="43" />.
 	</p>
 
-	<table>
-		<caption>Derivation: /i-omante/ → [iyomante]</caption>
-		<thead>
-			<tr>
-				<th>step</th>
-				<th>form</th>
-				<th>rule</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>underlying</td>
-				<td>/i-omante/</td>
-				<td>—</td>
-			</tr>
-			<tr>
-				<td>R1 applied</td>
-				<td>/i-<strong>y</strong>omante/</td>
-				<td>∅ → y / i- ___ V</td>
-			</tr>
-			<tr>
-				<td>surface</td>
-				<td>[iy.o.man.te]</td>
-				<td>syllabification</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<Ex
-		m="i-omante"
-		ain="iyomante"
-		g="ANTIP-send.away"
-		tr="sends it away; (ceremonially) performs the bear-spirit-sending"
-		note="The [y] glide is epenthetic at the prefix–stem boundary. Phonemic form /i-omante/. Nominalizer takes the V-allomorph: iyomante-p, not *iyomante-pe, confirming the stem is phonemically vowel-initial."
-		constructed
-		dial="SAR"
-	/>
-
-	<Ex
-		m="u-epeker"
-		ain="uwepeker"
-		g="RECP-tell.story"
-		tr="tell each other stories; tell stories together"
-		note="The [w] glide is epenthetic at the prefix–stem boundary. Phonemic form /u-epeker/. The variant spelling uepeker (without the written glide) occurs in some orthographic traditions."
-		constructed
-		dial="SAR"
-	/>
-
-	<S t="The compound-boundary block" id="boundary-block">
+	<S t="Morphological restrictions and lexicalization" id="boundary-block">
 		<p>
 			Satō (1996, 2003, cited in Shiraishi 2022 §4.3) establishes on Chitose data that R1
 			and R2 are morphosyntactically conditioned: they apply only at a productive prefix
@@ -249,15 +129,13 @@
 		</p>
 
 		<p>
-			The bear-ceremony word <i lang="ain-Latn">iyomante</i> is informative here. Nakagawa
-			<Ref k="nakagawa2024" p="34" />, Okuda <Ref k="okuda2025" />, and Satō all assign a
-			glide-bearing form to this word because the <i lang="ain-Latn">i-</i> +
-			<i lang="ain-Latn">omante</i> boundary retains sufficient compositional productivity
-			for R1 to apply (cf. <i lang="ain-Latn">kamuy-omante</i> 'god-sending'). Okuda (2025)
-			notes that in Shizunai, morphologically transparent instances may surface without the
-			glide, as <i lang="ain-Latn">iomante</i>. The debate over this word is therefore
-			incidental to the blocking question; it is the morphosyntactic conditioning, not this
-			specific form, that divides the analyses.
+			The bear-ceremony term illustrates the disagreement. Nakagawa represents it as
+			<i lang="ain-Latn">iomante</i> and treats the [y] in [iyomante] as a phonetic
+			transition <Ref k="nakagawa2024" p="34" />. In Orita Suteno's Shizunai speech,
+			Okuda reports [ʔiʔomante] ~ [ʔiomante], without [y], and relates this to the
+			transparency of <i lang="ain-Latn">i-omante</i>. In his comparison of analyses,
+			Satō's Chitose account derives phonological <i lang="ain-Latn">iyomante</i>
+			<Ref k="okuda2025" p="41–43" /> ‹contested›.
 		</p>
 		<p>
 			Whether <A w="si-" gl="REFL" /> consistently triggers R1 across dialects is uncertain.
@@ -426,15 +304,15 @@
 		cluster results.
 	</p>
 	<p>
-		A double-glide test distinguishes R3/R4 from the presence of an underlying /y/ or /w/ in
-		the stem. If the stem-initial segment were an underlying /y/ or /w/, weakening it to [y]
-		or [w] would yield a geminate. The verb <i lang="ain-Latn">iunin</i> 'ache' has a
-		phonemic stem-initial /i/ (not */yi/); with the prefix <A w="ku-" gl="1SG.A" /> it
-		surfaces in Chitose as [kuyunin], with a single [y], not *[kuyyunin]
-		<Ref k="nakagawa2024" p="40" />. The same test in Saru:
-		<i lang="ain-Latn">somo eyunin ya?</i> (not *<i lang="ain-Latn">eyyunin</i>). The single
-		[y] confirms that R3 weakens a stem vowel rather than inserting a new glide alongside an
-		underlying one.
+		Nakagawa uses <i lang="ain-Latn">iunin</i> 'ache', pronounced [iyunin], to
+		argue for an underlying initial vowel. His Chitose example has
+		<i lang="ain-Latn">kuyuninka</i> with one [y]; applying vowel weakening to an
+		underlying <i lang="ain-Latn">iyunin</i> would instead predict two. He also cites
+		Saru <i lang="ain-Latn">somo eyunin ya?</i> 'Does it not hurt you?'
+		<Ref k="nakagawa2024" p="40" />. This supports his treatment of [y] as a
+		transition. Okuda cautions that such derivations do not exclude every
+		phonological account of glide insertion: in Satō's analysis, insertion follows
+		the relevant prefix operations <Ref k="okuda2025" p="42–43" />.
 	</p>
 	<p>
 		The accent consequences of vowel weakening — the nucleus shift when a formerly accentable
@@ -493,46 +371,36 @@
 
 <S t="The phonemic status of the glide transition across dialects" id="phonemic-status-debate">
 	<p>
-		Three analyses of the morpheme-boundary [y] and [w] bear on whether they are underlying
-		phonemes or surface transitions, and the three rest on genuine cross-dialectal differences.
+		The accounts compared by Okuda differ in both their dialectal evidence and the level
+		at which they place glide insertion <Ref k="okuda2025" p="40–43" /> ‹contested›.
+		Nakagawa treats the relevant [y] and [w] as phonetic transitions and omits them in
+		forms such as <i lang="ain-Latn">iomante</i> and <i lang="ain-Latn">uenewsar</i>
+		<Ref k="nakagawa2024" p="34–35" />. This claim concerns transitional glides;
+		it does not deny the existence of the consonant phonemes /y/ and /w/.
 	</p>
 	<p>
-		<strong>Nakagawa's non-phonemic analysis (Saru/Chitose).</strong> The transition [y] and
-		[w] at prefix boundaries are non-phonemic in Saru and Chitose: their appearance is
-		entirely predictable from the shape of the adjacent morphemes, and neither the nominalizer
-		allomorphy diagnostic nor the double-glide test provides evidence for underlying /y/ /w/
-		at these junctures <Ref k="nakagawa2024" p="34–35" />.
+		For Shizunai, Okuda argues that some glides have phonological status even when they
+		are absent from the etymological components. The pair [suwat] 'pothook' and [suʔat]
+		'pot bail', discovered by 志賀雪湖, contrasts in Orita Suteno's variety without
+		distinctive pitch accent. Okuda gives /suwat/ beside /su’at/ or /suat/, and also
+		describes contrasts such as /i’o/ : /iyo/ whose realizations may overlap through
+		weakening <Ref k="okuda2025" p="41" />.
 	</p>
 	<p>
-		<strong>Okuda's phonemic analysis (Shizunai).</strong> In the Shizunai variety, which
-		lacks contrastive pitch accent, the glide vs. glottal distinction at a morpheme boundary
-		carries lexical weight that accent handles elsewhere. The minimal pair first observed by
-		志賀雪湖 (Okuda 2025 <Ref k="okuda2025" />): [suwat] 'pothook' — an opaque, fused compound
-		— vs. [suʔat] 'pot bail' — a transparent su- + at with the boundary maintained. In an
-		accentless dialect this /w/ vs. /ʔ/ contrast is phonemically distinctive, giving /suwat/
-		vs. /suʔat/ (= /suat/). Okuda further documents the pairs /u'a/ ~ /uwa/, /i'o/ ~ /iyo/,
-		/i'e/ ~ /iye/ as additional Shizunai minimal pairs, and concludes that "one cannot say,
-		without specifying dialect, that わたり /y/ /w/ are non-phonemic"
-		<Ref k="okuda2025" /> ‹contested›.
+		In Okuda's account of Satō (2003), Chitose glide insertion occurs at a relatively
+		surface level within phonology, after derivation involving person prefixes such as
+		<i lang="ain-Latn">ku=</i>. It interacts with vowel-to-glide conversion. Thus an
+		inserted glide can have phonological status without being present at the deepest
+		level of the derivation <Ref k="okuda2025" p="42–43" />. Shiraishi also reports
+		Satō's evidence that the occurrence of glides depends on morphological context
+		<Ref k="shiraishi2022" p="§4.3" />.
 	</p>
 	<p>
-		<strong>Satō's two-process analysis (Chitose).</strong> Satō (2003, cited in Shiraishi
-		2022 §4.3) proposes that in Chitose, [y] and [w] in sequences /ie/, /ia/, /io/, /iu/,
-		/ue/, /ua/, /uo/ at a morpheme boundary occur in the same phonetic environment as their
-		glottal-stop-bearing counterparts and contrast with them; he therefore posits underlying
-		/y/ /w/ phonemes in those contexts. The glide after <i lang="ain-Latn">ku-</i> and
-		<i lang="ain-Latn">e=</i> prefixes, by contrast, arises through surface glide formation
-		(i → y, u → w) — a distinct process from lexical /y/ /w/. The analysis thus involves two
-		interacting processes: underlying phonemes in some contexts, and surface-phonological
-		glide formation in others <Ref k="shiraishi2022" p="§4.3" /> ‹contested›.
-	</p>
-	<p>
-		In Saru and Chitose the nominalizer-allomorphy and double-glide diagnostics do not reveal
-		evidence for underlying /y/ /w/ at the prefix boundaries treated in §3; the non-phonemic
-		analysis is adopted for those varieties. In Shizunai the accentless system exposes a
-		contrast masked elsewhere, and the glides there are phonemically distinct from [ʔ]. The
-		question is structurally linked to the /ʔ/-phoneme debate — positing /ʔ/ at all
-		vowel-initial syllables reanalyses the Shizunai contrasts differently — and both are
-		considered together in <Xr ch="glottal-stop" /> ‹contested›.
+		Accent-bearing varieties therefore remain part of the disagreement about glide
+		phonemicity. The Shizunai evidence does not establish a general division into
+		phonemic glides in accentless varieties and non-phonemic glides in accent varieties.
+		Okuda also distinguishes the status of glides from the choice between a laryngeal
+		segment and syllable-boundary representations <Ref k="okuda2025" p="43–44" />;
+		see <Xr ch="glottal-stop" />.
 	</p>
 </S>
