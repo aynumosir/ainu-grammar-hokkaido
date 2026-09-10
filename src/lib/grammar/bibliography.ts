@@ -697,6 +697,9 @@ export const bibliography: Record<string, BibEntry> = {
 		year: '2025',
 		title: 'アイヌ語のわたり音と母音連続',
 		titleTr: 'Glides and vowel hiatus in Ainu',
+		container: '北海道方言研究会50周年記念論集 生活語の半世紀（北海道方言研究会叢書7）',
+		pages: '40–45',
+		url: 'https://pub.sgu.ac.jp/~okuda/hokkaidohogen/50th_parts/50th040-045.pdf',
 		lang: 'ja'
 	},
 	ochiai2023: {

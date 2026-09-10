@@ -4,16 +4,14 @@
 
 <S t="Laryngeal consonants" id="overview">
 	<p>
-		Hokkaido Ainu has one laryngeal phoneme, /h/, and a phonetically audible glottal closure [ʔ]
-		whose phonological status divides analysts. The two laryngeal elements have distinct
-		distributional profiles: /h/ occupies the onset of its syllable with vowel-conditioned
-		allophony; [ʔ] marks the onset of vowel-initial syllables as a phonetically automatic boundary
-		cue in the majority analysis, though it functions as a lexically contrastive phoneme in the
-		accentless Shizunai dialect
-		<Ref k="nakagawa2024" p="31–33" />; <Ref k="shiraishi2022" p="§4.3" />;
-		<Ref k="okuda2025" />.
+		The laryngeal consonant /h/ occupies syllable onsets. Glottal closure [ʔ] can occur
+			before a vowel-initial syllable, but its realization and phonological interpretation
+			vary. Nakagawa treats it as a phonetic boundary element
+			<Ref k="nakagawa2024" p="31–33" />; Shiraishi reviews the competing phonemic and
+			non-phonemic accounts <Ref k="shiraishi2022" p="§4.3" />. Okuda's Shizunai evidence
+			supports lexical contrasts involving glides while allowing an analysis of glottal
+			realizations through syllable boundaries <Ref k="okuda2025" p="41, 43–44" /> ‹contested›.
 	</p>
-
 	<table>
 		<thead>
 			<tr>
@@ -36,13 +34,13 @@
 			<tr>
 				<td>[ʔ]</td>
 				<td>
-					allophone / boundary marker in accent dialects (dominant analysis); phoneme /ʔ/ in
-					Shizunai <Ref k="okuda2025" />
+					phonemic or syllable-boundary analysis, depending on the account
+					<Ref k="shiraishi2022" p="§4.3" />; <Ref k="okuda2025" p="43–44" />
 				</td>
 				<td>vowel onsets at word-initial and juncture positions</td>
 				<td>
-					phonemic contrast with [w] demonstrated for Shizunai; no monomorphemic minimal pair in
-					accent-dialect varieties <Ref k="nakagawa2024" p="31–33" />
+					Shizunai contrasts can be represented with a laryngeal segment or with syllable
+					boundaries <Ref k="okuda2025" p="41, 44" />
 				</td>
 			</tr>
 		</tbody>
@@ -52,11 +50,11 @@
 <S t="The glottal stop [ʔ]" id="glottal">
 	<S t="Phonetic distribution" id="distribution">
 		<p>
-			A glottal onset [ʔ] is phonetically present before every vowel-initial syllable in Hokkaido
-			Ainu — word-initially and at internal morpheme and word junctures.
-			<Ref k="nakagawa2024" p="31" /> traces the earliest systematic observation to Kindaichi
-			(1928), a Tōhoku-Japanese speaker who characterized Ainu as inserting a glottal closure
-			before each vowel-initial syllable. The stop's auditory salience varies with phonetic
+			A glottal onset can occur word-initially or at an internal syllable boundary.
+			Nakagawa describes variation between speakers in its word-initial realization
+			<Ref k="nakagawa2024" p="32" />. Shiraishi reports Kindaichi's (1928) observation
+			of frequent glottal closure before vowel-initial syllables
+			<Ref k="shiraishi2022" p="§2.2" />. Its auditory salience also varies with phonetic
 			context. Tamura (1970: 586–587, cited via <Ref k="shiraishi2022" p="§4.3" />) distinguishes
 			a perceptible stop — arising when the following vowel carries lexical accent and/or occurs
 			in a closed syllable — from a barely perceptible transition that amounts to no more than the
@@ -80,7 +78,7 @@
 					<td>Tamura 1970: 586, cited via <Ref k="shiraishi2022" p="§4.3" /></td>
 				</tr>
 				<tr>
-					<td>vowel-initial syllable; following vowel unaccented and/or in an open syllable</td>
+					<td>vowel-initial syllable; the preceding conditions are not fully met</td>
 					<td>[ʔ] minimal or absent; gradual onset tension</td>
 					<td>Tamura 1970: 586–587, cited via <Ref k="shiraishi2022" p="§4.3" /></td>
 				</tr>
@@ -88,21 +86,19 @@
 					<td>after a coda consonant that resyllabifies onto the following vowel</td>
 					<td>[∅]; coda consonant fills the onset slot</td>
 					<td>
-						<Ref k="nakagawa2024" p="43" />; see <Xr ch="syllable-template" />
+						<Ref k="shiraishi2022" p="§4.4" />; see <Xr ch="syllable-template" />
 					</td>
 				</tr>
 			</tbody>
 		</table>
 
 		<p>
-			The HA syllable canon (C)V(C) permits at most one onset consonant per syllable
-			(see <Xr ch="syllable-template" />). When a preceding morpheme ends in a consonant, that
-			consonant resyllabifies as the onset of the following vowel-initial syllable:
-			<i lang="ain-Latn">cip-o</i> → [ci.po] 'board a boat',
+			A consonant can resyllabify as the onset of a following vowel-initial morpheme:
+			<i lang="ain-Latn">cip-o</i> → [ci.po] 'board a boat' and
 			<i lang="ain-Latn">mat-ak</i> → [ma.tak] 'younger sister'
-			<Ref k="nakagawa2024" p="43" />. No [ʔ] appears in those resyllabified forms, because the
-			onset slot is already filled. The glottal closure thus marks syllables whose onset position
-			remains empty — a phonetically automatic default rather than a lexically specified segment.
+			<Ref k="shiraishi2022" p="§4.4" />. Shiraishi also describes occasional blocking,
+			with a glottal stop before the vowel. Both resyllabification and glottal realization
+			must therefore be accounted for in the analysis of junctures.
 		</p>
 	</S>
 
@@ -123,38 +119,40 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><strong>phonemic /ʔ/</strong></td>
-					<td>Hattori (1961); Tamura (early work)</td>
+					<td><strong>laryngeal phoneme /’/</strong></td>
+					<td>Hattori (1961), discussed by Okuda</td>
 					<td>
-						(i) Positing /ʔ/ reduces the syllable canon to only CV and CVC — an economy gain.
-						(ii) The distribution of [w] versus [ʔ] at some junctures resists full derivation from
-						higher-level rules alone <Ref k="nakagawa2024" p="31" />.
+						Positing an initial laryngeal segment reduces the syllable inventory to CV and CVC.
+						Hattori's /’/ is not simply identical to the audible stop [ʔ]
+						<Ref k="okuda2025" p="43–44" />; see also
+						<Ref k="nakagawa2024" p="31–32" />.
 					</td>
 				</tr>
 				<tr>
-					<td><strong>allophonic [ʔ], non-phonemic</strong></td>
+					<td><strong>phonetic boundary element, non-phonemic</strong></td>
 					<td>
 						Chiri (1942: 461) <Ref k="chiri1942" />; Refsing (1986: 68)
 						<Ref k="refsing1986" />; Nakagawa (2024) <Ref k="nakagawa2024" />
 					</td>
 					<td>
-						(i) No minimal pair exists in monomorphemic words: word-initial [e] and [ʔe] never
-						contrast. (ii) Positing /ʔ/ forces widespread deletion rules wherever resyllabification
-						applies. (iii) In accent dialects, the accent on
-						<i lang="ain-Latn">parúnpe</i> (accent on <i>-un-</i>, not σ1) is incompatible with
-						an underlying /ʔ/ filling the σ1 onset, which would make σ1 closed and predict accent
-						there by 原則1 (see <Xr ch="pitch-accent-placement-rule" />)
-						<Ref k="nakagawa2024" p="32–33, 44" />.
+						Nakagawa argues that glottal closure has limited distinctive function and that
+						positing /’/ requires additional deletion rules. In
+						<i lang="ain-Latn">parúnpe</i> 'tongue', an undeleted laryngeal onset on
+						<i lang="ain-Latn">un</i> would preserve the first constituent's final /r/ as
+						a coda: /par.’un.pe/. The observed syllabification /pa.run.pe/ and second-syllable
+						accent require deletion of that onset in such an analysis
+						<Ref k="nakagawa2024" p="32, 44" />.
 					</td>
 				</tr>
 			</tbody>
 		</table>
 
 		<p>
-			The accent argument applies only in pitch-accent varieties. In the accentless Shizunai
-			dialect it does not hold, and phonemic /ʔ/ has been demonstrated there (§ below). The
-			non-phonemic analysis stands for the accent-dialect majority and is adopted here for those
-			varieties <Ref k="chiri1942" p="461" /> ‹contested›.
+			The accent of <i lang="ain-Latn">parúnpe</i> is part of Nakagawa's argument about
+			the complexity of the analysis. It does not by itself make a laryngeal-phoneme
+			account impossible. For Shizunai, Okuda likewise permits both segmental and
+			syllable-boundary representations of glottal contrasts
+			<Ref k="okuda2025" p="44" /> ‹contested›.
 		</p>
 	</S>
 
@@ -241,45 +239,49 @@
 		</p>
 	</S>
 
-	<S t="The Shizunai minimal pair" id="shizunai">
+	<S t="Shizunai contrasts and their representation" id="shizunai">
 		<p>
-			The accentless Shizunai dialect (静内; classified as 無アクセント by
-			<Ref k="nakagawa2024" p="50" />; see <Xr ch="hokkaido-phonological-microvariation" />)
-			presents an environment in which [ʔ] and [w] carry lexical contrast. Okuda (2025), drawing
-			on fieldwork by 志賀雪湖, reports a minimal pair for juncture types that in accent varieties
-			are kept distinct by pitch placement rather than by the laryngeal itself
-			<Ref k="okuda2025" />:
+			Okuda reports a Shizunai pair discovered by 志賀雪湖:
+			[suwat] 'pothook' and [suʔat] 'pot bail'. Both are analysed etymologically as
+			<i lang="ain-Latn">su</i> 'pot' plus <i lang="ain-Latn">at</i> 'cord';
+			the pothook term is semantically less transparent. In Orita Suteno's variety,
+			Okuda finds no distinctive pitch accent, so the lexical distinction supplies
+			evidence for /w/. He gives /suwat/ beside /su’at/ or /suat/
+			<Ref k="okuda2025" p="41" /> ‹contested›.
 		</p>
 
 		<Ex
 			m="suwat"
 			g="pothook"
-			tr="pothook (hook above the hearth for suspending pots)"
-			cite="okuda2025"
+			tr="Pothook."
+			cite="okuda2025:41"
 			dial="SHI"
-			note="Pronounced [suwat]. An opaque compound; the /w/ belongs to the fossilized root and does not derive from the compositional glide-epenthesis rule."
+			note="Reported pronunciation [suwat]. Okuda relates the glide to the greater lexical integration of this compound; he analyses it as phonologically present."
 		/>
-
 		<Ex
-			m="su at"
-			g="pot cord"
-			tr="pot handle (the wire bail of a pot)"
-			cite="okuda2025"
+			m="su-at"
+			g="pot-cord"
+			tr="Pot bail."
+			cite="okuda2025:41"
 			dial="SHI"
-			note="Pronounced [suʔat]. A transparent compound of su 'pot, kettle' and at 'rope, cord'. In Shizunai the juncture [ʔ] at the su–at boundary is in contrastive distribution with the /w/ of suwat above."
+			note="Reported pronunciation [suʔat]. Okuda allows phonological representations /su’at/ and /suat/; the contrast does not require a separate glottal-stop phoneme."
 		/>
 
 		<p>
-			Because Shizunai lacks distinctive pitch accent, the contrast [suwat] : [suʔat] cannot be
-			attributed to accent-placement differences as it would be in an accent dialect.
-			Okuda (2025) concludes that in Shizunai both the glide /w/ and the [ʔ] at transparent
-			compound boundaries are phonemic, and adds the explicit caution that this finding does not
-			generalize: "one cannot say, without specifying dialect, that the transitional glide y/w is
-			non-phonemic" <Ref k="okuda2025" />.
-			Parallel contrasts are reported for /u<i>ʔ</i>a/ : /u<i>w</i>a/ and
-			/i<i>ʔ</i>o/ : /i<i>y</i>o/ in Shizunai <Ref k="okuda2025" /> ‹contested›.
-			The glide phonemicity question across Hokkaido dialects is examined in
-			<Xr ch="glides-w-y" />.
+			Okuda also describes contrasts between /u’a/ and /uwa/, /u’e/ and /uwe/,
+			/i’o/ and /iyo/, and /i’e/ and /iye/. He notes that weakening of /w/, /y/ and /’/
+			can make their phonetic realizations overlap <Ref k="okuda2025" p="41" />.
+			His conclusion concerns the phonological status of the glides; it leaves room
+			for different representations of the glottal element.
+		</p>
+		<p>
+			The distinction between [tʃiʃʔekot] 'cry to death' and [tʃisekot] 'house site'
+			makes the alternatives explicit. Okuda represents the former as
+			<i lang="ain-Latn">cis’ekot</i> with a laryngeal segment or
+			<i lang="ain-Latn">cis.e.kot</i> with syllable boundaries; the latter has
+			<i lang="ain-Latn">ci.se.kot</i>. Thus a contrast involving glottal realization
+			can be expressed through syllabification <Ref k="okuda2025" p="44" />.
+			For the competing analyses of glides, see <Xr ch="glides-w-y" />.
 		</p>
 	</S>
 </S>

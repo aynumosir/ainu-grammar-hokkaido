@@ -6,7 +6,7 @@
 	<p>
 		This index lists every source from which an interlinear example is drawn, with the chapters
 		in which its examples appear and the number of examples taken from it. It is generated from the
-		937 attested and constructed examples across the grammar; constructed examples are
+		935 attested and constructed examples across the grammar; constructed examples are
 		attributed to the source whose analysis they illustrate. Full bibliographic details are in
 		<Xr ch="consolidated-references-bibliography" />.
 	</p>
@@ -85,7 +85,7 @@
 	<table>
 		<thead><tr><th>Dialect / label</th><th>Examples</th></tr></thead>
 		<tbody>
-			<tr><td>SAR</td><td>434</td></tr>
+			<tr><td>SAR</td><td>432</td></tr>
 			<tr><td>HK</td><td>163</td></tr>
 			<tr><td>CHI</td><td>120</td></tr>
 			<tr><td>SHI</td><td>30</td></tr>
