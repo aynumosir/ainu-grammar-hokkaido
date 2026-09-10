@@ -500,92 +500,42 @@
 	</p>
 </S>
 
-<S t="The *CVVC constraint and glide-blocking" id="cvvc">
+<S t="Syllable structure and vowel weakening" id="cvvc">
 	<p>
-		The exclusion of CVVC syllables has a direct morphophonological consequence. In southern
-		Hokkaido dialects (Saru, Chitose, Mukawa), the vowel /u/ of the first-person agent
-		prefix <i lang="ain-Latn">ku=</i> deletes before a stem-initial /a e u o/, and the vowel
-		/i/ of an /i/-initial stem weakens to the glide /y/ in the same environment. The
-		weakening applies when the stem's first syllable is <em>open</em> (CV onset + vowel):
-		<i lang="ain-Latn">ku=ipe</i> 'I eat a meal' surfaces as
-		<i lang="ain-Latn">ku=ype</i> [kúype], since the first syllable of <i lang="ain-Latn">ipe</i>
-		is open (V) and weakening to /y/ gives the licit shape CVC + CV (<i lang="ain-Latn">ku.ype</i>).
+		Nakagawa describes a restriction on stem-initial /i/ weakening after personal
+		prefixes in Saru and Chitose. With <i lang="ain-Latn">ipe</i> 'eat a meal',
+		the initial syllable /i/ is open (V), and <i lang="ain-Latn">ku=ipe</i> becomes
+		/kúype/. The resulting syllables are /kuy.pe/, CVC.CV: /y/ closes the first
+		syllable <Ref k="nakagawa2024" p="52" />.
 	</p>
-
 	<p>
-		When the stem's first syllable is <em>closed</em> (CVC), weakening is blocked. The
-		form is <i lang="ain-Latn">ku=ikra</i> [ku.ík.ra], not
-		*<i lang="ain-Latn">ku=ykra</i>: if /i/ weakened to /y/, the resulting sequence
-		/kuykra/ would be unsyllabifiable under (C)V(C) — the three-consonant cluster /ykr/
-		cannot be distributed between two (C)V(C) syllables without creating either a CC onset
-		or a CC coda <Ref k="nakagawa2024" p="52–53" />;
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›. Nakagawa's
-		published example for this blocking is <i lang="ain-Latn">kuínkar</i> (not
-		*<i lang="ain-Latn">kuynkar</i>) 'I look' (2024: 53): the first syllable of
-		<i lang="ain-Latn">inkar</i> is closed (/in/), so the hiatus is retained rather than
-		resolved by weakening.
+		With <i lang="ain-Latn">inkar</i> 'look' and <i lang="ain-Latn">ikka</i> 'steal',
+		the initial syllables /in/ and /ik/ are closed (VC). Weakening would produce
+		/kuynkar/ and /kuykka/, whose three-consonant sequences /ynk/ and /ykk/ cannot
+		be distributed between two (C)V(C) syllables. Nakagawa instead gives /kuínkar/
+		and /kuíkka/, retaining the vowel <Ref k="nakagawa2024" p="53" />. This blocking
+		follows from the consonant sequence created by weakening. The retained vowels
+		belong to separate syllables; they do not form a CVVC syllable.
 	</p>
-
-	<p>
-		The contrast between the two environments:
-	</p>
-
 	<table>
-		<caption>
-			Weakening across the person-prefix boundary. The
-			<i lang="ain-Latn">ku=inkar</i> row is Nakagawa's published example of the blocking
-			<Ref k="nakagawa2024" p="53" />; the <i lang="ain-Latn">ku=ikra</i> rows apply the
-			same rule to another attested stem.
-		</caption>
-		<thead>
-			<tr>
-				<th>prefix</th>
-				<th>stem</th>
-				<th>first σ of stem</th>
-				<th>surface form</th>
-				<th>parse</th>
-			</tr>
-		</thead>
+		<caption>Person-prefix examples in Nakagawa (2024: 52–53); dots show syllable boundaries</caption>
+		<thead><tr><th>input</th><th>first syllable of stem</th><th>result with syllable boundaries</th><th>syllable shapes</th></tr></thead>
 		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">ku=</i></td>
-				<td><i lang="ain-Latn">ipe</i> 'eat a meal'</td>
-				<td>open: /i/ (V)</td>
-				<td><i lang="ain-Latn">ku=ype</i> [kúy.pe]</td>
-				<td>CVC.CV — licit</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">ku=</i></td>
-				<td><i lang="ain-Latn">inkar</i> 'look'</td>
-				<td>closed: /in/ (VC)</td>
-				<td><i lang="ain-Latn">ku=inkar</i> [ku.ín.kar]</td>
-				<td>CV.VC.CVC — licit</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">ku=</i></td>
-				<td><i lang="ain-Latn">ikra</i> 'send'</td>
-				<td>closed: /ik/ (VC)</td>
-				<td><i lang="ain-Latn">ku=ikra</i> [ku.ík.ra]</td>
-				<td>CV.VC.CV — licit</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">ku=</i></td>
-				<td><i lang="ain-Latn">ikra</i> 'send'</td>
-				<td>closed: /ik/ (VC)</td>
-				<td>*<i lang="ain-Latn">ku=ykra</i></td>
-				<td>*unsyllabifiable — illicit</td>
-			</tr>
+			<tr><td><i lang="ain-Latn">ku=ipe</i></td><td>/i/, V</td><td>/kúy.pe/</td><td>CVC.CV</td></tr>
+			<tr><td><i lang="ain-Latn">e=itak</i></td><td>/i/, V</td><td>/éy.tak/</td><td>VC.CVC</td></tr>
+			<tr><td><i lang="ain-Latn">ku=inkar</i></td><td>/in/, VC</td><td>/ku.ín.kar/</td><td>CV.VC.CVC</td></tr>
+			<tr><td><i lang="ain-Latn">ku=ikka</i></td><td>/ik/, VC</td><td>/ku.ík.ka/</td><td>CV.VC.CV</td></tr>
 		</tbody>
 	</table>
-
 	<p>
-		The same principle holds for the second-person prefix
-		<i lang="ain-Latn">e=</i>: <i lang="ain-Latn">e=itak</i> → <i lang="ain-Latn">eytak</i>
-		'you speak' (open stem, weakening permitted), but
-		<i lang="ain-Latn">e=ikra</i> [e.ík.ra] 'you send' (closed stem, hiatus retained)
-		<Ref k="nakagawa2024" p="40, 52–53" />. The full allomorphy paradigm for
-		<i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, and
-		<i lang="ain-Latn">ci=</i> under vowel deletion and glide-weakening is set out in
+		The community comparison with <i lang="ain-Latn">ku=ikra</i> extends the same
+		explanation to /ykr/. The associated discussion of <i lang="ain-Latn">eikra</i>
+		concerns a lexical verb 'send', as in <i lang="ain-Latn">k(u)=éikra</i>
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-suggested›;
+		Tamura also lists this verb <Ref k="tamura1996" p="s.v. eikra" />.
+		For the derivational comparisons and their evidence, see
+		<Xr ch="glide-epenthesis-hiatus-resolution" s="cvvc-block" />. For the separate
+		deletion of the prefix vowel before /a e u o/, see
 		<Xr ch="personal-affix-sandhi-connected-speech-reduction" />.
 	</p>
 </S>

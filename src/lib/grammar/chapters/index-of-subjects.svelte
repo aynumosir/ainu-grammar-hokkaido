@@ -939,6 +939,8 @@
 		<li>Suppletive verbal number — <Xr ch="sakhalin-contrast-text" /></li>
 		<li>Syllabification — <Xr ch="syllable-template" /></li>
 		<li>Syllabification and pitch-accent placement — <Xr ch="glides-w-y" /></li>
+		<li>Syllable structure and blocked vowel weakening — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
+		<li>Syllable structure and vowel weakening — <Xr ch="syllable-template" /></li>
 		<li>Syllable weight and the placement rule — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
 		<li>Syllable-count orientation — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
 		<li>Symmetry and subordinate asymmetry — <Xr ch="negation-somo-standard-clausal" /></li>
@@ -967,8 +969,6 @@
 		<li>The -p/-pe nominalizer at word level — <Xr ch="deverbal-denominal-noun-derivation" /></li>
 		<li>The 'pretend to' construction — <Xr ch="reflexive-possessive-si" /></li>
 		<li>The (C)V(C) template — <Xr ch="syllable-template" /></li>
-		<li>The *CVVC constraint and glide-blocking — <Xr ch="syllable-template" /></li>
-		<li>The *CVVC constraint as a blocker of glide formation — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>The *g / *hd / *s tangle: two scenarios — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
 		<li>The /i/-initial block and vowel weakening — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
 		<li>The /r/ coda series — <Xr ch="katakana-and-small-kana-codas" /></li>

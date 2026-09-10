@@ -41,7 +41,8 @@
 
 	<table>
 		<caption>
-			Table 1. Deletion and weakening at the ku= / ci= juncture, Saru/Chitose/Mukawa
+			Table 1. Deletion and weakening at the ku= / ci= juncture. Nakagawa (2024: 52–53)
+			describes weakening for Saru and Chitose; the deletion discussion also includes Mukawa.
 		</caption>
 		<thead>
 			<tr>
@@ -73,14 +74,14 @@
 			<tr>
 				<td>/i/ — open σ1</td>
 				<td><i lang="ain-Latn">ku=ipe</i></td>
-				<td><i lang="ain-Latn">ku=ype</i> [kuˈype]</td>
+				<td><i lang="ain-Latn">ku=ype</i> /kúype/</td>
 				<td>stem /i/ → [j]; NO marker deletion (§3)</td>
 			</tr>
 			<tr>
 				<td>/i/ — closed σ1</td>
-				<td><i lang="ain-Latn">ku=ikra</i></td>
-				<td><i lang="ain-Latn">ku=ikra</i></td>
-				<td>no change; both processes blocked (§3)</td>
+				<td><i lang="ain-Latn">ku=inkar</i></td>
+				<td>/kuínkar/</td>
+				<td>marker deletion does not apply; weakening blocked by /ynk/ (§3)</td>
 			</tr>
 		</tbody>
 	</table>
@@ -94,49 +95,52 @@
 	<Ex
 		m="ku=omare"
 		ain="k=omare"
-		g="1SG.A=exit"
-		tr="I go out."
-		note="Underlying ku=omare; in the Saru and Chitose dialects the /u/ of ku= deletes before the /o/-initial stem, yielding the spoken form k=omare [koˈmaɾe]. Standard romanized orthography writes the underlying form."
-		constructed
+		g="1SG.A=put.into"
+		tr="I put it into something."
+		note="Nakagawa derives ku=ómare → k=ómare /kómare/. The /u/ of ku= deletes before the /o/-initial stem after accent placement."
+		cite="nakagawa2024:52"
+		place="Saru and Chitose"
 	/>
 </S>
 
 <S t="The /i/-initial block and vowel weakening" id="i-block">
 	<p>
-		When the stem begins with /i/, deletion of <i lang="ain-Latn">ku=</i>'s /u/ is blocked; the
-		stem-initial /i/ instead undergoes 母音弱化 (vowel weakening), becoming the glide [j]:
-		<i lang="ain-Latn">ku=ipe</i> → <i lang="ain-Latn">ku=ype</i> /kuˈype/, while
-		*<i lang="ain-Latn">k=ipe</i> is ungrammatical <Ref k="nakagawa2024" p="52" />;
-		<Ref k="sato2008" p="xii" />. The same process operates with <i lang="ain-Latn">e=</i>:
-		<i lang="ain-Latn">e=itak</i> → <i lang="ain-Latn">eytak</i> [ejˈtak] 'your words / you
-		speak' <Ref k="nakagawa2024" p="40" />. The weakening process (/i/ → [j] after a
-		vowel-final prefix) is described in broader scope in
-		<Xr ch="glide-epenthesis-hiatus-resolution" />.
+		Nakagawa describes stem-initial /i/ weakening to /y/ after <i lang="ain-Latn">ku=</i>
+		and <i lang="ain-Latn">e=</i> in Saru and Chitose:
+		<i lang="ain-Latn">ku=ipe</i> → /kúype/ 'I eat a meal' and
+		<i lang="ain-Latn">e=itak</i> → /éytak/ 'you speak'
+		<Ref k="nakagawa2024" p="52" />. In these examples, the marker vowel is retained,
+		and the stem's /i/ becomes a coda: /kuy.pe/ and /ey.tak/.
+		For derivational-prefix examples, see <Xr ch="glide-epenthesis-hiatus-resolution" />.
 	</p>
-
 	<p>
-		A second environment blocks weakening: when the stem's first syllable is closed (CVC), the
-		result of weakening would produce an illicit consonant cluster. The stem
-		<i lang="ain-Latn">ikra</i> has σ1 = <i lang="ain-Latn">ik</i> (coda /k/); weakening
-		would yield the onset sequence /k-jk-/, which violates the (C)V(C) syllable canon
-		(<Xr ch="syllable-template" />). Accordingly <i lang="ain-Latn">ku=ikra</i> is the only
-		licit form: neither *<i lang="ain-Latn">ku=ykra</i> nor *<i lang="ain-Latn">k=ikra</i>
-		arises <Ref k="nakagawa2024" p="53" />;
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›. By contrast,
-		stems with an open /i/-initial syllable do undergo weakening:
-		<i lang="ain-Latn">eytasa</i> (&lt; <i lang="ain-Latn">e=</i> + <i lang="ain-Latn">itasa</i>)
-		and <i lang="ain-Latn">eywanke</i> (&lt; <i lang="ain-Latn">e=</i> +
-		<i lang="ain-Latn">iwanke</i>) both show the [j] glide
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.
+		In <i lang="ain-Latn">inkar</i> 'look' and <i lang="ain-Latn">ikka</i> 'steal',
+		the first syllable is closed: /in/ or /ik/, of shape VC. Nakagawa gives
+		/kuínkar/ and /kuíkka/. Weakening would create /ynk/ or /ykk/, three consonants
+		that cannot fit between two (C)V(C) syllable nuclei
+		<Ref k="nakagawa2024" p="53" />. A community discussion gives the analogous
+		judgment <i lang="ain-Latn">ku=ikra</i>, rejecting
+		*<i lang="ain-Latn">ku=ykra</i> and *<i lang="ain-Latn">k=ikra</i>
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-suggested›.
+	</p>
+	<p>
+		That discussion also compares the lexical verbs <i lang="ain-Latn">eikra</i>
+		'send' and <i lang="ain-Latn">eywanke</i> 'use' with the adverb
+		<i lang="ain-Latn">eytasa</i> 'too; very'. Their meanings and word classes are
+		listed by Tamura <Ref k="tamura1996" p="s.vv. eikra, eywanke, eytasa" />.
+		The discussion proposes derivations with <i lang="ain-Latn">e-</i>; it does not
+		present these words as second-person forms of <i lang="ain-Latn">ikra</i>,
+		<i lang="ain-Latn">iwanke</i>, or <i lang="ain-Latn">itasa</i>.
 	</p>
 
 	<Ex
 		m="ku=ipe"
 		ain="ku=ype"
-		g="1SG.A=eat"
-		tr="I eat."
-		note="Underlying ku=ipe; the /u/ of ku= is retained (deletion is blocked before /i/), and the stem-initial /i/ weakens to the glide [j], giving ku=ype [kuype]. The form *k=ipe is ungrammatical."
-		constructed
+		g="1SG.S=eat.meal"
+		tr="I eat a meal."
+		note="Nakagawa gives /kúype/. The /u/ of ku= is retained, while the stem-initial /i/ becomes the coda /y/."
+		cite="nakagawa2024:52"
+		place="Saru and Chitose"
 	/>
 </S>
 
@@ -341,9 +345,9 @@
 	</p>
 
 	<p>
-		The phonological evidence surveyed in this chapter shows that the personal markers — written
-		uniformly with <code>=</code> — occupy different positions along the clitic-to-affix
-		cline. Three independent diagnostics converge on the same two-way split:
+		Accent placement, vowel deletion, and juncture realization provide evidence about how
+		personal markers combine with their hosts. These patterns differ in scope and do not
+		establish a single ranking of all markers:
 	</p>
 
 	<ul>
@@ -356,25 +360,22 @@
 		</li>
 		<li>
 			<strong>Vowel deletion</strong>: only <i lang="ain-Latn">ku=</i> and
-			<i lang="ain-Latn">ci=</i> lose their vowels before non-/i/ stems in the southern
-			dialects, marking them as the most tightly bonded members of the marker paradigm (§2
-			above; <Ref k="nakagawa2024" p="52" paren />).
+			<i lang="ain-Latn">ci=</i> lose their vowels before stem-initial /a/, /e/, /u/, or /o/
+			in the dialects described in §2 above (<Ref k="nakagawa2024" p="52" paren />).
 		</li>
 		<li>
-			<strong>Juncture opacity</strong>: the <i lang="ain-Latn">=an</i> boundary blocks the
-			resyllabification that is otherwise permitted at morpheme-internal junctures, placing it
-			above the level of a derivational suffix in phonological independence (§5 above;
-			<Ref k="aynucorporadiscord" /> nukopoli, 2023-12-27, ‹speculative›).
+			<strong>Juncture variation</strong>: reported <i lang="ain-Latn">=an</i> realizations
+			include joined forms and glottal boundaries. These observations do not establish
+			obligatory blocking of resyllabification or rank the boundary against derivational
+			suffixes (§5 above; <Ref k="aynucorporadiscord" /> nukopoli, 2023-12-27 and
+			2024-03-18, ‹corpus-suggested›).
 		</li>
 	</ul>
 
 	<p>
-		The three criteria jointly define a gradient: inner clitics &gt; outer clitics &gt;
-		independent words, with <i lang="ain-Latn">ku=</i> and <i lang="ain-Latn">ci=</i> the most
-		tightly integrated members and <i lang="ain-Latn">=an</i> the loosest. A parallel gradation
-		in morphophonological tightness across person-marking sub-classes has been documented for
-		Sakhalin Ainu <Ref k="sakaguchi2024" paren />, providing a comparative point for the
-		Hokkaido two-way split. The morphosyntactic diagnostics for the Hokkaido system are taken up
+		The juncture observations leave the relative phonological independence of
+		<i lang="ain-Latn">=an</i> unresolved. The morphosyntactic diagnostics for the Hokkaido
+		system are taken up
 		in <Xr ch="person-marking-architecture" /> and the template position of each marker in
 		<Xr ch="personal-affix-template-and-ordering" />.
 	</p>

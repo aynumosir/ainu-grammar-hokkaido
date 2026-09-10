@@ -147,114 +147,87 @@
 	</S>
 </S>
 
-<S t="The *CVVC constraint as a blocker of glide formation" id="cvvc-block">
+<S t="Syllable structure and blocked vowel weakening" id="cvvc-block">
 	<p>
-		The (C)V(C) syllable canon prohibits consonant clusters in onset position and disallows
-		more than one vowel per syllable <Ref k="nakagawa2024" p="41–42" />;
-		<Ref k="shiraishi2022" p="§4.1" />. When glide formation at a morpheme boundary would
-		produce a string that violates this canon, the process is blocked.
+		Nakagawa describes weakening of stem-initial /i/ after personal prefixes in Saru
+		and Chitose. In <i lang="ain-Latn">ku=ipe</i> → /kúype/ 'I eat a meal', /i/
+		becomes the coda /y/ of the preceding syllable: /kuy.pe/, CVC.CV. With
+		<i lang="ain-Latn">e=itak</i> → /éytak/ 'you speak', the first syllable is /ey/,
+		VC <Ref k="nakagawa2024" p="52" />. The stem-initial syllables /i/ in
+		<i lang="ain-Latn">ipe</i> and <i lang="ain-Latn">itak</i> are open, of shape V.
 	</p>
 	<p>
-		The first-person-singular agent prefix <A w="ku-" gl="1SG.A" /> before a stem whose
-		first syllable is closed (CVC) shows the blocking most directly. In /ku-ikra/ 'I send
-		it', weakening the stem-initial /i/ to [y] would place [y] immediately before the coda
-		/k/ of <i lang="ain-Latn">ikra</i>'s first syllable, producing *[yk] — an illicit CC
-		onset at the following syllable boundary. The vowel is therefore not weakened:
-		<i lang="ain-Latn">ku-ikra</i> is the surface form, with the vowel hiatus [ku.ik.ra]
-		maintained <Ref k="nakagawa2024" p="52–53" />;
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.
+		Nakagawa's contrasting examples are <i lang="ain-Latn">inkar</i> 'look' and
+		<i lang="ain-Latn">ikka</i> 'steal', with initial closed syllables /in/ and /ik/
+		(VC). Weakening would produce /kuynkar/ and /kuykka/, containing three consecutive
+		consonants, /ynk/ and /ykk/. Under the (C)V(C) syllable pattern, these cannot be
+		distributed between a coda and the next onset. Nakagawa gives /kuínkar/ and /kuíkka/,
+		with /i/ retained <Ref k="nakagawa2024" p="53" />. This restriction concerns the
+		consonant sequence created by weakening; glide insertion adds an onset without
+		removing a vowel nucleus and has its own conditions
+		<Ref k="shiraishi2022" p="§4.3" />.
 	</p>
-
 	<Ex
-		m="ku-ikra"
-		g="1SG.A=send"
-		tr="I send it/them"
-		note="Stem-initial /i/ is not weakened to [y]: *ku-ykra would create the illicit onset cluster [yk]. Surface form: [ku.ik.ra] with vowel hiatus maintained. Contrast ku-ipe → ku-ype (§5), where the stem begins with an open syllable."
-		constructed
-		dial="SAR"
+		m="ku=inkar"
+		ain="kuínkar"
+		g="1SG.S=look"
+		tr="I look."
+		cite="nakagawa2024:53"
+		place="Saru and Chitose"
+		note="Nakagawa gives /kuínkar/. Initial /i/ remains a vowel; weakening would produce the three-consonant sequence /ynk/ in /kuynkar/."
 	/>
-
-	<p>
-		The applicative prefix <A w="e=" gl="APPL" /> before the same stem provides a parallel:
-		/e=ikra/ cannot surface as *[eykra] because [yk] is an illicit onset. The actual form
-		is <i lang="ain-Latn">eíkra</i> [e.ík.ra], where the /i/ of
-		<i lang="ain-Latn">ikra</i> bears accent as a syllable nucleus — confirming it has not
-		been reduced to a glide <Ref k="nakagawa2024" p="52–53" />;
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›. The open-σ1
-		stems <i lang="ain-Latn">itasa</i> and <i lang="ain-Latn">iwanke</i> contrast with
-		<i lang="ain-Latn">ikra</i>: e= + itasa → <i lang="ain-Latn">eytasa</i>; e= + iwanke
-		→ <i lang="ain-Latn">eywanke</i>. The open first syllable (CV) of those stems permits
-		the glide without creating a cluster.
-	</p>
-
 	<table>
-		<caption>Table 2. The *CC-onset block and the open-syllable licence</caption>
-		<thead>
-			<tr>
-				<th>input</th>
-				<th>σ1 shape</th>
-				<th>would-be surface</th>
-				<th>constraint</th>
-				<th>actual surface</th>
-			</tr>
-		</thead>
+		<caption>Table 2. Nakagawa's person-prefix examples (2024: 52–53)</caption>
+		<thead><tr><th>input</th><th>first syllable of stem</th><th>reported result</th><th>weakening</th></tr></thead>
 		<tbody>
-			<tr>
-				<td>/ku-ikra/</td>
-				<td>closed (CVC: <i lang="ain-Latn">ik-</i>)</td>
-				<td>*[kuykra]</td>
-				<td>*CC onset [yk]</td>
-				<td>[ku.ik.ra] ✓</td>
-			</tr>
-			<tr>
-				<td>/e=ikra/</td>
-				<td>closed (CVC: <i lang="ain-Latn">ik-</i>)</td>
-				<td>*[eykra]</td>
-				<td>*CC onset [yk]</td>
-				<td>[e.ík.ra] ✓</td>
-			</tr>
-			<tr>
-				<td>/ku-iunin/</td>
-				<td>open (CV: <i lang="ain-Latn">iu-</i>)</td>
-				<td>[kuyunin]</td>
-				<td>— (no cluster)</td>
-				<td>[ku.yu.nin] ✓</td>
-			</tr>
-			<tr>
-				<td>/e=itasa/</td>
-				<td>open (CV: <i lang="ain-Latn">i-</i>)</td>
-				<td>[eytasa]</td>
-				<td>— (no cluster)</td>
-				<td>[ey.ta.sa] ✓</td>
-			</tr>
+			<tr><td><i lang="ain-Latn">ku=ipe</i></td><td>/i/, V</td><td>/kúype/</td><td>/i/ → /y/</td></tr>
+			<tr><td><i lang="ain-Latn">e=itak</i></td><td>/i/, V</td><td>/éytak/</td><td>/i/ → /y/</td></tr>
+			<tr><td><i lang="ain-Latn">ku=inkar</i></td><td>/in/, VC</td><td>/kuínkar/</td><td>blocked: would create /ynk/</td></tr>
+			<tr><td><i lang="ain-Latn">ku=ikka</i></td><td>/ik/, VC</td><td>/kuíkka/</td><td>blocked: would create /ykk/</td></tr>
 		</tbody>
 	</table>
-
 	<p>
-		The constraint has direct practical consequences for corpus normalization. The io→iyo and
-		ue→uwe patterns cannot be applied uniformly across all morpheme boundaries: community
-		member thegodofneet (2025-04-24, <Ref k="aynucorporadiscord" />) notes that no form
-		*<i lang="ain-Latn">eciyoka</i> for <i lang="ain-Latn">eci-oka</i> is attested in the
-		corpus ‹corpus-confirmed›. A rule-based normalization that applied io→iyo or ue→uwe at
-		every juncture would produce unattested forms. Glide-bearing spellings are appropriate
-		only where the morphosyntactic conditions of §3 and the phonotactic licence of §4 are
-		jointly satisfied and where corpus evidence confirms the variant.
+		A community discussion extends this explanation to <i lang="ain-Latn">ku=ikra</i>
+		and the lexical verb <i lang="ain-Latn">eikra</i> 'send'. It gives
+		<i lang="ain-Latn">eíkra</i>, <i lang="ain-Latn">k(u)=éikra</i>, and
+		<i lang="ain-Latn">a=eíkra</i>, with person markers preceding the whole verb.
+		The same message proposes comparisons with <i lang="ain-Latn">eytasa</i>
+		(&lt; <i lang="ain-Latn">e- + itasa</i>) and <i lang="ain-Latn">eywanke</i>
+		(&lt; <i lang="ain-Latn">e- + iwanke</i>)
+		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-suggested›.
+		Tamura lists <i lang="ain-Latn">eikra</i> as a transitive verb 'send',
+		<i lang="ain-Latn">eytasa</i> as an adverb 'too; very', and
+		<i lang="ain-Latn">eywanke</i> as a transitive verb 'use'
+		<Ref k="tamura1996" p="s.vv. eikra, eytasa, eywanke" />.
+		These lexical entries establish the forms and meanings; the proposed derivational
+		comparison belongs to the community discussion.
+	</p>
+	<p>
+		Glide insertion is also sensitive to morphology. Shiraishi reports that
+		<i lang="ain-Latn">eci-</i> does not trigger it in Satō's account
+		<Ref k="shiraishi2022" p="§4.3" />. In a discussion of spelling normalization,
+		thegodofneet reports knowing no source that writes <i lang="ain-Latn">ecioka</i>
+		as <i lang="ain-Latn">eciyoka</i> and questions a uniform replacement rule
+		<Ref k="aynucorporadiscord" /> (2025-04-24) ‹corpus-suggested›.
+		This is a reported observation about insertion, not a corpus-wide count or an
+		instance of the three-consonant restriction on vowel weakening.
 	</p>
 </S>
 
 <S t="Vowel weakening after personal and applicative prefixes" id="vowel-weakening">
 	<p>
 		Vowel weakening (母音弱化) converts a stem-initial /i/ or /u/ to a glide after a
-		preceding prefix. No new segment is inserted; the high vowel already present at the stem
-		onset is converted to a consonantal element and loses the ability to bear accent
+		preceding prefix. The initial high vowel becomes a consonantal element and loses the ability
+		to bear accent
 		<Ref k="nakagawa2024" p="40" />. The process has been verified for Saru and Chitose;
 		its distribution in other Hokkaido varieties requires further documentation
 		<Ref k="nakagawa2024" p="40" />.
 	</p>
-	<p>The rules:</p>
 	<p>
-		<strong>R3</strong>&ensp;/i/ → [y] / V= ___ (stem-initial /i/, open first syllable)<br />
-		<strong>R4</strong>&ensp;/u/ → [w] / V= ___ (stem-initial /u/, open first syllable)
+		Nakagawa summarizes the changes as <strong>R3</strong> /i/ → /y/ and
+		<strong>R4</strong> /u/ → /w/ after a preceding element, usually a prefix
+		<Ref k="nakagawa2024" p="40" />. The examples below include derivational prefixes;
+		the personal-prefix examples and their syllable-structure restriction are given above.
 	</p>
 
 	<table>
@@ -271,37 +244,40 @@
 			<tr>
 				<td><i lang="ain-Latn">ko-</i> + <i lang="ain-Latn">itak</i></td>
 				<td><i lang="ain-Latn">koytak</i></td>
-				<td>APPL-speak 'talk to someone'</td>
+				<td>talk to someone</td>
 				<td><Ref k="nakagawa2024" p="40" /></td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">e-</i> + <i lang="ain-Latn">ikoytupa</i></td>
 				<td><i lang="ain-Latn">eykoytupa</i></td>
-				<td>APPL-talk.to.each.other</td>
+				<td>envy someone or something</td>
 				<td><Ref k="nakagawa2024" p="40" /></td>
 			</tr>
 			<tr>
 				<td><i lang="ain-Latn">e-</i> + <i lang="ain-Latn">ukoytak</i></td>
 				<td><i lang="ain-Latn">ewkoytak</i></td>
-				<td>APPL-RECP.speak</td>
+				<td>talk with each other about something</td>
 				<td><Ref k="nakagawa2024" p="40" /></td>
 			</tr>
 			<tr>
-				<td><i lang="ain-Latn">yayko=</i> + <i lang="ain-Latn">uepeker</i></td>
+				<td><i lang="ain-Latn">yayko-</i> + <i lang="ain-Latn">uepeker</i></td>
 				<td><i lang="ain-Latn">yaykowepeker</i></td>
-				<td>REFL.APPL=tell.story</td>
+				<td>ponder what to do in difficulty</td>
 				<td><Ref k="nakagawa2024" p="40" /></td>
 			</tr>
 		</tbody>
 	</table>
 
 	<p>
-		In <i lang="ain-Latn">koytak</i> (&lt; ko= + itak), the stem-initial /i/ of
-		<i lang="ain-Latn">itak</i> 'speak' weakens to [y]; in
-		<i lang="ain-Latn">yaykowepeker</i>, the stem-initial /u/ of
-		<i lang="ain-Latn">uepeker</i> weakens to [w]. The open-first-syllable restriction of §4
-		applies here: weakening is possible only when the stem's σ1 is open (CV), so no onset
-		cluster results.
+		In <i lang="ain-Latn">koytak</i> (&lt; <i lang="ain-Latn">ko- + itak</i>),
+		the initial /i/ of <i lang="ain-Latn">itak</i> 'speak' becomes /y/. In
+		<i lang="ain-Latn">yaykowepeker</i>, the initial /u/ of
+		<i lang="ain-Latn">uepeker</i> 'tell a story' becomes /w/
+		<Ref k="nakagawa2024" p="40" />. Tamura independently gives
+		<i lang="ain-Latn">eykoytupa</i> 'envy' as <i lang="ain-Latn">e-ikoytupa</i>
+		and <i lang="ain-Latn">ewkoytak</i> 'talk with each other about something' as
+		<i lang="ain-Latn">e-uko-itak</i>
+		<Ref k="tamura1996" p="s.vv. eykoytupa, ewkoytak" />.
 	</p>
 	<p>
 		Nakagawa uses <i lang="ain-Latn">iunin</i> 'ache', pronounced [iyunin], to
