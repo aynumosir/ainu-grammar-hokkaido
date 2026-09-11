@@ -12,6 +12,7 @@
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { homedir } from 'node:os';
+import { dictionaryHeadword } from './dictionary-headwords';
 
 const DICT_ROOT =
 	process.env.AINU_DICTIONARIES_ROOT ?? join(homedir(), 'projects/Ainu/ainu-dictionaries');
@@ -107,8 +108,9 @@ for (const src of SOURCES) {
 	for (const line of lines) {
 		if (!line.trim()) continue;
 		raw++;
-		const rawLemma = line.split('\t')[src.column] ?? '';
-		const lemma = normalize(rawLemma);
+		const cells = line.split('\t');
+		const rawLemma = cells[src.column] ?? '';
+		const lemma = normalize(dictionaryHeadword(src.key, rawLemma, cells[2]));
 		if (lemma) {
 			kept++;
 			lexicon.add(lemma);
