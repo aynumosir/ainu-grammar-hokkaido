@@ -1,12 +1,9 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages.js';
 	import { page } from '$app/stores';
-	import { i18n } from '$lib/i18n';
+	import { BOOK_TITLE } from '$lib/consts';
 
-	// Active when anywhere under /grammar. i18n.route() strips the locale prefix.
-	// (Language switcher omitted for now — the grammar is English-only; no ja/Ainu
-	// translation of the content exists yet.)
-	const onGrammar = $derived(i18n.route($page.url.pathname).startsWith('/grammar'));
+	// Active when anywhere under /grammar.
+	const onGrammar = $derived($page.url.pathname.startsWith('/grammar'));
 </script>
 
 <header class="border-b border-hairline font-sans text-sm">
@@ -14,7 +11,7 @@
 		<a
 			href="/"
 			class="whitespace-nowrap text-[15px] font-bold tracking-tight text-fg hover:text-accent"
-			>{m.site_title()}</a
+			>{BOOK_TITLE}</a
 		>
 		<nav class="ml-1 flex flex-wrap items-center gap-x-5 gap-y-1" aria-label="Primary">
 			<a
@@ -22,15 +19,15 @@
 				aria-current={onGrammar ? 'page' : undefined}
 				class="border-b-2 pb-0.5 {onGrammar
 					? 'border-accent font-medium text-accent'
-					: 'border-transparent text-muted hover:text-fg'}">{m.reference_grammar()}</a
+					: 'border-transparent text-muted hover:text-fg'}">Reference Grammar</a
 			>
 			<a
 				href="/grammar/references"
-				class="border-b-2 border-transparent pb-0.5 text-muted hover:text-fg">{m.references()}</a
+				class="border-b-2 border-transparent pb-0.5 text-muted hover:text-fg">References</a
 			>
 			<a
 				href="/grammar/abbreviations"
-				class="border-b-2 border-transparent pb-0.5 text-muted hover:text-fg">{m.abbreviations()}</a
+				class="border-b-2 border-transparent pb-0.5 text-muted hover:text-fg">Abbreviations</a
 			>
 		</nav>
 	</div>

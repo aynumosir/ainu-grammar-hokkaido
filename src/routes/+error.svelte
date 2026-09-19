@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import * as m from '$lib/paraglide/messages.js';
+	import { BOOK_TITLE } from '$lib/consts';
 </script>
 
 <svelte:head>
-	<title>{$page.status} · {m.site_title()}</title>
+	<title>{$page.status} · {BOOK_TITLE}</title>
 </svelte:head>
 
 <div class="mx-auto my-24 max-w-screen-sm px-4 text-center font-sans">
@@ -12,5 +12,5 @@
 	{#if $page.error?.message}
 		<p class="mt-4 text-lg text-fg">{$page.error.message}</p>
 	{/if}
-	<a href="/" class="mt-8 inline-block text-accent hover:underline">← {m.site_title()}</a>
+	<a href="/" class="mt-8 inline-block text-accent hover:underline">← {BOOK_TITLE}</a>
 </div>

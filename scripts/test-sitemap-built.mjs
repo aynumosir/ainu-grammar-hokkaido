@@ -8,12 +8,7 @@ const origin = 'https://grammar.aynu.org';
 const server = new Server(manifest);
 await server.init({ env: {} });
 const get = (path) =>
-	server.respond(
-		new Request(new URL(path, origin), {
-			headers: { 'accept-language': 'ja', cookie: 'paraglide_lang=ja' }
-		}),
-		{ getClientAddress: () => '127.0.0.1' }
-	);
+	server.respond(new Request(new URL(path, origin)), { getClientAddress: () => '127.0.0.1' });
 const response = await get('/sitemap.xml');
 assert.equal(response.status, 200);
 assert.equal(response.headers.get('content-type'), 'application/xml; charset=utf-8');
@@ -24,39 +19,35 @@ const paths = sitemapPaths(
 		(name) => `/src/lib/grammar/chapters/${name}`
 	)
 );
-const locales = ['en', 'ja', 'ain-Latn', 'ain-Kana'];
-const expected = paths.flatMap((path) =>
-	locales.map((locale) => `${origin}/${locale}${path === '/' ? '' : path}`)
-);
+const expected = paths.map((path) => `${origin}${path}`);
 const locations = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
 assert.deepEqual([...locations].sort(), expected.sort());
 assert.equal(new Set(locations).size, locations.length);
-for (const block of xml.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
-	const location = block[1].match(/<loc>(.*?)<\/loc>/)[1];
-	const path = new URL(location).pathname.split('/').slice(2).join('/');
-	const href = (locale) => `${origin}/${locale}${path ? `/${path}` : ''}`;
-	const actual = [
-		...block[1].matchAll(/<xhtml:link rel="alternate" hreflang="(.*?)" href="(.*?)" \/>/g)
-	].map((match) => [match[1], match[2]]);
-	assert.deepEqual(
-		actual,
-		[...locales.map((locale) => [locale, href(locale)]), ['x-default', href('en')]],
-		location
-	);
-}
+assert.ok(!xml.includes('hreflang'));
 for (const location of locations) {
 	const page = await get(location);
 	assert.equal(page.status, 200, location);
 	assert.match(page.headers.get('content-type'), /text\/html/);
 	const html = await page.text();
-	const locale = new URL(location).pathname.split('/')[1];
-	assert.equal(html.match(/<html[^>]*\blang="([^"]+)"/)[1], locale, location);
+	assert.equal(html.match(/<html[^>]*\blang="([^"]+)"/)[1], 'en', location);
 	assert.equal(html.match(/<link rel="canonical" href="([^"]+)"/)[1], location, location);
+	assert.ok(!/<link rel="alternate" hreflang=/.test(html), location);
 }
-for (const path of ['/sitemap.xml?test=1', '/ja/sitemap.xml']) {
+for (const path of ['/sitemap.xml?test=1']) {
 	const redirect = await get(path);
 	assert.equal(redirect.status, 308);
 	assert.equal(redirect.headers.get('location'), '/sitemap.xml');
+}
+for (const [path, target] of [
+	['/en', '/'],
+	['/ja/', '/'],
+	['/en/grammar/references', '/grammar/references'],
+	['/ain-Kana/grammar/references?x=1', '/grammar/references?x=1'],
+	['/ja/sitemap.xml', '/sitemap.xml']
+]) {
+	const redirect = await get(path);
+	assert.equal(redirect.status, 301, path);
+	assert.equal(redirect.headers.get('location'), target, path);
 }
 const robots = await get('/robots.txt');
 assert.equal(robots.status, 200);

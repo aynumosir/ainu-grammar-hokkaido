@@ -1,7 +1,12 @@
-import type { Handle } from '@sveltejs/kit';
-import { i18n } from '$lib/i18n';
-const handleParaglide: Handle = i18n.handle();
+import { redirect, type Handle } from '@sveltejs/kit';
+
+// The site used to be served under locale prefixes; send those URLs to the
+// unprefixed page permanently.
+const localePrefix = /^\/(en|ja|ain-Latn|ain-Kana)(?=\/|$)/;
+
 export const handle: Handle = ({ event, resolve }) => {
-	if (event.route.id === '/sitemap.xml' || event.route.id === '/robots.txt') return resolve(event);
-	return handleParaglide({ event, resolve });
+	const { pathname, search } = event.url;
+	const match = localePrefix.exec(pathname);
+	if (match) redirect(301, (pathname.slice(match[0].length) || '/') + search);
+	return resolve(event);
 };
