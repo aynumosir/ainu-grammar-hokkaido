@@ -5,34 +5,26 @@ import { sitemapResponse, sitemapXml } from './sitemap.ts';
 import { sitemapPaths } from './grammar/sitemap-paths.ts';
 import { chapters } from './grammar/toc.ts';
 
-const alternates = [
-	{ hreflang: 'en', href: 'https://example.org/en?a=1&b=2' },
-	{ hreflang: 'ja', href: 'https://example.org/ja?a=1&b=2' },
-	{ hreflang: 'x-default', href: 'https://example.org/en?a=1&b=2' }
-];
+const urls = ['https://example.org/', 'https://example.org/grammar?a=1&b=2'];
 
 describe('sitemap XML', () => {
-	it('emits every locale with the same alternate cluster and escapes XML', () => {
-		const xml = sitemapXml([alternates]);
+	it('emits one <url> per path and escapes XML', () => {
+		const xml = sitemapXml(urls);
 		assert.equal((xml.match(/<url>/g) ?? []).length, 2);
-		assert.equal((xml.match(/<xhtml:link /g) ?? []).length, 6);
-		assert.equal((xml.match(/hreflang="x-default"/g) ?? []).length, 2);
 		assert.ok(xml.includes('xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'));
+		assert.ok(xml.includes('<loc>https://example.org/</loc>'));
 		assert.ok(xml.includes('?a=1&amp;b=2'));
+		assert.ok(!xml.includes('hreflang'));
 		assert.ok(!xml.includes('<lastmod>'));
 	});
 
 	it('rejects empty and oversized URL inventories', () => {
 		assert.throws(() => sitemapXml([]), /URL count/);
-		assert.throws(() => sitemapXml([[alternates[2]]]), /URL count/);
-		assert.throws(() => sitemapXml(Array(25_001).fill(alternates)), /URL count/);
+		assert.throws(() => sitemapXml(Array(50_001).fill(urls[0])), /URL count/);
 	});
 
 	it('serves XML and canonicalizes query variants', () => {
-		const response = sitemapResponse(
-			sitemapXml([alternates]),
-			new URL('https://preview.test/sitemap.xml')
-		);
+		const response = sitemapResponse(sitemapXml(urls), new URL('https://preview.test/sitemap.xml'));
 		assert.equal(response.status, 200);
 		assert.equal(response.headers.get('Content-Type'), 'application/xml; charset=utf-8');
 		assert.match(response.headers.get('Cache-Control'), /public/);
