@@ -141,7 +141,7 @@ export interface SourceClaim {
 	id: string;
 	en: string;
 	ja: string;
-	stance: string;
+	stances: string[];
 	members: number;
 	support: Record<string, string[]>;
 	topic: { slug: string | null; title: string };
