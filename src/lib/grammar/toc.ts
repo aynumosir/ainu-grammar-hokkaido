@@ -31,32 +31,32 @@ export const parts: Part[] = [
 			{
 				slug: "aims-scope-design-philosophy",
 				title: "Aims, Scope, and Design Philosophy of This Grammar",
-				summary: "What this reference grammar covers, whom it is for, and the integrated corpus-quantified, typologically-scored, diachronically-grounded method that distinguishes it from prior grammars."
+				summary: "The scope of the description, its dialect coverage, and how to read examples, citations, and evidence labels."
 			},
 			{
 				slug: "typological-profile",
 				title: "A Typological Profile of Hokkaido Ainu",
-				summary: "A condensed bird's-eye sketch of the language's structural type, serving as a roadmap to the granular chapters that follow."
+				summary: "Constituent order, person marking, possession, incorporation, and other principal structures of Hokkaido Ainu."
 			},
 			{
 				slug: "ainu-people-homeland-history",
 				title: "The Ainu People, Their Homeland, and History",
-				summary: "The ethnonym, geography, society, and contact history that frame the language and its present endangerment."
+				summary: "The historical distribution of Ainu, the interpretation of its prehistory, and the social setting of the recorded language."
 			},
 			{
 				slug: "sociolinguistic-situation-revitalization",
 				title: "The Sociolinguistic Situation: Endangerment and Revitalization",
-				summary: "The present state of Hokkaido Ainu — language shift, speaker estimates, documentation, and the revitalization movement, including new speakers and standardized 'neo-Ainu'."
+				summary: "Language shift, community recording and teaching, institutional support, and the use of historical materials in revitalization."
 			},
 			{
 				slug: "genetic-position-macro-comparison",
 				title: "The Genetic Position of Ainu: Isolate Status and Macro-Comparison Controversies",
-				summary: "Ainu as a language isolate, and a methodologically explicit survey of the contested macro-relationship and deep-contact proposals."
+				summary: "Ainu’s external classification, relationships among its varieties, and the evidence used in reconstruction and contact studies."
 			},
 			{
 				slug: "history-of-description-research",
 				title: "The History of Ainu Language Description and Previous Research",
-				summary: "A periodized historiography of Ainu linguistics from Edo-period records to the modern typological and corpus-computational turn, situating this grammar in that lineage."
+				summary: "Early records, Ainu writers, dialect descriptions, and the development of grammatical research and published corpora."
 			}
 		]
 	},
