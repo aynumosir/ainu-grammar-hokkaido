@@ -82,6 +82,7 @@ export const abbreviations: Record<string, string> = {
 	POL: 'polite',
 	POSS: 'possessive (the “belonging” form of nouns)',
 	PRF: 'perfect',
+	PST: 'past',
 	PROG: 'progressive',
 	PROH: 'prohibitive',
 	PROX: 'proximal',

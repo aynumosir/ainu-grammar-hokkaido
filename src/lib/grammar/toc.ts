@@ -530,8 +530,8 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "adverbial-incorporation",
-				title: "Adverbial (Manner) Incorporation and the Property-Verb Question",
-				summary: "Manner/depictive verb-compounding (pirka-resu 'raise well'), its reanalysis as property-verb rather than adverb incorporation, its arity-neutral interaction with the applicatives, and its typological placement."
+				title: "Manner Compounds and Adverbial Incorporation",
+				summary: "Property-verb components, derived adverbs, lexicalized mono, temporal nouns, and source disagreements over productivity."
 			}
 		]
 	},
@@ -540,28 +540,28 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "constituent-order-head-final",
-				title: "Basic Constituent Order and Head-Final Syntax",
-				summary: "Rigid verb-final (S)OV clause order and pervasive head-finality, scored against Greenbergian word-order correlations."
+				title: "Constituent Order and the Verb-Final Clause",
+				summary: "Preverbal noun phrases and adverbials, differing accounts of participant order, head-final phrases, clause endings, and later specifications with ki."
 			},
 			{
 				slug: "argument-realization-indexing",
-				title: "Argument Realization: Affix Indexing and Free NP Order",
-				summary: "Grammatical relations encoded by bound person affixes rather than case or fixed position, with free, pragmatically governed NP order."
+				title: "Argument Realization and Person Indexing",
+				summary: "Argument count, person forms, omitted noun phrases, unindexed themes, incorporation, and locative role information."
 			},
 			{
 				slug: "nonconfigurationality-pronominal-argument",
-				title: "Pro-Drop, (Non)configurationality, and the Pronominal-Argument Debate",
-				summary: "Argument ellipsis and null anaphora, and whether the bound affixes are the true arguments (Jelinek/Baker) — Ainu on the configurationality cline."
+				title: "Noun Phrases and Pronominal-Argument Analyses",
+				summary: "Head marking, Satō’s layered clause analysis, unindexed core arguments, shared argumenthood, and the limits of word-order and quantifier evidence."
 			},
 			{
 				slug: "oblique-adjunct-verbless-clauses",
-				title: "Oblique and Adjunct Syntax; Verbless and Presentational Clauses",
-				summary: "The syntax of postpositional/relational-noun obliques and adjuncts, plus minor verbless and presentational clause types."
+				title: "Oblique Expressions and Verbless Utterances",
+				summary: "Locative objects and adjuncts, complete noun-phrase utterances, echo questions, formal-noun endings, and ambient predicate boundaries."
 			},
 			{
 				slug: "copula-ne-predicate-nominals",
-				title: "The Copula ne and Predicate-Nominal Clauses",
-				summary: "Equational and class-membership predication with the copula ne, its person indexing, and its disputed verb-vs-particle status."
+				title: "Copular ne and Nominal Predication",
+				summary: "Identity and classification, subject marking without object indexes, syntactic and semantic valency, state and change readings, negation, and attributive ne."
 			},
 			{
 				slug: "existential-locational-an-oka",
