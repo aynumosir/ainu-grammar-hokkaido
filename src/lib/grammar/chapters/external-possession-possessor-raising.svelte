@@ -46,8 +46,8 @@
 		The change in grammatical relation does not require a prefix to become a suffix. First-singular <i
 			lang="ain-Latn">ku=</i
 		>
-		remains prefixed in the published example. The fourth-person intransitive form uses a different
-		position in the person paradigm; this follows the person system described in
+		remains prefixed in the published example. The fourth-person intransitive form uses a different position
+		in the person paradigm; this follows the person system described in
 		<Xr ch="person-marking-architecture" />
 		<Ref k="satoni2022" p="§2, examples 1–2" />.
 	</p>
@@ -114,6 +114,17 @@
 		<Ref k="sato2016" p="89–90" />;
 		<Ref k="satoni2022" p="§4, examples 28–29; §6" />.
 	</p>
+	<p>
+		The verbal pattern corresponds to Tamura's <span lang="ja">連他動詞</span>, a phrase whose noun
+		and verb together express a conventional verbal meaning
+		<Ref k="tamura1997" p="15, §C.4" />. Satō distinguishes its two morphological words from its
+		status as one lexical unit. His later extension to <i lang="ain-Latn">or</i> plus a case
+		particle is discussed in
+		<Xr ch="relational-and-spatial-nouns" s="quasi-incorporation" />; the verbal construction
+		receives fuller treatment in
+		<Xr ch="noun-incorporation-oblique-polysynthesis-debate" />.
+	</p>
+
 	<p>
 		A different, derivational <i lang="ain-Latn">i-</i> appears in formations with an unspecified
 		possessor. Bugaeva, Nichols and Bickel analyze it as antipassive morphology functioning as

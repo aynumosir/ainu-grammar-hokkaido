@@ -71,6 +71,32 @@ export interface BibEntry {
 }
 
 export const bibliography: Record<string, BibEntry> = {
+	tamura1997: {
+		region: 'hokkaido',
+		author: 'Tamura Suzuko 田村すゞ子',
+		citeAuthor: 'Tamura',
+		year: '1997',
+		title: 'アイヌ語',
+		titleTr: 'Ainu',
+		container: '言語学大辞典セレクション 日本列島の言語',
+		editor: '亀井孝・河野六郎・千野栄一',
+		pages: '1–88',
+		publisher: '三省堂',
+		place: 'Tokyo',
+		lang: 'ja'
+	},
+	ochiai2023numerals: {
+		region: 'general',
+		author: 'Ochiai Izumi 落合いずみ',
+		citeAuthor: 'Ochiai',
+		year: '2023',
+		title: '「蝦夷国報告書」のアイヌ語数詞における上位起算法の消失',
+		titleTr: 'The loss of overcounting in the Ainu numerals of the Report on the Ezo Country',
+		container: '北方言語研究 13',
+		pages: '283–296',
+		url: 'https://doi.org/10.14943/106660',
+		lang: 'ja'
+	},
 	yokoyama2002: {
 		region: 'hokkaido',
 		author: 'Yokoyama Hiroyuki 横山裕之',
@@ -1377,8 +1403,11 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Satō Tomomi 佐藤知己',
 		citeAuthor: 'Satō',
 		year: '2021',
-		title: '千歳方言の位置名詞orの用法',
-		titleTr: 'The uses of the locative noun or in the Chitose dialect',
+		title: 'アイヌ語千歳方言の位置名詞orの用法',
+		titleTr: 'Usage of the Position Noun or in the Chitose Dialect of Ainu',
+		container: '北方言語研究 11',
+		pages: '81–98',
+		url: 'https://doi.org/10.14943/97220',
 		lang: 'ja'
 	},
 	huber2025: {

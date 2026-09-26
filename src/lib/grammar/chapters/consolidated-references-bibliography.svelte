@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 192 works cited across the grammar into a single
+		This chapter gathers the 194 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -79,7 +79,7 @@
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2008). <i lang="ja">アイヌ語文法の基礎</i>. [Foundations of Ainu grammar]. Tokyo: Daigaku Shorin 大学書林.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2009). <i lang="ja">アイヌ語の条件表現について</i>. [On the conditional expressions of Ainu]. Tsumagari Toshirō 津曲敏郎 (ed.), サハリンの言語世界 [The linguistic world of Sakhalin]. 49–56. Sapporo: Graduate School of Letters, Hokkaido University 北海道大学大学院文学研究科.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2009). <i lang="ja">アイヌ語虻田方言の英雄叙事詩（yukar）テキストとその言語的特徴 (1)</i>. [The heroic epic (yukar) text of the Abuta dialect of Ainu and its linguistic characteristics, part 1]. 北海道立アイヌ民族文化研究センター研究紀要 [Research Bulletin of the Hokkaido Ainu Culture Research Center]. 15: 1–38.</p>
-	<p class="bib-entry">Satō Tomomi 佐藤知己 (2021). <i lang="ja">千歳方言の位置名詞orの用法</i>. [The uses of the locative noun or in the Chitose dialect].</p>
+	<p class="bib-entry">Satō Tomomi 佐藤知己 (2021). <i lang="ja">アイヌ語千歳方言の位置名詞orの用法</i>. [Usage of the Position Noun or in the Chitose Dialect of Ainu]. 北方言語研究 11. 81–98.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2023). <i lang="ja">アイヌ語</i>. [The Ainu language (handbook/encyclopedia grammar)]. 世界の言語シリーズ / 朝倉日本語講座.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2023). <i lang="ja">アイヌ語の動詞の結合価と3項動詞</i>. [Verb valency and three-place verbs in Ainu]. 北方人文研究 16. 37–64.</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2025). <i>Basic Sentence Structures in Ainu</i>. Studia Orientalia 126. 353–376.</p>
@@ -99,6 +99,7 @@
 	<p class="bib-entry">Tamura Suzuko 田村すゞ子 (1973). <i lang="ja">アイヌ語の詩について——詩の言語的特徴</i>. [On Ainu poetry: Linguistic characteristics of verse]. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Tamura Suzuko 田村すゞ子 (1988). <i lang="ja">アイヌ語</i>. [Ainu language [encyclopedia article]]. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Tamura Suzuko 田村すゞ子 (1996). <i lang="ja">アイヌ語沙流方言辞典</i>. [The Ainu–Japanese dictionary: Saru dialect]. Tokyo: Sōfūkan 草風館.</p>
+	<p class="bib-entry">Tamura Suzuko 田村すゞ子 (1997). <i lang="ja">アイヌ語</i>. [Ainu]. 言語学大辞典セレクション 日本列島の言語. Ed. 亀井孝・河野六郎・千野栄一. 1–88. Tokyo: 三省堂.</p>
 	<p class="bib-entry">Tamura, Suzuko (2000). <i>The Ainu language</i>. ICHEL Linguistic Studies 2. Tokyo: Sanseidō 三省堂. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Yokoyama Hiroyuki 横山裕之 (2002). <i>noya</i>. Ainu Times 24 (27 December 2002).</p>
 	<p class="bib-entry">Yoshikawa Yoshimi 吉川佳見 (2018). <i lang="ja">アイヌ語の助動詞 aan と証拠性</i>. [The auxiliary aan and evidentiality in Ainu]. 北方言語研究 [Northern Language Studies] 8.</p>
@@ -191,6 +192,7 @@
 	<p class="bib-entry">Nichols, Johanna (1986). <i>Head-marking and dependent-marking grammar</i>. Language 62(1). 56–119. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Nikitina, Tatiana &amp; Anna Bugaeva (2021). <i>Logophoric speech is not indirect: Towards a syntactic approach to reported speech constructions</i>. Linguistics 59(3).</p>
 	<p class="bib-entry">Ochiai Izumi 落合いずみ (2021). <i lang="ja">アイヌ語の数詞再考——二十進法における下方算法から上方算法へ</i>. [Ainu numerals reconsidered: from subtractive to additive counting in the vigesimal system].</p>
+	<p class="bib-entry">Ochiai Izumi 落合いずみ (2023). <i lang="ja">「蝦夷国報告書」のアイヌ語数詞における上位起算法の消失</i>. [The loss of overcounting in the Ainu numerals of the Report on the Ezo Country]. 北方言語研究 13. 283–296.</p>
 	<p class="bib-entry">Ochiai Izumi 落合いずみ (2023). <i>A disparity in the final vowels in Ainu: Word-final CV and CCV</i>. Phonological Externalization.</p>
 	<p class="bib-entry">Ochiai Izumi 落合いずみ (2026). <i lang="ja">日本語借用形から探るアイヌ語sikerpe「キハダの実」の語源</i>. [The etymology of Ainu sikerpe "Amur cork tree fruit" as revealed by its Japanese loan forms]. 北方言語研究 [Northern Language Studies]. 16: 175–199.</p>
 	<p class="bib-entry">Okuda Osami 奥田統己 (2022). <i>Meter in Ainu oral literature</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 11. Berlin &amp; Boston: De Gruyter Mouton.</p>

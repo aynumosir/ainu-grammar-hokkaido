@@ -305,38 +305,38 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "independent-personal-pronouns",
-				title: "Personal, Reflexive, and Emphatic Pronouns",
-				summary: "The free/independent personal pronouns and their emphatic/contrastive use alongside the obligatory bound affixes, plus the reflexive and emphatic 'self' nominals used as NP arguments, kept distinct from the verbal reflexive prefix (Part XI)."
+				title: "Independent Personal Pronouns",
+				summary: "Dialect-specific pronoun paradigms, emphasis and contrast, third-person expressions, and the boundary between pronouns and possessed group nouns."
 			},
 			{
 				slug: "demonstratives-anaphora-definiteness",
-				title: "Demonstratives, Anaphora, and Definiteness",
-				summary: "The exophoric demonstrative distance system, the anaphoric/recognitional 'aforementioned' demonstrative, and definiteness in an article-less language."
+				title: "Demonstratives and Reference",
+				summary: "Saru demonstrative modifiers, spatial and discourse reference, formal-noun combinations, and regional differences."
 			},
 			{
 				slug: "interrogative-pro-forms",
-				title: "Interrogative, Indefinite, and Negative-Polarity Pro-forms",
-				summary: "The interrogative word set and content-question syntax, and the indefinite/negative-polarity series built on interrogative + ka, including their licensing across affirmative and negative contexts (scope/licensing detailed in Part XVI)."
+				title: "Interrogative and Indefinite Expressions",
+				summary: "Question-word classes, their dialect forms and sentence patterns, and their relationship to indefinite expressions."
 			},
 			{
 				slug: "relational-and-spatial-nouns",
-				title: "Relational and Spatial (Locative) Nouns and Their Possessed Forms",
-				summary: "The obligatorily-possessed relational/spatial noun system (or, ka, corpok, sam, tum...), the first-/second-class locative split, the affiliative forms of these nouns, and or's drift toward a general locative; a bridge to the postpositional case system."
+				title: "Relational Nouns, Spatial Forms, and Quasi-Incorporation",
+				summary: "Locative noun classes, person marking, basic and long forms, spatial meanings, and Satō’s quasi-incorporation analysis of or."
 			},
 			{
 				slug: "postpositions-local-case-and-motion-events",
-				title: "Postpositions, Local Case, Motion Events, Comitative, and Instrumental",
-				summary: "Postpositions proper and the local-case relations they encode, motion-event/path encoding, and comitative tura and instrumental ani/ari on the postposition-to-applicative continuum."
+				title: "Place Particles and Motion Expressions",
+				summary: "Location, direction, origin, area, and route constructions, their dialect differences, and their relationship to postposed adverbs and translative ne."
 			},
 			{
 				slug: "vigesimal-numeral-system",
-				title: "The Vigesimal Numeral System",
-				summary: "The base-20 cardinal numeral system, its subtractive/additive arithmetic morphosyntax, and its diachrony."
+				title: "Numeral Forms and Counting Systems",
+				summary: "Adnominal, nominal, and enumeration forms, vigesimal composition, overcounting, and regional decimal systems."
 			},
 			{
 				slug: "numeral-classifiers-ordinals-and-quantifier-syntax",
-				title: "Numeral Classifiers, Ordinals, and Quantifier Syntax",
-				summary: "Numeral classifiers, derived numeral categories, and the syntax of quantification and quantifier float."
+				title: "Numeral Syntax, Ordinals, and Quantity",
+				summary: "Numeral position and independent use, compound counts, classifier analyses, ordinal expressions, and the interaction of quantity with number."
 			}
 		]
 	},
@@ -345,13 +345,13 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "verb-word-template",
-				title: "The Verb Word and Its Position-Class Template",
-				summary: "The internal architecture of the Ainu verb word as an ordered sequence of prefix, stem, and suffix position classes."
+				title: "The Verb Word and Its Boundaries",
+				summary: "Source-specific derivational templates, argument structure, number morphology, person zones, and the distinction between a verb word and quasi-incorporation."
 			},
 			{
 				slug: "transitivity-and-valence-classes",
-				title: "Transitivity, Valence Classes, and Ambitransitivity",
-				summary: "Lexical classification of verbs by valence (intransitive agentive/patientive, transitive, ditransitive, complete/incomplete) and the system of labile (ambitransitive) verbs and morphological transitivity pairs (有対)."
+				title: "Transitivity and Valency Classes",
+				summary: "Argument frames, ambient and experienced states, locative objects, copular person marking, higher valency, and competing analyses of arity."
 			},
 			{
 				slug: "suppletive-verbal-number",
