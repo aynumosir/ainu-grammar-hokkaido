@@ -465,63 +465,63 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "applicative-system-overview",
-				title: "The Applicative System: Overview and the Preverb-vs-Applicative Debate",
-				summary: "Bugaeva's reanalysis of e-/ko-/o- as applicatives promoting obliques to object, with the diagnostics and the terminological controversy."
+				title: "Applicative Constructions and Their Arguments",
+				summary: "The three applicative prefixes, changes in argument structure and person marking, overlapping semantic roles, and source-specific classifications."
 			},
 			{
 				slug: "applicative-e",
 				title: "The e- Applicative",
-				summary: "The e- applicative promoting content/theme, instrument, reason and 'about/concerning' obliques to object."
+				summary: "Instrument, purpose, content, and place relations, with Nakagawa’s four constructional subtypes and Bugaeva’s lexical classification."
 			},
 			{
 				slug: "applicative-ko",
 				title: "The ko- Applicative",
-				summary: "The ko- applicative promoting goal/recipient, comitative and adversative ('to/with/against') obliques to object."
+				summary: "Directed and comitative relations, spatial and personal goals, source objects, instrumental uses, and incorporation."
 			},
 			{
 				slug: "applicative-o",
 				title: "The o- Applicative",
-				summary: "The o- applicative promoting locative/source/goal ('at, from, into') obliques, the spatial applicative, and allied spatial valency operators."
+				summary: "Applied places, motion goals, contrasts with ko-, and differing source descriptions of source and instrumental meanings."
 			},
 			{
 				slug: "applicative-stacking-relativization-feeding",
-				title: "Applicative Stacking, Ordering, and the Feeding of Relativization",
-				summary: "How multiple applicatives stack and order, and how applicative promotion extends the relativization accessibility hierarchy and feeds incorporation."
+				title: "Multiple Applicatives, Incorporation, and Relative Clauses",
+				summary: "Documented applicative combinations, noun incorporation and prefix order, and relative clauses with applied objects or retained role markers."
 			},
 			{
 				slug: "antipassive-detransitive-i",
-				title: "The Antipassive / Detransitive i-",
-				summary: "The prefix i- 'something/someone' absorbing the object and detransitivizing, with the antipassive-vs-incorporation debate and its origin."
+				title: "Antipassive and Unspecified-Object i-",
+				summary: "Object backgrounding, person marking, conventional activities, interaction with applicatives, lexical exceptions, and competing historical accounts."
 			},
 			{
 				slug: "reflexive-yay",
-				title: "The Reflexive yay-",
-				summary: "The reflexive prefix yay- 'self', its A/O coreference and detransitivization, and its autobenefactive/emotive extensions."
+				title: "Reflexive yay- and Its Extensions",
+				summary: "Participant identity, intentionality and direct-reflexive analyses, reflexive possession, lexical extensions, and combinations with si-."
 			},
 			{
 				slug: "reflexive-possessive-si",
-				title: "The Reflexive-Possessive si- and the yay-/si- Division",
-				summary: "The prefix si- 'oneself / one's own / by itself' and its division of labor with yay- in argument identification."
+				title: "Reflexive si- in Verbal and Spatial Constructions",
+				summary: "Bodily motion and change, indirect reflexivity, causatives and pretending, locative coreference, and proposed historical developments."
 			},
 			{
 				slug: "reciprocal-u",
-				title: "The Reciprocal u-",
-				summary: "The reciprocal prefix u- 'each other/mutually', including quasi-possessive incorporation, the formation of aeuitaknup, and reflexive-possessive parallels."
+				title: "Reciprocal u- and Joint Participation",
+				summary: "Canonical and indirect reciprocals, object-oriented constructions, incorporated possessors, and the distinction between reciprocal and sociative forms."
 			},
 			{
 				slug: "middle-anticausative-passive",
-				title: "Middle, Anticausative, and the (Non-)Passive Question",
-				summary: "Middle/spontaneous and anticausative uses of si-/yay- and detransitives, and whether the a=/an= indefinite-agent construction constitutes a passive."
+				title: "Middle ci- and the Passive Analysis",
+				summary: "Middle and resultative descriptions, person restrictions, agent phrases, competing analyses of passive patients, and anticausative meanings."
 			},
 			{
 				slug: "noun-incorporation-object",
-				title: "Object (Patient) Noun Incorporation",
-				summary: "Productive object incorporation (N+V → intransitive), its diagnostics, and its interaction with the antipassive and valency prefixes."
+				title: "Object Noun Incorporation",
+				summary: "Wordhood and person diagnostics, remaining objects, generic reference, incorporated compound nouns, two-object formations, and possession restrictions."
 			},
 			{
 				slug: "noun-incorporation-subject-possessor-stranding",
-				title: "Subject Incorporation and Possessor-Stranding",
-				summary: "Subject incorporation with unaccusative verbs (sik-pirka 'eyes-be.good') and the possessor-stranding pattern — the classic Type IV test case."
+				title: "Subject Incorporation and External Possessors",
+				summary: "Natural-phenomenon predicates, possessed stems with external subjects, natural-force actors, changes in grammatical relation, and competing restrictions."
 			},
 			{
 				slug: "noun-incorporation-oblique-polysynthesis-debate",
