@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import type { ClaimCard, ClaimMember, ExampleCard, NarrativeUnit, StatementCard } from '$lib/kb/types';
+	import type { ClaimCard, ExampleCard, NarrativeUnit, StatementCard } from '$lib/kb/types';
 	let { data }: { data: PageData } = $props();
 	const p = $derived(data.page);
 	let lang = $state<'en' | 'ja'>('en');
@@ -19,32 +19,41 @@
 		id: string;
 		en: string;
 		ja: string;
-		cites: { stance: string; refs: { key: string; label: string; printed: string | number | null; href: string }[] }[];
+		cites: { stance: string; refs: Ref[] }[];
 		relations: ClaimCard['relations'];
 		grouped: boolean;
 	}
 	const STANCE_ORDER = ['asserts', 'presupposes', 'reports', 'proposes', 'doubts', 'rejects'];
 	const STANCE_WORD: Record<string, string> = { asserts: '', presupposes: '', reports: 'reported in', proposes: 'proposed in', doubts: 'doubted in', rejects: 'rejected in' };
-	const ref = (m: { id: string; key: string | null; printed: string | number | null }) => ({
-		key: m.key ?? '?',
-		label: labelOf.get(m.key ?? '') ?? m.key ?? '?',
-		printed: m.printed,
-		href: `/kb/sources/${m.key}#${encodeURIComponent(m.id)}`
-	});
+	/** One source in a citation, with each distinct page it is cited at. */
+	type Ref = { key: string; label: string; href: string; pages: { printed: string | number; href: string }[] };
+	type Member = { id: string; key: string | null; printed: string | number | null; stance: string };
+	const hrefOf = (m: Member) => `/kb/sources/${m.key}#${encodeURIComponent(m.id)}`;
+	/** Members grouped by stance, then by source, so a source is named once per stance. */
+	function citeGroups(members: Member[]): Sentence['cites'] {
+		return STANCE_ORDER.flatMap((stance) => {
+			const refs = new Map<string, Ref>();
+			for (const m of members.filter((x) => x.stance === stance)) {
+				const key = m.key ?? '?';
+				let r = refs.get(key);
+				if (!r) refs.set(key, (r = { key, label: labelOf.get(key) ?? key, href: hrefOf(m), pages: [] }));
+				if (m.printed != null && !r.pages.some((pg) => String(pg.printed) === String(m.printed))) r.pages.push({ printed: m.printed, href: hrefOf(m) });
+			}
+			return refs.size ? [{ stance, refs: [...refs.values()] }] : [];
+		});
+	}
 	function fromClaim(c: ClaimCard): Sentence {
-		const byStance = new Map<string, ClaimMember[]>();
-		for (const m of c.members) byStance.set(m.stance, [...(byStance.get(m.stance) ?? []), m]);
 		return {
 			id: c.id,
 			en: c.en,
 			ja: c.ja,
-			cites: STANCE_ORDER.filter((s) => byStance.has(s)).map((s) => ({ stance: s, refs: byStance.get(s)!.map(ref) })),
+			cites: citeGroups(c.members),
 			relations: c.relations.filter((r) => r.kind === 'contradicts' || r.kind === 'contrasts'),
 			grouped: true
 		};
 	}
 	function fromStatement(st: StatementCard): Sentence {
-		return { id: st.id, en: st.en, ja: st.ja, cites: [{ stance: st.stance, refs: [ref(st)] }], relations: [], grouped: false };
+		return { id: st.id, en: st.en, ja: st.ja, cites: citeGroups([st]), relations: [], grouped: false };
 	}
 	function sentencesOf(claimIds: string[], statementIds: string[], all = false): Sentence[] {
 		const out: Sentence[] = [];
@@ -86,12 +95,9 @@
 	}
 	/** citation cluster of the claims behind one sentence */
 	function citesOf(ids: string[]): Sentence['cites'] {
-		const byStance = new Map<string, ClaimMember[]>();
-		for (const id of ids) for (const m of claimsById.get(id)?.members ?? []) byStance.set(m.stance, [...(byStance.get(m.stance) ?? []), m]);
-		return STANCE_ORDER.filter((s) => byStance.has(s)).map((s) => ({ stance: s, refs: byStance.get(s)!.map(ref) }));
+		return citeGroups(ids.flatMap((id) => claimsById.get(id)?.members ?? []));
 	}
 	const exampleOf = (id: string): ExampleCard | undefined => examplesById.get(id);
-	const pageText = (printed: string | number | null) => (printed == null ? '' : `: ${printed}`);
 	const headingTag = (depth: number) => (depth <= 2 ? 'h2' : depth === 3 ? 'h3' : 'h4');
 	const total = $derived(p.sections.reduce((n, s) => n + s.claims.length + s.statements.filter((id) => !statementsById.get(id)?.claim).length, openingSentences.length));
 </script>
@@ -140,7 +146,7 @@
 	{/snippet}
 
 	{#snippet cites(list: Sentence['cites'])}
-		<span class="cite">({#each list as c, i (c.stance)}{#if i}{'; '}{/if}{#if STANCE_WORD[c.stance]}{STANCE_WORD[c.stance]}{' '}{/if}{#each c.refs as r, j (r.href)}{#if j}{', '}{/if}<a href={r.href}>{r.label}{pageText(r.printed)}</a>{/each}{/each})</span>
+		<span class="cite">({#each list as c, i (c.stance)}{#if i}{'; '}{/if}{#if STANCE_WORD[c.stance]}{STANCE_WORD[c.stance]}{' '}{/if}{#each c.refs as r, j (r.key)}{#if j}{', '}{/if}{#if r.pages.length}{r.label}: {#each r.pages as pg, k (k)}{#if k}{', '}{/if}<a href={pg.href}>{pg.printed}</a>{/each}{:else}<a href={r.href}>{r.label}</a>{/if}{/each}{/each})</span>
 	{/snippet}
 
 	{#snippet passage(n: NarrativeUnit, fallback: Sentence[])}

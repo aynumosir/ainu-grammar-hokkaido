@@ -23,7 +23,7 @@ import { KB, STATIC_KB, readJsonl, writeJson } from './lib';
 type Row = Record<string, any>;
 
 const readDir = (dir: string, ext: string) =>
-	existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith(ext)) : [];
+	existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith(ext)).sort() : [];
 const topics = readJsonl<Row>(join(KB, 'registries/topics.jsonl'));
 const sources = readJsonl<Row>(join(KB, 'registries/sources.jsonl'));
 const sentences = readJsonl<Row>(join(KB, 'imports/book-v1/sentences.jsonl'));
