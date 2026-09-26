@@ -385,28 +385,28 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "first-second-person-singular-affixes",
-				title: "First- and Second-Person Singular Affixes (ku=/en=, e=/e=)",
-				summary: "The SAP-singular core: 1sg subjective ku= vs objective en=, and 2sg e= (syncretic across A/S/O), with their morphophonology and distribution."
+				title: "First- and Second-Person Singular",
+				summary: "Subject and object forms, regional contraction, neutral second-person alignment, and the interaction paradigm."
 			},
 			{
 				slug: "first-person-plural-and-clusivity",
-				title: "First-Person Plural and the Clusivity Question (ci=/=as, un=)",
-				summary: "The exclusive 1pl set — subjective ci=/=as and objective un= — and the contested inclusive/exclusive opposition with the indefinite person."
+				title: "First-Person Plural and Clusivity",
+				summary: "Exclusive and inclusive reference, subject and object forms, narrative uses, and dialect-specific analyses of group reference."
 			},
 			{
 				slug: "eci-portmanteau-and-second-plural",
-				title: "The eci= Portmanteau (1A→2O) and Second-Person Plural Syncretism",
-				summary: "The cumulative eci= exponent encoding a 1sg subject acting on a 2nd-person object, and its syncretism with the 2pl subject/object marker eci=."
+				title: "Eci and Person Interactions",
+				summary: "Second-plural marking, the Saru/Chitose first-to-second portmanteau, reverse interactions, and regional and literary alternatives."
 			},
 			{
 				slug: "object-indexing-monotransitive",
-				title: "Object Indexing: Monotransitive and Ditransitive Clauses",
-				summary: "How transitive and three-place verbs index their object(s) via the objective affix set, the subject/object indexing asymmetries, and the secundative-vs-indirective alignment of ditransitive indexing."
+				title: "Object Indexing and Three-Place Verbs",
+				summary: "The object series, recipient and theme indexing, third-person zero, and the distinction between person indexes and semantic arguments."
 			},
 			{
 				slug: "indefinite-fourth-person-paradigm",
-				title: "The Indefinite/Fourth Person: Forms, Reference, and Agent-Defocusing",
-				summary: "The morphology of the indefinite person (a=/an=/=an, i=) and its referential range — generic 'one', inclusive 'we', definite fourth-person reference — and its agent-defocusing 'passive'/impersonal use with the does-Ainu-have-a-passive debate."
+				title: "Fourth-Person Forms and Their Uses",
+				summary: "Inclusive, indefinite, honorific, narrative, and quoted-speaker reference, with dialect differences in form and number and competing semantic analyses."
 			},
 			{
 				slug: "fourth-person-honorific",
