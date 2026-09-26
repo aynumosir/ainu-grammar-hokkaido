@@ -4,6 +4,7 @@
 
 	// Active when anywhere under /grammar.
 	const onGrammar = $derived($page.url.pathname.startsWith('/grammar'));
+	const onKb = $derived($page.url.pathname.startsWith('/kb'));
 </script>
 
 <header class="border-b border-hairline font-sans text-sm">
@@ -20,6 +21,13 @@
 				class="border-b-2 pb-0.5 {onGrammar
 					? 'border-accent font-medium text-accent'
 					: 'border-transparent text-muted hover:text-fg'}">Reference Grammar</a
+			>
+			<a
+				href="/kb"
+				aria-current={onKb ? 'page' : undefined}
+				class="border-b-2 pb-0.5 {onKb
+					? 'border-accent font-medium text-accent'
+					: 'border-transparent text-muted hover:text-fg'}">Knowledge Base</a
 			>
 			<a
 				href="/grammar/references"

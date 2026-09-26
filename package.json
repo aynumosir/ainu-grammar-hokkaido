@@ -4,8 +4,8 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "bun scripts/gen-apparatus.ts && bun scripts/gen-grammar-search.ts && vite dev",
-		"build": "bun scripts/gen-apparatus.ts && bun scripts/audit-chapters.ts --quiet && bun scripts/gen-grammar-search.ts && vite build",
+		"dev": "bun scripts/gen-apparatus.ts && bun scripts/gen-grammar-search.ts && bun scripts/kb/build.ts && vite dev",
+		"build": "bun scripts/gen-apparatus.ts && bun scripts/audit-chapters.ts --quiet && bun scripts/gen-grammar-search.ts && bun scripts/kb/build.ts && vite build",
 		"preview": "vite preview",
 		"test:sitemap:unit": "bun test src/lib/sitemap.test.mjs",
 		"test:sitemap": "bun run build && bun run test:sitemap:unit && bun scripts/test-sitemap-built.mjs",
@@ -19,7 +19,10 @@
 		"figures:write": "bun scripts/refresh-corpus-figures.ts --write",
 		"stats:applicatives": "bun scripts/applicative-stats.ts",
 		"test:applicatives": "bun test scripts/applicative-stats.test.ts",
-		"attest": "bun scripts/audit-attestation.ts"
+		"attest": "bun scripts/audit-attestation.ts",
+		"kb:import": "bun scripts/kb/import-first-edition.ts && bun scripts/kb/import-sources.ts && bun scripts/kb/import-assets.ts",
+		"kb:validate": "bun scripts/kb/validate.ts",
+		"kb:build": "bun scripts/kb/build.ts"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.4",
@@ -32,6 +35,7 @@
 		"@sveltejs/kit": "^2.11.1",
 		"@sveltejs/vite-plugin-svelte": "^5.0.2",
 		"@tailwindcss/typography": "^0.5.20",
+		"ajv": "^8.20.0",
 		"autoprefixer": "^10.4.20",
 		"eslint": "^9.17.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -57,6 +61,7 @@
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.9",
 		"ainconv": "^0.5.1",
-		"bits-ui": "^1.8.0"
+		"bits-ui": "^1.8.0",
+		"force-graph": "^1.51.4"
 	}
 }

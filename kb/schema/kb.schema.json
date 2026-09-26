@@ -1,0 +1,954 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grammar.aynu.org/kb/schema/kb.schema.json",
+  "title": "Grammar knowledge base records",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*:[^\\s]+$"
+    },
+    "label": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "ja": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "topic": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "label",
+        "broader",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "part",
+            "chapter",
+            "section"
+          ]
+        },
+        "label": {
+          "$ref": "#/$defs/label"
+        },
+        "question": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/label"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "broader": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "related": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "order": {
+          "type": "number"
+        },
+        "depth": {
+          "type": "integer"
+        },
+        "home": {
+          "type": "string"
+        },
+        "chapter": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "object",
+          "required": [
+            "import",
+            "ref"
+          ],
+          "properties": {
+            "import": {
+              "type": "string"
+            },
+            "ref": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "candidate",
+            "reviewed"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "key",
+        "author",
+        "year",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "key": {
+          "type": "string"
+        },
+        "db_slug": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cite_author": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "title_tr": {
+          "type": "string"
+        },
+        "container": {
+          "type": "string"
+        },
+        "pages": {
+          "type": "string"
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "place": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "held_locally": {
+          "type": "boolean"
+        },
+        "path": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "doculect": {
+      "type": "object",
+      "required": [
+        "id",
+        "path",
+        "label",
+        "broader"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "path": {
+          "type": "string"
+        },
+        "label": {
+          "$ref": "#/$defs/label"
+        },
+        "glottocode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "broader": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "agent": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "person",
+            "editorial",
+            "pipeline",
+            "community"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "key"
+      ],
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "pages": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "sentence": {
+      "type": "object",
+      "required": [
+        "id",
+        "chapter",
+        "section",
+        "para",
+        "index",
+        "text",
+        "citations",
+        "grades",
+        "xrefs",
+        "forms",
+        "topic"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "chapter": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "para": {
+          "type": "integer"
+        },
+        "index": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "grades": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "xrefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "topic": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "additionalProperties": false
+    },
+    "example": {
+      "type": "object",
+      "required": [
+        "id",
+        "origin",
+        "text",
+        "gloss",
+        "translation",
+        "citations",
+        "constructed",
+        "topic"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "ref": {
+          "type": "string"
+        },
+        "chapter": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "topic": {
+          "$ref": "#/$defs/id"
+        },
+        "text": {
+          "type": "string"
+        },
+        "gloss": {
+          "type": "string"
+        },
+        "kana": {
+          "type": "string"
+        },
+        "original": {
+          "type": "string"
+        },
+        "original_lang": {
+          "type": "string"
+        },
+        "translation": {
+          "type": "string"
+        },
+        "literal": {
+          "type": "string"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "constructed": {
+          "type": "boolean"
+        },
+        "dialect_tag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "doculect": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "place": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "forms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "id",
+        "source",
+        "kind",
+        "dir",
+        "engine",
+        "leaves",
+        "pagemap"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "source": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "scan-ocr",
+            "epub",
+            "markdown",
+            "chat-export"
+          ]
+        },
+        "root": {
+          "enum": [
+            "books",
+            "kb"
+          ]
+        },
+        "dir": {
+          "type": "string"
+        },
+        "engine": {
+          "type": "string"
+        },
+        "leaves": {
+          "type": "integer"
+        },
+        "leaf_ranges": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "pagemap": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          }
+        },
+        "calibration": {
+          "type": "object"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "statement": {
+      "type": "object",
+      "required": [
+        "id",
+        "source",
+        "asset",
+        "locator",
+        "anchor",
+        "statement",
+        "type",
+        "stance",
+        "scope",
+        "forms",
+        "topics",
+        "extracted_by",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "source": {
+          "$ref": "#/$defs/id"
+        },
+        "asset": {
+          "$ref": "#/$defs/id"
+        },
+        "locator": {
+          "type": "object",
+          "required": [
+            "leaf"
+          ],
+          "properties": {
+            "leaf": {
+              "type": "integer"
+            },
+            "printed": {
+              "type": [
+                "integer",
+                "string",
+                "null"
+              ]
+            },
+            "section": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "example": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "anchor": {
+          "type": "object",
+          "required": [
+            "exact",
+            "match"
+          ],
+          "properties": {
+            "exact": {
+              "type": "string"
+            },
+            "match": {
+              "type": "number"
+            },
+            "method": {
+              "type": "string"
+            },
+            "leaf": {
+              "type": "integer"
+            }
+          }
+        },
+        "statement": {
+          "$ref": "#/$defs/label"
+        },
+        "type": {
+          "enum": [
+            "existence",
+            "form-function",
+            "membership",
+            "distribution",
+            "ordering",
+            "paradigm-cell",
+            "alternation",
+            "frequency",
+            "variation",
+            "diachrony",
+            "analysis",
+            "judgement",
+            "absence",
+            "terminology",
+            "other"
+          ]
+        },
+        "stance": {
+          "enum": [
+            "asserts",
+            "proposes",
+            "doubts",
+            "rejects",
+            "reports",
+            "presupposes"
+          ]
+        },
+        "scope": {
+          "type": "object",
+          "properties": {
+            "doculects": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "quantifier": {
+              "enum": [
+                "all",
+                "none",
+                "exists",
+                "generic",
+                "usually",
+                "measured",
+                "example_only",
+                "unstated"
+              ]
+            },
+            "modality": {
+              "enum": [
+                "necessary",
+                "possible",
+                "actual",
+                "unstated"
+              ]
+            },
+            "conditions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "hedge": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reported": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "forms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "extracted_by": {
+          "type": "string"
+        },
+        "verification": {
+          "type": "object"
+        },
+        "status": {
+          "enum": [
+            "extracted",
+            "anchored",
+            "checked",
+            "reviewed",
+            "withdrawn"
+          ]
+        },
+        "routing": {
+          "type": "object",
+          "required": [
+            "section",
+            "model",
+            "prompt_version",
+            "date"
+          ],
+          "properties": {
+            "section": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "model": {
+              "type": "string"
+            },
+            "prompt_version": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "id",
+        "revision",
+        "topic",
+        "topics",
+        "statement",
+        "type",
+        "scope",
+        "forms",
+        "statements",
+        "relations",
+        "grouped_by",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "revision": {
+          "type": "integer"
+        },
+        "topic": {
+          "$ref": "#/$defs/id"
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "statement": {
+          "$ref": "#/$defs/label"
+        },
+        "type": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "object"
+        },
+        "forms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "statements": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "stance"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "stance": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "claim"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "supports",
+                  "contradicts",
+                  "refines",
+                  "supersedes",
+                  "depends_on",
+                  "instantiates",
+                  "contrasts",
+                  "retracts"
+                ]
+              },
+              "claim": {
+                "type": "string"
+              },
+              "differs_in": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "by": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "grouped_by": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "grouped",
+            "reviewed",
+            "withdrawn"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "activity": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "agent",
+        "started"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "agent": {
+          "$ref": "#/$defs/id"
+        },
+        "model": {
+          "type": "string"
+        },
+        "prompt_version": {
+          "type": "string"
+        },
+        "started": {
+          "type": "string"
+        },
+        "ended": {
+          "type": "string"
+        },
+        "inputs": {
+          "type": "object"
+        },
+        "outputs": {
+          "type": "object"
+        },
+        "cost_usd": {
+          "type": "number"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "narrative": {
+      "type": "object",
+      "required": [
+        "id",
+        "topic",
+        "section",
+        "revision",
+        "text",
+        "claims",
+        "uncovered",
+        "unsupported",
+        "sentences",
+        "written_by",
+        "model",
+        "prompt_version",
+        "date",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "topic": {
+          "$ref": "#/$defs/id"
+        },
+        "section": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revision": {
+          "type": "integer"
+        },
+        "text": {
+          "$ref": "#/$defs/label"
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "uncovered": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unsupported": {
+          "type": "integer"
+        },
+        "sentences": {
+          "type": "integer"
+        },
+        "written_by": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "prompt_version": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "generated",
+            "reviewed",
+            "withdrawn"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
