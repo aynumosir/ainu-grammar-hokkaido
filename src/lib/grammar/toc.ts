@@ -565,23 +565,23 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "existential-locational-an-oka",
-				title: "Existential and Locational Clauses (an / oka)",
-				summary: "The existential/locational predicates an (SG) and oka (PL), their number suppletion, presentational use, and the isam negative."
+				title: "Existential and Locational Predicates",
+				summary: "Existence, personal location, regional plural forms, narrative number, seasonal change, continuation, and lexical absence."
 			},
 			{
 				slug: "predicative-possession-clauses",
-				title: "Predicative Possession: kor, Existential Possession, and isam",
-				summary: "Clause-level 'have/belong' predication via transitive kor, existential-based possession, and negative isam, plus the noun-level affiliative-vs-kor choice for alienable nouns; placed on Stassen's predicative-possession typology and interfaced with the nominal affiliative system (Part VII)."
+				title: "Predicative Possession",
+				summary: "Possessor and possessee subjects, kor and existential constructions, kinship and affiliation, source-specific corpus findings, incorporation, and lack."
 			},
 			{
 				slug: "property-concept-predication",
-				title: "Property-Concept (Adjectival) Predication without a Copula",
-				summary: "Predicate 'adjectives' as intransitive stative verbs taking person indexing — the clause-level consequence of the no-adjective-class thesis."
+				title: "Property Predicates",
+				summary: "Direct predication and person marking, state and change readings, manner and auxiliary uses, ambient conditions, and the adjective debate."
 			},
 			{
 				slug: "nonverbal-predicate-tam-negation",
-				title: "TAM, Evidentiality, and Negation on Nonverbal Predicates",
-				summary: "How copular and other nonverbal predicates host the full sentence-final aspect, evidential, and negation apparatus through ne."
+				title: "Copular Negation and Clause Endings",
+				summary: "Negative nominal predicates, evidential endings, polar and content questions, scope, ordering restrictions, and competing structural analyses."
 			}
 		]
 	},
@@ -590,13 +590,13 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "nominalization-p-pe",
-				title: "The Nominalizers -p/-pe and -i/-hi (Participant, Event, Place, Fact)",
-				summary: "The participant nominalizer -p/-pe ('the one that') and the abstract/event nominalizer -i/-hi ('the V-ing / place / time / fact that'): argument-role readings, the headless-relative continuum, internal clause TAM/person, and the insubordination of nominalized clauses."
+				title: "P and Pe: Participants, Content, and Clause Endings",
+				summary: "Sound-conditioned forms, phrase scope, relative participants, instrumental heads, content nominalization, human reference, and normative and linking uses."
 			},
 			{
 				slug: "lexical-head-formal-noun-nominalization",
-				title: "Lexical-Head and Formal-Noun Nominalization (kur, uske, ruwe/hawe/siri/humi)",
-				summary: "Nominalization headed by lexical nouns (kur 'person', uske/usi 'place', ike) and by the grammaticalized formal-noun set (ruwe, hawe, siri, humi, hi, pe) acting as clause-nominalizing heads."
+				title: "Lexical Heads and Formal-Noun Nominalization",
+				summary: "Hi and place/time relations, sensory complements, conventional words and relative phrases, Tokachi independent endings, and Horobetsu adverbial clauses."
 			},
 			{
 				slug: "prenominal-gap-relative-clauses",

@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 194 works cited across the grammar into a single
+		This chapter gathers the 195 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -29,7 +29,7 @@
 	<p class="bib-entry">Bugaeva, Anna, Shiho Endō &amp; Shirō Akasegawa (2015). <i>A topical dictionary of conversational Ainu</i>.</p>
 	<p class="bib-entry">Chiba University Ainu Language Research Project 千葉大学 (eds.) (2015). <i lang="ja">千葉大学アイヌ語資料集</i>. [Chiba University Ainu language materials collection].</p>
 	<p class="bib-entry">Chiri Yukie 知里幸恵 (1923). <i lang="ja">アイヌ神謡集</i>. [A collection of Ainu divine epics [Ainu Shin'yōshū]]. Tokyo: Kyōdo Kenkyūsha 郷土研究社.</p>
-	<p class="bib-entry">Chudá, Klára フダー・クラーラ (2025). <i lang="ja">主観性から見たアイヌ語の所有表現</i>. [Ainu possessive expressions from the perspective of subjectivity]. 研究論集 24. 241–260.</p>
+	<p class="bib-entry">Chudá, Klára フダー・クラーラ (2025). <i lang="ja">主観性から見たアイヌ語の所有表現の考察</i>. [Ainu possessive expressions from the perspective of subjectivity]. 研究論集 24. 241–260.</p>
 	<p class="bib-entry">Dal Corso, Elia (2020). <i>The interaction of relativization and noun incorporation in Southern Hokkaidō Ainu</i>.</p>
 	<p class="bib-entry">Fukazawa Mika 深澤美香 (2017). <i lang="ja">加賀家文書の文献学的研究</i>. [A philological study of the Kaga-ke documents (dissertation)].</p>
 	<p class="bib-entry">Fukazawa Mika 深澤美香 (2025). <i lang="ja">国立アイヌ民族博物館所蔵 知里真志保記入のアイヌ語基礎語彙調査表</i>. [Chiri Mashiho's annotated Ainu basic-vocabulary survey tables (National Ainu Museum)].</p>
@@ -89,9 +89,10 @@
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2013). <i lang="ja">十勝方言における証拠性と叙述類型</i>. [Evidentiality and predication types in the Tokachi dialect].</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2014). <i lang="ja">アイヌ語十勝方言例文集</i>. [A collection of example sentences in the Tokachi dialect of Ainu].</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2016). <i lang="ja">十勝方言の否定構造について</i>. [On the negation structures of the Tokachi dialect].</p>
-	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2018). <i lang="ja">幌別方言における名詞化辞の文法化</i>. [The grammaticalization of nominalizers in the Horobetsu dialect].</p>
+	<p class="bib-entry">Takahashi Yasushige 高橋靖以 (2014). <i lang="ja">アイヌ語十勝方言における名詞化節の脱従属節化</i>. [Insubordination of nominalized clauses in the Tokachi dialect of Ainu]. 北方言語研究 4. 149–155.</p>
 	<p class="bib-entry">Takahashi Yasushige 高橋靖以 (2015). <i lang="ja">アイヌ語十勝方言における1人称と包括人称について</i>. [On the first and inclusive persons in the Tokachi dialect]. 北方言語研究 5. 205–213.</p>
 	<p class="bib-entry">Takahashi Yasushige 高橋靖以 (2017). <i lang="ja">アイヌ語幌別方言の使役接尾辞について</i>. [On the causative suffixes in the Horobetsu dialect of Ainu]. 北方言語研究 7. 99–106.</p>
+	<p class="bib-entry">Takahashi Yasushige 高橋靖以 (2018). <i lang="ja">アイヌ語幌別方言における名詞化辞の文法化</i>. [The grammaticalization of nominalizers in the Horobetsu dialect]. 北方言語研究 8. 107–114.</p>
 	<p class="bib-entry">Tamura Masashi 田村雅史 (2011). <i lang="ja">アイヌ語白糠方言の文法記述</i>. [A grammatical description of the Shiranuka dialect of Ainu].</p>
 	<p class="bib-entry">Tamura Suzuko 田村すゞ子 (1960). <i lang="ja">沙流方言の助動詞</i>. [Auxiliary verbs in the Saru dialect].</p>
 	<p class="bib-entry">Tamura Suzuko 田村すゞ子 (1971). <i lang="ja">沙流方言の人称代名詞</i>. [Personal pronouns in the Saru dialect].</p>
@@ -111,7 +112,7 @@
 <S t="Sakhalin Ainu" id="sakhalin">
 	<p class="bib-blurb">Works on Sakhalin varieties, cited for contrast.</p>
 	<p class="bib-entry">Baek, Sangyub 白尚燁 (2021). <i lang="ja">サハリン地域のウイルタ語・アイヌ語・ニヴフ語における3人称標示と複数接辞</i>. [Third-person marking and plural affixes in Uilta, Ainu and Nivkh of the Sakhalin area].</p>
-	<p class="bib-entry">Bugaeva, Anna (2016). <i>On the innovative nature of Sakhalin Ainu, focusing on nominalization</i>. Linguistic crossings and crosslinguistics in Northeast Asia (Studia Orientalia 117). Ed. Ekaterina Gruzdeva &amp; Juha Janhunen. Helsinki:</p>
+	<p class="bib-entry">Bugaeva, Anna (2016). <i>On the innovative nature of Sakhalin Ainu, focusing on nominalization</i>. Linguistic crossings and crosslinguistics in Northeast Asia (Studia Orientalia 117). Ed. Ekaterina Gruzdeva &amp; Juha Janhunen. 95–117. Helsinki:</p>
 	<p class="bib-entry">Chiri Mashiho 知里真志保 (1942). <i lang="ja">アイヌ語法研究——樺太方言を中心として</i>. [A study of Ainu grammar, centred on the Sakhalin dialect]. 樺太庁博物館報告 [Reports of the Karafuto Government Museum]. 4(4): 51–172. Toyohara:</p>
 	<p class="bib-entry">Dal Corso, Elia (2021). <i>The language and folklore of West Sakhalin Ainu: A re-edition of Murasaki Kyōko's 'Karafuto Ainugo' with translation and grammatical notes</i>. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Dal Corso, Elia (2024). <i>Elements of Sakhalin Ainu phonetics, phonology, and morphosyntax in Bronisław Piłsudski's corpus of Ainu folklore</i>.</p>

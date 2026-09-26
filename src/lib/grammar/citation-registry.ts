@@ -200,6 +200,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	cambridgeturkish2022: { sourceRole: 'primary-data', heldLocally: false },
 	dehkhoda1931: { sourceRole: 'primary-data', heldLocally: false },
 	lealglanz2021: { sourceRole: 'prior-analysis', heldLocally: false },
+	takahashi2014nom: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2014_高橋靖以_アイヌ語十勝方言における名詞化節の脱従属節化.pdftotext.txt' },
 	takahashi2018: { sourceRole: 'prior-analysis', heldLocally: true },
 
 	// Possession

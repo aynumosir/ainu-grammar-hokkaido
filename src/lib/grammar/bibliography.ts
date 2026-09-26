@@ -108,7 +108,8 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	kawakami1976: {
 		region: 'hokkaido',
-		author: 'Kawakami Matsuko 川上まつ子 (narrator); Hamada Takashi 浜田隆史 (transcription and notes)',
+		author:
+			'Kawakami Matsuko 川上まつ子 (narrator); Hamada Takashi 浜田隆史 (transcription and notes)',
 		citeAuthor: 'Kawakami',
 		year: '1976',
 		title: 'Uwepeker 7',
@@ -147,7 +148,7 @@ export const bibliography: Record<string, BibEntry> = {
 		title: 'ワシ神の化身と人間の娘',
 		titleTr: 'The incarnation of the eagle god and a human daughter',
 		container: 'National Ainu Museum Ainu Language Archive',
-		url: "https://ainugo.nam.go.jp/search/media?keyword=%22%E5%B7%9D%E4%B8%8A%E3%81%BE%E3%81%A4%E5%AD%90%E3%81%95%E3%82%93%E3%81%AE%E6%B0%91%E8%A9%B1%28%EF%BD%B1%29+%E3%83%AF%E3%82%B7%E7%A5%9E%E3%81%AE%E5%8C%96%E8%BA%AB%E3%81%A8%E4%BA%BA%E9%96%93%E3%81%AE%E5%A8%98%EF%BC%881986%EF%BC%89%22&typeCont=on",
+		url: 'https://ainugo.nam.go.jp/search/media?keyword=%22%E5%B7%9D%E4%B8%8A%E3%81%BE%E3%81%A4%E5%AD%90%E3%81%95%E3%82%93%E3%81%AE%E6%B0%91%E8%A9%B1%28%EF%BD%B1%29+%E3%83%AF%E3%82%B7%E7%A5%9E%E3%81%AE%E5%8C%96%E8%BA%AB%E3%81%A8%E4%BA%BA%E9%96%93%E3%81%AE%E5%A8%98%EF%BC%881986%EF%BC%89%22&typeCont=on',
 		lang: 'ja',
 		note: 'Saru narrative recorded in 1986. The published transcription is preserved as nam-archive/kawakami-minwa/09; record identifiers use the zero-based sentence index in that aligned transcription.'
 	},
@@ -278,7 +279,8 @@ export const bibliography: Record<string, BibEntry> = {
 		year: '2009',
 		title: 'アイヌ語の条件表現について',
 		titleTr: 'On the conditional expressions of Ainu',
-		container: 'Tsumagari Toshirō 津曲敏郎 (ed.), サハリンの言語世界 [The linguistic world of Sakhalin]',
+		container:
+			'Tsumagari Toshirō 津曲敏郎 (ed.), サハリンの言語世界 [The linguistic world of Sakhalin]',
 		pages: '49–56',
 		publisher: 'Graduate School of Letters, Hokkaido University 北海道大学大学院文学研究科',
 		place: 'Sapporo',
@@ -391,7 +393,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Chamberlain, Basil Hall',
 		citeAuthor: 'Chamberlain',
 		year: '1887',
-		title: 'The language, mythology, and geographical nomenclature of Japan viewed in the light of Aino studies',
+		title:
+			'The language, mythology, and geographical nomenclature of Japan viewed in the light of Aino studies',
 		publisher: 'Imperial University',
 		place: 'Tokyo',
 		reported: true
@@ -436,7 +439,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Dal Corso, Elia',
 		citeAuthor: 'Dal Corso',
 		year: '2021',
-		title: "The language and folklore of West Sakhalin Ainu: A re-edition of Murasaki Kyōko's 'Karafuto Ainugo' with translation and grammatical notes",
+		title:
+			"The language and folklore of West Sakhalin Ainu: A re-edition of Murasaki Kyōko's 'Karafuto Ainugo' with translation and grammatical notes",
 		url: 'https://db.aynu.org/sources/2021-dal-corso-elia-the-language-and-folklore-of-west-sakhalin-ainu-a',
 		reported: true
 	},
@@ -476,8 +480,10 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Satō',
 		year: '2009',
 		title: 'アイヌ語虻田方言の英雄叙事詩（yukar）テキストとその言語的特徴 (1)',
-		titleTr: 'The heroic epic (yukar) text of the Abuta dialect of Ainu and its linguistic characteristics, part 1',
-		container: '北海道立アイヌ民族文化研究センター研究紀要 [Research Bulletin of the Hokkaido Ainu Culture Research Center]',
+		titleTr:
+			'The heroic epic (yukar) text of the Abuta dialect of Ainu and its linguistic characteristics, part 1',
+		container:
+			'北海道立アイヌ民族文化研究センター研究紀要 [Research Bulletin of the Hokkaido Ainu Culture Research Center]',
 		pages: '15: 1–38',
 		lang: 'ja',
 		note: 'Narrated by Tōshima Tanke 遠島タンケ; Iburi (Abuta/虻田) yukar. Read by section; OCR page numbers garbled.'
@@ -702,7 +708,8 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Bugaeva',
 		year: '2015',
 		title: 'Relative clauses and noun complements in Ainu',
-		container: 'Bugaeva, Anna & Iku Nagasaki (eds.), アイヌ語研究の諸問題. Sapporo: Hokkaido Shuppan Kikaku Center',
+		container:
+			'Bugaeva, Anna & Iku Nagasaki (eds.), アイヌ語研究の諸問題. Sapporo: Hokkaido Shuppan Kikaku Center',
 		note: 'Applicative ko- as lexical Source (ko-nu) documented at p. 84 fn. 14'
 	},
 	bugaeva2015topical: {
@@ -810,7 +817,8 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Ochiai',
 		year: '2026',
 		title: '日本語借用形から探るアイヌ語sikerpe「キハダの実」の語源',
-		titleTr: 'The etymology of Ainu sikerpe "Amur cork tree fruit" as revealed by its Japanese loan forms',
+		titleTr:
+			'The etymology of Ainu sikerpe "Amur cork tree fruit" as revealed by its Japanese loan forms',
 		container: '北方言語研究 [Northern Language Studies]',
 		pages: '16: 175–199',
 		lang: 'ja'
@@ -820,7 +828,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Dal Corso, Elia',
 		citeAuthor: 'Dal Corso',
 		year: '2024',
-		title: "Elements of Sakhalin Ainu phonetics, phonology, and morphosyntax in Bronisław Piłsudski's corpus of Ainu folklore",
+		title:
+			"Elements of Sakhalin Ainu phonetics, phonology, and morphosyntax in Bronisław Piłsudski's corpus of Ainu folklore",
 		url: 'https://db.aynu.org/sources/2024-dal-corso-elia-elements-of-sakhalin-ainu-phonetics-phonology-and-morphosyntax-in-bronis-aw-pi-sudskis-corpus-of-ainu-folklore'
 	},
 	itabashi2001: {
@@ -829,7 +838,8 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Itabashi',
 		year: '2001',
 		title: '樺太アイヌ語の母音の長短と北海道アイヌ語のピッチアクセントとの史的関係',
-		titleTr: 'The diachronic relation between Sakhalin Ainu vowel length and Hokkaido Ainu pitch accent',
+		titleTr:
+			'The diachronic relation between Sakhalin Ainu vowel length and Hokkaido Ainu pitch accent',
 		lang: 'ja'
 	},
 	shiratori2026: {
@@ -917,7 +927,8 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Baek',
 		year: '2021',
 		title: 'サハリン地域のウイルタ語・アイヌ語・ニヴフ語における3人称標示と複数接辞',
-		titleTr: 'Third-person marking and plural affixes in Uilta, Ainu and Nivkh of the Sakhalin area',
+		titleTr:
+			'Third-person marking and plural affixes in Uilta, Ainu and Nivkh of the Sakhalin area',
 		lang: 'ja'
 	},
 	sakaguchi2024: {
@@ -1101,8 +1112,7 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Kobayashi',
 		year: '2025',
 		title: 'アイヌ語における主語抱合と所属形的接頭辞 e-/o- による派生',
-		titleTr:
-			'Subject incorporation and derivation by affiliative-type prefixes e-/o- in Ainu',
+		titleTr: 'Subject incorporation and derivation by affiliative-type prefixes e-/o- in Ainu',
 		container: '北方言語研究 [Northern Language Studies]',
 		pages: '15: 165–178',
 		lang: 'ja'
@@ -1136,9 +1146,11 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Satō Tomomi 佐藤知己',
 		citeAuthor: 'Satō',
 		year: '2016',
-		title: 'A classification of the types of noun incorporation in Ainu and its implications for morphosyntactic typology',
+		title:
+			'A classification of the types of noun incorporation in Ainu and its implications for morphosyntactic typology',
 		editor: 'Ekaterina Gruzdeva & Juha Janhunen',
-		container: 'Crosslinguistics and linguistic crossings in Northeast Asia (Studia Orientalia 117)',
+		container:
+			'Crosslinguistics and linguistic crossings in Northeast Asia (Studia Orientalia 117)',
 		place: 'Helsinki',
 		url: 'https://db.aynu.org/sources/2016-sato-tomomi-a-classification-of-the-types-of-noun-incorporation-in-ainu-and-its-implications-for-morphosyntactic-typology'
 	},
@@ -1339,8 +1351,10 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Bugaeva',
 		year: '2016',
 		title: 'On the innovative nature of Sakhalin Ainu, focusing on nominalization',
+		pages: '95–117',
 		editor: 'Ekaterina Gruzdeva & Juha Janhunen',
-		container: 'Linguistic crossings and crosslinguistics in Northeast Asia (Studia Orientalia 117)',
+		container:
+			'Linguistic crossings and crosslinguistics in Northeast Asia (Studia Orientalia 117)',
 		place: 'Helsinki',
 		url: 'https://db.aynu.org/sources/2016-bugaeva-anna-on-the-innovative-nature-of-sakhalin-ainu-focusing-on-nominalization'
 	},
@@ -1377,17 +1391,33 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Leal, Jonatas & Oliver Glanz',
 		citeAuthor: 'Leal & Glanz',
 		year: '2021',
-		title: '“God’s obedience”: A linguistic and narrative exploration of the Hebrew idiom in 1 Kings 17:22 and its theological implications',
+		title:
+			'“God’s obedience”: A linguistic and narrative exploration of the Hebrew idiom in 1 Kings 17:22 and its theological implications',
 		container: 'Andrews University Seminary Studies 59(2)',
 		pages: '203–226',
 		url: 'https://www.andrews.edu/library/car/cardigital/Periodicals/AUSS/2021/2021_59_2.pdf'
 	},
+	takahashi2014nom: {
+		region: 'hokkaido',
+		author: 'Takahashi Yasushige 高橋靖以',
+		citeAuthor: 'Takahashi',
+		year: '2014',
+		title: 'アイヌ語十勝方言における名詞化節の脱従属節化',
+		titleTr: 'Insubordination of nominalized clauses in the Tokachi dialect of Ainu',
+		container: '北方言語研究 4',
+		pages: '149–155',
+		url: 'https://hdl.handle.net/2115/55126',
+		lang: 'ja'
+	},
 	takahashi2018: {
 		region: 'hokkaido',
-		author: 'Takahashi Yasui 髙橋靖以',
+		author: 'Takahashi Yasushige 高橋靖以',
 		citeAuthor: 'Takahashi',
 		year: '2018',
-		title: '幌別方言における名詞化辞の文法化',
+		title: 'アイヌ語幌別方言における名詞化辞の文法化',
+		container: '北方言語研究 8',
+		pages: '107–114',
+		url: 'https://hdl.handle.net/2115/68732',
 		titleTr: 'The grammaticalization of nominalizers in the Horobetsu dialect',
 		lang: 'ja'
 	},
@@ -1421,7 +1451,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Chudá, Klára フダー・クラーラ',
 		citeAuthor: 'Chudá',
 		year: '2025',
-		title: '主観性から見たアイヌ語の所有表現',
+		title: '主観性から見たアイヌ語の所有表現の考察',
+		url: 'https://doi.org/10.14943/rjgshhs.24.l241',
 		container: '研究論集 24',
 		pages: '241–260',
 		titleTr: 'Ainu possessive expressions from the perspective of subjectivity',
@@ -1435,7 +1466,8 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Ochiai',
 		year: '2021',
 		title: 'アイヌ語の数詞再考——二十進法における下方算法から上方算法へ',
-		titleTr: 'Ainu numerals reconsidered: from subtractive to additive counting in the vigesimal system',
+		titleTr:
+			'Ainu numerals reconsidered: from subtractive to additive counting in the vigesimal system',
 		lang: 'ja'
 	},
 	sakaguchi2022: {
@@ -1497,7 +1529,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Nikitina, Tatiana & Anna Bugaeva',
 		citeAuthor: 'Nikitina & Bugaeva',
 		year: '2021',
-		title: 'Logophoric speech is not indirect: Towards a syntactic approach to reported speech constructions',
+		title:
+			'Logophoric speech is not indirect: Towards a syntactic approach to reported speech constructions',
 		container: 'Linguistics 59(3)',
 		url: 'https://db.aynu.org/sources/2021-nikitina-tatiana-bugaeva-anna-logophoric-speech-is-not-indirect'
 	},
@@ -1543,7 +1576,8 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Asai',
 		year: '1974',
 		title: 'アイヌ語諸方言の分類について——語彙統計学的方法の再検討',
-		titleTr: 'On the classification of Ainu dialects: a reconsideration of the lexicostatistic method',
+		titleTr:
+			'On the classification of Ainu dialects: a reconsideration of the lexicostatistic method',
 		container: '北方文化研究 [Hoppō Bunka Kenkyū]',
 		pages: '8: 45–136',
 		lang: 'ja',
@@ -1577,7 +1611,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Ono, Yohei 小野洋平',
 		citeAuthor: 'Ono',
 		year: '2020',
-		title: 'Reconsideration of the "major division" of Ainu dialects: A statistical reanalysis of Asai (1974)',
+		title:
+			'Reconsideration of the "major division" of Ainu dialects: A statistical reanalysis of Asai (1974)',
 		container: 'Journal of the Linguistic Society of Japan'
 	},
 	nakagawafukazawa2022: {
@@ -1607,7 +1642,8 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Kasuga',
 		year: '2026',
 		title: 'アイヌ語多地点方言分類——75地点の計量的分析',
-		titleTr: 'A multi-locality classification of Ainu dialects: a quantitative analysis of 75 sites',
+		titleTr:
+			'A multi-locality classification of Ainu dialects: a quantitative analysis of 75 sites',
 		lang: 'ja'
 	},
 	fukazawa2025: {
@@ -1686,7 +1722,7 @@ export const bibliography: Record<string, BibEntry> = {
 		publisher: 'De Gruyter Mouton',
 		place: 'Berlin & Boston',
 		url: 'https://db.aynu.org/sources/2022-bugaeva',
-		note: 'Chapter 6 of the Handbook; the Ainu-loans-in-Old-Japanese thesis (Man\'yōshū material; §§1–6). A live but contested claim.'
+		note: "Chapter 6 of the Handbook; the Ainu-loans-in-Old-Japanese thesis (Man'yōshū material; §§1–6). A live but contested claim."
 	},
 	shiraishitangiku2022: {
 		region: 'general',
@@ -1840,7 +1876,7 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Ainu Koraci',
 		year: '1991',
 		title: 'アイヌタイムズ',
-		titleTr: 'Ainu Times (Ainu language learners\' newsletter)',
+		titleTr: "Ainu Times (Ainu language learners' newsletter)",
 		note: 'Periodical newsletter featuring texts by speakers including 神崎雅好, 浜田隆史, 丸野和子, 萱野志朗, and 横山裕之 (Saru and Chitose dialects). Cite the underlying contributor and issue for examples.',
 		lang: 'ja'
 	},
@@ -1855,7 +1891,8 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	ilcaa1976: {
 		region: 'hokkaido',
-		author: 'Research Institute for Languages and Cultures of Asia and Africa (ILCAA), Tokyo University of Foreign Studies',
+		author:
+			'Research Institute for Languages and Cultures of Asia and Africa (ILCAA), Tokyo University of Foreign Studies',
 		citeAuthor: 'ILCAA Ainu materials',
 		year: '1976',
 		title: 'AA研アイヌ語資料',
@@ -1947,7 +1984,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Compton, Richard',
 		citeAuthor: 'Compton',
 		year: '2012',
-		title: 'The syntax and semantics of modification in Inuktitut: Adjectives and adverbs in a polysynthetic language',
+		title:
+			'The syntax and semantics of modification in Inuktitut: Adjectives and adverbs in a polysynthetic language',
 		container: 'PhD dissertation, University of Toronto',
 		reported: true
 	},
@@ -1956,7 +1994,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Kantarovich, Jessica',
 		citeAuthor: 'Kantarovich',
 		year: '2024',
-		title: 'Incorporation as a grammaticalization pathway: Chukchi incorporating morphology in areal perspective',
+		title:
+			'Incorporation as a grammaticalization pathway: Chukchi incorporating morphology in areal perspective',
 		container: 'Journal of Language Contact 17(1)',
 		pages: '163–217',
 		reported: true
@@ -2057,7 +2096,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Miestamo, Matti',
 		citeAuthor: 'Miestamo',
 		year: '2005',
-		title: 'Standard negation: The negation of declarative verbal main clauses in a typological perspective',
+		title:
+			'Standard negation: The negation of declarative verbal main clauses in a typological perspective',
 		publisher: 'Mouton de Gruyter',
 		place: 'Berlin',
 		reported: true
