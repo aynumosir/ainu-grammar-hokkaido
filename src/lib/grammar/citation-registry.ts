@@ -56,6 +56,7 @@ export interface RegistryEntry {
 export const SOURCE_REPO = '../ainu-grammar';
 
 export const citationRegistry: Record<string, RegistryEntry> = {
+	kawakami1983: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/aa-irc/020.yaml' },
 	kawakami1986: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/nam-archive/kawakami-minwa/09.yaml' },
 	kayano1998a: { sourceRole: 'primary-data', heldLocally: false },
 	// Reference grammars & handbooks

@@ -71,6 +71,17 @@ export interface BibEntry {
 }
 
 export const bibliography: Record<string, BibEntry> = {
+	kawakami1983: {
+		region: 'hokkaido',
+		author: 'Kawakami Matsuko 川上まつ子 (narrator)',
+		citeAuthor: 'Kawakami',
+		year: '1983',
+		title: 'Uwepeker 14, first half',
+		container: 'ILCAA Ainu language materials',
+		url: 'https://ainugo.aa-ken.jp/main.php?id=20',
+		lang: 'ja',
+		note: 'Saru narrative recorded on 1983-08-11; transcription and annotations by 欠ヶ端和也. The year identifies the recording. Record identifiers use the zero-based sentence index of the published transcription, preserved as aa-irc/020.'
+	},
 	kawakami1986: {
 		region: 'hokkaido',
 		author: 'Kawakami Matsuko 川上まつ子 (narrator)',

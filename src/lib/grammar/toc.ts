@@ -225,33 +225,33 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "formal-defective-nouns",
-				title: "The Formal / Defective Noun Set (ruwe, hawe, siri, humi, hi, pe, kur)",
-				summary: "The closed set of bound 'formal' nouns that head nominalized and evidential constructions, defined here as a morphosyntactic subclass with shared diagnostics."
+				title: "Formal Nouns and Nominalizing Constructions",
+				summary: "Dependent nominal heads, their modifiers, and the competing analyses of relative, complement, and evidential uses."
 			},
 			{
 				slug: "verbal-subclasses-taxonomy",
-				title: "Verbal Subclasses: A Valence-Based Word-Class Taxonomy",
-				summary: "A word-class-level survey of verb subclasses by valence — intransitive (agentive vs patientive), transitive, ditransitive, and 'complete/incomplete' verbs — with detailed transitivity deferred to Part X."
+				title: "Verb Classes, Arguments, and Person Marking",
+				summary: "Verb subclasses defined through person marking and argument structure, including zero-argument predicates, locative objects, copular complements, and derived higher-valency forms."
 			},
 			{
 				slug: "no-adjective-class-property-verbs",
-				title: "The 'No Adjective Class' Thesis: Property Concepts as Stative Verbs",
-				summary: "Why pirka, poro, and other property words are analysed as stative intransitive verbs rather than adjectives, and whether any residual adjectival/quality-noun subclass survives."
+				title: "Property Predicates and the Adjective Analysis",
+				summary: "The verbal morphology and syntax of property predicates, their state and change readings, and the modern and historical classification debates."
 			},
 			{
 				slug: "nominal-derivation-diminutive-augmentative",
-				title: "Derivational Morphology on Nouns: Diminutive, Augmentative, and Size Modification",
-				summary: "Noun-internal derivation, principally the diminutive -po and augmentative/evaluative strategies, plus the pon/poro size-modifier boundary between morphology and syntax."
+				title: "Diminutive and Affective Noun Formation",
+				summary: "The suffix -po, lexicalized formations, regional okkaypo meanings, and historical Horobetsu kinship uses."
 			},
 			{
 				slug: "noun-noun-compounding",
-				title: "Noun–Noun Compounding: Headedness, Linking, and Semantics",
-				summary: "Productive N-N compound formation, its headedness and morphophonological linking, and the semantic typology of compounds, drawn from the dedicated Ainu compound-noun literature."
+				title: "Nominal Compounds and Their Structure",
+				summary: "Compound diagnostics, six documented formation patterns, nominal conversion, and lexicalization at the phrase boundary."
 			},
 			{
 				slug: "deverbal-denominal-noun-derivation",
-				title: "Deverbal and Denominal Noun Derivation (Lexical Nominalizer Morphology)",
-				summary: "The morphology of forming nouns with -p/-pe, -i/-hi, and -kur, treated here as lexical word-formation, with syntactic nominalization/relativization deferred to Part XVI."
+				title: "Noun Formation from Verbs and Nouns",
+				summary: "Nominalizing forms, lexical person-shaped prefixes, conversion, and the relationship between lexical nouns and clause-level constructions."
 			},
 			{
 				slug: "nominal-number-utar-transnumerality",
