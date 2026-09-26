@@ -56,6 +56,9 @@ export interface RegistryEntry {
 export const SOURCE_REPO = '../ainu-grammar';
 
 export const citationRegistry: Record<string, RegistryEntry> = {
+	yokoyama2002: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/ainu-times/024/1.yaml' },
+	kawakami1976: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/aa-irc/005.yaml' },
+	kawakami1984: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/aa-irc/022.yaml' },
 	kawakami1983: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/aa-irc/020.yaml' },
 	kawakami1986: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/nam-archive/kawakami-minwa/09.yaml' },
 	kayano1998a: { sourceRole: 'primary-data', heldLocally: false },

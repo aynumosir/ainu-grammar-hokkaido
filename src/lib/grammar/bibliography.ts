@@ -71,6 +71,37 @@ export interface BibEntry {
 }
 
 export const bibliography: Record<string, BibEntry> = {
+	yokoyama2002: {
+		region: 'hokkaido',
+		author: 'Yokoyama Hiroyuki 横山裕之',
+		citeAuthor: 'Yokoyama',
+		year: '2002',
+		title: 'noya',
+		container: 'Ainu Times 24 (27 December 2002)',
+		note: 'Includes a quotation attributed to Nakamoto Mutsuko. The aligned transcription is ainu-times/024/1; its record identifiers use zero-based sentence indices.'
+	},
+	kawakami1976: {
+		region: 'hokkaido',
+		author: 'Kawakami Matsuko 川上まつ子 (narrator); Hamada Takashi 浜田隆史 (transcription and notes)',
+		citeAuthor: 'Kawakami',
+		year: '1976',
+		title: 'Uwepeker 7',
+		container: '音声資料・アイヌ語 (ILCAA)',
+		url: 'https://ainugo.aa-ken.jp/main.php?id=4',
+		lang: 'ja',
+		note: 'Saru narrative recorded on 24 August 1976. Record identifiers refer to the zero-based sentence index in the aligned transcription aa-irc/005.'
+	},
+	kawakami1984: {
+		region: 'hokkaido',
+		author: 'Kawakami Matsuko 川上まつ子 (narrator)',
+		citeAuthor: 'Kawakami',
+		year: '1984',
+		title: 'Uwepeker 15',
+		container: 'ILCAA Ainu language materials',
+		url: 'https://ainugo.aa-ken.jp/main.php?id=22',
+		lang: 'ja',
+		note: 'Saru narrative recorded on 1984-07-29; transcription and annotations by 山田慎太郎. The year identifies the recording. Record identifiers use the zero-based sentence index of the published transcription, preserved as aa-irc/022.'
+	},
 	kawakami1983: {
 		region: 'hokkaido',
 		author: 'Kawakami Matsuko 川上まつ子 (narrator)',
@@ -1332,9 +1363,12 @@ export const bibliography: Record<string, BibEntry> = {
 	// ───────────────────────── Possession ─────────────────────────
 	bugaeva2021poss: {
 		region: 'general',
-		author: 'Bugaeva, Anna',
-		citeAuthor: 'Bugaeva',
-		year: '2021',
+		author: 'Bugaeva, Anna; Nichols, Johanna; Bickel, Balthasar',
+		citeAuthor: 'Bugaeva, Nichols & Bickel',
+		year: '2022',
+		container: 'Linguistic Typology 26(1)',
+		pages: '43–88',
+		note: 'First published online in 2021.',
 		title: 'Appositive possession in Ainu and around the Pacific',
 		url: 'https://db.aynu.org/sources/2021-bugaeva-anna-appositive-possession-in-ainu-and-around-the-pacific'
 	},
@@ -1349,10 +1383,12 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	huber2025: {
 		region: 'hokkaido',
-		author: 'Huber, Klára フダー・クラーラ',
-		citeAuthor: 'Huber',
+		author: 'Chudá, Klára フダー・クラーラ',
+		citeAuthor: 'Chudá',
 		year: '2025',
 		title: '主観性から見たアイヌ語の所有表現',
+		container: '研究論集 24',
+		pages: '241–260',
 		titleTr: 'Ainu possessive expressions from the perspective of subjectivity',
 		lang: 'ja'
 	},

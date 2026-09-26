@@ -255,13 +255,13 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "nominal-number-utar-transnumerality",
-				title: "Nominal Number: Transnumerality, -utar, and the Locus of Plurality",
-				summary: "The nominal number system — bare-noun general number/transnumerality, the human pluralizer -utar/utar(i), and the division of labour between nominal and verbal plurality."
+				title: "Nominal Number and Utar",
+				summary: "Number-neutral nouns, plural and associative utar, lexical plurals, and source differences over animacy and possession."
 			},
 			{
 				slug: "noun-phrase-structure",
-				title: "The Structure of the Noun Phrase",
-				summary: "NP-internal constituent order and modification: the order of demonstratives, numerals/quantifiers, relative clauses, and adnominal modifiers relative to the head noun, apposition, determination without articles, NP-internal coordination, and recursion."
+				title: "Noun-Phrase Structure",
+				summary: "Modifiers, demonstratives, numerals, locative expressions, possession, and coordination, with attributed differences in analysis."
 			}
 		]
 	},
@@ -270,33 +270,33 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "alienable-inalienable-split",
-				title: "The Alienable/Inalienable Split and Possessive Classification",
-				summary: "Hokkaido Ainu's binary possessive split — obligatorily possessed inalienable nouns vs. periphrastically possessed alienable nouns — its semantic classes, gradience, and place on the alienability-typology map."
+				title: "Possessive Constructions and Alienability",
+				summary: "Possession with kor and affiliative nouns, lexical and dialect variation, and the limits of semantic classifications."
 			},
 			{
 				slug: "concept-form-affiliative-form",
-				title: "Concept Form vs. Affiliative (Possessed) Form",
-				summary: "The functional opposition between the bare concept form (概念形) and the affiliative/possessed form (所属形), and the rule that inalienable nouns are obligatorily affiliative when possessed."
+				title: "Concept, Affiliative, and Personal Forms",
+				summary: "Possessive noun forms, short and long variants, person marking, and the interpretation of expressed and unspecified possessors."
 			},
 			{
 				slug: "affiliative-suffix-morphophonology",
-				title: "Morphophonology of the Affiliative Suffix and Echo/Copy Vowels",
-				summary: "The vowel-copy mechanism producing echo/release vowels and the affiliative paradigm (-hV, -ihi, -uhu, -V): copy directionality, class membership, the phonological-vs-lexical conditioning dispute, and the internal-reconstruction source of -hV."
+				title: "Affiliative Suffix Patterns",
+				summary: "Phonological conditions, lexical suffix classes, exceptional forms, and attributed historical analyses of possessive morphology."
 			},
 			{
 				slug: "adnominal-possession-double-marking",
-				title: "Adnominal Possession: Double Marking and the Appositive Construction",
-				summary: "NP-internal possession marked by a personal possessor prefix plus the affiliative suffix (ku= sapa-ha 'my head'), and the appositive/juxtaposed possessor-NP construction (sisam kotanuhu)."
+				title: "Adnominal Possession and Double Marking",
+				summary: "Possessor phrases, head marking, kor with affiliative nouns, classifier verbs, and nested possessive relations."
 			},
 			{
 				slug: "external-possession-possessor-raising",
-				title: "External Possession and Possessor Raising",
-				summary: "Constructions in which the possessor of an (inalienable) noun is realized as a core clausal argument (en=…sik 'my eye'), and their relation to possessor-stranding noun incorporation."
+				title: "Possessors in Noun Incorporation",
+				summary: "Possessor-to-subject incorporation, its person marking, and the different restrictions on object incorporation."
 			},
 			{
 				slug: "kinship-honorific-possession",
-				title: "Kinship and Honorific Possession",
-				summary: "Idiosyncrasies of kinship-term possession (irregular/suppletive affiliatives, vocatives) and honorific possession that marks esteemed possessors via the indefinite/fourth person."
+				title: "Kinship, Address, and Possession",
+				summary: "Lexical and dialect differences in kinship possession, reference and address, honorific fourth person, and narrative possession."
 			}
 		]
 	},
