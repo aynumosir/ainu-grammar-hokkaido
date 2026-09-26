@@ -44,3 +44,6 @@ jobs:
         run: bun run check
       - name: Deploy
         run: bunx wrangler deploy
+      # Fails when grammar.aynu.org does not serve what this job built.
+      - name: Verify the live site
+        run: bun scripts/verify-deploy.ts
