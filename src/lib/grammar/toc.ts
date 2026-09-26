@@ -735,23 +735,23 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "negation-existential-possessive-isam",
-				title: "Negative Existential and Possessive: isam",
-				summary: "isam as the suppletive negative counterpart of the existentials an/oka, its 'not have' possessive use, and the privative sak."
+				title: "Absence and Lack: Isam and Sak",
+				summary: "Negative existential and possessive predicates, subject and object contrasts, lexical alternatives, figurative completion, and an attributed historical proposal."
 			},
 			{
 				slug: "negation-ability-cognition-predicates",
-				title: "Negative Predicates of Ability and Cognition",
-				summary: "Lexically suppletive negative modal/cognition predicates — eaykap 'cannot', eramiskari 'not know how/never', erampewtek 'not understand' — versus analytic somo negation."
+				title: "Inability, Inexperience, and Lack of Knowledge",
+				summary: "Lexical contrasts, independent and auxiliary uses, capacity and circumstances, and dialect and register restrictions."
 			},
 			{
 				slug: "negation-polarity-items-scope",
-				title: "Negative-Polarity Indefinites and the Scope of Negation",
-				summary: "The ka-indefinite/NPI series under somo, negative concord, constituent vs clausal negation, and the negation of nominal predicates (somo ... ne)."
+				title: "Indefinite Expressions and Negation",
+				summary: "Affirmative and negative readings, interrogative and indefinite bases, variable ka meanings, free choice, and the placement of negation."
 			},
 			{
 				slug: "negation-prohibitive-iteki",
-				title: "The Prohibitive Subsystem: iteki and Negative Directives",
-				summary: "The dedicated prohibitive iteki, its asymmetry with declarative negation, apprehensive 'lest' uses, and links to the imperative/hortative system."
+				title: "Prohibitions with Iteki and Related Forms",
+				summary: "Bare imperative and person-marked directives, regional prohibitives, placement, plural and polite address, and advisory expressions."
 			}
 		]
 	},
@@ -760,13 +760,13 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "clause-linkage-overview",
-				title: "Clause Linkage in Ainu: Typology and Inventory",
-				summary: "Framing chapter mapping Ainu clause combining onto the coordination–cosubordination–subordination continuum and laying out the full inventory of clause-linking morphemes."
+				title: "Clause Linkage and Its Analyses",
+				summary: "Unchanged verb forms, connective categories, competing structural accounts, participant reference, and the principal linking relations."
 			},
 			{
 				slug: "sequential-wa-and-clause-chaining",
-				title: "Sequential wa and Clause Chaining",
-				summary: "The default connective wa 'and (then)', multi-clause event chains, and the culminative linker aine, disambiguated from the homophonous resultative/perfect wa."
+				title: "Wa, Connected Events, and Ayne",
+				summary: "Sequence, causation, manner and result states, shared and different subjects, duration with ayne, and source-specific negative and phonological patterns."
 			},
 			{
 				slug: "hine-akusu-switch-reference",

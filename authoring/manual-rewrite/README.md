@@ -1,6 +1,6 @@
 # Source comparison for the grammar rewrite
 
-The scope is all 178 original grammar chapters. Chapters 1–126 have replacement drafts with independent source review: 126 chapters complete, with 52 remaining. The remaining chapters still require their individual evidence checks and replacement prose.
+The scope is all 178 original grammar chapters. Chapters 1–132 have replacement drafts with independent source review: 132 chapters complete, with 46 remaining. The remaining chapters still require their individual evidence checks and replacement prose.
 
 AUTHORING.md §2, Stage 2 requires a claims/disagreements matrix before prose, and human editorial sign-off on the foundational matrices before dependent chapters are drafted. **Approved by the user on 2026-09-26:** “Approve the proposed treatment and continue all 178 chapters.” This sign-off covers the summary and the corresponding decisions in all three linked matrices.
 

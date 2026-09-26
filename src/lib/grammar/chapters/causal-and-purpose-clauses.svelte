@@ -71,7 +71,7 @@
 		<i lang="ain-Latn">kusu ne</i> 'be going to; intend to' and the indirect-speech
 		complementizer use treated in <Xr ch="kuni-complementizer-purpose-complements" />. The
 		inventory context for <i lang="ain-Latn">kusu</i> is established in
-		<Xr ch="clause-linkage-overview" s="inventory">the clause-linkage overview</Xr>.
+		<Xr ch="clause-linkage-overview" s="relations">the clause-linkage overview</Xr>.
 	</p>
 </S>
 
@@ -251,7 +251,7 @@
 		a free connective adverb meaning 'therefore; that is why' (Japanese
 		<span lang="ja">そのために</span>), straddling the boundary between conjunctive particle and
 		conjunction <Ref k="nakagawa2024" p="353" />. This free use is noted in the clause-linkage
-		overview; see <Xr ch="clause-linkage-overview" s="finite-linkage">the particle/adverb
+		overview; see <Xr ch="clause-linkage-overview" s="analyses">the particle/adverb
 		distinction</Xr>. In this position, <i lang="ain-Latn">kusu</i> links a preceding
 		discourse unit to the following clause as its consequence or result, functioning as a
 		clause-level connective adverb rather than a post-predicate particle.
@@ -358,7 +358,6 @@
 		<i lang="ain-Latn">kor</i> (simultaneous action) and <i lang="ain-Latn">wa</i>
 		(result-state after completion) <Ref k="nakagawa2024" p="344" />. The Sakhalin particle
 		is therefore a false cognate for Hokkaido purposes: segmentally identical but functionally
-		divergent. This contrast is summarized in <Xr ch="clause-linkage-overview" s="dialect-edges" />
-		and is relevant to <Xr ch="simultaneous-kor-clauses" />.
+		divergent. See also <Xr ch="simultaneous-kor-clauses" />.
 	</p>
 </S>
