@@ -3,6 +3,7 @@
 	import { CANONICAL_HOSTNAME, BOOK_TITLE } from '$lib/consts';
 	import SiteHeader from '$lib/components/SiteHeader.svelte';
 	import SiteFooter from '$lib/components/SiteFooter.svelte';
+	import SiteNotice from '$lib/components/SiteNotice.svelte';
 
 	// Self-hosted IBM Plex superfamily — no network/external fetch at build or run.
 	// Serif = prose body; Sans = UI/headings/nav; Mono = interlinear example lines.
@@ -50,6 +51,7 @@
 		class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:bg-accent focus:px-3 focus:py-2 focus:font-sans focus:text-accent-contrast"
 		>Skip to content</a
 	>
+	<SiteNotice />
 	<SiteHeader />
 	<main id="main-content" tabindex="-1" class="flex-1">
 		{@render children()}
