@@ -88,10 +88,10 @@
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2011). <i lang="ja">十勝方言の指示表現</i>. [Demonstrative expressions in the Tokachi dialect].</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2013). <i lang="ja">十勝方言における証拠性と叙述類型</i>. [Evidentiality and predication types in the Tokachi dialect].</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2014). <i lang="ja">アイヌ語十勝方言例文集</i>. [A collection of example sentences in the Tokachi dialect of Ainu].</p>
-	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2015). <i lang="ja">十勝方言における1人称と包括人称について</i>. [On the first and inclusive persons in the Tokachi dialect].</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2016). <i lang="ja">十勝方言の否定構造について</i>. [On the negation structures of the Tokachi dialect].</p>
-	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2017). <i lang="ja">アイヌ語幌別方言の使役接尾辞について</i>. [On the causative suffixes in the Horobetsu dialect of Ainu]. 北方言語研究 7. 99–106.</p>
 	<p class="bib-entry">Takahashi Yasui 髙橋靖以 (2018). <i lang="ja">幌別方言における名詞化辞の文法化</i>. [The grammaticalization of nominalizers in the Horobetsu dialect].</p>
+	<p class="bib-entry">Takahashi Yasushige 高橋靖以 (2015). <i lang="ja">アイヌ語十勝方言における1人称と包括人称について</i>. [On the first and inclusive persons in the Tokachi dialect]. 北方言語研究 5. 205–213.</p>
+	<p class="bib-entry">Takahashi Yasushige 高橋靖以 (2017). <i lang="ja">アイヌ語幌別方言の使役接尾辞について</i>. [On the causative suffixes in the Horobetsu dialect of Ainu]. 北方言語研究 7. 99–106.</p>
 	<p class="bib-entry">Tamura Masashi 田村雅史 (2011). <i lang="ja">アイヌ語白糠方言の文法記述</i>. [A grammatical description of the Shiranuka dialect of Ainu].</p>
 	<p class="bib-entry">Tamura Suzuko 田村すゞ子 (1960). <i lang="ja">沙流方言の助動詞</i>. [Auxiliary verbs in the Saru dialect].</p>
 	<p class="bib-entry">Tamura Suzuko 田村すゞ子 (1971). <i lang="ja">沙流方言の人称代名詞</i>. [Personal pronouns in the Saru dialect].</p>

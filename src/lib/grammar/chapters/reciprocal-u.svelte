@@ -27,7 +27,7 @@
 		self-directed action, autocausative/anticausative/reflexive or reflexive-possessive marking, object defocusing, and mutual participation, respectively. The prefix
 		is highly productive: it attaches to base transitive verbs, to applicative-prefixed stems,
 		and to causativized forms, with the arity calculus predicting the transitivity of each output
-		(see <Xr ch="valency-voice-overview" s="inventory" />). A further complication is that
+		(see <Xr ch="valency-voice-overview" s="operations" />). A further complication is that
 		<i lang="ain-Latn">u-</i> covers not only canonical bilateral reciprocal meaning ('each
 		other') but also joint or associative participation ('together'), and the two readings are not
 		always distinguishable without context.

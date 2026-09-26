@@ -410,28 +410,28 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "fourth-person-honorific",
-				title: "Honorific and Logophoric Uses of the Fourth Person",
-				summary: "The indefinite/fourth person used to refer respectfully to esteemed humans and kamuy, and as the self-reference device of the first-person narrator in oral literature (the hero's 'I'); the affix-paradigm facts of these uses, with full discourse deployment in Part XIX."
+				title: "Fourth Person in Respectful Address",
+				summary: "Honorific person forms, verbal number, speaker and family differences, regional alternatives, and the distinction from narrative and quoted-speaker uses."
 			},
 			{
 				slug: "personal-affix-template-and-ordering",
-				title: "The Personal-Affix Template: Position Classes and Affix Ordering",
-				summary: "The ordering of subject and object personal affixes relative to each other, to valency prefixes, and to the verb stem — the personal-affix portion of the verb template."
+				title: "Person-Marker Order and Stem Boundaries",
+				summary: "Prefix sequences, portmanteaux, prefix–suffix combinations, additional number marking, and evidence for separable person forms."
 			},
 			{
 				slug: "person-number-interactions",
-				title: "Person–Number Interactions and Plural Agreement",
-				summary: "How the personal affixes interact with number marking — the -pa plural, the =as suffix, and agreement resolution across A, S, and O."
+				title: "Person and Verbal Number",
+				summary: "Participant number, comitative grouping, numeral constructions, fourth-person mismatches, and additional plural morphology."
 			},
 			{
 				slug: "alignment-split-intransitive",
-				title: "The Split-Intransitive (Active–Stative) Core",
-				summary: "The foundational alignment fact: intransitive subjects split between the agentive (A-set) and patientive (O-set) exponents, and the Split-S vs Fluid-S question."
+				title: "Intransitive Subjects and Semantic Roles",
+				summary: "Subject marking of agents, patients, and experiencers, lexical classes in incorporation, and the difference between valency and person-conditioned alignment."
 			},
 			{
 				slug: "alignment-hierarchical-and-the-debate",
-				title: "Tripartite, Nominative-Accusative, and the Central Alignment Debate",
-				summary: "How the 1sg and indefinite cells show distinct A/S/O exponents (tripartite) against the accusative readings of other cells, and the system-wide synthesis — hierarchical/inverse vs active-stative vs tripartite — including ditransitive and clause-type alignment."
+				title: "Mixed Alignment and Hierarchical Analyses",
+				summary: "The Hokkaido person-conditioned patterns, interaction forms, the Sakhalin inverse proposal, and the separate questions raised by lexical classes and voice."
 			}
 		]
 	},
@@ -440,28 +440,28 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "valency-voice-overview",
-				title: "Valency, Voice, and Noun Incorporation: Overview",
-				summary: "The architecture of the valency-changing system: the inventory of operations (causatives, the e-/ko-/o- applicatives, antipassive, reflexive, reciprocal, middle/anticausative, and noun incorporation) and how they compose, stack, and order on the verb."
+				title: "Valency and Voice Constructions",
+				summary: "Argument structure, person-index diagnostics, principal derivational effects, lexical formation, and competing voice analyses."
 			},
 			{
 				slug: "causative-morphological-re-e-te",
-				title: "The Morphological Causative -re / -e / -te",
-				summary: "The productive transitivizing causative suffix and its stem-conditioned allomorphy -re/-e/-te, encoding direct/manipulative causation."
+				title: "The Productive Causative -re, -te, and -e",
+				summary: "Suffix forms, causee marking, direct and indirect causation, permissive and coercive readings, lexical restrictions, and a Horobetsu clause-linkage proposal."
 			},
 			{
 				slug: "transitivizer-ka-valency-pairs",
-				title: "The Transitivizer -ka and Lexical Valency Pairs",
-				summary: "The transitivizer/causative -ka on stative bases, and the system of labile and suppletive causative–inchoative verb pairs."
+				title: "Lexical Verb Pairs and Causative -ka",
+				summary: "Root-based forming suffixes, motion causatives, regional -ka variation, derived bases, and competing classifications of causative morphology."
 			},
 			{
 				slug: "causee-marking-ditransitive-double-causative",
-				title: "Causee Marking, Ditransitive and Double Causatives",
-				summary: "How causativization of transitives builds three-place frames, the marking/indexing of the causee, and double causatives."
+				title: "Causees and Multiple Causative Layers",
+				summary: "Causee objects, retained themes, different analyses of double causation, four-participant textual evidence, and restrictions on causee backgrounding."
 			},
 			{
 				slug: "permissive-sociative-causative-yar",
-				title: "The Permissive/Sociative Causative -yar",
-				summary: "The indirect/permissive causative -yar 'let/have someone do' and the directive-vs-sociative split it forms with -re/-e/-te."
+				title: "Indefinite Causative -yar and -ar",
+				summary: "Valency-retaining causation, retained objects, oblique causees, conflicting suffix distributions, and older plural and Ishikari analyses."
 			},
 			{
 				slug: "applicative-system-overview",

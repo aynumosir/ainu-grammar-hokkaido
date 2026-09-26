@@ -16,7 +16,7 @@
 		<Ref k="nakagawa2024" p="166, 210" />. The corresponding derivations with
 		<A w="si-" gl="indirect reflexive" /> are treated in
 		<Xr ch="reflexive-possessive-si" />; person marking is treated in
-		<Xr ch="personal-affix-template-and-ordering" s="two-index-ceiling" />.
+		<Xr ch="personal-affix-template-and-ordering" s="template" />.
 	</p>
 	<p>
 		Nakagawa lists <i lang="ain-Latn">yay-</i> among the 名詞的接頭辞 (nominal prefixes) of the
@@ -361,7 +361,7 @@
 		<Ref k="nakagawa2024" p="210–212" />. Two reflexive prefixes and two applicatives can
 		co-occur on a single root, as in the word
 		<i lang="ain-Latn">a=e-yay-ko-tuyma-si-ram-suy-pa</i> discussed in
-		<Xr ch="valency-voice-overview" s="template" />
+		<Xr ch="valency-voice-overview" s="voice" />
 		<Ref k="shibatani1990" p="73" />; <Ref k="bugaeva2014polysynthesis" />.
 		A community-proposed decomposition of
 		<i lang="ain-Latn">yaykipniwkes</i> as <i lang="ain-Latn">yay-ki-p-niwkes</i> —

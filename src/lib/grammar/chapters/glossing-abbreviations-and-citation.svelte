@@ -66,7 +66,7 @@
 		marks a clitic boundary; its use here therefore needs this qualification. Whether a particular
 		person marker behaves as an affix or a clitic is a grammatical question treated in <Xr
 			ch="personal-affix-template-and-ordering"
-			s="boundary-status"
+			s="status"
 		/>.
 	</p>
 </S>

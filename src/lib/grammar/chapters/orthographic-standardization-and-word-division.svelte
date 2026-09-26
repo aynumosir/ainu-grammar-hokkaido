@@ -57,7 +57,7 @@
 		The same sign has a separate use for clitics in the Leipzig Glossing Rules
 		<Ref k="comrie2015" />. Here it identifies person marking under the Ainu convention. The
 		grammatical status of each form requires evidence about its behavior, as discussed in
-		<Xr ch="personal-affix-template-and-ordering" s="boundary-status" />.
+		<Xr ch="personal-affix-template-and-ordering" s="status" />.
 	</p>
 </S>
 

@@ -901,11 +901,14 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	takahashi2015: {
 		region: 'hokkaido',
-		author: 'Takahashi Yasui 髙橋靖以',
+		author: 'Takahashi Yasushige 高橋靖以',
 		citeAuthor: 'Takahashi',
 		year: '2015',
-		title: '十勝方言における1人称と包括人称について',
+		title: 'アイヌ語十勝方言における1人称と包括人称について',
 		titleTr: 'On the first and inclusive persons in the Tokachi dialect',
+		container: '北方言語研究 5',
+		pages: '205–213',
+		url: 'https://hdl.handle.net/2115/58358',
 		lang: 'ja'
 	},
 	baek2021: {
@@ -1052,13 +1055,14 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	takahashi2017: {
 		region: 'hokkaido',
-		author: 'Takahashi Yasui 髙橋靖以',
+		author: 'Takahashi Yasushige 高橋靖以',
 		citeAuthor: 'Takahashi',
 		year: '2017',
 		title: 'アイヌ語幌別方言の使役接尾辞について',
 		titleTr: 'On the causative suffixes in the Horobetsu dialect of Ainu',
 		container: '北方言語研究 7',
 		pages: '99–106',
+		url: 'https://hdl.handle.net/2115/64513',
 		lang: 'ja'
 	},
 	sato2007: {
