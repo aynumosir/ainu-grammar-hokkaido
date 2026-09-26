@@ -1,6 +1,7 @@
 /**
- * llm.ts — minimal OpenRouter client for the QA campaign.
- * Reads OPENROUTER_API_KEY from .env (bun loads it automatically).
+ * llm.ts — minimal OpenAI-compatible chat client for the QA and KB pipelines.
+ * Calls OpenRouter with OPENROUTER_API_KEY from .env (bun loads it automatically).
+ * LLM_BASE_URL and LLM_API_KEY point it at another OpenAI-compatible endpoint.
  * Tracks cumulative cost from response.usage against the models table.
  */
 
@@ -30,13 +31,14 @@ export async function chat(
 	user: string,
 	opts: { maxTokens?: number; temperature?: number; retries?: number } = {},
 ): Promise<string> {
-	const key = process.env.OPENROUTER_API_KEY;
-	if (!key) throw new Error('OPENROUTER_API_KEY not set');
+	const base = process.env.LLM_BASE_URL ?? 'https://openrouter.ai/api/v1';
+	const key = process.env.LLM_BASE_URL ? process.env.LLM_API_KEY : process.env.OPENROUTER_API_KEY;
+	if (!key) throw new Error(process.env.LLM_BASE_URL ? 'LLM_API_KEY not set' : 'OPENROUTER_API_KEY not set');
 	const retries = opts.retries ?? 3;
 	let lastErr: unknown;
 	for (let attempt = 0; attempt <= retries; attempt++) {
 		try {
-			const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+			const res = await fetch(`${base}/chat/completions`, {
 				method: 'POST',
 				headers: {
 					Authorization: `Bearer ${key}`,
