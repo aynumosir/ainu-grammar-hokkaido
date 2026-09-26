@@ -165,6 +165,18 @@ export const bibliography: Record<string, BibEntry> = {
 		reported: true,
 		note: 'Example on p. 74 cited through Shiraishi (2022), §6.2, example 28c. Bibliographic details follow that chapter’s references.'
 	},
+	kitahara2013: {
+		region: 'hokkaido',
+		author: 'Kitahara Jirōta 北原次郎太',
+		citeAuthor: 'Kitahara',
+		year: '2013',
+		title: '《テキスト》『上川アイヌ 熊まつり』収載の祈り詞',
+		titleTr: 'Text: Prayers published in Kamikawa Ainu kuma matsuri',
+		container: '千葉大学ユーラシア言語文化論集 15',
+		pages: '233–256',
+		lang: 'ja',
+		note: 'Edition of prayers and songs in Kuramitsu Hideaki (1953), with the original kana, Japanese translation, reconstructed romanization and annotations.'
+	},
 	// ───────────────────────── Reference grammars & handbooks ─────────────────────────
 	kindaichi1933: {
 		region: 'general',
@@ -1656,8 +1668,10 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Ono',
 		year: '2020',
 		title:
-			'Reconsideration of the "major division" of Ainu dialects: A statistical reanalysis of Asai (1974)',
-		container: 'Journal of the Linguistic Society of Japan'
+			'Reconsideration of “Major Division” of Ainu Dialects: A Statistical Reanalysis of Asai (1974)',
+		container: 'Northern Language Studies 10',
+		pages: '231–254',
+		url: 'https://doi.org/10.14943/93119'
 	},
 	nakagawafukazawa2022: {
 		region: 'general',
@@ -1676,8 +1690,11 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Fukazawa Mika 深澤美香 & Ono Yohei 小野洋平',
 		citeAuthor: 'Fukazawa & Ono',
 		year: '2024',
-		title: 'アイヌ語の方言境界再考',
-		titleTr: 'Ainu dialect boundaries reconsidered',
+		title: '方言境界再考―アイヌ語の方言境界を例として―',
+		titleTr: 'Dialect boundaries reconsidered: Ainu dialect boundaries as a case study',
+		container: '北方言語研究 [Northern Language Studies] 14',
+		pages: '155–176',
+		url: 'https://doi.org/10.14943/110533',
 		lang: 'ja'
 	},
 	kasuga2026: {
@@ -1685,10 +1702,15 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Kasuga Hayato 春日勇人',
 		citeAuthor: 'Kasuga',
 		year: '2026',
-		title: 'アイヌ語多地点方言分類——75地点の計量的分析',
+		title:
+			'深澤・小野（2025）の分類手法を拡張したアイヌ語多地点方言分類―語彙特徴・規則性特徴・地理情報の統合による75地点の計量的分析―',
 		titleTr:
-			'A multi-locality classification of Ainu dialects: a quantitative analysis of 75 sites',
-		lang: 'ja'
+			'Multi-locality classification of Ainu dialects extending Fukazawa and Ono (2025): a quantitative analysis of 75 sites combining lexical features, regularity features and geographic information',
+		container: '日本言語学会第172回大会要旨集',
+		pages: '92–93',
+		url: 'https://ls-japan.org/wp-content/uploads/2026/05/abstractbook_lsj172.pdf',
+		lang: 'ja',
+		note: 'Poster P-11 abstract, Linguistic Society of Japan 172nd meeting, June 27–28, 2026.'
 	},
 	fukazawa2025: {
 		region: 'hokkaido',
@@ -1696,8 +1718,13 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Fukazawa',
 		year: '2025',
 		title: '国立アイヌ民族博物館所蔵 知里真志保記入のアイヌ語基礎語彙調査表',
-		titleTr: "Chiri Mashiho's annotated Ainu basic-vocabulary survey tables (National Ainu Museum)",
-		lang: 'ja'
+		titleTr:
+			'Preliminary Survey of the Basic Ainu Vocabulary: Chiri Mashiho’s Materials from the National Ainu Museum',
+		container: '国立アイヌ民族博物館研究紀要 [National Ainu Museum Journal] 3',
+		pages: '136–158',
+		url: 'https://doi.org/10.57545/namjournal.2024-06',
+		lang: 'ja',
+		note: 'Volume labelled 2024; published March 31, 2025.'
 	},
 
 	// ───────────────────────── Historical / comparative ─────────────────────────

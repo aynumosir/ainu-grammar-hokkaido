@@ -56,6 +56,11 @@ export interface RegistryEntry {
 export const SOURCE_REPO = '../ainu-grammar';
 
 export const citationRegistry: Record<string, RegistryEntry> = {
+	kitahara2013: {
+		sourceRole: 'primary-data',
+		heldLocally: true,
+		path: 'stash/ocr/2013_北原次郎太_≪テキスト≫『上川アイヌ 熊まつり』収載の祈り詞.gemini.txt'
+	},
 	tamura1997: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/1997_田村すゞ子_アイヌ語.ocr' },
 	ochiai2023numerals: { sourceRole: 'prior-analysis', heldLocally: true, path: '../ainu-grammar-hokkaido/kb/imports/ocr/ochiai2023' },
 	yokoyama2002: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/ainu-times/024/1.yaml' },

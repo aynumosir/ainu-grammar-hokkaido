@@ -870,28 +870,28 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "sakehe-refrain-and-sung-verse-structure",
-				title: "The Sakehe Refrain, Verse Meter, and the Structure of Sung Verse",
-				summary: "The sakehe burden and the metrical/structural organization of sung genres as performance grammar: refrain types and placement, verse-line segmentation and syllable/mora-count meter, and melodic vs linguistic pitch (proto-accent reconstruction in Part XX)."
+				title: "Sakehe, Refrains, and Verse Structure",
+				summary: "Refrain placement and meaning, changing voices, syllable counts, and the metrical patterns reported for named performances."
 			},
 			{
 				slug: "parallelism-couplets-and-word-pairs",
-				title: "Parallelism, Couplets, and Word-Pair Doublets",
-				summary: "Syntactic-semantic parallelism, the verse couplet, and lexical doublets analyzed as structural rhetoric rather than mere style."
+				title: "Parallelism, Couplets, and Paired Expressions",
+				summary: "Paired numbers, contrasting words, repeated structures, and their use in prose as well as verse."
 			},
 			{
 				slug: "poetic-archaic-elevated-register",
-				title: "The Elevated/Poetic Register: Archaic Morphology and Formulaic Diction",
-				summary: "The grammar and lexicon of the elevated (雅語) register — archaic forms, verse-restricted morphology, and fixed formulae."
+				title: "Poetic and Elevated Language",
+				summary: "Special vocabulary, metrical material, applicative phrasing, and variation within elevated registers."
 			},
 			{
 				slug: "honorific-ritual-and-taboo-registers",
-				title: "Honorific, Ritual, and Taboo Registers",
-				summary: "Referent/addressee honorification, the language of prayer, and hunting/taboo avoidance speech as register-specific grammar."
+				title: "Respectful, Ritual, and Avoidance Registers",
+				summary: "Regional honorific address, person and naming in prayer, incantations, and documented mountain and offshore vocabulary."
 			},
 			{
 				slug: "narrative-tam-evidential-patterning-by-genre",
-				title: "Narrative TAM and Evidential Patterning by Genre",
-				summary: "Genre-quantified distribution of tense-aspect and the evidential clause-final system in connected narrative discourse."
+				title: "Narrative Aspect and Evidentiality",
+				summary: "Narrator and character perspectives, aspect at scene changes, double evidentials, and the scope of published genre comparisons."
 			}
 		]
 	},
@@ -900,8 +900,8 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "proto-ainu-segmental-reconstruction",
-				title: "Proto-Ainu Reconstruction: Segments and Accent Classes",
-				summary: "Reconstruction of the Proto-Ainu consonant/vowel inventory and accent classes, the correspondence sets to modern Hokkaido reflexes, Shiratori's *ia revision of the palatalization account, the accented/accentless split, and the Sakhalin length to Hokkaido pitch correspondence."
+				title: "Proto-Ainu Reconstruction: Segments and Prosody",
+				summary: "Documented correspondences, competing consonant and vowel reconstructions, lexical alternatives, and disputed histories of length and accent."
 			},
 			{
 				slug: "final-h-history-and-sakhalin-length-reflex",

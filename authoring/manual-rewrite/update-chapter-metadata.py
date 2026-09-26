@@ -2,6 +2,12 @@ import json,re
 from pathlib import Path
 p=Path('toc-final.json');d=json.loads(p.read_text());toc=Path('src/lib/grammar/toc.ts');ts=toc.read_text()
 changes={
+151: ('Sakehe, Refrains, and Verse Structure', 'Refrain placement and meaning, changing voices, syllable counts, and the metrical patterns reported for named performances.'),
+152: ('Parallelism, Couplets, and Paired Expressions', 'Paired numbers, contrasting words, repeated structures, and their use in prose as well as verse.'),
+153: ('Poetic and Elevated Language', 'Special vocabulary, metrical material, applicative phrasing, and variation within elevated registers.'),
+154: ('Respectful, Ritual, and Avoidance Registers', 'Regional honorific address, person and naming in prayer, incantations, and documented mountain and offshore vocabulary.'),
+155: ('Narrative Aspect and Evidentiality', 'Narrator and character perspectives, aspect at scene changes, double evidentials, and the scope of published genre comparisons.'),
+156: ('Proto-Ainu Reconstruction: Segments and Prosody', 'Documented correspondences, competing consonant and vowel reconstructions, lexical alternatives, and disputed histories of length and accent.'),
 145: ('Gender, Address, and Speech Conventions', 'Honorific address, interjections, changing greeting conventions, regional performance roles, and limits of the conversational record.'),
 146: ('Adverbs, Degree, and Comparison', 'Basic, derived, and converted adverbs, antecedents of postpositional forms, directional constructions, degree comparison, and iyotta.'),
 147: ('Connective Expressions in Discourse', 'The orowa family, connective placement and pauses, rapok constructions, and the distinction from nominal coordination.'),

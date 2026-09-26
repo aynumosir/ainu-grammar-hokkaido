@@ -12,17 +12,19 @@ The user’s Satō 2021 quasi-incorporation emphasis has been incorporated in 52
 
 - Task worktree: `../worktrees/ainu-grammar-hokkaido-manual-rewrite`, relative to the original checkout. Preserve unrelated changes in the original checkout.
 - New continuation branch: `docs/manual-grammar-rewrite-final`, based on merged `origin/main` 760f33f. The former `docs/manual-grammar-rewrite` branch and PR #46 are complete.
-- Chapters 1–150 have replacement prose and independent source review. **150 complete; 28 remaining. Chapter 151 is next.** Evidence matrices through 178 already exist.
+- Chapters 1–156 have replacement prose and independent source review. **156 complete; 22 remaining. Chapters 157–158 have local drafts; 157 passed source review. Chapter 159 is next to draft.** Evidence matrices through 178 already exist.
 - Resumed work fixed 143’s teskar gloss (`1SG=inform`) and restored cautious recollective yo coverage; rewrote 144–150; completed metadata and formatting for 139–150. The source-specific question patterns, register distinctions, mimetic morphology, genre names and quotation alternatives have passed review.
 - Review corrections applied:145 tomo=middle.POSS;147 piye=seed.POSS, asama=bottom.POSS;148 assent e versus call-response ho confirmed by scan;149 legend/lore and eastern heroic names restored from Endō.
-- Metadata helper: `python3 authoring/manual-rewrite/update-chapter-metadata.py`, run at repository root. Dictionary now through 150. It extracts sections/references and updates `toc-final.json` and `src/lib/grammar/toc.ts`. Add each new batch's titles/summaries; do not format the whole TOC.
+- Metadata helper: `python3 authoring/manual-rewrite/update-chapter-metadata.py`, run at repository root. Dictionary now through 156. It extracts sections/references and updates `toc-final.json` and `src/lib/grammar/toc.ts`. Add each new batch's titles/summaries; do not format the whole TOC.
 - Prettier config: `authoring/manual-rewrite/prettier.json`; use explicit chapter file lists, `--ignore-path /dev/null --plugin prettier-plugin-svelte`.
+
+- Completed151–156: refrain and metre, parallelism, elevated register, ritual language, narrative evidentiality, and attributed historical reconstructions. New Kitahara2013 prayer edition is registered; METR marks metrical material.
 
 ## Verification and reviews
 
-Build through 150 passed. Svelte check found 0 errors and 18 existing warnings in 4 files. The built sitemap check passed with 182 URLs returning 200. Attestation validation found 0 errors and 1,301 warnings across 138 chapters. KB validation after the Satō2025a registry correction passed:0 errors and 0 warnings; 190 sources, 84 assets, 8,199 statements, 7,455 claims, 202 narrative units, 13,807 sentences, 1,610 topics, and 24 doculects. The exact latest results belong in the continuation PR body.
+Build through 156 passed. Svelte check found 0 errors and 18 existing warnings in 4 files. The built sitemap check passed with 182 URLs returning 200. Attestation validation found 0 errors and 1,301 warnings across 140 chapters. KB validation after the Satō2025a registry correction passed:0 errors and 0 warnings; 190 sources, 84 assets, 8,199 statements, 7,455 claims, 202 narrative units, 13,807 sentences, 1,610 topics, and 24 doculects. The exact latest results belong in the continuation PR body.
 
-Independent reviewers: review_evidence (143–144; preparing 151–153), review_technical (145–147; prepared 154–156 and preparing 157–159), review_editorial (148–150). No prose written by reviewers. CodeRabbit skipped former draft PR #46; obtain independent final review and the available PR review when the full continuation is ready.
+Independent source review is complete through156. review_evidence is preparing166–168; review_editorial is reviewing157 and the apparatus generator boundary; review_technical implemented the generator boundary and source metadata corrections. Chapters157–165 have prepared primary-source notes. No prose written by reviewers. CodeRabbit skipped former draft PR #46; obtain independent final review and the available PR review when the full continuation is ready.
 
 Checks: `bun run build`, `bun run check`, `bun run attest`, `bun run kb:validate`, and `bun scripts/test-sitemap-built.mjs` after build. Build regenerates deterministic apparatus/search/KB output. Restore only transient tracked QA reports before commit: `.grammar-build/qa/audit-report.json`, `.grammar-build/qa/attestation-report.json`. No dev server is needed.
 
@@ -47,4 +49,3 @@ Nakagawa 2024 offsets: p=leaf+3 early; +4 from about359; +6 from around525. Sat�
 - Chapter165: Japanese `hasami` and Manchu `hasaha` require distinct borrowing discussions.
 - Chapter168 must include a complete four-tier uwepeker passage, not a stitched excerpt. Candidate: Nakagawa2025 Text3 pp.159–160, N9305231UP, Shirasawa Nabe, 1993-05-23, Pananpe/Penanpe story. Consult its matrix and primary source.
 - Ochiai2026 treats `*siwkorpe` (p.194) as a reconstruction and `sikerpe` (p.195) as opaque; preserve that distinction.
-
