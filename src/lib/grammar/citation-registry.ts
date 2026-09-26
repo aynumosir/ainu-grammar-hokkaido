@@ -180,6 +180,10 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	sato2006glides: { sourceRole: 'primary-data', heldLocally: false },
 	sato2006: { sourceRole: 'prior-analysis', heldLocally: true },
 	yoshikawa2020: { sourceRole: 'prior-analysis', heldLocally: true },
+	ma2021: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2021_馬長城_アイヌ語沙流方言の助動詞「a」の用法について：中国語の「過」から見たタクシス機能.pdftotext.txt' },
+	ma2023: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2023_馬長城_アイヌ語の継続形式＋完了形式の意味機能.pdftotext.txt' },
+	ma2024: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2024_馬長城_アイヌ語の時点を表す時間副詞.pdftotext.txt' },
+	yoshikawa2021shizunai: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2021_吉川佳見_アイヌ語静内方言の kane an、wa an と状態性動詞との共起について.pdftotext.txt' },
 	yoshikawa2022: { dbSlug: '2022-yoshimi-yoshikawa-existential-aspectual-forms-in-the-saru-and-chitos', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
 	refsing2011: { sourceRole: 'prior-analysis', heldLocally: false },
 

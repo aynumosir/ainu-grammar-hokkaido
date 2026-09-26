@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 195 works cited across the grammar into a single
+		This chapter gathers the 199 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -56,6 +56,9 @@
 	<p class="bib-entry">Kobayashi Miki 小林美紀 (2015). <i lang="ja">アイヌ語動詞の結合価と項構造</i>. [Valency and argument structure of the Ainu verb (dissertation)].</p>
 	<p class="bib-entry">Kobayashi Miki 小林美紀 (2020). <i lang="ja">空間・場所を項とするアイヌ語動詞の結合価を増やす操作について：otkeとkamuを例として</i>. [On valency-increasing operations for Ainu verbs that take space or place as an argument: otke and kamu as case studies]. 千葉大学ユーラシア言語文化論集 22. 167–174.</p>
 	<p class="bib-entry">Kobayashi Miki 小林美紀 (2025). <i lang="ja">アイヌ語における主語抱合と所属形的接頭辞 e-/o- による派生</i>. [Subject incorporation and derivation by affiliative-type prefixes e-/o- in Ainu]. 北方言語研究 [Northern Language Studies]. 15: 165–178.</p>
+	<p class="bib-entry">Ma Changcheng 馬長城 (2021). <i lang="ja">アイヌ語沙流方言の助動詞「a」の用法について：中国語の「過」から見たタクシス機能</i>. 北方人文研究 14. 71–84.</p>
+	<p class="bib-entry">Ma Changcheng 馬長城 (2023). <i lang="ja">アイヌ語の継続形式＋完了形式の意味機能</i>. 北海道言語文化研究 21. 17–33.</p>
+	<p class="bib-entry">Ma Changcheng 馬長城 (2024). <i lang="ja">アイヌ語の時点を表す時間副詞</i>. 北方言語研究 14. 177–195.</p>
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 (1995). <i lang="ja">アイヌ語千歳方言辞典</i>. [A dictionary of the Chitose dialect of Ainu]. Tokyo: Sōfūkan 草風館. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 (2001). <i lang="ja">アイヌ文化——口承文芸</i>. [Ainu culture: oral literature]. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Nakagawa Hiroshi 中川裕 (2006). <i lang="ja">アイヌ人によるアイヌ語表記への取り組み</i>. [Ainu efforts toward writing the Ainu language].</p>
@@ -105,6 +108,7 @@
 	<p class="bib-entry">Yokoyama Hiroyuki 横山裕之 (2002). <i>noya</i>. Ainu Times 24 (27 December 2002).</p>
 	<p class="bib-entry">Yoshikawa Yoshimi 吉川佳見 (2018). <i lang="ja">アイヌ語の助動詞 aan と証拠性</i>. [The auxiliary aan and evidentiality in Ainu]. 北方言語研究 [Northern Language Studies] 8.</p>
 	<p class="bib-entry">Yoshikawa Yoshimi 吉川佳見 (2020). <i lang="ja">アイヌ語における存在型アスペクト形式</i>. [Existential-type aspect forms in Ainu (dissertation)].</p>
+	<p class="bib-entry">Yoshikawa Yoshimi 吉川佳見 (2021). <i lang="ja">アイヌ語静内方言の kane an、wa an と状態性動詞との共起について</i>. アイヌ語・アイヌ文化研究の課題. 5–14.</p>
 	<p class="bib-entry">Yoshikawa Yoshimi 吉川佳見 (2022). <i>Existential aspectual forms in the Saru and Chitose dialects of Ainu</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Yu Zhuo 于拙 (2025). <i lang="ja">アイヌ語コーパスの構築およびテキスト分析の研究：形態素の自動解析処理を中心に</i>. [Building an Ainu corpus and analysing its texts: automatic morphological processing].</p>
 </S>

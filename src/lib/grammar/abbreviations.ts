@@ -117,6 +117,7 @@ export const dialectLabels: Record<string, string> = {
 	TOK: 'Tokachi',
 	HOR: 'Horobetsu',
 	SHI: 'Shizunai',
+	SAM: 'Samani',
 	ASA: 'Asahikawa',
 	YAK: 'Yakumo',
 	SA: 'Sakhalin (cited for contrast)',

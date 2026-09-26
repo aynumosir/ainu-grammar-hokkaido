@@ -1254,6 +1254,50 @@ export const bibliography: Record<string, BibEntry> = {
 		titleTr: 'Existential-type aspect forms in Ainu (dissertation)',
 		lang: 'ja'
 	},
+	ma2021: {
+		region: 'hokkaido',
+		author: 'Ma Changcheng 馬長城',
+		citeAuthor: 'Ma',
+		year: '2021',
+		title: 'アイヌ語沙流方言の助動詞「a」の用法について：中国語の「過」から見たタクシス機能',
+		container: '北方人文研究 14',
+		pages: '71–84',
+		url: 'https://hdl.handle.net/2115/80895',
+		lang: 'ja'
+	},
+	ma2023: {
+		region: 'hokkaido',
+		author: 'Ma Changcheng 馬長城',
+		citeAuthor: 'Ma',
+		year: '2023',
+		title: 'アイヌ語の継続形式＋完了形式の意味機能',
+		container: '北海道言語文化研究 21',
+		url: 'https://muroran-it.repo.nii.ac.jp/records/2000043',
+		pages: '17–33',
+		lang: 'ja'
+	},
+	ma2024: {
+		region: 'hokkaido',
+		author: 'Ma Changcheng 馬長城',
+		citeAuthor: 'Ma',
+		year: '2024',
+		title: 'アイヌ語の時点を表す時間副詞',
+		container: '北方言語研究 14',
+		pages: '177–195',
+		url: 'https://doi.org/10.14943/110534',
+		lang: 'ja'
+	},
+	yoshikawa2021shizunai: {
+		region: 'hokkaido',
+		author: 'Yoshikawa Yoshimi 吉川佳見',
+		citeAuthor: 'Yoshikawa',
+		year: '2021',
+		title: 'アイヌ語静内方言の kane an、wa an と状態性動詞との共起について',
+		container: 'アイヌ語・アイヌ文化研究の課題',
+		pages: '5–14',
+		url: 'https://opac.ll.chiba-u.jp/da/curator/109481/358-p005.pdf',
+		lang: 'ja'
+	},
 	yoshikawa2022: {
 		region: 'hokkaido',
 		author: 'Yoshikawa Yoshimi 吉川佳見',

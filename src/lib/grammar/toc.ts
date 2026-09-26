@@ -600,28 +600,28 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "prenominal-gap-relative-clauses",
-				title: "Relative Clauses: The Gap Strategy and the Accessibility Hierarchy",
-				summary: "The head-final, relativizer-less gap relative clause and the Keenan–Comrie accessibility hierarchy — subject/object relativize directly, obliques only after e-/ko-/o- applicative promotion — plus possessor, locative/temporal, and standard-of-comparison relativization."
+				title: "Relative Clauses and Accessible Relations",
+				summary: "Prenominal heads, argument roles, retained oblique relations, locative and possessive morphology, source qualifications, and comparison equivalents."
 			},
 			{
 				slug: "headless-internally-headed-noun-modifying-clauses",
-				title: "Headless, Internally-Headed, and Noun-Modifying Clause Analyses",
-				summary: "The analytic question of whether Ainu adnominal clauses are externally-headed RCs, headless/internally-headed relatives, or a unified 'general noun-modifying clause' type."
+				title: "General Heads, Gapless Clauses, and Internal-Head Analyses",
+				summary: "Overt light heads, complement relations, and Dal Corso’s source-limited incorporation and internally headed relative proposals."
 			},
 			{
 				slug: "quotative-complementation-sekor",
-				title: "Quotative Complementation and Reported Speech (sekor)",
-				summary: "The dominant complementation strategy: framing a (direct-form) clause with the quotative sekor under verbs of speech, cognition, and intention."
+				title: "Quotation, Logophoric Speech, and Indirect Reports",
+				summary: "Quoted person reference, the syntactic reassessment of logophoric speech, indirect content, ordering flexibility, and regional predicate selection."
 			},
 			{
 				slug: "nominalized-complements-control-raising",
-				title: "Nominalized Complements and Control/Raising",
-				summary: "Complement clauses formed by nominalization (hi, -i, ruwe) under perception, cognition, and evaluative predicates, and the control/raising diagnostics of same-subject complex predicates."
+				title: "Nominalized Complements and Complex Predicates",
+				summary: "Complement functions, sensory content, overt and zero nominalization, bare verb and auxiliary constructions, and participant reference."
 			},
 			{
 				slug: "kuni-complementizer-purpose-complements",
-				title: "The kuni Complementizer and Purpose Complements",
-				summary: "The irrealis complementizer/nominalizer kuni and the purposive kus(u) / kuni ne, marking future-oriented complements of manipulation, desire, and purpose."
+				title: "Kuni, Indirect Complements, and Purpose Clauses",
+				summary: "Prospective and inferential content, kunak and yak, reported instructions with causatives, kunine purpose linkage, and nominal expressions."
 			}
 		]
 	},
@@ -630,38 +630,38 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "tam-overview",
-				title: "Tense, Aspect, Mood, and Modality: Overview",
-				summary: "The architecture of the TAM/modality system and how its pieces fit: tenselessness, the existential-aspect core, the phasal/iterative/habitual periphery, the directive/optative moods, and the modal field, with the boundaries to evidentiality and negation."
+				title: "Time, Aspect, Modality, and Evidentiality",
+				summary: "Contextual time reference, construction types, competing a and aan analyses, existential combinations, participant identity, and dialect restrictions."
 			},
 			{
 				slug: "tenselessness-and-time-reference",
-				title: "Tenselessness and the Time-Reference System",
-				summary: "Hokkaido Ainu lacks a grammatical tense category; temporal location is inferred from aspect, discourse anchoring, and temporal adverbs."
+				title: "Time Reference Without Obligatory Tense",
+				summary: "Contextual event time, speech-time and narrative reference points, prospective expressions, and the interpretation of unmarked predicates."
 			},
 			{
 				slug: "existential-aspect-an-oka",
-				title: "The Existential-Aspect System: kor an Progressive and wa an Resultative-Perfect",
-				summary: "The existential verbs an (SG)/oka (PL) recruited as aspectual auxiliaries unifying kor an and wa an under one 'existential aspect': the progressive/continuative kor an and the resultative-perfect wa an, with number agreement, aktionsart conditioning, and grammaticalization."
+				title: "Existential Aspect: Kor An and Wa An",
+				summary: "Activities, habits, resulting states, person and number controllers, lexical interpretation, negative constructions, and regional limits."
 			},
 			{
 				slug: "perfective-anterior-a",
-				title: "The Perfective/Anterior Particle a (a, a…a, aan)",
-				summary: "Postverbal a marks completion and anteriority ('already, have V-ed'), with reduplicated a…a and the anterior-stative aan."
+				title: "A, Rok, and Aan: Earlier Situations and Discovery",
+				summary: "Contextual contrasts, participant number, sustained and repeated events, retrospective discovery, regional forms, and competing aspectual analyses."
 			},
 			{
 				slug: "continuative-siri-siran-kane-an",
-				title: "The 'Appearance' Continuative: siran, siri…, and kane an",
-				summary: "siri/siran-based forms express durative, ongoing situations framed as observable appearance."
+				title: "Kane An, Regional Continuatives, and Appearance",
+				summary: "Ongoing and resulting states, degree and emphasis, Shizunai and Samani patterns, Tokachi and Ishikari forms, and distinct evidential constructions."
 			},
 			{
 				slug: "phasal-iterative-habitual-aspect",
-				title: "Phasal, Iterative, and Habitual Aspect",
-				summary: "Inceptive and terminative phasal aspect via auxiliary verbs, plus iterative and habitual marking."
+				title: "Completion, Repetition, and Event Phases",
+				summary: "Finishing and disappearance, person marking on supplementary verbs, nisa, brief actions, ranke, contextual beginnings, and persistent results."
 			},
 			{
 				slug: "imperative-and-prohibitive",
-				title: "Imperative and Prohibitive (Directive Mood)",
-				summary: "Bare-stem imperatives, the -yan plural/polite imperative, and the iteki prohibitive form one directive-mood system."
+				title: "Commands, Requests, and Prohibitions",
+				summary: "Direct imperative morphology, plural and polite forms, requests and final particles, indirect directives, and regional prohibitive expressions."
 			},
 			{
 				slug: "hortative-and-optative",
