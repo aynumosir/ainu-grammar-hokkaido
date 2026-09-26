@@ -45,3 +45,14 @@ books/
 
 # aynu MCP manifest cache
 .archive/
+
+# Generated knowledge-base projections (built by scripts/kb/build.ts)
+static/kb/
+
+# Source full texts stay local: OCR and text dumps of the sources, and the
+# Handbook section leaves. Statements quote them at their locus.
+kb/imports/ocr/
+kb/imports/handbook-2022/
+
+# Extraction progress and logs (resumable runs; regenerated)
+kb/statements/.progress/
