@@ -1,373 +1,118 @@
 <script lang="ts">
-	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
-	import ApplicativeStats from '$lib/grammar/components/ApplicativeStats.svelte';
+	import { S, Ex, Ref, Xr } from '$lib/grammar/components';
 </script>
 
-<S t="Overview" id="overview">
+<S t="Directed relations" id="overview">
 	<p>
-		The prefix <A w="ko-" gl="applicative: toward / together-with" /> adds a participant —
-		typically a goal, recipient, addressee, or comitative partner — to the argument frame of the
-		verb as a new core object, raising arity by one
-		<Ref k="nakagawa2024" p="197–198" />; <Ref k="bugaeva2006" p="186, 188" />. On a one-place
-		intransitive base the derived verb is transitive; on a two-place transitive the result is a
-		three-place double-object verb. The applied object enters the object slot and may be
-		cross-referenced by the object-series person prefix — the operative arity diagnostic
-		described in <Xr ch="valency-voice-overview">the valency overview</Xr> and grounded in
-		<Xr ch="applicative-system-overview">the applicative system</Xr>.
-	</p>
-	<p>
-		Bugaeva reports <i lang="ain-Latn">ko-</i> as the most frequent
-		applicative prefix. Her Saru and Chitose lexical sample
-		places the order <i lang="ain-Latn">ko-</i> &gt; <i lang="ain-Latn">e-</i> &gt;
-		<i lang="ain-Latn">o-</i> in her lexical survey; taken together, applicative verbs account
-		for roughly one-third of all verbs and up to seven percent of the entire Ainu lexicon
-		<Ref k="bugaeva2006" p="188" />. Nakagawa characterizes the applied object as 〜に向かって
-		(directed toward) or 〜とともに (together with), two senses that correspond to the
-		Goal / Addressee cluster and the Comitative cluster in Bugaeva's role classification
-		<Ref k="nakagawa2024" p="197" />.
+		Applicative <i lang="ain-Latn">ko-</i> introduces an object related to the action as a goal,
+		addressee, beneficiary, or other participant. Nakagawa groups its uses broadly into directed
+		relations, often translated “toward” or “to,” and comitative relations translated “together
+		with” <Ref k="nakagawa2024" p="196–197" />. Bugaeva's finer classification also includes
+		malefactive, recipient and source relations <Ref k="bugaeva2006" p="190, table 2" />.
 	</p>
 	<Ex
 		m="kanto kotor a=ko-hopuni"
-		g="sky vicinity 4.A=APPL-fly.up"
-		tr="I flew up toward the sky."
+		g="sky surface 4.A=APPL-rise.SG"
+		tr="I flew up to the sky."
 		cite="nakagawa2024:193"
 		dial="CHI"
-		place="Nakagawa ex. 174"
-		note="Base hopuni 'fly up' is intransitive; ko-hopuni is transitive with the Goal kanto kotor 'sky-vicinity' as applied object. The fourth-person A prefix a= marks the transitive subject."
+		place="Example 174"
+		note="The source writes kohopuni continuously. The goal is a spatial expression."
 	/>
-</S>
-
-<S t="Semantic roles of the applied object" id="roles">
-	<p>
-		The following proportions are calculated from MDB's annotated applicative inventory.
-		They count distinct verb lemmas marked attested, excluding nominalizations and collapsing
-		person-marked citation forms. The sample selection, dialect limitations, and meaning of
-		the confidence labels are specified in <Xr ch="applicative-system-overview" s="mdb-counts" />.
-	</p>
-	<ApplicativeStats prefix="ko-" />
-
-	<details>
-		<summary>Published comparison: Bugaeva's lexical sample (2006: 190)</summary>
-	<p>
-		Bugaeva's classification of <i lang="ain-Latn">ko-</i> derivations uses verbs from
-		the Saru and Chitose dictionaries and her Chitose fieldwork with Ito Oda
-		<Ref k="bugaeva2006" p="189, fn. 6; 190" />. Each percentage is the share of
-		derivations assigned to that role in her sample; the intr/tr column records the
-		proportion derived from an intransitive or transitive base verb.
-	</p>
-
-	<table>
-		<caption>Table 1. Semantic roles of the <i lang="ain-Latn">ko-</i> applied object (Bugaeva 2006: 190)</caption>
-		<thead>
-			<tr>
-				<th>applied-object role</th>
-				<th>% of sampled derivations</th>
-				<th>intr base / tr base (%)</th>
-				<th>adjunct paraphrase</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Addressee</td>
-				<td>20</td>
-				<td>75 / 25</td>
-				<td>—</td>
-			</tr>
-			<tr>
-				<td>Goal</td>
-				<td>19</td>
-				<td>95 / 5</td>
-				<td>—</td>
-			</tr>
-			<tr>
-				<td>Comitative</td>
-				<td>18</td>
-				<td>79 / 21</td>
-				<td><i lang="ain-Latn">tura</i></td>
-			</tr>
-			<tr>
-				<td>Benefactive</td>
-				<td>18</td>
-				<td>50 / 50</td>
-				<td>—</td>
-			</tr>
-			<tr>
-				<td>Malefactive</td>
-				<td>6</td>
-				<td>86 / 14</td>
-				<td>—</td>
-			</tr>
-			<tr>
-				<td>Recipient</td>
-				<td>5</td>
-				<td>34 / 66</td>
-				<td>—</td>
-			</tr>
-			<tr>
-				<td>Source</td>
-				<td>5</td>
-				<td>34 / 66</td>
-				<td><i lang="ain-Latn">wa</i></td>
-			</tr>
-			<tr>
-				<td>Cause / Range / Purpose / Location</td>
-				<td>9</td>
-				<td>90 / 10</td>
-				<td>—</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<p>
-		The four largest categories — Addressee, Goal, Comitative, and Benefactive — account for
-		roughly three-quarters of Bugaeva's sampled derivations. All four share a common structural denominator: the
-		applied object is an entity the action is directed toward or performed alongside. For the
-		Comitative role, where the postposition <i lang="ain-Latn">tura</i> 'together with' offers
-		a paraphrase, the applicative construction promotes the companion to the object slot and
-		makes it indexable by the object person-prefix
-		<Ref k="bugaeva2006" p="191" />. For most other roles no regular oblique paraphrase exists
-		and the applicative is the only means of encoding the relationship. The Recipient and Source
-		categories (5% each) stand out for their predominantly transitive base verbs (66%), a
-		profile consistent with transfer and extraction verbs rather than the one-place motion verbs
-		that feed the Goal uses (95% intransitive base)
-		<Ref k="bugaeva2006" p="190" />. A lexical instance of the Source use is
-		<i lang="ain-Latn">ko-nu</i> 'hear/ask something from someone', where
-		<i lang="ain-Latn">ko-</i> adds the Source participant to two-place
-		<i lang="ain-Latn">nu</i> 'hear', alongside the oblique alternatives
-		<i lang="ain-Latn">wa</i> (ablative) and <i lang="ain-Latn">eun</i>
-		<Ref k="bugaeva2015relative" p="84 fn. 14" />.
-	</p>
-	</details>
-</S>
-
-<S t="Goal and addressee: relations directed toward a person" id="goal-addressee">
-	<p>
-		With motion verbs, <i lang="ain-Latn">ko-</i> licenses the physical or spatial goal as the
-		new core object. <A w="hopuni" gl="fly up (intransitive)" /> yields
-		<A w="ko-hopuni" gl="fly up toward (transitive)" /> (example above) and
-		<A w="hosipi" gl="return home (intransitive)" /> yields
-		<A w="ko-hosipi" gl="return to (a place or entity) (transitive)" />; in both cases the
-		base intransitive takes S-series suffixes while the derived transitive takes A-series
-		prefixes.
-	</p>
+	<p>The goal need not be a person. The same prefix occurs with returning to a castle:</p>
 	<Ex
 		m="a=kor casi a=ko-hosipi wa"
-		g="4.A=have castle 4.A=APPL-return CONJ"
-		tr="I returned to my castle."
+		g="4.A=have castle 4.A=APPL-return.SG CONJ"
+		tr="I returned to my castle, and …"
 		cite="nakagawa2024:197"
 		dial="CHI"
-		place="Nakagawa ex. 185"
-		note="The Goal applied object is a=kor casi 'my castle'; base hosipi 'return home' is intransitive, ko-hosipi transitive."
+		place="Example 185"
 	/>
 	<p>
-		With speech and emotion verbs the applied object is an Addressee — the person to whom an
-		utterance or attitude is directed. The pair
-		<A w="ko-yayirayke" gl="be grateful to (someone)" /> versus
-		<A w="e-yayirayke" gl="be grateful for (something)" /> makes the semantic split explicit:
-		<i lang="ain-Latn">ko-</i> takes the human target of the gratitude (Addressee),
-		<i lang="ain-Latn">e-</i> takes the content — the thing one is thankful for — both with the
-		same base <A w="yayirayke" gl="give thanks, be grateful" />
-		<Ref k="bugaeva2006" p="190" />; <Ref k="nakagawa2024" p="197–198" />. The Saru corpus
-		attests <i lang="ain-Latn">ko-yayirayke</i> with a person-deity as applied object:
+		Nakagawa contrasts this pattern with the place-expression requirements of
+		<i lang="ain-Latn">o-</i>. He rejects an inserted <i lang="ain-Latn">or</i> in his corresponding
+		castle example <Ref k="nakagawa2024" p="197, example 185′" />. That judgment concerns the
+		particular construction; it is not a ban on location nouns throughout directed expressions.
 	</p>
-	<Ex
-		m="petkorkamuy kamuy katkemat a=ko-yay-irayke hi a=ye a"
-		g="river.deity deity woman 4.A=APPL-REFL-be.grateful NMLZ 4.A=say PFV"
-		tr="saying that one gave thanks to the river goddess"
-		cite="ilcaa1976"
-		dial="SAR"
-		place="Kawakami Matsuko, uwepeker 9; ILCAA materials aa-irc/009#289"
-		note="The ko- applied object is petkorkamuy kamuy katkemat 'the river-deity divine woman'; yay-irayke 'show gratitude (reflexive of irayke)' is the base from which ko- derives the Addressee-licensed transitive."
-	/>
 </S>
 
-<S t="Comitative and benefactive uses" id="comitative-benefactive">
+<S t="Addressees and other participants" id="roles">
 	<p>
-		When the applied object is a comitative participant — one who acts jointly with the subject
-		— <i lang="ain-Latn">ko-</i> corresponds to the postpositional adjunct
-		<i lang="ain-Latn">tura</i> 'together with'. The applicative construction promotes the
-		companion to an indexable object position, which the adjunct cannot do. This function
-		interacts productively with noun incorporation: when the comitative applied object is
-		incorporated, it merges with <i lang="ain-Latn">ko-</i> inside the verb word, and the verb
-		returns to intransitive arity. Nakagawa gives a Chitose example in which two comitative
-		participants are incorporated in parallel constructions:
+		Bugaeva contrasts <i lang="ain-Latn">ko-yayirayke</i> “be grateful to someone” with
+		<i lang="ain-Latn">e-yayirayke</i> “be grateful for something.” Her Chitose examples assign the
+		applied objects Addressee and Content roles respectively
+		<Ref k="bugaeva2006" p="188, example 2" />. The choice reflects the relation to the predicate,
+		not merely the English preposition used in one translation.
+	</p>
+	<p>
+		With an already transitive base, another object can remain. Bugaeva gives
+		<i lang="ain-Latn">soso → ko-soso</i>, “take something off → take something off someone,” where
+		the added object is the source <Ref k="bugaeva2006" p="188, example 3a" />. Her dictionary-based
+		sample distributes <i lang="ain-Latn">ko-</i> across Addressee, Goal, Comitative and Benefactive
+		in similar proportions, alongside smaller categories
+		<Ref k="bugaeva2006" p="190, table 2" />. This is a lexical classification, with overlapping
+		relations across the three applicative prefixes.
+	</p>
+</S>
+
+<S t="Comitative objects and incorporation" id="comitative">
+	<p>
+		Nakagawa derives three-place <i lang="ain-Latn">ko-tata</i> “chop something together with
+		something” from transitive <i lang="ain-Latn">tata</i>. He describes comitative
+		<i lang="ain-Latn">ko-</i> as more restricted than the directed type, often occurring in fixed
+		expressions and with an incorporated object
+		<Ref k="nakagawa2024" p="197, examples 189–191" />.
 	</p>
 	<Ex
 		m="a=mun-ko-tata a=toy-ko-tata ayne"
-		g="4.A=garbage-APPL-chop 4.A=earth-APPL-chop then"
-		tr="I chopped it up together with garbage, then together with earth, and …"
+		g="4.A=rubbish-APPL-chop 4.A=earth-APPL-chop CONJ"
+		tr="I chopped it together with rubbish, chopped it together with earth, until …"
 		cite="nakagawa2024:197"
 		dial="CHI"
-		place="Nakagawa ex. 190"
-		note="The comitative applied objects mun 'garbage' and toy 'earth' are incorporated between the person prefix and ko-; tata is transitive, ko- adds a comitative object, and incorporation reduces the resulting three-argument frame back to two arguments. The prefix a= (4.A) indexes the subject."
+		place="Example 190"
+		note="The surrounding passage identifies the material being chopped as the demon's flesh. Mun is translated as rubbish in this source."
 	/>
 	<p>
-		Benefactive uses cover contexts in which the applied object's interests are served
-		by the action. The Malefactive category shades into adversative uses: the
-		applied object is the entity against whose interest the action runs
-		<Ref k="bugaeva2006" p="190" />.
+		Incorporation supplies the comitative object internally. The flesh remains an object, so the
+		resulting verbs are still two-place and take A marking. The derivation illustrates three-place
+		to two-place reduction <Ref k="nakagawa2024" p="197" />; see <Xr
+			ch="noun-incorporation-oblique-polysynthesis-debate"
+		/>.
 	</p>
 </S>
 
-<S t="The ko-/o- contrast" id="ko-o-contrast">
+<S t="An instrumental use in Satō's account" id="instrument">
 	<p>
-		Both <i lang="ain-Latn">ko-</i> and <A w="o-" gl="applicative: into / toward a place" />
-		can encode a directional Goal, and the primary distributional division concerns the
-		applied object's reference type: <i lang="ain-Latn">o-</i> takes place nouns,
-		<i lang="ain-Latn">ko-</i> takes persons, animals, and more abstract directional targets
-		<Ref k="nakagawa2024" p="198–199" />. Nakagawa provides a near-minimal pair with the
-		same intransitive base <A w="ek" gl="come (singular)" />:
+		Satō also describes instrumental <i lang="ain-Latn">ko-</i> in
+		<i lang="ain-Latn">tek-ko-nina</i> “knead with the hands.” He analyzes the intermediate
+		<i lang="ain-Latn">ko-nina</i> as three-place but states that he found no other suitable example
+		with an independent instrumental object
+		<Ref k="sato2008" p="244–245" />. The incorporated form supports this use within the documented
+		expression; it does not establish unrestricted instrumental productivity.
 	</p>
-	<Ex
-		m="tumi o-ek"
-		g="war APPL-come.SG"
-		tr="War came to my village."
-		cite="nakagawa2024:198"
-		dial="CHI"
-		place="Nakagawa ex. 192"
-		note="o- applied object is a place noun (the village, contextually understood); o-ek is transitive."
-	/>
-	<Ex
-		m="tumi ko-ek"
-		g="war APPL-come.SG"
-		tr="War came against my sister."
-		cite="nakagawa2024:198"
-		dial="CHI"
-		place="Nakagawa ex. 193"
-		note="ko- applied object is a person (the sister, contextually understood); ko-ek is transitive."
-	/>
 	<p>
-		The <i lang="ain-Latn">o-</i> applicative is restricted to place-denoting applied objects;
-		<i lang="ain-Latn">ko-</i> extends to persons and, as the opening
-		<i lang="ain-Latn">kohopuni</i> example shows, to spatial targets that function as
-		directional goals without being named place nouns in the strict sense
-		(<i lang="ain-Latn">kanto kotor</i> 'sky-vicinity'). The
-		<i lang="ain-Latn">o-</i> applicative is considerably rarer across Hokkaido dialects and
-		is largely confined to verse register <Ref k="nakagawa2024" p="199" />; its distribution
-		and relationship to the spatial noun <i lang="ain-Latn">o(r)-</i> are treated in
+		The instrumental example and the source-related uses above broaden the picture beyond “to a
+		person.” Each prefix's distribution is described through lexical and constructional evidence, as
+		discussed in <Xr ch="applicative-system-overview" />.
+	</p>
+</S>
+
+<S t="Comparison with o- and complex formations" id="comparison">
+	<p>
+		Nakagawa contrasts war coming to a village, expressed with <i lang="ain-Latn">o-ek</i>, with war
+		coming against a sister, expressed with <i lang="ain-Latn">ko-ek</i>. Both examples state the
+		affected goal explicitly
+		<Ref k="nakagawa2024" p="198, examples 192–193" />. The complete comparison appears in
 		<Xr ch="applicative-o" />.
 	</p>
-</S>
-
-<S t="ko- in the derivational chain and with e-" id="derivational-chain">
 	<p>
-		Because <i lang="ain-Latn">ko-</i> raises arity by one, it feeds and is fed by other
-		valency operations in a regular derivational calculus. The chain built on
-		<A w="ruska" gl="be angry about something (transitive)" /> illustrates eight consecutive
-		derivations: <i lang="ain-Latn">ruska</i> (vt, +2) →
-		<i lang="ain-Latn">ko-ruska</i> (vd, +3; adds a person-target of anger) →
-		<i lang="ain-Latn">yay-ko-ruska</i> (vt, +2; reflexive fills the object slot) →
-		<i lang="ain-Latn">i-ruska</i> (vi, +1; antipassive) →
-		<i lang="ain-Latn">ko-i-ruska</i> (vt, +2;
-		<i lang="ain-Latn">ko-</i> re-applicativizes the antipassivized verb) →
-		<i lang="ain-Latn">si-ko-i-ruska</i> (vi, +1) →
-		<i lang="ain-Latn">i-ruska-re</i> (vt) →
-		<i lang="ain-Latn">ko-i-ruska-re</i> (vd)
-		<Ref k="sato2023b" p="40" /> (citing <Ref k="bugaevakobayashi2022" p="§4.1.1" />).
-		The step <i lang="ain-Latn">i-ruska</i> → <i lang="ain-Latn">ko-i-ruska</i> is
-		particularly revealing: <i lang="ain-Latn">ko-</i> restores a goal participant that the
-		antipassive <i lang="ain-Latn">i-</i> had absorbed, returning the verb to transitive; the
-		A-series prefix confirms the derived transitivity:
-	</p>
-	<Ex
-		m="ku=ko-i-ruska"
-		g="1SG.A=APPL-ANTIP-be.angry"
-		tr="I am angry at (someone)."
-		constructed
-		note="ko- applicativizes i-ruska 'be angry (intransitive after antipassive)', adding a person-goal as the new object; 1SG.A prefix ku= confirms transitivity. See also the antipassive chapter."
-	/>
-	<p>
-		<i lang="ain-Latn">ko-</i> also stacks with the <Xr ch="applicative-e">e- applicative</Xr>.
-		In the double-applicative pattern described by Bugaeva and Kobayashi,
-		<i lang="ain-Latn">e-</i> adds its Content applied object and
-		<i lang="ain-Latn">ko-</i> adds its Addressee or Recipient
-		applied object; the orders <i lang="ain-Latn">ko-e-</i> and
-		<i lang="ain-Latn">e-ko-</i> are both attested with no reported semantic difference
-		<Ref k="bugaevakobayashi2022" p="519" />; <Ref k="bugaeva2006" p="188" />. The speech
-		verb <A w="isoytak" gl="narrate, tell stories" /> is the standard illustration:
-		<i lang="ain-Latn">e-ko-isoytak</i> is a three-place frame in which
-		<i lang="ain-Latn">e-</i> encodes the topic narrated and
-		<i lang="ain-Latn">ko-</i> the listener:
-	</p>
-	<Ex
-		m="ku=e-ko-isoytak"
-		g="1SG.A=APPL-APPL-narrate"
-		tr="I narrate to (someone) about (something)."
-		constructed
-		cite="bugaeva2006:188"
-		note="e- adds the content/topic (first applied object), ko- adds the addressee/listener (second applied object); with the 1SG.A prefix ku= and both applied objects as free NPs, the verb is three-place."
-	/>
-	<p>
-		A sequential applicativisation of the same type underlies
-		<A w="ko-e-ikka" gl="steal something from someone" />: base
-		<i lang="ain-Latn">ikka</i> 'steal (vi)' → <i lang="ain-Latn">e-ikka</i> 'steal
-		something (vt, <i lang="ain-Latn">e-</i> adds the stolen item)' →
-		<i lang="ain-Latn">ko-e-ikka</i> 'steal something from someone (vd,
-		<i lang="ain-Latn">ko-</i> adds the Source)'
-		<Ref k="bugaeva2006" p="191" />. Here the
-		<i lang="ain-Latn">ko-</i> applied object bears the Source role (the person stolen from)
-		and attaches to the transitive base <i lang="ain-Latn">e-ikka</i>.
-	</p>
-	<p>
-		The learner grammar of <Ref k="ijas2023" /> includes
-		<i lang="ain-Latn">ekoyayirayke</i> among its ditransitive examples (Lesson 3). The form
-		parses as <i lang="ain-Latn">e-ko-yay-irayke</i>: <i lang="ain-Latn">e-</i> adds the
-		thing one is grateful for, <i lang="ain-Latn">ko-</i> adds the person being thanked, and
-		<i lang="ain-Latn">yay-</i> is the direct-reflexive prefix on the base
-		<i lang="ain-Latn">irayke</i> 'thank'. Ijäs's VD label captures the three-place output
-		but does not expose the derivational layering; her example sentences are constructed and
-		the morphological decomposition is spelled out here following
-		<Ref k="bugaevakobayashi2022" p="§4.1.1" />. For the
-		<i lang="ain-Latn">i-</i>-containing members of the chain, see
-		<Xr ch="antipassive-detransitive-i" />.
-	</p>
-</S>
-
-<S t="Lexicalization and less transparent ko- forms" id="lexicalization">
-	<p>
-		Many verb stems containing <i lang="ain-Latn">ko-</i> have undergone lexicalization, with
-		internal structure that ranges from fully transparent to opaque. The form
-		<A w="kosirepa" gl="arrive at, reach" /> has been proposed as
-		<i lang="ain-Latn">ko-</i> + <i lang="ain-Latn">sirepa</i>, where
-		<i lang="ain-Latn">sirepa</i> itself decomposes as <i lang="ain-Latn">sir-epa</i>
-		(environment + <i lang="ain-Latn">e-</i>applicative + root <i lang="ain-Latn">pa</i>
-		'go'), giving an original sense of directed motion toward one's surroundings
-		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2023-12-14) ‹contested›.
-		The Chitose compound <i lang="ain-Latn">kotan-kosirepa=an</i> 'one arrives at the village'
-		incorporates <i lang="ain-Latn">kotan</i> 'village' as the
-		<i lang="ain-Latn">ko-</i> applied object; the fourth-person S-series suffix
-		<i lang="ain-Latn">=an</i> proves that the incorporation has reduced arity back to one
-		place. The phrasal counterpart <i lang="ain-Latn">kotan a=kosirepa</i> keeps
-		<i lang="ain-Latn">kotan</i> as a separate transitive object under the A-series prefix
-		<i lang="ain-Latn">a=</i>, and together the two forms supply the person-affix word-hood
-		diagnostic <Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2023-12-14)
-		‹contested›.
-	</p>
-	<p>
-		A community-proposed etymology identifies
-		<A w="kopan" gl="dislike, find distasteful" /> as
-		<i lang="ain-Latn">ko-</i> + <i lang="ain-Latn">pan</i>, with
-		<i lang="ain-Latn">pan</i> a deverbal form of <i lang="ain-Latn">pa</i> 'mouth'; the
-		semantic drift toward 'distasteful, taboo' is then tied to the later
-		<i lang="ain-Latn">ko-kopan</i> and the related <i lang="ain-Latn">sir-pan</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2024-11-11) ‹speculative›.
-		The synchronic meaning of <i lang="ain-Latn">kopan</i> 'dislike' does not transparently
-		reflect the proposed compositional structure, and the analysis remains unverified against
-		the primary lexicographic literature.
-	</p>
-	<p>
-		A grammatically more consequential pattern involves <i lang="ain-Latn">ko-</i> appearing
-		within a natural-force verb stem. The Chitose form
-		<i lang="ain-Latn">ku=sir-ko-peker</i> 'I stayed up until dawn' has been parsed as an
-		instance of <i lang="ain-Latn">ko-</i> interpolated into the otherwise closed
-		<i lang="ain-Latn">sir-peker</i> compound (weather-brighten), with its applied object
-		(the speaker, indexed by <i lang="ain-Latn">ku=</i>) raised to clause subject
-		<Ref k="aynucorporadiscord" /> (nukopoli, citing Satō, aynu-corpora Discord, 2024-12-05)
-		‹contested›. Parallel formations <i lang="ain-Latn">maw-ko-wen</i> and
-		<i lang="ain-Latn">kur-ko-tunas</i> are proposed under the same structural type. If the
-		analysis is correct, <i lang="ain-Latn">ko-</i> here operates inside a lexicalized
-		natural-force compound rather than prefixing to it as a whole — a pattern that would
-		distinguish this use from ordinary derivational stacking and that is not addressed in the
-		primary grammatical literature.
+		Combinations of <i lang="ain-Latn">ko-</i> with reciprocal or reflexive material can also
+		acquire conventional meanings. The handbook analyzes sociative
+		<i lang="ain-Latn">uko-</i> as expressing joint participation and distinguishes it from ordinary
+		applicative formation <Ref k="bugaevakobayashi2022" p="§4.3.2" />. Adjacent
+		<i lang="ain-Latn">e-ko-</i>
+		and <i lang="ain-Latn">ko-e-</i> combinations have their own limited distribution; see <Xr
+			ch="applicative-stacking-relativization-feeding"
+		/>.
 	</p>
 </S>

@@ -1,0 +1,12 @@
+# Intonation source comparison
+
+| Claim | Source and role | Agreement / limits | Editorial treatment |
+| --- | --- | --- | --- |
+| Word accent locates a pitch rise; later contour can vary | Nakagawa 2024 pp. 48–49, prior analysis | Applies to accentual varieties, distinct from utterance-level pitch. | Brief orientation with cross-reference to chapters 23–25. |
+| Ordinary statements, reaction-seeking utterances, exclamation/wish | Tamura 1996 p. 4, reported through Shiraishi 2022 §7, prior analysis | Saru. Reaction-seeking includes more than questions; wish/exclamation has elevated whole-utterance pitch and final lengthened rise-fall. | Preserve function and scope; do not extend the wish pattern automatically to invitations. |
+| Saru question contours | Makarova 2002 pp. 72–83, especially p. 76, reported through Shiraishi §7, instrumental prior analysis | 35 interrogatives, prominent movement/intensity usually on final word; three lack final rise. | Attribute sample and exceptions. No universal rising-question rule. |
+| Falling question example | Tamura and Motohashi 2002b, reported through Shiraishi §7 example 30 | Kusur ta e-arpa amkir_a. Japanese contact and particle ya are alternative proposals, not established explanation. | Retain source transcription and show the lack of rise only as source-reported. Do not invent a pitch trace. |
+| Tokachi non-rising questions | Takahashi 2015 p. 24, reported through Shiraishi §7 | Final noun/nominalizer or connective + interrogative particle; lack of expected predicate; proposed confirmation-seeking interpretation. | Attribute the analysis, avoid applying to all incomplete utterances or Saru statements. |
+| Shizunai intonation | Refsing 1986 §10.6 p. 74, prior analysis | Declaratives slightly falling, questions gradually rising; final forms also signal force. | Keep separate from Saru measurements and the disputed lexical-accent description. |
+| Phrase grouping | Shiraishi 2022 §§5.2, 6.2, prior analysis | First-element accent in close combinations; n- and r-sandhi extend beyond words but differ at sentence boundaries. | No blanket equality of prosodic, word and sentence boundaries; no claim that no phrasing studies exist. |
+| Hachijō comparison | Old chapter cites community impressions, without verified comparative acoustic evidence | Cannot establish a common intonation system. | Remove the speculative comparison; retain anchor for a source-based discussion of the reported Japanese-contact hypothesis. |

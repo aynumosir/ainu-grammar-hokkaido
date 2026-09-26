@@ -1,370 +1,110 @@
-<!-- src/lib/grammar/chapters/applicative-stacking-relativization-feeding.svelte -->
 <script lang="ts">
-	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import { S, Ex, Ref, Xr } from '$lib/grammar/components';
 </script>
 
-<S t="Overview" id="overview">
+<S t="Two applicatives in one stem" id="stacking">
 	<p>
-		Two feeding relations connect the applicative prefixes to other grammatical operations of the
-		verb word. Oblique nominals — instrumentals, locatives, goals, purpose arguments — cannot
-		incorporate directly into the verb; an applicative prefix must first promote the oblique to
-		core-object status, after which incorporation can proceed
-		<Ref k="shibatani1990" p="62, 66" />; <Ref k="nakagawa2024" p="484" />;
-		<Ref k="satoni2022" p="§1" />. Bare obliques are equally inaccessible to the prenominal
-		gap strategy that Hokkaido Ainu uses in relative clauses; applicative promotion again opens
-		the relativization path by moving the nominal to the direct-object tier of the accessibility
-		hierarchy <Ref k="kaiser1998" />; <Ref k="dalcorso2020" />;
-		<Ref k="keenancomrie1977" paren />. Both relations turn on the same structural shift: from a
-		postposition-marked peripheral role to an unmarked core object whose position is targetable
-		by later grammatical operations ‹speculative›. This synthesis — grounded in the
-		convergent evidence of Shibatani (1990), Nakagawa (2024), Kaiser (1998), and Dal Corso
-		(2020) on the promotion logic — is a proposal original to this grammar.
+		A verb can contain two applicative prefixes. Bugaeva gives the Chitose form
+		<i lang="ain-Latn">e-ko-isoytak</i> “tell stories to someone about something,” with
+		<i lang="ain-Latn">ko-</i> introducing the addressee and <i lang="ain-Latn">e-</i> the content <Ref
+			k="bugaeva2006"
+			p="188"
+		/>. The Handbook describes adjacent
+		<i lang="ain-Latn">e-ko-</i> and <i lang="ain-Latn">ko-e-</i> with these roles and reports no
+		visible difference in meaning between the two combinations. This is a limited set of
+		combinations <Ref k="bugaevakobayashi2022" p="§4.1.1" />.
 	</p>
 	<p>
-		The chapter also treats applicative stacking — the co-occurrence of two applicative prefixes
-		on one verb — together with the two feeding relations, since stacking creates the complex
-		valency frames in which both paths may apply simultaneously. The individual prefixes
-		<A w="e-" gl="about / by means of / at" />, <A w="ko-" gl="toward / together with" />, and
-		<A w="o-" gl="into / toward a place" /> are treated in
-		<Xr ch="applicative-e" />, <Xr ch="applicative-ko" />, and the system as a whole in
-		<Xr ch="applicative-system-overview" />.
+		Other derivations can intervene between applicatives. Nakagawa's
+		<i lang="ain-Latn">e-yay-e-isoytak</i> means to tell about something as one's own life story.
+		Its two occurrences of <i lang="ain-Latn">e-</i> are separated by the reflexive
+		<Ref k="nakagawa2024" p="210" />. The distinction between adjacent prefixes and prefixes at
+		different derivational stages matters when describing their possible order.
 	</p>
-</S>
-
-<S t="Applicative stacking" id="stacking">
-	<p>
-		Up to two applicative prefixes appear on one verb simultaneously, each raising arity by one
-		<Ref k="bugaeva2014polysynthesis" />; <Ref k="bugaevakobayashi2022" p="§4.1.1" />. The most productive
-		double-applicative patterns pair <i lang="ain-Latn">e-</i> (Content) with
-		<i lang="ain-Latn">ko-</i> (Addressee/Recipient), in either order
-		— <i lang="ain-Latn">e-ko-</i> or <i lang="ain-Latn">ko-e-</i>. Bugaeva and Kobayashi
-		report no visible semantic difference between the two orders; in both,
-		<i lang="ain-Latn">e-</i> contributes Content and
-		<i lang="ain-Latn">ko-</i> an Addressee or Recipient
-		<Ref k="bugaevakobayashi2022" p="519" /> ‹contested›. Nakagawa places applicative
-		prefixes in the single slot immediately inside the person index and before the root, so
-		whether order encodes any semantic scope remains open
-		<Ref k="nakagawa2024" p="211" /> ‹speculative›.
-	</p>
-
-	<p>
-		With <A w="isoytak" gl="speak, tell" />, the double applicative yields a three-place frame
-		— an Addressee (<i lang="ain-Latn">ko-</i>) and a Content argument
-		(<i lang="ain-Latn">e-</i>) alongside the base Agent:
-	</p>
-
-	<Ex
-		m="e-ko-isoytak"
-		g="APPL-APPL-speak"
-		tr="tell stories to someone about something"
-		cite="bugaeva2006:188"
-		dial="HK"
-		note="e- contributes the Content participant; ko- contributes the Addressee. The citation form contains no expressed subject or object. A three-place verb allows at most one subject index and one object index, so a single object index does not independently mark both objects (Bugaeva 2006: 188, fn. 5)."
-	/>
-
-	<p>
-		The example documented by Shibatani — attributed to Chiri (1936: 169) — combines two
-		applicatives with one reflexive proper, one reflexive-possessive prefix, an adverbial
-		element, and an incorporated object on a single root:
-	</p>
-
-	<Ex
-		m="usa-oruspe a=e-yay-ko-tuyma-si-ram-suy-pa"
-		g="various-rumor 4.A=APPL-REFL-APPL-far-REFL.POSS-heart-sway-PL"
-		tr="We keep wondering about various rumours."
-		lit="we sway our hearts afar and toward ourselves over various rumours"
-		cite="shibatani1990:73; bugaeva2014polysynthesis"
-		dial="HK"
-		place="after Chiri 1936: 169; Shibatani ex. 131 / Bugaeva ex. 1"
-		note="Root suy-pa 'sway (PL)' carries e- and ko- (both applicative), yay- and si- (both reflexive), the adverbial tuyma 'far', and the incorporated object ram 'heart'. The valency and template bookkeeping in Xr:valency-voice-overview holds at every step."
-	/>
-
-	<p>
-		Bugaeva and Kobayashi's second example demonstrates re-intransitivization through stacking:
-		a three-argument frame is reduced to one argument by incorporating one
-		applied object and reflexivizing the other
-		<Ref k="bugaevakobayashi2022" p="520, ex. 5" />:
-	</p>
-
 	<Ex
 		m="yay-ipe-e-ko-sunke"
 		g="REFL-food-APPL-APPL-lie"
-		tr="eat meagre meals"
-		cite="bugaevakobayashi2022:520"
-		dial="HK"
-		note="ipe 'food' is incorporated as the e-object (Content); yay- fills the ko-object slot (Addressee = reflexive self). The resulting verb is intransitive: the two applied objects have been absorbed, leaving one argument. This citation form contains no person affix."
+		tr="Eat meagre meals (literally, lie to oneself about food)."
+		cite="bugaevakobayashi2022:§4.1.1"
+		place="Lexical excerpt from example 5"
+		note="The Handbook quotes K8010291UP.183. The full sentence prohibits meagre meals and recommends preparing proper food. This display isolates its complex verb."
 	/>
-
 	<p>
-		A text-attested case of comitative incorporation via <i lang="ain-Latn">ko-</i> is visible
-		in the following Chitose passage, where the comitative objects are incorporated in sequence
-		with their respective verbs:
+		The Handbook analyzes this form as a three-place double applicative whose content object is
+		incorporated as <i lang="ain-Latn">ipe</i> “food” and whose addressee is identified with the
+		subject by <i lang="ain-Latn">yay-</i>. The resulting verb is one-place
+		<Ref k="bugaevakobayashi2022" p="§4.1.1, example 5" />. The number of prefixes alone therefore
+		does not determine the final number of arguments.
 	</p>
+</S>
 
+<S t="Applicatives and noun incorporation" id="incorporation">
+	<p>
+		Applicatives can make an instrument, companion, or other participant available for noun
+		incorporation. Nakagawa illustrates this with <i lang="ain-Latn">at-e-uk</i> “catch with a net,”
+		<i lang="ain-Latn">pira-ko-hokus-te</i>
+		“cause to fall toward a cliff,” and
+		<i lang="ain-Latn">turepta-e-arpa</i> “go to dig lily bulbs.” These are his lexical
+		illustrations of compound structure <Ref k="nakagawa2024" p="484" />.
+	</p>
+	<p>
+		In Shibatani's analysis of <i lang="ain-Latn">pone-ko-kuykuy</i> “bite with the bones,” the
+		applicative introduces the accompanying bones and incorporation removes that object from the
+		free argument frame. Starting from the two-place verb “bite,” the proposed steps are 2 → 3 → 2.
+		His displayed intermediate applicative sentence is explicitly artificial
+		<Ref k="shibatani1990" p="68, example 122" />. The complete comparison appears in
+		<Xr ch="noun-incorporation-oblique-polysynthesis-debate" />.
+	</p>
+	<p>
+		An applicative prefix can also precede the incorporated noun. Shibatani contrasts
+		<i lang="ain-Latn">o-tumi-osma</i> with forms such as
+		<i lang="ain-Latn">pone-ko-kuykuy</i>, and distinguishes the phrase
+		<i lang="ain-Latn">ni o-pici</i> from the incorporated verb
+		<i lang="ain-Latn">o-ni-pici</i>. These constructions involve different relations between the
+		noun and the verbal stem; they do not establish free permutation of affixes
+		<Ref k="shibatani1990" p="63, 70–71" />. The incorporation chapter compares the structural
+		analyses and their limits.
+	</p>
+</S>
+
+<S t="Relativization with an applicative" id="relativization">
+	<p>
+		An applied object can correspond to the head of a relative construction. Bugaeva gives a Chitose
+		example in which the place for sleeping is expressed through
+		<i lang="ain-Latn">e-hotke</i>
+		<Ref k="bugaeva2012" p="479" />.
+	</p>
 	<Ex
-		m="a=mun-ko-tata a=toy-ko-tata ayne"
-		g="4.A=grass-APPL-chop 4.A=soil-APPL-chop then"
-		tr="chopping along with the grass, chopping along with the soil, and then …"
-		cite="nakagawa2024:197"
+		m="katkemat a=e-hotke usi kar wa i=kor-e"
+		g="housewife 4.A=APPL-lie.down place make CONJ 4.O=have-CAUS"
+		tr="The housewife prepared a place for me to sleep and gave it to me."
+		cite="bugaeva2012:479"
 		dial="CHI"
-		place="Nakagawa ex. 190"
-		note="mun 'grass/weeds' and toy 'soil' are comitative objects first promoted by ko-, then incorporated. The prefix a= (4.A) indexes the subject. The patient (the demon's flesh) is supplied by context, without an overt person index. Each verb-word is the output of the applicative-then-incorporation feeding sequence."
+		place="Example 36; AB400"
+		note="Bugaeva cites her 2004 text collection. The source's written zero person indexes are omitted. A=e-hotke modifies usi ‘place’."
 	/>
-</S>
-
-<S t="The feeding of oblique incorporation" id="incorporation-feeding">
 	<p>
-		The following derivations illustrate incorporation of an applied object: an
-		instrument, goal, or purpose nominal combines with an applicative-derived verb,
-		then incorporates <Ref k="nakagawa2024" p="484" />. Incorporation does not
-		require eligibility for a person index. Satō shows that the location argument of
-		<A w="omare" gl="put X in Y" /> can incorporate even though the theme is the
-		argument available for object indexing <Ref k="sato2023b" p="47, ex. 13" />.
+		Relative constructions also allow overt expressions of nonargument roles. The following
+		instrumental relative retains <i lang="ain-Latn">ani</i> and uses the ordinary verb “shoot” <Ref
+			k="bugaeva2012"
+			p="480"
+		/>.
 	</p>
-
-	<table>
-		<thead>
-			<tr>
-				<th>oblique phrase</th>
-				<th>applicative stage</th>
-				<th>incorporated form</th>
-				<th>role of the noun</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">at ani uk</i></td>
-				<td><i lang="ain-Latn">at e-uk</i></td>
-				<td><i lang="ain-Latn">at-e-uk</i></td>
-				<td>Instrument ('net', catching)</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">pira or un hokuste</i></td>
-				<td><i lang="ain-Latn">pira ko-hokuste</i></td>
-				<td><i lang="ain-Latn">pira-ko-hokus-te</i></td>
-				<td>Goal/Locative ('cliff', causing something to fall toward)</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">turepta kusu arpa</i></td>
-				<td><i lang="ain-Latn">turepta e-arpa</i></td>
-				<td><i lang="ain-Latn">turepta-e-arpa</i></td>
-				<td>Purpose ('lily-bulb digging')</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<p>
-		The same three-step derivation is spelled out in Shibatani's analysis of a
-		comitative-instrument example <Ref k="shibatani1990" p="67" />:
-	</p>
-
 	<Ex
-		m="nea cep pone tura a=kuykuy"
-		g="that fish bone with 4.A=bite"
-		tr="I bit the fish together with its bones."
-		cite="shibatani1990:67"
-		dial="HK"
-		note="Stage 1: pone 'bone' is an oblique held by the comitative postposition tura 'with'. It cannot incorporate."
+		m="ani ku=yupo kamuy tukan teppo"
+		g="INS 1SG.POSS=elder.brother bear shoot gun"
+		tr="The gun with which my elder brother shot a bear."
+		cite="bugaeva2012:480"
+		dial="CHI"
+		place="Example 37; AB95"
+		note="From Bugaeva 2004, as reproduced in Bugaeva 2012. Written zero indexes are omitted. The initial ani belongs to the relative clause."
 	/>
-
-	<Ex
-		m="nea cep pone a=ko-kuykuy"
-		g="that fish bone 4.A=APPL-bite"
-		tr="I bit the fish together with its bones."
-		cite="shibatani1990:67"
-		dial="HK"
-		note="Stage 2: ko- promotes pone to core object, dropping tura; pone is now an unmarked argument of the three-place verb."
-	/>
-
-	<Ex
-		m="nea cep a=pone-ko-kuykuy"
-		g="that fish 4.A=bone-APPL-bite"
-		tr="I bone-bit the fish."
-		cite="shibatani1990:67"
-		dial="HK"
-		note="Stage 3: pone incorporates into the verb word, landing outside ko- but inside the person index a=. The Mirror Principle is satisfied: ko- (morphologically inner, syntactically prior) sits between pone (morphologically outer, syntactically later) and the root kuykuy."
-	/>
-
 	<p>
-		The affix order in Stage 3 instantiates Baker's Mirror Principle
-		<Ref k="baker1988" paren />: the morphological order mirrors the syntactic derivation because
-		applicative formation precedes incorporation. Shibatani extends this logic to a wordhood
-		diagnostic: the presence of an applicative prefix on a noun-verb sequence that is otherwise
-		ambiguous between NI and a phrasal reading resolves it unambiguously as incorporation
-		<Ref k="shibatani1990" p="63" />. The form <i lang="ain-Latn">tumi osma</i> 'war began'
-		is ambiguous, but <i lang="ain-Latn">o-tumi-osma</i> with the locative applicative
-		<i lang="ain-Latn">o-</i> is unambiguously an incorporated word.
-	</p>
-
-	<p>
-		Several forms in Chiri (1936: 93) place the incorporated noun before rather than after the
-		applicative — <i lang="ain-Latn">o-ni-pici</i> alternating with
-		<i lang="ain-Latn">ni o-pici</i> 'fall from a tree' — in apparent violation of mirror
-		ordering. Shibatani calls this a "minor irregularity" without resolving it
-		<Ref k="shibatani1990" p="71" /> ‹corpus-suggested›.
-	</p>
-
-	<p>
-		Baker's Case-theoretic prediction that applicative formation (P-incorporation) should be
-		impossible on unaccusative bases is falsified by Ainu
-		<Ref k="baker1988" paren />; <Ref k="shibatani1988" p="210–211" />;
-		<Ref k="shibatani1990" p="65–66" />. Verbs such as <i lang="ain-Latn">mokor</i> 'sleep'
-		freely combine with <i lang="ain-Latn">e-</i> (<i lang="ain-Latn">mokor a=e-wen</i>
-		'I missed sleeping'; <i lang="ain-Latn">sake a=e-niste</i> 'I am strong at wine'), contrary
-		to Case-theory's expectation ‹contested›. The implication for the feeding chain is that an
-		oblique associated with an intransitive base can be promoted and subsequently incorporated
-		or relativized by the same mechanism as one associated with a transitive base.
-	</p>
-</S>
-
-<S t="The feeding of relativization" id="relativization-feeding">
-	<p>
-		Hokkaido Ainu relative clauses are prenominal and gap-based: the modifying clause precedes
-		the head noun and leaves a null gap in the position the head noun would otherwise occupy
-		within the clause. Subject and direct-object gaps are both accessible to this strategy
-		‹corpus-confirmed›; see <Xr ch="prenominal-gap-relative-clauses" /> for the full
-		construction. A nominal in an oblique role — held by a postposition — lies outside the reach
-		of gap-formation: Ainu has no mechanism for stranding a postposition in situ while extracting
-		its complement as a relative-clause head
-		<Ref k="keenancomrie1977" paren />; <Ref k="dalcorso2020" />.
-	</p>
-
-	<p>
-		Applicative promotion removes the postposition and places the nominal at the direct-object
-		tier, where gap-formation is licensed. The applied object then stands in a
-		relativization-accessible position, and a prenominal relative clause can be formed with
-		that applied object as its head <Ref k="kaiser1998" />; <Ref k="dalcorso2020" />. The
-		following constructed example illustrates the pattern, based on the instrument applicative
-		<i lang="ain-Latn">e-tuye</i> attested in Nakagawa 2024: 194 (ex. 173):
-	</p>
-
-	<Ex
-		m="sirkorkamuy a=e-tuye emus"
-		g="standing.tree 4.A=APPL-cut sword"
-		tr="the sword with which [someone] cut the standing tree"
-		constructed
-		note="The head noun emus 'sword' is interpreted as the e-object (instrument) of the relative clause. A null gap occupies the applied-object position within the clause; emus appears outside as the head. The construction is possible because e- has promoted emus from the Instrument oblique tier to the Direct Object tier."
-	/>
-
-	<p>
-		The same promotion operates with <i lang="ain-Latn">ko-</i>. A Goal or Addressee that would
-		appear with <i lang="ain-Latn">un</i> 'to' or <i lang="ain-Latn">tura</i> 'with' can head a
-		relative clause built on a <i lang="ain-Latn">ko-</i>-derived predicate. Dal Corso documents
-		the construction for Southern Hokkaido texts and finds that applied objects — regardless of
-		which prefix produced them — pattern identically to base transitive objects in gap-formation
-		<Ref k="dalcorso2020" /> ‹corpus-confirmed›.
-	</p>
-
-	<p>
-		The Keenan–Comrie hierarchy frames the typological significance: Subject > Direct Object >
-		Indirect Object > Oblique > Genitive > Comparee <Ref k="keenancomrie1977" paren />. Hokkaido
-		Ainu relativization is robustly accessible at Subject and Direct Object; bare Oblique is
-		inaccessible; the applicative closes the gap by importing the oblique into the Direct Object
-		tier. Kaiser (1998) demonstrates that the resulting applied object is treated as a
-		morphosyntactic direct object in the relative clause — there is no distinct 'applied-object
-		relativization' mechanism separate from ordinary object relativization
-		<Ref k="kaiser1998" />. The synthesis that a single structural promotion underlies both the
-		NI-feeding and the relativization-feeding paths is a proposal original to this
-		grammar ‹speculative›.
-	</p>
-</S>
-
-<S t="Competing analyses of the applied-object position" id="accessibility">
-	<p>
-		What grammatical relation the promoted nominal bears — and therefore where it sits on the
-		accessibility hierarchy — is contested between two broad analytical traditions
-		<Ref k="keenancomrie1977" paren />.
-	</p>
-
-	<p>
-		An applicative analysis treats the promoted nominal as an object. Bare-NP coding is
-		one piece of evidence: neither object in a double-object construction takes a case
-		postposition. Only one object can receive a person index, however. Bugaeva notes
-		that first- and second-person referents have indexing priority and leaves the extent
-		of symmetry between the two objects open <Ref k="bugaeva2006" p="188, n. 5" />.
-		Shared bare-NP coding therefore does not establish identical behaviour under every
-		object diagnostic.
-	</p>
-
-	<p>
-		Baker's (1988) head-movement account treats the applicative as P-incorporation: the
-		postposition moves into the verb, leaving its complement in a derived specifier position.
-		The applied object's accessibility to gap-formation and incorporation would then be a
-		secondary consequence of that specifier position — not a primitive direct-object property
-		<Ref k="baker1988" paren />. Shibatani identifies the applicativization of intransitive bases
-		in Ainu as a direct refutation: Baker's Case-theory predicts this should be impossible, yet
-		it is productive in Hokkaido Ainu <Ref k="shibatani1988" p="210–211" />;
-		<Ref k="shibatani1990" p="65–66" /> ‹contested›.
-	</p>
-
-	<p>
-		A community observation reported in the aynu-corpora Discord is consistent with the
-		relational account. The verb <i lang="ain-Latn">sir-ko-peker</i> 'spend the night' — where
-		<i lang="ain-Latn">ko-</i> interrupts the derivationally closed stem
-		<i lang="ain-Latn">sir-peker</i> — has been analysed (attributed to Satō, reported by
-		nukopoli, 2024-12-05 <Ref k="aynucorporadiscord" />) as a construction in which the
-		<i lang="ain-Latn">ko-</i>-object is promoted to the grammatical subject of the whole
-		predicate: <i lang="ain-Latn">ku=sir-ko-peker</i> 'I spend the night' has the experiencer
-		— originally the applied object — in the subject index position. Parallel forms
-		<i lang="ain-Latn">maw-ko-wen</i> and <i lang="ain-Latn">kur-ko-tunas</i> are noted in
-		the same discussion. If the <i lang="ain-Latn">ko-</i>-object can reach the subject
-		position in closed-stem environments, promotion to direct object in open-stem environments
-		is the weaker operation — collateral support for the relational account ‹contested›.
-	</p>
-
-	<p>
-		The same distinction matters for double applicatives: a single object-index position
-		cannot establish that both applied objects behave identically. Accessibility to
-		relativization or incorporation must be checked for the particular construction
-		<Ref k="bugaeva2006" p="188, n. 5" />.
-	</p>
-</S>
-
-<S t="Person indexing and derivational chains" id="ceiling">
-	<p>
-		A verb carries at most one subject person index and one object person index.
-		Three-argument verbs nevertheless have two objects; one object remains without a
-		person index <Ref k="bugaeva2006" p="188, n. 5" />;
-		<Ref k="sato2023b" p="47–48" />. This indexing limit does not require
-		incorporation or reflexivization of an extra object. In
-		<i lang="ain-Latn">yay-ipe-e-ko-sunke</i>, those operations reduce a
-		three-argument frame to one argument, yielding an intransitive verb
-		<Ref k="bugaevakobayashi2022" p="520" />.
-	</p>
-
-	<p>
-		The feeding chain can extend across multiple derivational steps. Antipassive
-		<i lang="ain-Latn">i-</i> reduces a transitive to intransitive by absorbing the object slot
-		with a generic argument; re-adding an applicative restores transitive valency with a new
-		object, which is then accessible to further incorporation or relativization by the same logic
-		as any other applied object
-		<Ref k="bugaeva2021antip" />; <Ref k="bugaevakobayashi2022" p="§4.2.3" />:
-	</p>
-
-	<Ex
-		m="tokaci wa ek pewre kur monrayke e-i-kasuy"
-		g="Tokachi from come young man work APPL-ANTIP-help"
-		tr="A young man from Tokachi helped with the work."
-		cite="bugaevakobayashi2022:§4.2.3"
-		dial="SAR"
-		place="Sunazawa 1983: 160; Handbook ex. 25c"
-		note="i-kasuy 'do helping' (antipassive, intransitive) is re-applicativized by e- (purpose 'with work'); monrayke 'work' becomes the applied e-object, restoring transitivity. This e-object is accessible to incorporation or relativization via the standard feeding logic."
-	/>
-
-	<p>
-		These examples establish particular derivational chains. Their availability also
-		depends on the lexical base and the meaning of the combination. Nakagawa allows
-		repetition within an affix class but explicitly notes lexical restrictions on
-		derivational affixes <Ref k="nakagawa2024" p="210" />. The person-index limit
-		alone does not determine which chains are possible.
-	</p>
-
-	<p>
-		Ijäs's Basic Lessons 3 and 9 do not cover applicative stacking or the feeding relations; the
-		lessons treat <i lang="ain-Latn">i-</i> and <i lang="ain-Latn">-re</i> as independent
-		operations without addressing their combination with applicatives or with relativization
-		<Ref k="ijas2023" />. The learner grammar's entry point — applicatives as independent
-		valency-raisers — is the correct starting place, with the stacking behavior and its
-		downstream interactions belonging to advanced grammar.
+		Bugaeva also gives a comitative relative with retained <i lang="ain-Latn">tura-no</i>
+		and a locative relative with <i lang="ain-Latn">or-o ta</i>. Dal Corso discusses this retention
+		of role-marking expressions in his review of relative clauses
+		<Ref k="bugaeva2012" p="480, examples 38–39" />;
+		<Ref k="dalcorso2020" p="51–52" />. Applicatives are one available construction in this domain;
+		the published examples also document other ways to relate the clause to its head.
 	</p>
 </S>

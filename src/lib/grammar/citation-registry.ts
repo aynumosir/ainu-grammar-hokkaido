@@ -56,6 +56,14 @@ export interface RegistryEntry {
 export const SOURCE_REPO = '../ainu-grammar';
 
 export const citationRegistry: Record<string, RegistryEntry> = {
+	tamura1997: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/1997_田村すゞ子_アイヌ語.ocr' },
+	ochiai2023numerals: { sourceRole: 'prior-analysis', heldLocally: true, path: '../ainu-grammar-hokkaido/kb/imports/ocr/ochiai2023' },
+	yokoyama2002: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/ainu-times/024/1.yaml' },
+	kawakami1976: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/aa-irc/005.yaml' },
+	kawakami1984: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/aa-irc/022.yaml' },
+	kawakami1983: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/aa-irc/020.yaml' },
+	kawakami1986: { sourceRole: 'primary-data', heldLocally: true, path: '../ainu-corpora/texts/nam-archive/kawakami-minwa/09.yaml' },
+	kayano1998a: { sourceRole: 'primary-data', heldLocally: false },
 	// Reference grammars & handbooks
 	kindaichi1933: { sourceRole: 'background', heldLocally: true, path: 'books/1933_Kindaichi' },
 	kindaichi1936: { dbSlug: '1936-kindaichi', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/1936_Kindaichi' },
@@ -144,7 +152,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	bugaeva2015relative: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/ブガエワアンナ・長崎郁編『アイヌ語研究の諸問題』' },
 	bugaeva2010: { dbSlug: '2010-anna-bugaeva-ainu-applicatives-in-typological-perspective', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2014: { sourceRole: 'prior-analysis', heldLocally: true },
-	bugaeva2014polysynthesis: { sourceRole: 'prior-analysis', heldLocally: true },
+	bugaeva2014polysynthesis: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2014_Bugaeva Anna_Polysynthesis in Ainu.pdftotext.txt' },
 	nam2021: { dbSlug: '2021-nam-deokhyun-some-evidence-for-the-origin-of-the-ainu-antipassive-prefix-i', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2021antip: { dbSlug: '2021-anna-bugaeva-unspecified-participant-a-case-of-antipassive-in-a', sourceRole: 'prior-analysis', heldLocally: true },
 	bugaeva2025: { dbSlug: '2025-bugaeva-anna-a-diachronic-study-of-anticausatives-in-ainu', sourceRole: 'prior-analysis', heldLocally: true },
@@ -172,6 +180,10 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	sato2006glides: { sourceRole: 'primary-data', heldLocally: false },
 	sato2006: { sourceRole: 'prior-analysis', heldLocally: true },
 	yoshikawa2020: { sourceRole: 'prior-analysis', heldLocally: true },
+	ma2021: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2021_馬長城_アイヌ語沙流方言の助動詞「a」の用法について：中国語の「過」から見たタクシス機能.pdftotext.txt' },
+	ma2023: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2023_馬長城_アイヌ語の継続形式＋完了形式の意味機能.pdftotext.txt' },
+	ma2024: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2024_馬長城_アイヌ語の時点を表す時間副詞.pdftotext.txt' },
+	yoshikawa2021shizunai: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2021_吉川佳見_アイヌ語静内方言の kane an、wa an と状態性動詞との共起について.pdftotext.txt' },
 	yoshikawa2022: { dbSlug: '2022-yoshimi-yoshikawa-existential-aspectual-forms-in-the-saru-and-chitos', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
 	refsing2011: { sourceRole: 'prior-analysis', heldLocally: false },
 
@@ -192,6 +204,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	cambridgeturkish2022: { sourceRole: 'primary-data', heldLocally: false },
 	dehkhoda1931: { sourceRole: 'primary-data', heldLocally: false },
 	lealglanz2021: { sourceRole: 'prior-analysis', heldLocally: false },
+	takahashi2014nom: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2014_高橋靖以_アイヌ語十勝方言における名詞化節の脱従属節化.pdftotext.txt' },
 	takahashi2018: { sourceRole: 'prior-analysis', heldLocally: true },
 
 	// Possession
@@ -294,7 +307,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	nakagawa2001b: { sourceRole: 'background', heldLocally: false },
 	ochiai2026: { sourceRole: 'prior-analysis', heldLocally: false },
 	tamura1973: { sourceRole: 'prior-analysis', heldLocally: false },
-	yoshikawa2018: { sourceRole: 'prior-analysis', heldLocally: false }
+	yoshikawa2018: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2018_吉川佳見_アイヌ語の助動詞aanと証拠性.pdftotext.txt' }
 };
 
 /**

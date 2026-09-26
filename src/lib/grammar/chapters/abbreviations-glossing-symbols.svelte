@@ -64,7 +64,7 @@
 		here. The markers' actual morphological status — clitic-like for
 		<i lang="ain-Latn">=an</i>, affix-like for the prefixal set — is mixed and contested, and
 		is treated in <Xr ch="person-marking-architecture" /> and
-		<Xr ch="personal-affix-template-and-ordering" s="boundary-status" />.
+		<Xr ch="personal-affix-template-and-ordering" s="status" />.
 		Derivational material — applicative prefixes, the causative suffix
 		<i lang="ain-Latn">-ke</i>, the reflexive and reciprocal prefixes, and the plural
 		stem suffix <i lang="ain-Latn">-pa</i> — is separated with <code>-</code>.
@@ -182,6 +182,7 @@
 			<tr><td>QUOT</td><td>quotative</td></tr>
 			<tr><td>REC</td><td>recent</td></tr>
 			<tr><td>RECP</td><td>reciprocal</td></tr>
+			<tr><td>RED</td><td>reduplication</td></tr>
 			<tr><td>REFL</td><td>reflexive</td></tr>
 			<tr><td>REP</td><td>reportative evidential</td></tr>
 			<tr><td>RES</td><td>resultative</td></tr>

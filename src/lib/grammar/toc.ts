@@ -31,32 +31,32 @@ export const parts: Part[] = [
 			{
 				slug: "aims-scope-design-philosophy",
 				title: "Aims, Scope, and Design Philosophy of This Grammar",
-				summary: "What this reference grammar covers, whom it is for, and the integrated corpus-quantified, typologically-scored, diachronically-grounded method that distinguishes it from prior grammars."
+				summary: "The scope of the description, its dialect coverage, and how to read examples, citations, and evidence labels."
 			},
 			{
 				slug: "typological-profile",
 				title: "A Typological Profile of Hokkaido Ainu",
-				summary: "A condensed bird's-eye sketch of the language's structural type, serving as a roadmap to the granular chapters that follow."
+				summary: "Constituent order, person marking, possession, incorporation, and other principal structures of Hokkaido Ainu."
 			},
 			{
 				slug: "ainu-people-homeland-history",
 				title: "The Ainu People, Their Homeland, and History",
-				summary: "The ethnonym, geography, society, and contact history that frame the language and its present endangerment."
+				summary: "The historical distribution of Ainu, the interpretation of its prehistory, and the social setting of the recorded language."
 			},
 			{
 				slug: "sociolinguistic-situation-revitalization",
 				title: "The Sociolinguistic Situation: Endangerment and Revitalization",
-				summary: "The present state of Hokkaido Ainu — language shift, speaker estimates, documentation, and the revitalization movement, including new speakers and standardized 'neo-Ainu'."
+				summary: "Language shift, community recording and teaching, institutional support, and the use of historical materials in revitalization."
 			},
 			{
 				slug: "genetic-position-macro-comparison",
 				title: "The Genetic Position of Ainu: Isolate Status and Macro-Comparison Controversies",
-				summary: "Ainu as a language isolate, and a methodologically explicit survey of the contested macro-relationship and deep-contact proposals."
+				summary: "Ainu’s external classification, relationships among its varieties, and the evidence used in reconstruction and contact studies."
 			},
 			{
 				slug: "history-of-description-research",
 				title: "The History of Ainu Language Description and Previous Research",
-				summary: "A periodized historiography of Ainu linguistics from Edo-period records to the modern typological and corpus-computational turn, situating this grammar in that lineage."
+				summary: "Early records, Ainu writers, dialect descriptions, and the development of grammatical research and published corpora."
 			}
 		]
 	},
@@ -66,47 +66,47 @@ export const parts: Part[] = [
 			{
 				slug: "written-sources-grammars-dictionaries",
 				title: "Written Sources: Grammars, Dictionaries, and the Philological Record",
-				summary: "The book-length descriptive tradition, lexicography, and Edo-period manuscript sources underpinning the grammar, with an audit of works that must be cited but are physically absent."
+				summary: "The descriptive grammars, dictionaries, and early records used as evidence, with their dialect coverage and limitations."
 			},
 			{
 				slug: "oral-literature-and-spoken-corpora",
 				title: "The Oral-Literature Corpus and Spoken-Language Data",
-				summary: "The annotated oral-narrative text editions, recorded conversation, and audio archives that supply the grammar's connected-discourse examples, treated as a genre-tagged quantifiable corpus."
+				summary: "Oral-literature editions and recordings, their speakers and genres, and the limits of the surviving documentary record."
 			},
 			{
 				slug: "dialect-sample-and-corpus-method",
 				title: "The Dialect Sample and the Corpus-Quantification Method",
-				summary: "Which Hokkaido dialects are sampled, how Sakhalin/Kuril contrast is framed, and exactly how the grammar computes and reports corpus frequencies."
+				summary: "Dialect attribution, the scope of comparisons, and the sampling choices needed to interpret corpus evidence."
 			},
 			{
 				slug: "glossing-abbreviations-and-citation",
 				title: "Interlinear Glossing, Abbreviations, and Citation Conventions",
-				summary: "How to read the grammar's examples — the Leipzig-based interlinear format, morpheme segmentation, the gloss and abbreviation inventory, and the source-attribution sigla."
+				summary: "How to read interlinear examples, grammatical labels, dialect tags, citations, and evidence grades."
 			},
 			{
 				slug: "latin-phonemic-transcription",
 				title: "The Latin Phonemic Transcription",
-				summary: "The canonical romanization adopted as the grammar's primary script — its phoneme-to-grapheme mapping and conventions for /c/, the glottal stop, accent, and capitalization."
+				summary: "Latin letter values, accent and boundary marks, and differences among phonemic transcriptions."
 			},
 			{
 				slug: "katakana-and-small-kana-codas",
 				title: "Katakana Orthography and the Extended Small-Kana Codas",
-				summary: "The katakana writing of Ainu — the syllabary mapping, the extended small-kana coda letters, the modern normative standard, and historical kana systems."
+				summary: "Katakana conventions for Ainu syllables, variation in final-consonant spelling, and the interpretation of older sources."
 			},
 			{
 				slug: "cyrillic-and-multiscript-rendering",
-				title: "Cyrillic and Multi-Script Rendering",
-				summary: "The Cyrillic transcription of Ainu in the Russian and Sakhalin tradition and the interoperability of Latin, katakana, and Cyrillic renderings."
+				title: "Reading Ainu Across Writing Systems",
+				summary: "How source spellings, pronunciation, and grammatical analysis relate when reading Ainu in different writing systems."
 			},
 			{
 				slug: "historical-orthographies-and-the-batchelor-tradition",
 				title: "Historical Orthographies and the Batchelor Tradition",
-				summary: "The pre-phonemic Latin orthographies of Hokkaido Ainu — Batchelor's Hepburn-derived system and its lineage through Kindaichi, Kannari Matsu, and Chiri Yukie — their systematic correspondences with the modern standard, and how texts written in them are read and converted today."
+				summary: "Older Latin spelling conventions, the treatment of final r, and the interpretation of historical texts."
 			},
 			{
 				slug: "orthographic-standardization-and-word-division",
 				title: "Orthographic Standardization and the Word-Division Problem",
-				summary: "The competing romanization norms, the unresolved question of where word boundaries fall, and the spacing and hyphenation conventions this grammar adopts."
+				summary: "Variation in Ainu writing, person-marker notation, word division, and the relationship between spelling and analysis."
 			}
 		]
 	},
@@ -116,37 +116,37 @@ export const parts: Part[] = [
 			{
 				slug: "consonant-inventory",
 				title: "The Consonant Inventory and Its Phonetic Realization",
-				summary: "The twelve-consonant system /p t k c s m n r w y h/ (plus glottal stop), with instrumental detail on stop VOT, the affricate /c/, and intervocalic lenition."
+				summary: "The consonant inventory, its positional realizations, and differences among speakers and descriptive analyses."
 			},
 			{
 				slug: "vowel-inventory",
 				title: "The Vowel Inventory and Vowel Realization",
-				summary: "The five-vowel triangular system /a e i o u/, the absence of phonemic length in Hokkaido, and allophonic centralization/devoicing."
+				summary: "The five vowels, phonetic duration and devoicing, with Sakhalin vowel length as a separate comparison."
 			},
 			{
 				slug: "s-palatalization",
 				title: "/s/ and the s ~ š Palatalization Alternation",
-				summary: "The allophonic [s]~[ʃ] alternation before and after /i/ and word-finally (Saru sisam vs šišam), its conditioning, and its dialect distribution."
+				summary: "Palatalization of /s/ in syllable onsets, codas, and connected speech, with the dialect limits of each description."
 			},
 			{
 				slug: "rhotic-r",
 				title: "The Rhotic /r/ and Coda-r",
-				summary: "The single rhotic phoneme (flap [ɾ]) with positional allophones, and coda /r/ as the most morphophonologically active segment of the language."
+				summary: "Realizations of /r/, the vowel-like release of final /r/, and grammatical evidence for distinguishing final /r/ from /rV/."
 			},
 			{
 				slug: "glottal-stop",
-				title: "The Laryngeals: Glottal Stop, /h/, and the Final-h Question",
-				summary: "The laryngeal consonants: the glottal stop as obligatory-onset filler versus phoneme, onset and coda /h/ with coda-h neutralization, and the word-final -h controversy and its Sakhalin vowel-length reflex."
+				title: "Glottal Stops and the Distribution of /h/",
+				summary: "Glottal closure, competing phoneme and boundary analyses, and the distribution of /h/ in Hokkaido and Sakhalin."
 			},
 			{
 				slug: "syllable-template",
 				title: "Syllable Structure, Phonotactics, and Word-Edge Constraints",
-				summary: "The canonical (C)V(C) syllable and obligatory onset, the permitted-coda inventory and onset/coda asymmetry, heterosyllabic clusters, and word-edge constraints including the citation-vs-combining shape mismatch (loanword adaptation treated in Part XXI)."
+				summary: "Open and closed syllables, permitted codas, resyllabification, and restrictions within roots and across boundaries."
 			},
 			{
 				slug: "glides-w-y",
 				title: "Glides, Vowel Hiatus, and the Diphthong Question",
-				summary: "The phonemic-vs-epenthetic status of /w/ and /y/, glide epenthesis resolving vowel hiatus, and the analysis of ay/uy/oy/aw/iw/ew as coda-glide (VC) sequences rather than true diphthongs."
+				summary: "Final /y/ and /w/ as codas, diphthong terminology, and competing analyses of glides between vowels."
 			}
 		]
 	},
@@ -156,27 +156,27 @@ export const parts: Part[] = [
 			{
 				slug: "pitch-accent-placement-rule",
 				title: "The Pitch-Accent Placement Rule and the Accented/Accentless Dialect Split",
-				summary: "States the synchronic high-pitch placement generalization and divides Hokkaido into accented and accentless dialect classes."
+				summary: "Default accent placement, lexical exceptions, and the differences among Saru-type, Yakumo-type, and unaccented varieties."
 			},
 			{
 				slug: "mora-syllable-accent-vs-tone-analysis",
 				title: "The Prosodic Unit and the Accent-versus-Tone Analysis",
-				summary: "The theoretical analysis of the system: what bears prominence and whether Ainu prosody is culminative accent or a tonal melody."
+				summary: "Rising accent kernels, syllable weight, pitch contours, and the scope of phonological analyses across dialects."
 			},
 			{
 				slug: "lexical-contrastive-accent-minimal-pairs",
 				title: "Lexical/Contrastive Accent and Minimal Pairs",
-				summary: "How much accent is rule-derived versus lexically specified, demonstrated through pitch-only minimal and near-minimal pairs."
+				summary: "Published accent-only minimal pairs, lexical exceptions to default placement, and the limits of functional-load claims."
 			},
 			{
 				slug: "accent-in-compounds-and-affixation",
 				title: "Accent in Compounds and under Affixation and Cliticization",
-				summary: "How prosodic-word formation reorganizes accent in compounds and when affixes and clitics attach."
+				summary: "Accent retention and reassignment in compounds, derivatives, and person-marked forms, with lexical exceptions and competing structural analyses."
 			},
 			{
 				slug: "phrasal-and-utterance-intonation",
 				title: "Phrasal and Utterance Intonation",
-				summary: "Intonational contours above the word: declarative vs interrogative tunes, phrasing, and an f0 corpus study."
+				summary: "Saru, Shizunai, and Tokachi intonation descriptions, including rising and non-rising questions, exclamations, and phrase boundaries."
 			}
 		]
 	},
@@ -186,27 +186,27 @@ export const parts: Part[] = [
 			{
 				slug: "coda-r-assimilation-sonorant-sandhi",
 				title: "Assimilation and Cluster Simplification: Coda /r/, Nasals, and Clusters",
-				summary: "Regressive assimilation of coda /r/ (the most active sandhi trigger) and place assimilation of coda nasals, together with heterosyllabic cluster simplification, degemination, and juncture gemination across morpheme, compound, and word boundaries."
+				summary: "Changes involving final /r/ and /n/, nasal place assimilation, particle-specific alternations, and the roles of pauses and sentence boundaries."
 			},
 			{
 				slug: "glide-epenthesis-hiatus-resolution",
 				title: "Glide Epenthesis and Vowel-Hiatus Resolution",
-				summary: "Insertion of [w]/[y] transitional glides to break vowel hiatus at affixal, compound, and phrasal junctures, and the underlying-vs-epenthetic glide question at the morphophonology–phonetics interface."
+				summary: "Glide insertion, vowel weakening, glottal realization, and contraction, with their morphological conditions and dialect differences."
 			},
 			{
 				slug: "citation-vs-combining-stem-shapes",
-				title: "Citation vs Combining Stem Shapes and Support Vowels",
-				summary: "The systematic mismatch between a morpheme's citation (concept) shape and its bound combining shape — final-consonant support vowels, stem-final truncation, and consonant alternations exposed only under affixation or compounding."
+				title: "Citation Forms and Morphophonological Alternations",
+				summary: "Final-consonant pronunciation, prefix contraction, possessive morphology, and lexical history, with separate conditions for each pattern."
 			},
 			{
 				slug: "personal-affix-sandhi-connected-speech-reduction",
-				title: "Personal-Affix Junctural Sandhi, =an/a= Allomorphy, and Connected-Speech Reduction",
-				summary: "The junctural sandhi triggered by personal affixes (ku= before vowels, en=, un=, ci=, eci=), the =an/-an and a=/an= allomorphy as a morphophonological problem, and casual-register contraction, elision, and cliticization."
+				title: "Person Markers: Contraction, Accent, and Suffix Boundaries",
+				summary: "Dialect-specific person-prefix contraction, initial-vowel weakening, accent behavior, and pronunciation at person-suffix boundaries."
 			},
 			{
 				slug: "reduplication-phonology-rule-interaction",
-				title: "Reduplication Phonology and Rule Interaction",
-				summary: "Base-copy templates in ideophones, intensives, and pluractionals, and how reduplication interacts with the assimilation and epenthesis processes to diagnose rule ordering and the morphology–phonology interface."
+				title: "Reduplication and Phonological Alternations",
+				summary: "Root, partial, and whole-stem reduplication, their lexical restrictions, and documented consonant and boundary effects."
 			}
 		]
 	},
@@ -215,53 +215,53 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "word-class-inventory-and-diagnostics",
-				title: "The Word-Class Inventory and the Noun/Verb Bipartition",
-				summary: "The full parts-of-speech inventory of Hokkaido Ainu, the dominant noun/verb split, the morphological and distributional diagnostics that define each class, and noun↔verb category conversion."
+				title: "Word Classes and Their Diagnostics",
+				summary: "The major classification schemes and their grammatical diagnostics, including person marking, dependence, modification, and disputed category boundaries."
 			},
 			{
 				slug: "nominal-subclasses-and-bound-nouns",
-				title: "Nominal Subclasses and Obligatorily-Possessed (Bound) Nouns",
-				summary: "The internal taxonomy of nouns — concrete vs abstract, common vs proper, and the class of 'incomplete'/bound nouns that cannot stand without a possessor."
+				title: "Nominal Subclasses and Dependence",
+				summary: "Common nouns, locative nouns, pronouns, and formal nouns, compared through possession, independence, modification, and grammatical location."
 			},
 			{
 				slug: "formal-defective-nouns",
-				title: "The Formal / Defective Noun Set (ruwe, hawe, siri, humi, hi, pe, kur)",
-				summary: "The closed set of bound 'formal' nouns that head nominalized and evidential constructions, defined here as a morphosyntactic subclass with shared diagnostics."
+				title: "Formal Nouns and Nominalizing Constructions",
+				summary: "Dependent nominal heads, their modifiers, and the competing analyses of relative, complement, and evidential uses."
 			},
 			{
 				slug: "verbal-subclasses-taxonomy",
-				title: "Verbal Subclasses: A Valence-Based Word-Class Taxonomy",
-				summary: "A word-class-level survey of verb subclasses by valence — intransitive (agentive vs patientive), transitive, ditransitive, and 'complete/incomplete' verbs — with detailed transitivity deferred to Part X."
+				title: "Verb Classes, Arguments, and Person Marking",
+				summary: "Verb subclasses defined through person marking and argument structure, including zero-argument predicates, locative objects, copular complements, and derived higher-valency forms."
 			},
 			{
 				slug: "no-adjective-class-property-verbs",
-				title: "The 'No Adjective Class' Thesis: Property Concepts as Stative Verbs",
-				summary: "Why pirka, poro, and other property words are analysed as stative intransitive verbs rather than adjectives, and whether any residual adjectival/quality-noun subclass survives."
+				title: "Property Predicates and the Adjective Analysis",
+				summary: "The verbal morphology and syntax of property predicates, their state and change readings, and the modern and historical classification debates."
 			},
 			{
 				slug: "nominal-derivation-diminutive-augmentative",
-				title: "Derivational Morphology on Nouns: Diminutive, Augmentative, and Size Modification",
-				summary: "Noun-internal derivation, principally the diminutive -po and augmentative/evaluative strategies, plus the pon/poro size-modifier boundary between morphology and syntax."
+				title: "Diminutive and Affective Noun Formation",
+				summary: "The suffix -po, lexicalized formations, regional okkaypo meanings, and historical Horobetsu kinship uses."
 			},
 			{
 				slug: "noun-noun-compounding",
-				title: "Noun–Noun Compounding: Headedness, Linking, and Semantics",
-				summary: "Productive N-N compound formation, its headedness and morphophonological linking, and the semantic typology of compounds, drawn from the dedicated Ainu compound-noun literature."
+				title: "Nominal Compounds and Their Structure",
+				summary: "Compound diagnostics, six documented formation patterns, nominal conversion, and lexicalization at the phrase boundary."
 			},
 			{
 				slug: "deverbal-denominal-noun-derivation",
-				title: "Deverbal and Denominal Noun Derivation (Lexical Nominalizer Morphology)",
-				summary: "The morphology of forming nouns with -p/-pe, -i/-hi, and -kur, treated here as lexical word-formation, with syntactic nominalization/relativization deferred to Part XVI."
+				title: "Noun Formation from Verbs and Nouns",
+				summary: "Nominalizing forms, lexical person-shaped prefixes, conversion, and the relationship between lexical nouns and clause-level constructions."
 			},
 			{
 				slug: "nominal-number-utar-transnumerality",
-				title: "Nominal Number: Transnumerality, -utar, and the Locus of Plurality",
-				summary: "The nominal number system — bare-noun general number/transnumerality, the human pluralizer -utar/utar(i), and the division of labour between nominal and verbal plurality."
+				title: "Nominal Number and Utar",
+				summary: "Number-neutral nouns, plural and associative utar, lexical plurals, and source differences over animacy and possession."
 			},
 			{
 				slug: "noun-phrase-structure",
-				title: "The Structure of the Noun Phrase",
-				summary: "NP-internal constituent order and modification: the order of demonstratives, numerals/quantifiers, relative clauses, and adnominal modifiers relative to the head noun, apposition, determination without articles, NP-internal coordination, and recursion."
+				title: "Noun-Phrase Structure",
+				summary: "Modifiers, demonstratives, numerals, locative expressions, possession, and coordination, with attributed differences in analysis."
 			}
 		]
 	},
@@ -270,33 +270,33 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "alienable-inalienable-split",
-				title: "The Alienable/Inalienable Split and Possessive Classification",
-				summary: "Hokkaido Ainu's binary possessive split — obligatorily possessed inalienable nouns vs. periphrastically possessed alienable nouns — its semantic classes, gradience, and place on the alienability-typology map."
+				title: "Possessive Constructions and Alienability",
+				summary: "Possession with kor and affiliative nouns, lexical and dialect variation, and the limits of semantic classifications."
 			},
 			{
 				slug: "concept-form-affiliative-form",
-				title: "Concept Form vs. Affiliative (Possessed) Form",
-				summary: "The functional opposition between the bare concept form (概念形) and the affiliative/possessed form (所属形), and the rule that inalienable nouns are obligatorily affiliative when possessed."
+				title: "Concept, Affiliative, and Personal Forms",
+				summary: "Possessive noun forms, short and long variants, person marking, and the interpretation of expressed and unspecified possessors."
 			},
 			{
 				slug: "affiliative-suffix-morphophonology",
-				title: "Morphophonology of the Affiliative Suffix and Echo/Copy Vowels",
-				summary: "The vowel-copy mechanism producing echo/release vowels and the affiliative paradigm (-hV, -ihi, -uhu, -V): copy directionality, class membership, the phonological-vs-lexical conditioning dispute, and the internal-reconstruction source of -hV."
+				title: "Affiliative Suffix Patterns",
+				summary: "Phonological conditions, lexical suffix classes, exceptional forms, and attributed historical analyses of possessive morphology."
 			},
 			{
 				slug: "adnominal-possession-double-marking",
-				title: "Adnominal Possession: Double Marking and the Appositive Construction",
-				summary: "NP-internal possession marked by a personal possessor prefix plus the affiliative suffix (ku= sapa-ha 'my head'), and the appositive/juxtaposed possessor-NP construction (sisam kotanuhu)."
+				title: "Adnominal Possession and Double Marking",
+				summary: "Possessor phrases, head marking, kor with affiliative nouns, classifier verbs, and nested possessive relations."
 			},
 			{
 				slug: "external-possession-possessor-raising",
-				title: "External Possession and Possessor Raising",
-				summary: "Constructions in which the possessor of an (inalienable) noun is realized as a core clausal argument (en=…sik 'my eye'), and their relation to possessor-stranding noun incorporation."
+				title: "Possessors in Noun Incorporation",
+				summary: "Possessor-to-subject incorporation, its person marking, and the different restrictions on object incorporation."
 			},
 			{
 				slug: "kinship-honorific-possession",
-				title: "Kinship and Honorific Possession",
-				summary: "Idiosyncrasies of kinship-term possession (irregular/suppletive affiliatives, vocatives) and honorific possession that marks esteemed possessors via the indefinite/fourth person."
+				title: "Kinship, Address, and Possession",
+				summary: "Lexical and dialect differences in kinship possession, reference and address, honorific fourth person, and narrative possession."
 			}
 		]
 	},
@@ -305,38 +305,38 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "independent-personal-pronouns",
-				title: "Personal, Reflexive, and Emphatic Pronouns",
-				summary: "The free/independent personal pronouns and their emphatic/contrastive use alongside the obligatory bound affixes, plus the reflexive and emphatic 'self' nominals used as NP arguments, kept distinct from the verbal reflexive prefix (Part XI)."
+				title: "Independent Personal Pronouns",
+				summary: "Dialect-specific pronoun paradigms, emphasis and contrast, third-person expressions, and the boundary between pronouns and possessed group nouns."
 			},
 			{
 				slug: "demonstratives-anaphora-definiteness",
-				title: "Demonstratives, Anaphora, and Definiteness",
-				summary: "The exophoric demonstrative distance system, the anaphoric/recognitional 'aforementioned' demonstrative, and definiteness in an article-less language."
+				title: "Demonstratives and Reference",
+				summary: "Saru demonstrative modifiers, spatial and discourse reference, formal-noun combinations, and regional differences."
 			},
 			{
 				slug: "interrogative-pro-forms",
-				title: "Interrogative, Indefinite, and Negative-Polarity Pro-forms",
-				summary: "The interrogative word set and content-question syntax, and the indefinite/negative-polarity series built on interrogative + ka, including their licensing across affirmative and negative contexts (scope/licensing detailed in Part XVI)."
+				title: "Interrogative and Indefinite Expressions",
+				summary: "Question-word classes, their dialect forms and sentence patterns, and their relationship to indefinite expressions."
 			},
 			{
 				slug: "relational-and-spatial-nouns",
-				title: "Relational and Spatial (Locative) Nouns and Their Possessed Forms",
-				summary: "The obligatorily-possessed relational/spatial noun system (or, ka, corpok, sam, tum...), the first-/second-class locative split, the affiliative forms of these nouns, and or's drift toward a general locative; a bridge to the postpositional case system."
+				title: "Relational Nouns, Spatial Forms, and Quasi-Incorporation",
+				summary: "Locative noun classes, person marking, basic and long forms, spatial meanings, and Satō’s quasi-incorporation analysis of or."
 			},
 			{
 				slug: "postpositions-local-case-and-motion-events",
-				title: "Postpositions, Local Case, Motion Events, Comitative, and Instrumental",
-				summary: "Postpositions proper and the local-case relations they encode, motion-event/path encoding, and comitative tura and instrumental ani/ari on the postposition-to-applicative continuum."
+				title: "Place Particles and Motion Expressions",
+				summary: "Location, direction, origin, area, and route constructions, their dialect differences, and their relationship to postposed adverbs and translative ne."
 			},
 			{
 				slug: "vigesimal-numeral-system",
-				title: "The Vigesimal Numeral System",
-				summary: "The base-20 cardinal numeral system, its subtractive/additive arithmetic morphosyntax, and its diachrony."
+				title: "Numeral Forms and Counting Systems",
+				summary: "Adnominal, nominal, and enumeration forms, vigesimal composition, overcounting, and regional decimal systems."
 			},
 			{
 				slug: "numeral-classifiers-ordinals-and-quantifier-syntax",
-				title: "Numeral Classifiers, Ordinals, and Quantifier Syntax",
-				summary: "Numeral classifiers, derived numeral categories, and the syntax of quantification and quantifier float."
+				title: "Numeral Syntax, Ordinals, and Quantity",
+				summary: "Numeral position and independent use, compound counts, classifier analyses, ordinal expressions, and the interaction of quantity with number."
 			}
 		]
 	},
@@ -345,33 +345,33 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "verb-word-template",
-				title: "The Verb Word and Its Position-Class Template",
-				summary: "The internal architecture of the Ainu verb word as an ordered sequence of prefix, stem, and suffix position classes."
+				title: "The Verb Word and Its Boundaries",
+				summary: "Source-specific derivational templates, argument structure, number morphology, person zones, and the distinction between a verb word and quasi-incorporation."
 			},
 			{
 				slug: "transitivity-and-valence-classes",
-				title: "Transitivity, Valence Classes, and Ambitransitivity",
-				summary: "Lexical classification of verbs by valence (intransitive agentive/patientive, transitive, ditransitive, complete/incomplete) and the system of labile (ambitransitive) verbs and morphological transitivity pairs (有対)."
+				title: "Transitivity and Valency Classes",
+				summary: "Argument frames, ambient and experienced states, locative objects, copular person marking, higher valency, and competing analyses of arity."
 			},
 			{
 				slug: "suppletive-verbal-number",
-				title: "Verbal Number: Suppletive Stems and the Pluractional -pa",
-				summary: "The closed set of suppletive singular/plural verb stems and the plural suffix -pa: controller arguments, participant-vs-event number, double marking, and the agreement-vs-pluractional debate."
+				title: "Verbal Number and Stem Alternation",
+				summary: "Lexical number pairs, participant and event number, dialect forms, additional pa and ci, and the effects of respect and narrative person."
 			},
 			{
 				slug: "light-and-pro-verbs",
-				title: "Light Verbs, Pro-Verbs, and the Auxiliary-Verb Construction",
-				summary: "The 'do' pro-verbs ki/iki, the structural support uses of ne and an, and the general auxiliary-verb (complex-predicate) construction."
+				title: "Ki, Support Constructions, and Pro-Verbs",
+				summary: "Lexical, formal, assertive, poetic, and referential uses of ki, with their person-marking patterns and dialect differences."
 			},
 			{
 				slug: "denominal-deverbal-verb-derivation",
-				title: "Denominal and Deverbal Verb Derivation",
-				summary: "Non-valency processes that build verbs from nouns and from other verbs, including verb-verb compounding and noun/verb conversion."
+				title: "Verb Formation from Nouns and Verbal Roots",
+				summary: "Lexicalized nominal formations, bound roots, transitivity pairs, different uses of kar, and intensive no."
 			},
 			{
 				slug: "adverbializer-no",
-				title: "The Adverbializer -no and Adverb Formation from Verbs",
-				summary: "The suffix -no deriving manner/degree adverbs from stative (property) verbs, set against related adverb-forming strategies."
+				title: "Adverbial and Intensive No",
+				summary: "Manner formation, lexical restrictions, unsuffixed adverbs, clause-linking no, and distinct intensive verbal forms."
 			}
 		]
 	},
@@ -380,58 +380,58 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "person-marking-architecture",
-				title: "Architecture of the Personal-Affix System: The Four Persons and the S/A/O Paradigms",
-				summary: "The master chapter laying out the whole personal-affix system — the four 'persons', the subjective (A/S) vs objective (O) sub-paradigms, prefix vs suffix exponents, and the terminological wars."
+				title: "Person Marking and Argument Roles",
+				summary: "Basic S, A, and O paradigms, person-conditioned alignment, interaction forms, zero third person, and the morphological status of person markers."
 			},
 			{
 				slug: "first-second-person-singular-affixes",
-				title: "First- and Second-Person Singular Affixes (ku=/en=, e=/e=)",
-				summary: "The SAP-singular core: 1sg subjective ku= vs objective en=, and 2sg e= (syncretic across A/S/O), with their morphophonology and distribution."
+				title: "First- and Second-Person Singular",
+				summary: "Subject and object forms, regional contraction, neutral second-person alignment, and the interaction paradigm."
 			},
 			{
 				slug: "first-person-plural-and-clusivity",
-				title: "First-Person Plural and the Clusivity Question (ci=/=as, un=)",
-				summary: "The exclusive 1pl set — subjective ci=/=as and objective un= — and the contested inclusive/exclusive opposition with the indefinite person."
+				title: "First-Person Plural and Clusivity",
+				summary: "Exclusive and inclusive reference, subject and object forms, narrative uses, and dialect-specific analyses of group reference."
 			},
 			{
 				slug: "eci-portmanteau-and-second-plural",
-				title: "The eci= Portmanteau (1A→2O) and Second-Person Plural Syncretism",
-				summary: "The cumulative eci= exponent encoding a 1sg subject acting on a 2nd-person object, and its syncretism with the 2pl subject/object marker eci=."
+				title: "Eci and Person Interactions",
+				summary: "Second-plural marking, the Saru/Chitose first-to-second portmanteau, reverse interactions, and regional and literary alternatives."
 			},
 			{
 				slug: "object-indexing-monotransitive",
-				title: "Object Indexing: Monotransitive and Ditransitive Clauses",
-				summary: "How transitive and three-place verbs index their object(s) via the objective affix set, the subject/object indexing asymmetries, and the secundative-vs-indirective alignment of ditransitive indexing."
+				title: "Object Indexing and Three-Place Verbs",
+				summary: "The object series, recipient and theme indexing, third-person zero, and the distinction between person indexes and semantic arguments."
 			},
 			{
 				slug: "indefinite-fourth-person-paradigm",
-				title: "The Indefinite/Fourth Person: Forms, Reference, and Agent-Defocusing",
-				summary: "The morphology of the indefinite person (a=/an=/=an, i=) and its referential range — generic 'one', inclusive 'we', definite fourth-person reference — and its agent-defocusing 'passive'/impersonal use with the does-Ainu-have-a-passive debate."
+				title: "Fourth-Person Forms and Their Uses",
+				summary: "Inclusive, indefinite, honorific, narrative, and quoted-speaker reference, with dialect differences in form and number and competing semantic analyses."
 			},
 			{
 				slug: "fourth-person-honorific",
-				title: "Honorific and Logophoric Uses of the Fourth Person",
-				summary: "The indefinite/fourth person used to refer respectfully to esteemed humans and kamuy, and as the self-reference device of the first-person narrator in oral literature (the hero's 'I'); the affix-paradigm facts of these uses, with full discourse deployment in Part XIX."
+				title: "Fourth Person in Respectful Address",
+				summary: "Honorific person forms, verbal number, speaker and family differences, regional alternatives, and the distinction from narrative and quoted-speaker uses."
 			},
 			{
 				slug: "personal-affix-template-and-ordering",
-				title: "The Personal-Affix Template: Position Classes and Affix Ordering",
-				summary: "The ordering of subject and object personal affixes relative to each other, to valency prefixes, and to the verb stem — the personal-affix portion of the verb template."
+				title: "Person-Marker Order and Stem Boundaries",
+				summary: "Prefix sequences, portmanteaux, prefix–suffix combinations, additional number marking, and evidence for separable person forms."
 			},
 			{
 				slug: "person-number-interactions",
-				title: "Person–Number Interactions and Plural Agreement",
-				summary: "How the personal affixes interact with number marking — the -pa plural, the =as suffix, and agreement resolution across A, S, and O."
+				title: "Person and Verbal Number",
+				summary: "Participant number, comitative grouping, numeral constructions, fourth-person mismatches, and additional plural morphology."
 			},
 			{
 				slug: "alignment-split-intransitive",
-				title: "The Split-Intransitive (Active–Stative) Core",
-				summary: "The foundational alignment fact: intransitive subjects split between the agentive (A-set) and patientive (O-set) exponents, and the Split-S vs Fluid-S question."
+				title: "Intransitive Subjects and Semantic Roles",
+				summary: "Subject marking of agents, patients, and experiencers, lexical classes in incorporation, and the difference between valency and person-conditioned alignment."
 			},
 			{
 				slug: "alignment-hierarchical-and-the-debate",
-				title: "Tripartite, Nominative-Accusative, and the Central Alignment Debate",
-				summary: "How the 1sg and indefinite cells show distinct A/S/O exponents (tripartite) against the accusative readings of other cells, and the system-wide synthesis — hierarchical/inverse vs active-stative vs tripartite — including ditransitive and clause-type alignment."
+				title: "Mixed Alignment and Hierarchical Analyses",
+				summary: "The Hokkaido person-conditioned patterns, interaction forms, the Sakhalin inverse proposal, and the separate questions raised by lexical classes and voice."
 			}
 		]
 	},
@@ -440,98 +440,98 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "valency-voice-overview",
-				title: "Valency, Voice, and Noun Incorporation: Overview",
-				summary: "The architecture of the valency-changing system: the inventory of operations (causatives, the e-/ko-/o- applicatives, antipassive, reflexive, reciprocal, middle/anticausative, and noun incorporation) and how they compose, stack, and order on the verb."
+				title: "Valency and Voice Constructions",
+				summary: "Argument structure, person-index diagnostics, principal derivational effects, lexical formation, and competing voice analyses."
 			},
 			{
 				slug: "causative-morphological-re-e-te",
-				title: "The Morphological Causative -re / -e / -te",
-				summary: "The productive transitivizing causative suffix and its stem-conditioned allomorphy -re/-e/-te, encoding direct/manipulative causation."
+				title: "The Productive Causative -re, -te, and -e",
+				summary: "Suffix forms, causee marking, direct and indirect causation, permissive and coercive readings, lexical restrictions, and a Horobetsu clause-linkage proposal."
 			},
 			{
 				slug: "transitivizer-ka-valency-pairs",
-				title: "The Transitivizer -ka and Lexical Valency Pairs",
-				summary: "The transitivizer/causative -ka on stative bases, and the system of labile and suppletive causative–inchoative verb pairs."
+				title: "Lexical Verb Pairs and Causative -ka",
+				summary: "Root-based forming suffixes, motion causatives, regional -ka variation, derived bases, and competing classifications of causative morphology."
 			},
 			{
 				slug: "causee-marking-ditransitive-double-causative",
-				title: "Causee Marking, Ditransitive and Double Causatives",
-				summary: "How causativization of transitives builds three-place frames, the marking/indexing of the causee, and double causatives."
+				title: "Causees and Multiple Causative Layers",
+				summary: "Causee objects, retained themes, different analyses of double causation, four-participant textual evidence, and restrictions on causee backgrounding."
 			},
 			{
 				slug: "permissive-sociative-causative-yar",
-				title: "The Permissive/Sociative Causative -yar",
-				summary: "The indirect/permissive causative -yar 'let/have someone do' and the directive-vs-sociative split it forms with -re/-e/-te."
+				title: "Indefinite Causative -yar and -ar",
+				summary: "Valency-retaining causation, retained objects, oblique causees, conflicting suffix distributions, and older plural and Ishikari analyses."
 			},
 			{
 				slug: "applicative-system-overview",
-				title: "The Applicative System: Overview and the Preverb-vs-Applicative Debate",
-				summary: "Bugaeva's reanalysis of e-/ko-/o- as applicatives promoting obliques to object, with the diagnostics and the terminological controversy."
+				title: "Applicative Constructions and Their Arguments",
+				summary: "The three applicative prefixes, changes in argument structure and person marking, overlapping semantic roles, and source-specific classifications."
 			},
 			{
 				slug: "applicative-e",
 				title: "The e- Applicative",
-				summary: "The e- applicative promoting content/theme, instrument, reason and 'about/concerning' obliques to object."
+				summary: "Instrument, purpose, content, and place relations, with Nakagawa’s four constructional subtypes and Bugaeva’s lexical classification."
 			},
 			{
 				slug: "applicative-ko",
 				title: "The ko- Applicative",
-				summary: "The ko- applicative promoting goal/recipient, comitative and adversative ('to/with/against') obliques to object."
+				summary: "Directed and comitative relations, spatial and personal goals, source objects, instrumental uses, and incorporation."
 			},
 			{
 				slug: "applicative-o",
 				title: "The o- Applicative",
-				summary: "The o- applicative promoting locative/source/goal ('at, from, into') obliques, the spatial applicative, and allied spatial valency operators."
+				summary: "Applied places, motion goals, contrasts with ko-, and differing source descriptions of source and instrumental meanings."
 			},
 			{
 				slug: "applicative-stacking-relativization-feeding",
-				title: "Applicative Stacking, Ordering, and the Feeding of Relativization",
-				summary: "How multiple applicatives stack and order, and how applicative promotion extends the relativization accessibility hierarchy and feeds incorporation."
+				title: "Multiple Applicatives, Incorporation, and Relative Clauses",
+				summary: "Documented applicative combinations, noun incorporation and prefix order, and relative clauses with applied objects or retained role markers."
 			},
 			{
 				slug: "antipassive-detransitive-i",
-				title: "The Antipassive / Detransitive i-",
-				summary: "The prefix i- 'something/someone' absorbing the object and detransitivizing, with the antipassive-vs-incorporation debate and its origin."
+				title: "Antipassive and Unspecified-Object i-",
+				summary: "Object backgrounding, person marking, conventional activities, interaction with applicatives, lexical exceptions, and competing historical accounts."
 			},
 			{
 				slug: "reflexive-yay",
-				title: "The Reflexive yay-",
-				summary: "The reflexive prefix yay- 'self', its A/O coreference and detransitivization, and its autobenefactive/emotive extensions."
+				title: "Reflexive yay- and Its Extensions",
+				summary: "Participant identity, intentionality and direct-reflexive analyses, reflexive possession, lexical extensions, and combinations with si-."
 			},
 			{
 				slug: "reflexive-possessive-si",
-				title: "The Reflexive-Possessive si- and the yay-/si- Division",
-				summary: "The prefix si- 'oneself / one's own / by itself' and its division of labor with yay- in argument identification."
+				title: "Reflexive si- in Verbal and Spatial Constructions",
+				summary: "Bodily motion and change, indirect reflexivity, causatives and pretending, locative coreference, and proposed historical developments."
 			},
 			{
 				slug: "reciprocal-u",
-				title: "The Reciprocal u-",
-				summary: "The reciprocal prefix u- 'each other/mutually', including quasi-possessive incorporation, the formation of aeuitaknup, and reflexive-possessive parallels."
+				title: "Reciprocal u- and Joint Participation",
+				summary: "Canonical and indirect reciprocals, object-oriented constructions, incorporated possessors, and the distinction between reciprocal and sociative forms."
 			},
 			{
 				slug: "middle-anticausative-passive",
-				title: "Middle, Anticausative, and the (Non-)Passive Question",
-				summary: "Middle/spontaneous and anticausative uses of si-/yay- and detransitives, and whether the a=/an= indefinite-agent construction constitutes a passive."
+				title: "Middle ci- and the Passive Analysis",
+				summary: "Middle and resultative descriptions, person restrictions, agent phrases, competing analyses of passive patients, and anticausative meanings."
 			},
 			{
 				slug: "noun-incorporation-object",
-				title: "Object (Patient) Noun Incorporation",
-				summary: "Productive object incorporation (N+V → intransitive), its diagnostics, and its interaction with the antipassive and valency prefixes."
+				title: "Object Noun Incorporation",
+				summary: "Wordhood and person diagnostics, remaining objects, generic reference, incorporated compound nouns, two-object formations, and possession restrictions."
 			},
 			{
 				slug: "noun-incorporation-subject-possessor-stranding",
-				title: "Subject Incorporation and Possessor-Stranding",
-				summary: "Subject incorporation with unaccusative verbs (sik-pirka 'eyes-be.good') and the possessor-stranding pattern — the classic Type IV test case."
+				title: "Subject Incorporation and External Possessors",
+				summary: "Natural-phenomenon predicates, possessed stems with external subjects, natural-force actors, changes in grammatical relation, and competing restrictions."
 			},
 			{
 				slug: "noun-incorporation-oblique-polysynthesis-debate",
-				title: "Oblique Incorporation and the Syntactic-vs-Lexicalist Debate",
-				summary: "Adverbial/oblique incorporation, its feeding of relativization, and the central syntactic-NI vs lexical-compounding controversy."
+				title: "Incorporation, Quasi-Incorporation, and Word Structure",
+				summary: "Applicative-related incorporation, affix order, Tamura’s 連他動詞, Satō’s lexical quasi-incorporation, Nakagawa’s one-word and two-word forms, and the theoretical debates."
 			},
 			{
 				slug: "adverbial-incorporation",
-				title: "Adverbial (Manner) Incorporation and the Property-Verb Question",
-				summary: "Manner/depictive verb-compounding (pirka-resu 'raise well'), its reanalysis as property-verb rather than adverb incorporation, its arity-neutral interaction with the applicatives, and its typological placement."
+				title: "Manner Compounds and Adverbial Incorporation",
+				summary: "Property-verb components, derived adverbs, lexicalized mono, temporal nouns, and source disagreements over productivity."
 			}
 		]
 	},
@@ -540,48 +540,48 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "constituent-order-head-final",
-				title: "Basic Constituent Order and Head-Final Syntax",
-				summary: "Rigid verb-final (S)OV clause order and pervasive head-finality, scored against Greenbergian word-order correlations."
+				title: "Constituent Order and the Verb-Final Clause",
+				summary: "Preverbal noun phrases and adverbials, differing accounts of participant order, head-final phrases, clause endings, and later specifications with ki."
 			},
 			{
 				slug: "argument-realization-indexing",
-				title: "Argument Realization: Affix Indexing and Free NP Order",
-				summary: "Grammatical relations encoded by bound person affixes rather than case or fixed position, with free, pragmatically governed NP order."
+				title: "Argument Realization and Person Indexing",
+				summary: "Argument count, person forms, omitted noun phrases, unindexed themes, incorporation, and locative role information."
 			},
 			{
 				slug: "nonconfigurationality-pronominal-argument",
-				title: "Pro-Drop, (Non)configurationality, and the Pronominal-Argument Debate",
-				summary: "Argument ellipsis and null anaphora, and whether the bound affixes are the true arguments (Jelinek/Baker) — Ainu on the configurationality cline."
+				title: "Noun Phrases and Pronominal-Argument Analyses",
+				summary: "Head marking, Satō’s layered clause analysis, unindexed core arguments, shared argumenthood, and the limits of word-order and quantifier evidence."
 			},
 			{
 				slug: "oblique-adjunct-verbless-clauses",
-				title: "Oblique and Adjunct Syntax; Verbless and Presentational Clauses",
-				summary: "The syntax of postpositional/relational-noun obliques and adjuncts, plus minor verbless and presentational clause types."
+				title: "Oblique Expressions and Verbless Utterances",
+				summary: "Locative objects and adjuncts, complete noun-phrase utterances, echo questions, formal-noun endings, and ambient predicate boundaries."
 			},
 			{
 				slug: "copula-ne-predicate-nominals",
-				title: "The Copula ne and Predicate-Nominal Clauses",
-				summary: "Equational and class-membership predication with the copula ne, its person indexing, and its disputed verb-vs-particle status."
+				title: "Copular ne and Nominal Predication",
+				summary: "Identity and classification, subject marking without object indexes, syntactic and semantic valency, state and change readings, negation, and attributive ne."
 			},
 			{
 				slug: "existential-locational-an-oka",
-				title: "Existential and Locational Clauses (an / oka)",
-				summary: "The existential/locational predicates an (SG) and oka (PL), their number suppletion, presentational use, and the isam negative."
+				title: "Existential and Locational Predicates",
+				summary: "Existence, personal location, regional plural forms, narrative number, seasonal change, continuation, and lexical absence."
 			},
 			{
 				slug: "predicative-possession-clauses",
-				title: "Predicative Possession: kor, Existential Possession, and isam",
-				summary: "Clause-level 'have/belong' predication via transitive kor, existential-based possession, and negative isam, plus the noun-level affiliative-vs-kor choice for alienable nouns; placed on Stassen's predicative-possession typology and interfaced with the nominal affiliative system (Part VII)."
+				title: "Predicative Possession",
+				summary: "Possessor and possessee subjects, kor and existential constructions, kinship and affiliation, source-specific corpus findings, incorporation, and lack."
 			},
 			{
 				slug: "property-concept-predication",
-				title: "Property-Concept (Adjectival) Predication without a Copula",
-				summary: "Predicate 'adjectives' as intransitive stative verbs taking person indexing — the clause-level consequence of the no-adjective-class thesis."
+				title: "Property Predicates",
+				summary: "Direct predication and person marking, state and change readings, manner and auxiliary uses, ambient conditions, and the adjective debate."
 			},
 			{
 				slug: "nonverbal-predicate-tam-negation",
-				title: "TAM, Evidentiality, and Negation on Nonverbal Predicates",
-				summary: "How copular and other nonverbal predicates host the full sentence-final aspect, evidential, and negation apparatus through ne."
+				title: "Copular Negation and Clause Endings",
+				summary: "Negative nominal predicates, evidential endings, polar and content questions, scope, ordering restrictions, and competing structural analyses."
 			}
 		]
 	},
@@ -590,38 +590,38 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "nominalization-p-pe",
-				title: "The Nominalizers -p/-pe and -i/-hi (Participant, Event, Place, Fact)",
-				summary: "The participant nominalizer -p/-pe ('the one that') and the abstract/event nominalizer -i/-hi ('the V-ing / place / time / fact that'): argument-role readings, the headless-relative continuum, internal clause TAM/person, and the insubordination of nominalized clauses."
+				title: "P and Pe: Participants, Content, and Clause Endings",
+				summary: "Sound-conditioned forms, phrase scope, relative participants, instrumental heads, content nominalization, human reference, and normative and linking uses."
 			},
 			{
 				slug: "lexical-head-formal-noun-nominalization",
-				title: "Lexical-Head and Formal-Noun Nominalization (kur, uske, ruwe/hawe/siri/humi)",
-				summary: "Nominalization headed by lexical nouns (kur 'person', uske/usi 'place', ike) and by the grammaticalized formal-noun set (ruwe, hawe, siri, humi, hi, pe) acting as clause-nominalizing heads."
+				title: "Lexical Heads and Formal-Noun Nominalization",
+				summary: "Hi and place/time relations, sensory complements, conventional words and relative phrases, Tokachi independent endings, and Horobetsu adverbial clauses."
 			},
 			{
 				slug: "prenominal-gap-relative-clauses",
-				title: "Relative Clauses: The Gap Strategy and the Accessibility Hierarchy",
-				summary: "The head-final, relativizer-less gap relative clause and the Keenan–Comrie accessibility hierarchy — subject/object relativize directly, obliques only after e-/ko-/o- applicative promotion — plus possessor, locative/temporal, and standard-of-comparison relativization."
+				title: "Relative Clauses and Accessible Relations",
+				summary: "Prenominal heads, argument roles, retained oblique relations, locative and possessive morphology, source qualifications, and comparison equivalents."
 			},
 			{
 				slug: "headless-internally-headed-noun-modifying-clauses",
-				title: "Headless, Internally-Headed, and Noun-Modifying Clause Analyses",
-				summary: "The analytic question of whether Ainu adnominal clauses are externally-headed RCs, headless/internally-headed relatives, or a unified 'general noun-modifying clause' type."
+				title: "General Heads, Gapless Clauses, and Internal-Head Analyses",
+				summary: "Overt light heads, complement relations, and Dal Corso’s source-limited incorporation and internally headed relative proposals."
 			},
 			{
 				slug: "quotative-complementation-sekor",
-				title: "Quotative Complementation and Reported Speech (sekor)",
-				summary: "The dominant complementation strategy: framing a (direct-form) clause with the quotative sekor under verbs of speech, cognition, and intention."
+				title: "Quotation, Logophoric Speech, and Indirect Reports",
+				summary: "Quoted person reference, the syntactic reassessment of logophoric speech, indirect content, ordering flexibility, and regional predicate selection."
 			},
 			{
 				slug: "nominalized-complements-control-raising",
-				title: "Nominalized Complements and Control/Raising",
-				summary: "Complement clauses formed by nominalization (hi, -i, ruwe) under perception, cognition, and evaluative predicates, and the control/raising diagnostics of same-subject complex predicates."
+				title: "Nominalized Complements and Complex Predicates",
+				summary: "Complement functions, sensory content, overt and zero nominalization, bare verb and auxiliary constructions, and participant reference."
 			},
 			{
 				slug: "kuni-complementizer-purpose-complements",
-				title: "The kuni Complementizer and Purpose Complements",
-				summary: "The irrealis complementizer/nominalizer kuni and the purposive kus(u) / kuni ne, marking future-oriented complements of manipulation, desire, and purpose."
+				title: "Kuni, Indirect Complements, and Purpose Clauses",
+				summary: "Prospective and inferential content, kunak and yak, reported instructions with causatives, kunine purpose linkage, and nominal expressions."
 			}
 		]
 	},
@@ -630,63 +630,63 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "tam-overview",
-				title: "Tense, Aspect, Mood, and Modality: Overview",
-				summary: "The architecture of the TAM/modality system and how its pieces fit: tenselessness, the existential-aspect core, the phasal/iterative/habitual periphery, the directive/optative moods, and the modal field, with the boundaries to evidentiality and negation."
+				title: "Time, Aspect, Modality, and Evidentiality",
+				summary: "Contextual time reference, construction types, competing a and aan analyses, existential combinations, participant identity, and dialect restrictions."
 			},
 			{
 				slug: "tenselessness-and-time-reference",
-				title: "Tenselessness and the Time-Reference System",
-				summary: "Hokkaido Ainu lacks a grammatical tense category; temporal location is inferred from aspect, discourse anchoring, and temporal adverbs."
+				title: "Time Reference Without Obligatory Tense",
+				summary: "Contextual event time, speech-time and narrative reference points, prospective expressions, and the interpretation of unmarked predicates."
 			},
 			{
 				slug: "existential-aspect-an-oka",
-				title: "The Existential-Aspect System: kor an Progressive and wa an Resultative-Perfect",
-				summary: "The existential verbs an (SG)/oka (PL) recruited as aspectual auxiliaries unifying kor an and wa an under one 'existential aspect': the progressive/continuative kor an and the resultative-perfect wa an, with number agreement, aktionsart conditioning, and grammaticalization."
+				title: "Existential Aspect: Kor An and Wa An",
+				summary: "Activities, habits, resulting states, person and number controllers, lexical interpretation, negative constructions, and regional limits."
 			},
 			{
 				slug: "perfective-anterior-a",
-				title: "The Perfective/Anterior Particle a (a, a…a, aan)",
-				summary: "Postverbal a marks completion and anteriority ('already, have V-ed'), with reduplicated a…a and the anterior-stative aan."
+				title: "A, Rok, and Aan: Earlier Situations and Discovery",
+				summary: "Contextual contrasts, participant number, sustained and repeated events, retrospective discovery, regional forms, and competing aspectual analyses."
 			},
 			{
 				slug: "continuative-siri-siran-kane-an",
-				title: "The 'Appearance' Continuative: siran, siri…, and kane an",
-				summary: "siri/siran-based forms express durative, ongoing situations framed as observable appearance."
+				title: "Kane An, Regional Continuatives, and Appearance",
+				summary: "Ongoing and resulting states, degree and emphasis, Shizunai and Samani patterns, Tokachi and Ishikari forms, and distinct evidential constructions."
 			},
 			{
 				slug: "phasal-iterative-habitual-aspect",
-				title: "Phasal, Iterative, and Habitual Aspect",
-				summary: "Inceptive and terminative phasal aspect via auxiliary verbs, plus iterative and habitual marking."
+				title: "Completion, Repetition, and Event Phases",
+				summary: "Finishing and disappearance, person marking on supplementary verbs, nisa, brief actions, ranke, contextual beginnings, and persistent results."
 			},
 			{
 				slug: "imperative-and-prohibitive",
-				title: "Imperative and Prohibitive (Directive Mood)",
-				summary: "Bare-stem imperatives, the -yan plural/polite imperative, and the iteki prohibitive form one directive-mood system."
+				title: "Commands, Requests, and Prohibitions",
+				summary: "Direct imperative morphology, plural and polite forms, requests and final particles, indirect directives, and regional prohibitive expressions."
 			},
 			{
 				slug: "hortative-and-optative",
-				title: "Hortative, Optative, and Cohortative",
-				summary: "First-person hortative/cohortative built on =an plus clause-final particles, alongside optative and wish constructions."
+				title: "Invitations, Deliberation, and Wishes",
+				summary: "Inclusive and other-person ro constructions, regional endings, Shizunai na, self-directed so, and wishes with ta and oka."
 			},
 			{
 				slug: "desiderative-rusuy",
-				title: "The Desiderative rusuy",
-				summary: "Postverbal rusuy expresses 'want to' and desire, raising the verb-vs-auxiliary question central to the part."
+				title: "Desire, Rusuy, and Compound Predicates",
+				summary: "Separate auxiliaries and lexical compounds, person placement, the desirer and action participant, impending feelings, and competing incorporation analyses."
 			},
 			{
 				slug: "abilitative-easkay-eaykap",
-				title: "Abilitative easkay / eaykap (Ability and Possibility)",
-				summary: "easkay 'be able to' and its lexicalized negative counterpart eaykap 'cannot' encode root ability and possibility."
+				title: "Ability and Inability",
+				summary: "Easkay and eaykap, person-marked lexical uses, compounds, ka, dialect and register limits, and more specific obstacles to action."
 			},
 			{
 				slug: "deontic-necessity",
-				title: "Deontic Necessity and Obligation (kuni ne, kus ne)",
-				summary: "Necessity and obligation are expressed periphrastically via nominalized kuni ne / kunine and kus ne."
+				title: "Necessity, Advice, and Permission",
+				summary: "Easirki, obligation and expectation with kuni, conditional advice and permission, and ordinary person marking in indirect directives."
 			},
 			{
 				slug: "epistemic-irrealis-modality",
-				title: "Epistemic Modality, Dubitative, Intentive, and Irrealis",
-				summary: "Probability nankor, the dubitative ya, intentive kusu ne, and counterfactual/irrealis interactions, plus the modal–evidential boundary."
+				title: "Conjecture, Intention, and Prospective Events",
+				summary: "Contextual nankor, kusu ne and regional kusu ki, impending events, competing oasi analyses, seeming, circumlocution, and conditional context."
 			}
 		]
 	},
@@ -695,33 +695,33 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "evidential-schema-overview",
-				title: "The Nominalization-plus-Copula Evidential Schema",
-				summary: "The architecture of the Ainu evidential system: a clause-nominalizing formal noun (ruwe/siri/hawe/humi) plus the copula ne/an encodes the speaker's source of information."
+				title: "Formal Nouns and Evidential Constructions",
+				summary: "The four noun families, internal complements and clause endings, regional frames, competing semantic accounts, negation, and construction-specific ordering."
 			},
 			{
 				slug: "ruwe-ne-inferential",
-				title: "ruwe ne — the Inferential / Visual-Trace Evidential",
-				summary: "The default assertive-evidential ruwe ne ('it is the trace/fact that'), marking inference from evidence or established fact, the most frequent and most grammaticalized term of the paradigm."
+				title: "Ruwe: Fact, Knowledge, and Clause Endings",
+				summary: "Personal circumstances and explanations, nominal morphology, questions and replies, knowledge-based analyses, negation, and lexical ruwe an."
 			},
 			{
 				slug: "siri-ne-situational",
-				title: "siri ne — the Direct-Perception / Situational Evidential",
-				summary: "siri ne ('it is the appearance/scene that'), marking directly observed situations and visible states, with a close interface to the siran situational-continuative and a mirative lean."
+				title: "Siri: Visible Appearance and Ongoing Situations",
+				summary: "Appearance and identity, descriptions of the speaker’s conduct, visual inference, aspectual and lexical uses, and Tokachi predication restrictions."
 			},
 			{
 				slug: "hawe-ne-reportative",
-				title: "hawe ne — the Reportative / Hearsay Evidential",
-				summary: "hawe ne ('it is the voice/report that'), marking information acquired through speech or hearsay, distinct from but adjacent to the sekor quotative and reported-discourse system."
+				title: "Hawe: Voice, Wording, and Reports",
+				summary: "The speaker’s own wording, immediate reports, questions about meaningful cries, nominal morphology, and hawe as in inference and reported discourse."
 			},
 			{
 				slug: "humi-ne-sensory",
-				title: "humi ne — the Non-Visual Sensory Evidential",
-				summary: "humi ne ('it is the sound/feeling that'), marking evidence from non-visual senses — non-verbal sound and bodily/internal sensation — and inference from such cues."
+				title: "Humi: Sensation and Internal Experience",
+				summary: "Bodily and emotional experience, humi ne continuations, sound-based questions, Tokachi and Shizunai evidence, and the absence of a sensation."
 			},
 			{
 				slug: "mirativity-scope-grammaticalization",
-				title: "Mirativity, Evidential Scope, and Grammaticalization to Sentence-Final Particles",
-				summary: "System-level interactions: the evidential-to-mirative extension, evidential stacking and scope over negation and modality, aspect/perfect-based evidential strategies, and the cline from formal noun to sentence-final particle."
+				title: "Evidential Combinations, Discovery, and Structural Change",
+				summary: "Exclamation and aan, double evidentials, construction-specific ordering, competing constituency analyses, grammaticalization proposals, and regional endings."
 			}
 		]
 	},
@@ -730,28 +730,28 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "negation-somo-standard-clausal",
-				title: "Standard Clausal Negation with somo",
-				summary: "The preverbal standard negator somo: its position, scope, periphrastic somo ki construction, and placement in symmetric/asymmetric negation typology."
+				title: "Clausal Negation with Somo",
+				summary: "Preverbal and postverbal negatives, ka and the somo ki analysis, nominal predicates, evidential scope, regional forms, and construction-specific limits."
 			},
 			{
 				slug: "negation-existential-possessive-isam",
-				title: "Negative Existential and Possessive: isam",
-				summary: "isam as the suppletive negative counterpart of the existentials an/oka, its 'not have' possessive use, and the privative sak."
+				title: "Absence and Lack: Isam and Sak",
+				summary: "Negative existential and possessive predicates, subject and object contrasts, lexical alternatives, figurative completion, and an attributed historical proposal."
 			},
 			{
 				slug: "negation-ability-cognition-predicates",
-				title: "Negative Predicates of Ability and Cognition",
-				summary: "Lexically suppletive negative modal/cognition predicates — eaykap 'cannot', eramiskari 'not know how/never', erampewtek 'not understand' — versus analytic somo negation."
+				title: "Inability, Inexperience, and Lack of Knowledge",
+				summary: "Lexical contrasts, independent and auxiliary uses, capacity and circumstances, and dialect and register restrictions."
 			},
 			{
 				slug: "negation-polarity-items-scope",
-				title: "Negative-Polarity Indefinites and the Scope of Negation",
-				summary: "The ka-indefinite/NPI series under somo, negative concord, constituent vs clausal negation, and the negation of nominal predicates (somo ... ne)."
+				title: "Indefinite Expressions and Negation",
+				summary: "Affirmative and negative readings, interrogative and indefinite bases, variable ka meanings, free choice, and the placement of negation."
 			},
 			{
 				slug: "negation-prohibitive-iteki",
-				title: "The Prohibitive Subsystem: iteki and Negative Directives",
-				summary: "The dedicated prohibitive iteki, its asymmetry with declarative negation, apprehensive 'lest' uses, and links to the imperative/hortative system."
+				title: "Prohibitions with Iteki and Related Forms",
+				summary: "Bare imperative and person-marked directives, regional prohibitives, placement, plural and polite address, and advisory expressions."
 			}
 		]
 	},
@@ -760,43 +760,43 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "clause-linkage-overview",
-				title: "Clause Linkage in Ainu: Typology and Inventory",
-				summary: "Framing chapter mapping Ainu clause combining onto the coordination–cosubordination–subordination continuum and laying out the full inventory of clause-linking morphemes."
+				title: "Clause Linkage and Its Analyses",
+				summary: "Unchanged verb forms, connective categories, competing structural accounts, participant reference, and the principal linking relations."
 			},
 			{
 				slug: "sequential-wa-and-clause-chaining",
-				title: "Sequential wa and Clause Chaining",
-				summary: "The default connective wa 'and (then)', multi-clause event chains, and the culminative linker aine, disambiguated from the homophonous resultative/perfect wa."
+				title: "Wa, Connected Events, and Ayne",
+				summary: "Sequence, causation, manner and result states, shared and different subjects, duration with ayne, and source-specific negative and phonological patterns."
 			},
 			{
 				slug: "hine-akusu-switch-reference",
-				title: "The hine/akusu Contrast and Switch-Reference-Like Linkage",
-				summary: "The sequential connectives hine and akusu and the long-running debate over whether they encode same-/different-subject (switch-reference) or discourse (un)expectedness."
+				title: "Hine, Akusu, and Narrative Progression",
+				summary: "Successive information, related developments, regional and genre preferences, participant changes, and attributed narrative-boundary analyses."
 			},
 			{
 				slug: "simultaneous-kor-clauses",
-				title: "Simultaneous kor 'while' and Overlapping-Event Clauses",
-				summary: "The conjunctive particle kor marking temporal overlap, distinguished from the homophonous possessive verb kor and the progressive auxiliary kor an."
+				title: "Kor: Simultaneity, Habits, and Conditions",
+				summary: "Overlapping situations with shared or different subjects, continuative constructions, habitual and factual uses, regional forms, and historical proposals."
 			},
 			{
 				slug: "conditional-temporal-concessive-clauses",
-				title: "Conditional, Temporal, and Concessive Clauses",
-				summary: "The yak(un)/ciki conditionals, their temporal 'when' uses and realis/irrealis split, and the morphologically related concessives yakka 'even if' and korka 'although'."
+				title: "Conditional, Temporal, and Concessive Constructions",
+				summary: "Premises with yakun, evaluation with yak, regional ciki and cik uses, factual sequences, wishes, and hypothetical or realized concessions."
 			},
 			{
 				slug: "causal-and-purpose-clauses",
-				title: "Causal and Purpose Clauses (kusu)",
-				summary: "The polyfunctional kusu/gusu marking reason 'because' and purpose 'in order to', its formal-noun origin, and its division of labour with the kuni purpose complementizer."
+				title: "Reasons, Purposes, and Desired Outcomes",
+				summary: "Kusu, wa kusu, hi kusu, kunine, participant relations, independent connective uses, and regional functions."
 			},
 			{
 				slug: "manner-and-degree-adverbial-clauses",
-				title: "Manner and Degree Adverbial Clauses",
-				summary: "Manner clauses, the clause-linking -no adverbializer, and degree/extent clauses (pakno 'to the extent that'), framed against Ainu comparison strategies."
+				title: "Manner, Appearance, Degree, and Comparison",
+				summary: "No and its word-class boundary, koraci, source-specific appearance analyses, extent clauses, and degree-adjunct relativization."
 			},
 			{
 				slug: "tail-head-linkage-and-narrative-cohesion",
-				title: "Tail-Head Linkage and Narrative Clause Cohesion",
-				summary: "Recapitulative tail-head linkage, the discourse connective orowa(no) 'and then (from there)', and the anaphoric clause-linkage that structures Ainu oral narrative."
+				title: "Narrative Continuation and Repetition",
+				summary: "Connective formal nouns, orowa expressions, recapitulation and reference, and attributed analyses of narrative boundaries."
 			}
 		]
 	},

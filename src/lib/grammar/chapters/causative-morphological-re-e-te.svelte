@@ -1,398 +1,117 @@
-<!-- src/lib/grammar/chapters/causative-morphological-re-e-te.svelte -->
 <script lang="ts">
-	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import { S, Ex, Ref, Xr } from '$lib/grammar/components';
 </script>
 
-<S t="Place in the causative inventory" id="overview">
+<S t="The productive causative suffix" id="overview">
 	<p>
-		Hokkaido Ainu marks causation with a small set of verb-final suffixes. The productive
-		causative has three phonologically conditioned allomorphs. Nakagawa gives the distribution:
-		<i lang="ain-Latn">-re</i> after a vowel or the glides <i lang="ain-Latn">y</i>,
-		<i lang="ain-Latn">w</i>; <i lang="ain-Latn">-te</i> after consonants other than
-		<i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i>, and <i lang="ain-Latn">r</i>; and <i lang="ain-Latn">-e</i> after <i lang="ain-Latn">r</i>
-		<Ref k="nakagawa2024" p="200" />. In Nakagawa's
-		arity calculus it carries the value <strong>+1</strong>: the original subject of the
-		base verb is reassigned to the object position of the derived verb, and a new causer
-		participant fills the subject position <Ref k="nakagawa2024" p="200–201, 431" />.
+		The productive causative adds a causer to the argument structure of an intransitive or
+		transitive base. Its forms <i lang="ain-Latn">-re, -te, -e</i> are selected by the final sound
+		of the base <Ref k="nakagawa2024" p="200" />;
+		<Ref k="sato2008" p="235–237" />. In a simple intransitive causative, the former subject becomes
+		the causee object and the causer becomes the new subject.
 	</p>
-
-	<p>
-		Three further suffix types occupy the same post-stem slot: the forming suffixes
-		<i lang="ain-Latn">-V</i> and <i lang="ain-Latn">-ke</i> that build transitivity pairs,
-		the direct-causative / transitivizer <i lang="ain-Latn">-ka</i>, and the valency-neutral
-		indefinite causative <i lang="ain-Latn">-yar</i> / <i lang="ain-Latn">-ar</i>. The
-		indefinite causative, which leaves the causee unexpressed and unindexed, is treated in
-		<Xr ch="permissive-sociative-causative-yar" />; the forming suffixes and
-		<i lang="ain-Latn">-ka</i> are covered in <Xr ch="transitivizer-ka-valency-pairs" />.
-		Causee marking, the double-object frame, and double causatives are developed in
-		<Xr ch="causee-marking-ditransitive-double-causative" />. The present chapter concerns
-		<i lang="ain-Latn">-re</i> / <i lang="ain-Latn">-te</i> / <i lang="ain-Latn">-e</i>
-		alone: their allomorphy, their arity effect, the productive versus non-productive split,
-		and the direct/indirect and coercive/permissive distinctions.
-	</p>
-</S>
-
-<S t="Allomorphy" id="allomorphy">
-	<p>
-		The table follows Nakagawa's distribution of the three allomorphs
-		<Ref k="nakagawa2024" p="200" />. Bugaeva likewise gives
-		<i lang="ain-Latn">-re</i> after vowels and <i lang="ain-Latn">y</i>,
-		<i lang="ain-Latn">-e</i> after <i lang="ain-Latn">r</i>, and
-		<i lang="ain-Latn">-te</i> after the remaining consonants, without separately
-		listing <i lang="ain-Latn">w</i> <Ref k="bugaeva2014" p="134" />.
-	</p>
-
 	<table>
-		<thead>
-			<tr>
-				<th>environment</th>
-				<th>allomorph</th>
-				<th>base</th>
-				<th>derived</th>
-				<th>meaning</th>
-			</tr>
-		</thead>
+		<thead><tr><th>Final sound</th><th>Suffix</th><th>Published formation</th></tr></thead>
 		<tbody>
-			<tr>
-				<td>after vowel; after <i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i></td>
-				<td><i lang="ain-Latn">-re</i></td>
-				<td><i lang="ain-Latn">nu</i> 'hear'</td>
-				<td><i lang="ain-Latn">nu-re</i></td>
-				<td>'make/let hear, tell'</td>
-			</tr>
-			<tr>
-				<td>after vowel; after <i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i></td>
-				<td><i lang="ain-Latn">-re</i></td>
-				<td><i lang="ain-Latn">siknu</i> 'live, be alive'</td>
-				<td><i lang="ain-Latn">siknu-re</i></td>
-				<td>'keep alive'</td>
-			</tr>
-			<tr>
-				<td>after vowel; after <i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i></td>
-				<td><i lang="ain-Latn">-re</i></td>
-				<td><i lang="ain-Latn">tuy</i> 'fall'</td>
-				<td><i lang="ain-Latn">tuy-re</i></td>
-				<td>'cause to fall, drop'</td>
-			</tr>
-			<tr>
-				<td>after consonants other than <i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i>, <i lang="ain-Latn">r</i></td>
-				<td><i lang="ain-Latn">-te</i></td>
-				<td><i lang="ain-Latn">sinot</i> 'play'</td>
-				<td><i lang="ain-Latn">sinot-te</i></td>
-				<td>'make/let play'</td>
-			</tr>
-			<tr>
-				<td>after consonants other than <i lang="ain-Latn">y</i>, <i lang="ain-Latn">w</i>, <i lang="ain-Latn">r</i></td>
-				<td><i lang="ain-Latn">-te</i></td>
-				<td><i lang="ain-Latn">ek</i> 'come (SG)'</td>
-				<td><i lang="ain-Latn">ek-te</i></td>
-				<td>'bring (SG), fetch'</td>
-			</tr>
-			<tr>
-				<td>after <i lang="ain-Latn">r</i></td>
-				<td><i lang="ain-Latn">-e</i></td>
-				<td><i lang="ain-Latn">nukar</i> 'see'</td>
-				<td><i lang="ain-Latn">nukar-e</i></td>
-				<td>'show'</td>
-			</tr>
+			<tr
+				><td>A vowel, y, or w</td><td><i lang="ain-Latn">-re</i></td><td
+					><i lang="ain-Latn">nu → nu-re</i>, hear → let someone hear</td
+				></tr
+			>
+			<tr
+				><td>p, t, k, s, m, or n</td><td><i lang="ain-Latn">-te</i></td><td
+					><i lang="ain-Latn">sinot → sinot-te</i>, play → make someone play</td
+				></tr
+			>
+			<tr
+				><td>r</td><td><i lang="ain-Latn">-e</i></td><td
+					><i lang="ain-Latn">nukar → nukar-e</i>, see → show</td
+				></tr
+			>
 		</tbody>
 	</table>
-
 	<p>
-		One phonological property separates the productive suffix from the non-productive cluster:
-		it does not shift the pitch-accent kernel of the stem —
-		<i lang="ain-Latn">kú-re</i> and <i lang="ain-Latn">sinót-te</i>, not
-		<i lang="ain-Latn">*ku-ré</i> or <i lang="ain-Latn">*sinot-té</i>
-		<Ref k="bugaeva2014" p="130–131" />.
-	</p>
-
-	<p>
-		The analysis of <i lang="ain-Latn">siknu-re</i> 'keep alive' — intransitive
-		<A w="siknu" gl="live, be alive" /> plus <i lang="ain-Latn">-re</i> — is corroborated
-		in community linguistic discussion <Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora
-		Discord, 2026): the vowel-final stem takes the predicted allomorph without irregularity
-		‹corpus-confirmed›. A related community observation notes that lexicalized forms such
-		as <i lang="ain-Latn">iyairaykere</i> ({'<'} <i lang="ain-Latn">i=yairayke-re</i>,
-		lit. 'makes people grateful') and <i lang="ain-Latn">irankarapte</i>
-		({'<'} <i lang="ain-Latn">i=rankarap-te</i>, lit. 'makes people greet') may carry an
-		"obligatory" or "deserving-of" reading, analogous to participial active/passive contrasts
-		in other languages <Ref k="aynucorporadiscord" /> (nukopoli, aynu-corpora Discord, 2024)
-		‹speculative›. The allomorphic conditioning in these forms follows the regular pattern;
-		the proposed extended reading of the construction is not confirmed in the primary literature.
+		The examples and environments follow Nakagawa and Satō's explicit lists
+		<Ref k="nakagawa2024" p="200" />;
+		<Ref k="sato2008" p="236–237" />. Lexically selected endings such as
+		<i lang="ain-Latn">-ka</i> and <i lang="ain-Latn">-ke</i> require a separate account; see <Xr
+			ch="transitivizer-ka-valency-pairs"
+		/>.
 	</p>
 </S>
 
-<S t="Arity and the argument-frame shift" id="arity">
-	<p>
-		On an intransitive base the productive causative yields a transitive verb: the base's
-		sole argument (S) is reassigned to the object position (O), and the new causer argument
-		fills the subject position (A). The person-marking diagnostics of
-		<Xr ch="person-marking-architecture" /> confirm the output class: a derived transitive
-		takes the prefixal A indexes, while the base intransitive takes suffixal S indexes.
-		Nakagawa positions the causative suffix after the forming and plural material and before
-		the outer person index, placing it in the penultimate layer of the verb-word template
-		<Ref k="nakagawa2024" p="210–212" />.
-	</p>
-
-	<p>
-		The base-and-derived pair for <A w="sinot" gl="play" /> makes the argument-frame shift
-		visible. In the base clause <i lang="ain-Latn">matkaci</i> 'girl' is the intransitive
-		subject; in the causative clause she is the object (causee), while the causer
-		<i lang="ain-Latn">hapo</i> 'mother' takes the subject position:
-	</p>
-
-	<Ex
-		m="matkaci sinot"
-		g="girl play"
-		tr="The girl played."
-		cite="nakagawa2024:431"
-		dial="HK"
-		place="Nakagawa ex. 954"
-	/>
-
-	<Ex
-		m="hapo matkaci sinot-te"
-		g="mother girl play-CAUS"
-		tr="Mother made the girl play."
-		cite="nakagawa2024:431"
-		dial="HK"
-		place="Nakagawa ex. 954′"
-		note="The base intransitive subject matkaci becomes the causee object; hapo is the new causer subject. The -te allomorph follows the consonant-final stem sinot."
-	/>
-
-	<p>
-		When the causee is cross-referenced on the verb by a person index, the argument
-		reassignment is morphologically explicit. Where the first person is the intransitive
-		subject (<i lang="ain-Latn">ku=sinot</i> 'I play'), causativization realigns the same
-		participant as the object <i lang="ain-Latn">en=</i>:
-	</p>
-
-	<Ex
-		m="hapo en=sinot-te"
-		g="mother 1SG.O=play-CAUS"
-		tr="Mother made me play."
-		cite="nakagawa2024:431"
-		dial="HK"
-		place="Nakagawa ex. 955′"
-		note="The first-person argument shifts from the subjective index ku= to the objective en=, diagnosing the arity increase from vi to vt."
-	/>
-
-	<p>
-		On a transitive base, the productive causative yields a double-object verb (vd): the
-		original A becomes the O causee, the original O is retained as an inner object, and the
-		new causer is the derived A. The attested form
-		<i lang="ain-Latn">a=e=tuy-e-re</i> 'I made you cut (the grapevines)' —
-		<i lang="ain-Latn">tuy-e</i> 'cut' [vt] with <i lang="ain-Latn">-re</i> added —
-		carries two simultaneous person indexes and is cited by Bugaeva and Kobayashi as evidence
-		that causativization of transitives is both licensed and productive
-		<Ref k="bugaevakobayashi2022" p="521" />. Adding a second causative increases
-		arity by one again: an originally one-place base yields three arguments, while an
-		originally two-place base yields four. Bugaeva's four-argument
-		<i lang="ain-Latn">kor-e-re</i> 'cause to give' is a dictionary citation
-		<Ref k="bugaeva2014" p="142–143" />; Nakagawa provides a textual example with
-		<i lang="ain-Latn">omarere</i> 'cause someone to put X in Y'
-		<Ref k="nakagawa2024" p="135, ex. 34" />. Both the double-object frame and double causatives
-		are treated in <Xr ch="causee-marking-ditransitive-double-causative" />.
-	</p>
-</S>
-
-<S t="Productive vs. non-productive causatives" id="productivity">
-	<p>
-		Bugaeva classifies <i lang="ain-Latn">-V</i>, <i lang="ain-Latn">-ke</i>, and
-		<i lang="ain-Latn">-ka</i> as non-productive direct causatives. The productive
-		<i lang="ain-Latn">-re/-e/-te</i> derives both direct and indirect causatives
-		<Ref k="bugaeva2014" p="130, 134" />. The counts below describe her lexical
-		sample, assembled from dictionaries and other sources.
-	</p>
-
-	<details>
-		<summary>Published comparison: Bugaeva's causative sample (2014)</summary>
-		<p>
-			The paper reports a sample of 387 verbs. Its four category totals in Table 1 sum
-			to 348 (111 + 9 + 38 + 190). The figures below reproduce that table; the discrepancy
-			prevents an unambiguous whole-sample percentage calculation
-			<Ref k="bugaeva2014" p="127, 143, table 1" />.
-		</p>
-		<table>
-			<thead>
-				<tr>
-					<th>suffix</th>
-					<th>verbs in published sample</th>
-					<th>vi (including verb roots) / vt base</th>
-					<th>causation type</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><i lang="ain-Latn">-V</i></td>
-					<td>111</td>
-					<td>109 vi / 2 vt</td>
-					<td>direct (lexical)</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">-ke</i></td>
-					<td>9</td>
-					<td>9 vi / 0 vt</td>
-					<td>direct</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">-ka</i></td>
-					<td>38</td>
-					<td>33 vi / 5 vt</td>
-					<td>direct</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">-re</i> / <i lang="ain-Latn">-te</i> / <i lang="ain-Latn">-e</i></td>
-					<td>190</td>
-					<td>direct: 113 vi / 16 vt; indirect: 25 vi / 36 vt</td>
-					<td>direct (129) + indirect (61)</td>
-				</tr>
-			</tbody>
-		</table>
-	</details>
-
-	<p>
-		Attachment to a derived stem does not uniquely identify the productive suffix.
-		Kobayashi gives <i lang="ain-Latn">ar-us-tek-ka</i> 'annihilate' and
-		<i lang="ain-Latn">ipe-rusuy-ka</i> 'make hungry' as evidence that
-		<i lang="ain-Latn">-ka</i> can follow derived material. She distinguishes
-		<i lang="ain-Latn">-ka</i> and the productive causative from the more lexically
-		restricted forming suffixes <i lang="ain-Latn">-V</i> and
-		<i lang="ain-Latn">-ke</i> <Ref k="kobayashi2015" p="34–35" />.
-	</p>
-
-	<p>
-		Nakagawa separates the forming suffixes <i lang="ain-Latn">-V</i> and
-		<i lang="ain-Latn">-ke</i> as 形成接尾辞 ('forming suffixes') building lexical
-		transitivity pairs, distinct in status from the grammatical causative
-		<Ref k="nakagawa2024" p="198–203" />. Bugaeva's analysis subsumes even these under
-		'direct causative', treating the entire cluster as a valency-increasing operator set
-		with differing scopes <Ref k="bugaeva2014" p="129–130, 143" />;
-		<Ref k="bugaevakobayashi2022" p="§4.1.2" />. The classification of the forming suffixes
-		as lexical versus grammatical causatives is ‹contested›; the relevant forms are
-		developed in <Xr ch="transitivizer-ka-valency-pairs" />.
-	</p>
-</S>
-
-<S t="Direct and indirect causation; coercive and permissive use" id="direct-indirect">
-	<p>
-		When the base intransitive has an agentive subject, the productive causative yields an
-		indirect causative: the causee acts on its own in response to the causer's enabling,
-		permission, or direction. When the base is stative or non-agentive, the direct reading
-		predominates, with the causee as a highly affected non-volitional patient
-		<Ref k="bugaeva2014" p="130, 139" />. The non-productive suffixes are limited to the
-		direct reading; the productive suffix spans both.
-	</p>
-
-	<p>
-		An earlier analysis by Fukuda (Tamura) restricted the productive suffix to coercive
-		causation; Bugaeva corrects this, citing Satō 2008, and documents permissive readings
-		from corpus data <Ref k="bugaeva2014" p="139, 141–142" />. A verb of ingestion such as
-		<A w="e" gl="eat" /> → <i lang="ain-Latn">e-re</i> carries both coercive ('feed a
-		child') and permissive ('let an adult eat') readings contextually, following the
-		crosslinguistic pattern for ingestive verbs observed by Shibatani and Pardeshi (cited
-		in <Ref k="bugaeva2014" p="141–142" />). Satō 2008 lesson 30 presents the same
-		coercive/permissive ambiguity and derives it from the same form
-		<Ref k="sato2008" p="237" />. The following attested example shows the causative of
-		<A w="ipe" gl="eat a meal" /> — <i lang="ain-Latn">ipe-re</i> 'feed' — in a Saru
-		narrative with an indefinite-agent fourth-person prefix:
-	</p>
-
-	<Ex
-		m="un=ipe-re wa i=kore kur un=osura noyne sioran"
-		g="1PL.EXCL.O=eat-CAUS CONJ 4.O=give person 1PL.EXCL.O=abandon like seem"
-		tr="The person who had fed us then abandoned us, it seemed."
-		cite="ainukoraci1991"
-		dial="SAR"
-		place="Hamada Takashi, 'pon cape asiknep'; Ainu Times no. 24, p. 3 (ainu-times/024/3#3), extract"
-		note="un= is 1PL.EXCL object (us); ipe-re shows -re after the vowel-final stem ipe 'eat a meal'. The verb heads a relative clause (kur un=ipe-re 'the person who fed us'). sioran = siri + an, visual-evidential existential."
-	/>
-
-	<p>
-		Ijäs's Lesson 9 formulation that <i lang="ain-Latn">-re</i> "simply turns intransitive
-		verbs into transitive verbs" is a workable approximation for the basic indirect
-		causative; it omits the allomorphic detail, the permissive reading, the causativization
-		of transitives, and the direct-causative uses <Ref k="ijas2023" /> ‹consensus›.
-	</p>
-</S>
-
-<S t="Motion verbs and restrictions" id="motion-verbs">
-	<p>
-		A subset of singular motion verbs takes <i lang="ain-Latn">-ke</i>. Nakagawa
-		notes that, where both forms occur, <i lang="ain-Latn">-ke</i> is often used
-		with things, while the productive suffix is generally used with volitional beings.
-		His examples contrast luggage with a human causee in
-		<A w="ahun" gl="enter (SG)" /> <Ref k="nakagawa2024" p="202, exx. 196–197" />:
-	</p>
-
+<S t="The causee in a narrative clause" id="causee">
 	<Ex
 		m="a=teke uk hine i=ahun-te ruwe ne akus"
-		g="4.POSS=hand take CONJ 4.O=enter-CAUS track-POSS COP then"
-		tr="He took my hand and brought me inside."
+		g="4.POSS=hand take CONJ 4.O=enter.SG-CAUS EVID COP CONJ"
+		tr="Taking my hand, he brought me inside, and then …"
 		cite="nakagawa2024:202"
 		dial="SAR"
-		place="Nakagawa ex. 197"
-		note="ahun-te with a volitional human causee, cross-referenced by the logophoric 4th-person prefix i=. Contrast ahun-ke (Nakagawa ex. 196), used when the causee is non-volitional cargo. The -te allomorph follows the consonant-final stem ahun."
+		place="Example 197"
+		note="The narrator is the causee indexed by i=. Ruwe ne is the evidential expression in the source clause."
 	/>
-
 	<p>
-		Nakagawa's singular motion-verb list includes
-		<i lang="ain-Latn">ran-ke</i>, <i lang="ain-Latn">san-ke</i>,
-		<i lang="ain-Latn">asin-ke</i>, <i lang="ain-Latn">ahun-ke</i>, and
-		<i lang="ain-Latn">yan-ke</i>. For <A w="rikin" gl="go up (SG)" />, he
-		records <i lang="ain-Latn">rikin-ka</i> in Saru, Chitose, Horobetsu, and
-		Bihoro <Ref k="nakagawa2024" p="202, tables 42–43" />. Number alternation is
-		discussed in <Xr ch="transitivizer-ka-valency-pairs" s="reduplication" />.
-	</p>
-
-	<p>
-		One restriction spans all causative suffix types: zero-place meteorological verbs resist
-		any causativization, because there is no subject argument to reassign to the object
-		position. <i lang="ain-Latn">sir-pirka</i> 'the weather is good' has no causative
-		<i lang="ain-Latn">*sirpirka-re</i>
-		<Ref k="bugaeva2014" p="139" />; <Ref k="bugaevakobayashi2022" p="§4.1.2" />.
-		Among the non-productive suffixes, <i lang="ain-Latn">-ke</i> additionally requires a
-		one-argument base; the productive suffix and <i lang="ain-Latn">-ka</i> accept both
-		one- and two-argument bases <Ref k="bugaeva2014" p="139" />.
+		The narrator enters and is represented as the object of the causative. The third-person causer
+		has no overt person prefix. Nakagawa contrasts this with a luggage example using
+		<i lang="ain-Latn">ahun-ke</i>. He describes a tendency for
+		<i lang="ain-Latn">-ke</i> to occur with things and the productive causative with volitional
+		participants <Ref k="nakagawa2024" p="202, examples 196–197" />. This is a lexical and
+		constructional contrast, with stated tendencies rather than a complete animate–inanimate
+		partition.
 	</p>
 </S>
 
-<S t="Dialect variation, the -ka → -re/-te shift, and the Horobetsu switch-reference function" id="diachrony">
+<S t="Permission, coercion, and causal distance" id="meaning">
 	<p>
-		Bugaeva reports broader use of <i lang="ain-Latn">-ka</i> in northeastern
-		Hokkaido and Sakhalin than in southwestern Hokkaido, interpreting the comparison
-		as replacement by the productive suffix <Ref k="bugaeva2014" p="135–136, 144" />.
-		Nakagawa records lexical and dialect differences but does not regard
-		<i lang="ain-Latn">-ka</i> as characteristic of a particular region
-		<Ref k="nakagawa2024" p="202" />. The regional generalization is therefore
-		‹contested›. Within Saru, both <i lang="ain-Latn">nam-te</i> and
-		<i lang="ain-Latn">nam-ka</i> 'make cold' are recorded
-		<Ref k="kobayashi2015" p="34" />.
+		Satō gives both permissive and coercive readings of causatives. In his permissive example, a
+		parent lets a son go down to town because the son wants to go. His coercive example describes a
+		rough child making other children cry <Ref k="sato2008" p="237" />. Bugaeva likewise allows
+		contextual permission and coercion, contrasting this with an earlier coercive-only
+		characterization that she attributes to Fukuda/Tamura
+		<Ref k="bugaeva2014" p="139, 142" /> ‹contested›.
 	</p>
-
 	<p>
-		The boundary between causation and lexical transitivization depends on the analysis.
-		Satō discusses <i lang="ain-Latn">sanke</i> in a sentence about paying a fine,
-		and treats pairs such as <i lang="ain-Latn">kay-e</i> 'break' and
-		<i lang="ain-Latn">kay-pa</i> 'break (plural)' as cases of transitivization
-		<Ref k="sato2008" p="237–238" />. Bugaeva's classification includes lexical
-		transitivization within direct causation and assigns both direct and indirect
-		functions to the productive suffix <Ref k="bugaeva2014" p="129–130, 134" />
-		‹contested›.
+		Direct versus indirect causation concerns how the causing and caused events are related. Bugaeva
+		distinguishes this from permission versus coercion. With an ingestive verb such as “eat,” the
+		participant and event can favor a direct feeding interpretation or an indirect interpretation in
+		which someone is made or allowed to eat
+		<Ref k="bugaeva2014" p="141–142" />. Age or animacy alone does not turn those readings into a
+		permission–coercion contrast.
 	</p>
+</S>
 
+<S t="Productivity and the limits of a formation" id="productivity">
 	<p>
-		In the Horobetsu dialect, Takahashi documents an extension of the productive causative
-		suffix into a switch-reference function: in coordinated clauses it marks that the
-		subject of the following predicate differs from that of the preceding one (different
-		subject), while in subordinated clauses it marks same-subject continuity
-		<Ref k="takahashi2017" p="102–106" />. The attested Horobetsu forms —
-		<i lang="ain-Latn">é-re</i> 'make eat', <i lang="ain-Latn">kasuy-re</i> 'make help',
-		<i lang="ain-Latn">cis-te</i> 'make cry', <i lang="ain-Latn">wen-te</i> 'make bad' —
-		show the same allomorphic distribution as Saru and Chitose
-		<Ref k="takahashi2017" p="99–104" />. Whether the switch-reference function is an
-		independent grammaticalization or a secondary extension of the causative meaning is not
-		settled in the accessible sources; no equivalent use is documented for Saru or Chitose
-		‹contested›.
+		Bugaeva treats <i lang="ain-Latn">-re/-te/-e</i> as productive while excluding avalent weather
+		predicates from this suffixal derivation in her account
+		<Ref k="bugaeva2014" p="134, 144" />. The handbook more broadly describes such predicates as
+		generally resistant to valency alternations
+		<Ref k="bugaevakobayashi2022" p="§4.1.2" />. The restriction concerns the construction; it does
+		not state that weather can never be described as having a cause.
+	</p>
+	<p>
+		Accent supplies another morphological comparison. Bugaeva contrasts causative
+		<i lang="ain-Latn">kú-re</i> with rejected final stress in the same form, while a lexical vowel
+		formation such as <i lang="ain-Latn">mak-á</i> has a different pattern
+		<Ref k="bugaeva2014" p="131, 134" />. These published forms support her distinction between
+		productive suffixation and lexical formation, within the varieties she examines.
+	</p>
+</S>
+
+<S t="Transitive bases and a Horobetsu proposal" id="extensions">
+	<p>
+		Causativizing a transitive base can retain its original object alongside the causee. Some
+		derived causatives can themselves take further causative morphology
+		<Ref k="bugaeva2014" p="142–143" />;
+		<Ref k="nakagawa2024" p="135" />. The argument structure and interpretation of such forms are
+		treated in <Xr ch="causee-marking-ditransitive-double-causative" />.
+	</p>
+	<p>
+		In a study of Horobetsu epic texts, Takahashi proposes that causatives can also contribute to
+		tracking whether linked clauses share a subject. His proposal distinguishes coordinated and
+		subordinate contexts <Ref k="takahashi2017" p="§§4–5; 106" /> ‹speculative›. The introductory suffix
+		examples in that article come from Tamura's Saru description
+		<Ref k="takahashi2017" p="99" />. The clause-linkage proposal rests on the separate Horobetsu
+		textual material.
 	</p>
 </S>

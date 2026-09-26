@@ -1,600 +1,300 @@
 <script lang="ts">
-	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import { S, Ex, Ref, Xr } from '$lib/grammar/components';
 </script>
 
-<S t="The class of relational nouns" id="overview">
+<S t="Relational nouns and grammatical place" id="relational-nouns">
 	<p>
-		A small closed set of nouns in Hokkaido Ainu encodes the spatial or relational position of
-		one entity with respect to another. These nouns — <A w="or" gl="place/locus" />,
-		<A w="ka" gl="top/surface" />, <A w="sam" gl="side" />, <A w="tum" gl="interior" />,
-		<A w="corpok" gl="underside" />, and others catalogued below — are called
-		<em>locative nouns</em> (位置名詞) in the Japanese-medium descriptive tradition
-		<Ref k="nakagawa2024" p="241, 280, 296–299" />; <Ref k="sato2021" />;
-		<Ref k="nakagawa2022pos" p="478–480" />.
+		Locative or relational nouns describe a position with respect to a reference point: a top, side,
+		interior, or direction. They combine with place particles and have forms whose distribution
+		differs from ordinary possessive nouns
+		<Ref k="nakagawa2024" p="239–241" />;
+		<Ref k="nakagawa2022pos" p="§5" />. Their reference point can be an object, a person, or a
+		location; it need not be an owner.
 	</p>
+	<Ex
+		m="umma ka wa ran"
+		g="horse above ABL descend.SG"
+		tr="Someone gets down from a horse."
+		cite="nakagawa2024:239, example 277"
+		dial="CHI"
+		note="The subject is unexpressed. The horse supplies the reference point for ka."
+	/>
 	<p>
-		Three distributional properties define the class. First, the members are
-		<em>obligatorily possessed</em>: a relational noun cannot head a free-standing noun
-		phrase in isolation; it must either be preceded by a noun phrase whose referent supplies
-		the reference object, or it must carry a personal prefix directly to express whose
-		spatial domain is at stake (§7 below; see <Xr ch="alienable-inalienable-split" />).
-		Second, Hokkaido Ainu case particles require a place-designating noun (〈場所〉)
-		immediately before them <Ref k="sato2008" p="34–35" />; <Ref k="nakagawa2024" p="296" />;
-		relational nouns are the main device for building that slot from an ordinary common
-		noun. The canonical pattern is <i lang="ain-Latn">cise or ta</i> 'at the house'
-		(lit. house + place-of + at), and its extension to the other case particles
-		(<i lang="ain-Latn">or un</i>, <i lang="ain-Latn">or wa</i>,
-		<i lang="ain-Latn">or peka</i>) constitutes the primary locative-case system, treated in
-		<Xr ch="postpositions-local-case-and-motion-events" />. Third, a relational noun
-		appears in its <Xr ch="concept-form-affiliative-form">possessed (affiliative) form</Xr>
-		when combined with a host noun: <i lang="ain-Latn">or</i> → <i lang="ain-Latn">oro</i>,
-		<i lang="ain-Latn">ka</i> → <i lang="ain-Latn">kasi</i> (§3). Whether the class
-		is best analysed as a set of inalienably-possessed nouns or as a set of postpositions
-		inflected for possession is the central analytical question of the chapter (§8).
+		Nakagawa calls these expressions grammatical places because they can take place particles
+		directly. An ordinary noun such as
+		<i lang="ain-Latn">nupuri</i> “mountain” normally needs a relational noun in the corresponding
+		place expression, whereas
+		<i lang="ain-Latn">kim</i> “inland/mountains” already has place status
+		<Ref k="nakagawa2024" p="246–247" />. The relevant contrast is grammatical, even when both
+		expressions refer to familiar locations.
 	</p>
 </S>
 
-<S t="Inventory and semantics" id="inventory">
+<S t="Two classes and their independence" id="locative-classes">
 	<p>
-		The table below lists the core members with their concept form, possessed (long)
-		form, spatial meaning, and a representative construction. Possessed forms follow the
-		locative-noun long-form system — the lexically specified suffixes
-		<i lang="ain-Latn">-ke</i>, <i lang="ain-Latn">-V</i>, and <i lang="ain-Latn">-si</i>
-		(§ below) — rather than the common-noun affiliative pattern
-		<Ref k="nakagawa2024" p="226, 241–246" />. Nakagawa gives the long forms of
-		<i lang="ain-Latn">or</i>, <i lang="ain-Latn">ka</i>, <i lang="ain-Latn">enka</i>,
-		<i lang="ain-Latn">sam</i>, <i lang="ain-Latn">tum</i>, and
-		<i lang="ain-Latn">corpok</i> directly; <i lang="ain-Latn">samake</i> and the
-		contracted <i lang="ain-Latn">tumke</i> are also frequent in corpus text
-		‹corpus-confirmed›. The forms given for <i lang="ain-Latn">os</i>,
-		<i lang="ain-Latn">pok</i>, and <i lang="ain-Latn">kotor</i> are not directly
-		verified in the sources consulted ‹speculative›.
-		<Ref k="nakagawa2024" p="241, 296–299" />; <Ref k="tamura1996" p="s.v. or, ka, sam, tum, corpok, soy, kotor" />;
-		<Ref k="sato2021" />
+		Nakagawa distinguishes two classes. In the first, a basic form needs an immediately preceding
+		reference-point phrase or a person prefix. Its long form can instead recover the reference point
+		from context. His comparison uses basic <i lang="ain-Latn">ka</i> after “horse” and long
+		<i lang="ain-Latn">kasi</i> referring back to a dish mentioned earlier
+		<Ref k="nakagawa2024" p="239–241" />.
 	</p>
+	<p>
+		The second class can stand independently even in its basic form. It includes
+		<i lang="ain-Latn">soy</i> “outside,” <i lang="ain-Latn">aw</i>
+		“inside,” <i lang="ain-Latn">kim</i> “inland,”
+		<i lang="ain-Latn">pis</i> “toward the shore,”
+		<i lang="ain-Latn">rep</i> “offshore,” and
+		<i lang="ain-Latn">ya</i> “shore/land,” among others
+		<Ref k="nakagawa2024" p="245–246, table 53" />.
+	</p>
+	<Ex
+		m="sineanpeta kim ta arpa=an akusu"
+		g="one.day inland LOC go.SG=4.S CONJ"
+		tr="One day, when I went into the mountains…"
+		cite="nakagawa2024:246, example 300"
+		dial="CHI"
+	/>
+	<p>
+		Some authors classify members of this second group as ordinary nouns. Nakagawa includes them
+		among locative nouns because of their long-form morphology and their place syntax
+		<Ref k="nakagawa2024" p="246" /> ‹contested›.
+	</p>
+</S>
 
+<S t="Person marking identifies the reference point" id="person-marking">
+	<p>
+		Locative nouns use the O series of person markers. Satō's Chitose paradigm gives the following
+		forms; his inclusive label corresponds to the fourth-person series used here <Ref
+			k="sato2008"
+			p="160"
+		/>;
+		<Ref k="nakagawa2022pos" p="§5.2, table 5" />.
+	</p>
 	<table>
-		<thead>
-			<tr>
-				<th>concept form</th>
-				<th>possessed / long form</th>
-				<th>spatial relation</th>
-				<th>canonical construction</th>
-			</tr>
-		</thead>
+		<thead><tr><th>Reference point</th><th>Marker</th></tr></thead>
 		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">or</i></td>
-				<td><i lang="ain-Latn">oro</i>; <i lang="ain-Latn">orke(he)</i></td>
-				<td>'place/locus of X'</td>
-				<td>
-					<i lang="ain-Latn">cise or ta</i> → <i lang="ain-Latn">cise otta</i>
-					(fused); <i lang="ain-Latn">cise oro ta</i> (long, unfused)
-				</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">ka</i></td>
-				<td><i lang="ain-Latn">kasi(ke)(he)</i>; contracted <i lang="ain-Latn">kaske</i></td>
-				<td>'top/surface of X, above X'</td>
-				<td>
-					<i lang="ain-Latn">ni ka ta</i> 'on/onto the tree';
-					<i lang="ain-Latn">cikuni kasi un</i> 'toward the treetop'
-				</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">enka</i></td>
-				<td><i lang="ain-Latn">enkasi(ke)(he)</i></td>
-				<td>'above X, over X' (vertical distance)</td>
-				<td><i lang="ain-Latn">nupuri enka ta</i> 'above the mountain'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">sam</i></td>
-				<td><i lang="ain-Latn">samake(he)</i></td>
-				<td>'side of X, beside X'</td>
-				<td>
-					<i lang="ain-Latn">cise sam ta</i> 'beside the house';
-					<i lang="ain-Latn">e=samake ta</i> 'beside you'
-				</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">tum</i></td>
-				<td>
-					<i lang="ain-Latn">tumuke(he)</i>; contracted
-					<i lang="ain-Latn">tumke</i> ‹corpus-confirmed›
-				</td>
-				<td>'interior of X, amid X'</td>
-				<td>
-					<i lang="ain-Latn">utar tum ta</i> 'among the people';
-					<i lang="ain-Latn">aynu tumke wa</i> 'from among the Ainu'
-				</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">corpok</i></td>
-				<td><i lang="ain-Latn">corpok(i)ke(he)</i></td>
-				<td>'underside of X, below/beneath X'</td>
-				<td><i lang="ain-Latn">cise corpok ta</i> 'below the house'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">pok</i></td>
-				<td><i lang="ain-Latn">poki</i> ‹speculative›</td>
-				<td>'bottom/underside of X'</td>
-				<td><i lang="ain-Latn">sehpok ta</i> 'beneath the bed'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">etok</i></td>
-				<td><i lang="ain-Latn">etoko(ho)</i></td>
-				<td>'front/ahead of X'</td>
-				<td><i lang="ain-Latn">cise etok ta</i> 'in front of the house'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">os</i></td>
-				<td><i lang="ain-Latn">osi</i> ‹speculative›</td>
-				<td>'rear/behind X, after X'</td>
-				<td><i lang="ain-Latn">cise os ta</i> 'behind the house'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">kotor</i></td>
-				<td><i lang="ain-Latn">kotoro</i> ‹speculative›</td>
-				<td>'face/surface of X (vertical)'</td>
-				<td>
-					<i lang="ain-Latn">tek kotor</i> 'palm of the hand'
-					(<i lang="ain-Latn">tek</i> + <i lang="ain-Latn">kotor</i>)
-				</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">soy</i></td>
-				<td>— (Type-2: the basic form stands alone)</td>
-				<td>'exterior/outside of X'</td>
-				<td><i lang="ain-Latn">cise soy ta</i> 'outside the house'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">so</i></td>
-				<td>— ‹speculative›</td>
-				<td>'upper back/rear of X'</td>
-				<td><i lang="ain-Latn">iwor so ka</i> 'over the top of the hunting ground'</td>
-			</tr>
+			<tr><td>First singular</td><td lang="ain-Latn">en=</td></tr>
+			<tr><td>First plural exclusive</td><td lang="ain-Latn">un=</td></tr>
+			<tr><td>Second singular</td><td lang="ain-Latn">e=</td></tr>
+			<tr><td>Second plural</td><td lang="ain-Latn">eci=</td></tr>
+			<tr><td>Fourth person</td><td lang="ain-Latn">i=</td></tr>
+			<tr><td>Third person</td><td>Zero</td></tr>
 		</tbody>
 	</table>
-
-	<p>
-		A few entries call for comment. The pair <i lang="ain-Latn">ka</i> / <i lang="ain-Latn">enka</i>
-		are often treated as co-members of the 'above' domain: <i lang="ain-Latn">ka</i> encodes
-		contact or near-contact with a supporting surface ('on top of, resting on'), while
-		<i lang="ain-Latn">enka</i> encodes vertical distance above without contact ('over, above').
-		The pair <i lang="ain-Latn">corpok</i> / <i lang="ain-Latn">pok</i> occupies a similar
-		near-duplicate slot in the 'below' domain; the distributional boundary between them is
-		not settled by the sources consulted ‹contested›. The noun <i lang="ain-Latn">kotor</i>
-		appears reliably as a component of the compound
-		<i lang="ain-Latn">tekkotor</i> 'palm of the hand' (lit. hand + surface)
-		<Ref k="nakagawa2024" p="250" />, and the pattern suggests a class of vertical-surface
-		spatial nouns; but its use as a free relational noun head (i.e.
-		<i lang="ain-Latn">X kotor ta</i> 'at the face of X') is less thoroughly documented
-		in the sources consulted. The noun <i lang="ain-Latn">so</i> appears in corpus narrative in the
-		construction <i lang="ain-Latn">iwor so ka</i> 'over the top of the hunting ground',
-		where <i lang="ain-Latn">so</i> (upper back area) combines with <i lang="ain-Latn">ka</i>
-		(top) — a stacking of two relational nouns into a single locative expression (see §4
-		below). Its standalone affiliative form has not been identified in the sources consulted.
-	</p>
-
-	<p>
-		Two relational nouns — <i lang="ain-Latn">or</i> and <i lang="ain-Latn">os</i> — also
-		appear in Nakagawa's catalogue of postpositional adverbs (後置副詞), the autonomous adverb
-		class that does not require a 〈場所〉 host
-		<Ref k="nakagawa2024" p="280–282" />; <Ref k="sato2008" p="34–36" />. This dual
-		membership is a structural fact at the heart of the noun-vs-adposition debate in §8.
-	</p>
-</S>
-
-<S t="The long-form suffixes -ke, -V, and -si" id="long-forms">
-	<p>
-		The possessed forms in the table are built with a small suffix set —
-		<i lang="ain-Latn">-ke</i>, an echo or fixed vowel (<i lang="ain-Latn">-V</i>), and
-		<i lang="ain-Latn">-si</i> — that is lexically specified per noun: Nakagawa's
-		<em>long form</em> (長形) of the locative noun
-		<Ref k="nakagawa2024" p="241–246" />. The system is separate from the common-noun
-		affiliative suffixes, and Nakagawa hypothesises that one layer of common-noun
-		possessive morphology was borrowed from it <Ref k="nakagawa2024" p="226, 247" />
-		‹speculative›. <i lang="ain-Latn">-ke</i> is the most frequent member, and several
-		nouns combine two layers: <i lang="ain-Latn">kasi</i>
-		(<i lang="ain-Latn">ka</i> + <i lang="ain-Latn">-si</i>) is further extendable to
-		<i lang="ain-Latn">kasike(he)</i>.
-	</p>
-	<p>
-		Consonant-final bases insert an echo vowel before <i lang="ain-Latn">-ke</i>:
-		<i lang="ain-Latn">sam-a-ke</i>, <i lang="ain-Latn">tum-u-ke</i>. The contracted
-		shapes without the echo vowel are frequent in text —
-		<i lang="ain-Latn">tumke</i> is much commoner in the corpus than
-		<i lang="ain-Latn">tumuke</i> (<i lang="ain-Latn">aynu tumke wa</i> 'from among
-		the Ainu', <i lang="ain-Latn">amam tumke ta</i> 'among the grain'), and
-		<i lang="ain-Latn">kaske</i> stands beside <i lang="ain-Latn">kasike</i>
-		‹corpus-confirmed›.
-	</p>
-	<p>
-		Three grammatical properties ride on the long form
-		<Ref k="nakagawa2024" p="241–246" />. It can head a noun phrase alone, which the
-		Type-1 basic form cannot; it is the form that carries the objective person prefixes
-		(<i lang="ain-Latn">e=samake ta</i> 'beside you'); and it accepts the further
-		possessive extension <i lang="ain-Latn">-he</i>
-		(<i lang="ain-Latn">samakehe</i>). In running text the long form appears almost
-		always in the layered locative frame, followed by a case particle:
-		<i lang="ain-Latn">X samake ta</i>, <i lang="ain-Latn">X tumke ta/wa</i>, and
-		temporal <i lang="ain-Latn">okake ta</i> 'after that, afterwards', a high-frequency
-		narrative connective ‹corpus-confirmed›.
-	</p>
-
 	<Ex
-		m="e=samake ta an"
-		g="2SG.O=beside LOC exist"
-		tr="It is beside you."
-		cite="kanazawa1898"
-		dial="SAR" />
-
-	<p>
-		This locational <i lang="ain-Latn">-ke</i> is homophonous with two verbal suffixes —
-		the anticausative <i lang="ain-Latn">-ke</i> and the transitivizing
-		<i lang="ain-Latn">-ke</i> of the lexical valency pairs
-		(<Xr ch="transitivizer-ka-valency-pairs" />) — but distinct from both: it attaches
-		only to the closed locative-noun class and yields a noun, never a verb.
-	</p>
-	<p>
-		The string <i lang="ain-Latn">orke</i> carries two readings that have to be sorted
-		contextually, and Tamura's Saru dictionary documents both
-		<Ref k="tamura1996" p="s.v. arikikpa, cikuni, cikosomokur koyaykatanu" />. In
-		<i lang="ain-Latn">suptom orke</i> 'the place around the middle of the trunk' and
-		<i lang="ain-Latn">utar orkehe</i> it is the ordinary long form of
-		<i lang="ain-Latn">or</i>, the same locative formation described above — the
-		<i lang="ain-Latn">-he</i> extension in the second confirms the analysis. In the
-		paired frame <i lang="ain-Latn">N orke … N orke</i> the same string reads additively:
-		<i lang="ain-Latn">anun orke apa orke nep uwehosi arikikpa</i> 'outsiders and kin
-		alike, all of them vie with each other in working hard'. Corpus tokens divide the
-		same way — <i lang="ain-Latn">tu kewtum orke re kewtum orke</i> 'in two hearts, in
-		three hearts' keeps the locative sense under the numerals ‹corpus-confirmed›.
-	</p>
-</S>
-
-<S t="Obligatory possession and affiliative forms" id="affiliation">
-	<p>
-		Relational nouns belong to the inalienable (obligatorily-possessed) noun class,
-		alongside body parts, kinship terms, and part–whole relational stems. Like those classes,
-		they cannot appear as a syntactic head without an expressed or inferable possessor
-		<Ref k="nakagawa2024" p="241" />. The morphology of this possession is the
-		<Xr ch="concept-form-affiliative-form">affiliative (所属形)</Xr>: in the construction
-		[NOUN + relational-noun + case-particle], the relational noun takes its possessed form.
-		The phonological mechanism that produces <i lang="ain-Latn">or</i> →
-		<i lang="ain-Latn">oro</i>, <i lang="ain-Latn">ka</i> → <i lang="ain-Latn">kasi</i>,
-		<i lang="ain-Latn">sam</i> → <i lang="ain-Latn">sami</i>, and so on, is the
-		echo-vowel or suffix-vowel process described in
-		<Xr ch="affiliative-suffix-morphophonology" />.
-	</p>
-	<p>
-		A diagnostically important minimal pair is provided by
-		<i lang="ain-Latn">ni ka ta</i> 'onto/on top of the tree' and
-		<i lang="ain-Latn">cikuni kasi un</i> 'toward the treetop'
-		<Ref k="nakagawa2024" p="298–299" />. The first uses the concept (bare) form
-		<i lang="ain-Latn">ka</i> before the locative particle <i lang="ain-Latn">ta</i>;
-		the second uses the affiliative <i lang="ain-Latn">kasi</i> before the allative
-		<i lang="ain-Latn">un</i>. The distribution of concept vs affiliative form before
-		different case particles for this noun parallels what Satō
-		<Ref k="sato2021" /> documents for <i lang="ain-Latn">or</i> in Chitose: both forms
-		are grammatical with a following locative noun, but the short-form fusion
-		(<i lang="ain-Latn">or</i> + <i lang="ain-Latn">ta</i> →
-		<i lang="ain-Latn">otta</i>) is the unmarked spoken realization, while
-		<i lang="ain-Latn">oro ta</i> appears in more deliberate or expanded styles
-		<Ref k="nakagawa2024" p="297" /> ‹corpus-suggested›.
-	</p>
-	<p>
-		A community discussion on <i lang="ain-Latn">samampa</i> (nukopoli,
-		<Ref k="aynucorporadiscord" /> 2024-11-26) analyses it as
-		<i lang="ain-Latn">sam-am-pa</i> 'lying on the side' — identifying
-		<i lang="ain-Latn">sam</i> 'side' as a productive base entering compound verb
-		formation — and proposes that <i lang="ain-Latn">samama</i>
-		'to place sideways' = <i lang="ain-Latn">sam-ama</i> (Kayano's Saru dictionary) ‹speculative›.
-		This use of <i lang="ain-Latn">sam</i> as an incorporated nominal base in complex
-		verbs is a point of intersection with the noun-incorporation system (see
-		<Xr ch="noun-incorporation-object" />).
-	</p>
-</S>
-
-<S t="The layered locative construction" id="layering">
-	<p>
-		The canonical locative construction in Hokkaido Ainu is a three-member sequence:
-		a reference-object noun phrase, followed by a relational noun in its affiliative or
-		concept form, followed by a case particle. Nakagawa labels the middle position the
-		〈場所〉 'place' slot — a morphosyntactic position that the locative, allative, ablative,
-		and perlative particles all require <Ref k="nakagawa2024" p="296" />;
-		<Ref k="sato2008" p="34" />. Relational nouns are the primary filler of that slot for
-		ordinary common nouns.
-	</p>
-
-	<Ex
-		m="orwano ku=cise or ta ku=an kor"
-		g="then 1SG.POSS=house place LOC 1SG.S=exist while"
-		tr="Then, while I was in my house, …"
-		cite="nakagawa2024:166"
-		dial="ISH"
-		place="after Sunazawa Kura 1983: 75; Nakagawa ex. 104"
-		note="The relational noun or follows the host noun cise 'house'; the possessor ku= marks the host noun, not or itself. The case particle ta attaches to or in the 〈場所〉 slot."
-	/>
-
-	<Ex
-		m="ne kenas or peka ekimne=an kor"
-		g="DEM forest place PERL hunt=4.S while"
-		tr="while going through that forest to hunt"
-		cite="ilcaa1976"
-		dial="SAR"
-		place="Kawagami Matsuko, AA-ken Ainu materials, uwepeker 民話7, doc. aa-irc/005, line 140"
-		note="or peka 'through the area of' uses the perlative particle; the fused otta form only arises with ta, not with peka or un."
-	/>
-
-	<Ex
-		m="atuy or un cip ani paye=an"
-		g="sea place ALLAT boat INS go=4.S"
-		tr="going to the sea by boat"
-		cite="biratori1969"
-		dial="SAR"
-		place="Hiraga Sadamo, 'Urayushiunkur', Biratori Ainu oral literature, doc. biratori/010/003, line 124"
-		note="or un 'to the place of (i.e. toward) the sea'; the instrumental postpositional adverb ani follows. The full clause is orowano atuy or un cip ani paye=an ranke p ne."
-	/>
-
-	<p>
-		The particle-specific fusion of <i lang="ain-Latn">or</i> merits particular attention.
-		When <i lang="ain-Latn">or</i> immediately precedes the locative particle
-		<i lang="ain-Latn">ta</i>, the sequence contracts to <i lang="ain-Latn">otta</i>:
-		<i lang="ain-Latn">cise otta</i> 'at the house', <i lang="ain-Latn">nupuri otta</i>
-		'at/on the mountain'. The long form <i lang="ain-Latn">oro ta</i> remains uncontracted
-		<Ref k="nakagawa2024" p="297" />. This fusion does not apply to
-		<i lang="ain-Latn">or un</i>, <i lang="ain-Latn">or wa</i>, or
-		<i lang="ain-Latn">or peka</i>; those remain uncontracted in all varieties.
-	</p>
-	<p>
-		The construction extends straightforwardly to other relational nouns. The same
-		case-particle set attaches to <i lang="ain-Latn">ka</i>, <i lang="ain-Latn">sam</i>,
-		<i lang="ain-Latn">soy</i>, and the other members of the inventory:
-	</p>
-
-	<Ex
-		m="ni ka ta hemesu=an"
-		g="tree top LOC climb=4.S"
-		tr="climbed onto the tree"
-		cite="nakagawa2024:298"
-		dial="SAR"
-		note="Nakagawa ex. 419. ka ta 'on top of / onto' marks the locative goal on the tree. Contrast cikuni kasi un 'toward the treetop' (allative) in the immediately following example (Nakagawa 2024: 299), where the affiliative kasi appears before the allative particle un."
-	/>
-
-	<Ex
-		m="cip pet ka ta an"
-		g="boat river top LOC exist"
-		tr="The boat is on the river."
-		cite="sato2008:37"
+		m="en=sam un"
+		g="1SG.O=side ALLAT"
+		tr="to my side"
+		cite="nakagawa2024:241, example 281"
 		dial="CHI"
-		note="Satō 第5課 (Chitose). pet ka ta 'on (the surface of) the river'; ka here profiles contact with the water surface."
+		note="Place-phrase excerpt from the sentence about moving to the speaker's side."
 	/>
+	<p>
+		Both basic and long forms can occur with person marking, but the available combinations are
+		lexically restricted. Satō gives Chitose
+		<i lang="ain-Latn">en-sam</i> and <i lang="ain-Latn">en-or</i>, rejecting
+		<i lang="ain-Latn">*en-sama</i>
+		and
+		<i lang="ain-Latn">*en-oro</i>. With “front,” he permits both
+		<i lang="ain-Latn">en-etok ta</i> and
+		<i lang="ain-Latn">en-etoko ta</i>
+		<Ref k="sato2008" p="165" />. The general marker series should therefore be kept separate from
+		each noun's permitted word forms.
+	</p>
+	<p>
+		Person-marked examples from Nakagawa's second class are fewer. He records
+		<i lang="ain-Latn">i=soyke</i>, <i lang="ain-Latn">i=piske</i>, and
+		<i lang="ain-Latn">i=rorkehe</i>, while treating wider availability cautiously <Ref
+			k="nakagawa2024"
+			p="246, examples 302–304"
+		/>.
+	</p>
+</S>
 
+<S t="Basic and long forms" id="long-forms">
+	<p>
+		Nakagawa uses “basic” and “long” because the forms differ from the concept and affiliative forms
+		of ordinary nouns in both morphology and syntax. Satō uses affiliative terminology in his
+		treatment
+		<Ref k="nakagawa2024" p="239–240" />;
+		<Ref k="sato2008" p="160–165" />. Selected documented forms illustrate the range <Ref
+			k="nakagawa2024"
+			p="241–245, 247–249"
+		/>:
+	</p>
+	<table>
+		<thead><tr><th>Class</th><th>Basic</th><th>Selected long forms</th></tr></thead>
+		<tbody>
+			<tr><td>1</td><td lang="ain-Latn">ka</td><td lang="ain-Latn">kasi, kasike, kasikehe</td></tr>
+			<tr><td>1</td><td lang="ain-Latn">etok</td><td lang="ain-Latn">etoko, etokoho</td></tr>
+			<tr><td>1</td><td lang="ain-Latn">kotca</td><td lang="ain-Latn">kotcake, kotcakehe</td></tr>
+			<tr><td>1</td><td lang="ain-Latn">sam</td><td lang="ain-Latn">sama, samake, samakehe</td></tr>
+			<tr><td>1</td><td lang="ain-Latn">or</td><td lang="ain-Latn">oro, orke, orkehe</td></tr>
+			<tr
+				><td>1</td><td lang="ain-Latn">tum</td><td lang="ain-Latn">tumu, tumke, tumuke, tumukehe</td
+				></tr
+			>
+			<tr><td>2</td><td lang="ain-Latn">soy</td><td lang="ain-Latn">soyke, soykehe</td></tr>
+			<tr><td>2</td><td lang="ain-Latn">kim</td><td lang="ain-Latn">kimke, kimkehe</td></tr>
+			<tr><td>2</td><td lang="ain-Latn">wor</td><td lang="ain-Latn">worke</td></tr>
+		</tbody>
+	</table>
+	<p>
+		The endings include vowel extensions, <i lang="ain-Latn">-si</i>,
+		<i lang="ain-Latn">-ke</i>, and further long-form extensions.
+		<i lang="ain-Latn">-Ke</i> may attach directly to a basic form or to an already extended form.
+		The patterns are lexical: the Handbook account, for example, excludes the
+		<i lang="ain-Latn">-ke</i>
+		series for
+		<i lang="ain-Latn">etok</i>
+		<Ref k="nakagawa2022pos" p="§§5.1, 5.3.1" />. The suffix also occurs beyond locative nouns, as
+		in
+		<i lang="ain-Latn">hike</i> and <i lang="ain-Latn">aktonoke</i>
+		<Ref k="nakagawa2022pos" p="§5.1" />.
+	</p>
+</S>
+
+<S t="Spatial contrasts within the class" id="spatial-meanings">
+	<p>
+		Several English spatial labels conceal distinctions made by the Ainu forms. Nakagawa
+		distinguishes <i lang="ain-Latn">ka</i>, above in contact, from <i lang="ain-Latn">enka</i>,
+		above with separation, and
+		<i lang="ain-Latn">kurka</i>, an extended upper surface
+		<Ref k="nakagawa2024" p="242–243" />.
+	</p>
+	<p>
+		For front and back, <i lang="ain-Latn">etok</i> and
+		<i lang="ain-Latn">oka</i> orient a moving entity, a line, or time;
+		<i lang="ain-Latn">kotca</i> and <i lang="ain-Latn">osmak</i>
+		describe the front and back of something stationary. For interiors,
+		<i lang="ain-Latn">onnay</i> denotes a hollow space and
+		<i lang="ain-Latn">tum</i> a homogeneous interior.
+		<i lang="ain-Latn">Oske</i> covers both in the described distribution, with regional differences
+		in the use of these words
+		<Ref k="nakagawa2024" p="243–245" />.
+	</p>
+	<p>
+		The basic forms therefore contribute spatial structure before a following particle specifies
+		location, source, or direction. See
+		<Xr ch="postpositions-local-case-and-motion-events" />.
+	</p>
+</S>
+
+<S t="Or ta, otta, and dialect-specific independence" id="or-ta">
+	<p>
+		The sequence <i lang="ain-Latn">or ta</i> can undergo the sound alternation represented as
+		<i lang="ain-Latn">otta</i>. Nakagawa also reports an independent <i lang="ain-Latn">otta</i> in
+		Shizunai and Tokachi, where the reference point occurs earlier in the discourse. In the
+		corresponding Saru and Chitose environment he requires long-form
+		<i lang="ain-Latn">oro ta</i>
+		<Ref k="nakagawa2024" p="240, 297" />.
+	</p>
+	<p>
+		He analyzes the independent combinations as lexicalized postposed adverbs, rather than treating
+		the behavior as a property of every basic locative noun
+		<Ref k="nakagawa2024" p="240" /> ‹contested›. Pronunciation, spelling, and syntactic independence
+		are separate questions in this comparison; a written space alone cannot settle them.
+	</p>
+</S>
+
+<S t="Satō's quasi-incorporation analysis" id="quasi-incorporation">
+	<p>
+		The O-series marking on locative nouns raises a grammatical question: why does a reference point
+		receive the same person form as a transitive object? Satō connects it to the noun–verb pattern
+		he calls
+		<em>quasi-incorporation</em>, distinguishing a morphological word from a lexical word <Ref
+			k="sato2021"
+			p="89–94"
+		/>. The latter is a conventional unit of meaning that can retain the morphological structure of
+		a phrase.
+	</p>
+	<p>
+		The verbal pattern is also described by Tamura as
+		<span lang="ja">連他動詞</span>, a two-word verbal phrase functioning as a unit. Her account
+		places O-series marking on the noun and A-series marking on the verb <Ref
+			k="tamura1997"
+			p="15, §C.4"
+		/>. Satō's Chitose example makes that division visible:
+	</p>
 	<Ex
-		m="nean cise soy ta paye=as ki na"
-		g="DEM house outside LOC go=1PL.EXCL.S do FIN"
-		tr="went outside that house"
-		cite="nakagawa2024:285"
-		dial="ISH"
-		place="via Ōtsuka 1990: 27; Nakagawa ex. 383, Ishikari"
-		note="cise soy ta 'at the outside of the house'. The form =as is the first-person-plural-exclusive intransitive suffix; the Japanese source gloss uses singular first person, reflecting the narrative first-person reading that Ishikari shares with the fourth-person narrative use of Saru (see person-marking-architecture)."
+		m="en=par a=oyki"
+		g="1SG.O=mouth 4.A=care.for"
+		tr="People support me."
+		cite="sato2021:90, example 21"
+		dial="CHI"
+		note="Person boundaries are written with equals signs here; the source uses hyphens. The noun and verb remain separate words. The A marker has an impersonal reading."
 	/>
-
 	<p>
-		Two relational nouns may stack in sequence when the spatial description requires
-		a two-step reference: an outer reference object, then a spatial noun within it,
-		then a second spatial noun closer to the target. The corpus yields
-		<i lang="ain-Latn">iwor so ka a=ehóyupu wa</i> 'flew over the top of the hunting
-		ground's upper part' (lit. hunting-ground + upper-back + top + 4.A=fly.around + CONJ)
-		<Ref k="ilcaa1976" />, where <i lang="ain-Latn">so</i> 'upper-back area'
-		specifies the subregion of <i lang="ain-Latn">iwor</i> 'hunting ground',
-		and <i lang="ain-Latn">ka</i> then positions the protagonist above that subregion
-		(<Ref k="ilcaa1976" paren />, Kawagami Matsuko, uwepeker 民話8, aa-irc/006 line 52).
-		Such stacking is consistent with the head-initial, modifier-following structure of
-		Ainu nominal possession ‹corpus-suggested›.
+		Ordinary “my mouth” is <i lang="ain-Latn">ku-paro</i>, with possessive A-series marking and the
+		affiliative noun. In
+		<i lang="ain-Latn">en-par a-oyki</i>, basic
+		<i lang="ain-Latn">par</i> combines with O-series
+		<i lang="ain-Latn">en-</i>. Satō analyzes the possessor as promoted to the object of the whole
+		lexical unit “support.” Morphologically, the expression remains two words. With derivational
+		reflexive
+		<i lang="ain-Latn">yay-</i>, his
+		<i lang="ain-Latn">yay-par-oyki</i> is instead a single morphological word <Ref
+			k="sato2021"
+			p="90–94"
+		/>.
+	</p>
+	<p>
+		Satō proposes a parallel analysis of <i lang="ain-Latn">or ta</i>. In
+		<i lang="ain-Latn">en-or ta</i>
+		“at my place,” the reference point receives O-series marking because it is treated as an object
+		of the lexical unit; the locative noun retains basic
+		<i lang="ain-Latn">or</i>. The noun and case particle nevertheless form a morphological phrase.
+		This extension of quasi-incorporation is a hypothesis about their combined structure
+		<Ref k="sato2021" p="91–94" /> ‹speculative›.
+	</p>
+	<p>
+		For <i lang="ain-Latn">cise or ta</i> “at the house,” Satō further proposes incorporation of
+		<i lang="ain-Latn">cise</i>
+		into the locative unit. His preferred analysis is represented as
+		<i lang="ain-Latn">cise-or ta</i>, but he also considers other segmentations. Specific phrases
+		such as “this hole” before
+		<i lang="ain-Latn">or</i> complicate an ordinary incorporation analysis <Ref
+			k="sato2021"
+			p="94–95, note 22"
+		/> ‹speculative›.
 	</p>
 </S>
 
-<S t="The central role of or" id="or-drift">
+<S t="Or, oro, and the limits of the proposal" id="or-oro-alternation">
 	<p>
-		Among the relational nouns, <i lang="ain-Latn">or</i> occupies a singular position:
-		its meaning has bleached to the point where it functions as a general locative
-		placeholder for any noun requiring the 〈場所〉 slot, not just for entities that
-		constitute physical places. Satō's dedicated Chitose study
-		<Ref k="sato2021" /> traces the drift of <i lang="ain-Latn">or</i> from a concrete
-		relational noun 'the place of X' toward a grammaticalizing locative morpheme that
-		renders any nominal as a place-designating argument.
+		An ordinary animate reference point favors affiliative
+		<i lang="ain-Latn">oro</i> in Satō's Chitose material:
+		<i lang="ain-Latn">unarpe oro ta</i> means “at aunt's place.” He links this to the difficulty of
+		incorporating a specific animate participant. The full phrase can still count as a lexical unit
+		in his analysis <Ref k="sato2021" p="93–95" /> ‹speculative›.
 	</p>
 	<p>
-		The bleaching is visible in combinations where the host noun is not inherently a
-		physical location. In <i lang="ain-Latn">tan KIKAY or ta a=ewkoytak hi an yakun</i>
-		'if we had a conversation with this machine' (lit. this machine's-place at),
-		<Ref k="nakagawa2024" p="284" /> (ex. 373, Saru; 田村 1984: 50), the host noun
-		<i lang="ain-Latn">KIKAY</i> (a recording machine) is an instrument, not a spatial
-		locus; <i lang="ain-Latn">or ta</i> constructs the 〈場所〉 argument that the particle
-		<i lang="ain-Latn">ta</i> requires, mapping the instrumental participant onto a
-		locative frame. The Chitose corpus adds many parallel instances where abstract events
-		or instruments appear in the host-noun position <Ref k="sato2021" />.
+		The observed distribution has exceptions. Basic
+		<i lang="ain-Latn">or</i> occurs after words for gods, people, and doctors; Satō interprets
+		these examples as generalized or occupational reference. His bear-agent examples contain both
+		<i lang="ain-Latn">or wa</i> and
+		<i lang="ain-Latn">oro wa</i>
+		<Ref k="sato2021" p="85–86, examples 11–15" />. Conversely, the inanimate phrase
+		<i lang="ain-Latn">poronno an pe oro wa</i>, “from among many things,” contains
+		<i lang="ain-Latn">oro</i>
+		<Ref k="sato2021" p="88, example 20; 92, note 20" />.
 	</p>
 	<p>
-		Whether this drift constitutes the grammaticalization of <i lang="ain-Latn">or</i>
-		into a general locative case-marker, or whether it reflects a productive but still
-		compositional use of the relational noun, is a point on which Satō
-		<Ref k="sato2021" /> and Nakagawa <Ref k="nakagawa2024" p="241, 296–299" /> take
-		partially different positions ‹contested›: Nakagawa treats the construction as
-		productive composition (noun + spatial-noun + particle), while Satō's Chitose
-		evidence shows <i lang="ain-Latn">or</i> extending into contexts where the
-		'place of X' semantics is increasingly opaque, suggesting at least the beginning
-		of a grammaticalization cline. The issue connects directly to the noun-vs-adposition
-		debate in §8, because an advanced-stage grammaticalized
-		<i lang="ain-Latn">or</i> would be functionally indistinguishable from a
-		locative postposition.
-	</p>
-</S>
-
-<S t="First-class and second-class locative nouns" id="classes">
-	<p>
-		Nakagawa <Ref k="nakagawa2024" p="241" /> distinguishes two sub-classes of locative
-		noun in Hokkaido Ainu, a distinction also partly reflected in Satō
-		<Ref k="sato2008" p="34–36" />. The first-class locative nouns are those whose
-		primary function is to supply the 〈場所〉 slot: they follow a host noun and directly
-		host a case particle. <i lang="ain-Latn">or</i>, <i lang="ain-Latn">ka</i>,
-		<i lang="ain-Latn">sam</i>, <i lang="ain-Latn">soy</i>, and
-		<i lang="ain-Latn">corpok</i> are the clearest members. The second-class members
-		are those whose primary occurrence is in compound nouns and verb bases rather than
-		in the free-standing [NOUN + relational-noun + case-particle] frame.
-		<i lang="ain-Latn">kotor</i> 'surface' is the paradigm case: it appears reliably
-		in the lexicalized compound <i lang="ain-Latn">tekkotor</i> 'palm of the hand'
-		(<A w="tek" gl="hand" /> + <i lang="ain-Latn">kotor</i>)
-		<Ref k="nakagawa2024" p="250" /> and has left traces in the archaic directional forms,
-		but it is not a productive first-class head in the contemporary spoken register.
-		Similarly, <i lang="ain-Latn">tum</i> 'interior/midst' appears in place-name
-		formation (proposed: <i lang="ain-Latn">o-tum-nay</i>
-		'head-interior-river' for the toponym Otomonai; nukopoli,
-		<Ref k="aynucorporadiscord" /> 2026-01-22) ‹speculative› and in compound verbs
-		(<i lang="ain-Latn">tumpu</i> 'storehouse' = <i lang="ain-Latn">tum</i>
-		'interior' + <i lang="ain-Latn">pu</i>; antitwilight,
-		<Ref k="aynucorporadiscord" /> 2024-11-16) ‹speculative›, but its distributional
-		range in the first-class frame remains less thoroughly documented than that of
-		<i lang="ain-Latn">or</i> or <i lang="ain-Latn">ka</i>.
+		Affiliative morphology also occurs in verbal quasi-incorporation. Satō's sentence meaning “I
+		intend to support my uncle” has an external possessor phrase and affiliative
+		<i lang="ain-Latn">paro</i>. He treats its conventional meaning as grounds for lexical unity
+		despite the fully phrasal morphology
+		<Ref k="sato2021" p="90–91, example 23; 94" />. Thus, quasi-incorporation in this account
+		includes more than the basic-noun pattern illustrated by <i lang="ain-Latn">en-par</i>.
 	</p>
 	<p>
-		The class boundary is not sharp, and intermediate members exist. In the postpositional
-		adverb system <Ref k="nakagawa2024" p="280–281" />, <i lang="ain-Latn">os(i)</i>
-		'after' appears as an autonomous postpositional adverb that does not require a
-		〈場所〉 host. This dual membership — relational noun in one construction,
-		postpositional adverb in another — is also observed for
-		<i lang="ain-Latn">or</i> itself: Nakagawa lists it in both noun paradigms
-		and in the broader locative system as a particle-combining locative element. The
-		overlap between the two classes is structural evidence for the noun-vs-adposition
-		debate (§8).
-	</p>
-	<p>
-		An archaic directional suffix <i lang="ain-Latn">-na</i> is attested in frozen
-		forms: <i lang="ain-Latn">setunna</i> 'from the front' and
-		<i lang="ain-Latn">kotunna</i> 'from behind', analysed as
-		<i lang="ain-Latn">setur-na</i> and <i lang="ain-Latn">kotor-na</i> respectively
-		(antitwilight, <Ref k="aynucorporadiscord" /> 2026-06-09); compare also
-		<i lang="ain-Latn">pokna</i> 'below', which may preserve the same suffix on
-		the relational noun <i lang="ain-Latn">pok</i>. This suffix is not a productive
-		case particle in contemporary Hokkaido Ainu, and no primary-source grammar in
-		the read set treats it as such ‹speculative›. Its existence as a fossil form is
-		consistent with the hypothesis that the relational-noun class is older than the
-		current case-particle system and that some members grammaticalized into the
-		particle system at an earlier stage.
-	</p>
-</S>
-
-<S t="Non-third-person possession" id="person-marking">
-	<p>
-		The possessor of a relational noun is third person (zero-marked) when the reference
-		object is supplied by the preceding host noun phrase. But relational nouns can also
-		be directly possessed by speech-act participants via the standard personal prefixes
-		treated in <Xr ch="person-marking-architecture" /> and
-		<Xr ch="adnominal-possession-double-marking" />. In that case, the relational noun
-		itself — not the host noun — bears the person prefix:
-	</p>
-
-	<Ex
-		m="ku=or ta ku=an"
-		g="1SG.POSS=place LOC 1SG.S=exist"
-		tr="I am at my (own) place."
-		constructed
-		note="Constructed to illustrate direct first-person possession of the relational noun or. The prefix ku= marks the possessor on or; ku=an is the first-person-singular intransitive subject form of the existential an."
-	/>
-
-	<p>
-		The full person paradigm for <i lang="ain-Latn">or</i> follows the ordinary nominal
-		possession pattern:
-		<i lang="ain-Latn">ku=or</i> 'my place',
-		<i lang="ain-Latn">e=or</i> 'your place',
-		<i lang="ain-Latn">or</i> (zero) 'his/her/its/their place',
-		<i lang="ain-Latn">ci=or</i> (1PL.EXCL) 'our place',
-		<i lang="ain-Latn">a=or</i> (4th person) 'the protagonist's/their general place'
-		<Ref k="nakagawa2024" p="241, 296" />.
-		The same paradigm applies to all other first-class relational nouns:
-		<i lang="ain-Latn">ku=ka ta</i> 'on top of me', <i lang="ain-Latn">e=sam ta</i>
-		'beside you' ‹consensus›. These forms appear in contexts where the locative
-		relation targets a person rather than a physical landmark, and they are attested
-		in body-part locatives and relational idioms (see
-		<Xr ch="external-possession-possessor-raising" /> for how this
-		intersects with external possession).
-	</p>
-	<p>
-		Nakagawa's Chitose dictionary classifies <i lang="ain-Latn">eykaun</i> 'be superior'
-		as a one-place verb and <i lang="ain-Latn">ko-eykaun</i> 'surpass someone' as a
-		two-place verb <Ref k="nakagawa1995" p="90, 196, s.v. eykaun, koeykaun" />.
-		A community etymology relates <i lang="ain-Latn">eykaun</i> to the locative phrase
-		<i lang="ain-Latn">ka un</i> 'be above'
-		<Ref k="aynucorporadiscord" /> ‹speculative›. The proposed historical relationship
-		remains unestablished.
-	</p>
-</S>
-
-<S t="Noun or adposition?" id="analysis">
-	<p>
-		The central analytical question is whether relational nouns constitute a subclass of
-		nouns or a subclass of postpositions. The dispute turns on which grammatical
-		properties are weighted most heavily, and different descriptive traditions have
-		come down on different sides ‹contested›.
-	</p>
-	<p>
-		<strong>Evidence for the noun analysis.</strong>
-		Relational nouns take person affixes in exactly the same slots and with exactly the
-		same forms as other inalienably-possessed nouns (<i lang="ain-Latn">ku=or</i>,
-		<i lang="ain-Latn">ku=sam</i>, <i lang="ain-Latn">ku=ka</i> parallel
-		<i lang="ain-Latn">ku=sapa</i> 'my head', <i lang="ain-Latn">ku=tek</i> 'my hand');
-		they appear in the possessed (affiliative) form under possession, following the same
-		morphophonological rules as the inalienable class
-		(<Ref k="nakagawa2024" p="241" />; <Ref k="nakagawa2022pos" p="478–480" />). They
-		enter compound-noun and incorporated-noun formation as ordinary nominal bases
-		(<i lang="ain-Latn">tekkotor</i>, <i lang="ain-Latn">tumpu</i>), which is diagnostic
-		of noun status in Ainu (see <Xr ch="noun-incorporation-object" />). Nakagawa
-		<Ref k="nakagawa2024" p="241, 280" /> treats them as a noun subclass throughout.
-		The same analysis underlies Ijäs's pedagogical treatment
-		<Ref k="ijas2023" />, which presents the locative construction as a
-		possessed-noun-plus-particle sequence.
-	</p>
-	<p>
-		<strong>Evidence for the adposition analysis.</strong>
-		Functionally, relational nouns occupy the same distributional slot as adpositions:
-		they appear between a nominal complement and a case particle, and they encode the
-		same spatial relations that languages with postpositions typically encode with a
-		postpositional head. Several members of the class — notably
-		<i lang="ain-Latn">os(i)</i> 'after' — appear in Nakagawa's catalogue of
-		postpositional adverbs (後置副詞)
-		<Ref k="nakagawa2024" p="280–282" />; <Ref k="sato2008" p="34–36" />.
-		Satō's Chitose evidence for <i lang="ain-Latn">or</i>
-		<Ref k="sato2021" /> shows the form extending beyond referential 'place of X'
-		into a general locative-marking function, which is the expected trajectory of
-		a grammaticalizing postposition, not of a lexical noun. The pedagogical grammar
-		by Ijäs <Ref k="ijas2023" /> places some members of the class in its
-		postposition section alongside case particles — a pragmatic descriptive choice
-		that reflects the adpositional function these forms serve for learners.
-	</p>
-	<p>
-		The most defensible synchronic position is that the class is in transition: the
-		morphological behaviour (person affixes, affiliative alternation, incorporation)
-		identifies the members as nouns, while their functional distribution (obligatory
-		position between complement and particle, encoding spatial relations, extension
-		to non-spatial contexts) pushes in the adposition direction. A parallel situation
-		is found in several languages of Mesoamerica, where the same class of
-		inalienably-possessed nominal forms — often glossed as 'relational nouns'
-		in the descriptive literature — occupies this intermediate position between noun
-		and adposition <Ref k="bugaeva2022" paren />. In those typological terms,
-		Hokkaido Ainu relational nouns are best labelled <em>relational nouns</em> rather
-		than postpositions or adpositions: they are nominal in morphology and adpositional
-		in function ‹contested›.
-	</p>
-	<p>
-		Whether first-class members like <i lang="ain-Latn">or</i> and
-		<i lang="ain-Latn">ka</i> are more advanced on a grammaticalization cline toward
-		postpositions than second-class members like <i lang="ain-Latn">kotor</i> is a
-		plausible hypothesis supported by Satō's work on <i lang="ain-Latn">or</i>
-		<Ref k="sato2021" /> but not yet generalized across the full inventory ‹speculative›.
-		The syntactic behavior of relational-noun phrases in nonconfigurational and
-		pronominal-argument contexts is taken up in
-		<Xr ch="nonconfigurationality-pronominal-argument" /> and
-		<Xr ch="oblique-adjunct-verbless-clauses" />.
+		Satō acknowledges an unresolved difference between the two constructions: the
+		inanimate-noun-plus-basic-locative pattern of
+		<i lang="ain-Latn">cise or ta</i> lacks a matching established pattern in his verbal
+		quasi-incorporation examples
+		<Ref k="sato2021" p="95–96" />. He also sets aside
+		<i lang="ain-Latn">orke</i> because of limited evidence
+		<Ref k="sato2021" p="81" />. The proposal connects several otherwise separate facts about person
+		marking, noun forms, and lexical meaning; these remaining differences constrain its scope.
 	</p>
 </S>

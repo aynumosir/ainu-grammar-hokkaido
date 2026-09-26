@@ -1,568 +1,141 @@
 <script lang="ts">
-	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import { S, Ref, Xr } from '$lib/grammar/components';
 </script>
 
-<S t="The (C)V(C) template" id="template">
+<S t="The syllable template" id="template">
 	<p>
-		The Hokkaido Ainu syllable has the shape (C)V(C): an optional onset consonant, a single
-		vowel nucleus, and an optional coda consonant <Ref k="nakagawa2024" p="41" />;
-		<Ref k="sato2008" p="§2.3" />; <Ref k="shiraishi2022" p="§4.1" />. Four syllable types
-		result:
+		A Hokkaido Ainu syllable contains one vowel, with at most one consonant before it and one after
+		it. This can be written <strong>(C)V(C)</strong>, where parentheses mark optional positions <Ref
+			k="nakagawa2024"
+			p="41"
+		/>;
+		<Ref k="sato2008" p="11" />; <Ref k="shiraishi2022" p="§4.1" />.
 	</p>
-
 	<table>
-		<thead>
-			<tr>
-				<th>shape</th>
-				<th>template</th>
-				<th>example</th>
-				<th>IPA</th>
-				<th>gloss</th>
-			</tr>
-		</thead>
+		<thead><tr><th>Shape</th><th>Example</th><th>Meaning</th></tr></thead>
 		<tbody>
-			<tr>
-				<td>bare vowel</td>
-				<td>V</td>
-				<td><i lang="ain-Latn">a</i></td>
-				<td>[a]</td>
-				<td>perfective particle; 'oh'</td>
-			</tr>
-			<tr>
-				<td>open</td>
-				<td>CV</td>
-				<td><i lang="ain-Latn">ka</i></td>
-				<td>[ka]</td>
-				<td>'thread'</td>
-			</tr>
-			<tr>
-				<td>checked (VC)</td>
-				<td>VC</td>
-				<td><i lang="ain-Latn">ik</i></td>
-				<td>[ik̚]</td>
-				<td>'go up'</td>
-			</tr>
-			<tr>
-				<td>closed (CVC)</td>
-				<td>CVC</td>
-				<td><i lang="ain-Latn">pet</i></td>
-				<td>[pet̚]</td>
-				<td>'river'</td>
-			</tr>
+			<tr><td>V</td><td lang="ain-Latn">a</td><td>sit</td></tr>
+			<tr><td>CV</td><td lang="ain-Latn">ku</td><td>bow</td></tr>
+			<tr><td>VC</td><td lang="ain-Latn">at</td><td>cord</td></tr>
+			<tr><td>CVC</td><td lang="ain-Latn">cep</td><td>fish</td></tr>
 		</tbody>
 	</table>
-
 	<p>
-		Every syllable contains exactly one vowel. Two or more consonants in sequence occur only
-		at a syllable boundary, never within a single syllable: the shapes CCVC, CVCC, and CVVC
-		are all excluded <Ref k="nakagawa2024" p="42" />; <Ref k="shiraishi2022" p="§4.1" />.
-		The word <i lang="ain-Latn">toop</i> 'far away', which looks like CVVC in the Latin
-		transcription, parses as two syllables <i lang="ain-Latn">to.op</i> (CV.VC), the syllable
-		boundary falling between the two successive vowels <Ref k="nakagawa2024" p="42" />.
-		The phonemic vowel inventory is described in <Xr ch="vowel-inventory" /> and the consonant
-		inventory in <Xr ch="consonant-inventory" />.
-	</p>
-
-	<p>
-		Nakagawa (2024: 25) characterizes Hokkaido Ainu as having relatively few phonemes and a
-		straightforward syllable structure, noting that the five-vowel inventory is constant across
-		all Hokkaido dialects — dialect differences are comparatively small. In contrast, Sakhalin
-		Ainu (SA) allows a long-vowel nucleus alongside a coda consonant, producing CVVC syllables
-		absent from Hokkaido: SA <i lang="ain-Latn">aa</i>, <i lang="ain-Latn">ruu</i> correspond
-		to Hokkaido <i lang="ain-Latn">a</i>, <i lang="ain-Latn">ru</i>, and the SA length
-		contrast <i lang="ain-Latn">niisah</i> : <i lang="ain-Latn">nisah</i> corresponds to
-		the Hokkaido pitch-accent contrast <i lang="ain-Latn">nísap</i> : <i lang="ain-Latn">nisáp</i>
-		<Ref k="nakagawa2024" p="42–43" />. The diachronic SA-length ↔ HA-pitch correspondence
-		is treated in <Xr ch="mora-syllable-accent-vs-tone-analysis" />.
-	</p>
-
-	<p>
-		Whether every vowel-initial syllable has an underlying glottal stop /ʔ/ is disputed. Under
-		the /ʔ/-as-phoneme view (Hattori 1961; Tamura, earlier work) the template reduces to just
-		CV and CVC, eliminating V and VC shapes. Nakagawa rejects this on the grounds that no
-		minimal pair exists in monomorphemic forms and that positing /ʔ/ requires many costly
-		deletion rules <Ref k="nakagawa2024" p="31–33" />, a judgement shared by Refsing
-		<Ref k="refsing1986" /> and Chiri (1942) as reported by <Ref k="shiraishi2022" p="§4.3" />.
-		The debate is covered in <Xr ch="glottal-stop" />; the majority position — /ʔ/ as a
-		phonetic boundary element rather than a phoneme — is followed here, retaining V and VC
-		syllable shapes in the template ‹contested›.
+		These examples follow Nakagawa <Ref k="nakagawa2024" p="41" />. An analysis that assigns a
+		glottal consonant /ʔ/ to every vowel-initial syllable reduces the list to CV and CVC, as in
+		Bugaeva's description <Ref k="bugaeva2012" p="467" />. The difference depends on the treatment
+		of glottal closure described in <Xr ch="glottal-stop" />
+		‹contested›.
 	</p>
 </S>
 
-<S t="Syllabification" id="syllabification">
+<S t="Finding syllable boundaries" id="syllabification">
 	<p>
-		Nakagawa (2024: 43) provides a three-step algorithm for assigning syllable boundaries
-		in the Latin transcription:
+		Consonant clusters cross syllable boundaries. Thus <i lang="ain-Latn">aynu</i> “person” divides
+		as <span lang="ain-Latn">ay.nu</span>, and
+		<i lang="ain-Latn">cepkoyki</i> “fish” as a verb divides as
+		<span lang="ain-Latn">cep.koy.ki</span>. Between vowels, a single consonant ordinarily begins
+		the following syllable: <i lang="ain-Latn">kamuy</i> “deity” divides as
+		<span lang="ain-Latn">ka.muy</span>
+		<Ref k="nakagawa2024" p="42–43" />.
 	</p>
-
-	<ol>
-		<li>Split between two adjacent <strong>vowels</strong>: VV → V.V.</li>
-		<li>Split between two adjacent <strong>consonants</strong>: CC → C.C.</li>
-		<li>In a VCV sequence, split <strong>before</strong> the consonant: VCV → V.CV.</li>
-	</ol>
-
 	<p>
-		The algorithm applied to several representative words: <Ref k="nakagawa2024" p="§1.3" />
+		Consecutive vowel nuclei belong to separate syllables in the Hokkaido analysis. Nakagawa divides <i
+			lang="ain-Latn">teeta</i
+		>
+		“long ago” as
+		<span lang="ain-Latn">te.e.ta</span>, with a glottal interruption possible between the vowels <Ref
+			k="nakagawa2024"
+			p="42–43"
+		/>. A written double vowel does not therefore automatically represent a single long vowel.
 	</p>
-
-	<table>
-		<thead>
-			<tr>
-				<th>word</th>
-				<th>syllabification</th>
-				<th>shape sequence</th>
-				<th>gloss</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">teeta</i></td>
-				<td>te.e.ta</td>
-				<td>CV.V.CV</td>
-				<td>'long ago'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">aynu</i></td>
-				<td>ay.nu</td>
-				<td>CVC.CV</td>
-				<td>'human'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">kamuy</i></td>
-				<td>ka.muy</td>
-				<td>CV.CVC</td>
-				<td>'deity'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">cepkoyki</i></td>
-				<td>cep.koy.ki</td>
-				<td>CVC.CVC.CV</td>
-				<td>'swim upstream'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">irankarapte</i></td>
-				<td>i.ran.ka.rap.te</td>
-				<td>V.CVC.CV.CVC.CV</td>
-				<td>'greet (someone)'</td>
-			</tr>
-		</tbody>
-	</table>
-
 	<p>
-		(Nakagawa 2024: 43.) The algorithm treats /y/ and /w/ as consonants, so
-		<i lang="ain-Latn">aynu</i> = ay.nu (CVC.CV) and
-		<i lang="ain-Latn">kamuy</i> = ka.muy (CV.CVC). The arguments for treating /-y/ and /-w/
-		as coda consonants rather than as the second element of a diphthong are presented in
+		Morphological composition can change syllable boundaries. A final consonant may join a following
+		vowel, as in <i lang="ain-Latn">sik-o</i> “open the eyes,” pronounced with the division
+		<span lang="ain-Latn">si.ko</span>. Resyllabification can also be blocked at certain boundaries
+		or by accent <Ref k="shiraishi2022" p="§4.4" />. The hyphen in a morphological analysis and the
+		dot in a syllable analysis consequently need not occur in the same place.
+	</p>
+</S>
+
+<S t="Consonants in the coda" id="coda">
+	<p>
+		Hokkaido syllable codas admit /p, t, k, s, m, n, r, y, w/. The consonants /c/ and /h/ are
+		restricted to onset position; /ʔ/, when included in the inventory, is also excluded from the
+		coda <Ref k="nakagawa2024" p="27" />;
+		<Ref k="bugaeva2012" p="467" />. Final stops are unreleased, while /r/ may have a vowel-like
+		release; see <Xr ch="consonant-inventory" /> and <Xr ch="rhotic-r" />.
+	</p>
+	<p>
+		Sakhalin permits a different set of codas, including /h/, and has phonemic vowel length. Those
+		patterns require their own dialect qualification
+		<Ref k="tangiku2022" p="§§2.1–2.4" />. They are compared with Hokkaido forms in
+		<Xr ch="sakhalin-and-kuril-ainu-contrast" />.
+	</p>
+</S>
+
+<S t="Syllable structure and word length" id="lexical-statistics">
+	<p>
+		A short syllable template allows long words made from several such syllables. Nakagawa describes
+		most roots as one or two syllables and notes that longer words often contain derivational or
+		compound structure <Ref k="nakagawa2024" p="47" />. His examples include two-syllable
+		<i lang="ain-Latn">puni</i>
+		“lift” and three-syllable
+		<i lang="ain-Latn">hopuni</i> “fly up,” formed with a prefix.
+	</p>
+	<p>
+		Word length alone does not establish a segmentation. Nakagawa also discusses words whose
+		internal structure cannot confidently be recovered <Ref k="nakagawa2024" p="47" />.
+		Morphological analysis requires evidence about the proposed parts.
+	</p>
+</S>
+
+<S t="Restrictions within the template" id="gaps">
+	<p>
+		The template describes possible positions, with further restrictions on their occupants. The
+		sequences /ti/, /yi/, /wi/, /wu/, /iy/, and /uw/ are excluded from monomorphemic forms in
+		Shiraishi's account <Ref k="shiraishi2022" p="§4.2" />. Nakagawa similarly restricts /yi, wi,
+		wu/ to morphological boundaries and excludes /ti/
+		<Ref k="nakagawa2024" p="44–45" />.
+	</p>
+	<p>
+		Morphological combinations can yield sequences absent from simple roots. Shiraishi gives
+		examples involving resyllabification across /y+i/ and /w+u/ boundaries
+		<Ref k="shiraishi2022" p="§4.2" />. Consequently, a restriction stated for roots should retain
+		that scope. The evidence for glides and their boundary behavior is examined in
 		<Xr ch="glides-w-y" />.
 	</p>
-
-	<p>
-		A minimal pair that turns on syllable count exists in Saru and Chitose:
-		<i lang="ain-Latn">yayrayke</i> 'commit suicide' = yay.ray.ke (CVC.CVC.CV, three
-		syllables) versus <i lang="ain-Latn">yairayke</i> 'give thanks' = ya.i.ray.ke
-		(CV.V.CVC.CV, four syllables). The sequence -<i lang="ain-Latn">ay</i>- in the first word
-		is a single closed syllable (CVC); the -<i lang="ain-Latn">ai</i>- in the second is two
-		syllables separated by a morpheme boundary. These words carry different accent patterns
-		that follow from the syllable count <Ref k="nakagawa2024" p="42" />, a distribution
-		governed by the iambic placement rule in <Xr ch="pitch-accent-placement-rule" />.
-	</p>
-
-	<p>
-		Syllabification applies across morpheme boundaries through resyllabification: a coda
-		consonant on one morpheme is re-parsed as the onset of a following vowel-initial morpheme.
-		The compound <i lang="ain-Latn">mat-ikor</i> (woman + possessions) thus surfaces as
-		<i lang="ain-Latn">macikor</i> [ma.ʨi.kor], with the underlying coda /t/ shifting to
-		the onset of the second syllable and palatalizing before /i/
-		<Ref k="kindaichi1936" p="1" />; <Ref k="nakagawa2024" p="36" />:
-	</p>
-
-	<Ex
-		m="mat-ikor"
-		g="woman-treasure"
-		ain="macikor"
-		tr="women's possessions"
-		note="The underlying boundary mat|ikor resyllabifies to ma.ci.kor [ma.ʨi.kor] (CV.CV.CVC). The coda /t/ shifts to onset position and undergoes the obligatory t+i → [ʨi] palatalization. The same surface form is attested throughout the Saru corpus, e.g. usa macikor usa tamasay 'various women's treasures and bead-necklaces'."
-		cite="nakagawa2024:36"
-		dial="SAR"
-	/>
-
-	<p>
-		When resyllabification brings /t/ before /i/, /t/ is palatalized to [ʨ]
-		<Ref k="shiraishi2022" p="§4.4" />. The consonant alternations are treated in
-		<Xr ch="coda-r-assimilation-sonorant-sandhi" />. Shiraishi reports occasional blocking of resyllabification before a vowel
-		bearing secondary accent and at boundaries such as reduplicant–base; a glottal stop
-		appears in these cases
-		<Ref k="shiraishi2022" p="§4.4" />. The interaction of resyllabification with the
-		morphophonology of personal affixes is treated in
-		<Xr ch="personal-affix-sandhi-connected-speech-reduction" />.
-	</p>
 </S>
 
-<S t="Permitted coda consonants" id="coda">
+<S t="Vowels, glides, and syllable count" id="cvvc">
 	<p>
-		Nine of the eleven consonant phonemes occur in coda position. The two excluded from coda
-		position in Hokkaido Ainu are the affricate /c/ [ʨ] and the laryngeal /h/; the remaining
-		nine — stops /p t k/, fricative /s/, nasals /m n/, rhotic /r/, and glides /y w/ — all
-		appear as codas <Ref k="nakagawa2024" p="27" />; <Ref k="sato2008" p="§2.3" />;
-		<Ref k="shiraishi2022" p="§3" />.
-	</p>
-
-	<table>
-		<thead>
-			<tr>
-				<th>phoneme</th>
-				<th>coda realization</th>
-				<th>example</th>
-				<th>gloss</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>/p/</td>
-				<td>[p̚] unreleased</td>
-				<td><i lang="ain-Latn">cep</i></td>
-				<td>'fish'</td>
-			</tr>
-			<tr>
-				<td>/t/</td>
-				<td>[t̚] unreleased</td>
-				<td><i lang="ain-Latn">pet</i></td>
-				<td>'river'</td>
-			</tr>
-			<tr>
-				<td>/k/</td>
-				<td>[k̚] unreleased</td>
-				<td><i lang="ain-Latn">ik</i></td>
-				<td>'go up'</td>
-			</tr>
-			<tr>
-				<td>/s/</td>
-				<td>[ɕ] after /i/; [sʲ] elsewhere</td>
-				<td><i lang="ain-Latn">as</i>, <i lang="ain-Latn">cis</i></td>
-				<td>'stand'; 'cry'</td>
-			</tr>
-			<tr>
-				<td>/m/</td>
-				<td>[m]</td>
-				<td><i lang="ain-Latn">hum</i></td>
-				<td>'sound'</td>
-			</tr>
-			<tr>
-				<td>/n/</td>
-				<td>[n]; [ŋ] before /k/; [m] before /p/, /m/</td>
-				<td><i lang="ain-Latn">pon</i>, <i lang="ain-Latn">honkor</i></td>
-				<td>'small'; 'be pregnant'</td>
-			</tr>
-			<tr>
-				<td>/r/</td>
-				<td>[ɾ] with vocalic release</td>
-				<td><i lang="ain-Latn">kor</i></td>
-				<td>'have'</td>
-			</tr>
-			<tr>
-				<td>/y/</td>
-				<td>[i̯]</td>
-				<td><i lang="ain-Latn">kay</i>, <i lang="ain-Latn">kamuy</i></td>
-				<td>'break'; 'deity'</td>
-			</tr>
-			<tr>
-				<td>/w/</td>
-				<td>[u̯]</td>
-				<td><i lang="ain-Latn">ohaw</i>, <i lang="ain-Latn">paw</i></td>
-				<td>'soup'; 'mouth'</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<p>
-		The coda stops /p t k/ are realized as unreleased [p̚ t̚ k̚] — closure is maintained but
-		no burst follows, a pattern similar to Korean final stops and unlike English
-		<Ref k="nakagawa2024" p="29" />; <Ref k="shiraishi2022" p="§3" />. In older recordings,
-		a full release was sometimes heard; the degree of implosion also varies across speakers
-		<Ref k="aynucorporadiscord" /> (aomidori\_cs\_, 2023-12-05) ‹corpus-confirmed›. The coda
-		allophony of /s/ — [ɕ] after the vowel /i/ versus a more front [sʲ] after other vowels —
-		is treated in <Xr ch="s-palatalization" />.
-	</p>
-
-	<p>
-		Coda /n/ undergoes place assimilation: it surfaces as [ŋ] before /k/ and as [m] before
-		/p/ or /m/ <Ref k="nakagawa2024" p="30" />. So <i lang="ain-Latn">honkor</i> 'be
-		pregnant' is pronounced [hoŋkor] and <i lang="ain-Latn">anpe</i> 'true thing' is
-		[ampe]. The orthographic convention records the underlying /n/ throughout.
-		Coda /r/ carries a vocalic release — usually a copy of the preceding vowel — that was
-		long confused with a final full vowel in early transcriptions; its phonemic status and
-		sandhi behavior are covered in <Xr ch="rhotic-r" />.
-	</p>
-</S>
-
-<S t="Lexical statistics" id="lexical-statistics">
-	<p>
-		The frequency figures in this section are drawn from a syllable count over the headwords of
-		three dictionaries of southern Hokkaido dialects: Tamura's Saru dictionary
-		<Ref k="tamura1996" />, Nakagawa's Chitose dictionary <Ref k="nakagawa1995" />, and
-		Kayano's Saru (Nibutani) dictionary <Ref k="kayano1996" />. After removing bound affixes,
-		clitics, multi-word headwords, and forms containing letters outside the Latin
-		transcription of the Hokkaido phoneme inventory, the three sources yield 13,891 distinct
-		single-word types; 13,872 of these parse exhaustively into (C)V(C) syllables, giving
-		51,003 syllables in all. The 19 residues are transcription errors in the source files.
-		Headwords include derived and compound stems, so the figures describe the lexicon as
-		dictionaries record it; cluster counts in particular reflect morpheme seams as well as
-		root-internal sequences.
-	</p>
-
-	<table>
-		<caption>
-			Syllable shapes across 51,003 syllables of the three-dictionary headword sample.
-		</caption>
-		<thead>
-			<tr>
-				<th>shape</th>
-				<th>count</th>
-				<th>share</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>CV</td>
-				<td>29,247</td>
-				<td>57.3%</td>
-			</tr>
-			<tr>
-				<td>CVC</td>
-				<td>14,199</td>
-				<td>27.8%</td>
-			</tr>
-			<tr>
-				<td>V</td>
-				<td>5,905</td>
-				<td>11.6%</td>
-			</tr>
-			<tr>
-				<td>VC</td>
-				<td>1,652</td>
-				<td>3.2%</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<p>
-		Open syllables outnumber closed ones by a little over two to one (68.9% against 31.1%),
-		and syllables with an onset outnumber onsetless ones nearly six to one. Words run from one to
-		twelve syllables, with three- and four-syllable words together making up over half the
-		types; the mean is 3.7 syllables per word. About a third of word types (4,927 of 13,872)
-		begin with a vowel.
-	</p>
-
-	<p>
-		Among nuclei, /a/ leads with 29.7% of all syllables, followed by /e/ (21.0%), /o/
-		(17.2%), /i/ (16.7%), and /u/ (15.5%). The most frequent onset is /k/ (9,277 of 43,446
-		filled onsets, 21.4%), with /r s p t n/ each between 4,600 and 5,200; /w/ is the rarest
-		onset at 1,058. Coda frequency splits sharply by position in the word. Word-finally /r/
-		dominates (1,119 of 4,664 final codas), ahead of /p/ and /k/; word-internally /n/ leads
-		(2,322 of 11,178 internal codas), followed by /y/ — a reflection of the many
-		<i lang="ain-Latn">-Vn-</i> and <i lang="ain-Latn">-Vy-</i> sequences in derived stems.
-		The sample contains no coda /h/ whatsoever, and the nine orthographic coda-/c/ tokens all
-		trace to transcription errors in the source files, so the count confirms the categorical
-		exclusion of /c h/ from coda position stated above.
-	</p>
-
-	<p>
-		Of the 99 heterosyllabic coda-onset combinations the nine codas and eleven onsets permit,
-		98 are attested at least once. The single systematic gap is *<i lang="ain-Latn">t.y</i>,
-		consistent with the affrication of /t/ + /y/ to /c/ at morpheme boundaries (see
-		<Xr ch="coda-r-assimilation-sonorant-sandhi" />). The distribution is heavily skewed: the
-		ten commonest junctures (<i lang="ain-Latn">n.k</i> 625, <i lang="ain-Latn">r.k</i> 578,
-		<i lang="ain-Latn">n.n</i> 553, <i lang="ain-Latn">y.k</i> 524,
-		<i lang="ain-Latn">k.k</i> 488, and so on) account for over 40% of all cluster tokens,
-		while the rarest attested combinations (<i lang="ain-Latn">p.w</i>,
-		<i lang="ain-Latn">w.h</i>) occur once each, at compound seams. Vowel hiatus (V.V) is
-		likewise common — 2,376 sequences — with <i lang="ain-Latn">e.a</i> the most frequent
-		pairing (237) and <i lang="ain-Latn">i.i</i> the least (24).
-	</p>
-
-	<p>
-		Weighting by running text instead of dictionary types changes the picture in instructive
-		ways. A token count over the 168,302 Hokkaido sentences of the corpus described in
-		<Xr ch="dialect-sample-and-corpus-method" /> — 1,057,229 parsed word tokens, 2,201,575
-		syllables, after excluding tokens in legacy orthographies whose digraph spellings
-		syllabify falsely — gives CV 58.1%, CVC 19.6%, V 15.8%, VC 6.4%. The CV share is
-		identical to the type count, but closed syllables drop from 31.1% to 26.0% and
-		onsetless syllables rise from 14.8% to 22.2%, both driven by the high-frequency
-		vowel-initial grammatical words (<i lang="ain-Latn">a=</i>, <i lang="ain-Latn">an</i>,
-		<i lang="ain-Latn">or</i>, <i lang="ain-Latn">oka</i>). Word-final coda ranking
-		reverses: /n/ leads with 117,224 tokens against 78,781 for /r/, where the type count
-		has /r/ first — a frequency effect of words like <i lang="ain-Latn">an</i>,
-		<i lang="ain-Latn">wen</i>, and <i lang="ain-Latn">pon</i> against the many but
-		individually rarer /r/-final content stems. Word-final /-m/ is likewise secure at token
-		level: 12,605 tokens (1.2% of parsed tokens), led by <i lang="ain-Latn">isam</i>
-		(3,838), <i lang="ain-Latn">kam</i>, <i lang="ain-Latn">kewtum</i>, and
-		<i lang="ain-Latn">hum</i>. Residual coda-/c/ and coda-/h/ tokens number about 130
-		(0.006% of syllables) and trace to transcription noise, so the categorical coda ban
-		holds at token level as well.
-	</p>
-</S>
-
-<S t="Phonotactic gaps in the syllable inventory" id="gaps">
-	<p>
-		Several syllable shapes that the (C)V(C) template formally permits are absent or
-		near-absent from the native lexicon. The best-established gaps, from Nakagawa's
-		onset-×-vowel table (2024: 43–45), are the following:
-	</p>
-
-	<table>
-		<thead>
-			<tr>
-				<th>prohibited or rare shape</th>
-				<th>status</th>
-				<th>notes and sources</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">*ti</i></td>
-				<td>absent from root inventory</td>
-				<td>
-					Nakagawa 2024: 43, 45 (Table 1 shows the <i lang="ain-Latn">ti</i> cell
-					empty). The surface affricate [ʨi] always derives from underlying /t/ + /i/
-					across a morpheme boundary — see <Xr ch="coda-r-assimilation-sonorant-sandhi" />.
-					No HA root with stem-internal <i lang="ain-Latn">ti</i> is attested. The
-						three-dictionary headword sample (see the lexical statistics above) contains
-						<i lang="ain-Latn">ti</i> only in the transparent compound
-						<i lang="ain-Latn">petikuswa</i> (<i lang="ain-Latn">pet-ikus-wa</i>),
-						where the /t/ + /i/ contact sits on a morpheme seam.
-				</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">*yi</i>, <i lang="ain-Latn">*wi</i>, <i lang="ain-Latn">*wu</i></td>
-				<td>absent as root-internal syllables</td>
-				<td>
-					Nakagawa 2024: 43, 45: no word has these as its root; they arise only at
-					morpheme boundaries by resyllabification or glide insertion
-					<Ref k="nakagawa2024" p="43, 45" />; <Ref k="shiraishi2022" p="§4.2" />.
-					Whether they constitute independent phonemic syllables is contested between
-					Tamura and Nakagawa — see <Xr ch="glides-w-y" /> ‹contested›.
-				</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">cuC</i>, <i lang="ain-Latn">ceC</i>,
-					<i lang="ain-Latn">coC</i></td>
-				<td>rare ‹corpus-suggested›</td>
-				<td>
-					The corpus contains very few tokens of /c/ before /u e o/ followed by a coda;
-					Nakagawa (2024: 43) notes that /c/ before /a/ or /u/ aligns more naturally
-					with native-speaker perception than before other vowels, suggesting a partial
-					front-vowel affinity for the affricate. The headword sample bears the
-						asymmetry out: onset /c/ occurs before /i/ in 1,131 syllables and before
-						/a/ in 316, against 128 for /u/, 116 for /e/, and 86 for /o/; with a coda
-						added the counts fall to 81 (<i lang="ain-Latn">cuC</i>), 53
-						(<i lang="ain-Latn">ceC</i>), and 42 (<i lang="ain-Latn">coC</i>) — rare
-						but attested.
-				</td>
-			</tr>
-			<tr>
-				<td>-<i lang="ain-Latn">ow</i></td>
-				<td>near-absent ‹corpus-suggested›</td>
-				<td>
-					Two word-final <i lang="ain-Latn">-ow</i> types occur in the
-						13,872-word headword sample, and a corpus survey returns almost no /-ow/
-						tokens
-					<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-19). A diachronic account
-					proposes that earlier *-aw(e) shifted to -ew(e) in most environments
-					<Ref k="aynucorporadiscord" /> (antitwilight, 2024-12-19) ‹speculative›.
-				</td>
-			</tr>
-			<tr>
-				<td>-<i lang="ain-Latn">m</i> word-finally</td>
-				<td>not a gap ‹corpus-confirmed›</td>
-				<td>
-					Orthographic /-m/ before /p/ or /m/ is an assimilation notation for underlying
-					/-n/ (see above); at token level a stem-final /-m/ that stays /-m/ before other segments is
-					very rare in the corpus
-					<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-19). Dictionary types
-						tell against a categorical gap: 276 of the 13,872 headwords in the lexical
-						sample end in <i lang="ain-Latn">-m</i>, among them
-						<i lang="ain-Latn">amam</i> 'grain', <i lang="ain-Latn">isam</i>
-						'not exist', and <i lang="ain-Latn">hum</i> 'sound'. The token count
-						settles it: 12,605 word-final /-m/ tokens occur in the Hokkaido corpus
-						(1.2% of parsed tokens), 3,838 of them <i lang="ain-Latn">isam</i>
-						alone, so word-final /-m/ is unremarkable at both type and token level.
-				</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<p>
-		Among the starred onset+vowel combinations, /-c/ and /-h/ are also categorically excluded
-		from coda position (see the preceding section), and the /-c/ exclusion from coda means
-		that <i lang="ain-Latn">*-ac</i>, <i lang="ain-Latn">*-ec</i>, etc., are all absent.
-		The full discussion of the affricate /c/ and its distribution belongs to
-		<Xr ch="consonant-inventory" />.
-	</p>
-</S>
-
-<S t="Syllable structure and vowel weakening" id="cvvc">
-	<p>
-		Nakagawa describes a restriction on stem-initial /i/ weakening after personal
-		prefixes in Saru and Chitose. With <i lang="ain-Latn">ipe</i> 'eat a meal',
-		the initial syllable /i/ is open (V), and <i lang="ain-Latn">ku=ipe</i> becomes
-		/kúype/. The resulting syllables are /kuy.pe/, CVC.CV: /y/ closes the first
-		syllable <Ref k="nakagawa2024" p="52" />.
-	</p>
-	<p>
-		With <i lang="ain-Latn">inkar</i> 'look' and <i lang="ain-Latn">ikka</i> 'steal',
-		the initial syllables /in/ and /ik/ are closed (VC). Weakening would produce
-		/kuynkar/ and /kuykka/, whose three-consonant sequences /ynk/ and /ykk/ cannot
-		be distributed between two (C)V(C) syllables. Nakagawa instead gives /kuínkar/
-		and /kuíkka/, retaining the vowel <Ref k="nakagawa2024" p="53" />. This blocking
-		follows from the consonant sequence created by weakening. The retained vowels
-		belong to separate syllables; they do not form a CVVC syllable.
-	</p>
-	<table>
-		<caption>Person-prefix examples in Nakagawa (2024: 52–53); dots show syllable boundaries</caption>
-		<thead><tr><th>input</th><th>first syllable of stem</th><th>result with syllable boundaries</th><th>syllable shapes</th></tr></thead>
-		<tbody>
-			<tr><td><i lang="ain-Latn">ku=ipe</i></td><td>/i/, V</td><td>/kúy.pe/</td><td>CVC.CV</td></tr>
-			<tr><td><i lang="ain-Latn">e=itak</i></td><td>/i/, V</td><td>/éy.tak/</td><td>VC.CVC</td></tr>
-			<tr><td><i lang="ain-Latn">ku=inkar</i></td><td>/in/, VC</td><td>/ku.ín.kar/</td><td>CV.VC.CVC</td></tr>
-			<tr><td><i lang="ain-Latn">ku=ikka</i></td><td>/ik/, VC</td><td>/ku.ík.ka/</td><td>CV.VC.CV</td></tr>
-		</tbody>
-	</table>
-	<p>
-		The community comparison with <i lang="ain-Latn">ku=ikra</i> extends the same
-		explanation to /ykr/. The associated discussion of <i lang="ain-Latn">eikra</i>
-		concerns a lexical verb 'send', as in <i lang="ain-Latn">k(u)=éikra</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-suggested›;
-		Tamura also lists this verb <Ref k="tamura1996" p="s.v. eikra" />.
-		For the derivational comparisons and their evidence, see
-		<Xr ch="glide-epenthesis-hiatus-resolution" s="cvvc-block" />. For the separate
-		deletion of the prefix vowel before /a e u o/, see
-		<Xr ch="personal-affix-sandhi-connected-speech-reduction" />.
-	</p>
-</S>
-
-<S t="Loanword syllable adaptation" id="loanwords">
-	<p>
-		Loanwords that contain consonant clusters or CVVC structures are adapted to fit the
-		(C)V(C) template by vowel epenthesis. The epenthetic segment is typically /o/ or a copy
-		of the nearest adjacent vowel
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-11) ‹corpus-suggested›. In Hokkaido
-		the donor language is Japanese; Russian borrowings belong to the Sakhalin varieties, so
-		the clearest illustration of the repair comes from there ‹SA›:
-		<i lang="ain-Latn">potoloko</i> (← Rus. потолок 'ceiling') breaks up both a
-		word-initial CC onset (/pt/) and a word-final CC cluster (/lk/) with epenthetic /o/.
-		Its single corpus attestation is Sakhalin, in Sentoku Tarōji's letters —
-		<i lang="ain-Latn">keta potoloko kasiketa okay=ahci</i> ‹corpus-confirmed›. A hypothetical English loanword like
-		<i lang="ain-Latn">Christmas</i> would enter as something like
-		<i lang="ain-Latn">kurisumas</i>, with each cluster split by an inserted vowel
+		Ordinary Hokkaido syllables do not have the shape CVVC. A final glide occupies the consonant
+		position in CVC, while two vowel nuclei belong to two syllables. Nakagawa analyzes <i
+			lang="ain-Latn">toop</i
+		>
+		“far away” as
+		<span lang="ain-Latn">to.op</span>
 		<Ref k="nakagawa2024" p="42" />.
 	</p>
-
 	<p>
-		The identity of the epenthetic vowel is not always /o/: a copy of the adjacent vowel
-		also occurs, and the choice may reflect the phonological neighborhood rather than a
-		single underlying default. Loan adaptation across contact periods — Japanese into
-		Hokkaido Ainu, Russian into the Sakhalin varieties — shows the (C)V(C) template
-		operating as a consistent filter, with epenthesis as the principal repair strategy
-		‹corpus-suggested›.
+		When a vowel becomes a glide in a morphological combination, syllable count can change. A
+		surface pronunciation and an underlying morphological division may then look different. These
+		alternations are described in <Xr ch="glide-epenthesis-hiatus-resolution" /> and
+		<Xr ch="personal-affix-sandhi-connected-speech-reduction" />.
+	</p>
+</S>
+
+<S t="Borrowed forms" id="loanwords">
+	<p>
+		Borrowings provide evidence about how unfamiliar sequences are accommodated. Nakagawa notes that
+		Japanese palatalized consonant sequences can be expanded into two syllables, illustrating this
+		with the pronunciation represented as
+		<span lang="ain-Latn">tookiyo</span> for Tokyo. He also notes that Japanese affricates can
+		correspond to Ainu /c/ <Ref k="nakagawa2024" p="45" />.
+	</p>
+	<p>
+		A quoted Japanese expression, a conventional loan, and a fully adapted Ainu form need not have
+		the same phonological behavior. The source and the use of the particular form are therefore part
+		of the evidence for a borrowing claim.
 	</p>
 </S>

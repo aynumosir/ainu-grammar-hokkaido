@@ -1,0 +1,12 @@
+# Consonant sandhi source comparison
+
+| Claim | Source and role | Agreement or difference | Treatment |
+| --- | --- | --- | --- |
+| r + t/c/n changes, r + r > nr | Nakagawa 2024 pp. 36–38; Satō 2008 pp. 12–13; Shibatani 1990 §2.4; Shiraishi 2022 §6.1. Prior analyses with published examples. | Agreement on basic patterns. Nakagawa's “this one example” of dissimilation is not a bibliographic exclusivity claim; Shiraishi lists others. | Describe conditioning and variants; no “only published example” or mandatory-everywhere claim. |
+| r + s/y | Nakagawa 2024 p. 36; Satō 2008 p. 13; Shiraishi 2022 §6.1 | Dialect and lexical restrictions. Chitose r+y documented; Shiraishi reports northern r+s. | State the scope of individual forms. |
+| n+s/y/w | Nakagawa 2024 pp. 36–37; Satō 2008 p. 13; Shiraishi 2022 §6.1 | n+w > ww is distinct from particle wa > ma after m/n and wa > pa after p. | Separate processes and preserve lexical restrictions and speaker variation. |
+| Nasal place assimilation | Nakagawa 2024 pp. 30, 37; Shibatani 1990 §2.4; Shiraishi 2022 §3 | Phonetic [m] before labials, [ŋ] before k; spelling can remain n. | Do not equate phonetic assimilation with lexical replacement of n. |
+| Optionality and notation | Satō 2008 p. 12; Nakagawa 2024 p. 38 | Patterns vary across speakers and tokens; many texts preserve underlying forms across words, but represent alternations inside words; underscore conventions also occur. | Remove the old claim that all sandhi is productive, obligatory and never written. |
+| Pause/sentence boundary | Shiraishi 2022 §6.2, reporting Shiraishi 2001's Saru recording study | Both processes sensitive to pause insertion. n-sandhi did not cross sentence boundaries in sample; r-sandhi did. | Remove old “not blocked by pauses.” Attribute dataset and analysis; no universal no-boundary-restriction claim. |
+| Analysis of triggers | Shiraishi 2022 §6.1 reports traditional assimilation/dissimilation and his 2001 natural-class analysis | Theoretical disagreement concerns unification. | Attribute coronal-avoidance and continuant-spreading proposals; do not present an original rule. |
+| Eastern lexical correspondences | Nakagawa and Fukazawa 2022 §3.3 table5; Nakagawa 2024 pp. 36–37 | Regional lexical differences; Nakagawa warns against treating them as a productive across-word rule. | Give hotke/hokke with regional scope, not an unrestricted replacement algorithm. |

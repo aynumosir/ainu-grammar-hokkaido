@@ -1,382 +1,195 @@
-<!-- src/lib/grammar/chapters/personal-affix-sandhi-connected-speech-reduction.svelte -->
 <script lang="ts">
-	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import { S, Ex, Ref, Xr } from '$lib/grammar/components';
 </script>
 
-<S t="Overview" id="overview">
+<S t="Person markers and their phonological neighbors" id="overview">
 	<p>
-		The person markers of Hokkaido Ainu undergo systematic phonological changes at their
-		juncture with a following verb or noun stem. The most salient is the deletion of the vowel
-		of <i lang="ain-Latn">ku=</i> and <i lang="ain-Latn">ci=</i> before stem-initial vowels
-		other than /i/, a feature of the southern varieties (Saru, Chitose, Mukawa). This deletion
-		interacts with the prosodic-word formation and accent rules treated in
-		<Xr ch="accent-in-compounds-and-affixation" /> and with the vowel-weakening mechanism
-		described in <Xr ch="glide-epenthesis-hiatus-resolution" />. The general sandhi processes
-		that operate across all morpheme junctures — coda-/r/ assimilation, nasal-place assimilation
-		— are the subject of <Xr ch="coda-r-assimilation-sonorant-sandhi" />; the person-marker
-		inventory and its morphosyntactic analysis are laid out in
-		<Xr ch="person-marking-architecture" />. <Ref k="nakagawa2024" p="§2" />
+		Person markers can affect the vowels, syllables, and accent of the form to which they attach.
+		Southern Hokkaido descriptions distinguish prefix-vowel loss, the conversion of stem-initial /i/
+		to /y/, and the preservation or relocation of stem accent
+		<Ref k="nakagawa2024" p="52–53" />; <Ref k="sato2008" p="110–111" />. Suffixes introduce their
+		own patterns at the following boundary.
+	</p>
+	<p>
+		The effects differ by marker and dialect. This chapter describes the phonological combinations;
+		the grammatical functions and combined-person paradigms are treated in
+		<Xr ch="person-marking-architecture" />.
 	</p>
 </S>
 
-<S t="The ku= and ci= vowel-deletion rule" id="vowel-deletion">
+<S t="Vowel loss in ku= and ci=" id="vowel-deletion">
 	<p>
-		In Saru, Chitose, and Mukawa, the /u/ of <i lang="ain-Latn">ku=</i> (first-person singular
-		agent/subject) deletes before a stem-initial /a/, /e/, /u/, or /o/; correspondingly, the
-		/i/ of <i lang="ain-Latn">ci=</i> (first-person plural exclusive agent/subject) deletes in
-		the same environments <Ref k="nakagawa2024" p="33, 52" />; <Ref k="sato2008" p="xii" />.
-		The vowel /i/ is excluded from the deletion domain: before a stem beginning with /i/, a
-		distinct vowel-weakening process applies (§3 below). Outside the southern zone, most
-		Hokkaido dialects preserve the full marker forms without deletion
-		<Ref k="nakagawa2024" p="52" />; <Ref k="nakagawafukazawa2022" p="§3" />.
+		Before a stem beginning with /a, e, o, u/, <i lang="ain-Latn">ku=</i> can appear as
+		<i lang="ain-Latn">k=</i>, and <i lang="ain-Latn">ci=</i> as
+		<i lang="ain-Latn">c=</i>. Nakagawa identifies this contraction in Saru, Chitose, and Mukawa,
+		while most other dialects retain the prefix vowel
+		<Ref k="nakagawa2024" p="52" />. Satō describes the corresponding Chitose forms
+		<Ref k="sato2008" p="110–111" />.
 	</p>
-
-	<p>The two deletion rules can be stated as: <Ref k="nakagawa2024" p="§1.4.5" />
-	</p>
-
-	<ul>
-		<li>/u/ → ∅ / <i lang="ain-Latn">ku=</i> __ &#123;a, e, u, o&#125;…</li>
-		<li>/i/ → ∅ / <i lang="ain-Latn">ci=</i> __ &#123;a, e, u, o&#125;…</li>
-	</ul>
-
 	<table>
-		<caption>
-			Table 1. Deletion and weakening at the ku= / ci= juncture. Nakagawa (2024: 52–53)
-			describes weakening for Saru and Chitose; the deletion discussion also includes Mukawa.
-		</caption>
-		<thead>
-			<tr>
-				<th>stem-initial vowel</th>
-				<th>underlying</th>
-				<th>surface</th>
-				<th>process</th>
-			</tr>
-		</thead>
+		<thead><tr><th>Prefix</th><th>Before /a, e, o, u/</th><th>Nakagawa's example</th></tr></thead>
 		<tbody>
-			<tr>
-				<td>/a/</td>
-				<td><i lang="ain-Latn">ku=a…</i></td>
-				<td><i lang="ain-Latn">k=a…</i></td>
-				<td>/u/ deletion</td>
-			</tr>
-			<tr>
-				<td>/o/</td>
-				<td><i lang="ain-Latn">ku=omare</i></td>
-				<td><i lang="ain-Latn">k=omare</i></td>
-				<td>/u/ deletion</td>
-			</tr>
-			<tr>
-				<td>/e/ (with <i lang="ain-Latn">ci=</i>)</td>
-				<td><i lang="ain-Latn">ci=etu</i></td>
-				<td><i lang="ain-Latn">c=etu</i></td>
-				<td>/i/ deletion</td>
-			</tr>
-			<tr>
-				<td>/i/ — open σ1</td>
-				<td><i lang="ain-Latn">ku=ipe</i></td>
-				<td><i lang="ain-Latn">ku=ype</i> /kúype/</td>
-				<td>stem /i/ → [j]; NO marker deletion (§3)</td>
-			</tr>
-			<tr>
-				<td>/i/ — closed σ1</td>
-				<td><i lang="ain-Latn">ku=inkar</i></td>
-				<td>/kuínkar/</td>
-				<td>marker deletion does not apply; weakening blocked by /ynk/ (§3)</td>
-			</tr>
+			<tr
+				><td lang="ain-Latn">ku=</td><td lang="ain-Latn">k=</td><td lang="ain-Latn"
+					>ku=ómare → k=ómare</td
+				></tr
+			>
+			<tr
+				><td lang="ain-Latn">ci=</td><td lang="ain-Latn">c=</td><td lang="ain-Latn"
+					>ci=étu → c=étu</td
+				></tr
+			>
 		</tbody>
 	</table>
-
 	<p>
-		Learners of Saru and Chitose frequently overgeneralize the deletion to /i/-initial stems,
-		producing ungrammatical *<i lang="ain-Latn">k=ipe</i>; the restriction to &#123;a, e, u, o&#125; is
-		the corrective <Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-confirmed›.
+		The examples mean “I put something into something” and “our nose,” respectively
+		<Ref k="nakagawa2024" p="52" />. The prefix retains its person-marking function when its vowel
+		disappears.
 	</p>
-
 	<Ex
-		m="ku=omare"
-		ain="k=omare"
+		m="k=ómare"
 		g="1SG.A=put.into"
-		tr="I put it into something."
-		note="Nakagawa derives ku=ómare → k=ómare /kómare/. The /u/ of ku= deletes before the /o/-initial stem after accent placement."
+		tr="I put something into something."
 		cite="nakagawa2024:52"
 		place="Saru and Chitose"
+		note="Nakagawa derives the contracted form from ku=ómare. English glosses make the two unspecified object roles explicit."
 	/>
 </S>
 
-<S t="The /i/-initial block and vowel weakening" id="i-block">
+<S t="The separate treatment of initial /i/" id="i-block">
 	<p>
-		Nakagawa describes stem-initial /i/ weakening to /y/ after <i lang="ain-Latn">ku=</i>
-		and <i lang="ain-Latn">e=</i> in Saru and Chitose:
-		<i lang="ain-Latn">ku=ipe</i> → /kúype/ 'I eat a meal' and
-		<i lang="ain-Latn">e=itak</i> → /éytak/ 'you speak'
-		<Ref k="nakagawa2024" p="52" />. In these examples, the marker vowel is retained,
-		and the stem's /i/ becomes a coda: /kuy.pe/ and /ey.tak/.
-		For derivational-prefix examples, see <Xr ch="glide-epenthesis-hiatus-resolution" />.
+		The contraction rule excludes /i/. With <i lang="ain-Latn">ku=</i> or
+		<i lang="ain-Latn">e=</i>, an initial /i/ in an open stem syllable can instead become the coda
+		/y/ of the preceding syllable. Nakagawa gives
+		<i lang="ain-Latn">ku=ipe</i> as <i lang="ain-Latn">kúype</i> “I eat” and
+		<i lang="ain-Latn">e=itak</i> as <i lang="ain-Latn">éytak</i> “you speak”
+		<Ref k="nakagawa2024" p="52" />. The prefix vowel remains in these forms.
 	</p>
 	<p>
-		In <i lang="ain-Latn">inkar</i> 'look' and <i lang="ain-Latn">ikka</i> 'steal',
-		the first syllable is closed: /in/ or /ik/, of shape VC. Nakagawa gives
-		/kuínkar/ and /kuíkka/. Weakening would create /ynk/ or /ykk/, three consonants
-		that cannot fit between two (C)V(C) syllable nuclei
-		<Ref k="nakagawa2024" p="53" />. A community discussion gives the analogous
-		judgment <i lang="ain-Latn">ku=ikra</i>, rejecting
-		*<i lang="ain-Latn">ku=ykra</i> and *<i lang="ain-Latn">k=ikra</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28) ‹corpus-suggested›.
+		Weakening is blocked when it would create an inadmissible consonant sequence. With <i
+			lang="ain-Latn">inkar</i
+		>
+		“look,” Nakagawa gives
+		<i lang="ain-Latn">kuínkar</i>; with <i lang="ain-Latn">ikka</i> “steal,”
+		<i lang="ain-Latn">kuíkka</i>
+		<Ref k="nakagawa2024" p="53" />. Satō gives the same restriction for <i lang="ain-Latn">ku-</i>
+		and
+		<i lang="ain-Latn">e-</i> before <i lang="ain-Latn">inkar</i>
+		<Ref k="sato2008" p="110–111" />.
 	</p>
 	<p>
-		That discussion also compares the lexical verbs <i lang="ain-Latn">eikra</i>
-		'send' and <i lang="ain-Latn">eywanke</i> 'use' with the adverb
-		<i lang="ain-Latn">eytasa</i> 'too; very'. Their meanings and word classes are
-		listed by Tamura <Ref k="tamura1996" p="s.vv. eikra, eywanke, eytasa" />.
-		The discussion proposes derivations with <i lang="ain-Latn">e-</i>; it does not
-		present these words as second-person forms of <i lang="ain-Latn">ikra</i>,
-		<i lang="ain-Latn">iwanke</i>, or <i lang="ain-Latn">itasa</i>.
+		Satō treats <i lang="ain-Latn">ci-</i> before initial /i/ separately. He reports no examples in
+		his description and tentatively predicts a sequence
+		<i lang="ain-Latn">cii</i>
+		<Ref k="sato2008" p="111, point 4" /> ‹speculative›. His documented <i lang="ain-Latn">ku-</i>
+		and <i lang="ain-Latn">e-</i> patterns therefore leave this combination unresolved.
 	</p>
-
-	<Ex
-		m="ku=ipe"
-		ain="ku=ype"
-		g="1SG.S=eat.meal"
-		tr="I eat a meal."
-		note="Nakagawa gives /kúype/. The /u/ of ku= is retained, while the stem-initial /i/ becomes the coda /y/."
-		cite="nakagawa2024:52"
-		place="Saru and Chitose"
-	/>
 </S>
 
-<S t="Prosodic integration and rule ordering" id="prosodic-integration">
+<S t="Accent and the order of changes" id="prosodic-integration">
 	<p>
-		The markers <i lang="ain-Latn">ku=</i>, <i lang="ain-Latn">e=</i>, and
-		<i lang="ain-Latn">ci=</i> form a single prosodic word with the following stem, so that the
-		pitch-accent placement rules (原則1 / 原則2; <Xr ch="pitch-accent-placement-rule" />) are
-		reapplied to the whole unit. The crucial ordering point is that the accent shift occurs
-		<em>before</em> vowel deletion: the surface accent is computed from the prefixed word, not
-		re-derived from the contracted form <Ref k="nakagawa2024" p="52" />;
-		<Ref k="shiraishi2022" p="§5.1" />.
-	</p>
-
-	<p>
-		The derivation of <i lang="ain-Latn">k=ómare</i> illustrates the two-step ordering: <Ref k="nakagawa2024" p="§1.4.5" />
-	</p>
-
-	<table>
-		<caption>
-			Table 2. Rule ordering: accent shift precedes deletion
-		</caption>
-		<thead>
-			<tr>
-				<th>stage</th>
-				<th>form</th>
-				<th>syllable structure and accent</th>
-				<th>operation</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>underlying</td>
-				<td><i lang="ain-Latn">omáre</i></td>
-				<td>o|má|re — σ1 = V (open) → 原則2: accent on σ2</td>
-				<td>—</td>
-			</tr>
-			<tr>
-				<td>after marker attachment</td>
-				<td><i lang="ain-Latn">ku=ómare</i></td>
-				<td>ku|ó|ma|re — new σ1 = CV (open) → 原則2: accent on new σ2</td>
-				<td>prosodic-word formation; accent reapplied</td>
-			</tr>
-			<tr>
-				<td>surface (Saru/Chitose/Mukawa)</td>
-				<td><i lang="ain-Latn">k=ómare</i> [kómaɾe]</td>
-				<td>kó|ma|re — σ1 now CVC; accent fixed</td>
-				<td>/u/ deletion; σ1–σ2 merge</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<p>
-		The same ordering holds with <i lang="ain-Latn">ci=</i>: <i lang="ain-Latn">etú</i> →
-		<i lang="ain-Latn">ci=étu</i> (accent on σ2 of the new unit) →
-		<i lang="ain-Latn">c=étu</i> [ˈcetu] <Ref k="nakagawa2024" p="52" />. For consonant-initial
-		stems, deletion does not apply; only the accent shift operates:
-		<i lang="ain-Latn">hopúni</i> → <i lang="ain-Latn">ku=hópuni</i> 'I rise'
+		Nakagawa derives contracted forms by applying accent relocation before vowel loss. The
+		unprefixed verb <i lang="ain-Latn">omáre</i> receives stem-initial accent with
+		<i lang="ain-Latn">ku=</i>, producing <i lang="ain-Latn">ku=ómare</i>. Contraction then gives
+		<i lang="ain-Latn">k=ómare</i>
 		<Ref k="nakagawa2024" p="52" />.
 	</p>
-
-	<p>
-		The markers <i lang="ain-Latn">a=</i> (fourth-person agent/subject) and
-		<i lang="ain-Latn">eci=</i> (second-person plural agent/subject) behave differently: they do
-		not form a single prosodic word with the stem, so the stem retains its underlying accent
-		without shift. Thus <i lang="ain-Latn">omáre</i> → <i lang="ain-Latn">a=omáre</i> (accent
-		unchanged) <Ref k="nakagawa2024" p="53" />; <Ref k="shiraishi2022" p="§5.1" />.
-	</p>
-
 	<table>
-		<caption>
-			Table 3. Accent-class split among person markers
-		</caption>
-		<thead>
-			<tr>
-				<th>marker</th>
-				<th>prosodic-word formation</th>
-				<th>accent shift on V-initial stem</th>
-				<th>vowel deletion before &#123;a, e, u, o&#125;</th>
-			</tr>
-		</thead>
+		<thead><tr><th>Stage in Nakagawa's analysis</th><th>Syllables and accent</th></tr></thead>
 		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">ku=</i> (1sg A/S)</td>
-				<td>yes (inner class)</td>
-				<td>yes</td>
-				<td>yes (Saru/Chitose/Mukawa)</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">e=</i> (2sg A/S)</td>
-				<td>yes (inner class)</td>
-				<td>yes</td>
-				<td>/e/ not subject to deletion rule</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">ci=</i> (1pl excl. A/S)</td>
-				<td>yes (inner class)</td>
-				<td>yes</td>
-				<td>yes (Saru/Chitose/Mukawa)</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">a=</i> (4th person A/S)</td>
-				<td>no (outer class)</td>
-				<td>no</td>
-				<td>no</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">eci=</i> (2pl A/S)</td>
-				<td>no (outer class)</td>
-				<td>no</td>
-				<td>no</td>
-			</tr>
+			<tr><td>Unprefixed form</td><td lang="ain-Latn">o.má.re</td></tr>
+			<tr><td>Prefixed form, accent relocated</td><td lang="ain-Latn">ku.ó.ma.re</td></tr>
+			<tr><td>Prefix vowel lost</td><td lang="ain-Latn">kó.ma.re</td></tr>
 		</tbody>
 	</table>
-</S>
-
-<S t="Juncture tightness and the =an boundary" id="juncture-tightness">
 	<p>
-		Community notes on Mukawa recordings compare <i lang="ain-Latn">a=kor itak</i>
-		'speech one has', transcribed [akorəʔitak], with <i lang="ain-Latn">unukar=an</i>,
-		transcribed [unukaran]. A follow-up in the same discussion reports [unkarəʔan] in careful
-		speech <Ref k="aynucorporadiscord" /> (nukopoli, 2024-03-18) ‹corpus-suggested›.
-		The glottal realization at the <i lang="ain-Latn">=an</i> boundary thus varies in
-		these observations. A separate note suggests that <i lang="ain-Latn">a=</i> and
-		<i lang="ain-Latn">=an</i> tend to be pronounced more independently than
-		<i lang="ain-Latn">ku=</i> and <i lang="ain-Latn">e=</i>
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-05) ‹speculative›.
-	</p>
-
-	<p>
-		The reported [sapʔan] pronunciation of <i lang="ain-Latn">sap=an</i> occurs in a
-		brief note that also contrasts [sa.nan] and later mentions
-		<i lang="ain-Latn">sapas</i> <Ref k="aynucorporadiscord" />
-		(nukopoli, 2023-12-27) ‹corpus-suggested›. These observations do not establish that
-		<i lang="ain-Latn">=an</i> invariably blocks resyllabification after a consonant.
-		Shiraishi describes resyllabification as frequent across morpheme boundaries, with
-		occasional blocking before an accented vowel or at certain morphological boundaries
-		<Ref k="shiraishi2022" p="§4.4" />. For the reported variation, see
-		<Xr ch="glottal-stop" s="juncture" />.
+		The surface initial syllable <span lang="ain-Latn">kó</span> is open. Its accent reflects the order
+		of operations in this account, so it cannot be predicted by applying the ordinary open-first-syllable
+		rule only to the final contracted shape.
 	</p>
 	<p>
-		The <i lang="ain-Latn">=an</i> suffix carries a secondary accent in Shiraishi's example
-		<i lang="ain-Latn">iˈruska-ˌan</i> 'we (inclusive) are angry'. The secondary accent
-		is lost when the stem consists of a single closed syllable, (C)VC:
-		<i lang="ain-Latn">ˈcis-an</i> 'we (inclusive) cry' and
-		<i lang="ain-Latn">ˈsap-an</i> 'we (inclusive) go downstream'
-		<Ref k="shiraishi2022" p="§5.1" />.
+		<i lang="ain-Latn">A=</i> and <i lang="ain-Latn">eci=</i> preserve the stem's accent:
+		<i lang="ain-Latn">a=omáre</i>
+		and <i lang="ain-Latn">eci=etú</i>
+		<Ref k="nakagawa2024" p="53" />. Shiraishi describes the same contrast between person-prefix
+		classes <Ref k="shiraishi2022" p="§5.1" />. See
+		<Xr ch="accent-in-compounds-and-affixation" /> for complex forms more generally.
 	</p>
 </S>
 
-<S t="Connected-speech reductions" id="connected-speech">
+<S t="The boundary before person suffixes" id="juncture-tightness">
 	<p>
-		In fast or casual speech, the vowel-deletion process extends to sequences that have become
-		partially lexicalized. The independent pronoun <i lang="ain-Latn">kuani</i> 'I' (analysed in
-		<Xr ch="independent-personal-pronouns" />) reduces to <i lang="ain-Latn">kani</i> by the
-		same /u/-deletion that yields <i lang="ain-Latn">ciep</i> → <i lang="ain-Latn">cep</i>
-		'food (eaten thing)'
-		<Ref k="aynucorporadiscord" /> (gengojiro, 2024-02-05) ‹corpus-suggested›. Both
-		<i lang="ain-Latn">kani</i> and <i lang="ain-Latn">cep</i> are the standard Saru/Chitose
-		dictionary entries, showing that these contractions have become conventionalized rather than
-		remaining casual variants.
+		Satō reports that <i lang="ain-Latn">-an</i> and <i lang="ain-Latn">-as</i>
+		can be preceded by a glottal stop after a consonant other than /n/. His example is
+		<i lang="ain-Latn">sap-an</i>, pronounced [sapʔan]. After /n/, he describes joined pronunciation
+		as usual: <i lang="ain-Latn">san-an</i> is [sanan]
+		<Ref k="sato2008" p="111, point 9" />.
 	</p>
-
+	<Ex
+		m="sap-an"
+		g="go.down.PL-4.S"
+		tr="We go downstream."
+		cite="sato2008:111"
+		dial="CHI"
+		note="Satō's inclusive example, with optional [ʔ] before the suffix. The fourth-person gloss identifies the form series; the source's hyphenation is retained."
+	/>
+	<Ex
+		m="san-an"
+		g="go.down.SG-4.S"
+		tr="I go downstream."
+		cite="sato2008:111"
+		dial="CHI"
+		note="Satō identifies this as literary first-person reference and gives the pronunciation [sanan]. The source's hyphenation is retained."
+	/>
 	<p>
-		The romanized orthography writes underlying (etymological) forms throughout —
-		<i lang="ain-Latn">ku=omare</i> rather than <i lang="ain-Latn">k=omare</i>;
-		<i lang="ain-Latn">ran wa</i> rather than <i lang="ain-Latn">ram ma</i> — while katakana
-		practice tends to follow the phonetic output more closely
-		<Ref k="nakagawa2024" p="37–38" />;
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2024-07-09) ‹corpus-confirmed›. The sandhi forms
-		are produced in speech but not written in standard transcription, so corpus searches for
-		assimilated person-marker forms typically return nothing; the spoken distribution of the
-		rule is consequently under-documented in the written record
-		<Ref k="nakagawa2024" p="37–38" />. The wider romanization policy and its divergence from
-		katakana practice are discussed in
-		<Xr ch="orthographic-standardization-and-word-division" />.
+		The suffix boundary can thus remain audible in some environments while allowing close phonetic
+		joining in others. Shiraishi's account of resyllabification likewise recognizes morphological
+		and accentual conditions on its application
+		<Ref k="shiraishi2022" p="§4.4" />.
 	</p>
-
 	<p>
-		The coda /r/ of a verb stem can interact with person-marker sandhi when a /r/-final stem
-		precedes a vowel-initial marker or suffix. The regressive assimilation rules of
-		<Xr ch="coda-r-assimilation-sonorant-sandhi" /> operate on the coda /r/ first and produce
-		the form that then serves as input to person-marker juncture rules. The fast-speech
-		deletion of word-final /r/ itself (<i lang="ain-Latn">kur</i> →
-		<i lang="ain-Latn">ku</i>, <i lang="ain-Latn">kor</i> → <i lang="ain-Latn">ko</i>) is
-		treated in <Xr ch="rhotic-r" />.
+		Secondary accent supplies another distinction. Shiraishi gives
+		<span lang="ain-Latn">iˈruska-ˌan</span> “we, including you, are angry,” but no secondary accent
+		in <span lang="ain-Latn">ˈsap-an</span> or
+		<span lang="ain-Latn">ˈcis-an</span>, whose stems are closed monosyllables
+		<Ref k="shiraishi2022" p="§5.1, examples 20–21" />. The accent and glottal patterns concern
+		different aspects of the suffix boundary.
 	</p>
 </S>
 
-<S t="The clitic–affix cline" id="clitic-affix-cline">
+<S t="Connected speech, dialect forms, and spelling" id="connected-speech">
 	<p>
-		Nakagawa's standard romanization applies the equals sign to all person markers at the
-		left or right edge of the verb: <i lang="ain-Latn">ku=</i>,
-		<i lang="ain-Latn">e=</i>, <i lang="ain-Latn">a=</i>, <i lang="ain-Latn">ci=</i>,
-		<i lang="ain-Latn">eci=</i>, <i lang="ain-Latn">en=</i>, <i lang="ain-Latn">un=</i>,
-		<i lang="ain-Latn">=an</i>, and <i lang="ain-Latn">=as</i>
-		<Ref k="nakagawa2024" p="33" />. The <code>=</code> is an orthographic device — Nakagawa
-		states expressly that it is unrelated to the linguistic convention of marking clitics with
-		an equals sign <Ref k="nakagawa2024" p="58–60" /> — so the notation itself carries no claim
-		about clitic as against affix status. The orthographic policy is discussed in
-		<Xr ch="orthographic-standardization-and-word-division" s="equals-sign" />.
+		Lexical person forms also vary by dialect. Nakagawa and Fukazawa contrast Saru and Chitose
+		<i lang="ain-Latn">kani</i> “I” with <i lang="ain-Latn">kuani</i> elsewhere
+		<Ref k="nakagawafukazawa2022" p="§4.1" />. The full and shortened pronouns have this regional
+		distribution.
 	</p>
-
 	<p>
-		Accent placement, vowel deletion, and juncture realization provide evidence about how
-		personal markers combine with their hosts. These patterns differ in scope and do not
-		establish a single ranking of all markers:
+		Transcriptions also vary. Nakagawa explicitly compares spellings such as
+		<i lang="ain-Latn">komap</i>, <i lang="ain-Latn">k omap</i>,
+		<i lang="ain-Latn">k-omap</i>, and <i lang="ain-Latn">k=omap</i>
+		<Ref k="nakagawa2024" p="59–61" />. Contracted forms can therefore appear in Roman-letter texts,
+		with different representations of the boundary. The conventions are discussed in <Xr
+			ch="orthographic-standardization-and-word-division"
+		/>.
 	</p>
+</S>
 
-	<ul>
-		<li>
-			<strong>Accent shift</strong>: the inner class (<i lang="ain-Latn">ku=</i>,
-			<i lang="ain-Latn">e=</i>, <i lang="ain-Latn">ci=</i>) triggers prosodic-word formation
-			and reapplication of accent rules; the outer class (<i lang="ain-Latn">a=</i>,
-			<i lang="ain-Latn">eci=</i>) does not (§4 above;
-			<Ref k="nakagawa2024" p="52–53" paren />; <Ref k="shiraishi2022" p="§5.1" paren />).
-		</li>
-		<li>
-			<strong>Vowel deletion</strong>: only <i lang="ain-Latn">ku=</i> and
-			<i lang="ain-Latn">ci=</i> lose their vowels before stem-initial /a/, /e/, /u/, or /o/
-			in the dialects described in §2 above (<Ref k="nakagawa2024" p="52" paren />).
-		</li>
-		<li>
-			<strong>Juncture variation</strong>: reported <i lang="ain-Latn">=an</i> realizations
-			include joined forms and glottal boundaries. These observations do not establish
-			obligatory blocking of resyllabification or rank the boundary against derivational
-			suffixes (§5 above; <Ref k="aynucorporadiscord" /> nukopoli, 2023-12-27 and
-			2024-03-18, ‹corpus-suggested›).
-		</li>
-	</ul>
-
+<S t="Phonology and the status of person markers" id="clitic-affix-cline">
 	<p>
-		The juncture observations leave the relative phonological independence of
-		<i lang="ain-Latn">=an</i> unresolved. The morphosyntactic diagnostics for the Hokkaido
-		system are taken up
-		in <Xr ch="person-marking-architecture" /> and the template position of each marker in
-		<Xr ch="personal-affix-template-and-ordering" />.
+		Bugaeva combines accent behavior with separability in classifying person markers. She treats <i
+			lang="ain-Latn">ku=</i
+		>
+		and the other accent-affecting prefixes as affixes, <i lang="ain-Latn">a=</i> and
+		<i lang="ain-Latn">eci=</i>
+		as clitics, and discusses word-like properties of the person suffixes
+		<Ref k="bugaeva2012" p="472–473" />. This is a structural analysis of several properties, beyond
+		the vowel alternations alone.
+	</p>
+	<p>
+		Nakagawa's equals sign has a more limited purpose: it identifies person markers without deciding
+		their word or clitic status, and does not specify a pronunciation boundary
+		<Ref k="nakagawa2024" p="52, 59–61" />. The notation can consequently remain the same across
+		markers whose phonological behavior differs.
 	</p>
 </S>

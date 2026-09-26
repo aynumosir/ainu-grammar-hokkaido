@@ -1,394 +1,186 @@
-<!-- src/lib/grammar/chapters/glides-w-y.svelte -->
 <script lang="ts">
-	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import { S, Ex, Ref, Xr } from '$lib/grammar/components';
 </script>
 
-<S t="The analytical question" id="overview">
+<S t="Glides in syllables and at boundaries" id="overview">
 	<p>
-		Hokkaido Ainu words frequently end in sequences pairing a vowel with a following
-		<i lang="ain-Latn">y</i> [j] or <i lang="ain-Latn">w</i> [w]:
-		<i lang="ain-Latn">áynu</i> 'human', <i lang="ain-Latn">kamúy</i> 'spirit',
-		<i lang="ain-Latn">ohaw</i> 'soup', <i lang="ain-Latn">kéwtum</i> 'heart',
-		<i lang="ain-Latn">ináw</i> 'prayer-wand'. Two analyses have been proposed for these sequences.
-		The first treats the final element as a coda consonant — /y/ or /w/ — parallel to the coda
-		stops, nasals, and /r/ of the inventory. The second treats the sequences as falling diphthongs,
-		with the final element a non-syllabic vowel ([i̯] or [u̯]), giving bimoraic nuclei
-		[ai̯], [au̯], [ei̯], [eu̯], [oi̯], [ui̯]
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-11). Phonetically the two analyses are
-		indistinguishable: both produce the same output, and neither predicts any difference in
-		production or perception
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-11). The question is whether
-		post-vocalic <i lang="ain-Latn">y</i>/<i lang="ain-Latn">w</i> behave morphologically and
-		prosodically as consonants or as the second element of a vowel nucleus.
+		Ainu /y/ and /w/ have the pronunciations [j] and [w]. They occur at syllable beginnings and
+		endings, and glide-like transitions also occur between vowels. Two questions must therefore be
+		distinguished: how a final glide fits into syllable structure, and whether a particular
+		intervocalic glide belongs to the phonological form of a word
+		<Ref k="nakagawa2024" p="31, 34–35" />;
+		<Ref k="shiraishi2022" p="§§3, 4.3" />.
 	</p>
 	<p>
-		This chapter covers the phonemic status of coda <i lang="ain-Latn">y</i> and
-		<i lang="ain-Latn">w</i> and the related question of the marginal onset sequences
-		<i lang="ain-Latn">yi</i>, <i lang="ain-Latn">wi</i>, and <i lang="ain-Latn">wu</i>.
-		The full phoneme inventory is in <Xr ch="consonant-inventory" /> and
-		<Xr ch="vowel-inventory" />; the (C)V(C) syllable canon in <Xr ch="syllable-template" />.
-		The glide that appears at morpheme-boundary hiatus — the [j] in
-		<i lang="ain-Latn">i-y-ekarkar</i> — is a separate process treated in
-		<Xr ch="glide-epenthesis-hiatus-resolution" />.
+		Modern descriptions commonly treat final /y/ and /w/ as coda consonants. The treatment of glides
+		between vowels is more disputed and depends on dialect and morphological structure <Ref
+			k="okuda2025"
+			p="40–44"
+		/> ‹contested›.
 	</p>
 </S>
 
-<S t="The consonant analysis" id="consonant-analysis">
+<S t="Final glides as consonants" id="consonant-analysis">
 	<p>
-		The standard modern analysis treats post-vocalic <i lang="ain-Latn">y</i> and
-		<i lang="ain-Latn">w</i> as coda consonants, assigning syllables like
-		<i lang="ain-Latn">ay</i>, <i lang="ain-Latn">muy</i>, <i lang="ain-Latn">haw</i>, and
-		<i lang="ain-Latn">kew</i> to the CVC slot of the (C)V(C) canon alongside
-		<i lang="ain-Latn">cep</i>, <i lang="ain-Latn">sin</i>, and <i lang="ain-Latn">ker</i>
-		<Ref k="nakagawa2024" p="29" />; <Ref k="shiraishi2022" p="§3" />.
-		Three diagnostics converge on this position.
+		Nakagawa analyzes <i lang="ain-Latn">aynu</i> “person” as
+		<span lang="ain-Latn">ay.nu</span> and <i lang="ain-Latn">ohaw</i> “soup” as
+		<span lang="ain-Latn">o.haw</span>. The final glide belongs to the preceding syllable and cannot
+		itself bear an accent <Ref k="nakagawa2024" p="31" />. Satō likewise treats
+		<i lang="ain-Latn">nay</i> “stream” and <i lang="ain-Latn">haw</i> “voice” as monosyllabic <Ref
+			k="sato2008"
+			p="10–11"
+		/>.
 	</p>
-
-	<S t="Nominalizer allomorphy" id="nmlz-allomorphy">
+	<S t="Evidence from nominalization" id="nmlz-allomorphy">
 		<p>
-			The participant/event nominalizer has two allomorphs conditioned by the final segment of the
-			base: <i lang="ain-Latn">-p</i> attaches to vowel-final stems and
-			<i lang="ain-Latn">-pe</i> to consonant-final stems
-			<Ref k="shiraishi2022" p="§3" />; <Ref k="nakagawa2024" p="29" />. The selection is
-			phonological and applies without exception across the lexicon. Stems ending in
-			<i lang="ain-Latn">y</i> and <i lang="ain-Latn">w</i> consistently take
-			<i lang="ain-Latn">-pe</i>, grouping with the consonant-final class. For the full treatment
-			of these nominalizers see <Xr ch="nominalization-p-pe" />.
+			Shiraishi uses nominalizer selection as evidence for the consonant analysis. The shorter form <i
+				lang="ain-Latn">-p</i
+			>
+			follows a vowel, while
+			<i lang="ain-Latn">-pe</i> follows a consonant. His examples with final glides take
+			<i lang="ain-Latn">-pe</i>
+			<Ref k="shiraishi2022" p="§3" />:
 		</p>
-
-		<table>
-			<thead>
-				<tr>
-					<th>stem</th>
-					<th>final segment</th>
-					<th>nominalizer</th>
-					<th>derived form</th>
-					<th>approximate gloss</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><i lang="ain-Latn">poro</i> 'big'</td>
-					<td>/o/ — vowel</td>
-					<td><i lang="ain-Latn">-p</i></td>
-					<td><i lang="ain-Latn">poro-p</i></td>
-					<td>'the big one'</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">pon</i> 'small'</td>
-					<td>/n/ — nasal</td>
-					<td><i lang="ain-Latn">-pe</i></td>
-					<td><i lang="ain-Latn">pon-pe</i></td>
-					<td>'the small one'</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">an</i> 'exist'</td>
-					<td>/n/ — nasal</td>
-					<td><i lang="ain-Latn">-pe</i></td>
-					<td><i lang="ain-Latn">an-pe</i></td>
-					<td>'the existing thing'</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">okay</i> 'be (pl.)'</td>
-					<td>/y/ — glide</td>
-					<td><i lang="ain-Latn">-pe</i></td>
-					<td><i lang="ain-Latn">okay-pe</i></td>
-					<td>'those who are (pl.)'</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">siw</i> 'jostle'</td>
-					<td>/w/ — glide</td>
-					<td><i lang="ain-Latn">-pe</i></td>
-					<td><i lang="ain-Latn">siw-pe</i></td>
-					<td>'the jostling ones'</td>
-				</tr>
-			</tbody>
-		</table>
-
+		<Ex
+			m="okay-pe"
+			g="be.PL-NMLZ"
+			tr="those who are"
+			cite="shiraishi2022:§3"
+			dial="HK"
+			note="The nominalizer follows final /y/. English glosses are supplied here; Shiraishi's section does not specify a locality for these forms."
+		/>
+		<Ex
+			m="siw-pe"
+			g="be.bitter-NMLZ"
+			tr="a bitter thing"
+			cite="shiraishi2022:§3"
+			dial="HK"
+			note="The nominalizer follows final /w/. The lexical meaning follows the cited passage; English glosses are supplied here."
+		/>
 		<p>
-			On the diphthong analysis the final element of <i lang="ain-Latn">okay</i> and
-			<i lang="ain-Latn">siw</i> is a non-syllabic vowel, which should trigger the vowel allomorph
-			<i lang="ain-Latn">-p</i>; the occurring forms <i lang="ain-Latn">okay-pe</i> and
-			<i lang="ain-Latn">siw-pe</i> would then be exceptions requiring an auxiliary stipulation.
-			On the consonant analysis they are regular: /y/ and /w/ are consonants, and
-			<i lang="ain-Latn">-pe</i> is the expected allomorph <Ref k="shiraishi2022" p="§3" />.
+			The glides thus pattern with other final consonants in this alternation. The nominalizing
+			construction is discussed in <Xr ch="nominalization-p-pe" />.
 		</p>
 	</S>
-
-	<S t="Plural-suffix allomorphy" id="plural-allomorphy">
+	<S t="Nominalization and number" id="plural-allomorphy">
 		<p>
-			The same consonant–vowel boundary governs the distributive plural suffix, which surfaces as
-			<i lang="ain-Latn">-te</i> after a consonant-final stem and <i lang="ain-Latn">-re</i> after
-			a vowel-final stem. The plural of <i lang="ain-Latn">ante</i> is
-			<i lang="ain-Latn">okayte</i> (&lt; <i lang="ain-Latn">okay</i> + <i lang="ain-Latn">-te</i>),
-			selecting the consonant allomorph on the evidence that stem-final /y/ is a consonant;
-			vowel-final stems take <i lang="ain-Latn">-re</i>
-			<Ref k="aynucorporadiscord" /> (nukopoli, 2025-12-03) ‹corpus-confirmed›. The pattern
-			mirrors the nominalizer allomorphy: /y/ at stem-end triggers the consonant-class allomorph
-			in both environments independently.
+			The choice between <i lang="ain-Latn">-p</i> and <i lang="ain-Latn">-pe</i> in these examples
+			concerns the stem's final segment. It does not itself mark a singular–plural opposition.
+			Number distinctions in the predicate and the interpretation of the whole nominalized
+			expression need separate analysis; the allomorphy supplies evidence about the final glide <Ref
+				k="shiraishi2022"
+				p="§3"
+			/>.
 		</p>
 	</S>
-
-	<S t="Syllabification and pitch-accent placement" id="accent-glide">
+	<S t="Syllables and accent" id="accent-glide">
 		<p>
-			In the pitch-accent dialects of Hokkaido Ainu (Saru, Chitose, Horobetsu, and related
-			varieties), accent placement is determined by the weight of the first syllable: a closed
-			(CVC) first syllable bears the rising pitch nucleus (↗), while an open (CV) first syllable
-			passes the peak to the second syllable <Ref k="nakagawa2024" p="50" />. The system is
-			described in full in <Xr ch="pitch-accent-placement-rule" />. Words whose first syllable
-			ends in <i lang="ain-Latn">y</i> or <i lang="ain-Latn">w</i> pattern as CVC-closed
-			(Rule 1), not as open syllables followed by an additional vowel:
-		</p>
-
-		<table>
-			<thead>
-				<tr>
-					<th>form</th>
-					<th>syllabification</th>
-					<th>σ1 type</th>
-					<th>accent rule</th>
-					<th>gloss</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><i lang="ain-Latn">áynu</i></td>
-					<td>/áy.nu/</td>
-					<td>CVC — closed</td>
-					<td>Rule 1: σ1 high</td>
-					<td>'human'</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">kéwtum</i></td>
-					<td>/kéw.tum/</td>
-					<td>CVC — closed</td>
-					<td>Rule 1: σ1 high</td>
-					<td>'heart'</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">kamúy</i></td>
-					<td>/ka.múy/</td>
-					<td>CV — open</td>
-					<td>Rule 2: σ2 high</td>
-					<td>'spirit'</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">ináw</i></td>
-					<td>/i.náw/</td>
-					<td>CV — open</td>
-					<td>Rule 2: σ2 high</td>
-					<td>'prayer-wand'</td>
-				</tr>
-				<tr>
-					<td><i lang="ain-Latn">ohaw</i></td>
-					<td>/o.háw/</td>
-					<td>CV — open</td>
-					<td>Rule 2: σ2 high</td>
-					<td>'soup'</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<p>
-			<i lang="ain-Latn">áynu</i> /áy.nu/ has two syllables; the first is CVC-closed and thus
-			high under Rule 1. Under the diphthong analysis, <i lang="ain-Latn">ay</i> is a V+V nucleus
-			rather than a CVC syllable, and Rule 1 — which keys on the presence of a coda consonant —
-			has no basis to apply; an additional rule or stipulation would be required. The consonant
-			analysis lets the standard placement rules cover these forms without exception
-			<Ref k="nakagawa2024" p="29, 50" />;
-			<Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-11). The same simplification holds in
-			compounds: <i lang="ain-Latn">kamúy</i> in <i lang="ain-Latn">kamúynomi</i> 'pray to a
-			spirit' retains its Rule 2 accent as the first element, the coda /y/ keeping the compound
-			syllable count transparent; see <Xr ch="accent-in-compounds-and-affixation" />.
+			In the accentual varieties described here, a syllable ending in /y/ or /w/ is closed. This
+			allows the usual accent rule to apply: <i lang="ain-Latn">áynu</i> has initial accent, while
+			<i lang="ain-Latn">kamúy</i>
+			has accent on its second syllable after an open first syllable <Ref k="sato2008" p="15" />;
+			<Ref k="shiraishi2022" p="§5.1" />. The distribution is treated in
+			<Xr ch="pitch-accent-placement-rule" />.
 		</p>
 	</S>
 </S>
 
-<S t="The diphthong analysis" id="diphthong-analysis">
+<S t="Diphthong terminology" id="diphthong-analysis">
 	<p>
-		Kindaichi &amp; Chiri <Ref k="kindaichi1936" /> (cited via
-		<Ref k="shiraishi2022" p="§3" />) analysed post-vocalic <i lang="ain-Latn">y</i> and
-		<i lang="ain-Latn">w</i> as the second elements of falling diphthongs. Early romanization and
-		katakana transcription followed this view: <i lang="ain-Latn">kamuy</i> was written カムイ
-		(four kana), treating the final element as a full vowel; <i lang="ain-Latn">aynu</i> appeared
-		as アイノ, reflecting the approximate quality of the rounded unstressed second element
-		<Ref k="nakagawa2024" p="26, 29" />. The orthographic reform that Chiri Yukie
-		(知里幸恵, c. 1923) introduced — <i lang="ain-Latn">kamuy</i>, <i lang="ain-Latn">ohaw</i>,
-		<i lang="ain-Latn">kewtum</i> for カムイ, オハウ, ケウトゥム — was motivated by exactly the
-		morphological and prosodic evidence set out in §2, not by any change in phonetic realization
-		<Ref k="nakagawa2024" p="29" />.
+		Older descriptions also call vowel-plus-glide sequences diphthongs. Shiraishi contrasts this
+		terminology in Kindaichi and Chiri with the consonant analysis he adopts
+		<Ref k="shiraishi2022" p="§3" />. Refsing describes final /w/ and /y/ as vowel-like elements
+		forming diphthongs while listing them among the consonants
+		<Ref k="refsing1986" p="§10.3" />.
 	</p>
 	<p>
-		Phonetically the diphthong analysis is accurate. The sequences are realized as falling
-		diphthongs — [ai̯], [au̯], [ei̯], [eu̯], [oi̯], [ui̯] — in which the second element is
-		non-syllabic <Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-11). Nothing in the acoustic
-		signal distinguishes a coda consonant from a non-syllabic vowel in this position: the two
-		analyses predict identical phonetic outputs. The diphthong analysis is a coherent phonetic
-		description; its weakness is at the morpho-phonological level, where it forces the statement
-		that a "non-syllabic vowel" triggers the consonant-class allomorphs of both the nominalizer
-		and the plural suffix.
-	</p>
-	<p>
-		The fullest structuralist defence of the diphthong view is Simeon's, who classes /w y/ as
-		"nonsyllabic vowels" on four grounds: phonetic similarity to /u i/, a clustering pattern
-		unlike that of the consonants, the narrow allophonic range they share with the vowels, and
-		their undergoing the same elision as syllabic vowels <Ref k="simeon1968" p="14–15" />. The
-		cost of the analysis shows in his inventory of units: alongside rising and falling
-		diphthongs he must admit a triphthong <i lang="ain-Latn">yay</i> and a "geminate
-		diphthong" <i lang="ain-Latn">ayay</i> 'baby' <Ref k="simeon1968" p="18" /> — sequences
-		the coda analysis parses without any new unit types, as <i lang="ain-Latn">yay</i> (CVC)
-		and <i lang="ain-Latn">a.yay</i> (V.CVC). His own morphophonemics also lists the elision
-		and clustering behavior that the consonant analysis takes as diagnostic, so the same data
-		sorted by modern criteria land on the opposite conclusion.
+		The term can consequently refer to a phonetic sequence without deciding its structural analysis.
+		A comparison between descriptions needs to establish whether “diphthong” means two vowel
+		qualities in one syllable or a claim about the phonological nucleus.
 	</p>
 </S>
 
-<S t="Assessment" id="assessment">
+<S t="What the coda evidence establishes" id="assessment">
 	<p>
-		The consonant analysis is adopted by Nakagawa <Ref k="nakagawa2024" p="29" />, Shiraishi
-		<Ref k="shiraishi2022" p="§3" />, and Satō <Ref k="sato2008" p="§2.2" />, and is the
-		working assumption of this grammar ‹consensus›. The three diagnostics in §2 — nominalizer
-		allomorphy, plural-suffix allomorphy, and pitch-accent placement — all turn on the same
-		categorical distinction (consonant vs. vowel-final stem), and all place /y/ and /w/ in the
-		consonant class without exception. The diphthong analysis requires an auxiliary rule
-		reclassifying the non-syllabic vowels as consonant-class triggers in three separate
-		morpho-phonological environments; no evidence favours this stipulation over the simpler
-		consonant phonemicization ‹contested›.
-	</p>
-	<p>
-		The community formulation captures the symmetry: reading /y/ and /w/ as consonants makes the
-		consonant-like morphological behaviour fall out; reading them as vowels makes the phonetic
-		falling-diphthong character explicit; neither reading misrepresents the phonetics
-		<Ref k="aynucorporadiscord" /> (nukopoli, 2023-12-11). Post-vocalic
-		<i lang="ain-Latn">y</i> and <i lang="ain-Latn">w</i> are phonological coda consonants /y/
-		and /w/; their surface realization as the non-syllabic elements [i̯] and [u̯] of falling
-		diphthongs is their expected phonetic output in that position.
+		Syllabification and nominalizer selection give a direct basis for treating final /y/ and /w/ as
+		consonants in the description used here. This evidence does not settle the status of every glide
+		between vowels. The latter question requires comparisons in which the morphological boundary and
+		dialect are known.
 	</p>
 </S>
 
-<S t="Onset glides" id="onset-glides">
+<S t="Glides at syllable beginnings" id="onset-glides">
 	<p>
-		Word-initial and post-consonantal <i lang="ain-Latn">y</i> [j] and
-		<i lang="ain-Latn">w</i> [w] are onset consonants without analytical controversy:
-		<A w="yuk" gl="deer" />, <A w="yam" gl="potato" />, <A w="wakka" gl="water" />,
-		<A w="wen" gl="bad" />. Their onset and coda realizations are phonetically identical —
-		onset [j] = coda [i̯], onset [w] = coda [u̯] — which is consistent with a single
-		phoneme appearing in both positions, parallel to /m n r/ in Hokkaido Ainu
-		<Ref k="nakagawa2024" p="27–29" />; <Ref k="shiraishi2022" p="§3" />.
+		Onset /y/ and /w/ are the palatal and labial-velar glides. A glide heard between vowels may be a
+		lexical consonant or a transition whose status is disputed. Nakagawa gives
+		<i lang="ain-Latn">iwor</i> “hunting ground” as a form containing phonemic /w/, separately from
+		the transitions he leaves unwritten
+		<Ref k="nakagawa2024" p="34–35" />.
 	</p>
 </S>
 
-<S t="Marginal sequences: yi, wi, wu" id="marginal-syllables">
+<S t="The sequences yi, wi, and wu" id="marginal-syllables">
 	<p>
-		Three onset–vowel sequences are absent from Hokkaido Ainu monomorphemic roots:
-		<i lang="ain-Latn">yi</i>, <i lang="ain-Latn">wi</i>, and <i lang="ain-Latn">wu</i>.
-		Nakagawa states that no root has any of these as its initial syllable, and that syllables of
-		the shape <i lang="ain-Latn">yi-C</i>, <i lang="ain-Latn">wi-C</i>,
-		<i lang="ain-Latn">wu-C</i> do not exist in the language <Ref k="nakagawa2024" p="43–45" />;
-		the same point is made in Shiraishi <Ref k="shiraishi2022" p="§4.2" />, with attribution to
-		Kindaichi 1931:13 and Tamura 1988b:14. A palatal glide before a high front vowel ([ji]) and a
-		labio-velar glide before a high back rounded vowel ([wu], [wi]) are articulatorily
-		near-redundant transitions, and similar restrictions are typologically common. The phonotactic
-		constraint is parallel to the absence of the onset <i lang="ain-Latn">ti</i> from Ainu roots —
-		its place in the table is empty, not filled by a rare allophone
-		<Ref k="nakagawa2024" p="43–44" />.
+		Descriptions commonly exclude /yi, wi, wu/ from simple roots while allowing some of them at
+		morphological boundaries <Ref k="nakagawa2024" p="44–45" />;
+		<Ref k="shiraishi2022" p="§4.2" />. This is a restriction on a particular lexical domain, with
+		consequences for how a combined form is syllabified.
 	</p>
-
-	<S t="Boundary-derived occurrences" id="boundary-yi-wi-wu">
+	<S t="Boundary-derived sequences" id="boundary-yi-wi-wu">
 		<p>
-			The sequences [ji] and [wu] arise at morpheme boundaries through resyllabification. When
-			a /y/-final coda immediately precedes an /i/-initial syllable across a morpheme or compound
-			boundary, the coda resyllabifies as the onset of the following syllable, producing surface
-			[ji]; the analogous process generates [wu] at a /w/–/u/ juncture.
-			Shiraishi <Ref k="shiraishi2022" p="§4.2" /> cites
-			<i lang="ain-Latn">yayirwakikor</i> (&lt; <i lang="ain-Latn">yay irwaki kor</i>) as a compound
-			containing surface [ji] at an internal boundary, and
-			<i lang="ain-Latn">awun mimtar</i> (&lt; <i lang="ain-Latn">aw un mimtar</i>) as containing
-			[wu]. These are boundary-derived occurrences, not root-internal.
+			Shiraishi reproduces Tamura’s <i lang="ain-Latn">aw un mimtar</i> “entrance space in a house”
+			<Ref k="tamura1996" p="36, via Shiraishi 2022 §4.2, example 3b" />
+			with a pronunciation joining /w/ to the following /u/. He also discusses a /y+i/ sequence across
+			a boundary <Ref k="shiraishi2022" p="§4.2" />. Such data require the underlying elements and
+			the surface syllables to be distinguished.
 		</p>
 	</S>
-
-	<S t="The Tamura–Nakagawa dispute on yi/wi/wu phonemic status" id="yi-wi-wu-dispute">
+	<S t="Competing analyses of intervocalic glides" id="yi-wi-wu-dispute">
 		<p>
-			Whether <i lang="ain-Latn">yi</i>, <i lang="ain-Latn">wi</i>, and
-			<i lang="ain-Latn">wu</i> should be recognized as phonemic onset sequences — rare but not
-			impossible — is genuinely disputed ‹contested›. Nakagawa
-			<Ref k="nakagawa2024" p="43–45" /> treats them as categorically restricted to morpheme
-			boundaries and derives their surface occurrences entirely from resyllabification. The
-			position attributed to Tamura in community discussion holds that they are independent onsets
-			comparable in phonemic status to word-initial [j] in English <i>year</i> or [w] in
-			<i>would</i>, and that the rarity of roots with these onsets is a phonotactic gap rather
-			than a categorical exclusion <Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28).
+			Nakagawa treats many glide-like vowel transitions as phonetic and omits them from phonemic
+			spelling <Ref k="nakagawa2024" p="34–35, 40" />. Okuda compares this position with Satō's
+			Chitose analysis, in which the presence of a glide depends on morphological structure and
+			cannot be predicted from adjacent vowels alone
+			<Ref k="okuda2025" p="42–43" />. The sources therefore disagree about which glides belong to
+			phonological representation ‹contested›.
 		</p>
 		<p>
-			The dispute partly tracks the glottal-stop question. On Nakagawa's no-glottal-stop analysis,
-			vowel-initial syllables begin with a bare syllable boundary; a /y/-final coda abutting
-			an /i/-initial syllable produces boundary-derived [ji] by resyllabification. On the
-			glottal-stop analysis (Hattori, Tamura), a contrast between /y/-onset and /ʔ/-onset is
-			available at precisely those positions, which in principle licenses phonemic onset status for
-			[ji], [wi], and [wu] <Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-28);
-			<Ref k="nakagawa2024" p="31–33, 43–45" />. The glottal-stop debate is developed in
-			<Xr ch="syllable-template" />.
-		</p>
-		<p>
-			Nakagawa distinguishes <i lang="ain-Latn">yayrayke</i> 'commit suicide'
-			(/yay.ray.ke/) from <i lang="ain-Latn">yairayke</i> 'give thanks'
-			(/ya.i.ray.ke/) in Saru and Chitose <Ref k="nakagawa2024" p="42" />.
-			Okuda argues for /yayirayke/ for the latter word, based on his observations of
-			Shirasawa Nabe's Chitose pronunciation and Saru recordings, together with Tamura's
-			report of similar Saru realizations. He describes an elongated palatal constriction
-			at the accented second syllable and argues that /ya.irayke/ would incorrectly
-			permit a glottal realization at that boundary
-			<Ref k="okuda2025" p="44" /> ‹contested›.
+			The form meaning “thank” is a particularly informative case. Okuda argues for
+			<i lang="ain-Latn">yayirayke</i> in Chitose and Saru, with accent on the second syllable,
+			against Nakagawa's <i lang="ain-Latn">yairayke</i> analysis. He separately identifies
+			<i lang="ain-Latn">yayrayke</i>
+			in the Shizunai speaker's variety
+			<Ref k="okuda2025" p="44" />. A single normalized spelling would conceal part of this dispute
+			‹contested›.
 		</p>
 	</S>
-</S>
-
-<S t="Glide phonemicity in Shizunai" id="dialect-shizunai">
-	<p>
-		Okuda reports the contrast [suwat] 'pothook' and [suʔat] 'pot bail' in Shizunai,
-		crediting its discovery to 志賀雪湖. Both words are related to
-		<i lang="ain-Latn">su</i> 'pot' and <i lang="ain-Latn">at</i> 'cord', with greater
-		semantic opacity in the pothook term. Okuda finds no distinctive pitch accent in
-		Orita Suteno's variety and takes this pair as evidence for phonological /w/
-		<Ref k="okuda2025" p="41" /> ‹contested›.
-	</p>
-	<table>
-		<caption>Shizunai lexical contrast reported by Okuda (2025: 41)</caption>
-		<thead><tr><th>gloss</th><th>reported pronunciation</th><th>Okuda's phonological representations</th></tr></thead>
-		<tbody>
-			<tr><td>pothook</td><td>[suwat]</td><td>/suwat/</td></tr>
-			<tr><td>pot bail</td><td>[suʔat]</td><td>/su’at/ or /suat/</td></tr>
-		</tbody>
-	</table>
-	<p>
-		Okuda also describes /u’a/ : /uwa/, /u’e/ : /uwe/, /i’o/ : /iyo/ and /i’e/ : /iye/.
-		Weakening of the intervening segments can cause phonetic overlap. The analysis
-		therefore concerns lexical contrasts despite variable realization. It does not require
-		a separate glottal-stop phoneme: Okuda also discusses syllable-boundary representations
-		<Ref k="okuda2025" p="41, 44" />; see <Xr ch="glottal-stop" s="shizunai" />.
-	</p>
-	<p>
-		Okuda notes that the pothook/pot-bail pair can have different accents in Saru.
-		He does not treat this as proof that glides lack phonological status in all accent
-		varieties. His comparison includes Satō's Chitose analysis, which places glide
-		insertion within phonology, and Nakagawa's competing analysis of these glides as
-		phonetic transitions <Ref k="okuda2025" p="41–43" /> ‹contested›.
-		The disagreement concerns both dialectal patterns and the analysis of a given dialect.
-	</p>
-</S>
-
-<S t="Interaction with person-affix accent" id="accent-person-affix">
-	<p>
-		The coda-consonant status of /y/ and /w/ has one further prosodic consequence. When
-		<i lang="ain-Latn">ku=</i> or <i lang="ain-Latn">e=</i> prefixes to a stem beginning with /i/
-		or /u/, vowel-weakening converts the vowel to a glide, producing a CVC-closed first syllable:
-		<i lang="ain-Latn">ku=</i> + <i lang="ain-Latn">ipe</i> →
-		<i lang="ain-Latn">ku=ype</i> /kúype/ (σ1 = /kuy/, closed, Rule 1: accent on σ1)
-		<Ref k="nakagawa2024" p="52–53" />. The derived coda /y/ is treated by the accent system in
-		exactly the same way as root-internal coda /y/ in <i lang="ain-Latn">áynu</i>. The full
-		treatment of vowel-weakening and person-prefix accent shifts is in
-		<Xr ch="personal-affix-sandhi-connected-speech-reduction" /> and
-		<Xr ch="accent-in-compounds-and-affixation" />.
-	</p>
+	<S t="Shizunai evidence" id="dialect-shizunai">
+		<p>
+			Okuda reports a contrast in Orita Suteno's Shizunai speech between [suʔat] “pot bail” and
+			[suwat] “pothook.” His interpretation assigns /w/ phonological status in the second word. He
+			also notes that weakening of glides and glottal closure can make some phonetic realizations
+			overlap <Ref k="okuda2025" p="41" />.
+		</p>
+		<p>
+			This evidence prevents the blanket assumption that every glide between vowels is predictable
+			from the vowel sequence. Its application to other forms and dialects remains a separate
+			question, addressed in
+			<Xr ch="glide-epenthesis-hiatus-resolution" />.
+		</p>
+	</S>
+	<S t="Interaction with person prefixes" id="accent-person-affix">
+		<p>
+			Person prefixes can trigger semivocalization of a stem-initial vowel, changing /i/ to /y/ or
+			/u/ to /w/. Okuda reviews Satō's proposal that this process and glide insertion apply at
+			different levels of morphological derivation
+			<Ref k="okuda2025" p="42–43" />. Nakagawa uses some of the same kinds of forms to argue for a
+			phonetic treatment of the transition. These are competing analyses of the interaction, rather
+			than interchangeable spelling rules ‹contested›.
+		</p>
+		<p>
+			The relevant combinations are described in
+			<Xr ch="personal-affix-sandhi-connected-speech-reduction" /> and
+			<Xr ch="accent-in-compounds-and-affixation" />.
+		</p>
+	</S>
 </S>
