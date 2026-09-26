@@ -121,7 +121,7 @@
 | `kunneywa tunas, a=yupi hopuni hine suke` | Nakagawa2024 p.151 (57), Saru | “Early in the morning my elder brother got up and cooked.” | Full source string; shortened `a=yupi hopuni` requires an explicit excerpt/adaptation note. |
 | `kunneywa an hine, a=yuputari ka hopunpa` | Nakagawa2024 p.151 (58), Saru | “Morning came, and my elder brothers also got up.” | Source-numbered example; retain inclusive/additive `ka` in the gloss. |
 | `iwan a=yupi an, iwan a=saha an hine, oka=an hike` | Nakagawa2024 p.161 (93), Saru | “I had six elder brothers and six elder sisters, and we lived …” | Shows singular existential stems with numerals, then plural with narrative person. Dependent ending; do not create a categorical numeral rule. |
-| `tapkar ku=ki nankor` | Nakagawa2024 p.373 (723), through Tamura1988b:32 | Saru; “I will probably dance.” | Main-verb `ki` with indexed A; `ku=tapkar nankor` is Nakagawa's explanatory paraphrase, not a separately attested quotation. |
+| `tapkar ku=ki nankor` | Nakagawa2024 p.372 (723), through Tamura1988b:32 | Saru; “I will probably dance.” | Main-verb `ki` with indexed A; `ku=tapkar nankor` is Nakagawa's explanatory paraphrase, not a separately attested quotation. |
 | `ipe ka a=ki, rok=an ka ki wa oka=an kusu ne ruwe ne` | Nakagawa2024 p.374 (728), Saru | “We intend to live eating and sitting.” | Two `ki` constructions with different person placement. The source translates the subject as plural “we.” Use Nakagawa's analysis explicitly; do not universalize the first clause across dialects. |
 | `Pirka ku mokor ku ki ayne...` | Refsing1986 p.210 (330), Shizunai | “I did sleep well, and then …” | Both lexical verb and `ki` have `ku`; source original spacing/capitalization. Normalization to `=` must be stated. |
 | `ermu sar ermu sapa ikirihi an. a=kor huci a=kor ekasi ehotke hi, ehotke pa uske erupsike ta ki pa ruwe an yakne` | Nakagawa2024 p.377 (735), Saru; no separate original listed there | Mouse tails and heads lay in a heap; continuation locates it by the grandparents' sleeping place | Best as an explained excerpt for pro-verb reference to `an`; full conditional translation needed if used. Nakagawa also entertains formal-verb analysis; his (735′)/(735″) are analytical paraphrases. |
@@ -140,3 +140,8 @@
 | Source labels and examples | Avoid collapsing OI/Chitose into a Saru table label; avoid adding dialect labels where an individual example is unlabelled; distinguish attested passage, source diagnostic, starred judgment and author paraphrase. |
 | Scholarship preserved | Number-default analysis, additional `pa/ci`, pro-verb `ki`, lexicalized denominal formations, and intensive `-no` are substantive established coverage worth retaining. Brief source disagreements suffice; project workflow tags and repetitive surveys of Ijäs are unnecessary. |
 | No new signoff requested | Existing foundation decisions cover the disputed argument/person/valency principles. Bounded lexical and citation corrections above follow the checked evidence. Any later decision to adopt a new global analysis would require the repository's separate foundation process. |
+
+| Independent review correction | Resolution |
+| --- | --- |
+| Chapter59, ex.723 | Corrected to Nakagawa p.372 after rechecking the scan at leaf368; the earlier matrix locator p.373 was wrong. |
+| Chapter58, additional pa | Restored the source’s participant-versus-event plurality explanation, Nakagawa pp.157–158. |

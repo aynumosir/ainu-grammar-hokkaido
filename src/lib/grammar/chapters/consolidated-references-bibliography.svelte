@@ -203,7 +203,7 @@
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2012). <i lang="ja">アイヌ語の現状と復興</i>. [The current situation and revitalization of the Ainu language].</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2016). <i>A classification of the types of noun incorporation in Ainu and its implications for morphosyntactic typology</i>. Crosslinguistics and linguistic crossings in Northeast Asia (Studia Orientalia 117). Ed. Ekaterina Gruzdeva &amp; Juha Janhunen. Helsinki:</p>
 	<p class="bib-entry">Satō Tomomi 佐藤知己 (2022). <i>Noun incorporation in Ainu</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
-	<p class="bib-entry">Shibatani, Masayoshi (1988). <i>Polysynthesis in Ainu and theories of incorporation</i>.</p>
+	<p class="bib-entry">Shibatani, Masayoshi (1988). <i>Polysynthesis in Ainu and theories of incorporation</i>. 210–211.</p>
 	<p class="bib-entry">Shibatani, Masayoshi (1990). <i>The languages of Japan</i>. Cambridge Language Surveys. Cambridge: Cambridge University Press.</p>
 	<p class="bib-entry">Shiraishi Hideto 白石英才 (2022). <i>Phonetics and phonology</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. Berlin &amp; Boston: De Gruyter Mouton.</p>
 	<p class="bib-entry">Shiraishi Hidetoshi 白石英才 &amp; Tangiku Itsuji 丹菊逸治 (2022). <i>Language contact in the north</i>. Handbook of the Ainu language (HJLL 12). Ed. Anna Bugaeva. ch. 7. Berlin &amp; Boston: De Gruyter Mouton.</p>

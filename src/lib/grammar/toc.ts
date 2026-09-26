@@ -355,23 +355,23 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "suppletive-verbal-number",
-				title: "Verbal Number: Suppletive Stems and the Pluractional -pa",
-				summary: "The closed set of suppletive singular/plural verb stems and the plural suffix -pa: controller arguments, participant-vs-event number, double marking, and the agreement-vs-pluractional debate."
+				title: "Verbal Number and Stem Alternation",
+				summary: "Lexical number pairs, participant and event number, dialect forms, additional pa and ci, and the effects of respect and narrative person."
 			},
 			{
 				slug: "light-and-pro-verbs",
-				title: "Light Verbs, Pro-Verbs, and the Auxiliary-Verb Construction",
-				summary: "The 'do' pro-verbs ki/iki, the structural support uses of ne and an, and the general auxiliary-verb (complex-predicate) construction."
+				title: "Ki, Support Constructions, and Pro-Verbs",
+				summary: "Lexical, formal, assertive, poetic, and referential uses of ki, with their person-marking patterns and dialect differences."
 			},
 			{
 				slug: "denominal-deverbal-verb-derivation",
-				title: "Denominal and Deverbal Verb Derivation",
-				summary: "Non-valency processes that build verbs from nouns and from other verbs, including verb-verb compounding and noun/verb conversion."
+				title: "Verb Formation from Nouns and Verbal Roots",
+				summary: "Lexicalized nominal formations, bound roots, transitivity pairs, different uses of kar, and intensive no."
 			},
 			{
 				slug: "adverbializer-no",
-				title: "The Adverbializer -no and Adverb Formation from Verbs",
-				summary: "The suffix -no deriving manner/degree adverbs from stative (property) verbs, set against related adverb-forming strategies."
+				title: "Adverbial and Intensive No",
+				summary: "Manner formation, lexical restrictions, unsuffixed adverbs, clause-linking no, and distinct intensive verbal forms."
 			}
 		]
 	},
@@ -380,8 +380,8 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "person-marking-architecture",
-				title: "Architecture of the Personal-Affix System: The Four Persons and the S/A/O Paradigms",
-				summary: "The master chapter laying out the whole personal-affix system — the four 'persons', the subjective (A/S) vs objective (O) sub-paradigms, prefix vs suffix exponents, and the terminological wars."
+				title: "Person Marking and Argument Roles",
+				summary: "Basic S, A, and O paradigms, person-conditioned alignment, interaction forms, zero third person, and the morphological status of person markers."
 			},
 			{
 				slug: "first-second-person-singular-affixes",
@@ -525,8 +525,8 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "noun-incorporation-oblique-polysynthesis-debate",
-				title: "Oblique Incorporation and the Syntactic-vs-Lexicalist Debate",
-				summary: "Adverbial/oblique incorporation, its feeding of relativization, and the central syntactic-NI vs lexical-compounding controversy."
+				title: "Incorporation, Quasi-Incorporation, and Word Structure",
+				summary: "Applicative-related incorporation, affix order, Tamura’s 連他動詞, Satō’s lexical quasi-incorporation, Nakagawa’s one-word and two-word forms, and the theoretical debates."
 			},
 			{
 				slug: "adverbial-incorporation",

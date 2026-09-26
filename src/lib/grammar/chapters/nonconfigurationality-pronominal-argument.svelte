@@ -88,7 +88,7 @@
 		that such a zero is required by the two-affix cap on finite verbs
 		<Ref k="sato2025a" p="369" /> (nukopoli, aynu-corpora Discord, 2024-12-25, asserted;
 		<Ref k="aynucorporadiscord" />) ‹contested›. This debate is developed in
-		<Xr ch="person-marking-architecture" s="sao-paradigm" />.
+		<Xr ch="person-marking-architecture" s="third-person" />.
 	</p>
 </S>
 
@@ -240,7 +240,7 @@
 		pattern: the language's two-affix cap means a third argument cannot be indexed, so it is
 		expressed as a bare NP whose reference is guaranteed by verbal valency rather than by its own
 		person marking <Ref k="sato2025a" p="368–369" />. The cap is treated in
-		<Xr ch="person-marking-architecture" s="syncretism" /> and the object-indexing chapters.
+		<Xr ch="person-marking-architecture" s="third-person" /> and the object-indexing chapters.
 	</p>
 	<p>
 		The following attested clause illustrates how overt possessed-NPs in narrative serve to

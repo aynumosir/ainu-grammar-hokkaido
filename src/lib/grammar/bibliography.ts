@@ -1122,6 +1122,8 @@ export const bibliography: Record<string, BibEntry> = {
 		author: 'Shibatani, Masayoshi',
 		citeAuthor: 'Shibatani',
 		year: '1988',
+		pages: '210–211',
+		note: 'Japanese conference abstract; the published title is in English.',
 		title: 'Polysynthesis in Ainu and theories of incorporation',
 		url: 'https://db.aynu.org/sources/1988-shibatani-masayoshi-polysynthesis-in-ainu-and-theories-of-incorporation'
 	},
