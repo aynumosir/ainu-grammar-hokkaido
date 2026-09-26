@@ -182,6 +182,7 @@
 			<tr><td>QUOT</td><td>quotative</td></tr>
 			<tr><td>REC</td><td>recent</td></tr>
 			<tr><td>RECP</td><td>reciprocal</td></tr>
+			<tr><td>RED</td><td>reduplication</td></tr>
 			<tr><td>REFL</td><td>reflexive</td></tr>
 			<tr><td>REP</td><td>reportative evidential</td></tr>
 			<tr><td>RES</td><td>resultative</td></tr>

@@ -71,6 +71,31 @@ export interface BibEntry {
 }
 
 export const bibliography: Record<string, BibEntry> = {
+	kawakami1986: {
+		region: 'hokkaido',
+		author: 'Kawakami Matsuko 川上まつ子 (narrator)',
+		citeAuthor: 'Kawakami',
+		year: '1986',
+		title: 'ワシ神の化身と人間の娘',
+		titleTr: 'The incarnation of the eagle god and a human daughter',
+		container: 'National Ainu Museum Ainu Language Archive',
+		url: "https://ainugo.nam.go.jp/search/media?keyword=%22%E5%B7%9D%E4%B8%8A%E3%81%BE%E3%81%A4%E5%AD%90%E3%81%95%E3%82%93%E3%81%AE%E6%B0%91%E8%A9%B1%28%EF%BD%B1%29+%E3%83%AF%E3%82%B7%E7%A5%9E%E3%81%AE%E5%8C%96%E8%BA%AB%E3%81%A8%E4%BA%BA%E9%96%93%E3%81%AE%E5%A8%98%EF%BC%881986%EF%BC%89%22&typeCont=on",
+		lang: 'ja',
+		note: 'Saru narrative recorded in 1986. The published transcription is preserved as nam-archive/kawakami-minwa/09; record identifiers use the zero-based sentence index in that aligned transcription.'
+	},
+	kayano1998a: {
+		region: 'hokkaido',
+		author: 'Kayano Shigeru 萱野茂',
+		citeAuthor: 'Kayano',
+		year: '1998a',
+		title: 'Kayano Shigeru no Ainu shinwashūsei: Uepekere hen 1',
+		titleTr: 'Shigeru Kayano’s collection of Ainu myths: Uepeker, volume 1',
+		publisher: 'Heibonsha',
+		place: 'Tokyo',
+		lang: 'ja',
+		reported: true,
+		note: 'Example on p. 74 cited through Shiraishi (2022), §6.2, example 28c. Bibliographic details follow that chapter’s references.'
+	},
 	// ───────────────────────── Reference grammars & handbooks ─────────────────────────
 	kindaichi1933: {
 		region: 'general',

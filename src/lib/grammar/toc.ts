@@ -171,12 +171,12 @@ export const parts: Part[] = [
 			{
 				slug: "accent-in-compounds-and-affixation",
 				title: "Accent in Compounds and under Affixation and Cliticization",
-				summary: "How prosodic-word formation reorganizes accent in compounds and when affixes and clitics attach."
+				summary: "Accent retention and reassignment in compounds, derivatives, and person-marked forms, with lexical exceptions and competing structural analyses."
 			},
 			{
 				slug: "phrasal-and-utterance-intonation",
 				title: "Phrasal and Utterance Intonation",
-				summary: "Intonational contours above the word: declarative vs interrogative tunes, phrasing, and an f0 corpus study."
+				summary: "Saru, Shizunai, and Tokachi intonation descriptions, including rising and non-rising questions, exclamations, and phrase boundaries."
 			}
 		]
 	},
@@ -186,27 +186,27 @@ export const parts: Part[] = [
 			{
 				slug: "coda-r-assimilation-sonorant-sandhi",
 				title: "Assimilation and Cluster Simplification: Coda /r/, Nasals, and Clusters",
-				summary: "Regressive assimilation of coda /r/ (the most active sandhi trigger) and place assimilation of coda nasals, together with heterosyllabic cluster simplification, degemination, and juncture gemination across morpheme, compound, and word boundaries."
+				summary: "Changes involving final /r/ and /n/, nasal place assimilation, particle-specific alternations, and the roles of pauses and sentence boundaries."
 			},
 			{
 				slug: "glide-epenthesis-hiatus-resolution",
 				title: "Glide Epenthesis and Vowel-Hiatus Resolution",
-				summary: "Insertion of [w]/[y] transitional glides to break vowel hiatus at affixal, compound, and phrasal junctures, and the underlying-vs-epenthetic glide question at the morphophonology–phonetics interface."
+				summary: "Glide insertion, vowel weakening, glottal realization, and contraction, with their morphological conditions and dialect differences."
 			},
 			{
 				slug: "citation-vs-combining-stem-shapes",
-				title: "Citation vs Combining Stem Shapes and Support Vowels",
-				summary: "The systematic mismatch between a morpheme's citation (concept) shape and its bound combining shape — final-consonant support vowels, stem-final truncation, and consonant alternations exposed only under affixation or compounding."
+				title: "Citation Forms and Morphophonological Alternations",
+				summary: "Final-consonant pronunciation, prefix contraction, possessive morphology, and lexical history, with separate conditions for each pattern."
 			},
 			{
 				slug: "personal-affix-sandhi-connected-speech-reduction",
-				title: "Personal-Affix Junctural Sandhi, =an/a= Allomorphy, and Connected-Speech Reduction",
-				summary: "The junctural sandhi triggered by personal affixes (ku= before vowels, en=, un=, ci=, eci=), the =an/-an and a=/an= allomorphy as a morphophonological problem, and casual-register contraction, elision, and cliticization."
+				title: "Person Markers: Contraction, Accent, and Suffix Boundaries",
+				summary: "Dialect-specific person-prefix contraction, initial-vowel weakening, accent behavior, and pronunciation at person-suffix boundaries."
 			},
 			{
 				slug: "reduplication-phonology-rule-interaction",
-				title: "Reduplication Phonology and Rule Interaction",
-				summary: "Base-copy templates in ideophones, intensives, and pluractionals, and how reduplication interacts with the assimilation and epenthesis processes to diagnose rule ordering and the morphology–phonology interface."
+				title: "Reduplication and Phonological Alternations",
+				summary: "Root, partial, and whole-stem reduplication, their lexical restrictions, and documented consonant and boundary effects."
 			}
 		]
 	},
@@ -215,13 +215,13 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "word-class-inventory-and-diagnostics",
-				title: "The Word-Class Inventory and the Noun/Verb Bipartition",
-				summary: "The full parts-of-speech inventory of Hokkaido Ainu, the dominant noun/verb split, the morphological and distributional diagnostics that define each class, and noun↔verb category conversion."
+				title: "Word Classes and Their Diagnostics",
+				summary: "The major classification schemes and their grammatical diagnostics, including person marking, dependence, modification, and disputed category boundaries."
 			},
 			{
 				slug: "nominal-subclasses-and-bound-nouns",
-				title: "Nominal Subclasses and Obligatorily-Possessed (Bound) Nouns",
-				summary: "The internal taxonomy of nouns — concrete vs abstract, common vs proper, and the class of 'incomplete'/bound nouns that cannot stand without a possessor."
+				title: "Nominal Subclasses and Dependence",
+				summary: "Common nouns, locative nouns, pronouns, and formal nouns, compared through possession, independence, modification, and grammatical location."
 			},
 			{
 				slug: "formal-defective-nouns",

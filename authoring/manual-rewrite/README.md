@@ -1,10 +1,10 @@
 # Source comparison for the grammar rewrite
 
-The scope is all 178 original grammar chapters. Chapters 1–25 have replacement drafts with independent source review. The remaining chapters still require their individual evidence checks and replacement prose.
+The scope is all 178 original grammar chapters. Chapters 1–34 have replacement drafts with independent source review. The remaining chapters still require their individual evidence checks and replacement prose.
 
-AUTHORING.md §2, Stage 2 requires a claims/disagreements matrix before prose, and human editorial sign-off on the foundational matrices before dependent chapters are drafted. **Human sign-off is pending.**
+AUTHORING.md §2, Stage 2 requires a claims/disagreements matrix before prose, and human editorial sign-off on the foundational matrices before dependent chapters are drafted. **Approved by the user on 2026-09-26:** “Approve the proposed treatment and continue all 178 chapters.” This sign-off covers the summary and the corresponding decisions in all three linked matrices.
 
-The proposed treatment is to retain source-backed descriptions and examples, identify dialect and register, and attribute competing analyses explicitly. The recommendations below summarize the decisions recorded in the three matrices.
+The approved treatment is to retain source-backed descriptions and examples, identify dialect and register, and attribute competing analyses explicitly. The recommendations below summarize the decisions recorded in the three matrices.
 
 | Domain | Proposed treatment | Detailed evidence and decisions |
 | --- | --- | --- |

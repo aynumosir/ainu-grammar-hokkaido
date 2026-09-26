@@ -1,7 +1,11 @@
+| Human editorial sign-off | Decision |
+| --- | --- |
+| User approval, 2026-09-26 | “Approve the proposed treatment and continue all 178 chapters.” All proposed editorial treatments and decisions in this matrix were approved through the linked summary. Remaining source checks are still required for each chapter. |
+
 | Review item | Status and scope |
 | --- | --- |
 | Domains | Person marking and alignment; position and grammatical status of person markers; basic valency alternations. |
-| Editorial approval | Pending human review; no sign-off is recorded. Under AUTHORING.md §2, Stage 2, this matrix must precede foundational prose, and human sign-off is required before dependent chapters are drafted. |
+| Editorial approval | Approved by the user on 2026-09-26. Under AUTHORING.md §2, Stage 2, this matrix must precede foundational prose, and human sign-off is required before dependent chapters are drafted. |
 | Evidence examined | KB claim and statement records, followed by the held source passages identified below. Existing grammar chapters are excluded as evidence. |
 | Source verification | The cited passages were read in the held OCR or EPUB text. Page images and recordings were not checked. A full paradigm should be checked against its printed table before reproduction, particularly where OCR collapses cells. |
 | Corpus verification | No independent corpus search, annotation, frequency calculation, or audio check was performed. “Source text” below means the publication's text or example was examined; it does not mean corpus-confirmed. Published examples retain their original source attribution. |

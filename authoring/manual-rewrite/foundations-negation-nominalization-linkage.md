@@ -1,9 +1,13 @@
+| Human editorial sign-off | Decision |
+| --- | --- |
+| User approval, 2026-09-26 | “Approve the proposed treatment and continue all 178 chapters.” All proposed editorial treatments and decisions in this matrix were approved through the linked summary. Remaining source checks are still required for each chapter. |
+
 # Negation, nominalization, and clause linkage: source review
 
 | Review boundary | Status |
 | --- | --- |
 | Purpose | Stage 2 claims/disagreements matrices for the manual rewrite, under AUTHORING.md §2. These are editorial review tables, not chapter drafts. |
-| Human editorial signoff | **Pending.** No approval is recorded by this document. The decisions at the end require a human editor before dependent chapters are drafted. |
+| Human editorial signoff | Approved by the user on 2026-09-26; dependent drafting is authorized under the proposed treatments. |
 | Evidence used | KB claims/statements supplied search pointers. The treatments below were checked in held source text: existing book OCR, article PDF text, and the Handbook EPUB import. Current grammar chapters and their proposed analyses were not treated as evidence. |
 | Meaning of “passage checked” | The cited source passage was read. This does not mean a new corpus search, an audio check, verification of every OCR form against an image, or independent replication of a source's count. |
 | Corpus status | No new corpus sample, frequency count, acceptability study, or subject-continuity annotation was conducted for these matrices. No row earns `corpus-confirmed` from this review. |
@@ -93,17 +97,17 @@
 
 | Decision | Proposed editorial treatment to approve or revise | Source basis / unresolved question | Status |
 | --- | --- | --- | --- |
-| D1. Analytic negation | Use a neutral `V (ka) somo ki` heading; explicitly attribute emphatic, auxiliary, and object-NP analyses. | N2. Is this treatment sufficient without choosing one constituent analysis for all dialects? | Pending human decision. |
-| D2. Negative temporal linkage | Restrict the `no` rule to the cited dialect/construction; include the published Shizunai and Shiranuka `wa` cases without an invented explanation. | N6–N7. A corpus investigation would be needed for a stronger unified rule. | Pending human decision. |
-| D3. Scope of polarity chapter | Cover lexical negatives, `ka` indefinites, and attested scope patterns; withhold negative-concord and universal scope claims. | N4–N5, N10. Are the unsupported theoretical labels to be removed from the chapter framing? | Pending human decision. |
-| D4. Nominalizer terminology | Use neutral form names; distinguish relative-head, complement, and connective uses; explain the source terminology. | M1–M5, M7–M8. No single suffix/word analysis is established for every item. | Pending human decision. |
-| D5. Internally headed relatives and control/raising | Limit dependent chapters to sourced constructions, or defer unsupported sections while obtaining evidence. | M6, M9. No internally headed example or control/raising diagnostic was verified here. | Pending human decision. |
-| D6. Historical nominalization | Attribute the generic-noun and Sakhalin-development proposals, with `speculative` grading; retain a separate synchronic description. | M11–M12. Should the foundational chapter include only a brief comparison and defer detailed history? | Pending human decision. |
-| D7. `hine/akusu` framing | Remove the categorical switch-reference claim and frame the chapter around the published linkage analyses. | L3–L5. A source-backed alternative or an independently annotated study is required before making a stronger claim. | Pending human decision. |
-| D8. Conditionals | Organize by dialect and construction; preserve Satō's sample/date qualifications; include Nakagawa's Saru polar-question example. | L7–L8. Reject the inherited simple `yak` irrealis / `ciki` realis mapping. | Pending human decision. |
-| D9. Quotation | Present the 2008 continuum and 2021 syntactic analysis as distinct scholarly treatments. | L12. Do not collapse logophoric speech into indirect complementation. | Pending human decision. |
-| D10. Reported sources and bibliography | Cite Tamura and frameworks through named intermediaries until directly consulted; resolve the separate 1972 “shite” article before registering it. | Source-role table. The existing `tamura1972` key denotes the person-categories article. | Pending human decision; bibliography identity still to resolve before citation. |
-| D11. Foundational approval | Record the human editor, date, approved decisions, and any conditions here before dependent drafting. | AUTHORING.md §2 Stage 2 and §3 item 12. An independent source review does not constitute human editorial approval. | **Unsigned.** |
+| D1. Analytic negation | Use a neutral `V (ka) somo ki` heading; explicitly attribute emphatic, auxiliary, and object-NP analyses. | N2. Is this treatment sufficient without choosing one constituent analysis for all dialects? | Approved, 2026-09-26. |
+| D2. Negative temporal linkage | Restrict the `no` rule to the cited dialect/construction; include the published Shizunai and Shiranuka `wa` cases without an invented explanation. | N6–N7. A corpus investigation would be needed for a stronger unified rule. | Approved, 2026-09-26. |
+| D3. Scope of polarity chapter | Cover lexical negatives, `ka` indefinites, and attested scope patterns; withhold negative-concord and universal scope claims. | N4–N5, N10. Are the unsupported theoretical labels to be removed from the chapter framing? | Approved, 2026-09-26. |
+| D4. Nominalizer terminology | Use neutral form names; distinguish relative-head, complement, and connective uses; explain the source terminology. | M1–M5, M7–M8. No single suffix/word analysis is established for every item. | Approved, 2026-09-26. |
+| D5. Internally headed relatives and control/raising | Limit dependent chapters to sourced constructions, or defer unsupported sections while obtaining evidence. | M6, M9. No internally headed example or control/raising diagnostic was verified here. | Approved, 2026-09-26. |
+| D6. Historical nominalization | Attribute the generic-noun and Sakhalin-development proposals, with `speculative` grading; retain a separate synchronic description. | M11–M12. Should the foundational chapter include only a brief comparison and defer detailed history? | Approved, 2026-09-26. |
+| D7. `hine/akusu` framing | Remove the categorical switch-reference claim and frame the chapter around the published linkage analyses. | L3–L5. A source-backed alternative or an independently annotated study is required before making a stronger claim. | Approved, 2026-09-26. |
+| D8. Conditionals | Organize by dialect and construction; preserve Satō's sample/date qualifications; include Nakagawa's Saru polar-question example. | L7–L8. Reject the inherited simple `yak` irrealis / `ciki` realis mapping. | Approved, 2026-09-26. |
+| D9. Quotation | Present the 2008 continuum and 2021 syntactic analysis as distinct scholarly treatments. | L12. Do not collapse logophoric speech into indirect complementation. | Approved, 2026-09-26. |
+| D10. Reported sources and bibliography | Cite Tamura and frameworks through named intermediaries until directly consulted; resolve the separate 1972 “shite” article before registering it. | Source-role table. The existing `tamura1972` key denotes the person-categories article. | Approved, 2026-09-26; bibliography identity still to resolve before citation. |
+| D11. Foundational approval | Record the human editor, date, approved decisions, and any conditions here before dependent drafting. | AUTHORING.md §2 Stage 2 and §3 item 12. An independent source review does not constitute human editorial approval. | **Approved, 2026-09-26.** |
 
 ## Checks still required before publication
 

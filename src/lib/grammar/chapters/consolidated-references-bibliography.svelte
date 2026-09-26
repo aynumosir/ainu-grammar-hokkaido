@@ -4,7 +4,7 @@
 
 <S t="Consolidated references" id="references">
 	<p>
-		This chapter gathers the 186 works cited across the grammar into a single
+		This chapter gathers the 188 works cited across the grammar into a single
 		consolidated list, grouped by the variety or domain each work primarily concerns and
 		alphabetised by author within each group. Entries marked <span class="reported-badge">reported</span>
 		are cited second-hand, through the source named in the citation, and were not consulted directly.
@@ -42,8 +42,10 @@
 	<p class="bib-entry">Ijäs, Silja (2023). <i>Language revitalization through lexical modernization and neologism-coining</i>. Aynu teetawano ankur kanpinuye 3. 117–160.</p>
 	<p class="bib-entry">Kaiser, Lizanne (1998). <i>The interaction of noun incorporation and applicative formation in Ainu</i>. Yearbook of Morphology 1997. 157–178.</p>
 	<p class="bib-entry">Kanazawa Shōzaburō 金澤庄三郎 (1898). <i lang="ja">アイヌ語会話辞典</i>. [A topical dictionary of Ainu conversation (Saru)].</p>
+	<p class="bib-entry">Kawakami Matsuko 川上まつ子 (narrator) (1986). <i lang="ja">ワシ神の化身と人間の娘</i>. [The incarnation of the eagle god and a human daughter]. National Ainu Museum Ainu Language Archive.</p>
 	<p class="bib-entry">Kayano Shigeru 萱野茂 (1987). <i lang="ja">アイヌ語会話 初級編</i>. [Ainu conversation: Beginner].</p>
 	<p class="bib-entry">Kayano Shigeru 萱野茂 (1996). <i lang="ja">萱野茂のアイヌ語辞典</i>. [Kayano's Ainu dictionary (Saru)]. Tokyo: Sanseidō 三省堂. <span class="reported-badge">reported</span></p>
+	<p class="bib-entry">Kayano Shigeru 萱野茂 (1998a). <i lang="ja">Kayano Shigeru no Ainu shinwashūsei: Uepekere hen 1</i>. [Shigeru Kayano’s collection of Ainu myths: Uepeker, volume 1]. Tokyo: Heibonsha. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Kirikae Hideo 切替英雄 (1984). <i lang="ja">名詞句の構造と合成名詞</i>. [The structure of noun phrases and compound nouns].</p>
 	<p class="bib-entry">Kirikae Hideo 切替英雄 (1994). <i lang="ja">アイヌ語地名における等語線</i>. [Isoglosses in Ainu place names]. <span class="reported-badge">reported</span></p>
 	<p class="bib-entry">Kirikae Hideo 切替英雄 (1997). <i lang="ja">アイヌによるアイヌ語表記</i>. [Ainu-language orthography by Ainu]. 国文学 解釈と鑑賞 62(1). 99–107.</p>

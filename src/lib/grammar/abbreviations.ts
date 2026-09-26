@@ -88,6 +88,7 @@ export const abbreviations: Record<string, string> = {
 	QUOT: 'quotative',
 	REC: 'recent',
 	RECP: 'reciprocal',
+	RED: 'reduplication',
 	REFL: 'reflexive',
 	REP: 'reportative evidential',
 	RES: 'resultative',
