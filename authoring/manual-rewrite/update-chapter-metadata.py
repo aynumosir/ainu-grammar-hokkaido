@@ -2,6 +2,18 @@ import json,re
 from pathlib import Path
 p=Path('toc-final.json');d=json.loads(p.read_text());toc=Path('src/lib/grammar/toc.ts');ts=toc.read_text()
 changes={
+145: ('Gender, Address, and Speech Conventions', 'Honorific address, interjections, changing greeting conventions, regional performance roles, and limits of the conversational record.'),
+146: ('Adverbs, Degree, and Comparison', 'Basic, derived, and converted adverbs, antecedents of postpositional forms, directional constructions, degree comparison, and iyotta.'),
+147: ('Connective Expressions in Discourse', 'The orowa family, connective placement and pauses, rapok constructions, and the distinction from nominal coordination.'),
+148: ('Interjections and Mimetic Formations', 'Responses and calls, regional greetings, interjection morphology and verbal exceptions, sound imitation, and restricted mimetic formations.'),
+149: ('Oral-Literary Genres and Their Regional Names', 'Functional classifications, the four-way Chitose comparison, performance features, overlapping regional labels, and narrative perspective.'),
+150: ('Narrative Person and Reported Speech', 'Character perspective, self-quotation, other-speaker reports, ordinary-person alternatives, mixed narration, and competing syntactic and historical accounts.'),
+139: ('Reference Tracking and Omitted Expressions', 'Contextual recovery, third-person ambiguity, fourth-person reference, and continuity across linked clauses.'),
+140: ('Topics and Anakne', 'Topic phrases and grammatical roles, repeated topics, contrasts, and the source-specific effects of related particles.'),
+141: ('Nominalization and Focus', 'Relative heads, content nominalization, copular identification, naming, and the limits of an exhaustive cleft analysis.'),
+142: ('Word Order in Context', 'Published participant orders, topic placement, role interpretation, fronted adjuncts, and construction-specific ordering limits.'),
+143: ('Sentence-Final Particles and Interaction', 'Requests, suggestions, response-seeking endings, emphatic combinations, recollection, and source-specific inventories.'),
+144: ('Questions and Interrogative Particles', 'Polar and content questions, intonation, nominal endings, ya and he, embedded questions, replies, and dialect differences.'),
 133: ('Hine, Akusu, and Narrative Progression', 'Successive information, related developments, regional and genre preferences, participant changes, and attributed narrative-boundary analyses.'),
 134: ('Kor: Simultaneity, Habits, and Conditions', 'Overlapping situations with shared or different subjects, continuative constructions, habitual and factual uses, regional forms, and historical proposals.'),
 135: ('Conditional, Temporal, and Concessive Constructions', 'Premises with yakun, evaluation with yak, regional ciki and cik uses, factual sequences, wishes, and hypothetical or realized concessions.'),

@@ -1,8 +1,8 @@
 # Source comparison for the grammar rewrite
 
-The scope is all 178 original grammar chapters. Chapters 1–138 have replacement drafts with independent source review: 138 chapters complete, with 40 remaining. The remaining chapters still require their individual evidence checks and replacement prose.
+The scope is all 178 original grammar chapters. Chapters 1–150 have replacement prose with independent source review: 150 chapters complete, with 28 remaining. The remaining chapters still require their individual evidence checks and replacement prose.
 
-Paused at the user’s request on 2026-09-27. Chapters 139–143 have saved drafts; chapter 144 is the next unwritten chapter. These five drafts are not included in the completed count. See [the restart checkpoint](RESUME.md) for review findings, pending checks, and the next steps.
+The first rewrite PR (#46) was merged and deployed. Continuation proceeds on `docs/manual-grammar-rewrite-final`; no further deployment is included. See [the restart checkpoint](RESUME.md) for the current state and remaining work.
 
 AUTHORING.md §2, Stage 2 requires a claims/disagreements matrix before prose, and human editorial sign-off on the foundational matrices before dependent chapters are drafted. **Approved by the user on 2026-09-26:** “Approve the proposed treatment and continue all 178 chapters.” This sign-off covers the summary and the corresponding decisions in all three linked matrices.
 

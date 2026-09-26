@@ -805,53 +805,53 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "reference-tracking",
-				title: "Reference Tracking and Argument Continuity",
-				summary: "How participants are tracked across clauses: zero anaphora and pro-drop, person marking, the indefinite/fourth person as a tracking device, demonstrative/anaphoric reference, and switch-reference-like clause linkage (hine/akusu), drawn together as one system."
+				title: "Reference Tracking and Omitted Expressions",
+				summary: "Contextual recovery, third-person ambiguity, fourth-person reference, and continuity across linked clauses."
 			},
 			{
 				slug: "topic-marking-anakne",
-				title: "Topic and Focus Marking: anak(ne), patek, and ka",
-				summary: "The topic/contrastive-topic particle anak~anakne and the focus-sensitive particles patek 'only' and ka 'also/even': thematic vs contrastive topic, restrictive/additive/scalar focus, and the NPI use of ka."
+				title: "Topics and Anakne",
+				summary: "Topic phrases and grammatical roles, repeated topics, contrasts, and the source-specific effects of related particles."
 			},
 			{
 				slug: "cleft-nominalization-focus",
-				title: "Cleft, Pseudocleft, and Nominalization-Based Focus",
-				summary: "Identificational and predicate-focus constructions built on nominalization plus the copula (…p ne, …hi ne) and their relation to the evidential schema."
+				title: "Nominalization and Focus",
+				summary: "Relative heads, content nominalization, copular identification, naming, and the limits of an exhaustive cleft analysis."
 			},
 			{
 				slug: "pragmatic-word-order-dislocation",
-				title: "Pragmatic Word-Order Permutation, Dislocation, and Argument Ellipsis",
-				summary: "Departures from basic verb-final order for information-structural ends — scrambling, left/right dislocation, afterthought, and given-argument ellipsis."
+				title: "Word Order in Context",
+				summary: "Published participant orders, topic placement, role interpretation, fronted adjuncts, and construction-specific ordering limits."
 			},
 			{
 				slug: "sentence-final-particles-illocutionary-force",
-				title: "The Sentence-Final Particle System and Illocutionary Force",
-				summary: "The inventory of clause-final particles (na, wa, ya, nankor, …) encoding assertion, emphasis, confirmation, and softening, and their grammaticalization from formal nouns."
+				title: "Sentence-Final Particles and Interaction",
+				summary: "Requests, suggestions, response-seeking endings, emphatic combinations, recollection, and source-specific inventories."
 			},
 			{
 				slug: "interrogative-strategies-question-particles",
-				title: "Interrogative Strategies, Question Particles, and Evidential Questions",
-				summary: "Polar and content questions — the particles ya/he, in-situ wh-words, biased/confirmational questions — integrated with the evidential interrogative/confirmational paradigm (ruwe un?, hawe ya?, siri ya?) and its evidence-source 'flip' from speaker to addressee."
+				title: "Questions and Interrogative Particles",
+				summary: "Polar and content questions, intonation, nominal endings, ya and he, embedded questions, replies, and dialect differences."
 			},
 			{
 				slug: "gendered-register-speech",
-				title: "Gendered Speech and Pragmatic Registers",
-				summary: "Sex-of-speaker and register differences in final particles, interjections, and politeness, and the documentation gaps surrounding them."
+				title: "Gender, Address, and Speech Conventions",
+				summary: "Honorific address, interjections, changing greeting conventions, regional performance roles, and limits of the conversational record."
 			},
 			{
 				slug: "adverbs-degree-comparison",
-				title: "Adverbs, Degree Words, and Comparison Strategies",
-				summary: "The adverb word-class, the -no adverbializer, intensifiers, and the periphrastic encoding of comparison (Ainu has no dedicated comparative)."
+				title: "Adverbs, Degree, and Comparison",
+				summary: "Basic, derived, and converted adverbs, antecedents of postpositional forms, directional constructions, degree comparison, and iyotta."
 			},
 			{
 				slug: "conjunctions-discourse-connectives",
-				title: "Conjunctions and Discourse Connectives",
-				summary: "NP-coordinating conjunctions (newa, tura) and clause-edge discourse connectives (orowano, nah …) as a minor class, distinct from the converbal clause-linkers of Part XVII."
+				title: "Connective Expressions in Discourse",
+				summary: "The orowa family, connective placement and pauses, rapok constructions, and the distinction from nominal coordination."
 			},
 			{
 				slug: "interjections-ideophones-sound-symbolism",
-				title: "Interjections, Response Words, Ideophones, and Sound Symbolism",
-				summary: "The expressive minor classes — interjections and conversational formulae, ideophones/mimetics, and size/intensity sound-symbolic gradation."
+				title: "Interjections and Mimetic Formations",
+				summary: "Responses and calls, regional greetings, interjection morphology and verbal exceptions, sound imitation, and restricted mimetic formations."
 			}
 		]
 	},
@@ -860,13 +860,13 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "oral-literature-genre-taxonomy",
-				title: "The Oral-Literature Genre System and Its Grammatical Signatures",
-				summary: "The taxonomy of Ainu oral-narrative genres and the bundle of grammatical features that indexes each one."
+				title: "Oral-Literary Genres and Their Regional Names",
+				summary: "Functional classifications, the four-way Chitose comparison, performance features, overlapping regional labels, and narrative perspective."
 			},
 			{
 				slug: "logophoric-narration-and-reported-discourse",
-				title: "First-Person Narration, the Logophoric Fourth Person, and Reported Discourse",
-				summary: "The grammaticalized narrator viewpoint in sung epic and the logophoric/reported-speech system as deployed across genres."
+				title: "Narrative Person and Reported Speech",
+				summary: "Character perspective, self-quotation, other-speaker reports, ordinary-person alternatives, mixed narration, and competing syntactic and historical accounts."
 			},
 			{
 				slug: "sakehe-refrain-and-sung-verse-structure",
