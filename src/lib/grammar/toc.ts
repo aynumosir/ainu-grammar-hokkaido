@@ -770,33 +770,33 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "hine-akusu-switch-reference",
-				title: "The hine/akusu Contrast and Switch-Reference-Like Linkage",
-				summary: "The sequential connectives hine and akusu and the long-running debate over whether they encode same-/different-subject (switch-reference) or discourse (un)expectedness."
+				title: "Hine, Akusu, and Narrative Progression",
+				summary: "Successive information, related developments, regional and genre preferences, participant changes, and attributed narrative-boundary analyses."
 			},
 			{
 				slug: "simultaneous-kor-clauses",
-				title: "Simultaneous kor 'while' and Overlapping-Event Clauses",
-				summary: "The conjunctive particle kor marking temporal overlap, distinguished from the homophonous possessive verb kor and the progressive auxiliary kor an."
+				title: "Kor: Simultaneity, Habits, and Conditions",
+				summary: "Overlapping situations with shared or different subjects, continuative constructions, habitual and factual uses, regional forms, and historical proposals."
 			},
 			{
 				slug: "conditional-temporal-concessive-clauses",
-				title: "Conditional, Temporal, and Concessive Clauses",
-				summary: "The yak(un)/ciki conditionals, their temporal 'when' uses and realis/irrealis split, and the morphologically related concessives yakka 'even if' and korka 'although'."
+				title: "Conditional, Temporal, and Concessive Constructions",
+				summary: "Premises with yakun, evaluation with yak, regional ciki and cik uses, factual sequences, wishes, and hypothetical or realized concessions."
 			},
 			{
 				slug: "causal-and-purpose-clauses",
-				title: "Causal and Purpose Clauses (kusu)",
-				summary: "The polyfunctional kusu/gusu marking reason 'because' and purpose 'in order to', its formal-noun origin, and its division of labour with the kuni purpose complementizer."
+				title: "Reasons, Purposes, and Desired Outcomes",
+				summary: "Kusu, wa kusu, hi kusu, kunine, participant relations, independent connective uses, and regional functions."
 			},
 			{
 				slug: "manner-and-degree-adverbial-clauses",
-				title: "Manner and Degree Adverbial Clauses",
-				summary: "Manner clauses, the clause-linking -no adverbializer, and degree/extent clauses (pakno 'to the extent that'), framed against Ainu comparison strategies."
+				title: "Manner, Appearance, Degree, and Comparison",
+				summary: "No and its word-class boundary, koraci, source-specific appearance analyses, extent clauses, and degree-adjunct relativization."
 			},
 			{
 				slug: "tail-head-linkage-and-narrative-cohesion",
-				title: "Tail-Head Linkage and Narrative Clause Cohesion",
-				summary: "Recapitulative tail-head linkage, the discourse connective orowa(no) 'and then (from there)', and the anaphoric clause-linkage that structures Ainu oral narrative."
+				title: "Narrative Continuation and Repetition",
+				summary: "Connective formal nouns, orowa expressions, recapitulation and reference, and attributed analyses of narrative boundaries."
 			}
 		]
 	},

@@ -17,12 +17,12 @@
 	</p>
 	<Ex
 		m="seta ka nep ka isam pe ne a p"
-		g="dog ADD what ADD not.exist NMLZ COP PST CONJ"
+		g="dog ADD what ADD not.exist NMLZ COP PFV CONJ"
 		tr="There were no dogs or anything, but …"
 		cite="nakagawa2024:323"
 		dial="SAR"
 		place="Example 529"
-		note="The source presents an unfinished adversative clause. The two occurrences of ka associate the named category ‘dog’ with the broader indefinite expression."
+		note="The source presents an unfinished adversative clause. PFV is the conventional gloss used in chapter 111; Nakagawa describes earlier background contrasted with what follows (pp. 305–306). The two occurrences of ka associate the named category ‘dog’ with the broader indefinite expression."
 	/>
 	<p>
 		An indefinite need not have the same form as the corresponding interrogative. Several dialects
