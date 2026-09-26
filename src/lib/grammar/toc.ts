@@ -66,47 +66,47 @@ export const parts: Part[] = [
 			{
 				slug: "written-sources-grammars-dictionaries",
 				title: "Written Sources: Grammars, Dictionaries, and the Philological Record",
-				summary: "The book-length descriptive tradition, lexicography, and Edo-period manuscript sources underpinning the grammar, with an audit of works that must be cited but are physically absent."
+				summary: "The descriptive grammars, dictionaries, and early records used as evidence, with their dialect coverage and limitations."
 			},
 			{
 				slug: "oral-literature-and-spoken-corpora",
 				title: "The Oral-Literature Corpus and Spoken-Language Data",
-				summary: "The annotated oral-narrative text editions, recorded conversation, and audio archives that supply the grammar's connected-discourse examples, treated as a genre-tagged quantifiable corpus."
+				summary: "Oral-literature editions and recordings, their speakers and genres, and the limits of the surviving documentary record."
 			},
 			{
 				slug: "dialect-sample-and-corpus-method",
 				title: "The Dialect Sample and the Corpus-Quantification Method",
-				summary: "Which Hokkaido dialects are sampled, how Sakhalin/Kuril contrast is framed, and exactly how the grammar computes and reports corpus frequencies."
+				summary: "Dialect attribution, the scope of comparisons, and the sampling choices needed to interpret corpus evidence."
 			},
 			{
 				slug: "glossing-abbreviations-and-citation",
 				title: "Interlinear Glossing, Abbreviations, and Citation Conventions",
-				summary: "How to read the grammar's examples — the Leipzig-based interlinear format, morpheme segmentation, the gloss and abbreviation inventory, and the source-attribution sigla."
+				summary: "How to read interlinear examples, grammatical labels, dialect tags, citations, and evidence grades."
 			},
 			{
 				slug: "latin-phonemic-transcription",
 				title: "The Latin Phonemic Transcription",
-				summary: "The canonical romanization adopted as the grammar's primary script — its phoneme-to-grapheme mapping and conventions for /c/, the glottal stop, accent, and capitalization."
+				summary: "Latin letter values, accent and boundary marks, and differences among phonemic transcriptions."
 			},
 			{
 				slug: "katakana-and-small-kana-codas",
 				title: "Katakana Orthography and the Extended Small-Kana Codas",
-				summary: "The katakana writing of Ainu — the syllabary mapping, the extended small-kana coda letters, the modern normative standard, and historical kana systems."
+				summary: "Katakana conventions for Ainu syllables, variation in final-consonant spelling, and the interpretation of older sources."
 			},
 			{
 				slug: "cyrillic-and-multiscript-rendering",
-				title: "Cyrillic and Multi-Script Rendering",
-				summary: "The Cyrillic transcription of Ainu in the Russian and Sakhalin tradition and the interoperability of Latin, katakana, and Cyrillic renderings."
+				title: "Reading Ainu Across Writing Systems",
+				summary: "How source spellings, pronunciation, and grammatical analysis relate when reading Ainu in different writing systems."
 			},
 			{
 				slug: "historical-orthographies-and-the-batchelor-tradition",
 				title: "Historical Orthographies and the Batchelor Tradition",
-				summary: "The pre-phonemic Latin orthographies of Hokkaido Ainu — Batchelor's Hepburn-derived system and its lineage through Kindaichi, Kannari Matsu, and Chiri Yukie — their systematic correspondences with the modern standard, and how texts written in them are read and converted today."
+				summary: "Older Latin spelling conventions, the treatment of final r, and the interpretation of historical texts."
 			},
 			{
 				slug: "orthographic-standardization-and-word-division",
 				title: "Orthographic Standardization and the Word-Division Problem",
-				summary: "The competing romanization norms, the unresolved question of where word boundaries fall, and the spacing and hyphenation conventions this grammar adopts."
+				summary: "Variation in Ainu writing, person-marker notation, word division, and the relationship between spelling and analysis."
 			}
 		]
 	},
@@ -116,37 +116,37 @@ export const parts: Part[] = [
 			{
 				slug: "consonant-inventory",
 				title: "The Consonant Inventory and Its Phonetic Realization",
-				summary: "The twelve-consonant system /p t k c s m n r w y h/ (plus glottal stop), with instrumental detail on stop VOT, the affricate /c/, and intervocalic lenition."
+				summary: "The consonant inventory, its positional realizations, and differences among speakers and descriptive analyses."
 			},
 			{
 				slug: "vowel-inventory",
 				title: "The Vowel Inventory and Vowel Realization",
-				summary: "The five-vowel triangular system /a e i o u/, the absence of phonemic length in Hokkaido, and allophonic centralization/devoicing."
+				summary: "The five vowels, phonetic duration and devoicing, with Sakhalin vowel length as a separate comparison."
 			},
 			{
 				slug: "s-palatalization",
 				title: "/s/ and the s ~ š Palatalization Alternation",
-				summary: "The allophonic [s]~[ʃ] alternation before and after /i/ and word-finally (Saru sisam vs šišam), its conditioning, and its dialect distribution."
+				summary: "Palatalization of /s/ in syllable onsets, codas, and connected speech, with the dialect limits of each description."
 			},
 			{
 				slug: "rhotic-r",
 				title: "The Rhotic /r/ and Coda-r",
-				summary: "The single rhotic phoneme (flap [ɾ]) with positional allophones, and coda /r/ as the most morphophonologically active segment of the language."
+				summary: "Realizations of /r/, the vowel-like release of final /r/, and grammatical evidence for distinguishing final /r/ from /rV/."
 			},
 			{
 				slug: "glottal-stop",
-				title: "The Laryngeals: Glottal Stop, /h/, and the Final-h Question",
-				summary: "The laryngeal consonants: the glottal stop as obligatory-onset filler versus phoneme, onset and coda /h/ with coda-h neutralization, and the word-final -h controversy and its Sakhalin vowel-length reflex."
+				title: "Glottal Stops and the Distribution of /h/",
+				summary: "Glottal closure, competing phoneme and boundary analyses, and the distribution of /h/ in Hokkaido and Sakhalin."
 			},
 			{
 				slug: "syllable-template",
 				title: "Syllable Structure, Phonotactics, and Word-Edge Constraints",
-				summary: "The canonical (C)V(C) syllable and obligatory onset, the permitted-coda inventory and onset/coda asymmetry, heterosyllabic clusters, and word-edge constraints including the citation-vs-combining shape mismatch (loanword adaptation treated in Part XXI)."
+				summary: "Open and closed syllables, permitted codas, resyllabification, and restrictions within roots and across boundaries."
 			},
 			{
 				slug: "glides-w-y",
 				title: "Glides, Vowel Hiatus, and the Diphthong Question",
-				summary: "The phonemic-vs-epenthetic status of /w/ and /y/, glide epenthesis resolving vowel hiatus, and the analysis of ay/uy/oy/aw/iw/ew as coda-glide (VC) sequences rather than true diphthongs."
+				summary: "Final /y/ and /w/ as codas, diphthong terminology, and competing analyses of glides between vowels."
 			}
 		]
 	},
@@ -156,17 +156,17 @@ export const parts: Part[] = [
 			{
 				slug: "pitch-accent-placement-rule",
 				title: "The Pitch-Accent Placement Rule and the Accented/Accentless Dialect Split",
-				summary: "States the synchronic high-pitch placement generalization and divides Hokkaido into accented and accentless dialect classes."
+				summary: "Default accent placement, lexical exceptions, and the differences among Saru-type, Yakumo-type, and unaccented varieties."
 			},
 			{
 				slug: "mora-syllable-accent-vs-tone-analysis",
 				title: "The Prosodic Unit and the Accent-versus-Tone Analysis",
-				summary: "The theoretical analysis of the system: what bears prominence and whether Ainu prosody is culminative accent or a tonal melody."
+				summary: "Rising accent kernels, syllable weight, pitch contours, and the scope of phonological analyses across dialects."
 			},
 			{
 				slug: "lexical-contrastive-accent-minimal-pairs",
 				title: "Lexical/Contrastive Accent and Minimal Pairs",
-				summary: "How much accent is rule-derived versus lexically specified, demonstrated through pitch-only minimal and near-minimal pairs."
+				summary: "Published accent-only minimal pairs, lexical exceptions to default placement, and the limits of functional-load claims."
 			},
 			{
 				slug: "accent-in-compounds-and-affixation",

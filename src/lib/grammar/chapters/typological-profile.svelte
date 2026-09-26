@@ -115,7 +115,7 @@
 	</p>
 	<Ex
 		m="sir-wen yakun somo k=arpa"
-		g="appearance-be.bad if NEG 1SG.S-go.SG"
+		g="appearance-be.bad if NEG 1SG.S=go.SG"
 		tr="If the weather is bad, I will not go."
 		cite="hattori1964:322; bugaeva2022:Ch.1 §4.6, ex. 35"
 		dial="HK"
@@ -222,7 +222,7 @@
 		<p>
 			Many property concepts are expressed by verbs. A word such as <A w="pirka" gl="be good" />
 			can serve as a predicate and modify a noun. Bugaeva includes such forms among intransitive verbs
-			<Ref k="bugaeva2022" p="Ch.1 §4.4" />. Their behaviour and the terminology used in different
+			<Ref k="bugaeva2012" p="470" />. Their behaviour and the terminology used in different
 			descriptions are discussed in <Xr ch="no-adjective-class-property-verbs" />.
 		</p>
 	</S>

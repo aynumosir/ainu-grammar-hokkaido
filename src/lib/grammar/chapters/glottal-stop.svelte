@@ -1,406 +1,185 @@
 <script lang="ts">
-	import { S, Ex, Ref, Xr, A } from '$lib/grammar/components';
+	import { S, Ex, Ref, Xr } from '$lib/grammar/components';
 </script>
 
-<S t="Laryngeal consonants" id="overview">
+<S t="Glottal closure and h" id="overview">
 	<p>
-		The laryngeal consonant /h/ occupies syllable onsets. Glottal closure [ʔ] can occur
-			before a vowel-initial syllable, but its realization and phonological interpretation
-			vary. Nakagawa treats it as a phonetic boundary element
-			<Ref k="nakagawa2024" p="31–33" />; Shiraishi reviews the competing phonemic and
-			non-phonemic accounts <Ref k="shiraishi2022" p="§4.3" />. Okuda's Shizunai evidence
-			supports lexical contrasts involving glides while allowing an analysis of glottal
-			realizations through syllable boundaries <Ref k="okuda2025" p="41, 43–44" /> ‹contested›.
+		Two laryngeal sounds need separate treatment in Hokkaido Ainu: the glottal stop [ʔ] and the
+		fricative /h/. A glottal stop interrupts the airflow by closing the vocal folds; /h/ is a
+		fricative consonant. Descriptions agree on /h/ as a phoneme, while the phonemic status of [ʔ]
+		remains disputed <Ref k="nakagawa2024" p="27, 31–33" />;
+		<Ref k="shiraishi2022" p="§§3, 4.3" /> ‹contested›.
 	</p>
-	<table>
-		<thead>
-			<tr>
-				<th>segment</th>
-				<th>phonological status</th>
-				<th>syllable position</th>
-				<th>note</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>/h/</td>
-				<td>phoneme (consensus)</td>
-				<td>onset only</td>
-				<td>
-					three allophones conditioned by the following vowel; absent as a coda in HA
-					<Ref k="nakagawa2024" p="27" />
-				</td>
-			</tr>
-			<tr>
-				<td>[ʔ]</td>
-				<td>
-					phonemic or syllable-boundary analysis, depending on the account
-					<Ref k="shiraishi2022" p="§4.3" />; <Ref k="okuda2025" p="43–44" />
-				</td>
-				<td>vowel onsets at word-initial and juncture positions</td>
-				<td>
-					Shizunai contrasts can be represented with a laryngeal segment or with syllable
-					boundaries <Ref k="okuda2025" p="41, 44" />
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	<p>
+		The disagreement affects how vowel-initial syllables and vowel sequences are represented. It
+		also affects comparisons between forms in which a consonant joins the next syllable and forms in
+		which a boundary remains audible.
+	</p>
 </S>
 
-<S t="The glottal stop [ʔ]" id="glottal">
+<S t="The glottal stop" id="glottal">
 	<S t="Phonetic distribution" id="distribution">
 		<p>
-			A glottal onset can occur word-initially or at an internal syllable boundary.
-			Nakagawa describes variation between speakers in its word-initial realization
-			<Ref k="nakagawa2024" p="32" />. Shiraishi reports Kindaichi's (1928) observation
-			of frequent glottal closure before vowel-initial syllables
-			<Ref k="shiraishi2022" p="§2.2" />. Its auditory salience also varies with phonetic
-			context. Tamura (1970: 586–587, cited via <Ref k="shiraishi2022" p="§4.3" />) distinguishes
-			a perceptible stop — arising when the following vowel carries lexical accent and/or occurs
-			in a closed syllable — from a barely perceptible transition that amounts to no more than the
-			syllable-division point. Attested forms in which the stop is clearly audible include
-			[aˈʔep] 'food', [aˈʔoypep] 'tableware', [oˈʔatteke], [eˈʔunpipka], and [teˈʔeta]
-			'long ago' (Tamura 1970: 586, cited via <Ref k="shiraishi2022" p="§4.3" />).
+			Glottal closure can occur before an initial vowel, between vowels, or at a boundary where a
+			consonant remains in the preceding syllable. Nakagawa illustrates a clearly audible
+			interruption in <i lang="ain-Latn">teeta</i> “long ago” and in a pronunciation of
+			<i lang="ain-Latn">itak=an</i>
+			“we speak” with a break before the person ending
+			<Ref k="nakagawa2024" p="32" />.
 		</p>
-
+		<p>
+			Its strength varies. Shiraishi reports Tamura's observation that a clear glottal stop or
+			tension is favored before an accented vowel or a vowel in a closed syllable. Elsewhere the
+			transition may be gradual and no clear stop audible
+			<Ref k="shiraishi2022" p="§4.3" />. Transcription should distinguish the audible event from an
+			analyst's decision to posit a consonant even when its realization is weak.
+		</p>
+	</S>
+	<S t="Competing phonological accounts" id="phonemicity">
 		<table>
-			<thead>
-				<tr>
-					<th>phonetic environment</th>
-					<th>realization</th>
-					<th>source</th>
-				</tr>
-			</thead>
+			<thead><tr><th>Account</th><th>Motivation</th><th>Source</th></tr></thead>
 			<tbody>
-				<tr>
-					<td>vowel-initial syllable; following vowel accented and/or in a closed syllable</td>
-					<td>[ʔ] clearly audible</td>
-					<td>Tamura 1970: 586, cited via <Ref k="shiraishi2022" p="§4.3" /></td>
-				</tr>
-				<tr>
-					<td>vowel-initial syllable; the preceding conditions are not fully met</td>
-					<td>[ʔ] minimal or absent; gradual onset tension</td>
-					<td>Tamura 1970: 586–587, cited via <Ref k="shiraishi2022" p="§4.3" /></td>
-				</tr>
-				<tr>
-					<td>after a coda consonant that resyllabifies onto the following vowel</td>
-					<td>[∅]; coda consonant fills the onset slot</td>
-					<td>
-						<Ref k="shiraishi2022" p="§4.4" />; see <Xr ch="syllable-template" />
-					</td>
-				</tr>
+				<tr
+					><td>Glottal stop as a consonant phoneme</td><td
+						>Vowel-initial syllables receive an onset, yielding CV and CVC syllable types.</td
+					><td
+						><Ref k="bugaeva2012" p="465–467" />; Hattori's analysis as reviewed by <Ref
+							k="shiraishi2022"
+							p="§4.3"
+						/></td
+					></tr
+				>
+				<tr
+					><td>Glottal closure as a realization of a boundary</td><td
+						>The analysis admits vowel-initial syllables and does not require a glottal consonant in
+						every such position.</td
+					><td><Ref k="nakagawa2024" p="31–33" />; <Ref k="okuda2025" p="43–44" /></td></tr
+				>
 			</tbody>
 		</table>
-
 		<p>
-			A consonant can resyllabify as the onset of a following vowel-initial morpheme:
-			<i lang="ain-Latn">cip-o</i> → [ci.po] 'board a boat' and
-			<i lang="ain-Latn">mat-ak</i> → [ma.tak] 'younger sister'
-			<Ref k="shiraishi2022" p="§4.4" />. Shiraishi also describes occasional blocking,
-			with a glottal stop before the vowel. Both resyllabification and glottal realization
-			must therefore be accounted for in the analysis of junctures.
+			The consonant analysis simplifies the inventory of syllable shapes. Nakagawa argues that it
+			also requires additional rules to remove the glottal consonant in morphological combinations;
+			his boundary analysis avoids that cost
+			<Ref k="nakagawa2024" p="33, 44" />. The choice concerns the organization of the phonological
+			description, alongside the evidence for particular contrasts ‹contested›.
+		</p>
+		<p>
+			Refsing reports that glottal closure was difficult for her to detect in her speaker's speech
+			and omits it from her transcription <Ref k="refsing1986" p="§10.2" />. That observation should
+			retain its speaker and transcription context. Okuda discusses the possibility of weak closure
+			and relates the debate to syllable-boundary analysis
+			<Ref k="okuda2025" p="43–44" />.
 		</p>
 	</S>
-
-	<S t="Phonemic status" id="phonemicity">
+	<S t="Juncture and resyllabification" id="juncture">
 		<p>
-			Whether [ʔ] constitutes an underlying phoneme /ʔ/ in Hokkaido Ainu is contested
-			<Ref k="shiraishi2022" p="§4.3" />. Two positions have been held since the mid-twentieth
-			century:
+			A final consonant can become the onset of a following vowel-initial syllable. Shiraishi
+			illustrates this with <i lang="ain-Latn">sik-o</i> “open the eyes,” syllabified
+			<span lang="ain-Latn">si.ko</span>, and
+			<i lang="ain-Latn">hum-as</i> “a sound is heard,” syllabified
+			<span lang="ain-Latn">hu.mas</span>
+			<Ref k="shiraishi2022" p="§4.4" />.
 		</p>
-
-		<table>
-			<thead>
-				<tr>
-					<th>analysis</th>
-					<th>proponents</th>
-					<th>principal arguments</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><strong>laryngeal phoneme /’/</strong></td>
-					<td>Hattori (1961), discussed by Okuda</td>
-					<td>
-						Positing an initial laryngeal segment reduces the syllable inventory to CV and CVC.
-						Hattori's /’/ is not simply identical to the audible stop [ʔ]
-						<Ref k="okuda2025" p="43–44" />; see also
-						<Ref k="nakagawa2024" p="31–32" />.
-					</td>
-				</tr>
-				<tr>
-					<td><strong>phonetic boundary element, non-phonemic</strong></td>
-					<td>
-						Chiri (1942: 461) <Ref k="chiri1942" />; Refsing (1986: 68)
-						<Ref k="refsing1986" />; Nakagawa (2024) <Ref k="nakagawa2024" />
-					</td>
-					<td>
-						Nakagawa argues that glottal closure has limited distinctive function and that
-						positing /’/ requires additional deletion rules. In
-						<i lang="ain-Latn">parúnpe</i> 'tongue', an undeleted laryngeal onset on
-						<i lang="ain-Latn">un</i> would preserve the first constituent's final /r/ as
-						a coda: /par.’un.pe/. The observed syllabification /pa.run.pe/ and second-syllable
-						accent require deletion of that onset in such an analysis
-						<Ref k="nakagawa2024" p="32, 44" />.
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
 		<p>
-			The accent of <i lang="ain-Latn">parúnpe</i> is part of Nakagawa's argument about
-			the complexity of the analysis. It does not by itself make a laryngeal-phoneme
-			account impossible. For Shizunai, Okuda likewise permits both segmental and
-			syllable-boundary representations of glottal contrasts
-			<Ref k="okuda2025" p="44" /> ‹contested›.
+			The process is sometimes blocked by accent or by a morphological boundary, including the
+			boundary between repeated elements. A glottal stop can occur where the vowel begins its own
+			syllable <Ref k="shiraishi2022" p="§4.4" />. Thus morpheme boundaries, written word
+			boundaries, and pronounced syllable boundaries need to be considered separately; see <Xr
+				ch="syllable-template"
+			/>.
 		</p>
 	</S>
-
-	<S t="Juncture variation" id="juncture">
+	<S t="A Shizunai contrast" id="shizunai">
 		<p>
-			Resyllabification can be blocked at a morpheme boundary, with a glottal stop appearing
-			before the following vowel. Shiraishi reports this occasionally before a vowel bearing
-			secondary accent and at boundaries such as reduplicant–base
-			<Ref k="shiraishi2022" p="§4.4" />. The realization of a particular boundary can vary.
-			A community analysis distinguishes three tokens of
-			<i lang="ain-Latn">itakorapiru=an</i>: C0170L00947
-			[<i lang="ain-Latn">itak̚ʔorapiru=an</i>] with a clear glottal closure,
-			C0179L00408 with partial joining and an audible glottal, and C0180L00668
-			[<i lang="ain-Latn">i.ta.ko.ra.pi.ru=an</i>] with resyllabification
-			<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-21) ‹corpus-suggested›.
-			The verb means 'finish speaking': Ishii's transcription of Kawakami Matsuko's
-			<i lang="ain-Latn">uwepeker</i> 18 has <i lang="ain-Latn">itakorapiru=an</i>
-			in line 53, translated 'when I have finished speaking'
-			<Ref k="ilcaa1976" p="uwepeker 18, line 53, note 32" />.
+			Okuda gives the following Shizunai contrast, represented phonetically as [tʃiʃʔekot] and
+			[tʃisekot] <Ref k="okuda2025" p="44" />:
 		</p>
-		<p>
-			The community analysis reports a separate voiceless interval of about 40 ms between
-			/k/ and /o/ in C0170L00947, and no such interval in the other two tokens. It nevertheless
-			describes a glottal in the middle token. The interval measurement therefore does not
-			by itself distinguish all three reported realizations. These are measurements and
-			interpretations reported for three tokens; the note does not establish a systematic
-			careful-versus-casual speech contrast
-			<Ref k="aynucorporadiscord" /> (nukopoli, 2024-12-21) ‹corpus-suggested›.
-		</p>
-
-		<p>
-			A community note reports [sapʔan] for <i lang="ain-Latn">sap=an</i>, alongside
-			[sa.nan] for <i lang="ain-Latn">san=an</i>, and subsequently mentions a pronunciation
-			<i lang="ain-Latn">sapas</i> <Ref k="aynucorporadiscord" />
-			(nukopoli, 2023-12-27) ‹corpus-suggested›. The last form is written with
-			<i lang="ain-Latn">=as</i>; it cannot simply be treated as another transcription of
-			<i lang="ain-Latn">sap=an</i>. This brief report supports neither an invariant
-			glottal stop after every consonant-final stem nor a general ban on resyllabification.
-			<i lang="ain-Latn">sap</i> is the plural counterpart of
-			<i lang="ain-Latn">san</i> 'go downstream, toward the shore'
-			<Ref k="tamura1996" p="s.v. san, sap" />.
-		</p>
-
 		<Ex
-			m="sap=an"
-			g="go.downstream=4.S"
-			tr="We (inclusive) go downstream."
-			cite="shiraishi2022:§5.1"
-			dial="HK"
-			place="Example (21b), following Tamura"
-			note="Shiraishi cites this form for accent on a one-syllable stem. The glottal realization [sapʔan] is reported separately in the December 27 community note; it is not supplied by this accent example."
-		/>
-
-		<p>
-			In notes on Mukawa recordings, <i lang="ain-Latn">a=kor itak</i> is transcribed
-			[akorəʔitak], with an echo vowel after /r/ and a glottal before
-			<i lang="ain-Latn">itak</i>. The same discussion gives
-			<i lang="ain-Latn">unukar=an</i> as [unukaran], then adds [unkarəʔan] in careful
-			speech <Ref k="aynucorporadiscord" /> (nukopoli, 2024-03-18) ‹corpus-suggested›.
-			These observations show why the presence of a glottal in one token cannot determine
-			the phonetic realization of all person-marker boundaries.
-		</p>
-
-		<Ex
-			m="a=kor itak"
-			g="4.A=have speech"
-			tr="The speech/language one has (literal)."
-			cite="aynucorporadiscord"
-			dial="HK"
-			place="nukopoli, 2024-03-18, notes on Mukawa recordings"
-			note="Reported transcription [akorəʔitak]. The glottal follows kor and precedes itak. This observation does not rank a= against the other person markers by degree of integration."
-		/>
-
-		<p>
-			A later community note suggests that <i lang="ain-Latn">a=</i> and
-			<i lang="ain-Latn">=an</i> tend to be pronounced more independently than
-			<i lang="ain-Latn">ku=</i> and <i lang="ain-Latn">e=</i>
-			<Ref k="aynucorporadiscord" /> (nukopoli, 2024-11-05) ‹speculative›.
-			The note gives no ordering between <i lang="ain-Latn">a=</i> and
-			<i lang="ain-Latn">=an</i>. Accent behavior and juncture realization are treated in
-			<Xr ch="accent-in-compounds-and-affixation" /> and
-			<Xr ch="personal-affix-sandhi-connected-speech-reduction" />; vowel hiatus is treated in
-			<Xr ch="glide-epenthesis-hiatus-resolution" />.
-		</p>
-	</S>
-
-	<S t="Shizunai contrasts and their representation" id="shizunai">
-		<p>
-			Okuda reports a Shizunai pair discovered by 志賀雪湖:
-			[suwat] 'pothook' and [suʔat] 'pot bail'. Both are analysed etymologically as
-			<i lang="ain-Latn">su</i> 'pot' plus <i lang="ain-Latn">at</i> 'cord';
-			the pothook term is semantically less transparent. In Orita Suteno's variety,
-			Okuda finds no distinctive pitch accent, so the lexical distinction supplies
-			evidence for /w/. He gives /suwat/ beside /su’at/ or /suat/
-			<Ref k="okuda2025" p="41" /> ‹contested›.
-		</p>
-
-		<Ex
-			m="suwat"
-			g="pothook"
-			tr="Pothook."
-			cite="okuda2025:41"
+			m="cis-ekot"
+			g="cry-die"
+			tr="die crying"
+			cite="okuda2025:44"
 			dial="SHI"
-			note="Reported pronunciation [suwat]. Okuda relates the glide to the greater lexical integration of this compound; he analyses it as phonologically present."
+			note="Pronounced [tʃiʃʔekot]. Okuda shows the syllabification cis.e.kot. Morpheme boundaries and English glosses are supplied here."
 		/>
 		<Ex
-			m="su-at"
-			g="pot-cord"
-			tr="Pot bail."
-			cite="okuda2025:41"
+			m="cise-kot"
+			g="house-site"
+			tr="house site"
+			cite="okuda2025:44"
 			dial="SHI"
-			note="Reported pronunciation [suʔat]. Okuda allows phonological representations /su’at/ and /suat/; the contrast does not require a separate glottal-stop phoneme."
+			note="Pronounced [tʃisekot], with syllabification ci.se.kot. Morpheme boundaries and English glosses are supplied here."
 		/>
-
 		<p>
-			Okuda also describes contrasts between /u’a/ and /uwa/, /u’e/ and /uwe/,
-			/i’o/ and /iyo/, and /i’e/ and /iye/. He notes that weakening of /w/, /y/ and /’/
-			can make their phonetic realizations overlap <Ref k="okuda2025" p="41" />.
-			His conclusion concerns the phonological status of the glides; it leaves room
-			for different representations of the glottal element.
-		</p>
-		<p>
-			The distinction between [tʃiʃʔekot] 'cry to death' and [tʃisekot] 'house site'
-			makes the alternatives explicit. Okuda represents the former as
-			<i lang="ain-Latn">cis’ekot</i> with a laryngeal segment or
-			<i lang="ain-Latn">cis.e.kot</i> with syllable boundaries; the latter has
-			<i lang="ain-Latn">ci.se.kot</i>. Thus a contrast involving glottal realization
-			can be expressed through syllabification <Ref k="okuda2025" p="44" />.
-			For the competing analyses of glides, see <Xr ch="glides-w-y" />.
+			The contrast can be represented with a glottal consonant or with different syllable
+			boundaries. Okuda explicitly discusses both possibilities
+			<Ref k="okuda2025" p="44" />. Recognizing the contrast therefore leaves an analytical choice
+			about how to represent it ‹contested›.
 		</p>
 	</S>
 </S>
 
-<S t="Emphatic glottal insertion" id="emphatic">
+<S t="Emphatic forms" id="emphatic">
 	<p>
-		A morphologically conditioned process inserts [ʔ] to break a repeated vowel in emphatic or
-		intensified word forms, shifting or heightening the form's meaning. The set of participating
-		roots is lexically restricted. Kindaichi (1931, cited via
-		<Ref k="shiraishi2022" p="§2.2" />) documents the pattern in Saru:
+		Shiraishi reports Kindaichi's contrast between ordinary phonetic lengthening and emphatic forms
+		in which a glottal interruption separates the vowels
+		<Ref k="shiraishi2022" p="§2.2" />:
 	</p>
-
 	<table>
-		<thead>
-			<tr>
-				<th>base form</th>
-				<th>emphatic form</th>
-				<th>gloss shift</th>
-			</tr>
-		</thead>
+		<thead
+			><tr><th>Ordinary form</th><th>Meaning</th><th>Emphatic pronunciation</th><th>Meaning</th></tr
+			></thead
+		>
 		<tbody>
-			<tr>
-				<td><i lang="ain-Latn">wen</i> [wen]</td>
-				<td><i lang="ain-Latn">weʔen</i> [weʔen]</td>
-				<td>'bad' → 'very bad'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">to</i> [to]</td>
-				<td><i lang="ain-Latn">toʔo</i> [toʔo]</td>
-				<td>'far away' → 'far away (emphatic)'</td>
-			</tr>
-			<tr>
-				<td><i lang="ain-Latn">teta</i> [teta]</td>
-				<td><i lang="ain-Latn">teʔeta</i> [teʔeta]</td>
-				<td>'a few days ago' → 'long ago'</td>
-			</tr>
+			<tr><td lang="ain-Latn">wen</td><td>bad</td><td>[weʔen]</td><td>very bad</td></tr>
+			<tr><td lang="ain-Latn">to</td><td>over there</td><td>[toʔo]</td><td>far away</td></tr>
+			<tr
+				><td lang="ain-Latn">teta</td><td>a few days before</td><td>[teʔeta]</td><td>long ago</td
+				></tr
+			>
 		</tbody>
 	</table>
-
 	<p>
-		The [ʔ] in emphatic forms carries semantic weight and is invariant under conditions that
-		suppress the boundary glottal elsewhere. This distinguishes it from the phonetically automatic
-		onset [ʔ] discussed above, which yields to resyllabification.
+		These forms illustrate why duration alone is insufficient for identifying vowel length. The
+		syllable structure and interruption matter; compare
+		<Xr ch="vowel-inventory" s="length" />.
 	</p>
 </S>
 
-<S t="The phoneme /h/" id="h-phoneme">
-	<S t="Onset distribution and allophony" id="h-onset">
+<S t="The fricative h" id="h-phoneme">
+	<S t="Onset realization and weakening" id="h-onset">
 		<p>
-			The phoneme /h/ occurs only in syllable-onset position in Hokkaido Ainu, categorically
-			excluded from the coda
-			<Ref k="nakagawa2024" p="27" />; <Ref k="sato2008" p="§2.3" />.
-			Three allophones are conditioned by the following vowel
-			<Ref k="nakagawa2024" p="28" />; <Ref k="shiraishi2022" p="§3.1" />:
+			The phoneme /h/ occurs as an onset. Nakagawa describes [h] before /a, e, o/, [ç] before /i/,
+			and frequently [ɸ] before /u/, with variation in the strength of this vowel conditioning <Ref
+				k="nakagawa2024"
+				p="28"
+			/>. Shiraishi reports weaker conditioning in Tamura's descriptions of older speakers
+			<Ref k="shiraishi2022" p="§3" />.
 		</p>
-
-		<table>
-			<thead>
-				<tr>
-					<th>environment</th>
-					<th>allophone</th>
-					<th>example</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>/h/ before /a/, /e/, /o/</td>
-					<td>[h]</td>
-					<td>
-						<i lang="ain-Latn">hapo</i> [hapo] 'mother';
-						<i lang="ain-Latn">humi</i> [humi] 'sound, sensation'
-					</td>
-				</tr>
-				<tr>
-					<td>/h/ before /i/</td>
-					<td>[ç]</td>
-					<td><i lang="ain-Latn">hine</i> [çine] 'and then' (conjunctive particle)</td>
-				</tr>
-				<tr>
-					<td>/h/ before /u/</td>
-					<td>[ɸ]</td>
-					<td><i lang="ain-Latn">huci</i> [ɸuci] 'grandmother, elderly woman'</td>
-				</tr>
-			</tbody>
-		</table>
-
 		<p>
-			The conditioning is audible but less categorical than in standard Japanese. Tamura (1998: 41,
-			cited via <Ref k="shiraishi2022" p="§3.1" />) reports that speakers born around 1900 showed
-			only weak vowel-coloring of /h/, with the [ɸ] before /u/ approaching a glottal quality in
-			particular tokens. All three realizations are predictable allophones of a single phoneme /h/;
-			no minimal pair distinguishes them for the same following vowel
-			(see <Xr ch="consonant-inventory" />).
+			/h/ can weaken or disappear in connected speech, especially in dependent words. Nakagawa gives <i
+				lang="ain-Latn">an hine</i
+			>
+			pronounced
+			<i lang="ain-Latn">anine</i> and <i lang="ain-Latn">hawean hi</i> pronounced
+			<i lang="ain-Latn">haweani</i>, while stressing variation with speech rate and care
+			<Ref k="nakagawa2024" p="39" />. A fuller account appears in
+			<Xr ch="personal-affix-sandhi-connected-speech-reduction" />.
 		</p>
 	</S>
-
-	<S t="Coda /h/ and the final-h question" id="h-coda">
+	<S t="Hokkaido and Sakhalin final consonants" id="h-coda">
 		<p>
-			Coda /h/ is absent as a synchronic segment in Hokkaido Ainu: no native Hokkaido word
-			carries a laryngeal in coda position
-			<Ref k="nakagawa2024" p="27" />; <Ref k="sato2008" p="§2.3" />.
-			In Sakhalin Ainu, by contrast, a coda breath-release /h/ (realized as a voiceless breath,
-			not [x]; Hattori 1964: 34, cited via <Ref k="nakagawa2024" p="27" />) is productive and
-			reflects historical HA coda /r/ among other sources
-			(see <Xr ch="final-h-history-and-sakhalin-length-reflex" />).
+			Ordinary Hokkaido phonotactics exclude /h/ from the syllable coda
+			<Ref k="nakagawa2024" p="27" />; <Ref k="sato2008" p="11" />. Sakhalin final /h/ belongs to a
+			different set of correspondences. Tangiku documents the replacement of historical final stops
+			by /h/ in many Sakhalin dialects, with geographical exceptions
+			<Ref k="tangiku2022" p="§2.3" />.
 		</p>
-
 		<p>
-			Within Hokkaido Ainu, the possessed form
-			<i lang="ain-Latn">siki-h-i</i> 'his/her eyes' (from <A w="siki" gl="eye" />) contains
-			an epenthetic /h/ inserted before the possessive suffix. This /h/ is a morphological
-			insertion restricted to the
-			<Xr ch="affiliative-suffix-morphophonology">affiliative formation</Xr> and does not
-			represent an underlying coda in the root
-			(Kindaichi &amp; Chiri 1936: 14, cited via <Ref k="shiraishi2022" p="n.8" />).
-			Whether certain citation forms of stems carry an underlying final /h/, and what diachronic
-			relationship that /h/ bears to the Sakhalin coda and to Sakhalin vowel length, is the
-			'final-h question' treated in
-			<Xr ch="final-h-history-and-sakhalin-length-reflex" />.
+			The glottal stop, a weakened onset /h/, and Sakhalin final /h/ should consequently be
+			identified by their separate distributions and source descriptions. The comparative patterns
+			are treated in <Xr ch="sakhalin-and-kuril-ainu-contrast" />.
 		</p>
 	</S>
 </S>

@@ -399,7 +399,7 @@ export const bibliography: Record<string, BibEntry> = {
 		publisher: 'Kyōdo Kenkyūsha 郷土研究社',
 		place: 'Tokyo',
 		lang: 'ja',
-		note: 'Horobetsu/Iburi kamuy yukar with Japanese translation; the first published Ainu-language oral-literature collection, compiled by Yukie Chiri (1903–1922). Digitised as 桃内 2008 (桃内義弥).'
+		note: 'Thirteen Horobetsu/Iburi divine songs with Japanese translations by Chiri Yukie (1903–1922). Digitised as 桃内 2008 (桃内義弥).'
 	},
 
 	// ───────────────────────── Pedagogical / standard / text-collection books ─────────────────────────
@@ -1743,7 +1743,7 @@ export const bibliography: Record<string, BibEntry> = {
 		citeAuthor: 'Nakagawa et al.',
 		year: '2016',
 		title: 'A glossed audio corpus of Ainu folklore',
-		url: 'https://db.aynu.org/sources/2016-nakagawa-hiroshi-a-glossed-audio-corpus-of-ainu-folklore',
+		url: 'https://ainu.ninjal.ac.jp/folklore/',
 		note: 'Online glossed Hokkaido folktale corpus (Chitose, Saru). Cite the underlying narrator/source for examples.'
 	},
 	ilcaa1976: {

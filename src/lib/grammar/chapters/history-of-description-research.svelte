@@ -145,11 +145,11 @@
 	</p>
 	<p>
 		Published recordings and annotated corpora make some of the underlying speech accessible
-		alongside its transcription and translation. Collections include the NINJAL oral-literature
-		corpus and the Glossed Audio Corpus of Ainu Folklore
-		<Ref k="ninjal2003" />; <Ref k="glossedcorpus2016" />. Their speakers, genres, and annotation
-		practices are described in <Xr ch="oral-literature-and-spoken-corpora" />. They complement
-		grammatical publications by allowing particular analyses to be checked against the recorded
-		examples.
+		alongside its transcription and translation. NINJAL’s Glossed Audio Corpus of Ainu Folklore
+		presents such materials
+		<Ref k="glossedcorpus2016" />. Their speakers, genres, and annotation practices are described in <Xr
+			ch="oral-literature-and-spoken-corpora"
+		/>. They complement grammatical publications by allowing particular analyses to be checked
+		against the recorded examples.
 	</p>
 </S>

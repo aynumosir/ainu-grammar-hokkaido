@@ -21,15 +21,17 @@
 		<li>A case study: sikerpe and the Japanese siko-type — <Xr ch="ainu-loanwords-and-toponymy-in-japanese" /></li>
 		<li>A class of lexically negative predicates — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li>A position-class template — <Xr ch="verb-word-template" /></li>
+		<li>A rising kernel and a variable later contour — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
+		<li>A Shizunai contrast — <Xr ch="glottal-stop" /></li>
 		<li>A valence-based taxonomy — <Xr ch="verbal-subclasses-taxonomy" /></li>
 		<li>A weather exchange — <Xr ch="everyday-conversation-text" /></li>
 		<li>aan stacked with ruwe ne — <Xr ch="perfective-anterior-a" /></li>
 		<li>ABA distributions and retention at the periphery — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
 		<li>Ability: eaykap, koyaykus, niwkes — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li>Ablative and mutative heads — <Xr ch="prenominal-gap-relative-clauses" /></li>
-		<li>Accent dialects, irregular dialects, and accentless varieties — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
-		<li>Accent of loanwords and reduplicated forms — <Xr ch="lexical-contrastive-accent-minimal-pairs" /></li>
-		<li>Accent versus tone: the analytical question — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
+		<li>Accent and vowel length in historical comparison — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
+		<li>Accent marks — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>Accent within the pitch contour — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>Accent-neutral suffixes: -pa and the affiliative -hV — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Accent-orientation metre — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
 		<li>Additive and scalar focus: ka, hem, and hene — <Xr ch="topic-marking-anakne" /></li>
@@ -43,7 +45,6 @@
 		<li>Affiliative-suffix position — <Xr ch="noun-noun-compounding" /></li>
 		<li>Affiliative-type prefixes e- and o- — <Xr ch="external-possession-possessor-raising" /></li>
 		<li>Aims and intended readership — <Xr ch="aims-scope-design-philosophy" /></li>
-		<li>Ainu [ɕ] and Japanese /ɕ/: a phonetic note — <Xr ch="s-palatalization" /></li>
 		<li>Ainu and Japonic — <Xr ch="genetic-position-macro-comparison" /></li>
 		<li>Ainu writers and the Kindaichi–Chiri descriptions — <Xr ch="history-of-description-research" /></li>
 		<li>Ainu–Nivkh contact: the lexical layer — <Xr ch="northern-contact-nivkh-tungusic-manchu" /></li>
@@ -91,14 +92,15 @@
 		<li>Aspect and completion forms as temporal anchors — <Xr ch="tenselessness-and-time-reference" /></li>
 		<li>Aspectual an and the posture-verb pathway — <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></li>
 		<li>Assertive and softening: na, wa, un — <Xr ch="sentence-final-particles-illocutionary-force" /></li>
-		<li>Assessment — <Xr ch="glides-w-y" /></li>
+		<li>At the beginning of a syllable — <Xr ch="s-palatalization" /></li>
+		<li>At the end of a syllable — <Xr ch="s-palatalization" /></li>
 		<li>at-rus → attus: a compound assimilation — <Xr ch="citation-vs-combining-stem-shapes" /></li>
 		<li>Attestation and source coverage — <Xr ch="inonno-itak-ritual-prayer" /></li>
-		<li>Attribution: the original-source rule — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>Attributive and predicative positions — <Xr ch="property-concept-predication" /></li>
 		<li>Attributive ne in noun-noun compounds — <Xr ch="copula-ne-predicate-nominals" /></li>
 		<li>Attributive NP vs compound: the scope distinction — <Xr ch="noun-noun-compounding" /></li>
 		<li>Attributive-restrictive compounds — <Xr ch="noun-noun-compounding" /></li>
+		<li>Audio with transcription and glosses — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Avalent predicates — <Xr ch="verbal-subclasses-taxonomy" /></li>
 	</ul>
 	<h3>B</h3>
@@ -112,23 +114,26 @@
 		<li>Body-part noun incorporation and possessor-to-subject raising — <Xr ch="external-possession-possessor-raising" /></li>
 		<li>Body-part terms — <Xr ch="lexical-semantic-fields-synopsis" /></li>
 		<li>Body-region prefixes he- and ho- — <Xr ch="middle-anticausative-passive" /></li>
+		<li>Borrowed forms — <Xr ch="syllable-template" /></li>
+		<li>Boundaries and combined labels — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Boundaries and dialect evidence — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li>Boundaries and open questions — <Xr ch="negation-somo-standard-clausal" />, <Xr ch="negation-polarity-items-scope" /></li>
 		<li>Boundaries with evidentiality, negation, and clause linkage — <Xr ch="tam-overview" /></li>
 		<li>Boundaries: SFP, connective, and the evidential tail — <Xr ch="sentence-final-particles-illocutionary-force" /></li>
-		<li>Boundary-derived occurrences — <Xr ch="glides-w-y" /></li>
+		<li>Boundary-derived sequences — <Xr ch="glides-w-y" /></li>
 	</ul>
 	<h3>C</h3>
 	<ul class="subject-index">
-		<li>Capitalization, proper names, and punctuation — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>Capitals and punctuation — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Case or adposition? The analytical question — <Xr ch="postpositions-local-case-and-motion-events" /></li>
 		<li>Case particles — <Xr ch="postpositions-local-case-and-motion-events" /></li>
 		<li>Casual reduction of word-final /r/ and the koro/kor pair — <Xr ch="citation-vs-combining-stem-shapes" /></li>
 		<li>Catalogue of analyses — <Xr ch="alignment-hierarchical-and-the-debate" /></li>
 		<li>Causative of a transitive: the three-place frame — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
 		<li>Causative suffixes and the lexicalized koré — <Xr ch="accent-in-compounds-and-affixation" /></li>
+		<li>Changes at morpheme and word boundaries — <Xr ch="rhotic-r" /></li>
 		<li>Characterization as obviation or switch-reference — <Xr ch="reference-tracking" /></li>
-		<li>Chiri Yukie and the pre-war foundations — <Xr ch="oral-literature-and-spoken-corpora" /></li>
+		<li>Chiri Yukie's collection — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Chronological strata — <Xr ch="japanese-loanwords-in-ainu" /></li>
 		<li>ciki/cik — the mood-restricted conditional — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li>Class membership: gradient and construal-sensitive — <Xr ch="alienable-inalienable-split" /></li>
@@ -140,17 +145,10 @@
 		<li>Clitic and affix status of the personal indexes — <Xr ch="personal-affix-template-and-ordering" /></li>
 		<li>Clusivity: the exclusive row and the fourth-person inclusive — <Xr ch="first-person-plural-and-clusivity" /></li>
 		<li>Co-occurrence with somo — <Xr ch="negation-prohibitive-iteki" /></li>
-		<li>Coda /h/ and the final-h question — <Xr ch="glottal-stop" /></li>
-		<li>Coda /h/ in katakana — <Xr ch="katakana-and-small-kana-codas" /></li>
-		<li>Coda /n/ and the small-ン question — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>Coda /n/-sandhi — <Xr ch="coda-r-assimilation-sonorant-sandhi" /></li>
-		<li>Coda /r/ and the echo-vowel — <Xr ch="rhotic-r" /></li>
 		<li>Coda /r/-sandhi — <Xr ch="coda-r-assimilation-sonorant-sandhi" /></li>
 		<li>Coda /r/: citation release and combining forms — <Xr ch="citation-vs-combining-stem-shapes" /></li>
-		<li>Coda /s/ before /w/: the override constraint — <Xr ch="s-palatalization" /></li>
-		<li>Coda allophony: the /i/-conditioning — <Xr ch="s-palatalization" /></li>
 		<li>Coda alternation in paired reduplicants: rikin and rikip — <Xr ch="reduplication-phonology-rule-interaction" /></li>
-		<li>Coda realizations — <Xr ch="consonant-inventory" /></li>
 		<li>Coda-nasal place assimilation — <Xr ch="coda-r-assimilation-sonorant-sandhi" /></li>
 		<li>Cognition: experience and understanding — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li>Colonization and language shift — <Xr ch="ainu-people-homeland-history" /></li>
@@ -158,19 +156,25 @@
 		<li>Combinatorial limits and related morphology — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
 		<li>Combined subject and object forms — <Xr ch="personal-affix-template-and-ordering" /></li>
 		<li>Comitative and benefactive uses — <Xr ch="applicative-ko" /></li>
+		<li>Common correspondences — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Common nouns: concept form and affiliative form — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>Common vs proper nouns — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>Community analysis: ci- as a productive middle — <Xr ch="middle-anticausative-passive" /></li>
-		<li>Community observations from the aynu-corpora archive — <Xr ch="dialect-sample-and-corpus-method" /></li>
+		<li>Comparing transcriptions — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Comparison and degree — <Xr ch="no-adjective-class-property-verbs" /></li>
+		<li>Comparison with Japanese — <Xr ch="s-palatalization" /></li>
+		<li>Comparison with Sakhalin vowel length — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>Comparison: the akkari strategy and the absence of a morphological comparative — <Xr ch="adverbs-degree-comparison" /></li>
 		<li>Competing analyses — <Xr ch="aims-scope-design-philosophy" />, <Xr ch="external-possession-possessor-raising" /></li>
+		<li>Competing analyses of intervocalic glides — <Xr ch="glides-w-y" /></li>
 		<li>Competing analyses of ne — <Xr ch="copula-ne-predicate-nominals" /></li>
 		<li>Competing analyses of the applied-object position — <Xr ch="applicative-stacking-relativization-feeding" /></li>
+		<li>Competing phonological accounts — <Xr ch="glottal-stop" /></li>
 		<li>Competing taxonomies and contested genre boundaries — <Xr ch="oral-literature-genre-taxonomy" /></li>
 		<li>Complement-taking predicates — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>Completion, anteriority, and the admirative — <Xr ch="tam-overview" /></li>
 		<li>Completive aspect: wa isam and wa okere — <Xr ch="phasal-iterative-habitual-aspect" /></li>
+		<li>Complex words and related forms — <Xr ch="lexical-contrastive-accent-minimal-pairs" /></li>
 		<li>Compound words: first-element priority — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Concept form and affiliative (possessed) form — <Xr ch="lexical-head-formal-noun-nominalization" /></li>
 		<li>Condition, concession, cause, and the mood of the matrix clause — <Xr ch="clause-linkage-overview" /></li>
@@ -179,24 +183,23 @@
 		<li>Conditions on the affiliative form — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>Configurationality diagnostics assessed — <Xr ch="nonconfigurationality-pronominal-argument" /></li>
 		<li>Conjunctions: a distributed category — <Xr ch="word-class-inventory-and-diagnostics" /></li>
+		<li>Connected-speech environments — <Xr ch="s-palatalization" /></li>
 		<li>Connected-speech reductions — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
 		<li>Connective inventory — <Xr ch="conjunctions-discourse-connectives" /></li>
 		<li>Consonant microvariation — <Xr ch="hokkaido-phonological-microvariation" /></li>
+		<li>Consonants in the coda — <Xr ch="syllable-template" /></li>
 		<li>Constituent order — <Xr ch="typological-profile" /></li>
 		<li>Content and Theme-Patient: the dominant and non-oblique uses — <Xr ch="applicative-e" /></li>
 		<li>Content questions: wh in situ — <Xr ch="interrogative-strategies-question-particles" /></li>
-		<li>Contested notational choices — <Xr ch="orthographic-standardization-and-word-division" /></li>
-		<li>Continuing documentation: text series, corpora, and modern prose — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Contrast — <Xr ch="independent-personal-pronouns" /></li>
 		<li>Contrast with the productive causative — <Xr ch="permissive-sociative-causative-yar" /></li>
-		<li>Conventions adopted in this grammar — <Xr ch="orthographic-standardization-and-word-division" /></li>
+		<li>Converting between Latin and kana — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>Coordinate and exocentric compounds — <Xr ch="noun-noun-compounding" /></li>
 		<li>Copular negation and the particle ka — <Xr ch="negation-somo-standard-clausal" /></li>
 		<li>Core argument positions — <Xr ch="prenominal-gap-relative-clauses" /></li>
 		<li>Corpus examples — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
 		<li>Corpus illustration — <Xr ch="reduplication-phonology-rule-interaction" /></li>
 		<li>Corpus profile — <Xr ch="permissive-sociative-causative-yar" /></li>
-		<li>Corpus-frequency methodology — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>Counts from the annotated MDB inventory — <Xr ch="applicative-system-overview" /></li>
 		<li>Coverage and documentation gaps — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
 		<li>Coverage and the Hokkaido documentary record — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
@@ -225,7 +228,8 @@
 		<li>Detransitivization and person-marking consequences — <Xr ch="noun-incorporation-object" /></li>
 		<li>Deverbal adverbs: the -no adverbializer and bare conversion — <Xr ch="adverbs-degree-comparison" /></li>
 		<li>Deverbal derivation without valency change — <Xr ch="denominal-deverbal-verb-derivation" /></li>
-		<li>Devoicing of coda /r/ after voiceless-stop onsets — <Xr ch="rhotic-r" /></li>
+		<li>Devoicing — <Xr ch="vowel-inventory" /></li>
+		<li>Devoicing and frication in clusters — <Xr ch="rhotic-r" /></li>
 		<li>Diachrony and dialect microvariation — <Xr ch="hawe-ne-reportative" /></li>
 		<li>Diachrony and dialect variation — <Xr ch="humi-ne-sensory" /></li>
 		<li>Diachrony, dialect microvariation, and a Sakhalin contrast — <Xr ch="ruwe-ne-inferential" /></li>
@@ -236,37 +240,36 @@
 		<li>Diagnostics for identifying Japanese loans — <Xr ch="japanese-loanwords-in-ainu" /></li>
 		<li>Diagnostics: compound vs syntactic noun phrase — <Xr ch="noun-noun-compounding" /></li>
 		<li>Dialect and comparative edges — <Xr ch="clause-linkage-overview" /></li>
-		<li>Dialect and genre coverage — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Dialect and locality labels — <Xr ch="abbreviations-glossing-symbols" /></li>
-		<li>Dialect classes — <Xr ch="pitch-accent-placement-rule" /></li>
-		<li>Dialect classification and the isogloss basis — <Xr ch="dialect-sample-and-corpus-method" /></li>
+		<li>Dialect and speaker attribution — <Xr ch="glossing-abbreviations-and-citation" /></li>
+		<li>Dialect comparison — <Xr ch="vowel-inventory" /></li>
 		<li>Dialect comparison and post-war grammars — <Xr ch="history-of-description-research" /></li>
 		<li>Dialect correspondence sets — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
+		<li>Dialect coverage — <Xr ch="dialect-sample-and-corpus-method" /></li>
+		<li>Dialect differences — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>Dialect distribution and cognate forms — <Xr ch="simultaneous-kor-clauses" /></li>
 		<li>Dialect distribution of the hortative particles — <Xr ch="hortative-and-optative" /></li>
 		<li>Dialect edges — <Xr ch="hine-akusu-switch-reference" /></li>
 		<li>Dialect geography: the h-series and n-series — <Xr ch="interrogative-pro-forms" /></li>
 		<li>Dialect microvariation — <Xr ch="evidential-schema-overview" /></li>
-		<li>Dialect mixture — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Dialect range and Sakhalin contrast — <Xr ch="causal-and-purpose-clauses" /></li>
-		<li>Dialect tags and example attribution — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Dialect variation and the existential-aspect family — <Xr ch="existential-aspect-an-oka" /></li>
 		<li>Dialect variation and the vigesimal-to-decimal shift — <Xr ch="vigesimal-numeral-system" /></li>
 		<li>Dialect variation in kinship terms — <Xr ch="kinship-honorific-possession" /></li>
 		<li>Dialect variation in the allative — <Xr ch="postpositions-local-case-and-motion-events" /></li>
-		<li>Dialect Variation in Vowel Quality — <Xr ch="vowel-inventory" /></li>
 		<li>Dialect variation, the -ka → -re/-te shift, and the Horobetsu switch-reference function — <Xr ch="causative-morphological-re-e-te" /></li>
 		<li>Dialect variation: sekor and ari/ani — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
 		<li>Dialect-area variation in genre vocabulary — <Xr ch="oral-literature-genre-taxonomy" /></li>
+		<li>Dialectal comparisons — <Xr ch="rhotic-r" /></li>
 		<li>Dialectal variation — <Xr ch="reduplication-phonology-rule-interaction" /></li>
-		<li>Dialectal variation and the Sakhalin coda-/r/ reflex — <Xr ch="rhotic-r" /></li>
 		<li>Dialectometric reanalyses — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>Dialects and varieties — <Xr ch="aims-scope-design-philosophy" /></li>
-		<li>Dictionaries and lexical resources — <Xr ch="written-sources-grammars-dictionaries" /></li>
-		<li>Digraphs, voiced letters, and spurious vowels — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
+		<li>Dictionaries — <Xr ch="written-sources-grammars-dictionaries" /></li>
+		<li>Diphthong terminology — <Xr ch="glides-w-y" /></li>
 		<li>Direct and indirect causation; coercive and permissive use — <Xr ch="causative-morphological-re-e-te" /></li>
 		<li>Direct and indirect evidentiality: the eight-form system — <Xr ch="evidential-schema-overview" /></li>
 		<li>Direct and indirect quotation — <Xr ch="quotative-complementation-sekor" /></li>
+		<li>Direct and reported citations — <Xr ch="written-sources-grammars-dictionaries" /></li>
 		<li>Direct causative or forming suffix: the analytical debate — <Xr ch="transitivizer-ka-valency-pairs" /></li>
 		<li>Direct, semi-direct, and indirect reported discourse — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
 		<li>Directional adverbs from locative roots — <Xr ch="adverbs-degree-comparison" /></li>
@@ -297,22 +300,22 @@
 		<li>easirki — obligation — <Xr ch="deontic-necessity" /></li>
 		<li>easkay: ability and possibility — <Xr ch="abilitative-easkay-eaykap" /></li>
 		<li>eaykap and koyaykus: inability distinguished by source — <Xr ch="abilitative-easkay-eaykap" /></li>
-		<li>Echo vowels and syllable-final r — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Elegant kinship terms as register diagnostics — <Xr ch="honorific-ritual-and-taboo-registers" /></li>
 		<li>Elegant register, applicative morphology, and poetic verse language — <Xr ch="narrative-tam-evidential-patterning-by-genre" /></li>
 		<li>Elliptical answers and minimal clauses — <Xr ch="oblique-adjunct-verbless-clauses" /></li>
 		<li>Embedded questions — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li>Emphasis — <Xr ch="independent-personal-pronouns" /></li>
-		<li>Emphatic glottal insertion — <Xr ch="glottal-stop" /></li>
+		<li>Emphatic forms — <Xr ch="glottal-stop" /></li>
 		<li>Episode boundaries: ruwe ne + connective — <Xr ch="tail-head-linkage-and-narrative-cohesion" /></li>
 		<li>Etymology, phonology, and dialect distribution — <Xr ch="hine-akusu-switch-reference" /></li>
 		<li>Event and fact nominalization — <Xr ch="nominalization-p-pe" /></li>
+		<li>Evidence and generalization — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>Evidence and methods — <Xr ch="genetic-position-macro-comparison" /></li>
 		<li>Evidence base and its limits — <Xr ch="northern-contact-nivkh-tungusic-manchu" /></li>
-		<li>Evidence grading — <Xr ch="dialect-sample-and-corpus-method" /></li>
-		<li>Evidence labels — <Xr ch="aims-scope-design-philosophy" /></li>
-		<li>Evidence-grade labels — <Xr ch="glossing-abbreviations-and-citation" /></li>
+		<li>Evidence from nominalization — <Xr ch="glides-w-y" /></li>
+		<li>Evidence labels — <Xr ch="aims-scope-design-philosophy" />, <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Evidential expressions — <Xr ch="typological-profile" /></li>
+		<li>Example provenance — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>Examples and corpus figures — <Xr ch="aims-scope-design-philosophy" /></li>
 		<li>Exclamatory and wish prosody — <Xr ch="phrasal-and-utterance-intonation" /></li>
 		<li>Existential aspect auxiliaries — <Xr ch="existential-locational-an-oka" /></li>
@@ -322,7 +325,14 @@
 	<h3>F</h3>
 	<ul class="subject-index">
 		<li>Fauna — <Xr ch="lexical-semantic-fields-synopsis" /></li>
+		<li>Final glides — <Xr ch="katakana-and-small-kana-codas" /></li>
+		<li>Final glides as consonants — <Xr ch="glides-w-y" /></li>
+		<li>Final h in Sakhalin material — <Xr ch="katakana-and-small-kana-codas" /></li>
+		<li>Final n — <Xr ch="katakana-and-small-kana-codas" /></li>
+		<li>Final r and its vowel-like release — <Xr ch="rhotic-r" /></li>
+		<li>Final r and vowel-like release — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Final-consonant debuccalization in Sakhalin — <Xr ch="sakhalin-and-kuril-ainu-contrast" /></li>
+		<li>Finding syllable boundaries — <Xr ch="syllable-template" /></li>
 		<li>Finite clauses joined by post-predicate particles — <Xr ch="clause-linkage-overview" /></li>
 		<li>First-class and second-class locative nouns — <Xr ch="relational-and-spatial-nouns" /></li>
 		<li>First-person plural exclusive object: un= — <Xr ch="object-indexing-monotransitive" /></li>
@@ -333,6 +343,7 @@
 		<li>Focus particles and kakari-musubi concord — <Xr ch="cleft-nominalization-focus" /></li>
 		<li>Focus preposing and allative-marked IO fronting — <Xr ch="pragmatic-word-order-dislocation" /></li>
 		<li>Focus-particle hosting — <Xr ch="independent-personal-pronouns" /></li>
+		<li>Following a citation — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Form and allomorphy — <Xr ch="permissive-sociative-causative-yar" /></li>
 		<li>Form and attachment — <Xr ch="topic-marking-anakne" /></li>
 		<li>Form and domain — <Xr ch="adverbializer-no" /></li>
@@ -355,12 +366,9 @@
 		<li>Fourth-person object: i= — <Xr ch="object-indexing-monotransitive" /></li>
 		<li>Fourth-person plurals and number mismatches — <Xr ch="person-number-interactions" /></li>
 		<li>Free verbs grammaticalized as bound suffixes — <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></li>
-		<li>From Batchelor to the modern standard — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
-		<li>From early romanizations to the modern standard — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>From hearing words to agreement and obedience — <Xr ch="reciprocal-u" /></li>
 		<li>Fukazawa and Ono 2024: boundary dialects — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>Function of the sakehe: the protagonist-index debate — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
-		<li>Functional load of the accent contrast — <Xr ch="lexical-contrastive-accent-minimal-pairs" /></li>
 		<li>Functions: emphasis, contrast, and focus hosting — <Xr ch="independent-personal-pronouns" /></li>
 		<li>Further grammatical distinctions — <Xr ch="typological-profile" /></li>
 		<li>Further phonological alternations — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
@@ -370,26 +378,27 @@
 	<ul class="subject-index">
 		<li>Gendered ritual speech-acts — <Xr ch="gendered-register-speech" />, <Xr ch="honorific-ritual-and-taboo-registers" /></li>
 		<li>Genre allocation and narrator sex — <Xr ch="gendered-register-speech" /></li>
+		<li>Genre and grammatical interpretation — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Genre density and the elegant-language gradient — <Xr ch="poetic-archaic-elevated-register" /></li>
 		<li>Genre distribution and the debate — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
 		<li>Genre-boundary debates — <Xr ch="heroic-and-divine-verse" /></li>
 		<li>Genre-conditioned distribution: a comparison — <Xr ch="narrative-tam-evidential-patterning-by-genre" /></li>
-		<li>Genre-conditioned grammar and the corpus as evidence — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Genre-conditioned grammar: person marking and number in sung epic — <Xr ch="oral-literature-genre-taxonomy" /></li>
 		<li>Geographic vocabulary — <Xr ch="lexical-semantic-fields-synopsis" /></li>
-		<li>Glide codas /w/ and /y/ — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>Glide epenthesis at the i- and u- prefix boundary — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
-		<li>Glide notation in hiatus — <Xr ch="orthographic-standardization-and-word-division" /></li>
-		<li>Glide phonemicity in Shizunai — <Xr ch="glides-w-y" /></li>
-		<li>Glide transcription and vowel hiatus — <Xr ch="latin-phonemic-transcription" /></li>
-		<li>Glides /y/ and /w/ as consonants — <Xr ch="consonant-inventory" /></li>
+		<li>Glides — <Xr ch="consonant-inventory" /></li>
+		<li>Glides at syllable beginnings — <Xr ch="glides-w-y" /></li>
+		<li>Glides at vowel boundaries — <Xr ch="orthographic-standardization-and-word-division" /></li>
+		<li>Glides between vowels — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>Glides in syllables and at boundaries — <Xr ch="glides-w-y" /></li>
 		<li>Gloss abbreviation inventory — <Xr ch="abbreviations-glossing-symbols" /></li>
+		<li>Glottal closure and h — <Xr ch="glottal-stop" /></li>
 		<li>Glottal realization at hiatus — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
-		<li>Glottal stop, vowel-initial words, and onset representation — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>Glottal-stop notation — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>Goal and addressee: relations directed toward a person — <Xr ch="applicative-ko" /></li>
 		<li>Graded positions — <Xr ch="hine-akusu-switch-reference" /></li>
+		<li>Grammatical abbreviations — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Grammatical features of atomte-itak — <Xr ch="poetic-archaic-elevated-register" /></li>
-		<li>Grammatical glosses and the abbreviation set — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Grammatical hallmarks of prayer speech — <Xr ch="inonno-itak-ritual-prayer" /></li>
 		<li>Grammatical hallmarks of the verse register — <Xr ch="heroic-and-divine-verse" /></li>
 		<li>Grammaticalization and the degree of aspect — <Xr ch="continuative-siri-siran-kane-an" /></li>
@@ -417,10 +426,11 @@
 		<li>hine an, kan an, and tek an — further dialect variants — <Xr ch="continuative-siri-siran-kane-an" /></li>
 		<li>hine as the primary narrative chaining particle — <Xr ch="tail-head-linkage-and-narrative-cohesion" /></li>
 		<li>hine: neutral temporal enumeration — <Xr ch="hine-akusu-switch-reference" /></li>
-		<li>Historical development — <Xr ch="katakana-and-small-kana-codas" /></li>
+		<li>Historical dictionaries and manuscripts — <Xr ch="written-sources-grammars-dictionaries" /></li>
 		<li>Historical interpretation — <Xr ch="aims-scope-design-philosophy" /></li>
 		<li>Historical range — <Xr ch="ainu-people-homeland-history" /></li>
 		<li>Historical setting and language shift — <Xr ch="sociolinguistic-situation-revitalization" /></li>
+		<li>Hokkaido and Sakhalin final consonants — <Xr ch="glottal-stop" /></li>
 		<li>Homophonous prefixes and the arity computation — <Xr ch="applicative-system-overview" /></li>
 		<li>Homophony: antipassive i- and the fourth-person object i= — <Xr ch="antipassive-detransitive-i" /></li>
 		<li>Honest gaps — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
@@ -429,6 +439,8 @@
 		<li>Honorific possession via the 4th person — <Xr ch="kinship-honorific-possession" /></li>
 		<li>Honorific, narrative, and logophoric uses — <Xr ch="indefinite-fourth-person-paradigm" /></li>
 		<li>Horobetsu: -po on an intimate as 'deceased' — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
+		<li>How much work the contrast does — <Xr ch="lexical-contrastive-accent-minimal-pairs" /></li>
+		<li>How the conventions developed — <Xr ch="katakana-and-small-kana-codas" /></li>
 	</ul>
 	<h3>I</h3>
 	<ul class="subject-index">
@@ -451,13 +463,15 @@
 		<li>Initial *h- and medial *-ʔ-: complementary distribution — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
 		<li>Institutions and public support — <Xr ch="sociolinguistic-situation-revitalization" /></li>
 		<li>Instrument nominalization: ani X p — <Xr ch="deverbal-denominal-noun-derivation" /></li>
-		<li>Interaction with person-affix accent — <Xr ch="glides-w-y" /></li>
+		<li>Interaction with person prefixes — <Xr ch="glides-w-y" /></li>
 		<li>Interaction with somo, and the question of blocking — <Xr ch="negation-ability-cognition-predicates" /></li>
 		<li>Interface with the evidential system — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li>Interfaces with evidentiality, complementation, and reported speech — <Xr ch="clause-linkage-overview" /></li>
 		<li>Interjections — <Xr ch="word-class-inventory-and-diagnostics" /></li>
 		<li>Interlinear text and free translation — <Xr ch="sakhalin-contrast-text" /></li>
 		<li>Internal structure: the nominalised existential — <Xr ch="independent-personal-pronouns" /></li>
+		<li>Interpreting corpus figures — <Xr ch="dialect-sample-and-corpus-method" /></li>
+		<li>Interpreting vowel counts — <Xr ch="vowel-inventory" /></li>
 		<li>Interrogative contours and sentence-final particles — <Xr ch="phrasal-and-utterance-intonation" /></li>
 		<li>Intransitive verbs — <Xr ch="verbal-subclasses-taxonomy" /></li>
 		<li>Inventory and routing — <Xr ch="clause-linkage-overview" /></li>
@@ -473,8 +487,8 @@
 	<h3>J</h3>
 	<ul class="subject-index">
 		<li>Joint-participation and collective readings — <Xr ch="reciprocal-u" /></li>
+		<li>Juncture and resyllabification — <Xr ch="glottal-stop" /></li>
 		<li>Juncture tightness and the =an boundary — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
-		<li>Juncture variation — <Xr ch="glottal-stop" /></li>
 	</ul>
 	<h3>K</h3>
 	<ul class="subject-index">
@@ -483,8 +497,6 @@
 		<li>kane an — the merged durative — <Xr ch="continuative-siri-siran-kane-an" /></li>
 		<li>kar and the word–phrase boundary — <Xr ch="denominal-deverbal-verb-derivation" /></li>
 		<li>Kasuga 2026: 75-locality quantitative classification — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
-		<li>Katakana as a parallel notation — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
-		<li>Katakana in Ainu writing — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>Ki as event support and pro-verb — <Xr ch="light-and-pro-verbs" /></li>
 		<li>Ki as the formal verb of somo negation — <Xr ch="light-and-pro-verbs" /></li>
 		<li>Ki, somo ki, and clause linkage — <Xr ch="light-and-pro-verbs" /></li>
@@ -511,22 +523,21 @@
 	<ul class="subject-index">
 		<li>Labelling, naming, and specificational uses of the copular frame — <Xr ch="oblique-adjunct-verbless-clauses" /></li>
 		<li>Language history and the history of populations — <Xr ch="genetic-position-macro-comparison" /></li>
-		<li>Laryngeal consonants — <Xr ch="glottal-stop" /></li>
-		<li>Latin–katakana correspondence and round-tripping — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>Layering, renewal, and what the dialect record shows — <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></li>
 		<li>Learning and opportunities for use — <Xr ch="sociolinguistic-situation-revitalization" /></li>
 		<li>Learning resources — <Xr ch="aims-scope-design-philosophy" /></li>
+		<li>Length and lengthening — <Xr ch="vowel-inventory" /></li>
+		<li>Letters and sound values — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Lexical adverbs — <Xr ch="adverbs-degree-comparison" /></li>
+		<li>Lexical and morphological exceptions — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>Lexical aspect and the existential-aspect core — <Xr ch="tam-overview" /></li>
 		<li>Lexical class-noun heads: kur and usi/uske — <Xr ch="deverbal-denominal-noun-derivation" /></li>
 		<li>Lexical classes, the unaccusative diagnostic, and incorporation — <Xr ch="alignment-split-intransitive" /></li>
 		<li>Lexical conditioning: what is predictable and what must be memorized — <Xr ch="affiliative-suffix-morphophonology" /></li>
 		<li>Lexical data and dialectometric classification — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
-		<li>Lexical exceptions — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>Lexical information — <Xr ch="aims-scope-design-philosophy" /></li>
 		<li>Lexical loans beyond toponymy — <Xr ch="ainu-loanwords-and-toponymy-in-japanese" /></li>
 		<li>Lexical negation and the negation-ability interface — <Xr ch="abilitative-easkay-eaykap" /></li>
-		<li>Lexical statistics — <Xr ch="syllable-template" /></li>
 		<li>Lexicalization and less transparent ko- forms — <Xr ch="applicative-ko" /></li>
 		<li>Lexicalization and non-compositional meaning — <Xr ch="noun-noun-compounding" /></li>
 		<li>Lexicalization in animal names: isepo and the class-term question — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
@@ -536,7 +547,6 @@
 		<li>Lexicalized forms and productive use — <Xr ch="applicative-o" /></li>
 		<li>Lexicalized forms and the preverb question — <Xr ch="applicative-e" /></li>
 		<li>Lexicalized sandhi outputs — <Xr ch="coda-r-assimilation-sonorant-sandhi" /></li>
-		<li>Loanword syllable adaptation — <Xr ch="syllable-template" /></li>
 		<li>Locational and relational nouns — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>Locative roots and case-marked forms — <Xr ch="demonstratives-anaphora-definiteness" /></li>
 		<li>Locative-object verbs — <Xr ch="transitivity-and-valence-classes" /></li>
@@ -548,10 +558,8 @@
 	</ul>
 	<h3>M</h3>
 	<ul class="subject-index">
-		<li>Major collections represented in this grammar — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Manner and degree adverbs — <Xr ch="adverbializer-no" /></li>
 		<li>manu — reportative hedging — <Xr ch="epistemic-irrealis-modality" /></li>
-		<li>Marginal sequences: yi, wi, wu — <Xr ch="glides-w-y" /></li>
 		<li>Meaning: after-the-fact realization and indirect evidentiality — <Xr ch="perfective-anterior-a" /></li>
 		<li>Meaning: directly visible situation — <Xr ch="siri-ne-situational" /></li>
 		<li>Meaning: fact from knowledge, not raw perception — <Xr ch="ruwe-ne-inferential" /></li>
@@ -562,20 +570,16 @@
 		<li>Metathesis: -iw and -uy — <Xr ch="hokkaido-phonological-microvariation" /></li>
 		<li>Method and limits of Proto-Ainu reconstruction — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
 		<li>Methodological cautions — <Xr ch="ainu-loanwords-and-toponymy-in-japanese" /></li>
-		<li>Minimal and near-minimal pairs — <Xr ch="lexical-contrastive-accent-minimal-pairs" /></li>
 		<li>Mirativity and double evidentiality — <Xr ch="ruwe-ne-inferential" /></li>
 		<li>Mirativity and the admirative — <Xr ch="evidential-schema-overview" /></li>
 		<li>Mirativity and the auxiliary aan — <Xr ch="mirativity-scope-grammaticalization" /></li>
 		<li>Mismatches between semantic and stem number — <Xr ch="suppletive-verbal-number" /></li>
 		<li>Mixed alignment and the verb template — <Xr ch="person-marking-architecture" /></li>
 		<li>Modern borrowings and the untranslated stratum — <Xr ch="japanese-loanwords-in-ainu" /></li>
-		<li>Modern reference grammars — <Xr ch="written-sources-grammars-dictionaries" /></li>
+		<li>Modern descriptions — <Xr ch="written-sources-grammars-dictionaries" /></li>
 		<li>Modes of argument realisation — <Xr ch="argument-realization-indexing" /></li>
 		<li>Modifier order inside the NP — <Xr ch="constituent-order-head-final" /></li>
 		<li>mokor wa an: sleep as a result-state — <Xr ch="existential-aspect-an-oka" /></li>
-		<li>Mora or syllable as the accent domain? — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
-		<li>Morpheme and person-marker boundary notation — <Xr ch="latin-phonemic-transcription" /></li>
-		<li>Morpheme boundary conventions — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Morpheme boundary symbols and the interlinear format — <Xr ch="abbreviations-glossing-symbols" /></li>
 		<li>Morphological and lexical divergences — <Xr ch="sakhalin-and-kuril-ainu-contrast" /></li>
 		<li>Morphological identity: causative and applicative morphology — <Xr ch="no-adjective-class-property-verbs" /></li>
@@ -591,7 +595,6 @@
 		<li>Morphology: humi is hum-i, 'the sound/feeling of —' — <Xr ch="humi-ne-sensory" /></li>
 		<li>Morphology: ruwe is ru-we, ‘the trace of —’ — <Xr ch="ruwe-ne-inferential" /></li>
 		<li>Morphology: siri is sir-i, 'the appearance of —' — <Xr ch="siri-ne-situational" /></li>
-		<li>Morphophonological activity of coda /r/ — <Xr ch="rhotic-r" /></li>
 		<li>Morphosyntactic contrasts — <Xr ch="sakhalin-contrast-text" /></li>
 		<li>Morphosyntactic integration — <Xr ch="interjections-ideophones-sound-symbolism" /></li>
 		<li>Motion and directional verbs — <Xr ch="lexical-semantic-fields-synopsis" /></li>
@@ -607,8 +610,8 @@
 		<li>nankor — epistemic probability and conjecture — <Xr ch="epistemic-irrealis-modality" /></li>
 		<li>Narrative clause chains and cohesion — <Xr ch="tail-head-linkage-and-narrative-cohesion" /></li>
 		<li>Narrative first person — <Xr ch="reference-tracking" /></li>
-		<li>Nasal neutralization before labials — <Xr ch="orthographic-standardization-and-word-division" /></li>
-		<li>Nasals and nasal assimilation — <Xr ch="consonant-inventory" /></li>
+		<li>Nasals and place assimilation — <Xr ch="consonant-inventory" /></li>
+		<li>Nasals before p and m — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>Natural-force intransitive subject NI — <Xr ch="noun-incorporation-subject-possessor-stranding" /></li>
 		<li>Natural-force noun incorporation and object-to-subject promotion — <Xr ch="external-possession-possessor-raising" /></li>
 		<li>Natural-force transitive subject NI — <Xr ch="noun-incorporation-subject-possessor-stranding" /></li>
@@ -628,7 +631,7 @@
 		<li>Nivkh and northern contact — <Xr ch="genetic-position-macro-comparison" /></li>
 		<li>Nominal and applicative e- — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Nominal-frame conditionals: B ne yakun — <Xr ch="oblique-adjunct-verbless-clauses" /></li>
-		<li>Nominalizer allomorphy — <Xr ch="glides-w-y" /></li>
+		<li>Nominalization and number — <Xr ch="glides-w-y" /></li>
 		<li>Nominalizers: subclass or grammatical role? — <Xr ch="word-class-inventory-and-diagnostics" /></li>
 		<li>Non-third-person possession — <Xr ch="relational-and-spatial-nouns" /></li>
 		<li>Northern contact and the Hokkaido residue — <Xr ch="sakhalin-and-kuril-ainu-contrast" /></li>
@@ -673,18 +676,16 @@
 		<li>Oblique adjuncts and the locational predicate gap — <Xr ch="oblique-adjunct-verbless-clauses" /></li>
 		<li>Oblique incorporation via the applicative — <Xr ch="noun-incorporation-oblique-polysynthesis-debate" /></li>
 		<li>Oblique positions — <Xr ch="prenominal-gap-relative-clauses" /></li>
+		<li>Observations outside published descriptions — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>Old Japanese loanwords into Ainu — <Xr ch="macro-comparison-and-deep-contact-controversies" /></li>
+		<li>Older Latin transcription — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
+		<li>One sibilant phoneme, several realizations — <Xr ch="s-palatalization" /></li>
 		<li>Ono 2020: spectral clustering — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
-		<li>Onset distribution and allophony — <Xr ch="glottal-stop" /></li>
-		<li>Onset glides — <Xr ch="glides-w-y" /></li>
-		<li>Onset realization — <Xr ch="s-palatalization" /></li>
-		<li>Onset realization and positional variants — <Xr ch="rhotic-r" /></li>
-		<li>Onset realizations — <Xr ch="consonant-inventory" /></li>
+		<li>Onset realization and weakening — <Xr ch="glottal-stop" /></li>
 		<li>Open points — <Xr ch="clause-linkage-overview" /></li>
 		<li>Open questions — <Xr ch="permissive-sociative-causative-yar" />, <Xr ch="hine-akusu-switch-reference" /></li>
 		<li>Open questions and honest gaps — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
 		<li>Opening and closing formulae — <Xr ch="uwepeker-prose-tale" /></li>
-		<li>Oral literature as the primary documentary resource — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>orano and orowano — the sequential connective — <Xr ch="conjunctions-discourse-connectives" /></li>
 		<li>Ordering and stacking at the clause edge — <Xr ch="sentence-final-particles-illocutionary-force" /></li>
 		<li>Ordering with valency morphology and number suffixes — <Xr ch="personal-affix-template-and-ordering" /></li>
@@ -717,7 +718,6 @@
 		<li>Perception and cognition verbs — <Xr ch="existential-aspect-an-oka" /></li>
 		<li>Performative context: kamuy-nomi and the ceremony — <Xr ch="inonno-itak-ritual-prayer" /></li>
 		<li>Periodization: Pre-Proto-Ainu, Proto-Ainu, Common Ainu — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
-		<li>Permitted coda consonants — <Xr ch="syllable-template" /></li>
 		<li>Person affixes and independent pronouns — <Xr ch="topic-marking-anakne" /></li>
 		<li>Person affixes and plural marking — <Xr ch="sakhalin-and-kuril-ainu-contrast" /></li>
 		<li>Person agreement in kor an — <Xr ch="existential-aspect-an-oka" /></li>
@@ -727,7 +727,6 @@
 		<li>Person indexing: causee priority and secundative alignment — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
 		<li>Person marking — <Xr ch="property-concept-predication" /></li>
 		<li>Person marking and verbal status — <Xr ch="copula-ne-predicate-nominals" /></li>
-		<li>Person marking and word division — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Person marking as the transitivity test — <Xr ch="transitivity-and-valence-classes" /></li>
 		<li>Person marking in the directive clause — <Xr ch="imperative-and-prohibitive" /></li>
 		<li>Person marking on predicative kor — <Xr ch="predicative-possession-clauses" /></li>
@@ -742,18 +741,13 @@
 		<li>Person-prefix attachment to reduplicated stems — <Xr ch="reduplication-phonology-rule-interaction" /></li>
 		<li>Personal possessive prefixes on inalienable nouns — <Xr ch="adnominal-possession-double-marking" /></li>
 		<li>Phasal and iterative strategies in the auxiliary system — <Xr ch="phasal-iterative-habitual-aspect" /></li>
-		<li>Philological constraints — <Xr ch="oral-literature-and-spoken-corpora" /></li>
-		<li>Phoneme-to-grapheme correspondences — <Xr ch="latin-phonemic-transcription" /></li>
-		<li>Phonemic Length and Allophonic Lengthening — <Xr ch="vowel-inventory" /></li>
-		<li>Phonemic status — <Xr ch="glottal-stop" /></li>
 		<li>Phonetic distribution — <Xr ch="glottal-stop" /></li>
-		<li>Phonetic Realization — <Xr ch="vowel-inventory" /></li>
+		<li>Phonetic quality — <Xr ch="vowel-inventory" /></li>
 		<li>Phonological adaptation — <Xr ch="japanese-loanwords-in-ainu" /></li>
 		<li>Phonological contrasts: vowel length and the final-h reflex — <Xr ch="sakhalin-contrast-text" /></li>
 		<li>Phonological isoglosses — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
-		<li>Phonotactic gaps in the syllable inventory — <Xr ch="syllable-template" /></li>
 		<li>Phrasal grouping and prosodic domains — <Xr ch="phrasal-and-utterance-intonation" /></li>
-		<li>Pitch-accent diacritics: when and how accent is marked — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>Pitch accent in the descriptive literature — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
 		<li>Pitch-accent microvariation — <Xr ch="hokkaido-phonological-microvariation" /></li>
 		<li>Pitch-accent types — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>Place in the causative inventory — <Xr ch="causative-morphological-re-e-te" /></li>
@@ -763,7 +757,6 @@
 		<li>Place in the negation system — <Xr ch="negation-somo-standard-clausal" />, <Xr ch="negation-existential-possessive-isam" /></li>
 		<li>Plural marking — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>Plural marking and eci= — <Xr ch="eci-portmanteau-and-second-plural" /></li>
-		<li>Plural-suffix allomorphy — <Xr ch="glides-w-y" /></li>
 		<li>Polar questions: five strategies — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li>Polysynthesis and incorporation — <Xr ch="typological-profile" /></li>
 		<li>Polysynthetic expansion and periphrasis — <Xr ch="poetic-archaic-elevated-register" /></li>
@@ -775,7 +768,6 @@
 		<li>Possessive negation: sak — <Xr ch="negation-existential-possessive-isam" /></li>
 		<li>Possessor-requiring intransitive subject NI and possessor stranding — <Xr ch="noun-incorporation-subject-possessor-stranding" /></li>
 		<li>Post-nominal (appositional) position — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
-		<li>Post-war field documentation — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Postposition–applicative correspondences — <Xr ch="noun-incorporation-oblique-polysynthesis-debate" /></li>
 		<li>Postpositional adverbs — <Xr ch="postpositions-local-case-and-motion-events" />, <Xr ch="adverbs-degree-comparison" /></li>
 		<li>Postpositions and the marking of obliques — <Xr ch="constituent-order-head-final" /></li>
@@ -790,7 +782,7 @@
 		<li>Predicative (pure noun) position — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
 		<li>Predicative possession with kinship affiliatives — <Xr ch="kinship-honorific-possession" /></li>
 		<li>Predicative possession: BE-type an and isam — <Xr ch="existential-locational-an-oka" /></li>
-		<li>Predictable and lexically specified accent — <Xr ch="lexical-contrastive-accent-minimal-pairs" /></li>
+		<li>Predictable accent and lexical exceptions — <Xr ch="lexical-contrastive-accent-minimal-pairs" /></li>
 		<li>Prehistory and archaeological interpretation — <Xr ch="ainu-people-homeland-history" /></li>
 		<li>Prenominal position — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
 		<li>Preverbal NP order: free or fixed? — <Xr ch="constituent-order-head-final" /></li>
@@ -799,7 +791,6 @@
 		<li>Principal formal nouns as nominal heads — <Xr ch="lexical-head-formal-noun-nominalization" /></li>
 		<li>Principles and the class inventory — <Xr ch="word-class-inventory-and-diagnostics" /></li>
 		<li>Productive vs. non-productive causatives — <Xr ch="causative-morphological-re-e-te" /></li>
-		<li>Progressive palatalization in sirsak — <Xr ch="s-palatalization" /></li>
 		<li>Pronouns and formal nouns in the subclass system — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>Property verbs and adnouns as modifiers — <Xr ch="noun-phrase-structure" /></li>
 		<li>Property verbs as manner auxiliaries — <Xr ch="property-concept-predication" /></li>
@@ -826,12 +817,18 @@
 		<li>r-sandhi at reduplicant codas — <Xr ch="reduplication-phonology-rule-interaction" /></li>
 		<li>rapokke and rapoketa — simultaneous temporal — <Xr ch="conjunctions-discourse-connectives" /></li>
 		<li>RC heads: common nouns and bound nouns — <Xr ch="prenominal-gap-relative-clauses" /></li>
-		<li>Reading Batchelor materials today — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
+		<li>Reading a kana source — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
+		<li>Reading across writing systems — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
+		<li>Reading an edited performance — <Xr ch="oral-literature-and-spoken-corpora" /></li>
+		<li>Reading an example — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>Reading the evidence — <Xr ch="aims-scope-design-philosophy" /></li>
+		<li>Reading the notation in this grammar — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>Readings: indefinite, permissive, and sociative — <Xr ch="permissive-sociative-causative-yar" /></li>
+		<li>Realizations of r — <Xr ch="rhotic-r" /></li>
 		<li>Reason and cause: 'because' — <Xr ch="causal-and-purpose-clauses" /></li>
 		<li>Recognition and language revitalization — <Xr ch="ainu-people-homeland-history" /></li>
 		<li>Recording and community teaching — <Xr ch="sociolinguistic-situation-revitalization" /></li>
+		<li>Recordings and local text series — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Reference tracking across clauses — <Xr ch="nonconfigurationality-pronominal-argument" /></li>
 		<li>Reference tracking across narrative chains — <Xr ch="tail-head-linkage-and-narrative-cohesion" /></li>
 		<li>Reference tracking without switch-reference morphology — <Xr ch="clause-linkage-overview" /></li>
@@ -844,13 +841,14 @@
 		<li>Register: the everyday frame and its limits — <Xr ch="uwepeker-prose-tale" /></li>
 		<li>Regressive cluster assimilation — <Xr ch="hokkaido-phonological-microvariation" /></li>
 		<li>Regressive consonant assimilation — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
-		<li>Relation to the IPA and to other romanizations in the literature — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>Related consonant processes — <Xr ch="s-palatalization" /></li>
 		<li>Relation to the middle ci- and the A/P split in arity-decreasing voices — <Xr ch="antipassive-detransitive-i" /></li>
 		<li>Relationship to the imperative, prohibitive, and desiderative — <Xr ch="hortative-and-optative" /></li>
 		<li>Relative-clause modifiers — <Xr ch="noun-phrase-structure" /></li>
 		<li>Reliability of the record and open questions — <Xr ch="gendered-register-speech" /></li>
 		<li>Reported accent in somo and somósomo — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>Resolving the syncretism — <Xr ch="eci-portmanteau-and-second-plural" /></li>
+		<li>Restrictions within the template — <Xr ch="syllable-template" /></li>
 		<li>Restrictive focus: patek and its near-synonyms — <Xr ch="topic-marking-anakne" /></li>
 		<li>Revisions to the consonant correspondences: Alonso 2022 — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
 		<li>Right-dislocation and the afterthought construction — <Xr ch="pragmatic-word-order-dislocation" /></li>
@@ -862,9 +860,11 @@
 	</ul>
 	<h3>S</h3>
 	<ul class="subject-index">
-		<li>Sakhalin and Kuril Ainu as external contrast — <Xr ch="dialect-sample-and-corpus-method" /></li>
+		<li>Sakhalin and Kuril comparison — <Xr ch="dialect-sample-and-corpus-method" /></li>
+		<li>Sakhalin comparisons — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
 		<li>Sakhalin contrast — <Xr ch="nominal-number-utar-transnumerality" /></li>
 		<li>Sakhalin contrast and the -ike/-hike variant — <Xr ch="affiliative-suffix-morphophonology" /></li>
+		<li>Sampling and dialect classification — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>Sandhi at the reduplicant-affix juncture — <Xr ch="reduplication-phonology-rule-interaction" /></li>
 		<li>Saru and Chitose: a= / =an — <Xr ch="heroic-and-divine-verse" /></li>
 		<li>Saru–Chitose as a lexically distinct group — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
@@ -884,7 +884,6 @@
 		<li>Scope over TAM and the finiteness of the embedded clause — <Xr ch="evidential-schema-overview" />, <Xr ch="ruwe-ne-inferential" /></li>
 		<li>Scope, mirativity, and the admirative tail — <Xr ch="humi-ne-sensory" /></li>
 		<li>Scope: lexical word-formation and the syntactic cut — <Xr ch="deverbal-denominal-noun-derivation" /></li>
-		<li>Script policy — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
 		<li>Second-person neutrality: e= and eci= — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>Second-person objects: e= and eci= — <Xr ch="object-indexing-monotransitive" /></li>
 		<li>Second-person singular: e= — <Xr ch="first-second-person-singular-affixes" /></li>
@@ -910,21 +909,26 @@
 		<li>Sensory-noun formal nouns as perception-complement heads — <Xr ch="lexical-head-formal-noun-nominalization" /></li>
 		<li>Sentence-final particles and gendered interactional register — <Xr ch="gendered-register-speech" /></li>
 		<li>Separating contact, inheritance, and chance — <Xr ch="macro-comparison-and-deep-contact-controversies" /></li>
+		<li>Shared conventions and continuing variation — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>Shared diagnostics — <Xr ch="formal-defective-nouns" /></li>
 		<li>Shizunai ci and Sakhalin =hci: position as the diagnostic — <Xr ch="person-number-interactions" /></li>
-		<li>Shizunai contrasts and their representation — <Xr ch="glottal-stop" /></li>
+		<li>Shizunai evidence — <Xr ch="glides-w-y" /></li>
 		<li>Short and long affiliative forms — <Xr ch="concept-form-affiliative-form" /></li>
+		<li>Showing the parts of a word — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>Side-encoding and allomorphy — <Xr ch="indefinite-fourth-person-paradigm" /></li>
 		<li>Side-encoding: prefixes for A, suffixes for S — <Xr ch="person-marking-architecture" /></li>
 		<li>Simile and evidential inference: pekor, apekor, noyne, and kotom — <Xr ch="manner-and-degree-adverbial-clauses" /></li>
 		<li>siran — the appearance-based continuative — <Xr ch="continuative-siri-siran-kane-an" /></li>
 		<li>Size modification without suffixation: prenominal pon and poro — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
+		<li>Small kana for final consonants — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>Social setting of the recorded language — <Xr ch="ainu-people-homeland-history" /></li>
 		<li>Softeners and benefactive requests: hani and wa kore — <Xr ch="imperative-and-prohibitive" /></li>
 		<li>Sound symbolism: patterns and limits of the evidence — <Xr ch="interjections-ideophones-sound-symbolism" /></li>
-		<li>Source citation and the bibliography — <Xr ch="glossing-abbreviations-and-citation" /></li>
-		<li>Source gaps and the reported-evidence convention — <Xr ch="written-sources-grammars-dictionaries" /></li>
+		<li>Source and dialect — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
+		<li>Source spelling and interpretation — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
 		<li>Source, speakers, and orthographic conventions — <Xr ch="sakhalin-contrast-text" /></li>
+		<li>Sources and the evidence they preserve — <Xr ch="oral-literature-and-spoken-corpora" /></li>
+		<li>Spacing and morphological analysis — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>Spatial deixis and locative nouns — <Xr ch="lexical-semantic-fields-synopsis" /></li>
 		<li>Speaker and dialect variation — <Xr ch="s-palatalization" /></li>
 		<li>Speakers and language knowledge — <Xr ch="sociolinguistic-situation-revitalization" /></li>
@@ -951,12 +955,14 @@
 		<li>Summary of structural properties — <Xr ch="typological-profile" /></li>
 		<li>Summary: sandhi rule interactions at reduplication boundaries — <Xr ch="reduplication-phonology-rule-interaction" /></li>
 		<li>Suppletive verbal number — <Xr ch="sakhalin-contrast-text" /></li>
-		<li>Syllabification — <Xr ch="syllable-template" /></li>
-		<li>Syllabification and pitch-accent placement — <Xr ch="glides-w-y" /></li>
 		<li>Syllable structure and blocked vowel weakening — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
-		<li>Syllable structure and vowel weakening — <Xr ch="syllable-template" /></li>
-		<li>Syllable weight and the placement rule — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
+		<li>Syllable structure and word length — <Xr ch="syllable-template" /></li>
+		<li>Syllable weight in accent placement — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
 		<li>Syllable-count orientation — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
+		<li>Syllable-final consonants — <Xr ch="consonant-inventory" /></li>
+		<li>Syllable-initial consonants — <Xr ch="consonant-inventory" /></li>
+		<li>Syllables and accent — <Xr ch="glides-w-y" /></li>
+		<li>Syllables and moras — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
 		<li>Symmetry and subordinate asymmetry — <Xr ch="negation-somo-standard-clausal" /></li>
 		<li>Syncretism and portmanteau cells — <Xr ch="person-marking-architecture" /></li>
 		<li>Synopsis of constructions — <Xr ch="everyday-conversation-text" /></li>
@@ -964,7 +970,6 @@
 		<li>Syntactic identity: the person-marking frame — <Xr ch="no-adjective-class-property-verbs" /></li>
 		<li>Syntactic position and embedding — <Xr ch="interrogative-pro-forms" /></li>
 		<li>Synthesis — <Xr ch="alignment-hierarchical-and-the-debate" /></li>
-		<li>Systematic features of Batchelor's orthography — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 	</ul>
 	<h3>T</h3>
 	<ul class="subject-index">
@@ -980,13 +985,11 @@
 		<li>Terminological background — <Xr ch="applicative-system-overview" /></li>
 		<li>Terminology and comparative note — <Xr ch="indefinite-fourth-person-paradigm" /></li>
 		<li>Terms — <Xr ch="glossary-grammatical-terms" /></li>
+		<li>Text collections as samples — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>The -p/-pe nominalizer at word level — <Xr ch="deverbal-denominal-noun-derivation" /></li>
 		<li>The 'pretend to' construction — <Xr ch="reflexive-possessive-si" /></li>
-		<li>The (C)V(C) template — <Xr ch="syllable-template" /></li>
 		<li>The *g / *hd / *s tangle: two scenarios — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
 		<li>The /i/-initial block and vowel weakening — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
-		<li>The /r/ coda series — <Xr ch="katakana-and-small-kana-codas" /></li>
-		<li>The = sign for person markers: an orthographic device, not a clitic analysis — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>The 1A→2O portmanteau — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>The ③-1 default surfaces in compounds — <Xr ch="affiliative-suffix-morphophonology" /></li>
 		<li>The a / aan opposition: aspect, evidentiality, and the Classical Japanese parallel — <Xr ch="perfective-anterior-a" /></li>
@@ -1013,7 +1016,6 @@
 		<li>The allative particle and a puzzle of shared isoglosses — <Xr ch="sakhalin-and-kuril-ainu-contrast" /></li>
 		<li>The allative particle as a morphological isogloss — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
 		<li>The Amur / North Pacific areal layer — <Xr ch="macro-comparison-and-deep-contact-controversies" /></li>
-		<li>The analytical question — <Xr ch="glides-w-y" /></li>
 		<li>The animacy restriction on kor — <Xr ch="predicative-possession-clauses" /></li>
 		<li>The antipassive i- as a possessor-suppressor — <Xr ch="external-possession-possessor-raising" /></li>
 		<li>The applicative prefixes — a disputed diachrony — <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></li>
@@ -1023,11 +1025,8 @@
 		<li>The arity ≥ +1 diagnostic — <Xr ch="prenominal-gap-relative-clauses" /></li>
 		<li>The arity-0 diagnostic — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>The aspect–evidential boundary — <Xr ch="continuative-siri-siran-kane-an" /></li>
-		<li>The attested text corpus — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>The auxiliary and its form — <Xr ch="desiderative-rusuy" /></li>
-		<li>The back vowel u — <Xr ch="vowel-inventory" /></li>
 		<li>The bare-stem singular imperative — <Xr ch="imperative-and-prohibitive" /></li>
-		<li>The bilabial coda ㇷ゚ — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>The candidate counter-class: adnouns, poro and pon, and the historical analysis — <Xr ch="no-adjective-class-property-verbs" /></li>
 		<li>The canonical reciprocal — <Xr ch="reciprocal-u" /></li>
 		<li>The category and its locus — <Xr ch="suppletive-verbal-number" /></li>
@@ -1035,16 +1034,14 @@
 		<li>The causativized reciprocal — <Xr ch="reciprocal-u" /></li>
 		<li>The causee as object — <Xr ch="causee-marking-ditransitive-double-causative" /></li>
 		<li>The central role of or — <Xr ch="relational-and-spatial-nouns" /></li>
-		<li>The choice of c, and s before i — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>The ci- middle prefix — <Xr ch="middle-anticausative-passive" /></li>
 		<li>The class of relational nouns — <Xr ch="relational-and-spatial-nouns" /></li>
-		<li>The classical grammars — <Xr ch="written-sources-grammars-dictionaries" /></li>
 		<li>The clitic–affix cline — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
 		<li>The cohortative: inclusive fourth-person subject — <Xr ch="hortative-and-optative" /></li>
 		<li>The compound–phrase boundary — <Xr ch="noun-noun-compounding" /></li>
 		<li>The concept-form rule — <Xr ch="noun-noun-compounding" /></li>
 		<li>The conditional, concessive, and adversative subsystem — <Xr ch="conditional-temporal-concessive-clauses" /></li>
-		<li>The consonant analysis — <Xr ch="glides-w-y" /></li>
+		<li>The consonant phonemes — <Xr ch="consonant-inventory" /></li>
 		<li>The constituency of the nominalized clause — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>The construction and the -no diagnostic — <Xr ch="adverbial-incorporation" /></li>
 		<li>The continuative field in overview — <Xr ch="continuative-siri-siran-kane-an" /></li>
@@ -1055,20 +1052,22 @@
 		<li>The counter and classifier question — <Xr ch="vigesimal-numeral-system" /></li>
 		<li>The couplet: structure and attested examples — <Xr ch="parallelism-couplets-and-word-pairs" /></li>
 		<li>The culminative ayne — <Xr ch="sequential-wa-and-clause-chaining" /></li>
-		<li>The Cyrillic tradition in Sakhalin scholarship — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
 		<li>The debate over the literary person — <Xr ch="fourth-person-honorific" /></li>
 		<li>The default: ③-1 (-i/-ihi) — <Xr ch="affiliative-suffix-morphophonology" /></li>
 		<li>The defining diagnostics — <Xr ch="word-class-inventory-and-diagnostics" /></li>
 		<li>The delimiting-particle (副助詞) layer — <Xr ch="topic-marking-anakne" /></li>
 		<li>The deontic field — <Xr ch="deontic-necessity" /></li>
+		<li>The development of phonemic spelling — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>The dialect paradigm — <Xr ch="independent-personal-pronouns" /></li>
 		<li>The dialectal allomorph ma — <Xr ch="sequential-wa-and-clause-chaining" /></li>
 		<li>The diminutive suffix -po and the absence of an augmentative — <Xr ch="nominal-derivation-diminutive-augmentative" /></li>
-		<li>The diphthong analysis — <Xr ch="glides-w-y" /></li>
 		<li>The divine epic: kamuy yukar, oyna, and Chiri Yukie — <Xr ch="heroic-and-divine-verse" /></li>
 		<li>The divine epic: kamuy yukar, the sakehe refrain, and oyna — <Xr ch="oral-literature-genre-taxonomy" /></li>
+		<li>The documentary tradition — <Xr ch="oral-literature-and-spoken-corpora" /></li>
+		<li>The early grammatical descriptions — <Xr ch="written-sources-grammars-dictionaries" /></li>
 		<li>The eastern–western lexical divide — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
 		<li>The epistemic and irrealis modal field — <Xr ch="epistemic-irrealis-modality" /></li>
+		<li>The equals sign for person marking — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>The evidential frame as focus and assertion — <Xr ch="cleft-nominalization-focus" /></li>
 		<li>The evidential nominals: sensory nouns to clause-final markers — <Xr ch="internal-reconstruction-and-grammaticalization-pathways" /></li>
 		<li>The evidential tail as sentence-type switch — <Xr ch="sentence-final-particles-illocutionary-force" /></li>
@@ -1076,10 +1075,11 @@
 		<li>The evidential–kusu scope order — <Xr ch="causal-and-purpose-clauses" /></li>
 		<li>The exclusive first plural paradigm — <Xr ch="first-person-plural-and-clusivity" /></li>
 		<li>The existential an/oka(y) and its suppletive negative isam — <Xr ch="nonverbal-predicate-tam-negation" /></li>
-		<li>The extended small-kana coda system — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>The feeding of oblique incorporation — <Xr ch="applicative-stacking-relativization-feeding" /></li>
 		<li>The feeding of relativization — <Xr ch="applicative-stacking-relativization-feeding" /></li>
-		<li>The Five-Vowel System — <Xr ch="vowel-inventory" /></li>
+		<li>The final p spelling — <Xr ch="katakana-and-small-kana-codas" /></li>
+		<li>The final r spellings — <Xr ch="katakana-and-small-kana-codas" /></li>
+		<li>The five vowels — <Xr ch="vowel-inventory" /></li>
 		<li>The form and its environments — <Xr ch="simultaneous-kor-clauses" /></li>
 		<li>The formal noun utar — distributional status — <Xr ch="nominal-number-utar-transnumerality" /></li>
 		<li>The formal paradigm — <Xr ch="indefinite-fourth-person-paradigm" /></li>
@@ -1096,22 +1096,20 @@
 		<li>The free conjunctive use: 'therefore, that is why' — <Xr ch="causal-and-purpose-clauses" /></li>
 		<li>The free discourse connective orowa(no) — <Xr ch="tail-head-linkage-and-narrative-cohesion" /></li>
 		<li>The free ordering of preverbal noun phrases — <Xr ch="nonconfigurationality-pronominal-argument" /></li>
+		<li>The fricative h — <Xr ch="glottal-stop" /></li>
 		<li>The gap strategy and postposition retention — <Xr ch="prenominal-gap-relative-clauses" /></li>
 		<li>The genericity restriction and the lexical character of Object NI — <Xr ch="noun-incorporation-object" /></li>
 		<li>The genre system: parameters and macro-categories — <Xr ch="oral-literature-genre-taxonomy" /></li>
 		<li>The given-information restriction — <Xr ch="topic-marking-anakne" /></li>
-		<li>The glottal stop — <Xr ch="orthographic-standardization-and-word-division" /></li>
-		<li>The glottal stop [ʔ] — <Xr ch="glottal-stop" /></li>
+		<li>The glottal stop — <Xr ch="glottal-stop" /></li>
 		<li>The grammaticalization cline — <Xr ch="mirativity-scope-grammaticalization" /></li>
 		<li>The h phoneme and the coda question in Hokkaido — <Xr ch="final-h-history-and-sakhalin-length-reflex" /></li>
 		<li>The HAVE-construction: transitive kor — <Xr ch="predicative-possession-clauses" /></li>
 		<li>The hawe family: report verb, reportative evidential, and hearsay — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
 		<li>The he particle: scope and category — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li>The head-final profile — <Xr ch="constituent-order-head-final" /></li>
-		<li>The Hepburn-derived tradition — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>The hero-narrator person system — <Xr ch="poetic-archaic-elevated-register" /></li>
 		<li>The heroic epic: yukar and sakorpe — <Xr ch="oral-literature-genre-taxonomy" />, <Xr ch="heroic-and-divine-verse" /></li>
-		<li>The Hokkaido dialect sample — <Xr ch="dialect-sample-and-corpus-method" /></li>
 		<li>The Hokkaido dialect system — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>The honorific address system: fourth-person forms and the pronoun set — <Xr ch="honorific-ritual-and-taboo-registers" /></li>
 		<li>The honorific and logophoric functions in the fourth-person system — <Xr ch="fourth-person-honorific" /></li>
@@ -1123,7 +1121,6 @@
 		<li>The indirect counterpart: humi as — <Xr ch="humi-ne-sensory" /></li>
 		<li>The indirection principle: taboo on direct deity–human speech — <Xr ch="honorific-ritual-and-taboo-registers" /></li>
 		<li>The interjection inventory — <Xr ch="interjections-ideophones-sound-symbolism" /></li>
-		<li>The interlinear format — <Xr ch="glossing-abbreviations-and-citation" /></li>
 		<li>The interrogative-based indefinite series — <Xr ch="negation-polarity-items-scope" /></li>
 		<li>The inventory — <Xr ch="formal-defective-nouns" /></li>
 		<li>The irrealis complement of ye and ramu — <Xr ch="kuni-complementizer-purpose-complements" /></li>
@@ -1139,12 +1136,14 @@
 		<li>The ku= and ci= vowel-deletion rule — <Xr ch="personal-affix-sandhi-connected-speech-reduction" /></li>
 		<li>The Kuril varieties — <Xr ch="sakhalin-and-kuril-ainu-contrast" /></li>
 		<li>The label debate: antipassive or derivational prefix? — <Xr ch="antipassive-detransitive-i" /></li>
-		<li>The Latin phonemic transcription — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
+		<li>The Latin analysis — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
 		<li>The layered locative construction — <Xr ch="relational-and-spatial-nouns" /></li>
 		<li>The left personal layer: A and O prefixes — <Xr ch="personal-affix-template-and-ordering" /></li>
+		<li>The letters c and s — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>The lexical–syntactic boundary — <Xr ch="deverbal-denominal-noun-derivation" /></li>
 		<li>The lexicalized plural hekattar — <Xr ch="nominal-number-utar-transnumerality" /></li>
 		<li>The licensing predicates — <Xr ch="negation-polarity-items-scope" /></li>
+		<li>The limits of a single dialect model — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
 		<li>The location noun class as role disambiguator — <Xr ch="reference-tracking" /></li>
 		<li>The location-class noun as role disambiguation — <Xr ch="argument-realization-indexing" /></li>
 		<li>The locative formatives -us(i) and -oma(i) — <Xr ch="ainu-loanwords-and-toponymy-in-japanese" /></li>
@@ -1154,7 +1153,6 @@
 		<li>The long-form suffixes -ke, -V, and -si — <Xr ch="relational-and-spatial-nouns" /></li>
 		<li>The macro-comparison catalogue — <Xr ch="macro-comparison-and-deep-contact-controversies" /></li>
 		<li>The menoko yukar — women's heroic verse — <Xr ch="gendered-register-speech" /></li>
-		<li>The mid vowels e and o — <Xr ch="vowel-inventory" /></li>
 		<li>The minority echo-vowel sub-patterns: ③-2 and ③-3 — <Xr ch="affiliative-suffix-morphophonology" /></li>
 		<li>The modal field — <Xr ch="tam-overview" /></li>
 		<li>The modifier-position template — <Xr ch="noun-phrase-structure" /></li>
@@ -1189,16 +1187,9 @@
 		<li>The person-counting suffix -n/-iw — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
 		<li>The person-marking diagnostic — <Xr ch="verbal-subclasses-taxonomy" /></li>
 		<li>The personal form and its syntax — <Xr ch="concept-form-affiliative-form" /></li>
-		<li>The philological record — <Xr ch="written-sources-grammars-dictionaries" /></li>
-		<li>The phoneme /h/ — <Xr ch="glottal-stop" /></li>
-		<li>The phoneme /r/ in the consonant inventory — <Xr ch="rhotic-r" /></li>
-		<li>The phoneme inventory — <Xr ch="consonant-inventory" /></li>
-		<li>The phonemic principle — <Xr ch="latin-phonemic-transcription" /></li>
 		<li>The phonemic status of the glide transition across dialects — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
 		<li>The phonological shape of the reduplicant — <Xr ch="reduplication-phonology-rule-interaction" /></li>
-		<li>The pitch contour — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>The place restriction: spatial goals versus animate goals — <Xr ch="applicative-o" /></li>
-		<li>The placement rule — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>The plural and polite imperative: yan — <Xr ch="imperative-and-prohibitive" /></li>
 		<li>The position-class template — <Xr ch="personal-affix-template-and-ordering" /></li>
 		<li>The possessive person-prefix system — <Xr ch="concept-form-affiliative-form" /></li>
@@ -1218,10 +1209,10 @@
 		<li>The prosodic word and accent reapplication — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>The Proto-Ainu consonant system: Vovin's reconstruction — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
 		<li>The Proto-Ainu vowel system — <Xr ch="proto-ainu-segmental-reconstruction" /></li>
+		<li>The proximity of neighboring vowels — <Xr ch="vowel-inventory" /></li>
 		<li>The quotative frame and participant tracking — <Xr ch="uwepeker-prose-tale" /></li>
 		<li>The realis and mood-constraint split: a comparative table — <Xr ch="conditional-temporal-concessive-clauses" /></li>
 		<li>The recent perfect nisa — <Xr ch="phasal-iterative-habitual-aspect" /></li>
-		<li>The recording and publication tradition — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>The reduplicant-base boundary: resyllabification blocking and glottal insertion — <Xr ch="reduplication-phonology-rule-interaction" /></li>
 		<li>The reduplicated a … a construction — <Xr ch="phasal-iterative-habitual-aspect" /></li>
 		<li>The reflexive prefix yay- — <Xr ch="accent-in-compounds-and-affixation" /></li>
@@ -1232,9 +1223,10 @@
 		<li>The reported-discourse system in overview — <Xr ch="logophoric-narration-and-reported-discourse" /></li>
 		<li>The resu family and the applicative interaction — <Xr ch="adverbial-incorporation" /></li>
 		<li>The reverse direction: Ainu elements in early Japonic — <Xr ch="macro-comparison-and-deep-contact-controversies" /></li>
-		<li>The rhotic /r/ — <Xr ch="consonant-inventory" /></li>
+		<li>The rhotic — <Xr ch="consonant-inventory" /></li>
+		<li>The rhotic consonant — <Xr ch="rhotic-r" /></li>
 		<li>The right personal layer: =as and =an — <Xr ch="personal-affix-template-and-ordering" /></li>
-		<li>The rising-nucleus system — <Xr ch="pitch-accent-placement-rule" />, <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
+		<li>The rising accent kernel — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>The ruwe ne / siri ne puzzle — <Xr ch="ruwe-ne-inferential" /></li>
 		<li>The ruwe tapan ceremonial closure — <Xr ch="inonno-itak-ritual-prayer" /></li>
 		<li>The S/A/O paradigm — <Xr ch="person-marking-architecture" /></li>
@@ -1242,8 +1234,6 @@
 		<li>The sakehe: morphology and the fixed-melody criterion — <Xr ch="sakehe-refrain-and-sung-verse-structure" /></li>
 		<li>The Sakhalin and Kuril branches as comparative benchmarks — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
 		<li>The Sakhalin and Kuril data as comparative evidence — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
-		<li>The Sakhalin length–Hokkaido accent diachrony — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
-		<li>The Sakhalin vowel-length correspondence — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>The Sakhalin vowel-length reflex and proto-Ainu prosody — <Xr ch="final-h-history-and-sakhalin-length-reflex" /></li>
 		<li>The Saru inventory — <Xr ch="interrogative-pro-forms" /></li>
 		<li>The Saru–Chitose group and its standing — <Xr ch="hokkaido-dialect-classification-and-dialectometry" /></li>
@@ -1255,17 +1245,17 @@
 		<li>The sensory nominalizers as perception complements — <Xr ch="nominalized-complements-control-raising" /></li>
 		<li>The sensory-evidential quartet — <Xr ch="formal-defective-nouns" /></li>
 		<li>The sentence-type alternation on formal-noun tails — <Xr ch="interrogative-strategies-question-particles" /></li>
+		<li>The sequences yi, wi, and wu — <Xr ch="glides-w-y" /></li>
 		<li>The shared clause-final frame paradigm — <Xr ch="evidential-schema-overview" /></li>
 		<li>The shifting class: ku=, e=, ci=, en= — <Xr ch="accent-in-compounds-and-affixation" /></li>
 		<li>The Shizunai demonstrative grid and dialect variation — <Xr ch="demonstratives-anaphora-definiteness" /></li>
 		<li>The short and long affiliative: the vowel-copy principle — <Xr ch="affiliative-suffix-morphophonology" /></li>
-		<li>The single fricative and its positional variants — <Xr ch="s-palatalization" /></li>
 		<li>The siri an polysemy — <Xr ch="siri-ne-situational" /></li>
 		<li>The sociative uko- and uwe- — <Xr ch="reciprocal-u" /></li>
 		<li>The somo ki periphrasis — <Xr ch="negation-somo-standard-clausal" /></li>
+		<li>The spoken record — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>The standard accent type — <Xr ch="hokkaido-phonological-microvariation" /></li>
 		<li>The standard analysis: three lines of evidence — <Xr ch="no-adjective-class-property-verbs" /></li>
-		<li>The standard CV syllabary — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>The stative–inchoative duality — <Xr ch="copula-ne-predicate-nominals" />, <Xr ch="property-concept-predication" /></li>
 		<li>The stem zone and verbal number — <Xr ch="verb-word-template" /></li>
 		<li>The structural status of overt NPs — <Xr ch="argument-realization-indexing" /></li>
@@ -1276,10 +1266,10 @@
 		<li>The support-verb inventory — <Xr ch="light-and-pro-verbs" /></li>
 		<li>The survey apparatus and its primary data — <Xr ch="hokkaido-lexical-dialectology-and-the-dialect-atlas" /></li>
 		<li>The switch-reference question — <Xr ch="hine-akusu-switch-reference" /></li>
+		<li>The syllable template — <Xr ch="syllable-template" /></li>
 		<li>The syntactic-vs-lexicalist debate: positions catalogued — <Xr ch="noun-incorporation-oblique-polysynthesis-debate" /></li>
 		<li>The t + i → ci rule at morpheme junctions — <Xr ch="citation-vs-combining-stem-shapes" /></li>
 		<li>The Talmy typology — verb-framing and path lexicalization — <Xr ch="postpositions-local-case-and-motion-events" /></li>
-		<li>The Tamura–Nakagawa dispute on yi/wi/wu phonemic status — <Xr ch="glides-w-y" /></li>
 		<li>The tenselessness debate and the status of a — <Xr ch="tenselessness-and-time-reference" /></li>
 		<li>The thing-counting suffix -p/-pe — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
 		<li>The three numeral word-classes and the classifier alternation — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
@@ -1293,17 +1283,17 @@
 		<li>The two functions of eci= — <Xr ch="eci-portmanteau-and-second-plural" /></li>
 		<li>The two particles and the question they raise — <Xr ch="hine-akusu-switch-reference" /></li>
 		<li>The two possessive constructions — <Xr ch="adnominal-possession-double-marking" /></li>
-		<li>The two writing systems — <Xr ch="orthographic-standardization-and-word-division" /></li>
 		<li>The two-index ceiling — <Xr ch="personal-affix-template-and-ordering" /></li>
 		<li>The Type-2 classification controversy — <Xr ch="nominal-subclasses-and-bound-nouns" /></li>
 		<li>The unexpressed causee — <Xr ch="permissive-sociative-causative-yar" /></li>
+		<li>The usual placement rule — <Xr ch="pitch-accent-placement-rule" /></li>
 		<li>The V(ka)Vt frame: morphology and the person locus — <Xr ch="abilitative-easkay-eaykap" /></li>
 		<li>The valency system as an arity calculus — <Xr ch="valency-voice-overview" /></li>
 		<li>The verb o, the affiliative o-, and disambiguation by arity — <Xr ch="applicative-o" /></li>
 		<li>The verb word as the head of its clause — <Xr ch="verb-word-template" /></li>
 		<li>The verb–noun continuum — <Xr ch="word-class-inventory-and-diagnostics" /></li>
 		<li>The vigesimal counting architecture — <Xr ch="vigesimal-numeral-system" /></li>
-		<li>The Vowel Co-occurrence Restriction — <Xr ch="vowel-inventory" /></li>
+		<li>The vowel u — <Xr ch="vowel-inventory" /></li>
 		<li>The well-being exchange — <Xr ch="everyday-conversation-text" /></li>
 		<li>The ya/a question particle — <Xr ch="interrogative-strategies-question-particles" /></li>
 		<li>The yak pirka idioms: advice, prohibition, permission, and futility — <Xr ch="deontic-necessity" /></li>
@@ -1315,7 +1305,6 @@
 		<li>Third-person undecidability — <Xr ch="noun-incorporation-oblique-polysynthesis-debate" /></li>
 		<li>Three disputed boundaries — <Xr ch="word-class-inventory-and-diagnostics" /></li>
 		<li>Three semantic readings — <Xr ch="sequential-wa-and-clause-chaining" /></li>
-		<li>Three transcriptional traditions — <Xr ch="cyrillic-and-multiscript-rendering" /></li>
 		<li>Three-place verbs — <Xr ch="verbal-subclasses-taxonomy" />, <Xr ch="prenominal-gap-relative-clauses" /></li>
 		<li>Time reference without tense — <Xr ch="tam-overview" /></li>
 		<li>Tokachi evidence and dialect scope — <Xr ch="first-person-plural-and-clusivity" /></li>
@@ -1354,14 +1343,15 @@
 		<li>Typological framing — <Xr ch="no-adjective-class-property-verbs" /></li>
 		<li>Typological note — <Xr ch="parallelism-couplets-and-word-pairs" /></li>
 		<li>Typological placement — <Xr ch="adverbial-incorporation" />, <Xr ch="tenselessness-and-time-reference" /></li>
-		<li>Typological placement: pitch accent, not tone — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
 		<li>Typological placement: the C1 system — <Xr ch="evidential-schema-overview" /></li>
 	</ul>
 	<h3>U</h3>
 	<ul class="subject-index">
 		<li>Unaccented varieties — <Xr ch="hokkaido-phonological-microvariation" /></li>
 		<li>Unattested and blocked positions — <Xr ch="prenominal-gap-relative-clauses" /></li>
+		<li>Uneven coverage — <Xr ch="oral-literature-and-spoken-corpora" /></li>
 		<li>Universal and approximative quantifiers — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
+		<li>Using a historical passage — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>utar and utari(hi): the form–meaning distinction — <Xr ch="nominal-number-utar-transnumerality" /></li>
 	</ul>
 	<h3>V</h3>
@@ -1381,16 +1371,19 @@
 		<li>Visual paradigm for one stem — <Xr ch="denominal-deverbal-verb-derivation" /></li>
 		<li>Vocabulary for contemporary use — <Xr ch="sociolinguistic-situation-revitalization" /></li>
 		<li>Vocative fragments and address utterances — <Xr ch="oblique-adjunct-verbless-clauses" /></li>
-		<li>Voicing — <Xr ch="consonant-inventory" /></li>
+		<li>Voiced letters and consonant analysis — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
+		<li>Voicing variation — <Xr ch="consonant-inventory" /></li>
 		<li>Volitional and deliberative uses — <Xr ch="hortative-and-optative" /></li>
 		<li>Vovin's Austroasiatic proposal — <Xr ch="genetic-position-macro-comparison" /></li>
 		<li>Vowel alternations — <Xr ch="hokkaido-phonological-microvariation" /></li>
 		<li>Vowel deletion as an alternative hiatus strategy — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
-		<li>Vowel Devoicing — <Xr ch="vowel-inventory" /></li>
 		<li>Vowel elision in the combining forms of ku= and ci= — <Xr ch="citation-vs-combining-stem-shapes" /></li>
-		<li>Vowel Frequency — <Xr ch="vowel-inventory" /></li>
-		<li>Vowel Sequences and Coda Glides — <Xr ch="vowel-inventory" /></li>
+		<li>Vowel sequences and final glides — <Xr ch="vowel-inventory" /></li>
 		<li>Vowel weakening after personal and applicative prefixes — <Xr ch="glide-epenthesis-hiatus-resolution" /></li>
+		<li>Vowel-initial spelling and the glottal stop — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>Vowels and open syllables — <Xr ch="katakana-and-small-kana-codas" /></li>
+		<li>Vowels in derivational patterns — <Xr ch="vowel-inventory" /></li>
+		<li>Vowels, glides, and syllable count — <Xr ch="syllable-template" /></li>
 	</ul>
 	<h3>W</h3>
 	<ul class="subject-index">
@@ -1405,13 +1398,20 @@
 		<li>What is incorporated is a verb, not an adverb — <Xr ch="adverbial-incorporation" /></li>
 		<li>What reached Hokkaido — <Xr ch="northern-contact-nivkh-tungusic-manchu" /></li>
 		<li>What split-intransitive alignment predicts — <Xr ch="alignment-split-intransitive" /></li>
-		<li>Word spacing and compound boundaries — <Xr ch="orthographic-standardization-and-word-division" /></li>
+		<li>What the coda evidence establishes — <Xr ch="glides-w-y" /></li>
+		<li>What the Latin spelling represents — <Xr ch="latin-phonemic-transcription" /></li>
+		<li>What the term pitch accent establishes — <Xr ch="mora-syllable-accent-vs-tone-analysis" /></li>
+		<li>Where notations differ — <Xr ch="orthographic-standardization-and-word-division" /></li>
+		<li>Word division and person forms — <Xr ch="historical-orthographies-and-the-batchelor-tradition" /></li>
 		<li>Word-class status — <Xr ch="interjections-ideophones-sound-symbolism" /></li>
 		<li>Word-class status and the connective–clause-linker boundary — <Xr ch="conjunctions-discourse-connectives" /></li>
 		<li>Word-classifiers: to 'day' and suy 'time/turn' — <Xr ch="numeral-classifiers-ordinals-and-quantifier-syntax" /></li>
 		<li>Word-initial consonants in the Nairo subdialect — <Xr ch="sakhalin-and-kuril-ainu-contrast" /></li>
 		<li>Word-initial h-elision — <Xr ch="hokkaido-dialect-classification-and-dialectometry" />, <Xr ch="hokkaido-phonological-microvariation" /></li>
+		<li>Words distinguished by accent — <Xr ch="lexical-contrastive-accent-minimal-pairs" /></li>
+		<li>Writing Ainu in katakana — <Xr ch="katakana-and-small-kana-codas" /></li>
 		<li>Writing and teaching materials — <Xr ch="sociolinguistic-situation-revitalization" /></li>
+		<li>Writing systems and their purposes — <Xr ch="orthographic-standardization-and-word-division" /></li>
 	</ul>
 	<h3>Y</h3>
 	<ul class="subject-index">
