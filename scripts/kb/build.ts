@@ -72,15 +72,18 @@ for (const st of statements)
 const claimsByChapter = groupBy(claims, (c) => topicById.get(c.topic)?.chapter);
 const narrativeByChapter = groupBy(narrative.filter((n) => n.status !== 'withdrawn'), (n) => topicById.get(n.topic)?.chapter);
 const claimByStatement = new Map<string, Row>();
-const claimsBySource = new Map<string, { claim: Row; stance: string }[]>();
+/** claims each source contributes to, once per claim, with the source's stances in it */
+const claimsBySource = new Map<string, Map<string, { claim: Row; stances: string[] }>>();
 for (const c of claims)
 	for (const m of c.statements ?? []) {
 		claimByStatement.set(m.id, c);
 		const st = stById.get(m.id);
 		if (!st) continue;
-		const list = claimsBySource.get(st.source) ?? [];
-		list.push({ claim: c, stance: m.stance });
-		claimsBySource.set(st.source, list);
+		const bySource = claimsBySource.get(st.source) ?? new Map();
+		const entry = bySource.get(c.id) ?? { claim: c, stances: [] };
+		if (!entry.stances.includes(m.stance)) entry.stances.push(m.stance);
+		bySource.set(c.id, entry);
+		claimsBySource.set(st.source, bySource);
 	}
 
 /** statements routed to a chapter or to any of its sections, each once */
@@ -238,7 +241,7 @@ const index = {
 			cited_by: agg.bySourceChapter.get(s.key)?.size ?? 0,
 			citations: [...(agg.bySourceChapter.get(s.key)?.values() ?? [])].reduce((a, b) => a + b, 0),
 			statements: (statementsBySource.get(s.id) ?? []).length,
-			claims: (claimsBySource.get(s.id) ?? []).length
+			claims: claimsBySource.get(s.id)?.size ?? 0
 		}))
 		.sort((a, b) => b.citations - a.citations),
 	assets: assets.map((a) => ({ id: a.id, source: a.source, engine: a.engine, leaves: a.leaves, mapped: Object.keys(a.pagemap ?? {}).length }))
@@ -548,9 +551,9 @@ for (const s of sources) {
 	const topicCounts = new Map<string, number>();
 	for (const st of sts) for (const t of st.topics) topicCounts.set(t, (topicCounts.get(t) ?? 0) + 1);
 	const asset = assets.find((a) => a.source === s.id);
-	const cls = (claimsBySource.get(s.id) ?? []).map(({ claim, stance }) => {
+	const cls = [...(claimsBySource.get(s.id)?.values() ?? [])].map(({ claim, stances }) => {
 		const top = topicById.get(claim.topic);
-		return { id: claim.id, en: claim.statement?.en ?? '', ja: claim.statement?.ja ?? '', stance, members: claim.statements?.length ?? 1, support: support(claim), topic: { slug: top?.chapter ?? null, title: top?.label?.en ?? claim.topic } };
+		return { id: claim.id, en: claim.statement?.en ?? '', ja: claim.statement?.ja ?? '', stances, members: claim.statements?.length ?? 1, support: support(claim), topic: { slug: top?.chapter ?? null, title: top?.label?.en ?? claim.topic } };
 	});
 	writeJson(join(STATIC_KB, 'sources', `${key}.json`), {
 		source: { ...s, label: sourceLabel(s) },

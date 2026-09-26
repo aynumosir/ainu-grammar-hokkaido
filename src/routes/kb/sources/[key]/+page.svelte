@@ -70,7 +70,7 @@
 					<div><a href={`/kb/topics/${c.topic.slug}#${c.id}`}>{c.en}</a></div>
 					{#if c.ja}<div class="muted" lang="ja">{c.ja}</div>{/if}
 					<div class="meta">
-						<span class="chip status">{c.stance}</span>
+						{#each c.stances as stance (stance)}<span class="chip status">{stance}</span>{/each}
 						{#each Object.entries(c.support) as [stance, keys] (stance)}
 							{#if keys.some((k) => k !== s.key)}<span class="chip status">{stance}: {keys.filter((k) => k !== s.key).join(', ')}</span>{/if}
 						{/each}
