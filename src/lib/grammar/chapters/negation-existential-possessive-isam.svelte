@@ -144,7 +144,7 @@
 		independently covers existence, location, and residence and positive predicates are negatable by
 		<i lang="ain-Latn">somo</i>; the precise split is her pedagogical formulation and is not stated
 		in those terms by Nakagawa, Satō, or Bugaeva ‹speculative›. The <i lang="ain-Latn">somo an</i>
-		side of the contrast is treated in <Xr ch="negation-somo-standard-clausal" s="preverbal-somo" />.
+		side of the contrast is treated in <Xr ch="negation-somo-standard-clausal" s="patterns" />.
 	</p>
 
 	<p>
@@ -211,7 +211,7 @@
 		<Ref k="nakagawa2024" p="340" />. Ijäs extends the observation to lexical negatives such as
 		<i lang="ain-Latn">sak</i> and <i lang="ain-Latn">isam</i> <Ref k="ijas2023" />. The
 		symmetric/asymmetric typology behind the <i lang="ain-Latn">no</i>-only restriction is set out in
-		<Xr ch="negation-somo-standard-clausal" s="typology" />.
+		<Xr ch="negation-somo-standard-clausal" s="regional" />.
 	</p>
 </S>
 

@@ -37,7 +37,7 @@
 		— the woman inside — is a 3rd-person entity from the caller's perspective. The
 		formal noun <A w="ruwe" /> in its bare clause-final position, without the following copula
 		<i lang="ain-Latn">ne</i>, builds the polar-question frame rather than the declarative
-		evidential (<Xr ch="ruwe-ne-inferential" s="frames">the polar-question frame</Xr>).
+		evidential (<Xr ch="ruwe-ne-inferential" s="questions">the polar-question frame</Xr>).
 	</p>
 
 	<Ex

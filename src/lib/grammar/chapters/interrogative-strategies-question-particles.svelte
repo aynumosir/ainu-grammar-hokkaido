@@ -64,7 +64,7 @@
 				<td>(b) bare formal noun</td>
 				<td><i lang="ain-Latn">ruwe, hawe, siri, humi</i> alone (∅-tail)</td>
 				<td>clause-final</td>
-				<td>copula <i lang="ain-Latn">ne</i> omitted; see <Xr ch="ruwe-ne-inferential" s="frames">the frame alternations</Xr></td>
+				<td>copula <i lang="ain-Latn">ne</i> omitted; see <Xr ch="ruwe-ne-inferential" s="questions">the frame alternations</Xr></td>
 			</tr>
 			<tr>
 				<td>(c) Q-particle <i lang="ain-Latn">ya / a</i></td>
@@ -197,7 +197,7 @@
 		<A w="an" /> vs <A w="ne" /> after a wh-word marks open-existence question vs
 		identification <Ref k="nakagawa2024" p="412" />. The evidential-tail system and
 		the semantics of <A w="ne" /> vs <A w="an" /> are set out in
-		<Xr ch="ruwe-ne-inferential" s="frames">the frames section</Xr> and in
+		<Xr ch="ruwe-ne-inferential" s="questions">the frames section</Xr> and in
 		<Xr ch="evidential-schema-overview" />.
 	</p>
 </S>
@@ -474,7 +474,7 @@
 		is a property of the evidential class, not of the SFP class, and the two systems
 		should not be conflated ‹corpus-suggested›; see
 		<Xr ch="gendered-register-speech" /> for oral-register distinctions and
-		<Xr ch="ruwe-ne-inferential" s="semantics">the semantics of ruwe ne</Xr> for
+		<Xr ch="ruwe-ne-inferential" s="fact">the semantics of ruwe ne</Xr> for
 		the gendered-register side of the evidential.
 	</p>
 </S>

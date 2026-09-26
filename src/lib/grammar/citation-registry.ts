@@ -307,7 +307,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	nakagawa2001b: { sourceRole: 'background', heldLocally: false },
 	ochiai2026: { sourceRole: 'prior-analysis', heldLocally: false },
 	tamura1973: { sourceRole: 'prior-analysis', heldLocally: false },
-	yoshikawa2018: { sourceRole: 'prior-analysis', heldLocally: false }
+	yoshikawa2018: { sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/ocr/2018_吉川佳見_アイヌ語の助動詞aanと証拠性.pdftotext.txt' }
 };
 
 /**

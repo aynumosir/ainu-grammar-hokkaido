@@ -665,28 +665,28 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "hortative-and-optative",
-				title: "Hortative, Optative, and Cohortative",
-				summary: "First-person hortative/cohortative built on =an plus clause-final particles, alongside optative and wish constructions."
+				title: "Invitations, Deliberation, and Wishes",
+				summary: "Inclusive and other-person ro constructions, regional endings, Shizunai na, self-directed so, and wishes with ta and oka."
 			},
 			{
 				slug: "desiderative-rusuy",
-				title: "The Desiderative rusuy",
-				summary: "Postverbal rusuy expresses 'want to' and desire, raising the verb-vs-auxiliary question central to the part."
+				title: "Desire, Rusuy, and Compound Predicates",
+				summary: "Separate auxiliaries and lexical compounds, person placement, the desirer and action participant, impending feelings, and competing incorporation analyses."
 			},
 			{
 				slug: "abilitative-easkay-eaykap",
-				title: "Abilitative easkay / eaykap (Ability and Possibility)",
-				summary: "easkay 'be able to' and its lexicalized negative counterpart eaykap 'cannot' encode root ability and possibility."
+				title: "Ability and Inability",
+				summary: "Easkay and eaykap, person-marked lexical uses, compounds, ka, dialect and register limits, and more specific obstacles to action."
 			},
 			{
 				slug: "deontic-necessity",
-				title: "Deontic Necessity and Obligation (kuni ne, kus ne)",
-				summary: "Necessity and obligation are expressed periphrastically via nominalized kuni ne / kunine and kus ne."
+				title: "Necessity, Advice, and Permission",
+				summary: "Easirki, obligation and expectation with kuni, conditional advice and permission, and ordinary person marking in indirect directives."
 			},
 			{
 				slug: "epistemic-irrealis-modality",
-				title: "Epistemic Modality, Dubitative, Intentive, and Irrealis",
-				summary: "Probability nankor, the dubitative ya, intentive kusu ne, and counterfactual/irrealis interactions, plus the modal–evidential boundary."
+				title: "Conjecture, Intention, and Prospective Events",
+				summary: "Contextual nankor, kusu ne and regional kusu ki, impending events, competing oasi analyses, seeming, circumlocution, and conditional context."
 			}
 		]
 	},
@@ -695,33 +695,33 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "evidential-schema-overview",
-				title: "The Nominalization-plus-Copula Evidential Schema",
-				summary: "The architecture of the Ainu evidential system: a clause-nominalizing formal noun (ruwe/siri/hawe/humi) plus the copula ne/an encodes the speaker's source of information."
+				title: "Formal Nouns and Evidential Constructions",
+				summary: "The four noun families, internal complements and clause endings, regional frames, competing semantic accounts, negation, and construction-specific ordering."
 			},
 			{
 				slug: "ruwe-ne-inferential",
-				title: "ruwe ne — the Inferential / Visual-Trace Evidential",
-				summary: "The default assertive-evidential ruwe ne ('it is the trace/fact that'), marking inference from evidence or established fact, the most frequent and most grammaticalized term of the paradigm."
+				title: "Ruwe: Fact, Knowledge, and Clause Endings",
+				summary: "Personal circumstances and explanations, nominal morphology, questions and replies, knowledge-based analyses, negation, and lexical ruwe an."
 			},
 			{
 				slug: "siri-ne-situational",
-				title: "siri ne — the Direct-Perception / Situational Evidential",
-				summary: "siri ne ('it is the appearance/scene that'), marking directly observed situations and visible states, with a close interface to the siran situational-continuative and a mirative lean."
+				title: "Siri: Visible Appearance and Ongoing Situations",
+				summary: "Appearance and identity, descriptions of the speaker’s conduct, visual inference, aspectual and lexical uses, and Tokachi predication restrictions."
 			},
 			{
 				slug: "hawe-ne-reportative",
-				title: "hawe ne — the Reportative / Hearsay Evidential",
-				summary: "hawe ne ('it is the voice/report that'), marking information acquired through speech or hearsay, distinct from but adjacent to the sekor quotative and reported-discourse system."
+				title: "Hawe: Voice, Wording, and Reports",
+				summary: "The speaker’s own wording, immediate reports, questions about meaningful cries, nominal morphology, and hawe as in inference and reported discourse."
 			},
 			{
 				slug: "humi-ne-sensory",
-				title: "humi ne — the Non-Visual Sensory Evidential",
-				summary: "humi ne ('it is the sound/feeling that'), marking evidence from non-visual senses — non-verbal sound and bodily/internal sensation — and inference from such cues."
+				title: "Humi: Sensation and Internal Experience",
+				summary: "Bodily and emotional experience, humi ne continuations, sound-based questions, Tokachi and Shizunai evidence, and the absence of a sensation."
 			},
 			{
 				slug: "mirativity-scope-grammaticalization",
-				title: "Mirativity, Evidential Scope, and Grammaticalization to Sentence-Final Particles",
-				summary: "System-level interactions: the evidential-to-mirative extension, evidential stacking and scope over negation and modality, aspect/perfect-based evidential strategies, and the cline from formal noun to sentence-final particle."
+				title: "Evidential Combinations, Discovery, and Structural Change",
+				summary: "Exclamation and aan, double evidentials, construction-specific ordering, competing constituency analyses, grammaticalization proposals, and regional endings."
 			}
 		]
 	},
@@ -730,8 +730,8 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "negation-somo-standard-clausal",
-				title: "Standard Clausal Negation with somo",
-				summary: "The preverbal standard negator somo: its position, scope, periphrastic somo ki construction, and placement in symmetric/asymmetric negation typology."
+				title: "Clausal Negation with Somo",
+				summary: "Preverbal and postverbal negatives, ka and the somo ki analysis, nominal predicates, evidential scope, regional forms, and construction-specific limits."
 			},
 			{
 				slug: "negation-existential-possessive-isam",
