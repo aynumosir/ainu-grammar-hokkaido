@@ -805,53 +805,53 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "reference-tracking",
-				title: "Reference Tracking and Argument Continuity",
-				summary: "How participants are tracked across clauses: zero anaphora and pro-drop, person marking, the indefinite/fourth person as a tracking device, demonstrative/anaphoric reference, and switch-reference-like clause linkage (hine/akusu), drawn together as one system."
+				title: "Reference Tracking and Omitted Expressions",
+				summary: "Contextual recovery, third-person ambiguity, fourth-person reference, and continuity across linked clauses."
 			},
 			{
 				slug: "topic-marking-anakne",
-				title: "Topic and Focus Marking: anak(ne), patek, and ka",
-				summary: "The topic/contrastive-topic particle anak~anakne and the focus-sensitive particles patek 'only' and ka 'also/even': thematic vs contrastive topic, restrictive/additive/scalar focus, and the NPI use of ka."
+				title: "Topics and Anakne",
+				summary: "Topic phrases and grammatical roles, repeated topics, contrasts, and the source-specific effects of related particles."
 			},
 			{
 				slug: "cleft-nominalization-focus",
-				title: "Cleft, Pseudocleft, and Nominalization-Based Focus",
-				summary: "Identificational and predicate-focus constructions built on nominalization plus the copula (…p ne, …hi ne) and their relation to the evidential schema."
+				title: "Nominalization and Focus",
+				summary: "Relative heads, content nominalization, copular identification, naming, and the limits of an exhaustive cleft analysis."
 			},
 			{
 				slug: "pragmatic-word-order-dislocation",
-				title: "Pragmatic Word-Order Permutation, Dislocation, and Argument Ellipsis",
-				summary: "Departures from basic verb-final order for information-structural ends — scrambling, left/right dislocation, afterthought, and given-argument ellipsis."
+				title: "Word Order in Context",
+				summary: "Published participant orders, topic placement, role interpretation, fronted adjuncts, and construction-specific ordering limits."
 			},
 			{
 				slug: "sentence-final-particles-illocutionary-force",
-				title: "The Sentence-Final Particle System and Illocutionary Force",
-				summary: "The inventory of clause-final particles (na, wa, ya, nankor, …) encoding assertion, emphasis, confirmation, and softening, and their grammaticalization from formal nouns."
+				title: "Sentence-Final Particles and Interaction",
+				summary: "Requests, suggestions, response-seeking endings, emphatic combinations, recollection, and source-specific inventories."
 			},
 			{
 				slug: "interrogative-strategies-question-particles",
-				title: "Interrogative Strategies, Question Particles, and Evidential Questions",
-				summary: "Polar and content questions — the particles ya/he, in-situ wh-words, biased/confirmational questions — integrated with the evidential interrogative/confirmational paradigm (ruwe un?, hawe ya?, siri ya?) and its evidence-source 'flip' from speaker to addressee."
+				title: "Questions and Interrogative Particles",
+				summary: "Polar and content questions, intonation, nominal endings, ya and he, embedded questions, replies, and dialect differences."
 			},
 			{
 				slug: "gendered-register-speech",
-				title: "Gendered Speech and Pragmatic Registers",
-				summary: "Sex-of-speaker and register differences in final particles, interjections, and politeness, and the documentation gaps surrounding them."
+				title: "Gender, Address, and Speech Conventions",
+				summary: "Honorific address, interjections, changing greeting conventions, regional performance roles, and limits of the conversational record."
 			},
 			{
 				slug: "adverbs-degree-comparison",
-				title: "Adverbs, Degree Words, and Comparison Strategies",
-				summary: "The adverb word-class, the -no adverbializer, intensifiers, and the periphrastic encoding of comparison (Ainu has no dedicated comparative)."
+				title: "Adverbs, Degree, and Comparison",
+				summary: "Basic, derived, and converted adverbs, antecedents of postpositional forms, directional constructions, degree comparison, and iyotta."
 			},
 			{
 				slug: "conjunctions-discourse-connectives",
-				title: "Conjunctions and Discourse Connectives",
-				summary: "NP-coordinating conjunctions (newa, tura) and clause-edge discourse connectives (orowano, nah …) as a minor class, distinct from the converbal clause-linkers of Part XVII."
+				title: "Connective Expressions in Discourse",
+				summary: "The orowa family, connective placement and pauses, rapok constructions, and the distinction from nominal coordination."
 			},
 			{
 				slug: "interjections-ideophones-sound-symbolism",
-				title: "Interjections, Response Words, Ideophones, and Sound Symbolism",
-				summary: "The expressive minor classes — interjections and conversational formulae, ideophones/mimetics, and size/intensity sound-symbolic gradation."
+				title: "Interjections and Mimetic Formations",
+				summary: "Responses and calls, regional greetings, interjection morphology and verbal exceptions, sound imitation, and restricted mimetic formations."
 			}
 		]
 	},
@@ -860,38 +860,38 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "oral-literature-genre-taxonomy",
-				title: "The Oral-Literature Genre System and Its Grammatical Signatures",
-				summary: "The taxonomy of Ainu oral-narrative genres and the bundle of grammatical features that indexes each one."
+				title: "Oral-Literary Genres and Their Regional Names",
+				summary: "Functional classifications, the four-way Chitose comparison, performance features, overlapping regional labels, and narrative perspective."
 			},
 			{
 				slug: "logophoric-narration-and-reported-discourse",
-				title: "First-Person Narration, the Logophoric Fourth Person, and Reported Discourse",
-				summary: "The grammaticalized narrator viewpoint in sung epic and the logophoric/reported-speech system as deployed across genres."
+				title: "Narrative Person and Reported Speech",
+				summary: "Character perspective, self-quotation, other-speaker reports, ordinary-person alternatives, mixed narration, and competing syntactic and historical accounts."
 			},
 			{
 				slug: "sakehe-refrain-and-sung-verse-structure",
-				title: "The Sakehe Refrain, Verse Meter, and the Structure of Sung Verse",
-				summary: "The sakehe burden and the metrical/structural organization of sung genres as performance grammar: refrain types and placement, verse-line segmentation and syllable/mora-count meter, and melodic vs linguistic pitch (proto-accent reconstruction in Part XX)."
+				title: "Sakehe, Refrains, and Verse Structure",
+				summary: "Refrain placement and meaning, changing voices, syllable counts, and the metrical patterns reported for named performances."
 			},
 			{
 				slug: "parallelism-couplets-and-word-pairs",
-				title: "Parallelism, Couplets, and Word-Pair Doublets",
-				summary: "Syntactic-semantic parallelism, the verse couplet, and lexical doublets analyzed as structural rhetoric rather than mere style."
+				title: "Parallelism, Couplets, and Paired Expressions",
+				summary: "Paired numbers, contrasting words, repeated structures, and their use in prose as well as verse."
 			},
 			{
 				slug: "poetic-archaic-elevated-register",
-				title: "The Elevated/Poetic Register: Archaic Morphology and Formulaic Diction",
-				summary: "The grammar and lexicon of the elevated (雅語) register — archaic forms, verse-restricted morphology, and fixed formulae."
+				title: "Poetic and Elevated Language",
+				summary: "Special vocabulary, metrical material, applicative phrasing, and variation within elevated registers."
 			},
 			{
 				slug: "honorific-ritual-and-taboo-registers",
-				title: "Honorific, Ritual, and Taboo Registers",
-				summary: "Referent/addressee honorification, the language of prayer, and hunting/taboo avoidance speech as register-specific grammar."
+				title: "Respectful, Ritual, and Avoidance Registers",
+				summary: "Regional honorific address, person and naming in prayer, incantations, and documented mountain and offshore vocabulary."
 			},
 			{
 				slug: "narrative-tam-evidential-patterning-by-genre",
-				title: "Narrative TAM and Evidential Patterning by Genre",
-				summary: "Genre-quantified distribution of tense-aspect and the evidential clause-final system in connected narrative discourse."
+				title: "Narrative Aspect and Evidentiality",
+				summary: "Narrator and character perspectives, aspect at scene changes, double evidentials, and the scope of published genre comparisons."
 			}
 		]
 	},
@@ -900,38 +900,38 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "proto-ainu-segmental-reconstruction",
-				title: "Proto-Ainu Reconstruction: Segments and Accent Classes",
-				summary: "Reconstruction of the Proto-Ainu consonant/vowel inventory and accent classes, the correspondence sets to modern Hokkaido reflexes, Shiratori's *ia revision of the palatalization account, the accented/accentless split, and the Sakhalin length to Hokkaido pitch correspondence."
+				title: "Proto-Ainu Reconstruction: Segments and Prosody",
+				summary: "Documented correspondences, competing consonant and vowel reconstructions, lexical alternatives, and disputed histories of length and accent."
 			},
 			{
 				slug: "final-h-history-and-sakhalin-length-reflex",
-				title: "The Final-h Problem and Its Sakhalin Vowel-Length Reflex",
-				summary: "The diachrony of word-final and coda -h, the Hokkaido final-h controversy, and its systematic correspondence to phonemic vowel length in Sakhalin Ainu."
+				title: "Sakhalin Final Consonants and Vowel Length",
+				summary: "Final-stop correspondences, suffix alternations, added vowels after r, and the competing histories of length and accent."
 			},
 			{
 				slug: "internal-reconstruction-and-grammaticalization-pathways",
-				title: "Internal Reconstruction and Grammaticalization Pathways",
-				summary: "Internal reconstruction from synchronic morphophonemic alternations, together with the major grammaticalization clines that feed the modern grammar."
+				title: "Internal Reconstruction and Grammaticalization",
+				summary: "Proposed lexical sources of grammatical forms, the expansion of possessive kor, person and nominalization histories, and limits of segmentation."
 			},
 			{
 				slug: "hokkaido-dialect-classification-and-dialectometry",
-				title: "Hokkaido Dialect Classification and Dialectometry",
-				summary: "The internal dialect divisions of Hokkaido Ainu, the classification debate, and the new statistical/dialectometric reanalyses."
+				title: "Dialect Classification and Dialectometry",
+				summary: "The distinct survey samples, lexical similarity measures, regional groupings, and limits of recent quantitative classifications."
 			},
 			{
 				slug: "hokkaido-phonological-microvariation",
-				title: "Hokkaido Dialect Microvariation: Phonology and Morphosyntax",
-				summary: "Inter-dialectal variation within Hokkaido in both phonology (s~š, coda treatment, accent-class membership) and morphosyntax (personal-affix forms, third-plural marking, plural strategies, evidential/causative inventories)."
+				title: "Hokkaido Dialect Variation in Sound and Grammar",
+				summary: "Accent systems, lexical sound correspondences, person and verbal number, and regional connective and aspectual forms."
 			},
 			{
 				slug: "hokkaido-lexical-dialectology-and-the-dialect-atlas",
-				title: "Lexical Dialectology and the Dialect Atlas",
-				summary: "Lexical microvariation across Hokkaido, the comparative dictionaries and Swadesh-style datasets, and the dialect atlas underpinning classification."
+				title: "Lexical Geography and Survey History",
+				summary: "Overlapping distributions of mouth terms, interrogatives, and kinship vocabulary, with competing histories and changing survey coverage."
 			},
 			{
 				slug: "sakhalin-and-kuril-ainu-contrast",
-				title: "Sakhalin and Kuril Ainu: The External Comparison",
-				summary: "Systematic contrast of Hokkaido with Sakhalin (Enciw) Ainu and the fragmentary Kuril record, framing the dialect-vs-language question."
+				title: "Sakhalin and Northern Kuril Comparisons",
+				summary: "Documentary scope, Sakhalin sound and grammatical contrasts, possession, number, person, numerals, and Northern Kuril evidence."
 			}
 		]
 	},
@@ -940,28 +940,28 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "japanese-loanwords-in-ainu",
-				title: "Japanese Loanwords and Their Phonological Adaptation",
-				summary: "Lexical borrowing from Japanese — chronological strata, semantic domains, and numeral borrowing over the vigesimal base — together with the phonological nativization of loans (coda/cluster repair, segment mapping, accent assignment) as live evidence for the synchronic phonotactic grammar."
+				title: "Japanese Loans and Their Adaptation",
+				summary: "Documented borrowings, historical donor pronunciation, uncertain details, proposed dating, and continued lexical adaptation."
 			},
 			{
 				slug: "ainu-loanwords-and-toponymy-in-japanese",
-				title: "Ainu Loanwords and Toponymy in Japanese",
-				summary: "Ainu's imprint on Japanese — animal/fish/plant loanwords in standard and northern-dialect Japanese, and the Ainu (substrate) toponymy of Hokkaido and northern Honshu."
+				title: "Ainu Loans and Place Names in Japanese",
+				summary: "Borrowed words, regional river terminology, documented place-name explanations, and qualified plant-name reconstructions."
 			},
 			{
 				slug: "northern-contact-nivkh-tungusic-manchu",
-				title: "Northern Contact: Nivkh, Tungusic, and Manchu",
-				summary: "The Sakhalin/Amur contact zone — Nivkh and Tungusic (Uilta/Orok, Nanai)/Manchu lexical and structural contact, with Sakhalin Ainu as the principal locus."
+				title: "Northern Contact and Borrowing",
+				summary: "Sakhalin contact networks, item-specific loan directions, Japanese and continental routes, and possible grammatical convergence."
 			},
 			{
 				slug: "macro-comparison-and-deep-contact-controversies",
-				title: "Macro-Comparison and Deep-Contact Controversies",
-				summary: "A critical, method-driven survey of proposed external genetic relationships and deep-contact scenarios for Ainu, framed by borrowing-scale and areal typology."
+				title: "Distant Comparison and Early Contact",
+				summary: "External-affiliation proposals, disputed early Japanese contact, and the evidential limits of archaeological and linguistic histories."
 			},
 			{
 				slug: "lexical-semantic-fields-synopsis",
-				title: "Synopsis of Lexical-Semantic Fields",
-				summary: "A field-by-field synopsis of the Ainu lexicon — its semantic organization, the classified-dictionary tradition, and culturally salient vocabulary domains."
+				title: "Lexical Fields as Grammatical Evidence",
+				summary: "Plant, body-part, and weather expressions illustrating possession, number, predication, and regional lexical meanings."
 			}
 		]
 	},
@@ -970,28 +970,28 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "uwepeker-prose-tale",
-				title: "A Glossed Uwepeker (Prose Folktale)",
-				summary: "A complete uwepeker prose folktale presented in four-tier interlinear gloss with running grammatical commentary cross-referenced clause-by-clause to the analytic chapters."
+				title: "A Glossed Passage from a Chitose Prose Tale",
+				summary: "A continuous advice sentence from Shirasawa Nabe’s 1993 Pananpe–Penanpe performance, with four tiers and generic-person analysis."
 			},
 			{
 				slug: "heroic-and-divine-verse",
-				title: "Glossed Verse: A Yukar Heroic Epic and a Kamuy Yukar God-Song",
-				summary: "Two glossed verse texts — a yukar heroic-epic passage and a kamuy yukar divine self-narration with sakehe refrain — set side by side with comparative commentary on meter, refrain, and the first-person/logophoric narrator."
+				title: "Glossed Openings from Abuta and Horobetsu Verse",
+				summary: "Four-tier excerpts comparing fourth-person and exclusive-plural narration, with source line boundaries and metrical material explained."
 			},
 			{
 				slug: "inonno-itak-ritual-prayer",
-				title: "A Glossed Inonno-itak (Ritual Prayer)",
-				summary: "A ritual prayer (inonno-itak) text glossed and annotated, showcasing the elevated/honorific register, formulaic parallelism, and direct benedictive address to the kamuy."
+				title: "A Glossed Ritual Prayer Opening",
+				summary: "An invocation and worship statement from Motozō Nabesawa’s lower Saru prayer, with person, applicatives, and the formal ending analyzed."
 			},
 			{
 				slug: "everyday-conversation-text",
-				title: "A Glossed Everyday-Conversation Text",
-				summary: "A passage of recorded everyday conversation glossed and annotated to illustrate spontaneous spoken syntax, sentence-final particles, and connected-speech reduction."
+				title: "A Glossed Asahikawa Teaching Conversation",
+				summary: "A wellbeing and water-request exchange attributed to Sugimura Fusa and Kawamura Tome in the provisional Akor Itak study transcript."
 			},
 			{
 				slug: "sakhalin-contrast-text",
-				title: "A Glossed Sakhalin (Enciw) Text with Hokkaido Contrast",
-				summary: "A Sakhalin Ainu text glossed and annotated against Hokkaido norms, foregrounding phonemic vowel length, the final-h reflex, and divergent person, number, and negation morphology."
+				title: "A Glossed Sakhalin Teaching Dialogue",
+				summary: "Murasaki’s bowl dialogue with four tiers, contrasting possessive constructions and the use of final particles in statements and questions."
 			}
 		]
 	},
@@ -1001,32 +1001,32 @@ export const parts: Part[] = [
 			{
 				slug: "glossary-grammatical-terms",
 				title: "Glossary of Grammatical Terms",
-				summary: "An alphabetical, validated glossary of the grammatical terminology used throughout the grammar, with trilingual equivalents and cross-references to the chapters that define each term."
+				summary: "English definitions and chapter links for argument structure, person, word classes, derivation, time, evidence, sound structure, and change."
 			},
 			{
 				slug: "abbreviations-glossing-symbols",
-				title: "Abbreviations and Glossing-Symbol Conventions",
-				summary: "The tables of interlinear-gloss abbreviations, morpheme-boundary symbols, and notation conventions used in the grammar, with a concordance reconciling divergent conventions across the source literature."
+				title: "Abbreviations and Glossing Conventions",
+				summary: "The example tiers, boundary notation, source-label differences, current gloss inventory, and dialect tags."
 			},
 			{
 				slug: "consolidated-references-bibliography",
-				title: "Consolidated References and Bibliography",
-				summary: "The unified, type-classified bibliography of all grammars, articles, text editions, and dictionaries consulted, with a critical apparatus flagging key works not directly available."
+				title: "References and Bibliography",
+				summary: "Primary materials, grammatical studies, and comparative works, with original titles, publication details, and intermediary-source conventions."
 			},
 			{
 				slug: "index-of-subjects",
-				title: "Index of Subjects",
-				summary: "An alphabetical topic and concept index keyed to chapter and section, with a parallel typological-feature sub-index for cross-linguistic look-up."
+				title: "Index of Chapter and Section Topics",
+				summary: "Alphabetical navigation by chapter and section title, with links to the relevant discussions."
 			},
 			{
 				slug: "index-of-grammatical-morphemes",
-				title: "Index of Grammatical Morphemes and Affixes",
-				summary: "An exhaustive finding list of every bound morpheme, clitic, and grammatical particle, organized by form with gloss, class, dialect variants, and section reference, doubling as a reverse-lookup grammar dictionary."
+				title: "Index of Grammatical Forms and Constructions",
+				summary: "Selected person forms, nominal morphology, derived predicates, clause constructions, and discourse expressions linked to their analyses."
 			},
 			{
 				slug: "index-of-examples-sources-dialects",
-				title: "Index of Cited Examples, Source Texts, and Dialects",
-				summary: "A citation index of every quoted example by source edition and locus, organized further by genre, narrator/transcriber, and dialect, cross-referenced to the glossed-texts corpus."
+				title: "Index of Examples by Source and Dialect",
+				summary: "Displayed example occurrences grouped by cited source and supplied dialect label, with provenance and construction status kept distinct."
 			}
 		]
 	}

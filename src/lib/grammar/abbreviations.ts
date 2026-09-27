@@ -68,6 +68,7 @@ export const abbreviations: Record<string, string> = {
 	ITR: 'iterative',
 	LEX: 'lexical / lexicalized (as in CAUS.LEX, lexical causative)',
 	MID: 'middle (voice)',
+	METR: 'metrical material',
 	LOC: 'locative',
 	MIR: 'mirative',
 	NEG: 'negative',
@@ -112,6 +113,7 @@ export const abbreviations: Record<string, string> = {
  */
 export const dialectLabels: Record<string, string> = {
 	HK: 'Hokkaido (dialect not further specified)',
+	ABU: 'Abuta',
 	SAR: 'Saru',
 	CHI: 'Chitose',
 	ISH: 'Ishikari',
