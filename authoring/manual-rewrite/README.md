@@ -1,6 +1,6 @@
 # Source comparison for the grammar rewrite
 
-The scope is all 178 original grammar chapters. Chapters 1–156 have replacement prose with independent source review: 156 chapters complete, with 22 remaining. The remaining chapters still require their individual evidence checks and replacement prose.
+The scope is all 178 original grammar chapters. Chapters 1–162 have replacement prose with independent source review: 162 chapters complete, with 16 remaining. The remaining chapters still require their individual evidence checks and replacement prose.
 
 The first rewrite PR (#46) was merged and deployed. Continuation proceeds on `docs/manual-grammar-rewrite-final`; no further deployment is included. See [the restart checkpoint](RESUME.md) for the current state and remaining work.
 

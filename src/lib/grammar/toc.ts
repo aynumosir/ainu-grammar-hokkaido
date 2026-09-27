@@ -905,33 +905,33 @@ export const parts: Part[] = [
 			},
 			{
 				slug: "final-h-history-and-sakhalin-length-reflex",
-				title: "The Final-h Problem and Its Sakhalin Vowel-Length Reflex",
-				summary: "The diachrony of word-final and coda -h, the Hokkaido final-h controversy, and its systematic correspondence to phonemic vowel length in Sakhalin Ainu."
+				title: "Sakhalin Final Consonants and Vowel Length",
+				summary: "Final-stop correspondences, suffix alternations, added vowels after r, and the competing histories of length and accent."
 			},
 			{
 				slug: "internal-reconstruction-and-grammaticalization-pathways",
-				title: "Internal Reconstruction and Grammaticalization Pathways",
-				summary: "Internal reconstruction from synchronic morphophonemic alternations, together with the major grammaticalization clines that feed the modern grammar."
+				title: "Internal Reconstruction and Grammaticalization",
+				summary: "Proposed lexical sources of grammatical forms, the expansion of possessive kor, person and nominalization histories, and limits of segmentation."
 			},
 			{
 				slug: "hokkaido-dialect-classification-and-dialectometry",
-				title: "Hokkaido Dialect Classification and Dialectometry",
-				summary: "The internal dialect divisions of Hokkaido Ainu, the classification debate, and the new statistical/dialectometric reanalyses."
+				title: "Dialect Classification and Dialectometry",
+				summary: "The distinct survey samples, lexical similarity measures, regional groupings, and limits of recent quantitative classifications."
 			},
 			{
 				slug: "hokkaido-phonological-microvariation",
-				title: "Hokkaido Dialect Microvariation: Phonology and Morphosyntax",
-				summary: "Inter-dialectal variation within Hokkaido in both phonology (s~š, coda treatment, accent-class membership) and morphosyntax (personal-affix forms, third-plural marking, plural strategies, evidential/causative inventories)."
+				title: "Hokkaido Dialect Variation in Sound and Grammar",
+				summary: "Accent systems, lexical sound correspondences, person and verbal number, and regional connective and aspectual forms."
 			},
 			{
 				slug: "hokkaido-lexical-dialectology-and-the-dialect-atlas",
-				title: "Lexical Dialectology and the Dialect Atlas",
-				summary: "Lexical microvariation across Hokkaido, the comparative dictionaries and Swadesh-style datasets, and the dialect atlas underpinning classification."
+				title: "Lexical Geography and Survey History",
+				summary: "Overlapping distributions of mouth terms, interrogatives, and kinship vocabulary, with competing histories and changing survey coverage."
 			},
 			{
 				slug: "sakhalin-and-kuril-ainu-contrast",
-				title: "Sakhalin and Kuril Ainu: The External Comparison",
-				summary: "Systematic contrast of Hokkaido with Sakhalin (Enciw) Ainu and the fragmentary Kuril record, framing the dialect-vs-language question."
+				title: "Sakhalin and Northern Kuril Comparisons",
+				summary: "Documentary scope, Sakhalin sound and grammatical contrasts, possession, number, person, numerals, and Northern Kuril evidence."
 			}
 		]
 	},

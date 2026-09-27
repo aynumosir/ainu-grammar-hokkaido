@@ -129,8 +129,8 @@
 | a=keytumu kasi e=koinonno=an na | Kitahara2013 p.238, prayer1 and n.6 | Sunazawa's prayer; editor explicitly interprets a as respectful second person in context | Preserve editor's speaker-specific caveat and reconstructed transcription status; do not invent a universal prayer paradigm. |
 | pananpe an penanpe an hine siran pe ne ruwe ne hike | Hirosawa p.76 (13), via Tamura audio05-02:4 | Prose Pananpe/Penanpe opening | This, not the sea-god self-identification, is the opening example. |
 | atuy kor kamuy a=ne hine an=an ruwe ne | Hirosawa p.77 (16) | Sea-god's dialogue to Pananpe/Penanpe | Context is identity revelation within the story. Do not label first-person epic opening. |
-| … sekor hawean kor ran hawe as ruwe ne | DalCorso p.331 (273), KAY24-2:7 | Crow descent; auditory inference and narrator's traditional knowledge in the source analysis | Do not collapse both evidential expressions into repeated hearsay; retain source siglum. |
-| … Aysirkamuy e-pirma hawe ne nankor ruwe ne | DalCorso pp.332–333 (276) | Source discusses lower-certainty conjecture combined with reinforcing evidence | Sparse example; hawe ne is DIRECT in the author's labels here. No universal genre scope rule. |
+| … sekor hawean kor ran hawe as ruwe ne | DalCorso p.332 (273), KAY24-2:7; §8.5 begins p.331 | Crow descent; auditory inference and narrator's traditional knowledge in the source analysis | Do not collapse both evidential expressions into repeated hearsay; retain source siglum. |
+| … Aysirkamuy e-pirma hawe ne nankor ruwe ne | DalCorso p.333 (276) | Source discusses lower-certainty conjecture combined with reinforcing evidence | Sparse example; hawe ne is DIRECT in the author's labels here. No universal genre scope rule. |
 | Nayoro rera versus Nairo teera; corresponding rarak versus taarak | Alonso §2.2.1 (1)–(2) | Explicit named forms for lateral/correspondence discussion | Use the named lexical examples rather than silently repairing Table5's conflicting N abbreviation. |
 
 | Published quantitative observation | Source locator | Exact scope | Reuse limit |

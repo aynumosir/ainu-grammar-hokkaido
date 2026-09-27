@@ -94,7 +94,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	tamuramasashi2011: { sourceRole: 'prior-analysis', heldLocally: true },
 	asai1969: { dbSlug: '1969-asai-toru-ainugo-no-bunpo-ainugo-ishikari-hogen-bunpo-no-gai', sourceRole: 'prior-analysis', heldLocally: false },
 	chamberlain1887: { dbSlug: '2018-basil-hall-chamberlain-ainu-grammar', sourceRole: 'philological-witness', heldLocally: false },
-	simeon1968: { dbSlug: '1968-simeon-phonemics-morphology-hokkaido-ainu', sourceRole: 'prior-analysis', heldLocally: false },
+	simeon1968: { dbSlug: '1968-simeon-phonemics-morphology-hokkaido-ainu', sourceRole: 'prior-analysis', heldLocally: true, path: 'articles/1968_Simeon_The-Phonemics-and-Morphology-of-Hokkaido-Ainu.pdf' },
 
 	// Sakhalin / contrast grammars
 	pilsudski1912: { dbSlug: '1912-pilsudski', sourceRole: 'primary-data', heldLocally: true, path: 'books/1912_Pilsudski' },
@@ -110,16 +110,26 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 
 	// Pedagogical / standard / text-collection
 	kayano1987: { dbSlug: '1987-kayano', sourceRole: 'primary-data', heldLocally: true, path: 'books/1987_Kayano' },
-	utari1994: { sourceRole: 'primary-data', heldLocally: true, path: 'books/1994_HokkaidoUtariKyokai' },
+	utari1994: { sourceRole: 'primary-data', heldLocally: false },
+	ginnoshizukund: {
+		sourceRole: 'primary-data',
+		heldLocally: true,
+		path: 'books/1994_HokkaidoUtariKyokai/北海道ウタリ協会『アコㇿイタㇰ：テキストアイヌ語会話』.ocr/pdftotext/all.txt'
+	},
 	ijas2023: { sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2023_Ijas' },
 	aynucorporadiscord: { sourceRole: 'prior-analysis', heldLocally: true, path: '../ainu-discord-archive/knowledge' },
 	nakagawatexts2000: { sourceRole: 'primary-data', heldLocally: true },
+	nakagawa2025: {
+		sourceRole: 'primary-data',
+		heldLocally: true,
+		path: 'articles/2025_中川裕_アイヌ口承文芸テキスト集24：白沢ナベ口述：ウエペケㇾ パナンペ・ペナンペ魚釣り.ocr/pdftotext/all.txt'
+	},
 	takahashi2014texts: { dbSlug: '2014-yasushige-takahashi-ainugo-tokachi-hogen-reibunshu', sourceRole: 'primary-data', heldLocally: true },
 
 	// Dictionaries & lexica
 	nakagawa1995: { dbSlug: '1995-nakagawa-hiroshi-ainugo-chitose-hogen-jiten-ainu-japanese-dictionar', sourceRole: 'primary-data', heldLocally: false },
 	kayano1996: { dbSlug: '1996-kayano-kayanos-ainu-dictionary', sourceRole: 'primary-data', heldLocally: false },
-	hattori1964: { sourceRole: 'primary-data', heldLocally: false },
+	hattori1964: { sourceRole: 'primary-data', heldLocally: true, path: 'books/1964_Hattori_HogenJiten/服部四郎編『アイヌ語方言辞典』.pdf' },
 	chiri1953: { sourceRole: 'primary-data', heldLocally: false },
 	batchelor1897: { dbSlug: 'ainu-bible-batchelor-translation', sourceRole: 'philological-witness', heldLocally: false },
 	batchelor1903: { sourceRole: 'philological-witness', heldLocally: false },

@@ -2,6 +2,12 @@ import json,re
 from pathlib import Path
 p=Path('toc-final.json');d=json.loads(p.read_text());toc=Path('src/lib/grammar/toc.ts');ts=toc.read_text()
 changes={
+157: ('Sakhalin Final Consonants and Vowel Length', 'Final-stop correspondences, suffix alternations, added vowels after r, and the competing histories of length and accent.'),
+158: ('Internal Reconstruction and Grammaticalization', 'Proposed lexical sources of grammatical forms, the expansion of possessive kor, person and nominalization histories, and limits of segmentation.'),
+159: ('Dialect Classification and Dialectometry', 'The distinct survey samples, lexical similarity measures, regional groupings, and limits of recent quantitative classifications.'),
+160: ('Hokkaido Dialect Variation in Sound and Grammar', 'Accent systems, lexical sound correspondences, person and verbal number, and regional connective and aspectual forms.'),
+161: ('Lexical Geography and Survey History', 'Overlapping distributions of mouth terms, interrogatives, and kinship vocabulary, with competing histories and changing survey coverage.'),
+162: ('Sakhalin and Northern Kuril Comparisons', 'Documentary scope, Sakhalin sound and grammatical contrasts, possession, number, person, numerals, and Northern Kuril evidence.'),
 151: ('Sakehe, Refrains, and Verse Structure', 'Refrain placement and meaning, changing voices, syllable counts, and the metrical patterns reported for named performances.'),
 152: ('Parallelism, Couplets, and Paired Expressions', 'Paired numbers, contrasting words, repeated structures, and their use in prose as well as verse.'),
 153: ('Poetic and Elevated Language', 'Special vocabulary, metrical material, applicative phrasing, and variation within elevated registers.'),
