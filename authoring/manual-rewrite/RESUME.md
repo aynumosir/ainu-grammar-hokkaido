@@ -9,7 +9,7 @@ All 178 original grammar chapters have been rewritten directly from the Knowledg
 - Task worktree: ../worktrees/ainu-grammar-hokkaido-manual-rewrite, relative to the original checkout. Preserve unrelated changes in the original checkout.
 - PR #46 was merged and deployed from the main commit above. PR #47 completes chapters 139–178, including the earlier saved drafts, metadata, source identities, glossary, and indexes.
 - No new merge or deployment is authorized. The completed rewrite awaits the PR workflow; no chapter remains to draft.
-- CodeRabbit skipped the draft PR. Its ready-for-review result is recorded in the PR; independent source, editorial, and technical reviews remain the substantive review record.
+- CodeRabbit completed its ready-for-review pass. Verified markup, citation punctuation, cross-reference scope, and parser-diagnostic findings were corrected. Its dialect comment led to a direct dictionary provenance check; the suggested transitivity gloss was not adopted because the Chitose evidence does not establish it. Independent source, editorial, and technical reviews are complete.
 
 ## Verification
 
@@ -17,7 +17,7 @@ The complete production build passes. Svelte checking reports 0 errors and 18 ex
 
 Attestation validation reports 0 errors and 1,283 warnings across 140 chapters. These cache misses are not new attestations and do not by themselves invalidate the cited published examples. Do not invent spellings or weaken the validator to eliminate the warning backlog.
 
-Built sitemap integration passes: all 182 URLs return 200. Apparatus tests pass: 5 tests, 206 assertions. Freshness checks pass. The generated data contain 202 registered references, 389 displayed example occurrences, 779 whole example tokens, and 1,177 chapter/section topic entries. Example counts are not corpus frequencies; source groups can overlap, and missing dialect metadata remains distinct from HK.
+Built sitemap integration passes: all 182 URLs return 200. Apparatus tests pass: 5 tests, 207 assertions. Freshness checks pass. The generated data contain 202 registered references, 389 displayed example occurrences, 779 whole example tokens, and 1,177 chapter/section topic entries. Example counts are not corpus frequencies; source groups can overlap, and missing dialect metadata remains distinct from HK.
 
 ## Editorial decisions to preserve
 

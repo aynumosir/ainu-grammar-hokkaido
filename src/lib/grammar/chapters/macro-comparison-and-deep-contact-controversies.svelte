@@ -24,8 +24,10 @@
 	<p>
 		Shibatani reviews proposals connecting Ainu with Japanese, Altaic, and other languages. His
 		account says Chamberlain rejected a Japanese or Altaic affinity. It also reports differing
-		assessments of Patrie's 1982 reconstruction, with Miller more encouraging and Street
-		unfavorable. <Ref k="shibatani1990" p="5–7" />.
+		assessments of Patrie's 1982 reconstruction, with Miller more encouraging and Street unfavorable <Ref
+			k="shibatani1990"
+			p="5–7"
+		/>.
 	</p>
 	<p>
 		Bugaeva regards southern connections as plausible while withholding endorsement of the

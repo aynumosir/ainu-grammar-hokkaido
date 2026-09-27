@@ -50,10 +50,10 @@
 		m="tu imeru kur re imeru kur kotuytuyke"
 		g="two lightning reflection three lightning reflection cross"
 		tr="Two flashes of light, three flashes of light pass across."
-		cite="endo2022:§4"
-		dial="HK"
-		place="Example 16, citing Nakagawa 1995:45"
-		note="Kur is the reflected light or shade in the source's image; it is not the homophonous word for a person. The consulted passage does not specify a dialect."
+		cite="endo2022:§4, example 16; nakagawa1995:45, s.v. imeru"
+		dial="CHI"
+		place="Shirasawa Nabe, recording N8709011.KY"
+		note="Endō excerpts a longer formula in the Chitose dictionary, omitting its initial tu uturu. Kur denotes reflected light or shade here."
 	/>
 	<p>
 		Nakagawa also gives the more elevated

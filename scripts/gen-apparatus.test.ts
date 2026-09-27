@@ -143,6 +143,7 @@ test('subject lookup keeps chapter titles and two same-titled sections', () => {
 
 test('unsupported dynamic metadata and invalid references fail instead of disappearing', () => {
 	for (const [source, error] of [
+		['<S t="Unclosed">', 'fixture:'],
 		['<Ex m={variable} constructed />', 'static string'],
 		['<Ex m="an" {...metadata} constructed />', 'spread attributes'],
 		['<Ex m="an" constructed="false" />', 'constructed must be a boolean'],

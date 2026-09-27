@@ -138,8 +138,8 @@ export function buildApparatus(
 		addSubject(chapter.title, { chapter: chapter.slug, section: null });
 		let number = 0;
 		const ids = new Set<string>();
-		const tree = parse(chapter.source, { modern: true });
 		try {
+			const tree = parse(chapter.source, { modern: true });
 			visitTemplate(tree.fragment, (node) => {
 				const get = (name: string) => stringAttribute(node, name, chapter.slug);
 				const id = get('id');

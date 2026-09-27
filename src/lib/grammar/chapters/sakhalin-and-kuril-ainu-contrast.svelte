@@ -34,8 +34,10 @@
 	</p>
 	<p>
 		Common syllable-final correspondences include <i>p, t, k &gt; h</i>, with <i>s</i> after
-		<i>i</i>; <i>m &gt; n</i>; and an added vowel after <i>r</i>. Their geographic and morphological
-		conditions are described in <Xr ch="final-h-history-and-sakhalin-length-reflex" />. Initial
+		<i>i</i>; <i>m &gt; n</i>; and an added vowel after <i>r</i>. The conditions on the stop and
+		final-<i>r</i> correspondences are described in <Xr
+			ch="final-h-history-and-sakhalin-length-reflex"
+		/>. Initial
 		<i>r/t</i>
 		also varies: ‘white’ appears as Hokkaido
 		<i lang="ain-Latn">retar</i>, southern Sakhalin

@@ -6,8 +6,8 @@
 	<p>
 		These openings illustrate different person forms used by singular narrators. The first comes
 		from Satō's edition of an Abuta
-		<i lang="ain-Latn">yukar</i> told by 遠島タネランケ and recorded by Sarashina Genzō. Its speaker
-		is the land-making deity,
+		<i lang="ain-Latn">yukar</i> told by <span lang="ja">遠島タネランケ</span> and recorded by
+		Sarashina Genzō. Its speaker is the land-making deity,
 		<i lang="ain-Latn">mosirkarkamuy</i>, an unusual protagonist compared with the familiar
 		<i lang="ain-Latn">poyyaunpe</i>
 		hero <Ref k="sato2009yukar" p="§3 introduction; 10, §3.1" />. The second is from Chiri Yukie's
