@@ -572,7 +572,7 @@ export const bibliography: Record<string, BibEntry> = {
 		year: '2000',
 		title: 'アイヌ口承文芸テキスト集 1–24',
 		titleTr: 'A collection of Ainu oral-literature texts, vols. 1–24 (2000–2025)',
-		note: 'Annotated Saru/Chitose uwepeker and kamuy yukar narrated by Shirasawa Nabe and others; the largest annotated Hokkaido narrative corpus. Cite per-volume for examples.',
+		note: 'Series of annotated Ainu oral-literature editions published from 2000 to 2025.',
 		lang: 'ja'
 	},
 	nakagawa2025: {
@@ -591,7 +591,7 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	takahashi2014texts: {
 		region: 'hokkaido',
-		author: 'Takahashi Yasui 髙橋靖以',
+		author: 'Takahashi Yasushige 髙橋靖以',
 		citeAuthor: 'Takahashi',
 		year: '2014',
 		title: 'アイヌ語十勝方言例文集',
@@ -1371,7 +1371,7 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	takahashi2013: {
 		region: 'hokkaido',
-		author: 'Takahashi Yasui 髙橋靖以',
+		author: 'Takahashi Yasushige 髙橋靖以',
 		citeAuthor: 'Takahashi',
 		year: '2013',
 		title: '十勝方言における証拠性と叙述類型',
@@ -1380,7 +1380,7 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	takahashi2022: {
 		region: 'general',
-		author: 'Takahashi Yasui 髙橋靖以',
+		author: 'Takahashi Yasushige 髙橋靖以',
 		citeAuthor: 'Takahashi',
 		year: '2022',
 		title: 'Aspect and evidentiality',
@@ -1392,18 +1392,21 @@ export const bibliography: Record<string, BibEntry> = {
 	},
 	hirosawa2026: {
 		region: 'hokkaido',
-		author: 'Hirosawa 廣澤',
+		author: 'Hirosawa Shintaro 廣澤慎太郎',
 		citeAuthor: 'Hirosawa',
 		year: '2026',
-		title: '証拠性表現の用法——ruwe ne を中心に',
-		titleTr: 'The uses of evidential expressions, centred on ruwe ne',
+		title: 'アイヌ語における証拠性表現の用法について：ruwe neの用法を中心に',
+		titleTr: 'The uses of evidential expressions in Ainu, focusing on ruwe ne',
+		container: 'アイヌ・先住民研究 6',
+		pages: '63–94',
+		url: 'https://hdl.handle.net/2115/99070',
 		lang: 'ja'
 	},
 
 	// ───────────────────────── Negation ─────────────────────────
 	takahashi2016: {
 		region: 'hokkaido',
-		author: 'Takahashi Yasui 髙橋靖以',
+		author: 'Takahashi Yasushige 髙橋靖以',
 		citeAuthor: 'Takahashi',
 		year: '2016',
 		title: '十勝方言の否定構造について',
@@ -1577,7 +1580,7 @@ export const bibliography: Record<string, BibEntry> = {
 	// ───────────────────────── Demonstratives & deixis ─────────────────────────
 	takahashi2011: {
 		region: 'hokkaido',
-		author: 'Takahashi Yasui 髙橋靖以',
+		author: 'Takahashi Yasushige 髙橋靖以',
 		citeAuthor: 'Takahashi',
 		year: '2011',
 		title: '十勝方言の指示表現',
@@ -2021,8 +2024,7 @@ export const bibliography: Record<string, BibEntry> = {
 		publisher: 'Max Planck Institute for Evolutionary Anthropology & Leipzig University',
 		place: 'Leipzig',
 		url: 'https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf',
-		note: 'Revised edition (original 2004); the standard reference for interlinear morpheme glossing',
-		reported: true
+		note: 'Revised February 2008; last changed 31 May 2015.'
 	},
 	mithun1984: {
 		region: 'general',

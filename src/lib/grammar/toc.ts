@@ -940,28 +940,28 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "japanese-loanwords-in-ainu",
-				title: "Japanese Loanwords and Their Phonological Adaptation",
-				summary: "Lexical borrowing from Japanese — chronological strata, semantic domains, and numeral borrowing over the vigesimal base — together with the phonological nativization of loans (coda/cluster repair, segment mapping, accent assignment) as live evidence for the synchronic phonotactic grammar."
+				title: "Japanese Loans and Their Adaptation",
+				summary: "Documented borrowings, historical donor pronunciation, uncertain details, proposed dating, and continued lexical adaptation."
 			},
 			{
 				slug: "ainu-loanwords-and-toponymy-in-japanese",
-				title: "Ainu Loanwords and Toponymy in Japanese",
-				summary: "Ainu's imprint on Japanese — animal/fish/plant loanwords in standard and northern-dialect Japanese, and the Ainu (substrate) toponymy of Hokkaido and northern Honshu."
+				title: "Ainu Loans and Place Names in Japanese",
+				summary: "Borrowed words, regional river terminology, documented place-name explanations, and qualified plant-name reconstructions."
 			},
 			{
 				slug: "northern-contact-nivkh-tungusic-manchu",
-				title: "Northern Contact: Nivkh, Tungusic, and Manchu",
-				summary: "The Sakhalin/Amur contact zone — Nivkh and Tungusic (Uilta/Orok, Nanai)/Manchu lexical and structural contact, with Sakhalin Ainu as the principal locus."
+				title: "Northern Contact and Borrowing",
+				summary: "Sakhalin contact networks, item-specific loan directions, Japanese and continental routes, and possible grammatical convergence."
 			},
 			{
 				slug: "macro-comparison-and-deep-contact-controversies",
-				title: "Macro-Comparison and Deep-Contact Controversies",
-				summary: "A critical, method-driven survey of proposed external genetic relationships and deep-contact scenarios for Ainu, framed by borrowing-scale and areal typology."
+				title: "Distant Comparison and Early Contact",
+				summary: "External-affiliation proposals, disputed early Japanese contact, and the evidential limits of archaeological and linguistic histories."
 			},
 			{
 				slug: "lexical-semantic-fields-synopsis",
-				title: "Synopsis of Lexical-Semantic Fields",
-				summary: "A field-by-field synopsis of the Ainu lexicon — its semantic organization, the classified-dictionary tradition, and culturally salient vocabulary domains."
+				title: "Lexical Fields as Grammatical Evidence",
+				summary: "Plant, body-part, and weather expressions illustrating possession, number, predication, and regional lexical meanings."
 			}
 		]
 	},
@@ -970,28 +970,28 @@ export const parts: Part[] = [
 		chapters: [
 			{
 				slug: "uwepeker-prose-tale",
-				title: "A Glossed Uwepeker (Prose Folktale)",
-				summary: "A complete uwepeker prose folktale presented in four-tier interlinear gloss with running grammatical commentary cross-referenced clause-by-clause to the analytic chapters."
+				title: "A Glossed Passage from a Chitose Prose Tale",
+				summary: "A continuous advice sentence from Shirasawa Nabe’s 1993 Pananpe–Penanpe performance, with four tiers and generic-person analysis."
 			},
 			{
 				slug: "heroic-and-divine-verse",
-				title: "Glossed Verse: A Yukar Heroic Epic and a Kamuy Yukar God-Song",
-				summary: "Two glossed verse texts — a yukar heroic-epic passage and a kamuy yukar divine self-narration with sakehe refrain — set side by side with comparative commentary on meter, refrain, and the first-person/logophoric narrator."
+				title: "Glossed Openings from Abuta and Horobetsu Verse",
+				summary: "Four-tier excerpts comparing fourth-person and exclusive-plural narration, with source line boundaries and metrical material explained."
 			},
 			{
 				slug: "inonno-itak-ritual-prayer",
-				title: "A Glossed Inonno-itak (Ritual Prayer)",
-				summary: "A ritual prayer (inonno-itak) text glossed and annotated, showcasing the elevated/honorific register, formulaic parallelism, and direct benedictive address to the kamuy."
+				title: "A Glossed Ritual Prayer Opening",
+				summary: "An invocation and worship statement from Motozō Nabesawa’s lower Saru prayer, with person, applicatives, and the formal ending analyzed."
 			},
 			{
 				slug: "everyday-conversation-text",
-				title: "A Glossed Everyday-Conversation Text",
-				summary: "A passage of recorded everyday conversation glossed and annotated to illustrate spontaneous spoken syntax, sentence-final particles, and connected-speech reduction."
+				title: "A Glossed Asahikawa Teaching Conversation",
+				summary: "A wellbeing and water-request exchange attributed to Sugimura Fusa and Kawamura Tome in the provisional Akor Itak study transcript."
 			},
 			{
 				slug: "sakhalin-contrast-text",
-				title: "A Glossed Sakhalin (Enciw) Text with Hokkaido Contrast",
-				summary: "A Sakhalin Ainu text glossed and annotated against Hokkaido norms, foregrounding phonemic vowel length, the final-h reflex, and divergent person, number, and negation morphology."
+				title: "A Glossed Sakhalin Teaching Dialogue",
+				summary: "Murasaki’s bowl dialogue with four tiers, contrasting possessive constructions and the use of final particles in statements and questions."
 			}
 		]
 	},
@@ -1001,32 +1001,32 @@ export const parts: Part[] = [
 			{
 				slug: "glossary-grammatical-terms",
 				title: "Glossary of Grammatical Terms",
-				summary: "An alphabetical, validated glossary of the grammatical terminology used throughout the grammar, with trilingual equivalents and cross-references to the chapters that define each term."
+				summary: "English definitions and chapter links for argument structure, person, word classes, derivation, time, evidence, sound structure, and change."
 			},
 			{
 				slug: "abbreviations-glossing-symbols",
-				title: "Abbreviations and Glossing-Symbol Conventions",
-				summary: "The tables of interlinear-gloss abbreviations, morpheme-boundary symbols, and notation conventions used in the grammar, with a concordance reconciling divergent conventions across the source literature."
+				title: "Abbreviations and Glossing Conventions",
+				summary: "The example tiers, boundary notation, source-label differences, current gloss inventory, and dialect tags."
 			},
 			{
 				slug: "consolidated-references-bibliography",
-				title: "Consolidated References and Bibliography",
-				summary: "The unified, type-classified bibliography of all grammars, articles, text editions, and dictionaries consulted, with a critical apparatus flagging key works not directly available."
+				title: "References and Bibliography",
+				summary: "Primary materials, grammatical studies, and comparative works, with original titles, publication details, and intermediary-source conventions."
 			},
 			{
 				slug: "index-of-subjects",
-				title: "Index of Subjects",
-				summary: "An alphabetical topic and concept index keyed to chapter and section, with a parallel typological-feature sub-index for cross-linguistic look-up."
+				title: "Index of Chapter and Section Topics",
+				summary: "Alphabetical navigation by chapter and section title, with links to the relevant discussions."
 			},
 			{
 				slug: "index-of-grammatical-morphemes",
-				title: "Index of Grammatical Morphemes and Affixes",
-				summary: "An exhaustive finding list of every bound morpheme, clitic, and grammatical particle, organized by form with gloss, class, dialect variants, and section reference, doubling as a reverse-lookup grammar dictionary."
+				title: "Index of Grammatical Forms and Constructions",
+				summary: "Selected person forms, nominal morphology, derived predicates, clause constructions, and discourse expressions linked to their analyses."
 			},
 			{
 				slug: "index-of-examples-sources-dialects",
-				title: "Index of Cited Examples, Source Texts, and Dialects",
-				summary: "A citation index of every quoted example by source edition and locus, organized further by genre, narrator/transcriber, and dialect, cross-referenced to the glossed-texts corpus."
+				title: "Index of Examples by Source and Dialect",
+				summary: "Displayed example occurrences grouped by cited source and supplied dialect label, with provenance and construction status kept distinct."
 			}
 		]
 	}

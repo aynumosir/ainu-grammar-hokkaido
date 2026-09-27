@@ -18,19 +18,22 @@
 
 	<h2>Interlinear glossing</h2>
 	<p>
-		Interlinear examples follow the Leipzig Glossing Rules. In the morphemic line, a hyphen
-		<i>-</i> separates affixes from stems and an equals sign <i>=</i> marks clitic boundaries. In
-		the gloss line, grammatical categories appear in small capitals and lexical glosses in lower
-		case; a period joins several gloss elements that correspond to a single unsegmentable morpheme
-		(as in <i>an</i> ‘exist.<abbr title="singular">SG</abbr>’). Every Ainu word and morpheme in an
-		example is linked to an external dictionary, and every example carries its source and a dialect
-		tag.
+		Examples align an Ainu expression with grammatical glosses and a translation. A hyphen separates
+		analyzed morphemes. An equals sign separates person markers in the grammar's normalized
+		notation; it does not settle whether they are affixes or clitics. A period joins gloss elements
+		corresponding to one Ainu element, as in <code>exist.SG</code> or <code>elder.sister</code>.
 	</p>
 	<p>
-		An asterisk <i>*</i> marks an ungrammatical form; a preceding question mark marks a form of
-		doubtful acceptability. Examples labelled <em>constructed example</em> are illustrations assembled
-		for expository purposes and are not attested utterances; all other examples are attested in the cited
-		source.
+		Source spellings can retain different conventions. Citations and notes identify published
+		examples and their provenance; constructed illustrations are labelled. Dialect tags appear where
+		supplied, and an absent tag leaves the dialect unspecified. Some example words link to an
+		external dictionary for lookup.
+	</p>
+	<p>
+		An asterisk marks an unacceptable form in grammatical discussion or a reconstructed form in
+		historical discussion. A question mark indicates a doubtful judgment or interpretation. See the
+		<a href="/grammar/abbreviations-glossing-symbols">full notation guide</a>
+		for the tier structure and differences between source labels.
 	</p>
 
 	<h2>Gloss abbreviations</h2>
@@ -70,13 +73,11 @@
 			representations appear between slashes and phonetic ones in square brackets.
 		</li>
 		<li>
-			Japanese names and titles are given in the original script at first mention, e.g. <span
-				lang="ja">北海道</span
-			> <i>Hokkaidō</i>.
+			In a combined person gloss, <code>&gt;</code> runs from A to O, as in <code>1.A&gt;2.O</code>.
 		</li>
 		<li>
-			Section references of the form §4.3 point within the present grammar; chapter titles are
-			linked in the running text.
+			A section number attached to a source citation locates that source's section. Links to
+			chapters and sections of this grammar open the corresponding discussion.
 		</li>
 	</ul>
 

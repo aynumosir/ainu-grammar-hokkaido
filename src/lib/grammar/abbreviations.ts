@@ -113,6 +113,7 @@ export const abbreviations: Record<string, string> = {
  */
 export const dialectLabels: Record<string, string> = {
 	HK: 'Hokkaido (dialect not further specified)',
+	ABU: 'Abuta',
 	SAR: 'Saru',
 	CHI: 'Chitose',
 	ISH: 'Ishikari',

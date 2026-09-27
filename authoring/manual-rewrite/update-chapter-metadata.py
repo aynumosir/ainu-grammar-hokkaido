@@ -2,6 +2,22 @@ import json,re
 from pathlib import Path
 p=Path('toc-final.json');d=json.loads(p.read_text());toc=Path('src/lib/grammar/toc.ts');ts=toc.read_text()
 changes={
+169: ('Glossed Openings from Abuta and Horobetsu Verse', 'Four-tier excerpts comparing fourth-person and exclusive-plural narration, with source line boundaries and metrical material explained.'),
+170: ('A Glossed Ritual Prayer Opening', 'An invocation and worship statement from Motozō Nabesawa’s lower Saru prayer, with person, applicatives, and the formal ending analyzed.'),
+171: ('A Glossed Asahikawa Teaching Conversation', 'A wellbeing and water-request exchange attributed to Sugimura Fusa and Kawamura Tome in the provisional Akor Itak study transcript.'),
+172: ('A Glossed Sakhalin Teaching Dialogue', 'Murasaki’s bowl dialogue with four tiers, contrasting possessive constructions and the use of final particles in statements and questions.'),
+173: ('Glossary of Grammatical Terms', 'English definitions and chapter links for argument structure, person, word classes, derivation, time, evidence, sound structure, and change.'),
+174: ('Abbreviations and Glossing Conventions', 'The example tiers, boundary notation, source-label differences, current gloss inventory, and dialect tags.'),
+175: ('References and Bibliography', 'Primary materials, grammatical studies, and comparative works, with original titles, publication details, and intermediary-source conventions.'),
+176: ('Index of Chapter and Section Topics', 'Alphabetical navigation by chapter and section title, with links to the relevant discussions.'),
+177: ('Index of Grammatical Forms and Constructions', 'Selected person forms, nominal morphology, derived predicates, clause constructions, and discourse expressions linked to their analyses.'),
+178: ('Index of Examples by Source and Dialect', 'Displayed example occurrences grouped by cited source and supplied dialect label, with provenance and construction status kept distinct.'),
+163: ('Japanese Loans and Their Adaptation', 'Documented borrowings, historical donor pronunciation, uncertain details, proposed dating, and continued lexical adaptation.'),
+164: ('Ainu Loans and Place Names in Japanese', 'Borrowed words, regional river terminology, documented place-name explanations, and qualified plant-name reconstructions.'),
+165: ('Northern Contact and Borrowing', 'Sakhalin contact networks, item-specific loan directions, Japanese and continental routes, and possible grammatical convergence.'),
+166: ('Distant Comparison and Early Contact', 'External-affiliation proposals, disputed early Japanese contact, and the evidential limits of archaeological and linguistic histories.'),
+167: ('Lexical Fields as Grammatical Evidence', 'Plant, body-part, and weather expressions illustrating possession, number, predication, and regional lexical meanings.'),
+168: ('A Glossed Passage from a Chitose Prose Tale', 'A continuous advice sentence from Shirasawa Nabe’s 1993 Pananpe–Penanpe performance, with four tiers and generic-person analysis.'),
 157: ('Sakhalin Final Consonants and Vowel Length', 'Final-stop correspondences, suffix alternations, added vowels after r, and the competing histories of length and accent.'),
 158: ('Internal Reconstruction and Grammaticalization', 'Proposed lexical sources of grammatical forms, the expansion of possessive kor, person and nominalization histories, and limits of segmentation.'),
 159: ('Dialect Classification and Dialectometry', 'The distinct survey samples, lexical similarity measures, regional groupings, and limits of recent quantitative classifications.'),

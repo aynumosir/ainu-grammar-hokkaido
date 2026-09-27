@@ -1,51 +1,41 @@
-# Grammar rewrite continuation — 2026-09-27
+# Grammar rewrite completion — 2026-09-27
 
-The user resumed the rewrite after merging PR #46 and requesting its deployment. That deployment completed from main commit 760f33fab39a762af31f2b6126c0432df9a121e8, with production checks passing. The current task is to finish the remaining chapters; it does not include another merge or deployment.
+All 178 original grammar chapters have been rewritten directly from the Knowledge Base’s underlying publications. No external LLM writing pipeline or scripts/gen-grammar.ts was used. The primary author wrote chapter prose; three independent reviewers checked sources, editorial treatment, and technical integration. Their verified findings have been corrected.
 
-## Scope and authorization
+## Delivery state
 
-All 178 original grammar chapters remain in scope. The primary author writes prose directly from the KB’s underlying primary sources. No external LLM generation pipeline or `scripts/gen-grammar.ts`. Independent agents review evidence and technical/editorial accuracy; they do not author chapter prose. The foundational matrices and editorial treatment were approved on 2026-09-26; do not ask for sign-off again. Apply AUTHORING.md and de-ai-style. Preserve dialect differences, provenance, competing analyses and source uncertainty.
+- Continuation PR: https://github.com/aynumosir/ainu-grammar-hokkaido/pull/47
+- Branch: docs/manual-grammar-rewrite-final, based on main 760f33fab39a762af31f2b6126c0432df9a121e8.
+- Task worktree: ../worktrees/ainu-grammar-hokkaido-manual-rewrite, relative to the original checkout. Preserve unrelated changes in the original checkout.
+- PR #46 was merged and deployed from the main commit above. PR #47 completes chapters 139–178, including the earlier saved drafts, metadata, source identities, glossary, and indexes.
+- No new merge or deployment is authorized. The completed rewrite awaits the PR workflow; no chapter remains to draft.
+- CodeRabbit skipped the draft PR. Its ready-for-review result is recorded in the PR; independent source, editorial, and technical reviews remain the substantive review record.
 
-The user’s Satō 2021 quasi-incorporation emphasis has been incorporated in 52/90 with bridges in 47/56/104/116. Preserve its distinction from other pseudo-incorporation proposals.
+## Verification
 
-## Current checkout and progress
+The complete production build passes. Svelte checking reports 0 errors and 18 existing warnings in 4 files. KB validation reports 0 errors and 0 warnings: 192 sources, 84 assets, 8,199 statements, 7,455 claims, 202 narrative units, 13,807 sentences, 1,610 topics, and 24 doculects.
 
-- Task worktree: `../worktrees/ainu-grammar-hokkaido-manual-rewrite`, relative to the original checkout. Preserve unrelated changes in the original checkout.
-- New continuation branch: `docs/manual-grammar-rewrite-final`, based on merged `origin/main` 760f33f. The former `docs/manual-grammar-rewrite` branch and PR #46 are complete.
-- Chapters 1–162 have replacement prose and independent source review. **162 complete; 16 remaining. Chapters 163–167 have local drafts under source review. Chapter 168 is next to draft.** Evidence matrices through 178 already exist.
-- Resumed work fixed 143’s teskar gloss (`1SG=inform`) and restored cautious recollective yo coverage; rewrote 144–150; completed metadata and formatting for 139–150. The source-specific question patterns, register distinctions, mimetic morphology, genre names and quotation alternatives have passed review.
-- Review corrections applied:145 tomo=middle.POSS;147 piye=seed.POSS, asama=bottom.POSS;148 assent e versus call-response ho confirmed by scan;149 legend/lore and eastern heroic names restored from Endō.
-- Metadata helper: `python3 authoring/manual-rewrite/update-chapter-metadata.py`, run at repository root. Dictionary now through 162. It extracts sections/references and updates `toc-final.json` and `src/lib/grammar/toc.ts`. Add each new batch's titles/summaries; do not format the whole TOC.
-- Prettier config: `authoring/manual-rewrite/prettier.json`; use explicit chapter file lists, `--ignore-path /dev/null --plugin prettier-plugin-svelte`.
+Attestation validation reports 0 errors and 1,283 warnings across 140 chapters. These cache misses are not new attestations and do not by themselves invalidate the cited published examples. Do not invent spellings or weaken the validator to eliminate the warning backlog.
 
-- Completed151–162: refrain and metre, parallelism, elevated register, ritual language, narrative evidentiality, and attributed historical reconstructions. New Kitahara2013 prayer edition is registered; METR marks metrical material.
+Built sitemap integration passes: all 182 URLs return 200. Apparatus tests pass: 5 tests, 206 assertions. Freshness checks pass. The generated data contain 202 registered references, 389 displayed example occurrences, 779 whole example tokens, and 1,177 chapter/section topic entries. Example counts are not corpus frequencies; source groups can overlap, and missing dialect metadata remains distinct from HK.
 
-## Verification and reviews
+## Editorial decisions to preserve
 
-Build through 162 passed. Svelte check found 0 errors and 18 existing warnings in 4 files. The built sitemap check passed with 182 URLs returning 200. Attestation validation found 0 errors and 1,358 warnings across 140 chapters. KB validation after the Satō2025a registry correction passed:0 errors and 0 warnings; 192 sources, 84 assets, 8,199 statements, 7,455 claims, 202 narrative units, 13,807 sentences, 1,610 topics, and 24 doculects. The exact latest results belong in the continuation PR body.
+The user approved the foundational matrices and treatment on 2026-09-26. Preserve documented dialect differences, source provenance, competing analyses, and uncertainty. Do not request the same approval again. AUTHORING.md and de-ai-style remain applicable.
 
-Independent source review is complete through162. review_evidence is preparing166–168; review_editorial is reviewing157 and the apparatus generator boundary; review_technical implemented the generator boundary and source metadata corrections. Chapters157–165 have prepared primary-source notes. No prose written by reviewers. CodeRabbit skipped former draft PR #46; obtain independent final review and the available PR review when the full continuation is ready.
+Satō 2021 quasi-incorporation is developed in chapters 52/90, with bridges in 47/56/104/116 and the glossary. Preserve the lexical-unit/morphological-word distinction, the hypothetical extension to locative noun plus case particle, and the comparison with Tamura’s 連他動詞.
 
-Checks: `bun run build`, `bun run check`, `bun run attest`, `bun run kb:validate`, and `bun scripts/test-sitemap-built.mjs` after build. Build regenerates deterministic apparatus/search/KB output. The reviewed gen-apparatus boundary fix now writes data/apparatus.json only; manual175–178 chapters must consume it. Five generator tests and independent review passed. Restore only transient tracked QA reports before commit: `.grammar-build/qa/audit-report.json`, `.grammar-build/qa/attestation-report.json`. No dev server is needed.
+The reading chapters distinguish source text from added segmentation, gloss, and English translation. Chapter 168 uses one complete short advice sentence from Nakagawa2025 Text3, not the full protected performance; the official complete edition is linked. The internal chapter-168-text3-line-check.md records the reuse decision and checked annotations without retaining the whole transcription. Do not restore the former full-tale promise or reproduce the entire modern edition without appropriate rights.
 
-## Source access and next source notes
+Chapter 171 cites ginnoshizukund, the provisional Gin no Shizuku study transcript, with its printed Asahikawa/Sugimura Fusa/Kawamura Tome attribution. utari1994 remains the distinct original book. Chapter 172 identifies Murasaki’s edited teaching dialogue and does not assign its A/B turns to named elder recordings.
 
-Read each `kb/assets/<key>.json` root/dir. Missing/books roots resolve through `../../ainu-grammar/`; kb roots through `../../ainu-grammar-hokkaido/kb/`. Handbook source pages: `../../ainu-grammar-hokkaido/kb/imports/handbook-2022/pages/`. Read primary passages, using OCR only as a finding aid; check ambiguous text against scans. Source examples retain intermediaries and dialect labels. Never expose local home usernames; use relative paths, non-login shells and output redaction.
+## Maintenance
 
-Nakagawa 2024 offsets: p=leaf+3 early; +4 from about359; +6 from around525. Satō 2008 p=leaf−17; leaf 297 quarantined. Use Xr prop `s`, not `sec`; look up actual slugs. Gloss atoms are registered in abbreviations.ts; `4.SG`, not4SG. EVID normally for grammatical ruwe; aspect a’s competing analyses are explained in 111.
+- The metadata helper authoring/manual-rewrite/update-chapter-metadata.py now covers all 178 chapters. It updates chapter titles/summaries, section lists and reference metadata. It does not write prose.
+- scripts/gen-apparatus.ts generates only src/lib/grammar/data/apparatus.json. It must never overwrite chapter files. Chapters 175–178 retain authored prose; 177 is a curated index of selected forms and constructions, not an automatic morpheme segmentation of example words.
+- Use the local Prettier configuration with explicit file lists. Do not reformat the entire TOC or citation registry incidentally.
+- Relevant checks: bun run build; bun run check; bun run attest; bun run kb:validate; bun scripts/test-sitemap-built.mjs; bun test scripts/gen-apparatus.test.ts; bun scripts/gen-apparatus.ts --check.
+- Restore only transient tracked QA reports before committing: .grammar-build/qa/audit-report.json and .grammar-build/qa/attestation-report.json.
+- No task dev server is running.
 
-151–153: existing matrix is source-reviewed. Nakagawa579(1246) scan confirms CICI sequence with5/5/7 syllables including refrain, not all five. Tamura 1996 sákehe includes whole performance manner. Nakagawa590,597 scans checked. Satō 2008 rhetoric is§34.4p264. Okuda, Handbook ch. 11 runs pages 0068–0072; named sample counts are author-reported, not new analysis. Preserve four-syllable initial-accent exceptions.
-
-154–156: existing matrix plus reviewer notes. Kitahara 2013 Monbetsu City prayers differ from lower-Saru Monbetsu sources; a=keytumu honorific interpretation is speaker-specific (p238n6), and apehucikamuy occurs, disproving the old ban. Hirosawa 2026 ex13p76 is the narrative opening, ex16p77 the sea god’s dialogue; original is Tamura1988 Audio Materials5, not the encyclopedia article under the existing tamura1988 key. DalCorso p39 gives a rough exploratory genre comparison; Table4 is his mostly-prose selected corpus. Alonso’s RPA Table7 columns are *hd,*g,*s; preserve competing reconstruction accounts and internal count/prosody discrepancies.
-
-## Later work that must not be missed
-
-- Chapters 175–178: `scripts/gen-apparatus.ts` currently overwrites their article files, including introductions. Fix the generation boundary so hand-authored prose survives and only deterministic lookup data are generated, before rewriting those chapters.
-- Their matrices also flag whole-word entries mislabeled as morphemes, person-marker terminology, constructed examples mislabeled attested, absent dialect labels treated as Hokkaido, overlapping counts, same-author/year disambiguation, and witness/intermediary distinctions.
-- Remove reader-facing workflow notes from bibliography entries `endo2022`, `okuda2022`, and `shiraishitangiku2022`. Check stale holdings paths for Simeon1968 and Hattori1964 against the 175–178 matrix.
-- Chapter157: `ipere kut` is an esophagus, not a wooden spatula; check Tangiku’s `r` → `ro` discussion against the source.
-- Chapter159: Hattori1964’s original nine locations are Yakumo, Horobetsu, Saru, Asahikawa, Obihiro, Bihoro, Nayoro, Soya, and Raichishka. Kuril material from Torii1903 makes the tenth comparison; see the matrix’s source disagreement.
-- Chapter164: `rakko` and `shishamo` are supported; `sake/shake` etymology is uncertain.
-- Chapter165: Japanese `hasami` and Manchu `hasaha` require distinct borrowing discussions.
-- Chapter168 must include a complete four-tier uwepeker passage, not a stitched excerpt. Candidate: Nakagawa2025 Text3 pp.159–160, N9305231UP, Shirasawa Nabe, 1993-05-23, Pananpe/Penanpe story. Consult its matrix and primary source.
-- Ochiai2026 treats `*siwkorpe` (p.194) as a reconstruction and `sikerpe` (p.195) as opaque; preserve that distinction.
+Source matrices through 178 contain detailed locators and resolved disagreements. Read the underlying passages before changing an analysis. Satō2008 OCR leaf297 remains quarantined. Keep local home usernames private; use relative paths, non-login shells, and redacted output.

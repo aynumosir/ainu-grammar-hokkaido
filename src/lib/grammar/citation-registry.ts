@@ -206,7 +206,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	dalcorso2018: { sourceRole: 'prior-analysis', heldLocally: true },
 	takahashi2013: { sourceRole: 'prior-analysis', heldLocally: true },
 	takahashi2022: { dbSlug: '2022-yasushige-takahashi-18-aspect-and-evidentiality', sourceRole: 'prior-analysis', heldLocally: true, path: 'books/2022_Bugaeva' },
-	hirosawa2026: { sourceRole: 'prior-analysis', heldLocally: true },
+	hirosawa2026: { sourceRole: 'prior-analysis', heldLocally: true, path: '../ainu-grammar-hokkaido/kb/imports/ocr/hirosawa2026' },
 
 	// Negation
 	takahashi2016: { sourceRole: 'prior-analysis', heldLocally: true },
@@ -301,6 +301,7 @@ export const citationRegistry: Record<string, RegistryEntry> = {
 	nichols1986: { sourceRole: 'typological-framework', heldLocally: false },
 	givon1978: { sourceRole: 'typological-framework', heldLocally: false },
 	croft1991: { sourceRole: 'typological-framework', heldLocally: false },
+	// Original PDF consulted online; no holding in the local source corpus.
 	comrie2015: { sourceRole: 'typological-framework', heldLocally: false },
 
 	// Registry↔bibliography parity fixes (QA Phase 0b, audit-chapters registry-parity)
