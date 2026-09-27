@@ -18,11 +18,11 @@ def main():
     parser.add_argument('--download', action='store_true')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[2]
-    manifest = json.loads((root / 'kb/registries/research-2026.json').read_text())
+    manifest = json.loads((root / 'kb/registries/research-2026.json').read_text(encoding='utf-8'))
     assets = {
         asset['id']: asset
         for path in (root / 'kb/assets').glob('*.json')
-        for asset in [json.loads(path.read_text())]
+        for asset in [json.loads(path.read_text(encoding='utf-8'))]
     }
     restored = 0
     for record in manifest['records']:
@@ -43,8 +43,8 @@ def main():
             if 'asset' in entry:
                 asset = assets[entry['asset']]
                 result = subprocess.run(
-                    ['pdftotext', '-layout', str(pdf), '-'],
-                    check=True, capture_output=True, text=True
+                    ['pdftotext', '-enc', 'UTF-8', '-layout', str(pdf), '-'],
+                    check=True, capture_output=True, text=True, encoding='utf-8'
                 )
                 pages = result.stdout.split('\f')
                 if not pages[-1].strip():
