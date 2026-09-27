@@ -56,6 +56,117 @@ export interface RegistryEntry {
 export const SOURCE_REPO = '../ainu-grammar';
 
 export const citationRegistry: Record<string, RegistryEntry> = {
+	yoshikawa2026: {
+		"dbSlug": "2026-yoshikawa-saru-hogen-judo-hyogen",
+		"sourceRole": "primary-data",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/yoshikawa2026"
+	},
+	alonso2026: {
+		"dbSlug": "2026-fuente-what-do-eels-teeth-counting",
+		"sourceRole": "prior-analysis",
+		"heldLocally": false
+	},
+	chuda2026: {
+		"dbSlug": "kara-ta-niokeru-no-omegutte-kara",
+		"sourceRole": "prior-analysis",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/chuda2026"
+	},
+	ono2026: {
+		"dbSlug": "2026-yohei-classification-history-examining-new",
+		"sourceRole": "prior-analysis",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/ono2026"
+	},
+	fukazawa2026: {
+		"dbSlug": "2026-fukazawa-gokei-kisokusei-kiso-goi",
+		"sourceRole": "prior-analysis",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/fukazawa2026"
+	},
+	kishimoto2026: {
+		"dbSlug": "2026-kishimoto-mukawa-hogen-shina-kawahagi-omoide",
+		"sourceRole": "primary-data",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/kishimoto2026"
+	},
+	izutsu2025: {
+		"dbSlug": "when-to-prefer-split-self-conceptions-self-reference-in",
+		"sourceRole": "prior-analysis",
+		"heldLocally": false
+	},
+	okuda2026a: {
+		"dbSlug": "ainu-nowatari-to",
+		"sourceRole": "prior-analysis",
+		"heldLocally": false
+	},
+	sato2026: {
+		"dbSlug": "2026-sato-ainu-database-report-15",
+		"sourceRole": "background",
+		"heldLocally": false
+	},
+	sawai2026: {
+		"dbSlug": "no-ainu-589d7918",
+		"sourceRole": "primary-data",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/sawai2026"
+	},
+	okuda2026b: {
+		"dbSlug": "kisuten-refushin-1",
+		"sourceRole": "background",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/okuda2026b"
+	},
+	dekany2025a: {
+		"dbSlug": "strategies-for-pps-in-ainu",
+		"sourceRole": "prior-analysis",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/dekany2025a"
+	},
+	dekany2025b: {
+		"dbSlug": "2025-dekany-syntax-numeral-modification-ainu",
+		"sourceRole": "prior-analysis",
+		"heldLocally": false
+	},
+	bugaeva2026a: {
+		"dbSlug": "2026-bugaeva-paratactic-clause-chaining",
+		"sourceRole": "prior-analysis",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/bugaeva2026a"
+	},
+	bugaeva2026b: {
+		"dbSlug": "2026-bugaeva-body-part-incorporation",
+		"sourceRole": "prior-analysis",
+		"heldLocally": false
+	},
+	dalcorso2026: {
+		"dbSlug": "2026-dal-corso-kusu-anankastic-modality",
+		"sourceRole": "prior-analysis",
+		"heldLocally": false
+	},
+	izutsu2026: {
+		"dbSlug": "2026-izutsu-necessity-ainu-japanese-korean",
+		"sourceRole": "prior-analysis",
+		"heldLocally": false
+	},
+	dekany2026: {
+		"dbSlug": "2026-dekany-two-sources-numeral-modification",
+		"sourceRole": "prior-analysis",
+		"heldLocally": true,
+		"path": "../ainu-grammar-hokkaido/kb/imports/ocr/dekany2026"
+	},
+	knapen2027: {
+		"dbSlug": "2027-knapen-sakhalin-taxonyms-taxonomies",
+		"sourceRole": "background",
+		"heldLocally": false
+	},
+	ijas2026: {
+		"dbSlug": "language-attitudes-of-ainu-people-toward-their-language-its",
+		"sourceRole": "background",
+		"heldLocally": false
+	},
+
 	kitahara2013: {
 		sourceRole: 'primary-data',
 		heldLocally: true,
